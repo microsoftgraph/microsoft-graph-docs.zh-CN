@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5e2544e0f9a7e5bc0530aa4585deb613274a9041
-ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
+ms.openlocfilehash: 9dabb63709b42f7eaa9c3791e9e91300f5063469
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "43557806"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43806002"
 ---
 # <a name="passwordauthenticationmethod-resetpassword"></a>passwordAuthenticationMethod: resetPassword
 
@@ -24,7 +24,7 @@ ms.locfileid: "43557806"
 
 此重置是一个长时间运行的操作，并将返回`Location`标头中的一个链接，在此情况下，呼叫者可以定期检查重置的状态。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -61,7 +61,7 @@ POST /users/{id}/authentication/passwordMethods/{id}/resetPassword
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|newPassword|String|管理员输入的新密码。对于具有混合密码方案的租户是必需的。 如果对仅云密码省略，则系统将返回系统生成的密码。 这是不带任何其他编码的 unicode 字符串。 在接受之前，它会针对租户的禁用密码系统进行验证，并且必须遵守租户的云和/或本地密码要求。|
+|newPassword|字符串|管理员输入的新密码。对于具有混合密码方案的租户是必需的。 如果对仅云密码省略，则系统将返回系统生成的密码。 这是不带任何其他编码的 unicode 字符串。 在接受之前，它会针对租户的禁用密码系统进行验证，并且必须遵守租户的云和/或本地密码要求。|
 
 ## <a name="response"></a>响应
 
@@ -85,6 +85,8 @@ POST /users/{id}/authentication/passwordMethods/{id}/resetPassword
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "passwordauthenticationmethod_resetpassword_adminprovided"
@@ -98,6 +100,20 @@ Content-type: application/json
   "newPassword": "newPassword-value",
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/passwordauthenticationmethod-resetpassword-adminprovided-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/passwordauthenticationmethod-resetpassword-adminprovided-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/passwordauthenticationmethod-resetpassword-adminprovided-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -133,6 +149,8 @@ Location: https://graph.microsoft.com/beta/users/{id}/authentication/operations/
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "passwordauthenticationmethod_resetpassword_systemgenerated"
@@ -141,6 +159,20 @@ Location: https://graph.microsoft.com/beta/users/{id}/authentication/operations/
 ```http
 POST https://graph.microsoft.com/beta/users/{id}/authentication/passwordMethods/{id}/resetPassword
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/passwordauthenticationmethod-resetpassword-systemgenerated-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/passwordauthenticationmethod-resetpassword-systemgenerated-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/passwordauthenticationmethod-resetpassword-systemgenerated-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

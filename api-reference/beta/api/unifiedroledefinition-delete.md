@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cf4461c4de9b8fb3880e051ee01d1c2e5bcf9a06
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 6f2eab11e3683bd997bb2fa34999904865677e05
+ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218953"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805932"
 ---
 # <a name="delete-unifiedroledefinition"></a>删除 unifiedRoleDefinition
 
@@ -26,9 +26,9 @@ ms.locfileid: "43218953"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | RoleManagement、RoleManagement、目录 |
+| 委派（工作或学校帐户）     | RoleManagement.ReadWrite.Directory |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | RoleManagement、RoleManagement、目录 |
+| 应用程序                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 072351ebc95d8610bc069055aacb0b193e1ca626
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 3eba71074da995f635b89e011b138b6563671309
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218603"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43805955"
 ---
 # <a name="update-serviceprincipal"></a>更新 serviceprincipal
 
@@ -59,7 +59,7 @@ PATCH /servicePrincipals/{id}
 |publisherName|字符串|在其中指定关联应用程序的租户的显示名称。|
 |replyUrls|字符串|向其发送用户令牌以使用关联应用程序登录的 URL，或者为关联应用程序向其发送 OAuth 2.0 authorization 代码和访问令牌的重定向 URL。                            **注意：** 不可为 null。            |
 |samlMetadataUrl|String|            |
-|servicePrincipalNames|字符串|标识关联应用程序的 URL。 有关详细信息，请参阅[应用程序对象和服务主体对象](https://msdn.microsoft.com/library/azure/dn132633.aspx)。                            **注释**：不可为 null，多值属性上的筛选表达式需要**any**运算符;有关详细信息，请参阅[支持的查询、筛选器和分页选项](https://msdn.microsoft.com/library/azure/dn727074.aspx)。            |
+|servicePrincipalNames|字符串|标识关联应用程序的 URL。 有关详细信息，请参阅[应用程序对象和服务主体对象](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)。                            **备注**：不可为 null。 多值属性上的筛选表达式需要**any**运算符;有关详细信息，请参阅[支持的查询、筛选器和分页选项](https://docs.microsoft.com/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-supported-queries-filters-and-paging-options)。            |
 |tags|String|                                        **注意：** 不可为 null。            |
 
 ## <a name="response"></a>响应

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b05074aed0c8204645c96e8a5e2e8af1d00fec91
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 0243d4db0d60b7bdde357babb4b5090146f713b1
+ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216727"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43806183"
 ---
 # <a name="create-unifiedroledefinition"></a>创建 unifiedRoleDefinition
 
@@ -26,9 +26,9 @@ ms.locfileid: "43216727"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | RoleManagement、RoleManagement、目录 |
+| 委派（工作或学校帐户）     | RoleManagement.ReadWrite.Directory |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | RoleManagement、RoleManagement、目录 |
+| 应用程序                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ POST /roleManagement/directory/roleDefinitions
 
 下表显示创建 roleDefinition 时所需的属性。
 
-| 参数 | 类型 | Description|
+| 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
 |displayName |string |角色定义的显示名称。|
 |isEnabled |Boolean |指示角色是否已启用分配的标志。 如果为 false，则该角色不可用于分配。|

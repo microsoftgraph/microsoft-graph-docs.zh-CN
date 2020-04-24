@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: e115135bedecfe4b055e028d5c19902a068c8a53
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: e1497528e759a2fb5556aed3e9b936b1c9797ee0
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618930"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43805657"
 ---
 # <a name="externalitem-resource-type"></a>externalItem 资源类型
 
@@ -34,10 +34,10 @@ ms.locfileid: "42618930"
 
 | 属性   | 类型                     | 说明                          |
 |:-----------|:-------------------------|:-------------------------------------|
-| acl        | [acl](acl.md)集合 | 一组访问控制项。 每个条目指定向用户或组授予的访问权限。 必填。 |
-| 内容    | String                   | 项目内容的纯文本表示形式。 此属性中的文本为全文检索的文本。 可选。 |
-| id         | 字符串                   | 开发人员提供的包含[externalConnection](externalconnection.md)中的项的唯一 ID。 必须为字母数字，最多为128个字符。 必填。 |
-| properties | Object                   | 包含项属性的属性包。 属性必须符合为[externalConnection](externalconnection.md)定义的[架构](schema.md)。 必填。 |
+| acl        | [acl](acl.md)集合 | 一组访问控制项。 每个条目指定向用户或组授予的访问权限。 必需。 |
+| content    | [externalItemContent](externalitemcontent.md) | 项目内容的纯文本或 HTML 表示形式。 此属性中的文本为全文检索的文本。 可选。 |
+| id         | 字符串                   | 开发人员提供的包含[externalConnection](externalconnection.md)中的项的唯一 ID。 必须为字母数字，最多为128个字符。 必需。 |
+| properties | 对象                   | 包含项属性的属性包。 属性必须符合为[externalConnection](externalconnection.md)定义的[架构](schema.md)。 必需。 |
 
 ## <a name="relationships"></a>关系
 
@@ -60,7 +60,7 @@ ms.locfileid: "42618930"
 ```json
 {
   "acl": [{"@odata.type": "microsoft.graph.acl"}],
-  "content": "String",
+  "content": {"@odata.type": "microsoft.graph.externalItemContent"},
   "id": "String (identifier)",
   "properties": "Object"
 }

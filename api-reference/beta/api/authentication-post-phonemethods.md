@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 985c0719e393f7a7eb637949cec10a239b433682
-ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
+ms.openlocfilehash: 3f4979c9f1910a7092223d982189178844af5eba
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "43557757"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43805690"
 ---
 # <a name="create-phoneauthenticationmethod"></a>创建 phoneAuthenticationMethod
 
@@ -24,7 +24,7 @@ ms.locfileid: "43557757"
 
 此外，如果用户启用了策略以使用 SMS 登录并添加了一个`mobile`号码，则系统会尝试注册该号码以在该系统中使用。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -63,7 +63,7 @@ POST /users/{id}/authentication/phoneMethods
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |phoneNumber|String|将电话号码设为文本或呼叫以进行身份验证。 \<电话号码使用 "+ 国家/地区代码\> \<号码\>x\<分机\>" 格式，扩展名为可选。 例如，+ 1 5555551234 或 + 1 5555551234x123 是有效的。 如果创建/更新时编号不符合要求的格式，则会拒绝编号。|
-|phoneType|String|可能的值为`mobile`： `alternateMobile`、和`office`。|
+|phoneType|字符串|可能的值为`mobile`： `alternateMobile`、和`office`。|
 
 ## <a name="response"></a>响应
 
@@ -74,6 +74,8 @@ POST /users/{id}/authentication/phoneMethods
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_phoneauthenticationmethod_from_authentication"
@@ -88,6 +90,20 @@ Content-type: application/json
   "phoneType": "mobile",
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-phoneauthenticationmethod-from-authentication-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-phoneauthenticationmethod-from-authentication-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-phoneauthenticationmethod-from-authentication-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

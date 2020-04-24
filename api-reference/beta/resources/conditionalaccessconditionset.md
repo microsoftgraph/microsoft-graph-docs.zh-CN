@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: aaec4b4cfcca6cc42ef7f4376982ef207ab1c767
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f5db4c6367834733a4a5fbbb6c7a8d6b08393160
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413507"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43805678"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>conditionalAccessConditionSet 资源类型
 
@@ -28,9 +28,12 @@ ms.locfileid: "43413507"
 |users|[conditionalAccessUsers](conditionalaccessusers.md)| 策略中包含和排除的用户、组和角色。 必需。 |
 |clientAppTypes|String 集合| 策略中包含的客户端应用程序类型。 可取值为：`browser`、`modern`、`easSupported`、`easUnsupported`、`other`。|
 |deviceStates|[conditionalAccessDeviceStates](conditionalaccessdevicestates.md)| 策略中的设备状态。 |
-|locations|[conditionalAccessLocations](conditionalaccesslocations.md)| 策略中包含和排除的位置。 |
+|驱动器|[conditionalAccessDevices](conditionalaccessdevices.md)| 策略中的设备。 |
+|位置|[conditionalAccessLocations](conditionalaccesslocations.md)| 策略中包含和排除的位置。 |
 |平台|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| 策略中包含和排除的平台。 |
 |signInRiskLevels|String 集合| 策略中包括的风险级别。 可取值为：`low`、`medium`、`high`、`none`。|
+
+>**注意：** 我们正在弃用**deviceStates**条件，将来可能会将其删除。 接下来，使用 "**设备**" 条件。
 
 ## <a name="relationships"></a>关系
 
@@ -45,6 +48,7 @@ ms.locfileid: "43413507"
   "optionalProperties": [
     "clientAppTypes",
     "deviceStates",
+    "devices",
     "locations",
     "platforms",
     "signInRiskLevels"
@@ -59,6 +63,7 @@ ms.locfileid: "43413507"
   "users": {"@odata.type": "microsoft.graph.conditionalAccessUsers"},
   "clientAppTypes": ["String"],
   "deviceStates": {"@odata.type": "microsoft.graph.conditionalAccessDeviceStates"},
+  "devices": {"@odata.type": "microsoft.graph.conditionalAccessDevices"},
   "locations": {"@odata.type": "microsoft.graph.conditionalAccessLocations"},
   "platforms": {"@odata.type": "microsoft.graph.conditionalAccessPlatforms"},
   "signInRiskLevels": ["String"]

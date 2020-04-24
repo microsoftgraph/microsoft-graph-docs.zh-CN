@@ -5,22 +5,22 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f1577a38f3addd26239b50380437b88d22ee434a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 709f0f5a64dce5f4f88ba7eacc4330856cc00ea8
+ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440120"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805800"
 ---
 # <a name="create-channel"></a>创建频道
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在 Microsoft 团队中创建请求正文中指定的新[频道](../resources/channel.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -102,7 +102,7 @@ Content-type: application/json
   "@odata.type": "microsoft.graph.channel"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 201
 
@@ -171,7 +171,7 @@ Content-type: application/json
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 201
 

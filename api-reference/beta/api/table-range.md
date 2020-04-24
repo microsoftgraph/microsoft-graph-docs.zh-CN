@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7e227769aca8f3a0773bdc446ea9016e8c4653ff
-ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
+ms.openlocfilehash: 4eca16f51df83f1cd7c54776dfea7554cff7c382
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43581658"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43805748"
 ---
 # <a name="workbooktable-range"></a>workbookTable： range
 
@@ -19,7 +19,7 @@ ms.locfileid: "43581658"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取与整个表相关的 range 对象。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -57,7 +57,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/Range
   "blockType": "request",
   "name": "table_range"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/Range
 ```
 # <a name="c"></a>[C#](#tab/csharp)

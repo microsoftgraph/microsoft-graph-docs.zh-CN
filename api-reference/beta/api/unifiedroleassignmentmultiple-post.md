@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 61cb184bfb08d90fba6fdcaa879d3b6c38d8e58e
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 35f1063e36a5ada065ec7d5ac91e91e5d57db79a
+ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218967"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43806367"
 ---
 # <a name="create-unifiedroleassignmentmultiple"></a>创建 unifiedRoleAssignmentMultiple
 
@@ -26,9 +26,9 @@ ms.locfileid: "43218967"
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:--------------- |:------------------------------------------- |
-| 委派（工作或学校帐户） | RoleManagement、RoleManagement、目录 |
+| 委派（工作或学校帐户） | RoleManagement.ReadWrite.Directory |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | RoleManagement、RoleManagement、目录 |
+| 应用程序 | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP 请求
 
