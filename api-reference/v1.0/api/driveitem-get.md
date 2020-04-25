@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 通过文件系统路径或 ID 在驱动器中检索 DriveItem 的元数据。
 doc_type: apiPageType
-ms.openlocfilehash: 7cb927d26d3f15b0c3cfeb552d9dc65407896207
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ec9c739a0f9426f4876c3b4419b0bbeda66e4a26
+ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517739"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43806531"
 ---
 # <a name="get-a-driveitem-resource"></a>获取 DriveItem 资源
 
@@ -41,10 +41,11 @@ GET /groups/{group-id}/drive/items/{item-id}
 GET /groups/{group-id}/drive/root:/{item-path}
 GET /me/drive/items/{item-id}
 GET /me/drive/root:/{item-path}
-GET /sites/{siteId}/drive/items/{itemId}
-GET /sites/{siteId}/drive/root:/{item-path}
-GET /users/{userId}/drive/items/{itemId}
-GET /users/{userId}/drive/root:/{item-path}
+GET /sites/{site-id}/drive/items/{item-id}
+GET /sites/{site-id}/drive/root:/{item-path}
+GET /sites/{site-id}/lists/{list-id}/items/{item-id}/driveItem
+GET /users/{user-id}/drive/items/{item-id}
+GET /users/{user-id}/drive/root:/{item-path}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数

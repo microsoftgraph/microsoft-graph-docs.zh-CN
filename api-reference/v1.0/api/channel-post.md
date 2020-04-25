@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b87b7f212139d1157a714fde6f1f3fd3c2b8ebe2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c83511faf6034caab1c55ec394c3e53394011097
+ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518593"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43806122"
 ---
 # <a name="create-channel"></a>创建频道
 
@@ -96,7 +96,7 @@ Content-type: application/json
   "@odata.type": "microsoft.graph.channel"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 201
 
