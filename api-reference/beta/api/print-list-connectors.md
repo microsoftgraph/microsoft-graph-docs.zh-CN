@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 0b6e9474def623d6b5492464ad5190828a8135cd
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 8c83056853939cace3d1341d7a7b70cef066d49a
+ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062166"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43812509"
 ---
 # <a name="list-connectors"></a>列出连接器
 
@@ -20,7 +20,7 @@ ms.locfileid: "43062166"
 
 检索连接器列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
@@ -39,7 +39,7 @@ GET /print/connectors
 此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
 ### <a name="exceptions"></a>异常
-* `$count`和`$filter`运算符不受支持。
+某些运算符不受支持： `$count`、 `$orderby`、 `$search`、 `$filter`。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|

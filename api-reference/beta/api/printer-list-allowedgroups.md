@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c076026d709ff26e1e00def3262069b3b79165a7
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 22943f9ffaaee83922d9ecaca41b6307c56ea97e
+ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947920"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43812498"
 ---
 # <a name="list-allowedgroups"></a>列出 allowedGroups
 
@@ -36,6 +36,9 @@ ms.locfileid: "42947920"
 ```http
 GET /print/printers/{id}/allowedGroups
 ```
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|

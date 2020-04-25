@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包中的 "人员" 组件
 description: "\"人员\" 组件用于通过使用其照片、姓名和/或电子邮件地址显示人员或联系人。"
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 53cd4d8bb7a2bb23a3c54924ee07b4843e7fc503
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: a23d5432c868881f05c04b84626962d684f7d1eb
+ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144280"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43812546"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的 "人员" 组件
 
@@ -40,7 +40,7 @@ ms.locfileid: "43144280"
     personControl.personDetails = {
         displayName: 'Nikola Metulev',
         email: 'nikola@contoso.com',
-        image: 'url'
+        personImage: 'url'
     }
     ```
 
@@ -124,7 +124,7 @@ mgt-person {
 
 此控件使用以下 Microsoft Graph Api 和权限。
 
-| 资源                                                                                                    | 权限     |
+| Resource                                                                                                    | 权限     |
 | ----------------------------------------------------------------------------------------------------------- | -------------------- |
 | [/me](/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
 | [/me/photo/$value](/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |

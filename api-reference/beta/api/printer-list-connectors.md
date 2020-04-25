@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: eaf7b1a13b48a145a770cc94214846f69119b083
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: ae5ccfa37fcbbb52ba4ae3b316887bfe97c486ae
+ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062091"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43812518"
 ---
 # <a name="list-connectors"></a>列出连接器
 
@@ -20,7 +20,7 @@ ms.locfileid: "43062091"
 
 检索与[打印机](../resources/printer.md)关联的**连接器**列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -36,6 +36,9 @@ ms.locfileid: "43062091"
 ```http
 GET /print/printers/{id}/connectors
 ```
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|

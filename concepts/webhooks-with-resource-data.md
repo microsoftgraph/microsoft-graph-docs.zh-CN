@@ -4,12 +4,12 @@ description: Microsoft Graph 使用 Webhook 机制将更改通知传递到客户
 author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.openlocfilehash: 41cf03e94bef399142135c899d812820651338b7
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 8f582ed08e97b3460259de23b564ec2bb9157750
+ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200213"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805925"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data-preview"></a>设置包含资源数据的更改通知（预览版）
 
@@ -329,7 +329,7 @@ Content-Type: application/json
 // add Microsoft.IdentityModel.Protocols.OpenIdConnect and System.IdentityModel.Tokens.Jwt nuget packages to your project
 public async Task<bool> ValidateToken(string token, string tenantId, IEnumerable<string> appIds)
 {
-    var configurationManager = new ConfigurationManager<OpenIdConnectConfiguration>("https://login.microsoftonline.com/common/.well-known/openid-configuration", new OpenIdConnectConfigurationRetriever());
+    var configurationManager = new ConfigurationManager<OpenIdConnectConfiguration>("https://login.microsoftonline.com/common/v2.0/.well-known/openid-configuration", new OpenIdConnectConfigurationRetriever());
     var openIdConfig = await configurationManager.GetConfigurationAsync();
     var handler = new JwtSecurityTokenHandler();
     try
@@ -374,6 +374,39 @@ private boolean IsValidationTokenValid(String[] appIds, String tenantId, String 
         LOGGER.error(e.getMessage());
         return false;
     }
+}
+```
+```JavaScript
+import jwt from 'jsonwebtoken';
+import jkwsClient from 'jwks-rsa';
+
+const client = jkwsClient({
+  jwksUri: 'https://login.microsoftonline.com/common/discovery/v2.0/keys'
+});
+
+export function getKey(header, callback) {
+  client.getSigningKey(header.kid, (err, key) => {
+    var signingKey = key.publicKey || key.rsaPublicKey;
+    callback(null, signingKey);
+  });
+}
+
+export function isTokenValid(token, appId, tenantId) {
+  return new Promise((resolve) => {
+    const options = {
+      audience: [appId],
+      issuer: [`https://sts.windows.net/${tenantId}/`]
+    };
+    jwt.verify(token, getKey, options, (err) => {
+      if (err) {
+        // eslint-disable-next-line no-console
+        console.error(err);
+        resolve(false);
+      } else {
+        resolve(true);
+      }
+    });
+  });
 }
 ```
 还必须实现 `JwkKeyResolver`，这样 Java 示例才能正常运行。  
@@ -550,6 +583,13 @@ cipher.init(Cipher.DECRYPT_MODE, asymmetricKey);
 byte[] decryptedSymmetricKey = cipher.doFinal(encryptedSymetricKey);
 // Can now use decryptedSymmetricKey with the AES algorithm.
 ```
+```JavaScript
+const base64encodedKey = 'base 64 encoded dataKey value';
+const asymetricPrivateKey = 'pem encoded private key';
+const decodedKey = Buffer.from(base64encodedKey, 'base64');
+const decryptedSymetricKey = crypto.privateDecrypt(asymetricPrivateKey, decodedKey);
+// Can now use decryptedSymmetricKey with the AES algorithm.
+```
 
 #### <a name="compare-data-signature-using-hmac-sha256"></a>使用 HMAC-SHA256 比较数据签名
 
@@ -580,7 +620,21 @@ SecretKey skey = new SecretKeySpec(decryptedSymmetricKey, "HMACSHA256");
 mac.init(skey);
 byte[] hashedData = mac.doFinal(decodedEncryptedData);
 String encodedHashedData = new String(Base64.encodeBase64(hashedData));
-if (comparisonSignature.equals(encodedHashedData);)
+if (comparisonSignature.equals(encodedHashedData))
+{
+    // Continue with decryption of the encryptedPayload.
+}
+else
+{
+    // Do not attempt to decrypt encryptedPayload. Assume notification payload has been tampered with and investigate.
+}
+```
+```JavaScript
+const decryptedSymetricKey = []; //Buffer provided by previous step
+const base64encodedSignature = 'base64 encodded value from the dataSignature property';
+const hmac = crypto.createHmac('sha256', decryptedSymetricKey);
+hmac.write(base64encodedPayload, 'base64');
+if(base64encodedSignature === hmac.digest('base64'))
 {
     // Continue with decryption of the encryptedPayload.
 }
@@ -630,6 +684,15 @@ IvParameterSpec ivspec = new IvParameterSpec(Arrays.copyOf(decryptedSymmetricKey
 Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5PADDING");
 cipher.init(Cipher.DECRYPT_MODE, skey, ivspec);
 String decryptedResourceData = new String(cipher.doFinal(Base64.decodeBase64(encryptedData)));
+```
+```JavaScript
+const base64encodedPayload = 'base64 encoded value from data property';
+const decryptedSymetricKey = []; //Buffer provided by previous step
+const iv = Buffer.alloc(16, 0);
+decryptedSymetricKey.copy(iv, 0, 0, 16);
+const decipher = crypto.createDecipheriv('aes-256-cbc', decryptedSymetricKey, iv);
+let decryptedPayload = decipher.update(base64encodedPayload, 'base64', 'utf8');
+decryptedPayload += decipher.final('utf8');
 ```
 
 ## <a name="see-also"></a>另请参阅

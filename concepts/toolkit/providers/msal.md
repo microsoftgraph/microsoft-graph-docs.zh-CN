@@ -3,12 +3,12 @@ title: MSAL 提供程序
 description: MSAL 提供程序使用 MSAL 来登录用户并获取令牌以用于 Microsoft Graph
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 95dfae9954ff098ae9e777c3c330c5f334b8b0aa
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 84962c0df0be9012f09ba8a87e17dcd3954d6e22
+ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868490"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43806011"
 ---
 # <a name="msal-provider"></a>MSAL 提供程序
 
@@ -36,7 +36,7 @@ MSAL 提供程序使用[MSAL](https://github.com/AzureAD/microsoft-authenticatio
 | 客户端 id   | 字符串客户端 ID （请参阅创建应用/客户端 ID）。 必需。|
 | 登录类型  | 和`redirect` `popup` -默认值之间的枚举`redirect`为。 可选。 |
 | scopes  | 用户必须同意登录时的作用域的逗号分隔字符串。 可选。|
-| 监管  | 颁发机构字符串-默认为常用证书颁发机构。 可选。|
+| 监管  | 颁发机构字符串-默认为常用证书颁发机构。 对于单租户应用，请使用租户 ID 或租户名称。 例如， `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com`或`https://login.microsoftonline.com/[your-tenant-id]`。 可选。|
 | 取决于 | 另一个较高优先级提供程序组件的元素选择器字符串。 可选。 |
 
 ### <a name="initialize-in-javascript"></a>在 JavaScript 中初始化
@@ -64,10 +64,10 @@ interface MsalConfig {
 
 您必须提供`clientId` （以创建新`UserAgentApplication`的）。
 
-若要了解详细信息，请参阅[MSAL 文档](https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics)。
+若要了解有关 MSAL 的详细信息以及在初始化 MSAL 库时可以使用的其他选项，请参阅[MSAL 文档](https://docs.microsoft.com/azure/active-directory/develop/msal-js-initializing-client-applications)。
 
 ## <a name="creating-an-appclient-id"></a>创建应用/客户端 ID
 
 有关如何注册应用并获取客户端 ID 的详细信息，请参阅[注册应用程序快速入门](/azure/active-directory/develop/quickstart-register-app)。
 
->**注意：** MSAL 仅支持 OAuth 的隐式流。 请确保在 Azure 门户中的应用程序中启用隐式流（默认情况下不启用）。 在 "**身份验证**" 下，找到 "**隐式授予**" 部分，然后选择 "**访问令牌**" 和**ID 令牌**的复选框。
+>**注意：** MSAL 仅支持 OAuth 的隐式流。 请确保在 Azure 门户中的应用程序中启用隐式流（默认情况下不启用）。 在 "**身份验证**" 下，找到 "**隐式授予**" 部分，然后选择 "**访问令牌**" 和**ID 令牌**的复选框。 若要使用公共证书颁发机构，请**在任何组织目录中设置帐户**。 若要使用特定租户，请在`authority`初始化过程中设置。

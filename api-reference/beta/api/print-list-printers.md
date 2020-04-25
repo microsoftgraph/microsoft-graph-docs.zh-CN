@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c399e5e375ccd0890c2b8e31663d39d952467c09
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 33171e0878c05d044a1f0d4dbde181600e0605ed
+ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062134"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43812521"
 ---
 # <a name="list-printers"></a>列出打印机
 
@@ -20,7 +20,7 @@ ms.locfileid: "43062134"
 
 检索在租户中注册的**打印机**的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
@@ -40,7 +40,7 @@ GET /print/printers
 
 ### <a name="exceptions"></a>异常
 * 导航属性支持`$expand`和`select`运算符，但不支持。 `jobs` `share`
-* `$count`运算符不受支持。
+* 某些运算符不受支持： `$count`、 `$orderby`、 `$search`。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|

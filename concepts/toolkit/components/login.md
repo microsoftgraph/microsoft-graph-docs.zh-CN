@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包中的登录组件
 description: 登录组件是一个按钮和飞出控件，可促进 Microsoft 身份平台身份验证。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 5ef2856f6cd86e9fe35523d6cf8f6ac9174860a8
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: b269ddda5c4c71517e77a7ed038daeeb0d920403
+ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144308"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43812553"
 ---
 # <a name="login-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的登录组件
 
@@ -39,7 +39,7 @@ let loginControl = document.getElementById('myLoginControl');
 loginControl.userDetails = {
     displayName: 'Nikola Metulev',
     email: 'nikola@contoso.com',
-    profileImage: 'url'
+    personImage: 'url'
 }
 ```
 
@@ -70,7 +70,7 @@ mgt-login {
 
 若要了解详细信息，请参阅[样式组件](../style.md)。
 
-## <a name="events"></a>事件
+## <a name="events"></a>活动
 
 从控件触发以下事件。
 

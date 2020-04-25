@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: users
 author: krbain
-ms.openlocfilehash: 240489ea41e4b19e09ca3f913141b59de1ef117e
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 61d5e664d9a905f8d009aa2752ac2bcd54b0fd29
+ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108926"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43806829"
 ---
 # <a name="objectidentity-resource-type"></a>objectIdentity 资源类型
 
@@ -27,6 +27,8 @@ ms.locfileid: "43108926"
 |signInType|string| 指定目录中的用户登录类型，如`emailAddress` `userName`或。 `federated` 此处， `federated`表示颁发者的用户的唯一标识符，该标识符可以采用颁发者选择的任何格式。 当登录类型设置为**issuerAssignedId** `emailAddress`或`userName`时，对 issuerAssignedId 强制执行其他验证。 此属性还可以设置为任何自定义字符串。|
 |常用|string|指定标识的颁发者，例如`facebook.com`。<br>对于本地帐户（其中**signInType**不`federated`是），此属性是本地 B2C 租户默认域名（例如`contoso.onmicrosoft.com`）。<br>对于来自其他 Azure AD 组织的外部用户，这将是联合组织的域，例如`contoso.com`。<br><br>支持`$filter`。 512字符限制。|
 |issuerAssignedId|string|指定由颁发者分配给用户的唯一标识符。 **颁发者**和**issuerAssignedId**的组合在组织中必须是唯一的。 表示用户的登录名，如果将**signInType**设置为`emailAddress`或`userName` （也称为 "本地帐户"）。<br>当**signInType**设置为时： <ul><li>`emailAddress`（或以`emailAddress` like `emailAddress1`开头） **issuerAssignedId**必须是有效的电子邮件地址</li><li>`userName`， **issuerAssignedId**必须是[电子邮件地址的有效本地部分](https://tools.ietf.org/html/rfc3696#section-3)</li></ul>支持`$filter`。 512字符限制。|
+
+>**注意：** 在对 "**标识**" 属性进行筛选时，必须同时提供**颁发者**和**issuerAssignedId**。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

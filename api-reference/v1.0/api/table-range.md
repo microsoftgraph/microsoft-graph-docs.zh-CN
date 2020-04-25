@@ -1,23 +1,23 @@
 ---
-title: Table:Range
+title: workbookTable： range
 description: 获取与整个表相关的 range 对象。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4ea53274f4f529bb054e540e4e838366ac631734
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2189830ce7cd2d79e0b7da8f91e03b718c4b5ff3
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509638"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43806090"
 ---
-# <a name="table-range"></a>Table:Range
+# <a name="workbooktable-range"></a>workbookTable： range
 
 命名空间：microsoft.graph
 
-获取与整个表相关的 range 对象。
-## <a name="permissions"></a>权限
+获取与整个表相关联的 range 对象。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -30,8 +30,8 @@ ms.locfileid: "42509638"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/range
-POST /workbook/worksheets/{id|name}/tables/{id|name}/range
+GET /workbook/tables/{id|name}/range
+GET /workbook/worksheets/{id|name}/tables/{id|name}/range
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -44,12 +44,12 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/range
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Range](../resources/range.md) 对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[workbookRange](../resources/range.md)对象。
 
 ## <a name="example"></a>示例
-下面是一个如何调用此 API 的示例。
-##### <a name="request"></a>请求
-下面是一个请求示例。
+
+### <a name="request"></a>请求
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!--{
@@ -58,8 +58,8 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/range
   "name": "table_range",
   "idempotent": true
 }-->
-```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/range
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/range
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/table-range-csharp-snippets.md)]
@@ -80,8 +80,10 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|na
 ---
 
 
-##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+### <a name="response"></a>响应
+下面展示了示例响应。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

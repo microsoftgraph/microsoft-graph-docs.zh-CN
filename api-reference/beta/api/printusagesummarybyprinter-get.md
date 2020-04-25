@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: universal-print
 ms.date: 2/4/2020
 doc_type: apiPageType
-ms.openlocfilehash: 71bce2c90d9ade62f5d473e2d0e530767e8092fe
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: ceccd866e4ba8e19f2c4e93ff8e06e9da700cc47
+ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895657"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43812560"
 ---
 # <a name="get-printusagesummarybyprinter"></a>获取 printUsageSummaryByPrinter
 
@@ -21,7 +21,7 @@ ms.locfileid: "42895657"
 
 检索[打印机](../resources/printer.md)在特定时间段内的使用率摘要。 有关每个终结点的说明，请参阅[printUsageSummaryByPrinter](../resources/printUsageSummaryByPrinter.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -40,6 +40,9 @@ GET /reports/monhtlyPrintUsageSummariesByPrinter/{id}
 GET /print/reports/dailyPrintUsageSummariesByPrinter/{id}
 GET /print/reports/monthlyPrintUsageSummariesByPrinter/{id}
 ```
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|

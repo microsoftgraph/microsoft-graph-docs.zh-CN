@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c3043d7248002492b0a8b81a080e75b079461b33
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 99ae6c0d95d787e279cbeabb30335122a017615a
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229115"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43806233"
 ---
 # <a name="update-activitybasedtimeoutpolicy"></a>更新 activitybasedtimeoutpolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "43229115"
 
 更新[activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md)对象的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "43229115"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy.ReadWrite.ApplicationConfiguration |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Policy.ReadWrite.ApplicationConfiguration |
+| 应用程序                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,9 +52,9 @@ PATCH /policies/activityBasedTimeoutPolicies/{id}
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |定义|String 集合| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。  必需。|
-|description|String| 此策略的说明。|
+|description|字符串| 此策略的说明。|
 |displayName|String| 此策略的显示名称。 必需。|
-|isOrganizationDefault|布尔|如果设置为 true，则激活此策略。 对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。 可选，默认值为 false。|
+|isOrganizationDefault|Boolean|如果设置为 true，则激活此策略。 对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。 可选，默认值为 false。|
 
 ## <a name="response"></a>响应
 
@@ -66,6 +66,8 @@ PATCH /policies/activityBasedTimeoutPolicies/{id}
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_activitybasedtimeoutpolicy"
@@ -84,6 +86,24 @@ Content-type: application/json
   "type": "type-value"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-activitybasedtimeoutpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-activitybasedtimeoutpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-activitybasedtimeoutpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-activitybasedtimeoutpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

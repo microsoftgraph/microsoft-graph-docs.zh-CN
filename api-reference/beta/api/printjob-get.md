@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d1996ab8a7b1a5e8058654b54bba72907ba2fadf
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 2833251d9d9ad7e65caafcebbc494f31c1ed8f7b
+ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42947554"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43812491"
 ---
 # <a name="get-printjob"></a>获取 printJob
 
@@ -20,7 +20,7 @@ ms.locfileid: "42947554"
 
 检索打印作业的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -36,6 +36,9 @@ ms.locfileid: "42947554"
 ```http
 GET /print/printers/{id}/jobs/{id}
 ```
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: efeb9a9007fbe09636db266f145a294f12ab4d6e
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 4ea105329440bfb28ec9b03b323d7482e42725ed
+ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895656"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43812567"
 ---
 # <a name="get-printusagesummarybyuser"></a>获取 printUsageSummaryByUser
 
@@ -20,7 +20,7 @@ ms.locfileid: "42895656"
 
 检索特定时间段内用户的使用情况摘要。 有关每个终结点的说明，请参阅[printUsageSummaryByUser](../resources/printUsageSummaryByUser.md)文档。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -39,6 +39,9 @@ GET /reports/monthlyPrintUsageSummariesByUser/{id}
 GET /print/reports/dailyPrintUsageSummariesByUser/{id}
 GET /print/reports/monthlyPrintUsageSummariesByUser/{id}
 ```
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|

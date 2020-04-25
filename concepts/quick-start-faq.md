@@ -4,12 +4,12 @@ description: 此 FAQ 解答了与 Microsoft Graph 快速入门相关的问题。
 author: jasonjoh
 ms.author: jasonjoh
 localization_priority: Normal
-ms.openlocfilehash: bd1405f4805bb9740fb7119adcf2f877236d19cf
-ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
-ms.translationtype: HT
+ms.openlocfilehash: 00e1d3d20276c888f2f22d7e62f7434da282bca9
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35084087"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43806821"
 ---
 # <a name="microsoft-graph-quick-start-faq"></a>Microsoft Graph 快速入门 FAQ
 
@@ -36,7 +36,7 @@ ms.locfileid: "35084087"
 
 ### <a name="can-i-get-the-quick-start-code-without-downloading-through-the-quick-start-page"></a>不通过快速启动页面下载可以获取快速启动代码吗？
 
-当然可以！ 每个快速启动下载都是基于 [Microsoft Graph 教程](tutorials.md)，因此，可以通过其他两种方法获取相同的源代码：
+当然可以！ 每个快速启动下载都是基于 [Microsoft Graph 教程](tutorials.yml)，因此，可以通过其他两种方法获取相同的源代码：
 
 - 按分步教程操作，自己构建代码。
 - 从相应的 GitHub 存储库下载完整的项目，然后按照自述文件中的说明配置和运行示例。
@@ -50,17 +50,18 @@ ms.locfileid: "35084087"
 
 | 快速启动 | 教程 | GitHub 存储库 |
 |-------------|----------|-------------------|
-| Android | [教程](/graph/tutorials/android) | [GitHub](https://github.com/microsoftgraph/android-java-connect-sample) |
+| Android | [教程](/graph/tutorials/android) | [GitHub](https://github.com/microsoftgraph/msgraph-training-android) |
 | Angular | [教程](/graph/tutorials/angular) | [GitHub](https://github.com/microsoftgraph/msgraph-training-angularspa) |
-| ASP.NET MVC | [教程](/graph/tutorials/aspnet) | [GitHub](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp) |
-| iOS Swift | 无 | [GitHub](https://github.com/microsoftgraph/ios-swift-connect-sample) |
-| iOS Objective-C | 无 | [GitHub](https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample) |
+| ASP.NET MVC | [教程](/learn/modules/msgraph-build-aspnetmvc-apps) | [GitHub](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp) |
+| iOS Swift | 手册(/graph/tutorials/ios-swift | [GitHub](https://github.com/microsoftgraph/msgraph-training-ios-swift) |
+| iOS Objective-C | 手册(/graph/tutorials/ios-objectivec | [GitHub](https://github.com/microsoftgraph/msgraph-training-ios-objectivec) |
 | Node.js | [教程](/graph/tutorials/node) | [GitHub](https://github.com/microsoftgraph/msgraph-training-nodeexpressapp) |
 | PHP | [教程](/graph/tutorials/php) | [GitHub](https://github.com/microsoftgraph/msgraph-training-phpapp) |
 | Python | [教程](/graph/tutorials/python) | [GitHub](https://github.com/microsoftgraph/msgraph-training-pythondjangoapp) |
+| React | [教程](/graph/tutorials/react) | [GitHub](https://github.com/microsoftgraph/msgraph-training-reactspa) |
 | Ruby | [教程](/graph/tutorials/ruby) | [GitHub](https://github.com/microsoftgraph/msgraph-training-rubyrailsapp) |
 | UWP | [教程](/graph/tutorials/uwp) | [GitHub](https://github.com/microsoftgraph/msgraph-training-uwp) |
-| Xamarin | 无 | [GitHub](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) |
+| Xamarin | 手册(/graph/tutorials/xamarin | [GitHub](https://github.com/microsoftgraph/msgraph-training-xamarin) |
 
 ### <a name="why-dont-any-of-the-quick-start-samples-show-advanced-authentication-use-cases"></a>为什么所有快速启动示例都没有展示高级身份验证用例？
 

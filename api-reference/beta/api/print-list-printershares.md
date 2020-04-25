@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 02fc83e45a19165a23600c9c03bc94e74ff9f493
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 824c54b4a20ed24357ce1aaf4764240042b4cb2d
+ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42948286"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43812492"
 ---
 # <a name="list-printershares"></a>列出 printerShares
 
@@ -20,7 +20,7 @@ ms.locfileid: "42948286"
 
 检索**printerShares**的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -41,8 +41,7 @@ GET /print/printerShares
 此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
 ### <a name="exceptions"></a>异常
-
-* `$count`运算符不受支持。
+某些运算符不受支持： `$count`、 `$orderby`、 `$search`。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
