@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3df2bb5775da4042920474890a5c115fe2466de5
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: 9fe122c20a2b8eaef32a72c5dea6784e189b9174
+ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144236"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805946"
 ---
 # <a name="create-onlinemeeting"></a>创建 onlineMeeting
 
@@ -31,7 +31,7 @@ ms.locfileid: "43144236"
 | 委派（个人 Microsoft 帐户） | 不支持                               |
 | 应用程序                            | OnlineMeetings.ReadWrite.All*  |
 
-> \* **注意：** 应用程序权限已弃用，并将于 2020 年 7 月删除。
+> \* **注意：** 应用程序权限已弃用，并将于 2020 年 7 月删除。 若要使用应用程序权限创建联机会议，请参阅[创建事件](user-post-events.md)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
