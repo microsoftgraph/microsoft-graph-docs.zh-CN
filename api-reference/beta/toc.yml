@@ -1107,9 +1107,9 @@
                       href: api/printer-list-allowedusers.md
                     - name: 列出 allowedGroups
                       href: api/printer-list-allowedgroups.md
-                    - name: 添加允许的组
+                    - name: 创建允许的组
                       href: api/printer-post-allowedgroups.md
-                    - name: 添加允许的用户
+                    - name: 创建允许的用户
                       href: api/printer-post-allowedusers.md
                     - name: 删除允许的组
                       href: api/printer-delete-allowedgroup.md
@@ -1132,13 +1132,13 @@
                       href: api/printershare-delete.md
                     - name: 列出允许的用户
                       href: api/printershare-list-allowedusers.md
-                    - name: 添加允许的用户
+                    - name: 创建允许的用户
                       href: api/printershare-post-allowedusers.md
                     - name: 删除允许的用户
                       href: api/printershare-delete-alloweduser.md
                     - name: 列出允许的组
                       href: api/printershare-list-allowedgroups.md
-                    - name: 添加允许的组
+                    - name: 创建允许的组
                       href: api/printershare-post-allowedgroups.md
                     - name: 删除允许的组
                       href: api/printershare-delete-allowedgroup.md
