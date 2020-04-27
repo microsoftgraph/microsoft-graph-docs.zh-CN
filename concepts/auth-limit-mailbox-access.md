@@ -4,12 +4,12 @@ description: 若要将应用程序权限界定为特定 Exchange Online 邮箱�
 author: svpsiva
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9ccc33acff5c95cde3f4ba210684b177cc69334c
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 75778efe46552eef0c7798cd602eed99ef871d5e
+ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969487"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43806836"
 ---
 # <a name="scoping-application-permissions-to-specific-exchange-online-mailboxes"></a>将应用程序权限界定为特定 Exchange Online 邮箱 
 
@@ -48,6 +48,8 @@ ms.locfileid: "37969487"
 ## <a name="supported-permissions-and-additional-resources"></a>受支持的权限和其他资源
 管理员可以使用 ApplicationAccessPolicy cmdlet 来控制已授权以下任何应用程序权限的应用的邮箱访问权限： 
 - Mail.Read
+- Mail.ReadBasic
+- Mail.ReadBasic.All
 - Mail.ReadWrite
 - Mail.Send
 - MailboxSettings.Read  
