@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 1e847095581fadf5f253cc7783f19d8a506f4c29
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 8dfeaa3de759291849685c9a95c101a6e34750ed
+ms.sourcegitcommit: fe3cb0e47920467324ddcf0773354349e3612d4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43718411"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43849998"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -29,9 +29,15 @@ ms.locfileid: "43718411"
 | 添加项 | v1.0 | 向 [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) 实体添加了“defaultOnlineMeetingProviders”**** 和“allowedOnlineMeetingProviders”**** 属性。 |
 | Addition | v1.0 | 向 [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) 实体添加了“isTallyingResponses”**** 属性。 |
 | 添加项 | v1.0 | 向 [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) 实体添加了“isRemovable”**** 属性。 |
-| 添加项 | v1.0 | 向 [mailboxSettings](/graph/api/resources/mailboxSettings?view=graph-rest-1.0) 实体添加了 **delegateMeetingMessageDeliveryOptions** 属性。 |
+| 添加项 | v1.0 | 向 [mailboxSettings](/graph/api/resources/mailboxSettings?view=graph-rest-1.0) 实体添加了“delegateMeetingMessageDeliveryOptions”**** 属性。 |
 
-### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
+
+| **更改类型** | **版本**   | **说明**                          |
+|:---|:---|:---|
+| 添加项 | beta | 向 [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) 实体添加了 **allowedGroups** 和 **allowedUsers** 属性。|
+
+### <a name="devices-and-apps--corporate-management-intune"></a>设备和应用 | 公司管理 (Intune)
 
 | **更改类型** | **版本** | **说明** |
 |:---|:---|:---|
@@ -2657,7 +2663,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | **更改类型** | **版本** | **说明**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | Beta       | 添加了[获取最近的活动 API](/graph/api/projectrome-get-recent-activities?view=graph-rest-beta) |
-| 添加项        | Beta       | 添加了[获取活动 API](/graph/api/projectrome-get-activities?view=graph-rest-beta) |
+| 添加        | Beta       | 添加了[获取活动 API](/graph/api/projectrome-get-activities?view=graph-rest-beta) |
 | 更改 | Beta | 向 [Upsert Activity](/graph/api/projectrome-put-activity?view=graph-rest-beta) 添加了 UserActivity.ReadWrite.CreatedByApp 权限 |
 | 更改 | Beta | 向 [Upsert HistoryItem](/graph/api/projectrome-put-historyitem?view=graph-rest-beta) 添加了 UserActivity.ReadWrite.CreatedByApp 权限 |
 | 更改 | Beta | 向 [Delete Activity](/graph/api/projectrome-delete-activity?view=graph-rest-beta) 添加了 UserActivity.ReadWrite.CreatedByApp 权限 |
@@ -2941,7 +2947,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |更改|Beta|向 [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta) 实体添加了 **faceIdBlocked** 属性|
 |更改|Beta|向 [deviceAndAppManagementRoleAssignment](/graph/api/resources/intune-rbac-deviceandappmanagementroleassignment?view=graph-rest-beta) 实体添加了 **members** 属性|
 |更改|Beta|向 [deviceEnrollmentPlatformRestrictionsConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration?view=graph-rest-beta) 实体添加了 **macOSRestriction** 属性|
-|更改|Beta|向 [deviceManagementPartner](/graph/api/resources/intune-onboarding-devicemanagementpartner?view=graph-rest-beta) 实体添加了 **whenPartnerDevicesWillBeRemovedDateTime** 和 **whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime** 属性|
+|“更改”|Beta|向 [deviceManagementPartner](/graph/api/resources/intune-onboarding-devicemanagementpartner?view=graph-rest-beta) 实体添加了 **whenPartnerDevicesWillBeRemovedDateTime** 和 **whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime** 属性|
 |更改|Beta|更改了 [deviceManagementScript](/graph/api/resources/intune-devices-devicemanagementscript?view=graph-rest-beta) 实体以下属性的类型：<br/>**scriptContent**从 String 改为 Binary<br/>|
 |更改|Beta|向 [iosEasEmailProfileConfiguration](/graph/api/resources/intune-deviceconfig-ioseasemailprofileconfiguration?view=graph-rest-beta) 实体添加了 **smimeEnablePerMessageSwitch** 属性|
 |更改|Beta|向 [iosLobApp](/graph/api/resources/intune-apps-ioslobapp?view=graph-rest-beta) 实体添加了 **identityVersion** 属性|
