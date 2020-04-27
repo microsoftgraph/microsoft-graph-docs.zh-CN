@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 448c9b0063a04cf0ddaa375092a1dd9ceff6694a
-ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
+ms.openlocfilehash: 105845810acb96082dbc213f8d26ab98d96f9e57
+ms.sourcegitcommit: fe3cb0e47920467324ddcf0773354349e3612d4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "43557848"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43850012"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -37,10 +37,17 @@ ms.locfileid: "43557848"
 
 ## <a name="april-2020-new-in-preview-only"></a>2020 年 4 月：仅限预览版中的新增功能
 
-### <a name="devices-and-apps"></a>设备和应用
+### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
+
+将允许的用户和组指定为在通用打印（Microsoft 365 基于云的打印基础结构）上使用特定的[打印机共享](/graph/api/resources/printershare?view=graph-rest-beta)。 若要体验可靠且集中的打印管理功能，并为打印用户提供简单而丰富安全的打印体验，请参阅[通用打印公告](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/announcing-universal-print-a-cloud-based-print-solution/ba-p/1204775)并加入其预览计划。
+
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 Intune [4 月](changelog.md#april-2020)更新。
 
-### <a name="identity-and-access"></a>身份和访问控制
+### <a name="groups"></a>组
+通过组的应用 ID 识别创建[组](/graph/api/resources/group?view=graph-rest-beta)的应用。
+
+### <a name="identity-and-access"></a>身份和访问
 - [管理单元](/graph/api/resources/administrativeunit?view=graph-rest-beta)[跟踪更改](/graph/api/administrativeunit-delta?view=graph-rest-beta)。
 - [oAuth2PermissionGrant](/graph/api/resources/oauth2permissiongrant?view=graph-rest-beta)[跟踪更改](/graph/api/oauth2permissiongrant-delta?view=graph-rest-beta)。
 - [管理](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta)用户的[身份验证方法](/graph/api/resources/authenticationmethod?view=graph-rest-beta)，其中包括[密码](/graph/api/resources/passwordauthenticationmethod?view=graph-rest-beta)或[电话](/graph/api/resources/phoneauthenticationmethod?view=graph-rest-beta)。 例如，[重置用户密码](/graph/api/passwordauthenticationmethod-resetpassword?view=graph-rest-beta)并[获取重置状态](/graph/api/authenticationoperation-get?view=graph-rest-beta)，或者为用户[添加电话号码](/graph/api/authentication-post-phonemethods?view=graph-rest-beta)以进行短信或语音通话身份验证（如果策略为用户启用）。
