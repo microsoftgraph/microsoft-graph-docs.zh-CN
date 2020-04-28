@@ -2,15 +2,15 @@
 title: conditionalAccessLocations 资源类型
 description: 表示策略作用域中包含和排除的位置。
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 09440c789ae98ae2d5eb46de26f56b32bf0ce578
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a92d99d7a9e80084b8ec1ce385ce76d1f522b359
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413406"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916780"
 ---
 # <a name="conditionalaccesslocations-resource-type"></a>conditionalAccessLocations 资源类型
 

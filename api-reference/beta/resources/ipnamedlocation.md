@@ -2,15 +2,15 @@
 title: ipNamedLocation 资源类型
 description: 表示由 IP 范围定义的 Azure Active Directory 的名称位置。 "已命名位置" 是自定义规则，用于定义随后可在条件访问策略中使用的网络位置。
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 067c77c6bc8a17d84252568548b44a3a44cd8f35
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f2d08de5438e85ce18cb9a78da0213a9b07fa104
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382526"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917565"
 ---
 # <a name="ipnamedlocation-resource-type"></a>ipNamedLocation 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "43382526"
 
 继承自[namedLocation](../resources/namedLocation.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -38,7 +38,7 @@ ms.locfileid: "43382526"
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的位置的创建日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 继承自[namedLocation](../resources/namedLocation.md)。|
 |displayName|String|位置的人可读名称。|
-|id|字符串|NamedLocation 对象的标识符。 只读。 继承自[namedLocation](../resources/namedLocation.md)。|
+|id|String|NamedLocation 对象的标识符。 只读。 继承自[namedLocation](../resources/namedLocation.md)。|
 |ipRanges|[ipRange](iprange.md) 集合|IPv4 CIDR 格式的 IP 地址范围列表（例如，1.2.3.4/32）或来自 IETF RFC596 的任何允许的 IPv6 格式。|
 |isTrusted|Boolean|如此如果此位置是明确信任的。|
 |modifiedDateTime|DateTimeOffset|时间戳类型表示上次修改的位置使用 ISO 8601 格式的日期和时间，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 继承自[namedLocation](../resources/namedLocation.md)。|

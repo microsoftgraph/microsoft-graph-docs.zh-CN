@@ -2,15 +2,15 @@
 title: 删除 claimsMappingPolicy
 description: 删除 claimsMappingPolicy。
 localization_priority: Normal
-author: dkershaw10
+author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5365bd013a52b08459ded94d4ebf384f9cea6255
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 4f1075d4f9cdd2ac8f9635566fbccc3d49921d80
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216952"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916684"
 ---
 # <a name="delete-claimsmappingpolicy"></a>删除 claimsMappingPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "43216952"
 
 删除[claimsMappingPolicy](../resources/claimsmappingpolicy.md)对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

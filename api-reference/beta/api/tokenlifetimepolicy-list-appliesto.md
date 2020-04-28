@@ -2,15 +2,15 @@
 title: 列出 appliesTo
 description: 获取已应用 tokenLifetimePolicy 对象的 directoryObject 对象的列表。
 localization_priority: Normal
-author: dkershaw10
+author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 91f92a58c6e6f0c04c667e0f46e7497f102a79eb
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: f5b0b2ea97ada9896b6606a18bc7d1d73d609b36
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216328"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917416"
 ---
 # <a name="list-appliesto"></a>列出 appliesTo
 
@@ -20,7 +20,7 @@ ms.locfileid: "43216328"
 
 获取已应用[tokenLifetimePolicy](../resources/tokenlifetimepolicy.md)对象的[directoryObject](../resources/directoryObject.md)对象的列表。 TokenLifetimePolicy 只能应用于[application](../resources/application.md)和[servicePrincipal](../resources/serviceprincipal.md)资源。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

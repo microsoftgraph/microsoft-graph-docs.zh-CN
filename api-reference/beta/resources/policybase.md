@@ -2,15 +2,15 @@
 title: policyBase 资源类型
 description: 表示要从其继承的策略类型的抽象基类型。
 localization_priority: Normal
-author: dkershaw10
+author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 23b023d55c54789b07ccc1a3b95affbf6a79f6b5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a2a07ba2d639faf83d6e8bb4eab3a3e2437333d1
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436884"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917591"
 ---
 # <a name="policybase-resource-type"></a>policyBase 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "43436884"
 
 表示要从其继承的策略类型的抽象基类型。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 无
 

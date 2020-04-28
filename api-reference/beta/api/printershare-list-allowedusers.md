@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c69ebb3585e99daae992f7867c7633232f39b20d
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: b89a8aaf1064fe837ceaae121fcf656353c8c410
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43807080"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916940"
 ---
 # <a name="list-allowedusers"></a>列出 allowedUsers
 
@@ -20,7 +20,7 @@ ms.locfileid: "43807080"
 
 检索已授予访问权限以将打印作业提交到相关[printerShare](../resources/printershare.md)的用户的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
@@ -45,7 +45,7 @@ GET /print/printerShares/{id}/allowedUsers
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[userIdentity](../resources/userIdentity.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[printUserIdentity](../resources/printuseridentity.md)对象集合。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面展示了示例请求。
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/print/printerShares/{id}/allowedUsers
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.userIdentity",
+  "@odata.type": "microsoft.graph.printUserIdentity",
   "isCollection": true
 } -->
 ```http
@@ -73,7 +73,7 @@ Content-type: application/json
 Content-length: 286
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.printIdentity)",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.printUserIdentity)",
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",

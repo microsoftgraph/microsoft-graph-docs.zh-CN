@@ -2,15 +2,15 @@
 title: 列出 appliesTo
 description: 获取已应用 tokenIssuancePolicy 对象的 directoryObject 对象的列表。
 localization_priority: Normal
-author: davidmu1
+author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 770132c3b4c4a1cb924cbaafe180f968100103eb
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: a4e3193577061487b813506c868e18b9c6a8763c
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43720233"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917233"
 ---
 # <a name="list-appliesto"></a>列出 appliesTo
 
@@ -28,7 +28,7 @@ ms.locfileid: "43720233"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy. all 和 application. all、ApplicationConfiguration 和 Application。 all，All，Read. All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Policy. all 和 application. all、ApplicationConfiguration 和 Application。 all，All，Read. All |
+| 应用程序                            | Policy. all 和 application. all、ApplicationConfiguration 和 Application。 all，All，Read. All |
 
 ## <a name="http-request"></a>HTTP 请求
 

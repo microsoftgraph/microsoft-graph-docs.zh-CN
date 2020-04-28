@@ -2,15 +2,15 @@
 title: 获取 conditionalAccessPolicy
 description: 检索 conditionalAccessPolicy 对象的属性和关系。
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9bf059fb728a34dbaefb813dc9a4b177fd9e0834
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 576a6508de497fb4ca84c3ecd5abdda8d98d1df5
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43720907"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916533"
 ---
 # <a name="get-conditionalaccesspolicy"></a>获取 conditionalAccessPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "43720907"
 |:--------------------------------------|:----------------------------------------------------------------------------------|
 |委派（工作或学校帐户）     | Policy.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | Policy.Read.All |
+|应用程序                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

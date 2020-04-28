@@ -2,15 +2,15 @@
 title: relyingPartyDetailedSummary 资源类型
 description: 表示 AD FS 中的信赖方。
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 306c20c31120d2f130562993d8ebd2d7e4083c23
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: 291aa6cc327f6c01ec80c95e4da101d3e8f03aae
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543457"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916498"
 ---
 # <a name="relyingpartydetailedsummary-resource-type"></a>relyingPartyDetailedSummary 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "43543457"
 
 表示配置了 Active Directory 联合身份验证服务（AD FS）的信赖方、其聚合的使用情况，以及是否可以将信赖方配置迁移到 Azure Active Directory。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|

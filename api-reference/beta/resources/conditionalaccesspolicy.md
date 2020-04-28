@@ -2,15 +2,15 @@
 title: conditionalAccessPolicy 资源类型
 description: 表示 Azure Active Directory 条件访问策略。 条件访问策略是定义访问方案的自定义规则。
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0c41993bd31c5ab01a2f89a41a08cde3764df029
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 81eec9b9d1a8a8f931959dced4929a062f506628
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466418"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916751"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>conditionalAccessPolicy 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "43466418"
 
 表示 Azure Active Directory 条件访问策略。 条件访问策略是定义访问方案的自定义规则。 有关详细信息，请参阅[条件访问文档](https://docs.microsoft.com/azure/active-directory/conditional-access/)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -36,7 +36,7 @@ ms.locfileid: "43466418"
 |:-------------|:------------|:------------|
 |conditions|[conditionalAccessConditionSet](conditionalaccessconditionset.md)| 指定应用策略必须满足的规则。 必需。 |
 |createdDateTime|DateTimeOffset| 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读. |
-|description|String| 未使用。 |
+|说明|String| 未使用。 |
 |displayName|String| 指定 conditionalAccessPolicy 对象的显示名称。 |
 |grantControls|[conditionalAccessGrantControls](conditionalaccessgrantcontrols.md)| 指定必须满足的授予控制以通过策略。 |
 |id|字符串| 指定 conditionalAccessPolicy 对象的标识符。 只读。|

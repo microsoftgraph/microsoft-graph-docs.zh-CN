@@ -2,15 +2,15 @@
 title: 更新 conditionalAccessPolicy
 description: 更新 conditionalAccessPolicy 对象的属性。
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7cec2052a830d1d9c5a30452e49b59fb9037cfa0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bed88872a69164e48cba80b1ab3925328b24b7c0
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382373"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916467"
 ---
 # <a name="update-conditionalaccesspolicy"></a>更新 conditionalAccessPolicy
 

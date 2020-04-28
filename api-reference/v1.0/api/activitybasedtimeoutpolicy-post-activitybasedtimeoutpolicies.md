@@ -2,15 +2,15 @@
 title: 创建 activityBasedTimeoutPolicy
 description: 创建新的 activityBasedTimeoutPolicy。
 localization_priority: Normal
-author: davidmu1
+author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 884143424a853e36554abe9ed3a61d73000ebe84
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 670e912edd8cc966d0fbc07247ffcd6e3cbeffa0
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806318"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917124"
 ---
 # <a name="create-activitybasedtimeoutpolicy"></a>创建 activityBasedTimeoutPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "43806318"
 
 创建新的[activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md)对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

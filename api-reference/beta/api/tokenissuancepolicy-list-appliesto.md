@@ -2,15 +2,15 @@
 title: 列出 appliesTo
 description: 获取已应用 tokenIssuancePolicy 对象的 directoryObject 对象的列表。
 localization_priority: Normal
-author: dkershaw10
+author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2cbf8a86ba113c1f1d36091a129c767e70c34984
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 44744f507131633c1c53c5922c4c068a76bf1ac8
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219254"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917451"
 ---
 # <a name="list-appliesto"></a>列出 appliesTo
 
@@ -20,7 +20,7 @@ ms.locfileid: "43219254"
 
 获取已应用[tokenIssuancePolicy](../resources/tokenissuancepolicy.md)对象的[directoryObject](../resources/directoryObject.md)对象的列表。 TokenIssuancePolicy 只能应用于[application](../resources/application.md)和[servicePrincipal](../resources/serviceprincipal.md)资源。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

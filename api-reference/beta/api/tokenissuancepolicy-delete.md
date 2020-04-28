@@ -2,15 +2,15 @@
 title: 删除 tokenIssuancePolicy
 description: 删除 tokenIssuancePolicy。
 localization_priority: Normal
-author: dkershaw10
+author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 974c1e912d0934c03080af4d8c80fd7f388b575d
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 9b74a0bf73db307833af871170089cb222b4b6bd
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219268"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917465"
 ---
 # <a name="delete-tokenissuancepolicy"></a>删除 tokenIssuancePolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "43219268"
 
 删除[tokenIssuancePolicy](../resources/tokenissuancepolicy.md)对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 82dcc6a4e062e58bde2156d8a0eab278b604ed71
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: bca6ab86b0873f72ef026655a141c7a5611c2eb8
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124831"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917556"
 ---
 # <a name="create-plannertask"></a>创建 plannerTask
 
@@ -68,7 +68,7 @@ Content-length: 285
       "@odata.type": "#microsoft.graph.plannerAssignment",
       "orderHint": " !"
     }
-  },
+  }
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)

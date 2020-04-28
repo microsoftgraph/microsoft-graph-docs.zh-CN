@@ -2,15 +2,15 @@
 title: 创建 claimsMappingPolicy
 description: 创建新的 claimsMappingPolicy。
 localization_priority: Normal
-author: dkershaw10
+author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c647e8202153d46fe4610735cb01b5817ff15c2d
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 8fa07178f6c485a98353c7b5718b0b0c9173f84f
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216864"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916503"
 ---
 # <a name="create-claimsmappingpolicy"></a>创建 claimsMappingPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "43216864"
 
 创建新的[claimsMappingPolicy](../resources/claimsmappingpolicy.md)对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

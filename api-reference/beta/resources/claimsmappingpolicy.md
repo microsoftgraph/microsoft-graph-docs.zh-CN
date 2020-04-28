@@ -2,15 +2,15 @@
 title: claimsMappingPolicy 资源类型
 description: 表示可控制 Azure Active Directory （Azure AD）颁发的访问令牌的生存期的策略。
 localization_priority: Normal
-author: dkershaw10
+author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d8e502148f6ffda1d2a2f23fbcbde70be0f915b0
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 26596e9e1ea4dc39f233a89fbf6cbf0da0085c5a
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218596"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916267"
 ---
 # <a name="claimsmappingpolicy-resource-type"></a>claimsMappingPolicy 资源类型
 
@@ -44,7 +44,7 @@ ms.locfileid: "43218596"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|字符串| 此策略的唯一标识符。 只读。|
-|定义|String collection| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
+|定义|String 集合| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
 |description|String| 此策略的说明。|
 |displayName|String| 此策略的显示名称。 必需。|
 |isOrganizationDefault|Boolean|忽略此属性。 声明映射策略仅可应用于服务主体，不能为组织全局设置。|

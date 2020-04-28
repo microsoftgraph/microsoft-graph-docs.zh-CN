@@ -2,15 +2,15 @@
 title: tokenIssuancePolicy 资源类型
 description: 表示指定由 Azure AD 颁发的 SAML 令牌的特征的策略。
 localization_priority: Normal
-author: dkershaw10
+author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9772e58a996c8800ea1822302df2f3a218f08a28
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: ecd776364fbdc3dcd0b4dbf59ff60c8e6624262b
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219135"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917367"
 ---
 # <a name="tokenissuancepolicy-resource-type"></a>tokenIssuancePolicy 资源类型
 
@@ -42,7 +42,7 @@ ms.locfileid: "43219135"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|字符串| 此策略的唯一标识符。 只读。|
-|定义|String collection| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
+|定义|String 集合| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
 |description|String| 此策略的说明。|
 |displayName|String| 此策略的显示名称。 必需。|
 |isOrganizationDefault|Boolean|忽略此属性。 令牌颁发策略仅适用于服务主体，不能为组织全局设置。|
@@ -63,9 +63,9 @@ ms.locfileid: "43219135"
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|TokenResponseSigningPolicy|字符串|表示 Azure AD 中可用的证书签名选项。 支持的值为`ResponseOnly`： `TokenOnly`、 `ResponseAndToken`、。  |
-|SamlTokenVersion|字符串|SAML 令牌的版本。 支持的值为`1.1`： `2.0`、。 |
-|SigningAlgorithm|字符串|Azure AD 使用的签名算法对 SAML 令牌进行签名。 支持的值为`http://www.w3.org/2001/04/xmldsig-more#rsa-sha256`： `http://www.w3.org/2000/09/xmldsig#rsa-sha1`、。|
+|TokenResponseSigningPolicy|String|表示 Azure AD 中可用的证书签名选项。 支持的值为`ResponseOnly`： `TokenOnly`、 `ResponseAndToken`、。  |
+|SamlTokenVersion|String|SAML 令牌的版本。 支持的值为`1.1`： `2.0`、。 |
+|SigningAlgorithm|String|Azure AD 使用的签名算法对 SAML 令牌进行签名。 支持的值为`http://www.w3.org/2001/04/xmldsig-more#rsa-sha256`： `http://www.w3.org/2000/09/xmldsig#rsa-sha1`、。|
 |版本|整数|将值设置为1。 必需。|
 
 

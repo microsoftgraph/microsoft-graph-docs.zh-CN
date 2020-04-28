@@ -2,15 +2,15 @@
 title: 创建 homeRealmDiscoveryPolicy
 description: 创建新的 homeRealmDiscoveryPolicy。
 localization_priority: Normal
-author: dkershaw10
+author: hpsin
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1dc0da438588d21f3022aea9fe67063fbb969a3b
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 4d6a01af5b9abb2ad92a5598ba1d2f7d79b9a726
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218504"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916926"
 ---
 # <a name="create-homerealmdiscoverypolicy"></a>创建 homeRealmDiscoveryPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "43218504"
 
 创建新的[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md)对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

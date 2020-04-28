@@ -2,15 +2,15 @@
 title: 获取 tokenIssuancePolicy
 description: 检索 tokenIssuancePolicy 对象的属性和关系。
 localization_priority: Normal
-author: dkershaw10
+author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9c49e2c4f479431cbe78def584c8200b3b569d24
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: f860958406d2c48d195687e877bf009b1307dbd1
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219261"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916309"
 ---
 # <a name="get-tokenissuancepolicy"></a>获取 tokenIssuancePolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "43219261"
 
 检索[tokenIssuancePolicy](../resources/tokenIssuancePolicy.md)对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

@@ -2,15 +2,15 @@
 title: 创建 tokenLifetimePolicy
 description: 创建新的 tokenLifetimePolicy。
 localization_priority: Normal
-author: davidmu1
+author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: db33f9a5e02e2e5b7763f412be3dd7e49669a003
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: e2e5843d29261d4f6fd98d0b6bb3810a17536020
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806077"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916988"
 ---
 # <a name="create-tokenlifetimepolicy"></a>创建 tokenLifetimePolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "43806077"
 
 创建新的[tokenLifetimePolicy](../resources/tokenlifetimepolicy.md)对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

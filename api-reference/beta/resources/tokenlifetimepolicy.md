@@ -2,15 +2,15 @@
 title: tokenLifetimePolicy 资源类型
 description: 表示一个可控制 Azure Active Directory 颁发的访问令牌的生存期的策略。
 localization_priority: Normal
-author: dkershaw10
+author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e0be42ca9ffdc568eed9c540e634fb76485e2665
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 149c131ee38dc802de8845729ae1266a74eb8e4d
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218406"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917360"
 ---
 # <a name="tokenlifetimepolicy-resource-type"></a>tokenLifetimePolicy 资源类型
 
@@ -40,7 +40,7 @@ ms.locfileid: "43218406"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|字符串| 此策略的唯一标识符。 只读。|
-|定义|String collection| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
+|定义|String 集合| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
 |description|String| 此策略的说明。|
 |displayName|String| 此策略的显示名称。 必需。|
 |isOrganizationDefault|Boolean|如果设置为 true，则激活此策略。 对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。 可选，默认值为 false。|
@@ -64,7 +64,7 @@ ms.locfileid: "43218406"
 
 | 属性     | 类型   |说明| 最小值 | 最大值 | 默认值|
 |:---------------|:--------|:----------|:--------|:--------|:----|
-|AccessTokenLifetime|字符串|控制访问和 ID 令牌被视为有效的时间。|10 分钟|1 天|1 小时|
+|AccessTokenLifetime|String|控制访问和 ID 令牌被视为有效的时间。|10 分钟|1 天|1 小时|
 |版本|整数|将值设置为1。 必需。|无|无|无|
 
 ## <a name="relationships"></a>关系

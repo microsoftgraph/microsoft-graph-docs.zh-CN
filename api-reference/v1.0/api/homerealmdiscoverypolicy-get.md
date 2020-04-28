@@ -2,15 +2,15 @@
 title: 获取 homeRealmDiscoveryPolicy
 description: 检索 homeRealmDiscoveryPolicy 对象的属性和关系。
 localization_priority: Normal
-author: davidmu1
+author: hpsin
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 57fa74e6561ad4010e9dbffa983257886c4316ad
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 08db86785c2ea5f6807a512ed3b50298c1efd2d5
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43805592"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917388"
 ---
 # <a name="get-homerealmdiscoverypolicy"></a>获取 homeRealmDiscoveryPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "43805592"
 
 检索[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md)对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

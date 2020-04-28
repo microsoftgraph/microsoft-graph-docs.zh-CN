@@ -2,15 +2,15 @@
 title: 创建 tokenIssuancePolicy
 description: 创建新的 tokenIssuancePolicy。
 localization_priority: Normal
-author: dkershaw10
+author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ca9d61aec1c24198b28f088f0b6aa1e054d89c25
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 56bb0c89d8194f73498f0847d533b2f2c97532b0
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216426"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917423"
 ---
 # <a name="create-tokenissuancepolicy"></a>创建 tokenIssuancePolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "43216426"
 
 创建新的[tokenIssuancePolicy](../resources/tokenissuancepolicy.md)对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

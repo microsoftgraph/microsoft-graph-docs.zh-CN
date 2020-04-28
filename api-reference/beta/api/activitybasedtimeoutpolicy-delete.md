@@ -2,15 +2,15 @@
 title: 删除 activityBasedTimeoutPolicy
 description: 删除 activityBasedTimeoutPolicy。
 localization_priority: Normal
-author: dkershaw10
+author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1e76941bd529af5cc34316773f96bc0d93f0a7de
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 19947e753b9444f9efd13061f1faaedbc843d109
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217958"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916372"
 ---
 # <a name="delete-activitybasedtimeoutpolicy"></a>删除 activityBasedTimeoutPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "43217958"
 
 删除[activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md)对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

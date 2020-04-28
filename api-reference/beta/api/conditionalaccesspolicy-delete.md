@@ -2,15 +2,15 @@
 title: 删除 conditionalAccessPolicy
 description: 删除 conditionalAccessPolicy。
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f49e0b6a7817fffa1773b6793acf2759187b90e6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 29e8bc18b4608f08a8285c6b575e2ce96c204fc4
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43387196"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916508"
 ---
 # <a name="delete-conditionalaccesspolicy"></a>删除 conditionalAccessPolicy
 

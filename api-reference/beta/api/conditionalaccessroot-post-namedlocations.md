@@ -2,15 +2,15 @@
 title: 创建 namedLocation
 description: 创建新的 namedLocation。
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c74ea2fa8e8d652d3a7016aeb0ea3bae985273a3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 473b935d5daab59167949e49cdc2b79fec191811
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382128"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916456"
 ---
 # <a name="create-namedlocation"></a>创建 namedLocation
 

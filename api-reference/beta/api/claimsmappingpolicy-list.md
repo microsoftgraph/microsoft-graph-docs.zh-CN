@@ -2,15 +2,15 @@
 title: 列出 claimsMappingPolicies
 description: 获取 claimsMappingPolicy 对象的列表。
 localization_priority: Normal
-author: dkershaw10
+author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: aa808cc42c5880d62ef50952434fd5e444adf6b9
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 4a257d9cdb1466bb28b3b511ce85a2776c288144
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217972"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916625"
 ---
 # <a name="list-claimsmappingpolicies"></a>列出 claimsMappingPolicies
 
@@ -20,7 +20,7 @@ ms.locfileid: "43217972"
 
 获取[claimsMappingPolicy](../resources/claimsmappingpolicy.md)对象的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

@@ -2,15 +2,15 @@
 title: tokenIssuancePolicy 资源类型
 description: 表示指定由 Azure AD 颁发的 SAML 令牌的特征的策略。
 localization_priority: Normal
-author: davidmu1
+author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 030b05a7609b9588f0860471272c62007eaa1692
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: ac50b952a075ec4ce4b9257fa28c0e5a9aba6096
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229575"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916891"
 ---
 # <a name="tokenissuancepolicy-resource-type"></a>tokenIssuancePolicy 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "43229575"
 
 继承自[stsPolicy](stsPolicy.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -45,7 +45,7 @@ ms.locfileid: "43229575"
 |定义|String 集合| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
 |description|String| 此策略的说明。|
 |displayName|String| 此策略的显示名称。 必需。|
-|isOrganizationDefault|布尔|忽略此属性。 令牌颁发策略仅适用于服务主体，不能为组织全局设置。|
+|isOrganizationDefault|Boolean|忽略此属性。 令牌颁发策略仅适用于服务主体，不能为组织全局设置。|
 
 
 ### <a name="properties-of-a-token-issuance-policy-definition"></a>令牌颁发策略定义的属性

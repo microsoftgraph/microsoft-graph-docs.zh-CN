@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: dd1b4e01ec6e9a78681ea37b7eee99c9a6fab3c1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 948f05e97471bd9be6442dade4fe55f6b1e90e7b
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511269"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917105"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -39,7 +39,7 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
@@ -101,8 +101,8 @@ Content-Length: 1574
   "@odata.type": "#microsoft.graph.onlineMeeting",
   "autoAdmittedUsers": "everyone",
   "audioConferencing": {
-    "tollNumber": "+12525634478",
-    "tollFreeNumber": "+18666390588",
+    "tollNumber": "55525634478",
+    "tollFreeNumber": "55566390588",
     "ConferenceId": "9999999",
     "dialinUrl": "https://dialin.teams.microsoft.com/6787A136-B9B8-4D39-846C-C0F1FF937F10?id=xxxxxxx"
   },
@@ -124,7 +124,7 @@ Content-Length: 1574
           "user": {
             "@odata.type": "#microsoft.graph.identity",
             "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8",
-            "displayName": "John"
+            "displayName": "Tyler Stein"
           }
         },
         "upn": "upn-value"
@@ -136,7 +136,7 @@ Content-Length: 1574
         "user": {
           "@odata.type": "#microsoft.graph.identity",
           "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
-          "displayName": "Bob"
+          "displayName": "Jasmine Miller"
         }
       },
       "upn": "upn-value"

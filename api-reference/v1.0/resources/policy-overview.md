@@ -2,15 +2,15 @@
 title: 策略 API 概述
 description: Azure Active Directory 使用策略控制组织中的 Azure AD 功能行为。
 localization_priority: Normal
-author: davidmu1
+author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: b64efc81caa10c249030e33cb893d90aec8a1afb
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: c34d8114e90aaf3c680ed89da4d16cd12880e71e
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229442"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917549"
 ---
 # <a name="azure-ad-policy-overview"></a>Azure AD 策略概述
 

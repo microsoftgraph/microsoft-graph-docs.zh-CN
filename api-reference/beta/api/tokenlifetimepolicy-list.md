@@ -2,15 +2,15 @@
 title: 列出 tokenLifetimePolicies
 description: 获取 tokenLifetimePolicy 对象的列表。
 localization_priority: Normal
-author: dkershaw10
+author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ecec201123c2275545d6b32302048ef72bf35f03
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 12ccf89d8110c8449bac5e23259fe902e667cd4b
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216321"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916305"
 ---
 # <a name="list-tokenlifetimepolicies"></a>列出 tokenLifetimePolicies
 
@@ -20,7 +20,7 @@ ms.locfileid: "43216321"
 
 获取[tokenLifetimePolicy](../resources/tokenlifetimepolicy.md)对象的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

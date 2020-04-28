@@ -2,15 +2,15 @@
 title: homeRealmDiscoveryPolicy 资源类型
 description: 表示用于控制联合用户的 Azure Active Directory 身份验证行为的策略。
 localization_priority: Normal
-author: dkershaw10
+author: hpsin
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 55c6893421c815b61a70af7c47ee7cd1b46a0a0c
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: c29134a0c6d35e5dd5eff72f133938c3366912f5
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218469"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917260"
 ---
 # <a name="homerealmdiscoverypolicy-resource-type"></a>homeRealmDiscoveryPolicy 资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "43218469"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|字符串| 此策略的唯一标识符。 只读。|
-|定义|String collection| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
+|定义|String 集合| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
 |description|String| 此策略的说明。|
 |displayName|String| 此策略的显示名称。 必需。|
 |isOrganizationDefault|Boolean|如果设置为 true，则激活此策略。 对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。 可选，默认值为 false。|
@@ -61,7 +61,7 @@ ms.locfileid: "43218469"
 | 属性     | 类型   |说明| 
 |:---------------|:--------|:----------|
 |AccelerateToFederatedDomain|Boolean| 设置为`true`以进行自动加速（绕过主页领域发现）。 如果`true`在租户中只有一个经过验证和联合的域，则用户将直接转到联合身份提供程序（如 ADFS）以进行登录。 如果`true`租户中有多个已验证的域，则必须指定**PreferredDomain** 。 可选。|
-|PreferredDomain|字符串| 指定要加速登录到的域。 如果租户只有一个联合域，则可以省略它。 如果省略它，并且有多个经过验证的联合域，则此策略将不起作用。 如果**AccelerateToFederatedDomain**为， `true`则为必需。|
+|PreferredDomain|String| 指定要加速登录到的域。 如果租户只有一个联合域，则可以省略它。 如果省略它，并且有多个经过验证的联合域，则此策略将不起作用。 如果**AccelerateToFederatedDomain**为， `true`则为必需。|
 |AllowCloudPasswordValidation|Boolean| 设置为`true`以允许应用程序通过直接向 Azure Active Directory 令牌终结点提供用户名/密码凭据来对联合用户进行身份验证。 仅在启用密码哈希同步时才有效。 可选。|
 
 ## <a name="relationships"></a>关系

@@ -2,15 +2,15 @@
 title: 列出策略
 description: 检索 conditionalAccessPolicy 对象的列表。
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7deae297b3f1f1b8f513af5906031549d446e6cd
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: e0142ca08495bf13545c6a41d9b49e13f0c721c1
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43720828"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916463"
 ---
 # <a name="list-policies"></a>列出策略
 
@@ -28,7 +28,7 @@ ms.locfileid: "43720828"
 |:--------------------------------------|:----------------------------------------------------------------------------------|
 |委派（工作或学校帐户）     | Policy.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | Policy.Read.All |
+|应用程序                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

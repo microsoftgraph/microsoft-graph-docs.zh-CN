@@ -2,15 +2,15 @@
 title: conditionalAccessPlatforms 资源类型
 description: 策略作用域中包含和排除的平台。
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5907e7162093b7d0d9fb796f61fc0cf110350417
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 27cf8f2b6a022f4d5ca17d716b35b6f357d23471
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413351"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916788"
 ---
 # <a name="conditionalaccessplatforms-resource-type"></a>conditionalAccessPlatforms 资源类型
 

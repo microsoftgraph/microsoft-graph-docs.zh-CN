@@ -2,15 +2,15 @@
 title: stsPolicy 资源类型
 description: 表示用于控制 Microsoft identity platform 行为的策略类型的抽象基类型。
 localization_priority: Normal
-author: dkershaw10
+author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 33582c39d8abe03e04a064935a5f3d0d70a330f7
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 56686d3e2e61a74acabd54218c30d27abb341748
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805686"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917470"
 ---
 # <a name="stspolicy-resource-type"></a>stsPolicy 资源类型
 
