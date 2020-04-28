@@ -2,35 +2,35 @@
 title: 获取 claimsMappingPolicy
 description: 检索 claimsMappingPolicy 对象的属性和关系。
 localization_priority: Normal
-author: dkershaw10
+author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c8423830753a6b8c19334d53b210b1874d09256e
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: b0f10ebb296d3795c85a0fa166f0b6f14ac952c8
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217979"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916681"
 ---
-# <a name="get-claimsmappingpolicy"></a><span data-ttu-id="282b1-103">获取 claimsMappingPolicy</span><span class="sxs-lookup"><span data-stu-id="282b1-103">Get claimsMappingPolicy</span></span>
+# <a name="get-claimsmappingpolicy"></a><span data-ttu-id="ac51b-103">获取 claimsMappingPolicy</span><span class="sxs-lookup"><span data-stu-id="ac51b-103">Get claimsMappingPolicy</span></span>
 
-<span data-ttu-id="282b1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="282b1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ac51b-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ac51b-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="282b1-105">检索[claimsMappingPolicy](../resources/claimsmappingpolicy.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="282b1-105">Retrieve the properties and relationships of a [claimsMappingPolicy](../resources/claimsmappingpolicy.md) object.</span></span>
+<span data-ttu-id="ac51b-105">检索[claimsMappingPolicy](../resources/claimsmappingpolicy.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="ac51b-105">Retrieve the properties and relationships of a [claimsMappingPolicy](../resources/claimsmappingpolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="282b1-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="282b1-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ac51b-106">权限</span><span class="sxs-lookup"><span data-stu-id="ac51b-106">Permissions</span></span>
 
-<span data-ttu-id="282b1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="282b1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ac51b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ac51b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="282b1-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="282b1-109">Permission type</span></span>                        | <span data-ttu-id="282b1-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="282b1-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="ac51b-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="ac51b-109">Permission type</span></span>                        | <span data-ttu-id="ac51b-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ac51b-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="282b1-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="282b1-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="282b1-112">Policy： Read. All，ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="282b1-112">Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration</span></span> |
-| <span data-ttu-id="282b1-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="282b1-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="282b1-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="282b1-114">Not supported.</span></span> |
-| <span data-ttu-id="282b1-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="282b1-115">Application</span></span>                            | <span data-ttu-id="282b1-116">Policy： Read. All，ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="282b1-116">Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration</span></span> |
+| <span data-ttu-id="ac51b-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ac51b-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="ac51b-112">Policy： Read. All，ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="ac51b-112">Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration</span></span> |
+| <span data-ttu-id="ac51b-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ac51b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ac51b-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="ac51b-114">Not supported.</span></span> |
+| <span data-ttu-id="ac51b-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="ac51b-115">Application</span></span>                            | <span data-ttu-id="ac51b-116">Policy： Read. All，ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="ac51b-116">Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="282b1-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="282b1-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ac51b-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ac51b-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,31 +38,31 @@ ms.locfileid: "43217979"
 GET /policies/claimsMappingPolicies/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="282b1-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="282b1-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="ac51b-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="ac51b-118">Optional query parameters</span></span>
 
-<span data-ttu-id="282b1-119">此方法支持`$expand`和`$select` OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="282b1-119">This method supports the `$expand` and `$select` OData query parameters to help customize the response.</span></span> <span data-ttu-id="282b1-120">有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="282b1-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span> <span data-ttu-id="282b1-121">使用`$expand`时，请确保您的应用程序请求读取扩展的对象的权限。</span><span class="sxs-lookup"><span data-stu-id="282b1-121">When using `$expand` make sure your app requests permissions to read the expanded objects.</span></span>
+<span data-ttu-id="ac51b-119">此方法支持`$expand`和`$select` OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="ac51b-119">This method supports the `$expand` and `$select` OData query parameters to help customize the response.</span></span> <span data-ttu-id="ac51b-120">有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="ac51b-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span> <span data-ttu-id="ac51b-121">使用`$expand`时，请确保您的应用程序请求读取扩展的对象的权限。</span><span class="sxs-lookup"><span data-stu-id="ac51b-121">When using `$expand` make sure your app requests permissions to read the expanded objects.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="282b1-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="282b1-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ac51b-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="ac51b-122">Request headers</span></span>
 
-| <span data-ttu-id="282b1-123">名称</span><span class="sxs-lookup"><span data-stu-id="282b1-123">Name</span></span>      |<span data-ttu-id="282b1-124">说明</span><span class="sxs-lookup"><span data-stu-id="282b1-124">Description</span></span>|
+| <span data-ttu-id="ac51b-123">名称</span><span class="sxs-lookup"><span data-stu-id="ac51b-123">Name</span></span>      |<span data-ttu-id="ac51b-124">说明</span><span class="sxs-lookup"><span data-stu-id="ac51b-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="282b1-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="282b1-125">Authorization</span></span> | <span data-ttu-id="282b1-126">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="282b1-126">Bearer {token}</span></span> |
+| <span data-ttu-id="ac51b-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="ac51b-125">Authorization</span></span> | <span data-ttu-id="ac51b-126">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="ac51b-126">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="282b1-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="282b1-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ac51b-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="ac51b-127">Request body</span></span>
 
-<span data-ttu-id="282b1-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="282b1-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="ac51b-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="ac51b-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="282b1-129">响应</span><span class="sxs-lookup"><span data-stu-id="282b1-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ac51b-129">响应</span><span class="sxs-lookup"><span data-stu-id="ac51b-129">Response</span></span>
 
-<span data-ttu-id="282b1-130">如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[claimsMappingPolicy](../resources/claimsmappingpolicy.md)对象。</span><span class="sxs-lookup"><span data-stu-id="282b1-130">If successful, this method returns a `200 OK` response code and the requested [claimsMappingPolicy](../resources/claimsmappingpolicy.md) object in the response body.</span></span>
+<span data-ttu-id="ac51b-130">如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[claimsMappingPolicy](../resources/claimsmappingpolicy.md)对象。</span><span class="sxs-lookup"><span data-stu-id="ac51b-130">If successful, this method returns a `200 OK` response code and the requested [claimsMappingPolicy](../resources/claimsmappingpolicy.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="282b1-131">示例</span><span class="sxs-lookup"><span data-stu-id="282b1-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="ac51b-131">示例</span><span class="sxs-lookup"><span data-stu-id="ac51b-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="282b1-132">请求</span><span class="sxs-lookup"><span data-stu-id="282b1-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="ac51b-132">请求</span><span class="sxs-lookup"><span data-stu-id="ac51b-132">Request</span></span>
 
-<span data-ttu-id="282b1-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="282b1-133">The following is an example of the request.</span></span>
+<span data-ttu-id="ac51b-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="ac51b-133">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="282b1-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="282b1-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ac51b-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="ac51b-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_claimsmappingpolicy"
@@ -71,26 +71,26 @@ GET /policies/claimsMappingPolicies/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/claimsMappingPolicies/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="282b1-135">C#</span><span class="sxs-lookup"><span data-stu-id="282b1-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ac51b-135">C#</span><span class="sxs-lookup"><span data-stu-id="ac51b-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-claimsmappingpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="282b1-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="282b1-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ac51b-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ac51b-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-claimsmappingpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="282b1-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="282b1-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ac51b-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ac51b-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-claimsmappingpolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="282b1-138">响应</span><span class="sxs-lookup"><span data-stu-id="282b1-138">Response</span></span>
+### <a name="response"></a><span data-ttu-id="ac51b-138">响应</span><span class="sxs-lookup"><span data-stu-id="ac51b-138">Response</span></span>
 
-<span data-ttu-id="282b1-139">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="282b1-139">The following is an example of the response.</span></span>
+<span data-ttu-id="ac51b-139">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="ac51b-139">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="282b1-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="282b1-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="ac51b-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="ac51b-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
