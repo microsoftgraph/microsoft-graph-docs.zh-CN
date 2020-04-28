@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 3889f23353b46c852547501c59d8a94653c67b75
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: f1837551b5ee863769277a3ed023afa21f3c7c92
+ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986146"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43581637"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -145,5 +145,6 @@ Outlook 服务提供以下资源。
 | POST 1:1/group chat message | 2 rps | 20 rps |
 
 对于给定团队或频道，每个应用最多可发布 4 个请求。
+每个应用每天最多可以将 3000 条消息发送到给定的频道。
 
 另请参阅 [Microsoft Teams 限制](/graph/api/resources/teams-api-overview#microsoft-teams-limits)和[投票要求](/graph/api/resources/teams-api-overview#polling-requirements)。

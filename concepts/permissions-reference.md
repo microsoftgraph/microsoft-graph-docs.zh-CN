@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 002221d8520fb2e379588e71bb7eccfb43475708
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 4f060f07dd2abf56dd63222f416ce6f2c3a053d3
+ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43160301"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43581672"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -701,7 +701,7 @@ Microsoft 个人帐户不支持组功能。
 
 在某些情况下，应用可能需要[目录权限](#directory-permissions)才能读取 `member` 和 `memberOf` 等组属性。例如，如果组将一个或多个 [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) 作为成员，则应用将需要有效权限才能通过授予的其中一个_目录\*_ 权限读取服务主体，否则 Microsoft Graph 将返回错误。（如果是委派权限，已登录用户还需要组织的足够的权限才能读取服务主体。）相同的指导适用于 `memberOf` 属性，该属性可以返回 [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta)。
 
-要设置 Office 365 组的 **preferredDataLocation** 属性，应用需要目录权限。 当处于多地理位置环境中的用户创建 Office 365 组时，该组的 **preferredDataLocation** 值将自动设置为该用户所使用的值。 有关组的首选数据位置的详细信息，请参阅[使用特定的 PDL 创建 Office 365 组](https://docs.microsoft.com/office365/enterprise/multi-geo-add-group-with-pdl)。
+要设置 Office 365 组的 **preferredDataLocation** 属性，应用需要 Directory.ReadWrite.All 权限。 当处于多地理位置环境中的用户创建 Office 365 组时，该组的 **preferredDataLocation** 值将自动设置为该用户所使用的值。 有关组的首选数据位置的详细信息，请参阅[使用特定的 PDL 创建 Office 365 组](https://docs.microsoft.com/office365/enterprise/multi-geo-add-group-with-pdl)。
 
 组权限用于控制对 [Microsoft Teams](/graph/api/resources/teams-api-overview) 资源和 API 的访问权限。不支持 Microsoft 个人帐户。
 
@@ -1271,8 +1271,8 @@ People.Read.All 权限仅适用于工作和学校帐户。
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Presence.Read_ | 读取用户的状态信息 | 允许应用代表已登录的用户读取状态信息。 状态信息包括活动、可用性、状态备注、日历外出邮件、时区和位置。 | 是 |
-| _Presence.Read.All_ |   读取组织中所有用户的状态信息 | 允许应用代表已登录的用户读取目录中所有用户的状态信息。 状态信息包括活动、可用性、状态备注、日历外出邮件、时区和位置。 | 是 |
+| _Presence.Read_ | 读取用户的状态信息 | 允许应用代表已登录的用户读取状态信息。 状态信息包括活动、可用性、状态备注、日历外出邮件、时区和位置。 | 否 |
+| _Presence.Read.All_ |   读取组织中所有用户的状态信息 | 允许应用代表已登录的用户读取目录中所有用户的状态信息。 状态信息包括活动、可用性、状态备注、日历外出邮件、时区和位置。 | 否 |
 
 ### <a name="example-usage"></a>用法示例
 
@@ -1764,16 +1764,16 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 
 ---
 
-## <a name="user-authentication-method-permissions-private-preview"></a>用户身份验证方法权限（[个人预览版](#permissions-availability-status)）
+## <a name="user-authentication-method-permissions-preview"></a>用户身份验证方法权限（[预览版](#permissions-availability-status)）
 
 #### <a name="delegated-permissions"></a>委派权限
 
 |权限                              |显示字符串                        |说明        |需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:---------------------------------------|:-------------------------------------|:------------------|:----------------------|:----------------------------|
-|_UserAuthenticationMethod.Read_（个人预览版）        |读取自己的身份验证方法       |允许该应用读取已登录用户的身份验证方法，包括电话号码和 Authenticator 应用设置。 这不允许该应用查看已登录用户的密码之类的机密信息，也无法登录或以其他方式使用已登录用户的身份验证方法。 |是|否|
-|_UserAuthenticationMethod.Read.All_（个人预览版）    |读取用户的身份验证方法    |允许此应用读取已登录用户有权访问的组织中所有用户的身份验证方法。 身份验证方法包括用户的电话号码和 Authenticator 应用设置之类的内容。 这不允许该应用查看密码之类的机密信息，也无法登录或以其他方式使用身份验证方法。 |是|否|
-|_UserAuthenticationMethod.ReadWrite_（个人预览版）   |管理自己的身份验证方法     |允许该应用读取和写入已登录用户的身份验证方法，包括电话号码和 Authenticator 应用设置。 这不允许该应用查看已登录用户的密码之类的机密信息，也无法登录或以其他方式使用已登录用户的身份验证方法。 |是|否|
-|_UserAuthenticationMethod.ReadWrite.All_（个人预览版）|管理用户的身份验证方法  |允许此应用读取和写入已登录用户有权访问的组织中所有用户的身份验证方法。 身份验证方法包括用户的电话号码和 Authenticator 应用设置之类的内容。 这不允许该应用查看密码之类的机密信息，也无法登录或以其他方式使用身份验证方法。 |是|否|
+|_UserAuthenticationMethod.Read_（预览版）        |读取自己的身份验证方法       |允许该应用读取已登录用户的身份验证方法，包括电话号码和 Authenticator 应用设置。 这不允许该应用查看已登录用户的密码之类的机密信息，也无法登录或以其他方式使用已登录用户的身份验证方法。 |是|否|
+|_UserAuthenticationMethod.Read.All_（预览版）    |读取用户的身份验证方法    |允许此应用读取已登录用户有权访问的组织中所有用户的身份验证方法。 身份验证方法包括用户的电话号码和 Authenticator 应用设置之类的内容。 这不允许该应用查看密码之类的机密信息，也无法登录或以其他方式使用身份验证方法。 |是|否|
+|_UserAuthenticationMethod.ReadWrite_（预览版）   |管理自己的身份验证方法     |允许该应用读取和写入已登录用户的身份验证方法，包括电话号码和 Authenticator 应用设置。 这不允许该应用查看已登录用户的密码之类的机密信息，也无法登录或以其他方式使用已登录用户的身份验证方法。 |是|否|
+|_UserAuthenticationMethod.ReadWrite.All_（预览版）|管理用户的身份验证方法  |允许此应用读取和写入已登录用户有权访问的组织中所有用户的身份验证方法。 身份验证方法包括用户的电话号码和 Authenticator 应用设置之类的内容。 这不允许该应用查看密码之类的机密信息，也无法登录或以其他方式使用身份验证方法。 |是|否|
 
 #### <a name="application-permissions"></a>应用程序权限
 

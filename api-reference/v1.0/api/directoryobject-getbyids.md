@@ -1,25 +1,22 @@
 ---
-title: 获取 ID 列表中的目录对象
-description: select` 查询选项不适用于此操作。
+title: 'directoryObject: getByIds'
+description: 返回 ID 列表中指定的目录对象。
 author: keylimesoda
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8ff81002804a445ab102b3df0bac2b57332fec2b
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 7ed4066709e351d8500cbd9e40ba47e69fd1420d
+ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181928"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43581693"
 ---
-# <a name="get-directory-objects-from-a-list-of-ids"></a>获取 ID 列表中的目录对象
+# <a name="directoryobject-getbyids"></a>directoryObject: getByIds
 
 命名空间：microsoft.graph
 
 返回 ID 列表中指定的目录对象。
-
->[!NOTE]
->返回的目录对象是包含其所有属性的完整对象。 `$select` 查询选项不适用于此操作。
 
 >[!NOTE]
 >此 API 存在一个[已知问题](/graph/known-issues#incomplete-objects-when-using-getbyids-request)。 返回的目录对象并非都是包含其所有属性的完整对象。
@@ -55,7 +52,7 @@ POST /directoryObjects/getByIds
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | string | application/json  |
+| Content-type  | string | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
 
@@ -63,7 +60,7 @@ POST /directoryObjects/getByIds
 
 | 参数   | 类型 |说明|
 |:---------------|:--------|:----------|
-|ids|String collection| 要返回其对象的 ID 集合。 最多可以指定 1000 个 ID。 |
+|ids|String collection| 要返回其对象的 ID 集合。  ID 是 GUID，由字符串表示。  最多可以指定 1000 个 ID。 |
 |types|String collection| 指定要搜索的资源集合集的资源类型集合。 如果未指定，则默认为 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0)，其包含目录中定义的所有资源类型。 可以在该集合中指定派生自 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0) 的任何对象，例如：[user](/graph/api/resources/user?view=graph-rest-v1.0)、[group](/graph/api/resources/group?view=graph-rest-v1.0)、[device](/graph/api/resources/device?view=graph-rest-v1.0) 等。 若要搜索对[云解决方案提供商](https://partner.microsoft.com/zh-CN/cloud-solution-provider)合作伙伴组织的引用 ，请指定[directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0)。 如果未指定，则默认为 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0)，其包含目录中定义的所有资源类型，对[云解决方案提供商](https://partner.microsoft.com/zh-CN/cloud-solution-provider)合作伙伴组织的引用除外。 这些值不区分大小写。|
 
 ## <a name="response"></a>响应
@@ -72,7 +69,7 @@ POST /directoryObjects/getByIds
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -109,9 +106,9 @@ Content-type: application/json
 ---
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

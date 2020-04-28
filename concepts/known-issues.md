@@ -86,11 +86,11 @@ Beta 版本提供了一种变通方法，可以使用 [事件](/graph/api/resour
 
 ### <a name="additional-notifications-for-users"></a>其他用户通知
 
-对于 **changeType** 设置为 **updated** 的**用户**，更改[订阅](/graph/api/resources/subscription)将还收到 **changeType** 通知：创建和软删除用户时**已更新**。
+对于“**changeType**”设置为“**updated**” 的“**user**”，[订阅](/graph/api/resources/subscription)以上更改还将收到“**changeType**”的通知：在创建和软删除用户时**已更新**。
 
 ### <a name="additional-notifications-for-groups"></a>其他组通知
 
-对于 **changeType** 设置为 **updated** 的**组**，更改[订阅](/graph/api/resources/subscription)将还收到 **changeType** 通知：创建和软删除组时**已更新**。
+对于“**changeType**”设置为“**updated**” 的“**group**”，[订阅](/graph/api/resources/subscription)以上更改还将收到“**changeType**”通知：在创建和软删除组时**已更新**。
 
 ## <a name="cloud-communications"></a>云通信 
 
@@ -320,7 +320,7 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 若要获取团队列表，请参阅[列出所有团队](teams-list-all-teams.md)和[列出你的团队](/graph/api/user-list-joinedteams?view=graph-rest-1.0)。
 
-### <a name="post-teams-is-only-available-in-beta"></a>POST /teams 仅限试用版
+### <a name="post-teams-is-only-available-in-beta"></a>POST /teams 仅适用于 beta 版
 若要在 v1.0 中创建团队，请参见[创建团队](/graph/api/team-put-teams?view=graph-rest-1.0)。
 
 ### <a name="missing-teams-in-list-all-teams"></a>“列出所有团队”没有列出的团队
