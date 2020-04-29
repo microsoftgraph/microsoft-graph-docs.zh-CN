@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3e2bc3ba8047fe37839b3f82473f9e7416ba75f9
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 1d63173f62f485228138b1d4c75b804698e10f37
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994544"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43935210"
 ---
 ```csharp
 
@@ -29,7 +29,11 @@ var externalItem = new ExternalItem
         Priority = 1,
         Assignee = "john@contoso.com"
     },
-    Content = "Textual content of the file"
+    Content = new ExternalItemContent
+    {
+        Value = "<h1>Error in payment gateway</h1><p>Error details...</p>",
+        Type = ExternalItemContentType.Html
+    }
 };
 
 await graphClient.Connections["contosohr"].Items["TSP228082938"]

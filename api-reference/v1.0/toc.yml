@@ -304,7 +304,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: 发送邮件
                   href: api/user-sendmail.md
-            - name: 注释
+            - name: 备注
               href: resources/onenote.md
               items:
                 - name: 创建笔记本
@@ -3583,7 +3583,7 @@
                       href: api/orgcontact-get-manager.md
                     - name: 获取成员对象
                       href: api/orgcontact-getmemberobjects.md
-            - name: 策略
+            - name: Policy
               href: resources/policy-overview.md
               items:
                 - name: 基于活动的超时策略
@@ -4260,6 +4260,8 @@
                   href: api/site-follow.md
                 - name: 取消关注网站
                   href: api/site-unfollow.md
+                - name: 列表关注的网站
+                  href: api/sites-list-followed.md
             - name: 列表
               href: resources/list.md
               items:
