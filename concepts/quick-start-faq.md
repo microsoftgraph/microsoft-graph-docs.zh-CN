@@ -4,12 +4,12 @@ description: 此 FAQ 解答了与 Microsoft Graph 快速入门相关的问题。
 author: jasonjoh
 ms.author: jasonjoh
 localization_priority: Normal
-ms.openlocfilehash: 00e1d3d20276c888f2f22d7e62f7434da282bca9
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 9b260a29512595fe39d556a57d8e30d86ae06ca6
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806821"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916912"
 ---
 # <a name="microsoft-graph-quick-start-faq"></a>Microsoft Graph 快速入门 FAQ
 
@@ -53,15 +53,15 @@ ms.locfileid: "43806821"
 | Android | [教程](/graph/tutorials/android) | [GitHub](https://github.com/microsoftgraph/msgraph-training-android) |
 | Angular | [教程](/graph/tutorials/angular) | [GitHub](https://github.com/microsoftgraph/msgraph-training-angularspa) |
 | ASP.NET MVC | [教程](/learn/modules/msgraph-build-aspnetmvc-apps) | [GitHub](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp) |
-| iOS Swift | 手册(/graph/tutorials/ios-swift | [GitHub](https://github.com/microsoftgraph/msgraph-training-ios-swift) |
-| iOS Objective-C | 手册(/graph/tutorials/ios-objectivec | [GitHub](https://github.com/microsoftgraph/msgraph-training-ios-objectivec) |
+| iOS Swift | [教程](/graph/tutorials/ios-swift) | [GitHub](https://github.com/microsoftgraph/msgraph-training-ios-swift) |
+| iOS Objective-C | [教程](/graph/tutorials/ios-objectivec) | [GitHub](https://github.com/microsoftgraph/msgraph-training-ios-objectivec) |
 | Node.js | [教程](/graph/tutorials/node) | [GitHub](https://github.com/microsoftgraph/msgraph-training-nodeexpressapp) |
 | PHP | [教程](/graph/tutorials/php) | [GitHub](https://github.com/microsoftgraph/msgraph-training-phpapp) |
 | Python | [教程](/graph/tutorials/python) | [GitHub](https://github.com/microsoftgraph/msgraph-training-pythondjangoapp) |
 | React | [教程](/graph/tutorials/react) | [GitHub](https://github.com/microsoftgraph/msgraph-training-reactspa) |
 | Ruby | [教程](/graph/tutorials/ruby) | [GitHub](https://github.com/microsoftgraph/msgraph-training-rubyrailsapp) |
 | UWP | [教程](/graph/tutorials/uwp) | [GitHub](https://github.com/microsoftgraph/msgraph-training-uwp) |
-| Xamarin | 手册(/graph/tutorials/xamarin | [GitHub](https://github.com/microsoftgraph/msgraph-training-xamarin) |
+| Xamarin | [教程](/graph/tutorials/xamarin) | [GitHub](https://github.com/microsoftgraph/msgraph-training-xamarin) |
 
 ### <a name="why-dont-any-of-the-quick-start-samples-show-advanced-authentication-use-cases"></a>为什么所有快速启动示例都没有展示高级身份验证用例？
 
