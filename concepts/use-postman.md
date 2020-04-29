@@ -3,12 +3,12 @@ title: 结合使用 Postman 和 Microsoft Graph API
 description: 使用 Microsoft Graph Postman 集合，只需几分钟，即可开始使用 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: e548fed509bcf26ce7c733354a5ab3c52ab551c1
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 9ca41df4321426181589ab3dbab5a76c0c683aaa
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868483"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916884"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>结合使用 Postman 和 Microsoft Graph API
 
@@ -22,30 +22,7 @@ ms.locfileid: "40868483"
 可通过以下两种方法来访问 Postman 中的集合：使用集合或参与集合。 必须先在计算机上运行 [Postman](https://www.getpostman.com/)。
 
 ### <a name="consume-the-collection"></a>使用集合
-使用集合是开始使用 Microsoft Graph API 的最简单方法。 单击 [Postman 共享链接](https://www.getpostman.com/collections/d89a737b5f0c0825898a)将启动 Postman。
-
-使用共享集合的优点是，无需执行其他任何步骤，就会自动看到新请求。
-
-有了集合后，就需要创建环境变量：
-
-1. 依次选择“文件 | 导入”****。
-2. 选择“从链接导入”****。
-3. 复制并粘贴下面的 URL，再选择“导入”****。
- 
-    ```
-    https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json
-    ```
-
-现在，应该会在右上角的环境下拉列表中看到“Microsoft Graph 环境”****（以眼睛图标为标识）。 现在需要[创建环境](#using-the-collection)。
-
-### <a name="contribute-to-the-collection"></a>参与集合
-若要贡献你自己的请求，需要为 [Microsoft Graph Postman 集合](https://github.com/microsoftgraph/microsoftgraph-postman-collections) github 存储库创建分支。 
-
-若要详细了解如何执行此操作，请观看以下视频。
-
-> [!VIDEO https://www.youtube-nocookie.com/embed/4tg-OBdv_8o]
-
-若要导入 Postman 集合，请执行以下操作：
+使用集合是开始使用 Microsoft Graph API 的最简单方法。 若要导入 Postman 集合，请执行以下操作：
 
 1. 下载并注册 [Postman](https://www.getpostman.com/)。
 2. 依次选择“文件 | 导入”****。
@@ -61,7 +38,7 @@ ms.locfileid: "40868483"
 
     ```
 
-现在，应该会在“**集合**”窗格中看到“**Microsoft Graph**”集合。
+现在，应该会在右上角的环境下拉列表中看到“Microsoft Graph 环境”****（以眼睛图标为标识）。 现在需要[创建环境](#using-the-collection)。
 
 ## <a name="using-the-collection"></a>使用集合
 在 Postman 中创建 **Microsoft Graph** 集合和 **Microsoftr Graph 环境**后，请按照以下步骤操作。
@@ -105,3 +82,11 @@ ms.locfileid: "40868483"
 6. 复制访问令牌，打开环境变量，并将它粘贴到“UserAccessToken”**** 字段中。
 
 现在，所有请求都将可以正常运行。
+
+
+### <a name="contribute-to-the-collection"></a>参与集合
+若要贡献你自己的请求，需要为 [Microsoft Graph Postman 集合](https://github.com/microsoftgraph/microsoftgraph-postman-collections) github 存储库创建分支。 
+
+若要详细了解如何执行此操作，请观看以下视频。
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/4tg-OBdv_8o]

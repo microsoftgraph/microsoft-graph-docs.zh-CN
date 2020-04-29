@@ -312,7 +312,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: 发送邮件
                   href: api/user-sendmail.md
-            - name: 笔记
+            - name: 备注
               href: resources/onenote.md
               items:
                 - name: 创建笔记本
@@ -1078,7 +1078,7 @@
                 - name: 打印作业
                   href: resources/printjob.md
                   items:
-                    - name: 创建
+                    - name: Create
                       href: api/printer-post-jobs.md
                     - name: 获取
                       href: api/printjob-get.md
@@ -1122,7 +1122,7 @@
                   items:
                     - name: 列表
                       href: api/print-list-printershares.md
-                    - name: 创建
+                    - name: Create
                       href: api/print-post-printershares.md
                     - name: 获取
                       href: api/printershare-get.md
@@ -8781,7 +8781,7 @@
               items:
                 - name: 列表
                   href: api/administrativeunit-list.md
-                - name: 创建
+                - name: Create
                   href: api/administrativeunit-post-administrativeunits.md
                 - name: 获取
                   href: api/administrativeunit-get.md
@@ -8897,7 +8897,7 @@
                       href: api/authentication-list-methods.md
                     - name: 获取
                       href: api/authenticationmethod-get.md
-                - name: 密码
+                - name: Password
                   href: resources/passwordauthenticationmethod.md
                   items:
                     - name: 列表
@@ -8944,7 +8944,7 @@
                       href: resources/conditionalaccesspolicy.md
                     - name: 列表
                       href: api/conditionalaccessroot-list-policies.md
-                    - name: 创建
+                    - name: Create
                       href: api/conditionalaccessroot-post-policies.md
                     - name: 获取
                       href: api/conditionalaccesspolicy-get.md
@@ -8970,7 +8970,7 @@
                           href: resources/countrynamedlocation.md
                         - name: 列表
                           href: api/conditionalaccessroot-list-namedlocations.md
-                        - name: 创建
+                        - name: Create
                           href: api/conditionalaccessroot-post-namedlocations.md
                         - name: 获取
                           href: api/countrynamedlocation-get.md
@@ -8984,7 +8984,7 @@
                           href: resources/ipnamedlocation.md
                         - name: 列表
                           href: api/conditionalaccessroot-list-namedlocations.md
-                        - name: 创建
+                        - name: Create
                           href: api/conditionalaccessroot-post-namedlocations.md
                         - name: 获取
                           href: api/ipnamedlocation-get.md
@@ -9186,14 +9186,14 @@
                   items:
                     - name: 列表
                       href: api/accesspackageresourcerequest-list.md
-                    - name: 创建
+                    - name: Create
                       href: api/accesspackageresourcerequest-post.md
                 - name: 访问包资源角色作用域
                   href: resources/accesspackageresourcerolescope.md
                   items:
                     - name: 列表
                       href: api/accesspackage-list-accesspackageresourcerolescopes.md
-                    - name: 创建
+                    - name: Create
                       href: api/accesspackage-post-accesspackageresourcerolescopes.md
             - name: 功能推出策略
               href: resources/featurerolloutpolicy.md
@@ -9312,7 +9312,7 @@
                       href: resources/urlassessmentrequest.md
                     - name: 列表
                       href: api/informationprotection-list-threatassessmentrequests.md
-                    - name: 创建
+                    - name: Create
                       href: api/informationprotection-post-threatassessmentrequests.md
                     - name: 获取
                       href: api/threatassessmentrequest-get.md
@@ -9425,7 +9425,7 @@
                       href: api/orgcontact-get-manager.md
                     - name: 获取成员对象
                       href: api/orgcontact-getmemberobjects.md
-            - name: 策略
+            - name: Policy
               href: resources/policy-overview.md
               items:
                 - name: 基于活动的超时策略
@@ -10766,6 +10766,8 @@
                   href: api/site-follow.md
                 - name: 取消关注网站
                   href: api/site-unfollow.md
+                - name: 列表关注的网站
+                  href: api/sites-list-followed.md
             - name: 列表
               href: resources/list.md
               items:
@@ -11188,7 +11190,7 @@
                 - name: 交换班次更改请求
                   href: resources/swapshiftschangerequest.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/swapshiftschangerequest-list.md
                     - name: 创建
                       href: api/swapshiftschangerequest-post.md
@@ -11201,7 +11203,7 @@
                 - name: 休假
                   href: resources/timeoff.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/schedule-list-timesoff.md
                     - name: 创建
                       href: api/schedule-post-timesoff.md
@@ -11214,7 +11216,7 @@
                 - name: 休假原因
                   href: resources/timeoffreason.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/schedule-list-timeoffreasons.md
                     - name: 创建
                       href: api/schedule-post-timeoffreasons.md
@@ -11240,7 +11242,7 @@
                 - name: 劳动力集成
                   href: resources/workforceintegration.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/workforceintegration-list.md
                     - name: 创建
                       href: api/workforceintegration-post.md
@@ -11276,7 +11278,7 @@
             - name: Outlook 任务
               href: resources/outlooktask.md
               items:
-                - name: 列表
+                - name: 列出
                   href: api/outlookuser-list-tasks.md
                 - name: 创建
                   href: api/outlookuser-post-tasks.md
@@ -11295,7 +11297,7 @@
             - name: Outlook 任务文件夹
               href: resources/outlooktaskfolder.md
               items:
-                - name: 列表
+                - name: 列出
                   href: api/outlookuser-list-taskfolders.md
                 - name: 创建
                   href: api/outlookuser-post-taskfolders.md

@@ -7,16 +7,16 @@ localization_priority: Normal
 description: SharingLink 资源将与链接相关的数据项分组到一个单一结构。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3195207588061840c4e1394e1460f74d3728510c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6a696a95c3c636a84bb79498375b0c023617548d
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446861"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934883"
 ---
 # <a name="sharinglink-resource-type"></a>SharingLink 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 **SharingLink** 资源将与链接相关的数据项分组到一个单一结构。
 
@@ -35,6 +35,7 @@ ms.locfileid: "42446861"
 ```json
 {
   "application": { "@odata.type": "microsoft.graph.identity" },
+  "preventsDownload": false,
   "type": "view | edit | embed",
   "scope": "anonymous | organization",
   "webHtml": "string",
@@ -47,10 +48,11 @@ ms.locfileid: "42446861"
 | 属性    | 类型          | 说明
 |:------------|:--------------|:-------------------------------------
 | application | [Identity][]  | 链接所关联的应用。
-| type        | String        | 创建的链接类型。
+| type        | 字符串        | 创建的链接类型。
 | scope       | 字符串        | 由该权限表示的链接范围。值 `anonymous` 表示该链接对任何人均可用，`organization` 表示该链接仅可由登录到同一个租户的用户使用。
+| preventsDownload | Boolean       | 如果为 true，则用户只能使用此链接查看 web 上的项目，并且无法使用它下载项目的内容。 仅适用于 OneDrive for Business 和 SharePoint。
 | webHtml     | String        | 对于 `embed` 链接，此属性包含在网页上嵌入项的 `<iframe>` 元素的 HTML 代码。
-| webUrl      | String        | 在 OneDrive 网站上的浏览器中打开项的 URL。
+| WebUrl      | 字符串        | 在 OneDrive 网站上的浏览器中打开项的 URL。
 
 [Identity]: identity.md
 

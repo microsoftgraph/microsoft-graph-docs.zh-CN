@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 417b12389764a6e74a50d60953e7d9f7f982d050
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 4c4bc1520593234852b0f08d356eccae265f1f29
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994549"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43935117"
 ---
 ```objc
 
@@ -30,7 +30,10 @@ MSGraphProperties *properties = [[MSGraphProperties alloc] init];
 [properties setPriority: 1];
 [properties setAssignee:@"john@contoso.com"];
 [externalItem setProperties:properties];
-[externalItem setContent:@"Textual content of the file"];
+MSGraphExternalItemContent *content = [[MSGraphExternalItemContent alloc] init];
+[content setValue:@"<h1>Error in payment gateway</h1><p>Error details...</p>"];
+[content setType: [MSGraphExternalItemContentType html]];
+[externalItem setContent:content];
 
 NSError *error;
 NSData *externalItemData = [externalItem getSerializedDataWithError:&error];

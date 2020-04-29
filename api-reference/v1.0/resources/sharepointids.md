@@ -7,16 +7,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: SharePointIds 资源将存储在 SharePoint 网站或 OneDrive for Business 中的项的各种标识符分组到一个单一结构。
 doc_type: resourcePageType
-ms.openlocfilehash: a61810792d4085c4ddd92c95b4f46ead54f57e67
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d619b4b82da7c4c1d80e59b969ce5edf727ffbb8
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446868"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934890"
 ---
 # <a name="sharepointids-resource-type"></a>SharePointIds 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 **SharePointIds** 资源将存储在 SharePoint 网站或 OneDrive for Business 中的项的各种标识符分组到一个单一结构。
 
@@ -39,6 +39,7 @@ ms.locfileid: "42446868"
     "listItemUniqueId": "string",
     "siteId": "string",
     "siteUrl": "url",
+    "tenantId": "string",
     "webId": "string"
 }
 ```
@@ -52,6 +53,7 @@ ms.locfileid: "42446868"
 | listItemUniqueId | string       | OneDrive for Business 或 SharePoint 网站中的项的唯一标识符 (guid)。
 | siteId           | string       | 项的网站集 (SPSite) 的唯一标识符 (guid)。
 | siteUrl          | string (url) | 包含项的网站的 SharePoint URL。
+| tenantId         | string       | 租赁的唯一标识符（guid）。
 | webId            | string       | 项的网站集 (SPWeb) 的唯一标识符 (guid)。
 
 ## <a name="remarks"></a>注解

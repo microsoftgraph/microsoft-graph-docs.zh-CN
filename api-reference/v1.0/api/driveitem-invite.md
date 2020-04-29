@@ -5,20 +5,20 @@ ms.date: 09/10/2017
 title: 发送邀请以访问项目
 localization_priority: Normal
 ms.prod: sharepoint
-description: 发送 DriveItem 的共享邀请。
+description: 为 driveItem 发送共享邀请。
 doc_type: apiPageType
-ms.openlocfilehash: 129cbeaf43c9c409b645a7a94b8b4a3371329a8b
-ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
+ms.openlocfilehash: 327f929a6b3fb2d3c45a39fc50af659a119fbe5c
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43146420"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934841"
 ---
 # <a name="send-a-sharing-invitation"></a>发送共享邀请
 
 命名空间：microsoft.graph
 
-发送 **DriveItem** 的共享邀请。
+为**driveItem**发送共享邀请。
 共享邀请向收件人提供权限，并选择性地向其发送带[共享链接][]的电子邮件。
 
 ## <a name="permissions"></a>权限
@@ -69,6 +69,8 @@ POST /users/{userId}/drive/items/{itemId}/invite
 | requireSignIn    | Boolean                        | 指定邀请的收件人是否需要登录才能查看共享项。
 | sendInvitation   | Boolean                        | 如果为 true，则向收件人发送[共享链接][]。 否则，直接授予权限，而不发送通知。
 | 角色            | 集合（字符串）             | 指定要授予共享邀请收件人的角色。
+| expirationDateTime | DateTimeOffset                       | 指定权限将在其后过期的日期时间。 在 OneDrive for business、SharePoint 和 premium 个人 OneDrive 帐户上可用。
+| 密码           | String                         | 由创建者在邀请上设置的密码。 可选和 OneDrive 仅限个人版。
 
 ## <a name="example"></a>示例
 
@@ -96,7 +98,9 @@ Content-type: application/json
   "message": "Here's the file that we're collaborating on.",
   "requireSignIn": true,
   "sendInvitation": true,
-  "roles": [ "write" ]
+  "roles": [ "write" ],
+  "password": "password123",
+  "expirationDateTime": "2018-07-15T14:00:00.000Z"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -137,12 +141,14 @@ Content-type: application/json
           "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
         }
       },
+      "hasPassword": true,
       "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
       "invitation": {
         "email": "ryan@contoso.com",
         "signInRequired": true
       },
-      "roles": [ "write" ]
+      "roles": [ "write" ],
+      "expirationDateTime": "2018-07-15T14:00:00.000Z"
     }
   ]
 }

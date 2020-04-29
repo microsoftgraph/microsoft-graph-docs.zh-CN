@@ -7,12 +7,12 @@ localization_priority: Normal
 description: 使用 Shares API 访问共享的 driveItem 时，返回 sharedDriveItem 资源。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9864d982e58304c684b267c59ec1925aec8baeff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 10e6146151b64470386b6071bc19cb8764744b3e
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533728"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934897"
 ---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem 资源类型
 
@@ -61,9 +61,10 @@ ms.locfileid: "42533728"
 | 关系名称 | 类型                | 说明
 | ------------------|:--------------------|:-----------------------------------
 | **driveItem**     | [**driveItem**][driveItem]   | 用于访问基础 **driveItem**
-| **list**          | [**list**][list]        | 用于访问基础 **list**
+| **list**          | [**簿**][list]        | 用于访问基础 **list**
 | **listItem**      | [**listItem**][listItem]    | 用于访问基础 **listItem**
-| **site**          | [**网站**][site]        | 用于访问基础 **site**
+| **权限**    | [**拒绝**][permission] | 用于访问代表基础共享链接的**权限**
+| **网站**          | [**网站**][site]        | 用于访问基础 **site**
 
 另外，对于从个人 OneDrive 帐户共享的 **driveItems**，也可使用以下关系。
 
@@ -75,6 +76,7 @@ ms.locfileid: "42533728"
 [driveItem]: driveitem.md
 [list]: list.md
 [listItem]: listitem.md
+[permission]: permission.md
 [site]: site.md
 
 ## <a name="methods"></a>Methods
