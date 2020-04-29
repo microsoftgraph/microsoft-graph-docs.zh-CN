@@ -6,12 +6,12 @@ description: site 资源提供 Sharepoint 网站的元数据和关系。
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 7ba96c6cc62bd6efbff8e0efb6062104d994090c
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: a4e67deb63850bdc938f72f5e517bc28a5a8df03
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108548"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934855"
 ---
 # <a name="site-resource"></a>site 资源
 
@@ -32,6 +32,7 @@ ms.locfileid: "43108548"
 | [搜索网站][]     | 网站集合 | 在 SharePoint 租户中搜索与所提供的关键字匹配的 网站。
 | [关注网站][]          | 网站集合 | 关注用户的网站或多个网站。
 | [取消关注网站][]        | 网站集合 | 关注用户的网站或多个网站。
+| [关注网站列表][]  | 网站集合 | 已登录用户的关注网站列表。
 
 [获取网站]: ../api/site-get.md
 [获取根网站]: ../api/site-get.md
@@ -43,6 +44,7 @@ ms.locfileid: "43108548"
 [itemActivityStat]: itemactivitystat.md
 [关注网站]: ../api/site-follow.md
 [取消关注网站]: ../api/site-unfollow.md
+[关注网站列表]: ../api/sites-list-followed.md
 
 ## <a name="properties"></a>属性
 

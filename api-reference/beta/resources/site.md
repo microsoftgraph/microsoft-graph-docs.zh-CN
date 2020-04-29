@@ -6,12 +6,12 @@ title: Site
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: be567e1ba44790c54127ccee17dbb0d396f15e0c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a3389737581e9c327ff48e9ff3065c399c568cb8
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520553"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934876"
 ---
 # <a name="site-resource-type"></a>site 资源类型
 
@@ -36,6 +36,7 @@ ms.locfileid: "42520553"
 | [搜索网站][]           | GET /sites?search={query}
 | [关注网站][]                | POST /users/{user-id}/followedSites/add
 | [取消关注网站][]              | POST /users/{user-id}/followedSites/remove
+| [关注网站列表][]        | POST /me/followedSites
 
 [获取网站]: ../api/site-get.md
 [获取根网站]: ../api/site-get.md
@@ -48,6 +49,7 @@ ms.locfileid: "42520553"
 [搜索网站]: ../api/site-search.md
 [关注网站]: ../api/site-follow.md
 [取消关注网站]: ../api/site-unfollow.md
+[关注网站列表]: ../api/sites-list-followed.md
 
 
 ## <a name="properties"></a>属性
