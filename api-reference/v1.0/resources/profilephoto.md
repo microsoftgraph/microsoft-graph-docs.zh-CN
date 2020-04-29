@@ -5,16 +5,18 @@ localization_priority: Priority
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3420f229d26ecbcce1a39de03c50dd084c828d94
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d11d5043e759900810315d4b3e3af8310cb996f0
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447057"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934904"
 ---
 # <a name="profilephoto-resource-type"></a>profilePhoto 资源类型
 
-命名空间：microsoft.graph 从 Exchange Online 访问的用户、组或 Outlook 联系人的个人资料照片。它是不以 base-64 编码的二进制数据。
+命名空间：microsoft.graph
+
+从 Exchange Online 访问的用户、组或 Outlook 联系人的个人资料照片。它是不以 base-64 编码的二进制数据。
 
 Exchange Online 支持的 HD 照片大小如下所示：'48x48'、'64x64'、'96x96'、'120x120'、'240x240'、'360x360'、'432x432'、'504x504' 和 '648x648'。 
 
