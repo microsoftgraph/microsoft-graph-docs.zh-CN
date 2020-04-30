@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: f1837551b5ee863769277a3ed023afa21f3c7c92
-ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
+ms.openlocfilehash: 7f14491ade48411421e0115d3703a428832254cb
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43581637"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43917425"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -148,3 +148,12 @@ Outlook 服务提供以下资源。
 每个应用每天最多可以将 3000 条消息发送到给定的频道。
 
 另请参阅 [Microsoft Teams 限制](/graph/api/resources/teams-api-overview#microsoft-teams-limits)和[投票要求](/graph/api/resources/teams-api-overview#polling-requirements)。
+
+### <a name="microsoft-graph-change-notifications-subscription-operations"></a>Microsoft Graph 更改通知订阅操作
+
+以下限制适用于 `/subscriptions` 上的所有请求。
+
+| 操作                 | 每个租户每个应用限制     | 所有租户中的每个应用限制 |
+|---------------------------|------------------------------|-----------------------------------|
+| POST, PUT, DELETE, PATCH  | 每 20 秒 1000 个请求 | 每 20 秒 2000 个请求      |
+| 所有其他 HTTP 方法    | 每 20 秒 5000 个请求 | 每 20 秒 10000 个请求     |

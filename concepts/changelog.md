@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 8dfeaa3de759291849685c9a95c101a6e34750ed
-ms.sourcegitcommit: fe3cb0e47920467324ddcf0773354349e3612d4f
+ms.openlocfilehash: 70872cb67dd69be3fb363362f9de6070cedcddda
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "43849998"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934806"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -36,6 +36,7 @@ ms.locfileid: "43849998"
 | **更改类型** | **版本**   | **说明**                          |
 |:---|:---|:---|
 | 添加项 | beta | 向 [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) 实体添加了 **allowedGroups** 和 **allowedUsers** 属性。|
+| 添加项 | beta | 添加了 [printIdentity](/graph/api/resources/printidentity?view=graph-rest-beta) 和 [printUserIdentity](/graph/api/resources/printuseridentity?view=graph-rest-beta) 资源类型。 |
 
 ### <a name="devices-and-apps--corporate-management-intune"></a>设备和应用 | 公司管理 (Intune)
 
@@ -76,6 +77,19 @@ ms.locfileid: "43849998"
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | v1.0        | 在 [driveItem](/graph/api/driveitem-checkin?view=graph-rest-v1.0) 资源上添加了 [check in](/graph/api/driveitem-checkin?view=graph-rest-v1.0) 和 [check out](/graph/api/resources/driveitem?view=graph-rest-v1.0) 操作。 |
 
+### <a name="files-onedrive-for-business"></a>文件 (OneDrive for Business)
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项        | beta        | 向 [user](/graph/api/resources/user?view=graph-rest-beta) 实体集添加了 [folowedSites](/graph/api/sites-list-followed?view=graph-rest-beta) 导航属性 |
+| 添加项        | v1.0        | 向 [user](/graph/api/resources/user?view=graph-rest-1.0) 实体集添加了 [folowedSites](/graph/api/sites-list-followed?view=graph-rest-1.0) 导航属性 |
+| Addition        | v1.0        | 向 [driveItem](/graph/resources/driveitem?view=graph-rest-1.0) 资源的 [createLink][/graph/api/driveitem-createlink?view=graph-rest-1.0] 操作添加了 **expirationDateTime**、**password** 和 **message** 属性。 |
+| Addition        | v1.0        | 向 [siteCollection](/graph/resources/sitecollection?view=graph-rest-1.0) 资源添加了 **dataLocaton** 属性。 |
+| Addition        | v1.0        | 向 [sharingLink](/graph/resources/sharinglink?view=graph-rest-1.0) 资源添加了 **preventsDownload** 属性。 |
+| Addition        | v1.0        | 向 [sharepointIds](/graph/resources/sharepointids?view=graph-rest-1.0) 资源添加了 **tenantId** 属性。 |
+| Addition        | v1.0        | 向 [sharedDriveItem](/graph/resources/shareddriveitem?view=graph-rest-1.0) 资源添加了 **permission** 属性。 |
+| 添加项        | v1.0        | 向 [permission](/graph/resources/permission?view=graph-rest-1.0) 资源添加了 **expirationDateTime**、**hasPassword** 和 **grantedToIdentities** 属性。 |
+| Addition        | v1.0        | 向 [driveItem](/graph/resources/driveitem?view=graph-rest-1.0) 资源上的 [invite](/graph/api/driveitem-invite?view=graph-rest-1.0) 操作添加了 **expirationDateTime** 和 **password** 属性。 |
 
 ### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
 
@@ -242,7 +256,7 @@ ms.locfileid: "43849998"
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项 | Beta | 向 API 添加了对 ChannelMessage.Read.All 的支持，以读取频道中的 [chatMessages](/graph/api/resources/chatmessage?view=graph-rest-beta)。 |
 
-### <a name="universal-print"></a>通用打印
+### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
 
 新增了 API 和资源，用于使用通用打印服务来管理和执行打印机打印。
 
@@ -1039,7 +1053,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加项|beta|向 [remoteAction](/graph/api/resources/intune-devices-remoteaction?view=graph-rest-beta) 枚举类型添加了 **setDeviceName** 成员|
 |Addition|beta|向 [runState](/graph/api/resources/intune-shared-runstate?view=graph-rest-beta) 枚举类型添加了 **error** 和 **pending** 成员|
 |添加项|beta|向 [weeklySchedule](/graph/api/resources/intune-deviceconfig-weeklyschedule?view=graph-rest-beta) 枚举类型添加了 **noScheduledScan** 成员|
-|添加项|beta|向 [deviceManagement](/graph/api/resources/intune-shared-devicemanagement) 实体添加了 **derivedCredentials** 导航属性|
+|Addition|beta|向 [deviceManagement](/graph/api/resources/intune-shared-devicemanagement) 实体添加了 **derivedCredentials** 导航属性|
 
 ### <a name="education"></a>教育
 
