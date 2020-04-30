@@ -7,12 +7,12 @@ localization_priority: Priority
 description: Permission 资源提供有关授予 DriveItem 资源共享权限的相关信息。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 770a57c3e8a0fa5bd0579bbfeb6e4fab5089cca2
-ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
+ms.openlocfilehash: 5c4b881aaf10a56b65342dccebd417867c2b7b26
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43146413"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934701"
 ---
 # <a name="permission-resource-type"></a>Permission 资源类型
 
@@ -32,9 +32,12 @@ ms.locfileid: "43146413"
   "optionalProperties": [
     "link",
     "grantedTo",
+    "grantedToIdentities",
     "invitation",
     "inheritedFrom",
-    "shareId"
+    "shareId",
+    "expirationDateTime",
+    "hasPassword"
   ],
   "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
@@ -44,11 +47,14 @@ ms.locfileid: "43146413"
 {
   "id": "string (identifier)",
   "grantedTo": {"@odata.type": "microsoft.graph.identitySet"},
+  "grantedToIdentities": [{"@odata.type": "microsoft.graph.identitySet"}],
   "inheritedFrom": {"@odata.type": "microsoft.graph.itemReference"},
   "invitation": {"@odata.type": "microsoft.graph.sharingInvitation"},
   "link": {"@odata.type": "microsoft.graph.sharingLink"},
   "roles": ["string"],
-  "shareId": "string"
+  "shareId": "string",
+  "expirationDateTime": "string (timestamp)",
+  "hasPassword": "boolean"
 }
 ```
 
@@ -58,11 +64,14 @@ ms.locfileid: "43146413"
 |:--------------|:------------------------------------------|:-----------------
 | id            | String                                    | 在项目的所有权限中，某个权限的唯一标识符。只读。
 | grantedTo     | [IdentitySet](identityset.md)             | 对于用户类型权限，此权限的用户和应用程序的详细信息。只读。
-| 邀请    | [SharingInvitation][]                     | 此权限的全部关联共享邀请的详细信息。只读。
+| grantedToIdentities | Collection([IdentitySet](identityset.md)) | 对于链接类型权限，被授予权限的用户的详细信息。 只读。
+| invitation    | [SharingInvitation][]                     | 此权限的全部关联共享邀请的详细信息。只读。
 | inheritedFrom | [ItemReference](itemreference.md)         | 如果当前权限继承自上级，则提供对当前权限的上级的引用。只读。
 | link          | [SharingLink][]                           | 如果当前权限是链接类型权限，则提供当前权限的链接详细信息。只读。
 | roles         | Collection of String                      | 权限类型，例如 `read`。有关角色的完整列表，请参阅如下内容。只读。
 | shareId       | String                                    | 可通过 [**shares** API](../api/shares-get.md) 访问此共享项目的唯一令牌。只读。
+| expirationDateTime  | DateTimeOffset              | DateTimeOffset 的格式 yyyy-MM-ddTHH:mm:ssZ 表示权限的过期时间。 DateTime.MinValue 表示此权限没有设置过期时间。 可选。
+| HasPassword         | 布尔值                     | 这表示是否为该权限设置了密码，它只在响应中显示。 可选、只读和仅限 OneDrive 个人版。
 
 permission 资源使用 _Facet_ 说明此资源表示的权限种类。
 
@@ -98,7 +107,8 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
     "webUrl": "https://onedrive.live.com/redir?resid=5D33DD65C6932946!70859&authkey=!AL7N1QAfSWcjNU8&ithint=folder%2cgif",
     "application": { "id": "1234", "displayName": "Sample Application" }
   },
-  "shareId": "!LKj1lkdlals90j1nlkascl"
+  "shareId": "!LKj1lkdlals90j1nlkascl",
+  "expirationDateTime": "0001-01-01T00:00:00Z"
 }
 ```
 
@@ -115,7 +125,40 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
     "webUrl": "https://onedrive.live.com/redir?resid=5D33DD65C6932946!70859&authkey=!AL7N1QAfSWcjNU8&ithint=folder%2cgif",
     "application": { "id": "1234", "displayName": "Sample Application" }
   },
-  "shareId": "!LKj1lkdlals90j1nlkascl"
+  "shareId": "!LKj1lkdlals90j1nlkascl",
+  "expirationDateTime": "0001-01-01T00:00:00Z"
+}
+```
+### <a name="specific-people-link"></a>特定人员链接
+
+此链接向 `grantedToIdentities` 集合中的特定人员提供读写访问权限。
+
+<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-people-link" } -->
+
+```json
+{
+  "id": "3",
+  "grantedToIdentities": [
+    {
+       "user": {
+        "id": "35fij1974gb8832",
+        "displayName": "Misty Suarez"
+      }
+    },
+    {
+       "user": {
+        "id": "9397721fh4hgh73",
+        "displayName": "Judith Clemons"
+      }
+    }
+  ],
+  "roles": ["write"],
+  "link": {
+    "webUrl": "https://contoso.sharepoint.com/:w:/t/design/a577ghg9hgh737613bmbjf839026561fmzhsr85ng9f3hjck2t5s",
+    "application": { "id": "1234", "displayName": "Sample Application" }
+  },
+  "shareId": "!LKj1lkdlals90j1nlkascl",
+  "expirationDateTime": "0001-01-01T00:00:00Z"
 }
 ```
 
@@ -153,7 +196,8 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
     "email": "jd@gmail.com",
     "signInRequired": true
   },
-  "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U"
+  "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U",
+  "expirationDateTime": "0001-01-01T00:00:00Z"
 }
 ```
 
@@ -174,7 +218,8 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
     "email": "jd@outlook.com",
     "signInRequired": true
   },
-  "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U"
+  "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U",
+  "expirationDateTime": "0001-01-01T00:00:00Z"
 }
 ```
 
