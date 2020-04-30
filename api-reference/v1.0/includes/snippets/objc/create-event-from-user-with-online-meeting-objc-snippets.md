@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 32baff7bd15d69856be5a2d4b93146923b1b7564
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: efad9213b2b56e41188ac63e0e54ea21541d41b8
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43771081"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43935173"
 ---
 ```objc
 
@@ -43,7 +43,6 @@ MSGraphEmailAddress *emailAddress = [[MSGraphEmailAddress alloc] init];
 [attendees setType: [MSGraphAttendeeType required]];
 [attendeesList addObject: attendees];
 [event setAttendees:attendeesList];
-[event setAllowNewTimeProposals: true];
 [event setIsOnlineMeeting: true];
 [event setOnlineMeetingProvider: [MSGraphOnlineMeetingProviderType teamsForBusiness]];
 
