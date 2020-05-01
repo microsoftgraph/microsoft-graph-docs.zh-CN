@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 01f59e08a298fd5bf3e630de1cb562bc6de810a4
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 4252147e23f0c71d4e7acd04976ca73b457a78ba
+ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215822"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43991773"
 ---
 # <a name="get-unifiedroleassignmentmultiple"></a>获取 unifiedRoleAssignmentMultiple
 
@@ -20,15 +20,15 @@ ms.locfileid: "43215822"
 
 检索[unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md)对象的属性和关系。 使用此对象可在 Microsoft Intune 中获取角色分配。 对于其他 Micrsoft 365 应用程序（如 Azure AD），请使用[unifiedRoleAssignment](../resources/unifiedroleassignment.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:--------------- |:------------------------------------------- |
-| 委派（工作或学校帐户） | RoleManagement、RoleManagement、Directory.accessasuser.all、all、、all、all 和的所有子目录。 |
+| 委派（工作或学校帐户） | Devicemanagementrbac.readwrite.all、Devicemanagementrbac.readwrite.all 和所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有 |
+| 应用程序 | Devicemanagementrbac.readwrite.all、Devicemanagementrbac.readwrite.all 和所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 

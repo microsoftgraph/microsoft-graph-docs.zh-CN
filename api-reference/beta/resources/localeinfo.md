@@ -3,18 +3,18 @@ title: localeInfo 资源类型
 description: 有关已登录用户的区域设置信息，包括首选语言和国家/地区。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: bb6c8adbc76e0024f5168a8dbc52e8f56582dab3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: outlook
+author: svpsiva
+ms.openlocfilehash: d86c8f1a4d9760c8effe41defbb6d3cdb828f192
+ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522930"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43991787"
 ---
 # <a name="localeinfo-resource-type"></a>localeInfo 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

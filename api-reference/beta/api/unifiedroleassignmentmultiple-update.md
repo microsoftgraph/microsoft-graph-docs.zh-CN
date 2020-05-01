@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5a30e9378cceb5c1dd533f62bc28be097660536f
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 9f14a39442a5119a9965753669c5837a46f8fc88
+ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218960"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43991808"
 ---
 # <a name="update-unifiedroleassignmentmultiple"></a>更新 unifiedRoleAssignmentMultiple
 
@@ -20,15 +20,15 @@ ms.locfileid: "43218960"
 
 更新现有的[unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md)对象。 使用此项可在 Microsoft Intune 中更新角色分配。 请注意， [unifiedRoleAssignment](../resources/unifiedroleassignment.md)不支持 update。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:--------------- |:------------------------------------------- |
-| 委派（工作或学校帐户） | RoleManagement、RoleManagement、目录 |
+| 委派（工作或学校帐户） | DeviceManagementRBAC.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | RoleManagement、RoleManagement、目录 |
+| 应用程序 | DeviceManagementRBAC.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
