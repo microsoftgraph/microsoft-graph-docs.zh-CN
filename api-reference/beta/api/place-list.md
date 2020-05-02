@@ -5,16 +5,16 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ee17676564f747064e08066c830e7ebc21d36805
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 704bb439bfab3a35f6cebb191430b27b7444e418
+ms.sourcegitcommit: b88dce7297f196345f16c2c126d7bdd482d22a23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455821"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44006347"
 ---
 # <a name="list-places"></a>列表位置
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,6 +26,8 @@ ms.locfileid: "42455821"
 * 包含会议室列表的电子邮件地址的[会议室列表](../resources/roomlist.md)，以及用于获取会议室列表中的会议室实例集合的导航属性。 
 
 **聊天室**和**roomList**均派生自**place**对象。
+
+默认情况下，此操作返回每页100个位置。 
 
 与[findRooms](../api/user-findrooms.md)和[findRoomLists](../api/user-findroomlists.md)函数相比，此操作为聊天室和会议室列表返回更丰富的有效负载。 有关比较的详细信息，请参阅[详细信息](../resources/place.md#using-the-places-api)。
 
@@ -64,8 +66,14 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 >**注意**：若要获取会议室列表中的聊天室，必须按其**emailAddress**属性（而不是**id**）指定会议室列表。 
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持以下查询参数来帮助自定义响应：
+- $filter
+- $select
+- $top
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+使用 $top 自定义页面大小。 默认页面大小是 100。
+
+有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
