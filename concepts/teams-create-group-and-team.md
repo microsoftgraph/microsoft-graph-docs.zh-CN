@@ -4,12 +4,12 @@ description: '创建包含团队的组涉及以下步骤： '
 author: hachandr
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6f23efe2146c52bf53ab54ea1600d0aa7b6aa0ae
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 6befb6c6df047c7802e142843180b390f854f6ec
+ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181893"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43934834"
 ---
 # <a name="creating-teams-and-managing-members-using-microsoft-graph"></a>使用 Microsoft Graph 创建团队和管理成员
 
@@ -67,7 +67,7 @@ ms.locfileid: "43181893"
 
 2. 确保组有两个或多个所有者。 可通过“[添加所有者](/graph/api/group-post-owners?view=graph-rest-1.0)”操作来实现这一点。 这些应为真实的用户帐户，而不是服务帐户。 拥有两个所有者有助于处理以下情况：一个所有者离开公司或无法执行团队管理操作。
 
-3. 使用“[添加成员](/graph/api/group-post-members?view=graph-rest-1.0)”操作将所有成员（以及来宾，如有必要）添加到组中（如果在步骤 1 中未执行此操作）。
+3. 使用“[添加成员](/graph/api/group-post-members?view=graph-rest-1.0)”操作将所有成员（以及来宾，如有必要）添加到组中（如果在步骤 1 中未执行此操作）。 若要添加多个成员，请在每个添加操作后添加 1 秒延迟。 
 
 4. 成功创建组（完成步骤 1 后最长需要 15 分钟）后，使用“[从组创建团队](/graph/api/team-post?view=graph-rest-beta#example-4-create-a-team-from-group)”操作来创建 Microsoft Teams 团队。 如果遇到错误，则可能无法完成组创建过程；请尝试稍等几分钟。 
 
@@ -99,7 +99,7 @@ ms.locfileid: "43181893"
 
 ## <a name="adding-or-managing-members"></a>添加或管理成员
 
-若要在创建团队后添加成员，请使用“[添加成员](/graph/api/group-post-members?view=graph-rest-1.0)”操作。 请注意以下与成员身份更改有关的事项：
+若要在创建团队后添加成员，请使用“[添加成员](/graph/api/group-post-members?view=graph-rest-1.0)”操作。 建议在添加操作之间添加 1 秒延迟。 请注意以下与成员身份更改有关的事项：
 
 1. 对 Office 365 组进行的成员身份更改通过后台同步机制同步到 Teams，此过程通常需要 24 小时（在某些情况下需要更长时间）。
 
