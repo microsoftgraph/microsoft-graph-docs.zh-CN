@@ -4,12 +4,12 @@ description: Microsoft Graph 一种是可让你访问 Microsoft 云服务资源�
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: e374f124824705cc88aa7f991d99f2c99e7caa9a
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: 54d22a0f0b1b18eeaaaf8bda317d8dc08d0448ee
+ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510499"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43991738"
 ---
 # <a name="use-the-microsoft-graph-api"></a>使用 Microsoft Graph API
 
@@ -134,7 +134,7 @@ Graph 浏览器中提供了示例查询，让你能够更快地运行常见请�
 
 Postman 浏览器是一款可用于使用 Microsoft Graph API 构建和测试请求的工具。 可在以下位置下载 Postman：`https://www.getpostman.com/`。 若要在 Postman 中与 Microsoft Graph 进行交互，请使用 Microsoft Graph 集合。
 
-有关详细信息，请参阅[结合使用 Postman 和 Microsoft Graph API](https://docs.microsoft.comgraph/use-postman?context=graph%2Fapi%2Fbeta&view=graph-rest-beta)。
+有关详细信息，请参阅[结合使用 Postman 和 Microsoft Graph API](https://docs.microsoft.com/graph/use-postman?context=graph%2Fapi%2Fbeta&view=graph-rest-beta)。
 
 ## <a name="next-steps"></a>后续步骤
 
