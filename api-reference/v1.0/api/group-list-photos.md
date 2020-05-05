@@ -5,16 +5,18 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 869ea2c0cebcce8957abfc32374ee288cdcc4fc2
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: eaf689a51e675d5d134a841971b35122fd7e88be
+ms.sourcegitcommit: 889096fb1821ee90ffa1b2dcce046efd6e97acef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125195"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022815"
 ---
 # <a name="list-photos"></a>List photos
 
-命名空间： microsoft. graph 检索[profilePhoto](../resources/profilephoto.md)对象的列表。
+命名空间：microsoft.graph
+
+检索 [profilePhoto](../resources/profilephoto.md) 对象列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -23,7 +25,7 @@ ms.locfileid: "43125195"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadBasic.All、Group.Read.All、Group.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Group.ReadBasic.All、Group.Read.All、Group.ReadWrite.All |
+|应用程序 | Group.ReadBasic.All、Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

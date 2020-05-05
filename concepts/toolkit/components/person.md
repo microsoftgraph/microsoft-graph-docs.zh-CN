@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包中的 "人员" 组件
 description: "\"人员\" 组件用于通过使用其照片、姓名和/或电子邮件地址显示人员或联系人。"
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: a23d5432c868881f05c04b84626962d684f7d1eb
-ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
+ms.openlocfilehash: 097dd2030f6622d067c26875a717568c1b3ef8c2
+ms.sourcegitcommit: 889096fb1821ee90ffa1b2dcce046efd6e97acef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "43812546"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022794"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的 "人员" 组件
 
@@ -39,14 +39,14 @@ ms.locfileid: "43812546"
     let personControl = document.getElementById('myPersonControl');
     personControl.personDetails = {
         displayName: 'Nikola Metulev',
-        email: 'nikola@contoso.com',
+        mail: 'nikola@contoso.com',
         personImage: 'url'
     }
     ```
 
   如果未提供图像，则将获取一个图像（如果可用）。
 
-## <a name="properties"></a>属性
+## <a name="properties"></a>Properties
 
 您可以使用多个属性来自定义组件。
 

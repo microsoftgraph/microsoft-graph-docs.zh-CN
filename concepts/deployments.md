@@ -1,12 +1,12 @@
 ---
 title: 区域云部署
 description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。 这些国家/地区云版本是物理和逻辑网络隔离的 Microsoft 企业云服务实例，这些实例限制在特定国家/地区的地理边界内，并由当地人员运营。
-ms.openlocfilehash: ba7ecccddadb65bcd2e1a3050be404256bf587e2
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: a4169426a65a3c2d2766e07194ff326f0fdb2434
+ms.sourcegitcommit: 889096fb1821ee90ffa1b2dcce046efd6e97acef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219767"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022801"
 ---
 # <a name="national-cloud-deployments"></a>区域云部署
 
@@ -52,9 +52,11 @@ ms.locfileid: "42219767"
 | 由世纪互联运营的 Microsoft Graph 中国 | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
 | Microsoft Graph 全局服务 | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
 
->**重要说明：** 如果你已在美国政府版中使用了一个应用程序，并且你`https://graph.microsoft.com`使用的是全球终结点， `https://graph.microsoft.us`我们建议切换到新终结点。 使用全球终结点访问美国政府数据当前可以正常运行，但在不久的将来将被禁用。
+> [!IMPORTANT]
+> 如果你已在美国政府版中使用了一个应用程序，并且你`https://graph.microsoft.com`使用的是全球终结点， `https://graph.microsoft.us`我们建议切换到新终结点。 使用全球终结点访问美国政府数据当前可以正常运行，但在不久的将来将被禁用。
 
-> **注意**：应用只能通过区域云终结点访问组织数据。 这意味着应用只能访问在特定国家云中注册的租户中的数据。 尝试通过 Microsoft Graph 访问与 Microsoft 个人帐户关联的用户数据的应用程序应使用全局服务`https://graph.microsoft.com`。 为国家云部署获取的访问令牌与为全局服务或任何其他国家云获取的访问令牌不可互换。
+> [!NOTE]
+> 应用只能通过国家云终结点访问组织数据。 这意味着应用只能访问在特定国家云中注册的租户中的数据。 尝试通过 Microsoft Graph 访问与 Microsoft 个人帐户关联的用户数据的应用程序应使用全局服务`https://graph.microsoft.com`。 为国家云部署获取的访问令牌与为全局服务或任何其他国家云获取的访问令牌不可互换。
 
 ## <a name="supported-features"></a>支持的功能
 
@@ -86,7 +88,8 @@ ms.locfileid: "42219767"
 
 (*)仅对 Exchange 和 OneDrive 服务的有限支持。 Azure AD services 不受支持。 
 
- > **重要说明：** 全局服务特定区域中的某些服务和功能在所有国家/地区群中可能不可用。 若要了解哪些服务可用，请参阅[地区提供的产品](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast)。
+> [!IMPORTANT]
+> 全局服务特定区域中的某些服务和功能在所有国家/地区群中可能不可用。 若要了解哪些服务可用，请参阅[地区提供的产品](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast)。
 
 
 若要了解有关国家/地区云的详细信息，请参阅下列主题：
