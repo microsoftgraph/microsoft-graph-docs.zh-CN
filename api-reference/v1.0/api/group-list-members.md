@@ -5,16 +5,18 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fdb70c70f066c459b2188e90fce40ed73adc0050
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: fa1852b52ec5f8e2651666076d2adb544544208c
+ms.sourcegitcommit: b88dce7297f196345f16c2c126d7bdd482d22a23
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181713"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44006340"
 ---
 # <a name="list-members"></a>列出成员
 
-命名空间：microsoft.graph 获取组的直接成员列表。组可将用户、组织联系人和其他组作为成员。此操作不可传递。
+命名空间：microsoft.graph
+
+获取组的直接成员列表。组可将用户、组织联系人和其他组作为成员。此操作不可传递。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
