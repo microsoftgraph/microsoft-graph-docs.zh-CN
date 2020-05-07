@@ -5,16 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bb9d7a4259f4420971b9341e01acedd9da7049f2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ff8bf2197232110fea356f951d62aa5a511e3f50
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451281"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154106"
 ---
 # <a name="delete-workforceintegration"></a>删除 workforceIntegration
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,14 +28,14 @@ ms.locfileid: "42451281"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | WorkforceIntegration |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /teamwork/workforceIntegrations
+DELETE /teamwork/workforceIntegrations/{workforceIntegrationId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -65,7 +65,7 @@ DELETE /teamwork/workforceIntegrations
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/teamwork/workforceIntegrations
+DELETE https://graph.microsoft.com/beta/teamwork/workforceIntegrations/{workforceIntegrationId}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-workforceintegration-csharp-snippets.md)]

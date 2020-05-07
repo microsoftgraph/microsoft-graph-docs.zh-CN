@@ -5,16 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 96aa613dade7ea26c7f5a9f075b0c248b4e16564
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a89971d91bf1a8c77e2c14b5190fa7ef0dfdc24b
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456402"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44153499"
 ---
 # <a name="create-openshift"></a>创建 openShift
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42456402"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.Read.All、Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -38,10 +38,6 @@ ms.locfileid: "42456402"
 POST /teams/{id}/schedule/openShifts
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
-
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
-  
 ## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
@@ -92,23 +88,7 @@ Content-length: 244
          }
       ]
    },
-   "draftOpenShift":{
-      "notes":"InventoryManagement",
-      "openSlotCount":3,
-      "displayName":"Dayshift",
-      "startDateTime":"2018-10-04T00: 58: 45.332Z",
-      "endDateTime":"2018-10-04T08: 58: 45.340Z",
-      "theme":"white",
-      "activities":[
-         {
-            "isPaid":true,
-            "startDateTime":"2018-10-04T00: 58: 45.340Z",
-            "endDateTime":"2018-10-04T07: 58: 45.332Z",
-            "code":"Break",
-            "displayName":"Lunch"
-         }
-      ]
-   },
+   "draftOpenShift":null,
    "createdDateTime":"2019-03-14T04: 32: 51.451Z",
    "lastModifiedDateTime":"2019-03-14T05: 32: 51.451Z",
    "lastModifiedBy":{
@@ -159,23 +139,7 @@ Content-type: application/json
     }
     ]
     },
-    "draftOpenShift": {
-    "notes": "Inventory Management",
-    "openSlotCount":3,
-    "displayName": "Day shift",
-    "startDateTime": "2018-10-04T00:58:45.332Z",
-    "endDateTime": "2018-10-04T08:58:45.340Z",
-    "theme": "white",
-    "activities": [
-    {
-    "isPaid": true,
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T07:58:45.332Z",
-    "code": "Break",
-    "displayName": "Lunch"
-    }
-    ]
-    },
+    "draftOpenShift": null,
     "createdDateTime": "2019-03-14T04:32:51.451Z",
     "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
     "lastModifiedBy": {

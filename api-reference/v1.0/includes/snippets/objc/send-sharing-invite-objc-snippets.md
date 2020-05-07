@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 463f6fe5eb0144a9c100b051f8ca6b1a5ba93c8e
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 057ffd80029f789e578353eb88041b627a8ff701
+ms.sourcegitcommit: df2c52f84aae5d4fed641d7411ba547371f0eaad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35734430"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44055583"
 ---
 ```objc
 
@@ -36,6 +36,13 @@ payloadDictionary[@"sendInvitation"] = sendInvitation;
 NSMutableArray *rolesList = [[NSMutableArray alloc] init];
 [rolesList addObject: @"write"];
 payloadDictionary[@"roles"] = rolesList;
+
+NSString *password = @"password123";
+payloadDictionary[@"password"] = password;
+
+NSString *expirationDateTimeDateTimeString = @"07/15/2018 14:00:00";
+NSDate *expirationDateTime = [NSDate ms_dateFromString: expirationDateTimeDateTimeString];
+payloadDictionary[@"expirationDateTime"] = expirationDateTime;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];
 [urlRequest setHTTPBody:data];

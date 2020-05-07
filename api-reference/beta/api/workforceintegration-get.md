@@ -5,16 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 378ec619584b4b6dba67871bd927a0d6852feda8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f66479af44efcbc686ad5d3acfa7155b26447a0f
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451293"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154099"
 ---
 # <a name="get-workforceintegration"></a>获取 workforceIntegration
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,21 +28,21 @@ ms.locfileid: "42451293"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | WorkforceIntegration、WorkforceIntegration 和所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teamwork/workforceIntegrations
+GET /teamwork/workforceIntegrations/{workforceIntegrationId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|

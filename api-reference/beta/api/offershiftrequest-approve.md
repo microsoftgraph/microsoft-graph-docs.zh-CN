@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: aef00c4de700624eac54e3aca8bbc2773799b377
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e01b1055d24740c08a23fbd9fd18dedcf00e81c5
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456605"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154022"
 ---
 # <a name="offershiftrequest-approve"></a>offerShiftRequest：批准
 
@@ -28,7 +28,7 @@ ms.locfileid: "42456605"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 计划的所有写。 * |
+| Application                            | 计划的所有写。 * |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
@@ -37,7 +37,7 @@ ms.locfileid: "42456605"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/schedule/offerShiftRequests/approve
+POST /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/approve
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -72,7 +72,7 @@ POST /teams/schedule/offerShiftRequests/approve
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/schedule/offerShiftRequests/approve
+POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/approve
 Content-type: application/json
 
 {

@@ -5,16 +5,16 @@ localization_priority: Normal
 doc_type: enumPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: c8f2b733363ecbd79a885a0b76c170f076664590
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c0d8c87f79580107d56ec84aa9b1a4bc397d4171
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498215"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154141"
 ---
-# <a name="filehashtype-enum"></a>fileHashType 枚举
+# <a name="filehashtype-enum-type"></a>fileHashType 枚举类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,12 +22,12 @@ ms.locfileid: "42498215"
 
 ## <a name="members"></a>成员
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知类型。|
-|sha1|1 |SHA1 哈希类型。|
-|sha256|2 | SHA256 哈希类型。|
-|md5|3 | MD5 哈希类型。|
+|sha1|1|SHA1 哈希类型。|
+|sha256|双面| SHA256 哈希类型。|
+|md5|第三章| MD5 哈希类型。|
 |authenticodeHash256|4 | AuthenticodeHash256 哈希类型。|
 |lsHash|5 | LsHash 哈希类型。|
 |ctph|6 | CTPH 哈希类型。|

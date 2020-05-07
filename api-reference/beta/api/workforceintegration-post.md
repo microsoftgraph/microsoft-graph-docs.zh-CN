@@ -5,16 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b818b55d95485ca17aff581f8b986f3fbb01465d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b810e83e1444312ede43933edaf2d29d76ab9b07
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451271"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154092"
 ---
 # <a name="create-workforceintegration"></a>创建 workforceIntegration
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42451271"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | WorkforceIntegration |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,9 +55,11 @@ POST /teamwork/workforceIntegrations
 
 ## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-create-a-new-workforceintegration-object"></a>示例1：创建新的 workforceIntegration 对象。
 
-下面展示了示例请求。
+#### <a name="request"></a>请求
+
+下面是创建新的**workforceIntegration**对象的请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -96,7 +98,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 下面展示了示例响应。
 
@@ -124,6 +126,97 @@ Content-type: application/json
   "supports": "supports-value"
 }
 ```
+
+### <a name="example-2-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a>示例2：创建一个新的 workforceIntegration，并为其启用 SwapRequest 的资格筛选
+
+以下是对 SwapRequest 启用了资格筛选的请求的示例。 
+
+#### <a name="request"></a>请求
+
+```
+POST https://graph.microsoft.com/beta/teamwork/workforceIntegrations/
+Authorization: Bearer {token}
+Content-type: application/json
+
+{
+  "displayName": "ABCWorkforceIntegration",
+  "apiVersion": 1,
+  "isActive": true,
+  "encryption": {
+    "protocol": "sharedSecret",
+    "secret": "My Secret"
+  },
+  "url": "https://ABCWorkforceIntegration.com/Contoso/",
+  "supports": "Shift,SwapRequest",
+  "eligibilityFilteringEnabledEntities": "SwapRequest"
+}
+
+```
+#### <a name="response"></a>响应
+
+下面是一个响应示例。
+```
+HTTP/1.1 200 OK
+{
+  "id": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
+  "displayName": "ABCWorkforceIntegration",
+  "apiVersion": 1,
+  "isActive": true,
+  "encryption": {
+    "protocol": "sharedSecret",
+    "secret": null
+  },
+  "url": "https://abcWorkforceIntegration.com/Contoso/",
+  "supports": "Shift,SwapRequest",
+  "eligibilityFilteringEnabledEntities": "SwapRequest"
+}
+
+```
+若要更新启用了 SwapRequest 的现有**workforceIntegration**对象以进行资格筛选，请参阅[update](../api/workforceintegration-update.md)方法。
+
+### <a name="example-3-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>示例3：在 eligibilityFilteringEnabledEntities 中包含 SwapRequest 时提取符合条件的班次
+
+倒班应用和劳动力集成终结点之间的交互将遵循现有模式。
+
+### <a name="request"></a>请求
+
+下面的示例演示了如何通过转到劳动力集成终结点来获取交换请求的符合条件的请求。
+
+```
+POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
+Accept-Language: en-us
+
+{
+  "requests": [
+  {
+     "id": "{shiftId}",
+     "method": "GET”,
+     "url": “/shifts/{shiftId}/requestableShifts?requestType={requestType}&startDateTime={startDateTime}&endDateTime={endDateTime}”
+   }]
+}
+```
+### <a name="response"></a>响应
+
+以下是劳动力集成服务响应的示例。
+```
+HTTP/1.1 200 OK
+{
+  "responses": [
+  {
+    "body": {
+      "SHFT_6548f642-cbc1-4228-8621-054327576457",
+      "SHFT_6548f642-cbc1-4228-8621-054327571234"
+  }
+    "id": "{shiftId}",
+    "status: 200,
+    "body": {
+       "data": [{ShiftId}, {ShiftId}...]
+       "error": null
+    }
+  ]
+}
+```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

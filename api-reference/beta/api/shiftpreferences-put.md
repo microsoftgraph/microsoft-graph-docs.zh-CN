@@ -5,16 +5,16 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c1df99a56ed27724d9ff670f4b100d0b7ba93e71
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b3f87e6981abf18a4f082839c3e3e47455d36961
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453280"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154323"
 ---
 # <a name="update-shiftpreferences"></a>更新 shiftPreferences
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,14 +28,14 @@ ms.locfileid: "42453280"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{userId}/settings/shiftPreferences
+PUT /users/{userId}/settings/shiftPreferences
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -46,7 +46,7 @@ GET /users/{userId}/settings/shiftPreferences
 | Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
-在此方法的请求正文中提供新的[shiftPreferences](../resources/shiftpreferences.md)对象。
+在请求正文中，提供[shiftPreferences](../resources/shiftpreferences.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
