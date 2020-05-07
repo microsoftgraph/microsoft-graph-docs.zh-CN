@@ -304,7 +304,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: 发送邮件
                   href: api/user-sendmail.md
-            - name: 备注
+            - name: 注释
               href: resources/onenote.md
               items:
                 - name: 创建笔记本
@@ -3587,7 +3587,7 @@
                       href: api/orgcontact-get-manager.md
                     - name: 获取成员对象
                       href: api/orgcontact-getmemberobjects.md
-            - name: Policy
+            - name: 策略
               href: resources/policy-overview.md
               items:
                 - name: 基于活动的超时策略
@@ -4514,7 +4514,153 @@
                   href: api/opentypeextension-post-opentypeextension.md
                 - name: 获取开放扩展
                   href: api/opentypeextension-get.md
-            - name: 驱动器
+            - name: 发生
+              items:
+                - name: Shift
+                  href: resources/shift.md
+                  items:
+                    - name: 列出
+                      href: api/schedule-list-shifts.md
+                    - name: 创建
+                      href: api/schedule-post-shifts.md
+                    - name: 获取
+                      href: api/shift-get.md
+                    - name: 替换
+                      href: api/shift-put.md
+                    - name: 删除
+                      href: api/shift-delete.md
+                - name: 计划
+                  href: resources/schedule.md
+                  items:
+                    - name: 创建或替换
+                      href: api/team-put-schedule.md
+                    - name: 获取
+                      href: api/schedule-get.md
+                    - name: 共享
+                      href: api/schedule-share.md
+                - name: 计划组
+                  href: resources/schedulinggroup.md
+                  items:
+                    - name: 列表
+                      href: api/schedule-list-schedulinggroups.md
+                    - name: 创建
+                      href: api/schedule-post-schedulinggroups.md
+                    - name: 获取
+                      href: api/schedulinggroup-get.md
+                    - name: 替换
+                      href: api/schedulinggroup-put.md
+                    - name: 删除
+                      href: api/schedulinggroup-delete.md
+                - name: 提供班次
+                  href: resources/offershiftrequest.md
+                  items:
+                    - name: 创建
+                      href: api/offershiftrequest-post.md
+                    - name: 获取
+                      href: api/offershiftrequest-get.md
+                    - name: 列表
+                      href: api/offershiftrequest-list.md
+                    - name: 批准
+                      href: api/offershiftrequest-approve.md
+                    - name: 拒绝
+                      href: api/offershiftrequest-decline.md
+                - name: 打开班次
+                  href: resources/openshift.md
+                  items:
+                    - name: 列表
+                      href: api/openshift-list.md
+                    - name: 创建
+                      href: api/openshift-post.md
+                    - name: 获取
+                      href: api/openshift-get.md
+                    - name: 更新
+                      href: api/openshift-update.md
+                    - name: Delete
+                      href: api/openshift-delete.md
+                - name: 打开班次轮换更改请求
+                  href: resources/openshiftchangerequest.md
+                  items:
+                    - name: 列表
+                      href: api/openshiftchangerequest-list.md
+                    - name: 创建
+                      href: api/openshiftchangerequest-post.md
+                    - name: 获取
+                      href: api/openshiftchangerequest-get.md
+                    - name: 批准
+                      href: api/openshiftchangerequest-approve.md
+                    - name: 拒绝
+                      href: api/openshiftchangerequest-decline.md
+                - name: Shift 首选项
+                  href: resources/shiftpreferences.md
+                  items:
+                    - name: 获取
+                      href: api/shiftpreferences-get.md
+                    - name: 更新
+                      href: api/shiftpreferences-put.md
+                - name: 交换班次更改请求
+                  href: resources/swapshiftschangerequest.md
+                  items:
+                    - name: 列表
+                      href: api/swapshiftschangerequest-list.md
+                    - name: 创建
+                      href: api/swapshiftschangerequest-post.md
+                    - name: 获取
+                      href: api/swapshiftschangerequest-get.md
+                    - name: 批准
+                      href: api/swapshiftschangerequest-approve.md
+                    - name: 拒绝
+                      href: api/swapshiftschangerequest-decline.md
+                - name: 休假
+                  href: resources/timeoff.md
+                  items:
+                    - name: 列表
+                      href: api/schedule-list-timesoff.md
+                    - name: 创建
+                      href: api/schedule-post-timesoff.md
+                    - name: 获取
+                      href: api/timeoff-get.md
+                    - name: 替换
+                      href: api/timeoff-put.md
+                    - name: 删除
+                      href: api/timeoff-delete.md
+                - name: 休假原因
+                  href: resources/timeoffreason.md
+                  items:
+                    - name: 列表
+                      href: api/schedule-list-timeoffreasons.md
+                    - name: 创建
+                      href: api/schedule-post-timeoffreasons.md
+                    - name: 获取
+                      href: api/timeoffreason-get.md
+                    - name: 替换
+                      href: api/timeoffreason-put.md
+                    - name: 删除
+                      href: api/timeoffreason-delete.md
+                - name: 休息时间请求
+                  href: resources/timeoffrequest.md
+                  items:
+                    - name: 获取
+                      href: api/timeoffrequest-get.md
+                    - name: 删除
+                      href: api/timeoffrequest-delete.md
+                    - name: 批准
+                      href: api/timeoffrequest-approve.md
+                    - name: 拒绝
+                      href: api/timeoffrequest-decline.md
+                - name: 劳动力集成
+                  href: resources/workforceintegration.md
+                  items:
+                    - name: 列表
+                      href: api/workforceintegration-list.md
+                    - name: 创建
+                      href: api/workforceintegration-post.md
+                    - name: 获取
+                      href: api/workforceintegration-get.md
+                    - name: 更新
+                      href: api/workforceintegration-update.md
+                    - name: 删除
+                      href: api/workforceintegration-delete.md
+            - name: Drive
               href: resources/drive.md
               items:
                 - name: 获取驱动器
