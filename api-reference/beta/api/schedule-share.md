@@ -5,22 +5,22 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dafe66d3aa63b87942ada0b87cf8ceee2715554d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5fce02b8f18a2745b06d1782ecadb7bc7bd3adc0
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453798"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154239"
 ---
 # <a name="schedule-share"></a>日程安排：共享
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 与 schedule 成员共享[计划](../resources/schedule.md)时间范围。
-在指定的团队成员（包括员工和经理）可查看的[日程安排](../resources/schedule.md)的指定时间范围内，创建[shift](../resources/shift.md)和[timeOff](../resources/timeoff.md)项目的集合。
-[计划](../resources/schedule.md)中的每个[shift](../resources/shift.md)和[timeOff](../resources/timeoff.md)实例都支持项目的草稿版本和共享版本。 草稿版本仅由经理查看，并且共享版本可供员工和经理查看。 对于在指定时间范围内的每个[shift](../resources/shift.md)和[timeOff](../resources/timeoff.md)实例，共享操作将从草稿版本更新共享版本，因此，除了经理之外，员工还可以查看有关该项目的最新信息。 **NotifyTeam**参数会进一步指定哪些员工可以查看该项目。
+在指定的团队成员（包括员工和经理）可查看的[日程安排](../resources/schedule.md)的指定时间范围内，创建[shift](../resources/shift.md)、 [openshift](../resources/openshift.md)和[timeOff](../resources/timeoff.md)项目的集合。
+[计划](../resources/schedule.md)中的每个[shift](../resources/shift.md)、 [openshift](../resources/openshift.md)和[timeOff](../resources/timeoff.md)实例都支持项目的草稿版本和共享版本。 草稿版本仅由经理查看，并且共享版本可供员工和经理查看。 对于每个[shift](../resources/shift.md)、 [openshift](../resources/openshift.md)和[timeOff](../resources/timeoff.md)实例在指定的时间范围内，共享操作将从草稿版本更新共享版本，因此，除了经理之外，员工还可以查看有关该项目的最新信息。 **NotifyTeam**参数会进一步指定哪些员工可以查看该项目。
 
 ## <a name="permissions"></a>权限
 
@@ -30,7 +30,7 @@ ms.locfileid: "42453798"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 计划的所有写。 * |
+|Application | 计划的所有写。 * |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
@@ -55,10 +55,10 @@ POST /teams/{teamId}/schedule/share
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-|参数                   |类型           |说明  |
+|参数                   |类型           |Description  |
 |-----------------------|-------------------|--------------|
-| notifyTeam            |`Boolean`             |指示整个团队是否应获取有关此操作的可见通知，或仅获取已分配有班次的员工。 必填。       |
-| startDateTime         |`DateTimeOffset`   |共享日程上的班次的开始时间。 必填。   |
+| notifyTeam            |`Boolean`             |指示整个团队是否应获取有关此操作的可见通知，或仅获取已分配有班次的员工。 必需。       |
+| startDateTime         |`DateTimeOffset`   |共享日程上的班次的开始时间。 必需。   |
 | endDateTime           |`DateTimeOffset`   | 在日程上共享班次的结束时间。   |
 
 ## <a name="response"></a>响应

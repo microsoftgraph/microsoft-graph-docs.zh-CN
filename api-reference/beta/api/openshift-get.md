@@ -5,16 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d833625086289b3b52350362347fba56e711f6a3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5ef3b1681ed6a155cf59bc3276cc041969b2d580
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456430"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44153518"
 ---
 # <a name="get-openshift"></a>获取 openShift
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42456430"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.Read.All、Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,9 +40,9 @@ GET /teams/{id}/schedule/openShifts/{openShiftId}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
-  
-## <a name="request-headers"></a>请求标头
+此方法不支持 OData 查询参数来自定义响应。
+
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|

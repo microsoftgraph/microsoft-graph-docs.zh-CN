@@ -5,16 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 96589309cbeb2880e533b5607dc05beec78894ed
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9bd867642da41b2aa0644744655c94b1d842d977
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520266"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154267"
 ---
 # <a name="swapshiftschangerequest-resource-type"></a>swapShiftsChangeRequest 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,14 +27,14 @@ ms.locfileid: "42520266"
 | [List](../api/swapshiftschangerequest-list.md) | [SwapShiftsChangeRequest](swapshiftschangerequest.md)的集合 | 列出团队中的**swapShiftsChangeRequest**对象的属性和关系。 |
 | [创建](../api/swapshiftschangerequest-post.md) | [swapshiftschangerequest](swapshiftschangerequest.md) | 创建 swapshiftschangerequest 对象的实例。 |
 | [获取](../api/swapshiftschangerequest-get.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | 读取**swapShiftsChangeRequest**对象的属性和关系。 |
-|[批准](../api/swapshiftschangerequest-approve.md)|无|批准**swapShiftsChangeRequest**。 |
-|[拒绝](../api/swapshiftschangerequest-decline.md)|无|拒绝**swapShiftsChangeRequest**。|
+|[批准](../api/swapshiftschangerequest-approve.md)|None|批准**swapShiftsChangeRequest**。 |
+|[拒绝](../api/swapshiftschangerequest-decline.md)|None|拒绝**swapShiftsChangeRequest**。|
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
-|recipientShiftId|String|交换请求的收件人的 ID。 这是请求要交换的用户。|
+|recipientShiftId|字符串|请求要交换的收件人用户的 Shift ID。|
 
 ## <a name="relationships"></a>关系
 

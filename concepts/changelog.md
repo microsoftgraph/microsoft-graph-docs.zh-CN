@@ -3,18 +3,26 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 70872cb67dd69be3fb363362f9de6070cedcddda
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: c0778305544b80715864a7a8e5441356ed160b45
+ms.sourcegitcommit: b88dce7297f196345f16c2c126d7bdd482d22a23
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934806"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44006326"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
 此变更日志涵盖 Microsoft Graph v1.0 和 beta 中特定的 API 级别更改。
 
 有关这些 API 更改的意义以及最新工具、组件、指南和教程添加项的摘要信息，请参阅 [Microsoft Graph 新增功能](whats-new-overview.md)。
+
+## <a name="may-2020"></a>2020 年 5 月
+
+### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | beta | 向 [group](/graph/api/resources/group?view=graph-rest-beta) 实体添加了“resourceBehaviorOptions”和“resourceProvisioningOptions”属性。********|
 
 ## <a name="april-2020"></a>2020 年 4 月
 
@@ -30,6 +38,8 @@ ms.locfileid: "43934806"
 | Addition | v1.0 | 向 [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) 实体添加了“isTallyingResponses”**** 属性。 |
 | 添加项 | v1.0 | 向 [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) 实体添加了“isRemovable”**** 属性。 |
 | 添加项 | v1.0 | 向 [mailboxSettings](/graph/api/resources/mailboxSettings?view=graph-rest-1.0) 实体添加了“delegateMeetingMessageDeliveryOptions”**** 属性。 |
+| 添加项 | Beta 和 v1.0          | 针对 [event](/graph/api/resources/event?view=graph-rest-1.0) 实例的[高达 150MB 的文件附件](outlook-large-attachments.md)的支持。 |
+| 添加项 | beta | 添加了对[位置 API](/graph/api/resources/place?view=graph-rest-beta) 的分页支持。|
 
 ### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
 
@@ -81,15 +91,11 @@ ms.locfileid: "43934806"
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项        | beta        | 向 [user](/graph/api/resources/user?view=graph-rest-beta) 实体集添加了 [folowedSites](/graph/api/sites-list-followed?view=graph-rest-beta) 导航属性 |
-| 添加项        | v1.0        | 向 [user](/graph/api/resources/user?view=graph-rest-1.0) 实体集添加了 [folowedSites](/graph/api/sites-list-followed?view=graph-rest-1.0) 导航属性 |
-| Addition        | v1.0        | 向 [driveItem](/graph/resources/driveitem?view=graph-rest-1.0) 资源的 [createLink][/graph/api/driveitem-createlink?view=graph-rest-1.0] 操作添加了 **expirationDateTime**、**password** 和 **message** 属性。 |
-| Addition        | v1.0        | 向 [siteCollection](/graph/resources/sitecollection?view=graph-rest-1.0) 资源添加了 **dataLocaton** 属性。 |
-| Addition        | v1.0        | 向 [sharingLink](/graph/resources/sharinglink?view=graph-rest-1.0) 资源添加了 **preventsDownload** 属性。 |
-| Addition        | v1.0        | 向 [sharepointIds](/graph/resources/sharepointids?view=graph-rest-1.0) 资源添加了 **tenantId** 属性。 |
-| Addition        | v1.0        | 向 [sharedDriveItem](/graph/resources/shareddriveitem?view=graph-rest-1.0) 资源添加了 **permission** 属性。 |
-| 添加项        | v1.0        | 向 [permission](/graph/resources/permission?view=graph-rest-1.0) 资源添加了 **expirationDateTime**、**hasPassword** 和 **grantedToIdentities** 属性。 |
-| Addition        | v1.0        | 向 [driveItem](/graph/resources/driveitem?view=graph-rest-1.0) 资源上的 [invite](/graph/api/driveitem-invite?view=graph-rest-1.0) 操作添加了 **expirationDateTime** 和 **password** 属性。 |
+| 添加项        | v1.0        | 在 [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) 资源的 [createLink](/graph/api/driveitem-createlink?view=graph-rest-1.0) 操作上添加l了 **expirationDateTime**、**password**、**message**属性。 |
+| 添加项        | v1.0        | 向 [sharingLink](/graph/api/resources/sharinglink?view=graph-rest-1.0) 资源添加了 **preventsDownload** 属性。 |
+| Addition        | v1.0        | 向 [sharedDriveItem](/graph/api/resources/shareddriveitem?view=graph-rest-1.0) 资源添加了 **permission** 属性。 |
+| 添加项        | v1.0        | 向 [permission](/graph/api/resources/permission?view=graph-rest-1.0) 资源添加了 **expirationDateTime**、**hasPassword** 和 **grantedToIdentities** 属性。 |
+| Addition        | v1.0        | 向 [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) 资源上的 [invite](/graph/api/driveitem-invite?view=graph-rest-1.0) 操作添加了 **expirationDateTime** 和 **password** 属性。 |
 
 ### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
 
@@ -108,6 +114,16 @@ ms.locfileid: "43934806"
 | 添加项 | beta | 增加了 [authenticationMethod](/graph/api/resources/authenticationmethod?view=graph-rest-beta)、[passwordAuthenticationMethod](/graph/api/resources/passwordauthenticationmethod?view=graph-rest-beta)、和 [phoneAuthenticationMethod](/graph/api/resources/phoneauthenticationmethod?view=graph-rest-beta) 资源和相关方法。
 | Addition | beta | 向 [group](/graph/api/resources/group?view=graph-rest-beta) 实体添加了 **createdByAppId** 属性。|
 
+
+### <a name="mail"></a>邮件
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项        | V1.0          | 向 [message](/graph/api/resources/message?view=graph-rest-1.0) 实例[添加高达 150MB 的文件附件](outlook-large-attachments.md)。 |
+| 添加项        | V1.0          | [attachmentItem](/graph/api/resources/attachmentitem?view=graph-rest-1.0) 复杂类型、[attachment](/graph/api/resources/attachment?view=graph-rest-1.0) 实体的 [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) 操作和 **attachmentType** 枚举。 |
+| 更改项         | V1.0          | 扩展了 [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) 所使用的现有 [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-1.0) 实体，以使其也适用于 **attachment**。 |
+
+
 ### <a name="reports--identity-and-access-reports"></a>报告 | 身份和访问报告
 
 | **更改类型** | **版本**   | **说明**                          |
@@ -121,6 +137,16 @@ ms.locfileid: "43934806"
 | 添加项 | Beta | 向 [getEmailActivityCounts](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta) API CSV 实体添加了 **Meeting Created** 和 **Meeting Interacted** 属性。 |
 | 添加项 | Beta | 向 [getEmailActivityUserCounts](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta) API CSV 实体添加了 **Meeting Created** 和 **Meeting Interacted** 属性。 |
 | Addition | Beta | 向 [getEmailActivityuserDetail](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta) API CSV 实体添加了 **Meeting Created** 和 **Meeting Interacted** 属性。 |
+
+### <a name="sites-and-lists"></a>站点和列表
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项        | beta        | 向 **followedSites** 导航属性添加了 [user](/graph/api/resources/user?view=graph-rest-beta) 实体， 以[列出登录用户关注的网站](/graph/api/sites-list-followed?view=graph-rest-beta)。 |
+| 添加项        | v1.0        | 向 **followedSites** 导航属性添加了 [user](/graph/api/resources/user?view=graph-rest-1.0) 实体， 以[列出登录用户关注的网站](/graph/api/sites-list-followed?view=graph-rest-1.0)。 |
+| 添加项        | v1.0        | 向 [siteCollection](/graph/api/resources/sitecollection?view=graph-rest-1.0) 资源添加了 **dataLocatonCode** 属性。 |
+| 添加项        | v1.0        | 向 [sharepointIds](/graph/api/resources/sharepointids?view=graph-rest-1.0) 资源添加了 **tenantId** 属性。 |
+
+
 
 ## <a name="march-2020"></a>2020 年 3 月
 

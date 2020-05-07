@@ -5,16 +5,18 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 906665d0fa0250a14ea916d8e0b9bf286e6cf2d0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 86c4ec4e419fb9305c0a11ba4443e991ed062020
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436854"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155108"
 ---
 # <a name="group-delta"></a>group: delta
 
-命名空间： microsoft. graph 获取新创建、更新或删除的组，包括组成员身份更改，而无需对整个组集合执行完全读取。 有关详细信息，请参阅[Using Delta Query](/graph/delta-query-overview) 。
+命名空间：microsoft.graph
+
+获取新创建、更新或删除的组，包括组成员身份更改，而无需对整个组集合执行完全读取。 有关详细信息，请参阅[Using Delta Query](/graph/delta-query-overview) 。
 
 ## <a name="permissions"></a>权限
 
@@ -44,7 +46,7 @@ GET /groups/delta
 
 在后续请求中，可以复制并应用之前响应中返回的 `nextLink` 或 `deltaLink` URL，因为此 URL 已包含所需的编码参数。
 
-| 查询参数 | 类型  |说明|
+| 查询参数 | 类型  |Description|
 |:---------------|:--------|:----------|
 | $deltatoken | string | 对同一个组集合之前的 **delta** 函数调用的 `deltaLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示该组更改跟踪的完成状态。将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
 | $skiptoken | string | 对之前的 **delta** 函数调用的 `nextLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示同一个组集合中有进一步的更改需要追踪。 |

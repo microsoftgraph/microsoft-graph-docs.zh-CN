@@ -5,16 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0b9c38e5be9e4f55d8d1b71460cf6735c73d5478
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 000a8ae7c91b0d5c2b896615cc1e60ba2b360aed
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456407"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44153498"
 ---
 # <a name="update-openshift"></a>更新 openShift
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42456407"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,12 +47,12 @@ PUT /teams/{id}/schedule/openShifts/{openShiftId}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
+在此方法的请求正文中提供修改的[openshift](../resources/openshift.md)对象。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 |draftOpenShift|openShiftItem|未发布的打开班次。|
-|schedulingGroupId|String| 计划组 id。 |
+|schedulingGroupId|字符串| 计划组 id。 |
 |sharedOpenShift|openShiftItem|已发布的打开班次。|
 
 ## <a name="response"></a>响应
@@ -72,7 +72,7 @@ PUT /teams/{id}/schedule/openShifts/{openShiftId}
 }-->
 
 ```http
-PUT https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/{openShiftId}
+PUT https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8
 Content-type: application/json
 
 {

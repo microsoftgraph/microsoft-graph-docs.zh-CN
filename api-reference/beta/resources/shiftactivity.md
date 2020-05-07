@@ -4,28 +4,28 @@ description: 代表班次中的活动。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-doc_type: resourcePageType_
-ms.openlocfilehash: 6adc82eca2c7ce53713997c18001aef19c76e3dc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+doc_type: resourcePageType
+ms.openlocfilehash: d03cf481ec0360aa6ef7c4ab544189b420b2081b
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520630"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154344"
 ---
 # <a name="shiftactivity-resource-type"></a>shiftActivity 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 代表[班次](shift.md)中的活动。
 
 ## <a name="properties"></a>属性
-| 属性                         | 类型                    | 说明                                                                                                                                                                        |
+| 属性                         | 类型                    | Description                                                                                                                                                                        |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| isPaid               | `bool`                  | 指示是否`microsoft.graph.user`应在其`shift`期间向活动付款。 必填。    |
-| startDateTime               | `DateTimeOffset`                  | 的开始日期和时间`shiftActivity`。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 必填。 |
-| endDateTime               | `DateTimeOffset`                  | 的结束日期和时间`shiftActivity`。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 必填。    |
+| isPaid               | `bool`                  | 指示是否`microsoft.graph.user`应在其`shift`期间向活动付款。 必需。    |
+| startDateTime               | `DateTimeOffset`                  | 的开始日期和时间`shiftActivity`。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 必需。 |
+| endDateTime               | `DateTimeOffset`                  | 的结束日期和时间`shiftActivity`。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 必需。    |
 | code               | `string`                  | 的客户定义的代码`shiftActivity`。 必需。    |
 | displayName               | `string`                  | 的名称`shiftActivity`。 此为必需属性。    |
 

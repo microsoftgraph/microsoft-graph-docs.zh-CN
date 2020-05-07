@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: aa297e12793bb6d9e58e59bf7268a533942484b2
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: c6bcff99f8011c5fbb3da0b483b3c9ca9c97575e
+ms.sourcegitcommit: df2c52f84aae5d4fed641d7411ba547371f0eaad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43771054"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44055567"
 ---
 ```csharp
 
@@ -13,10 +13,12 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var type = "view";
 
+var password = "ThisIsMyPrivatePassword";
+
 var scope = "anonymous";
 
 await graphClient.Me.Drive.Items["{item-id}"]
-    .CreateLink(type,scope,null,null,null)
+    .CreateLink(type,scope,null,password,null)
     .Request()
     .PostAsync();
 

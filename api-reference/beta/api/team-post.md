@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e38393f0c6c30daae7ba46d1e14033dea3078ec6
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 390ab84b7e29febf39979efc57b78849e440f56a
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40864948"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154078"
 ---
 # <a name="create-team"></a>创建团队
+
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -139,7 +141,7 @@ Content-Type: application/json
                     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')",
                     "name": "A Pinned Website",
                     "configuration": {
-                        "contentUrl": "/microsoftteams/microsoft-teams"
+                        "contentUrl": "https://docs.microsoft.com/microsoftteams/microsoft-teams"
                     }
                 },
                 {

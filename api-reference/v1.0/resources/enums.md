@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 6f2a9c2b59661e820a89268f83c3868d29b9f558
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
+ms.openlocfilehash: 7ec8619b24dd642050151b49cf066df7e892c78c
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991829"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44153483"
 ---
 命名空间：microsoft.graph
 
@@ -24,7 +24,7 @@ ms.locfileid: "43991829"
 
 ### <a name="contactrelationship-values"></a>contactRelationship 值
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |母语|0|用户的父级。|
 |彼此|1| 用户的相对路径。|
@@ -34,6 +34,52 @@ ms.locfileid: "43991829"
 |该子|5 | 用户的子级。|
 |相互|6 | 与用户的未指定关系。|
 |向 unknownfuturevalue|7 | 用于将来兼容性的标记值。|
+
+### <a name="scheduleentitytheme-values"></a>scheduleEntityTheme 值
+
+| 成员
+|:-------------------------
+| white
+| 蓝色
+| 绿色
+| 紫色
+| 粉色
+| 黄色
+| 底纹
+| darkBlue
+| darkGreen
+| darkPurple
+| darkPink
+| darkYellow
+| 向 unknownfuturevalue
+
+
+### <a name="timeoffreasonicontype-values"></a>timeOffReasonIconType 值
+
+|成员|
+|:---|
+|无|
+|car|
+|日历|
+|运行|
+|plane|
+|firstAid|
+|dr.|
+|notWorking|
+|构造|
+|juryDuty|
+|投放|
+|cup of|
+|phone|
+|气候|
+|防护|
+|piggyBank|
+|狗|
+|桩|
+|trafficCone|
+|针|
+|sunny|
+|向 unknownfuturevalue|
 
 ### <a name="timezonestandard-values"></a>timeZoneStandard 值
 
@@ -284,7 +330,7 @@ ms.locfileid: "43991829"
 |:-------------------------
 | 替换
 | Append
-| 删除
+| Delete
 | Insert
 | 计算
 
@@ -319,7 +365,7 @@ ms.locfileid: "43991829"
 | 自动
 | noPreview
 | checklist
-| description
+| 说明
 | reference
 
 
@@ -455,7 +501,7 @@ ms.locfileid: "43991829"
 
 由分析师提供的警报上可能的反馈值。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|陌生.|
 |truePositive|1|警报为 true-肯定。|
@@ -466,7 +512,7 @@ ms.locfileid: "43991829"
 
 文件哈希类型的枚举。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知类型。|
 |sha1|1|SHA1 哈希类型。|
@@ -482,7 +528,7 @@ ms.locfileid: "43991829"
 
 网络连接的方向（入站/出站）的枚举。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知的连接。|
 |进货|1|入站连接。|
@@ -492,7 +538,7 @@ ms.locfileid: "43991829"
 
 连接状态的枚举。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知的连接状态。|
 |尝试|1|已尝试连接。|
@@ -504,7 +550,7 @@ ms.locfileid: "43991829"
 
 进程的可能完整性级别值。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|陌生.|
 |可信|10  |完整性级别不受信任。|
@@ -517,7 +563,7 @@ ms.locfileid: "43991829"
 
 由[/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives)定义的注册表配置单元的枚举。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知配置单元。|
 |currentConfig|1|HKEY_CURRENT_CONFIG 配置单元。|
@@ -531,7 +577,7 @@ ms.locfileid: "43991829"
 
 更改注册表项名称和/或值的操作。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知的注册表值类型。|
 |create|1|创建注册表。|
@@ -542,7 +588,7 @@ ms.locfileid: "43991829"
 
 由[/windows/desktop/sysinfo/registry-value-types](/windows/desktop/sysinfo/registry-value-types)定义的注册表值类型的枚举。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知的注册表值类型。|
 |数字|1|REG_BINARY 注册表值类型。|
@@ -561,7 +607,7 @@ ms.locfileid: "43991829"
 
 警报严重性的枚举。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|严重度未知。|
 |之|1|严重性仅适用于信息。|
@@ -573,7 +619,7 @@ ms.locfileid: "43991829"
 
 警报生命周期状态（阶段）的可能值。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知状态。|
 |newAlert|10  | 警报是新的。|
@@ -583,7 +629,7 @@ ms.locfileid: "43991829"
 ### <a name="emailrole-values"></a>emailRole 值
 电子邮件角色的可能值。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知角色。|
 |sender|1|电子邮件的发件人。|
@@ -593,7 +639,7 @@ ms.locfileid: "43991829"
 
 用户登录方法的可能值。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|-1|陌生.|
 |式|0|登录是交互式的。|
@@ -727,7 +773,7 @@ ms.locfileid: "43991829"
 
 ### <a name="threatassessmentcontenttype-values"></a>threatAssessmentContentType 值
 
-| 成员 | 值 | 说明             |
+| 成员 | 值 | Description             |
 |:-------|:------|:------------------------|
 | mail   | 1     | 邮件威胁。            |
 | url    | 双面     | URL 威胁。             |
@@ -735,14 +781,14 @@ ms.locfileid: "43991829"
 
 ### <a name="threatexpectedassessment-values"></a>threatExpectedAssessment 值
 
-| 成员  | 值 | 说明                       |
+| 成员  | 值 | Description                       |
 |:--------|:------|:----------------------------------|
 | 数据   | 1     | 应阻止该威胁。     |
 | 阻塞 | 双面     | 不应阻止该威胁。 |
 
 ### <a name="threatcategory-values"></a>threatCategory 值
 
-| 成员             | 值 | 说明        |
+| 成员             | 值 | Description        |
 |:-------------------|:------|:-------------------|
 | 垃圾邮件               | 1     | 垃圾邮件威胁。       |
 | 骗术           | 双面     | 网络钓鱼威胁。   |
@@ -751,14 +797,14 @@ ms.locfileid: "43991829"
 
 ### <a name="threatassessmentstatus-values"></a>threatAssessmentStatus 值
 
-| 成员    | 值 | 说明                              |
+| 成员    | 值 | Description                              |
 |:----------|:------|:-----------------------------------------|
 | 决   | 1     | 威胁评估仍在进行中。 |
 | 后 | 双面     | 威胁评估已完成。         |
 
 ### <a name="threatassessmentrequestsource-values"></a>threatAssessmentRequestSource 值
 
-| 成员        | 值 | 说明              |
+| 成员        | 值 | Description              |
 |:--------------|:------|:-------------------------|
 | 取消     | 0     | 尚不知道。            |
 | user          | 1     | 用户提交。         |
@@ -766,7 +812,7 @@ ms.locfileid: "43991829"
 
 ### <a name="threatassessmentresulttype-values"></a>threatAssessmentResultType 值
 
-| 成员             | 值 | 说明                                          |
+| 成员             | 值 | Description                                          |
 |:-------------------|:------|:-----------------------------------------------------|
 | checkPolicy        | 1     | 策略检查结果，仅用于`mail`评估。 |
 | 重新扫描             | 双面     | 重新扫描结果。                                   |
@@ -774,7 +820,7 @@ ms.locfileid: "43991829"
 
 ### <a name="maildestinationroutingreason-values"></a>mailDestinationRoutingReason 值
 
-| 成员                | 值 | 说明                         |
+| 成员                | 值 | Description                         |
 |:----------------------|:------|:------------------------------------|
 | 无                  | 0     | 尚不知道。                       |
 | mailFlowRule          | 1     | Exchange 传输规则。            |

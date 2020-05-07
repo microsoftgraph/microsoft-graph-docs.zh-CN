@@ -4,17 +4,17 @@ description: 在计划中花费时间的有效原因。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-doc_type: resourcePageType_
-ms.openlocfilehash: f9d84ae6b86d7d97af5ec2376879a5961da7367b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+doc_type: resourcePageType
+ms.openlocfilehash: c766a29a75bfe96ca6d0175b3017f4a310448c2d
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519720"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154442"
 ---
 # <a name="timeoffreason-resource-type"></a>timeOffReason 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,14 +28,14 @@ ms.locfileid: "42519720"
 |[List](../api/schedule-list-timeoffreasons.md) | [timeOffReason](timeoffreason.md)集合 | 获取计划中的**timeOffReason**列表。|
 |[获取](../api/timeoffreason-get.md) | [timeOffReason](timeoffreason.md) | 按 ID 获取**timeOffReason** 。|
 |[Replace](../api/timeoffreason-put.md) | [timeOffReason](timeoffreason.md) | 替换**timeOffReason**。|
-|[删除](../api/timeoffreason-delete.md) | 无 | 将**timeOffReason**标记为非活动状态。|
+|[删除](../api/timeoffreason-delete.md) | None | 将**timeOffReason**标记为非活动状态。|
 
 ## <a name="properties"></a>属性
 |名称          |类型           |说明                                                                                 |
 |--------------|---------------|--------------------------------------------------------------------------------------------|
 | id            |`string`      |`timeOffReason` 的 ID。|
-| displayName               | `string`                  | 的名称`timeOffReason`。 必填。 |
-| iconType | `timeOffReasonIconType`   | 支持的图标类型：无;car式运行planefirstAid;dr.notWorking;构造juryDuty;投放cup of电话气候防护piggyBank;监控桩trafficCone;针sunny. 必填。 |
+| displayName               | `string`                  | 的名称`timeOffReason`。 必需。 |
+| iconType | `timeOffReasonIconType`   | 支持的图标类型：无;car式运行planefirstAid;dr.notWorking;构造juryDuty;投放cup of电话气候防护piggyBank;监控桩trafficCone;针sunny. 必需。 |
 | isActive          |`Boolean`      | 指示在新建实体或更新现有实体时是否可以使用 `timeOffReason`。 必需。 |
 | createdDateTime       |`DateTimeOffset`        |首次在其上创建`timeOffReason`此项的时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 |
 | lastModifiedDateTime      |`DateTimeOffset`         |对其最后更新的`timeOffReason`时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 |

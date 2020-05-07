@@ -5,16 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cb9c436537e233c14e4f9d9eb1a2c6cb01cc6fe2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 73f5f920a6fbd7f56465ff3f35457c2108ca0323
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452286"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154414"
 ---
 # <a name="get-timeoffreason"></a>获取 timeOffReason
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42452286"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Schedule. All *、schedule、all*  |
+|Application | Schedule. All *、schedule、all*  |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
@@ -42,7 +42,11 @@ ms.locfileid: "42452286"
 GET /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="optional-query-parameters"></a>可选的查询参数
+
+此方法不支持 OData 查询参数来自定义响应。
+
+## <a name="request-headers"></a>请求头
 
 | 标头       | 值 |
 |:---------------|:--------|

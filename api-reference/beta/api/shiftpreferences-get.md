@@ -5,16 +5,16 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 30837607b484d98856f5296e1fd0a1a30ca3a619
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9bbf5be71676b942a3df0174f781a0a6708493e2
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453294"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154330"
 ---
 # <a name="get-shiftpreferences"></a>获取 shiftPreferences
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42453294"
 |:--------------------|:---------------------------------------------------------|
 |委托（工作或学校帐户） | User.Read.All、User.ReadWrite.All    |
 |委托（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -38,7 +38,11 @@ ms.locfileid: "42453294"
 GET /users/{userId}/settings/shiftPreferences
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="optional-query-parameters"></a>可选的查询参数
+
+此方法不支持 OData 查询参数来自定义响应。
+
+## <a name="request-headers"></a>请求头
 
 | 标头       | 值 |
 |:---------------|:--------|

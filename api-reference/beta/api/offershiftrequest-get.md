@@ -5,16 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c1ae04f4e2cd97cca0ad0f7c7719c4f1b6d4b5c5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 20bfcafa501872e84d91549b3723029298119add
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456586"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44153542"
 ---
 # <a name="get-offershiftrequest"></a>获取 offerShiftRequest
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42456586"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.Read.All、Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Schedule. All *、schedule、all* |
+| Application                            | Schedule. All *、schedule、all* |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
@@ -37,14 +37,14 @@ ms.locfileid: "42456586"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/schedule/offerShiftRequests
+GET /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法不支持 OData 查询参数来自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -71,7 +71,7 @@ GET /teams/schedule/offerShiftRequests
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/schedule/offerShiftRequests
+GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-offershiftrequest-csharp-snippets.md)]

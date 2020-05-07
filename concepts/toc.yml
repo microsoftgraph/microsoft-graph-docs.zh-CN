@@ -457,10 +457,18 @@ items:
             href: sdks/sdk-installation.md
           - name: 创建客户端
             href: sdks/create-client.md
+          - name: 自定义客户端
+            href: sdks/customize-client.md
           - name: 选择验证提供程序
             href: sdks/choose-authentication-providers.md
           - name: 创建请求
             href: sdks/create-requests.md
+          - name: 逐页浏览集合
+            href: sdks/paging.md
+          - name: 创建批处理请求
+            href: sdks/batch-requests.md
+          - name: 上传大文件
+            href: sdks/large-file-upload.md
       - name: 使用工具包
         items:
           - name: 工具包概述

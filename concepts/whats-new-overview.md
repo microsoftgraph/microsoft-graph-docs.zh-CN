@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 105845810acb96082dbc213f8d26ab98d96f9e57
-ms.sourcegitcommit: fe3cb0e47920467324ddcf0773354349e3612d4f
+ms.openlocfilehash: f338ec702f25893a9d1ea509ed68abdc266da904
+ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "43850012"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43991794"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -27,6 +27,7 @@ ms.locfileid: "43850012"
   - 对于每个**日历**，指定允许的和默认的在线会议提供程序。
   - 创建或更新[事件](/graph/api/resources/event?view=graph-rest-1.0)以使其在线可用，并提供详细信息供与会者加入在线会议。 
   - 具体来说，使用**事件**的新 **onlineMeetingProvider** 和 **onlineMeeting** 属性来将 Microsoft Teams 设置或标识为在线会议提供程序，这是 **onlineMeetingUrl** 属性的[已知问题](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams)的解决方法。
+- 将[高达 150MB 的文件附件](outlook-large-attachments.md)添加到[event](/graph/api/resources/event?view=graph-rest-1.0)。
 
 ### <a name="files"></a>文件
 - [签出](/graph/api/driveitem-checkout?view=graph-rest-1.0)或[签入](/graph/api/driveitem-checkin?view=graph-rest-1.0)文件到 OneDrive，以管理更新文件并在更新就绪后向其他人提供更新。
@@ -34,6 +35,12 @@ ms.locfileid: "43850012"
 ### <a name="identity-and-access"></a>身份和访问控制
 - 若要在基于角色的访问控制（RBAC）提供程序中管理角色并分配资源访问权限，请使用 [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-1.0)。 **unifiedRoleAssignmentMultiple** 资源支持在一系列作用域中定义单个角色，并将该角色分配给多个主体（例如用户）。
 - 使用 `/policies` URL 段并指定策略类型，访问[组织的特定类型的策略](/graph/api/resources/policy-overview?view=graph-rest-1.0)。 例如，组织可以强制实施 Web 会话在一段时间不活动后自动从该会话注销用户的策略；请参阅 [activityBasedTimeoutPolicy](/graph/api/resources/activitybasedtimeoutpolicy?view=graph-rest-1.0) 的实例的 CRUD 操作。 这是一项[重大更改](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-1.0/)，可以通过对 `/policies` 段下所有类型的策略进行分组，以便更易于发现所有策略。 采用类似的方法访问其他类型的策略：[claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-1.0)、[homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-1.0)、[tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-1.0) 和 [tokenIssuancePolicy](/graph/api/resources/tokenissuancetimepolicy?view=graph-rest-1.0)。 
+
+### <a name="mail"></a>邮件
+向 [message](/graph/api/resources/message?view=graph-rest-1.0) 添加了[高达 150MB 的文件附件](outlook-large-attachments.md)。
+
+### <a name="sites-and-lists"></a>站点和列表
+[列出站点](/graph/api/sites-list-followed?view=graph-rest-1.0)，这些站点时已登录用户关注的。
 
 ## <a name="april-2020-new-in-preview-only"></a>2020 年 4 月：仅限预览版中的新增功能
 

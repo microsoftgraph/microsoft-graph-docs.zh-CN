@@ -5,16 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9161dc5c6c39102449509546095d90fff045e108
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1c8fce3ac07c0ffbdb70deb09adfcc77f0a66a70
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453042"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154365"
 ---
 # <a name="list-swapshiftschangerequest"></a>列出 swapShiftsChangeRequest
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42453042"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | Schedule. All *、schedule、all*  |
+| Application | Schedule. All *、schedule、all*  |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
@@ -37,14 +37,14 @@ ms.locfileid: "42453042"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/swapShiftsChangeRequests
+GET /teams/{teamId}/schedule/swapShiftsChangeRequests
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -71,7 +71,7 @@ GET /teams/{id}/schedule/swapShiftsChangeRequests
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/{id}/schedule/swapShiftsChangeRequests
+GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/swapShiftsChangeRequests
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-swapshiftschangerequest-csharp-snippets.md)]

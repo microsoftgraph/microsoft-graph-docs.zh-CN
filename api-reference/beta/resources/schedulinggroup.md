@@ -4,13 +4,13 @@ description: 计划中成员的逻辑分组（通常按角色）。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-doc_type: resourcePageType_
-ms.openlocfilehash: 6d32bcb2e480fe0589368ce06a995e3590f6b82e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+doc_type: resourcePageType
+ms.openlocfilehash: eebae02a4d6e1b238f9255312f036f46aae5af9a
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520961"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154120"
 ---
 # <a name="schedulinggroup-resource-type"></a>schedulingGroup 资源类型
 

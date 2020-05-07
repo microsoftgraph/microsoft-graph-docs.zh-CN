@@ -1,26 +1,26 @@
 ---
 title: 删除 timeOffReason
-description: 通过设置 isActive 属性将 timeOffReason 标记为非活动状态
-author: nkramer
+description: 通过设置 isActive 属性将 timeOffReason 标记为非活动状态。
+author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b33b6ff6b91923e6821f9e4ae8a0aa8043373f4a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1e71e976167b94d144037d93bf9bb3dff59cc5b7
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452300"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44154421"
 ---
 # <a name="delete-timeoffreason"></a>删除 timeOffReason
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过设置**isActive**属性将[timeOffReason](../resources/timeoffreason.md)标记为非活动状态。
+通过设置**isActive**属性将[timeOffReason](../resources/timeoffreason.md)标记为非活动状态。 每个团队必须至少包含一个**timeOffReason**。
 
-此方法不会删除指定的[timeOffReason](../resources/timeoffreason.md)实例。 已分配此原因的[timeOffItem](../resources/timeoffitem.md)实例仍将被分配给此原因。
+此方法不会删除指定的**timeOffReason**实例。 已分配此原因的[timeOffItem](../resources/timeoffitem.md)实例仍将被分配给此原因。
 
 ## <a name="permissions"></a>权限
 
@@ -30,7 +30,7 @@ ms.locfileid: "42452300"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 计划的所有写。 * |
+|Application | 计划的所有写。 * |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
