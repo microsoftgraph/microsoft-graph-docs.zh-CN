@@ -312,7 +312,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: 发送邮件
                   href: api/user-sendmail.md
-            - name: 备注
+            - name: 注释
               href: resources/onenote.md
               items:
                 - name: 创建笔记本
@@ -7902,7 +7902,7 @@
                           href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                         - name: 列表
                           href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                        - name: 删除
+                        - name: Delete
                           href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                     - name: 设备管理脚本
                       href: resources/intune-shared-devicemanagementscript.md
@@ -9429,7 +9429,7 @@
                       href: api/orgcontact-get-manager.md
                     - name: 获取成员对象
                       href: api/orgcontact-getmemberobjects.md
-            - name: Policy
+            - name: 策略
               href: resources/policy-overview.md
               items:
                 - name: 基于活动的超时策略
@@ -11171,7 +11171,7 @@
                       href: api/openshift-get.md
                     - name: 更新
                       href: api/openshift-update.md
-                    - name: 删除
+                    - name: Delete
                       href: api/openshift-delete.md
                 - name: 打开班次轮换更改请求
                   href: resources/openshiftchangerequest.md
@@ -11237,8 +11237,6 @@
                   items:
                     - name: 获取
                       href: api/timeoffrequest-get.md
-                    - name: 更新
-                      href: api/timeoffrequest-update.md
                     - name: 删除
                       href: api/timeoffrequest-delete.md
                     - name: 批准
@@ -11292,7 +11290,7 @@
                   href: api/outlooktask-get.md
                 - name: 更新
                   href: api/outlooktask-update.md
-                - name: 删除
+                - name: Delete
                   href: api/outlooktask-delete.md
                 - name: 完全
                   href: api/outlooktask-complete.md
@@ -11311,7 +11309,7 @@
                   href: api/outlooktaskfolder-get.md
                 - name: 更新
                   href: api/outlooktaskfolder-update.md
-                - name: 删除
+                - name: Delete
                   href: api/outlooktaskfolder-delete.md
                 - name: 在文件夹中列出任务
                   href: api/outlooktaskfolder-list-tasks.md
@@ -11328,7 +11326,7 @@
                   href: api/outlooktaskgroup-get.md
                 - name: 更新
                   href: api/outlooktaskgroup-update.md
-                - name: 删除
+                - name: Delete
                   href: api/outlooktaskfolder-delete.md
                 - name: 在组中列出任务文件夹
                   href: api/outlooktaskfolder-list-tasks.md

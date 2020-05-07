@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 083f6c8c50c88aa2c1000d5c23613601a6c7c08e
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 1c1b88aa3ec7d1bb752035277cd90dec9a99cecb
+ms.sourcegitcommit: df2c52f84aae5d4fed641d7411ba547371f0eaad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35734432"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44055562"
 ---
 ```javascript
 
@@ -24,7 +24,9 @@ const permission = {
   message: "Here's the file that we're collaborating on.",
   requireSignIn: true,
   sendInvitation: true,
-  roles: [ "write" ]
+  roles: [ "write" ],
+  password: "password123",
+  expirationDateTime: "2018-07-15T14:00:00.000Z"
 };
 
 let res = await client.api('/me/drive/items/{item-id}/invite')
