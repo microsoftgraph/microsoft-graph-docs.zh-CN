@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4eaacea812417af2429b1da8784197945d01bc4b
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: d9b9e4149f05825e6698703457aeb4b7709382a7
+ms.sourcegitcommit: 5d4bf35774eba6de21f4252b46f7e9d8f64a517f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916821"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44168562"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>conditionalAccessConditionSet 资源类型
 
@@ -26,14 +26,20 @@ ms.locfileid: "43916821"
 |:-------------|:------------|:------------|
 |来说|[conditionalAccessApplications](conditionalaccessapplications.md)| 策略中包含和排除的应用程序和用户操作。 必需。 |
 |users|[conditionalAccessUsers](conditionalaccessusers.md)| 策略中包含和排除的用户、组和角色。 必需。 |
-|clientAppTypes|String 集合| 策略中包含的客户端应用程序类型。 可取值为：`browser`、`modern`、`easSupported`、`easUnsupported`、`other`。|
+|clientAppTypes|字符串集合| 策略中包含的客户端应用程序类型。 可取值为：`all`、`browser`、`mobileAppsAndDesktopClients`、`exchangeActiveSync`、`easSupported`、`other`。|
 |deviceStates|[conditionalAccessDeviceStates](conditionalaccessdevicestates.md)| 策略中的设备状态。 |
 |驱动器|[conditionalAccessDevices](conditionalaccessdevices.md)| 策略中的设备。 |
 |位置|[conditionalAccessLocations](conditionalaccesslocations.md)| 策略中包含和排除的位置。 |
 |平台|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| 策略中包含和排除的平台。 |
-|signInRiskLevels|String 集合| 策略中包括的风险级别。 可取值为：`low`、`medium`、`high`、`none`。|
+|signInRiskLevels|字符串集合| 策略中包括的风险级别。 可取值为：`low`、`medium`、`high`、`none`。|
 
->**注意：** 我们正在弃用**deviceStates**条件，将来可能会将其删除。 接下来，使用 "**设备**" 条件。
+>**注意：** 
+
+>**clientAppType** `modern`即将弃用，并将替换为`mobileAppsAndDesktopClients`。 
+
+>**clientAppType** `easUnsupported`将被弃用， `exchangeActiveSync`其中包括 EAS 支持和不受支持的平台。 
+
+>我们正在弃用**deviceStates**条件，将来可能会将其删除。 接下来，使用 "**设备**" 条件。
 
 ## <a name="relationships"></a>关系
 

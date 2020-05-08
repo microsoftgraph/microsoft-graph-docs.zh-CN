@@ -5,16 +5,18 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8b3eac903bee65832ca933bb09abb152bdee504e
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 0c2aece1632ed2ebd59def7e8bd00e56ec5676c0
+ms.sourcegitcommit: 5d4bf35774eba6de21f4252b46f7e9d8f64a517f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123970"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44168550"
 ---
 # <a name="group-unsubscribebymail"></a>组：unsubscribeByMail
 
-命名空间： microsoft. 调用此方法的图形将阻止当前用户接收该组的新帖子、事件和文件的电子邮件通知。 仅支持 Office 365 组。 
+命名空间：microsoft.graph
+
+调用此方法将阻止当前用户接收有关该组中新帖子、活动和文件的电子邮件通知。仅支持 Office 365 组。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

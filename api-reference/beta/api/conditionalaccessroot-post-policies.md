@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c2540264f083f30b835ed14340f5af964afeba3c
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: c6ecc51d169341273a0093f86e7e4c2f0f7bf230
+ms.sourcegitcommit: 5d4bf35774eba6de21f4252b46f7e9d8f64a517f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916468"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44168506"
 ---
 # <a name="create-conditionalaccesspolicy"></a>创建 conditionalAccessPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "43916468"
 |:--------------------------------------|:---------------------------------------------------------------|
 |委派（工作或学校帐户）     | Policy. All、ConditionalAccess 和 Application。 Read. All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 不支持。 |
+|Application                            | 不支持。 |
 
 > [!NOTE]
 > 此 API 存在与权限相关的[已知问题](/graph/known-issues#permissions)。
@@ -63,7 +63,7 @@ POST /identity/conditionalAccess/policies
 ### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a>示例1：要求进行 MFA 以在受信任位置之外访问 Exchange Online
 
 #### <a name="request"></a>请求
-下面的示例显示了要求对来自特定组的受信任位置之外的浏览器或新式 auth 客户端访问 Exchange Online 的多因素身份验证的常见请求。
+下面的示例显示了要求对来自特定组的受信任位置之外的新式身份验证客户端访问 Exchange Online 的多因素身份验证的常见请求。
 
 >**注意：** 在使用此操作之前，您必须设置受信任位置。
 
@@ -83,7 +83,7 @@ Content-type: application/json
     "state": "enabled",
     "conditions": {
         "clientAppTypes": [
-            "modern",
+            "mobileAppsAndDesktopClients",
             "browser"
         ],
         "applications": {
@@ -128,7 +128,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- {
   "blockType": "response",
@@ -151,7 +151,7 @@ Content-type: application/json
     "conditions": {
         "signInRiskLevels": [],
         "clientAppTypes": [
-            "modern",
+            "mobileAppsAndDesktopClients",
             "browser"
         ],
         "platforms": null,
@@ -213,11 +213,7 @@ Content-type: application/json
     "state": "enabled",
     "conditions": {
         "clientAppTypes": [
-            "modern",
-            "browser",
-            "easSupported",
-            "easUnsupported",
-            "other"
+            "all"
         ],
         "applications": {
             "includeApplications": [
@@ -244,7 +240,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- {
   "blockType": "response",
@@ -267,11 +263,7 @@ Content-type: application/json
     "conditions": {
         "signInRiskLevels": [],
         "clientAppTypes": [
-            "modern",
-            "browser",
-            "easSupported",
-            "easUnsupported",
-            "other"
+            "all"
         ],
         "platforms": null,
         "deviceStates": null,
@@ -332,9 +324,8 @@ Content-type: application/json
             "medium"
         ],
         "clientAppTypes": [
-            "modern",
-            "easSupported",
-            "easUnsupported",
+            "mobileAppsAndDesktopClients",
+            "exchangeActiveSync",
             "other"
         ],
         "applications": {
@@ -431,7 +422,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- {
   "blockType": "response",
@@ -456,9 +447,8 @@ Content-type: application/json
             "medium"
         ],
         "clientAppTypes": [
-            "modern",
-            "easSupported",
-            "easUnsupported",
+            "mobileAppsAndDesktopClients",
+            "exchangeActiveSync",
             "other"
         ],
         "applications": {
@@ -624,7 +614,9 @@ Content-type: application/json
     "conditions": {
         "userRiskLevels": [],
         "signInRiskLevels": [],
-        "clientAppTypes": [],
+        "clientAppTypes": [
+            "all"
+        ],
         "platforms": null,
         "locations": null,
         "times": null,

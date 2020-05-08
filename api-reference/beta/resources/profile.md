@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 8b398ee8b0dbe14570f4ae59c71372502f3d0565
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 2e378229e8b001070db274c812cdb307934717cf
+ms.sourcegitcommit: 5d4bf35774eba6de21f4252b46f7e9d8f64a517f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43227689"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44168572"
 ---
 # <a name="profile-resource-type"></a>配置文件资源类型
 
@@ -18,7 +18,9 @@ ms.locfileid: "43227689"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示租户中人员的描述性属性。 这些属性在跨 Microsoft 365 和第三方服务的共享人员体验和通过 Microsoft Graph 的体验中呈现。 
+表示对租户中的用户进行描述性的属性，例如，周年纪念和教育活动。 这些属性在跨 Microsoft 365 和第三方服务的共享人员体验和通过 Microsoft Graph 的体验中呈现。 
+
+以编程方式，这些属性表示为**配置文件**资源的[关系](#relationships)。 若要获取这些导航属性之一或为用户创建这些属性的实例，请对该属性使用相应的 GET 或 POST 方法（如果适用）。 请参阅下面列出的[方法](#methods)。
 
 ## <a name="methods"></a>方法
 
@@ -57,7 +59,7 @@ ms.locfileid: "43227689"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id            |String       | 只读。  |
+|id            |字符串       | 只读。  |
 
 ## <a name="relationships"></a>关系
 
@@ -91,6 +93,12 @@ ms.locfileid: "43227689"
 }-->
 
 ```json
+{
+    "id": "String (identifier)"
+}
+```
+
+<!--
 {
     "id": "profileId",
     "anniversaries": [],
@@ -326,7 +334,8 @@ ms.locfileid: "43227689"
     ],
     "webAccounts": []
 }
-```
+-->
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

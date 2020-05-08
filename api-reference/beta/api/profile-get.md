@@ -5,20 +5,22 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: d0bc20c6e83f8f2bd9e67268eb9471d84bbdcb16
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fd6c68f79ffb417b12eb1f8e28d874f4461fb24e
+ms.sourcegitcommit: 5d4bf35774eba6de21f4252b46f7e9d8f64a517f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455240"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44168552"
 ---
 # <a name="get-profile"></a>获取配置文件
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索给定用户的[配置文件](../resources/profile.md)对象的属性和关系。
+
+**配置文件**资源公开了将用户描述为[关系](../resources/profile.md#relationships)的各种丰富的属性，例如，周年纪念和教育活动。 若要获取这些导航属性之一，请对该属性使用相应的 GET 方法。 请参阅由**profile**公开的[方法](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +30,7 @@ ms.locfileid: "42455240"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。                              |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用程序                            | 不支持。                              |
+| Application                            | 不支持。                              |
 
 ## <a name="http-request"></a>HTTP 请求
 
