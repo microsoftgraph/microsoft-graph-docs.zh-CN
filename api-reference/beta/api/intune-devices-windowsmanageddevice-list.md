@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ca68256c5a9c187c33371fa2cb4301517bf328f1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e1476a6db0308546cd2f7771e00f8ac11c7fa0ed
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43321746"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44175908"
 ---
 # <a name="list-windowsmanageddevices"></a>列出 windowsManagedDevices
 
@@ -29,7 +29,7 @@ ms.locfileid: "43321746"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8509
+Content-Length: 8628
 
 {
   "value": [
@@ -108,7 +108,8 @@ Content-Length: 8509
         "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
         "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
         "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
-        "osBuildNumber": "Os Build Number value"
+        "osBuildNumber": "Os Build Number value",
+        "operatingSystemProductType": 10
       },
       "ownerType": "company",
       "managedDeviceOwnerType": "company",
@@ -247,7 +248,9 @@ Content-Length: 8509
       "ethernetMacAddress": "Ethernet Mac Address value",
       "physicalMemoryInBytes": 5,
       "processorArchitecture": "x86",
-      "specificationVersion": "Specification Version value"
+      "specificationVersion": "Specification Version value",
+      "joinType": "azureADJoined",
+      "skuFamily": "Sku Family value"
     }
   ]
 }

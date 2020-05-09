@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 60276dd6bbfd3d7359d50eda398c0f16ea690fad
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ec76020364ee73e173804a47acd29c5225af17cf
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436238"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178722"
 ---
 # <a name="update-androiddeviceownergeneraldeviceconfiguration"></a>更新 androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "43436238"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -57,13 +57,13 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |accountsBlockModification|Boolean|指示是否禁用添加或删除帐户。|
@@ -76,20 +76,22 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |cameraBlocked|Boolean|指示是否禁用相机的使用。|
 |cellularBlockWiFiTethering|Boolean|指示是否阻止 Wi-Fi 网络共享。|
 |certificateCredentialConfigurationDisabled|Boolean|指示是否阻止来自任何证书凭据配置的用户。|
+|microsoftLauncherConfigurationEnabled|Boolean|指示是否要配置 Microsoft 启动器。|
+|enrollmentProfile|[androidDeviceOwnerEnrollmentProfileType](../resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md)|指示要配置的注册配置文件。 可取值为：`notConfigured`、`dedicatedDevice`、`fullyManaged`。|
 |dataRoamingBlocked|Boolean|指示是否阻止用户使用数据漫游。|
 |dateTimeConfigurationBlocked|Boolean|指示是否阻止用户手动更改设备上的日期或时间|
-|factoryResetDeviceAdministratorEmails|String 集合|在设备出厂重置之前，将需要进行身份验证的 Google 帐户电子邮件的列表，然后才能对其进行设置。|
+|factoryResetDeviceAdministratorEmails|字符串集合|在设备出厂重置之前，将需要进行身份验证的 Google 帐户电子邮件的列表，然后才能对其进行设置。|
 |factoryResetBlocked|Boolean|指示是否禁用了 "设置" 中的 "恢复出厂设置" 选项。|
 |globalProxy|[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|代理是与主机、端口和已排除的主机直接建立的。|
 |googleAccountsBlocked|Boolean|指示是否将阻止 google 帐户。|
 |kioskModeScreenSaverConfigurationEnabled|Boolean|是否启用屏幕保护程序模式或不启用展台模式。|
-|kioskModeScreenSaverImageUrl|String|将作为展台模式下设备的屏幕保护程序的图像的 URL。|
+|kioskModeScreenSaverImageUrl|字符串|将作为展台模式下设备的屏幕保护程序的图像的 URL。|
 |kioskModeScreenSaverDisplayTimeInSeconds|Int32|设备将在展台模式下显示屏幕保护程序的秒数。 有效值为0至9999999|
 |kioskModeScreenSaverStartDelayInSeconds|Int32|在 Kiosk 模式下显示屏幕保护程序之前设备需要保持非活动状态的秒数。 有效值为1至9999999|
 |kioskModeScreenSaverDetectMediaDisabled|Boolean|如果音频/视频在展台模式下播放，则设备屏幕是否应显示屏幕保护程序。|
 |kioskModeApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|设备处于展台模式时将显示的托管应用列表。 该集合最多可包含 500 个元素。|
-|kioskModeWallpaperUrl|String|在设备处于展台模式时用于墙纸的可公开访问图像的 URL。|
-|kioskModeExitCode|String|退出代码，以允许用户在设备处于展台模式时从展台模式中进行转义。|
+|kioskModeWallpaperUrl|字符串|在设备处于展台模式时用于墙纸的可公开访问图像的 URL。|
+|kioskModeExitCode|字符串|退出代码，以允许用户在设备处于展台模式时从展台模式中进行转义。|
 |kioskModeVirtualHomeButtonEnabled|Boolean|设备处于展台模式时是否显示虚拟 "主页" 按钮。|
 |kioskModeVirtualHomeButtonType|[androidDeviceOwnerVirtualHomeButtonType](../resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)|指示虚拟 home 按钮是否为向上轻扫主页按钮或浮动主页按钮。 可取值为：`notConfigured`、`swipeUp`、`floating`。|
 |kioskModeBluetoothConfigurationEnabled|Boolean|是否允许用户在展台模式下配置蓝牙设置。|
@@ -131,7 +133,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |usersBlockRemove|Boolean|指示是否禁用从设备中删除其他用户。|
 |volumeBlockAdjustment|Boolean|指示是否禁用了调整主音量。|
 |vpnAlwaysOnLockdownMode|Boolean|如果指定了 always on VPN 包名称，则在断开 VPN 连接时是否锁定网络流量。|
-|vpnAlwaysOnPackageIdentifier|String|将处理永不启用 VPN 连接的应用程序的 Android 应用程序包名称。|
+|vpnAlwaysOnPackageIdentifier|字符串|将处理永不启用 VPN 连接的应用程序的 Android 应用程序包名称。|
 |wifiBlockEditConfigurations|Boolean|指示是否阻止用户编辑 wifi 连接设置。|
 |wifiBlockEditPolicyDefinedConfigurations|Boolean|指示是否阻止用户仅编辑策略定义的网络。|
 
@@ -147,7 +149,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 4374
+Content-length: 4467
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -189,6 +191,8 @@ Content-length: 4374
   "cameraBlocked": true,
   "cellularBlockWiFiTethering": true,
   "certificateCredentialConfigurationDisabled": true,
+  "microsoftLauncherConfigurationEnabled": true,
+  "enrollmentProfile": "dedicatedDevice",
   "dataRoamingBlocked": true,
   "dateTimeConfigurationBlocked": true,
   "factoryResetDeviceAdministratorEmails": [
@@ -272,7 +276,7 @@ Content-length: 4374
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4546
+Content-Length: 4639
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -317,6 +321,8 @@ Content-Length: 4546
   "cameraBlocked": true,
   "cellularBlockWiFiTethering": true,
   "certificateCredentialConfigurationDisabled": true,
+  "microsoftLauncherConfigurationEnabled": true,
+  "enrollmentProfile": "dedicatedDevice",
   "dataRoamingBlocked": true,
   "dateTimeConfigurationBlocked": true,
   "factoryResetDeviceAdministratorEmails": [

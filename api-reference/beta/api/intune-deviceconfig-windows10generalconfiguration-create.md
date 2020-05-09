@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3fc8154a25803c79c16f4b8a47b856199010be6b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8fb7960056a9f23f69b6ba9c48d7a47078908019
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43431076"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179072"
 ---
 # <a name="create-windows10generalconfiguration"></a>创建 windows10GeneralConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "43431076"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -56,13 +56,13 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |taskManagerBlockEndTask|Boolean|指定非管理员是否可以使用任务管理器结束任务。|
@@ -81,22 +81,22 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|控制 Microsoft 帐户登录助手（wlidsvc） NT 服务。 可取值为：`notConfigured`、`disabled`。|
 |authenticationAllowSecondaryDevice|Boolean|允许辅助身份验证设备使用 Windows。|
 |authenticationWebSignIn|[启用](../resources/intune-shared-enablement.md)|指示是否将启用 Web 凭据提供程序。 可取值为：`notConfigured`、`enabled`、`disabled`。|
-|authenticationPreferredAzureADTenantDomainName|String|指定 Azure AD 租户中可用域之间的首选域。|
+|authenticationPreferredAzureADTenantDomainName|字符串|指定 Azure AD 租户中可用域之间的首选域。|
 |cryptographyAllowFipsAlgorithmPolicy|Boolean|指定是否允许或禁止联邦信息处理标准（FIPS）策略。|
-|displayAppListWithGdiDPIScalingTurnedOn|String 集合|启用了 GDI DPI 缩放的旧版应用程序的列表。|
-|displayAppListWithGdiDPIScalingTurnedOff|String 集合|启用了 GDI DPI 缩放的旧版应用程序的列表。|
-|enterpriseCloudPrintDiscoveryEndPoint|String|发现云打印机的终结点。|
-|enterpriseCloudPrintOAuthAuthority|String|获取 OAuth 令牌的身份验证终结点。|
-|enterpriseCloudPrintOAuthClientIdentifier|String|被授权从 OAuth 机构检索 OAuth 令牌的客户端应用程序的 GUID。|
-|enterpriseCloudPrintResourceIdentifier|String|在 Azure 门户中配置的用于打印服务的 OAuth 资源 URI。|
+|displayAppListWithGdiDPIScalingTurnedOn|字符串集合|启用了 GDI DPI 缩放的旧版应用程序的列表。|
+|displayAppListWithGdiDPIScalingTurnedOff|字符串集合|启用了 GDI DPI 缩放的旧版应用程序的列表。|
+|enterpriseCloudPrintDiscoveryEndPoint|字符串|发现云打印机的终结点。|
+|enterpriseCloudPrintOAuthAuthority|字符串|获取 OAuth 令牌的身份验证终结点。|
+|enterpriseCloudPrintOAuthClientIdentifier|字符串|被授权从 OAuth 机构检索 OAuth 令牌的客户端应用程序的 GUID。|
+|enterpriseCloudPrintResourceIdentifier|字符串|在 Azure 门户中配置的用于打印服务的 OAuth 资源 URI。|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|应该从发现终结点查询的打印机最大数量。 此设置仅限移动设备。 有效值为 1 至 65535|
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|在 Azure 门户中配置的用于打印机发现服务的 OAuth 资源 URI。|
 |experienceDoNotSyncBrowserSettings|[browserSyncSetting](../resources/intune-deviceconfig-browsersyncsetting.md)|允许或阻止同步 Microsoft Edge 浏览器设置。 选项可供 IT 管理员阻止跨设备同步，但允许用户替代。 可取值为：`notConfigured`、`blockedWithUserOverride`、`blocked`。|
 |messagingBlockSync|Boolean|指示是否在所有位置阻止短信备份和还原和消息传递。|
 |messagingBlockMMS|Boolean|指示是否阻止设备上的 MMS 发送/接收功能。|
 |messagingBlockRichCommunicationServices|Boolean|指示是否阻止设备上的 RCS 发送/接收功能。|
-|printerNames|String 集合|根据打印机的名称（网络主机名称）自动预配打印机。|
-|printerDefaultName|String|已安装的打印机的名称（网络主机名称）。|
+|printerNames|字符串集合|根据打印机的名称（网络主机名称）自动预配打印机。|
+|printerDefaultName|字符串|已安装的打印机的名称（网络主机名称）。|
 |printerBlockAddition|Boolean|阻止用户安装来自打印机设置的其他打印机。|
 |searchBlockDiacritics|Boolean|指定搜索是否可以使用音调符号。|
 |searchDisableAutoLanguageDetection|Boolean|指定建立内容和属性索引时是否使用自动语言检测。|
@@ -112,14 +112,14 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |securityBlockAzureADJoinedDevicesAutoEncryption|Boolean|在设备已加入 Azure AD 时，指定是否允许在 OOBE 期间自动设备加密（仅限桌面）。|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|获取或设置允许设备发送诊断和使用遥测数据的值，如 Watson。 可取值为：`userDefined`、`none`、`basic`、`enhanced`、`full`。|
 |oneDriveDisableFileSync|Boolean|获取或设置一个值，允许 IT 管理员阻止应用和功能使用 OneDrive 上的文件。|
-|systemTelemetryProxyServer|String|获取或设置代理服务器的完全限定域名（FQDN）或 IP 地址，以转发连接的用户体验和遥测请求。|
+|systemTelemetryProxyServer|字符串|获取或设置代理服务器的完全限定域名（FQDN）或 IP 地址，以转发连接的用户体验和遥测请求。|
 |edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|指定将哪种类型的遥测数据（无、intranet、internet、两者）发送到 Microsoft 365 Analytics。 可取值为：`notConfigured`、`intranet`、`internet`、`intranetAndInternet`。|
 |inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|控制用户对墨迹工作区的访问权限，从桌面和锁定屏幕上。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|控制用户对墨迹工作区的访问权限，从桌面和锁定屏幕上。 可取值为：`notConfigured`、`blocked`、`allowed`。|
 |inkWorkspaceBlockSuggestedApps|Boolean|指定是否在墨迹工作区中显示建议的应用建议。|
 |smartScreenEnableAppInstallControl|Boolean|此属性将在7月2019中弃用，并将替换为属性 SmartScreenAppInstallControl。 允许 IT 管理员控制是否允许用户从应用商店以外的地方安装应用。|
 |smartScreenAppInstallControl|[appInstallControlType](../resources/intune-deviceconfig-appinstallcontroltype.md)|在 Windows 10 版本1703中添加。 允许 IT 管理员控制是否允许用户从应用商店以外的地方安装应用。 可取值为：`notConfigured`、`anywhere`、`storeOnly`、`recommendations`、`preferStore`。|
-|personalizationDesktopImageUrl|String|指向需要下载并用作桌面图像的 http 或 https URL，或指向需要用作桌面图像的文件系统上的本地图像的文件 URL。|
+|personalizationDesktopImageUrl|字符串|指向需要下载并用作桌面图像的 http 或 https URL，或指向需要用作桌面图像的文件系统上的本地图像的文件 URL。|
 |personalizationLockScreenImageUrl|String|指向需要下载并用作锁屏图像的 jpg、jpeg 或 png 图像的 http 或 https URL，或指向需要用作锁屏图像的文件系统上的本地图像的文件 URL。|
 |bluetoothAllowedServices|String 集合|以十六进制格式的字符串指定允许的蓝牙服务和配置文件的列表。|
 |bluetoothBlockAdvertising|Boolean|是否阻止用户使用蓝牙广告。|
@@ -142,14 +142,14 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |edgeDisableFirstRunPage|Boolean|阻止首次使用 Microsoft Edge 时打开的 Microsoft 网页。 此策略允许企业（如那些参与零排放配置的企业）阻止此页面。|
 |edgeBlockLiveTileDataCollection|Boolean|当用户将某个网站固定为从 Microsoft Edge 启动时，阻止 Microsoft 收集用于实时磁贴创建的信息。|
 |edgeSyncFavoritesWithInternetExplorer|Boolean|在 Internet Explorer 和 Microsoft Edge 之间启用收藏夹同步。 在浏览器之间共享对收藏夹的添加、删除、修改和顺序更改。|
-|edgeFavoritesListLocation|String|要设置的收藏夹列表的位置。 可能是本地文件、本地网络或 http 位置。|
+|edgeFavoritesListLocation|字符串|要设置的收藏夹列表的位置。 可能是本地文件、本地网络或 http 位置。|
 |edgeBlockEditFavorites|Boolean|指示是否阻止用户对收藏夹进行更改。|
-|edgeNewTabPageURL|String|指定在创建新选项卡时打开的页面。|
+|edgeNewTabPageURL|字符串|指定在创建新选项卡时打开的页面。|
 |edgeHomeButtonConfiguration|[edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)|使 Home 按钮可以隐藏、加载默认起始页、加载新的选项卡页或自定义 URL|
 |edgeHomeButtonConfigurationEnabled|Boolean|启用 "主页" 按钮配置。|
 |edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|指定在开始时打开的页面类型。 可取值为：`notConfigured`、`startPage`、`newTabPage`、`previousPages`、`specificPages`。|
 |edgeBlockSideloadingExtensions|Boolean|指示用户是否可以旁加载扩展。|
-|edgeRequiredExtensionPackageFamilyNames|String 集合|指定所需的浏览器扩展的程序包系列名称列表，用户无法关闭这些扩展。|
+|edgeRequiredExtensionPackageFamilyNames|字符串集合|指定所需的浏览器扩展的程序包系列名称列表，用户无法关闭这些扩展。|
 |edgeBlockPrinting|Boolean|将 Edge 配置为允许或阻止打印。|
 |edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|获取或设置一个值，该值指定是否将收藏夹栏设置为始终在任何页面上都可见或隐藏。 可取值为：`notConfigured`、`hide`、`show`。|
 |edgeBlockSavingHistory|Boolean|将 Edge 配置为允许保存浏览历史记录或从不保存浏览历史记录。|
@@ -164,42 +164,42 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |cellularBlockDataWhenRoaming|Boolean|是否阻止用户在漫游时通过手机网络使用数据。|
 |cellularBlockVpn|Boolean|是否阻止用户通过手机网络使用 VPN。|
 |cellularBlockVpnWhenRoaming|Boolean|通过手机网络漫游时是否阻止用户使用 VPN。|
-|cellularData|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|是否允许设备上的手机网络数据通道。 如果未配置，则允许手机网络数据通道，用户可以将其关闭。 可取值为：`blocked`、`required`、`allowed`。|
-|defenderBlockEndUserAccess|Boolean|是否阻止最终用户访问 Defender。|
-|defenderDaysBeforeDeletingQuarantinedMalware|Int32|删除隔离的恶意软件之前的天数。 有效值为 0 至 90|
-|defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|获取或设置要按威胁级别对检测到的恶意软件执行的 Defender 操作。|
-|defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Defender 进行系统扫描的星期几。 可取值为：`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`、`noScheduledScan`。|
-|defenderFilesAndFoldersToExclude|String 集合|要从扫描和实时保护中排除的文件和文件夹。|
-|defenderFileExtensionsToExclude|String 集合|要从扫描和实时保护中排除的文件扩展名。|
-|defenderScanMaxCpu|Int32|扫描期间最大 CPU 使用率。 有效值为 0 至 100|
-|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|监视文件活动的值。 可取值为：`userDefined`、`disable`、`monitorAllFiles`、`monitorIncomingFilesOnly`、`monitorOutgoingFilesOnly`。|
-|defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|获取或设置要对可能有害的应用程序（PUA）执行的 Defender 操作，其中包括具有广告注入行为的软件、软件捆绑软件绑定、付款或订阅的永久请求等。下载 PUA 或尝试自行安装时，Defender 会通知用户。 在 Windows 10 中添加的桌面。 可取值为：`deviceDefault`、`block`、`audit`。|
-|defenderPotentiallyUnwantedAppActionSetting|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|获取或设置要对可能有害的应用程序（PUA）执行的 Defender 操作，其中包括具有广告注入行为的软件、软件捆绑软件绑定、付款或订阅的永久请求等。下载 PUA 或尝试自行安装时，Defender 会通知用户。 在 Windows 10 中添加的桌面。 可取值为：`userDefined`、`enable`、`auditMode`。|
-|defenderProcessesToExclude|String 集合|要从扫描和实时保护中排除的进程。|
-|defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune-deviceconfig-defenderpromptforsamplesubmission.md)|如何提示用户提交样本的配置。 可取值为：`userDefined`、`alwaysPrompt`、`promptBeforeSendingPersonalData`、`neverSendData`、`sendAllDataWithoutPrompting`。|
-|defenderRequireBehaviorMonitoring|Boolean|指示是否需要行为监控。|
-|defenderRequireCloudProtection|Boolean|指示是否需要云保护。|
-|defenderRequireNetworkInspectionSystem|Boolean|指示是否需要网络检查系统。|
+|cellularData|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|是否允许设备上的手机网络数据通道。 如果未配置，则允许手机网络数据通道，用户可以将其关闭。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
 |defenderRequireRealTimeMonitoring|Boolean|指示是否需要实时监控。|
-|defenderScanArchiveFiles|Boolean|指示是否扫描存档文件。|
+|defenderRequireBehaviorMonitoring|Boolean|指示是否需要行为监控。|
+|defenderRequireNetworkInspectionSystem|Boolean|指示是否需要网络检查系统。|
 |defenderScanDownloads|Boolean|指示是否扫描下载内容。|
 |defenderScheduleScanEnableLowCpuPriority|Boolean|启用后，在计划扫描期间将使用较低的 CPU 优先级。|
 |defenderDisableCatchupQuickScan|Boolean|当被阻止时，将关闭计划快速扫描的追赶扫描。|
 |defenderDisableCatchupFullScan|Boolean|当被阻止时，计划的完全扫描的追赶扫描将被禁用。|
-|defenderScanNetworkFiles|Boolean|指示是否扫描从网络文件夹打开的文件。|
-|defenderScanIncomingMail|Boolean|指示是否扫描传入的邮件。|
-|defenderScanMappedNetworkDrivesDuringFullScan|Boolean|指示在全面扫描期间是否扫描映射的网络驱动器。|
-|defenderScanRemovableDrivesDuringFullScan|Boolean|指示在全面扫描期间是否扫描可移动驱动器。|
 |defenderScanScriptsLoadedInInternetExplorer|Boolean|指示是否扫描在 Internet Explorer 浏览器中加载的脚本。|
+|defenderBlockEndUserAccess|Boolean|是否阻止最终用户访问 Defender。|
 |defenderSignatureUpdateIntervalInHours|Int32|签名更新间隔（以小时为单位）。 指定 0 不检查。 有效值为 0 至 24|
-|defenderScanType|[defenderScanType](../resources/intune-deviceconfig-defenderscantype.md)|Defender 系统扫描类型。 可取值为：`userDefined`、`disabled`、`quick`、`full`。|
-|defenderScheduledScanTime|TimeOfDay|系统扫描的 Defender 时间。|
-|defenderScheduledQuickScanTime|TimeOfDay|执行每日快速扫描的时间。|
+|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|监视文件活动的值。 可取值为：`userDefined`、`disable`、`monitorAllFiles`、`monitorIncomingFilesOnly`、`monitorOutgoingFilesOnly`。|
+|defenderDaysBeforeDeletingQuarantinedMalware|Int32|删除隔离的恶意软件之前的天数。 有效值为 0 至 90|
+|defenderScanMaxCpu|Int32|扫描期间最大 CPU 使用率。 有效值为 0 至 100|
+|defenderScanArchiveFiles|Boolean|指示是否扫描存档文件。|
+|defenderScanIncomingMail|Boolean|指示是否扫描传入的邮件。|
+|defenderScanRemovableDrivesDuringFullScan|Boolean|指示在全面扫描期间是否扫描可移动驱动器。|
+|defenderScanMappedNetworkDrivesDuringFullScan|Boolean|指示在全面扫描期间是否扫描映射的网络驱动器。|
+|defenderScanNetworkFiles|Boolean|指示是否扫描从网络文件夹打开的文件。|
+|defenderRequireCloudProtection|Boolean|指示是否需要云保护。|
 |defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune-deviceconfig-defendercloudblockleveltype.md)|指定云提供的保护级别。 可取值为：`notConfigured`、`high`、`highPlus`、`zeroTolerance`。|
 |defenderCloudExtendedTimeout|Int32|云文件扫描的超时扩展。 有效值为 0 至 50|
 |defenderCloudExtendedTimeoutInSeconds|Int32|云文件扫描的超时扩展。 有效值为 0 至 50|
-|defenderBlockOnAccessProtection|Boolean|允许或禁止 Windows Defender 访问保护功能。|
+|defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune-deviceconfig-defenderpromptforsamplesubmission.md)|如何提示用户提交样本的配置。 可取值为：`userDefined`、`alwaysPrompt`、`promptBeforeSendingPersonalData`、`neverSendData`、`sendAllDataWithoutPrompting`。|
+|defenderScheduledQuickScanTime|TimeOfDay|执行每日快速扫描的时间。|
+|defenderScanType|[defenderScanType](../resources/intune-deviceconfig-defenderscantype.md)|Defender 系统扫描类型。 可取值为：`userDefined`、`disabled`、`quick`、`full`。|
+|defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Defender 进行系统扫描的星期几。 可取值为：`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`、`noScheduledScan`。|
+|defenderScheduledScanTime|TimeOfDay|系统扫描的 Defender 时间。|
+|defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|获取或设置要对可能有害的应用程序（PUA）执行的 Defender 操作，其中包括具有广告注入行为的软件、软件捆绑软件绑定、付款或订阅的永久请求等。下载 PUA 或尝试自行安装时，Defender 会通知用户。 在 Windows 10 中添加的桌面。 可取值为：`deviceDefault`、`block`、`audit`。|
+|defenderPotentiallyUnwantedAppActionSetting|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|获取或设置要对可能有害的应用程序（PUA）执行的 Defender 操作，其中包括具有广告注入行为的软件、软件捆绑软件绑定、付款或订阅的永久请求等。下载 PUA 或尝试自行安装时，Defender 会通知用户。 在 Windows 10 中添加的桌面。 可取值为：`userDefined`、`enable`、`auditMode`。|
 |defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md)|检查 Windows Defender 中的用户同意级别以发送数据。 可取值为：`sendSafeSamplesAutomatically`、`alwaysPrompt`、`neverSend`、`sendAllSamplesAutomatically`。|
+|defenderBlockOnAccessProtection|Boolean|允许或禁止 Windows Defender 访问保护功能。|
+|defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|获取或设置要按威胁级别对检测到的恶意软件执行的 Defender 操作。|
+|defenderFileExtensionsToExclude|字符串集合|要从扫描和实时保护中排除的文件扩展名。|
+|defenderFilesAndFoldersToExclude|字符串集合|要从扫描和实时保护中排除的文件和文件夹。|
+|defenderProcessesToExclude|String 集合|要从扫描和实时保护中排除的进程。|
 |lockScreenAllowTimeoutConfiguration|Boolean|指定是否在 Windows 10 移动版设备的锁定屏幕上显示用户可配置设置以控制屏幕超时。 如果此策略设置为 Allow，则由 lockScreenTimeoutInSeconds 设置的值将被忽略。|
 |lockScreenBlockActionCenterNotifications|Boolean|指示在锁定屏幕上是否阻止操作中心通知。|
 |lockScreenBlockCortana|Boolean|指示系统锁定时用户是否可以使用语音与 Cortana 进行交互。|
@@ -293,7 +293,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|指示是否将 intranet 流量从边缘切换到 Internet Explorer。 注意：此属性的名称是误导性的;属性已过时，请改用 EdgeSendIntranetTrafficToInternetExplorer。|
 |edgeSendIntranetTrafficToInternetExplorer|Boolean|指示是否将 intranet 流量从边缘切换到 Internet Explorer。|
 |edgeRequireSmartScreen|Boolean|指示是否要求用户使用智能屏蔽筛选器。|
-|edgeEnterpriseModeSiteListLocation|String|指示企业模式站点列表位置。 可能是本地文件、本地网络或 http 位置。|
+|edgeEnterpriseModeSiteListLocation|字符串|指示企业模式站点列表位置。 可能是本地文件、本地网络或 http 位置。|
 |edgeFirstRunUrl|String|第一次打开 Edge 浏览器时的首个运行 URL。|
 |edgeSearchEngine|[edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)|允许 IT 管理员为 MDM 控制的设备设置默认搜索引擎。 如果未设置 AllowSearchEngineCustomization 策略，则用户可以替代此设置并更改其默认搜索引擎。|
 |edgeHomepageUrls|String 集合|Edge 浏览器上 MDM 注册设备上的主页 URL 列表。|
@@ -344,9 +344,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |appManagementMSIAllowUserControlOverInstall|Boolean|此策略设置允许用户更改通常仅供系统管理员使用的安装选项。|
 |appManagementMSIAlwaysInstallWithElevatedPrivileges|Boolean|此策略设置指示 Windows Installer 在系统上安装任何程序时使用提升的权限。|
 |dataProtectionBlockDirectMemoryAccess|Boolean|通过此策略设置，您可以阻止所有热插拔 PCI 下游端口的直接内存访问（DMA），直到用户登录 Windows。|
-|appManagementPackageFamilyNamesToLaunchAfterLogOn|String 集合|Windows 应用的以分号分隔的程序包系列名称的列表。 登录后将启动列出的 Windows 应用。|
+|appManagementPackageFamilyNamesToLaunchAfterLogOn|字符串集合|Windows 应用的以分号分隔的程序包系列名称的列表。 登录后将启动列出的 Windows 应用。|
 |uninstallBuiltInApps|Boolean|指示是否卸载内置 Windows 应用的固定列表。|
-|configureTimeZone|String|指定要应用于设备的时区。 这是目标时区的标准 Windows 名称。|
+|configureTimeZone|字符串|指定要应用于设备的时区。 这是目标时区的标准 Windows 名称。|
 
 
 
@@ -509,8 +509,37 @@ Content-length: 15009
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
   "cellularData": "required",
+  "defenderRequireRealTimeMonitoring": true,
+  "defenderRequireBehaviorMonitoring": true,
+  "defenderRequireNetworkInspectionSystem": true,
+  "defenderScanDownloads": true,
+  "defenderScheduleScanEnableLowCpuPriority": true,
+  "defenderDisableCatchupQuickScan": true,
+  "defenderDisableCatchupFullScan": true,
+  "defenderScanScriptsLoadedInInternetExplorer": true,
   "defenderBlockEndUserAccess": true,
+  "defenderSignatureUpdateIntervalInHours": 6,
+  "defenderMonitorFileActivity": "disable",
   "defenderDaysBeforeDeletingQuarantinedMalware": 12,
+  "defenderScanMaxCpu": 2,
+  "defenderScanArchiveFiles": true,
+  "defenderScanIncomingMail": true,
+  "defenderScanRemovableDrivesDuringFullScan": true,
+  "defenderScanMappedNetworkDrivesDuringFullScan": true,
+  "defenderScanNetworkFiles": true,
+  "defenderRequireCloudProtection": true,
+  "defenderCloudBlockLevel": "high",
+  "defenderCloudExtendedTimeout": 12,
+  "defenderCloudExtendedTimeoutInSeconds": 5,
+  "defenderPromptForSampleSubmission": "alwaysPrompt",
+  "defenderScheduledQuickScanTime": "11:58:49.3840000",
+  "defenderScanType": "disabled",
+  "defenderSystemScanSchedule": "everyday",
+  "defenderScheduledScanTime": "11:59:10.9990000",
+  "defenderPotentiallyUnwantedAppAction": "block",
+  "defenderPotentiallyUnwantedAppActionSetting": "enable",
+  "defenderSubmitSamplesConsentType": "alwaysPrompt",
+  "defenderBlockOnAccessProtection": true,
   "defenderDetectedMalwareActions": {
     "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
     "lowSeverity": "clean",
@@ -518,44 +547,15 @@ Content-length: 15009
     "highSeverity": "clean",
     "severeSeverity": "clean"
   },
-  "defenderSystemScanSchedule": "everyday",
-  "defenderFilesAndFoldersToExclude": [
-    "Defender Files And Folders To Exclude value"
-  ],
   "defenderFileExtensionsToExclude": [
     "Defender File Extensions To Exclude value"
   ],
-  "defenderScanMaxCpu": 2,
-  "defenderMonitorFileActivity": "disable",
-  "defenderPotentiallyUnwantedAppAction": "block",
-  "defenderPotentiallyUnwantedAppActionSetting": "enable",
+  "defenderFilesAndFoldersToExclude": [
+    "Defender Files And Folders To Exclude value"
+  ],
   "defenderProcessesToExclude": [
     "Defender Processes To Exclude value"
   ],
-  "defenderPromptForSampleSubmission": "alwaysPrompt",
-  "defenderRequireBehaviorMonitoring": true,
-  "defenderRequireCloudProtection": true,
-  "defenderRequireNetworkInspectionSystem": true,
-  "defenderRequireRealTimeMonitoring": true,
-  "defenderScanArchiveFiles": true,
-  "defenderScanDownloads": true,
-  "defenderScheduleScanEnableLowCpuPriority": true,
-  "defenderDisableCatchupQuickScan": true,
-  "defenderDisableCatchupFullScan": true,
-  "defenderScanNetworkFiles": true,
-  "defenderScanIncomingMail": true,
-  "defenderScanMappedNetworkDrivesDuringFullScan": true,
-  "defenderScanRemovableDrivesDuringFullScan": true,
-  "defenderScanScriptsLoadedInInternetExplorer": true,
-  "defenderSignatureUpdateIntervalInHours": 6,
-  "defenderScanType": "disabled",
-  "defenderScheduledScanTime": "11:59:10.9990000",
-  "defenderScheduledQuickScanTime": "11:58:49.3840000",
-  "defenderCloudBlockLevel": "high",
-  "defenderCloudExtendedTimeout": 12,
-  "defenderCloudExtendedTimeoutInSeconds": 5,
-  "defenderBlockOnAccessProtection": true,
-  "defenderSubmitSamplesConsentType": "alwaysPrompt",
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
   "lockScreenBlockCortana": true,
@@ -876,8 +876,37 @@ Content-Length: 15181
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
   "cellularData": "required",
+  "defenderRequireRealTimeMonitoring": true,
+  "defenderRequireBehaviorMonitoring": true,
+  "defenderRequireNetworkInspectionSystem": true,
+  "defenderScanDownloads": true,
+  "defenderScheduleScanEnableLowCpuPriority": true,
+  "defenderDisableCatchupQuickScan": true,
+  "defenderDisableCatchupFullScan": true,
+  "defenderScanScriptsLoadedInInternetExplorer": true,
   "defenderBlockEndUserAccess": true,
+  "defenderSignatureUpdateIntervalInHours": 6,
+  "defenderMonitorFileActivity": "disable",
   "defenderDaysBeforeDeletingQuarantinedMalware": 12,
+  "defenderScanMaxCpu": 2,
+  "defenderScanArchiveFiles": true,
+  "defenderScanIncomingMail": true,
+  "defenderScanRemovableDrivesDuringFullScan": true,
+  "defenderScanMappedNetworkDrivesDuringFullScan": true,
+  "defenderScanNetworkFiles": true,
+  "defenderRequireCloudProtection": true,
+  "defenderCloudBlockLevel": "high",
+  "defenderCloudExtendedTimeout": 12,
+  "defenderCloudExtendedTimeoutInSeconds": 5,
+  "defenderPromptForSampleSubmission": "alwaysPrompt",
+  "defenderScheduledQuickScanTime": "11:58:49.3840000",
+  "defenderScanType": "disabled",
+  "defenderSystemScanSchedule": "everyday",
+  "defenderScheduledScanTime": "11:59:10.9990000",
+  "defenderPotentiallyUnwantedAppAction": "block",
+  "defenderPotentiallyUnwantedAppActionSetting": "enable",
+  "defenderSubmitSamplesConsentType": "alwaysPrompt",
+  "defenderBlockOnAccessProtection": true,
   "defenderDetectedMalwareActions": {
     "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
     "lowSeverity": "clean",
@@ -885,44 +914,15 @@ Content-Length: 15181
     "highSeverity": "clean",
     "severeSeverity": "clean"
   },
-  "defenderSystemScanSchedule": "everyday",
-  "defenderFilesAndFoldersToExclude": [
-    "Defender Files And Folders To Exclude value"
-  ],
   "defenderFileExtensionsToExclude": [
     "Defender File Extensions To Exclude value"
   ],
-  "defenderScanMaxCpu": 2,
-  "defenderMonitorFileActivity": "disable",
-  "defenderPotentiallyUnwantedAppAction": "block",
-  "defenderPotentiallyUnwantedAppActionSetting": "enable",
+  "defenderFilesAndFoldersToExclude": [
+    "Defender Files And Folders To Exclude value"
+  ],
   "defenderProcessesToExclude": [
     "Defender Processes To Exclude value"
   ],
-  "defenderPromptForSampleSubmission": "alwaysPrompt",
-  "defenderRequireBehaviorMonitoring": true,
-  "defenderRequireCloudProtection": true,
-  "defenderRequireNetworkInspectionSystem": true,
-  "defenderRequireRealTimeMonitoring": true,
-  "defenderScanArchiveFiles": true,
-  "defenderScanDownloads": true,
-  "defenderScheduleScanEnableLowCpuPriority": true,
-  "defenderDisableCatchupQuickScan": true,
-  "defenderDisableCatchupFullScan": true,
-  "defenderScanNetworkFiles": true,
-  "defenderScanIncomingMail": true,
-  "defenderScanMappedNetworkDrivesDuringFullScan": true,
-  "defenderScanRemovableDrivesDuringFullScan": true,
-  "defenderScanScriptsLoadedInInternetExplorer": true,
-  "defenderSignatureUpdateIntervalInHours": 6,
-  "defenderScanType": "disabled",
-  "defenderScheduledScanTime": "11:59:10.9990000",
-  "defenderScheduledQuickScanTime": "11:58:49.3840000",
-  "defenderCloudBlockLevel": "high",
-  "defenderCloudExtendedTimeout": 12,
-  "defenderCloudExtendedTimeoutInSeconds": 5,
-  "defenderBlockOnAccessProtection": true,
-  "defenderSubmitSamplesConsentType": "alwaysPrompt",
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
   "lockScreenBlockCortana": true,

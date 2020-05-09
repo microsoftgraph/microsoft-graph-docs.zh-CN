@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ea18b7274039c49838752a2eac7aaaf7c603fbbd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 25b7a321b116116e1bb4a5353fdfb964118e4364
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447198"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177441"
 ---
 # <a name="macosgeneraldeviceconfiguration-resource-type"></a>macOSGeneralDeviceConfiguration 资源类型
 
@@ -39,13 +39,13 @@ ms.locfileid: "43447198"
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |compliantAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|符合性中的应用列表（允许列表或阻止列表，由 CompliantAppListType 控制）。 该集合最多可包含 10000 个元素。|
@@ -96,6 +96,7 @@ ms.locfileid: "43447198"
 |classroomForceRequestPermissionToLeaveClasses|Boolean|指示在非托管课程中通过课堂注册的学生是否需要在尝试离开本课程时向教师请求权限。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
 |classroomForceUnpromptedAppAndDeviceLock|Boolean|指示是否允许教师在不提示学生的情况下锁定应用或设备。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
 |iCloudBlockActivityContinuation|Boolean|指示是否阻止用户继续在另一台 iOS 或 MacOS 设备（MacOS 10.15 或更高版本）上的 MacOS 设备上启动的工作。|
+|privacyAccessControls|[macOSPrivacyAccessControlItem](../resources/intune-deviceconfig-macosprivacyaccesscontrolitem.md)集合|隐私首选项策略控制的列表。 该集合最多可包含 10000 个元素。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -207,7 +208,46 @@ ms.locfileid: "43447198"
   "classroomForceAutomaticallyJoinClasses": true,
   "classroomForceRequestPermissionToLeaveClasses": true,
   "classroomForceUnpromptedAppAndDeviceLock": true,
-  "iCloudBlockActivityContinuation": true
+  "iCloudBlockActivityContinuation": true,
+  "privacyAccessControls": [
+    {
+      "@odata.type": "microsoft.graph.macOSPrivacyAccessControlItem",
+      "displayName": "String",
+      "identifier": "String",
+      "identifierType": "String",
+      "codeRequirement": "String",
+      "staticCodeValidation": true,
+      "blockCamera": true,
+      "blockMicrophone": true,
+      "blockScreenCapture": true,
+      "blockListenEvent": true,
+      "speechRecognition": "String",
+      "accessibility": "String",
+      "addressBook": "String",
+      "calendar": "String",
+      "reminders": "String",
+      "photos": "String",
+      "mediaLibrary": "String",
+      "fileProviderPresence": "String",
+      "systemPolicyAllFiles": "String",
+      "systemPolicySystemAdminFiles": "String",
+      "systemPolicyDesktopFolder": "String",
+      "systemPolicyDocumentsFolder": "String",
+      "systemPolicyDownloadsFolder": "String",
+      "systemPolicyNetworkVolumes": "String",
+      "systemPolicyRemovableVolumes": "String",
+      "postEvent": "String",
+      "appleEventsAllowedReceivers": [
+        {
+          "@odata.type": "microsoft.graph.macOSAppleEventReceiver",
+          "codeRequirement": "String",
+          "identifier": "String",
+          "identifierType": "String",
+          "allowed": true
+        }
+      ]
+    }
+  ]
 }
 ```
 

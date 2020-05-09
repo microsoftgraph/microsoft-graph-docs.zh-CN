@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 550aea2dce1fb11c6888f8652ef39b9d0a6d84cb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 58d8e932c53c372a0ad68de9f97ad7c86708c137
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43322589"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44176083"
 ---
 # <a name="update-userexperienceanalyticscategory"></a>更新 userExperienceAnalyticsCategory
 
@@ -29,7 +29,7 @@ ms.locfileid: "43322589"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -72,7 +72,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsCategories/{userExperienceAnalyticsCategoryId}
 Content-type: application/json
-Content-length: 572
+Content-length: 553
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsCategory",
@@ -85,7 +85,7 @@ Content-length: 572
       "values": [
         {
           "@odata.type": "microsoft.graph.insightValueDouble",
-          "value": "<Unknown Primitive Type Edm.Double>"
+          "value": 1.6666666666666667
         }
       ],
       "severity": "informational"
@@ -100,7 +100,7 @@ Content-length: 572
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 621
+Content-Length: 602
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsCategory",
@@ -114,7 +114,7 @@ Content-Length: 621
       "values": [
         {
           "@odata.type": "microsoft.graph.insightValueDouble",
-          "value": "<Unknown Primitive Type Edm.Double>"
+          "value": 1.6666666666666667
         }
       ],
       "severity": "informational"

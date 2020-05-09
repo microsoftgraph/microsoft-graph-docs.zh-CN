@@ -1,18 +1,18 @@
 ---
-title: getDevicesScheduledToRetire 操作
+title: validateXml 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a86057676acf99b7c5843bbf0092880eabbc8273
+ms.openlocfilehash: 007f039988515cd99b40fa314b9baec12afd7d02
 ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178701"
+ms.locfileid: "44177959"
 ---
-# <a name="getdevicesscheduledtoretire-action"></a>getDevicesScheduledToRetire 操作
+# <a name="validatexml-action"></a>validateXml 操作
 
 命名空间：microsoft.graph
 
@@ -27,9 +27,9 @@ ms.locfileid: "44178701"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "44178701"
 }
 -->
 ``` http
-POST /deviceManagement/deviceCompliancePolicies/getDevicesScheduledToRetire
+POST /deviceAppManagement/mobileApps/validateXml
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -47,17 +47,32 @@ POST /deviceManagement/deviceCompliancePolicies/getDevicesScheduledToRetire
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
+在请求正文中，提供参数的 JSON 表示形式。
+
+下表显示了可用于此操作的参数。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|officeConfigurationXml|Binary|尚未记录|
+
+
 
 ## <a name="response"></a>响应
-如果成功，此操作会在`200 OK`响应正文中返回响应代码和[retireScheduledManagedDevice](../resources/intune-deviceconfig-retirescheduledmanageddevice.md)集合。
+如果成功，此操作会在响应正文中返回 `200 OK` 响应代码和一个 String。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/getDevicesScheduledToRetire
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/validateXml
+
+Content-type: application/json
+Content-length: 68
+
+{
+  "officeConfigurationXml": "b2ZmaWNlQ29uZmlndXJhdGlvblhtbA=="
+}
 ```
 
 ### <a name="response"></a>响应
@@ -65,27 +80,10 @@ POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 670
+Content-Length: 37
 
 {
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.retireScheduledManagedDevice",
-      "id": "Id value",
-      "managedDeviceId": "Managed Device Id value",
-      "managedDeviceName": "Managed Device Name value",
-      "deviceType": "windowsRT",
-      "complianceState": "notApplicable",
-      "retireAfterDateTime": "2016-12-31T23:57:37.576134-08:00",
-      "managementAgent": "mdm",
-      "ownerType": "company",
-      "deviceCompliancePolicyName": "Device Compliance Policy Name value",
-      "deviceCompliancePolicyId": "Device Compliance Policy Id value",
-      "roleScopeTagIds": [
-        "Role Scope Tag Ids value"
-      ]
-    }
-  ]
+  "value": "Validate Xml value"
 }
 ```
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bf6d9a48b069d7ee7b9bda3b79464cae97311f55
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 01e437970f9213e80b29ed6b20f93ab87bdcd30b
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457725"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179269"
 ---
 # <a name="update-action"></a>更新操作
 
@@ -29,7 +29,7 @@ ms.locfileid: "43457725"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -71,7 +71,7 @@ POST /deviceAppManagement/policySets/{policySetId}/update
 POST https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId}/update
 
 Content-type: application/json
-Content-length: 1529
+Content-length: 1517
 
 {
   "addedPolicySetItems": [
@@ -115,7 +115,7 @@ Content-length: 1529
       "id": "0a8e7d40-7d40-0a8e-407d-8e0a407d8e0a",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
       }
     }
   ]

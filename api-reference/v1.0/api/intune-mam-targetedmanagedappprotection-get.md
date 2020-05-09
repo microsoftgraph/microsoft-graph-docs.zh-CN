@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cf34a5116444b1e03946fc1a2772afb125ead510
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 463077d3d47177162900b748528f05f08ea66f65
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43397770"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177644"
 ---
 # <a name="get-targetedmanagedappprotection"></a>获取 targetedManagedAppProtection
 
@@ -27,7 +27,7 @@ ms.locfileid: "43397770"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{man
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1664
+Content-Length: 1704
 
 {
   "value": {
@@ -107,13 +107,11 @@ Content-Length: 1664
     "minimumWarningOsVersion": "Minimum Warning Os Version value",
     "minimumRequiredAppVersion": "Minimum Required App Version value",
     "minimumWarningAppVersion": "Minimum Warning App Version value",
+    "managedBrowser": "microsoftEdge",
     "isAssigned": true
   }
 }
 ```
-
-
-
 
 
 

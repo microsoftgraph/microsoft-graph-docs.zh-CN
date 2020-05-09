@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: de4ff2a3903e71a3af2a7de090766cc45bcec127
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 51122814486e7569af3f93d9a10439f4de8c21d3
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442257"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177588"
 ---
 # <a name="update-circulargeofencemanagementcondition"></a>更新 circularGeofenceManagementCondition
 
@@ -29,7 +29,7 @@ ms.locfileid: "43442257"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -55,16 +55,16 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|管理条件的唯一标识符。 创建时分配的系统生成值。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
-|uniqueName|String|管理条件的唯一名称。 在管理条件表达式中使用。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
+|uniqueName|字符串|管理条件的唯一名称。 在管理条件表达式中使用。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |displayName|String|管理条件的管理员定义名称。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
-|description|字符串|管理条件的管理员定义的说明。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
+|说明|字符串|管理条件的管理员定义的说明。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |createdDateTime|DateTimeOffset|管理条件的创建时间。 生成的服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |modifiedDateTime|DateTimeOffset|上次修改管理条件的时间。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|管理条件的 ETag。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|适用于此管理条件的平台。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
 |latitude|双精度|以度为单位的纬度，介于-90 和 + 90 之间（含）。|
 |longitude|Double|以度为单位的经度，介于-180 和 + 180 之间（含）。|
-|radiusInMeters|单精度|以米为单位的半径。|
+|radiusInMeters|单一|以米为单位的半径。|
 
 
 
@@ -78,7 +78,7 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managementConditions/{managementConditionId}
 Content-type: application/json
-Content-length: 444
+Content-length: 371
 
 {
   "@odata.type": "#microsoft.graph.circularGeofenceManagementCondition",
@@ -89,9 +89,9 @@ Content-length: 444
   "applicablePlatforms": [
     "androidForWork"
   ],
-  "latitude": "<Unknown Primitive Type Edm.Double>",
-  "longitude": "<Unknown Primitive Type Edm.Double>",
-  "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
+  "latitude": 2.6666666666666665,
+  "longitude": 3.0,
+  "radiusInMeters": 4.666666666666667
 }
 ```
 
@@ -100,7 +100,7 @@ Content-length: 444
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 612
+Content-Length: 539
 
 {
   "@odata.type": "#microsoft.graph.circularGeofenceManagementCondition",
@@ -114,9 +114,9 @@ Content-Length: 612
   "applicablePlatforms": [
     "androidForWork"
   ],
-  "latitude": "<Unknown Primitive Type Edm.Double>",
-  "longitude": "<Unknown Primitive Type Edm.Double>",
-  "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
+  "latitude": 2.6666666666666665,
+  "longitude": 3.0,
+  "radiusInMeters": 4.666666666666667
 }
 ```
 

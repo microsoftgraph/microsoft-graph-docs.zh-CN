@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f644ddeb540deb4a5c89aa62ee49dd56f9c20ac
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a391c926b077b32e48c5afc5efb6ac67fa8cc5ad
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469415"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179226"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>deviceConfigurationAssignment 资源类型
 
@@ -34,10 +34,10 @@ ms.locfileid: "43469415"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|分配的键。|
+|id|字符串|分配的键。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|设备配置的分配目标。|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|设备配置、direct 或包裹/policySet 的工作分配源。 此属性是只读的。 可取值为：`direct`、`policySets`。|
-|sourceId|String|工作分配的源的标识符。 此属性是只读的。|
+|sourceId|字符串|工作分配的源的标识符。 此属性是只读的。|
 
 ## <a name="relationships"></a>关系
 无
@@ -55,7 +55,7 @@ ms.locfileid: "43469415"
   "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   },
   "source": "String",
   "sourceId": "String"

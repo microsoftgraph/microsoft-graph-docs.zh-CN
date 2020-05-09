@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 63de532819c855ab647d0d272edfa98f9d0c64c7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1277ad52a308601ba5712423b70a9ee0dd11a0ca
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43403005"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44175355"
 ---
 # <a name="managedebookassignment-resource-type"></a>managedEBookAssignment 资源类型
 
@@ -54,7 +54,7 @@ ms.locfileid: "43403005"
   "@odata.type": "#microsoft.graph.managedEBookAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "installIntent": "String"
 }

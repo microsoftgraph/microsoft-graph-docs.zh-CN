@@ -1,18 +1,18 @@
 ---
-title: windowsPhone81CustomConfiguration 资源类型
-description: 本主题提供由 windowsPhone81CustomConfiguration 资源公开的已声明方法、属性和关系的说明。
+title: featureFlightedConfiguration 资源类型
+description: 设备配置。
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 01e5d3e98f4c887c80cf28601ad4c557eafc895b
+ms.openlocfilehash: a6731b67d051bc187adea8cd746f6ac2bac85a4a
 ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178897"
+ms.locfileid: "44178253"
 ---
-# <a name="windowsphone81customconfiguration-resource-type"></a>windowsPhone81CustomConfiguration 资源类型
+# <a name="featureflightedconfiguration-resource-type"></a>featureFlightedConfiguration 资源类型
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "44178897"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-本主题提供由 windowsPhone81CustomConfiguration 资源公开的已声明方法、属性和关系的说明。
+设备配置。
 
 
 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
@@ -28,11 +28,8 @@ ms.locfileid: "44178897"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[List windowsPhone81CustomConfigurations](../api/intune-deviceconfig-windowsphone81customconfiguration-list.md)|[windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md) 集合|列出 [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md) 对象的属性和关系。|
-|[Get windowsPhone81CustomConfiguration](../api/intune-deviceconfig-windowsphone81customconfiguration-get.md)|[windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md)|读取 [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md) 对象的属性和关系。|
-|[Create windowsPhone81CustomConfiguration](../api/intune-deviceconfig-windowsphone81customconfiguration-create.md)|[windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md)|创建新的 [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md) 对象。|
-|[Delete windowsPhone81CustomConfiguration](../api/intune-deviceconfig-windowsphone81customconfiguration-delete.md)|无|删除 [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md)。|
-|[Update windowsPhone81CustomConfiguration](../api/intune-deviceconfig-windowsphone81customconfiguration-update.md)|[windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md)|更新 [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md) 对象的属性。|
+|[列出 featureFlightedConfigurations](../api/intune-deviceconfig-featureflightedconfiguration-list.md)|[featureFlightedConfiguration](../resources/intune-deviceconfig-featureflightedconfiguration.md)集合|列出[featureFlightedConfiguration](../resources/intune-deviceconfig-featureflightedconfiguration.md)对象的属性和关系。|
+|[获取 featureFlightedConfiguration](../api/intune-deviceconfig-featureflightedconfiguration-get.md)|[featureFlightedConfiguration](../resources/intune-deviceconfig-featureflightedconfiguration.md)|读取[featureFlightedConfiguration](../resources/intune-deviceconfig-featureflightedconfiguration.md)对象的属性和关系。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -48,7 +45,6 @@ ms.locfileid: "44178897"
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|omaSettings|[omaSetting](../resources/intune-deviceconfig-omasetting.md) 集合|OMA 设置。 该集合最多可包含 1000 个元素。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -66,12 +62,12 @@ ms.locfileid: "44178897"
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.windowsPhone81CustomConfiguration"
+  "@odata.type": "microsoft.graph.featureFlightedConfiguration"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.windowsPhone81CustomConfiguration",
+  "@odata.type": "#microsoft.graph.featureFlightedConfiguration",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "roleScopeTagIds": [
@@ -102,15 +98,7 @@ ms.locfileid: "44178897"
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
-  "version": 1024,
-  "omaSettings": [
-    {
-      "@odata.type": "microsoft.graph.omaSetting",
-      "displayName": "String",
-      "description": "String",
-      "omaUri": "String"
-    }
-  ]
+  "version": 1024
 }
 ```
 

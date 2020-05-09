@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 77bc6ee88c5c56f7f83fe8cfdfcb0858146e2fce
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8438faa7367a27d5ee4df605f74426038d1e0f70
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43406155"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178008"
 ---
 # <a name="assign-action"></a>分配操作
 
@@ -29,7 +29,7 @@ ms.locfileid: "43406155"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -68,7 +68,7 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/assign
 
 Content-type: application/json
-Content-length: 293
+Content-length: 287
 
 {
   "assignments": [
@@ -76,7 +76,7 @@ Content-length: 293
       "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationAssignment",
       "id": "4df81c9c-1c9c-4df8-9c1c-f84d9c1cf84d",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
       }
     }
   ]

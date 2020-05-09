@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c9e69ddf750efc4ed444bd8f6812ad11a7f2a54
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 268e0984dc062ecb73a412501865e1483255739e
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448193"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178183"
 ---
 # <a name="update-managedmobileapp"></a>更新 managedMobileApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "43448193"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -57,7 +57,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 |属性|类型|说明|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|包含其操作系统类型的应用标识符。|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |version|String|实体的版本。|
 
 
@@ -72,12 +72,13 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps/{managedMobileAppId}
 Content-type: application/json
-Content-length: 181
+Content-length: 226
 
 {
   "@odata.type": "#microsoft.graph.managedMobileApp",
   "mobileAppIdentifier": {
-    "@odata.type": "microsoft.graph.mobileAppIdentifier"
+    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+    "packageId": "Package Id value"
   },
   "version": "Version value"
 }
@@ -88,12 +89,13 @@ Content-length: 181
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 230
+Content-Length: 275
 
 {
   "@odata.type": "#microsoft.graph.managedMobileApp",
   "mobileAppIdentifier": {
-    "@odata.type": "microsoft.graph.mobileAppIdentifier"
+    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+    "packageId": "Package Id value"
   },
   "id": "0a129715-9715-0a12-1597-120a1597120a",
   "version": "Version value"

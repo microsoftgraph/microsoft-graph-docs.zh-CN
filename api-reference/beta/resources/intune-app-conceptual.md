@@ -1,15 +1,15 @@
 ---
 title: 如何使用 Microsoft Intune 保护公司应用程序数据-Microsoft Graph API
 description: 列出用于管理租户组织的应用及其策略的 Intune 终结点（REST）的 Microsoft Graph API。
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 9f609132a455e605996facc5d0b26c3c0af75b28
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9308faf6185520bddcab1f5153205bdb109c2323
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437479"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177728"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -43,7 +43,6 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Android 管理的存储帐户注册目标](intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)
 - [Android 管理的存储帐户企业设置](intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)
 - [Android 托管的应用商店应用](intune-apps-androidmanagedstoreapp.md)
-- [Android 托管存储应用分配设置](intune-apps-androidmanagedstoreappassignmentsettings.md)
 - [Android 托管的应用商店应用配置](intune-apps-androidmanagedstoreappconfiguration.md)
 - [Android 托管的应用商店应用配置架构](intune-androidforwork-androidmanagedstoreappconfigurationschema.md)
 - [Android 托管的应用商店应用配置架构项](intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)
@@ -139,7 +138,6 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [VPP 授权类型](intune-apps-vpplicensingtype.md)
 - [Web 应用](intune-apps-webapp.md)
 - [Win32 LOB 应用](intune-apps-win32lobapp.md)
-- [Win32 LOB 应用传递优化优先级](intune-apps-win32lobappdeliveryoptimizationpriority.md)
 - [Win32 LOB 应用检测](intune-apps-win32lobappdetection.md)
 - [Win32 LOB 应用检测运算符](intune-apps-win32lobappdetectionoperator.md)
 - [Win32 LOB 应用文件系统检测](intune-apps-win32lobappfilesystemdetection.md)

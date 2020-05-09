@@ -2,18 +2,18 @@
 title: Microsoft Intune 中的电信费用管理-Microsoft Graph API
 description: 列出与租户组织的电信费用管理相关的适用于 Intune 终结点（REST）的 Microsoft Graph API。
 localization_priority: Normal
-author: rolyon
+author: dougeby
 ms.prod: intune
-ms.openlocfilehash: ee3687dda8639adb56458590331ca944785d6edb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1a421f305b40b36411a72ff4a6ed4d7f270c5bf4
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523420"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178204"
 ---
 # <a name="telecom-expense-management-in-microsoft-intune"></a>Microsoft Intune 中的电信费用管理
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 

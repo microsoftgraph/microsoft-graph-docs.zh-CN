@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 995153ed96476b5539ad9c049859282230d8bdb5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 593dc93879aed733738a80eece8a9a2105c59e1c
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469573"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44174557"
 ---
 # <a name="assign-action"></a>分配操作
 
@@ -29,7 +29,7 @@ ms.locfileid: "43469573"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -70,7 +70,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 POST https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
 
 Content-type: application/json
-Content-length: 351
+Content-length: 339
 
 {
   "assignments": [
@@ -78,7 +78,7 @@ Content-length: 351
       "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
       "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
       },
       "source": "policySets",
       "sourceId": "Source Id value"

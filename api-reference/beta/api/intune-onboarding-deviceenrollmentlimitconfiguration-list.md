@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 92738cac8c36637a40b3a0705127ef4138aad427
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7b89e3b6fc65794d6a45fbafc410b4537ef16156
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43403330"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179430"
 ---
 # <a name="list-deviceenrollmentlimitconfigurations"></a>列出 deviceEnrollmentLimitConfigurations
 
@@ -29,7 +29,7 @@ ms.locfileid: "43403330"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 446
+Content-Length: 520
 
 {
   "value": [
@@ -78,6 +78,9 @@ Content-Length: 446
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "version": 7,
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
       "limit": 5
     }
   ]

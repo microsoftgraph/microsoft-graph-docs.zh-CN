@@ -1,15 +1,15 @@
 ---
 title: Microsoft Intune 中的设备管理-Microsoft Graph API
 description: 列出用于定义租户组织的管理设备的 Intune 终结点（REST）的 Microsoft Graph API。
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f20ad594af8819fab9c9f88e0af81a5fbf009a59
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 959c7c7d0f38dfa036f74cd4fd36f26a2fbfb442
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471122"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179318"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -36,7 +36,6 @@ ms.locfileid: "43471122"
 - [批量托管的设备操作结果](intune-devices-bulkmanageddeviceactionresult.md)
 - [机箱类型](intune-devices-chassistype.md)
 - [循环 geofence 管理条件](intune-fencing-circulargeofencemanagementcondition.md)
-- [联合管理符合条件类型](intune-devices-comanagementeligibletype.md)
 - [合规性状态](intune-devices-compliancestate.md)
 - [配置管理器操作](intune-devices-configurationmanageraction.md)
 - [配置管理器操作传递状态](intune-devices-configurationmanageractiondeliverystatus.md)
@@ -46,12 +45,10 @@ ms.locfileid: "43471122"
 - [配置管理器客户端运行状况](intune-devices-configurationmanagerclienthealthstate.md)
 - [Configuration manager 客户端信息](intune-devices-configurationmanagerclientinformation.md)
 - [配置管理器客户端状态](intune-devices-configurationmanagerclientstate.md)
-- [每日计划](intune-devices-dailyschedule.md)
 - [数据共享许可](intune-devices-datasharingconsent.md)
 - [从共享 Apple 设备删除用户操作结果](intune-devices-deleteuserfromsharedappledeviceactionresult.md)
 - [检测到的应用](intune-devices-detectedapp.md)
 - [设备操作结果](intune-devices-deviceactionresult.md)
-- [设备和应用程序管理分配筛选器类型](intune-esim-deviceandappmanagementassignmentfiltertype.md)
 - [设备注册失败原因](intune-troubleshooting-deviceenrollmentfailurereason.md)
 - [设备 Exchange 访问状态摘要](intune-devices-deviceexchangeaccessstatesummary.md)
 - [设备地理位置](intune-devices-devicegeolocation.md)
@@ -61,11 +58,20 @@ ms.locfileid: "43471122"
 - [设备运行状况证明状态](intune-devices-devicehealthattestationstate.md)
 - [设备运行状况脚本](intune-devices-devicehealthscript.md)
 - [设备运行状况脚本分配](intune-devices-devicehealthscriptassignment.md)
+- [设备运行状况脚本布尔参数](intune-devices-devicehealthscriptbooleanparameter.md)
+- [设备运行状况脚本每日计划](intune-devices-devicehealthscriptdailyschedule.md)
 - [设备运行状况脚本设备状态](intune-devices-devicehealthscriptdevicestate.md)
+- [设备运行状况脚本每小时计划](intune-devices-devicehealthscripthourlyschedule.md)
+- [设备运行状况脚本 integer 参数](intune-devices-devicehealthscriptintegerparameter.md)
+- [设备运行状况脚本参数](intune-devices-devicehealthscriptparameter.md)
 - [设备运行状况脚本修正历史记录](intune-devices-devicehealthscriptremediationhistory.md)
 - [设备运行状况脚本修正历史记录数据](intune-devices-devicehealthscriptremediationhistorydata.md)
 - [设备运行状况脚本修正摘要](intune-devices-devicehealthscriptremediationsummary.md)
+- [设备运行状况脚本运行一次计划](intune-devices-devicehealthscriptrunonceschedule.md)
+- [设备运行状况脚本运行计划](intune-devices-devicehealthscriptrunschedule.md)
 - [设备运行状况脚本运行摘要](intune-devices-devicehealthscriptrunsummary.md)
+- [设备运行状况脚本字符串参数](intune-devices-devicehealthscriptstringparameter.md)
+- [设备运行状况脚本时间计划](intune-devices-devicehealthscripttimeschedule.md)
 - [设备管理抽象复杂设置定义](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
 - [设备管理抽象复杂设置实例](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
 - [Device management autopilot 事件](intune-troubleshooting-devicemanagementautopilotevent.md)
@@ -121,6 +127,7 @@ ms.locfileid: "43471122"
 - [设备管理订阅](intune-devices-devicemanagementsubscriptions.md)
 - [设备管理模板](intune-deviceintent-devicemanagementtemplate.md)
 - [设备管理模板设置类别](intune-deviceintent-devicemanagementtemplatesettingcategory.md)
+- [设备管理模板子类型](intune-deviceintent-devicemanagementtemplatesubtype.md)
 - [设备管理模板类型](intune-deviceintent-devicemanagementtemplatetype.md)
 - [设备管理疑难解答错误详情](intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)
 - [设备管理疑难解答错误资源](intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)
@@ -140,9 +147,9 @@ ms.locfileid: "43471122"
 - [全局设备运行状况脚本状态](intune-devices-globaldevicehealthscriptstate.md)
 - [硬件信息](intune-devices-hardwareinformation.md)
 - [运行状况](intune-devices-healthstate.md)
-- [每小时计划](intune-devices-hourlyschedule.md)
 - [真知灼见值加倍](intune-devices-insightvaluedouble.md)
 - [真知灼见值 int](intune-devices-insightvalueint.md)
+- [联接类型](intune-devices-jointype.md)
 - [已本地化的通知邮件](intune-notification-localizednotificationmessage.md)
 - [查找设备操作结果](intune-devices-locatedeviceactionresult.md)
 - [位置管理条件](intune-fencing-locationmanagementcondition.md)
@@ -182,12 +189,13 @@ ms.locfileid: "43471122"
 - [修正状态](intune-devices-remediationstate.md)
 - [远程操作](intune-devices-remoteaction.md)
 - [远程操作审核](intune-devices-remoteactionaudit.md)
+- [远程协助载入状态](intune-remoteassistance-remoteassistanceonboardingstatus.md)
+- [远程协助合作伙伴](intune-remoteassistance-remoteassistancepartner.md)
 - [远程锁定操作结果](intune-devices-remotelockactionresult.md)
 - [重置密码操作结果](intune-devices-resetpasscodeactionresult.md)
 - [撤销 Apple VPP 许可证操作结果](intune-devices-revokeapplevpplicensesactionresult.md)
 - [角色作用域标记信息](intune-auditing-rolescopetaginfo.md)
 - [旋转 BitLocker 密钥设备操作结果](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
-- [运行计划](intune-devices-runschedule.md)
 - [安全基准类别状态摘要](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [安全基线合规性状态](intune-deviceintent-securitybaselinecompliancestate.md)
 - [安全基准设备状态](intune-deviceintent-securitybaselinedevicestate.md)
@@ -237,5 +245,3 @@ ms.locfileid: "43471122"
 - [Windows 管理应用](intune-devices-windowsmanagementapp.md)
 - [Windows 管理应用运行状况状态](intune-devices-windowsmanagementapphealthstate.md)
 - [Windows 保护状态](intune-devices-windowsprotectionstate.md)
-
-

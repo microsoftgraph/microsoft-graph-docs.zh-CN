@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 362a673ba2fd13d6e82c59c0d18b75a7af6eaa8a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 226e2627c377411ef09e140d216e0bc1d4abce0b
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452265"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44174872"
 ---
 # <a name="assign-action"></a>分配操作
 
@@ -29,7 +29,7 @@ ms.locfileid: "43452265"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -68,7 +68,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 POST https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}/assign
 
 Content-type: application/json
-Content-length: 287
+Content-length: 281
 
 {
   "assignments": [
@@ -76,7 +76,7 @@ Content-length: 287
       "@odata.type": "#microsoft.graph.embeddedSIMActivationCodePoolAssignment",
       "id": "e7304dcc-4dcc-e730-cc4d-30e7cc4d30e7",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
       }
     }
   ]
@@ -88,7 +88,7 @@ Content-length: 287
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 281
+Content-Length: 275
 
 {
   "value": [
@@ -96,7 +96,7 @@ Content-Length: 281
       "@odata.type": "#microsoft.graph.embeddedSIMActivationCodePoolAssignment",
       "id": "e7304dcc-4dcc-e730-cc4d-30e7cc4d30e7",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
       }
     }
   ]

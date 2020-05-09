@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e1ed01161b6b7b9002b3db9a0473c058db3185e2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7ba8735cbe386d32e9f54e05c500a0bd5b3413e6
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443206"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44175558"
 ---
 # <a name="devicehealthscriptassignment-resource-type"></a>deviceHealthScriptAssignment 资源类型
 
@@ -34,10 +34,10 @@ ms.locfileid: "43443206"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备运行状况脚本分配实体的键。 此属性是只读的。|
+|id|字符串|设备运行状况脚本分配实体的键。 此属性是只读的。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|将脚本设定为的 Azure Active Directory 组|
 |runRemediationScript|Boolean|确定是只运行检测脚本还是运行两个检测脚本和修正脚本|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|目标组的脚本运行计划|
+|runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|目标组的脚本运行计划|
 
 ## <a name="relationships"></a>关系
 无
@@ -55,11 +55,14 @@ ms.locfileid: "43443206"
   "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   },
   "runRemediationScript": true,
   "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
+    "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
+    "interval": 1024,
+    "useUtc": true,
+    "time": "String (time of day)"
   }
 }
 ```

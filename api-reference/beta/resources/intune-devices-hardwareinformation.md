@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 15369ff988d13e7d083358dceb874da2a0ffa6a4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bc09cbb5f1c3664d0f9a2bcb0cc0aceac7f85bf3
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470640"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178841"
 ---
 # <a name="hardwareinformation-resource-type"></a>hardwareInformation 资源类型
 
@@ -28,26 +28,27 @@ ms.locfileid: "43470640"
 |serialNumber|字符串|序列号。|
 |totalStorageSpace|Int64|设备的总存储空间。|
 |freeStorageSpace|Int64|设备的可用存储空间。|
-|imei|String|IMEI|
+|imei|字符串|IMEI|
 |meid|String|MEID|
-|manufacturer|String|设备的制造商|
-|model|String|设备的型号|
-|phoneNumber|String|设备的电话号码|
-|subscriberCarrier|String|设备的订阅者运营商|
-|cellularTechnology|String|设备的手机网络技术|
-|wifiMac|String|设备的 WiFi MAC 地址|
-|operatingSystemLanguage|String|设备的操作系统语言|
-|isSupervised|布尔值|受监督的设备模式|
+|manufacturer|字符串|设备的制造商|
+|model|字符串|设备的型号|
+|phoneNumber|字符串|设备的电话号码|
+|subscriberCarrier|字符串|设备的订阅者运营商|
+|cellularTechnology|字符串|设备的手机网络技术|
+|wifiMac|字符串|设备的 WiFi MAC 地址|
+|operatingSystemLanguage|字符串|设备的操作系统语言|
+|isSupervised|Boolean|受监督的设备模式|
 |isEncrypted|Boolean|设备的加密状态|
-|isSharedDevice|布尔值|共享 iPad|
+|isSharedDevice|Boolean|共享 iPad|
 |sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md)集合|共享 Apple 设备上的所有用户|
-|tpmSpecificationVersion|String|指定规范版本的字符串。|
-|operatingSystemEdition|String|指定 OS 版本的字符串。|
-|deviceFullQualifiedDomainName|String|返回设备的完全限定的域名（如果有）。 如果设备未加入域，则返回一个空字符串。 |
+|tpmSpecificationVersion|字符串|指定规范版本的字符串。|
+|operatingSystemEdition|字符串|指定 OS 版本的字符串。|
+|deviceFullQualifiedDomainName|字符串|返回设备的完全限定的域名（如果有）。 如果设备未加入域，则返回一个空字符串。 |
 |deviceGuardVirtualizationBasedSecurityHardwareRequirementState|[deviceGuardVirtualizationBasedSecurityHardwareRequirementState](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|基于虚拟化的安全硬件要求状态。 可取值为：`meetHardwareRequirements`、`secureBootRequired`、`dmaProtectionRequired`、`hyperVNotSupportedForGuestVM`、`hyperVNotAvailable`。|
 |deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|基于虚拟化的安全状态。 . 可取值为：`running`、`rebootRequired`、`require64BitArchitecture`、`notLicensed`、`notConfigured`、`doesNotMeetHardwareRequirements` 或 `other`。|
 |deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|本地系统颁发机构（LSA） credential guard 状态。 . 可取值为：`running`、`rebootRequired`、`notLicensed`、`notConfigured`、`virtualizationBasedSecurityNotRunning`。|
-|osBuildNumber|String|Android 设备上的操作系统内部版本号|
+|osBuildNumber|字符串|Android 设备上的操作系统内部版本号|
+|operatingSystemProductType|Int32|指定 Windows 操作系统 ProductType 的 Int。 此处https://go.microsoft.com/fwlink/?linkid=2126950提供了更多详细信息。 有效值为0至2147483647|
 
 ## <a name="relationships"></a>关系
 无
@@ -92,7 +93,8 @@ ms.locfileid: "43470640"
   "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "String",
   "deviceGuardVirtualizationBasedSecurityState": "String",
   "deviceGuardLocalSystemAuthorityCredentialGuardState": "String",
-  "osBuildNumber": "String"
+  "osBuildNumber": "String",
+  "operatingSystemProductType": 1024
 }
 ```
 

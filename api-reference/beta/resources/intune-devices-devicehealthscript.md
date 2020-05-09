@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d84c56bd23624ba5d975a65435e7203040c2c1ed
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: baefb8e0b6975d1269a76a20aeb453972270cb46
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443229"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44175635"
 ---
 # <a name="devicehealthscript-resource-type"></a>deviceHealthScript 资源类型
 
@@ -31,8 +31,8 @@ Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联�
 |[删除 deviceHealthScript](../api/intune-devices-devicehealthscript-delete.md)|无|删除[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)。|
 |[更新 deviceHealthScript](../api/intune-devices-devicehealthscript-update.md)|[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)|更新[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)对象的属性。|
 |[分配操作](../api/intune-devices-devicehealthscript-assign.md)|无|尚未记录|
-|[updateGlobalScript 操作](../api/intune-devices-devicehealthscript-updateglobalscript.md)|String|更新专用设备运行状况脚本|
-|[getGlobalScriptHighestAvailableVersion 操作](../api/intune-devices-devicehealthscript-getglobalscripthighestavailableversion.md)|String|更新专用设备运行状况脚本|
+|[updateGlobalScript 操作](../api/intune-devices-devicehealthscript-updateglobalscript.md)|字符串|更新专用设备运行状况脚本|
+|[getGlobalScriptHighestAvailableVersion 操作](../api/intune-devices-devicehealthscript-getglobalscripthighestavailableversion.md)|字符串|更新专用设备运行状况脚本|
 |[enableGlobalScripts 操作](../api/intune-devices-devicehealthscript-enableglobalscripts.md)|无|尚未记录|
 |[areGlobalScriptsAvailable 函数](../api/intune-devices-devicehealthscript-areglobalscriptsavailable.md)|[globalDeviceHealthScriptState](../resources/intune-devices-globaldevicehealthscriptstate.md)|尚未记录|
 |[getRemediationSummary 函数](../api/intune-devices-devicehealthscript-getremediationsummary.md)|[deviceHealthScriptRemediationSummary](../resources/intune-devices-devicehealthscriptremediationsummary.md)|尚未记录|
@@ -42,10 +42,10 @@ Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联�
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|设备运行状况脚本的唯一标识符|
-|发布者|String|设备运行状况脚本发布者的名称|
+|发布者|字符串|设备运行状况脚本发布者的名称|
 |version|String|设备运行状况脚本的版本|
 |displayName|字符串|设备运行状况脚本的名称|
-|description|String|设备运行状况脚本的说明|
+|说明|String|设备运行状况脚本的说明|
 |detectionScriptContent|Binary|检测 powershell 脚本的全部内容|
 |remediationScriptContent|Binary|修正 powershell 脚本的全部内容|
 |createdDateTime|DateTimeOffset|设备运行状况脚本的创建时间的时间戳。 此属性是只读的。|
@@ -53,9 +53,11 @@ Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联�
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
 |enforceSignatureCheck|Boolean|指示是否需要检查脚本签名|
 |runAs32Bit|Boolean|指示 PowerShell 脚本是否应作为32位运行|
-|roleScopeTagIds|String 集合|设备运行状况脚本的范围标记 Id 列表|
+|roleScopeTagIds|字符串集合|设备运行状况脚本的范围标记 Id 列表|
 |isGlobalScript|Boolean|确定这是否为 Microsoft 专用脚本。 专用脚本为只读|
-|highestAvailableVersion|String|Microsoft 专用脚本的最高可用版本|
+|highestAvailableVersion|字符串|Microsoft 专用脚本的最高可用版本|
+|detectionScriptParameters|[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)集合|复杂类型 DetectionScriptParameters 对象的列表。|
+|remediationScriptParameters|[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)集合|复杂类型 RemediationScriptParameters 对象的列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -91,7 +93,27 @@ Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联�
     "String"
   ],
   "isGlobalScript": true,
-  "highestAvailableVersion": "String"
+  "highestAvailableVersion": "String",
+  "detectionScriptParameters": [
+    {
+      "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
+      "name": "String",
+      "description": "String",
+      "isRequired": true,
+      "applyDefaultValueWhenNotAssigned": true,
+      "defaultValue": "String"
+    }
+  ],
+  "remediationScriptParameters": [
+    {
+      "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
+      "name": "String",
+      "description": "String",
+      "isRequired": true,
+      "applyDefaultValueWhenNotAssigned": true,
+      "defaultValue": "String"
+    }
+  ]
 }
 ```
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7b502ae51586eb3a41db59db551108875a41ea5f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d66fbcadd2957735e4244bde6ebabfd6d3775b74
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43438159"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177924"
 ---
 # <a name="create-macosdevicefeaturesconfiguration"></a>创建 macOSDeviceFeaturesConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "43438159"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -56,19 +56,19 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |airPrintDestinations|[airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md)集合|应始终显示的 AirPrint 打印机的数组。 该集合最多可包含 500 个元素。 继承自[appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
 |autoLaunchItems|[macOSLaunchItem](../resources/intune-deviceconfig-macoslaunchitem.md)集合|用户登录时要启动的应用程序、文件、文件夹和其他项目的列表。 该集合最多可包含 500 个元素。|
 |adminShowHostInfo|Boolean|是否在登录窗口中显示管理员主机信息。|
-|loginWindowText|String|要在登录窗口中显示的自定义文本。|
+|loginWindowText|字符串|要在登录窗口中显示的自定义文本。|
 |authorizedUsersListHidden|Boolean|是否在登录窗口中显示 "名称" 和 "密码" 对话框或用户列表。|
 |authorizedUsersListHideLocalUsers|Boolean|是否在登录窗口的授权用户列表中仅显示网络和系统用户。|
 |authorizedUsersListHideMobileAccounts|Boolean|是否在登录窗口上的授权用户列表中隐藏移动用户。|
@@ -100,7 +100,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2468
+Content-length: 3879
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -173,10 +173,50 @@ Content-length: 2468
     }
   ],
   "singleSignOnExtension": {
-    "@odata.type": "microsoft.graph.singleSignOnExtension"
+    "@odata.type": "microsoft.graph.credentialSingleSignOnExtension",
+    "extensionIdentifier": "Extension Identifier value",
+    "teamIdentifier": "Team Identifier value",
+    "domains": [
+      "Domains value"
+    ],
+    "realm": "Realm value",
+    "configurations": [
+      {
+        "@odata.type": "microsoft.graph.keyStringValuePair",
+        "key": "Key value",
+        "value": "Value value"
+      }
+    ]
   },
   "macOSSingleSignOnExtension": {
-    "@odata.type": "microsoft.graph.macOSSingleSignOnExtension"
+    "@odata.type": "microsoft.graph.macOSKerberosSingleSignOnExtension",
+    "realm": "Realm value",
+    "domains": [
+      "Domains value"
+    ],
+    "blockAutomaticLogin": true,
+    "cacheName": "Cache Name value",
+    "credentialBundleIdAccessControlList": [
+      "Credential Bundle Id Access Control List value"
+    ],
+    "domainRealms": [
+      "Domain Realms value"
+    ],
+    "isDefaultRealm": true,
+    "passwordBlockModification": true,
+    "passwordExpirationDays": 6,
+    "passwordExpirationNotificationDays": 2,
+    "userPrincipalName": "User Principal Name value",
+    "passwordRequireActiveDirectoryComplexity": true,
+    "passwordPreviousPasswordBlockCount": 2,
+    "passwordMinimumLength": 5,
+    "passwordMinimumAgeDays": 6,
+    "passwordRequirementsDescription": "Password Requirements Description value",
+    "requireUserPresence": true,
+    "activeDirectorySiteCode": "Active Directory Site Code value",
+    "passwordEnableLocalSync": true,
+    "blockActiveDirectorySiteAutoDiscovery": true,
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
   }
 }
 ```
@@ -186,7 +226,7 @@ Content-length: 2468
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2640
+Content-Length: 4051
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -262,10 +302,50 @@ Content-Length: 2640
     }
   ],
   "singleSignOnExtension": {
-    "@odata.type": "microsoft.graph.singleSignOnExtension"
+    "@odata.type": "microsoft.graph.credentialSingleSignOnExtension",
+    "extensionIdentifier": "Extension Identifier value",
+    "teamIdentifier": "Team Identifier value",
+    "domains": [
+      "Domains value"
+    ],
+    "realm": "Realm value",
+    "configurations": [
+      {
+        "@odata.type": "microsoft.graph.keyStringValuePair",
+        "key": "Key value",
+        "value": "Value value"
+      }
+    ]
   },
   "macOSSingleSignOnExtension": {
-    "@odata.type": "microsoft.graph.macOSSingleSignOnExtension"
+    "@odata.type": "microsoft.graph.macOSKerberosSingleSignOnExtension",
+    "realm": "Realm value",
+    "domains": [
+      "Domains value"
+    ],
+    "blockAutomaticLogin": true,
+    "cacheName": "Cache Name value",
+    "credentialBundleIdAccessControlList": [
+      "Credential Bundle Id Access Control List value"
+    ],
+    "domainRealms": [
+      "Domain Realms value"
+    ],
+    "isDefaultRealm": true,
+    "passwordBlockModification": true,
+    "passwordExpirationDays": 6,
+    "passwordExpirationNotificationDays": 2,
+    "userPrincipalName": "User Principal Name value",
+    "passwordRequireActiveDirectoryComplexity": true,
+    "passwordPreviousPasswordBlockCount": 2,
+    "passwordMinimumLength": 5,
+    "passwordMinimumAgeDays": 6,
+    "passwordRequirementsDescription": "Password Requirements Description value",
+    "requireUserPresence": true,
+    "activeDirectorySiteCode": "Active Directory Site Code value",
+    "passwordEnableLocalSync": true,
+    "blockActiveDirectorySiteAutoDiscovery": true,
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
   }
 }
 ```
