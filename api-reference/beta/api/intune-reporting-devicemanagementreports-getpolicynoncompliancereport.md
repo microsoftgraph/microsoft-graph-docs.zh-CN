@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b562a565c9dd06cc30b80d26a90bb2b75694ca7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e40690f90fb8289f1b7994a5148f649c89ec57ea
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444488"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178260"
 ---
 # <a name="getpolicynoncompliancereport-action"></a>getPolicyNonComplianceReport 操作
 
@@ -29,7 +29,7 @@ ms.locfileid: "43444488"
 |:---|:---|
 |委派（工作或学校帐户）|Devicemanagementconfiguration.readwrite.all、Devicemanagementconfiguration.readwrite.all、Devicemanagementapps.readwrite.all、all、Devicemanagementapps.readwrite.all、all、devicemanagementmanageddevices.readwrite.all、all、devicemanagementmanageddevices.readwrite.all、all 和 Read. all。 All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|Devicemanagementconfiguration.readwrite.all、Devicemanagementconfiguration.readwrite.all、Devicemanagementapps.readwrite.all、all、Devicemanagementapps.readwrite.all、all、devicemanagementmanageddevices.readwrite.all、all、devicemanagementmanageddevices.readwrite.all、all 和 Read. all。 All|
+|Application|Devicemanagementconfiguration.readwrite.all、Devicemanagementconfiguration.readwrite.all、Devicemanagementapps.readwrite.all、all、Devicemanagementapps.readwrite.all、all、devicemanagementmanageddevices.readwrite.all、all、devicemanagementmanageddevices.readwrite.all、all 和 Read. all。 All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,7 +53,7 @@ POST /deviceManagement/reports/getPolicyNonComplianceReport
 
 |属性|类型|说明|
 |:---|:---|:---|
-|name|String|尚未记录|
+|name|字符串|尚未记录|
 |select|String collection|尚未记录|
 |search|String|尚未记录|
 |groupBy|String collection|尚未记录|
@@ -102,10 +102,10 @@ Content-length: 278
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 54
+Content-Length: 95
 
 {
-  "value": "<Unknown Primitive Type Edm.Stream>"
+  "value": "Z2V0UG9saWN5Tm9uQ29tcGxpYW5jZVJlcG9ydCBJbnR1bmUgRG9jIFNhbXBsZSAtNjU2NTI5OTUw"
 }
 ```
 

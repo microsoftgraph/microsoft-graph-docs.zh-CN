@@ -2,18 +2,18 @@
 title: Microsoft Intune 中的共享资源-Microsoft Graph API
 description: 列出支持租户组织的多个工作流的 Intune 终结点（REST）的 Microsoft Graph API。
 localization_priority: Normal
-author: rolyon
+author: dougeby
 ms.prod: intune
-ms.openlocfilehash: db7746504a7bd31df99941ffc7bc85065eb5d56a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2d138f4c92999477054e8fe154c426fd18181037
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527480"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178092"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune 中的共享资源
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
@@ -27,6 +27,7 @@ ms.locfileid: "42527480"
 - [所有设备分配目标](intune-shared-alldevicesassignmenttarget.md)
 - [所有许可的用户分配目标](intune-shared-alllicensedusersassignmenttarget.md)
 - [Android 管理的应用保护](intune-shared-androidmanagedappprotection.md)
+- [Android 托管存储应用分配设置](intune-shared-androidmanagedstoreappassignmentsettings.md)
 - [公司门户操作](intune-shared-companyportalaction.md)
 - [公司门户阻止的操作](intune-shared-companyportalblockedaction.md)
 - [符合性状态](intune-shared-compliancestatus.md)
@@ -84,6 +85,7 @@ ms.locfileid: "42527480"
 - [VPP 令牌帐户类型](intune-shared-vpptokenaccounttype.md)
 - [VPP 令牌操作失败原因](intune-shared-vpptokenactionfailurereason.md)
 - [Win32 LOB 应用分配设置](intune-shared-win32lobappassignmentsettings.md)
+- [Win32 LOB 应用传递优化优先级](intune-shared-win32lobappdeliveryoptimizationpriority.md)
 - [Win32 LOB 应用通知](intune-shared-win32lobappnotification.md)
 - [Win32 LOB 应用重启设置](intune-shared-win32lobapprestartsettings.md)
 - [Windows AppX 应用分配设置](intune-shared-windowsappxappassignmentsettings.md)
@@ -91,4 +93,3 @@ ms.locfileid: "42527480"
 - [Windows 域加入配置](intune-shared-windowsdomainjoinconfiguration.md)
 - [Windows Universal AppX 应用分配设置](intune-shared-windowsuniversalappxappassignmentsettings.md)
 - [Windows 更新状态](intune-shared-windowsupdatestate.md)
-

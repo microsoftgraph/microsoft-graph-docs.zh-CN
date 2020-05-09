@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 597438dc3b6bb2772f2c28bb2a64d84d5fba8d61
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 12e7f8ac2014b5b359a225a84443f7ecb318f745
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382736"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179184"
 ---
 # <a name="circulargeofencemanagementcondition-resource-type"></a>circularGeofenceManagementCondition 资源类型
 
@@ -40,14 +40,14 @@ ms.locfileid: "43382736"
 |id|字符串|管理条件的唯一标识符。 创建时分配的系统生成值。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |uniqueName|字符串|管理条件的唯一名称。 在管理条件表达式中使用。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |displayName|String|管理条件的管理员定义名称。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
-|description|字符串|管理条件的管理员定义的说明。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
+|说明|字符串|管理条件的管理员定义的说明。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |createdDateTime|DateTimeOffset|管理条件的创建时间。 生成的服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |modifiedDateTime|DateTimeOffset|上次修改管理条件的时间。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|管理条件的 ETag。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|适用于此管理条件的平台。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |latitude|双精度|以度为单位的纬度，介于-90 和 + 90 之间（含）。|
 |longitude|Double|以度为单位的经度，介于-180 和 + 180 之间（含）。|
-|radiusInMeters|单精度|以米为单位的半径。|
+|radiusInMeters|单一|以米为单位的半径。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -75,9 +75,9 @@ ms.locfileid: "43382736"
   "applicablePlatforms": [
     "String"
   ],
-  "latitude": "<Unknown Primitive Type Edm.Double>",
-  "longitude": "<Unknown Primitive Type Edm.Double>",
-  "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
+  "latitude": "4.2",
+  "longitude": "4.2",
+  "radiusInMeters": 4.2
 }
 ```
 

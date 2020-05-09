@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c775fa54ce15d4e35fd04c2777bbc2b247c13104
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: eb4f472594a57f3380c554b2187d99aa5d94f622
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43432649"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177966"
 ---
 # <a name="create-macosgeneraldeviceconfiguration"></a>创建 macOSGeneralDeviceConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "43432649"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -56,13 +56,13 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |compliantAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|符合性中的应用列表（允许列表或阻止列表，由 CompliantAppListType 控制）。 该集合最多可包含 10000 个元素。|
@@ -113,6 +113,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |classroomForceRequestPermissionToLeaveClasses|Boolean|指示在非托管课程中通过课堂注册的学生是否需要在尝试离开本课程时向教师请求权限。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
 |classroomForceUnpromptedAppAndDeviceLock|Boolean|指示是否允许教师在不提示学生的情况下锁定应用或设备。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
 |iCloudBlockActivityContinuation|Boolean|指示是否阻止用户继续在另一台 iOS 或 MacOS 设备（MacOS 10.15 或更高版本）上的 MacOS 设备上启动的工作。|
+|privacyAccessControls|[macOSPrivacyAccessControlItem](../resources/intune-deviceconfig-macosprivacyaccesscontrolitem.md)集合|隐私首选项策略控制的列表。 该集合最多可包含 10000 个元素。|
 
 
 
@@ -126,7 +127,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 3146
+Content-length: 4545
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -215,7 +216,46 @@ Content-length: 3146
   "classroomForceAutomaticallyJoinClasses": true,
   "classroomForceRequestPermissionToLeaveClasses": true,
   "classroomForceUnpromptedAppAndDeviceLock": true,
-  "iCloudBlockActivityContinuation": true
+  "iCloudBlockActivityContinuation": true,
+  "privacyAccessControls": [
+    {
+      "@odata.type": "microsoft.graph.macOSPrivacyAccessControlItem",
+      "displayName": "Display Name value",
+      "identifier": "Identifier value",
+      "identifierType": "path",
+      "codeRequirement": "Code Requirement value",
+      "staticCodeValidation": true,
+      "blockCamera": true,
+      "blockMicrophone": true,
+      "blockScreenCapture": true,
+      "blockListenEvent": true,
+      "speechRecognition": "enabled",
+      "accessibility": "enabled",
+      "addressBook": "enabled",
+      "calendar": "enabled",
+      "reminders": "enabled",
+      "photos": "enabled",
+      "mediaLibrary": "enabled",
+      "fileProviderPresence": "enabled",
+      "systemPolicyAllFiles": "enabled",
+      "systemPolicySystemAdminFiles": "enabled",
+      "systemPolicyDesktopFolder": "enabled",
+      "systemPolicyDocumentsFolder": "enabled",
+      "systemPolicyDownloadsFolder": "enabled",
+      "systemPolicyNetworkVolumes": "enabled",
+      "systemPolicyRemovableVolumes": "enabled",
+      "postEvent": "enabled",
+      "appleEventsAllowedReceivers": [
+        {
+          "@odata.type": "microsoft.graph.macOSAppleEventReceiver",
+          "codeRequirement": "Code Requirement value",
+          "identifier": "Identifier value",
+          "identifierType": "path",
+          "allowed": true
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -224,7 +264,7 @@ Content-length: 3146
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3318
+Content-Length: 4717
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -316,7 +356,46 @@ Content-Length: 3318
   "classroomForceAutomaticallyJoinClasses": true,
   "classroomForceRequestPermissionToLeaveClasses": true,
   "classroomForceUnpromptedAppAndDeviceLock": true,
-  "iCloudBlockActivityContinuation": true
+  "iCloudBlockActivityContinuation": true,
+  "privacyAccessControls": [
+    {
+      "@odata.type": "microsoft.graph.macOSPrivacyAccessControlItem",
+      "displayName": "Display Name value",
+      "identifier": "Identifier value",
+      "identifierType": "path",
+      "codeRequirement": "Code Requirement value",
+      "staticCodeValidation": true,
+      "blockCamera": true,
+      "blockMicrophone": true,
+      "blockScreenCapture": true,
+      "blockListenEvent": true,
+      "speechRecognition": "enabled",
+      "accessibility": "enabled",
+      "addressBook": "enabled",
+      "calendar": "enabled",
+      "reminders": "enabled",
+      "photos": "enabled",
+      "mediaLibrary": "enabled",
+      "fileProviderPresence": "enabled",
+      "systemPolicyAllFiles": "enabled",
+      "systemPolicySystemAdminFiles": "enabled",
+      "systemPolicyDesktopFolder": "enabled",
+      "systemPolicyDocumentsFolder": "enabled",
+      "systemPolicyDownloadsFolder": "enabled",
+      "systemPolicyNetworkVolumes": "enabled",
+      "systemPolicyRemovableVolumes": "enabled",
+      "postEvent": "enabled",
+      "appleEventsAllowedReceivers": [
+        {
+          "@odata.type": "microsoft.graph.macOSAppleEventReceiver",
+          "codeRequirement": "Code Requirement value",
+          "identifier": "Identifier value",
+          "identifierType": "path",
+          "allowed": true
+        }
+      ]
+    }
+  ]
 }
 ```
 

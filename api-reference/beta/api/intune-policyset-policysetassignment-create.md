@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e8beb9b33b51f3da45c3ed3c56d40550db13d5ea
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2b097e7ef8a6d87307a8f407d9a9e299a9b78e3c
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462622"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179262"
 ---
 # <a name="create-policysetassignment"></a>创建 policySetAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "43462622"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,7 +53,7 @@ POST /deviceAppManagement/policySets/{policySetId}/assignments
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|PolicySetAssignment 的键。|
+|id|字符串|PolicySetAssignment 的键。|
 |lastModifiedDateTime|DateTimeOffset|PolicySetAssignment 的上次修改时间。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|PolicySetAssignment 的目标组|
 
@@ -69,12 +69,12 @@ POST /deviceAppManagement/policySets/{policySetId}/assignments
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId}/assignments
 Content-type: application/json
-Content-length: 159
+Content-length: 147
 
 {
   "@odata.type": "#microsoft.graph.policySetAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   }
 }
 ```
@@ -84,14 +84,14 @@ Content-length: 159
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 272
+Content-Length: 260
 
 {
   "@odata.type": "#microsoft.graph.policySetAssignment",
   "id": "0a8e7d40-7d40-0a8e-407d-8e0a407d8e0a",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   }
 }
 ```

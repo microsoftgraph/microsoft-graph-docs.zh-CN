@@ -2,18 +2,18 @@
 title: 带有 Intune 的板载托管设备-Microsoft Graph API
 description: 列出用于为租户组织进行板载（配置和初始化）设备的 Intune 终结点（REST）的 Microsoft Graph API。
 localization_priority: Normal
-author: rolyon
+author: dougeby
 ms.prod: intune
-ms.openlocfilehash: f32518db3843cdaf20c2af163c1fd01b40b6b58a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4daf91153afd8d31551882d529f9741e6e55a6f3
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527780"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177399"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>在 Intune 中注册设备以进行管理
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 

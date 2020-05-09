@@ -1,16 +1,16 @@
 ---
 title: androidManagedAppProtection 资源类型
 description: 用于配置针对特定安全组和 Android 设备上指定的一组应用的详细管理设置的策略
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3e034ed552f21ae25e6e6a866fbca7257283b5cc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8d275464f47d7edaede4251df692b586827d34f2
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530231"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178778"
 ---
 # <a name="androidmanagedappprotection-resource-type"></a>androidManagedAppProtection 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "42530231"
 
 继承自 [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List androidManagedAppProtections](../api/intune-mam-androidmanagedappprotection-list.md)|[androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) 集合|列出 [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) 对象的属性和关系。|
@@ -49,7 +49,7 @@ ms.locfileid: "42530231"
 |allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune-mam-managedappclipboardsharinglevel.md)|可以在托管设备上的应用之间共享剪贴板的级别。 继承自[managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`allApps`、`managedAppsWithPasteIn`、`managedApps`、`blocked`。|
 |dataBackupBlocked|Boolean|指示是否阻止备份托管应用的数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |deviceComplianceRequired|Boolean|指示是否需要设备符合性。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|managedBrowserToOpenLinksRequired|Boolean|指示是否应在托管浏览器应用中打开 Internet 链接。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|managedBrowserToOpenLinksRequired|Boolean|指示是否应在托管浏览器应用中打开 internet 链接，或从[ManagedAppProtection](../resources/intune-mam-managedappprotection.md)继承的 CustomBrowserProtocol （for iOS）或 CustomBrowserPackageId/CustomBrowserDisplayName （适用于 Android）指定的任何自定义浏览器。|
 |saveAsBlocked|Boolean|指示用户是否可以使用“另存为”菜单项保存受保护文件的副本。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |periodOfflineBeforeWipeIsEnforced|Duration|在擦除所有托管数据之前，允许应用保持从 Internet 断开连接的时间量。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |pinRequired|Boolean|指示是否需要应用级 PIN。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
@@ -67,6 +67,7 @@ ms.locfileid: "42530231"
 |minimumWarningOsVersion|字符串|低于指定版本的版本将导致托管应用访问公司数据时出现警告消息。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumRequiredAppVersion|字符串|低于指定版本的版本将阻止托管应用访问公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumWarningAppVersion|字符串|低于指定版本的版本将导致托管应用出现警告消息。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|managedBrowser|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|指示应在哪个托管浏览器中打开 internet 链接。 配置此属性时，ManagedBrowserToOpenLinksRequired 应为 true。 继承自[managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`notConfigured`、`microsoftEdge`。|
 |isAssigned|Boolean|指示策略是否部署到任何包含组。 继承自 [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)|
 |screenCaptureBlocked|Boolean|指示托管用户是否可以对托管应用进行屏幕截图|
 |disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|启用此设置后，如果启用设备级加密，则应用级加密将被禁用|
@@ -74,6 +75,8 @@ ms.locfileid: "42530231"
 |deployedAppCount|Int32|当前策略部署到的应用的计数。|
 |minimumRequiredPatchVersion|字符串|定义用户可以获得对应用的安全访问权限所需的最早的必需 Android 安全修补程序级别。|
 |minimumWarningPatchVersion|String|定义用户可以获得对应用的安全访问权限所需的最早推荐 Android 安全修补程序级别。|
+|customBrowserPackageId|字符串|在 Android 上打开 weblink 的首选自定义浏览器的唯一标识符。 配置此属性时，ManagedBrowserToOpenLinksRequired 应为 true。|
+|customBrowserDisplayName|字符串|首选自定义浏览器的友好名称，以在 Android 上打开 weblink。 配置此属性时，ManagedBrowserToOpenLinksRequired 应为 true。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -127,24 +130,18 @@ ms.locfileid: "42530231"
   "minimumWarningOsVersion": "String",
   "minimumRequiredAppVersion": "String",
   "minimumWarningAppVersion": "String",
+  "managedBrowser": "String",
   "isAssigned": true,
   "screenCaptureBlocked": true,
   "disableAppEncryptionIfDeviceEncryptionIsEnabled": true,
   "encryptAppData": true,
   "deployedAppCount": 1024,
   "minimumRequiredPatchVersion": "String",
-  "minimumWarningPatchVersion": "String"
+  "minimumWarningPatchVersion": "String",
+  "customBrowserPackageId": "String",
+  "customBrowserDisplayName": "String"
 }
 ```
-
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-     "Warning: /api-reference/v1.0/resources/intune-mam-androidmanagedappprotection.md/microsoft.graph.androidManagedAppProtection/allowedDataStorageLocations:
-    Inconsistent types between parameter (String) and table (Object)"
-  ],
-}
--->
 
 
 

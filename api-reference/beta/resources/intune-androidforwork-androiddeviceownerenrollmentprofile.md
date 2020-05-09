@@ -1,16 +1,16 @@
 ---
 title: androidDeviceOwnerEnrollmentProfile 资源类型
-description: 注册配置文件，用于使用 Google 的云管理注册 COSU 设备。
+description: 用于使用 Google 的云管理注册 Android 企业版设备的注册配置文件。
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4cbf037372b2e623bf389a01b1caa6aac348c669
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6fbe8b7d23831a4fba0eb015197eadc3e9c722db
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459316"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179416"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>androidDeviceOwnerEnrollmentProfile 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "43459316"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-注册配置文件，用于使用 Google 的云管理注册 COSU 设备。
+用于使用 Google 的云管理注册 Android 企业版设备的注册配置文件。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
@@ -36,19 +36,19 @@ ms.locfileid: "43459316"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|accountId|String|注册配置文件隶属的租户 GUID。|
+|accountId|字符串|注册配置文件隶属的租户 GUID。|
 |id|字符串|注册配置文件的唯一 GUID。|
 |displayName|字符串|注册配置文件的显示名称。|
-|description|String|注册配置文件的说明。|
+|说明|String|注册配置文件的说明。|
 |createdDateTime|DateTimeOffset|注册配置文件的创建日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改注册配置文件的日期/时间。|
-|tokenValue|String|为此注册配置文件最新创建的令牌的值。|
+|tokenValue|字符串|为此注册配置文件最新创建的令牌的值。|
 |tokenCreationDateTime|DateTimeOffset|创建最近创建的令牌的日期时间。|
 |tokenExpirationDateTime|DateTimeOffset|最新创建的令牌的到期日期/时间。|
 |enrolledDeviceCount|Int32|已使用此注册配置文件进行注册的 Android 设备总数。|
 |qrCodeContent|String|用于生成此令牌的 QR 码的字符串。|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|用于生成此令牌的 QR 码的字符串。|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 无

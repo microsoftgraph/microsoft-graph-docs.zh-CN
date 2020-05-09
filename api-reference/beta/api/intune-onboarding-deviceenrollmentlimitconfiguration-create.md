@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: db0985a06eb6f83faa57757b84e1d1f41ba52ce9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f94bd1e71b4c70025e7fb1f2833f465912627146
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43403455"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177301"
 ---
 # <a name="create-deviceenrollmentlimitconfiguration"></a>创建 deviceEnrollmentLimitConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "43403455"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -55,11 +55,12 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |:---|:---|:---|
 |id|字符串|继承自[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)的帐户的唯一标识符|
 |displayName|String|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的显示名称|
-|description|String|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的说明|
+|说明|String|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的说明|
 |priority|Int32|当用户存在于分配有注册配置的多个组中时，将使用优先级。 用户仅限于具有最低优先级值的配置。 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 格式的创建日期时间|
 |lastModifiedDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 的上次修改日期时间|
 |version|Int32|继承自[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)的设备注册配置的版本|
+|roleScopeTagIds|字符串集合|注册限制的可选角色范围标记。 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |limit|Int32|用户可注册的最大设备数|
 
 
@@ -74,7 +75,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations
 Content-type: application/json
-Content-length: 205
+Content-length: 267
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentLimitConfiguration",
@@ -82,6 +83,9 @@ Content-length: 205
   "description": "Description value",
   "priority": 8,
   "version": 7,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "limit": 5
 }
 ```
@@ -91,7 +95,7 @@ Content-length: 205
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 377
+Content-Length: 439
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentLimitConfiguration",
@@ -102,6 +106,9 @@ Content-Length: 377
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "version": 7,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "limit": 5
 }
 ```

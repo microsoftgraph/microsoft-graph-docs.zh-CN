@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67eefe54ed4b59ccc9923454f240863d54ac3ca2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: db16fac75dd402fe478145834709294cfdb2060f
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43389559"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179409"
 ---
 # <a name="termsandconditionsassignment-resource-type"></a>termsAndConditionsAssignment 资源类型
 
@@ -53,7 +53,7 @@ termsAndConditionsAssignment 实体表示对给定组的给定条款和条件 (T
   "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   }
 }
 ```

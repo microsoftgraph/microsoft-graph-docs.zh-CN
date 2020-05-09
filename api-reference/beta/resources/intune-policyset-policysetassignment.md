@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 14789c8c57b766dae61dfc467514ba6d095b764f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0729ac909dbe11829bdb98c54a2c73fe6c300f1e
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463365"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179346"
 ---
 # <a name="policysetassignment-resource-type"></a>policySetAssignment 资源类型
 
@@ -34,7 +34,7 @@ ms.locfileid: "43463365"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|PolicySetAssignment 的键。|
+|id|字符串|PolicySetAssignment 的键。|
 |lastModifiedDateTime|DateTimeOffset|PolicySetAssignment 的上次修改时间。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|PolicySetAssignment 的目标组|
 
@@ -55,7 +55,7 @@ ms.locfileid: "43463365"
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   }
 }
 ```

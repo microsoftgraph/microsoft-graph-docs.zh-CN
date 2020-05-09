@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b44ed06c582e942305ca54843c60934bf0445956
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7b0a5cea38b4f0cf7bd24207ddf67a8f41a690d5
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376853"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178379"
 ---
 # <a name="targetedmanagedapppolicyassignment-resource-type"></a>targetedManagedAppPolicyAssignment 资源类型
 
@@ -54,7 +54,7 @@ ms.locfileid: "43376853"
   "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   },
   "source": "String",
   "sourceId": "String"

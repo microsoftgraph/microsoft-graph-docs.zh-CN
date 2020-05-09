@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 366765594a559ec8db966458c5a7a1dc2ed1ce10
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 44c9095efed42718f0f012d190943293f67368df
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453476"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177525"
 ---
 # <a name="configurationusage-enum-type"></a>configurationUsage 枚举类型
 
@@ -28,6 +28,7 @@ ConfigurationUsage 列表的可能值。
 |堵塞|0|许可证.|
 |必需|1|必需。|
 |支持|双面|可选。|
+|notConfigured|第三章|未配置。|
 
 
 

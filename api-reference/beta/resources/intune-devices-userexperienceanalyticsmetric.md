@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 29fe908ce4e729766edab015dc91f3109f6e9b51
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e8239ac7e4583841d3c8a095bc85d9c9eb9b9d78
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464991"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178393"
 ---
 # <a name="userexperienceanalyticsmetric-resource-type"></a>userExperienceAnalyticsMetric 资源类型
 
@@ -34,9 +34,9 @@ User experience analytics 指标包含 user experience anlaytics 类别的分数
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 指标的唯一标识符。|
+|id|字符串|User experience analytics 指标的唯一标识符。|
 |值|双精度|User experience analytics 指标的值。|
-|处理器|String|User experience analytics 指标的单位。|
+|处理器|字符串|User experience analytics 指标的单位。|
 
 ## <a name="relationships"></a>关系
 无
@@ -53,7 +53,7 @@ User experience analytics 指标包含 user experience anlaytics 类别的分数
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
   "id": "String (identifier)",
-  "value": "<Unknown Primitive Type Edm.Double>",
+  "value": "4.2",
   "unit": "String"
 }
 ```

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 73877980b57b3df245893fea9df4898241fe186d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 07b415eb1fc7015be076861b5db654c80dd6de22
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470604"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178834"
 ---
 # <a name="insightvaluedouble-resource-type"></a>insightValueDouble 资源类型
 
@@ -43,7 +43,7 @@ ms.locfileid: "43470604"
 ``` json
 {
   "@odata.type": "#microsoft.graph.insightValueDouble",
-  "value": "<Unknown Primitive Type Edm.Double>"
+  "value": "4.2"
 }
 ```
 

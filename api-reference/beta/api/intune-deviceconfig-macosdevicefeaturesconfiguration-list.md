@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e9dfac260f206adc4bd9d1ab6a67ca47dff46f1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9ec23fdd99ca0bc7585121ac5b15e42237098b8e
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43438130"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177910"
 ---
 # <a name="list-macosdevicefeaturesconfigurations"></a>列出 macOSDeviceFeaturesConfigurations
 
@@ -29,7 +29,7 @@ ms.locfileid: "43438130"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2985
+Content-Length: 4556
 
 {
   "value": [
@@ -144,10 +144,50 @@ Content-Length: 2985
         }
       ],
       "singleSignOnExtension": {
-        "@odata.type": "microsoft.graph.singleSignOnExtension"
+        "@odata.type": "microsoft.graph.credentialSingleSignOnExtension",
+        "extensionIdentifier": "Extension Identifier value",
+        "teamIdentifier": "Team Identifier value",
+        "domains": [
+          "Domains value"
+        ],
+        "realm": "Realm value",
+        "configurations": [
+          {
+            "@odata.type": "microsoft.graph.keyStringValuePair",
+            "key": "Key value",
+            "value": "Value value"
+          }
+        ]
       },
       "macOSSingleSignOnExtension": {
-        "@odata.type": "microsoft.graph.macOSSingleSignOnExtension"
+        "@odata.type": "microsoft.graph.macOSKerberosSingleSignOnExtension",
+        "realm": "Realm value",
+        "domains": [
+          "Domains value"
+        ],
+        "blockAutomaticLogin": true,
+        "cacheName": "Cache Name value",
+        "credentialBundleIdAccessControlList": [
+          "Credential Bundle Id Access Control List value"
+        ],
+        "domainRealms": [
+          "Domain Realms value"
+        ],
+        "isDefaultRealm": true,
+        "passwordBlockModification": true,
+        "passwordExpirationDays": 6,
+        "passwordExpirationNotificationDays": 2,
+        "userPrincipalName": "User Principal Name value",
+        "passwordRequireActiveDirectoryComplexity": true,
+        "passwordPreviousPasswordBlockCount": 2,
+        "passwordMinimumLength": 5,
+        "passwordMinimumAgeDays": 6,
+        "passwordRequirementsDescription": "Password Requirements Description value",
+        "requireUserPresence": true,
+        "activeDirectorySiteCode": "Active Directory Site Code value",
+        "passwordEnableLocalSync": true,
+        "blockActiveDirectorySiteAutoDiscovery": true,
+        "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
       }
     }
   ]

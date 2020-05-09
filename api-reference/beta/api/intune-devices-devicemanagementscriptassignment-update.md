@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 80f58e471710e161af66ca006c2d906df5ae7427
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5521c3753deafb40279e2ec0e16bd2fa0b30316b
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426106"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44176545"
 ---
 # <a name="update-devicemanagementscriptassignment"></a>更新 deviceManagementScriptAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "43426106"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,7 +54,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assig
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Device management script group 分配实体的键。 此属性是只读的。|
+|id|字符串|Device management script group 分配实体的键。 此属性是只读的。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|要作为脚本目标的 Azure Active Directory 组的 Id。|
 
 
@@ -69,12 +69,12 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assig
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/assignments/{deviceManagementScriptAssignmentId}
 Content-type: application/json
-Content-length: 172
+Content-length: 160
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   }
 }
 ```
@@ -84,13 +84,13 @@ Content-length: 172
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 221
+Content-Length: 209
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptAssignment",
   "id": "a87a601e-601e-a87a-1e60-7aa81e607aa8",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   }
 }
 ```

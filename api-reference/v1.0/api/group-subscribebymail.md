@@ -5,16 +5,18 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3616a5125eca206e7f1cb3a5b62ee60098924db1
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 574e052cf93031cd1c868c43e837aa0e11e021ce
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124082"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178022"
 ---
 # <a name="group-subscribebymail"></a>组：subscribeByMail
 
-命名空间： microsoft. 调用此方法的 graph 将使当前用户能够接收此组的电子邮件通知、新帖子、事件和该组中的文件。 仅支持 Office 365 组。
+命名空间：microsoft.graph
+
+调用此方法将允许当前用户接收有关该组中新帖子、活动和文件的电子邮件通知。仅支持 Office 365 组。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

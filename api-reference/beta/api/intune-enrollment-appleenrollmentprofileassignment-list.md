@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 264b94a856cbe3818e8ca61a2d046d5a28c8ee99
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 452abee6423b2cb2f9fbf0662f99ae71b9a6bfdf
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43321235"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177791"
 ---
 # <a name="list-appleenrollmentprofileassignments"></a>列出 appleEnrollmentProfileAssignments
 
@@ -29,7 +29,7 @@ ms.locfileid: "43321235"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/appleUserInitiatedEnrollme
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 274
+Content-Length: 262
 
 {
   "value": [
@@ -73,7 +73,7 @@ Content-Length: 274
       "@odata.type": "#microsoft.graph.appleEnrollmentProfileAssignment",
       "id": "5b603771-3771-5b60-7137-605b7137605b",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
       }
     }
   ]

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 96a41b3fe88de0263afff832070176466c8f64e8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b8a5babb0841bb2833a4441cc3b89cb14b7a253f
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43335354"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179079"
 ---
 # <a name="update-windowsidentityprotectionconfiguration"></a>更新 windowsIdentityProtectionConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "43335354"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -57,22 +57,22 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |useSecurityKeyForSignin|Boolean|用于将 Windows Hello 安全密钥启用为登录凭据的布尔值。|
 |enhancedAntiSpoofingForFacialFeaturesEnabled|Boolean|用于在 Windows Hello 人脸身份验证中为面部功能识别启用增强型反欺骗的布尔值。|
 |pinMinimumLength|Int32|整数值，用于设置 Windows Hello 企业版 PIN 所需的最小字符数。 有效值为4到127，且小于或等于最大 PIN 的值集。 有效值为4至127|
 |pinMaximumLength|Int32|整数值，用于设置允许的工作 PIN 的最大字符数。 有效值为4到127，并大于或等于最小 PIN 的值集。 有效值为4至127|
-|pinUppercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|此值配置 Windows Hello 企业版 PIN 中的大写字符的使用。 可取值为：`blocked`、`required`、`allowed`。|
-|pinLowercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|此值配置 Windows Hello 企业版 PIN 中的小写字符的使用。 可取值为：`blocked`、`required`、`allowed`。|
-|pinSpecialCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|控制在 Windows Hello 企业版 PIN 中使用特殊字符的功能。 可取值为：`blocked`、`required`、`allowed`。|
+|pinUppercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|此值配置 Windows Hello 企业版 PIN 中的大写字符的使用。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
+|pinLowercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|此值配置 Windows Hello 企业版 PIN 中的小写字符的使用。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
+|pinSpecialCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|控制在 Windows Hello 企业版 PIN 中使用特殊字符的功能。 可取值为：`blocked`、`required`、`allowed`、`notConfigured`。|
 |pinExpirationInDays|Int32|Integer 值指定在系统要求用户更改 PIN 之前可以使用 PIN 的时间段（以天为单位）。 有效值为0至730，含0到。 有效值为 0 至 730|
 |pinPreviousBlockCount|Int32|控制阻止用户使用过去的 Pin 的功能。 必须在0和50之间设置此值（包括这两个值），并且用户的当前 PIN 包含在该计数中。 如果设置为0，则不存储以前的 Pin。 PIN 历史记录不会通过 PIN 重置来保留。 有效值为 0 至 50|
 |pinRecoveryEnabled|Boolean|允许用户使用 Windows Hello 企业版 PIN 恢复服务更改其 PIN 的布尔值。|

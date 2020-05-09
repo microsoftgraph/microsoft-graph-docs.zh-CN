@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b6beb833148b3589089cab48d68775ff4778cfb5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 12f85ea1970c889ba475da2414f8068f86fe302e
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442212"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178582"
 ---
 # <a name="list-intunebrandingprofileassignments"></a>列出 intuneBrandingProfileAssignments
 
@@ -29,7 +29,7 @@ ms.locfileid: "43442212"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+|Application|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{in
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 273
+Content-Length: 261
 
 {
   "value": [
@@ -73,7 +73,7 @@ Content-Length: 273
       "@odata.type": "#microsoft.graph.intuneBrandingProfileAssignment",
       "id": "ee38a117-a117-ee38-17a1-38ee17a138ee",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
       }
     }
   ]

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f828782fa90f42d3e2e67bec2125998bb2d8ef7e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4a61ae6b5badd624c15b4d1894d80d7d33ade638
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43372013"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178225"
 ---
 # <a name="managedappprotection-resource-type"></a>managedAppProtection 资源类型
 
@@ -36,10 +36,10 @@ ms.locfileid: "43372013"
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|字符串|策略显示名称。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|description|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|说明|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|创建策略的日期和时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|字符串|实体的键。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|实体的版本。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|持续时间|设备未连接到 Internet 时在该时间段后检查访问权限。|
@@ -50,7 +50,7 @@ ms.locfileid: "43372013"
 |allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune-mam-managedappclipboardsharinglevel.md)|可以在托管设备上的应用之间共享剪贴板的级别。 可取值为：`allApps`、`managedAppsWithPasteIn`、`managedApps`、`blocked`。|
 |dataBackupBlocked|Boolean|指示是否阻止备份托管应用的数据。|
 |deviceComplianceRequired|Boolean|指示是否需要设备合规性。|
-|managedBrowserToOpenLinksRequired|Boolean|指示是否应在托管浏览器应用中打开 Internet 链接。|
+|managedBrowserToOpenLinksRequired|Boolean|指示是应在 managed browser 应用中打开 internet 链接，还是应在 CustomBrowserProtocol （for iOS）或 CustomBrowserPackageId/CustomBrowserDisplayName 指定的任何自定义浏览器中打开 internet 链接（针对 Android）|
 |saveAsBlocked|Boolean|指示用户是否可以使用“另存为”菜单项保存受保护文件的副本。|
 |periodOfflineBeforeWipeIsEnforced|持续时间|在擦除所有托管数据之前，允许应用保持从 Internet 断开连接的时间量。|
 |pinRequired|Boolean|指示是否需要应用级 pin。|
@@ -76,7 +76,7 @@ ms.locfileid: "43372013"
 |allowedOutboundClipboardSharingExceptionLength|Int32|指定可以从组织数据和帐户中剪切或复制到任何应用程序的字符数。 此设置将覆盖 AllowedOutboundClipboardSharingLevel 限制。 默认值为 "0" 表示不允许异常。|
 |notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|指定应用程序通知限制。 可取值为：`allow`、`blockOrganizationalData`、`block`。|
 |previousPinBlockCount|Int32|需要 pin 才能与此属性中指定的编号唯一。|
-|managedBrowser|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|指示应在哪个托管浏览器中打开 internet 链接。 可取值为：`notConfigured`、`microsoftEdge`。|
+|managedBrowser|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|指示应在哪个托管浏览器中打开 internet 链接。 配置此属性时，ManagedBrowserToOpenLinksRequired 应为 true。 可取值为：`notConfigured`、`microsoftEdge`。|
 |maximumAllowedDeviceThreatLevel|[managedAppDeviceThreatLevel](../resources/intune-mam-managedappdevicethreatlevel.md)|允许的最大设备威胁级别，如 MTD 应用程序所报告的那样。 可取值为：`notConfigured`、`secured`、`low`、`medium`、`high`。|
 |mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|确定在不满足移动威胁防御威胁阈值时要采取的操作。 警告不是此属性的受支持的值。 可取值为：`block`、`wipe`、`warn`。|
 |blockDataIngestionIntoOrganizationDocuments|Boolean|指示用户是否可以将数据导入到组织文档中。|

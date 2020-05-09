@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b46c8958a82c02145ef7107333f52a22a0a2848c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6350e588fd80faf10a02b706d4862afefa32ba24
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437950"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177980"
 ---
 # <a name="get-macosextensionsconfiguration"></a>获取 macOSExtensionsConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "43437950"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1660
+Content-Length: 2278
 
 {
   "value": {
@@ -115,6 +115,24 @@ Content-Length: 1660
         "@odata.type": "microsoft.graph.macOSKernelExtension",
         "teamIdentifier": "Team Identifier value",
         "bundleId": "Bundle Id value"
+      }
+    ],
+    "systemExtensionsBlockOverride": true,
+    "systemExtensionsAllowedTeamIdentifiers": [
+      "System Extensions Allowed Team Identifiers value"
+    ],
+    "systemExtensionsAllowed": [
+      {
+        "@odata.type": "microsoft.graph.macOSSystemExtension",
+        "teamIdentifier": "Team Identifier value",
+        "bundleId": "Bundle Id value"
+      }
+    ],
+    "systemExtensionsAllowedTypes": [
+      {
+        "@odata.type": "microsoft.graph.macOSSystemExtensionTypeMapping",
+        "teamIdentifier": "Team Identifier value",
+        "allowedTypes": "networkExtensionsAllowed"
       }
     ]
   }

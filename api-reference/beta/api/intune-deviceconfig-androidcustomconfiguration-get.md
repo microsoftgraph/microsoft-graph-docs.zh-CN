@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 484940d86975c96557d4c45de0d10ee882d5c24f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ad0d3c784969ca20e8cd35ebeb1caebab5baaeb2
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43352443"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178764"
 ---
 # <a name="get-androidcustomconfiguration"></a>获取 androidCustomConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "43352443"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1569
+Content-Length: 1512
 
 {
   "value": {
@@ -108,12 +108,10 @@ Content-Length: 1569
     "version": 7,
     "omaSettings": [
       {
-        "@odata.type": "microsoft.graph.omaSettingInteger",
+        "@odata.type": "microsoft.graph.omaSetting",
         "displayName": "Display Name value",
         "description": "Description value",
-        "omaUri": "Oma Uri value",
-        "value": 5,
-        "isReadOnly": true
+        "omaUri": "Oma Uri value"
       }
     ]
   }
