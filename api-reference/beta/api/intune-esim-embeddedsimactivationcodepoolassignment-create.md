@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f70a4c820cc41ad43738bbc6e1fe8676342b2173
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 72ed466ce690654922e2fac1cbcc4cbb7bbddcef
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452199"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44174683"
 ---
 # <a name="create-embeddedsimactivationcodepoolassignment"></a>创建 embeddedSIMActivationCodePoolAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "43452199"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,7 +53,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|嵌入的 SIM 激活代码池分配的唯一标识符。 创建时分配的系统生成值。|
+|id|字符串|嵌入的 SIM 激活代码池分配的唯一标识符。 创建时分配的系统生成值。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|嵌入的 SIM 激活代码池的目标组的类型。|
 
 
@@ -68,12 +68,12 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}/assignments
 Content-type: application/json
-Content-length: 179
+Content-length: 173
 
 {
   "@odata.type": "#microsoft.graph.embeddedSIMActivationCodePoolAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   }
 }
 ```
@@ -83,13 +83,13 @@ Content-length: 179
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 228
+Content-Length: 222
 
 {
   "@odata.type": "#microsoft.graph.embeddedSIMActivationCodePoolAssignment",
   "id": "e7304dcc-4dcc-e730-cc4d-30e7cc4d30e7",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   }
 }
 ```

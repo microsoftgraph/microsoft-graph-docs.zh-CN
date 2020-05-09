@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 14ab47410658484fda0898f74534ff0ae29fe009
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a443f76a6ab2e75d457621b4f8872a2c8c0daa91
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453967"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177595"
 ---
 # <a name="list-circulargeofencemanagementconditions"></a>列出 circularGeofenceManagementConditions
 
@@ -29,7 +29,7 @@ ms.locfileid: "43453967"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managementConditions
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 701
+Content-Length: 628
 
 {
   "value": [
@@ -82,9 +82,9 @@ Content-Length: 701
       "applicablePlatforms": [
         "androidForWork"
       ],
-      "latitude": "<Unknown Primitive Type Edm.Double>",
-      "longitude": "<Unknown Primitive Type Edm.Double>",
-      "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
+      "latitude": 2.6666666666666665,
+      "longitude": 3.0,
+      "radiusInMeters": 4.666666666666667
     }
   ]
 }

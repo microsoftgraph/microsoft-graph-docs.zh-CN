@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8bdc3508e06bd52b4c447d94dc233d5c26d6d5cb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ddd54ba8f88b5e44df797abe7eedd33c31dce7a0
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440688"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44174242"
 ---
 # <a name="list-mobileapppolicysetitems"></a>列出 mobileAppPolicySetItems
 
@@ -29,7 +29,7 @@ ms.locfileid: "43440688"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 687
+Content-Length: 791
 
 {
   "value": [
@@ -84,7 +84,9 @@ Content-Length: 687
       ],
       "intent": "required",
       "settings": {
-        "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+        "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
+        "vpnConfigurationId": "Vpn Configuration Id value",
+        "uninstallOnDeviceRemoval": true
       }
     }
   ]

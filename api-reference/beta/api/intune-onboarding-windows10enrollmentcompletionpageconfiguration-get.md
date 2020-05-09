@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f975fbd14c0944e4bf49fd6aafe41a4af8dca6b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 05ca80e8b76663f998c148baeffa2a40785db7ad
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43377492"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178442"
 ---
 # <a name="get-windows10enrollmentcompletionpageconfiguration"></a>获取 windows10EnrollmentCompletionPageConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "43377492"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 915
+Content-Length: 983
 
 {
   "value": {
@@ -80,6 +80,9 @@ Content-Length: 915
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "version": 7,
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
     "showInstallationProgress": true,
     "blockDeviceSetupRetryByUser": true,
     "allowDeviceResetOnInstallFailure": true,

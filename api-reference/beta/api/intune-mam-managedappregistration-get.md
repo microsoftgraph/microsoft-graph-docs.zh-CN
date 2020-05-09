@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 431caa0583d00441dae88d0b7d43b7e2c48b8fc2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 649fa7763106905567787fa9b557d94826e0af0c
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462650"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177567"
 ---
 # <a name="get-managedappregistration"></a>获取 managedAppRegistration
 
@@ -29,7 +29,7 @@ ms.locfileid: "43462650"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+|Application|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/managedAppRegistrations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 956
+Content-Length: 1003
 
 {
   "value": {
@@ -90,7 +90,8 @@ Content-Length: 956
     ],
     "userId": "User Id value",
     "appIdentifier": {
-      "@odata.type": "microsoft.graph.mobileAppIdentifier"
+      "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+      "packageId": "Package Id value"
     },
     "id": "5496aa60-aa60-5496-60aa-965460aa9654",
     "version": "Version value"

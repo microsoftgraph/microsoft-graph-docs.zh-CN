@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: be6870986a4d98d0170d8b7c31b9f2af7afce567
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b449828f9a2e2e7ca3f7dd359504fe2e7a36053e
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43391709"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178428"
 ---
 # <a name="getpolicynoncompliancesummaryreport-action"></a>getPolicyNonComplianceSummaryReport 操作
 
@@ -29,7 +29,7 @@ ms.locfileid: "43391709"
 |:---|:---|
 |委派（工作或学校帐户）|Devicemanagementconfiguration.readwrite.all、Devicemanagementconfiguration.readwrite.all、Devicemanagementapps.readwrite.all、all、Devicemanagementapps.readwrite.all、all、devicemanagementmanageddevices.readwrite.all、all、devicemanagementmanageddevices.readwrite.all、all 和 Read. all。 All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|Devicemanagementconfiguration.readwrite.all、Devicemanagementconfiguration.readwrite.all、Devicemanagementapps.readwrite.all、all、Devicemanagementapps.readwrite.all、all、devicemanagementmanageddevices.readwrite.all、all、devicemanagementmanageddevices.readwrite.all、all 和 Read. all。 All|
+|Application|Devicemanagementconfiguration.readwrite.all、Devicemanagementconfiguration.readwrite.all、Devicemanagementapps.readwrite.all、all、Devicemanagementapps.readwrite.all、all、devicemanagementmanageddevices.readwrite.all、all、devicemanagementmanageddevices.readwrite.all、all 和 Read. all。 All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -102,10 +102,10 @@ Content-length: 278
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 54
+Content-Length: 107
 
 {
-  "value": "<Unknown Primitive Type Edm.Stream>"
+  "value": "Z2V0UG9saWN5Tm9uQ29tcGxpYW5jZVN1bW1hcnlSZXBvcnQgSW50dW5lIERvYyBTYW1wbGUgLTQzMjEwMjAyNg=="
 }
 ```
 

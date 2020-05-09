@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e292326fa3596c9bbf74cdc69a0a28044e1e21ae
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cb98b9b00369f9d3155dd824a5804cd56bc9cd8d
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452161"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44174620"
 ---
 # <a name="get-embeddedsimactivationcodepoolassignment"></a>获取 embeddedSIMActivationCodePoolAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "43452161"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -68,14 +68,14 @@ GET https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCodeP
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 257
+Content-Length: 251
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.embeddedSIMActivationCodePoolAssignment",
     "id": "e7304dcc-4dcc-e730-cc4d-30e7cc4d30e7",
     "target": {
-      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
     }
   }
 }

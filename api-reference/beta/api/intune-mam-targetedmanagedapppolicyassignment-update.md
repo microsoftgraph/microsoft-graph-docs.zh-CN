@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5fb591b2d1ccbc22260e21c0be73f52d62ae0b44
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b042361ef684c09d59ecb44934391118bfc841d5
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448808"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178344"
 ---
 # <a name="update-targetedmanagedapppolicyassignment"></a>更新 targetedManagedAppPolicyAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "43448808"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -57,10 +57,10 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Id|
+|id|字符串|Id|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|用于部署到组或应用的标识符|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|用于部署到组、direct 或包裹/policySet 的资源类型。 可取值为：`direct`、`policySets`。|
-|sourceId|String|用于部署到组的资源的标识符|
+|sourceId|字符串|用于部署到组的资源的标识符|
 
 
 
@@ -74,12 +74,12 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/assignments/{targetedManagedAppPolicyAssignmentId}
 Content-type: application/json
-Content-length: 235
+Content-length: 223
 
 {
   "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   },
   "source": "policySets",
   "sourceId": "Source Id value"
@@ -91,13 +91,13 @@ Content-length: 235
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 284
+Content-Length: 272
 
 {
   "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
   "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   },
   "source": "policySets",
   "sourceId": "Source Id value"

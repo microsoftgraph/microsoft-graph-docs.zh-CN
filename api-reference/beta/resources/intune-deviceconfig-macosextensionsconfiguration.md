@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f1dd814e49c01a23624e0ea9af77a7bc9f57b241
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2bf171e535e38561fd4020db905c290280be6840
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462502"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179212"
 ---
 # <a name="macosextensionsconfiguration-resource-type"></a>macOSExtensionsConfiguration 资源类型
 
@@ -39,18 +39,22 @@ MacOS 扩展配置文件。
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|布尔值|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|kernelExtensionOverridesAllowed|布尔值|如果设置为 true，则用户可以批准配置文件配置文件未明确允许的其他内核扩展。|
-|kernelExtensionAllowedTeamIdentifiers|String collection|将允许加载此列表中由团队标识符有效签名的所有内核扩展。|
+|kernelExtensionOverridesAllowed|Boolean|如果设置为 true，则用户可以批准配置文件配置文件未明确允许的其他内核扩展。|
+|kernelExtensionAllowedTeamIdentifiers|字符串集合|将允许加载此列表中由团队标识符有效签名的所有内核扩展。|
 |kernelExtensionsAllowed|[macOSKernelExtension](../resources/intune-deviceconfig-macoskernelextension.md)集合|将允许加载的内核扩展的列表。 . 该集合最多可包含 500 个元素。|
+|systemExtensionsBlockOverride|Boolean|获取或设置是否允许用户批准配置文件未显式允许的其他系统扩展。|
+|systemExtensionsAllowedTeamIdentifiers|字符串集合|获取或设置允许的团队标识符的列表。 任何指定的团队标识符签名的系统扩展都将获得批准。|
+|systemExtensionsAllowed|[macOSSystemExtension](../resources/intune-deviceconfig-macossystemextension.md)集合|获取或设置允许的 macOS 系统扩展列表。 该集合最多可包含 500 个元素。|
+|systemExtensionsAllowedTypes|[macOSSystemExtensionTypeMapping](../resources/intune-deviceconfig-macossystemextensiontypemapping.md)集合|获取或设置允许的 macOS 系统扩展类型的列表。 该集合最多可包含 500 个元素。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -114,6 +118,24 @@ MacOS 扩展配置文件。
       "@odata.type": "microsoft.graph.macOSKernelExtension",
       "teamIdentifier": "String",
       "bundleId": "String"
+    }
+  ],
+  "systemExtensionsBlockOverride": true,
+  "systemExtensionsAllowedTeamIdentifiers": [
+    "String"
+  ],
+  "systemExtensionsAllowed": [
+    {
+      "@odata.type": "microsoft.graph.macOSSystemExtension",
+      "teamIdentifier": "String",
+      "bundleId": "String"
+    }
+  ],
+  "systemExtensionsAllowedTypes": [
+    {
+      "@odata.type": "microsoft.graph.macOSSystemExtensionTypeMapping",
+      "teamIdentifier": "String",
+      "allowedTypes": "String"
     }
   ]
 }

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4cc1d7e2530860ef47f664af814a9baf5788be6e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a46ca35809f28effdf45a5f85b8da171b30c9698
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445447"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178449"
 ---
 # <a name="create-windows10enrollmentcompletionpageconfiguration"></a>创建 windows10EnrollmentCompletionPageConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "43445447"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -55,19 +55,20 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |:---|:---|:---|
 |id|字符串|继承自[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)的帐户的唯一标识符|
 |displayName|String|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的显示名称|
-|description|String|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的说明|
+|说明|String|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的说明|
 |priority|Int32|当用户存在于分配有注册配置的多个组中时，将使用优先级。 用户仅限于具有最低优先级值的配置。 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 格式的创建日期时间|
 |lastModifiedDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 的上次修改日期时间|
 |version|Int32|继承自[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)的设备注册配置的版本|
+|roleScopeTagIds|字符串集合|注册限制的可选角色范围标记。 继承自 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |showInstallationProgress|Boolean|显示或隐藏用户的安装进度|
 |blockDeviceSetupRetryByUser|Boolean|允许用户在安装失败时重试安装程序|
 |allowDeviceResetOnInstallFailure|Boolean|允许或阻止在安装失败时重置设备|
 |allowLogCollectionOnInstallFailure|Boolean|在安装失败时允许或阻止日志集合|
-|customErrorMessage|String|设置自定义错误消息以在安装失败时显示|
+|customErrorMessage|字符串|设置自定义错误消息以在安装失败时显示|
 |installProgressTimeoutInMinutes|Int32|设置安装进度超时（分钟）|
 |allowDeviceUseOnInstallFailure|Boolean|允许用户在安装失败时继续使用设备|
-|selectedMobileAppIds|String 集合|选定的应用程序跟踪安装状态|
+|selectedMobileAppIds|字符串集合|选定的应用程序跟踪安装状态|
 |trackInstallProgressForAutopilotOnly|Boolean|仅显示 Autopilot 注册方案的安装进度|
 |disableUserStatusTrackingAfterFirstUser|Boolean|仅显示第一个用户后期注册的安装进度|
 
@@ -83,7 +84,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations
 Content-type: application/json
-Content-length: 684
+Content-length: 746
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -91,6 +92,9 @@ Content-length: 684
   "description": "Description value",
   "priority": 8,
   "version": 7,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "showInstallationProgress": true,
   "blockDeviceSetupRetryByUser": true,
   "allowDeviceResetOnInstallFailure": true,
@@ -111,7 +115,7 @@ Content-length: 684
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 856
+Content-Length: 918
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -122,6 +126,9 @@ Content-Length: 856
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "version": 7,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "showInstallationProgress": true,
   "blockDeviceSetupRetryByUser": true,
   "allowDeviceResetOnInstallFailure": true,

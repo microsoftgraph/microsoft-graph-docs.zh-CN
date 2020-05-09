@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c3263f1d55761b05f9bde82df054c659695e187
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fc5b4f2cb14a30ff825c4226286e40e805c3446e
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465581"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177756"
 ---
 # <a name="get-windowsinformationprotection"></a>获取 windowsInformationProtection
 
@@ -29,7 +29,7 @@ ms.locfileid: "43465581"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+|Application|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies/{man
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4405
+Content-Length: 4299
 
 {
   "value": {
@@ -155,9 +155,7 @@ Content-Length: 4405
         "displayName": "Display Name value",
         "ranges": [
           {
-            "@odata.type": "microsoft.graph.iPv6Range",
-            "lowerAddress": "Lower Address value",
-            "upperAddress": "Upper Address value"
+            "@odata.type": "microsoft.graph.ipRange"
           }
         ]
       }

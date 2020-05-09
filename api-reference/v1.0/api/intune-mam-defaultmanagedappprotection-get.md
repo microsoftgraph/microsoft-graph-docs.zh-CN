@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 52301ef823067a5abb08dc7dd8ddbdba1498ebcf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b012b5c98289709b4940ebb77313f2b127bedf5f
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457973"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177273"
 ---
 # <a name="get-defaultmanagedappprotection"></a>获取 defaultManagedAppProtection
 
@@ -27,7 +27,7 @@ ms.locfileid: "43457973"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/defaultManagedAppProtec
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2264
+Content-Length: 2304
 
 {
   "value": {
@@ -105,6 +105,7 @@ Content-Length: 2264
     "minimumWarningOsVersion": "Minimum Warning Os Version value",
     "minimumRequiredAppVersion": "Minimum Required App Version value",
     "minimumWarningAppVersion": "Minimum Warning App Version value",
+    "managedBrowser": "microsoftEdge",
     "appDataEncryptionType": "afterDeviceRestart",
     "screenCaptureBlocked": true,
     "encryptAppData": true,
@@ -124,9 +125,6 @@ Content-Length: 2264
   }
 }
 ```
-
-
-
 
 
 

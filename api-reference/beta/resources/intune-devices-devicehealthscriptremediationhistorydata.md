@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 396c52cbf797b0e0028e9f7ed71ca1e9fe05d34c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3e038295204a71d61366f0f39dfeb13050432aab
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43388500"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178540"
 ---
 # <a name="devicehealthscriptremediationhistorydata-resource-type"></a>deviceHealthScriptRemediationHistoryData 资源类型
 
@@ -42,7 +42,7 @@ ms.locfileid: "43388500"
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptRemediationHistoryData",
-  "date": "<Unknown Primitive Type Edm.Date>",
+  "date": "String (Date)",
   "remediatedDeviceCount": 1024,
   "noIssueDeviceCount": 1024
 }

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d3dfd7497f8e0cd530d24c23760fccba459c6b02
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 86094a4434712c8d49669bcdc92554470318e2cc
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454379"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178288"
 ---
 # <a name="getcachedreport-action"></a>getCachedReport 操作
 
@@ -29,7 +29,7 @@ ms.locfileid: "43454379"
 |:---|:---|
 |委派（工作或学校帐户）|Devicemanagementconfiguration.readwrite.all、Devicemanagementconfiguration.readwrite.all、Devicemanagementapps.readwrite.all、all、Devicemanagementapps.readwrite.all、all、devicemanagementmanageddevices.readwrite.all、all、devicemanagementmanageddevices.readwrite.all、all 和 Read. all。 All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|Devicemanagementconfiguration.readwrite.all、Devicemanagementconfiguration.readwrite.all、Devicemanagementapps.readwrite.all、all、Devicemanagementapps.readwrite.all、all、devicemanagementmanageddevices.readwrite.all、all、devicemanagementmanageddevices.readwrite.all、all 和 Read. all。 All|
+|Application|Devicemanagementconfiguration.readwrite.all、Devicemanagementconfiguration.readwrite.all、Devicemanagementapps.readwrite.all、all、Devicemanagementapps.readwrite.all、all、devicemanagementmanageddevices.readwrite.all、all、devicemanagementmanageddevices.readwrite.all、all 和 Read. all。 All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,7 +53,7 @@ POST /deviceManagement/reports/getCachedReport
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|尚未记录|
+|id|字符串|尚未记录|
 |select|String collection|尚未记录|
 |search|String|尚未记录|
 |groupBy|String collection|尚未记录|
@@ -98,10 +98,10 @@ Content-length: 209
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 54
+Content-Length: 79
 
 {
-  "value": "<Unknown Primitive Type Edm.Stream>"
+  "value": "Z2V0Q2FjaGVkUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDc5MjIxODQ3OA=="
 }
 ```
 

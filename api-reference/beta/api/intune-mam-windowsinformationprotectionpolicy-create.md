@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f51b0391b46a9ac1e83f036cc2c63f9ced40c942
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bd7c3dfea07ef02975442bc11e0d7b819c3c44b7
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43363381"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178176"
 ---
 # <a name="create-windowsinformationprotectionpolicy"></a>创建 windowsInformationProtectionPolicy
 
@@ -29,7 +29,7 @@ ms.locfileid: "43363381"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,10 +54,10 @@ POST /deviceAppManagement/windowsInformationProtectionPolicies
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|字符串|策略显示名称。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|description|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|说明|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|创建策略的日期和时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|字符串|实体的键。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|字符串|实体的版本。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune-mam-windowsinformationprotectionenforcementlevel.md)|WIP 强制等级。若要获取从[WindowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)继承的受支持值的枚举定义，请参阅。 可取值为：`noProtection`、`encryptAndAuditOnly`、`encryptAuditAndPrompt`、`encryptAuditAndBlock`。|
@@ -107,7 +107,7 @@ POST /deviceAppManagement/windowsInformationProtectionPolicies
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationProtectionPolicies
 Content-type: application/json
-Content-length: 4467
+Content-length: 4365
 
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionPolicy",
@@ -188,9 +188,7 @@ Content-length: 4467
       "displayName": "Display Name value",
       "ranges": [
         {
-          "@odata.type": "microsoft.graph.iPv6Range",
-          "lowerAddress": "Lower Address value",
-          "upperAddress": "Upper Address value"
+          "@odata.type": "microsoft.graph.ipRange"
         }
       ]
     }
@@ -255,7 +253,7 @@ Content-length: 4467
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4639
+Content-Length: 4537
 
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionPolicy",
@@ -339,9 +337,7 @@ Content-Length: 4639
       "displayName": "Display Name value",
       "ranges": [
         {
-          "@odata.type": "microsoft.graph.iPv6Range",
-          "lowerAddress": "Lower Address value",
-          "upperAddress": "Upper Address value"
+          "@odata.type": "microsoft.graph.ipRange"
         }
       ]
     }

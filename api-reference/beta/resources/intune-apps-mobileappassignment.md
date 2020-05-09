@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2d8ba23ac5c6f900bc516793c432b950e0b84f95
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8585cdada8c2f36fae74e46ff404543c6d5aa78c
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458595"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178134"
 ---
 # <a name="mobileappassignment-resource-type"></a>mobileAppAssignment 资源类型
 
@@ -34,12 +34,12 @@ ms.locfileid: "43458595"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |intent|[installIntent](../resources/intune-shared-installintent.md)|由管理员定义的安装意图。可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|由管理员定义的目标组分配。|
 |settings|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|由管理员定义的目标分配的设置。|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|资源类型，它是工作分配的源。 可取值为：`direct`、`policySets`。|
-|sourceId|String|工作分配的源的标识符。|
+|sourceId|字符串|工作分配的源的标识符。|
 
 ## <a name="relationships"></a>关系
 无
@@ -58,10 +58,12 @@ ms.locfileid: "43458595"
   "id": "String (identifier)",
   "intent": "String",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
+    "vpnConfigurationId": "String",
+    "uninstallOnDeviceRemoval": true
   },
   "source": "String",
   "sourceId": "String"

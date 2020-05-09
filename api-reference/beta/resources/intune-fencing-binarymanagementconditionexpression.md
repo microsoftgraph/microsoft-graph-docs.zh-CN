@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 575f5d14b3c7427976814405729f12ed48d8a3fa
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2ce144a72d649709b54a9e9acd48107fee118040
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442743"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179191"
 ---
 # <a name="binarymanagementconditionexpression-resource-type"></a>binaryManagementConditionExpression 资源类型
 
@@ -47,10 +47,226 @@ ms.locfileid: "43442743"
   "@odata.type": "#microsoft.graph.binaryManagementConditionExpression",
   "operator": "String",
   "firstOperand": {
-    "@odata.type": "microsoft.graph.managementConditionExpressionModel"
+    "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+    "operator": "String",
+    "firstOperand": {
+      "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+      "operator": "String",
+      "firstOperand": {
+        "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+        "operator": "String",
+        "firstOperand": {
+          "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+          "operator": "String",
+          "firstOperand": {
+            "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+            "operator": "String",
+            "firstOperand": {
+              "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+              "operator": "String",
+              "firstOperand": {
+                "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                "operator": "String",
+                "firstOperand": {
+                  "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                  "operator": "String",
+                  "firstOperand": {
+                    "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                    "operator": "String",
+                    "firstOperand": {
+                      "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                      "operator": "String",
+                      "firstOperand": {
+                        "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                        "operator": "String",
+                        "firstOperand": null,
+                        "secondOperand": {
+                          "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                          "operator": null,
+                          "firstOperand": null,
+                          "secondOperand": {
+                            "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                            "operator": null,
+                            "firstOperand": null,
+                            "secondOperand": {
+                              "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                              "operator": null,
+                              "firstOperand": null,
+                              "secondOperand": {
+                                "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                                "operator": null,
+                                "firstOperand": null,
+                                "secondOperand": {
+                                  "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                                  "operator": null,
+                                  "firstOperand": null,
+                                  "secondOperand": {
+                                    "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                                    "operator": null,
+                                    "firstOperand": null,
+                                    "secondOperand": {
+                                      "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                                      "operator": null,
+                                      "firstOperand": null,
+                                      "secondOperand": {
+                                        "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                                        "operator": null,
+                                        "firstOperand": null,
+                                        "secondOperand": {
+                                          "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                                          "operator": null,
+                                          "firstOperand": null,
+                                          "secondOperand": {
+                                            "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                                            "operator": null,
+                                            "firstOperand": null,
+                                            "secondOperand": {
+                                              "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                                              "operator": null,
+                                              "firstOperand": null,
+                                              "secondOperand": null
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "secondOperand": null
+                    },
+                    "secondOperand": null
+                  },
+                  "secondOperand": null
+                },
+                "secondOperand": null
+              },
+              "secondOperand": null
+            },
+            "secondOperand": null
+          },
+          "secondOperand": null
+        },
+        "secondOperand": null
+      },
+      "secondOperand": null
+    },
+    "secondOperand": null
   },
   "secondOperand": {
-    "@odata.type": "microsoft.graph.managementConditionExpressionModel"
+    "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+    "operator": "String",
+    "firstOperand": {
+      "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+      "operator": "String",
+      "firstOperand": {
+        "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+        "operator": "String",
+        "firstOperand": {
+          "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+          "operator": "String",
+          "firstOperand": {
+            "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+            "operator": "String",
+            "firstOperand": {
+              "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+              "operator": "String",
+              "firstOperand": {
+                "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                "operator": "String",
+                "firstOperand": {
+                  "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                  "operator": "String",
+                  "firstOperand": {
+                    "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                    "operator": "String",
+                    "firstOperand": {
+                      "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                      "operator": "String",
+                      "firstOperand": {
+                        "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                        "operator": "String",
+                        "firstOperand": {
+                          "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                          "operator": null,
+                          "firstOperand": null,
+                          "secondOperand": {
+                            "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                            "operator": null,
+                            "firstOperand": null,
+                            "secondOperand": {
+                              "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                              "operator": null,
+                              "firstOperand": null,
+                              "secondOperand": {
+                                "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                                "operator": null,
+                                "firstOperand": null,
+                                "secondOperand": {
+                                  "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                                  "operator": null,
+                                  "firstOperand": null,
+                                  "secondOperand": {
+                                    "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                                    "operator": null,
+                                    "firstOperand": null,
+                                    "secondOperand": {
+                                      "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                                      "operator": null,
+                                      "firstOperand": null,
+                                      "secondOperand": {
+                                        "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                                        "operator": null,
+                                        "firstOperand": null,
+                                        "secondOperand": {
+                                          "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                                          "operator": null,
+                                          "firstOperand": null,
+                                          "secondOperand": {
+                                            "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                                            "operator": null,
+                                            "firstOperand": null,
+                                            "secondOperand": {
+                                              "@odata.type": "microsoft.graph.binaryManagementConditionExpression",
+                                              "operator": null,
+                                              "firstOperand": null,
+                                              "secondOperand": null
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "secondOperand": null
+                      },
+                      "secondOperand": null
+                    },
+                    "secondOperand": null
+                  },
+                  "secondOperand": null
+                },
+                "secondOperand": null
+              },
+              "secondOperand": null
+            },
+            "secondOperand": null
+          },
+          "secondOperand": null
+        },
+        "secondOperand": null
+      },
+      "secondOperand": null
+    },
+    "secondOperand": null
   }
 }
 ```

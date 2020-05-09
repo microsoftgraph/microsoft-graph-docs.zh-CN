@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a69f853967927996519bcf8e00f4f389cc186035
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 659306ec8a908ddc32fd08d06b162fb9d7fc0cd5
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43428527"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178946"
 ---
 # <a name="get-windowsupdateforbusinessconfiguration"></a>获取 windowsUpdateForBusinessConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "43428527"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3173
+Content-Length: 3127
 
 {
   "value": {
@@ -125,8 +125,8 @@ Content-Length: 3173
     "businessReadyUpdatesOnly": "all",
     "skipChecksBeforeRestart": true,
     "updateWeeks": "firstWeek",
-    "qualityUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
-    "featureUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
+    "qualityUpdatesPauseStartDate": "2016-12-31",
+    "featureUpdatesPauseStartDate": "2016-12-31",
     "featureUpdatesRollbackWindowInDays": 2,
     "qualityUpdatesWillBeRolledBack": true,
     "featureUpdatesWillBeRolledBack": true,

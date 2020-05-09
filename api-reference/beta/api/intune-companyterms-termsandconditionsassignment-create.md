@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 109e382e5e0f9c8e27c662775d5a043a76a6a5e9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8dca17bb8493e30385821efb1f21da0c3b52c381
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436447"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177392"
 ---
 # <a name="create-termsandconditionsassignment"></a>创建 termsAndConditionsAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "43436447"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,7 +53,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的唯一标识符。|
+|id|字符串|实体的唯一标识符。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|将 T&C 策略分配到的分配目标。|
 
 
@@ -68,12 +68,12 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 Content-type: application/json
-Content-length: 168
+Content-length: 156
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   }
 }
 ```
@@ -83,13 +83,13 @@ Content-length: 168
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 217
+Content-Length: 205
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
   "id": "64c1a196-a196-64c1-96a1-c16496a1c164",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   }
 }
 ```

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7d071f91e4433edf2eda7d749aaea65a7d686d02
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5469f8c5c4ae35d69e92b6d1e007bf4a0b3703ea
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426462"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44176979"
 ---
 # <a name="getremediationhistory-function"></a>getRemediationHistory 函数
 
@@ -29,7 +29,7 @@ ms.locfileid: "43426462"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{devic
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 420
+Content-Length: 397
 
 {
   "value": {
@@ -74,7 +74,7 @@ Content-Length: 420
     "historyData": [
       {
         "@odata.type": "microsoft.graph.deviceHealthScriptRemediationHistoryData",
-        "date": "<Unknown Primitive Type Edm.Date>",
+        "date": "2016-12-31",
         "remediatedDeviceCount": 5,
         "noIssueDeviceCount": 2
       }

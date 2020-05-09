@@ -1,18 +1,18 @@
 ---
-title: 获取 windowsPhone81CustomConfiguration
-description: 读取 windowsPhone81CustomConfiguration 对象的属性和关系。
+title: 获取 featureFlightedConfiguration
+description: 读取 featureFlightedConfiguration 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d7a5112468dd9fe7afca6a49c8f4fadc8fb13a71
+ms.openlocfilehash: af6293458b983359c878a7648b1c410954957c24
 ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178974"
+ms.locfileid: "44178638"
 ---
-# <a name="get-windowsphone81customconfiguration"></a>获取 windowsPhone81CustomConfiguration
+# <a name="get-featureflightedconfiguration"></a>获取 featureFlightedConfiguration
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "44178974"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取 [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md) 对象的属性和关系。
+读取[featureFlightedConfiguration](../resources/intune-deviceconfig-featureflightedconfiguration.md)对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -55,7 +55,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md) 对象。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[featureFlightedConfiguration](../resources/intune-deviceconfig-featureflightedconfiguration.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -70,12 +70,12 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1519
+Content-Length: 1286
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.windowsPhone81CustomConfiguration",
-    "id": "0d98693c-693c-0d98-3c69-980d3c69980d",
+    "@odata.type": "#microsoft.graph.featureFlightedConfiguration",
+    "id": "c4725458-5458-c472-5854-72c4585472c4",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
@@ -105,15 +105,7 @@ Content-Length: 1519
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
-    "version": 7,
-    "omaSettings": [
-      {
-        "@odata.type": "microsoft.graph.omaSetting",
-        "displayName": "Display Name value",
-        "description": "Description value",
-        "omaUri": "Oma Uri value"
-      }
-    ]
+    "version": 7
   }
 }
 ```

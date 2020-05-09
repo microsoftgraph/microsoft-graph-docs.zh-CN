@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f87e5d43075158fe63d8618cf0fce1cab79676d3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f2d9750b35ed4103a2a2e603bcd9a25b7b6ff3b6
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43384925"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178057"
 ---
 # <a name="update-managementconditionstatement"></a>更新 managementConditionStatement
 
@@ -29,7 +29,7 @@ ms.locfileid: "43384925"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -56,7 +56,7 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 |:---|:---|:---|
 |id|字符串|管理条件语句的唯一标识符。 创建时分配的系统生成值。|
 |displayName|String|管理条件语句的管理员定义名称。|
-|description|字符串|管理员定义的管理条件语句的说明。|
+|说明|字符串|管理员定义的管理条件语句的说明。|
 |createdDateTime|DateTimeOffset|管理条件语句的创建时间。 生成的服务端。|
 |modifiedDateTime|DateTimeOffset|上次修改管理条件语句的时间。 更新了服务端。|
 |表达式|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|用于评估管理条件语句是否已激活/停用的管理条件语句表达式。|
@@ -76,14 +76,15 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managementConditionStatements/{managementConditionStatementId}
 Content-type: application/json
-Content-length: 323
+Content-length: 358
 
 {
   "@odata.type": "#microsoft.graph.managementConditionStatement",
   "displayName": "Display Name value",
   "description": "Description value",
   "expression": {
-    "@odata.type": "microsoft.graph.managementConditionExpression"
+    "@odata.type": "microsoft.graph.managementConditionExpressionString",
+    "value": "Value value"
   },
   "eTag": "ETag value",
   "applicablePlatforms": [
@@ -97,7 +98,7 @@ Content-length: 323
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 491
+Content-Length: 526
 
 {
   "@odata.type": "#microsoft.graph.managementConditionStatement",
@@ -107,7 +108,8 @@ Content-Length: 491
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "modifiedDateTime": "2017-01-01T00:00:22.8983556-08:00",
   "expression": {
-    "@odata.type": "microsoft.graph.managementConditionExpression"
+    "@odata.type": "microsoft.graph.managementConditionExpressionString",
+    "value": "Value value"
   },
   "eTag": "ETag value",
   "applicablePlatforms": [
