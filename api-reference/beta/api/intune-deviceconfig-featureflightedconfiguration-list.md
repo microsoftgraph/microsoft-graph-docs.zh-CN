@@ -1,18 +1,18 @@
 ---
-title: 列出 macOSExtensionsConfigurations
-description: 列出 macOSExtensionsConfiguration 对象的属性和关系。
+title: 列出 featureFlightedConfigurations
+description: 列出 featureFlightedConfiguration 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4a9e259f34f377d1ea9b5eb841542e85d5e517d1
+ms.openlocfilehash: c5057d13152fbaac2e4bb9b3cc3877051052ab7e
 ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177882"
+ms.locfileid: "44178631"
 ---
-# <a name="list-macosextensionsconfigurations"></a>列出 macOSExtensionsConfigurations
+# <a name="list-featureflightedconfigurations"></a>列出 featureFlightedConfigurations
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "44177882"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出[macOSExtensionsConfiguration](../resources/intune-deviceconfig-macosextensionsconfiguration.md)对象的属性和关系。
+列出[featureFlightedConfiguration](../resources/intune-deviceconfig-featureflightedconfiguration.md)对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[macOSExtensionsConfiguration](../resources/intune-deviceconfig-macosextensionsconfiguration.md)对象集合。
+如果成功，此方法在响应`200 OK`正文中返回响应代码和[featureFlightedConfiguration](../resources/intune-deviceconfig-featureflightedconfiguration.md)对象集合。
 
 ## <a name="example"></a>示例
 
@@ -66,13 +66,13 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2414
+Content-Length: 1364
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.macOSExtensionsConfiguration",
-      "id": "c273f4f6-f4f6-c273-f6f4-73c2f6f473c2",
+      "@odata.type": "#microsoft.graph.featureFlightedConfiguration",
+      "id": "c4725458-5458-c472-5854-72c4585472c4",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
@@ -102,36 +102,7 @@ Content-Length: 2414
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
-      "version": 7,
-      "kernelExtensionOverridesAllowed": true,
-      "kernelExtensionAllowedTeamIdentifiers": [
-        "Kernel Extension Allowed Team Identifiers value"
-      ],
-      "kernelExtensionsAllowed": [
-        {
-          "@odata.type": "microsoft.graph.macOSKernelExtension",
-          "teamIdentifier": "Team Identifier value",
-          "bundleId": "Bundle Id value"
-        }
-      ],
-      "systemExtensionsBlockOverride": true,
-      "systemExtensionsAllowedTeamIdentifiers": [
-        "System Extensions Allowed Team Identifiers value"
-      ],
-      "systemExtensionsAllowed": [
-        {
-          "@odata.type": "microsoft.graph.macOSSystemExtension",
-          "teamIdentifier": "Team Identifier value",
-          "bundleId": "Bundle Id value"
-        }
-      ],
-      "systemExtensionsAllowedTypes": [
-        {
-          "@odata.type": "microsoft.graph.macOSSystemExtensionTypeMapping",
-          "teamIdentifier": "Team Identifier value",
-          "allowedTypes": "networkExtensionsAllowed"
-        }
-      ]
+      "version": 7
     }
   ]
 }

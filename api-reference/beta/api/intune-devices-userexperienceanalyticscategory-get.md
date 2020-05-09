@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a5b11eec33d617866280fbb7311dd131bd784c90
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e3e6b24c4250eabd270f7d4c77164a56c26f6779
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43322635"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44176363"
 ---
 # <a name="get-userexperienceanalyticscategory"></a>获取 userExperienceAnalyticsCategory
 
@@ -29,7 +29,7 @@ ms.locfileid: "43322635"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsCat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 676
+Content-Length: 657
 
 {
   "value": {
@@ -85,7 +85,7 @@ Content-Length: 676
         "values": [
           {
             "@odata.type": "microsoft.graph.insightValueDouble",
-            "value": "<Unknown Primitive Type Edm.Double>"
+            "value": 1.6666666666666667
           }
         ],
         "severity": "informational"

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0a25e42023a2532704fa081b8466bbb877c94a4e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1e5032a36c2a1ea889b798b9cf20876e1e4f21e5
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436261"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178729"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>列出 androidDeviceOwnerGeneralDeviceConfigurations
 
@@ -29,7 +29,7 @@ ms.locfileid: "43436261"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5047
+Content-Length: 5148
 
 {
   "value": [
@@ -113,6 +113,8 @@ Content-Length: 5047
       "cameraBlocked": true,
       "cellularBlockWiFiTethering": true,
       "certificateCredentialConfigurationDisabled": true,
+      "microsoftLauncherConfigurationEnabled": true,
+      "enrollmentProfile": "dedicatedDevice",
       "dataRoamingBlocked": true,
       "dateTimeConfigurationBlocked": true,
       "factoryResetDeviceAdministratorEmails": [

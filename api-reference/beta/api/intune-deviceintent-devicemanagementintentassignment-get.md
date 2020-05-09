@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 979c49a35fece4c6cb5c8104d96e15a7c77bd85c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5d16f4648b7186b4e3ed00d8d8fdf5c45d599ae0
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43327108"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177231"
 ---
 # <a name="get-devicemanagementintentassignment"></a>获取 deviceManagementIntentAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "43327108"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -68,14 +68,14 @@ GET https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementI
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 250
+Content-Length: 238
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceManagementIntentAssignment",
     "id": "bedc5365-5365-bedc-6553-dcbe6553dcbe",
     "target": {
-      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
     }
   }
 }

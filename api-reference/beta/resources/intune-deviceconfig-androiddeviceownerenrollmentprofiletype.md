@@ -1,18 +1,18 @@
 ---
-title: managedDeviceRemoteAction 枚举类型
-description: 尚未记录
+title: androidDeviceOwnerEnrollmentProfileType 枚举类型
+description: Android 设备所有者注册配置文件类型。
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2edfe8739602697fa1ae8215e5c9c62d9805a664
+ms.openlocfilehash: 8059db6880d950075c4b2c5d6a06706cc3c17019
 ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178029"
+ms.locfileid: "44177721"
 ---
-# <a name="manageddeviceremoteaction-enum-type"></a>managedDeviceRemoteAction 枚举类型
+# <a name="androiddeviceownerenrollmentprofiletype-enum-type"></a>androidDeviceOwnerEnrollmentProfileType 枚举类型
 
 命名空间：microsoft.graph
 
@@ -20,21 +20,14 @@ ms.locfileid: "44178029"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-尚未记录
+Android 设备所有者注册配置文件类型。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|注销|0|尚未记录|
-|delete|1|尚未记录|
-|fullScan|双面|尚未记录|
-|quickScan|第三章|尚未记录|
-|signatureUpdate|4 |尚未记录|
-|擦|5 |尚未记录|
-|customTextNotification|6 |尚未记录|
-|rebootNow|7 |尚未记录|
-|setDeviceName|8 |尚未记录|
-|syncDevice|9 |尚未记录|
+|notConfigured|0|未配置;此值将被忽略。|
+|dedicatedDevice|1|专用设备。|
+|fullyManaged|双面|完全管理。|
 
 
 

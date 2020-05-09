@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e93ee667a8a4b479b8e4b8bde78b7808a7acea0d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5acd729b38bff70c2d44494528130517dae7c764
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426385"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44176811"
 ---
 # <a name="update-devicehealthscript"></a>更新 deviceHealthScript
 
@@ -29,7 +29,7 @@ ms.locfileid: "43426385"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,10 +54,10 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|设备运行状况脚本的唯一标识符|
-|发布者|String|设备运行状况脚本发布者的名称|
+|发布者|字符串|设备运行状况脚本发布者的名称|
 |version|String|设备运行状况脚本的版本|
 |displayName|字符串|设备运行状况脚本的名称|
-|description|String|设备运行状况脚本的说明|
+|说明|String|设备运行状况脚本的说明|
 |detectionScriptContent|Binary|检测 powershell 脚本的全部内容|
 |remediationScriptContent|Binary|修正 powershell 脚本的全部内容|
 |createdDateTime|DateTimeOffset|设备运行状况脚本的创建时间的时间戳。 此属性是只读的。|
@@ -65,9 +65,11 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
 |enforceSignatureCheck|Boolean|指示是否需要检查脚本签名|
 |runAs32Bit|Boolean|指示 PowerShell 脚本是否应作为32位运行|
-|roleScopeTagIds|String 集合|设备运行状况脚本的范围标记 Id 列表|
+|roleScopeTagIds|字符串集合|设备运行状况脚本的范围标记 Id 列表|
 |isGlobalScript|Boolean|确定这是否为 Microsoft 专用脚本。 专用脚本为只读|
-|highestAvailableVersion|String|Microsoft 专用脚本的最高可用版本|
+|highestAvailableVersion|字符串|Microsoft 专用脚本的最高可用版本|
+|detectionScriptParameters|[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)集合|复杂类型 DetectionScriptParameters 对象的列表。|
+|remediationScriptParameters|[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)集合|复杂类型 RemediationScriptParameters 对象的列表。|
 
 
 
@@ -81,7 +83,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 Content-type: application/json
-Content-length: 575
+Content-length: 1221
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
@@ -98,7 +100,27 @@ Content-length: 575
     "Role Scope Tag Ids value"
   ],
   "isGlobalScript": true,
-  "highestAvailableVersion": "Highest Available Version value"
+  "highestAvailableVersion": "Highest Available Version value",
+  "detectionScriptParameters": [
+    {
+      "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
+      "name": "Name value",
+      "description": "Description value",
+      "isRequired": true,
+      "applyDefaultValueWhenNotAssigned": true,
+      "defaultValue": "Default Value value"
+    }
+  ],
+  "remediationScriptParameters": [
+    {
+      "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
+      "name": "Name value",
+      "description": "Description value",
+      "isRequired": true,
+      "applyDefaultValueWhenNotAssigned": true,
+      "defaultValue": "Default Value value"
+    }
+  ]
 }
 ```
 
@@ -107,7 +129,7 @@ Content-length: 575
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 747
+Content-Length: 1393
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
@@ -127,7 +149,27 @@ Content-Length: 747
     "Role Scope Tag Ids value"
   ],
   "isGlobalScript": true,
-  "highestAvailableVersion": "Highest Available Version value"
+  "highestAvailableVersion": "Highest Available Version value",
+  "detectionScriptParameters": [
+    {
+      "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
+      "name": "Name value",
+      "description": "Description value",
+      "isRequired": true,
+      "applyDefaultValueWhenNotAssigned": true,
+      "defaultValue": "Default Value value"
+    }
+  ],
+  "remediationScriptParameters": [
+    {
+      "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
+      "name": "Name value",
+      "description": "Description value",
+      "isRequired": true,
+      "applyDefaultValueWhenNotAssigned": true,
+      "defaultValue": "Default Value value"
+    }
+  ]
 }
 ```
 

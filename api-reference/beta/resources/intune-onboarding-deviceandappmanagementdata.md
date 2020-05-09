@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3b1d1948781d20f0602e1d27d5b8a3a25e5ebe18
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8868cd200f8048cee393531addd85dac654cab9e
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43418926"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177686"
 ---
 # <a name="deviceandappmanagementdata-resource-type"></a>deviceAndAppManagementData 资源类型
 
@@ -40,7 +40,7 @@ ms.locfileid: "43418926"
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementData",
-  "content": "<Unknown Primitive Type Edm.Stream>"
+  "content": "Stream"
 }
 ```
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 26a297b23c48c8916aa998d329279ca60808ee75
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3db2a1fb95ead2afde7e01e92a9f26fb4a6ac10d
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43427518"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177189"
 ---
 # <a name="update-devicemanagementtemplate"></a>更新 deviceManagementTemplate
 
@@ -29,7 +29,7 @@ ms.locfileid: "43427518"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -56,12 +56,13 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{dev
 |:---|:---|:---|
 |id|字符串|模板 ID|
 |displayName|String|模板的显示名称|
-|description|String|模板的说明|
-|versionInfo|String|模板的版本信息|
+|说明|String|模板的说明|
+|versionInfo|字符串|模板的版本信息|
 |isDeprecated|Boolean|模板已弃用或不已弃用。 无法从已弃用的模板创建意向。|
 |intentCount|Int32|从此模板创建的意向数。|
 |templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|模板的类型。 可取值为：`securityBaseline`、`specializedDevices`、`advancedThreatProtectionSecurityBaseline`、`deviceConfiguration`、`custom`、`securityTemplate`、`microsoftEdgeSecurityBaseline`、`microsoftOffice365ProPlusSecurityBaseline`、`deviceCompliance`。|
 |platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|模板的平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`windows10XProfile`、`all`。|
+|templateSubtype|[deviceManagementTemplateSubtype](../resources/intune-deviceintent-devicemanagementtemplatesubtype.md)|模板的子类型。 可取值为：`none`、`firewall`、`diskEncryption`、`attackSurfaceReduction`、`endpointDetectionReponse`、`accountProtection` 或 `antivirus`。|
 |publishedDateTime|DateTimeOffset|发布模板时|
 
 
@@ -76,7 +77,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{dev
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}
 Content-type: application/json
-Content-length: 371
+Content-length: 405
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
@@ -87,6 +88,7 @@ Content-length: 371
   "intentCount": 11,
   "templateType": "specializedDevices",
   "platformType": "androidForWork",
+  "templateSubtype": "firewall",
   "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
@@ -96,7 +98,7 @@ Content-length: 371
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 420
+Content-Length: 454
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
@@ -108,6 +110,7 @@ Content-Length: 420
   "intentCount": 11,
   "templateType": "specializedDevices",
   "platformType": "androidForWork",
+  "templateSubtype": "firewall",
   "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a745012db7de61a781fa29daf7f11a3cb6fbcac3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 92a557fd31f68a41e6c5757059b1cae362fac164
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455452"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178071"
 ---
 # <a name="getmanagementconditionstatementsforplatform-function"></a>getManagementConditionStatementsForPlatform 函数
 
@@ -29,7 +29,7 @@ ms.locfileid: "43455452"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managementConditionStateme
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 576
+Content-Length: 615
 
 {
   "value": [
@@ -85,7 +85,8 @@ Content-Length: 576
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "modifiedDateTime": "2017-01-01T00:00:22.8983556-08:00",
       "expression": {
-        "@odata.type": "microsoft.graph.managementConditionExpression"
+        "@odata.type": "microsoft.graph.managementConditionExpressionString",
+        "value": "Value value"
       },
       "eTag": "ETag value",
       "applicablePlatforms": [

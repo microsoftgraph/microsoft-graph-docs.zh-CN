@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c31a227766e57554677191a3ab509f167e712882
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dc9eb5e07ab610db61af5287863bb8c394a40ad9
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455685"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179367"
 ---
 # <a name="devicemanagementintent-resource-type"></a>deviceManagementIntent 资源类型
 
@@ -32,6 +32,7 @@ ms.locfileid: "43455685"
 |[更新 deviceManagementIntent](../api/intune-deviceintent-devicemanagementintent-update.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|更新[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)对象的属性。|
 |[updateSettings 操作](../api/intune-deviceintent-devicemanagementintent-updatesettings.md)|无|尚未记录|
 |[migrateToTemplate 操作](../api/intune-deviceintent-devicemanagementintent-migratetotemplate.md)|无|尚未记录|
+|[createCopy 操作](../api/intune-deviceintent-devicemanagementintent-createcopy.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|尚未记录|
 |[分配操作](../api/intune-deviceintent-devicemanagementintent-assign.md)|无|尚未记录|
 |[compare 函数](../api/intune-deviceintent-devicemanagementintent-compare.md)|[deviceManagementSettingComparison](../resources/intune-deviceintent-devicemanagementsettingcomparison.md)集合|尚未记录|
 
@@ -40,16 +41,16 @@ ms.locfileid: "43455685"
 |:---|:---|:---|
 |id|字符串|意向 ID|
 |displayName|String|用户给定的显示名称|
-|description|String|用户提供的说明|
+|说明|String|用户提供的说明|
 |isAssigned|Boolean|指示是否将意向分配给用户|
 |lastModifiedDateTime|DateTimeOffset|上次修改意向的时间|
-|templateId|String|创建此目的的模板的 ID （如果有）|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
+|templateId|字符串|创建此目的的模板的 ID （如果有）|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|设置|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)集合|要应用的所有设置的集合|
+|settings|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)集合|要应用的所有设置的集合|
 |categories|[deviceManagementIntentSettingCategory](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md)集合|在意向中设置类别的集合|
 |assignments|[deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)集合|工作分配集合|
 |deviceSettingStateSummaries|[deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md)集合|设置及其状态和这些设备的计数，这些设备属于意向中所有设置的对应状态|

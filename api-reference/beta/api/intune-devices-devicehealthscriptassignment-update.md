@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 89075571f51cad503041a82af99900caeb5a801f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 411496d5ff6f66fbfac9cf3371b2be107b95374d
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380650"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44177826"
 ---
 # <a name="update-devicehealthscriptassignment"></a>更新 deviceHealthScriptAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "43380650"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -56,7 +56,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments/{
 |id|字符串|设备运行状况脚本分配实体的键。 此属性是只读的。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|将脚本设定为的 Azure Active Directory 组|
 |runRemediationScript|Boolean|确定是只运行检测脚本还是运行两个检测脚本和修正脚本|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|目标组的脚本运行计划|
+|runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|目标组的脚本运行计划|
 
 
 
@@ -70,16 +70,19 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments/{
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments/{deviceHealthScriptAssignmentId}
 Content-type: application/json
-Content-length: 277
+Content-length: 359
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   },
   "runRemediationScript": true,
   "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
+    "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
+    "interval": 8,
+    "useUtc": true,
+    "time": "11:58:36.2550000"
   }
 }
 ```
@@ -89,17 +92,20 @@ Content-length: 277
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 326
+Content-Length: 408
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
   "id": "c08c4eb1-4eb1-c08c-b14e-8cc0b14e8cc0",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   },
   "runRemediationScript": true,
   "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
+    "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
+    "interval": 8,
+    "useUtc": true,
+    "time": "11:58:36.2550000"
   }
 }
 ```

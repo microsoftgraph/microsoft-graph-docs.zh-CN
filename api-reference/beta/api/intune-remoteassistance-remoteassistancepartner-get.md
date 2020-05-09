@@ -1,18 +1,18 @@
 ---
-title: 列出 deviceCompliancePolicyAssignments
-description: 列出 deviceCompliancePolicyAssignment 对象的属性和关系。
+title: 获取 remoteAssistancePartner
+description: 读取 remoteAssistancePartner 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0fdd28e97dc6106055fec1c07b616af8290b4eac
+ms.openlocfilehash: b50d3180e7884d235038bf5caf30d9d5139f7850
 ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178680"
+ms.locfileid: "44176138"
 ---
-# <a name="list-devicecompliancepolicyassignments"></a>列出 deviceCompliancePolicyAssignments
+# <a name="get-remoteassistancepartner"></a>获取 remoteAssistancePartner
 
 命名空间：microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "44178680"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出 [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) 对象的属性和关系。
+读取 [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -37,8 +37,11 @@ ms.locfileid: "44178680"
 }
 -->
 ``` http
-GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments
+GET /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ```
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -50,14 +53,14 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) 对象集合。
+如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments
+GET https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ```
 
 ### <a name="response"></a>响应
@@ -65,20 +68,17 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 331
+Content-Length: 346
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
-      "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
-      "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
-      },
-      "source": "policySets",
-      "sourceId": "Source Id value"
-    }
-  ]
+  "value": {
+    "@odata.type": "#microsoft.graph.remoteAssistancePartner",
+    "id": "7443c8b9-c8b9-7443-b9c8-4374b9c84374",
+    "displayName": "Display Name value",
+    "onboardingUrl": "https://example.com/onboardingUrl/",
+    "onboardingStatus": "onboarding",
+    "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
+  }
 }
 ```
 

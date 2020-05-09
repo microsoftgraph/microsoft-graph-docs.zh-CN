@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d4a11dfbc13201c50ddee3afca9426fe4bdfdf8c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c5274414db6dce7659142a24d0cef6c56243254e
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445234"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179255"
 ---
 # <a name="get-rolescopetagautoassignment"></a>获取 roleScopeTagAutoAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "43445234"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All|
+|Application|DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -68,14 +68,14 @@ GET https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDefin
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 244
+Content-Length: 232
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.roleScopeTagAutoAssignment",
     "id": "256e6375-6375-256e-7563-6e2575636e25",
     "target": {
-      "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
     }
   }
 }

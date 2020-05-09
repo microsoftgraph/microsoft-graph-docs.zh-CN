@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ce1813068a883e17194f94a7dd7cd5f5b2dfbc66
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 52b0a83dde3986d17f9ff09b41076edd7e9e9041
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464155"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179219"
 ---
 # <a name="macosdevicefeaturesconfiguration-resource-type"></a>macOSDeviceFeaturesConfiguration 资源类型
 
@@ -39,34 +39,34 @@ MacOS 设备功能配置的配置文件。
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|布尔值|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |airPrintDestinations|[airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md)集合|应始终显示的 AirPrint 打印机的数组。 该集合最多可包含 500 个元素。 继承自[appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
 |autoLaunchItems|[macOSLaunchItem](../resources/intune-deviceconfig-macoslaunchitem.md)集合|用户登录时要启动的应用程序、文件、文件夹和其他项目的列表。 该集合最多可包含 500 个元素。|
-|adminShowHostInfo|布尔值|是否在登录窗口中显示管理员主机信息。|
-|loginWindowText|String|要在登录窗口中显示的自定义文本。|
-|authorizedUsersListHidden|布尔值|是否在登录窗口中显示 "名称" 和 "密码" 对话框或用户列表。|
-|authorizedUsersListHideLocalUsers|布尔值|是否在登录窗口的授权用户列表中仅显示网络和系统用户。|
-|authorizedUsersListHideMobileAccounts|布尔值|是否在登录窗口上的授权用户列表中隐藏移动用户。|
-|authorizedUsersListIncludeNetworkUsers|布尔值|是否在登录窗口上的授权用户列表中显示网络用户。|
-|authorizedUsersListHideAdminUsers|布尔值|是否在登录窗口的授权用户列表中隐藏管理员用户。|
-|authorizedUsersListShowOtherManagedUsers|布尔值|是否在登录窗口上的授权用户列表中显示其他用户。|
-|shutDownDisabled|布尔值|是否在登录窗口中隐藏 "关机" 按钮项。|
-|restartDisabled|布尔值|是否在登录窗口中隐藏 "重新启动" 按钮项。|
-|sleepDisabled|布尔值|是否在登录窗口中隐藏 "睡眠" 菜单项。|
-|consoleAccessDisabled|布尔值|其他用户是否会忽略使用 ">控制台> 特殊用户名。|
-|shutDownDisabledWhileLoggedIn|布尔值|用户登录时是否禁用登录窗口上的 "关闭" 菜单项。|
-|restartDisabledWhileLoggedIn|布尔值|用户登录时是否禁用登录窗口上的重启菜单项。|
-|powerOffDisabledWhileLoggedIn|布尔值|用户登录时登录窗口上的 "断电" 菜单项是否将被禁用。|
-|logOutDisabledWhileLoggedIn|布尔值|用户登录时，登录窗口上的注销菜单项是否会被禁用。|
-|screenLockDisableImmediate|布尔值|是否禁用即时屏幕锁定功能。|
+|adminShowHostInfo|Boolean|是否在登录窗口中显示管理员主机信息。|
+|loginWindowText|字符串|要在登录窗口中显示的自定义文本。|
+|authorizedUsersListHidden|Boolean|是否在登录窗口中显示 "名称" 和 "密码" 对话框或用户列表。|
+|authorizedUsersListHideLocalUsers|Boolean|是否在登录窗口的授权用户列表中仅显示网络和系统用户。|
+|authorizedUsersListHideMobileAccounts|Boolean|是否在登录窗口上的授权用户列表中隐藏移动用户。|
+|authorizedUsersListIncludeNetworkUsers|Boolean|是否在登录窗口上的授权用户列表中显示网络用户。|
+|authorizedUsersListHideAdminUsers|Boolean|是否在登录窗口的授权用户列表中隐藏管理员用户。|
+|authorizedUsersListShowOtherManagedUsers|Boolean|是否在登录窗口上的授权用户列表中显示其他用户。|
+|shutDownDisabled|Boolean|是否在登录窗口中隐藏 "关机" 按钮项。|
+|restartDisabled|Boolean|是否在登录窗口中隐藏 "重新启动" 按钮项。|
+|sleepDisabled|Boolean|是否在登录窗口中隐藏 "睡眠" 菜单项。|
+|consoleAccessDisabled|Boolean|其他用户是否会忽略使用 ">控制台> 特殊用户名。|
+|shutDownDisabledWhileLoggedIn|Boolean|用户登录时是否禁用登录窗口上的 "关闭" 菜单项。|
+|restartDisabledWhileLoggedIn|Boolean|用户登录时是否禁用登录窗口上的重启菜单项。|
+|powerOffDisabledWhileLoggedIn|Boolean|用户登录时登录窗口上的 "断电" 菜单项是否将被禁用。|
+|logOutDisabledWhileLoggedIn|Boolean|用户登录时，登录窗口上的注销菜单项是否会被禁用。|
+|screenLockDisableImmediate|Boolean|是否禁用即时屏幕锁定功能。|
 |associatedDomains|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|获取或设置一个列表，该列表将应用程序映射到其关联的域。 该密钥应与应用程序的 ID 匹配，并且值应为 "服务：域" 形式的字符串，其中 domain 是完全限定的主机名（例如 webcredentials:example）。 该集合最多可包含 500 个元素。|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|获取或设置单一登录扩展配置文件。 弃用：改用 MacOSSingleSignOnExtension。|
 |macOSSingleSignOnExtension|[macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)|获取或设置单一登录扩展配置文件。|
@@ -166,10 +166,50 @@ MacOS 设备功能配置的配置文件。
     }
   ],
   "singleSignOnExtension": {
-    "@odata.type": "microsoft.graph.singleSignOnExtension"
+    "@odata.type": "microsoft.graph.credentialSingleSignOnExtension",
+    "extensionIdentifier": "String",
+    "teamIdentifier": "String",
+    "domains": [
+      "String"
+    ],
+    "realm": "String",
+    "configurations": [
+      {
+        "@odata.type": "microsoft.graph.keyStringValuePair",
+        "key": "String",
+        "value": "String"
+      }
+    ]
   },
   "macOSSingleSignOnExtension": {
-    "@odata.type": "microsoft.graph.macOSSingleSignOnExtension"
+    "@odata.type": "microsoft.graph.macOSKerberosSingleSignOnExtension",
+    "realm": "String",
+    "domains": [
+      "String"
+    ],
+    "blockAutomaticLogin": true,
+    "cacheName": "String",
+    "credentialBundleIdAccessControlList": [
+      "String"
+    ],
+    "domainRealms": [
+      "String"
+    ],
+    "isDefaultRealm": true,
+    "passwordBlockModification": true,
+    "passwordExpirationDays": 1024,
+    "passwordExpirationNotificationDays": 1024,
+    "userPrincipalName": "String",
+    "passwordRequireActiveDirectoryComplexity": true,
+    "passwordPreviousPasswordBlockCount": 1024,
+    "passwordMinimumLength": 1024,
+    "passwordMinimumAgeDays": 1024,
+    "passwordRequirementsDescription": "String",
+    "requireUserPresence": true,
+    "activeDirectorySiteCode": "String",
+    "passwordEnableLocalSync": true,
+    "blockActiveDirectorySiteAutoDiscovery": true,
+    "passwordChangeUrl": "String"
   }
 }
 ```

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 68910dececddb812c8c5ac25c02020ac9370edcb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: adc6f9ff57c0b1a76e6ee5e2cce90fabda4d1917
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458319"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178085"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>deviceEnrollmentType 枚举类型
 
@@ -35,9 +35,12 @@ ms.locfileid: "43458319"
 |windowsAutoEnrollment|7 |Windows 10 自动注册。 （添加工作帐户）|
 |windowsBulkAzureDomainJoin|8 |Windows 10 批量 Azure AD 加入。|
 |windowsCoManagement|9 |由 AutoPilot 或组策略触发的 Windows 10 协同管理。|
-|appleUserEnrollment|11x17|由 Apple 用户注册管理的设备|
+|appleUserEnrollment|11 |由 Apple 用户注册管理的设备|
 |appleUserEnrollmentWithServiceAccount|12 |由 Apple 用户使用服务帐户进行注册管理的设备|
 |azureAdJoinUsingAzureVmExtension|14 |预配 Azure VM 时的 azure AD 加入注册|
+|androidEnterpriseDedicatedDevice|15 |Android 企业专用设备|
+|androidEnterpriseFullyManaged|16 |完全管理的 Android 企业版|
+|androidEnterpriseCorporateWorkProfile|17 |Android 企业公司工作配置文件|
 
 
 

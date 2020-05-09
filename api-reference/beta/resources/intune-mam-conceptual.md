@@ -1,15 +1,15 @@
 ---
 title: 使用 Microsoft Intune 管理移动应用-Microsoft Graph API
 description: 列出与租户组织的移动应用管理（MAM）相关的适用于 Intune 终结点（REST）的 Microsoft Graph API。
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c8ac4358b9f3011422d2f65d56f3f76f67b2f25b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e436e32fd235128e57f96fbf916a9d51c4206e64
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782452"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178890"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 

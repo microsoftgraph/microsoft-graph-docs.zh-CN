@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 56ab161a77f21d06c034322a4daa84c5880db0da
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 152f5ef93db38ffced60bf93e3215d45cf822ba5
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464984"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44175516"
 ---
 # <a name="userexperienceanalyticsoverview-resource-type"></a>userExperienceAnalyticsOverview 资源类型
 
@@ -31,7 +31,7 @@ User experience analytics 概述实体包含所有类别的总分数和每个指
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 概述的唯一标识符。|
+|id|字符串|User experience analytics 概述的唯一标识符。|
 |overallScore|Int32|用户体验分析总分。|
 |deviceBootPerformanceOverallScore|Int32|User experience analytics 设备启动性能总分。|
 |bestPracticesOverallScore|Int32|用户体验分析最佳实践总分。|
@@ -66,7 +66,7 @@ User experience analytics 概述实体包含所有类别的总分数和每个指
       "values": [
         {
           "@odata.type": "microsoft.graph.insightValueDouble",
-          "value": "<Unknown Primitive Type Edm.Double>"
+          "value": "4.2"
         }
       ],
       "severity": "String"
