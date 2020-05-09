@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f9dc9e4883030936982b9029d1e14242b2a37e37
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 896f463daadef157b9f8c10628dd9101508b88f0
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43423639"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44175642"
 ---
 # <a name="devicegeolocation-resource-type"></a>deviceGeoLocation 资源类型
 
@@ -50,13 +50,13 @@ ms.locfileid: "43423639"
   "@odata.type": "#microsoft.graph.deviceGeoLocation",
   "lastCollectedDateTimeUtc": "String (timestamp)",
   "lastCollectedDateTime": "String (timestamp)",
-  "longitude": "<Unknown Primitive Type Edm.Double>",
-  "latitude": "<Unknown Primitive Type Edm.Double>",
-  "altitude": "<Unknown Primitive Type Edm.Double>",
-  "horizontalAccuracy": "<Unknown Primitive Type Edm.Double>",
-  "verticalAccuracy": "<Unknown Primitive Type Edm.Double>",
-  "heading": "<Unknown Primitive Type Edm.Double>",
-  "speed": "<Unknown Primitive Type Edm.Double>"
+  "longitude": "4.2",
+  "latitude": "4.2",
+  "altitude": "4.2",
+  "horizontalAccuracy": "4.2",
+  "verticalAccuracy": "4.2",
+  "heading": "4.2",
+  "speed": "4.2"
 }
 ```
 

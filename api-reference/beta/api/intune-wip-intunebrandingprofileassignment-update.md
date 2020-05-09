@@ -1,18 +1,20 @@
 ---
 title: 更新 intuneBrandingProfileAssignment
 description: 更新 intuneBrandingProfileAssignment 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3743fd5148f46f5be3ea2447c1b52c1f63d0d2eb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 43611ebcd9873dfde4c00e85788186d80f5dc0aa
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799672"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178575"
 ---
 # <a name="update-intunebrandingprofileassignment"></a>更新 intuneBrandingProfileAssignment
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "42799672"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -51,7 +53,7 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignm
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的唯一标识符。|
+|id|字符串|实体的唯一标识符。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|为品牌配置文件分配的工作分配目标。|
 
 
@@ -66,12 +68,12 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignm
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignments/{intuneBrandingProfileAssignmentId}
 Content-type: application/json
-Content-length: 171
+Content-length: 159
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfileAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   }
 }
 ```
@@ -81,17 +83,16 @@ Content-length: 171
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 220
+Content-Length: 208
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfileAssignment",
   "id": "ee38a117-a117-ee38-17a1-38ee17a138ee",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
   }
 }
 ```
-
 
 
 

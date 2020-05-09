@@ -1,16 +1,16 @@
 ---
 title: deviceManagement 资源类型
-description: DeviceManagement 资源表示一个容器，其内容根据工作流而异。
+description: 'DeviceManagement 资源代表其内容因工作流而异的容器，包括：  '
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: af184fd7716208ecd7c0ef1673fe6761c65f1977
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b816acd87fb63291ed74f9f996b61d9c17537462
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43408008"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179163"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -64,7 +64,7 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|与设备关联的唯一标识符。|
+|id|字符串|与设备关联的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|Guid|给定租户的 Intune 帐户 ID|
 |legacyPcManangementEnabled|Boolean|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
@@ -177,6 +177,8 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |derivedCredentials|[deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)集合|与帐户关联的派生凭据设置的集合。|
 |**远程访问**|
 |userPfxCertificates|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)集合|与用户关联的 PFX 证书的集合。|
+|**远程协助**|
+|remoteAssistancePartners|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 集合|远程帮助合作伙伴。|
 |**基于角色的访问控制（RBAC）**|
 |resourceOperations|[resourceOperation](../resources/intune-rbac-resourceoperation.md) 集合|资源操作。|
 |roleAssignments|[deviceAndAppManagementRoleAssignment](../resources/intune-rbac-deviceandappmanagementroleassignment.md) 集合|角色分配。|
