@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f87ccf755ee79d69e0b01e074685db2f182a4272
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 823f3e044d3235d018725a2e08230526b78f7ca9
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43371687"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44174228"
 ---
 # <a name="managedmobileapp-resource-type"></a>managedMobileApp 资源类型
 
@@ -53,7 +53,8 @@ ms.locfileid: "43371687"
 {
   "@odata.type": "#microsoft.graph.managedMobileApp",
   "mobileAppIdentifier": {
-    "@odata.type": "microsoft.graph.mobileAppIdentifier"
+    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+    "packageId": "String"
   },
   "id": "String (identifier)",
   "version": "String"

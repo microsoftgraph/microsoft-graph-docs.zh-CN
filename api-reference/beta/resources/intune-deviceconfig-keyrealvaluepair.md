@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7b5b9860cb4ef161cc057013db889fd1bb626be6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1fed06ab52178805defae33fd5b51ce89235cec6
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439964"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44175663"
 ---
 # <a name="keyrealvaluepair-resource-type"></a>keyRealValuePair 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "43439964"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|Key|String|键/值对的字符串键。 继承自[keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
+|Key|字符串|键/值对的字符串键。 继承自[keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
 |值|双精度|键/值对的实际（浮点）值。|
 
 ## <a name="relationships"></a>关系
@@ -45,7 +45,7 @@ ms.locfileid: "43439964"
 {
   "@odata.type": "#microsoft.graph.keyRealValuePair",
   "key": "String",
-  "value": "<Unknown Primitive Type Edm.Double>"
+  "value": "4.2"
 }
 ```
 

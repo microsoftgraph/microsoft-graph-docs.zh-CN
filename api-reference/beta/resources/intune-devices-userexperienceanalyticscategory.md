@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 45b59232b7f3bead356c6d9c8af0c5ddc9912fc3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8d80a287b736786a14eac1244b3e42e07b8e6dad
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382875"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44178099"
 ---
 # <a name="userexperienceanalyticscategory-resource-type"></a>userExperienceAnalyticsCategory 资源类型
 
@@ -62,7 +62,7 @@ ms.locfileid: "43382875"
       "values": [
         {
           "@odata.type": "microsoft.graph.insightValueDouble",
-          "value": "<Unknown Primitive Type Edm.Double>"
+          "value": "4.2"
         }
       ],
       "severity": "String"

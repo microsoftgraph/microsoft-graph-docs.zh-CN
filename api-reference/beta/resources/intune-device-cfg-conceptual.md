@@ -1,15 +1,15 @@
 ---
 title: Microsoft Intune 中的设备配置-Microsoft Gaaph API
 description: 列出用于定义租户组织的配置设备的 Intune 终结点（REST）的 Microsoft Graph API。
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3b97f69f16fef9b39213b30942049300450a8155
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 11597599cc7303c2190d5991d0fb2c502a17b86a
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463513"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179325"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -37,6 +37,7 @@ ms.locfileid: "43463513"
 - [Android 设备所有者合规性策略](intune-deviceconfig-androiddeviceownercompliancepolicy.md)
 - [Android 设备所有者默认应用权限策略类型](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
 - [Android 设备所有者派生的凭据身份验证配置](intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)
+- [Android 设备所有者注册配置文件类型](intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md)
 - [Android 设备所有者企业版 Wi-fi 配置](intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)
 - [Android 设备所有者常规设备配置](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
 - [Android 设备所有者全局代理](intune-deviceconfig-androiddeviceownerglobalproxy.md)
@@ -231,6 +232,7 @@ ms.locfileid: "43463513"
 - [加密报表策略详细信息](intune-deviceconfig-encryptionreportpolicydetails.md)
 - [加密状态](intune-deviceconfig-encryptionstate.md)
 - [扩展密钥用法](intune-deviceconfig-extendedkeyusage.md)
+- [功能 flighted 配置](intune-deviceconfig-featureflightedconfiguration.md)
 - [文件电子仓库状态](intune-deviceconfig-filevaultstate.md)
 - [防火墙证书吊销列表检查方法类型](intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)
 - [防火墙数据包排入队列方法类型](intune-deviceconfig-firewallpacketqueueingmethodtype.md)
@@ -340,6 +342,7 @@ ms.locfileid: "43463513"
 - [本地安全选项最低会话安全](intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)
 - [本地安全选项智能卡删除行为类型](intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md)
 - [本地安全选项标准用户提升提示行为类型](intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)
+- [macOS apple 事件接收器](intune-deviceconfig-macosappleeventreceiver.md)
 - [macOS 关联的域的键/值对](intune-deviceconfig-macosassociateddomainskeyvaluepair.md)
 - [macOS 证书配置文件基础](intune-deviceconfig-macoscertificateprofilebase.md)
 - [macOS 合规性策略](intune-deviceconfig-macoscompliancepolicy.md)
@@ -359,9 +362,14 @@ ms.locfileid: "43463513"
 - [macOS 内核扩展](intune-deviceconfig-macoskernelextension.md)
 - [macOS 启动项目](intune-deviceconfig-macoslaunchitem.md)
 - [macOS PKCS 证书配置文件](intune-deviceconfig-macospkcscertificateprofile.md)
+- [macOS 隐私访问控制项](intune-deviceconfig-macosprivacyaccesscontrolitem.md)
+- [macOS 进程标识符类型](intune-deviceconfig-macosprocessidentifiertype.md)
 - [macOS 重定向单一登录扩展](intune-deviceconfig-macosredirectsinglesignonextension.md)
 - [macOS SCEP 证书配置文件](intune-deviceconfig-macosscepcertificateprofile.md)
 - [macOS 单一登录扩展](intune-deviceconfig-macossinglesignonextension.md)
+- [macOS 系统扩展](intune-deviceconfig-macossystemextension.md)
+- [macOS 系统扩展类型](intune-deviceconfig-macossystemextensiontype.md)
+- [macOS 系统扩展类型映射](intune-deviceconfig-macossystemextensiontypemapping.md)
 - [macOS 信任的根证书](intune-deviceconfig-macostrustedrootcertificate.md)
 - [macOS VPN 配置](intune-deviceconfig-macosvpnconfiguration.md)
 - [macOS Wi-Fi 配置](intune-deviceconfig-macoswificonfiguration.md)

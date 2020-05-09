@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ae388a80bed37c4284928af092a9736a4d437cb0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: edadb176355166fb9a391f9e692f2b79cd961680
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43378459"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44175978"
 ---
 # <a name="create-windowsmanageddevice"></a>创建 windowsManagedDevice
 
@@ -29,7 +29,7 @@ ms.locfileid: "43378459"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -77,7 +77,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |easActivationDateTime|DateTimeOffset|设备的 Exchange ActivationSync 激活时间。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |aadRegistered|Boolean|设备是否已注册 Azure Active Directory。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |azureADRegistered|Boolean|设备是否已注册 Azure Active Directory。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|设备的注册类型。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可能的值是：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`、`appleUserEnrollment`、`appleUserEnrollmentWithServiceAccount`、`azureAdJoinUsingAzureVmExtension`。|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|设备的注册类型。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`、`appleUserEnrollment`、`appleUserEnrollmentWithServiceAccount`、`azureAdJoinUsingAzureVmExtension`、`androidEnterpriseDedicatedDevice`、`androidEnterpriseFullyManaged`、`androidEnterpriseCorporateWorkProfile`。|
 |lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|指示是否已启用或禁用了丢失模式。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`disabled`、`enabled`。|
 |activationLockBypassCode|字符串|允许绕过设备上的激活锁的代码。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |emailAddress|字符串|与设备关联的用户的电子邮件。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -118,7 +118,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书到期日期。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |iccid|字符串|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |udid|字符串|IOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|roleScopeTagIds|String 集合|此设备实例的范围标记 Id 的列表。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|roleScopeTagIds|字符串集合|此设备实例的范围标记 Id 的列表。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsActiveMalwareCount|Int32|此 windows 设备的活动恶意软件的计数。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsRemediatedMalwareCount|Int32|此 windows 设备的修正的恶意软件的计数。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |notes|String|由 IT 管理员创建的设备上的注释继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -128,6 +128,8 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |physicalMemoryInBytes|Int64|内存总量（以字节为单位）。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|处理器体系结构。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`unknown`、`x86`、`x64`、`arm`、`arM64`。|
 |specificationVersion|字符串|规范版本。 此属性是只读的。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|joinType|[joinType](../resources/intune-devices-jointype.md)|从[ManagedDevice](../resources/intune-devices-manageddevice.md)继承的设备联接类型。 可取值为：`unknown`、`azureADJoined`、`azureADRegistered`、`hybridAzureADJoined`。|
+|skuFamily|字符串|从[ManagedDevice](../resources/intune-devices-manageddevice.md)继承的设备 sku 系列|
 
 
 
@@ -141,7 +143,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices
 Content-type: application/json
-Content-length: 7723
+Content-length: 7830
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -179,7 +181,8 @@ Content-length: 7723
     "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
     "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
     "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
-    "osBuildNumber": "Os Build Number value"
+    "osBuildNumber": "Os Build Number value",
+    "operatingSystemProductType": 10
   },
   "ownerType": "company",
   "managedDeviceOwnerType": "company",
@@ -318,7 +321,9 @@ Content-length: 7723
   "ethernetMacAddress": "Ethernet Mac Address value",
   "physicalMemoryInBytes": 5,
   "processorArchitecture": "x86",
-  "specificationVersion": "Specification Version value"
+  "specificationVersion": "Specification Version value",
+  "joinType": "azureADJoined",
+  "skuFamily": "Sku Family value"
 }
 ```
 
@@ -327,7 +332,7 @@ Content-length: 7723
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 7772
+Content-Length: 7879
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -366,7 +371,8 @@ Content-Length: 7772
     "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
     "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
     "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
-    "osBuildNumber": "Os Build Number value"
+    "osBuildNumber": "Os Build Number value",
+    "operatingSystemProductType": 10
   },
   "ownerType": "company",
   "managedDeviceOwnerType": "company",
@@ -505,7 +511,9 @@ Content-Length: 7772
   "ethernetMacAddress": "Ethernet Mac Address value",
   "physicalMemoryInBytes": 5,
   "processorArchitecture": "x86",
-  "specificationVersion": "Specification Version value"
+  "specificationVersion": "Specification Version value",
+  "joinType": "azureADJoined",
+  "skuFamily": "Sku Family value"
 }
 ```
 

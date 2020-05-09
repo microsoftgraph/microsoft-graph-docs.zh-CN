@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a85ef320c75855c1a23efb7a438061b0d7faed1a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d4eea6b48827ab625952c133cda1f1662d60711f
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407893"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179156"
 ---
 # <a name="devicemanagementscript-resource-type"></a>deviceManagementScript 资源类型
 
@@ -40,14 +40,14 @@ Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联�
 |:---|:---|:---|
 |id|字符串|设备管理脚本的唯一标识符。|
 |displayName|字符串|设备管理脚本的名称。|
-|description|String|设备管理脚本的可选说明。|
+|说明|String|设备管理脚本的可选说明。|
 |scriptContent|Binary|脚本内容。|
 |createdDateTime|DateTimeOffset|设备管理脚本的创建日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
 |enforceSignatureCheck|Boolean|指示是否需要检查脚本签名。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|String 集合|此 PowerShellScript 实例的范围标记 Id 的列表。|
+|roleScopeTagIds|字符串集合|此 PowerShellScript 实例的范围标记 Id 的列表。|
 |runAs32Bit|Boolean|一个指示 PowerShell 脚本是否应作为32位运行的值|
 
 ## <a name="relationships"></a>关系
@@ -74,9 +74,6 @@ Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联�
   "id": "String (identifier)",
   "displayName": "String",
   "description": "String",
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
-  },
   "scriptContent": "binary",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",

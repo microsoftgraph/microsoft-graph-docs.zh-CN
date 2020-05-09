@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a8a6153269f869153d44ebde561cc48439555c3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 931f71ec288e10f296017a5a12f8b46cf85b7ac4
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426392"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44176846"
 ---
 # <a name="list-devicehealthscripts"></a>列出 deviceHealthScripts
 
@@ -29,7 +29,7 @@ ms.locfileid: "43426392"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 852
+Content-Length: 1578
 
 {
   "value": [
@@ -87,7 +87,27 @@ Content-Length: 852
         "Role Scope Tag Ids value"
       ],
       "isGlobalScript": true,
-      "highestAvailableVersion": "Highest Available Version value"
+      "highestAvailableVersion": "Highest Available Version value",
+      "detectionScriptParameters": [
+        {
+          "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
+          "name": "Name value",
+          "description": "Description value",
+          "isRequired": true,
+          "applyDefaultValueWhenNotAssigned": true,
+          "defaultValue": "Default Value value"
+        }
+      ],
+      "remediationScriptParameters": [
+        {
+          "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
+          "name": "Name value",
+          "description": "Description value",
+          "isRequired": true,
+          "applyDefaultValueWhenNotAssigned": true,
+          "defaultValue": "Default Value value"
+        }
+      ]
     }
   ]
 }

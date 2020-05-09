@@ -1,18 +1,18 @@
 ---
-title: 获取 appleEnrollmentProfileAssignment
-description: 读取 appleEnrollmentProfileAssignment 对象的属性和关系。
+title: 列出 remoteAssistancePartners
+description: 列出 remoteAssistancePartner 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b67838b42be2075f3ab3bb7d486e328da7fc3c97
+ms.openlocfilehash: 5c21f647e1f02fe53f3b2871b2103e164e2f87c9
 ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44175691"
+ms.locfileid: "44176127"
 ---
-# <a name="get-appleenrollmentprofileassignment"></a>获取 appleEnrollmentProfileAssignment
+# <a name="list-remoteassistancepartners"></a>列出 remoteAssistancePartners
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "44175691"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取[appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md)对象的属性和关系。
+列出 [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,11 +37,8 @@ ms.locfileid: "44175691"
 }
 -->
 ``` http
-GET /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedEnrollmentProfileId}/assignments/{appleEnrollmentProfileAssignmentId}
+GET /deviceManagement/remoteAssistancePartners
 ```
-
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -53,14 +50,14 @@ GET /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedEn
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[appleEnrollmentProfileAssignment](../resources/intune-enrollment-appleenrollmentprofileassignment.md)对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 对象集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedEnrollmentProfileId}/assignments/{appleEnrollmentProfileAssignmentId}
+GET https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners
 ```
 
 ### <a name="response"></a>响应
@@ -68,16 +65,19 @@ GET https://graph.microsoft.com/beta/deviceManagement/appleUserInitiatedEnrollme
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 238
+Content-Length: 372
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.appleEnrollmentProfileAssignment",
-    "id": "5b603771-3771-5b60-7137-605b7137605b",
-    "target": {
-      "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.remoteAssistancePartner",
+      "id": "7443c8b9-c8b9-7443-b9c8-4374b9c84374",
+      "displayName": "Display Name value",
+      "onboardingUrl": "https://example.com/onboardingUrl/",
+      "onboardingStatus": "onboarding",
+      "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
     }
-  }
+  ]
 }
 ```
 
