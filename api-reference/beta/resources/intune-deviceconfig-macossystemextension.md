@@ -1,0 +1,50 @@
+---
+title: macOSSystemExtension 资源类型
+description: 表示特定的 macOS 系统扩展。
+author: dougeby
+localization_priority: Normal
+ms.prod: Intune
+doc_type: resourcePageType
+ms.openlocfilehash: bab537a60d213e2e1976c8f902ce7a8b0dbc3027
+ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44179402"
+---
+# <a name="macossystemextension-resource-type"></a><span data-ttu-id="f92fe-103">macOSSystemExtension 资源类型</span><span class="sxs-lookup"><span data-stu-id="f92fe-103">macOSSystemExtension resource type</span></span>
+
+<span data-ttu-id="f92fe-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f92fe-104">Namespace: microsoft.graph</span></span>
+
+> <span data-ttu-id="f92fe-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="f92fe-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+
+> <span data-ttu-id="f92fe-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="f92fe-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="f92fe-107">表示特定的 macOS 系统扩展。</span><span class="sxs-lookup"><span data-stu-id="f92fe-107">Represents a specific macOS system extension.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="f92fe-108">属性</span><span class="sxs-lookup"><span data-stu-id="f92fe-108">Properties</span></span>
+|<span data-ttu-id="f92fe-109">属性</span><span class="sxs-lookup"><span data-stu-id="f92fe-109">Property</span></span>|<span data-ttu-id="f92fe-110">类型</span><span class="sxs-lookup"><span data-stu-id="f92fe-110">Type</span></span>|<span data-ttu-id="f92fe-111">说明</span><span class="sxs-lookup"><span data-stu-id="f92fe-111">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="f92fe-112">teamIdentifier</span><span class="sxs-lookup"><span data-stu-id="f92fe-112">teamIdentifier</span></span>|<span data-ttu-id="f92fe-113">字符串</span><span class="sxs-lookup"><span data-stu-id="f92fe-113">String</span></span>|<span data-ttu-id="f92fe-114">获取或设置用于对系统扩展进行签名的团队标识符。</span><span class="sxs-lookup"><span data-stu-id="f92fe-114">Gets or sets the team identifier that was used to sign the system extension.</span></span>|
+|<span data-ttu-id="f92fe-115">bundleId</span><span class="sxs-lookup"><span data-stu-id="f92fe-115">bundleId</span></span>|<span data-ttu-id="f92fe-116">String</span><span class="sxs-lookup"><span data-stu-id="f92fe-116">String</span></span>|<span data-ttu-id="f92fe-117">获取或设置系统扩展的捆绑包标识符。</span><span class="sxs-lookup"><span data-stu-id="f92fe-117">Gets or sets the bundle identifier of the system extension.</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="f92fe-118">关系</span><span class="sxs-lookup"><span data-stu-id="f92fe-118">Relationships</span></span>
+<span data-ttu-id="f92fe-119">无</span><span class="sxs-lookup"><span data-stu-id="f92fe-119">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="f92fe-120">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f92fe-120">JSON Representation</span></span>
+<span data-ttu-id="f92fe-121">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f92fe-121">Here is a JSON representation of the resource.</span></span>
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.macOSSystemExtension"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.macOSSystemExtension",
+  "teamIdentifier": "String",
+  "bundleId": "String"
+}
+```
+
+
+
