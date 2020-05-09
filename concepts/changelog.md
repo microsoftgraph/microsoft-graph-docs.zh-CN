@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: c0778305544b80715864a7a8e5441356ed160b45
-ms.sourcegitcommit: b88dce7297f196345f16c2c126d7bdd482d22a23
+ms.openlocfilehash: 7e734d47e85ea18874a6440b5e7dab871ac667c3
+ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44006326"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44153476"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -23,6 +23,12 @@ ms.locfileid: "44006326"
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | beta | 向 [group](/graph/api/resources/group?view=graph-rest-beta) 实体添加了“resourceBehaviorOptions”和“resourceProvisioningOptions”属性。********|
+
+### <a name="teamwork--shifts"></a>Teamwork | Shifts
+
+| **更改类型** | **版本** | **说明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 添加项 | v1.0 | 引入了Shifts API，包括 [shift](/graph/api/resources/shift?view=graph-rest-1.0)、[workforceintegration]((/graph/api/resources/workforceintegration?view=graph-rest-1.0) 和关联方法。|
 
 ## <a name="april-2020"></a>2020 年 4 月
 
@@ -145,7 +151,6 @@ ms.locfileid: "44006326"
 | 添加项        | v1.0        | 向 **followedSites** 导航属性添加了 [user](/graph/api/resources/user?view=graph-rest-1.0) 实体， 以[列出登录用户关注的网站](/graph/api/sites-list-followed?view=graph-rest-1.0)。 |
 | 添加项        | v1.0        | 向 [siteCollection](/graph/api/resources/sitecollection?view=graph-rest-1.0) 资源添加了 **dataLocatonCode** 属性。 |
 | 添加项        | v1.0        | 向 [sharepointIds](/graph/api/resources/sharepointids?view=graph-rest-1.0) 资源添加了 **tenantId** 属性。 |
-
 
 
 ## <a name="march-2020"></a>2020 年 3 月
@@ -280,6 +285,8 @@ ms.locfileid: "44006326"
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
+| 添加项 | Beta |已将新属性 **supportedEntities** 添加到 [workforceintegration](/graph/api/resources/workforceintegration?view=graph-rest-beta) 实体。|
+| 添加项 | v1.0 | 添加了新实体 [teamwork](/graph/api/resources/teamwork?view=graph-rest-1.0)。
 | 添加项 | Beta | 向 API 添加了对 ChannelMessage.Read.All 的支持，以读取频道中的 [chatMessages](/graph/api/resources/chatmessage?view=graph-rest-beta)。 |
 
 ### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
@@ -2966,7 +2973,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加|Beta|在 [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta) 上添加了 [assign](/graph/api/intune-apps-mobileapp-assign?view=graph-rest-beta) 操作 |
 |添加项|Beta|在 [deviceManagementScript](/graph/api/resources/intune-devices-devicemanagementscript?view=graph-rest-beta) 上添加了 [assign](/graph/api/intune-devices-devicemanagementscript-assign?view=graph-rest-beta) 操作 |
 |添加项|Beta|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 上添加了 [revokeAppleVppLicenses](/graph/api/intune-devices-manageddevice-revokeapplevpplicenses?view=graph-rest-beta) 操作 |
-|添加|Beta|在 [deviceCompliancePolicy](/graph/api/resources/intune-deviceconfig-devicecompliancepolicy?view=graph-rest-beta) 上添加了 [assign](/graph/api/intune-deviceconfig-devicecompliancepolicy-assign?view=graph-rest-beta) 操作 |
+|添加项|Beta|在 [deviceCompliancePolicy](/graph/api/resources/intune-deviceconfig-devicecompliancepolicy?view=graph-rest-beta) 上添加了 [assign](/graph/api/intune-deviceconfig-devicecompliancepolicy-assign?view=graph-rest-beta) 操作 |
 |添加项|Beta|对 [vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-beta) 新增了 [revokeLicenses](/graph/api/intune-onboarding-vpptoken-revokelicenses?view=graph-rest-beta) 操作 |
 |添加|Beta|在 [user](/graph/api/resources/intune-devices-user?view=graph-rest-beta) 上添加了 [wipeManagedAppRegistrationsByDeviceTag](/graph/api/intune-mam-user-wipemanagedappregistrationsbydevicetag?view=graph-rest-beta) 操作 |
 |添加项|Beta|在 [managedEBook](/graph/api/resources/intune-books-managedebook?view=graph-rest-beta) 上添加了 [assign](/graph/api/intune-books-managedebook-assign?view=graph-rest-beta) 操作 |
