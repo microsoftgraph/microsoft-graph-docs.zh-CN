@@ -346,7 +346,13 @@
                       href: api/outlookuser-list-mastercategories.md
                 - name: 转换 Id
                   href: api/user-translateexchangeids.md
-            - name: Photo
+            - name: 人员
+              items:
+                - name: 人员
+                  href: resources/person.md
+                - name: 列出人员
+                  href: api/user-list-people.md
+            - name: 照片
               href: resources/profilephoto.md
               items:
                 - name: 获取照片
@@ -2347,7 +2353,7 @@
                 - name: 设备管理疑难解答事件
                   href: resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-list.md
                     - name: 获取
                       href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-get.md
@@ -2364,7 +2370,7 @@
                 - name: 注册疑难解答事件
                   href: resources/intune-troubleshooting-enrollmenttroubleshootingevent.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-troubleshooting-enrollmenttroubleshootingevent-list.md
                     - name: 获取
                       href: api/intune-troubleshooting-enrollmenttroubleshootingevent-get.md
@@ -2995,7 +3001,7 @@
                 - name: 设备和应用管理角色定义
                   href: resources/intune-rbac-deviceandappmanagementroledefinition.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/intune-rbac-deviceandappmanagementroledefinition-list.md
                     - name: 获取
                       href: api/intune-rbac-deviceandappmanagementroledefinition-get.md
@@ -3010,7 +3016,7 @@
                 - name: 资源操作
                   href: resources/intune-rbac-resourceoperation.md
                   items:
-                    - name: 列出
+                    - name: 列表
                       href: api/intune-rbac-resourceoperation-list.md
                     - name: 获取
                       href: api/intune-rbac-resourceoperation-get.md
@@ -3587,7 +3593,7 @@
                       href: api/orgcontact-get-manager.md
                     - name: 获取成员对象
                       href: api/orgcontact-getmemberobjects.md
-            - name: 策略
+            - name: Policy
               href: resources/policy-overview.md
               items:
                 - name: 基于活动的超时策略
@@ -3916,8 +3922,9 @@
             - name: 概述
               href: resources/social-overview.md
             - name: 人员
-              href: resources/person.md
               items:
+                - name: 人员
+                  href: resources/person.md
                 - name: 列出人员
                   href: api/user-list-people.md
             - name: 见解
@@ -4575,7 +4582,7 @@
                       href: api/openshift-get.md
                     - name: 更新
                       href: api/openshift-update.md
-                    - name: Delete
+                    - name: 删除
                       href: api/openshift-delete.md
                 - name: 打开班次轮换更改请求
                   href: resources/openshiftchangerequest.md
