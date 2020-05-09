@@ -4485,7 +4485,7 @@
                   href: api/teamsappinstallation-delete.md
                 - name: 为团队升级已安装的应用程序
                   href: api/teamsappinstallation-upgrade.md
-            - name: Tab
+            - name: 选项卡
               href: resources/teamstab.md
               items:
                 - name: 列出选项卡
