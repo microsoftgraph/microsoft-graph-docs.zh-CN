@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 7e734d47e85ea18874a6440b5e7dab871ac667c3
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 6c75821b48c1ebd4715650b60b6cfb601e311941
+ms.sourcegitcommit: 5d4bf35774eba6de21f4252b46f7e9d8f64a517f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44153476"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44168544"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -23,12 +23,13 @@ ms.locfileid: "44153476"
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | beta | 向 [group](/graph/api/resources/group?view=graph-rest-beta) 实体添加了“resourceBehaviorOptions”和“resourceProvisioningOptions”属性。********|
+| 更改 | beta | 更新了 [conditionalaccessconditionset](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) 中的 **clientAppTypes** 属性，以将 `modern` 替换为 `mobileAppsAndDesktopClients`。 已删除 `easUnsupported` 并已添加 `exchangeActiveSync`，包括 Exchange ActiveSync 支持和不支持的平台。 |
 
-### <a name="teamwork--shifts"></a>Teamwork | Shifts
+### <a name="teamwork--shifts"></a>团队合作 | 倒班
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项 | v1.0 | 引入了Shifts API，包括 [shift](/graph/api/resources/shift?view=graph-rest-1.0)、[workforceintegration]((/graph/api/resources/workforceintegration?view=graph-rest-1.0) 和关联方法。|
+| 添加项 | v1.0 | 引入了倒班 API，包括 [shift](/graph/api/resources/shift?view=graph-rest-1.0)、[workforceintegration](/graph/api/resources/workforceintegration?view=graph-rest-1.0)和相关联的方法。|
 
 ## <a name="april-2020"></a>2020 年 4 月
 
@@ -1287,7 +1288,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |删除|beta|删除了以下枚举类型：<br/>**mobileAppDependecyType**<br/>|
 |添加项|beta|向 [deviceConfiguration](/graph/api/resources/intune-deviceconfig-deviceconfiguration?view=graph-rest-beta) 实体添加了 **deviceManagementApplicabilityRuleOsEdition**、**deviceManagementApplicabilityRuleOsVersion** 和 **deviceManagementApplicabilityRuleDeviceMode** 属性|
 |添加项|beta|向 [deviceEnrollmentWindowsHelloForBusinessConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration?view=graph-rest-beta) 实体添加了 **securityKeyForSignIn** 属性|
-|Addition|beta|向 [deviceManagementIntent](/graph/api/resources/intune-deviceintent-devicemanagementintent?view=graph-rest-beta) 实体添加了 **roleScopeTagIds** 属性|
+|添加项|beta|向 [deviceManagementIntent](/graph/api/resources/intune-deviceintent-devicemanagementintent?view=graph-rest-beta) 实体添加了 **roleScopeTagIds** 属性|
 |Addition|beta|向 [deviceManagementTemplate](/graph/api/resources/intune-deviceintent-devicemanagementtemplate?view=graph-rest-beta) 实体添加了 **templateType** 和 **publishedDateTime** 属性|
 |添加项|beta|向 [intuneBrandingProfile](/graph/api/resources/intune-wip-intunebrandingprofile?view=graph-rest-beta) 实体添加了 **customPrivacyMessage** 属性|
 |添加项|beta|向 [macOSEndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-macosendpointprotectionconfiguration?view=graph-rest-beta) 实体添加了 **fileVaultEnabled**、**fileVaultSelectedRecoveryKeyTypes**、**fileVaultInstitutionalRecoveryKeyCertificate**、**fileVaultInstitutionalRecoveryKeyCertificateFileName**、**fileVaultPersonalRecoveryKeyHelpMessage**、**fileVaultAllowDeferralUntilSignOut**、**fileVaultNumberOfTimesUserCanIgnore**、**fileVaultDisablePromptAtSignOut** 和 **fileVaultPersonalRecoveryKeyRotationInMonths** 属性|
