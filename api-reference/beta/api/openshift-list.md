@@ -6,15 +6,15 @@ author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: bc65d419addf58bbf7b0a715c61538491777a5ec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "42456416"
 ---
 # <a name="list-openshift"></a>列出 openShift
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42456416"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.Read.All、Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ GET /teams/{id}/schedule/openShifts
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回团队中的响应代码和所有[openShift](../resources/openshift.md)对象。
+如果成功，此方法在 `200 OK` 响应正文中返回团队中的响应代码和所有[openShift](../resources/openshift.md)对象。
 
 ## <a name="examples"></a>示例
 

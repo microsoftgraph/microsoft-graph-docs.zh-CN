@@ -6,15 +6,15 @@ author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: 7854a2bded54d8480e9423fb8e7e6d6548455430
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "42451278"
 ---
 # <a name="list-workforceintegrations"></a>列出 workforceIntegrations
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42451278"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     |  WorkforceIntegration、WorkforceIntegration 和所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ GET /teamwork/workforceIntegrations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[workforceIntegration](../resources/workforceintegration.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[workforceIntegration](../resources/workforceintegration.md)对象集合。
 
 ## <a name="examples"></a>示例
 

@@ -6,10 +6,10 @@ author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: b564884e57cd5ce1e4350034b0b98380eb8f8b7c
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "44154127"
 ---
 # <a name="swapshiftschangerequest-approve"></a>swapShiftsChangeRequest：批准

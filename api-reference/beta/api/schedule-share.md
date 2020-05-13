@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: 5fce02b8f18a2745b06d1782ecadb7bc7bd3adc0
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "44154239"
 ---
 # <a name="schedule-share"></a>日程安排：共享
@@ -55,10 +55,10 @@ POST /teams/{teamId}/schedule/share
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-|参数                   |类型           |Description  |
+|参数                   |类型           |说明  |
 |-----------------------|-------------------|--------------|
-| notifyTeam            |`Boolean`             |指示整个团队是否应获取有关此操作的可见通知，或仅获取已分配有班次的员工。 必需。       |
-| startDateTime         |`DateTimeOffset`   |共享日程上的班次的开始时间。 必需。   |
+| notifyTeam            |`Boolean`             |指示整个团队是否应获取有关此操作的可见通知，或仅获取已分配有班次的员工。 必填。       |
+| startDateTime         |`DateTimeOffset`   |共享日程上的班次的开始时间。 必填。   |
 | endDateTime           |`DateTimeOffset`   | 在日程上共享班次的结束时间。   |
 
 ## <a name="response"></a>响应

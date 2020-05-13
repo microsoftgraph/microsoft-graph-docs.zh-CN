@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 ms.openlocfilehash: 8cc008e18bd70acfed0bb6b951d3694f3cc9593d
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43227580"
 ---
 # <a name="driveitem-checkin"></a>driveItem：签入

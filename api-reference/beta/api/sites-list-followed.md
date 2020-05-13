@@ -1,18 +1,18 @@
 ---
 author: learafa
-description: 列出已登录用户的后续网站。
-title: 列表关注的网站
+description: 已登录用户的关注网站列表。
+title: 关注网站列表
 localization_priority: Normal
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: a5a1fa349440a998bdd33a6bdddddf32fcbc162d
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: c705b7d9880fffbc96b2b863669862ff01c0739e
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934862"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44052282"
 ---
-# <a name="list-followed-sites"></a>列表关注的网站
+# <a name="list-followed-sites"></a>关注网站列表
 
 命名空间：microsoft.graph
 
@@ -62,11 +62,23 @@ POST /me/followedSites
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-analytics" } -->
 
 ```msgraph-interactive
 POST /me/followedSites
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-analytics-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-analytics-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### <a name="response"></a>响应
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.site)", "truncated": true } -->
 

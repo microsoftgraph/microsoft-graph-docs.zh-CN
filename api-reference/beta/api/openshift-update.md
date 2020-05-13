@@ -6,10 +6,10 @@ author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: 000a8ae7c91b0d5c2b896615cc1e60ba2b360aed
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "44153498"
 ---
 # <a name="update-openshift"></a>更新 openShift
@@ -49,15 +49,15 @@ PUT /teams/{id}/schedule/openShifts/{openShiftId}
 
 在此方法的请求正文中提供修改的[openshift](../resources/openshift.md)对象。
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |draftOpenShift|openShiftItem|未发布的打开班次。|
-|schedulingGroupId|字符串| 计划组 id。 |
+|schedulingGroupId|String| 计划组 id。 |
 |sharedOpenShift|openShiftItem|已发布的打开班次。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[openShift](../resources/openshift.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[openShift](../resources/openshift.md)对象。
 
 ## <a name="examples"></a>示例
 

@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: 4daff04db42782a5d9b611d454a5cfb2c12953b1
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43180100"
 ---
 # <a name="domain-forcedelete"></a>域： forceDelete
@@ -43,7 +43,7 @@ ms.locfileid: "43180100"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Domain.ReadWrite.All |
+|Application | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -67,7 +67,7 @@ POST /domains/{id}/forceDelete
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|disableUserAccounts|布尔值| 用于禁用重命名的用户帐户的选项。 如果用户帐户已禁用，则不允许用户登录。<br>*True* （默认值）-在此操作中重命名的用户帐户将被禁用。<br>*False* -不禁用作为此操作的一部分重命名的用户帐户。 |
+|disableUserAccounts|Boolean| 用于禁用重命名的用户帐户的选项。 如果用户帐户已禁用，则不允许用户登录。<br>*True* （默认值）-在此操作中重命名的用户帐户将被禁用。<br>*False* -不禁用作为此操作的一部分重命名的用户帐户。 |
 
 ## <a name="response"></a>响应
 

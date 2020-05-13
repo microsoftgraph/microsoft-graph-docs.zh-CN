@@ -6,10 +6,10 @@ doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
 ms.openlocfilehash: 983cc4c9cbd19cd7f0b4261f28a00e8e020cefe9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43401710"
 ---
 # <a name="keycredential-resource-type"></a>keyCredential 资源类型
@@ -28,8 +28,8 @@ ms.locfileid: "43401710"
 |endDateTime|DateTimeOffset|凭据到期的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |keyId|Guid|键的唯一标识符（GUID）。|
 |startDateTime|DateTimeOffset|凭据生效的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|type|字符串|密钥凭据的类型;例如，"对称"。|
-|使用率|字符串|一个描述可对其使用密钥的用途的字符串;例如，"Verify"。|
+|type|String|密钥凭据的类型;例如，"对称"。|
+|使用率|String|一个描述可对其使用密钥的用途的字符串;例如，"Verify"。|
 |key|二进制| 密钥凭据的值。 应为 base 64 编码值。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

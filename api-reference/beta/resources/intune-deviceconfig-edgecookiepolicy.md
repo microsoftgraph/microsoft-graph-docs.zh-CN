@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
 ms.openlocfilehash: 0066e7a64cd63425352787b5bcc33bfc32fe8342
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43386460"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>edgeCookiePolicy 枚举类型
@@ -26,9 +26,9 @@ ms.locfileid: "43386460"
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|允许用户进行设置。|
-|允许|1|允许.|
-|blockThirdParty|双面|仅阻止第三方 cookie。|
-|blockAll|第三章|阻止所有 cookie。|
+|允许|1 |允许.|
+|blockThirdParty|2 |仅阻止第三方 cookie。|
+|blockAll|3 |阻止所有 cookie。|
 
 
 

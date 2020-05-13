@@ -6,10 +6,10 @@ author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
 ms.openlocfilehash: 6280c3f8272ef3150f0f44836fafda8e560189ac
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43466455"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
@@ -22,7 +22,7 @@ ms.locfileid: "43466455"
 
 **注意**
 
-- 您可以指定`message`参数的注释或**body**属性。 同时指定这两个将返回 HTTP 400 错误的请求错误。
+- 您可以指定参数的注释或**body**属性 `message` 。 同时指定这两个将返回 HTTP 400 错误的请求错误。
 - 如果在原始邮件中指定了**replyTo**属性（根据 Internet 邮件格式（[RFC 2822](https://www.rfc-editor.org/info/rfc2822)）），则应将答复发送给收件人  
 **replyTo**和**toRecipients**属性，而不是**from**和**toRecipients**属性中的收件人。 
 
@@ -56,7 +56,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
-|message|[邮件](../resources/message.md)|全部在答复邮件中更新的可写属性。|
+|message|[message](../resources/message.md)|全部在答复邮件中更新的可写属性。|
 
 ## <a name="response"></a>响应
 

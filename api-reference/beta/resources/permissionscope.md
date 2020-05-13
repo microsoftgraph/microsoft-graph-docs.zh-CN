@@ -6,10 +6,10 @@ doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: psignoret
 ms.openlocfilehash: 725fe0c65fd05752cd6f862291efcffbcf3d22c5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43469064"
 ---
 # <a name="permissionscope-resource-type"></a>permissionScope 资源类型

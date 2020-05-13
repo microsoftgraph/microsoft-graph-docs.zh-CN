@@ -6,10 +6,10 @@ author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
 ms.openlocfilehash: ba0ba2190f676d6c8965e2f412c003c59cd5fe5d
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43991710"
 ---
 # <a name="attachment-createuploadsession"></a>附件： createUploadSession
@@ -20,9 +20,9 @@ ms.locfileid: "43991710"
 
 创建一个允许应用程序以迭代方式上载文件范围的上载会话，以便将该文件附加到 Outlook 项目。 项目可以是[消息](../resources/message.md)或[事件](../resources/event.md)。
 
-如果文件大小在 3 MB 到 150 MB 之间，则使用此方法附加文件。 若要附加小于 3 MB 的文件，请在 Outlook 项目`POST`的 "**附件**" 导航属性上执行操作;请参阅如何[为邮件](message-post-attachments.md)或[事件](event-post-attachments.md)执行此操作。 
+如果文件大小在 3 MB 到 150 MB 之间，则使用此方法附加文件。 若要附加小于 3 MB 的文件，请 `POST` 在 Outlook 项目的 "**附件**" 导航属性上执行操作; 请参阅如何为[邮件](message-post-attachments.md)或[事件](event-post-attachments.md)执行此操作。 
 
-作为响应的一部分，此操作将返回可在后续顺序`PUT`查询中使用的上载 URL。 每个`PUT`操作的请求标头允许您指定要上载的确切字节范围。 这样，如果在上载过程中断开网络连接，则可以恢复传输。 
+作为响应的一部分，此操作将返回可在后续顺序查询中使用的上载 URL `PUT` 。 每个操作的请求标头 `PUT` 允许您指定要上载的确切字节范围。 这样，如果在上载过程中断开网络连接，则可以恢复传输。 
 
 以下是使用上载会话将文件附加到 Outlook 项目的步骤：
 
@@ -79,17 +79,17 @@ POST /me/messages/{id}/attachments/createUploadSession
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|AttachmentItem|[attachmentItem](../resources/attachmentitem.md)|表示要上载和附加的项的属性。 至少指定附件类型（`file`）、名称和文件大小。|
+|AttachmentItem|[attachmentItem](../resources/attachmentitem.md)|表示要上载和附加的项的属性。 至少指定附件类型（ `file` ）、名称和文件大小。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[uploadSession](../resources/uploadsession.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[uploadSession](../resources/uploadsession.md)对象。
 
 >**注意**： 
 >
->作为**uploadSession** response 对象的一部分返回的**uploadUrl**属性是一个不透明的 URL， `PUT`用于随后的查询上传文件的字节范围。 它包含针对`PUT` **expirationDateTime**到期的后续查询的相应 auth 令牌。 请勿自定义此 URL。
+>作为**uploadSession** response 对象的一部分返回的**uploadUrl**属性是一个不透明的 URL，用于随后的 `PUT` 查询上传文件的字节范围。 它包含针对 ExpirationDateTime 到期的后续查询的相应 auth 令牌 `PUT` 。 **expirationDateTime** 请勿自定义此 URL。
 >
->**NextExpectedRanges**属性指定要从中上载的下一个文件字节位置，例如`"NextExpectedRanges":["2097152"]`。 必须按顺序上传文件中的字节。
+>**NextExpectedRanges**属性指定要从中上载的下一个文件字节位置，例如 `"NextExpectedRanges":["2097152"]` 。 必须按顺序上传文件中的字节。
 
 <!-- The **nextExpectedRanges** property specifies one or more ranges of bytes that the server is still missing for the file. These ranges are zero-indexed and of the format `{start}-{end}`, unless if the server misses the remainder of the bytes from the start of that range, in which case the format is simply `{start}`.  -->
 

@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 ms.openlocfilehash: 69f01b949d38d76be24834151c10581589b75e2e
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43227587"
 ---
 # <a name="driveitem-checkout"></a>driveItem：签出
@@ -74,7 +74,7 @@ POST /drives/{drive-id}/items/{item-id}/checkout
 
 ## <a name="response"></a>响应
 
-如果成功，API 调用将返回`204 No content`。
+如果成功，API 调用将返回 `204 No content` 。
 
 <!-- { "blockType": "response" } -->
 

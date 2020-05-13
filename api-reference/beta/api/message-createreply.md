@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
 ms.openlocfilehash: e835188df2c88caca5def9957f42d50694496e29
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43467051"
 ---
 # <a name="message-createreply"></a>message: createReply
@@ -22,7 +22,7 @@ ms.locfileid: "43467051"
 
 **注意**
 
-- 您可以指定`message`参数的注释或**body**属性。 同时指定这两个将返回 HTTP 400 错误的请求错误。
+- 您可以指定参数的注释或**body**属性 `message` 。 同时指定这两个将返回 HTTP 400 错误的请求错误。
 - 如果在原始邮件中指定了**replyTo** （根据 Internet 邮件格式（[RFC 2822](https://www.rfc-editor.org/info/rfc2822)）），则应将答复发送给**replyTo**中的收件人，而不是**发件**人中的收件人。 
 
 ## <a name="permissions"></a>权限
@@ -54,7 +54,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
-|message|[邮件](../resources/message.md)|答复邮件中要更新的任何可写属性。|
+|message|[message](../resources/message.md)|答复邮件中要更新的任何可写属性。|
 
 ## <a name="response"></a>响应
 

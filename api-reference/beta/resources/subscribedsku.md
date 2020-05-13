@@ -6,10 +6,10 @@ author: SumitParikh
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
 ms.openlocfilehash: 63aafb107a9c95c3dd4fa0c5b3aad33bccdc0174
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43411746"
 ---
 # <a name="subscribedsku-resource-type"></a>subscribedSku 资源类型
@@ -21,7 +21,7 @@ ms.locfileid: "43411746"
 只支持在订阅的 SKU 上执行读取操作；不支持执行创建、更新和删除操作。不支持查询筛选表达式。继承自 [directoryObject](directoryobject.md)。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 subscribedSku](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |获取组织已获取的特定商业订阅。|

@@ -1,18 +1,20 @@
 ---
 title: 获取 windowsInformationProtectionAppLearningSummary
 description: 读取 windowsInformationProtectionAppLearningSummary 对象的属性和关系。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 02f29b51244be8b9cad274632420528af78d79c2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ad59288d350497c9539b94568d7e92dd72aee2f2
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799644"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43451958"
 ---
 # <a name="get-windowsinformationprotectionapplearningsummary"></a>获取 windowsInformationProtectionAppLearningSummary
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -27,7 +29,7 @@ ms.locfileid: "42799644"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+|Application|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -78,7 +80,6 @@ Content-Length: 269
   }
 }
 ```
-
 
 
 

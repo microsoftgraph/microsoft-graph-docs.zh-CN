@@ -1,18 +1,20 @@
 ---
 title: requiredPasswordType 枚举类型
 description: 所需密码的可能值。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 00397b5356e12dfa0268ed016248f1ffbc44cc44
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 84b2b5516effa0f0100f19611c27f33e193a27a8
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787619"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43449708"
 ---
 # <a name="requiredpasswordtype-enum-type"></a>requiredPasswordType 枚举类型
+
+命名空间：microsoft.graph
 
 > **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
@@ -24,8 +26,8 @@ ms.locfileid: "42787619"
 |成员|值|说明|
 |:---|:---|:---|
 |deviceDefault|0|设备默认值，无意向。|
-|字母数字|1|需要字母数字密码。|
-|位数|双面|需要数字密码。|
+|字母数字|1 |需要字母数字密码。|
+|位数|2 |需要数字密码。|
 
 
 

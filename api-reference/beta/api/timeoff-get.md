@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: f4fc2fd04d6c9fef78294b0a99d586c32a17cc8e
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "44154428"
 ---
 # <a name="get-timeoff"></a>获取 timeOff
@@ -47,7 +47,7 @@ GET /teams/{teamId}/schedule/timesOff/{timeOffId}
 此方法不支持 OData 查询参数来自定义响应。
 
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头       | 值 |
 |:---------------|:--------|
@@ -58,7 +58,7 @@ GET /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[timeOff](../resources/timeoff.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[timeOff](../resources/timeoff.md)对象。
 
 ## <a name="example"></a>示例
 

@@ -1,15 +1,15 @@
 ---
 title: 创建 schedulingGroup
-description: 创建新的 schedulingGroup。
+description: 新建 schedulingGroup。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: b394515e8f69b49f42f9fb517b3077a2fb1d8ee3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "42453826"
 ---
 # <a name="create-schedulinggroup"></a>创建 schedulingGroup
@@ -18,7 +18,7 @@ ms.locfileid: "42453826"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[schedulingGroup](../resources/schedulinggroup.md)。
+新建 [schedulingGroup](../resources/schedulinggroup.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "42453826"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 |计划的所有写。 * |
+|Application |计划的所有写。 * |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
@@ -51,7 +51,7 @@ POST /teams/{teamId}/schedule/schedulingGroups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[schedulingGroup](../resources/schedulinggroup.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[schedulingGroup](../resources/schedulinggroup.md)对象。
 
 ## <a name="example"></a>示例
 

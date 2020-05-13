@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
 ms.openlocfilehash: 6d9bba6404911a04e47d53f0bf162b9471406bf6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43467126"
 ---
 # <a name="create-rule"></a>创建规则
@@ -49,9 +49,9 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 
 | 参数       | 类型|说明|
 |:--------|:-------|:----------|
-|actions|[messageRuleActions](../resources/messageruleactions.md)|满足相应条件（如果有的话）时对邮件执行的操作。 必需。|
+|actions|[messageRuleActions](../resources/messageruleactions.md)|满足相应条件（如果有的话）时对邮件执行的操作。 必填。|
 |conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|满足条件时，将触发该规则的相应操作。 可选。|
-|displayName| String  | 规则的显示名称。 必需。|
+|displayName| String  | 规则的显示名称。 必填。|
 |exceptions| [messageRulePredicates](../resources/messagerulepredicates.md)| 表示规则的例外情况。 可选。 |
 |isEnabled | Boolean | 指示是否启用规则以应用到邮件。 可选。 |
 |Sequence| Int32 | 表示在其他规则中执行规则的顺序。 必需。|

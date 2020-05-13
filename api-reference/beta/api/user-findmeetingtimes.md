@@ -6,15 +6,15 @@ author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
 ms.openlocfilehash: 47edf467e3c66313a33f238497b5e9b917edd382
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "42451978"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "42451978"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Calendars.Read.Shared、Calendars.ReadWrite.Shared    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +52,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|attendees|[attendeeBase](../resources/attendeebase.md) 集合|一组会议与会者或资源。 在对应的 **"类型**" 属性`required`中`optional` ，指定人员的`resource`或，为会议室和资源（如会议室）指定或。 如果未指定， **** 则 findMeetingTimes `required`将假定为**type**属性。 若集合为空，**findMeetingTimes** 只会查找组织者的空闲时间段。 可选。|
+|attendees|[attendeeBase](../resources/attendeebase.md) 集合|一组会议与会者或资源。 在对应的 "**类型**" 属性中，指定 `required` 人员的或， `optional` `resource` 为会议室和资源（如会议室）指定或。 如果未指定， **findMeetingTimes**则 findMeetingTimes `required` 将假定为**type**属性。 若集合为空，**findMeetingTimes** 只会查找组织者的空闲时间段。 可选。|
 |isOrganizerOptional|Edm.Boolean|如果组织者不必必须参加，则指定 `True`。默认值为 `false`。可选。|
 |locationConstraint|[locationConstraint](../resources/locationconstraint.md)|组织者对会议地点的要求，如是否必须返回会议地点建议，或是否只能在特定地点举行会议。可选。|
 |maxCandidates|Edm.Int32|要返回的会议时间建议数量上限。可选。|

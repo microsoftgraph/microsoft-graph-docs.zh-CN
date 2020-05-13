@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 6ed7779e22fbc5452d7d6b2adc0963855ecf232e
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: faa7c18baa203bbb434d78bec3cf5868db6dea28
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35721886"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44052281"
 ---
 ```javascript
 
@@ -15,8 +15,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/drives/{drive-id}/items/{item-id}/analytics')
+let res = await client.api('/me/followedSites')
     .version('beta')
-    .get();
+    .post();
 
 ```

@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: 705c42339dc64ff66f89ce72715d51a6753357d0
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "44154246"
 ---
 # <a name="get-schedule"></a>获取日程安排
@@ -23,7 +23,7 @@ ms.locfileid: "44154246"
 计划创建过程符合[基于资源的长时间运行的操作（RELO）的一个 API 指南](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)。
 当客户端使用[PUT 方法](team-put-schedule.md)时，如果设置了计划，该操作将更新计划;否则，该操作将在后台启动计划设置过程。
 
-在计划设置过程中，客户端可以使用 GET 方法获取计划，并查看设置`provisionStatus`的当前状态的属性。 如果设置失败，客户端可以从`provisionStatusCode`属性获取其他信息。
+在计划设置过程中，客户端可以使用 GET 方法获取计划，并查看 `provisionStatus` 设置的当前状态的属性。 如果设置失败，客户端可以从属性获取其他信息 `provisionStatusCode` 。
 
 客户端也可以检查计划的配置。
 
@@ -53,7 +53,7 @@ GET /teams/{teamId}/schedule
 
 此方法不支持 OData 查询参数来自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头       | 值 |
 |:---------------|:--------|
@@ -65,7 +65,7 @@ GET /teams/{teamId}/schedule
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[schedule](../resources/schedule.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[schedule](../resources/schedule.md)对象。
 
 ## <a name="example"></a>示例
 

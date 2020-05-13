@@ -6,10 +6,10 @@ doc_type: resourcePageType
 author: harini84
 ms.prod: outlook
 ms.openlocfilehash: 265dcc7626aaaee1a43997b8c51cea9feb4763c5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43442714"
 ---
 # <a name="location-resource-type"></a>位置资源类型

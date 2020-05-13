@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
 ms.openlocfilehash: 40a9d347a86df672f80ffe9b7aeda7f7f2750283
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43372929"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>managedAppFlaggedReason 枚举类型
@@ -26,9 +26,9 @@ ms.locfileid: "43372929"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|无问题。|
-|rootedDevice|1|应用注册在根/解锁设备上运行。|
-|androidBootloaderUnlocked|双面|应用注册在解锁了启用程序的 Android 设备上运行。|
-|androidFactoryRomModified|第三章|应用注册在已修改出厂 ROM 的 Android 设备上运行。|
+|rootedDevice|1 |应用注册在根/解锁设备上运行。|
+|androidBootloaderUnlocked|2 |应用注册在解锁了启用程序的 Android 设备上运行。|
+|androidFactoryRomModified|3 |应用注册在已修改出厂 ROM 的 Android 设备上运行。|
 
 
 

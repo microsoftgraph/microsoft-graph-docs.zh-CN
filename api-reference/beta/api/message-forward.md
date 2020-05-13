@@ -6,10 +6,10 @@ author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
 ms.openlocfilehash: 42ffb7b50c672fe3daa80f6b64b6ef963f96ddf5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43448582"
 ---
 # <a name="message-forward"></a>邮件：转发
@@ -25,8 +25,8 @@ ms.locfileid: "43448582"
 
 **注意**
 
-- 您可以指定`message`参数的注释或**body**属性。 同时指定这两个将返回 HTTP 400 错误的请求错误。
-- 您必须指定`toRecipients`参数或`message`参数的**toRecipients**属性。 同时指定或指定两者均不会返回 HTTP 400 错误请求错误。
+- 您可以指定参数的注释或**body**属性 `message` 。 同时指定这两个将返回 HTTP 400 错误的请求错误。
+- 您必须指定参数 `toRecipients` 或参数的**toRecipients**属性 `message` 。 同时指定或指定两者均不会返回 HTTP 400 错误请求错误。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -58,7 +58,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
 |toRecipients|[recipient](../resources/recipient.md) collection|收件人列表|
-|message|[邮件](../resources/message.md)|答复邮件中要更新的任何可写属性。|
+|message|[message](../resources/message.md)|答复邮件中要更新的任何可写属性。|
 
 ## <a name="response"></a>响应
 

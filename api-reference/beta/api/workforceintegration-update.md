@@ -6,10 +6,10 @@ author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: 80b688d700dff94d1a746e651b83a4b0236d1a39
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "44154400"
 ---
 # <a name="update-workforceintegration"></a>更新 workforceintegration
@@ -48,19 +48,19 @@ PATCH /teamwork/workforceIntegrations
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |apiVersion|Int32|回调 url 的 API 版本。 从1开始。|
 |displayName|String|劳动力集成的名称。|
 |技术|workforceIntegrationEncryption|劳动力集成加密资源。 |
-|isActive|布尔值|指示此劳动力集成当前是否处于活动状态且可用。|
-|支持|string| 可能的值`none`为`shift`、 `swapRequest` `openshift` `openShiftRequest`、、、 `userShiftPreferences`。 如果选择多个值，则所有值必须以大写形式的第一个字母开头。|
-|supportedEntities|string| 此属性将替换1.0 版中的**支持**。 建议使用此属性，而不**支持**。 **支持**属性将在 beta 中仍受支持。 可能的值`none`为`shift`、 `swapRequest` `openshift` `openShiftRequest`、、、 `userShiftPreferences`。 如果选择多个值，则所有值必须以大写形式的第一个字母开头。|
+|isActive|Boolean|指示此劳动力集成当前是否处于活动状态且可用。|
+|支持|string| 可能的值为、、、、 `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` 。 如果选择多个值，则所有值必须以大写形式的第一个字母开头。|
+|supportedEntities|string| 此属性将替换1.0 版中的**支持**。 建议使用此属性，而不**支持**。 **支持**属性将在 beta 中仍受支持。 可能的值为、、、、 `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` 。 如果选择多个值，则所有值必须以大写形式的第一个字母开头。|
 |url|String| 劳动力集成 url，用于从班次服务进行回调。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[workforceIntegration](../resources/workforceintegration.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[workforceIntegration](../resources/workforceintegration.md)对象。
 
 ## <a name="examples"></a>示例
 

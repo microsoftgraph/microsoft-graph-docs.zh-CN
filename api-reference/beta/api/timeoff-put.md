@@ -6,21 +6,21 @@ localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: 7234fc4f630064acf1934079a4ed485a2c3b1524
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "42452307"
 ---
 # <a name="replace-timeoff"></a>替换 timeOff
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 替换现有的[timeOff](../resources/timeoff.md)。
 
-如果指定的[timeOff](../resources/timeoff.md)不存在，则此方法`404 Not found`返回。
+如果指定的[timeOff](../resources/timeoff.md)不存在，则此方法返回 `404 Not found` 。
 
 ## <a name="permissions"></a>权限
 
@@ -30,7 +30,7 @@ ms.locfileid: "42452307"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 计划的所有写。 *  |
+|Application | 计划的所有写。 *  |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
@@ -57,7 +57,7 @@ PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[timeOff](../resources/timeoff.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[timeOff](../resources/timeoff.md)对象。
 
 ## <a name="example"></a>示例
 

@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
 ms.openlocfilehash: 823f3e044d3235d018725a2e08230526b78f7ca9
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "44174228"
 ---
 # <a name="managedmobileapp-resource-type"></a>managedMobileApp 资源类型
@@ -22,7 +22,7 @@ ms.locfileid: "44174228"
 
 部署应用的标识符。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 managedMobileApps](../api/intune-mam-managedmobileapp-list.md)|[managedMobileApp](../resources/intune-mam-managedmobileapp.md) 集合|列出 [managedMobileApp](../resources/intune-mam-managedmobileapp.md) 对象的属性和关系。|
@@ -35,7 +35,7 @@ ms.locfileid: "44174228"
 |属性|类型|说明|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|包含其操作系统类型的应用标识符。|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |version|String|实体的版本。|
 
 ## <a name="relationships"></a>关系

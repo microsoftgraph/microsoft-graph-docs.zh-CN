@@ -6,15 +6,15 @@ localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: 30ca05e1ad9e77e5071389efe083d51545b0c311
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "42453854"
 ---
 # <a name="list-shifts"></a>列出班次
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 按[计划](../resources/schedule.md)获取[班次](../resources/shift.md)实例的列表。
@@ -27,7 +27,7 @@ ms.locfileid: "42453854"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Schedule. All *、schedule、all* |
+|Application | Schedule. All *、schedule、all* |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
@@ -55,7 +55,7 @@ GET /teams/{teamId}/schedule/shifts
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[shift](../resources/shift.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[shift](../resources/shift.md)对象集合。
 
 ## <a name="example"></a>示例
 

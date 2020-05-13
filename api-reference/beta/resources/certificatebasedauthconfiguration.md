@@ -6,10 +6,10 @@ author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
 ms.openlocfilehash: b834de13ccfeb59cd88fae093406a380c9aa5b58
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43181790"
 ---
 # <a name="certificatebasedauthconfiguration-resource-type"></a>certificateBasedAuthConfiguration 资源类型
@@ -29,7 +29,7 @@ ms.locfileid: "43181790"
 
 了解有关[Azure Active Directory 中基于证书的身份验证的](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)详细信息。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
