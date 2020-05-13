@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5c2efe96f87fbca1ba07f21b206ce5bbabfe8721
-ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
+ms.openlocfilehash: b9e9fb3f1374ea0533c7f86ee4394d4556ea60d5
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40995365"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44219220"
 ---
 ```csharp
 
@@ -37,7 +37,7 @@ var openShift = new OpenShift
     DraftOpenShift = null
 };
 
-await graphClient.Teams["{id}"].Schedule.OpenShifts["{openShiftId}"]
+await graphClient.Teams["{id}"].Schedule.OpenShifts["OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"]
     .Request()
     .PutAsync(openShift);
 
