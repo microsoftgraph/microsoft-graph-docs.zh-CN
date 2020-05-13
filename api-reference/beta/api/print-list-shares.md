@@ -1,24 +1,24 @@
 ---
-title: 获取打印机
-description: 检索打印机对象的属性和关系。
+title: 获取共享
+description: 检索打印机共享的列表。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: ae3a930153cd919fb21e54fade8e9b11fa6a1c70
+ms.openlocfilehash: 5e3e58c34481022ca23507b20af71c8ff0de4388
 ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "44216922"
+ms.locfileid: "44216964"
 ---
-# <a name="get-printer"></a>获取打印机
+# <a name="list-shares"></a>列出共享
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[打印机](../resources/printer.md)对象的属性和关系。
+检索**printerShares**的列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -34,12 +34,14 @@ ms.locfileid: "44216922"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/printers/{id}
-GET /print/shares/{id}/printer
+GET /print/shares
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+
+### <a name="exceptions"></a>异常
+某些运算符不受支持： `$count` 、 `$orderby` 、 `$search` 。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -49,7 +51,7 @@ GET /print/shares/{id}/printer
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[printer](../resources/printer.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[printerShare](../resources/printershare.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -57,21 +59,21 @@ GET /print/shares/{id}/printer
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_printer"
+  "name": "get_shares"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/printers/{id}
+GET https://graph.microsoft.com/beta/print/shares
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-printer-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-shares-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-printer-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-shares-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-printer-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-shares-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -82,61 +84,23 @@ GET https://graph.microsoft.com/beta/print/printers/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.printer"
+  "@odata.type": "microsoft.graph.printerShare",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1313
+Content-length: 269
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/$entity",
-  "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-  "name": "PrinterName",
-  "manufacturer": "PrinterManufacturer",
-  "model": "PrinterModel",
-  "isShared": true,
-  "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
-  "acceptingJobs": true,
-  "status": {
-    "processingState": "stopped",
-    "processingStateReasons": ["disconnected"],
-    "processingStateDescription": ""
-  },
-  "defaults": {
-    "copiesPerJob":1,
-    "documentMimeType": "application/oxps",
-    "finishings": ["none"],
-    "mediaType": "stationery"
-  },
-  "location": {
-    "latitude": 1.1,
-    "longitude": 2.2,
-    "altitudeInMeters": 3,
-    "streetAddress": "One Microsoft Way",
-    "subUnit": [
-        "Main Plaza",
-        "Unit 400"
-    ],
-    "city": "Redmond",
-    "postalCode": "98052",
-    "countryOrRegion": "USA",
-    "site": "Puget Sound",
-    "building": "Studio E",
-    "floorNumber": 1,
-    "floorDescription": "First Floor",
-    "roomNumber": 1234,
-    "roomDescription": "First floor copy room",
-    "organization": [
-        "C+AI",
-        "Microsoft Graph"
-    ],
-    "subdivision": [
-        "King County",
-        "Red West"
-    ],
-    "stateOrProvince": "Washington"
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares",
+  "value": [
+    {
+      "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
+      "name": "PrinterShareName",
+      "createdDateTime": "2020-02-04T00:00:00.0000000Z"
+    }
+  ]
 }
 ```
 
@@ -144,7 +108,7 @@ Content-length: 1313
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get printer",
+  "description": "List shares",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 3ef5c05be520bb407f17d0af14bbd4355e736c62
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: b0af3f7443b77920804f5868fe9ecc3f8b4cec41
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895636"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44217085"
 ---
 # <a name="print-resource-type"></a>打印资源类型
 
@@ -20,14 +20,14 @@ ms.locfileid: "42895636"
 
 当附带通用打印订阅时，打印功能启用打印机的管理和[printServiceEndpoints](printserviceendpoint.md)的发现，可用于管理通用打印中的打印机和打印作业。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
 | [列出连接器](../api/print-list-connectors.md) | [printConnector](printconnector.md)集合 | 获取打印连接器的列表。 |
 | [列出打印机](../api/print-list-printers.md) | [打印机](printer.md)集合 | 获取打印机的列表。 |
-| [列出 printerShares](../api/print-list-printershares.md) | [printerShare](printershare.md)集合 | 获取打印机共享的列表。 |
+| [列出共享](../api/print-list-shares.md) | [printerShare](printershare.md)集合 | 获取打印机共享的列表。 |
 | [列出服务](../api/print-list-services.md) | [printService](printservice.md)集合 | 获取服务的列表。 |
-| [创建 printerShare](../api/print-post-printershares.md) | [printerShare](printershare.md) | 通过发布到**printerShares**集合创建新的打印机共享。 |
+| [创建 printerShare](../api/print-post-shares.md) | [printerShare](printershare.md) | 通过发布到**共享**集合创建新的打印机共享。 |
 | [更新设置](../api/print-update-settings.md) |  [printSettings](printsettings.md) | 更新通用打印服务的租户范围设置。 |
 
 ## <a name="properties"></a>属性
@@ -40,7 +40,7 @@ ms.locfileid: "42895636"
 |:-------------|:------------|:------------|
 |服务行业|[printService](printservice.md)集合|可用通用打印服务终结点的列表。|
 |台|[打印机](printer.md)集合|在租户中注册的打印机的列表。|
-|printerShares|[printerShare](printershare.md)集合集合|在租户中注册的打印机共享的列表。|
+|shares|[printerShare](printershare.md)集合|在租户中注册的打印机共享的列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

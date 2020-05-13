@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 26715bb8eed9c671b88951bd1deb875f1d11d467
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 5acbcdc58b730404a39af1f3069b3433fac54ed3
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917564"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44217345"
 ---
 # <a name="printershare-resource-type"></a>printerShare 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "43917564"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [List](../api/print-list-printershares.md) | [printerShare](printershare.md)集合 | 获取租户中的打印机共享的列表。 |
+| [List](../api/print-list-shares.md) | [printerShare](printershare.md)集合 | 获取租户中的打印机共享的列表。 |
 | [获取](../api/printershare-get.md) | [printerShare](printershare.md) | 读取**printerShare**对象的属性和关系。 |
 | [更新](../api/printershare-update.md) | [printerShare](printershare.md) | 更新**printerShare**对象。 |
 | [删除](../api/printershare-delete.md) | 无 | 取消打印机的共享。 |
@@ -39,8 +39,15 @@ ms.locfileid: "43917564"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|String| PrinterShare 的标识符。 只读。|
-|name|String|打印客户端应显示的打印机共享的名称。|
+|displayName|字符串|打印客户端应显示的打印机共享的名称。|
 |createdDateTime|DateTimeOffset|创建打印机共享时的 DateTimeOffset。 只读。|
+|manufacturer|String|与此打印机共享关联的打印机报告的制造商。 只读。|
+|model|String|与此打印机共享关联的打印机报告的模型名称。 只读。|
+|isAcceptingJobs|Boolean|与此打印机共享关联的打印机当前是否正在接受新的打印作业。|
+|缺省值|[printerDefaults](printerdefaults.md)|与此打印机共享关联的打印机的默认打印设置。|
+|capabilities|[printerCapabilities](printercapabilities.md)|与此打印机共享相关联的打印机的功能。|
+|位置|[printerLocation](printerlocation.md)|与此打印机共享关联的打印机的物理和/或组织位置。|
+|status|[printerStatus](printerstatus.md)|与此打印机共享关联的打印机的处理状态，包括任何错误。 只读。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型        | 说明 |
@@ -48,6 +55,7 @@ ms.locfileid: "43917564"
 |印刷|[印刷](printer.md)|与此打印机共享相关联的打印机。 |
 |allowedUsers|[printUserIdentity](printuseridentity.md)集合|有权使用打印机打印的用户。|
 |allowedGroups|[printIdentity](printidentity.md)|其用户有权使用打印机打印的组。|
+|jobs|[printJob](printjob.md)集合| 与此打印机共享关联的打印机排队等待打印的作业列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

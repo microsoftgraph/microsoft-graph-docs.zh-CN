@@ -1,24 +1,24 @@
 ---
-title: 删除 printerShare
-description: 删除打印机共享（共享关联打印机）。 此操作无法撤消。 如果将来再次共享打印机，则之前安装该打印机的所有 Windows 用户都需要发现并重新安装它。
+title: 创建 printerShare
+description: 为指定的打印机创建新的打印机共享。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 0f890a5311321a100d32419dfaa9515c714c6030
+ms.openlocfilehash: 88f9610115d30a026b54aadab9b35fd047a8ab21
 ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "44216915"
+ms.locfileid: "44216950"
 ---
-# <a name="delete-printershare"></a>删除 printerShare
+# <a name="create-printershare"></a>创建 printerShare
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除打印机共享（共享关联[打印机](../resources/printer.md)）。 此操作无法撤消。 如果将来再次共享[打印机](../resources/printer.md)，则之前安装该[打印机](../resources/printer.md)的所有 Windows 用户都需要发现并重新安装该打印机。
+为指定的[打印机](../resources/printer.md)创建新的**printerShare** 。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -34,19 +34,23 @@ ms.locfileid: "44216915"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /print/shares/{id}
-DELETE /print/printers/{id}/share
+POST /print/shares
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明   |
 |:--------------|:--------------|
 | Authorization | Bearer {token}。必需。 |
+| Content-type  | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
+在请求正文中，提供[printerShare](../resources/printershare.md)对象的 JSON 表示形式。
+
+打印机共享的**id**和**createdDateTime**属性是在创建资源时自动设置的，但共享名称和关联的打印机必须包含在请求中。
+
+打印机引用是使用语法设置的 `@odata.bind` ，如示例中所示。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[printerShare](../resources/printershare.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -55,40 +59,58 @@ DELETE /print/printers/{id}/share
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_printershare"
+  "name": "create_printershare_from_print"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/print/shares/{id}
+POST https://graph.microsoft.com/beta/print/shares
+Content-type: application/json
+Content-length: 114
+
+{
+  "name": "name-value",
+  "printer@odata.bind": "https://graph.microsoft.com/beta/print/printers/{id}"
+}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-printershare-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-printershare-from-print-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-printershare-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-printershare-from-print-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-printershare-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-printershare-from-print-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### <a name="response"></a>响应
 下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.printerShare"
 } -->
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 233
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
+    "id": "7361c7c1-ff07-4565-9897-bef6895a7d04",
+    "name": "ShareName",
+    "createdDateTime": "2020-02-04T00:00:00.0000000Z"
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete printerShare",
+  "description": "Create printerShare",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

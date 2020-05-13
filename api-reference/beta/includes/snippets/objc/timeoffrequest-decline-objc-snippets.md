@@ -1,27 +1,28 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1ebd8fa15f0f861478d24f751cb20bb65a028992
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: facdf9a6b8bc5dc92cdffaefef1f747afeea7720
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40863619"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44217099"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teams/{id}/schedule/timeOffRequests/decline"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/decline"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphTimeOffRequest *timeOffRequest = [[MSGraphTimeOffRequest alloc] init];
-[timeOffRequest setMessage:@"message-value"];
+NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
-NSError *error;
-NSData *timeOffRequestData = [timeOffRequest getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:timeOffRequestData];
+NSString *message = @"message-value";
+payloadDictionary[@"message"] = message;
+
+NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];
+[urlRequest setHTTPBody:data];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 6688f36aef36fa8efc00bf2458911ca719f697cc
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: ce7bf6140b831c3e911ebb744106840ae8e027a8
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917584"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44217078"
 ---
 # <a name="printer-resource-type"></a>打印机资源类型
 
@@ -43,22 +43,21 @@ ms.locfileid: "43917584"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|String|文档的标识符。 只读。|
-|name|String|打印机的名称。|
+|displayName|字符串|打印机的名称。|
 |manufacturer|String|打印机报告的制造商。 只读。|
 |model|String|打印机报告的模型名称。 只读。|
-|registeredBy|[printUserIdentity](printuseridentity.md)|注册打印机的用户。|
 |registeredDateTime|DateTimeOffset|注册打印机时的 DateTimeOffset。 只读。|
-|状态|[printerStatus](printerstatus.md)|打印机的处理状态，包括任何错误。 只读。|
+|status|[printerStatus](printerstatus.md)|打印机的处理状态，包括任何错误。 只读。|
 |isShared|Boolean|如果打印机是共享的，则为 True;否则为 false。 只读。|
-|acceptingJobs|Boolean|打印机当前是否正在接受新的打印作业。|
+|isAcceptingJobs|Boolean|打印机当前是否正在接受新的打印作业。|
 |位置|[printerLocation](printerlocation.md)|打印机的物理和/或组织位置。|
 |缺省值|[printerDefaults](printerdefaults.md)|打印机的默认打印设置。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|jobs|[printJob](printjob.md)集合| 打印机排队等待打印的作业的列表。 只读。 可为 Null。|
-|shares|[printerShare](printershare.md)| 与打印机关联的 printerShare。 只读。 可为 Null。|
+|jobs|[printJob](printjob.md)集合| 打印机排队等待打印的作业的列表。|
+|shares|[printerShare](printershare.md)集合| 与打印机关联的 printerShares 的列表。 只读。 可为 NULL。|
 |插槽|[printConnector](printconnector.md)|与打印机关联的连接器。|
 |allowedUsers|[printUserIdentity](printuseridentity.md)集合|有权使用打印机打印的用户。|
 |allowedGroups|[printIdentity](printidentity.md)|其用户有权使用打印机打印的组。|
