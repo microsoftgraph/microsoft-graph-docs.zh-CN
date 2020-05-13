@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3fd6cf96b14ab8c2e5418be86062a58b9803ca76
-ms.sourcegitcommit: d419565add1f731be50c9b5911eb1310fa007097
+ms.openlocfilehash: fb14932034da3a56d760412290d191d66b3bb088
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280646"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44219216"
 ---
 ```javascript
 
@@ -19,7 +19,7 @@ const decline = {
   message: "message-value"
 };
 
-let res = await client.api('/teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/decline')
+let res = await client.api('/teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/decline')
     .version('beta')
     .post(decline);
 
