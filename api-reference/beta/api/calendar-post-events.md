@@ -6,38 +6,38 @@ localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
 ms.openlocfilehash: c9dfdaaba6f9fb611a5ff5fe2db171b911bc344d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "43376040"
 ---
-# <a name="create-event"></a><span data-ttu-id="bfb6c-103">创建事件</span><span class="sxs-lookup"><span data-stu-id="bfb6c-103">Create event</span></span>
+# <a name="create-event"></a><span data-ttu-id="a327e-103">创建事件</span><span class="sxs-lookup"><span data-stu-id="a327e-103">Create event</span></span>
 
-<span data-ttu-id="bfb6c-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bfb6c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a327e-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a327e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bfb6c-105">使用此 API 在日历中创建新事件。</span><span class="sxs-lookup"><span data-stu-id="bfb6c-105">Use this API to create a new event in a calendar.</span></span> <span data-ttu-id="bfb6c-106">可以是[用户](../resources/user.md)的日历，也可以是 Office 365 [组](../resources/group.md)的默认日历。</span><span class="sxs-lookup"><span data-stu-id="bfb6c-106">The calendar can be one for a [user](../resources/user.md), or the default calendar of an Office 365 [group](../resources/group.md).</span></span> 
+<span data-ttu-id="a327e-105">使用此 API 在日历中创建新事件。</span><span class="sxs-lookup"><span data-stu-id="a327e-105">Use this API to create a new event in a calendar.</span></span> <span data-ttu-id="a327e-106">可以是[用户](../resources/user.md)的日历，也可以是 Office 365 [组](../resources/group.md)的默认日历。</span><span class="sxs-lookup"><span data-stu-id="a327e-106">The calendar can be one for a [user](../resources/user.md), or the default calendar of an Office 365 [group](../resources/group.md).</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="bfb6c-107">权限</span><span class="sxs-lookup"><span data-stu-id="bfb6c-107">Permissions</span></span>
-<span data-ttu-id="bfb6c-108">根据创建事件的日历类型和所请求的权限类型（委派型或应用程序），需要下列某一权限来调用此 API。</span><span class="sxs-lookup"><span data-stu-id="bfb6c-108">Depending on the type of calendar that the event is created in and the permission type (delegated or application) requested, one of the following permissions is required to call this API.</span></span> <span data-ttu-id="bfb6c-109">要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="bfb6c-109">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a327e-107">权限</span><span class="sxs-lookup"><span data-stu-id="a327e-107">Permissions</span></span>
+<span data-ttu-id="a327e-108">根据创建事件的日历类型和所请求的权限类型（委派型或应用程序），需要下列某一权限来调用此 API。</span><span class="sxs-lookup"><span data-stu-id="a327e-108">Depending on the type of calendar that the event is created in and the permission type (delegated or application) requested, one of the following permissions is required to call this API.</span></span> <span data-ttu-id="a327e-109">要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a327e-109">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="bfb6c-110">日历</span><span class="sxs-lookup"><span data-stu-id="bfb6c-110">Calendar</span></span> | <span data-ttu-id="bfb6c-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bfb6c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="bfb6c-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bfb6c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bfb6c-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="bfb6c-113">Application</span></span> |
+| <span data-ttu-id="a327e-110">日历</span><span class="sxs-lookup"><span data-stu-id="a327e-110">Calendar</span></span> | <span data-ttu-id="a327e-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a327e-111">Delegated (work or school account)</span></span> | <span data-ttu-id="a327e-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a327e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a327e-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="a327e-113">Application</span></span> |
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="bfb6c-114">用户日历</span><span class="sxs-lookup"><span data-stu-id="bfb6c-114">user calendar</span></span> | <span data-ttu-id="bfb6c-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bfb6c-115">Calendars.ReadWrite</span></span> | <span data-ttu-id="bfb6c-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bfb6c-116">Calendars.ReadWrite</span></span> | <span data-ttu-id="bfb6c-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bfb6c-117">Calendars.ReadWrite</span></span> |
-| <span data-ttu-id="bfb6c-118">组日历</span><span class="sxs-lookup"><span data-stu-id="bfb6c-118">group calendar</span></span> | <span data-ttu-id="bfb6c-119">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bfb6c-119">Group.ReadWrite.All</span></span> | <span data-ttu-id="bfb6c-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="bfb6c-120">Not supported.</span></span> | <span data-ttu-id="bfb6c-121">不支持。</span><span class="sxs-lookup"><span data-stu-id="bfb6c-121">Not supported.</span></span> |
+| <span data-ttu-id="a327e-114">用户日历</span><span class="sxs-lookup"><span data-stu-id="a327e-114">user calendar</span></span> | <span data-ttu-id="a327e-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a327e-115">Calendars.ReadWrite</span></span> | <span data-ttu-id="a327e-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a327e-116">Calendars.ReadWrite</span></span> | <span data-ttu-id="a327e-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a327e-117">Calendars.ReadWrite</span></span> |
+| <span data-ttu-id="a327e-118">组日历</span><span class="sxs-lookup"><span data-stu-id="a327e-118">group calendar</span></span> | <span data-ttu-id="a327e-119">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a327e-119">Group.ReadWrite.All</span></span> | <span data-ttu-id="a327e-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="a327e-120">Not supported.</span></span> | <span data-ttu-id="a327e-121">不支持。</span><span class="sxs-lookup"><span data-stu-id="a327e-121">Not supported.</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="bfb6c-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bfb6c-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a327e-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a327e-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="bfb6c-123">用户或组的默认 [日历](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="bfb6c-123">A user's or group's default [calendar](../resources/calendar.md).</span></span>
+<span data-ttu-id="a327e-123">用户或组的默认 [日历](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="a327e-123">A user's or group's default [calendar](../resources/calendar.md).</span></span>
 ```http
 POST /me/calendar/events
 POST /users/{id | userPrincipalName}/calendar/events
 POST /groups/{id}/calendar/events
 ```
-<span data-ttu-id="bfb6c-124">默认 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="bfb6c-124">A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="a327e-124">默认 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="a327e-124">A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 POST /me/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendars/{id}/events
@@ -45,34 +45,34 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 POST /me/calendarGroup/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendarGroup/calendars/{id}/events
 ```
-<span data-ttu-id="bfb6c-125">指定 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="bfb6c-125">A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="a327e-125">指定 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="a327e-125">A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 POST /me/calendarGroups/{id}/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ```
-## <a name="request-headers"></a><span data-ttu-id="bfb6c-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="bfb6c-126">Request headers</span></span>
-| <span data-ttu-id="bfb6c-127">标头</span><span class="sxs-lookup"><span data-stu-id="bfb6c-127">Header</span></span>       | <span data-ttu-id="bfb6c-128">值</span><span class="sxs-lookup"><span data-stu-id="bfb6c-128">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="a327e-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="a327e-126">Request headers</span></span>
+| <span data-ttu-id="a327e-127">标头</span><span class="sxs-lookup"><span data-stu-id="a327e-127">Header</span></span>       | <span data-ttu-id="a327e-128">值</span><span class="sxs-lookup"><span data-stu-id="a327e-128">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="bfb6c-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="bfb6c-129">Authorization</span></span>  | <span data-ttu-id="bfb6c-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="bfb6c-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="bfb6c-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="bfb6c-132">Content-Type</span></span>  | <span data-ttu-id="bfb6c-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="bfb6c-p104">application/json. Required.</span></span>  |
+| <span data-ttu-id="a327e-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="a327e-129">Authorization</span></span>  | <span data-ttu-id="a327e-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a327e-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="a327e-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a327e-132">Content-Type</span></span>  | <span data-ttu-id="a327e-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="a327e-p104">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="bfb6c-135">请求正文</span><span class="sxs-lookup"><span data-stu-id="bfb6c-135">Request body</span></span>
-<span data-ttu-id="bfb6c-136">在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bfb6c-136">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a327e-135">请求正文</span><span class="sxs-lookup"><span data-stu-id="a327e-135">Request body</span></span>
+<span data-ttu-id="a327e-136">在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a327e-136">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="bfb6c-137">响应</span><span class="sxs-lookup"><span data-stu-id="bfb6c-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a327e-137">响应</span><span class="sxs-lookup"><span data-stu-id="a327e-137">Response</span></span>
 
-<span data-ttu-id="bfb6c-138">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [event](../resources/event.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="bfb6c-138">If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.</span></span>
+<span data-ttu-id="a327e-138">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [event](../resources/event.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="a327e-138">If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="bfb6c-139">示例</span><span class="sxs-lookup"><span data-stu-id="bfb6c-139">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="a327e-139">示例</span><span class="sxs-lookup"><span data-stu-id="a327e-139">Examples</span></span>
 
-### <a name="example-1-create-an-event-in-a-specific-calendar"></a><span data-ttu-id="bfb6c-140">示例 1：在特定日历中创建事件</span><span class="sxs-lookup"><span data-stu-id="bfb6c-140">Example 1: Create an event in a specific calendar</span></span>
+### <a name="example-1-create-an-event-in-a-specific-calendar"></a><span data-ttu-id="a327e-140">示例 1：在特定日历中创建事件</span><span class="sxs-lookup"><span data-stu-id="a327e-140">Example 1: Create an event in a specific calendar</span></span>
 
-#### <a name="request"></a><span data-ttu-id="bfb6c-141">请求</span><span class="sxs-lookup"><span data-stu-id="bfb6c-141">Request</span></span>
-<span data-ttu-id="bfb6c-142">下面的示例在特定日历中创建一个事件，并为该事件分配一个可选的**transactionId**值。</span><span class="sxs-lookup"><span data-stu-id="bfb6c-142">The following example creates an event in a specific calendar and assigns the event an optional **transactionId** value.</span></span>
+#### <a name="request"></a><span data-ttu-id="a327e-141">请求</span><span class="sxs-lookup"><span data-stu-id="a327e-141">Request</span></span>
+<span data-ttu-id="a327e-142">下面的示例在特定日历中创建一个事件，并为该事件分配一个可选的**transactionId**值。</span><span class="sxs-lookup"><span data-stu-id="a327e-142">The following example creates an event in a specific calendar and assigns the event an optional **transactionId** value.</span></span>
 
-<span data-ttu-id="bfb6c-143">在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bfb6c-143">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+<span data-ttu-id="a327e-143">在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a327e-143">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="bfb6c-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="bfb6c-144">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a327e-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="a327e-144">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGViNDU7zAAAAAGtlAAA="],
@@ -111,25 +111,25 @@ Content-type: application/json
   "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="bfb6c-145">C#</span><span class="sxs-lookup"><span data-stu-id="bfb6c-145">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a327e-145">C#</span><span class="sxs-lookup"><span data-stu-id="a327e-145">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-calendar-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="bfb6c-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bfb6c-146">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a327e-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a327e-146">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-calendar-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="bfb6c-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bfb6c-147">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a327e-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a327e-147">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-calendar-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="bfb6c-148">响应</span><span class="sxs-lookup"><span data-stu-id="bfb6c-148">Response</span></span>
-<span data-ttu-id="bfb6c-149">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="bfb6c-149">Here is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="a327e-148">响应</span><span class="sxs-lookup"><span data-stu-id="a327e-148">Response</span></span>
+<span data-ttu-id="a327e-149">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="a327e-149">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="bfb6c-150">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="bfb6c-150">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="bfb6c-151">所有属性都将从实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="bfb6c-151">All  the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="a327e-150">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="a327e-150">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="a327e-151">所有属性都将从实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="a327e-151">All  the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -224,14 +224,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-and-enable-an-event-as-an-online-meeting"></a><span data-ttu-id="bfb6c-152">示例 2：创建事件并启用为联机会议</span><span class="sxs-lookup"><span data-stu-id="bfb6c-152">Example 2: Create and enable an event as an online meeting</span></span>
+### <a name="example-2-create-and-enable-an-event-as-an-online-meeting"></a><span data-ttu-id="a327e-152">示例 2：创建事件并启用为联机会议</span><span class="sxs-lookup"><span data-stu-id="a327e-152">Example 2: Create and enable an event as an online meeting</span></span>
 
-#### <a name="request"></a><span data-ttu-id="bfb6c-153">请求</span><span class="sxs-lookup"><span data-stu-id="bfb6c-153">Request</span></span>
-<span data-ttu-id="bfb6c-154">下面的示例在已登录用户的指定日历中创建一个事件，并将其作为联机会议来启用。</span><span class="sxs-lookup"><span data-stu-id="bfb6c-154">The following example creates an event in the specified calendar of the signed-in user and enables it as an online meeting.</span></span>
+#### <a name="request"></a><span data-ttu-id="a327e-153">请求</span><span class="sxs-lookup"><span data-stu-id="a327e-153">Request</span></span>
+<span data-ttu-id="a327e-154">下面的示例在已登录用户的指定日历中创建一个事件，并将其作为联机会议来启用。</span><span class="sxs-lookup"><span data-stu-id="a327e-154">The following example creates an event in the specified calendar of the signed-in user and enables it as an online meeting.</span></span>
 
-<span data-ttu-id="bfb6c-155">在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bfb6c-155">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+<span data-ttu-id="a327e-155">在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a327e-155">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="bfb6c-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="bfb6c-156">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a327e-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="a327e-156">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGViNDU8zAAAAAGtlAAA="],
@@ -271,25 +271,25 @@ Content-type: application/json
   "onlineMeetingProvider": "teamsForBusiness"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="bfb6c-157">C#</span><span class="sxs-lookup"><span data-stu-id="bfb6c-157">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a327e-157">C#</span><span class="sxs-lookup"><span data-stu-id="a327e-157">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-calendar-with-online-meeting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="bfb6c-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bfb6c-158">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a327e-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a327e-158">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-calendar-with-online-meeting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="bfb6c-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bfb6c-159">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a327e-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a327e-159">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-calendar-with-online-meeting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="bfb6c-160">响应</span><span class="sxs-lookup"><span data-stu-id="bfb6c-160">Response</span></span>
-<span data-ttu-id="bfb6c-161">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="bfb6c-161">Here is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="a327e-160">响应</span><span class="sxs-lookup"><span data-stu-id="a327e-160">Response</span></span>
+<span data-ttu-id="a327e-161">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="a327e-161">Here is an example of the response.</span></span> 
 
-> <span data-ttu-id="bfb6c-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="bfb6c-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="a327e-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="a327e-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

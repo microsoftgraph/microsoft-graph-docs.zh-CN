@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4b3794520372aa14e295cbb0646463263d733b93
+ms.openlocfilehash: c31acd02c2be4c4db9f1f5e3f96e7721f490c39a
 ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "35721468"
+ms.locfileid: "43510598"
 ---
 ```javascript
 
@@ -15,8 +15,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/messages/{id}/mentions/{id}')
+let res = await client.api('/administrativeunits/delta')
     .version('beta')
-    .delete();
+    .get();
 
 ```
