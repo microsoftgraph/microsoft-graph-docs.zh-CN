@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f9747afeef481c886d39ab467c35d45fe0f79f98
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: e7cfe46666024d7affddd2c0b6c0e20836f98638
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40863617"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44217113"
 ---
 ```javascript
 
@@ -15,12 +15,12 @@ const options = {
 
 const client = Client.init(options);
 
-const timeOffRequest = {
+const decline = {
   message: "message-value"
 };
 
-let res = await client.api('/teams/{id}/schedule/timeOffRequests/decline')
+let res = await client.api('/teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/decline')
     .version('beta')
-    .post(timeOffRequest);
+    .post(decline);
 
 ```
