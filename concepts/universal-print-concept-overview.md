@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 84a8a97315bb8ca62afb22f76db06fa67fb4e307
-ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
+ms.openlocfilehash: d3df3a36ac9994b3ce4560b995a52288dd197e34
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "43557862"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44215652"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>通用打印云打印 API 概述
 
@@ -56,7 +56,7 @@ ms.locfileid: "43557862"
 
 ### <a name="seamlessly-replace-or-update-printer-hardware"></a>无缝更换或更新打印机硬件
 
-用户只能看到[共享](/graph/api/print-post-printershares?view=graph-rest-beta)的打印机，这样管理员可以精细地控制哪个打印机硬件在给定时间可用。
+用户只能看到[共享](/graph/api/print-post-shares?view=graph-rest-beta)的打印机，这样管理员可以精细地控制哪个打印机硬件在给定时间可用。
 
 共享打印机会创建 [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) 资源，它可随时更新为指向其他打印机，这样就能轻松更换损坏的打印机硬件，或让打印机脱机接受维护。
 

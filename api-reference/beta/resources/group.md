@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: adb4b5a802987e6b3ec21cbe1a1f9766faad9962
-ms.sourcegitcommit: b88dce7297f196345f16c2c126d7bdd482d22a23
+ms.openlocfilehash: ba2b21714549c6fed05c63801a2410d2162ebed3
+ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44006333"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44227008"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -143,7 +143,7 @@ ms.locfileid: "44006333"
 |proxyAddresses|String 集合| 指向同一组邮箱的组的电子邮件地址。 例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。 需要多值属性筛选器表达式的 **any** 运算符。 <br><br>默认情况下返回。 只读。 不可为 null。 支持 $filter。 |
 |renewedDateTime|DateTimeOffset| 组的上次续订时间戳。 值不能直接修改，只能通过[续订服务操作](../api/grouplifecyclepolicy-renewgroup.md)进行更新。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。|
 |resourceBehaviorOptions|字符串集合|指定可以在创建期间为 Office 365 组设置的组行为。 可设置为只为创建的一部分（POST）。 可取值为：`AllowOnlyMembersToPost`、`HideGroupInOutlook`、`SubscribeNewGroupMembers`、`WelcomeEmailDisabled`。  在此主题的后面提供更多详细信息。|
-|resourceProvisioningOptions|字符串集合|指定预配为 Office 365 组创建的一部分，但是通常不是默认组创建组成的组资源。 可能的值是 `Teams`。 在此主题的后面提供更多详细信息。|
+|resourceProvisioningOptions|字符串集合|指定预配为 Office 365 组创建的一部分，但是通常不是默认组创建组成的组资源。 可能的值是 `Team`。 在此主题的后面提供更多详细信息。|
 |securityEnabled|布尔|指定是否为安全组。 <br><br>默认情况下返回。 支持 `$filter`。|
 |securityIdentifier|字符串|组的安全标识符，用于 Windows 方案。 <br><br>默认情况下返回。|
 |theme|String|指定 Office 365 组的颜色主题。 可能的值为：`Teal`、`Purple`、`Green`、`Blue`、`Pink`、`Orange` 或 `Red`。 <br><br>默认情况下返回。 |
