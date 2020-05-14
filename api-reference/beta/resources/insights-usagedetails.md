@@ -1,24 +1,25 @@
 ---
 title: usageDetails 资源类型
-description: 包含已使用项的属性的复杂类型。 有关用户上次访问（查看）和修改（编辑）资源的时间的信息。
+description: 包含已使用项的属性的复杂类型。 有关用户上次访问（查看）或修改（编辑）资源的时间的信息。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 550a71fa087870f708df2587454d9ebc05bbec1d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: edddf1290073972a8950729e2c9694648ffe0c0a
+ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42495520"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44227001"
 ---
 # <a name="usagedetails-resource-type"></a>usageDetails 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含已[使用](insights-used.md)项的属性的复杂类型。 有关用户上次访问（查看）和修改（编辑）资源的时间的信息。
+包含已[使用](insights-used.md)项的属性的复杂类型。 有关用户上次访问（查看）或修改（编辑）资源的时间的信息。
+
 
 ## <a name="json-representation"></a>JSON 表示形式
 

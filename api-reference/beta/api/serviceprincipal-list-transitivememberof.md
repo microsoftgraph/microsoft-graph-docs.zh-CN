@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 08abf0ba21404fe9d900784f3f54204af4ba750a
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 8ddbb893b5fcc821ea0187e8bfbc5b0c814309b9
+ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219037"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44226915"
 ---
 # <a name="list-serviceprincipal-transitive-memberof"></a>列出 servicePrincipal 可传递的 memberOf
 
@@ -20,7 +20,7 @@ ms.locfileid: "43219037"
 
 获取此服务主体所属的组和目录角色。 此操作是可传递的，将包括此服务主体是其嵌套成员的所有组。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -34,7 +34,7 @@ ms.locfileid: "43219037"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /servicePrincipals/{id}/memberOf
+GET /servicePrincipals/{id}/transitiveMemberOf
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
@@ -114,7 +114,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "List servicePrincipal memberOf",
+  "description": "List servicePrincipal transitiveMemberOf",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

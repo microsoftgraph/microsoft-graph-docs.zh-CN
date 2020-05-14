@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f860958406d2c48d195687e877bf009b1307dbd1
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: feacac9839288a24afe67c64eca05e79a84c0c67
+ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916309"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44226901"
 ---
 # <a name="get-tokenissuancepolicy"></a>获取 tokenIssuancePolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "43916309"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy： Read. All，ApplicationConfiguration |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Policy： Read. All，ApplicationConfiguration |
+| Application                            | Policy： Read. All，ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ GET /policies/tokenIssuancePolicies/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持`$expand`和`$select` OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。 使用`$expand`时，请确保您的应用程序请求读取展开的对象的权限。
+此方法支持 `$expand` 和 `$select` OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。 使用时 `$expand` ，请确保您的应用程序请求读取展开的对象的权限。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /policies/tokenIssuancePolicies/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[tokenIssuancePolicy](../resources/tokenIssuancePolicy.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[tokenIssuancePolicy](../resources/tokenIssuancePolicy.md)对象。
 
 ## <a name="examples"></a>示例
 
@@ -69,7 +69,7 @@ GET /policies/tokenIssuancePolicies/{id}
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/policies/tokenIssuancepolicies/{id}
+GET https://graph.microsoft.com/beta/policies/tokenIssuancePolicies/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-tokenissuancepolicy-csharp-snippets.md)]

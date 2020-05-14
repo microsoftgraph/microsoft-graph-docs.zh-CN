@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4252147e23f0c71d4e7acd04976ca73b457a78ba
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
+ms.openlocfilehash: 2de8dec1048aec0353a5bcc4dc0abc69f659df4a
+ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991773"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44226908"
 ---
 # <a name="get-unifiedroleassignmentmultiple"></a>获取 unifiedRoleAssignmentMultiple
 
@@ -28,7 +28,7 @@ ms.locfileid: "43991773"
 |:--------------- |:------------------------------------------- |
 | 委派（工作或学校帐户） | Devicemanagementrbac.readwrite.all、Devicemanagementrbac.readwrite.all 和所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | Devicemanagementrbac.readwrite.all、Devicemanagementrbac.readwrite.all 和所有 |
+| Application | Devicemanagementrbac.readwrite.all、Devicemanagementrbac.readwrite.all 和所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -53,7 +53,7 @@ GET /roleManagement/deviceManagement/roleAssignments/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md)对象。
 
 ## <a name="examples"></a>示例
 
@@ -113,11 +113,80 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-directory-scoped-roleassignmentmultiple-with-expand"></a>示例2：获取目录范围的 roleAssignmentMultiple`$expand`
+### <a name="example-2-get-a-roleassignmentmultiple-in-intune-assigned-to-a-group"></a>示例2：在分配给组的 Intune 中获取 roleAssignmentMultiple
 
 #### <a name="request"></a>请求
 
-以下是包含`$expand`查询参数的请求的示例。
+下面展示了示例请求。
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_unifiedroleassignmentmultiple"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignments?$filter = principalIds/any(x:x eq '564ae70c-73d9-476b-820b-fb61eb7384b9')
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignmentmultiple-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroleassignmentmultiple-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedroleassignmentmultiple-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/deviceManagement/roleAssignments",
+    "@odata.count": 7,
+    "value": [
+        {
+            "id": "893fc648-73fc-482b-b964-ddd1cabf0db4",
+            "condition": null,
+            "displayName": "Assign Contoso_App_Admin to School Admin",
+            "description": "test",
+            "roleDefinitionId": "2f9f4f7e-2d13-427b-adf2-361a1eef7ae8",
+            "principalIds": [
+                "564ae70c-73d9-476b-820b-fb61eb7384b9"
+            ],
+            "directoryScopeIds": [],
+            "appScopeIds": [
+                "0",
+                "AllLicensedUsers"
+            ]
+        }
+    ]
+}
+```
+
+### <a name="example-3-get-a-directory-scoped-roleassignmentmultiple-with-expand"></a>示例3：获取目录范围的 roleAssignmentMultiple`$expand`
+
+#### <a name="request"></a>请求
+
+以下是包含查询参数的请求的示例 `$expand` 。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
