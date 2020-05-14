@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: e2041bd9f0bb76e8d4df20f7156c0e75d7b6d775
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 422ea191006ea70b7dc40ec3c614a8f349ea6b69
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35733528"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43511060"
 ---
 ```javascript
 
@@ -20,7 +20,6 @@ const forceDelete = {
 };
 
 let res = await client.api('/domains/{id}/forceDelete')
-    .version('beta')
     .post(forceDelete);
 
 ```

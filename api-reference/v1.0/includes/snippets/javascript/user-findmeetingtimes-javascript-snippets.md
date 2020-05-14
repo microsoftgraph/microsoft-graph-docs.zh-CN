@@ -1,10 +1,10 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 7dd2eaa24ac14eaa65112293d61a3ee2f2c46174
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 5968e6c787d47e179ea3a8482eb7fc87bbcd52de
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "36373637"
 ---
 ```javascript
@@ -15,7 +15,48 @@ const options = {
 
 const client = Client.init(options);
 
+const meetingTimeSuggestionsResult = {
+  attendees: [ 
+    { 
+      type: "required",  
+      emailAddress: { 
+        name: "Alex Wilbur",
+        address: "alexw@contoso.onmicrosoft.com" 
+      } 
+    }
+  ],  
+  locationConstraint: { 
+    isRequired: "false",  
+    suggestLocation: "false",  
+    locations: [ 
+      { 
+        resolveAvailability: "false",
+        displayName: "Conf room Hood" 
+      } 
+    ] 
+  },  
+  timeConstraint: {
+    activityDomain:"work", 
+    timeslots: [ 
+      { 
+        start: { 
+          dateTime: "2019-04-16T09:00:00",  
+          timeZone: "Pacific Standard Time" 
+        },  
+        end: { 
+          dateTime: "2019-04-18T17:00:00",  
+          timeZone: "Pacific Standard Time" 
+        } 
+      } 
+    ] 
+  },  
+  isOrganizerOptional: "false",
+  meetingDuration: "PT1H",
+  returnSuggestionReasons: "true",
+  minimumAttendeePercentage: "100"
+};
+
 let res = await client.api('/me/findMeetingTimes')
-    .post();
+    .post(meetingTimeSuggestionsResult);
 
 ```
