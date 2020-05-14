@@ -1,16 +1,16 @@
 ---
 title: 创建规则
 description: '通过指定一组条件和操作来创建 messageRule 对象。 '
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1f20f341fd12b13aed023aca3a3947b0fdbf0648
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9525480d123aa2689ed2ae05b3766d35aa4aec53
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511605"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43361968"
 ---
 # <a name="create-rule"></a>创建规则
 
@@ -46,11 +46,11 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供适用于规则的参数。 以下是在创建规则时通常使用的正文参数。 可以根据情况在请求正文中指定任何其他可写的 **messageRule** 属性。
 
-| 姓名       | 类型|说明|
+| 名称       | 类型|说明|
 |:--------|:-------|:----------|
-|actions|[messageRuleActions](../resources/messageruleactions.md)|满足相应条件（如果有的话）时对邮件执行的操作。 必需。|
+|actions|[messageRuleActions](../resources/messageruleactions.md)|满足相应条件（如果有的话）时对邮件执行的操作。 必填。|
 |conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|满足条件时，将触发该规则的相应操作。 可选。|
-|displayName| String  | 规则的显示名称。 必需。|
+|displayName| String  | 规则的显示名称。 必填。|
 |exceptions| [messageRulePredicates](../resources/messagerulepredicates.md)| 表示规则的例外情况。 可选。 |
 |isEnabled | Boolean | 指示是否启用规则以应用到邮件。 可选。 |
 |Sequence| Int32 | 表示在其他规则中执行规则的顺序。 必需。|

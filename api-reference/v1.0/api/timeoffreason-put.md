@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3719ac2dedc45854bab2b2f82bde19fe1af2f6d2
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: e5736e70125af9ba41d9c2017171865717797998
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155003"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44218283"
 ---
 # <a name="replace-timeoffreason"></a>替换 timeOffReason
 
@@ -18,7 +18,7 @@ ms.locfileid: "44155003"
 
 替换现有的[timeOffReason](../resources/timeoffreason.md)。
 
-如果指定的[timeOffReason](../resources/timeoffreason.md)不存在，则此方法`404 Not found`返回。
+如果指定的[timeOffReason](../resources/timeoffreason.md)不存在，则此方法返回 `404 Not found` 。
 
 ## <a name="permissions"></a>权限
 
@@ -53,7 +53,7 @@ PUT /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[timeOffReason](../resources/timeoffreason.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[timeOffReason](../resources/timeoffreason.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -61,6 +61,8 @@ PUT /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timeoffreason-put"
@@ -76,6 +78,24 @@ Prefer: return=representation
   "isActive": true
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/timeoffreason-put-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/timeoffreason-put-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/timeoffreason-put-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/timeoffreason-put-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 

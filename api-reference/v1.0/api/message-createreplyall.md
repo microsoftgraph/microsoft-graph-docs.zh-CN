@@ -2,15 +2,15 @@
 title: 'message: createReplyAll'
 description: 创建草稿以回复指定邮件的发件人和所有收件人。 然后，可以更新草稿，将回复内容添加到**正文**，或更改其他邮件属性，或者仅发送草稿。
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 53ccfac6ea9f2805c34a2c2367ffa41d3c1d18b0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 999a4582a67813f3a16590145529508dd5fc42e7
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511549"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43361844"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 

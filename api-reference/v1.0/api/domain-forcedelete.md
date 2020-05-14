@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a9219a6e49cc0c0ddc223ea1d9dd108903a21cd0
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 60f81e459ceab6b9c33271a58fc24f884e559c29
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228829"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43511058"
 ---
 # <a name="force-domain-deletion"></a>强制域删除
 
@@ -20,15 +20,15 @@ ms.locfileid: "43228829"
 
 在此操作过程中，将执行以下操作：
 
-* 通过将`userPrincipalName`对`mail`已删除`proxyAddresses`域的引用的、和属性更新为使用初始 onmicrosoft.com 域。 `users`
+* 通过将 `userPrincipalName` 对 `mail` `proxyAddresses` 已删除域的引用的、和属性更新 `users` 为使用初始 onmicrosoft.com 域。
 
-* 将`groups`包含`mail`对已删除域的引用的属性更新为使用初始 onmicrosoft.com 域。
+* 将 `mail` `groups` 包含对已删除域的引用的属性更新为使用初始 onmicrosoft.com 域。
 
-* 将`applications`包含`identifierUris`对已删除域的引用的属性更新为使用初始 onmicrosoft.com 域。
+* 将 `identifierUris` `applications` 包含对已删除域的引用的属性更新为使用初始 onmicrosoft.com 域。
 
 * 如果要重命名的对象的数量大于1000，则返回错误。
 
-* 如果要重命名`applications`的其中一个是多租户应用，则会返回错误。
+* 如果 `applications` 要重命名的其中一个是多租户应用，则会返回错误。
 
 域删除完成后，已删除域的 API 操作将返回 HTTP 404 状态代码。 若要验证域的删除，您可以执行 "[获取域](domain-get.md)" 操作。
 
@@ -52,7 +52,7 @@ POST /domains/{id}/forceDelete
 
 > 对于 {id}，请使用其完全限定的域名指定该域。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称 | 说明 |
 |:---------------|:----------|
@@ -65,11 +65,11 @@ POST /domains/{id}/forceDelete
 
 | 参数 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|`disableUserAccounts`|`Boolean`| 禁用重命名的用户帐户的选项。 如果用户帐户已禁用，则不允许用户登录。 如果设置为**true** ， `users`则将禁用作为此操作的一部分进行更新的。  默认值为 **True**。 |
+|`disableUserAccounts`|`Boolean`| 禁用重命名的用户帐户的选项。 如果用户帐户已禁用，则不允许用户登录。 如果设置为**true** ，则 `users` 将禁用作为此操作的一部分进行更新的。  默认值为 **True**。 |
 
 ## <a name="response-body"></a>响应正文
 
-如果成功，此方法将`HTTP/1.1 204 OK`返回状态代码。
+如果成功，此方法将返回 `HTTP/1.1 204 OK` 状态代码。
 
 ## <a name="example"></a>示例
 
@@ -101,6 +101,10 @@ Content-length: 33
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/domain-forcedelete-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/domain-forcedelete-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

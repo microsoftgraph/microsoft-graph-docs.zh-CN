@@ -2,19 +2,19 @@
 title: 位置资源类型
 description: 表示事件的位置信息。
 localization_priority: Normal
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 51c04110cf41a6934658c82d7436854adfc9c45f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3f1839bdb7bb06dc0df11020ef14e51cf53d2d5e
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447540"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43441479"
 ---
 # <a name="location-resource-type"></a>位置资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 表示[事件](event.md)的位置信息。
 
@@ -35,7 +35,7 @@ ms.locfileid: "42447540"
 | displayName  | String | 与地点相关联的名称。                       |
 | locationEmailAddress | String | （可选）与位置相关联的电子邮件地址。              |
 | locationUri | String | （可选）表示位置的 URI。 |
-| locationType | locationType | 位置的类型。 可能的值为： `default`、 `conferenceRoom`、 `homeAddress` `businessAddress``geoCoordinates` `streetAddress` `hotel` `restaurant`、、、、、、、 `postalAddress` `localBusiness` 只读。|
+| locationType | locationType | 位置的类型。 可能的值为：、、、、、、、、、 `default` `conferenceRoom` `homeAddress` `businessAddress` `geoCoordinates` `streetAddress` `hotel` `restaurant` `localBusiness` `postalAddress` 。 只读。|
 | uniqueId | String | 仅供内部使用。|
 | uniqueIdType | locationUniqueIdType | 仅供内部使用。 |
 

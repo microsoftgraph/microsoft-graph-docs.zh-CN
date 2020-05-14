@@ -1,16 +1,16 @@
 ---
 title: messageRulePredicates 资源类型
 description: 表示适用于某个规则的一组条件和例外情况。
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d40763e53aef06209818476314bca76ad2ba1293
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 98481d80f76d1dffd5c15faf7315aaf2c8dfb8b8
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534235"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43452608"
 ---
 # <a name="messagerulepredicates-resource-type"></a>messageRulePredicates 资源类型
 
@@ -40,7 +40,7 @@ ms.locfileid: "42534235"
 | isReadReceipt | Boolean | 指示传入的邮件是否必须为已读回执，以便条件或例外情况适用。 |
 | isSigned | Boolean | 指示传入的邮件是否必须有 S/MIME 签名，以便条件或例外情况适用。 |
 | isVoicemail | Boolean | 指示传入的邮件是否必须有语音邮件，以便条件或例外情况适用。 |
-| messageActionFlag | messageActionFlag  | 表示出现在传入邮件上的 flag-for-action 值，以便条件或例外情况适用。 可能的值为： `any`、 `call`、 `doNotForward` `followUp` `fyi` `forward` `noResponseNecessary` `read` `reply`、、、、、、、、 `review` `replyToAll`。 |
+| messageActionFlag | messageActionFlag  | 表示出现在传入邮件上的 flag-for-action 值，以便条件或例外情况适用。 可能的值为：、、、、、、、、、、 `any` `call` `doNotForward` `followUp` `fyi` `forward` `noResponseNecessary` `read` `reply` `replyToAll` `review` 。 |
 | notSentToMe | Boolean | 指示邮箱所有者是否不能是传入邮件的收件人，以便条件或异常情况适用。 |
 | recipientContains | 集合（字符串） | 表示出现在传入邮件的 **toRecipients** 或 **ccRecipients** 属性中的字符串，以便条件或例外情况适用。 |
 | senderContains | 集合（字符串） | 表示出现在传入邮件的 **from** 属性中的字符串，以便条件或例外情况适用。 |

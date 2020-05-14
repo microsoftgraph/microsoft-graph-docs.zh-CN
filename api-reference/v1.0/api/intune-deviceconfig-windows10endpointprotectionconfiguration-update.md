@@ -1,16 +1,16 @@
 ---
 title: 更新 windows10EndpointProtectionConfiguration
 description: 更新 windows10EndpointProtectionConfiguration 对象的属性。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ad83de42f932cf4b47d7090f6804f7c26555419e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 21c4333a5dd582a979c4301386aa5524a37eafd8
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514089"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43454199"
 ---
 # <a name="update-windows10endpointprotectionconfiguration"></a>更新 windows10EndpointProtectionConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "42514089"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -311,6 +311,8 @@ Content-Length: 4417
   }
 }
 ```
+
+
 
 
 

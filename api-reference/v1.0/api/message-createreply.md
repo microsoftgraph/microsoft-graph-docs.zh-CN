@@ -2,15 +2,15 @@
 title: 'message: createReply'
 description: 创建回复的草稿以指定邮件。 然后，可以更新草稿，将回复内容添加到**正文**，或更改其他邮件属性，或者仅发送草稿。
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 403f80d229d9acc12d52a89113d6511cd3d44ba6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 56841b358f181eb7202f79e3517dd1f0003c08ef
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511556"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43361954"
 ---
 # <a name="message-createreply"></a>message: createReply
 

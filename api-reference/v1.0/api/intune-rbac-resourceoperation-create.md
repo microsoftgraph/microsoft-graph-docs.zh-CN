@@ -1,16 +1,16 @@
 ---
 title: 创建 resourceOperation
 description: 创建新的 resourceOperation 对象。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2867071b7b017b1e5d61aeb4205771fb99372b80
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 38d3822bcc48312a8e7b5093b889cdd308dceedf
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512284"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43452615"
 ---
 # <a name="create-resourceoperation"></a>创建 resourceOperation
 
@@ -27,7 +27,7 @@ ms.locfileid: "42512284"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementRBAC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -93,6 +93,8 @@ Content-Length: 227
   "description": "Description value"
 }
 ```
+
+
 
 
 

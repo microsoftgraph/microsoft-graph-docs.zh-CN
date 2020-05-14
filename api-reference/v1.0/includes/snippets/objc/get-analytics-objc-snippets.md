@@ -1,24 +1,24 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 8ae8ce7f5a5ee41f414eec0ba1708001e71d5b11
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: c23b85d130ef5a2e4003682e377b4b740e935512
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35740088"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44052318"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/drives/{drive-id}/items/{item-id}/analytics"]]];
-[urlRequest setHTTPMethod:@"GET"];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/followedSites"]]];
+[urlRequest setHTTPMethod:@"POST"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-        MSGraphItemAnalytics *itemAnalytics = [[MSGraphItemAnalytics alloc] initWithData:data error:&nserror];
+        //Request Completed
 
 }];
 

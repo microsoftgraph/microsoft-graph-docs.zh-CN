@@ -312,7 +312,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: 发送邮件
                   href: api/user-sendmail.md
-            - name: 注释
+            - name: 备注
               href: resources/onenote.md
               items:
                 - name: 创建笔记本
@@ -354,9 +354,10 @@
                       href: api/outlookuser-list-mastercategories.md
                 - name: 转换 Id
                   href: api/user-translateexchangeids.md
-            - name: Outlook 任务
-              href: resources/outlooktask.md
+            - name: Outlook 任务（预览）
               items:
+                - name: Outlook 任务
+                  href: resources/outlooktask.md
                 - name: 创建任务
                   href: api/outlookuser-post-tasks.md
                 - name: 列出任务
@@ -387,9 +388,10 @@
                   href: api/planneruser-list-tasks.md
                 - name: 更新设置
                   href: api/planneruser-update.md
-            - name: 配置文件
-              href: resources/profile.md
+            - name: 个人资料（预览版）
               items:
+                - name: 配置文件
+                  href: resources/profile.md
                 - name: 获取用户的配置文件
                   href: api/profile-get.md
                 - name: 删除用户的配置文件
@@ -1083,7 +1085,7 @@
                 - name: 打印作业
                   href: resources/printjob.md
                   items:
-                    - name: Create
+                    - name: 创建
                       href: api/printer-post-jobs.md
                     - name: 获取
                       href: api/printjob-get.md
@@ -1126,9 +1128,9 @@
                   href: resources/printershare.md
                   items:
                     - name: 列表
-                      href: api/print-list-printershares.md
-                    - name: Create
-                      href: api/print-post-printershares.md
+                      href: api/print-list-shares.md
+                    - name: 创建
+                      href: api/print-post-shares.md
                     - name: 获取
                       href: api/printershare-get.md
                     - name: 更新
@@ -4068,7 +4070,7 @@
                     - name: 组策略演示文稿文本
                       href: resources/intune-grouppolicy-grouppolicypresentationtext.md
                       items:
-                        - name: 列表
+                        - name: 列出
                           href: api/intune-grouppolicy-grouppolicypresentationtext-list.md
                         - name: 获取
                           href: api/intune-grouppolicy-grouppolicypresentationtext-get.md
@@ -4081,7 +4083,7 @@
                     - name: 组策略演示文稿文本框
                       href: resources/intune-grouppolicy-grouppolicypresentationtextbox.md
                       items:
-                        - name: 列出
+                        - name: 列表
                           href: api/intune-grouppolicy-grouppolicypresentationtextbox-list.md
                         - name: 获取
                           href: api/intune-grouppolicy-grouppolicypresentationtextbox-get.md
@@ -4281,7 +4283,7 @@
                     - name: iOS 合规性策略
                       href: resources/intune-deviceconfig-ioscompliancepolicy.md
                       items:
-                        - name: 列表
+                        - name: 列出
                           href: api/intune-deviceconfig-ioscompliancepolicy-list.md
                         - name: 获取
                           href: api/intune-deviceconfig-ioscompliancepolicy-get.md
@@ -4296,7 +4298,7 @@
                     - name: iOS 自定义配置
                       href: resources/intune-deviceconfig-ioscustomconfiguration.md
                       items:
-                        - name: 列出
+                        - name: 列表
                           href: api/intune-deviceconfig-ioscustomconfiguration-list.md
                         - name: 获取
                           href: api/intune-deviceconfig-ioscustomconfiguration-get.md
@@ -4495,7 +4497,7 @@
                     - name: iOS 更新配置
                       href: resources/intune-deviceconfig-iosupdateconfiguration.md
                       items:
-                        - name: 列表
+                        - name: 列出
                           href: api/intune-deviceconfig-iosupdateconfiguration-list.md
                         - name: 获取
                           href: api/intune-deviceconfig-iosupdateconfiguration-get.md
@@ -4508,7 +4510,7 @@
                     - name: iOS 更新设备状态
                       href: resources/intune-deviceconfig-iosupdatedevicestatus.md
                       items:
-                        - name: 列出
+                        - name: 列表
                           href: api/intune-deviceconfig-iosupdatedevicestatus-list.md
                         - name: 获取
                           href: api/intune-deviceconfig-iosupdatedevicestatus-get.md
@@ -8069,7 +8071,7 @@
                           href: api/intune-shared-mobileapp-list.md
                         - name: 获取
                           href: api/intune-shared-mobileapp-get.md
-                        - name: assign 操作
+                        - name: 分配操作
                           href: api/intune-shared-mobileapp-assign.md
                         - name: getTopMobileApps
                           href: api/intune-shared-mobileapp-gettopmobileapps.md
@@ -8178,7 +8180,7 @@
                       items:
                         - name: 获取
                           href: api/intune-shared-windowsautopilotdeploymentprofile-get.md
-                        - name: 分配操作
+                        - name: assign 操作
                           href: api/intune-shared-windowsautopilotdeploymentprofile-assign.md
                         - name: hasPayloadLinks 操作
                           href: api/intune-shared-windowsautopilotdeploymentprofile-haspayloadlinks.md
@@ -8841,7 +8843,7 @@
               items:
                 - name: 列表
                   href: api/administrativeunit-list.md
-                - name: Create
+                - name: 创建
                   href: api/administrativeunit-post-administrativeunits.md
                 - name: 获取
                   href: api/administrativeunit-get.md
@@ -9246,14 +9248,14 @@
                   items:
                     - name: 列表
                       href: api/accesspackageresourcerequest-list.md
-                    - name: Create
+                    - name: 创建
                       href: api/accesspackageresourcerequest-post.md
                 - name: 访问包资源角色作用域
                   href: resources/accesspackageresourcerolescope.md
                   items:
                     - name: 列表
                       href: api/accesspackage-list-accesspackageresourcerolescopes.md
-                    - name: Create
+                    - name: 创建
                       href: api/accesspackage-post-accesspackageresourcerolescopes.md
             - name: 功能推出策略
               href: resources/featurerolloutpolicy.md
@@ -10153,8 +10155,9 @@
                 - name: 列出人员
                   href: api/user-list-people.md
             - name: 个人资料（预览版）
-              href: resources/profile.md
               items:
+                - name: 配置文件
+                  href: resources/profile.md
                 - name: 获取用户的配置文件
                   href: api/profile-get.md
                 - name: 删除用户的配置文件
@@ -10231,7 +10234,7 @@
                       href: api/languageproficiency-update.md
                     - name: 删除
                       href: api/languageproficiency-delete.md
-                - name: 名称
+                - name: Names
                   href: resources/personname.md
                   items:
                     - name: 列表
@@ -10299,7 +10302,7 @@
                 - name: Web 帐户
                   href: resources/webaccount.md
                   items:
-                    - name: 列表
+                    - name: 列出
                       href: api/profile-list-webaccounts.md
                     - name: 创建
                       href: api/profile-post-webaccounts.md

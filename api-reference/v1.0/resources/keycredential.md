@@ -4,17 +4,17 @@ description: 包含与应用程序或服务主体相关联的密钥凭据。 App
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 48ea2f837f62baeb8a8c7dc8f2204af8d8aa3113
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: 40837844b7ab78f86cd57438adeb08ceb97d52ad
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447610"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43441494"
 ---
 # <a name="keycredential-resource-type"></a>keyCredential 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 包含与应用程序关联的密钥凭据 <!--or a service principal-->. [应用程序](application.md)的**keyCredentials**属性 <!--and [servicePrincipal](serviceprincipal.md)--> 实体是**keyCredential**的集合。
 

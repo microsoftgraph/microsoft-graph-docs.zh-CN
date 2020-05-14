@@ -1,16 +1,16 @@
 ---
 title: 删除 iosDeviceFeaturesConfiguration
 description: 删除 iosDeviceFeaturesConfiguration。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f45048ffc30a3e82482732515604be7e5addca73
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b66d8e3828f9e552b91e4a462e60f92c6007fd2e
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514562"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43443579"
 ---
 # <a name="delete-iosdevicefeaturesconfiguration"></a>删除 iosDeviceFeaturesConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "42514562"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

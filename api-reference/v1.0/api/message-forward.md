@@ -1,16 +1,16 @@
 ---
 title: 邮件：转发
 description: 转发邮件。邮件保存在已发送邮件文件夹中。
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 76b96101dddd1800b36dc0e47ac56c970f8c113f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 086d411091e4476837a531daad93db6b7da3e587
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511521"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43361521"
 ---
 # <a name="message-forward"></a>邮件：转发
 

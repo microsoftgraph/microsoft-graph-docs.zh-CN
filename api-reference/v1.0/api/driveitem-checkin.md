@@ -5,12 +5,12 @@ title: driveItem：签入
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6a48578b3b823f881b5f34e5d18a169f595d038d
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 7cf999dc338c4a16a4040e8b48b4824c6da09e94
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43227784"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43511119"
 ---
 # <a name="driveitem-checkin"></a>driveItem：签入
 
@@ -52,13 +52,15 @@ POST /users/{userId}/drive/items/{itemId}/checkin
 
 ## <a name="response"></a>响应
 
-如果成功，API 调用将返回`204 No content`。
+如果成功，API 调用将返回 `204 No content` 。
 
 ## <a name="example"></a>示例
 
 本示例签入由 `{item-id}` 标识的文件。
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "checkin-item", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
@@ -69,6 +71,24 @@ Content-Type: application/json
   "comment": "Updating the latest guidelines"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/checkin-item-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/checkin-item-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/checkin-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/checkin-item-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

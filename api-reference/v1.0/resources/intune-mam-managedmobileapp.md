@@ -1,20 +1,20 @@
 ---
 title: managedMobileApp 资源类型
 description: 部署应用的标识符。
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 09c0e1b8922e16caff107ade2855941684840459
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3ea9893e4f002f95939c2f2ac6695d8974bbd423
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448303"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43406596"
 ---
 # <a name="managedmobileapp-resource-type"></a>managedMobileApp 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -57,6 +57,9 @@ ms.locfileid: "42448303"
   "version": "String"
 }
 ```
+
+
+
 
 
 

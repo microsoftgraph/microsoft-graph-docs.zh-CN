@@ -2,15 +2,15 @@
 title: certificateBasedAuthConfiguration 资源类型
 description: 表示证书颁发机构的集合。
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 908a648add1d3e3ea2da4a90fe0f13d2e561ee17
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0271a75b96061e2797403ed92917fdb17ded9e18
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531944"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43181131"
 ---
 # <a name="certificatebasedauthconfiguration-resource-type"></a>certificateBasedAuthConfiguration 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "42531944"
 
 了解有关[Azure Active Directory 中基于证书的身份验证的](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)详细信息。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -44,7 +44,7 @@ ms.locfileid: "42531944"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |certificateAuthorities|[certificateAuthority](certificateauthority.md)集合|创建受信任的证书链的证书颁发机构的集合。|
-|id|字符串|基于证书的身份验证配置的唯一标识符。 只读。|
+|id|String|基于证书的身份验证配置的唯一标识符。 只读。|
 
 ## <a name="relationships"></a>关系
 
