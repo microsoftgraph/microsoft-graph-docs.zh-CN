@@ -5,16 +5,18 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 59f5977169563acd3589e0a8417b12c5f5daf1d8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b17dc772f1310acc97b02453aef181f0f8212124
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509200"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43718589"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
-命名空间：microsoft.graph 根据组织者和与会者的空闲状况以及指定为参数的时间或位置限制，推荐会议时间和位置。
+命名空间：microsoft.graph
+
+根据组织者和与会者的空闲状况以及指定为参数的时间或位置，推荐会议时间和位置。
 
 如果 **findMeetingTimes** 无法返回任何会议时间建议，响应会在 **emptySuggestionsReason** 属性中指明原因。根据此值，可以更好地调整参数，并重新调用 **findMeetingTimes**。
 
