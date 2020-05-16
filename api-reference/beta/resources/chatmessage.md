@@ -5,22 +5,22 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5443f88005f46a07353d6d24ed07bea11df7b30b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3a5f59c16e19fae5da17f8d43efc1f2ba63f00d4
+ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507717"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44272687"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示 [渠道](channel.md)或[聊天](chat.md)中的单个聊天信息。 聊天消息可以是一个根聊天消息，也可以是由聊天消息中的**replyToId**属性定义的答复线程的一部分。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
@@ -51,7 +51,7 @@ ms.locfileid: "42507717"
 |replyToId| string | 只读。 线程的父聊天消息或根聊天消息的 Id。 （仅适用于通道中不聊天的聊天邮件） |
 |from|[identitySet](identityset.md)| 只读。 聊天消息发件人的详细信息。|
 |etag| string | 只读。 聊天消息的版本号。 |
-|messageType|chatMessageType|聊天消息的类型。 可能的值是： `message`。|
+|messageType|string|聊天消息的类型。 可能的值是： `message` 。|
 |createdDateTime|dateTimeOffset|只读。 在聊天消息创建时的时间戳。|
 |lastModifiedDateTime|dateTimeOffset|只读。 在创建或编辑聊天消息时的时间戳，包括答复的时间（如果是频道中的根聊天邮件）或添加或删除了反应。 |
 |deletedDateTime|dateTimeOffset|只读。 删除聊天邮件的时间戳，如果未删除，则为 null。 |
@@ -60,8 +60,8 @@ ms.locfileid: "42507717"
 |摘要|string| 可用于推送通知和摘要视图或回退视图的聊天消息的摘要文本。 仅适用于频道聊天消息，而不是聊天中的聊天消息。 |
 |附件|[chatMessageAttachment](chatmessageattachment.md) 集合 |附加文件。 附件目前是只读的 – 不支持发送附件。 |
 |提及|[chatMessageMention](chatmessagemention.md) 集合| 聊天消息中提及的实体列表。 当前支持用户、机器人、团队、渠道。|
-|重要性| chatMessageImportance | 聊天消息的重要性。 可能的值包括 `normal`、`high`、`urgent`。|
-|反应| [chatMessageReaction](chatmessagereaction.md) 集合 | 此聊天消息的反应（例如，如）。|
+|重要性|string | 聊天消息的重要性。 可能的值包括 `normal`、`high`、`urgent`。|
+|反应| [chatMessageReaction](./chatmessagereaction.md) 集合 | 此聊天消息的反应（例如，如）。|
 |区域设置|string|客户端的聊天消息的区域设置。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -101,7 +101,7 @@ ms.locfileid: "42507717"
   "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
   "importance": "string",
   "policyViolation": "string",
-  "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
+  "reactions":  "string",
   "locale": "string",
   "deleted": true
 }

@@ -5,16 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a3c40433a1be214141dff8eda99142a96be0a003
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b8dd3e7b3e50ed5642aeb23076705f4995e27759
+ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519916"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44272708"
 ---
 # <a name="teamsappdefinition-resource-type"></a>teamsAppDefinition 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,6 +26,7 @@ ms.locfileid: "42519916"
 |:------------------- |:-------- |:----------- |
 | id                  | string   | 唯一 id （而不是团队 appid）。 |
 | teamsAppId          | string   | 团队应用程序清单中的 id。 |
+| azureADAppId        | string   | 来自团队应用程序清单的 WebApplicationInfo.id。 |
 | displayName         | string   | 应用程序开发人员提供的应用程序的名称。 |
 | version             | string   | 应用程序的版本号。 |
 
@@ -46,7 +47,7 @@ ms.locfileid: "42519916"
 }
 ```
 
-# <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>另请参阅
 
 - [teamsApp](teamsapp.md)
 - [teamsAppInstallation](teamsappinstallation.md)

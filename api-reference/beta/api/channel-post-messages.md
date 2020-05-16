@@ -5,16 +5,16 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 02d91e5880e1eb19b7da18c36177f080c9154083
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 155efb7680b2e50e4ef3a726c93dd62b5d7562d4
+ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440127"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44272645"
 ---
 # <a name="create-chatmessage-in-a-channel"></a>在频道中创建 chatMessage
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "42440127"
 
 > **注意**：我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -53,7 +53,7 @@ POST /teams/{id}/channels/{id}/messages
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[了 chatmessage](../resources/chatmessage.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[了 chatmessage](../resources/chatmessage.md)对象。
 
 ## <a name="examples"></a>示例
 
@@ -98,7 +98,7 @@ Content-type: application/json
 下面是一个响应示例。
 
 > [!NOTE]
-> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -330,9 +330,96 @@ Content-length: 160
 }
 ```
 
+### <a name="example-4-file-attachments"></a>示例4：文件附件
+
+#### <a name="request"></a>请求
+下面展示了示例请求。
+
+>**注意：** 该文件必须已在 SharePoint 中。 若要查找文件属性，请获取文件的**driveItem** 。 例如，/drives/{id}/items/{id}。 附件 ID 是**driveItem**的**ETAG**中的 GUID，附件**contentURL**是**driveItem**的文件夹的**webUrl**以及**driveItem**的名称，而附件名称是**driveItem**的名称。
+
+<!-- {
+  "blockType": "request",
+  "name": "create_chatmessage_from_channel"
+}-->
+```http
+POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+Content-type: application/json
+
+{
+    "body": {
+        "contentType": "html",
+        "content": "Here's the latest budget. <attachment id=\"153fa47d-18c9-4179-be08-9879815a9f90\"></attachment>"
+    },
+    "attachments": [
+        {
+            "id": "153fa47d-18c9-4179-be08-9879815a9f90",
+            "contentType": "reference",
+            "contentUrl": "https://m365x987948.sharepoint.com/sites/test/Shared%20Documents/General/test%20doc.docx",
+            "name": "Budget.docx"
+        }
+    ]
+}
+```
+
+#### <a name="response"></a>响应
+
+下面是一个响应示例。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('13a99602-a5d3-4fed-99d2-7dc3ffe3730d')/channels('19%3A8af03d1e70f5455fbb74d36acbe2957f%40thread.tacv2')/messages/$entity",
+    "id": "1589481435511",
+    "replyToId": null,
+    "etag": "1589481435511",
+    "messageType": "message",
+    "createdDateTime": "2020-05-14T18:37:15.511Z",
+    "lastModifiedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A8af03d1e70f5455fbb74d36acbe2957f%40thread.tacv2/1589481435511?groupId=13a99602-a5d3-4fed-99d2-7dc3ffe3730d&tenantId=e5648b2b-1dea-445a-ab65-4f9326c2bd10&createdTime=1589481435511&parentMessageId=1589481435511",
+    "policyViolation": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+            "id": "598efcd4-e549-402a-9602-0b50201faebe",
+            "displayName": "MOD Administrator",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "Here's the latest budget. <attachment id=\"153fa47d-18c9-4179-be08-9879815a9f90\"></attachment>"
+    },
+    "attachments": [
+        {
+            "id": "153fa47d-18c9-4179-be08-9879815a9f90",
+            "contentType": "reference",
+            "contentUrl": "https://m365x987948.sharepoint.com/sites/test/Shared%20Documents/General/test%20doc.docx",
+            "content": null,
+            "name": "Budget.docx",
+            "thumbnailUrl": null
+        }
+    ],
+    "mentions": [],
+    "reactions": []
+}
+```
+
 ## <a name="see-also"></a>另请参阅
 
-- [卡片参考](/microsoftteams/platform/concepts/cards/cards-reference)
+- [卡参考](/microsoftteams/platform/concepts/cards/cards-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

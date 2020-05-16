@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0cb40f4d9815ed0c95f319fd5f112dfd5802f10a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e82ff5959e47ac6ec0832e31f6228282a14e671f
+ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43384968"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44272729"
 ---
 # <a name="useridentity-type"></a>userIdentity 类型
 
@@ -23,12 +23,13 @@ ms.locfileid: "43384968"
 
 此类型继承自[标识](identity.md)，并且具有一个附加属性（用户的用户主体名称）。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 无。  [创建 accessReview](../api/accessreview-create.md)时，您可以在请求的正文中包含此类型的对象。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+
+| 属性 | 类型 | Description|
 |:---------------|:--------|:----------|
 | `displayName` | `String` | 此身份的显示名称。 请注意，这可能并不总是可用，也不是最新的。    |
 | `id`          | `String` | 身份的唯一标识符。  |
@@ -45,11 +46,11 @@ ms.locfileid: "43384968"
 
 ## <a name="see-also"></a>另请参阅
 
-| 方法           | 返回类型    |说明|
+| Method | 返回类型说明|
 |:---------------|:--------|:----------|
-|[获取 accessReview 审阅者](../api/accessreview-listreviewers.md) |       [userIdentity](useridentity.md)集合| 获取 accessReview 的审阅者。 |
-|[添加 accessReview 审阅者](../api/accessreview-addreviewer.md) |      无。   |   向 accessReview 添加审阅者。 |
-|[删除 accessReview 审阅者](../api/accessreview-removereviewer.md) | 无。  |   从 accessReview 中删除审阅者。 |
+|[获取 accessReview 审阅者](../api/accessreview-listreviewers.md) | [userIdentity](useridentity.md)集合| 获取 accessReview 的审阅者。 |
+|[添加 accessReview 审阅者](../api/accessreview-addreviewer.md) | 无。 | 向 accessReview 添加审阅者。 |
+|[删除 accessReview 审阅者](../api/accessreview-removereviewer.md) | 无。 |从 accessReview 中删除审阅者。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
