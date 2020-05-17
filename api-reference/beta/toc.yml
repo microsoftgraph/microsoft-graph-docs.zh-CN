@@ -437,6 +437,8 @@ items:
                 href: api/group-post-groups.md
               - name: 删除组
                 href: api/group-delete.md
+              - name: 评估动态成员资格
+                href: api/group-evaluatedynamicmembership.md
               - name: 获取已删除的组
                 href: api/directory-deleteditems-get.md
               - name: 获取 Delta
@@ -1263,7 +1265,7 @@ items:
                   - name: Android for Work 注册配置文件
                     href: resources/intune-androidforwork-androidforworkenrollmentprofile.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-androidforwork-androidforworkenrollmentprofile-list.md
                       - name: 获取
                         href: api/intune-androidforwork-androidforworkenrollmentprofile-get.md
@@ -1282,7 +1284,7 @@ items:
                   - name: Android for Work 移动应用配置
                     href: resources/intune-apps-androidforworkmobileappconfiguration.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-apps-androidforworkmobileappconfiguration-list.md
                       - name: 获取
                         href: api/intune-apps-androidforworkmobileappconfiguration-get.md
@@ -3207,7 +3209,7 @@ items:
                   - name: Android VPN 配置
                     href: resources/intune-deviceconfig-androidvpnconfiguration.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-deviceconfig-androidvpnconfiguration-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-androidvpnconfiguration-get.md
@@ -3222,7 +3224,7 @@ items:
                   - name: Android Wi-Fi 配置
                     href: resources/intune-deviceconfig-androidwificonfiguration.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-deviceconfig-androidwificonfiguration-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-androidwificonfiguration-get.md
@@ -4065,7 +4067,7 @@ items:
                   - name: 组策略演示文稿多文本框
                     href: resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-grouppolicy-grouppolicypresentationmultitextbox-list.md
                       - name: 获取
                         href: api/intune-grouppolicy-grouppolicypresentationmultitextbox-get.md
@@ -4078,7 +4080,7 @@ items:
                   - name: 组策略演示文稿文本
                     href: resources/intune-grouppolicy-grouppolicypresentationtext.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-grouppolicy-grouppolicypresentationtext-list.md
                       - name: 获取
                         href: api/intune-grouppolicy-grouppolicypresentationtext-get.md
@@ -11105,6 +11107,20 @@ items:
           - name: 聊天消息
             href: resources/chatmessage.md
             items:
+              - name: 列出频道消息
+                href: api/channel-list-messages.md
+              - name: 获取通道消息 delta
+                href: api/chatmessage-delta.md
+              - name: 获取通道消息
+                href: api/channel-get-message.md
+              - name: 列出消息回复
+                href: api/channel-list-messagereplies.md
+              - name: 获取消息回复
+                href: api/channel-get-messagereply.md
+              - name: 发送消息
+                href: api/channel-post-messages.md
+              - name: 回复消息
+                href: api/channel-post-messagereply.md
               - name: 列出承载的内容
                 href: api/chatmessage-list-chatmessagehostedcontents.md
               - name: 获取托管内容

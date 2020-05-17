@@ -4470,6 +4470,17 @@ items:
                 href: api/channel-patch.md
               - name: 删除频道
                 href: api/channel-delete.md
+              - name: 发送消息
+                href: api/channel-post-messages.md
+              - name: 回复消息
+                href: api/channel-post-messagereply.md
+          - name: 聊天消息
+            href: resources/chatmessage.md
+            items:
+              - name: 发送消息
+                href: api/channel-post-messages.md
+              - name: 回复消息
+                href: api/channel-post-messagereply.md
           - name: 应用程序目录
             href: resources/teamsapp.md
             items:
@@ -4534,7 +4545,7 @@ items:
               - name: Shift
                 href: resources/shift.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/schedule-list-shifts.md
                   - name: 创建
                     href: api/schedule-post-shifts.md
