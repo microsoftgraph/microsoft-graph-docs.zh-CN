@@ -173,9 +173,13 @@ items:
       - name: Financials（预览版）
         href: dynamics-business-central-concept-overview.md
         displayname: 'Dynamics, Dynamics 365 Business Central'
-      - name: 身份和访问控制
-        href: azuread-identity-access-management-concept-overview.md
-        displaName: 'Azure AD, Microsoft identity platform'
+      - name: 身份和访问
+        displayName: 'Azure AD, Microsoft identity platform'
+        items:
+          - name: 概述
+            href: azuread-identity-access-management-concept-overview.md
+          - name: 身份验证方法
+            href: authenticationmethods-get-started.md
       - name: 邮件
         displayName: 'Outlook, Outlook mail'
         items:
