@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 4117190df40eb3bcf5a837fdad298cefe5121793
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f995fa1cb725ae5c0764f349180e7f757a9f423e
+ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531931"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44272652"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -35,7 +35,8 @@ ms.locfileid: "42531931"
 |[更新选项卡](../api/teamstab-update.md) | [teamsTab](teamstab.md) | 更新选项卡属性。|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+
+| 属性   | 类型 | 说明|
 |:---------------|:--------|:----------|
 |说明|String|频道的可选文本描述。|
 |displayName|String|在 Microsoft Teams 中呈现在用户面前的频道名称。|
@@ -44,9 +45,12 @@ ms.locfileid: "42531931"
 |webUrl|String|导航至 Microsoft Teams 中的频道的超链接。 在 Microsoft Teams 中右键单击某个频道并选择“获取频道链接”即可获得此 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 只读。|
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型   |说明|
+
+| 关系 | 类型 | 说明|
 |:---------------|:--------|:----------|
+|messages|[chatMessage](./chatmessage.md) 集合|频道中的所有消息集合。 一种导航属性。 可为 NULL。|
 |选项卡|[teamsTab](../resources/teamstab.md) 集合|频道中的所有选项卡集合。 一种导航属性。|
+|filesFolder|[driveItem](driveitem.md)|用于存储频道文件的位置的元数据。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式
