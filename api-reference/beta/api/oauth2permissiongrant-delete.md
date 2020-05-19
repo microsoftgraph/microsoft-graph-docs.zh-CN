@@ -1,49 +1,58 @@
 ---
 title: 删除 oAuth2PermissionGrant
-description: 删除 oAuth2PermissionGrant。
+description: 删除代表委派权限授予的 oAuth2PermissionGrant。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: psignoret
-ms.openlocfilehash: 14d70a5673ddf1e08f9aa50758befb85348efa1a
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+author: davidmu1
+ms.openlocfilehash: a82ff97a09831c7ff04ac279d27d23638de0a7f6
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199982"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289507"
 ---
-# <a name="delete-oauth2permissiongrant"></a>删除 oAuth2PermissionGrant
+# <a name="delete-a-delegated-permission-grant-oauth2permissiongrant"></a>删除委派权限授予（oAuth2PermissionGrant）
+
+命名空间：microsoft.graph
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除 oAuth2PermissionGrant。
+删除[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)。
+
+删除委派权限授予时，其授予的访问权限将被吊销。 现有的访问令牌将在其生命周期内继续有效，但不会为删除的**oAuth2PermissionGrant**中标识的委派权限授予新的访问令牌。
+
+> [!NOTE]
+> 在调用 API 时，可能有两个委派权限授权应用程序代表用户执行操作。 当用户代表自己对应用程序同意时（创建具有**consentType** *主体*的**oAuth2PermissionGrant** ，标识用户），然后管理员授予代表所有用户的租户范围*内的管理员*同意（使用 consentType 的**AllPrincipals**创建第二个**oAuth2PermissionGrant** ）时，可能会发生这种情况。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | DelegatedPermissionGrant、Directory.accessasuser.all、all 和的所有子目录    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Directory.ReadWrite.All |
+|应用程序 | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /oAuth2Permissiongrants/{id}
-DELETE /users/{id | userPrincipalName}/oAuth2Permissiongrants/{id}
-DELETE /drive/root/createdByUser/oAuth2Permissiongrants/{id}
 
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /oauth2PermissionGrants/{id}
 ```
+
 ## <a name="request-headers"></a>请求标头
+
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
@@ -51,17 +60,20 @@ DELETE /drive/root/createdByUser/oAuth2Permissiongrants/{id}
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+
+### <a name="request"></a>请求
+
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_oAuth2Permissiongrant"
+  "name": "delete_oAuth2PermissionGrant"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/oAuth2Permissiongrants/{id}
+DELETE https://graph.microsoft.com/beta/oauth2PermissionGrants/{id}
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-oauth2permissiongrant-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -76,12 +88,15 @@ DELETE https://graph.microsoft.com/beta/oAuth2Permissiongrants/{id}
 
 ---
 
-##### <a name="response"></a>响应
-下面是一个响应示例。 
+### <a name="response"></a>响应
+
+下面是一个响应示例。
+
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -91,7 +106,7 @@ HTTP/1.1 204 No Content
 <!--
 {
   "type": "#page.annotation",
-  "description": "Delete oAuth2Permissiongrant",
+  "description": "Delete oAuth2PermissionGrant",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

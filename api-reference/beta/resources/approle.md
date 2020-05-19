@@ -4,13 +4,13 @@ description: 表示应用程序角色。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: sureshja
-ms.openlocfilehash: 8ac192372264ac09192d831213115143d6274b08
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+author: davidmu1
+ms.openlocfilehash: fe3753a0743a5cf1faac84b4fb102e1ffd702fed
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467971"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44291011"
 ---
 # <a name="approle-resource-type"></a>appRole 资源类型
 
@@ -18,18 +18,23 @@ ms.locfileid: "43467971"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示可能由调用其他应用程序的客户端应用程序请求的应用程序角色，或可用于向指定的应用程序角色中的用户或组分配应用程序的应用程序角色。 [ServicePrincipal](serviceprincipal.md)实体和[Application](application.md)实体的**appRoles**属性是**appRole**的集合。
+表示可由客户端应用程序请求的应用程序角色，或可用于向指定角色中的用户或组分配应用程序的应用程序角色。 
+
+[Application](application.md)和[ServicePrincipal](serviceprincipal.md)实体的**appRoles**属性是**appRole**的集合。 
+
+使用[appRoleAssignments](approleassignment.md)，可以将应用程序角色分配给用户、组或其他应用程序的服务主体。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+
+| 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|allowedMemberTypes|String collection|指定是否可以通过设置为 "用户" 或将此应用程序角色定义分配给用户和组，或通过设置为 "应用程序" 或同时设置为 "应用程序" 来将此应用程序角色定义分配给用户和组。|
-|description|String|在管理员应用分配和同意体验中显示的权限帮助文本。|
-|displayName|字符串|管理员同意和应用工作分配体验中显示的权限的显示名称。|
+|allowedMemberTypes|String collection|指定是否可以将此应用程序角色分配给用户和组（通过设置为 `["User"]` ）到其他应用程序（通过设置为 `["Application"]` 或同时设置为两者）（通过设置为 `["User", "Application"]` ）。 支持分配其他应用程序服务主体的应用程序角色也称为 "[应用程序权限](/graph/auth/auth-concepts#microsoft-graph-permissions)"。|
+|说明|String|应用程序角色的说明。 在授权体验期间，如果应用程序角色是作为应用程序的权限运行的，则会显示此情况。|
+|displayName|字符串|显示在应用程序角色分配和同意体验中的权限的显示名称。|
 |id|Guid|**AppRoles**集合中的唯一角色标识符。 创建新的应用程序角色时，必须提供新的 Guid 标识符。 |
 |isEnabled|Boolean|在创建或更新应用程序角色时，必须将其设置为**true** （默认值为）。 若要删除角色，必须首先将此设置为**false**。  此时，在后续调用中，可能会删除此角色。|
-|格式|String| 只读。 指定是在 Application 对象上还是在 ServicePrincipal 对象上定义应用程序角色。 不得_包含_在任何 POST 或 PATCH 请求中。 |
-|value|String|指定将包含在 authentication 和 access 令牌中`roles`的声明中的值。 长度不得超过120个字符。 允许的字符`:` `!` `#` `$` `%`包括`&` `'` `(` `a-z`，以及`0-9`范围中`A-Z`的字符和。 `)` `*` `+` `,` `-` `.` `/` `:` `;` <code>&lt;</code> `=` <code>&gt;</code> `?` `@` `[` `]` `^` `+` `_` <code>&#96;</code> `{` <code>&#124;</code> `}` `~` 不允许使用任何其他字符，包括空格字符。  |
+|格式|String| 指定是在[application](application.md)对象上还是在[servicePrincipal](serviceprincipal.md)实体上定义应用程序角色。 不得_包含_在任何 POST 或 PATCH 请求中。 只读。 |
+|value|String|指定要包含在 `roles` ID 令牌中的声明中的值，以及对分配的用户或服务主体进行身份验证的访问令牌。 长度不得超过120个字符。 允许的字符包括 `:` `!` `#` `$` `%` `&` `'` `(` `)` `*` `+` `,` `-` `.` `/` `:` `;` <code>&lt;</code> `=` <code>&gt;</code> `?` `@` `[` `]` `^` `+` `_` <code>&#96;</code> `{` <code>&#124;</code> `}` `~` ，以及范围中的字符 `0-9` `A-Z` 和 `a-z` 。 不允许使用任何其他字符，包括空格字符。  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -53,7 +58,6 @@ ms.locfileid: "43467971"
   "origin": "string",
   "value": "string"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

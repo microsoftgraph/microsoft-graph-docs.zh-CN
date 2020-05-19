@@ -5,16 +5,16 @@ localization_priority: Normal
 author: merzink
 ms.prod: notifications
 doc_type: resourcePageType
-ms.openlocfilehash: 822a5d24acbec878b864c70d357f76a1fa115e4b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5fd76d6798ab92fdfa319b732dd926fbec22e798
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498572"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290179"
 ---
 # <a name="fallbackpolicy-resource-type"></a>fallbackPolicy 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "42498572"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| endpointFallback | [fallbackPolicyProperties](fallbackpolicyproperties.md) | EndpointFallback 策略对象在终结点级别处理通知回退策略，目前限制为 iOS。 |   
+| endpointFallback | [fallbackpolicyProperties](fallbackpolicyproperties.md) | EndpointFallback 策略对象在终结点级别处理通知回退策略，目前限制为 iOS。 |   
 
 
 ## <a name="json-representation"></a>JSON 表示形式

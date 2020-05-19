@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 704bb439bfab3a35f6cebb191430b27b7444e418
-ms.sourcegitcommit: b88dce7297f196345f16c2c126d7bdd482d22a23
+ms.openlocfilehash: fea5be249ae7d5494637410794987c5b554e2b1d
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44006347"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290073"
 ---
 # <a name="list-places"></a>列表位置
 
@@ -70,6 +70,8 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 - $filter
 - $select
 - $top
+- $skip
+- $count = true
 
 使用 $top 自定义页面大小。 默认页面大小是 100。
 
@@ -87,7 +89,7 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[place](../resources/place.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[place](../resources/place.md)对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -125,7 +127,7 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -243,7 +245,7 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
 
 <!-- {
   "blockType": "response",

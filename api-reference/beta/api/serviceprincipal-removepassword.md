@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a4c68e934fb6ea3085c5dd268371e9f5763519c9
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 19dd072f10102a97766b2998dfa368032bf08129
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218610"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290003"
 ---
 # <a name="serviceprincipal-removepassword"></a>servicePrincipal： removePassword
 
@@ -20,15 +20,15 @@ ms.locfileid: "43218610"
 
 从[servicePrincipal](../resources/serviceprincipal.md)对象中删除密码。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     | 所有的 Directory.accessasuser.all，all，all，All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
+| 应用程序                            | Application.readwrite.ownedby、所有的 readwrite、全部、读写。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

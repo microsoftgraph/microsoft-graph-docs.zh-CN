@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d755914128e5945fcd45e2df79fce95f7d5c03df
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 944c0a2e30a7202ad85510be84ef8b426059f4b6
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107260"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289395"
 ---
 # <a name="add-application-password"></a>添加应用程序密码
 
@@ -25,9 +25,9 @@ ms.locfileid: "43107260"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | 所有的 Directory.accessasuser.all，all，all，All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
+|应用程序 | Application.readwrite.ownedby、所有的 readwrite、全部、读写。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,17 +45,17 @@ POST /applications/{id}/addPassword
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和 password 对象。 Azure AD 生成通过`secretText`属性返回的强密码。 将来无法检索此密码。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 password 对象。 Azure AD 生成通过属性返回的强密码 `secretText` 。 将来无法检索此密码。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+下面展示了示例请求。
 
 ```http
 POST https://graph.microsoft.com/beta/applications/{id}/addPassword
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。
+下面展示了示例响应。
 
 ```http
 HTTP/1.1 200 OK

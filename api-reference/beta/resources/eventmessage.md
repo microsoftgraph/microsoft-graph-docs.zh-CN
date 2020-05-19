@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: bdf0f27bcd083142bf5f7ec14ceac32853aaf091
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b74ea471f1756247a6e7ee3b10d43857b89d9891
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454107"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290151"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage 资源类型
 
@@ -109,7 +109,7 @@ ms.locfileid: "43454107"
 |conversationIndex|Edm.Binary|指出消息在对话中的位置。|
 |createdDateTime|DateTimeOffset|创建邮件的日期和时间。|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|请求的会议的结束时间。|
-|flag|[followUpFlag](followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标志值。|
+|flag|[followupFlag](followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标志值。|
 |发件人|[recipient](recipient.md)|发送邮件邮箱的所有者。 在多数情况中，此数值与“**发件人**”属性相同，但共享或委派情景除外。 值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
 |hasAttachments|Boolean|指示邮件是否包含附件。|
 |id|String| 邮件的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] 只读。 |
@@ -137,7 +137,7 @@ ms.locfileid: "43454107"
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|请求的会议的开始时间。|
 |subject|String|邮件的主题。|
 |toRecipients|[recipient](recipient.md) collection|邮件的收件人。|
-|type|String|所需会议的类型： `singleInstance`、 `occurence`、 `exception`、 `seriesMaster`。|
+|type|String|所需会议的类型： `singleInstance` 、 `occurence` 、 `exception` 、 `seriesMaster` 。|
 |uniqueBody|[itemBody](itembody.md)|当前邮件专用的邮件正文部分。|
 |UnsubscribeData|String|从 List-Unsubscribe 标头中解析的有效条目。若 UnsubscribeEnabled 属性为 true，则这是 List-Unsubscribe 标头中的邮件命令的数据。|
 |UnsubscribeEnabled|Boolean|指示邮件是否已启用取消订阅。若 list-Unsubscribe 标头符合 rfc-2369，则其值为 True。|
@@ -146,7 +146,7 @@ ms.locfileid: "43454107"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[附件](attachment.md) 集合|邮件的[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)和[referenceAttachment](referenceattachment.md)附件的集合。 只读。 可为 Null。|
+|attachments|[附件](attachment.md)集合|邮件的[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)和[referenceAttachment](referenceattachment.md)附件的集合。 只读。 可为 NULL。|
 |event|[event](event.md)| 与事件消息相关联的事件。对于与会者或会议室资源，假定已将日历助理设为在会议请求事件消息到达时自动更新包含事件的日历。导航属性。只读。|
 |extensions|[扩展](extension.md)集合| 为 eventMessage 定义的开放扩展集合。只读。可为 NULL。|
 |提及|[mention](mention.md) 集合 | 邮件中的提及集合，按 **createdDateTime** 由最新到最旧排序。默认情况下，`GET` /messages 不会返回此属性，在该属性上应用 `$expand` 时除外。|

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 02439ce11f5a428d0c10ba9a74fd42d45e3205d3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 24ae04514b93ba09ba994e1f184e1b2546e038bc
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463044"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290948"
 ---
 # <a name="eventmessageresponse-resource-type"></a>eventMessageResponse 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "43463044"
 
 派生自[eventMessage](eventmessage.md)。 
 
-如果组织者收到的**responseType** `tentativelyAccepted`设置为`declined`或，并且包含**proposedNewTime**属性的**eventMessageResponse** ，则可以选择接受该建议。 为此，首先使用**eventMessageResponse**的**事件**导航属性来访问相应的事件，如以下[示例](../api/eventmessage-get.md#example-2)所示。 然后，将关联的事件[更新](../api/event-update.md)为建议的时间。
+如果组织者收到的**responseType**设置为**eventMessageResponse** `tentativelyAccepted` 或 `declined` ，并且包含**proposedNewTime**属性的 eventMessageResponse，则可以选择接受该建议。 为此，首先使用**eventMessageResponse**的**事件**导航属性来访问相应的事件，如以下[示例](../api/eventmessage-get.md#example-2)所示。 然后，将关联的事件[更新](../api/event-update.md)为建议的时间。
 
 有关如何建议时间以及如何接收和接受新时间建议的详细信息，请参阅[建议新会议时间](/graph/outlook-calendar-meeting-proposals)。
 
@@ -70,7 +70,7 @@ ms.locfileid: "43463044"
 |conversationIndex|Edm.Binary|电子邮件所属对话的索引。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|请求的会议的结束时间。|
-|flag|[followUpFlag](followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标志值。|
+|flag|[followupFlag](followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标志值。|
 |发件人|[recipient](recipient.md)|发送邮件邮箱的所有者。 在多数情况中，此数值与“**发件人**”属性相同，但共享或委派情景除外。 值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
 |hasAttachments|Boolean|指示邮件是否包含附件。|
 |id|String| 邮件的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] 只读。 |
@@ -79,10 +79,10 @@ ms.locfileid: "43463044"
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 定义的邮件头集合，它提供邮件获取的从发件人到收件人的网络路径的详细信息。 只读。|
 |internetMessageId |String |邮件 ID 采用 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 指定的格式。 |
 |isAllDay |Boolean|指示事件是否持续一整天。 调整此属性还需要调整事件的**startDateTime**和**endDateTime**属性。|
-|isDelegated|布尔值|如果代理可访问此会议请求响应，则为 True，否则为 false。 默认为 false。|
-|isDeliveryReceiptRequested|布尔值|指示是否需要发送邮件已读回执。|
+|isDelegated|Boolean|如果代理可访问此会议请求响应，则为 True，否则为 false。 默认为 false。|
+|isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |isDraft|Boolean|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
-|isOutOfDate|布尔值|指示此会议请求是否已由较新的请求发出。|
+|isOutOfDate|Boolean|指示此会议请求是否已由较新的请求发出。|
 |isRead|Boolean|指示是否已阅读该邮件。|
 |isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
@@ -94,13 +94,13 @@ ms.locfileid: "43463044"
 |receivedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|请求的会议的定期模式。|
 |replyTo|[recipient](recipient.md) collection|在答复时使用的电子邮件地址。|
-|responseType|string| 指定对会议请求的响应类型。 可取值为：`tentativelyAccepted`、`accepted`、`declined`。 对于 eventMessageResponse 类型， `none`、 `organizer`和`notResponded`不受支持。 只读。 不可筛选。|
+|responseType|string| 指定对会议请求的响应类型。 可取值为：`tentativelyAccepted`、`accepted`、`declined`。 对于 eventMessageResponse 类型， `none` 、 `organizer` 和 `notResponded` 不受支持。 只读。 不可筛选。|
 |sender|[recipient](recipient.md)|实际用于生成邮件的帐户。 大多数情况下，此值与“**from**”属性相同。 从[共享邮箱](/exchange/collaboration/shared-mailboxes/shared-mailboxes)发送邮件时，可以将此属性设置为其他值，[对于共享日历，或设置为代理人](/graph/outlook-share-delegate-calendar.md)。 在任何情况下，此值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
 |sentDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|请求的会议的开始时间。|
 |subject|String|邮件的主题。|
 |toRecipients|[recipient](recipient.md) collection|邮件的收件人。|
-|type|String|所需会议的类型： `singleInstance`、 `occurence`、 `exception`、 `seriesMaster`。|
+|type|String|所需会议的类型： `singleInstance` 、 `occurence` 、 `exception` 、 `seriesMaster` 。|
 |uniqueBody|[itemBody](itembody.md)|当前邮件专用的邮件正文部分。|
 |UnsubscribeData|String|从 List-Unsubscribe 标头中解析的有效条目。若 UnsubscribeEnabled 属性为 true，则这是 List-Unsubscribe 标头中的邮件命令的数据。|
 |UnsubscribeEnabled|Boolean|指示邮件是否已启用取消订阅。若 list-Unsubscribe 标头符合 rfc-2369，则其值为 True。|
@@ -111,7 +111,7 @@ ms.locfileid: "43463044"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|attachments|[附件](attachment.md) 集合|邮件的[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)和[referenceAttachment](referenceattachment.md)附件的集合。 只读。 可为 Null。|
+|attachments|[附件](attachment.md)集合|邮件的[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)和[referenceAttachment](referenceattachment.md)附件的集合。 只读。 可为 NULL。|
 |event|[event](event.md)| 与事件消息相关联的事件。对于与会者或会议室资源，假定已将日历助理设为在会议请求事件消息到达时自动更新包含事件的日历。导航属性。只读。|
 |extensions|[扩展](extension.md)集合| 为 eventMessage 定义的开放扩展集合。只读。可为 NULL。|
 |提及|[mention](mention.md) 集合 | 邮件中的提及集合，按 **createdDateTime** 由最新到最旧排序。默认情况下，`GET` /messages 不会返回此属性，在该属性上应用 `$expand` 时除外。|

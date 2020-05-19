@@ -5,16 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c6dff7204068f6c9ebb3397cc8e745229e399efa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9af07edcd5019b7ae1d37e69af7c631afd925e5d
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440344"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289465"
 ---
 # <a name="get-a-reply-to-a-channel-message"></a>获取对频道消息的答复
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +26,9 @@ ms.locfileid: "42440344"
 
 |权限类型|权限（从最低特权到最高特权）|
 |---------|-------------|
-|委派（工作或学校帐户）| ChannelMessage、Group、group、Group。 All|
-|委派（个人 Microsoft 帐户）|不支持|
-|应用程序| ChannelMessage、Group、group、Group。 All |
+|委派（工作或学校帐户）| ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All |
+|委派（个人 Microsoft 帐户）|不支持。|
+|应用程序| ChannelMessage （[RSC](https://aka.ms/teams-rsc)）、ChannelMessage、group、Group、Group。全部，group 写。 all |
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。

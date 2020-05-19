@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ab8a6d256c3f90dbaaa7197f87dec4fd230c73d0
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: aa661856b5e154c4fdec46e83632bbbbdf3af6e9
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218589"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289975"
 ---
 # <a name="serviceprincipal-updatepasswordsinglesignoncredentials"></a>servicePrincipal： updatePasswordSingleSignOnCredentials
 
@@ -20,15 +20,15 @@ ms.locfileid: "43218589"
 
 使用用户或组的密码更新单一登录凭据。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 应用程序的 ReadWrite （也需要 Directory.accessasuser.all），all，All，All，All |
+| 委派（工作或学校帐户）     | "ReadWrite"、"全部" 和 "Directory.accessasuser.all"、"全部"、"全部"、"所有" |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 应用程序的 ReadWrite （也需要全部为目录）、 |
+| 应用程序                            | 所有的读写全部和目录。全部 |
 
 > [!NOTE]
 > 用户可以为自己创建凭据。 具有以下角色的服务主体所有者和管理员可以为任何用户或组创建凭据： GlobalAdministrator、ApplicationAdministrator、CloudApplicationAdministrator。 若要了解详细信息，请参阅[目录角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
@@ -54,7 +54,7 @@ POST /servicePrincipals/{id}/updatePasswordSingleSignOnCredentials
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|字符串|此凭据集所属的用户或组的 ID。|
+|id|String|此凭据集所属的用户或组的 ID。|
 |凭据|[凭据](../resources/credential.md)集合|定义完整的登录流的 credential 对象的列表。|
 
 ## <a name="response"></a>响应

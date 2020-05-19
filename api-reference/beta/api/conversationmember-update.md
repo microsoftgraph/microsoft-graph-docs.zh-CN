@@ -5,23 +5,23 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b380d6c274c2d0ca2771cd44a7015f84f7d9a0e7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 94c6a33f24780ad9941ecd54fddd55611fe44822
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436417"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44288499"
 ---
 # <a name="update-conversationmember"></a>更新 conversationMember
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在[频道](../resources/channel.md)中更新[conversationMember](../resources/conversationmember.md)的角色。
 
 > [!NOTE]
-> 此操作仅在具有[channelMembershipType](../resources/enums.md#channelmembershiptype-values)的`private`通道上受支持。 与任何其他[channelMembershipType](../resources/enums.md#channelmembershiptype-values)的调用将返回`400 Bad Request`响应。
+> 此操作仅在具有[channelMembershipType](../resources/enums.md#channelmembershiptype-values)的通道上受支持 `private` 。 与任何其他[channelMembershipType](../resources/enums.md#channelmembershiptype-values)的调用将返回 `400 Bad Request` 响应。
 
 ## <a name="permissions"></a>权限
 
@@ -29,9 +29,9 @@ ms.locfileid: "42436417"
 
 |权限类型|权限（从最低特权到最高特权）|
 |---------|-------------|
-|委派（工作或学校帐户）|Group.ReadWrite.All|
+|委派（工作或学校帐户）| ChannelMember、Group 写全部、所有的 ReadWrite。 All |
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|Group.ReadWrite.All|
+|应用程序| Member 的 ReadWrite （[RSC](https://aka.ms/teams-rsc)）、ChannelMember、group 写全部、所有的 readwrite。 all |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored"} -->

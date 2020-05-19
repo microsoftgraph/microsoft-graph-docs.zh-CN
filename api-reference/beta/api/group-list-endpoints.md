@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8bf4d52ebe1e59efeb2b47afcf33f028c91567be
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f46f7525a6120c2dd4d2380a622f527fa6a3a26a
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43397015"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289444"
 ---
 # <a name="list-endpoints"></a>List endpoints
 
@@ -48,9 +48,9 @@ GET /groups/{id}/endpoints
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[终结点](../resources/endpoint.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[Endpoint](../resources/endpoint.md)对象集合。
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -75,8 +75,9 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints
 
 ---
 
-##### <a name="response"></a>响应
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+### <a name="response"></a>响应
+下面是一个响应示例。
+>注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,

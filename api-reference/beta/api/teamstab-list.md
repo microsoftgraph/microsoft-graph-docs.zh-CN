@@ -5,16 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d2142dab3a2083522e93d103642f54c562f11256
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e2fa7a5e7797ab55af24d938612614bb9d0777e7
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452412"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289877"
 ---
 # <a name="list-tabs-in-channel"></a>通道中的列表选项卡
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,9 +25,9 @@ ms.locfileid: "42452412"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group. 全部，Group。 Read. All    |
+|委派（工作或学校帐户） | TeamsTab，TeamsTab，all，group，all，Read. all，all，all，all，all，all，all |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-| 应用程序                            | Group.Read.All、Group.ReadWrite.All         |
+| 应用程序                            | TeamsTab （[rsc）、TeamsTab （](https://aka.ms/teams-rsc)[Rsc](https://aka.ms/teams-rsc)）、TeamsTab、group. all、Group. all、、、all、、all、all 和 all。 all，all，all |
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
@@ -50,7 +50,7 @@ GET /teams/{id}/channels/{id}/tabs
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[选项卡](../resources/teamstab.md)对象集合。
+如果成功，此方法在 `200 OK` 响应正文中返回响应代码和[选项卡](../resources/teamstab.md)对象集合。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求

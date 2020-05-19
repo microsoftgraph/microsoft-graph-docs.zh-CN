@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 709f0f5a64dce5f4f88ba7eacc4330856cc00ea8
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 81507c205b4935f6d355b35526e84d627bbb665c
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805800"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44288576"
 ---
 # <a name="create-channel"></a>创建频道
 
@@ -20,15 +20,15 @@ ms.locfileid: "43805800"
 
 在 Microsoft 团队中创建请求正文中指定的新[频道](../resources/channel.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All    |
+|委派（工作或学校帐户） | "创建"、"组"、"全部"、"全部"、"全部"    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All    |
+|应用程序 | "."、".[RSC](https://aka.ms/teams-rsc)"、"组"、"所有"、"组"、"所有" 和 "所有读写"。    |
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 

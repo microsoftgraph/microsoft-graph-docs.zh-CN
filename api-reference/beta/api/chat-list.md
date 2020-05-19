@@ -5,16 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 08f80e2c06a3d073af876807c3e2b57fa07e6a1a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 46afd5b3cc76c9df74cce5d26c13d6af28382d13
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438643"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44287638"
 ---
 # <a name="list-chats"></a>列出聊天
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,12 +26,12 @@ ms.locfileid: "42438643"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Chat.Read、Chat.ReadWrite    |
+|委派（工作或学校帐户） | User.readbasic.all、聊天、聊天和读写 |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。   | 
+|应用程序 | User.readbasic.all、聊天室、全部聊天写。所有 | 
 
 > [!NOTE]
-> 在调用具有应用程序权限的此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
+> 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 

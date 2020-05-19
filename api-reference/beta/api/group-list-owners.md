@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7bb54eadf4ded1f7b775f3a80a49e6bdcb66e919
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6aada439df5839b0a6d4d91a2da962874beea5df
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43396918"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44287026"
 ---
 # <a name="list-owners"></a>列出所有者
 
@@ -25,9 +25,9 @@ ms.locfileid: "43396918"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.Read.All 和 User.ReadBasic.All、Group.Read.All 和 User.Read.All、Group.Read.All 和 User.ReadWrite.All    |
+|委派（工作或学校帐户） | Group. All 和 User.readbasic.all、Group. all、group. all、group. all、Group. all 和 Application。 read. all 和 Application。 Read. all： all. all. all  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.Read.All 和 User.Read.All、Group.Read.All 和User.ReadWrite.All |
+|应用程序 | Group. All 和 User. all、group. all 和 group. all、Group. all 和 Application。 Read. all 和 Application。 all |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

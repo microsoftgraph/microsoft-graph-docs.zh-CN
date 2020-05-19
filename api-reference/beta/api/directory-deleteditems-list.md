@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a018854eb5f9574f327d86808bf2b2fd13607c50
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: feed99377e78c224186e1cec5059896b75b1ca78
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181019"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44287750"
 ---
 # <a name="list-deleted-items"></a>列出已删除项目
 
@@ -30,9 +30,9 @@ ms.locfileid: "43181019"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | 所有的读取全部、全部的 Directory.accessasuser.all、全部、全部、全部、目录、全部、    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Application.ReadWrite.All、Directory.Read.All |
+|应用程序 | 应用程序。全部，全部读取全部，全部 |
 
 ### <a name="for-users"></a>对于用户：
 

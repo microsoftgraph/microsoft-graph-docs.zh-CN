@@ -5,16 +5,16 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d8e3332a7ed50dd7c1ba383b247cd5016af5a768
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d82d2fe3268cb95af19b39b6be192fe44f747a20
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438356"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44287099"
 ---
 # <a name="list-replies"></a>列表答复
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,10 +28,10 @@ ms.locfileid: "42438356"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Chat.Read、Chat.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Chat.Read.All |
+| 应用程序                            | Chat.Read.All、Chat.ReadWrite.All |
 
 > [!NOTE]
-> 在调用具有应用程序权限的此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
+> 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
 
 ## <a name="http-request"></a>HTTP 请求
 

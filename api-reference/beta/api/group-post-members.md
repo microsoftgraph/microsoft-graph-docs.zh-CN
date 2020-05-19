@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8e4b209d7b941bc681e63f9f1781072ff501eb1e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a41ef1abeeece64c3a8ea689e19596e07931e82f
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43396572"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289586"
 ---
 # <a name="add-member"></a>添加成员
 
@@ -20,7 +20,7 @@ ms.locfileid: "43396572"
 
 通过**members**导航属性将成员添加到 Office 365 组或安全组。
 
-可以添加用户或其他组。 
+您可以添加用户、服务主体或其他组。 
 
 > [!Important]
 > 只能向通过云管理的安全组和 Office 365 组添加用户。
@@ -83,7 +83,7 @@ Content-length: 30
 
 ---
 
-在请求正文中，提供要添加的[directoryObject](../resources/directoryobject.md)、 `id` [USER](../resources/user.md)或[group](../resources/group.md)对象的 JSON 表示形式。
+在请求正文中，提供 `id` 要添加的[directoryObject](../resources/directoryobject.md)、 [user](../resources/user.md)或[group](../resources/group.md)对象的 JSON 表示形式。
 
 ### <a name="response"></a>响应
 下面是一个响应示例。

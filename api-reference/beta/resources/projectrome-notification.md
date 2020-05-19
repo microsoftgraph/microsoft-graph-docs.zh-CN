@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: notifications
 doc_type: resourcePageType
 author: merzink
-ms.openlocfilehash: 2b72c55d7159f44fbc368acda9c431ef96be3905
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e665cb3e87360c85bb7ee3926e8395a1cbba4de6
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521402"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290209"
 ---
 # <a name="notification-resource-type"></a>通知资源类型
 
@@ -39,9 +39,9 @@ ms.locfileid: "42521402"
 | targetPolicy | [targetPolicyEndpoints](targetpolicyendpoints.md) | 目标策略对象处理应针对的终结点类型（Windows、iOS、Android 和 WebPush）的通知传递策略（针对给定用户）。 |
 | payload | [payloadTypes](payloadtypes.md)| 这是原始或直观的用户通知的数据内容，这些通知将传递给应用客户端接收此通知并由其使用。 |
 | displayTimeToLive | Int32 | 设置此通知内容将在每个平台的通知查看器中保留多长时间（以秒为单位）。 例如，将通知传递给 Windows 设备时，此属性的值将传递给 ToastNotification，以确定 toast 通知将在用户的 Windows 操作中心保留多长时间。 |
-| expirationDateTime | DateTimeOffset | 使用 ISO 8601 格式为用户通知设置 UTC 过期日期和时间（例如，1月1日午夜 UTC，2019将如下所示： `'2019-01-01T00:00:00Z'`）。 当时间启动时，通知将从 Microsoft Graph 通知源存储中完全删除，并且不再是通知历史记录的一部分。 最大值为30天。 |
+| expirationDateTime | DateTimeOffset | 使用 ISO 8601 格式为用户通知设置 UTC 过期日期和时间（例如，1月1日午夜 UTC，2019将如下所示： `'2019-01-01T00:00:00Z'` ）。 当时间启动时，通知将从 Microsoft Graph 通知源存储中完全删除，并且不再是通知历史记录的一部分。 最大值为30天。 |
 | priority | string | 指示原始用户通知的优先级。 默认情况下，视觉通知以高优先级发送。 有效值为 `None`、`High` 和 `Low`。 |
-| fallbackPolicy | [fallbackPolicy](fallbackpolicy.md) | 可选回退策略对象仅处理 iOS 终结点的通知回退策略，旨在用于由于特定于平台的限制而无法发送到设备的高优先级原始通知（例如节电模式）。 |
+| fallbackPolicy | [fallbackpolicy](fallbackpolicy.md) | 可选回退策略对象仅处理 iOS 终结点的通知回退策略，旨在用于由于特定于平台的限制而无法发送到设备的高优先级原始通知（例如节电模式）。 |
 
 
 ## <a name="relationships"></a>关系

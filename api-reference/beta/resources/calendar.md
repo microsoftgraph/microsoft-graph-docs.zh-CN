@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 8f7bfa0511b7f45c96ac26a87b95ff1e6adb0120
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
-ms.translationtype: HT
+ms.openlocfilehash: 8a753fbbdaf37552090f3a02219b06cc8eb0fd05
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467964"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290677"
 ---
 # <a name="calendar-resource-type"></a>日历资源类型
 
@@ -50,13 +50,13 @@ ms.locfileid: "43467964"
 |:---------------|:--------|:----------|
 |allowedOnlineMeetingProviders|string 集合| 表示此日历中可用于创建联机会议的联机会议服务提供商。 可取值为：`unknown`、`skypeForBusiness`、`skypeForConsumer`、`teamsForBusiness`。|
 |calendarGroupId|字符串|要在其中创建日历的 [calendarGroup](calendargroup.md)。 若用户从未显式设置日历的组，此属性为空。|
-|canEdit |Boolean |如果用户可以写入日历则为 true，否则为 false。对于创建此日历的用户，此属性为 true。通过 Outlook 客户端或相应的 [calendarPermission](calendarpermission.md) 资源，此属性对于共享日历并且授予写入访问权限的用户同样为 true。只读。|
+|canEdit |布尔 |如果用户可以写入日历则为 true，否则为 false。对于创建此日历的用户，此属性为 true。通过 Outlook 客户端或相应的 [calendarPermission](calendarpermission.md) 资源，此属性对于共享日历并且授予写入访问权限的用户同样为 true。只读。|
 |canShare |Boolean |如果用户有权共享日历则为 ture，否则为 false。 只有创建日历的用户才可以进行共享。 只读。|
 |canViewPrivateItems |Boolean |如果用户可以读取已标记为私有的日历项，则为 true，否则返回 false。 此属性通过 Outlook 客户端或相应的 [calendarPermission](calendarpermission.md) 资源进行设定。 只读。|
-|changeKey|字符串|标识 calendar 对象的版本。每次日历更改时，changeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。只读。|
+|changeKey|String|标识 calendar 对象的版本。每次日历更改时，changeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。只读。|
 |color|String|在 UI 中指定将该日历与其他日历区分开来的颜色主题。属性值有：LightBlue=0、LightGreen=1、LightOrange=2、LightGray=3、LightYellow=4、LightTeal=5、LightPink=6、LightBrown=7、LightRed=8、MaxColor=9、Auto=-1|
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|从此日历发送的会议的默认联机会议提供商。 可取值为：`unknown`、`skypeForBusiness`、`skypeForConsumer`、`teamsForBusiness`。|
-|hexColor|字符串|日历颜色，使用十六进制颜色代码表示，其中包含三个十六进制值，每个值介于 00 到 FF 之间，表示 RGB 颜色空间中颜色的红色、绿色或蓝色组件。 若用户从未显式设置日历的颜色，此属性为空。 |
+|hexColor|String|日历颜色，使用十六进制颜色代码表示，其中包含三个十六进制值，每个值介于 00 到 FF 之间，表示 RGB 颜色空间中颜色的红色、绿色或蓝色组件。 若用户从未显式设置日历的颜色，此属性为空。 |
 |id|String|日历的唯一标识符。只读。|
 |isDefaultCalendar|Boolean|若此为默认用于新建事件的默认日志则为 True，反之为 false。|
 |isRemovable|Boolean| 表示是否可以从用户邮箱删除此用户日志。|

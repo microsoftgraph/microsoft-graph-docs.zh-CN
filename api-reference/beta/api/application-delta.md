@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 093cd9756e64179999366f57cf89e34222ba2f8e
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 68e0e36a23ad389fd9bc695f860d25591b833b3c
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107218"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289346"
 ---
 # <a name="application-delta"></a>应用程序： delta
 
@@ -27,9 +27,9 @@ ms.locfileid: "43107218"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | "Application"、"all"、"Directory.accessasuser.all"、"全部"、"全部"、"全部"、"全部"、"所有" |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Application.ReadWrite.All、Directory.Read.All |
+|应用程序 | "Application.readwrite.ownedby"、"所有"、"readwrite"、"全部"、"所有"、" |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,8 +46,8 @@ GET /applications/delta
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
-| $deltatoken | string | 为同一资源集合在上`deltaLink`一个**delta**函数调用的 URL 中返回的[状态令牌](/graph/delta-query-overview)，指示该往返一轮的更改。 将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
-| $skiptoken | string | 在上一个**delta**函数调用`nextLink`的 URL 中返回的[状态令牌](/graph/delta-query-overview)，指示同一个资源集合中有进一步的更改需要跟踪。 |
+| $deltatoken | string | [state token](/graph/delta-query-overview) `deltaLink` 为同一资源集合在上一个**delta**函数调用的 URL 中返回的状态令牌，指示该往返一轮的更改。 将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
+| $skiptoken | string | 在上一个 delta 函数调用的 URL 中返回的[状态令牌](/graph/delta-query-overview) `nextLink` ，指示同一个资源集合中有进一步的更改需要跟踪。 **delta** |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -56,7 +56,7 @@ GET /applications/delta
 - 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 _id_ 属性。 
 
 - 提供对 `$filter` 的有限支持：
-  * 唯一受支持`$filter`的表达式是跟踪对特定资源所做的更改，其`$filter=id+eq+{value}` id `$filter=id+eq+{value1}+or+id+eq+{value2}`：或。 您可以指定的 id 数受最大 URL 长度的限制。
+  * 唯一受支持的 `$filter` 表达式是跟踪对特定资源所做的更改，其 id： `$filter=id+eq+{value}` 或 `$filter=id+eq+{value1}+or+id+eq+{value2}` 。 您可以指定的 id 数受最大 URL 长度的限制。
 
 
 ## <a name="request-headers"></a>请求标头
@@ -70,11 +70,11 @@ GET /applications/delta
 
 ### <a name="response"></a>响应
 
-如果成功，此方法在`200 OK`响应正文中返回响应代码和[应用程序](../resources/application.md)集合对象。 该响应还包括一个 nextLink URL 或 deltaLink URL。 
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[应用程序](../resources/application.md)集合对象。 该响应还包括一个 nextLink URL 或 deltaLink URL。 
 
-- 如果返回`nextLink` URL，则会在会话中检索其他数据页。 应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。
+- 如果 `nextLink` 返回 URL，则会在会话中检索其他数据页。 应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。
 
-- 如果返回`deltaLink` URL，则没有有关要返回的资源的现有状态的更多数据。 保留并使用`deltaLink` URL 了解将来对资源所做的更改。
+- 如果 `deltaLink` 返回 URL，则没有有关要返回的资源的现有状态的更多数据。 保留并使用 `deltaLink` URL 了解将来对资源所做的更改。
 
 请参阅：</br>
 - [使用增量查询](/graph/delta-query-overview)了解更多详细信息</br>

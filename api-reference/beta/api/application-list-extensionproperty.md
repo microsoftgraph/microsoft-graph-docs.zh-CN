@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fccabed52311a14c898af2ba9c2b219e91d1dbdc
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 4e7a1eed267d98381250fbf3d3bf581e195700b9
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107176"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289332"
 ---
 # <a name="list-extensionproperties"></a>列出 extensionProperties
 
@@ -26,9 +26,9 @@ ms.locfileid: "43107176"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | "Application"、"all"、"Directory.accessasuser.all"、"全部"、"全部"、"全部"、"全部"、"所有" |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All |
+|应用程序 | "Application.readwrite.ownedby"、"全部"、"全部"、"全部"、"全部"、"全部"、"全部"、"全部"、"目录" |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ GET /applications/{id}/extensionProperties
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[extensionProperty](../resources/extensionproperty.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[extensionProperty](../resources/extensionproperty.md)对象集合。
 
 ## <a name="examples"></a>示例
 

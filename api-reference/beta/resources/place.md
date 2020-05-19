@@ -5,16 +5,16 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: ea1736e0215b411673f8c458f79c57181312a25a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 685bd36909abd3d3da9be36f84ff6047eda5898f
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521840"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290208"
 ---
 # <a name="place-resource-type"></a>放置资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ Exchange Online 管理员可将租户中的会议室组织到会议室列表中�
 
 位置，如[会议室](room.md)和[roomList](roomlist.md)包含基本**id**、显示名称和电子邮件地址。 此外，它们还包含诸如物理地址和地理坐标等导航信息，在会议室的情况下，其他相关信息（如 AV 功能、楼层号和容量）。
 
-[FindRooms](../api/user-findrooms.md)和[findRoomLists](../api/user-findroomlists.md)函数支持对租户中的会议室和会议室列表进行类似的查找。 以下是位置 API 和这些函数之间的比较。
+[FindRooms](https://docs.microsoft.com/graph/api/user-findrooms?view=graph-rest-beta&tabs=http)和[findRoomLists](https://docs.microsoft.com/en-us/graph/api/user-findroomlists?view=graph-rest-beta)函数支持对租户中的会议室和会议室列表进行类似的查找。 以下是位置 API 和这些函数之间的比较。  如果要创建生产应用程序，请选择 "位置" API，因为 API 现在在 v1.0 中通常可用。 计划更新使用**findRooms**或**findRoomLists**的任何现有代码以使用位置 API，因为**findRooms**或**findRoomLists**将被弃用，并将发布一个时间线。
 
 |位置 API |findRooms 和 findRoomLists 函数|
 |:------------------------------------|:-----------------------------|

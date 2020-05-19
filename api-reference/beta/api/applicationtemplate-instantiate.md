@@ -5,16 +5,16 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f37cc7351449fc2fadbf259dde16682545ccc235
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ff663e0775a0a18f8f82daaa547a6ca774f9138f
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441380"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289115"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationTemplate：实例化
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +26,9 @@ ms.locfileid: "42441380"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Directory.ReadWrite.All |
+| 委派（工作或学校帐户）     | 所有的读写全部。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Application.ReadWrite.All|
+| 应用程序                            | 所有的读写全部。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ POST /applicationTemplates/{id}/instantiate
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 OK`正文中返回响应代码和新的[applicationServicePrincipal](../resources/applicationserviceprincipal.md)对象。
+如果成功，此方法 `201 OK` 在响应正文中返回响应代码和新的[applicationServicePrincipal](../resources/applicationserviceprincipal.md)对象。
 
 ## <a name="examples"></a>示例
 

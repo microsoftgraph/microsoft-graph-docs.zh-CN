@@ -6,16 +6,16 @@ title: 文件
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: d3f4e2b8d6c5e5df6b8be10a4876d4e9ebe03168
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aaf662575552a37d28e9a429297f8f58f825b6e6
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498348"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44291158"
 ---
 # <a name="file-resource-type"></a>File 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,7 +44,7 @@ ms.locfileid: "42498348"
 
 | 属性 | 类型                    | 说明                                                                                                                                      |
 |:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| 哈希   | [HashesType](hashes.md) | 文件二进制内容的哈希值（如果可用）。只读。                                                                                    |
+| 哈希   | [hashes](hashes.md) | 文件二进制内容的哈希值（如果可用）。只读。                                                                                    |
 | mimeType | string                  | 文件的 MIME 类型。这由服务器上的逻辑决定，不能是在上载文件时提供的值。只读。 |
 
 ## <a name="remarks"></a>注解 

@@ -1,68 +1,81 @@
 ---
-title: 获取 oAuth2Permissiongrant
-description: 检索 oAuth2Permissiongrant 对象的属性和关系。
+title: 获取 oAuth2PermissionGrant
+description: 检索单个 oAuth2PermissionGrant 的属性和关系，表示委派权限授予。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: psignoret
-ms.openlocfilehash: 760e73e0bedec62b8166139d3aa3e96615417577
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+author: davidmu1
+ms.openlocfilehash: ccc7fd1ab8ce060eea46a3bbb7db079a06ec9b28
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200319"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290200"
 ---
-# <a name="get-oauth2permissiongrant"></a>获取 oAuth2Permissiongrant
+# <a name="get-a-delegated-permission-grant-oauth2permissiongrant"></a>获取委派权限授予（oAuth2PermissionGrant）
+
+命名空间：microsoft.graph
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 oAuth2Permissiongrant 对象的属性和关系。
+检索单个[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)的属性。
+
+**OAuth2PermissionGrant**表示已授予客户端应用程序代表登录用户访问 API 的委派权限。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | "DelegatedPermissionGrant"、"全部"、"全部"、"Directory.accessasuser.all"、"全部"、"全部"、"directory"    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
-GET /oAuth2Permissiongrants/{id}
-GET /users/{id | userPrincipalName}/oAuth2Permissiongrants/{id}
-GET /drive/root/createdByUser/oAuth2Permissiongrants/{id}
+GET /oauth2PermissionGrants/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+
+此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
+
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[oAuth2Permissiongrant](../resources/oauth2permissiongrant.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)对象。
+
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+
+### <a name="request"></a>请求
+
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_oAuth2Permissiongrant"
+  "name": "get_oAuth2PermissionGrant"
 }-->
+
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/oAuth2Permissiongrants/{id}
+GET https://graph.microsoft.com/beta/oauth2PermissionGrants/{id}
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-oauth2permissiongrant-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -77,25 +90,32 @@ GET https://graph.microsoft.com/beta/oAuth2Permissiongrants/{id}
 
 ---
 
-##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+### <a name="response"></a>响应
+
+下面是一个响应示例。 
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.oAuth2PermissionGrant"
 } -->
+
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 200
+Content-Type: application/json
+Content-Length: 200
 
 {
+  "id": "id-value",
   "clientId": "clientId-value",
   "consentType": "consentType-value",
-  "expiryTime": "2016-10-19T10:37:00Z",
-  "id": "id-value",
   "principalId": "principalId-value",
-  "resourceId": "resourceId-value"
+  "resourceId": "resourceId-value",
+  "scope": "scope-value",
+  "startTime": "2016-10-19T10:37:00Z",
+  "expiryTime": "2016-10-19T10:37:00Z"
 }
 ```
 
@@ -104,7 +124,7 @@ Content-length: 200
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get oAuth2Permissiongrant",
+  "description": "Get oAuth2PermissionGrant",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

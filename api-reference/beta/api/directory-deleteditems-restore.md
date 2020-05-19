@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 911f5c661f8e7393fcbf0f0cf0d8365415779e6a
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: fd963c2235735381d2f8b6709aaea3cebdaea53b
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181012"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44287736"
 ---
 # <a name="restore-deleted-item"></a>恢复已删除的项目
 
@@ -27,9 +27,30 @@ ms.locfileid: "43181012"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-* 对于应用程序： Application.readwrite.ownedby、Directory.accessasuser.all、all、、all、。 All
-* 对于用户： Directory.accessasuser.all 的所有用户。
-* 对于组： Directory.accessasuser.all 和 all 的组
+### <a name="for-applications"></a>对于应用程序：
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Directory.accessasuser.all 的所有应用程序。    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | Application.readwrite.ownedby 的所有应用程序。 |
+
+
+### <a name="for-users"></a>对于用户：
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | User.ReadWrite.All、Directory.AccessAsUser.All |
+|委派（个人 Microsoft 帐户） | 不支持。 |
+|应用程序 | User.ReadWrite.All |
+
+### <a name="for-groups"></a>对于组：
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Group.ReadWrite.All、Directory.AccessAsUser.All |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +61,7 @@ POST /directory/deleteditems/{id}/restore
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 必需&lt;的&gt; *Required*持有者令牌|
+| Authorization  | 必需的持有者 &lt; 令牌 &gt; *Required*|
 | Content-type | application/json |
 
 ## <a name="request-body"></a>请求正文

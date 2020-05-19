@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 50459ee2ec043773480e40d9d3bf3f011f5528d1
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.openlocfilehash: 019778894e9af80bf5ede1108bfd82ab7082a22a
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562694"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44287092"
 ---
 # <a name="list-hostedcontents"></a>列出 hostedContents
 
@@ -26,9 +26,9 @@ ms.locfileid: "42562694"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-|委派（工作或学校帐户）|对于**用户**或**聊天**资源：<br/>Chat.Read、Chat.ReadWrite<br/><br/>对于**频道**资源：<br/>ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All|
-|委派（个人 Microsoft 帐户）|不支持|
-|应用程序| 对于**用户**或**聊天**资源：<br/>Chat.Read.All、Chat.ReadWrite.All<br/><br/>对于**频道**资源：<br/>ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All |
+|委派（工作或学校帐户）| 对于**用户**或**聊天**资源：聊天、阅读、读写<br/><br/>对于**信道**资源： ChannelMessage、Group. WriteAll。请参阅。 |
+|委派（个人 Microsoft 帐户）|不支持。|
+|应用程序| 对于**用户**或**聊天**资源：聊天、全部、聊天室。所有<br/><br/>对于**频道**资源： ChannelMessage （[RSC](https://aka.ms/teams-rsc)）、ChannelMessage、Group. all （all）的所有项 |
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
@@ -59,7 +59,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/hostedContents
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[chatMessageHostedContent](../resources/chatmessagehostedcontent.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[chatMessageHostedContent](../resources/chatmessagehostedcontent.md)对象集合。
 
 ## <a name="examples"></a>示例
 

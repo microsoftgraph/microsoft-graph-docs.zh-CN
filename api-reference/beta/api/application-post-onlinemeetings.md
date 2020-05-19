@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9f85832dc557a2e2242c30cd983cfb9800382176
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
-ms.translationtype: HT
+ms.openlocfilehash: f0d6f7ff7b5fb7d6259f5154f9d021823995cb67
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934708"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289290"
 ---
 # <a name="create-onlinemeeting"></a>创建 onlineMeeting
 
@@ -31,7 +31,7 @@ ms.locfileid: "43934708"
 | 委派（个人 Microsoft 帐户） | 不支持                               |
 | 应用程序                            | OnlineMeetings.ReadWrite.All*  |
 
-> \* **注意：** 应用程序权限已弃用，并将于 2020 年 7 月删除。 若要改用应用程序权限创建 Outlook 事件，请参阅[创建事件](user-post-events.md)。
+>**注意：** 在不久的将来，将支持使用应用程序令牌创建联机会议。 我们将提供其他应用程序策略，这些策略将对基于应用程序的权限范围进行补充。 现在，我们鼓励你将/me 路径与用户令牌一起使用。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,6 @@ POST /app/onlineMeetings
 POST /communications/onlineMeetings
 POST /me/onlineMeetings
 ```
-> **注意：** `/app` 或 `/communications` 路径及应用程序令牌已弃用。 今后，将结合使用 /me 路径与用户令牌来创建联机会议。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |

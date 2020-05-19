@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6e3719037cd1b9646a6eb22aeb8b820c5ce630d5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f032d3ce61f1f85ca3c7b4955d98b5159db5a5e1
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43381818"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44287995"
 ---
 # <a name="list-devices"></a>列出设备
 
@@ -21,35 +21,48 @@ ms.locfileid: "43381818"
 检索目录中的注册设备列表。 
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+| 权限类型 | 权限（从最低特权到最高特权） |
+|:--------------- |:------------------------------------------- |
+| 委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（个人 Microsoft 帐户） | 不支持。 |
+| 应用程序 | Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices
 ```
+
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+
+此方法支持[OData 查询参数](/graph/query_parameters)，以帮助自定义响应，包括 `$search` 、 `$count` 和 `$filter` 。 您可以 `$search` 在**displayName**属性上使用。 为此资源添加或更新项目时，将对其进行专门编制索引，以便 `$count` 与 `$search` 查询参数一起使用。 在添加或更新项目以及在索引中可用时，可能会出现轻微的延迟。
+
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+
+| 名称 | 说明 |
+|:---- |:----------- |
+| Authorization  | Bearer {token}。必需。 |
+| ConsistencyLevel | 仍然. 此标头 `$count` 在使用时 `$search` 或在 `$filter` 与查询参数一起使用时是必需的 `$orderby` 。 它使用的索引可能不是最新的对象更改。 |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [device](../resources/device.md) 对象集合。
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
+
+## <a name="examples"></a>示例
+
+### <a name="example-1-get-a-list-of-devices"></a>示例1：获取设备列表
+
+#### <a name="request"></a>请求
+
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -74,8 +87,11 @@ GET https://graph.microsoft.com/beta/devices
 
 ---
 
-##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+#### <a name="response"></a>响应
+
+下面是一个响应示例。
+> 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,18 +105,143 @@ Content-type: application/json
 {
   "value": [
     {
-      "accountEnabled": true,
-      "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
-      "deviceId": "deviceId-value",
-      "deviceMetadata": "deviceMetadata-value",
-      "displayName" : "displayName-value",
-      "id" : "id-value", 
-      "operatingSystem" : "operatingSystem-value"
+      "accountEnabled":true,
+      "deviceId":"00000000-0000-0000-0000-000000000000",
+      "deviceVersion":1,
+      "displayName":"contoso_Android",
+      "Manufacturer":"Google",
+      "Model":"Pixel 3a",
+      "operatingSystemVersion":"10.0"
     }
   ]
 }
 ```
 
+### <a name="example-2-get-only-a-count-of-devices"></a>示例2：仅获取设备计数
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/devices/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面是一个响应示例。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.device",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+294
+
+### <a name="example-3-use-filter-and-top-to-get-one-device-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例3：使用 $filter 和 $top 获取一个显示名称以 ' a ' 开头的设备，其中包含返回对象的计数
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/devices?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName 
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.device",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#devices",
+  "@odata.count":1,
+  "value":[
+    {
+      "accountEnabled":true,
+      "deviceId":"00000000-0000-0000-0000-000000000000",
+      "deviceVersion":1,
+      "displayName":"a_device_1",
+      "Manufacturer":"Google",
+      "Model":"Pixel 3a",
+      "operatingSystemVersion":"10.0"
+    }
+  ]
+}
+```
+
+### <a name="example-4-use-search-to-get-devices-with-display-names-that-contain-the-letters-android-including-a-count-of-returned-objects"></a>示例4：使用 $search 获取显示名称包含字母 "Android" 的设备，其中包括返回对象的计数
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_video_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/devices?$search="displayName:Android"&$count=true
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.device",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#devices",
+  "@odata.count":1396,
+  "value":[
+    {
+      "accountEnabled":true,
+      "deviceId":"00000000-0000-0000-0000-000000000000",
+      "deviceVersion":1,
+      "displayName":"contoso_Android",
+      "Manufacturer":"Google",
+      "Model":"Pixel 3a",
+      "operatingSystemVersion":"10.0"
+    }
+  ]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: bc330896b68f404bb23855bc5726fad5a8473b7d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 056ec5a26c8eb38809acbbe56f5097137d265fbb
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42729176"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289307"
 ---
 # <a name="create-call"></a>创建调用
 
@@ -52,7 +52,7 @@ POST /communications/calls
 在请求正文中，提供[call](../resources/call.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[call](../resources/call.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[call](../resources/call.md)对象。
 
 ## <a name="examples"></a>示例
 
@@ -94,7 +94,7 @@ Content-Type: application/json
     "audio"
   ],
   "mediaConfig": {
-    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
   }
 }
 ```
@@ -417,7 +417,7 @@ Content-Type: application/json
 ### <a name="example-3-create-a-group-call-with-service-hosted-media"></a>示例3：使用服务托管媒体创建组呼叫
 
 这最高支持5个 VoIP 用户。 此示例演示如何使用两个 VoIP 用户创建组呼叫。
-> **注意：** 此示例调用需要该`Calls.InitiateGroupCalls.All`权限。 创建的组呼叫不支持聊天或录制。
+> **注意：** 此示例调用需要该 `Calls.InitiateGroupCalls.All` 权限。 创建的组呼叫不支持聊天或录制。
 
 ##### <a name="request"></a>请求
 ```http
@@ -483,7 +483,7 @@ Content-Type: application/json
 ### <a name="example-4-create-a-group-call-with-application-hosted-media"></a>示例4：使用应用程序托管媒体创建组调用
 
 这最高支持5个 VoIP 用户。 此示例演示如何使用两个 VoIP 用户创建组呼叫。
-> **注意：** 此示例调用需要该`Calls.InitiateGroupCalls.All`权限。 创建的组呼叫不支持聊天或录制。
+> **注意：** 此示例调用需要该 `Calls.InitiateGroupCalls.All` 权限。 创建的组呼叫不支持聊天或录制。
 
 ##### <a name="request"></a>请求
 ```http
@@ -552,7 +552,7 @@ Content-Type: application/json
 可以从[获取联机会议 API](../api/onlinemeeting-get.md)获取此信息。
 
 授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值必须替换为通过获取具有实际值的[联机会议 API](../api/onlinemeeting-get.md)获取的详细信息，以使示例正常工作。
-> **注意：** 此示例需要该`Calls.JoinGroupCalls.All`权限。
+> **注意：** 此示例需要该 `Calls.JoinGroupCalls.All` 权限。
 
 ##### <a name="request"></a>请求
 
@@ -932,7 +932,7 @@ Content-Type: application/json
 
 授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值必须替换为通过获取具有实际值的[联机会议 API](../api/onlinemeeting-get.md)获取的详细信息，以使示例正常工作。
 
-> **注意：** 此示例需要该`Calls.JoinGroupCalls.All`权限。
+> **注意：** 此示例需要该 `Calls.JoinGroupCalls.All` 权限。
 
 ##### <a name="request"></a>请求
 
@@ -989,7 +989,7 @@ Content-Type: application/json
 若要将渠道会议作为来宾加入，您需要创建一个来宾[标识](../resources/identityset.md)，并将其添加为加入会议请求中的呼叫源。
 显示名称是您希望在会议中为您的来宾标识显示的名称。 Id 可以是标识来宾标识的唯一 id。
 
-> **注意：** 此示例需要该`Calls.JoinGroupCallsAsGuest.All`权限。
+> **注意：** 此示例需要该 `Calls.JoinGroupCallsAsGuest.All` 权限。
 
 ##### <a name="request"></a>请求
 
@@ -1052,7 +1052,7 @@ Content-Type: application/json
   }
 }
 ```
-> **注意：** 来宾加入取决于会议的租户设置。 应用程序可能放置在等待用户承认的大厅中。 此`isInLobby`属性由属性定义
+> **注意：** 来宾加入取决于会议的租户设置。 应用程序可能放置在等待用户承认的大厅中。 此属性由属性定义 `isInLobby`
 
 ##### <a name="notification---roster"></a>通知-名单
 
