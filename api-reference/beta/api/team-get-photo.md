@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 65a1c3169defa77ffb9cbf32907137b7b4268006
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
-ms.translationtype: HT
+ms.openlocfilehash: 9531ef2c38033905bf14976345d7286bc4ab8a44
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452591"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290312"
 ---
 # <a name="get-team-photo"></a>获取团队照片
 
@@ -35,9 +35,9 @@ Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、24
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
+|委派（工作或学校帐户） | User.readbasic.all、TeamSettings、TeamSettings、Group、group、group。 all、、、all、all、all、all 和 all。 all |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.Read.All、Group.ReadWrite.All |
+|应用程序 | TeamSettings （rsc）、TeamSettings[（](https://aka.ms/teams-rsc)[Rsc](https://aka.ms/teams-rsc)）、User.readbasic.all、TeamSettings、group. all、group。 all、、、、All、all 和 all。 all，all，all，all，all， |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,8 +50,8 @@ Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、24
 }-->
 
 ```http
-GET /beta/teams/{id}/photo
-GET /beta/teams/{id}/photo/{size}
+GET /teams/{id}/photo
+GET /teams/{id}/photo/{size}
 ```
 
 ### <a name="get-the-photo"></a>获取照片

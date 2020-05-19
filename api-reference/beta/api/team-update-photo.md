@@ -5,14 +5,16 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6c19e09713d16f8c2739b1a8398509953a19ddd0
-ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
-ms.translationtype: HT
+ms.openlocfilehash: a33220682e2df2fb084944cfb8474c592e7649d7
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37418333"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290088"
 ---
 # <a name="update-team-photo"></a>更新团队照片
+
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,9 +29,9 @@ ms.locfileid: "37418333"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All    |
+|委派（工作或学校帐户） | TeamSettings、Group 写全部、所有的 ReadWrite。 All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All |
+|应用程序 | TeamSettings （[RSC](https://aka.ms/teams-rsc)）、TeamSettings、All、group、All、All 和 All。 all |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -38,7 +40,7 @@ ms.locfileid: "37418333"
 }-->
 
 ```http
-PUT /beta/teams/{id}/photo
+PUT /teams/{id}/photo
 ```
 
 ## <a name="request-headers"></a>请求标头

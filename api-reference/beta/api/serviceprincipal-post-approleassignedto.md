@@ -5,30 +5,28 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: 557c7673f299cb37a90bf20357e093b80ca3a264
+ms.openlocfilehash: 6ecfbd4f85fb1c991a9097688daa40634a630c3a
 ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290017"
+ms.locfileid: "44290024"
 ---
-# <a name="grant-an-approleassignment-to-a-service-principal"></a>向服务主体授予 appRoleAssignment
-
-命名空间：microsoft.graph
+# <a name="grant-an-approleassignment-for-a-service-principal"></a>为服务主体授予 appRoleAssignment
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将应用程序角色分配给客户端服务主体。
+将资源服务主体的应用程序角色分配给用户、组或客户端服务主体。
 
 分配给服务主体的应用程序角色也称为 "[应用程序权限](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types)"。 可以通过应用角色分配或通过[许可体验](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience)直接授予应用程序权限。
 
-若要向客户端服务主体授予应用程序角色分配，您需要三个标识符：
+若要授予应用程序角色分配，需要三个标识符：
 
-- `principalId`：要 `id` 向其分配应用角色的客户端服务主体的。
-- `resourceId`： `id` `servicePrincipal` 定义了应用程序角色（应用程序权限）的资源（API）。
-- `appRoleId`： `id` `appRole` 要分配给客户端服务主体的（在资源服务主体上定义）的。
+- `principalId`：要 `id` 向其分配应用程序角色的**用户**、**组**或客户端**servicePrincipal**的。
+- `resourceId`： `id` 定义了应用程序角色的资源**servicePrincipal**的。
+- `appRoleId`： `id` 要分配给用户、组或服务主体的**appRole** （在资源服务主体上定义）的。
 
 ## <a name="permissions"></a>权限
 
@@ -44,11 +42,8 @@ ms.locfileid: "44290017"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /servicePrincipals/{id}/appRoleAssignments
+POST /servicePrincipals/{id}/appRoleAssignedTo
 ```
-
-> [!NOTE]
-> 作为一种最佳做法，我们建议通过[ `appRoleAssignedTo` _资源_服务主体的关系](serviceprincipal-post-approleassignedto.md)创建应用程序角色分配，而不是 `appRoleAssignments` 分配的用户、组或服务主体的关系。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -73,11 +68,11 @@ POST /servicePrincipals/{id}/appRoleAssignments
 
 <!-- {
   "blockType": "request",
-  "name": "group_create_approleassignment"
+  "name": "serviceprincipal_create_approleassignedto"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignments
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignedTo
 Content-Type: application/json
 Content-Length: 110
 
@@ -88,7 +83,7 @@ Content-Length: 110
 }
 ```
 
-在此示例中， `{id}` 和 `{principalId-value}` 都是 `id` 分配的客户端服务主体，也是 `{resoruceId}` `id` 资源服务主体（API）的。
+在此示例中， `{id}` 和 `{resourceId-value}` 都是 `id` 资源服务主体的，并且 `{principalId}` 是分配的 `id` 用户、组或客户端服务主体的。
 
 ### <a name="response"></a>响应
 

@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 572390cfffbf3f6e0e643d13acc76bc469d4c982
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
-ms.translationtype: HT
+ms.openlocfilehash: c8d1129c57444d95a1a3a46ee58590e102056a98
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35987948"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290095"
 ---
 # <a name="get-team"></a>获取团队
+
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,9 +25,9 @@ ms.locfileid: "35987948"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
+|委派（工作或学校帐户） | User.readbasic.all、TeamSettings、TeamSettings、Group、group、group。 all、、、all、all、all、all 和 all。 all    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.Read.All、Group.ReadWrite.All    |
+|应用程序 | TeamSettings、User.readbasic.all （[rsc](https://aka.ms/teams-rsc)）、TeamSettings、TeamSettings、、Group （RSC）、（[RSC](https://aka.ms/teams-rsc)）、、（全部）、、。 all，all，all： all，all。    |
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 

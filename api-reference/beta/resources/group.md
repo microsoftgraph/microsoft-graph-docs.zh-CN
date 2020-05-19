@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: ba2b21714549c6fed05c63801a2410d2162ebed3
-ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
-ms.translationtype: HT
+ms.openlocfilehash: b280102d8b58e42fd5250c7a87ec8b1d60530580
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44227008"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290600"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -64,10 +64,15 @@ ms.locfileid: "44227008"
 |[Get endpoint](../api/endpoint-get.md) | [endpoint](endpoint.md) | 读取 endpoint 对象的属性和关系。 |
 |[validateProperties](../api/group-validateproperties.md)|JSON| 验证 Office 365 组的显示名称或邮件别名是否符合命名策略。 |
 |[assignLicense](../api/group-assignlicense.md) | [组](group.md) |为组添加或删除订阅。 还可以启用和禁用与订阅相关的特定计划。|
+|[evaluateDynamicMembership](../api/group-evaluatedynamicmembership.md) | [evaluateDynamicMembershipResult](evaluatedynamicmembershipresult.md) | 评估用户或设备是否为动态组的成员。 |
+|**应用程序角色分配**| | |
+|[列出 appRoleAssignments](../api/group-list-approleassignments.md) |[appRoleAssignment](approleassignment.md) 集合| 获取已向其分配此组的应用和应用角色。|
+|[添加 appRoleAssignment](../api/group-post-approleassignments.md) |[appRoleAssignment](approleassignment.md)| 将应用程序角色分配给此组。|]
+|[删除 appRoleAssignment](../api/group-delete-approleassignments.md) | 无。 | 从此组中删除应用程序角色分配。|
 |**Calendar**| | |
 |[创建事件](../api/group-post-events.md) |[event](event.md)| 通过发布到事件集合新建事件。|
 |[获取事件](../api/group-get-event.md) |[event](event.md)|读取 event 对象的属性。|
-|[列出事件](../api/group-list-events.md) |[event](event.md) 集合| 获取 event 对象集合。|
+|[列出事件](../api/group-list-events.md) |[事件](event.md) 集合| 获取 event 对象集合。|
 |[更新事件](../api/group-update-event.md) |无|更新 event 对象的属性。|
 |[删除事件](../api/group-delete-event.md) |无|删除 event 对象。|
 |[列出 calendarView](../api/group-list-calendarview.md) |[event](event.md) 集合| 获取指定时间范围内的事件集合。|
@@ -81,10 +86,10 @@ ms.locfileid: "44227008"
 |[列出线程](../api/group-list-threads.md) |[conversationThread](conversationthread.md) 集合| 获取组的所有线程。|
 |[更新线程](../api/group-update-thread.md) |无| 更新 thread 对象的属性。|
 |[删除线程](../api/group-delete-thread.md) |无| 删除 thread 对象
-|[List acceptedSenders](../api/group-list-acceptedsenders.md) |[directoryObject](directoryobject.md) 集合| 获取此组的“接受的发件人”列表中的用户或组列表。|
+|[List acceptedSenders](../api/group-list-acceptedsenders.md) |[directoryObject](directoryobject.md) collection| 获取此组的“接受的发件人”列表中的用户或组列表。|
 |[添加 acceptedSender](../api/group-post-acceptedsenders.md) |[directoryObject](directoryobject.md)| 将用户或组添加到 acceptSenders 集合。|
 |[删除 acceptedSender](../api/group-delete-acceptedsenders.md) |[directoryObject](directoryobject.md)| 从 acceptedSenders 集合中删除用户或组。|
-|[List rejectedSenders](../api/group-list-rejectedsenders.md) |[directoryObject](directoryobject.md) collection| 获取此组的“遭拒的发件人”列表中的用户或组列表。|
+|[List rejectedSenders](../api/group-list-rejectedsenders.md) |[directoryObject](directoryobject.md) 集合| 获取此组的“遭拒的发件人”列表中的用户或组列表。|
 |[Add rejectedSender](../api/group-post-rejectedsenders.md) |[directoryObject](directoryobject.md)| 将新用户或组添加到 rejectedSenders 集合中。|
 |[Remove rejectedSender](../api/group-delete-rejectedsenders.md) |[directoryObject](directoryobject.md)| 从 rejectedSenders 集合中删除新用户或组。|
 |**开放扩展**| | |
@@ -98,7 +103,7 @@ ms.locfileid: "44227008"
 |**用户设置**| | |
 |[addFavorite](../api/group-addfavorite.md)|无|将组添加到登录用户的收藏夹组列表中。 仅支持 Office 365 组。|
 |[removeFavorite](../api/group-removefavorite.md)|无|从登录用户收藏夹组列表中删除组。 仅支持 Office 365 组。|
-|[List memberOf](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) 集合| 通过 **memberOf** 导航属性，获取此用户是其直接成员的组和管理单元。|
+|[List memberOf](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) 集合| 从**memberOf**导航属性中获取此用户是其直接成员的组和管理单元。|
 |[List joinedTeams](../api/user-list-joinedteams.md) |[group](group.md) 集合| 获取用户属于其直接成员的相应 Microsoft Teams。|
 |[subscribeByMail](../api/group-subscribebymail.md)|无|将 isSubscribedByMail 属性设置为 **true**。 使登录用户可以接收电子邮件对话。 仅支持 Office 365 组。|
 |[unsubscribeByMail](../api/group-unsubscribebymail.md)|无|将 isSubscribedByMail 属性设置为 **false**。 使登录用户无法接收电子邮件对话。 仅支持 Office 365 组。|
@@ -108,7 +113,7 @@ ms.locfileid: "44227008"
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Boolean| 指明组织外部人员能否向群组发送邮件。 默认值为 **false**。 <br><br>仅在 $select 上返回。 |
+|allowExternalSenders|布尔| 指明组织外部人员能否向群组发送邮件。 默认值为 **false**。 <br><br>仅在 $select 上返回。 |
 |assignedLabels|[assignedLabel](assignedlabel.md) 集合|与 Office 365 组关联的敏感度标签对（标签 ID、标签名称）列表。 <br><br>仅在 $select 上返回。 只读。|
 |assignedLicenses|[assignedLicense](assignedlicense.md) 集合|分配给该组的许可证。 <br><br>仅在 $select 上返回。 只读。|
 |autoSubscribeNewMembers|布尔值|指示添加到组中的新成员是否将自动订阅接收电子邮件通知。 可以在 PATCH 请求中设置组的这个属性；不要在创建该组的初始 POST 请求中设置它。 默认值为 **false**。 <br><br>仅在 $select 上返回。|
@@ -131,18 +136,18 @@ ms.locfileid: "44227008"
 |mailNickname|String|组的邮件别名，在组织中是唯一的。 创建组时必须指定此属性。 <br><br>默认情况下返回。 支持 $filter。|
 |membershipRule|String|组为动态组时（groupTypes 包含 `DynamicMembership`），用于确定该组成员的规则。 有关成员身份规则语法的详细信息，请参阅[成员身份规则语法](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。 <br><br>默认情况下返回。 |
 |membershipRuleProcessingState|String|指示动态成员身份处理正在进行中，还是已暂停。 可能的值为：“正在进行”或“已暂停”。 <br><br>默认情况下返回。 |
-|onPremisesDomainName|字符串|包含从本地目录同步的本地**域 FQDN**（也称为 **dnsDomainName**）。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。<br><br>默认情况下返回。 只读。 |
+|onPremisesDomainName|String|包含从本地目录同步的本地**域 FQDN**（也称为 **dnsDomainName**）。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。<br><br>默认情况下返回。 只读。 |
 |onPremisesLastSyncDateTime|DateTimeOffset|指示组最后一次与本地目录同步的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。 支持 $filter。|
-|onPremisesNetBiosName|字符串|包含从本地目录同步的本地 **netBios 名称**。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。<br><br>默认情况下返回。 只读。 |
+|onPremisesNetBiosName|String|包含从本地目录同步的本地 **netBios 名称**。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。<br><br>默认情况下返回。 只读。 |
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合| 在预配期间使用 Microsoft 同步产品时发生的错误。 <br><br>默认情况下返回。|
-|onPremisesSamAccountName|String|包含从本地目录同步的本地 **SAM 帐户名**。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。<br><br>默认情况下返回。 只读。 |
+|onPremisesSamAccountName|字符串|包含从本地目录同步的本地 **SAM 帐户名**。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。<br><br>默认情况下返回。 只读。 |
 |onPremisesSecurityIdentifier|String|包含从本地同步到云的组的本地安全标识符 (SID)。 <br><br>默认情况下返回。 只读。 |
 |onPremisesSyncEnabled|布尔|如果此组从本地目录同步，则为 **true**；如果此组最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。 <br><br>默认情况下返回。 只读。 支持 $filter。|
 |preferredDataLocation|String|组的首选数据位置。 有关详细信息，请参阅 [OneDrive Online 多地理位置](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。 <br><br>默认情况下返回。|
 |preferredLanguage|String|Office 365 组的首选语言。 应遵循 ISO 639-1 代码；例如“en-US”。 <br><br>默认情况下返回。 |
 |proxyAddresses|String 集合| 指向同一组邮箱的组的电子邮件地址。 例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。 需要多值属性筛选器表达式的 **any** 运算符。 <br><br>默认情况下返回。 只读。 不可为 null。 支持 $filter。 |
 |renewedDateTime|DateTimeOffset| 组的上次续订时间戳。 值不能直接修改，只能通过[续订服务操作](../api/grouplifecyclepolicy-renewgroup.md)进行更新。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。|
-|resourceBehaviorOptions|字符串集合|指定可以在创建期间为 Office 365 组设置的组行为。 可设置为只为创建的一部分（POST）。 可取值为：`AllowOnlyMembersToPost`、`HideGroupInOutlook`、`SubscribeNewGroupMembers`、`WelcomeEmailDisabled`。  在此主题的后面提供更多详细信息。|
+|resourceBehaviorOptions|String collection|指定可以在创建期间为 Office 365 组设置的组行为。 可设置为只为创建的一部分（POST）。 可取值为：`AllowOnlyMembersToPost`、`HideGroupInOutlook`、`SubscribeNewGroupMembers`、`WelcomeEmailDisabled`。  在此主题的后面提供更多详细信息。|
 |resourceProvisioningOptions|字符串集合|指定预配为 Office 365 组创建的一部分，但是通常不是默认组创建组成的组资源。 可能的值是 `Team`。 在此主题的后面提供更多详细信息。|
 |securityEnabled|布尔|指定是否为安全组。 <br><br>默认情况下返回。 支持 `$filter`。|
 |securityIdentifier|字符串|组的安全标识符，用于 Windows 方案。 <br><br>默认情况下返回。|
@@ -191,18 +196,18 @@ ms.locfileid: "44227008"
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 创建组的用户（或应用程序）。 **注意：** 如果用户是管理员，不设置此项。 只读。|
 |drive|[drive](drive.md)|组的默认驱动器。 只读。|
 |drives|[drive](drive.md) 集合|组的驱动器。 只读。|
-|endpoints|[Endpoint](endpoint.md) 集合| 组的终结点。 只读。 可为 NULL。|
+|endpoints|[Endpoint](endpoint.md) 集合| 组的终结点。 此为只读属性。 可为空。|
 |events|[event](event.md) 集合|组事件。|
 |extensions|[扩展](extension.md)集合|为组定义的开放扩展集合。只读。可为 NULL。|
-|groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合|此组的生命周期策略集合。 只读。 可为 NULL。|
-|memberOf|[directoryObject](directoryobject.md) 集合|此组所属的组和管理单元。 HTTP 方法：GET（支持所有组） 只读。 可为 Null。|
-|members|[directoryObject](directoryobject.md) 集合| 属于此组成员的用户、联系人和组。 HTTP 方法：GET（支持所有组）、POST（支持安全组和启用邮件的安全组）、DELETE（仅支持安全组）。只读。 可为 NULL。|
+|groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合|此组的生命周期策略集合。 此为只读属性。 可为空。|
+|memberOf|[directoryObject](directoryobject.md) collection|此组所属的组和管理单元。 HTTP 方法：GET（支持所有组） 此为只读属性。 可为 Null。|
+|members|[directoryObject](directoryobject.md) collection| 属于此组成员的用户、联系人和组。 HTTP 方法：GET（支持所有组）、POST（支持安全组和启用邮件的安全组）、DELETE（仅支持安全组）。只读。 可为 NULL。|
 |membersWithLicenseErrors|[user](user.md) 集合|在该基于组的许可证分配中存在许可证错误的组成员列表。 只读。|
 |onenote|[onenote](onenote.md)| 只读。|
 |owners|[directoryObject](directoryobject.md) 集合|组的所有者。 所有者是一组允许修改此对象的非管理员用户。 HTTP 方法：GET（支持所有组）、POST（支持安全组和启用邮件的安全组）、DELETE（仅支持安全组）。只读。 可为 NULL。|
 |photo|[profilePhoto](profilephoto.md)| 组的个人资料照片。 |
 |photos|[profilePhoto](profilephoto.md) 集合| 组拥有的个人资料照片。只读。可为 Null。|
-|planner|[plannerGroup](plannergroup.md)| 组可用的选择性 Planner 服务。 只读。 可为 NULL。 |
+|planner|[plannerGroup](plannergroup.md)| 组可用的选择性 Planner 服务。 此为只读属性。 可为空。 |
 |rejectedSenders|[directoryObject](directoryobject.md) 集合|不允许在此组中创建帖子或日历事件的用户或组列表。可为 Null|
 |settings|[directorySetting](directorysetting.md) 集合| 可以管理此组行为的设置，例如成员是否可以将来宾用户邀请到此组。 可为 NULL。|
 |sites|[网站](site.md)集|该组中的 SharePoint 网站的列表。使用 /sites/root 访问默认网站。|
