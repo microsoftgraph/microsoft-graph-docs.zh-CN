@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 174582262af8bd5095beed4339638c6c36d4ca8b
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
-ms.translationtype: HT
+ms.openlocfilehash: ff027a6c52fb4229e5dec1b660910ad3a5aa1bc6
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37995379"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40911883"
 ---
 ```objc
 
@@ -17,7 +17,6 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphOnlineMeeting *onlineMeeting = [[MSGraphOnlineMeeting alloc] init];
-[onlineMeeting setIsBroadcast:@"false"];
 [onlineMeeting setStartDateTime: "2019-09-09T21:33:30.8546353+00:00"];
 [onlineMeeting setEndDateTime: "2019-09-09T22:03:30.8566356+00:00"];
 [onlineMeeting setSubject:@"Application Token Meeting"];

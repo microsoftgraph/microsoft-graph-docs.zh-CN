@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 08941c265f826331572c64f04d13c0c3cca242e8
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
-ms.translationtype: HT
+ms.openlocfilehash: 7d9421c7191a2b98005cb828eac8155ac6a03460
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37995378"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40911882"
 ---
 ```csharp
 
@@ -13,7 +13,6 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var onlineMeeting = new OnlineMeeting
 {
-    IsBroadcast = false,
     StartDateTime = DateTimeOffset.Parse("2019-09-09T21:33:30.8546353+00:00"),
     EndDateTime = DateTimeOffset.Parse("2019-09-09T22:03:30.8566356+00:00"),
     Subject = "Application Token Meeting",
