@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b14d466c3ccced7f8b5d23dfff7cbdcd6440f830
-ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
+ms.openlocfilehash: ef6369f0a93ea87bbcd177db84279163a765d602
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44272742"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289719"
 ---
 # <a name="create-chatmessage-in-a-channel"></a>在频道中创建 chatMessage
 
@@ -26,9 +26,9 @@ ms.locfileid: "44272742"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Group.ReadWrite.All |
+| 委派（工作或学校帐户）     | ChannelMessage、Group、Group 写。 All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| 应用程序                            | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

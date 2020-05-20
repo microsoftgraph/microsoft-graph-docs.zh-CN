@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 61df6b58d740350c4970434622c94cddff5862c7
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
-ms.translationtype: HT
+ms.openlocfilehash: b55d2cfda184b3c0d109975a0cf60dddf91311b6
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108828"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290621"
 ---
 # <a name="list-joinedteams"></a>列出 joinedTeams
 
@@ -25,9 +25,9 @@ ms.locfileid: "43108828"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委托（工作或学校帐户） | User.Read.All、User.ReadWrite.All    |
+|委托（工作或学校帐户） | User.readbasic.all、TeamSettings、TeamSettings、all、、、all、、all、、all 和 all。 all，all，all |
 |委托（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | User.Read.All、User.ReadWrite.All |
+|应用程序 | User.readbasic.all、TeamSettings、TeamSettings、all、、、all、、all、、all 和 all。 all，all，all |
 
 > 使用用户委派的权限时，此操作仅适用于“me”用户。 
 > 使用应用程序权限时，此操作通过指定特定用户 ID 而适用于所有用户。（使用应用程序权限时，不支持“me”别名）

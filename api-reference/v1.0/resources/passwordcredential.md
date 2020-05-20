@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: ec0bc1e6057e1bc9b55b1af90ff0056401f88ff1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c9611c85f45dcd597ab81c325936a4a8a9075642
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43397203"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290130"
 ---
 # <a name="passwordcredential-resource-type"></a>passwordCredential 资源类型
 
@@ -19,17 +19,15 @@ ms.locfileid: "43397203"
 表示与应用程序或服务主体相关联的密码凭据。 [应用程序](application.md)的**passwordCredentials**属性 <!--and [servicePrincipal](serviceprincipal.md) entitites--> entity 是**passwordCredential**对象的集合。
 
 > [!IMPORTANT]
-> 不支持使用 POST 或 PATCH 设置**passwordCredential** 。 使用 addPassword 和 removePassword 方法更新应用程序的密码<!--or a servicePrincipal-->:
+> 不支持使用 POST 或 PATCH 设置**passwordCredential** 。 使用 addPassword 和 removePassword 方法更新应用程序或 servicePrincipal 的密码：
 >
 > - [应用程序： addPassword](../api/application-addpassword.md)
 > - [应用程序： removePassword](../api/application-removepassword.md)
-<!--
-> - [servicePrincipal: addPassword](../api/serviceprincipal-addpassword.md)
-> - [servicePrincipal: removePassword](../api/serviceprincipal-removepassword.md)
--->
+> - [servicePrincipal： addPassword](../api/serviceprincipal-addpassword.md)
+> - [servicePrincipal： removePassword](../api/serviceprincipal-removepassword.md)
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 | customKeyIdentifier | Binary | 请勿使用。 |
 | displayName | String | 密码的友好名称。 可选。 |

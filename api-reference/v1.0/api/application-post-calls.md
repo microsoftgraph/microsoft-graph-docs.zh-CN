@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 95c3f5355b31733189b45b0fa0383fb5afa86202
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: aa5de4a999dc57b9f9aab9c970530a0da56bf4f8
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082313"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289698"
 ---
 # <a name="create-call"></a>创建调用
 
@@ -20,7 +20,7 @@ ms.locfileid: "43082313"
 
 > **注意：** 目前，仅支持 VoIP 呼叫。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions)。
 
@@ -48,7 +48,7 @@ POST /communications/calls
 在请求正文中，提供[call](../resources/call.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[call](../resources/call.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[call](../resources/call.md)对象。
 
 ## <a name="examples"></a>示例
 
@@ -90,7 +90,7 @@ Content-Type: application/json
     "audio"
   ],
   "mediaConfig": {
-    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
   }
 }
 ```
@@ -399,7 +399,7 @@ Content-Type: application/json
 ### <a name="example-3-create-a-group-call-with-service-hosted-media"></a>示例3：使用服务托管媒体创建组呼叫
 
 这最高支持5个 VoIP 用户。 此示例演示如何使用两个 VoIP 用户创建组呼叫。
-> **注意：** 此示例调用需要该`Calls.InitiateGroupCalls.All`权限。 创建的组呼叫不支持聊天或录制。
+> **注意：** 此示例调用需要该 `Calls.InitiateGroupCalls.All` 权限。 创建的组呼叫不支持聊天或录制。
 
 ##### <a name="request"></a>请求
 
@@ -466,7 +466,7 @@ Content-Type: application/json
 ### <a name="example-4-create-a-group-call-with-application-hosted-media"></a>示例4：使用应用程序托管媒体创建组调用
 
 这最高支持5个 VoIP 用户。 此示例演示如何使用两个 VoIP 用户创建组呼叫。
-> **注意：** 此示例调用需要该`Calls.InitiateGroupCalls.All`权限。 创建的组呼叫不支持聊天或录制。
+> **注意：** 此示例调用需要该 `Calls.InitiateGroupCalls.All` 权限。 创建的组呼叫不支持聊天或录制。
 
 ##### <a name="request"></a>请求
 
@@ -535,7 +535,7 @@ Content-Type: application/json
 此信息可从[Get Online 会议 API](../api/onlinemeeting-get.md) （仅限基于 VTC 的会议）获取。
 
 必须将授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值替换为使用实际值[获取联机会议 API](../api/onlinemeeting-get.md) （仅限 VTC 会议）获取的详细信息，以使示例工作。
-> **注意：** 此示例需要该`Calls.JoinGroupCalls.All`权限。
+> **注意：** 此示例需要该 `Calls.JoinGroupCalls.All` 权限。
 
 ##### <a name="request"></a>请求
 

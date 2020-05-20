@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cf0111d656ea4d16b20ed28ef5d033396a878307
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 34629fd784cb3d86e73a297426d23f09523f844e
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509312"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290404"
 ---
 # <a name="update-apps-published-to-your-organizations-app-catalog"></a>更新发布到组织的应用程序目录的应用程序
 
@@ -20,19 +20,19 @@ ms.locfileid: "42509312"
 
 更新之前发布到 Microsoft 团队应用程序目录的[应用程序](../resources/teamsapp.md)。
 此 API 专门更新发布到您的组织的应用程序目录（租户应用程序目录）的应用程序。
-若要发布到您的组织的应用程序`organization`目录，请在[teamsCatalogApp](../resources/teamsapp.md)资源中将其指定为**distributionMethod** 。
+若要发布到您的组织的应用程序目录，请 `organization` 在[teamsCatalogApp](../resources/teamsapp.md)资源中将其指定为**distributionMethod** 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)。
 
 >**注意：** 只有全局管理员才能调用此 API。
 
 | 权限类型                        | 权限（从最低特权到最高特权）|
 |:----------------------------------     |:-------------|
-| 委派（工作或学校帐户）     | AppCatalog.ReadWrite.All |
+| 委派（工作或学校帐户）     | AppCatalog、所有的目录读写。 |
 | 委派（个人 Microsoft 帐户） | 不支持|
-| 应用程序                            | 不支持|
+| 应用程序                            | AppCatalog、所有的目录读写。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

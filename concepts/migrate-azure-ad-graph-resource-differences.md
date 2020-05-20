@@ -4,12 +4,12 @@ description: 介绍了 Azure AD Graph 中的资源与 Microsoft Graph 中的资�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fafdf2f5a32b1d0331249f0ea18ae2ff79591e0d
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.openlocfilehash: 7455fbbda0dca77928a514da2ec6d53ff4d63187
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234045"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290990"
 ---
 # <a name="resource-type-differences-between-azure-ad-graph-and-microsoft-graph"></a>Azure AD Graph 与 Microsoft Graph 之间的资源类型差异
 
@@ -25,20 +25,19 @@ ms.locfileid: "41234045"
 
 |Azure AD Graph <br>（1.60 1.6）资源 |Microsoft Graph<br>resource|备注|
 |---|---|---|
-| [AppRoleAssignment](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp;-beta&nbsp;[appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta)<br>v1.0-_尚不可用_ | |
-| [CertificateAuthorityInformation](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp;-beta&nbsp;[certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-beta)<br>&nbsp;[](/graph/api/resources/certificateauthority?view=graph-rest-v1.0) v1.0 certificateAuthority&nbsp;- | |
+| [AppRoleAssignment](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta &nbsp; - &nbsp; [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta)<br>v1.0-_尚不可用_ | |
+| [CertificateAuthorityInformation](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta &nbsp; - &nbsp; [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-beta)<br>v1.0 &nbsp; - &nbsp; [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-v1.0) | |
 | [联系人](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta- [orgContact](/graph/api/resources/orgContact?view=graph-rest-beta)<br>v1.0- [orgContact](/graph/api/resources/orgContact?view=graph-rest-v1.0) | |
-| [DirectoryLinkChange](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta 版 _-&nbsp;新方法_ <br>1.0 版-_新&nbsp;方法_ | Delta 查询支持具有不需要此资源的机制的关系更改检测。 请参阅[AZURE AD Graph 和 Microsoft Graph 之间的功能差异](migrate-azure-ad-graph-feature-differences.md)。 |
+| [DirectoryLinkChange](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta 版-_新 &nbsp; 方法_ <br>1.0 版-_新 &nbsp; 方法_ | Delta 查询支持具有不需要此资源的机制的关系更改检测。 请参阅[AZURE AD Graph 和 Microsoft Graph 之间的功能差异](migrate-azure-ad-graph-feature-differences.md)。 |
 | [OAuth2Permission](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta- [permissionScope](/graph/api/resources/permissionScope?view=graph-rest-beta) <br> v1.0- [permissionScope](/graph/api/resources/permissionScope?view=graph-rest-1.0) ||
-| [OAuth2PermissionGrant](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp;-beta&nbsp;[oAuth2PermissionGrant](/graph/api/resources/oAuth2PermissionGrant?view=graph-rest-beta) <br> v1.0-_尚不可用_ ||
+| [OAuth2PermissionGrant](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta &nbsp; - &nbsp; [oAuth2PermissionGrant](/graph/api/resources/oAuth2PermissionGrant?view=graph-rest-beta) <br> v1.0-_尚不可用_ ||
 | [PasswordProfile](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta- [passwordProfile](/graph/api/resources/passwordProfile?view=graph-rest-beta) <br> v1.0-PasswordProfile ||
-| [策略](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp;-beta&nbsp;[策略](/graph/api/resources/policy-overview?view=graph-rest-beta) <br> v1.0-_尚不可用_ | 每种类型的策略在 Microsoft Graph 中的**策略**URL 路径段下都有一个唯一的类型名称和结构。 在 Azure AD Graph 中，这是一种策略类型。 |
-| [ProvisioningError](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp;-beta&nbsp;_不可用_ <br> v1.0 1.0&nbsp;-&nbsp;_不可用_ | 此资源已被弃用。  但是，可以在[onPremisesProvisioningError](/graph/api/resources/onPremisesProvisioningError?view=graph-rest-v1.0)中找到描述任何 AD Connect 相关设置错误的新资源。 |
+| [策略](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta &nbsp; - &nbsp; [策略](/graph/api/resources/policy-overview?view=graph-rest-beta) <br> v1.0-_尚不可用_ | 每种类型的策略在 Microsoft Graph 中的**策略**URL 路径段下都有一个唯一的类型名称和结构。 在 Azure AD Graph 中，这是一种策略类型。 |
+| [ProvisioningError](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta &nbsp; - &nbsp; _不可用_ <br> v1.0 1.0 &nbsp; - &nbsp; _不可用_ | 此资源已被弃用。  但是，可以在[onPremisesProvisioningError](/graph/api/resources/onPremisesProvisioningError?view=graph-rest-v1.0)中找到描述任何 AD Connect 相关设置错误的新资源。 |
 | [ServiceEndpoint](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta-[终结点](/graph/api/resources/endpoint?view=graph-rest-beta) <br> v1.0-终结点_尚不可用_ | [终结点](/graph/api/resources/endpoint?view=graph-rest-beta)仅可用作[组](/graph/api/resources/group?view=graph-rest-beta)资源的一部分。|
-| [ServicePrincipal](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) <br> v1.0-_尚不可用_ | |
 | [SignInName](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta 版-_尚不可用_ <br> v1.0-_尚不可用_ | 用于登录到用户帐户（称为**identityObject**，但尚不可用）的标识符的新建模。 支持 Azure AD B2C 方案。 |
 | [TenantDetail](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta-[组织](/graph/api/resources/organization?view=graph-rest-beta) <br> v1.0-[组织](/graph/api/resources/organization?view=graph-rest-v1.0) | |
-| [TrustedCasForPasswordAuth](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp;-beta&nbsp;[certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedcuthconfiguration?view=graph-rest-beta) <br> &nbsp;[](/graph/api/resources/certificatebasedcuthconfiguration?view=graph-rest-v1.0) v1.0 certificateBasedAuthConfiguration&nbsp;- | |
+| [TrustedCasForPasswordAuth](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta &nbsp; - &nbsp; [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedcuthconfiguration?view=graph-rest-beta) <br> v1.0 &nbsp; - &nbsp; [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedcuthconfiguration?view=graph-rest-v1.0) | |
 | [UserIdentity](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | beta- [objectIdentity](/graph/api/resources/objectidentity?view=graph-rest-beta) <br> v1.0-_尚不可用_ |  用于登录到用户帐户（称为 " **objectIdentity**"）的标识符的新建模。 支持 Azure AD B2C 方案。 |
 
 ## <a name="next-steps"></a>后续步骤

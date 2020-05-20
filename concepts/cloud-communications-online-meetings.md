@@ -1,17 +1,17 @@
 ---
-title: 联机会议概述
+title: 使用云通信 API 创建或加入联机会议
 description: 你可以灵活地创建将来或即时使用的会议
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: bd85c3be66890d4763e2c2b1910ee7049573d446
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 22d44c32b6ece847283f2e572eeaf468eaac3dbe
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871569"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289639"
 ---
-# <a name="online-meetings-overview"></a>联机会议概述
+# <a name="use-the-cloud-communications-api-to-create-or-join-online-meetings"></a>使用云通信 API 创建或加入联机会议
 
 联机会议提供了指定特定详细信息（如会议主题和所有与会者）的功能。 您还可以设置会议开始和结束的日期和时间。
 
@@ -28,10 +28,11 @@ ms.locfileid: "40871569"
 ## <a name="join-an-online-meeting"></a>加入联机会议
 在创建联机会议之后，用户可以通过以下两种方式加入：
 
-1. 通过浏览器，使用作为[会议坐标](/graph/api/resources/onlinemeeting)一部分返回的**joinURL** 。
+1. 通过浏览器，使用作为[会议坐标](/graph/api/resources/onlinemeeting)一部分返回的**joinWebURL** 。
 
 2. 通过[创建调用 API](/graph/api/application-post-calls#example-5-join-scheduled-meeting-with-service-hosted-media)，它需要您提供[会议坐标](/graph/api/resources/onlinemeeting)（[organizermeetinginfo](/graph/api/resources/organizermeetinginfo)和[chatInfo](/graph/api/resources/chatinfo)）。
 
 ## <a name="see-also"></a>另请参阅
 
 - [联机会议权限](/graph/permissions-reference#online-meetings-permissions)
+- [在 Microsoft Graph 中选择 API 以创建和加入联机会议](choose-online-meeting-api.md)

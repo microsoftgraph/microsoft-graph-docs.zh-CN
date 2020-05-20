@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5f0ef27563906c6a172ad0b8315842cfc95e7192
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fdf4bde774bdfa701ce730faec9f70f723b7e1b6
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509441"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290347"
 ---
 # <a name="clone-a-team"></a>克隆团队
 
@@ -32,15 +32,15 @@ ms.locfileid: "42509441"
 克隆是一项长时间运行的操作。
 在 POST 克隆返回之后，您需要获取[操作](../resources/teamsasyncoperation.md)，以查看它是 "正在运行" 还是 "已成功" 或 "失败"。 您应继续获取，直到状态不为 "正在运行"。 建议的获取延迟为5秒。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | Group.ReadWrite.All    |
+|委派（工作或学校帐户）     | Group.ReadWrite.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序                            | Group.ReadWrite.All |
+|应用程序                            | Group.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -56,7 +56,7 @@ POST /teams/{id}/clone
 
 ## <a name="request-body"></a>请求正文
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |classification|String （可选）|描述组的分类（如低、中或高业务影响）。 如果未指定分类，则将从原始团队/组复制分类。|
 |说明|String （可选）|可选的组说明。 如果未指定此属性，则它将保留为空。|
@@ -67,7 +67,7 @@ POST /teams/{id}/clone
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回一个`202 Accepted`位置为的响应代码：标头，指向[操作](../resources/teamsasyncoperation.md)资源。
+如果成功，此方法将返回一个 `202 Accepted` 位置为的响应代码：标头，指向[操作](../resources/teamsasyncoperation.md)资源。
 操作完成后，操作资源将告知您创建的团队的 id。
 
 ## <a name="example"></a>示例

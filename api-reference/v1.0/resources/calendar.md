@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 9de471fb60286aa23c9459498033196662260eef
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
-ms.translationtype: HT
+ms.openlocfilehash: 64967be5454428591c81cc955038424156409948
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407156"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290460"
 ---
 # <a name="calendar-resource-type"></a>日历资源类型
 
@@ -54,7 +54,6 @@ ms.locfileid: "43407156"
 |颜色|calendarColor|在 UI 中指定将该日历与其他日历区分开来的颜色主题。属性值有：LightBlue=0、LightGreen=1、LightOrange=2、LightGray=3、LightYellow=4、LightTeal=5、LightPink=6、LightBrown=7、LightRed=8、MaxColor=9、Auto=-1|
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|从此日历发送的会议的默认联机会议提供商。 可取值为：`unknown`、`skypeForBusiness`、`skypeForConsumer`、`teamsForBusiness`。|
 |id|String|日历的唯一标识符。只读。|
-|isDefaultCalendar|Boolean|若此为默认用于新建事件的默认日志则为 True，反之为 false。|
 |isRemovable|Boolean| 表示是否可以从用户邮箱删除此用户日志。|
 |isTallyingResponses|Boolean|表示此用户日历是否支持会议响应跟踪。 仅从用户的主日志发送的会议邀请支持会议响应跟踪。|
 |name|String|日历名称。|
@@ -119,7 +118,6 @@ ms.locfileid: "43407156"
   "color": "String",
   "defaultOnlineMeetingProvider": "string",
   "id": "string (identifier)",
-  "isDefaultCalendar": "boolean",
   "isRemovable": "boolean",
   "isTallyingResponses": "boolean",
   "name": "string",

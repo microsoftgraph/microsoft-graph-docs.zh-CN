@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 99a4abafb5cb879f2f8b7f721a237495055bcde7
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: e1c4ec7765f40e2867ea39f8d5de4cc6cbd2bd4b
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125132"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289423"
 ---
 # <a name="list-group-transitive-members"></a>列表组可传递成员
 
@@ -18,15 +18,15 @@ ms.locfileid: "43125132"
 
 获取组成员的列表。 组可以将用户、设备、组织联系人和其他组作为成员。 此操作是可传递的，并返回所有嵌套成员的简单列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.accessasuser.all、User.readbasic.all、用户、全部、用户、全部读取。所有    |
+|委派（工作或学校帐户） | Directory.accessasuser.all、User.readbasic.all、User. all、User. all、Application、Read、all。 All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Read. All，User. All |
+|应用程序 | Read. all、User. all、Application、Read. All |
 
 >**注意：** 若要列出隐藏的成员资格组的成员，则需要使用 Read. Hidden 权限是必需的。
 
