@@ -1,0 +1,98 @@
+---
+title: 删除 oAuth2PermissionGrant
+description: 删除代表委派权限授予的 oAuth2PermissionGrant。
+localization_priority: Normal
+doc_type: apiPageType
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: bc36f62d1bb0568fc24b48061e427c404f16e43c
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44288707"
+---
+# <a name="delete-a-delegated-permission-grant-oauth2permissiongrant"></a><span data-ttu-id="e9f20-103">删除委派权限授予（oAuth2PermissionGrant）</span><span class="sxs-lookup"><span data-stu-id="e9f20-103">Delete a delegated permission grant (oAuth2PermissionGrant)</span></span>
+
+<span data-ttu-id="e9f20-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e9f20-104">Namespace: microsoft.graph</span></span>
+
+<span data-ttu-id="e9f20-105">删除[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)。</span><span class="sxs-lookup"><span data-stu-id="e9f20-105">Delete an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).</span></span>
+
+<span data-ttu-id="e9f20-106">删除委派权限授予时，其授予的访问权限将被吊销。</span><span class="sxs-lookup"><span data-stu-id="e9f20-106">When a delegated permission grant is deleted, the access it granted is revoked.</span></span> <span data-ttu-id="e9f20-107">现有的访问令牌将在其生命周期内继续有效，但不会为删除的**oAuth2PermissionGrant**中标识的委派权限授予新的访问令牌。</span><span class="sxs-lookup"><span data-stu-id="e9f20-107">Existing access tokens will continue to be valid for their lifetime, but new access tokens will not be granted for the delegated permissions identified in the deleted **oAuth2PermissionGrant**.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="e9f20-108">在调用 API 时，可能有两个委派权限授权应用程序代表用户执行操作。</span><span class="sxs-lookup"><span data-stu-id="e9f20-108">There may be two delegated permission grants authorizing an application to act on behalf of a user when calling an API.</span></span> <span data-ttu-id="e9f20-109">当用户代表自己对应用程序同意时（创建具有**consentType** *主体*的**oAuth2PermissionGrant** ，标识用户），然后管理员授予代表所有用户的租户范围*内的管理员*同意（使用 consentType 的**AllPrincipals**创建第二个**oAuth2PermissionGrant** ）时，可能会发生这种情况。</span><span class="sxs-lookup"><span data-stu-id="e9f20-109">This can happen when a user consents for the application on their own behalf (creating an **oAuth2PermissionGrant** with **consentType** *Principal*, identifying the user) and then an administrator grants tenant-wide admin consent on behalf of all users (creating a second **oAuth2PermissionGrant** with **consentType** of *AllPrincipals*).</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="e9f20-110">Permissions</span><span class="sxs-lookup"><span data-stu-id="e9f20-110">Permissions</span></span>
+
+<span data-ttu-id="e9f20-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e9f20-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="e9f20-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="e9f20-113">Permission type</span></span>      | <span data-ttu-id="e9f20-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e9f20-114">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="e9f20-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e9f20-115">Delegated (work or school account)</span></span> | <span data-ttu-id="e9f20-116">DelegatedPermissionGrant、Directory.accessasuser.all、all 和的所有子目录</span><span class="sxs-lookup"><span data-stu-id="e9f20-116">DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="e9f20-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e9f20-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e9f20-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="e9f20-118">Not supported.</span></span>    |
+|<span data-ttu-id="e9f20-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="e9f20-119">Application</span></span> | <span data-ttu-id="e9f20-120">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e9f20-120">Directory.ReadWrite.All</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="e9f20-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e9f20-121">HTTP request</span></span>
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /oAuth2Permissiongrants/{id}
+```
+
+## <a name="request-headers"></a><span data-ttu-id="e9f20-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="e9f20-122">Request headers</span></span>
+
+| <span data-ttu-id="e9f20-123">名称</span><span class="sxs-lookup"><span data-stu-id="e9f20-123">Name</span></span>       | <span data-ttu-id="e9f20-124">类型</span><span class="sxs-lookup"><span data-stu-id="e9f20-124">Type</span></span> | <span data-ttu-id="e9f20-125">说明</span><span class="sxs-lookup"><span data-stu-id="e9f20-125">Description</span></span>|
+|:---------------|:--------|:----------|
+| <span data-ttu-id="e9f20-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="e9f20-126">Authorization</span></span>  | <span data-ttu-id="e9f20-127">string</span><span class="sxs-lookup"><span data-stu-id="e9f20-127">string</span></span>  | <span data-ttu-id="e9f20-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e9f20-p104">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="e9f20-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="e9f20-130">Request body</span></span>
+
+<span data-ttu-id="e9f20-131">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e9f20-131">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="e9f20-132">响应</span><span class="sxs-lookup"><span data-stu-id="e9f20-132">Response</span></span>
+
+<span data-ttu-id="e9f20-p105">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="e9f20-p105">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="e9f20-135">示例</span><span class="sxs-lookup"><span data-stu-id="e9f20-135">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="e9f20-136">请求</span><span class="sxs-lookup"><span data-stu-id="e9f20-136">Request</span></span>
+
+<span data-ttu-id="e9f20-137">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e9f20-137">Here is an example of the request.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="e9f20-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="e9f20-138">HTTP</span></span>](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "delete_oAuth2PermissionGrant"
+}-->
+```http
+DELETE https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
+```
+
+### <a name="response"></a><span data-ttu-id="e9f20-139">响应</span><span class="sxs-lookup"><span data-stu-id="e9f20-139">Response</span></span>
+
+<span data-ttu-id="e9f20-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="e9f20-140">Here is an example of the response.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Delete oAuth2PermissionGrant",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->

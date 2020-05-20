@@ -5,30 +5,30 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8bab4265486847e5d2e8cbafabe47ca9f706efac
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 1822afaf92a7e9831ca710c043f552291cb6967f
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108598"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44289684"
 ---
-# <a name="create-extensionproperty"></a><span data-ttu-id="624b0-103">创建 extensionProperty</span><span class="sxs-lookup"><span data-stu-id="624b0-103">Create extensionProperty</span></span>
+# <a name="create-extensionproperty"></a><span data-ttu-id="abcd1-103">创建 extensionProperty</span><span class="sxs-lookup"><span data-stu-id="abcd1-103">Create extensionProperty</span></span>
 
-<span data-ttu-id="624b0-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="624b0-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="abcd1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="abcd1-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="624b0-105">创建新的[extensionProperty](../resources/extensionproperty.md)定义。</span><span class="sxs-lookup"><span data-stu-id="624b0-105">Create a new [extensionProperty](../resources/extensionproperty.md) definition.</span></span> <span data-ttu-id="624b0-106">您可以使用此操作将自定义属性值添加到**extensionProperty**中定义的目标对象类型，使用目标对象的标准创建和更新请求。</span><span class="sxs-lookup"><span data-stu-id="624b0-106">You can use this operation to add a custom property value to the targeted object type defined in the **extensionProperty**, using standard creation and update requests to the target object.</span></span>
+<span data-ttu-id="abcd1-105">创建新的[extensionProperty](../resources/extensionproperty.md)定义。</span><span class="sxs-lookup"><span data-stu-id="abcd1-105">Create a new [extensionProperty](../resources/extensionproperty.md) definition.</span></span> <span data-ttu-id="abcd1-106">您可以使用此操作将自定义属性值添加到**extensionProperty**中定义的目标对象类型，使用目标对象的标准创建和更新请求。</span><span class="sxs-lookup"><span data-stu-id="abcd1-106">You can use this operation to add a custom property value to the targeted object type defined in the **extensionProperty**, using standard creation and update requests to the target object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="624b0-107">权限</span><span class="sxs-lookup"><span data-stu-id="624b0-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="abcd1-107">Permissions</span><span class="sxs-lookup"><span data-stu-id="abcd1-107">Permissions</span></span>
 
-<span data-ttu-id="624b0-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="624b0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="abcd1-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="abcd1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="624b0-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="624b0-110">Permission type</span></span>      | <span data-ttu-id="624b0-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="624b0-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="abcd1-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="abcd1-110">Permission type</span></span>      | <span data-ttu-id="abcd1-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="abcd1-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="624b0-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="624b0-112">Delegated (work or school account)</span></span> | <span data-ttu-id="624b0-113">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="624b0-113">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="624b0-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="624b0-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="624b0-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="624b0-115">Not supported.</span></span>    |
-|<span data-ttu-id="624b0-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="624b0-116">Application</span></span> | <span data-ttu-id="624b0-117">Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="624b0-117">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
+|<span data-ttu-id="abcd1-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="abcd1-112">Delegated (work or school account)</span></span> | <span data-ttu-id="abcd1-113">Directory.accessasuser.all 的所有应用程序。</span><span class="sxs-lookup"><span data-stu-id="abcd1-113">Application.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="abcd1-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="abcd1-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="abcd1-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="abcd1-115">Not supported.</span></span>    |
+|<span data-ttu-id="abcd1-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="abcd1-116">Application</span></span> | <span data-ttu-id="abcd1-117">Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="abcd1-117">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="624b0-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="624b0-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="abcd1-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="abcd1-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,35 +36,35 @@ ms.locfileid: "43108598"
 POST /applications/{id}/extensionProperties
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="624b0-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="624b0-119">Request headers</span></span>
-| <span data-ttu-id="624b0-120">名称</span><span class="sxs-lookup"><span data-stu-id="624b0-120">Name</span></span>       | <span data-ttu-id="624b0-121">说明</span><span class="sxs-lookup"><span data-stu-id="624b0-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="abcd1-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="abcd1-119">Request headers</span></span>
+| <span data-ttu-id="abcd1-120">名称</span><span class="sxs-lookup"><span data-stu-id="abcd1-120">Name</span></span>       | <span data-ttu-id="abcd1-121">说明</span><span class="sxs-lookup"><span data-stu-id="abcd1-121">Description</span></span>|
 |:-----------|:----------|
-| <span data-ttu-id="624b0-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="624b0-122">Authorization</span></span>  | <span data-ttu-id="624b0-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="624b0-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="624b0-125">Content-type</span><span class="sxs-lookup"><span data-stu-id="624b0-125">Content-type</span></span> | <span data-ttu-id="624b0-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="624b0-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="abcd1-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="abcd1-122">Authorization</span></span>  | <span data-ttu-id="abcd1-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="abcd1-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="abcd1-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="abcd1-125">Content-Type</span></span> | <span data-ttu-id="abcd1-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="abcd1-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="624b0-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="624b0-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="abcd1-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="abcd1-128">Request body</span></span>
 
-<span data-ttu-id="624b0-129">在请求正文中，提供具有以下属性的[extensionProperty](../resources/extensionproperty.md)对象。</span><span class="sxs-lookup"><span data-stu-id="624b0-129">In the request body, provide an [extensionProperty](../resources/extensionproperty.md) object with the following properties.</span></span>
+<span data-ttu-id="abcd1-129">在请求正文中，提供具有以下属性的[extensionProperty](../resources/extensionproperty.md)对象。</span><span class="sxs-lookup"><span data-stu-id="abcd1-129">In the request body, provide an [extensionProperty](../resources/extensionproperty.md) object with the following properties.</span></span>
 
 
-| <span data-ttu-id="624b0-130">属性</span><span class="sxs-lookup"><span data-stu-id="624b0-130">Property</span></span>     | <span data-ttu-id="624b0-131">类型</span><span class="sxs-lookup"><span data-stu-id="624b0-131">Type</span></span>        | <span data-ttu-id="624b0-132">说明</span><span class="sxs-lookup"><span data-stu-id="624b0-132">Description</span></span> |
+| <span data-ttu-id="abcd1-130">属性</span><span class="sxs-lookup"><span data-stu-id="abcd1-130">Property</span></span>     | <span data-ttu-id="abcd1-131">类型</span><span class="sxs-lookup"><span data-stu-id="abcd1-131">Type</span></span>        | <span data-ttu-id="abcd1-132">Description</span><span class="sxs-lookup"><span data-stu-id="abcd1-132">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="624b0-133">DataType</span><span class="sxs-lookup"><span data-stu-id="624b0-133">dataType</span></span>|<span data-ttu-id="624b0-134">String</span><span class="sxs-lookup"><span data-stu-id="624b0-134">String</span></span>| <span data-ttu-id="624b0-135">指定 extension 属性可以包含的值的数据类型。</span><span class="sxs-lookup"><span data-stu-id="624b0-135">Specifies the data type of the value the extension property can hold.</span></span> <span data-ttu-id="624b0-136">支持以下值。</span><span class="sxs-lookup"><span data-stu-id="624b0-136">Following values are supported.</span></span> <span data-ttu-id="624b0-137">不可为空。</span><span class="sxs-lookup"><span data-stu-id="624b0-137">Not nullable.</span></span> <ul><li><span data-ttu-id="624b0-138">`Binary`-最多为256字节</span><span class="sxs-lookup"><span data-stu-id="624b0-138">`Binary` - 256 bytes maximum</span></span></li><li>`Boolean`</li><li><span data-ttu-id="624b0-139">`DateTime`-必须以 ISO 8601 格式指定。</span><span class="sxs-lookup"><span data-stu-id="624b0-139">`DateTime` - Must be specified in ISO 8601 format.</span></span> <span data-ttu-id="624b0-140">存储为 UTC 格式。</span><span class="sxs-lookup"><span data-stu-id="624b0-140">Will be stored in UTC.</span></span></li><li><span data-ttu-id="624b0-141">`Integer`-32-位值。</span><span class="sxs-lookup"><span data-stu-id="624b0-141">`Integer` - 32-bit value.</span></span></li><li><span data-ttu-id="624b0-142">`LargeInteger`-64-位值。</span><span class="sxs-lookup"><span data-stu-id="624b0-142">`LargeInteger` - 64-bit value.</span></span></li><li><span data-ttu-id="624b0-143">`String`-最多为-256 个字符</span><span class="sxs-lookup"><span data-stu-id="624b0-143">`String` - 256 characters maximum</span></span></li></ul>|
-|<span data-ttu-id="624b0-144">name</span><span class="sxs-lookup"><span data-stu-id="624b0-144">name</span></span>|<span data-ttu-id="624b0-145">String</span><span class="sxs-lookup"><span data-stu-id="624b0-145">String</span></span>| <span data-ttu-id="624b0-146">扩展属性的名称。</span><span class="sxs-lookup"><span data-stu-id="624b0-146">Name of the extension property.</span></span> <span data-ttu-id="624b0-147">不可为空。</span><span class="sxs-lookup"><span data-stu-id="624b0-147">Not nullable.</span></span> |
-|<span data-ttu-id="624b0-148">targetObjects</span><span class="sxs-lookup"><span data-stu-id="624b0-148">targetObjects</span></span>|<span data-ttu-id="624b0-149">String collection</span><span class="sxs-lookup"><span data-stu-id="624b0-149">String collection</span></span>| <span data-ttu-id="624b0-150">支持以下值。</span><span class="sxs-lookup"><span data-stu-id="624b0-150">Following values are supported.</span></span> <span data-ttu-id="624b0-151">不可为空。</span><span class="sxs-lookup"><span data-stu-id="624b0-151">Not nullable.</span></span> <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|<span data-ttu-id="abcd1-133">DataType</span><span class="sxs-lookup"><span data-stu-id="abcd1-133">dataType</span></span>|<span data-ttu-id="abcd1-134">String</span><span class="sxs-lookup"><span data-stu-id="abcd1-134">String</span></span>| <span data-ttu-id="abcd1-135">指定 extension 属性可以包含的值的数据类型。</span><span class="sxs-lookup"><span data-stu-id="abcd1-135">Specifies the data type of the value the extension property can hold.</span></span> <span data-ttu-id="abcd1-136">支持以下值。</span><span class="sxs-lookup"><span data-stu-id="abcd1-136">Following values are supported.</span></span> <span data-ttu-id="abcd1-137">不可为 null。</span><span class="sxs-lookup"><span data-stu-id="abcd1-137">Not nullable.</span></span> <ul><li><span data-ttu-id="abcd1-138">`Binary`-最多为256字节</span><span class="sxs-lookup"><span data-stu-id="abcd1-138">`Binary` - 256 bytes maximum</span></span></li><li>`Boolean`</li><li><span data-ttu-id="abcd1-139">`DateTime`-必须以 ISO 8601 格式指定。</span><span class="sxs-lookup"><span data-stu-id="abcd1-139">`DateTime` - Must be specified in ISO 8601 format.</span></span> <span data-ttu-id="abcd1-140">存储为 UTC 格式。</span><span class="sxs-lookup"><span data-stu-id="abcd1-140">Will be stored in UTC.</span></span></li><li><span data-ttu-id="abcd1-141">`Integer`-32-位值。</span><span class="sxs-lookup"><span data-stu-id="abcd1-141">`Integer` - 32-bit value.</span></span></li><li><span data-ttu-id="abcd1-142">`LargeInteger`-64-位值。</span><span class="sxs-lookup"><span data-stu-id="abcd1-142">`LargeInteger` - 64-bit value.</span></span></li><li><span data-ttu-id="abcd1-143">`String`-最多为-256 个字符</span><span class="sxs-lookup"><span data-stu-id="abcd1-143">`String` - 256 characters maximum</span></span></li></ul>|
+|<span data-ttu-id="abcd1-144">name</span><span class="sxs-lookup"><span data-stu-id="abcd1-144">name</span></span>|<span data-ttu-id="abcd1-145">String</span><span class="sxs-lookup"><span data-stu-id="abcd1-145">String</span></span>| <span data-ttu-id="abcd1-146">扩展属性的名称。</span><span class="sxs-lookup"><span data-stu-id="abcd1-146">Name of the extension property.</span></span> <span data-ttu-id="abcd1-147">不可为 null。</span><span class="sxs-lookup"><span data-stu-id="abcd1-147">Not nullable.</span></span> |
+|<span data-ttu-id="abcd1-148">targetObjects</span><span class="sxs-lookup"><span data-stu-id="abcd1-148">targetObjects</span></span>|<span data-ttu-id="abcd1-149">String collection</span><span class="sxs-lookup"><span data-stu-id="abcd1-149">String collection</span></span>| <span data-ttu-id="abcd1-150">支持以下值。</span><span class="sxs-lookup"><span data-stu-id="abcd1-150">Following values are supported.</span></span> <span data-ttu-id="abcd1-151">不可为 null。</span><span class="sxs-lookup"><span data-stu-id="abcd1-151">Not nullable.</span></span> <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 
-## <a name="response"></a><span data-ttu-id="624b0-152">响应</span><span class="sxs-lookup"><span data-stu-id="624b0-152">Response</span></span>
+## <a name="response"></a><span data-ttu-id="abcd1-152">响应</span><span class="sxs-lookup"><span data-stu-id="abcd1-152">Response</span></span>
 
-<span data-ttu-id="624b0-153">如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[extensionProperty](../resources/extensionproperty.md)对象。</span><span class="sxs-lookup"><span data-stu-id="624b0-153">If successful, this method returns a `201 Created` response code and a new [extensionProperty](../resources/extensionproperty.md) object in the response body.</span></span>
+<span data-ttu-id="abcd1-153">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[extensionProperty](../resources/extensionproperty.md)对象。</span><span class="sxs-lookup"><span data-stu-id="abcd1-153">If successful, this method returns a `201 Created` response code and a new [extensionProperty](../resources/extensionproperty.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="624b0-154">示例</span><span class="sxs-lookup"><span data-stu-id="624b0-154">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="abcd1-154">示例</span><span class="sxs-lookup"><span data-stu-id="abcd1-154">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="624b0-155">请求</span><span class="sxs-lookup"><span data-stu-id="624b0-155">Request</span></span>
+### <a name="request"></a><span data-ttu-id="abcd1-155">请求</span><span class="sxs-lookup"><span data-stu-id="abcd1-155">Request</span></span>
 
-<span data-ttu-id="624b0-156">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="624b0-156">The following is an example of the request.</span></span>
+<span data-ttu-id="abcd1-156">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="abcd1-156">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="624b0-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="624b0-157">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="abcd1-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="abcd1-157">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_extensionproperty_from_application"
@@ -82,28 +82,28 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="624b0-158">C#</span><span class="sxs-lookup"><span data-stu-id="624b0-158">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="abcd1-158">C#</span><span class="sxs-lookup"><span data-stu-id="abcd1-158">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-extensionproperty-from-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="624b0-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="624b0-159">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="abcd1-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="abcd1-159">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-extensionproperty-from-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="624b0-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="624b0-160">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="abcd1-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="abcd1-160">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-extensionproperty-from-application-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="624b0-161">Java</span><span class="sxs-lookup"><span data-stu-id="624b0-161">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="abcd1-161">Java</span><span class="sxs-lookup"><span data-stu-id="abcd1-161">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-extensionproperty-from-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="624b0-162">响应</span><span class="sxs-lookup"><span data-stu-id="624b0-162">Response</span></span>
+### <a name="response"></a><span data-ttu-id="abcd1-162">响应</span><span class="sxs-lookup"><span data-stu-id="abcd1-162">Response</span></span>
 
-<span data-ttu-id="624b0-163">如果成功，此方法在`201 Created`响应正文中返回响应代码和[extensionProperty](../resources/extensionProperty.md)对象。</span><span class="sxs-lookup"><span data-stu-id="624b0-163">If successful, this method returns `201 Created` response code and [extensionProperty](../resources/extensionProperty.md) object in the response body.</span></span>
+<span data-ttu-id="abcd1-163">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[extensionProperty](../resources/extensionProperty.md)对象。</span><span class="sxs-lookup"><span data-stu-id="abcd1-163">If successful, this method returns `201 Created` response code and [extensionProperty](../resources/extensionProperty.md) object in the response body.</span></span>
 
 <!-- {
   "blockType": "response",
