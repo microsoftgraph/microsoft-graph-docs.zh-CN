@@ -5,27 +5,29 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 57ca7bd1e84f507dbf59f515f6f7b2ec1ef020ed
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
-ms.translationtype: HT
+ms.openlocfilehash: 2294378620f6d02da7cb98be657fb587a8a7b46b
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125216"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44335409"
 ---
 # <a name="list-owners"></a>列出所有者
 
 命名空间：microsoft.graph
 
-检索组的所有者列表。所有者是一组具有 group 对象修改权限的非管理员用户。 
+检索组所有者的列表。所有者是允许修改组对象的一组非管理员用户或服务主体。 
 
-## <a name="permissions"></a>权限
+>**注意：** 目前，由于将服务主体的暂存部署到 Microsoft Graph v1.0 终结点，服务主体不会作为组所有者列出。
+
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.Read.All 和 User.ReadBasic.All、Group.Read.All 和 User.Read.All、Group.Read.All 和 User.ReadWrite.All   |
+|委派（工作或学校帐户） | Group. All 和 User.readbasic.all、Group. all、group. all、group. all、Group. all 和 Application。 read. all 和 Application。 Read. all： all. all. all   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.Read.All 和 User.Read.All、Group.Read.All 和User.ReadWrite.All |
+|应用程序 | Group. All 和 User. all、group. all 和 group. all、Group. all 和 Application。 Read. all 和 Application。 all |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

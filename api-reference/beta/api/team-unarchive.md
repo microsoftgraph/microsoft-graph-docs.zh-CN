@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 214e74e99d175ce59caaea25031f9d479da3aa6e
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 629b0ce0ae30956af4ebf7e38577cbfa6c3a8eb5
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289968"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44335209"
 ---
 # <a name="unarchive-team"></a>解档团队
 
@@ -22,7 +22,7 @@ ms.locfileid: "44289968"
 
 Unarchiving 是一种异步操作。 异步操作成功完成后，团队即为 unarchived，这可能会在此 API 的响应之后发生。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -54,16 +54,36 @@ POST /teams/{id}/unarchive
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
 请求示例如下所示。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "unarchive_team"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/unarchive
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/unarchive-team-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/unarchive-team-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/unarchive-team-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 响应示例如下所示。
+<!-- {
+  "blockType": "response",
+  "name": "unarchive_team"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Location: /teams({id})/operations({opId})

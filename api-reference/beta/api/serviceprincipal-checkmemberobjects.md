@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 452f1bb58c870f0edaf6ebecc49346220c20db14
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: c70bc51af3a26d00b48ccf97302c9754fff9efd6
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289712"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44334041"
 ---
 # <a name="serviceprincipal-checkmemberobjects"></a>servicePrincipal： checkMemberObjects
 
@@ -20,7 +20,7 @@ ms.locfileid: "44289712"
 
 检查指定的[servicePrincipal](../resources/serviceprincipal.md)对象的组、目录角色或管理单位列表中的成员资格。 此方法是可传递的。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -49,7 +49,7 @@ POST /servicePrincipals/{id}/checkMemberObjects
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型        | 说明 |
+| 参数    | 类型        | Description |
 |:-------------|:------------|:------------|
 |ids|String collection|包含目录角色的组、目录角色、管理单元或 roleTemplate Id 的对象 Id 的集合，用于检查成员身份。 最高可指定20个对象。|
 
@@ -65,6 +65,8 @@ POST /servicePrincipals/{id}/checkMemberObjects
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_checkmemberobjects"
@@ -83,6 +85,20 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-checkmemberobjects-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-checkmemberobjects-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-checkmemberobjects-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

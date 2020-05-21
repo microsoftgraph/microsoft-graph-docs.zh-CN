@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 83ee1a56ba31e6def93c7cf2dff4a650aae24bbe
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: fccde0dac4e447f0e8558e65d375bb475e652f62
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291081"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44333976"
 ---
 # <a name="serviceprincipal-addkey"></a>servicePrincipal： addKey
 
@@ -27,7 +27,7 @@ ms.locfileid: "44291081"
 
 没有任何现有有效证书的 ServicePrincipals （即：尚未添加证书，或者所有证书已过期）将无法使用此服务操作。 [更新 servicePrincipal](../api/serviceprincipal-update.md)可用于改为执行更新。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -57,7 +57,7 @@ POST /serviceprincipals/{id}/addKey
 
 在请求正文中，提供以下必需属性。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 | keyCredential | [keyCredential](../resources/keycredential.md) | 要添加的新 servicePrincipal 密钥凭据。 __Type__、 __usage__和__key__是此用法的必需属性。 受支持的密钥类型包括：<br><ul><li>`AsymmetricX509Cert`：使用必须为 `Verify` 。</li><li>`X509CertAndPassword`：使用必须`Sign`</li></ul>|
 | passwordCredential | [passwordCredential](../resources/passwordcredential.md) | 仅需要设置应包含密钥密码的__secretText__ 。 仅对于类型的键，此属性是必需的 `X509CertAndPassword` 。 将其设置为 `null` 其他。|
@@ -75,6 +75,8 @@ POST /serviceprincipals/{id}/addKey
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_addkey"
@@ -94,6 +96,12 @@ Content-type: application/json
     "proof":"eyJ0eXAiOiJ..."
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addkey-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
