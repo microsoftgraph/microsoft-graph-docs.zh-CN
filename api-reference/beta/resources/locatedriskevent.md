@@ -5,35 +5,35 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: b7abb10417e7659e923eddf04990067c8b979ce9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 29f04e030fe45fda34148902a455451e08e76324
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522923"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44336039"
 ---
 # <a name="locatedriskevent-resource-type"></a>locatedRiskEvent 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-基于位置数据的[Azure Active Directory 标识保护](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)检测到的风险事件。 找到的风险事件类型包括：
+基于位置数据的[Azure Active Directory 标识保护](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/)检测到的风险事件。 找到的风险事件类型包括：
 * [来自匿名 IP 地址的登录](anonymousipriskevent.md)
 * [来自受恶意软件感染的设备的登录](malwareriskevent.md)
 * [无法移动到非常规位置](impossibletravelriskevent.md)
 * [来自可疑 IP 地址的登录](suspiciousipriskevent.md)
-* [来自不熟悉位置的登录](unfamiliarlocationriskevent.md)有关风险事件的完整信息，请参阅[AZURE AD Identity Protection 文档](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/)。
+* [来自不熟悉位置的登录](unfamiliarlocationriskevent.md)有关风险事件的完整信息，请参阅[AZURE AD Identity Protection 文档](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection-risk-events-types/)。
 
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 locatedRiskEvent](../api/locatedriskevent-get.md) | [locatedRiskEvent](locatedriskevent.md) |读取 locatedRiskEvent 对象的属性和关系。|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| 风险事件关闭的日期和时间|
 |createdDateTime|dateTimeOffset| 风险事件的创建日期和时间。 此值始终大于或等于风险事件本身的日期时间。 这是查询风险事件时用作筛选器的正确属性。|
@@ -49,7 +49,7 @@ ms.locfileid: "42522923"
 |userPrincipalName|string| 用户面临风险的用户主体名称|
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 |impactedUser|[用户](user.md)| 只读。可为空。|
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: da297ad1ae6646bdab952f56c403bfc34e799d05
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: fc46c88d2ec676ac313602c279683da2c483deba
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290649"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44336718"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -91,7 +91,6 @@ ms.locfileid: "44290649"
 |appRoles|[appRole](approle.md) 集合|由该服务主体代表的应用程序公开的角色。 有关详细信息，请参阅[应用程序](application.md)实体上的 **appRoles** 属性定义。 不可为空。 |
 | deletedDateTime | DateTimeOffset | 删除服务主体的日期和时间。 只读。 |
 |displayName|字符串|服务主体的显示名称。|
-|endpoints|[endpoint](endpoint.md) 集合|可用于发现的终结点。 Sharepoint 等服务使用其他服务可以发现和使用的特定于租户的终结点来填充此属性。 这是一个包含的实体类型集合。|
 |errorUrl|String|已弃用。 请勿使用。|
 |homepage|String|应用程序的主页或登录页。|
 | id | String | 服务主体的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 |
@@ -121,8 +120,8 @@ ms.locfileid: "44290649"
 |appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|为此服务主体分配的主体（用户、组和服务主体）。 只读。|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|将此服务主体分配到的应用程序。 此为只读属性。 可为 Null。|
 |createdObjects|[directoryObject](directoryobject.md) 集合|此服务主体所创建的目录对象。 只读。 可为 NULL。|
+|endpoints|[endpoint](endpoint.md) 集合|可用于发现的终结点。 Sharepoint 等服务使用特定于租户的 SharePoint 终结点填充此属性，其他应用程序可以在他们的体验中发现和使用这些终结点。|
 |memberOf|[directoryObject](directoryobject.md) 集合|此服务主体所属的角色。 HTTP 方法：GET 只读。 可为 NULL。|
-|endpoints|[终结点](endpoint.md)集合|可用于发现的终结点。 Sharepoint 等服务使用特定于租户的 SharePoint 终结点填充此属性，其他应用程序可以在他们的体验中发现和使用这些终结点。|
 |oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) 集合|授权此服务主体的委派权限授予代表登录用户访问 API 的权限。 只读。 可为 NULL。|
 |ownedObjects|[directoryObject](directoryobject.md) 集合|此服务主体所拥有的目录对象。 只读。 可为空。|
 |所有者|[directoryObject](directoryobject.md) 集合|作为此 servicePrincipal 的所有者的 Directory 对象。 所有者是允许修改此对象的一组非管理员用户或 servicePrincipals。 只读。 可为 Null。|
@@ -140,6 +139,7 @@ ms.locfileid: "44290649"
     "appRoleAssignments",
     "createdObjects",
     "createdOnBehalfOf",
+    "endpoints",
     "memberOf",
     "oauth2PermissionGrants",
     "ownedObjects",
@@ -196,7 +196,6 @@ ms.locfileid: "44290649"
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-     "Error: microsoft.graph.servicePrincipal/endpoints:\r\n      Referenced type microsoft.graph.endPoint is not defined in the doc  set! Potential suggestion: microsoft.graph.callRecords.endpoint"
-]
+  ]
 }
 -->
