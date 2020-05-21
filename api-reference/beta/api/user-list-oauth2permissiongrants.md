@@ -5,35 +5,35 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: e186cb95f7b25ec77c07fadb6c1d0a3095e03d96
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: a50470caa8a210f01926307d6faa6e7812cdcba5
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290663"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44332555"
 ---
-# <a name="list-oauth2permissiongrants"></a><span data-ttu-id="de871-103">List oauth2PermissionGrants</span><span class="sxs-lookup"><span data-stu-id="de871-103">List oauth2PermissionGrants</span></span>
+# <a name="list-oauth2permissiongrants"></a><span data-ttu-id="a7740-103">List oauth2PermissionGrants</span><span class="sxs-lookup"><span data-stu-id="a7740-103">List oauth2PermissionGrants</span></span>
 
-<span data-ttu-id="de871-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="de871-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a7740-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a7740-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="de871-105">检索[oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md)实体的列表，这些实体表示为使客户端应用程序能够代表用户访问 API 而授予的委派权限。</span><span class="sxs-lookup"><span data-stu-id="de871-105">Retrieve a list of [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md) entities, which represent delegated permissions granted to enable a client application to access an API on behalf of the user.</span></span>
+<span data-ttu-id="a7740-105">检索[oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md)实体的列表，这些实体表示为使客户端应用程序能够代表用户访问 API 而授予的委派权限。</span><span class="sxs-lookup"><span data-stu-id="a7740-105">Retrieve a list of [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md) entities, which represent delegated permissions granted to enable a client application to access an API on behalf of the user.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="de871-106">查询用户的委派权限授予将仅返回特定用户专用的委派权限授予。</span><span class="sxs-lookup"><span data-stu-id="de871-106">Querying the delegated permission grants for a user will only return delegated permissions grants that are specifically for the given user.</span></span> <span data-ttu-id="de871-107">在组织中代表所有用户授予的委派权限_不_包含在响应中。</span><span class="sxs-lookup"><span data-stu-id="de871-107">Delegated permissions granted on behalf of all users in the organization are _not_ included in the response.</span></span>
+> <span data-ttu-id="a7740-106">查询用户的委派权限授予将仅返回特定用户专用的委派权限授予。</span><span class="sxs-lookup"><span data-stu-id="a7740-106">Querying the delegated permission grants for a user will only return delegated permissions grants that are specifically for the given user.</span></span> <span data-ttu-id="a7740-107">在组织中代表所有用户授予的委派权限_不_包含在响应中。</span><span class="sxs-lookup"><span data-stu-id="a7740-107">Delegated permissions granted on behalf of all users in the organization are _not_ included in the response.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="de871-108">权限</span><span class="sxs-lookup"><span data-stu-id="de871-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a7740-108">Permissions</span><span class="sxs-lookup"><span data-stu-id="a7740-108">Permissions</span></span>
 
-<span data-ttu-id="de871-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="de871-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a7740-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a7740-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="de871-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="de871-111">Permission type</span></span>      | <span data-ttu-id="de871-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="de871-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a7740-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="a7740-111">Permission type</span></span>      | <span data-ttu-id="a7740-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a7740-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="de871-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="de871-113">Delegated (work or school account)</span></span> | <span data-ttu-id="de871-114">"DelegatedPermissionGrant"、"全部"、"全部"、"Directory.accessasuser.all"、"全部"、"全部"、"directory"</span><span class="sxs-lookup"><span data-stu-id="de871-114">Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="de871-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="de871-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="de871-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="de871-116">Not supported.</span></span>    |
-|<span data-ttu-id="de871-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="de871-117">Application</span></span> | <span data-ttu-id="de871-118">"DelegatedPermissionGrant"、"全部"、"全部"、"全部"、"全部"、"目录"</span><span class="sxs-lookup"><span data-stu-id="de871-118">Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="a7740-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a7740-113">Delegated (work or school account)</span></span> | <span data-ttu-id="a7740-114">"DelegatedPermissionGrant"、"全部"、"全部"、"Directory.accessasuser.all"、"全部"、"全部"、"directory"</span><span class="sxs-lookup"><span data-stu-id="a7740-114">Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="a7740-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a7740-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a7740-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="a7740-116">Not supported.</span></span>    |
+|<span data-ttu-id="a7740-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="a7740-117">Application</span></span> | <span data-ttu-id="a7740-118">"DelegatedPermissionGrant"、"全部"、"全部"、"全部"、"全部"、"目录"</span><span class="sxs-lookup"><span data-stu-id="a7740-118">Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="de871-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="de871-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a7740-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a7740-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,44 +42,60 @@ GET /me/oauth2PermissionGrants
 GET /users/{id | userPrincipalName}/oauth2PermissionGrants
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="de871-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="de871-120">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="a7740-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="a7740-120">Optional query parameters</span></span>
 
-<span data-ttu-id="de871-121">此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="de871-121">This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="a7740-121">此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="a7740-121">This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="de871-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="de871-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="a7740-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="a7740-122">Request headers</span></span>
 
-| <span data-ttu-id="de871-123">名称</span><span class="sxs-lookup"><span data-stu-id="de871-123">Name</span></span>           | <span data-ttu-id="de871-124">说明</span><span class="sxs-lookup"><span data-stu-id="de871-124">Description</span></span>                |
+| <span data-ttu-id="a7740-123">名称</span><span class="sxs-lookup"><span data-stu-id="a7740-123">Name</span></span>           | <span data-ttu-id="a7740-124">说明</span><span class="sxs-lookup"><span data-stu-id="a7740-124">Description</span></span>                |
 |:---------------|:---------------------------|
-| <span data-ttu-id="de871-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="de871-125">Authorization</span></span>  | <span data-ttu-id="de871-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="de871-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="a7740-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="a7740-125">Authorization</span></span>  | <span data-ttu-id="a7740-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a7740-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="de871-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="de871-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a7740-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="a7740-128">Request body</span></span>
 
-<span data-ttu-id="de871-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="de871-129">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="a7740-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="a7740-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="de871-130">响应</span><span class="sxs-lookup"><span data-stu-id="de871-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a7740-130">响应</span><span class="sxs-lookup"><span data-stu-id="a7740-130">Response</span></span>
 
-<span data-ttu-id="de871-131">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="de871-131">If successful, this method returns a `200 OK` response code and a collection of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) objects in the response body.</span></span>
+<span data-ttu-id="a7740-131">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="a7740-131">If successful, this method returns a `200 OK` response code and a collection of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="de871-132">示例</span><span class="sxs-lookup"><span data-stu-id="de871-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="a7740-132">示例</span><span class="sxs-lookup"><span data-stu-id="a7740-132">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="de871-133">请求</span><span class="sxs-lookup"><span data-stu-id="de871-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a7740-133">请求</span><span class="sxs-lookup"><span data-stu-id="a7740-133">Request</span></span>
 
-<span data-ttu-id="de871-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="de871-134">Here is an example of the request.</span></span>
+<span data-ttu-id="a7740-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a7740-134">Here is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="a7740-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="a7740-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_user_oAuth2PermissionGrants"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/oauth2PermissionGrants
 ```
+# <a name="c"></a>[<span data-ttu-id="a7740-136">C#</span><span class="sxs-lookup"><span data-stu-id="a7740-136">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-oauth2permissiongrants-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="de871-135">响应</span><span class="sxs-lookup"><span data-stu-id="de871-135">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="a7740-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a7740-137">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-oauth2permissiongrants-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="de871-136">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="de871-136">Here is an example of the response.</span></span> 
+# <a name="objective-c"></a>[<span data-ttu-id="a7740-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a7740-138">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-user-oauth2permissiongrants-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="de871-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="de871-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+---
+
+
+### <a name="response"></a><span data-ttu-id="a7740-139">响应</span><span class="sxs-lookup"><span data-stu-id="a7740-139">Response</span></span>
+
+<span data-ttu-id="a7740-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="a7740-140">Here is an example of the response.</span></span> 
+
+> <span data-ttu-id="a7740-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="a7740-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
