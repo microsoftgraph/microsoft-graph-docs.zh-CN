@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: deb9513609d85c95e42d11a32ca3d15ea7d61ebb
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: c29688a8436867231a276b46876ece8c0d815f03
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636718"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44338977"
 ---
 ```javascript
 
@@ -19,7 +19,7 @@ const oAuth2PermissionGrant = {
   scope: "scope-value"
 };
 
-let res = await client.api('/oAuth2Permissiongrants/{id}')
+let res = await client.api('/oauth2PermissionGrants/{id}')
     .version('beta')
     .update(oAuth2PermissionGrant);
 
