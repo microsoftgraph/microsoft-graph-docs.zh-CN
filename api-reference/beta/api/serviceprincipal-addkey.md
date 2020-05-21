@@ -5,40 +5,40 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 83ee1a56ba31e6def93c7cf2dff4a650aae24bbe
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: fccde0dac4e447f0e8558e65d375bb475e652f62
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291081"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44333976"
 ---
-# <a name="serviceprincipal-addkey"></a><span data-ttu-id="58b72-103">servicePrincipal： addKey</span><span class="sxs-lookup"><span data-stu-id="58b72-103">servicePrincipal: addKey</span></span>
+# <a name="serviceprincipal-addkey"></a><span data-ttu-id="5478d-103">servicePrincipal： addKey</span><span class="sxs-lookup"><span data-stu-id="5478d-103">servicePrincipal: addKey</span></span>
 
-<span data-ttu-id="58b72-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="58b72-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5478d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5478d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="58b72-105">将密钥凭据添加到[servicePrincipal](../resources/serviceprincipal.md)。</span><span class="sxs-lookup"><span data-stu-id="58b72-105">Adds a key credential to a [servicePrincipal](../resources/serviceprincipal.md).</span></span> <span data-ttu-id="58b72-106">ServicePrincipal 可以使用此方法和[removeKey](serviceprincipal-removekey.md)自动滚动其过期密钥。</span><span class="sxs-lookup"><span data-stu-id="58b72-106">This method along with [removeKey](serviceprincipal-removekey.md) can be used by a servicePrincipal to automate rolling its expiring keys.</span></span>
+<span data-ttu-id="5478d-105">将密钥凭据添加到[servicePrincipal](../resources/serviceprincipal.md)。</span><span class="sxs-lookup"><span data-stu-id="5478d-105">Adds a key credential to a [servicePrincipal](../resources/serviceprincipal.md).</span></span> <span data-ttu-id="5478d-106">ServicePrincipal 可以使用此方法和[removeKey](serviceprincipal-removekey.md)自动滚动其过期密钥。</span><span class="sxs-lookup"><span data-stu-id="5478d-106">This method along with [removeKey](serviceprincipal-removekey.md) can be used by a servicePrincipal to automate rolling its expiring keys.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="58b72-107">[Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) And [update servicePrincipal](../api/serviceprincipal-update.md)操作可继续用于添加和更新具有或不具有用户上下文的任何 servicePrincipal 的密钥凭据。</span><span class="sxs-lookup"><span data-stu-id="58b72-107">[Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) and [Update servicePrincipal](../api/serviceprincipal-update.md) operations can continue to be used to add and update key credentials for any servicePrincipal with or without a user's context.</span></span>
+> <span data-ttu-id="5478d-107">[Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) And [update servicePrincipal](../api/serviceprincipal-update.md)操作可继续用于添加和更新具有或不具有用户上下文的任何 servicePrincipal 的密钥凭据。</span><span class="sxs-lookup"><span data-stu-id="5478d-107">[Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) and [Update servicePrincipal](../api/serviceprincipal-update.md) operations can continue to be used to add and update key credentials for any servicePrincipal with or without a user's context.</span></span>
 
-<span data-ttu-id="58b72-108">作为此方法的请求验证的一部分，在可以执行操作之前，将验证已拥有现有密钥的证明。</span><span class="sxs-lookup"><span data-stu-id="58b72-108">As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.</span></span> 
+<span data-ttu-id="5478d-108">作为此方法的请求验证的一部分，在可以执行操作之前，将验证已拥有现有密钥的证明。</span><span class="sxs-lookup"><span data-stu-id="5478d-108">As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.</span></span> 
 
-<span data-ttu-id="58b72-109">没有任何现有有效证书的 ServicePrincipals （即：尚未添加证书，或者所有证书已过期）将无法使用此服务操作。</span><span class="sxs-lookup"><span data-stu-id="58b72-109">ServicePrincipals that don’t have any existing valid certificates (i.e.: no certificates have been added yet, or all certificates have expired), won’t be able to use this service action.</span></span> <span data-ttu-id="58b72-110">[更新 servicePrincipal](../api/serviceprincipal-update.md)可用于改为执行更新。</span><span class="sxs-lookup"><span data-stu-id="58b72-110">[Update servicePrincipal](../api/serviceprincipal-update.md) can be used to perform an update instead.</span></span>
+<span data-ttu-id="5478d-109">没有任何现有有效证书的 ServicePrincipals （即：尚未添加证书，或者所有证书已过期）将无法使用此服务操作。</span><span class="sxs-lookup"><span data-stu-id="5478d-109">ServicePrincipals that don’t have any existing valid certificates (i.e.: no certificates have been added yet, or all certificates have expired), won’t be able to use this service action.</span></span> <span data-ttu-id="5478d-110">[更新 servicePrincipal](../api/serviceprincipal-update.md)可用于改为执行更新。</span><span class="sxs-lookup"><span data-stu-id="5478d-110">[Update servicePrincipal](../api/serviceprincipal-update.md) can be used to perform an update instead.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="58b72-111">权限</span><span class="sxs-lookup"><span data-stu-id="58b72-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="5478d-111">Permissions</span><span class="sxs-lookup"><span data-stu-id="5478d-111">Permissions</span></span>
 
-|<span data-ttu-id="58b72-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="58b72-112">Permission type</span></span>      | <span data-ttu-id="58b72-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="58b72-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5478d-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="5478d-112">Permission type</span></span>      | <span data-ttu-id="5478d-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5478d-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="58b72-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="58b72-114">Delegated (work or school account)</span></span> | <span data-ttu-id="58b72-115">无。</span><span class="sxs-lookup"><span data-stu-id="58b72-115">None.</span></span>  |
-|<span data-ttu-id="58b72-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="58b72-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="58b72-117">无。</span><span class="sxs-lookup"><span data-stu-id="58b72-117">None.</span></span>    |
-|<span data-ttu-id="58b72-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="58b72-118">Application</span></span> | <span data-ttu-id="58b72-119">无。</span><span class="sxs-lookup"><span data-stu-id="58b72-119">None.</span></span> |
+|<span data-ttu-id="5478d-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5478d-114">Delegated (work or school account)</span></span> | <span data-ttu-id="5478d-115">无。</span><span class="sxs-lookup"><span data-stu-id="5478d-115">None.</span></span>  |
+|<span data-ttu-id="5478d-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5478d-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5478d-117">无。</span><span class="sxs-lookup"><span data-stu-id="5478d-117">None.</span></span>    |
+|<span data-ttu-id="5478d-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="5478d-118">Application</span></span> | <span data-ttu-id="5478d-119">无。</span><span class="sxs-lookup"><span data-stu-id="5478d-119">None.</span></span> |
 
 > [!NOTE]
-> <span data-ttu-id="58b72-120">ServicePrincipal 不需要任何特定权限即可滚动其自己的键。</span><span class="sxs-lookup"><span data-stu-id="58b72-120">A servicePrincipal does not need any specific permission to roll its own keys.</span></span>
+> <span data-ttu-id="5478d-120">ServicePrincipal 不需要任何特定权限即可滚动其自己的键。</span><span class="sxs-lookup"><span data-stu-id="5478d-120">A servicePrincipal does not need any specific permission to roll its own keys.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="58b72-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="58b72-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5478d-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5478d-121">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -46,35 +46,37 @@ ms.locfileid: "44291081"
 POST /serviceprincipals/{id}/addKey
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="58b72-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="58b72-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="5478d-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="5478d-122">Request headers</span></span>
 
-| <span data-ttu-id="58b72-123">名称</span><span class="sxs-lookup"><span data-stu-id="58b72-123">Name</span></span>           | <span data-ttu-id="58b72-124">说明</span><span class="sxs-lookup"><span data-stu-id="58b72-124">Description</span></span>                |
+| <span data-ttu-id="5478d-123">名称</span><span class="sxs-lookup"><span data-stu-id="5478d-123">Name</span></span>           | <span data-ttu-id="5478d-124">说明</span><span class="sxs-lookup"><span data-stu-id="5478d-124">Description</span></span>                |
 |:---------------|:---------------------------|
-| <span data-ttu-id="58b72-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="58b72-125">Authorization</span></span>  | <span data-ttu-id="58b72-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="58b72-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="58b72-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="58b72-128">Content-Type</span></span>   | <span data-ttu-id="58b72-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="58b72-p104">application/json. Required.</span></span>|
+| <span data-ttu-id="5478d-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="5478d-125">Authorization</span></span>  | <span data-ttu-id="5478d-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="5478d-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="5478d-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5478d-128">Content-Type</span></span>   | <span data-ttu-id="5478d-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="5478d-p104">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="58b72-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="58b72-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="5478d-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="5478d-131">Request body</span></span>
 
-<span data-ttu-id="58b72-132">在请求正文中，提供以下必需属性。</span><span class="sxs-lookup"><span data-stu-id="58b72-132">In the request body, provide the following required properties.</span></span>
+<span data-ttu-id="5478d-132">在请求正文中，提供以下必需属性。</span><span class="sxs-lookup"><span data-stu-id="5478d-132">In the request body, provide the following required properties.</span></span>
 
-| <span data-ttu-id="58b72-133">属性</span><span class="sxs-lookup"><span data-stu-id="58b72-133">Property</span></span>     | <span data-ttu-id="58b72-134">类型</span><span class="sxs-lookup"><span data-stu-id="58b72-134">Type</span></span>   |<span data-ttu-id="58b72-135">说明</span><span class="sxs-lookup"><span data-stu-id="58b72-135">Description</span></span>|
+| <span data-ttu-id="5478d-133">属性</span><span class="sxs-lookup"><span data-stu-id="5478d-133">Property</span></span>     | <span data-ttu-id="5478d-134">类型</span><span class="sxs-lookup"><span data-stu-id="5478d-134">Type</span></span>   |<span data-ttu-id="5478d-135">Description</span><span class="sxs-lookup"><span data-stu-id="5478d-135">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="58b72-136">keyCredential</span><span class="sxs-lookup"><span data-stu-id="58b72-136">keyCredential</span></span> | [<span data-ttu-id="58b72-137">keyCredential</span><span class="sxs-lookup"><span data-stu-id="58b72-137">keyCredential</span></span>](../resources/keycredential.md) | <span data-ttu-id="58b72-138">要添加的新 servicePrincipal 密钥凭据。</span><span class="sxs-lookup"><span data-stu-id="58b72-138">The new servicePrincipal key credential to add.</span></span> <span data-ttu-id="58b72-139">__Type__、 __usage__和__key__是此用法的必需属性。</span><span class="sxs-lookup"><span data-stu-id="58b72-139">The __type__, __usage__ and __key__ are required properties for this usage.</span></span> <span data-ttu-id="58b72-140">受支持的密钥类型包括：</span><span class="sxs-lookup"><span data-stu-id="58b72-140">Supported key types are:</span></span><br><ul><li><span data-ttu-id="58b72-141">`AsymmetricX509Cert`：使用必须为 `Verify` 。</span><span class="sxs-lookup"><span data-stu-id="58b72-141">`AsymmetricX509Cert`: The usage must be `Verify`.</span></span></li><li><span data-ttu-id="58b72-142">`X509CertAndPassword`：使用必须`Sign`</span><span class="sxs-lookup"><span data-stu-id="58b72-142">`X509CertAndPassword`: The usage must be `Sign`</span></span></li></ul>|
-| <span data-ttu-id="58b72-143">passwordCredential</span><span class="sxs-lookup"><span data-stu-id="58b72-143">passwordCredential</span></span> | [<span data-ttu-id="58b72-144">passwordCredential</span><span class="sxs-lookup"><span data-stu-id="58b72-144">passwordCredential</span></span>](../resources/passwordcredential.md) | <span data-ttu-id="58b72-145">仅需要设置应包含密钥密码的__secretText__ 。</span><span class="sxs-lookup"><span data-stu-id="58b72-145">Only __secretText__ is required to be set which should contain the password for the key.</span></span> <span data-ttu-id="58b72-146">仅对于类型的键，此属性是必需的 `X509CertAndPassword` 。</span><span class="sxs-lookup"><span data-stu-id="58b72-146">This property is required only for keys of type `X509CertAndPassword`.</span></span> <span data-ttu-id="58b72-147">将其设置为 `null` 其他。</span><span class="sxs-lookup"><span data-stu-id="58b72-147">Set it to `null` otherwise.</span></span>|
-| <span data-ttu-id="58b72-148">证明</span><span class="sxs-lookup"><span data-stu-id="58b72-148">proof</span></span> | <span data-ttu-id="58b72-149">String</span><span class="sxs-lookup"><span data-stu-id="58b72-149">String</span></span> | <span data-ttu-id="58b72-150">自签名的 JWT 令牌，用作已有密钥的所有权证明。</span><span class="sxs-lookup"><span data-stu-id="58b72-150">A self-signed JWT token used as a proof of possession of the existing keys.</span></span> <span data-ttu-id="58b72-151">必须使用 servicePrincipal 的现有有效证书之一的私钥对此 JWT 令牌进行签名。</span><span class="sxs-lookup"><span data-stu-id="58b72-151">This JWT token must be signed using the private key of one of the servicePrincipal's existing valid certificates.</span></span> <span data-ttu-id="58b72-152">令牌应包含以下声明：</span><span class="sxs-lookup"><span data-stu-id="58b72-152">The token should contain the following claims:</span></span><ul><li><span data-ttu-id="58b72-153">`aud`-需要访问群体 `00000002-0000-0000-c000-000000000000` 。</span><span class="sxs-lookup"><span data-stu-id="58b72-153">`aud` - Audience needs to be `00000002-0000-0000-c000-000000000000`.</span></span></li><li><span data-ttu-id="58b72-154">`iss`-颁发者需要是正在进行呼叫的 servicePrincipal 的__id__ 。</span><span class="sxs-lookup"><span data-stu-id="58b72-154">`iss` - Issuer needs to be the __id__  of the servicePrincipal that is making the call.</span></span></li><li><span data-ttu-id="58b72-155">`nbf`-不早时间。</span><span class="sxs-lookup"><span data-stu-id="58b72-155">`nbf` - Not before time.</span></span></li><li><span data-ttu-id="58b72-156">`exp`-过期时间应为 "nbf" + 10 分钟。</span><span class="sxs-lookup"><span data-stu-id="58b72-156">`exp` - Expiration time should be "nbf" + 10 mins.</span></span></li></ul><br><span data-ttu-id="58b72-157">下面是可用于生成此已占有令牌证明的代码[示例](/graph/application-rollkey-prooftoken)。</span><span class="sxs-lookup"><span data-stu-id="58b72-157">Here is a code [sample](/graph/application-rollkey-prooftoken) that can be used to generate this proof of possession token.</span></span>|
+| <span data-ttu-id="5478d-136">keyCredential</span><span class="sxs-lookup"><span data-stu-id="5478d-136">keyCredential</span></span> | [<span data-ttu-id="5478d-137">keyCredential</span><span class="sxs-lookup"><span data-stu-id="5478d-137">keyCredential</span></span>](../resources/keycredential.md) | <span data-ttu-id="5478d-138">要添加的新 servicePrincipal 密钥凭据。</span><span class="sxs-lookup"><span data-stu-id="5478d-138">The new servicePrincipal key credential to add.</span></span> <span data-ttu-id="5478d-139">__Type__、 __usage__和__key__是此用法的必需属性。</span><span class="sxs-lookup"><span data-stu-id="5478d-139">The __type__, __usage__ and __key__ are required properties for this usage.</span></span> <span data-ttu-id="5478d-140">受支持的密钥类型包括：</span><span class="sxs-lookup"><span data-stu-id="5478d-140">Supported key types are:</span></span><br><ul><li><span data-ttu-id="5478d-141">`AsymmetricX509Cert`：使用必须为 `Verify` 。</span><span class="sxs-lookup"><span data-stu-id="5478d-141">`AsymmetricX509Cert`: The usage must be `Verify`.</span></span></li><li><span data-ttu-id="5478d-142">`X509CertAndPassword`：使用必须`Sign`</span><span class="sxs-lookup"><span data-stu-id="5478d-142">`X509CertAndPassword`: The usage must be `Sign`</span></span></li></ul>|
+| <span data-ttu-id="5478d-143">passwordCredential</span><span class="sxs-lookup"><span data-stu-id="5478d-143">passwordCredential</span></span> | [<span data-ttu-id="5478d-144">passwordCredential</span><span class="sxs-lookup"><span data-stu-id="5478d-144">passwordCredential</span></span>](../resources/passwordcredential.md) | <span data-ttu-id="5478d-145">仅需要设置应包含密钥密码的__secretText__ 。</span><span class="sxs-lookup"><span data-stu-id="5478d-145">Only __secretText__ is required to be set which should contain the password for the key.</span></span> <span data-ttu-id="5478d-146">仅对于类型的键，此属性是必需的 `X509CertAndPassword` 。</span><span class="sxs-lookup"><span data-stu-id="5478d-146">This property is required only for keys of type `X509CertAndPassword`.</span></span> <span data-ttu-id="5478d-147">将其设置为 `null` 其他。</span><span class="sxs-lookup"><span data-stu-id="5478d-147">Set it to `null` otherwise.</span></span>|
+| <span data-ttu-id="5478d-148">证明</span><span class="sxs-lookup"><span data-stu-id="5478d-148">proof</span></span> | <span data-ttu-id="5478d-149">String</span><span class="sxs-lookup"><span data-stu-id="5478d-149">String</span></span> | <span data-ttu-id="5478d-150">自签名的 JWT 令牌，用作已有密钥的所有权证明。</span><span class="sxs-lookup"><span data-stu-id="5478d-150">A self-signed JWT token used as a proof of possession of the existing keys.</span></span> <span data-ttu-id="5478d-151">必须使用 servicePrincipal 的现有有效证书之一的私钥对此 JWT 令牌进行签名。</span><span class="sxs-lookup"><span data-stu-id="5478d-151">This JWT token must be signed using the private key of one of the servicePrincipal's existing valid certificates.</span></span> <span data-ttu-id="5478d-152">令牌应包含以下声明：</span><span class="sxs-lookup"><span data-stu-id="5478d-152">The token should contain the following claims:</span></span><ul><li><span data-ttu-id="5478d-153">`aud`-需要访问群体 `00000002-0000-0000-c000-000000000000` 。</span><span class="sxs-lookup"><span data-stu-id="5478d-153">`aud` - Audience needs to be `00000002-0000-0000-c000-000000000000`.</span></span></li><li><span data-ttu-id="5478d-154">`iss`-颁发者需要是正在进行呼叫的 servicePrincipal 的__id__ 。</span><span class="sxs-lookup"><span data-stu-id="5478d-154">`iss` - Issuer needs to be the __id__  of the servicePrincipal that is making the call.</span></span></li><li><span data-ttu-id="5478d-155">`nbf`-不早时间。</span><span class="sxs-lookup"><span data-stu-id="5478d-155">`nbf` - Not before time.</span></span></li><li><span data-ttu-id="5478d-156">`exp`-过期时间应为 "nbf" + 10 分钟。</span><span class="sxs-lookup"><span data-stu-id="5478d-156">`exp` - Expiration time should be "nbf" + 10 mins.</span></span></li></ul><br><span data-ttu-id="5478d-157">下面是可用于生成此已占有令牌证明的代码[示例](/graph/application-rollkey-prooftoken)。</span><span class="sxs-lookup"><span data-stu-id="5478d-157">Here is a code [sample](/graph/application-rollkey-prooftoken) that can be used to generate this proof of possession token.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="58b72-158">响应</span><span class="sxs-lookup"><span data-stu-id="58b72-158">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5478d-158">响应</span><span class="sxs-lookup"><span data-stu-id="5478d-158">Response</span></span>
 
-<span data-ttu-id="58b72-159">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的[keyCredential](../resources/keycredential.md)对象。</span><span class="sxs-lookup"><span data-stu-id="58b72-159">If successful, this method returns a `200 OK` response code and a new [keyCredential](../resources/keycredential.md) object in the response body.</span></span>
+<span data-ttu-id="5478d-159">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的[keyCredential](../resources/keycredential.md)对象。</span><span class="sxs-lookup"><span data-stu-id="5478d-159">If successful, this method returns a `200 OK` response code and a new [keyCredential](../resources/keycredential.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="58b72-160">示例</span><span class="sxs-lookup"><span data-stu-id="58b72-160">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="5478d-160">示例</span><span class="sxs-lookup"><span data-stu-id="5478d-160">Examples</span></span>
 
-### <a name="example-1-adding-a-new-key-credential-to-a-serviceprincipal"></a><span data-ttu-id="58b72-161">示例1：向 servicePrincipal 中添加新的密钥凭据</span><span class="sxs-lookup"><span data-stu-id="58b72-161">Example 1: Adding a new key credential to a servicePrincipal</span></span>
+### <a name="example-1-adding-a-new-key-credential-to-a-serviceprincipal"></a><span data-ttu-id="5478d-161">示例1：向 servicePrincipal 中添加新的密钥凭据</span><span class="sxs-lookup"><span data-stu-id="5478d-161">Example 1: Adding a new key credential to a servicePrincipal</span></span>
 
-#### <a name="request"></a><span data-ttu-id="58b72-162">请求</span><span class="sxs-lookup"><span data-stu-id="58b72-162">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="5478d-162">请求</span><span class="sxs-lookup"><span data-stu-id="5478d-162">Request</span></span>
 
-<span data-ttu-id="58b72-163">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="58b72-163">The following is an example of the request.</span></span>
+<span data-ttu-id="5478d-163">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5478d-163">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="5478d-164">HTTP</span><span class="sxs-lookup"><span data-stu-id="5478d-164">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_addkey"
@@ -94,10 +96,16 @@ Content-type: application/json
     "proof":"eyJ0eXAiOiJ..."
 }
 ```
+# <a name="javascript"></a>[<span data-ttu-id="5478d-165">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5478d-165">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addkey-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="58b72-164">响应</span><span class="sxs-lookup"><span data-stu-id="58b72-164">Response</span></span>
+---
 
-<span data-ttu-id="58b72-165">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="58b72-165">The following is an example of the response.</span></span>
+
+#### <a name="response"></a><span data-ttu-id="5478d-166">响应</span><span class="sxs-lookup"><span data-stu-id="5478d-166">Response</span></span>
+
+<span data-ttu-id="5478d-167">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="5478d-167">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -114,11 +122,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-adding-a-key-credential-and-an-associated-password-for-the-key"></a><span data-ttu-id="58b72-166">示例2：为密钥添加密钥凭据和关联密码</span><span class="sxs-lookup"><span data-stu-id="58b72-166">Example 2: Adding a key credential and an associated password for the key</span></span>
+### <a name="example-2-adding-a-key-credential-and-an-associated-password-for-the-key"></a><span data-ttu-id="5478d-168">示例2：为密钥添加密钥凭据和关联密码</span><span class="sxs-lookup"><span data-stu-id="5478d-168">Example 2: Adding a key credential and an associated password for the key</span></span>
 
-#### <a name="request"></a><span data-ttu-id="58b72-167">请求</span><span class="sxs-lookup"><span data-stu-id="58b72-167">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="5478d-169">请求</span><span class="sxs-lookup"><span data-stu-id="5478d-169">Request</span></span>
 
-<span data-ttu-id="58b72-168">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="58b72-168">The following is an example of the request.</span></span>
+<span data-ttu-id="5478d-170">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5478d-170">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -142,9 +150,9 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="58b72-169">响应</span><span class="sxs-lookup"><span data-stu-id="58b72-169">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="5478d-171">响应</span><span class="sxs-lookup"><span data-stu-id="5478d-171">Response</span></span>
 
-<span data-ttu-id="58b72-170">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="58b72-170">The following is an example of the response.</span></span>
+<span data-ttu-id="5478d-172">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="5478d-172">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
