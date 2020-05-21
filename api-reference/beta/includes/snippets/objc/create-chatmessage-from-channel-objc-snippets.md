@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 10cdc3c7e9f69d231d28e1b90ee40dcf29b936de
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 475be651f55e57837d96b2ddb8d341dd4e21cf29
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35708558"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44338969"
 ---
 ```objc
 
@@ -17,19 +17,16 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphChatMessage *chatMessage = [[MSGraphChatMessage alloc] init];
-[chatMessage setSubject: null];
 MSGraphItemBody *body = [[MSGraphItemBody alloc] init];
 [body setContentType: [MSGraphBodyType html]];
-[body setContent:@"<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"];
+[body setContent:@"Here's the latest budget. <attachment id=\"153fa47d-18c9-4179-be08-9879815a9f90\"></attachment>"];
 [chatMessage setBody:body];
 NSMutableArray *attachmentsList = [[NSMutableArray alloc] init];
 MSGraphChatMessageAttachment *attachments = [[MSGraphChatMessageAttachment alloc] init];
-[attachments setId:@"74d20c7f34aa4a7fb74e2b30004247c5"];
-[attachments setContentType:@"application/vnd.microsoft.card.thumbnail"];
-[attachments setContentUrl: null];
-[attachments setContent:@"{\r\n  \"title\": \"This is an example of posting a card\",\r\n  \"subtitle\": \"<h3>This is the subtitle</h3>\",\r\n  \"text\": \"Here is some body text. <br>\\r\\nAnd a <a href=\\\"http://microsoft.com/\\\">hyperlink</a>. <br>\\r\\nAnd below that is some buttons:\",\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"messageBack\",\r\n      \"title\": \"Login to FakeBot\",\r\n      \"text\": \"login\",\r\n      \"displayText\": \"login\",\r\n      \"value\": \"login\"\r\n    }\r\n  ]\r\n}"];
-[attachments setName: null];
-[attachments setThumbnailUrl: null];
+[attachments setId:@"153fa47d-18c9-4179-be08-9879815a9f90"];
+[attachments setContentType:@"reference"];
+[attachments setContentUrl:@"https://m365x987948.sharepoint.com/sites/test/Shared%20Documents/General/test%20doc.docx"];
+[attachments setName:@"Budget.docx"];
 [attachmentsList addObject: attachments];
 [chatMessage setAttachments:attachmentsList];
 
