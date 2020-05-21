@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 06afa7ef7426e65b3b9a83eeb45a9af4353f1342
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
-ms.translationtype: HT
+ms.openlocfilehash: 5eb51c3fd246d79921f53a4d5dad78bbefa1690b
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123641"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290941"
 ---
 # <a name="add-member"></a>添加成员
 
@@ -18,7 +18,7 @@ ms.locfileid: "43123641"
 
 通过 **members** 导航属性将成员添加到 Office 365 组或安全组中。
 
-可以添加用户、组织联系人或其他组。 
+您可以添加用户、组织联系人、服务主体或其他组。 
 
 > [!IMPORTANT]
 > 只能向通过云管理的安全组和 Office 365 组添加用户。
@@ -50,7 +50,8 @@ POST /groups/{id}/members/$ref
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
+### <a name="example-1-add-a-member-to-a-group"></a>示例1：向组中添加成员
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
@@ -66,6 +67,59 @@ Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+}
+```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-member-from-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-member-from-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-member-from-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-member-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### <a name="response"></a>响应
+下面是一个响应示例。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2-add-multiple-members-to-a-group-in-a-single-request"></a>示例2：将多个成员添加到单个请求中的组
+本示例演示如何在修补程序操作中将多个成员添加到具有 OData 绑定支持的组中。 请注意，单个请求中最长可添加20个成员。 不支持 POST 操作。
+#### <a name="request"></a>请求
+下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_member_from_group"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/groups/{id}
+Content-type: application/json
+Content-length: 30
+
+{
+  "members@odata.bind": [
+    "https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+    "https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+    "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+    ]
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)

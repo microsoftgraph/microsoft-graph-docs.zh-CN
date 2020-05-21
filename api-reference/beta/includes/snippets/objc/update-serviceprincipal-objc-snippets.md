@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: bdf160ca450711cd00fc1bf1db98d32985ad924f
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 56080be616175902e9689088e9f3c81fd50a2838
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35725225"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44333431"
 ---
 ```objc
 
@@ -17,22 +17,6 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphServicePrincipal *servicePrincipal = [[MSGraphServicePrincipal alloc] init];
-[servicePrincipal setAccountEnabled: true];
-NSMutableArray *addInsList = [[NSMutableArray alloc] init];
-MSGraphAddIn *addIns = [[MSGraphAddIn alloc] init];
-[addIns setId:@"id-value"];
-[addIns setType:@"type-value"];
-NSMutableArray *propertiesList = [[NSMutableArray alloc] init];
-MSGraphKeyValue *properties = [[MSGraphKeyValue alloc] init];
-[properties setKey:@"key-value"];
-[properties setValue:@"value-value"];
-[propertiesList addObject: properties];
-[addIns setProperties:propertiesList];
-[addInsList addObject: addIns];
-[servicePrincipal setAddIns:addInsList];
-[servicePrincipal setAppDisplayName:@"appDisplayName-value"];
-[servicePrincipal setAppId:@"appId-value"];
-[servicePrincipal setAppOwnerOrganizationId:@"appOwnerOrganizationId-value"];
 [servicePrincipal setAppRoleAssignmentRequired: true];
 
 NSError *error;

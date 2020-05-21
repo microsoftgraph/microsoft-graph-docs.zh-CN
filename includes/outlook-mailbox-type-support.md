@@ -5,7 +5,7 @@ ms.prod: outlook
 ms.topic: include
 ms.openlocfilehash: dc5323fff895802f4af0bfa44059d35f8adfa243
 ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/07/2020
 ms.locfileid: "41839916"

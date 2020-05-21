@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: c56ba351151c38db254db55d48493a3ac04e6aa5
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 9c24ddb6cf7a3a15f35413ab6d06be6aa04b3b32
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36845942"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44333432"
 ---
 ```csharp
 
@@ -13,26 +13,6 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var servicePrincipal = new ServicePrincipal
 {
-    AccountEnabled = true,
-    AddIns = new List<AddIn>()
-    {
-        new AddIn
-        {
-            Id = Guid.Parse("id-value"),
-            Type = "type-value",
-            Properties = new List<KeyValue>()
-            {
-                new KeyValue
-                {
-                    Key = "key-value",
-                    Value = "value-value"
-                }
-            }
-        }
-    },
-    AppDisplayName = "appDisplayName-value",
-    AppId = "appId-value",
-    AppOwnerOrganizationId = Guid.Parse("appOwnerOrganizationId-value"),
     AppRoleAssignmentRequired = true
 };
 

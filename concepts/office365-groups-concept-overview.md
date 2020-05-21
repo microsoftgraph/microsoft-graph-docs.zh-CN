@@ -1,20 +1,20 @@
 ---
-title: Microsoft Graph 中的 Office 365 组概述
-description: 'Office 365 组为用户提供了基础成员身份服务，可用于共享会话、文件、备注、日历、计划和许多其他资产。 '
+title: Microsoft Graph 中的 Microsoft 365 组概述
+description: 'Microsoft 365 组为用户提供了用于共享对话、文件、便笺、日历、计划和许多其他资产的基础成员身份服务。 '
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 376b693df7267732112ceb5967194760d8fda145
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
-ms.translationtype: HT
+ms.openlocfilehash: bffcd3fcf24c5774436bf9d38d2afd16d490a770
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969522"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290983"
 ---
-# <a name="overview-of-office-365-groups-in-microsoft-graph"></a>Microsoft Graph 中的 Office 365 组概述
+# <a name="overview-of-microsoft-365-groups-in-microsoft-graph"></a>Microsoft Graph 中的 Microsoft 365 组概述
 
-Office 365 组为用户提供了基础成员身份服务，可用于共享会话、文件、备注、日历、计划和许多其他资产。 
+Microsoft 365 组（也称为 Office 365 组）为用户提供了用于共享对话、文件、便笺、日历、计划和许多其他资产的基础成员身份服务。 
 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/WB9w6QM9xIU]

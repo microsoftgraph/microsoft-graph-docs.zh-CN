@@ -4,12 +4,12 @@ description: 在 Outlook 中，会议组织者可以允许被邀请者建议备�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 6243e7d8458a7497ea2f01ad16ee67a9fc094dcb
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
-ms.translationtype: HT
+ms.openlocfilehash: a8329c433d51dc1d7f675e947b9a8ec4d437c80c
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229512"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44333563"
 ---
 # <a name="use-outlook-to-organize-or-attend-meetings-online"></a>使用 Outlook 组织或参加联机会议
 
@@ -36,7 +36,7 @@ ms.locfileid: "43229512"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/calendar
+GET https://graph.microsoft.com/v1.0/me/calendar
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendar-support-for-online-meeting-providers-csharp-snippets.md)]
@@ -48,6 +48,10 @@ GET https://graph.microsoft.com/beta/me/calendar
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-calendar-support-for-online-meeting-providers-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-calendar-support-for-online-meeting-providers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -65,17 +69,13 @@ HTTP/1.1 200 Ok
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/calendar/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/calendar/$entity",
     "id": "AQMkADAwAGVAAAJfygAAAA==",
     "name": "Calendar",
     "color": "auto",
-    "hexColor": "",
-    "isDefaultCalendar": true,
     "changeKey": "NEXywgsVrkeNsFsyVyRrtAAAAAACOg==",
     "canShare": true,
     "canViewPrivateItems": true,
-    "isShared": false,
-    "isSharedWithMe": false,
     "canEdit": true,
     "allowedOnlineMeetingProviders": [
         "teamsForBusiness",
@@ -109,7 +109,7 @@ Content-type: application/json
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/events
+POST https://graph.microsoft.com/v1.0/me/events
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
 
@@ -156,6 +156,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-meeting-enable-online-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-meeting-enable-online-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -171,7 +175,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
     "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAASBUEsA==\"",
     "id": "AAMkADAAABIGYDZAAA=",
     "createdDateTime": "2019-11-15T01:55:54.8022848Z",
@@ -180,7 +184,7 @@ Content-type: application/json
     "categories": [],
     "originalStartTimeZone": "Pacific Standard Time",
     "originalEndTimeZone": "Pacific Standard Time",
-    "uid": "040000008200E00074C5B7101A82E008000000006CF8FDD0579BD501000000000000000010000000A030302E234C194F90824DFA6A17FB61",
+    "iCalUId": "040000008200E00074C5B7101A82E0080000000076B29D94B32CD6010000000000000000100000005F31C591C3C328459653D025BD277439",
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,
@@ -276,7 +280,7 @@ Content-type: application/json
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/events/AAMkADAGu0AABIGYDZAAA=?$select=isOnlineMeeting,onlineMeetingProvider,onlineMeeting
+GET https://graph.microsoft.com/v1.0/me/events/AAMkADAGu0AABIGYDZAAA=?$select=isOnlineMeeting,onlineMeetingProvider,onlineMeeting
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-event-online-meeting-info-csharp-snippets.md)]
@@ -288,6 +292,10 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGu0AABIGYDZAAA=?$select=is
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-online-meeting-info-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-event-online-meeting-info-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -305,7 +313,7 @@ HTTP/1.1 200 Ok
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events(isOnlineMeeting,onlineMeetingProvider,onlineMeeting)/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events(isOnlineMeeting,onlineMeetingProvider,onlineMeeting)/$entity",
     "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAASBUExA==\"",
     "id": "AAMkADAGu0AABIGYDZAAA=",
     "isOnlineMeeting": true,
@@ -336,7 +344,7 @@ Content-type: application/json
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/me/events/AAMkADAGu0AABIGYDaAAA=
+PATCH https://graph.microsoft.com/v1.0/me/events/AAMkADAGu0AABIGYDaAAA=
 
 {
   "isOnlineMeeting": true,
@@ -355,6 +363,10 @@ PATCH https://graph.microsoft.com/beta/me/events/AAMkADAGu0AABIGYDaAAA=
 [!INCLUDE [sample-code](../includes/snippets/objc/update-meeting-online-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-meeting-online-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -370,7 +382,7 @@ HTTP/1.1 200 Ok
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
     "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAASBUFEA==\"",
     "id": "AAMkADAGu0AABIGYDaAAA=",
     "createdDateTime": "2019-11-15T02:13:38.5558455Z",
@@ -379,7 +391,7 @@ Content-type: application/json
     "categories": [],
     "originalStartTimeZone": "Pacific Standard Time",
     "originalEndTimeZone": "Pacific Standard Time",
-    "uid": "040000008200E00074C5B7101A82E00800000000CD93094B5A9BD501000000000000000010000000A16AF77C6F6C254EA13F69C3B2808B4A",
+    "iCalUId": "040000008200E00074C5B7101A82E00800000000CD93094B5A9BD501000000000000000010000000A16AF77C6F6C254EA13F69C3B2808B4A",
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,
@@ -418,36 +430,16 @@ Content-type: application/json
     },
     "location": {
         "displayName": "Conf Room Baker",
-        "locationUri": "Baker@contoso.onmicrosoft.com",
         "locationType": "conferenceRoom",
         "uniqueId": "Baker@contoso.onmicrosoft.com",
-        "uniqueIdType": "directory",
-        "address": {
-            "type": "unknown",
-            "street": "",
-            "city": "",
-            "state": "",
-            "countryOrRegion": "",
-            "postalCode": ""
-        },
-        "coordinates": {}
+        "uniqueIdType": "directory"
     },
     "locations": [
         {
             "displayName": "Conf Room Baker",
-            "locationUri": "Baker@contoso.onmicrosoft.com",
             "locationType": "conferenceRoom",
             "uniqueId": "Baker@contoso.onmicrosoft.com",
-            "uniqueIdType": "directory",
-            "address": {
-                "type": "unknown",
-                "street": "",
-                "city": "",
-                "state": "",
-                "countryOrRegion": "",
-                "postalCode": ""
-            },
-            "coordinates": {}
+            "uniqueIdType": "directory"
         }
     ],
     "attendees": [
@@ -460,17 +452,6 @@ Content-type: application/json
             "emailAddress": {
                 "name": "Adele Vance",
                 "address": "AdeleV@contoso.OnMicrosoft.com"
-            }
-        },
-        {
-            "type": "resource",
-            "status": {
-                "response": "accepted",
-                "time": "2019-11-15T02:13:42.6568849Z"
-            },
-            "emailAddress": {
-                "name": "Conf Room Baker",
-                "address": "Baker@contoso.onmicrosoft.com"
             }
         }
     ],
@@ -492,6 +473,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>另请参阅
 - 有关 Microsoft Teams 与 Office 365 的互操作性的详细信息，请参阅[共存和升级设置](https://docs.microsoft.com/microsoftteams/setting-your-coexistence-and-upgrade-settings)。
+- [在 Microsoft Graph 中选择 API 以创建和加入联机会议](choose-online-meeting-api.md)
 - [在 Outlook 日历中查找可能会议时间](findmeetingtimes-example.md)
 - [获取用户和资源的忙/闲日程安排](outlook-get-free-busy-schedule.md)
 - [在 Outlook 日历中建议会议时间（预览）](outlook-calendar-meeting-proposals.md)

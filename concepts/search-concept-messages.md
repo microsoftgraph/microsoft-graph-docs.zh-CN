@@ -4,12 +4,12 @@ description: 您可以使用 Microsoft 搜索 API 搜索电子邮件中的信息
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: e57cbed67c3c224c26779b3c98e400c0411937ee
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 978ce45b9882190a31e7840ba402d6eb283270dd
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868553"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44332325"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-messages"></a>在 Microsoft Graph 中使用 Microsoft Search API 搜索邮件
 
@@ -119,7 +119,7 @@ Content-Type: application/json
 ```
 
 ### <a name="example-2-search-top-results-messages"></a>示例2：搜索排名靠前的结果邮件
-下面的示例使用[示例 1](#example-1)中所示的搜索查询，并按相关性对结果进行排序。 
+下面的示例使用示例1中所示的搜索查询，并按相关性对结果进行排序。 
 
 <!-- markdownlint-disable MD024 -->
 #### <a name="request"></a>请求

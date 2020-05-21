@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5ecd0f982bfa93c5ec3cf1125fb66f357b55948f
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 4cad5e893064a8680288753be457099a2f78450d
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289989"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44333415"
 ---
 # <a name="serviceprincipal-removekey"></a>servicePrincipal： removeKey
 
@@ -25,7 +25,7 @@ ms.locfileid: "44289989"
 
 作为此方法的请求验证的一部分，在可以执行操作之前，将验证已拥有现有密钥的证明。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -55,7 +55,7 @@ POST /serviceprincipals/{id}/removeKey
 
 在请求正文中，提供以下必需属性。
 
-| 属性  | 类型 | 说明|
+| 属性  | 类型 | Description|
 |:----------|:-----|:-----------|
 | keyId     | GUID | 密码的唯一标识符。|
 | 证明 | String | 自签名的 JWT 令牌，用作已有密钥的所有权证明。 必须使用 servicePrincipal 的现有有效证书之一的私钥对此 JWT 令牌进行签名。 令牌应包含以下声明：<ul><li>`aud`-需要访问群体 `00000002-0000-0000-c000-000000000000` 。</li><li>`iss`-颁发者需要是正在进行呼叫的 servicePrincipal 的__id__ 。</li><li>`nbf`-不早时间。</li><li>`exp`-过期时间应为 "nbf" + 10 分钟。</li></ul><br>下面是可用于生成此已占有令牌证明的代码[示例](/graph/application-rollkey-prooftoken)。|
@@ -72,6 +72,8 @@ POST /serviceprincipals/{id}/removeKey
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_removekey"
@@ -86,6 +88,12 @@ Content-Type: application/json
     "proof":"eyJ0eXAiOiJ..."
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-removekey-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

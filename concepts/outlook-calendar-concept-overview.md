@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: a511c7759203cd72e8c32634ede611320de4a9b0
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
-ms.translationtype: HT
+ms.openlocfilehash: 4d9b61db0dfc14a2e22aad50769498333828ebfb
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991843"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290976"
 ---
 # <a name="outlook-calendar-api-overview"></a>Outlook 日历 API 概述
 
@@ -62,7 +62,7 @@ Outlook 日历 API 中的大多数功能适用于个人 Microsoft 帐户和工�
 Outlook 和日历 API 提供了很多智能便利的功能来安排事件：
 
 - 在 Outlook 日历应用设置中，客户可以启用在电子邮件中自动添加事件，如航班、酒店或就餐预订，以及开具发票等。 添加后，即可像用户邮箱中的任何其他[事件](/graph/api/resources/event?view=graph-rest-1.0)那样与这些事件交互，并借此 Outlook 功能生成创造性应用场景。
-- 在 Outlook 中，预订会议室就像添加**事件**与会者那样简单。 日历 API 将会议室表示为 [emailAddress](/graph/api/resources/emailaddress?view=graph-rest-1.0) 对象。 可以[获取租户中可用的会议室（预览版）](/graph/api/user-findrooms?view=graph-rest-beta)和[会议室列表（预览版）](/graph/api/user-findroomlists?view=graph-rest-beta)。 若要安排在特定会议室召开会议，请将它分配到 **event** 的 **location** 属性。<sup>**</sup>
+- 在 Outlook 中，预订会议室就像添加**事件**与会者那样简单。 日历 API 将会议室表示为 [emailAddress](/graph/api/resources/emailaddress?view=graph-rest-1.0) 对象。 你可以[获取聊天室](/graph/api/place-list#example-1-list-all-the-rooms-defined-in-the-tenant)并获取租户中可用的[会议室列表](/graph/api/place-list#example-2-list-all-the-room-lists-defined-in-the-tenant)。 若要安排在特定会议室召开会议，请将它分配到 **event** 的 **location** 属性。<sup>**</sup>
 - 可[查找用户和资源在特定时间段内的忙/闲信息](outlook-get-free-busy-schedule.md)。 然后，可以将此类数据应用于各种方案，包括资源计划和事件日程安排。<sup>**</sup>
 - 如果方案涉及安排在最佳时间召开会议，不妨[使用 findMeetingTimes 标识可召开会议的可能时间或地点](findmeetingtimes-example.md)。 [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) 函数会考虑与会者的忙/闲状态，以及所提供的任何首选会议室、时间和其他限制。 如果首次尝试未返回常见的会议时间，请检查原因，调整条件并再次调用 **findMeetingTimes**。<sup>**</sup>
 
@@ -75,9 +75,9 @@ Outlook 和日历 API 提供了很多智能便利的功能来安排事件：
 - 或者，可以指定 `Prefer: outlook.timezone="{time zone name}"` 标头，以便 GET 事件操作返回指定时区的**开始**和**结束**时间。 时区名称可以是 Windows 支持的任何名称，也可以是此[列表](/graph/api/resources/datetimetimezone?view=graph-rest-1.0)上的这些名称。 请参阅使用中的 `Prefer` 标头[示例](/graph/api/event-get?view=graph-rest-1.0#request-1)
 - 支持联机会议提供程序的组织（例如 Microsoft Teams 和 Skype）可以设置 Outlook 日历以使用这些提供程序。 可方便地[组织或以在线会议的形式参加这些日历中的事件](outlook-calendar-online-meetings.md)。
 
-## <a name="build-apps-with-location-awareness-and-provide-intelligent-context-preview"></a>构建具有位置感知功能的应用并提供智能上下文（预览）
+## <a name="build-apps-with-location-awareness-and-provide-intelligent-context"></a>使用位置感知生成应用程序并提供智能上下文
 
-使用[位置 API](/graph/api/resources/place?view=graph-rest-beta)（预览版）可帮助用户导航到某个位置，或根据用户的位置提供智能解决方案。 下面是一些示例方案：
+使用[位置 API](/graph/api/resources/place)帮助用户导航到某个位置，或根据用户的位置提供智能解决方案。 下面是一些示例方案：
 
 - 在日历事件中包含地点详细信息，以帮助用户浏览当天事件并提高工作效率。<sup>**</sup>
 - 餐饮应用程序可以使用位置 API 来协助场地导航和设置。<sup>**</sup>

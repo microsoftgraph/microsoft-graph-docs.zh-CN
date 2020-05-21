@@ -4,12 +4,12 @@ description: 在 Outlook 中，日历所有者可与其他用户共享日历，�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 7654928f0fab1080f7f85eee48186964957224dc
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
-ms.translationtype: HT
+ms.openlocfilehash: 534e7819ddcf58b9b51b4655470bc21a5645973c
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229421"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290740"
 ---
 # <a name="share-or-delegate-a-calendar-in-outlook"></a>在 Outlook 中共享或委派日历
 
@@ -37,6 +37,9 @@ ms.locfileid: "43229421"
 
 - [获取共享或委托 Outlook 日历或其活动](outlook-get-shared-events-calendars.md)
 - [在共享或委托日历中创建 Outlook 活动](outlook-create-event-in-shared-delegated-calendar.md)
+
+> [!NOTE]
+> 与本主题中所述的日历共享和委派的属性和 API 目前在 v1.0 终结点中可用，日历属性**isShared**和**isSharedWithMe**除外。 这两个属性仅在 beta 终结点中公开。
 
 ## <a name="get-calendar-information-about-sharees-and-delegates-and-update-individual-permissions"></a>获取有关共享者和委托人的日历信息，以及更新各个权限
 
@@ -287,7 +290,6 @@ Content-type: application/json
     "name": "Calendar",
     "color": "auto",
     "hexColor": "",
-    "isDefaultCalendar": true,
     "changeKey": "NEXywgsVrkeNsFsyVyRrtAAAAAACOg==",
     "canShare": true,
     "canViewPrivateItems": true,
@@ -366,7 +368,6 @@ Content-type: application/json
     "name": "Alex Wilber",
     "color": "auto",
     "hexColor": "",
-    "isDefaultCalendar": false,
     "changeKey": "E6LznKWmX0KTsAD9qRJjeAAAYWo3EQ==",
     "canShare": false,
     "canViewPrivateItems": true,

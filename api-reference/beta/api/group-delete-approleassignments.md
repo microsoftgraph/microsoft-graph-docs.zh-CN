@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: 8fe9999c1e7953df537054d382d30228c4f81d94
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 1d312ac2d2f5993fed1c77c53cfe3600aba7677e
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289458"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44333169"
 ---
 # <a name="delete-an-approleassignment-granted-to-a-group"></a>删除向组授予的 appRoleAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "44289458"
 
 删除已授予某个组的[appRoleAssignment](../resources/approleassignment.md) 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -61,6 +61,8 @@ DELETE /groups/{id}/appRoleAssignments/{id}
 
 下面的示例展示了删除应用程序角色分配的请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_delete_approleassignment"
@@ -69,6 +71,20 @@ DELETE /groups/{id}/appRoleAssignments/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/groups/{id}/appRoleAssignments/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-delete-approleassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-delete-approleassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/group-delete-approleassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

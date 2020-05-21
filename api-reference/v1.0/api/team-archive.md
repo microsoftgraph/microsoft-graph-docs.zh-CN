@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d849f4166e0481accb991c6f318e486917e562e3
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
-ms.translationtype: HT
+ms.openlocfilehash: da0d836eb6eea664cbc8a6bf2814a13dc33c4d03
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42572389"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290354"
 ---
 # <a name="archive-team"></a>存档团队
 
@@ -30,9 +30,9 @@ ms.locfileid: "42572389"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All    |
+|委派（工作或学校帐户） | TeamSettings、Group 写全部、所有的 ReadWrite。 All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All    |
+|应用程序 | TeamSettings （[RSC](https://aka.ms/teams-rsc)）、TeamSettings、All、group、All、All 和 All。 all |
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 

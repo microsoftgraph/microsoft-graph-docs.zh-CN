@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e1334482b23be1a424d5a0a5d8d969747630bc18
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
-ms.translationtype: HT
+ms.openlocfilehash: cd4b91dc2a1083f880cd0db7db595cc939f22db8
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509277"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44290593"
 ---
 # <a name="add-tab-to-channel"></a>将选项卡添加到频道
 
@@ -25,9 +25,9 @@ ms.locfileid: "42509277"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All    |
+|委派（工作或学校帐户） | TeamsTab，TeamsTab，all，all，All，All，All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-| 应用程序                            | Group.ReadWrite.All                         |
+| 应用程序                            | TeamsTab （[RSC](https://aka.ms/teams-rsc)）、TeamsTab、TeamsTab、All、、All、all 和 All。 all |
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 

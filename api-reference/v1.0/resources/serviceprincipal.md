@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: d2c1810d25fe2ad50a82f20ab2a35612953e5837
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 94a651a613d64ee5cefeed6a7e8f3f0b4656a916
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44288711"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44332318"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -92,7 +92,7 @@ ms.locfileid: "44288711"
 |appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|为此服务主体分配的主体（用户、组和服务主体）。 只读。|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|将此服务主体分配到的应用程序。 此为只读属性。 可为 NULL。|
 |createdObjects|[directoryObject](directoryobject.md) 集合|此服务主体所创建的目录对象。 此为只读属性。 可为 NULL。|
-|endpoints|[终结点](endpoint.md)集合|可用于发现的终结点。 Sharepoint 等服务使用特定于租户的 SharePoint 终结点填充此属性，其他应用程序可以在他们的体验中发现和使用这些终结点。|
+|endpoints|[endpoint](endpoint.md) 集合|可用于发现的终结点。 Sharepoint 等服务使用特定于租户的 SharePoint 终结点填充此属性，其他应用程序可以在他们的体验中发现和使用这些终结点。|
 |memberOf|[directoryObject](directoryobject.md) collection|此服务主体所属的角色。 HTTP 方法：GET 只读。 可为 NULL。|
 |oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) 集合|授权此服务主体的委派权限授予代表登录用户访问 API 的权限。 此为只读属性。 可为 Null。|
 |ownedObjects|[directoryObject](directoryobject.md) 集合|此服务主体所拥有的目录对象。 只读。 可为空。|
@@ -108,6 +108,7 @@ ms.locfileid: "44288711"
     "appRoleAssignments",
     "createdObjects",
     "createdOnBehalfOf",
+    "endpoints",
     "memberOf",
     "oauth2PermissionGrants",
     "ownedObjects",
@@ -153,7 +154,6 @@ ms.locfileid: "44288711"
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-     "Error: microsoft.graph.servicePrincipal/endpoints:\r\n      Referenced type microsoft.graph.endPoint is not defined in the doc  set! Potential suggestion: microsoft.graph.callRecords.endpoint"
     ]
 }
 -->

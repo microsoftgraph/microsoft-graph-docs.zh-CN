@@ -3,14 +3,77 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 57e96bb808a18531880ad1de3b194669441a8f3b
-ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
-ms.translationtype: HT
+ms.openlocfilehash: 9f722134a70f7ff7876f7db19bd2f51b5aa7eeac
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43146380"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44291053"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
+
+## <a name="march-2020-new-and-generally-available"></a>2020 年 3 月：新版本和正式版
+
+### <a name="cloud-communications"></a>云通信
+- 获取呼叫路由和[呼叫](/graph/api/resources/call?view=graph-rest-1.0)的传入上下文。
+- 对呼叫进行[录制状态更新](/graph/api/call-updaterecordingstatus?view=graph-rest-1.0)。
+- 可为[参与者](/graph/api/resources/participant?view=graph-rest-1.0)指定录制信息，包括录制的发起人和状态。
+- 使用 **callChainId** 属性唯一标识会议或参与者到参与者[呼叫](/graph/api/resources/call?view=graph-rest-1.0)中的参与者。
+- 可将参与者的国家/地区代码和终结点类型（例如 Skype for Business 或 Skype for Business VOIP）标识为 [participantInfo](/graph/api/resources/participantinfo?view=graph-rest-1.0) 的组成部分。
+- 第三方视频电话会议 (VTC) 设备合作伙伴可以通过云视频互操作 (CVI) 机器人和 [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality?view=graph-rest-1.0) 函数，记录并提供视频电话会议设备的媒体质量数据。 媒体质量数据包括，[音频](/graph/api/resources/teleconferencedeviceaudioquality?view=graph-rest-1.0)、[视频](/graph/api/resources/teleconferencedevicevideoquality?view=graph-rest-1.0)和[屏幕共享](/graph/api/resources/teleconferencedevicescreensharingquality?view=graph-rest-1.0)的开放类型数据。
+
+### <a name="files"></a>文件
+- 与用户共享、添加至用户 OneDrive、或作为搜索结果返回的[远程项](/graph/api/resources/remoteitem?view=graph-rest-1.0)，包含图像或视频的元数据。
+- [关注](/graph/api/driveitem-follow?view=graph-rest-1.0) [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0)，以便能够便捷访问或方便执行移动、复制和另存为等操作。 使用[取消关注](/graph/api/driveitem-unfollow?view=graph-rest-1.0)可停止关注驱动器项。
+- 向用户[授予](/graph/api/permission-grant?view=graph-rest-1.0)访问共享链接的权限，以便共享相应的驱动器项。
+
+### <a name="identity-and-access"></a>身份和访问
+- [组织联系人](/graph/api/resources/orgcontact?view=graph-rest-1.0)[跟踪更改](/graph/api/orgcontact-delta?view=graph-rest-1.0)。
+- 使用 **riskEventTypes_v2** 属性可获取与[登录](/graph/api/resources/signin?view=graph-rest-1.0)相关的风险事件类型。
+- 使用 `User.ManageIdentities.All` 委托的权限，可允许应用读取、更新或删除与登录用户有权访问的用户帐户关联的标识。 在没有登录用户的情况下，在应用程序级别使用此权限。 这样，应用可以[管理](/graph/api/user-update?view=graph-rest-1.0)用户能够使用哪些标识来登录。
+
+### <a name="reports"></a>报告
+将 Teams 服务管理员和 Teams 通信管理员用作接受的用户角色，允许应用代表用户以[用户委派的授权的形式](reportroot-authorization.md)读取 Office 365 服务使用情况报告。 
+
+### <a name="sites"></a>网站
+- 让用户[关注](/graph/api/site-follow?view=graph-rest-1.0)或[取消关注](/graph/api/site-unfollow?view=graph-rest-1.0) SharePoint 网站。
+- 针对 SharePoint [列表](/graph/api/resources/list?view=graph-rest-1.0)[订阅更改通知](/graph/api/resources/subscription?view=graph-rest-1.0)。 
+
+## <a name="march-2020-new-in-preview-only"></a>2020 年 3 月：仅限预览版中的新增功能
+
+### <a name="calendar"></a>日历
+- 使用 **calendarGroupId** 属性可获取创建[日历](/graph/api/resources/calendar?view=graph-rest-beta)的[日历组](/graph/api/resources/calendargroup?view=graph-rest-beta)。
+- 使用 **isDraft** 属性可将[事件](/graph/api/resources/event?view=graph-rest-beta)标识为用户已在 Outlook 中更新但尚未发送给更新与会者的会议。
+
+### <a name="cloud-communications"></a>云通信
+- 使用 [createOrGet](/graph/api/onlinemeeting-createorget?view=graph-rest-beta) 按自定义外部 ID 获取[联机会议](/graph/api/resources/onlinemeeting?view=graph-rest-beta)实例，并在不存在此实例时创建一个实例。
+- 可选择使用 **externalId** 属性来标识具有自定义外部 ID 的联机会议。
+- 使用可选的 `Accept-Language`HTTP 请求标头[创建](/graph/api/application-post-onlinemeetings?view=graph-rest-beta)或[获取](/graph/api/onlinemeeting-get?view=graph-rest-beta)联机会议实例，以在成功操作时，采用指定语言和区域设置显示 **joinInformation** 属性的内容。
+
+### <a name="devices-and-apps"></a>设备和应用
+Intune [3 月](changelog.md#march-2020)更新。
+
+### <a name="identity-and-access"></a>标识和访问
+- 使用 `Auditlogs.Read.All` 权限可列出[用户](/graph/api/resources/user?view=graph-rest-beta)的[登录活动](/graph/api/resources/signinactivity?view=graph-rest-beta)。
+- 使用 [Azure 资源的 Privileged Identity Management (PIM)](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta) 的 `PrivilegedAccess.Read.AzureResources` 应用程序级别权限为管理组、订阅、资源组和资源级别的 Azure 基础结构角色设置实时访问工作流。
+- 使用 [identitySecurityDefaultsEnforcementPolicy](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-beta) 实体可[获取](/graph/api/identitysecuritydefaultsenforcementpolicy-get?view=graph-rest-beta)或[更新](/graph/api/identitysecuritydefaultsenforcementpolicy-update?view=graph-rest-beta)预配置的默认安全设置，以保护组织免受常见攻击。
+- 调用条件访问 API 时，请使用 `identity` 段。 例如，要[获取](/graph/api/conditionalaccesspolicy-get?view=graph-rest-beta)[条件性访问策略](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta)：`GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies/{id}`。
+- 使用 **authenticationRequirement** 属性可获取通过所有登录步骤所需的最高级别的身份验证，以便[登录](/graph/api/resources/signin?view=graph-rest-beta)成功。
+- 在[列出租户中发生的预配事件](/graph/api/provisioningobjectsummary-list?view=graph-rest-beta)时，请使用分页。
+
+### <a name="search"></a>搜索
+- 若要将文件中的数据添加到搜索结果中，只需将数据作为 [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) 编制索引即可。 **externalFile** 类型已遭弃用。
+- [更新](/graph/api/externalitem-update?view=graph-rest-beta)[索引中的项](/graph/api/resources/externalitem?view=graph-rest-beta)，具体方法为专门更新纯文本表示的项（用 **content** 属性表示），或项的属性包（用 **properties** 属性表示）。 由于更新属性包中的任何属性都会覆盖整个属性包，因此请务必在更新中显式添加项的所有属性。
+- 在调用 **externalItem** 的 [create](/graph/api/externalconnection-put-items?view=graph-rest-beta)、[update](/graph/api/externalitem-update?view=graph-rest-beta) 或 [delete](/graph/api/externalitem-delete?view=graph-rest-beta) 操作后，检查 `HTTP 429` 和 `Retry-After` 响应头。 使用 `Retry-After` 延迟来回退请求是从[限制](throttling.md#best-practices-to-handle-throttling)中恢复的最快方法。
+
+### <a name="teamwork"></a>团队合作
+使用 `ChannelMessage.Read.All` 应用程序级别权限，在没有登录用户的情况下读取频道中的 [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) 实例。
+
+### <a name="universal-print"></a>通用打印
+调试允许用户在 web 上或从应用程序上打印的[通用打印 API](universal-print-concept-overview.md)。 借助 API，IT 管理员能够在 Microsoft 365 云远程打印机中管理用户和组对打印机的访问权限，以保持可用性、监视打印机状态，报告存档的打印作业和使用情况。 
+
+注意：自 2020 年 3 月起，通用打印_服务_仅在个人预览版中提供。 参见[宣布推出通用打印：基于云的打印解决方案](https://aka.ms/announcinguniversalprint)，了解有关参与的详细信息。
+
 
 ## <a name="february-2020-new-and-generally-available"></a>2020 年 2 月：新版本和正式版
 
@@ -75,7 +138,7 @@ Intune [1 月](changelog.md#january-2020)更新。
 ### <a name="education"></a>教育
 使用 **classSettings** 属性管理课程专属设置，例如启用发送每周作业摘要的操作。 当团队表示[教育课程](/graph/api/resources/educationclass?view=graph-rest-1.0)时，此属性可在[团队](/graph/api/resources/team?view=graph-rest-1.0)资源中使用。
 
-### <a name="identity-and-access"></a>标识和访问 
+### <a name="identity-and-access"></a>身份和访问 
 [尝试使用有限权限获取容器对象会返回部分数据](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects)。 例如，与[用户](/graph/api/resources/user?view=graph-rest-1.0)、另一个**组**和[设备](/graph/api/resources/device?view=graph-rest-1.0)关联的[组](/graph/api/resources/group?view=graph-rest-1.0)实例。 只有 User.Read.All 和 Group.Read.All 权限且正在尝试访问此**组**实例的应用将获取**用户**和**组**实例，但获得的**设备**对象数据有限（仅限数据类型和对象 ID，不包括属性值）。
 
 ### <a name="people-and-workplace-intelligence"></a>人员和工作场所智能
@@ -161,7 +224,7 @@ Intune [11 月](changelog.md#november-2019)更新
 ### <a name="notifications"></a>通知
 使用新的轻量级通知 [Web SDK](https://aka.ms/GNSDK) 代替 [Project Rome SDK](https://github.com/Microsoft/project-rome)，以利用改进的身份验证模型和对使用 Web 推送的 Web 应用的支持。 
 
-### <a name="people-and-workplace-intelligence"></a>人员和工作场所智能
+### <a name="people-and-workplace-intelligence"></a>人脉和工作区智能
 首次推出的[配置文件](/graph/api/resources/profile?view=graph-rest-beta)资源，这是 Microsoft 服务中下一代人脉实体的丰富表示形式。 此资源与常见和切实可行的人脉属性有关，包括任何有意义的日期（如[周年纪念日](/graph/api/resources/personanniversary?view=graph-rest-beta)）的信息、[教育](/graph/api/resources/educationalactivity?view=graph-rest-beta)、[就业岗位](/graph/api/resources/workposition?view=graph-rest-beta)、[兴趣](/graph/api/resources/personinterest?view=graph-rest-beta)、[语言](/graph/api/resources/languageproficiency?view=graph-rest-beta)和[技能](/graph/api/resources/skillproficiency?view=graph-rest-beta)熟练程度、[项目参与](/graph/api/resources/projectparticipation?view=graph-rest-beta)、[网站关联](/graph/api/resources/personwebsite?view=graph-rest-beta)以及其他[帐户](/graph/api/resources/useraccountinformation?view=graph-rest-beta)和联系人信息。
 
 ### <a name="search"></a>搜索
@@ -288,7 +351,7 @@ Intune [9 月](changelog.md#september-2019)更新
 - 使用安全哈希算法 (SHA-256) 增强[文件](/graph/api/resources/file?view=graph-rest-beta)数据安全性和完整性。
 - 获取或设置[照片](/graph/api/resources/photo?view=graph-rest-beta)的方向。 OneDrive 个人版上支持设置。
 
-### <a name="identity-and-access"></a>标识和访问
+### <a name="identity-and-access"></a>身份和访问
 - 使用新的 **identities** 属性并获取[用户](/graph/api/resources/user?view=graph-rest-beta)可用于登录帐户的标识。 这些标识可由组织或诸如 Facebook、Google 和 Microsoft 等社交标识提供者提供。
 - 用于在租户的云应用程序中[同步标识](/graph/api/resources/synchronization-overview?view=graph-rest-beta)的增强功能：
 
@@ -344,7 +407,7 @@ Intune [8 月](changelog.md#august-2019)更新
 ### <a name="example-code-snippets"></a>代码片段示例
 现在 v1.0 和 beta 参考中的所有 API 主题中提供了 Objective-C 代码片段。 请参阅[获取事件](/graph/api/event-get?view=graph-rest-1.0&tabs=objective-c#example)的 Objective-C 示例。
 
-### <a name="group"></a>组
+### <a name="group"></a>Group
 - 使用 [validateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0) 函数确保现有 Office 365 组的显示名称和邮件昵称符合命名策略。
 - 或者，在创建组之前，可以为 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) 使用 [validateProperties](/graph/api/directoryobject-validateproperties?view=graph-rest-1.0) 函数来首先验证名称。
 
@@ -451,7 +514,7 @@ Exchange 管理员可以向应用程序授予应用程序权限, 并[限制该�
 ### <a name="calendar"></a>日历
 [获取忙/闲日程安排](outlook-get-free-busy-schedule.md)
 
-### <a name="identity-and-access"></a>身份和访问控制
+### <a name="identity-and-access"></a>身份和访问
 [身份提供程序](/graph/api/resources/identityprovider?view=graph-rest-1.0)
 [改进的身份验证指南](/graph/auth)
 [将应用从 Azure AD Graph 迁移到 Microsoft Graph](migrate-azure-ad-graph-overview.md)

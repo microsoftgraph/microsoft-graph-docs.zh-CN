@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b98517c2d9f27fa655b9b77cd73e968ab70a146a
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: bfda3767fc8c9bec58d78efc566efcfdf1b51c17
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290186"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44332461"
 ---
 # <a name="clone-a-team"></a>克隆团队
 
@@ -32,7 +32,7 @@ ms.locfileid: "44290186"
 克隆是一项长时间运行的操作。
 在 POST 克隆返回之后，您需要获取 Location：头所返回的[操作](../resources/teamsasyncoperation.md)，以查看它是 "正在运行" 还是 "已成功" 或 "失败"。 您应继续获取，直到状态不为 "正在运行"。 建议的获取延迟为5秒。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -56,7 +56,7 @@ POST /teams/{id}/clone
 
 ## <a name="request-body"></a>请求正文
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |classification|String （可选）|描述组的分类（如低、中或高业务影响）。 此属性的有效值是通过基于[模板定义](../resources/directorysettingtemplate.md)创建 ClassificationList[设置](../resources/directorysetting.md)值来定义的。 如果未指定分类，则将从原始团队/组复制分类。|
 |说明|String （可选）|可选的组说明。 如果未指定此属性，则它将保留为空。|
@@ -73,9 +73,11 @@ POST /teams/{id}/clone
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
-  "name": "create_team"
+  "blockType": "request",
+  "name": "clone_team"
 }-->
 ```http
 POST /teams/{id}/clone
@@ -89,11 +91,25 @@ Content-Type: application/json
      "visibility": "public"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/clone-team-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/clone-team-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/clone-team-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.team"
 } -->
