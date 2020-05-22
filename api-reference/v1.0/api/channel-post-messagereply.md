@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e49f605610169e8169ced20014fba89d47f50857
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 86d246098801954c811d56e2357356f9b5c4a4c2
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44335038"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345798"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>答复频道中的邮件
 
@@ -20,7 +20,7 @@ ms.locfileid: "44335038"
 
 > **注意**：我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "44335038"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | ChannelMessage、Group、Group 写。 All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All |
+| 应用程序                           | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

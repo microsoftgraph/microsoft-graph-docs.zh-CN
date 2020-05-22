@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: a0339bc03dd6621bc8eb513d91ee4b9b7ac13822
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: e5b6a2994abb2f012081a64bccdd227c79a5ede0
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336236"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345742"
 ---
 # <a name="list-approleassignments-granted-for-a-service-principal"></a>为服务主体授予的列表 appRoleAssignments
 
@@ -22,15 +22,15 @@ ms.locfileid: "44336236"
 
 如果资源服务主体是向用户和组授予应用程序角色的应用程序，这将返回为此应用程序分配的应用程序角色的所有用户和组。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | "AppRoleAssignment"、"全部"、"全部"、"Directory.accessasuser.all"、"全部"、"全部"、"directory"  |
+|委派（工作或学校帐户） | "Application"、"all"、"Directory.accessasuser.all"、"全部"、"全部"、"全部"、"全部"、"所有"  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | "AppRoleAssignment"、"全部"、"全部"、"全部"、"全部"、"目录" |
+|应用程序 | "Application"、"all"、"全部"、"所有"、"所有"、"所有" |
 
 ## <a name="http-request"></a>HTTP 请求
 

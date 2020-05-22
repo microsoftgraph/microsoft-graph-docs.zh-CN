@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: bcdd61f1af3f67b7ddc7e5ec2e3d4dde0c839c15
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 46fca8fe14924d2b5094db4cf9c9fad709bc48cd
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44332916"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345700"
 ---
 # <a name="list-group-members"></a>列出组成员
 
@@ -20,7 +20,7 @@ ms.locfileid: "44332916"
 
 获取组的直接成员列表。 组可以将用户、联系人、设备、服务主体和其他组作为成员。 此操作不可传递。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -214,7 +214,7 @@ Content-type: text/plain
 
 893
 
-### <a name="example-4-use-searchand-odata-cast-to-get-user-membership-in-groups-with-display-names-that-contain-the-letters-pr-including-a-count-of-returned-objects"></a>示例4：使用 $searchand OData cast 以获取包含字母 "Pr" 的组中的用户成员身份，其中包括返回对象的计数
+### <a name="example-4-use-search-and-odata-cast-to-get-user-membership-in-groups-with-display-names-that-contain-the-letters-pr-including-a-count-of-returned-objects"></a>示例4：使用 $search 和 OData cast 以使用包含字母 "Pr" 的显示名称获取组中的用户成员身份，包括返回对象的计数
 
 #### <a name="request"></a>请求
 

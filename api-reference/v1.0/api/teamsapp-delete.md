@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3d224b0458a26b35ba330c508eeac65bea2b068f
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 8fe918b6e584fb3f22e00c2ca488cb7ef2937bdd
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290326"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345889"
 ---
 # <a name="remove-an-app-from-your-organizations-app-catalog"></a>从组织的应用程序目录中删除应用程序
 
@@ -20,7 +20,7 @@ ms.locfileid: "44290326"
 
 从组织的应用程序目录中删除[应用程序](../resources/teamsapp.md)（租户应用程序目录）。 若要从组织的应用程序目录中删除应用程序，请 `organization` 在[teamsCatalogApp](../resources/teamsapp.md)资源中将其指定为**distributionMethod** 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "44290326"
 |:----------------------------------     |:-------------|
 | 委派（工作或学校帐户）     | AppCatalog、所有的目录读写。 |
 | 委派（个人 Microsoft 帐户） | 不支持|
-| 应用程序                            | AppCatalog、所有的目录读写。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

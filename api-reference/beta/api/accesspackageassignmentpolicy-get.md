@@ -5,16 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: af5ecab80cd391df6bc6de5b70522ff168c2707e
-ms.sourcegitcommit: fc818699566f03493937be95447eb9f656a1f950
+ms.openlocfilehash: e24604cd36f866a60c64e12cc3c399c583bfae73
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534401"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345220"
 ---
 # <a name="get-accesspackageassignmentpolicy"></a>获取 accessPackageAssignmentPolicy
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ ms.locfileid: "42534401"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
+| 委派（工作或学校帐户）     | EntitlementManagement、EntitlementManagement 和所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -54,7 +54,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{i
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)对象。
 
 ## <a name="examples"></a>示例
 

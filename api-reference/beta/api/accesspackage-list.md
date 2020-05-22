@@ -5,16 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3648320f1928eb6054970c92e9109ebac792d507
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: beb1912a5b7ee913882f535f8c28480e1f7aaba3
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448520"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345240"
 ---
 # <a name="list-accesspackages"></a>列出 accessPackages
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ ms.locfileid: "42448520"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     |  EntitlementManagement.ReadWrite.All |
+| 委派（工作或学校帐户）     | EntitlementManagement、EntitlementManagement 和所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackages
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要检索每个访问程序包的访问程序包策略，请`$expand=accessPackageAssignmentPolicies`添加。 若要搜索具有特定名称的 access 程序包，请`$filter=contains(tolower(displayName),'team')`在查询中添加筛选器（如查询）。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要检索每个访问程序包的访问程序包策略，请添加 `$expand=accessPackageAssignmentPolicies` 。 若要搜索具有特定名称的 access 程序包，请在查询中添加筛选器（如 `$filter=contains(tolower(displayName),'team')` 查询）。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /identityGovernance/entitlementManagement/accessPackages
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[accessPackage](../resources/accesspackage.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[accessPackage](../resources/accesspackage.md)对象集合。
 
 ## <a name="examples"></a>示例
 

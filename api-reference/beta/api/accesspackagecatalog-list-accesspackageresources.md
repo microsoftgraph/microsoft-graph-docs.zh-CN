@@ -5,16 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 726fdf04818717167b9909f02b43f3e333636e28
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 75fab6f9f63a16ddbb2befa771d1832323a85a7a
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441975"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345455"
 ---
 # <a name="list-accesspackageresources"></a>列出 accessPackageResources
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ ms.locfileid: "42441975"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     |  EntitlementManagement.ReadWrite.All |
+| 委派（工作或学校帐户）     | EntitlementManagement、EntitlementManagement 和所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -54,7 +54,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessP
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[accessPackageResource](../resources/accesspackageresource.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[accessPackageResource](../resources/accesspackageresource.md)对象集合。
 
 ## <a name="examples"></a>示例
 

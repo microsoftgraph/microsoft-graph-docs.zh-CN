@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: 4bbb478a857f488e88c86ea610e70996c788e825
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: b590bd9993a9c5b6b0fe86696bb11dbd2d8a540b
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44335980"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345735"
 ---
 # <a name="list-approleassignments-granted-to-a-service-principal"></a>向服务主体授予的 List appRoleAssignments
 
@@ -21,15 +21,15 @@ ms.locfileid: "44335980"
 
 分配给服务主体的应用程序角色也称为 "[应用程序权限](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types)"。 可以通过创建应用程序角色分配或通过[许可体验](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience)直接授予应用程序权限。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | "AppRoleAssignment"、"全部"、"全部"、"Directory.accessasuser.all"、"全部"、"全部"、"directory"  |
+|委派（工作或学校帐户） | "Application"、"all"、"Directory.accessasuser.all"、"全部"、"全部"、"全部"、"全部"、"所有"  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | "AppRoleAssignment"、"全部"、"全部"、"全部"、"全部"、"目录" |
+|应用程序 | "Application"、"all"、"全部"、"所有"、"所有"、"所有" |
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: b280102d8b58e42fd5250c7a87ec8b1d60530580
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: fb812dce8fdb9756be161c0b2e9998c21da12667
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290600"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345994"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -147,8 +147,8 @@ ms.locfileid: "44290600"
 |preferredLanguage|String|Office 365 组的首选语言。 应遵循 ISO 639-1 代码；例如“en-US”。 <br><br>默认情况下返回。 |
 |proxyAddresses|String 集合| 指向同一组邮箱的组的电子邮件地址。 例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。 需要多值属性筛选器表达式的 **any** 运算符。 <br><br>默认情况下返回。 只读。 不可为 null。 支持 $filter。 |
 |renewedDateTime|DateTimeOffset| 组的上次续订时间戳。 值不能直接修改，只能通过[续订服务操作](../api/grouplifecyclepolicy-renewgroup.md)进行更新。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。|
-|resourceBehaviorOptions|String collection|指定可以在创建期间为 Office 365 组设置的组行为。 可设置为只为创建的一部分（POST）。 可取值为：`AllowOnlyMembersToPost`、`HideGroupInOutlook`、`SubscribeNewGroupMembers`、`WelcomeEmailDisabled`。  在此主题的后面提供更多详细信息。|
-|resourceProvisioningOptions|字符串集合|指定预配为 Office 365 组创建的一部分，但是通常不是默认组创建组成的组资源。 可能的值是 `Team`。 在此主题的后面提供更多详细信息。|
+|resourceBehaviorOptions|String collection|指定可以在创建期间为 Office 365 组设置的组行为。 可设置为只为创建的一部分（POST）。 可取值为：`AllowOnlyMembersToPost`、`HideGroupInOutlook`、`SubscribeNewGroupMembers`、`WelcomeEmailDisabled`。 有关详细信息，请参阅[Set Microsoft 365 group 行为和预配选项](/graph/group-set-options)。|
+|resourceProvisioningOptions|字符串集合|指定预配为 Office 365 组创建的一部分，但是通常不是默认组创建组成的组资源。 可能的值是 `Team`。 有关详细信息，请参阅[Set Microsoft 365 group 行为和预配选项](/graph/group-set-options)。|
 |securityEnabled|布尔|指定是否为安全组。 <br><br>默认情况下返回。 支持 `$filter`。|
 |securityIdentifier|字符串|组的安全标识符，用于 Windows 方案。 <br><br>默认情况下返回。|
 |theme|String|指定 Office 365 组的颜色主题。 可能的值为：`Teal`、`Purple`、`Green`、`Blue`、`Pink`、`Orange` 或 `Red`。 <br><br>默认情况下返回。 |
@@ -167,24 +167,6 @@ ms.locfileid: "44290600"
 | 私人 | 需要所有者许可才能加入组。<br>非成员无法查看组的内容。|
 | Hiddenmembership | 需要所有者许可才能加入组。<br>非成员无法查看组的内容。<br>非成员无法查看组的成员。<br>管理员（全局、公司、用户和支持人员）可以查看组的成员资格。<br>该组显示在全局通讯簿 (GAL) 中。|
 
-### <a name="provisioning-and-configuring-groups"></a>预配和配置组
-
-可以使用 **resourceBehaviorOptions** 和 **resourceProvisioningOptions ** 属性进一步配置组。
-
-**resourceBehaviorOptions** 是指定为某个 Office 365 组所设定组行为的字符串集合。 可设置为只为创建的一部分（POST）：
-
-| resourceBehaviorOptions   |说明|如果未设置，则为默认值|
-|:---------------|:--------|:-----------|
-| AllowOnlyMembersToPost|只有组*成员*可以向组发布对话。|组织中的任何用户都可以向组发布对话。|
-| HideGroupInOutlook|此组将在 Outlook 体验中隐藏。|所有组将在 Outlook 体验中可见和可发现。|
-| SubscribeNewGroupMembers|成员可以订阅接收组对话。 |组成员不接收组对话。|
-| WelcomeEmailDisabled|加入组时，会将欢迎电子邮件发送到新成员。|欢迎电子邮件不会发送给新成员。|
-
-**resourceProvisioningOptions** 是字符串集合，其指定预配为 Office 365 组创建的一部分，但是通常不是默认组创建组成的组资源。
-
-| resourceProvisioningOptions   |说明| 如果未设置，则为默认值 |
-|:---------------|:--------|:------------|
-| Teams|将此组预配为团队。 此外，可通过 PATCH 操作将此属性添加到 **resourceProvisioningOptions** 字符串集合，以将现有的 Office 365 组转换为团队。| 此组是没有 Teams 功能的常规 Office 365 组。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
@@ -199,8 +181,8 @@ ms.locfileid: "44290600"
 |endpoints|[Endpoint](endpoint.md) 集合| 组的终结点。 此为只读属性。 可为空。|
 |events|[event](event.md) 集合|组事件。|
 |extensions|[扩展](extension.md)集合|为组定义的开放扩展集合。只读。可为 NULL。|
-|groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合|此组的生命周期策略集合。 此为只读属性。 可为空。|
-|memberOf|[directoryObject](directoryobject.md) collection|此组所属的组和管理单元。 HTTP 方法：GET（支持所有组） 此为只读属性。 可为 Null。|
+|groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合|此组的生命周期策略集合。 只读。 可为 NULL。|
+|memberOf|[directoryObject](directoryobject.md) 集合|此组所属的组和管理单元。 HTTP 方法：GET（支持所有组） 此为只读属性。 可为 Null。|
 |members|[directoryObject](directoryobject.md) collection| 属于此组成员的用户、联系人和组。 HTTP 方法：GET（支持所有组）、POST（支持安全组和启用邮件的安全组）、DELETE（仅支持安全组）。只读。 可为 NULL。|
 |membersWithLicenseErrors|[user](user.md) 集合|在该基于组的许可证分配中存在许可证错误的组成员列表。 只读。|
 |onenote|[onenote](onenote.md)| 只读。|

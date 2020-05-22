@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4b3565e88e229c1909e189ea9eee9ce53d257066
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: b34e571112235e8d0f099f3ff7e69a1fa2180aa3
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290719"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345812"
 ---
 # <a name="remove-an-app-from-your-organizations-app-catalog"></a>从组织的应用程序目录中删除应用程序
 
@@ -30,7 +30,7 @@ ms.locfileid: "44290719"
 |:----------------------------------     |:-------------|
 | 委派（工作或学校帐户）     | AppCatalog、所有的目录读写。 |
 | 委派（个人 Microsoft 帐户） | 不支持|
-| 应用程序                            | AppCatalog 的所有子目录。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

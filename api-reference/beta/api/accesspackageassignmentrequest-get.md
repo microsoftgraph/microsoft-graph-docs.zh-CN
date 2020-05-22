@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 285badec81e03f4dc71b3fcf479152a7ae39f484
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: da26d23027cd77e986a40c66cb6e7acbdff08ef8
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448436"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345658"
 ---
 # <a name="get-accesspackageassignmentrequest"></a>获取 accessPackageAssignmentRequest
 
@@ -26,7 +26,7 @@ ms.locfileid: "42448436"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All  |
+| 委派（工作或学校帐户）     | EntitlementManagement、EntitlementManagement 和所有  |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -40,13 +40,13 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{i
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要检索请求的访问包，请在查询`$expand=accessPackage`中包含。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要检索请求的访问包，请 `$expand=accessPackage` 在查询中包含。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -54,7 +54,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{i
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象。
 
 ## <a name="examples"></a>示例
 

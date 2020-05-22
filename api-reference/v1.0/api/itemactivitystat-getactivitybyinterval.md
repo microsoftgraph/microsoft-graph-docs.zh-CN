@@ -6,12 +6,12 @@ description: 获取在指定时间间隔内发生在此资源上的活动的 ite
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 42329601112ae052030a5d9e48e7cfd2d48f3dcf
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: f39fdcb00b367bed4044bad521b658c897fdc016
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124866"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345707"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>按间隔获取项目活动统计
 
@@ -39,7 +39,7 @@ ms.locfileid: "43124866"
 
 ```http
 GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='2017-01-01',endDateTime='2017-01-10',interval='day')
-GET /sites/{site-id}/getActivitiesByInterval(startDateTime='2016',endDateTime='2017',interval='month')
+GET /sites/{site-id}/getActivitiesByInterval(startDateTime='2016-01-01',endDateTime='2017-05-20',interval='month')
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(startDateTime='2017-05-01',interval='week')
 ```
 
@@ -66,7 +66,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 ## <a name="response"></a>响应 
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[itemActivityStats][]对象集合。 
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[itemActivityStats][]对象集合。 
 
 ## <a name="example"></a>示例
 

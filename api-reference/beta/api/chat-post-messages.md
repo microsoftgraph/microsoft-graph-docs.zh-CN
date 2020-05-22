@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 917b5ec5ac140079f30f6c03db485de849d6b56b
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 90a79aabab8faafa1b44f83981a6e0814c6b2db4
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44287512"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345665"
 ---
 # <a name="create-chatmessage"></a>创建了 chatmessage
 
@@ -28,7 +28,7 @@ ms.locfileid: "44287512"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 了 chatmessage、聊天室 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 所有读写。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

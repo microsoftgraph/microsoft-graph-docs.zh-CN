@@ -1,16 +1,16 @@
 ---
 title: 创建订阅
-description: 订阅侦听器应用程序，以在 Microsoft Graph 资源的数据发生更改时接收通知。
+description: 订阅侦听器应用程序，以便在 Microsoft Graph 资源上的数据发生更改时接收更改通知。
 localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: fb14da71db128d3180555d47405e0be0148118ab
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: 6ea433e6e8eb348f770fd691f16397ddea001301
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543343"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345952"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -18,11 +18,11 @@ ms.locfileid: "43543343"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-订阅侦听器应用程序，以在 Microsoft Graph 中指定资源发生的更改属于请求的更改类型时接收通知。
+订阅侦听器应用程序，以便在 Microsoft Graph 中的指定资源发生所请求的更改类型时接收更改通知。
 
 ## <a name="permissions"></a>权限
 
-创建订阅需要对资源具有读取权限。 例如，若要获取有关邮件的通知，您的应用程序需要具有邮件读取权限。 
+创建订阅需要对资源具有读取权限。 例如，若要获取邮件的更改通知，您的应用程序需要具有邮件读取权限。 
  
  根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,13 +48,13 @@ ms.locfileid: "43543343"
 
 **了 chatmessage**订阅需要[加密](/graph/webhooks-with-resource-data)。 如果未指定[encryptionCertificate](../resources/subscription.md) ，则订阅创建将失败。 在创建**了 chatmessage**订阅之前，您必须请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。 
 
-> **注意：** `/teams/allMessages`和`/chats/allMessages`当前处于预览阶段。 在预览过程中，可以在不付费的情况下使用此 API，这取决于[Microsoft Api 使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context)。 但是，使用 API 的应用程序的用户可能需要订阅特定 Microsoft 365 产品。 在正式发行时，Microsoft 可能会要求您或您的客户根据通过 API 访问的数据量支付额外费用。
+> **注意：** `/teams/allMessages`，并且 `/chats/allMessages` 当前处于预览阶段。 在预览过程中，可以在不付费的情况下使用此 API，这取决于[Microsoft Api 使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context)。 但是，使用 API 的应用程序的用户可能需要订阅特定 Microsoft 365 产品。 在正式发行时，Microsoft 可能会要求您或您的客户根据通过 API 访问的数据量支付额外费用。
 
 ### <a name="driveitem-onedrive"></a>driveItem （OneDrive）
 
 对 OneDrive 项目的订阅适用其他限制。 这些限制适用于创建和管理（获取、更新和删除）订阅。
 
-在个人 OneDrive 上，可订阅根文件夹或该驱动器中的任何子文件夹。 在 OneDrive for Business 上，只可以订阅根文件夹。 对订阅的文件夹或者其层次结构中的任何文件、文件夹或其他 **driveItem** 实例所做更改属于请求的更改类型时，发送通知。 无法订阅不是文件夹的“**驱动器**”或“**driveItem**”实例，例如单个文件。
+在个人 OneDrive 上，可订阅根文件夹或该驱动器中的任何子文件夹。 在 OneDrive for Business 上，只可以订阅根文件夹。 将为订阅的文件夹中的所请求类型的更改发送更改通知，或在其层次结构中的任何文件、文件夹或其他**driveItem**实例上发送更改通知。 无法订阅不是文件夹的“**驱动器**”或“**driveItem**”实例，例如单个文件。
 
 ### <a name="contact-event-and-message-outlook"></a>联系人、事件和邮件（Outlook）
 
@@ -82,7 +82,7 @@ POST /subscriptions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[订阅](../resources/subscription.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[订阅](../resources/subscription.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -91,7 +91,7 @@ POST /subscriptions
 在请求正文中，提供 [subscription](../resources/subscription.md) 对象的 JSON 表示形式。
 `clientState` 和 `latestSupportedTlsVersion` 是可选字段。
 
-此请求创建一个订阅，用于通知当前登录用户接收到的新邮件。
+此请求创建订阅，以获取当前登录用户接收到的新邮件的更改通知。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

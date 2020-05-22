@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 670ceca3cfa39b5fe337ce3bf5b4bfb05e2a84be
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 4bb21f514bf2d076e130580e719ee315a4cb9ec5
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44288597"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345226"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>答复频道中的邮件
 
@@ -29,7 +29,7 @@ ms.locfileid: "44288597"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | ChannelMessage、Group、Group 写。 All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

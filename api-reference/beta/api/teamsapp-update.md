@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e56173d69af1499f7ca49d81d9262487f2c880c2
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 79938562c1290fa9c4924aea87c1b643ef1a10e1
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290698"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345728"
 ---
 # <a name="update-apps-published-to-your-organizations-app-catalog"></a>更新发布到组织的应用程序目录的应用程序
 
@@ -32,7 +32,7 @@ ms.locfileid: "44290698"
 |:----------------------------------     |:-------------|
 | 委派（工作或学校帐户）     | AppCatalog、所有的目录读写。 |
 | 委派（个人 Microsoft 帐户） | 不支持|
-| 应用程序                            | AppCatalog、所有的目录读写。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8b429132eb1f3113584d26ef5bf021ff7761c612
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1459b175bbc7e027104c91ca74493324d1098ff7
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448478"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345203"
 ---
 # <a name="list-accesspackageassignments"></a>列出 accessPackageAssignments
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ ms.locfileid: "42448478"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     |  EntitlementManagement.ReadWrite.All |
+| 委派（工作或学校帐户）     | EntitlementManagement、EntitlementManagement 和所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要同时返回目标用户和访问包，请包括`$expand=target,accessPackage`。 若要仅检索已传递的工作分配，可以`$filter=assignmentState eq 'Delivered'`包含查询。 若要仅检索特定用户的工作分配，可以包含一个查询，该查询具有针对该用户`$expand=target&$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'`的对象 ID 的工作分配。  若要仅检索特定用户和特定访问包的工作分配，可以包含具有针对该用户`$expand=accessPackage,target&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea' and target/objectid eq '7deff43e-1f17-44ef-9e5f-d516b0ba11d4'`的访问包和对象 ID 的工作分配的查询。
+此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要同时返回目标用户和访问包，请包括 `$expand=target,accessPackage` 。 若要仅检索已传递的工作分配，可以包含查询 `$filter=assignmentState eq 'Delivered'` 。 若要仅检索特定用户的工作分配，可以包含一个查询，该查询具有针对该用户的对象 ID 的工作分配 `$expand=target&$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` 。  若要仅检索特定用户和特定访问包的工作分配，可以包含具有针对该用户的访问包和对象 ID 的工作分配的查询 `$expand=accessPackage,target&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea' and target/objectid eq '7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` 。
 
 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
@@ -56,7 +56,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[accessPackageAssignment](../resources/accesspackageassignment.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[accessPackageAssignment](../resources/accesspackageassignment.md)对象集合。
 
 ## <a name="examples"></a>示例
 

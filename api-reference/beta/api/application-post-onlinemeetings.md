@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f0d6f7ff7b5fb7d6259f5154f9d021823995cb67
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: cef3822e418b822c74293fbff9c0def9a7104c63
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289290"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345168"
 ---
 # <a name="create-onlinemeeting"></a>创建 onlineMeeting
 
@@ -61,9 +61,6 @@ POST /me/onlineMeetings
 ### <a name="example-1-create-an-online-meeting-with-application-token"></a>示例 1：使用应用程序令牌创建联机会议
 
 #### <a name="request"></a>请求
-
-> [!Note]
-> 使用应用程序令牌创建联机会议已弃用，并将于 2020 年 7 月删除支持。 今后，将 /me 路径与用户令牌结合使用来创建联机会议。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

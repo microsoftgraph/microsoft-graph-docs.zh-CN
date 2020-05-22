@@ -5,22 +5,22 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 9074a1599c3121d4d93b7a60cead1db1d1289290
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7229b10b0cd7173c3adb9e51b0d3f9fe8790c9a9
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453098"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345938"
 ---
 # <a name="update-subscription"></a>更新订阅
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 通过延长到期时间续订订阅。
 
-订阅将在因资源类型而异的一段时间后过期。 为了避免丢失通知，应用应在到期日期前提前续订其订阅。 有关每种资源类型的最大订阅长度，请参阅[订阅](../resources/subscription.md)。
+订阅将在因资源类型而异的一段时间后过期。 为了避免丢失更改通知，应用应在到期日期前提前续订其订阅。 有关每种资源类型的最大订阅长度，请参阅[订阅](../resources/subscription.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -35,14 +35,14 @@ ms.locfileid: "42453098"
 |[事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[组](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
 |[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
-|[list](../resources/list.md) | Sites.ReadWrite.All | 不支持 | Sites.ReadWrite.All |
+|[列表](../resources/list.md) | Sites.ReadWrite.All | 不支持 | Sites.ReadWrite.All |
 |[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **注意：** 订阅 OneDrive 和 Outlook 项还有其他限制。 这些限制适用于订阅的创建和管理（获取、更新和删除订阅）。
 
-- 在个人 OneDrive 上，可订阅根文件夹或该驱动器中的任何子文件夹。 在 OneDrive for Business 上，只可以订阅根文件夹。 对订阅的文件夹或者其层次结构中的任何文件、文件夹或其他 driveItem 对象所做更改属于请求的更改类型时，会发送通知。 无法订阅不是文件夹的“**驱动器**”或“**driveItem**”实例，例如单个文件。
+- 在个人 OneDrive 上，可订阅根文件夹或该驱动器中的任何子文件夹。 在 OneDrive for Business 上，只可以订阅根文件夹。 将为订阅的文件夹中的所请求类型的更改发送更改通知，或在其层次结构中的任何文件、文件夹或其他 driveItem 对象上发送更改通知。 无法订阅不是文件夹的“**驱动器**”或“**driveItem**”实例，例如单个文件。
 
 - 在 Outlook 中，委托的权限仅支持订阅已登录用户的邮箱内文件夹中的项。 也就是说，不能使用委托的权限 Calendars.Read 来订阅另一个用户邮箱中的事件。
 - 订阅_共享或委托_文件夹中 Outlook 联系人、事件或邮件的更改通知：

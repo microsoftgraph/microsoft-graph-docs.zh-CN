@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d2dbbc77cdd6ca5fad9afcf975388a678ac1c7a1
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 846e789c4177f07996e4776256dc06cd5e9a24e4
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290319"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345670"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>列出 Microsoft 团队应用程序目录中已发布的应用程序
 
@@ -19,7 +19,7 @@ ms.locfileid: "44290319"
 列出 Microsoft 团队应用程序目录中的[应用程序](../resources/teamsapp.md)。
 这包括 Microsoft 团队存储区中的应用程序，以及组织的应用程序目录（租户应用程序目录）中的应用程序。 若要仅从组织的应用程序目录中获取应用程序，请 `Organization` 在[teamsCatalogApp](../resources/teamsapp.md)资源中将其指定为**distributionMethod** 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "44290319"
 |:---------------------------------------|:------------------------------------|
 | 委派（工作或学校帐户）     | AppCatalog、AppCatalog、所有的、所有读写的。 all |
 | 委派（个人 Microsoft 帐户） | 不支持                       |
-| 应用程序                            | AppCatalog、AppCatalog、所有的、所有读写的。 all |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

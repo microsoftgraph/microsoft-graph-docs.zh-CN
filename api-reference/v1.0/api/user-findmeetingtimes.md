@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b17dc772f1310acc97b02453aef181f0f8212124
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: a9af08afdce0b617e0745091a78b8a8a4c228e8f
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43718589"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345686"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
@@ -153,7 +153,7 @@ Content-Type: application/json
   },  
   "timeConstraint": {
     "activityDomain":"work", 
-    "timeslots": [ 
+    "timeSlots": [ 
       { 
         "start": { 
           "dateTime": "2019-04-16T09:00:00",  
