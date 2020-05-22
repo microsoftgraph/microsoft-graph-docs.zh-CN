@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 0fc6bfd588c90e3427331df475d9fd1c554e8fde
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 483f402e20e9f51a22172fc1292b7a49fd1cab84
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402779"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44338912"
 ---
 ```java
 
@@ -16,7 +16,7 @@ String comment = "comment-value";
 boolean sendResponse = true;
 
 graphClient.me().events("{id}")
-    .tentativelyAccept(sendResponse,comment)
+    .tentativelyAccept(null,sendResponse,comment)
     .buildRequest()
     .post();
 

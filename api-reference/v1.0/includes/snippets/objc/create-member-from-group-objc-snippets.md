@@ -1,26 +1,26 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 911d90fc936dee0f959befd9a966402c41f474ec
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
-ms.translationtype: HT
+ms.openlocfilehash: 5964b600657c92ef9142f1aab6fc22c12873a6a5
+ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35890075"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44338876"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/groups/{id}/members/$ref"]]];
-[urlRequest setHTTPMethod:@"POST"];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/groups/{id}"]]];
+[urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphDirectoryObject *directoryObject = [[MSGraphDirectoryObject alloc] init];
+MSGraphGroup *group = [[MSGraphGroup alloc] init];
 
 NSError *error;
-NSData *directoryObjectData = [directoryObject getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:directoryObjectData];
+NSData *groupData = [group getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:groupData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
