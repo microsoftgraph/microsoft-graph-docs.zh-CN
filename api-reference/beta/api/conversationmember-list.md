@@ -26,9 +26,9 @@ ms.locfileid: "44288513"
 
 |权限类型|权限（从最低特权到最高特权）|
 |---------|-------------|
-|委派（工作或学校帐户）| User.readbasic.all、聊天、聊天和读写 |
+|委派（工作或学校帐户）| Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application| User.readbasic.all、聊天室、全部聊天写。所有 |
+|Application| Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。

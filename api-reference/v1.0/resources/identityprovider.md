@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6b59e5d703e9f10de43e87703ba853e13c69d74a
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 1fe32bcc519e697198281376ba433a8754a660ab
+ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200269"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44215778"
 ---
 # <a name="identityprovider-resource-type"></a>identityProvider 资源类型
 
@@ -43,7 +43,7 @@ ms.locfileid: "43200269"
 |clientSecret|字符串|是|否|应用程序的客户端密码。 这是向标识提供程序注册应用程序时获取的客户端密码。 这是只读的。 读取操作将返回“\*\*\*\*”。|
 |id|字符串|否|否|标识提供程序的 ID。|
 |name|字符串|否|否|标识提供程序的显示名称。|
-|type|字符串|是|否|标识提供程序类型。 它必须是 B2C 方案的下列值之一： <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>领英<li/>Facebook<li/>GitHub<li/>Twitter<li/>微博<li/>QQ<li/>微信</ul>在 B2B 方案中，该值必须是 Google。|
+|type|字符串|是|否|标识提供程序类型。 它必须是 B2C 方案的下列值之一： <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>领英<li/>Facebook<li/>GitHub<li/>Twitter<li/>微博<li/>QQ<li/>微信</ul>在 B2B 方案中，该值必须是 Google 或 Facebook。|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>获取客户端 ID 和密码的位置
 

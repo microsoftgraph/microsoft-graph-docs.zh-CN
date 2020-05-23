@@ -8,17 +8,19 @@ metadata:
   author: jasonjoh
   ms.author: jasonjoh
   ms.date: 04/02/2020
-  ms.openlocfilehash: a02571c994da147cc11d0c0c9d0d45c2a08d3227
-  ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+  ms.openlocfilehash: 046b7948d9ea76876b9811fbc131794fead8d344
+  ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/22/2020
-  ms.locfileid: "43805333"
+  ms.lasthandoff: 05/22/2020
+  ms.locfileid: "44345161"
 landingContent:
 - title: 构建您的第一个服务器端应用程序
   linkLists:
   - linkListType: get-started
     links:
+    - text: ASP.NET 核心
+      url: /graph/tutorials/aspnet-core
     - text: ASP.NET
       url: /learn/modules/msgraph-build-aspnetmvc-apps
     - text: Node.js

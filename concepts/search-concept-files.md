@@ -4,12 +4,12 @@ description: 您可以使用 Microsoft 搜索 API 搜索存储在 SharePoint 或
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: a75eb8e90c8656ced3d9f50d6526b5ebe48584aa
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 7a7e5c92f3ffe9399732d6454d3e06d2013f8768
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892672"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345840"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-files"></a>在 Microsoft Graph 中使用 Microsoft Search API 搜索文件
 
@@ -22,7 +22,7 @@ ms.locfileid: "42892672"
 您可以在 SharePoint 和 OneDrive 查询的搜索词中使用 KQL。 例如：
 
 - `"query": "contoso filetype:docx OR filetype:doc"`将查询范围限定为 Word 文档。
-- `"query": "test path:\\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""`将查询范围限定为网站中的特定文件夹。
+- `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""`将查询范围限定为网站中的特定文件夹。
 
 属性限制必须在条件中指定有效且可查询的托管属性名称，这样才能有效。
 
