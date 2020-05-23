@@ -5,111 +5,111 @@ localization_priority: Priority
 doc_type: apiPageType
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: f04fb42dfc4b85690b0a128ac06d15554f3f4957
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 52feda55dd3f5d6a56b785088cacee255be27678
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438521"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44287421"
 ---
-# <a name="chatmessages-delta"></a><span data-ttu-id="b9385-104">chatMessages：delta</span><span class="sxs-lookup"><span data-stu-id="b9385-104">chatMessages: delta</span></span>
+# <a name="chatmessages-delta"></a><span data-ttu-id="4444b-104">chatMessages：delta</span><span class="sxs-lookup"><span data-stu-id="4444b-104">chatMessages: delta</span></span>
 
-<span data-ttu-id="b9385-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b9385-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4444b-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4444b-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b9385-106">检索[团队](../resources/team.md)[频道](../resources/channel.md)中的[消息](../resources/chatmessage.md)列表（无回复）。</span><span class="sxs-lookup"><span data-stu-id="b9385-106">Retrieve the list of [messages](../resources/chatmessage.md) (without the replies) in a [channel](../resources/channel.md) of a [team](../resources/team.md).</span></span> <span data-ttu-id="b9385-107">通过使用增量查询，可以获取频道中新的或更新的消息。</span><span class="sxs-lookup"><span data-stu-id="b9385-107">By using delta query, you can get new or updated messages in a channel.</span></span>
+<span data-ttu-id="4444b-106">检索[团队](../resources/team.md)[频道](../resources/channel.md)中的[消息](../resources/chatmessage.md)列表（无回复）。</span><span class="sxs-lookup"><span data-stu-id="4444b-106">Retrieve the list of [messages](../resources/chatmessage.md) (without the replies) in a [channel](../resources/channel.md) of a [team](../resources/team.md).</span></span> <span data-ttu-id="4444b-107">通过使用增量查询，可以获取频道中新的或更新的消息。</span><span class="sxs-lookup"><span data-stu-id="4444b-107">By using delta query, you can get new or updated messages in a channel.</span></span>
 
-> <span data-ttu-id="b9385-108">**请注意：** 增量查询将仅返回过去 8 个月内的邮件。</span><span class="sxs-lookup"><span data-stu-id="b9385-108">**Note:** Delta will only return messages within the last eight months.</span></span> <span data-ttu-id="b9385-109">要检索时间更早的邮件，可使用 [GET /teams/{id}/channels/{id}/messages](channel-list-messages.md)。</span><span class="sxs-lookup"><span data-stu-id="b9385-109">You can use [GET /teams/{id}/channels/{id}/messages](channel-list-messages.md) to retrieve older messages.</span></span>
+> <span data-ttu-id="4444b-108">**请注意：** 增量查询将仅返回过去 8 个月内的邮件。</span><span class="sxs-lookup"><span data-stu-id="4444b-108">**Note:** Delta will only return messages within the last eight months.</span></span> <span data-ttu-id="4444b-109">要检索时间更早的邮件，可使用 [GET /teams/{id}/channels/{id}/messages](channel-list-messages.md)。</span><span class="sxs-lookup"><span data-stu-id="4444b-109">You can use [GET /teams/{id}/channels/{id}/messages](channel-list-messages.md) to retrieve older messages.</span></span>
 
-<span data-ttu-id="b9385-110">增量查询既支持可检索指定频道中的所有消息的完全同步，也支持可检索自上次同步后频道中添加或发生变化的消息的增量同步。</span><span class="sxs-lookup"><span data-stu-id="b9385-110">Delta query supports both full synchronization that retrieves all the messages in the specified channel, and incremental synchronization that retrieves those messages that have been added or changed in the channel since the last synchronization.</span></span> <span data-ttu-id="b9385-111">通常情况下，开始时会执行一次完全同步，随后会定期获取相应日历视图的增量更改。</span><span class="sxs-lookup"><span data-stu-id="b9385-111">Typically, you would do an initial full synchronization, and then get incremental changes to that calendar view periodically.</span></span>
+<span data-ttu-id="4444b-110">增量查询既支持可检索指定频道中的所有消息的完全同步，也支持可检索自上次同步后频道中添加或发生变化的消息的增量同步。</span><span class="sxs-lookup"><span data-stu-id="4444b-110">Delta query supports both full synchronization that retrieves all the messages in the specified channel, and incremental synchronization that retrieves those messages that have been added or changed in the channel since the last synchronization.</span></span> <span data-ttu-id="4444b-111">通常情况下，开始时会执行一次完全同步，随后会定期获取相应日历视图的增量更改。</span><span class="sxs-lookup"><span data-stu-id="4444b-111">Typically, you would do an initial full synchronization, and then get incremental changes to that calendar view periodically.</span></span>
 
-<span data-ttu-id="b9385-112">若要获取消息的回复，请使用[列出消息回复](channel-get-messagereply.md)或[获取消息回复](channel-list-messagereplies.md)操作。</span><span class="sxs-lookup"><span data-stu-id="b9385-112">To get the replies for a message, use the [list message replies](channel-get-messagereply.md) or the [get message reply](channel-list-messagereplies.md) operation.</span></span>
+<span data-ttu-id="4444b-112">若要获取消息的回复，请使用[列出消息回复](channel-get-messagereply.md)或[获取消息回复](channel-list-messagereplies.md)操作。</span><span class="sxs-lookup"><span data-stu-id="4444b-112">To get the replies for a message, use the [list message replies](channel-get-messagereply.md) or the [get message reply](channel-list-messagereplies.md) operation.</span></span>
 
-<span data-ttu-id="b9385-113">使用 delta 函数的 GET 请求返回以下任一内容：</span><span class="sxs-lookup"><span data-stu-id="b9385-113">A GET request with the delta function returns either:</span></span>
+<span data-ttu-id="4444b-113">使用 delta 函数的 GET 请求返回以下任一内容：</span><span class="sxs-lookup"><span data-stu-id="4444b-113">A GET request with the delta function returns either:</span></span>
 
-- <span data-ttu-id="b9385-114">`nextLink`（包含具有 **delta** 函数调用和 `skipToken` 的 URL），或</span><span class="sxs-lookup"><span data-stu-id="b9385-114">A `nextLink` (that contains a URL with a **delta** function call and a `skipToken`), or</span></span>
-- <span data-ttu-id="b9385-115">`deltaLink`（包含具有 **delta** 函数调用和 `deltaToken` 的 URL）。</span><span class="sxs-lookup"><span data-stu-id="b9385-115">A `deltaLink` (that contains a URL with a **delta** function call and `deltaToken`).</span></span>
+- <span data-ttu-id="4444b-114">`nextLink`（包含具有 **delta** 函数调用和 `skipToken` 的 URL），或</span><span class="sxs-lookup"><span data-stu-id="4444b-114">A `nextLink` (that contains a URL with a **delta** function call and a `skipToken`), or</span></span>
+- <span data-ttu-id="4444b-115">`deltaLink`（包含具有 **delta** 函数调用和 `deltaToken` 的 URL）。</span><span class="sxs-lookup"><span data-stu-id="4444b-115">A `deltaLink` (that contains a URL with a **delta** function call and `deltaToken`).</span></span>
 
-<span data-ttu-id="b9385-116">状态令牌对客户端完全不透明。</span><span class="sxs-lookup"><span data-stu-id="b9385-116">State tokens are completely opaque to the client.</span></span> <span data-ttu-id="b9385-117">若要继续一轮事件更改跟踪，只需将最后一个 GET 请求返回的 `nextLink` 或 `deltaLink` URL 复制并应用到同一日历视图的下一个 delta 函数调用即可。</span><span class="sxs-lookup"><span data-stu-id="b9385-117">To proceed with a round of change tracking, simply copy and apply the `nextLink` or `deltaLink` URL returned from the last GET request to the next delta function call for that same calendar view.</span></span> <span data-ttu-id="b9385-118">响应中返回的 `deltaLink` 表示当前一轮更改跟踪已完成。</span><span class="sxs-lookup"><span data-stu-id="b9385-118">A `deltaLink` returned in a response signifies that the current round of change tracking is complete.</span></span> <span data-ttu-id="b9385-119">可以保存 `deltaLink` URL，并在开始下一轮时使用。</span><span class="sxs-lookup"><span data-stu-id="b9385-119">You can save and use the `deltaLink` URL when you begin the next round.</span></span>
+<span data-ttu-id="4444b-116">状态令牌对客户端完全不透明。</span><span class="sxs-lookup"><span data-stu-id="4444b-116">State tokens are completely opaque to the client.</span></span> <span data-ttu-id="4444b-117">若要继续一轮事件更改跟踪，只需将最后一个 GET 请求返回的 `nextLink` 或 `deltaLink` URL 复制并应用到同一日历视图的下一个 delta 函数调用即可。</span><span class="sxs-lookup"><span data-stu-id="4444b-117">To proceed with a round of change tracking, simply copy and apply the `nextLink` or `deltaLink` URL returned from the last GET request to the next delta function call for that same calendar view.</span></span> <span data-ttu-id="4444b-118">响应中返回的 `deltaLink` 表示当前一轮更改跟踪已完成。</span><span class="sxs-lookup"><span data-stu-id="4444b-118">A `deltaLink` returned in a response signifies that the current round of change tracking is complete.</span></span> <span data-ttu-id="4444b-119">可以保存 `deltaLink` URL，并在开始下一轮时使用。</span><span class="sxs-lookup"><span data-stu-id="4444b-119">You can save and use the `deltaLink` URL when you begin the next round.</span></span>
 
-<span data-ttu-id="b9385-120">有关详细信息，请参阅[增量查询](/graph/delta-query-overview.md)文档。</span><span class="sxs-lookup"><span data-stu-id="b9385-120">For more information, see the [delta query](/graph/delta-query-overview.md) documentation.</span></span>
+<span data-ttu-id="4444b-120">有关详细信息，请参阅[增量查询](/graph/delta-query-overview.md)文档。</span><span class="sxs-lookup"><span data-stu-id="4444b-120">For more information, see the [delta query](/graph/delta-query-overview.md) documentation.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b9385-121">权限</span><span class="sxs-lookup"><span data-stu-id="b9385-121">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4444b-121">权限</span><span class="sxs-lookup"><span data-stu-id="4444b-121">Permissions</span></span>
 
-<span data-ttu-id="b9385-p106">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="b9385-p106">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).</span></span>
+<span data-ttu-id="4444b-p106">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="4444b-p106">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="b9385-124">权限类型</span><span class="sxs-lookup"><span data-stu-id="b9385-124">Permission Type</span></span>                        |<span data-ttu-id="b9385-125">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b9385-125">Permissions (from least to most privileged)</span></span>  |
+|<span data-ttu-id="4444b-124">权限类型</span><span class="sxs-lookup"><span data-stu-id="4444b-124">Permission Type</span></span>                        |<span data-ttu-id="4444b-125">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4444b-125">Permissions (from least to most privileged)</span></span>  |
 |---------------------------------------|---------------------------------------------|
-|<span data-ttu-id="b9385-126">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b9385-126">Delegated (work or school account)</span></span>     |<span data-ttu-id="b9385-127">ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b9385-127">ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span></span>          |
-|<span data-ttu-id="b9385-128">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b9385-128">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="b9385-129">不支持</span><span class="sxs-lookup"><span data-stu-id="b9385-129">Not Supported</span></span>                                |
-|<span data-ttu-id="b9385-130">应用程序</span><span class="sxs-lookup"><span data-stu-id="b9385-130">Application</span></span>                            |<span data-ttu-id="b9385-131">ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b9385-131">ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span></span>          |
+|<span data-ttu-id="4444b-126">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4444b-126">Delegated (work or school account)</span></span>     | <span data-ttu-id="4444b-127">ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4444b-127">ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="4444b-128">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4444b-128">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="4444b-129">不支持</span><span class="sxs-lookup"><span data-stu-id="4444b-129">Not Supported</span></span>                                |
+|<span data-ttu-id="4444b-130">Application</span><span class="sxs-lookup"><span data-stu-id="4444b-130">Application</span></span>                            | <span data-ttu-id="4444b-131">ChannelMessage.Read.Group ([RSC](https://aka.ms/teams-rsc)), ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4444b-131">ChannelMessage.Read.Group ([RSC](https://aka.ms/teams-rsc)), ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span></span> |
 
 > [!NOTE]
-> <span data-ttu-id="b9385-132">在使用应用程序权限调用此 API 之前，你必须先请求访问权限。</span><span class="sxs-lookup"><span data-stu-id="b9385-132">Before calling this API with application permissions, you must request access.</span></span> <span data-ttu-id="b9385-133">有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。</span><span class="sxs-lookup"><span data-stu-id="b9385-133">For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).</span></span>
+> <span data-ttu-id="4444b-132">在使用应用程序权限调用此 API 之前，你必须先请求访问权限。</span><span class="sxs-lookup"><span data-stu-id="4444b-132">Before calling this API with application permissions, you must request access.</span></span> <span data-ttu-id="4444b-133">有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。</span><span class="sxs-lookup"><span data-stu-id="4444b-133">For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="b9385-134">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b9385-134">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4444b-134">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4444b-134">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/messages/delta
 ```
 
-## <a name="query-parameters"></a><span data-ttu-id="b9385-135">查询参数</span><span class="sxs-lookup"><span data-stu-id="b9385-135">Query parameters</span></span>
+## <a name="query-parameters"></a><span data-ttu-id="4444b-135">查询参数</span><span class="sxs-lookup"><span data-stu-id="4444b-135">Query parameters</span></span>
 
-<span data-ttu-id="b9385-136">跟踪频道消息更改会引发一组对 **delta** 函数的一次或多次调用。</span><span class="sxs-lookup"><span data-stu-id="b9385-136">Tracking changes in channel messages incurs a round of one or more **delta** function calls.</span></span> <span data-ttu-id="b9385-137">如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。</span><span class="sxs-lookup"><span data-stu-id="b9385-137">If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request.</span></span> <span data-ttu-id="b9385-138">Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。</span><span class="sxs-lookup"><span data-stu-id="b9385-138">Microsoft Graph automatically encodes any specified parameters into the token portion of the `nextLink` or `deltaLink` URL provided in the response.</span></span>
+<span data-ttu-id="4444b-136">跟踪频道消息更改会引发一组对 **delta** 函数的一次或多次调用。</span><span class="sxs-lookup"><span data-stu-id="4444b-136">Tracking changes in channel messages incurs a round of one or more **delta** function calls.</span></span> <span data-ttu-id="4444b-137">如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。</span><span class="sxs-lookup"><span data-stu-id="4444b-137">If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request.</span></span> <span data-ttu-id="4444b-138">Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。</span><span class="sxs-lookup"><span data-stu-id="4444b-138">Microsoft Graph automatically encodes any specified parameters into the token portion of the `nextLink` or `deltaLink` URL provided in the response.</span></span>
 
-<span data-ttu-id="b9385-139">只需预先指定任何查询参数一次。</span><span class="sxs-lookup"><span data-stu-id="b9385-139">You only need to specify any query parameters once upfront.</span></span>
+<span data-ttu-id="4444b-139">只需预先指定任何查询参数一次。</span><span class="sxs-lookup"><span data-stu-id="4444b-139">You only need to specify any query parameters once upfront.</span></span>
 
-<span data-ttu-id="b9385-140">在后续请求中，可以复制并应用之前响应中返回的 `nextLink` 或 `deltaLink` URL，因为此 URL 已包含编码参数。</span><span class="sxs-lookup"><span data-stu-id="b9385-140">In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already includes the encoded parameters.</span></span>
+<span data-ttu-id="4444b-140">在后续请求中，可以复制并应用之前响应中返回的 `nextLink` 或 `deltaLink` URL，因为此 URL 已包含编码参数。</span><span class="sxs-lookup"><span data-stu-id="4444b-140">In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already includes the encoded parameters.</span></span>
 
-| <span data-ttu-id="b9385-141">查询参数</span><span class="sxs-lookup"><span data-stu-id="b9385-141">Query parameter</span></span>      | <span data-ttu-id="b9385-142">类型</span><span class="sxs-lookup"><span data-stu-id="b9385-142">Type</span></span>   |<span data-ttu-id="b9385-143">说明</span><span class="sxs-lookup"><span data-stu-id="b9385-143">Description</span></span>|
+| <span data-ttu-id="4444b-141">查询参数</span><span class="sxs-lookup"><span data-stu-id="4444b-141">Query parameter</span></span>      | <span data-ttu-id="4444b-142">类型</span><span class="sxs-lookup"><span data-stu-id="4444b-142">Type</span></span>   |<span data-ttu-id="4444b-143">说明</span><span class="sxs-lookup"><span data-stu-id="4444b-143">Description</span></span>|
 |:---------------|:--------|:----------|
-| `$deltatoken` | <span data-ttu-id="b9385-144">string</span><span class="sxs-lookup"><span data-stu-id="b9385-144">string</span></span> | <span data-ttu-id="b9385-145">之前的 **delta** 函数调用的 `deltaLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示该组更改跟踪的完成状态。</span><span class="sxs-lookup"><span data-stu-id="b9385-145">A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call, indicating the completion of that round of change tracking.</span></span> <span data-ttu-id="b9385-146">将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。</span><span class="sxs-lookup"><span data-stu-id="b9385-146">Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.</span></span>|
-| `$skiptoken` | <span data-ttu-id="b9385-147">字符串</span><span class="sxs-lookup"><span data-stu-id="b9385-147">string</span></span> | <span data-ttu-id="b9385-148">上一个 **delta** 函数调用中的 `nextLink` URL 返回的[状态令牌](/graph/delta-query-overview)，指示需要跟踪进一步的更改。</span><span class="sxs-lookup"><span data-stu-id="b9385-148">A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating that there are further changes to be tracked.</span></span> |
+| `$deltatoken` | <span data-ttu-id="4444b-144">string</span><span class="sxs-lookup"><span data-stu-id="4444b-144">string</span></span> | <span data-ttu-id="4444b-145">之前的 **delta** 函数调用的 `deltaLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示该组更改跟踪的完成状态。</span><span class="sxs-lookup"><span data-stu-id="4444b-145">A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call, indicating the completion of that round of change tracking.</span></span> <span data-ttu-id="4444b-146">将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。</span><span class="sxs-lookup"><span data-stu-id="4444b-146">Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.</span></span>|
+| `$skiptoken` | <span data-ttu-id="4444b-147">字符串</span><span class="sxs-lookup"><span data-stu-id="4444b-147">string</span></span> | <span data-ttu-id="4444b-148">上一个 **delta** 函数调用中的 `nextLink` URL 返回的[状态令牌](/graph/delta-query-overview)，指示需要跟踪进一步的更改。</span><span class="sxs-lookup"><span data-stu-id="4444b-148">A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating that there are further changes to be tracked.</span></span> |
 
-### <a name="optional-odata-query-parameters"></a><span data-ttu-id="b9385-149">OData 可选查询参数</span><span class="sxs-lookup"><span data-stu-id="b9385-149">Optional OData query parameters</span></span>
+### <a name="optional-odata-query-parameters"></a><span data-ttu-id="4444b-149">OData 可选查询参数</span><span class="sxs-lookup"><span data-stu-id="4444b-149">Optional OData query parameters</span></span>
 
-<span data-ttu-id="b9385-150">此 API 支持以下[ OData 查询参数](/graph/query-parameters)：</span><span class="sxs-lookup"><span data-stu-id="b9385-150">The following [OData query parameters](/graph/query-parameters) are supported by this API:</span></span>
-- <span data-ttu-id="b9385-151">`$top`，表示在调用中获取的最大消息数。</span><span class="sxs-lookup"><span data-stu-id="b9385-151">`$top`, represents maximum number of messages to fetch in a call.</span></span> <span data-ttu-id="b9385-152">上限为 **50**。</span><span class="sxs-lookup"><span data-stu-id="b9385-152">The upper limit is **50**.</span></span>
-- <span data-ttu-id="b9385-153">`$skip`，表示列表开头要跳过的消息数。</span><span class="sxs-lookup"><span data-stu-id="b9385-153">`$skip`, represents how many messages to skip at the beginning of the list.</span></span>
-- <span data-ttu-id="b9385-154">`$filter`，允许返回满足特定条件的消息。</span><span class="sxs-lookup"><span data-stu-id="b9385-154">`$filter` allows returning messages that meet a certain criteria.</span></span> <span data-ttu-id="b9385-155">支持筛选的唯一属性是 `lastModifiedDateTime`，且仅支持 **gt** 运算符。</span><span class="sxs-lookup"><span data-stu-id="b9385-155">The only property that supports filtering is `lastModifiedDateTime`, and only the **gt** operator is supported.</span></span> <span data-ttu-id="b9385-156">例如，`../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` 将提取指定日期时间后创建或更改的任何消息。</span><span class="sxs-lookup"><span data-stu-id="b9385-156">For example, `../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` will fetch any messages created or changed after the specified date time.</span></span>
+<span data-ttu-id="4444b-150">此 API 支持以下[ OData 查询参数](/graph/query-parameters)：</span><span class="sxs-lookup"><span data-stu-id="4444b-150">The following [OData query parameters](/graph/query-parameters) are supported by this API:</span></span>
+- <span data-ttu-id="4444b-151">`$top`，表示在调用中获取的最大消息数。</span><span class="sxs-lookup"><span data-stu-id="4444b-151">`$top`, represents maximum number of messages to fetch in a call.</span></span> <span data-ttu-id="4444b-152">上限为 **50**。</span><span class="sxs-lookup"><span data-stu-id="4444b-152">The upper limit is **50**.</span></span>
+- <span data-ttu-id="4444b-153">`$skip`，表示列表开头要跳过的消息数。</span><span class="sxs-lookup"><span data-stu-id="4444b-153">`$skip`, represents how many messages to skip at the beginning of the list.</span></span>
+- <span data-ttu-id="4444b-154">`$filter`，允许返回满足特定条件的消息。</span><span class="sxs-lookup"><span data-stu-id="4444b-154">`$filter` allows returning messages that meet a certain criteria.</span></span> <span data-ttu-id="4444b-155">支持筛选的唯一属性是 `lastModifiedDateTime`，且仅支持 **gt** 运算符。</span><span class="sxs-lookup"><span data-stu-id="4444b-155">The only property that supports filtering is `lastModifiedDateTime`, and only the **gt** operator is supported.</span></span> <span data-ttu-id="4444b-156">例如，`../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` 将提取指定日期时间后创建或更改的任何消息。</span><span class="sxs-lookup"><span data-stu-id="4444b-156">For example, `../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` will fetch any messages created or changed after the specified date time.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="b9385-157">请求头</span><span class="sxs-lookup"><span data-stu-id="b9385-157">Request headers</span></span>
-| <span data-ttu-id="b9385-158">标头</span><span class="sxs-lookup"><span data-stu-id="b9385-158">Header</span></span>        | <span data-ttu-id="b9385-159">值</span><span class="sxs-lookup"><span data-stu-id="b9385-159">Value</span></span>                     |
+## <a name="request-headers"></a><span data-ttu-id="4444b-157">请求头</span><span class="sxs-lookup"><span data-stu-id="4444b-157">Request headers</span></span>
+| <span data-ttu-id="4444b-158">标头</span><span class="sxs-lookup"><span data-stu-id="4444b-158">Header</span></span>        | <span data-ttu-id="4444b-159">值</span><span class="sxs-lookup"><span data-stu-id="4444b-159">Value</span></span>                     |
 |---------------|---------------------------|
-| <span data-ttu-id="b9385-160">Authorization</span><span class="sxs-lookup"><span data-stu-id="b9385-160">Authorization</span></span> | <span data-ttu-id="b9385-p112">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b9385-p112">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="b9385-163">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b9385-163">Content-Type</span></span>  | <span data-ttu-id="b9385-164">application/json</span><span class="sxs-lookup"><span data-stu-id="b9385-164">application/json</span></span>          |
+| <span data-ttu-id="4444b-160">Authorization</span><span class="sxs-lookup"><span data-stu-id="4444b-160">Authorization</span></span> | <span data-ttu-id="4444b-p112">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4444b-p112">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="4444b-163">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4444b-163">Content-Type</span></span>  | <span data-ttu-id="4444b-164">application/json</span><span class="sxs-lookup"><span data-stu-id="4444b-164">application/json</span></span>          |
 
-## <a name="request-body"></a><span data-ttu-id="b9385-165">请求正文</span><span class="sxs-lookup"><span data-stu-id="b9385-165">Request Body</span></span>
+## <a name="request-body"></a><span data-ttu-id="4444b-165">请求正文</span><span class="sxs-lookup"><span data-stu-id="4444b-165">Request Body</span></span>
 
-<span data-ttu-id="b9385-166">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="b9385-166">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="4444b-166">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="4444b-166">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b9385-167">响应</span><span class="sxs-lookup"><span data-stu-id="b9385-167">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4444b-167">响应</span><span class="sxs-lookup"><span data-stu-id="4444b-167">Response</span></span>
 
-<span data-ttu-id="b9385-168">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [chatMessage](../resources/chatmessage.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="b9385-168">If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body.</span></span> <span data-ttu-id="b9385-169">该响应还包括 `nextLink`URL 或 `deltaLink`URL。</span><span class="sxs-lookup"><span data-stu-id="b9385-169">The response also includes a `nextLink` URL or a `deltaLink` URL.</span></span>
+<span data-ttu-id="4444b-168">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [chatMessage](../resources/chatmessage.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="4444b-168">If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body.</span></span> <span data-ttu-id="4444b-169">该响应还包括 `nextLink`URL 或 `deltaLink`URL。</span><span class="sxs-lookup"><span data-stu-id="4444b-169">The response also includes a `nextLink` URL or a `deltaLink` URL.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="b9385-170">示例</span><span class="sxs-lookup"><span data-stu-id="b9385-170">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="4444b-170">示例</span><span class="sxs-lookup"><span data-stu-id="4444b-170">Examples</span></span>
 
-### <a name="example-1-initial-synchronization"></a><span data-ttu-id="b9385-171">示例 1：初始同步</span><span class="sxs-lookup"><span data-stu-id="b9385-171">Example 1: Initial synchronization</span></span>
+### <a name="example-1-initial-synchronization"></a><span data-ttu-id="4444b-171">示例 1：初始同步</span><span class="sxs-lookup"><span data-stu-id="4444b-171">Example 1: Initial synchronization</span></span>
 
-<span data-ttu-id="b9385-172">以下示例显示了用于同步给定频道中消息的三个请求。</span><span class="sxs-lookup"><span data-stu-id="b9385-172">The following example shows a series of three requests to synchronize the messages in the given channel.</span></span> <span data-ttu-id="b9385-173">频道中有五个消息。</span><span class="sxs-lookup"><span data-stu-id="b9385-173">There are five messages in the channel.</span></span>
+<span data-ttu-id="4444b-172">以下示例显示了用于同步给定频道中消息的三个请求。</span><span class="sxs-lookup"><span data-stu-id="4444b-172">The following example shows a series of three requests to synchronize the messages in the given channel.</span></span> <span data-ttu-id="4444b-173">频道中有五个消息。</span><span class="sxs-lookup"><span data-stu-id="4444b-173">There are five messages in the channel.</span></span>
 
-- <span data-ttu-id="b9385-174">第 1 步：[示例第一个请求](#initial-request)和[响应](#initial-request-response)。</span><span class="sxs-lookup"><span data-stu-id="b9385-174">Step 1: [sample initial request](#initial-request) and [response](#initial-request-response).</span></span>
-- <span data-ttu-id="b9385-175">第 2 步：[示例第二个请求](#second-request)和[响应](#second-request-response)</span><span class="sxs-lookup"><span data-stu-id="b9385-175">Step 2: [sample second request](#second-request) and [response](#second-request-response)</span></span>
-- <span data-ttu-id="b9385-176">第 3 步：[示例第三个请求](#third-request)和[最终响应](#third-request-response)。</span><span class="sxs-lookup"><span data-stu-id="b9385-176">Step 3: [sample third request](#third-request) and [final response](#third-request-response).</span></span>
+- <span data-ttu-id="4444b-174">第 1 步：[示例第一个请求](#initial-request)和[响应](#initial-request-response)。</span><span class="sxs-lookup"><span data-stu-id="4444b-174">Step 1: [sample initial request](#initial-request) and [response](#initial-request-response).</span></span>
+- <span data-ttu-id="4444b-175">第 2 步：[示例第二个请求](#second-request)和[响应](#second-request-response)</span><span class="sxs-lookup"><span data-stu-id="4444b-175">Step 2: [sample second request](#second-request) and [response](#second-request-response)</span></span>
+- <span data-ttu-id="4444b-176">第 3 步：[示例第三个请求](#third-request)和[最终响应](#third-request-response)。</span><span class="sxs-lookup"><span data-stu-id="4444b-176">Step 3: [sample third request](#third-request) and [final response](#third-request-response).</span></span>
 
-<span data-ttu-id="b9385-p115">为简洁起见，示例响应仅显示一部分事件属性。在实际调用中，大多数事件属性都会返回。</span><span class="sxs-lookup"><span data-stu-id="b9385-p115">For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties are returned.</span></span>
+<span data-ttu-id="4444b-p115">为简洁起见，示例响应仅显示一部分事件属性。在实际调用中，大多数事件属性都会返回。</span><span class="sxs-lookup"><span data-stu-id="4444b-p115">For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties are returned.</span></span>
 
-<span data-ttu-id="b9385-179">另请了解[下一轮](#example-2-retrieving-additional-changes)该执行哪些操作。</span><span class="sxs-lookup"><span data-stu-id="b9385-179">See also what you'll do in the [next round](#example-2-retrieving-additional-changes).</span></span>
+<span data-ttu-id="4444b-179">另请了解[下一轮](#example-2-retrieving-additional-changes)该执行哪些操作。</span><span class="sxs-lookup"><span data-stu-id="4444b-179">See also what you'll do in the [next round](#example-2-retrieving-additional-changes).</span></span>
 
-#### <a name="initial-request"></a><span data-ttu-id="b9385-180">初始请求</span><span class="sxs-lookup"><span data-stu-id="b9385-180">Initial request</span></span>
+#### <a name="initial-request"></a><span data-ttu-id="4444b-180">初始请求</span><span class="sxs-lookup"><span data-stu-id="4444b-180">Initial request</span></span>
 
-<span data-ttu-id="b9385-181">本示例中，频道消息正在进行首次同步，因此初始同步请求未包含任何状态令牌。</span><span class="sxs-lookup"><span data-stu-id="b9385-181">In this example, the channel messages are being synchronized for the first time, so the initial sync request does not include any state token.</span></span> <span data-ttu-id="b9385-182">这一轮将返回此日历视图中的所有事件。</span><span class="sxs-lookup"><span data-stu-id="b9385-182">This round will return all the events in that calendar view.</span></span>
+<span data-ttu-id="4444b-181">本示例中，频道消息正在进行首次同步，因此初始同步请求未包含任何状态令牌。</span><span class="sxs-lookup"><span data-stu-id="4444b-181">In this example, the channel messages are being synchronized for the first time, so the initial sync request does not include any state token.</span></span> <span data-ttu-id="4444b-182">这一轮将返回此日历视图中的所有事件。</span><span class="sxs-lookup"><span data-stu-id="4444b-182">This round will return all the events in that calendar view.</span></span>
 
-<span data-ttu-id="b9385-183">请求指定可选请求标头 odata.top，每次返回 2 个事件。</span><span class="sxs-lookup"><span data-stu-id="b9385-183">The request specifies the optional request header, odata.top, returning 2 events at a time.</span></span>
+<span data-ttu-id="4444b-183">请求指定可选请求标头 odata.top，每次返回 2 个事件。</span><span class="sxs-lookup"><span data-stu-id="4444b-183">The request specifies the optional request header, odata.top, returning 2 events at a time.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="b9385-184">HTTP</span><span class="sxs-lookup"><span data-stu-id="b9385-184">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4444b-184">HTTP</span><span class="sxs-lookup"><span data-stu-id="4444b-184">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_channel_messages_delta_1"
@@ -117,26 +117,26 @@ GET /teams/{id}/channels/{id}/messages/delta
 ```
 GET /teams/{id}/channels/{id}/messages/delta?$top=2
 ```
-# <a name="c"></a>[<span data-ttu-id="b9385-185">C#</span><span class="sxs-lookup"><span data-stu-id="b9385-185">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4444b-185">C#</span><span class="sxs-lookup"><span data-stu-id="4444b-185">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-messages-delta-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="b9385-186">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b9385-186">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4444b-186">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4444b-186">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-messages-delta-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="b9385-187">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b9385-187">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4444b-187">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4444b-187">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-channel-messages-delta-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="initial-request-response"></a><span data-ttu-id="b9385-188">第一个请求响应</span><span class="sxs-lookup"><span data-stu-id="b9385-188">Initial request response</span></span>
+#### <a name="initial-request-response"></a><span data-ttu-id="4444b-188">第一个请求响应</span><span class="sxs-lookup"><span data-stu-id="4444b-188">Initial request response</span></span>
 
-<span data-ttu-id="b9385-189">该响应包含两封邮件和一个具有 `skipToken` 的 `@odata.nextLink` 响应标头。</span><span class="sxs-lookup"><span data-stu-id="b9385-189">The response includes two messages and a `@odata.nextLink` response header with a `skipToken`.</span></span> <span data-ttu-id="b9385-190">`nextLink` URL 表示此频道中还更多邮件可获取。</span><span class="sxs-lookup"><span data-stu-id="b9385-190">The `nextLink` URL indicates there are more messages in the channel to get.</span></span>
+<span data-ttu-id="4444b-189">该响应包含两封邮件和一个具有 `skipToken` 的 `@odata.nextLink` 响应标头。</span><span class="sxs-lookup"><span data-stu-id="4444b-189">The response includes two messages and a `@odata.nextLink` response header with a `skipToken`.</span></span> <span data-ttu-id="4444b-190">`nextLink` URL 表示此频道中还更多邮件可获取。</span><span class="sxs-lookup"><span data-stu-id="4444b-190">The `nextLink` URL indicates there are more messages in the channel to get.</span></span>
 
-><span data-ttu-id="b9385-191">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="b9385-191">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="b9385-192">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b9385-192">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="4444b-191">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="4444b-191">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="4444b-192">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="4444b-192">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -201,12 +201,12 @@ Content-type: application/json
 }
 ```
 
-#### <a name="second-request"></a><span data-ttu-id="b9385-193">第二个请求</span><span class="sxs-lookup"><span data-stu-id="b9385-193">Second request</span></span>
+#### <a name="second-request"></a><span data-ttu-id="4444b-193">第二个请求</span><span class="sxs-lookup"><span data-stu-id="4444b-193">Second request</span></span>
 
-<span data-ttu-id="b9385-194">第二个请求指定上一个响应中返回的 `nextLink` URL。</span><span class="sxs-lookup"><span data-stu-id="b9385-194">The second request specifies the `nextLink` URL returned from the previous response.</span></span> <span data-ttu-id="b9385-195">请注意，无需再像在第一个请求中一样指定相同的顶级参数，因为 `nextLink` URL 中的 `skipToken` 会将其编码并包含在内。</span><span class="sxs-lookup"><span data-stu-id="b9385-195">Notice that it no longer has to specify the same top parameters as in the initial request, as the `skipToken` in the `nextLink` URL encodes and includes them.</span></span>
+<span data-ttu-id="4444b-194">第二个请求指定上一个响应中返回的 `nextLink` URL。</span><span class="sxs-lookup"><span data-stu-id="4444b-194">The second request specifies the `nextLink` URL returned from the previous response.</span></span> <span data-ttu-id="4444b-195">请注意，无需再像在第一个请求中一样指定相同的顶级参数，因为 `nextLink` URL 中的 `skipToken` 会将其编码并包含在内。</span><span class="sxs-lookup"><span data-stu-id="4444b-195">Notice that it no longer has to specify the same top parameters as in the initial request, as the `skipToken` in the `nextLink` URL encodes and includes them.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="b9385-196">HTTP</span><span class="sxs-lookup"><span data-stu-id="b9385-196">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4444b-196">HTTP</span><span class="sxs-lookup"><span data-stu-id="4444b-196">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_channel_messages_delta_2"
@@ -214,26 +214,26 @@ Content-type: application/json
 ```
 GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyMTUzMjU0NTkmcGFnZVNpemU9MjA%3d
 ```
-# <a name="c"></a>[<span data-ttu-id="b9385-197">C#</span><span class="sxs-lookup"><span data-stu-id="b9385-197">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4444b-197">C#</span><span class="sxs-lookup"><span data-stu-id="4444b-197">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-messages-delta-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="b9385-198">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b9385-198">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4444b-198">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4444b-198">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-messages-delta-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="b9385-199">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b9385-199">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4444b-199">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4444b-199">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-channel-messages-delta-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="second-request-response"></a><span data-ttu-id="b9385-200">第二个请求响应</span><span class="sxs-lookup"><span data-stu-id="b9385-200">Second request response</span></span>
+#### <a name="second-request-response"></a><span data-ttu-id="4444b-200">第二个请求响应</span><span class="sxs-lookup"><span data-stu-id="4444b-200">Second request response</span></span>
 
-<span data-ttu-id="b9385-201">第二个响应返回接下来的 2 个消息和一个带有 `skipToken` 的 `@odata.nextLink` 响应标头，指示频道中存在可获取的更多消息。</span><span class="sxs-lookup"><span data-stu-id="b9385-201">The second response returns the next 2 messages and a `@odata.nextLink` response header with a `skipToken`, indicates there are more messages in the channel to get.</span></span>
+<span data-ttu-id="4444b-201">第二个响应返回接下来的 2 个消息和一个带有 `skipToken` 的 `@odata.nextLink` 响应标头，指示频道中存在可获取的更多消息。</span><span class="sxs-lookup"><span data-stu-id="4444b-201">The second response returns the next 2 messages and a `@odata.nextLink` response header with a `skipToken`, indicates there are more messages in the channel to get.</span></span>
 
-><span data-ttu-id="b9385-202">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="b9385-202">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="b9385-203">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b9385-203">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="4444b-202">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="4444b-202">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="4444b-203">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="4444b-203">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -298,12 +298,12 @@ Content-type: application/json
 }
 ```
 
-#### <a name="third-request"></a><span data-ttu-id="b9385-204">第三个请求</span><span class="sxs-lookup"><span data-stu-id="b9385-204">Third request</span></span>
+#### <a name="third-request"></a><span data-ttu-id="4444b-204">第三个请求</span><span class="sxs-lookup"><span data-stu-id="4444b-204">Third request</span></span>
 
-<span data-ttu-id="b9385-205">第三个请求继续使用上一个同步请求返回的最新 `nextLink`。</span><span class="sxs-lookup"><span data-stu-id="b9385-205">The third request continues to use the latest `nextLink` returned from the last sync request.</span></span>
+<span data-ttu-id="4444b-205">第三个请求继续使用上一个同步请求返回的最新 `nextLink`。</span><span class="sxs-lookup"><span data-stu-id="4444b-205">The third request continues to use the latest `nextLink` returned from the last sync request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="b9385-206">HTTP</span><span class="sxs-lookup"><span data-stu-id="b9385-206">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4444b-206">HTTP</span><span class="sxs-lookup"><span data-stu-id="4444b-206">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_channel_messages_delta_3"
@@ -311,26 +311,26 @@ Content-type: application/json
 ```
 GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyODcyMzY2NzgmcGFnZVNpemU9MjA%3d
 ```
-# <a name="c"></a>[<span data-ttu-id="b9385-207">C#</span><span class="sxs-lookup"><span data-stu-id="b9385-207">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4444b-207">C#</span><span class="sxs-lookup"><span data-stu-id="4444b-207">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-messages-delta-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="b9385-208">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b9385-208">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4444b-208">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4444b-208">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-messages-delta-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="b9385-209">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b9385-209">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4444b-209">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4444b-209">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-channel-messages-delta-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="third-request-response"></a><span data-ttu-id="b9385-210">第三个请求响应</span><span class="sxs-lookup"><span data-stu-id="b9385-210">Third request response</span></span>
+#### <a name="third-request-response"></a><span data-ttu-id="4444b-210">第三个请求响应</span><span class="sxs-lookup"><span data-stu-id="4444b-210">Third request response</span></span>
 
-<span data-ttu-id="b9385-211">第三个响应仅返回频道中剩下的消息以及带有 `deltaToken` 的 `@odata.deltaLink` 响应标头，指示频道中的所有消息已被阅读。</span><span class="sxs-lookup"><span data-stu-id="b9385-211">The third response returns the only remaining messages in the channel and a `@odata.deltaLink` response header with a `deltaToken` which indicates that all messages in the channel have been read.</span></span> <span data-ttu-id="b9385-212">保存并使用 `deltaLink` URL，以便查询下一轮中从此点开始的任何新消息。</span><span class="sxs-lookup"><span data-stu-id="b9385-212">Save and use the `deltaLink` URL to query for any new messages starting from this point in the next round.</span></span>
+<span data-ttu-id="4444b-211">第三个响应仅返回频道中剩下的消息以及带有 `deltaToken` 的 `@odata.deltaLink` 响应标头，指示频道中的所有消息已被阅读。</span><span class="sxs-lookup"><span data-stu-id="4444b-211">The third response returns the only remaining messages in the channel and a `@odata.deltaLink` response header with a `deltaToken` which indicates that all messages in the channel have been read.</span></span> <span data-ttu-id="4444b-212">保存并使用 `deltaLink` URL，以便查询下一轮中从此点开始的任何新消息。</span><span class="sxs-lookup"><span data-stu-id="4444b-212">Save and use the `deltaLink` URL to query for any new messages starting from this point in the next round.</span></span>
 
-><span data-ttu-id="b9385-213">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="b9385-213">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="b9385-214">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b9385-214">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="4444b-213">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="4444b-213">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="4444b-214">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="4444b-214">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -372,14 +372,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieving-additional-changes"></a><span data-ttu-id="b9385-215">示例 2：检索其他更改</span><span class="sxs-lookup"><span data-stu-id="b9385-215">Example 2: Retrieving additional changes</span></span>
+### <a name="example-2-retrieving-additional-changes"></a><span data-ttu-id="4444b-215">示例 2：检索其他更改</span><span class="sxs-lookup"><span data-stu-id="4444b-215">Example 2: Retrieving additional changes</span></span>
 
-<span data-ttu-id="b9385-216">使用上一轮中最后一个请求返回的 `deltaLink`，可以只获取从那以后此频道中发生变化（已添加或更新）的邮件。</span><span class="sxs-lookup"><span data-stu-id="b9385-216">Using the `deltaLink` from the last request in the last round, you will be able to get only those messages that have changed (by being added, or updated) in that channel since then.</span></span> <span data-ttu-id="b9385-217">假如你更喜欢在响应中保持最大页面的同一大小，则请求将如下所示：</span><span class="sxs-lookup"><span data-stu-id="b9385-217">Your request will look like the following, assuming you prefer to keep the same maximum page size in the response:</span></span>
+<span data-ttu-id="4444b-216">使用上一轮中最后一个请求返回的 `deltaLink`，可以只获取从那以后此频道中发生变化（已添加或更新）的邮件。</span><span class="sxs-lookup"><span data-stu-id="4444b-216">Using the `deltaLink` from the last request in the last round, you will be able to get only those messages that have changed (by being added, or updated) in that channel since then.</span></span> <span data-ttu-id="4444b-217">假如你更喜欢在响应中保持最大页面的同一大小，则请求将如下所示：</span><span class="sxs-lookup"><span data-stu-id="4444b-217">Your request will look like the following, assuming you prefer to keep the same maximum page size in the response:</span></span>
 
-#### <a name="request"></a><span data-ttu-id="b9385-218">请求</span><span class="sxs-lookup"><span data-stu-id="b9385-218">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="4444b-218">请求</span><span class="sxs-lookup"><span data-stu-id="4444b-218">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="b9385-219">HTTP</span><span class="sxs-lookup"><span data-stu-id="b9385-219">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4444b-219">HTTP</span><span class="sxs-lookup"><span data-stu-id="4444b-219">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_channel_messages_delta_4"
@@ -387,24 +387,24 @@ Content-type: application/json
 ```
 GET /teams/{id}/channels/{id}/messages/delta?$deltatoken=c3RhcnRUaW1lPTE1NTEyODc1ODA0OTAmcGFnZVNpemU9MjA%3d
 ```
-# <a name="c"></a>[<span data-ttu-id="b9385-220">C#</span><span class="sxs-lookup"><span data-stu-id="b9385-220">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4444b-220">C#</span><span class="sxs-lookup"><span data-stu-id="4444b-220">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-messages-delta-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="b9385-221">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b9385-221">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4444b-221">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4444b-221">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-messages-delta-4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="b9385-222">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b9385-222">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4444b-222">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4444b-222">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-channel-messages-delta-4-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="b9385-223">响应</span><span class="sxs-lookup"><span data-stu-id="b9385-223">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="4444b-223">响应</span><span class="sxs-lookup"><span data-stu-id="4444b-223">Response</span></span>
 
-><span data-ttu-id="b9385-p124">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b9385-p124">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="4444b-p124">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="4444b-p124">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

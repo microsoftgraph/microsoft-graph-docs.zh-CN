@@ -333,7 +333,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: 备注
             href: resources/onenote.md
             items:
               - name: 创建笔记本
@@ -9384,23 +9384,6 @@ items:
                 href: api/identityprovider-update.md
               - name: 删除标识提供程序
                 href: api/identityprovider-delete.md
-          - name: 信息保护
-            items:
-              - name: 标签
-                href: resources/informationprotectionlabel.md
-                items:
-                  - name: 列表标签
-                    href: api/informationprotectionpolicy-list-labels.md
-                  - name: 获取标签
-                    href: api/informationprotectionlabel-get.md
-                  - name: 评估应用程序
-                    href: api/informationprotectionlabel-evaluateapplication.md
-                  - name: 评估分类结果
-                    href: api/informationprotectionlabel-evaluateclassificationresults.md
-                  - name: 评估删除
-                    href: api/informationprotectionlabel-evaluateremoval.md
-                  - name: 提取标签
-                    href: api/informationprotectionlabel-extractlabel.md
               - name: 威胁评估
                 items:
                   - name: 概述
@@ -10294,7 +10277,7 @@ items:
               - name: 周年
                 href: resources/personanniversary.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/profile-list-anniversaries.md
                   - name: 创建
                     href: api/profile-post-anniversaries.md
@@ -10895,6 +10878,23 @@ items:
                 href: api/alert-update.md
               - name: 更新多个警报
                 href: api/alert-updatealerts.md
+          - name: 信息保护
+            items:
+              - name: 标签
+                href: resources/informationprotectionlabel.md
+                items:
+                  - name: 列表标签
+                    href: api/informationprotectionpolicy-list-labels.md
+                  - name: 获取标签
+                    href: api/informationprotectionlabel-get.md
+                  - name: 评估应用程序
+                    href: api/informationprotectionlabel-evaluateapplication.md
+                  - name: 评估分类结果
+                    href: api/informationprotectionlabel-evaluateclassificationresults.md
+                  - name: 评估删除
+                    href: api/informationprotectionlabel-evaluateremoval.md
+                  - name: 提取标签
+                    href: api/informationprotectionlabel-extractlabel.md
           - name: 安全功能分数
             href: resources/securescores.md
             items:
