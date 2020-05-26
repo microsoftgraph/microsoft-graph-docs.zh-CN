@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: non-product-specific
 author: angelgolfer-ms
-ms.openlocfilehash: 39366a6460523bd5549270982b581b6e93fa95d8
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
-ms.translationtype: HT
+ms.openlocfilehash: 149fd01b3345696c2845f040f85fb37f8ec5d03d
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618645"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353649"
 ---
 # <a name="microsoft-graph-beta-endpoint-reference"></a>Microsoft Graph beta 终结点参考
 
@@ -30,6 +30,9 @@ https://graph.microsoft.com/beta/{resource}?[query_parameters]
 ```
 
 有关详细信息，请参阅[使用 Microsoft Graph API](/graph/use-the-api)。
+
+## <a name="whats-new"></a>最近更新
+了解 beta 版终结点中的[最新新功能和更新](/graph/whats-new-overview)。
 
 ## <a name="see-also"></a>另请参阅
 

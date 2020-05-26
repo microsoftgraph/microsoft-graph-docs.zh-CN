@@ -5,16 +5,16 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0619bd21c5db0bf4ee85d34bf54210baf4d04b4f
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 6e985d99c1fb86c71b862d0f055af96eba2c2a66
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394752"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353621"
 ---
 # <a name="clientuseragent-resource-type"></a>clientUserAgent 资源类型
 
-命名空间： callRecords
+命名空间：microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,9 +25,9 @@ ms.locfileid: "42394752"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |applicationVersion|String|标识此终结点使用的应用程序软件的版本。|
-|headerValue|String|此终结点报告的用户代理标头值。|
-|platform|String|标识此终结点使用的平台。 可取值为：`unknown`、`windows`、`macOS`、`iOS`、`android`、`web`、`ipPhone`、`roomSystem`、`surfaceHub`、`holoLens`、`unknownFutureValue`。|
-|productFamily|String|标识此终结点使用的应用程序软件系列。 可取值为：`unknown`、`teams`、`skypeForBusiness`、`lync`、`unknownFutureValue`。|
+|headerValue|字符串|此终结点报告的用户代理标头值。|
+|platform|callRecords。 clientPlatform|标识此终结点使用的平台。 可取值为：`unknown`、`windows`、`macOS`、`iOS`、`android`、`web`、`ipPhone`、`roomSystem`、`surfaceHub`、`holoLens`、`unknownFutureValue`。|
+|productFamily|callRecords。 productFamily|标识此终结点使用的应用程序软件系列。 可取值为：`unknown`、`teams`、`skypeForBusiness`、`lync`、`unknownFutureValue`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

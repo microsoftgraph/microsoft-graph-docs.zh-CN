@@ -5,16 +5,16 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d72ddd8273088fb7b1401d93e686914a69d18ebd
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 8c1af52332c5650123d604b8e405bf88d0c2f965
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394683"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353123"
 ---
 # <a name="session-resource-type"></a>会话资源类型
 
-命名空间： callRecords
+命名空间：microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "42394683"
 
 ## <a name="methods"></a>方法
 
-不存在直接访问会话的方法。 请使用[Get callRecord](../api/callrecords-callrecord-get.md) api With `$expand=sessions`获取[callRecord](callrecords-callrecord.md)的会话。
+不存在直接访问会话的方法。 请使用[Get callRecord](../api/callrecords-callrecord-get.md) api With `$expand=sessions` 获取[callRecord](callrecords-callrecord.md)的会话。
 
 ## <a name="properties"></a>属性
 
@@ -32,7 +32,7 @@ ms.locfileid: "42394683"
 |者|[callRecords。](callrecords-endpoint.md)|启动会话的终结点。|
 |约定|[callRecords。](callrecords-endpoint.md)|应答会话的终结点。|
 |failureInfo|[callRecords。 failureInfo](callrecords-failureinfo.md)|会话失败时与会话关联的失败信息。|
-|形式|string 集合|会话中存在的形式的列表。 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`、`screenSharing` 或 `unknownFutureValue`。|
+|形式|callRecords 集合。|会话中存在的形式的列表。 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`、`screenSharing` 或 `unknownFutureValue`。|
 |startDateTime|DateTimeOffset|当第一个用户加入会话时，UTC fime。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |endDateTime|DateTimeOffset|上次用户离开会话时的 UTC 时间。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 

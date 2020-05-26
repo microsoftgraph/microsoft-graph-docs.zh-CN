@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: ba8362962989dc6b5bb541a984f6355679de723e
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 333ddc360be1f718d51fb2aad46c185eab72f5c7
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345959"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353432"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -82,9 +82,9 @@ ms.locfileid: "44345959"
 | Addition | beta | 向[riskDetection](/graph/api/resources/riskdetection?view=graph-rest-beta)和[riskyUserHistoryItem](/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta)资源添加了**riskEventType**属性。 使用此属性而不是**riskType**属性来检索标识保护风险检测的类型。
 | 更改 | beta | 更新了 [conditionalaccessconditionset](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) 中的 **clientAppTypes** 属性，以将 `modern` 替换为 `mobileAppsAndDesktopClients`。 已删除 `easUnsupported` 并已添加 `exchangeActiveSync`，包括 Exchange ActiveSync 支持和不支持的平台。 |
 | 添加项 | beta | 添加了应用程序. All 和应用程序-读写权限。[应用程序列表](/graph/api/application-list?view=graph-rest-beta)的所有权限<br>向以下项添加了对 `$count` 、 `$search` 和 `$filter` 查询参数的支持： <br><ul><li>[列出应用程序](/graph/api/application-list?view=graph-rest-beta)</li><li>[列出设备组](/graph/api/device-list-memberof?view=graph-rest-beta)</li><li>[列出设备可传递组](/graph/api/device-list-transitivememberof?view=graph-rest-beta)</li><li>[列出设备](/graph/api/device-list?view=graph-rest-beta)</li><li>[列出组 memberOf](/graph/api/group-list-memberof?view=graph-rest-beta)</li><li>[列出组成员](/graph/api/group-list-members?view=graph-rest-beta)</li><li>[列表组可传递的 memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-beta)</li><li>[列表组可传递成员](/graph/api/group-list-transitivemembers?view=graph-rest-beta)</li><li>[List groups](/graph/api/group-list?view=graph-rest-beta)</li><li>[列出 orgContacts](/graph/api/orgcontact-list?view=graph-rest-beta)</li><li>[列出 servicePrincipal memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-beta)</li><li>[列出 servicePrincipal 可传递的 memberOf](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-beta)</li><li>[列出 servicePrincipals](/graph/api/serviceprincipal-list?view=graph-rest-beta)</li><li>[列出用户 memberOf](/graph/api/user-list-memberof?view=graph-rest-beta)</li><li>[列出用户可传递的 memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-beta)</li><li>[List users](/graph/api/user-list?view=graph-rest-beta)</li></ul><br>添加了使用 OData 转换为以下内容的示例： <ul><li>[列出组 memberOf](/graph/api/group-list-memberof?view=graph-rest-beta)</li><li>[列出组成员](/graph/api/group-list-members?view=graph-rest-beta)</li><li>[列表组可传递的 memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-beta)</li><li>[列出 servicePrincipal memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-beta)</li><li>[列出 servicePrincipal 可传递的 memberOf](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-beta)</li><li>[列出用户 memberOf](/graph/api/user-list-memberof?view=graph-rest-beta)</li><li>[列出用户可传递的 memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-beta)</li></ul> |
-| 新增 | v1.0 | 添加了新实体类型： [servicePrincipal](/graph/resources/serviceprincipal?view=graph-rest-v1.0)。|
-| 新增 | v1.0 | 添加了新实体类型： [appRoleAssignment](/graph/resources/approleassignment?view=graph-rest-v1.0)。|
-| 添加项 | beta、v1.0 | 添加了 "仅限应用" 和 "委派" 权限[AppRoleAssignment](permissions-reference.md#group-permissions)。 |
+| 新增 | v1.0 | 添加了新实体类型： [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)。|
+| 新增 | v1.0 | 添加了新实体类型： [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0)。|
+| 添加项 | beta、v1.0 | 添加了 "仅限应用" 和 "委派" 权限[AppRoleAssignment](permissions-reference.md#application-resource-permissions)。 |
 | Addition | beta | 添加了委派权限[EntitlementManagement](permissions-reference.md#entitlement-management-permissions)。 |
 
 ### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)

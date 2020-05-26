@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: c75f83edcf509f621539a51c4938621d708b3d12
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: f1f0dc151748d1f61f002f94243c13ce0f81c94b
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345868"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353175"
 ---
 # <a name="delete-subscription"></a>删除订阅
 
@@ -67,6 +67,7 @@ DELETE /subscriptions/{id}
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `204 No Content` 响应代码。
+有关如何返回错误的详细信息，请参阅[错误响应][error-response]。
 
 ## <a name="example"></a>示例
 
@@ -114,6 +115,8 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+
+[error-response]: /graph/errors
 
 <!-- {
   "type": "#page.annotation",

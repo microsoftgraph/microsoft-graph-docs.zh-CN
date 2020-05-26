@@ -4,12 +4,12 @@ description: 在 Outlook 中，会议组织者可以允许被邀请者建议备�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: a8329c433d51dc1d7f675e947b9a8ec4d437c80c
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: e17ffc92ae77324e855452b981e90ee4b4f3f3c5
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333563"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353243"
 ---
 # <a name="use-outlook-to-organize-or-attend-meetings-online"></a>使用 Outlook 组织或参加联机会议
 
@@ -472,7 +472,9 @@ Content-type: application/json
 
 
 ## <a name="see-also"></a>另请参阅
-- 有关 Microsoft Teams 与 Office 365 的互操作性的详细信息，请参阅[共存和升级设置](https://docs.microsoft.com/microsoftteams/setting-your-coexistence-and-upgrade-settings)。
+- 有关与 Office 365 的 Microsoft 团队互操作性的信息，请参阅：
+  - [Exchange 和 Microsoft 团队如何交互](/microsoftteams/exchange-teams-interact)
+  - [设置共存和升级设置](/microsoftteams/setting-your-coexistence-and-upgrade-settings)
 - [在 Microsoft Graph 中选择 API 以创建和加入联机会议](choose-online-meeting-api.md)
 - [在 Outlook 日历中查找可能会议时间](findmeetingtimes-example.md)
 - [获取用户和资源的忙/闲日程安排](outlook-get-free-busy-schedule.md)

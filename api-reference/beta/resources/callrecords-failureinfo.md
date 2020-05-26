@@ -5,16 +5,16 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3160fe3b2d0c1fd59ddd86621667b67ee5759dd5
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 38ccc3094521283c6c496b1d0e35b97a6cf37199
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394702"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353614"
 ---
 # <a name="failureinfo-resource-type"></a>failureInfo 资源类型
 
-命名空间： callRecords
+命名空间：microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,8 +24,8 @@ ms.locfileid: "42394702"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|reason|String|对呼叫或呼叫部分失败的原因进行分类。|
-|交给|String|发生故障时的阶段。 可取值为：`unknown`、`callSetup`、`midcall`、`unknownFutureValue`。|
+|reason|字符串|对呼叫或呼叫部分失败的原因进行分类。|
+|交给|callRecords。 failureStage|发生故障时的阶段。 可取值为：`unknown`、`callSetup`、`midcall`、`unknownFutureValue`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

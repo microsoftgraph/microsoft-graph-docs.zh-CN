@@ -5,20 +5,20 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7d3856d17954d04a02a95a24571d16f4b51a149f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f17c356b4e6177fa3cba6a7e7aa9991c768c0e75
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42426092"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353229"
 ---
 # <a name="create-educationclass"></a>创建 educationClass
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新课程。 此操作还会创建通用组。 当使用此 API 创建课程时，会向组添加特殊属性，继而在 Microsoft Teams 中添加分配和特殊处理等功能。
+创建新课程。 此操作还会创建通用组。 当您使用此 API 创建一个类时，它会将特殊的属性添加到组中，这将在使用组创建团队时，将在 Microsoft 团队中添加工作分配和特殊处理等功能。 请注意，此 API 仅创建通用组，不创建团队。 Microsoft 团队为教师提供了用户界面，以使用此 API 创建的组为自己的类创建团队。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "42426092"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  不支持。  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | EduRoster.ReadWrite.All | 
+|Application | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

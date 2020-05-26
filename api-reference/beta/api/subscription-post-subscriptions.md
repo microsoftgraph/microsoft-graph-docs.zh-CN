@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 6ea433e6e8eb348f770fd691f16397ddea001301
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 3e9873d8def179bfdbe8d77767d5a521af5cebf3
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345952"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353257"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -83,6 +83,8 @@ POST /subscriptions
 ## <a name="response"></a>响应
 
 如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[订阅](../resources/subscription.md)对象。
+
+有关如何返回错误的详细信息，请参阅[错误响应][error-response]。
 
 ## <a name="example"></a>示例
 
@@ -175,6 +177,8 @@ Content-length: 252
 ## <a name="notification-endpoint-validation"></a>通知终结点验证
 
 订阅通知终结点（在**notificationUrl**属性中指定）必须能够响应验证请求，如[设置用户数据中的更改通知](/graph/webhooks#notification-endpoint-validation)中所述。 如果验证失败，创建订阅请求返回错误“400 请求无效”。
+
+[error-response]: /graph/errors
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

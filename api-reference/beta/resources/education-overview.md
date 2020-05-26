@@ -1,24 +1,24 @@
 ---
 title: 在 Microsoft Graph 中使用教育 API
-description: Microsoft Graph 中的教育 Api 使用与教育方案相关的信息 (包括学校、学生、教师、课程、注册和工作分配) 增强了 Office 365 的资源和数据。 这使你能够轻松地构建与教育资源集成的解决方案。
+description: Microsoft Graph 中的教育 Api 使用与教育方案相关的信息（包括学校、学生、教师、课程、注册和工作分配）增强了 Office 365 的资源和数据。 这使你能够轻松地构建与教育资源集成的解决方案。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 935a34a4b3bf8ed63fc33893ade19dbe16fdf60c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ad050afee8b3772aa9a03e52ed2c1a715813bfd4
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006491"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353145"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>在 Microsoft Graph 中使用教育 API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph 中的教育 Api 使用与教育方案相关的信息 (包括学校、学生、教师、课程、注册和工作分配) 增强了 Office 365 的资源和数据。 这使你能够轻松地构建与教育资源集成的解决方案。
+Microsoft Graph 中的教育 Api 使用与教育方案相关的信息（包括学校、学生、教师、课程、注册和工作分配）增强了 Office 365 的资源和数据。 这使你能够轻松地构建与教育资源集成的解决方案。
 
-教育 Api 包括名册资源和工作分配资源, 您可以使用这些资源与 Microsoft 团队中的名册和工作分配服务进行交互。 您可以使用这些资源管理学校名单并自动完成学生作业。
+教育 Api 包括名册资源和工作分配资源，您可以使用这些资源与 Microsoft 团队中的名册和工作分配服务进行交互。 您可以使用这些资源管理学校名单并自动完成学生作业。
 
 ## <a name="authorization"></a>授权
 
@@ -28,7 +28,7 @@ Microsoft Graph 中的教育 Api 使用与教育方案相关的信息 (包括学
 
 若要部署与 Microsoft Graph 中的教育 API 集成的应用，学校 IT 管理员必须首先授权许可应用请求的权限。 仅能授权许可一次，除非权限更改。 在管理员许可后，就会为租户中的所有用户预配应用。
 
-若要触发许可对话框, 请使用以下 REST 调用。
+若要触发许可对话框，请使用以下 REST 调用。
 
 ```
 GET https://login.microsoftonline.com/{tenant}/adminconsent?
@@ -78,15 +78,15 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 
 ## <a name="assignments"></a>作业 
 
-您可以使用与工作分配相关的教育 Api 与 Microsoft 团队中的工作分配集成。 适用于教育的 Office 365 中的 Microsoft 团队基于相同的教育 Api, 并为使用 Api 时可以执行的操作提供了一个用例。 您的应用程序可以使用这些 Api 与工作分配生命周期中的工作分配进行交互。 
+您可以使用与工作分配相关的教育 Api 与 Microsoft 团队中的工作分配集成。 适用于教育的 Office 365 中的 Microsoft 团队基于相同的教育 Api，并为使用 Api 时可以执行的操作提供了一个用例。 您的应用程序可以使用这些 Api 与工作分配生命周期中的工作分配进行交互。 
 
-分配 Api 提供以下关键资源:
+分配 Api 提供以下关键资源：
 
-- [educationAssignment](educationassignment.md) -工作分配 API 的核心对象。 表示分配给课程中的学生或团队成员的任务或工作单元, 作为其研究的一部分。
-- [educationSubmission](educationsubmission.md) -表示个人 (或组) 提交的工作分配的资源, 以及该工作分配的相关评分和反馈。
+- [educationAssignment](educationassignment.md) -工作分配 API 的核心对象。 表示分配给课程中的学生或团队成员的任务或工作单元，作为其研究的一部分。
+- [educationSubmission](educationsubmission.md) -表示个人（或组）提交的工作分配的资源，以及该工作分配的相关评分和反馈。
 - [educationResource](educationresource.md) -表示要分配或提交的学习对象。 **EducationResource**与**educationAssignment**和/或**educationSubmission**相关联。
 
-分配 Api 支持以下方案:
+分配 Api 支持以下方案：
 
 - [创建作业](../api/educationclass-post-assignments.md)
 - [发布作业](../api/educationassignment-publish.md)
@@ -102,14 +102,14 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 |用例|说明|另请参阅|
 |:-------|:----------|:-------|
 |创建工作分配|外部系统可以为类创建分配并将资源附加到工作分配。|[创建作业](../api/educationassignment-post-resources.md)|
-|读取工作分配信息|分析应用程序可以获取有关工作分配和学生提交的信息, 包括日期和成绩。|[获取作业](../api/educationassignment-get.md)|
-|跟踪学生提交|您的应用程序可以提供一个教师仪表板, 以显示学生的提交次数需要进行评分。|[提交资源](educationsubmission.md)|
+|读取工作分配信息|分析应用程序可以获取有关工作分配和学生提交的信息，包括日期和成绩。|[获取作业](../api/educationassignment-get.md)|
+|跟踪学生提交|您的应用程序可以提供一个教师仪表板，以显示学生的提交次数需要进行评分。|[提交资源](educationsubmission.md)|
 
 ## <a name="school-data-sync-management"></a>学校数据同步管理
 
-[学校数据同步](https://sds.microsoft.com/)可帮助您自动执行从使用 Azure Active Directory (azure AD) 和 Office 365 导入和同步学生信息系统中的名单数据的过程。 您可以使用 Microsoft Graph 中的学校数据同步管理 Api 设置 CSV 文件或受支持的 SIS API 连接器的同步。
+[学校数据同步](https://sds.microsoft.com/)可帮助您自动执行从使用 Azure Active Directory （azure AD）和 Office 365 导入和同步学生信息系统中的名单数据的过程。 您可以使用 Microsoft Graph 中的学校数据同步管理 Api 设置 CSV 文件或受支持的 SIS API 连接器的同步。
 
-学校数据同步管理 Api 支持以下方案:
+学校数据同步管理 Api 支持以下方案：
 
 - [列出同步配置文件](../api/educationsynchronizationprofile-list.md)
 - [获取同步配置文件](../api/educationsynchronizationprofile-get.md)
@@ -123,6 +123,8 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 - [获取同步状态](../api/educationsynchronizationprofilestatus-get.md)
 - [获取同步错误](../api/educationsynchronizationerrors-get.md)
 
+## <a name="whats-new"></a>最近更新
+查找有关此 API 集的[最新新功能和更新](/graph/whats-new-overview)。
 
 ## <a name="next-steps"></a>后续步骤
 使用 Microsoft Graph 教育 Api 生成可访问学生工作分配和学校名册的教育解决方案。 了解详细信息：

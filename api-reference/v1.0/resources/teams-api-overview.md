@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: d6e99dc0eecfdf3ee2644b79d0a74bc5f4703fb4
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: e26cc38761ac55f1c39bc2e41459c7567692f2a3
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290031"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353481"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 
@@ -86,6 +86,9 @@ Microsoft Teams 是 Office 365 中基于聊天的工作区，可提供对特定�
 
 当采用较慢的路径时，如果当前团队成员或所有者登录到 Microsoft Teams 应用程序/网站，则更改将在一小时内反映出来。
 如果这些用户都未登录到 Microsoft Teams 应用程序/网站，则更改将在其中一个用户登录后一小时内反映出来。
+
+## <a name="whats-new"></a>最近更新
+查找有关此 API 集的[最新新功能和更新](/graph/whats-new-overview)。
 
 ## <a name="see-also"></a>另请参阅
 

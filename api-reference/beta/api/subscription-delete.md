@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 2c61619d82484c41f4201f64e6be3849209f5799
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 8ce81955a4436f65d0833d3b4f9301bb44c62a3f
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345833"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353271"
 ---
 # <a name="delete-subscription"></a>删除订阅
 
@@ -70,6 +70,8 @@ DELETE /subscriptions/{id}
 
 如果成功，此方法返回 `204 No Content` 响应代码。
 
+有关如何返回错误的详细信息，请参阅[错误响应][error-response]。
+
 ## <a name="example"></a>示例
 
 ##### <a name="request"></a>请求
@@ -112,6 +114,8 @@ DELETE https://graph.microsoft.com/beta/subscriptions/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+
+[error-response]: /graph/errors
 
 <!--
 {

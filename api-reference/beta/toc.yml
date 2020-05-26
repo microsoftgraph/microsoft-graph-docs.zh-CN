@@ -1010,7 +1010,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: 删除历史记录项
                     href: api/projectrome-delete-historyitem.md
-      - name: 客户预订
+      - name: 客户预订（预览版）
         displayName: 'Bookings, Microsoft Bookings'
         items:
           - name: 概述
@@ -10240,7 +10240,7 @@ items:
             items:
               - name: 获取资源
                 href: api/resource-get.md
-      - name: 通知
+      - name: 通知（预览版）
         items:
           - name: 概述
             href: resources/notifications-api-overview.md

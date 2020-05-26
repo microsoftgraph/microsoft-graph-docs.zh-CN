@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Priority
 ms.prod: education
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 90e8e2342b66a7768cecbc22c6e3a1591bc06a59
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 433fa802230e8b3b903b3bd5410fbe99fbb470f1
+ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969834"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44345861"
 ---
 # <a name="education-api-overview"></a>教育版 API 概述
 
@@ -78,9 +78,6 @@ Office 365 中的 Microsoft Teams 是一个数字中心，它可将对话、内�
 - 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中试用教育版 API。
 - 浏览下面的教育相关示例：
   - [SSO 和排班 .NET 示例](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples)
-  - [SSO 和排班 Angular Node 示例](https://github.com/OfficeDev/O365-EDU-AngularNodeJS-Samples)   
-  - [SSO 和排班 Python 示例](https://github.com/OfficeDev/O365-EDU-Python-Samples)
-  - [SSO 和排班 PHP 示例](https://github.com/OfficeDev/O365-EDU-PHP-Samples)
   - [配置文件管理 API 示例](https://github.com/OfficeDev/O365-EDU-SDS-AspNetMVC-Samples) 
 
 

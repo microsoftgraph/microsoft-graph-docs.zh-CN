@@ -5,16 +5,16 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c8cfe517b127bcdf359c69ab600146593f5ef288
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 9cf6b0483ebda33068824f0a3345c12894fd2d7e
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394686"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353118"
 ---
 # <a name="serviceuseragent-resource-type"></a>serviceUserAgent 资源类型
 
-命名空间： callRecords
+命名空间：microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,8 +25,8 @@ ms.locfileid: "42394686"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |applicationVersion|String|标识此终结点使用的应用程序软件的版本。|
-|headerValue|String|此终结点报告的用户代理标头值。|
-|role|String|标识此终结点使用的服务的角色。 可取值为：`unknown`、`customBot`、`skypeForBusinessMicrosoftTeamsGateway`、`skypeForBusinessAudioVideoMcu`、`skypeForBusinessApplicationSharingMcu`、`skypeForBusinessCallQueues`、`skypeForBusinessAutoAttendant`、`mediationServer`、`mediationServerCloudConnectorEdition`、`exchangeUnifiedMessagingService`、`mediaController`、`conferencingAnnouncementService`、`conferencingAttendant`、`audioTeleconferencerController`、`skypeForBusinessUnifiedCommunicationApplicationPlatform`、`responseGroupServiceAnnouncementService`、`gateway`、`skypeTranslator`、`skypeForBusinessAttendant`、`responseGroupService`、`unknownFutureValue`。|
+|headerValue|字符串|此终结点报告的用户代理标头值。|
+|role|callRecords。 serviceRole|标识此终结点使用的服务的角色。 可取值为：`unknown`、`customBot`、`skypeForBusinessMicrosoftTeamsGateway`、`skypeForBusinessAudioVideoMcu`、`skypeForBusinessApplicationSharingMcu`、`skypeForBusinessCallQueues`、`skypeForBusinessAutoAttendant`、`mediationServer`、`mediationServerCloudConnectorEdition`、`exchangeUnifiedMessagingService`、`mediaController`、`conferencingAnnouncementService`、`conferencingAttendant`、`audioTeleconferencerController`、`skypeForBusinessUnifiedCommunicationApplicationPlatform`、`responseGroupServiceAnnouncementService`、`gateway`、`skypeTranslator`、`skypeForBusinessAttendant`、`responseGroupService`、`unknownFutureValue`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

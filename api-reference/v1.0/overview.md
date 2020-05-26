@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: non-product-specific
 doc_type: conceptualPageType
-ms.openlocfilehash: 2204197e169188e36466db783e513e2a1bc85317
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
-ms.translationtype: HT
+ms.openlocfilehash: 971cfc675fce4c4633c4e331ca20679321112ad8
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618657"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353425"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Microsoft Graph REST API 1.0 版参考
 
@@ -59,6 +59,9 @@ https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
 ```
 
 有关详细信息，请参阅[使用 Microsoft Graph API](/graph/use-the-api)。
+
+## <a name="whats-new"></a>最近更新
+了解 v1.0 终结点中的[最新新功能和更新](/graph/whats-new-overview)。
 
 ## <a name="connect-with-us"></a>与我们联系
 

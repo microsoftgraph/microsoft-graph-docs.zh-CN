@@ -5,16 +5,16 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0ab9c49563bb4715b1736618a939b681178ddae8
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 63cfdedd0b8902426e86aa1943cbeead669f92b3
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394684"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353797"
 ---
 # <a name="userfeedback-resource-type"></a>userFeedback 资源类型
 
-命名空间： callRecords
+命名空间：microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,8 +24,8 @@ ms.locfileid: "42394684"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|评估|String|此终结点的用户提供的有关此会话的质量的分级。 可取值为：`notRated`、`bad`、`poor`、`fair`、`good`、`excellent` 或 `unknownFutureValue`。|
-|text|String|此终结点的用户提供的反馈文本，用于会话。|
+|评估|callRecords。 userFeedbackRating|此终结点的用户提供的有关此会话的质量的分级。 可取值为：`notRated`、`bad`、`poor`、`fair`、`good`、`excellent` 或 `unknownFutureValue`。|
+|text|字符串|此终结点的用户提供的反馈文本，用于会话。|
 |等级|[callRecords。 feedbackTokenSet](callrecords-feedbacktokenset.md)|此终结点的用户为会话提供的一组反馈令牌。 这是一组布尔属性。 属性名称不应依赖，因为它们可能会根据向用户提供的令牌而发生变化。|
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -3,12 +3,12 @@ title: 在 Microsoft Graph 中选择 API 以创建和加入联机会议
 description: 你可以灵活地创建将来或即时使用的会议
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: d9c9a327e8cfafe10c8095e914d48e579c231d58
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 77749b7478df669c573c1d4b3a06ec1a6f1e3d42
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345910"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353138"
 ---
 # <a name="choose-an-api-in-microsoft-graph-to-create-and-join-online-meetings"></a>在 Microsoft Graph 中选择 API 以创建和加入联机会议
 
@@ -32,7 +32,7 @@ Microsoft Graph 提供了两个在 Microsoft 团队或 Skype 上安排和加入�
   - 与会者可在加入团队-会议 blob 中单击，以通过 Internet 加入会议或通过拨入。
   - 与会者可以使用工作组的其他丰富功能，包括视频会议和会议厅（如果已配置）。
 
-> **注意：** 与 Outlook 日历的集成假定管理员已为联机会议设置了 Outlook。 使用 API 之前，[请先验证](outlook-calendar-online-meetings.md#calendars-and-online-meeting-providers)支持。
+> **注意：** 与 Outlook 日历的集成假定管理员已为联机会议设置了 Outlook。 使用 API 之前，[请先验证](/microsoftteams/exchange-teams-interact)支持。
 
 选择云通信 API 以获得灵活性和更广泛的编程支持：
 - 应用程序具有更大的灵活性，可进一步将 API 结果与业务线和其他应用集成。 API 与任何特定日历保持独立，不会在任何日历中创建事件。

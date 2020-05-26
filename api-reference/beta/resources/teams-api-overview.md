@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 3771a9e62a317e292b8d2a821ecb21e6b354d8af
-ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
-ms.translationtype: HT
+ms.openlocfilehash: 34f5186e9933f5edcd8a91b1cb95b21b6deb4a50
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42962329"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353901"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 
@@ -114,6 +114,9 @@ Microsoft Teams 的已测试性能和容量限制将记录在 [Microsoft Teams �
 轮询是指对资源重复进行 GET 操作来了解资源是否变更。 只要同一资源未进行轮询，就可以一天多次对该资源进行 GET 操作。 例如，每次用户访问/刷新网页时都可以执行 GET /me/joinedTeams，但在每隔 30 秒执行一次的循环中执行 GET /me/joinedTeams 来刷新该网页则不可取。
 
 未遵循这些轮询要求的应用将被视为违反了 [Microsoft API 使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)。 这可能导致额外的[限制](/graph/throttling)或暂停/终止使用 Microsoft API。
+
+## <a name="whats-new"></a>最近更新
+查找有关此 API 集的[最新新功能和更新](/graph/whats-new-overview)。
 
 ## <a name="see-also"></a>另请参阅
 
