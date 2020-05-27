@@ -4,13 +4,13 @@ description: 表示应用程序角色。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: fe3753a0743a5cf1faac84b4fb102e1ffd702fed
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+author: psignoret
+ms.openlocfilehash: 8505380b50e32e9c996f960ab2343efa7e372e4a
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291011"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383768"
 ---
 # <a name="approle-resource-type"></a>appRole 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "44291011"
 
 ## <a name="properties"></a>属性
 
-| 属性   | 类型 |说明|
+| 属性   | 类型 |Description|
 |:---------------|:--------|:----------|
 |allowedMemberTypes|String collection|指定是否可以将此应用程序角色分配给用户和组（通过设置为 `["User"]` ）到其他应用程序（通过设置为 `["Application"]` 或同时设置为两者）（通过设置为 `["User", "Application"]` ）。 支持分配其他应用程序服务主体的应用程序角色也称为 "[应用程序权限](/graph/auth/auth-concepts#microsoft-graph-permissions)"。|
 |说明|String|应用程序角色的说明。 在授权体验期间，如果应用程序角色是作为应用程序的权限运行的，则会显示此情况。|

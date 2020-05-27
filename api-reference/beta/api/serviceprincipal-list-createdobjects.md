@@ -4,13 +4,13 @@ description: 检索 directoryobject 对象的列表。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 4d09c7359b9ff8803e3b372fe568a7c42a7717b6
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: 24a3e2208e564c4ae542a3332c6f5958ec106f19
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336816"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383180"
 ---
 # <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal： List createdObjects
 
@@ -20,14 +20,14 @@ ms.locfileid: "44336816"
 
 检索 directoryobject 对象的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | "Application"、"all"、"Directory.accessasuser.all"、"全部"、"全部"、"全部"、"全部"、"所有"    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | "Application.readwrite.ownedby"、"所有"、"readwrite"、"全部"、"所有"、" |
+|Application | "Application.readwrite.ownedby"、"所有"、"readwrite"、"全部"、"所有"、" |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

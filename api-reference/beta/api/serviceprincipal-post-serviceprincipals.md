@@ -1,16 +1,16 @@
 ---
 title: 创建 serviceprincipal
 description: 创建新的 serviceprincipal 对象。
-author: davidmu1
+author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4de473f2051747e1f8ee5a4ed18ee5524742dc38
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 4e5548d375ea27197a40ddb9cd61ec2d8463103d
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333444"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44382634"
 ---
 # <a name="create-serviceprincipal"></a>创建 servicePrincipal
 
@@ -23,7 +23,7 @@ ms.locfileid: "44333444"
 > [!IMPORTANT]
 > 不支持在创建 servicePrincipals 时添加[**passwordCredential**](../resources/passwordcredential.md) 。 使用[addPassword](serviceprincipal-addpassword.md)方法可添加 servicePrincipal 的密码。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -31,7 +31,7 @@ ms.locfileid: "44333444"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 所有的 Directory.accessasuser.all，all，all，All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Application.readwrite.ownedby、所有的 readwrite、全部、读写。 |
+|Application | Application.readwrite.ownedby、所有的 readwrite、全部、读写。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -4,13 +4,13 @@ description: 检索 oauth2PermissionGrant 对象的列表，表示委派权限�
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 5c260b7c28388ef04c25c3715561b1db7c074354
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: psignoret
+ms.openlocfilehash: ea908fadedcdf2c9f0271d30ee3d039728211166
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333711"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44384013"
 ---
 # <a name="list-oauth2permissiongrants"></a>List oauth2PermissionGrants
 
@@ -20,7 +20,7 @@ ms.locfileid: "44333711"
 
 检索[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)对象的列表，这些对象代表已为客户端应用程序授予的代表登录用户访问 api 的委派权限。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -42,7 +42,7 @@ GET /oauth2PermissionGrants
 
 此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称 | 说明 |
 |:----------|:----------|

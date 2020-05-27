@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 86bc1295382146fbfd9350f838b5884d1c792556
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a7ae6fe3f01eb5105791770451fba1bf1525290e
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451182"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383810"
 ---
 # <a name="worksheet-range"></a>Worksheet:Range
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,12 +26,12 @@ ms.locfileid: "42451182"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Files.ReadWrite    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/Range
+GET /workbook/worksheets/{id|name}/Range
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -43,7 +43,7 @@ POST /workbook/worksheets/{id|name}/Range
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
 |address|string|可选。区域的地址或名称。如果未指定，则返回整个工作表区域。|
 

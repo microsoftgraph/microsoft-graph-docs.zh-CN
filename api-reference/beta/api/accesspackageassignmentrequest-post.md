@@ -5,16 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 06fe6ed015a7aa9e6d90a473e89750be058b236f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4696a0c90e15eefe6e4dc9135438b911d8b6b591
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442024"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383467"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>创建 accessPackageAssignmentRequest
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42442024"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,19 +49,19 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 在请求正文中，提供[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象的 JSON 表示形式。
 
-若要为用户创建分配， **requestType** `AdminAdd`属性的值是， **accessPackageAssignment**属性包含`targetId`被分配的用户、 **assignmentPolicyId**属性（标识[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)）和标识[accessPackage](../resources/accesspackage.md)的**accessPackageId**属性。
+若要为用户创建分配， **requestType**属性的值是 `AdminAdd` ， **accessPackageAssignment**属性包含 `targetId` 被分配的用户、 **assignmentPolicyId**属性（标识[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)）和标识[accessPackage](../resources/accesspackage.md)的**accessPackageId**属性。
 
-若要删除分配， **requestType**属性`AdminRemove`的值是， **accessPackageAssignment**属性包含标识要删除的[accessPackageAssignment](../resources/accesspackageassignment.md)的**id**属性。
+若要删除分配， **requestType**属性的值是 `AdminRemove` ， **accessPackageAssignment**属性包含标识要删除的[accessPackageAssignment](../resources/accesspackageassignment.md)的**id**属性。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回一个200系列响应代码和一个新的[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象。
+如果成功，此方法在响应正文中返回一个200系列响应代码和一个新的[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象。  如果这是一个 `AdminAdd` 请求，则随后是[accessPackageAssignment](../resources/accesspackageassignment.md) ，如果需要，还会创建一个[accessPackageSubject](../resources/accesspackagesubject.md) 。 在[列出 accessPackageAssignments](accesspackageassignment-list.md)时，可以使用查询参数找到这些参数。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
-下面是一个直接分配请求的示例。  **TargetID**的值是要分配的用户的对象 ID， **accessPackageId**的值是所需的访问包，而**assignmentPolicyId**的值是该访问包中的直接分配策略。
+下面是一个直接分配请求的示例，在该请求中，管理员请求为用户创建分配。 由于[accessPackageSubject](../resources/accesspackagesubject.md)可能尚不存在， **targetID**的值是要分配的用户的对象 ID， **accessPackageId**的值是该用户所需的访问包， **assignmentPolicyId**的值是该访问包中的直接分配策略。
  
 
 # <a name="http"></a>[HTTP](#tab/http)

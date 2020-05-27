@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0ba846a7e5dc407db52cf4f343444cb7f84fd5f6
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: c3d2a732bdc8ecc9fc0b4efded56f4d9751c8d11
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345196"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383509"
 ---
 # <a name="list-accesspackageassignmentpolicies"></a>列出 accessPackageAssignmentPolicies
 
@@ -18,7 +18,7 @@ ms.locfileid: "44345196"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[AZURE AD 权限管理](../resources/entitlementmanagement-root.md)中，检索[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)对象的列表。   生成的列表包括呼叫者有权读取的所有目录和访问包中的所有分配策略。
+在[AZURE AD 权限管理](../resources/entitlementmanagement-root.md)中，检索[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)对象的列表。 如果委派用户位于目录角色中，则生成的列表将包含呼叫者有权读取的所有编录和访问包中的所有分配策略。  如果委派的用户是访问包管理器或目录所有者，则应改用通过将其作为查询参数包括的访问包的策略，从而检索可通过[列表 accessPackages](accesspackage-list.md)读取的访问包的策略 `$expand=accessPackageAssignmentPolicies` 。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "44345196"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement、EntitlementManagement 和所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +42,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要检索具有指定显示名称的 access 程序包分配策略，请 `$filter=displayName eq 'Employee sales support'` 在查询中加入。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|

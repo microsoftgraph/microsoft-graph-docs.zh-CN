@@ -4,13 +4,13 @@ description: 创建一个代表委派权限授予的 oAuth2PermissionGrant 对�
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: eda8ea061b8b36669ecfa9adf2f9c9da4ccfd0d9
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: psignoret
+ms.openlocfilehash: cde41b8193d535a4911c56464a539f518aca570f
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333676"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383663"
 ---
 # <a name="create-a-delegated-permission-grant-oauth2permissiongrant"></a>创建委派权限授予（oAuth2PermissionGrant）
 
@@ -22,7 +22,7 @@ ms.locfileid: "44333676"
 
 委派权限授予授予客户端服务主体（表示客户端应用程序），以代表登录用户访问受委派权限限制的访问权限级别的客户端服务主体（表示一个 API）。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "44333676"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | DelegatedPermissionGrant、Directory.accessasuser.all、all 和的所有子目录    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

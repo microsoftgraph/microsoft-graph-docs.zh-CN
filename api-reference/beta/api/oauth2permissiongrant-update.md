@@ -4,13 +4,13 @@ description: 更新 oAuth2PermissionGrant 的属性，该属性代表委派权�
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 970ce10f41b102088932e98578b98a000a5ca4fa
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+author: psignoret
+ms.openlocfilehash: 1d9aff9e74168c5077350def5fcd230e5e75bbd8
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289834"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383649"
 ---
 # <a name="update-a-delegated-permission-grant-oauth2permissiongrant"></a>更新委派权限授予（oAuth2PermissionGrant）
 
@@ -32,7 +32,7 @@ ms.locfileid: "44289834"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | DelegatedPermissionGrant、Directory.accessasuser.all、all 和的所有子目录    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +50,7 @@ PATCH /oauth2PermissionGrants/{id}
 
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |scope|String| 指定在 OAuth 2.0 访问令牌中，资源应用程序应预期的范围声明的值。 |
 

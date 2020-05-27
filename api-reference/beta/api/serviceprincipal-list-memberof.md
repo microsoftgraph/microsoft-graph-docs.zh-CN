@@ -4,13 +4,13 @@ description: 获取此服务主体是其直接成员的组和目录角色。 此
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 467811318ba3a68c8e901ebc2067cba8f337f6fa
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: 2d36c6b57fc5b73b0faec50d73de67a575aed811
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336459"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383110"
 ---
 # <a name="list-serviceprincipal-memberof"></a>列出 servicePrincipal memberOf
 
@@ -20,7 +20,7 @@ ms.locfileid: "44336459"
 
 获取此[servicePrincipal](../resources/serviceprincipal.md)是其直接成员的组和目录角色。 此操作不可传递。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "44336459"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | "Application"、"all"、"Directory.accessasuser.all"、"全部"、"全部"、"全部"、"全部"、"所有"    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | "Application.readwrite.ownedby"、"全部"、"全部"、"全部"、"全部"、"全部"、"全部"、"全部"、"目录" |
+|Application | "Application.readwrite.ownedby"、"全部"、"全部"、"全部"、"全部"、"全部"、"全部"、"全部"、"目录" |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -43,7 +43,7 @@ GET /servicePrincipals/{id}/memberOf
 
 此方法支持[OData 查询参数](/graph/query_parameters)，以帮助自定义响应，包括 `$search` 、 `$count` 和 `$filter` 。 此外，还会启用 OData 强制转换，例如，您可以强制转换为仅获取用户所属的 directoryRoles。 您可以 `$search` 在**displayName**属性上使用。 为此资源添加或更新项目时，将对其进行专门编制索引，以便 `$count` 与 `$search` 查询参数一起使用。 在添加或更新项目以及在索引中可用时，可能会出现轻微的延迟。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。 
+下面展示了示例响应。 
 > **注意：** 为简洁起见，可能会截断此处展示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
@@ -153,7 +153,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -201,7 +201,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",

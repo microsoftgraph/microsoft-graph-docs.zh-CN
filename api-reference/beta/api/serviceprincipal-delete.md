@@ -4,13 +4,13 @@ description: 删除 servicePrincipal。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: f42a7bf4f4b9ddf4e0bb4161f602c48a76ced739
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: ec422e251f65b3a0ead4a1d22129cfc0c09be3d6
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44335619"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383418"
 ---
 # <a name="delete-serviceprincipal"></a>删除 servicePrincipal
 
@@ -19,14 +19,14 @@ ms.locfileid: "44335619"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除[servicePrincipal](../resources/serviceprincipal.md)对象。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 所有的 Directory.accessasuser.all，all，all，All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Application.readwrite.ownedby、所有的 readwrite、全部、读写。 |
+|Application | Application.readwrite.ownedby、所有的 readwrite、全部、读写。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

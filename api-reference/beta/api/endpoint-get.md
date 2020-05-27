@@ -4,13 +4,13 @@ description: 检索特定终结点对象的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 4bea857418cf4dc911021da58a465cfc53cc30fc
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+author: yyuank
+ms.openlocfilehash: 63bd41f4438fe1cdd90228e83028eb07e54cf38c
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289635"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383737"
 ---
 # <a name="get-endpoint"></a>Get endpoint
 
@@ -28,7 +28,7 @@ ms.locfileid: "44289635"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.Read.All、Group.ReadWrite.All |
+|Application | Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

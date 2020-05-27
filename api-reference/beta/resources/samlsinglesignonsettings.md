@@ -4,13 +4,13 @@ description: 表示 SAML 单一登录设置。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 38fd3a9827f710d032502c71161446201447192f
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+author: sureshja
+ms.openlocfilehash: 60d7f28de54cd772ac440e6f72f61cd2bb08fe00
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290361"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383866"
 ---
 # <a name="samlsinglesignonsettings-resource-type"></a>samlSingleSignOnSettings 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "44290361"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 说明 |
+| 属性 | 类型 | Description |
 |:---------------|:--------|:----------|
 |relayState|String| 单一登录流完成后，服务提供程序将重定向到的相对 URI。 |
 

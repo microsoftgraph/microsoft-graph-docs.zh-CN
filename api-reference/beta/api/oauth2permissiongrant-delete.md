@@ -4,13 +4,13 @@ description: 删除代表委派权限授予的 oAuth2PermissionGrant。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: a82ff97a09831c7ff04ac279d27d23638de0a7f6
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+author: psignoret
+ms.openlocfilehash: c73349396b1e2d65130653e56d49550be3bf969b
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289507"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44384020"
 ---
 # <a name="delete-a-delegated-permission-grant-oauth2permissiongrant"></a>删除委派权限授予（oAuth2PermissionGrant）
 
@@ -35,7 +35,7 @@ ms.locfileid: "44289507"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | DelegatedPermissionGrant、Directory.accessasuser.all、all 和的所有子目录    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

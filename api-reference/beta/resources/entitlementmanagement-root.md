@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 89db8b352e6117de998339b245531da10745b267
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ce8572f3f71a64a41f02b33da51c35132d162201
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499342"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383754"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>使用 Azure AD 权限管理 API
 
@@ -20,7 +20,7 @@ ms.locfileid: "42499342"
 
 Azure Active Directory （Azure AD）权限管理可帮助您管理对组、应用程序和 SharePoint Online 网站的访问权限，以供内部用户和组织外部的用户使用。
 
-通过创建具有用户需要跨这些资源的角色的访问包，以及为可以请求访问包的人员定义策略以及为谁分配对访问包的分配的时间，可以控制内部和的访问的生命周期外部用户。
+通过创建具有用户需要跨这些资源的角色的访问包，以及定义哪些用户可以请求访问包的策略以及这些用户可以对访问包分配多长时间的策略，您可以控制内部和外部用户访问的生命周期。
 
 "权限管理" 资源类型包括：
 
@@ -64,6 +64,13 @@ Azure Active Directory （Azure AD）权限管理可帮助您管理对组、应�
 | [列出 accessPackageCatalog 资源角色](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md)集合 | 检索**accessPackageResourceRole**对象的列表。 |
 | [列出 accessPackageResourceRequests](../api/accesspackageresourcerequest-list.md) | [accessPackageResourceRequest](accesspackageresourcerequest.md)集合 | 读取**accessPackageResourceRequest**对象的属性和关系。 |
 | [创建 accessPackageResourceRequest](../api/accesspackageresourcerequest-post.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | 创建新的**accessPackageResourceRequest**对象。 |
+
+## <a name="types"></a>类型
+
+- [requestorSettings](requestorsettings.md)、 [approvalSettings](approvalsettings.md)和[assignmentReviewSettings](assignmentreviewsettings.md)在[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)中使用，以指定谁可以请求、谁批准以及谁审阅访问包在该策略上的分配请求。
+- [approvalStage](approvalstage.md) -在[approvalSettings](approvalsettings.md)中使用，以指定主要、备份和升级审批者。
+- [userSet](userset.md)子[类型 singleUser](singleuser.md)、 [groupMembers](groupmembers.md)、 [connectedOrganizationMembers](connectedorganizationmembers.md)、 [requestorManager](requestormanager.md)、 [internalSponsors](internalsponsors.md)和[externalSponsors](externalsponsors.md) -在[requestorSettings](requestorsettings.md)、 [approvalStage](approvalstage.md)和[assignmentReviewSettings](assignmentreviewsettings.md)中使用。
+- [accessPackageSubject](accesspackagesubject.md) -在[accessPackageAssignment](accesspackageassignment.md)中用作具有访问包分配的主题用户。
 
 ## <a name="see-also"></a>另请参阅
 

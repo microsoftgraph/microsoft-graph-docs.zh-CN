@@ -2,15 +2,15 @@
 title: 应用程序： addKey
 description: 将密钥凭据添加到应用程序中。
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6f90f6dc952f7d699af426f3da40bf07b8c1f22e
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: c9fc8f97a4deed91013a0a5442b8d79e7b9d04e3
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333117"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383698"
 ---
 # <a name="application-addkey"></a>应用程序： addKey
 
@@ -27,7 +27,7 @@ ms.locfileid: "44333117"
 
 没有任何现有有效证书的应用程序（尚未添加任何证书，或所有证书已过期）将无法使用此服务操作。 可以使用[更新应用程序](../api/application-update.md)操作来改为执行更新。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -113,7 +113,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",

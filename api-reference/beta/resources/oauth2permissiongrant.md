@@ -4,13 +4,13 @@ description: 表示已授予应用程序的委派权限（OAuth 2.0 作用域）
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: bd88f0e7f323b3408e7552148db032c53bd03e94
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+author: psignoret
+ms.openlocfilehash: 39401f1708e8e27443348a766f171680fbd9efd7
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290109"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383747"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>oAuth2PermissionGrant 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "44290109"
 
 委派权限有时称为 "OAuth 2.0 作用域" 或 "作用域"。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|

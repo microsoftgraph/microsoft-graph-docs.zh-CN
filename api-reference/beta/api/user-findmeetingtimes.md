@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 47edf467e3c66313a33f238497b5e9b917edd382
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 05657e2d84501536c62805958187323f4a61b4e1
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "42451978"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383685"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
@@ -32,7 +32,7 @@ ms.locfileid: "42451978"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Calendars.Read.Shared、Calendars.ReadWrite.Shared    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -155,7 +155,7 @@ Content-Type: application/json
   },  
   "timeConstraint": {
     "activityDomain":"work", 
-    "timeslots": [ 
+    "timeSlots": [ 
       { 
         "start": { 
           "dateTime": "2019-04-16T09:00:00",  

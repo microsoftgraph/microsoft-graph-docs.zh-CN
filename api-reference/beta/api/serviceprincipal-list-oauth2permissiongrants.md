@@ -4,13 +4,13 @@ description: 检索 oAuth2PermissionGrant 对象的列表，表示委派权限�
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 8e38f989742597b58646c320b6a5d4256c2fcdd2
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: 9f1ca80170056a20ea121a6011f5cc66162e6f38
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336420"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383054"
 ---
 # <a name="list-oauth2permissiongrants"></a>List oauth2PermissionGrants
 
@@ -20,7 +20,7 @@ ms.locfileid: "44336420"
 
 检索[oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md)实体列表，这些实体代表用户授予的对服务主体（表示客户端应用程序）访问 API 的委派权限。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "44336420"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | "DelegatedPermissionGrant"、"全部"、"全部"、"Directory.accessasuser.all"、"全部"、"全部"、"directory"    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | "DelegatedPermissionGrant"、"全部"、"全部"、"全部"、"全部"、"目录" |
+|Application | "DelegatedPermissionGrant"、"全部"、"全部"、"全部"、"全部"、"目录" |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +42,7 @@ GET /servicePrincipals/{id}/oauth2PermissionGrants
 
 此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称           | 说明                |
 |:---------------|:---------------------------|

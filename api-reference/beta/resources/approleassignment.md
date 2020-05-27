@@ -4,13 +4,13 @@ description: 用于在将用户、组或服务主体分配给应用程序的服�
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 38f8cca5740da2cbd9807cd2411065a6bebda49c
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+author: psignoret
+ms.openlocfilehash: c58b26c2441457f9a7a79e22a19080fff02fd7f8
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291004"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383761"
 ---
 # <a name="approleassignment-resource-type"></a>appRoleAssignment 资源类型
 

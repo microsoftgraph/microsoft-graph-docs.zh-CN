@@ -4,13 +4,13 @@ description: 获取新创建、更新或删除的服务主体，而无需对整�
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 3eca743218861bbd83912ea355124a541c63601d
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+author: sureshja
+ms.openlocfilehash: 8158de169f462a21512001b06474976e397b12b8
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291270"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383411"
 ---
 # <a name="serviceprincipal-delta"></a>servicePrincipal： delta
 
@@ -29,7 +29,7 @@ ms.locfileid: "44291270"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | "Application"、"all"、"Directory.accessasuser.all"、"全部"、"全部"、"全部"、"全部"、"所有"    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | "Application.readwrite.ownedby"、"所有"、"readwrite"、"全部"、"所有"、" |
+|Application | "Application.readwrite.ownedby"、"所有"、"readwrite"、"全部"、"所有"、" |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -44,7 +44,7 @@ GET /servicePrincipals/delta
 
 跟踪更改会产生一个或多个**delta**函数调用的往返。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。 只需预先指定所需的任何查询参数一次。 在后续请求中，可以复制并应用之前响应中返回的 `nextLink` 或 `deltaLink` URL，因为此 URL 已包含所需的编码参数。
 
-| 查询参数      | 类型   |说明|
+| 查询参数      | 类型   |Description|
 |:---------------|:--------|:----------|
 | $deltatoken | string | [state token](/graph/delta-query-overview) `deltaLink` 为同一资源集合在上一个**delta**函数调用的 URL 中返回的状态令牌，指示该往返一轮的更改。 将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
 | $skiptoken | string | 在上一个 delta 函数调用的 URL 中返回的[状态令牌](/graph/delta-query-overview) `nextLink` ，指示同一个资源集合中有进一步的更改需要跟踪。 **delta** |
@@ -59,7 +59,7 @@ GET /servicePrincipals/delta
   * 唯一受支持的 `$filter` 表达式是跟踪对特定资源所做的更改，其 id： `$filter=id+eq+{value}` 或 `$filter=id+eq+{value1}+or+id+eq+{value2}` 。 您可以指定的 id 数受最大 URL 长度的限制。
 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | 持有者&lt;令牌&gt;|

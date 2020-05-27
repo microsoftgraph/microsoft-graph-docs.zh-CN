@@ -2,15 +2,15 @@
 title: servicePrincipal： addKey
 description: 将密钥凭据添加到 servicePrincipal。
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fccde0dac4e447f0e8558e65d375bb475e652f62
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: be1e1cae6907b853a32cf0038f465127ea86f0b1
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333976"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383453"
 ---
 # <a name="serviceprincipal-addkey"></a>servicePrincipal： addKey
 
@@ -27,7 +27,7 @@ ms.locfileid: "44333976"
 
 没有任何现有有效证书的 ServicePrincipals （即：尚未添加证书，或者所有证书已过期）将无法使用此服务操作。 [更新 servicePrincipal](../api/serviceprincipal-update.md)可用于改为执行更新。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -105,7 +105,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",

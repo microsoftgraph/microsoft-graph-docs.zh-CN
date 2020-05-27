@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 77b5482bca2db2ca105095add0e7ab5e5709d311
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: fec1b34769d55c487df5a19f7c82c85c9638fddd
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345616"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383460"
 ---
 # <a name="list-accesspackageassignmentresourceroles"></a>列出 accessPackageAssignmentResourceRoles
 
@@ -28,7 +28,7 @@ ms.locfileid: "44345616"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement、EntitlementManagement 和所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +42,10 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentResourceRol
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求标头
+例如，若要仅检索特定用户的访问包分配资源角色，可以包含一个查询，该查询具有针对该用户的对象 ID 的筛选器 `?$expand=accessPackageSubject&$filter=accessPackageSubject/objectId+eq+'9b835e5c-bf18-4ad9-8556-9b1ea0019c6b'` 。
+
+
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|

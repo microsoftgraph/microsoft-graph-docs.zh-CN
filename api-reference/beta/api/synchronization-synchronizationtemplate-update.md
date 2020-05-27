@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: afc5e0e557f89866f14507314f3673d92df76d7e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 838a2b170687118927a947a7320134c0c3adab7f
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471129"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383642"
 ---
 # <a name="update-synchronizationtemplate"></a>更新 synchronizationTemplate
 
@@ -27,12 +27,12 @@ Update （override）与给定应用程序关联的同步模板。
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     |Directory.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |不支持。|
-|应用程序                            |不支持。| 
+|Application                            |不支持。| 
 
 ### <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PUT application/{id}/synchronization/templates/{templateId}
+PATCH application/{id}/synchronization/templates/{templateId}
 ```
 
 ## <a name="request-headers"></a>请求标头

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 38ccc3094521283c6c496b1d0e35b97a6cf37199
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 2cf41a75f829b9b694b41d7fc0ea543ba6c39523
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353614"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383628"
 ---
 # <a name="failureinfo-resource-type"></a>failureInfo 资源类型
 
@@ -20,11 +20,18 @@ ms.locfileid: "44353614"
 
 表示有关呼叫或呼叫的部分失败原因的信息。
 
+故障可分为两种类型： 
+
+- 呼叫设置失败
+- 中/呼叫删除
+
+如果一个或多个媒体流具有这些故障中的任何一个，则会在分段级别传播该故障。 如果一个或多个段具有这些故障中的任何一个，则会在会话级别传播该故障。
+
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
-|reason|字符串|对呼叫或呼叫部分失败的原因进行分类。|
+|reason|String|对呼叫或呼叫部分失败的原因进行分类。|
 |交给|callRecords。 failureStage|发生故障时的阶段。 可取值为：`unknown`、`callSetup`、`midcall`、`unknownFutureValue`。|
 
 ## <a name="json-representation"></a>JSON 表示形式

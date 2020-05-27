@@ -4,13 +4,13 @@ description: 删除已授予组的 appRoleAssignment。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 1d312ac2d2f5993fed1c77c53cfe3600aba7677e
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: psignoret
+ms.openlocfilehash: c4d5d6b1a15146d8bb02e27a1ca7e2a18c1852bb
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333169"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383733"
 ---
 # <a name="delete-an-approleassignment-granted-to-a-group"></a>删除向组授予的 appRoleAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "44333169"
 
 删除已授予某个组的[appRoleAssignment](../resources/approleassignment.md) 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "44333169"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AppRoleAssignment、Directory.accessasuser.all 和所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | AppRoleAssignment |
+|Application | AppRoleAssignment |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,7 +41,7 @@ DELETE /groups/{id}/appRoleAssignments/{id}
 > [!NOTE]
 > 作为一种最佳做法，我们建议通过 `appRoleAssignedTo` _资源_服务主体的关系（而不是 `appRoleAssignments` 分配的用户、组或服务主体的关系）删除应用程序角色分配。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
