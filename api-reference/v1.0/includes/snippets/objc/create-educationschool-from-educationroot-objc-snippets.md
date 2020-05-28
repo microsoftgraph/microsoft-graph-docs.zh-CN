@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 221b618d9221e1f50645f8f82d817cceb0873ec4
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: 8aa7ffe69e370fdaa9120a16accba5205a84a39f
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37553955"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44384329"
 ---
 ```objc
 
@@ -19,7 +19,6 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphEducationSchool *educationSchool = [[MSGraphEducationSchool alloc] init];
 [educationSchool setDisplayName:@"Fabrikam High School"];
 [educationSchool setDescription:@"Magnate school for the arts. Los Angeles School District"];
-[educationSchool setStatus:@"String"];
 [educationSchool setExternalSource: [MSGraphEducationExternalSource sis]];
 [educationSchool setPrincipalEmail:@"AmyR@fabrikam.com"];
 [educationSchool setPrincipalName:@"Amy Roebuck"];

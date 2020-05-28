@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 94c6c40a91ce09937778ab33bb2c5ed21e8aa3d1
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: c78dd739c35654a38e27aff8a42ef96568eff3d0
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37553954"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44384305"
 ---
 ```csharp
 
@@ -15,7 +15,6 @@ var educationSchool = new EducationSchool
 {
     DisplayName = "Fabrikam High School",
     Description = "Magnate school for the arts. Los Angeles School District",
-    Status = "String",
     ExternalSource = EducationExternalSource.Sis,
     PrincipalEmail = "AmyR@fabrikam.com",
     PrincipalName = "Amy Roebuck",

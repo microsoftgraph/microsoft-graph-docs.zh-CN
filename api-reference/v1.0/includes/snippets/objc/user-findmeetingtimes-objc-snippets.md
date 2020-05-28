@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a304a3698ec8e198d277573fcd6a000ed5d8b80e
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: d894507ed853bce40b0102bdfa0bda40a2ca3763
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "35715061"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44384370"
 ---
 ```objc
 
@@ -42,18 +42,18 @@ payloadDictionary[@"locationConstraint"] = locationConstraint;
 
 MSGraphTimeConstraint *timeConstraint = [[MSGraphTimeConstraint alloc] init];
 [timeConstraint setActivityDomain: [MSGraphActivityDomain work]];
-NSMutableArray *timeslotsList = [[NSMutableArray alloc] init];
-MSGraphTimeSlot *timeslots = [[MSGraphTimeSlot alloc] init];
+NSMutableArray *timeSlotsList = [[NSMutableArray alloc] init];
+MSGraphTimeSlot *timeSlots = [[MSGraphTimeSlot alloc] init];
 MSGraphDateTimeTimeZone *start = [[MSGraphDateTimeTimeZone alloc] init];
 [start setDateTime: "2019-04-16T09:00:00"];
 [start setTimeZone:@"Pacific Standard Time"];
-[timeslots setStart:start];
+[timeSlots setStart:start];
 MSGraphDateTimeTimeZone *end = [[MSGraphDateTimeTimeZone alloc] init];
 [end setDateTime: "2019-04-18T17:00:00"];
 [end setTimeZone:@"Pacific Standard Time"];
-[timeslots setEnd:end];
-[timeslotsList addObject: timeslots];
-[timeConstraint setTimeslots:timeslotsList];
+[timeSlots setEnd:end];
+[timeSlotsList addObject: timeSlots];
+[timeConstraint setTimeSlots:timeSlotsList];
 payloadDictionary[@"timeConstraint"] = timeConstraint;
 
 BOOL isOrganizerOptional = NO;
