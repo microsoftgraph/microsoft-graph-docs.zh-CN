@@ -4,13 +4,13 @@ description: 检索授予服务主体的应用程序角色分配的列表。
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: b590bd9993a9c5b6b0fe86696bb11dbd2d8a540b
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+author: sureshja
+ms.openlocfilehash: 27b896a8dde36aea3993fb098c22219e13be6b29
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345735"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383979"
 ---
 # <a name="list-approleassignments-granted-to-a-service-principal"></a>向服务主体授予的 List appRoleAssignments
 
@@ -29,7 +29,7 @@ ms.locfileid: "44345735"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | "Application"、"all"、"Directory.accessasuser.all"、"全部"、"全部"、"全部"、"全部"、"所有"  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | "Application"、"all"、"全部"、"所有"、"所有"、"所有" |
+|Application | "Application"、"all"、"全部"、"所有"、"所有"、"所有" |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +42,7 @@ GET /servicePrincipals/{id}/appRoleAssignments
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称           | 说明                |
 |:---------------|:---------------------------|

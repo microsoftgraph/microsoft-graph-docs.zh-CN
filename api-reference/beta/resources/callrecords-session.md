@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8c1af52332c5650123d604b8e405bf88d0c2f965
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: cf3be35bd7b1ee1a4ec6185199c3cd5ab3b9b7fc
+ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353123"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408281"
 ---
 # <a name="session-resource-type"></a>会话资源类型
 
@@ -22,7 +22,10 @@ ms.locfileid: "44353123"
 
 ## <a name="methods"></a>方法
 
-不存在直接访问会话的方法。 请使用[Get callRecord](../api/callrecords-callrecord-get.md) api With `$expand=sessions` 获取[callRecord](callrecords-callrecord.md)的会话。
+| 方法       | 返回类型 | 说明 |
+|:-------------|:------------|:------------|
+| [列出会话](../api/callrecords-session-list.md) | [callRecords](callrecords-session.md)集合的 | 检索与[callRecord](callrecords-callrecord.md)对象相关联的会话列表。
+ |
 
 ## <a name="properties"></a>属性
 
@@ -39,7 +42,7 @@ ms.locfileid: "44353123"
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型        | 说明 |
+| 关系 | 类型        | Description |
 |:-------------|:------------|:------------|
 |段|[callRecords 集合。](callrecords-segment.md)|会话中涉及的段的列表。 只读。 可为 Null。|
 

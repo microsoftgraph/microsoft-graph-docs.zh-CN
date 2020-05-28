@@ -4,13 +4,13 @@ description: 获取此服务主体所属的组和目录角色。
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: aaa5f4eb54856e31b424952a9544b073f70f0432
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: 34c55d7a806f125fc8f4a7b060eb9315a4c384a1
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333914"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383544"
 ---
 # <a name="list-serviceprincipal-transitive-memberof"></a>列出 servicePrincipal 可传递的 memberOf
 
@@ -18,14 +18,14 @@ ms.locfileid: "44333914"
 
 获取此[servicePrincipal](../resources/serviceprincipal.md)所属的组和目录角色。 此操作是可传递的，将包括此服务主体是其嵌套成员的所有组。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 所有的读取全部、全部的 Directory.accessasuser.all、全部、全部、全部、目录、全部、    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 应用程序。全部，全部读取全部，全部为，全部为。 |
+|Application | 应用程序。全部，全部读取全部，全部为，全部为。 |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

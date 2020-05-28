@@ -2,15 +2,15 @@
 title: servicePrincipal： addPassword
 description: 将强密码添加到 servicePrincipal。
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8bacfbe59fba998d249e16d59b56acd4aa0a9414
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 6893c98fa9a759f2fd432ce7425cdc9b3832f71c
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334413"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383621"
 ---
 # <a name="serviceprincipal-addpassword"></a>servicePrincipal： addPassword
 
@@ -18,7 +18,7 @@ ms.locfileid: "44334413"
 
 将强密码添加到[servicePrincipal](../resources/serviceprincipal.md)对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

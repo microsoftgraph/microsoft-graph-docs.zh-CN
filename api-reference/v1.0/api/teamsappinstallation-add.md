@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9501c12114df74bab57e589a9b3cad31a9899014
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 6198af51cd341898609b7b13b1a73384fef91c56
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291186"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383915"
 ---
 # <a name="add-app-to-team"></a>向团队添加应用
 
@@ -18,7 +18,7 @@ ms.locfileid: "44291186"
 
 将[应用程序](../resources/teamsapp.md)安装到指定的[团队](../resources/team.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,7 +48,7 @@ POST /teams/{id}/installedApps
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。
+如果成功，此方法返回 `201 Created` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 
@@ -99,7 +99,7 @@ Content-type: application/json
   "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

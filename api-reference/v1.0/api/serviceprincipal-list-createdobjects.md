@@ -4,13 +4,13 @@ description: 检索 directoryobject 对象的列表。
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: f4f9ba34e1cfbc45ee60c2f6e22c726b96957e75
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: b3267b4234b6bf759458474e73bfc93027245b69
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336050"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383980"
 ---
 # <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal： List createdObjects
 
@@ -18,14 +18,14 @@ ms.locfileid: "44336050"
 
 检索 directoryobject 对象的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 所有的读取全部、全部的 Directory.accessasuser.all、全部、全部、全部、目录、全部、    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 应用程序。全部，全部读取全部，全部为，全部为。 |
+|Application | 应用程序。全部，全部读取全部，全部为，全部为。 |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

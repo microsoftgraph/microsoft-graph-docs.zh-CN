@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 95686742ad52663d518659d1f25b1bc74b9014ca
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 5fead75d9d1ea076990daf42f8818bca6fd2d83a
+ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353768"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408337"
 ---
 # <a name="networkinfo-resource-type"></a>networkInfo 资源类型
 
@@ -22,32 +22,32 @@ ms.locfileid: "44353768"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 |bandwidthLowEventRatio|双精度|媒体终结点检测到可用带宽或带宽策略的呼叫数不足以导致发送的音频质量较差。|
-|basicServiceSetIdentifier|字符串|用于连接到网络的媒体终结点的无线 LAN 基本服务集标识符。|
+|basicServiceSetIdentifier|String|用于连接到网络的媒体终结点的无线 LAN 基本服务集标识符。|
 |connectionType|callRecords。 networkConnectionType|媒体终结点使用的网络类型。 可取值为：`unknown`、`wired`、`wifi`、`mobile`、`tunnel`、`unknownFutureValue`。|
 |delayEventRatio|双精度|媒体终结点检测到网络延迟的一小部分，足以影响实时双向通信的能力。|
-|dnsSuffix|字符串|与媒体终结点的网络适配器关联的 DNS 后缀。|
+|dnsSuffix|String|与媒体终结点的网络适配器关联的 DNS 后缀。|
 |ipAddress|String|媒体终结点的 IP 地址。|
 |linkSpeed|Int64|媒体终结点使用的网络适配器报告的链路速度，以位/秒为单位。|
-|macAddress|字符串|媒体终结点的网络设备的媒体访问控制（MAC）地址。|
+|macAddress|String|媒体终结点的网络设备的媒体访问控制（MAC）地址。|
 |端口|Int32|媒体终结点使用的网络端口号。|
 |receivedQualityEventRatio|双精度|媒体终结点检测到网络的呼叫的分数导致收到的音频质量较差。|
-|reflexiveIPAddress|字符串|媒体终结点的 IP 地址，如媒体中继服务器所示。 这通常是与终结点关联的公共 internet IP 地址。|
-|relayIPAddress|字符串|媒体终结点分配的媒体中继服务器的 IP 地址。|
+|reflexiveIPAddress|String|媒体终结点的 IP 地址，如媒体中继服务器所示。 这通常是与终结点关联的公共 internet IP 地址。|
+|relayIPAddress|String|媒体终结点分配的媒体中继服务器的 IP 地址。|
 |relayPort|Int32|媒体终结点在媒体中继服务器上分配的网络端口号。|
 |sentQualityEventRatio|双精度|媒体终结点检测到网络的呼叫的分数导致发送的音频质量较差。|
-|子网|字符串|媒体终结点用于媒体流的子网。|
-|wifiBand|callRecords。 wifiBand|媒体终结点使用的 WiFi 波段。 可取值为：`unknown`、`frequency24GHz`、`frequency50GHz`。|
+|子网|String|媒体终结点用于媒体流的子网。|
+|wifiBand|callRecords。 wifiBand|媒体终结点使用的 WiFi 波段。 可取值为：`unknown`、`frequency24GHz`、`frequency50GHz`、`frequency60GHz`、`unknownFutureValue`。|
 |wifiBatteryCharge|Int32|按媒体终结点报告的百分比估计剩余电池电量。|
 |wifiChannel|Int32|媒体终结点使用的 WiFi 通道。|
-|wifiMicrosoftDriver|字符串|媒体终结点使用的 Microsoft WiFi 驱动程序的名称。 值可能根据终结点使用的语言进行本地化。|
-|wifiMicrosoftDriverVersion|字符串|媒体终结点使用的 Microsoft WiFi 驱动程序的版本。|
+|wifiMicrosoftDriver|String|媒体终结点使用的 Microsoft WiFi 驱动程序的名称。 值可能根据终结点使用的语言进行本地化。|
+|wifiMicrosoftDriverVersion|String|媒体终结点使用的 Microsoft WiFi 驱动程序的版本。|
 |wifiRadioType|callRecords。 wifiRadioType|媒体终结点使用的 WiFi 无线电的类型。 可取值为：`unknown`、`wifi80211a`、`wifi80211b`、`wifi80211g`、`wifi80211n`、`wifi80211ac`、`wifi80211ax`、`unknownFutureValue`。|
 |wifiSignalStrength|Int32|以媒体终结点报告的百分比表示的 WiFi 信号强度。|
-|wifiVendorDriver|字符串|媒体终结点使用的 WiFi 驱动程序的名称。 值可能根据终结点使用的语言进行本地化。|
-|wifiVendorDriverVersion|字符串|媒体终结点使用的 WiFi 驱动程序的版本。|
+|wifiVendorDriver|String|媒体终结点使用的 WiFi 驱动程序的名称。 值可能根据终结点使用的语言进行本地化。|
+|wifiVendorDriverVersion|String|媒体终结点使用的 WiFi 驱动程序的版本。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

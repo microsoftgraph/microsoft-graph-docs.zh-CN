@@ -4,13 +4,13 @@ description: 更新 serviceprincipal 对象的属性。
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: c1bbd4365d632086a71dc48e3a44c3595d4d82cc
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: fa1c055214155c18854dc46a0f1db4e499370e2c
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334524"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383502"
 ---
 # <a name="update-serviceprincipal"></a>更新 servicePrincipal
 
@@ -21,7 +21,7 @@ ms.locfileid: "44334524"
 > [!IMPORTANT]
 > 不支持使用修补程序设置[**passwordCredential**](../resources/passwordcredential.md) 。 使用[addPassword](./serviceprincipal-addpassword.md)和[RemovePassword](./serviceprincipal-removepassword.md)方法更新 servicePrincipal 的密码。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

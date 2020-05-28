@@ -4,13 +4,13 @@ description: 检查指定组列表中的成员身份。 从列表中返回，这
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: bf838a9e13e610ea25d084cbee59c7ad59125ced
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: 74aca8149496509d91213a5866bf1acd053079fb
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334370"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383601"
 ---
 # <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal： checkMemberGroups
 
@@ -18,7 +18,7 @@ ms.locfileid: "44334370"
 
 检查指定组列表中的成员身份。 从列表中返回，这些组的[servicePrincipal](../resources/serviceprincipal.md)具有直接或可传递的成员资格。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

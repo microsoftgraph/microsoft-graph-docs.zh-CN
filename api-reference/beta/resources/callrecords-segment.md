@@ -5,16 +5,16 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ddb6645e65f2f055056c5cde38e976f94ad0af87
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 168ce4053899e49cee2b96ccf09e61c17a2c7f93
+ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394687"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408325"
 ---
 # <a name="segment-resource-type"></a>分段资源类型
 
-命名空间： callRecords
+命名空间：microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "42394687"
 
 ## <a name="methods"></a>方法
 
-不存在直接访问分段的方法。 请使用[Get callRecord](../api/callrecords-callrecord-get.md) api with `$expand=sessions($expand=segments)` to 获取[callRecord](callrecords-callrecord.md)的段。
+不存在直接访问分段的方法。 请使用[Get callRecord](../api/callrecords-callrecord-get.md) api With `$expand=sessions($expand=segments)` 或[List session](../api/callrecords-session-list.md) api with `$expand=segments` to 获取[callRecord](callrecords-callrecord.md)的段。
 
 ## <a name="properties"></a>属性
 

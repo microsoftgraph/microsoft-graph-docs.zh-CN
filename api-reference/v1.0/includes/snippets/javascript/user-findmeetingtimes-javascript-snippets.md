@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5968e6c787d47e179ea3a8482eb7fc87bbcd52de
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 6a6841aa8173635e54f4ec788a058defae1011d6
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "36373637"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44384281"
 ---
 ```javascript
 
@@ -37,7 +37,7 @@ const meetingTimeSuggestionsResult = {
   },  
   timeConstraint: {
     activityDomain:"work", 
-    timeslots: [ 
+    timeSlots: [ 
       { 
         start: { 
           dateTime: "2019-04-16T09:00:00",  

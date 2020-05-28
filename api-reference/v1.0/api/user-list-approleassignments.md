@@ -4,13 +4,13 @@ description: 检索授予用户的应用程序角色分配的列表。
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 3100dbe111b480b2d7d9f444864f05f594eceb62
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: psignoret
+ms.openlocfilehash: 4181ee02f1683646bedd9263d1af053c100fc25b
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333351"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383901"
 ---
 # <a name="list-approleassignments-granted-to-a-user"></a>向用户授予的 List appRoleAssignments
 
@@ -19,7 +19,7 @@ ms.locfileid: "44333351"
 
 检索已授予用户的[appRoleAssignment](../resources/approleassignment.md)的列表。 此操作还返回分配给用户是其直接成员的组的应用程序角色。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -27,7 +27,7 @@ ms.locfileid: "44333351"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | "AppRoleAssignment"、"全部"、"全部"、"Directory.accessasuser.all"、"全部"、"全部"、"directory"  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | "AppRoleAssignment"、"全部"、"全部"、"全部"、"全部"、"目录" |
+|Application | "AppRoleAssignment"、"全部"、"全部"、"全部"、"全部"、"目录" |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ GET /users/{id | userPrincipalName}/appRoleAssignments
 
 此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称           | 说明                |
 |:---------------|:---------------------------|

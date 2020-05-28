@@ -4,13 +4,13 @@ description: 删除 servicePrincipal。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: bb1fc5a41baa29909c95b757208b12d8a1f8783b
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: d57bc6d6370f433a1d67ff2acf719f99c5195877
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334211"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383565"
 ---
 # <a name="delete-serviceprincipal"></a>删除 servicePrincipal
 
@@ -18,7 +18,7 @@ ms.locfileid: "44334211"
 
 删除[servicePrincipal](../resources/serviceprincipal.md)对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |

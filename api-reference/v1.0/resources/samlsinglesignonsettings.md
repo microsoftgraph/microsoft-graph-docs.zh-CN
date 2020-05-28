@@ -4,13 +4,13 @@ description: 表示 SAML 单一登录设置。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 1f6af4e7a1eb88a42f8ac72cefc55609b76bf4c4
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+author: sureshja
+ms.openlocfilehash: eb76d20ab03ca48413c3c1bf0dd1e94e7708b688
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290551"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383481"
 ---
 # <a name="samlsinglesignonsettings-resource-type"></a>samlSingleSignOnSettings 资源类型
 

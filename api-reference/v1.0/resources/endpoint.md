@@ -4,13 +4,13 @@ description: 终结点表示与实体相关联的资源的 Url。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: bd44b9f7ad9313a1d7750b8ae9806dffb8c8c345
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+author: yyuank
+ms.openlocfilehash: 46c43087ef31537f60a2079e72be71378c140612
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290137"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383670"
 ---
 # <a name="endpoint-resource-type"></a>终结点资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "44290137"
 
 终结点表示与实体相关联的资源的 Url。  例如，在创建新的 Office 365 组时，还会创建其他资源作为 Office 365 组的一部分。 其中包括类似于对话的组邮箱和文档和文件的组 OneDrive 文件夹等内容。 有关这些 Office 365 组资源的详细信息（包括其关联的资源 Url）现在可以使用组资源类型中的*终结点*导航进行读取。 这样，应用程序可以了解这些资源，甚至可以在自己的体验中嵌入资源 URL 体验。 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|

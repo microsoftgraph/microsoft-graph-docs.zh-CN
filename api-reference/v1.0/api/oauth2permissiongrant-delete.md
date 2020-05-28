@@ -4,13 +4,13 @@ description: 删除代表委派权限授予的 oAuth2PermissionGrant。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 4749e23e9ab77fad50b1a64d26720b108bf5b99f
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: psignoret
+ms.openlocfilehash: cfe6ac41b3877bf542b496b1e228ee77aec027d4
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336092"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383813"
 ---
 # <a name="delete-a-delegated-permission-grant-oauth2permissiongrant"></a>删除委派权限授予（oAuth2PermissionGrant）
 
@@ -23,7 +23,7 @@ ms.locfileid: "44336092"
 > [!NOTE]
 > 在调用 API 时，可能有两个委派权限授权应用程序代表用户执行操作。 当用户代表自己对应用程序同意时（创建具有**consentType** *主体*的**oAuth2PermissionGrant** ，标识用户），然后管理员授予代表所有用户的租户范围*内的管理员*同意（使用 consentType 的**AllPrincipals**创建第二个**oAuth2PermissionGrant** ）时，可能会发生这种情况。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "44336092"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | DelegatedPermissionGrant、Directory.accessasuser.all、all 和的所有子目录    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

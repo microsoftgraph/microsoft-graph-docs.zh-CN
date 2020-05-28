@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f3f66e72ab23f97265a7f15d00d4e206be25a345
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: 26abdbae29a56b37a196b7101160ecf3b0b1aaa8
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37553952"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44384338"
 ---
 ```java
 
@@ -14,7 +14,6 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 EducationSchool educationSchool = new EducationSchool();
 educationSchool.displayName = "Fabrikam High School";
 educationSchool.description = "Magnate school for the arts. Los Angeles School District";
-educationSchool.status = "String";
 educationSchool.externalSource = EducationExternalSource.SIS;
 educationSchool.principalEmail = "AmyR@fabrikam.com";
 educationSchool.principalName = "Amy Roebuck";

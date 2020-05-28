@@ -1,24 +1,24 @@
 ---
-title: 获取 callRecord
-description: 检索 callrecord 对象的属性和关系。
+title: 列出 callRecord 会话
+description: 检索 callRecord 的 session 对象的列表。
 localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a913e4b1e355295cf6e34a025c6b26e16d7bca6b
+ms.openlocfilehash: a0faa79814d82572d6b4a57cb16ee9ef2172161e
 ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/28/2020
-ms.locfileid: "44408293"
+ms.locfileid: "44408373"
 ---
-# <a name="get-callrecord"></a>获取 callRecord
+# <a name="list-callrecord-sessions"></a>列出 callRecord 会话
 
 命名空间：microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[callRecord](../resources/callrecords-callrecord.md)对象的属性和关系。
+检索与[callRecord](../resources/callrecords-callrecord.md)对象相关联的[会话](../resources/callrecords-session.md)列表。
 
 ## <a name="permissions"></a>权限
 
@@ -35,7 +35,7 @@ ms.locfileid: "44408293"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /communications/callRecords/{id}
+GET /communications/callRecords/{id}/sessions
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -54,23 +54,23 @@ GET /communications/callRecords/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[callRecords callRecord](../resources/callrecords-callrecord.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[session](../resources/callrecords-session.md)对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-basic-details"></a>示例1：获取基本详细信息
+### <a name="example-1-get-session-list"></a>示例1：获取会话列表
 
 #### <a name="request"></a>请求
 
-下面的示例演示了从[callRecord](../resources/callrecords-callrecord.md)获取基本详细信息的请求。
+下面的示例演示了获取[callRecord](../resources/callrecords-callrecord.md)[会话](../resources/callrecords-session.md)列表的请求。
 
 <!-- {
   "blockType": "request",
-  "name": "get_callrecord"
+  "name": "get_callrecord_sessions"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/communications/callRecords/{id}
+GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions
 ```
 
 #### <a name="response"></a>响应
@@ -82,7 +82,8 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callRecords.callRecord"
+  "@odata.type": "microsoft.graph.callRecords.session",
+  "isCollection": true
 } -->
 
 ```http
@@ -90,67 +91,93 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords/$entity",
-    "version": 1,
-    "type": "peerToPeer",
-    "modalities": [
-        "audio"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions",
+    "value": [
+        {
+            "id": "e523d2ed-2966-4b6b-925b-754a88034cc5",
+            "modalities": [
+                "audio"
+            ],
+            "startDateTime": "2020-02-25T18:52:21.2169889Z",
+            "endDateTime": "2020-02-25T18:52:46.7640013Z",
+            "caller": {
+                "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
+                "userAgent": {
+                    "@odata.type": "#microsoft.graph.callRecords.clientUserAgent",
+                    "headerValue": "RTCC/7.0.0.0 UCWA/7.0.0.0 AndroidLync/6.25.0.27 (SM-G930U Android 8.0.0)",
+                    "platform": "android",
+                    "productFamily": "skypeForBusiness"
+                },
+                "identity": {
+                    "@odata.type": "#microsoft.graph.identitySet",
+                    "user": {
+                        "id": "821809f5-0000-0000-0000-3b5136c0e777",
+                        "displayName": "Abbie Wilkins",
+                        "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
+                    }
+                }
+            },
+            "callee": {
+                "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
+                "userAgent": {
+                    "@odata.type": "#microsoft.graph.callRecords.clientUserAgent",
+                    "headerValue": "UCCAPI/16.0.12527.20122 OC/16.0.12527.20194 (Skype for Business)",
+                    "platform": "windows",
+                    "productFamily": "skypeForBusiness"
+                },
+                "identity": {
+                    "user": {
+                        "id": "f69e2c00-0000-0000-0000-185e5f5f5d8a",
+                        "displayName": "Owen Franklin",
+                        "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
+                    }
+                },
+                "feedback": {
+                    "rating": "poor",
+                    "tokens": {
+                        "NoSound": false,
+                        "OtherNoSound": false,
+                        "Echo": false,
+                        "Noisy": true,
+                        "LowVolume": false,
+                        "Stopped": false,
+                        "DistortedSound": false,
+                        "Interruptions": false
+                    }
+                }
+            }
+        }
     ],
-    "lastModifiedDateTime": "2020-02-25T19:00:24.582757Z",
-    "startDateTime": "2020-02-25T18:52:21.2169889Z",
-    "endDateTime": "2020-02-25T18:52:46.7640013Z",
-    "id": "e523d2ed-2966-4b6b-925b-754a88034cc5",
-    "organizer": {
-        "user": {
-            "id": "821809f5-0000-0000-0000-3b5136c0e777",
-            "displayName": "Abbie Wilkins",
-            "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
-        }
-    },
-    "participants": [
-        {
-            "user": {
-                "id": "821809f5-0000-0000-0000-3b5136c0e777",
-                "displayName": "Abbie Wilkins",
-                "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
-            }
-        },
-        {
-            "user": {
-                "id": "f69e2c00-0000-0000-0000-185e5f5f5d8a",
-                "displayName": "Owen Franklin",
-                "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
-            }
-        }
-    ]
+    "@odata.nextlink": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$skiptoken=abc"
 }
 ```
 
-### <a name="example-2-get-full-details"></a>示例2：获取完整详细信息
+### <a name="example-2-get-session-list-with-segments"></a>示例2：获取分段的会话列表
 
 #### <a name="request"></a>请求
 
-下面是从[callRecord](../resources/callrecords-callrecord.md)中获取完整详细信息（包括会话和分段组件）的请求示例。
+下面的示例演示了如何获取包含包含[分段](../resources/callrecords-segment.md)的[callRecord](../resources/callrecords-callrecord.md)的[会话](../resources/callrecords-session.md)列表的请求。
 
 <!-- {
   "blockType": "request",
-  "name": "get_callrecord_expanded"
+  "name": "get_callrecord_sessions_expanded"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=sessions($expand=segments)
+GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions?$expand=segments
 ```
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。 如果 "会话" 列表被截断， `sessions@odata.nextlink` 将提供一个值，以检索下一个会话页面。
+下面展示了示例响应。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callRecords.callRecord"
+  "@odata.type": "microsoft.graph.callRecords.session",
+  "isCollection": true
 } -->
 
 ```http
@@ -158,48 +185,15 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords(sessions(segments()))/$entity",
-    "version": 1,
-    "type": "peerToPeer",
-    "modalities": [
-        "audio"
-    ],
-    "lastModifiedDateTime": "2020-02-25T19:00:24.582757Z",
-    "startDateTime": "2020-02-25T18:52:21.2169889Z",
-    "endDateTime": "2020-02-25T18:52:46.7640013Z",
-    "id": "e523d2ed-2966-4b6b-925b-754a88034cc5",
-    "organizer": {
-        "user": {
-            "id": "821809f5-0000-0000-0000-3b5136c0e777",
-            "displayName": "Abbie Wilkins",
-            "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
-        }
-    },
-    "participants": [
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions",
+    "value": [
         {
-            "user": {
-                "id": "821809f5-0000-0000-0000-3b5136c0e777",
-                "displayName": "Abbie Wilkins",
-                "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
-            }
-        },
-        {
-            "user": {
-                "id": "f69e2c00-0000-0000-0000-185e5f5f5d8a",
-                "displayName": "Owen Franklin",
-                "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
-            }
-        }
-    ],
-    "sessions@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions(segments())",
-    "sessions": [
-        {
+            "id": "e523d2ed-2966-4b6b-925b-754a88034cc5",
             "modalities": [
                 "audio"
             ],
             "startDateTime": "2020-02-25T18:52:21.2169889Z",
             "endDateTime": "2020-02-25T18:52:46.7640013Z",
-            "id": "e523d2ed-2966-4b6b-925b-754a88034cc5",
             "caller": {
                 "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
                 "userAgent": {
@@ -385,7 +379,7 @@ Content-type: application/json
             ]
         }
     ],
-    "sessions@odata.nextlink": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$expand=segments&$skiptoken=abc"
+    "@odata.nextlink": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$expand=segments&$skiptoken=abc"
 }
 ```
 
@@ -393,7 +387,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get callRecord",
+  "description": "List sessions",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

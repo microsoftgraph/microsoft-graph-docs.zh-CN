@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ef9cca7194adeeea1c3fc52c02e4b3d515afe2c3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4cf94b24204b29524010161abf05e6f6747e2d5e
+ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43396095"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408288"
 ---
 # <a name="update-group"></a>更新组
 
@@ -60,7 +60,7 @@ PATCH /groups/{id}
 |securityEnabled|布尔|指定该组是否为安全组，包括 Office 365 组。 |
 |visibility|String|指定 Office 365 组的可见性。可能的值是：**专用**、**公用**或空（解释为**公用**）。|
 
-由于**组**资源支持[扩展](/graph/extensibility-overview)，因此您可以使用该`PATCH`操作在现有**组**实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
+由于**组**资源支持[扩展](/graph/extensibility-overview)，因此您可以使用该 `PATCH` 操作在现有**组**实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
 
 
 > **注意：**
@@ -75,13 +75,13 @@ PATCH /groups/{id}
 
 如果成功，此方法返回 `204 No Content` 响应代码。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
 
+### <a name="example-1-update-display-name-and-description-of-a-group"></a>示例1：更新组的显示名称和说明
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_group"
@@ -95,32 +95,49 @@ Content-length: 211
 {
   "description": "description-value",
   "displayName": "displayName-value",
-  "groupTypes": [
-    "groupTypes-value"
-  ],
-  "mail": "mail-value",
-  "mailEnabled": true,
-  "mailNickname": "mailNickname-value"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+### <a name="example-2-apply-sensitivity-label-to-an-office-365-group"></a>示例2：将敏感度标签应用于 Office 365 组
+#### <a name="request"></a>请求
+
+您可以使用[列表标签](informationprotectionpolicy-list-labels.md)获取要应用于 Office 365 组的标签的 ID。 然后，可以使用标签 ID 更新组的[assignedLabels](../resources/assignedlabel.md)属性。 
+
+<!-- {
+  "blockType": "request",
+  "name": "update_group"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/groups/{id}
+Content-type: application/json
+Content-length: 211
+
+{
+  "assignedLabels": 
+  [
+    {
+        "labelId" : "45cd0c48-c540-4358-ad79-a3658cdc5b88"
+    }
+  ]
+}
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true,

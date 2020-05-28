@@ -2,15 +2,15 @@
 title: servicePrincipal： removeKey
 description: 从 servicePrincipal 中删除密钥凭据
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3d0e4a4ea18d46d5c328c5ec9440608a8ba1e264
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: df9d96824b1744eeb3e2855529150b0cc2bac872
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334882"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383523"
 ---
 # <a name="serviceprincipal-removekey"></a>servicePrincipal： removeKey
 
@@ -23,7 +23,7 @@ ms.locfileid: "44334882"
 
 作为此方法的请求验证的一部分，在可以执行操作之前，将验证已拥有现有密钥的证明。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|

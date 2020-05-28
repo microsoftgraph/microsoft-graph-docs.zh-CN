@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: cloud-communications
 author: gageames
-ms.openlocfilehash: 67610095d7780a85ce4c074b36035d89afd67bb8
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 4769eef3dec5dbb7bc5c61fd91cffc76a9bd5e15
+ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353909"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408358"
 ---
 命名空间：microsoft.graph.callRecords
 
@@ -133,6 +133,8 @@ ms.locfileid: "44353909"
 | unknown
 | frequency24GHz
 | frequency50GHz
+| frequency60GHz
+| 向 unknownfuturevalue
 
 ### <a name="wifiradiotype-values"></a>wifiRadioType 值
 

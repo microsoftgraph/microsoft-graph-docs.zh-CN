@@ -4,13 +4,13 @@ description: 向组授予应用程序角色分配。
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: a58bc51eb9e173854ef075d6dec9f81ff1c617a1
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: psignoret
+ms.openlocfilehash: b38b731351cf4ea5cf038901344cec29b797484f
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334986"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383822"
 ---
 # <a name="grant-an-approleassignment-to-a-group"></a>向组授予 appRoleAssignment
 
@@ -24,7 +24,7 @@ ms.locfileid: "44334986"
 
 若要[使用组来管理对应用程序的访问](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-saasapps)，可能需要其他许可证。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -32,7 +32,7 @@ ms.locfileid: "44334986"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AppRoleAssignment、Directory.accessasuser.all 和所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | AppRoleAssignment |
+|Application | AppRoleAssignment |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -44,7 +44,7 @@ POST /groups/{id}/appRoleAssignments
 > [!NOTE]
 > 作为一种最佳做法，我们建议通过 `appRoleAssignedTo` _资源_服务主体的关系创建应用程序角色分配，而不是 `appRoleAssignments` 分配的用户、组或服务主体的关系。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称       | 说明|
 |:-----------|:----------|

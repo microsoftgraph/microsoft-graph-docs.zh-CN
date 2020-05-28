@@ -4,13 +4,13 @@ description: 获取此服务主体所属的组列表。  检查是可传递的�
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: e2585d20c9de39d76482fb02efa69557754a1fcf
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: 1680109fff35b4a30d88cabffcae81fc7a776f31
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333992"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44384006"
 ---
 # <a name="serviceprincipal-getmembergroups"></a>servicePrincipal： getMemberGroups
 
@@ -18,7 +18,7 @@ ms.locfileid: "44333992"
 
 获取此[servicePrincipal](../resources/serviceprincipal.md)所属组的列表。  检查是可传递的。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 

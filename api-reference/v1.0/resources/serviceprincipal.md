@@ -4,13 +4,13 @@ description: 表示目录中的一个应用程序实例。 继承自 directoryOb
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 94a651a613d64ee5cefeed6a7e8f3f0b4656a916
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: f04b7324c31d0ec0f33976f60a736d25cd69af5e
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44332318"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383474"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 

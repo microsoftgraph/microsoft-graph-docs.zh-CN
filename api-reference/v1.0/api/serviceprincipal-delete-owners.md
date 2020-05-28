@@ -1,16 +1,16 @@
 ---
 title: 删除所有者
 description: 从 servicePrincipals 中删除所有者。
-author: davidmu1
+author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3999d5d193e4084b57f59fc2c5ca4fa647fa29a4
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 894eb238d5ea663b4fc9b1224e956e22e7e81dbe
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334167"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383572"
 ---
 # <a name="remove-owner"></a>删除所有者
 
@@ -18,14 +18,14 @@ ms.locfileid: "44334167"
 
 从[servicePrincipal](../resources/serviceprincipal.md)对象中删除所有者。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 所有的 Directory.accessasuser.all，all，all，All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Application.readwrite.ownedby 的所有应用程序。 |
+|Application | Application.readwrite.ownedby 的所有应用程序。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

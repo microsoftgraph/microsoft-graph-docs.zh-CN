@@ -4,19 +4,19 @@ description: 获取新创建、更新或删除的服务主体，而无需对整�
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 8ebd937254bf718263426a4d5bcdad058779aa1e
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+author: sureshja
+ms.openlocfilehash: 19d7e364c5a3c8a6ea7aa9839ec53320b8c4c434
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334111"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383558"
 ---
 # <a name="serviceprincipal-delta"></a>servicePrincipal： delta
 
 获取新创建、更新或删除的服务主体，而无需对整个资源集合执行完全读取。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -55,7 +55,7 @@ GET /servicePrincipals/delta
   * 唯一受支持的 `$filter` 表达式是跟踪对特定资源所做的更改，其 id： `$filter=id+eq+{value}` 或 `$filter=id+eq+{value1}+or+id+eq+{value2}` 。 您可以指定的 id 数受最大 URL 长度的限制。
 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | 持有者&lt;令牌&gt;|

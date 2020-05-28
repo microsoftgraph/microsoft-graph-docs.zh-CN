@@ -1,16 +1,16 @@
 ---
 title: 列出 servicePrincipals
 description: 检索 servicePrincipal 对象列表。
-author: davidmu1
+author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fb8c92433373c295bfc654615711c7b8b4901fa7
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 9f7d6064546887a820a4d056d22de40fb084b6d2
+ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334846"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44383943"
 ---
 # <a name="list-serviceprincipals"></a>列出 servicePrincipals
 
@@ -18,7 +18,7 @@ ms.locfileid: "44334846"
 
 检索[servicePrincipal](../resources/serviceprincipal.md)对象的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "44334846"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 所有的读取全部、全部的 Directory.accessasuser.all、全部、全部、全部、目录、全部、    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 应用程序。全部，全部读取全部，全部 |
+|Application | 应用程序。全部，全部读取全部，全部 |
 
 ## <a name="http-request"></a>HTTP 请求
 

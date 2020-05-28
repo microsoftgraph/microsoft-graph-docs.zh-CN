@@ -333,7 +333,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 备注
+          - name: 注释
             href: resources/onenote.md
             items:
               - name: 创建笔记本
@@ -976,6 +976,10 @@ items:
                 href: resources/callrecords-callrecord.md
               - name: 获取呼叫记录
                 href: api/callrecords-callrecord-get.md
+              - name: 会话
+                href: resources/callrecords-session.md
+              - name: 列出会话
+                href: api/callrecords-session-list.md
       - name: 跨设备体验
         displayName: Project Rome
         items:
@@ -2560,7 +2564,7 @@ items:
                   - name: 注册配置文件
                     href: resources/intune-enrollment-enrollmentprofile.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-enrollment-enrollmentprofile-list.md
                       - name: 获取
                         href: api/intune-enrollment-enrollmentprofile-get.md
@@ -2577,7 +2581,7 @@ items:
                   - name: 已导入的 Apple 设备标识
                     href: resources/intune-enrollment-importedappledeviceidentity.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-enrollment-importedappledeviceidentity-list.md
                       - name: 获取
                         href: api/intune-enrollment-importedappledeviceidentity-get.md
@@ -2991,7 +2995,7 @@ items:
                   - name: Android for Work 自定义配置
                     href: resources/intune-deviceconfig-androidforworkcustomconfiguration.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-deviceconfig-androidforworkcustomconfiguration-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-androidforworkcustomconfiguration-get.md
@@ -3006,7 +3010,7 @@ items:
                   - name: Android for Work EAS 电子邮件配置文件基础
                     href: resources/intune-deviceconfig-androidforworkeasemailprofilebase.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-deviceconfig-androidforworkeasemailprofilebase-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-androidforworkeasemailprofilebase-get.md
@@ -3626,7 +3630,7 @@ items:
                   - name: 设备符合性策略分配
                     href: resources/intune-deviceconfig-devicecompliancepolicyassignment.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-deviceconfig-devicecompliancepolicyassignment-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-devicecompliancepolicyassignment-get.md
@@ -3648,7 +3652,7 @@ items:
                   - name: 设备符合性策略设置状态摘要
                     href: resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-get.md
@@ -4707,7 +4711,7 @@ items:
                   - name: macOS Endpoint Protection 配置
                     href: resources/intune-deviceconfig-macosendpointprotectionconfiguration.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-deviceconfig-macosendpointprotectionconfiguration-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-macosendpointprotectionconfiguration-get.md
@@ -4720,7 +4724,7 @@ items:
                   - name: macOS 企业版 Wi-Fi 配置
                     href: resources/intune-deviceconfig-macosenterprisewificonfiguration.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-deviceconfig-macosenterprisewificonfiguration-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-macosenterprisewificonfiguration-get.md
@@ -5561,14 +5565,14 @@ items:
                   - name: Windows 证书配置文件基础
                     href: resources/intune-deviceconfig-windowscertificateprofilebase.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-deviceconfig-windowscertificateprofilebase-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-windowscertificateprofilebase-get.md
                   - name: Windows Defender 高级威胁防护配置
                     href: resources/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-get.md
@@ -6401,7 +6405,7 @@ items:
                   - name: 设备管理脚本组分配
                     href: resources/intune-devices-devicemanagementscriptgroupassignment.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-devices-devicemanagementscriptgroupassignment-list.md
                       - name: 获取
                         href: api/intune-devices-devicemanagementscriptgroupassignment-get.md
@@ -6421,7 +6425,7 @@ items:
                   - name: 设备管理脚本用户状态
                     href: resources/intune-devices-devicemanagementscriptuserstate.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-devices-devicemanagementscriptuserstate-list.md
                       - name: 获取
                         href: api/intune-devices-devicemanagementscriptuserstate-get.md
@@ -6618,7 +6622,7 @@ items:
                   - name: 嵌入式 SIM 卡设备状态
                     href: resources/intune-esim-embeddedsimdevicestate.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-esim-embeddedsimdevicestate-list.md
                       - name: 获取
                         href: api/intune-esim-embeddedsimdevicestate-get.md
@@ -6633,7 +6637,7 @@ items:
                   - name: 注册疑难解答事件
                     href: resources/intune-troubleshooting-enrollmenttroubleshootingevent.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-troubleshooting-enrollmenttroubleshootingevent-list.md
                       - name: 获取
                         href: api/intune-troubleshooting-enrollmenttroubleshootingevent-get.md
@@ -6829,7 +6833,7 @@ items:
                   - name: 网络 IPv4 配置管理条件
                     href: resources/intune-fencing-networkipv4configurationmanagementcondition.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-fencing-networkipv4configurationmanagementcondition-list.md
                       - name: 获取
                         href: api/intune-fencing-networkipv4configurationmanagementcondition-get.md
@@ -6842,7 +6846,7 @@ items:
                   - name: 网络 IPv6 配置管理条件
                     href: resources/intune-fencing-networkipv6configurationmanagementcondition.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-fencing-networkipv6configurationmanagementcondition-list.md
                       - name: 获取
                         href: api/intune-fencing-networkipv6configurationmanagementcondition-get.md
@@ -7474,7 +7478,7 @@ items:
                   - name: Windows 信息保护网络学习摘要
                     href: resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-list.md
                       - name: 获取
                         href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-get.md
@@ -7489,7 +7493,7 @@ items:
                   - name: Windows 信息保护策略
                     href: resources/intune-mam-windowsinformationprotectionpolicy.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-mam-windowsinformationprotectionpolicy-list.md
                       - name: 获取
                         href: api/intune-mam-windowsinformationprotectionpolicy-get.md
@@ -7691,7 +7695,7 @@ items:
                   - name: 侧加载密钥
                     href: resources/intune-onboarding-sideloadingkey.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-onboarding-sideloadingkey-list.md
                       - name: 获取
                         href: api/intune-onboarding-sideloadingkey-get.md
@@ -7704,7 +7708,7 @@ items:
                   - name: VPP 令牌
                     href: resources/intune-onboarding-vpptoken.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-onboarding-vpptoken-list.md
                       - name: 获取
                         href: api/intune-onboarding-vpptoken-get.md
