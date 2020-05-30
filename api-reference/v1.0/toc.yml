@@ -814,6 +814,24 @@ items:
                     href: api/place-get.md
                   - name: 更新位置
                     href: api/place-update.md
+      - name: 更改通知
+        displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+        items:
+          - name: 概述
+            href: resources/webhooks.md
+          - name: 订阅
+            href: resources/subscription.md
+            items:
+              - name: 列出订阅
+                href: api/subscription-list.md
+              - name: 获取订阅
+                href: api/subscription-get.md
+              - name: 创建订阅
+                href: api/subscription-post-subscriptions.md
+              - name: 更新订阅
+                href: api/subscription-update.md
+              - name: 删除订阅
+                href: api/subscription-delete.md
       - name: 云通信
         displayName: Cloud communications
         items:
@@ -1056,7 +1074,7 @@ items:
               - name: macOS Office 套件应用
                 href: resources/intune-apps-macosofficesuiteapp.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-apps-macosofficesuiteapp-list.md
                   - name: 获取
                     href: api/intune-apps-macosofficesuiteapp-get.md
@@ -1069,7 +1087,7 @@ items:
               - name: 托管的 Android LOB 应用
                 href: resources/intune-apps-managedandroidlobapp.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-apps-managedandroidlobapp-list.md
                   - name: 获取
                     href: api/intune-apps-managedandroidlobapp-get.md
@@ -1264,7 +1282,7 @@ items:
               - name: 移动应用类别
                 href: resources/intune-apps-mobileappcategory.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-apps-mobileappcategory-list.md
                   - name: 获取
                     href: api/intune-apps-mobileappcategory-get.md
@@ -1290,7 +1308,7 @@ items:
               - name: 移动应用内容文件
                 href: resources/intune-apps-mobileappcontentfile.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-apps-mobileappcontentfile-list.md
                   - name: 获取
                     href: api/intune-apps-mobileappcontentfile-get.md
@@ -1487,7 +1505,7 @@ items:
               - name: Android 常规设备配置
                 href: resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-get.md
@@ -1502,7 +1520,7 @@ items:
               - name: Android 工作配置文件符合性策略
                 href: resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-get.md
@@ -1711,7 +1729,7 @@ items:
               - name: 设备配置
                 href: resources/intune-deviceconfig-deviceconfiguration.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-deviceconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-deviceconfiguration-get.md
@@ -1720,7 +1738,7 @@ items:
               - name: 设备配置分配
                 href: resources/intune-deviceconfig-deviceconfigurationassignment.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-deviceconfigurationassignment-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-deviceconfigurationassignment-get.md
@@ -1924,7 +1942,7 @@ items:
               - name: macOS 符合性策略
                 href: resources/intune-deviceconfig-macoscompliancepolicy.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-macoscompliancepolicy-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-macoscompliancepolicy-get.md
@@ -1937,7 +1955,7 @@ items:
               - name: macOS 自定义配置
                 href: resources/intune-deviceconfig-macoscustomconfiguration.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-macoscustomconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-macoscustomconfiguration-get.md
@@ -2124,7 +2142,7 @@ items:
               - name: Windows 10 自定义配置
                 href: resources/intune-deviceconfig-windows10customconfiguration.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-windows10customconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-windows10customconfiguration-get.md
@@ -2139,7 +2157,7 @@ items:
               - name: Windows 10 Endpoint Protection 配置
                 href: resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-get.md
@@ -2778,7 +2796,7 @@ items:
               - name: Windows 信息保护
                 href: resources/intune-mam-windowsinformationprotection.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-mam-windowsinformationprotection-list.md
                   - name: 获取
                     href: api/intune-mam-windowsinformationprotection-get.md
@@ -2789,7 +2807,7 @@ items:
               - name: Windows 信息保护应用学习摘要
                 href: resources/intune-wip-windowsinformationprotectionapplearningsummary.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-wip-windowsinformationprotectionapplearningsummary-list.md
                   - name: 获取
                     href: api/intune-wip-windowsinformationprotectionapplearningsummary-get.md
@@ -2992,7 +3010,7 @@ items:
               - name: 组织
                 href: resources/intune-onboarding-organization.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-onboarding-organization-list.md
                   - name: 获取
                     href: api/intune-onboarding-organization-get.md
@@ -3005,7 +3023,7 @@ items:
               - name: VPP 令牌
                 href: resources/intune-onboarding-vpptoken.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-onboarding-vpptoken-list.md
                   - name: 获取
                     href: api/intune-onboarding-vpptoken-get.md
@@ -3265,6 +3283,34 @@ items:
                 href: api/educationuser-get.md
               - name: 删除用户
                 href: api/educationuser-delete.md
+      - name: 扩展
+        items:
+          - name: 开放扩展
+            href: resources/opentypeextension.md
+            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+            items:
+              - name: 创建开放扩展
+                href: api/opentypeextension-post-opentypeextension.md
+              - name: 获取开放扩展
+                href: api/opentypeextension-get.md
+              - name: 更新开放扩展
+                href: api/opentypeextension-update.md
+              - name: 删除开放扩展
+                href: api/opentypeextension-delete.md
+          - name: 架构扩展
+            href: resources/schemaextension.md
+            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+            items:
+              - name: 列出架构扩展
+                href: api/schemaextension-list.md
+              - name: 创建架构扩展
+                href: api/schemaextension-post-schemaextensions.md
+              - name: 获取架构扩展
+                href: api/schemaextension-get.md
+              - name: 更新架构扩展
+                href: api/schemaextension-update.md
+              - name: 删除架构扩展
+                href: api/schemaextension-delete.md
       - name: 文件
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
@@ -4721,7 +4767,7 @@ items:
               - name: 打开班次轮换更改请求
                 href: resources/openshiftchangerequest.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/openshiftchangerequest-list.md
                   - name: 创建
                     href: api/openshiftchangerequest-post.md
@@ -4741,7 +4787,7 @@ items:
               - name: 交换班次更改请求
                 href: resources/swapshiftschangerequest.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/swapshiftschangerequest-list.md
                   - name: 创建
                     href: api/swapshiftschangerequest-post.md
@@ -4957,50 +5003,3 @@ items:
                 href: api/nameditem-add.md
               - name: 列出区域
                 href: api/nameditem-range.md
-      - name: 工具
-        expanded: true
-        items:
-          - name: 开放扩展
-            href: resources/opentypeextension.md
-            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
-            items:
-              - name: 创建开放扩展
-                href: api/opentypeextension-post-opentypeextension.md
-              - name: 获取开放扩展
-                href: api/opentypeextension-get.md
-              - name: 更新开放扩展
-                href: api/opentypeextension-update.md
-              - name: 删除开放扩展
-                href: api/opentypeextension-delete.md
-          - name: 架构扩展
-            href: resources/schemaextension.md
-            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
-            items:
-              - name: 列出架构扩展
-                href: api/schemaextension-list.md
-              - name: 创建架构扩展
-                href: api/schemaextension-post-schemaextensions.md
-              - name: 获取架构扩展
-                href: api/schemaextension-get.md
-              - name: 更新架构扩展
-                href: api/schemaextension-update.md
-              - name: 删除架构扩展
-                href: api/schemaextension-delete.md
-          - name: 更改通知
-            displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
-            items:
-              - name: 概述
-                href: resources/webhooks.md
-              - name: 订阅
-                href: resources/subscription.md
-                items:
-                  - name: 列出订阅
-                    href: api/subscription-list.md
-                  - name: 获取订阅
-                    href: api/subscription-get.md
-                  - name: 创建订阅
-                    href: api/subscription-post-subscriptions.md
-                  - name: 更新订阅
-                    href: api/subscription-update.md
-                  - name: 删除订阅
-                    href: api/subscription-delete.md
