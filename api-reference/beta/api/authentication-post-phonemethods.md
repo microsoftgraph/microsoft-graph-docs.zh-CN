@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3f4979c9f1910a7092223d982189178844af5eba
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 2bd29ee6e2f78e8864bce6a09cac456c4ab5ce6a
+ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43805690"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429582"
 ---
 # <a name="create-phoneauthenticationmethod"></a>创建 phoneAuthenticationMethod
 
@@ -18,21 +18,21 @@ ms.locfileid: "43805690"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-添加新的[电话身份验证方法](../resources/phoneauthenticationmethod.md)。 用户的每种类型只能有一个电话，在**phoneType**属性中捕获。 这意味着，向具有预先存在`mobile` `mobile`的手机的用户添加电话将会失败。 此外，在添加`mobile` `alternateMobile`电话之前，用户必须始终具有电话。
+添加新的[电话身份验证方法](../resources/phoneauthenticationmethod.md)。 用户的每种类型只能有一个电话，在**phoneType**属性中捕获。 这意味着， `mobile` 向具有预先存在的手机的用户添加电话将会 `mobile` 失败。 此外，在添加电话之前，用户必须始终具有 `mobile` 电话 `alternateMobile` 。
 
 通过添加电话号码，可以在 Azure 多重身份验证（MFA）和自助服务密码重置（SSPR）（如果已启用）中使用。
 
-此外，如果用户启用了策略以使用 SMS 登录并添加了一个`mobile`号码，则系统会尝试注册该号码以在该系统中使用。
+此外，如果用户启用了策略以使用 SMS 登录并添加了一个 `mobile` 号码，则系统会尝试注册该号码以在该系统中使用。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 作用于自助的权限（从最高特权到最高特权） | 对其他用户的权限（从最低到最高特权）|
 |:---------------------------------------|:-------------------------|:-----------------|
-| 委派（工作或学校帐户）     | UserAuthenticationMethod，UserAuthenticationMethod。 | UserAuthenticationMethod |
+| 委派（工作或学校帐户）     | 不支持。 | UserAuthenticationMethod |
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| 应用程序                            | 不支持。 | 不支持。 |
+| Application                            | 不支持。 | 不支持。 |
 
 对于在其他用户上执行管理的委派方案，管理员需要[以下角色之一](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
@@ -58,16 +58,16 @@ POST /users/{id}/authentication/phoneMethods
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md)对象的 JSON 表示形式。 JSON 必须包括`phoneNumber` and `phoneType`，但不`smsSignInState`能（只读）。
+在请求正文中，提供[phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md)对象的 JSON 表示形式。 JSON 必须包括 `phoneNumber` and `phoneType` ，但不能 `smsSignInState` （只读）。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|phoneNumber|String|将电话号码设为文本或呼叫以进行身份验证。 \<电话号码使用 "+ 国家/地区代码\> \<号码\>x\<分机\>" 格式，扩展名为可选。 例如，+ 1 5555551234 或 + 1 5555551234x123 是有效的。 如果创建/更新时编号不符合要求的格式，则会拒绝编号。|
-|phoneType|字符串|可能的值为`mobile`： `alternateMobile`、和`office`。|
+|phoneNumber|String|将电话号码设为文本或呼叫以进行身份验证。 电话号码使用格式 "+ \<country code\> \<number\> x \<extension\> "，扩展名为可选。 例如，+ 1 5555551234 或 + 1 5555551234x123 是有效的。 如果创建/更新时编号不符合要求的格式，则会拒绝编号。|
+|phoneType|String|可能的值为： `mobile` 、 `alternateMobile` 和 `office` 。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md)对象。
 
 ## <a name="examples"></a>示例
 

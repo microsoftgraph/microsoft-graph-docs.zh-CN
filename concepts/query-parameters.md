@@ -1,15 +1,15 @@
 ---
 title: 使用查询参数自定义响应
 description: Microsoft Graph 提供了可选查询参数，可用于指定和控制响应中返回的数据量。
-author: baywet
+author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 890b65f607ee66725650002ffc576491571ecab4
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 71f63c6038019ae0b669ff8dfe95fecffdfab11a
+ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291039"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429612"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 

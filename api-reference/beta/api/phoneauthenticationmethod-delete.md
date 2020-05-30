@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4d6f238940ef9b4483db3be78de409d7b5175494
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 302ee25dd2856ef4ab8e275862c109d31d78f85a
+ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806475"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429571"
 ---
 # <a name="delete-phoneauthenticationmethod"></a>删除 phoneAuthenticationMethod
 
@@ -22,19 +22,19 @@ ms.locfileid: "43806475"
 
 >**注意：** 这将从用户中删除电话号码，并且这些号码将无法再使用身份验证的号码（无论是通过短信还是语音呼叫）。
 
-请注意，用户的`alternateMobile`编号`mobile`不能为数字。 如果要从`mobile`也有`alternateMobile`号码的用户中删除号码，请首先将该`mobile` `alternateMobile`号码[更新](phoneauthenticationmethod-update.md)为新号码，然后删除该号码。
+请注意，用户的编号不能为数字 `alternateMobile` `mobile` 。 如果要 `mobile` 从也有号码的用户中删除号码 `alternateMobile` ，请首先将该号码[更新](phoneauthenticationmethod-update.md) `mobile` 为新号码，然后删除该 `alternateMobile` 号码。
 
 如果电话号码是用户的默认 Azure 多重身份验证（MFA）身份验证方法，则不能将其删除。 让用户更改其默认的身份验证方法，然后删除该号码。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 作用于自助的权限（从最高特权到最高特权） | 对其他用户的权限（从最低到最高特权）|
 |:---------------------------------------|:-------------------------|:-----------------|
-| 委派（工作或学校帐户）     | UserAuthenticationMethod，UserAuthenticationMethod。 | UserAuthenticationMethod |
+| 委派（工作或学校帐户）     | 不支持。 | UserAuthenticationMethod |
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| 应用程序                            | 不支持。 | 不支持。 |
+| Application                            | 不支持。 | 不支持。 |
 
 对于在其他用户上执行管理的委派方案，管理员需要[以下角色之一](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 

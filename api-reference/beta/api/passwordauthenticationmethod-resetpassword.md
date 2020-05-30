@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9dabb63709b42f7eaa9c3791e9e91300f5063469
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: d90107b5a54fed5dbc552ed61f93574396725651
+ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806002"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429581"
 ---
 # <a name="passwordauthenticationmethod-resetpassword"></a>passwordAuthenticationMethod: resetPassword
 
@@ -22,17 +22,17 @@ ms.locfileid: "43806002"
 
 此流将新密码写入 Azure Active Directory，并将其推送到本地 Active Directory （如果使用密码写回进行配置）。 管理员既可以提供新密码，也可以让系统生成一个新密码。 系统会提示用户在下一次登录时更改其密码。
 
-此重置是一个长时间运行的操作，并将返回`Location`标头中的一个链接，在此情况下，呼叫者可以定期检查重置的状态。
+此重置是一个长时间运行的操作，并将返回标头中的一个链接，在 `Location` 此情况下，呼叫者可以定期检查重置的状态。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 作用于自助的权限（从最高特权到最高特权） | 对其他用户的权限（从最低到最高特权）|
 |:---------------------------------------|:-------------------------|:-----------------|
-| 委派（工作或学校帐户）     | UserAuthenticationMethod，UserAuthenticationMethod。 | UserAuthenticationMethod |
+| 委派（工作或学校帐户）     | 不支持。 | UserAuthenticationMethod |
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| 应用程序                            | 不支持。 | 不支持。 |
+| Application                            | 不支持。 | 不支持。 |
 
 对于在其他用户上执行管理的委派方案，管理员需要[以下角色之一](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
@@ -61,11 +61,11 @@ POST /users/{id}/authentication/passwordMethods/{id}/resetPassword
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|newPassword|字符串|管理员输入的新密码。对于具有混合密码方案的租户是必需的。 如果对仅云密码省略，则系统将返回系统生成的密码。 这是不带任何其他编码的 unicode 字符串。 在接受之前，它会针对租户的禁用密码系统进行验证，并且必须遵守租户的云和/或本地密码要求。|
+|newPassword|String|管理员输入的新密码。对于具有混合密码方案的租户是必需的。 如果对仅云密码省略，则系统将返回系统生成的密码。 这是不带任何其他编码的 unicode 字符串。 在接受之前，它会针对租户的禁用密码系统进行验证，并且必须遵守租户的云和/或本地密码要求。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`202 ACCEPTED` `Location`标头中返回响应代码和 URL。
+如果成功，此方法在 `202 ACCEPTED` 标头中返回响应代码和 URL `Location` 。
 
 如果呼叫者未提交密码，则会在响应正文中的 JSON 对象中提供 Microsoft 生成的密码。
 

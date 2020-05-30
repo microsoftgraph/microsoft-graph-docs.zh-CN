@@ -4,12 +4,12 @@ description: 'Microsoft Graph 使你能够使用 REST Api 和客户端库，与 
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: fa24c0741b452ffa8208f3834b6123618c92a371
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: a8ad7988ed8ce77d70ed0263817cbe643a42ca2c
+ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290284"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429619"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
@@ -72,7 +72,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 
 ## <a name="people-and-workplace-intelligence"></a>人员和工作场所智能
 
-|功能     |支持服务  |说明 |更多信息 |
+|功能     |支持服务  |说明 |详细信息 |
 |:-----------|:--------------------|:-----------|:----------------|
 | 人员 | Azure AD、Outlook、SharePoint 等 | 获取有关人员的信息，该对象按与用户的相关程度进行排序，相关程度由用户的通信和协作模式以及业务关系决定。  | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
 | 个人资料（预览版） | 配置文件 | 提供存储和检索有关租户内人员的信息的轻型机制。 | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
@@ -90,7 +90,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 
 ## <a name="security"></a>安全性
 
-|功能     |支持服务  |说明 |更多信息 |
+|功能     |支持服务  |说明 |详细信息 |
 |:-----------|:--------------------|:-----------|:----------------|
 | 安全集成 | Azure AD Identity Protection、Azure 信息保护、Azure 安全中心、Microsoft 云应用安全性、Windows Defender 高级威胁防护[等](/graph/api/resources/security-api-overview?view=graph-rest-1.0) | 跨整个 Microsoft 和生态系统合作伙伴提供安全见解和操作的统一网关。 | [Microsoft Graph 中的安全性](security-concept-overview.md) |
 
@@ -98,7 +98,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 
 ## <a name="cross-device-experiences"></a>跨设备体验
 
-|功能     |支持服务  |说明 |更多信息 |
+|功能     |支持服务  |说明 |详细信息 |
 |:-----------|:--------------------|:-----------|:----------------|
 | 跨设备体验 | 活动源、设备中继 | 支持超越单一设备的应用体验，同用户在不同设备之间移动，而不考虑设备类型和平台。 | [跨设备体验概述](cross-device-concept-overview.md) |
 
@@ -111,14 +111,14 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 
 ## <a name="usage-reports"></a>使用率报告
 
-|功能     |支持服务  |说明 |更多信息 |
+|功能     |支持服务  |说明 |详细信息 |
 |:-----------|:--------------------|:-----------|:----------------|
 | 报告 | Microsoft Teams、OneDrive、Outlook、SharePoint、Skype for Business、Yammer | 获取支持服务的活动和用法信息。 | [使用情况报表概述](reportroot-concept-overview.md) |
 
 
 ## <a name="education"></a>教育
 
-|功能     |支持服务  |说明 |更多信息 |
+|功能     |支持服务  |说明 |详细信息 |
 |:-----------|:--------------------|:-----------|:----------------|
 | 教育 | Azure AD、教育 | 提供了与教育场景相关的信息，包括学校、课堂、学生、教师和作业信息。 支持 ISV 构建面向教室的应用程序，从而节约教师时间并提升团队合作与协作。  | [教育概述](education-concept-overview.md) |
 
@@ -128,7 +128,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 |功能     |支持服务  |说明 |更多信息 |
 |:-----------|:--------------------|:-----------|:----------------|
 | 客户预订（预览） | Microsoft Bookings | 针对组织，使其用户和客户可以直接在 Web 或 Facebook 上预定服务。 让业务提供商管理客户偏好、服务和定价、员工列表和日程安排，以及其他常见的业务信息。 | [Microsoft Bookings API 概述](booking-concept-overview.md) |
-| Financials（预览版） | Dynamics 365 Business Central | 利用一站式商业管理解决方案，实现财务数据管理、供应链自动化和保护、销售管理和改进客户服务、项目管理和运营优化。| [Business Central API 概述](dynamics-business-central-concept-overview.md) |
+| Financials（预览版） | Dynamics 365 Business Central | 支持管理财务数据、自动化和保护供应链、销售管理和改进的客户服务、项目管理，以及使用一体式业务管理解决方案优化操作。| [Business Central API 概述](dynamics-business-central-concept-overview.md) |
 
 
 ## <a name="next-steps"></a>后续步骤

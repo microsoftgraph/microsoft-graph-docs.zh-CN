@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6be00410dfc32e13faf7d686c93fbeb3bd160096
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 70088d4304c6602feb268d6af399e082da346d24
+ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43805838"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429572"
 ---
 # <a name="update-phoneauthenticationmethod"></a>更新 phoneAuthenticationMethod
 
@@ -22,17 +22,17 @@ ms.locfileid: "43805838"
 
 无法更改电话类型。 若要更改电话类型，请添加所需类型的新号码，然后使用原始类型删除该对象。
 
-如果用户通过策略启用，以使用 SMS 登录，并且更改了`mobile`号码，则系统将尝试注册该号码以在该系统中使用。
+如果用户通过策略启用，以使用 SMS 登录，并且 `mobile` 更改了号码，则系统将尝试注册该号码以在该系统中使用。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 作用于自助的权限（从最高特权到最高特权） | 对其他用户的权限（从最低到最高特权）|
 |:---------------------------------------|:-------------------------|:-----------------|
-| 委派（工作或学校帐户）     | UserAuthenticationMethod，UserAuthenticationMethod。 | UserAuthenticationMethod |
+| 委派（工作或学校帐户）     | 不支持。 | UserAuthenticationMethod |
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| 应用程序                            | 不支持。 | 不支持。 |
+| Application                            | 不支持。 | 不支持。 |
 
 对于在其他用户上执行管理的委派方案，管理员需要[以下角色之一](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
@@ -62,12 +62,12 @@ PUT /users/{id}/authentication/phoneMethods/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|phoneNumber|String|将电话号码设为文本或呼叫以进行身份验证。 \<电话号码使用 "+ 国家/地区代码\> \<号码\>x\<分机\>" 格式，扩展名为可选。 例如，+ 1 5555551234 或 + 1 5555551234x123 是有效的。 如果创建/更新时编号不符合要求的格式，则会拒绝编号。|
-|phoneType|string| 可能的值包括`mobile`： `alternateMobile`、或`office`。|
+|phoneNumber|String|将电话号码设为文本或呼叫以进行身份验证。 电话号码使用格式 "+ \<country code\> \<number\> x \<extension\> "，扩展名为可选。 例如，+ 1 5555551234 或 + 1 5555551234x123 是有效的。 如果创建/更新时编号不符合要求的格式，则会拒绝编号。|
+|phoneType|string| 可能的值包括： `mobile` 、 `alternateMobile` 或 `office` 。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md)对象。
 
 ## <a name="examples"></a>示例
 

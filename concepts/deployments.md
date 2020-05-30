@@ -1,12 +1,12 @@
 ---
 title: 区域云部署
-description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。 这些国家/地区云版本是物理和逻辑网络隔离的 Microsoft 企业云服务实例，这些实例限制在特定国家/地区的地理边界内，并由当地人员运营。
-ms.openlocfilehash: a4169426a65a3c2d2766e07194ff326f0fdb2434
-ms.sourcegitcommit: 889096fb1821ee90ffa1b2dcce046efd6e97acef
+description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。
+ms.openlocfilehash: 0cdd1ee8a14a623d7b65ac5c6453357c2d91aa63
+ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022801"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429549"
 ---
 # <a name="national-cloud-deployments"></a>区域云部署
 
@@ -53,14 +53,14 @@ ms.locfileid: "44022801"
 | Microsoft Graph 全局服务 | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
 
 > [!IMPORTANT]
-> 如果你已在美国政府版中使用了一个应用程序，并且你`https://graph.microsoft.com`使用的是全球终结点， `https://graph.microsoft.us`我们建议切换到新终结点。 使用全球终结点访问美国政府数据当前可以正常运行，但在不久的将来将被禁用。
+> 如果你已在美国政府版中使用了一个应用程序，并且你使用的是全球终结点 `https://graph.microsoft.com` ，我们建议切换到新 `https://graph.microsoft.us` 终结点。 使用全球终结点访问美国政府数据当前可以正常运行，但在不久的将来将被禁用。
 
 > [!NOTE]
-> 应用只能通过国家云终结点访问组织数据。 这意味着应用只能访问在特定国家云中注册的租户中的数据。 尝试通过 Microsoft Graph 访问与 Microsoft 个人帐户关联的用户数据的应用程序应使用全局服务`https://graph.microsoft.com`。 为国家云部署获取的访问令牌与为全局服务或任何其他国家云获取的访问令牌不可互换。
+> 应用只能通过国家云终结点访问组织数据。 这意味着应用只能访问在特定国家云中注册的租户中的数据。 尝试通过 Microsoft Graph 访问与 Microsoft 个人帐户关联的用户数据的应用程序应使用全局服务 `https://graph.microsoft.com` 。 为国家云部署获取的访问令牌与为全局服务或任何其他国家云获取的访问令牌不可互换。
 
 ## <a name="supported-features"></a>支持的功能
 
-以下 Microsoft Graph 功能在`/v1.0`终结点上通常在所有国家/地区云部署上可用，除非另有说明。
+以下 Microsoft Graph 功能在终结点上通常在 `/v1.0` 所有国家/地区云部署上可用，除非另有说明。
 
 | Microsoft Graph 功能 | Microsoft Cloud for US Government | 由世纪互联运营的 Microsoft 云中国 | Microsoft 云德国 |
 |---------------------------|----------------|----------------|----------------|
@@ -74,17 +74,16 @@ ms.locfileid: "44022801"
 | SharePoint| ✔ | ✔ | ✔ |
 | Planner|✔ |✔ |✔ |
 | 报告  |➖| ✔ |➖|
-| 更改通知（Webhook）  | ➖|✔* |✔* |
+| 更改通知（Webhook）  | ✔ |✔ |✔* |
 | Delta 查询 | ➖ | ✔ | ➖ |
 | 目录架构扩展 |➖|➖|➖|
 | 开放类型扩展|➖|➖|➖|
   
-以下其他 Microsoft Graph 功能在所有国家/地区云部署的`/beta`预览（在终结点上）中可用，但在另有说明的情况除外：
+以下其他 Microsoft Graph 功能在 `/beta` 所有国家/地区云部署的预览（在终结点上）中可用，但在另有说明的情况除外：
 
 * 组织联系人
 * 应用程序
 * 服务主体
-* 更改通知（Webhook）
 
 (*)仅对 Exchange 和 OneDrive 服务的有限支持。 Azure AD services 不受支持。 
 
