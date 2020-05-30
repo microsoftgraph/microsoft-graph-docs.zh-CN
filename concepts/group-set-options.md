@@ -3,12 +3,12 @@ title: 设置 Microsoft 365 组行为和设置选项
 description: 在 Microsoft Graph 中使用组资源，您可以设置特定的组行为和资源，以便在创建 Microsoft 365 组时进行设置。
 author: yyuank
 localization_priority: Priority
-ms.openlocfilehash: 9df8f3d4fadea93e45089870351531619cd2fde9
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: fd276dcdc42b70f6ed3aeb2e43095e6b5d76e2d4
+ms.sourcegitcommit: a1a57e803c334e11316dd571ad1b54c95406740e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345785"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44413495"
 ---
 # <a name="set-microsoft-365-group-behaviors-and-provisioning-options-preview"></a>设置 Microsoft 365 组行为和设置选项（预览）
 
@@ -28,7 +28,7 @@ ms.locfileid: "44345785"
 | AllowOnlyMembersToPost|只有组*成员*可以向组发布对话。|组织中的任何用户都可以向组发布对话。|
 | HideGroupInOutlook|此组在 Outlook 体验中处于隐藏状态。|在 Outlook 体验中，所有组都是可见且可发现的。|
 | SubscribeNewGroupMembers|成员可以订阅接收组对话。 |组成员不接收组对话。|
-| WelcomeEmailDisabled|加入组时，会将欢迎电子邮件发送到新成员。|欢迎电子邮件不会发送给新成员。|
+| WelcomeEmailDisabled|欢迎电子邮件不会发送给新成员。|加入组时，会将欢迎电子邮件发送到新成员。|
 
 **resourceProvisioningOptions**是一个字符串集合，用于指定要作为创建 Microsoft 365 组的一部分进行设置的组资源，这些资源通常不是默认组创建的一部分。
 

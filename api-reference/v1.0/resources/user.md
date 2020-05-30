@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 538a7a2011433ae1841eba48f4cefafbbeffd50c
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: c7e53c228db455c014f2568d3c278b42bbe38a1b
+ms.sourcegitcommit: a1a57e803c334e11316dd571ad1b54c95406740e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290059"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44413544"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -137,6 +137,8 @@ ms.locfileid: "44290059"
 |department|String|用户工作部门的名称。支持 $filter。|
 |displayName|String|用户通讯簿中显示的名称。这通常是用户名字、中间名首字母和姓氏的组合。此属性在创建用户时是必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
 |employeeId|String|由组织分配给该用户的员工标识符。 支持 $filter。|
+|externalUserState|String|对于使用[邀请 API](../api/invitation-post.md) 邀请到租户的外部用户，此属性表示受邀用户的邀请状态。 对于受邀用户，状态可以是 `PendingAcceptance` 或 `Accepted`，而对于所有其他用户，状态为 `null`。 <br><br>仅在上返回 `$select` 。 支持 `$filter` 具有受支持的值。 例如：`$filter=externalUserState eq 'PendingAcceptance'`。|
+|externalUserStateChangeDateTime|DateTimeOffset|显示**externalUserState**属性的最新更改的时间戳。 <br><br>仅在上返回 `$select` 。|
 |faxNumber|String|用户的传真号。|
 |givenName|String|用户的名。支持 $filter。|
 |hireDate|DateTimeOffset|用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
@@ -174,13 +176,13 @@ ms.locfileid: "44290059"
 |preferredLanguage|String|用户的首选语言。应遵循 ISO 639-1 代码；例如“EN-US”。|
 |preferredName|String|用户的首选名称。|
 |provisionedPlans|[provisionedPlan](provisionedplan.md) 集合|为用户设置的计划。只读。不可为 null。 |
-|proxyAddresses|String 集合|例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` 多值属性上的筛选器表达式需要 **any** 运算符。只读，不可为 Null。支持 $filter。|
+|proxyAddresses|String collection|例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` 多值属性上的筛选器表达式需要 **any** 运算符。只读，不可为 Null。支持 $filter。|
 |refreshTokensValidFromDateTime|DateTimeOffset|在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 <br><br>仅在 $select 上返回。 只读。 |
 |responsibilities|String collection|供用户枚举其职责的列表。|
 |schools|String collection|供用户枚举其学习过的学校列表。|
 |showInAddressList|Boolean|如果 Outlook 全局地址列表应包含此用户，则值为 **true**，否则为 **false**。 如果未设置，则将其视为 **true**。 对于通过邀请管理器邀请的用户，此属性将设置为 **false**。|
 |skills|String collection|供用户枚举其技能的列表。|
-|signInSessionsValidFromDateTime|DateTimeOffset| 在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 只读。 使用 [revokeSignInSessions](../api/user-revokesigninsessions.md) 进行重置。|
+|signInSessionsValidFromDateTime|DateTimeOffset| 在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 此为只读属性。 使用 [revokeSignInSessions](../api/user-revokesigninsessions.md) 进行重置。|
 |state|String|用户地址中的省/市/自治区或省。支持 $filter。|
 |streetAddress|String|用户公司地点的街道地址。|
 |surname|String|用户的姓氏。支持 $filter。|
@@ -202,7 +204,7 @@ ms.locfileid: "44290059"
 |:---------------|:--------|:----------|
 |空|0|默认值，尚未给用户设置 `ageGroup`。|
 |minorWithoutParentalConsent |1 |（保留以备今后使用）|
-|minorWithParentalConsent|2 | 根据用户所在国家或地区与年龄相关的法规，将用户视为未成年人，并且帐户管理员已相应获得父母或监护人的同意。|
+|minorWithParentalConsent|双面| 根据用户所在国家或地区与年龄相关的法规，将用户视为未成年人，并且帐户管理员已相应获得父母或监护人的同意。|
 |adult|第三章|根据用户所在国家或地区与年龄相关的法规，将用户视为成年人。|
 |notAdult|4 |用户所在国家或地区存在其他与年龄相关的法规（例如美国、英国、欧盟和韩国），用户的年龄介于未成年人和成年人之间（根据所在国家或地区的规定）。 通常，这意味着会在管控的国家或地区将青少年视为 `notAdult`。|
 |minorNoParentalConsentRequired|5 |用户是未成年人，但所在国家或地区没有与年龄相关的法规。|
@@ -216,8 +218,8 @@ ms.locfileid: "44290059"
 | 值    | #  |说明|
 |:---------------|:--------|:----------|
 |空|0|默认值，尚未给用户设置 `ageGroup`。|
-|minor|1 |将用户视为未成年人。|
-|notAdult|2 |用户所在国家或地区存在其他法规（例如美国、英国、欧盟和韩国），用户年龄超过儿童年龄上限（根据所在国家或地区的规定）且低于成年人年龄下限（根据所在国家或地区的规定）。 因此，基本上会在管控的国家或地区将青少年视为 `notAdult`。|
+|minor|1 |用户被视为次要。|
+|notAdult|双面|用户所在国家或地区存在其他法规（例如美国、英国、欧盟和韩国），用户年龄超过儿童年龄上限（根据所在国家或地区的规定）且低于成年人年龄下限（根据所在国家或地区的规定）。 因此，基本上会在管控的国家或地区将青少年视为 `notAdult`。|
 |adult|第三章|应将用户视为成年人。|
 
 #### <a name="consentprovidedforminor-property"></a>consentProvidedForMinor 属性
@@ -226,14 +228,14 @@ ms.locfileid: "44290059"
 |:---------------|:--------|:----------|
 |空|0|默认值，尚未给用户设置 `consentProvidedForMinor`。|
 |granted|1 |已就用户拥有帐户获得同意。|
-|denied|2 |尚未就用户拥有帐户获得同意。|
+|denied|双面|尚未就用户拥有帐户获得同意。|
 |notRequired|第三章|用户所在地不要求获得同意。|
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型   |Description|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|activities|[userActivity](projectrome-activity.md) 集合|跨设备的用户活动。 只读。 可为 Null。|
+|activities|[userActivity](projectrome-activity.md) 集合|跨设备的用户活动。 此为只读属性。 可为 NULL。|
 |日历|[calendar](calendar.md)|用户的主日历。只读。|
 |calendarGroups|[CalendarGroup](calendargroup.md) 集合|用户的日历组。只读。可为 Null。|
 |calendarView|[event](event.md) 集合|日历的日历视图。只读。可为 Null。|
