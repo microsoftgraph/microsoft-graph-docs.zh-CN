@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 33171e0878c05d044a1f0d4dbde181600e0605ed
-ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
+ms.openlocfilehash: 6625be6f12c3d2b430afa2d9099072955c68efdf
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "43812521"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44251105"
 ---
 # <a name="list-printers"></a>列出打印机
 
@@ -27,7 +27,7 @@ ms.locfileid: "43812521"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| 已阅读的用户。所有 |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -39,10 +39,10 @@ GET /print/printers
 此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
 ### <a name="exceptions"></a>异常
-* 导航属性支持`$expand`和`select`运算符，但不支持。 `jobs` `share`
-* 某些运算符不受支持： `$count`、 `$orderby`、 `$search`。
+* `$expand` `select` 导航属性支持和运算符 `share` ，但不支持 `jobs` 。
+* 有些运算符不受支持： `$count` ， `$search` 。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization | Bearer {token}。必需。 |
@@ -50,7 +50,7 @@ GET /print/printers
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[printer](../resources/printer.md)对象集合。
+如果成功，此方法在 `200 OK` 响应正文中返回响应代码和[printer](../resources/printer.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

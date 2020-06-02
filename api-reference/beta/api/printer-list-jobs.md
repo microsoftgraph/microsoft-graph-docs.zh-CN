@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1e6e04f02862afa265c15115d3c5db8c16f1f512
-ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
+ms.openlocfilehash: 1f09e91c88e83127e86d441b2c6537d85729b4b6
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "43812539"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44251098"
 ---
 # <a name="list-jobs"></a>列出作业
 
@@ -21,7 +21,7 @@ ms.locfileid: "43812539"
 检索与[打印机](../resources/printer.md)关联的打印作业的列表。
 
 ## <a name="permissions"></a>Permissions
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
 
@@ -29,7 +29,7 @@ ms.locfileid: "43812539"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| 已阅读的用户。所有 |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -41,9 +41,9 @@ GET /print/printers/{id}/jobs
 此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
 ### <a name="exceptions"></a>异常
-某些运算符不受支持： `$count`、 `$orderby`、 `$search`、 `$filter`。
+某些运算符不受支持： `$count` 、 `$search` 、 `$filter` 。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization | Bearer {token}。必需。 |
@@ -51,7 +51,7 @@ GET /print/printers/{id}/jobs
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[printJob](../resources/printjob.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[printJob](../resources/printjob.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

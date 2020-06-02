@@ -6,10 +6,10 @@ author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: 80b688d700dff94d1a746e651b83a4b0236d1a39
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
+ms.lasthandoff: 06/02/2020
 ms.locfileid: "44154400"
 ---
 # <a name="update-workforceintegration"></a>更新 workforceintegration
@@ -20,7 +20,7 @@ ms.locfileid: "44154400"
 
 更新[workforceintegration](../resources/workforceintegration.md)对象的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,7 +48,7 @@ PATCH /teamwork/workforceIntegrations
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 |apiVersion|Int32|回调 url 的 API 版本。 从1开始。|
 |displayName|String|劳动力集成的名称。|
@@ -166,7 +166,7 @@ Content-type: application/json
 ```
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 ```
 HTTP/1.1 200 OK
 {

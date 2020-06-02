@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: ea54c7b3b572413be515aa728e18ae69f6f10fc3
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: b8fd40de56d97f70a6208cf68a56c74d711eb78e
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895609"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44251091"
 ---
 # <a name="printerlocation-resource-type"></a>printerLocation 资源类型
 
@@ -21,25 +21,25 @@ ms.locfileid: "42895609"
 表示打印机的物理和分层位置。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 |latitude|双精度|打印机所在的纬度。|
 |longitude|Double|打印机所在的经度。|
 |altitudeInMeters|Int32|打印机所在的海拔高度（以米为单位）。|
 |streetAddress|String|打印机所在的街道地址。|
-|子|String collection|打印机所在的次级单位层次结构。 元素应按层次结构顺序排列。 例如，如果一个校园分成不同的部分，则层次结构可能如下所示：`["East Wing", "Block A"]`
-|城市|String|打印机所在的城市。
-|postalCode|String|打印机所在的邮政编码。
+|子|String collection|打印机所在的次级单位层次结构。 元素应按层次结构顺序排列。 例如，如果一个校园分成不同的部分，则层次结构可能如下所示：`["East Wing", "Block A"]`|
+|city|String|打印机所在的城市。|
+|postalCode|String|打印机所在的邮政编码。|
 |countryOrRegion|String|打印机所在的国家或地区。|
-|网站|String|打印机所在的网站。
-|幢|String|打印机所在的建筑物。
-|floorNumber|Int32|打印机所在的楼层号。
-|floorDescription|String|打印机所在楼层的说明。
-|roomNumber|Int32|打印机所在的房间号码。
-|roomDescription|Int32|打印机所在聊天室的说明。
-|组织|String collection|打印机所属的组织层次结构。 元素应按层次结构顺序排列。
-|细分|String collection|打印机所在的细分。 元素应按层次结构顺序排列。
-|stateOrProvince|String collection|打印机所在的省/市/自治区。
+|网站|String|打印机所在的网站。|
+|幢|String|打印机所在的建筑物。|
+|floorNumber|Int32|打印机所在的楼层号。|
+|floorDescription|String|打印机所在楼层的说明。|
+|roomNumber|Int32|打印机所在的房间号码。|
+|roomDescription|String|打印机所在聊天室的说明。|
+|组织|String collection|打印机所属的组织层次结构。 元素应按层次结构顺序排列。|
+|细分|String collection|打印机所在的细分。 元素应按层次结构顺序排列。|
+|stateOrProvince|String|打印机所在的省/市/自治区。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

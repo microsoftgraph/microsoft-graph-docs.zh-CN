@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: cddc49db3bb9ad19e172fe7bc8b6dc9ad0bc6edc
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 80292a11b3430f00958f82c51a290bc701a23dfe
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947632"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44216747"
 ---
 # <a name="update-printershare"></a>更新 printershare
 
@@ -23,7 +23,7 @@ ms.locfileid: "42947632"
 例如，如果物理打印机设备断开，则管理员可以注册新的[打印机](../resources/printer.md)设备并更新此[printerShare](../resources/printerShare.md) ，以指向新的打印机，而无需用户执行任何操作。
 
 ## <a name="permissions"></a>Permissions
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
 
@@ -31,12 +31,12 @@ ms.locfileid: "42947632"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| 已阅读的用户。所有 |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /print/printerShares/{id}
+PATCH /print/shares/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -48,14 +48,14 @@ PATCH /print/printerShares/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关[printerShare](../resources/printershare.md)字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
-|印刷|String|与此打印机共享相关联的打印机。 使用以下`printer@odata.bind`示例中所示的语法更新与该打印机共享相关联的打印机。|
+|印刷|String|与此打印机共享相关联的打印机。 使用 `printer@odata.bind` 以下示例中所示的语法更新与该打印机共享相关联的打印机。|
 
 >**注意：** 不支持更新打印机共享名称。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[printerShare](../resources/printershare.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[printerShare](../resources/printershare.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -66,7 +66,7 @@ PATCH /print/printerShares/{id}
   "name": "update_printershare"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/print/printerShares/{id}
+PATCH https://graph.microsoft.com/beta/print/shares/{id}
 Content-type: application/json
 Content-length: 109
 
@@ -103,7 +103,7 @@ Content-type: application/json
 Content-length: 225
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printerShares/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
   "id": "d837c17b-3296-4384-a053-828d56e10f50",
   "name": "ShareName",
   "createdDateTime": "2020-02-04T00:00:00.0000000Z"

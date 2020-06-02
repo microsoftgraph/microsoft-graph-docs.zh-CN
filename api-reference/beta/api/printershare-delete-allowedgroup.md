@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: f154cbf1b59a67a8d2e306ea14e1ef490c63b3fe
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: e6c3fb214126d4414ed35d6ba58a52acc6b65bab
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43807086"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44216618"
 ---
 # <a name="delete-allowedgroup"></a>删除 allowedGroup
 
@@ -21,7 +21,7 @@ ms.locfileid: "43807086"
 撤销指定组的访问权限，以将打印作业提交到关联的[printerShare](../resources/printershare.md)。
 
 ## <a name="permissions"></a>Permissions
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
 
@@ -29,12 +29,12 @@ ms.locfileid: "43807086"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| 已阅读的用户。所有 |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /print/printerShares/{id}/allowedGroups/{id}/$ref
+DELETE /print/shares/{id}/allowedGroups/{id}/$ref
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明   |
@@ -55,7 +55,7 @@ DELETE /print/printerShares/{id}/allowedGroups/{id}/$ref
   "name": "delete_allowedgroup"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/print/printerShares/{id}/allowedGroup/{id}/$ref
+DELETE https://graph.microsoft.com/beta/print/shares/{id}/allowedGroup/{id}/$ref
 ```
 ##### <a name="response"></a>响应
 下面展示了示例响应。

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c0917c451777b7c98c11a25a21b5978cf199b93b
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 2360d9a43b9afe4f6d5c83e10652d04100bc1ee2
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181208"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44251112"
 ---
 # <a name="list-riskdetection"></a>列出 riskDetection
 
@@ -23,7 +23,7 @@ ms.locfileid: "43181208"
 >[!NOTE]
 >您必须具有 Azure AD 高级 P1 或 P2 许可证，才能使用风险检测 API。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "43181208"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | IdentityRiskEvent.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | IdentityRiskEvent.Read.All |
+|Application | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -41,9 +41,9 @@ GET /riskDetections
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持`$filter`和`$select`自定义查询响应。 请参阅本主题后面的示例。 
+此方法支持 `$filter` 和 `$select` 自定义查询响应。 请参阅本主题后面的示例。 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -56,7 +56,7 @@ GET /riskDetections
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[riskDetection](../resources/riskdetection.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[riskDetection](../resources/riskdetection.md)对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -110,7 +110,7 @@ Content-type: application/json
     "id": "6a5874ca-abcd-9d82-5ad39bd71600",
     "requestId": "6a5874ca-abcd-9d82-5ad39bd71600",
     "correlationId": "abcd74ca-9823-4b1c-9d82-5ad39bd71600",
-    "riskType": "unfamiliarFeatures",
+    "riskEventType": "unfamiliarFeatures",
     "riskState": "remediated",
     "riskLevel": "medium",
     "riskDetail": "userPerformedSecuredPasswordReset",
@@ -141,7 +141,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面的示例演示如何使用`$filter`来获取风险级别为 "中" 或风险事件类型为 "unfamilarFeatures" 的风险检测集，这表明登录处于不熟悉或异常的位置。
+下面的示例演示如何使用 `$filter` 来获取风险级别为 "中" 或风险事件类型为 "unfamilarFeatures" 的风险检测集，这表明登录处于不熟悉或异常的位置。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -151,7 +151,7 @@ Content-type: application/json
 } -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/riskDetections?$filter=riskType eq 'unfamiliarFeatures' or riskLevel eq 'medium'
+GET https://graph.microsoft.com/beta/riskDetections?$filter=riskEventType eq 'unfamiliarFeatures' or riskLevel eq 'medium'
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-filter-riskdetections-csharp-snippets.md)]
@@ -188,7 +188,7 @@ Content-type: application/json
     "id": "1d68fc3d60d012ff80ad4b16818bf304df1bde295fdf1db31fa5389ba9532cd1",
     "requestId": "3295073e-04b1-4871-9d15-c1f871b41100",
     "correlationId": "f141d8e5-93e9-4fd0-9eb0-c40e5f8fc092",
-    "riskType": "unfamiliarFeatures",
+    "riskEventType": "unfamiliarFeatures",
     "riskState": "atRisk",
     "riskLevel": "medium",
     "riskDetail": "none",
