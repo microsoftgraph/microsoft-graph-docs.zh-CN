@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: cloud-communications
 author: gageames
-ms.openlocfilehash: 4769eef3dec5dbb7bc5c61fd91cffc76a9bd5e15
-ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
+ms.openlocfilehash: ec07c5a5cfd4bae33848b8f0e886c7ad552164ae
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44408358"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491180"
 ---
 命名空间：microsoft.graph.callRecords
 
@@ -112,6 +112,7 @@ ms.locfileid: "44408358"
 | skypeTranslator
 | skypeForBusinessAttendant
 | responseGroupService
+| 语音邮件
 | 向 unknownfuturevalue
 
 ### <a name="userfeedbackrating-values"></a>userFeedbackRating 值

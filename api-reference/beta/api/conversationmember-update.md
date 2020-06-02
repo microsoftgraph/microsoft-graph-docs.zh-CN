@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 94c6a33f24780ad9941ecd54fddd55611fe44822
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 8046572b62374407bc077fffa40e6ab692fefb75
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44288499"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491299"
 ---
 # <a name="update-conversationmember"></a>更新 conversationMember
 
@@ -23,7 +23,7 @@ ms.locfileid: "44288499"
 > [!NOTE]
 > 此操作仅在具有[channelMembershipType](../resources/enums.md#channelmembershiptype-values)的通道上受支持 `private` 。 与任何其他[channelMembershipType](../resources/enums.md#channelmembershiptype-values)的调用将返回 `400 Bad Request` 响应。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "44288499"
 |---------|-------------|
 |委派（工作或学校帐户）| ChannelMember、Group 写全部、所有的 ReadWrite。 All |
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序| Member 的 ReadWrite （[RSC](https://aka.ms/teams-rsc)）、ChannelMember、group 写全部、所有的 readwrite。 all |
+|Application| ChannelMember、Group 写全部、所有的 ReadWrite。 All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored"} -->
@@ -49,7 +49,7 @@ PATCH /teams/{id}/channels/{id}/members/{id}
 
 在请求正文中，提供要更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性   | 类型 |说明|
+| 属性   | 类型 |Description|
 |:---------------|:--------|:----------|
 |角色|string 集合|该用户的角色。 必须为 "owner" 或空。 来宾用户必须始终拥有角色 "来宾"，并且无法更改。 |
 
