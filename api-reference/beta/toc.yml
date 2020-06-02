@@ -986,7 +986,7 @@ items:
                 href: api/presence-get.md
               - name: 为多个用户获取状态
                 href: api/cloudcommunications-getpresencesbyuserid.md
-          - name: 通话记录（预览版）
+          - name: 通话记录
             items:
               - name: 概述
                 href: resources/callrecords-api-overview.md
@@ -2137,7 +2137,7 @@ items:
                   - name: 用户应用安装状态
                     href: resources/intune-apps-userappinstallstatus.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-apps-userappinstallstatus-list.md
                       - name: 获取
                         href: api/intune-apps-userappinstallstatus-get.md
@@ -2150,7 +2150,7 @@ items:
                   - name: 用户安装状态摘要
                     href: resources/intune-books-userinstallstatesummary.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-books-userinstallstatesummary-list.md
                       - name: 获取
                         href: api/intune-books-userinstallstatesummary-get.md
@@ -3210,7 +3210,7 @@ items:
                   - name: Android PKCS 证书配置文件
                     href: resources/intune-deviceconfig-androidpkcscertificateprofile.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-deviceconfig-androidpkcscertificateprofile-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-androidpkcscertificateprofile-get.md
@@ -3225,7 +3225,7 @@ items:
                   - name: Android SCEP 证书配置文件
                     href: resources/intune-deviceconfig-androidscepcertificateprofile.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-deviceconfig-androidscepcertificateprofile-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-androidscepcertificateprofile-get.md
@@ -5341,7 +5341,7 @@ items:
                   - name: Windows 10 Endpoint Protection 配置
                     href: resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-get.md
@@ -5354,7 +5354,7 @@ items:
                   - name: Windows 10 企业版新式应用管理配置
                     href: resources/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-get.md
@@ -6410,7 +6410,7 @@ items:
                   - name: 设备管理脚本设备状态
                     href: resources/intune-devices-devicemanagementscriptdevicestate.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-devices-devicemanagementscriptdevicestate-list.md
                       - name: 获取
                         href: api/intune-devices-devicemanagementscriptdevicestate-get.md
@@ -6423,7 +6423,7 @@ items:
                   - name: 设备管理脚本组分配
                     href: resources/intune-devices-devicemanagementscriptgroupassignment.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-devices-devicemanagementscriptgroupassignment-list.md
                       - name: 获取
                         href: api/intune-devices-devicemanagementscriptgroupassignment-get.md
@@ -8012,7 +8012,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                       - name: 列表
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                      - name: 删除
+                      - name: Delete
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: 设备管理脚本
                     href: resources/intune-shared-devicemanagementscript.md
@@ -9581,6 +9581,13 @@ items:
                     href: api/activitybasedtimeoutpolicy-update.md
                   - name: 删除
                     href: api/activitybasedtimeoutpolicy-delete.md
+              - name: 授权策略
+                href: resources/authorizationpolicy.md
+                items:
+                  - name: 获取
+                    href: api/authorizationpolicy-get.md
+                  - name: 更新
+                    href: api/authorizationpolicy-update.md
               - name: 声明映射策略
                 href: resources/claimsmappingpolicy.md
                 items:
@@ -11417,7 +11424,7 @@ items:
                     href: api/openshift-get.md
                   - name: 更新
                     href: api/openshift-update.md
-                  - name: 删除
+                  - name: Delete
                     href: api/openshift-delete.md
               - name: 打开班次轮换更改请求
                 href: resources/openshiftchangerequest.md
@@ -11536,7 +11543,7 @@ items:
                 href: api/outlooktask-get.md
               - name: 更新
                 href: api/outlooktask-update.md
-              - name: 删除
+              - name: Delete
                 href: api/outlooktask-delete.md
               - name: 完全
                 href: api/outlooktask-complete.md
@@ -11555,7 +11562,7 @@ items:
                 href: api/outlooktaskfolder-get.md
               - name: 更新
                 href: api/outlooktaskfolder-update.md
-              - name: 删除
+              - name: Delete
                 href: api/outlooktaskfolder-delete.md
               - name: 在文件夹中列出任务
                 href: api/outlooktaskfolder-list-tasks.md
@@ -11572,7 +11579,7 @@ items:
                 href: api/outlooktaskgroup-get.md
               - name: 更新
                 href: api/outlooktaskgroup-update.md
-              - name: 删除
+              - name: Delete
                 href: api/outlooktaskfolder-delete.md
               - name: 在组中列出任务文件夹
                 href: api/outlooktaskfolder-list-tasks.md
