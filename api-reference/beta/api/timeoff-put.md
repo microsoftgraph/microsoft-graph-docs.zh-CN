@@ -6,37 +6,37 @@ localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: 7234fc4f630064acf1934079a4ed485a2c3b1524
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
+ms.lasthandoff: 06/02/2020
 ms.locfileid: "42452307"
 ---
-# <a name="replace-timeoff"></a><span data-ttu-id="c0e05-103">替换 timeOff</span><span class="sxs-lookup"><span data-stu-id="c0e05-103">Replace timeOff</span></span>
+# <a name="replace-timeoff"></a><span data-ttu-id="6336d-103">替换 timeOff</span><span class="sxs-lookup"><span data-stu-id="6336d-103">Replace timeOff</span></span>
 
-<span data-ttu-id="c0e05-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c0e05-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6336d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6336d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c0e05-105">替换现有的[timeOff](../resources/timeoff.md)。</span><span class="sxs-lookup"><span data-stu-id="c0e05-105">Replace an existing [timeOff](../resources/timeoff.md).</span></span>
+<span data-ttu-id="6336d-105">替换现有的[timeOff](../resources/timeoff.md)。</span><span class="sxs-lookup"><span data-stu-id="6336d-105">Replace an existing [timeOff](../resources/timeoff.md).</span></span>
 
-<span data-ttu-id="c0e05-106">如果指定的[timeOff](../resources/timeoff.md)不存在，则此方法返回 `404 Not found` 。</span><span class="sxs-lookup"><span data-stu-id="c0e05-106">If the specified [timeOff](../resources/timeoff.md) doesn't exist, this method returns `404 Not found`.</span></span>
+<span data-ttu-id="6336d-106">如果指定的[timeOff](../resources/timeoff.md)不存在，则此方法返回 `404 Not found` 。</span><span class="sxs-lookup"><span data-stu-id="6336d-106">If the specified [timeOff](../resources/timeoff.md) doesn't exist, this method returns `404 Not found`.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c0e05-107">权限</span><span class="sxs-lookup"><span data-stu-id="c0e05-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6336d-107">Permissions</span><span class="sxs-lookup"><span data-stu-id="6336d-107">Permissions</span></span>
 
-<span data-ttu-id="c0e05-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c0e05-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6336d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6336d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c0e05-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="c0e05-110">Permission type</span></span>      | <span data-ttu-id="c0e05-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c0e05-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6336d-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="6336d-110">Permission type</span></span>      | <span data-ttu-id="6336d-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6336d-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c0e05-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c0e05-112">Delegated (work or school account)</span></span> | <span data-ttu-id="c0e05-113">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c0e05-113">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="c0e05-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c0e05-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c0e05-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="c0e05-115">Not supported.</span></span>    |
-|<span data-ttu-id="c0e05-116">Application</span><span class="sxs-lookup"><span data-stu-id="c0e05-116">Application</span></span> | <span data-ttu-id="c0e05-117">计划的所有写。 \*</span><span class="sxs-lookup"><span data-stu-id="c0e05-117">Schedule.ReadWrite.All\*</span></span>  |
+|<span data-ttu-id="6336d-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6336d-112">Delegated (work or school account)</span></span> | <span data-ttu-id="6336d-113">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6336d-113">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="6336d-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6336d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6336d-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="6336d-115">Not supported.</span></span>    |
+|<span data-ttu-id="6336d-116">Application</span><span class="sxs-lookup"><span data-stu-id="6336d-116">Application</span></span> | <span data-ttu-id="6336d-117">计划的所有写。 \*</span><span class="sxs-lookup"><span data-stu-id="6336d-117">Schedule.ReadWrite.All\*</span></span>  |
 
-><span data-ttu-id="c0e05-118">\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。</span><span class="sxs-lookup"><span data-stu-id="c0e05-118">\* **Important:** Application permissions are currently in private preview only and are not available for public use.</span></span>
+><span data-ttu-id="6336d-118">\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。</span><span class="sxs-lookup"><span data-stu-id="6336d-118">\* **Important:** Application permissions are currently in private preview only and are not available for public use.</span></span>
 
-> <span data-ttu-id="c0e05-119">**注意**：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="c0e05-119">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="c0e05-120">全局管理员可以访问他们不是其成员的组。</span><span class="sxs-lookup"><span data-stu-id="c0e05-120">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="6336d-119">**注意**：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="6336d-119">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="6336d-120">全局管理员可以访问他们不是其成员的组。</span><span class="sxs-lookup"><span data-stu-id="6336d-120">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="c0e05-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c0e05-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6336d-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6336d-121">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -44,28 +44,28 @@ ms.locfileid: "42452307"
 PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c0e05-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="c0e05-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="6336d-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="6336d-122">Request headers</span></span>
 
-| <span data-ttu-id="c0e05-123">标头</span><span class="sxs-lookup"><span data-stu-id="c0e05-123">Header</span></span>       | <span data-ttu-id="c0e05-124">值</span><span class="sxs-lookup"><span data-stu-id="c0e05-124">Value</span></span> |
+| <span data-ttu-id="6336d-123">标头</span><span class="sxs-lookup"><span data-stu-id="6336d-123">Header</span></span>       | <span data-ttu-id="6336d-124">值</span><span class="sxs-lookup"><span data-stu-id="6336d-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="c0e05-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="c0e05-125">Authorization</span></span>  | <span data-ttu-id="c0e05-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c0e05-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="c0e05-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c0e05-128">Content-Type</span></span>  | <span data-ttu-id="c0e05-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="c0e05-p104">application/json. Required.</span></span>  |
+| <span data-ttu-id="6336d-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="6336d-125">Authorization</span></span>  | <span data-ttu-id="6336d-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="6336d-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="6336d-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6336d-128">Content-Type</span></span>  | <span data-ttu-id="6336d-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="6336d-p104">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="c0e05-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="c0e05-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="6336d-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="6336d-131">Request body</span></span>
 
-<span data-ttu-id="c0e05-132">在请求正文中，提供[timeOff](../resources/timeoff.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c0e05-132">In the request body, supply a JSON representation of a [timeOff](../resources/timeoff.md) object.</span></span>
+<span data-ttu-id="6336d-132">在请求正文中，提供[timeOff](../resources/timeoff.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6336d-132">In the request body, supply a JSON representation of a [timeOff](../resources/timeoff.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c0e05-133">响应</span><span class="sxs-lookup"><span data-stu-id="c0e05-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6336d-133">响应</span><span class="sxs-lookup"><span data-stu-id="6336d-133">Response</span></span>
 
-<span data-ttu-id="c0e05-134">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[timeOff](../resources/timeoff.md)对象。</span><span class="sxs-lookup"><span data-stu-id="c0e05-134">If successful, this method returns a `200 OK` response code and a [timeOff](../resources/timeoff.md) object in the response body.</span></span>
+<span data-ttu-id="6336d-134">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[timeOff](../resources/timeoff.md)对象。</span><span class="sxs-lookup"><span data-stu-id="6336d-134">If successful, this method returns a `200 OK` response code and a [timeOff](../resources/timeoff.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c0e05-135">示例</span><span class="sxs-lookup"><span data-stu-id="c0e05-135">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6336d-135">示例</span><span class="sxs-lookup"><span data-stu-id="6336d-135">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c0e05-136">请求</span><span class="sxs-lookup"><span data-stu-id="c0e05-136">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="6336d-136">请求</span><span class="sxs-lookup"><span data-stu-id="6336d-136">Request</span></span>
 
-<span data-ttu-id="c0e05-137">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="c0e05-137">The following is an example of the request.</span></span>
+<span data-ttu-id="6336d-137">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="6336d-137">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="c0e05-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="c0e05-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="6336d-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="6336d-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timeoff-put"
@@ -91,26 +91,26 @@ Prefer: return=representation
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="c0e05-139">C#</span><span class="sxs-lookup"><span data-stu-id="c0e05-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="6336d-139">C#</span><span class="sxs-lookup"><span data-stu-id="6336d-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/timeoff-put-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c0e05-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c0e05-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="6336d-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6336d-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/timeoff-put-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c0e05-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c0e05-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="6336d-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6336d-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/timeoff-put-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="c0e05-142">响应</span><span class="sxs-lookup"><span data-stu-id="c0e05-142">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="6336d-142">响应</span><span class="sxs-lookup"><span data-stu-id="6336d-142">Response</span></span>
 
-<span data-ttu-id="c0e05-143">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="c0e05-143">The following is an example of the response.</span></span> 
+<span data-ttu-id="6336d-143">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="6336d-143">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="c0e05-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="c0e05-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="6336d-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="6336d-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

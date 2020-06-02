@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e76f7afd98a2ee660cf9326ad75a6af2f8e50690
-ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
+ms.openlocfilehash: faeae83a31daa53ca1bd8589dcb0bd322bc33687
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40994943"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44216597"
 ---
 ```javascript
 
@@ -19,7 +19,7 @@ const approve = {
   message: "Approved!"
 };
 
-let res = await client.api('/teams/schedule/offerShiftRequests/approve')
+let res = await client.api('/teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/approve')
     .version('beta')
     .post(approve);
 

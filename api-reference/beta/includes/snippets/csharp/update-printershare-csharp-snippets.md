@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c53fa2e214ee0cba43f172a38d05813c8e5db9f7
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: ae7e704a8608c1a5b8a67745e36050d6e1aadb2c
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947631"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44216726"
 ---
 ```csharp
 
@@ -20,7 +20,7 @@ var printerShare = new PrinterShare
     }
 };
 
-await graphClient.Print.PrinterShares["{id}"]
+await graphClient.Print.Shares["{id}"]
     .Request()
     .UpdateAsync(printerShare);
 
