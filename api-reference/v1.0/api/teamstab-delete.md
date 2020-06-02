@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a927ce5300f9e5b983bb9b0027f4a1ffcc305d13
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 3350e88d8686114cb16d17772de59edebd19a2e6
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44287701"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491754"
 ---
 # <a name="delete-tab-from-channel"></a>从频道中删除选项卡
 
@@ -27,7 +27,7 @@ ms.locfileid: "44287701"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsTab、Group 写全部、所有的 ReadWrite。 All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsTab （[RSC](https://aka.ms/teams-rsc)）、TeamsTab、All、group、All、all 和 All。 all |
+|Application | TeamsTab、Group 写全部、所有的 ReadWrite。 All |
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 

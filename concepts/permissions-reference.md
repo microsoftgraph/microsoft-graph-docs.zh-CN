@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: dbeb2b752da552fafb994e8593fbd9c4ce953d09
-ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
+ms.openlocfilehash: f76d8534e0cea72cb6b66d0d94466c248be2dc9a
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44408309"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491873"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -421,8 +421,8 @@ _CallRecords_权限授予应用程序对组织内的每个呼叫和联机会议�
 
 #### <a name="application"></a>应用程序
 
-* _CallRecords.Read.All_：检索通话记录 (`GET /beta/communications/callRecords/{id}`)。
-* _CallRecords.Read.All_：订阅新的通话记录 (`POST /beta/subscriptions`)。
+* _CallRecords.Read.All_：检索通话记录 (`GET /v1.0/communications/callRecords/{id}`)。
+* _CallRecords.Read.All_：订阅新的通话记录 (`POST /v1.0/subscriptions`)。
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 

@@ -895,6 +895,18 @@ items:
                 href: api/onlinemeeting-get.md
               - name: 删除
                 href: api/onlinemeeting-delete.md
+          - name: 通话记录
+            items:
+              - name: 概述
+                href: resources/callrecords-api-overview.md
+              - name: 呼叫记录
+                href: resources/callrecords-callrecord.md
+              - name: 获取呼叫记录
+                href: api/callrecords-callrecord-get.md
+              - name: 会话
+                href: resources/callrecords-session.md
+              - name: 列出会话
+                href: api/callrecords-session-list.md
       - name: 跨设备体验
         displayName: Project Rome
         items:
@@ -1048,7 +1060,7 @@ items:
               - name: iOS VPP 电子书
                 href: resources/intune-books-iosvppebook.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-books-iosvppebook-list.md
                   - name: 获取
                     href: api/intune-books-iosvppebook-get.md
@@ -1074,7 +1086,7 @@ items:
               - name: macOS Office 套件应用
                 href: resources/intune-apps-macosofficesuiteapp.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-apps-macosofficesuiteapp-list.md
                   - name: 获取
                     href: api/intune-apps-macosofficesuiteapp-get.md
@@ -1267,7 +1279,7 @@ items:
               - name: 移动应用分配
                 href: resources/intune-apps-mobileappassignment.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-apps-mobileappassignment-list.md
                   - name: 获取
                     href: api/intune-apps-mobileappassignment-get.md
@@ -1282,7 +1294,7 @@ items:
               - name: 移动应用类别
                 href: resources/intune-apps-mobileappcategory.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-apps-mobileappcategory-list.md
                   - name: 获取
                     href: api/intune-apps-mobileappcategory-get.md
@@ -1492,7 +1504,7 @@ items:
               - name: Android 自定义配置
                 href: resources/intune-deviceconfig-androidcustomconfiguration.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-androidcustomconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-androidcustomconfiguration-get.md
@@ -1505,7 +1517,7 @@ items:
               - name: Android 常规设备配置
                 href: resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-get.md
@@ -1696,7 +1708,7 @@ items:
               - name: 设备符合性设置状态
                 href: resources/intune-deviceconfig-devicecompliancesettingstate.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-devicecompliancesettingstate-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-devicecompliancesettingstate-get.md
@@ -1729,7 +1741,7 @@ items:
               - name: 设备配置
                 href: resources/intune-deviceconfig-deviceconfiguration.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-deviceconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-deviceconfiguration-get.md
@@ -1927,7 +1939,7 @@ items:
               - name: iOS 更新设备状态
                 href: resources/intune-deviceconfig-iosupdatedevicestatus.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-iosupdatedevicestatus-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-iosupdatedevicestatus-get.md
@@ -1942,7 +1954,7 @@ items:
               - name: macOS 符合性策略
                 href: resources/intune-deviceconfig-macoscompliancepolicy.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-macoscompliancepolicy-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-macoscompliancepolicy-get.md
@@ -2129,7 +2141,7 @@ items:
               - name: Windows 10 符合性策略
                 href: resources/intune-deviceconfig-windows10compliancepolicy.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-windows10compliancepolicy-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-windows10compliancepolicy-get.md
@@ -2142,7 +2154,7 @@ items:
               - name: Windows 10 自定义配置
                 href: resources/intune-deviceconfig-windows10customconfiguration.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-windows10customconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-windows10customconfiguration-get.md
@@ -2327,7 +2339,7 @@ items:
               - name: 适用于企业的 Windows 更新配置
                 href: resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-get.md
@@ -2363,7 +2375,7 @@ items:
               - name: 审核事件
                 href: resources/intune-auditing-auditevent.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-auditing-auditevent-list.md
                   - name: 获取
                     href: api/intune-auditing-auditevent-get.md
@@ -2776,7 +2788,7 @@ items:
               - name: 目标托管应用程序策略分配
                 href: resources/intune-mam-targetedmanagedapppolicyassignment.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-mam-targetedmanagedapppolicyassignment-list.md
                   - name: 获取
                     href: api/intune-mam-targetedmanagedapppolicyassignment-get.md
@@ -2796,7 +2808,7 @@ items:
               - name: Windows 信息保护
                 href: resources/intune-mam-windowsinformationprotection.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-mam-windowsinformationprotection-list.md
                   - name: 获取
                     href: api/intune-mam-windowsinformationprotection-get.md
@@ -2988,7 +3000,7 @@ items:
               - name: 移动威胁防护连接器
                 href: resources/intune-onboarding-mobilethreatdefenseconnector.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
                   - name: 获取
                     href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
@@ -3010,7 +3022,7 @@ items:
               - name: 组织
                 href: resources/intune-onboarding-organization.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-onboarding-organization-list.md
                   - name: 获取
                     href: api/intune-onboarding-organization-get.md
@@ -4754,7 +4766,7 @@ items:
               - name: 打开班次
                 href: resources/openshift.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/openshift-list.md
                   - name: 创建
                     href: api/openshift-post.md
@@ -4762,7 +4774,7 @@ items:
                     href: api/openshift-get.md
                   - name: 更新
                     href: api/openshift-update.md
-                  - name: 删除
+                  - name: Delete
                     href: api/openshift-delete.md
               - name: 打开班次轮换更改请求
                 href: resources/openshiftchangerequest.md
@@ -4828,7 +4840,7 @@ items:
                 items:
                   - name: 获取
                     href: api/timeoffrequest-get.md
-                  - name: 删除
+                  - name: Delete
                     href: api/timeoffrequest-delete.md
                   - name: 批准
                     href: api/timeoffrequest-approve.md

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1e2b1a6818a6b1a618d448aad2d04a9f063689d1
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: bba1be37d3a654fa6d2bd64cc443cde76d844a60
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289472"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491642"
 ---
 # <a name="delete-channel"></a>删除频道
 
@@ -29,7 +29,9 @@ ms.locfileid: "44289472"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | All、Group、all、All、All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 除 "全部"、"删除"、"组"[RSC](https://aka.ms/teams-rsc)、"组"、"全部"、"所有"、"    |
+|Application | "全部"、"."、"组"、"所有"、"    |
+
+> **注意**：标记为 * 的权限使用[特定于资源的同意](https://aka.ms/teams-rsc)。
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 

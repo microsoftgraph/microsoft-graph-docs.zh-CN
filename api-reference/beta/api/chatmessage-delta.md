@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 52feda55dd3f5d6a56b785088cacee255be27678
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
-ms.translationtype: HT
+ms.openlocfilehash: a78d7cbeef36f5b6f15fca3d1131c8efe1270002
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44287421"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491313"
 ---
 # <a name="chatmessages-delta"></a>chatMessages：delta
 
@@ -33,7 +33,7 @@ ms.locfileid: "44287421"
 
 状态令牌对客户端完全不透明。 若要继续一轮事件更改跟踪，只需将最后一个 GET 请求返回的 `nextLink` 或 `deltaLink` URL 复制并应用到同一日历视图的下一个 delta 函数调用即可。 响应中返回的 `deltaLink` 表示当前一轮更改跟踪已完成。 可以保存 `deltaLink` URL，并在开始下一轮时使用。
 
-有关详细信息，请参阅[增量查询](/graph/delta-query-overview.md)文档。
+有关详细信息，请参阅[增量查询](/graph/delta-query-overview)文档。
 
 ## <a name="permissions"></a>权限
 
@@ -43,7 +43,9 @@ ms.locfileid: "44287421"
 |---------------------------------------|---------------------------------------------|
 |委派（工作或学校帐户）     | ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All |
 |委派（个人 Microsoft 帐户） |不支持                                |
-|Application                            | ChannelMessage.Read.Group ([RSC](https://aka.ms/teams-rsc)), ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Application                            | ChannelMessage *、ChannelMessage、group、group、group、group 写。 All |
+
+> **注意**：标记为 * 的权限使用[特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。

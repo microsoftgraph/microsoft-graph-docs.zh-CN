@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4815cb4014862d4ddf0cc6c61ee244335e4f5f44
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 930ed3298eff15303cd9a4dc228e5d7340a7af5a
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44288604"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491593"
 ---
 # <a name="patch-channel"></a>修补程序通道
 
@@ -20,7 +20,7 @@ ms.locfileid: "44288604"
 
 更新指定[通道](../resources/channel.md)的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,9 @@ ms.locfileid: "44288604"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | ChannelSettings、Group 写全部、所有的 ReadWrite。 All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | ChannelSettings （[RSC](https://aka.ms/teams-rsc)）、ChannelSettings、All、group、All、All 和 All。 all |
+|Application | ChannelSettings *、ChannelSettings、all、ReadWrite、all、all、All、All |
+
+> **注意**：标记为 * 的权限使用[特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 

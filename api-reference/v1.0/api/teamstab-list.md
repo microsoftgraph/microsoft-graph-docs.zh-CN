@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 55558129f70d71c0958d696498ea3b61fa0f2a1d
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 016a2a2b17a019b8f325abee0358223b8f72d03a
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290249"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491740"
 ---
 # <a name="list-tabs-in-channel"></a>通道中的列表选项卡
 
@@ -26,7 +26,7 @@ ms.locfileid: "44290249"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsTab，TeamsTab，all，group，all，Read. all，all，all，all，all，all，all |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsTab （[rsc）、TeamsTab （](https://aka.ms/teams-rsc)[Rsc](https://aka.ms/teams-rsc)）、TeamsTab、group. all、Group. all、、、all、、all、all 和 all。 all，all，all |
+|Application | TeamsTab，TeamsTab，all，group，all，Read. all，all，all，all，all，all，all |
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 

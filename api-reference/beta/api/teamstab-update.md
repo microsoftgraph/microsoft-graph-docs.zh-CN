@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ef367a7bc96ae2ee9242e229bbdbf4f33eacc3c1
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 0adae6ac5f81f7998bf6b795d11d906519409fc9
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289869"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491852"
 ---
 # <a name="update-tab"></a>更新选项卡
 
@@ -20,7 +20,7 @@ ms.locfileid: "44289869"
 
 更新指定[选项卡](../resources/teamstab.md)的属性。这可用于配置选项卡的内容。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -28,7 +28,9 @@ ms.locfileid: "44289869"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsTab、Group 写全部、所有的 ReadWrite。 All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序                            | TeamsTab （[RSC](https://aka.ms/teams-rsc)）、TeamsTab、All、group、All、All 和 All。 all |
+|Application                            | TeamsTab *、TeamsTab、all、ReadWrite、all、all、All、All |
+
+> **注意**：标记为 * 的权限使用[特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 

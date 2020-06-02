@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 119ab415814a41402c87846bbcfb41f0e2bdb542
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 6737aca4fed508c08abc4642171b68cd8949385d
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333642"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491782"
 ---
 # <a name="unarchive-team"></a>解档团队
 
@@ -29,7 +29,7 @@ Unarchiving 是一种异步操作。 异步操作成功完成后，团队即为 
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamSettings、Group 写全部、所有的 ReadWrite。 All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamSettings （[RSC](https://aka.ms/teams-rsc)）、TeamSettings、All、group、All、All 和 All。 all |
+|Application | TeamSettings、Group 写全部、所有的 ReadWrite。 All |
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
