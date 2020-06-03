@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 21bad04b4fceeecc1eddd18fbae1a1a20b50e50a
-ms.sourcegitcommit: a1a57e803c334e11316dd571ad1b54c95406740e
+ms.openlocfilehash: 4f75b6df6cfae4026de6e1a917002d4531a2ff73
+ms.sourcegitcommit: 43f7800894857a29f02fffaf4a50ad6386b5bf59
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44413432"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44524464"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -22,6 +22,12 @@ ms.locfileid: "44413432"
 ### <a name="calendar--place"></a>日历 | 位置
 在 v1.0 中的[位置 API](/graph/api/resources/place) GA-在生产应用程序中使用此 api 来获取、更新或删除租户中的[会议室](/graph/api/resources/room)或[会议室列表](/graph/api/resources/roomlist)。 了解有关位置 API 的[详细](outlook-calendar-concept-overview.md#build-apps-with-location-awareness-and-provide-intelligent-context)信息。
 
+### <a name="cloud-communications--call-records"></a>云通信 | 通话记录
+- 公开的[呼叫记录 API](/graph/api/resources/callrecords-api-overview?view=graph-rest-1.0) -使用[CallRecord](/graph/api/resources/callrecord?view=graph-rest-1.0)资源在 Microsoft 团队和 Skype 中获取呼叫和联机会议的元数据。
+- 订阅[更改通知](/graph/webhooks)，以获取组织中所有**callRecord**资源的更改通知。
+- [列出](/graph/api/callrecords-session-list?view=graph-rest-1.0) **callRecord**中的会话，并根据需要[展开每个会话以](/graph/api/callrecords-session-list?view=graph-rest-1.0#example-2-get-session-list-with-segments)在呼叫记录中列出分段。
+- 对 `frequency60GHz` 网段中媒体终结点的 60-GHz （）和 `unknownFutureValue` WiFi 频带值的支持。
+
 ### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 Intune[可能会](changelog.md#may-2020)在 v1.0 中更新。
 
@@ -33,7 +39,7 @@ Intune[可能会](changelog.md#may-2020)在 v1.0 中更新。
 有关更多详细信息，请参阅[新的 Graph 浏览器现已公开](https://developer.microsoft.com/graph/blogs/new-graph-explorer-is-now-ga/)。
 
 ### <a name="identity-and-access"></a>身份和访问
-- V1.0 中的 [服务主体 API] GA-在生产应用程序中使用[servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)以编程方式管理应用程序的实例，并控制应用程序可在租户中执行的操作。 您可以控制哪些用户可以使用应用程序，应用程序有权访问哪些资源，如添加密码凭据、即将过期的证书以及管理委派的权限授予和应用程序角色分配。
+- 在 v1.0 中使用服务主体 API （GA）-使用生产应用程序中的[servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)资源以编程方式管理应用程序的实例，并控制应用程序可在租户中执行的操作。 您可以控制哪些用户可以使用应用程序，应用程序有权访问哪些资源，如添加密码凭据、即将过期的证书以及管理委派的权限授予和应用程序角色分配。
 - 公开的[appRoleAssignment](/graph/api/resources/appRoleAssignment?view=graph-rest-1.0) API，用于记录[appRole](/graph/api/resources/approle?view=graph-rest-1.0) `roles` 对[用户](/graph/api/resources/user?view=graph-rest-1.0)、[组](/graph/api/resources/group?view=graph-rest-1.0)或[servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)的 appRole 分配（表示 ID 令牌和访问令牌中的声明）。
 - 使用的委派或应用程序权限 `AppRoleAssignment.ReadWrite.All` 允许应用管理对任何 API （包括 Microsoft Graph）的应用程序权限和任何应用程序的应用程序分配的授予，分别与或不带登录用户。
 

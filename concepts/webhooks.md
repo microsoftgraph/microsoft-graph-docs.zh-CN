@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: c4e8b968330ee29427893eb41dd7f4595333d629
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 562eaccdd776ed22a4e171f6c0107f83be6acaab
+ms.sourcegitcommit: 43f7800894857a29f02fffaf4a50ad6386b5bf59
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491691"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44524251"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -46,7 +46,7 @@ Microsoft Graph API 使用 webhook 机制将更改通知传递给客户端。客
 
 可以创建对特定 Outlook 文件夹的订阅，例如收件箱：`me/mailFolders('inbox')/messages`
 
-或以下顶级资源的订阅：`me/messages`、`me/contacts`、`me/events`、`users` 或 `groups`
+或者顶级资源：、、、、 `/me/messages` `/me/contacts` `/me/events` `users` `groups` 或`/communications/callRecords`
 
 或以下特定资源实例的订阅：`users/{id}`、`groups/{id}`、`groups/{id}/conversations`
 

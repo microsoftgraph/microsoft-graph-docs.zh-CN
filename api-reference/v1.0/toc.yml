@@ -900,13 +900,17 @@ items:
               - name: 概述
                 href: resources/callrecords-api-overview.md
               - name: 呼叫记录
-                href: resources/callrecords-callrecord.md
-              - name: 获取呼叫记录
-                href: api/callrecords-callrecord-get.md
+                items:
+                  - name: 呼叫记录
+                    href: resources/callrecords-callrecord.md
+                  - name: 获取呼叫记录
+                    href: api/callrecords-callrecord-get.md
               - name: 会话
-                href: resources/callrecords-session.md
-              - name: 列出会话
-                href: api/callrecords-session-list.md
+                items:
+                  - name: 会话
+                    href: resources/callrecords-session.md
+                  - name: 列出会话
+                    href: api/callrecords-session-list.md
       - name: 跨设备体验
         displayName: Project Rome
         items:
@@ -1926,7 +1930,7 @@ items:
               - name: iOS 更新配置
                 href: resources/intune-deviceconfig-iosupdateconfiguration.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-iosupdateconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-iosupdateconfiguration-get.md
@@ -1939,7 +1943,7 @@ items:
               - name: iOS 更新设备状态
                 href: resources/intune-deviceconfig-iosupdatedevicestatus.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-iosupdatedevicestatus-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-iosupdatedevicestatus-get.md
