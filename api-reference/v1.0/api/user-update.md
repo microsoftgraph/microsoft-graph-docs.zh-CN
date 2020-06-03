@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8740cd2011f3222b3a37129c66a0129d0b6f75e3
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
-ms.translationtype: HT
+ms.openlocfilehash: 4136e62886c91092c62349f0587d60c53f4d2c83
+ms.sourcegitcommit: a1a57e803c334e11316dd571ad1b54c95406740e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108954"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44413502"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -83,6 +83,9 @@ PATCH /users/{id | userPrincipalName}
 |usageLocation|String|两个字母的国家/地区代码（ISO 标准 3166）。 为检查服务在国家/地区的可用性，这对根据法律要求将分配许可证的用户而言是必需的。  示例包括：“US”、“JP”和“GB”。 不可为 null。|
 |userPrincipalName|String|用户的用户主体名称 (UPN)。UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。按照惯例，此名称应映射到用户的电子邮件名称。常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。创建用户时此属性是必需的。可从 [组织](../resources/organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。支持 $filter 和 $orderby。
 |userType|String|可用于对目录中的用户类型分类的字符串值，例如“成员”和“访客”。          |
+
+> [!NOTE] 
+> 以下属性无法使用仅应用程序上下文进行更新： **aboutMe**、**生日**、**雇用**日期、**兴趣**、**我**的爱好、 **pastProjects**、 **preferredName**、**责任**、**学校**和**技能**。
 
 ## <a name="response"></a>响应
 

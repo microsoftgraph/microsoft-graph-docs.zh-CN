@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4ac4ee0543adb2054782c2b66a454451a20d98c2
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: d6eee25246d0851bd442bbbb10b9f9c2bfc646cf
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154015"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44218088"
 ---
 # <a name="update-workforceintegration"></a>更新 workforceIntegration
 
@@ -18,7 +18,7 @@ ms.locfileid: "44154015"
 
 更新[workforceIntegration](../resources/workforceintegration.md)对象的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -53,13 +53,13 @@ PATCH /teamwork/workforceIntegrations
 |apiVersion|Int32|回调 URL 的 API 版本。 从1开始。|
 |displayName|String|劳动力集成的名称。|
 |技术|workforceIntegrationEncryption|劳动力集成加密资源。 |
-|isActive|布尔值|指示此劳动力集成当前是否处于活动状态且可用。|
+|isActive|Boolean|指示此劳动力集成当前是否处于活动状态且可用。|
 |supportedEntities|string| 可取值为：`none`、`shift`、`swapRequest`、`openshift`、`openShiftRequest`、`userShiftPreferences`。 如果选择多个值，则所有值必须以大写形式的第一个字母开头。|
 |url|String| 劳动力集成 URL，用于从班次服务进行回调。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[workforceIntegration](../resources/workforceintegration.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[workforceIntegration](../resources/workforceintegration.md)对象。
 
 ## <a name="examples"></a>示例
 
@@ -67,6 +67,8 @@ PATCH /teamwork/workforceIntegrations
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_workforceintegration"
@@ -88,6 +90,24 @@ Content-type: application/json
   "supportedEntities": "supportedEntities-value"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-workforceintegration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-workforceintegration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-workforceintegration-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-workforceintegration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 
@@ -144,7 +164,7 @@ PATCH https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforce
 ```
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 ```
 HTTP/1.1 200 OK
 Content-type: application/json

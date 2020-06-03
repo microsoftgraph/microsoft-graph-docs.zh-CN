@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: a993408b6c53ee3eda4b8dbcb60b03e6787b6188
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 546eeec48a06249423ea28cb9e62ce619654ad52
+ms.sourcegitcommit: 43f7800894857a29f02fffaf4a50ad6386b5bf59
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35711715"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44524532"
 ---
 ```objc
 
@@ -17,14 +17,11 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphGroup *group = [[MSGraphGroup alloc] init];
-[group setDescription:@"description-value"];
-[group setDisplayName:@"displayName-value"];
-NSMutableArray *groupTypesList = [[NSMutableArray alloc] init];
-[groupTypesList addObject: @"groupTypes-value"];
-[group setGroupTypes:groupTypesList];
-[group setMail:@"mail-value"];
-[group setMailEnabled: true];
-[group setMailNickname:@"mailNickname-value"];
+NSMutableArray *assignedLabelsList = [[NSMutableArray alloc] init];
+MSGraphAssignedLabel *assignedLabels = [[MSGraphAssignedLabel alloc] init];
+[assignedLabels setLabelId:@"45cd0c48-c540-4358-ad79-a3658cdc5b88"];
+[assignedLabelsList addObject: assignedLabels];
+[group setAssignedLabels:assignedLabelsList];
 
 NSError *error;
 NSData *groupData = [group getSerializedDataWithError:&error];

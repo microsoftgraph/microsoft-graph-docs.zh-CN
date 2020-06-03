@@ -1,22 +1,22 @@
 ---
 title: 设置用户数据更改的通知
-description: Microsoft Graph API 使用 Webhook 机制将通知传递到客户端。客户端是用于配置自身的 URL 以接收通知的 Web 服务。客户端应用使用通知在更改时更新其状态。
+description: Microsoft Graph API 使用 webhook 机制将更改通知传递给客户端。客户端是一种 web 服务，可用于配置自己的 URL 以接收更改通知。客户端应用使用更改通知在更改时更新其状态。
 author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: bdb4b23bf14e7c63cbaeeb21c4d559aa5f46b35f
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
-ms.translationtype: HT
+ms.openlocfilehash: c4e8b968330ee29427893eb41dd7f4595333d629
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44218150"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44491691"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
-Microsoft Graph API 使用 Webhook 机制将通知传递到客户端。客户端是用于配置自身的 URL 以接收通知的 Web 服务。客户端应用使用通知在更改时更新其状态。
+Microsoft Graph API 使用 webhook 机制将更改通知传递给客户端。客户端是一种 web 服务，可用于配置自己的 URL 以接收更改通知。客户端应用使用更改通知在更改时更新其状态。
 
-Microsoft Graph 接受订阅请求之后，将通知推送到订阅中指定的 URL。 然后应用根据其业务逻辑执行操作。 例如，它提取更多数据、更新缓存和视图等。
+在 Microsoft Graph 接受订阅请求后，它会将更改通知推送到订阅中指定的 URL。 然后应用根据其业务逻辑执行操作。 例如，它提取更多数据、更新缓存和视图等。
 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
@@ -24,7 +24,7 @@ Microsoft Graph 接受订阅请求之后，将通知推送到订阅中指定的 
 > [!div class="nextstepaction"]
 > [使用 .NET Core 生成 Webhook 应用](/graph/tutorials/change-notifications)
 
-默认情况下，更改通知不包含资源数据，`id` 除外。 如果应用需要资源数据，则可以调用 Microsoft Graph API 以获取完整资源。 本文使用**用户**资源作为使用通知的示例。
+默认情况下，更改通知不包含资源数据，`id` 除外。 如果应用需要资源数据，则可以调用 Microsoft Graph API 以获取完整资源。 本文使用**用户**资源作为使用更改通知的示例。
 
 应用还可订阅包含资源数据的更改通知，避免执行其他 API 调用来访问数据。 此类应用将需要实现额外的代码来处理此类通知的要求，具体而言：响应订阅生命周期通知，验证通知的真实性，以及解密资源数据。 将来会有更多资源类型支持此类型的通知。 有关如何使用这些通知的详细信息，请参阅[设置包含资源数据的更改通知（预览版）](webhooks-with-resource-data.md)。
 
@@ -41,7 +41,7 @@ Microsoft Graph 接受订阅请求之后，将通知推送到订阅中指定的 
 - 用户个人 OneDrive 上_任何_ [driveItem][] 文件夹层次结构内的内容
 - OneDrive for Business 上 [driveItem][] _根文件夹_层次结构内的内容
 - 安全[警报][]
-- Teams [callRecord][]（预览版）
+- 团队[callRecord][]
 - Teams [chatMessage][]（预览）
 
 可以创建对特定 Outlook 文件夹的订阅，例如收件箱：`me/mailFolders('inbox')/messages`
@@ -73,7 +73,7 @@ Microsoft Graph 接受订阅请求之后，将通知推送到订阅中指定的 
 
 - 不支持 Azure AD B2C 租户。
 
-- 个人 Microsoft 帐户不支持用户实体的通知。
+- 个人 Microsoft 帐户不支持用户实体的 Changfe 通知。
 
 - 用户和租订阅存在一个[已知问题](known-issues.md#change-notifications)。
 
@@ -91,7 +91,7 @@ Microsoft Graph 接受订阅请求之后，将通知推送到订阅中指定的 
 
 订阅的生命周期有限。 应用需要在订阅到期前续订订阅。 否则，需要新建订阅。 有关最长有效期的列表，请参阅[每个资源类型的最长订阅有效期](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type)。
 
-应用还可以随时取消订阅，以停止接收通知。
+应用还可以随时取消订阅以停止获取更改通知。
 
 ## <a name="managing-subscriptions"></a>管理订阅
 
@@ -99,7 +99,7 @@ Microsoft Graph 接受订阅请求之后，将通知推送到订阅中指定的 
 
 ### <a name="creating-a-subscription"></a>创建订阅
 
-创建订阅是开始接收资源通知的第一步。订阅流程如下所示：
+创建订阅是开始接收对资源的更改通知的第一步。订阅过程如下所示：
 
 1. 客户端发送特定资源的订阅 (POST) 请求。
 
@@ -112,7 +112,7 @@ Microsoft Graph 接受订阅请求之后，将通知推送到订阅中指定的 
 
 1. Microsoft Graph 将响应发送回客户端。
 
-客户端必须存储订阅 ID 以便将通知与订阅关联。
+客户端必须存储订阅 ID，才能将更改通知与订阅关联。
 
 #### <a name="subscription-request-example"></a>订阅请求示例
 
@@ -132,7 +132,7 @@ Content-Type: application/json
 
 `resource` 属性指定要被监视以进行更改的资源。 例如，可以创建特定邮件文件夹的订阅：`me/mailFolders('inbox')/messages`，或代表由管理员同意的用户：`users/john.doe@onmicrosoft.com/mailFolders('inbox')/messages`。
 
-虽然不需要 `clientState`，但必须包括它才能符合我们建议的通知处理过程。 通过设置此属性后，可以确认收到的通知来自 Microsoft Graph 服务。 因此，该属性的值应保密，并且只有你的应用程序和 Microsoft Graph 服务知道。
+尽管 `clientState` 不是必需的，但必须将其包括在内，才能符合我们建议的更改通知处理过程。 通过设置此属性，可以确认收到的更改通知来自 Microsoft Graph 服务。 因此，该属性的值应保密，并且只有你的应用程序和 Microsoft Graph 服务知道。
 
 如果成功，Microsoft Graph 将在正文中返回 `201 Created` 代码和 [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) 对象。
 
@@ -180,7 +180,7 @@ Content-Type: application/json
 
 ### <a name="deleting-a-subscription"></a>删除订阅
 
-客户端可以通过使用其 ID 删除订阅来停止接收通知。
+客户端可以通过使用其 ID 删除订阅来停止接收更改通知。
 
 ```http
 DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
@@ -188,45 +188,24 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 如果成功，Microsoft Graph 将返回 `204 No Content` 代码。
 
-## <a name="notifications"></a>通知
+## <a name="change-notifications"></a>更改通知
 
-客户端在创建订阅后开始接收通知。 资源发生更改时，Microsoft Graph 将 POST 请求发送到通知 URL。 仅针对订阅中指定类型的更改发送通知，例如 `created`。
+客户端在创建订阅后开始接收更改通知。 资源发生更改时，Microsoft Graph 将 POST 请求发送到通知 URL。 仅为订阅中指定类型的更改发送更改通知，例如 `created` 。
 
-> **注意：** 使用监视同一资源类型并使用同一通知 URL 的多个订阅时，可以发送包含具有不同订阅 ID 的多个通知的 POST。 无法保证 POST 中的所有通知都属于单个订阅。
+> **注意：** 如果使用多个订阅来监视相同的资源类型并使用相同的通知 URL，则可以发送包含不同订阅 Id 的多个更改通知的帖子。 无法保证帖子中的所有更改通知都属于单个订阅。
 
-### <a name="notification-properties"></a>通知属性
+### <a name="change-notification-example"></a>更改通知示例
 
-notification 对象具有以下属性：
+> **注意：** 有关在传递更改通知时发送的数据的完整说明，请参阅[changeNotificationCollection](/graph/api/resources/changenotificationcollection)。
 
-| 属性 | 类型 | 说明 |
-|:---------|:-----|:------------|
-| subscriptionId | string | 生成通知的订阅的 ID。 |
-| subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | 订阅的过期时间。 |
-| clientState | string | 订阅请求中指定的 `clientState` 属性（如果有）。 |
-| changeType | string | 引发通知的事件类型。 例如，邮件接收时为 `created`，或将邮件标记为已读时为 `updated`。 |
-| resource | string | 资源相对于 `https://graph.microsoft.com` 的 URI。 |
-| resourceData | object | 此属性的内容取决于要订阅资源的类型。 |
-| tenantId | string | 发出通知的租户的 ID。 |
-
-例如，对于 Outlook 资源，`resourceData` 包含以下字段：
-
-| 属性 | 类型 | 说明 |
-|:---------|:-----|:------------|
-| @odata.type | string | Microsoft Graph 中描述所表示对象的 OData 实体类型。 |
-| @odata.id | string | 对象的 OData 标识符。 |
-| @odata.etag | string | 表示对象版本的 HTTP 实体标记。 |
-| id | string | 对象的标识符。 |
-
-> **注意：**`resourceData` 中提供的 `id` 值在生成通知时有效。 某些操作（例如将邮件移动到另一个文件夹）可能会导致 `id` 在处理通知时不再有效。
-
-### <a name="notification-example"></a>通知示例
-
-用户收到电子邮件时，Microsoft Graph 将发送如下所示的通知：
+当用户收到电子邮件时，Microsoft Graph 将发送一条更改通知，如下所示：
 
 ```json
 {
   "value": [
     {
+      "id": "lsgTZMr9KwAAA",
+      "sequenceNumber": 10,
       "subscriptionId":"<subscription_guid>",
       "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
       "clientState":"secretClientValue",
@@ -245,23 +224,23 @@ notification 对象具有以下属性：
 }
 ```
 
-请注意，`value` 字段是一个对象数组。 如果有很多排队的通知，Microsoft Graph 可能会在单个请求中发送多个项目。 来自不同订阅的通知可以包含在同一通知请求中。
+> **注意：** 该 `value` 字段是一个对象数组。 当多个更改通知被排入队列时，Microsoft Graph 可能会在一个请求中发送多个项目。 来自不同订阅的更改通知可以包含在同一个请求中。
 
-### <a name="processing-the-notification"></a>处理通知
+### <a name="processing-the-change-notification"></a>处理更改通知
 
-应处理你的应用收到的每个通知。 应用程序必须至少执行以下任务来处理通知：
+应处理应用程序收到的每个更改通知。 以下是您的应用程序处理更改通知时必须执行的最低任务：
 
-1. 将响应中的 `202 - Accepted` 状态代码发送到 Microsoft Graph。 如果 Microsoft Graph 未收到 2xx 类代码，它将在大约 4 小时的一段时间内尝试多次发布通知，之后，通知将被删除，且不会发送。
+1. 将响应中的 `202 - Accepted` 状态代码发送到 Microsoft Graph。 如果 Microsoft Graph 没有收到2xx 类代码，它会在大约4小时的一段时间内尝试发布更改通知一段时间。之后，更改通知将被丢弃，并且不会被传递。
 
-    > **注意：** 收到通知后立即发送 `202 - Accepted` 状态代码，甚至在验证其真实性之前。 只是确认接收通知，防止不必要的重试。 当前超时是 30 秒，但将来可能会减少，以优化服务性能。
+    > **注意：**`202 - Accepted`收到更改通知后立即发送状态代码，即使在验证其真实性之前也是如此。 您只需确认收到更改通知并防止不必要的重试。 当前超时是 30 秒，但将来可能会减少，以优化服务性能。
 
 1. 验证 `clientState` 属性。 它必须与最初使用订阅创建请求提交的值匹配。
 
-    > **注意：** 如果不符合这个条件，无需将其视为有效通知。 通知可能不是来自 Microsoft Graph，并且可能是由未授权操作者发送的。 还应调查通知来自何处并采取适当的措施。
+    > **注意：** 如果不满足此条件，则不应将其视为有效的更改通知。 更改通知可能不是来自 Microsoft Graph，可能是由恶意参与者发送的。 您还应调查更改通知的来源，并采取相应的措施。
 
 1. 基于业务逻辑更新应用程序。
 
-对请求中的其他通知重复该过程。
+对请求中的其他更改通知重复此操作。
 
 ## <a name="code-samples"></a>代码示例
 
@@ -274,7 +253,7 @@ notification 对象具有以下属性：
 
 ## <a name="firewall-configuration"></a>防火墙配置
 
-可选择性地配置防火墙，以保护通知 URL，仅允许来自 Microsoft Graph 的入站连接。 这使你可以进一步降低发送到通知 URL 的无效通知的风险。 这些无效通知可能会试图触发已实施的自定义逻辑。 有关 Microsoft Graph 用于传递更改通知的 IP 地址的完整列表，请参阅 [Office 365 的其他终结点](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls)。
+可选择性地配置防火墙，以保护通知 URL，仅允许来自 Microsoft Graph 的入站连接。 这使您可以减少发送到通知 URL 的无效更改通知的暴露风险。 这些无效的更改通知可尝试触发您实现的自定义逻辑。 有关 Microsoft Graph 用于传递更改通知的 IP 地址的完整列表，请参阅 [Office 365 的其他终结点](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls)。
 
 > **注意：** 用于传递更改通知的已列出 IP 地址可以随时更新，恕不另行通知。
 
@@ -294,5 +273,5 @@ notification 对象具有以下属性：
 [邮件]: /graph/api/resources/message?view=graph-rest-1.0
 [用户]: /graph/api/resources/user?view=graph-rest-1.0
 [警报]: /graph/api/resources/alert?view=graph-rest-1.0
-[callRecord]: /graph/api/resources/callrecords-callrecord
+[callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-1.0
 [chatMessage]: /graph/api/resources/chatmessage
