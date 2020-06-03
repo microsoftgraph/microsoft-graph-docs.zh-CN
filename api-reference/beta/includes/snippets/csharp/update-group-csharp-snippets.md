@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: ea88dd497bff512531bfdf9fb5d635e520fabd08
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 3fecfda40625bd4f6ab3fd1653b2dd532d4bbee3
+ms.sourcegitcommit: 43f7800894857a29f02fffaf4a50ad6386b5bf59
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35711716"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44524527"
 ---
 ```csharp
 
@@ -13,15 +13,13 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var group = new Group
 {
-    Description = "description-value",
-    DisplayName = "displayName-value",
-    GroupTypes = new List<String>()
+    AssignedLabels = new List<AssignedLabel>()
     {
-        "groupTypes-value"
-    },
-    Mail = "mail-value",
-    MailEnabled = true,
-    MailNickname = "mailNickname-value"
+        new AssignedLabel
+        {
+            LabelId = "45cd0c48-c540-4358-ad79-a3658cdc5b88"
+        }
+    }
 };
 
 await graphClient.Groups["{id}"]

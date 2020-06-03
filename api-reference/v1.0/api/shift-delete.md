@@ -5,32 +5,32 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f3e08c9a8624787c0ce961dd4558bd3b21453667
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 578099ba41ee5bac94c64ab53a0fc3d3acdce2dd
+ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154113"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44216712"
 ---
-# <a name="delete-shift"></a><span data-ttu-id="3c070-103">删除班次</span><span class="sxs-lookup"><span data-stu-id="3c070-103">Delete shift</span></span>
+# <a name="delete-shift"></a><span data-ttu-id="34740-103">删除班次</span><span class="sxs-lookup"><span data-stu-id="34740-103">Delete shift</span></span>
 
-<span data-ttu-id="3c070-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3c070-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="34740-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="34740-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="3c070-105">从计划中删除[班次轮换](../resources/shift.md)。</span><span class="sxs-lookup"><span data-stu-id="3c070-105">Delete a [shift](../resources/shift.md) from the schedule.</span></span>
+<span data-ttu-id="34740-105">从计划中删除[班次轮换](../resources/shift.md)。</span><span class="sxs-lookup"><span data-stu-id="34740-105">Delete a [shift](../resources/shift.md) from the schedule.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3c070-106">权限</span><span class="sxs-lookup"><span data-stu-id="3c070-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="34740-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="34740-106">Permissions</span></span>
 
-<span data-ttu-id="3c070-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3c070-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="34740-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="34740-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3c070-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="3c070-109">Permission type</span></span>      | <span data-ttu-id="3c070-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3c070-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="34740-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="34740-109">Permission type</span></span>      | <span data-ttu-id="34740-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="34740-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3c070-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3c070-111">Delegated (work or school account)</span></span> | <span data-ttu-id="3c070-112">Schedule。 All，Group. 所有</span><span class="sxs-lookup"><span data-stu-id="3c070-112">Schedule.ReadWrite.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="3c070-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3c070-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3c070-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="3c070-114">Not supported.</span></span>    |
-|<span data-ttu-id="3c070-115">Application</span><span class="sxs-lookup"><span data-stu-id="3c070-115">Application</span></span> | <span data-ttu-id="3c070-116">Schedule. All、Schedule、All</span><span class="sxs-lookup"><span data-stu-id="3c070-116">Schedule.Read.All, Schedule.ReadWrite.All</span></span> |
+|<span data-ttu-id="34740-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="34740-111">Delegated (work or school account)</span></span> | <span data-ttu-id="34740-112">Schedule。 All，Group. 所有</span><span class="sxs-lookup"><span data-stu-id="34740-112">Schedule.ReadWrite.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="34740-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="34740-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="34740-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="34740-114">Not supported.</span></span>    |
+|<span data-ttu-id="34740-115">Application</span><span class="sxs-lookup"><span data-stu-id="34740-115">Application</span></span> | <span data-ttu-id="34740-116">Schedule. All、Schedule、All</span><span class="sxs-lookup"><span data-stu-id="34740-116">Schedule.Read.All, Schedule.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="3c070-117">**注意**：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="3c070-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="3c070-118">全局管理员可以访问他们不是其成员的组。</span><span class="sxs-lookup"><span data-stu-id="3c070-118">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="34740-117">**注意**：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="34740-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="34740-118">全局管理员可以访问他们不是其成员的组。</span><span class="sxs-lookup"><span data-stu-id="34740-118">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="3c070-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3c070-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="34740-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="34740-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,25 +38,27 @@ ms.locfileid: "44154113"
 DELETE /teams/{teamId}/schedule/shifts/{shiftId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3c070-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="3c070-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="34740-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="34740-120">Request headers</span></span>
 
-| <span data-ttu-id="3c070-121">标头</span><span class="sxs-lookup"><span data-stu-id="3c070-121">Header</span></span>       | <span data-ttu-id="3c070-122">值</span><span class="sxs-lookup"><span data-stu-id="3c070-122">Value</span></span> |
+| <span data-ttu-id="34740-121">标头</span><span class="sxs-lookup"><span data-stu-id="34740-121">Header</span></span>       | <span data-ttu-id="34740-122">值</span><span class="sxs-lookup"><span data-stu-id="34740-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="3c070-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="3c070-123">Authorization</span></span>  | <span data-ttu-id="3c070-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="3c070-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="34740-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="34740-123">Authorization</span></span>  | <span data-ttu-id="34740-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="34740-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="3c070-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="3c070-126">Request body</span></span>
-<span data-ttu-id="3c070-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="3c070-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="34740-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="34740-126">Request body</span></span>
+<span data-ttu-id="34740-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="34740-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3c070-128">响应</span><span class="sxs-lookup"><span data-stu-id="3c070-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="34740-128">响应</span><span class="sxs-lookup"><span data-stu-id="34740-128">Response</span></span>
 
-<span data-ttu-id="3c070-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="3c070-p104">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="34740-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="34740-p104">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3c070-131">示例</span><span class="sxs-lookup"><span data-stu-id="3c070-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="34740-131">示例</span><span class="sxs-lookup"><span data-stu-id="34740-131">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="3c070-132">请求</span><span class="sxs-lookup"><span data-stu-id="3c070-132">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="34740-132">请求</span><span class="sxs-lookup"><span data-stu-id="34740-132">Request</span></span>
 
-<span data-ttu-id="3c070-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="3c070-133">The following is an example of the request.</span></span>
+<span data-ttu-id="34740-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="34740-133">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="34740-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="34740-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "shift-delete"
@@ -64,12 +66,30 @@ DELETE /teams/{teamId}/schedule/shifts/{shiftId}
 ```http
 DELETE https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
 ```
+# <a name="c"></a>[<span data-ttu-id="34740-135">C#</span><span class="sxs-lookup"><span data-stu-id="34740-135">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/shift-delete-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="34740-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="34740-136">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/shift-delete-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="34740-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="34740-137">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/shift-delete-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="34740-138">Java</span><span class="sxs-lookup"><span data-stu-id="34740-138">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/shift-delete-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="3c070-134">响应</span><span class="sxs-lookup"><span data-stu-id="3c070-134">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="34740-139">响应</span><span class="sxs-lookup"><span data-stu-id="34740-139">Response</span></span>
 
-<span data-ttu-id="3c070-135">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="3c070-135">The following is an example of the response.</span></span> 
+<span data-ttu-id="34740-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="34740-140">The following is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",

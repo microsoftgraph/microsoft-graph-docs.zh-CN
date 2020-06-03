@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: fcd5e1c5281572e8a5d5efe4cd86070b222162f5
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 8b83aafe0407a288c5c523153390d02ba24192a8
+ms.sourcegitcommit: 43f7800894857a29f02fffaf4a50ad6386b5bf59
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636490"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44524489"
 ---
 ```javascript
 
@@ -16,14 +16,12 @@ const options = {
 const client = Client.init(options);
 
 const group = {
-  description: "description-value",
-  displayName: "displayName-value",
-  groupTypes: [
-    "groupTypes-value"
-  ],
-  mail: "mail-value",
-  mailEnabled: true,
-  mailNickname: "mailNickname-value"
+  assignedLabels: 
+  [
+    {
+        "labelId" : "45cd0c48-c540-4358-ad79-a3658cdc5b88"
+    }
+  ]
 };
 
 let res = await client.api('/groups/{id}')
