@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fdc6355b33539899ab51a4a6881a8109cb8d87a6
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: d6f07ea537f334796f29656ce05ea20351752402
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199751"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556259"
 ---
 # <a name="onpremisesagent-resource-type"></a>onPremisesAgent 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "43199751"
 
 表示内部部署代理。 可将租户管理员安装的本地代理配置为访问/处理特定的[已发布资源](publishedresource.md)的请求。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -33,11 +33,11 @@ ms.locfileid: "43199751"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|externalIp|字符串|由代理计算机的服务检测到的外部 IP 地址。 只读|
+|externalIp|String|由代理计算机的服务检测到的外部 IP 地址。 只读|
 |id|String| OnPremisesAgent 的对象 id。 只读。|
-|machineName|字符串|运行 aggent 的计算机的名称。 只读|
+|machineName|String|运行 aggent 的计算机的名称。 只读|
 |状态|string| 可取值为：`active`、`inactive`。|
-|publishingType|string| 可取值为：`appProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。|
+|publishingType|string| 可取值为：`applicationProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。|
 
 ## <a name="relationships"></a>关系
 

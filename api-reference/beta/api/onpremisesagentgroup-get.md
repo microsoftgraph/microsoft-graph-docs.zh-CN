@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 46c7b46c9a7183ddb9706212f6afb73bbf01caa1
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 73abcc34462f776d669e9188ffeef92b28f15d01
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199940"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556266"
 ---
 # <a name="get-onpremisesagentgroup"></a>获取 onPremisesAgentGroup
 
@@ -20,7 +20,7 @@ ms.locfileid: "43199940"
 
 检索[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -35,14 +35,14 @@ ms.locfileid: "43199940"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}
+GET /onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -54,7 +54,7 @@ GET ~/onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象。
 
 ## <a name="examples"></a>示例
 

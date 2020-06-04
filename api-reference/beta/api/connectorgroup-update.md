@@ -2,36 +2,37 @@
 title: 更新 connectorGroups
 description: 更新 connectorgroup 对象的属性。
 localization_priority: Normal
+author: japere
+ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: ad83631d6707e5f72f0813a71f7e40497e1903b0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 80565045fa292b09e5c8e98544c466ec784f24f0
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437173"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44555799"
 ---
 # <a name="update-connectorgroups"></a>更新 connectorGroups
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 connectorgroup 对象的属性。
-## <a name="permissions"></a>权限
+更新[connectorGroup](../resources/connectorgroup.md)对象的属性。
+
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /connectorGroups/{id}
+PATCH /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
@@ -43,31 +44,34 @@ PATCH /connectorGroups/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|connectorGroupType|string| 可能的值是`applicationProxy`：。|
-|name|String|ConnectorGroup 的名称。|
+|connectorGroupType|string| 指示混合代理的类型。 此项预设置的系统。 |
+|id|string| 此 connectorGroup 的唯一标识符。 只读。 |
+|isDefault|boolean| 指示 connectorGroup 是否为默认的 connectorGroup。 只有一个连接器组可以是默认的 connectorGroup，这是由系统预设置的。 |
+|name|string| 与 connectorGroup 关联的名称。 |
+|范围|string| 向其分配 connectorGroup 的区域并将为其优化流量。 仅当**未**向 connectorGroup 分配连接器或应用程序时，才能设置此区域。 可用区域包括：北美、欧洲、澳大利亚、亚洲和印度。 可取值为：`nam`、`eur`、`aus`、`asia`、`ind`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[connectorGroup](../resources/connectorgroup.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[connectorGroup](../resources/connectorgroup.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+下面展示了示例请求。
 <!-- {
   "blockType": "request",
   "name": "update_connectorgroup"
 }-->
 ```http
-PATCH https://graph.microsoft.com/{ver}/connectorGroups/{id}
+PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 Content-type: application/json
 Content-length: 99
 
 {
   "name": "name-value",
-  "connectorGroupType": "connectorGroupType-value",
+  "region": "region-value"
 }
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -82,7 +86,8 @@ Content-length: 119
   "id": "id-value",
   "name": "name-value",
   "connectorGroupType": "connectorGroupType-value",
-  "isDefault": true
+  "isDefault": true,
+  "region": "region-value"
 }
 ```
 

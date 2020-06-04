@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d57ede14ba5c5d392c0a2a0388e1757cc481242c
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: d42464fa6e249fef8d7b535b6327751f48d17167
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199989"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556322"
 ---
 # <a name="publishedresource-resource-type"></a>publishedResource 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "43199989"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示本地发布的资源。 租户管理员可以发布各种类型的本地资源-企业应用程序、域控制器、服务器等。可以将租户管理员安装的[本地代理](onpremisesagent.md)配置为访问/处理特定的已发布资源的请求。
+表示本地发布的资源。 租户管理员可以发布各种类型的本地资源-企业应用程序、域控制器、服务器等。可将租户管理员安装的[本地代理](onpremisesagent.md)配置为访问/处理特定的已发布资源的请求。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -37,8 +37,8 @@ ms.locfileid: "43199989"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|字符串| PublishedResource 的显示名称。|
-|id|字符串| PublishedResource 的对象 id。 只读。|
-|publishingType|string| 可取值为：`appProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。|
+|id|String| PublishedResource 的对象 id。 只读。|
+|publishingType|string| 可取值为：`applicationProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。|
 |resourceName|String|PublishedResource 的名称。|
 
 ## <a name="relationships"></a>关系

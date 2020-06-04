@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a6d69e8610159955dac4a4f90c57c3f731fafcef
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 17eeefa194a220ddadfc094dd2d25a7fe8389c34
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43381857"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44555755"
 ---
 # <a name="update-countrynamedlocation"></a>更新 countryNamedLocation
 
@@ -20,15 +20,15 @@ ms.locfileid: "43381857"
 
 更新[countryNamedLocation](../resources/countryNamedLocation.md)对象的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy.ReadWrite.ConditionalAccess |
+| 委派（工作或学校帐户）     | Policy。 Read. All 和 ConditionalAccess |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | Policy。 Read. All 和 ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,9 +51,9 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|countriesAndRegions|String 集合|由 ISO 3166-2 指定的两个字母格式的国家/地区和/或地区列表。|
+|countriesAndRegions|String collection|由 ISO 3166-2 指定的两个字母格式的国家/地区和/或地区列表。|
 |displayName|String|位置的人可读名称。|
-|includeUnknownCountriesAndRegions|Boolean|值是`true`如果未映射到国家或地区的 IP 地址应包含在指定的位置。|
+|includeUnknownCountriesAndRegions|Boolean|值是 `true` 如果未映射到国家或地区的 IP 地址应包含在指定的位置。|
 
 ## <a name="response"></a>响应
 

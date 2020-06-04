@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bed88872a69164e48cba80b1ab3925328b24b7c0
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 0b8892f3c21b9b89634350593f8b8b6985651bab
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916467"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556112"
 ---
 # <a name="update-conditionalaccesspolicy"></a>更新 conditionalAccessPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "43916467"
 
 更新[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)对象的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "43916467"
 |:--------------------------------------|:---------------------------------------------------------------|
 |委派（工作或学校帐户）     | Policy. All、ConditionalAccess 和 Application。 Read. All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 不支持。 |
+|Application                            | Policy. All、ConditionalAccess 和 Application。 Read. All |
 
 > [!NOTE]
 > 此 API 存在与权限相关的[已知问题](/graph/known-issues#permissions)。

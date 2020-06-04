@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4aee6888f37958d226d00ad68c11230309df66af
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 653397a076e930ac38119c99703db97157b84ccb
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218932"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556273"
 ---
 # <a name="update-identitysecuritydefaultsenforcementpolicy"></a>更新 identitySecurityDefaultsEnforcementPolicy
 
@@ -26,9 +26,9 @@ ms.locfileid: "43218932"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | ConditionalAccess |
+| 委派（工作或学校帐户）     | Policy。 Read. All 和 ConditionalAccess |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | ConditionalAccess |
+| Application                            | Policy。 Read. All 和 ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP 请求
 

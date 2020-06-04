@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a211fb4245e8f4e4ef23158c0f553876303ea9c9
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 861c17b55a50f35579eb820fbe76352077ded149
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199716"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556252"
 ---
 # <a name="onpremisesagentgroup-resource-type"></a>onPremisesAgentGroup 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "43199716"
 
 表示本地代理组。 通过代理组，租户管理员可以分配特定的[代理](onpremisesagent.md)来服务特定[的已发布内部部署资源](publishedresource.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -35,15 +35,15 @@ ms.locfileid: "43199716"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|String|**OnPremisesAgentGroup**的显示名称。|
-|id|字符串| **OnPremisesAgentGroup**的对象 ID。 只读。|
+|id|String| **OnPremisesAgentGroup**的对象 ID。 只读。|
 |isDefault|Boolean|指示**onPremisesAgentGroup**是否为默认代理组。 只有一个代理组可以是默认的**onPremisesAgentGroup** ，并由系统进行设置。|
-|publishingType|string| 可取值为：`appProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。|
+|publishingType|string| 可取值为：`applicationProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|agent|[onPremisesAgent](onpremisesagent.md)集合| 分配给**onPremisesAgentGroup**的**onPremisesAgent**的列表。 只读。 可为 Null。|
+|agent|[onPremisesAgent](onpremisesagent.md)集合| 分配给**onPremisesAgentGroup**的**onPremisesAgent**的列表。 只读。 可为 NULL。|
 |publishedResources|[publishedResource](publishedresource.md)集合| 分配给**onPremisesAgentGroup**的**publishedResource**的列表。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

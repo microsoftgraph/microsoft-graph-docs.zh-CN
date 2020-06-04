@@ -1,16 +1,16 @@
 ---
 title: 'onlineMeeting: createOrGet'
-description: 使用自定义指定的外部 ID 创建联机会议。 如果已存在外部 ID，此 API 将返回具有该外部 ID 的[onlineMeeting](../resources/onlinemeeting.md)对象。
+description: 使用自定义指定的外部 ID 创建联机会议。 如果已存在外部 ID，此 API 将返回具有该外部 ID 的**onlineMeeting**对象。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6ad76e9362643f29ae93dd2daa03e739ba763e03
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: e59029da6265f2acd7ca515a0bbe4283c788dec7
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916919"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556308"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting: createOrGet
 
@@ -49,16 +49,20 @@ POST /me/onlineMeetings/createOrGet
 | 参数        | 类型                                     |说明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:--------------------------------------------------------------------------|
 | chatInfo         |[chatInfo](../resources/chatinfo.md)                   |与此联机会议关联的聊天信息。|
-| endDateTime      | 日期时间                                 | 以 UTC 表示的会议结束时间。 |
+| endDateTime      | 日期/时间                                 | 以 UTC 表示的会议结束时间。 |
 | externalId       | String                                   | 外部 ID。 自定义 ID。 需要 |
 | participants     | [meetingParticipants](../resources/meetingparticipants.md)          | 与联机会议关联的参与者。  这包括组织者和与会者。 |
-| startDateTime    | 日期时间                                 | 以 UTC 表示的会议开始时间。 |
+| startDateTime    | 日期/时间                                 | 以 UTC 表示的会议开始时间。 |
 | subject          | String                                   | 联机会议的主题。 |
 
->**注意：** 如果未提供 "startDateTime" 和 "endDateTime"，则这些值将默认为系统默认的日期/时间值。 在 c # 中，该值为 "01/01/0001"
+>**注意：** 如果 `startDateTime` `endDateTime` 未提供，则 `startDateTime` 默认为当前日期/时间值， `endDateTime` 值将等于 startDateTime + 1 小时。 
+
+>如果 `startDateTime` 提供了，但 `endDateTime` 不是，则 `endDateTime` 值将等于 `startDateTime` + 1 小时。 
+
+>如果提供的不是 `endDateTime` ， `startDateTime` 或者 `endDateTime` 早于，则会引发错误 `startDateTime` 。
 
 ## <a name="response"></a>响应
-如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [onlineMeeting](../resources/onlinemeeting.md) 对象。
+如果成功，此方法将在 `201 Created` 创建新会议时返回响应代码，或者在 `200 OK` 检索现有会议时返回响应代码。 在这两种情况下，响应正文中都会返回一个[onlineMeeting](../resources/onlinemeeting.md)对象。
 
 ## <a name="examples"></a>示例
 

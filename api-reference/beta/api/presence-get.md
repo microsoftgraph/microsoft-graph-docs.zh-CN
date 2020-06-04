@@ -5,35 +5,36 @@ author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 2e73cfcb18fa11b6d4a66f11e5e5bdc0f4802168
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6af22c5e4ab1756aecaa384a78e010e12f071c16
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455445"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556287"
 ---
 # <a name="get-presence"></a>获取状态
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取用户的[状态](../resources/presence.md)信息。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 若要调用这些 Api，必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）                  |
 | :-------------- | :----------------------------------------------------------- |
-| 委派（工作或学校帐户）     | 状态.阅读，状态.阅读.全部                         |
-| 委派（个人 Microsoft 帐户） | 不支持。                         |
-| 应用程序                            | 不支持。                                  |
+| 委派（工作或学校帐户）     | 状态.阅读，状态.阅读.全部      |
+| 委派（个人 Microsoft 帐户） | 不支持。                        |
+| Application                            | 不支持。                        |
 
 ## <a name="http-requests"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/presence
 GET /users/{id}/presence
+GET /communications/presences
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -47,7 +48,7 @@ GET /users/{id}/presence
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[状态](../resources/presence.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[状态](../resources/presence.md)对象。
 
 ## <a name="examples"></a>示例
 
@@ -151,6 +152,45 @@ Content-Length: 1574
     "activity": "Presenting"
 }
 ```
+
+### <a name="example-3-get-the-presence-information-of-another-user"></a>示例3：获取其他用户的状态信息
+
+下面的示例展示了如何获取其他用户的状态信息。 此操作需要已读。 All 权限。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "get-user-presences"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d-8eaa-e39d80d3a647
+```
+
+#### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "name": "get-user-presences",
+  "@odata.type": "microsoft.graph.presence",
+  "truncated":"true"
+}-->
+
+```http
+HTTP/1.1 200 OK
+
+{
+    "value": [
+        {
+            "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
+            "availability": "Away",
+            "activity": "BeRightBack"
+        }
+    ]
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

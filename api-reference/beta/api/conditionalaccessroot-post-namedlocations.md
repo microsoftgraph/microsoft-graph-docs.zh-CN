@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 473b935d5daab59167949e49cdc2b79fec191811
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: da7dae139fd4de25909dd8fd3c7bb090761de8ca
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916456"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556105"
 ---
 # <a name="create-namedlocation"></a>创建 namedLocation
 
@@ -20,15 +20,15 @@ ms.locfileid: "43916456"
 
 创建新的[namedLocation](../resources/namedlocation.md)对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy.ReadWrite.ConditionalAccess |
+| 委派（工作或学校帐户）     | Policy。 Read. All 和 ConditionalAccess |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | Policy。 Read. All 和 ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ POST /identity/conditionalAccess/namedLocations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[ipNamedLocation](../resources/ipnamedlocation.md)或[countryNamedLocation](../resources/countrynamedlocation.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[IpNamedLocation](../resources/ipnamedlocation.md)或[countryNamedLocation](../resources/countrynamedlocation.md)对象。
 
 ## <a name="examples"></a>示例
 

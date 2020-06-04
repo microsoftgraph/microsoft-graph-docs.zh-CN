@@ -5,16 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: af59360a3947a98c0bd4cdcbbb826bb014747535
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 926a0ab60f32affc502a9890407e953e33d97b0a
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441613"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556141"
 ---
 # <a name="list-alerts"></a>列出警报
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,11 +47,23 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 此方法支持以下 [OData 查询参数](/graph/query-parameters)，它们有助于自定义响应：
 
 - `$count`
-- `$filter`
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top` 将返回每个安全 API 提供程序的顶部聚合结果。
+- `$top`-从每个安全 API 提供程序返回聚合的顶级结果。
+- `$filter`
+
+下表列出了 `$filter` 每个供应商名称的关键字。
+
+| 供应商名称      |$filter 关键字|
+|:----------|:----------|
+| Azure 高级威胁防护 | Azure 高级威胁防护 | 
+| Azure 安全中心 | ASC |
+| Microsoft Cloud App Security | MCAS |
+| Azure Active Directory Identity Protection | IPC |
+| Azure Sentinel | Azure Sentinel |
+| Microsoft Defender 高级威胁防护 | Microsoft Defender ATP |
+| Office 365 |  目前尚不支持。 |
 
 若要返回其他属性，使用 OData `$select` 查询参数指定你想要的一组 **alert** 属性。  例如，若要返回 **assignedTo**、**category** 和 **severity** 属性，向查询添加以下项：`$select=assignedTo,category,severity`。
 

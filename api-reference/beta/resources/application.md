@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0dd65de04f395c7014897b1f1caa0e9a507a5799
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 2b65eeaddd11e2f83b0558609b1316dc412b00bf
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291018"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556280"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -78,6 +78,8 @@ ms.locfileid: "44291018"
 | isFallbackPublicClient | Boolean | 将回退应用程序类型指定为公共客户端，例如在移动设备上运行的已安装应用程序。 默认值为 `false`，这意味着，回退应用程序类型为机密客户端，例如 Web 应用。 在某些情况下，Azure AD 无法确定客户端应用程序类型（例如 [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) 流，其中在不指定重定向 URI 的情况下配置客户端应用类型）。 在这种情况下，Azure AD 将基于此属性的值解释应用程序类型。|
 | keyCredentials | [keyCredential](keycredential.md) 集合 | 与应用程序关联的密钥凭据集合，不可为 Null。 |
 | logo | Stream | 应用程序的主徽标。 不可为空。 |
+| oauth2RequiredPostResponse | Boolean | 指定在 OAuth 2.0 令牌请求过程中，Azure AD 是否允许与 GET 请求相反的 POST 请求。 默认值为 false，即指定只允许 GET 请求。 |
+| onPremisesPublishing |[onPremisesPublishing](onpremisespublishing.md)| 表示为此应用程序配置应用程序代理所需的一组属性。 配置这些属性使您可以发布本地应用程序以实现安全远程访问。 |
 | optionalClaims | [optionalClaims](optionalclaims.md) | 应用程序开发人员可以在其 Azure AD 应用中配置可选声明，以指定 Microsoft 安全令牌服务发送到他们应用程序的令牌中所需的声明。 有关详细信息，请参阅[向 Azure AD 应用提供可选声明](/azure/active-directory/develop/active-directory-optional-claims)。|
 | parentalControlSettings | [parentalControlSettings](parentalcontrolsettings.md) |指定应用程序的家长控制设置。 |
 | passwordCredentials | [passwordCredential](passwordcredential.md) 集合|与应用程序关联的密码凭据集合。 不可为 Null。|
@@ -85,7 +87,7 @@ ms.locfileid: "44291018"
 | publisherDomain | String | 应用程序的已验证发布者域。 只读。|
 | requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) 集合|指定此应用程序需要访问的资源以及在每个资源下所需的 OAuth 权限范围和应用程序角色集。 这种预配置的所需资源访问权限可驱动同意体验。 不可为 Null。|
 | signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。 支持的值为：<ul><li>`AzureADMyOrg`：在我的组织的 Azure AD 租户（即单租户）中拥有 Microsoft 工作或学校帐户的用户</li><li>`AzureADMultipleOrgs`：在任何组织的 Azure AD 租户（即多租户）中拥有 Microsoft 工作或学校帐户的用户</li> <li>`AzureADandPersonalMicrosoftAccount`：拥有个人 Microsoft 帐户或任意组织的 Azure AD 租户中的工作或学校帐户的用户</li></ul> | `AzureADandPersonalMicrosoftAccount` |
-| tags |String 集合| 可用于分类和标识应用程序的自定义字符串。 不可为 null。|
+| tags |String 集合| 可用于分类和标识应用程序的自定义字符串。 不可为空。|
 | tokenEncryptionKeyId |String|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 将使用此属性指向的密钥对其发出的所有令牌进行加密。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|
 | web |[webApplication](webapplication.md)| 指定 Web 应用程序的设置。 |
 

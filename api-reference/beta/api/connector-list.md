@@ -2,36 +2,37 @@
 title: 列出连接器
 description: 检索连接器对象的列表。
 localization_priority: Normal
+author: japere
+ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 75efa2301a4bb6e51bc50ec2cac768ef2ab0f76a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 75b0d48c9b900f9d947e23cc68649e92f3c7f438
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437614"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556081"
 ---
 # <a name="list-connectors"></a>列出连接器
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索连接器对象的列表。
-## <a name="permissions"></a>权限
+检索[连接器](../resources/connector.md)对象的列表。
+
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /connectors
+GET /onPremisesPublishingProfiles/applicationProxy/connectors
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
@@ -46,19 +47,21 @@ GET /connectors
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[连接器](../resources/connector.md)对象的集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[连接器](../resources/connector.md)对象的集合。
+
 ## <a name="example"></a>示例
+
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+下面展示了示例请求。
 <!-- {
   "blockType": "request",
   "name": "get_connectors"
 }-->
 ```http
-GET https://graph.microsoft.com/{ver}/connectors
+GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,

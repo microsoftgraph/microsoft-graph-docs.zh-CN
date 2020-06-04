@@ -1,37 +1,38 @@
 ---
-title: 创建应用程序
-description: 使用此 API 新建应用程序。
+title: 将应用程序添加到 connectorGroup
+description: 使用此 API 将应用程序分配给连接器组
 localization_priority: Normal
+author: japere
+ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 018288444be3c2851e71117e1710a08947fa6104
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7843d1fa661bfcaf209fbdfee52f08f96427a37f
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437355"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44555774"
 ---
-# <a name="create-application"></a>创建应用程序
+# <a name="add-an-application-to-a-connectorgroup"></a>将应用程序添加到 connectorGroup
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 新建应用程序。
-## <a name="permissions"></a>权限
+将[应用程序](../resources/application.md)添加到[connectorGroup](../resources/connectorgroup.md)。
+
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /connectorGroups/{id}/applications
+POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applications
 
 ```
 ## <a name="request-headers"></a>请求标头
@@ -54,12 +55,12 @@ POST /connectorGroups/{id}/applications
   "name": "create_application_from_connectorgroup"
 }-->
 ```http
-POST https://graph.microsoft.com/{ver}/connectorGroups/{id}/applications
+POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applications
 Content-type: application/json
 Content-length: 329
 
 {
-  "@odata.id": "https://graph.microsoft.com/{ver}/applications/{id}"
+  "@odata.id": "https://graph.microsoft.com/beta/applications/{id}"
 }
 ```
 在请求正文中，提供 [application](../resources/application.md) 对象的 JSON 表示形式。

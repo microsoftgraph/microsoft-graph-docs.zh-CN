@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d31b6a91d052b0b8f717d5696ba56e765a2788cc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0566e66454a95d19c4d45f5882415e6c5ba90139
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458140"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556203"
 ---
 # <a name="update-ipnamedlocation"></a>更新 ipNamedlocation
 
@@ -20,15 +20,15 @@ ms.locfileid: "43458140"
 
 更新[ipNamedLocation](../resources/ipNamedLocation.md)对象的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | Policy.ReadWrite.ConditionalAccess |
+| 委派（工作或学校帐户）     | Policy。 Read. All 和 ConditionalAccess |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | Policy。 Read. All 和 ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -53,7 +53,7 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 |:-------------|:------------|:------------|
 |displayName|String|位置的人可读名称。|
 |ipRanges|[ipRange](../resources/iprange.md) 集合|来自 IETF RFC5962 的 IPv4 CIDR 格式（1.2.3.4/32）或任何允许的 IPv6 格式的 IP 地址范围列表。|
-|isTrusted|Boolean|如果此位置`true`是明确信任的，则该值为。|
+|isTrusted|Boolean|`true`如果此位置是明确信任的，则该值为。|
 
 ## <a name="response"></a>响应
 
