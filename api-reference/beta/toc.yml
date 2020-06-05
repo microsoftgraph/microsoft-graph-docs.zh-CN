@@ -9045,6 +9045,15 @@ items:
                 items:
                   - name: 列表设置
                     href: api/provisioningobjectsummary-list.md
+          - name: 身份验证流策略
+            items:
+              - name: 身份验证流策略
+                href: resources/authenticationflowspolicy.md
+                items:
+                  - name: 获取
+                    href: api/authenticationflowspolicy-get.md
+                  - name: 更新
+                    href: api/authenticationflowspolicy-update.md
           - name: 身份验证方法
             items:
               - name: 概述
@@ -9163,6 +9172,21 @@ items:
             items:
               - name: 获取数据策略操作
                 href: api/datapolicyoperation-get.md
+          - name: 委派权限授予
+            href: resources/oauth2permissiongrant.md
+            items:
+              - name: 列出委派权限授予
+                href: api/oauth2permissiongrant-list.md
+              - name: 获取委派权限授予
+                href: api/oauth2permissiongrant-get.md
+              - name: 创建委派权限授予
+                href: api/oauth2permissiongrant-post.md
+              - name: 更新委派权限授予
+                href: api/oauth2permissiongrant-update.md
+              - name: 删除委派权限授予
+                href: api/oauth2permissiongrant-delete.md
+              - name: 获取 Delta
+                href: api/oauth2permissiongrant-delta.md
           - name: 已删除项目
             href: resources/directory.md
             items:
@@ -9438,6 +9462,8 @@ items:
                 href: api/identityprovider-update.md
               - name: 删除标识提供程序
                 href: api/identityprovider-delete.md
+          - name: 信息保护
+            items:
               - name: 威胁评估
                 items:
                   - name: 概述
@@ -9463,21 +9489,6 @@ items:
             items:
               - name: 创建邀请
                 href: api/invitation-post.md
-          - name: 委派权限授予
-            href: resources/oauth2permissiongrant.md
-            items:
-              - name: 列出委派权限授予
-                href: api/oauth2permissiongrant-list.md
-              - name: 获取委派权限授予
-                href: api/oauth2permissiongrant-get.md
-              - name: 创建委派权限授予
-                href: api/oauth2permissiongrant-post.md
-              - name: 更新委派权限授予
-                href: api/oauth2permissiongrant-update.md
-              - name: 删除委派权限授予
-                href: api/oauth2permissiongrant-delete.md
-              - name: 获取 Delta
-                href: api/oauth2permissiongrant-delta.md
           - name: 内部部署发布
             href: resources/onpremisespublishingprofile-root.md
             items:
@@ -9529,6 +9540,36 @@ items:
                     href: api/publishedresource-post-agentgroups.md
                   - name: 从代理组中删除
                     href: api/publishedresource-delete-agentgroups.md
+              - name: 连接器
+                href: resources/connector.md
+                items:
+                  - name: 列表
+                    href: api/connector-list.md
+                  - name: 获取
+                    href: api/connector-get.md
+                  - name: 列出 memberOf
+                    href: api/connector-list-memberof.md
+                  - name: 将连接器添加到 connectorGroup
+                    href: api/connector-post-memberof.md
+              - name: 连接器组
+                href: resources/connectorgroup.md
+                items:
+                  - name: 列表
+                    href: api/connectorgroup-list.md
+                  - name: 获取
+                    href: api/connectorgroup-get.md
+                  - name: 更新
+                    href: api/connectorgroup-update.md
+                  - name: 删除
+                    href: api/connectorgroup-delete.md
+                  - name: 列出应用程序
+                    href: api/connectorgroup-list-applications.md
+                  - name: 列出成员
+                    href: api/connectorgroup-list-members.md
+                  - name: 添加连接器
+                    href: api/connectorgroup-post-members.md
+                  - name: 添加应用程序
+                    href: api/connectorgroup-post-applications.md
           - name: 组织
             href: resources/organization.md
             items:
@@ -9769,7 +9810,7 @@ items:
                   - name: 角色分配请求
                     href: resources/governanceroleassignmentrequest.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/governanceroleassignmentrequest-list.md
                       - name: 创建
                         href: api/governanceroleassignmentrequest-post.md
@@ -10468,7 +10509,7 @@ items:
               - name: Web 帐户
                 href: resources/webaccount.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/profile-list-webaccounts.md
                   - name: 创建
                     href: api/profile-post-webaccounts.md
@@ -10481,7 +10522,7 @@ items:
               - name: 网站
                 href: resources/personwebsite.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/profile-list-websites.md
                   - name: 创建
                     href: api/profile-post-websites.md
@@ -11566,7 +11607,7 @@ items:
                 href: api/outlooktaskfolder-get.md
               - name: 更新
                 href: api/outlooktaskfolder-update.md
-              - name: Delete
+              - name: 删除
                 href: api/outlooktaskfolder-delete.md
               - name: 在文件夹中列出任务
                 href: api/outlooktaskfolder-list-tasks.md
@@ -11583,7 +11624,7 @@ items:
                 href: api/outlooktaskgroup-get.md
               - name: 更新
                 href: api/outlooktaskgroup-update.md
-              - name: Delete
+              - name: 删除
                 href: api/outlooktaskfolder-delete.md
               - name: 在组中列出任务文件夹
                 href: api/outlooktaskfolder-list-tasks.md
