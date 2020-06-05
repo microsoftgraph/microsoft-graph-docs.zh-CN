@@ -5,16 +5,16 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 3815040e03b94d3448feb0e08816fd062e1086ea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c86a6bb7533fbda16c1796d4b4a7023c0463e4fe
+ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453725"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44568822"
 ---
 # <a name="search-query"></a>搜索：查询
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "42453725"
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "42453725"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 阅读文章、文件、读取、ExternalItem、阅读、全部 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,13 +49,13 @@ POST /search/query
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型        | 说明 |
+| 参数    | 类型        | Description |
 |:-------------|:------------|:------------|
 |requests|[searchRequest](../resources/searchrequest.md)集合|要发送到 JSON blob 中格式化的查询终结点的搜索请求。 它包含响应中的预期实体类型、基础源、分页参数、请求的字段和实际搜索查询。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`HTTP 200 OK`响应正文中返回响应代码和[searchResponse](../resources/searchresponse.md)集合对象。
+如果成功，此方法 `HTTP 200 OK` 在响应正文中返回响应代码和[searchResponse](../resources/searchresponse.md)集合对象。
 
 ## <a name="common-use-cases"></a>常见用例
 
@@ -84,7 +84,7 @@ Content-type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft.graph.externalItem"
+        "externalItem"
       ],
       "contentSources": [
         "/external/connections/connectionfriendlyname"
