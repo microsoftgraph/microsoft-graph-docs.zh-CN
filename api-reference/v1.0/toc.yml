@@ -895,6 +895,8 @@ items:
                 href: api/onlinemeeting-get.md
               - name: 删除
                 href: api/onlinemeeting-delete.md
+              - name: 创建或获取
+                href: api/onlinemeeting-createorget.md
           - name: 通话记录
             items:
               - name: 概述
@@ -3507,6 +3509,19 @@ items:
             items:
               - name: 获取数据策略操作
                 href: api/datapolicyoperation-get.md
+          - name: 委派权限授予
+            href: resources/oauth2permissiongrant.md
+            items:
+              - name: 列出
+                href: api/oauth2permissiongrant-list.md
+              - name: 创建
+                href: api/oauth2permissiongrant-post.md
+              - name: 获取
+                href: api/oauth2permissiongrant-get.md
+              - name: 更新
+                href: api/oauth2permissiongrant-update.md
+              - name: 删除
+                href: api/oauth2permissiongrant-delete.md
           - name: 已删除项目
             href: resources/directory.md
             items:
@@ -3661,19 +3676,6 @@ items:
             items:
               - name: 创建邀请
                 href: api/invitation-post.md
-          - name: 委派权限授予
-            href: resources/oauth2permissiongrant.md
-            items:
-              - name: 列出
-                href: api/oauth2permissiongrant-list.md
-              - name: 创建
-                href: api/oauth2permissiongrant-post.md
-              - name: 获取
-                href: api/oauth2permissiongrant-get.md
-              - name: 更新
-                href: api/oauth2permissiongrant-update.md
-              - name: 删除
-                href: api/oauth2permissiongrant-delete.md
           - name: 组织
             href: resources/organization.md
             items:

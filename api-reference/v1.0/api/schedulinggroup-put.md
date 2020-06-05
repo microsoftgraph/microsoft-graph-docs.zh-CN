@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bc14e4ee48cbc302d5900775e1fab826abc0d7ef
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 0fa4bc26ea6c5c27d8e7679e2bfb587b90044405
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44215855"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556146"
 ---
 # <a name="replace-schedulinggroup"></a>更换 schedulingGroup
 
@@ -37,7 +37,7 @@ ms.locfileid: "44215855"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PUT /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
+PATCH /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -68,7 +68,7 @@ PUT /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
   "name": "schedule-put-schedulinggroups"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
+PATCH https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 Content-type: application/json
 Prefer: return=representation
 
