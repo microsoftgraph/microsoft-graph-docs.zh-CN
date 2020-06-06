@@ -4,12 +4,12 @@ description: 您可以使用 Microsoft 搜索 API 通过[externalItem](/graph/ap
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 9d00ddbbedd775a6efb59971da10fbc9ee8854a6
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: e4dbdb7f324edc882a8bb9514a5f406bceee6ad6
+ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866908"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44568770"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-custom-types"></a>在 Microsoft Graph 中使用 Microsoft Search API 搜索自定义类型
 
@@ -39,7 +39,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft.graph.externalItem"
+        "externalItem"
       ],
       "contentSources": [
         "/external/connections/servicenow-connector-contoso"

@@ -4,12 +4,12 @@ description: 您可以在用户自己的日历中进行搜索。
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: b7ea957419801c6e100412e5f46d2e1757387b3b
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 6326fead96cd0b777ff6c3e257d6aa36d4d5c4ce
+ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868525"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44568772"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-calendar-events"></a>在 Microsoft Graph 中使用 Microsoft Search API 搜索日历事件
 
@@ -33,7 +33,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft.graph.event"
+        "event"
       ],
       "query": {
         "query_string": {

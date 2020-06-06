@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 2aba6b7a48958b4ed588dbecb350bda8b2c6a189
-ms.sourcegitcommit: 43f7800894857a29f02fffaf4a50ad6386b5bf59
+ms.openlocfilehash: 8af272a542a28430a4360fa73c995c22b9d656e9
+ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44524457"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44568843"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -48,7 +48,7 @@ ms.locfileid: "44524457"
 |[Add member](../api/group-post-members.md) |无| 通过发布到 **members** 导航属性将用户或组添加到此组（仅支持安全组和启用邮件的安全组）。|
 |[列出成员](../api/group-list-members.md) |[directoryObject](directoryobject.md) 集合| 从 **members** 导航属性中获取属于此组的直接成员的用户和组。|
 |[List transitive members](../api/group-list-transitivemembers.md) |[directoryObject](directoryobject.md) 集合| 获取属于此组成员（包括嵌套成员）的用户、组和设备。|
-|[List transitive memberOf](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md) 集合| 列出用户是其成员的所有组。 此操作是可传递的，并包括此组以嵌套方式所属的组。 |
+|[List transitive memberOf](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| 列出该组所属的组。 此操作是可传递的，并包括此组以嵌套方式所属的组。 |
 |[删除成员](../api/group-delete-members.md) | 无 |通过 **members** 导航属性删除 Office 365 组、安全组或启用邮件的安全组中的成员。可以删除用户或其他组。 |
 |[checkMemberGroups](../api/group-checkmembergroups.md)|String 集合|在一列组中检查此组的成员身份。此函数是可传递的。|
 |[checkMemberObjects](../api/group-checkmemberobjects.md)|String 集合|检查组、目录角色或管理单元对象列表中的成员身份。 此函数可传递。|

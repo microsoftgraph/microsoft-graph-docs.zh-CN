@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9f7a0e01ab4113694927fe9c6323a23f4c7c2036
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3f9f59543dfc596d06718c5e7b351a5a447b2018
+ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461530"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44568815"
 ---
 # <a name="add-attachment"></a>添加附件
 
@@ -26,7 +26,7 @@ ms.locfileid: "43461530"
 
 所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -126,7 +126,7 @@ Content-length: 100
 {
   "@odata.type": "#Microsoft.OutlookServices.ItemAttachment",
   "name": "name-value",
-  "item": "message or event entity"
+  "item": "{message or event entity}"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

@@ -4,12 +4,12 @@ description: 此 FAQ 解答了与 Microsoft Graph 快速入门相关的问题。
 author: jasonjoh
 ms.author: jasonjoh
 localization_priority: Normal
-ms.openlocfilehash: 9b260a29512595fe39d556a57d8e30d86ae06ca6
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 4aded41cab30133856041c073699948ed7ae49ff
+ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916912"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44568752"
 ---
 # <a name="microsoft-graph-quick-start-faq"></a>Microsoft Graph 快速入门 FAQ
 
@@ -28,6 +28,13 @@ ms.locfileid: "43916912"
 
 完成快速启动后，即表示应用程序可供运行。
 
+## <a name="prerequisites"></a>先决条件
+
+所有快速启动示例都需要访问 Outlook.com 上的邮箱的个人 Microsoft 帐户，或使用 Exchange Online 邮箱的 Microsoft 工作或学校帐户。 如果你没有 Microsoft 帐户，可以使用以下几种方法获取免费帐户：
+
+- 你可以[注册新的个人 Microsoft 帐户](https://signup.live.com/signup?wa=wsignin1.0&rpsnv=12&ct=1454618383&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https://mail.live.com/default.aspx&id=64855&cbcxt=mai&bk=1454618383&uiflavor=web&uaid=b213a65b4fdc484382b6622b3ecaa547&mkt=E-US&lc=1033&lic=1)。
+- 你可以[注册 office 365 开发人员计划](https://developer.microsoft.com/office/dev-program)以获取免费的 office 365 订阅。
+
 ## <a name="general-quick-start-sample-questions"></a>快速启动示例常见问题
 
 <!-- markdownlint-disable MD026 -->
@@ -40,9 +47,6 @@ ms.locfileid: "43916912"
 
 - 按分步教程操作，自己构建代码。
 - 从相应的 GitHub 存储库下载完整的项目，然后按照自述文件中的说明配置和运行示例。
-
-> [!NOTE]
-> 我们正在为当前已有快速启动示例的平台创建教程。 因此，某些快速启动还没有相应的教程。
 
 #### <a name="tutorials-and-github-repositories"></a>教程和 GitHub 存储库
 
@@ -84,6 +88,12 @@ ms.locfileid: "43916912"
 ### <a name="im-getting-aadsts50011-the-reply-url-specified-in-the-request-does-not-match-the-reply-urls-configured-for-the-application-when-running-a-quick-start"></a>运行快速启动时，我遇到错误“AADSTS50011：请求中指定的回复 URL 与为应用程序配置的回复 URL 不匹配”。
 
 这表示快速启动的应用程序注册存在问题。 从 [Microsoft Graph 快速入门页面](https://developer.microsoft.com/graph/quick-start)下载快速启动时，我们会为你创建应用程序注册，并配置与示例项目使用的默认 URL 匹配的回复 URL（也称为重定向 URL）。 如果你更改了此 URL，则应用程序注册将不再匹配，并可能导致此错误。 若要解决此错误，请参阅快速启动项目附带的 README.md 文件，以获取有关如何创建应用程序注册并在示例代码中对其进行配置的说明。
+
+### <a name="after-signing-in-im-told-i-need-admin-approval"></a>登录后，我告诉我需要管理员审批。
+
+登录到快速启动示例之一后，您可能会看到一条消息 "**需要管理员批准**" XXX 教程需要只有管理员可以授予的对组织中的资源的访问权限。 请让管理员向此应用授予权限，然后才能使用它。 " 这不是示例中的错误！ 任何快速启动请求都不会请求*默认情况下*需要管理员同意的任何 Graph 权限范围。 租户管理员可以禁用您同意为尚未批准的任何应用程序的关系图权限范围的能力。 在这种情况下，您会看到此错误。
+
+你需要与管理员合作以获得批准、使用个人 Microsoft 帐户（Outlook.com）或使用 Exchange Online 测试 Microsoft 365 租户。
 
 ## <a name="didnt-find-what-you-need"></a>找不到需要的内容？
 
