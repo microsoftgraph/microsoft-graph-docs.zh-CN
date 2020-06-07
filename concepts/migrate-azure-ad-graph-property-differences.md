@@ -4,12 +4,12 @@ description: 介绍了 Azure AD Graph 资源（实体）与 Microsoft Graph 之�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a9fbbef8e415dbfdbc5d7629b114f42a3850d659
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 401d6391f68a756d9d5ac7a2176b8ff9d5c7b7eb
+ms.sourcegitcommit: 53a57f19a5b16029b540e61ddfba6c2b4e45cfc5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290997"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "44593637"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Azure AD Graph 与 Microsoft Graph 之间的属性差异
 
@@ -29,7 +29,6 @@ ms.locfileid: "44290997"
 
 |Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br>property|备注|
 |---|---|---|
-| **appRoleAssignments** | beta &nbsp; - &nbsp; **appRoleAssignments** <br> v1.0 &nbsp; - &nbsp; _尚不可用_ | |
 | **deletedTimestamp**| beta &nbsp; - &nbsp; **deletedDateTime** <br> v1.0 &nbsp; - &nbsp; **deletedDateTime** | |
 | **dirSyncEnabled** | beta &nbsp; - &nbsp; **onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** | |
 | **facsimileTelephoneNumber** | beta &nbsp; - &nbsp; **faxNumber** <br> v1.0 &nbsp; - &nbsp; **faxNumber** | |
@@ -37,7 +36,6 @@ ms.locfileid: "44290997"
 | **isCompromised** | beta &nbsp; - &nbsp; _不可用_ <br> v1.0 1.0 &nbsp; - &nbsp; _不可用_ | Microsoft Graph[标识保护](/graph/api/resources/identityprotection-root?view=graph-rest-beta)API 提供了更复杂的功能。 |
 | **lastDirSyncDateTime** | beta &nbsp; - &nbsp; **onPremisesLastSyncDateTime** <br> v1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** | |
 | **mobile** | beta &nbsp; - &nbsp; **mobilePhone** <br> v1.0 &nbsp; - &nbsp; **mobilePhone** | |
-| **oAuth2PermissionGrants** | beta &nbsp; - &nbsp; **oAuth2PermissionGrants** <br> v1.0 &nbsp; - &nbsp; _尚不可用_ ||
 | **provisioningErrors** | beta &nbsp; - &nbsp; _不可用_ <br> v1.0 1.0 &nbsp; - &nbsp; _不可用_ | 此属性及其信息已被弃用。  但是，可以在**onPremisesProvisioningErrors**中找到描述任何 AD Connect 相关设置错误的新属性。 |
 | **refreshTokensValidFromDateTime** | beta &nbsp; - &nbsp; **signinSessionsValidFromDateTime**<br>v1.0 &nbsp; - &nbsp; _尚不可用_ | |
 | **signinNames** | beta &nbsp; - &nbsp; **标识/signInType** <br> 1.0 版 &nbsp; - &nbsp; **标识/signInType** | 此属性现在是[objectIdentity](/graph/api/resources/objectIdentity?view=graph-rest-1.0)资源的一部分。|
@@ -64,7 +62,6 @@ ms.locfileid: "44290997"
 |Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
 | **acceptMappedClaims**  | beta &nbsp; - &nbsp; **api/acceptMappedClaims** <br> v1.0 &nbsp; - &nbsp; **api/acceptMappedClaims** | acceptMappedClaims 现在是新 api 资源的一部分。 |
-| **applicationTemplateId** | beta &nbsp; - &nbsp; _尚不可用_ <br> v1.0 &nbsp; - &nbsp; _尚不可用_ | |
 | **命名** | beta &nbsp; - &nbsp; **signInAudience** <br> v1.0 &nbsp; - &nbsp; **signInAudience** | |
 | **errorUrl**| beta &nbsp; - &nbsp; _不可用_ <br> v1.0 1.0 &nbsp; - &nbsp; _不可用_   | 此属性已被弃用。|
 | **首页**| beta &nbsp; - &nbsp; **web/homePageUrl** <br> v1.0 &nbsp; - &nbsp; **web/homePageUrl** | 主页现在是新 web 资源的一部分。|
@@ -172,18 +169,11 @@ Azure AD Graph ServiceEndpoint 资源已重命名为 Microsoft Graph 中的终�
 
 |Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
-| **applicationTemplateId** | beta &nbsp; - &nbsp; **applicationTemplateId** <br> v1.0 &nbsp; - &nbsp; _尚不可用_ | |
 | **appOwnerTenantId** | beta &nbsp; - &nbsp; **appOwnerOrganizationId** <br> v1.0 &nbsp; - &nbsp; **appOwnerOrganizationId** | 更名. |
 | **informationalUrls**| beta &nbsp; - &nbsp; **信息** <br> 1.0 版 &nbsp; - &nbsp; **信息** | |
-| **notificationEmailAddresses** | beta &nbsp; - &nbsp; **notificationEmailAddresses** <br> v1.0 &nbsp; - &nbsp; _尚不可用_ | |
 | **oauth2Permissions** | beta &nbsp; - &nbsp; **publishedPermissionScopes** <br> v1.0 &nbsp; - &nbsp; **oauth2PermissionScopes** | 更名. |
-| **preferredSingleSignOnMode** | beta &nbsp; - &nbsp; **preferredSingleSignOnMode** <br> v1.0 &nbsp; - &nbsp; _尚不可用_ | |
-| **preferredTokenSigningKeyEndDateTime** | beta &nbsp; - &nbsp; **preferredTokenSigningKeyEndDateTime** <br> v1.0 &nbsp; - &nbsp; _尚不可用_ | |
-| **preferredTokenSigningKeyThumbprint** | beta &nbsp; - &nbsp; **preferredTokenSigningKeyThumbprint** <br> v1.0 &nbsp; - &nbsp; _尚不可用_ | |
-| **samlSingleSignOnSettings** | beta &nbsp; - &nbsp; **samlSingleSignOnSettings** <br> v1.0 &nbsp; - &nbsp; _尚不可用_ | |
-| **servicePrincipalType** | beta &nbsp; - &nbsp; _尚不可用_ <br> v1.0 &nbsp; - &nbsp; _尚不可用_ | |
-| **signInAudience** | beta &nbsp; - &nbsp; _尚不可用_ <br> v1.0 &nbsp; - &nbsp; _尚不可用_ | |
-| **tokenEncryptionKeyId** | beta &nbsp; - &nbsp; _尚不可用_ <br> v1.0 &nbsp; - &nbsp; _尚不可用_ | |
+| **preferredTokenSigningKeyEndDateTime** | beta &nbsp; - &nbsp; _尚不可用_ <br> v1.0 &nbsp; -  _尚不可用_ | |
+| **signInAudience** | beta &nbsp; - &nbsp; _尚不可用_ <br> v1.0 &nbsp; -  _尚不可用_ | |
 | **serviceEndpoints** | beta &nbsp; - &nbsp; **终结点** <br> v1.0 &nbsp; - &nbsp; **终结点** | 更名. |
 
 ## <a name="tenantdetails-property-differences"></a>TenantDetails 属性差异
