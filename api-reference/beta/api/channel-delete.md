@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: bba1be37d3a654fa6d2bd64cc443cde76d844a60
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.sourcegitcommit: 53a57f19a5b16029b540e61ddfba6c2b4e45cfc5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
+ms.lasthandoff: 06/09/2020
 ms.locfileid: "44491642"
 ---
 # <a name="delete-channel"></a>删除频道
@@ -29,7 +29,7 @@ ms.locfileid: "44491642"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | All、Group、all、All、All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | "全部"、"."、"组"、"所有"、"    |
+|应用程序 | "全部"、"."、"组"、"所有"、"    |
 
 > **注意**：标记为 * 的权限使用[特定于资源的同意](https://aka.ms/teams-rsc)。
 
