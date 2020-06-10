@@ -5,12 +5,12 @@ author: linkhp
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 626e1dc8a851f2c8da6a9bb815a4e783cf44e7d2
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 3408cff98cc79dbf819e077ab12fa066f7d723f7
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556384"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44680881"
 ---
 # <a name="update-authenticationflowspolicy"></a>更新 authenticationFlowsPolicy
 
@@ -25,7 +25,7 @@ ms.locfileid: "44556384"
 |:---|:---|
 |委派（工作或学校帐户）|AuthenticationFlows|
 |委派（个人 Microsoft 帐户）|不支持|
-|Application|AuthenticationFlows|
+|应用程序|AuthenticationFlows|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,7 +48,7 @@ PATCH https://graph.microsoft.com/beta/policies/authenticationFlowsPolicy
 
 下表显示了在更新[authenticationFlowsPolicy](../resources/authenticationflowspolicy.md)时所需的属性。
 
-|属性|类型|说明|
+|属性|类型|Description|
 |:---|:---|:---|
 |selfServiceSignUp|[selfServiceSignUpAuthenticationFlowConfiguration](../resources/selfservicesignupauthenticationflowconfiguration.md)|自助注册配置。|
 
@@ -59,6 +59,8 @@ PATCH https://graph.microsoft.com/beta/policies/authenticationFlowsPolicy
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authenticationflowspolicy"
@@ -74,6 +76,20 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-authenticationflowspolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authenticationflowspolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-authenticationflowspolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 <!-- {

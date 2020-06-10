@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 699718c5a51e074e15d964d0e8c925bc303d4e89
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 4d19a726e2f09c1df994bc8aee7d91eb53ef2628
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556245"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682003"
 ---
 # <a name="onpremisespublishing-resource-type"></a>onPremisesPublishing 资源类型
 
@@ -22,11 +22,11 @@ ms.locfileid: "44556245"
 
 一个**onPremisesPublishing**对象，表示用于为本地[应用程序](application.md)配置应用程序代理的一组属性。 
 
-[创建应用程序](../api/application-post-applications.md)后，可以通过[更新应用程序的](../api/application-update.md)onPremisesPublishing 属性来配置该应用程序的应用程序代理设置。
+在[实例化自定义应用程序](../api/applicationtemplate-instantiate.md)或[创建应用程序](../api/application-post-applications.md)后，可以通过[更新应用程序的](../api/application-update.md)onPremisesPublishing 属性来配置该应用程序的应用程序代理设置。
 
 ## <a name="properties"></a>属性
 
-| 属性|类型|说明|
+| 属性|类型|Description|
 |:---------------|:--------|:----------|
 |alternateUrl|String| 如果要在多个应用程序代理应用程序的前面配置流量管理器，则 alternateUrl 是将指向流量管理器的用户友好 URL。 |
 |applicationServerTimeout|String| 在关闭连接之前，连接器将等待后端应用程序响应的持续时间。 可能的值 `default` 为 `long` 。 如果设置为 "默认"，后端应用程序超时的长度为85秒。 当设置为 "长" 时，后端超时将增加到180秒。 `long`如果服务器要响应请求的时间超过85秒，或者如果您无法访问应用程序，并且错误状态为 "后端超时"，则使用。 默认值为 `default`。 |

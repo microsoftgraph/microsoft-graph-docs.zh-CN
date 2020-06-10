@@ -6,22 +6,22 @@ title: 在 SharePoint 网站中创建新页面
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 3cab45582c1cb4c0091c4a9a7679e12c10783d95
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5fdbe35219f3d7b543cd95e2533e46044b1429e4
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453194"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44681991"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>在网站的 "网站页面" 列表中创建页面
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在[网站][]的 "网站页面"[列表][]中创建新的[sitePage][] 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -105,6 +105,10 @@ Content-Type: application/json
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-page-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-page-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -195,7 +199,7 @@ Content-type: application/json
 
 **注意：** 为清楚起见，将截断 Response 对象。 实际调用会返回默认属性。
 
-[list]: ../resources/list.md
+[列表]: ../resources/list.md
 [listItem]: ../resources/listitem.md
 [网站]: ../resources/site.md
 [sitePage]: ../resources/sitepage.md

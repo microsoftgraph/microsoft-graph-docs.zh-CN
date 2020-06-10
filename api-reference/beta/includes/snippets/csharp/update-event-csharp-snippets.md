@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: dc0cdacce96ef46b7848510dc8f717ae558ea564
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 43e1f324abc33420cad4cf96ba553cc86c59d3d7
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "38000168"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44681851"
 ---
 ```csharp
 
@@ -25,7 +25,11 @@ var @event = new Event
     ReminderMinutesBeforeStart = 99,
     IsOnlineMeeting = true,
     OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness,
-    IsReminderOn = true
+    IsReminderOn = true,
+    Categories = new List<String>()
+    {
+        "Red category"
+    }
 };
 
 await graphClient.Me.Events["{id}"]

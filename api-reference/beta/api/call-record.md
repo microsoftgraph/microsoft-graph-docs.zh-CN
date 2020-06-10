@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d5dfce0736cf44e386c5ff2ec1f343ae1aa324c1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: af5d50c5d8e2422625d4ca10c7d87c8689bb8a68
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440771"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44681580"
 ---
 # <a name="call-recordresponse"></a>调用： recordResponse
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "42440771"
 
 >**注意：** 您不能录制或以其他方式保留来自您的应用程序访问的呼叫或会议的媒体内容或从该媒体内容派生的数据。 请确保您符合有关通信的数据保护和机密性的法律和法规。 有关详细信息，请参阅[使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
@@ -56,21 +56,21 @@ POST /communications/calls/{id}/recordResponse
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |说明|
+| 参数      | 类型    |Description|
 |:---------------|:--------|:----------|
 |提示|[MediaPrompt](../resources/mediaprompt.md)集合 | 要播放的提示。 支持的最大 mediaPrompt 集合大小为1。|
-|bargeInAllowed|布尔| 如果为 true，则 recordResponse 请求将 barge 到其他现有的排队/当前处理的 record/playprompt 请求中。 默认值为 false。 |
+|bargeInAllowed|Boolean| 如果为 true，则 recordResponse 请求将 barge 到其他现有的排队/当前处理的 record/playprompt 请求中。 默认值为 false。 |
 |initialSilenceTimeoutInSeconds | Int32| 在我们开始进行记录响应操作并使操作失败之前，允许的最大初始静音（用户静默）。 如果我们正在播放提示，则此计时器在提示完成后启动。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒 |
 |maxSilenceTimeoutInSeconds|Int32| 用户开始发言后允许的最大静音（暂停）时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
 |maxRecordDurationInSeconds|Int32| 停止录制前的 recordResponse 操作的最长持续时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
-|playBeep|布尔| 如果为 true，则会播放提示音，指示用户可以开始记录其邮件。 默认值为 true。|
-|stopTones|String 集合|指定结束录音的停止音。|
+|playBeep|Boolean| 如果为 true，则会播放提示音，指示用户可以开始记录其邮件。 默认值为 true。|
+|stopTones|String collection|指定结束录音的停止音。|
 |适用|String|唯一的客户端上下文字符串。 最大限制为256个字符。|
 
 > **注意：** 最长录制时间从5分钟减少到2分钟。
 
 ## <a name="response"></a>响应
-此方法返回一个`200 OK` HTTP 响应代码和一个位置标头，其中包含为此请求创建的[recordOperation](../resources/recordoperation.md)的 URI。
+此方法返回一个 `200 OK` HTTP 响应代码和一个位置标头，其中包含为此请求创建的[RECORDOPERATION](../resources/recordoperation.md)的 URI。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -112,6 +112,14 @@ Content-Length: 394
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-recordresponse-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-recordresponse-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/call-recordresponse-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

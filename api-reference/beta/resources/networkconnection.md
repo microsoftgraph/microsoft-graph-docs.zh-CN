@@ -5,16 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: c587d9d6e11354a136948bbbf37565e42e0bb678
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fc6bb8b60c6c9df08373a76bd6bc5714758fc9cb
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522580"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682136"
 ---
 # <a name="networkconnection-resource-type"></a>networkConnection 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,11 +22,12 @@ ms.locfileid: "42522580"
 
 ## <a name="properties"></a>属性
 
-| 属性   | 类型|说明|
+| 属性   | 类型|Description|
 |:---------------|:--------|:----------|
 |applicationName|String|管理网络连接的应用程序的名称（例如，Facebook、SMTP 等）。|
 |destinationAddress|String|目标 IP 地址（的网络连接）。|
 |destinationDomain|String|目标 URL 的目标域部分。 （例如，"www.contoso.com"）。|
+|destinationLocation|String|与网络连接的目标相关联的位置（按 IP 地址映射）。|
 |destinationPort|String|目标端口（网络连接）。|
 |destinationUrl|String|网络连接 URL/URI 字符串-不包括参数。 （例如，"www.contoso.com/products/default.html"）|
 |direction|connectionDirection|网络连接方向。 可取值为：`unknown`、`inbound`、`outbound`。|
@@ -36,9 +37,10 @@ ms.locfileid: "42522580"
 |natDestinationPort|String|网络地址转换目标端口。|
 |natSourceAddress|String|网络地址转换源 IP 地址。|
 |natSourcePort|String|网络地址转换源端口。|
-|协议|securityNetworkProtocol|网络协议。 可能的值为`unknown`： `ip`、 `icmp`、 `igmp` `ggp` `ipv4` `tcp` `spx` `spxII`、、、、、、、、、、、、、、、、、、、、。 `pup` `udp` `idp` `ipv6` `ipv6RoutingHeader` `ipv6FragmentHeader` `ipSecEncapsulatingSecurityPayload` `ipSecAuthenticationHeader` `icmpV6` `ipv6NoNextHeader` `ipv6DestinationOptions` `nd` `raw` `ipx`|
+|协议|securityNetworkProtocol|网络协议。 可能的值为：、、、、、、、、、、、、、、、、、、、、、、 `unknown` `ip` `icmp` `igmp` `ggp` `ipv4` `tcp` `pup` `udp` `idp` `ipv6` `ipv6RoutingHeader` `ipv6FragmentHeader` `ipSecEncapsulatingSecurityPayload` `ipSecAuthenticationHeader` `icmpV6` `ipv6NoNextHeader` `ipv6DestinationOptions` `nd` `raw` `ipx` `spx` `spxII` 。|
 |riskScore|String|提供程序生成/计算网络连接的风险分数。 建议的值范围为0-1，这相当于一个百分比。|
 |sourceAddress|String|源（即，网络连接的来源）的 IP 地址。|
+|sourceLocation|String|与网络连接的源相关联的位置（按 IP 地址映射）。|
 |sourcePort|String|源（即源） IP 端口（的网络连接）。|
 |status|connectionStatus|网络连接状态。 可取值为：`unknown`、`attempted`、`succeeded`、`blocked`、`failed`。|
 |urlParameters|String|目标 URL 的参数（后缀）。|
@@ -50,8 +52,8 @@ ms.locfileid: "42522580"
 |unknown|-1|未知协议。|
 |ip|0|Internet 协议。|
 |icmp|1 | Internet 控制邮件协议。|
-|igmp|2 | Internet 组管理协议。|
-|ggp|3 | 网关到网关协议。|
+|igmp|双面| Internet 组管理协议。|
+|ggp|第三章| 网关到网关协议。|
 |ipv4|4 | Internet 协议版本4。|
 |tcp|6 | 传输控制协议。|
 |pup|12 | PARC 通用数据包协议。|
@@ -88,6 +90,7 @@ ms.locfileid: "42522580"
   "applicationName": "String",
   "destinationAddress": "String",
   "destinationDomain": "String",
+  "destinationLocation": "String",
   "destinationPort": "String",
   "destinationUrl": "String",
   "direction": "String",
@@ -100,6 +103,7 @@ ms.locfileid: "42522580"
   "protocol": "string",
   "riskScore": "String",
   "sourceAddress": "String",
+  "sourceLocation": "String",
   "sourcePort": "String",
   "status": "String",
   "urlParameters": "String"

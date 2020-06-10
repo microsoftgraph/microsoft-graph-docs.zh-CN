@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 583a6444fb7f0f1be65c68a4eb772089ddb768bd
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+ms.openlocfilehash: d93cbc16411d3090ba4133047ad07cd55997fec5
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44430581"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44681744"
 ---
 # <a name="changenotificationcollection-resource-type"></a>changeNotificationCollection 资源类型
 
@@ -18,17 +18,17 @@ ms.locfileid: "44430581"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示发送给订阅者的订阅通知的集合。
+表示发送给订阅者的资源更改通知的集合。
 
 有关详细信息，请参阅[使用 Microsoft GRAPH API 获取更改通知](webhooks.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 无。
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 说明 |
+| 属性 | 类型 | Description |
 |:---------|:-----|:------------|
 | validationTokens | collection(string) | 包含由 Microsoft Graph 生成的用于验证通知来源的应用程序生成的 JWT 令牌数组。 Microsoft Graph 将为每个不同的应用和在值数组中有项的租户对，生成单独的令牌。 请注意，通知可以包含使用同一通知 URL 订阅的各种应用和租户的项目组合。 仅为[资源数据可选的更改通知](/graph/webhooks-with-resource-data.md)提供。 |
 | 值 | 集合（[changeNotification](changenotification.md)） | 发送到通知 URL 的一组通知。 必填。 |
