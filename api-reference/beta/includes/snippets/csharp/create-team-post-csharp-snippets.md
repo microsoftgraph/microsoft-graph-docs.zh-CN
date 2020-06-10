@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 444199ebba343e829706edf90b5de2b6aa4446ba
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 4838af8006757fb2142228c45120b6689f951880
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44335433"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44681953"
 ---
 ```csharp
 
@@ -13,12 +13,12 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var team = new Team
 {
+    DisplayName = "My Sample Team",
+    Description = "My Sample Team’s Description",
     AdditionalData = new Dictionary<string, object>()
     {
-        {"template@odata.bind","https://graph.microsoft.com/beta/teamsTemplates('standard')"}
-    },
-    DisplayName = "My Sample Team",
-    Description = "My Sample Team’s Description"
+        {"template@odata.bind", "https://graph.microsoft.com/beta/teamsTemplates('standard')"}
+    }
 };
 
 await graphClient.Teams
