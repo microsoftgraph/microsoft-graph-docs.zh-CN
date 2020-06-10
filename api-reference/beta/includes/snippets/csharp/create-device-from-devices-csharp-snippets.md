@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: f2cdb52737b152620ead6dd5e82449d4274b4278
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 0193c3d69dbda43958f681b26904892bfdd1f445
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36845916"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684630"
 ---
 ```csharp
 
@@ -20,7 +20,7 @@ var device = new Device
         {
             Type = 99,
             IdentityProvider = "identityProvider-value",
-            Key = "base64Y3YxN2E1MWFlYw=="
+            Key = Encoding.ASCII.GetBytes("base64Y3YxN2E1MWFlYw==")
         }
     },
     ApproximateLastSignInDateTime = DateTimeOffset.Parse("2016-10-19T10:37:00Z"),

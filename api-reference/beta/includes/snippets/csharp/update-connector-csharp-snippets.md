@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a4842f6ac4d8d6071a07f7ee1aea14ee982d8839
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: e1b5e7c1327bc8177a36a8eba9a6d4a2ae01619a
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948118"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683786"
 ---
 ```csharp
 
@@ -19,8 +19,8 @@ var printConnector = new PrintConnector
     AppVersion = "0.19.7338.23496",
     Location = new PrinterLocation
     {
-        Latitude = 1.1,
-        Longitude = 2.2,
+        Latitude = 1.1f,
+        Longitude = 2.2f,
         AltitudeInMeters = 3
     }
 };

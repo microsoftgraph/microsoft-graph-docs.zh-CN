@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: fe232c0c5a555fde0f22c103ef110166fcb110d6
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 84e4582a7a728680a848bbe80dd013bd4efe8266
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35721794"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683629"
 ---
 ```csharp
 
@@ -13,8 +13,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var fieldValueSet = new FieldValueSet
 {
-    Color = "Fuchsia",
-    Quantity = 934
+    AdditionalData = new Dictionary<string, object>()
+    {
+        {"Color", "Fuchsia"},
+        {"Quantity", "934"}
+    }
 };
 
 await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{item-id}"].Fields

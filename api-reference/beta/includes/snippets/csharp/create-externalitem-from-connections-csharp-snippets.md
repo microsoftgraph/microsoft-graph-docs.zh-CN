@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1d63173f62f485228138b1d4c75b804698e10f37
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: 5dc48df8356f20c9aa02b70914a41ac69a6c43ff
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43935210"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44685063"
 ---
 ```csharp
 
@@ -25,9 +25,12 @@ var externalItem = new ExternalItem
     },
     Properties = new Properties
     {
-        Title = "Error in the payment gateway",
-        Priority = 1,
-        Assignee = "john@contoso.com"
+        AdditionalData = new Dictionary<string, object>()
+        {
+            {"title", "Error in the payment gateway"},
+            {"priority", "1"},
+            {"assignee", "john@contoso.com"}
+        }
     },
     Content = new ExternalItemContent
     {

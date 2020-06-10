@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7eda37c5bd3b31e5d7acd5aaecbde0c29d399d01
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: d9d061ff2a78ac363f7030ca84b8d32b557133c5
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "40994754"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684304"
 ---
 ```csharp
 
@@ -14,10 +14,6 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var shiftPreferences = new ShiftPreferences
 {
     Id = "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7",
-    AdditionalData = new Dictionary<string, object>()
-    {
-        {"@odata.etag","1a371e53-f0a6-4327-a1ee-e3c56e4b38aa"}
-    },
     Availability = new List<ShiftAvailability>()
     {
         new ShiftAvailability
@@ -43,6 +39,10 @@ var shiftPreferences = new ShiftPreferences
             TimeZone = "Pacific Standard Time",
             TimeSlots = null
         }
+    },
+    AdditionalData = new Dictionary<string, object>()
+    {
+        {"@odata.etag", "1a371e53-f0a6-4327-a1ee-e3c56e4b38aa"}
     }
 };
 

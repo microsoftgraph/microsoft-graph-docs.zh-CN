@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 11943333f502f81f08c7b18877d07a2acffaafc5
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 7c068b9c67ea850d3c6d2166d92707542ab31123
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37544191"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683996"
 ---
 ```csharp
 
@@ -15,9 +15,9 @@ var attachment = new ReferenceAttachment
 {
     Name = "Personal pictures",
     SourceUrl = "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
-    ProviderType = "oneDriveConsumer",
-    Permission = "Edit",
-    IsFolder = "True"
+    ProviderType = ReferenceAttachmentProvider.OneDriveConsumer,
+    Permission = ReferenceAttachmentPermission.Edit,
+    IsFolder = true
 };
 
 await graphClient.Me.Messages["AAMkAGE1M88AADUv0uFAAA="].Attachments

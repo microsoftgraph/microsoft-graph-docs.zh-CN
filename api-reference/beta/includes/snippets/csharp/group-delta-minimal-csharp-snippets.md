@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: df92fbd764efbe2ac853ad4236e5cd08c23a8c12
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 9793ba64e53b5f1305d2c743eacaa3d79c07940c
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35858751"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684828"
 ---
 ```csharp
 
@@ -15,11 +15,7 @@ var delta = await graphClient.Groups
     .Delta()
     .Request()
     .Header("Prefer","return=minimal")
-    .Select( e => new {
-             e.DisplayName,
-             e.Description,
-             e.MailNickname 
-             })
+    .Select("displayName,description,mailNickname")
     .GetAsync();
 
 ```

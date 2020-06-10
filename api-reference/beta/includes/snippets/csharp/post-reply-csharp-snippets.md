@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: c8e0f3abab7eac1507dd60a20657d3c1a66fefc5
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 38284cd566e098f42aaf643038ac2f7901435d44
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36845950"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683818"
 ---
 ```csharp
 
@@ -60,7 +60,7 @@ var post = new Post
     InReplyTo = new Post
     {
     },
-    Attachments = new List<Attachment>()
+    Attachments = (IPostAttachmentsCollectionPage)new List<Attachment>()
     {
         new Attachment
         {

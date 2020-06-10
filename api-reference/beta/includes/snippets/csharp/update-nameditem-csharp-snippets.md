@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: cff39086239a50316ffc02af62b1d0c356e7f1ad
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 345b3f03bd61d072796099643d122d9541bcbd55
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35721320"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44685090"
 ---
 ```csharp
 
@@ -16,9 +16,7 @@ var workbookNamedItem = new WorkbookNamedItem
     Type = "type-value",
     Scope = "scope-value",
     Comment = "comment-value",
-    Value = new Json
-    {
-    },
+    Value = JToken.Parse("{}"),
     Visible = true
 };
 

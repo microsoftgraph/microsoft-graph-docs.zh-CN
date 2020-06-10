@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 89e842b5aab5014af97fcf65422d22f047c0d7a1
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 4c3d9aa2d3319041c2c3665d314bdea8d0a7f93b
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44216789"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683815"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var printIdentity = new PrintIdentity
 {
     AdditionalData = new Dictionary<string, object>()
     {
-        {"@odata.id","https://graph.microsoft.com/beta/groups/{id}"}
+        {"@odata.id", "https://graph.microsoft.com/beta/groups/{id}"}
     }
 };
 

@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: a283d07e7c665b13a15d092579b75984126f9e93
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 5ad2dd27c0e9b4626a43f9a9024a6629bdf71254
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720070"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684753"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var certificateBasedAuthConfiguration = new CertificateBasedAuthConfiguration
         new CertificateAuthority
         {
             IsRootAuthority = true,
-            Certificate = "Binary"
+            Certificate = Encoding.ASCII.GetBytes("Binary")
         }
     }
 };

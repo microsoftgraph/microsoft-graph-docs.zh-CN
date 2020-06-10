@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 249ce76e9c70303b805ff8da5a3a7b0f9b2345a7
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: e6ae45bca3d57bb715945b2acc93fd3efe60b275
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35716389"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683809"
 ---
 ```csharp
 
@@ -25,7 +25,7 @@ var message = new Message
             }
         }
     },
-    Mentions = new List<Mention>()
+    Mentions = (IMessageMentionsCollectionPage)new List<Mention>()
     {
         new Mention
         {

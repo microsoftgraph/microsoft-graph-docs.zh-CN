@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c0f0ecced6bfc3d2f238721952672bb7bbf43722
-ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
+ms.openlocfilehash: ce71fc69015c7785f32235dfa27d2bfaca594586
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41494656"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683744"
 ---
 ```csharp
 
@@ -13,14 +13,14 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var contentInfo = new ContentInfo
 {
-    AdditionalData = new Dictionary<string, object>()
-    {
-        {"state@odata.type","#microsoft.graph.contentState"},
-        {"format@odata.type","#microsoft.graph.contentFormat"}
-    },
     Format = ContentFormat.Default,
     Identifier = null,
-    State = ContentState.Rest
+    State = ContentState.Rest,
+    AdditionalData = new Dictionary<string, object>()
+    {
+        {"format@odata.type", "#microsoft.graph.contentFormat"},
+        {"state@odata.type", "#microsoft.graph.contentState"}
+    }
 };
 
 var classificationResults = new List<ClassificationResult>()

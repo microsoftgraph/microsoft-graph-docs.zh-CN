@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0b73b1f11dd73935e0011b2f270040f47b83439f
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: 7074610c590d90bef7d0498c560632396ac18c4f
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37544195"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44685116"
 ---
 ```csharp
 
@@ -18,12 +18,12 @@ var post = new Post
         ContentType = BodyType.Text,
         Content = "Which quarter does that file cover? See my attachment."
     },
-    Attachments = new List<Attachment>()
+    Attachments = (IPostAttachmentsCollectionPage)new List<Attachment>()
     {
         new FileAttachment
         {
             Name = "Another file as attachment",
-            ContentBytes = "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu"
+            ContentBytes = Encoding.ASCII.GetBytes("VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu")
         }
     }
 };

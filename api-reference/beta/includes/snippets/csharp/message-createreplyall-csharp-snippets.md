@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c3287e286f0e9e5c91e7d41d4c5be51e3002e649
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 47cb09dbd1b326122fce7c44af5d4c5168c7a18f
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "37544193"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684517"
 ---
 ```csharp
 
@@ -13,12 +13,12 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var message = new Message
 {
-    Attachments = new List<Attachment>()
+    Attachments = (IMessageAttachmentsCollectionPage)new List<Attachment>()
     {
         new FileAttachment
         {
             Name = "guidelines.txt",
-            ContentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+            ContentBytes = Encoding.ASCII.GetBytes("bWFjIGFuZCBjaGVlc2UgdG9kYXk=")
         }
     }
 };

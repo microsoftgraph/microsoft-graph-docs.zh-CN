@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 83a1bd8f94da2b662c4e925c87323de856246083
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 859e09b3f0f036b70e95ac0605e24f3afdbf12d6
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37544192"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683865"
 ---
 ```csharp
 
@@ -14,7 +14,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var attachment = new FileAttachment
 {
     Name = "smile",
-    ContentBytes = "a0b1c76de9f7="
+    ContentBytes = Encoding.ASCII.GetBytes("a0b1c76de9f7=")
 };
 
 await graphClient.Me.Messages["AAMkpsDRVK"].Attachments

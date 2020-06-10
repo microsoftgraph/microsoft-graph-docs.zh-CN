@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f2655c40087d97a75ad3dc7bb07a12d0bb7a553a
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 12eecd86f1c63434d6524f6efb47bd92d89552ea
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "36845948"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684484"
 ---
 ```csharp
 
@@ -22,11 +22,14 @@ var shift = new Shift
     {
         Application = null,
         Device = null,
-        Conversation = null,
         User = new Identity
         {
             Id = "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
             DisplayName = "John Doe"
+        },
+        AdditionalData = new Dictionary<string, object>()
+        {
+            {"conversation", "null"}
         }
     },
     SharedShift = new ShiftItem

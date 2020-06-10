@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f3be1198598a0533702ebfec8513afc7f2a11f6f
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: ff315abca3216fffb7b6096ac0d99944fbc9ec72
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37544189"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684603"
 ---
 ```csharp
 
@@ -29,14 +29,17 @@ var message = new Message
             }
         }
     },
-    Extensions = new List<Extension>()
+    Extensions = (IMessageExtensionsCollectionPage)new List<Extension>()
     {
         new OpenTypeExtension
         {
             ExtensionName = "Com.Contoso.Referral",
-            CompanyName = "Wingtip Toys",
-            ExpirationDate = "2015-12-30T11:00:00Z",
-            DealValue = 10000
+            AdditionalData = new Dictionary<string, object>()
+            {
+                {"companyName", "Wingtip Toys"},
+                {"expirationDate", "2015-12-30T11:00:00Z"},
+                {"dealValue", "10000"}
+            }
         }
     }
 };

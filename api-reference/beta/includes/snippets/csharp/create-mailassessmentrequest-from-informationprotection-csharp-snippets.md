@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 79d6a6580909379c9151ec13ed66b2ffd4722cee
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 7e17c626099994d34b2a9c50b0652477067b3870
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "40871759"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683828"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var threatAssessmentRequest = new MailAssessmentRequest
+var threatAssessmentRequest = new MailAssessmentRequestObject
 {
     RecipientEmail = "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
     ExpectedAssessment = ThreatExpectedAssessment.Block,
