@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 76ba8c499949b35135dcd2e73f213d7a115facb3
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 70f84d67f9406af7823b6d4230692eb5701a8da0
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35710495"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44685196"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var agreement = new Agreement
 {
     DisplayName = "MSGraph Sample",
     IsViewingBeforeAcceptanceRequired = true,
-    Files = new List<AgreementFile>()
+    Files = (IAgreementFilesCollectionPage)new List<AgreementFile>()
     {
         new AgreementFile
         {
@@ -24,7 +24,7 @@ var agreement = new Agreement
             IsDefault = true,
             FileData = new AgreementFileData
             {
-                Data = "SGVsbG8gd29ybGQ="
+                Data = Encoding.ASCII.GetBytes("SGVsbG8gd29ybGQ=")
             }
         }
     }

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 51291d8361ee315f00865be9b8f26f1ef098c840
-ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
+ms.openlocfilehash: 1c8a4690d886fca8e28ba04f33515c578f6d7390
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41119701"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684962"
 ---
 ```csharp
 
@@ -14,7 +14,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var attachment = new FileAttachment
 {
     Name = "menu.txt",
-    ContentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+    ContentBytes = Encoding.ASCII.GetBytes("bWFjIGFuZCBjaGVlc2UgdG9kYXk=")
 };
 
 await graphClient.Me.Outlook.Tasks["AAMkADAAAANXbdnAAA="].Attachments

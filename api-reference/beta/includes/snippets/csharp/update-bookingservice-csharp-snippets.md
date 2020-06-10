@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 55f7725ffe62e428b0ed38ceeb0683224888745c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: ddabb5c2e8bc5ca539a1e47fe0941f541cad568b
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35865262"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684781"
 ---
 ```csharp
 
@@ -13,11 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var bookingService = new BookingService
 {
-    AdditionalData = new Dictionary<string, object>()
-    {
-        {"@odata.type","#microsoft.graph.bookingService"}
-    },
-    DefaultDuration = "PT30M"
+    DefaultDuration = new Duration("PT30M")
 };
 
 await graphClient.BookingBusinesses["Contosolunchdelivery@M365B489948.onmicrosoft.com"].Services["57da6774-a087-4d69-b0e6-6fb82c339976"]

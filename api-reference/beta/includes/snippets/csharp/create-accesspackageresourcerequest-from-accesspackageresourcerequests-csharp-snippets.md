@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 26e66261b37cc54e8db7abd9b5484d3c23e7aed3
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: b35441e79c12e16028a9deb25c3727e626123e28
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40911810"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684466"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var accessPackageResourceRequest = new AccessPackageResourceRequest
+var accessPackageResourceRequest = new AccessPackageResourceRequestObject
 {
     CatalogId = "26ac0c0a-08bc-4a7b-a313-839f58044ba5",
     RequestType = "AdminAdd",

@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 8438b4e28b90898807a2fb4a8291cc2e1a4c4a6e
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 9403060f6251e8ae9f782c6e3b32a7d31047fa26
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35729576"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684877"
 ---
 ```objc
 
@@ -19,8 +19,8 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphAttachment *attachment = [[MSGraphAttachment alloc] init];
 [attachment setName:@"Personal pictures"];
 [attachment setSourceUrl:@"https://contoso.com/personal/mario_contoso_net/Documents/Pics"];
-[attachment setProviderType:@"oneDriveConsumer"];
-[attachment setPermission:@"Edit"];
+[attachment setProviderType: [MSGraphReferenceAttachmentProvider oneDriveConsumer]];
+[attachment setPermission: [MSGraphReferenceAttachmentPermission edit]];
 [attachment setIsFolder:@"True"];
 
 NSError *error;

@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 7e23bf3d888dfce1a89130c1f7a05e70c5bdde1d
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 98e26ef3132ad118c49e79b0e47e1d1456d285d0
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35878356"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683732"
 ---
 ```csharp
 
@@ -18,22 +18,16 @@ var post = new Post
         ContentType = BodyType.Html,
         Content = "<html><body><div><div><div><div>When and where? </div></div></div></div></body></html>"
     },
-    Extensions = new List<Extension>()
+    Extensions = (IPostExtensionsCollectionPage)new List<Extension>()
     {
-        new Extension
+        new OpenTypeExtension
         {
+            ExtensionName = "Com.Contoso.HR",
             AdditionalData = new Dictionary<string, object>()
             {
-                {"@odata.type","microsoft.graph.openTypeExtension"}
-            },
-            ExtensionName = "Com.Contoso.HR",
-            CompanyName = "Contoso",
-            ExpirationDate = "2015-07-03T13:04:00Z",
-            TopPicks = new List<String>()
-            {
-                "Employees only",
-                "Add spouse or guest",
-                "Add family"
+                {"companyName", "Contoso"},
+                {"expirationDate", "2015-07-03T13:04:00Z"},
+                {"topPicks", "[\"Employees only\",\"Add spouse or guest\",\"Add family\"]"}
             }
         }
     }

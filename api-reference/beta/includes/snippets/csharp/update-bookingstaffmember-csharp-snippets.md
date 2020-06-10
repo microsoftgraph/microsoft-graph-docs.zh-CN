@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1f624fbb7b4aff7c6dac5971ae25f1cdb719c13d
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 359bc10e6bc211cd1474c6a1c83312f56eb32a35
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37544178"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44685071"
 ---
 ```csharp
 
@@ -17,82 +17,82 @@ var bookingStaffMember = new BookingStaffMember
     {
         new BookingWorkHours
         {
-            AdditionalData = new Dictionary<string, object>()
-            {
-                {"timeSlots@odata.type","#Collection(microsoft.graph.bookingWorkTimeSlot)"},
-                {"day@odata.type","#microsoft.graph.dayOfWeek"}
-            },
             Day = DayOfWeek.Monday,
             TimeSlots = new List<BookingWorkTimeSlot>()
             {
+            },
+            AdditionalData = new Dictionary<string, object>()
+            {
+                {"day@odata.type", "#microsoft.graph.dayOfWeek"},
+                {"timeSlots@odata.type", "#Collection(microsoft.graph.bookingWorkTimeSlot)"}
             }
         },
         new BookingWorkHours
         {
-            AdditionalData = new Dictionary<string, object>()
-            {
-                {"timeSlots@odata.type","#Collection(microsoft.graph.bookingWorkTimeSlot)"},
-                {"day@odata.type","#microsoft.graph.dayOfWeek"}
-            },
             Day = DayOfWeek.Tuesday,
             TimeSlots = new List<BookingWorkTimeSlot>()
             {
                 new BookingWorkTimeSlot
                 {
-                    End = "17:00:00.0000000",
-                    Start = "08:00:00.0000000"
+                    End = new TimeOfDay(17, 0, 0),
+                    Start = new TimeOfDay(8, 0, 0)
                 }
+            },
+            AdditionalData = new Dictionary<string, object>()
+            {
+                {"day@odata.type", "#microsoft.graph.dayOfWeek"},
+                {"timeSlots@odata.type", "#Collection(microsoft.graph.bookingWorkTimeSlot)"}
             }
         },
         new BookingWorkHours
         {
-            AdditionalData = new Dictionary<string, object>()
-            {
-                {"timeSlots@odata.type","#Collection(microsoft.graph.bookingWorkTimeSlot)"},
-                {"day@odata.type","#microsoft.graph.dayOfWeek"}
-            },
             Day = DayOfWeek.Wednesday,
             TimeSlots = new List<BookingWorkTimeSlot>()
             {
                 new BookingWorkTimeSlot
                 {
-                    End = "17:00:00.0000000",
-                    Start = "08:00:00.0000000"
+                    End = new TimeOfDay(17, 0, 0),
+                    Start = new TimeOfDay(8, 0, 0)
                 }
+            },
+            AdditionalData = new Dictionary<string, object>()
+            {
+                {"day@odata.type", "#microsoft.graph.dayOfWeek"},
+                {"timeSlots@odata.type", "#Collection(microsoft.graph.bookingWorkTimeSlot)"}
             }
         },
         new BookingWorkHours
         {
-            AdditionalData = new Dictionary<string, object>()
-            {
-                {"timeSlots@odata.type","#Collection(microsoft.graph.bookingWorkTimeSlot)"},
-                {"day@odata.type","#microsoft.graph.dayOfWeek"}
-            },
             Day = DayOfWeek.Thursday,
             TimeSlots = new List<BookingWorkTimeSlot>()
             {
                 new BookingWorkTimeSlot
                 {
-                    End = "17:00:00.0000000",
-                    Start = "08:00:00.0000000"
+                    End = new TimeOfDay(17, 0, 0),
+                    Start = new TimeOfDay(8, 0, 0)
                 }
+            },
+            AdditionalData = new Dictionary<string, object>()
+            {
+                {"day@odata.type", "#microsoft.graph.dayOfWeek"},
+                {"timeSlots@odata.type", "#Collection(microsoft.graph.bookingWorkTimeSlot)"}
             }
         },
         new BookingWorkHours
         {
-            AdditionalData = new Dictionary<string, object>()
-            {
-                {"timeSlots@odata.type","#Collection(microsoft.graph.bookingWorkTimeSlot)"},
-                {"day@odata.type","#microsoft.graph.dayOfWeek"}
-            },
             Day = DayOfWeek.Friday,
             TimeSlots = new List<BookingWorkTimeSlot>()
             {
                 new BookingWorkTimeSlot
                 {
-                    End = "17:00:00.0000000",
-                    Start = "08:00:00.0000000"
+                    End = new TimeOfDay(17, 0, 0),
+                    Start = new TimeOfDay(8, 0, 0)
                 }
+            },
+            AdditionalData = new Dictionary<string, object>()
+            {
+                {"day@odata.type", "#microsoft.graph.dayOfWeek"},
+                {"timeSlots@odata.type", "#Collection(microsoft.graph.bookingWorkTimeSlot)"}
             }
         }
     }

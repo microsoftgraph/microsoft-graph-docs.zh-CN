@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f8d54d85209148fd3216c76440e5f5954f1f6ef6
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 9feed8ae17cf0799d4a4593105593e9fe5ff2230
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302994"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44685136"
 ---
 ```csharp
 
@@ -21,7 +21,10 @@ var participants = new List<InvitationParticipantInfo>()
             User = new Identity
             {
                 Id = "7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
-                IdentityProvider = "AAD"
+                AdditionalData = new Dictionary<string, object>()
+                {
+                    {"identityProvider", "AAD"}
+                }
             }
         }
     },
@@ -33,7 +36,10 @@ var participants = new List<InvitationParticipantInfo>()
             User = new Identity
             {
                 Id = "1e126418-44a0-4a94-a6f8-0efe1ad71acb",
-                IdentityProvider = "AAD"
+                AdditionalData = new Dictionary<string, object>()
+                {
+                    {"identityProvider", "AAD"}
+                }
             }
         }
     }

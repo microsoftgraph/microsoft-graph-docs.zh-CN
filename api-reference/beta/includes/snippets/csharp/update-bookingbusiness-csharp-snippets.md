@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 48ecb124281169a4eeb6424272baa6a76e4e69cb
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 094f85528995fc75d2385504cf37c4ffc27b0028
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35709593"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683683"
 ---
 ```csharp
 
@@ -16,9 +16,9 @@ var bookingBusiness = new BookingBusiness
     Email = "admin@fabrikam.com",
     SchedulingPolicy = new BookingSchedulingPolicy
     {
-        TimeSlotInterval = "PT60M",
-        MinimumLeadTime = "P1D",
-        MaximumAdvance = "P30D",
+        TimeSlotInterval = new Duration("PT60M"),
+        MinimumLeadTime = new Duration("P1D"),
+        MaximumAdvance = new Duration("P30D"),
         SendConfirmationsToOwner = true,
         AllowStaffSelection = true
     }

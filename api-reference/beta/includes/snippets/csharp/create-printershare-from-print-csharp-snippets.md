@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2841bf8612b8fc1cfcadd6070eb7bd8a34df52b8
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: df2848d0e37a2e02406b8691033ea146e12de023
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44216943"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683737"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var printerShare = new PrinterShare
     Name = "name-value",
     AdditionalData = new Dictionary<string, object>()
     {
-        {"printer@odata.bind","https://graph.microsoft.com/beta/print/printers/{id}"}
+        {"printer@odata.bind", "https://graph.microsoft.com/beta/print/printers/{id}"}
     }
 };
 

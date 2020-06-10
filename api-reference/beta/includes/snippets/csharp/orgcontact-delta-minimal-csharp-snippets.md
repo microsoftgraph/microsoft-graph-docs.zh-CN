@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2e79da0abb76b07ab22b2da38b50124733300e1d
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: 630d3679346d27b39f9a5e667eb32d1239a35754
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082433"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684594"
 ---
 ```csharp
 
@@ -15,11 +15,7 @@ var delta = await graphClient.Contacts
     .Delta()
     .Request()
     .Header("Prefer","return=minimal")
-    .Select( e => new {
-             e.DisplayName,
-             e.JobTitle,
-             e.Mail 
-             })
+    .Select("displayName,jobTitle,mail")
     .GetAsync();
 
 ```

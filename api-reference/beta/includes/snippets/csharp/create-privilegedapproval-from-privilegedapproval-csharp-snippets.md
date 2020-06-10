@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 61c4b0d7491e81087219bbf9d5babf7f9581a8c7
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 79d17a2e2450acb74df556f0b9a5f6b7bfb79ae7
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35720305"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683912"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var privilegedApproval = new PrivilegedApproval
     RoleId = "roleId-value",
     ApprovalType = "approvalType-value",
     ApprovalState = ApprovalState.Pending,
-    ApprovalDuration = "datetime-value"
+    ApprovalDuration = new Duration("datetime-value")
 };
 
 await graphClient.PrivilegedApproval

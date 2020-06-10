@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: b3770987fc63ab1191a8c84e93c85bca27af0d14
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 7e48ac3c4398fce0cbc91ca3a2221e4c0e7b5ee0
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35720100"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683847"
 ---
 ```csharp
 
@@ -14,12 +14,12 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var privilegedRoleSettings = new PrivilegedRoleSettings
 {
     Id = "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
-    ElevationDuration = "PT8H",
+    ElevationDuration = new Duration("PT8H"),
     NotificationToUserOnElevation = false,
     TicketingInfoOnElevation = true,
     MfaOnElevation = false,
-    MaxElavationDuration = "PT0S",
-    MinElevationDuration = "PT0S",
+    MaxElavationDuration = new Duration("PT0S"),
+    MinElevationDuration = new Duration("PT0S"),
     LastGlobalAdmin = false,
     IsMfaOnElevationConfigurable = true,
     ApprovalOnElevation = false,

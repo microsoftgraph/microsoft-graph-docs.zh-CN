@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 195701f1b679ce8f1161e238ed8f56d77678461f
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: b3555f7f25af6b4335eac68b94e3d5383e65278d
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082375"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684897"
 ---
 ```csharp
 
@@ -31,7 +31,10 @@ var participants = new MeetingParticipants
             User = new Identity
             {
                 Id = "d4a060b5-a8fc-450c-837b-750b2c280000",
-                TenantId = "72f988bf-86f1-41af-91ab-2d7cd0110000"
+                AdditionalData = new Dictionary<string, object>()
+                {
+                    {"tenantId", "72f988bf-86f1-41af-91ab-2d7cd0110000"}
+                }
             }
         },
         Upn = "test1@contoso.com"
@@ -45,7 +48,10 @@ var participants = new MeetingParticipants
                 User = new Identity
                 {
                     Id = "1f35f2e6-9cab-44ad-8d5a-b74c14720000",
-                    IdentityProvider = "MSA"
+                    AdditionalData = new Dictionary<string, object>()
+                    {
+                        {"identityProvider", "MSA"}
+                    }
                 }
             },
             Upn = "test@contoso.com"

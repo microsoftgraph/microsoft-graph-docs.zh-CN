@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: d697243d36debb29fb2a13093f5c98e4f05a0cd3
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 4fe1f54f5adc2a40d43c2ac177658325682daa12
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35720487"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684806"
 ---
 ```csharp
 
@@ -15,8 +15,11 @@ var plannerPlanDetails = new PlannerPlanDetails
 {
     SharedWith = new PlannerUserIds
     {
-        6463a5ce-2119-4198-9f2a-628761df4a62 = true,
-        D95e6152-f683-4d78-9ff5-67ad180fea4a = false
+        AdditionalData = new Dictionary<string, object>()
+        {
+            {"6463a5ce-2119-4198-9f2a-628761df4a62", "true"},
+            {"d95e6152-f683-4d78-9ff5-67ad180fea4a", "false"}
+        }
     },
     CategoryDescriptions = new PlannerCategoryDescriptions
     {

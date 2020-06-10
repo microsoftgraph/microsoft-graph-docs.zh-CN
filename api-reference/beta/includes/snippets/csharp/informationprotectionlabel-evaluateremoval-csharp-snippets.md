@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: b0f52418266a43e6ca114dca34124205e489f359
-ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
+ms.openlocfilehash: e502c7eaa2529f26d6f58e20606408a2f21c8f0d
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41494883"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44685046"
 ---
 ```csharp
 
@@ -13,12 +13,6 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var contentInfo = new ContentInfo
 {
-    AdditionalData = new Dictionary<string, object>()
-    {
-        {"metadata@odata.type","#Collection(microsoft.graph.keyValuePair)"},
-        {"state@odata.type","#microsoft.graph.contentState"},
-        {"format@odata.type","#microsoft.graph.contentFormat"}
-    },
     Format = ContentFormat.Default,
     Identifier = null,
     State = ContentState.Rest,
@@ -59,6 +53,12 @@ var contentInfo = new ContentInfo
             Name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ActionId",
             Value = "00000000-0000-0000-0000-000000000000"
         }
+    },
+    AdditionalData = new Dictionary<string, object>()
+    {
+        {"format@odata.type", "#microsoft.graph.contentFormat"},
+        {"state@odata.type", "#microsoft.graph.contentState"},
+        {"metadata@odata.type", "#Collection(microsoft.graph.keyValuePair)"}
     }
 };
 
