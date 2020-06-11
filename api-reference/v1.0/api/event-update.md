@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 167984de2c5c9d9326da38a8c0d8b774d8b8cfe3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c6e3fb6d28ee5d1b1c0fbe0a76d00ad89982f6e1
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461582"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44680977"
 ---
 # <a name="update-event"></a>更新事件
 
@@ -61,7 +61,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 |:---------------|:--------|:----------|
 |attendees|[与会者](../resources/attendee.md)|事件的与会者集合。|
 |body|[ItemBody](../resources/itembody.md)|与事件相关联的邮件正文。|
-|categories|String|与事件相关联的类别。|
+|categories|String collection|与事件相关联的类别。|
 | end|DateTimeTimeZone|事件结束的日期、时间和时区。|
 |importance|String|事件的重要性。 可能的值包括 `low`、`normal`、`high`。|
 |isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
@@ -116,7 +116,8 @@ Content-length: 285
   "reminderMinutesBeforeStart": 99,
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",
-  "isReminderOn": true
+  "isReminderOn": true,
+  "categories": ["Red category"]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
