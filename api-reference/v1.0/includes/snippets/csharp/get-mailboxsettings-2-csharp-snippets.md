@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: b893b6519c45e1dc5269f34173c9ed13bcf999d7
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: cb278199cb35ecdc42eb9d47eeaedc89f4da0b1d
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35714976"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684152"
 ---
 ```csharp
 
@@ -13,9 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var me = await graphClient.Me
     .Request()
-    .Select( e => new {
-             e.MailboxSettings 
-             })
+    .Select("MailboxSettings")
     .GetAsync();
 
 var automaticRepliesSetting = me.MailboxSettings.AutomaticRepliesSetting;

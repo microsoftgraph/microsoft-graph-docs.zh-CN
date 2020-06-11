@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: d37e1fa03b1dfbad6b391cc31b466bcead67bf6c
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 86e4ab4845250cf87e326e77650f34f2ddae7d86
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35887664"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684492"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var educationClass = new EducationClass
 {
     AdditionalData = new Dictionary<string, object>()
     {
-        {"@odata.id","https://graph.microsoft.com/v1.0/education/classes/11006"}
+        {"@odata.id", "https://graph.microsoft.com/v1.0/education/classes/11006"}
     }
 };
 

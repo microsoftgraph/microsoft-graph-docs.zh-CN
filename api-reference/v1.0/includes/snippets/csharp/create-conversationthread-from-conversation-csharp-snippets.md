@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: f6b000641e6a90f97e1e39b5e8fd956cdf8ddfe2
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: ac582e24a67592421f38de2d454f521e0960e08a
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715587"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683918"
 ---
 ```csharp
 
@@ -14,7 +14,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var conversationThread = new ConversationThread
 {
     Topic = "topic-value",
-    Posts = new List<Post>()
+    Posts = (IConversationThreadPostsCollectionPage)new List<Post>()
     {
         new Post
         {

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0e45c99717818f21d3dca271777b8a3a87ad9d38
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: e6b2584c2e6a10cf0b4e771c0037f6f5fd2b6366
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43512279"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44680979"
 ---
 ```javascript
 
@@ -27,7 +27,8 @@ const event = {
   reminderMinutesBeforeStart: 99,
   isOnlineMeeting: true,
   onlineMeetingProvider: "teamsForBusiness",
-  isReminderOn: true
+  isReminderOn: true,
+  categories: ["Red category"]
 };
 
 let res = await client.api('/me/events/{id}')

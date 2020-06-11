@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0758fc7d939cd42cdd21d30441795116c5563df4
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: eb8abd9d9b82eb2ee3aada7b1b01d709b19625d1
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947080"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684572"
 ---
 ```csharp
 
@@ -20,7 +20,7 @@ var groupSetting = new GroupSetting
         new SettingValue
         {
             Name = "EnableMIPLabels",
-            Value = false
+            Value = "false"
         },
         new SettingValue
         {
@@ -30,7 +30,7 @@ var groupSetting = new GroupSetting
         new SettingValue
         {
             Name = "EnableMSStandardBlockedWords",
-            Value = false
+            Value = "false"
         },
         new SettingValue
         {
@@ -50,12 +50,12 @@ var groupSetting = new GroupSetting
         new SettingValue
         {
             Name = "AllowGuestsToBeGroupOwner",
-            Value = false
+            Value = "false"
         },
         new SettingValue
         {
             Name = "AllowGuestsToAccessGroups",
-            Value = true
+            Value = "true"
         },
         new SettingValue
         {
@@ -70,7 +70,7 @@ var groupSetting = new GroupSetting
         new SettingValue
         {
             Name = "AllowToAddGuests",
-            Value = true
+            Value = "true"
         },
         new SettingValue
         {
@@ -85,7 +85,7 @@ var groupSetting = new GroupSetting
         new SettingValue
         {
             Name = "EnableGroupCreation",
-            Value = true
+            Value = "true"
         }
     }
 };

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 84226b8bdad311f91a6e84d5a2bc6e55c4c31237
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 03082a464fcdea2bd9692a64f69af070f8593568
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947067"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684825"
 ---
 ```csharp
 
@@ -20,7 +20,7 @@ var groupSetting = new GroupSetting
         new SettingValue
         {
             Name = "AllowToAddGuests",
-            Value = false
+            Value = "false"
         }
     }
 };

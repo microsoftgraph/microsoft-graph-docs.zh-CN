@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: d229f6306cee32267c60590661d8427ebd1dded1
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: d04a191acfed67716ccb700b1d369fbfc45b87d0
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35732521"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683844"
 ---
 ```csharp
 
@@ -19,15 +19,7 @@ var queryOptions = new List<QueryOption>()
 
 var instances = await graphClient.Me.Events["AAMkAGUzYRgWAAA="].Instances
     .Request( queryOptions )
-    .Select( e => new {
-             e.Subject,
-             e.BodyPreview,
-             e.SeriesMasterId,
-             e.Type,
-             e.Recurrence,
-             e.Start,
-             e.End 
-             })
+    .Select("subject,bodyPreview,seriesMasterId,type,recurrence,start,end")
     .GetAsync();
 
 ```

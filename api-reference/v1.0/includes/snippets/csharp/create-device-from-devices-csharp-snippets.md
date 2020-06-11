@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 10145a8fda77acf66d896889e56d9c7a59bb194f
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: f93b3494b66be0fbb15630f4b1b1ee94b5d03118
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715627"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44685222"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var device = new Device
         new AlternativeSecurityId
         {
             Type = 2,
-            Key = "base64Y3YxN2E1MWFlYw=="
+            Key = Encoding.ASCII.GetBytes("base64Y3YxN2E1MWFlYw==")
         }
     },
     DeviceId = "4c299165-6e8f-4b45-a5ba-c5d250a707ff",

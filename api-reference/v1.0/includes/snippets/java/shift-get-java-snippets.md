@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7dcd8d4531be1cb7d879e26f1473ba1223baaecb
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 012aa568a445215e2f704c1b39ba6f65fc428d07
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44215939"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684357"
 ---
 ```java
 
@@ -37,6 +37,6 @@ shiftPreferences.availability = availabilityList;
 
 graphClient.users("871dbd5c-3a6a-4392-bfe1-042452793a50").settings().shiftPreferences()
     .buildRequest()
-    .put(shiftPreferences);
+    .patch(shiftPreferences);
 
 ```

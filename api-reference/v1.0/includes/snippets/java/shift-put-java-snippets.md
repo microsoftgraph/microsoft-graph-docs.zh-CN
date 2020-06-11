@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1ba0bff57e042d25c9a7e2471b2a72c8a93a80d0
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 0d6c331cffac76f123c6104b63280f876a61b0a8
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44217371"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683922"
 ---
 ```java
 
@@ -64,6 +64,6 @@ shift.draftShift = draftShift;
 
 graphClient.teams("{teamId}").schedule().shifts("{shiftId}")
     .buildRequest( requestOptions )
-    .put(shift);
+    .patch(shift);
 
 ```

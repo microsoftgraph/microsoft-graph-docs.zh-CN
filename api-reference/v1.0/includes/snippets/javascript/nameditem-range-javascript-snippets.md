@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: aea6bdfbc04e7b8e564dd489632ed0d90829bfbb
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 5926ba2e6c6737a51846d78ec92984ba6736a139
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35730097"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44681794"
 ---
 ```javascript
 
@@ -16,6 +16,6 @@ const options = {
 const client = Client.init(options);
 
 let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range')
-    .post();
+    .get();
 
 ```

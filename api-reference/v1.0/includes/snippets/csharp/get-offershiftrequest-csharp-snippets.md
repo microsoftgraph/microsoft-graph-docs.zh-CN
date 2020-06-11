@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c35596222b0e61bfda2c285403fa056d455dcb21
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 20ff9a32a90a9d8949d03a009511dc95c05b563f
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44217247"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683983"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var offerShiftRequest = new OfferShiftRequest
+var offerShiftRequest = new OfferShiftRequestObject
 {
     SenderShiftId = "SHFT_f7e484ed-fdd6-421c-92d9-0bc9e62e2c29",
     SenderMessage = "Having a family emergency, could you take this shift for me?",
