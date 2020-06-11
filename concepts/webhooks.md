@@ -5,117 +5,117 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 562eaccdd776ed22a4e171f6c0107f83be6acaab
-ms.sourcegitcommit: 43f7800894857a29f02fffaf4a50ad6386b5bf59
+ms.openlocfilehash: d3a2e12a37035f6b89499e73615441dc1514c139
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44524251"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682094"
 ---
-# <a name="set-up-notifications-for-changes-in-user-data"></a><span data-ttu-id="bff37-105">设置用户数据更改的通知</span><span class="sxs-lookup"><span data-stu-id="bff37-105">Set up notifications for changes in user data</span></span>
+# <a name="set-up-notifications-for-changes-in-user-data"></a><span data-ttu-id="cdf16-105">设置用户数据更改的通知</span><span class="sxs-lookup"><span data-stu-id="cdf16-105">Set up notifications for changes in user data</span></span>
 
-<span data-ttu-id="bff37-p102">Microsoft Graph API 使用 webhook 机制将更改通知传递给客户端。客户端是一种 web 服务，可用于配置自己的 URL 以接收更改通知。客户端应用使用更改通知在更改时更新其状态。</span><span class="sxs-lookup"><span data-stu-id="bff37-p102">The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes.</span></span>
+<span data-ttu-id="cdf16-p102">Microsoft Graph API 使用 webhook 机制将更改通知传递给客户端。客户端是一种 web 服务，可用于配置自己的 URL 以接收更改通知。客户端应用使用更改通知在更改时更新其状态。</span><span class="sxs-lookup"><span data-stu-id="cdf16-p102">The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes.</span></span>
 
-<span data-ttu-id="bff37-109">在 Microsoft Graph 接受订阅请求后，它会将更改通知推送到订阅中指定的 URL。</span><span class="sxs-lookup"><span data-stu-id="bff37-109">After Microsoft Graph accepts the subscription request, it pushes change notifications to the URL specified in the subscription.</span></span> <span data-ttu-id="bff37-110">然后应用根据其业务逻辑执行操作。</span><span class="sxs-lookup"><span data-stu-id="bff37-110">The app then takes action according to its business logic.</span></span> <span data-ttu-id="bff37-111">例如，它提取更多数据、更新缓存和视图等。</span><span class="sxs-lookup"><span data-stu-id="bff37-111">For example, it fetches more data, updates its cache and views, and so on.</span></span>
+<span data-ttu-id="cdf16-109">在 Microsoft Graph 接受订阅请求后，它会将更改通知推送到订阅中指定的 URL。</span><span class="sxs-lookup"><span data-stu-id="cdf16-109">After Microsoft Graph accepts the subscription request, it pushes change notifications to the URL specified in the subscription.</span></span> <span data-ttu-id="cdf16-110">然后应用根据其业务逻辑执行操作。</span><span class="sxs-lookup"><span data-stu-id="cdf16-110">The app then takes action according to its business logic.</span></span> <span data-ttu-id="cdf16-111">例如，它提取更多数据、更新缓存和视图等。</span><span class="sxs-lookup"><span data-stu-id="cdf16-111">For example, it fetches more data, updates its cache and views, and so on.</span></span>
 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
  
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="bff37-112">使用 .NET Core 生成 Webhook 应用</span><span class="sxs-lookup"><span data-stu-id="bff37-112">Build a webhook app with .NET Core</span></span>](/graph/tutorials/change-notifications)
+> [<span data-ttu-id="cdf16-112">使用 .NET Core 生成 Webhook 应用</span><span class="sxs-lookup"><span data-stu-id="cdf16-112">Build a webhook app with .NET Core</span></span>](/graph/tutorials/change-notifications)
 
-<span data-ttu-id="bff37-113">默认情况下，更改通知不包含资源数据，`id` 除外。</span><span class="sxs-lookup"><span data-stu-id="bff37-113">By default, change notifications do not contain resource data, other than the `id`.</span></span> <span data-ttu-id="bff37-114">如果应用需要资源数据，则可以调用 Microsoft Graph API 以获取完整资源。</span><span class="sxs-lookup"><span data-stu-id="bff37-114">If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource.</span></span> <span data-ttu-id="bff37-115">本文使用**用户**资源作为使用更改通知的示例。</span><span class="sxs-lookup"><span data-stu-id="bff37-115">This article uses the **user** resource as an example for working with change notifications.</span></span>
+<span data-ttu-id="cdf16-113">默认情况下，更改通知不包含资源数据，`id` 除外。</span><span class="sxs-lookup"><span data-stu-id="cdf16-113">By default, change notifications do not contain resource data, other than the `id`.</span></span> <span data-ttu-id="cdf16-114">如果应用需要资源数据，则可以调用 Microsoft Graph API 以获取完整资源。</span><span class="sxs-lookup"><span data-stu-id="cdf16-114">If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource.</span></span> <span data-ttu-id="cdf16-115">本文使用**用户**资源作为使用更改通知的示例。</span><span class="sxs-lookup"><span data-stu-id="cdf16-115">This article uses the **user** resource as an example for working with change notifications.</span></span>
 
-<span data-ttu-id="bff37-116">应用还可订阅包含资源数据的更改通知，避免执行其他 API 调用来访问数据。</span><span class="sxs-lookup"><span data-stu-id="bff37-116">An app can also subscribe to change notifications that include resource data, to avoid having to make additonal API calls to access the data.</span></span> <span data-ttu-id="bff37-117">此类应用将需要实现额外的代码来处理此类通知的要求，具体而言：响应订阅生命周期通知，验证通知的真实性，以及解密资源数据。</span><span class="sxs-lookup"><span data-stu-id="bff37-117">Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data.</span></span> <span data-ttu-id="bff37-118">将来会有更多资源类型支持此类型的通知。</span><span class="sxs-lookup"><span data-stu-id="bff37-118">More resource types will support this type of notifications in the future.</span></span> <span data-ttu-id="bff37-119">有关如何使用这些通知的详细信息，请参阅[设置包含资源数据的更改通知（预览版）](webhooks-with-resource-data.md)。</span><span class="sxs-lookup"><span data-stu-id="bff37-119">For details about how to work with these notificatios, see [Set up change notifications that include resource data (preview)](webhooks-with-resource-data.md).</span></span>
+<span data-ttu-id="cdf16-116">应用还可订阅包含资源数据的更改通知，避免执行其他 API 调用来访问数据。</span><span class="sxs-lookup"><span data-stu-id="cdf16-116">An app can also subscribe to change notifications that include resource data, to avoid having to make additonal API calls to access the data.</span></span> <span data-ttu-id="cdf16-117">此类应用将需要实现额外的代码来处理此类通知的要求，具体而言：响应订阅生命周期通知，验证通知的真实性，以及解密资源数据。</span><span class="sxs-lookup"><span data-stu-id="cdf16-117">Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data.</span></span> <span data-ttu-id="cdf16-118">将来会有更多资源类型支持此类型的通知。</span><span class="sxs-lookup"><span data-stu-id="cdf16-118">More resource types will support this type of notifications in the future.</span></span> <span data-ttu-id="cdf16-119">有关如何使用这些通知的详细信息，请参阅[设置包含资源数据的更改通知（预览版）](webhooks-with-resource-data.md)。</span><span class="sxs-lookup"><span data-stu-id="cdf16-119">For details about how to work with these notificatios, see [Set up change notifications that include resource data (preview)](webhooks-with-resource-data.md).</span></span>
 
-## <a name="supported-resources"></a><span data-ttu-id="bff37-120">支持的资源</span><span class="sxs-lookup"><span data-stu-id="bff37-120">Supported resources</span></span>
+## <a name="supported-resources"></a><span data-ttu-id="cdf16-120">支持的资源</span><span class="sxs-lookup"><span data-stu-id="cdf16-120">Supported resources</span></span>
 
-<span data-ttu-id="bff37-121">使用 Microsoft Graph API，应用可以订阅以下资源的更改：</span><span class="sxs-lookup"><span data-stu-id="bff37-121">Using the Microsoft Graph API, an app can subscribe to changes on the following resources:</span></span>
+<span data-ttu-id="cdf16-121">使用 Microsoft Graph API，应用可以订阅以下资源的更改：</span><span class="sxs-lookup"><span data-stu-id="cdf16-121">Using the Microsoft Graph API, an app can subscribe to changes on the following resources:</span></span>
 
-- <span data-ttu-id="bff37-122">Outlook [邮件][]</span><span class="sxs-lookup"><span data-stu-id="bff37-122">Outlook [message][]</span></span>
-- <span data-ttu-id="bff37-123">Outlook [事件][]</span><span class="sxs-lookup"><span data-stu-id="bff37-123">Outlook [event][]</span></span>
-- <span data-ttu-id="bff37-124">Outlook 个人[联系人][]</span><span class="sxs-lookup"><span data-stu-id="bff37-124">Outlook personal [contact][]</span></span>
-- <span data-ttu-id="bff37-125">[用户][]</span><span class="sxs-lookup"><span data-stu-id="bff37-125">[user][]</span></span>
-- <span data-ttu-id="bff37-126">[组][]</span><span class="sxs-lookup"><span data-stu-id="bff37-126">[group][]</span></span>
-- <span data-ttu-id="bff37-127">Office 365 组[对话][]</span><span class="sxs-lookup"><span data-stu-id="bff37-127">Office 365 group [conversation][]</span></span>
-- <span data-ttu-id="bff37-128">用户个人 OneDrive 上_任何_ [driveItem][] 文件夹层次结构内的内容</span><span class="sxs-lookup"><span data-stu-id="bff37-128">Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive</span></span>
-- <span data-ttu-id="bff37-129">OneDrive for Business 上 [driveItem][] _根文件夹_层次结构内的内容</span><span class="sxs-lookup"><span data-stu-id="bff37-129">Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business</span></span>
-- <span data-ttu-id="bff37-130">安全[警报][]</span><span class="sxs-lookup"><span data-stu-id="bff37-130">Security [alert][]</span></span>
-- <span data-ttu-id="bff37-131">团队[callRecord][]</span><span class="sxs-lookup"><span data-stu-id="bff37-131">Teams [callRecord][]</span></span>
-- <span data-ttu-id="bff37-132">Teams [chatMessage][]（预览）</span><span class="sxs-lookup"><span data-stu-id="bff37-132">Teams [chatMessage][] (preview)</span></span>
+- <span data-ttu-id="cdf16-122">Outlook [邮件][]</span><span class="sxs-lookup"><span data-stu-id="cdf16-122">Outlook [message][]</span></span>
+- <span data-ttu-id="cdf16-123">Outlook [事件][]</span><span class="sxs-lookup"><span data-stu-id="cdf16-123">Outlook [event][]</span></span>
+- <span data-ttu-id="cdf16-124">Outlook 个人[联系人][]</span><span class="sxs-lookup"><span data-stu-id="cdf16-124">Outlook personal [contact][]</span></span>
+- <span data-ttu-id="cdf16-125">[用户][]</span><span class="sxs-lookup"><span data-stu-id="cdf16-125">[user][]</span></span>
+- <span data-ttu-id="cdf16-126">[组][]</span><span class="sxs-lookup"><span data-stu-id="cdf16-126">[group][]</span></span>
+- <span data-ttu-id="cdf16-127">Office 365 组[对话][]</span><span class="sxs-lookup"><span data-stu-id="cdf16-127">Office 365 group [conversation][]</span></span>
+- <span data-ttu-id="cdf16-128">用户个人 OneDrive 上_任何_ [driveItem][] 文件夹层次结构内的内容</span><span class="sxs-lookup"><span data-stu-id="cdf16-128">Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive</span></span>
+- <span data-ttu-id="cdf16-129">OneDrive for Business 上 [driveItem][] _根文件夹_层次结构内的内容</span><span class="sxs-lookup"><span data-stu-id="cdf16-129">Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business</span></span>
+- <span data-ttu-id="cdf16-130">安全[警报][]</span><span class="sxs-lookup"><span data-stu-id="cdf16-130">Security [alert][]</span></span>
+- <span data-ttu-id="cdf16-131">团队[callRecord][]</span><span class="sxs-lookup"><span data-stu-id="cdf16-131">Teams [callRecord][]</span></span>
+- <span data-ttu-id="cdf16-132">Teams [chatMessage][]（预览）</span><span class="sxs-lookup"><span data-stu-id="cdf16-132">Teams [chatMessage][] (preview)</span></span>
 
-<span data-ttu-id="bff37-133">可以创建对特定 Outlook 文件夹的订阅，例如收件箱：`me/mailFolders('inbox')/messages`</span><span class="sxs-lookup"><span data-stu-id="bff37-133">You can create a subscription to a specific Outlook folder such as the Inbox: `me/mailFolders('inbox')/messages`</span></span>
+<span data-ttu-id="cdf16-133">可以创建对特定 Outlook 文件夹的订阅，例如收件箱：`me/mailFolders('inbox')/messages`</span><span class="sxs-lookup"><span data-stu-id="cdf16-133">You can create a subscription to a specific Outlook folder such as the Inbox: `me/mailFolders('inbox')/messages`</span></span>
 
-<span data-ttu-id="bff37-134">或者顶级资源：、、、、 `/me/messages` `/me/contacts` `/me/events` `users` `groups` 或`/communications/callRecords`</span><span class="sxs-lookup"><span data-stu-id="bff37-134">Or to a top-level resource: `/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, or `/communications/callRecords`</span></span>
+<span data-ttu-id="cdf16-134">或者顶级资源：、、、、 `/me/messages` `/me/contacts` `/me/events` `users` `groups` 或`/communications/callRecords`</span><span class="sxs-lookup"><span data-stu-id="cdf16-134">Or to a top-level resource: `/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, or `/communications/callRecords`</span></span>
 
-<span data-ttu-id="bff37-135">或以下特定资源实例的订阅：`users/{id}`、`groups/{id}`、`groups/{id}/conversations`</span><span class="sxs-lookup"><span data-stu-id="bff37-135">Or to a specific resource instance: `users/{id}`, `groups/{id}`, `groups/{id}/conversations`</span></span>
+<span data-ttu-id="cdf16-135">或以下特定资源实例的订阅：`users/{id}`、`groups/{id}`、`groups/{id}/conversations`</span><span class="sxs-lookup"><span data-stu-id="cdf16-135">Or to a specific resource instance: `users/{id}`, `groups/{id}`, `groups/{id}/conversations`</span></span>
 
-<span data-ttu-id="bff37-136">或用户个人 OneDrive 中任何文件夹的订阅：`/drives/{id}/root`
-`/drives/{id}/root/subfolder`</span><span class="sxs-lookup"><span data-stu-id="bff37-136">Or to any folder in a user's personal OneDrive: `/drives/{id}/root`
+<span data-ttu-id="cdf16-136">或用户个人 OneDrive 中任何文件夹的订阅：`/drives/{id}/root`
+`/drives/{id}/root/subfolder`</span><span class="sxs-lookup"><span data-stu-id="cdf16-136">Or to any folder in a user's personal OneDrive: `/drives/{id}/root`
 `/drives/{id}/root/subfolder`</span></span>
 
-<span data-ttu-id="bff37-137">或 SharePoint/OneDrive for Business 驱动器根文件夹的订阅：`/drive/root`</span><span class="sxs-lookup"><span data-stu-id="bff37-137">Or to the root folder of a SharePoint/OneDrive for Business drive: `/drive/root`</span></span>
+<span data-ttu-id="cdf16-137">或 SharePoint/OneDrive for Business 驱动器根文件夹的订阅：`/drive/root`</span><span class="sxs-lookup"><span data-stu-id="cdf16-137">Or to the root folder of a SharePoint/OneDrive for Business drive: `/drive/root`</span></span>
 
-<span data-ttu-id="bff37-138">或对新[安全性 API](security-concept-overview.md) 警报的订阅：`/security/alerts?$filter=status eq 'newAlert'`、`/security/alerts?$filter=vendorInformation/provider eq 'ASC'`</span><span class="sxs-lookup"><span data-stu-id="bff37-138">Or to a new [Security API](security-concept-overview.md) alert: `/security/alerts?$filter=status eq 'newAlert'`, `/security/alerts?$filter=vendorInformation/provider eq 'ASC'`</span></span>
+<span data-ttu-id="cdf16-138">或对新[安全性 API](security-concept-overview.md) 警报的订阅：`/security/alerts?$filter=status eq 'newAlert'`、`/security/alerts?$filter=vendorInformation/provider eq 'ASC'`</span><span class="sxs-lookup"><span data-stu-id="cdf16-138">Or to a new [Security API](security-concept-overview.md) alert: `/security/alerts?$filter=status eq 'newAlert'`, `/security/alerts?$filter=vendorInformation/provider eq 'ASC'`</span></span>
 
-### <a name="azure-ad-resource-limitations"></a><span data-ttu-id="bff37-139">Azure AD 资源限制</span><span class="sxs-lookup"><span data-stu-id="bff37-139">Azure AD resource limitations</span></span>
+### <a name="azure-ad-resource-limitations"></a><span data-ttu-id="cdf16-139">Azure AD 资源限制</span><span class="sxs-lookup"><span data-stu-id="cdf16-139">Azure AD resource limitations</span></span>
 
-<span data-ttu-id="bff37-140">基于 Azure AD 的资源（用户、组）采用了某些限制，超出限制时将会产生错误：</span><span class="sxs-lookup"><span data-stu-id="bff37-140">Certain limits apply to Azure AD based resources (users, groups) and will generate errors when exceeded:</span></span>
+<span data-ttu-id="cdf16-140">基于 Azure AD 的资源（用户、组）采用了某些限制，超出限制时将会产生错误：</span><span class="sxs-lookup"><span data-stu-id="cdf16-140">Certain limits apply to Azure AD based resources (users, groups) and will generate errors when exceeded:</span></span>
 
-> <span data-ttu-id="bff37-141">**请注意**：这些限制不适用于来自 Azure AD 以外的服务的资源。</span><span class="sxs-lookup"><span data-stu-id="bff37-141">**Note**: These limits do not apply to resources from services other than Azure AD.</span></span> <span data-ttu-id="bff37-142">例如，应用可以创建许多更多的 `message` 或 `event` 资源订阅，这些订阅受到 Microsoft Graph 中的 Exchange Online 服务支持。</span><span class="sxs-lookup"><span data-stu-id="bff37-142">For example, an app can create many more subscriptions to `message` or `event` resources, which are supported by the Exchange Online service as part of Microsoft Graph.</span></span>
+> <span data-ttu-id="cdf16-141">**请注意**：这些限制不适用于来自 Azure AD 以外的服务的资源。</span><span class="sxs-lookup"><span data-stu-id="cdf16-141">**Note**: These limits do not apply to resources from services other than Azure AD.</span></span> <span data-ttu-id="cdf16-142">例如，应用可以创建许多更多的 `message` 或 `event` 资源订阅，这些订阅受到 Microsoft Graph 中的 Exchange Online 服务支持。</span><span class="sxs-lookup"><span data-stu-id="cdf16-142">For example, an app can create many more subscriptions to `message` or `event` resources, which are supported by the Exchange Online service as part of Microsoft Graph.</span></span>
 
-- <span data-ttu-id="bff37-143">最大订阅配额：</span><span class="sxs-lookup"><span data-stu-id="bff37-143">Maximum subscription quotas:</span></span>
+- <span data-ttu-id="cdf16-143">最大订阅配额：</span><span class="sxs-lookup"><span data-stu-id="cdf16-143">Maximum subscription quotas:</span></span>
 
-  - <span data-ttu-id="bff37-144">每个应用：总订阅数 50,000</span><span class="sxs-lookup"><span data-stu-id="bff37-144">Per app: 50,000 total subscriptions</span></span>
-  - <span data-ttu-id="bff37-145">每个租户：所有应用的总订阅数 1000</span><span class="sxs-lookup"><span data-stu-id="bff37-145">Per tenant: 1000 total subscriptions across all apps</span></span>
-  - <span data-ttu-id="bff37-146">每个应用和租户组合：总订阅数 100</span><span class="sxs-lookup"><span data-stu-id="bff37-146">Per app and tenant combination: 100 total subscriptions</span></span>
+  - <span data-ttu-id="cdf16-144">每个应用：总订阅数 50,000</span><span class="sxs-lookup"><span data-stu-id="cdf16-144">Per app: 50,000 total subscriptions</span></span>
+  - <span data-ttu-id="cdf16-145">每个租户：所有应用的总订阅数 1000</span><span class="sxs-lookup"><span data-stu-id="cdf16-145">Per tenant: 1000 total subscriptions across all apps</span></span>
+  - <span data-ttu-id="cdf16-146">每个应用和租户组合：总订阅数 100</span><span class="sxs-lookup"><span data-stu-id="cdf16-146">Per app and tenant combination: 100 total subscriptions</span></span>
 
-<span data-ttu-id="bff37-147">超出限制时，尝试创建订阅将导致[错误响应](errors.md) - `403 Forbidden`。</span><span class="sxs-lookup"><span data-stu-id="bff37-147">When the limits are exceeded, attempts to create a subscription will result in an [error response](errors.md) - `403 Forbidden`.</span></span> <span data-ttu-id="bff37-148">`message` 属性将说明已超出什么限制。</span><span class="sxs-lookup"><span data-stu-id="bff37-148">The `message` property will explain which limit has been exceeded.</span></span>
+<span data-ttu-id="cdf16-147">超出限制时，尝试创建订阅将导致[错误响应](errors.md) - `403 Forbidden`。</span><span class="sxs-lookup"><span data-stu-id="cdf16-147">When the limits are exceeded, attempts to create a subscription will result in an [error response](errors.md) - `403 Forbidden`.</span></span> <span data-ttu-id="cdf16-148">`message` 属性将说明已超出什么限制。</span><span class="sxs-lookup"><span data-stu-id="cdf16-148">The `message` property will explain which limit has been exceeded.</span></span>
 
-- <span data-ttu-id="bff37-149">不支持 Azure AD B2C 租户。</span><span class="sxs-lookup"><span data-stu-id="bff37-149">Azure AD B2C tenants are not supported.</span></span>
+- <span data-ttu-id="cdf16-149">不支持 Azure AD B2C 租户。</span><span class="sxs-lookup"><span data-stu-id="cdf16-149">Azure AD B2C tenants are not supported.</span></span>
 
-- <span data-ttu-id="bff37-150">个人 Microsoft 帐户不支持用户实体的 Changfe 通知。</span><span class="sxs-lookup"><span data-stu-id="bff37-150">Changfe notification for user entities are not supported for personal Microsoft accounts.</span></span>
+- <span data-ttu-id="cdf16-150">个人 Microsoft 帐户不支持用户实体的 Changfe 通知。</span><span class="sxs-lookup"><span data-stu-id="cdf16-150">Changfe notification for user entities are not supported for personal Microsoft accounts.</span></span>
 
-- <span data-ttu-id="bff37-151">用户和租订阅存在一个[已知问题](known-issues.md#change-notifications)。</span><span class="sxs-lookup"><span data-stu-id="bff37-151">A [known issue](known-issues.md#change-notifications) exists with user and group subscriptions.</span></span>
+- <span data-ttu-id="cdf16-151">用户和租订阅存在一个[已知问题](known-issues.md#change-notifications)。</span><span class="sxs-lookup"><span data-stu-id="cdf16-151">A [known issue](known-issues.md#change-notifications) exists with user and group subscriptions.</span></span>
 
-### <a name="outlook-resource-limitations"></a><span data-ttu-id="bff37-152">Outlook 资源限制</span><span class="sxs-lookup"><span data-stu-id="bff37-152">Outlook resource limitations</span></span>
+### <a name="outlook-resource-limitations"></a><span data-ttu-id="cdf16-152">Outlook 资源限制</span><span class="sxs-lookup"><span data-stu-id="cdf16-152">Outlook resource limitations</span></span>
 
-<span data-ttu-id="bff37-153">订阅 Outlook 资源（如**邮件**、**事件**或**联系人**）时，如果选择使用资源路径中的*用户主体名称* UPN，则在 UPN 包含撇号的情况下，订阅请求可能会失败。</span><span class="sxs-lookup"><span data-stu-id="bff37-153">When subscribing to Outlook resources such as **messages**, **events** or **contacts**, if you choose to use the *user principal name* UPN in the resource path, the subscription request might fail if the UPN contains an apostrophe.</span></span> <span data-ttu-id="bff37-154">请考虑使用 GUID 用户 ID 而不是 UPN，以避免遇到此问题。</span><span class="sxs-lookup"><span data-stu-id="bff37-154">Consider using GUID user IDs instead of UPNs to avoid running into this problem.</span></span> <span data-ttu-id="bff37-155">例如，请勿使用资源路径：</span><span class="sxs-lookup"><span data-stu-id="bff37-155">For example, instead of using resource path:</span></span>
+<span data-ttu-id="cdf16-153">订阅 Outlook 资源（如**邮件**、**事件**或**联系人**）时，如果选择使用资源路径中的*用户主体名称* UPN，则在 UPN 包含撇号的情况下，订阅请求可能会失败。</span><span class="sxs-lookup"><span data-stu-id="cdf16-153">When subscribing to Outlook resources such as **messages**, **events** or **contacts**, if you choose to use the *user principal name* UPN in the resource path, the subscription request might fail if the UPN contains an apostrophe.</span></span> <span data-ttu-id="cdf16-154">请考虑使用 GUID 用户 ID 而不是 UPN，以避免遇到此问题。</span><span class="sxs-lookup"><span data-stu-id="cdf16-154">Consider using GUID user IDs instead of UPNs to avoid running into this problem.</span></span> <span data-ttu-id="cdf16-155">例如，请勿使用资源路径：</span><span class="sxs-lookup"><span data-stu-id="cdf16-155">For example, instead of using resource path:</span></span>
 
 `/users/sh.o'neal@contoso.com/messages`
 
-<span data-ttu-id="bff37-156">请使用：</span><span class="sxs-lookup"><span data-stu-id="bff37-156">Use:</span></span> 
+<span data-ttu-id="cdf16-156">请使用：</span><span class="sxs-lookup"><span data-stu-id="cdf16-156">Use:</span></span> 
 
 `/users/{guid-user-id}/messages`
 
-## <a name="subscription-lifetime"></a><span data-ttu-id="bff37-157">订阅生命周期</span><span class="sxs-lookup"><span data-stu-id="bff37-157">Subscription lifetime</span></span>
+## <a name="subscription-lifetime"></a><span data-ttu-id="cdf16-157">订阅生命周期</span><span class="sxs-lookup"><span data-stu-id="cdf16-157">Subscription lifetime</span></span>
 
-<span data-ttu-id="bff37-158">订阅的生命周期有限。</span><span class="sxs-lookup"><span data-stu-id="bff37-158">Subscriptions have a limited lifetime.</span></span> <span data-ttu-id="bff37-159">应用需要在订阅到期前续订订阅。</span><span class="sxs-lookup"><span data-stu-id="bff37-159">Apps need to renew their subscriptions before the expiration time.</span></span> <span data-ttu-id="bff37-160">否则，需要新建订阅。</span><span class="sxs-lookup"><span data-stu-id="bff37-160">Otherwise, they need to create a new subscription.</span></span> <span data-ttu-id="bff37-161">有关最长有效期的列表，请参阅[每个资源类型的最长订阅有效期](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type)。</span><span class="sxs-lookup"><span data-stu-id="bff37-161">For a list of maximum expiration times, see [Maximum length of subscription per resource type](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type).</span></span>
+<span data-ttu-id="cdf16-158">订阅的生命周期有限。</span><span class="sxs-lookup"><span data-stu-id="cdf16-158">Subscriptions have a limited lifetime.</span></span> <span data-ttu-id="cdf16-159">应用需要在订阅到期前续订订阅。</span><span class="sxs-lookup"><span data-stu-id="cdf16-159">Apps need to renew their subscriptions before the expiration time.</span></span> <span data-ttu-id="cdf16-160">否则，需要新建订阅。</span><span class="sxs-lookup"><span data-stu-id="cdf16-160">Otherwise, they need to create a new subscription.</span></span> <span data-ttu-id="cdf16-161">有关最长有效期的列表，请参阅[每个资源类型的最长订阅有效期](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type)。</span><span class="sxs-lookup"><span data-stu-id="cdf16-161">For a list of maximum expiration times, see [Maximum length of subscription per resource type](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type).</span></span>
 
-<span data-ttu-id="bff37-162">应用还可以随时取消订阅以停止获取更改通知。</span><span class="sxs-lookup"><span data-stu-id="bff37-162">Apps can also unsubscribe at any time to stop getting change notifications.</span></span>
+<span data-ttu-id="cdf16-162">应用还可以随时取消订阅以停止获取更改通知。</span><span class="sxs-lookup"><span data-stu-id="cdf16-162">Apps can also unsubscribe at any time to stop getting change notifications.</span></span>
 
-## <a name="managing-subscriptions"></a><span data-ttu-id="bff37-163">管理订阅</span><span class="sxs-lookup"><span data-stu-id="bff37-163">Managing subscriptions</span></span>
+## <a name="managing-subscriptions"></a><span data-ttu-id="cdf16-163">管理订阅</span><span class="sxs-lookup"><span data-stu-id="cdf16-163">Managing subscriptions</span></span>
 
-<span data-ttu-id="bff37-164">客户端可以创建订阅、续订订阅和删除订阅。</span><span class="sxs-lookup"><span data-stu-id="bff37-164">Clients can create subscriptions, renew subscriptions, and delete subscriptions.</span></span>
+<span data-ttu-id="cdf16-164">客户端可以创建订阅、续订订阅和删除订阅。</span><span class="sxs-lookup"><span data-stu-id="cdf16-164">Clients can create subscriptions, renew subscriptions, and delete subscriptions.</span></span>
 
-### <a name="creating-a-subscription"></a><span data-ttu-id="bff37-165">创建订阅</span><span class="sxs-lookup"><span data-stu-id="bff37-165">Creating a subscription</span></span>
+### <a name="creating-a-subscription"></a><span data-ttu-id="cdf16-165">创建订阅</span><span class="sxs-lookup"><span data-stu-id="cdf16-165">Creating a subscription</span></span>
 
-<span data-ttu-id="bff37-p110">创建订阅是开始接收对资源的更改通知的第一步。订阅过程如下所示：</span><span class="sxs-lookup"><span data-stu-id="bff37-p110">Creating a subscription is the first step to start receiving change notifications for a resource. The subscription process is as follows:</span></span>
+<span data-ttu-id="cdf16-p110">创建订阅是开始接收对资源的更改通知的第一步。订阅过程如下所示：</span><span class="sxs-lookup"><span data-stu-id="cdf16-p110">Creating a subscription is the first step to start receiving change notifications for a resource. The subscription process is as follows:</span></span>
 
-1. <span data-ttu-id="bff37-168">客户端发送特定资源的订阅 (POST) 请求。</span><span class="sxs-lookup"><span data-stu-id="bff37-168">The client sends a subscription (POST) request for a specific resource.</span></span>
+1. <span data-ttu-id="cdf16-168">客户端发送特定资源的订阅 (POST) 请求。</span><span class="sxs-lookup"><span data-stu-id="cdf16-168">The client sends a subscription (POST) request for a specific resource.</span></span>
 
-1. <span data-ttu-id="bff37-169">Microsoft Graph 验证请求。</span><span class="sxs-lookup"><span data-stu-id="bff37-169">Microsoft Graph verifies the request.</span></span>
+1. <span data-ttu-id="cdf16-169">Microsoft Graph 验证请求。</span><span class="sxs-lookup"><span data-stu-id="cdf16-169">Microsoft Graph verifies the request.</span></span>
 
-    - <span data-ttu-id="bff37-170">如果请求有效，Microsoft Graph 将验证令牌发送到通知 URL。</span><span class="sxs-lookup"><span data-stu-id="bff37-170">If the request is valid, Microsoft Graph sends a validation token to the notification URL.</span></span>
-    - <span data-ttu-id="bff37-171">如果该请求无效，Microsoft Graph 将发送包含代码和详细信息的错误响应。</span><span class="sxs-lookup"><span data-stu-id="bff37-171">If the request is invalid, Microsoft Graph sends an error response with code and details.</span></span>
+    - <span data-ttu-id="cdf16-170">如果请求有效，Microsoft Graph 将验证令牌发送到通知 URL。</span><span class="sxs-lookup"><span data-stu-id="cdf16-170">If the request is valid, Microsoft Graph sends a validation token to the notification URL.</span></span>
+    - <span data-ttu-id="cdf16-171">如果该请求无效，Microsoft Graph 将发送包含代码和详细信息的错误响应。</span><span class="sxs-lookup"><span data-stu-id="cdf16-171">If the request is invalid, Microsoft Graph sends an error response with code and details.</span></span>
 
-1. <span data-ttu-id="bff37-172">客户端将验证令牌发送回 Microsoft Graph。</span><span class="sxs-lookup"><span data-stu-id="bff37-172">The client sends the validation token back to Microsoft Graph.</span></span>
+1. <span data-ttu-id="cdf16-172">客户端将验证令牌发送回 Microsoft Graph。</span><span class="sxs-lookup"><span data-stu-id="cdf16-172">The client sends the validation token back to Microsoft Graph.</span></span>
 
-1. <span data-ttu-id="bff37-173">Microsoft Graph 将响应发送回客户端。</span><span class="sxs-lookup"><span data-stu-id="bff37-173">The Microsoft Graph sends a response back to the client.</span></span>
+1. <span data-ttu-id="cdf16-173">Microsoft Graph 将响应发送回客户端。</span><span class="sxs-lookup"><span data-stu-id="cdf16-173">The Microsoft Graph sends a response back to the client.</span></span>
 
-<span data-ttu-id="bff37-174">客户端必须存储订阅 ID，才能将更改通知与订阅关联。</span><span class="sxs-lookup"><span data-stu-id="bff37-174">The client must store the subscription ID to correlate change notifications with the subscription.</span></span>
+<span data-ttu-id="cdf16-174">客户端必须存储订阅 ID，才能将更改通知与订阅关联。</span><span class="sxs-lookup"><span data-stu-id="cdf16-174">The client must store the subscription ID to correlate change notifications with the subscription.</span></span>
 
-#### <a name="subscription-request-example"></a><span data-ttu-id="bff37-175">订阅请求示例</span><span class="sxs-lookup"><span data-stu-id="bff37-175">Subscription request example</span></span>
+#### <a name="subscription-request-example"></a><span data-ttu-id="cdf16-175">订阅请求示例</span><span class="sxs-lookup"><span data-stu-id="cdf16-175">Subscription request example</span></span>
 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
@@ -129,44 +129,44 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="bff37-176">`changeType`、`notificationUrl`、`resource` 和 `expirationDateTime` 属性是必需的。</span><span class="sxs-lookup"><span data-stu-id="bff37-176">The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required.</span></span> <span data-ttu-id="bff37-177">如需属性定义和值，请参阅[订阅资源类型](/graph/api/resources/subscription?view=graph-rest-1.0)。</span><span class="sxs-lookup"><span data-stu-id="bff37-177">See [subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0) for property definitions and values.</span></span>
+<span data-ttu-id="cdf16-176">`changeType`、`notificationUrl`、`resource` 和 `expirationDateTime` 属性是必需的。</span><span class="sxs-lookup"><span data-stu-id="cdf16-176">The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required.</span></span> <span data-ttu-id="cdf16-177">如需属性定义和值，请参阅[订阅资源类型](/graph/api/resources/subscription?view=graph-rest-1.0)。</span><span class="sxs-lookup"><span data-stu-id="cdf16-177">See [subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0) for property definitions and values.</span></span>
 
-<span data-ttu-id="bff37-178">`resource` 属性指定要被监视以进行更改的资源。</span><span class="sxs-lookup"><span data-stu-id="bff37-178">The `resource` property specifies the resource that will be monitored for changes.</span></span> <span data-ttu-id="bff37-179">例如，可以创建特定邮件文件夹的订阅：`me/mailFolders('inbox')/messages`，或代表由管理员同意的用户：`users/john.doe@onmicrosoft.com/mailFolders('inbox')/messages`。</span><span class="sxs-lookup"><span data-stu-id="bff37-179">For example, you can create a subscription to a specific mail folder: `me/mailFolders('inbox')/messages` or on behalf of a user given by an administrator  consent: `users/john.doe@onmicrosoft.com/mailFolders('inbox')/messages`.</span></span>
+<span data-ttu-id="cdf16-178">`resource` 属性指定要被监视以进行更改的资源。</span><span class="sxs-lookup"><span data-stu-id="cdf16-178">The `resource` property specifies the resource that will be monitored for changes.</span></span> <span data-ttu-id="cdf16-179">例如，可以创建特定邮件文件夹的订阅：`me/mailFolders('inbox')/messages`，或代表由管理员同意的用户：`users/john.doe@onmicrosoft.com/mailFolders('inbox')/messages`。</span><span class="sxs-lookup"><span data-stu-id="cdf16-179">For example, you can create a subscription to a specific mail folder: `me/mailFolders('inbox')/messages` or on behalf of a user given by an administrator  consent: `users/john.doe@onmicrosoft.com/mailFolders('inbox')/messages`.</span></span>
 
-<span data-ttu-id="bff37-180">尽管 `clientState` 不是必需的，但必须将其包括在内，才能符合我们建议的更改通知处理过程。</span><span class="sxs-lookup"><span data-stu-id="bff37-180">Although `clientState` is not required, you must include it to comply with our recommended change notification handling process.</span></span> <span data-ttu-id="bff37-181">通过设置此属性，可以确认收到的更改通知来自 Microsoft Graph 服务。</span><span class="sxs-lookup"><span data-stu-id="bff37-181">Setting this property will allow you to confirm that change notifications you receive originate from the Microsoft Graph service.</span></span> <span data-ttu-id="bff37-182">因此，该属性的值应保密，并且只有你的应用程序和 Microsoft Graph 服务知道。</span><span class="sxs-lookup"><span data-stu-id="bff37-182">For this reason, the value of the property should remain secret and known only to your application and the Microsoft Graph service.</span></span>
+<span data-ttu-id="cdf16-180">尽管 `clientState` 不是必需的，但必须将其包括在内，才能符合我们建议的更改通知处理过程。</span><span class="sxs-lookup"><span data-stu-id="cdf16-180">Although `clientState` is not required, you must include it to comply with our recommended change notification handling process.</span></span> <span data-ttu-id="cdf16-181">通过设置此属性，可以确认收到的更改通知来自 Microsoft Graph 服务。</span><span class="sxs-lookup"><span data-stu-id="cdf16-181">Setting this property will allow you to confirm that change notifications you receive originate from the Microsoft Graph service.</span></span> <span data-ttu-id="cdf16-182">因此，该属性的值应保密，并且只有你的应用程序和 Microsoft Graph 服务知道。</span><span class="sxs-lookup"><span data-stu-id="cdf16-182">For this reason, the value of the property should remain secret and known only to your application and the Microsoft Graph service.</span></span>
 
-<span data-ttu-id="bff37-183">如果成功，Microsoft Graph 将在正文中返回 `201 Created` 代码和 [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) 对象。</span><span class="sxs-lookup"><span data-stu-id="bff37-183">If successful, Microsoft Graph returns a `201 Created` code and a [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) object in the body.</span></span>
+<span data-ttu-id="cdf16-183">如果成功，Microsoft Graph 将在正文中返回 `201 Created` 代码和 [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) 对象。</span><span class="sxs-lookup"><span data-stu-id="cdf16-183">If successful, Microsoft Graph returns a `201 Created` code and a [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) object in the body.</span></span>
 
-#### <a name="notification-endpoint-validation"></a><span data-ttu-id="bff37-184">通知终结点验证</span><span class="sxs-lookup"><span data-stu-id="bff37-184">Notification endpoint validation</span></span>
+#### <a name="notification-endpoint-validation"></a><span data-ttu-id="cdf16-184">通知终结点验证</span><span class="sxs-lookup"><span data-stu-id="cdf16-184">Notification endpoint validation</span></span>
 
-<span data-ttu-id="bff37-185">Microsoft Graph 在创建订阅之前验证订阅请求的 `notificationUrl` 属性中提供的通知终结点。</span><span class="sxs-lookup"><span data-stu-id="bff37-185">Microsoft Graph validates the notification endpoint provided in the `notificationUrl` property of the subscription request before creating the subscription.</span></span> <span data-ttu-id="bff37-186">验证流程如下所示：</span><span class="sxs-lookup"><span data-stu-id="bff37-186">The validation process occurs as follows:</span></span>
+<span data-ttu-id="cdf16-185">Microsoft Graph 在创建订阅之前验证订阅请求的 `notificationUrl` 属性中提供的通知终结点。</span><span class="sxs-lookup"><span data-stu-id="cdf16-185">Microsoft Graph validates the notification endpoint provided in the `notificationUrl` property of the subscription request before creating the subscription.</span></span> <span data-ttu-id="cdf16-186">验证流程如下所示：</span><span class="sxs-lookup"><span data-stu-id="cdf16-186">The validation process occurs as follows:</span></span>
 
-1. <span data-ttu-id="bff37-187">Microsoft Graph 将 POST 请求发送到通知 URL：</span><span class="sxs-lookup"><span data-stu-id="bff37-187">Microsoft Graph sends a POST request to the notification URL:</span></span>
+1. <span data-ttu-id="cdf16-187">Microsoft Graph 将 POST 请求发送到通知 URL：</span><span class="sxs-lookup"><span data-stu-id="cdf16-187">Microsoft Graph sends a POST request to the notification URL:</span></span>
 
     ``` http
     Content-Type: text/plain; charset=utf-8
     POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
     ```
 
-    > <span data-ttu-id="bff37-188">**重要说明：** 由于 `validationToken` 是查询参数，因此客户端必须根据 HTTP 编码做法正确解码它。</span><span class="sxs-lookup"><span data-stu-id="bff37-188">**Important:** Since the `validationToken` is a query parameter it must be properly decoded by the client, as per HTTP coding practices.</span></span> <span data-ttu-id="bff37-189">如果客户端没有解码令牌，而是在下一步（响应）中使用已编码值，那么验证将会失败。</span><span class="sxs-lookup"><span data-stu-id="bff37-189">If the client does not decode the token, and instead uses the encoded value in the next step (response), validation will fail.</span></span> <span data-ttu-id="bff37-190">此外，客户端还应将令牌值视为不透明，因为令牌格式今后可能会更改，而不另行通知。</span><span class="sxs-lookup"><span data-stu-id="bff37-190">Also, the client should treat the token value as opaque since the token format may change in the future, without notice.</span></span>
+    > <span data-ttu-id="cdf16-188">**重要说明：** 由于 `validationToken` 是查询参数，因此客户端必须根据 HTTP 编码做法正确解码它。</span><span class="sxs-lookup"><span data-stu-id="cdf16-188">**Important:** Since the `validationToken` is a query parameter it must be properly decoded by the client, as per HTTP coding practices.</span></span> <span data-ttu-id="cdf16-189">如果客户端没有解码令牌，而是在下一步（响应）中使用已编码值，那么验证将会失败。</span><span class="sxs-lookup"><span data-stu-id="cdf16-189">If the client does not decode the token, and instead uses the encoded value in the next step (response), validation will fail.</span></span> <span data-ttu-id="cdf16-190">此外，客户端还应将令牌值视为不透明，因为令牌格式今后可能会更改，而不另行通知。</span><span class="sxs-lookup"><span data-stu-id="cdf16-190">Also, the client should treat the token value as opaque since the token format may change in the future, without notice.</span></span>
 
-1. <span data-ttu-id="bff37-191">客户端必须在 10 秒内提供具有以下特性的响应：</span><span class="sxs-lookup"><span data-stu-id="bff37-191">The client must provide a response with the following characteristics within 10 seconds:</span></span>
+1. <span data-ttu-id="cdf16-191">客户端必须在 10 秒内提供具有以下特性的响应：</span><span class="sxs-lookup"><span data-stu-id="cdf16-191">The client must provide a response with the following characteristics within 10 seconds:</span></span>
 
-    - <span data-ttu-id="bff37-192">200 (OK) 状态代码。</span><span class="sxs-lookup"><span data-stu-id="bff37-192">A 200 (OK) status code.</span></span>
-    - <span data-ttu-id="bff37-193">内容类型必须是 `text/plain`。</span><span class="sxs-lookup"><span data-stu-id="bff37-193">The content type must be `text/plain`.</span></span>
-    - <span data-ttu-id="bff37-194">正文必须包括 Microsoft Graph 提供的验证令牌。</span><span class="sxs-lookup"><span data-stu-id="bff37-194">The body must include the validation token provided by Microsoft Graph.</span></span>
+    - <span data-ttu-id="cdf16-192">200 (OK) 状态代码。</span><span class="sxs-lookup"><span data-stu-id="cdf16-192">A 200 (OK) status code.</span></span>
+    - <span data-ttu-id="cdf16-193">内容类型必须是 `text/plain`。</span><span class="sxs-lookup"><span data-stu-id="cdf16-193">The content type must be `text/plain`.</span></span>
+    - <span data-ttu-id="cdf16-194">正文必须包括 Microsoft Graph 提供的验证令牌。</span><span class="sxs-lookup"><span data-stu-id="cdf16-194">The body must include the validation token provided by Microsoft Graph.</span></span>
 
-<span data-ttu-id="bff37-195">在响应中提供验证令牌之后，客户端应放弃验证令牌。</span><span class="sxs-lookup"><span data-stu-id="bff37-195">The client should discard the validation token after providing it in the response.</span></span>
+<span data-ttu-id="cdf16-195">在响应中提供验证令牌之后，客户端应放弃验证令牌。</span><span class="sxs-lookup"><span data-stu-id="cdf16-195">The client should discard the validation token after providing it in the response.</span></span>
 
-<span data-ttu-id="bff37-196">另外，可以使用 [Microsoft Graph Postman Collection](use-postman.md) 来确认终结点能否正确实现验证请求。</span><span class="sxs-lookup"><span data-stu-id="bff37-196">Additionally, you can use the [Microsoft Graph Postman collection](use-postman.md) to confirm that your endpoint properly implements the validation request.</span></span> <span data-ttu-id="bff37-197">“杂项”\*\*\*\* 文件夹中的“订阅验证”\*\*\*\* 请求提供了单元测试，可验证终结点提供的响应。</span><span class="sxs-lookup"><span data-stu-id="bff37-197">The **Subscription Validation** request in the **Misc** folder provides unit tests that validate the response provided by your endpoint.</span></span>  
+<span data-ttu-id="cdf16-196">另外，可以使用 [Microsoft Graph Postman Collection](use-postman.md) 来确认终结点能否正确实现验证请求。</span><span class="sxs-lookup"><span data-stu-id="cdf16-196">Additionally, you can use the [Microsoft Graph Postman collection](use-postman.md) to confirm that your endpoint properly implements the validation request.</span></span> <span data-ttu-id="cdf16-197">“杂项”\*\*\*\* 文件夹中的“订阅验证”\*\*\*\* 请求提供了单元测试，可验证终结点提供的响应。</span><span class="sxs-lookup"><span data-stu-id="cdf16-197">The **Subscription Validation** request in the **Misc** folder provides unit tests that validate the response provided by your endpoint.</span></span>  
 
 ![验证响应测试结果](images/change-notifications/validation-request-tests-results.png)
 
-### <a name="renewing-a-subscription"></a><span data-ttu-id="bff37-199">续订订阅</span><span class="sxs-lookup"><span data-stu-id="bff37-199">Renewing a subscription</span></span>
+### <a name="renewing-a-subscription"></a><span data-ttu-id="cdf16-199">续订订阅</span><span class="sxs-lookup"><span data-stu-id="cdf16-199">Renewing a subscription</span></span>
 
-<span data-ttu-id="bff37-200">客户端可以续订特定过期日期的订阅，自请求时间起长达三天。</span><span class="sxs-lookup"><span data-stu-id="bff37-200">The client can renew a subscription with a specific expiration date of up to three days from the time of request.</span></span> <span data-ttu-id="bff37-201">`expirationDateTime` 属性是必需的。</span><span class="sxs-lookup"><span data-stu-id="bff37-201">The `expirationDateTime` property is required.</span></span>
+<span data-ttu-id="cdf16-200">客户端可以续订特定过期日期的订阅，自请求时间起长达三天。</span><span class="sxs-lookup"><span data-stu-id="cdf16-200">The client can renew a subscription with a specific expiration date of up to three days from the time of request.</span></span> <span data-ttu-id="cdf16-201">`expirationDateTime` 属性是必需的。</span><span class="sxs-lookup"><span data-stu-id="cdf16-201">The `expirationDateTime` property is required.</span></span>
 
-#### <a name="subscription-renewal-example"></a><span data-ttu-id="bff37-202">订阅续订示例</span><span class="sxs-lookup"><span data-stu-id="bff37-202">Subscription renewal example</span></span>
+#### <a name="subscription-renewal-example"></a><span data-ttu-id="cdf16-202">订阅续订示例</span><span class="sxs-lookup"><span data-stu-id="cdf16-202">Subscription renewal example</span></span>
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/subscriptions/{id}
@@ -177,29 +177,30 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="bff37-203">如果成功，Microsoft Graph 将在正文中返回 `200 OK` 代码和 [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) 对象。</span><span class="sxs-lookup"><span data-stu-id="bff37-203">If successful, Microsoft Graph returns a `200 OK` code and a [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) object in the body.</span></span> <span data-ttu-id="bff37-204">subscription 对象包括新的 `expirationDateTime` 值。</span><span class="sxs-lookup"><span data-stu-id="bff37-204">The subscription object includes the new `expirationDateTime` value.</span></span>
+<span data-ttu-id="cdf16-203">如果成功，Microsoft Graph 将在正文中返回 `200 OK` 代码和 [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) 对象。</span><span class="sxs-lookup"><span data-stu-id="cdf16-203">If successful, Microsoft Graph returns a `200 OK` code and a [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) object in the body.</span></span> <span data-ttu-id="cdf16-204">subscription 对象包括新的 `expirationDateTime` 值。</span><span class="sxs-lookup"><span data-stu-id="cdf16-204">The subscription object includes the new `expirationDateTime` value.</span></span>
 
-### <a name="deleting-a-subscription"></a><span data-ttu-id="bff37-205">删除订阅</span><span class="sxs-lookup"><span data-stu-id="bff37-205">Deleting a subscription</span></span>
+### <a name="deleting-a-subscription"></a><span data-ttu-id="cdf16-205">删除订阅</span><span class="sxs-lookup"><span data-stu-id="cdf16-205">Deleting a subscription</span></span>
 
-<span data-ttu-id="bff37-206">客户端可以通过使用其 ID 删除订阅来停止接收更改通知。</span><span class="sxs-lookup"><span data-stu-id="bff37-206">The client can stop receiving change notifications by deleting the subscription using its ID.</span></span>
+<span data-ttu-id="cdf16-206">客户端可以通过使用其 ID 删除订阅来停止接收更改通知。</span><span class="sxs-lookup"><span data-stu-id="cdf16-206">The client can stop receiving change notifications by deleting the subscription using its ID.</span></span>
 
 ```http
 DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 ```
 
-<span data-ttu-id="bff37-207">如果成功，Microsoft Graph 将返回 `204 No Content` 代码。</span><span class="sxs-lookup"><span data-stu-id="bff37-207">If successful, Microsoft Graph returns a `204 No Content` code.</span></span>
+<span data-ttu-id="cdf16-207">如果成功，Microsoft Graph 将返回 `204 No Content` 代码。</span><span class="sxs-lookup"><span data-stu-id="cdf16-207">If successful, Microsoft Graph returns a `204 No Content` code.</span></span>
 
-## <a name="change-notifications"></a><span data-ttu-id="bff37-208">更改通知</span><span class="sxs-lookup"><span data-stu-id="bff37-208">Change notifications</span></span>
+## <a name="change-notifications"></a><span data-ttu-id="cdf16-208">更改通知</span><span class="sxs-lookup"><span data-stu-id="cdf16-208">Change notifications</span></span>
 
-<span data-ttu-id="bff37-209">客户端在创建订阅后开始接收更改通知。</span><span class="sxs-lookup"><span data-stu-id="bff37-209">The client starts receiving change notifications after creating the subscription.</span></span> <span data-ttu-id="bff37-210">资源发生更改时，Microsoft Graph 将 POST 请求发送到通知 URL。</span><span class="sxs-lookup"><span data-stu-id="bff37-210">Microsoft Graph sends a POST request to the notification URL when the resource changes.</span></span> <span data-ttu-id="bff37-211">仅为订阅中指定类型的更改发送更改通知，例如 `created` 。</span><span class="sxs-lookup"><span data-stu-id="bff37-211">Change notifications are sent only for the changes of the type specified in the subscription, for example, `created`.</span></span>
+<span data-ttu-id="cdf16-209">通过客户端订阅对资源的更改，Microsoft Graph 会在 `POST` 资源发生更改时向通知 URL 发送请求。</span><span class="sxs-lookup"><span data-stu-id="cdf16-209">With a client subscribing to changes to a resource, Microsoft Graph sends a `POST` request to the notification URL whenever the resource changes.</span></span> <span data-ttu-id="cdf16-210">仅发送订阅中指定类型的更改通知，例如 `created` 。</span><span class="sxs-lookup"><span data-stu-id="cdf16-210">It sends notifications only for changes of the type that's specified in the subscription, for example, `created`.</span></span>
 
-> <span data-ttu-id="bff37-212">**注意：** 如果使用多个订阅来监视相同的资源类型并使用相同的通知 URL，则可以发送包含不同订阅 Id 的多个更改通知的帖子。</span><span class="sxs-lookup"><span data-stu-id="bff37-212">**Note:** When using multiple subscriptions that monitor the same resource type and use the same notification URL, a POST can be sent that will contain multiple change notifications with different subscription IDs.</span></span> <span data-ttu-id="bff37-213">无法保证帖子中的所有更改通知都属于单个订阅。</span><span class="sxs-lookup"><span data-stu-id="bff37-213">There is no guarantee that all change notifications in the POST will belong to a single subscription.</span></span>
+> <span data-ttu-id="cdf16-211">**注意：** 如果客户端具有多个订阅，用于监视同一资源并使用相同的通知 URL，则 Microsoft Graph 可以发送与不同订阅相对应的多个更改通知，每个订阅都显示相应的订阅 ID。</span><span class="sxs-lookup"><span data-stu-id="cdf16-211">**Note:** If a client has multiple subscriptions that monitor the same resource and use the same notification URL, Microsoft Graph can send multiple change notifications that correspond to different subscriptions, each showing the corresponding subscription ID.</span></span> <span data-ttu-id="cdf16-212">无法保证请求中的所有更改通知都 `POST` 属于单个订阅。</span><span class="sxs-lookup"><span data-stu-id="cdf16-212">There is no guarantee that all change notifications in the `POST` request belong to a single subscription.</span></span>
 
-### <a name="change-notification-example"></a><span data-ttu-id="bff37-214">更改通知示例</span><span class="sxs-lookup"><span data-stu-id="bff37-214">Change notification example</span></span>
+### <a name="change-notification-example"></a><span data-ttu-id="cdf16-213">更改通知示例</span><span class="sxs-lookup"><span data-stu-id="cdf16-213">Change notification example</span></span>
 
-> <span data-ttu-id="bff37-215">**注意：** 有关在传递更改通知时发送的数据的完整说明，请参阅[changeNotificationCollection](/graph/api/resources/changenotificationcollection)。</span><span class="sxs-lookup"><span data-stu-id="bff37-215">**Note:** for a full description of the data sent when change notifications are delivered, see [changeNotificationCollection](/graph/api/resources/changenotificationcollection).</span></span>
+<span data-ttu-id="cdf16-214">此部分显示邮件创建通知的示例。</span><span class="sxs-lookup"><span data-stu-id="cdf16-214">This section shows an example of a notification for a message creation.</span></span> <span data-ttu-id="cdf16-215">当用户收到电子邮件时，Microsoft Graph 将发送更改通知，如以下示例中所示。</span><span class="sxs-lookup"><span data-stu-id="cdf16-215">When the user receives an email, Microsoft Graph sends a change notification as shown in the following example.</span></span>
+<span data-ttu-id="cdf16-216">请注意，通知位于字段中所示的集合中 `value` 。</span><span class="sxs-lookup"><span data-stu-id="cdf16-216">Note that the notification is in a collection represented in the `value` field.</span></span> <span data-ttu-id="cdf16-217">有关通知负载的详细信息，请参阅[changeNotificationCollection](/graph/api/resources/changenotificationcollection) 。</span><span class="sxs-lookup"><span data-stu-id="cdf16-217">See [changeNotificationCollection](/graph/api/resources/changenotificationcollection) for details of the notification payload.</span></span> 
 
-<span data-ttu-id="bff37-216">当用户收到电子邮件时，Microsoft Graph 将发送一条更改通知，如下所示：</span><span class="sxs-lookup"><span data-stu-id="bff37-216">When the user receives an email, Microsoft Graph sends a change notification like the following:</span></span>
+<span data-ttu-id="cdf16-218">当发生许多更改时，Microsoft Graph 可能会发送多个与同一请求中的不同订阅对应的通知 `POST` 。</span><span class="sxs-lookup"><span data-stu-id="cdf16-218">When many changes occur, Microsoft Graph may send multiple notifications that correspond to different subscriptions in the same `POST` request.</span></span>
 
 ```json
 {
@@ -207,64 +208,64 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
     {
       "id": "lsgTZMr9KwAAA",
       "sequenceNumber": 10,
-      "subscriptionId":"<subscription_guid>",
+      "subscriptionId":"{subscription_guid}",
       "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
       "clientState":"secretClientValue",
       "changeType":"created",
-      "resource":"users/{user_guid}@<tenant_guid>/messages/{long_id_string}",
+      "resource":"users/{user_guid}@{tenant_guid}/messages/{long_id_string}",
       "tenantId": "84bd8158-6d4d-4958-8b9f-9d6445542f95",
       "resourceData":
       {
         "@odata.type":"#Microsoft.Graph.Message",
-        "@odata.id":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
+        "@odata.id":"Users/{user_guid}@{tenant_guid}/Messages/{long_id_string}",
         "@odata.etag":"W/\"CQAAABYAAADkrWGo7bouTKlsgTZMr9KwAAAUWRHf\"",
-        "id":"<long_id_string>"
+        "id":"{long_id_string}"
       }
     }
   ]
 }
 ```
 
-> <span data-ttu-id="bff37-217">**注意：** 该 `value` 字段是一个对象数组。</span><span class="sxs-lookup"><span data-stu-id="bff37-217">**Note:** the `value` field is an array of objects.</span></span> <span data-ttu-id="bff37-218">当多个更改通知被排入队列时，Microsoft Graph 可能会在一个请求中发送多个项目。</span><span class="sxs-lookup"><span data-stu-id="bff37-218">When many change notifications are queued, Microsoft Graph might send multiple items in a single request.</span></span> <span data-ttu-id="bff37-219">来自不同订阅的更改通知可以包含在同一个请求中。</span><span class="sxs-lookup"><span data-stu-id="bff37-219">Change notifications from different subscriptions can be included in the same request.</span></span>
+### <a name="processing-the-change-notification"></a><span data-ttu-id="cdf16-219">处理更改通知</span><span class="sxs-lookup"><span data-stu-id="cdf16-219">Processing the change notification</span></span>
 
-### <a name="processing-the-change-notification"></a><span data-ttu-id="bff37-220">处理更改通知</span><span class="sxs-lookup"><span data-stu-id="bff37-220">Processing the change notification</span></span>
+<span data-ttu-id="cdf16-220">您的过程应处理收到的每个更改通知。</span><span class="sxs-lookup"><span data-stu-id="cdf16-220">Your process should process every change notification it receives.</span></span> <span data-ttu-id="cdf16-221">以下是您的应用程序处理更改通知时必须执行的最低任务：</span><span class="sxs-lookup"><span data-stu-id="cdf16-221">The following are the minimum tasks that your app must perform to process a change notification:</span></span>
 
-<span data-ttu-id="bff37-221">应处理应用程序收到的每个更改通知。</span><span class="sxs-lookup"><span data-stu-id="bff37-221">Each change notification received by your app should be processed.</span></span> <span data-ttu-id="bff37-222">以下是您的应用程序处理更改通知时必须执行的最低任务：</span><span class="sxs-lookup"><span data-stu-id="bff37-222">The following are the minimum tasks that your app must perform to process a change notification:</span></span>
+1. <span data-ttu-id="cdf16-222">将响应中的 `202 - Accepted` 状态代码发送到 Microsoft Graph。</span><span class="sxs-lookup"><span data-stu-id="cdf16-222">Send a `202 - Accepted` status code in your response to Microsoft Graph.</span></span> <span data-ttu-id="cdf16-223">如果 Microsoft Graph 没有收到2xx 类代码，它会在大约4小时的一段时间内尝试发布更改通知一段时间。之后，更改通知将被丢弃，并且不会被传递。</span><span class="sxs-lookup"><span data-stu-id="cdf16-223">If Microsoft Graph doesn't receive a 2xx class code, it will try to publishing the change notification a number of times, for a period of about 4 hours; after that, the change notification will be dropped and won't be delivered.</span></span>
 
-1. <span data-ttu-id="bff37-223">将响应中的 `202 - Accepted` 状态代码发送到 Microsoft Graph。</span><span class="sxs-lookup"><span data-stu-id="bff37-223">Send a `202 - Accepted` status code in your response to Microsoft Graph.</span></span> <span data-ttu-id="bff37-224">如果 Microsoft Graph 没有收到2xx 类代码，它会在大约4小时的一段时间内尝试发布更改通知一段时间。之后，更改通知将被丢弃，并且不会被传递。</span><span class="sxs-lookup"><span data-stu-id="bff37-224">If Microsoft Graph doesn't receive a 2xx class code, it will try to publishing the change notification a number of times, for a period of about 4 hours; after that, the change notification will be dropped and won't be delivered.</span></span>
+    > <span data-ttu-id="cdf16-224">**注意：**`202 - Accepted`收到更改通知后立即发送状态代码，即使在验证其真实性之前也是如此。</span><span class="sxs-lookup"><span data-stu-id="cdf16-224">**Note:** Send a `202 - Accepted` status code as soon as you receive the change notification, even before validating its authenticity.</span></span> <span data-ttu-id="cdf16-225">您只需确认收到更改通知并防止不必要的重试。</span><span class="sxs-lookup"><span data-stu-id="cdf16-225">You are simply acknowledging the receipt of the change notification and preventing unnecessary retries.</span></span> <span data-ttu-id="cdf16-226">当前超时是 30 秒，但将来可能会减少，以优化服务性能。</span><span class="sxs-lookup"><span data-stu-id="cdf16-226">The current timeout is 30 seconds, but it might be reduced in the future to optimize service performance.</span></span>
 
-    > <span data-ttu-id="bff37-225">**注意：**`202 - Accepted`收到更改通知后立即发送状态代码，即使在验证其真实性之前也是如此。</span><span class="sxs-lookup"><span data-stu-id="bff37-225">**Note:** Send a `202 - Accepted` status code as soon as you receive the change notification, even before validating its authenticity.</span></span> <span data-ttu-id="bff37-226">您只需确认收到更改通知并防止不必要的重试。</span><span class="sxs-lookup"><span data-stu-id="bff37-226">You are simply acknowledging the receipt of the change notification and preventing unnecessary retries.</span></span> <span data-ttu-id="bff37-227">当前超时是 30 秒，但将来可能会减少，以优化服务性能。</span><span class="sxs-lookup"><span data-stu-id="bff37-227">The current timeout is 30 seconds, but it might be reduced in the future to optimize service performance.</span></span>
+1. <span data-ttu-id="cdf16-227">验证 `clientState` 属性。</span><span class="sxs-lookup"><span data-stu-id="cdf16-227">Validate the `clientState` property.</span></span> <span data-ttu-id="cdf16-228">它必须与最初使用订阅创建请求提交的值匹配。</span><span class="sxs-lookup"><span data-stu-id="cdf16-228">It must match the value originally submitted with the subscription creation request.</span></span>
 
-1. <span data-ttu-id="bff37-228">验证 `clientState` 属性。</span><span class="sxs-lookup"><span data-stu-id="bff37-228">Validate the `clientState` property.</span></span> <span data-ttu-id="bff37-229">它必须与最初使用订阅创建请求提交的值匹配。</span><span class="sxs-lookup"><span data-stu-id="bff37-229">It must match the value originally submitted with the subscription creation request.</span></span>
+    > <span data-ttu-id="cdf16-229">**注意：** 如果不满足此条件，则不应将其视为有效的更改通知。</span><span class="sxs-lookup"><span data-stu-id="cdf16-229">**Note:** If this isn't true, you should not consider this a valid change notification.</span></span> <span data-ttu-id="cdf16-230">更改通知可能不是来自 Microsoft Graph，可能是由恶意参与者发送的。</span><span class="sxs-lookup"><span data-stu-id="cdf16-230">It is possible that the change notification has not originated from Microsoft Graph and may have been sent by a rogue actor.</span></span> <span data-ttu-id="cdf16-231">您还应调查更改通知的来源，并采取相应的措施。</span><span class="sxs-lookup"><span data-stu-id="cdf16-231">You should also investigate where the change notification comes from and take appropriate action.</span></span>
 
-    > <span data-ttu-id="bff37-230">**注意：** 如果不满足此条件，则不应将其视为有效的更改通知。</span><span class="sxs-lookup"><span data-stu-id="bff37-230">**Note:** If this isn't true, you should not consider this a valid change notification.</span></span> <span data-ttu-id="bff37-231">更改通知可能不是来自 Microsoft Graph，可能是由恶意参与者发送的。</span><span class="sxs-lookup"><span data-stu-id="bff37-231">It is possible that the change notification has not originated from Microsoft Graph and may have been sent by a rogue actor.</span></span> <span data-ttu-id="bff37-232">您还应调查更改通知的来源，并采取相应的措施。</span><span class="sxs-lookup"><span data-stu-id="bff37-232">You should also investigate where the change notification comes from and take appropriate action.</span></span>
+1. <span data-ttu-id="cdf16-232">基于业务逻辑更新应用程序。</span><span class="sxs-lookup"><span data-stu-id="cdf16-232">Update your application based on your business logic.</span></span>
 
-1. <span data-ttu-id="bff37-233">基于业务逻辑更新应用程序。</span><span class="sxs-lookup"><span data-stu-id="bff37-233">Update your application based on your business logic.</span></span>
+<span data-ttu-id="cdf16-233">对请求中的其他更改通知重复此操作。</span><span class="sxs-lookup"><span data-stu-id="cdf16-233">Repeat for other change notifications in the request.</span></span>
 
-<span data-ttu-id="bff37-234">对请求中的其他更改通知重复此操作。</span><span class="sxs-lookup"><span data-stu-id="bff37-234">Repeat for other change notifications in the request.</span></span>
+## <a name="code-samples"></a><span data-ttu-id="cdf16-234">代码示例</span><span class="sxs-lookup"><span data-stu-id="cdf16-234">Code samples</span></span>
 
-## <a name="code-samples"></a><span data-ttu-id="bff37-235">代码示例</span><span class="sxs-lookup"><span data-stu-id="bff37-235">Code samples</span></span>
+<span data-ttu-id="cdf16-235">可在 GitHub 上获取以下代码示例。</span><span class="sxs-lookup"><span data-stu-id="cdf16-235">The following code samples are available on GitHub.</span></span>
 
-<span data-ttu-id="bff37-236">可在 GitHub 上获取以下代码示例。</span><span class="sxs-lookup"><span data-stu-id="bff37-236">The following code samples are available on GitHub.</span></span>
+- [<span data-ttu-id="cdf16-236">Microsoft Graph 培训模块 - 在 Microsoft Graph 中使用变更通知和变更跟踪</span><span class="sxs-lookup"><span data-stu-id="cdf16-236">Microsoft Graph Training Module - Using Change Notifications and Track Changes with Microsoft Graph</span></span>](https://github.com/microsoftgraph/msgraph-training-changenotifications)
+- [<span data-ttu-id="cdf16-237">面向 Node.js 的 Microsoft Graph Webhooks 示例</span><span class="sxs-lookup"><span data-stu-id="cdf16-237">Microsoft Graph Webhooks Sample for Node.js</span></span>](https://github.com/microsoftgraph/nodejs-webhooks-rest-sample)
+- [<span data-ttu-id="cdf16-238">适用于 ASP.NET Core 的 Microsoft Graph Webhook 示例</span><span class="sxs-lookup"><span data-stu-id="cdf16-238">Microsoft Graph Webhooks Sample for ASP.NET Core</span></span>](https://github.com/microsoftgraph/aspnetcore-webhooks-sample)
+- [<span data-ttu-id="cdf16-239">面向 Java Spring 的 Microsoft Graph Webhooks 示例</span><span class="sxs-lookup"><span data-stu-id="cdf16-239">Microsoft Graph Webhooks Sample for Java Spring</span></span>](https://github.com/microsoftgraph/java-spring-webhooks-sample)
 
-- [<span data-ttu-id="bff37-237">Microsoft Graph 培训模块 - 在 Microsoft Graph 中使用变更通知和变更跟踪</span><span class="sxs-lookup"><span data-stu-id="bff37-237">Microsoft Graph Training Module - Using Change Notifications and Track Changes with Microsoft Graph</span></span>](https://github.com/microsoftgraph/msgraph-training-changenotifications)
-- [<span data-ttu-id="bff37-238">面向 Node.js 的 Microsoft Graph Webhooks 示例</span><span class="sxs-lookup"><span data-stu-id="bff37-238">Microsoft Graph Webhooks Sample for Node.js</span></span>](https://github.com/microsoftgraph/nodejs-webhooks-rest-sample)
-- [<span data-ttu-id="bff37-239">适用于 ASP.NET Core 的 Microsoft Graph Webhook 示例</span><span class="sxs-lookup"><span data-stu-id="bff37-239">Microsoft Graph Webhooks Sample for ASP.NET Core</span></span>](https://github.com/microsoftgraph/aspnetcore-webhooks-sample)
-- [<span data-ttu-id="bff37-240">面向 Java Spring 的 Microsoft Graph Webhooks 示例</span><span class="sxs-lookup"><span data-stu-id="bff37-240">Microsoft Graph Webhooks Sample for Java Spring</span></span>](https://github.com/microsoftgraph/java-spring-webhooks-sample)
+## <a name="firewall-configuration"></a><span data-ttu-id="cdf16-240">防火墙配置</span><span class="sxs-lookup"><span data-stu-id="cdf16-240">Firewall configuration</span></span>
 
-## <a name="firewall-configuration"></a><span data-ttu-id="bff37-241">防火墙配置</span><span class="sxs-lookup"><span data-stu-id="bff37-241">Firewall configuration</span></span>
+<span data-ttu-id="cdf16-241">可选择性地配置防火墙，以保护通知 URL，仅允许来自 Microsoft Graph 的入站连接。</span><span class="sxs-lookup"><span data-stu-id="cdf16-241">You can optionally configure the firewall that protects your notification URL to allow inbound connections only from Microsoft Graph.</span></span> <span data-ttu-id="cdf16-242">这使您可以减少发送到通知 URL 的无效更改通知的暴露风险。</span><span class="sxs-lookup"><span data-stu-id="cdf16-242">This allows you to reduce further exposure to invalid change notifications that are sent to your notification URL.</span></span> <span data-ttu-id="cdf16-243">这些无效的更改通知可尝试触发您实现的自定义逻辑。</span><span class="sxs-lookup"><span data-stu-id="cdf16-243">These invalid change notifications can be trying to trigger the custom logic that you implemented.</span></span> <span data-ttu-id="cdf16-244">有关 Microsoft Graph 用于传递更改通知的 IP 地址的完整列表，请参阅 [Office 365 的其他终结点](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls)。</span><span class="sxs-lookup"><span data-stu-id="cdf16-244">For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Office 365](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls).</span></span>
 
-<span data-ttu-id="bff37-242">可选择性地配置防火墙，以保护通知 URL，仅允许来自 Microsoft Graph 的入站连接。</span><span class="sxs-lookup"><span data-stu-id="bff37-242">You can optionally configure the firewall that protects your notification URL to allow inbound connections only from Microsoft Graph.</span></span> <span data-ttu-id="bff37-243">这使您可以减少发送到通知 URL 的无效更改通知的暴露风险。</span><span class="sxs-lookup"><span data-stu-id="bff37-243">This allows you to reduce further exposure to invalid change notifications that are sent to your notification URL.</span></span> <span data-ttu-id="bff37-244">这些无效的更改通知可尝试触发您实现的自定义逻辑。</span><span class="sxs-lookup"><span data-stu-id="bff37-244">These invalid change notifications can be trying to trigger the custom logic that you implemented.</span></span> <span data-ttu-id="bff37-245">有关 Microsoft Graph 用于传递更改通知的 IP 地址的完整列表，请参阅 [Office 365 的其他终结点](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls)。</span><span class="sxs-lookup"><span data-stu-id="bff37-245">For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Office 365](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls).</span></span>
+> <span data-ttu-id="cdf16-245">**注意：** 用于传递更改通知的已列出 IP 地址可以随时更新，恕不另行通知。</span><span class="sxs-lookup"><span data-stu-id="cdf16-245">**Note:** The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.</span></span>
 
-> <span data-ttu-id="bff37-246">**注意：** 用于传递更改通知的已列出 IP 地址可以随时更新，恕不另行通知。</span><span class="sxs-lookup"><span data-stu-id="bff37-246">**Note:** The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.</span></span>
+## <a name="see-also"></a><span data-ttu-id="cdf16-246">另请参阅</span><span class="sxs-lookup"><span data-stu-id="cdf16-246">See also</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="bff37-247">另请参阅</span><span class="sxs-lookup"><span data-stu-id="bff37-247">See also</span></span>
-
-- [<span data-ttu-id="bff37-248">订阅资源类型</span><span class="sxs-lookup"><span data-stu-id="bff37-248">Subscription resource type</span></span>](/graph/api/resources/subscription?view=graph-rest-1.0)
-- [<span data-ttu-id="bff37-249">获取订阅</span><span class="sxs-lookup"><span data-stu-id="bff37-249">Get subscription</span></span>](/graph/api/subscription-get?view=graph-rest-1.0)
-- [<span data-ttu-id="bff37-250">创建订阅</span><span class="sxs-lookup"><span data-stu-id="bff37-250">Create subscription</span></span>](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
-- [<span data-ttu-id="bff37-251">更改通知教程</span><span class="sxs-lookup"><span data-stu-id="bff37-251">Change notifications tutorial</span></span>](/graph/tutorials/change-notifications)
-- [<span data-ttu-id="bff37-252">生命周期通知（预览版）</span><span class="sxs-lookup"><span data-stu-id="bff37-252">Lifecycle notifications (preview)</span></span>](/graph/concepts/webhooks-outlook-authz.md)
+- [<span data-ttu-id="cdf16-247">订阅资源类型</span><span class="sxs-lookup"><span data-stu-id="cdf16-247">Subscription resource type</span></span>](/graph/api/resources/subscription?view=graph-rest-1.0)
+- [<span data-ttu-id="cdf16-248">获取订阅</span><span class="sxs-lookup"><span data-stu-id="cdf16-248">Get subscription</span></span>](/graph/api/subscription-get?view=graph-rest-1.0)
+- [<span data-ttu-id="cdf16-249">创建订阅</span><span class="sxs-lookup"><span data-stu-id="cdf16-249">Create subscription</span></span>](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
+- <span data-ttu-id="cdf16-250">[changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta)资源类型</span><span class="sxs-lookup"><span data-stu-id="cdf16-250">[changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta) resource type</span></span>
+- <span data-ttu-id="cdf16-251">[changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta)资源类型</span><span class="sxs-lookup"><span data-stu-id="cdf16-251">[changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta) resource type</span></span>
+- [<span data-ttu-id="cdf16-252">更改通知教程</span><span class="sxs-lookup"><span data-stu-id="cdf16-252">Change notifications tutorial</span></span>](/graph/tutorials/change-notifications)
+- [<span data-ttu-id="cdf16-253">生命周期通知（预览版）</span><span class="sxs-lookup"><span data-stu-id="cdf16-253">Lifecycle notifications (preview)</span></span>](/graph/concepts/webhooks-outlook-authz.md)
 
 [联系人]: /graph/api/resources/contact?view=graph-rest-1.0
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
