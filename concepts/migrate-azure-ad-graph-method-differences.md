@@ -4,12 +4,12 @@ description: 介绍 Azure Active Directory （Azure AD） Graph API 和 Microsof
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 00649e4f55a8bfcfd5354d2a75793447e3686109
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: cd9bc7ac842795d95f26ff5208f69cd3f1facb5c
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38656527"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682087"
 ---
 # <a name="method-differences-between-azure-ad-and-microsoft-graph"></a>Azure AD 和 Microsoft Graph 之间的方法差异
 
@@ -19,11 +19,11 @@ ms.locfileid: "38656527"
 
 |Azure AD Graph <br>（v. 1.6）方法 |Microsoft Graph<br>（资源/方法）|备注|
 |---|---|---|
-| getAvailableExtensionProperties | beta 版-_不可用_ <br> v1.0-不可_用_ |  |
-| getObjectsByObjectId | &nbsp;-beta&nbsp;目录/getByIds <br> v1.0-directory/getByIds | |
-| invalidateAllRefreshTokens | beta-revokeSignInSessions <br> v1.0-revokeSignInSessions | |
-| isMemberOf | beta-_未计划_ <br> v1.0-_未计划_ | 请改用 checkMemberGroups。 |
-| restore | &nbsp;-beta&nbsp;还原&nbsp;（应用程序&nbsp;、用户&nbsp;和&nbsp;组）<br> &nbsp;-1.0&nbsp;版还原&nbsp;（用户&nbsp;和&nbsp;组） | 您还可以查看已删除的应用程序、用户和组，并永久删除它们。 |
+| getAvailableExtensionProperties | beta &nbsp; - &nbsp; _不可用_ <br> v1.0 &nbsp; - &nbsp; [getAvailableExtensionProperties](/graph/api/application-getavailableextensionproperties?view=graph-rest-1.0) |  |
+| getObjectsByObjectId | beta &nbsp; - &nbsp; [directoryObjects/getByIds](/graph/api/directoryobject-getbyids?view=graph-rest-beta) <br> v1.0 1.0 &nbsp; - &nbsp; [directoryObjects/getByIds](/graph/api/directoryobject-getbyids?view=graph-rest-1.0) | |
+| invalidateAllRefreshTokens | beta &nbsp; - &nbsp; [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-beta) <br> v1.0 &nbsp; - &nbsp; [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) | |
+| isMemberOf | &nbsp; - &nbsp; _未计划_beta <br> 1.0 版 &nbsp; - &nbsp; _未计划_ | 请改用 checkMemberGroups。 |
+| restore | beta &nbsp; - &nbsp; [还原 &nbsp; （应用程序、 &nbsp; 用户 &nbsp; 和 &nbsp; 组）](/graph/api/directory-deleteditems-restore?view=graph-rest-beta)<br> 1.0 版 &nbsp; - &nbsp; [还原 &nbsp; （应用程序、 &nbsp; 用户 &nbsp; 和 &nbsp; 组）](/graph/api/directory-deleteditems-restore?view=graph-rest-1.0) | 您还可以查看已删除的应用程序、用户和组，并永久删除它们。 |
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 562eaccdd776ed22a4e171f6c0107f83be6acaab
-ms.sourcegitcommit: 43f7800894857a29f02fffaf4a50ad6386b5bf59
+ms.openlocfilehash: d3a2e12a37035f6b89499e73615441dc1514c139
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44524251"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682094"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -190,15 +190,16 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 ## <a name="change-notifications"></a>更改通知
 
-客户端在创建订阅后开始接收更改通知。 资源发生更改时，Microsoft Graph 将 POST 请求发送到通知 URL。 仅为订阅中指定类型的更改发送更改通知，例如 `created` 。
+通过客户端订阅对资源的更改，Microsoft Graph 会在 `POST` 资源发生更改时向通知 URL 发送请求。 仅发送订阅中指定类型的更改通知，例如 `created` 。
 
-> **注意：** 如果使用多个订阅来监视相同的资源类型并使用相同的通知 URL，则可以发送包含不同订阅 Id 的多个更改通知的帖子。 无法保证帖子中的所有更改通知都属于单个订阅。
+> **注意：** 如果客户端具有多个订阅，用于监视同一资源并使用相同的通知 URL，则 Microsoft Graph 可以发送与不同订阅相对应的多个更改通知，每个订阅都显示相应的订阅 ID。 无法保证请求中的所有更改通知都 `POST` 属于单个订阅。
 
 ### <a name="change-notification-example"></a>更改通知示例
 
-> **注意：** 有关在传递更改通知时发送的数据的完整说明，请参阅[changeNotificationCollection](/graph/api/resources/changenotificationcollection)。
+此部分显示邮件创建通知的示例。 当用户收到电子邮件时，Microsoft Graph 将发送更改通知，如以下示例中所示。
+请注意，通知位于字段中所示的集合中 `value` 。 有关通知负载的详细信息，请参阅[changeNotificationCollection](/graph/api/resources/changenotificationcollection) 。 
 
-当用户收到电子邮件时，Microsoft Graph 将发送一条更改通知，如下所示：
+当发生许多更改时，Microsoft Graph 可能会发送多个与同一请求中的不同订阅对应的通知 `POST` 。
 
 ```json
 {
@@ -206,29 +207,27 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
     {
       "id": "lsgTZMr9KwAAA",
       "sequenceNumber": 10,
-      "subscriptionId":"<subscription_guid>",
+      "subscriptionId":"{subscription_guid}",
       "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
       "clientState":"secretClientValue",
       "changeType":"created",
-      "resource":"users/{user_guid}@<tenant_guid>/messages/{long_id_string}",
+      "resource":"users/{user_guid}@{tenant_guid}/messages/{long_id_string}",
       "tenantId": "84bd8158-6d4d-4958-8b9f-9d6445542f95",
       "resourceData":
       {
         "@odata.type":"#Microsoft.Graph.Message",
-        "@odata.id":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
+        "@odata.id":"Users/{user_guid}@{tenant_guid}/Messages/{long_id_string}",
         "@odata.etag":"W/\"CQAAABYAAADkrWGo7bouTKlsgTZMr9KwAAAUWRHf\"",
-        "id":"<long_id_string>"
+        "id":"{long_id_string}"
       }
     }
   ]
 }
 ```
 
-> **注意：** 该 `value` 字段是一个对象数组。 当多个更改通知被排入队列时，Microsoft Graph 可能会在一个请求中发送多个项目。 来自不同订阅的更改通知可以包含在同一个请求中。
-
 ### <a name="processing-the-change-notification"></a>处理更改通知
 
-应处理应用程序收到的每个更改通知。 以下是您的应用程序处理更改通知时必须执行的最低任务：
+您的过程应处理收到的每个更改通知。 以下是您的应用程序处理更改通知时必须执行的最低任务：
 
 1. 将响应中的 `202 - Accepted` 状态代码发送到 Microsoft Graph。 如果 Microsoft Graph 没有收到2xx 类代码，它会在大约4小时的一段时间内尝试发布更改通知一段时间。之后，更改通知将被丢弃，并且不会被传递。
 
@@ -262,6 +261,8 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 - [订阅资源类型](/graph/api/resources/subscription?view=graph-rest-1.0)
 - [获取订阅](/graph/api/subscription-get?view=graph-rest-1.0)
 - [创建订阅](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
+- [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta)资源类型
+- [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta)资源类型
 - [更改通知教程](/graph/tutorials/change-notifications)
 - [生命周期通知（预览版）](/graph/concepts/webhooks-outlook-authz.md)
 

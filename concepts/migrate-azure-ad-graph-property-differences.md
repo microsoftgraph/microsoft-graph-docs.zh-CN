@@ -4,12 +4,12 @@ description: 介绍了 Azure AD Graph 资源（实体）与 Microsoft Graph 之�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 401d6391f68a756d9d5ac7a2176b8ff9d5c7b7eb
-ms.sourcegitcommit: 53a57f19a5b16029b540e61ddfba6c2b4e45cfc5
+ms.openlocfilehash: f1a5410ae1b9ab742e2735ceaefe82b139c83df6
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "44593637"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44681905"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Azure AD Graph 与 Microsoft Graph 之间的属性差异
 
@@ -37,7 +37,7 @@ ms.locfileid: "44593637"
 | **lastDirSyncDateTime** | beta &nbsp; - &nbsp; **onPremisesLastSyncDateTime** <br> v1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** | |
 | **mobile** | beta &nbsp; - &nbsp; **mobilePhone** <br> v1.0 &nbsp; - &nbsp; **mobilePhone** | |
 | **provisioningErrors** | beta &nbsp; - &nbsp; _不可用_ <br> v1.0 1.0 &nbsp; - &nbsp; _不可用_ | 此属性及其信息已被弃用。  但是，可以在**onPremisesProvisioningErrors**中找到描述任何 AD Connect 相关设置错误的新属性。 |
-| **refreshTokensValidFromDateTime** | beta &nbsp; - &nbsp; **signinSessionsValidFromDateTime**<br>v1.0 &nbsp; - &nbsp; _尚不可用_ | |
+| **refreshTokensValidFromDateTime** | beta &nbsp; - &nbsp; **signinSessionsValidFromDateTime**<br>v1.0 &nbsp; - &nbsp; **signinSessionsValidFromDateTime** | |
 | **signinNames** | beta &nbsp; - &nbsp; **标识/signInType** <br> 1.0 版 &nbsp; - &nbsp; **标识/signInType** | 此属性现在是[objectIdentity](/graph/api/resources/objectIdentity?view=graph-rest-1.0)资源的一部分。|
 | **telephoneNumber** | beta &nbsp; - &nbsp; **businessPhones** <br> v1.0 &nbsp; - &nbsp; **businessPhones** | |
 | **thumbnailPhoto** | beta &nbsp; - &nbsp; **照片**、照片 <br> v1.0 &nbsp; - &nbsp; **照片**，照片 | Azure AD 缩略图照片在 Microsoft Graph 中不可用。  改为使用[照片 API](/graph/api/resources/profilephoto?view=graph-rest-1.0) 。 |
@@ -146,8 +146,8 @@ Azure AD Graph directoryObjectReference 资源已重命名为 Microsoft Graph �
 
 |Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
-| **expiryTime** | beta &nbsp; - &nbsp; **expiryTime** <br> v1.0 &nbsp; - &nbsp; _ &nbsp; 尚 &nbsp; 不可用_ | 此属性不使用，并且可能会在 Microsoft Graph 中被删除。 |
-| **startTime** | beta 版 &nbsp; - &nbsp; **startTime** <br> v1.0 &nbsp; - &nbsp; _ &nbsp; 尚 &nbsp; 不可用_  | 此属性不使用，并且可能会在 Microsoft Graph 中被删除。 |
+| **expiryTime** | beta &nbsp; - &nbsp; **expiryTime** <br> 1.0 版 &nbsp; - &nbsp; _已删除_ | 此属性不使用，在 Microsoft Graph v1.0 中将被删除。 |
+| **startTime** | beta 版 &nbsp; - &nbsp; **startTime** <br> 1.0 版 &nbsp; - &nbsp; _已删除_  | 此属性不使用，在 Microsoft Graph v1.0 中将被删除。 |
 
 ## <a name="policy-property-differences"></a>策略属性差异
 

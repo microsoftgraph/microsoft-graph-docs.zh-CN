@@ -3,12 +3,12 @@ title: 在 Microsoft Graph 中选择 API 以创建和加入联机会议
 description: 你可以灵活地创建将来或即时使用的会议
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 77749b7478df669c573c1d4b3a06ec1a6f1e3d42
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 4d446340ff1316bdb8b760920742bc3997c6d64a
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353138"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44681919"
 ---
 # <a name="choose-an-api-in-microsoft-graph-to-create-and-join-online-meetings"></a>在 Microsoft Graph 中选择 API 以创建和加入联机会议
 
@@ -37,7 +37,7 @@ Microsoft Graph 提供了两个在 Microsoft 团队或 Skype 上安排和加入�
 选择云通信 API 以获得灵活性和更广泛的编程支持：
 - 应用程序具有更大的灵活性，可进一步将 API 结果与业务线和其他应用集成。 API 与任何特定日历保持独立，不会在任何日历中创建事件。
 - 应用可以为与会者提供以下功能：
-  - 基于区域设置的联接信息（预览）。
+  - 基于区域设置的联接信息。
   - 通过 Internet 或拨入方式加入会议。
   - 视频-会议。
   - 其他安全功能，如会议厅和自动参与者许可（预览）。
@@ -51,9 +51,9 @@ Microsoft Graph 提供了两个在 Microsoft 团队或 Skype 上安排和加入�
 | 联机会议功能 | 日历 API （事件资源） | 云通信 API （onlineMeeting 资源）             |
 |:-----------------------|:------------------------------|:-------------------------------------------------------------|
 | 主要 API 成员 | [事件](/graph/api/resources/event)资源： <br>- **isOnlineMeeting**属性 <br>- [onlineMeetingInfo](/graph/api/resources/onlinemeetinginfo)类型的**onlineMeeting**属性 <br>- **onlineMeetingProvider**属性 <br> [日历](/graph/api/resources/calendar)资源： <br>- **allowedOnlineMeetingProviders**属性 <br>- **defaultOnlineMeetingProvider**属性 <br> | [onlineMeeting](/graph/api/resources/onlinemeeting)资源 <br> [audioConferencing](/graph/api/resources/audioconferencing)资源
-| 与日历项目的集成 | <br>- [Create](/graph/api/user-post-events) or [update](/graph/api/event-update) **event** API 自动将最终的 Outlook 日历[事件](/graph/api/resources/event)设置为联机会议。<br>-使用返回的 Outlook 日历**事件**的**isOnlineMeeting**、 **onlineMeeting**和**onlineMeetingProvider**属性。  | - [创建](/graph/api/application-post-onlinemeetings)API 返回独立于特定日历类型的[onlineMeeting](/graph/api/resources/onlinemeeting)资源。 <br>-不会创建或更新任何 Outlook 事件。 <br>-将返回的**onlineMeeting**资源信息集成到适用于您的方案的应用程序体验中。 <br>-在预览中可用： [createOrGet](/graph/api/onlinemeeting-createorget?view=graph-rest-beta)联机会议，并使用返回的**externalId**属性简化在第三方日历中嵌入结果会议。 |
+| 与日历项目的集成 | <br>- [Create](/graph/api/user-post-events) or [update](/graph/api/event-update) **event** API 自动将最终的 Outlook 日历[事件](/graph/api/resources/event)设置为联机会议。<br>-使用返回的 Outlook 日历**事件**的**isOnlineMeeting**、 **onlineMeeting**和**onlineMeetingProvider**属性。  | - [创建](/graph/api/application-post-onlinemeetings)API 返回独立于特定日历类型的[onlineMeeting](/graph/api/resources/onlinemeeting)资源。 <br>-不会创建或更新任何 Outlook 事件。 <br>-将返回的**onlineMeeting**资源信息集成到适用于您的方案的应用程序体验中。 <br>-使用[createOrGet](/graph/api/onlinemeeting-createorget?view=graph-rest-beta)返回具有指定**externalId**值的联机会议; 或者，如果尚不存在，则创建一个，以便简化在第三方日历中嵌入结果会议。 |
 | 更改为脱机会议 | -否-一旦您为联机加入的事件启用了该**事件**，则无法将其更新为使其成为脱机会议。<br>-无法更改**onlineMeetingProvider**属性，也无法将**isOnlineMeeting**设置为 `false` ，以禁用联机会议。 | 否—创建**onlineMeeting**资源后，只能将其删除，但不能将其更改为脱机会议。 |
-| 基于区域设置的联接信息 | 无直接 API 集成。 | - `Accept-Language` 在创建联机会议时使用 HTTP 头（预览）。 <br>-请参阅[示例](/graph/api/application-post-onlinemeetings?view=graph-rest-beta#example-2-create-an-online-meeting-with-user-token)。 |
+| 基于区域设置的联接信息 | 无直接 API 集成。 | - `Accept-Language` 在创建联机会议时使用 HTTP 标头。 <br>-请参阅[示例](/graph/api/application-post-onlinemeetings?view=graph-rest-beta#example-2-create-an-online-meeting-with-user-token)。 |
 | 通过 Internet 进行联接（VoIP） | 通过**onlineMeeting**属性访问**joinUrl**。  | 使用**joinWebUrl**属性。 |
 | 通过拨入进行连接 | 通过**onlineMeeting**属性，access： <br>- **conferenceId**、 **quickDial**、**电话**、 **tollFreeNumbers**、 **tollNumber**。 |通过**audioConferencing**属性，access： <br> - **conferenceId**、 **tollFreeNumber**、 **tollNumber**。<br> - 包含拨入信息以促进与第三方应用集成的可从外部访问的网页的**dialinUrl**属性。 |
 | 通过视频会议（音频和视频）加入 | 无直接 API 集成。 | 使用**videoTeleconferenceId**属性。 |
