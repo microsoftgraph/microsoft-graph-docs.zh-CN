@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 0438d26738016be4fe069efc547e3a8707b7746d
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: f646f856ed6e3a9714ab900d73a8f2874614e912
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35740282"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684510"
 ---
 ```csharp
 
@@ -16,18 +16,14 @@ var criteria = new WorkbookFilterCriteria
     Criterion1 = "criterion1-value",
     Criterion2 = "criterion2-value",
     Color = "color-value",
-    Operator = new String
-    {
-    },
+    Operator = "",
     Icon = new WorkbookIcon
     {
         Set = "set-value",
         Index = 99
     },
     DynamicCriteria = "dynamicCriteria-value",
-    Values = new Json
-    {
-    },
+    Values = JToken.Parse("{}"),
     FilterOn = "filterOn-value"
 };
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: db07b591c57c35d0304ea1102099ab6b27e09682
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 8da4009935556f98988a6f5d07f4c9921c151001
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556358"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682106"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting: createOrGet
 
@@ -27,7 +27,7 @@ ms.locfileid: "44556358"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | OnlineMeetings.ReadWrite                    |
 | 委派（个人 Microsoft 帐户） | 不支持。                               |
-| Application                            | 不支持。                |
+| 应用程序                            | 不支持。                |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -44,13 +44,13 @@ POST /me/onlineMeetings/createOrGet
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数        | 类型                                     |说明                                                                                                                                    |
+| 参数        | 类型                                     |Description                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:--------------------------------------------------------------------------|
 | chatInfo         |[chatInfo](../resources/chatinfo.md)                   |与此联机会议关联的聊天信息。|
-| endDateTime      | 日期/时间                                 | 以 UTC 表示的会议结束时间。 |
+| endDateTime      | DateTime                                 | 以 UTC 表示的会议结束时间。 |
 | externalId       | String                                   | 外部 ID。 自定义 ID。 需要 |
 | participants     | [meetingParticipants](../resources/meetingparticipants.md)          | 与联机会议关联的参与者。  这包括组织者和与会者。 |
-| startDateTime    | 日期/时间                                 | 以 UTC 表示的会议开始时间。 |
+| startDateTime    | DateTime                                 | 以 UTC 表示的会议开始时间。 |
 | subject          | String                                   | 联机会议的主题。 |
 
 >**注意：** 如果 `startDateTime` `endDateTime` 未提供，则 `startDateTime` 默认为当前日期/时间值， `endDateTime` 值将等于 `startDateTime` + 1 小时。 
@@ -68,6 +68,8 @@ POST /me/onlineMeetings/createOrGet
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-or-get-onlinemeeting"
@@ -109,6 +111,24 @@ Content-Type: application/json
   "subject":"Create a meeting with customId provided"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-or-get-onlinemeeting-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-or-get-onlinemeeting-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-or-get-onlinemeeting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-or-get-onlinemeeting-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

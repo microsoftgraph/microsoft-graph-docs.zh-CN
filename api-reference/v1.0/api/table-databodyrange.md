@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e7153da28bf3a12788131ac76695a3b49533217d
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: a69b781a783029cb6bf1e8db5690f01b036867b1
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556189"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44682214"
 ---
 # <a name="table-databodyrange"></a>Table:DataBodyRange
 
@@ -24,7 +24,7 @@ ms.locfileid: "44556189"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -58,7 +58,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/dataBodyRange
   "name": "table_databodyrange",
   "idempotent": true
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/dataBodyRange
 ```
 # <a name="c"></a>[C#](#tab/csharp)

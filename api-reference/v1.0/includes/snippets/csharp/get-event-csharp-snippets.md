@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 827baec86d11ce2ee3af4671531c2c27444ab467
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 0cdd28f4fe188ce9136ea34b91519746f0fc13d7
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35732543"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684467"
 ---
 ```csharp
 
@@ -14,16 +14,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var @event = await graphClient.Me.Events["AAMkAGIAAAoZDOFAAA="]
     .Request()
     .Header("Prefer","outlook.timezone=\"Pacific Standard Time\"")
-    .Select( e => new {
-             e.Subject,
-             e.Body,
-             e.BodyPreview,
-             e.Organizer,
-             e.Attendees,
-             e.Start,
-             e.End,
-             e.Location 
-             })
+    .Select("subject,body,bodyPreview,organizer,attendees,start,end,location")
     .GetAsync();
 
 ```

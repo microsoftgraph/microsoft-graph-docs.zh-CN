@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 02b1e7c4ce0a4bc0eb4edb397caf8bc1533301b9
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 3aa1a6e680c317d55d0137e7dece9b9c45a76299
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37544211"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44685218"
 ---
 ```java
 
@@ -13,7 +13,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 ItemAttachment attachment = new ItemAttachment();
 attachment.name = "name-value";
-attachment.item = "message or event entity";
+attachment.item = "{message or event entity}";
 
 graphClient.me().events("{id}").attachments()
     .buildRequest()

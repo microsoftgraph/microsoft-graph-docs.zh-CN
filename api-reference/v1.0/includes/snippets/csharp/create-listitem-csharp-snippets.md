@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 2ce475a3f7582b880cbb32f87f01ae1cd5be5eea
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: d93bef0bf2e3a4396f11a5ec3512bf9bc078806c
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35731609"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684838"
 ---
 ```csharp
 
@@ -15,9 +15,12 @@ var listItem = new ListItem
 {
     Fields = new FieldValueSet
     {
-        Title = "Widget",
-        Color = "Purple",
-        Weight = 32
+        AdditionalData = new Dictionary<string, object>()
+        {
+            {"Title", "Widget"},
+            {"Color", "Purple"},
+            {"Weight", "32"}
+        }
     }
 };
 

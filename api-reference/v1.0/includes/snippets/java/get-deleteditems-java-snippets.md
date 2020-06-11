@@ -1,17 +1,17 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 2ae96e5fdfca2b7b91bffbe776554d5cc4dd7ab4
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: b0a133f0e0cade0a4eaa7d2e2331511f672f0924
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35880474"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684228"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IGroupCollectionPage microsoft.graph.group = graphClient.directory().deletedItems().microsoft.graph.group()
+IGroupCollectionPage group = graphClient.directory().deletedItems().microsoft.graph.group()
     .buildRequest()
     .get();
 

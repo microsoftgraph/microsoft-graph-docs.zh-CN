@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: b914ec195866a1892bc82e399b3cac5fe3ae3ee5
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 6dbf29da223faf3f6eedb22eba34e86499e2ea92
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35731650"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683734"
 ---
 ```objc
 
@@ -18,7 +18,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphAttachment *attachment = [[MSGraphAttachment alloc] init];
 [attachment setName:@"name-value"];
-[attachment setItem:@"message or event entity"];
+[attachment setItem:@"{message or event entity}"];
 
 NSError *error;
 NSData *attachmentData = [attachment getSerializedDataWithError:&error];

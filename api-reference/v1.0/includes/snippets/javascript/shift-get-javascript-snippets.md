@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8a6e39fae6a02b3c67303882ea5fd27d10fd1d4d
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: d471d145e043c9728f30040a9ba131102613cf80
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44215960"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683925"
 ---
 ```javascript
 
@@ -37,6 +37,6 @@ const shiftPreferences = {
 };
 
 let res = await client.api('/users/871dbd5c-3a6a-4392-bfe1-042452793a50/settings/shiftPreferences')
-    .put(shiftPreferences);
+    .update(shiftPreferences);
 
 ```

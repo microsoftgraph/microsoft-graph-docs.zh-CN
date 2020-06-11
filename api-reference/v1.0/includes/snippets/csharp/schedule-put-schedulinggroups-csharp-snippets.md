@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 138ac4891bb857d9196451250e23f66f75f8b2b8
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 2b4eee01669140160d336f2935de9e7a730244fd
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44215827"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684468"
 ---
 ```csharp
 
@@ -25,6 +25,6 @@ var schedulingGroup = new SchedulingGroup
 await graphClient.Teams["{teamId}"].Schedule.SchedulingGroups["{schedulingGroupId}"]
     .Request()
     .Header("Prefer","return=representation")
-    .PutAsync(schedulingGroup);
+    .UpdateAsync(schedulingGroup);
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 28368b5c21d736e368387bfda3d7b74d0ce57866
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: cd24fcc4705fd082f058ade1269bb18c06f675a7
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44384284"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44683663"
 ---
 ```csharp
 
@@ -61,11 +61,11 @@ var timeConstraint = new TimeConstraint
 
 var isOrganizerOptional = false;
 
-var meetingDuration = "PT1H";
+var meetingDuration = new Duration("PT1H");
 
 var returnSuggestionReasons = true;
 
-var minimumAttendeePercentage = "100";
+var minimumAttendeePercentage = (double)100;
 
 await graphClient.Me
     .FindMeetingTimes(attendees,locationConstraint,timeConstraint,meetingDuration,null,isOrganizerOptional,returnSuggestionReasons,minimumAttendeePercentage)

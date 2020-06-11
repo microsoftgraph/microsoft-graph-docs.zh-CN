@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 20d322afd53fd111206e8237544cded55662705d
-ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
+ms.openlocfilehash: 9102d176b144039ea6bb4dfea2960fe833da6e6e
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37427959"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684142"
 ---
 ```csharp
 
@@ -13,10 +13,6 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var mailboxSettings = new MailboxSettings
 {
-    AdditionalData = new Dictionary<string, object>()
-    {
-        {"@odata.context","https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings"}
-    },
     AutomaticRepliesSetting = new AutomaticRepliesSetting
     {
         Status = AutomaticRepliesStatus.Scheduled,
@@ -30,6 +26,10 @@ var mailboxSettings = new MailboxSettings
             DateTime = "2016-03-28T18:00:00",
             TimeZone = "UTC"
         }
+    },
+    AdditionalData = new Dictionary<string, object>()
+    {
+        {"@odata.context", "https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings"}
     }
 };
 

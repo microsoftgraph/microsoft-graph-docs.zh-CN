@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: d02dc44e6db9110fda137e65a1737729d42a713d
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 1015b0547df389e35fbfa683b8cff48aeee077df
+ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35705171"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44684393"
 ---
 ```csharp
 
@@ -14,7 +14,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var list = new List
 {
     DisplayName = "Books",
-    Columns = new List<ColumnDefinition>()
+    Columns = (IListColumnsCollectionPage)new List<ColumnDefinition>()
     {
         new ColumnDefinition
         {
@@ -31,7 +31,7 @@ var list = new List
             }
         }
     },
-    List = new ListInfo
+    ListInfo = new ListInfo
     {
         Template = "genericList"
     }
