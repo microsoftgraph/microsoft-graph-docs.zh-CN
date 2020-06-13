@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 27705a8e875b9c78fd5437d4f4704f778d165f00
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 33a52d7ce90d7fcd7ea8c20464c81a2d3c907348
+ms.sourcegitcommit: d6374f42bee4de11fd7a3d0d8c2a7f8c4e7739bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451509"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44710669"
 ---
 # <a name="create-session"></a>创建会话
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 使用此 API 创建新的工作簿会话。 
 
@@ -44,7 +44,6 @@ ms.locfileid: "42451509"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/createSession
-
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|

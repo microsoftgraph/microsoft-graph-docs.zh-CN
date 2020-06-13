@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7101711cf8a0427d4793b307bed576f660916e48
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 86324352e70938fc0a29cec2aa3398141dd59ac5
+ms.sourcegitcommit: d6374f42bee4de11fd7a3d0d8c2a7f8c4e7739bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508875"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44710613"
 ---
 # <a name="create-session"></a>创建会话
 
@@ -44,7 +44,6 @@ ms.locfileid: "42508875"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/createSession
-
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
