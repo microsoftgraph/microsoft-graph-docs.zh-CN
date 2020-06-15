@@ -11,12 +11,12 @@ metadata:
   ms.date: 02/28/2020
   featureFlags:
   - clicktale
-  ms.openlocfilehash: d0c510c9f3706f1db0539f53fc986f2054220d1c
-  ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+  ms.openlocfilehash: 6cd9301190dcea4e0cc774aefbe5d206a67015da
+  ms.sourcegitcommit: d6374f42bee4de11fd7a3d0d8c2a7f8c4e7739bc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/09/2020
-  ms.locfileid: "43199723"
+  ms.lasthandoff: 06/12/2020
+  ms.locfileid: "44710654"
 highlightedContent:
   items:
   - title: Microsoft Graph 概述
@@ -49,7 +49,7 @@ conceptualContent:
       text: Microsoft Graph 数据连接
     - url: https://developer.microsoft.com/graph/quick-start
       itemType: quickstart
-      text: Quickstarts
+      text: 快速入门
     - url: /graph/tutorials
       itemType: tutorial
       text: 教程
@@ -89,7 +89,7 @@ conceptualContent:
       text: 使用 Sdk
     - url: /graph/toolkit/overview
       itemType: overview
-      text: 使用工具包（预览版）
+      text: 使用工具包
 additionalContent:
   sections:
   - title: 资源

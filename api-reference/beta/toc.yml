@@ -11102,7 +11102,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 计划
+          - name: 规划
             href: resources/plannerplan.md
             items:
               - name: 列出组计划
@@ -11342,8 +11342,9 @@ items:
               - name: 获取托管内容
                 href: api/chatmessagehostedcontent-get.md
           - name: 应用程序目录
-            href: resources/teamsapp.md
             items:
+              - name: 目录中的应用程序
+                href: resources/teamsapp.md
               - name: 向目录发布应用
                 href: api/teamsapp-publish.md
               - name: 列出目录中的应用

@@ -221,7 +221,7 @@ items:
                 href: api/user-list-events.md
               - name: 提醒视图
                 href: api/user-reminderview.md
-          - name: 联系人
+          - name: Contacts
             href: resources/contact.md
             items:
               - name: 创建联系人
@@ -3461,7 +3461,7 @@ items:
                     href: api/application-post-extensionproperty.md
                   - name: 删除
                     href: api/application-delete-extensionproperty.md
-              - name: 所有者
+              - name: Owners
                 items:
                   - name: 列表
                     href: api/application-list-owners.md
@@ -3833,7 +3833,7 @@ items:
                     href: api/serviceprincipal-getmembergroups.md
                   - name: 获取成员对象
                     href: api/serviceprincipal-getmemberobjects.md
-              - name: 所有者
+              - name: Owners
                 items:
                   - name: 列表
                     href: api/serviceprincipal-list-owners.md
@@ -4493,7 +4493,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 计划
+          - name: 规划
             href: resources/plannerplan.md
             items:
               - name: 创建计划
@@ -4661,8 +4661,9 @@ items:
               - name: 回复消息
                 href: api/channel-post-messagereply.md
           - name: 应用程序目录
-            href: resources/teamsapp.md
             items:
+              - name: 目录中的应用程序
+                href: resources/teamsapp.md
               - name: 向目录发布应用
                 href: api/teamsapp-publish.md
               - name: 列出目录中的应用
@@ -4671,7 +4672,7 @@ items:
                 href: api/teamsapp-update.md
               - name: 从目录中删除应用
                 href: api/teamsapp-delete.md
-          - name: 应用
+          - name: App
             items:
               - name: 安装的应用
                 href: resources/teamsappinstallation.md
@@ -4780,7 +4781,7 @@ items:
                     href: api/openshift-get.md
                   - name: 更新
                     href: api/openshift-update.md
-                  - name: Delete
+                  - name: 删除
                     href: api/openshift-delete.md
               - name: 打开班次轮换更改请求
                 href: resources/openshiftchangerequest.md
@@ -4846,7 +4847,7 @@ items:
                 items:
                   - name: 获取
                     href: api/timeoffrequest-get.md
-                  - name: Delete
+                  - name: 删除
                     href: api/timeoffrequest-delete.md
                   - name: 批准
                     href: api/timeoffrequest-approve.md
