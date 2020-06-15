@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 403466a154e279b9a41f0f513f80ff77db299884
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: c6c41527ea5b52e4d683cb2d14594c088f080142
+ms.sourcegitcommit: d6374f42bee4de11fd7a3d0d8c2a7f8c4e7739bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681618"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44710599"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -24,11 +24,23 @@ ms.locfileid: "44681618"
 - `Accept-Language`[创建联机会议](/graph/api/application-post-onlinemeetings?view=graph-rest-1.0)时使用 HTTP 标头，以提供基于区域设置的联接信息。
 - 使用[createOrGet](/graph/api/onlinemeeting-createorget?view=graph-rest-1.0)返回具有指定的**externalId**值的联机会议; 或者，如果尚不存在，则创建一个，以便简化在第三方日历中嵌入结果会议。
 
+### <a name="security"></a>安全性
+- 将以下内容作为[警报](/graph/api/resources/alert?view=graph-rest-1.0)的属性进行跟踪：
+  - 与警报相关的事件的 Id。
+  - 将[资源](/graph/api/resources/securityResource?view=graph-rest-1.0#securityresourcetype-values)标识为 "受攻击" 或 "作为警报中的相关资源"。
+  - 指定与警报相关的[网络连接](/graph/api/resources/networkconnection?view=graph-rest-1.0)的源和目标位置。
+
+### <a name="teamwork"></a>团队合作
+使用委派的权限[AppCatalog](/graph/permissions-reference#appcatalog-resource-permissions)列出 Microsoft 团队应用程序目录中的[应用程序](/graph/api/resources/teamsapp?view=graph-rest-1.0)。
+
 
 ## <a name="june-2020-new-in-preview-only"></a>2020年6月：仅预览中的新内容
 ### <a name="cloud-communications--presence"></a>云通信 |Shell
 [获取](/graph/api/presence-get?view=graph-rest-beta)组织中的所有用户或组织中的特定用户的状态。
 
+### <a name="identity-and-access"></a>身份和访问
+- IT 专业人员可以使用轻型代理连接到[AZURE AD 应用程序代理](/azure/active-directory/manage-apps/what-is-application-proxy)的[连接器](/graph/api/resources/connector?view=graph-rest-beta)资源，并[在外部发布本地 web 应用程序应用](/graph/api/resources/onpremisespublishing?view=graph-rest-beta)，以便其组织的远程用户能够以安全的方式访问这些应用程序。
+- 在租户级别管理[身份验证策略](/graph/api/resources/authenticationflowspolicy?view=graph-rest-beta)，以启用或禁用外部用户的[自助服务注册](/graph/api/resources/selfservicesignupauthenticationflowconfiguration?view=graph-rest-beta)。
 
 ## <a name="may-2020-new-and-generally-available"></a>5月2020：新的和普遍可用的
 
