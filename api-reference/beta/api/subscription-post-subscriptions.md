@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 3e9873d8def179bfdbe8d77767d5a521af5cebf3
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: e199e2c9fa0240eda593843d88490e7f22b0f506
+ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353257"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44744080"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -143,6 +143,7 @@ Content-type: application/json
 |列表|sites/{site-id}/lists/{list-id}|
 |安全警报|security/alerts?$filter=status eq ‘New’|
 |通话记录|通信/callRecords|
+|[聊天消息](../resources/chatmessage.md) | 聊天/{id}/邮件、聊天/allMessages、团队/{id}/频道/{id}/邮件、团队/allMessages |
 
 ### <a name="response"></a>响应
 

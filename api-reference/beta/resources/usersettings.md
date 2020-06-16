@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c04a3ac42d26bc219967c706a9fddad4067653ff
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2e4f76f5a19e4c44df462445207d5d15b42f71b9
+ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43411723"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44744067"
 ---
 # <a name="usersettings-resource-type"></a>userSettings 资源类型
 
@@ -18,12 +18,21 @@ ms.locfileid: "43411723"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-内容发现的当前用户设置。 若要了解如何获取或更新用户设置，请参阅[获取设置](../api/usersettings-get.md)和[更新设置](../api/usersettings-update.md)。
+代表用户对[区域区域设置和语言](../resources/regionalandlanguagesettings.md)的首选项、用于[倒班计划](../resources/shiftpreferences.md)以及用于[真知灼见和内容发现](../resources/officegraphinsights.md)的设置。
 
-该资源支持：
+管理用户的基于区域设置的首选项： 
+  - 确定用户在查看应用程序时首选的语言和区域格式。
+  - 更新用户的语言和区域格式设置首选项。
 
-- 检查用户及用户的组织是否对内容发现做贡献。
-- 为特定用户禁用或启用内容发现。 这也会禁用 Office Delve 中的文档。
+管理用户的工作班次首选项： 
+  - 检查是否可将用户分配给计划中的班次。
+  - 更新用户的 shift 首选项。
+  
+启用内容发现和以文档为中心的见解：
+  - 检查用户及用户的组织是否对内容发现做贡献。
+  - 为特定用户禁用或启用内容发现。 这也会禁用 Office Delve 中的文档。
+
+若要了解如何获取或更新用户设置，请参阅[获取设置](../api/usersettings-get.md)和[更新设置](../api/usersettings-update.md)。
 
 > [!NOTE]
 > 此终结点仅适用于用户。 无法将此终结点用于联系人。
@@ -46,6 +55,7 @@ ms.locfileid: "43411723"
 | 关系 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |shiftPreferences|[shiftPreferences](shiftpreferences.md)| 用户的 shift 首选项。 |
+|regionalAndLanguageSettings|[regionalAndLanguageSettings](regionalandlanguagesettings.md)| 用户的语言首选项、区域区域设置和日期/时间格式。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

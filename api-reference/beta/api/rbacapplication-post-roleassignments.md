@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 920ad77383eaec5a3bf90d5960c8ca79c411dbca
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 36a2e70ae8ab0183ffa25ca0c6e97cb1fa10c3b6
+ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43806223"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44744094"
 ---
 # <a name="create-unifiedroleassignment"></a>创建 unifiedRoleAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "43806223"
 
 创建新的[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -46,11 +46,11 @@ POST /roleManagement/directory/roleAssignments
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象的 JSON 表示形式。 请求必须具有在 Azure AD 中定义的作用域（例如`directoryScopeId`）或特定于应用程序的作用域（例如`appScopeId`）。 Azure AD 作用域的示例包括租户（"/"）、管理单元或应用程序。 有关详细信息，请参阅[appScope](../resources/appscope.md)。
+在请求正文中，提供[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象的 JSON 表示形式。 请求必须具有在 Azure AD 中定义的作用域（例如 `directoryScopeId` ）或特定于应用程序的作用域（例如） `appScopeId` 。 Azure AD 作用域的示例包括租户（"/"）、管理单元或应用程序。 有关详细信息，请参阅[appScope](../resources/appscope.md)。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象。
 
 ## <a name="examples"></a>示例
 
@@ -139,7 +139,7 @@ Content-type: application/json
     "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
     "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1", //template id of User Account Administrator
     "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
-    "directoryScopeId": "5d107bba-d8e2-4e13-b6ae-884be90e5d1a" //object id of an administrative unit
+    "directoryScopeId": "/administrativeUnits/5d107bba-d8e2-4e13-b6ae-884be90e5d1a" //object id of an administrative unit
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -178,7 +178,7 @@ Content-type: application/json
     "id": "BH21sHQtUEyvox7IA_Eu_mm3jqnUe4lEhvatluHIWb7-1",
     "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
     "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
-    "directoryScopeId": "5d107bba-d8e2-4e13-b6ae-884be90e5d1a"
+    "directoryScopeId": "/administrativeUnits/5d107bba-d8e2-4e13-b6ae-884be90e5d1a"
 }
 ```
 

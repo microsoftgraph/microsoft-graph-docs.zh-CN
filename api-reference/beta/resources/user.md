@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: c3b66a716e9795a58849b4ae352cb55f0f7141e0
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: ea7459b8eaa9d259d4c90754f2075f0da60efce9
+ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290080"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44744045"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -18,7 +18,9 @@ ms.locfileid: "44290080"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 Azure AD 用户帐户。继承自 [directoryObject](directoryobject.md)。
+表示 Azure AD 用户帐户。继承自 [directoryObject](directoryobject.md)。 
+
+**用户**资源允许应用指定语言的用户首选项，以及用户的主 Exchange 邮箱和用户的 Azure AD 配置文件的日期/时间格式。 有关更多详细信息，请参阅[适用于语言和区域格式的用户首选项](#user-preferences-for-languages-and-regional-formats)。
 
 出于性能原因，默认情况下 [create](../api/user-post-users.md)、[get](../api/user-get.md) 和 [list](../api/user-list.md) 操作仅返回更常用属性的子集。 这些默认属性将记录在[属性](#properties)部分中。 若要获取非默认返回的任一属性，请在 `$select` OData 查询选项中指定这些属性。
 
@@ -182,9 +184,9 @@ ms.locfileid: "44290080"
 | mail | String | 用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 只读。 支持 $filter。 |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | 已登录用户的主邮箱的设置。 可以[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)用于向传入邮件发送自动答复、区域设置和时区的设置。 <br><br>仅在 $select 上返回。 |
 | mailNickname | String | 用户的邮件别名。 创建用户时必须指定此属性。 <br><br>仅在 $select 上返回。 支持 $filter。 |
-| mobilePhone | String | 用户的主要移动电话号码。 <br><br>默认情况下返回。 |
+| mobilePhone | String | 用户的主要移动电话号码。 <br><br>默认返回。 |
 | mySite | String | 用户个人网站的 URL。 <br><br>仅在 $select 上返回。 |
-| officeLocation | String | 用户公司地点的办公室位置。 <br><br>默认返回。 |
+| officeLocation | String | 用户公司地点的办公室位置。 <br><br>默认情况下返回。 |
 | onPremisesDistinguishedName | String | 包含本地 Active Directory `distinguished name` 或 `DN`。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 <br><br>仅在 $select 上返回。 只读。 |
 | onPremisesDomainName | String | 包含从本地目录同步的本地 `domainFQDN`（也称为 dnsDomainName）。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 <br><br>仅在 $select 上返回。 只读。 |
 | onPremisesExtensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | 包含用户的 extensionAttributes 1-15。 请注意，单个扩展属性既不可选择，也不可筛选。 对于 `onPremisesSyncEnabled` 用户，此属性集是在本地主控的，并且为只读。 对于只使用云的用户（其中 `onPremisesSyncEnabled` 为 false），可以在创建或更新期间设置这些属性。 <br><br>仅在 $select 上返回。 |
@@ -196,10 +198,10 @@ ms.locfileid: "44290080"
 | onPremisesSyncEnabled | Boolean | 如果此对象从本地目录同步，则为 `true`；如果此对象最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步，则为 `null`（默认值）。 <br><br>仅在 $select 上返回。 只读。 |
 | onPremisesUserPrincipalName | String | 包含从本地目录同步的本地 `userPrincipalName`。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 <br><br>仅在 $select 上返回。 只读。 |
 | otherMails | 字符串集合 | 用户的其他电子邮件地址列表；例如：`["bob@contoso.com", "Robert@fabrikam.com"]`。<br><br>仅在 $select 上返回。  支持 $filter。 |
-| passwordPolicies | String | 指定用户的密码策略。此值是一个枚举，具有一个可能值“DisableStrongPassword”，允许指定比默认策略弱的密码。还可以指定“DisablePasswordExpiration”。可以同时指定这两个策略；例如：“DisablePasswordExpiration、DisableStrongPassword”。<br><br>仅在 $select 上返回。 |
+| passwordPolicies | 字符串 | 指定用户的密码策略。此值是一个枚举，具有一个可能值“DisableStrongPassword”，允许指定比默认策略弱的密码。还可以指定“DisablePasswordExpiration”。可以同时指定这两个策略；例如：“DisablePasswordExpiration、DisableStrongPassword”。<br><br>仅在 $select 上返回。 |
 | passwordProfile | [passwordProfile](passwordprofile.md) | 指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。 <br><br>仅在 $select 上返回。 |
 | pastProjects | String collection | 供用户枚举其过去项目的列表。 <br><br>仅在 $select 上返回。 |
-| postalCode | 字符串 | 用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。 <br><br>仅在 $select 上返回。 |
+| postalCode | String | 用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。 <br><br>仅在 $select 上返回。 |
 | preferredDataLocation | String | 用户的首选数据位置。 有关详细信息，请参阅 [OneDrive Online 多地理位置](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。 <br><br>仅在 $select 上返回。 |
 | preferredLanguage | String | 用户的首选语言。应遵循 ISO 639-1 代码；例如“EN-US”。 <br><br>默认返回。 |
 | preferredName | String | 用户的首选名称。 <br><br>仅在 $select 上返回。 |
@@ -233,7 +235,7 @@ ms.locfileid: "44290080"
 |:---------------|:--------|:----------|
 |空|0|默认值，尚未给用户设置 `ageGroup`。|
 |minorWithoutParentalConsent |1 |（保留以备今后使用）|
-|minorWithParentalConsent|2 | 根据用户所在国家或地区与年龄相关的法规，将用户视为未成年人，并且帐户管理员已相应获得父母或监护人的同意。|
+|minorWithParentalConsent|双面| 根据用户所在国家或地区与年龄相关的法规，将用户视为未成年人，并且帐户管理员已相应获得父母或监护人的同意。|
 |adult|第三章|根据用户所在国家或地区与年龄相关的法规，将用户视为成年人。|
 |notAdult|4 |用户所在国家或地区存在其他与年龄相关的法规（例如美国、英国、欧盟和韩国），用户的年龄介于未成年人和成年人之间（根据所在国家或地区的规定）。 通常，这意味着会在管控的国家或地区将青少年视为 `notAdult`。|
 |minorNoParentalConsentRequired|5 |用户是未成年人，但所在国家或地区没有与年龄相关的法规。|
@@ -248,7 +250,7 @@ ms.locfileid: "44290080"
 |:---------------|:--------|:----------|
 |空|0|默认值，尚未给用户设置 `ageGroup`。|
 |minor|1 |将用户视为未成年人。|
-|notAdult|2 |用户所在国家或地区存在其他法规（例如美国、英国、欧盟和韩国），用户年龄超过儿童年龄上限（根据所在国家或地区的规定）且低于成年人年龄下限（根据所在国家或地区的规定）。 因此，基本上会在管控的国家或地区将青少年视为 `notAdult`。|
+|notAdult|双面|用户所在国家或地区存在其他法规（例如美国、英国、欧盟和韩国），用户年龄超过儿童年龄上限（根据所在国家或地区的规定）且低于成年人年龄下限（根据所在国家或地区的规定）。 因此，基本上会在管控的国家或地区将青少年视为 `notAdult`。|
 |adult|第三章|应将用户视为成年人。|
 
 #### <a name="consentprovidedforminor-property"></a>consentProvidedForMinor 属性
@@ -257,7 +259,7 @@ ms.locfileid: "44290080"
 |:---------------|:--------|:----------|
 |空|0|默认值，尚未给用户设置 `consentProvidedForMinor`。|
 |granted|1 |已就用户拥有帐户获得同意。|
-|denied|2 |尚未就用户拥有帐户获得同意。|
+|denied|双面|尚未就用户拥有帐户获得同意。|
 |notRequired|第三章|用户所在地不要求获得同意。|
 
 ## <a name="relationships"></a>关系
@@ -297,6 +299,11 @@ ms.locfileid: "44290080"
 |scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) 集合| 该用户的作用域角色管理单元成员身份。 此为只读属性。 可为 Null。|
 |settings|[userSettings](usersettings.md) | 只读。可为 Null。|
 |registeredDevices|[directoryObject](directoryobject.md) collection|已注册的用户的设备。只读。可为 Null。|
+
+### <a name="user-preferences-for-languages-and-regional-formats"></a>语言和区域格式的用户首选项
+**User**资源包含[mailboxSettings](../resources/mailboxsettings.md)属性，该属性包括用户的首选语言、日期和时间格式、默认时区以及专门用于其主要 Exchange 邮箱的其他设置。 这些首选项针对邮件客户端，只有在用户已预配邮箱时才可用。 如果您的方案仅侧重于 Outlook 邮件、日历、联系人或待办任务，则可以选择使用**mailboxSettings** 。
+
+除了**mailboxSettings**之外，**用户**还包括通过[userSettings](../resources/usersettings.md)到[regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md)的关系，可供任何应用程序用来为用户提供最佳语言和区域格式设置体验的语言和区域格式首选项的超集。 使用**userSettings**以在应用程序中通过点击 Azure AD 用户配置文件来反映相同的用户首选项，从而实现一致的体验。  
 
 ## <a name="json-representation"></a>JSON 表示形式
 
