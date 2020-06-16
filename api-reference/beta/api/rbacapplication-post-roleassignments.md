@@ -5,32 +5,32 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 920ad77383eaec5a3bf90d5960c8ca79c411dbca
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 36a2e70ae8ab0183ffa25ca0c6e97cb1fa10c3b6
+ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43806223"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44744094"
 ---
-# <a name="create-unifiedroleassignment"></a><span data-ttu-id="536b2-103">创建 unifiedRoleAssignment</span><span class="sxs-lookup"><span data-stu-id="536b2-103">Create unifiedRoleAssignment</span></span>
+# <a name="create-unifiedroleassignment"></a><span data-ttu-id="42544-103">创建 unifiedRoleAssignment</span><span class="sxs-lookup"><span data-stu-id="42544-103">Create unifiedRoleAssignment</span></span>
 
-<span data-ttu-id="536b2-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="536b2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="42544-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="42544-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="536b2-105">创建新的[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象。</span><span class="sxs-lookup"><span data-stu-id="536b2-105">Create a new [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object.</span></span>
+<span data-ttu-id="42544-105">创建新的[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象。</span><span class="sxs-lookup"><span data-stu-id="42544-105">Create a new [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="536b2-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="536b2-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="42544-106">权限</span><span class="sxs-lookup"><span data-stu-id="42544-106">Permissions</span></span>
 
-<span data-ttu-id="536b2-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="536b2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="42544-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="42544-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="536b2-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="536b2-109">Permission type</span></span>                        | <span data-ttu-id="536b2-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="536b2-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="42544-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="42544-109">Permission type</span></span>                        | <span data-ttu-id="42544-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="42544-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="536b2-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="536b2-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="536b2-112">RoleManagement.ReadWrite.Directory</span><span class="sxs-lookup"><span data-stu-id="536b2-112">RoleManagement.ReadWrite.Directory</span></span> |
-| <span data-ttu-id="536b2-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="536b2-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="536b2-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="536b2-114">Not supported.</span></span> |
-| <span data-ttu-id="536b2-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="536b2-115">Application</span></span>                            | <span data-ttu-id="536b2-116">RoleManagement.ReadWrite.Directory</span><span class="sxs-lookup"><span data-stu-id="536b2-116">RoleManagement.ReadWrite.Directory</span></span> |
+| <span data-ttu-id="42544-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="42544-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="42544-112">RoleManagement.ReadWrite.Directory</span><span class="sxs-lookup"><span data-stu-id="42544-112">RoleManagement.ReadWrite.Directory</span></span> |
+| <span data-ttu-id="42544-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="42544-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="42544-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="42544-114">Not supported.</span></span> |
+| <span data-ttu-id="42544-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="42544-115">Application</span></span>                            | <span data-ttu-id="42544-116">RoleManagement.ReadWrite.Directory</span><span class="sxs-lookup"><span data-stu-id="42544-116">RoleManagement.ReadWrite.Directory</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="536b2-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="536b2-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="42544-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="42544-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,30 +38,30 @@ ms.locfileid: "43806223"
 POST /roleManagement/directory/roleAssignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="536b2-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="536b2-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="42544-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="42544-118">Request headers</span></span>
 
-| <span data-ttu-id="536b2-119">名称</span><span class="sxs-lookup"><span data-stu-id="536b2-119">Name</span></span>          | <span data-ttu-id="536b2-120">说明</span><span class="sxs-lookup"><span data-stu-id="536b2-120">Description</span></span>   |
+| <span data-ttu-id="42544-119">名称</span><span class="sxs-lookup"><span data-stu-id="42544-119">Name</span></span>          | <span data-ttu-id="42544-120">说明</span><span class="sxs-lookup"><span data-stu-id="42544-120">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="536b2-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="536b2-121">Authorization</span></span> | <span data-ttu-id="536b2-122">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="536b2-122">Bearer {token}</span></span> |
+| <span data-ttu-id="42544-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="42544-121">Authorization</span></span> | <span data-ttu-id="42544-122">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="42544-122">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="536b2-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="536b2-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="42544-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="42544-123">Request body</span></span>
 
-<span data-ttu-id="536b2-124">在请求正文中，提供[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="536b2-124">In the request body, supply a JSON representation of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object.</span></span> <span data-ttu-id="536b2-125">请求必须具有在 Azure AD 中定义的作用域（例如`directoryScopeId`）或特定于应用程序的作用域（例如`appScopeId`）。</span><span class="sxs-lookup"><span data-stu-id="536b2-125">The request must have either a scope defined in Azure AD, such as `directoryScopeId`, or an application-specific scope, such as `appScopeId`.</span></span> <span data-ttu-id="536b2-126">Azure AD 作用域的示例包括租户（"/"）、管理单元或应用程序。</span><span class="sxs-lookup"><span data-stu-id="536b2-126">Examples of Azure AD scope are tenant ("/"), administrative units, or applications.</span></span> <span data-ttu-id="536b2-127">有关详细信息，请参阅[appScope](../resources/appscope.md)。</span><span class="sxs-lookup"><span data-stu-id="536b2-127">For more information, see [appScope](../resources/appscope.md).</span></span>
+<span data-ttu-id="42544-124">在请求正文中，提供[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="42544-124">In the request body, supply a JSON representation of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object.</span></span> <span data-ttu-id="42544-125">请求必须具有在 Azure AD 中定义的作用域（例如 `directoryScopeId` ）或特定于应用程序的作用域（例如） `appScopeId` 。</span><span class="sxs-lookup"><span data-stu-id="42544-125">The request must have either a scope defined in Azure AD, such as `directoryScopeId`, or an application-specific scope, such as `appScopeId`.</span></span> <span data-ttu-id="42544-126">Azure AD 作用域的示例包括租户（"/"）、管理单元或应用程序。</span><span class="sxs-lookup"><span data-stu-id="42544-126">Examples of Azure AD scope are tenant ("/"), administrative units, or applications.</span></span> <span data-ttu-id="42544-127">有关详细信息，请参阅[appScope](../resources/appscope.md)。</span><span class="sxs-lookup"><span data-stu-id="42544-127">For more information, see [appScope](../resources/appscope.md).</span></span>
 
-## <a name="response"></a><span data-ttu-id="536b2-128">响应</span><span class="sxs-lookup"><span data-stu-id="536b2-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="42544-128">响应</span><span class="sxs-lookup"><span data-stu-id="42544-128">Response</span></span>
 
-<span data-ttu-id="536b2-129">如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象。</span><span class="sxs-lookup"><span data-stu-id="536b2-129">If successful, this method returns a `201 Created` response code and a new [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object in the response body.</span></span>
+<span data-ttu-id="42544-129">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象。</span><span class="sxs-lookup"><span data-stu-id="42544-129">If successful, this method returns a `201 Created` response code and a new [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="536b2-130">示例</span><span class="sxs-lookup"><span data-stu-id="536b2-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="42544-130">示例</span><span class="sxs-lookup"><span data-stu-id="42544-130">Examples</span></span>
 
-### <a name="example-1-create-a-role-assignment-at-tenant-scope"></a><span data-ttu-id="536b2-131">示例1：在租户范围创建角色分配</span><span class="sxs-lookup"><span data-stu-id="536b2-131">Example 1: Create a role assignment at tenant scope</span></span>
+### <a name="example-1-create-a-role-assignment-at-tenant-scope"></a><span data-ttu-id="42544-131">示例1：在租户范围创建角色分配</span><span class="sxs-lookup"><span data-stu-id="42544-131">Example 1: Create a role assignment at tenant scope</span></span>
 
-#### <a name="request"></a><span data-ttu-id="536b2-132">请求</span><span class="sxs-lookup"><span data-stu-id="536b2-132">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="42544-132">请求</span><span class="sxs-lookup"><span data-stu-id="42544-132">Request</span></span>
 
-<span data-ttu-id="536b2-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="536b2-133">The following is an example of the request.</span></span> <span data-ttu-id="536b2-134">请注意，使用 roleTemplateId 进行 roleDefinitionId。</span><span class="sxs-lookup"><span data-stu-id="536b2-134">Note the use of the roleTemplateId for roleDefinitionId.</span></span> <span data-ttu-id="536b2-135">roleDefinitionId 可以是服务范围的模板 Id，也可以是特定于目录的 roleDefinitionId。</span><span class="sxs-lookup"><span data-stu-id="536b2-135">roleDefinitionId can be either the service-wide template Id or the directory-specific roleDefinitionId.</span></span>
+<span data-ttu-id="42544-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="42544-133">The following is an example of the request.</span></span> <span data-ttu-id="42544-134">请注意，使用 roleTemplateId 进行 roleDefinitionId。</span><span class="sxs-lookup"><span data-stu-id="42544-134">Note the use of the roleTemplateId for roleDefinitionId.</span></span> <span data-ttu-id="42544-135">roleDefinitionId 可以是服务范围的模板 Id，也可以是特定于目录的 roleDefinitionId。</span><span class="sxs-lookup"><span data-stu-id="42544-135">roleDefinitionId can be either the service-wide template Id or the directory-specific roleDefinitionId.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="536b2-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="536b2-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="42544-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="42544-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroleassignment_from_rbacapplication"
@@ -78,26 +78,26 @@ Content-type: application/json
     "directoryScopeId": "/"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="536b2-137">C#</span><span class="sxs-lookup"><span data-stu-id="536b2-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="42544-137">C#</span><span class="sxs-lookup"><span data-stu-id="42544-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignment-from-rbacapplication-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="536b2-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="536b2-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="42544-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="42544-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignment-from-rbacapplication-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="536b2-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="536b2-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="42544-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="42544-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignment-from-rbacapplication-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="536b2-140">响应</span><span class="sxs-lookup"><span data-stu-id="536b2-140">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="42544-140">响应</span><span class="sxs-lookup"><span data-stu-id="42544-140">Response</span></span>
 
-<span data-ttu-id="536b2-141">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="536b2-141">The following is an example of the response.</span></span>
+<span data-ttu-id="42544-141">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="42544-141">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="536b2-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="536b2-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="42544-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="42544-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -118,14 +118,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2--create-a-role-assignment-over-an-administrative-unit-scope"></a><span data-ttu-id="536b2-144">示例2：在管理单元范围内创建角色分配</span><span class="sxs-lookup"><span data-stu-id="536b2-144">Example 2 : Create a role assignment over an administrative unit scope</span></span>
+### <a name="example-2--create-a-role-assignment-over-an-administrative-unit-scope"></a><span data-ttu-id="42544-144">示例2：在管理单元范围内创建角色分配</span><span class="sxs-lookup"><span data-stu-id="42544-144">Example 2 : Create a role assignment over an administrative unit scope</span></span>
 
-#### <a name="request"></a><span data-ttu-id="536b2-145">请求</span><span class="sxs-lookup"><span data-stu-id="536b2-145">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="42544-145">请求</span><span class="sxs-lookup"><span data-stu-id="42544-145">Request</span></span>
 
-<span data-ttu-id="536b2-146">下面的示例在管理单元上分配主要用户管理员角色。</span><span class="sxs-lookup"><span data-stu-id="536b2-146">The following example assigns a principal User Admin role over an administrative unit.</span></span>
+<span data-ttu-id="42544-146">下面的示例在管理单元上分配主要用户管理员角色。</span><span class="sxs-lookup"><span data-stu-id="42544-146">The following example assigns a principal User Admin role over an administrative unit.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="536b2-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="536b2-147">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="42544-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="42544-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroleassignment_over_administrativeunit"
@@ -139,29 +139,29 @@ Content-type: application/json
     "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
     "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1", //template id of User Account Administrator
     "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
-    "directoryScopeId": "5d107bba-d8e2-4e13-b6ae-884be90e5d1a" //object id of an administrative unit
+    "directoryScopeId": "/administrativeUnits/5d107bba-d8e2-4e13-b6ae-884be90e5d1a" //object id of an administrative unit
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="536b2-148">C#</span><span class="sxs-lookup"><span data-stu-id="536b2-148">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="42544-148">C#</span><span class="sxs-lookup"><span data-stu-id="42544-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignment-over-administrativeunit-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="536b2-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="536b2-149">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="42544-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="42544-149">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignment-over-administrativeunit-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="536b2-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="536b2-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="42544-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="42544-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignment-over-administrativeunit-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="536b2-151">响应</span><span class="sxs-lookup"><span data-stu-id="536b2-151">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="42544-151">响应</span><span class="sxs-lookup"><span data-stu-id="42544-151">Response</span></span>
 
-<span data-ttu-id="536b2-152">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="536b2-152">The following is an example of the response.</span></span>
+<span data-ttu-id="42544-152">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="42544-152">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="536b2-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="536b2-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="42544-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="42544-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -178,7 +178,7 @@ Content-type: application/json
     "id": "BH21sHQtUEyvox7IA_Eu_mm3jqnUe4lEhvatluHIWb7-1",
     "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
     "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
-    "directoryScopeId": "5d107bba-d8e2-4e13-b6ae-884be90e5d1a"
+    "directoryScopeId": "/administrativeUnits/5d107bba-d8e2-4e13-b6ae-884be90e5d1a"
 }
 ```
 
