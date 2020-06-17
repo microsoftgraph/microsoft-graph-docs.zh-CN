@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d0f55f824d5368fa51f415db5b493ef09cccfeee
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cda405c9f63d52ee9741dd679e582c7fdfcd44df
+ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445722"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44744013"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -24,9 +24,9 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 - 公司条款和条件   
 - 设备配置设置  
 - 设备管理  
-- Endpoint protection  
+- 终结点保护  
 - 注册配置文件  
-- 通知  
+- Notifications  
 - 载入策略、设置和详细信息  
 - 基于角色的访问控制（RBAC）策略  
 - 远程协助合作伙伴  
@@ -34,7 +34,7 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 - 疑难解答事件  
 - Windows 信息保护摘要  
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[获取 deviceManagement](../api/intune-shared-devicemanagement-get.md)|[deviceManagement](../resources/intune-shared-devicemanagement.md)|读取 [deviceManagement](../resources/intune-shared-devicemanagement.md) 对象的属性和关系。|
@@ -86,6 +86,7 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |deviceCategories|[deviceCategory](../resources/intune-shared-devicecategory.md) 集合|租户的设备类别列表。|
 |deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) 集合|设备注册配置列表|
 |deviceManagementPartners|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) 集合|由租户配置的设备管理合作伙伴列表。|
+|complianceManagementPartners|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)集合|由租户配置的合规性管理合作伙伴的列表。|
 |exchangeConnectors|[deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) 集合|由租户配置的 Exchange 连接器列表。|
 |mobileThreatDefenseConnectors|[mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) 集合|由租户配置的移动威胁防护连接器列表。|
 |**RBAC**|
