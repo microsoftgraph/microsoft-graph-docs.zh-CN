@@ -302,14 +302,6 @@ items:
                     href: api/insights-list-trending.md
                   - name: 使用的列表
                     href: api/insights-list-used.md
-              - name: 内容发现设置
-                items:
-                  - name: 用户设置
-                    href: resources/usersettings.md
-                  - name: 获取设置
-                    href: api/usersettings-get.md
-                  - name: 更新设置
-                    href: api/usersettings-update.md
           - name: 邮件
             href: resources/message.md
             items:
@@ -409,6 +401,13 @@ items:
                 href: api/planneruser-list-tasks.md
               - name: 更新设置
                 href: api/planneruser-update.md
+          - name: 首选语言和区域格式
+            href: resources/regionalandlanguagesettings.md
+            items:
+              - name: 获取
+                href: api/regionalandlanguagesettings-get.md
+              - name: 更新
+                href: api/regionalandlanguagesettings-update.md
           - name: 个人资料（预览版）
             items:
               - name: 配置文件
@@ -429,6 +428,14 @@ items:
                 href: api/user-upgrade-teamsappinstallation.md
               - name: 卸载应用程序
                 href: api/user-delete-teamsappinstallation.md
+          - name: 用户设置
+            items:
+              - name: 用户设置
+                href: resources/usersettings.md
+              - name: 获取设置
+                href: api/usersettings-get.md
+              - name: 更新设置
+                href: api/usersettings-update.md
       - name: 组
         items:
           - name: 概述
@@ -1264,7 +1271,7 @@ items:
                   - name: Android 设备所有者注册配置文件
                     href: resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-list.md
                       - name: 获取
                         href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-get.md
@@ -1283,7 +1290,7 @@ items:
                   - name: Android for Work 应用
                     href: resources/intune-apps-androidforworkapp.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-apps-androidforworkapp-list.md
                       - name: 获取
                         href: api/intune-apps-androidforworkapp-get.md
@@ -1668,7 +1675,7 @@ items:
                   - name: macOS LOB 应用
                     href: resources/intune-apps-macoslobapp.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-apps-macoslobapp-list.md
                       - name: 获取
                         href: api/intune-apps-macoslobapp-get.md
@@ -1711,7 +1718,7 @@ items:
                   - name: macOS Office 套件应用
                     href: resources/intune-apps-macosofficesuiteapp.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-apps-macosofficesuiteapp-list.md
                       - name: 获取
                         href: api/intune-apps-macosofficesuiteapp-get.md
@@ -2115,7 +2122,7 @@ items:
                   - name: Office 套件应用
                     href: resources/intune-apps-officesuiteapp.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-apps-officesuiteapp-list.md
                       - name: 获取
                         href: api/intune-apps-officesuiteapp-get.md
@@ -2143,7 +2150,7 @@ items:
                   - name: 用户应用安装状态
                     href: resources/intune-apps-userappinstallstatus.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-apps-userappinstallstatus-list.md
                       - name: 获取
                         href: api/intune-apps-userappinstallstatus-get.md
@@ -2347,7 +2354,7 @@ items:
                   - name: Windows Phone XAP
                     href: resources/intune-apps-windowsphonexap.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-apps-windowsphonexap-list.md
                       - name: 获取
                         href: api/intune-apps-windowsphonexap-get.md
@@ -2360,7 +2367,7 @@ items:
                   - name: Windows 应用商店应用
                     href: resources/intune-apps-windowsstoreapp.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-apps-windowsstoreapp-list.md
                       - name: 获取
                         href: api/intune-apps-windowsstoreapp-get.md
@@ -2764,7 +2771,7 @@ items:
                   - name: 高级威胁防护载入设备设置状态
                     href: resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-get.md
@@ -2786,7 +2793,7 @@ items:
                   - name: Android 证书配置文件基础
                     href: resources/intune-deviceconfig-androidcertificateprofilebase.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-deviceconfig-androidcertificateprofilebase-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-androidcertificateprofilebase-get.md
@@ -2997,14 +3004,14 @@ items:
                   - name: Android for Work 证书配置文件基础
                     href: resources/intune-deviceconfig-androidforworkcertificateprofilebase.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-deviceconfig-androidforworkcertificateprofilebase-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-androidforworkcertificateprofilebase-get.md
                   - name: Android for Work 符合性策略
                     href: resources/intune-deviceconfig-androidforworkcompliancepolicy.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-deviceconfig-androidforworkcompliancepolicy-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-androidforworkcompliancepolicy-get.md
@@ -3819,7 +3826,7 @@ items:
                   - name: 设备配置用户状态
                     href: resources/intune-deviceconfig-deviceconfigurationuserstatus.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-deviceconfig-deviceconfigurationuserstatus-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-deviceconfigurationuserstatus-get.md
@@ -3864,7 +3871,7 @@ items:
                   - name: EAS 电子邮件配置文件配置基准
                     href: resources/intune-deviceconfig-easemailprofileconfigurationbase.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-deviceconfig-easemailprofileconfigurationbase-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-easemailprofileconfigurationbase-get.md
@@ -4063,7 +4070,7 @@ items:
                   - name: 组策略演示文稿小数位数文本框
                     href: resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-list.md
                       - name: 获取
                         href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-get.md
@@ -4076,7 +4083,7 @@ items:
                   - name: 组策略演示文稿下拉列表
                     href: resources/intune-grouppolicy-grouppolicypresentationdropdownlist.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-grouppolicy-grouppolicypresentationdropdownlist-list.md
                       - name: 获取
                         href: api/intune-grouppolicy-grouppolicypresentationdropdownlist-get.md
@@ -5332,7 +5339,7 @@ items:
                   - name: Windows 10 EAS 电子邮件配置文件配置
                     href: resources/intune-deviceconfig-windows10easemailprofileconfiguration.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-deviceconfig-windows10easemailprofileconfiguration-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-windows10easemailprofileconfiguration-get.md
@@ -5347,7 +5354,7 @@ items:
                   - name: Windows 10 Endpoint Protection 配置
                     href: resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-get.md
@@ -6403,7 +6410,7 @@ items:
                   - name: 设备管理脚本分配
                     href: resources/intune-devices-devicemanagementscriptassignment.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-devices-devicemanagementscriptassignment-list.md
                       - name: 获取
                         href: api/intune-devices-devicemanagementscriptassignment-get.md
@@ -6416,7 +6423,7 @@ items:
                   - name: 设备管理脚本设备状态
                     href: resources/intune-devices-devicemanagementscriptdevicestate.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-devices-devicemanagementscriptdevicestate-list.md
                       - name: 获取
                         href: api/intune-devices-devicemanagementscriptdevicestate-get.md
@@ -6618,7 +6625,7 @@ items:
                   - name: 嵌入式 SIM 卡激活代码池
                     href: resources/intune-esim-embeddedsimactivationcodepool.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-esim-embeddedsimactivationcodepool-list.md
                       - name: 获取
                         href: api/intune-esim-embeddedsimactivationcodepool-get.md
@@ -6633,7 +6640,7 @@ items:
                   - name: 嵌入式 SIM 卡激活代码池分配
                     href: resources/intune-esim-embeddedsimactivationcodepoolassignment.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-esim-embeddedsimactivationcodepoolassignment-list.md
                       - name: 获取
                         href: api/intune-esim-embeddedsimactivationcodepoolassignment-get.md
