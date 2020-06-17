@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4e0e9126564074d34fd88d48751440dede270d8b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d444bb967aea89206c4c0a47d82cdcb6218c5e89
+ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438650"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44287708"
 ---
 # <a name="get-chat"></a>获取聊天
 
@@ -22,14 +22,14 @@ ms.locfileid: "42438650"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Chat.Read   |
+|委派（工作或学校帐户） | Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Chat.Read.All、Chat.ReadWrite.All   |
+|Application | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 
 > [!NOTE]
 > 借助应用程序权限，支持获取一次聊天，但不支持[获取聊天列表](chat-list.md)。
@@ -54,7 +54,7 @@ GET /chats/{id}
 
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| Authorization  | Bearer {token}. Required.  |
 
 ## <a name="request-body"></a>请求正文
 

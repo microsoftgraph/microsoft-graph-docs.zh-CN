@@ -3,12 +3,12 @@ title: 使用 Microsoft Graph Sdk 上载大型文件
 description: 提供使用 Microsoft Graph Sdk 上载大型文件的指南。
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: 04d9591350e620f92cd7d699b88371ae05c3634f
-ms.sourcegitcommit: df2c52f84aae5d4fed641d7411ba547371f0eaad
+ms.openlocfilehash: 44465dcc22dcd84c78ee8aa7abfc1f6dc9e36c8a
+ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44052523"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44743997"
 ---
 # <a name="upload-large-files-using-the-microsoft-graph-sdks"></a>使用 Microsoft Graph Sdk 上载大型文件
 
@@ -101,8 +101,9 @@ const options: any = {
 
 ```java
 // Get an input stream for the file
-InputStream fileStream = new FileInputStream(localFilePath);
-long streamSize = (long)fileStream.available();
+File file = new File(localFilePath);
+InputStream fileStream = new FileInputStream(file);
+long streamSize = file.length();
 
 // Create a callback used by the upload provider
 IProgressCallback<DriveItem> callback = new IProgressCallback<DriveItem>() {
