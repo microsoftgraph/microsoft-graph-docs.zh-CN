@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8a8cd32323145cf0148b6d2be4dd93ee3e3471b8
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: b21781985c0ae6d48db1cb7a264989075bcfaa37
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178372"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791985"
 ---
-# <a name="create-grouppolicyconfigurationassignment"></a><span data-ttu-id="2746b-103">创建 groupPolicyConfigurationAssignment</span><span class="sxs-lookup"><span data-stu-id="2746b-103">Create groupPolicyConfigurationAssignment</span></span>
+# <a name="create-grouppolicyconfigurationassignment"></a><span data-ttu-id="477da-103">创建 groupPolicyConfigurationAssignment</span><span class="sxs-lookup"><span data-stu-id="477da-103">Create groupPolicyConfigurationAssignment</span></span>
 
-<span data-ttu-id="2746b-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2746b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="477da-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="477da-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="2746b-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="2746b-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="477da-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="477da-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="2746b-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="2746b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="477da-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="477da-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2746b-107">创建新的[groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)对象。</span><span class="sxs-lookup"><span data-stu-id="2746b-107">Create a new [groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md) object.</span></span>
+<span data-ttu-id="477da-107">创建新的[groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)对象。</span><span class="sxs-lookup"><span data-stu-id="477da-107">Create a new [groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="2746b-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="2746b-108">Prerequisites</span></span>
-<span data-ttu-id="2746b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2746b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="477da-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="477da-108">Prerequisites</span></span>
+<span data-ttu-id="477da-109">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="477da-109">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="477da-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="477da-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2746b-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="2746b-111">Permission type</span></span>|<span data-ttu-id="2746b-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="2746b-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="477da-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="477da-111">Permission type</span></span>|<span data-ttu-id="477da-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="477da-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="2746b-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2746b-113">Delegated (work or school account)</span></span>|<span data-ttu-id="2746b-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2746b-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="2746b-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2746b-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2746b-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="2746b-116">Not supported.</span></span>|
-|<span data-ttu-id="2746b-117">Application</span><span class="sxs-lookup"><span data-stu-id="2746b-117">Application</span></span>|<span data-ttu-id="2746b-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2746b-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="477da-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="477da-113">Delegated (work or school account)</span></span>|<span data-ttu-id="477da-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="477da-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="477da-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="477da-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="477da-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="477da-116">Not supported.</span></span>|
+|<span data-ttu-id="477da-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="477da-117">Application</span></span>|<span data-ttu-id="477da-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="477da-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2746b-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2746b-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="477da-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="477da-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,58 +40,62 @@ ms.locfileid: "44178372"
 POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/assignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2746b-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="2746b-120">Request headers</span></span>
-|<span data-ttu-id="2746b-121">标头</span><span class="sxs-lookup"><span data-stu-id="2746b-121">Header</span></span>|<span data-ttu-id="2746b-122">值</span><span class="sxs-lookup"><span data-stu-id="2746b-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="477da-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="477da-120">Request headers</span></span>
+|<span data-ttu-id="477da-121">标头</span><span class="sxs-lookup"><span data-stu-id="477da-121">Header</span></span>|<span data-ttu-id="477da-122">值</span><span class="sxs-lookup"><span data-stu-id="477da-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="2746b-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="2746b-123">Authorization</span></span>|<span data-ttu-id="2746b-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="2746b-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="2746b-125">接受</span><span class="sxs-lookup"><span data-stu-id="2746b-125">Accept</span></span>|<span data-ttu-id="2746b-126">application/json</span><span class="sxs-lookup"><span data-stu-id="2746b-126">application/json</span></span>|
+|<span data-ttu-id="477da-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="477da-123">Authorization</span></span>|<span data-ttu-id="477da-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="477da-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="477da-125">接受</span><span class="sxs-lookup"><span data-stu-id="477da-125">Accept</span></span>|<span data-ttu-id="477da-126">application/json</span><span class="sxs-lookup"><span data-stu-id="477da-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2746b-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="2746b-127">Request body</span></span>
-<span data-ttu-id="2746b-128">在请求正文中，提供 groupPolicyConfigurationAssignment 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2746b-128">In the request body, supply a JSON representation for the groupPolicyConfigurationAssignment object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="477da-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="477da-127">Request body</span></span>
+<span data-ttu-id="477da-128">在请求正文中，提供 groupPolicyConfigurationAssignment 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="477da-128">In the request body, supply a JSON representation for the groupPolicyConfigurationAssignment object.</span></span>
 
-<span data-ttu-id="2746b-129">下表显示创建 groupPolicyConfigurationAssignment 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="2746b-129">The following table shows the properties that are required when you create the groupPolicyConfigurationAssignment.</span></span>
+<span data-ttu-id="477da-129">下表显示创建 groupPolicyConfigurationAssignment 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="477da-129">The following table shows the properties that are required when you create the groupPolicyConfigurationAssignment.</span></span>
 
-|<span data-ttu-id="2746b-130">属性</span><span class="sxs-lookup"><span data-stu-id="2746b-130">Property</span></span>|<span data-ttu-id="2746b-131">类型</span><span class="sxs-lookup"><span data-stu-id="2746b-131">Type</span></span>|<span data-ttu-id="2746b-132">说明</span><span class="sxs-lookup"><span data-stu-id="2746b-132">Description</span></span>|
+|<span data-ttu-id="477da-130">属性</span><span class="sxs-lookup"><span data-stu-id="477da-130">Property</span></span>|<span data-ttu-id="477da-131">类型</span><span class="sxs-lookup"><span data-stu-id="477da-131">Type</span></span>|<span data-ttu-id="477da-132">说明</span><span class="sxs-lookup"><span data-stu-id="477da-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2746b-133">id</span><span class="sxs-lookup"><span data-stu-id="2746b-133">id</span></span>|<span data-ttu-id="2746b-134">字符串</span><span class="sxs-lookup"><span data-stu-id="2746b-134">String</span></span>|<span data-ttu-id="2746b-135">实体的键。</span><span class="sxs-lookup"><span data-stu-id="2746b-135">Key of the entity.</span></span>|
-|<span data-ttu-id="2746b-136">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="2746b-136">lastModifiedDateTime</span></span>|<span data-ttu-id="2746b-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2746b-137">DateTimeOffset</span></span>|<span data-ttu-id="2746b-138">上次修改实体的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="2746b-138">The date and time the entity was last modified.</span></span>|
-|<span data-ttu-id="2746b-139">target</span><span class="sxs-lookup"><span data-stu-id="2746b-139">target</span></span>|[<span data-ttu-id="2746b-140">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="2746b-140">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="2746b-141">以组策略配置为目标的组的类型。</span><span class="sxs-lookup"><span data-stu-id="2746b-141">The type of groups targeted the group policy configuration.</span></span>|
+|<span data-ttu-id="477da-133">id</span><span class="sxs-lookup"><span data-stu-id="477da-133">id</span></span>|<span data-ttu-id="477da-134">String</span><span class="sxs-lookup"><span data-stu-id="477da-134">String</span></span>|<span data-ttu-id="477da-135">实体的键。</span><span class="sxs-lookup"><span data-stu-id="477da-135">Key of the entity.</span></span>|
+|<span data-ttu-id="477da-136">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="477da-136">lastModifiedDateTime</span></span>|<span data-ttu-id="477da-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="477da-137">DateTimeOffset</span></span>|<span data-ttu-id="477da-138">上次修改实体的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="477da-138">The date and time the entity was last modified.</span></span>|
+|<span data-ttu-id="477da-139">target</span><span class="sxs-lookup"><span data-stu-id="477da-139">target</span></span>|[<span data-ttu-id="477da-140">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="477da-140">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="477da-141">以组策略配置为目标的组的类型。</span><span class="sxs-lookup"><span data-stu-id="477da-141">The type of groups targeted the group policy configuration.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="2746b-142">响应</span><span class="sxs-lookup"><span data-stu-id="2746b-142">Response</span></span>
-<span data-ttu-id="2746b-143">如果成功，此方法在响应`201 Created`正文中返回响应代码和[groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)对象。</span><span class="sxs-lookup"><span data-stu-id="2746b-143">If successful, this method returns a `201 Created` response code and a [groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="477da-142">响应</span><span class="sxs-lookup"><span data-stu-id="477da-142">Response</span></span>
+<span data-ttu-id="477da-143">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)对象。</span><span class="sxs-lookup"><span data-stu-id="477da-143">If successful, this method returns a `201 Created` response code and a [groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2746b-144">示例</span><span class="sxs-lookup"><span data-stu-id="2746b-144">Example</span></span>
+## <a name="example"></a><span data-ttu-id="477da-144">示例</span><span class="sxs-lookup"><span data-stu-id="477da-144">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="2746b-145">请求</span><span class="sxs-lookup"><span data-stu-id="2746b-145">Request</span></span>
-<span data-ttu-id="2746b-146">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2746b-146">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="477da-145">请求</span><span class="sxs-lookup"><span data-stu-id="477da-145">Request</span></span>
+<span data-ttu-id="477da-146">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="477da-146">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/assignments
 Content-type: application/json
-Content-length: 162
+Content-length: 329
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyConfigurationAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include"
   }
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="2746b-147">响应</span><span class="sxs-lookup"><span data-stu-id="2746b-147">Response</span></span>
-<span data-ttu-id="2746b-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2746b-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="477da-147">响应</span><span class="sxs-lookup"><span data-stu-id="477da-147">Response</span></span>
+<span data-ttu-id="477da-148">Here is an example of the response.</span><span class="sxs-lookup"><span data-stu-id="477da-148">Here is an example of the response.</span></span> <span data-ttu-id="477da-149">Note: The response object shown here may be truncated for brevity.</span><span class="sxs-lookup"><span data-stu-id="477da-149">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="477da-150">All of the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="477da-150">All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 275
+Content-Length: 442
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyConfigurationAssignment",
   "id": "2a4161e9-61e9-2a41-e961-412ae961412a",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include"
   }
 }
 ```

@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 81ac38e3ee8013451aee3f9e1c08b02edd6363be
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 851772988d8b962bc8bf2afcbc5c45172c1ab3f5
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444555"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791943"
 ---
-# <a name="list-defaultmanagedappprotections"></a><span data-ttu-id="6423d-103">列出 defaultManagedAppProtections</span><span class="sxs-lookup"><span data-stu-id="6423d-103">List defaultManagedAppProtections</span></span>
+# <a name="list-defaultmanagedappprotections"></a><span data-ttu-id="cbe62-103">列出 defaultManagedAppProtections</span><span class="sxs-lookup"><span data-stu-id="cbe62-103">List defaultManagedAppProtections</span></span>
 
-<span data-ttu-id="6423d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6423d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="cbe62-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cbe62-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="6423d-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="6423d-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="cbe62-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="cbe62-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="6423d-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="6423d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="cbe62-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="cbe62-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="6423d-107">列出 [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="6423d-107">List properties and relationships of the [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) objects.</span></span>
+<span data-ttu-id="cbe62-107">列出 [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="cbe62-107">List properties and relationships of the [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="6423d-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="6423d-108">Prerequisites</span></span>
-<span data-ttu-id="6423d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6423d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="cbe62-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="cbe62-108">Prerequisites</span></span>
+<span data-ttu-id="cbe62-109">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="cbe62-109">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="cbe62-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cbe62-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6423d-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="6423d-111">Permission type</span></span>|<span data-ttu-id="6423d-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="6423d-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="cbe62-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="cbe62-111">Permission type</span></span>|<span data-ttu-id="cbe62-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="cbe62-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="6423d-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6423d-113">Delegated (work or school account)</span></span>|<span data-ttu-id="6423d-114">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="6423d-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="6423d-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6423d-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6423d-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="6423d-116">Not supported.</span></span>|
-|<span data-ttu-id="6423d-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="6423d-117">Application</span></span>|<span data-ttu-id="6423d-118">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="6423d-118">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="cbe62-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cbe62-113">Delegated (work or school account)</span></span>|<span data-ttu-id="cbe62-114">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="cbe62-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="cbe62-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cbe62-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="cbe62-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="cbe62-116">Not supported.</span></span>|
+|<span data-ttu-id="cbe62-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="cbe62-117">Application</span></span>|<span data-ttu-id="cbe62-118">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="cbe62-118">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="6423d-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6423d-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cbe62-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cbe62-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,32 +40,32 @@ ms.locfileid: "43444555"
 GET /deviceAppManagement/defaultManagedAppProtections
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="6423d-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="6423d-120">Request headers</span></span>
-|<span data-ttu-id="6423d-121">标头</span><span class="sxs-lookup"><span data-stu-id="6423d-121">Header</span></span>|<span data-ttu-id="6423d-122">值</span><span class="sxs-lookup"><span data-stu-id="6423d-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cbe62-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="cbe62-120">Request headers</span></span>
+|<span data-ttu-id="cbe62-121">标头</span><span class="sxs-lookup"><span data-stu-id="cbe62-121">Header</span></span>|<span data-ttu-id="cbe62-122">值</span><span class="sxs-lookup"><span data-stu-id="cbe62-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="6423d-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="6423d-123">Authorization</span></span>|<span data-ttu-id="6423d-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="6423d-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="6423d-125">接受</span><span class="sxs-lookup"><span data-stu-id="6423d-125">Accept</span></span>|<span data-ttu-id="6423d-126">application/json</span><span class="sxs-lookup"><span data-stu-id="6423d-126">application/json</span></span>|
+|<span data-ttu-id="cbe62-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="cbe62-123">Authorization</span></span>|<span data-ttu-id="cbe62-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="cbe62-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="cbe62-125">接受</span><span class="sxs-lookup"><span data-stu-id="cbe62-125">Accept</span></span>|<span data-ttu-id="cbe62-126">application/json</span><span class="sxs-lookup"><span data-stu-id="cbe62-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6423d-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="6423d-127">Request body</span></span>
-<span data-ttu-id="6423d-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="6423d-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cbe62-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="cbe62-127">Request body</span></span>
+<span data-ttu-id="cbe62-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="cbe62-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6423d-129">响应</span><span class="sxs-lookup"><span data-stu-id="6423d-129">Response</span></span>
-<span data-ttu-id="6423d-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="6423d-130">If successful, this method returns a `200 OK` response code and a collection of [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="cbe62-129">响应</span><span class="sxs-lookup"><span data-stu-id="cbe62-129">Response</span></span>
+<span data-ttu-id="cbe62-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="cbe62-130">If successful, this method returns a `200 OK` response code and a collection of [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6423d-131">示例</span><span class="sxs-lookup"><span data-stu-id="6423d-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="cbe62-131">示例</span><span class="sxs-lookup"><span data-stu-id="cbe62-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="6423d-132">请求</span><span class="sxs-lookup"><span data-stu-id="6423d-132">Request</span></span>
-<span data-ttu-id="6423d-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="6423d-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="cbe62-132">请求</span><span class="sxs-lookup"><span data-stu-id="cbe62-132">Request</span></span>
+<span data-ttu-id="cbe62-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="cbe62-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections
 ```
 
-### <a name="response"></a><span data-ttu-id="6423d-134">响应</span><span class="sxs-lookup"><span data-stu-id="6423d-134">Response</span></span>
-<span data-ttu-id="6423d-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="6423d-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="cbe62-134">响应</span><span class="sxs-lookup"><span data-stu-id="cbe62-134">Response</span></span>
+<span data-ttu-id="cbe62-135">Here is an example of the response.</span><span class="sxs-lookup"><span data-stu-id="cbe62-135">Here is an example of the response.</span></span> <span data-ttu-id="cbe62-136">Note: The response object shown here may be truncated for brevity.</span><span class="sxs-lookup"><span data-stu-id="cbe62-136">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="cbe62-137">All of the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="cbe62-137">All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5160
+Content-Length: 5428
 
 {
   "value": [
@@ -124,6 +124,7 @@ Content-Length: 5160
         "sharePoint"
       ],
       "appActionIfUnableToAuthenticateUser": "wipe",
+      "dialerRestrictionLevel": "managedApps",
       "appDataEncryptionType": "afterDeviceRestart",
       "screenCaptureBlocked": true,
       "encryptAppData": true,
@@ -177,7 +178,10 @@ Content-Length: 5160
       "allowedAndroidDeviceModels": [
         "Allowed Android Device Models value"
       ],
-      "appActionIfAndroidDeviceModelNotAllowed": "wipe"
+      "appActionIfAndroidDeviceModelNotAllowed": "wipe",
+      "customDialerAppProtocol": "Custom Dialer App Protocol value",
+      "customDialerAppPackageId": "Custom Dialer App Package Id value",
+      "customDialerAppDisplayName": "Custom Dialer App Display Name value"
     }
   ]
 }
