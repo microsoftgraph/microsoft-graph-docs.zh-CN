@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2187035f0f36cc6ae34d706d1bc0054b90584687
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 8f89c45265d27819202087ed8e1931606323dd29
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178904"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44788904"
 ---
 # <a name="retirescheduledmanageddevice-resource-type"></a>retireScheduledManagedDevice 资源类型
 
@@ -25,17 +25,17 @@ ms.locfileid: "44178904"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
-|managedDeviceId|字符串|托管 DeviceId|
+|id|String|实体的键。|
+|managedDeviceId|String|托管 DeviceId|
 |managedDeviceName|String|托管设备名称|
-|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|托管设备设备类型。 可能的值为`desktop`： `windowsRT`、 `winMO6`、 `nokia` `windowsPhone` `mac` `winCE` `palm` `unknown`、、、、、、、、、、、、、、、、、、、、。 `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `blackberry`|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|托管设备设备类型。 可能的值为：、、、、、、、、、、、、、、、、、、、、、、、 `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `blackberry` `palm` `unknown` 。|
 |complianceState|[complianceStatus](../resources/intune-shared-compliancestatus.md)|托管设备 ComplianceStatus。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |retireAfterDateTime|DateTimeOffset|托管设备在 DateTime 之后停用|
 |managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|托管设备 ManagementAgentType。 可能的值是：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`、`microsoft365ManagedMdm`、`windowsManagementCloudApi`。|
 |所有者|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|托管设备 ManagedDeviceOwnerType。 可取值为：`unknown`、`company`、`personal`。|
-|deviceCompliancePolicyName|字符串|设备合规性策略名称|
-|deviceCompliancePolicyId|字符串|设备合规性 PolicyId|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。|
+|deviceCompliancePolicyName|String|设备合规性策略名称|
+|deviceCompliancePolicyId|String|设备合规性 PolicyId|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 无

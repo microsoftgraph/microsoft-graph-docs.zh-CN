@@ -4,12 +4,12 @@ description: 列出与租户组织的移动应用管理（MAM）相关的适用�
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e436e32fd235128e57f96fbf916a9d51c4206e64
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: ceb14a8ee5f1504a9e3bb0d0bc5ebef59f1eac06
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178890"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44788722"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -48,6 +48,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [受管理应用的已标记原因](intune-mam-managedappflaggedreason.md)
 - [托管应用程序通知限制](intune-mam-managedappnotificationrestriction.md)
 - [托管的应用操作](intune-mam-managedappoperation.md)
+- [托管应用电话号码重定向级别](intune-mam-managedappphonenumberredirectlevel.md)
 - [托管的应用 PIN 字符集](intune-mam-managedapppincharacterset.md)
 - [托管的应用策略](intune-mam-managedapppolicy.md)
 - [托管应用策略部署摘要](intune-mam-managedapppolicydeploymentsummary.md)

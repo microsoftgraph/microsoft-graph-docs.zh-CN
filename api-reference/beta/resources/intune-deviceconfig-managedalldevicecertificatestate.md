@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf190cae98f86fa3361255ebe1632089dd94b70d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3f6bd2a1511ea51962c67bee0be88b11c3579e3a
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437330"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44790101"
 ---
 # <a name="managedalldevicecertificatestate-resource-type"></a>managedAllDeviceCertificateState 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "43437330"
 
 尚未记录
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 managedAllDeviceCertificateStates](../api/intune-deviceconfig-managedalldevicecertificatestate-list.md)|[managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)集合|列出[managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)对象的属性和关系。|
@@ -46,6 +46,7 @@ ms.locfileid: "43437330"
 |certificateKeyUsages|Int32|密钥用法|
 |certificateExtendedKeyUsages|String|增强型密钥使用|
 |certificateIssuanceDateTime|DateTimeOffset|颁发日期|
+|certificateRevokeStatusLastChangeDateTime|DateTimeOffset|上次更改吊销状态的时间|
 
 ## <a name="relationships"></a>关系
 无
@@ -72,7 +73,8 @@ ms.locfileid: "43437330"
   "certificateSubjectName": "String",
   "certificateKeyUsages": 1024,
   "certificateExtendedKeyUsages": "String",
-  "certificateIssuanceDateTime": "String (timestamp)"
+  "certificateIssuanceDateTime": "String (timestamp)",
+  "certificateRevokeStatusLastChangeDateTime": "String (timestamp)"
 }
 ```
 
