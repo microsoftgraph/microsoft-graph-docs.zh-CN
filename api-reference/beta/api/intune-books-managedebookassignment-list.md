@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 727efb9ad4a51790c0c07203ed5aef21f04aeef5
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: b5ce010bd629ff0c2bb149bc30a022f642494bcd
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44174977"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793190"
 ---
-# <a name="list-managedebookassignments"></a><span data-ttu-id="06a3b-103">列出 managedEBookAssignments</span><span class="sxs-lookup"><span data-stu-id="06a3b-103">List managedEBookAssignments</span></span>
+# <a name="list-managedebookassignments"></a><span data-ttu-id="06f19-103">列出 managedEBookAssignments</span><span class="sxs-lookup"><span data-stu-id="06f19-103">List managedEBookAssignments</span></span>
 
-<span data-ttu-id="06a3b-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="06a3b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="06f19-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="06f19-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="06a3b-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="06a3b-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="06f19-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="06f19-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="06a3b-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="06a3b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="06f19-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="06f19-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="06a3b-107">列出 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="06a3b-107">List properties and relationships of the [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) objects.</span></span>
+<span data-ttu-id="06f19-107">列出 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="06f19-107">List properties and relationships of the [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="06a3b-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="06a3b-108">Prerequisites</span></span>
-<span data-ttu-id="06a3b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="06a3b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="06f19-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="06f19-108">Prerequisites</span></span>
+<span data-ttu-id="06f19-109">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="06f19-109">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="06f19-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="06f19-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="06a3b-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="06a3b-111">Permission type</span></span>|<span data-ttu-id="06a3b-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="06a3b-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="06f19-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="06f19-111">Permission type</span></span>|<span data-ttu-id="06f19-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="06f19-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="06a3b-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="06a3b-113">Delegated (work or school account)</span></span>|<span data-ttu-id="06a3b-114">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="06a3b-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="06a3b-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="06a3b-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="06a3b-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="06a3b-116">Not supported.</span></span>|
-|<span data-ttu-id="06a3b-117">Application</span><span class="sxs-lookup"><span data-stu-id="06a3b-117">Application</span></span>|<span data-ttu-id="06a3b-118">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="06a3b-118">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="06f19-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="06f19-113">Delegated (work or school account)</span></span>|<span data-ttu-id="06f19-114">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="06f19-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="06f19-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="06f19-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="06f19-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="06f19-116">Not supported.</span></span>|
+|<span data-ttu-id="06f19-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="06f19-117">Application</span></span>|<span data-ttu-id="06f19-118">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="06f19-118">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="06a3b-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="06a3b-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="06f19-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="06f19-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,32 +40,32 @@ ms.locfileid: "44174977"
 GET /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="06a3b-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="06a3b-120">Request headers</span></span>
-|<span data-ttu-id="06a3b-121">标头</span><span class="sxs-lookup"><span data-stu-id="06a3b-121">Header</span></span>|<span data-ttu-id="06a3b-122">值</span><span class="sxs-lookup"><span data-stu-id="06a3b-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="06f19-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="06f19-120">Request headers</span></span>
+|<span data-ttu-id="06f19-121">标头</span><span class="sxs-lookup"><span data-stu-id="06f19-121">Header</span></span>|<span data-ttu-id="06f19-122">值</span><span class="sxs-lookup"><span data-stu-id="06f19-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="06a3b-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="06a3b-123">Authorization</span></span>|<span data-ttu-id="06a3b-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="06a3b-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="06a3b-125">接受</span><span class="sxs-lookup"><span data-stu-id="06a3b-125">Accept</span></span>|<span data-ttu-id="06a3b-126">application/json</span><span class="sxs-lookup"><span data-stu-id="06a3b-126">application/json</span></span>|
+|<span data-ttu-id="06f19-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="06f19-123">Authorization</span></span>|<span data-ttu-id="06f19-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="06f19-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="06f19-125">接受</span><span class="sxs-lookup"><span data-stu-id="06f19-125">Accept</span></span>|<span data-ttu-id="06f19-126">application/json</span><span class="sxs-lookup"><span data-stu-id="06f19-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="06a3b-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="06a3b-127">Request body</span></span>
-<span data-ttu-id="06a3b-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="06a3b-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="06f19-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="06f19-127">Request body</span></span>
+<span data-ttu-id="06f19-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="06f19-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="06a3b-129">响应</span><span class="sxs-lookup"><span data-stu-id="06a3b-129">Response</span></span>
-<span data-ttu-id="06a3b-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="06a3b-130">If successful, this method returns a `200 OK` response code and a collection of [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="06f19-129">响应</span><span class="sxs-lookup"><span data-stu-id="06f19-129">Response</span></span>
+<span data-ttu-id="06f19-130">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="06f19-130">If successful, this method returns a `200 OK` response code and a collection of [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="06a3b-131">示例</span><span class="sxs-lookup"><span data-stu-id="06a3b-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="06f19-131">示例</span><span class="sxs-lookup"><span data-stu-id="06f19-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="06a3b-132">请求</span><span class="sxs-lookup"><span data-stu-id="06a3b-132">Request</span></span>
-<span data-ttu-id="06a3b-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="06a3b-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="06f19-132">请求</span><span class="sxs-lookup"><span data-stu-id="06f19-132">Request</span></span>
+<span data-ttu-id="06f19-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="06f19-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ```
 
-### <a name="response"></a><span data-ttu-id="06a3b-134">响应</span><span class="sxs-lookup"><span data-stu-id="06a3b-134">Response</span></span>
-<span data-ttu-id="06a3b-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="06a3b-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="06f19-134">响应</span><span class="sxs-lookup"><span data-stu-id="06f19-134">Response</span></span>
+<span data-ttu-id="06f19-135">Here is an example of the response.</span><span class="sxs-lookup"><span data-stu-id="06f19-135">Here is an example of the response.</span></span> <span data-ttu-id="06f19-136">Note: The response object shown here may be truncated for brevity.</span><span class="sxs-lookup"><span data-stu-id="06f19-136">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="06f19-137">All of the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="06f19-137">All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 294
+Content-Length: 469
 
 {
   "value": [
@@ -73,7 +73,9 @@ Content-Length: 294
       "@odata.type": "#microsoft.graph.managedEBookAssignment",
       "id": "ae8b0d27-0d27-ae8b-270d-8bae270d8bae",
       "target": {
-        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
+        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+        "deviceAndAppManagementAssignmentFilterType": "include"
       },
       "installIntent": "required"
     }

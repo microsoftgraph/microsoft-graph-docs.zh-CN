@@ -5,35 +5,37 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e05c4173a6d41847f361c657afb77bd90434c3a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4388710e079366193f2a2ca7bd842a2d7b5763cf
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453132"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793596"
 ---
-# <a name="alllicensedusersassignmenttarget-resource-type"></a><span data-ttu-id="c5fbb-103">allLicensedUsersAssignmentTarget 资源类型</span><span class="sxs-lookup"><span data-stu-id="c5fbb-103">allLicensedUsersAssignmentTarget resource type</span></span>
+# <a name="alllicensedusersassignmenttarget-resource-type"></a><span data-ttu-id="f89ca-103">allLicensedUsersAssignmentTarget 资源类型</span><span class="sxs-lookup"><span data-stu-id="f89ca-103">allLicensedUsersAssignmentTarget resource type</span></span>
 
-<span data-ttu-id="c5fbb-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c5fbb-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f89ca-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f89ca-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="c5fbb-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="c5fbb-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="f89ca-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="f89ca-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="c5fbb-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="c5fbb-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f89ca-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="f89ca-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="c5fbb-107">表示租户中所有许可用户的赋值。</span><span class="sxs-lookup"><span data-stu-id="c5fbb-107">Represents an assignment to all licensed users in the tenant.</span></span>
+<span data-ttu-id="f89ca-107">表示租户中所有许可用户的赋值。</span><span class="sxs-lookup"><span data-stu-id="f89ca-107">Represents an assignment to all licensed users in the tenant.</span></span>
 
 
-<span data-ttu-id="c5fbb-108">继承自 [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span><span class="sxs-lookup"><span data-stu-id="c5fbb-108">Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span></span>
+<span data-ttu-id="f89ca-108">继承自 [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span><span class="sxs-lookup"><span data-stu-id="f89ca-108">Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c5fbb-109">属性</span><span class="sxs-lookup"><span data-stu-id="c5fbb-109">Properties</span></span>
-|<span data-ttu-id="c5fbb-110">属性</span><span class="sxs-lookup"><span data-stu-id="c5fbb-110">Property</span></span>|<span data-ttu-id="c5fbb-111">类型</span><span class="sxs-lookup"><span data-stu-id="c5fbb-111">Type</span></span>|<span data-ttu-id="c5fbb-112">说明</span><span class="sxs-lookup"><span data-stu-id="c5fbb-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f89ca-109">属性</span><span class="sxs-lookup"><span data-stu-id="f89ca-109">Properties</span></span>
+|<span data-ttu-id="f89ca-110">属性</span><span class="sxs-lookup"><span data-stu-id="f89ca-110">Property</span></span>|<span data-ttu-id="f89ca-111">类型</span><span class="sxs-lookup"><span data-stu-id="f89ca-111">Type</span></span>|<span data-ttu-id="f89ca-112">说明</span><span class="sxs-lookup"><span data-stu-id="f89ca-112">Description</span></span>|
 |:---|:---|:---|
+|<span data-ttu-id="f89ca-113">deviceAndAppManagementAssignmentFilterId</span><span class="sxs-lookup"><span data-stu-id="f89ca-113">deviceAndAppManagementAssignmentFilterId</span></span>|<span data-ttu-id="f89ca-114">String</span><span class="sxs-lookup"><span data-stu-id="f89ca-114">String</span></span>|<span data-ttu-id="f89ca-115">目标工作分配的筛选器的 Id。</span><span class="sxs-lookup"><span data-stu-id="f89ca-115">The Id of the filter for the target assignment.</span></span> <span data-ttu-id="f89ca-116">继承自[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span><span class="sxs-lookup"><span data-stu-id="f89ca-116">Inherited from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span></span>|
+|<span data-ttu-id="f89ca-117">deviceAndAppManagementAssignmentFilterType</span><span class="sxs-lookup"><span data-stu-id="f89ca-117">deviceAndAppManagementAssignmentFilterType</span></span>|[<span data-ttu-id="f89ca-118">deviceAndAppManagementAssignmentFilterType</span><span class="sxs-lookup"><span data-stu-id="f89ca-118">deviceAndAppManagementAssignmentFilterType</span></span>](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|<span data-ttu-id="f89ca-119">目标工作分配的筛选器类型，即 Exclude 或 Include。</span><span class="sxs-lookup"><span data-stu-id="f89ca-119">The type of filter of the target assignment i.e. Exclude or Include.</span></span> <span data-ttu-id="f89ca-120">继承自[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)。</span><span class="sxs-lookup"><span data-stu-id="f89ca-120">Inherited from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md).</span></span> <span data-ttu-id="f89ca-121">可取值为：`none`、`include`。</span><span class="sxs-lookup"><span data-stu-id="f89ca-121">Possible values are: `none`, `include`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="c5fbb-113">关系</span><span class="sxs-lookup"><span data-stu-id="c5fbb-113">Relationships</span></span>
-<span data-ttu-id="c5fbb-114">无</span><span class="sxs-lookup"><span data-stu-id="c5fbb-114">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="f89ca-122">关系</span><span class="sxs-lookup"><span data-stu-id="f89ca-122">Relationships</span></span>
+<span data-ttu-id="f89ca-123">无</span><span class="sxs-lookup"><span data-stu-id="f89ca-123">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="c5fbb-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c5fbb-115">JSON Representation</span></span>
-<span data-ttu-id="c5fbb-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c5fbb-116">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f89ca-124">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f89ca-124">JSON Representation</span></span>
+<span data-ttu-id="f89ca-125">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f89ca-125">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
@@ -41,7 +43,9 @@ ms.locfileid: "43453132"
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget"
+  "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget",
+  "deviceAndAppManagementAssignmentFilterId": "String",
+  "deviceAndAppManagementAssignmentFilterType": "String"
 }
 ```
 
