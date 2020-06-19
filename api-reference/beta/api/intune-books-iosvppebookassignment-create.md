@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bf380d978abd083df51b8eb29c9425ad776f5d06
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a333b000b4e83a5afb50f0402b82dfa2f68778f7
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43392657"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793239"
 ---
 # <a name="create-iosvppebookassignment"></a>创建 iosVppEBookAssignment
 
@@ -23,7 +23,7 @@ ms.locfileid: "43392657"
 创建新的 [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -53,7 +53,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|
+|id|String|实体的键。 继承自 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|电子图书的分配目标。 继承自 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|电子图书的安装意图。 继承自[managedEBookAssignment](../resources/intune-books-managedebookassignment.md)。 可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
 
@@ -69,29 +69,33 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 Content-type: application/json
-Content-length: 193
+Content-length: 360
 
 {
   "@odata.type": "#microsoft.graph.iosVppEBookAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include"
   },
   "installIntent": "required"
 }
 ```
 
 ### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 242
+Content-Length: 409
 
 {
   "@odata.type": "#microsoft.graph.iosVppEBookAssignment",
   "id": "48f05789-5789-48f0-8957-f0488957f048",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include"
   },
   "installIntent": "required"
 }

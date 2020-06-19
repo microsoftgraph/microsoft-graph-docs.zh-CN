@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的管理设备的 Intune 终结点�
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 959c7c7d0f38dfa036f74cd4fd36f26a2fbfb442
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: a6043023bd734a571028baad6b0f8ad26e12d04e
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179318"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793470"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -36,6 +36,10 @@ ms.locfileid: "44179318"
 - [批量托管的设备操作结果](intune-devices-bulkmanageddeviceactionresult.md)
 - [机箱类型](intune-devices-chassistype.md)
 - [循环 geofence 管理条件](intune-fencing-circulargeofencemanagementcondition.md)
+- [Comanaged 设备摘要](intune-devices-comanageddevicessummary.md)
+- [Comanagement 符合条件的设备](intune-devices-comanagementeligibledevice.md)
+- [Comanagement 符合条件的设备摘要](intune-devices-comanagementeligibledevicessummary.md)
+- [Comanagement 符合条件的类型](intune-devices-comanagementeligibletype.md)
 - [合规性状态](intune-devices-compliancestate.md)
 - [配置管理器操作](intune-devices-configurationmanageraction.md)
 - [配置管理器操作传递状态](intune-devices-configurationmanageractiondeliverystatus.md)
@@ -49,6 +53,9 @@ ms.locfileid: "44179318"
 - [从共享 Apple 设备删除用户操作结果](intune-devices-deleteuserfromsharedappledeviceactionresult.md)
 - [检测到的应用](intune-devices-detectedapp.md)
 - [设备操作结果](intune-devices-deviceactionresult.md)
+- [设备合规性脚本](intune-devices-devicecompliancescript.md)
+- [设备合规性脚本设备状态](intune-devices-devicecompliancescriptdevicestate.md)
+- [设备合规性脚本运行摘要](intune-devices-devicecompliancescriptrunsummary.md)
 - [设备注册失败原因](intune-troubleshooting-deviceenrollmentfailurereason.md)
 - [设备 Exchange 访问状态摘要](intune-devices-deviceexchangeaccessstatesummary.md)
 - [设备地理位置](intune-devices-devicegeolocation.md)
@@ -220,6 +227,7 @@ ms.locfileid: "44179318"
 - [用户体验分析概述](intune-devices-userexperienceanalyticsoverview.md)
 - [用户体验分析回归概况摘要](intune-devices-userexperienceanalyticsregressionsummary.md)
 - [用户体验分析分数历史记录](intune-devices-userexperienceanalyticsscorehistory.md)
+- [用户体验分析设置](intune-devices-userexperienceanalyticssettings.md)
 - [用户体验分析汇总者](intune-devices-userexperienceanalyticssummarizedby.md)
 - [变量管理条件表达式](intune-fencing-variablemanagementconditionexpression.md)
 - [Windows autopilot 部署状态](intune-troubleshooting-windowsautopilotdeploymentstate.md)

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9f59a2468e5698eef3b1d668b08ec30b8aa11954
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 69f5e1f77a1fed08d8139e63ffada76e3a948917
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453139"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793603"
 ---
 # <a name="alldevicesassignmenttarget-resource-type"></a>allDevicesAssignmentTarget 资源类型
 
@@ -28,6 +28,8 @@ ms.locfileid: "43453139"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
+|deviceAndAppManagementAssignmentFilterId|String|目标工作分配的筛选器的 Id。 继承自[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|
+|deviceAndAppManagementAssignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|目标工作分配的筛选器类型，即 Exclude 或 Include。 继承自[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)。 可取值为：`none`、`include`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -41,7 +43,9 @@ ms.locfileid: "43453139"
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget"
+  "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+  "deviceAndAppManagementAssignmentFilterId": "String",
+  "deviceAndAppManagementAssignmentFilterType": "String"
 }
 ```
 

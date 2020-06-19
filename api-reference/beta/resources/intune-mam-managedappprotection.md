@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4a61ae6b5badd624c15b4d1894d80d7d33ade638
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: a7f672351fcf457991a12b3f51be93a7979a5615
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178225"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793862"
 ---
 # <a name="managedappprotection-resource-type"></a>managedAppProtection 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "44178225"
 
 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[List managedAppProtections](../api/intune-mam-managedappprotection-list.md)|[managedAppProtection](../resources/intune-mam-managedappprotection.md) 集合|列出 [managedAppProtection](../resources/intune-mam-managedappprotection.md) 对象的属性和关系。|
@@ -39,37 +39,37 @@ ms.locfileid: "44178225"
 |说明|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|创建策略的日期和时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|字符串|实体的键。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|实体的版本。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|持续时间|设备未连接到 Internet 时在该时间段后检查访问权限。|
 |periodOnlineBeforeAccessCheck|持续时间|设备连接到 Internet 时在该时间段后检查访问权限。|
 |allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune-mam-managedappdatatransferlevel.md)|允许传输其中的数据的源。 可取值为：`allApps`、`managedApps`、`none`。|
 |allowedOutboundDataTransferDestinations|[managedAppDataTransferLevel](../resources/intune-mam-managedappdatatransferlevel.md)|允许向其传输数据的目标。 可取值为：`allApps`、`managedApps`、`none`。|
-|organizationalCredentialsRequired|Boolean|指示是否需要组织凭据才能使用应用。|
+|organizationalCredentialsRequired|布尔值|指示是否需要组织凭据才能使用应用。|
 |allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune-mam-managedappclipboardsharinglevel.md)|可以在托管设备上的应用之间共享剪贴板的级别。 可取值为：`allApps`、`managedAppsWithPasteIn`、`managedApps`、`blocked`。|
-|dataBackupBlocked|Boolean|指示是否阻止备份托管应用的数据。|
-|deviceComplianceRequired|Boolean|指示是否需要设备合规性。|
-|managedBrowserToOpenLinksRequired|Boolean|指示是应在 managed browser 应用中打开 internet 链接，还是应在 CustomBrowserProtocol （for iOS）或 CustomBrowserPackageId/CustomBrowserDisplayName 指定的任何自定义浏览器中打开 internet 链接（针对 Android）|
-|saveAsBlocked|Boolean|指示用户是否可以使用“另存为”菜单项保存受保护文件的副本。|
+|dataBackupBlocked|布尔值|指示是否阻止备份托管应用的数据。|
+|deviceComplianceRequired|布尔值|指示是否需要设备合规性。|
+|managedBrowserToOpenLinksRequired|布尔值|指示是应在 managed browser 应用中打开 internet 链接，还是应在 CustomBrowserProtocol （for iOS）或 CustomBrowserPackageId/CustomBrowserDisplayName 指定的任何自定义浏览器中打开 internet 链接（针对 Android）|
+|saveAsBlocked|布尔值|指示用户是否可以使用“另存为”菜单项保存受保护文件的副本。|
 |periodOfflineBeforeWipeIsEnforced|持续时间|在擦除所有托管数据之前，允许应用保持从 Internet 断开连接的时间量。|
-|pinRequired|Boolean|指示是否需要应用级 pin。|
+|pinRequired|布尔值|指示是否需要应用级 pin。|
 |maximumPinRetries|Int32|在阻止或擦除托管应用之前，不正确 pin 重试的最大次数。|
-|simplePinBlocked|Boolean|指示是否阻止 simplePin。|
+|simplePinBlocked|布尔值|指示是否阻止 simplePin。|
 |minimumPinLength|Int32|PinRequired 设置为 True 时应用级 pin 所需的最小 pin 长度。|
 |pinCharacterSet|[managedAppPinCharacterSet](../resources/intune-mam-managedapppincharacterset.md)|PinRequired 设置为 True 时可用于应用级 pin 的字符集。 可取值为：`numeric`、`alphanumericAndSymbol`。|
 |periodBeforePinReset|Duration|TimePeriod，如果 PinRequired 设置为 True，必须在此之前重置所有级别的 pin。|
 |allowedDataStorageLocations|[managedAppDataStorageLocation](../resources/intune-mam-managedappdatastoragelocation.md)集合|用户可能存储托管数据的数据存储位置。|
-|contactSyncBlocked|Boolean|指示联系人是否可以同步到用户的设备。|
+|contactSyncBlocked|布尔值|指示联系人是否可以同步到用户的设备。|
 |printBlocked|Boolean|指示是否允许从托管应用进行打印。|
-|fingerprintBlocked|Boolean|指示如果 PinRequired 设置为 True，是否允许使用指纹读取器代替 pin。|
+|fingerprintBlocked|布尔值|指示如果 PinRequired 设置为 True，是否允许使用指纹读取器代替 pin。|
 |disableAppPinIfDevicePinIsSet|Boolean|指示如果设置了设备 pin，是否需要使用应用 pin。|
-|minimumRequiredOsVersion|字符串|低于指定版本的版本将阻止托管应用访问公司数据。|
-|minimumWarningOsVersion|字符串|低于指定版本的版本将导致托管应用访问公司数据时出现警告消息。|
-|minimumRequiredAppVersion|字符串|低于指定版本的版本将阻止托管应用访问公司数据。|
+|minimumRequiredOsVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。|
+|minimumWarningOsVersion|String|低于指定版本的版本将导致托管应用访问公司数据时出现警告消息。|
+|minimumRequiredAppVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。|
 |minimumWarningAppVersion|String|低于指定版本的版本将导致托管应用出现警告消息。|
-|minimumWipeOsVersion|字符串|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。|
-|minimumWipeAppVersion|字符串|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。|
+|minimumWipeOsVersion|String|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。|
+|minimumWipeAppVersion|String|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|如果将 DeviceComplianceRequired 设置为 true，则定义在设备为根或已越狱时的托管应用行为（阻止或擦除）。 可取值为：`block`、`wipe`、`warn`。|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|根据最大错误 pin 重试次数定义托管应用行为，即阻止或擦除。 可取值为：`block`、`wipe`、`warn`。|
 |pinRequiredInsteadOfBiometricTimeout|持续时间|以分钟为单位的应用程序 pin （而不是无生物识别密码）超时|
@@ -79,9 +79,10 @@ ms.locfileid: "44178225"
 |managedBrowser|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|指示应在哪个托管浏览器中打开 internet 链接。 配置此属性时，ManagedBrowserToOpenLinksRequired 应为 true。 可取值为：`notConfigured`、`microsoftEdge`。|
 |maximumAllowedDeviceThreatLevel|[managedAppDeviceThreatLevel](../resources/intune-mam-managedappdevicethreatlevel.md)|允许的最大设备威胁级别，如 MTD 应用程序所报告的那样。 可取值为：`notConfigured`、`secured`、`low`、`medium`、`high`。|
 |mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|确定在不满足移动威胁防御威胁阈值时要采取的操作。 警告不是此属性的受支持的值。 可取值为：`block`、`wipe`、`warn`。|
-|blockDataIngestionIntoOrganizationDocuments|Boolean|指示用户是否可以将数据导入到组织文档中。|
+|blockDataIngestionIntoOrganizationDocuments|布尔值|指示用户是否可以将数据导入到组织文档中。|
 |allowedDataIngestionLocations|[managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md)集合|用户可能存储托管数据的数据存储位置。|
 |appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|如果设置，则它将指定在用户因其身份验证令牌无效而无法签入的情况下要执行的操作。 当用户在 AAD 中被删除或禁用时，会发生这种情况。 可取值为：`block`、`wipe`、`warn`。|
+|dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|允许单击以打开电话号码的拨号程序应用程序的类。 可取值为：`allApps`、`managedApps`、`customApp`、`blocked`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -149,7 +150,8 @@ ms.locfileid: "44178225"
   "allowedDataIngestionLocations": [
     "String"
   ],
-  "appActionIfUnableToAuthenticateUser": "String"
+  "appActionIfUnableToAuthenticateUser": "String",
+  "dialerRestrictionLevel": "String"
 }
 ```
 

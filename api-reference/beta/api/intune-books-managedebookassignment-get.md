@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 25ded83baa7e8f93e6bc185d8fb643def4b4d9cf
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 5d34aa9c1a5970fba3c90477929c5ccd735d1171
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44175012"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793197"
 ---
 # <a name="get-managedebookassignment"></a>获取 managedEBookAssignment
 
@@ -23,13 +23,13 @@ ms.locfileid: "44175012"
 读取 [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -64,18 +64,20 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedE
 ```
 
 ### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 268
+Content-Length: 439
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.managedEBookAssignment",
     "id": "ae8b0d27-0d27-ae8b-270d-8bae270d8bae",
     "target": {
-      "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
+      "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget",
+      "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+      "deviceAndAppManagementAssignmentFilterType": "include"
     },
     "installIntent": "required"
   }

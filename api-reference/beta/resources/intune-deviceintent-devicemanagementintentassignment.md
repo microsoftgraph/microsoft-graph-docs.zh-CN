@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b21833b92f33ce9210aace3cb0c39a48db166315
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: a0aa4794953120fd1250c14638f4c6cfb0488dc1
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178232"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793505"
 ---
 # <a name="devicemanagementintentassignment-resource-type"></a>deviceManagementIntentAssignment 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "44178232"
 
 意向分配实体
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementIntentAssignments](../api/intune-deviceintent-devicemanagementintentassignment-list.md)|[deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)集合|列出[deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)对象的属性和关系。|
@@ -34,7 +34,7 @@ ms.locfileid: "44178232"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|工作分配 ID|
+|id|String|工作分配 ID|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|工作分配目标|
 
 ## <a name="relationships"></a>关系
@@ -53,7 +53,9 @@ ms.locfileid: "44178232"
   "@odata.type": "#microsoft.graph.deviceManagementIntentAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "String",
+    "deviceAndAppManagementAssignmentFilterType": "String"
   }
 }
 ```

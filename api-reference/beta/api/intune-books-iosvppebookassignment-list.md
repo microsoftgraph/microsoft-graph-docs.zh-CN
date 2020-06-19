@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 57c36ea0426c360376a69e3b7e2ac3874e343af2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b4a98dee31c239fac23082407d9f20575cb6935b
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43392586"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793225"
 ---
 # <a name="list-iosvppebookassignments"></a>列出 iosVppEBookAssignments
 
@@ -23,7 +23,7 @@ ms.locfileid: "43392586"
 列出 [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -61,11 +61,11 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedE
 ```
 
 ### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 299
+Content-Length: 474
 
 {
   "value": [
@@ -73,7 +73,9 @@ Content-Length: 299
       "@odata.type": "#microsoft.graph.iosVppEBookAssignment",
       "id": "48f05789-5789-48f0-8957-f0488957f048",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+        "deviceAndAppManagementAssignmentFilterType": "include"
       },
       "installIntent": "required"
     }

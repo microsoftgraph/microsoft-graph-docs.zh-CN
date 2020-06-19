@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cb4c3a13fbdeee0189f028ef979db7bf7514fcec
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 605b21c3de1a7408224c3544e6f3bbb7d4adf04f
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176748"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44792413"
 ---
 # <a name="create-devicehealthscriptassignment"></a>创建 deviceHealthScriptAssignment
 
@@ -23,13 +23,13 @@ ms.locfileid: "44176748"
 创建新的[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -38,6 +38,7 @@ ms.locfileid: "44176748"
 -->
 ``` http
 POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
+POST /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/assignments
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -53,15 +54,15 @@ POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备运行状况脚本分配实体的键。 此属性是只读的。|
+|id|String|设备运行状况脚本分配实体的键。 此属性是只读的。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|将脚本设定为的 Azure Active Directory 组|
-|runRemediationScript|Boolean|确定是只运行检测脚本还是运行两个检测脚本和修正脚本|
+|runRemediationScript|布尔值|确定是只运行检测脚本还是运行两个检测脚本和修正脚本|
 |runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|目标组的脚本运行计划|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -70,12 +71,14 @@ POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
 Content-type: application/json
-Content-length: 359
+Content-length: 526
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include"
   },
   "runRemediationScript": true,
   "runSchedule": {
@@ -88,17 +91,19 @@ Content-length: 359
 ```
 
 ### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 408
+Content-Length: 575
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
   "id": "c08c4eb1-4eb1-c08c-b14e-8cc0b14e8cc0",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+    "deviceAndAppManagementAssignmentFilterType": "include"
   },
   "runRemediationScript": true,
   "runSchedule": {

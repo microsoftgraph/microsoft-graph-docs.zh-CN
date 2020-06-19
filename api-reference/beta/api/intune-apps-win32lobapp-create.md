@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c2fa73633485fe6accd74b8630b03ca6a5aff46
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4f805e9c41aacbc6c12cc44ad84f2e05db5b4d14
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43393893"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793267"
 ---
 # <a name="create-win32lobapp"></a>创建 win32LobApp
 
@@ -23,7 +23,7 @@ ms.locfileid: "43393893"
 创建新的[win32LobApp](../resources/intune-apps-win32lobapp.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -54,28 +54,28 @@ POST /deviceAppManagement/mobileApps
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|description|字符串|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|publisher|字符串|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|说明|字符串|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用的日期和时间。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|privacyInformationUrl|字符串|隐私声明 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|informationUrl|字符串|详细信息 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|privacyInformationUrl|String|隐私声明 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|informationUrl|String|详细信息 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|developer|字符串|应用的开发者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|notes|字符串|应用的备注。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |uploadState|Int32|上载状态。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|committedContentVersion|字符串|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
+|committedContentVersion|String|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|总大小，包括所有已上传文件。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
-|installCommandLine|字符串|要安装此应用程序的命令行|
-|uninstallCommandLine|字符串|要卸载此应用程序的命令行|
+|installCommandLine|String|要安装此应用程序的命令行|
+|uninstallCommandLine|String|要卸载此应用程序的命令行|
 |applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|可运行此应用的 Windows 体系结构。 可取值为：`none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|最低适用操作系统的值。|
 |minimumFreeDiskSpaceInMB|Int32|安装此应用程序所需的最小可用磁盘空间的值。|
@@ -84,16 +84,17 @@ POST /deviceAppManagement/mobileApps
 |minimumCpuSpeedInMHz|Int32|安装此应用程序所需的最低 CPU 速度的值。|
 |detectionRules|[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)集合|检测到 Win32 业务线（LoB）应用程序的检测规则。|
 |requirementRules|[win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)集合|用于检测 Win32 业务线（LoB）应用程序的要求规则。|
+|规则|[win32LobAppRule](../resources/intune-apps-win32lobapprule.md)集合|此应用程序的检测和要求规则。|
 |installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|此应用的安装体验。|
 |returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)集合|用于安装后行为的返回代码。|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|如果此 Win32 应用是 MSI 应用程序，则为 MSI 详细信息。|
-|setupFilePath|字符串|加密的 Win32LobApp 包中的安装程序文件的相对路径。|
+|setupFilePath|String|加密的 Win32LobApp 包中的安装程序文件的相对路径。|
 |installLanguage|String|尚未记录|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[win32LobApp](../resources/intune-apps-win32lobapp.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[win32LobApp](../resources/intune-apps-win32lobapp.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -102,7 +103,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 2865
+Content-length: 3224
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -171,6 +172,18 @@ Content-length: 2865
       "detectionType": "exists"
     }
   ],
+  "rules": [
+    {
+      "@odata.type": "microsoft.graph.win32LobAppRegistryRule",
+      "ruleType": "requirement",
+      "check32BitOn64System": true,
+      "keyPath": "Key Path value",
+      "valueName": "Value Name value",
+      "operationType": "exists",
+      "operator": "equal",
+      "comparisonValue": "Comparison Value value"
+    }
+  ],
   "installExperience": {
     "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
     "runAsAccount": "user",
@@ -199,11 +212,11 @@ Content-length: 2865
 ```
 
 ### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3037
+Content-Length: 3396
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -273,6 +286,18 @@ Content-Length: 3037
       "keyPath": "Key Path value",
       "valueName": "Value Name value",
       "detectionType": "exists"
+    }
+  ],
+  "rules": [
+    {
+      "@odata.type": "microsoft.graph.win32LobAppRegistryRule",
+      "ruleType": "requirement",
+      "check32BitOn64System": true,
+      "keyPath": "Key Path value",
+      "valueName": "Value Name value",
+      "operationType": "exists",
+      "operator": "equal",
+      "comparisonValue": "Comparison Value value"
     }
   ],
   "installExperience": {

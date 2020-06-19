@@ -1,0 +1,106 @@
+---
+title: 更新 deviceComplianceScriptRunSummary
+description: 更新 deviceComplianceScriptRunSummary 对象的属性。
+author: dougeby
+localization_priority: Normal
+ms.prod: Intune
+doc_type: apiPageType
+ms.openlocfilehash: 906f98b2d6bc3603c750e38d8583ba37dc937a72
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44792427"
+---
+# <a name="update-devicecompliancescriptrunsummary"></a>更新 deviceComplianceScriptRunSummary
+
+命名空间：microsoft.graph
+
+> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+
+更新[deviceComplianceScriptRunSummary](../resources/intune-devices-devicecompliancescriptrunsummary.md)对象的属性。
+
+## <a name="prerequisites"></a>先决条件
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|权限类型|权限（从最高特权到最低特权）|
+|:---|:---|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
+|委派（个人 Microsoft 帐户）|不支持。|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
+
+## <a name="http-request"></a>HTTP 请求
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/runSummary
+```
+
+## <a name="request-headers"></a>请求标头
+|标头|值|
+|:---|:---|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
+
+## <a name="request-body"></a>请求正文
+在请求正文中，提供[deviceComplianceScriptRunSummary](../resources/intune-devices-devicecompliancescriptrunsummary.md)对象的 JSON 表示形式。
+
+下表显示创建[deviceComplianceScriptRunSummary](../resources/intune-devices-devicecompliancescriptrunsummary.md)时所需的属性。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|id|String|设备符合性脚本运行摘要实体的键。 此属性是只读的。|
+|noIssueDetectedDeviceCount|Int32|检测脚本找不到问题且设备正常运行的设备数量。 有效值-2147483648 到2147483647|
+|issueDetectedDeviceCount|Int32|检测脚本发现问题的设备数。 有效值-2147483648 到2147483647|
+|detectionScriptErrorDeviceCount|Int32|检测脚本执行时遇到错误且未完成的设备数量。 有效值-2147483648 到2147483647|
+|detectionScriptPendingDeviceCount|Int32|尚未运行的设备符合性脚本的最新版本的设备数量。 有效值-2147483648 到2147483647|
+|lastScriptRunDateTime|DateTimeOffset|在所有设备上的脚本的上次运行时间|
+
+
+
+## <a name="response"></a>响应
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[deviceComplianceScriptRunSummary](../resources/intune-devices-devicecompliancescriptrunsummary.md)对象。
+
+## <a name="example"></a>示例
+
+### <a name="request"></a>请求
+下面是一个请求示例。
+``` http
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/runSummary
+Content-type: application/json
+Content-length: 295
+
+{
+  "@odata.type": "#microsoft.graph.deviceComplianceScriptRunSummary",
+  "noIssueDetectedDeviceCount": 10,
+  "issueDetectedDeviceCount": 8,
+  "detectionScriptErrorDeviceCount": 15,
+  "detectionScriptPendingDeviceCount": 1,
+  "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00"
+}
+```
+
+### <a name="response"></a>响应
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 344
+
+{
+  "@odata.type": "#microsoft.graph.deviceComplianceScriptRunSummary",
+  "id": "dad42f14-2f14-dad4-142f-d4da142fd4da",
+  "noIssueDetectedDeviceCount": 10,
+  "issueDetectedDeviceCount": 8,
+  "detectionScriptErrorDeviceCount": 15,
+  "detectionScriptPendingDeviceCount": 1,
+  "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00"
+}
+```
+
+
+

@@ -4,12 +4,12 @@ description: 列出支持租户组织的多个工作流的 Intune 终结点（RE
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 2d138f4c92999477054e8fe154c426fd18181037
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 06be7eefad204f0cef73d8c0d16d70159f9142db
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178092"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793757"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune 中的共享资源
 
@@ -31,6 +31,7 @@ ms.locfileid: "44178092"
 - [公司门户操作](intune-shared-companyportalaction.md)
 - [公司门户阻止的操作](intune-shared-companyportalblockedaction.md)
 - [符合性状态](intune-shared-compliancestatus.md)
+- [设备和应用程序管理分配筛选器类型](intune-shared-deviceandappmanagementassignmentfiltertype.md)
 - [设备和应用程序管理分配源](intune-shared-deviceandappmanagementassignmentsource.md)
 - [设备和应用管理分配目标](intune-shared-deviceandappmanagementassignmenttarget.md)
 - [设备应用管理](intune-shared-deviceappmanagement.md)

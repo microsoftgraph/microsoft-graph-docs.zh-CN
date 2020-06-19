@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7759a9c42ca9178dc95266ffa4630ef891832ecd
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 2390ff2f9aab1fe74aa6aebf0cfdbeeb6a2d5131
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062635"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793589"
 ---
 # <a name="riskyuser-resource-type"></a>riskyUser 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "43062635"
 
 >**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法   | 返回类型|说明|
 |:---------------|:--------|:----------|
@@ -39,8 +39,7 @@ ms.locfileid: "43062635"
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
 |`id`|`string`|用户面临风险的唯一 id|
-|`isDeleted`|`bool`|指示是否删除用户。 可能的值包括`true`：、`false`|
-|`isGuest`|`bool`|指示用户是否为来宾用户。 可取值为：`true`、`false`。 如此如果用户的标识位于租户外部，请考虑。 此用户可以是在 Azure AD、MSA 或第三方标识提供程序中具有标识的 B2B 或 B2C 用户。 假如果用户的标识位于租户内部，则考虑|
+|`isDeleted`|`bool`|指示是否删除用户。 可能的值包括： `true` 、`false`|
 |`isProcessing`|`bool`|指示后端正在处理用户的危险状态 wehther|
 |`riskLastUpdatedDateTime`|`datetime`|上次更新有风险的用户的日期和时间|
 |`riskLevel`|`riskLevel`| 可能的值为 low、medium、high、hidden、none、向 unknownfuturevalue。  |
@@ -70,7 +69,6 @@ ms.locfileid: "43062635"
 {
 "id": "string",
 "riskLastUpdatedDateTime": "dateTimeOffset",
-"isGuest": "boolean",
 "isProcessing": "boolean",
 "isDeleted": "boolean",
 "riskDetail":  "string",

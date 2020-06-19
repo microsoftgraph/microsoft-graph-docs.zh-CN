@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的配置设备的 Intune 终结点�
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 11597599cc7303c2190d5991d0fb2c502a17b86a
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: f7b00de9363d4145165596d8ded2339de1843df0
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179325"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793477"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -44,6 +44,7 @@ ms.locfileid: "44179325"
 - [Android 设备所有者全局代理自动配置](intune-deviceconfig-androiddeviceownerglobalproxyautoconfig.md)
 - [Android 设备所有者全局代理直接](intune-deviceconfig-androiddeviceownerglobalproxydirect.md)
 - [Android 设备所有者导入的 PFX 证书配置文件](intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile.md)
+- [Android 设备所有者 PKCS 证书配置文件](intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md)
 - [Android 设备所有者播放存储模式](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Android 设备所有者必填密码类型](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Android 设备所有者 SCEP 证书配置文件](intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)
@@ -119,6 +120,7 @@ ms.locfileid: "44179325"
 - [应用程序防护阻止剪贴板共享类型](intune-deviceconfig-applicationguardblockclipboardsharingtype.md)
 - [应用程序 Guard Block 文件传输类型](intune-deviceconfig-applicationguardblockfiletransfertype.md)
 - [应用程序 Guard 启用选项](intune-deviceconfig-applicationguardenabledoptions.md)
+- [身份验证转换常量](intune-deviceconfig-authenticationtransformconstant.md)
 - [自动重新启动通知开除方法](intune-deviceconfig-autorestartnotificationdismissalmethod.md)
 - [自动更新模式](intune-deviceconfig-automaticupdatemode.md)
 - [BitLocker 加密方法](intune-deviceconfig-bitlockerencryptionmethod.md)
@@ -136,10 +138,13 @@ ms.locfileid: "44179325"
 - [证书存储](intune-deviceconfig-certificatestore.md)
 - [证书有效期范围](intune-deviceconfig-certificatevalidityperiodscale.md)
 - [更改 uefi 设置权限](intune-deviceconfig-changeuefisettingspermission.md)
+- [代码](intune-deviceconfig-code.md)
 - [配置用法](intune-deviceconfig-configurationusage.md)
 - [凭据单一登录扩展](intune-deviceconfig-credentialsinglesignonextension.md)
+- [加密套件](intune-deviceconfig-cryptographysuite.md)
 - [自定义主题替代名称](intune-deviceconfig-customsubjectalternativename.md)
 - [自定义更新时间窗口](intune-deviceconfig-customupdatetimewindow.md)
+- [数据类型](intune-deviceconfig-datatype.md)
 - [星期几](intune-deviceconfig-dayofweek.md)
 - [默认的设备符合性策略](intune-deviceconfig-defaultdevicecompliancepolicy.md)
 - [Defender 攻击面类型](intune-deviceconfig-defenderattacksurfacetype.md)
@@ -175,9 +180,14 @@ ms.locfileid: "44179325"
 - [设备合规性设备状态](intune-deviceconfig-devicecompliancedevicestatus.md)
 - [设备合规性策略分配](intune-deviceconfig-devicecompliancepolicyassignment.md)
 - [设备合规性策略设备状态摘要](intune-deviceconfig-devicecompliancepolicydevicestatesummary.md)
+- [设备合规性策略脚本](intune-deviceconfig-devicecompliancepolicyscript.md)
 - [设备合规性策略设置状态](intune-deviceconfig-devicecompliancepolicysettingstate.md)
 - [设备合规性策略设置状态摘要](intune-deviceconfig-devicecompliancepolicysettingstatesummary.md)
 - [适用于规则的设备合规性计划操作](intune-deviceconfig-devicecompliancescheduledactionforrule.md)
+- [设备合规性脚本错误](intune-deviceconfig-devicecompliancescripterror.md)
+- [设备合规性脚本规则](intune-deviceconfig-devicecompliancescriptrule.md)
+- [设备合规性脚本规则错误](intune-deviceconfig-devicecompliancescriptruleerror.md)
+- [设备合规性脚本验证结果](intune-deviceconfig-devicecompliancescriptvalidationresult.md)
 - [设备合规性设置状态](intune-deviceconfig-devicecompliancesettingstate.md)
 - [设备合规性用户概述](intune-deviceconfig-devicecomplianceuseroverview.md)
 - [设备合规性用户状态](intune-deviceconfig-devicecomplianceuserstatus.md)
@@ -197,12 +207,14 @@ ms.locfileid: "44179325"
 - [设备管理适用性规则 os 版本](intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)
 - [设备管理适用性规则 os 版本](intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)
 - [设备管理适用性规则类型](intune-deviceconfig-devicemanagementapplicabilityruletype.md)
+- [设备管理证书颁发机构](intune-deviceconfig-devicemanagementcertificationauthority.md)
 - [设备管理设置](intune-deviceconfig-devicemanagementsettings.md)
 - [设备管理用户权限本地用户或组](intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md)
 - [设备管理用户权限设置](intune-deviceconfig-devicemanagementuserrightssetting.md)
 - [设备威胁防护级别](intune-deviceconfig-devicethreatprotectionlevel.md)
 - [设备类型](intune-deviceconfig-devicetypes.md)
 - [诊断数据提交模式](intune-deviceconfig-diagnosticdatasubmissionmode.md)
+- [Diffie-hellman 组](intune-deviceconfig-diffiehellmangroup.md)
 - [DMA 保护设备枚举策略类型](intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)
 - [域名源](intune-deviceconfig-domainnamesource.md)
 - [EAP 快速配置](intune-deviceconfig-eapfastconfiguration.md)
@@ -346,6 +358,10 @@ ms.locfileid: "44179325"
 - [macOS 关联的域的键/值对](intune-deviceconfig-macosassociateddomainskeyvaluepair.md)
 - [macOS 证书配置文件基础](intune-deviceconfig-macoscertificateprofilebase.md)
 - [macOS 合规性策略](intune-deviceconfig-macoscompliancepolicy.md)
+- [macOS 内容缓存客户端策略](intune-deviceconfig-macoscontentcachingclientpolicy.md)
+- [macOS 内容缓存父选择策略](intune-deviceconfig-macoscontentcachingparentselectionpolicy.md)
+- [macOS 内容缓存对等策略](intune-deviceconfig-macoscontentcachingpeerpolicy.md)
+- [macOS 内容缓存类型](intune-deviceconfig-macoscontentcachingtype.md)
 - [macOS 凭据单一登录扩展](intune-deviceconfig-macoscredentialsinglesignonextension.md)
 - [macOS 自定义应用配置](intune-deviceconfig-macoscustomappconfiguration.md)
 - [macOS 自定义配置](intune-deviceconfig-macoscustomconfiguration.md)
@@ -389,6 +405,8 @@ ms.locfileid: "44179325"
 - [媒体内容分级（英国）](intune-deviceconfig-mediacontentratingunitedkingdom.md)
 - [媒体内容分级（美国）](intune-deviceconfig-mediacontentratingunitedstates.md)
 - [按流量计费的连接限制类型](intune-deviceconfig-meteredconnectionlimittype.md)
+- [Microsoft 启动器停靠状态](intune-deviceconfig-microsoftlauncherdockpresence.md)
+- [Microsoft 启动器搜索栏的位置](intune-deviceconfig-microsoftlaunchersearchbarplacement.md)
 - [Miracast 频道](intune-deviceconfig-miracastchannel.md)
 - [NDES 连接器](intune-deviceconfig-ndesconnector.md)
 - [NDES 连接器状态](intune-deviceconfig-ndesconnectorstate.md)
@@ -406,6 +424,8 @@ ms.locfileid: "44179325"
 - [OMA 设置字符串 XML](intune-deviceconfig-omasettingstringxml.md)
 - [在本地加密有效负载](intune-raimportcerts-onpremencryptedpayload.md)
 - [操作系统版本范围](intune-deviceconfig-operatingsystemversionrange.md)
+- [Operator](intune-deviceconfig-operator.md)
+- ["完全转发" 保密组](intune-deviceconfig-perfectforwardsecrecygroup.md)
 - [Pfx recryption 请求](intune-raimportcerts-pfxrecryptionrequest.md)
 - [Pfx 用户证书](intune-raimportcerts-pfxusercertificate.md)
 - [电源操作类型](intune-deviceconfig-poweractiontype.md)

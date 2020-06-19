@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a47da2cb879be7dc3621135a974d4fcb0668a2b5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3267263308c5803b3da0d757a7f8d8b3b8bc7a37
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43353501"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793141"
 ---
 # <a name="update-advancedthreatprotectiononboardingdevicesettingstate"></a>更新 advancedThreatProtectionOnboardingDeviceSettingState
 
@@ -23,7 +23,7 @@ ms.locfileid: "43353501"
 更新[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -54,23 +54,23 @@ PATCH /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedT
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键|
-|platformType|[deviceType](../resources/intune-shared-devicetype.md)|设备平台类型。 可能的值为`desktop`： `windowsRT`、 `winMO6`、 `nokia` `windowsPhone` `mac` `winCE` `palm` `unknown`、、、、、、、、、、、、、、、、、、、、。 `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `blackberry`|
-|setting|字符串|设置类名和属性名。|
-|settingName|字符串|报告的设置名称|
-|deviceId|字符串|报告的设备 ID|
-|deviceName|字符串|报告的设备名称|
+|platformType|[deviceType](../resources/intune-shared-devicetype.md)|设备平台类型。 可能的值为：、、、、、、、、、、、、、、、、、、、、、、、 `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `blackberry` `palm` `unknown` 。|
+|setting|String|设置类名和属性名。|
+|settingName|String|报告的设置名称|
+|deviceId|String|报告的设备 ID|
+|deviceName|String|报告的设备名称|
 |userId|String|报告的用户 ID|
 |userEmail|String|报告的用户电子邮件地址|
-|userName|字符串|报告的用户名|
+|userName|String|报告的用户名|
 |userPrincipalName|字符串|报告的用户主体名称|
-|deviceModel|字符串|报告的设备模型|
+|deviceModel|String|报告的设备模型|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|设置的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期的到期日期/时间|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -99,7 +99,7 @@ Content-length: 573
 ```
 
 ### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
