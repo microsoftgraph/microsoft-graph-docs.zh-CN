@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b9564b0946158b8313c01e6bd2df7fc02b04c9a3
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 370e0663907f7c45e63b306480d876fd2acce458
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178855"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791326"
 ---
 # <a name="create-devicemanagementscript"></a>创建 deviceManagementScript
 
@@ -23,17 +23,17 @@ ms.locfileid: "44178855"
 创建新的[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
-| &nbsp;&nbsp; **策略集** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp;**策略集** | DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application||
-| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
-| &nbsp;&nbsp; **策略集** | DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序||
+| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp;**策略集** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -60,18 +60,20 @@ POST /deviceManagement/deviceManagementScripts
 |id|字符串|设备管理脚本的唯一标识符。|
 |displayName|字符串|设备管理脚本的名称。|
 |说明|String|设备管理脚本的可选说明。|
+|runSchedule|runSchedule|脚本运行的间隔。 如果未定义，脚本将运行一次|
+|scriptContent|Binary|脚本内容。|
 |createdDateTime|DateTimeOffset|设备管理脚本的创建日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名。|
+|enforceSignatureCheck|布尔值|指示是否需要检查脚本签名。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|字符串集合|此 PowerShellScript 实例的范围标记 Id 的列表。|
-|runAs32Bit|Boolean|一个指示 PowerShell 脚本是否应作为32位运行的值|
+|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记 Id 的列表。|
+|runAs32Bit|布尔值|一个指示 PowerShell 脚本是否应作为32位运行的值|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -86,6 +88,9 @@ Content-length: 443
   "@odata.type": "#microsoft.graph.deviceManagementScript",
   "displayName": "Display Name value",
   "description": "Description value",
+  "runSchedule": {
+    "@odata.type": "microsoft.graph.runSchedule"
+  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "runAsAccount": "user",
   "enforceSignatureCheck": true,
@@ -98,7 +103,7 @@ Content-length: 443
 ```
 
 ### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -109,6 +114,9 @@ Content-Length: 615
   "id": "59ea4525-4525-59ea-2545-ea592545ea59",
   "displayName": "Display Name value",
   "description": "Description value",
+  "runSchedule": {
+    "@odata.type": "microsoft.graph.runSchedule"
+  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ca3341c84b79ff25e55be1abf5a8a5a031e84b02
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: ea02186b7d9bd7bed14c6ea5b46023da81814f07
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290383"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791060"
 ---
 # <a name="educationonerosterapidataprovider-resource"></a>educationOneRosterApiDataProvider 资源
 
@@ -24,15 +24,28 @@ ms.locfileid: "44290383"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 说明 |
-|:-|:-|:-|
-| **connectionUrl** | String | 指向 OneRoster 实例的连接 URL。 |
-| **schoolsIds** | String collection |  要同步的学校 sourcedIds 的列表。 |
-| **providerName** | String | 由[OneRoster 规范](https://www.imsglobal.org/oneroster-v11-final-best-practice-and-implementation-guide#AppA)定义的 OneRoster 服务提供程序名称。 |
-| **connectionSettings** | [educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md) | OneRoster 实例的连接设置。 应为[educationSynchronizationOAuth1ConnectionSettings](educationsynchronizationoauth1connectionsettings.md)或[educationSynchronizationOAuth2ClientCredentialsConnectionSettings](educationsynchronizationoauth2clientcredentialsconnectionsettings.md)的类型类型。 |
-| **操作** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | 要应用于同步配置文件的可选自定义项。|
+| 属性           | 类型                                         | 说明                                                                                           |
+| :----------------- | :------------------------------------------- | :---------------------------------------------------------------------------------------------------- |
+| connectionUrl      | String                                       | 指向 OneRoster 实例的连接 URL。                                                         |
+| providerName       | String                                       | 由[OneRoster 规范][oneroster]定义的 OneRoster 服务提供程序名称。           |
+| schoolsIds         | String collection                            | 要同步的[学校/组织][orgs]的列表 `sourcedId` 。                                                   |
+| termIds            | String collection                            | 要同步的[学术会话][terms]的列表。                                                       |
+| connectionSettings | [educationSynchronizationConnectionSettings] | OneRoster 实例的[oauth 1.0][onerosteroauth1]或[oauth 2.0][onerosteroauth2]设置。 |
+| 操作     | [educationSynchronizationCustomizations]）    | 要应用于同步配置文件的可选自定义项。                                  |
+
+> [!IMPORTANT]
+> OneRoster 使用学术会议，而不是一年的时间来细分其数据。 此细分在学校数据同步 UI 中被抽象掉，而不是在此 API 中。 您需要调用 OneRoster `/terms` 终结点以获取学术会话 id 的集合，以便填充该 `termIds` 集合。
+
+[educationsynchronizationconnectionsettings]: educationsynchronizationconnectionsettings.md
+[educationsynchronizationcustomizations]: educationsynchronizationcustomizations.md
+[oneroster]: https://www.imsglobal.org/oneroster-v11-final-best-practice-and-implementation-guide#AppA
+[onerosteroauth2]: educationsynchronizationoauth2clientcredentialsconnectionsettings.md
+[onerosteroauth1]: educationsynchronizationoauth1connectionsettings.md
+[terms]: https://www.imsglobal.org/oneroster-v11-final-specification#_Toc480452034
+[orgs]: https://www.imsglobal.org/oneroster-v11-final-specification#_Toc480452016
 
 ## <a name="json-representation"></a>JSON 表示形式
+
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -43,20 +56,22 @@ ms.locfileid: "44290383"
 
 ```json
 {
-    "@odata.type": "microsoft.graph.educationoneRosterApiDataProvider",
-    "connectionUrl": "String",
-    "providerName": "String",
-    "schoolsIds": [
-        "String"
-    ],
-    "connectionSettings": {
-        "@odata.type": "microsoft.graph.educationSynchronizationOAuth1ConnectionSettings",
-        "clientId": "String",
-        "clientSecret": "String",
-    },
-    "customizations": { "@odata.type": "microsoft.graph.educationSynchronizationCustomizations" }
+  "@odata.type": "microsoft.graph.educationoneRosterApiDataProvider",
+  "connectionUrl": "String",
+  "providerName": "String",
+  "schoolsIds": ["String"],
+  "termIds": ["String"],
+  "connectionSettings": {
+    "@odata.type": "microsoft.graph.educationSynchronizationOAuth1ConnectionSettings",
+    "clientId": "String",
+    "clientSecret": "String"
+  },
+  "customizations": {
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomizations"
+  }
 }
 ```
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2020-05-06 14:57:30 UTC -->
 <!-- {

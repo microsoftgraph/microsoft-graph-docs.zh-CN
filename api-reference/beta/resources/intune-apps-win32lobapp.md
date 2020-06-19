@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 90759c222b4e4941c07a54553948da4b74d9c1cb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3e35a9704f2028e1879c6b3d1988db6a2cc6f31b
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460212"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44790843"
 ---
 # <a name="win32lobapp-resource-type"></a>win32LobApp 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "43460212"
 
 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 win32LobApps](../api/intune-apps-win32lobapp-list.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)集合|列出[win32LobApp](../resources/intune-apps-win32lobapp.md)对象的属性和关系。|
@@ -39,7 +39,7 @@ ms.locfileid: "43460212"
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|description|字符串|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|说明|字符串|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -68,6 +68,7 @@ ms.locfileid: "43460212"
 |minimumCpuSpeedInMHz|Int32|安装此应用程序所需的最低 CPU 速度的值。|
 |detectionRules|[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)集合|检测到 Win32 业务线（LoB）应用程序的检测规则。|
 |requirementRules|[win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)集合|用于检测 Win32 业务线（LoB）应用程序的要求规则。|
+|规则|[win32LobAppRule](../resources/intune-apps-win32lobapprule.md)集合|此应用程序的检测和要求规则。|
 |installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|此应用的安装体验。|
 |returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)集合|用于安装后行为的返回代码。|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|如果此 Win32 应用是 MSI 应用程序，则为 MSI 详细信息。|
@@ -162,6 +163,18 @@ ms.locfileid: "43460212"
       "keyPath": "String",
       "valueName": "String",
       "detectionType": "String"
+    }
+  ],
+  "rules": [
+    {
+      "@odata.type": "microsoft.graph.win32LobAppRegistryRule",
+      "ruleType": "String",
+      "check32BitOn64System": true,
+      "keyPath": "String",
+      "valueName": "String",
+      "operationType": "String",
+      "operator": "String",
+      "comparisonValue": "String"
     }
   ],
   "installExperience": {

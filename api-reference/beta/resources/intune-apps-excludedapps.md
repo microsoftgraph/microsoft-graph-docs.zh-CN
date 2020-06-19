@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9e391c713324b69747e0528285580e3300e71868
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 92a86a9b875caf47d5c06145716642bb3d6a7e81
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459102"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44790899"
 ---
 # <a name="excludedapps-resource-type"></a>excludedApps 资源类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "43459102"
 |属性|类型|说明|
 |:---|:---|:---|
 |访问|布尔值|如果应排除 MS Office Access，则该值为。|
+|必应|布尔值|如果应排除 Microsoft 搜索为默认值，则为。|
 |excel|布尔值|如果不应排除 MS Office Excel 的值，则为。|
 |为止|布尔值|如果要排除 MS Office OneDrive for Business-Groove 的值，应将其排除。|
 |infoPath|布尔值|如果不应排除 MS Office InfoPath，则值为。|
@@ -54,6 +55,7 @@ ms.locfileid: "43459102"
 {
   "@odata.type": "#microsoft.graph.excludedApps",
   "access": true,
+  "bing": true,
   "excel": true,
   "groove": true,
   "infoPath": true,

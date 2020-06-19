@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d1d5270217dae8de150e8a6d5f5fc53af2f1cb88
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b8cb68588695dc014002d9ede26aca0bab702d40
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462545"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44790850"
 ---
 # <a name="officeupdatechannel-enum-type"></a>officeUpdateChannel 枚举类型
 
@@ -26,10 +26,11 @@ ms.locfileid: "43462545"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|尚未记录|
-|目前|1|尚未记录|
+|目前|1 |尚未记录|
 |关联表|双面|尚未记录|
 |firstReleaseCurrent|第三章|尚未记录|
 |firstReleaseDeferred|4 |尚未记录|
+|monthlyEnterprise|5 |尚未记录|
 
 
 

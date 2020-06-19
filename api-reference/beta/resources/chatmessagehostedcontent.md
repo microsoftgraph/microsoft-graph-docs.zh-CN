@@ -5,22 +5,23 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a34e09b233a60858e23155f87808e40d080867f7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 421ed3b1c439a7ae550100a113c651ab3e0a34b9
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507703"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791067"
 ---
 # <a name="chatmessagehostedcontent-resource-type"></a>chatMessageHostedContent 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示在聊天消息中托管的内容，如图像或代码段。
+表示在聊天消息中托管的团队内容，如图像或代码段。
+[文件附件](chatmessageattachment.md)不是托管内容，它们存储在 SharePoint 或 OneDrive 中。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|

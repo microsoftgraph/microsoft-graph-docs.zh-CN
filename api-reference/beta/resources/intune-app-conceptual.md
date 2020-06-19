@@ -4,12 +4,12 @@ description: 列出用于管理租户组织的应用及其策略的 Intune 终�
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 9308faf6185520bddcab1f5153205bdb109c2323
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: a7aa3d37a78217301f4b5fd150f558dcec55de7f
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177728"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44790906"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -142,21 +142,31 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Win32 LOB 应用检测运算符](intune-apps-win32lobappdetectionoperator.md)
 - [Win32 LOB 应用文件系统检测](intune-apps-win32lobappfilesystemdetection.md)
 - [Win32 LOB 应用文件系统检测类型](intune-apps-win32lobappfilesystemdetectiontype.md)
+- [Win32 LOB 应用程序文件系统操作类型](intune-apps-win32lobappfilesystemoperationtype.md)
 - [Win32 LOB 应用程序文件系统要求](intune-apps-win32lobappfilesystemrequirement.md)
+- [Win32 LOB 应用程序文件系统规则](intune-apps-win32lobappfilesystemrule.md)
 - [Win32 LOB 应用安装体验](intune-apps-win32lobappinstallexperience.md)
 - [Win32 LOB 应用 msi 信息](intune-apps-win32lobappmsiinformation.md)
 - [Win32 LOB 应用 msi 包类型](intune-apps-win32lobappmsipackagetype.md)
 - [Win32 LOB 应用 Power Shell 脚本检测](intune-apps-win32lobapppowershellscriptdetection.md)
 - [Win32 LOB 应用程序电源命令行管理程序脚本检测类型](intune-apps-win32lobapppowershellscriptdetectiontype.md)
 - [Win32 LOB 应用程序 power shell 脚本要求](intune-apps-win32lobapppowershellscriptrequirement.md)
+- [Win32 LOB 应用程序 power shell 脚本规则](intune-apps-win32lobapppowershellscriptrule.md)
 - [Win32 LOB 应用产品代码检测](intune-apps-win32lobappproductcodedetection.md)
+- [Win32 LOB 应用程序产品代码规则](intune-apps-win32lobappproductcoderule.md)
 - [Win32 LOB 应用注册表检测](intune-apps-win32lobappregistrydetection.md)
 - [Win32 LOB 应用注册表检测类型](intune-apps-win32lobappregistrydetectiontype.md)
 - [Win32 LOB 应用程序注册表要求](intune-apps-win32lobappregistryrequirement.md)
+- [Win32 LOB 应用注册表规则](intune-apps-win32lobappregistryrule.md)
+- [Win32 LOB 应用程序注册表规则操作类型](intune-apps-win32lobappregistryruleoperationtype.md)
 - [Win32 LOB 应用要求](intune-apps-win32lobapprequirement.md)
 - [Win32 LOB 应用重启行为](intune-apps-win32lobapprestartbehavior.md)
 - [Win32 LOB 应用返回代码](intune-apps-win32lobappreturncode.md)
 - [Win32 LOB 应用返回代码类型](intune-apps-win32lobappreturncodetype.md)
+- [Win32 LOB 应用程序规则](intune-apps-win32lobapprule.md)
+- [Win32 LOB 应用程序规则运算符](intune-apps-win32lobappruleoperator.md)
+- [Win32 LOB 应用程序规则类型](intune-apps-win32lobappruletype.md)
+- [Win32 LOB power shell 脚本规则操作类型](intune-apps-win32lobpowershellscriptruleoperationtype.md)
 - [Windows APPX](intune-apps-windowsappx.md)
 - [Windows 体系结构](intune-apps-windowsarchitecture.md)
 - [Windows 设备类型](intune-apps-windowsdevicetype.md)

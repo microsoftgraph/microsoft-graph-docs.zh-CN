@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8804c12df044c11b9cdb7ba32c2b37517aa72b9b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3c20a48f579e20c398ace4ddf392defa9b3881d4
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43403277"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791761"
 ---
 # <a name="update-vpptoken"></a>更新 vppToken
 
@@ -23,7 +23,7 @@ ms.locfileid: "43403277"
 更新 [vppToken](../resources/intune-onboarding-vpptoken.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -53,24 +53,24 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|这是创建 appleVolumePurchaseProgramToken 时自动生成的。 它是实体的键。|
-|organizationName|字符串|与 Apple Volume Purchase Program 令牌关联的组织|
+|id|String|这是创建 appleVolumePurchaseProgramToken 时自动生成的。 它是实体的键。|
+|organizationName|String|与 Apple Volume Purchase Program 令牌关联的组织|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|与给定的 Apple Volume Purchase Program 令牌关联的批量购买计划的类型。 可取值为：`business`、`education`。 可取值为：`business`、`education`。|
-|appleId|字符串|与给定的 Apple Volume Purchase Program 令牌关联的 Apple ID。|
+|appleId|String|与给定的 Apple Volume Purchase Program 令牌关联的 Apple ID。|
 |expirationDateTime|DateTimeOffset|Apple Volume Purchase Program 令牌的到期日期时间。|
 |lastSyncDateTime|DateTimeOffset|上次利用 Apple Volume Purchase Program 服务并使用 Apple Volume Purchase Program 令牌完成应用程序同步的时间。|
 |token|String|从 Apple Volume Purchase Program 下载的 Apple Volume Purchase Program 令牌字符串。|
 |lastModifiedDateTime|DateTimeOffset|与 Apple Volume Purchase Program 令牌关联的上次修改日期时间。|
-|state|[vppTokenState](../resources/intune-onboarding-vpptokenstate.md)|Apple Volume Purchase Program 令牌的当前状态。 可取值为：`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM`。 可取值为：`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM`。|
+|state|[vppTokenState](../resources/intune-onboarding-vpptokenstate.md)|Apple Volume Purchase Program 令牌的当前状态。 可取值为：`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM`。 可取值为：`unknown`、`valid`、`expired`、`invalid`、`assignedToExternalMDM`、`duplicateLocationId`。|
 |tokenActionResults|[vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)集合|在 Apple Volume Purchase Program 令牌上执行的操作的状态的集合。|
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|使用 Apple Volume Purchase Program 令牌触发的上一次应用程序同步的当前同步状态。 可取值为：`none`、`inProgress`、`completed`、`failed`。 可取值为：`none`、`inProgress`、`completed`、`failed`。|
 |automaticallyUpdateApps|Boolean|是否自动更新适用于 VPP 令牌的应用。|
 |countryOrRegion|String|是否自动更新适用于 VPP 令牌的应用。|
-|dataSharingConsentGranted|Boolean|同意授予与 Apple Volume Purchase Program 的数据共享。|
-|displayName|字符串|管理员指定的令牌友好名称。|
-|locationName|字符串|从 Apple VPP 返回的令牌位置。|
-|claimTokenManagementFromExternalMdm|Boolean|管理员同意允许来自外部 MDM 的声明令牌管理。|
-|roleScopeTagIds|String 集合|分配给此实体的角色范围标记 Id。|
+|dataSharingConsentGranted|布尔值|同意授予与 Apple Volume Purchase Program 的数据共享。|
+|displayName|String|管理员指定的令牌友好名称。|
+|locationName|String|从 Apple VPP 返回的令牌位置。|
+|claimTokenManagementFromExternalMdm|布尔值|管理员同意允许来自外部 MDM 的声明令牌管理。|
+|roleScopeTagIds|String collection|分配给此实体的角色范围标记 Id。|
 
 
 
@@ -118,7 +118,7 @@ Content-length: 1002
 ```
 
 ### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
