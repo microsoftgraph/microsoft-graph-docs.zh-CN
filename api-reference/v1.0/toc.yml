@@ -4593,6 +4593,8 @@ items:
                 href: api/user-list-joinedteams.md
               - name: 列出所有团队
                 href: /graph/teams-list-all-teams?context=graph/api/1.0
+              - name: 获取主频道
+                href: api/team-get-primarychannel.md
           - name: 组（团队）
             href: resources/group.md
             items:
@@ -4649,6 +4651,8 @@ items:
                 href: api/channel-patch.md
               - name: 删除频道
                 href: api/channel-delete.md
+              - name: 获取文件文件夹
+                href: api/channel-get-filesfolder.md
               - name: 发送消息
                 href: api/channel-post-messages.md
               - name: 回复消息
@@ -4747,7 +4751,7 @@ items:
               - name: 计划组
                 href: resources/schedulinggroup.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/schedule-list-schedulinggroups.md
                   - name: 创建
                     href: api/schedule-post-schedulinggroups.md
