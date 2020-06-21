@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 267c0f8a6f5024928fc684ae971b9e254ebc8a75
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 7cdbbb60fe41438f19cb9b969be2719983421102
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44052317"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793911"
 ---
 ```javascript
 
@@ -16,6 +16,6 @@ const options = {
 const client = Client.init(options);
 
 let res = await client.api('/me/followedSites')
-    .post();
+    .get();
 
 ```
