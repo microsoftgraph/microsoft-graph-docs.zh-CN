@@ -5,12 +5,12 @@ title: 关注网站列表
 localization_priority: Normal
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: f5057a91f317ae309cf899ab6daa1288c41bace0
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: f18a3349c4b37ed96e19781df5f910002c6b122c
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682248"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793929"
 ---
 # <a name="list-followed-sites"></a>关注网站列表
 
@@ -18,9 +18,9 @@ ms.locfileid: "44682248"
 
 列出已登录用户的后续[网站](../resources/site.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -79,6 +79,14 @@ GET /me/followedSites
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-analytics-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-analytics-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-analytics-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 78a011a36ec78ad45d2697393ca83943da6f141f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dfa72e3b0fc6698b2df0bafc9ae5e7d0c79b9c47
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509603"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44788778"
 ---
 # <a name="tablecolumn-databodyrange"></a>TableColumn: DataBodyRange
 
@@ -18,7 +18,7 @@ ms.locfileid: "42509603"
 
 获取与列的数据体相关的 range 对象。
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -30,15 +30,15 @@ ms.locfileid: "42509603"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/{id|name}/dataBodyRange
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/dataBodyRange
+GET /workbook/tables/{id|name}/columns/{id|name}/dataBodyRange
+GET /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/dataBodyRange
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
-| Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
+| Authorization  | Bearer {token}. Required. |
+| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## <a name="request-body"></a>请求正文
 
@@ -59,7 +59,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/dataBodyR
   "idempotent": true
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/dataBodyRange
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/dataBodyRange
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/tablecolumn-databodyrange-csharp-snippets.md)]
@@ -81,7 +81,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|na
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
