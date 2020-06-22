@@ -4,12 +4,12 @@ description: q=excelstarter)。
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: a8fcc90d4050cb6f0db2fb5e2b3a22d267f8cede
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1dd914289342a80a3efbe258a0bfad30506d63f1
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526312"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793666"
 ---
 # <a name="write-data-to-an-excel-workbook-with-microsoft-graph"></a>使用 Microsoft Graph 将数据写入 Excel 工作簿
 
@@ -154,7 +154,7 @@ POST 正文如下所示：
           .catch(err => console.error(err));
       }
 
-##<a name="see-also"></a>另请参阅
+## <a name="see-also"></a>另请参阅
 
 * [通过 Microsoft Graph 管理 Excel 会话](excel-manage-sessions.md)
 * [通过 Microsoft Graph 使用 Excel 工作簿函数](excel-use-functions.md)
