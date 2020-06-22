@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b7fbcfa13ba78238c32e9a2c9056ea49edd499a6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 460bbfaa522cf4767d7f35992a4371bf870c8948
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533563"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793680"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -61,7 +61,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。
 |:---------------|:--------|:----------|
 |channels|[channel](channel.md) 集合|与团队相关的频道和消息的集合。|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) 集合|此团队中安装的应用。|
-|primaryChannel|[频道](channel.md)| 团队的常规频道。 | 
+|[primaryChannel](../api/team-get-primarychannel.md)|[频道](channel.md)| 团队的常规频道。 | 
 
 ## <a name="json-representation"></a>JSON 表示形式
 

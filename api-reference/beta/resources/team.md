@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 0ea6e93303449574b023fcace023a1b7b8b9d175
-ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
+ms.openlocfilehash: cf94e73bfd7ad05fea8f52ea1f2f219b7933ffa7
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42962343"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793736"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -66,7 +66,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) 集合|此团队中安装的应用。|
 |owners|[user](user.md)| 此团队的所有者列表。 目前，在使用应用程序权限创建团队时，必须指定一个所有者。 当使用用户委派的权限时，不能指定任何所有者（当前用户是所有者）。 必须将所有者指定为对象 ID (GUID)，而不是 UPN。 |
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) 集合| 在此团队中运行过或正在运行的异步操作。 | 
-|primaryChannel|[频道](channel.md)| 团队的常规频道。 | 
+|[primaryChannel](../api/team-get-primarychannel.md)|[频道](channel.md)| 团队的常规频道。 | 
 |schedule|[日程安排](schedule.md)| 此团队的排班安排。|
 |template|[teamsTemplate](teamstemplate.md)| 创建此团队时所使用的模板。 请参阅[可用模板](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-templates)。 |
 

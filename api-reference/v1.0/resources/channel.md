@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f995fa1cb725ae5c0764f349180e7f757a9f423e
-ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
+ms.openlocfilehash: 8b6a0baaa684808c4d05bdcebf4be6d761d41d1b
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44272652"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44793582"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -50,7 +50,7 @@ ms.locfileid: "44272652"
 |:---------------|:--------|:----------|
 |messages|[chatMessage](./chatmessage.md) 集合|频道中的所有消息集合。 一种导航属性。 可为 NULL。|
 |选项卡|[teamsTab](../resources/teamstab.md) 集合|频道中的所有选项卡集合。 一种导航属性。|
-|filesFolder|[driveItem](driveitem.md)|用于存储频道文件的位置的元数据。|
+|[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|用于存储频道文件的位置的元数据。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

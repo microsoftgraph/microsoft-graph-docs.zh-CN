@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 243c3ea1e203ceaca4b31cb82dca77c873af7cb0
-ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
+ms.openlocfilehash: 1f14b7240500cceebd39e2bde1b91e2dbf477322
+ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44272694"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44791088"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -59,7 +59,7 @@ ms.locfileid: "44272694"
 |messages|[chatMessage](chatmessage.md) 集合|频道中的所有消息集合。 一种导航属性。 可为 NULL。|
 |选项卡|[teamsTab](../resources/teamstab.md) 集合|频道中的所有选项卡集合。 一种导航属性。|
 |成员|[conversationMember](conversationmember.md) 集合|与频道关联的成员资格记录的集合。|
-|filesFolder|[driveItem](driveitem.md)|用于存储频道文件的位置的元数据。|
+|[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|用于存储频道文件的位置的元数据。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
