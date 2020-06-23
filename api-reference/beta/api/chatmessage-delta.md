@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: a78d7cbeef36f5b6f15fca3d1131c8efe1270002
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: ee62c7caba73a9ab87b15c4a559f4376bcff7a2e
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491313"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845363"
 ---
 # <a name="chatmessages-delta"></a>chatMessages：delta
 
@@ -37,7 +37,7 @@ ms.locfileid: "44491313"
 
 ## <a name="permissions"></a>权限
 
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference.md)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |权限类型                        |权限（从最低特权到最高特权）  |
 |---------------------------------------|---------------------------------------------|
@@ -79,7 +79,7 @@ GET /teams/{id}/channels/{id}/messages/delta
 ## <a name="request-headers"></a>请求头
 | 标头        | 值                     |
 |---------------|---------------------------|
-| Authorization | Bearer {token}。必需。 |
+| Authorization | Bearer {token}. Required. |
 | Content-Type  | application/json          |
 
 ## <a name="request-body"></a>请求正文
@@ -100,7 +100,7 @@ GET /teams/{id}/channels/{id}/messages/delta
 - 第 2 步：[示例第二个请求](#second-request)和[响应](#second-request-response)
 - 第 3 步：[示例第三个请求](#third-request)和[最终响应](#third-request-response)。
 
-为简洁起见，示例响应仅显示一部分事件属性。在实际调用中，大多数事件属性都会返回。
+For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties are returned.
 
 另请了解[下一轮](#example-2-retrieving-additional-changes)该执行哪些操作。
 
@@ -145,7 +145,7 @@ GET /teams/{id}/channels/{id}/messages/delta?$top=2
   "@odata.type": "microsoft.graph.chatMessage",
   "isCollection": true
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -242,7 +242,7 @@ GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyMTUz
   "@odata.type": "microsoft.graph.chatMessage",
   "isCollection": true
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -339,7 +339,7 @@ GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyODcy
   "@odata.type": "microsoft.graph.chatMessage",
   "isCollection": true
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -406,14 +406,14 @@ GET /teams/{id}/channels/{id}/messages/delta?$deltatoken=c3RhcnRUaW1lPTE1NTEyODc
 
 #### <a name="response"></a>响应
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage",
   "isCollection": true
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

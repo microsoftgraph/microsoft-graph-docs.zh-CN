@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8c9be54f744e596b41de1d2e994dfe51b0c95e6d
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 63a338e5a0b563c690d161d1544696b9c20b6810
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791095"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845412"
 ---
 # <a name="get-primarychannel"></a>获取 primaryChannel
 
@@ -19,9 +19,9 @@ ms.locfileid: "44791095"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索允许访问默认常规[通道](../resources/channel.md)的[团队](../resources/team.md)的导航属性。
+获取[团队](../resources/team.md)的默认[频道](../resources/channel.md)（**常规**）。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -36,7 +36,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/primaryChannel
-
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 70ca3b79a736075af1bed233a836f1000d85c5ef
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: d10e0758e0d323f17534c1651268b74fd077fd3d
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793414"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845335"
 ---
 # <a name="get-filesfolder"></a>获取 "获取"
 
@@ -18,10 +18,9 @@ ms.locfileid: "44793414"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+获取存储[通道](../resources/channel.md)文件的位置的元数据。 
 
-检索文件导航路径（用于[存储通道文件](../resources/channel.md)的位置的元数据）的文件。
-
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |

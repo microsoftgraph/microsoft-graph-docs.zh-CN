@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 57a94a7b2347e4c4b57a431f5075dc65ba76d80c
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 637ebeae4aea6311cbeba6170d29dec047a200ad
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336641"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845769"
 ---
 # <a name="accessreview-resource-type"></a>accessReview 资源类型
 
@@ -64,7 +64,7 @@ ms.locfileid: "44336641"
 
 | 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
-| `reviewers`               |[userIdentity](useridentity.md)集合                     | 访问评审的审阅者的集合（如果 access 评审 reviewerType 的类型为） `delegate` 。 |
+| `reviewers`               |[userIdentity](useridentity.md)集合                     | 访问评审的审阅者的集合（如果 access 评审 reviewerType 的类型为） `delegated` 。 |
 | `decisions`               |[accessReviewDecision](accessreviewdecision.md)集合 | 此访问评审的决策集合。 |
 | `myDecisions`             |[accessReviewDecision](accessreviewdecision.md)集合 | 如果呼叫者是审阅者，则为呼叫者做出决策的集合。 |
 | `instances`               |[accessReview](accessreview.md)集合         | 如果此对象是定期访问审核，则 access 的集合将审阅过去、现在和将来的实例。 |

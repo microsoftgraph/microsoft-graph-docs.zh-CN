@@ -6,16 +6,16 @@ title: PersonOrGroupColumn
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 9b7901b52bcd877df16f5507c450425484ada703
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c2b10d24acb1c4004de486904a8f2091c0a3db15
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521930"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845734"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>PersonOrGroupColumn 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,34 +36,34 @@ ms.locfileid: "42521930"
 
 ## <a name="properties"></a>属性
 
-| 属性名称              | 类型    | 说明
+| 属性名称              | 类型    | Description
 |:---------------------------|:--------|:--------------------------------------
 | **allowMultipleSelection** | boolean | 指示是否可以从源中选择多个值。
-| **displayAs**              | string  | 如何显示有关所选个人或组的信息。 请参阅下文。
+| **displayAs**              | 字符串  | 如何显示有关所选个人或组的信息。 请参阅下文。
 | **chooseFromType**         | string  | 是否允许仅选择人员，或同时选择人员和组。 必须为 `peopleAndGroups` 或 `peopleOnly` 的其中一个。
 
 ## <a name="displayas-values"></a>DisplayAs 值
 
-| DisplayAs 值               | 说明
-|:------------------------------|:-----------------------
-| **帐户**                   | 采用原始 SharePoint 编码的人员或组声明字符串（如 i:0#.f|membership|jane@contoso.com)。
-| **department**                | 人员或组的所在部门。
-| **firstName**                 | 人员的名字。
-| **id**                        | 目录中个人或组的 id。
-| **lastName**                  | 人员的姓氏。
-| **mobilePhone**               | 人员的移动电话号码。
-| **name**                      | 人员姓名。
-| **nameWithPictureAndDetails** | 人员姓名，以及他们的照片和其他详细信息。
-| **nameWithPresence**          | 默认值。 人员姓名和状态指示器图标（空闲/忙碌/等）
-| **office**                    | 人员的办公室电话。
-| **pictureOnly36x36**          | 人员的照片，采用 36x36 像素的正方形框。
-| **pictureOnly48x48**          | 人员的照片，采用 48x48 像素的正方形框。
-| **pictureOnly72x72**          | 人员的照片，采用 72x72 像素的正方形框。
-| **sipAddress**                | 人员的 sip 地址。
-| **title**                     | 人员在组织中的职务。
-| **userName**                  | 人员或组的用户名。
-| **workEmail**                 | 人员或组的电子邮件地址。
-| **workPhone**                 | 人员的工作电话号码。
+| DisplayAs 值               | 说明                                                                                                 |
+|:------------------------------|:------------------------------------------------------------------------------------------------------------|
+| **帐户**                   | 采用原始 SharePoint 编码的人员或组声明字符串（如 `i:0#.f|membership|jane@contoso.com`). |
+| **department**                | 人员或组的所在部门。                                                                           |
+| **firstName**                 | 人员的名字。                                                                                    |
+| **id**                        | 目录中个人或组的 id。                                                             |
+| **lastName**                  | 人员的姓氏。                                                                                     |
+| **mobilePhone**               | 人员的移动电话号码。                                                                           |
+| **name**                      | 人员姓名。                                                                                          |
+| **nameWithPictureAndDetails** | 人员姓名，以及他们的照片和其他详细信息。                                          |
+| **nameWithPresence**          | 默认值。 人员姓名和状态指示器图标（空闲/忙碌/等）                             |
+| **office**                    | 人员的办公室电话。                                                                                 |
+| **pictureOnly36x36**          | 人员的照片，采用 36x36 像素的正方形框。                                                         |
+| **pictureOnly48x48**          | 人员的照片，采用 48x48 像素的正方形框。                                                         |
+| **pictureOnly72x72**          | 人员的照片，采用 72x72 像素的正方形框。                                                         |
+| **sipAddress**                | 人员的 sip 地址。                                                                                   |
+| **title**                     | 人员在组织中的职务。                                                                     |
+| **userName**                  | 人员或组的用户名。                                                                            |
+| **workEmail**                 | 人员或组的电子邮件地址。                                                                        |
+| **workPhone**                 | 人员的工作电话号码。                                                                             |
 
 注意：可能返回其他 DisplayAs 类型。
 

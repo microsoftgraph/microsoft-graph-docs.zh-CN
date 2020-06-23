@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7f67a830f53fcfc7e55682b467e5ca373da240e8
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: d463fa5a00318936ef0f1612f233851e42a9db11
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217330"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44846133"
 ---
 # <a name="synchronizationschema-resource-type"></a>synchronizationSchema 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "43217330"
 
 ## <a name="synchronization-rules"></a>同步规则
 
-[同步规则](synchronization-synchronizationrule.md)是同步设置的核心。 它们定义同步引擎应如何执行同步，包括应同步的对象、源目录中的对象与目标目录中的对象的匹配方式以及应如何在将属性从源同步到目标目录时转换属性。 
+[同步规则](synchronization-synchronizationrule.md)是同步设置的核心。 它们定义同步引擎应如何执行同步，包括应同步的对象、源目录中的对象与目标目录中的对象的匹配方式以及应如何在将属性从源同步到目标目录时转换属性。
 
 ## <a name="object-mappings"></a>对象映射
 
@@ -36,14 +36,14 @@ ms.locfileid: "43217330"
 
 ## <a name="methods"></a>Methods
 
-| 方法        | 返回类型               | 说明                  |
-|:--------------|:--------------------------|:-----------------------------|
-|[获取架构](../api/synchronization-synchronizationschema-get.md)    |[synchronizationSchema](synchronization-synchronizationschema.md)   |读取**synchronizationSchema**对象的属性和关系。|
-|[更新架构](../api/synchronization-synchronizationschema-update.md)    |无   |更新同步架构。 |
-|[删除架构](../api/synchronization-synchronizationschema-delete.md)    |无   |删除自定义架构，将架构重置为默认配置。 |
-|[列表筛选器运算符](../api/synchronization-synchronizationschema-filteroperators.md)    |[filterOperatorSchema](../resources/synchronization-filteroperatorschema.md)集合   |列出作用域筛选器支持的所有运算符。 |
-|[列表属性映射函数](../api/synchronization-synchronizationschema-functions.md)    |[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)集合   |列出属性映射表达式中支持的所有函数。 |
-|[分析属性映射表达式](../api/synchronization-synchronizationschema-parseexpression.md)|[parseExpressionResponse](synchronization-parseexpressionresponse.md)|将字符串表达式分析为 [attributeMappingSource|(../resources/synchronization_attributemappingsource）对象。|
+| 方法                                                                                                | 返回类型                                                                                                 | 说明                                                                                                                |
+|:------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------|
+| [获取架构](../api/synchronization-synchronizationschema-get.md)                                     | [synchronizationSchema](synchronization-synchronizationschema.md)                                           | 读取**synchronizationSchema**对象的属性和关系。                                                 |
+| [更新架构](../api/synchronization-synchronizationschema-update.md)                               | 无                                                                                                        | 更新同步架构。                                                                                         |
+| [删除架构](../api/synchronization-synchronizationschema-delete.md)                               | 无                                                                                                        | 删除自定义架构，将架构重置为默认配置。                                           |
+| [列表筛选器运算符](../api/synchronization-synchronizationschema-filteroperators.md)              | [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md)集合                      | 列出作用域筛选器支持的所有运算符。                                                                       |
+| [列表属性映射函数](../api/synchronization-synchronizationschema-functions.md)         | [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)集合 | 列出属性映射表达式中支持的所有函数。                                                         |
+| [分析属性映射表达式](../api/synchronization-synchronizationschema-parseexpression.md) | [parseExpressionResponse](synchronization-parseexpressionresponse.md)                                       | 将字符串表达式分析为[attributeMappingSource](../resources/synchronization-attributemappingsource.md)对象。 |
 
 
 ## <a name="properties"></a>属性

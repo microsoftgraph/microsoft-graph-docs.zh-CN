@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 479681dfb4ee267c881293fa635700e25f9a4626
-ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
+ms.openlocfilehash: b97719fca85468fbd239311df292bf779f356180
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44568829"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845923"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -18,7 +18,8 @@ ms.locfileid: "44568829"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 Azure Active Directory (Azure AD) 组，可以是 Office 365 组（Microsoft Teams 中的团队）或安全组。继承自 [directoryObject](directoryobject.md)。
+Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, a team in Microsoft Teams, or a security group.
+Inherits from [directoryObject](directoryobject.md).
 
 出于性能原因，默认情况下 [create](../api/group-post-groups.md)、[get](../api/group-get.md) 和 [list](../api/group-list.md) 操作仅返回更常用属性的子集。 这些_默认_属性将记录在[属性](#properties)部分中。 若要获取非默认返回的任一属性，请在 `$select` OData 查询选项中指定这些属性。
 
@@ -32,82 +33,82 @@ ms.locfileid: "44568829"
 
 ## <a name="methods"></a>方法
 
-| 方法       | 返回类型  |说明|
-|:---------------|:--------|:----------|
-|**组管理**| | |
-|[Create group](../api/group-post-groups.md) | [group](group.md) |新建指定的组。 它可以是 Office 365 组、动态组、安全组或团队。|
-|[Get group](../api/group-get.md) | [group](group.md) |读取 group 对象的属性和关系。|
-|[Update group](../api/group-update.md) | 无 |更新 group 对象的属性。 |
-|[删除组](../api/group-delete.md) | 无 |删除组对象。 |
-|[List groups](../api/group-list.md) |[group](group.md)|读取所有 group 对象的属性和关系。|
-|[delta](../api/group-delta.md)|组集合| 获取组的增量更改。 |
-|[列出 groupLifecyclePolicy](../api/group-list-grouplifecyclepolicies.md) |[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合| 列出组生命周期策略。 |
-|[List owners](../api/group-list-owners.md) |[directoryObject](directoryobject.md) 集合| 从 **owners** 导航属性中获取此组的所有者。|
-|[Add owner](../api/group-post-owners.md) |[directoryObject](directoryobject.md)| 通过发布到 **owners** 导航属性，为此组添加新所有者（仅支持为安全组和启用邮件的安全组添加）。|
-|[Remove owner](../api/group-delete-owners.md) | 无 |通过 **owners** 导航属性，删除 Office 365 组、安全组或启用邮件的安全组的所有者。|
-|[List members](../api/group-list-members.md) |[directoryObject](directoryobject.md) 集合| 从 **members** 导航属性中获取属于此组的直接成员的用户和组。|
-|[List transitive members](../api/group-list-transitivemembers.md) |[directoryObject](directoryobject.md) 集合| 获取属于此组成员（包括嵌套成员）的用户、组、设备和服务主体。|
-|[Add member](../api/group-post-members.md) |[directoryObject](directoryobject.md)| 通过发布到 **members** 导航属性将用户或组添加到此组（仅支持安全组和启用邮件的安全组新）。|
-|[Remove member](../api/group-delete-members.md) | 无 |通过 **members** 导航属性删除 Office 365 组、安全组或启用邮件的安全组中的成员。可以删除用户或其他组。 |
-|[列出 memberOf](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) 集合| 通过 memberOf 导航属性，获取此组是其直接成员的组和管理单元。|
-|[List transitive memberOf](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md) 集合| 列出该组所属的组和管理单元。 此操作是可传递的，并包括此组以嵌套方式所属的组。 |
-|[checkMemberGroups](../api/group-checkmembergroups.md)|String 集合|在一列组中检查成员身份。此函数是可传递的。|
-|[checkMemberObjects](../api/group-checkmemberobjects.md)|String 集合|检查组、目录角色或管理单元对象列表中的成员身份。 此函数可传递。|
-|[getMemberGroups](../api/group-getmembergroups.md)|String collection|返回此组是其成员的所有组。此函数是可传递的。|
-|[getMemberObjects](../api/group-getmemberobjects.md)|String 集合|返回组所属的所有组和管理单元。此函数是可传递的。 |
-|[Create setting](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) |基于 directorySettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。只有组特定模板可用于此操作。|
-|[Get setting](../api/directorysetting-get.md) | [directorySetting](directorysetting.md) |读取特定设置对象的属性。|
-|[List settings](../api/directorysetting-list.md) | [directorySetting](directorysetting.md) 集合 |列出所有设置对象的属性。|
-|[Update setting](../api/directorysetting-update.md) | [directorySetting](directorysetting.md)  |更新 setting 对象。 |
-|[删除设置](../api/directorysetting-delete.md) | 无 |删除 setting 对象。 |
-|[List endpoints](../api/group-list-endpoints.md) |[endpoint](endpoint.md) 集合| 获取 endpoint 对象集合。 |
-|[Get endpoint](../api/endpoint-get.md) | [endpoint](endpoint.md) | 读取 endpoint 对象的属性和关系。 |
-|[validateProperties](../api/group-validateproperties.md)|JSON| 验证 Office 365 组的显示名称或邮件别名是否符合命名策略。 |
-|[assignLicense](../api/group-assignlicense.md) | [组](group.md) |为组添加或删除订阅。 还可以启用和禁用与订阅相关的特定计划。|
-|[evaluateDynamicMembership](../api/group-evaluatedynamicmembership.md) | [evaluateDynamicMembershipResult](evaluatedynamicmembershipresult.md) | 评估用户或设备是否为动态组的成员。 |
-|**应用程序角色分配**| | |
-|[列出 appRoleAssignments](../api/group-list-approleassignments.md) |[appRoleAssignment](approleassignment.md) 集合| 获取已向其分配此组的应用和应用角色。|
-|[添加 appRoleAssignment](../api/group-post-approleassignments.md) |[appRoleAssignment](approleassignment.md)| 将应用程序角色分配给此组。|]
-|[删除 appRoleAssignment](../api/group-delete-approleassignments.md) | 无。 | 从此组中删除应用程序角色分配。|
-|**Calendar**| | |
-|[创建事件](../api/group-post-events.md) |[event](event.md)| 通过发布到事件集合新建事件。|
-|[获取事件](../api/group-get-event.md) |[event](event.md)|读取 event 对象的属性。|
-|[列出事件](../api/group-list-events.md) |[事件](event.md) 集合| 获取 event 对象集合。|
-|[更新事件](../api/group-update-event.md) |无|更新 event 对象的属性。|
-|[删除事件](../api/group-delete-event.md) |无|删除 event 对象。|
-|[列出 calendarView](../api/group-list-calendarview.md) |[event](event.md) 集合| 获取指定时间范围内的事件集合。|
-|**对话**| | |
-|[创建对话](../api/group-post-conversations.md) |[conversation](conversation.md)| 通过发布到对话集合新建对话。|
-|[获取对话](../api/group-get-conversation.md) |[conversation](conversation.md)| 读取 conversation 对象的属性。|
-|[列出对话](../api/group-list-conversations.md) |[conversation](conversation.md) 集合| 获取 conversation 对象集合。|
-|[删除对话](../api/group-delete-conversation.md) |无|删除 conversation 对象。|
-|[创建线程](../api/group-post-threads.md)|[conversationThread](conversationthread.md)| 创建新的对话线程。|
-|[获取线程](../api/group-get-thread.md) |[conversationThread](conversationthread.md)| 读取 thread 对象的属性。|
-|[列出线程](../api/group-list-threads.md) |[conversationThread](conversationthread.md) 集合| 获取组的所有线程。|
-|[更新线程](../api/group-update-thread.md) |无| 更新 thread 对象的属性。|
-|[删除线程](../api/group-delete-thread.md) |无| 删除 thread 对象
-|[List acceptedSenders](../api/group-list-acceptedsenders.md) |[directoryObject](directoryobject.md) collection| 获取此组的“接受的发件人”列表中的用户或组列表。|
-|[添加 acceptedSender](../api/group-post-acceptedsenders.md) |[directoryObject](directoryobject.md)| 将用户或组添加到 acceptSenders 集合。|
-|[删除 acceptedSender](../api/group-delete-acceptedsenders.md) |[directoryObject](directoryobject.md)| 从 acceptedSenders 集合中删除用户或组。|
-|[List rejectedSenders](../api/group-list-rejectedsenders.md) |[directoryObject](directoryobject.md) 集合| 获取此组的“遭拒的发件人”列表中的用户或组列表。|
-|[Add rejectedSender](../api/group-post-rejectedsenders.md) |[directoryObject](directoryobject.md)| 将新用户或组添加到 rejectedSenders 集合中。|
-|[Remove rejectedSender](../api/group-delete-rejectedsenders.md) |[directoryObject](directoryobject.md)| 从 rejectedSenders 集合中删除新用户或组。|
-|**开放扩展**| | |
-|[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
-|[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|
-|**架构扩展**| | |
-|[添加架构扩展值](/graph/extensibility-schema-groups) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
-|**其他组资源**| | |
-|[List photos](../api/group-list-photos.md) |[profilePhoto](photo.md) 集合| 获取组的个人资料照片集合。|
-|[List plannerPlans](../api/plannergroup-list-plans.md) |[plannerPlan](plannerplan.md) 集合| 获取组拥有的 Planner 计划。|
-|**用户设置**| | |
-|[addFavorite](../api/group-addfavorite.md)|无|将组添加到登录用户的收藏夹组列表中。 仅支持 Office 365 组。|
-|[removeFavorite](../api/group-removefavorite.md)|无|从登录用户收藏夹组列表中删除组。 仅支持 Office 365 组。|
-|[List memberOf](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) 集合| 从**memberOf**导航属性中获取此用户是其直接成员的组和管理单元。|
-|[List joinedTeams](../api/user-list-joinedteams.md) |[group](group.md) 集合| 获取用户属于其直接成员的相应 Microsoft Teams。|
-|[subscribeByMail](../api/group-subscribebymail.md)|无|将 isSubscribedByMail 属性设置为 **true**。 使登录用户可以接收电子邮件对话。 仅支持 Office 365 组。|
-|[unsubscribeByMail](../api/group-unsubscribebymail.md)|无|将 isSubscribedByMail 属性设置为 **false**。 使登录用户无法接收电子邮件对话。 仅支持 Office 365 组。|
-|[resetUnseenCount](../api/group-resetunseencount.md)|无|将登录用户自上次访问后未查看的所有帖子的 unseenCount 重置为 0。 仅支持 Office 365 组。|
+| 方法                                                                      | 返回类型                                                           | 说明                                                                                                                                                                                                           |
+|:----------------------------------------------------------------------------|:----------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **组管理**                                                        |                                                                       |                                                                                                                                                                                                                       |
+| [Create group](../api/group-post-groups.md)                                 | [group](group.md)                                                     | 新建指定的组。 它可以是 Office 365 组、动态组、安全组或团队。                                                                                                               |
+| [Get group](../api/group-get.md)                                            | [group](group.md)                                                     | 读取 group 对象的属性和关系。                                                                                                                                                                    |
+| [Update group](../api/group-update.md)                                      | 无                                                                  | 更新 group 对象的属性。                                                                                                                                                                              |
+| [删除组](../api/group-delete.md)                                      | 无                                                                  | 删除组对象。                                                                                                                                                                                                  |
+| [List groups](../api/group-list.md)                                         | [group](group.md)                                                     | 读取所有 group 对象的属性和关系。                                                                                                                                                               |
+| [delta](../api/group-delta.md)                                              | 组集合                                                      | 获取组的增量更改。                                                                                                                                                                                   |
+| [列出 groupLifecyclePolicy](../api/group-list-grouplifecyclepolicies.md)  | [groupLifecyclePolicy](grouplifecyclepolicy.md) 集合            | 列出组生命周期策略。                                                                                                                                                                                        |
+| [List owners](../api/group-list-owners.md)                                  | [directoryObject](directoryobject.md) 集合                      | 从 **owners** 导航属性中获取此组的所有者。                                                                                                                                                  |
+| [Add owner](../api/group-post-owners.md)                                    | [directoryObject](directoryobject.md)                                 | 通过发布到 **owners** 导航属性，为此组添加新所有者（仅支持为安全组和启用邮件的安全组添加）。                                                                 |
+| [Remove owner](../api/group-delete-owners.md)                               | 无                                                                  | 通过 **owners** 导航属性，删除 Office 365 组、安全组或启用邮件的安全组的所有者。                                                                               |
+| [List members](../api/group-list-members.md)                                | [directoryObject](directoryobject.md) 集合                      | 从 **members** 导航属性中获取属于此组的直接成员的用户和组。                                                                                                              |
+| [List transitive members](../api/group-list-transitivemembers.md)           | [directoryObject](directoryobject.md) 集合                      | 获取属于此组成员（包括嵌套成员）的用户、组、设备和服务主体。                                                                                                      |
+| [Add member](../api/group-post-members.md)                                  | [directoryObject](directoryobject.md)                                 | 通过发布到 **members** 导航属性将用户或组添加到此组（仅支持安全组和启用邮件的安全组新）。                                                            |
+| [Remove member](../api/group-delete-members.md)                             | 无                                                                  | Remove a member from an Office 365 group, a security group or a mail-enabled security group through the **members** navigation property. You can remove users or other groups.                                        |
+| [列出 memberOf](../api/group-list-memberof.md)                              | [directoryObject](directoryobject.md) 集合                      | 通过 memberOf 导航属性，获取此组是其直接成员的组和管理单元。                                                                                                  |
+| [List transitive memberOf](../api/group-list-transitivememberof.md)         | [directoryObject](directoryobject.md) 集合                      | 列出该组所属的组和管理单元。 此操作是可传递的，并包括此组以嵌套方式所属的组。                                                  |
+| [checkMemberGroups](../api/group-checkmembergroups.md)                      | String 集合                                                     | Check for membership in a list of groups. The function is transitive.                                                                                                                                                 |
+| [checkMemberObjects](../api/group-checkmemberobjects.md)                    | String 集合                                                     | 检查组、目录角色或管理单元对象列表中的成员身份。 此函数可传递。                                                                                                  |
+| [getMemberGroups](../api/group-getmembergroups.md)                          | String collection                                                     | Return all the groups that the group is a member of. The function is transitive.                                                                                                                                      |
+| [getMemberObjects](../api/group-getmemberobjects.md)                        | String 集合                                                     | Return all of the groups and administrative units that the group is a member of. The function is transitive.                                                                                                          |
+| [Create setting](../api/directorysetting-post-settings.md)                  | [directorySetting](directorysetting.md)                               | Create a setting object based on a directorySettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation. |
+| [Get setting](../api/directorysetting-get.md)                               | [directorySetting](directorysetting.md)                               | 读取特定设置对象的属性。                                                                                                                                                                         |
+| [List settings](../api/directorysetting-list.md)                            | [directorySetting](directorysetting.md) 集合                    | 列出所有设置对象的属性。                                                                                                                                                                               |
+| [Update setting](../api/directorysetting-update.md)                         | [directorySetting](directorysetting.md)                               | 更新 setting 对象。                                                                                                                                                                                              |
+| [删除设置](../api/directorysetting-delete.md)                         | 无                                                                  | 删除 setting 对象。                                                                                                                                                                                              |
+| [List endpoints](../api/group-list-endpoints.md)                            | [endpoint](endpoint.md) 集合                                    | 获取 endpoint 对象集合。                                                                                                                                                                                    |
+| [Get endpoint](../api/endpoint-get.md)                                      | [endpoint](endpoint.md)                                               | 读取 endpoint 对象的属性和关系。                                                                                                                                                              |
+| [validateProperties](../api/group-validateproperties.md)                    | JSON                                                                  | 验证 Office 365 组的显示名称或邮件别名是否符合命名策略。                                                                                                                           |
+| [assignLicense](../api/group-assignlicense.md)                              | [组](group.md)                                                     | 为组添加或删除订阅。 还可以启用和禁用与订阅相关的特定计划。                                                                                             |
+| [evaluateDynamicMembership](../api/group-evaluatedynamicmembership.md)      | [evaluateDynamicMembershipResult](evaluatedynamicmembershipresult.md) | 评估用户或设备是否为动态组的成员。                                                                                                                                         |
+| **应用程序角色分配**                                                    |                                                                       |                                                                                                                                                                                                                       |
+| [列出 appRoleAssignments](../api/group-list-approleassignments.md)          | [appRoleAssignment](approleassignment.md) 集合                  | 获取已向其分配此组的应用和应用角色。                                                                                                                                                        |
+| [添加 appRoleAssignment](../api/group-post-approleassignments.md)            | [appRoleAssignment](approleassignment.md)                             | 将应用程序角色分配给此组。                                                                                                                                                                                     |
+| [删除 appRoleAssignment](../api/group-delete-approleassignments.md)       | 无。                                                                 | 从此组中删除应用程序角色分配。                                                                                                                                                                        |
+| **Calendar**                                                                |                                                                       |                                                                                                                                                                                                                       |
+| [创建事件](../api/group-post-events.md)                                 | [event](event.md)                                                     | 通过发布到事件集合新建事件。                                                                                                                                                               |
+| [获取事件](../api/group-get-event.md)                                      | [event](event.md)                                                     | 读取 event 对象的属性。                                                                                                                                                                                   |
+| [列出事件](../api/group-list-events.md)                                  | [事件](event.md) 集合                                          | 获取 event 对象集合。                                                                                                                                                                                       |
+| [更新事件](../api/group-update-event.md)                                | 无                                                                  | 更新 event 对象的属性。                                                                                                                                                                             |
+| [删除事件](../api/group-delete-event.md)                                | 无                                                                  | 删除 event 对象。                                                                                                                                                                                                  |
+| [列出 calendarView](../api/group-list-calendarview.md)                      | [event](event.md) 集合                                          | 获取指定时间范围内的事件集合。                                                                                                                                                                |
+| **对话**                                                           |                                                                       |                                                                                                                                                                                                                       |
+| [创建对话](../api/group-post-conversations.md)                   | [conversation](conversation.md)                                       | 通过发布到对话集合新建对话。                                                                                                                                                 |
+| [获取对话](../api/group-get-conversation.md)                        | [conversation](conversation.md)                                       | 读取 conversation 对象的属性。                                                                                                                                                                             |
+| [列出对话](../api/group-list-conversations.md)                    | [conversation](conversation.md) 集合                            | 获取 conversation 对象集合。                                                                                                                                                                                 |
+| [删除对话](../api/group-delete-conversation.md)                  | 无                                                                  | 删除 conversation 对象。                                                                                                                                                                                           |
+| [创建线程](../api/group-post-threads.md)                               | [conversationThread](conversationthread.md)                           | 创建新的对话线程。                                                                                                                                                                                     |
+| [获取线程](../api/group-get-thread.md)                                    | [conversationThread](conversationthread.md)                           | 读取 thread 对象的属性。                                                                                                                                                                                   |
+| [列出线程](../api/group-list-threads.md)                                | [conversationThread](conversationthread.md) 集合                | 获取组的所有线程。                                                                                                                                                                                       |
+| [更新线程](../api/group-update-thread.md)                              | 无                                                                  | 更新 thread 对象的属性。                                                                                                                                                                                 |
+| [删除线程](../api/group-delete-thread.md)                              | 无                                                                  | 删除 thread 对象                                                                                                                                                                                                  |
+| [List acceptedSenders](../api/group-list-acceptedsenders.md)                | [directoryObject](directoryobject.md) collection                      | 获取此组的“接受的发件人”列表中的用户或组列表。                                                                                                                                   |
+| [添加 acceptedSender](../api/group-post-acceptedsenders.md)                  | [directoryObject](directoryobject.md)                                 | 将用户或组添加到 acceptSenders 集合。                                                                                                                                                                  |
+| [删除 acceptedSender](../api/group-delete-acceptedsenders.md)             | [directoryObject](directoryobject.md)                                 | 从 acceptedSenders 集合中删除用户或组。                                                                                                                                                           |
+| [List rejectedSenders](../api/group-list-rejectedsenders.md)                | [directoryObject](directoryobject.md) 集合                      | 获取此组的“遭拒的发件人”列表中的用户或组列表。                                                                                                                                   |
+| [Add rejectedSender](../api/group-post-rejectedsenders.md)                  | [directoryObject](directoryobject.md)                                 | 将新用户或组添加到 rejectedSenders 集合中。                                                                                                                                                            |
+| [Remove rejectedSender](../api/group-delete-rejectedsenders.md)             | [directoryObject](directoryobject.md)                                 | 从 rejectedSenders 集合中删除新用户或组。                                                                                                                                                         |
+| **开放扩展**                                                         |                                                                       |                                                                                                                                                                                                                       |
+| [创建开放扩展](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)                             | 创建开放扩展，并将自定义属性添加到新资源或现有资源。                                                                                                                                     |
+| [获取开放扩展](../api/opentypeextension-get.md)                       | [openTypeExtension](opentypeextension.md) 集合                  | 获取扩展名称标识的开放扩展。                                                                                                                                                               |
+| **架构扩展**                                                       |                                                                       |                                                                                                                                                                                                                       |
+| [添加架构扩展值](/graph/extensibility-schema-groups)           |                                                                       | 创建架构扩展定义，然后使用它向资源添加自定义键入数据。                                                                                                                          |
+| **其他组资源**                                                   |                                                                       |                                                                                                                                                                                                                       |
+| [List photos](../api/group-list-photos.md)                                  | [profilePhoto](photo.md) 集合                                   | 获取组的个人资料照片集合。                                                                                                                                                                     |
+| [List plannerPlans](../api/plannergroup-list-plans.md)                      | [plannerPlan](plannerplan.md) 集合                              | 获取组拥有的 Planner 计划。                                                                                                                                                                                 |
+| **用户设置**                                                           |                                                                       |                                                                                                                                                                                                                       |
+| [addFavorite](../api/group-addfavorite.md)                                  | 无                                                                  | 将组添加到登录用户的收藏夹组列表中。 仅支持 Office 365 组。                                                                                                              |
+| [removeFavorite](../api/group-removefavorite.md)                            | 无                                                                  | 从登录用户收藏夹组列表中删除组。 仅支持 Office 365 组。                                                                                                         |
+| [List memberOf](../api/group-list-memberof.md)                              | [directoryObject](directoryobject.md) 集合                      | 从**memberOf**导航属性中获取此用户是其直接成员的组和管理单元。                                                                                              |
+| [List joinedTeams](../api/user-list-joinedteams.md)                         | [group](group.md) 集合                                          | 获取用户属于其直接成员的相应 Microsoft Teams。                                                                                                                                                          |
+| [subscribeByMail](../api/group-subscribebymail.md)                          | 无                                                                  | 将 isSubscribedByMail 属性设置为 **true**。 使登录用户可以接收电子邮件对话。 仅支持 Office 365 组。                                                                    |
+| [unsubscribeByMail](../api/group-unsubscribebymail.md)                      | 无                                                                  | 将 isSubscribedByMail 属性设置为 **false**。 使登录用户无法接收电子邮件对话。 仅支持 Office 365 组。                                                                |
+| [resetUnseenCount](../api/group-resetunseencount.md)                        | 无                                                                  | 将登录用户自上次访问后未查看的所有帖子的 unseenCount 重置为 0。 仅支持 Office 365 组。                                                                        |
 
 ## <a name="properties"></a>属性
 
@@ -117,7 +118,7 @@ ms.locfileid: "44568829"
 |assignedLabels|[assignedLabel](assignedlabel.md) 集合|与 Office 365 组关联的敏感度标签对（标签 ID、标签名称）列表。 <br><br>仅在 $select 上返回。 只读。|
 |assignedLicenses|[assignedLicense](assignedlicense.md) 集合|分配给该组的许可证。 <br><br>仅在 $select 上返回。 只读。|
 |autoSubscribeNewMembers|布尔值|指示添加到组中的新成员是否将自动订阅接收电子邮件通知。 可以在 PATCH 请求中设置组的这个属性；不要在创建该组的初始 POST 请求中设置它。 默认值为 **false**。 <br><br>仅在 $select 上返回。|
-|classification|字符串|描述该组的分类（如低、中或高业务影响）。通过根据[模板定义](directorysettingtemplate.md)创建 ClassificationList [设置](directorysetting.md)值来定义此属性的有效值。<br><br>默认情况下返回。|
+|classification|字符串|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](directorysetting.md) value, based on the [template definition](directorysettingtemplate.md).<br><br>默认情况下返回。|
 |createdByAppId|字符串|用于创建组的应用 ID 对于部分组可能为 null。 <br><br>默认情况下返回。 只读。 支持 $filter。|
 |createdDateTime|DateTimeOffset| 组的创建时间戳。 值无法修改，并在组创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。 |
 |deletedDateTime|DateTimeOffset| 对于某些 Azure Active Directory 对象（用户、组、应用程序），如果该对象被删除，先逻辑删除，随后该属性随着对象删除的日期和时间更新。 否则此属性为空。 如果对象已还原，则此属性会更新为空。 |
@@ -160,7 +161,7 @@ ms.locfileid: "44568829"
 ### <a name="group-visibility-options"></a>组可见性选项
 
 每个 **visibility** 属性值的含义如下：
- 
+
 |值|说明|
 |:----|-----------|
 | 公共 | 任何人均可在不需要所有者许可的情况下加入组。<br>任何人均可查看组的内容。|
@@ -171,29 +172,29 @@ ms.locfileid: "44568829"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
-|acceptedSenders|[directoryObject](directoryobject.md) 集合|允许在此组中创建帖子或日历事件的用户或组列表。如果此列表为非空，则仅允许此处列出的用户或组发布内容。|
-|日历|[日历](calendar.md)|组日历。只读。|
-|calendarView|[事件](event.md) 集合|日历的日历视图。只读。|
+|acceptedSenders|[directoryObject](directoryobject.md) 集合|The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.|
+|日历|[日历](calendar.md)|The group's calendar. Read-only.|
+|calendarView|[事件](event.md) 集合|The calendar view for the calendar. Read-only.|
 |conversations|[对话](conversation.md) 集合|组对话。|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 创建组的用户（或应用程序）。 **注意：** 如果用户是管理员，不设置此项。 只读。|
 |drive|[drive](drive.md)|组的默认驱动器。 只读。|
 |drives|[drive](drive.md) 集合|组的驱动器。 只读。|
 |endpoints|[Endpoint](endpoint.md) 集合| 组的终结点。 此为只读属性。 可为空。|
 |events|[event](event.md) 集合|组事件。|
-|extensions|[扩展](extension.md)集合|为组定义的开放扩展集合。只读。可为 NULL。|
-|groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合|此组的生命周期策略集合。 只读。 可为 NULL。|
+|extensions|[扩展](extension.md)集合|The collection of open extensions defined for the group. Read-only. Nullable.|
+|groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合|此组的生命周期策略集合。 此为只读属性。 可为空。|
 |memberOf|[directoryObject](directoryobject.md) 集合|此组所属的组和管理单元。 HTTP 方法：GET（支持所有组） 此为只读属性。 可为 Null。|
 |members|[directoryObject](directoryobject.md) collection| 属于此组成员的用户、联系人和组。 HTTP 方法：GET（支持所有组）、POST（支持安全组和启用邮件的安全组）、DELETE（仅支持安全组）。只读。 可为 NULL。|
 |membersWithLicenseErrors|[user](user.md) 集合|在该基于组的许可证分配中存在许可证错误的组成员列表。 只读。|
 |onenote|[onenote](onenote.md)| 只读。|
 |owners|[directoryObject](directoryobject.md) 集合|组的所有者。 所有者是一组允许修改此对象的非管理员用户。 HTTP 方法：GET（支持所有组）、POST（支持安全组和启用邮件的安全组）、DELETE（仅支持安全组）。只读。 可为 NULL。|
 |photo|[profilePhoto](profilephoto.md)| 组的个人资料照片。 |
-|photos|[profilePhoto](profilephoto.md) 集合| 组拥有的个人资料照片。只读。可为 Null。|
+|photos|[profilePhoto](profilephoto.md) 集合| The profile photos owned by the group. Read-only. Nullable.|
 |planner|[plannerGroup](plannergroup.md)| 组可用的选择性 Planner 服务。 此为只读属性。 可为空。 |
-|rejectedSenders|[directoryObject](directoryobject.md) 集合|不允许在此组中创建帖子或日历事件的用户或组列表。可为 Null|
+|rejectedSenders|[directoryObject](directoryobject.md) 集合|The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable|
 |settings|[directorySetting](directorysetting.md) 集合| 可以管理此组行为的设置，例如成员是否可以将来宾用户邀请到此组。 可为 NULL。|
-|sites|[网站](site.md)集|该组中的 SharePoint 网站的列表。使用 /sites/root 访问默认网站。|
-|threads|[conversationThread](conversationthread.md) 集合| 组的对话线程。可为 Null。|
+|sites|[网站](site.md)集|The list of SharePoint sites in this group. Access the default site with /sites/root.|
+|threads|[conversationThread](conversationthread.md) 集合| The group's conversation threads. Nullable.|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -219,7 +220,7 @@ ms.locfileid: "44568829"
     "owners",
     "photo",
     "photos",
-    "planner",    
+    "planner",
     "rejectedSenders",
     "settings",
     "sites",

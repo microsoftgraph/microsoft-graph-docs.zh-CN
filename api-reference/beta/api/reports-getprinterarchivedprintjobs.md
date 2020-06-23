@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 510195b13fc3505f180e6bbcd893d4034432920f
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: a6ff5b6d9031c142821728b31cb66f8b0c5d100f
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895645"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845462"
 ---
 # <a name="reports-getprinterarchivedprintjobs"></a>报告： getPrinterArchivedPrintJobs
 
@@ -20,8 +20,8 @@ ms.locfileid: "42895645"
 
 获取排队等候特定[打印机](../resources/printer.md)的存档打印作业的列表。
 
-## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+## <a name="permissions"></a>Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
 
@@ -40,18 +40,18 @@ GET /reports/getPrinterArchivedPrintJobs
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}。必需。 |
+| Authorization | Bearer {token}. Required. |
 
 ## <a name="function-parameters"></a>函数参数
 
-|参数|类型|是否必需？|说明|
-|-|-|-|-|-|
-|`printerId`|`Edm.String`|是|要为其返回数据的打印机的 ID。|
-|`periodStart`|`Edm.DateTimeOffset`|否|要在其中包含数据的时间段的开始日期（含）。|
-|`periodEnd`|`Edm.DateTimeOffset`|否|要在其中包含数据的时间段的结束日期（含）。|
+| 参数     | 类型                 | 是否必需？ | Description                                                          |
+|---------------|----------------------|-----------|----------------------------------------------------------------------|
+| `printerId`   | `Edm.String`         | 是       | 要为其返回数据的打印机的 ID。                            |
+| `periodStart` | `Edm.DateTimeOffset` | 否        | 要在其中包含数据的时间段的开始日期（含）。 |
+| `periodEnd`   | `Edm.DateTimeOffset` | 否        | 要在其中包含数据的时间段的结束日期（含）。   |
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[archivedPrintJob](../resources/archivedprintjob.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[archivedPrintJob](../resources/archivedprintjob.md)对象集合。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -66,8 +66,8 @@ GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(p
 ```
 
 ##### <a name="response"></a>响应
-下面展示了示例响应。 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+下面展示了示例响应。
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

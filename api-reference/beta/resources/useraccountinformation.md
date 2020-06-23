@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 85e04cb96453c4415e4120e463a5c233aadc4ca3
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: b2993348b19cd0f55cbb7d26369276ea97006960
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229386"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44846078"
 ---
 # <a name="useraccountinformation-resource-type"></a>userAccountInformation 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "43229386"
 
 继承自[itemFacet](itemfacet.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法                                                             | 返回类型                                         | 说明                                                                   |
 |:-------------------------------------------------------------------|:----------------------------------------------------|:------------------------------------------------------------------------------|
@@ -30,12 +30,12 @@ ms.locfileid: "43229386"
 
 ## <a name="properties"></a>属性
 
-| 属性            | 类型                       | 说明                                                                                                                               |
-|:--------------------|:---------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|
-|ageGroup             |String                      | 显示用户的年龄组。 允许的`null`值`minor`、 `notAdult`和`adult`由目录生成且不能更改。 |
-|countryCode          |String|                     | 包含与用户帐户关联的双字符国家/地区代码。                                                                |
-|preferredLanguageTag |[localeInfo](localeinfo.md) | 包含用户与帐户相关的首选语言。                                                               |
-|userPrincipalName    |String                      | 与帐户关联的用户的用户主体名称（UPN）。                                                                    |
+| 属性             | 类型                        | Description                                                                                                                               |
+|:---------------------|:----------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|
+| ageGroup             | String                      | 显示用户的年龄组。 允许的 `null` 值 `minor` 、 `notAdult` 和 `adult` 由目录生成且不能更改。 |
+| countryCode          | String                      | 包含与用户帐户关联的双字符国家/地区代码。                                                                |
+| preferredLanguageTag | [localeInfo](localeinfo.md) | 包含用户与帐户相关的首选语言。                                                               |
+| userPrincipalName    | String                      | 与帐户关联的用户的用户主体名称（UPN）。                                                                    |
 
 ## <a name="relationships"></a>关系
 

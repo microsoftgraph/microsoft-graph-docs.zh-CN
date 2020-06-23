@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 27e421283c9908c648769ccbe652f990f2728fce
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 8ec1f42ba951fa1bde827b2900b98e37c62d6160
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181720"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845279"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>featureRolloutPolicy 资源类型
 
@@ -41,19 +41,19 @@ ms.locfileid: "43181720"
 
 ### <a name="passwordhashsync"></a>PasswordHashSync
 
-* 从 Azure AD Connect 中的 "可选功能" 页启用 [PasswordHashSync](/azure/active-directory/hybrid/whatis-phs) 。
+*  [PasswordHashSync](/azure/active-directory/hybrid/whatis-phs)   从 Azure AD Connect 中的 "可选功能" 页启用 PasswordHashSync。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
-| 方法       | 返回类型 | 说明 |
-|:-------------|:------------|:------------|
-| [列出 featureRolloutPolicies](../api/directory-list-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | 检索 featureRolloutPolicy 对象的列表。 |
-| [获取 featureRolloutPolicy](../api/featurerolloutpolicy-get.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | 检索 featurerolloutpolicy 对象的属性和关系。 ||
-| [创建 featureRolloutPolicy](../api/directory-post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | 创建新的 featureRolloutPolicy 对象。
-| [更新 featureRolloutPolicy](../api/featurerolloutpolicy-update.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | 更新 featurerolloutpolicy 对象的属性。 |
-| [删除 featureRolloutPolicy](../api/featurerolloutpolicy-delete.md) | 无 | 删除 featureRolloutPolicy 对象。 |
-| [分配 appliesTo](../api/featurerolloutpolicy-post-appliesto.md) | [directoryObject](directoryobject.md) | 将 directoryObject 分配给功能推出。 |
-| [删除 appliesTo](../api/featurerolloutpolicy-delete-appliesto.md) | 无 | 从功能推出中删除 directoryObject。 |
+| 方法                                                                         | 返回类型                                     | 说明                                                               |
+|:-------------------------------------------------------------------------------|:------------------------------------------------|:--------------------------------------------------------------------------|
+| [列出 featureRolloutPolicies](../api/directory-list-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | 检索 featureRolloutPolicy 对象的列表。                          |
+| [获取 featureRolloutPolicy](../api/featurerolloutpolicy-get.md)                 | [featureRolloutPolicy](featurerolloutpolicy.md) | 检索 featurerolloutpolicy 对象的属性和关系。 |
+| [创建 featureRolloutPolicy](../api/directory-post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | 创建新的 featureRolloutPolicy 对象。                                 |
+| [更新 featureRolloutPolicy](../api/featurerolloutpolicy-update.md)           | [featureRolloutPolicy](featurerolloutpolicy.md) | 更新 featurerolloutpolicy 对象的属性。                     |
+| [删除 featureRolloutPolicy](../api/featurerolloutpolicy-delete.md)           | 无                                            | 删除 featureRolloutPolicy 对象。                                     |
+| [分配 appliesTo](../api/featurerolloutpolicy-post-appliesto.md)              | [directoryObject](directoryobject.md)           | 将 directoryObject 分配给功能推出。                              |
+| [删除 appliesTo](../api/featurerolloutpolicy-delete-appliesto.md)            | 无                                            | 从功能推出中删除 directoryObject。                            |
 
 ## <a name="properties"></a>属性
 
@@ -63,14 +63,14 @@ ms.locfileid: "43181720"
 |displayName|String|此功能展示策略的显示名称。|
 |功能|stagedFeatureName| 可取值为：`passthroughAuthentication`、`seamlessSso`、`passwordHashSync`、`unknownFutureValue`。|
 |id|字符串| 只读。|
-|isAppliedToOrganization|布尔值|指示是否应将此功能展示策略应用于整个组织。|
+|isAppliedToOrganization|Boolean|指示是否应将此功能展示策略应用于整个组织。|
 |isEnabled|Boolean|指示是否启用功能展示。|
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型        | 说明 |
+| 关系 | 类型        | Description |
 |:-------------|:------------|:------------|
-|appliesTo|[directoryObject](directoryobject.md) collection| 可为 Null。 指定为其启用功能的 directoryObjects 列表。|
+|appliesTo|[directoryObject](directoryobject.md) 集合| 可为 NULL。 指定为其启用功能的 directoryObjects 列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

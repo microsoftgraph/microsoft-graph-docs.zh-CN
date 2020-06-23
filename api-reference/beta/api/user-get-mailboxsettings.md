@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d59505f311e1a9e1fd72540a42044151198b5a07
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 12ba305c1fa88bdf42c663af1e37eefada56dab0
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43423894"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845433"
 ---
 # <a name="get-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -29,6 +29,7 @@ ms.locfileid: "43423894"
 - 时间格式
 - 时区
 - [工作时间](../resources/workinghours.md)
+- [用户目的](../resources/userpurpose.md)
 
 用户可以使用 Outlook 网页版设置首选的日期和时间格式。 用户可以选择支持的[短日期](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate)或[短时间](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime)格式之一。 此 `GET` 操作将返回用户选择的格式。
 
@@ -37,7 +38,7 @@ ms.locfileid: "43423894"
 此 `GET` 操作以管理员设置的格式返回用户的首选时区。 若要将时区设置为某种特定格式（Windows 或 IANA），可以先[将相应格式的首选时区更新为邮箱设置](user-update-mailboxsettings.md)。 随后便可以获取相应格式的时区。 也可以在应用中单独管理格式转换。 
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -53,7 +54,7 @@ GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-若要获取特定设置 - 仅限自动答复设置、日期格式、区域设置、时间格式、时区或工作时间：
+若要获取特定设置-仅限自动答复设置、日期格式、区域设置、时间格式、时区、工作时间或用户目的，请执行以下操作：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
@@ -76,13 +77,16 @@ GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 
 GET /me/mailboxSettings/workingHours
 GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
+
+GET /me/mailboxSettings/userPurpose
+GET /users/{id|userPrincipalName}/mailboxSettings/userPurpose
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持一些 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -99,12 +103,13 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 - 字符串（适用于 **timeFormat**）
 - 字符串（适用于 **timeZone**）
 - [workingHours](../resources/workinghours.md)
+- [userPurpose](../resources/userpurpose.md)
 
 ## <a name="examples"></a>示例
 
 ### <a name="example-1"></a>示例 1
 #### <a name="request"></a>请求 
-第一个示例获取已登录用户邮箱的所有邮箱设置，其中包括自动答复、日期格式、区域设置（语言和国家/地区）、时间格式、时区和工作时间设置。
+第一个示例获取已登录用户邮箱的所有邮箱设置，其中包括自动答复的设置、日期格式、区域设置（语言和国家/地区）、时间格式、时区、工作时间和用户目的。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -175,6 +180,9 @@ Content-type: application/json
             "name":"Pacific Standard Time"
         }
     },
+    "userPurpose": {
+        "value": "user"
+    },
     "dateFormat": "MM/dd/yyyy",
     "timeFormat": "hh:mm tt",
     "delegateMeetingMessageDeliveryOptions": "sendToDelegateOnly"
@@ -208,7 +216,7 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings/automaticRepliesSetting
 ---
 
 #### <a name="response"></a>响应
-该响应仅包括自动答复设置。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+The response includes only the automatic replies settings. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -291,6 +299,36 @@ Content-type: application/json
             "year":0
         }
     }
+}
+```
+
+### <a name="example-4"></a>示例 4
+#### <a name="request"></a>请求
+第四个示例专门获取已登录用户的邮箱的[用户目的](../resources/userpurpose.md)设置。
+<!-- {
+  "blockType": "request",
+  "name": "get_mailboxsettings_4"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/mailboxSettings/userPurpose
+```
+#### <a name="response"></a>响应
+响应仅包括[用户目标](../resources/userpurpose.md)设置。
+
+<!-- {
+  "blockType": "response",
+  "name": "get_mailboxsettings_4",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.userPurpose"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('622eaaff-0683-4862-9de4-f2ec83c2bd98')/mailboxSettings/userPurpose",
+    "value": "user"
 }
 ```
 

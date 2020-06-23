@@ -5,12 +5,12 @@ author: SarahBar
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e7e3c3a72834d3dc44ad274f35c03454b17494c9
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: cdaae33fde7c691d83491c6f2f561bd4dabb052e
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543406"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845286"
 ---
 # <a name="directoryaudit-resource-type"></a>directoryAudit 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "43543406"
 
 表示目录审核项及其集合。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -29,19 +29,19 @@ ms.locfileid: "43543406"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
-|:---------------|:--------|:----------|
-|activityDateTime|DateTimeOffset|指示执行活动的日期和时间。 时间戳类型始终为 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|activityDisplayName|String|指示活动名称或操作名称（例如， “创建用户”、“向组中添加成员”）。 有关记录的活动列表，请参阅 [Azure AD 活动列表](/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list)。|
-|additionalDetails|[keyValue](keyvalue.md) 集合|指示活动的其他详细信息。|
-|category|字符串|指示活动所针对的资源类别。 （例如：用户管理、组管理等。）|
-|correlationId|GUID|指示有助于关联跨各种服务的活动的唯一 ID。 可用于跨服务跟踪日志。|
-|id|String| 指示活动的唯一 ID。 这是 GUID。|
-|initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|指示有关启动活动的用户或应用的信息。|
-|loggedByService|String|指示启动活动的服务的信息（例如：自助服务密码管理、核心目录、B2C、受邀用户、Microsoft Identity Manager、Privileged Identity Management）。|
-|result|string| 指示活动的结果。可取值为：`success`、`failure`、`timeout`、`unknownFutureValue`。||
-|resultReason|String|如果结果为“失败”或“超时”，指示失败的原因。|
-|targetResources|[targetResource](targetresource.md) 集合|指示由于活动而更改的资源的信息。 目标资源类型可以是用户、设备、目录、应用、角色、组、策略或其他。
+| 属性            | 类型                                                | Description                                                                                                                                                                                                                                                            |
+|:--------------------|:----------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| activityDateTime    | DateTimeOffset                                      | 指示执行活动的日期和时间。 时间戳类型始终为 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`                                                                              |
+| activityDisplayName | String                                              | 指示活动名称或操作名称（例如， “创建用户”、“向组中添加成员”）。 有关记录的活动列表，请参阅 [Azure AD 活动列表](/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list)。 |
+| additionalDetails   | [keyValue](keyvalue.md) 集合                  | 指示活动的其他详细信息。                                                                                                                                                                                                                          |
+| category            | 字符串                                              | 指示活动所针对的资源类别。 （例如：用户管理、组管理等。）                                                                                                                                              |
+| correlationId       | GUID                                                | 指示有助于关联跨各种服务的活动的唯一 ID。 可用于跨服务跟踪日志。                                                                                                                                    |
+| id                  | String                                              | 指示活动的唯一 ID。 这是 GUID。                                                                                                                                                                                                              |
+| initiatedBy         | [auditActivityInitiator](auditactivityinitiator.md) | 指示有关启动活动的用户或应用的信息。                                                                                                                                                                                                    |
+| loggedByService     | String                                              | 指示启动活动的服务的信息（例如：自助服务密码管理、核心目录、B2C、受邀用户、Microsoft Identity Manager、Privileged Identity Management）。                                                          |
+| result              | string                                              | 指示活动的结果。可取值为：`success`、`failure`、`timeout`、`unknownFutureValue`。                                                                                                                                                       |
+| resultReason        | String                                              | 如果结果为“失败”或“超时”，指示失败的原因。                                                                                                                                                                                              |
+| targetResources     | [targetResource](targetresource.md) 集合      | 指示由于活动而更改的资源的信息。 目标资源类型可以是用户、设备、目录、应用、角色、组、策略或其他。                                                                                                       |
 
 ## <a name="relationships"></a>关系
 无

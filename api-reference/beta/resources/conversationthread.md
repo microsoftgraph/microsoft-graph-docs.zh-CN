@@ -5,29 +5,30 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 55a8b414022a338628264fe09e58559a52c3fbcd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d1b274aa84299ae66d6385133ed7371a377d01e6
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507392"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845937"
 ---
 # <a name="conversationthread-resource-type"></a>conversationThread 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 conversationThread 是 [帖子](post.md) 集合。
 
-最后一个帖子收件人集合聚合了整个线程的收件人。线程的收件人集合可以不断扩大。从线程中移除某个收件人时将创建一个新的线程。
+The last post's recipients collection is the aggregated recipients of the entire thread. A thread can have a growing collection of recipients.
+A new thread is created when a recipient is removed from the thread.
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |[列出线程](../api/group-list-threads.md) | [conversationThread](conversationthread.md) 集合 |获取组的所有线程。|
-|[创建线程](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |通过首先创建一个线程，启动一个新对话。在组中创建新对话、对话线程和帖子。|
+|[创建线程](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |Start a new conversation by first creating a thread. A new conversation, conversation thread, and post are created in the group.|
 |[获取 conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |获取属于某个组的特定线程。 |
 |[更新](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |更新 conversationThread 对象 |
 |[删除](../api/conversationthread-delete.md) | None |删除 conversationThread 对象 |
@@ -35,22 +36,22 @@ conversationThread 是 [帖子](post.md) 集合。
 |[列出帖子](../api/conversationthread-list-posts.md) |[帖子](post.md) 集合| 获取指定线程的帖子。 |
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
-|:---------------|:--------|:----------|
-|id|String| 只读。|
-|toRecipients|[recipient](recipient.md) collection|收件人：线程的收件人。|
-|ccRecipients|[recipient](recipient.md) collection|抄送：线程的收件人。|
-|topic|String|对话的主题。在创建对话时可设置此属性，但无法对其进行更新。||
-|hasAttachments|Boolean|指示此线程中的任意帖子是否至少具有一个附件。|
-|lastDeliveredDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|uniqueSenders|String collection|向此线程发送邮件的所有用户。|
-|preview|String|来自此对话中最新帖子的正文的简短摘要。|
-|Resource.islocked|Boolean|指示线程是否已锁定。|
+| 属性              | 类型                                 | 说明                                                                                                                                                                                      |
+|:----------------------|:-------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| id                    | String                               | 只读。                                                                                                                                                                                       |
+| toRecipients          | [recipient](recipient.md) collection | 收件人：线程的收件人。                                                                                                                                                               |
+| ccRecipients          | [recipient](recipient.md) collection | 抄送：线程的收件人。                                                                                                                                                               |
+| topic                 | String                               | The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.                                                                              |
+| hasAttachments        | Boolean                              | 指示此线程中的任意帖子是否至少具有一个附件。                                                                                                               |
+| lastDeliveredDateTime | DateTimeOffset                       | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` |
+| uniqueSenders         | String collection                    | 向此线程发送邮件的所有用户。                                                                                                                                                |
+| preview               | String                               | 本对话中最新帖子的正文中的简短摘要。                                                                                                                           |
+| Resource.islocked              | Boolean                              | 指示线程是否已锁定。                                                                                                                                                               |
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型   |说明|
+| 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
-|posts|[帖子](post.md) 集合| 只读。可为空。|
+|posts|[帖子](post.md) 集合| Read-only. Nullable.|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
