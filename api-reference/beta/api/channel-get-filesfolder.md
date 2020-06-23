@@ -5,58 +5,57 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 70ca3b79a736075af1bed233a836f1000d85c5ef
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: d10e0758e0d323f17534c1651268b74fd077fd3d
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793414"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845335"
 ---
-# <a name="get-filesfolder"></a><span data-ttu-id="11662-103">获取 "获取"</span><span class="sxs-lookup"><span data-stu-id="11662-103">Get filesFolder</span></span>
+# <a name="get-filesfolder"></a><span data-ttu-id="46156-103">获取 "获取"</span><span class="sxs-lookup"><span data-stu-id="46156-103">Get filesFolder</span></span>
 
-<span data-ttu-id="11662-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="11662-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="46156-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="46156-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+<span data-ttu-id="46156-105">获取存储[通道](../resources/channel.md)文件的位置的元数据。</span><span class="sxs-lookup"><span data-stu-id="46156-105">Get the metadata for the location where the files of a [channel](../resources/channel.md) are stored.</span></span> 
 
-<span data-ttu-id="11662-105">检索文件导航路径（用于[存储通道文件](../resources/channel.md)的位置的元数据）的文件。</span><span class="sxs-lookup"><span data-stu-id="11662-105">Retrieve the filesFolder navigation path, which is the metadata for the location where the channel files are stored, for a [channel](../resources/channel.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="46156-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="46156-106">Permissions</span></span>
+<span data-ttu-id="46156-107">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="46156-107">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="46156-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="46156-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="11662-106">权限</span><span class="sxs-lookup"><span data-stu-id="11662-106">Permissions</span></span>
-<span data-ttu-id="11662-107">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="11662-107">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="11662-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="11662-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="11662-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="11662-109">Permission type</span></span>      | <span data-ttu-id="11662-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="11662-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="46156-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="46156-109">Permission type</span></span>      | <span data-ttu-id="46156-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="46156-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="11662-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="11662-111">Delegated (work or school account)</span></span> | <span data-ttu-id="11662-112">文件. All、Group. all、Group、Group。全部。</span><span class="sxs-lookup"><span data-stu-id="11662-112">File.Read.All, Group.Read.All, File.ReadWrite.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="11662-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="11662-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="11662-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="11662-114">Not supported.</span></span>    |
-|<span data-ttu-id="11662-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="11662-115">Application</span></span> | <span data-ttu-id="11662-116">文件. All、Group. all、Group、Group。全部。</span><span class="sxs-lookup"><span data-stu-id="11662-116">File.Read.All, Group.Read.All, File.ReadWrite.All, Group.ReadWrite.All</span></span>     |
+|<span data-ttu-id="46156-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="46156-111">Delegated (work or school account)</span></span> | <span data-ttu-id="46156-112">文件. All、Group. all、Group、Group。全部。</span><span class="sxs-lookup"><span data-stu-id="46156-112">File.Read.All, Group.Read.All, File.ReadWrite.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="46156-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="46156-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="46156-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="46156-114">Not supported.</span></span>    |
+|<span data-ttu-id="46156-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="46156-115">Application</span></span> | <span data-ttu-id="46156-116">文件. All、Group. all、Group、Group。全部。</span><span class="sxs-lookup"><span data-stu-id="46156-116">File.Read.All, Group.Read.All, File.ReadWrite.All, Group.ReadWrite.All</span></span>     |
 
 
-## <a name="http-request"></a><span data-ttu-id="11662-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="11662-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="46156-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="46156-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/filesFolder
 
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="11662-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="11662-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="46156-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="46156-118">Optional query parameters</span></span>
 
-<span data-ttu-id="11662-119">此方法不支持[OData 查询参数](/graph/query-parameters)来自定义响应。</span><span class="sxs-lookup"><span data-stu-id="11662-119">This method does not support the [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="46156-119">此方法不支持[OData 查询参数](/graph/query-parameters)来自定义响应。</span><span class="sxs-lookup"><span data-stu-id="46156-119">This method does not support the [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="11662-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="11662-120">Request headers</span></span>
-| <span data-ttu-id="11662-121">标头</span><span class="sxs-lookup"><span data-stu-id="11662-121">Header</span></span>       | <span data-ttu-id="11662-122">值</span><span class="sxs-lookup"><span data-stu-id="11662-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="46156-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="46156-120">Request headers</span></span>
+| <span data-ttu-id="46156-121">标头</span><span class="sxs-lookup"><span data-stu-id="46156-121">Header</span></span>       | <span data-ttu-id="46156-122">值</span><span class="sxs-lookup"><span data-stu-id="46156-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="11662-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="11662-123">Authorization</span></span>  | <span data-ttu-id="11662-124">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="11662-124">Bearer {token}.</span></span> <span data-ttu-id="11662-125">Required.</span><span class="sxs-lookup"><span data-stu-id="11662-125">Required.</span></span>  |
+| <span data-ttu-id="46156-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="46156-123">Authorization</span></span>  | <span data-ttu-id="46156-124">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="46156-124">Bearer {token}.</span></span> <span data-ttu-id="46156-125">Required.</span><span class="sxs-lookup"><span data-stu-id="46156-125">Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="11662-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="11662-126">Request body</span></span>
-<span data-ttu-id="11662-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="11662-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="46156-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="46156-126">Request body</span></span>
+<span data-ttu-id="46156-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="46156-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="11662-128">响应</span><span class="sxs-lookup"><span data-stu-id="11662-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="46156-128">响应</span><span class="sxs-lookup"><span data-stu-id="46156-128">Response</span></span>
 
-<span data-ttu-id="11662-129">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [driveItem](../resources/driveitem.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="11662-129">If successful, this method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.</span></span>
+<span data-ttu-id="46156-129">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [driveItem](../resources/driveitem.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="46156-129">If successful, this method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="11662-130">示例</span><span class="sxs-lookup"><span data-stu-id="11662-130">Example</span></span>
-### <a name="request"></a><span data-ttu-id="11662-131">请求</span><span class="sxs-lookup"><span data-stu-id="11662-131">Request</span></span>
-<span data-ttu-id="11662-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="11662-132">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="46156-130">示例</span><span class="sxs-lookup"><span data-stu-id="46156-130">Example</span></span>
+### <a name="request"></a><span data-ttu-id="46156-131">请求</span><span class="sxs-lookup"><span data-stu-id="46156-131">Request</span></span>
+<span data-ttu-id="46156-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="46156-132">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_filesFolder"
@@ -64,10 +63,10 @@ GET /teams/{id}/channels/{id}/filesFolder
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/filesFolder
 ```
-### <a name="response"></a><span data-ttu-id="11662-133">响应</span><span class="sxs-lookup"><span data-stu-id="11662-133">Response</span></span>
-<span data-ttu-id="11662-134">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="11662-134">The following is an example of the response.</span></span> 
+### <a name="response"></a><span data-ttu-id="46156-133">响应</span><span class="sxs-lookup"><span data-stu-id="46156-133">Response</span></span>
+<span data-ttu-id="46156-134">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="46156-134">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="11662-135">**Note:** The response object shown here might be shortened for readability.</span><span class="sxs-lookup"><span data-stu-id="11662-135">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="11662-136">All the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="11662-136">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="46156-135">**Note:** The response object shown here might be shortened for readability.</span><span class="sxs-lookup"><span data-stu-id="46156-135">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="46156-136">All the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="46156-136">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
