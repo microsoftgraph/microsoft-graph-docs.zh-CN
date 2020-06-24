@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 61ca6937622eadc16aafc1e8c97f38e1fd0db8a2
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 8dac9c1ac5859a1a06a71a1d681b1468730639b1
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845321"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44862510"
 ---
 # <a name="event-delta"></a>event: delta
 
@@ -34,7 +34,7 @@ ms.locfileid: "44845321"
 | 适用于用户日历中的事件，但不是组日历中的事件。 | 适用于用户和组日历中的事件。 |
 | 当前仅在 beta 版本中可用。 | 在 v1.0 和 beta 版本中可用。 |
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -186,7 +186,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "request",
   "name": "event_delta_events"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/calendar/events/delta?startDateTime=2020-06-12T00:00:00Z
 
 Prefer: odata.maxpagesize=1
@@ -249,11 +249,11 @@ GET https://graph.microsoft.com/beta/me/calendars/AAMkADI5M1BbeAAA=/calendarview
 Prefer: odata.maxpagesize=2
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/event-delta-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/event-delta-calendarview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/event-delta-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/event-delta-calendarview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0d3ada4c27c70888330fec0dc37c068f5a1f613e
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: f87245d2f07600afd612273fdf3a28a36db44b78
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181215"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863535"
 ---
 # <a name="get-riskdetection"></a>获取 riskDetection
 
@@ -24,7 +24,7 @@ ms.locfileid: "43181215"
 >您必须具有 Azure AD 高级 P1 或 P2 许可证，才能使用风险检测 API。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -36,12 +36,13 @@ ms.locfileid: "43181215"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /riskDetections/{id}
+GET /identityProtection/riskDetections/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| Authorization  | Bearer {token}. Required. |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>请求正文
@@ -49,9 +50,11 @@ GET /riskDetections/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[riskDetection](../resources/riskdetection.md)对象。
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[riskDetection](../resources/riskdetection.md)对象。
+
+## <a name="examples"></a>示例
+### <a name="example-1-get-risk-detections"></a>示例1：获取风险检测
+#### <a name="request"></a>请求
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -61,7 +64,7 @@ GET /riskDetections/{id}
   "sampleKeys": ["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/riskDetections/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
+GET https://graph.microsoft.com/beta/riskDetections
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-riskdetection-csharp-snippets.md)]
@@ -77,7 +80,7 @@ GET https://graph.microsoft.com/beta/riskDetections/c2b6c2b9-dddc-acd0-2b39-d519
 
 ---
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 下面是一个响应示例。
 <!-- {
   "blockType": "response",
@@ -116,7 +119,72 @@ Content-type: application/json
     "additionalInfo": "[{\"Key\":\"userAgent\",\"Value\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\"}]"
 }
 ```
+### <a name="example-2-get-risk-detections-for-specific-user"></a>示例2：获取特定用户的风险检测项
+#### <a name="request"></a>请求
+下面是一个请求示例。
 
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_riskDetection",
+  "sampleKeys": ["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/identityProtection/riskDetections/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-riskdetection-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-riskdetection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-riskdetection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### <a name="response"></a>响应
+下面是一个响应示例。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.riskDetection"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "id": "6a5874ca-abcd-9d82-5ad39bd71600",
+    "requestId": "6a5874ca-abcd-9d82-5ad39bd71600",
+    "correlationId": "abcd74ca-9823-4b1c-9d82-5ad39bd71600",
+    "riskType": "unfamiliarFeatures",
+    "riskState": "remediated",
+    "riskLevel": "medium",
+    "riskDetail": "userPerformedSecuredPasswordReset",
+    "source": "activeDirectory",
+    "detectionTimingType": "realtime",
+    "activity": "signin",
+    "tokenIssuerType": "Azure Active Directory",
+    "ipAddress": "123.456.7.89",
+    "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US",
+        "geoCoordinates": null
+    },
+    "activityDateTime": "2018-09-05T00:09:18.7822851Z",
+    "detectedDateTime": "2018-09-05T00:11:27.773602Z",
+    "lastUpdatedDateTime": "2018-09-05T00:11:27.773602Z",
+    "userId": "abcdefab-af90-4edf-ac4c-742ff06735d0",
+    "userDisplayName": "Olivia Lack",
+    "userPrincipalName": "olack@adatum.com",
+    "additionalInfo": "[{\"Key\":\"userAgent\",\"Value\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\"}]"
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

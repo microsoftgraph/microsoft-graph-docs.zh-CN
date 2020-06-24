@@ -4,17 +4,17 @@ description: 创建开放扩展（openTypeExtension 对象）并添加自定义�
 localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
-ms.prod: ''
-ms.openlocfilehash: e8d35304bb63cdb9436b5ceb2576fe9aea1884a8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: extensions
+ms.openlocfilehash: d6c06370494e9e89fa77d40a0889819f47f21d2c
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456353"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863367"
 ---
 # <a name="create-open-extension"></a>创建开放扩展
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,9 +34,9 @@ ms.locfileid: "42456353"
 | [组事件](../resources/event.md) | Group.ReadWrite.All | 不支持 | 不支持 |
 | [组帖子](../resources/post.md) | Group.ReadWrite.All | 不支持 | Group.ReadWrite.All |
 | [邮件](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
-| [组织](../resources/organization.md) | Directory.AccessAsUser.All | 不支持 | 不支持 |
+| [组织](../resources/organization.md) | Organization.ReadWrite.All | 不支持 | Organization.ReadWrite.All |
 | [个人联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [用户](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
+| [用户](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -83,20 +83,20 @@ POST /users/{id|userPrincipalName}/extensions
 
 |**参数**|**类型**|**说明**|
 |:-----|:-----|:-----|
-|id|string|对象在相应集合中的唯一标识符。必需。|
+|id|string|A unique identifier for an object in the corresponding collection. Required.|
 
 ## <a name="request-headers"></a>请求标头
 
 | 名称       | 值 |
 |:---------------|:----------|
-| Authorization | Bearer {token}。必需。 |
+| Authorization | Bearer {token}. Required. |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>请求正文
 
-提供具有以下必需的名称-值对和任何其他自定义数据的[openTypeExtension](../resources/opentypeextension.md)的 JSON 正文。 JSON 负载中的数据可以是基元类型或基元类型数组。
+Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md), with the following required name-value pairs and any additional custom data. The data in the JSON payload can be primitive types, or arrays of primitive types.
 
-| Name       | 值 |
+| 名称       | 值 |
 |:---------------|:----------|
 | @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %unique_string% |
@@ -124,7 +124,7 @@ POST /users/{id|userPrincipalName}/extensions
 
 ### <a name="request-1"></a>请求 1
 
-第一个示例在同一个调用中创建一个邮件和一个扩展。请求正文包含以下内容：
+The first example creates a message and an extension in the same call. The request body includes the following:
 
 - 新邮件的典型 **subject**、**body** 和 **toRecipients** 属性。
 - 对于扩展：
@@ -184,13 +184,13 @@ Content-Type: application/json
 
 ### <a name="response-1"></a>响应 1
 
-下面是第一个示例的响应。响应正文包括新邮件的属性以及新扩展的以下属性：
+Here is the response for the first example. The response body includes properties of the new message, and the following for the new extension:
 
 - 具有完全限定的名称 **** 的 `microsoft.graph.openTypeExtension.Com.Contoso.Referral` 属性。
 - 请求中指定的默认属性 **extensionName**。
 - 请求中指定的作为 3 个自定义属性存储的自定义数据。
 
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -266,7 +266,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 
 ### <a name="request-2"></a>请求 2
 
-第二个示例在指定邮件中创建扩展。请求正文包括扩展的如下内容：
+The second example creates an extension in the specified message. The request body includes the following for the extension:
 
 - `microsoft.graph.openTypeExtension` 类型。
 - 扩展名“Com.Contoso.Referral”。
@@ -307,7 +307,7 @@ Content-Type: application/json
 
 ### <a name="response-2"></a>响应 2
 
-下面是第二个示例的响应。请求正文包括新扩展的如下内容：
+Here is the response for the second example. The response body includes the following for the new extension:
 
 - 默认属性 **extensionName**。
 - 具有完全限定的名称 `microsoft.graph.openTypeExtension.Com.Contoso.Referral` 的 **Id** 属性。
@@ -339,7 +339,7 @@ Content-type: application/json
 
 ### <a name="request-3"></a>请求 3
 
-第三个示例在指定组事件中创建扩展。请求正文包括扩展的如下内容：
+The third example creates an extension in the specified group event. The request body includes the following for the extension:
 
 - `microsoft.graph.openTypeExtension` 类型。
 - 扩展名“Com.Contoso.Deal”。
@@ -406,7 +406,7 @@ Content-type: application/json
 
 ### <a name="request-4"></a>请求 4
 
-第四个示例对现有的组帖子使用相同的 **reply** 操作调用，在新的组帖子中创建扩展。**reply** 操作创建新帖子和嵌入帖子中的新扩展。请求正文包括 **post** 属性，此属性又包含新帖子的 **body** 以及新扩展的以下数据：
+The fourth example creates an extension in a new group post, using the same **reply** action call to an existing group post. The **reply** action creates a new post, and a new extension embedded in the post. The request body includes a **post** property, which in turn contains the **body** of the new post, and the following data for the new extension:
 
 - `microsoft.graph.openTypeExtension` 类型。
 - 扩展名“Com.Contoso.HR”。
@@ -461,7 +461,7 @@ Content-type: application/json
 
 ### <a name="response-4"></a>响应 4
 
-下面是第四个示例的响应。新的组帖子中成功创建扩展仅会产生 HTTP 202 响应代码。
+Here is the response from the fourth example. Successfully creating an extension in a new group post results in only the HTTP 202 response code.
 
 <!-- {
   "blockType": "response",
@@ -477,7 +477,7 @@ Content-Length: 0
 
 ### <a name="request-5"></a>响应 5
 
-第五个示例使用 POST 操作创建对话，在新的组帖子中创建扩展。POST 操作创建新对话、线程和帖子以及嵌入帖子中的新扩展。请求正文包括 **Topic** 和 **Threads** 属性以及新对话的子 **post** 对象。**post** 对象又包含新帖子的 **body** 和以下扩展数据：
+The fifth example creates an extension in a new group post using the same POST operation to create a conversation. The POST operation creates a new conversation, thread and post, and a new extension embedded in the post. The request body includes the **Topic** and **Threads** properties, and a child **post** object for the new conversation. The **post** object in turn contains the **body** of the new post, and the following data for the extension:
 
 - `microsoft.graph.openTypeExtension` 类型。
 - 扩展名“Com.Contoso.HR”。
@@ -539,11 +539,11 @@ Content-type: application/json
 
 ### <a name="response-5"></a>响应 5
 
-下面是第五个示例的响应，其中包含新对话和线程 ID。这个新线程包含自动创建的帖子，帖子又包含新扩展。
+Here is the response from the fifth example which contains the new conversation and a thread ID. This new thread contains an automatically created post, which in turn contains the new extension.
 
-注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
-若要获取新扩展，首先 [获取此线程中的所有帖子](../api/conversationthread-list-posts.md)，线程中最初应该只有一个帖子。然后应用帖子 ID 和扩展名 `Com.Contoso.Benefits` 以[获取扩展](../api/opentypeextension-get.md)。
+To get the new extension, first [get all the posts](../api/conversationthread-list-posts.md) in this thread, and initially there should be only one. Then apply the post ID and the extension name `Com.Contoso.Benefits` to [get the extension](../api/opentypeextension-get.md).
 
 <!-- {
   "blockType": "response",

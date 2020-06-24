@@ -6,12 +6,12 @@ title: Site
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: a3389737581e9c327ff48e9ff3065c399c568cb8
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: fc6a7472da2676d0266d964b7bdddee976d5ac8c
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934876"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44864222"
 ---
 # <a name="site-resource-type"></a>site 资源类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "43934876"
 | [搜索网站][]           | GET /sites?search={query}
 | [关注网站][]                | POST /users/{user-id}/followedSites/add
 | [取消关注网站][]              | POST /users/{user-id}/followedSites/remove
-| [关注网站列表][]        | POST /me/followedSites
+| [关注网站列表][]        | GET /me/followedSites
 
 [获取网站]: ../api/site-get.md
 [获取根网站]: ../api/site-get.md
@@ -57,16 +57,16 @@ ms.locfileid: "43934876"
 | 属性名称            | 类型               | 说明
 |:-------------------------|:-------------------|:-----------------------------
 | **id**                   | string             | 项的[唯一标识符](#id-property)。 只读。
-| **createdDateTime**      | DateTimeOffset     | 创建项目的日期和时间。只读。
+| **createdDateTime**      | DateTimeOffset     | The date and time the item was created. Read-only.
 | **说明**          | string             | 网站的描述性文本。
-| **eTag**                 | string             | 该项目的 ETag。只读。                                                                  |
-| **displayName**          | string             | 网站的完整标题。只读。
-| **lastModifiedDateTime** | DateTimeOffset     | 上次修改项目的日期和时间。只读。
+| **eTag**                 | string             | ETag for the item. Read-only.                                                                  |
+| **displayName**          | string             | The full title for the site. Read-only.
+| **lastModifiedDateTime** | DateTimeOffset     | The date and time the item was last modified. Read-only.
 | **name**                 | string             | 项目名称/标题。
-| **根**                 | [根][]           | 如果存在，则表示这是网站集中的根网站。只读。
-| **sharepointIds**        | [sharepointIds][]  | 返回对 SharePoint REST 兼容性有用的标识符。只读。
-| **siteCollection**       | [siteCollection][] | 提供有关该网站的网站集的详细信息。仅在根网站上可用。只读。
-| **webUrl**               | string (url)       | 在浏览器中显示此项目的 URL。只读。
+| **根**                 | [根][]           | If present, indicates that this is the root site in the site collection. Read-only.
+| **sharepointIds**        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.
+| **siteCollection**       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only.
+| **webUrl**               | string (url)       | URL that displays the item in the browser. Read-only.
 
 ### <a name="id-property"></a>id 属性
 **site** 由一个唯一 ID 标识，此唯一 ID 由以下值组成：
@@ -88,7 +88,7 @@ ms.locfileid: "43934876"
 | **contentTypes**  | Collection([contentType][])      | 为此网站定义的内容类型集合。
 | **drive**         | [drive][]                        | 此网站的默认驱动器（文档库）。
 | **驱动器**        | 集合（[drive][]）            | 网站下方的驱动器集合（文档库）。
-| **项目**         | 集合 ([baseItem][])         | 用于处理包含在此网站中的任何项目。不能枚举该集合。
+| **项目**         | 集合 ([baseItem][])         | Used to address any item contained in this site. This collection cannot be enumerated.
 | **lists**         | Collection([list][])             | 此网站下的列表集合。
 | **pages**         | Collection([sitePage][])         | 此网站的 SitePages 列表中的页面集合。
 | **sites**         | 集合（[网站][]）             | 网站下的子网站的集合。

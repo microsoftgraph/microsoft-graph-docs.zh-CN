@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f07fc81fee6fdc8e8ff3b55c246facdc4f155d11
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: ebe5c584b009bd3028aece3cbfca75463f9c86dd
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556392"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44862456"
 ---
 # <a name="onpremisespublishingsinglesignon-resource-type"></a>onPremisesPublishingSingleSignOn 资源类型
 
@@ -26,9 +26,9 @@ ms.locfileid: "44556392"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
-|kerberosSignOnSettings| [kerberosSignOnSettings](kerberossignonsettings.md)| 应用程序的 Kerberos 约束委派设置。 |
+|kerberosSignOnSettings| [kerberosSignOnSettings](kerberossignonsettings.md)| 使用集成窗口身份验证的应用程序的 Kerberos 约束委派设置。 |
 |singleSignOnMode|String| 应用程序的首选单一登录模式。 可取值为：`none`、`onPremisesKerberos`、`headerBased`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -46,8 +46,8 @@ ms.locfileid: "44556392"
 
 ```json
 {
-  "KerberosSignOnSettings": {"@odata.type": "microsoft.graph.kerberosSignOnSettings"},
-  "SingleSignOnMode": "String"
+  "kerberosSignOnSettings": {"@odata.type": "microsoft.graph.kerberosSignOnSettings"},
+  "singleSignOnMode": "String"
 }
 ```
 

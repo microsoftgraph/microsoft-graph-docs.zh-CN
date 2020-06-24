@@ -4,13 +4,13 @@ description: '获取您在当前租户中拥有的任何应用程序创建的 sc
 localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
-ms.prod: ''
-ms.openlocfilehash: 5daf20b101a0b73950df13f9e1e6c6b8a2d24d86
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: extensions
+ms.openlocfilehash: 1c43bd8227b80661c7194e8269dfce3ee76d0f96
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453742"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863479"
 ---
 # <a name="list-schemaextensions"></a>列出 schemaExtension
 
@@ -20,15 +20,17 @@ ms.locfileid: "42453742"
 
 获取您在当前租户中拥有的任何应用程序（可以是**InDevelopment**、**可用**或**弃用**）创建的[schemaExtension](../resources/schemaextension.md)对象的列表，以及标记为**可用**的其他应用程序所拥有的其他所有架构扩展。 
 
+> **注意：** 此列表还将包含 `Available` 其他租户从其他租户创建的架构扩展定义（标记为）。 这不同于仅返回租户特定数据的其他 Api。 基于架构扩展定义创建的扩展数据是租户特定的，并且只能由明确授予权限的应用程序访问。 
+
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Read、Application. All   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All |
+|应用程序 | Application.Read.All  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +43,7 @@ GET /schemaExtensions
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| Authorization  | Bearer {token}. Required. |
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>请求正文
@@ -49,7 +51,7 @@ GET /schemaExtensions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[schemaExtension](../resources/schemaextension.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[schemaExtension](../resources/schemaextension.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面的示例演示如何通过筛选其唯一**id**来查看特定项的所有可访问扩展。 
@@ -77,7 +79,7 @@ GET https://graph.microsoft.com/beta/schemaExtensions?$filter=id%20eq%20'graphle
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

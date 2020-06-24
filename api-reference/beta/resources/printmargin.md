@@ -1,30 +1,32 @@
 ---
-title: integerRange 资源类型
-description: 表示由两个 Int64 边界描述的整数的包含范围。
+title: printMargin 资源类型
+description: 指定打印时使用的页边距宽度。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: bef2bd71d3ac039165146bcc5783eef7ba67a785
+ms.openlocfilehash: 4d7399f45138d6ab7d82f33e6577e7d08967ad15
 ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863703"
+ms.locfileid: "44863696"
 ---
-# <a name="integerrange-resource-type"></a>integerRange 资源类型
+# <a name="printmargin-complex-type"></a>printMargin 复杂类型
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示由两个 Int64 边界描述的整数的包含范围。
+指定打印时使用的页边距宽度。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
-|start|Int64|整数范围的非独占下限。|
-|end|Int64|整数范围的上下限。|
+|top|Int32|从上边缘到 microns 中的边距。|
+|bottom|Int32|从下边缘 microns 的边距。|
+|左向右|Int32|从右边缘 microns 的边距。|
+|左边|Int32|从左边缘的 microns 中的边距。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -35,13 +37,15 @@ ms.locfileid: "44863703"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.integerRange"
+  "@odata.type": "microsoft.graph.printMargin"
 }-->
 
 ```json
 {
-    "start": 12345,
-    "end": 12345
+  "top": 123456,
+  "bottom": 123456,
+  "right": 123456,
+  "left": 123456
 }
 ```
 
@@ -49,7 +53,7 @@ ms.locfileid: "44863703"
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "integerRange resource",
+  "description": "printMargin resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

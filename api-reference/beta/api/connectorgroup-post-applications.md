@@ -1,27 +1,27 @@
 ---
-title: 将应用程序添加到 connectorGroup
-description: 使用此 API 将应用程序分配给连接器组
+title: 将 connectorGroup 分配给应用程序
+description: 使用此 API 将 connectorGroup 分配给应用程序
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0278810a70f8054688a8e1258cb9d50b6ed7a28d
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 0ed9833cbdf7bdc4dd70155c84eef7cd1f2f2ba0
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681264"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863086"
 ---
-# <a name="add-an-application-to-a-connectorgroup"></a>将应用程序添加到 connectorGroup
+# <a name="assign-a-connectorgroup-to-an-application"></a>将 connectorGroup 分配给应用程序
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将[应用程序](../resources/application.md)添加到[connectorGroup](../resources/connectorgroup.md)。
+将[connectorGroup](../resources/connectorgroup.md)分配给[应用程序](../resources/application.md)。
 
-## <a name="permissions"></a>Permissions
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+## <a name="permissions"></a>权限
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -32,77 +32,50 @@ ms.locfileid: "44681264"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applications
+PUT /applications/{id}/connectorGroup/$ref
 
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 负载. 必需|
+| Authorization  | 负载. 必需。|
+| Content-type | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [application](../resources/application.md) 对象的 JSON 表示形式。
+在请求正文中，提供[connectorGroup](../resources/connectorgroup.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [application](../resources/application.md) 对象。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
-
-# <a name="http"></a>[HTTP](#tab/http)
+### <a name="request"></a>请求
+下面展示了示例请求。
 <!-- {
   "blockType": "request",
   "name": "create_application_from_connectorgroup"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applications
+PUT https://graph.microsoft.com/beta/applications/{id}/connectorGroup/$ref
+
 Content-type: application/json
-Content-length: 329
+Content-length: 30
 
 {
-  "@odata.id": "https://graph.microsoft.com/beta/applications/{id}"
+  "@odata.id": "https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-application-from-connectorgroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-application-from-connectorgroup-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+### <a name="response"></a>响应
+下面展示了示例响应。 
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-application-from-connectorgroup-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-在请求正文中，提供 [application](../resources/application.md) 对象的 JSON 表示形式。
-##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.application"
 } -->
 ```http
-HTTP/1.1 201 Created
-Content-type: application/json
-Content-length: 355
-
-{
-  "appId": "appId-value",
-  "onPremisesPublishing": {
-    "externalUrl": "externalUrl-value",
-    "internalUrl": "internalUrl-value",
-    "externalAuthenticationType": "externalAuthenticationType-value",
-    "customDomainCertificate": "customDomainCertificate-value",
-    "isTranslateHostHeaderEnabled": true,
-    "isOnPremPublishingEnabled": true
-  }
-}
+HTTP/1.1 204 No content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -110,7 +83,7 @@ Content-length: 355
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create application",
+  "description": "Assign a connectorGroup to an application",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

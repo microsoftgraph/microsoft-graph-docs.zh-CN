@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b702405e320ba3f687b8cb5a758a7bdb868603b3
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 0c668380c05c1a76aa971eef85f133a0e9cf8a07
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556395"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44862547"
 ---
 # <a name="kerberossignonsettings-resource-type"></a>kerberosSignOnSettings 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "44556395"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | Description |
 |:-------------|:------------|:------------|
 |kerberosServicePrincipalName|String| 应用程序服务器的内部应用程序 SPN。 此 SPN 必须位于连接器可以向其提供委派凭据的服务列表中。 |
 |kerberosSignOnMappingAttributeType|String| 代表用户使用的连接器的委派登录标识。 有关详细信息，请参阅使用[不同的内部部署和云标识](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd#working-with-different-on-premises-and-cloud-identities)。 可取值为：`userPrincipalName`、`onPremisesUserPrincipalName`、`userPrincipalUsername`、`onPremisesUserPrincipalUsername`、`onPremisesSAMAccountName`。|
@@ -46,8 +46,8 @@ ms.locfileid: "44556395"
 
 ```json
 {
-  "KerberosServicePrincipalName": "String",
-  "KerberosSignOnMappingAttributeType": "String"
+  "kerberosServicePrincipalName": "String",
+  "kerberosSignOnMappingAttributeType": "String"
 }
 ```
 
