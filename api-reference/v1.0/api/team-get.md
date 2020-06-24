@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2da2363c83123095c71761507faf2ff2bd55f90e
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: dc9a45e22022b6f95ab0e7dde4187bfe105af093
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336851"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845797"
 ---
 # <a name="get-team"></a>获取团队
 
@@ -21,7 +21,7 @@ ms.locfileid: "44336851"
 检索指定[团队](../resources/team.md)的属性和关系。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -44,7 +44,7 @@ GET /teams/{id}
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| Authorization  | Bearer {token}. Required.  |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/v1.0/teams/{id}
 #### <a name="response"></a>响应
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,24 +97,27 @@ Content-type: application/json
 Content-length: 401
 
 {
-  "isArchived" : false,
+  "isArchived": false,
+  "discoverySettings": {
+    "showInTeamsSearchAndSuggestions": true
+  },
   "memberSettings": {
     "allowCreateUpdateChannels": true,
     "allowDeleteChannels": true,
     "allowAddRemoveApps": true,
     "allowCreateUpdateRemoveTabs": true,
-    "allowCreateUpdateRemoveConnectors": true    
+    "allowCreateUpdateRemoveConnectors": true
   },
   "guestSettings": {
     "allowCreateUpdateChannels": true,
-    "allowDeleteChannels": true 
+    "allowDeleteChannels": true
   },
   "messagingSettings": {
     "allowUserEditMessages": true,
     "allowUserDeleteMessages": true,
     "allowOwnerDeleteMessages": true,
     "allowTeamMentions": true,
-    "allowChannelMentions": true    
+    "allowChannelMentions": true
   },
   "funSettings": {
     "allowGiphy": true,
