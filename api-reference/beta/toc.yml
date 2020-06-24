@@ -401,7 +401,7 @@ items:
                 href: api/planneruser-list-tasks.md
               - name: 更新设置
                 href: api/planneruser-update.md
-          - name: 首选语言和区域格式
+          - name: 首选语言和区域格式（预览）
             href: resources/regionalandlanguagesettings.md
             items:
               - name: 获取
@@ -10072,11 +10072,9 @@ items:
                     href: api/serviceprincipal-delete-owners.md
               - name: 策略
                 items:
-                  - name: 列出已分配策略
-                    href: api/policy-list-assigned.md
                   - name: 分配 claimsMappingPolicy
                     href: api/serviceprincipal-post-claimsmappingpolicies.md
-                  - name: '列出 claimsMappingPolicies]'
+                  - name: 列出 claimsMappingPolicies
                     href: api/serviceprincipal-list-claimsmappingpolicies.md
                   - name: 删除 claimsMappingPolicy
                     href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -10086,6 +10084,12 @@ items:
                     href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                   - name: 删除 homeRealmDiscoveryPolicy
                     href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+                  - name: 分配 tokenIssuancePolicy
+                    href: api/application-post-tokenissuancepolicies.md
+                  - name: 列出 tokenIssuancePolicies
+                    href: api/application-list-tokenissuancepolicies.md
+                  - name: 删除 tokenIssuancePolicy
+                    href: api/application-delete-tokenissuancepolicies.md
                   - name: 分配 tokenLifetimePolicy
                     href: api/application-post-tokenlifetimepolicies.md
                   - name: 列出 tokenLifetimePolicies

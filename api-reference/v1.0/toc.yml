@@ -3665,7 +3665,7 @@ items:
                     href: resources/fileAssessmentRequest.md
                   - name: URL 评估请求
                     href: resources/urlassessmentrequest.md
-                  - name: 列出
+                  - name: 列表
                     href: api/informationprotection-list-threatassessmentrequests.md
                   - name: 创建
                     href: api/informationprotection-post-threatassessmentrequests.md
@@ -3718,7 +3718,7 @@ items:
               - name: 基于活动的超时策略
                 href: resources/activitybasedtimeoutpolicy.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/activitybasedtimeoutpolicy-list.md
                   - name: 创建
                     href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
@@ -3731,7 +3731,7 @@ items:
               - name: 主页领域发现策略
                 href: resources/homerealmdiscoverypolicy.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/homerealmdiscoverypolicy-list.md
                   - name: 创建
                     href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
@@ -3743,10 +3743,25 @@ items:
                     href: api/homerealmdiscoverypolicy-delete.md
                   - name: 列出已应用到应用程序的策略
                     href: api/homerealmdiscoverypolicy-list-appliesto.md
+              - name: 声明映射策略
+                href: resources/claimsmappingpolicy.md
+                items:
+                  - name: 创建
+                    href: api/claimsmappingpolicy-post-claimsmappingpolicies.md
+                  - name: 列出
+                    href: api/claimsmappingpolicy-list.md
+                  - name: 获取
+                    href: api/claimsmappingpolicy-get.md
+                  - name: 更新
+                    href: api/claimsmappingpolicy-update.md
+                  - name: 删除
+                    href: api/claimsmappingpolicy-delete.md
+                  - name: 列出已应用到应用程序的策略
+                    href: api/claimsmappingpolicy-list-appliesto.md
               - name: 令牌颁发策略
                 href: resources/tokenissuancepolicy.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/tokenissuancepolicy-list.md
                   - name: 创建
                     href: api/tokenissuancepolicy-post-tokenissuancepolicy.md
@@ -3761,7 +3776,7 @@ items:
               - name: 令牌生存期策略
                 href: resources/tokenlifetimepolicy.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/tokenlifetimepolicy-list.md
                   - name: 创建
                     href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
@@ -3776,7 +3791,7 @@ items:
           - name: 服务主体
             href: resources/serviceprincipal.md
             items:
-              - name: 列出
+              - name: 列表
                 href: api/serviceprincipal-list.md
               - name: 创建
                 href: api/serviceprincipal-post-serviceprincipals.md
@@ -3841,6 +3856,32 @@ items:
                     href: api/serviceprincipal-post-owners.md
                   - name: 删除
                     href: api/serviceprincipal-delete-owners.md
+              - name: 策略
+                items:
+                  - name: 分配 claimsMappingPolicy
+                    href: api/serviceprincipal-post-claimsmappingpolicies.md
+                  - name: 列出 claimsMappingPolicies
+                    href: api/serviceprincipal-list-claimsmappingpolicies.md
+                  - name: 删除 claimsMappingPolicy
+                    href: api/serviceprincipal-delete-claimsmappingpolicies.md
+                  - name: 分配 homeRealmDiscoveryPolicy
+                    href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
+                  - name: 列出 homeRealmDiscoveryPolicy
+                    href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
+                  - name: 删除 homeRealmDiscoveryPolicy
+                    href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+                  - name: 分配 tokenIssuancePolicy
+                    href: api/application-post-tokenissuancepolicies.md
+                  - name: 列出 tokenIssuancePolicies
+                    href: api/application-list-tokenissuancepolicies.md
+                  - name: 删除 tokenIssuancePolicy
+                    href: api/application-delete-tokenissuancepolicies.md
+                  - name: 分配 tokenLifetimePolicy
+                    href: api/application-post-tokenlifetimepolicies.md
+                  - name: 列出 tokenLifetimePolicies
+                    href: api/application-list-tokenlifetimepolicies.md
+                  - name: 删除 tokenLifetimePolicy
+                    href: api/application-delete-tokenlifetimepolicies.md
           - name: 订阅的 SKU
             href: resources/subscribedsku.md
             items:
@@ -4729,7 +4770,7 @@ items:
               - name: Shift
                 href: resources/shift.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/schedule-list-shifts.md
                   - name: 创建
                     href: api/schedule-post-shifts.md
