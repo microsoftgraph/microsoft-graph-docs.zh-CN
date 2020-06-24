@@ -4,12 +4,12 @@ description: 介绍了 Azure Active Directory （Azure AD） API 与 Microsoft G
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1e99c5e0c6b2df9e30787481c36a32dcd65485d8
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 7bebb0437ac3f099d7518640ad4fbb0f9fd75990
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38656534"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845776"
 ---
 # <a name="feature-differences-between-azure-ad-graph-and-microsoft-graph"></a>Azure AD Graph 与 Microsoft Graph 之间的功能差异
 
@@ -27,7 +27,7 @@ Microsoft Graph 中的许多功能与 Azure AD Graph 对应的工作方式类似
 
 如果您的应用程序使用 Azure AD Graph 目录架构扩展，则可以继续使用相同的基本 Api （使用 Microsoft Graph 请求 Url）执行以下操作：
 
-- 使用 [application] [/graph/api/resources/application？ view = graph-rest-extensionProperties 1.0）资源上的**** 属性管理扩展属性定义。
+- 使用 [application] [/graph/api/resources/application？ view = graph-rest-extensionProperties 1.0）资源上的**extensionProperties**属性管理扩展属性定义。
 - 使用 GET 和，读取扩展值`$select`
 - 使用 GET 和，搜索扩展值`$filter`
 - 使用修补程序更新扩展值
@@ -56,21 +56,21 @@ Microsoft Graph 提供了增强的架构扩展开发人员体验，这与 Azure 
 
 ## <a name="differential-queries"></a>差异查询
 
-Azure AD Graph 和 Microsoft Graph 让你可以使用查询跟踪更改。  这两个 Api 的高级别方法类似，但语法不同。  
+Azure AD Graph 和 Microsoft Graph 让你可以使用查询跟踪更改。  这两个 Api 的高级别方法类似，但语法不同。
 
 Azure AD Graph 调用这些差异查询。  在 Microsoft Graph 中，它们是[delta 查询](/graph/delta-query-overview)。
 
 下表重点介绍了主要的相似之处和差异：
 
-||Azure AD Graph | Microsoft Graph |
+|Delta 请求 |Azure AD Graph | Microsoft Graph |
 |----|----|----|
 | _初始数据请求_ | 使用查询参数：<br>`GET /groups?deltaLink=` | 使用函数： <br> `GET /groups/delta` |
 | _获取新更改_ | `GET /groups?deltaLink={deltaToken}` | `GET /groups/delta?$deltaToken={deltaToken}` |
 | _从现在开始同步_ |使用自定义 HTTP 标头：<br> `ocp-aad-dq-include-only-delta-token: true` | 使用查询参数： <br> `GET /groups/delta?$deltaToken=latest` |
 | _跟踪 directoryObjects 的更改_ | 获取相同操作中的多个资源（用户和组）的更改：&nbsp;&nbsp;<br> `GET /directoryObject?$filter=isof('User') or isof('Group')&deltaLink=` | 将单独的查询与 Microsoft Graph 结合使用，每个资源对应一项。 |
 | _获取资源和关系更改_ | 如果资源有关系，所有请求都将返回资源和关系更改。 | `GET /groups/delta?$expand=members` |
-| _指示新项目和已更改项目的响应_ | <ul><li><p>使用其标准表示形式表示新创建的实例。</p></li><li><p>更新后的实例由其 id 表示，*至少*具有已更新的属性。 可以包含其他属性。</p></li><li><p>关系表示为`directoryLinkChange`类型。</p></li></ul>|<ul><li><p>使用其标准表示形式表示新创建的实例。</p></li><li><p>更新后的实例由其 id 表示，*至少*具有已更新的属性。 可以包含其他属性。</p></li><li><p>关系表示为标准资源表示形式的批注。 这些批注使用格式`propertyName@delta`，例如`members@delta` ，组的成员资格更改。</p></li></ul> |
-| _指示已删除项目的响应_| 指示一个已删除的项，其附加属性为*isDeleted*设置为 true。 | 指示已删除的项目和\@已删除的注释。 它还可能包含原因代码，以指示是否已删除项目，但可以还原或永久删除。 |
+| _指示新项目和已更改项目的响应_ | <ul><li><p>使用其标准表示形式表示新创建的实例。</p></li><li><p>更新后的实例由其 id 表示，*至少*具有已更新的属性。 可以包含其他属性。</p></li><li><p>关系表示为 `directoryLinkChange` 类型。</p></li></ul>|<ul><li><p>使用其标准表示形式表示新创建的实例。</p></li><li><p>更新后的实例由其 id 表示，*至少*具有已更新的属性。 可以包含其他属性。</p></li><li><p>关系表示为标准资源表示形式的批注。 这些批注使用格式 `propertyName@delta` ，例如， `members@delta` 组的成员资格更改。</p></li></ul> |
+| _指示已删除项目的响应_| 指示一个已删除的项，其附加属性为*isDeleted*设置为 true。 | 指示已删除的项目和 \@ 已删除的注释。 它还可能包含原因代码，以指示是否已删除项目，但可以还原或永久删除。 |
 
 如果您的应用程序已在存储状态数据，请考虑使用前面所示的 "从现在同步"，以帮助管理到增量查询的转换。
 

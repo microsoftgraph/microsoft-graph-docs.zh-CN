@@ -6,16 +6,16 @@ localization_priority: Normal
 ms.prod: insights
 description: columnDefinition 资源上的 personOrGroupColumn 指示列值，该值表示从目录中选择的个人或组。
 doc_type: resourcePageType
-ms.openlocfilehash: ea89377f38f820ec00fc38343ba714ec22a10c1c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b9c3774405dbb8d2e98a9823a84be97d5df09b0b
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447197"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845475"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>PersonOrGroupColumn 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [columnDefinition](columndefinition.md) 资源上的 **personOrGroupColumn** 指示列值，该值表示从目录中选择的个人或组。
 
@@ -34,17 +34,17 @@ ms.locfileid: "42447197"
 
 ## <a name="properties"></a>属性
 
-| 属性名称              | 类型    | 说明
+| 属性名称              | 类型    | Description
 |:---------------------------|:--------|:--------------------------------------
 | **allowMultipleSelection** | boolean | 指示是否可以从源中选择多个值。
-| **displayAs**              | string  | 如何显示有关所选个人或组的信息。 请参阅下文。
+| **displayAs**              | 字符串  | 如何显示有关所选个人或组的信息。 请参阅下文。
 | **chooseFromType**         | string  | 是否允许仅选择人员，或同时选择人员和组。 必须为 `peopleAndGroups` 或 `peopleOnly` 的其中一个。
 
 ## <a name="displayas-options"></a>DisplayAs 选项
 
 | DisplayAs 值               | 说明
 |:------------------------------|:-----------------------
-| **帐户**                   | 采用原始 SharePoint 编码的人员或组声明字符串（如 i:0#.f|membership|jane@contoso.com)。
+| **帐户**                   | 采用原始 SharePoint 编码的人员或组声明字符串（如 `i:0#.f|membership|jane@contoso.com`).
 | **department**                | 人员或组的所在部门。
 | **firstName**                 | 人员的名字。
 | **id**                        | 目录中个人或组的 id。

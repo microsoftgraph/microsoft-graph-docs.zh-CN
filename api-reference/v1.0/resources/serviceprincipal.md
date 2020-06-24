@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: f04b7324c31d0ec0f33976f60a736d25cd69af5e
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: ce8429bf3babda5c40354ef52657a43fc52b5eb6
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383474"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44846147"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "44383474"
 
 ## <a name="methods"></a>方法
 
-| 方法 | 返回类型 | 说明 |
+| 方法 | 返回类型 | Description |
 |:---------------|:--------|:----------|
 |[列出 servicePrincipals](../api/serviceprincipal-list.md) | [servicePrincipal](serviceprincipal.md) 集合 | 检索 servicePrincipal 对象列表。 |
 |[创建 servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md)| [servicePrincipal](serviceprincipal.md) | 创建一个新的 servicePrincipal 对象。 |
@@ -54,6 +54,19 @@ ms.locfileid: "44383474"
 |[List owners](../api/serviceprincipal-list-owners.md) |[directoryObject](directoryobject.md) 集合| 获取所有者对象集合。|
 |[Add owner](../api/serviceprincipal-post-owners.md) |[directoryObject](directoryobject.md)| 通过发布到所有者集合创建新的所有者。|
 |[Remove owner](../api/serviceprincipal-delete-owners.md) |无| 从 serviceprincipal 中删除所有者。|
+|**策略**| | |
+|[分配 claimsMappingPolicy](../api/serviceprincipal-post-claimsmappingpolicies.md)| [claimsMappingPolicy](claimsmappingpolicy.md) 集合| 向此对象分配 claimsMappingPolicy。|
+|[列出 claimsMappingPolicies](../api/serviceprincipal-list-claimsmappingpolicies.md)| [claimsMappingPolicy](claimsmappingpolicy.md) 集合| 为此对象分配的 claimsMappingPolicies。|
+|[删除 claimsMappingPolicy](../api/serviceprincipal-delete-claimsmappingpolicies.md)| [claimsMappingPolicy](claimsmappingpolicy.md) 集合| 从此对象中删除 claimsMappingPolicy。|
+|[分配 homeRealmDiscoveryPolicy](../api/serviceprincipal-post-homerealmdiscoverypolicies.md)| [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) 集合| 向此对象分配 homeRealmDiscoveryPolicy。|
+|[列出 homeRealmDiscoveryPolicy](../api/serviceprincipal-list-homerealmdiscoverypolicies.md)| [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) 集合| 为此对象分配的 homeRealmDiscoveryPolicies。|
+|[删除 homeRealmDiscoveryPolicy](../api/serviceprincipal-delete-homerealmdiscoverypolicies.md)| [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) 集合| 从此对象中删除 homeRealmDiscoveryPolicy。|
+|[分配 tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合| 向此对象分配 tokenLifetimePolicy。|
+|[列出 tokenLifetimePolicies](../api/application-list-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合| 获取已分配至此对象的所有 tokenLifetimePolicies。|
+|[删除 tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合| 从此对象中删除 tokenLifetimePolicy。|
+|[分配 tokenIssuancePolicy](../api/application-post-tokenissuancepolicies.md)| [tokenIssuancePolicy](tokenissuancepolicy.md) 集合| 分配 tokenIssuancePolicy 至此对象。|
+|[列出 tokenIssuancePolicies](../api/application-list-tokenissuancepolicies.md)| [tokenIssuancePolicy](tokenissuancepolicy.md) 集合| 获取已分配至此对象的所有 tokenIssuancePolicies。|
+|[删除 tokenIssuancePolicy](../api/application-delete-tokenissuancepolicies.md)| [tokenIssuancePolicy](tokenissuancepolicy.md) 集合| 从此对象中删除 tokenIssuancePolicy。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型 |说明|
@@ -72,16 +85,16 @@ ms.locfileid: "44383474"
 |homepage|String|应用程序的主页或登录页。|
 |id|String|服务主体的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。|
 | info | [informationalUrl](informationalurl.md) | 获取的应用程序的基本配置文件信息，如应用程序的营销、支持、服务条款和隐私声明 Url。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅[如何：为已注册的 Azure AD 应用添加服务条款和隐私声明](https://docs.microsoft.com/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。 |
-|keyCredentials|[keyCredential](keycredential.md) 集合|与服务帐户关联的密钥凭据集合。 不可为 null。            |
+|keyCredentials|[keyCredential](keycredential.md) 集合|与服务帐户关联的密钥凭据集合。 不可为空。            |
 |loginUrl|String|指定服务提供程序将用户重定向到 Azure AD 以进行身份验证的 URL。 Azure AD 使用 URL 从 Office 365 或 Azure AD My 应用程序启动应用程序。 当为空时，Azure AD 将针对使用[基于 SAML 的单一登录](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso)配置的应用程序执行 IdP 启动的登录。 用户从 Office 365、Azure AD My Apps 或 Azure AD SSO URL 启动应用程序。|
 |logoutUrl|String| 指定将由 Microsoft 的授权服务用来使用 OpenId Connect[前通道](https://openid.net/specs/openid-connect-frontchannel-1_0.html)、[后信道](https://openid.net/specs/openid-connect-backchannel-1_0.html)或 SAML 注销协议注销用户的 URL。|
 |oauth2PermissionScopes|[permissionScope](permissionScope.md)集合|由应用程序公开的委派权限。 有关详细信息，请参阅[application](application.md) entity **api**属性上的**oauth2PermissionScopes**属性。 不可为 null。|
 |notificationEmailAddresses|String collection|指定当活动证书接近到期日期时，Azure AD 发送通知的电子邮件地址的列表。 这仅适用于用于对 Azure AD 库应用程序颁发的 SAML 令牌进行签名的证书。|
 |passwordCredentials|[passwordCredential](passwordcredential.md) 集合|与服务帐户关联的密码凭据集合。 不可为 null。 |
-|preferredSingleSignOnMode|string|指定为此应用程序配置的单一登录模式。 Azure AD 使用首选的单一登录模式，从 Office 365 或 Azure AD My Apps 启动应用程序。 受支持的值为 password、saml、external 和 oidc。|
+|preferredSingleSignOnMode|字符串|指定为此应用程序配置的单一登录模式。 Azure AD 使用首选的单一登录模式，从 Office 365 或 Azure AD My Apps 启动应用程序。 受支持的值为 password、saml、external 和 oidc。|
 |replyUrls|String 集合|向其发送用户令牌以使用关联应用程序登录的 URL，或者为关联应用程序向其发送 OAuth 2.0 authorization 代码和访问令牌的重定向 URL。 不可为空。 |
 |samlSingleSignOnSettings|[samlSingleSignOnSettings](samlsinglesignonsettings.md)|与 saml 单一登录相关的设置的集合。|
-|servicePrincipalNames|String 集合|包含从关联的[应用程序](application.md)复制的**identifiersUris**的列表。 可以向混合应用程序中添加其他值。 这些值可用于标识此应用在 Azure AD 中公开的权限。 For example,<ul><li>客户端应用可以指定基于此属性的值获取访问令牌的资源 URI，这是在 "aud" 声明中返回的 URI。</li></ul><br>需要多值属性筛选器表达式的 any 运算符。 不可为 null。|
+|servicePrincipalNames|String collection|包含从关联的[应用程序](application.md)复制的**identifiersUris**的列表。 可以向混合应用程序中添加其他值。 这些值可用于标识此应用在 Azure AD 中公开的权限。 For example,<ul><li>客户端应用可以指定基于此属性的值获取访问令牌的资源 URI，这是在 "aud" 声明中返回的 URI。</li></ul><br>需要多值属性筛选器表达式的 any 运算符。 不可为 null。|
 |servicePrincipalType|String|标识服务主体表示的是应用程序还是托管标识。 这由 Azure AD 在内部进行设置。 对于表示[应用程序](./application.md)的服务主体，将其设置为__应用程序__。 对于表示[托管标识](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview)的服务主体，将其设置为__ManagedIdentity__。|
 |tags|String collection| 可用于对服务主体进行分类和标识的自定义字符串。 不可为空。 |
 | tokenEncryptionKeyId |String|指定 keyCredentials 集合中的公共密钥的 keyId。 配置后，Azure AD 将使用此属性指定的密钥为此应用程序颁发令牌。 接收加密令牌的应用程序代码必须先使用匹配的私钥来解密该令牌，然后才能将该令牌用于登录用户。|

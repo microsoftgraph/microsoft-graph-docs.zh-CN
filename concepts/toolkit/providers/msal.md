@@ -3,12 +3,12 @@ title: MSAL 提供程序
 description: MSAL 提供程序使用 MSAL.js 登录用户并获取令牌以用于 Microsoft Graph
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 20ed3b95d48a29886a521040b09e06934effe6c2
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: df5a2e50a72c75a8a0af62e66d9bd73c3d428606
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682080"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845825"
 ---
 # <a name="msal-provider"></a>MSAL 提供程序
 
@@ -32,14 +32,14 @@ MSAL 提供程序使用[MSAL.js](https://github.com/AzureAD/microsoft-authentica
                    authority=""></mgt-msal-provider>
 ```
 
-| 属性 | 说明 |
-| --- | --- | --- |
-| 客户端 id   | 字符串客户端 ID （请参阅创建应用/客户端 ID）。 必填。|
-| 登录类型  | `redirect`和 `popup` -默认值之间的枚举为 `redirect` 。 可选。 |
-| scopes  | 用户必须同意登录时的作用域的逗号分隔字符串。 可选。|
-| 监管  | 颁发机构字符串-默认为常用证书颁发机构。 对于单租户应用，请使用租户 ID 或租户名称。 例如， `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` 或 `https://login.microsoftonline.com/[your-tenant-id]` 。 可选。|
-| 重定向-uri  | 重定向 URI 字符串-默认情况下，使用当前窗口 URI。 可选。|
-| 取决于 | 另一个较高优先级提供程序组件的元素选择器字符串。 可选。 |
+| 属性    | 说明                                                                                                                                                                                                                                                           |
+|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 客户端 id    | 字符串客户端 ID （请参阅创建应用/客户端 ID）。 必填。                                                                                                                                                                                                           |
+| 登录类型   | `redirect`和 `popup` -默认值之间的枚举为 `redirect` 。 可选。                                                                                                                                                                                   |
+| scopes       | 用户必须同意登录时的作用域的逗号分隔字符串。 可选。                                                                                                                                                                                     |
+| 监管    | 颁发机构字符串-默认为常用证书颁发机构。 对于单租户应用，请使用租户 ID 或租户名称。 例如， `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` 或 `https://login.microsoftonline.com/[your-tenant-id]` 。 可选。 |
+| 重定向-uri | 重定向 URI 字符串-默认情况下，使用当前窗口 URI。 可选。                                                                                                                                                                                            |
+| 取决于   | 另一个较高优先级提供程序组件的元素选择器字符串。 可选。                                                                                                                                                                                      |
 
 ### <a name="initialize-in-javascript"></a>在 JavaScript 中初始化
 

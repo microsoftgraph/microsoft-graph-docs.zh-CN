@@ -5,18 +5,18 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 188837ac55e2be275722a862c391be9dc4d08e0c
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 15d1f1713e3155dc2fff5e07caf7b5f70fbf1aa8
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793799"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845783"
 ---
 # <a name="get-primarychannel"></a>获取 primaryChannel
 
 命名空间：microsoft.graph
 
-检索允许访问其默认常规[通道](../resources/channel.md)的[团队](../resources/team.md)的导航属性。
+获取[团队](../resources/team.md)的默认[频道](../resources/channel.md)（**常规**）。
 
 ## <a name="permissions"></a>权限
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -33,7 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/primaryChannel
-
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数

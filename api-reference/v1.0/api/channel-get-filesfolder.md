@@ -5,18 +5,18 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3701c0fde058f0040f1d4a25f882516a022893ea
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 0190f09eacb08dccdb5f8297fb3e7011cacaa0a0
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44788436"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845664"
 ---
 # <a name="get-filesfolder"></a>获取 "获取"
 
 命名空间：microsoft.graph
 
-检索文件导航路径（用于[存储通道文件](../resources/channel.md)的位置的元数据）的文件。 
+获取存储[通道](../resources/channel.md)文件的位置的元数据。 
 
 ## <a name="permissions"></a>权限
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

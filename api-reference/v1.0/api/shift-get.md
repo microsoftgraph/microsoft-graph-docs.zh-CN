@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dbeedc59e39e6efe06a2989199ef53d7ced20b1e
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 329d89d8a06182d5de7f9b3d149e348c7f7df4e7
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44216684"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845692"
 ---
 # <a name="get-shift"></a>获取 shift
 
@@ -20,13 +20,13 @@ ms.locfileid: "44216684"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 请参阅 all、Group、Group. all、Schedule、Group、Group。所有    |
-|委派（个人 Microsoft 帐户） | 不支持。    |s
-|Application | Schedule. All、Schedule、All |
+| 权限类型                        | 权限（从最低特权到最高特权）                                    |
+|:---------------------------------------|:-------------------------------------------------------------------------------|
+| 委派（工作或学校帐户）     | 请参阅 all、Group、Group. all、Schedule、Group、Group。所有 |
+| 委派（个人 Microsoft 帐户） | 不支持。                                                                 |
+| 应用程序                            | Schedule. All、Schedule、All                                      |
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -46,7 +46,7 @@ GET /teams/{teamId}/schedule/shifts/{shiftId}
 
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| Authorization  | Bearer {token}. Required.  |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

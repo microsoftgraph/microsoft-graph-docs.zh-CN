@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 489c98f0fdef7b9523ee00b4b14bb0d93b7e7567
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: b953e911ba834b9707df33926e4a2a355653dcb3
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44218525"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845881"
 ---
 # <a name="get-schedule"></a>获取日程安排
 
@@ -25,15 +25,15 @@ ms.locfileid: "44218525"
 
 客户端也可以检查计划的配置。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 请参阅 all、Group、Group. all、Schedule、Group、Group。所有    |
-|委派（个人 Microsoft 帐户） | 不支持。    |s
-|Application | Schedule. All、Schedule、All |
+| 权限类型                        | 权限（从最低特权到最高特权）                                    |
+|:---------------------------------------|:-------------------------------------------------------------------------------|
+| 委派（工作或学校帐户）     | 请参阅 all、Group、Group. all、Schedule、Group、Group。所有 |
+| 委派（个人 Microsoft 帐户） | 不支持。                                                                 |
+| 应用程序                            | Schedule. All、Schedule、All                                      |
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -49,11 +49,11 @@ GET /teams/{teamId}/schedule
 
 此方法不支持 OData 查询参数来自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
@@ -101,9 +101,9 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。 
+下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

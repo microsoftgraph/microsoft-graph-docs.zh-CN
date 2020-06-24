@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包中的模板
 description: 使用自定义模板修改组件的内容。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 00be58b006fd4442154f547603cf1f2c5dbeb5a5
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 4f855558b8b1ee5d0f84b9998b62c2f770a4dc6b
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682241"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845951"
 ---
 # <a name="templates-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的模板
 
@@ -82,10 +82,10 @@ TemplateHelper.setBindingSyntax('[[', ']]');
 
 下列属性也可以与模板中的数据上下文对象一起使用。
 
-| 属性 |  说明 |
-| --- | --- | --- |
-| $index | 循环使用时呈现的项的数字索引 `data-for` 。 |
-| $parent | 如果模板呈现在另一个模板中，则此属性允许您访问父数据上下文。 |
+| 属性 | 说明                                                                                                    |
+|----------|----------------------------------------------------------------------------------------------------------------|
+| $index   | 循环使用时呈现的项的数字索引 `data-for` 。                                     |
+| $parent  | 如果模板呈现在另一个模板中，则此属性允许您访问父数据上下文。 |
 
 下面的示例演示如何 `$index` 在数据 for 循环中使用该属性。
 
@@ -138,7 +138,7 @@ TemplateHelper.setBindingSyntax('[[', ']]');
 
 1. 直接在组件上。
 
-    每个组件定义 `templateContext` 属性，您可以使用该属性将其他数据传递到组件中的任何模板。 
+    每个组件定义 `templateContext` 属性，您可以使用该属性将其他数据传递到组件中的任何模板。
 
     ```ts
     document.querySelector('mgt-agenda').templateContext = {
@@ -195,7 +195,7 @@ document.querySelector('mgt-agenda').templateContext = {
 
 ### <a name="event-or-property-binding"></a>事件或属性绑定
 
-`data-props`属性允许您添加事件侦听器或直接在模板中设置属性值。 
+`data-props`属性允许您添加事件侦听器或直接在模板中设置属性值。
 
 ```html
 <template>
@@ -203,7 +203,7 @@ document.querySelector('mgt-agenda').templateContext = {
 </template>
 ```
 
-对于您可能想要设置的每个属性或事件处理程序，数据属性接受以逗号分隔的字符串。 
+对于您可能想要设置的每个属性或事件处理程序，数据属性接受以逗号分隔的字符串。
 
 若要添加事件处理程序，请为事件的名称加上前缀 `@` 。 事件处理程序将需要在元素的中可用 `templateContext` 。
 
@@ -238,7 +238,7 @@ agenda.addEventListener('templateRendered', (e) => { });
 事件详细信息将包含对要呈现的元素、数据上下文对象和模板类型的引用。
 
 ```ts
-agenda.addEventListener('templateRendered', (e) => { 
+agenda.addEventListener('templateRendered', (e) => {
   let templateType = e.detail.templateType;
   let dataContext = e.detail.context;
   let element = e.detail.element;

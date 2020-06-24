@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: c6c41527ea5b52e4d683cb2d14594c088f080142
-ms.sourcegitcommit: d6374f42bee4de11fd7a3d0d8c2a7f8c4e7739bc
+ms.openlocfilehash: e03d5035aff0736d94415167c891fac3478bec00
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44710599"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845643"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -24,6 +24,9 @@ ms.locfileid: "44710599"
 - `Accept-Language`[创建联机会议](/graph/api/application-post-onlinemeetings?view=graph-rest-1.0)时使用 HTTP 标头，以提供基于区域设置的联接信息。
 - 使用[createOrGet](/graph/api/onlinemeeting-createorget?view=graph-rest-1.0)返回具有指定的**externalId**值的联机会议; 或者，如果尚不存在，则创建一个，以便简化在第三方日历中嵌入结果会议。
 
+### <a name="groups"></a>组
+使用应用程序权限 `Group.Read.All` ，并 `Group.ReadWrite.All` 获取组[对话](/graph/api/resources/conversation)和[会话线程](/graph/api/resources/conversationthread)资源。
+
 ### <a name="security"></a>安全性
 - 将以下内容作为[警报](/graph/api/resources/alert?view=graph-rest-1.0)的属性进行跟踪：
   - 与警报相关的事件的 Id。
@@ -31,16 +34,26 @@ ms.locfileid: "44710599"
   - 指定与警报相关的[网络连接](/graph/api/resources/networkconnection?view=graph-rest-1.0)的源和目标位置。
 
 ### <a name="teamwork"></a>团队合作
-使用委派的权限[AppCatalog](/graph/permissions-reference#appcatalog-resource-permissions)列出 Microsoft 团队应用程序目录中的[应用程序](/graph/api/resources/teamsapp?view=graph-rest-1.0)。
+- 使用委派的权限[AppCatalog](/graph/permissions-reference#appcatalog-resource-permissions)列出 Microsoft 团队应用程序目录中的[应用程序](/graph/api/resources/teamsapp?view=graph-rest-1.0)。
+- [获取有关](/graph/api/channel-get-filesfolder)映射到 "团队[频道](/graph/api/resources/channel)的**文件**" 选项卡的文件夹的信息。
+- 获取[团队](/graph/api/resources/team)的[默认频道](/graph/api/team-get-primarychannel)（标记为 "**常规**"）。
 
 
 ## <a name="june-2020-new-in-preview-only"></a>2020年6月：仅预览中的新内容
 ### <a name="cloud-communications--presence"></a>云通信 |Shell
 [获取](/graph/api/presence-get?view=graph-rest-beta)组织中的所有用户或组织中的特定用户的状态。
 
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
+测试版中的 Intune[六月](changelog.md#june-2020)更新。
+
 ### <a name="identity-and-access"></a>身份和访问
 - IT 专业人员可以使用轻型代理连接到[AZURE AD 应用程序代理](/azure/active-directory/manage-apps/what-is-application-proxy)的[连接器](/graph/api/resources/connector?view=graph-rest-beta)资源，并[在外部发布本地 web 应用程序应用](/graph/api/resources/onpremisespublishing?view=graph-rest-beta)，以便其组织的远程用户能够以安全的方式访问这些应用程序。
 - 在租户级别管理[身份验证策略](/graph/api/resources/authenticationflowspolicy?view=graph-rest-beta)，以启用或禁用外部用户的[自助服务注册](/graph/api/resources/selfservicesignupauthenticationflowconfiguration?view=graph-rest-beta)。
+
+### <a name="users"></a>用户
+使用[用户设置](/graph/api/resources/usersettings?view=graph-rest-beta)[获取](/graph/api/regionalandlanguagesettings-get?view=graph-rest-beta)或[更新](/graph/api/regionalandlanguagesettings-update?view=graph-rest-beta)[首选 languaes 和区域设置](/graph/api/resources/regionalandlanguagesettings?view=graph-rest-beta)。
+
+用户设置是通过点击 Azure AD 用户配置文件以反映相同的用户首选项的[用户](/graph/api/resources/user?view=graph-rest-beta)可访问的关系，可实现跨应用程序的一致用户体验。 查看[用户设置如何区分邮箱设置](/graph/api/resources/user?view=graph-rest-beta#user-preferences-for-languages-and-regional-formats)。
 
 ## <a name="may-2020-new-and-generally-available"></a>5月2020：新的和普遍可用的
 

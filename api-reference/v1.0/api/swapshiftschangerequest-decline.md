@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d2b53c049dfb1213fdae049e0d8f1cb72b6a1f95
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 4814fb3ef9d416d6d3bc5be1815b746277a25426
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44217456"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44846182"
 ---
 # <a name="swapshiftschangerequest-decline"></a>swapShiftsChangeRequest：拒绝
 
@@ -18,15 +18,15 @@ ms.locfileid: "44217456"
 
 拒绝[swapShiftsChangeRequest](../resources/swapshiftschangerequest.md)对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-|委派（工作或学校帐户） | Schedule。 All，Group. 所有    |
-|委派（个人 Microsoft 帐户） | 不支持。    |s
-|Application | Schedule.ReadWrite.All |
+| 委派（工作或学校帐户）     | Schedule。 All，Group. 所有 |
+| 委派（个人 Microsoft 帐户） | 不支持。                              |
+| 应用程序                            | Schedule.ReadWrite.All                      |
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -42,7 +42,7 @@ POST /teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}。必需。 |
+| Authorization | Bearer {token}. Required. |
 | Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
@@ -55,7 +55,7 @@ POST /teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。
+If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
 
 ## <a name="examples"></a>示例
 

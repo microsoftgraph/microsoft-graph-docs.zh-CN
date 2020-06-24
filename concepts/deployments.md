@@ -1,12 +1,13 @@
 ---
 title: 区域云部署
 description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。
-ms.openlocfilehash: 0cdd1ee8a14a623d7b65ac5c6453357c2d91aa63
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+author: arpitha-dhanapathi
+ms.openlocfilehash: b437f4d3c33a42a486bec2815ff88af050c78921
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429549"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845489"
 ---
 # <a name="national-cloud-deployments"></a>区域云部署
 
@@ -32,10 +33,10 @@ ms.locfileid: "44429549"
 
 | 国家云 | Azure AD 门户终结点| Azure AD 终结点|
 |---------------------------|----------------|----------------|
+|Azure AD（全局服务）|https://portal.azure.com |`https://login.microsoftonline.com`|
 |Azure AD for US Government |https://portal.azure.us|`https://login.microsoftonline.us`|
 |Azure AD 德国 |https://portal.microsoftazure.de|`https://login.microsoftonline.de`|
 |由世纪互联运营的 Azure AD 中国 |https://portal.azure.cn|`https://login.chinacloudapi.cn`|
-|Azure AD（全局服务）|https://portal.azure.com |`https://login.microsoftonline.com`|
 
 若要了解有关 Azure AD 访问令牌和 Microsoft Graph 的详细信息，请参阅[身份验证基础](./auth/auth-concepts.md)。 对于 Azure AD 身份验证方案，请参阅[AZURE ad 身份验证基础](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios)。
 
@@ -46,14 +47,20 @@ ms.locfileid: "44429549"
 
 | 区域云 | Microsoft Graph | Graph 浏览器 |
 |---------------------------|----------------|----------------|
+| Microsoft Graph 全局服务 | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
 | 适用于美国政府 L4 的 Microsoft Graph | https://graph.microsoft.us | 不支持。 |
 | Microsoft Graph for 美国政府版 L5 （DOD） | https://dod-graph.microsoft.us | 不支持。 |
 | Microsoft Graph 德国 | https://graph.microsoft.de | 不支持。 |
 | 由世纪互联运营的 Microsoft Graph 中国 | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
-| Microsoft Graph 全局服务 | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
 
 > [!IMPORTANT]
-> 如果你已在美国政府版中使用了一个应用程序，并且你使用的是全球终结点 `https://graph.microsoft.com` ，我们建议切换到新 `https://graph.microsoft.us` 终结点。 使用全球终结点访问美国政府数据当前可以正常运行，但在不久的将来将被禁用。
+> 对于美国政府版中的应用程序：
+>
+> - 如果你在 Office 365 GCC 环境中工作，请继续使用全球终结点： `https://graph.microsoft.com` 和 `https://portal.azure.com` 。
+> - 如果使用的是 Office 365 GCC 高环境，请使用： `https://portal.azure.us` 和 `https://graph.microsoft.us` 。
+> - 如果使用的是 Office 365 DoD 环境，请使用 `https://portal.azure.us` 和 `https://dod-graph.microsoft.us` 。
+>
+> 在不久的将来，使用全球终结点访问美国政府数据将被禁用。
 
 > [!NOTE]
 > 应用只能通过国家云终结点访问组织数据。 这意味着应用只能访问在特定国家云中注册的租户中的数据。 尝试通过 Microsoft Graph 访问与 Microsoft 个人帐户关联的用户数据的应用程序应使用全局服务 `https://graph.microsoft.com` 。 为国家云部署获取的访问令牌与为全局服务或任何其他国家云获取的访问令牌不可互换。
@@ -71,8 +78,10 @@ ms.locfileid: "44429549"
 | Outlook 邮件 | ✔ | ✔ | ✔ |
 | Outlook 日历 | ✔ | ✔ | ✔ |
 | 个人联系人 | ✔ | ✔ | ✔ |
+| 安全性 | ✔ | ✔ | ✔ |
 | SharePoint| ✔ | ✔ | ✔ |
-| Planner|✔ |✔ |✔ |
+| Teams | ✔ | ✔ | ✔ |
+| 规划器|✔ |✔ |✔ |
 | 报告  |➖| ✔ |➖|
 | 更改通知（Webhook）  | ✔ |✔ |✔* |
 | Delta 查询 | ➖ | ✔ | ➖ |

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 27dc4650fa177dcba4d691d2c0d51985fc06e8a4
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 7410fd3cc24538133ee0e5c1d17c48e24a693dcd
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290474"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845645"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -47,6 +47,7 @@ ms.locfileid: "44290474"
 |[List owners](../api/application-list-owners.md) |[directoryObject](directoryobject.md) 集合| 获取所有者对象集合。|
 |[添加所有者](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| 通过发布到所有者集合添加所有者。|
 |[删除所有者](../api/application-delete-owners.md) |无| 从应用程序删除所有者。|
+|**策略**| | |
 |[分配 tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合| 向此对象分配 tokenLifetimePolicy。|
 |[列出 tokenLifetimePolicies](../api/application-list-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合| 获取已分配至此对象的所有 tokenLifetimePolicies。|
 |[删除 tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合| 从此对象中删除 tokenLifetimePolicy。|
@@ -88,7 +89,7 @@ ms.locfileid: "44290474"
 | 关系 | 类型 | Description |
 |:---------------|:--------|:----------|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 只读。|
-|extensionProperties|[extensionProperty](extensionproperty.md) 集合| 只读。可为 Null。|
+|extensionProperties|[extensionProperty](extensionproperty.md) 集合| Read-only. Nullable.|
 |owners|[directoryObject](directoryobject.md) 集合|拥有此应用程序的目录对象。 所有者是一组允许修改此对象的非管理员用户。 需要版本 2013-11-08 或更高版本。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5a2f197492ae831dc3e435e3f7a63a4f02714b1a
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 85a351c3e7ecc276666b6ed912828828de756834
+ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290340"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44845699"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -26,7 +26,7 @@ ms.locfileid: "44290340"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -48,7 +48,7 @@ PUT /groups/{id}/team
 
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
@@ -76,6 +76,7 @@ Content-type: application/json
 
 {  
   "memberSettings": {
+    "allowCreatePrivateChannels": true,
     "allowCreateUpdateChannels": true
   },
   "messagingSettings": {
@@ -111,7 +112,7 @@ Content-type: application/json
 
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
