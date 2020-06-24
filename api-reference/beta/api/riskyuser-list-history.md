@@ -5,56 +5,58 @@ localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3199528b297394ca7fc282bbf0a4346a52d185fe
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 581de42d3034a31a2ef3ac347c71d815b285ad88
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791116"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863325"
 ---
-# <a name="list-history-of-riskyuser"></a><span data-ttu-id="7956b-103">RiskyUser 的列表历史记录</span><span class="sxs-lookup"><span data-stu-id="7956b-103">List history of riskyUser</span></span>
+# <a name="list-history-of-riskyuser"></a><span data-ttu-id="6e6a8-103">RiskyUser 的列表历史记录</span><span class="sxs-lookup"><span data-stu-id="6e6a8-103">List history of riskyUser</span></span>
 
-<span data-ttu-id="7956b-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7956b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6e6a8-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6e6a8-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7956b-105">获取[riskyUser](../resources/riskyuser.md)资源的风险历史记录。</span><span class="sxs-lookup"><span data-stu-id="7956b-105">Get the risk history of a [riskyUser](../resources/riskyuser.md) resource.</span></span>
+<span data-ttu-id="6e6a8-105">获取[riskyUser](../resources/riskyuser.md)资源的风险历史记录。</span><span class="sxs-lookup"><span data-stu-id="6e6a8-105">Get the risk history of a [riskyUser](../resources/riskyuser.md) resource.</span></span>
 
-><span data-ttu-id="7956b-106">**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。</span><span class="sxs-lookup"><span data-stu-id="7956b-106">**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.</span></span>
+><span data-ttu-id="6e6a8-106">**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。</span><span class="sxs-lookup"><span data-stu-id="6e6a8-106">**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7956b-107">权限</span><span class="sxs-lookup"><span data-stu-id="7956b-107">Permissions</span></span>
-<span data-ttu-id="7956b-108">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="7956b-108">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="7956b-109">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7956b-109">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6e6a8-107">权限</span><span class="sxs-lookup"><span data-stu-id="6e6a8-107">Permissions</span></span>
+<span data-ttu-id="6e6a8-108">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="6e6a8-108">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="6e6a8-109">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6e6a8-109">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7956b-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="7956b-110">Permission type</span></span>      | <span data-ttu-id="7956b-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7956b-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6e6a8-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="6e6a8-110">Permission type</span></span>      | <span data-ttu-id="6e6a8-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6e6a8-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7956b-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7956b-112">Delegated (work or school account)</span></span> | <span data-ttu-id="7956b-113">IdentityRiskyUser、IdentityRiskUser 和所有</span><span class="sxs-lookup"><span data-stu-id="7956b-113">IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All</span></span>    |
-|<span data-ttu-id="7956b-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7956b-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7956b-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="7956b-115">Not supported.</span></span>    |
-|<span data-ttu-id="7956b-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="7956b-116">Application</span></span> | <span data-ttu-id="7956b-117">IdentityRiskyUser、IdentityRiskUser 和所有</span><span class="sxs-lookup"><span data-stu-id="7956b-117">IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All</span></span> |
+|<span data-ttu-id="6e6a8-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6e6a8-112">Delegated (work or school account)</span></span> | <span data-ttu-id="6e6a8-113">IdentityRiskyUser、IdentityRiskUser 和所有</span><span class="sxs-lookup"><span data-stu-id="6e6a8-113">IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All</span></span>    |
+|<span data-ttu-id="6e6a8-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6e6a8-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6e6a8-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="6e6a8-115">Not supported.</span></span>    |
+|<span data-ttu-id="6e6a8-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="6e6a8-116">Application</span></span> | <span data-ttu-id="6e6a8-117">IdentityRiskyUser、IdentityRiskUser 和所有</span><span class="sxs-lookup"><span data-stu-id="6e6a8-117">IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7956b-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7956b-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6e6a8-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6e6a8-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /riskyUsers/{id}/history
+GET /identityProtection/riskyUsers/{id}/history/
 ```
 
 
-## <a name="request-headers"></a><span data-ttu-id="7956b-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="7956b-119">Request headers</span></span>
-| <span data-ttu-id="7956b-120">名称</span><span class="sxs-lookup"><span data-stu-id="7956b-120">Name</span></span>      |<span data-ttu-id="7956b-121">说明</span><span class="sxs-lookup"><span data-stu-id="7956b-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6e6a8-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="6e6a8-119">Request headers</span></span>
+| <span data-ttu-id="6e6a8-120">名称</span><span class="sxs-lookup"><span data-stu-id="6e6a8-120">Name</span></span>      |<span data-ttu-id="6e6a8-121">说明</span><span class="sxs-lookup"><span data-stu-id="6e6a8-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="7956b-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="7956b-122">Authorization</span></span>  | <span data-ttu-id="7956b-123">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="7956b-123">Bearer {token}.</span></span> <span data-ttu-id="7956b-124">Required.</span><span class="sxs-lookup"><span data-stu-id="7956b-124">Required.</span></span> |
+| <span data-ttu-id="6e6a8-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="6e6a8-122">Authorization</span></span>  | <span data-ttu-id="6e6a8-123">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="6e6a8-123">Bearer {token}.</span></span> <span data-ttu-id="6e6a8-124">Required.</span><span class="sxs-lookup"><span data-stu-id="6e6a8-124">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7956b-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="7956b-125">Request body</span></span>
-<span data-ttu-id="7956b-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="7956b-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6e6a8-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="6e6a8-125">Request body</span></span>
+<span data-ttu-id="6e6a8-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="6e6a8-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7956b-127">响应</span><span class="sxs-lookup"><span data-stu-id="7956b-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6e6a8-127">响应</span><span class="sxs-lookup"><span data-stu-id="6e6a8-127">Response</span></span>
 
-<span data-ttu-id="7956b-128">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[riskyUsersHistoryItem](../resources/riskyuserhistoryitem.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="7956b-128">If successful, this method returns a `200 OK` response code and a collection of [riskyUsersHistoryItem](../resources/riskyuserhistoryitem.md) objects in the response body.</span></span>
+<span data-ttu-id="6e6a8-128">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[riskyUsersHistoryItem](../resources/riskyuserhistoryitem.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="6e6a8-128">If successful, this method returns a `200 OK` response code and a collection of [riskyUsersHistoryItem](../resources/riskyuserhistoryitem.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7956b-129">示例</span><span class="sxs-lookup"><span data-stu-id="7956b-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7956b-130">请求</span><span class="sxs-lookup"><span data-stu-id="7956b-130">Request</span></span>
-<span data-ttu-id="7956b-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="7956b-131">Here is an example of the request.</span></span>
+## <a name="examples"></a><span data-ttu-id="6e6a8-129">示例</span><span class="sxs-lookup"><span data-stu-id="6e6a8-129">Examples</span></span>
+### <a name="example-1-list-history-of-a-specific-user"></a><span data-ttu-id="6e6a8-130">示例1：列出特定用户的历史记录</span><span class="sxs-lookup"><span data-stu-id="6e6a8-130">Example 1: List history of a specific user</span></span>
+#### <a name="request"></a><span data-ttu-id="6e6a8-131">请求</span><span class="sxs-lookup"><span data-stu-id="6e6a8-131">Request</span></span>
+<span data-ttu-id="6e6a8-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="6e6a8-132">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="7956b-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="7956b-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="6e6a8-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="6e6a8-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_userriskhitsory",
@@ -63,22 +65,124 @@ GET /riskyUsers/{id}/history
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e74c69/history
 ```
-# <a name="c"></a>[<span data-ttu-id="7956b-133">C#</span><span class="sxs-lookup"><span data-stu-id="7956b-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="6e6a8-134">C#</span><span class="sxs-lookup"><span data-stu-id="6e6a8-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-userriskhitsory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="7956b-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7956b-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="6e6a8-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6e6a8-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-userriskhitsory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="7956b-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7956b-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="6e6a8-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6e6a8-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-userriskhitsory-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="7956b-136">响应</span><span class="sxs-lookup"><span data-stu-id="7956b-136">Response</span></span>
-<span data-ttu-id="7956b-137">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="7956b-137">Here is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="6e6a8-137">响应</span><span class="sxs-lookup"><span data-stu-id="6e6a8-137">Response</span></span>
+<span data-ttu-id="6e6a8-138">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="6e6a8-138">Here is an example of the response.</span></span>
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.riskyUserHistoryItem"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#riskyUsers('41a31b00-3b3b-42d9-8f1c-6d4f14e74c69')/history",
+    "value": [
+        {
+            "id": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
+            "isDeleted": false,
+            "isGuest": false,
+            "isProcessing": false,
+            "riskLevel": "none",
+            "riskState": "remediated",
+            "riskDetail": "userPerformedSecuredPasswordReset",
+            "riskLastUpdatedDateTime": "2019-05-03T03:50:34.9565578Z",
+            "userDisplayName": "Allan Deyoung",
+            "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+            "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
+            "initiatedBy": "68ca8ec0-11f8-456b-a785-70d9936650d5",
+            "activity": {
+                "eventTypes": [],
+                "detail": "userPerformedSecuredPasswordReset"
+            }
+        },
+        {
+            "id": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69636901009342322587",
+            "isDeleted": false,
+            "isGuest": false,
+            "isProcessing": false,
+            "riskLevel": "high",
+            "riskState": "atRisk",
+            "riskDetail": "none",
+            "riskLastUpdatedDateTime": "2019-04-05T22:31:27Z",
+            "userDisplayName": "Allan Deyoung",
+            "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+            "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
+            "initiatedBy": null,
+            "activity": {
+                "eventTypes": [
+                    "anonymizedIPAddress"
+                ],
+                "detail": null
+            }
+        },
+        {
+            "id": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69636901020140973557",
+            "isDeleted": false,
+            "isGuest": false,
+            "isProcessing": false,
+            "riskLevel": "none",
+            "riskState": "remediated",
+            "riskDetail": "userPerformedSecuredPasswordReset",
+            "riskLastUpdatedDateTime": "2019-04-05T23:00:14.0973557Z",
+            "userDisplayName": "Allan Deyoung",
+            "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+            "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
+            "initiatedBy": "68ca8ec0-11f8-456b-a785-70d9936650d5",
+            "activity": {
+                "eventTypes": [],
+                "detail": "userPerformedSecuredPasswordReset"
+            }
+        }
+    ]
+}
+
+```
+### <a name="example-2-list-history-of-a-specific-user"></a><span data-ttu-id="6e6a8-139">示例2：列出特定用户的历史记录</span><span class="sxs-lookup"><span data-stu-id="6e6a8-139">Example 2: List history of a specific user</span></span>
+#### <a name="request"></a><span data-ttu-id="6e6a8-140">请求</span><span class="sxs-lookup"><span data-stu-id="6e6a8-140">Request</span></span>
+<span data-ttu-id="6e6a8-141">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="6e6a8-141">Here is an example of the request.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="6e6a8-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="6e6a8-142">HTTP</span></span>](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_userriskhitsory",
+  "sampleKeys": ["41a31b00-3b3b-42d9-8f1c-6d4f14e74c69"]
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/identityProtection/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e74c69/history
+```
+# <a name="c"></a>[<span data-ttu-id="6e6a8-143">C#</span><span class="sxs-lookup"><span data-stu-id="6e6a8-143">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-userriskhitsory-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="6e6a8-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6e6a8-144">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-userriskhitsory-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="6e6a8-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6e6a8-145">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-userriskhitsory-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### <a name="response"></a><span data-ttu-id="6e6a8-146">响应</span><span class="sxs-lookup"><span data-stu-id="6e6a8-146">Response</span></span>
+<span data-ttu-id="6e6a8-147">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="6e6a8-147">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
