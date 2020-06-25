@@ -39,7 +39,7 @@ items:
           - name: 概述
             href: /graph/webhooks?context=graph/api/1.0
           - name: 教程
-            href: /graph/tutorials/change-notifications
+            href: /learn/modules/msgraph-changenotifications-trackchanges
           - name: 缺少 Outlook 通知（预览版）
             href: /graph/webhooks-outlook-authz?context=graph/api/1.0
       - name: 更改跟踪
@@ -3370,6 +3370,8 @@ items:
                 href: api/driveitem-update.md
               - name: 删除项目
                 href: api/driveitem-delete.md
+              - name: 还原项目
+                href: api/driveitem-restore.md
               - name: 移动项目
                 href: api/driveitem-move.md
               - name: 复制项目

@@ -39,7 +39,7 @@ items:
           - name: 概述
             href: /graph/webhooks?context=graph/api/beta
           - name: 教程
-            href: /graph/tutorials/change-notifications
+            href: /learn/modules/msgraph-changenotifications-trackchanges
           - name: 缺少 Outlook 通知（预览版）
             href: /graph/webhooks-outlook-authz?context=graph/api/beta
           - name: 与资源数据有关的通知（预览版）
@@ -9680,7 +9680,7 @@ items:
                     href: api/publishedresource-post-agentgroups.md
                   - name: 从代理组中删除
                     href: api/publishedresource-delete-agentgroups.md
-              - name: 连接器
+              - name: Connector
                 href: resources/connector.md
                 items:
                   - name: 列表
@@ -9696,6 +9696,8 @@ items:
                 items:
                   - name: 列表
                     href: api/connectorgroup-list.md
+                  - name: 创建
+                    href: api/connectorgroup-post.md
                   - name: 获取
                     href: api/connectorgroup-get.md
                   - name: 更新
@@ -10084,12 +10086,6 @@ items:
                     href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                   - name: 删除 homeRealmDiscoveryPolicy
                     href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
-                  - name: 分配 tokenIssuancePolicy
-                    href: api/application-post-tokenissuancepolicies.md
-                  - name: 列出 tokenIssuancePolicies
-                    href: api/application-list-tokenissuancepolicies.md
-                  - name: 删除 tokenIssuancePolicy
-                    href: api/application-delete-tokenissuancepolicies.md
                   - name: 分配 tokenLifetimePolicy
                     href: api/application-post-tokenlifetimepolicies.md
                   - name: 列出 tokenLifetimePolicies

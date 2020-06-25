@@ -8,18 +8,18 @@ metadata:
   author: jasonjoh
   ms.author: jasonjoh
   ms.date: 04/02/2020
-  ms.openlocfilehash: 046b7948d9ea76876b9811fbc131794fead8d344
-  ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+  ms.openlocfilehash: 93e103e5d4872b79eecf82efa36b89d83ef86efd
+  ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/22/2020
-  ms.locfileid: "44345161"
+  ms.lasthandoff: 06/24/2020
+  ms.locfileid: "44864229"
 landingContent:
 - title: 构建您的第一个服务器端应用程序
   linkLists:
   - linkListType: get-started
     links:
-    - text: ASP.NET 核心
+    - text: ASP.NET Core
       url: /graph/tutorials/aspnet-core
     - text: ASP.NET
       url: /learn/modules/msgraph-build-aspnetmvc-apps
@@ -65,7 +65,7 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: 更改通知和 Delta 查询
+    - text: 更改通知和更改跟踪
       url: /learn/modules/msgraph-changenotifications-trackchanges
     - text: 使用查询参数优化数据使用情况
       url: /learn/modules/optimize-data-usage
