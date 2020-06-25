@@ -3,14 +3,14 @@ title: openTypeExtension 资源类型（开放扩展）
 description: 借助开放扩展（旧称为“Office 365 数据扩展”），可以直接将泛型属性轻松添加到 Microsoft Graph 中的资源。
 localization_priority: Priority
 author: dkershaw10
-ms.prod: ''
+ms.prod: extensions
 doc_type: resourcePageType
-ms.openlocfilehash: c066a0faad8662150689a2b811a871371793e36b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 55777fd3338f362d56934479246ea477459c52cc
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447288"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863808"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension 资源类型（开放扩展）
 
@@ -76,8 +76,8 @@ Outlook 资源（事件、邮件或个人联系人）上存在每个开放扩展
 
 |属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|extensionName|String|开放类型开放扩展的唯一文本标识符。必需。|
-|id|String| 连接具有 **extensionName** 扩展类型的完全限定的标识符 。只读。|
+|extensionName|String|A unique text identifier for an open type open extension. Required.|
+|id|String| A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only.|
 
 ## <a name="relationships"></a>关系
 
@@ -87,7 +87,7 @@ Outlook 资源（事件、邮件或个人联系人）上存在每个开放扩展
 
 |方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
-|[Post](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)（在现有资源实例中），或包含 openTypeExtension 对象的新 [contact](../resources/contact.md)、[event](../resources/event.md) 或 [message](../resources/message.md)。 | 在现有的或新的资源实例中创建 openTypeExtension 对象。|
+|[创建](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)（在现有资源实例中），或包含 openTypeExtension 对象的新 [contact](../resources/contact.md)、[event](../resources/event.md) 或 [message](../resources/message.md)。 | 在现有的或新的资源实例中创建 openTypeExtension 对象。|
 |[获取](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |读取 openTypeExtension 对象的属性和关系。|
 |[更新](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |更新 openTypeExtension 对象。 |
 |[删除](../api/opentypeextension-delete.md) | 无 |删除 openTypeExtension 对象。 |
