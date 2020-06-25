@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: dfa72e3b0fc6698b2df0bafc9ae5e7d0c79b9c47
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: cb9ee795c7291def2c5e8120fae0d0a7496ed455
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44788778"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863967"
 ---
 # <a name="tablecolumn-databodyrange"></a>TableColumn: DataBodyRange
 
@@ -58,7 +58,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/dataBodyRa
   "name": "tablecolumn_databodyrange",
   "idempotent": true
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/dataBodyRange
 ```
 # <a name="c"></a>[C#](#tab/csharp)

@@ -7,12 +7,12 @@ localization_priority: Normal
 description: contentTypeInfo 资源指示项的 SharePoint 内容类型。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5343be1f210e44e5fe16764004c9cef2a7d32c6d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d39f6e797b084cd3b263cbf4f1ccda6778664914
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533029"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863815"
 ---
 # <a name="contenttypeinfo-resource-type"></a>ContentTypeInfo 资源类型
 
@@ -27,7 +27,8 @@ ms.locfileid: "42533029"
 
 ```json
 {
-  "id": "string"
+  "id": "string",
+  "name": "string"
 }
 ```
 
@@ -36,6 +37,7 @@ ms.locfileid: "42533029"
 | 属性名称     | 类型    | 说明
 |:------------------|:--------|:----------------------------------------------------
 | **id**            | string  | 内容类型的 ID。
+| **name**       | string  | 内容类型的名称。
 
 <!-- {
   "type": "#page.annotation",

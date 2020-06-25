@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8d47387e4ccd60cbf7a554d7ac4ecfedc6263ce1
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
-ms.translationtype: HT
+ms.openlocfilehash: 6a56ec92686900f20465bbbe9da0837b7cfad2bc
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932537"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44866544"
 ---
 ```objc
 
@@ -18,6 +18,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphTeam *team = [[MSGraphTeam alloc] init];
 MSGraphTeamMemberSettings *memberSettings = [[MSGraphTeamMemberSettings alloc] init];
+[memberSettings setAllowCreatePrivateChannels: true];
 [memberSettings setAllowCreateUpdateChannels: true];
 [team setMemberSettings:memberSettings];
 MSGraphTeamMessagingSettings *messagingSettings = [[MSGraphTeamMessagingSettings alloc] init];

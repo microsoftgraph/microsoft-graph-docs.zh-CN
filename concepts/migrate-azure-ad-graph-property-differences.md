@@ -4,12 +4,12 @@ description: 介绍了 Azure AD Graph 资源（实体）与 Microsoft Graph 之�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a6fde6acce2122e1f0b521799e10dd6067296000
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 6ce8cda894006830db456e30f1809d66ccc24025
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845904"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863864"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Azure AD Graph 与 Microsoft Graph 之间的属性差异
 
@@ -52,9 +52,6 @@ ms.locfileid: "44845904"
 | **dirSyncEnabled** | beta &nbsp; - &nbsp; **onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** | |
 | **immutableId** | beta &nbsp; - &nbsp; **onPremisesImmutableId** <br> v1.0 &nbsp; - &nbsp; **onPremisesImmutableId** | |
 | **lastDirSyncDateTime** | beta &nbsp; - &nbsp; **onPremisesLastSyncDateTime**<br>v1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** | |
-| **onPremisesDomainName** | beta &nbsp; - &nbsp; 、onpremisesdomainname <br> v1.0 &nbsp; - &nbsp; 、onpremisesdomainname | |
-| **onPremisesNetBiosName** | beta &nbsp; - &nbsp; onPremisesNetBiosName <br> v1.0 &nbsp; - &nbsp; onPremisesNetBiosName | |
-| **onPremisesSamAccountName** | beta &nbsp; - &nbsp; onPremisesSamAccountName <br> v1.0 &nbsp; - &nbsp; onPremisesSamAccountName |  |
 | **provisioningErrors** | beta &nbsp; - &nbsp; _不可用_ <br> v1.0 1.0 &nbsp; - &nbsp; _不可用_ | 此属性及其信息已被弃用。  但是，可以在**onPremisesProvisioningErrors**中找到描述任何 AD Connect 相关设置错误的新属性。 |
 
 ## <a name="application-property-differences"></a>应用程序属性差异
@@ -84,8 +81,8 @@ ms.locfileid: "44845904"
 
 |Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
-| **creationTimestamp** | beta &nbsp; - &nbsp; **creationTimestamp** <br> v1.0 &nbsp; - &nbsp; _尚不可用_ | 这将被重命名为 createdDateTime。|
-| **id** | beta &nbsp; - &nbsp; **appRoleId** <br> v1.0 &nbsp; - &nbsp; _尚不可用_ | |
+| **creationTimestamp** | beta &nbsp; - &nbsp; **creationTimestamp** <br> v1.0 &nbsp; - &nbsp; **createdDateTime** | |
+| **id** | beta &nbsp; - &nbsp; **appRoleId** <br> v1.0 &nbsp; - &nbsp; **appRoleId** | |
 
 ## <a name="contact-property-differences"></a>联系人属性差异
 
@@ -151,7 +148,7 @@ Azure AD Graph directoryObjectReference 资源已重命名为 Microsoft Graph �
 
 ## <a name="policy-property-differences"></a>策略属性差异
 
-在 Microsoft Graph 中，有命名的策略类型（如 tokenIssuancePolicy 或 tokenLifetimePolicy），而不是通用策略资源类型。 [策略概述](/graph/api/resources/policy-overview?view=graph-rest-beta)中提供了更多详细信息。 在1.0 版中，策略尚不可用。
+在 Microsoft Graph 中，有命名的策略类型（如 tokenIssuancePolicy 或 tokenLifetimePolicy），而不是通用策略资源类型。 [策略概述](/graph/api/resources/policy-overview?view=graph-rest-1.0)中提供了更多详细信息。
 
 ## <a name="serviceendpoint-property-differences"></a>ServiceEndpoint 属性差异
 
@@ -159,11 +156,9 @@ Azure AD Graph ServiceEndpoint 资源已重命名为 Microsoft Graph 中的终�
 
 |Azure AD Graph <br>（v 1.6）属性 |Microsoft Graph<br> property|备注|
 |---|---|---|
-| **性能** | beta &nbsp; - &nbsp; **功能**<br> v1.0 &nbsp; - &nbsp; _尚不可用_ | |
-| **serviceId** | beta &nbsp; - &nbsp; **providerId**<br> v1.0 &nbsp; - &nbsp; _尚不可用_ | |
-| **serviceName** | beta &nbsp; - &nbsp; **providerName**<br> v1.0 &nbsp; - &nbsp; _尚不可用_ | |
-| **resourceId** | beta &nbsp; - &nbsp; **providerResourceId**<br> v1.0 &nbsp; - &nbsp; _尚不可用_ | |
-| **url** | beta &nbsp; - &nbsp; **uri**<br> v1.0 &nbsp; - &nbsp; _尚不可用_ | |
+| **serviceId** | beta &nbsp; - &nbsp; **providerId**<br> 1.0 版 &nbsp; - &nbsp; **providerId** | |
+| **serviceName** | beta &nbsp; - &nbsp; **providerName**<br> v1.0 1.0 &nbsp; - &nbsp; **providerName** | |
+| **resourceId** | beta &nbsp; - &nbsp; **providerResourceId**<br> v1.0 &nbsp; - &nbsp; **providerResourceId** | |
 
 ## <a name="serviceprincipal-property-differences"></a>ServicePrincipal 属性差异
 

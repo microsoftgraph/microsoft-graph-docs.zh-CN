@@ -3,14 +3,14 @@ title: 更新开放扩展
 description: 通过请求正文中的属性更新开放扩展（openTypeExtension 对象）：
 localization_priority: Normal
 author: dkershaw10
-ms.prod: ''
+ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 26289c7bbe11f2d91c7e226aa6a118a26a18476b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 89804b1259f3832b2b69e2f62d25ac1fa8856809
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511241"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863689"
 ---
 # <a name="update-open-extension"></a>更新开放扩展
 
@@ -35,9 +35,9 @@ ms.locfileid: "42511241"
 | [组事件](../resources/event.md) | Group.ReadWrite.All | 不支持 | 不支持 |
 | [组帖子](../resources/post.md) | Group.ReadWrite.All | 不支持 | Group.ReadWrite.All |
 | [邮件](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
-| [组织](../resources/organization.md) | Directory.AccessAsUser.All | 不支持 | 不支持 |
+| [组织](../resources/organization.md) | Organization.ReadWrite.All | 不支持 | Organization.ReadWrite.All |
 | [个人联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [用户](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
+| [用户](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 在请求中，标识资源实例，使用资源实例的 **extensions** 导航属性标识扩展插件，然后对此扩展插件实例执行 `PATCH`。
@@ -55,7 +55,7 @@ PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 ```
 
->**注意：** 以上语法显示一些标识资源实例的常见方法，以便在其中更新一个扩展。可以用来标识这些资源实例的所有其他语法均支持以类似的方式在其中更新开放扩展。
+>**Note:** The above syntax shows some common ways to identify a resource instance, in order to update an extension in it. All other syntax that allows you to identify these resource instances supports updating open extensions in them in a similar way.
 
 若要了解如何在请求正文中添加任意自定义数据来进行更改或添加到扩展插件，请参阅[请求正文](#request-body)部分。
 
@@ -63,18 +63,18 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 ## <a name="path-parameters"></a>路径参数
 |参数|类型|说明|
 |:-----|:-----|:-----|
-|id|string|相应集合的实例的唯一标识符。必需。|
-|extensionId|string|这可以是一个扩展名称（即扩展的唯一文本标识符）或完全限定的名称（连接扩展类型和唯一文本标识符）。创建扩展时，在 `id` 属性中返回完全限定的名称。必需。|
+|id|string|A unique identifier for an instance of the corresponding collection. Required.|
+|extensionId|string|This can be an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the `id` property when you create the extension. Required.|
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 值 |
 |:---------------|:----------|
-| Authorization | Bearer {token}。必需。 |
+| Authorization | Bearer {token}. Required. |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>请求正文
 
-提供 [openTypeExtension](../resources/opentypeextension.md) 对象的 JSON 正文（具有以下所需的名称-值对）以及要更改或添加到该扩展中的任意定义数据。JSON 负载中的数据可以是基元或基元数组类型。
+Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md) object, with the following required name-value pairs, and any custom data to change or add to that extension. The data in the JSON payload can be primitive types, or arrays of primitive types.
 
 | 名称       | 值 |
 |:---------------|:----------|
@@ -89,7 +89,7 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 ## <a name="example"></a>示例
 #### <a name="request-1"></a>请求 1
 
-第一个示例展示如何在邮件中更新扩展。该扩展最初由以下 JSON 负载表示：
+The first example shows how to update an extension in a message. The extension is initially represented by the following JSON payload:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -165,7 +165,7 @@ Content-type: application/json
 
 #### <a name="request-2"></a>请求 2
 
-第二个示例展示如何在组帖子中更新扩展。该扩展最初由以下 JSON 负载表示，其中的 `expirationDate` 的值为 `2015-07-03T13:04:00Z`
+The second example shows how to update an extension in a group post. The extension is initially represented by the following JSON payload, with an `expirationDate` value of `2015-07-03T13:04:00Z`:
 
 <!-- { "blockType": "ignored" } -->
 ```http

@@ -7,12 +7,12 @@ localization_priority: Normal
 description: 照片资源提供 driveItem 中的照片和相机属性，例如 EXIF 元数据。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 4e3f167384112c3c3354cdff88b41632f92e2637
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a62a138cbd48645b6b296abcde72af0cef19e259
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534049"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863731"
 ---
 # <a name="photo-resource-type"></a>Photo 资源类型
 
@@ -37,6 +37,7 @@ ms.locfileid: "42534049"
   "fNumber": 1.8,
   "focalLength": 22.5,
   "iso": 100,
+  "orientation": 3,
   "takenDateTime": "String (timestamp)"
 }
 ```
@@ -45,14 +46,15 @@ ms.locfileid: "42534049"
 
 | 属性                | 类型           | 说明
 |:------------------------|:---------------|:----------------------------------
-| **takenDateTime**       | DateTimeOffset | 表示照片拍摄的时间和日期。只读。
-| **cameraMake**          | 字符串         | 相机制造商。只读。
-| **cameraModel**         | String         | 相机型号。只读。
-| **fNumber**             | 双精度         | 相机的 F-stop 值。只读。
-| **exposureDenominator** | 双精度         | 相机的曝光时间分数的分母。只读。
-| **exposureNumerator**   | Double         | 相机的曝光时间分数的分子。只读。
-| **focalLength**         | 双精度数         | 相机的焦距。只读。
-| **iso**                 | Int32          | 相机的 ISO 值。只读。
+| **takenDateTime**       | DateTimeOffset | Represents the date and time the photo was taken. Read-only.
+| **cameraMake**          | String         | Camera manufacturer. Read-only.
+| **cameraModel**         | String         | Camera model. Read-only.
+| **fNumber**             | 双精度         | The F-stop value from the camera. Read-only.
+| **exposureDenominator** | 双精度         | The denominator for the exposure time fraction from the camera. Read-only.
+| **exposureNumerator**   | Double         | The numerator for the exposure time fraction from the camera. Read-only.
+| **focalLength**         | 双精度数         | The focal length from the camera. Read-only.
+| **iso**                 | Int32          | The ISO value from the camera. Read-only.
+| **orientation**         | Int16          | 相机中的方向值。 在 OneDrive 个人版上是可写的。      |
 
 ## <a name="remarks"></a>注解
 
@@ -62,7 +64,7 @@ OneDrive for Business 和 SharePoint 仅返回 **takenDateTime** 属性。
 <!-- {
   "type": "#page.annotation",
   "description": "The photo facet provides details about the camera and settings on the camera for photos.",
-  "keywords": "camera make,camera model, exposure, f-stop, iso",
+  "keywords": "camera make,camera model, exposure, f-stop, iso, orientation",
   "section": "documentation",
   "tocPath": "Facets/Photo"
 } -->

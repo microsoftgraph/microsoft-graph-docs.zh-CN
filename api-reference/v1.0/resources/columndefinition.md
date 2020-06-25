@@ -7,12 +7,12 @@ localization_priority: Normal
 description: 下面是 ColumnDefinition 资源的 JSON 表示形式。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1d178fce760def6ae74fa6fa6c520139e2f778dd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a86a6d89184e18eac7c452b7fca3596371f5dcb7
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533058"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44864061"
 ---
 # <a name="columndefinition-resource"></a>ColumnDefinition 资源
 
@@ -48,6 +48,7 @@ ms.locfileid: "42533058"
   "currency": { "@odata.type": "microsoft.graph.currencyColumn" },
   "dateTime": { "@odata.type": "microsoft.graph.dateTimeColumn" },
   "defaultValue": { "@odata.type": "microsoft.graph.defaultColumnValue" },
+  "geolocation": { "@odata.type": "microsoft.graph.geolocationColumn" },
   "lookup": { "@odata.type": "microsoft.graph.lookupColumn" },
   "number": { "@odata.type": "microsoft.graph.numberColumn" },
   "personOrGroup": { "@odata.type": "microsoft.graph.personOrGroupColumn" },
@@ -61,14 +62,14 @@ ms.locfileid: "42533058"
 
 | 属性名称           | 类型    | 说明
 |:------------------------|:--------|:-----------------------------------------
-| **columnGroup**         | 字符串  | 对于网站列，此列所属的组的名称。 可以帮助组织相关的列。
-| **说明**         | 字符串  | 面向用户的列描述。
+| **columnGroup**         | string  | 对于网站列，此列所属的组的名称。 可以帮助组织相关的列。
+| **说明**         | string  | 面向用户的列描述。
 | **displayName**         | string  | 面向用户的列名称。
 | **enforceUniqueValues** | boolean | 如果为 true，则此列不能有两个列表项具有相同的值。
 | **hidden**              | boolean | 指定列是否显示在用户界面中。
 | **id**                  | string  | 列的唯一标识符。
 | **indexed**             | boolean | 指定列值是否可用于排序和搜索。
-| **名称**                | string  | 在 [listItem][] 上的 [fields][] 中显示的面向 API 的列名称。 对于面向用户的名称，请参阅 **displayName**。
+| **name**                | string  | 在 [listItem][] 上的 [fields][] 中显示的面向 API 的列名称。 对于面向用户的名称，请参阅 **displayName**。
 | **readOnly**            | bool    | 指定是否可以修改列值。
 | **required**            | boolean | 指定列值是否不可选。
 
@@ -84,6 +85,7 @@ ms.locfileid: "42533058"
 | **currency**      | [currencyColumn][]      | 此列存储货币值。
 | **dateTime**      | [dateTimeColumn][]      | 此列存储日期时间值。
 | **defaultValue**  | [defaultColumnValue][]  | 此列的默认值。
+| **地理位置**   | [geolocationColumn][]   | 此列存储一个地理位置。
 | **lookup**        | [lookupColumn][]        | 从网站中的另一个源查找此列的数据。
 | **number**        | [numberColumn][]        | 此列存储数值。
 | **personOrGroup** | [personOrGroupColumn][] | 此列存储个人或组值。
@@ -105,6 +107,7 @@ ms.locfileid: "42533058"
 [currencyColumn]: currencycolumn.md
 [dateTimeColumn]: datetimecolumn.md
 [defaultColumnValue]: defaultcolumnvalue.md
+[geolocationColumn]: geolocationcolumn.md
 [lookupColumn]: lookupcolumn.md
 [numberColumn]: numbercolumn.md
 [personOrGroupColumn]: personorgroupcolumn.md

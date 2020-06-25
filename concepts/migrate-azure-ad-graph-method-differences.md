@@ -4,12 +4,12 @@ description: 介绍 Azure Active Directory （Azure AD） Graph API 和 Microsof
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cd9bc7ac842795d95f26ff5208f69cd3f1facb5c
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 8179dcc797086e26d4351d17d7a5675b5d012722
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682087"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44863717"
 ---
 # <a name="method-differences-between-azure-ad-and-microsoft-graph"></a>Azure AD 和 Microsoft Graph 之间的方法差异
 
@@ -19,7 +19,7 @@ ms.locfileid: "44682087"
 
 |Azure AD Graph <br>（v. 1.6）方法 |Microsoft Graph<br>（资源/方法）|备注|
 |---|---|---|
-| getAvailableExtensionProperties | beta &nbsp; - &nbsp; _不可用_ <br> v1.0 &nbsp; - &nbsp; [getAvailableExtensionProperties](/graph/api/application-getavailableextensionproperties?view=graph-rest-1.0) |  |
+| getAvailableExtensionProperties | beta &nbsp; - &nbsp; _不可用_ <br> v1.0 1.0 &nbsp; - &nbsp; _不可用_ |  |
 | getObjectsByObjectId | beta &nbsp; - &nbsp; [directoryObjects/getByIds](/graph/api/directoryobject-getbyids?view=graph-rest-beta) <br> v1.0 1.0 &nbsp; - &nbsp; [directoryObjects/getByIds](/graph/api/directoryobject-getbyids?view=graph-rest-1.0) | |
 | invalidateAllRefreshTokens | beta &nbsp; - &nbsp; [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-beta) <br> v1.0 &nbsp; - &nbsp; [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) | |
 | isMemberOf | &nbsp; - &nbsp; _未计划_beta <br> 1.0 版 &nbsp; - &nbsp; _未计划_ | 请改用 checkMemberGroups。 |

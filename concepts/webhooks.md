@@ -1,20 +1,20 @@
 ---
 title: 设置用户数据更改的通知
-description: Microsoft Graph API 使用 webhook 机制将更改通知传递给客户端。客户端是一种 web 服务，可用于配置自己的 URL 以接收更改通知。客户端应用使用更改通知在更改时更新其状态。
+description: The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes.
 author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: d3a2e12a37035f6b89499e73615441dc1514c139
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 6c635994f4d281938d709ca7c2e7daabfb73da86
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682094"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44864068"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
-Microsoft Graph API 使用 webhook 机制将更改通知传递给客户端。客户端是一种 web 服务，可用于配置自己的 URL 以接收更改通知。客户端应用使用更改通知在更改时更新其状态。
+The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes.
 
 在 Microsoft Graph 接受订阅请求后，它会将更改通知推送到订阅中指定的 URL。 然后应用根据其业务逻辑执行操作。 例如，它提取更多数据、更新缓存和视图等。
 
@@ -22,7 +22,7 @@ Microsoft Graph API 使用 webhook 机制将更改通知传递给客户端。客
 > [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
  
 > [!div class="nextstepaction"]
-> [使用 .NET Core 生成 Webhook 应用](/graph/tutorials/change-notifications)
+> [教程：使用更改通知和跟踪 Microsoft Graph 中的更改](/learn/modules/msgraph-changenotifications-trackchanges)
 
 默认情况下，更改通知不包含资源数据，`id` 除外。 如果应用需要资源数据，则可以调用 Microsoft Graph API 以获取完整资源。 本文使用**用户**资源作为使用更改通知的示例。
 
@@ -99,7 +99,7 @@ Microsoft Graph API 使用 webhook 机制将更改通知传递给客户端。客
 
 ### <a name="creating-a-subscription"></a>创建订阅
 
-创建订阅是开始接收对资源的更改通知的第一步。订阅过程如下所示：
+Creating a subscription is the first step to start receiving change notifications for a resource. The subscription process is as follows:
 
 1. 客户端发送特定资源的订阅 (POST) 请求。
 
@@ -231,7 +231,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 1. 将响应中的 `202 - Accepted` 状态代码发送到 Microsoft Graph。 如果 Microsoft Graph 没有收到2xx 类代码，它会在大约4小时的一段时间内尝试发布更改通知一段时间。之后，更改通知将被丢弃，并且不会被传递。
 
-    > **注意：**`202 - Accepted`收到更改通知后立即发送状态代码，即使在验证其真实性之前也是如此。 您只需确认收到更改通知并防止不必要的重试。 当前超时是 30 秒，但将来可能会减少，以优化服务性能。
+    > **注意：**`202 - Accepted`收到更改通知后立即发送状态代码，即使在验证其真实性之前也是如此。 您只需确认收到更改通知并防止不必要的重试。 当前超时是 30 秒，但将来可能会减少，以优化服务性能。 如果通知 URL 在30秒内未在10分钟内答复来自 Microsoft Graph 的10% 以上的请求，则所有以下通知都将延迟并在4小时内重试。 如果在10分钟内通知 URL 未在30秒内答复来自 Microsoft Graph 的20% 以上的请求，则将删除以下所有通知。
 
 1. 验证 `clientState` 属性。 它必须与最初使用订阅创建请求提交的值匹配。
 
@@ -263,7 +263,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 - [创建订阅](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
 - [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta)资源类型
 - [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta)资源类型
-- [更改通知教程](/graph/tutorials/change-notifications)
+- [更改通知和更改跟踪教程](/learn/modules/msgraph-changenotifications-trackchanges)
 - [生命周期通知（预览版）](/graph/concepts/webhooks-outlook-authz.md)
 
 [联系人]: /graph/api/resources/contact?view=graph-rest-1.0

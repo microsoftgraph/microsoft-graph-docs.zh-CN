@@ -7,12 +7,12 @@ localization_priority: Normal
 description: 配额资源提供有关 驱动器 资源上的空间限制的详细信息。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 53aad1392e66f610f85f30ae088dc6f8ca04df73
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 293daf950beb5cdf3cbd791a1e8bf0d4b92a220b
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533934"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44864208"
 ---
 # <a name="quota-resource-type"></a>Quota 资源类型
 
@@ -35,6 +35,9 @@ ms.locfileid: "42533934"
   "deleted": 1024,
   "remaining": 1024,
   "state": "normal | nearing | critical | exceeded",
+  "storagePlanInformation": {
+    "upgradeAvailable": true
+  },
   "total": 1024,
   "used": 1024
 }
@@ -44,11 +47,12 @@ ms.locfileid: "42533934"
 
 | 属性名称 | 类型   | 说明                                                                 |
 |:--------------|:-------|:----------------------------------------------------------------------------|
-| total         | Int64  | 允许的总存储空间，以字节为单位。只读。                           |
-| used          | Int64  | 已使用的总空间，以字节为单位。只读。                                      |
-| remaining     | Int64  | 达到配额限制之前剩余的总空间，以字节为单位。只读。 |
-| deleted       | Int64  | 回收站中的文件占用的总空间，以字节为单位。只读。      |
-| state         | string | 指示存储空间状态的枚举值。只读。 |
+| total         | Int64  | Total allowed storage space, in bytes. Read-only.                           |
+| used          | Int64  | Total space used, in bytes. Read-only.                                      |
+| remaining     | Int64  | Total space remaining before reaching the quota limit, in bytes. Read-only. |
+| deleted       | Int64  | Total space consumed by files in the recycle bin, in bytes. Read-only.      |
+| state         | string | Enumeration value that indicates the state of the storage space. Read-only. |
+| storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | 有关驱动器的存储配额计划的信息。 仅在个人 OneDrive 中。|
 
 ## <a name="state-enumeration"></a>状态枚举
 
@@ -57,7 +61,7 @@ ms.locfileid: "42533934"
 | `normal`   | 驱动器具有充足的剩余配额。                                                                                                                               |
 | `nearing`  | 剩余配额少于总配额空间的 10%。                                                                                                                      |
 | `critical` | 剩余配额少于总配额空间的 1%。                                                                                                                       |
-| `exceeded` | 使用的配额已超出总配额。在驱动器低于总配额量或购买更多存储空间之前，无法向该驱动器添加新的文件或文件夹。 |
+| `exceeded` | The used quota has exceeded the total quota. New files or folders cannot be added to the drive until it is under the total quota amount or more storage space is purchased. |
 
 <!-- {
   "type": "#page.annotation",

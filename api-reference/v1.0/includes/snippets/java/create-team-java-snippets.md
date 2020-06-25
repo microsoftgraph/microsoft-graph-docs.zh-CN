@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 251083bf08b2770c07191c0b66a8c25d92576f20
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
-ms.translationtype: HT
+ms.openlocfilehash: 26a578c92beeba99b349de0bce8ef4092248c815
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932538"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44866525"
 ---
 ```java
 
@@ -13,6 +13,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 Team team = new Team();
 TeamMemberSettings memberSettings = new TeamMemberSettings();
+memberSettings.allowCreatePrivateChannels = true;
 memberSettings.allowCreateUpdateChannels = true;
 team.memberSettings = memberSettings;
 TeamMessagingSettings messagingSettings = new TeamMessagingSettings();

@@ -3,14 +3,14 @@ title: 更新 schemaExtension
 description: 更新指定 schemaExtension 的定义中的属性。
 localization_priority: Normal
 author: dkershaw10
-ms.prod: ''
+ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: c1e6e58c19f6561c16f51967a3b3a0c4ae346158
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8cbf5264ad704dde5139f8915f9350ad189368a5
+ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509939"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44864180"
 ---
 # <a name="update-schemaextension"></a>更新 schemaExtension
 
@@ -23,14 +23,17 @@ ms.locfileid: "42509939"
 只有创建了架构扩展（所有者应用程序）的应用程序可以在扩展处于**InDevelopment**或**可用**状态时对扩展进行增量更新。 这意味着应用程序无法从定义中删除自定义属性或目标资源类型。 但是，该应用程序可以更改扩展的说明。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Directory.accessasuser.all 的所有应用程序。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
+
+> [!NOTE]
+> 此外，对于委派的流程，登录用户只能更新自己拥有的 Schemaextension （其中 schemaExtension 的**owner**属性是 `appId` 登录用户拥有的应用程序的）。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -43,18 +46,18 @@ PATCH /schemaExtensions/{id}
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| Authorization  | Bearer {token}. Required. |
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |说明|String|架构扩展的说明。|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) 集合|构成架构扩展定义的属性名称和类型的集合。 仅允许进行累加性更改。 |
-|状态|String|架构扩展的生命周期状态。 创建时的初始状态为**InDevelopment**。 可能的状态过渡从**InDevelopment**到**可用**，并**可供****弃用**。|
+|status|String|架构扩展的生命周期状态。 创建时的初始状态为**InDevelopment**。 可能的状态过渡从**InDevelopment**到**可用**，并**可供****弃用**。|
 |targetTypes|String collection|架构扩展适用的支持扩展的 Microsoft Graph 类型集。  仅允许进行累加性更改。|
 
 ## <a name="response"></a>响应
