@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 2264b407dc6a39e4f31f75674572c0f02d0cb482
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 3d0be37be4e95d7bb4a484d87e8b79ac91428a56
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35725792"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44900267"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/riskDetections/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3')
+let res = await client.api('/riskDetections')
     .version('beta')
     .get();
 
