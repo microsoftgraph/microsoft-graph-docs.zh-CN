@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 316c7abc18e6631140ebd3699138bc0422dc6ea3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5f10c39cbb53da9329d11ee0724f716c28871813
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511381"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44892456"
 ---
 # <a name="notebook-copynotebook"></a>笔记本： copyNotebook
 
@@ -19,7 +19,7 @@ ms.locfileid: "42511381"
 对于复制操作，请遵循异步调用模式：首先调用复制操作，然后轮询操作终结点以获取结果。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -37,7 +37,7 @@ POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| Authorization  | string  | Bearer {token}. Required. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
@@ -45,12 +45,12 @@ POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|groupId|String|要复制到的组的 id。 仅在复制到 Office 365 组时使用。|
-|renameAs|字符串|副本的名称。 默认值为现有项目的名称。 |
+|groupId|String|要复制到的组的 id。 仅在复制到 Microsoft 365 组时使用。|
+|renameAs|String|副本的名称。 默认值为现有项目的名称。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将`202 Accepted`返回响应代码和`Operation-Location`标头。 轮询操作-位置终结点以[获取复制操作的状态](onenoteoperation-get.md)。
+如果成功，此方法将返回 `202 Accepted` 响应代码和 `Operation-Location` 标头。 轮询操作-位置终结点以[获取复制操作的状态](onenoteoperation-get.md)。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

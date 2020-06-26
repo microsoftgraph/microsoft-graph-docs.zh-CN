@@ -1,24 +1,24 @@
 ---
 title: 终结点资源类型
-description: '终结点表示与实体相关联的资源的 Url。  例如，在创建新的 Office 365 组时，还会创建其他资源作为 Office 365 组的一部分。 其中包括类似于对话的组邮箱和文档和文件的组 OneDrive 文件夹等内容。 有关这些 Office 365 组资源的详细信息（包括其关联的资源 Url）现在可以使用组资源类型中的*终结点*导航进行读取。 这样，应用程序可以了解这些资源，甚至可以在自己的体验中嵌入资源 URL 体验。 '
+description: '终结点表示与实体相关联的资源的 Url。  例如，在创建新的 Microsoft 365 组时，还会创建其他资源作为 Microsoft 365 组的一部分。 其中包括类似于对话的组邮箱和文档和文件的组 OneDrive 文件夹等内容。 有关这些 Microsoft 365 组资源的详细信息（包括其关联的资源 Url）现在可以使用组资源类型中的*终结点*导航进行读取。 这样，应用程序可以了解这些资源，甚至可以在自己的体验中嵌入资源 URL 体验。 '
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 36c69a616cfd1d1aa531f42e9622b4f0c63ec83d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 77a0ddc0a91f1269ed5e62393c32b85af49264aa
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499391"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44893849"
 ---
 # <a name="endpoint-resource-type"></a>终结点资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-终结点表示与实体相关联的资源的 Url。  例如，在创建新的 Office 365 组时，还会创建其他资源作为 Office 365 组的一部分。 其中包括类似于对话的组邮箱和文档和文件的组 OneDrive 文件夹等内容。 有关这些 Office 365 组资源的详细信息（包括其关联的资源 Url）现在可以使用组资源类型中的*终结点*导航进行读取。 这样，应用程序可以了解这些资源，甚至可以在自己的体验中嵌入资源 URL 体验。 
+终结点表示与实体相关联的资源的 Url。  例如，在创建新的 Microsoft 365 组时，还会创建其他资源作为 Microsoft 365 组的一部分。 其中包括类似于对话的组邮箱和文档和文件的组 OneDrive 文件夹等内容。 有关这些 Microsoft 365 组资源的详细信息（包括其关联的资源 Url）现在可以使用组资源类型中的*终结点*导航进行读取。 这样，应用程序可以了解这些资源，甚至可以在自己的体验中嵌入资源 URL 体验。 
 
 ## <a name="methods"></a>方法
 
@@ -34,7 +34,7 @@ ms.locfileid: "42499391"
 | id             | String  | 终结点的唯一标识符;主键. 不可为 null。 只读。|
 | providerId     | String  | 发布基础服务的应用程序 id。 不可为 null。 只读。|
 | providerName   | String  | 发布基础服务的名称。 只读。|
-| providerResourceId|String| 对于 Office 365 组，此设置为资源的已知名称（例如，FeedURL 等）。 不可为 null。 只读。|
+| providerResourceId|String| 对于 Microsoft 365 组，此设置为资源的已知名称（例如，FeedURL 等）。 不可为 null。 只读。|
 | url            | String  | 已发布资源的 URL。 不可为 null。 只读。|
 
 ## <a name="relationships"></a>关系
