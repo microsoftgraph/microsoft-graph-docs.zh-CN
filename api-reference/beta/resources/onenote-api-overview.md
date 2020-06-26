@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: conceptualPageType
-ms.openlocfilehash: 85d66e33df5c168c212225bb8145268f3b98ea25
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 07b8fdf5486eee041a40b7bc6dd3169ac1af8761
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353460"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896838"
 ---
 # <a name="use-the-onenote-rest-api"></a>使用 OneNote REST API
 
@@ -29,7 +29,7 @@ URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本：
 - `v1.0` 用于稳定的生产代码。
 - `beta` 用于试用正在开发的功能。 Beta 终结点中的特性和功能可能改变；不推荐将其用于生产代码中。
 
-位置可以是 Office 365 或消费者版 OneDrive 上的用户笔记本，还可以是 Office 365 上的组笔记本或 SharePoint 站点托管的团队笔记本。 
+Microsoft 365 上的位置可以是 Microsoft 365 或消费者 OneDrive、组笔记本或 SharePoint 网站托管的团队笔记本上的用户笔记本。 
 
 ![OneNote API 开发堆栈](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/onenote-dev-diagram.png)
 

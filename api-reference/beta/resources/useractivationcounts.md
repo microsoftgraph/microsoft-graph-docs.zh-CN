@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 91366f9d2b2308c997c111123d856581db7c00c6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6433c1680630b5805cd18a22e550e58a51bcefbc
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43384952"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898301"
 ---
 # <a name="useractivationcounts-resource-type"></a>userActivationCounts 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "43384952"
 
 | 属性          | 类型   | 说明                              |
 | :---------------- | :----- | ---------------------------------------- |
-| productType       | 字符串 | 产品类型，如 "Office 365 专业增强版"、"Project Client" 或 "Visio Pro for Office 365"。 |
+| productType       | String | 产品类型，如 "Microsoft 365 专业增强版" 或 "Project Client"。 |
 | lastActivatedDate | 日期   | 最新激活的日期。       |
 | 时间           | Int64  | Windows 上的激活计数。 此数字包括任何 Windows 计算机上的每次激活。 |
 | mac               | Int64  | Mac OS 上的激活计数。          |

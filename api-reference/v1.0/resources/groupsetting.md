@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 5e8e890e03a3af81a7fcdbdf5c86e203ae702e81
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 162230dc7a197d9f7b927a0b25be734834a5322b
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125006"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896929"
 ---
 # <a name="groupsetting-resource-type"></a>groupSetting 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "43125006"
 
 组设置控制诸如组显示名称阻止的单词列表的行为，或者是否允许来宾用户成为组所有者。
 
-可以基于可用的[groupSettingTemplates](groupsettingtemplate.md)创建组设置，并将其从预设默认值更改为。 这些设置管理租户级或特定组的组行为。 当同时在租户范围和特定组中定义相同设置时，组级别设置将覆盖租户范围内的设置。  例如，租户范围内的设置可能会允许来宾受到现有组成员的邀请，但单个组设置可以覆盖，而不允许由组成员邀请来宾。 组设置仅控制 Office 365 组的行为。
+可以基于可用的[groupSettingTemplates](groupsettingtemplate.md)创建组设置，并将其从预设默认值更改为。 这些设置管理租户级或特定组的组行为。 当同时在租户范围和特定组中定义相同设置时，组级别设置将覆盖租户范围内的设置。  例如，租户范围内的设置可能会允许来宾受到现有组成员的邀请，但单个组设置可以覆盖，而不允许由组成员邀请来宾。 组设置仅控制 Microsoft 365 组的行为。
 
 ## <a name="methods"></a>方法
 

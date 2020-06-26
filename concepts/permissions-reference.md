@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: f84aafaada0e217614fefa9eb9346ad8583e5970
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 0ed8ed915d69945d2eb9666448c56b8d23121320
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863745"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898084"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -789,13 +789,13 @@ Files.ReadWrite.AppFolder 委派权限仅适于个人帐户，并仅用于访问
 
 Microsoft 个人帐户不支持组功能。
 
-对于 Office 365 组，组权限授予应用对组内容的访问权限；例如对话、文件、注释等。
+对于 Microsoft 365 组，组权限授予应用程序对组内容的访问权限;例如，对话、文件、便笺等。
 
 For application permissions, there are some limitations for the APIs that are supported. For more information, see [known issues](known-issues.md).
 
 In some cases, an app may need [Directory permissions](#directory-permissions) to read some group properties like `member` and `memberOf`. For example, if a group has a one or more [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) as members, the app will need effective permissions to read service principals through being granted one of the _Directory.\*_ permissions, otherwise Microsoft Graph will return an error. (In the case of delegated permissions, the signed-in user will also need sufficient privileges in the organization to read service principals.) The same guidance applies for the `memberOf` property, which can return [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta).
 
-要设置 Office 365 组的 **preferredDataLocation** 属性，应用需要 Directory.ReadWrite.All 权限。 当处于多地理位置环境中的用户创建 Office 365 组时，该组的 **preferredDataLocation** 值将自动设置为该用户所使用的值。 有关组的首选数据位置的详细信息，请参阅[使用特定的 PDL 创建 Office 365 组](https://docs.microsoft.com/office365/enterprise/multi-geo-add-group-with-pdl)。
+若要设置 Microsoft 365 组的**preferredDataLocation**属性，应用程序需要具有目录 ReadWrite 的所有权限。 在多地理位置环境中的用户创建 Microsoft 365 组时，会自动将该组的**preferredDataLocation**值设置为用户的。 有关组的首选数据位置的详细信息，请参阅[Create a Microsoft 365 group with a 特定的 PDL](https://docs.microsoft.com/office365/enterprise/multi-geo-add-group-with-pdl)。
 
 Group permissions are used to control access to [Microsoft Teams](/graph/api/resources/teams-api-overview) resources and APIs. Personal Microsoft accounts are not supported.
 
@@ -803,10 +803,10 @@ Group permissions are also used to control access to [Microsoft Planner](/graph/
 
 
 ### <a name="example-usage"></a>用法示例
-#### <a name="delegated"></a>委派
+#### <a name="delegated"></a>Delegated
 
-* _Group.Read.All_：读取登录用户所属的全部 Office 365 组 (`GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`)。
-* _Group.Read.All_：读取诸如对话之类的所有 Office 365 组内容 (`GET /groups/{id}/conversations`)。
+* _Group. read. all_：读取已登录用户是其成员的所有 Microsoft 365 组（ `GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')` ）。
+* _Group。 read. all_：读取所有 Microsoft 365 组内容，如对话（ `GET /groups/{id}/conversations` ）。
 * _Group.ReadWrite.All_：更新组属性，如照片 (`PUT /groups/{id}/photo/$value`)。
 * _GroupMember.ReadWrite.All_：更新组成员 (`POST /groups/{id}/members/$ref`)。
 > **注意：** 这还要求 _User.ReadBasic.All_ 读取要作为成员添加的用户。
@@ -814,7 +814,7 @@ Group permissions are also used to control access to [Microsoft Planner](/graph/
 #### <a name="application"></a>应用程序
 
 * _Group.Read.All_：查找名称以“Sales”开头的所有组 (`GET /groups?$filter=startswith(displayName,'Sales')`)。
-* _Group.ReadWrite.All_：守护程序服务在 Office 365 组日历上新建事件 (`POST /groups/{id}/events`)。
+* _Group. All_： Daemon 服务在 Microsoft 365 组的日历（）上创建新事件 `POST /groups/{id}/events` 。
 * _Group.Create_：创建新组 (`POST /groups`)。
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
@@ -1063,12 +1063,12 @@ _Mail.Read.Shared_, _Mail.ReadWrite.Shared_, and _Mail.Send.Shared_ are only val
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _Member.Read.Hidden_ | 读取所有隐藏成员 | 允许应用在没有登录用户的情况下读取隐藏的组和管理单元中的成员。 | 可访问 |
+| _Member.Read.Hidden_ | 读取所有隐藏成员 | 允许应用在没有登录用户的情况下读取隐藏的组和管理单元中的成员。 | 是 |
 
 ### <a name="remarks"></a>注释
 _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 
-Membership in some Office 365 groups can be hidden. This means that only the members of the group can view its members. This feature can be used to help comply with regulations that require an organization to hide group membership from outsiders (for example, an Office 365 group that represents students enrolled in a class).
+某些 Microsoft 365 组中的成员身份可以被隐藏。 这意味着只有组的成员可以查看其成员。 此功能可用于帮助符合要求组织隐藏来自外部的组成员身份的法规（例如，Microsoft 365 组代表在课堂中注册的学生）。
 
 ### <a name="example-usage"></a>用法示例
 
@@ -1410,17 +1410,17 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Reports.Read.All_ | 读取所有使用情况报告 | 允许应用代表已登录的用户读取所有服务使用情况报告。 提供使用情况报告的服务包括 Office 365 和 Azure Active Directory。 | 是 | 否 |
+| _Reports.Read.All_ | 读取所有使用情况报告 | 允许应用代表已登录的用户读取所有服务使用情况报告。 提供使用率报告的服务包括 Microsoft 365 和 Azure Active Directory。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _Reports.Read.All_ | 读取所有使用情况报告 | Allows an app to read all service usage reports without a signed-in user. Services that provide usage reports include Office 365 and Azure Active Directory. | 可访问 |
+| _Reports.Read.All_ | 读取所有使用情况报告 | 允许应用在没有登录用户的情况下读取所有服务使用情况报告。 提供使用率报告的服务包括 Microsoft 365 和 Azure Active Directory。 | 可访问 |
 
 ### <a name="remarks"></a>注解
 - 这些报告权限仅对工作或学校帐户有效。
-- 若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Office 365 使用情况报告](reportroot-authorization.md)。
+- 若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 For api 以读取 Microsoft 365 使用情况报告](reportroot-authorization.md)。
 
 ### <a name="example-usage"></a>用法示例
 
@@ -1428,7 +1428,7 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 
 * _Reports.Read.All_：读取电子邮件应用程序在 7 天内的使用情况详情报告 (`GET /reports/EmailAppUsage(view='Detail',period='D7')/content`)。
 * _Reports.Read.All_：读取电子邮件在日期“2017-01-01”的的活动详情报告 (`GET /reports/EmailActivity(view='Detail',data='2017-01-01')/content`)。
-* _Reports.Read.All_：读取 Office 365 激活详情报告 (`GET /reports/Office365Activations(view='Detail')/content`)。
+* _Reports。 read. All_： Read Microsoft 365 激活详细信息报告（ `GET /reports/Office365Activations(view='Detail')/content` ）。
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
@@ -1492,7 +1492,7 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
-| _ExternalItem.Read.All_ | 读取外部数据 | 允许应用读取通过 Microsoft 搜索索引 API 引入的外部数据| 是 | No |
+| _ExternalItem.Read.All_ | 读取外部数据 | 允许应用读取通过 Microsoft 搜索索引 API 引入的外部数据| 是 | 否 |
 
 ### <a name="remarks"></a>注解
 搜索权限仅对工作或学校帐户有效。
@@ -1515,12 +1515,12 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _SecurityEvents.Read.All_        |  读取组织的安全事件 | 允许应用代表已登录用户读取组织的安全事件。 | 是  | No |
-| _SecurityEvents.ReadWrite.All_   | 读取和更新组织的安全事件。 | 允许应用代表已登录用户读取组织的安全事件。 还允许应用代表已登录用户更新安全事件中的可编辑属性。 | 是  | No |
-| _SecurityActions.Read.All_        |  读取组织的安全措施 | 允许应用代表登录的用户读取组织的安全措施。 | 是  | No |
-| _SecurityActions.ReadWrite.All_   | 读取和更新组织的安全措施 | 允许应用代表登录的用户读取组织的安全措施。  | 是  | No |
+| _SecurityEvents.Read.All_        |  读取组织的安全事件 | 允许应用代表已登录用户读取组织的安全事件。 | 是  | 否 |
+| _SecurityEvents.ReadWrite.All_   | 读取和更新组织的安全事件。 | 允许应用代表已登录用户读取组织的安全事件。 还允许应用代表已登录用户更新安全事件中的可编辑属性。 | 是  | 否 |
+| _SecurityActions.Read.All_        |  读取组织的安全措施 | 允许应用代表登录的用户读取组织的安全措施。 | 是  | 否 |
+| _SecurityActions.ReadWrite.All_   | 读取和更新组织的安全措施 | 允许应用代表登录的用户读取组织的安全措施。  | 是  | 否 |
 | _ThreatIndicators.ReadWrite.OwnedBy_   | 管理此应用创建或拥有的威胁指标 |允许应用代表已登录的用户创建威胁指标和完全管理这些威胁指标（阅读、更新和删除）。  | 是  | 否 |
-| _ThreatIndicators.Read.All_   | 读取组织的威胁指示器 | 允许应用代表登录的用户读取组织的安全措施。  | 是  | No |
+| _ThreatIndicators.Read.All_   | 读取组织的威胁指示器 | 允许应用代表登录的用户读取组织的安全措施。  | 是  | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -1675,7 +1675,7 @@ _Shared_ permissions are currently only supported for work or school accounts. E
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _TeamsApp_ （已**弃用**）| 读取所有安装的 Teams 应用 | 允许应用读取为已登录用户安装的 Teams 应用以及该用户所属的所有团队中的相关应用。 不允许读取特定于应用程序的设置。 | 是 | No |
-| _TeamsApp_ （已**弃用**）| 管理所有 Teams 应用 | 允许应用代表已登录的用户以及该用户所属团队来阅读、安装、升级和卸载 Teams 应用。 不允许读取或写入特定于应用程序的设置。 | 是 | No |
+| _TeamsApp_ （已**弃用**）| 管理所有 Teams 应用 | 允许应用代表已登录的用户以及该用户所属团队来阅读、安装、升级和卸载 Teams 应用。 不允许读取或写入特定于应用程序的设置。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -2029,8 +2029,8 @@ This section shows some common scenarios that target [user](/graph/api/resources
 | **涉及组的应用任务**  |  **必需的权限** |  **权限字符串** |
 |:-------------------------------|:---------------------|:---------------|
 | 应用想要读取基本组信息（仅限显示名称和图片），例如展示组挑选经验  | _Group.Read.All_  | 读取所有组|
-| App wants to read all content in all Office 365 groups, including files, conversations.  It also needs to show group memberships, be able to update group memberships, (if owner).  |  _Group.Read.All_ | 读取所有网站集中的项、读取所有组|
-| App wants to read and write all content in all Office 365 groups, including files, conversations.  It also needs to show group memberships, be able to update group memberships, (if owner).  |   _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  读取和写入所有组、编辑或删除所有网站集中的项 |
-| App wants to discover (find) an Office 365 group. It allows the user to search for a particular group and choose one from the enumerated list to allow the user to join the group.     | _Group.ReadWrite.All_ | 读取和写入所有组|
+| 应用想要读取所有 Microsoft 365 组中的所有内容，包括文件、对话。  它还需要显示组成员身份，能够更新组成员身份（如果是所有者）。  |  _Group.Read.All_ | 读取所有网站集中的项、读取所有组|
+| 应用想要读取和写入所有 Microsoft 365 组（包括文件、对话）中的所有内容。  它还需要显示组成员身份，能够更新组成员身份（如果是所有者）。  |    _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  读取和写入所有组、编辑或删除所有网站集中的项 |
+| 应用想要发现（查找） Microsoft 365 组。 它允许用户搜索特定组，然后从枚举列表中选择一个用户以允许该用户加入组。   | _Group.ReadWrite.All_ | 读取和写入所有组|
 | 应用想要通过 AAD Graph 创建一个组 |   _Group.ReadWrite.All_ | 读取和写入所有组|
 

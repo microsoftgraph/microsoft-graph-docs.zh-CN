@@ -5,23 +5,23 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: b8e3e90424df29218de7a136e4922df59c4af0b5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4841377ba8b9aa5a94ca97b50847517be5b2f0cc
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522468"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898070"
 ---
 # <a name="office365activeusercounts-resource-type"></a>office365ActiveUserCounts 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 ## <a name="properties"></a>属性
 
 | 属性          | 类型   | 说明                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | 日期   | 内容的最新日期。          |
-| office365         | Int64  | Office 365 中的活动用户数。 此数目包括 Exchange、OneDrive、SharePoint、Skype For Business、Yammer 和 Microsoft 团队中的所有活动用户。 您可以在各自的属性说明中查找每个产品的活动用户的定义。 |
+| office365         | Int64  | Microsoft 365 中的活动用户数。 此数目包括 Exchange、OneDrive、SharePoint、Skype For Business、Yammer 和 Microsoft 团队中的所有活动用户。 您可以在各自的属性说明中查找每个产品的活动用户的定义。 |
 | 汇票          | Int64  | Exchange 中的活动用户数。 任何可以读取和发送电子邮件的用户都被视为活动用户。 |
 | For          | Int64  | OneDrive 中的活动用户数。 任何查看或编辑文件、内部或外部共享文件或已同步文件的用户都被视为活动用户。 |
 | sharePoint        | Int64  | SharePoint 中的活动用户数。 任何查看或编辑过文件、内部或外部共享文件、同步文件或查看 SharePoint 页面的用户都被视为活动用户。 |

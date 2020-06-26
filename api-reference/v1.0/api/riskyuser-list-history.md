@@ -1,0 +1,103 @@
+---
+title: 列表历史记录
+description: 从 "历史记录" 导航属性中获取 riskyUserHistoryItems。
+author: cloudhandler
+localization_priority: Normal
+ms.prod: microsoft-identity-platform
+doc_type: apiPageType
+ms.openlocfilehash: 212f10e5794a55dec925d1ec32c37abf9708700b
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897559"
+---
+# <a name="list-history"></a>列表历史记录
+命名空间：microsoft.graph
+
+从 "历史记录" 导航属性中获取 riskyUserHistoryItems。
+
+## <a name="permissions"></a>权限
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+
+|权限类型|权限（从最高特权到最低特权）|
+|:---|:---|
+|委派（工作或学校帐户） | IdentityRiskyUser.Read.All    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | IdentityRiskyUser.Read.All |
+
+## <a name="http-request"></a>HTTP 请求
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /identityProtection/riskyUsers/{riskyUserId}/history
+GET /identityProtection/riskyUsers/{riskyUserId}/history/{riskyUserHistoryItemId}/history
+```
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+
+## <a name="request-headers"></a>请求标头
+|名称|说明|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## <a name="request-body"></a>请求正文
+请勿提供此方法的请求正文。
+
+## <a name="response"></a>响应
+
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md)对象集合。
+
+## <a name="examples"></a>示例
+
+### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "get_riskyuserhistoryitem"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/{riskyUserId}/history
+```
+
+
+### <a name="response"></a>响应
+**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "collection(microsoft.graph.riskyUserHistoryItem)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.riskyUserHistoryItem",
+      "id": "5e1d812e-812e-5e1d-2e81-1d5e2e811d5e",
+      "isDeleted": "Boolean",
+      "isProcessing": "Boolean",
+      "riskLastUpdatedDateTime": "String (timestamp)",
+      "riskLevel": "String",
+      "riskState": "String",
+      "riskDetail": "String",
+      "userDisplayName": "String",
+      "userPrincipalName": "String",
+      "userId": "String",
+      "initiatedBy": "String",
+      "activity": {
+          "riskEventTypes": [],
+          "detail": "userPerformedSecuredPasswordReset"
+      }
+    }
+  ]
+}
+```
+

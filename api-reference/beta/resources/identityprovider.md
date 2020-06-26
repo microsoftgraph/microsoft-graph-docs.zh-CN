@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: Nickgmicrosoft
-ms.openlocfilehash: 91eb55c35a17393de623e2c9c5f99c7d3f43386a
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 1c71fc88b4365031a126ee5c45f59de25f5fa3d9
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199742"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897055"
 ---
 # <a name="identityprovider-resource-type"></a>identityProvider 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "43199742"
 * 用户使用使用者应用程序中的社交帐户进行注册并登录。 例如，应用程序可使用 Azure AD B2C 让用户能够通过 Facebook 帐户注册服务。
 * 用户将现有本地帐户链接到使用者应用程序中的社交帐户。 例如，用户已在应用程序中创建用户名和密码（本地帐户）。 之后，用户决定将现有本地帐户链接到其 Facebook 帐户，以便能使用 Facebook 进行登录。
 
-通过在 Azure AD B2C 中配置标识提供程序，可实现之后的 B2B 来宾方案。 例如，某组织在 Office 365 中具有需要与 Gmail 用户共享的资源。 Gmail 将使用其 Google 帐户凭据来验证和访问文档。
+通过在 Azure AD B2C 中配置标识提供程序，可实现之后的 B2B 来宾方案。 例如，组织在 Microsoft 365 中具有需要与 Gmail 用户共享的资源。 Gmail 将使用其 Google 帐户凭据来验证和访问文档。
 
 ## <a name="methods"></a>方法
 
@@ -45,7 +45,7 @@ ms.locfileid: "43199742"
 |clientSecret|字符串|是|No|应用程序的客户端密码。 这是向标识提供程序注册应用程序时获取的客户端密码。 这是只读的。 读取操作将返回“\*\*\*\*”。|
 |id|字符串|否|否|标识提供程序的 ID。|
 |name|字符串|否|否|标识提供程序的显示名称。|
-|type|字符串|是|否|标识提供程序类型。 它必须是下列值之一： <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>领英<li/>Facebook</ul>|
+|type|String|是|否|标识提供程序类型。 它必须是下列值之一： <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>领英<li/>Facebook</ul>|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>获取客户端 ID 和密码的位置
 

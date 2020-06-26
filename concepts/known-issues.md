@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 的已知问题。
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 98c61991ec99b1f7776c03f5fa5bc2400b5950a6
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: b02d38ac87f914b943d473b8e30b2e03151a4299
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744054"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897727"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -238,7 +238,7 @@ Also, only the API for core group administration and management supports access 
 
 ### <a name="policy"></a>策略
 
-使用 Microsoft Graph 创建并命名 Office 365 组会忽略通过 Outlook Web App 配置的所有 Office 365 组策略。
+使用 Microsoft Graph 创建并命名 Microsoft 365 组将绕过通过 Outlook Web App 配置的任何 Microsoft 365 组策略。
 
 ### <a name="setting-the-allowexternalsenders-property"></a>设置 allowExternalSenders 属性
 
@@ -342,12 +342,12 @@ Individual requests can depend on other individual requests. Currently, requests
 
 ### <a name="no-instant-access-after-creation"></a>创建后无法即时访问
 
-Users can be created immediately through a POST on the user entity. An Office 365 license must first be assigned to a user, in order to get access to Office 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a 404 HTTP error response.
+可通过在用户实体上使用 POST 来即时创建用户。 必须首先向用户分配 Microsoft 365 许可证，才能访问 Microsoft 365 服务。 尽管如此，由于服务具有分散特性，因此用户可能需要先等待 15 分钟，然后才能通过 Microsoft Graph API 使用文件、邮件和事件实体。 在此期间，应用会收到一个 404 HTTP 错误响应。
 
 ### <a name="photo-restrictions"></a>照片限制
 
-Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Office 365 unified API preview, or the Azure AD Graph, or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user?view=graph-rest-1.0) resource.
-Failure to read or update a photo, in this case, would result in the following error:
+只有当用户有邮箱时，才能读取和更新用户的个人资料照片。 此外，以前使用**thumbnailPhoto**属性*存储的任何*照片（使用 Azure AD Graph 或通过 AD Connect 同步）都无法再通过[用户](/graph/api/resources/user?view=graph-rest-1.0)资源的 Microsoft Graph **photo**属性进行访问。
+在这种情况下，无法读取或更新照片会生成以下错误：
 
 ```javascript
 {

@@ -2,12 +2,12 @@
 title: 区域云部署
 description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。
 author: arpitha-dhanapathi
-ms.openlocfilehash: b437f4d3c33a42a486bec2815ff88af050c78921
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 7dfb8548df8a8df9cd6babded6202e8289d8c577
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845489"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897244"
 ---
 # <a name="national-cloud-deployments"></a>区域云部署
 
@@ -17,7 +17,7 @@ ms.locfileid: "44845489"
 
 - Microsoft Cloud for US Government
 - Microsoft 云德国
-- 由中国的世纪互联运营的 Azure 和 Office 365
+- 由中国的世纪互联运营的 Azure 和 Microsoft 365
 
 每个国家/地区云环境都是唯一的，与 Microsoft 全局环境不同。 在开发适用于国家/地区云环境的应用程序时，请务必注意其中的一些关键区别;例如，注册应用程序、获取令牌和调用 Microsoft Graph API 可能会有所不同。
 
@@ -56,9 +56,9 @@ ms.locfileid: "44845489"
 > [!IMPORTANT]
 > 对于美国政府版中的应用程序：
 >
-> - 如果你在 Office 365 GCC 环境中工作，请继续使用全球终结点： `https://graph.microsoft.com` 和 `https://portal.azure.com` 。
-> - 如果使用的是 Office 365 GCC 高环境，请使用： `https://portal.azure.us` 和 `https://graph.microsoft.us` 。
-> - 如果使用的是 Office 365 DoD 环境，请使用 `https://portal.azure.us` 和 `https://dod-graph.microsoft.us` 。
+> - 如果你正在使用 Microsoft 365 GCC 环境，请继续使用全球终结点： `https://graph.microsoft.com` 和 `https://portal.azure.com` 。
+> - 如果使用的是 Microsoft 365 GCC 高环境，请使用： `https://portal.azure.us` 和 `https://graph.microsoft.us` 。
+> - 如果使用的是 Microsoft 365 DoD 环境，请使用 `https://portal.azure.us` 和 `https://dod-graph.microsoft.us` 。
 >
 > 在不久的将来，使用全球终结点访问美国政府数据将被禁用。
 
@@ -102,8 +102,8 @@ ms.locfileid: "44845489"
 
 若要了解有关国家/地区云的详细信息，请参阅下列主题：
 - [Microsoft 国家/地区群](https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud)
-- [适用于美国政府的 Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
-- [由世纪互联运营的 Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
+- [适用于美国政府的 Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
+- [由世纪互联运营的 Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
 - [Office 365 德国版](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
 - [Azure 政府](https://azure.microsoft.com/global-infrastructure/government/)
 - [Azure 中国世纪互联](https://docs.microsoft.com/azure/china/)

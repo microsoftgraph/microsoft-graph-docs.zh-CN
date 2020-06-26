@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: fc46c88d2ec676ac313602c279683da2c483deba
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 036e86dba81a8581cd23a494f63998732127f2d6
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336718"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898007"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -81,7 +81,7 @@ ms.locfileid: "44336718"
 | 属性     | 类型 |说明|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| 如果服务主体帐户已启用，则为 **true**；否则，为 **false**。|
-| addIns | [addIn](addin.md)集合 | 定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，呈现文件流的应用程序可能会为其“FileHandler”功能[设置 addIns 属性](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online)。 这将使 Office 365 之类的服务在用户正在处理的文档上下文中调用应用程序。|
+| addIns | [addIn](addin.md)集合 | 定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，呈现文件流的应用程序可能会为其“FileHandler”功能[设置 addIns 属性](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online)。 这将使 Microsoft 365 等服务能够在用户正在使用的文档的上下文中调用应用程序。|
 |alternativeNames|String collection| 用于按订阅检索服务主体，标识[托管标识](https://aka.ms/azuremanagedidentity)的资源组和完整资源 id。|
 |appDisplayName|String|关联应用程序公开的显示名称。|
 |appId|String|关联应用程序的唯一标识符（其 **appId** 属性）。|
@@ -96,11 +96,11 @@ ms.locfileid: "44336718"
 | id | String | 服务主体的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 |
 | info | [informationalUrl](informationalurl.md) | 获取的应用程序的基本配置文件信息，如应用程序的营销、支持、服务条款和隐私声明 Url。 服务条款和隐私声明通过用户同意体验展示给用户。 有关详细信息，请参阅[如何：为已注册的 Azure AD 应用添加服务条款和隐私声明](https://docs.microsoft.com/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement)。 |
 |keyCredentials|[keyCredential](keycredential.md) 集合|与服务帐户关联的密钥凭据集合。 不可为 null。            |
-|loginUrl|String|指定服务提供程序将用户重定向到 Azure AD 以进行身份验证的 URL。 Azure AD 使用 URL 从 Office 365 或 Azure AD My 应用程序启动应用程序。 当为空时，Azure AD 将针对使用[基于 SAML 的单一登录](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso)配置的应用程序执行 IdP 启动的登录。 用户从 Office 365、Azure AD My Apps 或 Azure AD SSO URL 启动应用程序。|
+|loginUrl|String|指定服务提供程序将用户重定向到 Azure AD 以进行身份验证的 URL。 Azure AD 使用 URL 从 Microsoft 365 或 Azure AD My 应用启动应用程序。 当为空时，Azure AD 将针对使用[基于 SAML 的单一登录](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso)配置的应用程序执行 IdP 启动的登录。 用户从 Microsoft 365、Azure AD My 应用或 Azure AD SSO URL 启动应用程序。|
 |logoutUrl|String| 指定将由 Microsoft 的授权服务用来使用 OpenId Connect[前通道](https://openid.net/specs/openid-connect-frontchannel-1_0.html)、[后信道](https://openid.net/specs/openid-connect-backchannel-1_0.html)或 SAML 注销协议注销用户的 URL。|
 |notificationEmailAddresses|String collection|指定当活动证书接近到期日期时，Azure AD 发送通知的电子邮件地址的列表。 这仅适用于用于对 Azure AD 库应用程序颁发的 SAML 令牌进行签名的证书。|
 |passwordCredentials|[passwordCredential](passwordcredential.md) 集合|与服务帐户关联的密码凭据集合。 不可为 null。 |
-|preferredSingleSignOnMode|string|指定为此应用程序配置的单一登录模式。 Azure AD 使用首选的单一登录模式，从 Office 365 或 Azure AD My Apps 启动应用程序。 受支持的值为 password、saml、external 和 oidc。|
+|preferredSingleSignOnMode|string|指定为此应用程序配置的单一登录模式。 Azure AD 使用首选的单一登录模式，从 Microsoft 365 或 Azure AD My 应用启动应用程序。 受支持的值为 password、saml、external 和 oidc。|
 |preferredTokenSigningKeyEndDateTime|DateTimeOffset|指定用于令牌签名的 keyCredential 的到期日期，由**preferredTokenSigningKeyThumbprint**标记。|
 |preferredTokenSigningKeyThumbprint|String|仅供内部使用。 请勿写入属性，否则将依赖该属性。 可能会在未来版本中删除。 |
 |publishedPermissionScopes|[permissionScope](permissionscope.md)集合|由应用程序公开的委派权限。 有关详细信息，请参阅[application](application.md) entity **api**属性上的**oauth2PermissionScopes**属性。 不可为 null。|

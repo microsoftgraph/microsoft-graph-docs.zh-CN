@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 98af5eb0812e0e3857e154bc51a663038b1230a7
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: ae7c770d97640f6af63dcb594b7f624fb119f1e6
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383705"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896789"
 ---
 # <a name="approleassignment-resource-type"></a>appRoleAssignment 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "44383705"
 
 如果已分配给主体的[应用程序角色](approle.md)具有非空**值**属性，则会将其包含在使用者是分配主体的标记的**角色**声明中（例如，SAML 响应、ID 令牌、标识登录用户的访问令牌或标识服务主体的访问令牌）。 应用程序和 Api 将这些声明用作其授权逻辑的一部分。
 
-可以直接向用户分配应用角色。 如果将某个应用程序角色分配给某个组，则会将该组的直接成员视为已分配应用程序角色。 为用户分配应用程序的应用程序角色时，将在用户的[MyApps 门户](https://docs.microsoft.com/azure/active-directory/user-help/my-apps-portal-end-user-access)和[Office 365 应用启动器](https://support.office.com/article/meet-the-office-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a)中显示该应用程序的图块。
+可以直接向用户分配应用角色。 如果将某个应用程序角色分配给某个组，则会将该组的直接成员视为已分配应用程序角色。 为用户分配应用程序的应用程序角色时，将在用户的[MyApps 门户](https://docs.microsoft.com/azure/active-directory/user-help/my-apps-portal-end-user-access)和[Microsoft 365 应用启动器](https://support.office.com/article/meet-the-office-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a)中显示该应用程序的图块。
 
 分配的主体是服务主体的应用程序角色分配是[仅限应用的权限](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types)授予。 当用户或管理员同意到仅应用程序的权限时，将创建一个应用程序角色分配，其中分配的主体是客户端应用程序的服务主体，而资源是目标 API 的服务主体。
 

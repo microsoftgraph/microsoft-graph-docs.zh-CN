@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 7772fb1de249c84785e5b19df03eab0b37ac4b83
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 245f5b760d4a755162107267b1836c5760a1c22a
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511101"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898336"
 ---
 # <a name="page-copytosection"></a>页面： copyToSection
 
@@ -19,7 +19,7 @@ ms.locfileid: "42511101"
 对于复制操作，请遵循异步调用模式：首先调用复制操作，然后轮询操作终结点以获取结果。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -37,7 +37,7 @@ POST /groups/{id}/onenote/pages/{id}/copyToSection
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| Authorization  | string  | Bearer {token}. Required. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
@@ -45,12 +45,12 @@ POST /groups/{id}/onenote/pages/{id}/copyToSection
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|groupId|String|要复制到的组的 id。 仅在复制到 Office 365 组时使用。|
-|id|字符串|必需。 目标部分的 id。|
+|groupId|String|要复制到的组的 id。 仅在复制到 Microsoft 365 组时使用。|
+|id|String|必填。 目标部分的 id。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将`202 Accepted`返回响应代码和`Operation-Location`标头。 轮询操作-位置终结点以[获取复制操作的状态](onenoteoperation-get.md)。
+如果成功，此方法将返回 `202 Accepted` 响应代码和 `Operation-Location` 标头。 轮询操作-位置终结点以[获取复制操作的状态](onenoteoperation-get.md)。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

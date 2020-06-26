@@ -1,22 +1,22 @@
 ---
 title: 将 Microsoft Graph API 与 Microsoft Teams 结合使用
-description: Microsoft Teams 是 Office 365 中基于聊天的工作区，可提供对特定于团队的日历、文件、OneNote 笔记、规划器计划等对象的内置访问权限。
+description: Microsoft 团队是 Microsoft 365 中基于聊天的工作区，可提供对特定于团队的日历、文件、OneNote 笔记、Planner 计划等的内置访问权限。
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 968ce6806da2d14bd2c6cb53d749a43694bcf0bb
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 98e50a32ba363a4eb7fc9f6ecd26e77e9cf60c85
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491901"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897979"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Teams 是 Office 365 中基于聊天的工作区，可提供对特定于团队的日历、文件、OneNote 笔记、规划器计划、排班计划等对象的内置访问权限。
+Microsoft 团队是 Microsoft 365 中基于聊天的工作区，可提供对特定于团队的日历、文件、OneNote 笔记、Planner 计划、倒班计划等的内置访问权限。
 
 ## <a name="key-resources-in-microsoft-teams"></a>Microsoft Teams 中的重要资源
 
@@ -48,7 +48,7 @@ Microsoft Teams 的已测试性能和容量限制将记录在 [Microsoft Teams �
 
 ## <a name="teams-and-groups"></a>用户和组
 
-在 Microsoft Graph 中，Microsoft Teams 由[组](../resources/group.md)资源表示。 Microsoft Teams 和 Office 365 组均可满足组协作的各种需求。 几乎所有基于组的功能都适用于 Microsoft Teams 和 Office 365 组，例如组日历、文件、笔记、照片、计划等。 [团队](team.md)与 Office 365 组之间的主要区别在于成员之间的通信模式。 团队成员的通信方式是在特定团队的上下文中进行持久聊天。 Office 365 组成员通过组对话进行通信，它们是在 Outlook 的组上下文中发生的电子邮件对话。
+在 Microsoft Graph 中，Microsoft Teams 由[组](../resources/group.md)资源表示。 Microsoft 团队和 Microsoft 365 组都满足了组协作的各种需求。 几乎所有基于组的功能都适用于 Microsoft 团队和 Microsoft 365 组，例如组日历、文件、便笺、照片、计划等。 [团队](team.md)和 Microsoft 365 组之间的主要区别是成员之间的通信模式。 团队成员的通信方式是在特定团队的上下文中进行持久聊天。 Microsoft 365 组成员通过组对话进行通信，这是在 Outlook 中的组上下文中发生的电子邮件对话。
 
 具有团队的任何组都具有 **resourceProvisioningOptions** 属性，它包含“团队”。
 
@@ -58,7 +58,7 @@ Microsoft Teams 的已测试性能和容量限制将记录在 [Microsoft Teams �
 以下是团队和组之间的 API 级别的区别：
 
 - 持久聊天仅适用于 Microsoft Teams。 此功能由[频道](../resources/channel.md)和 [chatMessage](../resources/chatmessage.md) 资源按层次结构表示。
-- 组对话仅适用于 Office 365 组。 此功能由[对话](../resources/conversation.md)、[conversationThread](../resources/conversationthread.md) 和[帖子](../resources/post.md)资源按层次结构表示。
+- 组对话仅适用于 Microsoft 365 组。 此功能由[对话](../resources/conversation.md)、[conversationThread](../resources/conversationthread.md) 和[帖子](../resources/post.md)资源按层次结构表示。
 - [列出加入的团队](../api/user-list-joinedteams.md)方法仅适用于 Microsoft Teams。
 - [呼叫和在线会议 API](./communications-api-overview.md) 仅适用于 Microsoft Teams。
 - 另请参阅[已知问题](/graph/known-issues)以了解这些 API。

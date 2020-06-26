@@ -10842,7 +10842,7 @@ items:
                     items:
                       - name: 获取使用率摘要
                         href: api/reportroot-getcredentialusagesummary.md
-          - name: Office 365 使用情况报告
+          - name: Microsoft 365 使用情况报告
             items:
               - name: 概述
                 href: resources/report.md
@@ -10895,7 +10895,7 @@ items:
                     href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
                   - name: 获取存储
                     href: api/reportroot-getmailboxusagestorage.md
-              - name: Office 365 激活
+              - name: Microsoft 365 激活
                 href: resources/office-365-activations-reports.md
                 items:
                   - name: 获取用户详细信息
@@ -10904,7 +10904,7 @@ items:
                     href: api/reportroot-getoffice365activationcounts.md
                   - name: 获取用户计数
                     href: api/reportroot-getoffice365activationsusercounts.md
-              - name: Office 365 活动用户
+              - name: Microsoft 365 活动用户
                 href: resources/office-365-active-users-reports.md
                 items:
                   - name: 获取用户详细信息
@@ -10913,7 +10913,7 @@ items:
                     href: api/reportroot-getoffice365activeusercounts.md
                   - name: 获取服务用户计数
                     href: api/reportroot-getoffice365servicesusercounts.md
-              - name: Office 365 组活动
+              - name: Microsoft 365 组活动
                 href: resources/office-365-groups-activity-reports.md
                 items:
                   - name: 获取组详细信息

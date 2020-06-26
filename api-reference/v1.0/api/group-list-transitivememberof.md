@@ -1,26 +1,26 @@
 ---
 title: 列表组可传递的 memberOf
-description: 获取组所属的组。  此操作是可传递的，还将包括此组嵌套成员的所有组。 与获取用户的 Office 365 组不同，这将返回所有类型的组，而不只是 Office 365 组。
+description: 获取组所属的组。  此操作是可传递的，还将包括此组嵌套成员的所有组。 与获取用户的 Microsoft 365 组不同，这将返回所有类型的组，而不仅仅是 Microsoft 365 组。
 author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6e887543fe02f79d20da83dd8bd3593aa147ca22
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: ba428fb4f0eb78171ac8f29e659047065148f592
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125153"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897853"
 ---
 # <a name="list-group-transitive-memberof"></a>列表组可传递的 memberOf
 
 命名空间：microsoft.graph
 
-获取组所属的组。  此操作是可传递的，还将包括此组嵌套成员的所有组。 与获取用户的 Office 365 组不同，这将返回所有类型的组，而不只是 Office 365 组。
+获取组所属的组。  此操作是可传递的，还将包括此组嵌套成员的所有组。 与获取用户的 Microsoft 365 组不同，这将返回所有类型的组，而不仅仅是 Microsoft 365 组。
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -42,7 +42,7 @@ GET /groups/{id}/transitiveMemberOf
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMemberOf
 ### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,18 +5,18 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: a74999a29c32ac82dc568df593f6df5e8f925f1b
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 0d1d1359a515d854b71fab5b01792d1e31843343
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124922"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896922"
 ---
 # <a name="groupsettingtemplate-resource-type"></a>groupSettingTemplate 资源类型
 
 命名空间：microsoft.graph
 
-组设置模板表示对租户可用的系统定义设置。 可以基于可用的**groupSettingTemplates**创建[组设置](groupsetting.md)，并将值更改为其预设默认值。 无法创建、更新或删除组设置模板。 这些设置可以表示租户范围的设置，也可以表示特定的组设置。 目前，仅有的可用模板适用于 Office 365 组，并包括一些设置，例如，用户是否可以创建组或邀请来自组织外部的来宾成为组的成员。
+组设置模板表示对租户可用的系统定义设置。 可以基于可用的**groupSettingTemplates**创建[组设置](groupsetting.md)，并将值更改为其预设默认值。 无法创建、更新或删除组设置模板。 这些设置可以表示租户范围的设置，也可以表示特定的组设置。 目前，仅有的可用模板适用于 Microsoft 365 组，并包括一些设置，例如，用户是否可以创建组或邀请来自组织外部的来宾成为组的成员。
 
 ## <a name="methods"></a>方法
 

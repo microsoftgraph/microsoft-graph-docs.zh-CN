@@ -3,12 +3,12 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 251d41dfae2aac6c15e26304a1f57f540bd65a82
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 607de64280dbf91939fe48b32bccee2f162812f1
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681625"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897314"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
 
@@ -63,7 +63,7 @@ Intune [4 月](changelog.md#april-2020)更新。
 ### <a name="reports--identity-and-access-reports"></a>报告 | 身份和访问报告
 [列出](/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) Active Directory 联合身份验证服务中配置的[依赖方](https://docs.microsoft.com/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts)。
 
-### <a name="reports--office-365-usage-reports"></a>报告 | Office 365 使用率报告
+### <a name="reports--microsoft-365-usage-reports"></a>报表 |Microsoft 365 使用情况报告
 查看 CSV 报告中的**会议创建**和**会议互动**数据，以查看[电子邮件活动计数](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta)、[电子邮件活动用户计数](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta)和[电子邮件活动用户详细信息](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta)。
 
 
@@ -88,7 +88,7 @@ Intune [4 月](changelog.md#april-2020)更新。
 - 使用 `User.ManageIdentities.All` 委托的权限，可允许应用读取、更新或删除与登录用户有权访问的用户帐户关联的标识。 在没有登录用户的情况下，在应用程序级别使用此权限。 这样，应用可以[管理](/graph/api/user-update?view=graph-rest-1.0)用户能够使用哪些标识来登录。
 
 ### <a name="reports"></a>报告
-将 Teams 服务管理员和 Teams 通信管理员用作接受的用户角色，允许应用代表用户以[用户委派的授权的形式](reportroot-authorization.md)读取 Office 365 服务使用情况报告。 
+将团队服务管理员和团队通信管理员用作接受的用户角色，以允许应用代表用户读取 Microsoft 365 服务使用情况报告，作为[用户委派授权的形式](reportroot-authorization.md)。 
 
 ### <a name="sites"></a>网站
 - 让用户[关注](/graph/api/site-follow?view=graph-rest-1.0)或[取消关注](/graph/api/site-unfollow?view=graph-rest-1.0) SharePoint 网站。
@@ -157,7 +157,7 @@ Intune [3 月](changelog.md#march-2020)更新。
 Intune [2 月](changelog.md#february-2020)更新。
 
 ### <a name="groups"></a>组
-使用 [assignLicense](/graph/api/group-assignlicense?view=graph-rest-beta) 方法将产品（如 Office 365 或企业移动性 + 安全性）的许可证分配给组。 由于 Azure AD 可确保将许可证分配给组的成员，因此加入或离开组的成员不再需要单独级别的许可证管理。
+使用[assignLicense](/graph/api/group-assignlicense?view=graph-rest-beta)方法可向组分配产品（如 Microsoft 365 或企业移动性 + 安全性）的许可证。 由于 Azure AD 可确保将许可证分配给组的成员，因此加入或离开组的成员不再需要单独级别的许可证管理。
 
 ### <a name="identity-and-access"></a>身份和访问
 - 创建[访问包分配策略](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta)时设置请求程序、审批和审阅设置。
@@ -204,7 +204,7 @@ Intune [1 月](changelog.md#january-2020)更新。
 - [与用户共享由用户共享的](/graph/api/insights-list-shared?view=graph-rest-1.0)文档
 
 ### <a name="reports"></a>报告
-要使用用户委派的权限获取 Office 365 使用情况报告，管理员必须向该用户分配 Azure AD 受限管理员角色。 可以是以下角色之一：公司管理员、Exchange 管理员、SharePoint 管理员、Lync 管理员、全局读取者或报告读取者。 有关详细信息，请参阅[授权 API 读取 Office 365 使用情况报告](reportroot-authorization.md)。
+若要使用用户委派的权限获取 Microsoft 365 使用情况报告，管理员必须已为用户分配 Azure AD 有限管理员角色。 可以是以下角色之一：公司管理员、Exchange 管理员、SharePoint 管理员、Lync 管理员、全局读取者或报告读取者。 有关详细信息，请参阅[Api 授权，以阅读 Microsoft 365 使用情况报告](reportroot-authorization.md)。
 
 ### <a name="toolkit"></a>工具包
 Microsoft Graph 工具包 v1.1 已发布。 有关增强功能和 bug 修复的列表，请参阅更改日历的[“2019 年 12 月”部分](changelog.md#december-2019)。
@@ -424,10 +424,10 @@ Intune [9 月](changelog.md#september-2019)更新
 ## <a name="august-2019-new-and-generally-available"></a>2019 年 8 月：新版本和正式版 
 
 ### <a name="reports"></a>报告
-- 获取与已删除项计数和大小相关的更多[邮箱使用情况数据](/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-1.0)。
-- 在[获取组活动详细信息](/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-1.0)时，跟踪 Office 365 组 ID。
+- 获取与已删除的项目计数和大小相关的其他[邮箱使用情况数据](/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-1.0)。
+- 当[获取组活动详细信息](/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-1.0)时，请跟踪 Microsoft 365 组 id。
 - 在获取 [OneDrive 使用帐户详细信息](/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-1.0)和 [SharePoint 网站使用情况详细信息](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-1.0)时，跟踪所有者主体名称。
-- 在[获取每 Office 365 服务的用户计数报告](/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-1.0)时，获取 Office 365 上的活动和非活动用户数。
+- 获取[有关每个 microsoft 365 服务的用户计数的报告](/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-1.0)时，在 microsoft 365 上获取活动和非活动用户数。
 
 ### <a name="security"></a>安全性
 - 使用新的[适用于 Splunk 的 Microsoft Graph 安全性 API 加载项](https://aka.ms/graphsecuritysplunkaddon)将多个合作伙伴产品的安全警报和看法传输至 Splunk，从而更轻松地实时关联其安全性数据。 有关详细信息，请参阅[公告](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Introducing-the-new-Microsoft-Graph-Security-API-add-on-for/ba-p/815972)。 
@@ -454,7 +454,7 @@ Intune [8 月](changelog.md#august-2019)更新
 - 管理员可以[列出访问审查](/graph/api/accessreview-list?view=graph-rest-beta)，以高效地审核组成员身份、企业应用程序访问权限和角色分配。 定期访问审查可确保只有相应的人员才能继续以特定方式访问资源。
 
 ### <a name="social-and-workplace-intelligence"></a>社交和工作场所智能
-最终用户可以使用 Office 365 [MyAnalytics](social-intel-concept-overview.md#why-integrate-with-document-based-insights) 应用获取与管理时间、工作协作和工作生活平衡有关的见解。 现在，你可以使用[分析 API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-gain-insights-into-their-work-patterns) 整合与工作活动（如呼叫、聊天和电子邮件）所花时间相关的数据、以帮助提高用户的工作效率和幸福感。 
+最终用户能够使用 Microsoft 365 [MyAnalytics](social-intel-concept-overview.md#why-integrate-with-document-based-insights)应用获取有关管理时间、工作的协作和工作寿命平衡的见解。 现在，你可以使用[分析 API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-gain-insights-into-their-work-patterns) 整合与工作活动（如呼叫、聊天和电子邮件）所花时间相关的数据、以帮助提高用户的工作效率和幸福感。 
 
 
 ## <a name="july-2019-new-and-generally-available"></a>2019 年 7 月：新版本和正式版 
@@ -463,7 +463,7 @@ Intune [8 月](changelog.md#august-2019)更新
 现在 v1.0 和 beta 参考中的所有 API 主题中提供了 Objective-C 代码片段。 请参阅[获取事件](/graph/api/event-get?view=graph-rest-1.0&tabs=objective-c#example)的 Objective-C 示例。
 
 ### <a name="group"></a>组
-- 使用 [validateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0) 函数确保现有 Office 365 组的显示名称和邮件昵称符合命名策略。
+- 使用[validateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0)函数可确保现有 Microsoft 365 组的显示名称或邮件别名符合命名策略。
 - 或者，在创建组之前，可以为 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) 使用 [validateProperties](/graph/api/directoryobject-validateproperties?view=graph-rest-1.0) 函数来首先验证名称。
 
 ### <a name="identity-and-access"></a>身份和访问
@@ -538,7 +538,7 @@ Exchange 管理员可以向应用程序授予应用程序权限, 并[限制该�
 - [educationClass](/graph/api/resources/educationclass?view=graph-rest-beta) 和 [educationUser](/graph/api/resources/educationuser?view=graph-rest-beta)的增量查询和属性添加。 
 
 ### <a name="group"></a>组
-获取[敏感度标签](/graph/api/resources/assignedlabel?view=graph-rest-beta) , 帮助保护 Office 365 组的敏感数据并满足合规性策略。 这些标签是[assignedLabel](/graph/api/resources/assignedlabel?view=graph-rest-beta)对象，由 Microsoft 365 安全与合规性中心的管理员发布，作为 Microsoft 信息保护功能的一部分。 
+获取[灵敏度标签](/graph/api/resources/assignedlabel?view=graph-rest-beta)可帮助保护 Microsoft 365 组的敏感数据并满足合规性策略。 这些标签是[assignedLabel](/graph/api/resources/assignedlabel?view=graph-rest-beta)对象，由 Microsoft 365 安全与合规性中心的管理员发布，作为 Microsoft 信息保护功能的一部分。 
 
 ### <a name="identity-and-access"></a>身份和访问
 - 获取[应用程序](/graph/api/resources/applicationtemplate?view=graph-rest-beta)的实例，或将 Azure AD 应用程序库中的实例作为模板添加到目录中。

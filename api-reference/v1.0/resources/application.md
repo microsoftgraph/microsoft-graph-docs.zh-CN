@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7410fd3cc24538133ee0e5c1d17c48e24a693dcd
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 04f17a2b40597ca13b6395b2d635544c8c4944df
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845645"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896796"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -59,7 +59,7 @@ ms.locfileid: "44845645"
 
 | 属性 | 类型 | Description |
 |:---------------|:--------|:----------|
-| addIns | [addIn](addin.md)集合| 定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，呈现文件流的应用程序可能会为其“FileHandler”功能[设置 addIns 属性](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online)。 这将使 Office 365 之类的服务在用户正在处理的文档上下文中调用应用程序。 |
+| addIns | [addIn](addin.md)集合| 定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，呈现文件流的应用程序可能会为其“FileHandler”功能[设置 addIns 属性](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online)。 这将使 Microsoft 365 等服务能够在用户正在使用的文档的上下文中调用应用程序。 |
 | api | [apiApplication](apiapplication.md) | 指定实现 Web API 的应用程序的设置。 |
 | appId | String | Azure AD 分配给应用程序的应用程序唯一标识符。 不可为 null。 只读。 |
 | appRoles | [appRole](approle.md) 集合 | 应用程序声明的角色的集合。 通过[应用程序角色分配](approleassignment.md)，可以将这些角色分配给用户、组或其他应用程序的服务主体。 不可为 Null。 |

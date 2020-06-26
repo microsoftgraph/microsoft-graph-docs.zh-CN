@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ffd44a8927f6c93ea7b8886b770f8e391c41f613
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 153a7e0eef887722278c4e6ac52ba76aa8efdac2
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44052396"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897608"
 ---
 # <a name="attachment-createuploadsession"></a>附件： createUploadSession
 
@@ -32,20 +32,20 @@ ms.locfileid: "44052396"
 有关示例，请参阅[将大型文件附加到 Outlook 消息或事件](/graph/outlook-large-attachments)。
 
 > [!TIP]
-> Exchange Online 允许管理员自定义 Office 365 邮箱的邮件大小限制，包括任何邮件附件。 默认情况下，此邮件大小限制为 35 MB。 了解如何[自定义最大邮件大小](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb)，以支持大于租户默认限制的附件。 
+> Exchange Online 允许管理员自定义 Microsoft 365 邮箱的邮件大小限制，包括任何邮件附件。 默认情况下，此邮件大小限制为 35 MB。 了解如何[自定义最大邮件大小](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb)，以支持大于租户默认限制的附件。 
 
 > [!IMPORTANT] 
 > 如果要将大型文件附加到共享或委派邮箱中的邮件或事件，请注意[已知问题](/graph/known-issues#attaching-large-files-to-messages)。
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | "日历"、"邮件"、"写" |
 | 委派（个人 Microsoft 帐户） | "日历"、"邮件"、"写" |
-| Application                            | "日历"、"邮件"、"写" |
+| 应用程序                            | "日历"、"邮件"、"写" |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -138,7 +138,7 @@ Content-type: application/json
 
 ### <a name="response"></a>响应
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

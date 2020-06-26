@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: non-product-specific
 doc_type: conceptualPageType
-ms.openlocfilehash: 971cfc675fce4c4633c4e331ca20679321112ad8
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 75672eedd4b1693b31058de6531c470db548a033
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353425"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897930"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Microsoft Graph REST API 1.0 版参考
 
@@ -36,11 +36,11 @@ Microsoft Graph 的强大之处在于可以在单个 Microsoft Graph REST 终结
 8. 在 Lisa 的 OneDrive for Business 的 Excel 文件中，从一个[图表](./resources/chart.md)获取最新销售预测。
 9. [在 Planner 中查找分配给 Lisa 的任务](./api/planneruser-list-tasks.md)。
 
-### <a name="office-365-group-use-cases-in-v10"></a>1.0 版中的 Office 365 组用例
+### <a name="microsoft-365-group-use-cases-in-v10"></a>1.0 版中的 Microsoft 365 组用例
 
-1. 针对组织中的 Office 365 组运行报表，并确定[组成员之间通信](./api/reportroot-getoffice365groupsactivitycounts.md)最多的组。
-2. [查找此 Office 365 组的计划](./api/plannergroup-list-plans.md)，和该计划中的[任务分配](./resources/plannerassignments.md)。
-3. 在 Office 365 组中[启动新对话](./api/group-post-conversations.md)以确定成员是否需要[创建另一个组](./api/group-post-groups.md)来分担工作负荷。
+1. 对组织中的 Microsoft 365 组运行报告，并确定[组成员之间通讯](./api/reportroot-getoffice365groupsactivitycounts.md)最多的组。
+2. [查找此 Microsoft 365 组的计划](./api/plannergroup-list-plans.md)，并在该计划中[分配任务](./resources/plannerassignments.md)。
+3. 在 Microsoft 365 组中[启动一个新对话](./api/group-post-conversations.md)，以确定成员是否要[创建另一个组](./api/group-post-groups.md)来共享工作负荷。
 4. 为组[获取默认笔记本](./api/notebook-get.md)并[创建一个页面](./api/section-post-pages.md)注明调查结果。
 
 ## <a name="other-api-versions"></a>其他 API 版本

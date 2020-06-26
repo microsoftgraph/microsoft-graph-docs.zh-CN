@@ -4,12 +4,12 @@ description: Microsoft Graph 提供了可选查询参数，可用于指定和控
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 29d11ec09cbf64d507bd2b97a8940c5b33ac7744
-ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
+ms.openlocfilehash: 68ceeac9baedbb6ef7d8a739b0cf0a900b9434cf
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44568675"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897713"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -38,7 +38,7 @@ Microsoft Graph API 操作可以支持以下一个或多个 OData 系统查询�
 | [$orderby](#orderby-parameter)     | 对结果进行排序。|[`/users?$orderby=displayName desc`][orderby-example]
 | [$search](#search-parameter)       | 返回基于搜索条件的结果。 |[`/me/messages?$search=pizza`][search-example]
 | [$select](#select-parameter)       | 筛选属性（列）。|[`/users?$select=givenName,surname`][select-example]
-| [$skip](#skip-parameter)           | 对结果集建立索引。一些 API 也使用它来实现分页，并且可以与 `$top` 一起使用来手动对结果分页。 | [`/me/messages?$skip=11`][skip-example]
+| [$skip](#skip-parameter)           | Indexes into a result set. Also used by some APIs to implement paging and can be used together with `$top` to manually page results. | [`/me/messages?$skip=11`][skip-example]
 | [$top](#top-parameter)             | 设置结果的页面大小。 |[`/users?$top=2`][top-example]
 
 
@@ -46,7 +46,7 @@ Microsoft Graph API 操作可以支持以下一个或多个 OData 系统查询�
 
 | 名称                     | 说明 | 示例
 |:-------------------------|:------------|:---------|
-| [$skipToken](#skiptoken-parameter) | 从跨多页的结果集中检索下一页结果。（但某些 API 改为使用 `$skip`。） | `/users?$skiptoken=X%274453707402000100000017...`|
+| [$skipToken](#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. (Some APIs use `$skip` instead.) | `/users?$skiptoken=X%274453707402000100000017...`|
 
 ## <a name="other-odata-url-capabilities"></a>其他 OData URL 功能
 
@@ -106,7 +106,7 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 许多 Microsoft Graph 资源都会公开资源的已声明属性以及与其他资源的关系。 这些关系也称为引用属性或导航属性，它们可以引用单个资源或资源集合。 例如，用户的邮件文件夹、管理者和直接下属都将作为关系公开。 
 
-通常情况下，可以在单个请求中查询资源属性或其关系之一，但不能同时查询。可以使用 `$expand` 查询字符串参数以包含结果中单个关系（导航属性）引用的扩展资源或集合。
+Normally, you can query either the properties of a resource or one of its relationships in a single request, but not both. You can use the `$expand` query string parameter to include the expanded resource or collection referenced by a single relationship (navigation property) in your results.
 
 以下示例在驱动器中获取根驱动器信息以及顶级子项：
 
@@ -116,7 +116,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 
 [在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
 
-使用一些资源集合，还可以添加 `$select` 参数，指定要在扩展资源中返回的属性。下面的示例执行与上一示例几乎相同的查询，不同之处在于使用 [`$select`](#select-parameter) 语句将为扩展子项返回的属性限制为 **id** 和 **name** 属性。
+With some resource collections, you can also specify the properties to be returned in the expanded resources by adding a `$select` parameter. The following example performs the same query as the previous example but uses a [`$select`](#select-parameter) statement to limit the properties returned for the expanded child items to the **id** and **name** properties.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
@@ -124,7 +124,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 [在 Graph 浏览器中试调用][expand-example]
 
-> **注意：** 并不是所有关系和资源都支持 `$expand` 查询参数。例如，可以扩展用户的 **directReports**、**manager** 和 **memberOf** 关系，但无法扩展其 **events**、**messages** 或 **photo** 关系。并非所有资源或关系都支持对扩展项使用 `$select`。 
+> **Note:** Not all relationships and resources support the `$expand` query parameter. For example, you can expand the **directReports**, **manager**, and **memberOf** relationships on a user, but you cannot expand its **events**, **messages**, or **photo** relationships. Not all resources or relationships support using `$select` on expanded items. 
 > 
 > 使用从 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) 派生的 Azure AD 资源（如[user](/graph/api/resources/user?view=graph-rest-1.0) 和 [group](/graph/api/resources/group?view=graph-rest-1.0)），`$expand` 仅支持 `beta`，并且通常最多为扩展关系返回 20 个项。
 
@@ -168,10 +168,10 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 | 获取登录用户收到的来自特定地址的所有电子邮件。 | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
 | 获取登录用户在 2017 年 4 月收到的所有电子邮件。 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
 | 获取登录用户收件箱中的所有未读邮件。 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
-| 列出组织中的所有 Office 365 组。 | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
+| 列出组织中的所有 Microsoft 365 组。 | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
 | 使用 OData 强制转换可获取具有以 "a" 开头的显示名称的组中的可传递成员身份，其中包含返回的对象的计数。 | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName,'a')&method=GET&version=v1.0) |
 
-> **注意：** Azure AD 资源不支持以下 `$filter` 运算符：`ne`、`gt`、`ge`、`lt`、`le` 和 `not`。所有 Microsoft Graph 资源目前均不支持 `contains` 字符串运算符。
+> **Note:** The following `$filter` operators are not supported for Azure AD resources:  `ne`, `gt`, `ge`, `lt`, `le`, and `not`. The `contains` string operator is currently not supported on any Microsoft Graph resources.
 
 ## <a name="format-parameter"></a>format 参数
 
@@ -198,7 +198,7 @@ GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
 ```
 [在 Graph 浏览器中试调用][orderby-example]
 
-还可以按复杂类型实体进行排序。下面的请求获取邮件，并按 **from** 属性的 **address** 字段（复杂类型为 **emailAddress**）进行排序：
+You can also sort by complex type entities. The following request gets messages and sorts them by the **address** field of the **from** property, which is of the complex type **emailAddress**:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/address
@@ -246,7 +246,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 [在 Graph 浏览器中试调用][search-example]
 
-也可以指定下表中的邮件属性名来搜索邮件，这些属性名可由关键字查询语言 (KQL) 语法识别。 这些属性名对应于 Microsoft Graph **message** 实体中定义的属性。 Outlook 和其他 Office 365 应用程序（如 SharePoint）支持 KQL 语法，从而为数据存储提供了方便使用的公共发现域。
+也可以指定下表中的邮件属性名来搜索邮件，这些属性名可由关键字查询语言 (KQL) 语法识别。 这些属性名对应于 Microsoft Graph **message** 实体中定义的属性。 Outlook 和其他 Microsoft 365 应用程序（如 SharePoint）支持 KQL 语法，为其数据存储提供了常见发现域的方便性。
 
 
 | 可搜索的电子邮件属性                | 说明 | 示例 
@@ -365,8 +365,8 @@ Content-type: application/json
 
 | 对象类 | 说明 | 示例 |
 | ------------ | ----------- | ------- |
-| User | 用户的通讯簿显示名称。 |  `https://graph.microsoft.com/beta/users?$search="displayName:Guthr"` |
-| User | 用户的通讯簿显示名称或邮件。 | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr" OR "mail:Guthr"` |
+| 用户 | 用户的通讯簿显示名称。 |  `https://graph.microsoft.com/beta/users?$search="displayName:Guthr"` |
+| 用户 | 用户的通讯簿显示名称或邮件。 | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr" OR "mail:Guthr"` |
 | Group | 组的通讯簿显示名称或说明。 | `https://graph.microsoft.com/beta/groups?$search="description:One" AND ("displayName:Video" OR "displayName:Drive")` |
 | Group | 启用邮件的组上的通讯簿显示名称。 | `https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"` |
 
@@ -386,11 +386,12 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 > **重要说明：** 一般来说，建议使用 `$select` 将查询返回的属性限制为应用所需的属性。 这对于可能返回大型结果集的查询尤为有用。 限制每行返回的属性将减少网络负载并帮助提升应用的性能。
 >
-> 在 `v1.0` 中，从 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) 派生的一些 Azure AD 资源（如 [user](/graph/api/resources/user?view=graph-rest-1.0) 和 [group](/graph/api/resources/group?view=graph-rest-1.0)）在读取时返回受限的默认属性子集。对于这些资源，必须使用 `$select` 将属性返回到默认集之外。  
+> In `v1.0`, some Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0), like [user](/graph/api/resources/user?view=graph-rest-1.0) and [group](/graph/api/resources/group?view=graph-rest-1.0), return a limited, default subset of properties on reads. For these resources, you must use `$select` to return properties outside of the default set.  
 
 ## <a name="skip-parameter"></a>skip 参数
 
-使用 `$skip` 查询参数设置要在集合开头跳过的项数。例如，以下请求返回按照创建日期排序的用户的事件，从集合中的第 21 个事件开始：
+Use the `$skip` query parameter to set the number of items to skip at the start of a collection.
+For example, the following request returns events for the user sorted by date created, starting with the 21st event in the collection:
 
 ```http
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
@@ -401,7 +402,7 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 ## <a name="skiptoken-parameter"></a>skipToken 参数
 
-由于服务器端分页或由于使用 [`$top`](#top-parameter) 参数来限制响应的页面大小，致使一些请求返回多页数据。许多 Microsoft Graph API 使用 `skipToken` 查询参数来引用结果的后续页面。`$skiptoken` 参数包含引用下一页结果的不透明令牌，并在响应的 `@odata.nextLink` 属性中提供的 URL 中返回。若要了解详细信息，请参阅[分页](./paging.md)。
+Some requests return multiple pages of data either due to server-side paging or due to the use of the [`$top`](#top-parameter) parameter to limit the page size of the response. Many Microsoft Graph APIs use the `skipToken` query parameter to reference subsequent pages of the result. The `$skiptoken` parameter contains an opaque token that references the next page of results and is returned in the URL provided in the `@odata.nextLink` property in the response. To learn more, see [Paging](./paging.md).
 
 
 ## <a name="top-parameter"></a>top 参数
@@ -423,7 +424,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 
 ## <a name="error-handling-for-query-parameters"></a>查询参数的错误处理
 
-如果不支持指定的查询参数，某些请求将返回错误消息。例如，不能对 `user/photo` 关系使用 `$expand`。 
+Some requests will return an error message if a specified query parameter is not supported. For example, you cannot use `$expand` on the `user/photo` relationship. 
 
 ```http
 https://graph.microsoft.com/beta/me?$expand=photo

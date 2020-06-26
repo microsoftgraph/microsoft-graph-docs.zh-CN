@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 8cbf5264ad704dde5139f8915f9350ad189368a5
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 61d7d590e6882f9c65614580248eba3f2d0ba6c0
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44864180"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897510"
 ---
 # <a name="update-schemaextension"></a>更新 schemaExtension
 
@@ -90,7 +90,7 @@ Content-length: 201
       "name":"additional-name-value",
       "type":"additional-type-value"
     }
-  ],
+  ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

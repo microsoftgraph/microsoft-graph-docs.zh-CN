@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 2941d114fd4b33e6f76c2b93d0204f04047741ed
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bafb7d1c0304dbc26f895e8c4ddb15bf088b21b3
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43423849"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896859"
 ---
 # <a name="outlook-extended-properties-overview"></a>Outlook 扩展属性概述
 
@@ -18,7 +18,8 @@ ms.locfileid: "43423849"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-扩展属性允许存储自定义数据，当 Outlook MAPI 属性_尚未在 Microsoft Graph API 元数据中公开_时，扩展属性专门用作应用访问这些属性的自定义数据的回退机制。可以使用扩展属性 REST API 在以下用户资源中存储或获取此类自定义数据：
+Extended properties allow storing custom data and specifically serve as a fallback mechanism for apps to access custom data for Outlook MAPI properties when these properties are _not already exposed in the Microsoft Graph API metadata_.
+You can use extended properties REST API to store or get such custom data in the following user resources:
 
 - [邮件](../resources/message.md)
 - [mailFolder](../resources/mailfolder.md)
@@ -29,7 +30,7 @@ ms.locfileid: "43423849"
 - [Outlook 任务](../resources/outlooktask.md)
 - [Outlook 任务文件夹](../resources/outlooktaskfolder.md)
 
-或者，在以下 Office 365 组资源中：
+或者，在下面的 Microsoft 365 组资源中：
 
 - 组 [事件](../resources/event.md)
 - 组 [日历](../resources/calendar.md)
@@ -37,7 +38,7 @@ ms.locfileid: "43423849"
 
 ## <a name="use-extended-properties-or-open-extensions"></a>使用扩展属性还是开放扩展？
 
-在大多数的常见情况下，你应该能够使用开放扩展（用 [openTypeExtension](../resources/opentypeextension.md) 表示，以前被称为 Office 365 数据扩展）来存储和访问用户邮箱中资源实例的自定义数据。仅当需要访问尚未通过 [Microsoft Graph API 元数据](https://developer.microsoft.com/graph/docs/overview/call_api)公开的 Outlook MAPI 属性的自定义数据时使用扩展属性。
+In most common scenarios, you should be able to use open extensions (represented by [openTypeExtension](../resources/opentypeextension.md), formerly known as Office 365 data extensions) to store and access custom data for resource instances in a user's mailbox. Use extended properties only if you need to access custom data for Outlook MAPI properties that are not already exposed in the [Microsoft Graph API metadata](https://developer.microsoft.com/graph/docs/overview/call_api).
 
 ## <a name="types-of-extended-properties"></a>扩展属性的类型
 

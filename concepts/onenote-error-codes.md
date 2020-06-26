@@ -4,12 +4,12 @@ description: 本文介绍当通过 API 发送的请求失败时，Microsoft Grap
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 316097c01cbd1888b63304727e442f14b2d7c51b
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: fad96eba2b5b2fa628cae81cdfdc859dc572e938
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37969820"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898021"
 ---
 # <a name="error-codes-for-onenote-apis-in-microsoft-graph"></a>Microsoft Graph 中的 OneNote API 错误代码
 
@@ -57,7 +57,7 @@ ms.locfileid: "37969820"
 OneNote API 程序无法在指定部分创建页面，因为该部分已损坏。
 
 ### <a name="10007"></a>10007
-服务器太忙，目前无法处理传入的请求。请稍后重试。
+The server is too busy to handle the incoming request at this moment. Please try again later.
 
 ### <a name="10008"></a>10008
 用户或组的 OneDrive 上的一个或多个文档库包含的 OneNote 项目数（笔记本、分区、分区组）超过 5000 个，无法使用 API 查询。 请确保用户或组的文档库包含的 OneNote 项目数均未超过 5000 个。 请参阅 [OneNote 开发博客](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/)获取缓解步骤。
@@ -68,7 +68,7 @@ OneNote API 程序无法在指定部分创建页面，因为该部分已损坏�
 可从库中删除签出要求，也可以移动笔记本。
 
 ### <a name="10013"></a>10013
-用户或组 OneDrive 上的一个或多个文档库包含 20,000 多个项目，无法使用 API 通过索引进行查询。请确保没有任何一个用户或组的文档库包含超过 20,000 个项目。有关缓解步骤，请参阅 [OneNote 开发人员博客](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/)。
+One or more of the document libraries on the user or group's OneDrive contains more than 20,000 items and cannot be indexed for querying using the API. Please make sure that none of the user or group's document libraries contains more than 20,000 items. See the [OneNote Dev blog](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/) for mitigation steps.
 
 ### <a name="10014"></a>10014
 Azure Key Vault 太忙，目前无法处理传入的请求。 请稍后重试。
@@ -100,7 +100,7 @@ SharePoint 当前不可用。 请稍后重试。
 “演示”部分的内容类型只能是文本/HTML 或应用程序/XHTML+XML。 
 
 ### <a name="20004"></a>20004
-“演示”部分 HTML 包含一个图像标记，其中包含 **src** 和 **data-render-src** 属性集。API 将忽略 **src** 属性并使用 **data-render-src** 属性。 
+The "Presentation" part HTML contains an image tag with both the **src** and the **data-render-src** properties set. The API will ignore the **src** property and use the **data-render-src** property. 
 
 ### <a name="20005"></a>20005
 请求 URI 太长。 URI 的最大大小（包括所有参数和数据）为 16 KB 或 16,384 个字符。
@@ -163,7 +163,7 @@ SharePoint 当前不可用。 请稍后重试。
 此请求不支持 **expand** 查询。 请参阅[受支持的 OData 查询字符串选项](onenote-get-content.md#supported-odata-query-string-options)。
 
 ### <a name="20104"></a>20104
-仅当查询某个部分中的网页集或查询特定页时，才支持 **pagelevel** 查询选项。例如：  
+The **pagelevel** query option is supported only when querying for the pages collection in a section or for a specific page. For example:  
 
 ```http
 GET ../sections/{id}/pages?pagelevel=true
@@ -204,10 +204,10 @@ PATCH 请求中的有效负载构建不正确。
 找不到你的请求指定的 PATCH 目标。
 
 ### <a name="20121"></a>20121
-请求包含无效的 PATCH 参数。请参阅[更新页面内容](onenote-update-page.md)。
+Your request contains an invalid PATCH argument. See [Update page content](onenote-update-page.md).
 
 ### <a name="20122"></a>20122
-请求指定的 PATCH 操作不受支持。请参阅[更新页面内容](onenote-update-page.md)。
+Your request specifies an unsupported PATCH action. See [Update page content](onenote-update-page.md).
 
 ### <a name="20123"></a>20123
 PATCH 请求无法修改指定页面。
@@ -216,7 +216,7 @@ PATCH 请求无法修改指定页面。
 你的多部分 PATCH 请求不包含使用 PATCH 操作 JSON 结构的“命令”部分。 请参阅[更新页面内容](onenote-update-page.md)。
 
 ### <a name="20125"></a>20125
-PATCH 请求不包含任何操作。请参阅[更新页面内容](onenote-update-page.md)。
+Your PATCH request contains no actions. See [Update page content](onenote-update-page.md).
 
 ### <a name="20126"></a>20126
 邮件正文包含格式错误的 JSON 或此操作不支持的字段。
@@ -243,7 +243,7 @@ PATCH 请求不包含任何操作。请参阅[更新页面内容](onenote-update
 你的请求指定的 PATCH 目标不受支持。 请参阅[更新页面内容](onenote-update-page.md)。
 
 ### <a name="20134"></a>20134
-您的请求将无效元素指定为 PATCH 操作的目标。如果目标使用 **data-id** 标识符，请确保其前缀为 # 符号。请参阅[更新页面内容](onenote-update-page.md)。
+Your request specifies an invalid element as the target of the PATCH action. If the target uses the **data-id** identifier, make sure it's prefixed with a # symbol. See [Update page content](onenote-update-page.md).
 
 ### <a name="20135"></a>20135
 你的请求指定的实体类型不受 PATCH 操作支持。 请参阅[更新页面内容](onenote-update-page.md)。
@@ -255,10 +255,10 @@ PATCH 请求不包含任何操作。请参阅[更新页面内容](onenote-update
 目标页面不支持 PATCH 请求。
 
 ### <a name="20138"></a>20138
-PATCH 请求中的目标元素类型不支持 **append** 操作。请参阅[更新页面内容](onenote-update-page.md)。
+The target element type in your PATCH request doesn't support the **append** action. See [Update page content](onenote-update-page.md).
 
 ### <a name="20139"></a>20139
-请求包含无效的 **data-tag** 属性值。请参阅[使用笔记标记](onenote-note-tags.md)。
+Your request contains an invalid **data-tag** attribute value. See [Use note tags](onenote-note-tags.md).
 
 ### <a name="20140"></a>20140
 你的请求包含无效的 **data-tag** 状态值。 复选框笔记标记可以包含**已完成**状态。 
@@ -304,7 +304,7 @@ OData 查询无效。
 请求对此身份验证类型无效。 请使用 `../me/onenote/section/{id}/pages` 终结点在特定分区中创建页面。
 
 ### <a name="20152"></a>20152
-没有为实体指定任何 name 值。必须定义名称，并且其中不能仅包含空格。
+There is no name value specified for the entity. The name must be defined, and it cannot contain whitespaces only.
 
 ### <a name="20153"></a>20153
 实体名称包含无效字符。 名称中不能包含下列字符：`? * \ / : < > | & # " % ~`
@@ -365,9 +365,9 @@ OData 查询无效。
 
 | 原因 | 解决方案 |
 |:------|:------|
-| 尚未设置用户的个人网站。 | 用户应打开 OneDrive for Business，并按照任意说明设置此网站。 如果此操作失败，用户应联系他们的 Office 365 租户管理员。 |
+| 尚未设置用户的个人网站。 | 用户应打开 OneDrive for Business，并按照任意说明设置此网站。 如果此操作失败，则应联系其 Microsoft 365 租户管理员。 |
 | 当前正在设置用户的个人网站。 | 稍后再尝试请求。 |
-| 用户没有有效的 OneDrive for Business 许可证。 | 用户应联系他们的 Office 365 租户管理员。 |
+| 用户没有有效的 OneDrive for Business 许可证。 | 用户应联系其 Microsoft 365 租户管理员。 |
 | 网络问题使请求无法成功发送。 | 稍后再尝试请求。 |
 
 ### <a name="30109"></a>30109

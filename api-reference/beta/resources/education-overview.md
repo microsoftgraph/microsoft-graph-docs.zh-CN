@@ -1,22 +1,22 @@
 ---
 title: 在 Microsoft Graph 中使用教育 API
-description: Microsoft Graph 中的教育 Api 使用与教育方案相关的信息（包括学校、学生、教师、课程、注册和工作分配）增强了 Office 365 的资源和数据。 这使你能够轻松地构建与教育资源集成的解决方案。
+description: Microsoft Graph 中的教育 Api 使用与教育方案相关的信息（包括学校、学生、教师、课程、注册和工作分配）来增强 Microsoft 365 的资源和数据。 这使你能够轻松地构建与教育资源集成的解决方案。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: ad050afee8b3772aa9a03e52ed2c1a715813bfd4
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 4cbab2418958db3a0c6fd81e05ce4d1ac71f828c
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353145"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897874"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>在 Microsoft Graph 中使用教育 API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph 中的教育 Api 使用与教育方案相关的信息（包括学校、学生、教师、课程、注册和工作分配）增强了 Office 365 的资源和数据。 这使你能够轻松地构建与教育资源集成的解决方案。
+Microsoft Graph 中的教育 Api 使用与教育方案相关的信息（包括学校、学生、教师、课程、注册和工作分配）来增强 Microsoft 365 的资源和数据。 这使你能够轻松地构建与教育资源集成的解决方案。
 
 教育 Api 包括名册资源和工作分配资源，您可以使用这些资源与 Microsoft 团队中的名册和工作分配服务进行交互。 您可以使用这些资源管理学校名单并自动完成学生作业。
 
@@ -44,7 +44,7 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 
 ## <a name="rostering"></a>Rostering
 
-借助名册 API，可以从学校的 Office 365 租户（预配了 [Microsoft 学校数据同步](https://sds.microsoft.com/)）中提取数据。这些 API 提供对有关学校、部门、教师、学生和名册的信息的访问权限。 API 既支持仅应用（同步）方案，也支持应用 + 用户（交互）方案。 支持交互式方案的 API 基于调用 API 的用户角色，强制实施相应地区的 RBAC 策略。 这可以提供一致的 API 和最小策略展现，而无需考虑租户中的管理配置。 此外，API 还提供特定于教育的权限，确保相应用户具有访问数据的权限。
+通过名册 Api，你可以从学校的 Microsoft 365 租户（使用[Microsoft School Data Sync](https://sds.microsoft.com/)预配）中提取数据。这些 Api 提供了对学校、节、教师、学生和名册的信息的访问。 API 既支持仅应用（同步）方案，也支持应用 + 用户（交互）方案。 支持交互式方案的 API 基于调用 API 的用户角色，强制实施相应地区的 RBAC 策略。 这可以提供一致的 API 和最小策略展现，而无需考虑租户中的管理配置。 此外，API 还提供特定于教育的权限，确保相应用户具有访问数据的权限。
 
 可以使用名册 API 让应用用户了解：
 
@@ -78,7 +78,7 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 
 ## <a name="assignments"></a>作业 
 
-您可以使用与工作分配相关的教育 Api 与 Microsoft 团队中的工作分配集成。 适用于教育的 Office 365 中的 Microsoft 团队基于相同的教育 Api，并为使用 Api 时可以执行的操作提供了一个用例。 您的应用程序可以使用这些 Api 与工作分配生命周期中的工作分配进行交互。 
+您可以使用与工作分配相关的教育 Api 与 Microsoft 团队中的工作分配集成。 Microsoft 365 for 教育版的 microsoft 团队基于相同的教育 Api，并为使用 Api 时可以执行的操作提供了一个用例。 您的应用程序可以使用这些 Api 与工作分配生命周期中的工作分配进行交互。 
 
 分配 Api 提供以下关键资源：
 
@@ -107,7 +107,7 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 
 ## <a name="school-data-sync-management"></a>学校数据同步管理
 
-[学校数据同步](https://sds.microsoft.com/)可帮助您自动执行从使用 Azure Active Directory （azure AD）和 Office 365 导入和同步学生信息系统中的名单数据的过程。 您可以使用 Microsoft Graph 中的学校数据同步管理 Api 设置 CSV 文件或受支持的 SIS API 连接器的同步。
+[学校数据同步](https://sds.microsoft.com/)可帮助您自动执行从使用 Azure Active Directory （azure AD）和 Microsoft 365 导入和同步学生信息系统中的名单数据的过程。 您可以使用 Microsoft Graph 中的学校数据同步管理 Api 设置 CSV 文件或受支持的 SIS API 连接器的同步。
 
 学校数据同步管理 Api 支持以下方案：
 

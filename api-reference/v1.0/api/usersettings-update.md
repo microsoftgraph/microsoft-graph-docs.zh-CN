@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: bdc286437a231efdf234bd2881886f5bd436407a
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: eac479222b271e6143fb8e3f8b46b5bfa9aadce1
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108345"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897489"
 ---
 # <a name="update-settings"></a>更新设置
 
@@ -29,7 +29,7 @@ ms.locfileid: "43108345"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -53,16 +53,16 @@ PATCH /users/{id | userPrincipalName}/settings/
 
 | 标头       | 值|
 |:-----------|:------|
-| Authorization  | Bearer {token}。必需。  |
+| Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|布尔值|设置为 true 确实禁用对[趋势](/graph/api/resources/insights-trending?view=graph-rest-1.0)API 的代理访问，并禁用用户对 Office Delve 中的文档的访问权限。 设置为 true 还会影响 Office 365 中显示的内容的相关性（例如，SharePoint 主页中的建议网站和 OneDrive for Business 中的发现视图）显示较少的相关结果。 此设置反映了[Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)中的控件状态。|
+|contributionToContentDiscoveryDisabled|布尔值|设置为 true 确实禁用对[趋势](/graph/api/resources/insights-trending?view=graph-rest-1.0)API 的代理访问，并禁用用户对 Office Delve 中的文档的访问权限。 设置为 true 还会影响 Microsoft 365 中显示的内容的相关性（例如，SharePoint 主页中的建议网站和 OneDrive for Business 中的发现视图）显示较少的相关结果。 此设置反映了[Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)中的控件状态。|
 
 ## <a name="example"></a>示例 
 
@@ -82,7 +82,7 @@ Content-length: 37
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 ```http
 HTTP/1.1 200 OK

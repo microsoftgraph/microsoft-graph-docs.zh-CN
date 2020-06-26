@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: 6b87f67612da0918f90808c44f7761ecf4d83eb4
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: c8a23236d312c6e4d20a6c6018ff3a77957517e6
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491649"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898294"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
@@ -29,7 +29,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 | Outlook 个人[联系人][] | 对用户邮箱中的所有个人联系人更改：<br>`/users/{id}/contacts` | 否 |
 | [用户][] | 对所有用户更改：<br>`/users` <br>对特定用户更改：<br>`/users/{id}`| 否 |
 | [组][] | 对所有组更改：<br>`/groups` <br>对特定组更改：<br>`/groups/{id}`<br>对特定组的所有者所做的更改：<br>`/groups/{id}/owners`<br>对特定组的成员所做的更改：<br>`/groups/{id}/members` | 否 |
-| Office 365 组[对话][] | 查看组的对话：<br>`groups/{id}/conversations` | 否 |
+| Microsoft 365 组[对话][] | 查看组的对话：<br>`groups/{id}/conversations` | 否 |
 | OneDrive（个人版）上的 [driveItem][] | 对_任何文件夹_的层次结构内的内容更改：<br>`/users/{id}/drive/root` | 否 |
 | OneDrive for Business 上的 [driveItem][] | 对_根文件夹_的层次结构内的内容更改：<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | 否 |
 | SharePoint [网站][]下的[列表][] | `/sites/{id}/lists/{id}` | 否 |

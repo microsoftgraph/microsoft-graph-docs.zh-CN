@@ -4,12 +4,12 @@ description: 此 FAQ 解答了与 Microsoft Graph 快速入门相关的问题。
 author: jasonjoh
 ms.author: jasonjoh
 localization_priority: Normal
-ms.openlocfilehash: 4aded41cab30133856041c073699948ed7ae49ff
-ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
+ms.openlocfilehash: b13961ed13b0b52a951ce20a3381b1db85096da8
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44568752"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897706"
 ---
 # <a name="microsoft-graph-quick-start-faq"></a>Microsoft Graph 快速入门 FAQ
 
@@ -33,7 +33,7 @@ ms.locfileid: "44568752"
 所有快速启动示例都需要访问 Outlook.com 上的邮箱的个人 Microsoft 帐户，或使用 Exchange Online 邮箱的 Microsoft 工作或学校帐户。 如果你没有 Microsoft 帐户，可以使用以下几种方法获取免费帐户：
 
 - 你可以[注册新的个人 Microsoft 帐户](https://signup.live.com/signup?wa=wsignin1.0&rpsnv=12&ct=1454618383&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https://mail.live.com/default.aspx&id=64855&cbcxt=mai&bk=1454618383&uiflavor=web&uaid=b213a65b4fdc484382b6622b3ecaa547&mkt=E-US&lc=1033&lic=1)。
-- 你可以[注册 office 365 开发人员计划](https://developer.microsoft.com/office/dev-program)以获取免费的 office 365 订阅。
+- 你可以[注册 microsoft 365 开发人员计划](https://developer.microsoft.com/office/dev-program)，以获取免费的 microsoft 365 订阅。
 
 ## <a name="general-quick-start-sample-questions"></a>快速启动示例常见问题
 

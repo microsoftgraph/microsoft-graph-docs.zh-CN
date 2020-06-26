@@ -5,12 +5,12 @@ localization_priority: Priority
 author: baywet
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: b5f71bdeca19834b8d4721aaa6e8416916a15b58
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 2639e23181af020722311cb6db00c9464949725a
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491796"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897650"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "44491796"
 
 - Microsoft Graph 安全性 API 中的[警报][]
 - Microsoft 团队中的呼叫或会议之后生成的[callRecord][]
-- Office 365 组的[对话][]
+- Microsoft 365 组中的[对话][]
 - OneDrive for Business 中根文件夹[driveItem][] 的层次结构中的内容，或用户个人 OneDrive 中的根文件夹或子文件夹 [driveItem][] 的层次结构中的内容
 - SharePoint [网站][]下的[列表][] 
 - Outlook 中的[邮件][]、[事件][]或[联系人][]
@@ -47,7 +47,7 @@ ms.locfileid: "44491796"
 | resource | string | 必需。 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/v1.0/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。|
 | expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | 必需。 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 |
 | clientState | string | 可选。 指定 `clientState` 在每次更改通知中由服务发送的属性的值。 最大长度为 128 个字符。 客户端可以通过 `clientState` 将随订阅发送的属性的值与 `clientState` 每个更改通知接收的属性值进行比较，来检查更改通知是否来自服务。 |
-| id | string | 订阅的唯一标识符。只读。 |
+| id | string | Unique identifier for the subscription. Read-only. |
 | applicationId | string | 用于创建订阅的应用程序的标识符。 只读。 |
 | creatorId | string | 已创建订阅的用户或服务主体的标识符。 如果此应用使用委派权限来创建订阅，则此字段包含该应用代表其调用的已登录用户的 ID。 如果此应用使用应用程序权限，则此字段包含对应于该应用的服务主体的 ID。 只读。 |
 | latestSupportedTlsVersion | 字符串 | 指定由 **notificationUrl**指定的通知端点支持的 "传输层安全性 (TLS)" 的最新版本。 可能的值包括 `v1_0`、`v1_1`、`v1_2`、`v1_3`。 </br></br>对于通知终结点支持低于当前推荐版本（TLS 1.2）的版本的订阅者，通过设置 [Timeline](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) 指定此属性，可在完成升级到 TLS 1.2 前暂时使用其过时的 TLS 版本。 对于这些订阅者，不按时间线设置此属性会导致订阅操作失败。 </br></br>对于其通知端点已支持 TLS 1.2 的订阅者，设置此属性是可选的。 在这种情况下，Microsoft Graph 将属性默认设置为 `v1_2`。 |

@@ -1,22 +1,22 @@
 ---
 title: 获取组
-description: 检索与此 **educationClass** 对应的 Office 365 **group**。
+description: 检索与此**educationClass**对应的 Microsoft 365**组**。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 054e3a36e295903229f14aef58614fa68e17d8db
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b246322db24ac1a6a82643bfc4c87562fb2b0328
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517662"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896852"
 ---
 # <a name="get-group"></a>获取组
 
 命名空间：microsoft.graph
 
-检索与此 **educationClass** 对应的 Office 365 **group**。
+检索与此**educationClass**对应的 Microsoft 365**组**。
 
 >**注意：** 如果使用委派令牌，成员只能看到有关自己学校的信息。 在这种情况下，使用 `...beta/education/me/schools` 资源。
 
@@ -37,7 +37,7 @@ GET /education/classes/{id}/group
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| Authorization  | Bearer {token}. Required.  |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/group
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

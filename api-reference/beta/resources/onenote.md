@@ -5,16 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 98408034bb734ddd714b0959d2605a3f240c7777
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e213f12110399b90513d33af4d1745be3cdf3eae
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522363"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898063"
 ---
 # <a name="onenote-resource-type"></a>Onenote 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ ms.locfileid: "42522363"
 https://graph.microsoft.com/{version}/{location}/onenote/ 
 ```
 
-位置可以是 Office 365 或消费者版 OneDrive 上的用户笔记本，还可以是 Office 365 上的组笔记本或 SharePoint 站点托管的团队笔记本。 
+Microsoft 365 上的位置可以是 Microsoft 365 或消费者 OneDrive、组笔记本或 SharePoint 网站托管的团队笔记本上的用户笔记本。 
 
 **用户笔记本** 要访问消费者版 OneDrive 或 OneDrive for Business 上的个人笔记本，请使用下列 URL 之一：
 

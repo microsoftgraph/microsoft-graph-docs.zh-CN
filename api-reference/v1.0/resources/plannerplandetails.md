@@ -5,16 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: e06afabfa01e7c63f103208bb0f290bcb58e4c56
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ec6f22b9a14fc25f6c63b3e6e7c93ec66e4741d2
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447106"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896999"
 ---
 # <a name="plannerplandetails-resource-type"></a>plannerPlanDetails 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 
 **PlannerPlanDetails**资源表示有关计划的其他信息。 每个[plan](plannerplan.md)对象都有一个详细信息对象。
@@ -32,7 +32,7 @@ ms.locfileid: "42447106"
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|指定可与计划中的任务相关联的六个类别的描述的对象|
 |id|String| 只读。 计划详细信息的 ID。 长度为 28 个字符，区分大小写。 [格式验证](planner-identifiers-disclaimer.md)在服务上完成。|
-|sharedWith|[plannerUserIds](planneruserids.md)|此计划共享的用户 id 集合。如果你正在利用 Office 365 组，使用组 API 管理组成员身份以共享[组的](group.md)计划。你还可以将现有的组成员添加到此集合，尽管他们无需访问组拥有的计划。 |
+|sharedWith|[plannerUserIds](planneruserids.md)|与之共享此计划的用户 id 集。 如果您利用的是 Microsoft 365 组，请使用组 API 来管理组成员身份，以共享[组的](group.md)计划。 您还可以将组的现有成员添加到此集合中，但它们不需要他们访问该组拥有的计划。 |
 
 ## <a name="relationships"></a>关系
 无

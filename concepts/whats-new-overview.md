@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: e03d5035aff0736d94415167c891fac3478bec00
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 1b5dd9303f5415d34bb4b1244a4abbc952089ddc
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845643"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896845"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -127,7 +127,7 @@ Intune[可能会](changelog.md#may-2020)在 beta 中更新。
 
 ### <a name="groups"></a>组
 - 使用[组](/graph/api/resources/group?view=graph-rest-beta)的现有规则或指定的规则[评估](/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta)用户或设备是否为动态组的成员。 [基于规则的动态成员身份](/azure/active-directory/users-groups-roles/groups-dynamic-membership)可降低添加和删除成员的管理开销。
-- 创建 Office 365[组](/graph/api/resources/group?view=graph-rest-beta)时，通过在**resourceBehaviorOptions**属性中指定组的行为来配置这些行为。 例如，允许成员张贴、订阅新成员到对话、禁用欢迎电子邮件以及在 Outlook 体验中隐藏组。
+- 创建 Microsoft 365[组](/graph/api/resources/group?view=graph-rest-beta)时，通过在**resourceBehaviorOptions**属性中指定组的行为来配置这些行为。 例如，允许成员张贴、订阅新成员到对话、禁用欢迎电子邮件以及在 Outlook 体验中隐藏组。
 - 指定要在**resourceProvisioningOptions**属性中设置的资源，这些资源通常不是默认[组](/graph/api/resources/group?view=graph-rest-beta)创建的一部分。 目前支持将组设置为具有 Microsoft 团队功能的[团队](/graph/api/resources/team?view=graph-rest-beta)。
 
 ### <a name="identity-and-access"></a>身份和访问
@@ -156,7 +156,7 @@ Intune[可能会](changelog.md#may-2020)在 beta 中更新。
 
     2. 如果有足够的反馈表明具有可行性，则提升为 **_正式发布_ (GA)** 状态。 任何相关的 REST API 更新都添加到 v1.0 终结点 (`https://graph.microsoft.com/v1.0`)。 
 - 成为 Microsoft Graph 社区中的活跃成员! [参与](https://aka.ms/microsoftgraphcall)Microsoft Graph 社区每月通话。
-- 注册 [office 365 开发人员计划](https://developer.microsoft.com/office/dev-program)，免费订阅 Office 365, 然后开始开发! 
+- 注册[microsoft 365 开发人员计划](https://developer.microsoft.com/office/dev-program)，获取免费的 microsoft 365 订阅，然后开始开发！
 
 
 ## <a name="see-also"></a>另请参阅

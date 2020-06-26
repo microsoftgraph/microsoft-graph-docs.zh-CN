@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 876acf56d4f3445d55163a8c4cdb5bc1461c45de
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2480f55cf0e7ea12d9bfaf31941a943095f62c31
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531293"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898035"
 ---
 # <a name="resourcevisualization-resource-type"></a>resourceVisualization 资源类型
 
@@ -47,12 +47,12 @@ ms.locfileid: "42531293"
 | -------------         |---------------| -------------|
 | title                 | String        | 项目的标题文本。               |
 | type              | 字符串        | 项目的媒体类型。 可用于根据特定类型筛选特定文件。 请参阅以下支持的类型。 |
-| 群组             | 字符串        | 项目的媒体类型。 可用于根据受支持的 IANA 媒体 Mime 类型筛选特定类型的文件。 请注意，并非所有媒体 Mime 类型都受支持。 |
-| previewImageUrl       | 字符串        | 指向项目的预览图像的 URL。 |
-| previewText           | 字符串        | 项目的预览文本。 |
-| containerWebUrl       | 字符串        | 指向存储项目的文件夹的路径。 |
-| containerDisplayName  | 字符串        | 一个描述项目存储位置的字符串。 例如，SharePoint 网站的名称或标识 OneDrive 的所有者存储项目的用户名。  |
-| containerType         | 字符串 | 可用于按存储文件的容器的类型进行筛选。 如 Site 或 OneDriveBusiness。       |
+| 群组             | String        | 项目的媒体类型。 可用于根据受支持的 IANA 媒体 Mime 类型筛选特定类型的文件。 请注意，并非所有媒体 Mime 类型都受支持。 |
+| previewImageUrl       | String        | 指向项目的预览图像的 URL。 |
+| previewText           | String        | 项目的预览文本。 |
+| containerWebUrl       | String        | 指向存储项目的文件夹的路径。 |
+| containerDisplayName  | String        | 一个描述项目存储位置的字符串。 例如，SharePoint 网站的名称或标识 OneDrive 的所有者存储项目的用户名。  |
+| containerType         | String | 可用于按存储文件的容器的类型进行筛选。 如 Site 或 OneDriveBusiness。       |
 
 ## <a name="type-property-values"></a>类型属性值
 -   PowerPoint
@@ -79,15 +79,18 @@ ms.locfileid: "42531293"
 -   Story
 -   ExternalContent
 -   Folder
+- Spsite
 -   其他
 
 示例查询：`https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+
+注意：对于 `spsite` 您可能需要按 desc 排序才能 `lastUsed/lastAccessedDateTime` 检索有效结果
 
 ## <a name="containertype-property-values"></a>containerType 属性值
 根据[officeGraphInsights](officegraphinsights.md)返回文件的容器，受支持的类型可能有所不同。 例如，仅[sharedInsight](insights-shared.md)真知灼见将从 "收存箱"、"Box" 和 "GDrive" 返回文件。
 
 -   OneDriveBusiness
--   站点
+-   Site
 -   邮件
 -   箱
 -   Box

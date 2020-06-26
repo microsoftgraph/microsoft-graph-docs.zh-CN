@@ -1,30 +1,30 @@
 ---
 title: 添加成员
-description: 通过 **members** 导航属性将成员添加到 Office 365 组、安全组或启用邮件的安全组中。
+description: 通过**members**导航属性将成员添加到 Microsoft 365 组、安全组或启用邮件的安全组。
 localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5eb51c3fd246d79921f53a4d5dad78bbefa1690b
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 0388d13d0e50c6ffcc415503a75afb8af56fa14f
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290941"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897146"
 ---
 # <a name="add-member"></a>添加成员
 
 命名空间：microsoft.graph
 
-通过 **members** 导航属性将成员添加到 Office 365 组或安全组中。
+通过**members**导航属性将成员添加到 Microsoft 365 组或安全组。
 
 您可以添加用户、组织联系人、服务主体或其他组。 
 
 > [!IMPORTANT]
-> 只能向通过云管理的安全组和 Office 365 组添加用户。
+> 只能向通过云管理的安全和 Microsoft 365 组添加用户。
 
 ## <a name="permissions"></a>Permissions
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -41,14 +41,14 @@ POST /groups/{id}/members/$ref
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:----------|
-| Authorization  | Bearer {token}。必需。 |
+| Authorization  | Bearer {token}. Required. |
 | Content-type   | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md)、[user](../resources/user.md)、[group](../resources/group.md) 或 [organizational contact](../resources/orgcontact.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## <a name="examples"></a>示例
 ### <a name="example-1-add-a-member-to-a-group"></a>示例1：向组中添加成员
@@ -88,7 +88,7 @@ Content-length: 30
 ---
 
 #### <a name="response"></a>响应
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
