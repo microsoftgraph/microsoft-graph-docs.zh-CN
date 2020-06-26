@@ -3457,7 +3457,7 @@ items:
                     href: api/application-removekey.md
               - name: 扩展
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/application-list-extensionproperty.md
                   - name: 创建
                     href: api/application-post-extensionproperty.md
@@ -3491,7 +3491,7 @@ items:
           - name: 基于证书的身份验证配置
             href: resources/certificatebasedauthconfiguration.md
             items:
-              - name: 列出
+              - name: 列表
                 href: api/certificatebasedauthconfiguration-list.md
               - name: 创建
                 href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
@@ -3514,7 +3514,7 @@ items:
           - name: 委派权限授予
             href: resources/oauth2permissiongrant.md
             items:
-              - name: 列出
+              - name: 列表
                 href: api/oauth2permissiongrant-list.md
               - name: 创建
                 href: api/oauth2permissiongrant-post.md
@@ -3638,6 +3638,31 @@ items:
                 href: api/groupsettingtemplate-list.md
               - name: 获取组设置模板
                 href: api/groupsettingtemplate-get.md
+          - name: 身份保护
+            href: resources/identityprotectionroot.md
+            items:
+              - name: 风险检测
+                href: resources/riskdetection.md
+                items:
+                  - name: 列表
+                    href: api/riskdetection-list.md
+                  - name: 获取
+                    href: api/riskdetection-get.md
+              - name: 有风险的用户
+                href: resources/riskyuser.md
+                items:
+                  - name: 列出有风险的用户
+                    href: api/riskyuser-list.md
+                  - name: 获取有风险的用户
+                    href: api/riskyuser-get.md
+                  - name: 列表历史记录
+                    href: api/riskyuser-list-history.md
+                  - name: 获取历史记录
+                    href: api/riskyuser-get-riskyuserhistoryitem.md
+                  - name: 确认已被盗用
+                    href: api/riskyuser-confirmcompromised.md
+                  - name: 消除
+                    href: api/riskyuser-dismiss.md
           - name: 标识提供程序
             href: resources/identityprovider.md
             items:
@@ -4306,7 +4331,7 @@ items:
                 href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
               - name: 获取存储
                 href: api/reportroot-getmailboxusagestorage.md
-          - name: Office 365 激活
+          - name: Microsoft 365 激活
             href: resources/office-365-activations-reports.md
             items:
               - name: 获取用户详细信息
@@ -4315,7 +4340,7 @@ items:
                 href: api/reportroot-getoffice365activationcounts.md
               - name: 获取用户计数
                 href: api/reportroot-getoffice365activationsusercounts.md
-          - name: Office 365 活动用户
+          - name: Microsoft 365 活动用户
             href: resources/office-365-active-users-reports.md
             items:
               - name: 获取用户详细信息
@@ -4324,7 +4349,7 @@ items:
                 href: api/reportroot-getoffice365activeusercounts.md
               - name: 获取服务用户计数
                 href: api/reportroot-getoffice365servicesusercounts.md
-          - name: Office 365 组活动
+          - name: Microsoft 365 组活动
             href: resources/office-365-groups-activity-reports.md
             items:
               - name: 获取组详细信息
@@ -4719,7 +4744,7 @@ items:
                 href: api/teamsapp-update.md
               - name: 从目录中删除应用
                 href: api/teamsapp-delete.md
-          - name: App
+          - name: 应用
             items:
               - name: 安装的应用
                 href: resources/teamsappinstallation.md
@@ -4772,7 +4797,7 @@ items:
               - name: Shift
                 href: resources/shift.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/schedule-list-shifts.md
                   - name: 创建
                     href: api/schedule-post-shifts.md
@@ -4794,7 +4819,7 @@ items:
               - name: 计划组
                 href: resources/schedulinggroup.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/schedule-list-schedulinggroups.md
                   - name: 创建
                     href: api/schedule-post-schedulinggroups.md
@@ -4820,7 +4845,7 @@ items:
               - name: 打开班次
                 href: resources/openshift.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/openshift-list.md
                   - name: 创建
                     href: api/openshift-post.md
@@ -4833,7 +4858,7 @@ items:
               - name: 打开班次轮换更改请求
                 href: resources/openshiftchangerequest.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/openshiftchangerequest-list.md
                   - name: 创建
                     href: api/openshiftchangerequest-post.md
@@ -4853,7 +4878,7 @@ items:
               - name: 交换班次更改请求
                 href: resources/swapshiftschangerequest.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/swapshiftschangerequest-list.md
                   - name: 创建
                     href: api/swapshiftschangerequest-post.md
@@ -4866,7 +4891,7 @@ items:
               - name: 休假
                 href: resources/timeoff.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/schedule-list-timesoff.md
                   - name: 创建
                     href: api/schedule-post-timesoff.md
@@ -4879,7 +4904,7 @@ items:
               - name: 休假原因
                 href: resources/timeoffreason.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/schedule-list-timeoffreasons.md
                   - name: 创建
                     href: api/schedule-post-timeoffreasons.md
@@ -4903,7 +4928,7 @@ items:
               - name: 劳动力集成
                 href: resources/workforceintegration.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/workforceintegration-list.md
                   - name: 创建
                     href: api/workforceintegration-post.md

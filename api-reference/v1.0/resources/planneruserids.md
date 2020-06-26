@@ -1,31 +1,31 @@
 ---
 title: plannerUserIds 资源类型
-description: '**PlannerUserIds**资源表示与计划共享的用户 id 的列表。 这是开放类型。 如果您使用的是 Office 365 组，请使用组 API 来管理组成员身份，以共享组的计划。 您还可以将组的现有成员添加到此集合中，但它们不需要他们访问该组拥有的计划。'
+description: '**PlannerUserIds**资源表示与计划共享的用户 id 的列表。 这是开放类型。 如果您利用的是 Microsoft 365 组，请使用组 API 来管理组成员身份，以共享组的计划。 您还可以将组的现有成员添加到此集合中，但它们不需要他们访问该组拥有的计划。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 02b8ae1ed88c5e1ae20a629875047d67124cf0c9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3cd4007c4ae68cfe9428eb6b9d2aeb22cd24391e
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533969"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896985"
 ---
-# <a name="planneruserids-resource-type"></a><span data-ttu-id="667cd-106">plannerUserIds 资源类型</span><span class="sxs-lookup"><span data-stu-id="667cd-106">plannerUserIds resource type</span></span>
+# <a name="planneruserids-resource-type"></a><span data-ttu-id="fe2ff-106">plannerUserIds 资源类型</span><span class="sxs-lookup"><span data-stu-id="fe2ff-106">plannerUserIds resource type</span></span>
 
-<span data-ttu-id="667cd-107">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="667cd-107">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="fe2ff-107">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fe2ff-107">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="667cd-108">**PlannerUserIds**资源表示与[计划](plannerplan.md)共享的用户 id 的列表。</span><span class="sxs-lookup"><span data-stu-id="667cd-108">The **plannerUserIds** resource represents the list of users ids that a [plan](plannerplan.md) is shared with.</span></span> <span data-ttu-id="667cd-109">这是开放类型。</span><span class="sxs-lookup"><span data-stu-id="667cd-109">This is an Open Type.</span></span> <span data-ttu-id="667cd-110">如果您使用的是 Office 365 组，请使用组 API 来管理组成员身份，以共享[组的](group.md)计划。</span><span class="sxs-lookup"><span data-stu-id="667cd-110">If you are leveraging Office 365 Groups, use the Groups API to manage group membership to share the [group's](group.md) plan.</span></span> <span data-ttu-id="667cd-111">您还可以将组的现有成员添加到此集合中，但它们不需要他们访问该组拥有的计划。</span><span class="sxs-lookup"><span data-stu-id="667cd-111">You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group.</span></span>
-
-
-## <a name="properties"></a><span data-ttu-id="667cd-112">属性</span><span class="sxs-lookup"><span data-stu-id="667cd-112">Properties</span></span>
-<span data-ttu-id="667cd-113">可由客户端定义打开类型的属性。</span><span class="sxs-lookup"><span data-stu-id="667cd-113">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="667cd-114">在这种情况下，客户端应将`true`用户 id 作为属性提供，其值为 boolean。</span><span class="sxs-lookup"><span data-stu-id="667cd-114">In this case, the client should provide user ids as properties with their values being the `true` boolean.</span></span> <span data-ttu-id="667cd-115">当不再与用户 id 共享时，将通过将属性值设置为`false`布尔值来自动删除属性。</span><span class="sxs-lookup"><span data-stu-id="667cd-115">When user ids are no longer shared with, properties are automatically removed by setting their values to the `false` boolean.</span></span>
+<span data-ttu-id="fe2ff-108">**PlannerUserIds**资源表示与[计划](plannerplan.md)共享的用户 id 的列表。</span><span class="sxs-lookup"><span data-stu-id="fe2ff-108">The **plannerUserIds** resource represents the list of users ids that a [plan](plannerplan.md) is shared with.</span></span> <span data-ttu-id="fe2ff-109">这是开放类型。</span><span class="sxs-lookup"><span data-stu-id="fe2ff-109">This is an Open Type.</span></span> <span data-ttu-id="fe2ff-110">如果您利用的是 Microsoft 365 组，请使用组 API 来管理组成员身份，以共享[组的](group.md)计划。</span><span class="sxs-lookup"><span data-stu-id="fe2ff-110">If you are leveraging Microsoft 365 groups, use the Groups API to manage group membership to share the [group's](group.md) plan.</span></span> <span data-ttu-id="fe2ff-111">您还可以将组的现有成员添加到此集合中，但它们不需要他们访问该组拥有的计划。</span><span class="sxs-lookup"><span data-stu-id="fe2ff-111">You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="667cd-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="667cd-116">JSON representation</span></span>
+## <a name="properties"></a><span data-ttu-id="fe2ff-112">属性</span><span class="sxs-lookup"><span data-stu-id="fe2ff-112">Properties</span></span>
+<span data-ttu-id="fe2ff-113">可由客户端定义打开类型的属性。</span><span class="sxs-lookup"><span data-stu-id="fe2ff-113">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="fe2ff-114">在这种情况下，客户端应将用户 id 作为属性提供，其值为 `true` boolean。</span><span class="sxs-lookup"><span data-stu-id="fe2ff-114">In this case, the client should provide user ids as properties with their values being the `true` boolean.</span></span> <span data-ttu-id="fe2ff-115">当不再与用户 id 共享时，将通过将属性值设置为布尔值来自动删除属性 `false` 。</span><span class="sxs-lookup"><span data-stu-id="fe2ff-115">When user ids are no longer shared with, properties are automatically removed by setting their values to the `false` boolean.</span></span>
 
-<span data-ttu-id="667cd-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="667cd-117">Here is a JSON representation of the resource</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="fe2ff-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="fe2ff-116">JSON representation</span></span>
+
+<span data-ttu-id="fe2ff-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="fe2ff-117">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -40,7 +40,7 @@ ms.locfileid: "42533969"
 }
 ```
 
-<span data-ttu-id="667cd-118">示例</span><span class="sxs-lookup"><span data-stu-id="667cd-118">// Example</span></span>
+<span data-ttu-id="fe2ff-118">示例</span><span class="sxs-lookup"><span data-stu-id="fe2ff-118">// Example</span></span>
 ```json
 {
   "400723e1-102b-43aa-aba9-f35524827084": true, // property name is user id
