@@ -1,24 +1,24 @@
 ---
 title: educationClass 资源类型
-description: 表示学校的课程。 **educationClass** 资源对应于 Office 365 组并共享同一个 ID。
+description: 表示学校的课程。 **EducationClass**资源对应于 Microsoft 365 组并共享相同的 ID。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0de9c384c5f48d832180da48c22ed6595ce3922d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dca4ee263418c098194cf37ac66bc6659b9d6061
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502275"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895683"
 ---
 # <a name="educationclass-resource-type"></a>educationClass 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示学校的课程。 **educationClass** 资源对应于 Office 365 组并共享同一个 ID。 学生是课程的正式成员，教师为所有者，且具有相应权限。 若要使 Office 365 体验正常工作，教师必须是教师和成员集合的成员。
+表示学校的课程。 **EducationClass**资源对应于 Microsoft 365 组并共享相同的 ID。 学生是课程的正式成员，教师为所有者，且具有相应权限。 为使 Microsoft 365 体验正常工作，教师必须是教师和成员集合的成员。
 
 ## <a name="methods"></a>方法
 
@@ -34,7 +34,7 @@ ms.locfileid: "42502275"
 | [Remove teacher](../api/educationclass-delete-teachers.md)              | [educationUser]                                | 通过教师导航属性从课程删除 **educationUser**。      |
 | [创建 educationAssignment](../api/educationclass-post-assignments.md) | [educationAssignment]                          | 通过发布到工作分配集合创建新的**educationAssignment** 。            |
 | [列出作业](../api/educationclass-list-assignments.md)           | [educationAssignment]集合                | 获取**educationAssignment**对象集合。                                         |
-| [获取组](../api/educationclass-get-group.md)                         | [组]                                        | 获得与此 **educationClass** 对应的 Office 365 **group**。                 |
+| [Get group](../api/educationclass-get-group.md)                         | [组]                                        | 获取与此**educationClass**对应的 Microsoft 365**组**。                 |
 | [创建 educationCategory](../api/educationclass-post-category.md)      | [educationCategory]                            | 为此类创建新的**educationCategory** 。                                        |
 | [List categories](../api/educationclass-list-categories.md)             | [educationCategory]集合                 | 获取属于此类的**educationCategory**对象的列表。                      |
 | [Update](../api/educationclass-update.md)                               | [educationClass]                               | 更新 **educationClass** 对象。                                                         |
@@ -49,7 +49,7 @@ ms.locfileid: "42502275"
 | classCode      | String                                | 学校用于标识课程的课程代码。                                    |
 | 采取         | [educationCourse](educationcourse.md) | 课堂课程信息                                                        |
 | createdBy      | [identitySet]                         | 创建了课程的实体                                                            |
-| 说明    | String                                | 课程说明。                                                               |
+| description    | String                                | 课程说明。                                                               |
 | displayName    | String                                | 课程名称。                                                                      |
 | externalId     | String                                | 来自同步系统的课程 ID。                                                |
 | externalName   | String                                | 同步系统中的课程名称。                                                |

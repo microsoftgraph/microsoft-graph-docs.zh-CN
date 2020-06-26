@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 5ab45e1dee9c4c6fe092d07c6e1a306060e77801
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: c8676ce2e43e88ce53e4c79e13b9151a0eca2b58
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345903"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895711"
 ---
 # <a name="bookingstaffmember-resource-type"></a>bookingStaffMember 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "44345903"
  
 表示在[bookingBusiness](bookingbusiness.md)中提供服务的教职员工成员。
 
-教职员工成员可以是在其中配置预订业务的 Office 365 租户的一部分，也可以使用来自其他电子邮件提供商的电子邮件服务。
+教职员工成员可以是配置了预订业务的 Microsoft 365 租户的一部分，也可以使用来自其他电子邮件提供商的电子邮件服务。
 
 预订约会时，预订 API 会考虑以下设置以确定教职员工成员的可用性： 
 
@@ -41,10 +41,10 @@ ms.locfileid: "44345903"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|Boolean|如果为 True，则表示如果教职员工成员是 Office 365 用户，则在预定前，预订 API 将验证教职员工成员在 Office 365 的个人日历中的可用性。 |
+|availabilityIsAffectedByPersonalCalendar|Boolean|如果为 True，则表示如果教职员工成员是 Microsoft 365 用户，则预订 API 将在进行预订前验证员工在 Microsoft 365 的个人日历中的可用性。 |
 |colorIndex|Int32|标识代表教职员工成员的颜色。 该颜色对应于预订应用中的 "**员工详细信息**" 页上的调色板。|
 |displayName|字符串|向客户显示的教职员工成员的姓名。 必填。|
-|emailAddress|String|教职员工成员的电子邮件地址。 这可以位于与企业相同的 Office 365 租户中，也可以位于不同的电子邮件域中。 如果在企业的计划策略中将**sendConfirmationsToOwner**属性设置为 true，则可以使用此电子邮件地址。 必需。|
+|emailAddress|String|教职员工成员的电子邮件地址。 这可以与公司在同一 Microsoft 365 租户中，也可以位于不同的电子邮件域中。 如果在企业的计划策略中将**sendConfirmationsToOwner**属性设置为 true，则可以使用此电子邮件地址。 必需。|
 |id|String| 以 GUID 格式的教职员工成员的 ID。 只读。|
 |role|string| 企业中教职员工成员的角色。 可取值为：`guest`、`administrator`、`viewer`、`externalGuest`。 必填。|
 |useBusinessHours|Boolean|如果为 True，则表示教职员工成员的可用性是在企业的**businessHours**属性中指定的。 False 表示可用性由教职员工成员的**workingHours**属性设置决定。|

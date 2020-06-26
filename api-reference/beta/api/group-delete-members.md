@@ -1,16 +1,16 @@
 ---
 title: 删除成员
-description: 使用此 API 可以通过 **members** 导航属性从 Office 365 组、安全组或启用邮件的安全组中删除成员。可以删除用户或其他组。
+description: 使用此 API 可以通过**members**导航属性从 Microsoft 365 组、安全组或启用邮件的安全组中删除成员。 可以删除用户或其他组。
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7beced25495b7dfdf98951a7cfa8c93bfc633649
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: e4d91d97f48f1a0adec10c0d42d51be399fb0f28
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123844"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895865"
 ---
 # <a name="remove-member"></a>删除成员
 
@@ -21,7 +21,7 @@ ms.locfileid: "43123844"
 使用此 API 通过**成员**导航属性从组中删除成员。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -38,13 +38,13 @@ DELETE /groups/{id}/members/{id}/$ref
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求

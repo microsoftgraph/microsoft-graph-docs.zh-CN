@@ -1,20 +1,20 @@
 ---
 title: Outlook 日历 API 概述
-description: Outlook 日历属于 Office 365 中的 Outlook 消息传递中心，也便于管理电子邮件和联系人、查找组织用户的相关信息、
+description: Outlook 日历是 Microsoft 365 中 Outlook 邮件中心的一部分，它还允许您管理电子邮件和联系人，查找组织中用户的相关信息。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 4d9b61db0dfc14a2e22aad50769498333828ebfb
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: d66e538f98021812587ab92f451926959df27ab4
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290976"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44894934"
 ---
 # <a name="outlook-calendar-api-overview"></a>Outlook 日历 API 概述
 
-Outlook 日历是 Office 365 中 Outlook 消息传递中心的一部分，它同样允许你管理电子邮件和联系人、在组织中查找有关用户的信息、启动在线对话、共享文件，以及实现小组协作。
+Outlook 日历是 Microsoft 365 中 Outlook 邮件中心的一部分，它还允许您管理电子邮件和联系人、查找组织中用户的相关信息、启动在线对话、共享文件以及在组中进行协作。
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/_ST4nyz4g9E]
 
@@ -55,7 +55,7 @@ Outlook 日历 API 中的大多数功能适用于个人 Microsoft 帐户和工�
 
 - 在 Outlook 中，客户可以与他人共享日历并授予读取、写入或删除日历内容的权限。 或者，他们可以委派一个日历，让另一个客户代表他们响应会议请求。 通过编程方式，虽然无法代表用户启动共享或委派操作，但可以使用一组属性来验证共享状态并启用有关共享或委派日历的应用场景：**canEdit**、**canShare**、**canViewPrivateItems**、**isShared** 和 **isSharedWithMe**。
 - 日历 API 使你能够获得已登录用户或将其日历共享或委派给已登录用户的用户的日历项目。 例如，如果 Garth 与 John 共享日历，或者如果 Garth 向 John 委派了访问权限，则来自 John 的[委派权限](auth/auth-concepts.md#microsoft-graph-permissions)将授予你对 Garth 共享日历和内容的读取访问权限。
-- Office 365 组可使组成员方便地直接在 Outlook 中进行协作、访问组对话和日历。 除了组日历和用户日历之间的一些细微差异外，通过日历 API 可像与用户日历那样与组日历进行交互。 请参阅[日历](/graph/api/resources/calendar?view=graph-rest-1.0)资源了解详细信息<sup>**</sup>。
+- Microsoft 365 组使组成员可以轻松协作并在 Outlook 中直接访问组对话和日历。 除了组日历和用户日历之间的一些细微差异外，通过日历 API 可像与用户日历那样与组日历进行交互。 请参阅[日历](/graph/api/resources/calendar?view=graph-rest-1.0)资源了解详细信息<sup>**</sup>。
 
 ## <a name="schedule-smart"></a>智能日程安排
 

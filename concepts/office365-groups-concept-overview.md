@@ -5,23 +5,23 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: bffcd3fcf24c5774436bf9d38d2afd16d490a770
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 0ea28b5f4ff69faba5146ebc790703e423d9e8ba
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290983"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896110"
 ---
 # <a name="overview-of-microsoft-365-groups-in-microsoft-graph"></a>Microsoft Graph 中的 Microsoft 365 组概述
 
-Microsoft 365 组（也称为 Office 365 组）为用户提供了用于共享对话、文件、便笺、日历、计划和许多其他资产的基础成员身份服务。 
+Microsoft 365 组为用户提供了用于共享对话、文件、便笺、日历、计划和许多其他资产的基础成员身份服务。 
 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/WB9w6QM9xIU]
 
-## <a name="why-integrate-with-office-365-groups"></a>为何要与 Office 365 组集成？   
+## <a name="why-integrate-with-microsoft-365-groups"></a>为什么要与 Microsoft 365 组集成？   
 
-各个组会形成一个基础，让用户能够跨服务进行协作和集成，以支持任务计划、团队合作、教育等丰富的应用场景。 当你与 Office 365 组集成后，随着数百万用户在 Office 365 套件及更高版本中跨各种体验进行转换，你的应用程序即可为他们提供支持。  
+各个组会形成一个基础，让用户能够跨服务进行协作和集成，以支持任务计划、团队合作、教育等丰富的应用场景。 当您与 Microsoft 365 组集成时，您的应用程序可以支持数百万个用户在 Microsoft 365 套件中的不同体验之间过渡。  
  
 ### <a name="create-groups-to-facilitate-teamwork-across-services"></a>创建组以促进跨服务的团队合作 
  
@@ -29,9 +29,9 @@ Microsoft 365 组（也称为 Office 365 组）为用户提供了用于共享对
  
 - 使用[创建组](/graph/api/group-post-groups?view=graph-rest-1.0) API 预配一个新组。 然后，该组可用于一系列应用程序，例如 Outlook、SharePoint、Microsoft Teams、Planner，甚至 Microsoft Stream。 Microsoft Graph 可跨这些连接的服务进行同步，以对所有组成员无缝提供访问权限。  
  
-    **每个 Office 365 组都与一组默认的 Office 365 服务集成**
+    **每个 Microsoft 365 组都与一组默认的 Microsoft 365 服务集成**
 
-    ![图表显示 Office 365 组与文件、备注、任务、站点、对话和日历的集成](images/office365-groups-concept-overview-related-services-infographic.png)  
+    ![显示 Microsoft 365 组与文件、备注、任务、网站、对话和日历集成的图示](images/office365-groups-concept-overview-related-services-infographic.png)  
 
 - 允许成员指示某个组是他们的[收藏夹](/graph/api/group-addfavorite?view=graph-rest-1.0)之一，或者在他们选择时[将其从收藏夹中删除](/graph/api/group-removefavorite?view=graph-rest-1.0)。 
 - 从自定义应用程序中[创建](/graph/api/group-post-conversations?view=graph-rest-1.0)、[获取](/graph/api/group-get-conversation?view=graph-rest-1.0)或[删除](/graph/api/group-delete-conversation?view=graph-rest-1.0)组对话。 
@@ -40,7 +40,7 @@ Microsoft 365 组（也称为 Office 365 组）为用户提供了用于共享对
 - 在 Planner 中[创建一个属于组的计划](/graph/api/planner-post-buckets?view=graph-rest-1.0)。 该计划通过允许[创建任务](/graph/api/planner-post-tasks?view=graph-rest-1.0)（可以[跨存储桶进行组织](/graph/api/planner-post-buckets?view=graph-rest-1.0)），提供了一种直观的方式来跟踪团队合作。 
 - 访问与组关联的 [OneNote](/graph/api/resources/onenote?view=graph-rest-1.0) 笔记本，这可用于收集会议记录和整理想法。 
   
-    **Outlook 网页中的 Office 365 组和对话**
+    **Outlook 网页中的 Microsoft 365 组和对话**
 
     ![Outlook 网页版在“组”文件夹中列出组的屏幕截图](images/office365-groups-concept-overview-groups-in-outlook.png) 
 
@@ -49,7 +49,7 @@ Microsoft 365 组（也称为 Office 365 组）为用户提供了用于共享对
  
 ### <a name="manage-group-membership-seamlessly"></a>无缝管理组成员身份 
  
-Office 365 组是共享 Microsoft 服务或你的应用中资源访问权限的用户集合。 由于组成员身份是集中管理的，因此，对成员身份的任何更改都会影响与该组关联的所有服务。 你可使用 Microsoft Graph 执行以下组成员身份任务：
+Microsoft 365 组是共享 Microsoft 服务或应用程序中资源的访问权限的用户集合。 由于组成员身份是集中管理的，因此，对成员身份的任何更改都会影响与该组关联的所有服务。 你可使用 Microsoft Graph 执行以下组成员身份任务：
  
 - 从现有组中[添加](/graph/api/group-post-members?view=graph-rest-1.0)和[删除](/graph/api/group-delete-members?view=graph-rest-1.0)成员。 
 - 获取组的[所有者列表](/graph/api/group-list-owners?view=graph-rest-1.0)或[成员列表](/graph/api/group-list-members?view=graph-rest-1.0)。 这有助于传达哪些人员可以访问组内容，或者哪些人员可能需要执行管理职责，如续订组或批准加入请求。 
@@ -60,7 +60,7 @@ Office 365 组是共享 Microsoft 服务或你的应用中资源访问权限的�
  
 随着组织内创建的组数量开始增长，Microsoft Graph 支持管理组的使用情况和生命周期的能力。 你可以跨组织中的所有组强制执行组策略。 可以使用 Microsoft Graph API 执行以下操作：
 
-- 配置广泛的[组策略设置](/graph/api/resources/groupsetting?view=graph-rest-1.0)，从而帮助定义行为，例如，除非所有者续订组并对 Office 365 组强制执行命名策略，否则会自动删除组。 
+- 配置广泛的[组策略设置](/graph/api/resources/groupsetting?view=graph-rest-1.0)，以帮助定义行为，例如，自动删除组，除非它们由所有者续订并强制实施 Microsoft 365 组上的命名策略。 
 - [续订](/graph/api/group-renew?view=graph-rest-1.0)即将到期的组，以让团队成员继续协作和访问内容。 如果未根据已建立的过期策略续订组，则会自动删除该组。 
 - [还原](/graph/api/directory-deleteditems-restore?view=graph-rest-1.0)已删除组。
 

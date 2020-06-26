@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4d333aab5240b7ff6ae391800e448fe9a36837a3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 03045c2b7fb438e1affa574e1db8682336ac43c3
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43365644"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895732"
 ---
 # <a name="event-forward"></a>事件：前进
 
@@ -20,11 +20,11 @@ ms.locfileid: "43365644"
 
 此操作允许会议[事件](../resources/event.md)的组织者或与会者将会议请求转发给新的收件人。 
 
-如果将会议事件从与会者的 Office 365 邮箱转发给另一个收件人，此操作还会发送一封邮件，通知组织者转发，并将该收件人添加到组织者的会议事件副本中。 从 Outlook.com 帐户进行转发时，此便利功能不可用。
+如果将会议事件从与会者的 Microsoft 365 邮箱转发给另一个收件人，此操作还会发送一封邮件，通知组织者转发，并将该收件人添加到组织者的会议事件副本中。 从 Outlook.com 帐户进行转发时，此便利功能不可用。
 
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -55,20 +55,20 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type | string  | 实体正文中的数据性质。必需。 |
+| Authorization  | string  | Bearer {token}. Required. |
+| Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|评论|字符串|要包含的注释。可以为空字符串。|
+|评论|字符串|A comment to include. Can be an empty string.|
 |ToRecipients|[recipient](../resources/recipient.md) collection|要将事件转发到的收件人列表。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
+If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a600d5eb07a9b128901e748e2de25261db9d147e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 42a8517be0a57837f8c6be9fa989519d5944b9e7
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43364009"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895851"
 ---
 # <a name="delete-group"></a>删除组
 
@@ -20,11 +20,11 @@ ms.locfileid: "43364009"
 
 删除组。  
 
-删除后，Office 365 组将移至临时容器，并可在30天内恢复。  此后，它们将被永久删除。  要了解详细信息，请参阅 [deletedItems](../resources/directory.md)。  这仅适用于 Office 365 组。
+删除后，Microsoft 365 组将移至临时容器，并可在30天内恢复。  此后，它们将被永久删除。  要了解详细信息，请参阅 [deletedItems](../resources/directory.md)。  这仅适用于 Microsoft 365 组。
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,7 +43,7 @@ DELETE /groups/{id}
 
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>请求正文
 
@@ -51,7 +51,7 @@ DELETE /groups/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## <a name="example"></a>示例
 

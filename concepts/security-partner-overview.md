@@ -4,12 +4,12 @@ description: '这篇文章介绍了由 Microsoft Graph 安全性 API 启用的�
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 5dd601c686cdc21cb5969c171e06fc57cba4e194
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: fe2c171673421600db29dcaac21f24d5d82c160f
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969261"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895662"
 ---
 # <a name="partnering-with-the-microsoft-graph-security-api--technology-partner-opportunities"></a>与 Microsoft Graph 安全 API 合作-技术合作伙伴机会
 
@@ -23,9 +23,9 @@ ms.locfileid: "37969261"
 
 ## <a name="introduction-to-the-microsoft-graph-security-api"></a>Microsoft Graph 安全性 API 简介
 
-Microsoft Graph 安全性 API 是一个统一的 API，它提供了一个标准接口和统一架构，可从多个源集成安全警报和威胁智能，使用上下文信息丰富警报和数据，并实现自动化的安全性运算.
+Microsoft Graph 安全性 API 是一个统一的 API，它提供了一个标准接口和统一架构，可从多个源集成安全警报和威胁智能、使用上下文信息丰富警报和数据以及自动执行安全操作。
 
-安全 API 是 Microsoft Graph 的一部分，它是一个统一的 REST API，用于将 Microsoft 和合作伙伴产品和服务的数据和智能集成在一起。 使用 Microsoft Graph，客户和合作伙伴可以快速构建可对一次进行身份验证的解决方案，并使用单个 API 调用来访问来自多个安全解决方案的安全见解或对其进行操作。 当您浏览其他[Microsoft Graph 实体](https://docs.microsoft.com/graph/overview)（Office 365、Azure Active Directory、Intune 等）时，会发现其他值，以将业务上下文与安全见解关联。
+安全 API 是 Microsoft Graph 的一部分，它是一个用于集成来自 Microsoft 和合作伙伴产品和服务的数据和情报的统一 REST API。 使用 Microsoft Graph，客户和合作伙伴可以快速构建仅验证一次的解决方案，并使用单个 API 调用访问来自多个安全解决方案的安全见解或为此采取行动。 当您浏览其他[Microsoft Graph 实体](https://docs.microsoft.com/graph/overview)（microsoft 365、Azure Active Directory、Intune 等）时，会发现其他值，以将业务上下文与安全见解关联。
 
 Microsoft 以两种主要方式启用技术合作伙伴集成。
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4b2c8f19f686fe4e33d28338bda8f543d41771e8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d5865086ff1fd97af8e9897cde66a5cdd1599923
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43396291"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895788"
 ---
 # <a name="group-subscribebymail"></a>组：subscribeByMail
 
@@ -18,10 +18,10 @@ ms.locfileid: "43396291"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-调用此方法可使当前用户在该组中收到有关该组的新帖子、事件和文件的电子邮件通知。 仅支持 Office 365 组。
+调用此方法可使当前用户在该组中收到有关该组的新帖子、事件和文件的电子邮件通知。 仅支持 Microsoft 365 组。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -37,13 +37,13 @@ POST /groups/{id}/subscribeByMail
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| Authorization  | Bearer {token}. Required.  |
 | Prefer | return=minimal。 如果 minimal 响应头包含在请求头中，那么成功响应返回 `204 No Content` 代码。 可选。  | 
 
 ## <a name="request-body"></a>请求正文
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。
+If successful, this method returns `200 OK` response code. It does not return anything in the response body.
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求

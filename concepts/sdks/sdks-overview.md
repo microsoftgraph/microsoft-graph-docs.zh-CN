@@ -4,12 +4,12 @@ description: 介绍了可用的 Sdk、支持的平台以及它们为开发人员
 localization_priority: Normal
 author: MichaelMainer
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 93b2606aeb3cea9053c04d4caa87d6cf50e833e4
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: c7be38ff3d79f9c8c1facd6a4da300af00870136
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969470"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895676"
 ---
 # <a name="microsoft-graph-sdks-overview"></a>Microsoft Graph Sdk 概述
 
@@ -37,9 +37,9 @@ Sdk 目前可用于以下语言和平台：
 - [Python](https://developer.microsoft.com/en-us/graph/get-started/python)
 - [Ruby](https://developer.microsoft.com/en-us/graph/get-started/ruby)
 
-## <a name="office-365-developer-subscription"></a>Office 365 开发人员订阅
+## <a name="microsoft-365-developer-subscription"></a>Microsoft 365 开发人员订阅
 
-使用 Microsoft Graph 构建应用程序时，我们建议您通过注册[office 365 开发人员计划](https://aka.ms/OfficeDevProgram)获取免费的 office 365 开发人员订阅。
+使用 Microsoft Graph 构建应用程序时，我们建议您通过注册[microsoft 365 开发人员计划](https://aka.ms/OfficeDevProgram)获取免费的 microsoft 365 开发人员订阅。
 
 ## <a name="see-also"></a>另请参阅
 

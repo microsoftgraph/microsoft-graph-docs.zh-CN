@@ -4,12 +4,12 @@ description: 介绍如何将 Azure Active Directory （Azure AD） API 应用迁
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 311bc8c800d7415e7e2d192f5b11aed971faafa4
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+ms.openlocfilehash: 4a759516ad5852f0ef73aaacd87d0c8d85d9a0a1
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42926776"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896439"
 ---
 # <a name="migrate-azure-ad-graph-apps-to-microsoft-graph"></a>将 Azure AD Graph 应用迁移到 Microsoft Graph
 
@@ -17,9 +17,9 @@ Microsoft Graph 完全替换 Azure Active Directory （Azure AD）图形。 对�
 
 此外，Microsoft Graph 支持许多新的 Azure AD 数据集和功能，这些功能在 Azure AD Graph 中不可用。 切换到 Microsoft Graph 以利用这些新的 Api，这一切都通过一个单终结点，包括：
 
-- [Office 365 组管理](/graph/office365-groups-concept-overview)
+- [Microsoft 365 组管理](/graph/office365-groups-concept-overview)
 - [外部用户邀请](/graph/api/resources/invitation?view=graph-rest-1.0)
-- 能够在删除[用户和 Office 365 组](/graph/api/resources/directory?view=graph-rest-1.0)之后对其进行还原
+- 能够在删除[用户和 Microsoft 365 组](/graph/api/resources/directory?view=graph-rest-1.0)之后对其进行还原
 - [用户和组上的 Webhook 通知](/graph/webhooks?toc=./ref/toc.json&view=graph-rest-1.0)
 - 身份管理功能，如：
   - [特权标识管理](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta)（PIM）仅在需要时和在有限时间段内将用户提升到特权角色

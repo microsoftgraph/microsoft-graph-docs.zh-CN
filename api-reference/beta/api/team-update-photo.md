@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bb824a0bd6b79f4450f4a2d3658e0853376db594
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 22fdca19b657bdf439f356fb61e4f805f45b4f4b
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491887"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896124"
 ---
 # <a name="update-team-photo"></a>更新团队照片
 
@@ -18,20 +18,20 @@ ms.locfileid: "44491887"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新团队的照片（图片）。 Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和 648x648 像素。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。
+更新团队的照片（图片）。 以下是 Microsoft 365 中受支持的 HD 照片的大小：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和648x648 像素。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。
 
 > [!Note]
 > 请求的总大小不得超过 4 MB。 这会将照片大小限制为小于 4 MB。
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamSettings、Group 写全部、所有的 ReadWrite。 All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | TeamSettings *、TeamSettings、all、ReadWrite、all、all、All、All |
+|应用程序 | TeamSettings *、TeamSettings、all、ReadWrite、all、all、All、All |
 
 > **注意**：标记为 * 的权限使用[特定于资源的同意](https://aka.ms/teams-rsc)。
 
@@ -51,8 +51,8 @@ PUT /teams/{id}/photo
 
 | 标头        | 值           |
 |:--------------|:--------------  |
-| Authorization | Bearer {token}。必需。  |
-| Content-type | image/jpeg。必需。  |
+| Authorization | Bearer {token}. Required.  |
+| Content-type | image/jpeg. Required.  |
 
 ## <a name="request-body"></a>请求正文
 

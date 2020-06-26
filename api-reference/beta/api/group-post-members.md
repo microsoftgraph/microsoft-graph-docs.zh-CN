@@ -1,16 +1,16 @@
 ---
 title: 添加成员
-description: 通过**members**导航属性将成员添加到 Office 365 组或安全组。
+description: 通过**members**导航属性将成员添加到 Microsoft 365 组或安全组。
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a41ef1abeeece64c3a8ea689e19596e07931e82f
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: fe3f3a5fe1bde8c14e9dbc3a6e12e486dd7c1bd2
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289586"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895809"
 ---
 # <a name="add-member"></a>添加成员
 
@@ -18,15 +18,15 @@ ms.locfileid: "44289586"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过**members**导航属性将成员添加到 Office 365 组或安全组。
+通过**members**导航属性将成员添加到 Microsoft 365 组或安全组。
 
 您可以添加用户、服务主体或其他组。 
 
 > [!Important]
-> 只能向通过云管理的安全组和 Office 365 组添加用户。
+> 只能向通过云管理的安全和 Microsoft 365 组添加用户。
 
 ## <a name="permissions"></a>Permissions
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,13 +43,13 @@ POST /groups/{id}/members/$ref
 ## <a name="request-headers"></a>请求标头
 | 名称 | 说明|
 |:---- |:-----------|
-| Authorization | Bearer {token}。必需。 |
+| Authorization | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md)、[user](../resources/user.md) 或 [group](../resources/group.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求

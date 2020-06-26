@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: fa1c055214155c18854dc46a0f1db4e499370e2c
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 49f9d1f19b1c77eb2b0b4873e75ec44cb5a43422
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383502"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895963"
 ---
 # <a name="update-serviceprincipal"></a>更新 servicePrincipal
 
@@ -22,7 +22,7 @@ ms.locfileid: "44383502"
 > 不支持使用修补程序设置[**passwordCredential**](../resources/passwordcredential.md) 。 使用[addPassword](./serviceprincipal-addpassword.md)和[RemovePassword](./serviceprincipal-removepassword.md)方法更新 servicePrincipal 的密码。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -38,16 +38,16 @@ PATCH /servicePrincipals/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:-----------|:----------|
-| Authorization | Bearer {token}。必需。  |
+| Authorization | Bearer {token}. Required.  |
 | Content-Type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
-| 属性     | 类型 |Description|
+| 属性     | 类型 |说明|
 |:---------------|:--------|:----------|
 |accountEnabled|布尔| 如果服务主体帐户已启用，则为 **true**；否则，为 **false**。|
-|addIns| [addIn](../resources/addin.md) | 定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，呈现文件流的应用程序可能会为其“FileHandler”功能[设置 addIns 属性](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online)。 这将使 Office 365 之类的服务在用户正在处理的文档上下文中调用应用程序。|
+|addIns| [addIn](../resources/addin.md) | 定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，呈现文件流的应用程序可能会为其“FileHandler”功能[设置 addIns 属性](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online)。 这将使 Microsoft 365 等服务能够在用户正在使用的文档的上下文中调用应用程序。|
 |alternativeNames|String collection| 用于按订阅检索服务主体，标识[托管标识](https://aka.ms/azuremanagedidentity)的资源组和完整资源 id。|
 |appRoleAssignmentRequired|Boolean|指定在 Azure AD 在向应用程序签发用户或访问令牌之前用户或组是否需要 **appRoleAssignment**。 不可为 null。 |
 |appRoles|[appRole](../resources/approle.md) 集合|关联应用程序公开的应用程序角色。 有关详细信息，请参阅[应用程序](../resources/application.md)资源上的**appRoles**属性定义。 不可为 null。 |
@@ -103,7 +103,7 @@ Content-length: 391
 
 
 ### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

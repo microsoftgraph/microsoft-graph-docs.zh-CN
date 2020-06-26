@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 01554b2cd8b07a75ad576b6d1533a33507e2315f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c33a5009a329deb42021fff5a26c4efa445ba26c
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43396284"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895781"
 ---
 # <a name="group-unsubscribebymail"></a>组：unsubscribeByMail
 
@@ -18,10 +18,10 @@ ms.locfileid: "43396284"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-调用此方法将禁用当前用户接收此组的电子邮件通知。此组中的新帖子、事件和文件。 仅支持 Office 365 组。 
+调用此方法将禁用当前用户接收此组的电子邮件通知。此组中的新帖子、事件和文件。 仅支持 Microsoft 365 组。 
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -38,14 +38,14 @@ POST /groups/{id}/unsubscribeByMail
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| Authorization  | Bearer {token}. Required.  |
 | Prefer | return=minimal。 如果 minimal 响应头包含在请求头中，那么成功响应返回 `204 No Content` 代码。 可选。  | 
 
 ## <a name="request-body"></a>请求正文
  请勿提供此方法的请求正文。 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。
+If successful, this method returns `200 OK` response code. It does not return anything in the response body.
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求

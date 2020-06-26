@@ -1,16 +1,16 @@
 ---
 title: 组资源类型
-description: 表示 Azure Active Directory (Azure AD) 组，可以是 Office 365 组、Microsoft Teams 中的团队或安全组。
+description: 表示 Azure Active Directory （Azure AD）组，可以是 Microsoft 365 组、Microsoft 团队中的团队或安全组。
 localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: b97719fca85468fbd239311df292bf779f356180
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: e7cbe462ec01665e97658ba0bef0767c87a10f80
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845923"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895508"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "44845923"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, a team in Microsoft Teams, or a security group.
+Represents an Azure Active Directory (Azure AD) group, which can be a Microsoft 365 group, a team in Microsoft Teams, or a security group.
 Inherits from [directoryObject](directoryobject.md).
 
 出于性能原因，默认情况下 [create](../api/group-post-groups.md)、[get](../api/group-get.md) 和 [list](../api/group-list.md) 操作仅返回更常用属性的子集。 这些_默认_属性将记录在[属性](#properties)部分中。 若要获取非默认返回的任一属性，请在 `$select` OData 查询选项中指定这些属性。
@@ -29,14 +29,14 @@ Inherits from [directoryObject](directoryobject.md).
 - 订阅[更改通知](/graph/webhooks)。
 - 通过提供 [delta](../api/user-delta.md) 函数，使用 [delta 查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
 
-> **Microsoft Teams 和 Office 365 组支持组协作**。 大多数的 Office 365 组 API 都可与 Microsoft Teams 结合使用。 若要创建[团队](team.md)，首先要[创建组](../api/group-post-groups.md)，然后[向组添加团队](../api/team-put-teams.md)。 有关详细信息，请参阅 [Microsoft Teams 概述](teams-api-overview.md)。
+> **Microsoft 团队和 microsoft 365 组支持组协作**。 你可以将大多数 Microsoft 365 组 API 用于 Microsoft 团队。 若要创建[团队](team.md)，首先要[创建组](../api/group-post-groups.md)，然后[向组添加团队](../api/team-put-teams.md)。 有关详细信息，请参阅 [Microsoft Teams 概述](teams-api-overview.md)。
 
 ## <a name="methods"></a>方法
 
 | 方法                                                                      | 返回类型                                                           | 说明                                                                                                                                                                                                           |
 |:----------------------------------------------------------------------------|:----------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **组管理**                                                        |                                                                       |                                                                                                                                                                                                                       |
-| [Create group](../api/group-post-groups.md)                                 | [group](group.md)                                                     | 新建指定的组。 它可以是 Office 365 组、动态组、安全组或团队。                                                                                                               |
+| [Create group](../api/group-post-groups.md)                                 | [group](group.md)                                                     | 新建指定的组。 它可以是 Microsoft 365 组、动态组、安全组或团队。                                                                                                               |
 | [Get group](../api/group-get.md)                                            | [group](group.md)                                                     | 读取 group 对象的属性和关系。                                                                                                                                                                    |
 | [Update group](../api/group-update.md)                                      | 无                                                                  | 更新 group 对象的属性。                                                                                                                                                                              |
 | [删除组](../api/group-delete.md)                                      | 无                                                                  | 删除组对象。                                                                                                                                                                                                  |
@@ -45,11 +45,11 @@ Inherits from [directoryObject](directoryobject.md).
 | [列出 groupLifecyclePolicy](../api/group-list-grouplifecyclepolicies.md)  | [groupLifecyclePolicy](grouplifecyclepolicy.md) 集合            | 列出组生命周期策略。                                                                                                                                                                                        |
 | [List owners](../api/group-list-owners.md)                                  | [directoryObject](directoryobject.md) 集合                      | 从 **owners** 导航属性中获取此组的所有者。                                                                                                                                                  |
 | [Add owner](../api/group-post-owners.md)                                    | [directoryObject](directoryobject.md)                                 | 通过发布到 **owners** 导航属性，为此组添加新所有者（仅支持为安全组和启用邮件的安全组添加）。                                                                 |
-| [Remove owner](../api/group-delete-owners.md)                               | 无                                                                  | 通过 **owners** 导航属性，删除 Office 365 组、安全组或启用邮件的安全组的所有者。                                                                               |
+| [Remove owner](../api/group-delete-owners.md)                               | 无                                                                  | 将所有者从 Microsoft 365 组、安全组或已启用邮件的安全组从**所有者**导航属性中删除。                                                                               |
 | [List members](../api/group-list-members.md)                                | [directoryObject](directoryobject.md) 集合                      | 从 **members** 导航属性中获取属于此组的直接成员的用户和组。                                                                                                              |
 | [List transitive members](../api/group-list-transitivemembers.md)           | [directoryObject](directoryobject.md) 集合                      | 获取属于此组成员（包括嵌套成员）的用户、组、设备和服务主体。                                                                                                      |
 | [Add member](../api/group-post-members.md)                                  | [directoryObject](directoryobject.md)                                 | 通过发布到 **members** 导航属性将用户或组添加到此组（仅支持安全组和启用邮件的安全组新）。                                                            |
-| [Remove member](../api/group-delete-members.md)                             | 无                                                                  | Remove a member from an Office 365 group, a security group or a mail-enabled security group through the **members** navigation property. You can remove users or other groups.                                        |
+| [Remove member](../api/group-delete-members.md)                             | 无                                                                  | Remove a member from a Microsoft 365 group, a security group or a mail-enabled security group through the **members** navigation property. You can remove users or other groups.                                        |
 | [列出 memberOf](../api/group-list-memberof.md)                              | [directoryObject](directoryobject.md) 集合                      | 通过 memberOf 导航属性，获取此组是其直接成员的组和管理单元。                                                                                                  |
 | [List transitive memberOf](../api/group-list-transitivememberof.md)         | [directoryObject](directoryobject.md) 集合                      | 列出该组所属的组和管理单元。 此操作是可传递的，并包括此组以嵌套方式所属的组。                                                  |
 | [checkMemberGroups](../api/group-checkmembergroups.md)                      | String 集合                                                     | Check for membership in a list of groups. The function is transitive.                                                                                                                                                 |
@@ -63,7 +63,7 @@ Inherits from [directoryObject](directoryobject.md).
 | [删除设置](../api/directorysetting-delete.md)                         | 无                                                                  | 删除 setting 对象。                                                                                                                                                                                              |
 | [List endpoints](../api/group-list-endpoints.md)                            | [endpoint](endpoint.md) 集合                                    | 获取 endpoint 对象集合。                                                                                                                                                                                    |
 | [Get endpoint](../api/endpoint-get.md)                                      | [endpoint](endpoint.md)                                               | 读取 endpoint 对象的属性和关系。                                                                                                                                                              |
-| [validateProperties](../api/group-validateproperties.md)                    | JSON                                                                  | 验证 Office 365 组的显示名称或邮件别名是否符合命名策略。                                                                                                                           |
+| [validateProperties](../api/group-validateproperties.md)                    | JSON                                                                  | 验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。                                                                                                                           |
 | [assignLicense](../api/group-assignlicense.md)                              | [组](group.md)                                                     | 为组添加或删除订阅。 还可以启用和禁用与订阅相关的特定计划。                                                                                             |
 | [evaluateDynamicMembership](../api/group-evaluatedynamicmembership.md)      | [evaluateDynamicMembershipResult](evaluatedynamicmembershipresult.md) | 评估用户或设备是否为动态组的成员。                                                                                                                                         |
 | **应用程序角色分配**                                                    |                                                                       |                                                                                                                                                                                                                       |
@@ -102,20 +102,20 @@ Inherits from [directoryObject](directoryobject.md).
 | [List photos](../api/group-list-photos.md)                                  | [profilePhoto](photo.md) 集合                                   | 获取组的个人资料照片集合。                                                                                                                                                                     |
 | [List plannerPlans](../api/plannergroup-list-plans.md)                      | [plannerPlan](plannerplan.md) 集合                              | 获取组拥有的 Planner 计划。                                                                                                                                                                                 |
 | **用户设置**                                                           |                                                                       |                                                                                                                                                                                                                       |
-| [addFavorite](../api/group-addfavorite.md)                                  | 无                                                                  | 将组添加到登录用户的收藏夹组列表中。 仅支持 Office 365 组。                                                                                                              |
-| [removeFavorite](../api/group-removefavorite.md)                            | 无                                                                  | 从登录用户收藏夹组列表中删除组。 仅支持 Office 365 组。                                                                                                         |
+| [addFavorite](../api/group-addfavorite.md)                                  | 无                                                                  | 将组添加到登录用户的收藏夹组列表中。 仅支持 Microsoft 365 组。                                                                                                              |
+| [removeFavorite](../api/group-removefavorite.md)                            | 无                                                                  | 从登录用户收藏夹组列表中删除组。 仅支持 Microsoft 365 组。                                                                                                         |
 | [List memberOf](../api/group-list-memberof.md)                              | [directoryObject](directoryobject.md) 集合                      | 从**memberOf**导航属性中获取此用户是其直接成员的组和管理单元。                                                                                              |
 | [List joinedTeams](../api/user-list-joinedteams.md)                         | [group](group.md) 集合                                          | 获取用户属于其直接成员的相应 Microsoft Teams。                                                                                                                                                          |
-| [subscribeByMail](../api/group-subscribebymail.md)                          | 无                                                                  | 将 isSubscribedByMail 属性设置为 **true**。 使登录用户可以接收电子邮件对话。 仅支持 Office 365 组。                                                                    |
-| [unsubscribeByMail](../api/group-unsubscribebymail.md)                      | 无                                                                  | 将 isSubscribedByMail 属性设置为 **false**。 使登录用户无法接收电子邮件对话。 仅支持 Office 365 组。                                                                |
-| [resetUnseenCount](../api/group-resetunseencount.md)                        | 无                                                                  | 将登录用户自上次访问后未查看的所有帖子的 unseenCount 重置为 0。 仅支持 Office 365 组。                                                                        |
+| [subscribeByMail](../api/group-subscribebymail.md)                          | 无                                                                  | 将 isSubscribedByMail 属性设置为 **true**。 使登录用户可以接收电子邮件对话。 仅支持 Microsoft 365 组。                                                                    |
+| [unsubscribeByMail](../api/group-unsubscribebymail.md)                      | 无                                                                  | 将 isSubscribedByMail 属性设置为 **false**。 使登录用户无法接收电子邮件对话。 仅支持 Microsoft 365 组。                                                                |
+| [resetUnseenCount](../api/group-resetunseencount.md)                        | 无                                                                  | 将登录用户自上次访问后未查看的所有帖子的 unseenCount 重置为 0。 仅支持 Microsoft 365 组。                                                                        |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowExternalSenders|布尔| 指明组织外部人员能否向群组发送邮件。 默认值为 **false**。 <br><br>仅在 $select 上返回。 |
-|assignedLabels|[assignedLabel](assignedlabel.md) 集合|与 Office 365 组关联的敏感度标签对（标签 ID、标签名称）列表。 <br><br>仅在 $select 上返回。 只读。|
+|allowExternalSenders|Boolean| 指明组织外部人员能否向群组发送邮件。 默认值为 **false**。 <br><br>仅在 $select 上返回。 |
+|assignedLabels|[assignedLabel](assignedlabel.md) 集合|与 Microsoft 365 组相关联的敏感度标签对列表（标签 ID、标签名称）。 <br><br>仅在 $select 上返回。|
 |assignedLicenses|[assignedLicense](assignedlicense.md) 集合|分配给该组的许可证。 <br><br>仅在 $select 上返回。 只读。|
 |autoSubscribeNewMembers|布尔值|指示添加到组中的新成员是否将自动订阅接收电子邮件通知。 可以在 PATCH 请求中设置组的这个属性；不要在创建该组的初始 POST 请求中设置它。 默认值为 **false**。 <br><br>仅在 $select 上返回。|
 |classification|字符串|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](directorysetting.md) value, based on the [template definition](directorysettingtemplate.md).<br><br>默认情况下返回。|
@@ -125,7 +125,7 @@ Inherits from [directoryObject](directoryobject.md).
 |说明|String|可选的组说明。 <br><br>默认情况下返回。|
 |displayName|String|组的显示名称。 此属性是在创建组时所必需的，并且在更新过程中不能清除。 <br><br>默认情况下返回。 支持 $filter 和 $orderby。 |
 |expirationDateTime|DateTimeOffset| 设置的组的过期时间戳。 值无法修改，并在组创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。 |
-|groupTypes|String collection| 指定组类型及其成员身份。  <br><br>如果集合包含 `Unified`，则该组是 Office 365 组，否则它是一个安全组。  <br><br>如果该集合包含 `DynamicMembership`，则该组具有动态成员身份；否则，成员身份是静态的。  <br><br>默认情况下返回。 支持 $filter。|
+|groupTypes|String collection| 指定组类型及其成员身份。  <br><br>如果集合包含， `Unified` 则组为 Microsoft 365 组; 否则为安全组。  <br><br>如果该集合包含 `DynamicMembership`，则该组具有动态成员身份；否则，成员身份是静态的。  <br><br>默认情况下返回。 支持 $filter。|
 |hasMembersWithLicenseErrors|Boolean| 指示此组中是否有该基于组的许可证分配中存在许可证错误的成员。 <br><br>GET 操作从未返回此属性。 可将它用作 $filter 参数，获取具有许可证错误的成员的组（也就是说，此属性的筛选器为 **true**）。|
 |hideFromAddressLists |Boolean |如果该组未显示在 Outlook 用户界面的某些部分中（“**通讯簿**”中、用于选择邮件收件人的地址列表中以及用于搜索组的“**浏览组**”中），则为 true；否则为 false。 默认值为 **false**。 <br><br>仅在 $select 上返回。|
 |hideFromOutlookClients |Boolean |如果该组未显示在 Outlook 客户端（如 Outlook for Windows 和 Outlook 网页版）中，则为 true；否则为 false。 默认值为 **false**。 <br><br>仅在 $select 上返回。|
@@ -145,18 +145,18 @@ Inherits from [directoryObject](directoryobject.md).
 |onPremisesSecurityIdentifier|String|包含从本地同步到云的组的本地安全标识符 (SID)。 <br><br>默认情况下返回。 只读。 |
 |onPremisesSyncEnabled|布尔|如果此组从本地目录同步，则为 **true**；如果此组最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。 <br><br>默认情况下返回。 只读。 支持 $filter。|
 |preferredDataLocation|String|组的首选数据位置。 有关详细信息，请参阅 [OneDrive Online 多地理位置](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。 <br><br>默认情况下返回。|
-|preferredLanguage|String|Office 365 组的首选语言。 应遵循 ISO 639-1 代码；例如“en-US”。 <br><br>默认情况下返回。 |
+|preferredLanguage|String|适用于 Microsoft 365 组的首选语言。 应遵循 ISO 639-1 代码；例如“en-US”。 <br><br>默认情况下返回。 |
 |proxyAddresses|String 集合| 指向同一组邮箱的组的电子邮件地址。 例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`。 需要多值属性筛选器表达式的 **any** 运算符。 <br><br>默认情况下返回。 只读。 不可为 null。 支持 $filter。 |
 |renewedDateTime|DateTimeOffset| 组的上次续订时间戳。 值不能直接修改，只能通过[续订服务操作](../api/grouplifecyclepolicy-renewgroup.md)进行更新。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。|
-|resourceBehaviorOptions|String collection|指定可以在创建期间为 Office 365 组设置的组行为。 可设置为只为创建的一部分（POST）。 可取值为：`AllowOnlyMembersToPost`、`HideGroupInOutlook`、`SubscribeNewGroupMembers`、`WelcomeEmailDisabled`。 有关详细信息，请参阅[Set Microsoft 365 group 行为和预配选项](/graph/group-set-options)。|
-|resourceProvisioningOptions|字符串集合|指定预配为 Office 365 组创建的一部分，但是通常不是默认组创建组成的组资源。 可能的值是 `Team`。 有关详细信息，请参阅[Set Microsoft 365 group 行为和预配选项](/graph/group-set-options)。|
+|resourceBehaviorOptions|String collection|指定在创建过程中可为 Microsoft 365 组设置的组行为。 可设置为只为创建的一部分（POST）。 可取值为：`AllowOnlyMembersToPost`、`HideGroupInOutlook`、`SubscribeNewGroupMembers`、`WelcomeEmailDisabled`。 有关详细信息，请参阅[Set Microsoft 365 group 行为和预配选项](/graph/group-set-options)。|
+|resourceProvisioningOptions|字符串集合|指定作为 Microsoft 365 组创建的一部分预配的组资源，这些资源通常不是默认组创建的一部分。 可能的值是 `Team`。 有关详细信息，请参阅[Set Microsoft 365 group 行为和预配选项](/graph/group-set-options)。|
 |securityEnabled|布尔|指定是否为安全组。 <br><br>默认情况下返回。 支持 `$filter`。|
 |securityIdentifier|字符串|组的安全标识符，用于 Windows 方案。 <br><br>默认情况下返回。|
-|theme|String|指定 Office 365 组的颜色主题。 可能的值为：`Teal`、`Purple`、`Green`、`Blue`、`Pink`、`Orange` 或 `Red`。 <br><br>默认情况下返回。 |
+|theme|String|指定 Microsoft 365 组的颜色主题。 可能的值为：`Teal`、`Purple`、`Green`、`Blue`、`Pink`、`Orange` 或 `Red`。 <br><br>默认情况下返回。 |
 |unseenConversationsCount|Int32|自登录用户上次访问该组以来已传递一个或多个新帖子的对话计数。 此属性与 **unseenCount** 相同。 <br><br>仅在 $select 上返回。|
 |unseenCount|Int32|自登录用户上次访问该组以来收到新帖子的对话计数。 此属性与 **unseenConversationsCount** 相同。<br><br>仅在 $select 上返回。 |
 |unseenMessagesCount|Int32|自登录用户上次访问该组以来已传递到组对话的新帖子计数。 <br><br>仅在 $select 上返回。|
-|visibility|String| 指定 Office 365 组的可见性。 可能的值为：`Private`、`Public` 或 `Hiddenmembership`；空白值视为公共值。  请参阅[组可见性选项](#group-visibility-options)以了解详细信息。<br>只有在创建组时才能设置可见性；不能对其进行编辑。<br>只有统一组才支持可见性；安全组不支持可见性。 <br><br>默认情况下返回。|
+|visibility|String| 指定 Microsoft 365 组的可见性。 可能的值为：`Private`、`Public` 或 `Hiddenmembership`；空白值视为公共值。  请参阅[组可见性选项](#group-visibility-options)以了解详细信息。<br>只有在创建组时才能设置可见性；不能对其进行编辑。<br>只有统一组才支持可见性；安全组不支持可见性。 <br><br>默认情况下返回。|
 
 ### <a name="group-visibility-options"></a>组可见性选项
 
@@ -170,7 +170,7 @@ Inherits from [directoryObject](directoryobject.md).
 
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型   |Description|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |acceptedSenders|[directoryObject](directoryobject.md) 集合|The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.|
 |日历|[日历](calendar.md)|The group's calendar. Read-only.|

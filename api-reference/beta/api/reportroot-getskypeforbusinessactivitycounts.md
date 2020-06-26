@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 7571a602de7e1b31e0a731cfb0c367064f9f7d52
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: bb2194d813a4ecc98ca504b00e633e71a12a91ae
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42588961"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896215"
 ---
 # <a name="reportroot-getskypeforbusinessactivitycounts"></a>reportRoot: getSkypeForBusinessActivityCounts
 
@@ -20,11 +20,11 @@ ms.locfileid: "42588961"
 
 获取通过 Skype for Business 组织并参与在组织中召开的会议会话的用户数趋势。 报表还包含对等会话数。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Skype for Business 活动](https://support.office.com/client/Skype-for-Business-Online-activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424)。
+> **注意：** 若要详细了解不同的报表视图和名称，请参阅[Microsoft 365 报表-Skype For business 活动](https://support.office.com/client/Skype-for-Business-Online-activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :--------------------------------------- |
@@ -32,7 +32,7 @@ ms.locfileid: "42588961"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
-**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅 [Authorization for APIs to read Office 365 usage reports](/graph/reportroot-authorization)。
+**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 For api 以读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,17 +46,17 @@ GET /reports/getSkypeForBusinessActivityCounts(period='{period_value}')
 
 在请求 URL 中，提供以下参数的有效值。
 
-| 参数 | 类型   | Description                              |
+| 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
 此方法支持使用 `$format` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称          | 说明               |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}。必需。 |
+| Authorization | Bearer {token}. Required. |
 
 ## <a name="response"></a>响应
 
@@ -77,7 +77,7 @@ CSV 文件包含下面的列标题。
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和**[skypeForBusinessActivityCounts](../resources/skypeforbusinessactivitycounts.md)** 对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和**[skypeForBusinessActivityCounts](../resources/skypeforbusinessactivitycounts.md)** 对象。
 
 ## <a name="example"></a>示例
 
@@ -148,9 +148,9 @@ GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessActivityCounts(p
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

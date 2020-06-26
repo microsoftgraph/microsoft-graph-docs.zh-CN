@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: e2415e9ede9f31f54e58f911c69310bbf9ad6442
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: e84c7408eb6924205e86059c969201d1c94dcd70
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44862474"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896512"
 ---
 # <a name="create-schemaextension"></a>创建 schemaExtension
 
@@ -54,7 +54,7 @@ POST /schemaExtensions
 
 下表显示创建架构扩展时可用的属性。
 
-| 参数 | 类型 | Description|
+| 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
 |说明|String|架构扩展的说明。|
 |id|字符串|架构扩展定义的唯一标识符。 <br>你可以使用下面两种方法之一分配值： <ul><li>连接其中一个已验证域的域名与架构扩展名称，形成此格式的唯一字符串：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。 示例：`contoso_mySchema`。 注意：仅支持以下顶级域下已经过验证的域：`.com`、`.net`、`.gov`、`.edu` 或 `.org`。 </li><li>Provide a schema name, and let Microsoft Graph use that schema name to complete the **id** assignment in this format: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. An example would be `extkvbmkofy_mySchema`.</li></ul>此属性一旦创建，便无法更改。 |
@@ -257,13 +257,15 @@ Content-length: 420
 
 本示例演示如何创建**所有者**的架构扩展设置。  在这种情况下，应用程序的用户可能不是应用程序的所有者（例如，如果使用的是 Microsoft Graph 资源管理器）。  在这种情况下，应将**owner**属性设置为您拥有的应用程序的**appId** ，否则您将不会被授权创建架构扩展。 在请求中设置**owner**属性，以及[schemaExtension](../resources/schemaextension.md)对象中的其余属性的 JSON 表示形式。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_schemaextension_from_schemaextensions_3"
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/schemaExtensions
+POST https://graph.microsoft.com/beta/schemaExtensions
 Content-type: application/json
 
 {
@@ -289,6 +291,20 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-schemaextension-from-schemaextensions-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-schemaextension-from-schemaextensions-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-schemaextension-from-schemaextensions-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

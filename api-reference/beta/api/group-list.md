@@ -1,16 +1,16 @@
 ---
 title: 列出组
-description: 列出组织中所有可用的组，包括但不限于 Office 365 组。
+description: 列出组织中所有可用的组，包括但不限于 Microsoft 365 组。
 localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7b0fb758e0d852e4cf72dfb0c271dc0aae686e42
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 712cbf456ebf150890b83a2509de7b899bbef631
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44332775"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895823"
 ---
 # <a name="list-groups"></a>列出组
 
@@ -18,13 +18,13 @@ ms.locfileid: "44332775"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出组织中的所有组，包括但不限于 Office 365 组。 
+列出组织中的所有组，包括但不限于 Microsoft 365 组。 
 
 此操作在默认情况下仅返回每个组的一部分较常用属性。 这些_默认_属性将记录在[属性](../resources/group.md#properties)部分中。 若要获取_非_默认返回的属性，请对组执行 [GET](group-get.md) 操作，并在 `$select` OData 查询选项中指定这些属性。 **hasMembersWithLicenseErrors** 属性是一个例外，不会在 `$select` 查询中返回。
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:--------------- |:------------------------------------------- |
@@ -41,7 +41,7 @@ GET /groups
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-若要仅列出 Office 365 组（亦称为“统一组”），请对 **groupTypes** 应用筛选器：
+若要仅列出 Microsoft 365 组（也称为 "统一组"），请在**groupTypes**上应用筛选器：
 <!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unified')
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/groups?$orderby=displayName
 
 | 名称 | 说明 |
 |:---- |:----------- |
-| Authorization  | Bearer {token}。必需。 |
+| Authorization  | Bearer {token}. Required. |
 | ConsistencyLevel | 仍然. 此标头 `$count` 在使用时 `$search` 或在 `$filter` 与查询参数一起使用时是必需的 `$orderby` 。 它使用的索引可能不是最新的对象更改。 |
 
 ## <a name="request-body"></a>请求正文
@@ -222,7 +222,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -256,7 +256,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -314,7 +314,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -357,7 +357,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

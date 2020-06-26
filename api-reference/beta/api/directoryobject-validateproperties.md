@@ -1,22 +1,22 @@
 ---
 title: directoryObject： validateProperties
-description: 验证 Office 365 组的显示名称或邮件别名是否符合命名策略。
+description: 验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。
 localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fcdaa24b874b30db52e737ed048618b6cf6d4377
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 45178491bb6ae451cb1ee39a182263a3d99ce59f
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180921"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895746"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject： validateProperties
 
 命名空间：microsoft.graph
 
-验证 Office 365 组的显示名称或邮件别名是否符合命名策略。  在尝试**创建**Office 365 组之前，客户端可以使用此 API 来确定显示名称或邮件昵称是否有效。 若要验证现有组的属性，请使用组的[validateProperties 函数](group-validateproperties.md)。
+验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。  在尝试**创建**Microsoft 365 组之前，客户端可以使用此 API 来确定显示名称或邮件昵称是否有效。 若要验证现有组的属性，请使用组的[validateProperties 函数](group-validateproperties.md)。
 
 将为显示名称和邮件昵称属性执行以下验证： 
 1. 验证前缀和后缀命名策略
@@ -26,7 +26,7 @@ ms.locfileid: "43180921"
 此 API 在遇到第一次失败时返回。 如果一个或多个属性失败多次验证，则仅返回第一个验证失败的属性。 但是，如果仅验证前缀和后缀命名策略，则可以验证邮件别名和显示名称，并接收验证错误的集合。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -59,11 +59,11 @@ POST /directoryObjects/validateProperties
 
 ## <a name="response"></a>响应
 
-如果成功且没有验证错误，则该方法返回`204 No Content`响应代码。 它不在响应正文中返回任何内容。
+如果成功且没有验证错误，则该方法返回 `204 No Content` 响应代码。 它不在响应正文中返回任何内容。
 
-如果请求无效，该方法将返回`400 Bad Request`响应代码。 有关无效请求的详细信息的错误消息将在响应正文中返回。
+如果请求无效，该方法将返回 `400 Bad Request` 响应代码。 有关无效请求的详细信息的错误消息将在响应正文中返回。
 
-如果存在验证错误，该方法将返回`422 Unprocessable Entity`响应代码。 响应正文中返回一条错误消息和一组错误详细信息。
+如果存在验证错误，该方法将返回 `422 Unprocessable Entity` 响应代码。 响应正文中返回一条错误消息和一组错误详细信息。
 
 ## <a name="examples"></a>示例
 

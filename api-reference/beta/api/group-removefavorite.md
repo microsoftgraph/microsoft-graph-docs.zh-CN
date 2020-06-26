@@ -1,16 +1,16 @@
 ---
 title: 'group: removeFavorite'
-description: 从当前用户收藏夹组列表中删除组。仅支持 Office 365 组。
+description: 从当前用户收藏夹组列表中删除组。 仅支持 Microsoft 365 组。
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3be0788fdf5093520e55c1ce40a3290cd4be5e15
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fe33a3ada951a87ea82f6f4875ab11843e9971b8
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43396339"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895802"
 ---
 # <a name="group-removefavorite"></a>group: removeFavorite
 
@@ -18,10 +18,10 @@ ms.locfileid: "43396339"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从当前用户收藏夹组列表中删除组。仅支持 Office 365 组。
+从当前用户收藏夹组列表中删除组。 仅支持 Microsoft 365 组。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -38,14 +38,14 @@ POST /groups/{id}/removeFavorite
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| Authorization  | Bearer {token}. Required.  |
 | Prefer | return=minimal。 如果 minimal 响应头包含在请求头中，那么成功响应返回 `204 No Content` 代码。 可选。  | 
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。
+If successful, this method returns `200 OK` response code. It does not return anything in the response body.
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求

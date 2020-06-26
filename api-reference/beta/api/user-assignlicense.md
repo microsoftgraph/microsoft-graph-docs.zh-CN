@@ -1,16 +1,16 @@
 ---
 title: assignLicense
-description: 添加或删除用户的许可证，以启用或禁用其对 Microsoft 云产品的使用。 例如，组织可以拥有具有100许可证的 Office 365 企业版 E3 订阅，此请求将其中一个许可证分配给特定用户。 还可以启用和禁用与订阅相关的特定计划。 若要了解有关订阅和许可证的详细信息，请参阅此 Technet 文章。
+description: 添加或删除用户的许可证，以启用或禁用其对 Microsoft 云产品的使用。 例如，组织可以拥有具有100许可证的 Microsoft 365 企业版 E3 订阅，此请求将其中一个许可证分配给特定用户。 还可以启用和禁用与订阅相关的特定计划。 若要了解有关订阅和许可证的详细信息，请参阅此 Technet 文章。
 localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: dcb075650528cbd2e796b3b8a1b51b3ba88c81a0
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 931cf6b4a77993da7564b157787b29f338bc2690
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108023"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896481"
 ---
 # <a name="user-assignlicense"></a>用户：assignLicense
 
@@ -18,12 +18,12 @@ ms.locfileid: "43108023"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-添加或删除用户的许可证，以启用或禁用其对 Microsoft 云产品的使用。 例如，组织可以拥有具有100许可证的 Office 365 企业版 E3 订阅，此请求将其中一个许可证分配给特定用户。 还可以启用和禁用与订阅相关的特定计划。 若要了解有关订阅和许可证的详细信息，请参阅此[Technet 文章](https://technet.microsoft.com/library/mt765146.aspx)。
+添加或删除用户的许可证，以启用或禁用其对 Microsoft 云产品的使用。 例如，组织可以拥有具有100许可证的 Microsoft 365 企业版 E3 订阅，此请求将其中一个许可证分配给特定用户。 还可以启用和禁用与订阅相关的特定计划。 若要了解有关订阅和许可证的详细信息，请参阅此[Technet 文章](https://technet.microsoft.com/library/mt765146.aspx)。
 
 若要获取目录中可用的订阅，请执行[Get subscribedsku 请求](subscribedsku-list.md)。 
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -39,7 +39,7 @@ POST /users/{id | userPrincipalName}/assignLicense
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
@@ -52,7 +52,7 @@ POST /users/{id | userPrincipalName}/assignLicense
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`200 OK`响应正文中返回响应代码和更新的[user](../resources/user.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[user](../resources/user.md)对象。
 
 ## <a name="example"></a>示例
 向用户添加许可证。

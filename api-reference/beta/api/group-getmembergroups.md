@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 77035980e83dd613c0ffc378d3a307fd967d953f
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 1e677d3aa033283417bfe6292d801455b425dff6
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124208"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895844"
 ---
 # <a name="group-getmembergroups"></a>group: getMemberGroups
 
@@ -18,13 +18,13 @@ ms.locfileid: "43124208"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回指定组所属的所有组。检查是可传递的，这和读取 [memberOf](../api/group-list-memberof.md) 导航属性不同，后者仅返回该组是其直接成员的组。
+Return all the groups that the specified group is a member of. The check is transitive, unlike reading the [memberOf](../api/group-list-memberof.md) navigation property, which returns only the groups that the group is a direct member of.
 
-此功能支持 Office 365 和 Azure AD 中设置的其他类型的组。每个请求可以返回的最大组数为 2046 组。注意：Office 365 组不能包含组。因此，Office 365 组中的成员身份始终是直接的。
+此函数支持在 Azure AD 中预配的 Microsoft 365 和其他类型的组。 每个请求可以返回的最大组数为 2046 组。 请注意，Microsoft 365 组不能包含组。 因此，Microsoft 365 组中的成员身份始终是直接的。
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
@@ -44,7 +44,7 @@ POST /groups/{id}/getMemberGroups
 
 | 名称          | 类型   | 说明               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}。必需。 |
+| Authorization | string | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>请求正文
 
@@ -52,7 +52,7 @@ POST /groups/{id}/getMemberGroups
 
 | 参数           | 类型    | 说明                                                                           |
 | :------------------ | :------ | :------------------------------------------------------------------------------------ |
-| securityEnabledOnly | Boolean | 设置为 **false**。只支持对用户仅返回启用安全机制的组。 |
+| securityEnabledOnly | Boolean | Set to **false**. Returning only security-enabled groups is supported for users only. |
 
 ## <a name="response"></a>响应
 
@@ -99,7 +99,7 @@ Content-length: 33
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

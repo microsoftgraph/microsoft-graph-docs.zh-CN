@@ -1,16 +1,16 @@
 ---
 title: 列出事件
-description: 检索日历中的事件列表。该列表包含单实例会议和系列主控事件。
+description: Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.
 author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 519267d8f6622e40258d7d25138c141a24bd966a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 121e16524fb3edd54fe8cb1562c7fa38cd208fa9
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43361449"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895641"
 ---
 # <a name="list-events"></a>列出事件
 
@@ -18,7 +18,7 @@ ms.locfileid: "43361449"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索日历中的事件列表。  可以是[用户](../resources/user.md)的日历，也可以是 Office 365 [组](../resources/group.md)的默认日历。 事件列表包含单个实例会议和系列母版。
+检索日历中的事件列表。  日历可以是[用户](../resources/user.md)的一个，也可以是 Microsoft 365[组](../resources/group.md)的默认日历。 事件列表包含单个实例会议和系列母版。
 
 要获取扩展的事件实例，可以[获取日历视图](calendar-list-calendarview.md)，或者[获取事件的实例](event-list-instances.md)。
 
@@ -57,7 +57,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明 |
 |:---------------|:--------|:--------|
-| Authorization  | string | Bearer {token}。必需。  |
+| Authorization  | string | Bearer {token}. Required.  |
 | Prefer: outlook.timezone  | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |
 
 ## <a name="request-body"></a>请求正文
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/me/calendar/events
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

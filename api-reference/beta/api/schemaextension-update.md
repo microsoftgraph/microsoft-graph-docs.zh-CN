@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 083e3a998ddacd25c9a29e19ccf07be66e23f594
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 3fd6ed535c2d6a30f85c8b46930a96c7cc8cee8f
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44862475"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896579"
 ---
 # <a name="update-schemaextension"></a>更新 schemaExtension
 
@@ -56,7 +56,7 @@ PATCH /schemaExtensions/{id}
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
-| 属性   | 类型 |Description|
+| 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |说明|String|架构扩展的说明。|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) 集合|构成架构扩展定义的属性名称和类型的集合。 仅允许进行累加性更改。 |
@@ -92,7 +92,7 @@ Content-length: 201
       "name":"additional-name-value",
       "type":"additional-type-value"
     }
-  ],
+  ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8dc93cf3d301f2577076852024cfb535e3852741
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: fbfc08f634ff499ca73bd4102119cfd9d1795052
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863107"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895620"
 ---
 # <a name="patch-channel"></a>修补程序通道
 
@@ -85,13 +85,6 @@ Here is an example of the response. Note: The response object shown here may be 
 } -->
 ```http
 HTTP/1.1 204 No Content
-Content-type: application/json
-Content-length: 201
-
-{
-    "description": "description-value",
-    "displayName": "display-name-value",
-}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

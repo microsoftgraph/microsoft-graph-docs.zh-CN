@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d26b28a0b94d4316271a217a0e9d73b2d4e78125
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: e5559e2c581e573e8154168ba5bd1db39cdb536e
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107967"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896474"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -18,13 +18,13 @@ ms.locfileid: "43107967"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检查指定组列表中的成员身份。从列表中返回用户具有直接或可传递成员身份的组。
+Check for membership in the specified list of groups. Returns from the list those groups of which the user has a direct or transitive membership.
 
-每个请求最多可检查 20 个组。此功能支持 Office 365 和 Azure AD 中设置的其他类型的组。注意：Office 365 组无法包含组。因此，Office 365 组中的成员身份始终是直接的。
+You can check up to a maximum of 20 groups per request. This function supports Microsoft 365 and other types of groups provisioned in Azure AD. Note that Microsoft 365 groups cannot contain groups. So membership in a Microsoft 365 group is always direct.
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                                        |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
@@ -44,7 +44,7 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 
 | 标头        | 值                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}。必需。 |
+| Authorization | Bearer {token}. Required. |
 | Content-Type  | application/json          |
 
 ## <a name="request-body"></a>请求正文
@@ -102,7 +102,7 @@ Content-length: 44
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

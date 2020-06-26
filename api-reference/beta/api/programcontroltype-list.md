@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 32a5fcbf793570168f87a8b2501a8ff6dd9061c1
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 93cf528b1fec7f857057ea469ae5c313dee6c07c
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123107"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896425"
 ---
 # <a name="list-programcontroltypes"></a>列出 programControlTypes
 
@@ -20,13 +20,13 @@ ms.locfileid: "43123107"
 
 在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中，列出所有[programControlType](../resources/programcontroltype.md)对象。
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | ProgramControl、ProgramControl 和所有   |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | ProgramControl "、ProgramControl 的所有  |
+|应用程序                            | ProgramControl "、ProgramControl 的所有  |
 
 登录用户还必须位于允许他们读取程序的目录角色中。
 
@@ -38,13 +38,13 @@ GET /programControlTypes
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者 \{token\}。必需。 |
+| Authorization | string | Bearer \{token\}. Required. |
 
 ## <a name="request-body"></a>请求正文
 不应提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200, OK`正文中返回响应代码和[programControlType](../resources/programcontroltype.md)对象的数组。
+如果成功，此方法 `200, OK` 在响应正文中返回响应代码和[programControlType](../resources/programcontroltype.md)对象的数组。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/programControlTypes
 
 
 ##### <a name="response"></a>响应
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,7 +101,7 @@ Content-type: application/json
         },
         {
             "id": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
-            "displayName": "Access Reviews for Office 365 Groups' membership"
+            "displayName": "Access Reviews for Microsoft 365 groups' membership"
         }
     ]
 }

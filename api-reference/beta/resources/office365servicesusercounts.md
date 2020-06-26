@@ -5,16 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 0deb5eceb31ca3453c1cc5f29ae669f7053738c9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8600e79d425d15746fd7015adea98eb49a8a3c82
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522419"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44896551"
 ---
 # <a name="office365servicesusercounts-resource-type"></a>office365ServicesUserCounts 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 ## <a name="properties"></a>属性
 
@@ -33,8 +33,8 @@ ms.locfileid: "42522419"
 | yammerInactive           | Int64  | Yammer 上的非活动用户数。  |
 | teamsActive              | Int64  | Microsoft 团队中的活动用户数。 任何在团队频道中投递了邮件、在私人聊天会话中发送的邮件或参与会议或呼叫的用户都被视为活动用户。 |
 | teamsInactive            | Int64  | Microsoft 团队中的非活动用户数。     |
-| office365Active          | Int64  | Office 365 上的活动用户数。   |
-| office365Inactive        | Int64  | Office 365 上的非活动用户数。     |
+| office365Active          | Int64  | Microsoft 365 上的活动用户数。   |
+| office365Inactive        | Int64  | Microsoft 365 上的非活动用户数。     |
 | reportPeriod             | String | 报告覆盖的天数。    |
 
 ## <a name="json-representation"></a>JSON 表示形式
