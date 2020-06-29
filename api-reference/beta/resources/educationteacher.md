@@ -5,31 +5,34 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ad01c29313198b0feab2b4258c9eaafcb9a4f727
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4cd8b11d5f398177ec301e6cb7d834268e97c005
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500014"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909702"
 ---
-# <a name="educationteacher-resource-type"></a><span data-ttu-id="9668e-103">educationTeacher 资源类型</span><span class="sxs-lookup"><span data-stu-id="9668e-103">educationTeacher resource type</span></span>
+# <a name="educationteacher-resource-type"></a><span data-ttu-id="35ad3-103">educationTeacher 资源类型</span><span class="sxs-lookup"><span data-stu-id="35ad3-103">educationTeacher resource type</span></span>
 
-<span data-ttu-id="9668e-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="9668e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="35ad3-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="35ad3-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9668e-105">添加到 [educationUser](educationuser.md) 的其他信息，该属性将在用户的 primaryRole 为 `teacher` 时显示。</span><span class="sxs-lookup"><span data-stu-id="9668e-105">Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `teacher`.</span></span>
+<span data-ttu-id="35ad3-105">添加到 [educationUser](educationuser.md) 的其他信息，该属性将在用户的 primaryRole 为 `teacher` 时显示。</span><span class="sxs-lookup"><span data-stu-id="35ad3-105">Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `teacher`.</span></span>
 
+> [!IMPORTANT]
+> <span data-ttu-id="35ad3-106">使用委派权限作用域时，Graph 将仅返回 `externalId` 属性。</span><span class="sxs-lookup"><span data-stu-id="35ad3-106">When using Delegated permission scopes, Graph will only return the `externalId` properties.</span></span> <span data-ttu-id="35ad3-107">所有其他属性都需要应用程序范围。</span><span class="sxs-lookup"><span data-stu-id="35ad3-107">All other properties require Application scopes.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="9668e-106">属性</span><span class="sxs-lookup"><span data-stu-id="9668e-106">Properties</span></span>
-| <span data-ttu-id="9668e-107">属性</span><span class="sxs-lookup"><span data-stu-id="9668e-107">Property</span></span>     | <span data-ttu-id="9668e-108">类型</span><span class="sxs-lookup"><span data-stu-id="9668e-108">Type</span></span>   |<span data-ttu-id="9668e-109">说明</span><span class="sxs-lookup"><span data-stu-id="9668e-109">Description</span></span>|
-|:---------------|:--------|:----------|
-|<span data-ttu-id="9668e-110">externalId</span><span class="sxs-lookup"><span data-stu-id="9668e-110">externalId</span></span>|<span data-ttu-id="9668e-111">String</span><span class="sxs-lookup"><span data-stu-id="9668e-111">String</span></span>| <span data-ttu-id="9668e-112">源系统中教师的 ID。</span><span class="sxs-lookup"><span data-stu-id="9668e-112">ID of the teacher in the source system.</span></span>|
-|<span data-ttu-id="9668e-113">teacherNumber</span><span class="sxs-lookup"><span data-stu-id="9668e-113">teacherNumber</span></span>|<span data-ttu-id="9668e-114">String</span><span class="sxs-lookup"><span data-stu-id="9668e-114">String</span></span>|<span data-ttu-id="9668e-115">教师编号。</span><span class="sxs-lookup"><span data-stu-id="9668e-115">Teacher number.</span></span>|
+## <a name="properties"></a><span data-ttu-id="35ad3-108">属性</span><span class="sxs-lookup"><span data-stu-id="35ad3-108">Properties</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="9668e-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="9668e-116">JSON representation</span></span>
+| <span data-ttu-id="35ad3-109">属性</span><span class="sxs-lookup"><span data-stu-id="35ad3-109">Property</span></span>      | <span data-ttu-id="35ad3-110">类型</span><span class="sxs-lookup"><span data-stu-id="35ad3-110">Type</span></span>   | <span data-ttu-id="35ad3-111">说明</span><span class="sxs-lookup"><span data-stu-id="35ad3-111">Description</span></span>                                  |
+| :------------ | :----- | :------------------------------------------- |
+| <span data-ttu-id="35ad3-112">externalId</span><span class="sxs-lookup"><span data-stu-id="35ad3-112">externalId</span></span>    | <span data-ttu-id="35ad3-113">String</span><span class="sxs-lookup"><span data-stu-id="35ad3-113">String</span></span> | <span data-ttu-id="35ad3-114">外部源系统中的教师 Id。</span><span class="sxs-lookup"><span data-stu-id="35ad3-114">Id of the Teacher in external source system.</span></span> |
+| <span data-ttu-id="35ad3-115">teacherNumber</span><span class="sxs-lookup"><span data-stu-id="35ad3-115">teacherNumber</span></span> | <span data-ttu-id="35ad3-116">String</span><span class="sxs-lookup"><span data-stu-id="35ad3-116">String</span></span> | <span data-ttu-id="35ad3-117">教师编号。</span><span class="sxs-lookup"><span data-stu-id="35ad3-117">Teacher number.</span></span>                              |
 
-<span data-ttu-id="9668e-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9668e-117">The following is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="35ad3-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="35ad3-118">JSON representation</span></span>
+
+<span data-ttu-id="35ad3-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="35ad3-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -44,7 +47,6 @@ ms.locfileid: "42500014"
   "externalId": "String",
   "teacherNumber": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

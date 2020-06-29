@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: bb1b1aa935d25cab1d33c94aee6fb4f8953a5e53
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 47668e7004da485381ad813cfd84626a0dce6d7a
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44338846"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44900326"
 ---
 ```java
 
@@ -16,7 +16,7 @@ String comment = "I will probably be able to make it.";
 boolean sendResponse = true;
 
 graphClient.me().events("AAMkADADVj3fyAABZ5ieyAAA=")
-    .tentativelyAccept(null,sendResponse,comment)
+    .tentativelyAccept(comment,sendResponse)
     .buildRequest()
     .post();
 
