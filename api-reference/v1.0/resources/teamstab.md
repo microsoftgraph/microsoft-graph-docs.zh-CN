@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c62905699b8986d9594ccad06d154d93b71313fc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1e113575745e50f52571636f37a7a2d4c93a9924
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533474"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909770"
 ---
 # <a name="teamstab-resource-type"></a>teamsTab 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "42533474"
 
 TeamsTab 是固定（附加）到[团队](team.md)中的[频道](channel.md)的[选项卡](../resources/teamstab.md)。 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
@@ -37,8 +37,8 @@ TeamsTab 是固定（附加）到[团队](team.md)中的[频道](channel.md)的[
 |:---------------|:--------|:----------|
 |  id              |   字符串                  |  唯一标识 "通道" 选项卡的特定实例的标识符。只读。     |
 |  displayName            |   string                  |  选项卡的名称。     |
-|  webUrl          |   string                  |  选项卡实例的深层链接 url。 只读。     |
-|  设置        |   [teamsTabConfiguration](teamstabconfiguration.md) |  应用于选项卡的自定义设置的容器。仅在设置此属性后，才会认为选项卡已配置。     |
+|  webUrl          |   string                  |  选项卡实例的深层链接 URL。 只读。     |
+|  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  应用于选项卡的自定义设置的容器。仅在设置此属性后，才会认为选项卡已配置。     |
 
 ## <a name="relationships"></a>关系
 
@@ -64,7 +64,6 @@ TeamsTab 是固定（附加）到[团队](team.md)中的[频道](channel.md)的[
   "webUrl": "string",
   "configuration" : "teamsTabConfiguration"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

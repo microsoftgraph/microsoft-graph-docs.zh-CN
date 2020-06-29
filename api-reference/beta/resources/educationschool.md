@@ -5,16 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 67baa3f5a57e968b53ae3f51a6c49b3743be25a6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 208527c1b846a307b88e3f96204dba660caedb9a
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500938"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909551"
 ---
 # <a name="educationschool-resource-type"></a>educationSchool 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,22 +40,22 @@ ms.locfileid: "42500938"
 
 ## <a name="properties"></a>属性
 
-| 属性            | 类型                                  | 说明                                        |
-| :------------------ | :------------------------------------ | :------------------------------------------------- |
-| id                  | 字符串                                | 该学校的 GUID。                               |
-| address             | [physicalAddress](physicaladdress.md) | 学校地址。                             |
-| createdBy           | [identitySet](identityset.md)         | 创建了学校的实体。                     |
-| 说明         | String                                | 学校描述。                         |
-| displayName         | 字符串                                | 学校的显示名称。                        |
-| externalId          | String                                | 同步系统中学校的 ID。                    |
-| externalPrincipalId | String                                | 同步系统中主体的 ID。                 |
-| externalSource      | string                                | 只读。 可能的值是：`sis` 或 `manual`。 |
-| highestGrade        | String                                | 教授的最高年级。                              |
-| lowestGrade         | String                                | 教授的最低年级。                               |
-| phone               | String                                | 学校电话号码。                            |
-| principalEmail      | String                                | 主体的电子邮件地址。                    |
-| principalName       | String                                | 主体名称。                             |
-| schoolNumber        | String                                | 学校编号。                                     |
+| 属性            | 类型                                  | 说明                                               |
+| :------------------ | :------------------------------------ | :-------------------------------------------------------- |
+| id                  | 字符串                                | 该学校的 GUID。                                      |
+| address             | [physicalAddress](physicaladdress.md) | 学校地址。                                    |
+| createdBy           | [identitySet](identityset.md)         | 创建了学校的实体。                            |
+| description         | String                                | 学校描述。                                |
+| displayName         | 字符串                                | 学校的显示名称。                               |
+| externalId          | String                                | 同步系统中学校的 ID。                           |
+| externalPrincipalId | String                                | 同步系统中主体的 ID。                        |
+| externalSource      | String                                | 只读。 可能的值为 `sis` ： `lms` 或 `manual` 。 |
+| highestGrade        | String                                | 教授的最高年级。                                     |
+| lowestGrade         | String                                | 教授的最低年级。                                      |
+| phone               | String                                | 学校电话号码。                                   |
+| principalEmail      | String                                | 主体的电子邮件地址。                           |
+| principalName       | String                                | 主体名称。                                    |
+| schoolNumber        | String                                | 学校编号。                                            |
 
 ## <a name="relationships"></a>关系
 
@@ -76,7 +76,6 @@ ms.locfileid: "42500938"
 ],
 "@odata.type": "microsoft.graph.educationSchool"
 }-->
-
 
 ```json
 {
@@ -105,7 +104,7 @@ ms.locfileid: "42500938"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [ 
-    "Error: Resource educationSchool has documented navigation properties, but we thought it was a complex type!" 
-  ]  
+  "suppressions": [
+    "Error: Resource educationSchool has documented navigation properties, but we thought it was a complex type!"
+  ]
 }-->

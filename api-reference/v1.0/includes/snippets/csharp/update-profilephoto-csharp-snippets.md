@@ -1,17 +1,17 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fbc0f42c44b78e10f3927e64200900125f27f6f8
-ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
+ms.openlocfilehash: c2488ea9822e019684622ba1115b6e4005553abd
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428843"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44900289"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var stream = "Binary data for the image"
+using var stream = new System.IO.MemoryStream(Encoding.UTF8.GetBytes("Binary data for the image"));
 
 await graphClient.Me.Photo.Content
     .Request()

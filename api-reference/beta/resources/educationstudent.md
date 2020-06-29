@@ -5,30 +5,34 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 9b8f2de9f3b40a72aab7f9273b9b4fc30594059b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e64899cf56140246373c36428518ebd28bb136c7
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500763"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909721"
 ---
 # <a name="educationstudent-resource-type"></a>educationStudent 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 添加到 [educationUser](educationuser.md) 的其他信息，该属性将在用户的 primaryRole 为 `student` 时显示。
 
+> [!IMPORTANT]
+> 使用委派权限作用域时，Graph 将仅返回 `externalId` 属性。 所有其他属性都需要应用程序范围。
+
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
-|:---------------|:--------|:----------|
-|birthDate|Date| 学生的出生日期。|
-|externalId|String| 源系统中学生的 ID。|
-|gender|educationGender| 可取值为：`female`、`male`、`other`。|
-|grade|String|学生的当前年级。|
-|graduationYear|String| 学生从学校毕业的年份。|
-|studentNumber|String| 学生编号。|
+
+| 属性       | 类型            | 说明                                     |
+| :------------- | :-------------- | :---------------------------------------------- |
+| birthDate      | Date            | 学生的出生日期。                      |
+| externalId     | String          | 源系统中学生的 ID。         |
+| gender         | educationGender | 可取值为：`female`、`male`、`other`。 |
+| grade          | String          | 学生的当前年级。             |
+| graduationYear | String          | 学生从学校毕业的年份。 |
+| studentNumber  | String          | 学生编号。                                 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

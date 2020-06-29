@@ -5,23 +5,23 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: abe72b4221e30a0616b22ddcfe56859ebce75ab8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5e60c09210d649b57cef19099de25561eaa07c2a
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423880"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909583"
 ---
 # <a name="get-user"></a>获取用户
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索与此 **educationUser** 对应的简单目录 **user**。
 
->[!Note]
->如果使用委派的令牌，则成员只能查看自己的学校的相关信息。 在这种情况下，使用 `...beta/education/me/schools` 资源。
+> [!NOTE]
+> 如果使用委派的令牌，则成员只能查看有关其自己的帐户的信息。 在这种情况下，使用 `beta/education/me/users` 资源。
 
 ## <a name="permissions"></a>权限
 
@@ -34,7 +34,9 @@ ms.locfileid: "42423880"
 | 应用程序                            | EduRoster.Read.All、EduRoster.ReadWrite.All 以及 Directory.Read.All                                       |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /education/me/user
 GET /education/users/{id}/user
@@ -44,7 +46,7 @@ GET /education/users/{id}/user
 
 | 标头        | 值                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}。必需。 |
+| Authorization | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>请求正文
 
@@ -61,22 +63,28 @@ GET /education/users/{id}/user
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_educationuser"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/me/user
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -86,8 +94,7 @@ GET https://graph.microsoft.com/beta/education/me/user
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
-
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -95,6 +102,7 @@ GET https://graph.microsoft.com/beta/education/me/user
   "@odata.type": "microsoft.graph.user",
   "isCollection": false
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

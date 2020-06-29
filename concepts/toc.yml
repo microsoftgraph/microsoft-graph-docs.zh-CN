@@ -278,7 +278,7 @@ items:
         items:
           - name: 概述
             href: reportroot-concept-overview.md
-          - name: 针对 Office 365 使用情况报告的授权
+          - name: 针对 Microsoft 365 使用情况报告的授权
             href: reportroot-authorization.md
       - name: 搜索（预览版）
         items:
@@ -396,7 +396,7 @@ items:
               - name: 概述
                 href: webhooks.md
               - name: 教程
-                href: /graph/tutorials/change-notifications
+                href: /learn/modules/msgraph-changenotifications-trackchanges
               - name: 缺少 Outlook 通知（预览版）
                 href: webhooks-outlook-authz.md
               - name: 与资源数据有关的通知（预览版）

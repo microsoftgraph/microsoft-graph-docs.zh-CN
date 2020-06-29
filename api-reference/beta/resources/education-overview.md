@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 4cbab2418958db3a0c6fd81e05ce4d1ac71f828c
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 2da92b666ee125b91bd2a3782e2dba3f213b593a
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897874"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909693"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>在 Microsoft Graph 中使用教育 API
 
@@ -22,25 +22,24 @@ Microsoft Graph 中的教育 Api 使用与教育方案相关的信息（包括�
 
 ## <a name="authorization"></a>授权
 
-若要在 Microsoft Graph 中调用教育 API，你的应用需要获取访问令牌。 有关访问令牌的详细信息，请参阅[获取用于调用 Microsoft Graph 的访问令牌](https://developer.microsoft.com/graph/docs/concepts/auth_overview)。 你的应用还需要具有相应的权限。 有关详细信息，请参阅[教育权限](/graph/permissions-reference#education-permissions)。 
+若要在 Microsoft Graph 中调用教育 API，你的应用需要获取访问令牌。 有关访问令牌的详细信息，请参阅[获取用于调用 Microsoft Graph 的访问令牌](https://developer.microsoft.com/graph/docs/concepts/auth_overview)。 你的应用还需要具有相应的权限。 有关详细信息，请参阅[教育权限](/graph/permissions-reference#education-permissions)。
 
-### <a name="app-permissions-to-enable-school-it-admins-to-consent"></a>请求学校 IT 管理员许可的应用权限 
+### <a name="app-permissions-to-enable-school-it-admins-to-consent"></a>请求学校 IT 管理员许可的应用权限
 
 若要部署与 Microsoft Graph 中的教育 API 集成的应用，学校 IT 管理员必须首先授权许可应用请求的权限。 仅能授权许可一次，除非权限更改。 在管理员许可后，就会为租户中的所有用户预配应用。
 
 若要触发许可对话框，请使用以下 REST 调用。
 
-```
+```http
 GET https://login.microsoftonline.com/{tenant}/adminconsent?
 client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 ```
 
-|参数|说明|
-|:--------|:----------|
-|Tenant|学校的租户 ID。 使用完整 ID，其中包含 onmicrosoft.com。|
-|clientId|应用的客户端 ID。|
-|redirectUrl|应用重定向 URL。|
-
+| 参数   | 说明                                                               |
+| :---------- | :------------------------------------------------------------------------ |
+| Tenant      | 学校的租户 ID。 使用完整 ID，其中包含 onmicrosoft.com。 |
+| clientId    | 应用的客户端 ID。                                                     |
+| redirectUrl | 应用重定向 URL。                                                         |
 
 ## <a name="rostering"></a>Rostering
 
@@ -62,21 +61,21 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 
 名册 API 支持以下方案：
 
-- [列出所有学校](../api/educationroot-list-schools.md) 
+- [列出所有学校](../api/educationroot-list-schools.md)
 - [列出所教授课程的学校](../api/educationclass-list-schools.md)
 - [为用户列出学校](../api/educationuser-list-schools.md)
-- [获取所有课程](../api/educationroot-list-classes.md )
+- [获取所有课程](../api/educationroot-list-classes.md)
 - [获取学校的课程](../api/educationschool-list-classes.md)
 - [为用户列出课程](../api/educationuser-list-classes.md)
 - [将课程添加到学校](../api/educationschool-post-classes.md)
 - [获取课程的学生和教师](../api/educationclass-list-members.md)
-- [将成员添加到课程](../api/educationclass-post-members.md) 
+- [将成员添加到课程](../api/educationclass-post-members.md)
 - [列出课程的教师](../api/educationclass-list-teachers.md)
 - [获取学校的用户](../api/educationschool-list-users.md)
 
 <!-- Should you list delete scenarios here as well? -->
 
-## <a name="assignments"></a>作业 
+## <a name="assignments"></a>作业
 
 您可以使用与工作分配相关的教育 Api 与 Microsoft 团队中的工作分配集成。 Microsoft 365 for 教育版的 microsoft 团队基于相同的教育 Api，并为使用 Api 时可以执行的操作提供了一个用例。 您的应用程序可以使用这些 Api 与工作分配生命周期中的工作分配进行交互。 
 
@@ -92,18 +91,18 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 - [发布作业](../api/educationassignment-publish.md)
 - [创建作业资源](../api/educationassignment-post-resources.md)
 - [创建提交资源](../api/educationsubmission-post-resources.md)
-- [提交分配](../api/educationsubmission-submit.md) 
-- [Unsubmit 分配](../api/educationsubmission-unsubmit.md)   
-- [将成绩和反馈返回给学生](../api/educationsubmission-return.md) 
+- [提交分配](../api/educationsubmission-submit.md)
+- [Unsubmit 分配](../api/educationsubmission-unsubmit.md)
+- [将成绩和反馈返回给学生](../api/educationsubmission-return.md)
 - [获取工作分配详细信息](../api/educationuser-list-assignments.md)
 
 以下是与工作分配相关的教育 Api 的一些常见用例。
 
-|用例|说明|另请参阅|
-|:-------|:----------|:-------|
-|创建工作分配|外部系统可以为类创建分配并将资源附加到工作分配。|[创建作业](../api/educationassignment-post-resources.md)|
-|读取工作分配信息|分析应用程序可以获取有关工作分配和学生提交的信息，包括日期和成绩。|[获取作业](../api/educationassignment-get.md)|
-|跟踪学生提交|您的应用程序可以提供一个教师仪表板，以显示学生的提交次数需要进行评分。|[提交资源](educationsubmission.md)|
+| 用例                    | 说明                                                                                                         | 另请参阅                                                          |
+| :-------------------------- | :------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------- |
+| 创建工作分配          | 外部系统可以为类创建分配并将资源附加到工作分配。                   | [创建作业](../api/educationassignment-post-resources.md) |
+| 读取工作分配信息 | 分析应用程序可以获取有关工作分配和学生提交的信息，包括日期和成绩。 | [获取作业](../api/educationassignment-get.md)               |
+| 跟踪学生提交   | 您的应用程序可以提供一个教师仪表板，以显示学生的提交次数需要进行评分。           | [提交资源](educationsubmission.md)                     |
 
 ## <a name="school-data-sync-management"></a>学校数据同步管理
 
@@ -118,17 +117,18 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 - [暂停正在进行的同步](../api/educationsynchronizationprofile-pause.md)
 - [恢复暂停的同步](../api/educationsynchronizationprofile-resume.md)
 - [重置同步](../api/educationsynchronizationprofile-reset.md)
-- [开始同步上载的文件](../api/educationsynchronizationprofile-start.md) 
+- [开始同步上载的文件](../api/educationsynchronizationprofile-start.md)
 - [获取上载 URL](../api/educationsynchronizationprofile-uploadurl.md)
 - [获取同步状态](../api/educationsynchronizationprofilestatus-get.md)
 - [获取同步错误](../api/educationsynchronizationerrors-get.md)
 
 ## <a name="whats-new"></a>最近更新
+
 查找有关此 API 集的[最新新功能和更新](/graph/whats-new-overview)。
 
 ## <a name="next-steps"></a>后续步骤
+
 使用 Microsoft Graph 教育 Api 生成可访问学生工作分配和学校名册的教育解决方案。 了解详细信息：
 
 - 探索对你的方案最有帮助的资源和方法。
 - 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中使用 API。
-

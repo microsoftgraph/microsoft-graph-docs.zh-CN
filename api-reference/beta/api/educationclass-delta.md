@@ -5,16 +5,16 @@ localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 874898b68bcdb1d4bfc450668ebff89030859a02
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3b86b0c7fb39e274c553811ebb2a838613efedff
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42426876"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909549"
 ---
 # <a name="educationclass-delta"></a>educationClass： delta
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "42426876"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | 权限类型                        | 权限（从最低特权到最高特权）                              |
 | :------------------------------------- | :----------------------------------------------------------------------- |
@@ -51,7 +51,10 @@ POST /education/me/classes/{id}/delta
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[educationClass](../resources/educationclass.md)集合对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[educationClass](../resources/educationclass.md)集合对象。
+
+> [!IMPORTANT]
+> educationClass 增量不包括已删除的类。
 
 ## <a name="example"></a>示例
 
@@ -72,9 +75,9 @@ POST https://graph.microsoft.com/v1.0/education/classes/{id}/delta
 
 ##### <a name="response"></a>响应
 
-下面展示了示例响应。 
+下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

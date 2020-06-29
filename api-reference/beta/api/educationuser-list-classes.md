@@ -5,26 +5,24 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a95a63a1f24fc3ac2e2bf2513348eeace3e5d5c1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f572c642caffe8c944fc3c81eba4a5fc6a4a37ad
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423754"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909532"
 ---
 # <a name="list-classes"></a>列出课程
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 class 对象的列表。 请注意，如果使用委派令牌，成员只能看到有关其自己课程的信息。 
-
-<!-- Please verify the revision to the delegated token text. -->
+检索 educationClass 资源的集合。
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :------------------------------------------ |
@@ -32,22 +30,27 @@ ms.locfileid: "42423754"
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用程序                            | EduRoster.Read.All、EduRoster.ReadWrite.All |
 
+> [!NOTE]
+> 使用委派权限时，将仅返回身份验证用户为其成员的 educationClass 资源。
+
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /education/me/classes
 GET /education/users/{id}/classes
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
+
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
 | 标头        | 值                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}。必需。 |
+| Authorization | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>请求正文
 
@@ -60,25 +63,32 @@ GET /education/users/{id}/classes
 ## <a name="example"></a>示例
 
 ##### <a name="request"></a>请求
+
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_classes"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/me/classes
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-classes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-classes-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-classes-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -86,9 +96,9 @@ GET https://graph.microsoft.com/beta/education/me/classes
 
 ##### <a name="response"></a>响应
 
-下面展示了示例响应。 
+下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -96,6 +106,7 @@ GET https://graph.microsoft.com/beta/education/me/classes
   "@odata.type": "microsoft.graph.educationClass",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -118,7 +129,7 @@ Content-length: 277
       "externalName": "Health Level 1",
       "externalSource": "sis",
       "mailNickname": "fineartschool.net"
-    } 
+    }
   ]
 }
 ```

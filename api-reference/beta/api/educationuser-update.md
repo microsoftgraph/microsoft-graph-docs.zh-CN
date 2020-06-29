@@ -5,16 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 11c0b59f5ee79c18e8920a8979db23fe3769f60c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ed5c33afa6422185a19896c04bffe49301d641f6
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423516"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909582"
 ---
 # <a name="update-educationuser-properties"></a>更新 educationUser 属性
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "42423516"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :------------------------------------------ |
@@ -31,7 +31,9 @@ ms.locfileid: "42423516"
 | 应用程序                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 PATCH /education/me
 PATCH /education/users/{id}
@@ -39,30 +41,29 @@ PATCH /education/users/{id}
 
 ## <a name="request-headers"></a>请求标头
 
-| 标头        | 值                     |
-| :------------ | :------------------------ |
-| Authorization | Bearer {token}。必需。 |
-| Content-Type  | application/json. Required.       |
+| 标头        | 值                       |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性         | 类型                                                 | 说明                                                                                                                                      |
-| :--------------- | :--------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName      | String                                               | 显示用户名称                                                                                                                             |
-| givenName        | String                                               | 名字                                                                                                                                       |
-| middleName       | String                                               | 用户的中间名                                                                                                                              |
-| surname          | 字符串                                               | 用户的姓                                                                                                                                  |
-| mail             | String                                               | 电子邮件地址                                                                                                                                    |
-| mobilePhone      | String                                               | 用户的移动电话号码                                                                                                                            |
-| externalSource   | string                                               | 可取值为：`sis`、`manual`、`enum_sentinel`。                                                                                           |
-| externalSource   | string                                               | 创建此用户的位置。  可取值为：`sis`、`manual`、`enum_sentinel`。                                                        |
-| mailingAddress   | [physicalAddress](../resources/physicaladdress.md)   | 用户的邮件地址。                                                                                                                            |
-| residenceAddress | [physicalAddress](../resources/physicaladdress.md)   | 用户所在的地址。                                                                                                                        |
-| primaryRole      | string                                               | 用户的默认角色。  用户的角色在各课程中可能有所不同。 可取值为：`student`、`teacher`、`enum_sentinel`。 |
-| student          | [educationStudent](../resources/educationstudent.md) | 如果主要角色为学生，此部分将包含特定于学生的数据。                                                                   |
-| teacher          | [educationTeacher](../resources/educationteacher.md) | 如果主要角色是教师，此块将包含教师特定的数据。                                                                   |
+| 属性         | 类型               | 说明                                                                                                                                     |
+| :--------------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName      | String             | 显示用户名称                                                                                                                            |
+| givenName        | String             | 名字                                                                                                                                      |
+| middleName       | String             | 用户的中间名                                                                                                                             |
+| surname          | 字符串             | 用户的姓                                                                                                                                 |
+| mail             | String             | 电子邮件地址                                                                                                                                   |
+| mobilePhone      | String             | 用户的移动电话号码                                                                                                                           |
+| externalSource   | string             | 创建此用户的位置。 可能的值包括： `sis` 、 `manual` 或 `lms` 。                                                               |
+| mailingAddress   | [physicalAddress]  | 用户的邮件地址。 注意： `type` `postOfficeBox` 资源不支持和 `educationUser` 。                                         |
+| residenceAddress | [physicalAddress]  | 用户所在的地址。 注意： `type` `postOfficeBox` 资源不支持和 `educationUser` 。                                     |
+| primaryRole      | string             | 用户的默认角色。 用户的角色在各课程中可能有所不同。 可取值为：`student`、`teacher`、`enum_sentinel`。 |
+| student          | [educationStudent] | 如果主要角色为学生，此部分将包含特定于学生的数据。                                                                  |
+| teacher          | [educationTeacher](../resources/educationteacher.md) | 如果主要角色是教师，此块将包含教师特定的数据。                                                                  |
 
 ## <a name="response"></a>响应
 
@@ -75,10 +76,12 @@ PATCH /education/users/{id}
 下面是一个请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_educationuser"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/beta/education/users/13020
 Content-type: application/json
@@ -91,15 +94,19 @@ Content-length: 508
   "surname": "Cazares",
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -107,13 +114,14 @@ Content-length: 508
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationUser"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -170,3 +178,6 @@ Content-length: 508
   ]
 }
 -->
+
+[physicaladdress]: ../resources/physicaladdress.md
+[educationstudent]: ../resources/educationstudent.md

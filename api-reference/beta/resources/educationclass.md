@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: dca4ee263418c098194cf37ac66bc6659b9d6061
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 22f354ff86e055d40a7112cdc71a63fed5e5e5fb
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895683"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909686"
 ---
 # <a name="educationclass-resource-type"></a>educationClass 资源类型
 
@@ -53,8 +53,8 @@ ms.locfileid: "44895683"
 | displayName    | String                                | 课程名称。                                                                      |
 | externalId     | String                                | 来自同步系统的课程 ID。                                                |
 | externalName   | String                                | 同步系统中的课程名称。                                                |
-| externalSource | string                                | 此课程的创建方式。 可取值为：`sis`、`manual`、`unknownFutureValue`。 |
-| grade          | string                                | 课程的年级级别。                                                               |
+| externalSource | String                                | 此课程的创建方式。 可取值为：`sis`、`manual`、`lms`。 |
+| grade          | String                                | 课程的年级级别。                                                               |
 | mailNickname   | 字符串                                | 向所有成员发送电子邮件的邮件名称（如果已启用）。                         |
 | term           | [educationTerm]                       | 类的术语。                                                                     |
 
@@ -105,7 +105,7 @@ ms.locfileid: "44895683"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [ 
+  "suppressions": [
     "Error: Resource educationClass has documented navigation properties, but we thought it was a complex type!",
     "Resource educationClass has documented navigation properties, but we thought it was a complex type!"
   ]

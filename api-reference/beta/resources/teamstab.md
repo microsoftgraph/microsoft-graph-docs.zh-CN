@@ -5,16 +5,16 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 74dfe42bc48757ffe8799a033dfebf2df61f913d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c5d73738a24e0ffd21b259c58ce44cbe000c54df
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519846"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909728"
 ---
 # <a name="teamstab-resource-type"></a>teamsTab 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,8 +40,8 @@ TeamsTab 是固定（附加）到[团队](team.md)中的[频道](channel.md)的[
 |  name            |   string                  |  被选项卡的名称。     |
 |  teamsAppId           |   string             |  选项卡的应用程序定义标识符。创建选项卡后，不能更改此值。     |
 |  sortOrderIndex  |   string                  |  用于对选项卡进行排序的顺序的索引。     |
-|  webUrl          |   string                  |  选项卡实例的深层链接 url。 只读。     |
-|  设置        |   [teamsTabConfiguration](teamstabconfiguration.md) |  应用于选项卡的自定义设置的容器。仅在设置此属性后，才会认为选项卡已配置。     |
+|  webUrl          |   string                  |  选项卡实例的深层链接 URL。 只读。     |
+|  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  应用于选项卡的自定义设置的容器。仅在设置此属性后，才会认为选项卡已配置。     |
 
 ## <a name="relationships"></a>关系
 
@@ -70,7 +70,6 @@ TeamsTab 是固定（附加）到[团队](team.md)中的[频道](channel.md)的[
   "configuration": "teamsTabConfiguration",
   "name": "string"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

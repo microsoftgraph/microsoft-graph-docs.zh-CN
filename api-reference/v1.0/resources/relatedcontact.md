@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 93069c2f9f2aa46c5d6d0f2f992762efab062064
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0b0647bb7c271f722129738a36f1afed5ed5365e
+ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533860"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909735"
 ---
 # <a name="realtedcontact-resource-type"></a>realtedContact 资源类型
 
@@ -19,14 +19,15 @@ ms.locfileid: "42533860"
 与为监护人、工具、医生等提供信息的[educationUser](../resources/educationuser.md)相关的联系人记录。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
-|:---------------|:--------|:----------|
-|id|字符串|Azure Active Directory 中的联系人的标识。|
-|displayName|字符串|联系人的名称。 必需。|
-|emailAddress|String|联系人的主电子邮件地址。|
-|mobilePhone|String|联系人的移动电话号码。|
-|关系|`contactRelationship`|与用户的关系。 可能的值`parent`为`relative`、 `aide` `doctor` `guardian` `child`、、、、、 `unknownFutureValue` `other`|
-|accessConsent|Boolean|指示用户是否同意访问学生数据。|
+
+| 属性      | 类型                  | 说明                                                                                                                               |
+| :------------ | :-------------------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
+| id            | 字符串                | Azure Active Directory 中的联系人的标识。                                                                                    |
+| displayName   | 字符串                | 联系人的名称。 必需。                                                                                                            |
+| emailAddress  | String                | 联系人的主电子邮件地址。                                                                                                     |
+| mobilePhone   | String                | 联系人的移动电话号码。                                                                                                       |
+| 关系  | `contactRelationship` | 与用户的关系。 可能的值为、、、、、、 `parent` `relative` `aide` `doctor` `guardian` `child` `other` `unknownFutureValue` 。 |
+| accessConsent | Boolean               | 指示用户是否同意访问学生数据。                                                                     |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
