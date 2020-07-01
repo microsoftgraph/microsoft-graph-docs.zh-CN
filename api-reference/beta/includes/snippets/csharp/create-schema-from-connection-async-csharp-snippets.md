@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 19a2315ff73d1bd0cd8f3696e612b756c689e79d
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 67d516e7d088dd5fbe9da04bd6d6405b0d4cd4f2
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37995482"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45008643"
 ---
 ```csharp
 
@@ -18,17 +18,23 @@ var schema = new Schema
     {
         new Property
         {
-            Name = "title",
+            Name = "ticketTitle",
             Type = PropertyType.String,
             IsSearchable = true,
-            IsRetrievable = true
+            IsRetrievable = true,
+            Labels = new List<Label>()
+            {
+                Label.Title
+            }
         },
         new Property
         {
             Name = "priority",
             Type = PropertyType.String,
             IsQueryable = true,
-            IsRetrievable = true
+            IsRetrievable = true,
+            IsRefinable = true,
+            IsSearchable = false
         },
         new Property
         {
