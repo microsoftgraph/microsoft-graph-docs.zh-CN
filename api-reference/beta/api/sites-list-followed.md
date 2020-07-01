@@ -5,87 +5,91 @@ title: 关注网站列表
 localization_priority: Normal
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: 8f5435ee027ac33e7076a3b6d8cef11954770227
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 0df243fc7f01cd01ce54e753e60acd65d1a202e8
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863472"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45006983"
 ---
-# <a name="list-followed-sites"></a><span data-ttu-id="1c257-103">关注网站列表</span><span class="sxs-lookup"><span data-stu-id="1c257-103">List followed sites</span></span>
+# <a name="list-followed-sites"></a><span data-ttu-id="dbec7-103">关注网站列表</span><span class="sxs-lookup"><span data-stu-id="dbec7-103">List followed sites</span></span>
 
-<span data-ttu-id="1c257-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1c257-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="dbec7-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dbec7-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1c257-105">列出已登录用户的后续[网站](../resources/site.md)。</span><span class="sxs-lookup"><span data-stu-id="1c257-105">List the [sites](../resources/site.md) that have been followed by the signed in user.</span></span>
+<span data-ttu-id="dbec7-105">列出已登录用户的后续[网站](../resources/site.md)。</span><span class="sxs-lookup"><span data-stu-id="dbec7-105">List the [sites](../resources/site.md) that have been followed by the signed in user.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1c257-106">权限</span><span class="sxs-lookup"><span data-stu-id="1c257-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="dbec7-106">权限</span><span class="sxs-lookup"><span data-stu-id="dbec7-106">Permissions</span></span>
 
-<span data-ttu-id="1c257-107">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="1c257-107">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="1c257-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1c257-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="dbec7-107">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="dbec7-107">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="dbec7-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dbec7-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1c257-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="1c257-109">Permission type</span></span>      | <span data-ttu-id="1c257-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1c257-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="dbec7-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="dbec7-109">Permission type</span></span>      | <span data-ttu-id="dbec7-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="dbec7-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1c257-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1c257-111">Delegated (work or school account)</span></span> | <span data-ttu-id="1c257-112">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1c257-112">Sites.Read.All, Sites.ReadWrite.All</span></span>  |
-|<span data-ttu-id="1c257-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1c257-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1c257-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="1c257-114">Not supported.</span></span>    |
-|<span data-ttu-id="1c257-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="1c257-115">Application</span></span> | <span data-ttu-id="1c257-116">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1c257-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="dbec7-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="dbec7-111">Delegated (work or school account)</span></span> | <span data-ttu-id="dbec7-112">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dbec7-112">Sites.Read.All, Sites.ReadWrite.All</span></span>  |
+|<span data-ttu-id="dbec7-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="dbec7-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dbec7-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="dbec7-114">Not supported.</span></span>    |
+|<span data-ttu-id="dbec7-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="dbec7-115">Application</span></span> | <span data-ttu-id="dbec7-116">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dbec7-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1c257-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1c257-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dbec7-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="dbec7-117">HTTP request</span></span>
 
-<span data-ttu-id="1c257-118">此方法只能通过 OneDrive for Business 访问。</span><span class="sxs-lookup"><span data-stu-id="1c257-118">This method is accessible only through OneDrive for Business.</span></span>
+<span data-ttu-id="dbec7-118">此方法只能通过 OneDrive for Business 访问。</span><span class="sxs-lookup"><span data-stu-id="dbec7-118">This method is accessible only through OneDrive for Business.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/followedSites
 ```
-<span data-ttu-id="1c257-119">基于其 ID 获取目标用户后面的网站的列表。</span><span class="sxs-lookup"><span data-stu-id="1c257-119">Get a list of the sites followed by a target user, based on its ID.</span></span>
+<span data-ttu-id="dbec7-119">基于其 ID 获取目标用户后面的网站的列表。</span><span class="sxs-lookup"><span data-stu-id="dbec7-119">Get a list of the sites followed by a target user, based on its ID.</span></span>
 
 ```http
 GET /users/{user-id}/followedSites
 ```
-<span data-ttu-id="1c257-120">**注意：** 若要访问另一个目标用户的已关注网站的列表，您需要应用程序权限。</span><span class="sxs-lookup"><span data-stu-id="1c257-120">**Note:** To access another targeted user's list of followed sites, you need application permissions.</span></span>
+<span data-ttu-id="dbec7-120">**注意：** 若要访问另一个目标用户的已关注网站的列表，您需要应用程序权限。</span><span class="sxs-lookup"><span data-stu-id="dbec7-120">**Note:** To access another targeted user's list of followed sites, you need application permissions.</span></span>
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="1c257-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="1c257-121">Optional query parameters</span></span>
-<span data-ttu-id="1c257-122">此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="1c257-122">This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="dbec7-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="dbec7-121">Optional query parameters</span></span>
+<span data-ttu-id="dbec7-122">此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="dbec7-122">This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="1c257-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="1c257-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="dbec7-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="dbec7-123">Request headers</span></span>
 
-| <span data-ttu-id="1c257-124">名称</span><span class="sxs-lookup"><span data-stu-id="1c257-124">Name</span></span>      |<span data-ttu-id="1c257-125">说明</span><span class="sxs-lookup"><span data-stu-id="1c257-125">Description</span></span>|
+| <span data-ttu-id="dbec7-124">名称</span><span class="sxs-lookup"><span data-stu-id="dbec7-124">Name</span></span>      |<span data-ttu-id="dbec7-125">说明</span><span class="sxs-lookup"><span data-stu-id="dbec7-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="1c257-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="1c257-126">Authorization</span></span>  | <span data-ttu-id="1c257-127">Bearer {code}。</span><span class="sxs-lookup"><span data-stu-id="1c257-127">Bearer {code}.</span></span> <span data-ttu-id="1c257-128">必需。</span><span class="sxs-lookup"><span data-stu-id="1c257-128">Required.</span></span>|
+| <span data-ttu-id="dbec7-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="dbec7-126">Authorization</span></span>  | <span data-ttu-id="dbec7-127">Bearer {code}。</span><span class="sxs-lookup"><span data-stu-id="dbec7-127">Bearer {code}.</span></span> <span data-ttu-id="dbec7-128">必需。</span><span class="sxs-lookup"><span data-stu-id="dbec7-128">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1c257-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="1c257-129">Request Body</span></span>
+## <a name="request-body"></a><span data-ttu-id="dbec7-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="dbec7-129">Request Body</span></span>
 
-<span data-ttu-id="1c257-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="1c257-130">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="dbec7-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="dbec7-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1c257-131">响应</span><span class="sxs-lookup"><span data-stu-id="1c257-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="dbec7-131">响应</span><span class="sxs-lookup"><span data-stu-id="dbec7-131">Response</span></span>
 
-<span data-ttu-id="1c257-132">此方法返回用户正在关注的[网站](../resources/site.md)资源的集合。</span><span class="sxs-lookup"><span data-stu-id="1c257-132">This method returns a collection of [site](../resources/site.md) resources that the user is following.</span></span>
-<span data-ttu-id="1c257-133">如果找不到任何网站，则返回一个空集合。</span><span class="sxs-lookup"><span data-stu-id="1c257-133">If no sites were found, an empty collection is returned.</span></span>
+<span data-ttu-id="dbec7-132">此方法返回用户正在关注的[网站](../resources/site.md)资源的集合。</span><span class="sxs-lookup"><span data-stu-id="dbec7-132">This method returns a collection of [site](../resources/site.md) resources that the user is following.</span></span>
+<span data-ttu-id="dbec7-133">如果找不到任何网站，则返回一个空集合。</span><span class="sxs-lookup"><span data-stu-id="dbec7-133">If no sites were found, an empty collection is returned.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1c257-134">示例</span><span class="sxs-lookup"><span data-stu-id="1c257-134">Example</span></span>
+## <a name="example"></a><span data-ttu-id="dbec7-134">示例</span><span class="sxs-lookup"><span data-stu-id="dbec7-134">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="1c257-135">请求</span><span class="sxs-lookup"><span data-stu-id="1c257-135">Request</span></span>
+### <a name="request"></a><span data-ttu-id="dbec7-135">请求</span><span class="sxs-lookup"><span data-stu-id="dbec7-135">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="1c257-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="1c257-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="dbec7-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="dbec7-136">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "sites-list-followed", "scopes": "sites.readwrite.all" } -->
 
 ```msgraph-interactive
 GET /me/followedSites
 ```
-# <a name="javascript"></a>[<span data-ttu-id="1c257-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1c257-137">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-analytics-javascript-snippets.md)]
+# <a name="javascript"></a>[<span data-ttu-id="dbec7-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="dbec7-137">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/sites-list-followed-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1c257-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1c257-138">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-analytics-objc-snippets.md)]
+# <a name="objective-c"></a>[<span data-ttu-id="dbec7-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="dbec7-138">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/sites-list-followed-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[<span data-ttu-id="dbec7-139">C#</span><span class="sxs-lookup"><span data-stu-id="dbec7-139">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/sites-list-followed-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="1c257-139">响应</span><span class="sxs-lookup"><span data-stu-id="1c257-139">Response</span></span>
+### <a name="response"></a><span data-ttu-id="dbec7-140">响应</span><span class="sxs-lookup"><span data-stu-id="dbec7-140">Response</span></span>
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
 ```json
