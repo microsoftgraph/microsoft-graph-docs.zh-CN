@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 149c131ee38dc802de8845729ae1266a74eb8e4d
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 143898e33e3e3474bd5caf0d7855ff19a15e4e13
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917360"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45006966"
 ---
 # <a name="tokenlifetimepolicy-resource-type"></a>tokenLifetimePolicy 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "43917360"
 
 继承自[stsPolicy](stsPolicy.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -34,13 +34,16 @@ ms.locfileid: "43917360"
 | [更新 tokenLifetimePolicy](../api/tokenlifetimepolicy-update.md) | 无 | 更新 tokenLifetimePolicy 对象。 |
 | [删除 tokenLifetimePolicy](../api/tokenlifetimepolicy-delete.md) | 无 | 删除 tokenLifetimePolicy 对象。 |
 | [列出 appliesTo](../api/tokenlifetimepolicy-list-appliesto.md) | [directoryObject](directoryobject.md) 集合 | 获取已应用此策略的 directoryObjects 的列表。 |
+| [分配 tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md) | 无 | 将 tokenLifetimePolicy 对象分配给[application](application.md)或[servicePrincipal](serviceprincipal.md)对象。 |
+| [列表已分配 tokenLifetimePolicy](../api/application-list-tokenlifetimepolicies.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合 | 列出分配给[application](application.md)或[ServicePrincipal](serviceprincipal.md)对象的 tokenLifetimePolicy 对象。 |
+| [删除 tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md) | 无 | 从[应用程序](application.md)或[servicePrincipal](serviceprincipal.md)对象中删除 tokenLifetimePolicy 对象。 |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|字符串| 此策略的唯一标识符。 只读。|
-|定义|String 集合| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
+|定义|String collection| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
 |description|String| 此策略的说明。|
 |displayName|String| 此策略的显示名称。 必需。|
 |isOrganizationDefault|Boolean|如果设置为 true，则激活此策略。 对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。 可选，默认值为 false。|
@@ -65,7 +68,7 @@ ms.locfileid: "43917360"
 | 属性     | 类型   |说明| 最小值 | 最大值 | 默认值|
 |:---------------|:--------|:----------|:--------|:--------|:----|
 |AccessTokenLifetime|String|控制访问和 ID 令牌被视为有效的时间。|10 分钟|1 天|1 小时|
-|版本|整数|将值设置为1。 必需。|无|无|无|
+|版本|Integer|将值设置为1。 必需。|无|无|无|
 
 ## <a name="relationships"></a>关系
 

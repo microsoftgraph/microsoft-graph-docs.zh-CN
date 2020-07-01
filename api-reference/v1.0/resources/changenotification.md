@@ -5,18 +5,16 @@ localization_priority: Normal
 author: baywet
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 5ea43eb726f674836d7958e934e3bf7c4599cf51
+ms.openlocfilehash: d45c3973e5b044daf3121a740a60b29e3a181348
 ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/01/2020
-ms.locfileid: "44989816"
+ms.locfileid: "45004769"
 ---
 # <a name="changenotification-resource-type"></a>changeNotification 资源类型
 
 命名空间：microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示发送给订阅者的通知。
 
@@ -31,9 +29,7 @@ ms.locfileid: "44989816"
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
 | changeType | string | 指示将引发更改通知的更改的类型。 支持的值是：`created`、`updated`、`deleted`。 必需。 |
-| clientState | string | 在订阅请求中指定的**clientState**属性的值（如果有）。 最大长度为 255 个字符。 客户端可以通过比较**clientState**属性的值，来检查更改通知是否来自服务。 与订阅一起发送的**clientState**属性的值将与每个更改通知收到的**clientState**属性的值进行比较。 可选。 |
-| encryptedContent | [changeNotificationEncryptedContent](changenotificationencryptedcontent.md) | 预览随更改通知附加的加密内容。 仅当**encryptionCertificate**和**includeResourceData**在订阅请求期间定义并且资源支持它时才提供。 可选 |
-| lifecycleEvent | string | 如果当前通知是生命周期通知，则为生命周期通知的类型。 可选。 支持的值为 `missed` 、 `removed` 、 `reauthorizationRequired` 。 |
+| clientState | string | 订阅请求中发送的**clientState**属性的值（如果有）。 最大长度为 255 个字符。 客户端可以通过比较**clientState**属性的值，来检查更改通知是否来自服务。 与订阅一起发送的**clientState**属性的值将与每个更改通知收到的**clientState**属性的值进行比较。 可选。 |
 | id | 字符串 | 通知的唯一 ID。 可选。 |
 | resource | string | 发出更改通知的资源的 URI （相对于） `https://graph.microsoft.com` 。 必需。 |
 | resourceData | [resourceData](resourcedata.md) | 此属性的内容取决于要订阅资源的类型。 必需。 |

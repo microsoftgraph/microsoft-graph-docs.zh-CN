@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3b86b0c7fb39e274c553811ebb2a838613efedff
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: 0b22ca9852d89c0d80d52959cef99c68fcc43bb8
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909549"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45006847"
 ---
 # <a name="educationclass-delta"></a>educationClass： delta
 
@@ -35,8 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /education/classes/{id}/delta
-POST /education/me/classes/{id}/delta
+GET /education/classes/delta
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -60,7 +59,7 @@ POST /education/me/classes/{id}/delta
 
 以下示例演示如何调用此 API。
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 下面展示了示例请求。
 
@@ -70,10 +69,10 @@ POST /education/me/classes/{id}/delta
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/{id}/delta
+GET https://graph.microsoft.com/beta/education/classes/delta
 ```
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 下面展示了示例响应。
 
@@ -94,25 +93,18 @@ Content-length: 585
 {
   "value": [
     {
-      "displayName": "displayName-value",
-      "mailNickname": "mailNickname-value",
-      "description": "description-value",
-      "createdBy": {
-        "application": {
-          "displayName": "displayName-value",
-          "id": "id-value"
-        },
-        "device": {
-          "displayName": "displayName-value",
-          "id": "id-value"
-        },
-        "user": {
-          "displayName": "displayName-value",
-          "id": "id-value"
-        }
-      },
-      "classCode": "classCode-value",
-      "externalName": "externalName-value"
+      "classCode": "String",
+      "course": { "@odata.type": "microsoft.graph.educationCourse" },
+      "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+      "description": "String",
+      "displayName": "String",
+      "externalId": "String",
+      "externalName": "String",
+      "externalSource": "string",
+      "grade": "string",
+      "id": "String (identifier)",
+      "mailNickname": "String",
+      "term": { "@odata.type": "microsoft.graph.educationTerm" }
     }
   ]
 }

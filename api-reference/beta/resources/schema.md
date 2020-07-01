@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: be9001d1fab756be09e88768f0b34540c14aafcf
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: c7780cd7c31da98a618053febba1b75c5e318931
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892533"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44990263"
 ---
 # <a name="schema-resource-type"></a>架构资源类型
 
@@ -34,7 +34,7 @@ ms.locfileid: "42892533"
 | 属性   | 类型                               | 说明                |
 |:-----------|:-----------------------------------|:---------------------------|
 | #c1   | String                             | 必须设置为 `microsoft.graph.externalItem`。 必需。 |
-| properties | [属性](property.md)集合 | 为连接中的项目定义的属性。 最小属性数为1，最大值为64。 |
+| properties | [属性](property.md)集合 | 为连接中的项目定义的属性。 最小属性数为1，最大值为128。 |
 
 ## <a name="relationships"></a>关系
 

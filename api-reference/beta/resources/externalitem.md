@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: e1497528e759a2fb5556aed3e9b936b1c9797ee0
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 3b82f67f12d263e56e3375ed87a9d6dff71c2204
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43805657"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44989821"
 ---
 # <a name="externalitem-resource-type"></a>externalItem 资源类型
 
@@ -22,11 +22,12 @@ ms.locfileid: "43805657"
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法                                                        | 返回类型                     | 说明 |
 |:--------------------------------------------------------------|:--------------------------------|:--|
 | [创建 externalItem](../api/externalconnection-put-items.md) | [externalItem](externalitem.md) | 创建 externalItem。 |
+| [获取 externalItem](../api/externalitem-get.md)                | [externalItem](externalitem.md) | 获取 externalItem。    |
 | [更新 externalItem](../api/externalitem-update.md)          | [externalItem](externalitem.md) | 更新 externalItem。 |
 | [删除 externalItem](../api/externalitem-delete.md)          | 无                            | 删除 externalItem。 |
 
@@ -36,12 +37,12 @@ ms.locfileid: "43805657"
 |:-----------|:-------------------------|:-------------------------------------|
 | acl        | [acl](acl.md)集合 | 一组访问控制项。 每个条目指定向用户或组授予的访问权限。 必需。 |
 | content    | [externalItemContent](externalitemcontent.md) | 项目内容的纯文本或 HTML 表示形式。 此属性中的文本为全文检索的文本。 可选。 |
-| id         | 字符串                   | 开发人员提供的包含[externalConnection](externalconnection.md)中的项的唯一 ID。 必须为字母数字，最多为128个字符。 必需。 |
+| id         | String                   | 开发人员提供的包含[externalConnection](externalconnection.md)中的项的唯一 ID。 必须为字母数字，最多为128个字符。 必需。 |
 | properties | 对象                   | 包含项属性的属性包。 属性必须符合为[externalConnection](externalconnection.md)定义的[架构](schema.md)。 必需。 |
 
 ## <a name="relationships"></a>关系
 
-无
+无。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

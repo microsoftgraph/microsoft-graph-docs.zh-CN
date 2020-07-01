@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: de4e793a224466738773f959892a31b002737f92
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7b946638c4d433e8cae6c6459ac434041c17f7bb
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453763"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44990295"
 ---
 # <a name="get-schema"></a>获取架构
 
@@ -24,7 +24,7 @@ ms.locfileid: "42453763"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
@@ -44,11 +44,11 @@ GET /external/connections/{id}/schema
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称          | 说明               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}。必需。 |
+| Authorization | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>请求正文
 
@@ -56,7 +56,7 @@ GET /external/connections/{id}/schema
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[架构](../resources/schema.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[架构](../resources/schema.md)对象。
 
 ## <a name="examples"></a>示例
 
@@ -108,16 +108,21 @@ Content-type: application/json
   "baseType": "microsoft.graph.externalItem",
   "properties": [
     {
-      "name": "title",
+      "name": "ticketTitle",
       "type": "String",
       "isSearchable": true,
-      "isRetrievable": true
+      "isRetrievable": true,
+      "labels": [
+        "title"
+      ]
     },
     {
       "name": "priority",
       "type": "String",
       "isQueryable": true,
-      "isRetrievable": true
+      "isRetrievable": true,
+      "isRefinable": true,
+      "isSearchable": false
     },
     {
       "name": "assignee",

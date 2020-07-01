@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: bd1e7899b01cd8a38142b876371a23df65421e92
-ms.sourcegitcommit: 43f7800894857a29f02fffaf4a50ad6386b5bf59
+ms.openlocfilehash: 68f27a6188096d75687cd5d3e7f0234fd5c75b9d
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44524475"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45006887"
 ---
 # <a name="get-callrecord"></a>获取 callRecord
 
@@ -20,15 +20,20 @@ ms.locfileid: "44524475"
 
 检索[callRecord](../resources/callrecords-callrecord.md)对象的属性和关系。
 
+有两种方法可以获取**callRecord**的**id** ：
+
+* 订阅对终结点的[更改通知](/graph/api/resources/webhooks?view=graph-rest-beta) `/communications/callRecords` 。
+* 使用[调用](../resources/call.md)的**callChainId**属性。 只有在关联的呼叫完成后，呼叫记录才可用。
+
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | CallRecords.Read.All |
+| 应用程序                            | CallRecords.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +47,7 @@ GET /communications/callRecords/{id}
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -93,7 +98,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}
 
 下面展示了示例响应。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -177,7 +182,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=ses
 
 下面展示了示例响应。 如果 "会话" 列表被截断， `sessions@odata.nextlink` 将提供一个值，以检索下一个会话页面。
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

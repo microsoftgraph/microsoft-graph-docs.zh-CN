@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: ce7bf6140b831c3e911ebb744106840ae8e027a8
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 255be26ed669e91248df1b007dc56b937ce2af98
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44217078"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45006882"
 ---
 # <a name="printer-resource-type"></a>打印机资源类型
 
@@ -20,11 +20,12 @@ ms.locfileid: "44217078"
 
 表示已向通用打印服务注册的物理打印机设备。 打印机资源可用于管理打印作业、打印机设置、打印机元数据和注册状态。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [获取打印机](../api/printer-get.md) | [印刷](printer.md) | 读取 printer 对象的属性和关系。 |
+| [创建](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | 创建（注册）具有通用打印的新打印机。 |
+| [获取](../api/printer-get.md) | [印刷](printer.md) | 读取 printer 对象的属性和关系。 |
 | [更新](../api/printer-update.md) | [印刷](printer.md) | 更新 printer 对象。 |
 | [删除](../api/printer-delete.md) | 无 | 在通用打印服务中注销物理 printerfrom。 |
 | [getCapabilities](../api/printer-getcapabilities.md) | [printerCapabilities](printercapabilities.md) | 获取打印机的功能列表。 |

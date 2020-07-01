@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 408fb43dbad69cbb699db899522cf938e84ec904
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: 3d96334c4a7f3fd6974fdf08c2eb86809e89326d
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909547"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45006826"
 ---
 # <a name="educationuser-delta"></a>educationUser： delta
 
@@ -24,20 +24,18 @@ ms.locfileid: "44909547"
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| 权限类型                        | 权限（从最低特权到最高特权）     |
-| :------------------------------------- | :---------------------------------------------- |
-| 委派（工作或学校帐户）     | 不支持。                                  |
-| 委派（个人 Microsoft 帐户） | 不支持。                                  |
-| 应用程序                            | Eduroster.read.all 或 Eduroster.read.all 的所有 WriteWrite |
+| 权限类型                        | 权限（从最低特权到最高特权）                              |
+| :------------------------------------- | :----------------------------------------------------------------------- |
+| 委派（工作或学校帐户）     | Eduroster.read.all、User.readbasic.all、Eduroster.read.all 或 Eduroster.read.all              |
+| 委派（个人 Microsoft 帐户） | 不支持。                                                           |
+| 应用程序                            | Eduroster.read.all、Eduroster.read.all、All 或 Eduroster.read.all 的所有 User.readbasic.all |
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /education/me/delta
-POST /education/users/{id}/delta
-POST /education/schools/{id}/users/{id}/delta
+GET /education/users/delta
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -61,7 +59,7 @@ POST /education/schools/{id}/users/{id}/delta
 
 以下示例演示如何调用此 API。
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 下面展示了示例请求。
 
@@ -71,10 +69,10 @@ POST /education/schools/{id}/users/{id}/delta
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/education/me/delta
+GET https://graph.microsoft.com/beta/education/users/delta
 ```
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 下面展示了示例响应。
 
@@ -95,35 +93,37 @@ Content-length: 1039
 {
   "value": [
     {
-      "primaryRole": "primaryRole-value",
-      "middleName": "middleName-value",
-      "externalSource": "externalSource-value",
-      "residenceAddress": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
+      "accountEnabled": true,
+      "assignedLicenses": [{ "@odata.type": "microsoft.graph.assignedLicense" }],
+      "assignedPlans": [{ "@odata.type": "microsoft.graph.assignedPlan" }],
+      "businessPhones": ["String"],
+      "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+      "department": "String",
+      "displayName": "String",
+      "externalSource": "string",
+      "givenName": "String",
+      "id": "String (identifier)",
+      "mail": "String",
+      "mailNickname": "String",
+      "mailingAddress": { "@odata.type": "microsoft.graph.physicalAddress" },
+      "middleName": "String",
+      "mobilePhone": "String",
+      "officeLocation": "String",
+      "onPremisesInfo": {
+        "@odata.type": "microsoft.graph.educationOnPremisesInfo"
       },
-      "mailingAddress": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
-      },
-      "student": {
-        "graduationYear": "graduationYear-value",
-        "grade": "grade-value",
-        "birthDate": "datetime-value",
-        "gender": "gender-value",
-        "studentNumber": "studentNumber-value",
-        "externalId": "externalId-value"
-      }
+      "passwordPolicies": "String",
+      "passwordProfile": { "@odata.type": "microsoft.graph.passwordProfile" },
+      "preferredLanguage": "String",
+      "primaryRole": "string",
+      "provisionedPlans": [{ "@odata.type": "microsoft.graph.provisionedPlan" }],
+      "residenceAddress": { "@odata.type": "microsoft.graph.physicalAddress" },
+      "student": { "@odata.type": "microsoft.graph.educationStudent" },
+      "surname": "String",
+      "teacher": { "@odata.type": "microsoft.graph.educationTeacher" },
+      "usageLocation": "String",
+      "userPrincipalName": "String",
+      "userType": "String"
     }
   ]
 }

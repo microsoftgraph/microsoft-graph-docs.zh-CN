@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 18c8076a55643289e8ef33fa4316cd224abfe02e
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 890da6054328da8619ede99de925b941bd41e20a
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217540"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45006952"
 ---
 # <a name="synchronizationjob-resource-type"></a>synchronizationJob 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "43217540"
 
 通过定期在后台运行、轮询一个目录中的更改并将它们推送到另一个目录来执行同步。 同步作业始终特定于租户中的应用程序的特定实例。 作为同步作业安装程序的一部分，您需要授予在目标目录中读取和写入对象的权限，并自定义作业的同步架构。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法        | 返回类型               | 说明                  |
 |:--------------|:--------------------------|:-----------------------------|
@@ -34,16 +34,16 @@ ms.locfileid: "43217540"
 |[获取 synchronizationSchema](../api/synchronization-synchronizationschema-get.md)    |[synchronizationSchema](synchronization-synchronizationschema.md)   |检索作业的有效同步架构。|
 |[更新 synchronizationSchema](../api/synchronization-synchronizationschema-update.md)    |无   |更新作业的同步架构。 |
 |[验证凭据](../api/synchronization-synchronizationjob-validatecredentials.md)|无|测试提供的针对目标目录的凭据。|
-
+|[provisionOnDemand](../api/synchronization-synchronizationjob-provision-on-demand.md)|[synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md)集合|表示将设置的对象和执行的同步规则。 资源主要用于按需预配。 |
 ## <a name="properties"></a>属性
 
 | 属性      | 类型      | 说明    |
 |:--------------|:----------|:---------------|
-|id             |字符串                     |唯一的同步作业标识符。 只读。|
+|id             |String                     |唯一的同步作业标识符。 只读。|
 |schedule       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|用于运行作业的计划。 只读。|
-|状态         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |作业的状态，包括上次运行作业的时间、当前作业状态和错误。|
+|status         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |作业的状态，包括上次运行作业的时间、当前作业状态和错误。|
 |synchronizationJobSettings   |[keyValuePair](keyvaluepair.md)    |与作业相关联的设置。 某些设置是从模板继承的。|
-|templateId     |字符串    |此作业所基于的[同步模板](synchronization-synchronizationtemplate.md)的标识符。|
+|templateId     |String    |此作业所基于的[同步模板](synchronization-synchronizationtemplate.md)的标识符。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: af5756277ddcf41a04ebed795ceeb4f1f0e3d08e
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: afb23aece15371a408c79f2fea3d47861aa5c427
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892552"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44989998"
 ---
 # <a name="create-schema"></a>创建架构
 
@@ -24,7 +24,7 @@ ms.locfileid: "42892552"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
@@ -44,7 +44,7 @@ POST /external/connections/{id}/schema
 
 | 名称                  | 说明                                                        |
 |:----------------------|:-------------------------------------------------------------------|
-| Authorization         | Bearer {token}。必需。                                          |
+| Authorization         | Bearer {token}. Required.                                          |
 | Content-Type          | application/json. Required.                                        |
 | 首选：响应-async | 使用此来导致请求以异步方式执行。 可选。 |
 
@@ -52,16 +52,16 @@ POST /external/connections/{id}/schema
 
 在请求正文中，提供[架构](../resources/schema.md)对象的 JSON 表示形式。
 
-注册自`schema`定义项目架构时，对象的`baseType`属性必须设置为`microsoft.graph.externalItem` ，并且必须包含`properties`属性。 该`properties`对象必须至少包含一个属性，最多为64。
+注册自定义项目架构时， `schema` 对象的 `baseType` 属性必须设置为 `microsoft.graph.externalItem` ，并且必须包含 `properties` 属性。 该 `properties` 对象必须至少包含一个属性，最多为64。
 
 ## <a name="response"></a>响应
 
-在请求`Prefer: respond-async`中包含标头的情况下，如果成功，此方法`202 Accepted`将在`Location`响应标头中返回响应代码和 URL，该 URL 可用于[获取操作状态](../api/connectionoperation-get.md)。
+在 `Prefer: respond-async` 请求中包含标头的情况下，如果成功，此方法将在 `202 Accepted` 响应标头中返回响应代码和 URL， `Location` 该 URL 可用于[获取操作状态](../api/connectionoperation-get.md)。
 
-如果在`Prefer: respond-async`请求中不包含标头，则此方法在响应正文`201 Created`中返回响应代码和新[架构](../resources/schema.md)对象。
+如果在 `Prefer: respond-async` 请求中不包含标头，则此方法在 `201 Created` 响应正文中返回响应代码和新[架构](../resources/schema.md)对象。
 
 > [!NOTE]
-> 创建架构是一个容易导致网关超时的长时间运行的过程。 我们建议使用`Prefer: respond-async`标头以避免超时错误。
+> 创建架构是一个容易导致网关超时的长时间运行的过程。 我们建议使用 `Prefer: respond-async` 标头以避免超时错误。
 
 ## <a name="examples"></a>示例
 
@@ -86,16 +86,21 @@ Prefer: respond-async
   "baseType": "microsoft.graph.externalItem",
   "properties": [
     {
-      "name": "title",
+      "name": "ticketTitle",
       "type": "String",
       "isSearchable": "true",
-      "isRetrievable": "true"
+      "isRetrievable": "true",
+      "labels": [
+        "title"
+      ]
     },
     {
       "name": "priority",
       "type": "String",
       "isQueryable": "true",
-      "isRetrievable": "true"
+      "isRetrievable": "true",
+      "isRefinable": "true",
+      "isSearchable": "false"
     },
     {
       "name": "assignee",
