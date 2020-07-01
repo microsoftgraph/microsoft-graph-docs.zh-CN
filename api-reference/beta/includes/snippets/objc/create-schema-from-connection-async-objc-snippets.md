@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5b3183b1bd128cc50892a5c788347945cd2d6424
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: f7cb915b6d989231a5d7a24d2f86c5fd6bfee6ea
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37995480"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45008611"
 ---
 ```objc
 
@@ -21,16 +21,21 @@ MSGraphSchema *schema = [[MSGraphSchema alloc] init];
 [schema setBaseType:@"microsoft.graph.externalItem"];
 NSMutableArray *propertiesList = [[NSMutableArray alloc] init];
 MSGraphProperty *properties = [[MSGraphProperty alloc] init];
-[properties setName:@"title"];
+[properties setName:@"ticketTitle"];
 [properties setType: [MSGraphPropertyType String]];
 [properties setIsSearchable:@"true"];
 [properties setIsRetrievable:@"true"];
+NSMutableArray *labelsList = [[NSMutableArray alloc] init];
+[labelsList addObject: @"title"];
+[properties setLabels:labelsList];
 [propertiesList addObject: properties];
 MSGraphProperty *properties = [[MSGraphProperty alloc] init];
 [properties setName:@"priority"];
 [properties setType: [MSGraphPropertyType String]];
 [properties setIsQueryable:@"true"];
 [properties setIsRetrievable:@"true"];
+[properties setIsRefinable:@"true"];
+[properties setIsSearchable:@"false"];
 [propertiesList addObject: properties];
 MSGraphProperty *properties = [[MSGraphProperty alloc] init];
 [properties setName:@"assignee"];
