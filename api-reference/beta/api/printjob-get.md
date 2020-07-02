@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 2833251d9d9ad7e65caafcebbc494f31c1ed8f7b
-ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
+ms.openlocfilehash: c634c4679cf65a8e723e55a4b0b9c39298a764b3
+ms.sourcegitcommit: 9f1e02ab486a2c3e0a128e5d36f46cebe4961581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "43812491"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024425"
 ---
 # <a name="get-printjob"></a>获取 printJob
 
@@ -20,8 +20,8 @@ ms.locfileid: "43812491"
 
 检索打印作业的属性和关系。
 
-## <a name="permissions"></a>Permissions
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+## <a name="permissions"></a>权限
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
 
@@ -43,15 +43,18 @@ GET /print/printers/{id}/jobs/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | Bearer {token}。必需。 |
+| Authorization | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[printJob](../resources/printjob.md)对象。
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面展示了示例请求。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[printJob](../resources/printjob.md)对象。
+## <a name="examples"></a>示例
+
+### <a name="example-1-get-a-print-job"></a>示例1：获取打印作业
+
+#### <a name="request"></a>请求
+下面的示例演示了获取打印作业的请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -75,9 +78,9 @@ GET https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}
 
 ---
 
-##### <a name="response"></a>响应
+#### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,6 +100,83 @@ Content-length: 408
     "processingState": "completed",
     "processingStateDescription": "The print job has completed successfully and no further processing will take place."
   }
+}
+```
+
+### <a name="example-2-get-a-print-job-and-its-associated-document-data"></a>示例2：获取打印作业及其关联的文档数据
+
+#### <a name="request"></a>请求
+下面的示例演示了获取打印作业及其关联的文档数据的请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_printjob_withdocumentdata"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/print/printers/86b6d420-7e6b-4797-a05c-af4e56cd81bd/jobs/31216?$expand=documents
+```
+
+---
+
+#### <a name="response"></a>响应
+下面展示了示例响应。
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.printJob"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1688
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs(documents())/$entity",
+  "id": "31216",
+  "createdDateTime": "2020-06-26T04:20:06.5715544Z",
+  "createdBy": {
+    "id": "",
+    "displayName": "",
+    "ipAddress": null,
+    "userPrincipalName": "",
+    "oDataType": null
+  },
+  "status": {
+  "processingState": "aborted",
+  "processingStateDescription": "The print job has been aborted by a user or the printer and no further processing will take place."
+  },
+  "documents@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs('31216')/documents",
+  "documents": [
+    {
+      "id": "ca96c367-c3ad-478a-bbce-fbd1cd856e73",
+      "displayName": "",
+      "contentType": "application/oxps",
+      "size": 276604,
+      "configuration": {
+        "quality": "medium",
+        "dpi": 300,
+        "feedDirection": null,
+        "orientation": "landscape",
+        "duplexMode": "oneSided",
+        "copies": 2,
+        "colorMode": "color",
+        "inputBin": null,
+        "outputBin": null,
+        "mediaSize": null,
+        "mediaType": null,
+        "finishings": [],
+        "pagesPerSheet": null,
+        "multipageLayout": "clockwiseFromTopLeft",
+        "collate": true,
+        "scaling": null,
+        "fitPdfToPage": null,
+        "margin": null,
+        "pageRanges": []
+      }
+    }
+  ]
 }
 ```
 

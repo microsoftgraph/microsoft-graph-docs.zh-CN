@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: afb23aece15371a408c79f2fea3d47861aa5c427
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: f91baaaa879aa0ddcc2212604cac3670adc445e4
+ms.sourcegitcommit: 9f1e02ab486a2c3e0a128e5d36f46cebe4961581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44989998"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024367"
 ---
 # <a name="create-schema"></a>创建架构
 
@@ -78,7 +78,7 @@ POST /external/connections/{id}/schema
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/connections/contosohr/schema
+POST https://graph.microsoft.com/beta/external/connections/contosohr/schema
 Content-type: application/json
 Prefer: respond-async
 

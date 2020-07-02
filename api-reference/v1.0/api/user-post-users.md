@@ -1,27 +1,30 @@
 ---
 title: 创建用户
 description: 使用此 API 新建用户。
-author: dkershaw10
+author: krbain
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: aebd847d9bb922867b7293d6f06f0ae65f23c8cb
-ms.sourcegitcommit: bd0daf5c133ab29af9337a5edd3b8509fd2313d5
+ms.openlocfilehash: 71139b570f279cc5f689e327079969319a47fa4e
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41232026"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45006931"
 ---
 # <a name="create-user"></a>创建用户
 
-创建新[用户](../resources/user.md)。请求正文包含要创建的用户。至少要为该用户指定必需的属性。可以选择指定其他任意可写属性。
+命名空间：microsoft.graph
+
+Create a new [user](../resources/user.md).
+The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
 
 >[!NOTE]
 >若要创建外部用户，请使用[邀请 API](invitation-post.md)。
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -39,7 +42,7 @@ POST /users
 
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
@@ -74,7 +77,7 @@ POST /users
 
 下面是一个请求示例。
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_user_from_users"
@@ -95,19 +98,19 @@ Content-type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-user-from-users-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-user-from-users-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-user-from-users-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-user-from-users-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -118,7 +121,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -183,19 +186,18 @@ Content-type: application/json
     }
   ],
   "passwordProfile" : {
-    "password": "password-value"
+    "password": "password-value",
+    "forceChangePasswordNextSignIn": false
   },
   "passwordPolicies": "DisablePasswordExpiration"
 }
 ```
 
----
-
 #### <a name="response"></a>响应
 
 下面是一个响应示例。 
 
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

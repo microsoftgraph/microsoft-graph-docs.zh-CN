@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 2f0f539f902bd1b83c8efd046af35b0deb28ed05
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 6b290d44801dc1ae234b1eadd6d1fd23426d186c
+ms.sourcegitcommit: 9f1e02ab486a2c3e0a128e5d36f46cebe4961581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006700"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024426"
 ---
 # <a name="list-jobs"></a>列出作业
 

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d23b016bb383903f35d370c9d4afb623518e5bfd
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: fd44a74bd1a0a5a8c872f49515edce23c27d6907
+ms.sourcegitcommit: 9f1e02ab486a2c3e0a128e5d36f46cebe4961581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062090"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024427"
 ---
 # <a name="update-printer"></a>更新打印机
 
@@ -21,15 +21,17 @@ ms.locfileid: "43062090"
 更新[printer](../resources/printer.md)对象的属性。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
+除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。 
+
+仅允许注册打印机的应用程序使用应用程序权限更新打印机。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| 已阅读的用户。所有 |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序|Printer ReadWrite。 All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -39,21 +41,39 @@ PATCH /print/printers/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization | Bearer {token}。必需。 |
-| Content-type  | application/json. Required.|
+| Authorization | Bearer {token}. Required. |
+| Content-type  | `application/json`使用委派权限时， `application/ipp` 使用应用程序权限时。 必需。|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供应更新的相关[打印机](../resources/printer.md)字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
+
+### <a name="delegated-permissions-and-json-payload"></a>委派权限和 JSON 有效负载
+
+如果使用委派权限，则在请求正文中，提供应更新的相关[打印机](../resources/printer.md)字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |location|[printerLocation](../resources/printerlocation.md)|打印机的物理和/或组织位置。|
 |name|String|打印机的名称。|
 
+### <a name="application-permissions-and-ipp-payload"></a>应用程序权限和 IPP 有效负载
+
+如果使用应用程序权限，则请求正文包含一个二进制流，表示[IPP 编码](https://tools.ietf.org/html/rfc8010)中的打印机属性组。
+
+客户端必须提供一组具有一个或多个值（包括显式允许的带外值）的一组打印机属性，如[RFC8011 section 4.2](https://tools.ietf.org/html/rfc8011#section-4.2)作业模板属性（"xxx-默认"、"支持 xxx" 和 "xxx-就绪" 属性）中的定义，[第4.4 节](https://tools.ietf.org/html/rfc8011#section-4.4)打印机说明属性以及打印机支持的任何属性扩展。 提供的每个打印机属性的值将替换目标打印机对象上相应的打印机属性的值。 对于可以具有多个值（1setOf）的属性，客户端提供的所有值都将替换相应的打印机对象属性的所有值。
+
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[printer](../resources/printer.md)对象。
+
+### <a name="delegated-permissions-and-json-payload"></a>委派权限和 JSON 有效负载
+
+如果使用委派权限，如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[printer](../resources/printer.md)对象。
+
+### <a name="application-permissions-and-ipp-payload"></a>应用程序权限和 IPP 有效负载
+
+如果使用应用程序权限，如果成功，此方法将返回 `204 No content` 响应代码。 它不在响应正文中返回任何内容。
+
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+
+### <a name="request"></a>请求
 下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -89,9 +109,9 @@ Content-length: 124
 
 ---
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
