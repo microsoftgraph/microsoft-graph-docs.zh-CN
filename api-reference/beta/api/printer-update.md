@@ -5,58 +5,78 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d23b016bb383903f35d370c9d4afb623518e5bfd
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: fd44a74bd1a0a5a8c872f49515edce23c27d6907
+ms.sourcegitcommit: 9f1e02ab486a2c3e0a128e5d36f46cebe4961581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062090"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024427"
 ---
-# <a name="update-printer"></a><span data-ttu-id="652b9-103">更新打印机</span><span class="sxs-lookup"><span data-stu-id="652b9-103">Update printer</span></span>
+# <a name="update-printer"></a><span data-ttu-id="7e489-103">更新打印机</span><span class="sxs-lookup"><span data-stu-id="7e489-103">Update printer</span></span>
 
-<span data-ttu-id="652b9-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="652b9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7e489-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7e489-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="652b9-105">更新[printer](../resources/printer.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="652b9-105">Update the properties of a [printer](../resources/printer.md) object.</span></span>
+<span data-ttu-id="7e489-105">更新[printer](../resources/printer.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="7e489-105">Update the properties of a [printer](../resources/printer.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="652b9-106">权限</span><span class="sxs-lookup"><span data-stu-id="652b9-106">Permissions</span></span>
-<span data-ttu-id="652b9-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="652b9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7e489-106">权限</span><span class="sxs-lookup"><span data-stu-id="7e489-106">Permissions</span></span>
+<span data-ttu-id="7e489-107">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="7e489-107">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="7e489-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7e489-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="652b9-109">除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。</span><span class="sxs-lookup"><span data-stu-id="652b9-109">In addition to the following permissions, the user's tenant must have an active Universal Print subscription.</span></span>
+<span data-ttu-id="7e489-109">除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。</span><span class="sxs-lookup"><span data-stu-id="7e489-109">In addition to the following permissions, the user's tenant must have an active Universal Print subscription.</span></span> 
 
-|<span data-ttu-id="652b9-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="652b9-110">Permission type</span></span> | <span data-ttu-id="652b9-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="652b9-111">Permissions (from least to most privileged)</span></span> |
+<span data-ttu-id="7e489-110">仅允许注册打印机的应用程序使用应用程序权限更新打印机。</span><span class="sxs-lookup"><span data-stu-id="7e489-110">Only the app that registered the printer is allowed to update the printer using application permissions.</span></span>
+
+|<span data-ttu-id="7e489-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="7e489-111">Permission type</span></span> | <span data-ttu-id="7e489-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7e489-112">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="652b9-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="652b9-112">Delegated (work or school account)</span></span>| <span data-ttu-id="652b9-113">已阅读的用户。所有</span><span class="sxs-lookup"><span data-stu-id="652b9-113">Users.Read.All</span></span> |
-|<span data-ttu-id="652b9-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="652b9-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="652b9-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="652b9-115">Not Supported.</span></span>|
-|<span data-ttu-id="652b9-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="652b9-116">Application</span></span>|<span data-ttu-id="652b9-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="652b9-117">Not Supported.</span></span>|
+|<span data-ttu-id="7e489-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7e489-113">Delegated (work or school account)</span></span>| <span data-ttu-id="7e489-114">已阅读的用户。所有</span><span class="sxs-lookup"><span data-stu-id="7e489-114">Users.Read.All</span></span> |
+|<span data-ttu-id="7e489-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7e489-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7e489-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="7e489-116">Not Supported.</span></span>|
+|<span data-ttu-id="7e489-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="7e489-117">Application</span></span>|<span data-ttu-id="7e489-118">Printer ReadWrite。 All</span><span class="sxs-lookup"><span data-stu-id="7e489-118">Printer.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="652b9-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="652b9-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7e489-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7e489-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /print/printers/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="652b9-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="652b9-119">Request headers</span></span>
-| <span data-ttu-id="652b9-120">名称</span><span class="sxs-lookup"><span data-stu-id="652b9-120">Name</span></span>       | <span data-ttu-id="652b9-121">说明</span><span class="sxs-lookup"><span data-stu-id="652b9-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7e489-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="7e489-120">Request headers</span></span>
+| <span data-ttu-id="7e489-121">名称</span><span class="sxs-lookup"><span data-stu-id="7e489-121">Name</span></span>       | <span data-ttu-id="7e489-122">说明</span><span class="sxs-lookup"><span data-stu-id="7e489-122">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="652b9-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="652b9-122">Authorization</span></span> | <span data-ttu-id="652b9-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="652b9-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="652b9-125">Content-type</span><span class="sxs-lookup"><span data-stu-id="652b9-125">Content-type</span></span>  | <span data-ttu-id="652b9-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="652b9-p103">application/json. Required.</span></span>|
+| <span data-ttu-id="7e489-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="7e489-123">Authorization</span></span> | <span data-ttu-id="7e489-124">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="7e489-124">Bearer {token}.</span></span> <span data-ttu-id="7e489-125">Required.</span><span class="sxs-lookup"><span data-stu-id="7e489-125">Required.</span></span> |
+| <span data-ttu-id="7e489-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="7e489-126">Content-type</span></span>  | <span data-ttu-id="7e489-127">`application/json`使用委派权限时， `application/ipp` 使用应用程序权限时。</span><span class="sxs-lookup"><span data-stu-id="7e489-127">`application/json` when using delegated permissions, `application/ipp` when using application permissions.</span></span> <span data-ttu-id="7e489-128">必需。</span><span class="sxs-lookup"><span data-stu-id="7e489-128">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="652b9-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="652b9-128">Request body</span></span>
-<span data-ttu-id="652b9-129">在请求正文中，提供应更新的相关[打印机](../resources/printer.md)字段的值。</span><span class="sxs-lookup"><span data-stu-id="652b9-129">In the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated.</span></span> <span data-ttu-id="652b9-130">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="652b9-130">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="652b9-131">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="652b9-131">For best performance, don't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7e489-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="7e489-129">Request body</span></span>
 
-| <span data-ttu-id="652b9-132">属性</span><span class="sxs-lookup"><span data-stu-id="652b9-132">Property</span></span>     | <span data-ttu-id="652b9-133">类型</span><span class="sxs-lookup"><span data-stu-id="652b9-133">Type</span></span>        | <span data-ttu-id="652b9-134">说明</span><span class="sxs-lookup"><span data-stu-id="652b9-134">Description</span></span> |
+### <a name="delegated-permissions-and-json-payload"></a><span data-ttu-id="7e489-130">委派权限和 JSON 有效负载</span><span class="sxs-lookup"><span data-stu-id="7e489-130">Delegated permissions and JSON payload</span></span>
+
+<span data-ttu-id="7e489-131">如果使用委派权限，则在请求正文中，提供应更新的相关[打印机](../resources/printer.md)字段的值。</span><span class="sxs-lookup"><span data-stu-id="7e489-131">If using delegated permissions, in the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated.</span></span> <span data-ttu-id="7e489-132">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="7e489-132">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="7e489-133">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="7e489-133">For best performance, don't include existing values that haven't changed.</span></span>
+
+| <span data-ttu-id="7e489-134">属性</span><span class="sxs-lookup"><span data-stu-id="7e489-134">Property</span></span>     | <span data-ttu-id="7e489-135">类型</span><span class="sxs-lookup"><span data-stu-id="7e489-135">Type</span></span>        | <span data-ttu-id="7e489-136">说明</span><span class="sxs-lookup"><span data-stu-id="7e489-136">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="652b9-135">location</span><span class="sxs-lookup"><span data-stu-id="652b9-135">location</span></span>|[<span data-ttu-id="652b9-136">printerLocation</span><span class="sxs-lookup"><span data-stu-id="652b9-136">printerLocation</span></span>](../resources/printerlocation.md)|<span data-ttu-id="652b9-137">打印机的物理和/或组织位置。</span><span class="sxs-lookup"><span data-stu-id="652b9-137">The physical and/or organizational location of the printer.</span></span>|
-|<span data-ttu-id="652b9-138">name</span><span class="sxs-lookup"><span data-stu-id="652b9-138">name</span></span>|<span data-ttu-id="652b9-139">String</span><span class="sxs-lookup"><span data-stu-id="652b9-139">String</span></span>|<span data-ttu-id="652b9-140">打印机的名称。</span><span class="sxs-lookup"><span data-stu-id="652b9-140">The name of the printer.</span></span>|
+|<span data-ttu-id="7e489-137">location</span><span class="sxs-lookup"><span data-stu-id="7e489-137">location</span></span>|[<span data-ttu-id="7e489-138">printerLocation</span><span class="sxs-lookup"><span data-stu-id="7e489-138">printerLocation</span></span>](../resources/printerlocation.md)|<span data-ttu-id="7e489-139">打印机的物理和/或组织位置。</span><span class="sxs-lookup"><span data-stu-id="7e489-139">The physical and/or organizational location of the printer.</span></span>|
+|<span data-ttu-id="7e489-140">name</span><span class="sxs-lookup"><span data-stu-id="7e489-140">name</span></span>|<span data-ttu-id="7e489-141">String</span><span class="sxs-lookup"><span data-stu-id="7e489-141">String</span></span>|<span data-ttu-id="7e489-142">打印机的名称。</span><span class="sxs-lookup"><span data-stu-id="7e489-142">The name of the printer.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="652b9-141">响应</span><span class="sxs-lookup"><span data-stu-id="652b9-141">Response</span></span>
-<span data-ttu-id="652b9-142">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[printer](../resources/printer.md)对象。</span><span class="sxs-lookup"><span data-stu-id="652b9-142">If successful, this method returns a `200 OK` response code and an updated [printer](../resources/printer.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="652b9-143">示例</span><span class="sxs-lookup"><span data-stu-id="652b9-143">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="652b9-144">请求</span><span class="sxs-lookup"><span data-stu-id="652b9-144">Request</span></span>
-<span data-ttu-id="652b9-145">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="652b9-145">The following is an example of the request.</span></span>
+### <a name="application-permissions-and-ipp-payload"></a><span data-ttu-id="7e489-143">应用程序权限和 IPP 有效负载</span><span class="sxs-lookup"><span data-stu-id="7e489-143">Application permissions and IPP payload</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="652b9-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="652b9-146">HTTP</span></span>](#tab/http)
+<span data-ttu-id="7e489-144">如果使用应用程序权限，则请求正文包含一个二进制流，表示[IPP 编码](https://tools.ietf.org/html/rfc8010)中的打印机属性组。</span><span class="sxs-lookup"><span data-stu-id="7e489-144">If using application permissions, the request body contains a binary stream representing the Printer Attributes group in [IPP encoding](https://tools.ietf.org/html/rfc8010).</span></span>
+
+<span data-ttu-id="7e489-145">客户端必须提供一组具有一个或多个值（包括显式允许的带外值）的一组打印机属性，如[RFC8011 section 4.2](https://tools.ietf.org/html/rfc8011#section-4.2)作业模板属性（"xxx-默认"、"支持 xxx" 和 "xxx-就绪" 属性）中的定义，[第4.4 节](https://tools.ietf.org/html/rfc8011#section-4.4)打印机说明属性以及打印机支持的任何属性扩展。</span><span class="sxs-lookup"><span data-stu-id="7e489-145">The client MUST supply a set of Printer attributes with one or more values (including explicitly allowed out-of-band values) as defined in [RFC8011 section 4.2](https://tools.ietf.org/html/rfc8011#section-4.2) Job Template Attributes ("xxx-default", "xxx-supported", and "xxx-ready" attributes), [Section 4.4](https://tools.ietf.org/html/rfc8011#section-4.4) Printer Description Attributes, and any attribute extensions supported by the Printer.</span></span> <span data-ttu-id="7e489-146">提供的每个打印机属性的值将替换目标打印机对象上相应的打印机属性的值。</span><span class="sxs-lookup"><span data-stu-id="7e489-146">The value(s) of each Printer attribute supplied replaces the value(s) of the corresponding Printer attribute on the target Printer object.</span></span> <span data-ttu-id="7e489-147">对于可以具有多个值（1setOf）的属性，客户端提供的所有值都将替换相应的打印机对象属性的所有值。</span><span class="sxs-lookup"><span data-stu-id="7e489-147">For attributes that can have multiple values (1setOf), all values supplied by the client replace all values of the corresponding Printer object attribute.</span></span>
+
+## <a name="response"></a><span data-ttu-id="7e489-148">响应</span><span class="sxs-lookup"><span data-stu-id="7e489-148">Response</span></span>
+
+### <a name="delegated-permissions-and-json-payload"></a><span data-ttu-id="7e489-149">委派权限和 JSON 有效负载</span><span class="sxs-lookup"><span data-stu-id="7e489-149">Delegated permissions and JSON payload</span></span>
+
+<span data-ttu-id="7e489-150">如果使用委派权限，如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[printer](../resources/printer.md)对象。</span><span class="sxs-lookup"><span data-stu-id="7e489-150">If using delegated permissions, if successful, this method returns a `200 OK` response code and an updated [printer](../resources/printer.md) object in the response body.</span></span>
+
+### <a name="application-permissions-and-ipp-payload"></a><span data-ttu-id="7e489-151">应用程序权限和 IPP 有效负载</span><span class="sxs-lookup"><span data-stu-id="7e489-151">Application permissions and IPP payload</span></span>
+
+<span data-ttu-id="7e489-152">如果使用应用程序权限，如果成功，此方法将返回 `204 No content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="7e489-152">If using application permissions, if successful, this method returns `204 No content` response code.</span></span> <span data-ttu-id="7e489-153">它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="7e489-153">It does not return anything in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="7e489-154">示例</span><span class="sxs-lookup"><span data-stu-id="7e489-154">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="7e489-155">请求</span><span class="sxs-lookup"><span data-stu-id="7e489-155">Request</span></span>
+<span data-ttu-id="7e489-156">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="7e489-156">The following is an example of the request.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="7e489-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="7e489-157">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_printer"
@@ -75,23 +95,23 @@ Content-length: 124
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="652b9-147">C#</span><span class="sxs-lookup"><span data-stu-id="652b9-147">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7e489-158">C#</span><span class="sxs-lookup"><span data-stu-id="7e489-158">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-printer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="652b9-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="652b9-148">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7e489-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7e489-159">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-printer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="652b9-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="652b9-149">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7e489-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7e489-160">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-printer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="652b9-150">响应</span><span class="sxs-lookup"><span data-stu-id="652b9-150">Response</span></span>
-<span data-ttu-id="652b9-151">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="652b9-151">The following is an example of the response.</span></span>
-><span data-ttu-id="652b9-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="652b9-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="7e489-161">响应</span><span class="sxs-lookup"><span data-stu-id="7e489-161">Response</span></span>
+<span data-ttu-id="7e489-162">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="7e489-162">The following is an example of the response.</span></span>
+><span data-ttu-id="7e489-163">**Note:** The response object shown here might be shortened for readability.</span><span class="sxs-lookup"><span data-stu-id="7e489-163">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="7e489-164">All the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="7e489-164">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
