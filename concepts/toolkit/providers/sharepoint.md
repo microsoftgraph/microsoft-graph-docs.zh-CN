@@ -3,12 +3,12 @@ title: SharePoint 提供程序
 description: 使用 SharePoint web 部件中的 SharePoint 提供程序为组件提供 Microsoft Graph 访问的功能。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 74605fa4c2acc2919a73f7b6bef1460480883c34
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: d94d516aa458ccfbc4a3770ad5937828aa23b335
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868546"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45007071"
 ---
 # <a name="sharepoint-provider"></a>SharePoint 提供程序
 
@@ -18,12 +18,12 @@ ms.locfileid: "40868546"
 
 ## <a name="get-started"></a>入门
 
-在 web 部件的`onInit()`方法内初始化提供程序。
+在 web 部件的方法内初始化提供程序 `onInit()` 。
 
 ```ts
 
 // import the providers at the top of the page
-import {Providers, SharePointProvider} from '@microsoft/mgt/dist/commonjs';
+import {Providers, SharePointProvider} from '@microsoft/mgt';
 
 // add the onInit() method if not already there in your web part class
 protected async onInit() {
@@ -31,7 +31,7 @@ protected async onInit() {
 }
 ```
 
-现在您可以在`render()`方法中添加任何组件，它将使用 SharePoint 上下文来访问 Microsoft Graph。
+现在您可以在方法中添加任何组件 `render()` ，它将使用 SharePoint 上下文来访问 Microsoft Graph。
 
 ```ts
 
@@ -54,6 +54,12 @@ public render(): void {
 
 在创建 web 部件并准备好使用组件之后，您需要确保您的 web 部件具有访问 Microsoft Graph 的适当权限。 有关详细信息，请参阅[在 SharePoint 框架中使用 Microsoft Graph](/sharepoint/dev/spfx/use-aad-tutorial)。
 
-简言之，向添加适当的权限非常重要`package-solution.json`。 您需要将 web 部件包上传到 SharePoint，并让管理员批准请求的权限。
+简言之，向添加适当的权限非常重要 `package-solution.json` 。 您需要将 web 部件包上传到 SharePoint，并让管理员批准请求的权限。
 
 >**提示：** 如果你不确定要添加的权限，每个组件的文档都包含所需的所有权限。
+
+## <a name="polyfills"></a>Polyfills.ts
+
+如果您计划在 SPFx web 部件中支持 IE11，则必须使用 polyfills.ts。
+
+若要了解详细信息，[请参阅入门](../get-started.md#sharepoint)。

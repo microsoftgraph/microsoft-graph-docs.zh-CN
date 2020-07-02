@@ -3,12 +3,12 @@ title: Microsoft Teams 提供程序
 description: 使用 Microsoft "团队" 选项卡中的团队提供程序来促进对所有组件的身份验证和 Microsoft Graph 访问。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 850d414557313a2a16b3cd5c1c4b854cc1b00081
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: 62dba210d4fbf7d3540df7fd58d33e275f0065c3
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144266"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44990253"
 ---
 # <a name="microsoft-teams-provider"></a>Microsoft Teams 提供程序
 
@@ -31,15 +31,18 @@ ms.locfileid: "43144266"
 <mgt-teams-provider
   client-id="<YOUR_CLIENT_ID>"
   auth-popup-url="https://<YOUR-DOMAIN>.com/AUTH-PATH"
+  authority=""
 ></mgt-teams-provider>
 ```
 
 | 属性 | 说明 |
 | --- | --- |
-| 客户端 id   | 字符串客户端 ID （请参阅配置团队应用）。 必需。 |
-| auth-popup-url  | 将在弹出窗口中处理 auth 的页面的绝对或相对路径（请参阅 Create the popup page）。 必需。 |
+| 客户端 id   | 字符串客户端 ID （请参阅[配置团队应用](#configure-your-teams-app)。 必需。 |
+| auth-popup-url  | 将在弹出窗口中处理 auth 的页面的绝对或相对路径（请参阅[Create the popup page](#create-the-popup-page)）。 必需。 |
 | scopes  | 用户必须同意登录时的作用域的逗号分隔字符串。 可选。 |
 | 取决于 | 另一个较高优先级提供程序组件的元素选择器字符串。 可选。 |
+| 监管    | 颁发机构字符串。 默认值是公共颁发机构。 对于单租户应用，请使用租户 ID 或租户名称。 例如， `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` 或 `https://login.microsoftonline.com/[your-tenant-id]` 。 可选。 |
+
 
 ### <a name="via-npm"></a>via NPM
 下面的示例使用 JS 模块（通过 NPM）中的提供程序。
@@ -58,7 +61,7 @@ import {Providers, TeamsProvider} from '@microsoft/mgt';
 Providers.globalProvider = new TeamsProvider(config);
 ```
 
-其中`config`是
+其中 `config` 是
 
 ```ts
 export interface TeamsConfig {
@@ -97,11 +100,11 @@ Providers.globalProvider = new TeamsProvider(config);
 
 ### <a name="enable-implicit-grant-flow"></a>启用隐式授予流
 
-请确保启用隐式授予流;这对于从客户端请求令牌的 web 应用程序是必需的。 在 Azure 门户中，在管理应用注册时，请编辑清单并更改`oauth2AllowImplicitFlow`为`true`。
+请确保启用隐式授予流;这对于从客户端请求令牌的 web 应用程序是必需的。 在 Azure 门户中，在管理应用注册时，请编辑清单并更改 `oauth2AllowImplicitFlow` 为 `true` 。
 
 ### <a name="create-the-popup-page"></a>创建弹出页
 
-若要使用你的团队凭据登录，你需要提供团队应用将在弹出项中打开的 URL，这将遵循身份验证流。 此 URL 必须在您的域中，并且需要调用该`TeamsProvider.handleAuth();`方法。 这是此页面唯一需要执行的操作。 例如：
+若要使用你的团队凭据登录，你需要提供团队应用将在弹出项中打开的 URL，这将遵循身份验证流。 此 URL 必须在您的域中，并且需要调用该 `TeamsProvider.handleAuth();` 方法。 这是此页面唯一需要执行的操作。 例如：
 
 ```html
 <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
@@ -124,4 +127,4 @@ TeamsProvider.handleAuth();
 
 ### <a name="configure-redirect-uris"></a>配置重定向 Uri
 
-在您的网站上发布此页面后，您需要使用`auth-popup-url/authPopupUrl`属性中的 URL。 此外，还需要在 Azure AD 门户的应用配置中将此 URL 配置为有效的重定向 URI。
+在您的网站上发布此页面后，您需要使用属性中的 URL `auth-popup-url/authPopupUrl` 。 此外，还需要在 Azure AD 门户的应用配置中将此 URL 配置为有效的重定向 URI。

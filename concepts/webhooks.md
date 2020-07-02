@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 295f62aeba919fde1384642755b0c51816527d91
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 7db6b2498d039a4f6474b530023a9f4c0e199119
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897076"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44989777"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -65,11 +65,11 @@ The Microsoft Graph API uses a webhook mechanism to deliver change notifications
 
 - 最大订阅配额：
 
-  - 每个应用：总订阅数 50,000
-  - 每个租户：所有应用的总订阅数 1000
+  - 每个应用（所有租户组合）：50000订阅总数
+  - 每个租户（组合所有应用程序）：1000所有应用的订阅总数
   - 每个应用和租户组合：总订阅数 100
 
-超出限制时，尝试创建订阅将导致[错误响应](errors.md) - `403 Forbidden`。 `message` 属性将说明已超出什么限制。
+超出任何限制时，创建订阅的尝试将导致[错误响应](errors.md)  -  `403 Forbidden` 。 `message` 属性将说明已超出什么限制。
 
 - 不支持 Azure AD B2C 租户。
 

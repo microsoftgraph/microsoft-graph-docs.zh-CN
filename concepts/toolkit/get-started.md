@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包入门
 description: 开始在应用程序中使用 Microsoft 工具包。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 1537a686d25d885a898603ca576f688abdaab3e4
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 2e352a71b7e1f068bfb6dbd13a6ed151dd1b84b0
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639931"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45007064"
 ---
 # <a name="get-started-with-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包入门
 
@@ -89,8 +89,60 @@ npm install @microsoft/mgt
 
 如果您正在使用 npm 程序包中的 es6 模块，请确保在项目中包含 polyfills.ts，因为它们不会自动包括在内。 若要了解详细信息，请参阅[polyfills.ts](https://www.webcomponents.org/polyfills)。
 
-如果要在 unpkg 上的捆绑包中使用 mgt-loader 脚本，则已包含 polyfills.ts。
+如果要在 unpkg 上使用捆绑包中的 mgt-loader.js 脚本，则 polyfills.ts 已包含在内。
 
+### <a name="sharepoint"></a>Sharepoint
+
+如果您计划在 SPFx web 部件中支持 IE11，则以下过程描述了确保跨浏览器兼容性所需的步骤： 
+
+1. 安装以下程序包：
+```cmd
+npm install -D babel-loader @babel/core @babel/preset-env webpack
+npm install -D @webcomponents/webcomponentsjs regenerator-runtime core-js
+npm install @microsoft/mgt
+```
+
+2. 在 gulpfile.js build.initialze （gulp）的正上方插入以下配置。
+```ts
+build.configureWebpack.mergeConfig({
+  additionalConfiguration: (generatedConfiguration) => {
+    generatedConfiguration.module.rules.push(
+      {
+        test: /\.m?js$/, use:
+        {
+          loader: "babel-loader",
+          options:
+          {
+            presets: [["@babel/preset-env",
+              {
+                targets: {
+                  "ie": "11"
+                }
+              }]]
+          }
+        }
+      }
+    );
+
+    return generatedConfiguration;
+  }
+});
+```
+
+
+3. 在您的 * Web 部件. ts 文件中，导入提供程序前导入以下 polyfills.ts
+```ts
+import 'regenerator-runtime/runtime';
+import 'core-js/es/number';
+import 'core-js/es/math';
+import 'core-js/es/string';
+import 'core-js/es/date';
+import 'core-js/es/array';
+import 'core-js/es/regexp';
+import '@webcomponents/webcomponentsjs/webcomponents-bundle.js';
+```
+
+若要了解详细信息，请参阅[sharepoint provider](./providers/sharepoint.md)。
 
 ## <a name="using-the-components-with-react-angular-and-other-frameworks"></a>将组件与响应、角度和其他框架结合使用
 
@@ -100,7 +152,7 @@ Web 组件基于几个 web 标准，可用于任何已在使用的框架。 但�
 
 ### <a name="react"></a>React
 
-"响应" 将所有数据以 HTML 属性的形式传递给自定义元素。 对于基元数据，这是很好的，但它在传递丰富数据（如对象或数组）时不起作用。 在这些情况下，您需要使用将`ref`传递到对象中的。
+"响应" 将所有数据以 HTML 属性的形式传递给自定义元素。 对于基元数据，这是很好的，但它在传递丰富数据（如对象或数组）时不起作用。 在这些情况下，您需要使用将 `ref` 传递到对象中的。
 
 Ex
 
@@ -115,7 +167,7 @@ class App extends Component {
 }
 ```
 
-由于反应实现其自己的合成事件系统，因此它无法侦听来自自定义元素的 DOM 事件，而不使用替代方法。 您需要使用`ref`来引用工具包组件，并手动将事件侦听器附加到 addEventListener，如下面的示例所示。
+由于反应实现其自己的合成事件系统，因此它无法侦听来自自定义元素的 DOM 事件，而不使用替代方法。 您需要使用 `ref` 来引用工具包组件，并手动将事件侦听器附加到 addEventListener，如下面的示例所示。
 
 ```jsx
 // you can just import a single component
@@ -148,13 +200,13 @@ declare global {
 }
 ```
 
-然后，您可以在 tsx 中使用它`<mgt-login></mgt-login>`。
+然后，您可以在 tsx 中使用它 `<mgt-login></mgt-login>` 。
 
 ### <a name="angular"></a>Angular
 
 角度的默认绑定语法将始终设置元素的属性。 这适用于丰富的数据（如对象和数组），也适用于基元值。
 
-若要使用自定义元素，首先将添加`app.module.ts` `CUSTOM_ELEMENT_SCHEMA`到`@NgModule() decorator`中的自定义元素，如下面的示例所示。
+若要使用自定义元素，首先将添加到中的自定义元素， `app.module.ts` `CUSTOM_ELEMENT_SCHEMA` `@NgModule() decorator` 如下面的示例所示。
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -172,7 +224,7 @@ import { AppComponent } from './app.component';
 export class AppModule {}
 ```
 
-然后，您可以导入要在组件\*的 ts 文件中使用的组件。
+然后，您可以导入要在组件的 ts 文件中使用的组件 \* 。
 
 ```ts
 import { Component } from '@angular/core';
@@ -195,3 +247,4 @@ export class AppComponent {
 ```html
 <mgt-person [personDetails]="person" show-name></mgt-person>
 ```
+

@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包中的 "人员" 组件
 description: "\"人员\" 组件用于通过使用其照片、姓名和/或电子邮件地址显示人员或联系人。"
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: e08e98a29ab454dca546d0fda34b8292ad97bf2d
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 7fc3430755c08662186e235cd83d8790968f9ae3
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681877"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44990239"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的 "人员" 组件
 
@@ -84,6 +84,7 @@ mgt-person {
   --font-size: 14px;
   --font-weight: 500;
   --color: black;
+  --background-color: #ffffff;
   --text-transform: none;
   --line2-font-size: 12px;
   --line2-font-weight: 400;
@@ -99,7 +100,7 @@ mgt-person {
 
 `mgt-person`组件支持多个[模板](../templates.md)，这些模板允许您替换组件的某些部分。 若要指定模板，请在 `<template>` 组件内添加一个元素，并将 `data-type` 值设置为下列值之一：
 
-| 数据类型 | 数据上下文 | Description |
+| 数据类型 | 数据上下文 | 说明 |
 | --------- | ------------ | ----------- |
 | 装载 | 无 | 要在组件处于 laoding 状态时呈现的模板。 |
 | 无数据 | 无 | 在没有人员图像或数据可用时要呈现的模板。 | 
@@ -141,7 +142,7 @@ mgt-person {
 
 此控件使用以下 Microsoft Graph Api 和权限。
 
-| Resource                                                                                                    | Permission     |
+| 资源                                                                                                    | Permission     |
 | ----------------------------------------------------------------------------------------------------------- | -------------------- |
 | [/me](/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
 | [/me/photo/$value](/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
