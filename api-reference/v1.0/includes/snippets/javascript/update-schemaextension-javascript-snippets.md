@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 94fd8f3ce970360ed42ce107a81b4ee0906d6e95
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 762dcc1208c7cf5581f00d42701a4f2bee295d16
+ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636774"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45008589"
 ---
 ```javascript
 
@@ -25,7 +25,7 @@ const schemaExtension = {
       name:"additional-name-value",
       type:"additional-type-value"
     }
-  ],
+  ]
 };
 
 let res = await client.api('/schemaExtensions/{id}')
