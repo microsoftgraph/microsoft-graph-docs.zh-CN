@@ -1160,11 +1160,18 @@ items:
                     href: api/printjob-startprintjob.md
                   - name: 取消
                     href: api/printjob-cancelprintjob.md
+              - name: 打印操作
+                href: resources/printoperation.md
+                items:
+                  - name: 获取
+                    href: api/printoperation-get.md
               - name: Printer
                 href: resources/printer.md
                 items:
                   - name: 列表
                     href: api/print-list-printers.md
+                  - name: 创建
+                    href: api/printer-create.md
                   - name: 获取
                     href: api/printer-get.md
                   - name: 删除
@@ -1477,7 +1484,7 @@ items:
                   - name: Android 应用商店应用
                     href: resources/intune-apps-androidstoreapp.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-apps-androidstoreapp-list.md
                       - name: 获取
                         href: api/intune-apps-androidstoreapp-get.md
@@ -1494,7 +1501,7 @@ items:
                   - name: 设备安装状态
                     href: resources/intune-books-deviceinstallstate.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-books-deviceinstallstate-list.md
                       - name: 获取
                         href: api/intune-books-deviceinstallstate-get.md
@@ -1917,7 +1924,7 @@ items:
                   - name: 受管理的移动 LOB 应用
                     href: resources/intune-apps-managedmobilelobapp.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-apps-managedmobilelobapp-list.md
                       - name: 获取
                         href: api/intune-apps-managedmobilelobapp-get.md
@@ -1928,7 +1935,7 @@ items:
                   - name: 适用于企业的 Microsoft Store 应用
                     href: resources/intune-apps-microsoftstoreforbusinessapp.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-apps-microsoftstoreforbusinessapp-list.md
                       - name: 获取
                         href: api/intune-apps-microsoftstoreforbusinessapp-get.md
@@ -2562,7 +2569,7 @@ items:
                   - name: DEP iOS 注册配置文件
                     href: resources/intune-enrollment-depiosenrollmentprofile.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-enrollment-depiosenrollmentprofile-list.md
                       - name: 获取
                         href: api/intune-enrollment-depiosenrollmentprofile-get.md
@@ -2575,7 +2582,7 @@ items:
                   - name: DEP macOS 注册配置文件
                     href: resources/intune-enrollment-depmacosenrollmentprofile.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-enrollment-depmacosenrollmentprofile-list.md
                       - name: 获取
                         href: api/intune-enrollment-depmacosenrollmentprofile-get.md
@@ -5544,7 +5551,7 @@ items:
                   - name: Windows 10 协同版常规配置
                     href: resources/intune-deviceconfig-windows10teamgeneralconfiguration.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-deviceconfig-windows10teamgeneralconfiguration-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-windows10teamgeneralconfiguration-get.md
@@ -5559,7 +5566,7 @@ items:
                   - name: Windows 10 VPN 配置
                     href: resources/intune-deviceconfig-windows10vpnconfiguration.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-deviceconfig-windows10vpnconfiguration-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-windows10vpnconfiguration-get.md
@@ -10074,24 +10081,33 @@ items:
                     href: api/serviceprincipal-delete-owners.md
               - name: 策略
                 items:
-                  - name: 分配 claimsMappingPolicy
-                    href: api/serviceprincipal-post-claimsmappingpolicies.md
-                  - name: 列出 claimsMappingPolicies
-                    href: api/serviceprincipal-list-claimsmappingpolicies.md
-                  - name: 删除 claimsMappingPolicy
-                    href: api/serviceprincipal-delete-claimsmappingpolicies.md
-                  - name: 分配 homeRealmDiscoveryPolicy
-                    href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                  - name: 列出 homeRealmDiscoveryPolicy
-                    href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
-                  - name: 删除 homeRealmDiscoveryPolicy
-                    href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
-                  - name: 分配 tokenLifetimePolicy
-                    href: api/application-post-tokenlifetimepolicies.md
-                  - name: 列出 tokenLifetimePolicies
-                    href: api/application-list-tokenlifetimepolicies.md
-                  - name: 删除 tokenLifetimePolicy
-                    href: api/application-delete-tokenlifetimepolicies.md
+                  - name: 声明映射策略
+                    href: resources/claimsmappingpolicy.md
+                    items:
+                      - name: 分配声明映射策略
+                        href: api/serviceprincipal-post-claimsmappingpolicies.md
+                      - name: 列出声明映射策略
+                        href: api/serviceprincipal-list-claimsmappingpolicies.md
+                      - name: 删除声明映射策略
+                        href: api/serviceprincipal-delete-claimsmappingpolicies.md
+                  - name: 主页领域发现策略
+                    href: resources/homerealmdiscoverypolicy.md
+                    items:
+                      - name: 分配主领域发现策略
+                        href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
+                      - name: 列出主页领域发现策略
+                        href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
+                      - name: 删除主领域发现策略
+                        href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+                  - name: 令牌生存期策略
+                    href: resources/tokenlifetimepolicy.md
+                    items:
+                      - name: 分配令牌生存期策略
+                        href: api/application-post-tokenlifetimepolicies.md
+                      - name: 列表令牌生存期策略
+                        href: api/application-list-tokenlifetimepolicies.md
+                      - name: 删除令牌生存期策略
+                        href: api/application-delete-tokenlifetimepolicies.md
               - name: 单一登录
                 items:
                   - name: 创建密码单一登录凭据
@@ -10138,6 +10154,8 @@ items:
                     href: api/synchronization-synchronizationjob-restart.md
                   - name: 删除作业
                     href: api/synchronization-synchronizationjob-delete.md
+                  - name: 按需预配
+                    href: api/synchronization-synchronizationjob-provision-on-demand.md
               - name: 架构
                 href: resources/synchronization-synchronizationschema.md
                 items:
@@ -11045,7 +11063,7 @@ items:
       - name: 搜索（预览版）
         displayname: Microsoft Search API
         items:
-          - name: Query
+          - name: 查询
             items:
               - name: 概述
                 href: resources/search-api-overview.md
@@ -11087,11 +11105,13 @@ items:
                 items:
                   - name: 外部项
                     href: resources/externalitem.md
-                  - name: 创建外部项
+                  - name: 创建
                     href: api/externalconnection-put-items.md
-                  - name: 更新外部项
+                  - name: 获取
+                    href: api/externalitem-get.md
+                  - name: 更新
                     href: api/externalitem-update.md
-                  - name: 删除外部项
+                  - name: 删除
                     href: api/externalitem-delete.md
       - name: 安全性
         displayname: 'Security API, Microsoft Graph Security API'
