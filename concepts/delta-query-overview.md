@@ -1,19 +1,22 @@
 ---
 title: 使用增量查询跟踪 Microsoft Graph 数据更改
-description: Delta 查询使应用程序能够发现新创建、更新或删除的实体，无需使用每个请求对目标资源执行完全读取。Microsoft Graph 应用程序可以使用 delta 查询和本地数据存储高效地同步更改。
+description: Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 47d28c4bced21ad182acc9c04452f7172f5b821b
-ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
-ms.translationtype: HT
+ms.openlocfilehash: 7e969858b7537ea36189d24c449803d2a00b125e
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "43557883"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44990036"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 
-Delta 查询使应用程序能够发现新创建、更新或删除的实体，无需使用每个请求对目标资源执行完全读取。Microsoft Graph 应用程序可以使用 delta 查询和本地数据存储高效地同步更改。
+Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
+
+> [!div class="nextstepaction"]
+> [教程：使用更改通知和跟踪 Microsoft Graph 中的更改](/learn/modules/msgraph-changenotifications-trackchanges)
 
 ## <a name="use-delta-query-to-track-changes-in-a-resource-collection"></a>使用 delta 查询来跟踪资源集合的更改
 
@@ -22,40 +25,43 @@ Delta 查询使应用程序能够发现新创建、更新或删除的实体，�
 1. 应用程序首先对所需资源运行 delta 函数以调用 GET 请求。
 2. Microsoft Graph 发送一个包含已请求资源和[状态令牌](#state-tokens)的响应。
 
-     a.如果返回了 `nextLink` URL，则会话中可能存在要检索的其他数据页面。应用程序继续使用 `nextLink` URL 发出请求以检索所有页面中的数据，直到响应中返回 `deltaLink` URL。
+     a.  If a `nextLink` URL is returned, there may be additional pages of data to be retrieved in the session. The application continues making requests using the `nextLink` URL to retrieve all pages of data until a `deltaLink` URL is returned in the response.
 
-     b.如果返回了 `deltaLink` URL，则未返回关于资源现有状态的更多数据。为了执行以后的请求，应用程序使用 `deltaLink` URL 了解资源更改。
+     b.  If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the `deltaLink` URL to learn about changes to the resource.
 
-3. 当应用程序需要了解资源更改时，会使用步骤 2 中收到的 `deltaLink` URL 发出新请求。*可能*在完成步骤 2 或应用程序检查更改时立即发出此请求。
+3. When the application needs to learn about changes to the resource, it makes a new request using the `deltaLink` URL received in step 2. This request *may* be made immediately after completing step 2 or when the application checks for changes.
 4. Microsoft Graph 返回响应（`nextLink` URL 或 `deltaLink` URL），其中描述了自上一个请求以来的资源变更。
 
->**注意：** Azure Active Directory 中存储的资源（如用户和组）支持“从现在开始同步”方案。 这样一来，便可以跳过第 1 步和第 2 步（如果不想检索资源完整状态的话），并改为请求获取最新 `deltaLink`。 将 `$deltaToken=latest` 追加到 `delta` 函数中，这样响应就会包含 `deltaLink`，而不包含资源数据。  
+>**注意：** Azure Active Directory 中存储的资源（如用户和组）支持“从现在开始同步”方案。 这样一来，便可以跳过第 1 步和第 2 步（如果不想检索资源完整状态的话），并改为请求获取最新 `deltaLink`。 将 `$deltaToken=latest` 追加到 `delta` 函数中，这样响应就会包含 `deltaLink`，而不包含资源数据。
 
 >**注意：** 引用增量查询函数的方式通常是将 `/delta` 附加到资源名称。 但是，`/delta` 是在 Microsoft Graph SDK 生成的请求中显示的完全限定名称 `/microsoft.graph.delta` 的快捷方式。
 
+>**注意：** 对 delta 查询函数的初始请求（无 delta 或 skip 标记）将返回当前存在于集合中的资源。 在初始 delta 查询之前创建和删除的资源不会返回。 在初始请求之前所做的更新将在返回的资源上汇总为其最新状态。
+
 ### <a name="state-tokens"></a>状态令牌
 
-增量查询 GET 响应中始终返回 `nextLink` 或 `deltaLink` 响应头中指定的 URL。`nextLink` URL 包含的是 _skipToken_，`deltaLink` URL 包含的是 _deltaToken_。
+A delta query GET response always includes a URL specified in a `nextLink` or `deltaLink` response header.
+The `nextLink` URL includes a _skipToken_, and a `deltaLink` URL includes a _deltaToken_.
 
-这些令牌对客户端不透明。以下是需要了解的详细信息：
+These tokens are opaque to the client. The following details are what you need to know about them:
 
 - 每个令牌都反映状态，并表示一轮更改跟踪中的响应快照。
 
-- 状态令牌还会进行编码，并包括初始 delta 查询请求中指定的其他查询参数（如 `$select`）。因此，不需要在后续 delta 查询请求中重复这些操作。
+- The state tokens also encode and include other query parameters (such as `$select`) specified in the initial delta query request. Therefore, it's not required to repeat them in subsequent delta query requests.
 
 - 执行增量查询时，可以将 `nextLink` 或 `deltaLink` URL 复制并应用到下一个 **delta** 函数调用，无需检查 URL 的内容（包括其状态令牌）。
 
 ### <a name="optional-query-parameters"></a>可选的查询参数
 
-如果客户使用查询参数，则它必须在初始请求中指定。Microsoft Graph 自动将指定参数编码为响应中提供的 `nextLink` 或 `deltaLink`。调用应用程序只需预先指定查询参数一次。Microsoft Graph 将为所有后续请求自动添加指定参数。
+If a client uses a query parameter, it must be specified in the initial request. Microsoft Graph automatically encodes the specified parameter into the `nextLink` or `deltaLink` provided in the response. The calling application only needs to specify the query parameters once upfront. Microsoft Graph adds the specified parameters automatically for all subsequent requests.
 
 请注意以下可选查询参数的常规有限支持：
 
-- `$orderby` 
-    
+- `$orderby`
+
     不要假设增量查询返回特定响应顺序。 假设同一项目可以显示在 `nextLink` 序列的任意位置，并以合并逻辑进行处理。
-- `$top` 
-    
+- `$top`
+
     每页中的对象数量可能因资源类型和资源更改类型而异。
 
 对于[消息](/graph/api/resources/message?view=graph-rest-1.0)资源，请参阅[增量查询中的查询参数支持](delta-query-messages.md#use-query-parameters-in-a-delta-query-for-messages)的详细信息。
@@ -65,17 +71,17 @@ Delta 查询使应用程序能够发现新创建、更新或删除的实体，�
 - 不支持 `$expand`。
 - 不支持 `$top`。
 - 不支持 `$orderby`。
-- 如果使用的是 `$select` 查询参数，则该参数表示客户倾向于仅跟踪 `$select` 语句中指定的属性或关系的更改。如果未选中的属性发生更改，则属性已更改的资源将不会出现在后续请求之后的 delta 响应中。
+- If a `$select` query parameter is used, the parameter indicates that the client prefers to only track changes on the properties or relationships specified in the `$select` statement. If a change occurs to a property that is not selected, the resource for which that property changed does not appear in the delta response after a subsequent request.
 - `$select` 还支持用户和组的 `manager` 和 `members` 导航属性。 选择这些属性可以跟踪对用户管理器和组成员身份的更改。
 
-- 借助范围筛选器，可按对象 ID 跟踪一个或多个特定用户或组的更改。 例如，以下请求会返回与查询筛选器中指定的 ID 相匹配的组的更改。 
+- 借助范围筛选器，可按对象 ID 跟踪一个或多个特定用户或组的更改。 例如，以下请求会返回与查询筛选器中指定的 ID 相匹配的组的更改。
 
 <!-- {
   "blockType": "request",
   "name": "group_delta"
 }-->
 ```http
-https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' 
+https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e'
 ```
 
 ## <a name="resource-representation-in-the-delta-query-response"></a>delta 查询响应中的资源表示形式
@@ -84,7 +90,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 - 更新实例由它们的 **id** 表示，*至少*具有已更新的属性，但可能也包含其他属性。
 
-- 用户和组的关系表示为对标准资源表示形式的注释。这些注释使用格式 `propertyName@delta`。注释包含在初始 delta 查询请求的响应内。
+- Relationships on users and groups are represented as annotations on the standard resource representation. These annotations use the format `propertyName@delta`. The annotations are included in the response of the initial delta query request.
 
 删除的实例使用其 **id** 和 `@removed` 对象表示。 `@removed` 对象可能包含有关为何删除该实例的其他信息。 例如，"@removed": {"reason": "changed"}。
 
@@ -94,7 +100,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 - *已删除*表示该项已被删除，无法恢复。
 
-`@removed` 对象可以在初始 delta 查询响应和跟踪的 (deltaLink) 响应中返回。使用 delta 查询请求的客户端应能够处理响应中的这些对象。
+The `@removed` object can be returned in the initial delta query response and in tracked (deltaLink) responses. Clients using delta query requests should be designed to handle these objects in the responses.
 
 >**注意：** 在响应中可能会多次包含一个实体，前提是多次在特定情况下更改了该实体。 增量查询可以使应用程序列出所有更改，但不能确保实体在单个响应中是统一的。
 
@@ -102,28 +108,28 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 目前，以下资源支持 delta 查询。
 
-| **资源集合**                                        | **API**                                                                                                                                                                                |
-| :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 应用程序                                         | [application](/graph/api/resources/application) 资源的 [delta](/graph/api/application-delta) 函数                     |
-| 管理单元（预览版）                                         | [administrativeUnit](/graph/api/resources/administrativeunit) 资源的 [delta](/graph/api/administrativeunit-delta) 函数（预览版）                     |
-| 频道中的聊天消息（预览版）                            | [chatMessage](/graph/api/resources/chatmessage) 的 [delta](/graph/api/chatmessage-delta) 函数 |
-| 类（预览版）                                              | [educationClass](/graph/api/resources/educationclass) 资源的 [delta](/graph/api/educationclass-delta) 函数（预览版）                     |
-| 目录对象（预览版）                                    | [directoryObject](/graph/api/resources/directoryobject) 资源的 [delta](/graph/api/directoryobject-delta) 函数（预览版）        |
-| 目录角色                                                | [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) 资源的 [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) 函数                           |
-| 驱动器项目\*                                                  | [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) 资源的 [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) 函数                                       |
-| 教育用户（预览版）                                      | [educationUser](/graph/api/resources/educationuser) 资源的 [delta](/graph/api/educationuser-delta) 函数（预览版）             |
-| 主日历的日历视图（日期范围）中的事件 | [事件](/graph/api/resources/event?view=graph-rest-1.0)资源的 [delta](/graph/api/event-delta?view=graph-rest-1.0) 函数                                                   |
-| 组                                                         | [组](/graph/api/resources/group?view=graph-rest-1.0)资源的 [delta](/graph/api/group-delta?view=graph-rest-1.0) 函数                                                   |
-| 邮件文件夹                                                   | [邮件文件夹](/graph/api/resources/mailfolder?view=graph-rest-1.0)资源的 [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) 函数                                    |
-| 文件夹中的邮件                                           | [邮件](/graph/api/resources/message?view=graph-rest-1.0)资源的 [delta](/graph/api/message-delta?view=graph-rest-1.0) 函数                                             |
-| 组织联系人 | [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) 资源的 [delta](/graph/api/orgcontact-delta?view=graph-rest-1.0) 函数 |
-| OAuth2PermissionGrants（预览版） | [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant?view=graph-rest-beta) 资源的 [delta](/graph/api/oauth2permissiongrant-delta?view=graph-rest-beta) 函数（预览） |
-| 私人联系人文件夹                                       | [联系人文件夹](/graph/api/resources/contactfolder?view=graph-rest-1.0)资源的 [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) 函数                           |
-| 文件夹中的私人联系人                                  | [contact](/graph/api/resources/contact?view=graph-rest-1.0) 资源的 [delta](/graph/api/contact-delta?view=graph-rest-1.0) 函数    
-| Planner 项目\*\*（预览版）                                    | [plannerUser](/graph/api/resources/planneruser) 资源所有段的 [delta](/graph/api/planneruser-list-delta) 函数（预览版）|                                         |
-| 学校（预览版）                                              | [educationSchool](/graph/api/resources/educationschool) 资源的 [delta](/graph/api/educationschool-delta) 函数（预览版）                  |
-| 服务主体（预览版）                                   | [servicePrincipal](/graph/api/resources/serviceprincipal) 资源（预览版）的 [delta](/graph/api/serviceprincipal-delta) 函数      |
-| 用户                                                          | [用户](/graph/api/resources/user?view=graph-rest-1.0)资源的 [delta](/graph/api/user-delta?view=graph-rest-1.0) 函数 |
+| **资源集合**                                        | **API**                                                                                                                                                                                          |
+|:---------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 应用程序                                                   | [application](/graph/api/resources/application) 资源的 [delta](/graph/api/application-delta) 函数                                                                                   |
+| 管理单元（预览版）                                 | [administrativeUnit](/graph/api/resources/administrativeunit) 资源的 [delta](/graph/api/administrativeunit-delta) 函数（预览版）                                                    |
+| 频道中的聊天消息（预览版）                           | [chatMessage](/graph/api/resources/chatmessage) 的 [delta](/graph/api/chatmessage-delta) 函数                                                                                            |
+| 类（预览版）                                              | [educationClass](/graph/api/resources/educationclass) 资源的 [delta](/graph/api/educationclass-delta) 函数（预览版）                                                                |
+| 目录对象（预览版）                                    | [directoryObject](/graph/api/resources/directoryobject) 资源的 [delta](/graph/api/directoryobject-delta) 函数（预览版）                                                             |
+| 目录角色                                                | [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) 资源的 [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) 函数                                     |
+| 驱动器项目\*                                                  | [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) 资源的 [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) 函数                                                 |
+| 教育用户（预览版）                                      | [educationUser](/graph/api/resources/educationuser) 资源的 [delta](/graph/api/educationuser-delta) 函数（预览版）                                                                   |
+| 主日历的日历视图（日期范围）中的事件 | [事件](/graph/api/resources/event?view=graph-rest-1.0)资源的 [delta](/graph/api/event-delta?view=graph-rest-1.0) 函数                                                             |
+| 组                                                         | [组](/graph/api/resources/group?view=graph-rest-1.0)资源的 [delta](/graph/api/group-delta?view=graph-rest-1.0) 函数                                                             |
+| 邮件文件夹                                                   | [邮件文件夹](/graph/api/resources/mailfolder?view=graph-rest-1.0)资源的 [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) 函数                                              |
+| 文件夹中的邮件                                           | [邮件](/graph/api/resources/message?view=graph-rest-1.0)资源的 [delta](/graph/api/message-delta?view=graph-rest-1.0) 函数                                                       |
+| 组织联系人                                        | [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) 资源的 [delta](/graph/api/orgcontact-delta?view=graph-rest-1.0) 函数                                              |
+| OAuth2PermissionGrants（预览版）                               | [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant?view=graph-rest-beta) 资源的 [delta](/graph/api/oauth2permissiongrant-delta?view=graph-rest-beta) 函数（预览） |
+| 私人联系人文件夹                                       | [联系人文件夹](/graph/api/resources/contactfolder?view=graph-rest-1.0)资源的 [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) 函数                                     |
+| 文件夹中的私人联系人                                  | [contact](/graph/api/resources/contact?view=graph-rest-1.0) 资源的 [delta](/graph/api/contact-delta?view=graph-rest-1.0) 函数                                                       |
+| Planner 项目\*\*（预览版）                                    | [plannerUser](/graph/api/resources/planneruser) 资源所有段的 [delta](/graph/api/planneruser-list-delta) 函数（预览版）                                                     |
+| 学校（预览版）                                              | [educationSchool](/graph/api/resources/educationschool) 资源的 [delta](/graph/api/educationschool-delta) 函数（预览版）                                                             |
+| 服务主体（预览版）                                   | [servicePrincipal](/graph/api/resources/serviceprincipal) 资源（预览版）的 [delta](/graph/api/serviceprincipal-delta) 函数                                                          |
+| 用户                                                          | [用户](/graph/api/resources/user?view=graph-rest-1.0)资源的 [delta](/graph/api/user-delta?view=graph-rest-1.0) 函数                                                                |
 
 
 > \* OneDrive 资源的使用模式与其他支持资源类似，仅存在一些小的语法差异。 为了与其他资源类型保持一致，适用于驱动器的 delta 查询今后将进行更新。 若要详细了解现行语法，请参阅[跟踪驱动器更改](/graph/api/driveitem-delta?view=graph-rest-1.0)。
@@ -175,7 +181,7 @@ Content-type: application/json
 
 ### <a name="processing-delays"></a>处理延迟
 
-对资源实例进行更改（可通过应用界面或 API 进行）的时间与所做的更改反映在增量查询响应中的时间之间可能会出现不同的延迟。  
+对资源实例进行更改（可通过应用界面或 API 进行）的时间与所做的更改反映在增量查询响应中的时间之间可能会出现不同的延迟。
 
 ### <a name="national-clouds"></a>国家云
 
@@ -183,7 +189,7 @@ Content-type: application/json
 
 ### <a name="token-duration"></a>令牌持续时间
 
-增量令牌仅在客户端应用程序需要再次运行完整同步前的特定时间段内有效。 对于标识对象（**directoryObject**、**directoryRole**、**group**、**orgContact** 和 **user**），限制为 30 天。
+增量令牌仅在客户端应用程序需要再次运行完整同步前的特定时间段内有效。 对于目录对象（**application**、 **administrativeUnit**、 **directoryObject**、 **directoryRole**、 **group**、 **orgContact**、 **oauth2permissiongrant**、 **servicePrincipal**和**user**），限制为7天。 对于教育对象（**educationSchool**、 **educationUser**和**educationClass**），限制为7天。
 
 ## <a name="prerequisites"></a>先决条件
 

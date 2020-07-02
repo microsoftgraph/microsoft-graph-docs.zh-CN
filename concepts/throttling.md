@@ -4,12 +4,12 @@ description: Throttling limits the number of concurrent calls to a service to pr
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: f2acb34994f0877a051d31e276feb22b2d47179c
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
-ms.translationtype: HT
+ms.openlocfilehash: 7678b364855381eaf5a138b42d6172a6cbd233f4
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682038"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44989854"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -61,6 +61,7 @@ When you implement error handling, use the HTTP error code 429 to detect throttl
 - [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
 - [外部项（Microsoft 搜索）](/graph/api/resources/externalitem?view=graph-rest-beta)
 - [订阅](/graph/api/resources/subscription)
+- [受到](/graph/api/resources/invitation)
 
 有关 Microsoft 云限制的更广泛讨论，请参阅[限制模式](https://docs.microsoft.com/azure/architecture/patterns/throttling)。
 
@@ -85,13 +86,13 @@ When you implement error handling, use the HTTP error code 429 to detect throttl
 
 ### <a name="outlook-service-limits"></a>Outlook 服务限制
 
-将评估每个应用 ID 和邮箱组合的 Outlook 服务限制。 换言之，上述限制适用于访问特定邮箱（用户或组）的特定应用。 如果一个邮箱的应用程序超过限制，不会影响访问另一个邮箱的功能。
+将评估每个应用 ID 和邮箱组合的 Outlook 服务限制。 换言之，上述限制适用于访问特定邮箱（用户或组）的特定应用。 如果一个邮箱的应用程序超过限制，不会影响访问另一个邮箱的功能。 以下限制适用于公共云以及[国内云部署](/graph/deployments)。
 
 | 限制                                                      | 适用对象      |
 |------------------------------------------------------------|-----------------|
 | 10 分钟内的 10,000 个 API 请求                  | v1.0 和 beta 终结点 |
-| 4 个并发请求                                      | Beta 终结点   |
-| 30 秒内的 15 兆位上传（PATCH、POST、PUT） | Beta 终结点   |
+| 4 个并发请求                                      | v1.0 和 beta 终结点   |
+| 30 秒内的 15 兆位上传（PATCH、POST、PUT） | v1.0 和 beta 终结点   |
 
 #### <a name="outlook-service-resources"></a>Outlook 服务资源
 
@@ -157,11 +158,56 @@ Outlook 服务提供以下资源。
 
 另请参阅 [Microsoft Teams 限制](/graph/api/resources/teams-api-overview#microsoft-teams-limits)和[投票要求](/graph/api/resources/teams-api-overview#polling-requirements)。
 
-### <a name="microsoft-graph-change-notifications-subscription-operations"></a>Microsoft Graph 更改通知订阅操作
+### <a name="invitation-manager-service-limits"></a>邀请管理器服务限制
 
-以下限制适用于 `/subscriptions` 上的所有请求。
+以下限制适用于 `/invitations` 上的所有请求。
 
-| 操作                 | 每个租户每个应用限制     | 所有租户中的每个应用限制 |
-|---------------------------|------------------------------|-----------------------------------|
-| POST, PUT, DELETE, PATCH  | 每 20 秒 1000 个请求 | 每 20 秒 2000 个请求      |
-| 所有其他 HTTP 方法    | 每 20 秒 5000 个请求 | 每 20 秒 10000 个请求     |
+| 操作                 | 每个租户的限制             |
+|---------------------------|------------------------------|
+| 任何操作             | 每5秒150个请求   |
+
+<!-- { "blockType": "throttlinggenstart" } -->
+
+### <a name="education-service-limits"></a>教育服务限制
+
+[!INCLUDE [Education rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
+
+### <a name="excel-service-limits"></a>Excel 服务限制
+
+[!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
+
+### <a name="identity-and-access-audit-logs-service-limits"></a>标识和访问审核日志服务限制
+
+[!INCLUDE [Identity and access audit logs throttling documentation](../includes/throttling-Identity-and-access-audit-logs.md)]
+
+### <a name="identity-providers-service-limits"></a>标识提供程序服务限制
+
+[!INCLUDE [CPIM throttling documentation](../includes/throttling-cpim.md)]
+
+### <a name="intune-service-limits"></a>Intune 服务限制
+
+[!INCLUDE [Intune applications throttling documentation](../includes/throttling-intune-applications.md)]
+[!INCLUDE [Intune books throttling documentation](../includes/throttling-intune-books.md)]
+[!INCLUDE [Intune company terms throttling documentation](../includes/throttling-intune-company-terms.md)]
+[!INCLUDE [Intune device configuration throttling documentation](../includes/throttling-intune-device-configuration.md)]
+[!INCLUDE [Intune device enrollment throttling documentation](../includes/throttling-intune-device-enrollment.md)]
+[!INCLUDE [Intune devices throttling documentation](../includes/throttling-intune-devices.md)]
+[!INCLUDE [Intune enrollment throttling documentation](../includes/throttling-intune-enrollment.md)]
+[!INCLUDE [Intune managed applications throttling documentation](../includes/throttling-intune-managed-applications.md)]
+[!INCLUDE [Intune notifications throttling documentation](../includes/throttling-intune-notifications.md)]
+[!INCLUDE [Intune rbac throttling documentation](../includes/throttling-intune-rbac.md)]
+[!INCLUDE [Intune remote assistance throttling documentation](../includes/throttling-intune-remote-assistance.md)]
+[!INCLUDE [Intune reporting throttling documentation](../includes/throttling-intune-reporting.md)]
+[!INCLUDE [Intune TEM throttling documentation](../includes/throttling-intune-tem.md)]
+[!INCLUDE [Intune troubleshooting throttling documentation](../includes/throttling-intune-troubleshooting.md)]
+[!INCLUDE [Intune wip throttling documentation](../includes/throttling-intune-wip.md)]
+
+### <a name="skype-service-limits"></a>Skype 服务限制
+
+[!INCLUDE [Skype calling throttling documentation](../includes/throttling-skype-calling.md)]
+
+### <a name="subscription-service-limits"></a>订阅服务限制
+
+[!INCLUDE [Subscription services throttling documentation](../includes/throttling-subscription-services.md)]
+
+<!-- { "blockType": "throttlinggenend" } -->

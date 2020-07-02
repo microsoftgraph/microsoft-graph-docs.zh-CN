@@ -5,12 +5,12 @@ localization_priority: Priority
 author: snlraju-msft
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 2d6c49fcdb0a25c0c15fce6c7f7ae0880a3968dd
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
-ms.translationtype: HT
+ms.openlocfilehash: 641b1f8b6288073a6079d2777bd30f8277467bed
+ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892623"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44989812"
 ---
 # <a name="use-the-microsoft-search-api-to-index-data"></a>使用 Microsoft 搜索 API 为数据编制索引
 
@@ -48,8 +48,11 @@ ms.locfileid: "42892623"
 - 应用程序最多可对一个连接执行 4 个并行操作。
 - 连接的容量限制为 70 万个项，或约 70 GB 的数据。
 - `externalItem` 实体的最大大小为 4 MB。
-- 不支持对结果进行优化和排序。
+- 不支持排序结果。
 - 最多可以进行结果排名。
+
+## <a name="whats-new"></a>最近更新
+查找有关此 API 集的[最新新功能和更新](/graph/whats-new-overview)。
 
 ## <a name="next-steps"></a>后续步骤
 
