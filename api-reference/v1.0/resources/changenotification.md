@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: d45c3973e5b044daf3121a740a60b29e3a181348
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: 1120e5bbbecabd2b6ed00dd6796bb8849b0d5151
+ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45004769"
+ms.lasthandoff: 07/04/2020
+ms.locfileid: "45038497"
 ---
 # <a name="changenotification-resource-type"></a>changeNotification 资源类型
 
@@ -33,7 +33,6 @@ ms.locfileid: "45004769"
 | id | 字符串 | 通知的唯一 ID。 可选。 |
 | resource | string | 发出更改通知的资源的 URI （相对于） `https://graph.microsoft.com` 。 必需。 |
 | resourceData | [resourceData](resourcedata.md) | 此属性的内容取决于要订阅资源的类型。 必需。 |
-| sequenceNumber | int | 通知的序列号，帮助客户端应用程序确定通知是否按顺序排列或者是否缺少通知。 可选。 |
 | subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | 订阅的过期时间。 必需。 |
 | subscriptionId | string | 生成通知的订阅的唯一标识符。 |
 | tenantId | containerparentjob | 来自其发出更改通知的租户的唯一标识符。 |
@@ -60,7 +59,6 @@ ms.locfileid: "45004769"
   "changeType": "created",
   "clientState": "client state provided when creating subscription",
   "id": "15ee1d1f-af7b-42d9-885b-9d00db065dd9",
-  "sequenceNumber": 20,
   "tenantId": "2c937fad-a8a7-496c-b0e4-bf77dcc7eb2a",
   "subscriptionExpirationDateTime": "2020-04-12T23:20:50.52Z",
   "resource": "teams('d29828b8-c04d-4e2a-b2f6-07da6982f0f0')/channels('19:f127a8c55ad949d1a238464d22f0f99e@thread.skype')/messages('1565045424600')/replies('1565047490246')",
