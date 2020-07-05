@@ -4,12 +4,12 @@ description: Throttling limits the number of concurrent calls to a service to pr
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 7678b364855381eaf5a138b42d6172a6cbd233f4
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: 8cf528675b0cdde108063f3fd44acdfdff418941
+ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44989854"
+ms.lasthandoff: 07/04/2020
+ms.locfileid: "45038532"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -60,7 +60,12 @@ When you implement error handling, use the HTTP error code 429 to detect throttl
 - [人员和社交活动](/graph/api/resources/social-overview?view=graph-rest-beta)
 - [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
 - [外部项（Microsoft 搜索）](/graph/api/resources/externalitem?view=graph-rest-beta)
+- [Report](/graph/api/resources/report)
 - [订阅](/graph/api/resources/subscription)
+- [趋势](/graph/api/resources/insights-trending)
+- [使用的洞察力](/graph/api/resources/insights-used)
+- [共享洞察力](/graph/api/resources/insights-shared)
+- [用户设置](/graph/api/resources/usersettings)
 - [受到](/graph/api/resources/invitation)
 
 有关 Microsoft 云限制的更广泛讨论，请参阅[限制模式](https://docs.microsoft.com/azure/architecture/patterns/throttling)。
@@ -92,7 +97,7 @@ When you implement error handling, use the HTTP error code 429 to detect throttl
 |------------------------------------------------------------|-----------------|
 | 10 分钟内的 10,000 个 API 请求                  | v1.0 和 beta 终结点 |
 | 4 个并发请求                                      | v1.0 和 beta 终结点   |
-| 30 秒内的 15 兆位上传（PATCH、POST、PUT） | v1.0 和 beta 终结点   |
+| 在30秒内，将15兆字节（MB）上传（PATCH、POST、PUT） | v1.0 和 beta 终结点   |
 
 #### <a name="outlook-service-resources"></a>Outlook 服务资源
 
@@ -157,6 +162,26 @@ Outlook 服务提供以下资源。
 每个应用每天最多可以将 3000 条消息发送到给定的频道。
 
 另请参阅 [Microsoft Teams 限制](/graph/api/resources/teams-api-overview#microsoft-teams-limits)和[投票要求](/graph/api/resources/teams-api-overview#polling-requirements)。
+
+### <a name="insights-service-limits"></a>Insights 服务限制
+
+以下限制适用于或上的任何 `me/insights` 请求 `users/{id}/insights` 。
+
+| 限制                                                      | 适用对象      |
+|------------------------------------------------------------|-----------------|
+| 10 分钟内的 10,000 个 API 请求                  | v1.0 和 beta 终结点 |
+| 4 个并发请求                                      | v1.0 和 beta 终结点   |
+
+### <a name="microsoft-graph-reports-service-limits"></a>Microsoft Graph 报告服务限制
+
+以下限制适用于 `/reports` 上的所有请求。
+
+| 操作                 | 每个租户每个应用限制     | 每个租户的限制           |
+|---------------------------|------------------------------|----------------------------|
+| 任何请求（CSV）         | 每10分钟14个请求   | 每10分钟40个请求 |
+| 任何请求（JSON、beta）  | 每10分钟100个请求  | 不适用                        |
+
+上述限制将分别应用于每个报告 API。 例如，对 Microsoft 团队用户活动报告 API 的请求和在10分钟内对 Outlook 用户活动报告 API 的请求计数为每个 API 1 个请求（每个 API 一个14个），而不是两个请求都是14个。
 
 ### <a name="invitation-manager-service-limits"></a>邀请管理器服务限制
 

@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 7db6b2498d039a4f6474b530023a9f4c0e199119
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: bfd2ddff5fe87ccabd2c0d7a935ba429c67bda09
+ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44989777"
+ms.lasthandoff: 07/04/2020
+ms.locfileid: "45038504"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -206,7 +206,6 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
   "value": [
     {
       "id": "lsgTZMr9KwAAA",
-      "sequenceNumber": 10,
       "subscriptionId":"{subscription_guid}",
       "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
       "clientState":"secretClientValue",

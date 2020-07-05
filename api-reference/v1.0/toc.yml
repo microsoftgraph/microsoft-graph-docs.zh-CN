@@ -416,6 +416,26 @@ items:
                 href: api/group-getmembergroups.md
               - name: 获取成员对象
                 href: api/group-getmemberobjects.md
+              - name: 组设置
+                href: resources/groupsetting.md
+                items:
+                  - name: 创建设置
+                    href: api/groupsetting-post-groupsettings.md
+                  - name: 获取设置
+                    href: api/groupsetting-get.md
+                  - name: 列出设置
+                    href: api/groupsetting-list.md
+                  - name: 更新设置
+                    href: api/groupsetting-update.md
+                  - name: 删除设置
+                    href: api/groupsetting-delete.md
+              - name: 组设置模板
+                href: resources/groupsettingtemplate.md
+                items:
+                  - name: 列出组设置模板
+                    href: api/groupsettingtemplate-list.md
+                  - name: 获取组设置模板
+                    href: api/groupsettingtemplate-get.md
               - name: 列出组
                 href: api/group-list.md
               - name: 列出生命周期策略
@@ -618,6 +638,151 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: 获取开放扩展
                 href: api/opentypeextension-get.md
+      - name: 应用程序
+        items:
+          - name: 应用程序
+            href: resources/application.md
+            items:
+              - name: 列出应用程序
+                href: api/application-list.md
+              - name: 创建应用程序
+                href: api/application-post-applications.md
+              - name: 获取应用程序
+                href: api/application-get.md
+              - name: 更新应用程序
+                href: api/application-update.md
+              - name: 删除应用程序
+                href: api/application-delete.md
+              - name: 获取 Delta
+                href: api/application-delta.md
+              - name: 列出已删除的应用程序
+                href: api/directory-deleteditems-list.md
+              - name: 获取已删除的应用程序
+                href: api/directory-deleteditems-get.md
+              - name: 永久删除应用程序
+                href: api/directory-deleteditems-delete.md
+              - name: 还原已删除的应用程序
+                href: api/directory-deleteditems-restore.md
+              - name: 证书和密码
+                items:
+                  - name: 添加密码
+                    href: api/application-addpassword.md
+                  - name: 删除密码
+                    href: api/application-removepassword.md
+                  - name: 添加密钥
+                    href: api/application-addkey.md
+                  - name: Remove 键
+                    href: api/application-removekey.md
+              - name: 扩展
+                items:
+                  - name: 列出
+                    href: api/application-list-extensionproperty.md
+                  - name: 创建
+                    href: api/application-post-extensionproperty.md
+                  - name: 删除
+                    href: api/application-delete-extensionproperty.md
+              - name: Owners
+                items:
+                  - name: 列表
+                    href: api/application-list-owners.md
+                  - name: 加法
+                    href: api/application-post-owners.md
+                  - name: 删除
+                    href: api/application-delete-owners.md
+          - name: 服务主体
+            href: resources/serviceprincipal.md
+            items:
+              - name: 列出
+                href: api/serviceprincipal-list.md
+              - name: 创建
+                href: api/serviceprincipal-post-serviceprincipals.md
+              - name: 获取
+                href: api/serviceprincipal-get.md
+              - name: 更新
+                href: api/serviceprincipal-update.md
+              - name: 删除
+                href: api/serviceprincipal-delete.md
+              - name: 列出创建的对象
+                href: api/serviceprincipal-list-createdobjects.md
+              - name: 列出拥有的对象
+                href: api/serviceprincipal-list-ownedobjects.md
+              - name: 应用程序角色分配
+                href: resources/approleassignment.md
+                items:
+                  - name: 列表
+                    href: api/serviceprincipal-list-approleassignments.md
+                  - name: 加法
+                    href: api/serviceprincipal-post-approleassignments.md
+                  - name: 删除
+                    href: api/serviceprincipal-delete-approleassignments.md
+                  - name: 分配到的列表
+                    href: api/serviceprincipal-list-approleassignedto.md
+                  - name: 添加的已分配对象
+                    href: api/serviceprincipal-post-approleassignedto.md
+                  - name: 删除分配对象
+                    href: api/serviceprincipal-delete-approleassignedto.md
+              - name: 证书和密码
+                items:
+                  - name: 添加密码
+                    href: api/serviceprincipal-addpassword.md
+                  - name: 删除密码
+                    href: api/serviceprincipal-removepassword.md
+                  - name: 添加密钥
+                    href: api/serviceprincipal-addkey.md
+                  - name: Remove 键
+                    href: api/serviceprincipal-removekey.md
+              - name: 委派权限授予
+                items:
+                  - name: 列表
+                    href: api/serviceprincipal-list-oauth2permissiongrants.md
+              - name: 成员身份
+                items:
+                  - name: 列出隶属于
+                    href: api/serviceprincipal-list-memberof.md
+                  - name: 列出的可传递成员
+                    href: api/serviceprincipal-list-transitivememberof.md
+                  - name: 检查成员组
+                    href: api/serviceprincipal-checkmembergroups.md
+                  - name: 检查 member 对象
+                    href: api/serviceprincipal-checkmemberobjects.md
+                  - name: 获取成员组
+                    href: api/serviceprincipal-getmembergroups.md
+                  - name: 获取成员对象
+                    href: api/serviceprincipal-getmemberobjects.md
+              - name: Owners
+                items:
+                  - name: 列表
+                    href: api/serviceprincipal-list-owners.md
+                  - name: 加法
+                    href: api/serviceprincipal-post-owners.md
+                  - name: 删除
+                    href: api/serviceprincipal-delete-owners.md
+              - name: 策略
+                items:
+                  - name: 分配 claimsMappingPolicy
+                    href: api/serviceprincipal-post-claimsmappingpolicies.md
+                  - name: 列出 claimsMappingPolicies
+                    href: api/serviceprincipal-list-claimsmappingpolicies.md
+                  - name: 删除 claimsMappingPolicy
+                    href: api/serviceprincipal-delete-claimsmappingpolicies.md
+                  - name: 分配 homeRealmDiscoveryPolicy
+                    href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
+                  - name: 列出 homeRealmDiscoveryPolicy
+                    href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
+                  - name: 删除 homeRealmDiscoveryPolicy
+                    href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+                  - name: 分配 tokenIssuancePolicy
+                    href: api/application-post-tokenissuancepolicies.md
+                  - name: 列出 tokenIssuancePolicies
+                    href: api/application-list-tokenissuancepolicies.md
+                  - name: 删除 tokenIssuancePolicy
+                    href: api/application-delete-tokenissuancepolicies.md
+                  - name: 分配 tokenLifetimePolicy
+                    href: api/application-post-tokenlifetimepolicies.md
+                  - name: 列出 tokenLifetimePolicies
+                    href: api/application-list-tokenlifetimepolicies.md
+                  - name: 删除 tokenLifetimePolicy
+                    href: api/application-delete-tokenlifetimepolicies.md
       - name: 日历
         displayname: Outlook calendar
         items:
@@ -1066,7 +1231,7 @@ items:
               - name: iOS VPP 电子书
                 href: resources/intune-books-iosvppebook.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-books-iosvppebook-list.md
                   - name: 获取
                     href: api/intune-books-iosvppebook-get.md
@@ -1105,7 +1270,7 @@ items:
               - name: 托管的 Android LOB 应用
                 href: resources/intune-apps-managedandroidlobapp.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-apps-managedandroidlobapp-list.md
                   - name: 获取
                     href: api/intune-apps-managedandroidlobapp-get.md
@@ -1285,7 +1450,7 @@ items:
               - name: 移动应用分配
                 href: resources/intune-apps-mobileappassignment.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-apps-mobileappassignment-list.md
                   - name: 获取
                     href: api/intune-apps-mobileappassignment-get.md
@@ -1326,7 +1491,7 @@ items:
               - name: 移动应用内容文件
                 href: resources/intune-apps-mobileappcontentfile.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-apps-mobileappcontentfile-list.md
                   - name: 获取
                     href: api/intune-apps-mobileappcontentfile-get.md
@@ -1510,7 +1675,7 @@ items:
               - name: Android 自定义配置
                 href: resources/intune-deviceconfig-androidcustomconfiguration.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-androidcustomconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-androidcustomconfiguration-get.md
@@ -1553,7 +1718,7 @@ items:
               - name: Android 工作配置文件自定义配置
                 href: resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-androidworkprofilecustomconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-androidworkprofilecustomconfiguration-get.md
@@ -1714,7 +1879,7 @@ items:
               - name: 设备符合性设置状态
                 href: resources/intune-deviceconfig-devicecompliancesettingstate.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-devicecompliancesettingstate-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-devicecompliancesettingstate-get.md
@@ -1756,7 +1921,7 @@ items:
               - name: 设备配置分配
                 href: resources/intune-deviceconfig-deviceconfigurationassignment.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-deviceconfigurationassignment-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-deviceconfigurationassignment-get.md
@@ -1932,7 +2097,7 @@ items:
               - name: iOS 更新配置
                 href: resources/intune-deviceconfig-iosupdateconfiguration.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-iosupdateconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-iosupdateconfiguration-get.md
@@ -1973,7 +2138,7 @@ items:
               - name: macOS 自定义配置
                 href: resources/intune-deviceconfig-macoscustomconfiguration.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-macoscustomconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-macoscustomconfiguration-get.md
@@ -2147,7 +2312,7 @@ items:
               - name: Windows 10 符合性策略
                 href: resources/intune-deviceconfig-windows10compliancepolicy.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-windows10compliancepolicy-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-windows10compliancepolicy-get.md
@@ -2188,7 +2353,7 @@ items:
               - name: Windows 10 企业版新式应用管理配置
                 href: resources/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-get.md
@@ -2345,7 +2510,7 @@ items:
               - name: 适用于企业的 Windows 更新配置
                 href: resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-get.md
@@ -2404,7 +2569,7 @@ items:
               - name: 检测到的应用
                 href: resources/intune-devices-detectedapp.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-devices-detectedapp-list.md
                   - name: 获取
                     href: api/intune-devices-detectedapp-get.md
@@ -2794,7 +2959,7 @@ items:
               - name: 目标托管应用程序策略分配
                 href: resources/intune-mam-targetedmanagedapppolicyassignment.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-mam-targetedmanagedapppolicyassignment-list.md
                   - name: 获取
                     href: api/intune-mam-targetedmanagedapppolicyassignment-get.md
@@ -2838,7 +3003,7 @@ items:
               - name: Windows 信息保护应用锁定程序文件
                 href: resources/intune-mam-windowsinformationprotectionapplockerfile.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-list.md
                   - name: 获取
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-get.md
@@ -3006,7 +3171,7 @@ items:
               - name: 移动威胁防护连接器
                 href: resources/intune-onboarding-mobilethreatdefenseconnector.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
                   - name: 获取
                     href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
@@ -3041,7 +3206,7 @@ items:
               - name: VPP 令牌
                 href: resources/intune-onboarding-vpptoken.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-onboarding-vpptoken-list.md
                   - name: 获取
                     href: api/intune-onboarding-vpptoken-get.md
@@ -3422,500 +3587,341 @@ items:
         items:
           - name: 概述
             href: resources/azure-ad-overview.md
-          - name: 应用程序
-            href: resources/application.md
+          - name: 目录管理
             items:
-              - name: 列出应用程序
-                href: api/application-list.md
-              - name: 创建应用程序
-                href: api/application-post-applications.md
-              - name: 获取应用程序
-                href: api/application-get.md
-              - name: 更新应用程序
-                href: api/application-update.md
-              - name: 删除应用程序
-                href: api/application-delete.md
-              - name: 获取 Delta
-                href: api/application-delta.md
-              - name: 列出已删除的应用程序
-                href: api/directory-deleteditems-list.md
-              - name: 获取已删除的应用程序
-                href: api/directory-deleteditems-get.md
-              - name: 永久删除应用程序
-                href: api/directory-deleteditems-delete.md
-              - name: 还原已删除的应用程序
-                href: api/directory-deleteditems-restore.md
-              - name: 证书和密码
+              - name: 合同
+                href: resources/contract.md
                 items:
-                  - name: 添加密码
-                    href: api/application-addpassword.md
-                  - name: 删除密码
-                    href: api/application-removepassword.md
-                  - name: 添加密钥
-                    href: api/application-addkey.md
-                  - name: Remove 键
-                    href: api/application-removekey.md
-              - name: 扩展
+                  - name: 获取合同
+                    href: api/contract-get.md
+                  - name: 列出合同
+                    href: api/contract-list.md
+              - name: 已删除项目
+                href: resources/directory.md
                 items:
-                  - name: 列表
-                    href: api/application-list-extensionproperty.md
-                  - name: 创建
-                    href: api/application-post-extensionproperty.md
-                  - name: 删除
-                    href: api/application-delete-extensionproperty.md
-              - name: Owners
+                  - name: 获取已删除项目
+                    href: api/directory-deleteditems-get.md
+                  - name: 列出已删除项目
+                    href: api/directory-deleteditems-list.md
+                  - name: 永久删除项目
+                    href: api/directory-deleteditems-delete.md
+                  - name: 恢复已删除的项目
+                    href: api/directory-deleteditems-restore.md
+                  - name: 列出用户拥有的已删除项目
+                    href: api/directory-deleteditems-user-owned.md
+              - name: 设备
+                href: resources/device.md
                 items:
-                  - name: 列表
-                    href: api/application-list-owners.md
-                  - name: 加法
-                    href: api/application-post-owners.md
-                  - name: 删除
-                    href: api/application-delete-owners.md
-          - name: 审核日志
-            href: resources/azure-ad-auditlog-overview.md
-            items:
-              - name: 目录审核
-                href: resources/directoryaudit.md
-                items:
-                  - name: 列出目录审核
-                    href: api/directoryaudit-list.md
-                  - name: 获取目录审核
-                    href: api/directoryaudit-get.md
-              - name: 登录
-                href: resources/signin.md
-                items:
-                  - name: 列出登录
-                    href: api/signin-list.md
-                  - name: 获取登录
-                    href: api/signin-get.md
-          - name: 基于证书的身份验证配置
-            href: resources/certificatebasedauthconfiguration.md
-            items:
-              - name: 列表
-                href: api/certificatebasedauthconfiguration-list.md
-              - name: 创建
-                href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
-              - name: 获取
-                href: api/certificatebasedauthconfiguration-get.md
-              - name: 删除
-                href: api/certificatebasedauthconfiguration-delete.md
-          - name: 合同
-            href: resources/contract.md
-            items:
-              - name: 获取合同
-                href: api/contract-get.md
-              - name: 列出合同
-                href: api/contract-list.md
-          - name: 数据策略操作
-            href: resources/datapolicyoperation.md
-            items:
-              - name: 获取数据策略操作
-                href: api/datapolicyoperation-get.md
-          - name: 委派权限授予
-            href: resources/oauth2permissiongrant.md
-            items:
-              - name: 列表
-                href: api/oauth2permissiongrant-list.md
-              - name: 创建
-                href: api/oauth2permissiongrant-post.md
-              - name: 获取
-                href: api/oauth2permissiongrant-get.md
-              - name: 更新
-                href: api/oauth2permissiongrant-update.md
-              - name: 删除
-                href: api/oauth2permissiongrant-delete.md
-          - name: 已删除项目
-            href: resources/directory.md
-            items:
-              - name: 获取已删除项目
-                href: api/directory-deleteditems-get.md
-              - name: 列出已删除项目
-                href: api/directory-deleteditems-list.md
-              - name: 永久删除项目
-                href: api/directory-deleteditems-delete.md
-              - name: 恢复已删除的项目
-                href: api/directory-deleteditems-restore.md
-              - name: 列出用户拥有的已删除项目
-                href: api/directory-deleteditems-user-owned.md
-          - name: 设备
-            href: resources/device.md
-            items:
-              - name: 列出设备
-                href: api/device-list.md
-              - name: 创建设备
-                href: api/device-post-devices.md
-              - name: 获取设备
-                href: api/device-get.md
-              - name: 更新设备
-                href: api/device-update.md
-              - name: 删除设备
-                href: api/device-delete.md
-              - name: 检查 member 对象
-                href: api/device-checkmemberobjects.md
-              - name: 创建注册的所有者
-                href: api/device-post-registeredowners.md
-              - name: 创建注册的用户
-                href: api/device-post-registeredusers.md
-              - name: 列出设备组
-                href: api/device-list-memberof.md
-              - name: 列出设备可传递组
-                href: api/device-list-transitivememberof.md
-              - name: 列出注册的所有者
-                href: api/device-list-registeredowners.md
-              - name: 列出注册的用户
-                href: api/device-list-registeredusers.md
-          - name: 目录对象
-            href: resources/directoryobject.md
-            items:
-              - name: 获取目录对象
-                href: api/directoryobject-get.md
-              - name: 删除目录对象
-                href: api/directoryobject-delete.md
-              - name: 获取成员对象
-                href: api/directoryobject-getmemberobjects.md
-              - name: 获取成员组
-                href: api/directoryobject-getmembergroups.md
-              - name: 检查成员组
-                href: api/directoryobject-checkmembergroups.md
-              - name: 按 ID 获取对象
-                href: api/directoryobject-getbyids.md
-              - name: 验证属性
-                href: api/directoryobject-validateproperties.md
-          - name: 目录角色
-            href: resources/directoryrole.md
-            items:
-              - name: 列出目录角色
-                href: api/directoryrole-list.md
-              - name: 激活目录角色
-                href: api/directoryrole-post-directoryroles.md
-              - name: 获取目录角色
-                href: api/directoryrole-get.md
-              - name: 列出成员
-                href: api/directoryrole-list-members.md
-              - name: 添加成员
-                href: api/directoryrole-post-members.md
-              - name: 删除成员
-                href: api/directoryrole-delete-member.md
-          - name: 目录角色模板
-            href: resources/directoryroletemplate.md
-            items:
-              - name: 列出 directoryRoleTemplates
-                href: api/directoryroletemplate-list.md
-              - name: 获取 directoryRoleTemplate
-                href: api/directoryroletemplate-get.md
-          - name: 域
-            href: resources/domain.md
-            items:
-              - name: 列出域
-                href: api/domain-list.md
-              - name: 创建域
-                href: api/domain-post-domains.md
-              - name: 删除域
-                href: api/domain-delete.md
-              - name: 获取域
-                href: api/domain-get.md
-              - name: 更新域
-                href: api/domain-update.md
-              - name: 验证域
-                href: api/domain-verify.md
-          - name: 组设置
-            href: resources/groupsetting.md
-            items:
-              - name: 创建设置
-                href: api/groupsetting-post-groupsettings.md
-              - name: 获取设置
-                href: api/groupsetting-get.md
-              - name: 列出设置
-                href: api/groupsetting-list.md
-              - name: 更新设置
-                href: api/groupsetting-update.md
-              - name: 删除设置
-                href: api/groupsetting-delete.md
-          - name: 组设置模板
-            href: resources/groupsettingtemplate.md
-            items:
-              - name: 列出组设置模板
-                href: api/groupsettingtemplate-list.md
-              - name: 获取组设置模板
-                href: api/groupsettingtemplate-get.md
-          - name: 身份保护
-            href: resources/identityprotectionroot.md
-            items:
-              - name: 风险检测
-                href: resources/riskdetection.md
-                items:
-                  - name: 列表
-                    href: api/riskdetection-list.md
-                  - name: 获取
-                    href: api/riskdetection-get.md
-              - name: 有风险的用户
-                href: resources/riskyuser.md
-                items:
-                  - name: 列出有风险的用户
-                    href: api/riskyuser-list.md
-                  - name: 获取有风险的用户
-                    href: api/riskyuser-get.md
-                  - name: 列表历史记录
-                    href: api/riskyuser-list-history.md
-                  - name: 获取历史记录
-                    href: api/riskyuser-get-riskyuserhistoryitem.md
-                  - name: 确认已被盗用
-                    href: api/riskyuser-confirmcompromised.md
-                  - name: 消除
-                    href: api/riskyuser-dismiss.md
-          - name: 标识提供程序
-            href: resources/identityprovider.md
-            items:
-              - name: 列出标识提供程序
-                href: api/identityprovider-list.md
-              - name: 创建标识提供程序
-                href: api/identityprovider-post-identityproviders.md
-              - name: 获取标识提供程序
-                href: api/identityprovider-get.md
-              - name: 更新标识提供程序
-                href: api/identityprovider-update.md
-              - name: 删除标识提供程序
-                href: api/identityprovider-delete.md
-          - name: 信息保护
-            items:
-              - name: 威胁评估
-                items:
-                  - name: 概述
-                    href: resources/threatassessment-api-overview.md
-                  - name: 威胁评估请求
-                    href: resources/threatassessmentrequest.md
-                  - name: 邮件评估请求
-                    href: resources/mailassessmentrequest.md
-                  - name: 电子邮件文件评估请求
-                    href: resources/emailfileassessmentrequest.md
-                  - name: 文件评估请求
-                    href: resources/fileAssessmentRequest.md
-                  - name: URL 评估请求
-                    href: resources/urlassessmentrequest.md
-                  - name: 列表
-                    href: api/informationprotection-list-threatassessmentrequests.md
-                  - name: 创建
-                    href: api/informationprotection-post-threatassessmentrequests.md
-                  - name: 获取
-                    href: api/threatassessmentrequest-get.md
-          - name: 邀请管理器
-            href: resources/invitation.md
-            items:
-              - name: 创建邀请
-                href: api/invitation-post.md
-          - name: 组织
-            href: resources/organization.md
-            items:
-              - name: 获取组织详细信息
-                href: api/organization-get.md
-              - name: 更新组织详细信息
-                href: api/organization-update.md
-          - name: 组织联系人
-            href: resources/orgcontact.md
-            items:
-              - name: 列出组织联系人
-                href: api/orgcontact-list.md
-              - name: 获取组织联系人
-                href: api/orgcontact-get.md
-              - name: 获取组织联系人 delta
-                href: api/orgcontact-delta.md
-              - name: 组
-                href: resources/group.md
-                items:
-                  - name: 列出 memberOf
-                    href: api/orgcontact-list-memberof.md
-                  - name: 获取成员组
-                    href: api/orgcontact-getmembergroups.md
-                  - name: 检查成员组
-                    href: api/orgcontact-checkmembergroups.md
-              - name: 组织层次结构
+                  - name: 列出设备
+                    href: api/device-list.md
+                  - name: 创建设备
+                    href: api/device-post-devices.md
+                  - name: 获取设备
+                    href: api/device-get.md
+                  - name: 更新设备
+                    href: api/device-update.md
+                  - name: 删除设备
+                    href: api/device-delete.md
+                  - name: 检查 member 对象
+                    href: api/device-checkmemberobjects.md
+                  - name: 创建注册的所有者
+                    href: api/device-post-registeredowners.md
+                  - name: 创建注册的用户
+                    href: api/device-post-registeredusers.md
+                  - name: 列出设备组
+                    href: api/device-list-memberof.md
+                  - name: 列出设备可传递组
+                    href: api/device-list-transitivememberof.md
+                  - name: 列出注册的所有者
+                    href: api/device-list-registeredowners.md
+                  - name: 列出注册的用户
+                    href: api/device-list-registeredusers.md
+              - name: 目录对象
                 href: resources/directoryobject.md
                 items:
-                  - name: 列出直接下属
-                    href: api/orgcontact-list-directreports.md
-                  - name: 列出 memberOf
-                    href: api/orgcontact-list-memberof.md
-                  - name: 获取管理器
-                    href: api/orgcontact-get-manager.md
+                  - name: 获取目录对象
+                    href: api/directoryobject-get.md
+                  - name: 删除目录对象
+                    href: api/directoryobject-delete.md
                   - name: 获取成员对象
-                    href: api/orgcontact-getmemberobjects.md
-          - name: Policy
-            href: resources/policy-overview.md
-            items:
-              - name: 基于活动的超时策略
-                href: resources/activitybasedtimeoutpolicy.md
-                items:
-                  - name: 列表
-                    href: api/activitybasedtimeoutpolicy-list.md
-                  - name: 创建
-                    href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
-                  - name: 获取
-                    href: api/activitybasedtimeoutpolicy-get.md
-                  - name: 更新
-                    href: api/activitybasedtimeoutpolicy-update.md
-                  - name: 删除
-                    href: api/activitybasedtimeoutpolicy-delete.md
-              - name: 主页领域发现策略
-                href: resources/homerealmdiscoverypolicy.md
-                items:
-                  - name: 列表
-                    href: api/homerealmdiscoverypolicy-list.md
-                  - name: 创建
-                    href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
-                  - name: 获取
-                    href: api/homerealmdiscoverypolicy-get.md
-                  - name: 更新
-                    href: api/homerealmdiscoverypolicy-update.md
-                  - name: 删除
-                    href: api/homerealmdiscoverypolicy-delete.md
-                  - name: 列出已应用到应用程序的策略
-                    href: api/homerealmdiscoverypolicy-list-appliesto.md
-              - name: 声明映射策略
-                href: resources/claimsmappingpolicy.md
-                items:
-                  - name: 创建
-                    href: api/claimsmappingpolicy-post-claimsmappingpolicies.md
-                  - name: 列出
-                    href: api/claimsmappingpolicy-list.md
-                  - name: 获取
-                    href: api/claimsmappingpolicy-get.md
-                  - name: 更新
-                    href: api/claimsmappingpolicy-update.md
-                  - name: 删除
-                    href: api/claimsmappingpolicy-delete.md
-                  - name: 列出已应用到应用程序的策略
-                    href: api/claimsmappingpolicy-list-appliesto.md
-              - name: 令牌颁发策略
-                href: resources/tokenissuancepolicy.md
-                items:
-                  - name: 列表
-                    href: api/tokenissuancepolicy-list.md
-                  - name: 创建
-                    href: api/tokenissuancepolicy-post-tokenissuancepolicy.md
-                  - name: 获取
-                    href: api/tokenissuancepolicy-get.md
-                  - name: 更新
-                    href: api/tokenissuancepolicy-update.md
-                  - name: 删除
-                    href: api/tokenissuancepolicy-delete.md
-                  - name: 列出已应用到应用程序的策略
-                    href: api/tokenissuancepolicy-list-appliesto.md
-              - name: 令牌生存期策略
-                href: resources/tokenlifetimepolicy.md
-                items:
-                  - name: 列表
-                    href: api/tokenlifetimepolicy-list.md
-                  - name: 创建
-                    href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
-                  - name: 获取
-                    href: api/tokenlifetimepolicy-get.md
-                  - name: 更新
-                    href: api/tokenlifetimepolicy-update.md
-                  - name: 删除
-                    href: api/tokenlifetimepolicy-delete.md
-                  - name: 列出已应用到应用程序的策略
-                    href: api/tokenlifetimepolicy-list-appliesto.md
-          - name: 服务主体
-            href: resources/serviceprincipal.md
-            items:
-              - name: 列表
-                href: api/serviceprincipal-list.md
-              - name: 创建
-                href: api/serviceprincipal-post-serviceprincipals.md
-              - name: 获取
-                href: api/serviceprincipal-get.md
-              - name: 更新
-                href: api/serviceprincipal-update.md
-              - name: 删除
-                href: api/serviceprincipal-delete.md
-              - name: 列出创建的对象
-                href: api/serviceprincipal-list-createdobjects.md
-              - name: 列出拥有的对象
-                href: api/serviceprincipal-list-ownedobjects.md
-              - name: 应用程序角色分配
-                href: resources/approleassignment.md
-                items:
-                  - name: 列表
-                    href: api/serviceprincipal-list-approleassignments.md
-                  - name: 加法
-                    href: api/serviceprincipal-post-approleassignments.md
-                  - name: 删除
-                    href: api/serviceprincipal-delete-approleassignments.md
-                  - name: 分配到的列表
-                    href: api/serviceprincipal-list-approleassignedto.md
-                  - name: 添加的已分配对象
-                    href: api/serviceprincipal-post-approleassignedto.md
-                  - name: 删除分配对象
-                    href: api/serviceprincipal-delete-approleassignedto.md
-              - name: 证书和密码
-                items:
-                  - name: 添加密码
-                    href: api/serviceprincipal-addpassword.md
-                  - name: 删除密码
-                    href: api/serviceprincipal-removepassword.md
-                  - name: 添加密钥
-                    href: api/serviceprincipal-addkey.md
-                  - name: Remove 键
-                    href: api/serviceprincipal-removekey.md
-              - name: 委派权限授予
-                items:
-                  - name: 列表
-                    href: api/serviceprincipal-list-oauth2permissiongrants.md
-              - name: 成员身份
-                items:
-                  - name: 列出隶属于
-                    href: api/serviceprincipal-list-memberof.md
-                  - name: 列出的可传递成员
-                    href: api/serviceprincipal-list-transitivememberof.md
-                  - name: 检查成员组
-                    href: api/serviceprincipal-checkmembergroups.md
-                  - name: 检查 member 对象
-                    href: api/serviceprincipal-checkmemberobjects.md
+                    href: api/directoryobject-getmemberobjects.md
                   - name: 获取成员组
-                    href: api/serviceprincipal-getmembergroups.md
-                  - name: 获取成员对象
-                    href: api/serviceprincipal-getmemberobjects.md
-              - name: Owners
+                    href: api/directoryobject-getmembergroups.md
+                  - name: 检查成员组
+                    href: api/directoryobject-checkmembergroups.md
+                  - name: 按 ID 获取对象
+                    href: api/directoryobject-getbyids.md
+                  - name: 验证属性
+                    href: api/directoryobject-validateproperties.md
+              - name: 目录角色
+                href: resources/directoryrole.md
+                items:
+                  - name: 列出目录角色
+                    href: api/directoryrole-list.md
+                  - name: 激活目录角色
+                    href: api/directoryrole-post-directoryroles.md
+                  - name: 获取目录角色
+                    href: api/directoryrole-get.md
+                  - name: 列出成员
+                    href: api/directoryrole-list-members.md
+                  - name: 添加成员
+                    href: api/directoryrole-post-members.md
+                  - name: 删除成员
+                    href: api/directoryrole-delete-member.md
+              - name: 目录角色模板
+                href: resources/directoryroletemplate.md
+                items:
+                  - name: 列出 directoryRoleTemplates
+                    href: api/directoryroletemplate-list.md
+                  - name: 获取 directoryRoleTemplate
+                    href: api/directoryroletemplate-get.md
+              - name: 域
+                href: resources/domain.md
+                items:
+                  - name: 列出域
+                    href: api/domain-list.md
+                  - name: 创建域
+                    href: api/domain-post-domains.md
+                  - name: 删除域
+                    href: api/domain-delete.md
+                  - name: 获取域
+                    href: api/domain-get.md
+                  - name: 更新域
+                    href: api/domain-update.md
+                  - name: 验证域
+                    href: api/domain-verify.md
+              - name: 组织
+                href: resources/organization.md
+                items:
+                  - name: 获取组织详细信息
+                    href: api/organization-get.md
+                  - name: 更新组织详细信息
+                    href: api/organization-update.md
+              - name: 组织联系人
+                href: resources/orgcontact.md
+                items:
+                  - name: 列出组织联系人
+                    href: api/orgcontact-list.md
+                  - name: 获取组织联系人
+                    href: api/orgcontact-get.md
+                  - name: 获取组织联系人 delta
+                    href: api/orgcontact-delta.md
+                  - name: 组
+                    href: resources/group.md
+                    items:
+                      - name: 列出 memberOf
+                        href: api/orgcontact-list-memberof.md
+                      - name: 获取成员组
+                        href: api/orgcontact-getmembergroups.md
+                      - name: 检查成员组
+                        href: api/orgcontact-checkmembergroups.md
+                  - name: 组织层次结构
+                    href: resources/directoryobject.md
+                    items:
+                      - name: 列出直接下属
+                        href: api/orgcontact-list-directreports.md
+                      - name: 列出 memberOf
+                        href: api/orgcontact-list-memberof.md
+                      - name: 获取管理器
+                        href: api/orgcontact-get-manager.md
+                      - name: 获取成员对象
+                        href: api/orgcontact-getmemberobjects.md
+                  - name: 订阅的 SKU
+                    href: resources/subscribedsku.md
+                    items:
+                      - name: 列出 subscribedSkus
+                        href: api/subscribedsku-list.md
+                      - name: 获取 subscribedSku
+                        href: api/subscribedsku-get.md
+          - name: 标识和登录
+            items:
+              - name: 审核日志
+                href: resources/azure-ad-auditlog-overview.md
+                items:
+                  - name: 目录审核
+                    href: resources/directoryaudit.md
+                    items:
+                      - name: 列出目录审核
+                        href: api/directoryaudit-list.md
+                      - name: 获取目录审核
+                        href: api/directoryaudit-get.md
+                  - name: 登录
+                    href: resources/signin.md
+                    items:
+                      - name: 列出登录
+                        href: api/signin-list.md
+                      - name: 获取登录
+                        href: api/signin-get.md
+              - name: 基于证书的身份验证配置
+                href: resources/certificatebasedauthconfiguration.md
                 items:
                   - name: 列表
-                    href: api/serviceprincipal-list-owners.md
-                  - name: 加法
-                    href: api/serviceprincipal-post-owners.md
+                    href: api/certificatebasedauthconfiguration-list.md
+                  - name: 创建
+                    href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+                  - name: 获取
+                    href: api/certificatebasedauthconfiguration-get.md
                   - name: 删除
-                    href: api/serviceprincipal-delete-owners.md
-              - name: 策略
+                    href: api/certificatebasedauthconfiguration-delete.md
+              - name: 数据策略操作
+                href: resources/datapolicyoperation.md
                 items:
-                  - name: 分配 claimsMappingPolicy
-                    href: api/serviceprincipal-post-claimsmappingpolicies.md
-                  - name: 列出 claimsMappingPolicies
-                    href: api/serviceprincipal-list-claimsmappingpolicies.md
-                  - name: 删除 claimsMappingPolicy
-                    href: api/serviceprincipal-delete-claimsmappingpolicies.md
-                  - name: 分配 homeRealmDiscoveryPolicy
-                    href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                  - name: 列出 homeRealmDiscoveryPolicy
-                    href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
-                  - name: 删除 homeRealmDiscoveryPolicy
-                    href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
-                  - name: 分配 tokenIssuancePolicy
-                    href: api/application-post-tokenissuancepolicies.md
-                  - name: 列出 tokenIssuancePolicies
-                    href: api/application-list-tokenissuancepolicies.md
-                  - name: 删除 tokenIssuancePolicy
-                    href: api/application-delete-tokenissuancepolicies.md
-                  - name: 分配 tokenLifetimePolicy
-                    href: api/application-post-tokenlifetimepolicies.md
-                  - name: 列出 tokenLifetimePolicies
-                    href: api/application-list-tokenlifetimepolicies.md
-                  - name: 删除 tokenLifetimePolicy
-                    href: api/application-delete-tokenlifetimepolicies.md
-          - name: 订阅的 SKU
-            href: resources/subscribedsku.md
-            items:
-              - name: 列出 subscribedSkus
-                href: api/subscribedsku-list.md
-              - name: 获取 subscribedSku
-                href: api/subscribedsku-get.md
+                  - name: 获取数据策略操作
+                    href: api/datapolicyoperation-get.md
+              - name: 委派权限授予
+                href: resources/oauth2permissiongrant.md
+                items:
+                  - name: 列表
+                    href: api/oauth2permissiongrant-list.md
+                  - name: 创建
+                    href: api/oauth2permissiongrant-post.md
+                  - name: 获取
+                    href: api/oauth2permissiongrant-get.md
+                  - name: 更新
+                    href: api/oauth2permissiongrant-update.md
+                  - name: 删除
+                    href: api/oauth2permissiongrant-delete.md
+              - name: 身份保护
+                href: resources/identityprotectionroot.md
+                items:
+                  - name: 风险检测
+                    href: resources/riskdetection.md
+                    items:
+                      - name: 列表
+                        href: api/riskdetection-list.md
+                      - name: 获取
+                        href: api/riskdetection-get.md
+                  - name: 有风险的用户
+                    href: resources/riskyuser.md
+                    items:
+                      - name: 列出有风险的用户
+                        href: api/riskyuser-list.md
+                      - name: 获取有风险的用户
+                        href: api/riskyuser-get.md
+                      - name: 列表历史记录
+                        href: api/riskyuser-list-history.md
+                      - name: 获取历史记录
+                        href: api/riskyuser-get-riskyuserhistoryitem.md
+                      - name: 确认已被盗用
+                        href: api/riskyuser-confirmcompromised.md
+                      - name: 消除
+                        href: api/riskyuser-dismiss.md
+              - name: 标识提供程序
+                href: resources/identityprovider.md
+                items:
+                  - name: 列出标识提供程序
+                    href: api/identityprovider-list.md
+                  - name: 创建标识提供程序
+                    href: api/identityprovider-post-identityproviders.md
+                  - name: 获取标识提供程序
+                    href: api/identityprovider-get.md
+                  - name: 更新标识提供程序
+                    href: api/identityprovider-update.md
+                  - name: 删除标识提供程序
+                    href: api/identityprovider-delete.md
+              - name: 信息保护
+                items:
+                  - name: 威胁评估
+                    items:
+                      - name: 概述
+                        href: resources/threatassessment-api-overview.md
+                      - name: 威胁评估请求
+                        href: resources/threatassessmentrequest.md
+                      - name: 邮件评估请求
+                        href: resources/mailassessmentrequest.md
+                      - name: 电子邮件文件评估请求
+                        href: resources/emailfileassessmentrequest.md
+                      - name: 文件评估请求
+                        href: resources/fileAssessmentRequest.md
+                      - name: URL 评估请求
+                        href: resources/urlassessmentrequest.md
+                      - name: 列表
+                        href: api/informationprotection-list-threatassessmentrequests.md
+                      - name: 创建
+                        href: api/informationprotection-post-threatassessmentrequests.md
+                      - name: 获取
+                        href: api/threatassessmentrequest-get.md
+              - name: 邀请管理器
+                href: resources/invitation.md
+                items:
+                  - name: 创建邀请
+                    href: api/invitation-post.md
+              - name: Policy
+                href: resources/policy-overview.md
+                items:
+                  - name: 基于活动的超时策略
+                    href: resources/activitybasedtimeoutpolicy.md
+                    items:
+                      - name: 列表
+                        href: api/activitybasedtimeoutpolicy-list.md
+                      - name: 创建
+                        href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
+                      - name: 获取
+                        href: api/activitybasedtimeoutpolicy-get.md
+                      - name: 更新
+                        href: api/activitybasedtimeoutpolicy-update.md
+                      - name: 删除
+                        href: api/activitybasedtimeoutpolicy-delete.md
+                  - name: 主页领域发现策略
+                    href: resources/homerealmdiscoverypolicy.md
+                    items:
+                      - name: 列表
+                        href: api/homerealmdiscoverypolicy-list.md
+                      - name: 创建
+                        href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
+                      - name: 获取
+                        href: api/homerealmdiscoverypolicy-get.md
+                      - name: 更新
+                        href: api/homerealmdiscoverypolicy-update.md
+                      - name: 删除
+                        href: api/homerealmdiscoverypolicy-delete.md
+                      - name: 列出已应用到应用程序的策略
+                        href: api/homerealmdiscoverypolicy-list-appliesto.md
+                  - name: 声明映射策略
+                    href: resources/claimsmappingpolicy.md
+                    items:
+                      - name: 创建
+                        href: api/claimsmappingpolicy-post-claimsmappingpolicies.md
+                      - name: 列出
+                        href: api/claimsmappingpolicy-list.md
+                      - name: 获取
+                        href: api/claimsmappingpolicy-get.md
+                      - name: 更新
+                        href: api/claimsmappingpolicy-update.md
+                      - name: 删除
+                        href: api/claimsmappingpolicy-delete.md
+                      - name: 列出已应用到应用程序的策略
+                        href: api/claimsmappingpolicy-list-appliesto.md
+                  - name: 令牌颁发策略
+                    href: resources/tokenissuancepolicy.md
+                    items:
+                      - name: 列表
+                        href: api/tokenissuancepolicy-list.md
+                      - name: 创建
+                        href: api/tokenissuancepolicy-post-tokenissuancepolicy.md
+                      - name: 获取
+                        href: api/tokenissuancepolicy-get.md
+                      - name: 更新
+                        href: api/tokenissuancepolicy-update.md
+                      - name: 删除
+                        href: api/tokenissuancepolicy-delete.md
+                      - name: 列出已应用到应用程序的策略
+                        href: api/tokenissuancepolicy-list-appliesto.md
+                  - name: 令牌生存期策略
+                    href: resources/tokenlifetimepolicy.md
+                    items:
+                      - name: 列表
+                        href: api/tokenlifetimepolicy-list.md
+                      - name: 创建
+                        href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
+                      - name: 获取
+                        href: api/tokenlifetimepolicy-get.md
+                      - name: 更新
+                        href: api/tokenlifetimepolicy-update.md
+                      - name: 删除
+                        href: api/tokenlifetimepolicy-delete.md
+                      - name: 列出已应用到应用程序的策略
+                        href: api/tokenlifetimepolicy-list-appliesto.md
       - name: 邮件
         displayName: 'Outlook, Outlook mail'
         items:

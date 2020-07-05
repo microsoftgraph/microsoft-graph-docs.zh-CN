@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 1b5dd9303f5415d34bb4b1244a4abbc952089ddc
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: d0e462ab93b60796e8cbb4463c19799ba9033cd2
+ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896845"
+ms.lasthandoff: 07/04/2020
+ms.locfileid: "45038644"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -17,6 +17,15 @@ ms.locfileid: "44896845"
 > [!IMPORTANT]
 > _预览_状态下的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为正式发布 (GA) 状态。 不要在成品应用中使用预览功能。
 
+## <a name="july-2020-new-and-generally-available"></a>2020年7月：新的和普遍可用
+
+### <a name="change-notifications"></a>更改通知
+从[changeNotification](/graph/api/resources/changenotification)资源中删除了 erronously 引入的**sequenceNumber**属性。
+
+## <a name="july-2020-new-in-preview-only"></a>2020年7月：仅预览中的新内容
+
+### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
+使用应用程序权限 `Printer.ReadWrite.All` 和[Internet 打印协议（IPP）编码](https://tools.ietf.org/html/rfc8010)[更新打印机](/graph/api/printer-update?view=graph-rest-beta)。
 
 ## <a name="june-2020-new-and-generally-available"></a>2020年6月：新的和普遍可用的
 
@@ -24,14 +33,30 @@ ms.locfileid: "44896845"
 - `Accept-Language`[创建联机会议](/graph/api/application-post-onlinemeetings?view=graph-rest-1.0)时使用 HTTP 标头，以提供基于区域设置的联接信息。
 - 使用[createOrGet](/graph/api/onlinemeeting-createorget?view=graph-rest-1.0)返回具有指定的**externalId**值的联机会议; 或者，如果尚不存在，则创建一个，以便简化在第三方日历中嵌入结果会议。
 
+### <a name="files"></a>文件
+- 增强的同步支持：
+  - 使用**pendingOperations**属性可标识任何可能更新[driveItem](/graph/api/resources/driveitem)文件的二进制内容的操作，这些[操作](/graph/api/resources/pendingoperations)会挂起完成。
+  - [还原](/graph/api/driveitem-restore)已删除且位于 OneDrive 个人版的回收站中的**driveItem** 。
+- 获取或设置[照片](/graph/api/resources/photo)的方向。 OneDrive 个人版上支持设置。
+- 使用安全哈希算法 (SHA-256) 增强[文件](/graph/api/resources/file)数据安全性和完整性。
+- 在将 `deferCommit` [文件上载](/graph/api/driveitem-createuploadsession)到 OneDrive for business 时，使用参数推迟最终创建，直到应用程序发出请求来完成上载。
+- 使用**fileSize**属性可作为**项目**参数的一部分提供估计，以便在 OneDrive 个人版上上[传文件](/graph/api/driveitem-createuploadsession)之前执行配额检查。
+- 通过[drive](/graph/api/resources/drive)资源的**Quota**属性查找[storagePlanInformation](/graph/api/resources/storageplaninformation) ，以查看是否有更高的可用存储配额计划。
+
 ### <a name="groups"></a>组
 使用应用程序权限 `Group.Read.All` ，并 `Group.ReadWrite.All` 获取组[对话](/graph/api/resources/conversation)和[会话线程](/graph/api/resources/conversationthread)资源。
+
+### <a name="identity-and-access"></a>身份和访问 
+- 用于[标识保护](/graph/api/resources/identityprotectionroot)的两组 API GA：[风险检测](/graph/api/resources/riskdetection)和有[风险的用户](/graph/api/resources/riskyuser)api。
 
 ### <a name="security"></a>安全性
 - 将以下内容作为[警报](/graph/api/resources/alert?view=graph-rest-1.0)的属性进行跟踪：
   - 与警报相关的事件的 Id。
   - 将[资源](/graph/api/resources/securityResource?view=graph-rest-1.0#securityresourcetype-values)标识为 "受攻击" 或 "作为警报中的相关资源"。
   - 指定与警报相关的[网络连接](/graph/api/resources/networkconnection?view=graph-rest-1.0)的源和目标位置。
+
+### <a name="sites-and-lists"></a>网站和列表
+在 SharePoint[列表](/graph/api/resources/list)资源的[列定义](/graph/api/resources/columndefinition)中指定地理位置数据。
 
 ### <a name="teamwork"></a>团队合作
 - 使用委派的权限[AppCatalog](/graph/permissions-reference#appcatalog-resource-permissions)列出 Microsoft 团队应用程序目录中的[应用程序](/graph/api/resources/teamsapp?view=graph-rest-1.0)。
@@ -40,109 +65,62 @@ ms.locfileid: "44896845"
 
 
 ## <a name="june-2020-new-in-preview-only"></a>2020年6月：仅预览中的新内容
+
+### <a name="calendar"></a>日历
+除了跟踪**calendarView**中事件的增量更改（集合或由开始_和_结束日期分隔的事件），可对用户邮箱中的事件或特定用户日历中的事件使用[delta](/graph/api/event-delta?view=graph-rest-beta)函数。
+
 ### <a name="cloud-communications--presence"></a>云通信 |Shell
-[获取](/graph/api/presence-get?view=graph-rest-beta)组织中的所有用户或组织中的特定用户的状态。
+获取组织中的所有用户或 grgr 中的特定用户[的状态](/graph/api/presence-get?view=graph-rest-beta)。
+
+### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
+- 在配置[要打印的文档](/graph/api/resources/printdocument?view=graph-rest-beta)时指定[打印边距](/graph/api/resources/printmargin?view=graph-rest-beta)。
+- 支持以下[打印机功能](/graph/api/resources/printercapabilities?view=graph-rest-beta)：
+  - 送纸方向
+  - 打印页面范围
+  - 以 DPI 显示的打印分辨率
+  - 最大打印作业队列大小（字节数）
+  - 输入纸盒
+  - 边距
+  - 排序
+  - 文档缩放
+- 支持打印分辨率（DPI）和文档缩放作为[默认打印机设置](/graph/api/resources/printerdefaults?view=graph-rest-beta)的一部分。
+- 对以下[文档配置](/graph/api/resources/printerdocumentconfiguration?view=graph-rest-beta)设置的支持：
+  - 输入纸盒
+  - 输出箱
+  - 媒体大小
+  - 边距
+  - 媒体类型
+  - finishings，例如装订或绑定
+  - 每版打印页数
+  - 多页布局，指定在每个工作表中排列页面的方向
+  - 排序
+  - 能力
+- 在[列出 pring 作业](/graph/api/printer-list-jobs?view=graph-rest-beta)时展开文档。
+- [注册打印机]()并使用[printerCreateOperation](/graph/api/resources/printercreateoperation?view=graph-rest-beta)资源来跟踪和验证打印机的注册。
+- 在当前用户或应用程序的租户内[获取长时间运行的打印机注册操作](/graph/api/printoperation-get?view=graph-rest-beta)。
+- 属性和枚举类型的几个重命名-请参阅[六月](changelog.md#june-2020)更改日志 updates for cloud 打印中的详细信息。
 
 ### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 测试版中的 Intune[六月](changelog.md#june-2020)更新。
 
+### <a name="education"></a>教育
+- 可以使用委派权限 `EduRoster.ReadBasic` [获取](/graph/api/educationuser-get?view=graph-rest-beta)外部源程序中[教师](/graph/api/resources/educationteacher?view=graph-rest-beta)或[学生](/graph/api/resources/educationstudent?view=graph-rest-beta)的 ID，作为**externalId**属性。
+- **externalSource** `lms` 如果教育[组织](/graph/api/resources/educationorganization?view=graph-rest-beta)或[课程](/graph/api/resources/educationclass?view=graph-rest-beta)是从学习管理系统（LMS）创建的，则使用 externalSource 属性来跟踪该值。
+
 ### <a name="identity-and-access"></a>身份和访问
 - IT 专业人员可以使用轻型代理连接到[AZURE AD 应用程序代理](/azure/active-directory/manage-apps/what-is-application-proxy)的[连接器](/graph/api/resources/connector?view=graph-rest-beta)资源，并[在外部发布本地 web 应用程序应用](/graph/api/resources/onpremisespublishing?view=graph-rest-beta)，以便其组织的远程用户能够以安全的方式访问这些应用程序。
 - 在租户级别管理[身份验证策略](/graph/api/resources/authenticationflowspolicy?view=graph-rest-beta)，以启用或禁用外部用户的[自助服务注册](/graph/api/resources/selfservicesignupauthenticationflowconfiguration?view=graph-rest-beta)。
+- [根据需要预配用户帐户](/graph/api/synchronization-synchronizationjob-provision-on-demand?view=graph-rest-beta)，并能够指定要执行的预配和同步规则的对象。
+
+### <a name="search"></a>搜索
+- 对[架构](/graph/api/resources/schema?view=graph-rest-beta)中的[属性](/graph/api/resources/property?view=graph-rest-beta)使用增强功能： **isRefinable**以启用对搜索结果的筛选以及更精确地控制搜索体验，以及**别名**和**标签**以实现更好的相关性。
+- 能够在**架构**中指定最大为128的**属性**资源。
+- 将[Get externalItem](/graph/api/externalitem-get?view=graph-rest-beta)用于诊断目的。
 
 ### <a name="users"></a>用户
-使用[用户设置](/graph/api/resources/usersettings?view=graph-rest-beta)[获取](/graph/api/regionalandlanguagesettings-get?view=graph-rest-beta)或[更新](/graph/api/regionalandlanguagesettings-update?view=graph-rest-beta)[首选 languaes 和区域设置](/graph/api/resources/regionalandlanguagesettings?view=graph-rest-beta)。
-
-用户设置是通过点击 Azure AD 用户配置文件以反映相同的用户首选项的[用户](/graph/api/resources/user?view=graph-rest-beta)可访问的关系，可实现跨应用程序的一致用户体验。 查看[用户设置如何区分邮箱设置](/graph/api/resources/user?view=graph-rest-beta#user-preferences-for-languages-and-regional-formats)。
-
-## <a name="may-2020-new-and-generally-available"></a>5月2020：新的和普遍可用的
-
-### <a name="calendar--place"></a>日历 | 位置
-在 v1.0 中的[位置 API](/graph/api/resources/place) GA-在生产应用程序中使用此 api 来获取、更新或删除租户中的[会议室](/graph/api/resources/room)或[会议室列表](/graph/api/resources/roomlist)。 了解有关位置 API 的[详细](outlook-calendar-concept-overview.md#build-apps-with-location-awareness-and-provide-intelligent-context)信息。
-
-### <a name="change-notifications"></a>更改通知
-- 在 Microsoft 云中的美国政府版中订阅更改通知。
-
-### <a name="cloud-communications--call-records"></a>云通信 | 通话记录
-- 公开的[呼叫记录 API](/graph/api/resources/callrecords-api-overview?view=graph-rest-1.0) -使用[CallRecord](/graph/api/resources/callrecord?view=graph-rest-1.0)资源在 Microsoft 团队和 Skype 中获取呼叫和联机会议的元数据。
-- 订阅[更改通知](/graph/webhooks)，以获取组织中所有**callRecord**资源的更改通知。
-- [列出](/graph/api/callrecords-session-list?view=graph-rest-1.0) **callRecord**中的会话，并根据需要[展开每个会话以](/graph/api/callrecords-session-list?view=graph-rest-1.0#example-2-get-session-list-with-segments)在呼叫记录中列出分段。
-- 对 `frequency60GHz` 网段中媒体终结点的 60-GHz （）和 `unknownFutureValue` WiFi 频带值的支持。
-- 在通信[段](/graph/api/resources/callrecords-segment)中支持语音邮件作为服务端的一种可能类型的终结点。
-
-### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
-Intune[可能会](changelog.md#may-2020)在 v1.0 中更新。
-
-### <a name="graph-explorer"></a>Graph 浏览器
-使用[Graph 浏览器](https://developer.microsoft.com/en-us/graph/graph-explorer)的许多新功能，以增强沙盒中的学习和原型。 例如：
-- 查看与您输入的 REST API 查询相对应的代码段，以 c #、Java、JavaScript 和客观 C 为依据。
-- 使用租户登录，查看并将访问令牌复制到您喜爱的 REST 客户端应用程序。
-
-有关更多详细信息，请参阅[新的 Graph 浏览器现已公开](https://developer.microsoft.com/graph/blogs/new-graph-explorer-is-now-ga/)。
-
-### <a name="groups"></a>组
-- 通过 Azure AD Connect 将本地目录同步到 Azure Active Directory 现在，将 **、onpremisesdomainname**、 **onPremisesNetBiosName**和**onPremisesSamAccountName**属性作为[组](/graph/api/resources/group?view=graph-rest-1.0)资源的一部分返回。
-- 订阅由世纪互联运营的 Microsoft 云中国[组](/graph/api/resources/group)资源的更改通知。
-
-### <a name="identity-and-access"></a>身份和访问
-- 在 v1.0 中使用服务主体 API （GA）-使用生产应用程序中的[servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)资源以编程方式管理应用程序的实例，并控制应用程序可在租户中执行的操作。 您可以控制哪些用户可以使用应用程序，应用程序有权访问哪些资源，如添加密码凭据、即将过期的证书以及管理委派的权限授予和应用程序角色分配。
-- 公开的[appRoleAssignment](/graph/api/resources/appRoleAssignment?view=graph-rest-1.0) API，用于记录[appRole](/graph/api/resources/approle?view=graph-rest-1.0) `roles` 对[用户](/graph/api/resources/user?view=graph-rest-1.0)、[组](/graph/api/resources/group?view=graph-rest-1.0)或[servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)的 appRole 分配（表示 ID 令牌和访问令牌中的声明）。
-- 在 Azure Active Directory 上使用 Facebook 作为标识提供程序。
-- 使用的委派或应用程序权限 `AppRoleAssignment.ReadWrite.All` 允许应用管理对任何 API （包括 Microsoft Graph）的应用程序权限和任何应用程序的应用程序分配的授予，分别与或不带登录用户。
-
-
-### <a name="microsoft-graph-sdks"></a>Microsoft Graph SDK
-有关以下内容，请参阅新的 SDK 指导：
-- [分页](/graph/sdks/paging)
-- [批处理](/graph/sdks/batch-requests)
-- [在 OneDrive 上上传大文件](/graph/sdks/large-file-upload)
-- [通过 HTTP 中间件组件自定义 SDK 服务客户端](/graph/sdks/customize-client)。
-
-### <a name="teamwork"></a>团队合作
-- 如果您的方案涉及团队中的联机会议，请参阅有关如何在[日历 API](outlook-calendar-online-meetings.md)和[云通信 API](cloud-communications-online-meetings.md)中进行[选择](choose-online-meeting-api.md)以创建和加入联机会议的新指导。
-- [发送](/graph/api/channel-post-messages?view=graph-rest-1.0)和[回复](/graph/api/channel-post-messagereply?view=graph-rest-1.0)[频道](/graph/api/resources/channel?view=graph-rest-1.0)中的邮件。
-- 通过使用**fileFolder**导航属性，获取[频道](/graph/api/resources/channel?view=graph-rest-1.0)的文件的 OneDrive for business 位置。
-
-### <a name="teamwork--shifts"></a>团队合作 | 倒班
-V1.0 中的[倒班 API](/graph/api/resources/shift?view=graph-rest-1.0) GA-在生产应用程序中使用此 api 创建、更新和管理 firstline 工作人员的日程安排，以让他们保持联系并有效地进行协作。
-
-### <a name="users"></a>用户
-- 订阅由世纪互联运营的 Microsoft 云中国[用户](/graph/api/resources/user)资源的更改通知。
-- 使用**用户**资源的**externalUserState**和**externalUserStateChangeDateTime**属性跟踪已被[邀请](/graph/api/invitation-post?view=graph-rest-1.0)加入组织的外部用户的上次状态更改的状态和日期/时间。
-
-## <a name="may-2020-new-in-preview-only"></a>5月2020：仅预览中的新内容
-
-### <a name="change-notifications"></a>更改通知
-- 使用正式的架构化类型[changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta)和[changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta)处理资源更改通知。 
-- 跟踪是否按顺序通知，或者是否在使用**changeNotification**资源上的**sequenceNumber**属性丢失通知。
-
-### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
-- [打印机](/graph/api/resources/printer?view=graph-rest-beta)和[printerShare](/graph/api/resources/printershare?view=graph-rest-beta)资源现在处于奇偶校验，并且彼此具有相同的属性。
-- 打印机共享的一些属性和类型名称清理：
-  - 使用 "[打印](/graph/api/resources/print?view=graph-rest-beta)" 的**共享**导航属性获取在租户中注册的打印机共享的列表。 
-  - 请参阅[可能](changelog.md#may-2020)更改日志中的详细信息。
-
-### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
-Intune[可能会](changelog.md#may-2020)在 beta 中更新。
-
-### <a name="groups"></a>组
-- 使用[组](/graph/api/resources/group?view=graph-rest-beta)的现有规则或指定的规则[评估](/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta)用户或设备是否为动态组的成员。 [基于规则的动态成员身份](/azure/active-directory/users-groups-roles/groups-dynamic-membership)可降低添加和删除成员的管理开销。
-- 创建 Microsoft 365[组](/graph/api/resources/group?view=graph-rest-beta)时，通过在**resourceBehaviorOptions**属性中指定组的行为来配置这些行为。 例如，允许成员张贴、订阅新成员到对话、禁用欢迎电子邮件以及在 Outlook 体验中隐藏组。
-- 指定要在**resourceProvisioningOptions**属性中设置的资源，这些资源通常不是默认[组](/graph/api/resources/group?view=graph-rest-beta)创建的一部分。 目前支持将组设置为具有 Microsoft 团队功能的[团队](/graph/api/resources/team?view=graph-rest-beta)。
-
-### <a name="identity-and-access"></a>身份和访问
-- `$count` `$filter` `$search` 在获取派生自[directoryObject]()的实体的集合时应用 OData 系统查询选项（，，）。 您可以在这些实体的**displayName**和**description**属性中[搜索特定令牌](/graph/query-parameters?#using-search-on-directory-object-collections)，并使用 OData 强制转换将**directoryObject**结果修整为特定的派生类型。 有关[使用 $count、$filter、$search 和 $orderby 在 Microsoft Graph 中生成高级查询](https://developer.microsoft.com/en-us/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/)的更多详细信息，请参阅。
-- 作为[标识保护 API](/graph/api/resources/identityprotection-root?view=graph-rest-beta)的一部分，使用**riskEventType**属性来[获取检测到的风险类型](/graph/api/riskdetection-get?view=graph-rest-beta)，或[获取用户历史记录中的风险类型](/graph/api/riskyuser-list-history?view=graph-rest-beta)。 请勿使用**riskType**属性，因为它已被弃用。
-- 在[条件访问策略](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta)的[条件集](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta)的**clientAppTypes**属性中指定客户端应用程序类型。
-- 使用委派的权限 `EntitlementManagement.Read.All` ，以允许应用代表登录用户读取访问包和相关的权限管理资源。
-- 使用的委派或应用程序权限 `Application.Read.All` 并 `Application.ReadWrite.All` 列出组织中的[应用程序](/graph/api/application-list?view=graph-rest-beta)。
-- 使用[authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta)资源类型控制 Azure AD 中的授权设置。
-
-### <a name="teamwork"></a>团队合作
-- [支持单一登录（SSO）](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso)的团队应用可以 `WebApplicationInfo.id` 在[teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta)的**azureADAppId**属性中指定团队应用程序清单中的。
-- 使用[更](/graph/permissions-reference#teams-resource-specific-consent-permissions)精细的权限访问[团队](/graph/api/resources/team?view=graph-rest-beta)和[频道](/graph/api/resources/channel?view=graph-rest-beta)资源。
-
-
+- 使用[mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta)的**userPurpose**属性可在 Exchange Online 中识别共享邮箱和设备邮箱中单个用户的邮箱并区分该邮箱。 
+- 使用[用户设置](/graph/api/resources/usersettings?view=graph-rest-beta)[获取](/graph/api/regionalandlanguagesettings-get?view=graph-rest-beta)或[更新](/graph/api/regionalandlanguagesettings-update?view=graph-rest-beta)[首选 languaes 和区域设置](/graph/api/resources/regionalandlanguagesettings?view=graph-rest-beta)。
+- 用户设置是通过点击 Azure AD 用户配置文件以反映相同的用户首选项的[用户](/graph/api/resources/user?view=graph-rest-beta)可访问的关系，可实现跨应用程序的一致用户体验。 查看[用户设置如何区分邮箱设置](/graph/api/resources/user?view=graph-rest-beta#user-preferences-for-languages-and-regional-formats)。
 
 
 ## <a name="want-to-stay-in-the-loop"></a>保持循环
