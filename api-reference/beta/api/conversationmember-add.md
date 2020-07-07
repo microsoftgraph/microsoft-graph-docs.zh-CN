@@ -5,12 +5,11 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 59f67434e131b871723ba152be945a37b18215eb
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: MT
+ms.openlocfilehash: 40ed8afa7700bc2fa1639986c336d15130b03a57
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491281"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050753"
 ---
 # <a name="add-conversationmember"></a>添加 conversationMember
 
@@ -23,15 +22,15 @@ ms.locfileid: "44491281"
 > [!NOTE]
 >此操作仅在具有[channelMembershipType](../resources/enums.md#channelmembershiptype-values)的通道上受支持 `private` 。 与任何其他[channelMembershipType](../resources/enums.md#channelmembershiptype-values)的调用将返回400错误请求响应。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型|权限（从最低特权到最高特权）|
 |---------|-------------|
 |委派（工作或学校帐户）| ChannelMember、Group 写全部、所有的 ReadWrite。 All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application| ChannelMember、Group 写全部、所有的 ReadWrite。 All |
+|应用程序| ChannelMember、Group 写全部、所有的 ReadWrite。 All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored"} -->
@@ -43,13 +42,13 @@ POST /teams/{id}/channels/{id}/members
 
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| Authorization  | Bearer {token}. Required.  |
 
 ## <a name="request-body"></a>请求正文
 
 请求正文中包含以下属性。
 
-| 属性   | 类型 |Description|
+| 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |角色|string 集合|该用户的角色。|
 |用户|[用户](../resources/user.md)|要添加到频道的用户。|
@@ -99,10 +98,11 @@ content-length: 26
 
 下面是一个响应示例。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "create_conversation_member",
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
 ```http

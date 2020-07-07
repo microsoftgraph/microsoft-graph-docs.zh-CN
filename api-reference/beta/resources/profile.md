@@ -1,16 +1,15 @@
 ---
 title: 配置文件资源类型
-description: 表示为用户描述的属性，以及通过 microsoft Graph 在 Microsoft 365 和第三方服务和体验中呈现的共享人员体验。
+description: 表示对用户进行了说明的属性，以及通过 microsoft Graph 在 Microsoft 365 和第三方服务和体验中进行的共享的用户体验。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 2e378229e8b001070db274c812cdb307934717cf
-ms.sourcegitcommit: 5d4bf35774eba6de21f4252b46f7e9d8f64a517f
-ms.translationtype: MT
+ms.openlocfilehash: 1f80dfccbd662e1e398c0d4b79b0086575a83e2b
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44168572"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050877"
 ---
 # <a name="profile-resource-type"></a>配置文件资源类型
 
@@ -18,7 +17,7 @@ ms.locfileid: "44168572"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示对租户中的用户进行描述性的属性，例如，周年纪念和教育活动。 这些属性在跨 Microsoft 365 和第三方服务的共享人员体验和通过 Microsoft Graph 的体验中呈现。 
+表示对租户中的用户进行描述性的属性，例如，周年纪念和教育活动。 这些属性在共享中通过 Microsoft 365 和第三方服务体验，并通过 Microsoft Graph 体验。 
 
 以编程方式，这些属性表示为**配置文件**资源的[关系](#relationships)。 若要获取这些导航属性之一或为用户创建这些属性的实例，请对该属性使用相应的 GET 或 POST 方法（如果适用）。 请参阅下面列出的[方法](#methods)。
 
@@ -59,7 +58,7 @@ ms.locfileid: "44168572"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id            |字符串       | 只读。  |
+|id            |String       | 只读。  |
 
 ## <a name="relationships"></a>关系
 

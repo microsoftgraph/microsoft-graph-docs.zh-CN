@@ -4,12 +4,11 @@ description: 'Microsoft Graph 使你能够使用 REST Api 和客户端库，与 
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: a8ad7988ed8ce77d70ed0263817cbe643a42ca2c
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
-ms.translationtype: MT
+ms.openlocfilehash: 8c8b3bc0abce69a74f79ea1c59269c2d23c9d116
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429619"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050734"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
@@ -72,10 +71,11 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 
 ## <a name="people-and-workplace-intelligence"></a>人员和工作场所智能
 
-|功能     |支持服务  |说明 |详细信息 |
+|功能     |支持服务  |说明 |更多信息 |
 |:-----------|:--------------------|:-----------|:----------------|
 | 人员 | Azure AD、Outlook、SharePoint 等 | 获取有关人员的信息，该对象按与用户的相关程度进行排序，相关程度由用户的通信和协作模式以及业务关系决定。  | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
 | 个人资料（预览版） | 配置文件 | 提供存储和检索有关租户内人员的信息的轻型机制。 | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
+| 配置文件卡片自定义（预览） | 配置文件卡片 | 为管理员提供了轻量机制，以自定义 orgaization 中 Microsoft 365 配置文件卡上的表面内容。 | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
 | 文档见解  | Delve、OneDrive、Outlook、SharePoint | 使用高级分析和机器学习技术获取常用的文档，以及用户查看、修改或共享的文档。  | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md)  |
 | 分析（预览版） | MyAnalytics | 使用高级分析和机器学习技巧，提供了有关用户如何花费自己时间，以及用户与谁一起花费时间的见解。 此类数据可以帮助用户计划一天的日程安排，深入了解自己的不同工作模式，并帮助用户平衡工作和生活。  | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
 
@@ -90,7 +90,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 
 ## <a name="security"></a>安全性
 
-|功能     |支持服务  |说明 |详细信息 |
+|功能     |支持服务  |说明 |更多信息 |
 |:-----------|:--------------------|:-----------|:----------------|
 | 安全集成 | Azure AD Identity Protection、Azure 信息保护、Azure 安全中心、Microsoft 云应用安全性、Windows Defender 高级威胁防护[等](/graph/api/resources/security-api-overview?view=graph-rest-1.0) | 跨整个 Microsoft 和生态系统合作伙伴提供安全见解和操作的统一网关。 | [Microsoft Graph 中的安全性](security-concept-overview.md) |
 
@@ -98,7 +98,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 
 ## <a name="cross-device-experiences"></a>跨设备体验
 
-|功能     |支持服务  |说明 |详细信息 |
+|功能     |支持服务  |说明 |更多信息 |
 |:-----------|:--------------------|:-----------|:----------------|
 | 跨设备体验 | 活动源、设备中继 | 支持超越单一设备的应用体验，同用户在不同设备之间移动，而不考虑设备类型和平台。 | [跨设备体验概述](cross-device-concept-overview.md) |
 
@@ -111,14 +111,14 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 
 ## <a name="usage-reports"></a>使用率报告
 
-|功能     |支持服务  |说明 |详细信息 |
+|功能     |支持服务  |说明 |更多信息 |
 |:-----------|:--------------------|:-----------|:----------------|
 | 报告 | Microsoft Teams、OneDrive、Outlook、SharePoint、Skype for Business、Yammer | 获取支持服务的活动和用法信息。 | [使用情况报表概述](reportroot-concept-overview.md) |
 
 
 ## <a name="education"></a>教育
 
-|功能     |支持服务  |说明 |详细信息 |
+|功能     |支持服务  |说明 |更多信息 |
 |:-----------|:--------------------|:-----------|:----------------|
 | 教育 | Azure AD、教育 | 提供了与教育场景相关的信息，包括学校、课堂、学生、教师和作业信息。 支持 ISV 构建面向教室的应用程序，从而节约教师时间并提升团队合作与协作。  | [教育概述](education-concept-overview.md) |
 

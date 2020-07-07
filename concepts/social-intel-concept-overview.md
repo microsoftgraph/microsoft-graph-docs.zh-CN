@@ -5,12 +5,11 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 1c000496a49460269fbb386c9ba7225b4746f109
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
-ms.translationtype: HT
+ms.openlocfilehash: 5699fe0c4c3f089481cf09c930546dfd78415eb6
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618779"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050727"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Microsoft Graph 中的人员和工作场所智能概述
 
@@ -23,7 +22,7 @@ Microsoft 365 云服务的亿万用户组成了 Microsoft Graph 的核心部分�
 
 人员 API 基于用户的联系人、社交网络、组织目录以及电子邮件和 Skype 上的最近通信，返回按与该用户相关性排序的人员。 这对于选取人员的应用场景尤为有用。
 
-见解 API 使用高级分析和机器学习为用户提供他们在工作中所需的相关度最高的文件。 API 提升了我们所熟悉的 Office 365 体验，其中包括 Office Delve、SharePoint Home、OneDrive for Business 中的发现视图以及 Outlook 网页版。
+见解 API 使用高级分析和机器学习为用户提供他们在工作中所需的相关度最高的文件。 API 将熟悉 Microsoft 365 体验，其中包括 Office Delve、SharePoint 主页、OneDrive for Business 中的发现视图和 web 上的 Outlook。
 
 ![人员和见解 API 为用户返回具有相关度的人员和文档](images/social-intel-concept-overview-data.png)
 
@@ -66,25 +65,25 @@ GET /me/people/?$search="topic:beetle"
 
 在平时的工作日中，用户通常会与存储在多个文档中的大量信息进行交互，并以多种不同的方式与其他用户协作。 当他们需要任何信息时，即可随时找到所需的信息，这一点很重要。
 
-你可以使用见解 API（其中包含[热门](/graph/api/resources/insights-trending?view=graph-rest-1.0)、[共享](/graph/api/resources/insights-shared?view=graph-rest-1.0)和[使用](/graph/api/resources/insights-used?view=graph-rest-1.0) API），根据用户的当前上下文和需求跨 Office 365 处理文件，使用户工作更为高效并提升组织中的协作。
+您可以使用 insights API （包括[趋势分析](/graph/api/resources/insights-trending?view=graph-rest-1.0)、[共享](/graph/api/resources/insights-shared?view=graph-rest-1.0)和[使用](/graph/api/resources/insights-used?view=graph-rest-1.0)的 api），根据用户的当前上下文和需求从 Microsoft 365 中呈现文件，使用户在组织中实现更高的工作效率和改进协作。
 
 在应用中呈现见解 API 中的结果很简单。 每个结果都附带了一组常用可视化属性，例如，预览图像 URL 或预览文本。
 
 ### <a name="make-relevant-content-visible"></a>使相关内容可见
 
-在 Office 365 中，Delve 使用_热门_见解来帮助用户发现目前最令他们感兴趣的文档。 请参见图 1。
+在 Microsoft 365 中，Delve 使用_趋势_洞察力来帮助用户发现目前最感兴趣的文档。 请参见图 1。
 
 通过编程的方式，可以使用见解 API 中的[热门](/graph/api/resources/insights-trending?view=graph-rest-1.0)实体为应用客户提供类似体验。 使用****“热门”实体可连接到最近热门或与用户相关的文档。 [列出热门文档](/graph/api/insights-list-trending?view=graph-rest-1.0)将返回存储在 OneDrive 或 SharePoint 团队网站上的文件，并参照这些文件的重要程度来对其排序。 
 
-**图 1. Office 365 中的 Delve 为用户显示热门文档**
+**图1。Microsoft 365 中的 Delve 显示用户的热门文档**
 
-![Office 365 中的 Delve 为用户显示热门文档的屏幕截图](images/delve-concept.png)
+![Microsoft 365 中的 Delve 的屏幕截图，显示用户的热门文档](images/delve-concept.png)
 
 ### <a name="allow-users-to-collaborate-and-get-back-to-work"></a>允许用户进行协作和恢复工作
 
-新的 Office 365 人员卡片融入了“使用”__ 和__“共享”见解，以连接人员和知识单元之间的点。 人员卡片将标识和显示有关人员的相关文档。 用户可以在整个套件内查看人员卡片（例如，在 Outlook 网页版中）。 请参见图 2。
+新的 Microsoft 365 人员卡可进入_使用_的和_共享_的见解，以连接人员和知识单元之间的数据点。 人员卡片将标识和显示有关人员的相关文档。 用户可以在整个套件内查看人员卡片（例如，在 Outlook 网页版中）。 请参见图 2。
 
-见解 API 提供与[使用](/graph/api/resources/insights-used?view=graph-rest-1.0)和[共享](/graph/api/resources/insights-shared?view=graph-rest-1.0)实体类似的功能。 它们返回用户最近最常查看或使用的内容，或同事最近在 Office 365 中与用户共享的内容。
+见解 API 提供与[使用](/graph/api/resources/insights-used?view=graph-rest-1.0)和[共享](/graph/api/resources/insights-shared?view=graph-rest-1.0)实体类似的功能。 它们返回用户最近查看或使用的内容，或与最近在 Microsoft 365 中与用户共享的同事。
 
 **图 2. Outlook 网页版显示用户的人员卡片**
 
@@ -98,7 +97,11 @@ GET /me/people/?$search="topic:beetle"
 
 ## <a name="why-integrate-with-the-profile-api-preview"></a>为什么要与配置文件 API（预览版）集成？
 
-[配置文件](/graph/api/resources/profile?view=graph-rest-beta) API 表示下一代建模并代表 Microsoft 365 服务中的人脉。 配置文件数据可与人脉数据一起使用，以基于 Microsoft Graph 生成自定义体验。 
+[配置文件](/graph/api/resources/profile?view=graph-rest-beta) API 表示下一代建模并代表 Microsoft 365 服务中的人脉。 配置文件数据可与人脉数据一起使用，以基于 Microsoft Graph 生成自定义体验。
+
+## <a name="why-configure-profilecardproperties-in-your-organization-preview"></a>为什么要在组织中配置 profileCardProperties （预览）？
+
+通过[profileCardProperties](/graph/api/resources/profileCardProperties?view=graph-rest-beta) API，管理员可以自定义有关其在 Microsoft 365 人员体验中的组织表面信息的方式。  
 
 ## <a name="api-reference"></a>API 参考
 

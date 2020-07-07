@@ -9502,6 +9502,11 @@ items:
                     href: api/organization-get.md
                   - name: 更新组织详细信息
                     href: api/organization-update.md
+              - name: 组织设置
+                href: resources/organizationSettings.md
+                items:
+                  - name: 获取组织设置
+                    href: api/organizationSettings-get.md
               - name: 组织联系人
                 href: resources/orgcontact.md
                 items:
@@ -10700,6 +10705,20 @@ items:
                     href: api/personwebsite-update.md
                   - name: 删除
                     href: api/personwebsite-delete.md
+          - name: 配置文件卡片自定义（预览）
+            items:
+              - name: Profile 卡片属性
+                href: resources/profilecardproperty.md
+              - name: 列表
+                href: api/organizationsettings-list-profilecardproperties.md
+              - name: 创建
+                href: api/organizationsettings-post-profilecardproperties.md
+              - name: 获取
+                href: api/profilecardproperty-get.md
+              - name: 更新
+                href: api/profilecardproperty-update.md
+              - name: 删除
+                href: api/profilecardproperty-delete.md
           - name: 见解
             href: resources/officegraphinsights.md
             items:
@@ -11383,6 +11402,14 @@ items:
                 href: api/team-update.md
               - name: 删除团队
                 href: api/group-delete.md
+              - name: 列出成员
+                href: api/team-list-members.md
+              - name: 添加成员
+                href: api/team-post-members.md
+              - name: 删除成员
+                href: api/team-delete-members.md
+              - name: 更新成员
+                href: api/conversationmember-update.md
               - name: 存档团队
                 href: api/team-archive.md
               - name: 解档团队

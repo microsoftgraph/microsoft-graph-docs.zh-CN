@@ -5,12 +5,11 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: efe599d9a1b4f7a928f9b0ae7dabfc845683af30
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: MT
+ms.openlocfilehash: 73f89ac24bedad9cfd632674040b288aac151f23
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491276"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050741"
 ---
 # <a name="get-conversationmember"></a>获取 conversationMember
 
@@ -22,13 +21,13 @@ ms.locfileid: "44491276"
 
 ## <a name="permissions"></a>权限
 
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型|权限（从最低特权到最高特权）|
 |---------|-------------|
 |委派（工作或学校帐户）| 对于**用户**或**聊天**资源： User.readbasic.all、聊天、阅读和读写<br/><br/>对于**信道**资源： ChannelMember、ChannelMember、group. All、group. all、all、all、all、all 和 all。 |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application| 对于**用户**或**聊天**资源： user.readbasic.all、聊天室、全部聊天。所有<br/><br/>对于**信道**Resource： ChannelMember、ChannelMember、group、group、group、group、all、group。 all，all，all，all，all，all，all |
+|应用程序| 对于**用户**或**聊天**资源： user.readbasic.all、聊天室、全部聊天。所有<br/><br/>对于**信道**Resource： ChannelMember、ChannelMember、group、group、group、group、all、group。 all，all，all，all，all，all，all |
 
 > **注意**：标记为 * 的权限使用[特定于资源的同意](https://aka.ms/teams-rsc)。
 
@@ -51,7 +50,7 @@ GET /teams/{id}/channels/{id}/members/{id}
 
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}。必需。  |
+| Authorization  | Bearer {token}. Required.  |
 
 ## <a name="request-body"></a>请求正文
 
@@ -93,10 +92,11 @@ GET https://graph.microsoft.com/beta/chats/{id}/members/{id}
 
 下面是一个响应示例。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "get_conversation_member",
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
 ```http

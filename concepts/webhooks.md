@@ -5,12 +5,11 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: bfd2ddff5fe87ccabd2c0d7a935ba429c67bda09
-ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
-ms.translationtype: MT
+ms.openlocfilehash: 47c4357a59b02322769433fb82d0e9fe02fc1aae
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/04/2020
-ms.locfileid: "45038504"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050923"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -43,10 +42,11 @@ The Microsoft Graph API uses a webhook mechanism to deliver change notifications
 - 安全[警报][]
 - 团队[callRecord][]
 - Teams [chatMessage][]（预览）
+- 工作组[状态][]（预览）
 
 可以创建对特定 Outlook 文件夹的订阅，例如收件箱：`me/mailFolders('inbox')/messages`
 
-或者顶级资源：、、、、 `/me/messages` `/me/contacts` `/me/events` `users` `groups` 或`/communications/callRecords`
+或者顶级资源：、、、、 `/me/messages` 、 `/me/contacts` `/me/events` `users` `groups` `/communications/callRecords` 或`/communications/presences`
 
 或以下特定资源实例的订阅：`users/{id}`、`groups/{id}`、`groups/{id}/conversations`
 
@@ -99,7 +99,7 @@ The Microsoft Graph API uses a webhook mechanism to deliver change notifications
 
 ### <a name="creating-a-subscription"></a>创建订阅
 
-Creating a subscription is the first step to start receiving change notifications for a resource. The subscription process is as follows:
+创建订阅是开始接收对资源的更改通知的第一步。 订阅流程如下所示：
 
 1. 客户端发送特定资源的订阅 (POST) 请求。
 
@@ -274,4 +274,5 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 [用户]: /graph/api/resources/user?view=graph-rest-1.0
 [警报]: /graph/api/resources/alert?view=graph-rest-1.0
 [callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-1.0
+[状态]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage

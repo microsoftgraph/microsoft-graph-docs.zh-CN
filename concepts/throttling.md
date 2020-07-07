@@ -4,12 +4,11 @@ description: Throttling limits the number of concurrent calls to a service to pr
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 8cf528675b0cdde108063f3fd44acdfdff418941
-ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
-ms.translationtype: MT
+ms.openlocfilehash: 5561e8a28440f05adcd074b6cd7d4d61edbb2852
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/04/2020
-ms.locfileid: "45038532"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050783"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -89,6 +88,8 @@ When you implement error handling, use the HTTP error code 429 to detect throttl
 > [!NOTE]
 > 此处所述的具体限制可能会发生更改。
 
+> **注意：** 在本节中，术语 "*租户*" 是指安装了应用程序的 Microsoft 365 组织。 此租户可以与创建应用程序的位置相同，在单个租户应用程序中也可以是不同的，如果是[多租户应用程序](/azure/active-directory/develop/setup-multi-tenant-app)，则也可以是不同的。
+
 ### <a name="outlook-service-limits"></a>Outlook 服务限制
 
 将评估每个应用 ID 和邮箱组合的 Outlook 服务限制。 换言之，上述限制适用于访问特定邮箱（用户或组）的特定应用。 如果一个邮箱的应用程序超过限制，不会影响访问另一个邮箱的功能。 以下限制适用于公共云以及[国内云部署](/graph/deployments)。
@@ -140,6 +141,14 @@ Outlook 服务提供以下资源。
 - [outlookCategory](/graph/api/resources/outlookcategory)
 - [attachment](/graph/api/resources/attachment)
 
+### <a name="cloud-communication-service-limits"></a>云通信服务限制
+
+| 资源      | 每个租户每个应用程序的限制    |
+| -------------- | ------------ |
+| [呼叫](/graph/api/resources/call) | 10000呼叫/月和100并发呼叫   |
+| [会议信息](/graph/api/resources/meetinginfo)   | 每月2000会议/用户 |
+| [状态](/graph/api/resources/presence)（预览）   | 2 rps |
+
 ### <a name="microsoft-teams-service-limits"></a>Microsoft Teams 服务限制
 
 限制表示为每秒请求数 (rps)。
@@ -157,6 +166,9 @@ Outlook 服务提供以下资源。
 | GET 1:1/group chat message  | 3 rps | 30 rps |
 | POST channel message | 2 rps | 20 rps |
 | POST 1:1/group chat message | 2 rps | 20 rps |
+| 获取 ```{team-id}``` 此路径下的/teams//schedule 和所有 api | 60 rps | 600 rps |
+| POST、PATCH、PUT/teams/ ```{team-id}``` /schedule 和此路径下的所有 api | 30 rps | 300 rps |
+| 删除 ```{team-id}``` 此路径下的/teams//schedule 和所有 api | 15 rps | 150 rps |
 
 对于给定团队或频道，每个应用最多可发布 4 个请求。
 每个应用每天最多可以将 3000 条消息发送到给定的频道。
