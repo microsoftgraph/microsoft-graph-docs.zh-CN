@@ -1,69 +1,69 @@
 ---
 title: 更新 conversationMember
-description: 在频道中更新 conversationMember 的角色。
+description: 在团队或频道中更新 conversationMember 的角色。
 author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8046572b62374407bc077fffa40e6ab692fefb75
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: MT
+ms.openlocfilehash: c9a96c82d2e76a7fed69acf5cf6378dcf19c3845
+ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491299"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45050762"
 ---
-# <a name="update-conversationmember"></a><span data-ttu-id="1a30a-103">更新 conversationMember</span><span class="sxs-lookup"><span data-stu-id="1a30a-103">Update conversationMember</span></span>
+# <a name="update-conversationmember"></a><span data-ttu-id="581bf-103">更新 conversationMember</span><span class="sxs-lookup"><span data-stu-id="581bf-103">Update conversationMember</span></span>
 
-<span data-ttu-id="1a30a-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1a30a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="581bf-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="581bf-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1a30a-105">在[频道](../resources/channel.md)中更新[conversationMember](../resources/conversationmember.md)的角色。</span><span class="sxs-lookup"><span data-stu-id="1a30a-105">Update the role of a [conversationMember](../resources/conversationmember.md) in a [channel](../resources/channel.md).</span></span>
+<span data-ttu-id="581bf-105">在[团队](../resources/team.md)中更新[conversationMember](../resources/conversationmember.md)的角色。</span><span class="sxs-lookup"><span data-stu-id="581bf-105">Update the role of a [conversationMember](../resources/conversationmember.md) in a [team](../resources/team.md).</span></span>
+<span data-ttu-id="581bf-106">或[频道](../resources/channel.md)。</span><span class="sxs-lookup"><span data-stu-id="581bf-106">or [channel](../resources/channel.md).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="1a30a-106">此操作仅在具有[channelMembershipType](../resources/enums.md#channelmembershiptype-values)的通道上受支持 `private` 。</span><span class="sxs-lookup"><span data-stu-id="1a30a-106">This operation is only supported on channels with a [channelMembershipType](../resources/enums.md#channelmembershiptype-values) of `private`.</span></span> <span data-ttu-id="1a30a-107">与任何其他[channelMembershipType](../resources/enums.md#channelmembershiptype-values)的调用将返回 `400 Bad Request` 响应。</span><span class="sxs-lookup"><span data-stu-id="1a30a-107">Calls with any other [channelMembershipType](../resources/enums.md#channelmembershiptype-values) will return a `400 Bad Request` response.</span></span>
+> <span data-ttu-id="581bf-107">在通道上，此操作仅在具有[channelMembershipType](../resources/enums.md#channelmembershiptype-values)的通道上受支持 `private` 。</span><span class="sxs-lookup"><span data-stu-id="581bf-107">On channels, this operation is only supported on channels with a [channelMembershipType](../resources/enums.md#channelmembershiptype-values) of `private`.</span></span> <span data-ttu-id="581bf-108">与任何其他[channelMembershipType](../resources/enums.md#channelmembershiptype-values)的调用将返回 `400 Bad Request` 响应。</span><span class="sxs-lookup"><span data-stu-id="581bf-108">Calls with any other [channelMembershipType](../resources/enums.md#channelmembershiptype-values) will return a `400 Bad Request` response.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1a30a-108">Permissions</span><span class="sxs-lookup"><span data-stu-id="1a30a-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="581bf-109">权限</span><span class="sxs-lookup"><span data-stu-id="581bf-109">Permissions</span></span>
 
-<span data-ttu-id="1a30a-p102">需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1a30a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="581bf-110">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="581bf-110">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="581bf-111">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="581bf-111">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1a30a-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="1a30a-111">Permission Type</span></span>|<span data-ttu-id="1a30a-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1a30a-112">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="581bf-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="581bf-112">Permission Type</span></span>|<span data-ttu-id="581bf-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="581bf-113">Permissions (from least to most privileged)</span></span>|
 |---------|-------------|
-|<span data-ttu-id="1a30a-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1a30a-113">Delegated (work or school account)</span></span>| <span data-ttu-id="1a30a-114">ChannelMember、Group 写全部、所有的 ReadWrite。 All</span><span class="sxs-lookup"><span data-stu-id="1a30a-114">ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
-|<span data-ttu-id="1a30a-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1a30a-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1a30a-116">不支持</span><span class="sxs-lookup"><span data-stu-id="1a30a-116">Not supported</span></span>|
-|<span data-ttu-id="1a30a-117">Application</span><span class="sxs-lookup"><span data-stu-id="1a30a-117">Application</span></span>| <span data-ttu-id="1a30a-118">ChannelMember、Group 写全部、所有的 ReadWrite。 All</span><span class="sxs-lookup"><span data-stu-id="1a30a-118">ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="581bf-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="581bf-114">Delegated (work or school account)</span></span>| <span data-ttu-id="581bf-115">在团队中： TeamMember。</span><span class="sxs-lookup"><span data-stu-id="581bf-115">In teams: TeamMember.ReadWrite.All.</span></span> <span data-ttu-id="581bf-116">在信道中： ChannelMember、Group、all、All 和 All。</span><span class="sxs-lookup"><span data-stu-id="581bf-116">In channels: ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All.</span></span> |
+|<span data-ttu-id="581bf-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="581bf-117">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="581bf-118">不支持</span><span class="sxs-lookup"><span data-stu-id="581bf-118">Not supported</span></span>|
+|<span data-ttu-id="581bf-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="581bf-119">Application</span></span>| <span data-ttu-id="581bf-120">在团队中： TeamMember。</span><span class="sxs-lookup"><span data-stu-id="581bf-120">In teams: TeamMember.ReadWrite.All.</span></span> <span data-ttu-id="581bf-121">在信道中： ChannelMember、Group、all、All 和 All。</span><span class="sxs-lookup"><span data-stu-id="581bf-121">In channels:  ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1a30a-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1a30a-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="581bf-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="581bf-122">HTTP request</span></span>
 <!-- { "blockType": "ignored"} -->
 ```http
 PATCH /teams/{id}/channels/{id}/members/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1a30a-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="1a30a-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="581bf-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="581bf-123">Request headers</span></span>
 
-| <span data-ttu-id="1a30a-121">标头</span><span class="sxs-lookup"><span data-stu-id="1a30a-121">Header</span></span>       | <span data-ttu-id="1a30a-122">值</span><span class="sxs-lookup"><span data-stu-id="1a30a-122">Value</span></span> |
+| <span data-ttu-id="581bf-124">标头</span><span class="sxs-lookup"><span data-stu-id="581bf-124">Header</span></span>       | <span data-ttu-id="581bf-125">值</span><span class="sxs-lookup"><span data-stu-id="581bf-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="1a30a-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="1a30a-123">Authorization</span></span>  | <span data-ttu-id="1a30a-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="1a30a-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="581bf-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="581bf-126">Authorization</span></span>  | <span data-ttu-id="581bf-127">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="581bf-127">Bearer {token}.</span></span> <span data-ttu-id="581bf-128">Required.</span><span class="sxs-lookup"><span data-stu-id="581bf-128">Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="1a30a-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="1a30a-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="581bf-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="581bf-129">Request body</span></span>
 
-<span data-ttu-id="1a30a-127">在请求正文中，提供要更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="1a30a-127">In the request body, supply the values for the relevant fields to update.</span></span> <span data-ttu-id="1a30a-128">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="1a30a-128">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="1a30a-129">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="1a30a-129">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="581bf-130">在请求正文中，提供要更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="581bf-130">In the request body, supply the values for the relevant fields to update.</span></span> <span data-ttu-id="581bf-131">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="581bf-131">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="581bf-132">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="581bf-132">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="1a30a-130">属性</span><span class="sxs-lookup"><span data-stu-id="1a30a-130">Property</span></span>   | <span data-ttu-id="1a30a-131">类型</span><span class="sxs-lookup"><span data-stu-id="1a30a-131">Type</span></span> |<span data-ttu-id="1a30a-132">Description</span><span class="sxs-lookup"><span data-stu-id="1a30a-132">Description</span></span>|
+| <span data-ttu-id="581bf-133">属性</span><span class="sxs-lookup"><span data-stu-id="581bf-133">Property</span></span>   | <span data-ttu-id="581bf-134">类型</span><span class="sxs-lookup"><span data-stu-id="581bf-134">Type</span></span> |<span data-ttu-id="581bf-135">说明</span><span class="sxs-lookup"><span data-stu-id="581bf-135">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1a30a-133">角色</span><span class="sxs-lookup"><span data-stu-id="1a30a-133">roles</span></span>|<span data-ttu-id="1a30a-134">string 集合</span><span class="sxs-lookup"><span data-stu-id="1a30a-134">string collection</span></span>|<span data-ttu-id="1a30a-135">该用户的角色。</span><span class="sxs-lookup"><span data-stu-id="1a30a-135">The roles for that user.</span></span> <span data-ttu-id="1a30a-136">必须为 "owner" 或空。</span><span class="sxs-lookup"><span data-stu-id="1a30a-136">Must be "owner" or empty.</span></span> <span data-ttu-id="1a30a-137">来宾用户必须始终拥有角色 "来宾"，并且无法更改。</span><span class="sxs-lookup"><span data-stu-id="1a30a-137">Guest users must always have role "guest" and cannot change.</span></span> |
+|<span data-ttu-id="581bf-136">角色</span><span class="sxs-lookup"><span data-stu-id="581bf-136">roles</span></span>|<span data-ttu-id="581bf-137">string 集合</span><span class="sxs-lookup"><span data-stu-id="581bf-137">string collection</span></span>|<span data-ttu-id="581bf-138">该用户的角色。</span><span class="sxs-lookup"><span data-stu-id="581bf-138">The roles for that user.</span></span> <span data-ttu-id="581bf-139">必须为 "owner" 或空。</span><span class="sxs-lookup"><span data-stu-id="581bf-139">Must be "owner" or empty.</span></span> <span data-ttu-id="581bf-140">来宾用户必须始终拥有角色 "来宾"，并且无法更改。</span><span class="sxs-lookup"><span data-stu-id="581bf-140">Guest users must always have role "guest" and cannot change.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="1a30a-138">响应</span><span class="sxs-lookup"><span data-stu-id="1a30a-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="581bf-141">响应</span><span class="sxs-lookup"><span data-stu-id="581bf-141">Response</span></span>
 
-<span data-ttu-id="1a30a-139">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [conversationMember](../resources/conversationmember.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="1a30a-139">If successful, this method returns a `200 OK` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.</span></span>
+<span data-ttu-id="581bf-142">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [conversationMember](../resources/conversationmember.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="581bf-142">If successful, this method returns a `200 OK` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1a30a-140">示例</span><span class="sxs-lookup"><span data-stu-id="1a30a-140">Example</span></span>
+## <a name="example"></a><span data-ttu-id="581bf-143">示例</span><span class="sxs-lookup"><span data-stu-id="581bf-143">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="1a30a-141">请求</span><span class="sxs-lookup"><span data-stu-id="1a30a-141">Request</span></span>
+### <a name="request"></a><span data-ttu-id="581bf-144">请求</span><span class="sxs-lookup"><span data-stu-id="581bf-144">Request</span></span>
 
-<span data-ttu-id="1a30a-142">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="1a30a-142">Here is an example of the request.</span></span>
+<span data-ttu-id="581bf-145">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="581bf-145">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="1a30a-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="1a30a-143">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="581bf-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="581bf-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_conversation_member"
@@ -77,26 +77,26 @@ content-length: 26
   "roles": ["owner"]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="1a30a-144">C#</span><span class="sxs-lookup"><span data-stu-id="1a30a-144">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="581bf-147">C#</span><span class="sxs-lookup"><span data-stu-id="581bf-147">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-conversation-member-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1a30a-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1a30a-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="581bf-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="581bf-148">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-conversation-member-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1a30a-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1a30a-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="581bf-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="581bf-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-conversation-member-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="1a30a-147">响应</span><span class="sxs-lookup"><span data-stu-id="1a30a-147">Response</span></span>
+### <a name="response"></a><span data-ttu-id="581bf-150">响应</span><span class="sxs-lookup"><span data-stu-id="581bf-150">Response</span></span>
 
-<span data-ttu-id="1a30a-148">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="1a30a-148">Here is an example of the response.</span></span>
+<span data-ttu-id="581bf-151">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="581bf-151">Here is an example of the response.</span></span>
 
-><span data-ttu-id="1a30a-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="1a30a-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="581bf-152">**Note:** The response object shown here might be shortened for readability.</span><span class="sxs-lookup"><span data-stu-id="581bf-152">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="581bf-153">All the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="581bf-153">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
