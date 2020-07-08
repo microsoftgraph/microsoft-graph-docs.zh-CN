@@ -5,15 +5,20 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 5699fe0c4c3f089481cf09c930546dfd78415eb6
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: e12b9f2b8943832b6121e3830e369e48bef5b5ac
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050727"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45081247"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Microsoft Graph 中的人员和工作场所智能概述
 
-Microsoft 365 云服务的亿万用户组成了 Microsoft Graph 的核心部分。 用户的数据通过 Microsoft Graph 提供的服务得到精心的管理、保护和适当的授权，以提升企业生产力和创造力。 因为在 Microsoft Graph 中有大量的用户数据，所以派生自用户社交交互的数据将尤为受到关注。 它可以对回答类似以下问题提供智能见解：
+Microsoft 365 云服务的亿万用户组成了 Microsoft Graph 的核心部分。 用户的数据通过 Microsoft Graph 提供的服务得到精心的管理、保护和适当的授权，以提升企业生产力和创造力。 
+
+通过配置文件 API，您可以作为应用程序开发人员、模型和表示 Microsoft 365 服务中的人员，配置文件卡片 API 可让管理员控制在组织中的用户配置文件卡片上显示的信息。
+
+因为在 Microsoft Graph 中有大量的用户数据，所以派生自用户社交交互的数据将尤为受到关注。 它可以对回答类似以下问题提供智能见解：
 
 - “此用户就此主题的信息应与谁联系？”
 - “此人最感兴趣的文档有哪些？”
@@ -58,6 +63,13 @@ GET /me/people/?$search="topic:beetle"
 
 在主题数据索引中进行的模糊搜索返回了表示甲壳虫昆虫、标志性大众甲壳虫汽车、披头士乐队和其他定义的实例。
 
+## <a name="why-integrate-with-the-profile-api-preview"></a>为什么要与配置文件 API（预览版）集成？
+
+[配置文件](/graph/api/resources/profile) API 表示下一代建模并代表 Microsoft 365 服务中的人脉。 配置文件数据可与人脉数据一起使用，以基于 Microsoft Graph 生成自定义体验。
+
+## <a name="why-configure-profile-cards-in-your-organization-preview"></a>为什么要在组织中配置配置文件卡片（预览）？
+
+配置文件卡允许组织中的用户查看彼此相关的信息，例如其姓名和联系人信息。 管理员可以使用[配置文件卡片](/graph/api/resources/profilecardproperty)API 自定义在 Microsoft 365 人员体验中有关组织表面信息的方式。
 
 ## <a name="why-integrate-with-document-based-insights"></a>为什么与基于文档的见解集成？
 
@@ -94,27 +106,20 @@ GET /me/people/?$search="topic:beetle"
 [MyAnalytics](https://docs.microsoft.com/workplace-analytics/myanalytics/index) 提供了有关用户如何花费自己时间，以及用户与谁一起花费时间的见解。 此类数据可以帮助用户计划一天的日程安排，深入了解自己的不同工作模式，并帮助用户平衡工作和生活。
 
 借助分析 API，可以同步或集成用户分析数据与自定义第三方应用，以支持各种有助于提升用户工作效率和协作的方案。 例如，可以将 MyAnalytics 数据与移动设备活动集成，以帮助用户在一个应用中跟踪自己的所有工作和社交活动，并计划一天的日程安排。
-
-## <a name="why-integrate-with-the-profile-api-preview"></a>为什么要与配置文件 API（预览版）集成？
-
-[配置文件](/graph/api/resources/profile?view=graph-rest-beta) API 表示下一代建模并代表 Microsoft 365 服务中的人脉。 配置文件数据可与人脉数据一起使用，以基于 Microsoft Graph 生成自定义体验。
-
-## <a name="why-configure-profilecardproperties-in-your-organization-preview"></a>为什么要在组织中配置 profileCardProperties （预览）？
-
-通过[profileCardProperties](/graph/api/resources/profileCardProperties?view=graph-rest-beta) API，管理员可以自定义有关其在 Microsoft 365 人员体验中的组织表面信息的方式。  
-
+ 
 ## <a name="api-reference"></a>API 参考
 
 在查找这些服务的 API 参考？
 
-- [人脉 API](/graph/api/resources/social-overview?view=graph-rest-1.0)
-- [分析 API（预览版）](/graph/api/resources/useranalytics?view=graph-rest-beta)
-- [配置文件 API（预览版）](/graph/api/resources/profile?view=graph-rest-beta)
+- [使用 Microsoft Graph API 在应用中集成人员和工作区智能](/graph/api/resources/social-overview)
+- 人员 API[人员](/graph/api/resources/person)资源
+- [配置文件（预览）](/graph/api/resources/profile)资源
+- [配置文件卡片属性（预览）](/graph/api/resources/profilecardproperty)资源
+- [见解 API](/graph/api/resources/officegraphinsights)
+- [分析 API（预览版）](/graph/api/resources/useranalytics)
 
 ## <a name="next-steps"></a>后续步骤
 
 * 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中使用你自己的文件试用人员、见解和分析 API。 登录并选择左侧列中的“显示更多示例”****。 使用菜单打开“人员”**** 和“见解”**** 和“分析”****。
-* 了解有关[人员 API](people-example.md) 和[人员](/graph/api/resources/person?view=graph-rest-1.0)实体的详细信息。
-* 若要开始使用见解 API，请参阅 [Office Graph 数据解析](/graph/api/resources/officegraphinsights?view=graph-rest-1.0)。
-* 查找有关[分析 API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-balance-work-and-life) 的详细信息。
-* 查找有关[配置文件 API](/graph/api/resources/profile?view=graph-rest-beta) 的详细信息。
+* 查找有关[人员 API](people-example.md)的详细信息。
+* 请参阅如何[自定义配置文件卡片](add-properties-profilecard.md)。

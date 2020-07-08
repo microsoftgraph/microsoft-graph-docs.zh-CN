@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: abedc167afb868048cd89fbd4b723804777d03e3
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: bb61f7863f9ff8406bb39c796e9f592ab375f165
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44864215"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080854"
 ---
 # <a name="printerdefaults-resource-type"></a>printerDefaults 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "44864215"
 代表打印机的默认设置。 检查打印机的[功能](../api/printer-getcapabilities.md)，以查看它支持的所有值。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |copiesPerJob|Int32|每个作业打印的默认副本数。|
 |contentType|String|处理文档时使用的默认内容（MIME）类型。|
@@ -46,8 +46,8 @@ ms.locfileid: "44864215"
 |:---|:---|:---|
 |clockwiseFromTopLeft|0|从左上角开始沿顺时针方向的网格排列页面。|
 |counterClockwiseFromTopLeft|1 |在从左上角开始的逆时针网格中排列页面。|
-|counterClockwiseFromTopRight|双面|从右上部开始以逆时针网格线排列页面。|
-|clockwiseFromTopRight|第三章|从右上部开始沿顺时针网格排列页面。|
+|counterClockwiseFromTopRight|2 |从右上部开始以逆时针网格线排列页面。|
+|clockwiseFromTopRight|3 |从右上部开始沿顺时针网格排列页面。|
 |counterClockwiseFromBottomLeft|4 |从左下角开始以逆时针网格线排列页面。|
 |clockwiseFromBottomLeft|5 |从左下角开始沿顺时针方向的网格排列页面。|
 |counterClockwiseFromBottomRight|6 |从右下角开始以逆时针网格线排列页面。|
@@ -55,17 +55,17 @@ ms.locfileid: "44864215"
 
 ### <a name="printduplexmode-values"></a>printDuplexMode 值
 
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |flipOnLongEdge|0|打印机将双面打印，并且将沿长边翻转文档。|
 |flipOnShortEdge|1 |打印机将双面打印，并且将沿短边翻转文档。|
-|oneSided|双面|打印机将单面打印。|
+|oneSided|2 |打印机将单面打印。|
 
 ### <a name="printfinishing-values"></a>printFinishing 值
 
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
-|无|第三章|无 finishings。 包括此值等效于提供空的 finishings 集合。|
+|无|3 |无 finishings。 包括此值等效于提供空的 finishings 集合。|
 |侧|4 |使用打印机的默认装订配置对文档进行装订。|
 |穿透|5 |打孔使用打印机的默认打孔配置来打孔文档。|
 |包装盒|6 |将封面应用于文档。|
@@ -84,60 +84,43 @@ ms.locfileid: "44864215"
 |stapleDualTop|29|将文档沿上边缘两次装订。|
 |stapleDualRight|30|将文档沿右边缘两次装订。|
 |stapleDualBottom|31|将文档沿下边缘两次装订。|
+|向 unknownfuturevalue|32|Evolvable 枚举 sentinel 值。 请勿使用。|
 
 ## <a name="printorientation-values"></a>printOrientation 值
 
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
-|纵|第三章|打印机将在 "纵向" 方向上打印为印记。|
+|纵|3 |打印机将在 "纵向" 方向上打印为印记。|
 |现状|4 |打印机将在 "横向" 方向上打印为印记。|
 |reverseLandscape|5 |打印机将在 "翻转横向" 方向上打印为印记。|
 |reversePortrait|6 |打印机将在 "反转纵向" 方向上打印为印记。|
 
-### <a name="printmediatype-values"></a>printMediaType 值
-
-|成员|值|Description|
-|:---|:---|:---|
-|设计|0|一张标准纸张。|
-|透明度|1 |与投影机投影仪配合使用的透明胶片。|
-|信封|双面|信封。|
-|envelopePlain|第三章|纯信封。|
-|保持|4 |连续一卷纸。|
-|闪屏|5 |数字屏幕。|
-|screenPaged|6 |支持分页的数字屏幕。|
-|continuousLong|7 |较长的连续纸张。|
-|continuousShort|8 |简短的连续纸。|
-|envelopeWindow|9 |带有透明窗口裁剪的信封。|
-|multiPartForm|10  |多部分 perforated 窗体。|
-|层|11x17|多层中型。|
-|标题|12 |带有标签切出的工作表。|
-
 ### <a name="printquality-values"></a>printQuality 值
 
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|
 |降低|0|打印机将使用低（通常称为 "草稿"）质量打印作业。|
 |中等|1 |打印机将使用 medim （通常称为 "普通"）质量打印作业。|
-|高效|双面|打印机将使用 "高" （通常称为 "最佳" 或 "精细"）质量打印作业。|
-|向 unknownfuturevalue|第三章|Evolvable 枚举 sentinel 值。 请勿使用。|
+|高效|2 |打印机将使用 "高" （通常称为 "最佳" 或 "精细"）质量打印作业。|
+|向 unknownfuturevalue|3 |Evolvable 枚举 sentinel 值。 请勿使用。|
 
 ### <a name="printcolormode-values"></a>printColorMode 值
 
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |blackAndWhite|0|黑色和白色（仅使用黑色标记材料。）|
 |灰度|1 |灰度（可能使用某些颜色标记材料。）|
-|颜色|双面|颜色（使用标记材料的任意组合来创建颜色印象）。|
-|自动|第三章|让打印机决定要使用哪种颜色模式。|
+|颜色|2 |颜色（使用标记材料的任意组合来创建颜色印象）。|
+|自动|3 |让打印机决定要使用哪种颜色模式。|
 
 ### <a name="printscaling-values"></a>printScaling 值
 
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |自动|0|如果文档大于所请求的媒体，且边距不为零，则打印机会缩放**文档，如 printScaling。** 否则，打印机将使用**填充**printScaling 对文档进行缩放。 如果文档小于请求的媒体，则使用 "无" printScaling。|
 |shrinkToFit|1 |如果文档比请求的媒体大，则打印机会缩放文档，**如 printScaling。** 否则，打印机会缩放文档，如**none** printScaling。|
-|fill|双面|打印机缩放文档以填充请求的媒体大小，并保留其纵横比，但可能会裁剪文档的某些部分。|
-|尺寸|第三章|打印机缩放文档以匹配请求媒体大小的可打印区域，并保留文档数据的纵横比而不裁剪文档。|
+|fill|2 |打印机缩放文档以填充请求的媒体大小，并保留其纵横比，但可能会裁剪文档的某些部分。|
+|尺寸|3 |打印机缩放文档以匹配请求媒体大小的可打印区域，并保留文档数据的纵横比而不裁剪文档。|
 |无|4 |打印机不会缩放文档以适应请求的媒体大小。 如果文档大于请求的媒体，打印机会居中并剪辑生成的输出。 如果文档小于请求的媒体，则打印机会将结果输出居中。|
 |向 unknownfuturevalue|5 |Evolvable 枚举 sentinel 值。 请勿使用。|
 

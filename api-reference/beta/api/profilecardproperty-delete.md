@@ -5,11 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c2dd6ef082167f40c173386f18be7760118a966f
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: 2dffcc667281d26fb64e44dd7cd45e8e0f1c313f
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45051034"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080688"
 ---
 # <a name="delete-profilecardproperty"></a>删除 profileCardProperty
 
@@ -58,6 +59,8 @@ If successful, this method returns a `204 No Content` response code. It does not
 ### <a name="request"></a>请求
 
 下面的示例演示如何从组织的配置文件卡片中删除名为 "Fax" 的属性。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_profilecardproperty"
@@ -66,6 +69,20 @@ If successful, this method returns a `204 No Content` response code. It does not
 ```http
 DELETE https://graph.microsoft.com/beta/organization/settings/profileCardProperties/fax
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-profilecardproperty-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-profilecardproperty-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-profilecardproperty-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

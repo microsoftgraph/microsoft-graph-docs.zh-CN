@@ -5,11 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1bbdb77ea7d9cd9d76f63198b449b4f03181bc62
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: 24fe1a2f4257475849ecb3c057843d7cd0661a21
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45051037"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080632"
 ---
 # <a name="create-profilecardproperty"></a>创建 profileCardProperty
 
@@ -19,7 +20,7 @@ ms.locfileid: "45051037"
 
 为组织创建新的[profileCardProperty](../resources/profilecardproperty.md) 。 新属性由其**directoryPropertyName**属性标识。
 
-有关向组织的配置文件卡片添加属性的详细信息，请参阅自定义配置文件卡片。
+有关向组织的配置文件卡片添加属性的详细信息，请参阅[自定义配置文件卡片](/graph/add-properties-profilecard)。
 
 ## <a name="permissions"></a>权限
 
@@ -61,6 +62,8 @@ POST https://graph.microsoft.com/beta/organization/settings/profileCardPropertie
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_profilecardproperty_from_organizationsettings"
@@ -85,6 +88,12 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-profilecardproperty-from-organizationsettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

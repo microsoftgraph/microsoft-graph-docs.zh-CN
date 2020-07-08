@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 064e1847c3f83e463d91dc63c5561637ae181fe7
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 421a169078122c9cf49a82179fcf4d666f2b5b8b
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897195"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45081310"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -61,12 +61,12 @@ ms.locfileid: "44897195"
 |[分配 homeRealmDiscoveryPolicy](../api/serviceprincipal-post-homerealmdiscoverypolicies.md)| [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) 集合| 向此对象分配 homeRealmDiscoveryPolicy。|
 |[列出 homeRealmDiscoveryPolicy](../api/serviceprincipal-list-homerealmdiscoverypolicies.md)| [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) 集合| 为此对象分配的 homeRealmDiscoveryPolicies。|
 |[删除 homeRealmDiscoveryPolicy](../api/serviceprincipal-delete-homerealmdiscoverypolicies.md)| [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) 集合| 从此对象中删除 homeRealmDiscoveryPolicy。|
-|[分配 tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合| 向此对象分配 tokenLifetimePolicy。|
-|[列出 tokenLifetimePolicies](../api/application-list-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合| 获取已分配至此对象的所有 tokenLifetimePolicies。|
-|[删除 tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合| 从此对象中删除 tokenLifetimePolicy。|
 |[分配 tokenIssuancePolicy](../api/application-post-tokenissuancepolicies.md)| [tokenIssuancePolicy](tokenissuancepolicy.md) 集合| 分配 tokenIssuancePolicy 至此对象。|
 |[列出 tokenIssuancePolicies](../api/application-list-tokenissuancepolicies.md)| [tokenIssuancePolicy](tokenissuancepolicy.md) 集合| 获取已分配至此对象的所有 tokenIssuancePolicies。|
 |[删除 tokenIssuancePolicy](../api/application-delete-tokenissuancepolicies.md)| [tokenIssuancePolicy](tokenissuancepolicy.md) 集合| 从此对象中删除 tokenIssuancePolicy。|
+|[分配 tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合| 向此对象分配 tokenLifetimePolicy。|
+|[列出 tokenLifetimePolicies](../api/application-list-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合| 获取已分配至此对象的所有 tokenLifetimePolicies。|
+|[删除 tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md)| [tokenLifetimePolicy](tokenlifetimepolicy.md) 集合| 从此对象中删除 tokenLifetimePolicy。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型 |说明|
@@ -91,7 +91,7 @@ ms.locfileid: "44897195"
 |oauth2PermissionScopes|[permissionScope](permissionScope.md)集合|由应用程序公开的委派权限。 有关详细信息，请参阅[application](application.md) entity **api**属性上的**oauth2PermissionScopes**属性。 不可为 null。|
 |notificationEmailAddresses|String collection|指定当活动证书接近到期日期时，Azure AD 发送通知的电子邮件地址的列表。 这仅适用于用于对 Azure AD 库应用程序颁发的 SAML 令牌进行签名的证书。|
 |passwordCredentials|[passwordCredential](passwordcredential.md) 集合|与服务帐户关联的密码凭据集合。 不可为 null。 |
-|preferredSingleSignOnMode|string|指定为此应用程序配置的单一登录模式。 Azure AD 使用首选的单一登录模式，从 Microsoft 365 或 Azure AD My 应用启动应用程序。 受支持的值为 password、saml、external 和 oidc。|
+|preferredSingleSignOnMode|字符串|指定为此应用程序配置的单一登录模式。 Azure AD 使用首选的单一登录模式，从 Microsoft 365 或 Azure AD My 应用启动应用程序。 受支持的值为 password、saml、external 和 oidc。|
 |replyUrls|String 集合|向其发送用户令牌以使用关联应用程序登录的 URL，或者为关联应用程序向其发送 OAuth 2.0 authorization 代码和访问令牌的重定向 URL。 不可为空。 |
 |samlSingleSignOnSettings|[samlSingleSignOnSettings](samlsinglesignonsettings.md)|与 saml 单一登录相关的设置的集合。|
 |servicePrincipalNames|String collection|包含从关联的[应用程序](application.md)复制的**identifiersUris**的列表。 可以向混合应用程序中添加其他值。 这些值可用于标识此应用在 Azure AD 中公开的权限。 For example,<ul><li>客户端应用可以指定基于此属性的值获取访问令牌的资源 URI，这是在 "aud" 声明中返回的 URI。</li></ul><br>需要多值属性筛选器表达式的 any 运算符。 不可为 null。|
@@ -103,13 +103,17 @@ ms.locfileid: "44897195"
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
 |appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|为此服务主体分配的主体（用户、组和服务主体）。 只读。|
-|appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|将此服务主体分配到的应用程序。 此为只读属性。 可为 NULL。|
+|appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|将此服务主体分配到的应用程序。 此为只读属性。 可为 Null。|
+|claimsMappingPolicies|[claimsMappingPolicy](claimsmappingpolicy.md) 集合|为此服务主体分配的 claimsMappingPolicies。|
 |createdObjects|[directoryObject](directoryobject.md) 集合|此服务主体所创建的目录对象。 此为只读属性。 可为 NULL。|
 |endpoints|[endpoint](endpoint.md) 集合|可用于发现的终结点。 Sharepoint 等服务使用特定于租户的 SharePoint 终结点填充此属性，其他应用程序可以在他们的体验中发现和使用这些终结点。|
+|homeRealmDiscoveryPolicies|[homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) 集合|为此服务主体分配的 homeRealmDiscoveryPolicies。|
 |memberOf|[directoryObject](directoryobject.md) collection|此服务主体所属的角色。 HTTP 方法：GET 只读。 可为 NULL。|
-|oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) 集合|授权此服务主体的委派权限授予代表登录用户访问 API 的权限。 此为只读属性。 可为 Null。|
+|oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) 集合|授权此服务主体的委派权限授予代表登录用户访问 API 的权限。 此为只读属性。 可为 NULL。|
 |ownedObjects|[directoryObject](directoryobject.md) 集合|此服务主体所拥有的目录对象。 只读。 可为空。|
 |所有者|[directoryObject](directoryobject.md) 集合|作为此 servicePrincipal 的所有者的 Directory 对象。 所有者是允许修改此对象的一组非管理员用户或 servicePrincipals。 此为只读属性。 可为 NULL。|
+|tokenIssuancePolicies|[tokenIssuancePolicy](tokenissuancepolicy.md) 集合|分配给此服务主体的 tokenIssuancePolicies。|
+|tokenLifetimePolicies|[tokenLifetimePolicy](tokenlifetimepolicy.md) 集合|为此服务主体分配的 tokenLifetimePolicies。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

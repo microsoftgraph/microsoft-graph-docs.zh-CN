@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 5e3e58c34481022ca23507b20af71c8ff0de4388
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: f67ba775906e9b21287d48fe1e1cc8bbfbacd89d
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44216964"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080644"
 ---
 # <a name="list-shares"></a>列出共享
 
@@ -21,7 +21,7 @@ ms.locfileid: "44216964"
 检索**printerShares**的列表。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
 
@@ -29,7 +29,7 @@ ms.locfileid: "44216964"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| 已阅读的用户。所有 |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -40,13 +40,15 @@ GET /print/shares
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
 
-### <a name="exceptions"></a>异常
+若要查看每个打印机共享的功能的列表，请包含可选的 `$select=capabilities` 查询参数。
+
+### <a name="exceptions"></a>Exceptions
 某些运算符不受支持： `$count` 、 `$orderby` 、 `$search` 。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | Bearer {token}。必需。 |
+| Authorization | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -80,7 +82,7 @@ GET https://graph.microsoft.com/beta/print/shares
 
 ##### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

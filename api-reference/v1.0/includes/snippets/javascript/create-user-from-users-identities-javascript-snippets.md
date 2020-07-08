@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c3b7bd43553331d4fa50ffaee916a48ab611464d
-ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
+ms.openlocfilehash: efeb30a66a0aa59d3a67588bae162b02d4d3eb28
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41558809"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45081331"
 ---
 ```javascript
 
@@ -35,7 +35,8 @@ const user = {
     }
   ],
   "passwordProfile" : {
-    password: "password-value"
+    password: "password-value",
+    forceChangePasswordNextSignIn: false
   },
   passwordPolicies: "DisablePasswordExpiration"
 };

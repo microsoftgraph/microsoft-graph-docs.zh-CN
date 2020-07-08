@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 644578bcf826499afad236e9021daffed6536917
-ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
+ms.openlocfilehash: 1d23654993f70abb26c475d262a225bc4183fc05
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41558811"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45081330"
 ---
 ```java
 
@@ -32,6 +32,7 @@ identitiesList.add(identities2);
 user.identities = identitiesList;
 PasswordProfile passwordProfile = new PasswordProfile();
 passwordProfile.password = "password-value";
+passwordProfile.forceChangePasswordNextSignIn = false;
 user.passwordProfile = passwordProfile;
 user.passwordPolicies = "DisablePasswordExpiration";
 

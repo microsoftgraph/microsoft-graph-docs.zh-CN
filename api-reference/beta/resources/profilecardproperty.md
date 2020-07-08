@@ -5,11 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 974e1e7af86133ef46c7d4360def1aef153ee3ec
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: a577d050ae55ec7b99cbceb23f27a6dd4ec2121f
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45051022"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45081359"
 ---
 # <a name="profilecardproperty-resource-type"></a>profileCardProperty 资源类型
 
@@ -19,7 +20,7 @@ ms.locfileid: "45051022"
 
 该属性可以是 Azure Active Directory （Azure AD）内置属性（例如 `Alias` 或 `UserPrincipalName` ），也可以是自定义属性。 对于自定义属性，管理员可以为 `en-us` 其组织中支持的语言定义默认的显示名称字符串和一组替代转换。
 
-有关向组织的配置文件卡片添加属性的详细信息，请参阅自定义配置文件卡片。
+有关向组织的配置文件卡片添加属性的详细信息，请参阅[自定义配置文件卡片](/graph/add-properties-profilecard)。
 
 ## <a name="methods"></a>方法
 

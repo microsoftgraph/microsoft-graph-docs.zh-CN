@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8fa0d1b5d3bfc39f21f90fce8fa458dfc9487900
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: d39a4f49c84e05a4f5e277f7c02ca995a2229c46
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181538"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45081716"
 ---
 ```csharp
 
@@ -13,6 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var unifiedRoleAssignmentMultiple = new UnifiedRoleAssignmentMultiple
 {
+    DisplayName = "My test role assignment 1",
     RoleDefinitionId = "c2cf284d-6c41-4e6b-afac-4b80928c9034",
     PrincipalIds = new List<String>()
     {

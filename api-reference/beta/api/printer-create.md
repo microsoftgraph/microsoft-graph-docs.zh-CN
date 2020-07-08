@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1b36a856a73d78b479270138868285a852d6d187
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: a0b64166b6d7c95f3ad4995321b50b2c4aaadda9
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45007147"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45081060"
 ---
 # <a name="printer-create"></a>打印机：创建
 
@@ -64,6 +64,8 @@ POST /print/printers/create
 ### <a name="request"></a>请求
 下面展示了示例请求。 若要获取有关创建所需证书签名请求（CSR）的帮助，请参阅[CSR 生成代码示例](https://docs.microsoft.com/universal-print/hardware/universal-print-oem-certificate-signing-request)。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_printer"
@@ -86,6 +88,12 @@ Content-length: 319
   "connectorId": null
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-printer-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 下面展示了示例响应。

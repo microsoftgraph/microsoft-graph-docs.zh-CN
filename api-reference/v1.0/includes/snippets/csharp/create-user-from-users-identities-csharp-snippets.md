@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 76326bd35c5f0013596c423a58942a92f8af9792
-ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
+ms.openlocfilehash: 238fdb9e5304562c887a1c8e8f0fdbbd1ee408c1
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41558810"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45081322"
 ---
 ```csharp
 
@@ -37,7 +37,8 @@ var user = new User
     },
     PasswordProfile = new PasswordProfile
     {
-        Password = "password-value"
+        Password = "password-value",
+        ForceChangePasswordNextSignIn = false
     },
     PasswordPolicies = "DisablePasswordExpiration"
 };
