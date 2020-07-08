@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 67d516e7d088dd5fbe9da04bd6d6405b0d4cd4f2
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: b6737ac447b4ce989d0e510432c60a4e97672495
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45008643"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45081724"
 ---
 ```csharp
 
@@ -45,7 +45,7 @@ var schema = new Schema
     }
 };
 
-await graphClient.Connections["contosohr"].Schema
+await graphClient.External.Connections["contosohr"].Schema
     .Request()
     .Header("Prefer","respond-async")
     .AddAsync(schema);

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: d4bdc750ea290416d6238f4e62c8a1ac96516735
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 325826ff5a628cb7bd714ad3283c147d71037976
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181535"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45081718"
 ---
 ```objc
 
@@ -17,6 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphUnifiedRoleAssignmentMultiple *unifiedRoleAssignmentMultiple = [[MSGraphUnifiedRoleAssignmentMultiple alloc] init];
+[unifiedRoleAssignmentMultiple setDisplayName:@"My test role assignment 1"];
 [unifiedRoleAssignmentMultiple setRoleDefinitionId:@"c2cf284d-6c41-4e6b-afac-4b80928c9034"];
 NSMutableArray *principalIdsList = [[NSMutableArray alloc] init];
 [principalIdsList addObject: @"f8ca5a85-489a-49a0-b555-0a6d81e56f0d"];
