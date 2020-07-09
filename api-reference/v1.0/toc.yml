@@ -689,6 +689,26 @@ items:
                     href: api/application-post-owners.md
                   - name: 删除
                     href: api/application-delete-owners.md
+              - name: 策略
+                items:
+                  - name: 令牌颁发策略
+                    href: resources/tokenissuancepolicy.md
+                    items:
+                      - name: Assign
+                        href: api/application-post-tokenissuancepolicies.md
+                      - name: 列表
+                        href: api/application-list-tokenissuancepolicies.md
+                      - name: 删除
+                        href: api/application-delete-tokenissuancepolicies.md
+                  - name: 令牌生存期策略
+                    href: resources/tokenlifetimepolicy.md
+                    items:
+                      - name: Assign
+                        href: api/application-post-tokenlifetimepolicies.md
+                      - name: 列表
+                        href: api/application-list-tokenlifetimepolicies.md
+                      - name: 删除
+                        href: api/application-delete-tokenlifetimepolicies.md
           - name: 服务主体
             href: resources/serviceprincipal.md
             items:
@@ -759,30 +779,42 @@ items:
                     href: api/serviceprincipal-delete-owners.md
               - name: 策略
                 items:
-                  - name: 分配 claimsMappingPolicy
-                    href: api/serviceprincipal-post-claimsmappingpolicies.md
-                  - name: 列出 claimsMappingPolicies
-                    href: api/serviceprincipal-list-claimsmappingpolicies.md
-                  - name: 删除 claimsMappingPolicy
-                    href: api/serviceprincipal-delete-claimsmappingpolicies.md
-                  - name: 分配 homeRealmDiscoveryPolicy
-                    href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                  - name: 列出 homeRealmDiscoveryPolicy
-                    href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
-                  - name: 删除 homeRealmDiscoveryPolicy
-                    href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
-                  - name: 分配 tokenIssuancePolicy
-                    href: api/application-post-tokenissuancepolicies.md
-                  - name: 列出 tokenIssuancePolicies
-                    href: api/application-list-tokenissuancepolicies.md
-                  - name: 删除 tokenIssuancePolicy
-                    href: api/application-delete-tokenissuancepolicies.md
-                  - name: 分配 tokenLifetimePolicy
-                    href: api/application-post-tokenlifetimepolicies.md
-                  - name: 列出 tokenLifetimePolicies
-                    href: api/application-list-tokenlifetimepolicies.md
-                  - name: 删除 tokenLifetimePolicy
-                    href: api/application-delete-tokenlifetimepolicies.md
+                  - name: 声明映射策略
+                    href: resources/claimsmappingpolicy.md
+                    items:
+                      - name: Assign
+                        href: api/serviceprincipal-post-claimsmappingpolicies.md
+                      - name: 列表
+                        href: api/serviceprincipal-list-claimsmappingpolicies.md
+                      - name: 删除
+                        href: api/serviceprincipal-delete-claimsmappingpolicies.md
+                  - name: 主页领域发现策略
+                    href: resources/homerealmdiscoverypolicy.md
+                    items:
+                      - name: Assign
+                        href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
+                      - name: 列表
+                        href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
+                      - name: 删除
+                        href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+                  - name: 令牌颁发策略
+                    href: resources/tokenissuancepolicy.md
+                    items:
+                      - name: Assign
+                        href: api/application-post-tokenissuancepolicies.md
+                      - name: 列表
+                        href: api/application-list-tokenissuancepolicies.md
+                      - name: 删除
+                        href: api/application-delete-tokenissuancepolicies.md
+                  - name: 令牌生存期策略
+                    href: resources/tokenlifetimepolicy.md
+                    items:
+                      - name: Assign
+                        href: api/application-post-tokenlifetimepolicies.md
+                      - name: 列表
+                        href: api/application-list-tokenlifetimepolicies.md
+                      - name: 删除
+                        href: api/application-delete-tokenlifetimepolicies.md
       - name: 日历
         displayname: Outlook calendar
         items:
@@ -1244,7 +1276,7 @@ items:
               - name: iOS VPP 电子书分配
                 href: resources/intune-books-iosvppebookassignment.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-books-iosvppebookassignment-list.md
                   - name: 获取
                     href: api/intune-books-iosvppebookassignment-get.md
@@ -1270,7 +1302,7 @@ items:
               - name: 托管的 Android LOB 应用
                 href: resources/intune-apps-managedandroidlobapp.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-apps-managedandroidlobapp-list.md
                   - name: 获取
                     href: api/intune-apps-managedandroidlobapp-get.md
@@ -1465,7 +1497,7 @@ items:
               - name: 移动应用类别
                 href: resources/intune-apps-mobileappcategory.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-apps-mobileappcategory-list.md
                   - name: 获取
                     href: api/intune-apps-mobileappcategory-get.md
@@ -1491,7 +1523,7 @@ items:
               - name: 移动应用内容文件
                 href: resources/intune-apps-mobileappcontentfile.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-apps-mobileappcontentfile-list.md
                   - name: 获取
                     href: api/intune-apps-mobileappcontentfile-get.md
@@ -1688,7 +1720,7 @@ items:
               - name: Android 常规设备配置
                 href: resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-get.md
@@ -1718,7 +1750,7 @@ items:
               - name: Android 工作配置文件自定义配置
                 href: resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-androidworkprofilecustomconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-androidworkprofilecustomconfiguration-get.md
@@ -1899,7 +1931,7 @@ items:
               - name: 设备合规性用户状态
                 href: resources/intune-deviceconfig-devicecomplianceuserstatus.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-devicecomplianceuserstatus-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-devicecomplianceuserstatus-get.md
@@ -1921,7 +1953,7 @@ items:
               - name: 设备配置分配
                 href: resources/intune-deviceconfig-deviceconfigurationassignment.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-deviceconfigurationassignment-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-deviceconfigurationassignment-get.md
@@ -2110,7 +2142,7 @@ items:
               - name: iOS 更新设备状态
                 href: resources/intune-deviceconfig-iosupdatedevicestatus.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-iosupdatedevicestatus-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-iosupdatedevicestatus-get.md
@@ -2138,7 +2170,7 @@ items:
               - name: macOS 自定义配置
                 href: resources/intune-deviceconfig-macoscustomconfiguration.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-macoscustomconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-macoscustomconfiguration-get.md
@@ -2325,7 +2357,7 @@ items:
               - name: Windows 10 自定义配置
                 href: resources/intune-deviceconfig-windows10customconfiguration.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-windows10customconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-windows10customconfiguration-get.md
@@ -2353,7 +2385,7 @@ items:
               - name: Windows 10 企业版新式应用管理配置
                 href: resources/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-get.md
@@ -2546,7 +2578,7 @@ items:
               - name: 审核事件
                 href: resources/intune-auditing-auditevent.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-auditing-auditevent-list.md
                   - name: 获取
                     href: api/intune-auditing-auditevent-get.md
@@ -2569,7 +2601,7 @@ items:
               - name: 检测到的应用
                 href: resources/intune-devices-detectedapp.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-devices-detectedapp-list.md
                   - name: 获取
                     href: api/intune-devices-detectedapp-get.md
@@ -2970,7 +3002,7 @@ items:
               - name: 目标托管应用保护
                 href: resources/intune-mam-targetedmanagedappprotection.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-mam-targetedmanagedappprotection-list.md
                   - name: 获取
                     href: api/intune-mam-targetedmanagedappprotection-get.md
@@ -3003,7 +3035,7 @@ items:
               - name: Windows 信息保护应用锁定程序文件
                 href: resources/intune-mam-windowsinformationprotectionapplockerfile.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-list.md
                   - name: 获取
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-get.md
@@ -3171,7 +3203,7 @@ items:
               - name: 移动威胁防护连接器
                 href: resources/intune-onboarding-mobilethreatdefenseconnector.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
                   - name: 获取
                     href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
@@ -3206,7 +3238,7 @@ items:
               - name: VPP 令牌
                 href: resources/intune-onboarding-vpptoken.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-onboarding-vpptoken-list.md
                   - name: 获取
                     href: api/intune-onboarding-vpptoken-get.md
