@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 03293bea7f74017985cb362e2e4c2fbd8c084dff
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: 2dc5359684f0b4d73f08551ea720dc095f482337
+ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081145"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091443"
 ---
 # <a name="delete-members"></a>删除成员
 命名空间：microsoft.graph
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /teams/{teamsId}/members
+DELETE /teams/{team-id}/members/{member-id}
 ```
 
 ## <a name="request-headers"></a>请求标头

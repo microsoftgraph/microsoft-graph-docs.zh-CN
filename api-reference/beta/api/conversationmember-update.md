@@ -5,11 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c9a96c82d2e76a7fed69acf5cf6378dcf19c3845
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: cb67a3ec07a7f22d40beea9d9831ea486e338ebe
+ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050762"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091387"
 ---
 # <a name="update-conversationmember"></a>更新 conversationMember
 
@@ -74,6 +75,7 @@ content-type: application/json
 content-length: 26
 
 {
+  "@odata.type":"#microsoft.graph.aadUserConversationMember",
   "roles": ["owner"]
 }
 ```

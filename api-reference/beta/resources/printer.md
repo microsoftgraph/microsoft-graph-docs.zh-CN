@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 255be26ed669e91248df1b007dc56b937ce2af98
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 6573f17753a3c9b487324def9973bddd0759ed4b
+ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006882"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091436"
 ---
 # <a name="printer-resource-type"></a>打印机资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "45006882"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [创建](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | 创建（注册）具有通用打印的新打印机。 |
+| [创建](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | 创建 (注册) 具有通用打印的新打印机。 |
 | [获取](../api/printer-get.md) | [印刷](printer.md) | 读取 printer 对象的属性和关系。 |
 | [更新](../api/printer-update.md) | [印刷](printer.md) | 更新 printer 对象。 |
 | [删除](../api/printer-delete.md) | 无 | 在通用打印服务中注销物理 printerfrom。 |
@@ -39,6 +39,9 @@ ms.locfileid: "45006882"
 | [列出 allowedGroups](../api/printer-list-allowedgroups.md) | [printIdentity](printidentity.md)集合 | 检索已向其授予将打印作业提交到关联打印机的访问权限的组列表。 |
 | [添加 allowedGroup](../api/printer-post-allowedgroups.md) | 无 | 向指定的组授予向关联打印机提交打印作业的权限。 |
 | [删除 allowedGroup](../api/printer-delete-allowedgroup.md) | 无 | 撤销指定组的打印机访问权限。 |
+| [列出 taskTriggers](../api/printer-list-tasktriggers.md) | 无 | 列出与此打印机关联的[printTaskTriggers](printtasktrigger.md) 。 |
+| [创建 taskTrigger](../api/printer-post-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) | 创建在打印事件发生时运行的[printTaskTrigger](printtasktrigger.md) 。 |
+| [删除 taskTrigger](../api/printer-delete-tasktrigger.md) | 无 | 删除与打印机关联的[printTaskTrigger](printtasktrigger.md) 。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
@@ -62,6 +65,7 @@ ms.locfileid: "45006882"
 |插槽|[printConnector](printconnector.md)|与打印机关联的连接器。|
 |allowedUsers|[printUserIdentity](printuseridentity.md)集合|有权使用打印机打印的用户。|
 |allowedGroups|[printIdentity](printidentity.md)|其用户有权使用打印机打印的组。|
+|taskTriggers|[printTaskTrigger](printtasktrigger.md)集合|与打印机关联的任务触发器的列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

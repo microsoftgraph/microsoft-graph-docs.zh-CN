@@ -6,16 +6,16 @@ title: 搜索文件
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6869940c6c4e8a22061343f5152f424b5d27adaf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 08774f68c9b5ec17ff3e0c5f4f6ba42e058245e1
+ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432339"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091401"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>搜索驱动器内的 DriveItems
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "42432339"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -52,20 +52,19 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 | 参数 | 类型  | 说明                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| q  | 字符串 | 用来搜索项目的查询文本。可以跨多个字段（包括文件名、元数据和文件内容）与值相匹配。 |
+| q  | 字符串 | The query text used to search for items. Values may be matched across several fields including filename, metadata, and file content. |
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-下面是一个请求搜索当前用户的 OneDrive 示例
-
+下面的示例在登录用户的驱动器项的多个字段中搜索 "Contoso Project" 的匹配项。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "item_search" }-->
 
 ```msgraph-interactive
-GET /me/drive/root/search(q='{search-query}')
+GET /me/drive/root/search(q='Contoso Projec}')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-search-csharp-snippets.md)]
@@ -84,9 +83,11 @@ GET /me/drive/root/search(q='{search-query}')
 
 ### <a name="response"></a>响应
 
-此方法返回一个对象，该对象包含与搜索条件相匹配的 [DriveItem](../resources/driveitem.md) 集合。如果未找到任何项目，则返回一个空集合。
+This method returns an object containing an collection of [DriveItems](../resources/driveitem.md) that match the search criteria.
+If no items were found, an empty collection is returned.
 
-如果匹配项太多，将对响应分页，并且 **@odata.nextLink** 属性将包含指向下一页结果的 URL。可以使用 `$top` 查询参数来指定页中的项目数。
+If there are too many matches the response will be paged and an **@odata.nextLink** property will contain a URL to the next page of results.
+You can use the `$top` query parameter to specify the number of items in the page.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 
@@ -115,7 +116,8 @@ Content-type: application/json
 
 ## <a name="searching-for-items-a-user-can-access"></a>搜索用户可以访问的项目
 
-除了在驱动器中搜索项目外，你的应用程序还可以进行更广泛的搜索，以便包含与当前用户共享的项目。若要扩大搜索范围，请使用 [驱动器](../resources/drive.md) 资源中的**搜索**方法。
+In addition to searching for items within a drive, your app can search more broadly to include items shared with the current user.
+To broaden the search scope, use the **search** method on the [Drive](../resources/drive.md) resource.
 
 ### <a name="example"></a>示例
 
@@ -124,7 +126,7 @@ Content-type: application/json
 <!-- { "blockType": "request", "name": "item_search_all" }-->
 
 ```msgraph-interactive
-GET /me/drive/search(q='{search-query}')
+GET /me/drive/search(q='Contoso Project')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-search-all-csharp-snippets.md)]
@@ -143,7 +145,8 @@ GET /me/drive/search(q='{search-query}')
 
 ### <a name="response"></a>响应
 
-从**驱动器**资源中搜索时的响应可能包括驱动器外部的项目（与当前用户共享的项目）。这些项目将包括 [**remoteItem**](../resources/remoteitem.md) 方面，以指示它们存储在目标驱动器外部。 
+Responses when searching from the **drive** resource may include items outside of the drive (items shared with the current user).
+These items will include the [**remoteItem**](../resources/remoteitem.md) facet to indicate they are stored outside of the target drive. 
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 

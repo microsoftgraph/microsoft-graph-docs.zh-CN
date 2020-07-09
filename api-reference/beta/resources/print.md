@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 551fa42736d6fa275a8f998274a6fccf55ac00b7
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: b32ebb749b3b13ee1d468de69b0724fe281e6793
+ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006973"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091499"
 ---
 # <a name="print-resource-type"></a>打印资源类型
 
@@ -28,8 +28,12 @@ ms.locfileid: "45006973"
 | [列出共享](../api/print-list-shares.md) | [printerShare](printershare.md)集合 | 获取打印机共享的列表。 |
 | [列出服务](../api/print-list-services.md) | [printService](printservice.md)集合 | 获取服务的列表。 |
 | [创建 printerShare](../api/print-post-shares.md) | [printerShare](printershare.md) | 通过发布到**共享**集合创建新的打印机共享。 |
-| [创建打印机](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | 创建（注册）具有通用打印的新打印机。 |
+| [创建打印机](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | 创建 (注册) 具有通用打印的新打印机。 |
 | [更新设置](../api/print-update-settings.md) |  [printSettings](printsettings.md) | 更新通用打印服务的租户范围设置。 |
+| [列出 taskDefinitions](../api/print-list-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md)集合 | 获取在通用打印中创建的 printTaskDefinitions 的租户范围列表。 |
+| [创建 taskDefinition](../api/print-post-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | 创建新的 printTaskDefinition。 |
+| [更新 taskDefinition](../api/print-update-taskdefinition.md) | [printTaskDefinition](printtaskdefinition.md) | 更新 printTaskDefinition。 |
+| [删除 taskDefinition](../api/print-delete-taskdefinition.md) | 无 | 删除 printTaskDefinition。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
