@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: cf94e73bfd7ad05fea8f52ea1f2f219b7933ffa7
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 5bc7a2d7b1684873f655bb83455d543f39a10254
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793736"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080861"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -31,9 +31,13 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |[获取团队](../api/team-get.md) | [team](team.md) | 检索指定团队的属性和关系。|
 |[更新团队](../api/team-update.md) | [team](team.md) |更新指定团队的属性。 |
 |[删除团队](/graph/api/group-delete?view=graph-rest-1.0) | 无 |删除团队及其关联的组。 |
-|[克隆团队](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |复制团队及其关联的组。 |
+|[List members](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) 集合|从成员导航属性中获取 conversationMembers。|
+|[添加成员](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|添加新成员。|
+|[删除成员](../api/team-delete-members.md)|无|删除 [conversationMember](../resources/conversationmember.md) 对象。|
+|[更改成员角色](../api/conversationmember-update.md)|[conversationMember](../resources/conversationmember.md)|将成员更改为所有者或返回为常规成员。|
 |[存档团队](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |将团队置于只读状态。 |
 |[解档团队](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |将团队还原到读写状态。 |
+|[克隆团队](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |复制团队及其关联的组。 |
 |[列出你的团队](../api/user-list-joinedteams.md) | [team](team.md) 集合 | 列出你属于的团队。 |
 |[列出所有团队](/graph/teams-list-all-teams) | [group](group.md) 集合 | 列出具有团队的所有组。 |
 |[获取团队照片](../api/team-get-photo.md) | 二进制数据 | 获取团队的照片（图片）。 |
@@ -64,8 +68,10 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |:---------------|:--------|:----------|
 |channels|[channel](channel.md) 集合|与团队相关的频道和消息的集合。|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) 集合|此团队中安装的应用。|
+|members|[conversationMember](../resources/conversationmember.md) 集合|团队的成员和所有者。|
 |owners|[user](user.md)| 此团队的所有者列表。 目前，在使用应用程序权限创建团队时，必须指定一个所有者。 当使用用户委派的权限时，不能指定任何所有者（当前用户是所有者）。 必须将所有者指定为对象 ID (GUID)，而不是 UPN。 |
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) 集合| 在此团队中运行过或正在运行的异步操作。 | 
+|photo|[profilePhoto](../resources/profilephoto.md)|团队照片。|
 |[primaryChannel](../api/team-get-primarychannel.md)|[频道](channel.md)| 团队的常规频道。 | 
 |schedule|[日程安排](schedule.md)| 此团队的排班安排。|
 |template|[teamsTemplate](teamstemplate.md)| 创建此团队时所使用的模板。 请参阅[可用模板](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-templates)。 |
@@ -99,7 +105,6 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
   "visibility": "string",
   "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"}
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

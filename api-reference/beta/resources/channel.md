@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1f14b7240500cceebd39e2bde1b91e2dbf477322
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 7361e931dbc8fdb2416d73da499c2ea84bdc37ca
+ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791088"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45081009"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -47,7 +47,7 @@ ms.locfileid: "44791088"
 |说明|String|频道的可选文本描述。|
 |displayName|String|在 Microsoft Teams 中呈现在用户面前的频道名称。|
 |id|String|频道的唯一标识符。 只读。|
-|isFavoriteByDefault|Boolean|指示是否应对团队的所有成员将频道自动标记到“收藏夹”。 默认值：`false`。|
+|isFavoriteByDefault|Boolean|指示是否应对团队的所有成员将频道自动标记到“收藏夹”。 仅可使用“[创建团队](../api/team-post.md)”以编程方式设置。 默认值：`false`。|
 |email|String| 用于向频道发送邮件的电子邮件地址。 只读。|
 |webUrl|String|将转到 Microsoft Teams 中的频道的超链接。 在 Microsoft Teams 中右键单击某个频道并选择“获取频道链接”即可获得此 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 只读。|
 |membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|频道的类型。 可在创建期间设置，但不可更改。 默认：标准。|
