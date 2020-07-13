@@ -5,12 +5,12 @@ author: ananmishr
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: 7869ac59f84f266542254fd0c8fc8ea97ee4815d
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 636eeedb4836a26e5fe2e52683f8baacdb4a8d69
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394580"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353250"
 ---
 # <a name="working-with-the-communications-api-in-microsoft-graph"></a>使用 Microsoft Graph 通信 API
 
@@ -54,6 +54,9 @@ Microsoft Graph 通信 API 通过在应用和服务中启用核心通信功能�
 | onlineMeeting                            | [onlineMeeting 属性](/graph/api/resources/onlinemeeting?view=graph-rest-beta#properties)                     |
 | 状态 | [状态属性](/graph/api/resources/presence#properties) |
 | callRecord | [callRecord 属性](/graph/api/resources/callrecords-callrecord#properties) |
+
+## <a name="whats-new"></a>最近更新
+了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 43d2c00e9651c6bbf73e82102a36eb25efd94215
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 983ca1e7b11e488cec38abc2b54c7e241d4a0719
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39845033"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353894"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-intelligence-in-an-app"></a>使用 Microsoft Graph API 在应用程序中集成人员智能
 
@@ -38,3 +38,6 @@ Microsoft Graph 允许访问相关人员的有用数据以及与之交互的文�
 - 列出用户[常用的](../api/insights-list-trending.md)文档
 - 列出用户[使用的](../api/insights-list-used.md)文档
 - 列出[与用户共享或由用户共享的](../api/insights-list-shared.md)文档
+
+## <a name="whats-new"></a>最近更新
+了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。

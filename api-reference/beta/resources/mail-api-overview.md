@@ -5,18 +5,19 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 77a685f4bda0005f27f7acf74eec0f2a3780aee8
-ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
+ms.openlocfilehash: 230b3179ebbe7a3e9c4d3c7fe647278990192cf5
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41839981"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353782"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>使用 Outlook 邮件 REST API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph 可让你的应用获得授权，访问个人或组织帐户中的用户的 Outlook 邮件数据。使用[适当的委托权限或应用程序权限](/graph/permissions-reference)，你的应用可以访问已登录用户或租户中任何用户的邮件数据。 
+Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account.
+With the [appropriate delegated or application permissions](/graph/permissions-reference), your app can access the mail data of the signed-in user or any user in a tenant. 
 
 [!INCLUDE [outlook-mailbox-type-support](../../includes/outlook-mailbox-type-support.md)]
 
@@ -24,7 +25,8 @@ Microsoft Graph 可让你的应用获得授权，访问个人或组织帐户中�
 
 代表[用户](../resources/user.md)执行可由用户的 **id** 属性（唯一的 GUID）、电子邮件地址或`me`已登录用户的快捷方式别名标识的邮件 API 请求。
 
-电子邮件由[邮件](../resources/message.md)资源表示，放在 [mailFolder](../resources/mailfolder.md) 中。邮件和邮件文件夹由其 **id** 属性标识，可通过 `GET` 操作获取。
+Email messages are represented by the [message](../resources/message.md) resource and organized in a [mailFolder](../resources/mailfolder.md).
+Messages and mail folders are identified by their **id** property, obtainable from `GET` operations.
 
 >[!IMPORTANT] 
 > 通常，请不要假设邮箱内的**邮件**和 **mailfolder** ID 是唯一的且始终保持不变。 在执行复制或移动等某些操作后，它们可能会发生更改。 只要邮件保留在同一个邮箱中，你就可以选择使用[不可变 ID](/graph/outlook-immutable-id) 来保留相同的 ID（_除了发送草稿邮件和一些其他场景外_）。 有关详细信息，请参阅[不可变 ID 生存期](/graph/outlook-immutable-id#lifetime-of-immutable-ids)。
@@ -72,6 +74,9 @@ Microsoft Graph API 还提供支持邮件常见用例的方法和操作。
 | 通过使用扩展向邮件添加自定义应用数据 | [openTypeExtension](../resources/opentypeextension.md)、 <br>[schemaExtension](../resources/schemaextension.md) | [使用扩展向资源添加自定义数据](/graph/extensibility-overview) |
 | 访问半公开的 Outlook MAPI 属性的自定义数据 | [SingleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)、 <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Outlook 扩展属性概述](../resources/extended-properties-overview.md) |
 
+## <a name="whats-new"></a>最近更新
+了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
+
 ## <a name="next-steps"></a>后续步骤
 
 邮件 API 可以为你开辟与用户互动的新途径：
@@ -80,4 +85,4 @@ Microsoft Graph API 还提供支持邮件常见用例的方法和操作。
 - 向下钻取[邮件](../resources/message.md)和 [mailFolder](../resources/mailfolder.md) 资源的[方法](../resources/message.md#methods)、[属性](../resources/message.md#properties)和[关系](../resources/message.md#relationships)。
 - 请尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的 API。
 
-需要更多灵感？请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners)。
+Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: krbain
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: d69870512f8a8e86ddda77fb99a41019879edaa1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 21377bfbc301dc2bffa403bc46407414c08dfaf0
+ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43422458"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353761"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>在 Microsoft Graph 中与用户一起工作
 
@@ -25,7 +25,7 @@ ms.locfileid: "43422458"
 
 ## <a name="authorization"></a>授权
 
-需要以下 [权限](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) 之一才能访问用户操作。用户可将前三个权限授予应用程序。其余权限只能由管理员授予应用。
+One of the following [permissions](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) is required to access user operations. The first three permissions can be granted to an app by a user. The rest can only be granted to an app by the administrator.
 
 - User.ReadBasic.All
 - User.Read
@@ -64,3 +64,6 @@ ms.locfileid: "43422458"
 |[`/users/{id}/drive`](../api/drive-get.md)| 获取用户 OneDrive 文件存储。 |
 |[`/users/{id}/memberOf`](../api/user-list-memberof.md)| 列出用户是其成员的所有组。 |
 |[`/users/{id}/joinedTeams`](../api/user-list-joinedteams.md)| 列出用户所属的 Microsoft Teams。 |
+
+## <a name="whats-new"></a>最近更新
+了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。

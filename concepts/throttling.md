@@ -4,11 +4,12 @@ description: Throttling limits the number of concurrent calls to a service to pr
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 5561e8a28440f05adcd074b6cd7d4d61edbb2852
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: 45bc9246fe465328be3d96b029475eae96cc673c
+ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050783"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091506"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -62,10 +63,10 @@ When you implement error handling, use the HTTP error code 429 to detect throttl
 - [Report](/graph/api/resources/report)
 - [订阅](/graph/api/resources/subscription)
 - [趋势](/graph/api/resources/insights-trending)
-- [使用的洞察力](/graph/api/resources/insights-used)
-- [共享洞察力](/graph/api/resources/insights-shared)
+- [已使用见解](/graph/api/resources/insights-used)
+- [共享见解](/graph/api/resources/insights-shared)
 - [用户设置](/graph/api/resources/usersettings)
-- [受到](/graph/api/resources/invitation)
+- [邀请](/graph/api/resources/invitation)
 
 有关 Microsoft 云限制的更广泛讨论，请参阅[限制模式](https://docs.microsoft.com/azure/architecture/patterns/throttling)。
 
@@ -88,17 +89,17 @@ When you implement error handling, use the HTTP error code 429 to detect throttl
 > [!NOTE]
 > 此处所述的具体限制可能会发生更改。
 
-> **注意：** 在本节中，术语 "*租户*" 是指安装了应用程序的 Microsoft 365 组织。 此租户可以与创建应用程序的位置相同，在单个租户应用程序中也可以是不同的，如果是[多租户应用程序](/azure/active-directory/develop/setup-multi-tenant-app)，则也可以是不同的。
+> **备注** 在本节中，*租户*此术语是指指安装应用程序的 Microsoft 365 组织。 对于单个租户应用程序，这个租户可以与创建应用程序的租户相同，对于[多租户应用程序](/azure/active-directory/develop/setup-multi-tenant-app)，这个租户可以不同。
 
 ### <a name="outlook-service-limits"></a>Outlook 服务限制
 
-将评估每个应用 ID 和邮箱组合的 Outlook 服务限制。 换言之，上述限制适用于访问特定邮箱（用户或组）的特定应用。 如果一个邮箱的应用程序超过限制，不会影响访问另一个邮箱的功能。 以下限制适用于公共云以及[国内云部署](/graph/deployments)。
+将评估每个应用 ID 和邮箱组合的 Outlook 服务限制。 换言之，上述限制适用于访问特定邮箱（用户或组）的特定应用。 如果一个邮箱的应用程序超过限制，不会影响访问另一个邮箱的功能。 下面的限制适用于公共云以及[区域云部署](/graph/deployments)。
 
 | 限制                                                      | 适用对象      |
 |------------------------------------------------------------|-----------------|
 | 10 分钟内的 10,000 个 API 请求                  | v1.0 和 beta 终结点 |
 | 4 个并发请求                                      | v1.0 和 beta 终结点   |
-| 在30秒内，将15兆字节（MB）上传（PATCH、POST、PUT） | v1.0 和 beta 终结点   |
+| 30 秒内的 15 兆字节 (MB) 上传（PATCH、POST、PUT） | v1.0 和 beta 终结点   |
 
 #### <a name="outlook-service-resources"></a>Outlook 服务资源
 
@@ -143,11 +144,11 @@ Outlook 服务提供以下资源。
 
 ### <a name="cloud-communication-service-limits"></a>云通信服务限制
 
-| 资源      | 每个租户每个应用程序的限制    |
+| 资源      | 每个租户每个应用限制    |
 | -------------- | ------------ |
-| [呼叫](/graph/api/resources/call) | 10000呼叫/月和100并发呼叫   |
-| [会议信息](/graph/api/resources/meetinginfo)   | 每月2000会议/用户 |
-| [状态](/graph/api/resources/presence)（预览）   | 2 rps |
+| [通话](/graph/api/resources/call) | 每月10,000 通通话和 100 通并发通话   |
+| [会议信息](/graph/api/resources/meetinginfo)   | 每月每位用家会有 2000 则会议 |
+| [状态](/graph/api/resources/presence)（预览版）   | 2 rps |
 
 ### <a name="microsoft-teams-service-limits"></a>Microsoft Teams 服务限制
 
@@ -166,46 +167,56 @@ Outlook 服务提供以下资源。
 | GET 1:1/group chat message  | 3 rps | 30 rps |
 | POST channel message | 2 rps | 20 rps |
 | POST 1:1/group chat message | 2 rps | 20 rps |
-| 获取 ```{team-id}``` 此路径下的/teams//schedule 和所有 api | 60 rps | 600 rps |
-| POST、PATCH、PUT/teams/ ```{team-id}``` /schedule 和此路径下的所有 api | 30 rps | 300 rps |
-| 删除 ```{team-id}``` 此路径下的/teams//schedule 和所有 api | 15 rps | 150 rps |
+| GET/teams/```{team-id}```/在以下路径下的日程安排和所有 API | 60 rps | 600 rps |
+| POST, PATCH, PUT /teams/```{team-id}```/在以下路径下的日程安排和所有 API | 30 rps | 300 rps |
+| DELETE /teams/```{team-id}```/在以下路径下的日程安排和所有 API | 15 rps | 150 rps |
 
 对于给定团队或频道，每个应用最多可发布 4 个请求。
 每个应用每天最多可以将 3000 条消息发送到给定的频道。
 
 另请参阅 [Microsoft Teams 限制](/graph/api/resources/teams-api-overview#microsoft-teams-limits)和[投票要求](/graph/api/resources/teams-api-overview#polling-requirements)。
 
-### <a name="insights-service-limits"></a>Insights 服务限制
+### <a name="identity-protection-and-conditional-access-service-limits"></a>身份保护和条件访问服务限制
 
-以下限制适用于或上的任何 `me/insights` 请求 `users/{id}/insights` 。
+| 请求类型 | 每个租户的使用限制 |
+| ------------ | ------- |
+| 任何 | 每秒1个请求 |
+
+上述限制适用于下列资源:  
+riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocation, ipNamedLocation, conditionalAccessPolicy.
+
+> **备注:** 目前上面列出的资源没有返回`Retry-After`页眉`429 Too Many Requests`上答复。
+### <a name="insights-service-limits"></a>见解服务限制
+
+以下限制适用于 `me/insights`或`users/{id}/insights` 上的所有请求。
 
 | 限制                                                      | 适用对象      |
 |------------------------------------------------------------|-----------------|
 | 10 分钟内的 10,000 个 API 请求                  | v1.0 和 beta 终结点 |
 | 4 个并发请求                                      | v1.0 和 beta 终结点   |
 
-### <a name="microsoft-graph-reports-service-limits"></a>Microsoft Graph 报告服务限制
+### <a name="microsoft-graph-reports-service-limits"></a>Microsoft Graph 报告的服务限制
 
 以下限制适用于 `/reports` 上的所有请求。
 
-| 操作                 | 每个租户每个应用限制     | 每个租户的限制           |
+| 操作                 | 每个租户每个应用限制     | 每个租户的使用限制           |
 |---------------------------|------------------------------|----------------------------|
 | 任何请求（CSV）         | 每10分钟14个请求   | 每10分钟40个请求 |
 | 任何请求（JSON、beta）  | 每10分钟100个请求  | 不适用                        |
 
-上述限制将分别应用于每个报告 API。 例如，对 Microsoft 团队用户活动报告 API 的请求和在10分钟内对 Outlook 用户活动报告 API 的请求计数为每个 API 1 个请求（每个 API 一个14个），而不是两个请求都是14个。
+上述限制分别适用于每个报表 API。 例如，在10分钟内分别有对 Microsoft Teams 用户活动报告API的请求及对 Outlook 用户活动报告API的请求，将分别被视为14个请求中的1个请求，而不是14个请求中的2个请求。
 
 ### <a name="invitation-manager-service-limits"></a>邀请管理器服务限制
 
 以下限制适用于 `/invitations` 上的所有请求。
 
-| 操作                 | 每个租户的限制             |
+| 操作                 | 每个租户的使用限制             |
 |---------------------------|------------------------------|
-| 任何操作             | 每5秒150个请求   |
+| 任何操作             | 每 5 秒 150 个请求   |
 
 <!-- { "blockType": "throttlinggenstart" } -->
 
-### <a name="education-service-limits"></a>教育服务限制
+### <a name="education-service-limits"></a>教育版服务限制
 
 [!INCLUDE [Education rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
 
@@ -213,15 +224,15 @@ Outlook 服务提供以下资源。
 
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
 
-### <a name="identity-and-access-audit-logs-service-limits"></a>标识和访问审核日志服务限制
+### <a name="identity-and-access-audit-logs-service-limits"></a>标识和访问审核日志的服务限制
 
 [!INCLUDE [Identity and access audit logs throttling documentation](../includes/throttling-Identity-and-access-audit-logs.md)]
 
-### <a name="identity-providers-service-limits"></a>标识提供程序服务限制
+### <a name="identity-providers-service-limits"></a>身份提供程序的服务限制
 
 [!INCLUDE [CPIM throttling documentation](../includes/throttling-cpim.md)]
 
-### <a name="intune-service-limits"></a>Intune 服务限制
+### <a name="intune-service-limits"></a>Intune服务限制
 
 [!INCLUDE [Intune applications throttling documentation](../includes/throttling-intune-applications.md)]
 [!INCLUDE [Intune books throttling documentation](../includes/throttling-intune-books.md)]
@@ -243,7 +254,7 @@ Outlook 服务提供以下资源。
 
 [!INCLUDE [Skype calling throttling documentation](../includes/throttling-skype-calling.md)]
 
-### <a name="subscription-service-limits"></a>订阅服务限制
+### <a name="subscription-service-limits"></a>订阅服务
 
 [!INCLUDE [Subscription services throttling documentation](../includes/throttling-subscription-services.md)]
 
