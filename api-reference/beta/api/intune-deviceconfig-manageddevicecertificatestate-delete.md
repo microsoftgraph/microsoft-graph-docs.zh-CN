@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 908ee10fca327111afb2a83acbae08e0f8dc5ae1
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: c66af6b517cd68ff475ab04fbc6bf244b7988a53
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792700"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45122887"
 ---
-# <a name="delete-manageddevicecertificatestate"></a><span data-ttu-id="0092c-103">删除 managedDeviceCertificateState</span><span class="sxs-lookup"><span data-stu-id="0092c-103">Delete managedDeviceCertificateState</span></span>
+# <a name="delete-manageddevicecertificatestate"></a><span data-ttu-id="1ef86-103">删除 managedDeviceCertificateState</span><span class="sxs-lookup"><span data-stu-id="1ef86-103">Delete managedDeviceCertificateState</span></span>
 
-<span data-ttu-id="0092c-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0092c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1ef86-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1ef86-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="0092c-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="0092c-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="1ef86-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="1ef86-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="0092c-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="0092c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="1ef86-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="1ef86-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="0092c-107">删除[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)。</span><span class="sxs-lookup"><span data-stu-id="0092c-107">Deletes a [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md).</span></span>
+<span data-ttu-id="1ef86-107">删除[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)。</span><span class="sxs-lookup"><span data-stu-id="1ef86-107">Deletes a [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="0092c-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="0092c-108">Prerequisites</span></span>
-<span data-ttu-id="0092c-109">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="0092c-109">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="0092c-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0092c-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="1ef86-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="1ef86-108">Prerequisites</span></span>
+<span data-ttu-id="1ef86-109">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="1ef86-109">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="1ef86-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1ef86-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0092c-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="0092c-111">Permission type</span></span>|<span data-ttu-id="0092c-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="0092c-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="1ef86-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="1ef86-111">Permission type</span></span>|<span data-ttu-id="1ef86-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="1ef86-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="0092c-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0092c-113">Delegated (work or school account)</span></span>|<span data-ttu-id="0092c-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0092c-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="0092c-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0092c-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0092c-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="0092c-116">Not supported.</span></span>|
-|<span data-ttu-id="0092c-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="0092c-117">Application</span></span>|<span data-ttu-id="0092c-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0092c-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="1ef86-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1ef86-113">Delegated (work or school account)</span></span>|<span data-ttu-id="1ef86-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1ef86-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="1ef86-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1ef86-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1ef86-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="1ef86-116">Not supported.</span></span>|
+|<span data-ttu-id="1ef86-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="1ef86-117">Application</span></span>|<span data-ttu-id="1ef86-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1ef86-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="0092c-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0092c-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1ef86-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1ef86-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -43,9 +43,12 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidScepCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosImportedPFXCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidImportedPFXCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerPkcsCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerScepCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidWorkProfilePkcsCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidWorkProfileScepCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidForWorkImportedPFXCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerImportedPFXCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/microsoft.graph.androidForWorkPkcsCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/microsoft.graph.androidForWorkScepCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate/microsoft.graph.windowsPhone81SCEPCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
@@ -56,33 +59,30 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/identityCertificateForClientAuthentication/microsoft.graph.windows81SCEPCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/identityCertificateForClientAuthentication/microsoft.graph.windows10ImportedPFXCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/identityCertificateForClientAuthentication/microsoft.graph.windowsPhone81ImportedPFXCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration/identityCertificateForClientAuthentication/microsoft.graph.androidDeviceOwnerPkcsCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration/identityCertificateForClientAuthentication/microsoft.graph.androidDeviceOwnerScepCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration/identityCertificateForClientAuthentication/microsoft.graph.androidDeviceOwnerImportedPFXCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="0092c-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="0092c-120">Request headers</span></span>
-|<span data-ttu-id="0092c-121">标头</span><span class="sxs-lookup"><span data-stu-id="0092c-121">Header</span></span>|<span data-ttu-id="0092c-122">值</span><span class="sxs-lookup"><span data-stu-id="0092c-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1ef86-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="1ef86-120">Request headers</span></span>
+|<span data-ttu-id="1ef86-121">标头</span><span class="sxs-lookup"><span data-stu-id="1ef86-121">Header</span></span>|<span data-ttu-id="1ef86-122">值</span><span class="sxs-lookup"><span data-stu-id="1ef86-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="0092c-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="0092c-123">Authorization</span></span>|<span data-ttu-id="0092c-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="0092c-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="0092c-125">接受</span><span class="sxs-lookup"><span data-stu-id="0092c-125">Accept</span></span>|<span data-ttu-id="0092c-126">application/json</span><span class="sxs-lookup"><span data-stu-id="0092c-126">application/json</span></span>|
+|<span data-ttu-id="1ef86-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="1ef86-123">Authorization</span></span>|<span data-ttu-id="1ef86-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="1ef86-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="1ef86-125">接受</span><span class="sxs-lookup"><span data-stu-id="1ef86-125">Accept</span></span>|<span data-ttu-id="1ef86-126">application/json</span><span class="sxs-lookup"><span data-stu-id="1ef86-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="0092c-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="0092c-127">Request body</span></span>
-<span data-ttu-id="0092c-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="0092c-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1ef86-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="1ef86-127">Request body</span></span>
+<span data-ttu-id="1ef86-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="1ef86-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0092c-129">响应</span><span class="sxs-lookup"><span data-stu-id="0092c-129">Response</span></span>
-<span data-ttu-id="0092c-130">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="0092c-130">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="1ef86-129">响应</span><span class="sxs-lookup"><span data-stu-id="1ef86-129">Response</span></span>
+<span data-ttu-id="1ef86-130">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="1ef86-130">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0092c-131">示例</span><span class="sxs-lookup"><span data-stu-id="0092c-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1ef86-131">示例</span><span class="sxs-lookup"><span data-stu-id="1ef86-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="0092c-132">请求</span><span class="sxs-lookup"><span data-stu-id="0092c-132">Request</span></span>
-<span data-ttu-id="0092c-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="0092c-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="1ef86-132">请求</span><span class="sxs-lookup"><span data-stu-id="1ef86-132">Request</span></span>
+<span data-ttu-id="1ef86-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="1ef86-133">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosPkcsCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 ```
 
-### <a name="response"></a><span data-ttu-id="0092c-134">响应</span><span class="sxs-lookup"><span data-stu-id="0092c-134">Response</span></span>
-<span data-ttu-id="0092c-135">Here is an example of the response.</span><span class="sxs-lookup"><span data-stu-id="0092c-135">Here is an example of the response.</span></span> <span data-ttu-id="0092c-136">Note: The response object shown here may be truncated for brevity.</span><span class="sxs-lookup"><span data-stu-id="0092c-136">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="0092c-137">All of the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="0092c-137">All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="1ef86-134">响应</span><span class="sxs-lookup"><span data-stu-id="1ef86-134">Response</span></span>
+<span data-ttu-id="1ef86-135">Here is an example of the response.</span><span class="sxs-lookup"><span data-stu-id="1ef86-135">Here is an example of the response.</span></span> <span data-ttu-id="1ef86-136">Note: The response object shown here may be truncated for brevity.</span><span class="sxs-lookup"><span data-stu-id="1ef86-136">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="1ef86-137">All of the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="1ef86-137">All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```

@@ -5,37 +5,37 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ca2c24910480442948620bf44e9b45a25db739e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8d9168a22fcff105cbf2603ebccaaf4b9c0d8cf5
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471277"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45124021"
 ---
-# <a name="update-windowsupdatestate"></a><span data-ttu-id="bda1d-103">更新 windowsUpdateState</span><span class="sxs-lookup"><span data-stu-id="bda1d-103">Update windowsUpdateState</span></span>
+# <a name="update-windowsupdatestate"></a><span data-ttu-id="aae71-103">更新 windowsUpdateState</span><span class="sxs-lookup"><span data-stu-id="aae71-103">Update windowsUpdateState</span></span>
 
-<span data-ttu-id="bda1d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bda1d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="aae71-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="aae71-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="bda1d-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="bda1d-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="aae71-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="aae71-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="bda1d-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="bda1d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="aae71-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="aae71-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="bda1d-107">更新[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="bda1d-107">Update the properties of a [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) object.</span></span>
+<span data-ttu-id="aae71-107">更新[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="aae71-107">Update the properties of a [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="bda1d-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="bda1d-108">Prerequisites</span></span>
-<span data-ttu-id="bda1d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="bda1d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="aae71-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="aae71-108">Prerequisites</span></span>
+<span data-ttu-id="aae71-109">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="aae71-109">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="aae71-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="aae71-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="bda1d-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="bda1d-111">Permission type</span></span>|<span data-ttu-id="bda1d-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="bda1d-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="aae71-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="aae71-111">Permission type</span></span>|<span data-ttu-id="aae71-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="aae71-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="bda1d-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bda1d-113">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="bda1d-114">&nbsp; &nbsp; **设备配置**</span><span class="sxs-lookup"><span data-stu-id="bda1d-114">&nbsp; &nbsp; **Device configuration**</span></span> | <span data-ttu-id="bda1d-115">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bda1d-115">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-| <span data-ttu-id="bda1d-116">&nbsp;&nbsp; **软件更新**</span><span class="sxs-lookup"><span data-stu-id="bda1d-116">&nbsp; &nbsp; **Software Update**</span></span> | <span data-ttu-id="bda1d-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bda1d-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="bda1d-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bda1d-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="bda1d-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="bda1d-119">Not supported.</span></span>|
-|<span data-ttu-id="bda1d-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="bda1d-120">Application</span></span>||
-| <span data-ttu-id="bda1d-121">&nbsp; &nbsp; **设备配置**</span><span class="sxs-lookup"><span data-stu-id="bda1d-121">&nbsp; &nbsp; **Device configuration**</span></span> | <span data-ttu-id="bda1d-122">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bda1d-122">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-| <span data-ttu-id="bda1d-123">&nbsp;&nbsp; **软件更新**</span><span class="sxs-lookup"><span data-stu-id="bda1d-123">&nbsp; &nbsp; **Software Update**</span></span> | <span data-ttu-id="bda1d-124">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bda1d-124">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="aae71-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="aae71-113">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="aae71-114">&nbsp; &nbsp; **设备配置**</span><span class="sxs-lookup"><span data-stu-id="aae71-114">&nbsp; &nbsp; **Device configuration**</span></span> | <span data-ttu-id="aae71-115">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aae71-115">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+| <span data-ttu-id="aae71-116">&nbsp;&nbsp;**软件更新**</span><span class="sxs-lookup"><span data-stu-id="aae71-116">&nbsp; &nbsp; **Software Update**</span></span> | <span data-ttu-id="aae71-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aae71-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="aae71-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="aae71-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="aae71-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="aae71-119">Not supported.</span></span>|
+|<span data-ttu-id="aae71-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="aae71-120">Application</span></span>||
+| <span data-ttu-id="aae71-121">&nbsp; &nbsp; **设备配置**</span><span class="sxs-lookup"><span data-stu-id="aae71-121">&nbsp; &nbsp; **Device configuration**</span></span> | <span data-ttu-id="aae71-122">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aae71-122">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+| <span data-ttu-id="aae71-123">&nbsp;&nbsp;**软件更新**</span><span class="sxs-lookup"><span data-stu-id="aae71-123">&nbsp; &nbsp; **Software Update**</span></span> | <span data-ttu-id="aae71-124">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aae71-124">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="bda1d-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bda1d-125">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="aae71-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="aae71-125">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -44,39 +44,39 @@ ms.locfileid: "43471277"
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsUpdateForBusinessConfiguration/deviceUpdateStates/{windowsUpdateStateId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="bda1d-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="bda1d-126">Request headers</span></span>
-|<span data-ttu-id="bda1d-127">标头</span><span class="sxs-lookup"><span data-stu-id="bda1d-127">Header</span></span>|<span data-ttu-id="bda1d-128">值</span><span class="sxs-lookup"><span data-stu-id="bda1d-128">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="aae71-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="aae71-126">Request headers</span></span>
+|<span data-ttu-id="aae71-127">标头</span><span class="sxs-lookup"><span data-stu-id="aae71-127">Header</span></span>|<span data-ttu-id="aae71-128">值</span><span class="sxs-lookup"><span data-stu-id="aae71-128">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="bda1d-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="bda1d-129">Authorization</span></span>|<span data-ttu-id="bda1d-130">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="bda1d-130">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="bda1d-131">接受</span><span class="sxs-lookup"><span data-stu-id="bda1d-131">Accept</span></span>|<span data-ttu-id="bda1d-132">application/json</span><span class="sxs-lookup"><span data-stu-id="bda1d-132">application/json</span></span>|
+|<span data-ttu-id="aae71-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="aae71-129">Authorization</span></span>|<span data-ttu-id="aae71-130">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="aae71-130">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="aae71-131">接受</span><span class="sxs-lookup"><span data-stu-id="aae71-131">Accept</span></span>|<span data-ttu-id="aae71-132">application/json</span><span class="sxs-lookup"><span data-stu-id="aae71-132">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="bda1d-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="bda1d-133">Request body</span></span>
-<span data-ttu-id="bda1d-134">在请求正文中，提供[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bda1d-134">In the request body, supply a JSON representation for the [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="aae71-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="aae71-133">Request body</span></span>
+<span data-ttu-id="aae71-134">在请求正文中，提供[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="aae71-134">In the request body, supply a JSON representation for the [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) object.</span></span>
 
-<span data-ttu-id="bda1d-135">下表显示创建[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="bda1d-135">The following table shows the properties that are required when you create the [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md).</span></span>
+<span data-ttu-id="aae71-135">下表显示创建[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="aae71-135">The following table shows the properties that are required when you create the [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md).</span></span>
 
-|<span data-ttu-id="bda1d-136">属性</span><span class="sxs-lookup"><span data-stu-id="bda1d-136">Property</span></span>|<span data-ttu-id="bda1d-137">类型</span><span class="sxs-lookup"><span data-stu-id="bda1d-137">Type</span></span>|<span data-ttu-id="bda1d-138">说明</span><span class="sxs-lookup"><span data-stu-id="bda1d-138">Description</span></span>|
+|<span data-ttu-id="aae71-136">属性</span><span class="sxs-lookup"><span data-stu-id="aae71-136">Property</span></span>|<span data-ttu-id="aae71-137">类型</span><span class="sxs-lookup"><span data-stu-id="aae71-137">Type</span></span>|<span data-ttu-id="aae71-138">说明</span><span class="sxs-lookup"><span data-stu-id="aae71-138">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="bda1d-139">id</span><span class="sxs-lookup"><span data-stu-id="bda1d-139">id</span></span>|<span data-ttu-id="bda1d-140">String</span><span class="sxs-lookup"><span data-stu-id="bda1d-140">String</span></span>|<span data-ttu-id="bda1d-141">这是实体的 Id。</span><span class="sxs-lookup"><span data-stu-id="bda1d-141">This is Id of the entity.</span></span>|
-|<span data-ttu-id="bda1d-142">deviceId</span><span class="sxs-lookup"><span data-stu-id="bda1d-142">deviceId</span></span>|<span data-ttu-id="bda1d-143">String</span><span class="sxs-lookup"><span data-stu-id="bda1d-143">String</span></span>|<span data-ttu-id="bda1d-144">设备的 id。</span><span class="sxs-lookup"><span data-stu-id="bda1d-144">The id of the device.</span></span>|
-|<span data-ttu-id="bda1d-145">userId</span><span class="sxs-lookup"><span data-stu-id="bda1d-145">userId</span></span>|<span data-ttu-id="bda1d-146">String</span><span class="sxs-lookup"><span data-stu-id="bda1d-146">String</span></span>|<span data-ttu-id="bda1d-147">用户的 id。</span><span class="sxs-lookup"><span data-stu-id="bda1d-147">The id of the user.</span></span>|
-|<span data-ttu-id="bda1d-148">deviceDisplayName</span><span class="sxs-lookup"><span data-stu-id="bda1d-148">deviceDisplayName</span></span>|<span data-ttu-id="bda1d-149">String</span><span class="sxs-lookup"><span data-stu-id="bda1d-149">String</span></span>|<span data-ttu-id="bda1d-150">设备显示名称。</span><span class="sxs-lookup"><span data-stu-id="bda1d-150">Device display name.</span></span>|
-|<span data-ttu-id="bda1d-151">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="bda1d-151">userPrincipalName</span></span>|<span data-ttu-id="bda1d-152">字符串</span><span class="sxs-lookup"><span data-stu-id="bda1d-152">String</span></span>|<span data-ttu-id="bda1d-153">用户主体名称。</span><span class="sxs-lookup"><span data-stu-id="bda1d-153">User principal name.</span></span>|
-|<span data-ttu-id="bda1d-154">状态</span><span class="sxs-lookup"><span data-stu-id="bda1d-154">status</span></span>|<span data-ttu-id="bda1d-155">windowsUpdateStatus</span><span class="sxs-lookup"><span data-stu-id="bda1d-155">windowsUpdateStatus</span></span>|<span data-ttu-id="bda1d-156">Windows udpate 状态。</span><span class="sxs-lookup"><span data-stu-id="bda1d-156">Windows udpate status.</span></span> <span data-ttu-id="bda1d-157">可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。</span><span class="sxs-lookup"><span data-stu-id="bda1d-157">Possible values are: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.</span></span>|
-|<span data-ttu-id="bda1d-158">qualityUpdateVersion</span><span class="sxs-lookup"><span data-stu-id="bda1d-158">qualityUpdateVersion</span></span>|<span data-ttu-id="bda1d-159">String</span><span class="sxs-lookup"><span data-stu-id="bda1d-159">String</span></span>|<span data-ttu-id="bda1d-160">设备的质量更新版本。</span><span class="sxs-lookup"><span data-stu-id="bda1d-160">The Quality Update Version of the device.</span></span>|
-|<span data-ttu-id="bda1d-161">featureUpdateVersion</span><span class="sxs-lookup"><span data-stu-id="bda1d-161">featureUpdateVersion</span></span>|<span data-ttu-id="bda1d-162">String</span><span class="sxs-lookup"><span data-stu-id="bda1d-162">String</span></span>|<span data-ttu-id="bda1d-163">设备的当前功能更新版本。</span><span class="sxs-lookup"><span data-stu-id="bda1d-163">The current feature update version of the device.</span></span>|
-|<span data-ttu-id="bda1d-164">lastScanDateTime</span><span class="sxs-lookup"><span data-stu-id="bda1d-164">lastScanDateTime</span></span>|<span data-ttu-id="bda1d-165">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="bda1d-165">DateTimeOffset</span></span>|<span data-ttu-id="bda1d-166">Windows Update 代理成功扫描的日期时间。</span><span class="sxs-lookup"><span data-stu-id="bda1d-166">The date time that the Windows Update Agent did a successful scan.</span></span>|
-|<span data-ttu-id="bda1d-167">lastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="bda1d-167">lastSyncDateTime</span></span>|<span data-ttu-id="bda1d-168">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="bda1d-168">DateTimeOffset</span></span>|<span data-ttu-id="bda1d-169">上次与 Microsoft Intune 同步设备的日期时间。</span><span class="sxs-lookup"><span data-stu-id="bda1d-169">Last date time that the device sync with with Microsoft Intune.</span></span>|
+|<span data-ttu-id="aae71-139">id</span><span class="sxs-lookup"><span data-stu-id="aae71-139">id</span></span>|<span data-ttu-id="aae71-140">String</span><span class="sxs-lookup"><span data-stu-id="aae71-140">String</span></span>|<span data-ttu-id="aae71-141">这是实体的 Id。</span><span class="sxs-lookup"><span data-stu-id="aae71-141">This is Id of the entity.</span></span>|
+|<span data-ttu-id="aae71-142">deviceId</span><span class="sxs-lookup"><span data-stu-id="aae71-142">deviceId</span></span>|<span data-ttu-id="aae71-143">String</span><span class="sxs-lookup"><span data-stu-id="aae71-143">String</span></span>|<span data-ttu-id="aae71-144">设备的 id。</span><span class="sxs-lookup"><span data-stu-id="aae71-144">The id of the device.</span></span>|
+|<span data-ttu-id="aae71-145">userId</span><span class="sxs-lookup"><span data-stu-id="aae71-145">userId</span></span>|<span data-ttu-id="aae71-146">String</span><span class="sxs-lookup"><span data-stu-id="aae71-146">String</span></span>|<span data-ttu-id="aae71-147">用户的 id。</span><span class="sxs-lookup"><span data-stu-id="aae71-147">The id of the user.</span></span>|
+|<span data-ttu-id="aae71-148">deviceDisplayName</span><span class="sxs-lookup"><span data-stu-id="aae71-148">deviceDisplayName</span></span>|<span data-ttu-id="aae71-149">String</span><span class="sxs-lookup"><span data-stu-id="aae71-149">String</span></span>|<span data-ttu-id="aae71-150">设备显示名称。</span><span class="sxs-lookup"><span data-stu-id="aae71-150">Device display name.</span></span>|
+|<span data-ttu-id="aae71-151">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="aae71-151">userPrincipalName</span></span>|<span data-ttu-id="aae71-152">字符串</span><span class="sxs-lookup"><span data-stu-id="aae71-152">String</span></span>|<span data-ttu-id="aae71-153">用户主体名称。</span><span class="sxs-lookup"><span data-stu-id="aae71-153">User principal name.</span></span>|
+|<span data-ttu-id="aae71-154">status</span><span class="sxs-lookup"><span data-stu-id="aae71-154">status</span></span>|[<span data-ttu-id="aae71-155">windowsUpdateStatus</span><span class="sxs-lookup"><span data-stu-id="aae71-155">windowsUpdateStatus</span></span>](../resources/intune-shared-windowsupdatestatus.md)|<span data-ttu-id="aae71-156">Windows udpate 状态。</span><span class="sxs-lookup"><span data-stu-id="aae71-156">Windows udpate status.</span></span> <span data-ttu-id="aae71-157">可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。</span><span class="sxs-lookup"><span data-stu-id="aae71-157">Possible values are: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.</span></span>|
+|<span data-ttu-id="aae71-158">qualityUpdateVersion</span><span class="sxs-lookup"><span data-stu-id="aae71-158">qualityUpdateVersion</span></span>|<span data-ttu-id="aae71-159">String</span><span class="sxs-lookup"><span data-stu-id="aae71-159">String</span></span>|<span data-ttu-id="aae71-160">设备的质量更新版本。</span><span class="sxs-lookup"><span data-stu-id="aae71-160">The Quality Update Version of the device.</span></span>|
+|<span data-ttu-id="aae71-161">featureUpdateVersion</span><span class="sxs-lookup"><span data-stu-id="aae71-161">featureUpdateVersion</span></span>|<span data-ttu-id="aae71-162">String</span><span class="sxs-lookup"><span data-stu-id="aae71-162">String</span></span>|<span data-ttu-id="aae71-163">设备的当前功能更新版本。</span><span class="sxs-lookup"><span data-stu-id="aae71-163">The current feature update version of the device.</span></span>|
+|<span data-ttu-id="aae71-164">lastScanDateTime</span><span class="sxs-lookup"><span data-stu-id="aae71-164">lastScanDateTime</span></span>|<span data-ttu-id="aae71-165">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="aae71-165">DateTimeOffset</span></span>|<span data-ttu-id="aae71-166">Windows Update 代理成功扫描的日期时间。</span><span class="sxs-lookup"><span data-stu-id="aae71-166">The date time that the Windows Update Agent did a successful scan.</span></span>|
+|<span data-ttu-id="aae71-167">lastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="aae71-167">lastSyncDateTime</span></span>|<span data-ttu-id="aae71-168">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="aae71-168">DateTimeOffset</span></span>|<span data-ttu-id="aae71-169">上次与 Microsoft Intune 同步设备的日期时间。</span><span class="sxs-lookup"><span data-stu-id="aae71-169">Last date time that the device sync with with Microsoft Intune.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="bda1d-170">响应</span><span class="sxs-lookup"><span data-stu-id="bda1d-170">Response</span></span>
-<span data-ttu-id="bda1d-171">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="bda1d-171">If successful, this method returns a `200 OK` response code and an updated [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="aae71-170">响应</span><span class="sxs-lookup"><span data-stu-id="aae71-170">Response</span></span>
+<span data-ttu-id="aae71-171">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="aae71-171">If successful, this method returns a `200 OK` response code and an updated [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="bda1d-172">示例</span><span class="sxs-lookup"><span data-stu-id="bda1d-172">Example</span></span>
+## <a name="example"></a><span data-ttu-id="aae71-172">示例</span><span class="sxs-lookup"><span data-stu-id="aae71-172">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="bda1d-173">请求</span><span class="sxs-lookup"><span data-stu-id="bda1d-173">Request</span></span>
-<span data-ttu-id="bda1d-174">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="bda1d-174">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="aae71-173">请求</span><span class="sxs-lookup"><span data-stu-id="aae71-173">Request</span></span>
+<span data-ttu-id="aae71-174">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="aae71-174">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsUpdateForBusinessConfiguration/deviceUpdateStates/{windowsUpdateStateId}
 Content-type: application/json
@@ -96,8 +96,8 @@ Content-length: 504
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="bda1d-175">响应</span><span class="sxs-lookup"><span data-stu-id="bda1d-175">Response</span></span>
-<span data-ttu-id="bda1d-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="bda1d-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="aae71-175">响应</span><span class="sxs-lookup"><span data-stu-id="aae71-175">Response</span></span>
+<span data-ttu-id="aae71-176">Here is an example of the response.</span><span class="sxs-lookup"><span data-stu-id="aae71-176">Here is an example of the response.</span></span> <span data-ttu-id="aae71-177">Note: The response object shown here may be truncated for brevity.</span><span class="sxs-lookup"><span data-stu-id="aae71-177">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="aae71-178">All of the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="aae71-178">All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
