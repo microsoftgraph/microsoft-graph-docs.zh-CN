@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: cd899248a53eab2b652ada9287c5e2ca98f5af95
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 77c5485adbbe27e5758d27663ef893e98ca2519e
+ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455009"
+ms.lasthandoff: 07/04/2020
+ms.locfileid: "45038661"
 ---
 # <a name="get-photo"></a>获取照片
 
@@ -18,11 +18,11 @@ ms.locfileid: "42455009"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取指定的 [profilePhoto](../resources/profilephoto.md) 或其元数据（**profilePhoto** 属性）。
+获取 Microsoft 365 中指定的 [profilePhoto](../resources/profilephoto.md) 或其元数据（**profilePhoto** 属性）。
 
-获取照片方法首先尝试从 Office 365 检索指定的照片。 如果 Office 365 中没有此照片，则 API 尝试从 Azure Active Directory 检索该照片。
+> **注意**：尝试获取**用户**照片时，此操作将首先尝试从 Microsoft 365 检索指定的照片。 如果 Microsoft 365 中没有此照片，则 API 将尝试从 Azure Active Directory 检索该照片。
 
-Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和 648x648。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。
+Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和 648x648。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。
 
 可以获取最大照片的元数据，也可以指定尺寸来获取相应照片尺寸的元数据。
 如果请求的大小不可用，则仍然可以获取用户已上载且可供使用的较小大小。
@@ -30,7 +30,7 @@ Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、24
 如果在用户邮箱或 Azure Active Directory 中找不到指定尺寸，则返回的是尺寸 1x1 和剩余元数据。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 > **注意：** beta 版中的获取照片方法支持用户的工作、学校或个人帐户。 但是获取照片元数据方法仅支持用户的工作或学校帐户，不支持个人帐户。
 
@@ -79,7 +79,7 @@ GET /groups/{id}/photos/{size}
 
 |**参数**|**类型**|**说明**|
 |:-----|:-----|:-----|
-|size  |String  | 照片尺寸。 Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和 648x648。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。 |
+|size  |String  | 照片尺寸。 Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和 648x648。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
@@ -87,14 +87,14 @@ GET /groups/{id}/photos/{size}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 ### <a name="response-for-getting-the-photo"></a>获取照片的响应
-如果成功，此方法返回 `200 OK` 响应代码和所请求照片的二进制数据。如果照片不存在，此操作返回 `404 Not Found`。
+If successful, this method returns a `200 OK` response code and binary data of the requested photo.  If no photo exists, the operation returns `404 Not Found`.
 ### <a name="response-for-getting-the-metadata-of-the-photo"></a>获取照片元数据的响应
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [profilePhoto](../resources/profilephoto.md) 对象。
 
