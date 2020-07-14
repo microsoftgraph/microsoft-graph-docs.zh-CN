@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 60dd51253001c8eec2bcb5af7363d02693ae1553
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b522a356a13c44fc1205e03390a1c712e6b681b0
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43402633"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45122572"
 ---
 # <a name="androidvpnconnectiontype-enum-type"></a>androidVpnConnectionType 枚举类型
 
@@ -26,11 +26,12 @@ Android VPN 连接类型。
 |成员|值|说明|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect。|
-|pulseSecure|1|脉冲安全。|
-|f5EdgeClient|双面|F5 边缘客户端。|
-|dellSonicWallMobileConnect|第三章|戴尔 SonicWALL 移动连接。|
+|pulseSecure|1 |脉冲安全。|
+|f5EdgeClient|2 |F5 边缘客户端。|
+|dellSonicWallMobileConnect|3 |戴尔 SonicWALL 移动连接。|
 |checkPointCapsuleVpn|4 |检查点胶囊 VPN。|
 |citrix|5 |Citrix|
+|microsoftTunnel|7 |Microsoft 隧道。|
 
 
 

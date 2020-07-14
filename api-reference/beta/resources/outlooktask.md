@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 7e4c7611361011bcd5ecddffeb5a96ffdb360759
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 45321b95596f5156cc1747a4127cbd815be50674
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463222"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123692"
 ---
 # <a name="outlooktask-resource-type"></a>outlookTask 资源类型
 
@@ -124,7 +124,6 @@ Prefer: outlook.timezone="Eastern Standard Time"
   "status": "string",
   "subject": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

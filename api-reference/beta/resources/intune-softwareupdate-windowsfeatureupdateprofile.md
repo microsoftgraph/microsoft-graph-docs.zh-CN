@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67cda2cb2864725e293f661659afa01d42b51707
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a800a24cd4eb41258a060b67f77f0eed5e479817
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436929"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45122523"
 ---
 # <a name="windowsfeatureupdateprofile-resource-type"></a>windowsFeatureUpdateProfile 资源类型
 
@@ -37,10 +37,11 @@ Windows 功能更新配置文件
 |:---|:---|:---|
 |id|字符串|实体的标识符。|
 |displayName|String|配置文件的显示名称。|
-|description|String|用户指定的配置文件的说明。|
+|说明|String|用户指定的配置文件的说明。|
 |featureUpdateVersion|String|将部署到此配置文件目标的设备的功能更新版本。 版本可以是任何受支持的版本，例如，1709、1803或1809等。|
 |createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
+|roleScopeTagIds|String collection|此功能更新实体的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -64,7 +65,10 @@ Windows 功能更新配置文件
   "description": "String",
   "featureUpdateVersion": "String",
   "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)"
+  "lastModifiedDateTime": "String (timestamp)",
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
 
