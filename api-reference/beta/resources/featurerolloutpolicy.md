@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8ec1f42ba951fa1bde827b2900b98e37c62d6160
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 52034dd9d25c5decf8feb4cd3af28ea95224adcb
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845279"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123825"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>featureRolloutPolicy 资源类型
 
@@ -43,7 +43,11 @@ ms.locfileid: "44845279"
 
 *  [PasswordHashSync](/azure/active-directory/hybrid/whatis-phs)   从 Azure AD Connect 中的 "可选功能" 页启用 PasswordHashSync。
 
-## <a name="methods"></a>Methods
+### <a name="emailasalternateid"></a>EmailAsAlternateId
+
+* 将备用电子邮件与用户帐户相关联。
+
+## <a name="methods"></a>方法
 
 | 方法                                                                         | 返回类型                                     | 说明                                                               |
 |:-------------------------------------------------------------------------------|:------------------------------------------------|:--------------------------------------------------------------------------|
@@ -68,7 +72,7 @@ ms.locfileid: "44845279"
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型        | Description |
+| 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |appliesTo|[directoryObject](directoryobject.md) 集合| 可为 NULL。 指定为其启用功能的 directoryObjects 列表。|
 

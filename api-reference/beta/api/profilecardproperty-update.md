@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: fa2073ba29270ea9c0dc95e22c192b3ae7decc3c
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: 122b8c0007067dafd2f7326cffc1b4e3b1697890
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080659"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123843"
 ---
 # <a name="update-profilecardproperty"></a>更新 profileCardProperty
 
@@ -37,7 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/organization/settings/profileCardProperties/{id}
+PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -73,7 +73,7 @@ PATCH https://graph.microsoft.com/beta/organization/settings/profileCardProperti
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/organization/settings/profileCardProperties/CustomAttribute1
+PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/CustomAttribute1
 Content-type: application/json
 
 {

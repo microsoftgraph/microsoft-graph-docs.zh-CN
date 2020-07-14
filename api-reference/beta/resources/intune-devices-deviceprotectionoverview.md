@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8e6f949cae0ae293c713ba52480d23c44ea093b3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5f6d4c325d11ee5f02277ad86f7bb038a2ac3b0f
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470723"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123720"
 ---
 # <a name="deviceprotectionoverview-resource-type"></a>deviceProtectionOverview 资源类型
 
@@ -35,6 +35,7 @@ ms.locfileid: "43470723"
 |pendingManualStepsDeviceCount|Int32|正在等待手动步骤设备计数。|
 |pendingOfflineScanDeviceCount|Int32|等待脱机扫描设备计数。|
 |criticalFailuresDeviceCount|Int32|严重故障设备计数。|
+|pendingQuickScanDeviceCount|Int32|等待快速扫描设备计数。 有效值-2147483648 到2147483647|
 
 ## <a name="relationships"></a>关系
 无
@@ -58,7 +59,8 @@ ms.locfileid: "43470723"
   "pendingRestartDeviceCount": 1024,
   "pendingManualStepsDeviceCount": 1024,
   "pendingOfflineScanDeviceCount": 1024,
-  "criticalFailuresDeviceCount": 1024
+  "criticalFailuresDeviceCount": 1024,
+  "pendingQuickScanDeviceCount": 1024
 }
 ```
 

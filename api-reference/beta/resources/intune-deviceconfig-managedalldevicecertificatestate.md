@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f6bd2a1511ea51962c67bee0be88b11c3579e3a
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 0684e9cd6e3ca4e34c74ec6315818d94cce208fd
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790101"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45124049"
 ---
 # <a name="managedalldevicecertificatestate-resource-type"></a>managedAllDeviceCertificateState 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "44790101"
 
 尚未记录
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 managedAllDeviceCertificateStates](../api/intune-deviceconfig-managedalldevicecertificatestate-list.md)|[managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)集合|列出[managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md)对象的属性和关系。|
@@ -36,6 +36,7 @@ ms.locfileid: "44790101"
 |:---|:---|:---|
 |id|String|实体的键。|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|撤消状态。 可取值为：`none`、`pending`、`issued`、`failed`、`revoked`。|
+|certificateRevokeStatusLastChangeDateTime|DateTimeOffset|上次更改吊销状态的时间|
 |managedDeviceDisplayName|String|设备显示名称|
 |userPrincipalName|String|用户主体名称|
 |certificateExpirationDateTime|DateTimeOffset|证书到期日期|
@@ -46,7 +47,6 @@ ms.locfileid: "44790101"
 |certificateKeyUsages|Int32|密钥用法|
 |certificateExtendedKeyUsages|String|增强型密钥使用|
 |certificateIssuanceDateTime|DateTimeOffset|颁发日期|
-|certificateRevokeStatusLastChangeDateTime|DateTimeOffset|上次更改吊销状态的时间|
 
 ## <a name="relationships"></a>关系
 无
@@ -64,6 +64,7 @@ ms.locfileid: "44790101"
   "@odata.type": "#microsoft.graph.managedAllDeviceCertificateState",
   "id": "String (identifier)",
   "certificateRevokeStatus": "String",
+  "certificateRevokeStatusLastChangeDateTime": "String (timestamp)",
   "managedDeviceDisplayName": "String",
   "userPrincipalName": "String",
   "certificateExpirationDateTime": "String (timestamp)",
@@ -73,8 +74,7 @@ ms.locfileid: "44790101"
   "certificateSubjectName": "String",
   "certificateKeyUsages": 1024,
   "certificateExtendedKeyUsages": "String",
-  "certificateIssuanceDateTime": "String (timestamp)",
-  "certificateRevokeStatusLastChangeDateTime": "String (timestamp)"
+  "certificateIssuanceDateTime": "String (timestamp)"
 }
 ```
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d9287bede55dcae67787e86758146dc9433f89d8
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: e255f849d447fb82f5b796cd5262652d0ac2526f
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792721"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45122943"
 ---
 # <a name="list-managedalldevicecertificatestates"></a>列出 managedAllDeviceCertificateStates
 
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 869
+Content-Length: 958
 
 {
   "value": [
@@ -73,6 +73,7 @@ Content-Length: 869
       "@odata.type": "#microsoft.graph.managedAllDeviceCertificateState",
       "id": "987c6a17-6a17-987c-176a-7c98176a7c98",
       "certificateRevokeStatus": "pending",
+      "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:34.9547208-08:00",
       "managedDeviceDisplayName": "Managed Device Display Name value",
       "userPrincipalName": "User Principal Name value",
       "certificateExpirationDateTime": "2017-01-01T00:02:14.9489247-08:00",
@@ -82,8 +83,7 @@ Content-Length: 869
       "certificateSubjectName": "Certificate Subject Name value",
       "certificateKeyUsages": 4,
       "certificateExtendedKeyUsages": "Certificate Extended Key Usages value",
-      "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00",
-      "certificateRevokeStatusLastChangeDateTime": "2016-12-31T23:59:41.5044473-08:00"
+      "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
     }
   ]
 }

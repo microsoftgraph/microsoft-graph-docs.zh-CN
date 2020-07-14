@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b9912a3fe3f2e88e09ea47bf3d5dca582ef132b8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c5f1950e1d42683b3e8d305c8c5386225f7dcecf
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43434625"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123202"
 ---
 # <a name="list-androidworkprofilevpnconfigurations"></a>列出 androidWorkProfileVpnConfigurations
 
@@ -23,7 +23,7 @@ ms.locfileid: "43434625"
 列出[androidWorkProfileVpnConfiguration](../resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md)对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[androidWorkProfileVpnConfiguration](../resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[androidWorkProfileVpnConfiguration](../resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md)对象集合。
 
 ## <a name="example"></a>示例
 
@@ -62,11 +62,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
 ### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2207
+Content-Length: 2592
 
 {
   "value": [
@@ -130,7 +130,18 @@ Content-Length: 2207
           "value": "Value value"
         }
       ],
-      "authenticationMethod": "usernameAndPassword"
+      "authenticationMethod": "usernameAndPassword",
+      "proxyServer": {
+        "@odata.type": "microsoft.graph.vpnProxyServer",
+        "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
+        "address": "Address value",
+        "port": 4
+      },
+      "targetedPackageIds": [
+        "Targeted Package Ids value"
+      ],
+      "alwaysOn": true,
+      "alwaysOnLockdown": true
     }
   ]
 }

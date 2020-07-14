@@ -1,15 +1,15 @@
 ---
 title: Microsoft Intune 中的设备管理-Microsoft Graph API
-description: 列出用于定义租户组织的管理设备的 Intune 终结点（REST）的 Microsoft Graph API。
+description: 列出用于定义租户组织的管理设备 (REST) 的适用于 Intune 终结点的 Microsoft Graph API。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a6043023bd734a571028baad6b0f8ad26e12d04e
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: ccbd1e60b39caf716b9059e0a3e145e42783cae0
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793470"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123902"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -79,6 +79,9 @@ ms.locfileid: "44793470"
 - [设备运行状况脚本运行摘要](intune-devices-devicehealthscriptrunsummary.md)
 - [设备运行状况脚本字符串参数](intune-devices-devicehealthscriptstringparameter.md)
 - [设备运行状况脚本时间计划](intune-devices-devicehealthscripttimeschedule.md)
+- [设备日志集合请求](intune-devices-devicelogcollectionrequest.md)
+- [设备日志集响应](intune-devices-devicelogcollectionresponse.md)
+- [设备日志集模板类型](intune-devices-devicelogcollectiontemplatetype.md)
 - [设备管理抽象复杂设置定义](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
 - [设备管理抽象复杂设置实例](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
 - [Device management autopilot 事件](intune-troubleshooting-devicemanagementautopilotevent.md)

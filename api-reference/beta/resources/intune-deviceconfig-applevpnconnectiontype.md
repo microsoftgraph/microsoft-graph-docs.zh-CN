@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: efb6a8c8c77a50f253b01f6a73a41eb922347254
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d31ca3ad0f3b216f727d1f4a8f6f12afa9520758
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470025"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45124084"
 ---
 # <a name="applevpnconnectiontype-enum-type"></a>appleVpnConnectionType 枚举类型
 
@@ -26,21 +26,22 @@ Apple VPN 连接类型。
 |成员|值|说明|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect。|
-|pulseSecure|1|脉冲安全。|
-|f5EdgeClient|双面|F5 边缘客户端。|
-|dellSonicWallMobileConnect|第三章|戴尔 SonicWALL 移动连接。|
+|pulseSecure|1 |脉冲安全。|
+|f5EdgeClient|2 |F5 边缘客户端。|
+|dellSonicWallMobileConnect|3 |戴尔 SonicWALL 移动连接。|
 |checkPointCapsuleVpn|4 |检查点胶囊 VPN。|
 |customVpn|5 |自定义 VPN。|
-|ciscoIPSec|6 |Cisco （IPSec）。|
+|ciscoIPSec|6 |Cisco (IPSec) 。|
 |citrix|7 |Citrix.|
 |ciscoAnyConnectV2|8 |Cisco AnyConnect V2。|
 |paloAltoGlobalProtect|9 |Palo Alto 网络 GlobalProtect。|
 |zscalerPrivateAccess|10 |Zscaler 私有访问。|
-|f5Access2018|11x17|F5 访问2018。|
+|f5Access2018|11 |F5 访问2018。|
 |citrixSso|12 |Citrix Sso。|
 |paloAltoGlobalProtectV2|13|Palo Alto 网络 GlobalProtect V2。|
 |ikEv2|14 |IKEv2.|
 |alwaysOn|15 |AlwaysOn.|
+|microsoftTunnel|16 |Microsoft 隧道。|
 
 
 

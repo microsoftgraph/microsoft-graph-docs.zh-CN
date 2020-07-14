@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3e35a9704f2028e1879c6b3d1988db6a2cc6f31b
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 85ac7d619966aaf926a001b2c5381d5101e7abef
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790843"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123545"
 ---
 # <a name="win32lobapp-resource-type"></a>win32LobApp 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "44790843"
 
 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 win32LobApps](../api/intune-apps-win32lobapp-list.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)集合|列出[win32LobApp](../resources/intune-apps-win32lobapp.md)对象的属性和关系。|
@@ -66,14 +66,15 @@ ms.locfileid: "44790843"
 |minimumMemoryInMB|Int32|安装此应用程序所需的最小物理内存的值。|
 |minimumNumberOfProcessors|Int32|安装此应用程序所需的最小处理器数的值。|
 |minimumCpuSpeedInMHz|Int32|安装此应用程序所需的最低 CPU 速度的值。|
-|detectionRules|[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)集合|检测到 Win32 业务线（LoB）应用程序的检测规则。|
-|requirementRules|[win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)集合|用于检测 Win32 业务线（LoB）应用程序的要求规则。|
+|detectionRules|[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)集合|用于检测 Win32 业务线 (LoB) 应用程序的检测规则。|
+|requirementRules|[win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)集合|用于检测 Win32 业务线 (LoB) 应用程序的要求规则。|
 |规则|[win32LobAppRule](../resources/intune-apps-win32lobapprule.md)集合|此应用程序的检测和要求规则。|
 |installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|此应用的安装体验。|
 |returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)集合|用于安装后行为的返回代码。|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|如果此 Win32 应用是 MSI 应用程序，则为 MSI 详细信息。|
 |setupFilePath|String|加密的 Win32LobApp 包中的安装程序文件的相对路径。|
 |installLanguage|String|尚未记录|
+|minimumSupportedWindowsRelease|String|支持的最小 windows 版本的值。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -200,7 +201,8 @@ ms.locfileid: "44790843"
     "publisher": "String"
   },
   "setupFilePath": "String",
-  "installLanguage": "String"
+  "installLanguage": "String",
+  "minimumSupportedWindowsRelease": "String"
 }
 ```
 

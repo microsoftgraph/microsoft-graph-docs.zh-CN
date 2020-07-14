@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a12d81edd4079b7bea9dabe576dfe57a6420cc10
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 5b9141829fa7e321d8447ca8b499511bcf8ae0b5
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793260"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123447"
 ---
 # <a name="get-win32lobapp"></a>获取 win32LobApp
 
@@ -70,7 +70,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3625
+Content-Length: 3707
 
 {
   "value": {
@@ -178,7 +178,8 @@ Content-Length: 3625
       "publisher": "Publisher value"
     },
     "setupFilePath": "Setup File Path value",
-    "installLanguage": "Install Language value"
+    "installLanguage": "Install Language value",
+    "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
   }
 }
 ```

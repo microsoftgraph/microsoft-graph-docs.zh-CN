@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 954a4030cacd8448e0ae1816afda69f4d02237bb
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 1dd3a03efe602b8b9baeedcd622f6a012ca6ef3c
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43449715"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45124035"
 ---
 # <a name="devicemanagementtemplatetype-enum-type"></a>deviceManagementTemplateType 枚举类型
 
@@ -34,6 +34,7 @@ ms.locfileid: "43449715"
 |microsoftEdgeSecurityBaseline|6 |Microsoft Edge 安全基准模板|
 |microsoftOffice365ProPlusSecurityBaseline|7 |Microsoft Office 365 专业增强版安全基准模板|
 |deviceCompliance|8 |设备合规性模板|
+|deviceConfigurationForOffice365|9 |Microsoft Office 365 设置的设备配置|
 
 
 

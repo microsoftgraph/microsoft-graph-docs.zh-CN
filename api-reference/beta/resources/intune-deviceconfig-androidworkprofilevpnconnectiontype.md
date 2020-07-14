@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f4c72f7980c440ee786b19eab882821ecf9f88a5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9a06647ac24b094b352d4b0a01b3cfcc654e55db
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470160"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123958"
 ---
 # <a name="androidworkprofilevpnconnectiontype-enum-type"></a>androidWorkProfileVpnConnectionType 枚举类型
 
@@ -26,12 +26,13 @@ Android 工作配置文件 VPN 连接类型。
 |成员|值|说明|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect。|
-|pulseSecure|1|脉冲安全。|
-|f5EdgeClient|双面|F5 边缘客户端。|
-|dellSonicWallMobileConnect|第三章|戴尔 SonicWALL 移动连接。|
+|pulseSecure|1 |脉冲安全。|
+|f5EdgeClient|2 |F5 边缘客户端。|
+|dellSonicWallMobileConnect|3 |戴尔 SonicWALL 移动连接。|
 |checkPointCapsuleVpn|4 |检查点胶囊 VPN。|
 |citrix|5 |Citrix|
 |paloAltoGlobalProtect|6 |Palo Alto 网络 GlobalProtect。|
+|microsoftTunnel|7 |Microsoft 隧道。|
 
 
 

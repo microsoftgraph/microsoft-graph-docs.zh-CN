@@ -1,15 +1,15 @@
 ---
 title: Microsoft Intune 中的设备配置-Microsoft Gaaph API
-description: 列出用于定义租户组织的配置设备的 Intune 终结点（REST）的 Microsoft Graph API。
+description: 列出用于定义租户组织的配置设备的 Intune 终结点 (REST) 的 Microsoft Graph API。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f7b00de9363d4145165596d8ded2339de1843df0
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 927ec039942d594fcb34665ed3ff0641904fcb60
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793477"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123923"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -44,6 +44,9 @@ ms.locfileid: "44793477"
 - [Android 设备所有者全局代理自动配置](intune-deviceconfig-androiddeviceownerglobalproxyautoconfig.md)
 - [Android 设备所有者全局代理直接](intune-deviceconfig-androiddeviceownerglobalproxydirect.md)
 - [Android 设备所有者导入的 PFX 证书配置文件](intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile.md)
+- [Android 设备所有者展台模式文件夹图标](intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md)
+- [Android 设备所有者展台模式图标大小](intune-deviceconfig-androiddeviceownerkioskmodeiconsize.md)
+- [Android 设备所有者展台模式屏幕方向](intune-deviceconfig-androiddeviceownerkioskmodescreenorientation.md)
 - [Android 设备所有者 PKCS 证书配置文件](intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md)
 - [Android 设备所有者播放存储模式](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Android 设备所有者必填密码类型](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
@@ -244,7 +247,6 @@ ms.locfileid: "44793477"
 - [加密报表策略详细信息](intune-deviceconfig-encryptionreportpolicydetails.md)
 - [加密状态](intune-deviceconfig-encryptionstate.md)
 - [扩展密钥用法](intune-deviceconfig-extendedkeyusage.md)
-- [功能 flighted 配置](intune-deviceconfig-featureflightedconfiguration.md)
 - [文件电子仓库状态](intune-deviceconfig-filevaultstate.md)
 - [防火墙证书吊销列表检查方法类型](intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)
 - [防火墙数据包排入队列方法类型](intune-deviceconfig-firewallpacketqueueingmethodtype.md)

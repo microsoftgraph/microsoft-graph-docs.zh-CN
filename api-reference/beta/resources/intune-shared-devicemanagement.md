@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b816acd87fb63291ed74f9f996b61d9c17537462
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: cff77ec43beca16f6aa1fdb497f7d2ec8bfc9aa0
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179163"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123874"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -29,16 +29,16 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 - 设备配置设置
 - 设备意向设置
 - 设备管理
-- 电子 SIM （ESIM）
+-  (ESIM) 的电子 SIM
 - 防御
 - 组策略分析
-- 通知
+- Notifications
 - 载入策略、设置和详细信息
 - 策略集
 - 资源访问策略
 - 远程访问
 - 远程协助合作伙伴
-- 基于角色的访问控制（RBAC）策略
+- 基于角色的访问控制 (RBAC) 策略
 - Reporting
 - 电信 expanse 管理合作伙伴
 - 疑难解答事件
@@ -55,7 +55,7 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |[sendCustomNotificationToCompanyPortal 操作](../api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal.md)|无|尚未记录|
 |**载入**|
 |[verifyWindowsEnrollmentAutoDiscovery function](../api/intune-shared-devicemanagement-verifywindowsenrollmentautodiscovery.md)|布尔值|尚未记录|
-|**基于角色的访问控制（RBAC）**|
+|**基于角色的访问控制 (RBAC) **|
 |[getEffectivePermissions 函数](../api/intune-shared-devicemanagement-geteffectivepermissions.md)|[rolePermission](../resources/intune-rbac-rolepermission.md) 集合|检索当前验证的用户的有效权限|
 |[getRoleScopeTagsByIds 函数](../api/intune-shared-devicemanagement-getrolescopetagsbyids.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)集合|尚未记录|
 |[getRoleScopeTagsByResource 函数](../api/intune-shared-devicemanagement-getrolescopetagsbyresource.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)集合|尚未记录|
@@ -64,7 +64,7 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|与设备关联的唯一标识符。|
+|id|String|与设备关联的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|Guid|给定租户的 Intune 帐户 ID|
 |legacyPcManangementEnabled|Boolean|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
@@ -134,14 +134,14 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |remoteActionAudits|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)集合|与租户的设备远程操作审核列表。|
 |windowsMalwareInformation|[windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md)集合|租户中受影响的恶意软件的列表。|
 |mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)集合|MobileAppTroubleshootingEvent 的集合属性。|
-|userExperienceAnalyticsOverview|userExperienceAnalyticsOverview|用户体验分析概述|
-|userExperienceAnalyticsBaselines|userExperienceAnalyticsBaseline 集合|用户体验分析基线|
-|userExperienceAnalyticsCategories|userExperienceAnalyticsCategory 集合|用户体验分析类别|
-|userExperienceAnalyticsDevicePerformance|userExperienceAnalyticsDevicePerformance 集合|User experience analytics 设备性能|
-|userExperienceAnalyticsRegressionSummary|userExperienceAnalyticsRegressionSummary|用户体验分析回归概况摘要|
-|userExperienceAnalyticsDeviceStartupHistory|userExperienceAnalyticsDeviceStartupHistory 集合|User experience analytics 设备启动历史记录|
-|userExperienceAnalyticsDeviceStartupProcesses|userExperienceAnalyticsDeviceStartupProcess 集合|用户体验分析设备启动过程|
-|userExperienceAnalyticsDeviceStartupProcessPerformance|userExperienceAnalyticsDeviceStartupProcessPerformance 集合|User experience analytics 设备启动过程性能|
+|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/userExperienceAnalyticsOverview.md)|用户体验分析概述|
+|userExperienceAnalyticsBaselines|[userExperienceAnalyticsBaseline](../resources/userExperienceAnalyticsBaseline.md)集合|用户体验分析基线|
+|userExperienceAnalyticsCategories|[userExperienceAnalyticsCategory](../resources/userExperienceAnalyticsCategory.md)集合|用户体验分析类别|
+|userExperienceAnalyticsDevicePerformance|[userExperienceAnalyticsDevicePerformance](../resources/userExperienceAnalyticsDevicePerformance.md)集合|User experience analytics 设备性能|
+|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/userExperienceAnalyticsRegressionSummary.md)|用户体验分析回归概况摘要|
+|userExperienceAnalyticsDeviceStartupHistory|[userExperienceAnalyticsDeviceStartupHistory](../resources/userExperienceAnalyticsDeviceStartupHistory.md)集合|User experience analytics 设备启动历史记录|
+|userExperienceAnalyticsDeviceStartupProcesses|[userExperienceAnalyticsDeviceStartupProcess](../resources/userExperienceAnalyticsDeviceStartupProcess.md)集合|用户体验分析设备启动过程|
+|userExperienceAnalyticsDeviceStartupProcessPerformance|[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/userExperienceAnalyticsDeviceStartupProcessPerformance.md)集合|User experience analytics 设备启动过程性能|
 |**开户**|
 |depOnboardingSettings|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)集合|每个租户的多个 DEP 令牌集合。|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)集合|导入的设备标识。|
@@ -179,7 +179,7 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |userPfxCertificates|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)集合|与用户关联的 PFX 证书的集合。|
 |**远程协助**|
 |remoteAssistancePartners|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 集合|远程帮助合作伙伴。|
-|**基于角色的访问控制（RBAC）**|
+|**基于角色的访问控制 (RBAC) **|
 |resourceOperations|[resourceOperation](../resources/intune-rbac-resourceoperation.md) 集合|资源操作。|
 |roleAssignments|[deviceAndAppManagementRoleAssignment](../resources/intune-rbac-deviceandappmanagementroleassignment.md) 集合|角色分配。|
 |roleDefinitions|[roleDefinition](../resources/intune-rbac-roledefinition.md) 集合|角色定义。|
@@ -188,7 +188,7 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |reports|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|单独报告|
 |**软件更新**|
 |windowsFeatureUpdateProfiles|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)集合|Windows 功能更新配置文件的集合|
-|**电信费用管理（TEM）**|
+|**电信费用管理 (TEM) **|
 |telecomExpenseManagementPartners|[telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) 集合|电信费用管理合作伙伴。|
 |**疑难解答**|
 |troubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) 集合|租户的故障排除事件列表。|

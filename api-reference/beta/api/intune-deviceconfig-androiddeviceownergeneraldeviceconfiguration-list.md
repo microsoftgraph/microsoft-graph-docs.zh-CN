@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 50a9d91cae7975d259720219932872b4579ee183
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: a452a4f706e207c4e338e9d919ae59f64963b547
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793120"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123363"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>列出 androidDeviceOwnerGeneralDeviceConfigurations
 
@@ -66,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5761
+Content-Length: 6112
 
 {
   "value": [
@@ -122,7 +122,6 @@ Content-Length: 5761
       "microsoftLauncherDockPresenceConfiguration": "show",
       "microsoftLauncherDockPresenceAllowUserModification": true,
       "microsoftLauncherSearchBarPlacementConfiguration": "top",
-      "microsoftLauncherSearchBarPlacementAllowUserModification": true,
       "enrollmentProfile": "dedicatedDevice",
       "dataRoamingBlocked": true,
       "dateTimeConfigurationBlocked": true,
@@ -157,6 +156,16 @@ Content-Length: 5761
       "kioskModeWiFiConfigurationEnabled": true,
       "kioskModeFlashlightConfigurationEnabled": true,
       "kioskModeMediaVolumeConfigurationEnabled": true,
+      "kioskModeShowDeviceInfo": true,
+      "kioskModeManagedSettingsEntryDisabled": true,
+      "kioskModeDebugMenuEasyAccessEnabled": true,
+      "kioskModeShowAppNotificationBadge": true,
+      "kioskModeScreenOrientation": "portrait",
+      "kioskModeIconSize": "smallest",
+      "kioskModeFolderIcon": "darkSquare",
+      "kioskModeWifiAllowedSsids": [
+        "Kiosk Mode Wifi Allowed Ssids value"
+      ],
       "microphoneForceMute": true,
       "networkEscapeHatchAllowed": true,
       "nfcBlockOutgoingBeam": true,

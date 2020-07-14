@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f88561d91c4560038027245291f8a04ab270fa22
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7dd44406211e8d0763625e5c1ae252444505265e
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469251"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123951"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>deviceManagementSettings 资源类型
 
@@ -26,14 +26,15 @@ ms.locfileid: "43469251"
 |属性|类型|说明|
 |:---|:---|:---|
 |deviceComplianceCheckinThresholdDays|Int32|允许设备无需签入即可保持符合性的天数。|
-|isScheduledActionEnabled|布尔值|是否为规则的计划操作启用此功能。|
+|isScheduledActionEnabled|Boolean|是否为规则的计划操作启用此功能。|
 |secureByDefault|Boolean|它为 true 时，如果不存在目标符合性策略，则设备应为不符合。|
-|enhancedJailBreak|布尔值|功能是否已启用或不适用于增强的 jailbreak 检测。|
+|enhancedJailBreak|Boolean|功能是否已启用或不适用于增强的 jailbreak 检测。|
 |deviceInactivityBeforeRetirementInDay|Int32|如果设备在指定天数内未签入，则可能会删除公司数据，并且设备将不受管理。 有效值为30至270|
 |derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|要用于此帐户的派生的凭据提供程序。 可取值为：`notConfigured`、`entrustDataCard`、`purebred`、`xTec`、`intercede`。|
 |derivedCredentialUrl|String|派生的凭据提供程序自助服务 URI。|
-|androidDeviceAdministratorEnrollmentEnabled|布尔值|用于确定是否为此帐户启用了 Android 设备管理员注册的属性。|
-|ignoreDevicesForUnsupportedSettingsEnabled|布尔值|用于确定是否忽略某些型号的设备上不受支持的合规性设置的属性。|
+|androidDeviceAdministratorEnrollmentEnabled|Boolean|用于确定是否为此帐户启用了 Android 设备管理员注册的属性。|
+|ignoreDevicesForUnsupportedSettingsEnabled|Boolean|用于确定是否忽略某些型号的设备上不受支持的合规性设置的属性。|
+|enableLogCollection|Boolean|确定是否应可使用 "日志收集" 功能。|
 
 ## <a name="relationships"></a>关系
 无
@@ -56,7 +57,8 @@ ms.locfileid: "43469251"
   "derivedCredentialProvider": "String",
   "derivedCredentialUrl": "String",
   "androidDeviceAdministratorEnrollmentEnabled": true,
-  "ignoreDevicesForUnsupportedSettingsEnabled": true
+  "ignoreDevicesForUnsupportedSettingsEnabled": true,
+  "enableLogCollection": true
 }
 ```
 

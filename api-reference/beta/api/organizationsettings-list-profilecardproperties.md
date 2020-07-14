@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 732671a5c968b13796113affa403d7c44a9691f9
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: fb13ea656842fc423a6627317020ccd93c88310b
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080745"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123966"
 ---
 # <a name="list-profilecardproperties"></a>列出 profileCardProperties
 
@@ -37,7 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/organization/settings/profileCardProperties
+GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/organization/settings/profileCardProperties
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/organization/settings/profileCardProperties
+GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-profilecardproperties-csharp-snippets.md)]

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 08de40e9f1c6685f8439f3bc72609486950bad5d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5e0034c22be5b8a33d2fe46e1115c2bed5a08958
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43323948"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45122712"
 ---
 # <a name="update-manageddeviceoverview"></a>更新 managedDeviceOverview
 
@@ -23,7 +23,7 @@ ms.locfileid: "43323948"
 更新 [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -53,7 +53,7 @@ PATCH /deviceManagement/managedDeviceOverview
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|摘要的唯一标识符|
+|id|String|摘要的唯一标识符|
 |enrolledDeviceCount|Int32|总注册设备计数。 不包括通过 Intune PC 代理管理的 PC 设备。|
 |mdmEnrolledCount|Int32|MDM 中注册的设备数|
 |dualEnrolledDeviceCount|Int32|MDM 和 EAS 中注册的设备数|
@@ -74,7 +74,7 @@ PATCH /deviceManagement/managedDeviceOverview
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 1114
+Content-length: 1158
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -93,6 +93,7 @@ Content-length: 1114
     "androidDeviceAdminCount": 7,
     "androidFullyManagedCount": 8,
     "androidWorkProfileCount": 7,
+    "androidCorporateWorkProfileCount": 0,
     "configMgrDeviceCount": 4
   },
   "deviceExchangeAccessStateSummary": {
@@ -116,11 +117,11 @@ Content-length: 1114
 ```
 
 ### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1227
+Content-Length: 1271
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -140,6 +141,7 @@ Content-Length: 1227
     "androidDeviceAdminCount": 7,
     "androidFullyManagedCount": 8,
     "androidWorkProfileCount": 7,
+    "androidCorporateWorkProfileCount": 0,
     "configMgrDeviceCount": 4
   },
   "deviceExchangeAccessStateSummary": {

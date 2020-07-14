@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3e3311aa409752353b3be63915a938a620e3aca2
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 3061d3735cbef06cc848d5f447493929214c743a
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793246"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123391"
 ---
 # <a name="update-win32lobapp"></a>更新 win32LobApp
 
@@ -84,14 +84,15 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |minimumMemoryInMB|Int32|安装此应用程序所需的最小物理内存的值。|
 |minimumNumberOfProcessors|Int32|安装此应用程序所需的最小处理器数的值。|
 |minimumCpuSpeedInMHz|Int32|安装此应用程序所需的最低 CPU 速度的值。|
-|detectionRules|[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)集合|检测到 Win32 业务线（LoB）应用程序的检测规则。|
-|requirementRules|[win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)集合|用于检测 Win32 业务线（LoB）应用程序的要求规则。|
+|detectionRules|[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)集合|用于检测 Win32 业务线 (LoB) 应用程序的检测规则。|
+|requirementRules|[win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)集合|用于检测 Win32 业务线 (LoB) 应用程序的要求规则。|
 |规则|[win32LobAppRule](../resources/intune-apps-win32lobapprule.md)集合|此应用程序的检测和要求规则。|
 |installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|此应用的安装体验。|
 |returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)集合|用于安装后行为的返回代码。|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|如果此 Win32 应用是 MSI 应用程序，则为 MSI 详细信息。|
 |setupFilePath|String|加密的 Win32LobApp 包中的安装程序文件的相对路径。|
 |installLanguage|String|尚未记录|
+|minimumSupportedWindowsRelease|String|支持的最小 windows 版本的值。|
 
 
 
@@ -105,7 +106,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 3224
+Content-length: 3304
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -209,7 +210,8 @@ Content-length: 3224
     "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value",
-  "installLanguage": "Install Language value"
+  "installLanguage": "Install Language value",
+  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
 }
 ```
 
@@ -218,7 +220,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3396
+Content-Length: 3476
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -325,7 +327,8 @@ Content-Length: 3396
     "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value",
-  "installLanguage": "Install Language value"
+  "installLanguage": "Install Language value",
+  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
 }
 ```
 

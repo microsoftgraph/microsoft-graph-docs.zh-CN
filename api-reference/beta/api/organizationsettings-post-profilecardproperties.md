@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 24fe1a2f4257475849ecb3c057843d7cd0661a21
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: e273490c6e189e291722885c48bb7c0e7fb2ea2a
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080632"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123930"
 ---
 # <a name="create-profilecardproperty"></a>创建 profileCardProperty
 
@@ -39,7 +39,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST https://graph.microsoft.com/beta/organization/settings/profileCardProperties
+POST https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -70,7 +70,7 @@ POST https://graph.microsoft.com/beta/organization/settings/profileCardPropertie
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/organization/settings/profileCardProperties
+POST https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties
 Content-type: application/json
 
 {

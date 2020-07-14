@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4fd5beb23e4581be24f6e119dae26403a245638c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b2f5b68a0cb3f2773b2ea6ab933cbf341515811e
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471263"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45124007"
 ---
 # <a name="create-windowsfeatureupdateprofile"></a>创建 windowsFeatureUpdateProfile
 
@@ -23,7 +23,7 @@ ms.locfileid: "43471263"
 创建新的[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -55,15 +55,16 @@ POST /deviceManagement/windowsFeatureUpdateProfiles
 |:---|:---|:---|
 |id|字符串|实体的标识符。|
 |displayName|String|配置文件的显示名称。|
-|description|String|用户指定的配置文件的说明。|
+|说明|String|用户指定的配置文件的说明。|
 |featureUpdateVersion|String|将部署到此配置文件目标的设备的功能更新版本。 版本可以是任何受支持的版本，例如，1709、1803或1809等。|
 |createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
+|roleScopeTagIds|String collection|此功能更新实体的范围标记列表。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -72,22 +73,25 @@ POST /deviceManagement/windowsFeatureUpdateProfiles
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfiles
 Content-type: application/json
-Content-length: 207
+Content-length: 269
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
   "displayName": "Display Name value",
   "description": "Description value",
-  "featureUpdateVersion": "Feature Update Version value"
+  "featureUpdateVersion": "Feature Update Version value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
 ### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 379
+Content-Length: 441
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
@@ -96,7 +100,10 @@ Content-Length: 379
   "description": "Description value",
   "featureUpdateVersion": "Feature Update Version value",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 

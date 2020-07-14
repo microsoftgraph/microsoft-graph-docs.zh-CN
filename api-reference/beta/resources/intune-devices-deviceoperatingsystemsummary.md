@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1c15adc462742adb734a503f55dc69af48bf0f82
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2b1a49496357a3688bd9f484d8759fdd0c2140eb
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470738"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45122628"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>deviceOperatingSystemSummary 资源类型
 
@@ -35,6 +35,7 @@ ms.locfileid: "43470738"
 |androidDeviceAdminCount|Int32|设备管理 Android 设备的数量。|
 |androidFullyManagedCount|Int32|完全管理的 Android 设备的数量。|
 |androidWorkProfileCount|Int32|工作配置文件 Android 设备的数量。|
+|androidCorporateWorkProfileCount|Int32|企业工作配置文件 Android 设备的计数。 也称为企业拥有的个人启用 ("解决) 。 有效值-1 到2147483647|
 |configMgrDeviceCount|Int32|ConfigMgr 托管设备的数量。|
 
 ## <a name="relationships"></a>关系
@@ -60,6 +61,7 @@ ms.locfileid: "43470738"
   "androidDeviceAdminCount": 1024,
   "androidFullyManagedCount": 1024,
   "androidWorkProfileCount": 1024,
+  "androidCorporateWorkProfileCount": 1024,
   "configMgrDeviceCount": 1024
 }
 ```
