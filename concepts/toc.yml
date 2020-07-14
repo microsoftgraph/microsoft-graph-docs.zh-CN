@@ -80,6 +80,16 @@ items:
         href: azuread-users-concept-overview.md
       - name: 组
         href: office365-groups-concept-overview.md
+      - name: 应用程序
+        items:
+          - name: 概述
+            href: applications-concept-overview.md
+          - name: 自动完成基于 SAML 的 SSO 配置
+            href: 'https://docs.microsoft.com/azure/active-directory/manage-apps/application-saml-sso-configure-api?context=/graph/context'
+          - name: 配置应用程序代理
+            href: application-proxy-configure-api.md
+          - name: 配置预配
+            href: 'https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api?context=/graph/context'
       - name: 日历
         displayName: Outlook
         items:
@@ -125,8 +135,6 @@ items:
             href: cloud-communications-callrecords.md
           - name: 管理机器人的电话号码
             href: cloud-communications-phone-number.md
-          - name: 限制
-            href: cloud-communications-limits.md
       - name: 跨设备体验
         displayName: Project Rome
         items:
@@ -265,6 +273,8 @@ items:
             href: social-intel-concept-overview.md
           - name: 获取相关人员的信息
             href: people-example.md
+          - name: 自定义个人资料卡片（预览）
+            href: add-properties-profilecard.md
       - name: 个人联系人
         displayName: 'Outlook, Outlook contacts, Outlook contact, People'
         items:
