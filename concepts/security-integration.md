@@ -4,12 +4,12 @@ description: 可使用本文中描述的任一选项与 Microsoft Graph 安全�
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: a3f5a2dc137a37012c4d7787d8c57c1045970be3
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: e3c4aa756de62995deef07604d968b172ffc2645
+ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219606"
+ms.lasthandoff: 07/04/2020
+ms.locfileid: "45038511"
 ---
 # <a name="security-solution-integrations-using-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API 实现安全解决方案集成
 
@@ -24,6 +24,8 @@ ms.locfileid: "42219606"
 | 解决方案类型 | 名称 | 连接器 | 公告 |
 |:-----|:--------|:--------|:----------|
 | SIEM |Splunk Enterprise 和 Splunk Cloud|[适用于 Splunk 的 Microsoft Graph 安全性 API 加载项](https://aka.ms/graphsecuritysplunkaddon) | [博客文章](https://aka.ms/graphsecuritysplunkaddonblogpost)<br>[Splunk on Cloud 博客文章](https://aka.ms/graphsecuritysplunkcloudblogpost)|
+| SIEM |QRadar|[Microsoft Graph 安全性 API 协议和支持的 QRadar DSM](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/com.ibm.dsm.doc/c_logsource_Microsoft_Graph_Security_protocol.html)| - |
+| ITSM |ServiceNow|[Microsoft Graph 安全性 API 接收集成](https://docs.servicenow.com/bundle/orlando-security-management/page/product/secops-integration-sir/secops-integration-ms-graph/concept/ms-graph-about.html)| - |
 | SOAR | Azure 逻辑应用/Microsoft Flow | [适用于 Azure 逻辑应用、Microsoft Flow 和 PowerApps 的 Microsoft Graph 安全性连接器](https://aka.ms/graphsecurityconnectors) | [博客文章](https://aka.ms/graphsecurityconnectorsblogpost) |
 | 自动化 | PowerShell 模块 | [Microsoft Graph 安全性 PowerShell 模块](https://aka.ms/graphsecuritypowershellmodule) | [博客文章](https://aka.ms/graphsecuritypowershellmodulepost) |
 | 报告 | Power BI | [适用于 Power BI 的 Microsoft Graph 安全性连接器](https://aka.ms/graphsecuritypowerbiconnectordoc) | [博客文章](https://aka.ms/graphsecuritypowerbiconnectorblogpost) |

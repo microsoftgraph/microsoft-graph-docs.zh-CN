@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 此方法使应用程序随着时间的推移跟踪驱动器及其子级的更改。
 doc_type: apiPageType
-ms.openlocfilehash: a914ea5648cde02805c967d3d639ec02d10c3068
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d86a02efc98d604bb970faea07c058e3a8651bfa
+ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517760"
+ms.lasthandoff: 07/04/2020
+ms.locfileid: "45038686"
 ---
 # <a name="track-changes-for-a-drive"></a>跟踪驱动器更改
 
@@ -20,17 +20,19 @@ ms.locfileid: "42517760"
 
 此方法使应用程序随着时间的推移跟踪驱动器及其子级的更改。
 
-应用程序首先调用不带任何参数的 `delta`。服务开始枚举驱动器的层次结构，返回项目页面和 `@odata.nextLink` 或 `@odata.deltaLink`，如下所述。应用程序应该使用 `@odata.nextLink` 继续调用，直到不再返回 `@odata.nextLink`，或响应内容为空更改集。
+Your app begins by calling `delta` without any parameters. The service starts enumerating the drive's hierarchy, returning pages of items and either an `@odata.nextLink` or an `@odata.deltaLink`, as described below.
+Your app should continue calling with the `@odata.nextLink` until you no longer see an `@odata.nextLink` returned, or you see a response with an empty set of changes.
 
-接收完所有更改后，可将这些更改应用于本地状态。若要在将来检查更改，请通过上一响应中的 `@odata.deltaLink` 再次调用 `delta`。
+After you have finished receiving all the changes, you may apply them to your local state.
+To check for changes in the future, call `delta` again with the `@odata.deltaLink` from the previous response.
 
-返回具有 [`deleted` 方面](../resources/deleted.md) 的已删除邮件。应从本地状态中删除设置此属性的项目。 
+Deleted items are returned with the [`deleted` facet](../resources/deleted.md). Items with this property set should be removed from your local state. 
 
-**注意：** 如果在同步所有更改后文件夹为空，则仅应在本地删除此文件夹。
+>**注意：** 如果在同步所有更改后文件夹为空，则仅应在本地删除此文件夹。
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -206,11 +208,13 @@ Content-type: application/json
 
 最后一页的项目将包括 **\@odata.deltaLink** 属性，此属性提供的 URL 以后可用于检索自当前项目集以来的更改。
 
-可能会发生本服务无法为特定标记提供更改列表的情况（例如，如果客户端在连接断开很长时间后尝试重新使用旧标记，或如果服务器状态已更改并需要新标记）。在这些情况下，本服务将返回带有错误响应的 `HTTP 410 Gone` 错误（包含以下错误代码之一）和 `Location` 标头（包含从头开始全新的增量枚举的新 nextLink）。完成全部枚举后，将返回的项目与本地状态进行比较，并遵循以下说明。
+There may be cases when the service can't provide a list of changes for a given token (for example, if a client tries to reuse an old token after being disconnected for a long time, or if server state has changed and a new token is required).
+In these cases the service will return an `HTTP 410 Gone` error with an error response containing one of the error codes below, and a `Location` header containing a new nextLink that starts a fresh delta enumeration from scratch.
+After finishing the full enumeration, compare the returned items with your local state and follow these instructions.
 
 | 错误类型                       | 说明                                                                                                                                                                                                                    |
 |:---------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `resyncChangesApplyDifferences`  | 如果确定上次同步时服务与你的本地更改保持同步，请将任意本地项目替换为服务器的版本（包括删除）。上载服务器并不知道的任意本地更改。 |
+| `resyncChangesApplyDifferences`  | Replace any local items with the server's version (including deletes) if you're sure that the service was up to date with your local changes when you last sync'd. Upload any local changes that the server doesn't know about. |
 | `resyncChangesUploadDifferences` | 上载服务未返回的任意本地项目，并上载与服务器版本不同的任意文件（如果不知道哪个是最新的，请保留两份）。                                       |
 
 ## <a name="retrieving-the-current-deltalink"></a>检索当前 deltaLink
@@ -266,9 +270,9 @@ Content-type: application/json
 
 ## <a name="remarks"></a>注解
 
-* 增量源显示每项的最新状态，而不是每个更改的最新状态。如果项目重命名两次，它只显示一次并且使用最新名称。
-* 出于各种原因，同一项可能在增量源中出现不止一次。你应使用最后一次出现的项目。
-* 项目中的 `parentReference` 属性将不包括**路径**的值。之所以出现这种情况，是因为重命名文件夹不会导致从 **delta** 返回文件夹的任何后代。**使用增量时应始终按 id 跟踪项目**。
+* The delta feed shows the latest state for each item, not each change. If an item were renamed twice, it would only show up once, with its latest name.
+* The same item may appear more than once in a delta feed, for various reasons. You should use the last occurrence you see.
+* The `parentReference` property on items will not include a value for **path**. This occurs because renaming a folder does not result in any descendants of the folder being returned from **delta**. **When using delta you should always track items by id**.
 * 在 OneDrive for Business 和 SharePoint 中，仅驱动器内的 `root` 文件夹支持 `delta`，其他文件夹并不支持。
 
 * Delta 查询不会返回某些 DriveItem 属性，具体取决于操作和服务类型，如下表所示。
@@ -287,6 +291,15 @@ Content-type: application/json
     |---------|----------|
     | 创建/修改 | 不适用 |
     | 删除 | `ctag`, `size` |
+
+## <a name="scanning-permissions-hierarchies"></a>扫描权限层次结构
+默认情况下，增量查询响应将包含查询中所有项目的发生了更改的共享信息，即使这些项目从其父级继承了权限，本身没有直接的共享更改。 这通常会导致执行后续调用，以便获取每个项目（而不仅仅是共享信息发生了更改的项目）的权限详细信息。 通过向增量查询请求添加 `Prefer: hierarchicalsharing` 标头，能够帮助你更好地了解权限更改的发生方式。
+
+如果提供了 `Prefer: hierarchicalsharing` 标头，将返回以下对象的共享信息：权限层次结构的根以及明确具有共享更改的项目。 如果共享更改是从某个项目中删除共享，你会发现一个空的共享 facet，用以区分从其父级继承的项目和唯一但没有共享链接的项目。 你还将在未共享用于建立初始作用域的权限层次结构的根处看到这个空的共享 facet。
+
+在许多扫描场景中，你可能会对权限的更改特别感兴趣。 若要在增量查询响应中明确哪些更改是由权限更改造成的，可提供 `Prefer: deltashowsharingchanges` 标头。 当提供此标头时，由于权限更改而出现在增量查询响应中的所有项目都将具有 `@microsoft.graph.sharedChanged":"True"` OData 注释。 此功能适用于 SharePoint 和 OneDrive for Business 帐户，但不适用于 OneDrive 消费者版本的帐户。
+
+> **注意：** 为了使用 `Prefer: deltashowsharingchanges` 标头，你需要使用 `Prefer: deltashowremovedasdeleted` 和 `Prefer: deltatraversepermissiongaps`。 这些标头值可以在一个标头中连接在一起：`Prefer: deltashowremovedasdeleted; deltatraversepermissiongaps; deltashowsharingchanges;`。
 
 ## <a name="error-responses"></a>错误响应
 
