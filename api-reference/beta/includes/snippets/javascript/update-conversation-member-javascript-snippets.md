@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 73a96ac91b80a9d508bab9c05087714c214b6960
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: cae052c91849c3c57dc7d01a5f8325f98ab1a50c
+ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633902"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45142568"
 ---
 ```javascript
 
@@ -16,6 +16,7 @@ const options = {
 const client = Client.init(options);
 
 const conversationMember = {
+  @odata.type:"#microsoft.graph.aadUserConversationMember",
   roles: ["owner"]
 };
 
