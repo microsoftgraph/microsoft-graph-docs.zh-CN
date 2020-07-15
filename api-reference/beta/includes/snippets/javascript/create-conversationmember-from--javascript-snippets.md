@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: edfa1240c77d2e09f1fd527d715a7cd0f644139d
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
-ms.translationtype: MT
+ms.openlocfilehash: bf5a2e0d81c22d3c944140b8395c49788853155b
+ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080900"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45142439"
 ---
 ```javascript
 
@@ -17,12 +17,8 @@ const client = Client.init(options);
 
 const conversationMember = {
     @odata.type: "#microsoft.graph.aadUserConversationMember",
-    roles: [
-        "owner"
-    ],
-    userId: "50dffbae-ad0f-428e-a86f-f53b0acfc641",
-    displayName: "Cameron White",
-    email: "CameronW@M365x987948.OnMicrosoft.com"
+    roles: ["owner"],
+    user@odata.bind: "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
 };
 
 let res = await client.api('/teams/{id}/members')

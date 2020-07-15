@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: af6c1eccfc30259f2b86fb5a65b81d95802b67f9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 54cd9f43c5232778b5887f17974d4f556a1f3842
+ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42505278"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45142202"
 ---
 # <a name="accounts-resource-type"></a>帐户资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,13 +26,13 @@ ms.locfileid: "42505278"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[获取帐户](../api/dynamics-account-get.md)|accounts|获取帐户对象。|
+|[获取帐户](../api/dynamics-account-get.md)|帐户|获取帐户对象。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|GUID|帐户的唯一 ID。|
-|number|字符串，最大大小为20|指定 G/L 帐号的号码。|
+|数字|字符串，最大大小为20|指定 G/L 帐号的号码。|
 |displayName|字符串，最大大小为50|指定 G/L 帐户的名称。|
 |“类别”|字符串，最大大小为20|指定 G/L 帐户的类别。|
 |子类别|字符串，最大大小为80|指定 G/L 帐户的帐户类别的子类别。|
@@ -58,5 +58,4 @@ ms.locfileid: "42505278"
   "blocked": "boolean",
   "lastModifiedDateTime": "datetime"
 }
-
 ```
