@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 7b8f147106c6914fe8fbbb404ca0c78210c02026
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 77a00aef382142046c44465a88909b90f966aa7e
+ms.sourcegitcommit: 90aaba4e965945cb6550cf625cbc03287f39e531
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45007184"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148583"
 ---
 # <a name="printoperation-resource-type"></a>printOperation 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "45007184"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|String|操作的标识符。 只读。|
-|status|[printOperationStatus](printoperationstatus.md)|操作的状态。 只读。|
+|状态|[printOperationStatus](printoperationstatus.md)|操作的状态。 只读。|
 |createdDateTime|DateTimeOffset|创建操作时的 DateTimeOffset。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -53,7 +53,6 @@ ms.locfileid: "45007184"
     "status": {"@odata.type": "microsoft.graph.printOperationStatus"},
     "createdDateTime": "2020-06-15T19:54:14.853Z"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
