@@ -5,15 +5,17 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d76456123f3d60428feb213b0ef8901b03db3fa1
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 1ffce12f12288c7d184a5fd0a591ca6c48dac59c
+ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124133"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45142225"
 ---
 # <a name="delete-members"></a>删除成员
 命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 从 [team](../resources/team.md) 删除新的 [conversationMember](../resources/conversationmember.md)。
 
