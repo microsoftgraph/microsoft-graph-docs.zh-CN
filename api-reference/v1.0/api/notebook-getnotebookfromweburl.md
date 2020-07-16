@@ -20,7 +20,7 @@ ms.locfileid: "44898056"
 
 Microsoft 365 上的位置可以是 Microsoft 365、组笔记本或 SharePoint 网站托管的团队笔记本上的用户笔记本。
 ## <a name="permissions"></a>权限
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -38,7 +38,7 @@ POST /sites/{id}/onenote/notebooks/GetNotebookFromWebUrl
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  | Bearer {token}。必需。 |
 | 接受 | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
@@ -87,7 +87,7 @@ Content-type: application/json
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
