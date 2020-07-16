@@ -12,36 +12,36 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 06/24/2020
 ms.locfileid: "44864033"
 ---
-# <a name="create-open-extension"></a><span data-ttu-id="61500-103">创建开放扩展</span><span class="sxs-lookup"><span data-stu-id="61500-103">Create open extension</span></span>
+# <a name="create-open-extension"></a><span data-ttu-id="88d0b-103">创建开放扩展</span><span class="sxs-lookup"><span data-stu-id="88d0b-103">Create open extension</span></span>
 
-<span data-ttu-id="61500-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="61500-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="88d0b-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="88d0b-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="61500-105">创建开放扩展（[openTypeExtension](../resources/opentypeextension.md) 对象），并在资源的新实例或现有实例中添加自定义属性。</span><span class="sxs-lookup"><span data-stu-id="61500-105">Create an open extension ([openTypeExtension](../resources/opentypeextension.md) object) and add custom properties in a new or existing instance of a resource.</span></span>
+<span data-ttu-id="88d0b-105">创建开放扩展（[openTypeExtension](../resources/opentypeextension.md) 对象），并在资源的新实例或现有实例中添加自定义属性。</span><span class="sxs-lookup"><span data-stu-id="88d0b-105">Create an open extension ([openTypeExtension](../resources/opentypeextension.md) object) and add custom properties in a new or existing instance of a resource.</span></span>
 
-> <span data-ttu-id="61500-106">**请注意：** 如果要在 Outlook 资源上创建开放扩展，请参阅 [openTypeExtension 资源类型](../resources/opentypeextension.md#outlook-specific-considerations)中的 **Outlook 特定注意事项**。</span><span class="sxs-lookup"><span data-stu-id="61500-106">**Note:** If you're creating open extensions on Outlook resources, see **Outlook-specific considerations** in [openTypeExtension resource type](../resources/opentypeextension.md#outlook-specific-considerations).</span></span>
+> <span data-ttu-id="88d0b-106">**请注意：** 如果要在 Outlook 资源上创建开放扩展，请参阅 [openTypeExtension 资源类型](../resources/opentypeextension.md#outlook-specific-considerations)中的 **Outlook 特定注意事项**。</span><span class="sxs-lookup"><span data-stu-id="88d0b-106">**Note:** If you're creating open extensions on Outlook resources, see **Outlook-specific considerations** in [openTypeExtension resource type](../resources/opentypeextension.md#outlook-specific-considerations).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="61500-107">权限</span><span class="sxs-lookup"><span data-stu-id="61500-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="88d0b-107">权限</span><span class="sxs-lookup"><span data-stu-id="88d0b-107">Permissions</span></span>
 
-<span data-ttu-id="61500-108">根据要在其中创建扩展的资源和所请求的权限类型（委派或应用程序），下表中指定的权限是指调用此 API 所需的最低限度的特权。</span><span class="sxs-lookup"><span data-stu-id="61500-108">Depending on the resource you're creating the extension in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API.</span></span> <span data-ttu-id="61500-109">若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="61500-109">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="88d0b-108">根据要在其中创建扩展的资源和所请求的权限类型（委派或应用程序），下表中指定的权限是指调用此 API 所需的最低限度的特权。</span><span class="sxs-lookup"><span data-stu-id="88d0b-108">Depending on the resource you're creating the extension in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API.</span></span> <span data-ttu-id="88d0b-109">若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="88d0b-109">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="61500-110">支持的资源</span><span class="sxs-lookup"><span data-stu-id="61500-110">Supported resource</span></span> | <span data-ttu-id="61500-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="61500-111">Delegated (work or school account)</span></span> | <span data-ttu-id="61500-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="61500-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="61500-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="61500-113">Application</span></span> |
+| <span data-ttu-id="88d0b-110">支持的资源</span><span class="sxs-lookup"><span data-stu-id="88d0b-110">Supported resource</span></span> | <span data-ttu-id="88d0b-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="88d0b-111">Delegated (work or school account)</span></span> | <span data-ttu-id="88d0b-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="88d0b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="88d0b-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="88d0b-113">Application</span></span> |
 |:-----|:-----|:-----|:-----|
-| [<span data-ttu-id="61500-114">设备</span><span class="sxs-lookup"><span data-stu-id="61500-114">device</span></span>](../resources/device.md) | <span data-ttu-id="61500-115">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="61500-115">Directory.AccessAsUser.All</span></span> | <span data-ttu-id="61500-116">不支持</span><span class="sxs-lookup"><span data-stu-id="61500-116">Not supported</span></span> | <span data-ttu-id="61500-117">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="61500-117">Device.ReadWrite.All</span></span> |
-| [<span data-ttu-id="61500-118">事件</span><span class="sxs-lookup"><span data-stu-id="61500-118">event</span></span>](../resources/event.md) | <span data-ttu-id="61500-119">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="61500-119">Calendars.ReadWrite</span></span> | <span data-ttu-id="61500-120">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="61500-120">Calendars.ReadWrite</span></span> | <span data-ttu-id="61500-121">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="61500-121">Calendars.ReadWrite</span></span> |
-| [<span data-ttu-id="61500-122">组</span><span class="sxs-lookup"><span data-stu-id="61500-122">group</span></span>](../resources/group.md) | <span data-ttu-id="61500-123">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="61500-123">Group.ReadWrite.All</span></span> | <span data-ttu-id="61500-124">不支持</span><span class="sxs-lookup"><span data-stu-id="61500-124">Not supported</span></span> | <span data-ttu-id="61500-125">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="61500-125">Group.ReadWrite.All</span></span> |
-| [<span data-ttu-id="61500-126">组事件</span><span class="sxs-lookup"><span data-stu-id="61500-126">group event</span></span>](../resources/event.md) | <span data-ttu-id="61500-127">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="61500-127">Group.ReadWrite.All</span></span> | <span data-ttu-id="61500-128">不支持</span><span class="sxs-lookup"><span data-stu-id="61500-128">Not supported</span></span> | <span data-ttu-id="61500-129">不支持</span><span class="sxs-lookup"><span data-stu-id="61500-129">Not supported</span></span> |
-| [<span data-ttu-id="61500-130">组帖子</span><span class="sxs-lookup"><span data-stu-id="61500-130">group post</span></span>](../resources/post.md) | <span data-ttu-id="61500-131">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="61500-131">Group.ReadWrite.All</span></span> | <span data-ttu-id="61500-132">不支持</span><span class="sxs-lookup"><span data-stu-id="61500-132">Not supported</span></span> | <span data-ttu-id="61500-133">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="61500-133">Group.ReadWrite.All</span></span> |
-| [<span data-ttu-id="61500-134">邮件</span><span class="sxs-lookup"><span data-stu-id="61500-134">message</span></span>](../resources/message.md) | <span data-ttu-id="61500-135">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="61500-135">Mail.ReadWrite</span></span> | <span data-ttu-id="61500-136">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="61500-136">Mail.ReadWrite</span></span> | <span data-ttu-id="61500-137">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="61500-137">Mail.ReadWrite</span></span> | 
-| [<span data-ttu-id="61500-138">组织</span><span class="sxs-lookup"><span data-stu-id="61500-138">organization</span></span>](../resources/organization.md) | <span data-ttu-id="61500-139">Organization.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="61500-139">Organization.ReadWrite.All</span></span> | <span data-ttu-id="61500-140">不支持</span><span class="sxs-lookup"><span data-stu-id="61500-140">Not supported</span></span> | <span data-ttu-id="61500-141">Organization.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="61500-141">Organization.ReadWrite.All</span></span> |
-| [<span data-ttu-id="61500-142">个人联系人</span><span class="sxs-lookup"><span data-stu-id="61500-142">personal contact</span></span>](../resources/contact.md) | <span data-ttu-id="61500-143">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="61500-143">Contacts.ReadWrite</span></span> | <span data-ttu-id="61500-144">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="61500-144">Contacts.ReadWrite</span></span> | <span data-ttu-id="61500-145">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="61500-145">Contacts.ReadWrite</span></span> |
-| [<span data-ttu-id="61500-146">用户</span><span class="sxs-lookup"><span data-stu-id="61500-146">user</span></span>](../resources/user.md) | <span data-ttu-id="61500-147">User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="61500-147">User.ReadWrite</span></span> | <span data-ttu-id="61500-148">User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="61500-148">User.ReadWrite</span></span> | <span data-ttu-id="61500-149">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="61500-149">User.ReadWrite.All</span></span> |
+| [<span data-ttu-id="88d0b-114">设备</span><span class="sxs-lookup"><span data-stu-id="88d0b-114">device</span></span>](../resources/device.md) | <span data-ttu-id="88d0b-115">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="88d0b-115">Directory.AccessAsUser.All</span></span> | <span data-ttu-id="88d0b-116">不支持</span><span class="sxs-lookup"><span data-stu-id="88d0b-116">Not supported</span></span> | <span data-ttu-id="88d0b-117">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88d0b-117">Device.ReadWrite.All</span></span> |
+| [<span data-ttu-id="88d0b-118">事件</span><span class="sxs-lookup"><span data-stu-id="88d0b-118">event</span></span>](../resources/event.md) | <span data-ttu-id="88d0b-119">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="88d0b-119">Calendars.ReadWrite</span></span> | <span data-ttu-id="88d0b-120">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="88d0b-120">Calendars.ReadWrite</span></span> | <span data-ttu-id="88d0b-121">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="88d0b-121">Calendars.ReadWrite</span></span> |
+| [<span data-ttu-id="88d0b-122">组</span><span class="sxs-lookup"><span data-stu-id="88d0b-122">group</span></span>](../resources/group.md) | <span data-ttu-id="88d0b-123">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88d0b-123">Group.ReadWrite.All</span></span> | <span data-ttu-id="88d0b-124">不支持</span><span class="sxs-lookup"><span data-stu-id="88d0b-124">Not supported</span></span> | <span data-ttu-id="88d0b-125">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88d0b-125">Group.ReadWrite.All</span></span> |
+| [<span data-ttu-id="88d0b-126">组事件</span><span class="sxs-lookup"><span data-stu-id="88d0b-126">group event</span></span>](../resources/event.md) | <span data-ttu-id="88d0b-127">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88d0b-127">Group.ReadWrite.All</span></span> | <span data-ttu-id="88d0b-128">不支持</span><span class="sxs-lookup"><span data-stu-id="88d0b-128">Not supported</span></span> | <span data-ttu-id="88d0b-129">不支持</span><span class="sxs-lookup"><span data-stu-id="88d0b-129">Not supported</span></span> |
+| [<span data-ttu-id="88d0b-130">组帖子</span><span class="sxs-lookup"><span data-stu-id="88d0b-130">group post</span></span>](../resources/post.md) | <span data-ttu-id="88d0b-131">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88d0b-131">Group.ReadWrite.All</span></span> | <span data-ttu-id="88d0b-132">不支持</span><span class="sxs-lookup"><span data-stu-id="88d0b-132">Not supported</span></span> | <span data-ttu-id="88d0b-133">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88d0b-133">Group.ReadWrite.All</span></span> |
+| [<span data-ttu-id="88d0b-134">邮件</span><span class="sxs-lookup"><span data-stu-id="88d0b-134">message</span></span>](../resources/message.md) | <span data-ttu-id="88d0b-135">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="88d0b-135">Mail.ReadWrite</span></span> | <span data-ttu-id="88d0b-136">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="88d0b-136">Mail.ReadWrite</span></span> | <span data-ttu-id="88d0b-137">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="88d0b-137">Mail.ReadWrite</span></span> | 
+| [<span data-ttu-id="88d0b-138">组织</span><span class="sxs-lookup"><span data-stu-id="88d0b-138">organization</span></span>](../resources/organization.md) | <span data-ttu-id="88d0b-139">Organization.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88d0b-139">Organization.ReadWrite.All</span></span> | <span data-ttu-id="88d0b-140">不支持</span><span class="sxs-lookup"><span data-stu-id="88d0b-140">Not supported</span></span> | <span data-ttu-id="88d0b-141">Organization.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88d0b-141">Organization.ReadWrite.All</span></span> |
+| [<span data-ttu-id="88d0b-142">个人联系人</span><span class="sxs-lookup"><span data-stu-id="88d0b-142">personal contact</span></span>](../resources/contact.md) | <span data-ttu-id="88d0b-143">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="88d0b-143">Contacts.ReadWrite</span></span> | <span data-ttu-id="88d0b-144">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="88d0b-144">Contacts.ReadWrite</span></span> | <span data-ttu-id="88d0b-145">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="88d0b-145">Contacts.ReadWrite</span></span> |
+| [<span data-ttu-id="88d0b-146">用户</span><span class="sxs-lookup"><span data-stu-id="88d0b-146">user</span></span>](../resources/user.md) | <span data-ttu-id="88d0b-147">User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="88d0b-147">User.ReadWrite</span></span> | <span data-ttu-id="88d0b-148">User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="88d0b-148">User.ReadWrite</span></span> | <span data-ttu-id="88d0b-149">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88d0b-149">User.ReadWrite.All</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="61500-150">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="61500-150">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="88d0b-150">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="88d0b-150">HTTP request</span></span>
 
-### <a name="create-an-extension-in-a-new-resource-instance"></a><span data-ttu-id="61500-151">在新资源实例中创建扩展插件</span><span class="sxs-lookup"><span data-stu-id="61500-151">Create an extension in a new resource instance</span></span>
+### <a name="create-an-extension-in-a-new-resource-instance"></a><span data-ttu-id="88d0b-151">在新资源实例中创建扩展插件</span><span class="sxs-lookup"><span data-stu-id="88d0b-151">Create an extension in a new resource instance</span></span>
 
-<span data-ttu-id="61500-152">使用创建实例时所用的同一 REST 请求。</span><span class="sxs-lookup"><span data-stu-id="61500-152">Use the same REST request that you use to create the instance.</span></span>
+<span data-ttu-id="88d0b-152">使用创建实例时所用的同一 REST 请求。</span><span class="sxs-lookup"><span data-stu-id="88d0b-152">Use the same REST request that you use to create the instance.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -52,13 +52,13 @@ POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
 ```
 
-><span data-ttu-id="61500-153">**请注意：** 此语法显示了一些创建受支持资源实例的常用方式。</span><span class="sxs-lookup"><span data-stu-id="61500-153">**Note:** This syntax shows some common ways to create the supported resource instances.</span></span> <span data-ttu-id="61500-154">可用来创建这些资源实例的所有其他 POST 语法均支持以类似的方式从中创建开放扩展。</span><span class="sxs-lookup"><span data-stu-id="61500-154">All other POST syntaxes that allows you to create these resource instances supports creating open extensions in them in a similar way.</span></span>
+><span data-ttu-id="88d0b-153">**请注意：** 此语法显示了一些创建受支持资源实例的常用方式。</span><span class="sxs-lookup"><span data-stu-id="88d0b-153">**Note:** This syntax shows some common ways to create the supported resource instances.</span></span> <span data-ttu-id="88d0b-154">可用来创建这些资源实例的所有其他 POST 语法均支持以类似的方式从中创建开放扩展。</span><span class="sxs-lookup"><span data-stu-id="88d0b-154">All other POST syntaxes that allows you to create these resource instances supports creating open extensions in them in a similar way.</span></span>
 
-<span data-ttu-id="61500-155">若要了解如何在请求正文中添加新资源实例和_扩展_的属性，请参阅[请求正文](#request-body)部分。</span><span class="sxs-lookup"><span data-stu-id="61500-155">See the [Request body](#request-body) section about including the properties of the new resource instance _and the extension_ in the request body.</span></span>
+<span data-ttu-id="88d0b-155">若要了解如何在请求正文中添加新资源实例和_扩展_的属性，请参阅[请求正文](#request-body)部分。</span><span class="sxs-lookup"><span data-stu-id="88d0b-155">See the [Request body](#request-body) section about including the properties of the new resource instance _and the extension_ in the request body.</span></span>
 
-### <a name="create-an-extension-in-an-existing-resource-instance"></a><span data-ttu-id="61500-156">在现有资源实例中创建扩展插件</span><span class="sxs-lookup"><span data-stu-id="61500-156">Create an extension in an existing resource instance</span></span>
+### <a name="create-an-extension-in-an-existing-resource-instance"></a><span data-ttu-id="88d0b-156">在现有资源实例中创建扩展插件</span><span class="sxs-lookup"><span data-stu-id="88d0b-156">Create an extension in an existing resource instance</span></span>
 
-<span data-ttu-id="61500-157">在请求中标识资源实例，然后对 **extensions** 导航属性执行 `POST`。</span><span class="sxs-lookup"><span data-stu-id="61500-157">Identify the resource instance in the request and do a `POST` to the **extensions** navigation property.</span></span>
+<span data-ttu-id="88d0b-157">在请求中标识资源实例，然后对 **extensions** 导航属性执行 `POST`。</span><span class="sxs-lookup"><span data-stu-id="88d0b-157">Identify the resource instance in the request and do a `POST` to the **extensions** navigation property.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -73,62 +73,62 @@ POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
 ```
 
-><span data-ttu-id="61500-158">**请注意：** 以上语法显示一些标识资源实例的常见方法，以便在其中创建一个扩展。</span><span class="sxs-lookup"><span data-stu-id="61500-158">**Note:** This syntax shows some common ways to identify a resource instance, in order to create an extension in it.</span></span> <span data-ttu-id="61500-159">可用来标识这些资源实例的所有其他语法均支持以类似的方式在其中创建开放扩展。</span><span class="sxs-lookup"><span data-stu-id="61500-159">All other syntaxes that allows you to identify these resource instances supports creating open extensions in them in a similar way.</span></span>
+><span data-ttu-id="88d0b-158">**请注意：** 以上语法显示一些标识资源实例的常见方法，以便在其中创建一个扩展。</span><span class="sxs-lookup"><span data-stu-id="88d0b-158">**Note:** This syntax shows some common ways to identify a resource instance, in order to create an extension in it.</span></span> <span data-ttu-id="88d0b-159">可用来标识这些资源实例的所有其他语法均支持以类似的方式在其中创建开放扩展。</span><span class="sxs-lookup"><span data-stu-id="88d0b-159">All other syntaxes that allows you to identify these resource instances supports creating open extensions in them in a similar way.</span></span>
 
-<span data-ttu-id="61500-160">若要了解如何在请求正文中添加_扩展_，请参阅[请求正文](#request-body)部分。</span><span class="sxs-lookup"><span data-stu-id="61500-160">See the [Request body](#request-body) section about including _the extension_ in the request body.</span></span>
+<span data-ttu-id="88d0b-160">若要了解如何在请求正文中添加_扩展_，请参阅[请求正文](#request-body)部分。</span><span class="sxs-lookup"><span data-stu-id="88d0b-160">See the [Request body](#request-body) section about including _the extension_ in the request body.</span></span>
 
-## <a name="path-parameters"></a><span data-ttu-id="61500-161">路径参数</span><span class="sxs-lookup"><span data-stu-id="61500-161">Path parameters</span></span>
-|<span data-ttu-id="61500-162">参数</span><span class="sxs-lookup"><span data-stu-id="61500-162">Parameter</span></span>|<span data-ttu-id="61500-163">类型</span><span class="sxs-lookup"><span data-stu-id="61500-163">Type</span></span>|<span data-ttu-id="61500-164">说明</span><span class="sxs-lookup"><span data-stu-id="61500-164">Description</span></span>|
+## <a name="path-parameters"></a><span data-ttu-id="88d0b-161">路径参数</span><span class="sxs-lookup"><span data-stu-id="88d0b-161">Path parameters</span></span>
+|<span data-ttu-id="88d0b-162">参数</span><span class="sxs-lookup"><span data-stu-id="88d0b-162">Parameter</span></span>|<span data-ttu-id="88d0b-163">类型</span><span class="sxs-lookup"><span data-stu-id="88d0b-163">Type</span></span>|<span data-ttu-id="88d0b-164">说明</span><span class="sxs-lookup"><span data-stu-id="88d0b-164">Description</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="61500-165">id</span><span class="sxs-lookup"><span data-stu-id="61500-165">id</span></span>|<span data-ttu-id="61500-166">string</span><span class="sxs-lookup"><span data-stu-id="61500-166">string</span></span>|<span data-ttu-id="61500-167">A unique identifier for an object in the corresponding collection.</span><span class="sxs-lookup"><span data-stu-id="61500-167">A unique identifier for an object in the corresponding collection.</span></span> <span data-ttu-id="61500-168">Required.</span><span class="sxs-lookup"><span data-stu-id="61500-168">Required.</span></span>|
+|<span data-ttu-id="88d0b-165">id</span><span class="sxs-lookup"><span data-stu-id="88d0b-165">id</span></span>|<span data-ttu-id="88d0b-166">string</span><span class="sxs-lookup"><span data-stu-id="88d0b-166">string</span></span>|<span data-ttu-id="88d0b-p104">对象在相应集合中的唯一标识符。必需。</span><span class="sxs-lookup"><span data-stu-id="88d0b-p104">A unique identifier for an object in the corresponding collection. Required.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="61500-169">请求标头</span><span class="sxs-lookup"><span data-stu-id="61500-169">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="88d0b-169">请求标头</span><span class="sxs-lookup"><span data-stu-id="88d0b-169">Request headers</span></span>
 
-| <span data-ttu-id="61500-170">名称</span><span class="sxs-lookup"><span data-stu-id="61500-170">Name</span></span>       | <span data-ttu-id="61500-171">值</span><span class="sxs-lookup"><span data-stu-id="61500-171">Value</span></span> |
+| <span data-ttu-id="88d0b-170">名称</span><span class="sxs-lookup"><span data-stu-id="88d0b-170">Name</span></span>       | <span data-ttu-id="88d0b-171">值</span><span class="sxs-lookup"><span data-stu-id="88d0b-171">Value</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="61500-172">Authorization</span><span class="sxs-lookup"><span data-stu-id="61500-172">Authorization</span></span> | <span data-ttu-id="61500-173">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="61500-173">Bearer {token}.</span></span> <span data-ttu-id="61500-174">Required.</span><span class="sxs-lookup"><span data-stu-id="61500-174">Required.</span></span> |
-| <span data-ttu-id="61500-175">Content-Type</span><span class="sxs-lookup"><span data-stu-id="61500-175">Content-Type</span></span> | <span data-ttu-id="61500-176">application/json</span><span class="sxs-lookup"><span data-stu-id="61500-176">application/json</span></span> |
+| <span data-ttu-id="88d0b-172">Authorization</span><span class="sxs-lookup"><span data-stu-id="88d0b-172">Authorization</span></span> | <span data-ttu-id="88d0b-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="88d0b-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="88d0b-175">Content-Type</span><span class="sxs-lookup"><span data-stu-id="88d0b-175">Content-Type</span></span> | <span data-ttu-id="88d0b-176">application/json</span><span class="sxs-lookup"><span data-stu-id="88d0b-176">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="61500-177">请求正文</span><span class="sxs-lookup"><span data-stu-id="61500-177">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="88d0b-177">请求正文</span><span class="sxs-lookup"><span data-stu-id="88d0b-177">Request body</span></span>
 
-<span data-ttu-id="61500-178">Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md), with the following required name-value pairs, and any additional custom data.</span><span class="sxs-lookup"><span data-stu-id="61500-178">Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md), with the following required name-value pairs, and any additional custom data.</span></span> <span data-ttu-id="61500-179">The data in the JSON payload can be primitive types, or arrays of primitive types.</span><span class="sxs-lookup"><span data-stu-id="61500-179">The data in the JSON payload can be primitive types, or arrays of primitive types.</span></span>
+<span data-ttu-id="88d0b-p106">提供 [openTypeExtension](../resources/opentypeextension.md) 的 JSON 正文（具有以下所需的名称-值对）以及其他任意自定义数据。JSON 负载中的数据可以是基元类型或基元类型数组。</span><span class="sxs-lookup"><span data-stu-id="88d0b-p106">Provide a JSON body of an [openTypeExtension](../resources/opentypeextension.md), with the following required name-value pairs, and any additional custom data. The data in the JSON payload can be primitive types, or arrays of primitive types.</span></span>
 
-| <span data-ttu-id="61500-180">名称</span><span class="sxs-lookup"><span data-stu-id="61500-180">Name</span></span>       | <span data-ttu-id="61500-181">值</span><span class="sxs-lookup"><span data-stu-id="61500-181">Value</span></span> |
+| <span data-ttu-id="88d0b-180">名称</span><span class="sxs-lookup"><span data-stu-id="88d0b-180">Name</span></span>       | <span data-ttu-id="88d0b-181">值</span><span class="sxs-lookup"><span data-stu-id="88d0b-181">Value</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="61500-182">@odata.type</span><span class="sxs-lookup"><span data-stu-id="61500-182">@odata.type</span></span> | <span data-ttu-id="61500-183">microsoft.graph.openTypeExtension</span><span class="sxs-lookup"><span data-stu-id="61500-183">microsoft.graph.openTypeExtension</span></span> |
-| <span data-ttu-id="61500-184">extensionName</span><span class="sxs-lookup"><span data-stu-id="61500-184">extensionName</span></span> | <span data-ttu-id="61500-185">%unique_string%</span><span class="sxs-lookup"><span data-stu-id="61500-185">%unique_string%</span></span> |
+| <span data-ttu-id="88d0b-182">@odata.type</span><span class="sxs-lookup"><span data-stu-id="88d0b-182">@odata.type</span></span> | <span data-ttu-id="88d0b-183">microsoft.graph.openTypeExtension</span><span class="sxs-lookup"><span data-stu-id="88d0b-183">microsoft.graph.openTypeExtension</span></span> |
+| <span data-ttu-id="88d0b-184">extensionName</span><span class="sxs-lookup"><span data-stu-id="88d0b-184">extensionName</span></span> | <span data-ttu-id="88d0b-185">%unique_string%</span><span class="sxs-lookup"><span data-stu-id="88d0b-185">%unique_string%</span></span> |
 
-<span data-ttu-id="61500-186">在_新_资源实例中创建扩展插件时，除了新的 **openTypeExtension** 对象之外，还要提供 JSON 表示形式的相关属性才能创建此类资源实例。</span><span class="sxs-lookup"><span data-stu-id="61500-186">When creating an extension in a _new_ resource instance, in addition to the new **openTypeExtension** object, provide a JSON representation of the relevant properties to create such a resource instance.</span></span>
+<span data-ttu-id="88d0b-186">在_新_资源实例中创建扩展插件时，除了新的 **openTypeExtension** 对象之外，还要提供 JSON 表示形式的相关属性才能创建此类资源实例。</span><span class="sxs-lookup"><span data-stu-id="88d0b-186">When creating an extension in a _new_ resource instance, in addition to the new **openTypeExtension** object, provide a JSON representation of the relevant properties to create such a resource instance.</span></span>
 
-## <a name="response"></a><span data-ttu-id="61500-187">响应</span><span class="sxs-lookup"><span data-stu-id="61500-187">Response</span></span>
+## <a name="response"></a><span data-ttu-id="88d0b-187">响应</span><span class="sxs-lookup"><span data-stu-id="88d0b-187">Response</span></span>
 
-### <a name="response-code"></a><span data-ttu-id="61500-188">响应代码</span><span class="sxs-lookup"><span data-stu-id="61500-188">Response code</span></span>
+### <a name="response-code"></a><span data-ttu-id="88d0b-188">响应代码</span><span class="sxs-lookup"><span data-stu-id="88d0b-188">Response code</span></span>
 
-<span data-ttu-id="61500-189">响应代码可以是 `201 Created`，也可以是 `202 Accepted`，具体视操作而定。</span><span class="sxs-lookup"><span data-stu-id="61500-189">Depending on the operation, the response code can be `201 Created` or `202 Accepted`.</span></span>
+<span data-ttu-id="88d0b-189">响应代码可以是 `201 Created`，也可以是 `202 Accepted`，具体视操作而定。</span><span class="sxs-lookup"><span data-stu-id="88d0b-189">Depending on the operation, the response code can be `201 Created` or `202 Accepted`.</span></span>
 
-<span data-ttu-id="61500-190">使用创建资源实例时所用的操作创建扩展时，操作所返回的响应代码与通过该操作创建不带扩展的资源实例时返回的代码相同。</span><span class="sxs-lookup"><span data-stu-id="61500-190">When you create an extension using the same operation that you use to create a resource instance, the operation returns the same response code that it returns when you use the operation to create the resource instance without the extension.</span></span>
-<span data-ttu-id="61500-191">请参阅有关创建实例的相应主题，如[上 ](#create-an-extension-in-a-new-resource-instance)所列。</span><span class="sxs-lookup"><span data-stu-id="61500-191">Refer to the corresponding topics for creating the instance, as listed [above](#create-an-extension-in-a-new-resource-instance).</span></span>
+<span data-ttu-id="88d0b-190">使用创建资源实例时所用的操作创建扩展时，操作所返回的响应代码与通过该操作创建不带扩展的资源实例时返回的代码相同。</span><span class="sxs-lookup"><span data-stu-id="88d0b-190">When you create an extension using the same operation that you use to create a resource instance, the operation returns the same response code that it returns when you use the operation to create the resource instance without the extension.</span></span>
+<span data-ttu-id="88d0b-191">请参阅有关创建实例的相应主题，如[上 ](#create-an-extension-in-a-new-resource-instance)所列。</span><span class="sxs-lookup"><span data-stu-id="88d0b-191">Refer to the corresponding topics for creating the instance, as listed [above](#create-an-extension-in-a-new-resource-instance).</span></span>
 
-### <a name="response-body"></a><span data-ttu-id="61500-192">响应正文</span><span class="sxs-lookup"><span data-stu-id="61500-192">Response body</span></span>
+### <a name="response-body"></a><span data-ttu-id="88d0b-192">响应正文</span><span class="sxs-lookup"><span data-stu-id="88d0b-192">Response body</span></span>
 
-| <span data-ttu-id="61500-193">应用场景</span><span class="sxs-lookup"><span data-stu-id="61500-193">Scenario</span></span>       | <span data-ttu-id="61500-194">资源</span><span class="sxs-lookup"><span data-stu-id="61500-194">Resource</span></span>  | <span data-ttu-id="61500-195">响应正文</span><span class="sxs-lookup"><span data-stu-id="61500-195">Response body</span></span> |
+| <span data-ttu-id="88d0b-193">应用场景</span><span class="sxs-lookup"><span data-stu-id="88d0b-193">Scenario</span></span>       | <span data-ttu-id="88d0b-194">资源</span><span class="sxs-lookup"><span data-stu-id="88d0b-194">Resource</span></span>  | <span data-ttu-id="88d0b-195">响应正文</span><span class="sxs-lookup"><span data-stu-id="88d0b-195">Response body</span></span> |
 |:---------------|:----------|:--------------|
-| <span data-ttu-id="61500-196">在显式创建_新_资源实例的同时创建扩展插件</span><span class="sxs-lookup"><span data-stu-id="61500-196">Creating an extension while explicitly creating a _new_ resource instance</span></span> | <span data-ttu-id="61500-197">[联系人](../resources/contact.md)、[事件](../resources/event.md)、[邮件](../resources/message.md)</span><span class="sxs-lookup"><span data-stu-id="61500-197">[contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md)</span></span> | <span data-ttu-id="61500-198">包括使用 [openTypeExtension](../resources/opentypeextension.md) 对象扩展的新实例。</span><span class="sxs-lookup"><span data-stu-id="61500-198">Includes the new instance expanded with the [openTypeExtension](../resources/opentypeextension.md) object.</span></span> |
-| <span data-ttu-id="61500-199">在隐式创建资源实例的同时创建扩展插件</span><span class="sxs-lookup"><span data-stu-id="61500-199">Creating an extension while implicitly creating a resource instance</span></span> | [<span data-ttu-id="61500-200">帖子</span><span class="sxs-lookup"><span data-stu-id="61500-200">post</span></span>](../resources/post.md) | <span data-ttu-id="61500-201">响应只包括响应代码，不包括响应正文。</span><span class="sxs-lookup"><span data-stu-id="61500-201">The response includes only a response code but not a response body.</span></span> |
-| <span data-ttu-id="61500-202">在_现有_资源实例中创建扩展插件</span><span class="sxs-lookup"><span data-stu-id="61500-202">Creating an extension in an _existing_ resource instance</span></span> | <span data-ttu-id="61500-203">所有支持的资源</span><span class="sxs-lookup"><span data-stu-id="61500-203">All supported resources</span></span> | <span data-ttu-id="61500-204">包括 **openTypeExtension** 对象。</span><span class="sxs-lookup"><span data-stu-id="61500-204">Includes the **openTypeExtension** object.</span></span> |
+| <span data-ttu-id="88d0b-196">在显式创建_新_资源实例的同时创建扩展插件</span><span class="sxs-lookup"><span data-stu-id="88d0b-196">Creating an extension while explicitly creating a _new_ resource instance</span></span> | <span data-ttu-id="88d0b-197">[联系人](../resources/contact.md)、[事件](../resources/event.md)、[邮件](../resources/message.md)</span><span class="sxs-lookup"><span data-stu-id="88d0b-197">[contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md)</span></span> | <span data-ttu-id="88d0b-198">包括使用 [openTypeExtension](../resources/opentypeextension.md) 对象扩展的新实例。</span><span class="sxs-lookup"><span data-stu-id="88d0b-198">Includes the new instance expanded with the [openTypeExtension](../resources/opentypeextension.md) object.</span></span> |
+| <span data-ttu-id="88d0b-199">在隐式创建资源实例的同时创建扩展插件</span><span class="sxs-lookup"><span data-stu-id="88d0b-199">Creating an extension while implicitly creating a resource instance</span></span> | [<span data-ttu-id="88d0b-200">帖子</span><span class="sxs-lookup"><span data-stu-id="88d0b-200">post</span></span>](../resources/post.md) | <span data-ttu-id="88d0b-201">响应只包括响应代码，不包括响应正文。</span><span class="sxs-lookup"><span data-stu-id="88d0b-201">The response includes only a response code but not a response body.</span></span> |
+| <span data-ttu-id="88d0b-202">在_现有_资源实例中创建扩展插件</span><span class="sxs-lookup"><span data-stu-id="88d0b-202">Creating an extension in an _existing_ resource instance</span></span> | <span data-ttu-id="88d0b-203">所有支持的资源</span><span class="sxs-lookup"><span data-stu-id="88d0b-203">All supported resources</span></span> | <span data-ttu-id="88d0b-204">包括 **openTypeExtension** 对象。</span><span class="sxs-lookup"><span data-stu-id="88d0b-204">Includes the **openTypeExtension** object.</span></span> |
 
-## <a name="example"></a><span data-ttu-id="61500-205">示例</span><span class="sxs-lookup"><span data-stu-id="61500-205">Example</span></span>
+## <a name="example"></a><span data-ttu-id="88d0b-205">示例</span><span class="sxs-lookup"><span data-stu-id="88d0b-205">Example</span></span>
 
-### <a name="request-1"></a><span data-ttu-id="61500-206">请求 1</span><span class="sxs-lookup"><span data-stu-id="61500-206">Request 1</span></span>
+### <a name="request-1"></a><span data-ttu-id="88d0b-206">请求 1</span><span class="sxs-lookup"><span data-stu-id="88d0b-206">Request 1</span></span>
 
-<span data-ttu-id="61500-207">The first example creates a message and an extension in the same call.</span><span class="sxs-lookup"><span data-stu-id="61500-207">The first example creates a message and an extension in the same call.</span></span> <span data-ttu-id="61500-208">The request body includes the following:</span><span class="sxs-lookup"><span data-stu-id="61500-208">The request body includes the following:</span></span>
+<span data-ttu-id="88d0b-p108">第一个示例在同一个调用中创建一个邮件和一个扩展。请求正文包含以下内容：</span><span class="sxs-lookup"><span data-stu-id="88d0b-p108">The first example creates a message and an extension in the same call. The request body includes the following:</span></span>
 
-- <span data-ttu-id="61500-209">新邮件的典型 **subject**、**body** 和 **toRecipients** 属性。</span><span class="sxs-lookup"><span data-stu-id="61500-209">The **subject**, **body**, and **toRecipients** properties typical of a new message.</span></span>
-- <span data-ttu-id="61500-210">对于扩展：</span><span class="sxs-lookup"><span data-stu-id="61500-210">And for the extension:</span></span>
+- <span data-ttu-id="88d0b-209">新邮件的典型 **subject**、**body** 和 **toRecipients** 属性。</span><span class="sxs-lookup"><span data-stu-id="88d0b-209">The **subject**, **body**, and **toRecipients** properties typical of a new message.</span></span>
+- <span data-ttu-id="88d0b-210">对于扩展：</span><span class="sxs-lookup"><span data-stu-id="88d0b-210">And for the extension:</span></span>
 
-  - <span data-ttu-id="61500-211">`microsoft.graph.openTypeExtension` 类型。</span><span class="sxs-lookup"><span data-stu-id="61500-211">The type `microsoft.graph.openTypeExtension`.</span></span>
-  - <span data-ttu-id="61500-212">扩展名“Com.Contoso.Referral”。</span><span class="sxs-lookup"><span data-stu-id="61500-212">The extension name "Com.Contoso.Referral".</span></span>
-  - <span data-ttu-id="61500-213">存储为 JSON 有效负载中的 3 个自定义属性的其他数据：`companyName`、`expirationDate` 和 `dealValue`。</span><span class="sxs-lookup"><span data-stu-id="61500-213">Additional data to be stored as three custom properties in the JSON payload: `companyName`, `expirationDate`, and `dealValue`.</span></span>
+  - <span data-ttu-id="88d0b-211">`microsoft.graph.openTypeExtension` 类型。</span><span class="sxs-lookup"><span data-stu-id="88d0b-211">The type `microsoft.graph.openTypeExtension`.</span></span>
+  - <span data-ttu-id="88d0b-212">扩展名“Com.Contoso.Referral”。</span><span class="sxs-lookup"><span data-stu-id="88d0b-212">The extension name "Com.Contoso.Referral".</span></span>
+  - <span data-ttu-id="88d0b-213">存储为 JSON 有效负载中的 3 个自定义属性的其他数据：`companyName`、`expirationDate` 和 `dealValue`。</span><span class="sxs-lookup"><span data-stu-id="88d0b-213">Additional data to be stored as three custom properties in the JSON payload: `companyName`, `expirationDate`, and `dealValue`.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -162,15 +162,15 @@ POST https://graph.microsoft.com/v1.0/me/messages
 }
 ```
 
-### <a name="response-1"></a><span data-ttu-id="61500-214">响应 1</span><span class="sxs-lookup"><span data-stu-id="61500-214">Response 1</span></span>
+### <a name="response-1"></a><span data-ttu-id="88d0b-214">响应 1</span><span class="sxs-lookup"><span data-stu-id="88d0b-214">Response 1</span></span>
 
-<span data-ttu-id="61500-215">Here is the response for the first example.</span><span class="sxs-lookup"><span data-stu-id="61500-215">Here is the response for the first example.</span></span> <span data-ttu-id="61500-216">The response body includes properties of the new message, and the following for the new extension:</span><span class="sxs-lookup"><span data-stu-id="61500-216">The response body includes properties of the new message, and the following for the new extension:</span></span>
+<span data-ttu-id="88d0b-p109">下面是第一个示例的响应。响应正文包括新邮件的属性以及新扩展的以下属性：</span><span class="sxs-lookup"><span data-stu-id="88d0b-p109">Here is the response for the first example. The response body includes properties of the new message, and the following for the new extension:</span></span>
 
-- <span data-ttu-id="61500-217">具有完全限定的名称 `microsoft.graph.openTypeExtension.Com.Contoso.Referral` 的 **Id** 属性。</span><span class="sxs-lookup"><span data-stu-id="61500-217">The **id** property with the fully qualified name of `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.</span></span>
-- <span data-ttu-id="61500-218">请求中指定的默认属性 **extensionName**。</span><span class="sxs-lookup"><span data-stu-id="61500-218">The default property **extensionName** specified in the request.</span></span>
-- <span data-ttu-id="61500-219">请求中指定的作为 3 个自定义属性存储的自定义数据。</span><span class="sxs-lookup"><span data-stu-id="61500-219">The custom data specified in the request stored as 3 custom properties.</span></span>
+- <span data-ttu-id="88d0b-217">具有完全限定的名称 `microsoft.graph.openTypeExtension.Com.Contoso.Referral` 的 **Id** 属性。</span><span class="sxs-lookup"><span data-stu-id="88d0b-217">The **id** property with the fully qualified name of `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.</span></span>
+- <span data-ttu-id="88d0b-218">请求中指定的默认属性 **extensionName**。</span><span class="sxs-lookup"><span data-stu-id="88d0b-218">The default property **extensionName** specified in the request.</span></span>
+- <span data-ttu-id="88d0b-219">请求中指定的作为 3 个自定义属性存储的自定义数据。</span><span class="sxs-lookup"><span data-stu-id="88d0b-219">The custom data specified in the request stored as 3 custom properties.</span></span>
 
-<span data-ttu-id="61500-220">Note: The response object shown here may be truncated for brevity.</span><span class="sxs-lookup"><span data-stu-id="61500-220">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="61500-221">All of the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="61500-221">All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="88d0b-p110">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="88d0b-p110">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -243,13 +243,13 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 
 ****
 
-### <a name="request-2"></a><span data-ttu-id="61500-222">请求 2</span><span class="sxs-lookup"><span data-stu-id="61500-222">Request 2</span></span>
+### <a name="request-2"></a><span data-ttu-id="88d0b-222">请求 2</span><span class="sxs-lookup"><span data-stu-id="88d0b-222">Request 2</span></span>
 
-<span data-ttu-id="61500-223">The second example creates an extension in the specified message.</span><span class="sxs-lookup"><span data-stu-id="61500-223">The second example creates an extension in the specified message.</span></span> <span data-ttu-id="61500-224">The request body includes the following for the extension:</span><span class="sxs-lookup"><span data-stu-id="61500-224">The request body includes the following for the extension:</span></span>
+<span data-ttu-id="88d0b-p111">第二个示例在指定邮件中创建扩展。请求正文包括扩展的如下内容：</span><span class="sxs-lookup"><span data-stu-id="88d0b-p111">The second example creates an extension in the specified message. The request body includes the following for the extension:</span></span>
 
-- <span data-ttu-id="61500-225">`microsoft.graph.openTypeExtension` 类型。</span><span class="sxs-lookup"><span data-stu-id="61500-225">The type `microsoft.graph.openTypeExtension`.</span></span>
-- <span data-ttu-id="61500-226">扩展名“Com.Contoso.Referral”。</span><span class="sxs-lookup"><span data-stu-id="61500-226">The extension name "Com.Contoso.Referral".</span></span>
-- <span data-ttu-id="61500-227">存储为 JSON 负载中的 3 个自定义属性的其他数据：`companyName`、`dealValue` 和 `expirationDate`。</span><span class="sxs-lookup"><span data-stu-id="61500-227">Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `dealValue`, and `expirationDate`.</span></span>
+- <span data-ttu-id="88d0b-225">`microsoft.graph.openTypeExtension` 类型。</span><span class="sxs-lookup"><span data-stu-id="88d0b-225">The type `microsoft.graph.openTypeExtension`.</span></span>
+- <span data-ttu-id="88d0b-226">扩展名“Com.Contoso.Referral”。</span><span class="sxs-lookup"><span data-stu-id="88d0b-226">The extension name "Com.Contoso.Referral".</span></span>
+- <span data-ttu-id="88d0b-227">存储为 JSON 负载中的 3 个自定义属性的其他数据：`companyName`、`dealValue` 和 `expirationDate`。</span><span class="sxs-lookup"><span data-stu-id="88d0b-227">Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `dealValue`, and `expirationDate`.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -267,13 +267,13 @@ POST https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi
 }
 ```
 
-### <a name="response-2"></a><span data-ttu-id="61500-228">响应 2</span><span class="sxs-lookup"><span data-stu-id="61500-228">Response 2</span></span>
+### <a name="response-2"></a><span data-ttu-id="88d0b-228">响应 2</span><span class="sxs-lookup"><span data-stu-id="88d0b-228">Response 2</span></span>
 
-<span data-ttu-id="61500-229">Here is the response for the second example.</span><span class="sxs-lookup"><span data-stu-id="61500-229">Here is the response for the second example.</span></span> <span data-ttu-id="61500-230">The response body includes the following for the new extension:</span><span class="sxs-lookup"><span data-stu-id="61500-230">The response body includes the following for the new extension:</span></span>
+<span data-ttu-id="88d0b-p112">下面是第二个示例的响应。请求正文包括新扩展的如下内容：</span><span class="sxs-lookup"><span data-stu-id="88d0b-p112">Here is the response for the second example. The response body includes the following for the new extension:</span></span>
 
-- <span data-ttu-id="61500-231">默认属性 **extensionName**。</span><span class="sxs-lookup"><span data-stu-id="61500-231">The default property **extensionName**.</span></span>
-- <span data-ttu-id="61500-232">具有完全限定的名称 `microsoft.graph.openTypeExtension.Com.Contoso.Referral` 的 **Id** 属性。</span><span class="sxs-lookup"><span data-stu-id="61500-232">The **id** property with the fully qualified name of `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.</span></span>
-- <span data-ttu-id="61500-233">要存储的自定义数据。</span><span class="sxs-lookup"><span data-stu-id="61500-233">The custom data to be stored.</span></span>
+- <span data-ttu-id="88d0b-231">默认属性 **extensionName**。</span><span class="sxs-lookup"><span data-stu-id="88d0b-231">The default property **extensionName**.</span></span>
+- <span data-ttu-id="88d0b-232">具有完全限定的名称 `microsoft.graph.openTypeExtension.Com.Contoso.Referral` 的 **Id** 属性。</span><span class="sxs-lookup"><span data-stu-id="88d0b-232">The **id** property with the fully qualified name of `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.</span></span>
+- <span data-ttu-id="88d0b-233">要存储的自定义数据。</span><span class="sxs-lookup"><span data-stu-id="88d0b-233">The custom data to be stored.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -299,13 +299,13 @@ Content-type: application/json
 
 ****
 
-### <a name="request-3"></a><span data-ttu-id="61500-234">请求 3</span><span class="sxs-lookup"><span data-stu-id="61500-234">Request 3</span></span>
+### <a name="request-3"></a><span data-ttu-id="88d0b-234">请求 3</span><span class="sxs-lookup"><span data-stu-id="88d0b-234">Request 3</span></span>
 
-<span data-ttu-id="61500-235">The third example creates an extension in the specified group event.</span><span class="sxs-lookup"><span data-stu-id="61500-235">The third example creates an extension in the specified group event.</span></span> <span data-ttu-id="61500-236">The request body includes the following for the extension:</span><span class="sxs-lookup"><span data-stu-id="61500-236">The request body includes the following for the extension:</span></span>
+<span data-ttu-id="88d0b-p113">第三个示例在指定组事件中创建扩展。请求正文包括扩展的如下内容：</span><span class="sxs-lookup"><span data-stu-id="88d0b-p113">The third example creates an extension in the specified group event. The request body includes the following for the extension:</span></span>
 
-- <span data-ttu-id="61500-237">`microsoft.graph.openTypeExtension` 类型。</span><span class="sxs-lookup"><span data-stu-id="61500-237">The type `microsoft.graph.openTypeExtension`.</span></span>
-- <span data-ttu-id="61500-238">扩展名“Com.Contoso.Deal”。</span><span class="sxs-lookup"><span data-stu-id="61500-238">The extension name "Com.Contoso.Deal".</span></span>
-- <span data-ttu-id="61500-239">存储为 JSON 负载中的 3 个自定义属性的其他数据：`companyName`、`dealValue` 和 `expirationDate`。</span><span class="sxs-lookup"><span data-stu-id="61500-239">Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `dealValue`, and `expirationDate`.</span></span>
+- <span data-ttu-id="88d0b-237">`microsoft.graph.openTypeExtension` 类型。</span><span class="sxs-lookup"><span data-stu-id="88d0b-237">The type `microsoft.graph.openTypeExtension`.</span></span>
+- <span data-ttu-id="88d0b-238">扩展名“Com.Contoso.Deal”。</span><span class="sxs-lookup"><span data-stu-id="88d0b-238">The extension name "Com.Contoso.Deal".</span></span>
+- <span data-ttu-id="88d0b-239">存储为 JSON 负载中的 3 个自定义属性的其他数据：`companyName`、`dealValue` 和 `expirationDate`。</span><span class="sxs-lookup"><span data-stu-id="88d0b-239">Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `dealValue`, and `expirationDate`.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -323,9 +323,9 @@ POST https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74
 }
 ```
 
-### <a name="response-3"></a><span data-ttu-id="61500-240">响应 3</span><span class="sxs-lookup"><span data-stu-id="61500-240">Response 3</span></span>
+### <a name="response-3"></a><span data-ttu-id="88d0b-240">响应 3</span><span class="sxs-lookup"><span data-stu-id="88d0b-240">Response 3</span></span>
 
-<span data-ttu-id="61500-241">下面是第三个示例请求的响应。</span><span class="sxs-lookup"><span data-stu-id="61500-241">Here is the response from the third example request.</span></span>
+<span data-ttu-id="88d0b-241">下面是第三个示例请求的响应。</span><span class="sxs-lookup"><span data-stu-id="88d0b-241">Here is the response from the third example request.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -349,13 +349,13 @@ Content-type: application/json
 
 ****
 
-### <a name="request-4"></a><span data-ttu-id="61500-242">请求 4</span><span class="sxs-lookup"><span data-stu-id="61500-242">Request 4</span></span>
+### <a name="request-4"></a><span data-ttu-id="88d0b-242">请求 4</span><span class="sxs-lookup"><span data-stu-id="88d0b-242">Request 4</span></span>
 
-<span data-ttu-id="61500-243">The fourth example creates an extension in a new group post, using the same **reply** action call to an existing group post.</span><span class="sxs-lookup"><span data-stu-id="61500-243">The fourth example creates an extension in a new group post, using the same **reply** action call to an existing group post.</span></span> <span data-ttu-id="61500-244">The **reply** action creates a new post, and a new extension embedded in the post.</span><span class="sxs-lookup"><span data-stu-id="61500-244">The **reply** action creates a new post, and a new extension embedded in the post.</span></span> <span data-ttu-id="61500-245">The request body includes a **post** property, which in turn contains the **body** of the new post, and the following data for the new extension:</span><span class="sxs-lookup"><span data-stu-id="61500-245">The request body includes a **post** property, which in turn contains the **body** of the new post, and the following data for the new extension:</span></span>
+<span data-ttu-id="88d0b-p114">第四个示例对现有的组帖子使用相同的 **reply** 操作调用，在新的组帖子中创建扩展。**reply** 操作创建新帖子和嵌入帖子中的新扩展。请求正文包括 **post** 属性，此属性又包含新帖子的 **body** 以及新扩展的以下数据：</span><span class="sxs-lookup"><span data-stu-id="88d0b-p114">The fourth example creates an extension in a new group post, using the same **reply** action call to an existing group post. The **reply** action creates a new post, and a new extension embedded in the post. The request body includes a **post** property, which in turn contains the **body** of the new post, and the following data for the new extension:</span></span>
 
-- <span data-ttu-id="61500-246">`microsoft.graph.openTypeExtension` 类型。</span><span class="sxs-lookup"><span data-stu-id="61500-246">The type `microsoft.graph.openTypeExtension`.</span></span>
-- <span data-ttu-id="61500-247">扩展名“Com.Contoso.HR”。</span><span class="sxs-lookup"><span data-stu-id="61500-247">The extension name "Com.Contoso.HR".</span></span>
-- <span data-ttu-id="61500-248">存储为 JSON 负载中的 3 个自定义属性的其他数据：`companyName`、`expirationDate` 和 `topPicks` 字符串数组。</span><span class="sxs-lookup"><span data-stu-id="61500-248">Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `expirationDate`, and the array of strings `topPicks`.</span></span>
+- <span data-ttu-id="88d0b-246">`microsoft.graph.openTypeExtension` 类型。</span><span class="sxs-lookup"><span data-stu-id="88d0b-246">The type `microsoft.graph.openTypeExtension`.</span></span>
+- <span data-ttu-id="88d0b-247">扩展名“Com.Contoso.HR”。</span><span class="sxs-lookup"><span data-stu-id="88d0b-247">The extension name "Com.Contoso.HR".</span></span>
+- <span data-ttu-id="88d0b-248">存储为 JSON 负载中的 3 个自定义属性的其他数据：`companyName`、`expirationDate` 和 `topPicks` 字符串数组。</span><span class="sxs-lookup"><span data-stu-id="88d0b-248">Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `expirationDate`, and the array of strings `topPicks`.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -387,9 +387,9 @@ POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef
 }
 ```
 
-### <a name="response-4"></a><span data-ttu-id="61500-249">响应 4</span><span class="sxs-lookup"><span data-stu-id="61500-249">Response 4</span></span>
+### <a name="response-4"></a><span data-ttu-id="88d0b-249">响应 4</span><span class="sxs-lookup"><span data-stu-id="88d0b-249">Response 4</span></span>
 
-<span data-ttu-id="61500-250">Here is the response from the fourth example.</span><span class="sxs-lookup"><span data-stu-id="61500-250">Here is the response from the fourth example.</span></span> <span data-ttu-id="61500-251">Successfully creating an extension in a new group post results in only the HTTP 202 response code.</span><span class="sxs-lookup"><span data-stu-id="61500-251">Successfully creating an extension in a new group post results in only the HTTP 202 response code.</span></span>
+<span data-ttu-id="88d0b-p115">下面是第四个示例的响应。新的组帖子中成功创建扩展仅会产生 HTTP 202 响应代码。</span><span class="sxs-lookup"><span data-stu-id="88d0b-p115">Here is the response from the fourth example. Successfully creating an extension in a new group post results in only the HTTP 202 response code.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -403,13 +403,13 @@ Content-Length: 0
 
 ****
 
-### <a name="request-5"></a><span data-ttu-id="61500-252">响应 5</span><span class="sxs-lookup"><span data-stu-id="61500-252">Request 5</span></span>
+### <a name="request-5"></a><span data-ttu-id="88d0b-252">响应 5</span><span class="sxs-lookup"><span data-stu-id="88d0b-252">Request 5</span></span>
 
-<span data-ttu-id="61500-253">The fifth example creates an extension in a new group post using the same POST operation to create a conversation.</span><span class="sxs-lookup"><span data-stu-id="61500-253">The fifth example creates an extension in a new group post using the same POST operation to create a conversation.</span></span> <span data-ttu-id="61500-254">The POST operation creates a new conversation, thread and post, and a new extension embedded in the post.</span><span class="sxs-lookup"><span data-stu-id="61500-254">The POST operation creates a new conversation, thread and post, and a new extension embedded in the post.</span></span> <span data-ttu-id="61500-255">The request body includes the **Topic** and **Threads** properties, and a child **post** object for the new conversation.</span><span class="sxs-lookup"><span data-stu-id="61500-255">The request body includes the **Topic** and **Threads** properties, and a child **post** object for the new conversation.</span></span> <span data-ttu-id="61500-256">The **post** object in turn contains the **body** of the new post, and the following data for the extension:</span><span class="sxs-lookup"><span data-stu-id="61500-256">The **post** object in turn contains the **body** of the new post, and the following data for the extension:</span></span>
+<span data-ttu-id="88d0b-p116">第五个示例使用 POST 操作创建对话，在新的组帖子中创建扩展。POST 操作创建新对话、线程和帖子以及嵌入帖子中的新扩展。请求正文包括 **Topic** 和 **Threads** 属性以及新对话的子 **post** 对象。**post** 对象又包含新帖子的 **body** 和以下扩展数据：</span><span class="sxs-lookup"><span data-stu-id="88d0b-p116">The fifth example creates an extension in a new group post using the same POST operation to create a conversation. The POST operation creates a new conversation, thread and post, and a new extension embedded in the post. The request body includes the **Topic** and **Threads** properties, and a child **post** object for the new conversation. The **post** object in turn contains the **body** of the new post, and the following data for the extension:</span></span>
 
-- <span data-ttu-id="61500-257">`microsoft.graph.openTypeExtension` 类型。</span><span class="sxs-lookup"><span data-stu-id="61500-257">The type `microsoft.graph.openTypeExtension`.</span></span>
-- <span data-ttu-id="61500-258">扩展名“Com.Contoso.HR”。</span><span class="sxs-lookup"><span data-stu-id="61500-258">The extension name "Com.Contoso.HR".</span></span>
-- <span data-ttu-id="61500-259">存储为 JSON 负载中的 3 个自定义属性的其他数据：`companyName`、`expirationDate` 和 `topPicks` 字符串数组。</span><span class="sxs-lookup"><span data-stu-id="61500-259">Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `expirationDate`, and the array of strings `topPicks`.</span></span>
+- <span data-ttu-id="88d0b-257">`microsoft.graph.openTypeExtension` 类型。</span><span class="sxs-lookup"><span data-stu-id="88d0b-257">The type `microsoft.graph.openTypeExtension`.</span></span>
+- <span data-ttu-id="88d0b-258">扩展名“Com.Contoso.HR”。</span><span class="sxs-lookup"><span data-stu-id="88d0b-258">The extension name "Com.Contoso.HR".</span></span>
+- <span data-ttu-id="88d0b-259">存储为 JSON 负载中的 3 个自定义属性的其他数据：`companyName`、`expirationDate` 和 `topPicks` 字符串数组。</span><span class="sxs-lookup"><span data-stu-id="88d0b-259">Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `expirationDate`, and the array of strings `topPicks`.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -448,13 +448,13 @@ POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef
 }
 ```
 
-### <a name="response-5"></a><span data-ttu-id="61500-260">响应 5</span><span class="sxs-lookup"><span data-stu-id="61500-260">Response 5</span></span>
+### <a name="response-5"></a><span data-ttu-id="88d0b-260">响应 5</span><span class="sxs-lookup"><span data-stu-id="88d0b-260">Response 5</span></span>
 
-<span data-ttu-id="61500-261">Here is the response from the fifth example which contains the new conversation and a thread ID.</span><span class="sxs-lookup"><span data-stu-id="61500-261">Here is the response from the fifth example which contains the new conversation and a thread ID.</span></span> <span data-ttu-id="61500-262">This new thread contains an automatically created post, which in turn contains the new extension.</span><span class="sxs-lookup"><span data-stu-id="61500-262">This new thread contains an automatically created post, which in turn contains the new extension.</span></span>
+<span data-ttu-id="88d0b-p117">下面是第五个示例的响应，其中包含新对话和线程 ID。这个新线程包含自动创建的帖子，帖子又包含新扩展。</span><span class="sxs-lookup"><span data-stu-id="88d0b-p117">Here is the response from the fifth example which contains the new conversation and a thread ID. This new thread contains an automatically created post, which in turn contains the new extension.</span></span>
 
-<span data-ttu-id="61500-263">Note: The response object shown here may be truncated for brevity.</span><span class="sxs-lookup"><span data-stu-id="61500-263">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="61500-264">All of the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="61500-264">All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="88d0b-p118">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="88d0b-p118">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
-<span data-ttu-id="61500-265">To get the new extension, first [get all the posts](../api/conversationthread-list-posts.md) in this thread, and initially there should be only one.</span><span class="sxs-lookup"><span data-stu-id="61500-265">To get the new extension, first [get all the posts](../api/conversationthread-list-posts.md) in this thread, and initially there should be only one.</span></span> <span data-ttu-id="61500-266">Then apply the post ID and the extension name `Com.Contoso.Benefits` to [get the extension](../api/opentypeextension-get.md).</span><span class="sxs-lookup"><span data-stu-id="61500-266">Then apply the post ID and the extension name `Com.Contoso.Benefits` to [get the extension](../api/opentypeextension-get.md).</span></span>
+<span data-ttu-id="88d0b-p119">若要获取新扩展，首先 [获取此线程中的所有帖子](../api/conversationthread-list-posts.md)，线程中最初应该只有一个帖子。然后应用帖子 ID 和扩展名 `Com.Contoso.Benefits` 以[获取扩展](../api/opentypeextension-get.md)。</span><span class="sxs-lookup"><span data-stu-id="88d0b-p119">To get the new extension, first [get all the posts](../api/conversationthread-list-posts.md) in this thread, and initially there should be only one. Then apply the post ID and the extension name `Com.Contoso.Benefits` to [get the extension](../api/opentypeextension-get.md).</span></span>
 
 <!-- {
   "blockType": "response",
