@@ -26,7 +26,7 @@ ms.locfileid: "44897797"
 此 API 仅返回遇到的第一个验证失败。 如果属性失败多次验证，则仅返回第一个验证失败。 但是，如果仅验证前缀和后缀命名策略，则可以验证邮件别名和显示名称，并接收验证错误的集合。 若要了解有关配置命名策略的详细信息，请参阅[Configure 命名策略](/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell)。
 
 ## <a name="permissions"></a>权限
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -44,7 +44,7 @@ POST /directoryObjects/validateProperties
 
 | 名称           | 说明      |
 |:---------------|:-----------------|
-| Authorization  | Bearer {token}. Required.    |
+| Authorization  | Bearer {token}。必需。    |
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>请求正文

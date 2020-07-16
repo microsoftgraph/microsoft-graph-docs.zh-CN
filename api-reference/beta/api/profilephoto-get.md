@@ -30,7 +30,7 @@ Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120�
 如果在用户邮箱或 Azure Active Directory 中找不到指定尺寸，则返回的是尺寸 1x1 和剩余元数据。
 
 ## <a name="permissions"></a>权限
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 > **注意：** beta 版中的获取照片方法支持用户的工作、学校或个人帐户。 但是获取照片元数据方法仅支持用户的工作或学校帐户，不支持个人帐户。
 
@@ -87,14 +87,14 @@ GET /groups/{id}/photos/{size}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 ### <a name="response-for-getting-the-photo"></a>获取照片的响应
-If successful, this method returns a `200 OK` response code and binary data of the requested photo.  If no photo exists, the operation returns `404 Not Found`.
+如果成功，此方法返回 `200 OK` 响应代码和所请求照片的二进制数据。如果照片不存在，此操作返回 `404 Not Found`。
 ### <a name="response-for-getting-the-metadata-of-the-photo"></a>获取照片元数据的响应
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [profilePhoto](../resources/profilephoto.md) 对象。
 

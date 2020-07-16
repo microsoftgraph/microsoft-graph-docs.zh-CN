@@ -51,7 +51,7 @@ ms.locfileid: "44893674"
 | resource | string | 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/beta/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。 必填。 |
 | expirationDateTime | DateTimeOffset | 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 必填。 |
 | clientState | string | 指定在每次更改通知中由服务发送的**clientState**属性的值。 最大长度为 255 个字符。 客户端可以通过将随订阅发送的**clientState**属性的值与每个更改通知接收的**clientState**属性的值进行比较，来检查更改通知是否来自服务。 可选。 |
-| id | 字符串 | Unique identifier for the subscription. Read-only. |
+| id | 字符串 | 订阅的唯一标识符。只读。 |
 | applicationId | string | 用于创建订阅的应用程序的标识符。 只读。 |
 | creatorId | string | 已创建订阅的用户或服务主体的标识符。 如果应用程序使用委派权限来创建订阅，则此字段包含代表已登录的用户的 ID，该应用代表。 如果应用程序使用的是应用程序权限，则此字段包含与该应用对应的服务主体的 ID。 只读。 |
 | includeResourceData | Boolean | 当设置为时 `true` ，更改通知[包括资源数据](/graph/webhooks-with-resource-data)（如聊天邮件的内容）。 可选。 | 

@@ -34,7 +34,7 @@ ms.locfileid: "44895704"
 |[Update](../api/calendar-update.md) | [calendar](calendar.md)  |更新 **calendar** 对象的属性。 日历可以是用户的一个，也可以是 Microsoft 365 组的默认日历。 |
 |[Delete](../api/calendar-delete.md) | 无 |删除 calendar 对象。 |
 |[列出 calendarView](../api/calendar-list-calendarview.md) |[事件](event.md) 集合| 从用户的主日历 `(../me/calendarview)` 或指定日历中，获取由时间范围定义的日历视图中的事件发生次数、异常和单个实例。|
-|[列出事件](../api/calendar-list-events.md) |[事件](event.md) 集合| Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.|
+|[列出事件](../api/calendar-list-events.md) |[事件](event.md) 集合| 检索日历中的事件列表。该列表包含单实例会议和系列主控事件。|
 |[创建事件](../api/calendar-post-events.md) |[event](event.md)| 在默认或指定日历中创建新事件。|
 |[getSchedule](../api/calendar-getschedule.md) |[scheduleInformation](scheduleinformation.md) 集合|获取用户、通讯组列表或资源在指定时间段内的忙/闲状态信息。 |
 |[findMeetingTimes](../api/user-findmeetingtimes.md) |[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) |根据组织者和与会者忙/闲状态以及时间或地点约束，建议会议时间和地点。 |
@@ -47,26 +47,26 @@ ms.locfileid: "44895704"
 | 属性     | 类型   |Description|
 |:---------------|:--------|:----------|
 |allowedOnlineMeetingProviders|string 集合| 表示此日历中可用于创建联机会议的联机会议服务提供商。 可取值为：`unknown`、`skypeForBusiness`、`skypeForConsumer`、`teamsForBusiness`。|
-|canEdit |布尔 |True if the user can write to the calendar, false otherwise. This property is true for the user who created the calendar. This property is also true for a user who has been shared a calendar and granted write access. |
-|canShare |布尔 |True if the user has the permission to share the calendar, false otherwise. Only the user who created the calendar can share it. |
+|canEdit |布尔 |如果用户可以写入日历则为 true，否则为 false。对于创建此日历的用户，此属性为 true。此属性对于共享日历并且授予写入访问权限的用户同样为 true。 |
+|canShare |布尔 |如果用户有权共享日历则为 ture，否则为 false。只有创建日历的用户才可以进行共享。 |
 |canViewPrivateItems |Boolean |如果用户可以读取已标记为私有的日历项，则为 true，否则返回 false。 |
-|changeKey|字符串|Identifies the version of the calendar object. Every time the calendar is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.|
-|颜色|calendarColor|Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
+|changeKey|字符串|标识 calendar 对象的版本。每次日历更改时，changeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。只读。|
+|颜色|calendarColor|在 UI 中指定将该日历与其他日历区分开来的颜色主题。属性值有：LightBlue=0、LightGreen=1、LightOrange=2、LightGray=3、LightYellow=4、LightTeal=5、LightPink=6、LightBrown=7、LightRed=8、MaxColor=9、Auto=-1|
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|从此日历发送的会议的默认联机会议提供商。 可取值为：`unknown`、`skypeForBusiness`、`skypeForConsumer`、`teamsForBusiness`。|
-|id|String|The calendar's unique identifier. Read-only.|
+|id|String|日历的唯一标识符。只读。|
 |isRemovable|Boolean| 表示是否可以从用户邮箱删除此用户日志。|
 |isTallyingResponses|Boolean|表示此用户日历是否支持会议响应跟踪。 仅从用户的主日志发送的会议邀请支持会议响应跟踪。|
 |name|String|日历名称。|
-|owner |[emailAddress](emailaddress.md) | If set, this represents the user who created or added the calendar. For a calendar that the user created or added, the **owner** property is set to the user. For a calendar shared with the user, the **owner** property is set to the person who shared that calendar with the user. |
+|owner |[emailAddress](emailaddress.md) | 如果设置，则表示创建或添加日历的用户。对于用户创建或添加的日历，将 **owner** 属性设置为用户。对于与用户共享的日历，将 **owner** 属性设置为与此用户共享该日历的人员。 |
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |Description|
 |:---------------|:--------|:----------|
 |calendarPermissions|[calendarPermission](calendarpermission.md) 集合| 共享日历的用户的权限。|
-|calendarView|[事件](event.md) 集合|The calendar view for the calendar. Navigation property. Read-only.|
-|events|[事件](event.md) 集合|The events in the calendar. Navigation property. Read-only.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the calendar. Read-only. Nullable.|
+|calendarView|[事件](event.md) 集合|日历的日历视图。导航属性。只读。|
+|events|[事件](event.md) 集合|日历中的事件。导航属性。只读。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为日历定义的多值扩展属性的集合。只读。可为 Null。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为日历定义的单值扩展属性的集合。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

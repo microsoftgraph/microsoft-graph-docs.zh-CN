@@ -5,7 +5,7 @@ ms.prod: msgraph
 ms.topic: include
 ms.openlocfilehash: 608fff09019b4fdcce15a0ccb9a8b991d0f971b8
 ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/01/2020
 ms.locfileid: "44989853"

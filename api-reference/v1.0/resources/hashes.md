@@ -45,12 +45,12 @@ ms.locfileid: "44863738"
 
 | 属性         | 类型   | 说明                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
-| **sha1Hash**     | String | SHA1 hash for the contents of the file (if available). Read-only. |
+| **sha1Hash**     | String | 文件内容的 SHA1 哈希（如果可用）。只读。 |
 | **sha256Hash**   | String | 文件内容的 SHA256 哈希值（如果有）。 只读。 |
 | **crc32Hash**    | String | 文件的 CRC32 值，以小字节序（如果可用）为单位。 只读。            |
-| **quickXorHash** | String | A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only. |
+| **quickXorHash** | String | 文件的专有哈希，可用于确定文件内容是否更改（如果存在）。只读。 |
 
-**Note:** In some cases hash values may not be available. If this is the case, the hash values on an item will be updated after the item is downloaded.
+**注意：** 在某些情况下，哈希值不可用。如果出现这种情况，将在下载项后对项上的哈希值进行更新。
 
 ## <a name="remarks"></a>注解
 

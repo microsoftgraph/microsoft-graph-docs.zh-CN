@@ -22,7 +22,7 @@ ms.locfileid: "44895774"
 
 ## <a name="permissions"></a>权限
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -42,18 +42,18 @@ PATCH /groups/{id}
 
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Boolean|Default is **false**. Indicates if people external to the organization can send messages to the group.|
-|autoSubscribeNewMembers|Boolean|Default is **false**. Indicates if new members added to the group will be auto-subscribed to receive email notifications.|
+|allowExternalSenders|Boolean|默认为 **false**。指明组织外部人员能否向群组发送邮件。|
+|autoSubscribeNewMembers|Boolean|默认为 **false**。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。|
 |description|String|可选的组说明。 |
-|displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. |
+|displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。 |
 |groupTypes|String collection|指定组类型及其成员身份。  <br><br>如果集合包含**统一**的，则组为 Microsoft 365 组;否则，它是一个安全组。  <br><br>如果该集合包含 **DynamicMembership**，则该组具有动态成员身份；否则，成员身份是静态的。 |
 |mailEnabled|布尔|指定是否为启用邮件的组。 |
 |mailNickname|String|组的邮件别名。 创建组时必须指定此属性。 |
@@ -66,7 +66,7 @@ In the request body, supply the values for relevant fields that should be update
 > **注意：**
 >
 > - 可以更新 **autoSubscribeNewMembers**，方法是在其自身的 PATCH 请求中指定它，而不包括上表中的其他属性。
-> - Only a subset of the group API pertaining to core group administration and management support application and delegated permissions. All other members of the group API, including updating  **autoSubscribeNewMembers**, support only delegated permissions. See [known issues](https://developer.microsoft.com/graph/docs/overview/release_notes#group-permission-scopes) for examples.
+> - 只有一部分与核心组管理和管理相关的组 API 才同时支持应用程序权限和委派权限。其他所有的组 API 成员（包括更新 **autoSubscribeNewMembers**）仅支持委派权限。有关示例，请参阅[已知问题](https://developer.microsoft.com/graph/docs/overview/release_notes#group-permission-scopes)。
 > - 在 Microsoft Exchange Server 中更新启用邮件的安全组的规则可能很复杂；若要了解详细信息，请参阅[在 Exchange Server 中管理启用邮件的安全组](/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019)。
 
 

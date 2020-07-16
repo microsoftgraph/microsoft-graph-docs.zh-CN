@@ -6,6 +6,7 @@ localization_priority: Normal
 ms.prod: cloud-communications
 ms.openlocfilehash: fc8ab5e91ba16a2b9dc0730120be350550caf145
 ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "45050776"

@@ -43,7 +43,7 @@ ms.locfileid: "44896033"
 
 ## <a name="clear-space"></a>净空间 
 
-Treat the logo with respect and give it room to breathe. A minimum clear space equivalent to the height of the symbol must surround the logo.
+尊重徽标，并给它足够的空间。徽标四周必须留出相当于符号高度的最小净空间。
 
 ![显示表示符号高度的清除 psace 的徽标](images/onenotelogoclearspace.png)
 

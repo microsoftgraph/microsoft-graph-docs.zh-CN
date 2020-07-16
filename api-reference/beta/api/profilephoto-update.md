@@ -18,14 +18,14 @@ ms.locfileid: "45038679"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the photo for any user in the tenant including the signed-in user, or the specified group or contact. Since there is currently a limit of 8MB on the total size of each REST request, this limits the size of the photo you can add to under 8MB.
+更新租户中任何用户的照片，包括登录用户或指定的组或联系人。由于目前每个 REST 请求的总大小限制为8MB，这会限制您可以添加到8MB 下的照片的大小。
 
 在测试版中仅使用 PUT 进行此操作。
 
 > **注意**：更新**用户**照片时，此操作将先尝试更新 Microsoft 365 中的照片。 如果失败（由于用户不具有邮箱），此 API 将尝试更新 Azure Active Directory 中的照片。
 
 ## <a name="permissions"></a>权限
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -51,8 +51,8 @@ PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | image/jpeg. Required.  |
+| Authorization  | Bearer {token}。必需。  |
+| Content-Type  | image/jpeg。必需。  |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，包括请求正文中照片的二进制数据。
@@ -88,7 +88,7 @@ Binary data for the image
 ---
 
 ##### <a name="response"></a>响应
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,

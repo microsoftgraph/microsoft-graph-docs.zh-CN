@@ -19,7 +19,7 @@ ms.locfileid: "44743773"
 为企业用户检索**licenseDetails**对象的列表。
 
 ## <a name="permissions"></a>权限
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/me/licenseDetails
 ---
 
 ##### <a name="response"></a>响应
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,

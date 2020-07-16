@@ -7,7 +7,7 @@ ms.prod: groups
 doc_type: resourcePageType
 ms.openlocfilehash: e7cbe462ec01665e97658ba0bef0767c87a10f80
 ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/26/2020
 ms.locfileid: "44895508"
@@ -18,8 +18,7 @@ ms.locfileid: "44895508"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure Active Directory (Azure AD) group, which can be a Microsoft 365 group, a team in Microsoft Teams, or a security group.
-Inherits from [directoryObject](directoryobject.md).
+表示 Azure Active Directory （Azure AD）组，可以是 Microsoft 365 组、Microsoft 团队中的团队或安全组。继承自[directoryObject](directoryobject.md)。
 
 出于性能原因，默认情况下 [create](../api/group-post-groups.md)、[get](../api/group-get.md) 和 [list](../api/group-list.md) 操作仅返回更常用属性的子集。 这些_默认_属性将记录在[属性](#properties)部分中。 若要获取非默认返回的任一属性，请在 `$select` OData 查询选项中指定这些属性。
 
@@ -49,14 +48,14 @@ Inherits from [directoryObject](directoryobject.md).
 | [List members](../api/group-list-members.md)                                | [directoryObject](directoryobject.md) 集合                      | 从 **members** 导航属性中获取属于此组的直接成员的用户和组。                                                                                                              |
 | [List transitive members](../api/group-list-transitivemembers.md)           | [directoryObject](directoryobject.md) 集合                      | 获取属于此组成员（包括嵌套成员）的用户、组、设备和服务主体。                                                                                                      |
 | [Add member](../api/group-post-members.md)                                  | [directoryObject](directoryobject.md)                                 | 通过发布到 **members** 导航属性将用户或组添加到此组（仅支持安全组和启用邮件的安全组新）。                                                            |
-| [Remove member](../api/group-delete-members.md)                             | 无                                                                  | Remove a member from a Microsoft 365 group, a security group or a mail-enabled security group through the **members** navigation property. You can remove users or other groups.                                        |
+| [Remove member](../api/group-delete-members.md)                             | 无                                                                  | 通过**members**导航属性从 Microsoft 365 组、安全组或已启用邮件的安全组中删除成员。您可以删除用户或其他组。                                        |
 | [列出 memberOf](../api/group-list-memberof.md)                              | [directoryObject](directoryobject.md) 集合                      | 通过 memberOf 导航属性，获取此组是其直接成员的组和管理单元。                                                                                                  |
 | [List transitive memberOf](../api/group-list-transitivememberof.md)         | [directoryObject](directoryobject.md) 集合                      | 列出该组所属的组和管理单元。 此操作是可传递的，并包括此组以嵌套方式所属的组。                                                  |
-| [checkMemberGroups](../api/group-checkmembergroups.md)                      | String 集合                                                     | Check for membership in a list of groups. The function is transitive.                                                                                                                                                 |
+| [checkMemberGroups](../api/group-checkmembergroups.md)                      | String 集合                                                     | 在一列组中检查成员身份。此函数是可传递的。                                                                                                                                                 |
 | [checkMemberObjects](../api/group-checkmemberobjects.md)                    | String 集合                                                     | 检查组、目录角色或管理单元对象列表中的成员身份。 此函数可传递。                                                                                                  |
-| [getMemberGroups](../api/group-getmembergroups.md)                          | String collection                                                     | Return all the groups that the group is a member of. The function is transitive.                                                                                                                                      |
-| [getMemberObjects](../api/group-getmemberobjects.md)                        | String 集合                                                     | Return all of the groups and administrative units that the group is a member of. The function is transitive.                                                                                                          |
-| [Create setting](../api/directorysetting-post-settings.md)                  | [directorySetting](directorysetting.md)                               | Create a setting object based on a directorySettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation. |
+| [getMemberGroups](../api/group-getmembergroups.md)                          | String collection                                                     | 返回此组是其成员的所有组。此函数是可传递的。                                                                                                                                      |
+| [getMemberObjects](../api/group-getmemberobjects.md)                        | String 集合                                                     | 返回组所属的所有组和管理单元。此函数是可传递的。                                                                                                          |
+| [Create setting](../api/directorysetting-post-settings.md)                  | [directorySetting](directorysetting.md)                               | 基于 directorySettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。只有组特定模板可用于此操作。 |
 | [Get setting](../api/directorysetting-get.md)                               | [directorySetting](directorysetting.md)                               | 读取特定设置对象的属性。                                                                                                                                                                         |
 | [List settings](../api/directorysetting-list.md)                            | [directorySetting](directorysetting.md) 集合                    | 列出所有设置对象的属性。                                                                                                                                                                               |
 | [Update setting](../api/directorysetting-update.md)                         | [directorySetting](directorysetting.md)                               | 更新 setting 对象。                                                                                                                                                                                              |
@@ -118,7 +117,7 @@ Inherits from [directoryObject](directoryobject.md).
 |assignedLabels|[assignedLabel](assignedlabel.md) 集合|与 Microsoft 365 组相关联的敏感度标签对列表（标签 ID、标签名称）。 <br><br>仅在 $select 上返回。|
 |assignedLicenses|[assignedLicense](assignedlicense.md) 集合|分配给该组的许可证。 <br><br>仅在 $select 上返回。 只读。|
 |autoSubscribeNewMembers|布尔值|指示添加到组中的新成员是否将自动订阅接收电子邮件通知。 可以在 PATCH 请求中设置组的这个属性；不要在创建该组的初始 POST 请求中设置它。 默认值为 **false**。 <br><br>仅在 $select 上返回。|
-|classification|字符串|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](directorysetting.md) value, based on the [template definition](directorysettingtemplate.md).<br><br>默认情况下返回。|
+|classification|字符串|描述该组的分类（如低、中或高业务影响）。通过根据[模板定义](directorysettingtemplate.md)创建 ClassificationList [设置](directorysetting.md)值来定义此属性的有效值。<br><br>默认情况下返回。|
 |createdByAppId|字符串|用于创建组的应用 ID 对于部分组可能为 null。 <br><br>默认情况下返回。 只读。 支持 $filter。|
 |createdDateTime|DateTimeOffset| 组的创建时间戳。 值无法修改，并在组创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。 |
 |deletedDateTime|DateTimeOffset| 对于某些 Azure Active Directory 对象（用户、组、应用程序），如果该对象被删除，先逻辑删除，随后该属性随着对象删除的日期和时间更新。 否则此属性为空。 如果对象已还原，则此属性会更新为空。 |
@@ -172,16 +171,16 @@ Inherits from [directoryObject](directoryobject.md).
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|acceptedSenders|[directoryObject](directoryobject.md) 集合|The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.|
-|日历|[日历](calendar.md)|The group's calendar. Read-only.|
-|calendarView|[事件](event.md) 集合|The calendar view for the calendar. Read-only.|
+|acceptedSenders|[directoryObject](directoryobject.md) 集合|允许在此组中创建帖子或日历事件的用户或组列表。如果此列表为非空，则仅允许此处列出的用户或组发布内容。|
+|日历|[日历](calendar.md)|组日历。只读。|
+|calendarView|[事件](event.md) 集合|日历的日历视图。只读。|
 |conversations|[对话](conversation.md) 集合|组对话。|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 创建组的用户（或应用程序）。 **注意：** 如果用户是管理员，不设置此项。 只读。|
 |drive|[drive](drive.md)|组的默认驱动器。 只读。|
 |drives|[drive](drive.md) 集合|组的驱动器。 只读。|
 |endpoints|[Endpoint](endpoint.md) 集合| 组的终结点。 此为只读属性。 可为空。|
 |events|[event](event.md) 集合|组事件。|
-|extensions|[扩展](extension.md)集合|The collection of open extensions defined for the group. Read-only. Nullable.|
+|extensions|[扩展](extension.md)集合|为组定义的开放扩展集合。只读。可为 NULL。|
 |groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合|此组的生命周期策略集合。 此为只读属性。 可为空。|
 |memberOf|[directoryObject](directoryobject.md) 集合|此组所属的组和管理单元。 HTTP 方法：GET（支持所有组） 此为只读属性。 可为 Null。|
 |members|[directoryObject](directoryobject.md) collection| 属于此组成员的用户、联系人和组。 HTTP 方法：GET（支持所有组）、POST（支持安全组和启用邮件的安全组）、DELETE（仅支持安全组）。只读。 可为 NULL。|
@@ -189,12 +188,12 @@ Inherits from [directoryObject](directoryobject.md).
 |onenote|[onenote](onenote.md)| 只读。|
 |owners|[directoryObject](directoryobject.md) 集合|组的所有者。 所有者是一组允许修改此对象的非管理员用户。 HTTP 方法：GET（支持所有组）、POST（支持安全组和启用邮件的安全组）、DELETE（仅支持安全组）。只读。 可为 NULL。|
 |photo|[profilePhoto](profilephoto.md)| 组的个人资料照片。 |
-|photos|[profilePhoto](profilephoto.md) 集合| The profile photos owned by the group. Read-only. Nullable.|
+|photos|[profilePhoto](profilephoto.md) 集合| 组拥有的个人资料照片。只读。可为 Null。|
 |planner|[plannerGroup](plannergroup.md)| 组可用的选择性 Planner 服务。 此为只读属性。 可为空。 |
-|rejectedSenders|[directoryObject](directoryobject.md) 集合|The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable|
+|rejectedSenders|[directoryObject](directoryobject.md) 集合|不允许在此组中创建帖子或日历事件的用户或组列表。可为 Null|
 |settings|[directorySetting](directorysetting.md) 集合| 可以管理此组行为的设置，例如成员是否可以将来宾用户邀请到此组。 可为 NULL。|
-|sites|[网站](site.md)集|The list of SharePoint sites in this group. Access the default site with /sites/root.|
-|threads|[conversationThread](conversationthread.md) 集合| The group's conversation threads. Nullable.|
+|sites|[网站](site.md)集|该组中的 SharePoint 网站的列表。使用 /sites/root 访问默认网站。|
+|threads|[conversationThread](conversationthread.md) 集合| 组的对话线程。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

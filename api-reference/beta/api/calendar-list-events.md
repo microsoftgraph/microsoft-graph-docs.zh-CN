@@ -1,6 +1,6 @@
 ---
 title: 列出事件
-description: Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.
+description: 检索日历中的事件列表。该列表包含单实例会议和系列主控事件。
 author: harini84
 localization_priority: Normal
 ms.prod: outlook
@@ -57,7 +57,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明 |
 |:---------------|:--------|:--------|
-| Authorization  | string | Bearer {token}. Required.  |
+| Authorization  | string | Bearer {token}。必需。  |
 | Prefer: outlook.timezone  | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |
 
 ## <a name="request-body"></a>请求正文
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/me/calendar/events
 ---
 
 ##### <a name="response"></a>响应
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,

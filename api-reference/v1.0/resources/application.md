@@ -90,7 +90,7 @@ ms.locfileid: "45080988"
 | 关系 | 类型 | Description |
 |:---------------|:--------|:----------|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 只读。|
-|extensionProperties|[extensionProperty](extensionproperty.md) 集合| Read-only. Nullable.|
+|extensionProperties|[extensionProperty](extensionproperty.md) 集合| 只读。可为 Null。|
 |owners|[directoryObject](directoryobject.md) 集合|拥有此应用程序的目录对象。 所有者是一组允许修改此对象的非管理员用户。 需要版本 2013-11-08 或更高版本。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

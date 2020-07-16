@@ -22,7 +22,7 @@ ms.locfileid: "44897895"
 
 ## <a name="permissions"></a>权限
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :--------------------------------------- |
@@ -53,7 +53,7 @@ GET /reports/getOneDriveActivityFileCounts(period='{period_value}')
 
 | 名称          | 说明                              |
 | :------------ | :--------------------------------------- |
-| Authorization | Bearer {token}. Required.                |
+| Authorization | 持有者{令牌}。必需。                |
 | If-None-Match | 如果包含此请求头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。 可选。 |
 
 ## <a name="response"></a>响应

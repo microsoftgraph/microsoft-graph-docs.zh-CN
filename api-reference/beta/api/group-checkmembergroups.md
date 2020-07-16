@@ -18,13 +18,13 @@ ms.locfileid: "44895872"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Check for membership in the specified list of groups. Returns from the list those groups of which the specified group has a direct or transitive membership.
+检查指定组列表中的成员身份。将列表中具有直接或可传递成员身份的指定组返回。
 
-You can check up to a maximum of 20 groups per request. This function supports Microsoft 365 and other types of groups provisioned in Azure AD. Note that Microsoft 365 groups cannot contain groups. So membership in a Microsoft 365 group is always direct.
+每个请求最多可检查20个组。此函数支持在 Azure AD 中预配的 Microsoft 365 和其他类型的组。请注意，Microsoft 365 组不能包含组。因此，Microsoft 365 组中的成员身份始终是直接的。
 
 ## <a name="permissions"></a>权限
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
@@ -44,7 +44,7 @@ POST /groups/{id}/checkMemberGroups
 
 | 名称          | 类型   | 说明               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {token}. Required. |
+| Authorization | string | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -101,7 +101,7 @@ Content-length: 44
 
 ##### <a name="response"></a>响应
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 
 <!-- {
   "blockType": "response",

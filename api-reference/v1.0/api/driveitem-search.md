@@ -23,7 +23,7 @@ ms.locfileid: "45091380"
 
 ## <a name="permissions"></a>权限
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -51,7 +51,7 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 | 参数 | 类型  | 说明                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| q  | 字符串 | The query text used to search for items. Values may be matched across several fields including filename, metadata, and file content. |
+| q  | 字符串 | 用来搜索项目的查询文本。可以跨多个字段（包括文件名、元数据和文件内容）与值相匹配。 |
 
 ## <a name="example"></a>示例
 
@@ -87,11 +87,9 @@ GET /me/drive/root/search(q='Contoso Project')
 
 ### <a name="response"></a>响应
 
-This method returns an object containing an collection of [DriveItems](../resources/driveitem.md) that match the search criteria.
-If no items were found, an empty collection is returned.
+此方法返回一个对象，该对象包含与搜索条件相匹配的 [DriveItem](../resources/driveitem.md) 集合。如果未找到任何项目，则返回一个空集合。
 
-If there are too many matches the response will be paged and an **\@odata.nextLink** property will contain a URL to the next page of results.
-You can use the `$top` query parameter to specify the number of items in the page.
+如果匹配项太多，则将对响应分页，并且 **\@odata.nextLink** 属性将包含指向下一页结果的 URL。可使用 `$top` 查询参数来指定页中的项目数。
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 
@@ -120,8 +118,7 @@ Content-type: application/json
 
 ## <a name="searching-for-items-a-user-can-access"></a>搜索用户可以访问的项目
 
-In addition to searching for items within a drive, your app can search more broadly to include items shared with the current user.
-To broaden the search scope, use the **search** method on the [Drive](../resources/drive.md) resource.
+除了在驱动器中搜索项目外，你的应用程序还可以进行更广泛的搜索，以便包含与当前用户共享的项目。若要扩大搜索范围，请使用 [驱动器](../resources/drive.md) 资源中的**搜索**方法。
 
 ### <a name="example"></a>示例
 
@@ -153,8 +150,7 @@ GET /me/drive/search(q='Contoso Project')
 
 ### <a name="response"></a>响应
 
-Responses when searching from the **drive** resource may include items outside of the drive (items shared with the current user).
-These items will include the [**remoteItem**](../resources/remoteitem.md) facet to indicate they are stored outside of the target drive. 
+从**驱动器**资源中搜索时的响应可能包括驱动器外部的项目（与当前用户共享的项目）。这些项目将包括 [**remoteItem**](../resources/remoteitem.md) 方面，以指示它们存储在目标驱动器外部。 
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 

@@ -23,7 +23,7 @@ ms.locfileid: "44897510"
 只有创建了架构扩展（所有者应用程序）的应用程序可以在扩展处于**InDevelopment**或**可用**状态时对扩展进行增量更新。 这意味着应用程序无法从定义中删除自定义属性或目标资源类型。 但是，该应用程序可以更改扩展的说明。
 
 ## <a name="permissions"></a>权限
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -46,12 +46,12 @@ PATCH /schemaExtensions/{id}
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
+| Authorization  | Bearer {token}。必需。 |
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>请求正文
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|

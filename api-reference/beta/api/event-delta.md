@@ -35,7 +35,7 @@ ms.locfileid: "44862510"
 | 当前仅在 beta 版本中可用。 | 在 v1.0 和 beta 版本中可用。 |
 
 ## <a name="permissions"></a>权限
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -148,9 +148,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
-|startDateTime|String|The start date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T19:00:00-08:00". <br>时区在参数值的 "时区偏移" 部分中指定，如果存在，则不受 `Prefer: outlook.timezone` 标头的影响。 如果值中未包含时区偏移量，则将其解释为 UTC。<br>对于日历中事件的**delta**是可选的。 <br>对于**calendarView**上的**delta**是必需的。 |
-|endDateTime|String|The end date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T20:00:00-08:00". <br>时区在参数值的 "时区偏移" 部分中指定，如果存在，则不受 `Prefer: outlook.timezone` 标头的影响。 如果值中未包含时区偏移量，则将其解释为 UTC。<br>日历中的事件_不支持_**增量**。 <br>对于**calendarView**上的**delta**是必需的。|
-| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same calendar view, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that calendar view.|
+|startDateTime|String|时间范围的开始日期和时间，以 ISO 8601 格式表示。例如，“2019-11-08T19:00:00-08:00”。<br>时区在参数值的 "时区偏移" 部分中指定，如果存在，则不受 `Prefer: outlook.timezone` 标头的影响。 如果值中未包含时区偏移量，则将其解释为 UTC。<br>对于日历中事件的**delta**是可选的。 <br>对于**calendarView**上的**delta**是必需的。 |
+|endDateTime|String|时间范围的结束日期和时间，以 ISO 8601 格式表示。例如，“2019-11-08T20:00:00-08:00”。<br>时区在参数值的 "时区偏移" 部分中指定，如果存在，则不受 `Prefer: outlook.timezone` 标头的影响。 如果值中未包含时区偏移量，则将其解释为 UTC。<br>日历中的事件_不支持_**增量**。 <br>对于**calendarView**上的**delta**是必需的。|
+| $deltatoken | string | 对同一个日历视图之前的 **delta** 函数调用的 `deltaLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示该组更改跟踪的完成状态。将此令牌包含在对该日历视图的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
 | $skiptoken | string | 之前的 **delta** 函数调用的 `nextLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示同一个日历视图中有进一步的更改需要跟踪。 |
 
 不支持 `$expand` 、 `$filter` 、、 `$orderby` `$select` 和 `$search` 。
@@ -159,9 +159,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | Description |
 |:---------------|:----------|:----------|
-| Authorization  | 字符串  | Bearer {token}. Required. |
+| Authorization  | 字符串  | Bearer {token}。必需。 |
 | Content-Type  | 字符串  | application/json. Required. |
-| Prefer | string  | odata.maxpagesize={x}. Optional. |
+| Prefer | string  | odata.maxpagesize={x}。可选。 |
 | Prefer | string | outlook. 时区 = {时区字符串}。 可选，如果缺省，则采用 UTC。|
 
 ## <a name="response"></a>响应

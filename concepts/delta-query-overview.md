@@ -1,6 +1,6 @@
 ---
 title: 使用增量查询跟踪 Microsoft Graph 数据更改
-description: Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
+description: Delta 查询使应用程序能够发现新创建、更新或删除的实体，无需使用每个请求对目标资源执行完全读取。Microsoft Graph 应用程序可以使用 delta 查询和本地数据存储高效地同步更改。
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
@@ -13,7 +13,7 @@ ms.locfileid: "44990036"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 
-Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
+Delta 查询使应用程序能够发现新创建、更新或删除的实体，无需使用每个请求对目标资源执行完全读取。Microsoft Graph 应用程序可以使用 delta 查询和本地数据存储高效地同步更改。
 
 > [!div class="nextstepaction"]
 > [教程：使用更改通知和跟踪 Microsoft Graph 中的更改](/learn/modules/msgraph-changenotifications-trackchanges)
@@ -25,11 +25,11 @@ Delta query enables applications to discover newly created, updated, or deleted 
 1. 应用程序首先对所需资源运行 delta 函数以调用 GET 请求。
 2. Microsoft Graph 发送一个包含已请求资源和[状态令牌](#state-tokens)的响应。
 
-     a.  If a `nextLink` URL is returned, there may be additional pages of data to be retrieved in the session. The application continues making requests using the `nextLink` URL to retrieve all pages of data until a `deltaLink` URL is returned in the response.
+     a.如果返回了 `nextLink` URL，则会话中可能存在要检索的其他数据页面。应用程序继续使用 `nextLink` URL 发出请求以检索所有页面中的数据，直到响应中返回 `deltaLink` URL。
 
-     b.  If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the `deltaLink` URL to learn about changes to the resource.
+     b.如果返回了 `deltaLink` URL，则未返回关于资源现有状态的更多数据。为了执行以后的请求，应用程序使用 `deltaLink` URL 了解资源更改。
 
-3. When the application needs to learn about changes to the resource, it makes a new request using the `deltaLink` URL received in step 2. This request *may* be made immediately after completing step 2 or when the application checks for changes.
+3. 当应用程序需要了解资源更改时，会使用步骤 2 中收到的 `deltaLink` URL 发出新请求。*可能*在完成步骤 2 或应用程序检查更改时立即发出此请求。
 4. Microsoft Graph 返回响应（`nextLink` URL 或 `deltaLink` URL），其中描述了自上一个请求以来的资源变更。
 
 >**注意：** Azure Active Directory 中存储的资源（如用户和组）支持“从现在开始同步”方案。 这样一来，便可以跳过第 1 步和第 2 步（如果不想检索资源完整状态的话），并改为请求获取最新 `deltaLink`。 将 `$deltaToken=latest` 追加到 `delta` 函数中，这样响应就会包含 `deltaLink`，而不包含资源数据。
@@ -40,20 +40,19 @@ Delta query enables applications to discover newly created, updated, or deleted 
 
 ### <a name="state-tokens"></a>状态令牌
 
-A delta query GET response always includes a URL specified in a `nextLink` or `deltaLink` response header.
-The `nextLink` URL includes a _skipToken_, and a `deltaLink` URL includes a _deltaToken_.
+增量查询 GET 响应中始终返回 `nextLink` 或 `deltaLink` 响应头中指定的 URL。`nextLink` URL 包含的是 _skipToken_，`deltaLink` URL 包含的是 _deltaToken_。
 
-These tokens are opaque to the client. The following details are what you need to know about them:
+这些令牌对客户端不透明。以下是需要了解的详细信息：
 
 - 每个令牌都反映状态，并表示一轮更改跟踪中的响应快照。
 
-- The state tokens also encode and include other query parameters (such as `$select`) specified in the initial delta query request. Therefore, it's not required to repeat them in subsequent delta query requests.
+- 状态令牌还会进行编码，并包括初始 delta 查询请求中指定的其他查询参数（如 `$select`）。因此，不需要在后续 delta 查询请求中重复这些操作。
 
 - 执行增量查询时，可以将 `nextLink` 或 `deltaLink` URL 复制并应用到下一个 **delta** 函数调用，无需检查 URL 的内容（包括其状态令牌）。
 
 ### <a name="optional-query-parameters"></a>可选的查询参数
 
-If a client uses a query parameter, it must be specified in the initial request. Microsoft Graph automatically encodes the specified parameter into the `nextLink` or `deltaLink` provided in the response. The calling application only needs to specify the query parameters once upfront. Microsoft Graph adds the specified parameters automatically for all subsequent requests.
+如果客户使用查询参数，则它必须在初始请求中指定。Microsoft Graph 自动将指定参数编码为响应中提供的 `nextLink` 或 `deltaLink`。调用应用程序只需预先指定查询参数一次。Microsoft Graph 将为所有后续请求自动添加指定参数。
 
 请注意以下可选查询参数的常规有限支持：
 
@@ -71,7 +70,7 @@ If a client uses a query parameter, it must be specified in the initial request.
 - 不支持 `$expand`。
 - 不支持 `$top`。
 - 不支持 `$orderby`。
-- If a `$select` query parameter is used, the parameter indicates that the client prefers to only track changes on the properties or relationships specified in the `$select` statement. If a change occurs to a property that is not selected, the resource for which that property changed does not appear in the delta response after a subsequent request.
+- 如果使用的是 `$select` 查询参数，则该参数表示客户倾向于仅跟踪 `$select` 语句中指定的属性或关系的更改。如果未选中的属性发生更改，则属性已更改的资源将不会出现在后续请求之后的 delta 响应中。
 - `$select` 还支持用户和组的 `manager` 和 `members` 导航属性。 选择这些属性可以跟踪对用户管理器和组成员身份的更改。
 
 - 借助范围筛选器，可按对象 ID 跟踪一个或多个特定用户或组的更改。 例如，以下请求会返回与查询筛选器中指定的 ID 相匹配的组的更改。
@@ -90,7 +89,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 - 更新实例由它们的 **id** 表示，*至少*具有已更新的属性，但可能也包含其他属性。
 
-- Relationships on users and groups are represented as annotations on the standard resource representation. These annotations use the format `propertyName@delta`. The annotations are included in the response of the initial delta query request.
+- 用户和组的关系表示为对标准资源表示形式的注释。这些注释使用格式 `propertyName@delta`。注释包含在初始 delta 查询请求的响应内。
 
 删除的实例使用其 **id** 和 `@removed` 对象表示。 `@removed` 对象可能包含有关为何删除该实例的其他信息。 例如，"@removed": {"reason": "changed"}。
 
@@ -100,7 +99,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 - *已删除*表示该项已被删除，无法恢复。
 
-The `@removed` object can be returned in the initial delta query response and in tracked (deltaLink) responses. Clients using delta query requests should be designed to handle these objects in the responses.
+`@removed` 对象可以在初始 delta 查询响应和跟踪的 (deltaLink) 响应中返回。使用 delta 查询请求的客户端应能够处理响应中的这些对象。
 
 >**注意：** 在响应中可能会多次包含一个实体，前提是多次在特定情况下更改了该实体。 增量查询可以使应用程序列出所有更改，但不能确保实体在单个响应中是统一的。
 

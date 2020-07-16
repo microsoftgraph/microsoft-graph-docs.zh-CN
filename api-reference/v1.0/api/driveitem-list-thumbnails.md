@@ -20,12 +20,9 @@ ms.locfileid: "44863388"
 
 检索 [DriveItem](../resources/driveitem.md) 资源的 [ThumbnailSet](../resources/thumbnailset.md) 资源集合。
 
-A DriveItem can be represented by zero or more [ThumbnailSet](../resources/thumbnailset.md) resources.
-Each **thumbnailSet** can have one or more [**thumbnail**](../resources/thumbnail.md) objects, which are images that represent the item.
-For example, a **thumbnailSet** may include **thumbnail** objects, such as common ones including `small`, `medium`, or `large`.
+DriveItem 可以由零个或多个 [ThumbnailSet](../resources/thumbnailset.md) 资源表示。每个 **thumbnailSet** 都可以有一个或多个 [**thumbnail**](../resources/thumbnail.md) 对象，此类对象是表示项目的图像。例如，**thumbnailSet** 可包括 **thumbnail** 对象，例如包括 `small`、`medium` 或 `large` 等常见对象。
 
-There are many ways to work with thumbnails on OneDrive.
-Here are the most common ones:
+可以通过多种方式在 OneDrive 上对缩略图进行操作。以下是一些最常见的操作：
 
 * 枚举项目的可用缩略图
 * 检索项目的单个缩略图
@@ -37,7 +34,7 @@ Here are the most common ones:
 
 ## <a name="permissions"></a>权限
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -100,8 +97,7 @@ GET /me/drive/items/{item-id}/thumbnails
 
 这将返回项的可用 **thumbnailSet** 的数组。 驱动器中的任何项都可以有零个或多个缩略图。
 
-**Note:** You can use the _select_ query string parameter to control which thumbnail sizes are returned in the **ThumbnailSet**.
-For example, `/thumbnails?select=medium` retrieves only the medium sized thumbnails.
+**注意：** 可以使用 _select_ 查询字符串参数，控制在 **ThumbnailSet** 中返回的缩略图尺寸。 例如，`/thumbnails?select=medium` 仅检索中等大小的缩略图。
 
 
 ### <a name="response"></a>响应
@@ -161,7 +157,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 | 名称         | 类型   | 说明                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
 | **item-id**  | string | 引用的项目的唯一标识符。                                           |
-| **thumb-id** | number | The index of the thumbnail, usually 0-4. If there is a custom thumbnail, its index is 0. |
+| **thumb-id** | number | 缩略图的索引，通常介于 0 到 4 之间。 如果没有自定义缩略图，索引为 0。 |
 | **size**     | string | 请求获取的缩略图的尺寸。 可取值为下面列出的标准大小之一或自定义大小。 |
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
@@ -298,8 +294,7 @@ Content-type: application/json
 
 ## <a name="size-options"></a>大小选项
 
-This table defines the possible thumbnail sizes.
-While you can request any arbitrary thumbnail size, the defined values are likely to exist and return a value quickly:
+下表定义了可能的缩略图大小。虽然可以请求任意的缩略图大小，但可能存在定义的有并迅速返回值：
 
 | 名称           | 分辨率  | 纵横比​​ | 说明                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
@@ -367,7 +362,7 @@ Content-Type: application/json
 | 缩略图标识符 | 分辨率             | 纵横比 | 说明                                                                                                                                         |
 |:---------------------|:-----------------------|:-------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
 | c300x400             | 300x400 像素框 | 原始大小     | 生成适应在 300x400 像素框中显示的缩略图，纵横比不变                                                                 |
-| c300x400_Crop        | 300x400                | 已裁剪      | Generate a thumbnail that is 300x400 pixels. This works by resizing the image to fill the 300x400 box and cropping whatever spills outside the box. |
+| c300x400_Crop        | 300x400                | 已裁剪      | 生成 300x400 像素缩略图。 具体方式为，重设图像大小以填充 300x400 框，并裁剪超出框外的内容。 |
 
 **注意：** 返回的缩略图可能与请求的像素尺寸不完全匹配，但与纵横比匹配。
 在某些情况下，如果缩略图已经存在并且可以轻松缩放来匹配请求的分辨率，则可能会返回比请求的大小更大的缩略图。

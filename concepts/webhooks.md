@@ -1,19 +1,20 @@
 ---
 title: 设置用户数据更改的通知
-description: The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes.
+description: Microsoft Graph API 使用 webhook 机制将更改通知传递给客户端。客户端是一种 web 服务，可用于配置自己的 URL 以接收更改通知。客户端应用使用更改通知在更改时更新其状态。
 author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
 ms.openlocfilehash: 47c4357a59b02322769433fb82d0e9fe02fc1aae
 ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "45050923"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
-The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes.
+Microsoft Graph API 使用 webhook 机制将更改通知传递给客户端。客户端是一种 web 服务，可用于配置自己的 URL 以接收更改通知。客户端应用使用更改通知在更改时更新其状态。
 
 在 Microsoft Graph 接受订阅请求后，它会将更改通知推送到订阅中指定的 URL。 然后应用根据其业务逻辑执行操作。 例如，它提取更多数据、更新缓存和视图等。
 

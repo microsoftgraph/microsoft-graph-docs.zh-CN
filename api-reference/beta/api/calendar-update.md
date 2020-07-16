@@ -52,15 +52,15 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+| Authorization  | Bearer {token}。必需。  |
 | Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|color|String|Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
+|color|String|在 UI 中指定将该日历与其他日历区分开来的颜色主题。属性值有：LightBlue=0、LightGreen=1、LightOrange=2、LightGray=3、LightYellow=4、LightTeal=5、LightPink=6、LightBrown=7、LightRed=8、MaxColor=9、Auto=-1|
 |isDefaultCalendar|Boolean|如果此日历是用户的默认日历，则值为 true，否则为 false。|
 |name|String|日历名称。|
 
@@ -99,7 +99,7 @@ Content-type: application/json
 ---
 
 ##### <a name="response"></a>响应
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,

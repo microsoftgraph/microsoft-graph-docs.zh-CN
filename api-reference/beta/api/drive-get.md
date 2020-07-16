@@ -25,7 +25,7 @@ ms.locfileid: "44895753"
 
 ## <a name="permissions"></a>权限
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -199,7 +199,7 @@ GET /drives/{driveId}
 
 | 参数名称 | 值  | 说明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _driveId_      | 字符串 | Required. The identifier for the drive requested. |
+| _driveId_      | 字符串 | 必需。 请求获取的驱动器的标识符。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 

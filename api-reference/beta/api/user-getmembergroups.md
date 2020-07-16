@@ -18,13 +18,13 @@ ms.locfileid: "44896467"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Return all the groups that the user is a member of. The check is transitive, unlike reading the [memberOf](../api/user-list-memberof.md) navigation property, which returns only the groups that the user is a direct member of.
+返回用户是其成员的所有组。检查是可传递的，这和读取 [memberOf](../api/user-list-memberof.md) 导航属性不同，后者仅返回用户是其直接成员的组。
 
-This function supports Microsoft 365 and other types of groups provisioned in Azure AD. The maximum number of groups each request can return is 2046. Note that Microsoft 365 groups cannot contain groups. So membership in a Microsoft 365 group is always direct.
+此函数支持在 Azure AD 中预配的 Microsoft 365 和其他类型的组。每个请求可返回的最大组数为2046。请注意，Microsoft 365 组不能包含组。因此，Microsoft 365 组中的成员身份始终是直接的。
 
 ## <a name="permissions"></a>权限
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -44,7 +44,7 @@ POST /users/{id | userPrincipalName}/getMemberGroups
 
 | 标头        | 值                     |
 | :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+| Authorization | Bearer {token}。必需。 |
 | Content-Type  | application/json          |
 
 ## <a name="request-body"></a>请求正文
@@ -53,7 +53,7 @@ POST /users/{id | userPrincipalName}/getMemberGroups
 
 | 参数           | 类型    | 说明                                                                                                                                                                                                                                                                         |
 | :------------------ | :------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| securityEnabledOnly | Boolean | **true** to specify that only security groups that the user is a member of should be returned; **false** to specify that all groups that the user is a member of should be returned. Note: Setting this parameter to **true** is only supported when calling this method on a user. |
+| securityEnabledOnly | Boolean | **true** 指定仅应返回用户是其成员的安全组；**false** 指定应返回用户是其成员的所有组。注意：仅当对用户调用这个方法时，才支持将此参数设置为 **true**。 |
 
 ## <a name="response"></a>响应
 
@@ -100,7 +100,7 @@ Content-length: 33
 
 ##### <a name="response"></a>响应
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 
 <!-- {
   "blockType": "response",

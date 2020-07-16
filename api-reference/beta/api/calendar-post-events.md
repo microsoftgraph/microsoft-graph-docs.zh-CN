@@ -53,7 +53,7 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+| Authorization  | Bearer {token}。必需。  |
 | Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
@@ -289,7 +289,7 @@ Content-type: application/json
 #### <a name="response"></a>响应
 下面是一个响应示例。 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

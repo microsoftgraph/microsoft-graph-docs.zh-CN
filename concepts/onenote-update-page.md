@@ -20,7 +20,7 @@ ms.locfileid: "44895234"
 
 `PATCH ../notes/pages/{id}/content`</p>
 
-Send a JSON change object in the message body. If the request is successful, Microsoft Graph returns a 204 HTTP status code.
+在邮件正文中发送 JSON 更改对象。如果请求成功，Microsoft Graph 便会返回 204 HTTP 状态代码。
 
 
 <a name="request-uri"></a>
@@ -56,7 +56,7 @@ OneNote 页面的 HTML 包含文本、图像和组织到结构中的其他内容
 
 所做的更改将以 JSON 更改对象数组的形式在邮件正文中发送。 每个对象指定目标元素、新 HTML 内容以及使用内容可完成的操作。
 
-The following array defines two changes. The first inserts an image above a paragraph as a sibling, and the second appends an item to a list as a last child.
+以下数组定义了两个更改。第一个更改在段落上方插入一张图像作为同级对象，第二个更改向列表中附加一个项目作为最后一个子元素。
 
 > [!NOTE]
 > 在更新 OneNote 页面上的图像时，不能使用 www 链接。 服务不会尝试下载随机资源。 相反，图像必须是请求的一部分，或者是通过图像数据 url 或多部分请求的部分名称。
@@ -86,7 +86,7 @@ The following array defines two changes. The first inserts an image above a para
 
 #### <a name="target"></a>target
 
-The element to update. The value must be one of the following identifiers:
+要更新的元素。值必须是下列标识符之一：
 
 | 标示符 | 说明 |  
 |------|------|  
@@ -97,7 +97,7 @@ The element to update. The value must be one of the following identifiers:
  
 #### <a name="action"></a>action
 
-The action to perform on the target element. See [supported actions for elements](#supported-elements-and-actions).
+要在目标元素上执行的操作。请参阅[元素的支持操作](#supported-elements-and-actions)。
 
 | 操作 | 说明 |  
 |------|------|  
@@ -108,7 +108,7 @@ The action to perform on the target element. See [supported actions for elements
  
 #### <a name="position"></a>position
 
-The location to add the supplied content, relative to the target element. Defaults to **after** if omitted.
+要添加所提供的内容的位置，与目标元素有关。如果省略，默认值为 **after**。
 
 | 位置 | 说明 |  
 |------|------|  
@@ -207,7 +207,7 @@ Microsoft Graph 将为可更新页面上的元素生成 **id** 值。 若要获�
 
 ### <a name="append-child-elements"></a>追加子元素
 
-The **append** action adds a child to a **body**, **div** (within a div), **ol**, or **ul** element. The **position** attribute determines whether to append the child before or after the target. The default position is **after**.
+**append** 操作向 **body**、**div**（分区内）、**ol** 或 **ul** 元素添加一个子元素。**position** 属性确定是在目标之前还是之后附加子元素。默认位置为 **after**。
 
 #### <a name="append-to-a-div"></a>追加到 div
 
@@ -254,7 +254,7 @@ The **append** action adds a child to a **body**, **div** (within a div), **ol**
 
 #### <a name="append-to-a-list"></a>追加到列表
 
-The following example adds a list item as a last child to the target list. The **list-style-type** property is defined because the item uses a non-default list style.
+以下示例将一个列表项目作为最后一个子元素添加到目标列表。因为项目使用非默认的列表演示，因此应定义 **list-style-type** 属性。
 
 ```json
 [
@@ -275,7 +275,7 @@ The following example adds a list item as a last child to the target list. The *
 
 #### <a name="insert-siblings"></a>插入同级
 
-The following example adds two sibling nodes to the page. It adds an image above the **para1** element and a paragraph below the **para2** element.
+以下示例向页面添加两个同级节点。它在 **para1** 元素上方添加一个图像，在 **para2** 元素下方添加一个段落。
 
 ```json
 [
@@ -317,7 +317,7 @@ The following example adds two sibling nodes to the page. It adds an image above
 
 #### <a name="update-a-table"></a>更新表格 
 
-This example shows how to update a table by using its generated ID. Replacing **tr** and **td** elements is not supported, but you can replace the entire table.
+此示例显示如何使用生成的 ID 更新表格。不支持替换 **tr** 和 **td** 元素，但您可以替换整个表格。
 
 ```json
 [
@@ -449,7 +449,7 @@ Content-Type: image/png
 
 | 响应数据 | 说明 |  
 |------|------|  
-| 成功代码 | A 204 HTTP status code. No JSON data is returned for a PATCH request. |  
+| 成功代码 | 204 HTTP 状态代码。PATCH 请求未返回任何 JSON 数据。 |  
 | 错误 | 请阅读 [Microsoft Graph 中 OneNote API 的错误代码](onenote-error-codes.md)，以了解 Microsoft Graph 可以返回的 OneNote 错误。 |  
  
  

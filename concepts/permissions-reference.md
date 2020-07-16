@@ -21,14 +21,14 @@ ms.locfileid: "45038553"
 
 ## <a name="microsoft-graph-permission-names"></a>Microsoft Graph 权限名称
 
-Microsoft Graph permission names follow a simple pattern: _resource.operation.constraint_. For example, _User.Read_ grants permission to read the profile of the signed-in user, _User.ReadWrite_ grants permission to read and modify the profile of the signed-in user, and _Mail.Send_ grants permission to send mail on behalf of the signed-in user.
+Microsoft Graph 权限名称遵循简单模式：_resource.operation.constraint_。例如，_User.Read_ 授予读取已登录用户的配置文件的权限，_User.ReadWrite_ 授予读取和修改已登录用户的配置文件的权限，而 _Mail.Send_ 则授予代表已登录用户发送邮件的权限。
 
-The _constraint_ element of the name determines the potential extent of access your app will have within the directory. Currently Microsoft Graph supports the following constraints:
+名称的 _constraint_ 元素决定了你的应用程序在目录中具有的潜在访问范围。Microsoft Graph 当前支持以下约束：
 
-* **All** grants permission for the app to perform the operations on all of the resources of the specified type in a directory. For example, _User.Read.All_ potentially grants the app privileges to read the profiles of all of the users in a directory.
-* **Shared** grants permission for the app to perform the operations on resources that other users have shared with the signed-in user. This constraint is mainly used with Outlook resources like mail, calendars, and contacts. For example, _Mail.Read.Shared_, grants privileges to read mail in the mailbox of the signed-in user as well as mail in mailboxes that other users in the organization have shared with the signed-in user.
-* **AppFolder** grants permission for the app to read and write files in a dedicated folder in OneDrive. This constraint is only exposed on [Files permissions](#files-permissions) and is only valid for Microsoft accounts.
-* If **no constraint** is specified the app is limited to performing the operations on the resources owned by the signed-in user. For example, _User.Read_ grants privileges to read the profile of the signed-in user only, and _Mail.Read_ grants permission to read only mail in the mailbox of the signed-in user.
+* **All** 授予应用对目录中指定类型的所有资源执行操作的权限。例如，_User.Read.All_ 可能授予应用读取目录中所有用户的配置文件的特权。
+* **Shared** 授予该应用对其他用户与已登录用户共享的资源执行操作的权限。此约束主要用于 Outlook 资源，如邮件、日历和联系人。例如，_Mail.Read.Shared_ 授予在已登录用户的邮箱中以及组织中的其他用户与已登录用户共享的邮箱中读取邮件的权限。
+* **AppFolder** 授予应用在 OneDrive 专用文件夹中读取和写入文件的权限。此约束仅在[文件权限](#files-permissions)上公开，并且仅适用于 Microsoft 帐户。
+* 如果未指定**任何约束**，则应用程序仅限于对已登录用户拥有的资源执行操作。例如，_User.Read_ 仅授予读取已登录用户的配置文件的特权，_Mail.Read_ 仅授予读取已登录用户邮箱中的邮件的权限。
 
 > **注意**：在委托场景中，授予应用的有效权限可能受到组织中已登录用户的特权的限制。
 
@@ -293,7 +293,7 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 | _Calendars.Read_ |读取用户日历 |允许应用读取用户日历中的事件。 |No | 是 |
 | _Calendars.Read.Shared_ |读取用户日历和共享日历 |允许应用读取用户可以访问的所有日历（包括委派日历和共享日历）中的事件。 |否 | 否 |
 | _Calendars.ReadWrite_ |具有对用户日历的完整访问权限 |允许应用创建、读取、更新和删除用户日历中的事件。 |No | 是 |
-| _Calendars.ReadWrite.Shared_ |读取和写入用户日历和共享日历 |Allows the app to create, read, update and delete events in all calendars the user has permissions to access. This includes delegate and shared calendars.|否 | 否 |
+| _Calendars.ReadWrite.Shared_ |读取和写入用户日历和共享日历 |允许应用创建、读取、更新和删除用户有权访问的所有日历中的事件。这包括委派日历和共享日历。|否 | 否 |
 
 <br/>
 
@@ -592,7 +592,7 @@ _CallRecords_权限授予应用程序对组织内的每个呼叫和联机会议�
 
 |权限    |显示字符串   |说明 |需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_Device.ReadWrite.All_ |读取和写入设备 |Allows the app to read and write all device properties without a signed in user. Does not allow device creation, device deletion, or update of device alternative security identifiers. |是 |
+|_Device.ReadWrite.All_ |读取和写入设备 |支持应用程序读取和写入所有设备属性，而无需有登录用户。不得创建设备、删除设备或更新设备备用安全标识符。 |是 |
 
 ### <a name="example-usage"></a>用法示例
 
@@ -611,7 +611,7 @@ _CallRecords_权限授予应用程序对组织内的每个呼叫和联机会议�
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Directory.Read.All_ |读取目录数据 | 允许应用程序读取组织目录中的数据，如用户、组和应用程序。 **注意**：如果应用程序已在自己组织的租户中注册，用户可能会同意应用程序要求必须有此权限。| 是 | 否 |
-| _Directory.ReadWrite.All_ |读取和写入目录数据 | Allows the app to read and write data in your organization's directory, such as users, and groups. It does not allow the app to delete users or groups, or reset user passwords. | 是 | 否 |
+| _Directory.ReadWrite.All_ |读取和写入目录数据 | 允许应用读取和写入组织目录中的数据，如用户和组。它不允许应用删除用户或组，或重置用户密码。 | 是 | 否 |
 | _Directory.AccessAsUser.All_ |以登录用户身份访问目录  | 允许应用以登录用户身份访问目录中的信息。 | 是 | 否 |
 | _PrivilegedAccess.ReadWrite.AzureAD_ |为目录读取和写入 Privileged Identity Management 数据  | 允许应用读取和写入 Azure AD 的 Privileged Identity Management API。 | 是 | 否 |
 | _PrivilegedAccess.ReadWrite.AzureResources_ |为 Azure 资源读取和写入 Privileged Identity Management 数据 | 允许应用读取和写入 Azure 资源的 Privileged Identity Management API。 | 是 | 否 |
@@ -623,7 +623,7 @@ _CallRecords_权限授予应用程序对组织内的每个呼叫和联机会议�
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Directory.Read.All_ | 读取目录数据 | 允许应用在没有登录用户的情况下读取组织目录中的数据（如用户、组和应用）。 | 是 |
-| _Directory.ReadWrite.All_ | 读取和写入目录数据 | Allows the app to read and write data in your organization's directory, such as users, and groups, without a signed-in user. Does not allow user or group deletion. | 是 |
+| _Directory.ReadWrite.All_ | 读取和写入目录数据 | 允许应用在没有登录用户的情况下读取和写入组织目录中的数据（如用户和组）。不允许删除用户或组。 | 是 |
 
 ### <a name="remarks"></a>注解
 
@@ -737,8 +737,8 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 | _Files.ReadWrite_  | 具有对用户文件的完全访问权限 | 允许应用读取、创建、更新和删除登录用户的文件。 | No| 是 |
 | _Files.ReadWrite.All_ | 具备对用户可以访问的所有文件的完全访问权限 | 允许应用读取、创建、更新和删除登录用户可以访问的所有文件。 | No | 是 |
 | _Files.ReadWrite.AppFolder_ | 具有对应用程序文件夹的完全访问权限（预览） | （预览）允许应用读取、创建、更新和删除应用程序文件夹中的文件。 | 否 | 否 |
-| _Files.Read.Selected_  | 读取用户选择的文件 | **Microsoft Graph 提供一定程度的支持（见“注解”）** <br/> (Preview) Allows the app to read files that the user selects. The app has access for several hours after the user selects a file.  | 否 | 否 |
-| _Files.ReadWrite.Selected_ | 读取和写入用户选择的文件 | **Microsoft Graph 提供一定程度的支持（见“注解”）** <br/> (Preview) Allows the app to read and write files that the user selects. The app has access for several hours after the user selects a file. | 否 | 否 |
+| _Files.Read.Selected_  | 读取用户选择的文件 | **Microsoft Graph 提供一定程度的支持（见“注解”）** <br/> （预览）允许应用读取用户选择的文件。在用户选择文件后，应用有几个小时的访问权限。  | 否 | 否 |
+| _Files.ReadWrite.Selected_ | 读取和写入用户选择的文件 | **Microsoft Graph 提供一定程度的支持（见“注解”）** <br/> （预览）允许应用读取和写入用户选择的文件。在用户选择文件后，应用有几个小时的访问权限。 | 否 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -751,8 +751,7 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 
 > **注意**：对于个人帐户，Files.Read 和 Files.ReadWrite 还会授予与登录用户共享的文件的访问权限。
 
-The Files.Read.Selected and Files.ReadWrite.Selected delegated permissions are only valid on work or school accounts and are only exposed for working with [Office 365 file handlers (v1.0)](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps).
-They should not be used for directly calling Microsoft Graph APIs.
+Files.Read.Selected 和 Files.ReadWrite.Selected 委派权限仅在工作或学校帐户上有效，并仅在处理 [Office 365 文件处理程序 (v1.0)](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps) 时才公开。它们不应该用来直接调用 Microsoft Graph API。
 
 Files.ReadWrite.AppFolder 委派权限仅适于个人帐户，并仅用于访问带有 OneDrive [获取特殊文件夹](/graph/api/drive-get-specialfolder?view=graph-rest-1.0) Microsoft Graph API 的[应用程序根特殊文件夹](https://dev.onedrive.com/misc/appfolder.htm)。
 
@@ -783,7 +782,7 @@ Files.ReadWrite.AppFolder 委派权限仅适于个人帐户，并仅用于访问
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Group.Read.All_ |    读取所有组 | Allows the app to list groups, and to read their properties and all group memberships on behalf of the signed-in user.  Also allows the app to read calendar, conversations, files, and other group content for all groups the signed-in user can access. | 是 | 否 |
+| _Group.Read.All_ |    读取所有组 | 允许应用代表登录用户列出组，并读取其属性以及所有组成员身份。此外，还允许应用读取登录用户可以访问的所有组的日历、 对话、 文件和其他组内容。 | 是 | 否 |
 | _Group.ReadWrite.All_ |    读取和写入所有组| 允许应用代表登录用户创建组并读取所有组属性和成员身份。  此外，还允许应用读取和写入登录用户可以访问的所有组的日历、对话、文件和其他组内容。 此外，还允许组所有者管理他们的组并允许组成员更新组内容。 | 是 | 否 |
 | _GroupMember.Read.All_ |    读取组成员身份 | 允许应用列出组、读取基本组属性以及读取登录的用户有权访问的所有组的成员身份。 | 是 | 否 |
 | _GroupMember.ReadWrite.All_ |    读取和写入组成员身份 | 允许应用列出组、读取基本属性、读取和更新登录的用户有权访问的组的成员身份。 无法更新组属性和所有者，并且无法删除组。 | 是 | 否 |
@@ -805,15 +804,15 @@ Microsoft 个人帐户不支持组功能。
 
 对于 Microsoft 365 组，组权限授予应用程序对组内容的访问权限;例如，对话、文件、便笺等。
 
-For application permissions, there are some limitations for the APIs that are supported. For more information, see [known issues](known-issues.md).
+应用程序权限对受支持的 API 有一些限制。有关详细信息，请参阅[已知问题](known-issues.md)。
 
-In some cases, an app may need [Directory permissions](#directory-permissions) to read some group properties like `member` and `memberOf`. For example, if a group has a one or more [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) as members, the app will need effective permissions to read service principals through being granted one of the _Directory.\*_ permissions, otherwise Microsoft Graph will return an error. (In the case of delegated permissions, the signed-in user will also need sufficient privileges in the organization to read service principals.) The same guidance applies for the `memberOf` property, which can return [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta).
+在某些情况下，应用可能需要[目录权限](#directory-permissions)才能读取 `member` 和 `memberOf` 等组属性。例如，如果组将一个或多个 [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) 作为成员，则应用将需要有效权限才能通过授予的其中一个_目录\*_ 权限读取服务主体，否则 Microsoft Graph 将返回错误。（如果是委派权限，已登录用户还需要组织的足够的权限才能读取服务主体。）相同的指导适用于 `memberOf` 属性，该属性可以返回 [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta)。
 
 若要设置 Microsoft 365 组的**preferredDataLocation**属性，应用程序需要具有目录 ReadWrite 的所有权限。 在多地理位置环境中的用户创建 Microsoft 365 组时，会自动将该组的**preferredDataLocation**值设置为用户的。 有关组的首选数据位置的详细信息，请参阅[Create a Microsoft 365 group with a 特定的 PDL](https://docs.microsoft.com/office365/enterprise/multi-geo-add-group-with-pdl)。
 
-Group permissions are used to control access to [Microsoft Teams](/graph/api/resources/teams-api-overview) resources and APIs. Personal Microsoft accounts are not supported.
+组权限用于控制对 [Microsoft Teams](/graph/api/resources/teams-api-overview) 资源和 API 的访问权限。不支持 Microsoft 个人帐户。
 
-Group permissions are also used to control access to [Microsoft Planner](/graph/api/resources/planner-overview) resources and APIs. Only delegated permissions are supported for Microsoft Planner APIs; application permissions are not supported. Personal Microsoft accounts are not supported.
+组权限也用于控制对 [Microsoft Planner](/graph/api/resources/planner-overview) 资源和 API 的访问权限。Microsoft Planner API 仅支持委派权限，不支持应用程序权限。不支持 Microsoft 个人帐户。
 
 
 ### <a name="example-usage"></a>用法示例
@@ -881,7 +880,7 @@ _IdentityProvider.Read.All_ 和 _IdentityProvider.ReadWrite.All_ 仅对工作或
 
 ### <a name="remarks"></a>备注
 
-_IdentityRiskEvent.Read.All_ is valid only for work or school accounts. For an app with delegated permissions to read identity risk information, the signed-in user must be a member of one of the following administrator roles: Global Administrator, Security Administrator, or Security Reader. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+_IdentityRiskEvent.Read.All_ 仅适用于工作或学校帐户。对于通过委派权限读取标识风险信息的应用，登录用户必须是以下管理员角色之一的成员：全局管理员、安全管理员或安全读者。有关管理员角色的详细信息，请参阅[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)
 
 ### <a name="example-usage"></a>用法示例
 
@@ -945,7 +944,7 @@ _IdentityRiskyUser.Read.All_ 和 _IdentityRiskyUser.ReadWrite.ALL_ 仅适用于�
 |_DeviceManagementConfiguration.ReadWrite.All_ | 读取和写入 Microsoft Intune 设备配置和策略  | 允许应用读取和写入 Microsoft Intune 管理的设备配置的属性和设备符合性策略以及它们对组的分配情况。 | 是 | 否 |
 |_DeviceManagementManagedDevices.PrivilegedOperations.All_ | 在 Microsoft Intune 设备上执行影响用户的远程操作 | 允许应用执行高影响级别远程操作，如在由 Microsoft Intune 管理的设备上擦除设备或重置密码。 | 是 | 否 |
 |_DeviceManagementManagedDevices.Read.All_ | 读取 Microsoft Intune 设备 | 允许应用读取由 Microsoft Intune 管理的设备的属性。 | 是 | 否 |
-|_DeviceManagementManagedDevices.ReadWrite.All_ | 读取和写入 Microsoft Intune 设备 | Allows the app to read and write the properties of devices managed by Microsoft Intune. Does not allow high impact operations such as remote wipe and password reset on the device’s owner. | 是 | 否 |
+|_DeviceManagementManagedDevices.ReadWrite.All_ | 读取和写入 Microsoft Intune 设备 | 允许应用读取和写入由 Microsoft Intune 管理的设备的属性。不允许执行具有高影响级别的操作，例如针对设备所有者的远程擦除和密码重置。 | 是 | 否 |
 |_DeviceManagementRBAC.Read.All_ | 读取 Microsoft Intune RBAC 设置 | 允许应用读取与基于 Microsoft Intune 角色的访问控制 (RBAC) 设置相关的属性。 | 是 | 否 |
 |_DeviceManagementRBAC.ReadWrite.All_ | 读取和写入 Microsoft Intune RBAC 设置 | 允许应用读取和写入与基于 Microsoft Intune 角色的访问控制 (RBAC) 设置相关的属性。 | 是 | 否 |
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | 否 |
@@ -961,7 +960,7 @@ _IdentityRiskyUser.Read.All_ 和 _IdentityRiskyUser.ReadWrite.ALL_ 仅适用于�
 |_DeviceManagementConfiguration.ReadWrite.All_ | 读取和写入 Microsoft Intune 设备配置和策略  | 允许应用读取和写入 Microsoft Intune 管理的设备配置的属性和设备符合性策略以及它们对组的分配情况。 | 是 | 否 |
 |_DeviceManagementManagedDevices.PrivilegedOperations.All_ | 在 Microsoft Intune 设备上执行影响用户的远程操作 | 允许应用执行高影响级别远程操作，如在由 Microsoft Intune 管理的设备上擦除设备或重置密码。 | 是 | 否 |
 |_DeviceManagementManagedDevices.Read.All_ | 读取 Microsoft Intune 设备 | 允许应用读取由 Microsoft Intune 管理的设备的属性。 | 是 | No |
-|_DeviceManagementManagedDevices.ReadWrite.All_ | 读取和写入 Microsoft Intune 设备 | Allows the app to read and write the properties of devices managed by Microsoft Intune. Does not allow high impact operations such as remote wipe and password reset on the device’s owner. | 是 | No |
+|_DeviceManagementManagedDevices.ReadWrite.All_ | 读取和写入 Microsoft Intune 设备 | 允许应用读取和写入由 Microsoft Intune 管理的设备的属性。不允许执行具有高影响级别的操作，例如针对设备所有者的远程擦除和密码重置。 | 是 | No |
 |_DeviceManagementRBAC.Read.All_ | 读取 Microsoft Intune RBAC 设置 | 允许应用读取与基于 Microsoft Intune 角色的访问控制 (RBAC) 设置相关的属性。 | 是 | No |
 |_DeviceManagementRBAC.ReadWrite.All_ | 读取和写入 Microsoft Intune RBAC 设置 | 允许应用读取和写入与基于 Microsoft Intune 角色的访问控制 (RBAC) 设置相关的属性。 | 是 | No |
 |_DeviceManagementServiceConfig.Read.All_ | 读取 Microsoft Intune 配置 | 允许应用读取 Intune 服务属性，其中包括设备注册和第三方服务连接配置。 | 是 | No |
@@ -1015,12 +1014,12 @@ _IdentityRiskyUser.Read.All_ 和 _IdentityRiskyUser.ReadWrite.ALL_ 仅适用于�
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Mail.Read_ |    读取用户邮件 | 允许应用读取用户邮箱中的电子邮件。 | No | 必需
 | _Mail.ReadBasic_ |    读取用户基本邮件 | 允许应用读取已登录用户的邮箱，但不读取 **body**、**bodyPreview**、**uniqueBody**、**attachments**、**extensions** 和任何扩展属性。 不包含邮件搜索权限。 | 否 | 否
-| _Mail.ReadWrite_ |    对用户邮件的读写权限 | Allows the app to create, read, update, and delete email in user mailboxes. Does not include permission to send mail.| No | 是
+| _Mail.ReadWrite_ |    对用户邮件的读写权限 | 允许应用创建、读取、更新和删除用户邮箱中的电子邮件。不包括发送电子邮件的权限。| No | 是
 | _Mail.Read.Shared_ |    读取用户邮件和共享邮件 | 允许应用读取用户可以访问的邮件，包括用户个人邮件和共享邮件。 | 否 | 否
-| _Mail.ReadWrite.Shared_ |    读取和写入用户邮件和共享邮件 | Allows the app to create, read, update, and delete mail that the user has permission to access, including the user's own and shared mail. Does not include permission to send mail. | 否 | 否
+| _Mail.ReadWrite.Shared_ |    读取和写入用户邮件和共享邮件 | 允许应用创建、读取、更新和删除用户有权访问的邮件，包括用户个人邮件和共享邮件。不包括邮件发送权限。 | 否 | 否
 | _Mail.Send_ |    以用户身份发送邮件 | 允许应用以组织用户身份发送邮件。 | No | 是
 | _Mail.Send.Shared_ |    代表他人发送邮件 | 允许应用以登录用户身份发送邮件，包括代表他人发送邮件。 | 否 | 否
-| _MailboxSettings.Read_ |  读取用户的邮箱设置 | Allows the app to the read user's mailbox settings. Does not include permission to send mail. | 否 | 是
+| _MailboxSettings.Read_ |  读取用户的邮箱设置 | 允许应用读取用户的邮箱设置。不包括邮件发送权限。 | 否 | 是
 | _MailboxSettings.ReadWrite_ |  读取和写入用户邮箱设置 | 允许应用创建、读取、更新和删除用户邮箱设置。 不包含直接发送邮件的权限，但允许应用创建能够转发或重定向邮件的规则。 | 否 | 是
 
 #### <a name="application-permissions"></a>应用程序权限
@@ -1029,17 +1028,17 @@ _IdentityRiskyUser.Read.All_ 和 _IdentityRiskyUser.ReadWrite.ALL_ 仅适用于�
 |:----------------------------|:-----------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------|
 | _Mail.Read_                 | 读取所有邮箱中的邮件               | 允许应用在没有登录用户的情况下读取所有邮箱中的邮件。                                                                                                             | 是                    |
 | _Mail.ReadBasic.All_        | 读取所有用户基本邮件                | 让应用能够读取所有用户的邮箱，但不读取 Body、BodyPreview、UniqueBody、Attachments, ExtendedProperties 和 Extensions。 不包含邮件搜索权限。 | 是                    |
-| _Mail.ReadWrite_            | 读取和写入所有邮箱中的邮件     | Allows the app to create, read, update, and delete mail in all mailboxes without a signed-in user. Does not include permission to send mail.                                       | 是                    |
+| _Mail.ReadWrite_            | 读取和写入所有邮箱中的邮件     | 允许应用在没有登录用户的情况下创建、读取、更新和删除所有邮箱中的邮件。不包括发送电子邮件的权限。                                       | 是                    |
 | _Mail.Send_                 | 以任意用户身份发送邮件                    | 允许应用在没有登录用户的情况下以任意用户身份发送邮件。                                                                                                                  | 是                    |
-| _MailboxSettings.Read_      | 读取用户的所有邮箱设置           | Allows the app to read user's mailbox settings without a signed-in user. Does not include permission to send mail.                                                                 | 否                     |
-| _MailboxSettings.ReadWrite_ | 读取和写入所有用户邮箱设置 | Allows the app to create, read, update, and delete user's mailbox settings without a signed-in user. Does not include permission to send mail.                                     | 是                    |
+| _MailboxSettings.Read_      | 读取用户的所有邮箱设置           | 允许应用在没有已登录用户的情况下读取用户邮箱设置。不包括邮件发送权限。                                                                 | 否                     |
+| _MailboxSettings.ReadWrite_ | 读取和写入所有用户邮箱设置 | 允许应用在没有登录用户的情况下创建、读取、更新和删除用户邮箱设置。不包括邮件发送权限。                                     | 是                    |
 
 > **重要说明** 管理员可以配置[应用程序访问策略](auth-limit-mailbox-access.md)，以限制应用程序访问_特定_邮箱，而不是组织中的所有邮箱，即使该应用程序已被授予 Mail.Read、Mail.ReadWrite、Mail.Send、MailboxSettings.Read 或 MailboxSettings.ReadWrite 的应用程序权限。
 
 
 ### <a name="remarks"></a>说明
 
-_Mail.Read.Shared_, _Mail.ReadWrite.Shared_, and _Mail.Send.Shared_ are only valid for work or school accounts. All other permissions are valid for both Microsoft accounts and work or school accounts.
+_Mail.Read.Shared_、_Mail.ReadWrite.Shared_ 和 _Mail.Send.Shared_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Mail.Send_ 或 _Mail.Send.Shared_ 权限，应用可以发送邮件并将副本保存到用户的“已发送邮件”文件夹中，即使应用不使用相应的 _Mail.ReadWrite_ 或 _Mail.ReadWrite.Shared _ 权限也是如此。
 
@@ -1110,7 +1109,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite_ |    读取和写入用户 OneNote 笔记本 | 允许应用代表已登录用户读取、共享和修改 OneNote 笔记本。 | No | 是
 | _Notes.Read.All_ |    读取用户可以访问的所有 OneNote 笔记本 | 允许应用读取登录用户在组织中有权访问的 OneNote 笔记本。 | 否 | 否
 | _Notes.ReadWrite.All_ |    读取和写入用户可以访问的所有 OneNote 笔记本。 | 允许应用读取、共享和修改已登录用户在组织中有权访问的 OneNote 笔记本。| 否 | 否
-| _Notes.ReadWrite.CreatedByApp_ |    有限的笔记本访问权限（不推荐使用） | **不推荐使用** <br/>Do not use. No privileges are granted by this permission. | 否 | 否
+| _Notes.ReadWrite.CreatedByApp_ |    有限的笔记本访问权限（不推荐使用） | **不推荐使用** <br/>请勿使用。此权限不授予任何特权。 | 否 | 否
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -1121,7 +1120,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 
 
 ### <a name="remarks"></a>备注
-_Notes.Read.All_ and _Notes.ReadWrite.All_ are only valid for work or school accounts. All other permissions are valid for both Microsoft accounts and work or school accounts.
+_Notes.Read.All_ 和 _Notes.ReadWrite.All_ 仅适用于工作或学校帐户。所有其他权限对于 Microsoft 帐户和工作或学校帐户均有效。
 
 通过 _Notes.Create_ 权限，应用可以查看已登录用户的 OneNote 笔记本层次结构，并创建 OneNote 内容（笔记本、分区组、分区、页面等）。
 
@@ -1224,13 +1223,13 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 无。
 
 ### <a name="remarks"></a>注解
-You can use these permissions to specify artifacts that you want returned in Azure AD authorization and token requests. They are supported differently by the Azure AD v1.0 and v2.0 endpoints.
+可以使用这些权限指定要在 Azure AD 授权和令牌请求中返回的项目。Azure AD v1.0 和 v2.0 终结点以不同的方式支持它们。
 
-With the Azure AD (v1.0) endpoint, only the _openid_ permission is used. You specify it in the *scope* parameter in an authorization request to return an ID token when you use the OpenID Connect protocol to sign in a user to your app. For more information, see [Authorize access to web applications using OpenID Connect and Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-openid-connect-code). To successfully return an ID token, you must also make sure that the _User.Read_ permission is configured when you register your app.
+使用 Azure AD (v1.0) 终结点时，仅使用 _openid_ 权限。在授权请求的 *scope* 参数中指定它，以在使用 OpenID Connect 协议让用户登录应用时返回 ID 令牌。有关详细信息，请参阅[使用 OpenID Connect 和 Azure Active Directory 来授权访问 Web 应用程序](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-openid-connect-code)。若要成功返回 ID 令牌，还必须确保在注册应用时已配置 _User.Read_ 权限。
 
-With the Azure AD v2.0 endpoint, you specify the _offline\_access_ permission in the _scope_ parameter to explicitly request a refresh token when using the OAuth 2.0 or OpenID Connect protocols. With OpenID Connect, you specify the _openid_ permission to request an ID token. You can also specify the _email_ permission, _profile_ permission, or both to return additional claims in the ID token. You do not need to specify _User.Read_ to return an ID token with the v2.0 endpoint. For more information, see [OpenID Connect scopes](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes).
+使用 Azure AD v2.0 终结点时，在 _scope_ 参数中指定 _offline\_access_ 权限，以在使用 OAuth 2.0 或 OpenID Connect 协议时显式请求获取刷新令牌。使用 OpenID Connect 时，指定 _openid_ 权限来请求获取 ID 令牌。还可指定 _email_ 权限和/或 _profile_ 权限，以在 ID 令牌中返回其他声明。使用 v2.0 终结点时，无需指定 _User.Read_ 来返回 ID 令牌。有关详细信息，请参阅 [OpenID Connect 作用域](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes)。
 
-> **Important** The Microsoft Authentication Library (MSAL) currently specifies _offline\_access_, _openid_, _profile_, and _email_ by default in authorization and token requests. This means that, for the default case, if you specify these permissions explicitly, Azure AD may return an error.
+> **重要说明**：目前，Microsoft 身份验证库 (MSAL) 默认在授权和令牌请求中指定 _offline\_access_、_openid_、_profile_ 和 _email_。也就是说，在默认情况下，如果显式指定这些权限，Azure AD 可能会返回错误。
 
 ---
 
@@ -1296,8 +1295,8 @@ With the Azure AD v2.0 endpoint, you specify the _offline\_access_ permission in
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _People.Read_ |    读取用户的相关人员列表 | Allows the app to read a scored list of people relevant to the signed-in user. The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype). | 否 | 是 |
-| _People.Read.All_ | 读取所有用户的相关人员列表 | Allows the app to read a scored list of people relevant to the signed-in user or other users in the signed-in user's organization. The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype). Also allows the app to search the entire directory of the signed-in user's organization. | 是 | 否 |
+| _People.Read_ |    读取用户的相关人员列表 | 允许应用读取登录用户相关人员的得分列表。该列表可包括当地联系人、社交网络或你所在组织目录中的联系人以及来自最近通信（例如电子邮件和 Skype）的人员。 | 否 | 是 |
+| _People.Read.All_ | 读取所有用户的相关人员列表 | 允许应用读取登录用户或登录用户组织中的其他用户的相关人员得分列表。该列表可包括当地联系人、社交网络或你所在组织目录中的联系人以及来自最近通信（例如电子邮件和 Skype）的人员。此外，还允许应用搜索登录用户组织的整个目录。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -1612,9 +1611,9 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 无。
 
 ### <a name="remarks"></a>注解
-_Tasks_ permissions are used to control access for Outlook tasks. Access for Microsoft Planner tasks is controlled by [_Group_ permissions](#group-permissions).
+_任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 任务的访问权限由[_组_权限](#group-permissions)控制。
 
-_Shared_ permissions are currently only supported for work or school accounts. Even with _Shared_ permissions, reads and writes may fail if the user who owns the shared content has not granted the accessing user permissions to modify content within the folder.
+目前仅工作或学校帐户支持_共享_权限。即使具有_共享_权限，如果未授予拥有共享内容的用户在文件夹内修改内容访问用户权限，读取和写入仍会失败。
 
 ### <a name="example-usage"></a>用法示例
 #### <a name="delegated"></a>委派
@@ -1878,11 +1877,11 @@ _Shared_ permissions are currently only supported for work or school accounts. E
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _User.Read_       |    登录并读取用户个人资料 | Allows users to sign-in to the app, and allows the app to read the profile of signed-in users. It also allows the app to read basic company information of signed-in users.| No | 是 |
+| _User.Read_       |    登录并读取用户个人资料 | 允许用户登录应用，并允许应用读取登录用户的个人资料。它还允许应用读取登录用户的基本公司信息。| No | 是 |
 | _User.ReadWrite_ |    对用户个人资料的读写权限 | 允许应用读取登录用户的完整个人资料。 此外，它还允许应用代表登录用户来更新其个人资料信息。 | No | 是 |
 | _User.ReadBasic.All_ |    读取所有用户的基本个人资料 | 允许应用代表登录用户读取组织中其他用户的一套基本个人资料属性。 其中包括显示名称、名字和姓氏、电子邮件地址、开放扩展和照片。 此外，还允许应用读取已登录用户的完整个人资料。 | 否 | 否 |
 | _User.Read.All_  |     读取所有用户的完整个人资料           | 允许应用代表登录用户读取组织中其他用户的整套个人资料属性、下属和经理。 | 是 | No |
-| _User.ReadWrite.All_ |     读取和写入所有用户的完整个人资料 | Allows the app to read and write the full set of profile properties, reports, and managers of other users in your organization, on behalf of the signed-in user. Also allows the app to create and delete users as well as reset user passwords on behalf of the signed-in user. | 是 | 否 |
+| _User.ReadWrite.All_ |     读取和写入所有用户的完整个人资料 | 允许应用代表登录用户读取和写入组织中其他用户的整套个人资料属性、下属和经理。还允许应用代表已登录用户创建和删除用户以及重置用户密码。 | 是 | 否 |
 | _User.Invite.All_  |     将来宾用户邀请到组织 | 允许应用代表已登录用户将来宾用户邀请到你的组织。 | 是 | 否 |
 | _User.Export.All_       |    导出用户数据 | 当由公司管理员执行时，允许应用导出组织的用户数据。| 是 | 否 |
 | _User.ManageIdentities.All_       |    管理用户标识 | 允许应用程序读取、更新和删除与登录用户有权访问的用户帐户相关联的标识。 这控制了用户可以使用哪些标识进行登录。 | 是 | 否 |
@@ -1893,16 +1892,16 @@ _Shared_ permissions are currently only supported for work or school accounts. E
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
 |:----------------|:------------------|:-------------|:-----------------------|
 | _User.Read.All_ |    读取所有用户的完整个人资料 | 允许应用在没有登录用户的情况下读取组织中其他用户的整套个人资料属性、组成员身份、下属和经理。| 是 |
-| _User.ReadWrite.All_ |   读取和写入所有用户的完整个人资料 | Allows the app to read and write the full set of profile properties, group membership, reports and managers of other users in your organization, without a signed-in user.  Also allows the app to create and delete non-administrative users. Does not allow reset of user passwords. | 是 |
+| _User.ReadWrite.All_ |   读取和写入所有用户的完整个人资料 | 允许应用在没有登录用户的情况下读取和写入组织中其他用户的整套个人资料属性、组成员身份、下属和经理。还允许应用创建和删除非管理用户。不允许重置用户密码。 | 是 |
 | _User.Invite.All_  |     将来宾用户邀请到组织 | 允许应用无需具有已登录用户即可将来宾用户邀请到你的组织。 | 可访问 |
 | _User.Export.All_       |    导出用户数据 | 允许应用导出组织用户数据，而无需是登录用户。| 是 |
 | _User.ManageIdentities.All_       |    管理所有用户标识 | 允许应用程序在没有登录用户的情况下读取、更新和删除与用户帐户相关联的标识。 这控制了用户可以使用哪些标识进行登录。 |  是 |
 
 ### <a name="remarks"></a>备注
 
-With the _User.Read_ permission, an app can also read the basic company information of the signed-in user for a work or school account through the [organization](/graph/api/resources/organization?view=graph-rest-1.0) resource. The following properties are available: id, displayName, and verifiedDomains.
+通过 _User.Read_ 权限，应用还可以通过 [organization](/graph/api/resources/organization?view=graph-rest-1.0) 资源读取工作或学校帐户的已登录用户的基本公司信息。以下属性可用：ID、displayName 和 verifiedDomains。
 
-For work or school accounts, the full profile includes all of the declared properties of the [User](/graph/api/resources/user?view=graph-rest-1.0) resource. On reads, only a limited number of properties are returned by default. To read properties that are not in the default set, use `$select`. The default properties are:
+对于工作或学校帐户，完整个人资料包括 [User](/graph/api/resources/user?view=graph-rest-1.0) 资源的所有声明属性。在读取时，默认情况下仅返回有限数量的属性。若要读取不在默认设置中的属性，请使用 `$select`。默认属性包括：
 
 - displayName
 - givenName
@@ -1935,7 +1934,7 @@ For work or school accounts, the full profile includes all of the declared prope
 
 要读取或写入工作或学校帐户的直接下属 (`directReports`) 或经理 (`manager`)，应用必须具有 _User.Read.All_（只读）或 _User.ReadWrite.All_。
 
-The _User.ReadBasic.All_ permission constrains app access to a limited set of properties known as the basic profile. This is because the full profile might contain sensitive directory information. The basic profile includes only the following properties:
+_User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限属性集。这是因为完整的个人资料可能包含敏感的目录信息。基本个人资料仅包括以下属性：
 
 - displayName
 - givenName
@@ -1944,7 +1943,7 @@ The _User.ReadBasic.All_ permission constrains app access to a limited set of pr
 - surname
 - userPrincipalName
 
-To read the group memberships of a user (`memberOf`), the app must have either [_Group.Read.All_](#group-permissions) or [_Group.ReadWrite.All_](#group-permissions). However, if the user also has membership in a [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) or an [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta), the app will need effective permissions to read those resources too, or Microsoft Graph will return an error. This means the app will also need [Directory permissions](#directory-permissions), and, for delegated permissions, the signed-in user will also need sufficient privileges in the organization to access directory roles and administrative units.
+若要读取用户的组成员资格 (`memberOf`)，则应用必须具有 [_Group.Read.All_](#group-permissions) 或 [_Group.ReadWrite.All_](#group-permissions)。但是，如果用户还具有 [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) 或 [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta) 中的成员资格，则应用还将需要有效权限来读取这些资源，否则 Microsoft Graph 将返回错误。这意味着应用还需要[目录权限](#directory-permissions)，而对于委派权限来说，已登录的用户还需要组织内的足够特权来访问目录角色和管理单元。
 
 使用 _User.ManageIdentities.All_ 委派权限或应用程序权限，可以更新用户标识 (`identities`)。 这包括具有基于电子邮件地址或姓名的登录名的联合标识（亦称为“社交标识”）或本地标识。
 
@@ -2021,7 +2020,7 @@ To read the group memberships of a user (`memberOf`), the app must have either [
 
 ## <a name="permission-scenarios"></a>权限方案
 
-This section shows some common scenarios that target [user](/graph/api/resources/user?view=graph-rest-1.0) and [group](/graph/api/resources/group?view=graph-rest-1.0) resources in an organization. The tables show the permissions that an app needs to be able to perform specific operations required by the scenario. Note that in some cases the ability of the app to perform specific operations will depend on whether a permission is an application or delegated permission. In the case of delegated permissions, the app's effective permissions will also depend on the privileges of the signed-in user within the organization. For more information, see  [Delegated permissions, Application permissions, and effective permissions](auth/auth-concepts.md#microsoft-graph-permissions).
+本节介绍一些面向组织中 [user](/graph/api/resources/user?view=graph-rest-1.0) 和 [group](/graph/api/resources/group?view=graph-rest-1.0) 资源的常见方案。这些表显示了应用执行方案要求的特定操作所需的权限。请注意，在某些情况下，应用执行特定操作的能力取决于权限是应用程序权限还是委派权限。如果是委派权限，应用的有效权限还将取决于组织内已登录用户的特权。有关详细信息，请参阅[委派权限、应用程序权限和有效权限](auth/auth-concepts.md#microsoft-graph-permissions)。
 
 ### <a name="access-scenarios-on-the-user-resource"></a>关于 User 资源的访问方案
 

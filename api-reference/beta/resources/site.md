@@ -57,16 +57,16 @@ ms.locfileid: "44864222"
 | 属性名称            | 类型               | 说明
 |:-------------------------|:-------------------|:-----------------------------
 | **id**                   | string             | 项的[唯一标识符](#id-property)。 只读。
-| **createdDateTime**      | DateTimeOffset     | The date and time the item was created. Read-only.
+| **createdDateTime**      | DateTimeOffset     | 创建项目的日期和时间。只读。
 | **说明**          | string             | 网站的描述性文本。
-| **eTag**                 | string             | ETag for the item. Read-only.                                                                  |
-| **displayName**          | string             | The full title for the site. Read-only.
-| **lastModifiedDateTime** | DateTimeOffset     | The date and time the item was last modified. Read-only.
+| **eTag**                 | string             | 该项目的 ETag。只读。                                                                  |
+| **displayName**          | string             | 网站的完整标题。只读。
+| **lastModifiedDateTime** | DateTimeOffset     | 上次修改项目的日期和时间。只读。
 | **name**                 | string             | 项目名称/标题。
-| **根**                 | [根][]           | If present, indicates that this is the root site in the site collection. Read-only.
-| **sharepointIds**        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.
-| **siteCollection**       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only.
-| **webUrl**               | string (url)       | URL that displays the item in the browser. Read-only.
+| **根**                 | [根][]           | 如果存在，则表示这是网站集中的根网站。只读。
+| **sharepointIds**        | [sharepointIds][]  | 返回对 SharePoint REST 兼容性有用的标识符。只读。
+| **siteCollection**       | [siteCollection][] | 提供有关该网站的网站集的详细信息。仅在根网站上可用。只读。
+| **webUrl**               | string (url)       | 在浏览器中显示此项目的 URL。只读。
 
 ### <a name="id-property"></a>id 属性
 **site** 由一个唯一 ID 标识，此唯一 ID 由以下值组成：
@@ -88,7 +88,7 @@ ms.locfileid: "44864222"
 | **contentTypes**  | Collection([contentType][])      | 为此网站定义的内容类型集合。
 | **drive**         | [drive][]                        | 此网站的默认驱动器（文档库）。
 | **驱动器**        | 集合（[drive][]）            | 网站下方的驱动器集合（文档库）。
-| **项目**         | 集合 ([baseItem][])         | Used to address any item contained in this site. This collection cannot be enumerated.
+| **项目**         | 集合 ([baseItem][])         | 用于处理包含在此网站中的任何项目。不能枚举该集合。
 | **lists**         | Collection([list][])             | 此网站下的列表集合。
 | **pages**         | Collection([sitePage][])         | 此网站的 SitePages 列表中的页面集合。
 | **sites**         | 集合（[网站][]）             | 网站下的子网站的集合。

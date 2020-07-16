@@ -1,6 +1,6 @@
 ---
 title: plannerTask 资源类型
-description: The **plannerTask** resource represents a Planner task in Microsoft 365. A Planner task is contained in a plan and can be assigned to a bucket in a plan. Each task object has a details object which can contain more information about the task. See overview for more information regarding relationships between group, plan and task.
+description: '**PlannerTask**资源表示 Microsoft 365 中的 Planner 任务。计划中包含规划器任务，可将其分配给计划中的存储桶。每个任务对象都有一个详细信息对象，该对象可包含有关任务的详细信息。有关组、计划和任务之间的关系的详细信息，请参阅概述。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
@@ -18,7 +18,7 @@ ms.locfileid: "44897342"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerTask** resource represents a Planner task in Microsoft 365. A Planner task is contained in a [plan](plannerplan.md) and can be assigned to a [bucket](plannerbucket.md) in a plan. Each task object has a [details](plannertaskdetails.md) object which can contain more information about the task. See [overview](planner-overview.md) for more information regarding relationships between group, plan and task.
+**PlannerTask**资源表示 Microsoft 365 中的 Planner 任务。[计划](plannerplan.md)中包含规划器任务，可将其分配给计划中的[存储桶](plannerbucket.md)。每个任务对象都有一个[详细](plannertaskdetails.md)信息对象，该对象可包含有关任务的详细信息。有关组、计划和任务之间的关系的详细信息，请参阅[概述](planner-overview.md)。
 
 
 ## <a name="methods"></a>方法
@@ -33,35 +33,35 @@ The **plannerTask** resource represents a Planner task in Microsoft 365. A Plann
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |activeChecklistItemCount|Int32|核对清单项的数量，其值设置为 `false`，表示项目不全。|
-|appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|The categories to which the task has been applied. See [applied Categories](plannerappliedcategories.md) for possible values.|
-|assigneePriority|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
+|appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|此任务已应用的类别。有关可能的值，请参阅[已应用的类别](plannerappliedcategories.md)。|
+|assigneePriority|String|用于为列表视图中的此类型项目排序的提示。[此处](planner-order-hint-format.md)概述了此格式。|
 |assignments|[plannerAssignments](plannerassignments.md)|被分配任务的接受者集合。|
 |bucketId|String|此任务所属的存储桶 ID。 存储桶需要位于任务所在的计划中。 长度为 28 个字符，区分大小写。 [格式验证](tasks-identifiers-disclaimer.md)在服务上完成。 |
 |checklistItemCount|Int32|任务上存在的核对清单项的数目。|
 |completedBy|[identitySet](identityset.md)|完成任务的用户的身份。|
-|completedDateTime|DateTimeOffset|Read-only. Date and time at which the `'percentComplete'` of the task is set to `'100'`. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|conversationThreadId|字符串|Thread ID of the conversation on the task. This is the ID of the conversation thread object created in the group.|
+|completedDateTime|DateTimeOffset|只读。任务的 `'percentComplete'` 被设置为 `'100'` 的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|conversationThreadId|字符串|关于任务的对话的线程 ID。此为在组中创建的对话线程对象的 ID。|
 |createdBy|[identitySet](identityset.md)|创建任务的用户的身份|
-|createdDateTime|DateTimeOffset|Read-only. Date and time at which the task is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|dueDateTime|DateTimeOffset|Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|hasDescription|Boolean|Read-only. Value is `true` if the details object of the task has a non-empty description and `false` otherwise.|
+|createdDateTime|DateTimeOffset|只读。创建任务的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|dueDateTime|DateTimeOffset|任务截止的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|hasDescription|Boolean|只读。如果任务的 details 对象具有非空的说明，则值为 `true`，否则为 `false`。|
 |id|String|只读。 任务的 ID。 长度为 28 个字符，区分大小写。 [格式验证](tasks-identifiers-disclaimer.md)在服务上完成。|
-|orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
-|percentComplete|Int32|Percentage of task completion. When set to `100`, the task is considered completed. |
+|orderHint|String|用于为列表视图中的此类型项目排序的提示。[此处](planner-order-hint-format.md)概述了此格式。|
+|percentComplete|Int32|任务完成的百分比。当设置为 `100` 时，任务被视为完成。 |
 |priority|Int32|任务的优先级。 值的有效范围介于 `0` 和 `10` （含）之间，并且值越低，优先级越低（ `0` 具有最高优先级， `10` 优先级最低）。  目前，规划者将值 `0` 和 `1` "紧急"， `2` 以及 `3` `4` "重要"、、、、和 " `5` `6` `7` `8` `9` `10` 低" 的值解释为 "中"。  目前，规划器将设置 `1` "紧急"、" `3` 重要"、" `5` 中" 和 `9` "低" 的值。|
 |planId|String|任务所属的计划 ID。|
 |previewType|String|这将设置显示在任务上的预览类型。 可取值为：`automatic`、`noPreview`、`checklist`、`description`、`reference`。|
 |referenceCount|Int32|任务上存在的外部引用的数量。|
-|startDateTime|DateTimeOffset|Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|startDateTime|DateTimeOffset|任务开始的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |title|String|任务的标题。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|assignedToTaskBoardFormat|[plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by assignedTo.|
-|bucketTaskBoardFormat|[plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by bucket.|
-|详细信息|[plannerTaskDetails](plannertaskdetails.md)| Read-only. Nullable. Additional details about the task.|
-|progressTaskBoardFormat|[plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by progress.|
+|assignedToTaskBoardFormat|[plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)| 只读。可为 NULL。用于在按 assignedTo 分组时在任务板视图中正确呈现任务。|
+|bucketTaskBoardFormat|[plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)| 只读。可为 NULL。用于在按存储桶分组时在任务板视图中正确呈现任务。|
+|详细信息|[plannerTaskDetails](plannertaskdetails.md)| 只读。可为 NULL。关于任务的其他详细信息。|
+|progressTaskBoardFormat|[plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)| 只读。可为 NULL。用于在按进度分组时在任务板视图中正确呈现任务。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

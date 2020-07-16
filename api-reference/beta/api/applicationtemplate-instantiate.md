@@ -7,6 +7,7 @@ ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: 12928d7917ea0a274c69454d82943d72a7587c67
 ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "45050713"
@@ -21,7 +22,7 @@ ms.locfileid: "45050713"
 
 ## <a name="permissions"></a>权限
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|

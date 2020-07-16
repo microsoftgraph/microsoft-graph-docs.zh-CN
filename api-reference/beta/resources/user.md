@@ -1,6 +1,6 @@
 ---
 title: 用户资源类型
-description: Represents an Azure AD user account. Inherits from directoryObject.
+description: 表示 Azure AD 用户帐户。继承自 directoryObject。
 author: krbain
 localization_priority: Priority
 ms.prod: users
@@ -18,7 +18,7 @@ ms.locfileid: "44864082"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
+表示 Azure AD 用户帐户。继承自 [directoryObject](directoryobject.md)。
 
 **用户**资源允许应用指定语言的用户首选项，以及用户的主 Exchange 邮箱和用户的 Azure AD 配置文件的日期/时间格式。 有关更多详细信息，请参阅[适用于语言和区域格式的用户首选项](#user-preferences-for-languages-and-regional-formats)。
 
@@ -55,7 +55,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 | [List calendars](../api/user-list-calendars.md)                                            | [Calendar](calendar.md) collection                                               | 获取 Calendar 对象集合。                                                                                                                                                 |
 | [List calendarGroups](../api/user-list-calendargroups.md)                                  | [CalendarGroup](calendargroup.md) collection                                     | 获取 CalendarGroup 对象集合。                                                                                                                                            |
 | [List calendarView](../api/user-list-calendarview.md)                                      | [event](event.md) 集合                                                     | 获取 event 对象集合。                                                                                                                                                   |
-| [List events](../api/user-list-events.md)                                                  | [event](event.md) 集合                                                     | Get a list of event objects in the user's mailbox. The list contains single instance meetings and series masters.                                                                 |
+| [List events](../api/user-list-events.md)                                                  | [event](event.md) 集合                                                     | 获取用户邮箱中的 event 对象列表。该列表包含单个实例会议和系列主控形状。                                                                 |
 | [reminderView](../api/user-reminderview.md)                                                | [Reminder](reminder.md) collection                                               | 返回指定开始时间和结束时间范围内的日历提醒列表。                                                                                                     |
 | **联系人**                                                                               |                                                                                  |                                                                                                                                                                                   |
 | [创建联系人](../api/user-post-contacts.md)                                             | [contact](contact.md)                                                            | 通过发布到联系人集合创建新联系人。                                                                                                                       |
@@ -63,12 +63,12 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 | [List contacts](../api/user-list-contacts.md)                                              | [contact](contact.md) 集合                                                 | 从已登录用户的默认联系人文件夹中获取联系人集合。                                                                                                  |
 | [List contactFolders](../api/user-list-contactfolders.md)                                  | [ContactFolder](contactfolder.md) 集合                                     | 获取已登录用户的默认联系人文件夹中的联系人文件夹集合。                                                                                           |
 | **目录对象**                                                                      |                                                                                  |                                                                                                                                                                                   |
-| [assignLicense](../api/user-assignlicense.md)                                              | [user](user.md)                                                                  | Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.                                                          |
-| [checkMemberGroups](../api/user-checkmembergroups.md)                                      | String collection                                                                | Check for membership in a list of groups. The check is transitive.                                                                                                                |
+| [assignLicense](../api/user-assignlicense.md)                                              | [user](user.md)                                                                  | 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。                                                          |
+| [checkMemberGroups](../api/user-checkmembergroups.md)                                      | String collection                                                                | 检查组列表中的成员身份。检查是可传递的。                                                                                                                |
 | [checkMemberObjects](../api/user-checkmemberobjects.md)                                    | String 集合                                                                | 检查组、目录角色或管理单元对象列表中的成员身份。 检查是可传递的。                                                                 |
 | [exportPersonalData](../api/user-exportpersonaldata.md)                                    | 无                                                                             | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。                                                                 |
 | [getByIds](../api/directoryobject-getbyids.md)                                             | String collection                                                                | 返回 ID 列表中指定的目录对象。                                                                                                                         |
-| [getMemberGroups](../api/user-getmembergroups.md)                                          | String 集合                                                                | Return all the groups that the user is a member of. The check is transitive.                                                                                                      |
+| [getMemberGroups](../api/user-getmembergroups.md)                                          | String 集合                                                                | 返回用户是其成员的所有组。检查是可传递的。                                                                                                      |
 | [getMemberObjects](../api/user-getmemberobjects.md)                                        | String 集合                                                                | 返回用户所属的所有组、目录角色和管理单元。 检查是可传递的。                                                           |
 | [List createdObjects](../api/user-list-createdobjects.md)                                  | [directoryObject](directoryobject.md) collection                                 | 从 createdObjects 导航属性中获取此用户创建的目录对象。                                                                                        |
 | [List licenseDetails](../api/user-list-licensedetails.md)                                  | [licenseDetails](licensedetails.md) 集合                                   | 获取 licenseDetails 对象集合。                                                                                                                                           |
@@ -155,7 +155,7 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 | ageGroup | String | 设置用户的年龄组。 允许的值：`null`、`minor`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 $select 上返回。 |
 | assignedLicenses | [assignedLicense](assignedlicense.md) 集合 | 分配给该用户的许可证。 <br><br>仅在 $select 上返回。 不可为空。 |
 | assignedPlans | [assignedPlan](assignedplan.md) 集合 | 分配给该用户的计划。 <br><br>仅在 $select 上返回。 只读。 不可为 null。 |
-| birthday | DateTimeOffset | The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` <br><br>仅在 $select 上返回。 |
+| birthday | DateTimeOffset | 用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'` <br><br>仅在 $select 上返回。 |
 | businessPhones | String collection | 用户的电话号码。 仅可为此属性设置一个数字。 <br><br>默认返回。 |
 | 城市 | String | 用户所在的城市。 <br><br>仅在 $select 上返回。 支持 $filter。 |
 | companyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 <br><br>仅在 $select 上返回。 |
@@ -171,10 +171,10 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 | externalUserStateChangeDateTime | String | 显示对 externalUserState 属性的最新更改的时间戳。 <br><br>仅在 $select 上返回。 |
 | faxNumber | String | 用户的传真号。 <br><br>仅在 $select 上返回。 |
 | givenName | String | 用户的名。 <br><br>默认情况下返回。 支持 $filter。|
-| hireDate | DateTimeOffset | The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` <br><br>仅在 $select 上返回。 |
+| hireDate | DateTimeOffset | 用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'` <br><br>仅在 $select 上返回。 |
 | id | 字符串 | 用户的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 <br><br>默认情况下返回。 不可为空。 只读。|
 | identities | [objectIdentity](objectIdentity.md) 集合 | 表示可用于登录此用户帐户的标识。 标识可由 Microsoft （也称为本地帐户）、组织或社交身份提供商（如 Facebook、Google 和 Microsoft）提供，并绑定到用户帐户。 可能包含具有相同 **signInType** 值的多个项目。 <br><br>仅在 $select 上返回。 支持 $filter。 |
-| imAddresses | String collection | The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only.|
+| imAddresses | String collection | 用户的即时消息 IP 语音 (VOIP) 会话初始协议 (SIP) 地址。只读。|
 | interests | String collection | 用户介绍自身兴趣的列表。 <br><br>仅在 $select 上返回。 |
 | isResourceAccount | Boolean | 请勿使用–保留以供将来使用。 |
 | jobTitle | String | 用户的职务。 <br><br>默认情况下返回。 支持 $filter。|
@@ -198,12 +198,12 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 | onPremisesSyncEnabled | Boolean | 如果此对象从本地目录同步，则为 `true`；如果此对象最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步，则为 `null`（默认值）。 <br><br>仅在 $select 上返回。 只读。 |
 | onPremisesUserPrincipalName | String | 包含从本地目录同步的本地 `userPrincipalName`。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 <br><br>仅在 $select 上返回。 只读。 |
 | otherMails | 字符串集合 | 用户的其他电子邮件地址列表；例如：`["bob@contoso.com", "Robert@fabrikam.com"]`。<br><br>仅在 $select 上返回。  支持 $filter。 |
-| passwordPolicies | String | Specifies password policies for the user. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two may be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword".<br><br>仅在 $select 上返回。 |
-| passwordProfile | [passwordProfile](passwordprofile.md) | Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required. <br><br>仅在 $select 上返回。 |
+| passwordPolicies | String | 指定用户的密码策略。此值是一个枚举，具有一个可能值“DisableStrongPassword”，允许指定比默认策略弱的密码。还可以指定“DisablePasswordExpiration”。可以同时指定这两个策略；例如：“DisablePasswordExpiration、DisableStrongPassword”。<br><br>仅在 $select 上返回。 |
+| passwordProfile | [passwordProfile](passwordprofile.md) | 指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。 <br><br>仅在 $select 上返回。 |
 | pastProjects | String collection | 供用户枚举其过去项目的列表。 <br><br>仅在 $select 上返回。 |
-| postalCode | String | The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code. <br><br>仅在 $select 上返回。 |
+| postalCode | String | 用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。 <br><br>仅在 $select 上返回。 |
 | preferredDataLocation | String | 用户的首选数据位置。 有关详细信息，请参阅 [OneDrive Online 多地理位置](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。 <br><br>仅在 $select 上返回。 |
-| preferredLanguage | String | The preferred language for the user. Should follow ISO 639-1 Code; for example "en-US". <br><br>默认返回。 |
+| preferredLanguage | String | 用户的首选语言。应遵循 ISO 639-1 代码；例如“EN-US”。 <br><br>默认返回。 |
 | preferredName | String | 用户的首选名称。 <br><br>仅在 $select 上返回。 |
 | provisionedPlans | [provisionedPlan](provisionedplan.md) 集合 | 为用户设置的计划。 <br><br>仅在 $select 上返回。 只读。 不可为 null。 |
 | proxyAddresses | String collection | 示例：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` 多值属性筛选器表达式需要 **any** 运算符。 <br><br>仅在 $select 上返回。 只读，不可为 Null。 支持 $filter。 |
@@ -267,38 +267,38 @@ Represents an Azure AD user account. Inherits from [directoryObject](directoryob
 | 关系 | 类型 |Description|
 |:---------------|:--------|:----------|
 |agreementAcceptances|[agreementAcceptance](agreementacceptance.md) 集合| 用户使用条款接受状态。 只读。 可为 NULL。|
-|日历|[calendar](calendar.md)|The user's primary calendar. Read-only.|
-|calendarGroups|[CalendarGroup](calendargroup.md) 集合|The user's calendar groups. Read-only. Nullable.|
-|calendarView|[event](event.md) 集合|The calendar view for the calendar. Read-only. Nullable.|
-|calendars|[calendar](calendar.md) 集合|The user's calendars. Read-only. Nullable.|
-|contactFolders|[ContactFolder](contactfolder.md) 集合|The user's contacts folders. Read-only. Nullable.|
-|contacts|[contact](contact.md) 集合|The user's contacts. Read-only. Nullable.|
-|createdObjects|[directoryObject](directoryobject.md) 集合|Directory objects that were created by the user. Read-only. Nullable.|
-|directReports|[directoryObject](directoryobject.md) collection|The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable. |
-|drive|[drive](drive.md)|The user's OneDrive. Read-only.|
-|drives|[drive](drive.md) 集合| A collection of drives available for this user. Read-only. |
+|日历|[calendar](calendar.md)|用户的主日历。只读。|
+|calendarGroups|[CalendarGroup](calendargroup.md) 集合|用户的日历组。只读。可为 Null。|
+|calendarView|[event](event.md) 集合|日历的日历视图。只读。可为 Null。|
+|calendars|[calendar](calendar.md) 集合|用户的日历。只读。可为 Null。|
+|contactFolders|[ContactFolder](contactfolder.md) 集合|用户的联系人文件夹。只读。可为 Null。|
+|contacts|[contact](contact.md) 集合|用户的联系人。只读。可为 Null。|
+|createdObjects|[directoryObject](directoryobject.md) 集合|由用户创建的 directory 对象。只读。可为 Null。|
+|directReports|[directoryObject](directoryobject.md) collection|向此用户报告的用户和联系人。（其 manager 属性已设置为此用户的用户和联系人。）只读。可为 Null。 |
+|drive|[drive](drive.md)|用户的 OneDrive。只读。|
+|drives|[drive](drive.md) 集合| 该用户的可用驱动器集合。只读。 |
 |events|[event](event.md) 集合|用户的事件。 默认显示“默认日历”下的事件。 只读。 可为 NULL。|
 |extensions|[扩展](extension.md)集合|为用户定义的开放扩展集合。 可为 Null。|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| 基于显式指定的用户邮件的相关性分类，可以替代推断的相关性或重要性。 |
-|insights|[officeGraphInsights](officegraphinsights.md) | Read-only. Nullable.|
-|joinedGroups|[group](group.md) 集合| Read-only. Nullable.|
-|mailFolders|[mailFolder](mailfolder.md) 集合| The user's mail folders. Read-only. Nullable.|
-|manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
-|memberOf|[directoryObject](directoryobject.md) 集合|The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable.|
+|insights|[officeGraphInsights](officegraphinsights.md) | 只读。可为 Null。|
+|joinedGroups|[group](group.md) 集合| 只读。可为 Null。|
+|mailFolders|[mailFolder](mailfolder.md) 集合| 用户的邮件文件夹。只读。可为 Null。|
+|manager|[directoryObject](directoryobject.md)|是此用户的经理的用户或联系人。只读。（HTTP 方法：GET、PUT、DELETE）|
+|memberOf|[directoryObject](directoryobject.md) 集合|用户所属的所有组、目录角色和管理单元。只读。可为 Null。|
 |joinedTeams|[团队](team.md) 集合|用户所属的 Microsoft Teams 团队。 只读。 可为空。|
 |团队合作|[userTeamwork](userteamwork.md)| 可供用户使用的 Microsoft Teams 功能的容器。 只读。 可为 NULL。|
-|messages|[message](message.md) 集合|The messages in a mailbox or folder. Read-only. Nullable.|
+|messages|[message](message.md) 集合|邮箱或文件夹中的邮件。只读。可为 Null。|
 |onenote|[onenote](onenote.md)| 只读。|
 |outlook|[outlookUser](outlookuser.md)| 用户可用的选择性 Outlook 服务。 此为只读属性。 可为 NULL。|
-|ownedDevices|[directoryObject](directoryobject.md) collection|Devices that are owned by the user. Read-only. Nullable.|
-|ownedObjects|[directoryObject](directoryobject.md) 集合|Directory objects that are owned by the user. Read-only. Nullable.|
-|people|[person](person.md) 集合| Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.|
-|photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
-|photos|[photo](photo.md) 集合| Read-only. Nullable.|
+|ownedDevices|[directoryObject](directoryobject.md) collection|用户拥有的设备。只读。可为 Null。|
+|ownedObjects|[directoryObject](directoryobject.md) 集合|用户拥有的 directory 对象。只读。可为 Null。|
+|people|[person](person.md) 集合| 只读。与用户最相关的人员。该集合按其与用户的相关性排序，相关性由用户的通信、协作和业务关系决定。人脉是邮件、联系人和社交网络中的信息聚合。|
+|photo|[profilePhoto](profilephoto.md)| 用户的个人资料照片。只读。|
+|photos|[photo](photo.md) 集合| 只读。可为 Null。|
 |planner|[plannerUser](planneruser.md)| 用户可用的选择性 Planner 服务。 此为只读属性。 可为空。 |
 |scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) 集合| 该用户的作用域角色管理单元成员身份。 此为只读属性。 可为 Null。|
-|settings|[userSettings](usersettings.md) | Read-only. Nullable.|
-|registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable.|
+|settings|[userSettings](usersettings.md) | 只读。可为 Null。|
+|registeredDevices|[directoryObject](directoryobject.md) collection|已注册的用户的设备。只读。可为 Null。|
 
 ### <a name="user-preferences-for-languages-and-regional-formats"></a>语言和区域格式的用户首选项
 **User**资源包含[mailboxSettings](../resources/mailboxsettings.md)属性，该属性包括用户的首选语言、日期和时间格式、默认时区以及专门用于其主要 Exchange 邮箱的其他设置。 这些首选项针对邮件客户端，只有在用户已预配邮箱时才可用。 如果您的方案仅侧重于 Outlook 邮件、日历、联系人或待办任务，则可以选择使用**mailboxSettings** 。

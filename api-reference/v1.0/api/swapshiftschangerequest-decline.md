@@ -20,7 +20,7 @@ ms.locfileid: "44846182"
 
 ## <a name="permissions"></a>权限
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
@@ -42,7 +42,7 @@ POST /teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+| Authorization | Bearer {token}。必需。 |
 | Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
@@ -55,7 +55,7 @@ POST /teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId
 
 ## <a name="response"></a>响应
 
-If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
+如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="examples"></a>示例
 

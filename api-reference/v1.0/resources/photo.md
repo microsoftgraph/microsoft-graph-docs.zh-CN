@@ -46,14 +46,14 @@ ms.locfileid: "44863731"
 
 | 属性                | 类型           | 说明
 |:------------------------|:---------------|:----------------------------------
-| **takenDateTime**       | DateTimeOffset | Represents the date and time the photo was taken. Read-only.
-| **cameraMake**          | String         | Camera manufacturer. Read-only.
-| **cameraModel**         | String         | Camera model. Read-only.
-| **fNumber**             | 双精度         | The F-stop value from the camera. Read-only.
-| **exposureDenominator** | 双精度         | The denominator for the exposure time fraction from the camera. Read-only.
-| **exposureNumerator**   | Double         | The numerator for the exposure time fraction from the camera. Read-only.
-| **focalLength**         | 双精度数         | The focal length from the camera. Read-only.
-| **iso**                 | Int32          | The ISO value from the camera. Read-only.
+| **takenDateTime**       | DateTimeOffset | 表示照片拍摄的时间和日期。只读。
+| **cameraMake**          | String         | 相机制造商。只读。
+| **cameraModel**         | String         | 相机型号。只读。
+| **fNumber**             | 双精度         | 相机的 F-stop 值。只读。
+| **exposureDenominator** | 双精度         | 相机的曝光时间分数的分母。只读。
+| **exposureNumerator**   | Double         | 相机的曝光时间分数的分子。只读。
+| **focalLength**         | 双精度数         | 相机的焦距。只读。
+| **iso**                 | Int32          | 相机的 ISO 值。只读。
 | **orientation**         | Int16          | 相机中的方向值。 在 OneDrive 个人版上是可写的。      |
 
 ## <a name="remarks"></a>注解

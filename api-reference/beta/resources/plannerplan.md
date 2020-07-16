@@ -34,7 +34,7 @@ ms.locfileid: "44898252"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|createdDateTime|DateTimeOffset|Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|只读。创建计划的日期和时间时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |id|String| 只读。 计划的 ID。 长度为 28 个字符，区分大小写。 [格式验证](tasks-identifiers-disclaimer.md)在服务上完成。|
 |Owner|String|拥有计划的[组](group.md)的 ID。 必须存在有效的组才能设置此字段。 设置后，此属性无法更新。|
 |title|String|必填。 计划的标题|
@@ -44,7 +44,7 @@ ms.locfileid: "44898252"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|buckets|[plannerBucket](plannerbucket.md) collection| Read-only. Nullable. Collection of buckets in the plan.|
+|buckets|[plannerBucket](plannerbucket.md) collection| 只读。可为 Null。计划中的存储桶集合。|
 |详细信息|[plannerPlanDetails](plannerplandetails.md)| 只读。 可为 NULL。 关于计划的其他详细信息。|
 |tasks|[plannerTask](plannertask.md) collection| 只读。 可为 Null。 计划中的任务集合。|
 

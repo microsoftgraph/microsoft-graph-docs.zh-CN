@@ -49,7 +49,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 GET /users/{id}/calendars/{id}/events
 ```
 
-You may get HTTP 500 with the error code `ErrorInternalServerTransientError`. The error occurs because:
+可能会看到错误代码为 `ErrorInternalServerTransientError` 的 HTTP 500。导致错误发生的原因是：
 
 - 过去，日历共享的实现方法有两种。为了加以区分，将它们称为“旧”方法和“新”方法。
 - 新方法当前可用于通过查看或编辑权限共享日历，但无法通过委派权限进行共享。
@@ -63,10 +63,10 @@ You may get HTTP 500 with the error code `ErrorInternalServerTransientError`. Th
 若要手动将共享日历升级为使用新方法，请按照以下步骤操作：
 1.  收件人删除以前与他们共享的日历。
 2.  日历所有者在 Outlook 网页版、iOS 版或 Android 版中重新共享日历。
-3.  The recipient re-accepts the shared calendar using Outlook on the web. (It will be possible to use other Outlook clients soon.)
+3.  收件人使用 Outlook 网页版重新接受共享日历。（很快就可以使用其他 Outlook 客户端了。）
 4.  收件人可以在 Outlook iOS 版或 Android 版中查看共享日历，从而验证是否已成功使用新方法重新共享日历。
 
-A calendar shared with you in the new approach appears as just another calendar in your mailbox. You can use the calendar REST API to view or edit events in the shared calendar, as if it's your own calendar. As an example:
+使用新方法共享的日历看起来与邮箱中的其他日历一样。可以使用日历 REST API 查看或编辑共享日历中的事件，就像查看或编辑自己日历中的事件一样。示例：
 
 ```http
 GET /me/calendars/{id}/events
@@ -77,7 +77,7 @@ GET /me/calendars/{id}/events
 目前，还有部分支持基于 Internet 日历订阅 (ICS) 的日历：
 
 * 你可以通过用户界面，而不是通过 Microsoft Graph API 为用户邮箱添加基于 ICS 的日历。
-* [Listing the user's calendars](/graph/api/user-list-calendars?view=graph-rest-1.0) lets you get the **name**, **color** and **id** properties of each [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
+* [列出用户的日历](/graph/api/user-list-calendars?view=graph-rest-1.0)允许你获取用户默认日历组中或指定日历组中的每个 [日历](/graph/api/resources/calendar?view=graph-rest-1.0)的**名称**、**颜色**和 **id** 属性，包括所有基于 ICS 的日历。你无法存储或访问日历资源中的 ICS URL。
 * 还可以[列出基于 ICS 的日历事件](/graph/api/calendar-list-events?view=graph-rest-1.0)。
 
 ### <a name="attaching-large-files-to-events"></a>将大型文件附加到事件
@@ -107,7 +107,7 @@ Beta 版本提供了一种变通方法，可以使用 [事件](/graph/api/resour
 
 ### <a name="csp-apps-must-use-azure-ad-endpoint"></a>CSP 应用必须使用 Azure AD 终结点
 
-Cloud solution provider (CSP) apps must acquire tokens from the Azure AD (v1) endpoints to successfully call Microsoft Graph in their partner-managed customers. Currently, acquiring a token through the newer Azure AD v2.0 endpoint is not supported.
+云解决方案提供商 (CSP) 应用必须从 Azure AD (v1) 终结点中获取令牌，才能在其合作伙伴托管的客户中成功调用 Microsoft Graph。目前，不支持通过较新的 Azure AD v2.0 终结点获取令牌。
 
 ### <a name="pre-consent-for-csp-apps-doesnt-work-in-some-customer-tenants"></a>对 CSP 应用的预授权不适用于一些客户租户
 
@@ -120,9 +120,9 @@ Cloud solution provider (CSP) apps must acquire tokens from the Azure AD (v1) en
 
 同时，若要取消阻止开发和测试，可使用以下解决方法。
 
->**NOTE:** This is not a permanent solution and is only intended to unblock development.  This workaround will not be required once the aforementioned issue is fixed.  This workaround does not need to be undone once the fix is in place.
+>**注意：** 这不是永久性解决方案，仅用于取消阻止开发。一旦上述问题得到解决，便无需使用此解决方案。在问题得到解决后，无需撤消此解决方法。
 
-1. Open an Azure AD v2 PowerShell session and connect to your `customer` tenant by entering your admin credentials into the sign-in window. You can download and install Azure AD PowerShell V2 from [here](https://www.powershellgallery.com/packages/AzureAD).
+1. 打开 Azure AD v2 PowerShell 会话，然后在登录窗口中输入管理员凭据，以连接 `customer` 租户。可以单击[此处](https://www.powershellgallery.com/packages/AzureAD)，下载并安装 Azure AD PowerShell V2。
 
     ```PowerShell
     Connect-AzureAd -TenantId {customerTenantIdOrDomainName}
@@ -137,13 +137,13 @@ Cloud solution provider (CSP) apps must acquire tokens from the Azure AD (v1) en
 
 ### <a name="organization-contacts-available-in-only-beta"></a>仅 beta 版支持组织联系人。
 
-Only personal contacts are currently supported. Organizational contacts are not currently supported in `/v1.0`, but can be found in `/beta`.
+目前只支持个人联系人。`/v1.0` 中目前暂不支持组织联系人，但可以在 `/beta` 中找到组织联系人。
 
 ### <a name="default-contacts-folder"></a>默认联系人文件夹
 
 在 `/v1.0` 版本中，`GET /me/contactFolders` 不包括用户的默认联系人文件夹。
 
-A fix will be made available. Meanwhile, you can use the following [list contacts](/graph/api/user-list-contacts?view=graph-rest-1.0) query and the **parentFolderId** property as a workaround to get the folder ID of the default contacts folder:
+将会提供修复程序。同时，您还可以使用以下[列出联系人](/graph/api/user-list-contacts?view=graph-rest-1.0)查询和 **parentFolderId** 属性作为一种解决方法，来获取默认联系人文件夹的文件夹 ID：
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
@@ -166,7 +166,7 @@ GET /me/contactfolders/{id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
 
-* Accessing a contact contained in a child folder of a **contactFolder**.  The example below shows one level of nesting, but a contact can be located in a child of a child and so on.
+* 访问 **contactFolder** 的子文件夹中的联系人。下面的示例展示了一级嵌套，但可以在子文件夹的子级等对象中访问联系人。
 
 ```http
 GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
@@ -193,7 +193,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### <a name="creating-a-resource-and-open-extension-at-the-same-time"></a>同时创建资源和开放扩展
 
-You cannot specify an open extension at the same time you create an instance of **administrativeUnit**, **device**, **group**, **organization** or **user**. You must first create the instance and then specify the open extension data in a subsequent ``POST`` request on that instance.
+无法在创建**管理单元**、**设备**、**组**、**组织**或**用户**的实例的同时指定开放扩展。必须首先创建实例，然后在该实例的后续 ``POST`` 请求中指定开放扩展数据。
 
 ### <a name="creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time"></a>创建资源实例的同时添加架构扩展数据
 
@@ -220,7 +220,7 @@ Microsoft Graph 为组和 Microsoft Teams 公开了两个用于访问 API 的权
 管理员必须同意授予这些权限。
 今后，我们计划新增用户可同意授予的组和团队权限。
 
-Also, only the API for core group administration and management supports access using delegated or app-only permissions. All other features of the group API support only delegated permissions.
+此外，只有与核心组管理和管理相关的 API 才支持使用委派权限或仅限应用权限进行访问。其他所有的组 API 功能仅支持委派权限。
 
 同时支持委派权限和仅限应用权限的组功能示例：
 
@@ -250,7 +250,7 @@ Also, only the API for core group administration and management supports access 
 
 ## <a name="identity-and-access--application-and-service-principal-apis"></a>身份和访问 | 应用程序和服务主体 API
 
-There are changes to the [application](/graph/api/resources/application?view=graph-rest-beta) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) entities currently in development. The following is a summary of current limitations and in-development API features.
+当前处于开发阶段的 [application](/graph/api/resources/application?view=graph-rest-beta) 和 [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) 实体有变化。下面总结了当前限制和处于开发阶段的 API 功能。
 
 当前限制：
 
@@ -285,15 +285,15 @@ JSON 批处理请求中不得包含任何嵌套批处理请求。
 
 ### <a name="all-individual-requests-must-be-synchronous"></a>所有单个请求必须同步
 
-All requests contained in a batch request must be executed synchronously. If present, the `respond-async` preference will be ignored.
+批处理请求中包含的所有请求都必须同步执行。如果存在，将忽略 `respond-async` 首选项。
 
 ### <a name="no-transactions"></a>无事务
 
-Microsoft Graph does not currently support transactional processing of individual requests. The `atomicityGroup` property on individual requests will be ignored.
+Microsoft Graph 当前不支持单个请求的事务处理。将忽略单个请求的 `atomicityGroup` 属性。
 
 ### <a name="uris-must-be-relative"></a>URI 必须相对
 
-Always specify relative URIs in batch requests. Microsoft Graph then makes these URLs absolute by using the version endpoint included in the batch URL.
+始终在批处理请求中指定相对的 URI。Microsoft Graph 将使用批处理 URL 中包含的版本终结点使这些 URL 绝对。
 
 ### <a name="limit-on-batch-size"></a>限制批处理大小
 
@@ -301,7 +301,7 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 ### <a name="simplified-dependencies"></a>简化的依赖项
 
-Individual requests can depend on other individual requests. Currently, requests can only depend on a single other request, and must follow one of these three patterns:
+单独请求可以依赖其他单独请求。目前，请求只能依赖于单个其他请求，并且必须遵循下面的三种模式之一：
 
 1. 平行 - 没有单独的请求在 `dependsOn` 属性中声明依赖项。
 2. 串行 - 所有单独请求都依赖于之前的单独请求。
@@ -374,7 +374,7 @@ Individual requests can depend on other individual requests. Currently, requests
 
 * 不支持多个命名空间。
 * 在用户、组、设备、服务主体和应用程序上，不支持对 `$ref` 执行 GET 操作和投影。
-* `@odata.bind` is not supported.  This means that developers won’t be able to properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
+* `@odata.bind` 不受支持。这意味着开发人员将无法在组上适当设置 **acceptedSenders** 或 **rejectedSenders** 导航属性。
 * 使用极少的元数据时，非包容导航（如邮件）上不存在 `@odata.id`。
 * `$expand`:
   * 不支持 `nextLink`

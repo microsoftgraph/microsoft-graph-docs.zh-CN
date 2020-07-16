@@ -24,7 +24,7 @@ ms.locfileid: "44896131"
 > 不支持使用修补程序设置[**passwordCredential**](../resources/passwordcredential.md) 。 使用[addPassword](./serviceprincipal-addpassword.md)和[RemovePassword](./serviceprincipal-removepassword.md)方法更新 servicePrincipal 的密码。
 
 ## <a name="permissions"></a>权限
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -40,11 +40,11 @@ PATCH /servicePrincipals/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:-----------|:----------|
-| Authorization | Bearer {token}. Required.  |
+| Authorization | Bearer {token}。必需。  |
 | Content-Type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
 | 属性     | 类型 |说明|
 |:---------------|:--------|:----------|
@@ -109,7 +109,7 @@ Content-length: 391
 
 
 ### <a name="response"></a>响应
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,

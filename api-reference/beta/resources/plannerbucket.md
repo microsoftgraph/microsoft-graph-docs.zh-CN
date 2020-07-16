@@ -37,7 +37,7 @@ ms.locfileid: "44897048"
 |:---------------|:--------|:----------|
 |id|字符串| 只读。 存储桶的 ID。 长度为 28 个字符，区分大小写。 [格式验证](tasks-identifiers-disclaimer.md)在服务上完成。|
 |name|字符串|存储桶的名称。|
-|orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
+|orderHint|String|用于为列表视图中的此类型项目排序的提示。[此处](planner-order-hint-format.md)概述了此格式。|
 |planId|String|存储桶所属的计划 ID。|
 
 ## <a name="relationships"></a>关系

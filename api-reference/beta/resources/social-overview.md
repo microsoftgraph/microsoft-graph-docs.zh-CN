@@ -7,6 +7,7 @@ ms.prod: insights
 doc_type: conceptualPageType
 ms.openlocfilehash: d1e1f49125aa8959c1cdd6b2f47cc5c4ff81d962
 ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "45050965"

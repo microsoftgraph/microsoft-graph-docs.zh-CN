@@ -76,8 +76,8 @@ Outlook 资源（事件、邮件或个人联系人）上存在每个开放扩展
 
 |属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|extensionName|String|A unique text identifier for an open type open extension. Required.|
-|id|String| A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only.|
+|extensionName|String|开放类型开放扩展的唯一文本标识符。必需。|
+|id|String| 连接具有 **extensionName** 扩展类型的完全限定的标识符 。只读。|
 
 ## <a name="relationships"></a>关系
 

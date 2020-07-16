@@ -24,7 +24,7 @@ ms.locfileid: "44895823"
 
 ## <a name="permissions"></a>权限
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:--------------- |:------------------------------------------- |
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/groups?$orderby=displayName
 
 | 名称 | 说明 |
 |:---- |:----------- |
-| Authorization  | Bearer {token}. Required. |
+| Authorization  | Bearer {token}。必需。 |
 | ConsistencyLevel | 仍然. 此标头 `$count` 在使用时 `$search` 或在 `$filter` 与查询参数一起使用时是必需的 `$orderby` 。 它使用的索引可能不是最新的对象更改。 |
 
 ## <a name="request-body"></a>请求正文
@@ -256,7 +256,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -314,7 +314,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -357,7 +357,7 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>响应
 
 下面展示了示例响应。
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

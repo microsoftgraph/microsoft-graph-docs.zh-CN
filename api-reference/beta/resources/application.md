@@ -97,11 +97,11 @@ ms.locfileid: "45080875"
 
 | 关系 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|calls           |[call](call.md) 集合                  |Read-only. Nullable.|
+|calls           |[call](call.md) 集合                  |只读。可为 Null。|
 |connectorGroup|[connectorGroup](connectorgroup.md)| 应用程序与 Azure AD 应用程序代理一起使用的 connectorGroup。 可为 Null。|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 只读。|
-|extensionProperties|[extensionProperty](extensionproperty.md) 集合| Read-only. Nullable.|
-|onlineMeetings  |[onlineMeeting](onlinemeeting.md) 集合|Read-only. Nullable.|
+|extensionProperties|[extensionProperty](extensionproperty.md) 集合| 只读。可为空。|
+|onlineMeetings  |[onlineMeeting](onlinemeeting.md) 集合|只读。可为 Null。|
 |owners|[directoryObject](directoryobject.md) 集合|拥有此应用程序的目录对象。 所有者是一组允许修改此对象的非管理员用户。 需要版本 2013-11-08 或更高版本。 只读。 可为 NULL。|
 |tokenLifetimePolicies|[tokenLifetimePolicy](tokenLifetimePolicy.md) 集合|为此应用分配的 tokenLifetimePolicies。|
 

@@ -17,7 +17,7 @@ ms.locfileid: "44744003"
 
 Microsoft Graph 遵循 [Microsoft 生命周期策略](https://support.microsoft.com/lifecycle)。
 
-As new versions of the Microsoft Graph REST APIs and Microsoft Graph SDKs are released, earlier versions will be retired. Microsoft will declare a version as deprecated at least 24 months in advance of retiring an API or an SDK.
+由于已发布新版本的 Microsoft Graph REST API 和 Microsoft Graph SDK，之前的版本将停用。Microsoft 将在停用 API 或 SDK 之前至少 24 个月声明弃用的版本。
 
 递增 API 的主要版本（例如，从 v1.0 到 v2.0）时，我们将通知立即弃用当前版本（在此示例中为 v1.0），在通知 24 个月后，我们将不再支持该版本。 出于服务安全或运行状况可靠性问题的考虑，我们可能会对此策略作例外处理。
 
@@ -25,7 +25,7 @@ As new versions of the Microsoft Graph REST APIs and Microsoft Graph SDKs are re
 
 ### <a name="api-contract-and-non-backward-compatible-changes"></a>API 协定和非后向兼容更改
 
-Microsoft Graph has a log of changes across versions. These changes are listed in the [Microsoft Graph Changelog](changelog.md). As new functionality and data is added to Microsoft Graph, we will increment the API version number for any non-backward compatible changes to the API.
+Microsoft Graph 在版本中进行了许多更改。这些更改已在 [Microsoft Graph 更改日志](changelog.md)中列出。随着向 Microsoft Graph 中添加新功能和数据，我们将递增 API 版本号，以对 API 进行任意不向后兼容更改。
 
 非后向兼容更改的示例如下：
 
@@ -45,7 +45,7 @@ Microsoft Graph has a log of changes across versions. These changes are listed i
 - 更改属性的顺序
 - 更改不透明字符串（如资源 ID）的长度或格式
 
->**Note:** Over time, we will update the list of backward compatible changes. If you generate your own client proxies (like WCF clients), our guidance is that your client applications should be prepared to receive properties and derived types not previously defined by the Microsoft Graph API service. Microsoft Graph API follows the guidance described in the [Model Versioning](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) section in the [Microsoft REST API guidelines](https://github.com/microsoft/api-guidelines/).
+>**注意：** 随着时间的推移，我们将更新向后兼容更改的列表。如果你生成了自己的客户端代理（如 WCF 客户端），我们的建议是，客户端应用程序应准备接收之前未由 Microsoft Graph API 服务定义的属性和派生类型。Microsoft Graph API 遵循 [Microsoft REST API 准则](https://github.com/microsoft/api-guidelines/)的[模型版本控制](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning)部分中描述的指导。
 
 ## <a name="versions"></a>版本
 
@@ -54,12 +54,11 @@ Microsoft Graph has a log of changes across versions. These changes are listed i
 ### <a name="beta-version"></a>Beta 版
 Microsoft Graph API beta 版在 `https://graph.microsoft.com/beta` 中公开，包含当前_**处于预览状态**_ 的功能。 如需了解 beta API 文档，请参阅 [Microsoft Graph beta 终结点参考](/graph/api/overview?view=graph-rest-beta)。 预计将不时地对 beta 版本进行重大更改。 请勿对 /beta API 产生生产依赖性。
 
-We make no guarantees that a beta feature will be promoted to the current version. When the Microsoft Graph API team believes that a beta feature is ready for general availability (GA), we will add that feature to the latest current version. If the promotion of the feature would result in a breaking change to the current version, the version number will be incremented, with the new version becoming the current version.
-Our developer community can post feature request on [UserVoice](https://officespdev.uservoice.com/), including requests for new features as well as requests to promote existing beta APIs to the current version.
+我们无法保证将测试功能升级至当前版本。当 Microsoft Graph API 团队认为测试功能可正式发布 (GA) 时，我们将把该功能添加到最新的当前版本中。如果功能升级将导致当前版本出现重大更改，则版本号将递增，而新版本将成为当前版本。我们的开发者社区可以在 [UserVoice](https://officespdev.uservoice.com/) 上发布功能请求，包括对新功能的请求以及将现有的测试 API 升级到当前版本的请求。
 
 ### <a name="current-version"></a>当前版本
 
-The current version of Microsoft Graph is v1.0. Exposed under `https://graph.microsoft.com/v1.0`, the Microsoft Graph API /v1.0 version contains features that are generally available and ready for production use. You can browse the documentation for the v1.0 APIs in the table of contents.
+Microsoft Graph 的当前版本为 v1.0。Microsoft Graph API /v1.0 版本在 `https://graph.microsoft.com/v1.0` 中公开，包含可正式发布和可用于生产的功能。你可以浏览目录中的 v1.0 API 文档。
 
 ### <a name="deprecated-and-unsupported-versions"></a>已弃用和不支持的版本
 
@@ -69,4 +68,4 @@ The current version of Microsoft Graph is v1.0. Exposed under `https://graph.mic
 
 使用 Microsoft Graph API 即表示你同意 [Microsoft API 使用条款](/legal/microsoft-apis/terms-of-use?context=/graph/context)。
 
-Your feedback is important to us. Connect with us on [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Tag your questions with [microsoft-graph].
+你的反馈对我们非常重要。在[StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest)上与我们联系。使用 [microsoft-graph] 标记你的问题。

@@ -104,14 +104,14 @@ GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{ex
 GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 
->**Note:** The above syntax shows some common ways to identify a resource instance or collection, in order to get an extension from it. All other syntax that allows you to identify these resource instances or collections supports getting open extensions from them in a similar way.
+>**注意：** 以上语法显示了一些标识资源实例或集合的常见方法，以便从中获取扩展。可以用来识别这些资源实例或集合的所有其他语法均支持以类似的方式从中获取开放扩展。
 
 
 ## <a name="path-parameters"></a>路径参数
 |**参数**|**类型**|**说明**|
 |:-----|:-----|:-----|
-|Id|string|Placeholder for a unique identifier for an object in the corresponding collection such as messages, events, contacts. Required. Not to be confused with the **id** property of an **openTypeExtension**.|
-|extensionId|string|Placeholder for an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the **id** property when you create the extension. Required.|
+|Id|string|邮件、事件、联系人等相应集合中的对象的唯一标识符的占位符。必需。不要与 **openTypeExtension** 的 **id** 属性混淆。|
+|extensionId|string|扩展名称（即扩展的唯一文本标识符）或完全限定的名称（连接扩展类型和唯一文本标识符）的占位符。创建扩展时，在 **id** 属性中返回完全限定的名称。必需。|
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -126,20 +126,19 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 ## <a name="request-headers"></a>请求标头
 | 名称       | 值 |
 |:---------------|:----------|
-| Authorization | Bearer {token}. Required. |
+| Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-If successful, this method returns a `200 OK` response code and [openTypeExtension](../resources/opentypeextension.md) object in the response body.
-Depending on the GET query, the exact response body differs.
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [openTypeExtension](../resources/opentypeextension.md) 对象。根据 GET 查询，准确的响应正文有所不同。
 ## <a name="example"></a>示例
 
 #### <a name="request-1"></a>请求 1
 
-The first example shows 2 ways of referencing an extension and gets the extension in the specified message. The response is the same regardless of the way used to reference the extension.
+第一个示例展示引用扩展的两种方式并获取指定邮件中的扩展。无论用于引用扩展的方式为何，该响应都相同。
 
 首先，通过它的名称： 
 
@@ -257,7 +256,7 @@ Content-type: application/json
 
 #### <a name="request-3"></a>请求 3
 
-The third example gets and expands the specified message by including the extension returned from a filter. The filter returns the extension that has its **id** matching a fully qualified name.
+第三个示例通过包括筛选器返回的扩展获取并展开指定的邮件。此筛选器返回其 **id** 与完全限定的名称匹配的扩展。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -286,7 +285,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1
 
 #### <a name="response-3"></a>响应 3
 
-And here is the response from the third example. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+下面是第三个示例的响应。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 
 <!-- {
   "blockType": "response",
@@ -428,7 +427,7 @@ Content-Type: application/json
 
 #### <a name="request-5"></a>响应 5
 
-The fifth example looks at all messages in the signed-in user's mailbox to find those that contain an extension matching a filter, and expands them by including the extension. The filter returns extensions that has the **id** property matching the extension name `Com.Contoso.Referral`.
+第五个示例查看已登录用户的邮箱中的所有邮件，并查找包含与筛选器匹配的扩展的邮件，然后通过包括扩展将其展开。此筛选器将返回其 **id** 属性与扩展名 `Com.Contoso.Referral` 匹配的扩展。
 
 <!-- {
   "blockType": "request",
@@ -443,7 +442,7 @@ GET https://graph.microsoft.com/beta/me/messages?$filter=Extensions/any(f:f/id%2
 
 在第五个示例的响应中，用户邮箱中仅有一封邮件，其 **id** 等于 `Com.Contoso.Referral`。
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 
 <!-- {
   "blockType": "response",

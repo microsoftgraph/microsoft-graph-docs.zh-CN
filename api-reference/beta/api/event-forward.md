@@ -24,7 +24,7 @@ ms.locfileid: "44895732"
 
 
 ## <a name="permissions"></a>权限
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -55,20 +55,20 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type | string  | Nature of the data in the body of an entity. Required. |
+| Authorization  | string  | Bearer {token}。必需。 |
+| Content-Type | string  | 实体正文中的数据性质。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|评论|字符串|A comment to include. Can be an empty string.|
+|评论|字符串|要包含的注释。可以为空字符串。|
 |ToRecipients|[recipient](../resources/recipient.md) collection|要将事件转发到的收件人列表。|
 
 ## <a name="response"></a>响应
 
-If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
+如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

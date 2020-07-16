@@ -7,7 +7,7 @@ ms.prod: groups
 doc_type: resourcePageType
 ms.openlocfilehash: 73c758dc4199f0abe40713d563f23d93351ec816
 ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/26/2020
 ms.locfileid: "44896936"
@@ -50,11 +50,11 @@ ms.locfileid: "44896936"
 | [List transitive members](../api/group-list-transitivemembers.md)           | [directoryObject](directoryobject.md) 集合           | 获取属于此组成员（包括嵌套成员）的用户、组和设备。                                                                                                                       |
 | [List transitive memberOf](../api/group-list-transitivememberof.md)         | [directoryObject](directoryobject.md) collection           | 列出该组所属的组。 此操作是可传递的，并包括此组以嵌套方式所属的组。                                                                       |
 | [删除成员](../api/group-delete-members.md)                             | 无                                                       | 通过**members**导航属性从 Microsoft 365 组、安全组或已启用邮件的安全组中删除成员。 可以删除用户或其他组。                                    |
-| [checkMemberGroups](../api/group-checkmembergroups.md)                      | String 集合                                          | Check this group for membership in a list of groups. The function is transitive.                                                                                                                                  |
+| [checkMemberGroups](../api/group-checkmembergroups.md)                      | String 集合                                          | 在一列组中检查此组的成员身份。此函数是可传递的。                                                                                                                                  |
 | [checkMemberObjects](../api/group-checkmemberobjects.md)                    | String 集合                                          | 检查组、目录角色或管理单元对象列表中的成员身份。 此函数可传递。                                                                                              |
-| [getMemberGroups](../api/group-getmembergroups.md)                          | String collection                                          | Return all the groups that the group is a member of. The function is transitive.                                                                                                                                  |
-| [getMemberObjects](../api/group-getmemberobjects.md)                        | String collection                                          | Return all of the groups that the group is a member of. The function is transitive.                                                                                                                               |
-| [创建设置](../api/groupsetting-post-groupsettings.md)                 | [groupSetting](groupsetting.md)                            | Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation. |
+| [getMemberGroups](../api/group-getmembergroups.md)                          | String collection                                          | 返回此组是其成员的所有组。此函数是可传递的。                                                                                                                                  |
+| [getMemberObjects](../api/group-getmemberobjects.md)                        | String collection                                          | 返回此组所属的全部组。此函数可传递。                                                                                                                               |
+| [创建设置](../api/groupsetting-post-groupsettings.md)                 | [groupSetting](groupsetting.md)                            | 基于 groupSettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。只有组特定模板可用于此操作。 |
 | [获取设置](../api/groupsetting-get.md)                                   | [groupSetting](groupsetting.md)                            | 读取特定设置对象的属性。                                                                                                                                                                     |
 | [列出设置](../api/groupsetting-list.md)                                | [groupSetting](groupsetting.md) 集合                 | 列出所有设置对象的属性。                                                                                                                                                                           |
 | [更新设置](../api/groupsetting-update.md)                             | [groupSetting](groupsetting.md)                            | 更新设置对象。                                                                                                                                                                                          |
@@ -88,7 +88,7 @@ ms.locfileid: "44896936"
 | [List rejectedSenders](../api/group-list-rejectedsenders.md)                | [directoryObject](directoryobject.md) 集合           | 获取此组的“遭拒的发件人”列表中的用户或组列表。                                                                                                                               |
 | [Add rejectedSender](../api/group-post-rejectedsenders.md)                  | [directoryObject](directoryobject.md)                      | 将新用户或组添加到 rejectedSenders 集合中。                                                                                                                                                        |
 | [Remove rejectedSender](../api/group-delete-rejectedsenders.md)             | [directoryObject](directoryobject.md)                      | 从 rejectedSenders 集合中删除新用户或组。                                                                                                                                                     |
-| [Create setting](../api/groupsetting-post-groupsettings.md)                 | [groupSetting](groupsetting.md)                            | Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation. |
+| [Create setting](../api/groupsetting-post-groupsettings.md)                 | [groupSetting](groupsetting.md)                            | 基于 groupSettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。只有组特定模板可用于此操作。 |
 | [获取设置](../api/groupsetting-get.md)                                   | [groupSetting](groupsetting.md)                            | 读取特定设置对象的属性。                                                                                                                                                                     |
 | [列出设置](../api/groupsetting-list.md)                                | [groupSetting](groupsetting.md) 集合                 | 列出所有设置对象的属性。                                                                                                                                                                           |
 | [更新设置](../api/groupsetting-update.md)                             | 无                                                       | 更新 setting 对象。                                                                                                                                                                                          |
@@ -117,7 +117,7 @@ ms.locfileid: "44896936"
 |allowExternalSenders|布尔| 指明组织外部人员能否向群组发送邮件。 默认值为 **false**。 <br><br>仅在 $select 上返回。 |
 |assignedLicenses|[assignedLicense](assignedlicense.md) 集合|分配给该组的许可证。 <br><br>仅在 $select 上返回。 只读。|
 |autoSubscribeNewMembers|布尔值|指示添加到组中的新成员是否将自动订阅接收电子邮件通知。 可以在 PATCH 请求中设置组的这个属性；不要在创建该组的初始 POST 请求中设置它。 默认值为 **false**。 <br><br>仅在 $select 上返回。|
-|classification|字符串|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](groupsetting.md) value, based on the [template definition](groupsettingtemplate.md).<br><br>默认情况下返回。|
+|classification|字符串|描述该组的分类（如低、中或高业务影响）。通过根据[模板定义](groupsettingtemplate.md)创建 ClassificationList [设置](groupsetting.md)值来定义此属性的有效值。<br><br>默认情况下返回。|
 |createdDateTime|DateTimeOffset| 组的创建时间戳。 值无法修改，并在组创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。 |
 |deletedDateTime|DateTimeOffset| 对于某些 Azure Active Directory 对象（用户、组、应用程序），如果该对象被删除，先逻辑删除，随后该属性随着对象删除的日期和时间更新。 否则此属性为空。 如果对象已还原，则此属性会更新为空。 |
 |说明|String|可选的组说明。 <br><br>默认情况下返回。|
@@ -162,28 +162,28 @@ ms.locfileid: "44896936"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|acceptedSenders|[directoryObject](directoryobject.md) 集合|The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.|
-|日历|[日历](calendar.md)|The group's calendar. Read-only.|
-|calendarView|[事件](event.md) 集合|The calendar view for the calendar. Read-only.|
+|acceptedSenders|[directoryObject](directoryobject.md) 集合|允许在此组中创建帖子或日历事件的用户或组列表。如果此列表为非空，则仅允许此处列出的用户或组发布内容。|
+|日历|[日历](calendar.md)|组日历。只读。|
+|calendarView|[事件](event.md) 集合|日历的日历视图。只读。|
 |conversations|[对话](conversation.md) 集合|组对话。|
-|createdOnBehalfOf|[directoryObject](directoryobject.md)| The user (or application) that created the group. NOTE: This is not set if the user is an administrator. Read-only.|
+|createdOnBehalfOf|[directoryObject](directoryobject.md)| 创建组的用户（或应用程序）。注意：如果用户是管理员，则不设置此关系。只读。|
 |驱动器|[drive](drive.md)|组的默认驱动器。 只读。|
 |drives|[drive](drive.md) 集合|组的驱动器。 只读。|
 |events|[事件](event.md) 集合|组的日历事件。|
-|extensions|[扩展](extension.md)集合|The collection of open extensions defined for the group. Read-only. Nullable.|
+|extensions|[扩展](extension.md)集合|为组定义的开放扩展集合。只读。可为 NULL。|
 |groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合|此组的生命周期策略集合。 此为只读属性。 可为 NULL。|
-|memberOf|[directoryObject](directoryobject.md) 集合|Groups that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.|
+|memberOf|[directoryObject](directoryobject.md) 集合|此组所属的组。HTTP 方法：GET（支持所有组）只读。可为 Null。|
 |members|[directoryObject](directoryobject.md) 集合| 属于此组成员的用户和组。 HTTP 方法： GET （支持所有组）、POST （支持 Microsoft 365 组、安全组和启用邮件的安全组）、删除（Microsoft 365 组和安全组支持）是否可以为 Null。|
 |membersWithLicenseErrors|[User](user.md) 集合|在该基于组的许可证分配中存在许可证错误的组成员列表。 只读。|
 |onenote|[Onenote](onenote.md)| 只读。|
 |owners|[directoryObject](directoryobject.md) 集合|组的所有者。 所有者是一组允许修改此对象的非管理员用户。 限制为100个所有者。 HTTP 方法： GET （支持所有组）、POST （支持 Microsoft 365 组、安全组和启用邮件的安全组）、删除（Microsoft 365 组和安全组支持）。 可为 NULL。|
 |photo|[profilePhoto](profilephoto.md)| 组的个人资料照片 |
-|photos|[profilePhoto](profilephoto.md) 集合| The profile photos owned by the group. Read-only. Nullable.|
+|photos|[profilePhoto](profilephoto.md) 集合| 组拥有的个人资料照片。只读。可为 Null。|
 |planner|[plannerGroup](plannergroup.md)| 统一组可能存在的 Planner 资源入口点。|
-|rejectedSenders|[directoryObject](directoryobject.md) 集合|The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable|
-|设置|[groupSetting](groupsetting.md) 集合| Read-only. Nullable.|
-|sites|[网站](site.md)集|The list of SharePoint sites in this group. Access the default site with /sites/root.|
-|threads|[conversationThread](conversationthread.md) 集合| The group's conversation threads. Nullable.|
+|rejectedSenders|[directoryObject](directoryobject.md) 集合|不允许在此组中创建帖子或日历事件的用户或组列表。可为 Null|
+|设置|[groupSetting](groupsetting.md) 集合| 只读。可为 NULL。|
+|sites|[网站](site.md)集|该组中的 SharePoint 网站的列表。使用 /sites/root 访问默认网站。|
+|threads|[conversationThread](conversationthread.md) 集合| 组的对话线程。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

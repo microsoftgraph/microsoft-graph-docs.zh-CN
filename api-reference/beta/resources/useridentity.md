@@ -38,8 +38,7 @@ ms.locfileid: "44846060"
 
 ## <a name="remarks"></a>注解
 
-In some circumstances, the unique identifier for the actor may not be available.
-In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.
+在某些情况下，角色唯一标识符可能不可用。在这种情况下，将返回身份的 **displayName** 属性，但 **id** 属性将从资源中丢失。
 
 ## <a name="relationships"></a>关系
 

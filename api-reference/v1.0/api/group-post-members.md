@@ -24,7 +24,7 @@ ms.locfileid: "44897146"
 > 只能向通过云管理的安全和 Microsoft 365 组添加用户。
 
 ## <a name="permissions"></a>Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -41,14 +41,14 @@ POST /groups/{id}/members/$ref
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:----------|
-| Authorization  | Bearer {token}. Required. |
+| Authorization  | Bearer {token}。必需。 |
 | Content-type   | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md)、[user](../resources/user.md)、[group](../resources/group.md) 或 [organizational contact](../resources/orgcontact.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="examples"></a>示例
 ### <a name="example-1-add-a-member-to-a-group"></a>示例1：向组中添加成员

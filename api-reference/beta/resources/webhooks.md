@@ -7,6 +7,7 @@ doc_type: conceptualPageType
 ms.prod: ''
 ms.openlocfilehash: f87dbecca8429d5eeed6196fe0ddab0a5a418eda
 ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "45050886"

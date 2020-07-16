@@ -47,11 +47,11 @@ ms.locfileid: "44864208"
 
 | 属性名称 | 类型   | 说明                                                                 |
 |:--------------|:-------|:----------------------------------------------------------------------------|
-| total         | Int64  | Total allowed storage space, in bytes. Read-only.                           |
-| used          | Int64  | Total space used, in bytes. Read-only.                                      |
-| remaining     | Int64  | Total space remaining before reaching the quota limit, in bytes. Read-only. |
-| deleted       | Int64  | Total space consumed by files in the recycle bin, in bytes. Read-only.      |
-| state         | string | Enumeration value that indicates the state of the storage space. Read-only. |
+| total         | Int64  | 允许的总存储空间，以字节为单位。只读。                           |
+| used          | Int64  | 已使用的总空间，以字节为单位。只读。                                      |
+| remaining     | Int64  | 达到配额限制之前剩余的总空间，以字节为单位。只读。 |
+| deleted       | Int64  | 回收站中的文件占用的总空间，以字节为单位。只读。      |
+| state         | string | 指示存储空间状态的枚举值。只读。 |
 | storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | 有关驱动器的存储配额计划的信息。 仅在个人 OneDrive 中。|
 
 ## <a name="state-enumeration"></a>状态枚举
@@ -61,7 +61,7 @@ ms.locfileid: "44864208"
 | `normal`   | 驱动器具有充足的剩余配额。                                                                                                                               |
 | `nearing`  | 剩余配额少于总配额空间的 10%。                                                                                                                      |
 | `critical` | 剩余配额少于总配额空间的 1%。                                                                                                                       |
-| `exceeded` | The used quota has exceeded the total quota. New files or folders cannot be added to the drive until it is under the total quota amount or more storage space is purchased. |
+| `exceeded` | 使用的配额已超出总配额。在驱动器低于总配额量或购买更多存储空间之前，无法向该驱动器添加新的文件或文件夹。 |
 
 <!-- {
   "type": "#page.annotation",

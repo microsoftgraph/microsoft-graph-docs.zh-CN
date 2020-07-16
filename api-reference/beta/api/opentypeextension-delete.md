@@ -54,25 +54,25 @@ DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 ```
 
->**Note:** The above syntax shows some common ways to identify a resource instance, in order to delete an extension from it. All other syntax that allows you to identify these resource instances supports deleting open extensions from them in a similar way.
+>**注意：** 以上语法显示了一些标识资源实例的常见方法，以便从中删除扩展。可以用来标识这些资源实例的所有其他语法均支持以类似的方式从中删除开放扩展。
 
 ## <a name="path-parameters"></a>路径参数
 |**参数**|**类型**|**说明**|
 |:-----|:-----|:-----|
-|id|string|A unique identifier for an instance in the corresponding collection. Required.|
-|extensionId|string|This can be an extension name which is a unique text identifier for the extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the `id` property when you create the extension. Required.|
+|id|string|实例在相应集合中的唯一标识符。必需。|
+|extensionId|string|这可以是一个扩展名称（即扩展的唯一文本标识符）或完全限定的名称（连接扩展类型和唯一文本标识符）。创建扩展时，在 `id` 属性中返回完全限定的名称。必需。|
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 值 |
 |:---------------|:----------|
-| Authorization | Bearer {token}. Required. |
+| Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

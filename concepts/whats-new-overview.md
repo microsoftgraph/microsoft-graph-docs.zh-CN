@@ -5,7 +5,7 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.openlocfilehash: d0e462ab93b60796e8cbb4463c19799ba9033cd2
 ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/04/2020
 ms.locfileid: "45038644"

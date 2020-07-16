@@ -20,7 +20,7 @@ ms.locfileid: "44895655"
 
 更新指定[bookingbusiness](../resources/bookingbusiness.md)中的[bookingStaffMember](../resources/bookingstaffmember.md)的属性。
 ## <a name="permissions"></a>权限
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -39,7 +39,7 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 | Authorization  | Bearer {code}|
 
 ## <a name="request-body"></a>请求正文
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
@@ -52,7 +52,7 @@ In the request body, supply the values for relevant fields that should be update
 |workingHours|[bookingWorkHours](../resources/bookingworkhours.md)集合|教职员工成员可用于预订的一周中每一天的小时数。|
 
 ## <a name="response"></a>响应
-If successful, this method returns a `204 No content` response code. It does not return anything in the response body.
+如果成功，此方法返回 `204 No content` 响应代码。它不在响应正文中返回任何内容。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 以下示例将教职员工成员的日程安排更改为 "星期一关"。

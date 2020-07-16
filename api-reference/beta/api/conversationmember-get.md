@@ -7,6 +7,7 @@ ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: 73f89ac24bedad9cfd632674040b288aac151f23
 ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "45050741"
@@ -21,7 +22,7 @@ ms.locfileid: "45050741"
 
 ## <a name="permissions"></a>权限
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |---------|-------------|
@@ -50,7 +51,7 @@ GET /teams/{id}/channels/{id}/members/{id}
 
 | 标头       | 值 |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+| Authorization  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
 
@@ -92,7 +93,7 @@ GET https://graph.microsoft.com/beta/chats/{id}/members/{id}
 
 下面是一个响应示例。
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

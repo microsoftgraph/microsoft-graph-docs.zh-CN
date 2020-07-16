@@ -7,6 +7,7 @@ ms.prod: microsoft-teams
 doc_type: resourcePageType
 ms.openlocfilehash: b311326c87f6900bc6db3da6e1e760d2a69b16c7
 ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "45050720"
