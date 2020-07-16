@@ -3660,9 +3660,13 @@ items:
                     href: api/device-post-registeredowners.md
                   - name: 创建注册的用户
                     href: api/device-post-registeredusers.md
+                  - name: 删除注册的所有者
+                    href: api/device-delete-registeredowners.md
+                  - name: 删除注册用户
+                    href: api/device-delete-registeredusers.md
                   - name: 列出设备组
                     href: api/device-list-memberof.md
-                  - name: 列出设备可传递组
+                  - name: List device transitive groups
                     href: api/device-list-transitivememberof.md
                   - name: 列出注册的所有者
                     href: api/device-list-registeredowners.md
@@ -4599,7 +4603,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 规划
+          - name: 计划
             href: resources/plannerplan.md
             items:
               - name: 创建计划
@@ -4966,7 +4970,7 @@ items:
               - name: 劳动力集成
                 href: resources/workforceintegration.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/workforceintegration-list.md
                   - name: 创建
                     href: api/workforceintegration-post.md
