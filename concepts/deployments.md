@@ -2,12 +2,12 @@
 title: 区域云部署
 description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。
 author: arpitha-dhanapathi
-ms.openlocfilehash: 7dfb8548df8a8df9cd6babded6202e8289d8c577
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 4e9456bdc63ff8fea0f4751c2c3fb5fdc5274422
+ms.sourcegitcommit: 90aaba4e965945cb6550cf625cbc03287f39e531
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897244"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148510"
 ---
 # <a name="national-cloud-deployments"></a>区域云部署
 
@@ -83,12 +83,15 @@ ms.locfileid: "44897244"
 | Teams | ✔ | ✔ | ✔ |
 | 规划器|✔ |✔ |✔ |
 | 报告  |➖| ✔ |➖|
+| 组织联系人  |✔| ➖ |➖|
+| 应用程序  |✔| ➖ |➖|
+| 服务主体  |✔| ➖ |➖|
 | 更改通知（Webhook）  | ✔ |✔ |✔* |
 | Delta 查询 | ➖ | ✔ | ➖ |
-| 目录架构扩展 |➖|➖|➖|
+| 目录架构扩展 |✔|➖|➖|
 | 开放类型扩展|➖|➖|➖|
   
-以下其他 Microsoft Graph 功能在 `/beta` 所有国家/地区云部署的预览（在终结点上）中可用，但在另有说明的情况除外：
+Microsoft 云中国和 Microsoft 云德国的预览（在终结点上）中提供了以下 Microsoft Graph 功能 `/beta` （对于美国政府版，这些功能在 Microsoft 云中仅适用于美国政府的1.0 版终结点）：
 
 * 组织联系人
 * 应用程序
