@@ -812,7 +812,7 @@ items:
                     href: api/publishedresource-post-agentgroups.md
                   - name: 从代理组中删除
                     href: api/publishedresource-delete-agentgroups.md
-              - name: Connector
+              - name: 连接器
                 href: resources/connector.md
                 items:
                   - name: 列表
@@ -821,7 +821,7 @@ items:
                     href: api/connector-get.md
                   - name: 列出 memberOf
                     href: api/connector-list-memberof.md
-                  - name: 将连接器添加到 connectorGroup
+                  - name: Add connector to connectorGroup
                     href: api/connector-post-memberof.md
               - name: 连接器组
                 href: resources/connectorgroup.md
@@ -840,7 +840,7 @@ items:
                     href: api/connectorgroup-list-applications.md
                   - name: 列出成员
                     href: api/connectorgroup-list-members.md
-                  - name: 添加连接器
+                  - name: Add connector
                     href: api/connectorgroup-post-members.md
                   - name: 添加应用程序
                     href: api/connectorgroup-post-applications.md
@@ -1514,7 +1514,7 @@ items:
                     href: api/printer-getcapabilities.md
                   - name: 获取任务触发器
                     href: api/printtasktrigger-get.md
-                  - name: 列出连接器
+                  - name: List connectors
                     href: api/printer-list-connectors.md
                   - name: 列出打印作业
                     href: api/printer-list-jobs.md
@@ -4063,7 +4063,7 @@ items:
                   - name: 设备合规性设备状态
                     href: resources/intune-deviceconfig-devicecompliancedevicestatus.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-deviceconfig-devicecompliancedevicestatus-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-devicecompliancedevicestatus-get.md
@@ -4076,7 +4076,7 @@ items:
                   - name: 设备符合性策略分配
                     href: resources/intune-deviceconfig-devicecompliancepolicyassignment.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-deviceconfig-devicecompliancepolicyassignment-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-devicecompliancepolicyassignment-get.md
@@ -4492,7 +4492,7 @@ items:
                   - name: 组策略演示文稿小数位数文本框
                     href: resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-list.md
                       - name: 获取
                         href: api/intune-grouppolicy-grouppolicypresentationdecimaltextbox-get.md
@@ -4505,7 +4505,7 @@ items:
                   - name: 组策略演示文稿下拉列表
                     href: resources/intune-grouppolicy-grouppolicypresentationdropdownlist.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-grouppolicy-grouppolicypresentationdropdownlist-list.md
                       - name: 获取
                         href: api/intune-grouppolicy-grouppolicypresentationdropdownlist-get.md
@@ -5110,7 +5110,7 @@ items:
                   - name: macOS 符合性策略
                     href: resources/intune-deviceconfig-macoscompliancepolicy.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-deviceconfig-macoscompliancepolicy-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-macoscompliancepolicy-get.md
@@ -5146,7 +5146,7 @@ items:
                   - name: macOS 自定义配置
                     href: resources/intune-deviceconfig-macoscustomconfiguration.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-deviceconfig-macoscustomconfiguration-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-macoscustomconfiguration-get.md
@@ -5749,7 +5749,7 @@ items:
                   - name: Windows 10 自定义配置
                     href: resources/intune-deviceconfig-windows10customconfiguration.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-deviceconfig-windows10customconfiguration-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-windows10customconfiguration-get.md
@@ -5777,7 +5777,7 @@ items:
                   - name: Windows 10 EAS 电子邮件配置文件配置
                     href: resources/intune-deviceconfig-windows10easemailprofileconfiguration.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-deviceconfig-windows10easemailprofileconfiguration-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-windows10easemailprofileconfiguration-get.md
@@ -8727,7 +8727,7 @@ items:
                   - name: 用户
                     href: resources/intune-shared-user.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-shared-user-list.md
                       - name: 获取
                         href: api/intune-shared-user-get.md
@@ -8769,7 +8769,7 @@ items:
                   - name: Windows 域加入配置
                     href: resources/intune-shared-windowsdomainjoinconfiguration.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-shared-windowsdomainjoinconfiguration-list.md
                       - name: 获取
                         href: api/intune-shared-windowsdomainjoinconfiguration-get.md
@@ -9458,9 +9458,13 @@ items:
                     href: api/device-post-registeredowners.md
                   - name: 创建注册的用户
                     href: api/device-post-registeredusers.md
+                  - name: 删除注册的所有者
+                    href: api/device-delete-registeredowners.md
+                  - name: 删除注册用户
+                    href: api/device-delete-registeredusers.md
                   - name: 列出设备组
                     href: api/device-list-memberof.md
-                  - name: 列出设备可传递组
+                  - name: List device transitive groups
                     href: api/device-list-transitivememberof.md
                   - name: 检查 member 对象
                     href: api/device-checkmemberobjects.md
@@ -10718,7 +10722,7 @@ items:
               - name: 项目
                 href: resources/projectparticipation.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/profile-list-projects.md
                   - name: 创建
                     href: api/profile-post-projects.md
@@ -11808,7 +11812,7 @@ items:
               - name: 劳动力集成
                 href: resources/workforceintegration.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/workforceintegration-list.md
                   - name: 创建
                     href: api/workforceintegration-post.md
