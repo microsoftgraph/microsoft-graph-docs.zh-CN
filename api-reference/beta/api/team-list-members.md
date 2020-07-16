@@ -5,28 +5,30 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 214cd5fa426a72a6917431ce7a77287ead915858
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
-ms.translationtype: MT
+ms.openlocfilehash: 2b9840ba7d543a01a8ed458489cf91c257c9f71f
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081028"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45124105"
 ---
 # <a name="list-members"></a>列出成员
 命名空间：microsoft.graph
 
-获取[团队](../resources/team.md)的[conversationMember](../resources/conversationmember.md) 。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->注意：此 API 当前不支持分页，因此如果有过多的成员适合一个请求，则不会获取所有成员。
+获取 [team](../resources/team.md) 的 [conversationMember](../resources/conversationmember.md)。
+
+>注意：此 API 当前不支持分页，因此当成员过多导致一个请求无法容纳时，将无法获取所有成员。
 
 ## <a name="permissions"></a>权限
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|TeamMember、TeamMember 和所有|
+|委派（工作或学校帐户）|TeamMember.Read.All, TeamMember.ReadWrite.All|
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序|TeamMember、TeamMember 和所有|
+|应用程序|TeamMember.Read.All, TeamMember.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -39,19 +41,19 @@ GET /teams/{teamsId}/members
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}。必需。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[conversationMember](../resources/conversationmember.md)对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [conversationMember](../resources/conversationmember.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 

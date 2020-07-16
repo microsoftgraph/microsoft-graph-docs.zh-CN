@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a258b33c40d56537ecf833b2b5f91e110af898e1
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: e4ed6fb6d236eb8c67400b75ee364a55c644ecfc
+ms.sourcegitcommit: 9c1abb1c87177da20e1f5bbf1fae8131ab7e4f16
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681074"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146685"
 ---
 # <a name="create-registereduser"></a>创建 registeredUser
 
@@ -20,7 +20,7 @@ ms.locfileid: "44681074"
 
 添加设备的已注册用户。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -46,7 +46,7 @@ POST /devices/{id}/registeredUsers/$ref
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象。
+如果成功，此方法返回 `204 No Content` 响应代码。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -63,8 +63,7 @@ Content-type: application/json
 Content-length: 30
 
 {
-  "directoryObject": {
-  }
+  "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -86,15 +85,7 @@ Content-length: 30
   "@odata.type": "microsoft.graph.directoryObject"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 51
-
-{
-  "directoryObject": {
-    "id": "id-value"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

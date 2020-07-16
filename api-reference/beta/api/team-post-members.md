@@ -5,26 +5,26 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6a4ec97e9ba08d6ea31874dd3ae655ff90c3da0e
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
-ms.translationtype: MT
+ms.openlocfilehash: fd4c02b3b981394edfafd389eb7adf2afc9e52d9
+ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080886"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45123811"
 ---
 # <a name="create-members"></a>创建成员
 命名空间：microsoft.graph
 
-向[团队](../resources/team.md)添加新的[conversationMember](../resources/conversationmember.md) 。
+向 [team](../resources/team.md) 添加新的 [conversationMember](../resources/conversationmember.md)。
 
 ## <a name="permissions"></a>权限
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）| TeamMember|
+|委派（工作或学校帐户）| TeamMember.ReadWrite.All|
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序| TeamMember|
+|应用程序| TeamMember.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -39,11 +39,11 @@ POST /teams/{teamsId}/members
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+|Authorization|Bearer {token}。必需。|
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[conversationMember](../resources/conversationmember.md)对象的 JSON 表示形式。
+在请求正文中，提供 JSON 表示形式的 [conversationMember](../resources/conversationmember.md) 对象。
 
 ## <a name="response"></a>响应
 
@@ -61,16 +61,13 @@ POST /teams/{teamsId}/members
 -->
 ``` http
 POST https://graph.microsoft.com/beta/teams/{id}/members
-Content-Type: application/json
+Content-type: application/json
+Content-length: 26
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
-    "roles": [
-        "owner"
-    ],
-    "userId": "50dffbae-ad0f-428e-a86f-f53b0acfc641",
-    "displayName": "Cameron White",
-    "email": "CameronW@M365x987948.OnMicrosoft.com"
+    "roles": ["owner"],
+    "user@odata.bind": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
