@@ -12,26 +12,26 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 06/24/2020
 ms.locfileid: "44863507"
 ---
-# <a name="get-riskyuser"></a><span data-ttu-id="ea4c8-103">获取 riskyUser</span><span class="sxs-lookup"><span data-stu-id="ea4c8-103">Get riskyUser</span></span>
+# <a name="get-riskyuser"></a><span data-ttu-id="10eae-103">获取 riskyUser</span><span class="sxs-lookup"><span data-stu-id="10eae-103">Get riskyUser</span></span>
 
-<span data-ttu-id="ea4c8-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ea4c8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="10eae-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="10eae-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ea4c8-105">检索**riskyUser**对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="ea4c8-105">Retrieve the properties and relationships of a **riskyUser** object.</span></span>
+<span data-ttu-id="10eae-105">检索**riskyUser**对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="10eae-105">Retrieve the properties and relationships of a **riskyUser** object.</span></span>
 
-><span data-ttu-id="ea4c8-106">**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。</span><span class="sxs-lookup"><span data-stu-id="ea4c8-106">**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.</span></span>
+><span data-ttu-id="10eae-106">**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。</span><span class="sxs-lookup"><span data-stu-id="10eae-106">**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ea4c8-107">权限</span><span class="sxs-lookup"><span data-stu-id="ea4c8-107">Permissions</span></span>
-<span data-ttu-id="ea4c8-108">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="ea4c8-108">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="ea4c8-109">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ea4c8-109">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="10eae-107">权限</span><span class="sxs-lookup"><span data-stu-id="10eae-107">Permissions</span></span>
+<span data-ttu-id="10eae-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="10eae-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ea4c8-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="ea4c8-110">Permission type</span></span>      | <span data-ttu-id="ea4c8-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ea4c8-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="10eae-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="10eae-110">Permission type</span></span>      | <span data-ttu-id="10eae-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="10eae-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ea4c8-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ea4c8-112">Delegated (work or school account)</span></span> | <span data-ttu-id="ea4c8-113">IdentityRiskyUser.Read.All</span><span class="sxs-lookup"><span data-stu-id="ea4c8-113">IdentityRiskyUser.Read.All</span></span>    |
-|<span data-ttu-id="ea4c8-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ea4c8-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ea4c8-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="ea4c8-115">Not supported.</span></span>    |
-|<span data-ttu-id="ea4c8-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="ea4c8-116">Application</span></span> | <span data-ttu-id="ea4c8-117">IdentityRiskyUser.Read.All</span><span class="sxs-lookup"><span data-stu-id="ea4c8-117">IdentityRiskyUser.Read.All</span></span> |
+|<span data-ttu-id="10eae-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="10eae-112">Delegated (work or school account)</span></span> | <span data-ttu-id="10eae-113">IdentityRiskyUser.Read.All</span><span class="sxs-lookup"><span data-stu-id="10eae-113">IdentityRiskyUser.Read.All</span></span>    |
+|<span data-ttu-id="10eae-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="10eae-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="10eae-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="10eae-115">Not supported.</span></span>    |
+|<span data-ttu-id="10eae-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="10eae-116">Application</span></span> | <span data-ttu-id="10eae-117">IdentityRiskyUser.Read.All</span><span class="sxs-lookup"><span data-stu-id="10eae-117">IdentityRiskyUser.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ea4c8-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ea4c8-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="10eae-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="10eae-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /riskyUsers/{id}
@@ -39,24 +39,24 @@ GET /identityProtection/riskyUsers/{id}
 ```
 
 
-## <a name="request-headers"></a><span data-ttu-id="ea4c8-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="ea4c8-119">Request headers</span></span>
-| <span data-ttu-id="ea4c8-120">名称</span><span class="sxs-lookup"><span data-stu-id="ea4c8-120">Name</span></span>      |<span data-ttu-id="ea4c8-121">说明</span><span class="sxs-lookup"><span data-stu-id="ea4c8-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="10eae-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="10eae-119">Request headers</span></span>
+| <span data-ttu-id="10eae-120">名称</span><span class="sxs-lookup"><span data-stu-id="10eae-120">Name</span></span>      |<span data-ttu-id="10eae-121">说明</span><span class="sxs-lookup"><span data-stu-id="10eae-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="ea4c8-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="ea4c8-122">Authorization</span></span>  | <span data-ttu-id="ea4c8-123">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="ea4c8-123">Bearer {token}.</span></span> <span data-ttu-id="ea4c8-124">Required.</span><span class="sxs-lookup"><span data-stu-id="ea4c8-124">Required.</span></span> |
-| <span data-ttu-id="ea4c8-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="ea4c8-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="ea4c8-126">用于确定是否保留更改的工作簿会话 ID。</span><span class="sxs-lookup"><span data-stu-id="ea4c8-126">Workbook session ID that determines whether changes are persisted.</span></span> <span data-ttu-id="ea4c8-127">可选。</span><span class="sxs-lookup"><span data-stu-id="ea4c8-127">Optional.</span></span>|
+| <span data-ttu-id="10eae-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="10eae-122">Authorization</span></span>  | <span data-ttu-id="10eae-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="10eae-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="10eae-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="10eae-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="10eae-126">用于确定是否保留更改的工作簿会话 ID。</span><span class="sxs-lookup"><span data-stu-id="10eae-126">Workbook session ID that determines whether changes are persisted.</span></span> <span data-ttu-id="10eae-127">可选。</span><span class="sxs-lookup"><span data-stu-id="10eae-127">Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ea4c8-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="ea4c8-128">Request body</span></span>
-<span data-ttu-id="ea4c8-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="ea4c8-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="10eae-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="10eae-128">Request body</span></span>
+<span data-ttu-id="10eae-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="10eae-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ea4c8-130">响应</span><span class="sxs-lookup"><span data-stu-id="ea4c8-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="10eae-130">响应</span><span class="sxs-lookup"><span data-stu-id="10eae-130">Response</span></span>
 
-<span data-ttu-id="ea4c8-131">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[riskyUser](../resources/riskyuser.md)对象。</span><span class="sxs-lookup"><span data-stu-id="ea4c8-131">If successful, this method returns a `200 OK` response code and a [riskyUser](../resources/riskyuser.md) object in the response body.</span></span>
-## <a name="examples"></a><span data-ttu-id="ea4c8-132">示例</span><span class="sxs-lookup"><span data-stu-id="ea4c8-132">Examples</span></span>
-### <a name="example-1-get-a-risky-user"></a><span data-ttu-id="ea4c8-133">示例1：获取有风险的用户</span><span class="sxs-lookup"><span data-stu-id="ea4c8-133">Example 1: Get a risky user</span></span>
-#### <a name="request"></a><span data-ttu-id="ea4c8-134">请求</span><span class="sxs-lookup"><span data-stu-id="ea4c8-134">Request</span></span>
-<span data-ttu-id="ea4c8-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ea4c8-135">Here is an example of the request.</span></span>
+<span data-ttu-id="10eae-131">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[riskyUser](../resources/riskyuser.md)对象。</span><span class="sxs-lookup"><span data-stu-id="10eae-131">If successful, this method returns a `200 OK` response code and a [riskyUser](../resources/riskyuser.md) object in the response body.</span></span>
+## <a name="examples"></a><span data-ttu-id="10eae-132">示例</span><span class="sxs-lookup"><span data-stu-id="10eae-132">Examples</span></span>
+### <a name="example-1-get-a-risky-user"></a><span data-ttu-id="10eae-133">示例1：获取有风险的用户</span><span class="sxs-lookup"><span data-stu-id="10eae-133">Example 1: Get a risky user</span></span>
+#### <a name="request"></a><span data-ttu-id="10eae-134">请求</span><span class="sxs-lookup"><span data-stu-id="10eae-134">Request</span></span>
+<span data-ttu-id="10eae-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="10eae-135">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="ea4c8-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="ea4c8-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="10eae-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="10eae-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_riskyuser",
@@ -65,22 +65,22 @@ GET /identityProtection/riskyUsers/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
 ```
-# <a name="c"></a>[<span data-ttu-id="ea4c8-137">C#</span><span class="sxs-lookup"><span data-stu-id="ea4c8-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="10eae-137">C#</span><span class="sxs-lookup"><span data-stu-id="10eae-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-riskyuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ea4c8-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ea4c8-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="10eae-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="10eae-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-riskyuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ea4c8-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ea4c8-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="10eae-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="10eae-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-riskyuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="ea4c8-140">响应</span><span class="sxs-lookup"><span data-stu-id="ea4c8-140">Response</span></span>
-<span data-ttu-id="ea4c8-141">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="ea4c8-141">Here is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="10eae-140">响应</span><span class="sxs-lookup"><span data-stu-id="10eae-140">Response</span></span>
+<span data-ttu-id="10eae-141">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="10eae-141">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -102,11 +102,11 @@ Content-type: application/json
   "userPrincipalName": "alexw@contoso.com"
 }
 ```
-### <a name="example-2-get-risky-users"></a><span data-ttu-id="ea4c8-142">示例2：获取有风险的用户</span><span class="sxs-lookup"><span data-stu-id="ea4c8-142">Example 2: Get risky users</span></span>
-#### <a name="request"></a><span data-ttu-id="ea4c8-143">请求</span><span class="sxs-lookup"><span data-stu-id="ea4c8-143">Request</span></span>
-<span data-ttu-id="ea4c8-144">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ea4c8-144">Here is an example of the request.</span></span>
+### <a name="example-2-get-risky-users"></a><span data-ttu-id="10eae-142">示例2：获取有风险的用户</span><span class="sxs-lookup"><span data-stu-id="10eae-142">Example 2: Get risky users</span></span>
+#### <a name="request"></a><span data-ttu-id="10eae-143">请求</span><span class="sxs-lookup"><span data-stu-id="10eae-143">Request</span></span>
+<span data-ttu-id="10eae-144">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="10eae-144">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="ea4c8-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="ea4c8-145">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="10eae-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="10eae-145">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_riskyuser",
@@ -115,22 +115,22 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityProtection/riskyUsers
 ```
-# <a name="c"></a>[<span data-ttu-id="ea4c8-146">C#</span><span class="sxs-lookup"><span data-stu-id="ea4c8-146">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="10eae-146">C#</span><span class="sxs-lookup"><span data-stu-id="10eae-146">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-riskyuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ea4c8-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ea4c8-147">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="10eae-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="10eae-147">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-riskyuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ea4c8-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ea4c8-148">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="10eae-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="10eae-148">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-riskyuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="ea4c8-149">响应</span><span class="sxs-lookup"><span data-stu-id="ea4c8-149">Response</span></span>
-<span data-ttu-id="ea4c8-150">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="ea4c8-150">Here is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="10eae-149">响应</span><span class="sxs-lookup"><span data-stu-id="10eae-149">Response</span></span>
+<span data-ttu-id="10eae-150">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="10eae-150">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

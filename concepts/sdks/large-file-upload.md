@@ -10,11 +10,11 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 06/16/2020
 ms.locfileid: "44743997"
 ---
-# <a name="upload-large-files-using-the-microsoft-graph-sdks"></a><span data-ttu-id="5abbb-103">使用 Microsoft Graph Sdk 上载大型文件</span><span class="sxs-lookup"><span data-stu-id="5abbb-103">Upload large files using the Microsoft Graph SDKs</span></span>
+# <a name="upload-large-files-using-the-microsoft-graph-sdks"></a><span data-ttu-id="df95e-103">使用 Microsoft Graph Sdk 上载大型文件</span><span class="sxs-lookup"><span data-stu-id="df95e-103">Upload large files using the Microsoft Graph SDKs</span></span>
 
-<span data-ttu-id="5abbb-104">Microsoft Graph 中的多个实体支持可恢复的[文件上载](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0)，以便更轻松地上传大文件。</span><span class="sxs-lookup"><span data-stu-id="5abbb-104">A number of entities in Microsoft Graph support [resumable file uploads](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0) to make it easier to upload large files.</span></span> <span data-ttu-id="5abbb-105">不是尝试在单个请求中上传整个文件，而是将该文件切片成更小的部分，并使用一个请求来上载单个切片。</span><span class="sxs-lookup"><span data-stu-id="5abbb-105">Instead of trying to upload the entire file in a single request, the file is sliced into smaller pieces and a request is used to upload a single slice.</span></span> <span data-ttu-id="5abbb-106">为了简化此过程，Microsoft Graph Sdk 实施了一个大型文件上传任务，用于管理切片的上载。</span><span class="sxs-lookup"><span data-stu-id="5abbb-106">In order to simplify this process, the Microsoft Graph SDKs implement a large file upload task that manages the uploading of the slices.</span></span>
+<span data-ttu-id="df95e-104">Microsoft Graph 中的多个实体支持可恢复的[文件上载](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0)，以便更轻松地上传大文件。</span><span class="sxs-lookup"><span data-stu-id="df95e-104">A number of entities in Microsoft Graph support [resumable file uploads](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0) to make it easier to upload large files.</span></span> <span data-ttu-id="df95e-105">不是尝试在单个请求中上传整个文件，而是将该文件切片成更小的部分，并使用一个请求来上载单个切片。</span><span class="sxs-lookup"><span data-stu-id="df95e-105">Instead of trying to upload the entire file in a single request, the file is sliced into smaller pieces and a request is used to upload a single slice.</span></span> <span data-ttu-id="df95e-106">为了简化此过程，Microsoft Graph Sdk 实施了一个大型文件上传任务，用于管理切片的上载。</span><span class="sxs-lookup"><span data-stu-id="df95e-106">In order to simplify this process, the Microsoft Graph SDKs implement a large file upload task that manages the uploading of the slices.</span></span>
 
-## <a name="c"></a>[<span data-ttu-id="5abbb-107">C#</span><span class="sxs-lookup"><span data-stu-id="5abbb-107">C#</span></span>](#tab/csharp)
+## <a name="c"></a>[<span data-ttu-id="df95e-107">C#</span><span class="sxs-lookup"><span data-stu-id="df95e-107">C#</span></span>](#tab/csharp)
 
 ```csharp
 using (var fileStream = System.IO.File.OpenRead(filePath))
@@ -71,7 +71,7 @@ using (var fileStream = System.IO.File.OpenRead(filePath))
 }
 ```
 
-## <a name="typescript"></a>[<span data-ttu-id="5abbb-108">TypeScript</span><span class="sxs-lookup"><span data-stu-id="5abbb-108">TypeScript</span></span>](#tab/typescript)
+## <a name="typescript"></a>[<span data-ttu-id="df95e-108">TypeScript</span><span class="sxs-lookup"><span data-stu-id="df95e-108">TypeScript</span></span>](#tab/typescript)
 
 ```typescript
 const options: any = {
@@ -97,7 +97,7 @@ const options: any = {
 }
 ```
 
-## <a name="java"></a>[<span data-ttu-id="5abbb-109">Java</span><span class="sxs-lookup"><span data-stu-id="5abbb-109">Java</span></span>](#tab/java)
+## <a name="java"></a>[<span data-ttu-id="df95e-109">Java</span><span class="sxs-lookup"><span data-stu-id="df95e-109">Java</span></span>](#tab/java)
 
 ```java
 // Get an input stream for the file
@@ -156,27 +156,27 @@ chunkedUploadProvider.upload(callback, customConfig);
 
 ---
 
-## <a name="resuming-a-file-upload"></a><span data-ttu-id="5abbb-110">恢复文件上传</span><span class="sxs-lookup"><span data-stu-id="5abbb-110">Resuming a file upload</span></span>
+## <a name="resuming-a-file-upload"></a><span data-ttu-id="df95e-110">恢复文件上传</span><span class="sxs-lookup"><span data-stu-id="df95e-110">Resuming a file upload</span></span>
 
-<span data-ttu-id="5abbb-111">Microsoft Graph Sdk 支持[恢复正在进行的上载](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0#resuming-an-in-progress-upload)。</span><span class="sxs-lookup"><span data-stu-id="5abbb-111">The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0#resuming-an-in-progress-upload).</span></span> <span data-ttu-id="5abbb-112">如果您的应用程序在上载过程中遇到连接中断或 5. x HTTP 状态，则可以恢复上载。</span><span class="sxs-lookup"><span data-stu-id="5abbb-112">If your application encounters a connection interruption or a 5.x.x HTTP status during upload, you can resume the upload.</span></span>
+<span data-ttu-id="df95e-111">Microsoft Graph Sdk 支持[恢复正在进行的上载](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0#resuming-an-in-progress-upload)。</span><span class="sxs-lookup"><span data-stu-id="df95e-111">The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0#resuming-an-in-progress-upload).</span></span> <span data-ttu-id="df95e-112">如果您的应用程序在上载过程中遇到连接中断或 5. x HTTP 状态，则可以恢复上载。</span><span class="sxs-lookup"><span data-stu-id="df95e-112">If your application encounters a connection interruption or a 5.x.x HTTP status during upload, you can resume the upload.</span></span>
 
 <!-- markdownlint-disable MD024 -->
-### <a name="c"></a>[<span data-ttu-id="5abbb-113">C#</span><span class="sxs-lookup"><span data-stu-id="5abbb-113">C#</span></span>](#tab/csharp)
+### <a name="c"></a>[<span data-ttu-id="df95e-113">C#</span><span class="sxs-lookup"><span data-stu-id="df95e-113">C#</span></span>](#tab/csharp)
 
 ```csharp
 fileUploadTask.ResumeAsync(progress);
 ```
 
-### <a name="typescript"></a>[<span data-ttu-id="5abbb-114">TypeScript</span><span class="sxs-lookup"><span data-stu-id="5abbb-114">TypeScript</span></span>](#tab/typescript)
+### <a name="typescript"></a>[<span data-ttu-id="df95e-114">TypeScript</span><span class="sxs-lookup"><span data-stu-id="df95e-114">TypeScript</span></span>](#tab/typescript)
 
 ```typescript
 const resumedFile: DriveItem = await uploadTask.resume();
 ```
 
-### <a name="java"></a>[<span data-ttu-id="5abbb-115">Java</span><span class="sxs-lookup"><span data-stu-id="5abbb-115">Java</span></span>](#tab/java)
+### <a name="java"></a>[<span data-ttu-id="df95e-115">Java</span><span class="sxs-lookup"><span data-stu-id="df95e-115">Java</span></span>](#tab/java)
 
 > [!NOTE]
-> <span data-ttu-id="5abbb-116">Java SDK 目前不支持恢复正在进行的下载。</span><span class="sxs-lookup"><span data-stu-id="5abbb-116">The Java SDK does not currently support resuming in-progress downloads.</span></span>
+> <span data-ttu-id="df95e-116">Java SDK 目前不支持恢复正在进行的下载。</span><span class="sxs-lookup"><span data-stu-id="df95e-116">The Java SDK does not currently support resuming in-progress downloads.</span></span>
 
 ---
 <!-- markdownlint-enable MD024 -->

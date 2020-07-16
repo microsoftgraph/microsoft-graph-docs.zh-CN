@@ -12,26 +12,26 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 06/18/2020
 ms.locfileid: "44792329"
 ---
-# <a name="bypassactivationlock-action"></a><span data-ttu-id="b5091-103">bypassActivationLock 操作</span><span class="sxs-lookup"><span data-stu-id="b5091-103">bypassActivationLock action</span></span>
+# <a name="bypassactivationlock-action"></a><span data-ttu-id="0712e-103">bypassActivationLock 操作</span><span class="sxs-lookup"><span data-stu-id="0712e-103">bypassActivationLock action</span></span>
 
-<span data-ttu-id="b5091-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b5091-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="0712e-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0712e-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="b5091-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="b5091-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="0712e-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="0712e-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b5091-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="b5091-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0712e-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="0712e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b5091-107">跳过激活锁</span><span class="sxs-lookup"><span data-stu-id="b5091-107">Bypass activation lock</span></span>
+<span data-ttu-id="0712e-107">跳过激活锁</span><span class="sxs-lookup"><span data-stu-id="0712e-107">Bypass activation lock</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="b5091-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="b5091-108">Prerequisites</span></span>
-<span data-ttu-id="b5091-109">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="b5091-109">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="b5091-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b5091-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="0712e-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="0712e-108">Prerequisites</span></span>
+<span data-ttu-id="0712e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0712e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b5091-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="b5091-111">Permission type</span></span>|<span data-ttu-id="b5091-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="b5091-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="0712e-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="0712e-111">Permission type</span></span>|<span data-ttu-id="0712e-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="0712e-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="b5091-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b5091-113">Delegated (work or school account)</span></span>|<span data-ttu-id="b5091-114">DeviceManagementManagedDevices.PriviligedOperation.All</span><span class="sxs-lookup"><span data-stu-id="b5091-114">DeviceManagementManagedDevices.PriviligedOperation.All</span></span>|
-|<span data-ttu-id="b5091-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b5091-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b5091-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="b5091-116">Not supported.</span></span>|
-|<span data-ttu-id="b5091-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="b5091-117">Application</span></span>|<span data-ttu-id="b5091-118">DeviceManagementManagedDevices.PriviligedOperation.All</span><span class="sxs-lookup"><span data-stu-id="b5091-118">DeviceManagementManagedDevices.PriviligedOperation.All</span></span>|
+|<span data-ttu-id="0712e-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0712e-113">Delegated (work or school account)</span></span>|<span data-ttu-id="0712e-114">DeviceManagementManagedDevices.PriviligedOperation.All</span><span class="sxs-lookup"><span data-stu-id="0712e-114">DeviceManagementManagedDevices.PriviligedOperation.All</span></span>|
+|<span data-ttu-id="0712e-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0712e-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0712e-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="0712e-116">Not supported.</span></span>|
+|<span data-ttu-id="0712e-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="0712e-117">Application</span></span>|<span data-ttu-id="0712e-118">DeviceManagementManagedDevices.PriviligedOperation.All</span><span class="sxs-lookup"><span data-stu-id="0712e-118">DeviceManagementManagedDevices.PriviligedOperation.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="b5091-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b5091-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0712e-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0712e-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -46,28 +46,28 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/bypassActivationLock
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b5091-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="b5091-120">Request headers</span></span>
-|<span data-ttu-id="b5091-121">标头</span><span class="sxs-lookup"><span data-stu-id="b5091-121">Header</span></span>|<span data-ttu-id="b5091-122">值</span><span class="sxs-lookup"><span data-stu-id="b5091-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0712e-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="0712e-120">Request headers</span></span>
+|<span data-ttu-id="0712e-121">标头</span><span class="sxs-lookup"><span data-stu-id="0712e-121">Header</span></span>|<span data-ttu-id="0712e-122">值</span><span class="sxs-lookup"><span data-stu-id="0712e-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="b5091-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="b5091-123">Authorization</span></span>|<span data-ttu-id="b5091-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="b5091-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="b5091-125">接受</span><span class="sxs-lookup"><span data-stu-id="b5091-125">Accept</span></span>|<span data-ttu-id="b5091-126">application/json</span><span class="sxs-lookup"><span data-stu-id="b5091-126">application/json</span></span>|
+|<span data-ttu-id="0712e-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="0712e-123">Authorization</span></span>|<span data-ttu-id="0712e-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="0712e-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="0712e-125">接受</span><span class="sxs-lookup"><span data-stu-id="0712e-125">Accept</span></span>|<span data-ttu-id="0712e-126">application/json</span><span class="sxs-lookup"><span data-stu-id="0712e-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b5091-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="b5091-127">Request body</span></span>
-<span data-ttu-id="b5091-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="b5091-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0712e-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="0712e-127">Request body</span></span>
+<span data-ttu-id="0712e-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="0712e-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b5091-129">响应</span><span class="sxs-lookup"><span data-stu-id="b5091-129">Response</span></span>
-<span data-ttu-id="b5091-130">如果成功，此操作返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="b5091-130">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="0712e-129">响应</span><span class="sxs-lookup"><span data-stu-id="0712e-129">Response</span></span>
+<span data-ttu-id="0712e-130">如果成功，此操作返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="0712e-130">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b5091-131">示例</span><span class="sxs-lookup"><span data-stu-id="b5091-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0712e-131">示例</span><span class="sxs-lookup"><span data-stu-id="0712e-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="b5091-132">请求</span><span class="sxs-lookup"><span data-stu-id="b5091-132">Request</span></span>
-<span data-ttu-id="b5091-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="b5091-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="0712e-132">请求</span><span class="sxs-lookup"><span data-stu-id="0712e-132">Request</span></span>
+<span data-ttu-id="0712e-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="0712e-133">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/bypassActivationLock
 ```
 
-### <a name="response"></a><span data-ttu-id="b5091-134">响应</span><span class="sxs-lookup"><span data-stu-id="b5091-134">Response</span></span>
-<span data-ttu-id="b5091-135">Here is an example of the response.</span><span class="sxs-lookup"><span data-stu-id="b5091-135">Here is an example of the response.</span></span> <span data-ttu-id="b5091-136">Note: The response object shown here may be truncated for brevity.</span><span class="sxs-lookup"><span data-stu-id="b5091-136">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="b5091-137">All of the properties will be returned from an actual call.</span><span class="sxs-lookup"><span data-stu-id="b5091-137">All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="0712e-134">响应</span><span class="sxs-lookup"><span data-stu-id="0712e-134">Response</span></span>
+<span data-ttu-id="0712e-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="0712e-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```

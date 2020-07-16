@@ -13,26 +13,26 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 06/24/2020
 ms.locfileid: "44863318"
 ---
-# <a name="riskyuser-confirmcompromised"></a><span data-ttu-id="19784-103">riskyUser: confirmCompromised</span><span class="sxs-lookup"><span data-stu-id="19784-103">riskyUser: confirmCompromised</span></span>
+# <a name="riskyuser-confirmcompromised"></a><span data-ttu-id="9ef10-103">riskyUser: confirmCompromised</span><span class="sxs-lookup"><span data-stu-id="9ef10-103">riskyUser: confirmCompromised</span></span>
 
-<span data-ttu-id="19784-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="19784-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="9ef10-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9ef10-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-><span data-ttu-id="19784-105">**注意：** RiskyUsers API 需要 Azure AD Premium P2 许可证。</span><span class="sxs-lookup"><span data-stu-id="19784-105">**Note:** The riskyUsers API requires an Azure AD Premium P2 license.</span></span>
+><span data-ttu-id="9ef10-105">**注意：** RiskyUsers API 需要 Azure AD Premium P2 许可证。</span><span class="sxs-lookup"><span data-stu-id="9ef10-105">**Note:** The riskyUsers API requires an Azure AD Premium P2 license.</span></span>
 
-<span data-ttu-id="19784-106">确认一个或多个[riskyUser](../resources/riskyuser.md)对象已泄露。</span><span class="sxs-lookup"><span data-stu-id="19784-106">Confirm one or more [riskyUser](../resources/riskyuser.md) objects as compromised.</span></span> <span data-ttu-id="19784-107">此操作将目标用户的风险级别设置为 "高"。</span><span class="sxs-lookup"><span data-stu-id="19784-107">This action sets the targeted user's risk level to high.</span></span>
+<span data-ttu-id="9ef10-106">确认一个或多个[riskyUser](../resources/riskyuser.md)对象已泄露。</span><span class="sxs-lookup"><span data-stu-id="9ef10-106">Confirm one or more [riskyUser](../resources/riskyuser.md) objects as compromised.</span></span> <span data-ttu-id="9ef10-107">此操作将目标用户的风险级别设置为 "高"。</span><span class="sxs-lookup"><span data-stu-id="9ef10-107">This action sets the targeted user's risk level to high.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="19784-108">权限</span><span class="sxs-lookup"><span data-stu-id="19784-108">Permissions</span></span>
-<span data-ttu-id="19784-109">One of the following permissions is required to call this API.</span><span class="sxs-lookup"><span data-stu-id="19784-109">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="19784-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="19784-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9ef10-108">权限</span><span class="sxs-lookup"><span data-stu-id="9ef10-108">Permissions</span></span>
+<span data-ttu-id="9ef10-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9ef10-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="19784-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="19784-111">Permission type</span></span>      | <span data-ttu-id="19784-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="19784-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9ef10-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="9ef10-111">Permission type</span></span>      | <span data-ttu-id="9ef10-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9ef10-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="19784-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="19784-113">Delegated (work or school account)</span></span> | <span data-ttu-id="19784-114">IdentityRiskyUser.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="19784-114">IdentityRiskyUser.ReadWrite.All</span></span>    |
-|<span data-ttu-id="19784-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="19784-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="19784-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="19784-116">Not supported.</span></span>    |
-|<span data-ttu-id="19784-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="19784-117">Application</span></span> | <span data-ttu-id="19784-118">IdentityRiskyUser.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="19784-118">IdentityRiskyUser.ReadWrite.All</span></span> |
+|<span data-ttu-id="9ef10-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9ef10-113">Delegated (work or school account)</span></span> | <span data-ttu-id="9ef10-114">IdentityRiskyUser.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9ef10-114">IdentityRiskyUser.ReadWrite.All</span></span>    |
+|<span data-ttu-id="9ef10-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9ef10-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9ef10-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="9ef10-116">Not supported.</span></span>    |
+|<span data-ttu-id="9ef10-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="9ef10-117">Application</span></span> | <span data-ttu-id="9ef10-118">IdentityRiskyUser.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9ef10-118">IdentityRiskyUser.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="19784-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="19784-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9ef10-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9ef10-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /riskyUsers/confirmCompromised
@@ -40,23 +40,23 @@ POST /identityProtection/riskyUsers/confirmCompromised
 ```
 
 
-## <a name="request-headers"></a><span data-ttu-id="19784-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="19784-120">Request headers</span></span>
-| <span data-ttu-id="19784-121">名称</span><span class="sxs-lookup"><span data-stu-id="19784-121">Name</span></span>      |<span data-ttu-id="19784-122">说明</span><span class="sxs-lookup"><span data-stu-id="19784-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9ef10-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="9ef10-120">Request headers</span></span>
+| <span data-ttu-id="9ef10-121">名称</span><span class="sxs-lookup"><span data-stu-id="9ef10-121">Name</span></span>      |<span data-ttu-id="9ef10-122">说明</span><span class="sxs-lookup"><span data-stu-id="9ef10-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="19784-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="19784-123">Authorization</span></span>  | <span data-ttu-id="19784-124">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="19784-124">Bearer {token}.</span></span> <span data-ttu-id="19784-125">Required.</span><span class="sxs-lookup"><span data-stu-id="19784-125">Required.</span></span> |
+| <span data-ttu-id="9ef10-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="9ef10-123">Authorization</span></span>  | <span data-ttu-id="9ef10-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9ef10-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="19784-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="19784-126">Request body</span></span>
-<span data-ttu-id="19784-127">指定要在请求正文中消除的有风险的用户 Id。</span><span class="sxs-lookup"><span data-stu-id="19784-127">Specify the risky user IDs to dismiss in the request body.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9ef10-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="9ef10-126">Request body</span></span>
+<span data-ttu-id="9ef10-127">指定要在请求正文中消除的有风险的用户 Id。</span><span class="sxs-lookup"><span data-stu-id="9ef10-127">Specify the risky user IDs to dismiss in the request body.</span></span>
 
-## <a name="response"></a><span data-ttu-id="19784-128">响应</span><span class="sxs-lookup"><span data-stu-id="19784-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9ef10-128">响应</span><span class="sxs-lookup"><span data-stu-id="9ef10-128">Response</span></span>
 
-<span data-ttu-id="19784-129">If successful, this method returns a `204 No Content` response code.</span><span class="sxs-lookup"><span data-stu-id="19784-129">If successful, this method returns a `204 No Content` response code.</span></span> <span data-ttu-id="19784-130">It does not return anything in the response body.</span><span class="sxs-lookup"><span data-stu-id="19784-130">It does not return anything in the response body.</span></span>
-## <a name="examples"></a><span data-ttu-id="19784-131">示例</span><span class="sxs-lookup"><span data-stu-id="19784-131">Examples</span></span>
-### <a name="example-1-confirm-users-as-compromised"></a><span data-ttu-id="19784-132">示例1：确认用户受到威胁</span><span class="sxs-lookup"><span data-stu-id="19784-132">Example 1: Confirm users as compromised</span></span>
-#### <a name="request"></a><span data-ttu-id="19784-133">请求</span><span class="sxs-lookup"><span data-stu-id="19784-133">Request</span></span>
-<span data-ttu-id="19784-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="19784-134">Here is an example of the request.</span></span>
+<span data-ttu-id="9ef10-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="9ef10-p104">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="examples"></a><span data-ttu-id="9ef10-131">示例</span><span class="sxs-lookup"><span data-stu-id="9ef10-131">Examples</span></span>
+### <a name="example-1-confirm-users-as-compromised"></a><span data-ttu-id="9ef10-132">示例1：确认用户受到威胁</span><span class="sxs-lookup"><span data-stu-id="9ef10-132">Example 1: Confirm users as compromised</span></span>
+#### <a name="request"></a><span data-ttu-id="9ef10-133">请求</span><span class="sxs-lookup"><span data-stu-id="9ef10-133">Request</span></span>
+<span data-ttu-id="9ef10-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="9ef10-134">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="19784-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="19784-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9ef10-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="9ef10-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "confirm_riskyuser"
@@ -72,22 +72,22 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="19784-136">C#</span><span class="sxs-lookup"><span data-stu-id="19784-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9ef10-136">C#</span><span class="sxs-lookup"><span data-stu-id="9ef10-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/confirm-riskyuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="19784-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="19784-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9ef10-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9ef10-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/confirm-riskyuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="19784-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="19784-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9ef10-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9ef10-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/confirm-riskyuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="19784-139">响应</span><span class="sxs-lookup"><span data-stu-id="19784-139">Response</span></span>
-<span data-ttu-id="19784-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="19784-140">Here is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="9ef10-139">响应</span><span class="sxs-lookup"><span data-stu-id="9ef10-139">Response</span></span>
+<span data-ttu-id="9ef10-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="9ef10-140">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -95,11 +95,11 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
-### <a name="example-2-confirm-a-user-as-compromised"></a><span data-ttu-id="19784-141">示例2：确认用户已受到攻击</span><span class="sxs-lookup"><span data-stu-id="19784-141">Example 2: Confirm a user as compromised</span></span>
-#### <a name="request"></a><span data-ttu-id="19784-142">请求</span><span class="sxs-lookup"><span data-stu-id="19784-142">Request</span></span>
-<span data-ttu-id="19784-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="19784-143">Here is an example of the request.</span></span>
+### <a name="example-2-confirm-a-user-as-compromised"></a><span data-ttu-id="9ef10-141">示例2：确认用户已受到攻击</span><span class="sxs-lookup"><span data-stu-id="9ef10-141">Example 2: Confirm a user as compromised</span></span>
+#### <a name="request"></a><span data-ttu-id="9ef10-142">请求</span><span class="sxs-lookup"><span data-stu-id="9ef10-142">Request</span></span>
+<span data-ttu-id="9ef10-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="9ef10-143">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="19784-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="19784-144">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9ef10-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="9ef10-144">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "confirm_riskyuser"
@@ -114,22 +114,22 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="19784-145">C#</span><span class="sxs-lookup"><span data-stu-id="19784-145">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9ef10-145">C#</span><span class="sxs-lookup"><span data-stu-id="9ef10-145">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/confirm-riskyuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="19784-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="19784-146">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9ef10-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9ef10-146">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/confirm-riskyuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="19784-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="19784-147">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9ef10-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9ef10-147">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/confirm-riskyuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="19784-148">响应</span><span class="sxs-lookup"><span data-stu-id="19784-148">Response</span></span>
-<span data-ttu-id="19784-149">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="19784-149">Here is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="9ef10-148">响应</span><span class="sxs-lookup"><span data-stu-id="9ef10-148">Response</span></span>
+<span data-ttu-id="9ef10-149">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="9ef10-149">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
