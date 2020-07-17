@@ -1,22 +1,22 @@
 ---
 title: 创建会话
-description: '使用此 API 创建新的工作簿会话。 '
+description: '创建新的工作簿会话。 '
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 33a52d7ce90d7fcd7ea8c20464c81a2d3c907348
-ms.sourcegitcommit: d6374f42bee4de11fd7a3d0d8c2a7f8c4e7739bc
+ms.openlocfilehash: a74b5e670c5a38ea1a959db058d407c4a6bb896e
+ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44710669"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45165098"
 ---
 # <a name="create-session"></a>创建会话
 
 命名空间：microsoft.graph
 
-使用此 API 创建新的工作簿会话。 
+创建新的工作簿会话。 
 
 可以在以下任一模式下调用 Excel API： 
 
@@ -27,7 +27,13 @@ ms.locfileid: "44710669"
 
 >**注意：** Excel API 不需要会话标头也能起作用。但是，建议你使用会话标头来提高性能。如果不使用会话标头，API 调用过程中进行的更改_仅_保持在该文件中。  
 
-## <a name="error-handling"></a>错误处理
+在某些情况下，创建新的会话需要不确定的时间才能完成。 Microsoft Graph 还提供了长时间运行的操作模式。 此模式提供了一种方法来轮询创建状态更新，而无需等待创建完成。 步骤如下：
+
+1. 向 `Prefer: respond-async` 请求中添加一个标头，以指示它是一个长时间运行的操作。
+2. 响应返回一个 `Location` 标头，以指定用于轮询创建操作状态的 URL。 您可以通过访问指定的 URL 来获取操作状态。 状态将为以下之一： `notStarted` 、、 `running` `succeeded` 或 `failed` 。
+3. 操作完成后，可以再次请求状态，响应将显示为 `succeeded` 或 `failed` 。
+
+### <a name="error-handling"></a>错误处理
 
 此请求有时可能会收到 504 HTTP 错误。 此错误的适当响应做法是重复发出请求。
 
@@ -55,11 +61,12 @@ POST /workbook/createSession
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [WorkbookSessionInfo](../resources/workbooksessioninfo.md) 对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[workbookSessionInfo](../resources/workbooksessioninfo.md)对象。 对于长时间运行的操作，它会 `202 Accepted ` 在响应中返回响应代码和 `Location` 标头，其中包含空正文。
 
-## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+## <a name="examples"></a>示例
+
+### <a name="example-1-basic-session-creation"></a>示例1：基本会话创建
+#### <a name="request"></a>请求
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -89,10 +96,9 @@ Content-length: 52
 
 ---
 
-在请求正文中，提供 [WorkbookSessionInfo](../resources/workbooksessioninfo.md) 对象的 JSON 表示形式。
+#### <a name="response"></a>响应
 
-##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -106,6 +112,33 @@ Content-length: 52
 {
   "id": "id-value",
   "persistChanges": true
+}
+```
+### <a name="example-2-session-creation-with-long-running-operation-pattern"></a>示例2：使用长时间运行的操作模式创建的会话
+
+#### <a name="request"></a>请求
+
+```http
+POST https://graph.microsoft.com/beta/me/drive/items/{drive-item-id}/workbook/worksheets({id})/createSession
+Prefer: respond-async
+Content-type: application/json
+{
+    "persistChanges": true
+}
+```
+
+#### <a name="response"></a>响应
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookSessionInfo"
+} -->
+```http
+HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
+Content-type: application/json
+{
 }
 ```
 

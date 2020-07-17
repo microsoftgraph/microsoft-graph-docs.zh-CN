@@ -5,16 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 47a0a9cc517bad5ad005a23b1de94a38992da44e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 34523b5ff0e358344b8c3c5b695e89a9bdddd7a2
+ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519419"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45165105"
 ---
 # <a name="workbook-resource-type"></a>工作簿资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 包含相关的工作簿对象，如工作表、表、范围等。
 
@@ -36,6 +36,7 @@ ms.locfileid: "42519419"
 |表格|[workbookTable](workbooktable.md)集合 |表示与工作簿关联的表的集合。只读。|
 |Worksheets|[workbookWorksheet](workbookworksheet.md)集合 |表示与工作簿关联的工作表的集合。 只读。|
 |workbbookApplication|[workbookApplication](workbookapplication.md) |表示管理工作簿的 Excel workbookApplication。|
+|operations|[workbookOperation](workbookoperation.md)集合|工作簿操作的状态。 不支持获取操作集合，但如果 `Location` 响应中返回了标头，则可以获取长时间运行的操作的状态。 只读。 可为 Null。|
 
 ## <a name="functions"></a>函数
 

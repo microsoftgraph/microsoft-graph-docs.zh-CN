@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3774ceb0a2e03b8c625bf317467c670c93596ac9
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 34ebb76c62fbee2de25e8b5377c630e791937cee
+ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556238"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45165070"
 ---
 # <a name="on-premises-publishing-profiles"></a>本地发布配置文件
 
@@ -22,6 +22,8 @@ ms.locfileid: "44556238"
 [代理组](onpremisesagentgroup.md)（或应用程序代理的[连接器组](connectorgroup.md)）使租户管理员能够分配特定代理，以满足特定的已发布内部部署资源。 租户管理员可以将许多代理组合在一起，然后将每个已发布的资源分配给一个组。 同一本地发布类型的整个实体集由[onPremisesPublishingProfile](onpremisespublishingprofile.md)表示。
 
 租户管理员可以为每个**onPremisesPublishingProfile**配置一个[时间](updatewindow.md)段，在此时段内，代理可以接收更新或将更新推迟到代理。 为**onPremisesPublishingProfile**指定的[更新配置](hybridagentupdaterconfiguration.md)适用于该**onPremisesPublishingProfile**中的所有代理。
+
+有关配置应用程序代理的教程，请参阅[使用 Microsoft GRAPH API 自动化应用程序代理的配置](https://docs.microsoft.com/graph/application-proxy-configure-api)。
 
 ## <a name="see-also"></a>另请参阅
 
