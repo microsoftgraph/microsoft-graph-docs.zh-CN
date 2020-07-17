@@ -1,15 +1,15 @@
 ---
 title: 使用查询参数自定义响应
-description: Microsoft Graph 提供了可选查询参数，可用于指定和控制响应中返回的数据量。
+description: Microsoft Graph 提供可选的查询参数，可用于指定和控制响应中返回的数据量。
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 68ceeac9baedbb6ef7d8a739b0cf0a900b9434cf
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 3788478ff71ae103b912c5dd2a856c8fb85d23dc
+ms.sourcegitcommit: 90aaba4e965945cb6550cf625cbc03287f39e531
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897713"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148507"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 
 使用 `$count` 查询参数以包括集合中项总数的计数，以及从 Microsoft Graph 返回的数据值页。 
 
-例如，以下请求返回当前用户的**联系人**集合，以及属性中**联系人**集合中的项目数 `@odata.count` 。
+例如，下面的请求返回当前用户的 **contact** 集合，以及 `@odata.count` 属性中 **contact** 集合内的项数。
 
 ```http
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
@@ -94,7 +94,7 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 [在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
 
-`$count`对于这些资源集和从[directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)派生的关系，支持查询参数：
+`$count`查询参数支持这些资源集合和它们的关系派生[自directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)：
 - [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-beta)
 - [orgContact](https://docs.microsoft.com/graph/api/resources/orgcontact?view=graph-rest-beta)
 - [设备](https://docs.microsoft.com/graph/api/resources/device?view=graph-rest-beta)
@@ -130,9 +130,9 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 ## <a name="filter-parameter"></a>filter 参数
 
-使用 `$filter` 查询参数，以仅检索集合的子集。 `$filter`查询参数还可用于检索成员、memberOf、transitiveMembers 和 transitiveMemberOf 等关系。 例如，获取我所属的所有安全组。
+使用 `$filter` 查询参数，以仅检索集合的子集。 `$filter`查询参数还可以用于检索关系，例如members、memberOf、transitiveMembers和transitiveMemberOf。 例如，获取我所属的所有安全组。
 
-以下示例可用于查找其显示名称以字母 "J" 开头的用户，使用 `startswith` 。
+以下例子可用于查找显示名称以子母“J”开头的用户，请使用 `startswith`。
 
 ```http
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
@@ -155,7 +155,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 
 > **注意：** 在同一查询中同时使用 `$filter` 和 `$orderby` 获取消息时，必须[以特定的方式指定属性](/graph/api/user-list-messages?view=graph-rest-1.0#using-filter-and-orderby-in-the-same-query)。
 
-有关一些用法示例，请参阅下表。 如需了解 `$filter` 语法的更多详情，请参阅 [OData 协议][odata-filter]。  
+有关一些用法示例的信息，请参阅下表。 如需了解 `$filter` 语法的更多详情，请参阅 [OData 协议][odata-filter]。  
 
 下表展示了一些使用 `$filter` 查询参数的示例。
 
@@ -169,7 +169,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 | 获取登录用户在 2017 年 4 月收到的所有电子邮件。 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
 | 获取登录用户收件箱中的所有未读邮件。 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
 | 列出组织中的所有 Microsoft 365 组。 | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
-| 使用 OData 强制转换可获取具有以 "a" 开头的显示名称的组中的可传递成员身份，其中包含返回的对象的计数。 | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName,'a')&method=GET&version=v1.0) |
+| 使用 OData 转换可实现显示名称以“ a”开头（包括返回的对象数）的组中的临时成员资格。 | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName,'a')&method=GET&version=v1.0) |
 
 > **注意：** Azure AD 资源不支持以下 `$filter` 运算符：`ne`、`gt`、`ge`、`lt`、`le` 和 `not`。所有 Microsoft Graph 资源目前均不支持 `contains` 字符串运算符。
 
@@ -234,7 +234,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 
 ### <a name="using-search-on-message-collections"></a>对 message 集合使用 $search
 
-可根据特定邮件属性值搜索邮件。 搜索结果按邮件发送日期和时间进行排序。 `$search`请求返回最大为250个结果。
+可根据特定邮件属性值搜索邮件。 搜索结果按邮件发送日期和时间进行排序。 `$search` 请求最多可返回 250 个结果。
 
 如果确实要搜索邮件，且仅指定值，而未指定特定邮件属性，搜索依据为默认搜索属性 **from**、**subject** 和 **body**。
 
@@ -246,7 +246,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 [在 Graph 浏览器中试调用][search-example]
 
-也可以指定下表中的邮件属性名来搜索邮件，这些属性名可由关键字查询语言 (KQL) 语法识别。 这些属性名对应于 Microsoft Graph **message** 实体中定义的属性。 Outlook 和其他 Microsoft 365 应用程序（如 SharePoint）支持 KQL 语法，为其数据存储提供了常见发现域的方便性。
+也可以指定下表中的邮件属性名来搜索邮件，这些属性名可由关键字查询语言 (KQL) 语法识别。 这些属性名对应于 Microsoft Graph **message** 实体中定义的属性。 Outlook 和其他 Microsoft 365 应用程序（如 SharePoint）支持 KQL 语法，从而为数据存储提供了方便使用的公共发现域。
 
 
 | 可搜索的电子邮件属性                | 说明 | 示例 
@@ -256,7 +256,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 | **body**           | 电子邮件正文。|[`me/messages?$search="body:excitement"`][search-body-example]
 | **cc**           | 电子邮件的 **cc** 字段，可指定为 SMTP 地址、显示名称或别名。|[`me/messages?$search="cc:danas"&$select=subject,ccRecipients`][search-cc-example]
 | **from**           | 电子邮件的发件人，可指定为 SMTP 地址、显示名称或别名。|[`me/messages?$search="from:randiw"&$select=subject,from`][search-from-example]
-| **hasAttachment** | 如果电子邮件附件不是内联附件，则为 true；否则，为 false。 |[`me/messages?$search="hasAttachments=true"`][search-from-example]
+| **hasAttachment** | 如果电子邮件附件不是内联附件，则为 true；否则，为 false。 |[`me/messages?$search="hasAttachments:true"`][search-from-example]
 | **importance**           | 发件人在发送邮件时可以指定的电子邮件重要性。 可取值包括 `low`、`medium` 或 `high`。|[`me/messages?$search="importance:high"&$select=subject,importance`][search-imp-example]
 | **Kind**           | 邮件类型。 可取值包括 `contacts`、`docs`、`email`、`faxes`、`im`、`journals`、`meetings`、`notes`、`posts`、`rssfeeds`、`tasks` 或 `voicemail`。|[`me/messages?$search="kind:voicemail"`][search-kind-example]
 | **participants**           | 电子邮件的 **from**、**to**、**cc** 和 **bcc** 字段，可指定为 SMTP 地址、显示名称或别名。|[`me/messages?$search="participants:danas"`][search-part-example]
@@ -278,7 +278,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 ### <a name="using-search-on-person-collections"></a>对 person 集合使用 $search
 
-您可以使用 Microsoft Graph 人员 API 检索与用户最相关的人员。 相关性由用户的通信和协作模式及业务关系决定。 人员 API 支持 `$search` 查询参数。 `$search`请求返回最大为250个结果。
+可以使用 Microsoft Graph People API 检索与用户相关度最高的人员。 相关性由用户的通信和协作模式及业务关系决定。 People API 支持 `$search` 查询参数。 `$search` 请求最多可返回 250 个结果。
 
 人员搜索就是按 [person](/graph/api/resources/person?view=graph-rest-1.0) 资源的 **displayName** 和 **emailAddress** 属性进行搜索。
 
@@ -337,40 +337,40 @@ Content-type: application/json
 
 若要了解有关 People API 的详细信息，请参阅[获取相关人员的信息](./people-example.md#search-people)。  
 
-### <a name="using-search-on-directory-object-collections"></a>对目录对象集合使用 $search
+### <a name="using-search-on-directory-object-collections"></a>在目录对象集合上使用 $search
 
-您可以使用 `$search` 查询参数来限制基于搜索条件的结果，例如查找以空格、大小写和字符类型（数字和特殊字符）分隔的字符串中的单词。 标记化的搜索支持仅适用于 "displayName" 和 "description" 字段。 可以将任何字段放入 `$search` ，除**displayName**和**description**之外的字段默认为 `$filter` startswith 行为。 例如：
+可以使用`$search` 查询参数根据搜索条件限制结果，比如查找由空格、大小写和字符类型（数字和特殊字符）分隔的字符串中的单词。 标记的搜索支持仅适用于 displayName 和说明字段。 任何字段都可以放入 `$search`中，而不是 **displayName** 的字段，**说明** 默认 `$filter` startswith 行为。 例如：
 
 `https://graph.microsoft.com/beta/groups/?$search="displayName:OneVideo"`
  
-这将查找显示名称看起来像 "OneVideo" 的所有组。 `$search`也可以与一起使用 `$filter` 。 例如： 
+这将查找显示名称看起来像 "OneVideo" 的所有组。 也可与`$search`配合使用`$filter`。 例如： 
  
 `https://graph.microsoft.com/beta/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"` 
  
-这将查找显示名称看起来像 "OneVideo" 的所有启用邮件的组。 根据中的逻辑与（"AND"）和中的整个查询的逻辑结合（"AND"）限制结果 `$filter` `$search` 。 根据大小写对搜索文本进行标记，但匹配项是以不区分大小写的方式执行的。 例如，"OneVideo" 将拆分为两个输入令牌 "one" 和 "video"，但在区分大小写的情况下匹配属性。 
+这将查找显示名称类似于“OneVideo”的所有启用邮件的组。 结果是根据逻辑结合（"AND"）和`$filter`整个查询`$search`来限制。 搜索文本基于大小写进行标记，但是匹配以不区分大小写的方式执行。 例如，“OneVideo”将被分割成两个输入令牌“one”和“video”，但是匹配不区分大小写的属性。 
  
  
 搜索的语法遵循以下规则： 
  
-- 常规格式： $search = "clause1" [AND |或] "[clauseX]"。 
-- 支持任意数量的子句。 还支持对优先级加括号。 
-- 每个子句的语法为 <property> ： <text to search> 。 
-- 必须在子句中指定属性名称。 可以在中使用的任何属性 `$filter` 也可以在中使用 `$search` 。 根据属性的不同，搜索行为是 "search" 或 "startswith" （如果属性不支持搜索）。 
-- 整个子句部件必须放在双引号内。  
-- 逻辑运算符 "AND" 或 "必须放在双引号之外。 它们必须采用大写形式。 
-- 如果需要将整个子句部件放在双引号内（如果 <text to search> 包含双引号和反斜杠），则需要通过反斜杠对其进行转义。 任何其他字符都不需要转义。 
+- 通用格式： $search = "clause1" [AND |或] "[clauseX]"。 
+- 支持任何子句。 支持适用于优先级的括号。 
+- 每个子句的语法<property>：<text to search>。 
+- 必须在子句中指定属性名称。 可以在中使用的任何属性`$filter`也可以在内使用 `$search`。 根据属性的不同，如果属性不支持搜索，那么搜索行为要么是“search”，要么是“start with”。 
+- 必须将完整子句部分置于双引号内。  
+- 必须将逻辑运算符 "AND" 和 "OR" 置于双引号之外。 它们必须处于大写形式。 
+- 考虑到整个子句部分需要放在双引号内，如果<text to search>包含双引号和反斜杠，则需要使用反斜杠对其进行转义。 无需转义其他字符。 
 
 下表显示了一些示例。 
  
 
 | 对象类 | 说明 | 示例 |
 | ------------ | ----------- | ------- |
-| 用户 | 用户的通讯簿显示名称。 |  `https://graph.microsoft.com/beta/users?$search="displayName:Guthr"` |
-| 用户 | 用户的通讯簿显示名称或邮件。 | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr" OR "mail:Guthr"` |
-| Group | 组的通讯簿显示名称或说明。 | `https://graph.microsoft.com/beta/groups?$search="description:One" AND ("displayName:Video" OR "displayName:Drive")` |
-| Group | 启用邮件的组上的通讯簿显示名称。 | `https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"` |
+| 用户 | 通讯簿显示用户的名称。 |  `https://graph.microsoft.com/beta/users?$search="displayName:Guthr"` |
+| 用户 | 通讯簿显示用户的名称或邮件。 | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr" OR "mail:Guthr"` |
+| Group | 通讯簿显群组的名称或说明。 | `https://graph.microsoft.com/beta/groups?$search="description:One" AND ("displayName:Video" OR "displayName:Drive")` |
+| Group | 通讯簿在启用邮件组上显示名称。 | `https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"` |
 
-您在中提供的字符串输入以及 `$search` 上面提到的可搜索属性将被分成几个部分，并由空格、不同的大小写和字符类型（数字和特殊字符）组成。
+你提供的字符串输入 `$search`以及上面指出的可搜索属性都按空格、不同的大小写和字符类型(数字和特殊字符)划分为多个部分。
 
 ## <a name="select-parameter"></a>select 参数
 
