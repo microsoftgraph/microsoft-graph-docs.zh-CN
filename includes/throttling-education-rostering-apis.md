@@ -3,19 +3,19 @@ author: baywet
 localization_priority: Priority
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 608fff09019b4fdcce15a0ccb9a8b991d0f971b8
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: 1cbd1f9e09b596fd10ca9763c15c5b2284fcce71
+ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44989853"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45142479"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
 
-| 请求类型 | 针对所有租户的每个应用程序限制 | 每个租户每个应用限制 |
+| 请求类型 | 所有租户的每个应用限制 | 每个租户每个应用限制 |
 | ------------ | ------- | ------- |
-| 任意 | 每10秒23000个请求 | 每10秒5000个请求 |
+| 任何 | 每 10 秒 23000 个请求 | 每 10 秒 50000 个请求 |
 
-上述限制适用于以下资源：  
+上述限制适用于下列资源:  
 educationClass、educationOrganization、educationRoot、educationSchool、educationStudent、educationTeacher、educationTerm、educationUser。
