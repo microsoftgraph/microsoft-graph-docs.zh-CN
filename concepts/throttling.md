@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 12ae7bf122d23c6460dcbc253b1fe743768e49ba
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 96592654fffb3111a398178d807da702c398e0d2
+ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123713"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45165112"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -62,6 +62,12 @@ ms.locfileid: "45123713"
 - [外部项（Microsoft 搜索）](/graph/api/resources/externalitem?view=graph-rest-beta)
 - [Report](/graph/api/resources/report)
 - [订阅](/graph/api/resources/subscription)
+- [威胁评估请求](/graph/api/resources/threatassessmentrequest)
+- [邮件评估请求](/graph/api/resources/mailassessmentrequest)
+- [电子邮件文件评估请求](/graph/api/resources/emailfileassessmentrequest)
+- [文件评估请求](/graph/api/resources/fileassessmentrequest)
+- [URL 评估请求](/graph/api/resources/urlassessmentrequest)
+- [威胁评估结果](/graph/api/resources/threatassessmentresult)
 - [趋势](/graph/api/resources/insights-trending)
 - [已使用见解](/graph/api/resources/insights-used)
 - [共享见解](/graph/api/resources/insights-shared)
@@ -150,6 +156,13 @@ Outlook 服务提供以下资源。
 | [会议信息](/graph/api/resources/meetinginfo)   | 每月每位用家会有 2000 则会议 |
 | [状态](/graph/api/resources/presence)（预览版）   | 2 rps |
 
+### <a name="project-rome-service-limits"></a>Project Rome 服务限制
+
+| 请求类型 | 所有应用的每个用户限制 | | GET          | 每 5 分钟 400 个请求，每 1 天 12000 个请求 | | POST、PUT、PATCH、DELETE | 每 5 分钟 100 个请求，每 1 天 8000 个请求 |
+
+上述限制适用于下列资源:  
+activityHistoryItem、userActivity
+
 ### <a name="microsoft-teams-service-limits"></a>Microsoft Teams 服务限制
 
 限制表示为每秒请求数 (rps)。
@@ -176,6 +189,17 @@ Outlook 服务提供以下资源。
 
 另请参阅 [Microsoft Teams 限制](/graph/api/resources/teams-api-overview#microsoft-teams-limits)和[投票要求](/graph/api/resources/teams-api-overview#polling-requirements)。
 
+### <a name="information-protection"></a>信息保护
+
+以下限制适用于 `/informationProtection` 上的所有请求。
+
+| 操作                 | 每个租户的使用限制                                            | 每个资源（电子邮件、URL、文件）的使用限制                |
+|---------------------------|-------------------------------------------------------------|------------------------------------------------------|
+| POST                      | 每 15 分钟 150 个请求和每 24 小时 10000 个请求 | 每 15 分钟 1 个请求和每 24 小时 3 个请求 |
+
+上述限制适用于下列资源:  
+threatAssessmentRequest、threatAssessmentResult、mailAssessmentRequest、emailFileAssessmentRequest、fileAssessmentRequest、urlAssessmentRequest。
+
 ### <a name="identity-protection-and-conditional-access-service-limits"></a>身份保护和条件访问服务限制
 
 | 请求类型 | 每个租户的使用限制 |
@@ -186,6 +210,7 @@ Outlook 服务提供以下资源。
 riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocation, ipNamedLocation, conditionalAccessPolicy.
 
 > **备注:** 目前上面列出的资源没有返回`Retry-After`页眉`429 Too Many Requests`上答复。
+
 ### <a name="insights-service-limits"></a>见解服务限制
 
 以下限制适用于 `me/insights`或`users/{id}/insights` 上的所有请求。
@@ -213,6 +238,14 @@ riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocat
 | 操作                 | 每个租户的使用限制             |
 |---------------------------|------------------------------|
 | 任何操作             | 每 5 秒 150 个请求   |
+
+### <a name="open-and-schema-extensions-service-limits"></a>开放和架构扩展服务限制
+
+| 请求类型 | 每个租户每个应用限制 |
+| ------------ | ------------------------ |
+| 任何          | 每 10 秒 455 个请求 |
+
+上述限制适用于以下资源：openTypeExtension、schemaExtension、administrativeUnit、合同、设备、事件、组、消息、组织、帖子和用户。
 
 <!-- { "blockType": "throttlinggenstart" } -->
 ### <a name="education-service-limits"></a>教育版服务限制

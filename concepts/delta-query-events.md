@@ -4,24 +4,28 @@ description: '日历视图是默认日历中特定日期/时间范围内的事�
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 9a37301af8053d9c56734f0a202a5f8f1c6692d0
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: 5b5e41a689a62157bb686ca6bb97ef63af9ac02a
+ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216803"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45165042"
 ---
 # <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>获取日历视图中事件的增量更改 
 
-日历视图是一系列来自默认日历 (../me/calendarview) 或用户的其他某个日历且位于日期/时间范围内的事件。使用增量查询，可以获取日历视图中的新建、已更新或已删除事件。返回的事件可能包括定期系列事件的发生次数和例外情况，以及单个实例。借助增量数据，可以维护和同步用户事件的本地存储，而无需每次都从服务器提取整组用户事件。
+通过使用增量查询，你可以在指定的日历，或者日历中的定义事件集合（作为日历视图）中获取新的、更新的或删除的事件。 本文将介绍后一种情况（在日历视图中对事件进行此类增量更改）。 
+
+> **注意** 前者（对日历中的事件进行增量更改，而不受固定的开始日期和结束日期范围的约束）的功能目前仅在 beta 版中可用。 有关更多信息，请参阅 [delta](/graph/api/event-delta?view=graph-rest-beta) 函数。
+
+日历视图是某个日期/递减范围 (../me/calendarview) 内来自默认日历、用户的其他某个指定日历或者组日历的事件集合。 返回的事件可能包括定期系列事件的单个实例、发生次数和例外情况。 借助增量数据，可以维护和同步用户事件的本地存储，而无需每次都从服务器提取整组用户事件。
 
 增量查询既支持可检索指定日历视图中的所有事件的完全同步，也支持可检索自上次同步后日历视图中发生变化的事件的增量同步。通常情况下，开始时会执行一次完全同步，随后会定期获取相应日历视图的增量更改。 
 
 ## <a name="track-event-changes-in-a-calendar-view"></a>跟踪日历视图中的事件更改
 
-对事件执行增量查询专门针对你指定的日历和日期/时间范围（即日历视图）。若要跟踪多个日历中的更改，需要单独跟踪各个日历。 
+在日历视图中对事件执行增量查询专门针对你指定的日历和日期/时间范围。 若要跟踪多个日历中的更改，需要单独跟踪各个日历。 
 
-跟踪日历视图中的事件更改通常需要使用 [delta](/graph/api/event-delta?view=graph-rest-1.0) 函数按轮发出一个或多个 GET 请求。初始 GET 请求非常类似于[列出 calendarView](/graph/api/calendar-list-calendarview?view=graph-rest-1.0)，区别在于要添加 **delta** 函数：
+跟踪日历视图中的事件更改通常需要使用 [delta](/graph/api/event-delta?view=graph-rest-1.0) 函数按轮发出一个或多个 GET 请求。 初始 GET 请求非常类似于[列出 calendarView](/graph/api/calendar-list-calendarview?view=graph-rest-1.0)，区别在于要添加 **delta** 函数。 下面是登录用户的默认日历中，“日历”视图的初始 GET 增量请求：
 
 ```
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -30,9 +34,9 @@ GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datet
 使用 **delta** 函数的 GET 请求返回以下任一内容：
 
 - `nextLink`（包含具有 **delta** 函数调用和 _skipToken_ 的 URL），或 
-- `deltaLink`（包含具有 **delta** 函数调用和 deltaToken 的 URL）。
+- `deltaLink`（包含具有 **delta** 函数调用和 _deltaToken_ 的 URL）。
 
-这些令牌是[状态令牌](delta-query-overview.md#state-tokens)，负责对 refs/remotes/microsoftgraph/master startDateTime、endDateTime 参数以及初始增量查询 GET 请求中的任何其他查询参数进行编码。 
+这些令牌是[状态令牌](delta-query-overview.md#state-tokens)，负责对 _startDateTime_、_endDateTime_ 参数以及初始增量查询 GET 请求中的其他任何查询参数进行编码。 在后续请求中，无需包括这些参数，因为它们已在令牌中编码。
 
 状态令牌对客户端完全不透明。若要继续一轮事件更改跟踪，只需将最后一个 GET 请求返回的 `nextLink` 或 `deltaLink` URL 复制并应用到同一日历视图的下一个 **delta** 函数调用即可。响应中返回的 `deltaLink` 表示当前一轮更改跟踪已完成。可以保存 `deltaLink` URL，并在开始下一轮时使用。
 
@@ -64,7 +68,7 @@ GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datet
 
 ### <a name="step-1-sample-initial-request"></a>第 1 步：示例第一个请求
 
-在该示例中，由于指定日历视图为首次同步，因此第一个同步请求不含任何状态令牌。这一轮将返回此日历视图中的所有事件。
+在该示例中，由于登录用户的默认日历中的指定日历视图为首次同步，因此第一个同步请求不含任何状态令牌。 这一轮将返回此日历视图中的所有事件。
 
 第一个请求指定以下内容：
 
@@ -72,7 +76,7 @@ GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datet
 - [可选的请求头](#optional-request-header) _odata.maxpagesize_，表示一次返回 2 个事件。
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_calendarview_delta_1"
@@ -81,19 +85,19 @@ GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datet
 GET https://graph.microsoft.com/v1.0/me/calendarView/delta?startdatetime=2016-12-01T00:00:00Z&enddatetime=2016-12-30T00:00:00Z HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarview-delta-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-calendarview-delta-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-calendarview-delta-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-calendarview-delta-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -182,7 +186,7 @@ Content-type: application/json
 第二个请求指定上一个响应中返回的 `nextLink` URL。请注意，不再需要像第一个请求一样指定相同的 _startDateTime_ 和 _endDateTime_ 参数，因为 `nextLink` URL 中的 `skipToken` 已将其编码并包含在内。
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_calendarview_delta_2"
@@ -191,19 +195,19 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/me/calendarView/delta?$skiptoken=R0usmcCM996atia_s HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarview-delta-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-calendarview-delta-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-calendarview-delta-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-calendarview-delta-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -293,7 +297,7 @@ Content-type: application/json
  
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_calendarview_delta_3"
@@ -302,19 +306,19 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/me/calendarView/delta?$skiptoken=R0usmci39OQxqJrxK4 HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarview-delta-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-calendarview-delta-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-calendarview-delta-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-calendarview-delta-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -380,7 +384,7 @@ Content-type: application/json
 使用上一轮中[最后一个请求](#step-3-sample-third-request)返回的 `deltaLink`，可以只获取从那以后此日历视图中发生变化（已添加、删除或更新）的事件。假设你愿意在响应中保持页面大小上限不变，下一轮的第一个请求如下所示：
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_calendarview_delta_next"
@@ -389,19 +393,19 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/me/calendarView/delta?$deltatoken=R0usmcMDNGg0J1E HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarview-delta-next-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-calendarview-delta-next-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-calendarview-delta-next-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-calendarview-delta-next-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
