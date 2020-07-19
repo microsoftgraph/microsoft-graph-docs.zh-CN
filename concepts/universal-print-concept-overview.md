@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: d3df3a36ac9994b3ce4560b995a52288dd197e34
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 3ae838f408b6c0452a10379080895e5fdc64b6b1
+ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44215652"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091527"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>通用打印云打印 API 概述
 
@@ -61,6 +61,28 @@ ms.locfileid: "44215652"
 共享打印机会创建 [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) 资源，它可随时更新为指向其他打印机，这样就能轻松更换损坏的打印机硬件，或让打印机脱机接受维护。
 
 若要在应用程序中使用此功能，请使用[更新 printerShare](/graph/api/printershare-update?view=graph-rest-beta) 来更新 printerShare 的 `printer` 引用。
+
+### <a name="extending-universal-print-to-support-pull-printing"></a>扩展通用打印以支持拉取打印
+
+Microsoft Graph 通用打印 API 可让你的应用程序支持拉取打印。 若要设置拉取打印，你需要注册触发器，以便在发生某些打印事件（例如正在启动打印作业）时通知应用程序（通过服务到服务通信）。
+
+这些触发器可使应用程序中断打印工作流，以执行将作业重定向到其他打印机和修改文档负载等操作。
+
+按以下步骤启用拉取打印：
+
+1. 使用应用程序权限[创建 printTaskDefinition](/graph/api/print-post-taskdefinitions?view=graph-rest-beta)。 此抽象任务定义将用于创建为应用程序保留作业的任务。 你需要为每个租户定义至少一个任务定义，可使用任务触发器将其与租户中任意数量的打印机关联（参阅步骤 4）。
+
+2. 使用管理员身份验证令牌和 `null` **physicalDeviceId** [注册一个或多个虚拟打印机](/graph/api/printer-create?view=graph-rest-beta)。 “虚拟打印机”只是通用打印中没有连接物理设备的打印机对象。 通常，用户将打印到虚拟打印机，然后在物理打印设备上执行打印作业。 请参阅步骤 6。
+
+3. 使用应用程序权限和 `application/ipp` 介质类型[更新虚拟打印机的属性](/graph/api/printer-update?view=graph-rest-beta)（参阅示例）。
+
+4. 使用将任务定义与虚拟打印机相关联的管理员身份验证令牌来[为虚拟打印机创建任务触发器](/graph/api/printer-post-tasktriggers?view=graph-rest-beta)。
+
+5. 将打印作业提交到虚拟打印机后，由于 [printTaskTrigger](/graph/api/resources/printtasktrigger?view=graph-rest-beta)，它将暂停。 将根据关联的 [printTaskDefinition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta) 创建状态为 `processing` 的 [printTask](/graph/api/resources/printtask?view=graph-rest-beta)。
+
+6. 当用户在物理打印机设备上刷卡时，打印机将通知你的应用程序。 此时，应用程序可以[获取关联虚拟打印机的作业](/graph/api/printer-list-jobs?view=graph-rest-beta)，并将列表筛选为当前用户创建的作业。
+
+7. 当用户选择要打印的一个或多个作业时，应用程序可以[将打印作业重定向到物理打印机](/graph/api/printjob-redirect?view=graph-rest-beta)，作业将开始打印！ 仅当关联打印机上有一个 [printTask](/graph/api/resources/printtask?view=graph-rest-beta) 处于 `processing` 状态时，重定向调用才会成功，该打印机是由此应用在步骤 4 中创建的触发器启动的。 重定向任务后，该任务将自动设置为 `completed` 状态。
 
 ## <a name="api-reference"></a>API 参考
 在查找此服务的 API 参考？
