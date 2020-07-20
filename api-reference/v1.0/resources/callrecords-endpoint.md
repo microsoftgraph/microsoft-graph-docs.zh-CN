@@ -7,7 +7,7 @@ ms.prod: cloud-communications
 doc_type: resourcePageType
 ms.openlocfilehash: 0dc1c8709eca693e883d03dfe96c869a021e799c
 ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/02/2020
 ms.locfileid: "44491948"

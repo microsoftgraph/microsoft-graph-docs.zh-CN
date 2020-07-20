@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: resourcePageType
 ms.openlocfilehash: 4d7399f45138d6ab7d82f33e6577e7d08967ad15
 ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/24/2020
 ms.locfileid: "44863696"
