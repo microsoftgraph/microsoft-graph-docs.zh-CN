@@ -7,6 +7,7 @@ ms.prod: people
 doc_type: resourcePageType
 ms.openlocfilehash: 8ae6c62acfacfccd22cc9985386762a2f61a2bc7
 ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.translationtype: Auto
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "45050854"
