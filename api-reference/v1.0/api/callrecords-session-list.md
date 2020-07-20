@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e197f764eb335d01501e9b639f80c9af368d5b45
-ms.sourcegitcommit: 43f7800894857a29f02fffaf4a50ad6386b5bf59
+ms.openlocfilehash: 93c841bbfd5c2a684695c124c8d8ca6f7cd82607
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44524555"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183657"
 ---
 # <a name="list-callrecord-sessions"></a>列出 callRecord 会话
 
@@ -18,7 +18,7 @@ ms.locfileid: "44524555"
 
 检索与[callRecord](../resources/callrecords-callrecord.md)对象相关联的[会话](../resources/callrecords-session.md)列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "44524555"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | CallRecords.Read.All |
+| 应用程序                            | CallRecords.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -38,9 +38,9 @@ GET /communications/callRecords/{id}/sessions
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -62,34 +62,14 @@ GET /communications/callRecords/{id}/sessions
 
 下面的示例演示了获取[callRecord](../resources/callrecords-callrecord.md)[会话](../resources/callrecords-session.md)列表的请求。
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_callrecord_sessions"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}/sessions
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-callrecord-sessions-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-callrecord-sessions-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-callrecord-sessions-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-sessions-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>响应
 
@@ -98,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}/sessions
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.callRecords.session",
   "isCollection": true
@@ -176,34 +156,14 @@ Content-type: application/json
 
 下面的示例演示了如何获取包含包含[分段](../resources/callrecords-segment.md)的[callRecord](../resources/callrecords-callrecord.md)的[会话](../resources/callrecords-session.md)列表的请求。
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_callrecord_sessions_expanded"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}/sessions?$expand=segments
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-callrecord-sessions-expanded-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-callrecord-sessions-expanded-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-callrecord-sessions-expanded-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-callrecord-sessions-expanded-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>响应
 
@@ -212,7 +172,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}/sessions?$e
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.callRecords.session",
   "isCollection": true

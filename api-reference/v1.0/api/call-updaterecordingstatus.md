@@ -5,22 +5,22 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 164cb6e8a1fe77db90297607e232d8cfb73d12cb
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: bb8f68f53453662d8ab0707138c011548379a4e6
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082286"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183965"
 ---
 # <a name="call-updaterecordingstatus"></a>调用： updateRecordingStatus
 
 命名空间：microsoft.graph
 
-更新与呼叫关联的应用程序的录制状态。
+更新与呼叫关联的应用程序的录制状态。 这需要使用[基于团队策略的录制](https://docs.microsoft.com/MicrosoftTeams/teams-recording-policy)解决方案。
 
 > **其他限制**：不能使用媒体访问 API 来记录或保留来自应用程序访问的呼叫或会议的媒体内容，或从该媒体内容派生的数据（"record" 或 "record"），而无需先调用**updateRecordingStatus** API 来指示已开始录制，并从该 api 接收成功答复。 如果您的应用程序开始录制任何会议，则它必须在调用**updateRecordingStatus** API 之前结束录制，以指示录制已结束。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权）      |
@@ -46,11 +46,11 @@ POST /communications/calls/{id}/updateRecordingStatus
 
 | 参数       | 类型    | 说明                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
-| 适用   | 字符串  | 唯一的客户端上下文字符串。 最大限制为256个字符。                                 |
-| 状态          | 字符串  | 录制状态。 可能的值包括`notRecording`： `recording`、或`failed`。  |
+| 适用   | String  | 唯一的客户端上下文字符串。 最大限制为256个字符。                                 |
+| 状态          | String  | 录制状态。 可能的值包括： `notRecording` 、 `recording` 或 `failed` 。  |
 
 ## <a name="response"></a>响应
-此方法返回`200 OK`响应代码和位置标头，其中包含为此请求创建的[UPDATERECORDINGSTATUSOPERATION](../resources/updaterecordingstatusoperation.md)对象的 URI。
+此方法返回 `200 OK` 响应代码和位置标头，其中包含为此请求创建的[updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md)对象的 URI。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
