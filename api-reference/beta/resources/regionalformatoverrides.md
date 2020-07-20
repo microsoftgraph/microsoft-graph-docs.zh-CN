@@ -7,7 +7,7 @@ ms.prod: settings
 doc_type: resourcePageType
 ms.openlocfilehash: add353f539cac8eb6bb0bc7997c7aaaeea450835
 ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/16/2020
 ms.locfileid: "44744205"

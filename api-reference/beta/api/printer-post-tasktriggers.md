@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ms.openlocfilehash: 453759faf24ac5c116e3f1d9bf73aa7771aae595
 ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/09/2020
 ms.locfileid: "45091652"
@@ -21,7 +21,7 @@ ms.locfileid: "45091652"
 在指定的[打印机](../resources/printer.md)上创建新的[任务触发器](../resources/printtasktrigger.md)。 目前，每台打印机只能指定**一个**任务触发器，但将来可以删除此限制。 此外，只有注册打印机的应用程序可以管理其任务触发器。
 
 ## <a name="permissions"></a>权限
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
 
@@ -40,7 +40,7 @@ POST /print/printers/{id}/taskTriggers
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+| Authorization | Bearer {token}。必需。 |
 | Content-type  | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
@@ -70,7 +70,7 @@ POST https://graph.microsoft.com/beta/print/printers/ae63f617-4856-4b45-8ea9-69d
 
 ### <a name="response"></a>响应
 下面展示了示例响应。
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

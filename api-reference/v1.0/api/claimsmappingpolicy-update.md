@@ -7,7 +7,7 @@ ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: 82cab29a9b2876b325205f422e595293a5327ee1
 ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/24/2020
 ms.locfileid: "44863204"
@@ -20,7 +20,7 @@ ms.locfileid: "44863204"
 
 ## <a name="permissions"></a>权限
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
@@ -56,7 +56,7 @@ PATCH /policies/claimsMappingPolicies/{id}
 
 ## <a name="response"></a>响应
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 
@@ -102,7 +102,7 @@ Content-type: application/json
 
 下面展示了示例响应。
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

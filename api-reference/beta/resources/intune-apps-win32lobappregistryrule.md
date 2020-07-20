@@ -7,7 +7,7 @@ ms.prod: Intune
 doc_type: resourcePageType
 ms.openlocfilehash: 8e4fcce49fde2f1eb8eb33bc320f1204369b09cf
 ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/18/2020
 ms.locfileid: "44790808"

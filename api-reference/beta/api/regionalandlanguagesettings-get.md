@@ -7,7 +7,7 @@ ms.prod: settings
 doc_type: apiPageType
 ms.openlocfilehash: 6ff0e617656524e43fafa85a800a3adb99282f70
 ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/18/2020
 ms.locfileid: "44791175"
@@ -21,7 +21,7 @@ ms.locfileid: "44791175"
 获取[regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md)对象的属性。
 
 ## <a name="permissions"></a>权限
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                   |权限（从至少到最高特权）     |
 |----------------------------------|---------------------------------------------- |
@@ -42,7 +42,7 @@ GET /settings/regionalAndLanguageSettings
 ## <a name="request-headers"></a>请求头
 | 标头       | 值|
 |:-----------|:------|
-| Authorization  | Bearer {token}. Required.|
+| Authorization  | Bearer {token}。必需。|
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>请求正文

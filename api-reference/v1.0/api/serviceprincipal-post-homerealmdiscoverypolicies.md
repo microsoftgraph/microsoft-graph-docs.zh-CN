@@ -7,7 +7,7 @@ ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: f30ff49bfe43e67ee4ae7fbac21277c060244d02
 ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/24/2020
 ms.locfileid: "44863931"
@@ -22,7 +22,7 @@ ms.locfileid: "44863931"
 
 ## <a name="permissions"></a>权限
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
@@ -42,7 +42,7 @@ POST /servicePrincipals/{id}/homeRealmDiscoveryPolicies/$ref
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+| Authorization | Bearer {token}。必需。 |
 | Content-Type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ POST /servicePrincipals/{id}/homeRealmDiscoveryPolicies/$ref
 
 ## <a name="response"></a>响应
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="examples"></a>示例
 

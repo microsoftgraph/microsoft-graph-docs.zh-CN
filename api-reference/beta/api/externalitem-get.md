@@ -7,7 +7,7 @@ ms.prod: search
 doc_type: apiPageType
 ms.openlocfilehash: 0e668c6ee1d571287304e0920a4636c81cd06ca7
 ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/01/2020
 ms.locfileid: "45005137"
@@ -26,7 +26,7 @@ ms.locfileid: "45005137"
 
 ## <a name="permissions"></a>权限
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
@@ -57,7 +57,7 @@ GET /external/connections/{connection-id}/items/{item-id}
 
 | 名称          | 说明               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+| Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 

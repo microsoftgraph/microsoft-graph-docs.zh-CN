@@ -2,7 +2,7 @@
 description: 自动生成文件。 请不要修改
 ms.openlocfilehash: 4ede41b4dae15b4ce280d57c3f05085f2b67675a
 ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/01/2020
 ms.locfileid: "45007099"

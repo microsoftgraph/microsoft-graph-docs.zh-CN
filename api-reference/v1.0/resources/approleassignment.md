@@ -7,7 +7,7 @@ ms.prod: microsoft-identity-platform
 author: psignoret
 ms.openlocfilehash: ae7c770d97640f6af63dcb594b7f624fb119f1e6
 ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/26/2020
 ms.locfileid: "44896789"

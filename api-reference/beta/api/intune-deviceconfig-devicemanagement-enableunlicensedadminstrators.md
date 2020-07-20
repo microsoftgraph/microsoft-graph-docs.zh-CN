@@ -7,7 +7,7 @@ ms.prod: Intune
 doc_type: apiPageType
 ms.openlocfilehash: 882a5d1cafa8e25d4a69a0c525c0bb8d3b971cd1
 ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/18/2020
 ms.locfileid: "44792804"
@@ -23,7 +23,7 @@ ms.locfileid: "44792804"
 启用后，通过角色分配成员身份分配给管理员的用户将不再需要分配的 Intune 许可证。 对于角色分配中的每个 AAD 安全组，限制为350个无许可证的直接成员，但如果需要支持超过350个未获得授权的管理员，则可以将多个 AAD 安全组分配给一个角色。 许可管理员将继续按中的顺序工作，这是可传递的成员资格应用且不受350成员限制的限制。
 
 ## <a name="prerequisites"></a>先决条件
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -61,7 +61,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/enableUnlicensedAdminstra
 ```
 
 ### <a name="response"></a>响应
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 ``` http
 HTTP/1.1 204 No Content
 ```

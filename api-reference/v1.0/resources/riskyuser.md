@@ -7,7 +7,7 @@ ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
 ms.openlocfilehash: 0584a0c1c36428cac735f33eb690821e5d045ae3
 ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/26/2020
 ms.locfileid: "44896005"

@@ -7,7 +7,7 @@ ms.prod: outlook
 author: abheek-das
 ms.openlocfilehash: b4ed5db9dfa87b2829d78371339c166c3bb74265
 ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/23/2020
 ms.locfileid: "44846372"

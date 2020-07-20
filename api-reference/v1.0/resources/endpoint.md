@@ -7,7 +7,7 @@ ms.prod: microsoft-identity-platform
 author: yyuank
 ms.openlocfilehash: 43843a3b6847c261326574e7a73f607b10e5e05d
 ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/26/2020
 ms.locfileid: "44895613"

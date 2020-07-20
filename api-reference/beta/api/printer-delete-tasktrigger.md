@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ms.openlocfilehash: c96edf3379e1d20e35070e4e131ffb08cce98d5f
 ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/09/2020
 ms.locfileid: "45091584"
@@ -21,7 +21,7 @@ ms.locfileid: "45091584"
 删除[打印机](../resources/printer.md)的[任务触发器](../resources/printtasktrigger.md)，以防止在指定打印机上触发任务的相关打印事件。
 
 ## <a name="permissions"></a>权限
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
 
@@ -39,13 +39,13 @@ DELETE /print/printers/{id}/taskTriggers/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | Bearer {token}. Required. |
+| Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -63,7 +63,7 @@ DELETE https://graph.microsoft.com/beta/print/printers/1a5f91a7-9bd1-4d5f-bb86-f
 
 ##### <a name="response"></a>响应
 下面展示了示例响应。
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response"
 } -->

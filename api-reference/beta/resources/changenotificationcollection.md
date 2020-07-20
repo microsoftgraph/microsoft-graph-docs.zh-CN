@@ -7,7 +7,7 @@ doc_type: resourcePageType
 ms.prod: non-product-specific
 ms.openlocfilehash: d93cbc16411d3090ba4133047ad07cd55997fec5
 ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/10/2020
 ms.locfileid: "44681744"

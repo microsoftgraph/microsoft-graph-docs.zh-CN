@@ -7,7 +7,7 @@ ms.prod: microsoft-identity-platform
 author: sureshja
 ms.openlocfilehash: 421a169078122c9cf49a82179fcf4d666f2b5b8b
 ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/08/2020
 ms.locfileid: "45081310"

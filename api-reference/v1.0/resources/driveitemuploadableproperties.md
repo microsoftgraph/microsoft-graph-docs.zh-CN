@@ -7,7 +7,7 @@ ms.prod: files
 doc_type: resourcePageType
 ms.openlocfilehash: 1f3ef83f36af70aa2efd3cce8d0215d705114e50
 ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: MT
+ms.translationtype: Auto
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/24/2020
 ms.locfileid: "44863871"
@@ -46,8 +46,8 @@ ms.locfileid: "44863871"
 |:-------------|:----------------------------------|:----------------------------------------------------------------------------------------------------|
 |**description**   |String                             | 提供项的用户可见的说明。 读写。 仅适用于 OneDrive 个人版。             |
 |**fileSize**      |Int64                              | 提供在上载前执行配额检查所需的文件大小。 仅适用于 OneDrive 个人版。 |
-|**fileSystemInfo**|[fileSystemInfo](filesysteminfo.md)| File system information on client. Read-write.                                                      |
-|**name**          |String                             | The name of the item (filename and extension). Read-write.                                          |
+|**fileSystemInfo**|[fileSystemInfo](filesysteminfo.md)| 客户端上的文件系统信息。读写。                                                      |
+|**name**          |String                             | 项目名称（文件名和扩展名）。读写。                                          |
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
