@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包中的 "议程" 组件
 description: "\"管理中心议程\" web 组件用于表示用户或组日历中的事件。"
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 89c2d1c53393d1488a15682329f4754211f12b0e
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: c42b62241f5eee7fef51bf57bf8617dd6e89b8c6
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681891"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183923"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的 "议程" 组件
 
@@ -87,7 +87,7 @@ mgt-agenda {
 
 `mgt-agenda`组件支持多个[模板](../templates.md)，这些模板允许您替换组件的某些部分。 若要指定模板，请在 `<template>` 组件内添加一个元素，并将 `data-type` 值设置为下列值之一：
 
-| 数据类型 | 数据上下文 | Description |
+| 数据类型 | 数据上下文 | 说明 |
 | --- | --- | --- |
 | `default` | `events`：事件对象的列表 | 默认模板会将整个组件替换为您自己的组件。 |
 | `event` | `event`： event 对象 | 用于呈现每个事件的模板。 |
@@ -128,16 +128,23 @@ mgt-agenda {
 | --- | --- |
 | eventClick | 用户单击或点击事件。|
 
-
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 此组件使用以下 Microsoft Graph Api 和权限：
 
-| Resource | Permission |
+| 资源 | 权限 |
 | - | - |
 | [/me/calendarview](/graph/api/calendar-list-calendarview?view=graph-rest-1.0) | Calendars.Read |
 
 组件允许您指定要调用的其他 Microsoft Graph 查询（例如 `/groups/{id}/calendar/calendarView` ）。 在这种情况下，将权限追加到字符串的末尾，并将其作为分隔符 `|` 。
+
+使用默认模板和默认模板时 `renderAttendees` ，需要其他 api 和权限。 此组件的默认模板对具有与会者的事件使用 "it 人员" 组件，这需要以下各[项](people.md)。
+
+| 资源 | 权限 |
+| - | - |
+| [/users](/graph/api/user-list?view=graph-rest-1.0) | User.readbasic.all |
+| [/me/calendarview](/graph/api/user-list-people?view=graph-rest-1.0) | People.Read |
+| [/me/calendarview](/graph/api/user-list-contacts?view=graph-rest-1.0) | Contacts.Read |
 
 ## <a name="authentication"></a>身份验证
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: a577d050ae55ec7b99cbceb23f27a6dd4ec2121f
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: 036b9c84bda2a30e00206194768c621f127a4d75
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081359"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183671"
 ---
 # <a name="profilecardproperty-resource-type"></a>profileCardProperty 资源类型
 
@@ -26,9 +26,9 @@ ms.locfileid: "45081359"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------------------------------------------------------|:----------------------------------------------|:-----------------------------------------------------------------|
-| [List](../api/organizationsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | 读取**profileCardProperty**对象的属性和关系。 |
-| [创建](../api/organizationsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | 读取**profileCardProperty**对象的属性和关系。 |
-| [获取](../api/profilecardproperty-get.md) | [profileCardProperty](profilecardproperty.md) | 读取**profileCardProperty**对象的属性和关系。 |
+| [List](../api/organizationsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | 获取组织的**profileCardProperty**资源的集合。 |
+| [创建](../api/organizationsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | 为组织创建新的**profileCardProperty**资源。 |
+| [获取](../api/profilecardproperty-get.md) | [profileCardProperty](profilecardproperty.md) | 阅读**profileCardProperty**资源的属性和关系，其中包含在给定字段的 Microsoft 365 组织中存在的配置文件卡片自定义项。 |
 | [更新](../api/profilecardproperty-update.md)               | [profileCardProperty](profilecardproperty.md) | 更新**profileCardProperty**对象。                               |
 | [删除](../api/profilecardproperty-delete.md)               | 无                                          | 删除**profileCardProperty**对象。                               |
 

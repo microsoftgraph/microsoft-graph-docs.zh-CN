@@ -3,12 +3,12 @@ title: Microsoft Graph 工具包中的 "人员" 组件
 description: 您可以使用 `mgt-people` web 组件显示一组用户或联系人，方法是使用其照片或缩写。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: aa51f6d0c459425cdb9a01dbd3a61f5613e58678
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 8e942ad0cca446dc8bf982249a7593b8299fe22e
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682024"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183972"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的 "人员" 组件
 
@@ -62,7 +62,7 @@ mgt-people {
 
 `mgt-people`支持多个[模板](../templates.md)，这些模板可用于替换组件的某些部分。 若要指定模板，请在 `<template>` 组件内添加一个元素，并将 `data-type` 值设置为下列值之一。
 
-| 数据类型 | 数据上下文 | Description |
+| 数据类型 | 数据上下文 | 说明 |
 | --- | --- | --- |
 | `default` | `people`： person 对象列表 | 默认模板会将整个组件替换为您自己的组件。 |
 | `person` | `person`： person 对象 | 用于呈现每个人的模板。 |
@@ -89,9 +89,16 @@ mgt-people {
 
 此组件使用以下 Microsoft Graph Api 和权限：
 
-| Resource | Permission |
+| 资源 | 权限 |
 | - | - |
 | [/me/people](/graph/api/user-list-people?view=graph-rest-1.0) | `People.Read` |
+
+使用默认模板时，需要其他 Api 和权限。 此组件的默认模板使用需要执行以下各项的 "[管理员](person.md)" 组件。
+
+| 资源 | 权限 |
+| - | - |
+| [/users](/graph/api/user-list?view=graph-rest-1.0) | User.readbasic.all |
+| [/me/calendarview](/graph/api/user-list-contacts?view=graph-rest-1.0) | Contacts.Read |
 
 ## <a name="authentication"></a>身份验证
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: c0a1bac4fa0a80435d381d62aaa4b90df3352c33
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: 35759e9be3d2ea4aeade45f6e6b040a2b45f3be9
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986101"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183909"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
@@ -24,9 +24,10 @@ ms.locfileid: "42986101"
 
 | 方法         | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
-| [创建 onlineMeeting](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | 创建联机会议。 |
-| [获取 onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | 读取**onlineMeeting**对象的属性和关系。 |
-| [创建或获取 onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | 使用自定义外部 ID 创建联机会议。 如果会议已存在，请检索其 propertie。 |
+| [创建](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | 创建联机会议。 |
+| [获取](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | 读取**onlineMeeting**对象的属性和关系。 |
+| [创建或获取 onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | 使用自定义外部 ID 创建联机会议。 如果会议已存在，请检索其属性。 |
+| [更新](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | 更新联机会议的 " **startDateTime**"、" **endDateTime**"、"**主题**" 和 "**参与者**" 属性。 |
 
 ## <a name="properties"></a>属性
 
@@ -35,14 +36,14 @@ ms.locfileid: "42986101"
 | autoAdmittedUsers         | String                                                 | 指定将自动允许加入联机会议的参与者类型的设置。 可取值为：`everyone`、`everyoneInSameAndFederatedCompany`、`everyoneInCompany`、`invitedUsersInCompany`、`organizer`。 只读。|
 | audioConferencing         | [audioConferencing](audioconferencing.md)              | 联机会议的电话访问（拨入）信息。 只读。 |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | 与此联机会议关联的聊天信息。 |
-| creationDateTime          | 日期时间                                               | 以 UTC 表示的会议创建时间。 只读。 |
-| startDateTime             | 日期时间                                               | 以 UTC 表示的会议开始时间。 |
-| endDateTime               | 日期时间                                               | 以 UTC 表示的会议结束时间。 |
+| creationDateTime          | DateTime                                               | 以 UTC 表示的会议创建时间。 只读。 |
+| startDateTime             | DateTime                                               | 以 UTC 表示的会议开始时间。 |
+| endDateTime               | DateTime                                               | 以 UTC 表示的会议结束时间。 |
 | id                        | 字符串                                                 | 与联机会议关联的默认 ID。 只读。 |
 | joinWebUrl                   | String                                                 | 联机会议的加入 URL。 只读。|
 | participants              | [meetingParticipants](meetingparticipants.md)          | 与联机会议关联的参与者。  这包括组织者和与会者。 |
-| subject                   | String                                                 | 联机会议的主题。 |
-| capabilities              | String collection                                      | 会议功能的列表。 可能的值是`questionAndAnswer`：。 |
+| 主题                   | String                                                 | 联机会议的主题。 |
+| capabilities              | String 集合                                      | 会议功能的列表。 可能的值是： `questionAndAnswer` 。 |
 | videoTeleconferenceId     | String                                                 | 视频电话会议 ID。 只读。 |
 | joinInformation | [itemBody](itembody.md) | 在 "Accept-Language" 请求 HTTP 标头中指定的语言和区域设置变量形式的联接信息。 只读 |
 | externalId                | String                                                 | 外部 ID。 自定义 ID。 可选。 |

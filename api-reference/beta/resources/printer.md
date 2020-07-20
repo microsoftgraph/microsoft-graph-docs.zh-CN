@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 6573f17753a3c9b487324def9973bddd0759ed4b
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.openlocfilehash: ef636503c756d7a88321d723540ef47eaab65068
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091436"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183860"
 ---
 # <a name="printer-resource-type"></a>打印机资源类型
 
@@ -24,24 +24,24 @@ ms.locfileid: "45091436"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [创建](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | 创建 (注册) 具有通用打印的新打印机。 |
+| [创建](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | 创建（注册）具有通用打印的新打印机。 |
 | [获取](../api/printer-get.md) | [印刷](printer.md) | 读取 printer 对象的属性和关系。 |
 | [更新](../api/printer-update.md) | [印刷](printer.md) | 更新 printer 对象。 |
-| [删除](../api/printer-delete.md) | 无 | 在通用打印服务中注销物理 printerfrom。 |
+| [删除](../api/printer-delete.md) | 无 | 从通用打印服务注销物理打印机。 |
 | [getCapabilities](../api/printer-getcapabilities.md) | [printerCapabilities](printercapabilities.md) | 获取打印机的功能列表。 |
 | [resetDefaults](../api/printer-resetdefaults.md) | 无 | 重置打印机的默认设置。 |
 | [列出作业](../api/printer-list-jobs.md) | [printJob](printjob.md)集合 | 获取排队等待打印机处理的打印作业的列表。 |
 | [创建作业](../api/printer-post-jobs.md) | [printJob](printjob.md) | 为打印机创建一个新的打印作业。 若要开始打印作业，请使用[startPrintJob](../api/printjob-startprintjob.md)。 |
-| [列出连接器](../api/printer-list-connectors.md) | [printConnector](printconnector.md)集合 | 获取此打印机关联的连接器的列表。 |
+| [List connectors](../api/printer-list-connectors.md) | [printConnector](printconnector.md)集合 | 获取此打印机关联的连接器的列表。 |
 | [列出 allowedUsers](../api/printer-list-allowedusers.md) | [printUserIdentity](printuseridentity.md)集合 | 检索已授予访问权限以将打印作业提交到关联打印机的用户的列表。 |
 | [添加 allowedUser](../api/printer-post-allowedusers.md) | 无 | 向指定的用户授予向关联打印机提交打印作业的权限。 |
 | [删除 allowedUser](../api/printer-delete-alloweduser.md) | 无 | 撤销指定用户的打印机访问权限。 |
 | [列出 allowedGroups](../api/printer-list-allowedgroups.md) | [printIdentity](printidentity.md)集合 | 检索已向其授予将打印作业提交到关联打印机的访问权限的组列表。 |
 | [添加 allowedGroup](../api/printer-post-allowedgroups.md) | 无 | 向指定的组授予向关联打印机提交打印作业的权限。 |
 | [删除 allowedGroup](../api/printer-delete-allowedgroup.md) | 无 | 撤销指定组的打印机访问权限。 |
-| [列出 taskTriggers](../api/printer-list-tasktriggers.md) | 无 | 列出与此打印机关联的[printTaskTriggers](printtasktrigger.md) 。 |
-| [创建 taskTrigger](../api/printer-post-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) | 创建在打印事件发生时运行的[printTaskTrigger](printtasktrigger.md) 。 |
-| [删除 taskTrigger](../api/printer-delete-tasktrigger.md) | 无 | 删除与打印机关联的[printTaskTrigger](printtasktrigger.md) 。 |
+| [List taskTriggers](../api/printer-list-tasktriggers.md) | 无 | 列出与此打印机关联的[printTaskTriggers](printtasktrigger.md) 。 |
+| [Create taskTrigger](../api/printer-post-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) | 创建在打印事件发生时运行的[printTaskTrigger](printtasktrigger.md) 。 |
+| [Delete taskTrigger](../api/printer-delete-tasktrigger.md) | 无 | 删除与打印机关联的[printTaskTrigger](printtasktrigger.md) 。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
@@ -51,11 +51,11 @@ ms.locfileid: "45091436"
 |manufacturer|String|打印机报告的制造商。 只读。|
 |model|String|打印机报告的模型名称。 只读。|
 |registeredDateTime|DateTimeOffset|注册打印机时的 DateTimeOffset。 只读。|
-|status|[printerStatus](printerstatus.md)|打印机的处理状态，包括任何错误。 只读。|
+|状态|[printerStatus](printerstatus.md)|打印机的处理状态，包括任何错误。 只读。|
 |isShared|Boolean|如果打印机是共享的，则为 True;否则为 false。 只读。|
-|isAcceptingJobs|Boolean|打印机当前是否正在接受新的打印作业。|
+|isAcceptingJobs|布尔|打印机当前是否正在接受新的打印作业。|
 |位置|[printerLocation](printerlocation.md)|打印机的物理和/或组织位置。|
-|缺省值|[printerDefaults](printerdefaults.md)|打印机的默认打印设置。|
+|defaults|[printerDefaults](printerdefaults.md)|打印机的默认打印设置。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型        | 说明 |
@@ -95,7 +95,6 @@ ms.locfileid: "45091436"
   "status": {"@odata.type": "microsoft.graph.printerStatus"},
   "defaults": {"@odata.type": "microsoft.graph.printerDefaults"}
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
