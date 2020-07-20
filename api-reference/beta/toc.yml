@@ -190,7 +190,7 @@ items:
                 href: api/user-delete.md
               - name: 获取 Delta
                 href: api/user-delta.md
-          - name: 应用程序角色分配
+          - name: 应用角色分配
             href: resources/approleassignment.md
             items:
               - name: 列出应用程序角色分配
@@ -509,7 +509,7 @@ items:
                 href: api/group-update.md
               - name: 验证属性
                 href: api/group-validateproperties.md
-          - name: 应用程序角色分配
+          - name: 应用角色分配
             href: resources/approleassignment.md
             items:
               - name: 列出应用程序角色分配
@@ -861,9 +861,9 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: 列出 ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: delta
+              - name: 增量
                 href: api/serviceprincipal-delta.md
-              - name: 应用程序角色分配
+              - name: 应用角色分配
                 href: resources/approleassignment.md
                 items:
                   - name: 列出应用程序角色分配
@@ -1316,6 +1316,8 @@ items:
                 href: api/application-post-onlinemeetings.md
               - name: 获取
                 href: api/onlinemeeting-get.md
+              - name: 更新
+                href: api/onlinemeeting-patch.md
               - name: 删除
                 href: api/onlinemeeting-delete.md
               - name: 创建或获取
@@ -2127,7 +2129,7 @@ items:
                   - name: 托管的 Android LOB 应用
                     href: resources/intune-apps-managedandroidlobapp.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-apps-managedandroidlobapp-list.md
                       - name: 获取
                         href: api/intune-apps-managedandroidlobapp-get.md
@@ -2140,7 +2142,7 @@ items:
                   - name: 托管的 Android 应用商店应用
                     href: resources/intune-apps-managedandroidstoreapp.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-apps-managedandroidstoreapp-list.md
                       - name: 获取
                         href: api/intune-apps-managedandroidstoreapp-get.md
@@ -3418,7 +3420,7 @@ items:
                   - name: Android for Work 符合性策略
                     href: resources/intune-deviceconfig-androidforworkcompliancepolicy.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-deviceconfig-androidforworkcompliancepolicy-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-androidforworkcompliancepolicy-get.md
@@ -3433,7 +3435,7 @@ items:
                   - name: Android for Work 自定义配置
                     href: resources/intune-deviceconfig-androidforworkcustomconfiguration.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-deviceconfig-androidforworkcustomconfiguration-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-androidforworkcustomconfiguration-get.md
@@ -5978,7 +5980,7 @@ items:
                   - name: Windows 8.1 SCEP 证书配置文件
                     href: resources/intune-deviceconfig-windows81scepcertificateprofile.md
                     items:
-                      - name: 列表
+                      - name: 列出
                         href: api/intune-deviceconfig-windows81scepcertificateprofile-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-windows81scepcertificateprofile-get.md
@@ -5991,7 +5993,7 @@ items:
                   - name: Windows 8.1 信任的根证书
                     href: resources/intune-deviceconfig-windows81trustedrootcertificate.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/intune-deviceconfig-windows81trustedrootcertificate-list.md
                       - name: 获取
                         href: api/intune-deviceconfig-windows81trustedrootcertificate-get.md
