@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 919d8afb9f5456aff3fb5d9b6176f9690c3ae360
-ms.sourcegitcommit: 90aaba4e965945cb6550cf625cbc03287f39e531
+ms.openlocfilehash: e26203ef0a8846f611d570d98f30fd17dd6db4b3
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148555"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183916"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -22,13 +22,38 @@ ms.locfileid: "45148555"
 ### <a name="change-notifications"></a>更改通知
 已删除从 [changeNotification](/graph/api/resources/changenotification) 类型中错误引入的 **sequenceNumber** 资源。
 
+### <a name="groups"></a>组
+[group](/graph/api/resources/group?view=graph-rest-v1.0) 实体下列属性的通用版本：**assignedLabels**、**expirationDateTime**、**membershipRule**、**membershipRuleProcessingState**、**preferredLanguage** 和 **theme**。
+
+### <a name="identity-and-access"></a>身份和访问
+删除作为[设备](/graph/api/resources/device)的注册所有者或用户的用户。
+
 ### <a name="schema-extensions"></a>架构扩展
 [架构扩展](/graph/api/resources/schemaextension)的功能现在可在[Microsoft Cloud for US Government](/graph/deployments)使用。
 
 ## <a name="july-2020-new-in-preview-only"></a>2020 年 7 月：预览版新增功能
 
+### <a name="cloud-communications"></a>云通信
+订阅有关 Microsoft Teams 上用户可用性更改的通知，如[状态](/graph/api/resources/presence?view=graph-rest-beta)资源所示。
+
 ### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
-使用应用程序权限 `Printer.ReadWrite.All` 和 [Internet 打印协议（IPP）编码](https://tools.ietf.org/html/rfc8010)至 [更新打印机](/graph/api/printer-update?view=graph-rest-beta)。
+- 使用应用程序权限 `Printer.ReadWrite.All` 和 [Internet 打印协议（IPP）编码](https://tools.ietf.org/html/rfc8010)至[更新打印机](/graph/api/printer-update?view=graph-rest-beta)。
+- 使用以下应用权限之一、`PrintJob.ReadBasic.All`、`PrintJob.Read.All`、`PrintJob.ReadWriteBasic.All` 或 `PrintJob.ReadWrite.All`，来[获取打印作业](/graph/api/printjob-get?view=graph-rest-beta)或[列出打印机打印作业](/graph/api/printer-list-jobs?view=graph-rest-beta)。
+- [获取打印作业](/graph/api/printjob-get?view=graph-rest-beta)时，请使用 `$expand` 获取对作业正在执行或已执行的[打印作业](/graph/api/resources/printtask?view=graph-rest-beta)。 [截取打印](universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing)中使用打印任务、[任务定义](/graph/api/resources/printtaskdefinition?view=graph-rest-beta)、和[任务触发器](/graph/api/resources/printtasktrigger?view=graph-rest-beta)。
+- [重定向打印作业](/graph/api/printjob-redirect?view=graph-rest-beta)至其他打印机，作为截取打印的组成部分。
+
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
+Intune [7 月](changelog.md#july-2020)试用版更新。
+
+### <a name="identity-and-access"></a>身份和访问
+- 将用户风险级别（`low`、`medium`、`high`、`none`）包含为应用 [条件访问策略](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta)的注意事项。
+- [使用密码更改作为授予控制](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta#special-considerations-when-using-passwordchange-as-a-control)，以便传递条件访问策略。
+
+### <a name="people-and-workplace-intelligence--profile-card-customization"></a>人脉和工作区智能 |个人资料卡片自定义
+管理员可以使用[个人资料卡属性](/graph/api/resources/profilecardproperty?view=graph-rest-beta) API，[自定义显示在组织个人资料卡上的属性](add-properties-profilecard.md)。
+
+### <a name="workbooks-and-charts"></a>工作簿和图表
+[获取[工作簿](/graph/api/resources/workbook?view=graph-rest-beta)中长时间运行[操作](/graph/api/resources/workbookoperation?view=graph-rest-beta)的状态和任何结果](/graph/api/workbookoperation-get?view=graph-rest-beta)。
 
 ## <a name="june-2020-new-and-generally-available"></a>2020 年 6 月：新版本和正式版
 
@@ -73,7 +98,7 @@ ms.locfileid: "45148555"
 除了跟踪**calendarView**中事件的增量更改（集合或由 start _和_结束日期分隔的事件），请对用户邮箱中的事件或特定用户日历中的事件使用[delta](/graph/api/event-delta?view=graph-rest-beta)功能。
 
 ### <a name="cloud-communications--presence"></a>云通信 | 预览版
-[获取组织中所有用户的状态](/graph/api/presence-get?view=graph-rest-beta) 或 organization.grgr 中的特定用户的状态。 
+[获取组织中所有用户的状态](/graph/api/presence-get?view=graph-rest-beta) 或组织中特定用户的状态。
 
 ### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
 - 在配置 [文档进行打印](/graph/api/resources/printdocument?view=graph-rest-beta)时指定[打印页边距](/graph/api/resources/printmargin?view=graph-rest-beta)。

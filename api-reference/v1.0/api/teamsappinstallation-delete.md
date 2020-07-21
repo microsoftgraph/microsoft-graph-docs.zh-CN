@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 49202697c16236df9c06b7f2f36b49c8763b54a8
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 3c76d30436a17ac86530ac8498ee8c0e263c987f
+ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290427"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45197070"
 ---
 # <a name="remove-app-from-team"></a>从团队中删除应用
 
@@ -18,15 +18,15 @@ ms.locfileid: "44290427"
 
 从指定的[团队](../resources/team.md)中卸载[应用程序](../resources/teamsappinstallation.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All、Directory.ReadWrite.All |
+|委派（工作或学校帐户） | TeamsAppInstallation，ReadWriteForTeam，all，All，All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All、Directory.ReadWrite.All |
+|应用程序 | TeamsAppInstallation、ReadWriteForTeam、all、ReadWrite。所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

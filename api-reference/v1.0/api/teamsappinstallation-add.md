@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6198af51cd341898609b7b13b1a73384fef91c56
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: ea69b69718afefdaf54b80ac985598c9173081d8
+ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383915"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45197077"
 ---
 # <a name="add-app-to-team"></a>向团队添加应用
 
@@ -24,9 +24,9 @@ ms.locfileid: "44383915"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All、Directory.ReadWrite.All |
+|委派（工作或学校帐户） | TeamsAppInstallation，ReadWriteForTeam，all，All，All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All、Directory.ReadWrite.All |
+|应用程序 | TeamsAppInstallation、ReadWriteForTeam、all、ReadWrite。所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ POST /teams/{id}/installedApps
 
 ## <a name="request-body"></a>请求正文
 
-| 属性   | 类型 |Description|
+| 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |teamsApp| [teamsApp](../resources/teamsapp.md) |要添加的应用程序。|
 

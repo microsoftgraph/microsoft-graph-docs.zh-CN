@@ -3,12 +3,12 @@ title: 将 Android 应用与用户通知客户端 SDK 相集成
 description: 将 Android 应用与用户通知客户端 SDK 相集成
 localization_priority: Priority
 ms.prod: Microsoft Graph notifications
-ms.openlocfilehash: 69edda814508d69e47f8d70bd81df9425621aa0a
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 4463b89bf95d7b874299542596a3803007406e55
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969536"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183944"
 ---
 # <a name="integrate-your-android-app-with-the-client-side-sdk-for-user-notifications"></a>将 Android 应用与用户通知客户端 SDK 相集成
 
@@ -166,7 +166,6 @@ private void onAccessTokenRequested(ConnectedDevicesAccountManager sender, Conne
 private void onAccessTokenInvalidated(ConnectedDevicesAccountManager sender, ConnectedDevicesAccessTokenInvalidatedEventArgs args, List<Account> accounts) {
     Log.i(TAG, "Token invalidated for account: " + args.getAccount().getId());
 }
-
 ```
 
 ### <a name="handling-push-registration-expiration"></a>处理推送注册过期 
@@ -358,7 +357,6 @@ notification.saveAsync().whenCompleteAsync((userNotificationUpdateResult, throwa
         Log.d(TAG, "Successfully activated the notification");
     }
 });
-
 ```
 
 ### <a name="delete-a-notification"></a>删除通知

@@ -4,12 +4,12 @@ description: Microsoft Graph 提供可选的查询参数，可用于指定和控
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 3788478ff71ae103b912c5dd2a856c8fb85d23dc
-ms.sourcegitcommit: 90aaba4e965945cb6550cf625cbc03287f39e531
+ms.openlocfilehash: bd87841a6c7a46d485c7ccd2b0f601f012712f63
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148507"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183839"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -226,7 +226,21 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 
 [在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
- > **注意：** 使用从 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) 派生的 Azure AD 资源（如 [user](/graph/api/resources/user?view=graph-rest-1.0) 和 [group](/graph/api/resources/group?view=graph-rest-1.0)），则不能合并 `$orderby` 与 `$filter` 表达式。 
+> **注意：** 对于以下 AD 资源及其从 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) 派生的关系，在 Beta 终结点上支持组合 `$orderby` 和 `$filter` 查询参数：
+>
+>- [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-beta)
+>- [orgContact](https://docs.microsoft.com/graph/api/resources/orgcontact?view=graph-rest-beta)
+>- [设备](https://docs.microsoft.com/graph/api/resources/device?view=graph-rest-beta)
+>- [组](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-beta)
+>- [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta)
+>- [用户](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta)
+>
+> 要同时使用 `$orderby` 和 `$filter`，需要：
+>
+> - 将 `$count=true` 添加到查询参数
+> - 添加 `ConsistencyLevel: eventual` 请求标题
+>
+> 有关更多信息，请参见[可选用户查询参数](/graph/api/user-list?view=graph-rest-beta&tabs=http#optional-query-parameters)。
 
 ## <a name="search-parameter"></a>search 参数
 
