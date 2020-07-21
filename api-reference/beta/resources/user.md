@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 3905e7165503c235b4b015ba09bec8af4c4ee6aa
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: MT
+ms.openlocfilehash: 921ba639519253e3ecfdde5e59bca54a2ec71175
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44864082"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45183664"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "44864082"
 
 表示 Azure AD 用户帐户。继承自 [directoryObject](directoryobject.md)。
 
-**用户**资源允许应用指定语言的用户首选项，以及用户的主 Exchange 邮箱和用户的 Azure AD 配置文件的日期/时间格式。 有关更多详细信息，请参阅[适用于语言和区域格式的用户首选项](#user-preferences-for-languages-and-regional-formats)。
+**用户**资源允许应用指定语言的用户首选项，以及用户主要 Exchange 邮箱和 Azure AD 配置文件的日期/时间格式。 了解更多信息，请参阅 [语言和区域格式的用户首选项](#user-preferences-for-languages-and-regional-formats)。
 
 出于性能原因，默认情况下 [create](../api/user-post-users.md)、[get](../api/user-get.md) 和 [list](../api/user-list.md) 操作仅返回更常用属性的子集。 这些默认属性将记录在[属性](#properties)部分中。 若要获取非默认返回的任一属性，请在 `$select` OData 查询选项中指定这些属性。
 
@@ -32,119 +32,119 @@ ms.locfileid: "44864082"
 
 ## <a name="methods"></a>方法
 
-| 方法                                                                                     | 返回类型                                                                      | 说明                                                                                                                                                                       |
-|:-------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [List users](../api/user-list.md)                                                          | [user](user.md) 集合                                                       | 获取用户对象列表。                                                                                                                                                       |
-| [Create user](../api/user-post-users.md)                                                   | [user](user.md)                                                                  | 新建用户对象。                                                                                                                                                         |
-| [Get user](../api/user-get.md)                                                             | [user](user.md)                                                                  | 读取 user 对象的属性和关系。                                                                                                                                 |
-| [Update user](../api/user-update.md)                                                       | [用户](user.md)                                                                  | 更新 user 对象。                                                                                                                                                               |
-| [Delete user](../api/user-delete.md)                                                       | None                                                                             | 删除 user 对象。                                                                                                                                                               |
-| [Get delta](../api/user-delta.md)                                                          | 用户集合                                                                  | 获取用户的增量更改。                                                                                                                                                |
-| **应用程序角色分配**                                                                   |                                                                                  |                                                                                                                                                                                   |
-| [列出 appRoleAssignments](../api/user-list-approleassignments.md)                          | [appRoleAssignment](approleassignment.md) 集合                             | 获取已分配此用户的应用和应用角色。                                                                                                                     |
-| [添加 appRoleAssignment](../api/user-post-approleassignments.md)                            | [appRoleAssignment](approleassignment.md)                                        | 向此用户分配应用程序角色。                                                                                                                                                  |
-| [删除 appRoleAssignment](../api/user-delete-approleassignments.md)                       | 无                                                                             | 从此用户中删除应用程序角色分配。                                                                                                                                     |
-| **Calendar**                                                                               |                                                                                  |                                                                                                                                                                                   |
-| [Create calendar](../api/user-post-calendars.md)                                           | [Calendar](calendar.md)                                                          | 通过发布到日历集合创建新日历。                                                                                                                     |
-| [Create calendarGroup](../api/user-post-calendargroups.md)                                 | [CalendarGroup](calendargroup.md)                                                | 通过发布到 calendarGroups 集合新建 CalendarGroup。                                                                                                           |
-| [Create event](../api/user-post-events.md)                                                 | [event](event.md)                                                                | 通过发布到事件集合新建事件。                                                                                                                           |
-| [findMeetingTimes](../api/user-findmeetingtimes.md)                                        | [meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md)                  | 基于与会者忙闲状态、位置或时间限制查找会议时间和位置。                                                                                    |
-| [findRooms](../api/user-findrooms.md)                                                      | [emailaddress.md](emailaddress.md) 集合                                    | 获取用户租户中或特定房间列表中的所有会议室。                                                                                                        |
-| [findRoomLists](../api/user-findroomlists.md)                                              | [emailaddress.md](emailaddress.md) 集合                                    | 获取租户中定义的会议室列表。                                                                                                                                           |
-| [getSchedule](../api/calendar-getschedule.md)                                              | [scheduleInformation](scheduleinformation.md)                                    | 获取用户、通讯组列表或资源（会议室或设备）在指定时间段内的忙/闲状态信息。                         |
-| [List calendars](../api/user-list-calendars.md)                                            | [Calendar](calendar.md) collection                                               | 获取 Calendar 对象集合。                                                                                                                                                 |
-| [List calendarGroups](../api/user-list-calendargroups.md)                                  | [CalendarGroup](calendargroup.md) collection                                     | 获取 CalendarGroup 对象集合。                                                                                                                                            |
-| [List calendarView](../api/user-list-calendarview.md)                                      | [event](event.md) 集合                                                     | 获取 event 对象集合。                                                                                                                                                   |
-| [List events](../api/user-list-events.md)                                                  | [event](event.md) 集合                                                     | 获取用户邮箱中的 event 对象列表。该列表包含单个实例会议和系列主控形状。                                                                 |
-| [reminderView](../api/user-reminderview.md)                                                | [Reminder](reminder.md) collection                                               | 返回指定开始时间和结束时间范围内的日历提醒列表。                                                                                                     |
-| **联系人**                                                                               |                                                                                  |                                                                                                                                                                                   |
-| [创建联系人](../api/user-post-contacts.md)                                             | [contact](contact.md)                                                            | 通过发布到联系人集合创建新联系人。                                                                                                                       |
-| [创建 contactFolder](../api/user-post-contactfolders.md)                                 | [contactFolder](contactfolder.md)                                                | 通过发布到 contactFolders 集合创建新 contactFolder。                                                                                                           |
-| [List contacts](../api/user-list-contacts.md)                                              | [contact](contact.md) 集合                                                 | 从已登录用户的默认联系人文件夹中获取联系人集合。                                                                                                  |
-| [List contactFolders](../api/user-list-contactfolders.md)                                  | [ContactFolder](contactfolder.md) 集合                                     | 获取已登录用户的默认联系人文件夹中的联系人文件夹集合。                                                                                           |
-| **目录对象**                                                                      |                                                                                  |                                                                                                                                                                                   |
-| [assignLicense](../api/user-assignlicense.md)                                              | [user](user.md)                                                                  | 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。                                                          |
-| [checkMemberGroups](../api/user-checkmembergroups.md)                                      | String collection                                                                | 检查组列表中的成员身份。检查是可传递的。                                                                                                                |
-| [checkMemberObjects](../api/user-checkmemberobjects.md)                                    | String 集合                                                                | 检查组、目录角色或管理单元对象列表中的成员身份。 检查是可传递的。                                                                 |
-| [exportPersonalData](../api/user-exportpersonaldata.md)                                    | 无                                                                             | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。                                                                 |
-| [getByIds](../api/directoryobject-getbyids.md)                                             | String collection                                                                | 返回 ID 列表中指定的目录对象。                                                                                                                         |
-| [getMemberGroups](../api/user-getmembergroups.md)                                          | String 集合                                                                | 返回用户是其成员的所有组。检查是可传递的。                                                                                                      |
-| [getMemberObjects](../api/user-getmemberobjects.md)                                        | String 集合                                                                | 返回用户所属的所有组、目录角色和管理单元。 检查是可传递的。                                                           |
-| [List createdObjects](../api/user-list-createdobjects.md)                                  | [directoryObject](directoryobject.md) collection                                 | 从 createdObjects 导航属性中获取此用户创建的目录对象。                                                                                        |
-| [List licenseDetails](../api/user-list-licensedetails.md)                                  | [licenseDetails](licensedetails.md) 集合                                   | 获取 licenseDetails 对象集合。                                                                                                                                           |
-| [List ownedDevices](../api/user-list-owneddevices.md)                                      | [directoryObject](directoryobject.md) collection                                 | 从 ownedDevices 导航属性中获取此用户所拥有的设备。                                                                                             |
-| [List ownedObjects](../api/user-list-ownedobjects.md)                                      | [directoryObject](directoryobject.md) 集合                                 | 从 ownedObjects 导航属性中获取此用户所拥有的目录对象。                                                                                   |
-| [List registeredDevices](../api/user-list-registereddevices.md)                            | [directoryObject](directoryobject.md) 集合                                 | 从 registeredDevices 导航属性中获取为此用户注册的设备。                                                                                  |
-| [List scoped-role memberships](../api/user-list-scopedrolememberof.md)                     | [scopedRoleMembership](scopedrolemembership.md) 集合                       | 获取此用户的作用域角色管理单元成员身份。                                                                                                               |
-| [reprocessLicense](../api/user-reprocesslicenseassignment.md)                              | [user](user.md)                                                                  | 重新处理用户的订阅分配。                                                                                                                                  |
-| [revokeSignInSessions](../api/user-revokesigninsessions.md)                                | 无                                                                             | 通过将 **signInSessionsValidFromDateTime** 用户属性重置为当前的日期时间来吊销向应用程序发出的用户的所有刷新和会话令牌。 这将强制用户再次登录到这些应用程序。 此方法将替换 **invalidateAllRefreshTokens**。 |
-| **Drive**                                                                                  |                                                                                  |                                                                                                                                                                                   |
-| [获取驱动器](../api/drive-get.md)                                                           | [drive](drive.md)                                                                | 检索驱动器资源的属性和关系。                                                                                                                    |
-| [列出子项](../api/driveitem-list-children.md)                                         | [DriveItems](driveitem.md)                                                       | 在 DriveItem 的子项关系中返回 DriveItems 集合。                                                                                                    |
-| **组**                                                                                 |                                                                                  |                                                                                                                                                                                   |
-| [List joinedTeams](../api/user-list-joinedteams.md)                                        | [团队](team.md) 集合                                                       | 从 joinedTeams 导航属性中获取此用户直接所属的 Microsoft Teams 团队。                                                                       |
-| [List memberOf](../api/user-list-memberof.md)                                              | [directoryObject](directoryobject.md) 集合                                 | 从 memberOf 导航属性中获取此用户直接所属的组、目录角色和管理单元。                                              |
-| [List transitive memberOf](../api/user-list-transitivememberof.md)                         | [directoryObject](directoryobject.md) 集合                                 | 列出用户所属的所有组、目录角色和管理单元。 此操作是可传递的，并包括用户以嵌套方式所属的组。 |
-| **见解**                                                                               |                                                                                  |                                                                                                                                                                                   |
-| [共享的列表](../api/insights-list-shared.md)                                              | [sharedInsight](insights-shared.md) 集合                                   | 计算得出的见解，可返回与用户共享的文件列表。                                                                                                             |
-| [列出趋势](../api/insights-list-trending.md)                                          | [trending](insights-trending.md) 集合                                      | 计算得出的见解，可返回用户常用的项目列表。                                                                                                       |
-| [使用的列表](../api/insights-list-used.md)                                                  | [usedInsight](insights-used.md) 集合                                       | 计算得出的见解，可返回用户使用的文件列表。                                                                                                               |
-| **邮件**                                                                                   |                                                                                  |                                                                                                                                                                                   |
-| [创建 inferenceClassificationOverride](../api/inferenceclassification-post-overrides.md) | 创建由 SMTP 地址识别的发件人的重点收件箱替代。      |                                                                                                                                                                                   |
-| [Create mailFolder](../api/user-post-mailfolders.md)                                       | [mailFolder](mailfolder.md)                                                      | 通过发布到 mailFolders 集合创建新 mailFolder。                                                                                                                 |
-| [创建邮件](../api/user-post-messages.md)                                             | [message](message.md)                                                            | 通过发布到邮件集合创建邮件。                                                                                                                           |
-| [创建 messageRule](../api/mailfolder-post-messagerules.md)                               | [messageRule](messagerule.md)                                                    | 通过指定一组条件和操作来创建 messageRule 对象。                                                                                                        |
-| [getMailTips](../api/user-getmailtips.md)                                                  | [邮件提醒](mailtips.md)集合                                               | 返回向已登录用户提供的一个或多个收件人的邮件提醒。                                                                                                 |
-| [List mailFolders](../api/user-list-mailfolders.md)                                        | [mailFolder](mailfolder.md) 集合                                           | 在已登录用户的根文件夹下获取邮件文件夹集合。                                                                                                       |
-| [列出邮件](../api/user-list-messages.md)                                              | [message](message.md) 集合                                                 | 获取已登录用户的邮箱中的所有邮件。                                                                                                                             |
-| [列出替代](../api/inferenceclassification-list-overrides.md)                         | [inferenceClassificationOverride](inferenceclassificationoverride.md) 集合 | 获取用户设置为始终以特定方式对来自特定发件人的邮件进行分类的重点收件箱替代。                                                         |
-| [List rules](../api/mailfolder-list-messagerules.md)                                       | [messageRule](messagerule.md) 集合                                         | 获取为用户收件箱定义的所有 messageRule 对象。                                                                                                                     |
-| [发送邮件](../api/user-sendmail.md)                                                       | 无                                                                             | 发送请求正文中指定的邮件。                                                                                                                                   |
-| **备注**                                                                                  |                                                                                  |                                                                                                                                                                                   |
-| [创建笔记本](../api/onenote-post-notebooks.md)                                        | [笔记本](notebook.md)                                                          | 新建 OneNote 笔记本。                                                                                                                                                    |
-| [列出笔记本](../api/onenote-list-notebooks.md)                                         | [notebook](notebook.md) 集合                                               | 检索 notebook 对象列表。                                                                                                                                              |
-| **开放扩展**                                                                        |                                                                                  |                                                                                                                                                                                   |
-| [创建开放扩展](../api/opentypeextension-post-opentypeextension.md)                | [openTypeExtension](opentypeextension.md)                                        | 创建开放扩展，并将自定义属性添加到新资源或现有资源。                                                                                                 |
-| [获取开放扩展](../api/opentypeextension-get.md)                                      | [openTypeExtension](opentypeextension.md) 集合                             | 获取扩展名称标识的开放扩展。                                                                                                                           |
-| **组织层次结构**                                                                          |                                                                                  |                                                                                                                                                                                   |
-| [分配经理](../api/user-post-manager.md)                                              | 无                                                                             | 分配用户的经理。                                                                                                                                                          |
-| [获取经理](../api/user-list-manager.md)                                                 | [directoryObject](directoryobject.md)                                            | 从 manager 导航属性中获取是此用户的经理的用户或联系人。                                                                                         |
-| [List directReports](../api/user-list-directreports.md)                                    | [directoryObject](directoryobject.md) collection                                 | 从 directReports 导航属性中获取向此用户报告的用户和联系人。                                                                                    |
-| **Outlook 设置**                                                                       |                                                                                  |                                                                                                                                                                                   |
-| [创建 Outlook 类别](../api/outlookuser-post-mastercategories.md)                     | [outlookCategory](outlookcategory.md)                                            | 在用户主类别列表中创建 outlookCategory 对象。                                                                                                         |
-| [获取 supportedLanguages](../api/outlookuser-supportedlanguages.md)                         | [localeInfo](localeinfo.md) 集合                                           | 获取用户支持的区域设置和语言列表，用户的邮箱服务器上配置了此信息。                                                                |
-| [获取 supportedTimeZones](../api/outlookuser-supportedtimezones.md)                         | [timeZoneInformation](timezoneinformation.md collection)                         | 获取用户支持的时区列表，就像在用户的邮箱服务器上配置的那样。                                                                           |
-| [获取用户的邮箱设置](../api/user-get-mailboxsettings.md)                            | [mailboxSettings](mailboxsettings.md)                                            | 获取用户的 mailboxSettings。                                                                                                                                                   |
-| [列出 Outlook 类别](../api/outlookuser-list-mastercategories.md)                     | [outlookCategory](outlookcategory.md) 集合                                 | 获取为用户定义的所有类别。                                                                                                                       |
-| [转换 Exchange ID](../api/user-translateexchangeids.md)                              | [convertIdResult](convertidresult.md) 集合                                 | 对与 Outlook 相关的资源的标识符进行格式转换。                                                                                                               |
-| [更新用户邮箱设置](../api/user-update-mailboxsettings.md)                      | [mailboxSettings](mailboxsettings.md)                                            | 启用、配置或禁用一个或多个用户的 mailboxSettings。                                                                                                                 |
-| **Outlook 任务**                                                                          |                                                                                  |                                                                                                                                                                                   |
-| [创建 outlookTask](../api/outlookuser-post-tasks.md)                                     | [outlookTask](outlooktask.md)                                                    | 在用户邮箱的默认任务组（“我的任务”）和默认任务文件夹（“任务”）中创建 Outlook 任务。                                                                |
-| [列出任务](../api/outlookuser-list-tasks.md)                                             | [outlookTask](outlooktask.md) 集合                                         | 获取用户邮箱中的所有 Outlook 任务。                                                                                                                                  |
-| **人员**                                                                                 |                                                                                  |                                                                                                                                                                                   |
-| [列出人员](../api/user-list-people.md)                                                  | [person](person.md)                                                              | 检索 person 对象列表，这些对象按与 user 的相关程度进行排序，相关程度由用户的通信和协作模式以及业务关系决定。 |
-| **照片**                                                                                  |                                                                                  |                                                                                                                                                                                   |
-| [获取照片](../api/profilephoto-get.md)                                                    | [profilePhoto](profilephoto.md)                                                  | 获取指定的 profilePhoto 或其元数据（profilePhoto 属性）。                                                                                                         |
-| [更新 profilephoto](../api/profilephoto-update.md)                                       | 无                                                                             | 更新租户中任意用户的照片，其中包括已登录用户或指定的组或联系人。                                                                      |
-| **Planner**                                                                                |                                                                                  |                                                                                                                                                                                   |
-| [获取 plannerUser](../api/planneruser-get.md)                                               | [plannerUser](planneruser.md)                                                    | 检索 plannerUser 对象的属性和关系。                                                                                                                |
-| [列出 favoritePlans](../api/planneruser-list-favoriteplans.md)                             | [plannerPlan](plannerplan.md) 集合                                         | 检索由用户标记为收藏的 plannerPlans 列表。                                                                                                            |
-| [列出 recentPlans](../api/planneruser-list-recentplans.md)                                 | [plannerPlan](plannerplan.md) 集合                                         | 检索用户最近查看的 plannerPlans 列表。                                                                                                                        |
-| [List tasks](../api/planneruser-list-tasks.md)                                             | [plannerTask](plannertask.md) 集合                                         | 获取分配给此用户的 plannerTasks。                                                                                                                                            |
-| [更新 plannerUser](../api/planneruser-update.md)                                         | 无                                                                             | 更新 plannerUser 对象的属性。                                                                                                                                    |
-| **个人资料**                                                                                |                                                                                  |                                                                                                                                                                                   |
-| [获取个人资料](../api/profile-get.md)                                                       | [profile](profile.md)                                                            | 检索给定用户的 profile 对象的属性和关系。                                                                                                   |
-| [删除个人资料](../api/profile-delete.md)                                                 | 无                                                                             | 从用户帐户中删除 profile 对象。                                                                                                                                      |
-| **架构扩展**                                                                      |                                                                                  |                                                                                                                                                                                   |
-| [添加架构扩展值](/graph/extensibility-schema-groups)                          | 无                                                                             | 创建架构扩展定义，然后使用它向资源添加自定义键入数据。                                                                                      |
-| **Teamwork**                                                                               |                                                                                  |                                                                                                                                                                                   |
-| [为用户安装应用](../api/user-add-teamsappinstallation.md)                            | 无                                                                             | 在指定用户的个人范围内安装应用。                                                                                                                       |
-| [列出为用户安装的应用](../api/user-list-teamsappinstallation.md)                   | [teamsAppInstallation](teamsappinstallation.md)                                  | 检索在指定用户的个人范围内安装的应用列表。                                                                                                  |
-| [升级应用](../api/user-upgrade-teamsappinstallation.md)                                 | 无                                                                             | 将指定用户的个人范围内的应用安装升级到该应用的最新版本。                                                                         |
-| [为用户卸载应用](../api/user-delete-teamsappinstallation.md)                       | 无                                                                             | 卸载指定用户的个人范围内的应用。                                                                                                                   |
-| **用户设置**                                                                          |                                                                                  |                                                                                                                                                                                   |
-| [获取设置](../api/usersettings-get.md)                                                 | [userSettings](usersettings.md)                                                  | 阅读用户和组织设置对象。                                                                                                                                   |
-| [更新设置](../api/usersettings-update.md)                                           | [userSettings](usersettings.md)                                                  | 更新 settings 对象的属性。                                                                                                                                     |
+| 方法 | 返回类型 | 说明 |
+|:------ |:----------- |:----------- |
+| [List users](../api/user-list.md) | [user](user.md) 集合 | 获取用户对象列表。 |
+| [Create user](../api/user-post-users.md) | [user](user.md) | 新建用户对象。 |
+| [Get user](../api/user-get.md) | [user](user.md) | 读取 user 对象的属性和关系。 |
+| [Update user](../api/user-update.md) | [user](user.md) | 更新 user 对象。 |
+| [Delete user](../api/user-delete.md) | None | 删除 user 对象。 |
+| [Get delta](../api/user-delta.md) | 用户集合 | 获取用户的增量更改。 |
+| **应用角色分配**|||
+| [列出 appRoleAssignments](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) 集合 | 获取分配给此用户的应用和应用角色。 |
+| [添加 appRoleAssignment](../api/user-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | 为此用户分配应用角色。 |
+| [删除应用角分配](../api/user-delete-approleassignments.md) | 无 | 删除分配给此用户的应用角色。 |
+| **Calendar** |||
+| [Create calendar](../api/user-post-calendars.md) | [Calendar](calendar.md) | 通过发布到日历集合创建新日历。 |
+| [Create calendarGroup](../api/user-post-calendargroups.md) | [CalendarGroup](calendargroup.md) | 通过发布到 calendarGroups 集合新建 CalendarGroup。 |
+| [Create event](../api/user-post-events.md) | [event](event.md) | 通过发布到事件集合新建事件。 |
+| [findMeetingTimes](../api/user-findmeetingtimes.md) | [meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) | 基于与会者忙闲状态、位置或时间限制查找会议时间和位置。 |
+| [findRooms](../api/user-findrooms.md) | [emailaddress.md](emailaddress.md) 集合 | 获取用户租户中或特定房间列表中的所有会议室。 |
+| [findRoomLists](../api/user-findroomlists.md) | [emailaddress.md](emailaddress.md) 集合 | 获取租户中定义的会议室列表。 |
+| [getSchedule](../api/calendar-getschedule.md) | [scheduleInformation](scheduleinformation.md) | 获取用户、通讯组列表或资源（会议室或设备）在指定时间段内的忙/闲状态信息。 |
+| [List calendars](../api/user-list-calendars.md) | [Calendar](calendar.md) collection | 获取 Calendar 对象集合。 |
+| [List calendarGroups](../api/user-list-calendargroups.md) | [CalendarGroup](calendargroup.md) collection | 获取 CalendarGroup 对象集合。 |
+| [List calendarView](../api/user-list-calendarview.md) | [event](event.md) 集合 | 获取 event 对象集合。 |
+| [List events](../api/user-list-events.md) | [event](event.md) 集合 | 获取用户邮箱中的 event 对象列表。该列表包含单个实例会议和系列主控形状。 |
+| [reminderView](../api/user-reminderview.md) | [Reminder](reminder.md) collection | 返回指定开始时间和结束时间范围内的日历提醒列表。|
+| **联系人**|||
+| [创建联系人](../api/user-post-contacts.md)| [contact](contact.md) | 通过发布到联系人集合创建新联系人。 |
+| [创建 contactFolder](../api/user-post-contactfolders.md) | [contactFolder](contactfolder.md) | 通过发布到 contactFolders 集合创建新 contactFolder。 |
+| [List contacts](../api/user-list-contacts.md) | [contact](contact.md) 集合 | 从已登录用户的默认联系人文件夹中获取联系人集合。 |
+| [List contactFolders](../api/user-list-contactfolders.md) | [ContactFolder](contactfolder.md) 集合 | 获取已登录用户的默认联系人文件夹中的联系人文件夹集合。 |
+| **目录对象**|||
+| [assignLicense](../api/user-assignlicense.md) | [user](user.md) | 为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。 |
+| [checkMemberGroups](../api/user-checkmembergroups.md) | String collection | 检查组列表中的成员身份。检查是可传递的。 |
+| [checkMemberObjects](../api/user-checkmemberobjects.md) | String 集合 | 检查组、目录角色或管理单元对象列表中的成员身份。 检查是可传递的。 |
+| [exportPersonalData](../api/user-exportpersonaldata.md) | 无 | 提交公司管理员发出的数据策略操作请求，以导出组织用户的数据。 |
+| [getByIds](../api/directoryobject-getbyids.md) | 字符串集合 | 返回 ID 列表中指定的目录对象。 |
+| [getMemberGroups](../api/user-getmembergroups.md) | String collection | 返回用户是其成员的所有组。检查是可传递的。 |
+| [getMemberObjects](../api/user-getmemberobjects.md) | String 集合 | 返回用户所属的所有组、目录角色和管理单元。 检查是可传递的。 |
+| [List createdObjects](../api/user-list-createdobjects.md) | [directoryObject](directoryobject.md) collection | 从 createdObjects 导航属性中获取此用户创建的目录对象。 |
+| [List licenseDetails](../api/user-list-licensedetails.md) | [licenseDetails](licensedetails.md) 集合 | 获取 licenseDetails 对象集合。 |
+| [List ownedDevices](../api/user-list-owneddevices.md) | [directoryObject](directoryobject.md) collection | 从 ownedDevices 导航属性中获取此用户所拥有的设备。 |
+| [List ownedObjects](../api/user-list-ownedobjects.md) | [directoryObject](directoryobject.md) collection | 从 ownedObjects 导航属性中获取此用户所拥有的目录对象。 |
+| [List registeredDevices](../api/user-list-registereddevices.md) | [directoryObject](directoryobject.md) 集合 | 从 registeredDevices 导航属性中获取为此用户注册的设备。 |
+| [List scoped-role memberships](../api/user-list-scopedrolememberof.md) | [scopedRoleMembership](scopedrolemembership.md) 集合 | 获取此用户的作用域角色管理单元成员身份。 |
+| [reprocessLicense](../api/user-reprocesslicenseassignment.md) | [user](user.md) | 重新处理用户的订阅分配。 |
+| [revokeSignInSessions](../api/user-revokesigninsessions.md) | 无 | 通过将 **signInSessionsValidFromDateTime** 用户属性重置为当前的日期时间来吊销向应用程序发出的用户的所有刷新和会话令牌。 这将强制用户再次登录到这些应用程序。 此方法将替换 **invalidateAllRefreshTokens**。 |
+| **Drive** |||
+| [获取驱动器](../api/drive-get.md) | [drive](drive.md) | 检索驱动器资源的属性和关系。 |
+| [列出子项](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | 在 DriveItem 的子项关系中返回 DriveItems 集合。 |
+| **组** |||
+| [List joinedTeams](../api/user-list-joinedteams.md) | [团队](team.md) 集合 | 从 joinedTeams 导航属性中获取此用户直接所属的 Microsoft Teams 团队。 |
+| [List memberOf](../api/user-list-memberof.md) | [directoryObject](directoryobject.md) 集合 | 从 memberOf 导航属性中获取此用户直接所属的组、目录角色和管理单元。 |
+| [List transitive memberOf](../api/user-list-transitivememberof.md) | [directoryObject](directoryobject.md) 集合 | 列出用户所属的所有组、目录角色和管理单元。 此操作是可传递的，并包括用户以嵌套方式所属的组。 |
+| **见解** |||
+| [共享的列表](../api/insights-list-shared.md) | [sharedInsight](insights-shared.md) 集合 | 计算得出的见解，可返回与用户共享的文件列表。 |
+| [列出趋势](../api/insights-list-trending.md) | [trending](insights-trending.md) 集合 | 计算得出的见解，可返回用户常用的项目列表。 |
+| [使用的列表](../api/insights-list-used.md) | [usedInsight](insights-used.md) 集合 | 计算得出的见解，可返回用户使用的文件列表。 |
+| **邮件** |||
+| [创建 inferenceClassificationOverride](../api/inferenceclassification-post-overrides.md) | 无 | 创建由 SMTP 地址识别的发件人的重点收件箱替代。 |
+| [Create mailFolder](../api/user-post-mailfolders.md) | [mailFolder](mailfolder.md) | 通过发布到 mailFolders 集合创建新 mailFolder |
+| [创建邮件](../api/user-post-messages.md) | [message](message.md) | 通过发布到邮件集合创建邮件。 |
+| [创建 messageRule](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) | 通过指定一组条件和操作来创建 messageRule 对象。 |
+| [getMailTips](../api/user-getmailtips.md) | [邮件提醒](mailtips.md)集合 | 返回向已登录用户提供的一个或多个收件人的邮件提醒。 |
+| [List mailFolders](../api/user-list-mailfolders.md) | [mailFolder](mailfolder.md) 集合 | 在已登录用户的根文件夹下获取邮件文件夹集合。 |
+| [列出邮件](../api/user-list-messages.md) | [message](message.md) 集合 | 获取已登录用户的邮箱中的所有邮件。 |
+| [列出替代](../api/inferenceclassification-list-overrides.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) 集合 | 获取用户设置为始终以特定方式对来自特定发件人的邮件进行分类的重点收件箱替代。 |
+| [List rules](../api/mailfolder-list-messagerules.md) | [messageRule](messagerule.md) 集合 | 获取为用户收件箱定义的所有 messageRule 对象。 |
+| [发送邮件](../api/user-sendmail.md) | 无 | 发送请求正文中指定的邮件。 |
+| **备注** |||
+| [创建笔记本](../api/onenote-post-notebooks.md) | [笔记本](notebook.md) | 新建 OneNote 笔记本。 |
+| [列出笔记本](../api/onenote-list-notebooks.md) | [notebook](notebook.md) 集合 | 检索 notebook 对象列表。 |
+| **开放扩展** |||
+| [创建开放扩展](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) | 创建开放扩展，并将自定义属性添加到新资源或现有资源。 |
+| [获取开放扩展](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) 集合 | 获取扩展名称标识的开放扩展。 |
+| **组织层次结构** |||
+| [分配经理](../api/user-post-manager.md) | 无 | 分配用户的经理。 |
+| [获取经理](../api/user-list-manager.md) | [directoryObject](directoryobject.md) | 从 manager 导航属性中获取是此用户的经理的用户或联系人。 |
+| [List directReports](../api/user-list-directreports.md) | [directoryObject](directoryobject.md) collection | 从 directReports 导航属性中获取向此用户报告的用户和联系人。 |
+| **Outlook 设置** |||
+| [创建 Outlook 类别](../api/outlookuser-post-mastercategories.md) | [outlookCategory](outlookcategory.md) | 在用户主类别列表中创建 outlookCategory 对象。 |
+| [获取 supportedLanguages](../api/outlookuser-supportedlanguages.md) | [localeInfo](localeinfo.md) 集合 | 获取用户支持的区域设置和语言列表，用户的邮箱服务器上配置了此信息。 |
+| [获取 supportedTimeZones](../api/outlookuser-supportedtimezones.md) | [timeZoneInformation](timezoneinformation.md collection) | 获取用户支持的时区列表，就像在用户的邮箱服务器上配置的那样。 |
+| [获取用户的邮箱设置](../api/user-get-mailboxsettings.md) | [mailboxSettings](mailboxsettings.md) | 获取用户的 mailboxSettings。 |
+| [列出 Outlook 类别](../api/outlookuser-list-mastercategories.md) | [outlookCategory](outlookcategory.md) 集合                                 | 获取为用户定义的所有类别。 |
+| [转换 Exchange ID](../api/user-translateexchangeids.md) | [convertIdResult](convertidresult.md) 集合 | 对与 Outlook 相关的资源的标识符进行格式转换。 |
+| [更新用户邮箱设置](../api/user-update-mailboxsettings.md) | [mailboxSettings](mailboxsettings.md) | 启用、配置或禁用一个或多个用户的 mailboxSettings。 |
+| **Outlook 任务** |||
+| [创建 outlookTask](../api/outlookuser-post-tasks.md) | [outlookTask](outlooktask.md) | 在用户邮箱的默认任务组（“我的任务”）和默认任务文件夹（“任务”）中创建 Outlook 任务。 |
+| [列出任务](../api/outlookuser-list-tasks.md) | [outlookTask](outlooktask.md) 集合 | 获取用户邮箱中的所有 Outlook 任务。 |
+| **人员** |||
+| [列出人员](../api/user-list-people.md) | [person](person.md) | 检索 person 对象列表，这些对象按与 user 的相关程度进行排序，相关程度由用户的通信和协作模式以及业务关系决定。 |
+| **照片** |||
+| [获取照片](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) | 获取指定的 profilePhoto 或其元数据（profilePhoto 属性）。 |
+| [更新 profilephoto](../api/profilephoto-update.md) | 无 | 更新租户中任意用户的照片，其中包括已登录用户或指定的组或联系人。 |
+| **Planner** |||
+| [获取 plannerUser](../api/planneruser-get.md) | [plannerUser](planneruser.md) | 检索 plannerUser 对象的属性和关系。 |
+| [列出 favoritePlans](../api/planneruser-list-favoriteplans.md) | [plannerPlan](plannerplan.md) 集合 | 检索由用户标记为收藏的 plannerPlans 列表。 |
+| [列出 recentPlans](../api/planneruser-list-recentplans.md) | [plannerPlan](plannerplan.md) 集合 | 检索用户最近查看的 plannerPlans 列表。 |
+| [List tasks](../api/planneruser-list-tasks.md) | [plannerTask](plannertask.md) 集合 | 获取分配给此用户的 plannerTasks。|
+| [更新 plannerUser](../api/planneruser-update.md) | 无 | 更新 plannerUser 对象的属性。 |
+| **个人资料** |||
+| [获取个人资料](../api/profile-get.md) | [profile](profile.md) | 检索给定用户的 profile 对象的属性和关系。 |
+| [删除个人资料](../api/profile-delete.md) | 无 | 从用户帐户中删除 profile 对象。 |
+| **架构扩展** |||
+| [添加架构扩展值](/graph/extensibility-schema-groups) | 无 | 创建架构扩展定义，然后使用它向资源添加自定义键入数据。 |
+| **Teamwork** |||
+| [为用户安装应用](../api/user-add-teamsappinstallation.md) | 无 | 在指定用户的个人范围内安装应用。 |
+| [列出为用户安装的应用](../api/user-list-teamsappinstallation.md) | [teamsAppInstallation](teamsappinstallation.md) | 检索在指定用户的个人范围内安装的应用列表。 |
+| [升级应用](../api/user-upgrade-teamsappinstallation.md) | 无 | 将指定用户的个人范围内的应用安装升级到该应用的最新版本。 |
+| [为用户卸载应用](../api/user-delete-teamsappinstallation.md) | 无  | 卸载指定用户的个人范围内的应用。 |
+| **用户设置** |||
+| [获取设置](../api/usersettings-get.md) | [userSettings](usersettings.md) | 阅读用户和组织设置对象。 |
+| [更新设置](../api/usersettings-update.md) | [userSettings](usersettings.md) | 更新 settings 对象的属性。 |
 
 ## <a name="properties"></a>属性
 
@@ -172,28 +172,29 @@ ms.locfileid: "44864082"
 | faxNumber | String | 用户的传真号。 <br><br>仅在 $select 上返回。 |
 | givenName | String | 用户的名。 <br><br>默认情况下返回。 支持 $filter。|
 | hireDate | DateTimeOffset | 用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'` <br><br>仅在 $select 上返回。 |
-| id | 字符串 | 用户的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 <br><br>默认情况下返回。 不可为空。 只读。|
+| id | String | 用户的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 <br><br>默认返回。 不可为空。 只读。|
 | identities | [objectIdentity](objectIdentity.md) 集合 | 表示可用于登录此用户帐户的标识。 标识可由 Microsoft （也称为本地帐户）、组织或社交身份提供商（如 Facebook、Google 和 Microsoft）提供，并绑定到用户帐户。 可能包含具有相同 **signInType** 值的多个项目。 <br><br>仅在 $select 上返回。 支持 $filter。 |
 | imAddresses | String collection | 用户的即时消息 IP 语音 (VOIP) 会话初始协议 (SIP) 地址。只读。|
+| infoCatalogs | 字符串集合 | 标识分配给用户的信息片段。 默认情况下返回。 |
 | interests | String collection | 用户介绍自身兴趣的列表。 <br><br>仅在 $select 上返回。 |
-| isResourceAccount | Boolean | 请勿使用–保留以供将来使用。 |
+| isResourceAccount | 布尔 | 请勿使用 – 保留以备今后使用。 |
 | jobTitle | String | 用户的职务。 <br><br>默认情况下返回。 支持 $filter。|
 | lastPasswordChangeDateTime | DateTimeOffset | 此 Azure AD 用户上次更改其密码的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'` <br><br>仅在 $select 上返回。 |
 | legalAgeGroupClassification | String | 由企业应用程序用于确定用户的法定年龄组。 此属性为只读，并且基于 **ageGroup** 和 **consentProvidedForMinor** 属性进行计算。 允许的值：`null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 $select 上返回。 |
 | licenseAssignmentStates | [licenseAssignmentState](licenseassignmentstate.md) 集合 | 此用户的许可证分配状态。 <br><br>仅在 $select 上返回。 只读。 |
-| mail | String | 用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 只读。 支持 $filter。 |
+| mail | String | 用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。 <br><br>默认返回。 只读。 支持 $filter。 |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | 已登录用户的主邮箱的设置。 可以[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)用于向传入邮件发送自动答复、区域设置和时区的设置。 <br><br>仅在 $select 上返回。 |
 | mailNickname | String | 用户的邮件别名。 创建用户时必须指定此属性。 <br><br>仅在 $select 上返回。 支持 $filter。 |
-| mobilePhone | String | 用户的主要移动电话号码。 <br><br>默认情况下返回。 |
+| mobilePhone | String | 用户的主要移动电话号码。 <br><br>默认返回。 |
 | mySite | String | 用户个人网站的 URL。 <br><br>仅在 $select 上返回。 |
 | officeLocation | String | 用户公司地点的办公室位置。 <br><br>默认返回。 |
 | onPremisesDistinguishedName | String | 包含本地 Active Directory `distinguished name` 或 `DN`。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 <br><br>仅在 $select 上返回。 只读。 |
 | onPremisesDomainName | String | 包含从本地目录同步的本地 `domainFQDN`（也称为 dnsDomainName）。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 <br><br>仅在 $select 上返回。 只读。 |
-| onPremisesExtensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | 包含用户的 extensionAttributes 1-15。 请注意，单个扩展属性既不可选择，也不可筛选。 对于 `onPremisesSyncEnabled` 用户，此属性集的权威来源是本地的，并且是只读的，并且是只读的。 对于只使用云的用户（其中 `onPremisesSyncEnabled` 为 false），可以在创建或更新期间设置这些属性。 这些扩展属性也称为 Exchange 自定义属性1-15。 <br><br>仅在 $select 上返回。 |
-| onPremisesImmutableId | 字符串 | 此属性用于将本地 Active Directory 用户帐户关联到他们的 Azure AD 用户对象。 如果对用户的 `userPrincipalName` (UPN) 属性使用联盟域，必须在 Graph 中创建新用户帐户时指定此属性。 **重要说明：** 指定此属性时不能使用 **$** 和 **\_** 字符。 <br><br>仅在 $select 上返回。 支持 $filter。 |
+| onPremisesExtensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | 包含用户的 extensionAttributes 1-15。 请注意，单个扩展属性既不可选择，也不可筛选。 对于 `onPremisesSyncEnabled` 用户，这组属性集的授权来源是本地，并且为只读。 对于只使用云的用户（其中 `onPremisesSyncEnabled` 为假），可以在创建或更新期间设置这些属性。 这些扩展属性也称 Exchange 自定义属性 1-15。 <br><br>仅在 $select 上返回。 |
+| onPremisesImmutableId | String | 此属性用于将本地 Active Directory 用户帐户关联到他们的 Azure AD 用户对象。 如果对用户的 `userPrincipalName` (UPN) 属性使用联盟域，必须在 Graph 中创建新用户帐户时指定此属性。 **重要说明：** 指定此属性时不能使用 **$** 和 **\_** 字符。 <br><br>仅在 $select 上返回。 支持 $filter。 |
 | onPremisesLastSyncDateTime | DateTimeOffset | 表示上一次对象与本地目录同步的时间；例如：“2013-02-16T03:04:54Z”。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>仅在 $select 上返回。 只读。 |
 | onPremisesProvisioningErrors | [onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合 | 在预配期间使用 Microsoft 同步产品时发生的错误。 <br><br>仅在 $select 上返回。 |
-| onPremisesSamAccountName | 字符串 | 包含从本地目录同步的本地 `sAMAccountName`。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 <br><br>仅在 $select 上返回。 只读。 |
+| onPremisesSamAccountName | String | 包含从本地目录同步的本地 `sAMAccountName`。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 <br><br>仅在 $select 上返回。 只读。 |
 | onPremisesSecurityIdentifier | String | 包含从本地同步到云的用户的本地安全标识符 (SID)。 <br><br>仅在 $select 上返回。 只读。 |
 | onPremisesSyncEnabled | Boolean | 如果此对象从本地目录同步，则为 `true`；如果此对象最初从本地目录同步，但以后不再同步，则为 `false`；如果此对象从未从本地目录同步，则为 `null`（默认值）。 <br><br>仅在 $select 上返回。 只读。 |
 | onPremisesUserPrincipalName | String | 包含从本地目录同步的本地 `userPrincipalName`。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 <br><br>仅在 $select 上返回。 只读。 |
@@ -206,7 +207,7 @@ ms.locfileid: "44864082"
 | preferredLanguage | String | 用户的首选语言。应遵循 ISO 639-1 代码；例如“EN-US”。 <br><br>默认返回。 |
 | preferredName | String | 用户的首选名称。 <br><br>仅在 $select 上返回。 |
 | provisionedPlans | [provisionedPlan](provisionedplan.md) 集合 | 为用户设置的计划。 <br><br>仅在 $select 上返回。 只读。 不可为 null。 |
-| proxyAddresses | String collection | 示例：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` 多值属性筛选器表达式需要 **any** 运算符。 <br><br>仅在 $select 上返回。 只读，不可为 Null。 支持 $filter。 |
+| proxyAddresses | String 集合 | 示例：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` 多值属性筛选器表达式需要 **any** 运算符。 <br><br>仅在 $select 上返回。 只读，不可为 Null。 支持 $filter。 |
 | refreshTokensValidFromDateTime | DateTimeOffset | 在此时间之前发出的任何刷新令牌或会话令牌（会话 Cookie）都是无效的，并且当使用无效的刷新令牌或会话令牌获取委托的访问令牌（用于访问 Microsoft Graph 等 API）时，应用程序将收到错误。  如果发生这种情况，应用程序将需要通过向授权端点发出请求来获取新的刷新令牌。 <br><br>仅在 $select 上返回。 只读。 使用 [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) 进行重置。 |
 | responsibilities | String collection | 供用户枚举其职责的列表。 <br><br>仅在 $select 上返回。 |
 | schools | String collection | 供用户枚举其学习过的学校列表。 <br><br>仅在 $select 上返回。 |
@@ -217,8 +218,8 @@ ms.locfileid: "44864082"
 | state | String | 用户地址中的省/市/自治区或省。 <br><br>仅在 $select 上返回。 支持 $filter。 |
 | streetAddress | String | 用户公司地点的街道地址。 <br><br>仅在 $select 上返回。|
 | surname | String | 用户的姓氏。 <br><br>默认情况下返回。 支持 $filter。 |
-| usageLocation | 字符串 | 两个字母的国家/地区代码（ISO 标准 3166）。 为检查服务在国家/地区的可用性，这对根据法律要求将分配许可证的用户而言是必需的。  示例包括：“US”、“JP”和“GB”。 不可为空。 <br><br>仅在 $select 上返回。 支持 $filter。|
-| userPrincipalName | 字符串 | 用户的用户主体名称 (UPN)。 UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。 按照惯例，此名称应映射到用户的电子邮件名称。 常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。 创建用户时此属性是必需的。 可从 [组织](organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。 <br><br>默认情况下返回。 支持 $filter 和 $orderby。
+| usageLocation | String | 两个字母的国家/地区代码（ISO 标准 3166）。 为检查服务在国家/地区的可用性，这对根据法律要求将分配许可证的用户而言是必需的。  示例包括：“US”、“JP”和“GB”。 不可为空。 <br><br>仅在 $select 上返回。 支持 $filter。|
+| userPrincipalName | String | 用户的用户主体名称 (UPN)。 UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。 按照惯例，此名称应映射到用户的电子邮件名称。 常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。 创建用户时此属性是必需的。 可从 [组织](organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。 <br><br>默认情况下返回。 支持 $filter 和 $orderby。
 | userType | String | 可用于对目录中的用户类型分类的字符串值，例如“成员”和“访客”。 <br><br>仅在 $select 上返回。 支持 $filter。 |
 
 ### <a name="legal-age-group-property-definitions"></a>法定年龄组属性定义
@@ -234,11 +235,11 @@ ms.locfileid: "44864082"
 | 值   | # |说明|
 |:---------------|:--------|:----------|
 |空|0|默认值，尚未给用户设置 `ageGroup`。|
-|minorWithoutParentalConsent |1 |（保留以备今后使用）|
-|minorWithParentalConsent|双面| 根据用户所在国家或地区与年龄相关的法规，将用户视为未成年人，并且帐户管理员已相应获得父母或监护人的同意。|
-|adult|第三章|根据用户所在国家或地区与年龄相关的法规，将用户视为成年人。|
-|notAdult|4 |用户所在国家或地区存在其他与年龄相关的法规（例如美国、英国、欧盟和韩国），用户的年龄介于未成年人和成年人之间（根据所在国家或地区的规定）。 通常，这意味着会在管控的国家或地区将青少年视为 `notAdult`。|
-|minorNoParentalConsentRequired|5 |用户是未成年人，但所在国家或地区没有与年龄相关的法规。|
+|minorWithoutParentalConsent |1|（保留以备今后使用）|
+|minorWithParentalConsent|2| 根据用户所在国家或地区与年龄相关的法规，将用户视为未成年人，并且帐户管理员已相应获得父母或监护人的同意。|
+|adult|3|根据用户所在国家或地区与年龄相关的法规，将用户视为成年人。|
+|notAdult|4|用户所在国家或地区存在其他与年龄相关的法规（例如美国、英国、欧盟和韩国），用户的年龄介于未成年人和成年人之间（根据所在国家或地区的规定）。 通常，这意味着会在管控的国家或地区将青少年视为 `notAdult`。|
+|minorNoParentalConsentRequired|5|用户是未成年人，但所在国家或地区没有与年龄相关的法规。|
 
 #### <a name="age-group-and-minor-consent"></a>年龄组和未成年人同意
 
@@ -249,35 +250,35 @@ ms.locfileid: "44864082"
 | 值    | # |说明|
 |:---------------|:--------|:----------|
 |空|0|默认值，尚未给用户设置 `ageGroup`。|
-|minor|1 |将用户视为未成年人。|
-|notAdult|双面|用户所在国家或地区存在其他法规（例如美国、英国、欧盟和韩国），用户年龄超过儿童年龄上限（根据所在国家或地区的规定）且低于成年人年龄下限（根据所在国家或地区的规定）。 因此，基本上会在管控的国家或地区将青少年视为 `notAdult`。|
-|adult|第三章|应将用户视为成年人。|
+|minor|1|将用户视为未成年人。|
+|notAdult|2|用户所在国家或地区存在其他法规（例如美国、英国、欧盟和韩国），用户年龄超过儿童年龄上限（根据所在国家或地区的规定）且低于成年人年龄下限（根据所在国家或地区的规定）。 因此，基本上会在管控的国家或地区将青少年视为 `notAdult`。|
+|adult|3|应将用户视为成年人。|
 
 #### <a name="consentprovidedforminor-property"></a>consentProvidedForMinor 属性
 
 | 值    | # |说明|
 |:---------------|:--------|:----------|
 |空|0|默认值，尚未给用户设置 `consentProvidedForMinor`。|
-|granted|1 |已就用户拥有帐户获得同意。|
-|denied|双面|尚未就用户拥有帐户获得同意。|
-|notRequired|第三章|用户所在地不要求获得同意。|
+|granted|1|已就用户拥有帐户获得同意。|
+|denied|2|尚未就用户拥有帐户获得同意。|
+|notRequired|3|用户所在地不要求获得同意。|
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型 |Description|
+| 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
-|agreementAcceptances|[agreementAcceptance](agreementacceptance.md) 集合| 用户使用条款接受状态。 只读。 可为 NULL。|
-|日历|[calendar](calendar.md)|用户的主日历。只读。|
+|agreementAcceptances|[agreementAcceptance](agreementacceptance.md) 集合| 用户使用条款接受状态。 只读。 可为 Null。|
+|calendar|[calendar](calendar.md)|用户的主日历。只读。|
 |calendarGroups|[CalendarGroup](calendargroup.md) 集合|用户的日历组。只读。可为 Null。|
 |calendarView|[event](event.md) 集合|日历的日历视图。只读。可为 Null。|
 |calendars|[calendar](calendar.md) 集合|用户的日历。只读。可为 Null。|
 |contactFolders|[ContactFolder](contactfolder.md) 集合|用户的联系人文件夹。只读。可为 Null。|
 |contacts|[contact](contact.md) 集合|用户的联系人。只读。可为 Null。|
-|createdObjects|[directoryObject](directoryobject.md) 集合|由用户创建的 directory 对象。只读。可为 Null。|
+|createdObjects|[directoryObject](directoryobject.md) collection|由用户创建的 directory 对象。只读。可为 Null。|
 |directReports|[directoryObject](directoryobject.md) collection|向此用户报告的用户和联系人。（其 manager 属性已设置为此用户的用户和联系人。）只读。可为 Null。 |
 |drive|[drive](drive.md)|用户的 OneDrive。只读。|
 |drives|[drive](drive.md) 集合| 该用户的可用驱动器集合。只读。 |
-|events|[event](event.md) 集合|用户的事件。 默认显示“默认日历”下的事件。 只读。 可为 NULL。|
+|活动|[event](event.md) 集合|用户的事件。 默认显示“默认日历”下的事件。 只读。 可为 NULL。|
 |extensions|[扩展](extension.md)集合|为用户定义的开放扩展集合。 可为 Null。|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| 基于显式指定的用户邮件的相关性分类，可以替代推断的相关性或重要性。 |
 |insights|[officeGraphInsights](officegraphinsights.md) | 只读。可为 Null。|
@@ -286,24 +287,24 @@ ms.locfileid: "44864082"
 |manager|[directoryObject](directoryobject.md)|是此用户的经理的用户或联系人。只读。（HTTP 方法：GET、PUT、DELETE）|
 |memberOf|[directoryObject](directoryobject.md) 集合|用户所属的所有组、目录角色和管理单元。只读。可为 Null。|
 |joinedTeams|[团队](team.md) 集合|用户所属的 Microsoft Teams 团队。 只读。 可为空。|
-|团队合作|[userTeamwork](userteamwork.md)| 可供用户使用的 Microsoft Teams 功能的容器。 只读。 可为 NULL。|
+|团队合作|[userTeamwork](userteamwork.md)| 可供用户使用的 Microsoft Teams 功能的容器。 只读。 可为 Null。|
 |messages|[message](message.md) 集合|邮箱或文件夹中的邮件。只读。可为 Null。|
 |onenote|[onenote](onenote.md)| 只读。|
-|outlook|[outlookUser](outlookuser.md)| 用户可用的选择性 Outlook 服务。 此为只读属性。 可为 NULL。|
+|outlook|[outlookUser](outlookuser.md)| 用户可用的选择性 Outlook 服务。 只读。 可为 Null。|
 |ownedDevices|[directoryObject](directoryobject.md) collection|用户拥有的设备。只读。可为 Null。|
-|ownedObjects|[directoryObject](directoryobject.md) 集合|用户拥有的 directory 对象。只读。可为 Null。|
+|ownedObjects|[directoryObject](directoryobject.md) collection|用户拥有的 directory 对象。只读。可为 Null。|
 |people|[person](person.md) 集合| 只读。与用户最相关的人员。该集合按其与用户的相关性排序，相关性由用户的通信、协作和业务关系决定。人脉是邮件、联系人和社交网络中的信息聚合。|
 |photo|[profilePhoto](profilephoto.md)| 用户的个人资料照片。只读。|
 |photos|[photo](photo.md) 集合| 只读。可为 Null。|
-|planner|[plannerUser](planneruser.md)| 用户可用的选择性 Planner 服务。 此为只读属性。 可为空。 |
-|scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) 集合| 该用户的作用域角色管理单元成员身份。 此为只读属性。 可为 Null。|
+|planner|[plannerUser](planneruser.md)| 用户可用的选择性 Planner 服务。 只读。 可为空。 |
+|scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) 集合| 该用户的作用域角色管理单元成员身份。 只读。 可为 Null。|
 |settings|[userSettings](usersettings.md) | 只读。可为 Null。|
 |registeredDevices|[directoryObject](directoryobject.md) collection|已注册的用户的设备。只读。可为 Null。|
 
 ### <a name="user-preferences-for-languages-and-regional-formats"></a>语言和区域格式的用户首选项
-**User**资源包含[mailboxSettings](../resources/mailboxsettings.md)属性，该属性包括用户的首选语言、日期和时间格式、默认时区以及专门用于其主要 Exchange 邮箱的其他设置。 这些首选项针对邮件客户端，只有在用户已预配邮箱时才可用。 如果您的方案仅侧重于 Outlook 邮件、日历、联系人或待办任务，则可以选择使用**mailboxSettings** 。
+**用户**资源包含[mailboxSettings](../resources/mailboxsettings.md)属性，其中包括用户的首选语言、数据和时间格式、默认时区以及其他专用于主要 Exchange 邮箱的设置。 这些首选项针对邮件客户端，且仅在用户已预配邮箱的情况下可用。 如果你的应用场景专注于 Outlook 邮件、日历、联系人或待办任务，可选择使用 **mailboxSettings**。
 
-除了**mailboxSettings**之外，**用户**还包括通过[userSettings](../resources/usersettings.md)到[regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md)的关系，可供任何应用程序用来为用户提供最佳语言和区域格式设置体验的语言和区域格式首选项的超集。 使用**userSettings**以在应用程序中通过点击 Azure AD 用户配置文件来反映相同的用户首选项，从而实现一致的体验。
+除了 **mailboxSettings**，**用户** 还包括通过 [userSettings](../resources/usersettings.md) 到 [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) 的关系，这是语言和区域格式设置首选项的超集，任何应用程序都可以使用它来向用户提供最佳的语言和区域格式设置体验。 使用 **userSettings** 以获得跨应用的一致体验，这些应用会接入 Azure AD 用户配置文件，以反映相同的用户首选项。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
