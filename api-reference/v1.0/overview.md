@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: non-product-specific
 doc_type: conceptualPageType
-ms.openlocfilehash: 75672eedd4b1693b31058de6531c470db548a033
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: 83f868f9223f2837d1a4818cf227b94573db3480
+ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897930"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45184000"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Microsoft Graph REST API 1.0 版参考
 
@@ -38,9 +38,9 @@ Microsoft Graph 的强大之处在于可以在单个 Microsoft Graph REST 终结
 
 ### <a name="microsoft-365-group-use-cases-in-v10"></a>1.0 版中的 Microsoft 365 组用例
 
-1. 对组织中的 Microsoft 365 组运行报告，并确定[组成员之间通讯](./api/reportroot-getoffice365groupsactivitycounts.md)最多的组。
-2. [查找此 Microsoft 365 组的计划](./api/plannergroup-list-plans.md)，并在该计划中[分配任务](./resources/plannerassignments.md)。
-3. 在 Microsoft 365 组中[启动一个新对话](./api/group-post-conversations.md)，以确定成员是否要[创建另一个组](./api/group-post-groups.md)来共享工作负荷。
+1. 对组织中的 Microsoft 365 组运行报告，并确定[组成员之间通信](./api/reportroot-getoffice365groupsactivitycounts.md)最多的组。
+2. [查找此 Microsoft 365 组的计划](./api/plannergroup-list-plans.md)，和该计划中的[任务分配](./resources/plannerassignments.md)。
+3. 在 Microsoft 365 组中[启动新对话](./api/group-post-conversations.md)以确定成员是否要[创建另一个组](./api/group-post-groups.md)来分担工作负荷。
 4. 为组[获取默认笔记本](./api/notebook-get.md)并[创建一个页面](./api/section-post-pages.md)注明调查结果。
 
 ## <a name="other-api-versions"></a>其他 API 版本
@@ -54,14 +54,14 @@ Microsoft Graph 的强大之处在于可以在单个 Microsoft Graph REST 终结
 
 针对 v1.0 终结点的 Microsoft Graph API 请求使用以下模式：
 
-```
+```http
 https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
 ```
 
 有关详细信息，请参阅[使用 Microsoft Graph API](/graph/use-the-api)。
 
 ## <a name="whats-new"></a>最近更新
-了解 v1.0 终结点中的[最新新功能和更新](/graph/whats-new-overview)。
+了解 1.0 终结点的[最新功能和更新](/graph/whats-new-overview)。
 
 ## <a name="connect-with-us"></a>与我们联系
 

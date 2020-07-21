@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 79ba743eaa71101160fd836fac579148581b5615
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 14efe55cecb1464253463a1ff2ecd94f03f63378
+ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290635"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45196925"
 ---
 # <a name="list-apps-installed-for-user"></a>列出为用户安装的应用
 
@@ -20,15 +20,15 @@ ms.locfileid: "44290635"
 
 检索在指定[用户](../resources/user.md)的个人作用域中安装的[应用程序](../resources/teamsappinstallation.md)的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+|委派（工作或学校帐户） | TeamsAppInstallation、TeamsAppInstallation、ReadForUser、、all、all、all、All、All 和所有读写。 |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+|应用程序 | TeamsAppInstallation、TeamsAppInstallation、ReadForUser、、、all、all、all、all、All 和 All 的所有读写。 |
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d463fa5a00318936ef0f1612f233851e42a9db11
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 8ca137dfd96d9e363d43b5c52949fb682acd2794
+ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44846133"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45196902"
 ---
 # <a name="synchronizationschema-resource-type"></a>synchronizationSchema 资源类型
 
@@ -48,43 +48,37 @@ ms.locfileid: "44846133"
 
 ## <a name="properties"></a>属性
 
-| 属性      | 类型      | Description    |
+| 属性      | 类型      | 说明    |
 |:--------------|:----------|:---------------|
-|目录名            |[directoryDefinition](synchronization-directorydefinition.md)集合   |描述作为[synchronizationJob](synchronization-synchronizationjob.md)或[synchronizationTemplate](synchronization-synchronizationtemplate.md)一部分的目录和对象。 |
+|id|String|架构的唯一标识符。|
 |synchronizationRules   |[synchronizationRule](synchronization-synchronizationrule.md)集合   |为[synchronizationJob](synchronization-synchronizationjob.md)或[synchronizationTemplate](synchronization-synchronizationtemplate.md)配置的同步规则的集合。 |
 |version                |String                             |架构的版本，随每个架构更改自动更新。|
 
 
+## <a name="relationships"></a>关系
+|关系|类型|说明|
+|:---|:---|:---|
+|目录名|[directoryDefinition](../resources/synchronization-directorydefinition.md)集合|包含目录及其所有对象的集合。|
+
 ## <a name="json-representation"></a>JSON 表示形式
-
 下面是资源的 JSON 表示形式。
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.synchronizationSchema"
-}-->
-
-```json
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.synchronizationSchema",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
+``` json
 {
-  "directories": [{"@odata.type": "microsoft.graph.directoryDefinition"}],
-  "provisioningTaskIdentifier": "String (identifier)",
-  "synchronizationRules": [{"@odata.type": "microsoft.graph.synchronizationRule"}],
+  "@odata.type": "#microsoft.graph.synchronizationSchema",
+  "id": "String (identifier)",
+  "synchronizationRules": [
+    {
+      "@odata.type": "microsoft.graph.synchronizationRule"
+    }
+  ],
   "version": "String"
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "synchronizationSchema resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->

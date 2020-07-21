@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 05b3189825d4cfba12c000113a653595f9f7c9a3
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: befafe249bc42d4f0ac166b35177310deb2ea4b1
+ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290488"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45197021"
 ---
 # <a name="add-app-to-team"></a>向团队添加应用
 
@@ -20,15 +20,15 @@ ms.locfileid: "44290488"
 
 将[应用程序](../resources/teamsapp.md)安装到指定的[团队](../resources/team.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All、Directory.ReadWrite.All |
+|委派（工作或学校帐户） | TeamsAppInstallation，ReadWriteForTeam，all，All，All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All、Directory.ReadWrite.All |
+|应用程序 | TeamsAppInstallation、ReadWriteForTeam、all、ReadWrite。所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

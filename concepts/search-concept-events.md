@@ -4,12 +4,12 @@ description: 您可以在用户自己的日历中进行搜索。
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 6326fead96cd0b777ff6c3e257d6aa36d4d5c4ce
-ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
+ms.openlocfilehash: 8cafb01337581d1b1d2e355363aec14f658ee4f6
+ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44568772"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45196825"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-calendar-events"></a>在 Microsoft Graph 中使用 Microsoft Search API 搜索日历事件
 
@@ -49,7 +49,7 @@ Content-Type: application/json
 
 ## <a name="known-limitations"></a>已知限制
 
-您只能访问用户自己的日历。 不支持共享日历和委派访问 schenarios。
+您只能访问用户自己的日历。 不支持共享日历和委派访问方案。
 
 ## <a name="next-steps"></a>后续步骤
 
