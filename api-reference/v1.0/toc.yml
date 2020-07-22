@@ -188,7 +188,7 @@ items:
                 href: api/user-delete.md
               - name: 获取 Delta
                 href: api/user-delta.md
-          - name: 应用程序角色分配
+          - name: 应用角色分配
             href: resources/approleassignment.md
             items:
               - name: 列表
@@ -487,7 +487,7 @@ items:
                     href: api/grouplifecyclepolicy-removegroup.md
               - name: 验证属性
                 href: api/group-validateproperties.md
-          - name: 应用程序角色分配
+          - name: 应用角色分配
             href: resources/approleassignment.md
             items:
               - name: 列表
@@ -726,7 +726,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: 列出拥有的对象
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: 应用程序角色分配
+              - name: 应用角色分配
                 href: resources/approleassignment.md
                 items:
                   - name: 列表
@@ -3679,6 +3679,8 @@ items:
                     href: api/directoryobject-get.md
                   - name: 删除目录对象
                     href: api/directoryobject-delete.md
+                  - name: 获取可用扩展属性
+                    href: api/directoryobject-getavailableextensionproperties.md
                   - name: 获取成员对象
                     href: api/directoryobject-getmemberobjects.md
                   - name: 获取成员组
@@ -4603,7 +4605,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 计划
+          - name: 规划
             href: resources/plannerplan.md
             items:
               - name: 创建计划
