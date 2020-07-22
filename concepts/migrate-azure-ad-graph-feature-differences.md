@@ -4,12 +4,12 @@ description: 介绍了 Azure Active Directory （Azure AD） API 与 Microsoft G
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7bebb0437ac3f099d7518640ad4fbb0f9fd75990
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 531b2c9b441f328118597802b6478d5b45276965
+ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845776"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45224876"
 ---
 # <a name="feature-differences-between-azure-ad-graph-and-microsoft-graph"></a>Azure AD Graph 与 Microsoft Graph 之间的功能差异
 
@@ -28,6 +28,7 @@ Microsoft Graph 中的许多功能与 Azure AD Graph 对应的工作方式类似
 如果您的应用程序使用 Azure AD Graph 目录架构扩展，则可以继续使用相同的基本 Api （使用 Microsoft Graph 请求 Url）执行以下操作：
 
 - 使用 [application] [/graph/api/resources/application？ view = graph-rest-extensionProperties 1.0）资源上的**extensionProperties**属性管理扩展属性定义。
+- 使用[getAvailableExtensionProperties](/graph/api/directoryobject-getavailableextensionproperties?view=graph-rest-v1.0)操作获取可用扩展属性。
 - 使用 GET 和，读取扩展值`$select`
 - 使用 GET 和，搜索扩展值`$filter`
 - 使用修补程序更新扩展值

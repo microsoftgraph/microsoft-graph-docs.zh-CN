@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e4ed6fb6d236eb8c67400b75ee364a55c644ecfc
-ms.sourcegitcommit: 9c1abb1c87177da20e1f5bbf1fae8131ab7e4f16
+ms.openlocfilehash: a18f329a94c80e4ea727e728fbdc44c815edc456
+ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45146685"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45224753"
 ---
 # <a name="create-registereduser"></a>创建 registeredUser
 
@@ -72,6 +72,10 @@ Content-length: 30
 
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-directoryobject-from-device-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-directoryobject-from-device-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

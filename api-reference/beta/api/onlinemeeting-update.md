@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4fc506d37bc0166057fe7997e198d02a6771267d
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 56a316e69f247842d38c5e5f606d986d0600cbc9
+ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45184022"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45224727"
 ---
 # <a name="update-onlinemeeting"></a>更新 onlineMeeting
 
@@ -50,6 +50,8 @@ PATCH https://graph.microsoft.com/beta/me/onlineMeetings/{id}
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_onlinemeeting_request"
@@ -58,14 +60,26 @@ PATCH https://graph.microsoft.com/beta/me/onlineMeetings/{id}
 PATCH https://graph.microsoft.com/beta/me/onlineMeetings/{id}
 Content-Type: application/json 
 
-{ 
-    "startDateTime": "2020-09-09T14:33:30.8546353-07:00", 
-
-    "endDateTime": "2020-09-09T15:03:30.8566356-07:00", 
-
-    "subject": "Patch Meeting Subject" 
-} 
+{
+  "startDateTime": "2020-09-09T14:33:30.8546353-07:00",
+  "endDateTime": "2020-09-09T15:03:30.8566356-07:00",
+  "subject": "Patch Meeting Subject"
+}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/patch-onlinemeeting-request-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/patch-onlinemeeting-request-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/patch-onlinemeeting-request-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

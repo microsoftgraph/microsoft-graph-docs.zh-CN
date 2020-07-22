@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d9168a22fcff105cbf2603ebccaaf4b9c0d8cf5
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: c235781a73059830a3b0085bb7602e5484da7988
+ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124021"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45225016"
 ---
 # <a name="update-windowsupdatestate"></a>更新 windowsUpdateState
 
@@ -28,11 +28,11 @@ ms.locfileid: "45124021"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp;&nbsp;**设备配置** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp;**软件更新** | DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp;&nbsp;**设备配置** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp;**软件更新** | DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -58,13 +58,13 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|这是实体的 Id。|
-|deviceId|String|设备的 id。|
+|deviceId|字符串|设备的 id。|
 |userId|String|用户的 id。|
 |deviceDisplayName|String|设备显示名称。|
 |userPrincipalName|字符串|用户主体名称。|
-|status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
-|qualityUpdateVersion|String|设备的质量更新版本。|
-|featureUpdateVersion|String|设备的当前功能更新版本。|
+|状态||Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
+|qualityUpdateVersion|字符串|设备的质量更新版本。|
+|featureUpdateVersion|字符串|设备的当前功能更新版本。|
 |lastScanDateTime|DateTimeOffset|Windows Update 代理成功扫描的日期时间。|
 |lastSyncDateTime|DateTimeOffset|上次与 Microsoft Intune 同步设备的日期时间。|
 

@@ -1,0 +1,88 @@
+---
+title: 更新 entitlementManagementSettings
+description: 更新 entitlementManagementSettings 对象以更改其一个或多个属性。
+localization_priority: Normal
+author: markwahl-msft
+ms.prod: microsoft-identity-platform
+doc_type: apiPageType
+ms.openlocfilehash: 23d37c089e9c81939ba9342a7f5747dd979b8bec
+ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45225066"
+---
+# <a name="update-entitlementmanagementsettings"></a>更新 entitlementManagementSettings
+
+命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+更新现有[entitlementManagementSettings](../resources/entitlementmanagementsettings.md)对象以更改其一个或多个属性。
+
+
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+|权限类型                        | 权限（从最低特权到最高特权）              |
+|:--------------------------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户）     | EntitlementManagement.ReadWrite.All |
+|委派（个人 Microsoft 帐户） | 不支持。 |
+|应用程序                            | 不支持。 |
+
+## <a name="http-request"></a>HTTP 请求
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /identityGovernance/entitlementManagement/settings
+```
+## <a name="request-headers"></a>请求标头
+| 名称         | 说明 |
+|:-------------|:------------|
+| Authorization | 持有者 \{token\}。 必需。 |
+| Content-Type  | application/json. Required. |
+
+## <a name="request-body"></a>请求正文
+在请求正文中，提供[entitlementManagementSettings](../resources/entitlementmanagementsettings.md)对象的参数的 JSON 表示形式。
+
+## <a name="response"></a>响应
+如果成功，此方法返回 `204 No Content` 响应代码。
+
+## <a name="example"></a>示例
+
+### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "update_entitlementManagementSettings"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/settings
+Content-type: application/json
+
+{
+  "externalUserLifecycleAction": "None"
+}
+```
+
+### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.entitlementManagementSettings"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Update entitlementManagementSettings",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->

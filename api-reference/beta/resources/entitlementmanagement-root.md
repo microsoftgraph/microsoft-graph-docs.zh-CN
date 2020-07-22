@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: ce8572f3f71a64a41f02b33da51c35132d162201
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 00b029c5dcbf297d7504a0c30ca7512d523c17ce
+ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383754"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45225128"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>使用 Azure AD 权限管理 API
 
@@ -31,15 +31,18 @@ Azure Active Directory （Azure AD）权限管理可帮助您管理对组、应�
 - [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)：指示通过访问包分配为主题分配的特定于资源的角色。
 - [accessPackageCatalog](accesspackagecatalog.md)：访问包的容器。
 - [accessPackageResourceRequest](accesspackageresourcerequest.md)：将资源添加到访问包目录的请求。
+- [entitlementManagementSettings](entitlementmanagementsettings.md)：适用于 Azure AD 权限管理的租户范围的设置。
 
 请注意，"权限管理" 功能（包括 API）包含在 Azure AD Premium P2 中。 使用权限管理的租户必须具有有效的已购买或试用版 Azure AD Premium P2 或 EMS E5 订阅。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 下表列出了可用于与与权限管理相关的资源进行交互的方法。
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
+| [获取](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | 读取**entitlementManagementSettings**对象的属性。 |
+| [更新](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | 更新**entitlementManagementSettings**对象的属性。 |
 | [列出 accessPackages](../api/accesspackage-list.md) | [accessPackage](accesspackage.md)集合 | 检索**accessPackage**对象的列表。 |
 | [创建 accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | 创建新的**accessPackage**对象。 |
 | [获取 accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | 读取**accessPackage**对象的属性和关系。 |

@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 423fd07e20b71a221d593f0cbe142d2f399bf30f
-ms.sourcegitcommit: 9c1abb1c87177da20e1f5bbf1fae8131ab7e4f16
+ms.openlocfilehash: 2a159eb82a57bebc4c91771039a1d1aef050efe8
+ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45146692"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45224848"
 ---
 # <a name="create-registeredowner"></a>创建 registeredOwner
 
@@ -71,6 +71,10 @@ Content-length: 30
 
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-directoryobject-from-device-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-directoryobject-from-device-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

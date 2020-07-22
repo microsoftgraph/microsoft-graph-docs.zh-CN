@@ -4,19 +4,19 @@ description: Delta 查询使应用程序能够发现新创建、更新或删除�
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 7e969858b7537ea36189d24c449803d2a00b125e
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
-ms.translationtype: MT
+ms.openlocfilehash: 75bf98201b434aa86c79db8f0009440c439d80f1
+ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44990036"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45197084"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 
 Delta 查询使应用程序能够发现新创建、更新或删除的实体，无需使用每个请求对目标资源执行完全读取。Microsoft Graph 应用程序可以使用 delta 查询和本地数据存储高效地同步更改。
 
 > [!div class="nextstepaction"]
-> [教程：使用更改通知和跟踪 Microsoft Graph 中的更改](/learn/modules/msgraph-changenotifications-trackchanges)
+> [教程：在 Microsoft Graph 上使用“更改通知”和“跟踪更改”](/learn/modules/msgraph-changenotifications-trackchanges)
 
 ## <a name="use-delta-query-to-track-changes-in-a-resource-collection"></a>使用 delta 查询来跟踪资源集合的更改
 
@@ -36,7 +36,7 @@ Delta 查询使应用程序能够发现新创建、更新或删除的实体，�
 
 >**注意：** 引用增量查询函数的方式通常是将 `/delta` 附加到资源名称。 但是，`/delta` 是在 Microsoft Graph SDK 生成的请求中显示的完全限定名称 `/microsoft.graph.delta` 的快捷方式。
 
->**注意：** 对 delta 查询函数的初始请求（无 delta 或 skip 标记）将返回当前存在于集合中的资源。 在初始 delta 查询之前创建和删除的资源不会返回。 在初始请求之前所做的更新将在返回的资源上汇总为其最新状态。
+>**注意** 初始请求发到 delta 查询函数后（无 delta 或跳过标记），会返回集合中现有的资源。 初始 delta 查询之前创建并已删除的资源不会返回。 初始请求前进行的更新在返回的资源上按其最新状态进行汇总。
 
 ### <a name="state-tokens"></a>状态令牌
 
@@ -188,9 +188,9 @@ Content-type: application/json
 
 ### <a name="token-duration"></a>令牌持续时间
 
-增量令牌仅在客户端应用程序需要再次运行完整同步前的特定时间段内有效。 对于目录对象（**application**、 **administrativeUnit**、 **directoryObject**、 **directoryRole**、 **group**、 **orgContact**、 **oauth2permissiongrant**、 **servicePrincipal**和**user**），限制为7天。 对于教育对象（**educationSchool**、 **educationUser**和**educationClass**），限制为7天。
+增量令牌仅在客户端应用程序需要再次运行完整同步前的特定时间段内有效。 目录对象（**应用程序**、**administrativeUnit**、**directoryObject**、**directoryRole**、**组**、**orgContact**、**oauth2permissiongrant**、**servicePrincipal** 和 **用户**）的时限为 7 天。 教育对象（**educationSchool**、**educationUser** 和 **educationClass**）的时限为 7 天内。 Outlook 实体（**邮件**、**邮件文件夹**、**事件**、**联系人**、**联系人文件夹**）没有固定时间上限，取决于内部 delta 令牌缓存的大小。 因为缓存中不断添加新 delta 令牌，因此超过缓存容量后，旧 delta 令牌将被删除。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 在对某个特定资源执行 delta 查询时也需要读取该资源所需的相同[权限](./permissions-reference.md)。
 

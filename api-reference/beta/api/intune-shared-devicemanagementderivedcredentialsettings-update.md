@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cf0460b25c3be317d9aebe7a91a02f7d2ae9f534
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 078f52d6a4f402a8b47542051fcb1c72a5a7a515
+ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123559"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45225044"
 ---
 # <a name="update-devicemanagementderivedcredentialsettings"></a>更新 deviceManagementDerivedCredentialSettings
 
@@ -28,11 +28,11 @@ ms.locfileid: "45123559"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp;&nbsp;**设备配置** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp;**资源访问策略** | DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp;&nbsp;**设备配置** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp;**资源访问策略** | DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -62,12 +62,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|派生凭据的唯一标识符|
+|id|字符串|派生凭据的唯一标识符|
 |**RA 策略**|
-|helpUrl|String|最终用户在使用公司门户检索派生凭据时将可访问的 URL。|
+|helpUrl|字符串|最终用户在使用公司门户检索派生凭据时将可访问的 URL。|
 |displayName|String|配置文件的显示名称。|
-|常用|[deviceManagementDerivedCredentialIssuer](../resources/intune-shared-devicemanagementderivedcredentialissuer.md)|要使用的派生凭据提供程序。 可取值为：`intercede`、`entrustDatacard`、`purebred`。|
-|notificationType|[deviceManagementDerivedCredentialNotificationType](../resources/intune-shared-devicemanagementderivedcredentialnotificationtype.md)|用于通知最终用户打开公司门户以传递使用证书到设备的 Wi-fi、VPN 或电子邮件配置文件的方法。 可取值为：`none`、`companyPortal`、`email`。|
+|常用||要使用的派生凭据提供程序。 可取值为：`intercede`、`entrustDatacard`、`purebred`。|
+|notificationType||用于通知最终用户打开公司门户以传递使用证书到设备的 Wi-fi、VPN 或电子邮件配置文件的方法。 可取值为：`none`、`companyPortal`、`email`。|
 
 
 ## <a name="response"></a>响应
