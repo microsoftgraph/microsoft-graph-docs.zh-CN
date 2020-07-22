@@ -362,6 +362,11 @@ items:
             href: excel-update-range-format.md
           - name: 向工作簿写入数据
             href: excel-write-to-workbook.md
+          - name: 资源
+            expanded: true
+            items:
+              - name: 错误代码
+                href: workbook-error-codes.md
   - name: 开发
     expanded: true
     items:

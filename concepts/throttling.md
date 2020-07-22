@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 96592654fffb3111a398178d807da702c398e0d2
-ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
+ms.openlocfilehash: a62b88927f33b12f9e9738f8b8ba299a22f6d099
+ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45165112"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45197063"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -92,6 +92,12 @@ ms.locfileid: "45165112"
 
 借助 Microsoft Graph，用户可访问[多个服务](overview-major-services.md)中的数据，如 Outlook 或 Azure Active Directory。 这些服务实施自己的限制，这些限制会影响使用 Microsoft Graph 访问它们的应用程序。
 
+任何请求均可根据多个限制进行评估，具体取决于限制范围（所有租户中的每个应用、所有应用的每个租户、每个租户的每个应用等）、请求类型（GET、 POST、PATCH等）以及其他因素。 即将达到的第一个限制会触发阻止行为。 除了本节中描述的服务特定限制之外，还适用以下全局限制：
+
+| 请求类型 | 所有租户中的每个应用  |
+| ------------ | ------------------------ |
+| 任何          | 每秒 2000 个请求 |
+
 > [!NOTE]
 > 此处所述的具体限制可能会发生更改。
 
@@ -156,9 +162,26 @@ Outlook 服务提供以下资源。
 | [会议信息](/graph/api/resources/meetinginfo)   | 每月每位用家会有 2000 则会议 |
 | [状态](/graph/api/resources/presence)（预览版）   | 2 rps |
 
+### <a name="onenote-service-limits"></a>OneNote 服务限制
+
+| 限制类型 | 每个用户的每个应用程序的限制（委派的上下文） | 每个应用程序的限制（仅应用程序上下文） |
+| ------------ | ------- | ------- |
+| 请求率 | 每 1 分钟 120 个请求和每 1 小时 400 个请求 | 每 1 分钟 240 个请求和每 1 小时 800 个请求 |
+| 并发请求 | 5 个并发请求 | 20 个并发请求 |
+
+上述限制适用于下列资源:  
+onenote, notebook, sectionGroup, onenoteSection, onenotePage, onenoteResource, onenoteOperation
+
+可在 [OneNote API 限制及避免方法](https://developer.microsoft.com/zh-CN/office/blogs/onenote-api-throttling-and-how-to-avoid-it/) 中找到有关最佳做法的附加信息。  
+
+> **注意：** 上面列出的资源未在 `429 Too Many Requests` 响应上返回 `Retry-After` 标头。
+
 ### <a name="project-rome-service-limits"></a>Project Rome 服务限制
 
-| 请求类型 | 所有应用的每个用户限制 | | GET          | 每 5 分钟 400 个请求，每 1 天 12000 个请求 | | POST、PUT、PATCH、DELETE | 每 5 分钟 100 个请求，每 1 天 8000 个请求 |
+| 请求类型 | 所有应用的每个用户的限制 |
+| ------------ | --------------------------- |
+| GET          | 每 5 分钟 400 个请求和每天 12000 个请求 |
+| POST, PUT, PATCH, DELETE | 每 5 分钟 100 个请求和每天 8000 个请求 |
 
 上述限制适用于下列资源:  
 activityHistoryItem、userActivity
@@ -202,14 +225,14 @@ threatAssessmentRequest、threatAssessmentResult、mailAssessmentRequest、email
 
 ### <a name="identity-protection-and-conditional-access-service-limits"></a>身份保护和条件访问服务限制
 
-| 请求类型 | 每个租户的使用限制 |
+| 请求类型 | 所有应用的每个租户的使用限制 |
 | ------------ | ------- |
 | 任何 | 每秒1个请求 |
 
 上述限制适用于下列资源:  
 riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocation, ipNamedLocation, conditionalAccessPolicy.
 
-> **备注:** 目前上面列出的资源没有返回`Retry-After`页眉`429 Too Many Requests`上答复。
+> **注意：** 上面列出的资源未在 `429 Too Many Requests` 响应上返回 `Retry-After` 标头。
 
 ### <a name="insights-service-limits"></a>见解服务限制
 
@@ -224,7 +247,7 @@ riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocat
 
 以下限制适用于 `/reports` 上的所有请求。
 
-| 操作                 | 每个租户每个应用限制     | 每个租户的使用限制           |
+| 操作                 | 每个租户每个应用限制     | 所有应用的每个租户的使用限制 |
 |---------------------------|------------------------------|----------------------------|
 | 任何请求（CSV）         | 每10分钟14个请求   | 每10分钟40个请求 |
 | 任何请求（JSON、beta）  | 每10分钟100个请求  | 不适用                        |
@@ -235,9 +258,20 @@ riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocat
 
 以下限制适用于 `/invitations` 上的所有请求。
 
-| 操作                 | 每个租户的使用限制             |
+| 操作                 | 所有应用的每个租户的使用限制 |
 |---------------------------|------------------------------|
 | 任何操作             | 每 5 秒 150 个请求   |
+
+### <a name="security-detections-and-incidents-service-limits"></a>安全检测和事件服务限制
+
+以下限制适用于 `/security` 上的所有请求。
+
+| 操作                  | 每个租户每个应用限制     |
+|----------------------------|------------------------------|
+| `alert`、`securityActions`、`secureScore` 上的任何操作 | 每分钟 150 个请求      |
+| `tiIndicator` 上的任何操作 | 每分钟 1000 个请求 |
+| `secureScore` 或 `secureScorecontrolProfile` 上的任何操作 | 10 分钟内的 10,000 个 API 请求 |
+| `secureScore` 或 `secureScorecontrolProfile` 上的任何操作 | 4 个并发请求 |
 
 ### <a name="open-and-schema-extensions-service-limits"></a>开放和架构扩展服务限制
 
@@ -246,6 +280,17 @@ riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocat
 | 任何          | 每 10 秒 455 个请求 |
 
 上述限制适用于以下资源：openTypeExtension、schemaExtension、administrativeUnit、合同、设备、事件、组、消息、组织、帖子和用户。
+
+### <a name="identity-and-access-data-policy-operation-service-limits"></a>身份和访问数据策略操作服务限制
+
+| 请求类型 | 每个租户的使用限制 |
+| ------------ | ---------------- |
+| 发布于 `exportPersonalData` | 每天 1000 个针对任何主题的请求，每个主题每天 100 个请求 |
+| 任何其他请求 | 每分钟 10000 个请求 |
+
+上述限制适用于下列资源：dataPolicyOperation。
+
+> **注意：** 上面列出的资源未在 `429 Too Many Requests` 响应上返回 `Retry-After` 标头。
 
 <!-- { "blockType": "throttlinggenstart" } -->
 ### <a name="education-service-limits"></a>教育版服务限制

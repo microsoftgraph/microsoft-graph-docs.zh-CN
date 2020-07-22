@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 2e234134bb848b36768bfff9a17ca64f8db7a827
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: 691d72262eb7587fb60e1e387200f9f0f8c0c0ba
+ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45197091"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45224855"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -84,6 +84,7 @@ ms.locfileid: "45197091"
 ### <a name="identity-and-access"></a>身份和访问
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|添加项|v1.0|向 [directoryObject](/graph/api/resources/directoryObject?view=graph-rest-1.0) 资源添加了 [getAvailableExtensionProperties](/graph/api/directoryObject-getAvailableExtensionProperties?view=graph-rest-1.0) 方法。|
 | 添加项 | beta | 已将**设置**导航属性添加到[组织](/graph/api/resources/organization?view=graph-rest-beta)实体。 |
 | 添加项 | beta | 添加了 [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta) 实体。  |
 | 添加项 | beta | 已将 **profileCardProperties** 导航属性添加到 **organizationSettings** 实体。 |
@@ -96,6 +97,7 @@ ms.locfileid: "45197091"
 | 添加项 | beta | 向 [conditionalAccessGrantControls](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta) 实体添加了 **passwordChange** 授权控件。 |
 | 添加项 | beta | 向 [synchronizationSchema](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta) 实体添加了 **id** 属性。 |
 | 添加项 | beta | 向 [synchronization](/graph/api/resources/synchronization-synchronization?view=graph-rest-beta) 资源添加了[acquireAccessToken](/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta)方法|
+| Addition | beta | 添加了 [entitlementManagementSettings](/graph/api/resources/entitlementmanagementsettings?view=graph-rest-beta) 实体。 |
 
 ### <a name="people-and-workplace-intelligence--profile-card-customization"></a>人脉和工作区智能 | 个人资料卡片自定义
 | **更改类型** | **版本**   | **说明**                          |
@@ -379,7 +381,7 @@ ms.locfileid: "45197091"
 |添加项|beta|向 [group](/graph/api/resources/group?view=graph-rest-beta) 添加了 [evaluateDynamicMembership](/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta) 操作。 此外，还添加了以下支持资源类型：<ul><li>[evaluateDynamicMembershipResult](/graph/api/resources/evaluatedynamicmembershipresult?view=graph-rest-beta)</li><li>[expressionEvaluationDetails](/graph/api/resources/expressionevaluationdetails?view=graph-rest-beta)</li><li>[propertyToEvaluate](/graph/api/resources/propertytoevaluate?view=graph-rest-beta)</li></ul>|
 | 添加项 | beta | 向 [group](/graph/api/resources/group?view=graph-rest-beta) 实体添加了“resourceBehaviorOptions”和“resourceProvisioningOptions”属性。********|
 | 添加项 | v1.0 | 向 [group](/graph/api/resources/group?view=graph-rest-1.0) 实体添加了 **onPremisesDomainName**、**onPremisesNetBiosName** 和 **onPremisesSamAccountName** 属性。|
-| 添加项 | v1.0 | 向[世纪互联运营的中国区 Microsoft 云](deployments.md)中的**组**资源添加了对[订阅](/graph/api/resources/subscription)的支持。 |
+| Addition | v1.0 | 向[世纪互联运营的中国区 Microsoft 云](deployments.md)中的**组**资源添加了对[订阅](/graph/api/resources/subscription)的支持。 |
 
 ### <a name="identity-and-access"></a>身份和访问
 
@@ -1023,7 +1025,7 @@ ms.locfileid: "45197091"
 |添加项|beta|将 **managedBrowser** 属性添加到 [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-beta) 实体中|
 |添加项|beta|将 **ethernetMacAddress** 属性添加到 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 实体中|
 |添加项|beta|将 **displayName** 属性添加到 [windowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-windowsautopilotdeviceidentity?view=graph-rest-beta) 实体中|
-|添加项|beta|将 **managedDeviceCertificateStates** 导航属性添加到 [androidWorkProfilePkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-androidworkprofilepkcscertificateprofile?view=graph-rest-beta) 实体中|
+|Addition|beta|将 **managedDeviceCertificateStates** 导航属性添加到 [androidWorkProfilePkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-androidworkprofilepkcscertificateprofile?view=graph-rest-beta) 实体中|
 |更改|beta|更改了 [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript?view=graph-rest-beta) 实体上的以下属性的类型：<br/>将 **assignments** 从 [deviceManagementScriptAssignment](/graph/api/resources/intune-devices-devicemanagementscriptassignment?view=graph-rest-beta) 集合更改为[deviceHealthScriptAssignment](/graph/api/resources/intune-devices-devicehealthscriptassignment?view=graph-rest-beta) 集合<br/>|
 |添加项|beta|将 **complianceManagementPartners** 导航属性添加到 [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) 实体中|
 |添加项|beta|将 **userRoleScopeTags** 属性添加到 [auditActor](/graph/api/resources/intune-auditing-auditactor?view=graph-rest-beta) 复杂类型 |
@@ -4118,7 +4120,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | v1.0        | 新实体：</br>[contract](/graph/api/resources/contract?view=graph-rest-1.0) |
+| Addition        | v1.0        | 新实体：</br>[contract](/graph/api/resources/contract?view=graph-rest-1.0) |
 
 ### <a name="added-licensedetails-to-v10"></a>向 v1.0 添加了 licenseDetails
 
