@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: cbaf736f8296ef7125b8f22ae231169b6c4b2202
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 771052a57671c1993bec189808544c2d3582dcb2
+ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845930"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45384372"
 ---
 # <a name="azure-ad-policy-overview"></a>Azure AD 策略概述
 
@@ -29,6 +29,7 @@ Azure Active Directory （Azure AD）使用策略控制组织中的 Azure AD 功
 |[homeRealmDiscoveryPolicies](homeRealmDiscoveryPolicy.md)| 表示用于控制联盟用户的 Azure Active Directory 身份验证行为的策略，尤其适用于联合域中的自动加速和用户身份验证限制。| 将所有用户配置为跳过 "主页领域发现"，并将其直接路由到 ADFS 进行身份验证。 |
 |[tokenLifetimePolicies](tokenlifetimepolicy.md)|表示用于访问受保护的资源的访问令牌的生存期持续时间。| 配置一个具有短于默认令牌生存期的特别敏感的应用程序。|
 |[tokenIssuancePolicy](tokenIssuancePolicy.md)|表示指定由 Azure AD 颁发的 SAML 令牌的特征的策略。| 配置用于发出 SAML 令牌的签名算法或 SAML 令牌版本。
+|[identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md)|代表 "Azure AD 安全性默认策略"。| 配置 Azure AD 安全性默认策略以防止受到常见攻击。
 
 ## <a name="next-steps"></a>后续步骤
 
