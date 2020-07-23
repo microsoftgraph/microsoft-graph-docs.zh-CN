@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 676e51da5654b94b6bd25ea7978bef62ea398caf
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: 5aac8896fc3f81005450dc0075199720954f400c
+ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45196895"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45384323"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -931,6 +931,23 @@ _IdentityRiskyUser.Read.All_ 和 _IdentityRiskyUser.ReadWrite.ALL_ 仅适用于�
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
 ---
+
+## <a name="information-protection-policy-permissions"></a>信息保护策略权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _InformationProtectionPolicy.Read_ |   读取用户的敏感度标签和标签策略 | 允许应用代表已登录用户读取信息保护敏感度标签和标签策略设置。 | 是 | 否 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _InformationProtectionPolicy.Read.All_ |   读取组织的所有已发布标签和标签策略 | 允许应用在没有登录用户的情况下读取整个组织或特定用户的已发布敏感度标签和标签策略设置。 | 是 |
+
+---
+
 
 ## <a name="intune-device-management-permissions"></a>Intune 设备管理权限
 
