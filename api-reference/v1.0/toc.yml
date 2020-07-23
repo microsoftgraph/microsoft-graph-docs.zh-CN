@@ -1086,7 +1086,7 @@ items:
           - name: 在线会议
             href: resources/onlinemeeting.md
             items:
-              - name: 创建
+              - name: Create
                 href: api/application-post-onlinemeetings.md
               - name: 获取
                 href: api/onlinemeeting-get.md
@@ -3801,6 +3801,62 @@ items:
                     href: api/certificatebasedauthconfiguration-get.md
                   - name: 删除
                     href: api/certificatebasedauthconfiguration-delete.md
+              - name: 条件访问
+                items:
+                  - name: 策略
+                    items:
+                      - name: 条件访问策略
+                        href: resources/conditionalaccesspolicy.md
+                      - name: 列表
+                        href: api/conditionalaccessroot-list-policies.md
+                      - name: 创建
+                        href: api/conditionalaccessroot-post-policies.md
+                      - name: 获取
+                        href: api/conditionalaccesspolicy-get.md
+                      - name: 更新
+                        href: api/conditionalaccesspolicy-update.md
+                      - name: 删除
+                        href: api/conditionalaccesspolicy-delete.md
+                  - name: 命名位置
+                    items:
+                      - name: 命名位置
+                        items:
+                          - name: 命名位置
+                            href: resources/namedlocation.md
+                          - name: 列表
+                            href: api/conditionalaccessroot-list-namedlocations.md
+                          - name: 获取
+                            href: api/namedlocation-get.md
+                          - name: 删除
+                            href: api/namedlocation-delete.md
+                      - name: 国家/地区命名的位置
+                        items:
+                          - name: 国家/地区命名的位置
+                            href: resources/countrynamedlocation.md
+                          - name: 列表
+                            href: api/conditionalaccessroot-list-namedlocations.md
+                          - name: 创建
+                            href: api/conditionalaccessroot-post-namedlocations.md
+                          - name: 获取
+                            href: api/countrynamedlocation-get.md
+                          - name: 更新
+                            href: api/countrynamedlocation-update.md
+                          - name: 删除
+                            href: api/countrynamedlocation-delete.md
+                      - name: IP 命名位置
+                        items:
+                          - name: IP 命名位置
+                            href: resources/ipnamedlocation.md
+                          - name: 列表
+                            href: api/conditionalaccessroot-list-namedlocations.md
+                          - name: 创建
+                            href: api/conditionalaccessroot-post-namedlocations.md
+                          - name: 获取
+                            href: api/ipnamedlocation-get.md
+                          - name: 更新
+                            href: api/ipnamedlocation-update.md
+                          - name: 删除
+                            href: api/ipnamedlocation-delete.md
               - name: 数据策略操作
                 href: resources/datapolicyoperation.md
                 items:
@@ -3960,6 +4016,13 @@ items:
                         href: api/tokenlifetimepolicy-delete.md
                       - name: 列出已应用到应用程序的策略
                         href: api/tokenlifetimepolicy-list-appliesto.md
+                  - name: 安全性默认策略
+                    href: resources/identitysecuritydefaultsenforcementpolicy.md
+                    items:
+                      - name: 获取
+                        href: api/identitysecuritydefaultsenforcementpolicy-get.md
+                      - name: 更新
+                        href: api/identitysecuritydefaultsenforcementpolicy-update.md
       - name: 邮件
         displayName: 'Outlook, Outlook mail'
         items:
@@ -4902,7 +4965,7 @@ items:
               - name: 打开班次轮换更改请求
                 href: resources/openshiftchangerequest.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/openshiftchangerequest-list.md
                   - name: 创建
                     href: api/openshiftchangerequest-post.md
@@ -4922,7 +4985,7 @@ items:
               - name: 交换班次更改请求
                 href: resources/swapshiftschangerequest.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/swapshiftschangerequest-list.md
                   - name: 创建
                     href: api/swapshiftschangerequest-post.md
@@ -4935,7 +4998,7 @@ items:
               - name: 休假
                 href: resources/timeoff.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/schedule-list-timesoff.md
                   - name: 创建
                     href: api/schedule-post-timesoff.md
@@ -4948,7 +5011,7 @@ items:
               - name: 休假原因
                 href: resources/timeoffreason.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/schedule-list-timeoffreasons.md
                   - name: 创建
                     href: api/schedule-post-timeoffreasons.md
