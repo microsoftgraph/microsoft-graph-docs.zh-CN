@@ -2,15 +2,15 @@
 title: 获取 identitySecurityDefaultsEnforcementPolicy
 description: 检索 identitysecuritydefaultsenforcementpolicy 对象的属性和关系。
 localization_priority: Normal
-author: dkershaw10
+author: rohinigoyal1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8feba00ec3757a0c96d80047d8e61360b4c98f73
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 9038d009465f685ae6722ce3785499ad21aaf070
+ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218841"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45384337"
 ---
 # <a name="get-identitysecuritydefaultsenforcementpolicy"></a>获取 identitySecurityDefaultsEnforcementPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "43218841"
 
 检索[identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md)对象的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,7 +40,7 @@ GET /policies/identitySecurityDefaultsEnforcementPolicy
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持`select` OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持 `select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /policies/identitySecurityDefaultsEnforcementPolicy
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md)对象。
 
 ## <a name="examples"></a>示例
 

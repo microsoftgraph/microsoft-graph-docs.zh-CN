@@ -2,15 +2,15 @@
 title: identitySecurityDefaultsEnforcementPolicy 资源类型
 description: 表示 Azure Active Directory 安全性默认策略。 安全性默认值包含针对常见攻击进行保护的预先配置的安全设置。
 localization_priority: Normal
-author: dkershaw10
+author: rohinigoyal1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4771af4502df2154435ae6b403fa12e3e265217a
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 70dc63b9cba3db7c435b357f880084d314d0c884
+ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218462"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45384393"
 ---
 # <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a>identitySecurityDefaultsEnforcementPolicy 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "43218462"
 
 继承自[policyBase](../resources/policybase.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|

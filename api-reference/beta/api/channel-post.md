@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9e98e389882dfe2f6dbe55194c6e589829a6e6f4
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: d496f69b20613c4c42c7ce842d23299d653c2ada
+ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491586"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45384344"
 ---
 # <a name="create-channel"></a>创建频道
 
@@ -20,7 +20,7 @@ ms.locfileid: "44491586"
 
 在 Microsoft 团队中创建请求正文中指定的新[频道](../resources/channel.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "44491586"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | "创建"、"组"、"全部"、"全部"、"全部"    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 例如，Group *、信道. Create、Group. All、    |
+|应用程序 | 例如，Group *、信道. Create、Group. All、    |
 
 > **注意**：标记为 * 的权限使用[特定于资源的同意]( https://aka.ms/teams-rsc)。
 
@@ -133,7 +133,7 @@ POST https://graph.microsoft.com/beta/teams/{group_id}/channels
 Content-type: application/json
 
 {
-  "@odata.type": "#Microsoft.Teams.Core.channel",
+  "@odata.type": "#Microsoft.Graph.channel",
   "membershipType": "private",
   "displayName": "My First Private Channel",
   "description": "This is my first private channels",

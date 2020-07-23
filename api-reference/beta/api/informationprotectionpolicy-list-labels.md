@@ -5,16 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 94b47a2bac3e3000af5123bf2a7b4dd88c43e0cf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4aa7f61337b9dbe857354bbcf16abf3a881fa10f
+ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446336"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45384309"
 ---
 # <a name="informationprotectionlabel-listlabels"></a>informationProtectionLabel: listLabels
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,15 +33,20 @@ ms.locfileid: "42446336"
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
-
+若要获取对登录用户或指定用户可用的标签，请执行以下操作：
 ```http
-GET me/informationprotection/policy/labels
-GET /informationprotection/policy/labels
+GET /me/informationProtection/policy/labels
+GET /users/{id | user-principal-name}/informationProtection/policy/labels
+```
+
+若要获取组织可使用的标签，请执行以下操作：
+```http
+GET /informationProtection/policy/labels
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -56,7 +61,7 @@ GET /informationprotection/policy/labels
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[informationProtectionLabel](../resources/informationprotectionlabel.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[informationProtectionLabel](../resources/informationprotectionlabel.md)对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -71,7 +76,7 @@ GET /informationprotection/policy/labels
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels
+GET https://graph.microsoft.com/beta/me/informationProtection/policy/labels
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-labels-csharp-snippets.md)]

@@ -2,15 +2,15 @@
 title: 更新 identitySecurityDefaultsEnforcementPolicy
 description: 更新 identitySecurityDefaultsEnforcementPolicy 对象的属性。
 localization_priority: Normal
-author: dkershaw10
+author: rohinigoyal1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 653397a076e930ac38119c99703db97157b84ccb
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: bf4566e08a07147144993c7b17cacbd22890c54e
+ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556273"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45384316"
 ---
 # <a name="update-identitysecuritydefaultsenforcementpolicy"></a>更新 identitySecurityDefaultsEnforcementPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "44556273"
 
 更新[identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md)对象的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "44556273"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy。 Read. All 和 ConditionalAccess |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Policy。 Read. All 和 ConditionalAccess |
+| 应用程序                            | Policy。 Read. All 和 ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP 请求
 
