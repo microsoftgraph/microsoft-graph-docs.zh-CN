@@ -5,12 +5,12 @@ ms.date: 4/9/2019
 author: anthona
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: db528c5e3e687d32ceacae327531a3f6c7ccee90
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 5823e994a5a4cb5451dcb32875a76c42c5ecb503
+ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618780"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45384330"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>在 Microsoft Graph 中使用 People API 获取与你相关度最高的人员的信息
 
@@ -478,7 +478,7 @@ Content-type: application/json
 ### <a name="types-of-results-included"></a>包含的结果类型
 默认情况下，Microsoft Graph 提供仅限邮箱的结果，不包括目录/组织结果。 要检索目录结果，请如下所示指定 HTTP 标头。
 
-```
+```http
 "X-PeopleQuery-QuerySources: Mailbox,Directory”
 ```
 ### <a name="select-the-fields-to-return"></a>选择要返回的字段
@@ -827,7 +827,7 @@ Content-type: application/json
 
 使用 *$search* 参数选择符合某组特定条件的人员。
 
-以下搜索查询可返回与 `/me` 相关且其 **displayName** 或 *emailAddress" 包含以字母“j”开头的单词的人员。
+以下搜索查询返回与 `/me` 相关且 **displayName** 或 **emailAddress** 包含以字母“j”开头的单词的人员。
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$search=j
