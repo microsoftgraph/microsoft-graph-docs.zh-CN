@@ -669,9 +669,9 @@ items:
                     href: api/application-addpassword.md
                   - name: 删除密码
                     href: api/application-removepassword.md
-                  - name: 添加密钥
+                  - name: 加号键
                     href: api/application-addkey.md
-                  - name: Remove 键
+                  - name: 删除键
                     href: api/application-removekey.md
               - name: 扩展
                 items:
@@ -722,6 +722,8 @@ items:
                 href: api/serviceprincipal-update.md
               - name: 删除
                 href: api/serviceprincipal-delete.md
+              - name: 获取 Delta
+                href: api/serviceprincipal-delta.md
               - name: 列出创建的对象
                 href: api/serviceprincipal-list-createdobjects.md
               - name: 列出拥有的对象
@@ -747,9 +749,9 @@ items:
                     href: api/serviceprincipal-addpassword.md
                   - name: 删除密码
                     href: api/serviceprincipal-removepassword.md
-                  - name: 添加密钥
+                  - name: 加号键
                     href: api/serviceprincipal-addkey.md
-                  - name: Remove 键
+                  - name: 删除键
                     href: api/serviceprincipal-removekey.md
               - name: 委派权限授予
                 items:
@@ -2542,7 +2544,7 @@ items:
               - name: 适用于企业的 Windows 更新配置
                 href: resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md
                 items:
-                  - name: 列表
+                  - name: 列出
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-list.md
                   - name: 获取
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-get.md
@@ -2578,7 +2580,7 @@ items:
               - name: 审核事件
                 href: resources/intune-auditing-auditevent.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/intune-auditing-auditevent-list.md
                   - name: 获取
                     href: api/intune-auditing-auditevent-get.md
