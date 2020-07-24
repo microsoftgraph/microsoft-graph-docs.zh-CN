@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 1a9458ff742ff6e40fdb00faff4e9331753510c3
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 149164ed9c066e58ec2d0ba8962a080aab010886
+ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125020"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45224953"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>在 Microsoft Graph 中使用组
 
@@ -18,15 +18,15 @@ ms.locfileid: "43125020"
 
 > **注意**：只能通过工作或学校帐户创建组。 个人 Microsoft 帐户不支持组。
 
-| 类型              | 用例 | groupType | 启用邮件 | 启用安全机制 | 可以通过 API 创建和管理吗？ |
+| 类型              | 用例 | groupTypes | 启用邮件 | 启用安全机制 | 可以通过 API 创建和管理吗？ |
 |-------------------|----------|-----------|--------------|------------------|--------------------------------|
-| [Office 365 组](#office-365-groups) | 促进用户与共享 Microsoft Online 资源的协作。 | `["Unified"]` | `true` | `false` | 可访问 |
+| [Microsoft 365 组](#microsoft-365-groups) | 促进用户与共享 Microsoft Online 资源的协作。 | `["Unified"]` | `true` | `false` | 可访问 |
 | [安全组](#security-groups-and-mail-enabled-security-groups) | 控制用户对应用中资源的访问。 | `[]` | `false` | `true` | 是 |
 | [启用邮件的安全组](#security-groups-and-mail-enabled-security-groups) | 使用共享的组邮箱，控制用户对应用中资源的访问。 | `[]` | `true` | `true` | 否 |
-| 通讯组 | 将邮件分发给组中的成员。 建议使用 Office 365 组，因为它提供的资源集更丰富。 | `[]` | `true` | `false` | 否 |
+| 通讯组 | 将邮件分发给组中的成员。 建议使用 Microsoft 365 组，因为它提供的资源集更丰富。 | `[]` | `true` | `false` | 否 |
 
-## <a name="office-365-groups"></a>Office 365 组
-Office 365 组的强大之处在于它的协作本质，它是项目或团队中相互协作的用户的理想之选。 创建时，它们包含组成员共享的资源，包括：
+## <a name="microsoft-365-groups"></a>Microsoft 365 组
+Microsoft 365 组的强大之处在于它的协作本质，它是项目或团队中相互协作的用户的理想之选。 创建时，它们包含组成员共享的资源，包括：
 
 - Outlook 对话
 - Outlook 日历
@@ -66,7 +66,7 @@ Office 365 组的强大之处在于它的协作本质，它是项目或团队中
     "visibility": "Public"
 }
 ```
-若要详细了解 Office 365 组和管理员体验，请参阅[了解 Office 365 组](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
+若要详细了解 Microsoft 365 组和管理员体验，请参阅[了解 Microsoft 365 组](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
 
 ## <a name="security-groups-and-mail-enabled-security-groups"></a>安全组和启用邮件的安全组
 
@@ -98,7 +98,7 @@ Office 365 组的强大之处在于它的协作本质，它是项目或团队中
 ```
 ## <a name="dynamic-membership"></a>动态成员资格
 
-所有类型的组都可以有成员资格规则，用于根据用户属性自动在组中添加或删除成员。 例如，“市场营销部员工”组包含所有 department 属性设置为“Marketing”的用户，这样可以将新入职的市场营销部员工自动添加到组中，并自动在组中删除从市场营销部离职的员工。 在组创建期间，可以在“membershipRule”字段中将此规则指定为 `"membershipRule": 'user.department -eq "Marketing"'`。 GroupType 还必须包括 `"DynamicMembership"`。 下面的请求为市场营销部员工新建 Office 365 组：
+所有类型的组都可以有成员资格规则，用于根据用户属性自动在组中添加或删除成员。 例如，“市场营销部员工”组包含所有 department 属性设置为“Marketing”的用户，这样可以将新入职的市场营销部员工自动添加到组中，并自动在组中删除从市场营销部离职的员工。 在组创建期间，可以在“membershipRule”字段中将此规则指定为 `"membershipRule": 'user.department -eq "Marketing"'`。 GroupTypes 还必须包括 `"DynamicMembership"`。 下面的请求为市场营销部员工新建 Microsoft 365 组：
 
 ```http
 POST https://graph.microsoft.com/beta/groups
@@ -123,11 +123,11 @@ POST https://graph.microsoft.com/beta/groups
 
 ## <a name="other-types-of-groups"></a>其他类型的组
 
-Yammer 中的 office 365 组用于通过 Yammer 帖子促进用户协作。 可以通过读取请求返回这种类型的组，但无法通过 API 访问它们的帖子。 如果对组启用了 Yammer 帖子和对话源，将会禁用默认的 Office 365 组对话。 若要了解详细信息，请参阅 [Yammer 开发人员 API 文档](https://developer.yammer.com/docs)。
+Yammer 中的 Microsoft 365 组用于通过 Yammer 帖子促进用户协作。 可以通过读取请求返回这种类型的组，但无法通过 API 访问它们的帖子。 如果对组启用了 Yammer 帖子和对话源，将会禁用默认的 Microsoft 365 组对话。 若要了解详细信息，请参阅 [Yammer 开发人员 API 文档](https://developer.yammer.com/docs)。
 
 ## <a name="group-based-licensing"></a>基于组的许可
 
-可以使用基于组的许可将一个或多个产品许可证分配给 Azure AD 组。 Azure AD 可确保许可证分配给组的所有成员。 任何加入该组的新成员都获得了相应的许可证。 他们离开组时，将移除这些许可证。 功能只能与安全组和有 `securityEnabled=TRUE` 的 Office 365 组一起使用。 若要了解基于组的许可的详细信息，请参阅[什么是 Azure Active Directory 中基于组的许可？](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
+可以使用基于组的许可将一个或多个产品许可证分配给 Azure AD 组。 Azure AD 可确保许可证分配给组的所有成员。 任何加入该组的新成员都获得了相应的许可证。 他们离开组时，将移除这些许可证。 功能只能与安全组和有 `securityEnabled=TRUE` 的 Microsoft 365 组一起使用。 若要了解基于组的许可的详细信息，请参阅[什么是 Azure Active Directory 中基于组的许可？](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
 
 ## <a name="common-use-cases"></a>常见用例
 
@@ -140,4 +140,7 @@ Yammer 中的 office 365 组用于通过 Yammer 帖子促进用户协作。 可�
 | **组成员资格方法** | | |
 | 列出组中的成员，并添加或删除成员。 | [user](user.md) <br/> [group](group.md)| [列出成员](../api/group-list-members.md) <br/> [添加成员](../api/group-post-members.md) <br/> [删除成员](../api/group-delete-members.md)|
 | 确定用户是否是组成员，并获取用户所属的全部组。 | [user](user.md) <br/> [group](group.md)| [检查成员组](../api/group-checkmembergroups.md) <br/> [获取成员组](../api/group-getmembergroups.md)|
-| 列出组的所有者，并添加或删除所有者。 | [user](user.md) <br/> [group](group.md)| [列出所有者](../api/group-list-members.md) <br/> [添加成员](../api/group-post-members.md) <br/> [删除成员](../api/group-delete-members.md)|
+| 列出组的所有者，并添加或删除所有者。 | [user](user.md) <br/> [group](group.md)| [列出所有者](../api/group-list-members.md) <br/> [添加成员](../api/group-post-members.md) <br/> [Remove member](../api/group-delete-members.md)|
+
+## <a name="whats-new"></a>最近更新
+了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。

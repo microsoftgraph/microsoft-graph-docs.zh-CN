@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: e199e2c9fa0240eda593843d88490e7f22b0f506
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: d9d20e934965485c9c6262ceacb86ca304bc134d
+ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744080"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "45408125"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -106,7 +106,7 @@ POST https://graph.microsoft.com/beta/subscriptions
 Content-type: application/json
 
 {
-   "changeType": "updated",
+   "changeType": "created",
    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
    "resource": "me/mailFolders('Inbox')/messages",
    "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
@@ -166,7 +166,7 @@ Content-length: 252
   "id": "7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
   "resource": "me/mailFolders('Inbox')/messages",
   "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
-  "changeType": "updated",
+  "changeType": "created",
   "clientState": "secretClientValue",
   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime": "2016-11-20T18:23:45.9356913Z",
