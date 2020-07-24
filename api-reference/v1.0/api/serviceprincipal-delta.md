@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 19d7e364c5a3c8a6ea7aa9839ec53320b8c4c434
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: bcdafd649cfc313bfbb8d019c6bb3a6e9080051b
+ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383558"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "45408104"
 ---
 # <a name="serviceprincipal-delta"></a>servicePrincipal： delta
 
@@ -36,16 +36,16 @@ ms.locfileid: "44383558"
 GET /servicePrincipals/delta
 ```
 
-### <a name="query-parameters"></a>查询参数
+## <a name="query-parameters"></a>查询参数
 
 跟踪更改会产生一个或多个**delta**函数调用的往返。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。 只需预先指定所需的任何查询参数一次。 在后续请求中，可以复制并应用之前响应中返回的 `nextLink` 或 `deltaLink` URL，因为此 URL 已包含所需的编码参数。
 
-| 查询参数      | 类型   |Description|
+| 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
 | $deltatoken | string | [state token](/graph/delta-query-overview) `deltaLink` 为同一资源集合在上一个**delta**函数调用的 URL 中返回的状态令牌，指示该往返一轮的更改。 将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
 | $skiptoken | string | 在上一个 delta 函数调用的 URL 中返回的[状态令牌](/graph/delta-query-overview) `nextLink` ，指示同一个资源集合中有进一步的更改需要跟踪。 **delta** |
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+### <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持 OData 查询参数来帮助自定义响应。
 
@@ -55,7 +55,7 @@ GET /servicePrincipals/delta
   * 唯一受支持的 `$filter` 表达式是跟踪对特定资源所做的更改，其 id： `$filter=id+eq+{value}` 或 `$filter=id+eq+{value1}+or+id+eq+{value2}` 。 您可以指定的 id 数受最大 URL 长度的限制。
 
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | 持有者&lt;令牌&gt;|
