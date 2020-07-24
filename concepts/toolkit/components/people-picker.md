@@ -3,12 +3,12 @@ title: 人员-选取器组件
 description: 您可以使用 "人员-选取器 web 组件" 搜索指定数量的人员，并通过 Microsoft Graph 呈现结果列表。
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: e3e656c6aef0ab2af9878fb3e4738ade912c4685
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 2e7d03a0c6728d3ff775282343a847ba88afbf42
+ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681884"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "45408069"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Microsoft Graph 工具包中的人员选取器组件
 
@@ -34,6 +34,7 @@ ms.locfileid: "44681884"
 | group 类型     | groupType      | 要搜索的组类型。 可用选项包括： `unified` 、 `security` 、 `mailenabledsecurity` 、 `distribution` 、 `any` 。 默认值为 `any`。 如果该 `type` 属性设置为，则此属性不起作用 `person` 。                                                                           |
 |  选定-人员  | selectedPeople     | 选定人员的数组。 将此值设置为以编程方式选择人员。|
 | people   | people    | 在搜索结果中找到并呈现的人员的数组 |
+| 默认选择的用户 id | defaultSelectedUserIds | 当提供了以逗号分隔的 Microsoft Graph 用户 Id 的字符串时，组件将呈现在初始化时选择的各个用户。
 
 下面是一个 `show-max` 示例。
 
@@ -93,7 +94,9 @@ mgt-people-picker {
 
     --dropdown-background-color: #1f1f1f; /* selection area background color */
     --dropdown-item-hover-background: #333d47; /* person background color on hover */
-
+    
+    --selected-person-background-color: #f1f1f1; /* person item background color */
+    
     --font-color: white; /* input area border focus color */
     --placeholder-default-color: #f1f1f1; /* placeholder text color default*/
     --placeholder-focus-color: rgba(255, 255, 255, 0.8); /* placeholder text focus color */
@@ -104,14 +107,14 @@ mgt-people-picker {
 
  `mgt-people-picker`支持多个模板，这些[模板](../templates.md)可用于替换组件的某些部分。 若要指定模板，请在 `<template>` 组件内添加一个元素，并将 `data-type` 值设置为下列值之一。
 
-| 数据类型 | 数据上下文 | Description |
+| 数据类型 | 数据上下文 | 说明 |
 | --- | --- | --- |
 |  默认值 | null：无数据 | 用于覆盖整个组件的呈现的模板。
 | 装载 | null：无数据 | 在发出对 graph 的请求时用于呈现选取器状态的模板。 |
 | error | null：无数据 | 用户搜索不返回用户时使用的模板。 |
 | 无数据 | null：无数据 | 如果用户搜索不返回用户，则使用备用模板。 |
 | 选定的人员 | 人员：人员详细信息对象 | 呈现所选人员的模板。 |
-| 朋友 | 人员：人员详细信息对象 | 用于在下拉列表中呈现人员的模板。 |
+| person | 人员：人员详细信息对象 | 用于在下拉列表中呈现人员的模板。 |
 
 下面的示例演示如何使用 `error` 模板。
 
@@ -127,7 +130,7 @@ mgt-people-picker {
 
 此组件使用以下 Microsoft Graph Api 和权限。
 
-| API                                                                                                              | Permission  |
+| API                                                                                                              | 权限  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
 | [/me/people](/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read        |
 | [/users](/graph/api/user-list?view=graph-rest-1.0)  | User.ReadBasic.All |

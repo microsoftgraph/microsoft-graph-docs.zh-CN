@@ -4,16 +4,16 @@ description: 列出并描述 Microsoft Graph 中的工作簿和图表 Api 的错
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d706a27262fd32c10fee203f3158b70c64ae180a
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: 26ddbdb9e1320a999e763a1c6b844f944a7de6f7
+ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45197439"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "45408047"
 ---
 # <a name="error-codes-for-workbooks-and-charts-apis-in-microsoft-graph"></a>Microsoft Graph 中的工作簿和图表 Api 的错误代码
 
-本文介绍当通过 API 发送的请求失败时，由 Microsoft Graph 中的工作簿和图表 Api 返回的错误代码。 有关 Microsoft Graph 中的错误响应和资源类型的更多详细信息，请参阅[错误](/graph/errors.md)。
+本文介绍当通过 API 发送的请求失败时，由 Microsoft Graph 中的工作簿和图表 Api 返回的错误代码。 有关 Microsoft Graph 中的错误响应和资源类型的更多详细信息，请参阅[错误](/concepts/errors.md)。
 
 ## <a name="error-code"></a>错误代码
 
