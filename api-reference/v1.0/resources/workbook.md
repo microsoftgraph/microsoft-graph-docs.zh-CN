@@ -1,60 +1,41 @@
 ---
 title: 工作簿资源类型
-description: 工作簿是顶级对象，它包含相关 workbook 对象，例如工作表、表、范围等。
+description: 包含相关 workbook 对象的顶级对象，例如 worksheet、table 和 range。
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a143cde5a782801c2e840dd263a107eceba2342f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5fc1da837c3aacf92136d02371369e1f2ea40005
+ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533393"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "45408041"
 ---
 # <a name="workbook-resource-type"></a>工作簿资源类型
 
 命名空间：microsoft.graph
 
-工作簿是顶级对象，它包含相关 workbook 对象，例如工作表、表、范围等。
-
-## <a name="json-representation"></a>JSON 表示形式
-
-下面是资源的 JSON 表示形式。
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbook"
-}-->
-
-```json
-{
-  "names": [{"@odata.type": "microsoft.graph.workbookNamedItem"}],
-  "tables": [{"@odata.type": "microsoft.graph.workbookTable"}],
-  "worksheets": [{"@odata.type": "microsoft.graph.workbookWorksheet"}]
-}
-```
-
-## <a name="properties"></a>属性
-无
+包含相关 workbook 对象的顶级对象，例如 worksheet、table 和 range。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[Create Session](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |创建工作簿会话以启动永久或非永久会话。|
-|[Close Session](../api/workbook-closesession.md) | 无 |关闭现有会话。|
-|[Refresh Session](../api/workbook-refreshsession.md) | 无 |刷新现有会话。|
+|[创建会话](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |创建工作簿会话以启动永久或非永久会话。|
+|[关闭会话](../api/workbook-closesession.md) | 无 |关闭现有会话。|
+|[刷新会话](../api/workbook-refreshsession.md) | 无 |刷新现有会话。|
 
+## <a name="properties"></a>属性
+无。
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|names|[WorkbookNamedItem](nameditem.md) 集合|表示工作簿范围内的已命名项目（称为区域和常量）的集合。只读。|
-|表格|[WorkbookTable](table.md) 集合|表示与工作簿关联的表的集合。只读。|
-|Worksheets|[WorkbookWorksheet](worksheet.md) 集合|表示与工作簿关联的工作表的集合。只读。|
+|names|[workbookNamedItem](nameditem.md) 集合|表示工作簿范围内的已命名项目（称为区域和常量）的集合。只读。|
+|表格|[workbookTable](table.md) 集合|表示与工作簿关联的表的集合。只读。|
+|Worksheets|[workbookWorksheet](worksheet.md) 集合|表示与工作簿关联的工作表的集合。 只读。|
+|operations|[workbookOperation](workbookoperation.md) 集合|工作簿操作的状态。 不支持获取操作集合，但如果响应中返回 `Location` 标头，可以获取长时间运行操作的状态。 只读。|
 
 ## <a name="functions"></a>函数
 
@@ -157,7 +138,22 @@ content-type: application/json;odata.metadata
   "value": 30
 }
 ```
+## <a name="json-representation"></a>JSON 表示形式
 
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbook"
+}-->
+
+```json
+{
+  "names": [{"@odata.type": "microsoft.graph.workbookNamedItem"}],
+  "tables": [{"@odata.type": "microsoft.graph.workbookTable"}],
+  "worksheets": [{"@odata.type": "microsoft.graph.workbookWorksheet"}]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
