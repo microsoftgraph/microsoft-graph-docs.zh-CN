@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: a62b88927f33b12f9e9738f8b8ba299a22f6d099
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: 8af7a4ce6c303e2ac07e4387ff3dbad38abd735e
+ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45197063"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "45408090"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -280,6 +280,20 @@ riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocat
 | 任何          | 每 10 秒 455 个请求 |
 
 上述限制适用于以下资源：openTypeExtension、schemaExtension、administrativeUnit、合同、设备、事件、组、消息、组织、帖子和用户。
+
+### <a name="files-and-lists-service-limits"></a>文件和列表服务限制
+
+OneDrive、OneDrive for Business 和 SharePoint Online 的服务限制不可用。 有关详细信息，请参阅[为什么不能告诉我确切的限制？](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online#why-cant-you-just-tell-me-the-exact-throttling-limits)。
+
+上述信息适用于以下资源：  
+baseItem、baseItemVersion、columnDefinition、columnLink、contentType、drive、driveItem、driveItemVersion、fieldValueSet、itemActivity、itemActivityStat、itemAnalytics、list、listItem、listItemVersion、permission、sharedDriveItem、site 和 thumbnailSet。
+
+### <a name="tasks-and-plans-service-limits"></a>任务和计划服务限制
+
+Planner 的服务限制不可用。
+
+上述信息适用于以下资源：  
+planner、plannerAssignedToTaskBoardTaskFormat、plannerBucket、plannerBucketTaskBoardTaskFormat、plannerGroup、plannerPlan、plannerPlanDetails、plannerProgressTaskBoardTaskFormat、plannerTask、plannerTaskDetails 和 plannerUser。
 
 ### <a name="identity-and-access-data-policy-operation-service-limits"></a>身份和访问数据策略操作服务限制
 
