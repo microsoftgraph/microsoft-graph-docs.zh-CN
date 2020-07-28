@@ -4,28 +4,28 @@ description: 在 Outlook 中，会议组织者可以允许被邀请者建议备�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 3e391f82670a2b9a9807ac88cb128ba909264b8b
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: d1273c967f9ea1476e83e7f2905c7ed4c29808d6
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622725"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427478"
 ---
-# <a name="propose-new-meeting-times-in-outlook-preview"></a><span data-ttu-id="6a2ac-103">在 Outlook 中建议新的会议时间（预览）</span><span class="sxs-lookup"><span data-stu-id="6a2ac-103">Propose new meeting times in Outlook (preview)</span></span>
+# <a name="propose-new-meeting-times-in-outlook"></a><span data-ttu-id="734fd-103">在 Outlook 中建议新的会议时间</span><span class="sxs-lookup"><span data-stu-id="734fd-103">Propose new meeting times in Outlook</span></span>
 
-<span data-ttu-id="6a2ac-104">在 Outlook 中，如果被邀请者无法在原始设置的日期/时间参加会议并暂定接受或拒绝，则会议组织者可以允许被邀请者建议备选会议时间。</span><span class="sxs-lookup"><span data-stu-id="6a2ac-104">In Outlook, a meeting organizer can allow invitees to propose alternative meeting times, if they cannot meet at the original set date/time and accept tentatively or decline.</span></span> <span data-ttu-id="6a2ac-105">组织者可通过适当调整会议时间来接受建议。</span><span class="sxs-lookup"><span data-stu-id="6a2ac-105">The organizer can accept a proposal by adjusting the meeting time as appropriate.</span></span>
+<span data-ttu-id="734fd-104">在 Outlook 中，如果被邀请者无法在原始设置的日期/时间参加会议并暂定接受或拒绝，则会议组织者可以允许被邀请者建议备选会议时间。</span><span class="sxs-lookup"><span data-stu-id="734fd-104">In Outlook, a meeting organizer can allow invitees to propose alternative meeting times, if they cannot meet at the original set date/time and accept tentatively or decline.</span></span> <span data-ttu-id="734fd-105">组织者可通过适当调整会议时间来接受建议。</span><span class="sxs-lookup"><span data-stu-id="734fd-105">The organizer can accept a proposal by adjusting the meeting time as appropriate.</span></span>
 
-## <a name="example-attendee-responds-tentative-and-suggests-a-different-datetime"></a><span data-ttu-id="6a2ac-106">示例：与会者做出暂定响应并建议不同的日期/时间</span><span class="sxs-lookup"><span data-stu-id="6a2ac-106">Example: attendee responds tentative and suggests a different date/time</span></span>
-<span data-ttu-id="6a2ac-107">下面是一个示例，其中 Alex 邀请 Adele 共进午餐，Adele 暂定接受并建议备选日期和时间，然后 Alex 通过相应地调整会议来接受建议：</span><span class="sxs-lookup"><span data-stu-id="6a2ac-107">The following is an example where Alex invites Adele to lunch, Adele tentatively accepts and proposes an alternative date and time, and Alex accepts the proposal by adjusting the meeting accordingly:</span></span>
+## <a name="example-attendee-responds-tentative-and-suggests-a-different-datetime"></a><span data-ttu-id="734fd-106">示例：与会者做出暂定响应并建议不同的日期/时间</span><span class="sxs-lookup"><span data-stu-id="734fd-106">Example: attendee responds tentative and suggests a different date/time</span></span>
+<span data-ttu-id="734fd-107">下面是一个示例，其中 Alex 邀请 Adele 共进午餐，Adele 暂定接受并建议备选日期和时间，然后 Alex 通过相应地调整会议来接受建议：</span><span class="sxs-lookup"><span data-stu-id="734fd-107">The following is an example where Alex invites Adele to lunch, Adele tentatively accepts and proposes an alternative date and time, and Alex accepts the proposal by adjusting the meeting accordingly:</span></span>
 
-1. <span data-ttu-id="6a2ac-108">作为组织者，Alex 向 Adele 发送了一个会议请求。</span><span class="sxs-lookup"><span data-stu-id="6a2ac-108">As the organizer, Alex sends a meeting request to Adele.</span></span> <span data-ttu-id="6a2ac-109">他将 [event](/graph/api/resources/event?view=graph-rest-beta) 的 **allowNewTimeProposals** 属性设置为 `true`，以便让 Adele 在需要时建议另一个时间。</span><span class="sxs-lookup"><span data-stu-id="6a2ac-109">He sets the **allowNewTimeProposals** property of the [event](/graph/api/resources/event?view=graph-rest-beta) to `true` to let Adele suggest another time if she needs to.</span></span>
+1. <span data-ttu-id="734fd-108">作为组织者，Alex 向 Adele 发送了一个会议请求。</span><span class="sxs-lookup"><span data-stu-id="734fd-108">As the organizer, Alex sends a meeting request to Adele.</span></span> <span data-ttu-id="734fd-109">他将 [event](/graph/api/resources/event?view=graph-rest-1.0) 的 **allowNewTimeProposals** 属性设置为 `true`，以便让 Adele 在需要时建议另一个时间。</span><span class="sxs-lookup"><span data-stu-id="734fd-109">He sets the **allowNewTimeProposals** property of the [event](/graph/api/resources/event?view=graph-rest-1.0) to `true` to let Adele suggest another time if she needs to.</span></span>
 
     <!-- {
       "blockType": "request",
       "name": "create_event"
     }-->
     ```http
-    POST https://graph.microsoft.com/beta/me/events
+    POST https://graph.microsoft.com/v1.0/me/events
     Prefer: outlook.timezone="Pacific Standard Time"
     Content-type: application/json
 
@@ -59,7 +59,7 @@ ms.locfileid: "37622725"
     }
     ```
 
-    <span data-ttu-id="6a2ac-110">Alex 获得以下响应：</span><span class="sxs-lookup"><span data-stu-id="6a2ac-110">Alex gets the following response:</span></span> 
+    <span data-ttu-id="734fd-110">Alex 获得以下响应：</span><span class="sxs-lookup"><span data-stu-id="734fd-110">Alex gets the following response:</span></span> 
     <!-- {
       "blockType": "response",
       "name": "create_event",
@@ -71,7 +71,7 @@ ms.locfileid: "37622725"
     Content-type: application/json
 
     {
-      "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
+      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
       "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAAAhBhkg==\"",
       "id": "AAMkADAwJXJGu0AAACEhWOAAA=",
       "createdDateTime": "2019-08-01T06:41:07.805128Z",
@@ -151,14 +151,14 @@ ms.locfileid: "37622725"
     }
     ```
 
-2. <span data-ttu-id="6a2ac-111">Adele 在她的收件箱中以 [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-beta) 的形式接收邀请。</span><span class="sxs-lookup"><span data-stu-id="6a2ac-111">Adele receives the invitation in her Inbox as an [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-beta).</span></span> <span data-ttu-id="6a2ac-112">她注意到 **allowNewTimeProposals** 属性已设置。</span><span class="sxs-lookup"><span data-stu-id="6a2ac-112">She notices the **allowNewTimeProposals** property is set.</span></span> <span data-ttu-id="6a2ac-113">[使用与此 **eventMessageRequest** 相关联的 **event**](/graph/api/eventmessage-get#example-2?view=graph-rest-beta)，她做了一个暂定性答复，并在 **proposedNewTime** 正文参数中将日期建议为次日的同一时间。</span><span class="sxs-lookup"><span data-stu-id="6a2ac-113">[Using the **event** associated](/graph/api/eventmessage-get#example-2?view=graph-rest-beta) with this **eventMessageRequest**, she makes a tentative reply and proposes the next day at the same time, in the **proposedNewTime** body parameter.</span></span> <span data-ttu-id="6a2ac-114">她还将 **sendResponse** 参数设置为 true。</span><span class="sxs-lookup"><span data-stu-id="6a2ac-114">She also sets the **sendResponse** parameter to true.</span></span>
+2. <span data-ttu-id="734fd-111">Adele 在她的收件箱中以 [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-1.0) 的形式接收邀请。</span><span class="sxs-lookup"><span data-stu-id="734fd-111">Adele receives the invitation in her Inbox as an [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-1.0).</span></span> <span data-ttu-id="734fd-112">她注意到 **allowNewTimeProposals** 属性已设置。</span><span class="sxs-lookup"><span data-stu-id="734fd-112">She notices the **allowNewTimeProposals** property is set.</span></span> <span data-ttu-id="734fd-113">[使用与此 **eventMessageRequest** 相关联的 **event**](/graph/api/eventmessage-get?view=graph-rest-1.0#example-2)，她做了一个暂定性答复，并在 **proposedNewTime** 正文参数中将日期建议为次日的同一时间。</span><span class="sxs-lookup"><span data-stu-id="734fd-113">[Using the **event** associated](/graph/api/eventmessage-get?view=graph-rest-1.0#example-2) with this **eventMessageRequest**, she makes a tentative reply and proposes the next day at the same time, in the **proposedNewTime** body parameter.</span></span> <span data-ttu-id="734fd-114">她还将 **sendResponse** 参数设置为 true。</span><span class="sxs-lookup"><span data-stu-id="734fd-114">She also sets the **sendResponse** parameter to true.</span></span>
 
     <!-- {
       "blockType": "request",
       "name": "event_tentativelyaccept"
     }-->
     ```http
-    POST https://graph.microsoft.com/beta/me/events/AAMkADU5NRaRqdoI4oeRpAAAB_woNAAA=/tentativelyAccept
+    POST https://graph.microsoft.com/v1.0/me/events/AAMkADU5NRaRqdoI4oeRpAAAB_woNAAA=/tentativelyAccept
     Content-type: application/json
 
     { 
@@ -177,7 +177,7 @@ ms.locfileid: "37622725"
     } 
     ```
 
-    <span data-ttu-id="6a2ac-115">Adele 成功进行了回复，并收到以下响应：</span><span class="sxs-lookup"><span data-stu-id="6a2ac-115">Adele's reply succeeds and she gets the following response:</span></span>
+    <span data-ttu-id="734fd-115">Adele 成功进行了回复，并收到以下响应：</span><span class="sxs-lookup"><span data-stu-id="734fd-115">Adele's reply succeeds and she gets the following response:</span></span>
 
     <!-- {
       "blockType": "response",
@@ -188,23 +188,23 @@ ms.locfileid: "37622725"
     HTTP/1.1 202 Accepted
     ```
 
-3. <span data-ttu-id="6a2ac-116">Alex 收到一封 [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-beta) 类型的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="6a2ac-116">Alex receives an email of the [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-beta) type.</span></span> <span data-ttu-id="6a2ac-117">他注意到了以下内容：</span><span class="sxs-lookup"><span data-stu-id="6a2ac-117">He notices the following:</span></span>
+3. <span data-ttu-id="734fd-116">Alex 收到一封 [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-1.0) 类型的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="734fd-116">Alex receives an email of the [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-1.0) type.</span></span> <span data-ttu-id="734fd-117">他注意到了以下内容：</span><span class="sxs-lookup"><span data-stu-id="734fd-117">He notices the following:</span></span>
 
-   - <span data-ttu-id="6a2ac-118">主题包含一个前缀，上面写着“已建议新时间：让我们共进午餐吧”</span><span class="sxs-lookup"><span data-stu-id="6a2ac-118">The subject includes a prefix and says "New Time Proposed: Let's go for lunch"</span></span>
-   - <span data-ttu-id="6a2ac-119">发送者是 Adele Vance</span><span class="sxs-lookup"><span data-stu-id="6a2ac-119">The sender is Adele Vance</span></span>
-   - <span data-ttu-id="6a2ac-120">**responseType** 是 `tentativelyAccepted`</span><span class="sxs-lookup"><span data-stu-id="6a2ac-120">The **responseType** is `tentativelyAccepted`</span></span>
-   - <span data-ttu-id="6a2ac-121">Adele 的建议位于 **eventMessageResponse** 的 **proposedNewTime** 属性中</span><span class="sxs-lookup"><span data-stu-id="6a2ac-121">Adele's proposal is in the **proposedNewTime** property of the **eventMessageResponse**</span></span>
+   - <span data-ttu-id="734fd-118">主题包含一个前缀，上面写着“已建议新时间：让我们共进午餐吧”</span><span class="sxs-lookup"><span data-stu-id="734fd-118">The subject includes a prefix and says "New Time Proposed: Let's go for lunch"</span></span>
+   - <span data-ttu-id="734fd-119">发送者是 Adele Vance</span><span class="sxs-lookup"><span data-stu-id="734fd-119">The sender is Adele Vance</span></span>
+   - <span data-ttu-id="734fd-120">**responseType** 是 `tentativelyAccepted`</span><span class="sxs-lookup"><span data-stu-id="734fd-120">The **responseType** is `tentativelyAccepted`</span></span>
+   - <span data-ttu-id="734fd-121">Adele 的建议位于 **eventMessageResponse** 的 **proposedNewTime** 属性中</span><span class="sxs-lookup"><span data-stu-id="734fd-121">Adele's proposal is in the **proposedNewTime** property of the **eventMessageResponse**</span></span>
 
     <!-- {
       "blockType": "request",
       "name": "get_messages"
     }-->
     ```http
-    GET https://graph.microsoft.com/beta/me/messages?$top=1
+    GET https://graph.microsoft.com/v1.0/me/messages?$top=1
     Prefer: outlook.timezone="Pacific Standard Time"
     ```
 
-    <span data-ttu-id="6a2ac-122">出于演示目的，假设 Adele 的回复是 Alex 邮箱中的最新消息，则 Alex 可以简单地请求该最新消息。</span><span class="sxs-lookup"><span data-stu-id="6a2ac-122">For demonstration purpose, assume Adele's reply is the latest message in Alex' mailbox, and Alex can simply request that latest message.</span></span>
+    <span data-ttu-id="734fd-122">出于演示目的，假设 Adele 的回复是 Alex 邮箱中的最新消息，则 Alex 可以简单地请求该最新消息。</span><span class="sxs-lookup"><span data-stu-id="734fd-122">For demonstration purpose, assume Adele's reply is the latest message in Alex' mailbox, and Alex can simply request that latest message.</span></span>
 
     <!-- {
       "blockType": "response",
@@ -219,8 +219,8 @@ ms.locfileid: "37622725"
     Preference-Applied: outlook.timezone="Pacific Standard Time"
 
     {
-       "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/messages",
-       "@odata.nextLink": "https://graph.microsoft.com/beta/me/messages?$top=1&$skip=4"",
+       "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/messages",
+       "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/messages?$top=1&$skip=4"",
        "value": [
           {
             "@odata.type": "#microsoft.graph.eventMessageResponse",
@@ -254,7 +254,6 @@ ms.locfileid: "37622725"
             "isAllDay": false,
             "isDelegated": false,
             "responseType": "tentativelyAccepted",
-            "mentionsPreview": null,
             "recurrence": null,
             "body": {
                 "contentType": "html",
@@ -314,14 +313,14 @@ ms.locfileid: "37622725"
     }
     ```
 
-4. <span data-ttu-id="6a2ac-123">Alex 还注意到，午餐的 **event** 现在包括一个指示 Adele 建议的 **proposedNewTime** 属性。</span><span class="sxs-lookup"><span data-stu-id="6a2ac-123">Alex also notices the **event** for the lunch now includes a **proposedNewTime** property that indicates Adele's proposal.</span></span> <span data-ttu-id="6a2ac-124">如果相应的与会者建议了备选会议时间，则此属性仅在 [attendee ](/graph/api/resources/attendee?view=graph-rest-beta) 实例中出现。</span><span class="sxs-lookup"><span data-stu-id="6a2ac-124">This property is only present as part of an [attendee](/graph/api/resources/attendee?view=graph-rest-beta) instance if the corresponding attendee has suggested an alternative meeting time.</span></span> 
+4. <span data-ttu-id="734fd-123">Alex 还注意到，午餐的 **event** 现在包括一个指示 Adele 建议的 **proposedNewTime** 属性。</span><span class="sxs-lookup"><span data-stu-id="734fd-123">Alex also notices the **event** for the lunch now includes a **proposedNewTime** property that indicates Adele's proposal.</span></span> <span data-ttu-id="734fd-124">如果相应的与会者建议了备选会议时间，则此属性仅在 [attendee ](/graph/api/resources/attendee?view=graph-rest-1.0) 实例中出现。</span><span class="sxs-lookup"><span data-stu-id="734fd-124">This property is only present as part of an [attendee](/graph/api/resources/attendee?view=graph-rest-1.0) instance if the corresponding attendee has suggested an alternative meeting time.</span></span> 
 
     <!-- {
       "blockType": "request",
       "name": "event_get"
     }-->
     ```http
-    GET https://graph.microsoft.com/beta/me/events/AAMkADAwJXJGu0AAACEhWOAAA=?$select=subject,allowNewTimeProposals,start,end,attendees,organizer
+    GET https://graph.microsoft.com/v1.0/me/events/AAMkADAwJXJGu0AAACEhWOAAA=?$select=subject,allowNewTimeProposals,start,end,attendees,organizer
     Prefer: outlook.timezone="Pacific Standard Time"
     ```
 
@@ -335,7 +334,7 @@ ms.locfileid: "37622725"
     HTTP/1.1 200 Ok
 
     {
-        "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events(subject,allowNewTimeProposals,start,end,attendees,organizer)/$entity",
+        "@odata.context": "https://graph.microsoft.com/testexchangev1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events(subject,allowNewTimeProposals,start,end,attendees,organizer)/$entity",
         "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAAAhEDMA==\"",
         "id": "AAMkADAwJXJGu0AAACEhWOAAA=",
         "subject": "Let's go for lunch",
@@ -381,14 +380,14 @@ ms.locfileid: "37622725"
     ```
 
 
-5. <span data-ttu-id="6a2ac-125">Alex 决定通过将 **event** 更新为建议的 **start** 和 **end** 日期/时间来接受 Adele 的建议。</span><span class="sxs-lookup"><span data-stu-id="6a2ac-125">Alex decides to accept Adele's proposal by updating the **event** to the proposed **start** and **end** date/time.</span></span>
+5. <span data-ttu-id="734fd-125">Alex 决定通过将 **event** 更新为建议的 **start** 和 **end** 日期/时间来接受 Adele 的建议。</span><span class="sxs-lookup"><span data-stu-id="734fd-125">Alex decides to accept Adele's proposal by updating the **event** to the proposed **start** and **end** date/time.</span></span>
 
     <!-- {
       "blockType": "request",
       "name": "event_update"
     }-->
     ```http
-    PATCH https://graph.microsoft.com/beta/me/events/AAMkADAwJXJGu0AAACEhWOAAA=
+    PATCH https://graph.microsoft.com/v1.0/me/events/AAMkADAwJXJGu0AAACEhWOAAA=
     Prefer: outlook.timezone="Pacific Standard Time"
     Content-type: application/json
 
@@ -404,7 +403,7 @@ ms.locfileid: "37622725"
     }
     ```
 
-    <span data-ttu-id="6a2ac-126">Adele 成功进行了更新，并收到以下响应。</span><span class="sxs-lookup"><span data-stu-id="6a2ac-126">Alex's update succeeds and gets the following response.</span></span>
+    <span data-ttu-id="734fd-126">Adele 成功进行了更新，并收到以下响应。</span><span class="sxs-lookup"><span data-stu-id="734fd-126">Alex's update succeeds and gets the following response.</span></span>
 
     <!-- {
       "blockType": "response",
@@ -416,7 +415,7 @@ ms.locfileid: "37622725"
     HTTP/1.1 200 Ok
 
     {
-      "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
+      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
       "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAAAhBizA==\"",
       "id": "AAMkADAwJXJGu0AAACEhWOAAA=",
       "createdDateTime": "2019-08-01T06:41:07.805128Z",
@@ -497,14 +496,14 @@ ms.locfileid: "37622725"
     ```
 
 
-## <a name="no-attendee-proposes-alternative-time"></a><span data-ttu-id="6a2ac-127">无与会者建议备选时间</span><span class="sxs-lookup"><span data-stu-id="6a2ac-127">No attendee proposes alternative time</span></span>
+## <a name="no-attendee-proposes-alternative-time"></a><span data-ttu-id="734fd-127">无与会者建议备选时间</span><span class="sxs-lookup"><span data-stu-id="734fd-127">No attendee proposes alternative time</span></span>
 
-<span data-ttu-id="6a2ac-128">在步骤 2 中，如果 Adele 回答暂定或拒绝，并且没有提出不同的日期/时间，则会发生以下情况：</span><span class="sxs-lookup"><span data-stu-id="6a2ac-128">In step 2, if Adele replied tentative or declined, and did not propose a different date/time, then the following would happen:</span></span>
+<span data-ttu-id="734fd-128">在步骤 2 中，如果 Adele 回答暂定或拒绝，并且没有提出不同的日期/时间，则会发生以下情况：</span><span class="sxs-lookup"><span data-stu-id="734fd-128">In step 2, if Adele replied tentative or declined, and did not propose a different date/time, then the following would happen:</span></span>
 
-- <span data-ttu-id="6a2ac-129">在步骤 3 中，Alex 将收到 **responseType** 属性设置为 `tentativelyAccepted` 的 **eventMessageResponse**（如果 Adele 拒绝，则设置为 `decline`）。</span><span class="sxs-lookup"><span data-stu-id="6a2ac-129">In step 3, Alex would receive an **eventMessageResponse** with the **responseType** property set to `tentativelyAccepted` (or `decline` if Adele declined).</span></span> <span data-ttu-id="6a2ac-130">在此 **eventMessageResponse** 实例中，Alex 将找不到 **proposedNewTime** 属性。</span><span class="sxs-lookup"><span data-stu-id="6a2ac-130">Alex would not find a **proposedNewTime** property in this instance of **eventMessageResponse**.</span></span>
-- <span data-ttu-id="6a2ac-131">在步骤 4 中，Alex 在关联的 **event** 中也找不到 **proposedNewTime** 属性。</span><span class="sxs-lookup"><span data-stu-id="6a2ac-131">In step 4, Alex would not find a **proposedNewTime** property in the associated **event** either.</span></span>
+- <span data-ttu-id="734fd-129">在步骤 3 中，Alex 将收到 **responseType** 属性设置为 `tentativelyAccepted` 的 **eventMessageResponse**（如果 Adele 拒绝，则设置为 `decline`）。</span><span class="sxs-lookup"><span data-stu-id="734fd-129">In step 3, Alex would receive an **eventMessageResponse** with the **responseType** property set to `tentativelyAccepted` (or `decline` if Adele declined).</span></span> <span data-ttu-id="734fd-130">在此 **eventMessageResponse** 实例中，Alex 将找不到 **proposedNewTime** 属性。</span><span class="sxs-lookup"><span data-stu-id="734fd-130">Alex would not find a **proposedNewTime** property in this instance of **eventMessageResponse**.</span></span>
+- <span data-ttu-id="734fd-131">在步骤 4 中，Alex 在关联的 **event** 中也找不到 **proposedNewTime** 属性。</span><span class="sxs-lookup"><span data-stu-id="734fd-131">In step 4, Alex would not find a **proposedNewTime** property in the associated **event** either.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="6a2ac-132">另请参阅</span><span class="sxs-lookup"><span data-stu-id="6a2ac-132">See also</span></span>
-- [<span data-ttu-id="6a2ac-133">在 Outlook 日历中查找可能会议时间</span><span class="sxs-lookup"><span data-stu-id="6a2ac-133">Finding possible meeting times on the Outlook calendar</span></span>](findmeetingtimes-example.md)
-- [<span data-ttu-id="6a2ac-134">获取用户和资源的忙/闲日程安排</span><span class="sxs-lookup"><span data-stu-id="6a2ac-134">Getting the free/busy schedule for users and resources</span></span>](outlook-get-free-busy-schedule.md)
-- [<span data-ttu-id="6a2ac-135">在 Outlook 中将重复约会安排为定期事件</span><span class="sxs-lookup"><span data-stu-id="6a2ac-135">Scheduling repeating appointments as recurring events in Outlook</span></span>](outlook-schedule-recurring-events.md)
+## <a name="see-also"></a><span data-ttu-id="734fd-132">另请参阅</span><span class="sxs-lookup"><span data-stu-id="734fd-132">See also</span></span>
+- [<span data-ttu-id="734fd-133">在 Outlook 日历中查找可能会议时间</span><span class="sxs-lookup"><span data-stu-id="734fd-133">Finding possible meeting times on the Outlook calendar</span></span>](findmeetingtimes-example.md)
+- [<span data-ttu-id="734fd-134">获取用户和资源的忙/闲日程安排</span><span class="sxs-lookup"><span data-stu-id="734fd-134">Getting the free/busy schedule for users and resources</span></span>](outlook-get-free-busy-schedule.md)
+- [<span data-ttu-id="734fd-135">在 Outlook 中将重复约会安排为定期事件</span><span class="sxs-lookup"><span data-stu-id="734fd-135">Scheduling repeating appointments as recurring events in Outlook</span></span>](outlook-schedule-recurring-events.md)
