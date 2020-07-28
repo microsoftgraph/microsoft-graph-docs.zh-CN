@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c2fb7318c8c98b02771fac376a3abaf6350e1b7c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6aae4c310ad98c81bec05929699826d4f6eff6c4
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461560"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427485"
 ---
 # <a name="get-eventmessage"></a>获取 eventMessage
 
@@ -51,8 +51,11 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [eventMessage](../resources/eventmessage.md) 对象。
-## <a name="example"></a>示例
-##### <a name="request-1"></a>请求 1
+## <a name="examples"></a>示例
+
+### <a name="example-1"></a>示例 1
+#### <a name="request"></a>请求
+
 第一个示例展示了如何根据事件邮件 ID 获取事件邮件的属性。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -82,13 +85,13 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_lAAA=
 
 ---
 
-##### <a name="response-1"></a>响应 1
+#### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
   "truncated": true,
-  "@odata.type": "microsoft.graph.eventMessage"
+  "@odata.type": "microsoft.graph.eventMessageRequest"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -96,7 +99,7 @@ Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8fd6e83b-3cc0-4bf0-8b26-950f4d7110f6')/messages/$entity",
-    "@odata.type":"#microsoft.graph.eventMessage",
+    "@odata.type":"#microsoft.graph.eventMessageRequest",
     "@odata.etag":"W/\"CwAAABYAAABXlB/SL0N4Q6g6o+jSYAEuAAAImkVD\"",
     "id":"AAMkADYAAAImV_lAAA=",
     "createdDateTime":"2017-12-27T21:58:36Z",
@@ -158,7 +161,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a>请求 2
+### <a name="example-2"></a>示例 2
+#### <a name="request"></a>请求
 第二个示例展示了如何获取与事件消息关联的事件。 它使用事件消息 ID 获取事件消息，将事件消息显式强制转换为访问 **event** 导航属性，并应用 $expand 参数来获取事件属性。
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -188,13 +192,13 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=mic
 
 ---
 
-##### <a name="response-2"></a>响应 2
+#### <a name="response"></a>响应
 下面是一个响应示例。 响应中返回关联事件的属性。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",
   "truncated": true,
-  "@odata.type": "microsoft.graph.eventMessage"
+  "@odata.type": "microsoft.graph.eventMessageRequest"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -202,7 +206,7 @@ Content-type: application/json
 
 {
    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8fd6e83b-3cc0-4bf0-8b26-950f4d7110f6')/messages/$entity",
-   "@odata.type":"#microsoft.graph.eventMessage",
+   "@odata.type":"#microsoft.graph.eventMessageRequest",
    "@odata.etag":"W/\"CwAAABYAAABXlB/SL0N4Q6g6o+jSYAEuAAAImkVF\"",
    "id":"AAMkADYAAAImV_jAAA=",
    "createdDateTime":"2017-12-27T21:54:55Z",

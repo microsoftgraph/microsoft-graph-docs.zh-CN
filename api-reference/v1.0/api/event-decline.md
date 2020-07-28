@@ -5,18 +5,20 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 309c800013ff3ea37e6ec9c73a84ae4bd8ec6244
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f9caef660af5e19cc06dd9214a8c70cc761740fe
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461687"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427100"
 ---
 # <a name="event-decline"></a>event: decline
 
 命名空间：microsoft.graph
 
 拒绝对用户[日历](../resources/calendar.md)中指定[事件](../resources/event.md)的邀请。
+
+如果事件允许建议的新时间，在谢绝事件时，被邀请者可以通过包含**proposedNewTime**参数来选择建议替代时间。 有关如何建议时间以及如何接收和接受新时间建议的详细信息，请参阅[建议新会议时间](/graph/outlook-calendar-meeting-proposals)。
 
 ## <a name="permissions"></a>权限
 
@@ -65,11 +67,18 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|响应中包含的文本。可选。|
+|proposedNewTime|[timeSlot](../resources/timeslot.md)|会议请求开始和结束时由被邀请者建议的备用日期/时间。 仅对允许新时间建议的事件有效。 设置此参数需要将**sendResponse**设置为 `true` 。 可选。|
 |sendResponse|Boolean|如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。|
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
+
+如果出现以下一种或两种情况，此操作将返回 HTTP 400：
+
+- 包含**proposedNewTime**参数，但**事件**的**allowNewTimeProposals**属性为 `false` 。 
+- 包含**proposedNewTime**参数，但**sendResponse**参数设置为 `false` 。
+
 
 ## <a name="example"></a>示例
 
@@ -89,11 +98,20 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/{id}/decline
 Content-type: application/json
-Content-length: 56
 
 {
-  "comment": "comment-value",
-  "sendResponse": true
+  "comment": "I won't be able to make this week. How about next week?",
+  "sendResponse": true,
+  "proposedNewTime": {
+      "start": { 
+          "dateTime": "2019-12-02T18:00:00", 
+          "timeZone": "Pacific Standard Time" 
+      }, 
+      "end": { 
+          "dateTime": "2019-12-02T19:00:00", 
+          "timeZone": "Pacific Standard Time" 
+      }     
+  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

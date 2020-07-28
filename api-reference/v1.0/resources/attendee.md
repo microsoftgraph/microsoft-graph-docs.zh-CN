@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1cadb1ca6d2ab1168c3c7f9ff2b182b57112bfb0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c90d086afb7716dc3696443f18931f17cb291d9
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532091"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427240"
 ---
 # <a name="attendee-resource-type"></a>与会者资源类型
 
@@ -23,9 +23,10 @@ ms.locfileid: "42532091"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|状态|[ResponseStatus](responsestatus.md)|事件与会者的响应（无、接受、拒绝等）和发送响应的日期时间。|
-|type|字符串|与会者类型：`required`、`optional`、`resource`。|
 |emailAddress|[emailAddress](emailaddress.md)|添加与会者姓名和 SMTP 地址。|
+|proposedNewTime|[timeSlot](timeslot.md)|与会者为开始和结束会议请求建议的备用日期/时间。 如果与会者尚未建议其他时间，则 GET 事件响应中不包含此属性。|
+|状态|[ResponseStatus](responsestatus.md)|事件与会者的响应（无、接受、拒绝等）和发送响应的日期时间。|
+|type|String|与会者类型：`required`、`optional`、`resource`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -35,16 +36,17 @@ ms.locfileid: "42532091"
   "blockType": "resource",
   "baseType": "microsoft.graph.attendeeBase",
   "optionalProperties": [
-
+   "proposedNewTime"
   ],
   "@odata.type": "microsoft.graph.attendee"
 }-->
 
 ```json
 {
+  "emailAddress": {"@odata.type": "microsoft.graph.emailAddress"},
+  "proposedNewTime": {"@odata.type": "microsoft.graph.timeSlot"},
   "status": {"@odata.type": "microsoft.graph.responseStatus"},
-  "type": "String",
-  "emailAddress": {"@odata.type": "microsoft.graph.emailAddress"}
+  "type": "String"
 }
 
 ```
