@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 282c96bb9030f066aadbf0515ec0466da62c502f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f53fd9f930beaaf6812a18725441e1cd338b2e6d
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466037"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434989"
 ---
 # <a name="signinfrequencysessioncontrol-resource-type"></a>signInFrequencySessionControl 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "43466037"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于强制登录频率的会话控制。 Inehrits 来自[条件访问会话控制](conditionalaccesssessioncontrol.md)。
+用于强制登录频率的会话控制。 继承自[条件访问会话控制](conditionalaccesssessioncontrol.md)。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | 指定是否启用会话控制。 |
-|type          |String       | 可取值为：`days`、`hours`。|
-|值         |Int32        | `days`或`hours`的数目。|
+|type          |字符串       | 可取值为：`days`、`hours`。|
+|值         |Int32        | 或的数目 `days` `hours` 。|
 
 ## <a name="relationships"></a>关系
 

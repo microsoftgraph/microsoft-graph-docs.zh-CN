@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 45f439adaf45ade7e63dd4cde8ed72852244192c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8e82ede1df5c17b99fdc40857fd97f1f90012711
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502002"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434975"
 ---
 # <a name="educationfilesynchronizationverificationmessage-resource-type"></a>educationFileSynchronizationVerificationMessage 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,11 +22,11 @@ ms.locfileid: "42502002"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 说明 |
-|:-|:-|:-|
-| **类型** | string | 邮件的类型。 可取值为：`error`、`warning`、`information`。 | 
-| **filename** | string | 包含错误的源文件。 |
-| **说明** | string | 有关邮件类型的详细信息。 |
+| 属性    | 类型   | 说明                                                                  |
+| :---------- | :----- | :--------------------------------------------------------------------------- |
+| 类型        | string | 邮件的类型。 可取值为：`error`、`warning`、`information`。 |
+| filename    | string | 包含错误的源文件。                                         |
+| 说明 | string | 有关邮件类型的详细信息。                                 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -40,8 +40,8 @@ ms.locfileid: "42502002"
 
 ```json
 {
-    "type": "String",
-    "fileName": "String",
-    "description": "String"
+  "type": "String",
+  "fileName": "String",
+  "description": "String"
 }
 ```

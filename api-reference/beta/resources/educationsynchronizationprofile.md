@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 05babeebb25130350e64d98ccfc408381547829e
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 86c8189e170bba5899f82f75902dfe68dd0d3fd1
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790913"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434908"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>educationSynchronizationProfile 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "44790913"
 
 表示一组用于将源目录中的教育实体和名单信息同步到 Azure Active Directory （Azure AD）的配置。 此资源提供在[学校数据同步](https://sds.microsoft.com)中使用的编程表示形式。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法                                                                    | 返回类型                                                 | 说明                                                                                                                    |
 | :------------------------------------------------------------------------ | :---------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------- |
@@ -40,8 +40,11 @@ ms.locfileid: "44790913"
 
 | 属性                             | 类型                                                   | 说明                                                                                                                       |
 | :----------------------------------- | :----------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
-| displayName                          | string                                                 | 用于同步标识的配置文件的名称。                                                                         |
+| id                                   | 字符串                                                 | 资源的唯一标识符。 （只读）                                                                               |
+| displayName                          | String                                                 | 用于同步标识的配置文件的名称。                                                                         |
 | dataProvider                         | [educationSynchronizationDataProvider]                 | 用于配置文件的数据提供程序。                                                                                           |
+| expirationDate                       | 日期                                                   | 应将配置文件视为已过期并停止同步的日期。 When `null` 。 配置文件永远不会过期。 （可选）       |
+| handleSpecialCharacterConstraint     | Bool                                                   | 确定在从源同步时，学校数据同步是否应自动替换不受支持的特殊字符。             |
 | identitySynchronizationConfiguration | [educationIdentitySynchronizationConfiguration]        | 确定配置文件应如何[新建][fullsync]或[匹配现有][dirsync]AAD 用户。                                  |
 | licensesToAssign                     | [educationSynchronizationLicenseAssignment]集合 | 许可证安装程序配置。                                                                                                      |
 | state                                | educationSynchronizationProfileState                   | 配置文件的状态。 可取值为：`provisioning`、`provisioned`、`provisioningFailed`、`deleting`、`deletionFailed`。 |
@@ -57,11 +60,11 @@ ms.locfileid: "44790913"
 
 每个[educationSynchronizationProfile]必须指定要用作同步源的以下数据提供程序之一。
 
-| Data Provider                       | 说明                                                                                        |
-| :---------------------------------- | :------------------------------------------------------------------------------------------------- |
-| [educationCsvDataProvider]          | 上载到配置文件的[SAS URL](../api/educationsynchronizationprofile-uploadurl.md)的 CSV 文件 |
+| Data Provider                                                             | 说明                                                                                        |
+| :------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------- |
+| [educationCsvDataProvider]                                                | 上载到配置文件的[SAS URL](../api/educationsynchronizationprofile-uploadurl.md)的 CSV 文件 |
 | [educationOneRosterApiDataProvider](educationonerosterapidataprovider.md) | OneRoster v1.1 API                                                                                 |
-| [educationPowerSchoolDataProvider]  | PowerSchool API                                                                                    |
+| [educationPowerSchoolDataProvider]                                        | PowerSchool API                                                                                    |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -103,7 +106,8 @@ ms.locfileid: "44790913"
       "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment"
     }
   ],
-  "handleSpecialCharacterConstraint": "Boolean"
+  "handleSpecialCharacterConstraint": "Boolean",
+  "expirationDate": "Date"
 }
 ```
 

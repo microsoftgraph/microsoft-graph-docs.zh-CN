@@ -4,12 +4,12 @@ description: 通过先使用 Microsoft Graph 安装机器人，向 Microsoft 团
 author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e8222931709ab504106c86209ec186140b4a2087
-ms.sourcegitcommit: fc9edd17aebed91768e31416e1c1ee0b64d5ce06
+ms.openlocfilehash: 76b7527a961cc3aa5e78b30ff740cbda90d1c63c
+ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39621647"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45435052"
 ---
 # <a name="proactive-messaging-using-a-bot-in-microsoft-teams"></a>使用 Microsoft 团队中的 bot 的主动消息传递
 
@@ -29,7 +29,7 @@ ms.locfileid: "39621647"
 
 您还可以使用[公司 Communicator 应用模板](https://github.com/OfficeDev/microsoft-teams-company-communicator-app)作为您的应用程序的一个很棒的入门点。 此应用模板是一个生产就绪的 Microsoft 团队应用，可以创建、安排和分发公司范围的邮件。
 
-创建您的应用程序时，请确保记下在应用`id`程序清单中使用的，并执行在后续步骤中，你将需要它来安装应用程序。
+创建您的应用程序时，请确保记下在 `id` 应用程序清单中使用的，在后续步骤中，你将需要安装应用程序。
 
 如果你对大型组织执行此操作，则来自你的 bot 的欢迎邮件可能会受到限制。 如果可能，请成批执行安装，并在你的 bot 中实施后端功能。 有关详细信息，请参阅[处理速率限制](/microsoftteams/platform/concepts/bots/rate-limit)。
 
@@ -49,7 +49,7 @@ Microsoft Graph 只能安装已添加到租户应用程序目录中的应用程�
 GET /users/{user-id}/teamwork/installedApps?$expand=teamsAppDefinition&$filter=teamsAppDefinition/teamsAppId eq '{teamsAppid}'
 ```
 
-其中`{teamsAppId}` ，是`id`您之前所做的团队应用程序清单中的。 请注意，这可能与您在`appid` Microsoft Graph 呼叫和中的不同`botId`。 您可能会发现为用户手动安装应用程序并测试该用户的呼叫，以确保获得正确`id`的值，这非常有用。
+其中， `{teamsAppId}` 是 `id` 您之前所做的团队应用程序清单中的。 请注意，这可能与您在 `appid` Microsoft Graph 呼叫和中的不同 `botId` 。 您可能会发现为用户手动安装应用程序并测试该用户的呼叫，以确保获得正确的值，这非常有用 `id` 。
 
 如果未安装应用程序，则该调用将返回一个空数组; 或者，如果已安装了一个[teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-beta) ，则返回一个数组。
 
@@ -70,9 +70,9 @@ POST /users/{user-id}/teamwork/installedApps
 
 ## <a name="get-the-chat-thread-id"></a>获取聊天线索 ID
 
-为用户安装应用程序时，bot 将收到一个`conversationUpdate`事件，该事件将包含用于发送主动消息的必要信息。 有关详细信息，请参阅[Bot 事件](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-notifications)。
+为用户安装应用程序时，bot 将获取一个 `conversationUpdate` 事件，该事件将包含用于发送主动消息的必要信息。 有关详细信息，请参阅[Bot 事件](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-notifications)。
 
-如果您丢失了`chatThreadId`，可以通过调用以下命令再次找到它：
+如果您丢失了 `chatThreadId` ，可以通过调用以下命令再次找到它：
 
 ```http
 GET /users/{user-id}/chats?$filter=installedApps/any(a:a/teamsApp/id eq '{teamsAppid}')
@@ -86,5 +86,5 @@ GET /users/{user-id}/chats?$filter=installedApps/any(a:a/teamsApp/id eq '{teamsA
 
 ## <a name="c-sample"></a>C # 示例
 
-请https://github.com/microsoftgraph/contoso-airlines-teams-sample/tree/nkramer-promsg参阅（注释 "分支"）。
-`InstallAppToAllUsers()` [GraphService.cs](https://github.com/microsoftgraph/contoso-airlines-teams-sample/blob/nkramer-promsg/project/Models/GraphService.cs)中有有趣的代码。
+请参阅 https://github.com/microsoftgraph/contoso-airlines-teams-sample/tree/nkramer-promsg （注释 "分支"）。
+GraphService.cs 中有有趣的代码 `InstallAppToAllUsers()` 。 [GraphService.cs](https://github.com/microsoftgraph/contoso-airlines-teams-sample/blob/nkramer-promsg/project/Models/GraphService.cs)
