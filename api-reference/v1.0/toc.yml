@@ -221,7 +221,7 @@ items:
                 href: api/user-list-events.md
               - name: 提醒视图
                 href: api/user-reminderview.md
-          - name: Contacts
+          - name: 联系人
             href: resources/contact.md
             items:
               - name: 创建联系人
@@ -3877,6 +3877,8 @@ items:
                     href: api/oauth2permissiongrant-update.md
                   - name: 删除
                     href: api/oauth2permissiongrant-delete.md
+                  - name: 获取 Delta
+                    href: api/oauth2permissiongrant-delta.md
               - name: 身份保护
                 href: resources/identityprotectionroot.md
                 items:
