@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 80b7272915cd6f9dbfc381aa93a32896e2eaf3f5
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
-ms.translationtype: Auto
+ms.openlocfilehash: 73171beee516c63f75649375b7f084c01bac543f
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050999"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427254"
 ---
 # <a name="organizationsettings-resource-type"></a>organizationSettings 资源类型
 
@@ -23,8 +23,10 @@ ms.locfileid: "45050999"
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
 | [获取组织设置](../api/organizationsettings-get.md) | [organizationSettings](organizationsettings.md) | 读取组织设置对象。 |
-| [创建 profileCardProperty](../api/organizationsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | 通过发布到 profileCardProperties 集合创建新的 profileCardProperty。 |
-| [列出 profileCardProperties](../api/organizationsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md)集合 | 获取 profileCardProperty 对象集合。 |
+| [创建 profileCardProperty](../api/organizationsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | 通过发布到**profileCardProperty**对象集合创建新的**profileCardProperty** 。 |
+| [列出 profileCardProperties](../api/organizationsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md)集合 | 获取**profileCardProperty**对象集合。 |
+| [获取 itemInsightsSettings](../api/iteminsightssettings-get.md) | [itemInsightsSettings](iteminsightssettings.md) | 获取**itemInsightsSettings**对象的属性。 |
+| [更新 itemInsightsSettings](../api/iteminsightssettings-update.md) | [itemInsightsSettings](iteminsightssettings.md) | 更新指定的**itemInsightsSettings**资源的属性。 |
 
 ## <a name="properties"></a>属性
 
@@ -34,8 +36,9 @@ ms.locfileid: "45050999"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id |String| 组织的设置对象的 Id。 |
-|profileCardProperties|[profileCardProperty](profilecardproperty.md)集合| 包含管理员已定义为在 M365 配置文件卡上可见的属性的集合。 |
+|id |字符串| 组织的设置对象的 Id。 |
+|profileCardProperties|[profileCardProperty](profilecardproperty.md)集合| 包含管理员已定义为在 Microsoft 365 配置文件卡上可见的属性的集合。 [Get organization settings](../api/organizationsettings-get.md)返回为组织配置文件卡片配置的属性。|
+|itemInsights|[itemInsightsSettings](iteminsightssettings.md)| 包含由管理员为 microsoft Graph 派生的见解的可见性配置的属性，这些属性与 Microsoft 365 中的用户和其他项目（如文档或网站）之间的可见性。 通过此导航属性[获取 itemInsightsSettings](../api/iteminsightssettings-get.md) 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

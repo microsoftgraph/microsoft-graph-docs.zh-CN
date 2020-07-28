@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: b045ae3d66dded3ed6a85e59282a768b22d9f7fe
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 239a479bb8540ebfe7f6ffabf270d0c41ebc5b12
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44332712"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427121"
 ---
 # <a name="list-used"></a>使用的列表
 
@@ -27,7 +27,7 @@ ms.locfileid: "44332712"
 对于其他用户，此方法仅包括用户已修改的文档。
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -40,12 +40,14 @@ ms.locfileid: "44332712"
 
 - 获取已登录用户已修改的文档列表：
   <!-- { "blockType": "ignored" } -->
+  
   ```http
   GET /me/insights/used
   ```
 
 - 获取指定用户修改的文档的列表：
   <!-- { "blockType": "ignored" } -->
+  
   ```http
   GET /users/{id | userPrincipalName}/insights/used
   ```
@@ -54,6 +56,7 @@ ms.locfileid: "44332712"
 
 - 扩展**使用**的洞察力引用的资源：
   <!-- { "blockType": "ignored" } -->
+  
   ```http
   GET /me/insights/used/{id}/resource
   GET /users/{id | userPrincipalName}/insights/used/{id}/resource
@@ -93,6 +96,24 @@ ms.locfileid: "44332712"
 ## <a name="response"></a>响应
 
 如果成功，此方法在 `200 OK` 响应正文中返回响应代码和已[使用](../resources/insights-used.md)项的列表。
+
+如果已禁用目标用户的项目见解，则此方法将返回， `403 Forbidden` 并出现以下错误：
+<!-- { "blockType": "ignored" } -->
+
+```
+{
+  "error": {
+    "code": "ItemInsightsDisabled",
+    "message": " The access to the requested resource is denied because item insights are disabled.",
+    "innerError": {
+      "requestId": "request-id",
+      "date": "date-time"
+    }
+  }
+}
+```
+有关更多详细信息，请参阅[自定义 insights 隐私](/graph/insights-customize-item-insights-privacy.md)。 
+
 ## <a name="example"></a>示例
 
 ### <a name="example-1-return-documents-that-user-has-modified"></a>示例1：返回用户已修改的文档

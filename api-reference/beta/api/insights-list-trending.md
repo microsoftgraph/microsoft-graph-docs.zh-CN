@@ -5,16 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: a556fecc8075dd63bb81347b5f476b78b09b6eb0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6abd0db1be5ee9a3066de76b00d2f1815a626c2a
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446322"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427093"
 ---
 # <a name="list-trending"></a>列出趋势
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,6 +32,7 @@ ms.locfileid: "42446322"
 
 ## <a name="http-request"></a>HTTP 请求
 获取围绕登录用户或指定用户的文档趋势的列表：
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/insights/trending
@@ -39,6 +40,7 @@ GET /users/{id | userPrincipalName}/insights/trending
 ```
 
 扩展**趋势**洞察力引用的资源：
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/insights/trending/{id}/resource
@@ -48,11 +50,13 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
-您可以使用`$filter`查询参数筛选趋势项。 例如，基于**类型**：
+您可以使用 `$filter` 查询参数筛选趋势项。 例如，基于**类型**：
+<!-- { "blockType": "ignored" } -->
 
 `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/type eq 'PowerPoint'`
 
 或基于**containerType**：
+<!-- { "blockType": "ignored" } -->
 
 `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
@@ -70,16 +74,45 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[趋势](../resources/insights-trending.md)项列表。 每个项目都包含可视化属性，用于显示您的体验中的项目。
+如果成功，此方法在 `200 OK` 响应正文中返回响应代码和[趋势](../resources/insights-trending.md)项列表。 每个项目都包含可视化属性，用于显示您的体验中的项目。
+
+如果已禁用目标用户的项目见解，则此方法将返回， `403 Forbidden` 并出现以下错误：
+<!-- { "blockType": "ignored" } -->
+
+```
+{
+  "error": {
+    "code": "ItemInsightsDisabled",
+    "message": " The access to the requested resource is denied because item insights are disabled.",
+    "innerError": {
+      "requestId": "request-id",
+      "date": "date-time"
+    }
+  }
+}
+```
+有关更多详细信息，请参阅[自定义 insights 隐私](/graph/insights-customize-item-insights-privacy.md)。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
 下面是一个请求示例。
+<!-- {
+  "blockType": "request",
+  "name": "get_me_trending"
+}-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/insights/trending
 ```
 #### <a name="response"></a>响应
 下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。 请参阅页面底部的 "未截断的示例" 响应。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.trending",
+  "name": "get_me_trending"
+} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -109,5 +142,3 @@ Content-length: 801
     ]
 }
 ```
-
-

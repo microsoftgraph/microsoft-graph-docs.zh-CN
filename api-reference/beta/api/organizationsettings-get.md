@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1de3e239f64b81a6e8f2995bfa626a0d7734ef9e
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
-ms.translationtype: Auto
+ms.openlocfilehash: 755c71a85fe906c1fdf4b24dbceb3a0056d271b3
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080686"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427114"
 ---
 # <a name="get-organizationsettings"></a>获取 organizationSettings
 
@@ -18,7 +18,9 @@ ms.locfileid: "45080686"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[organizationSettings](../resources/organizationsettings.md)对象的属性和关系。
+检索[organizationSettings](../resources/organizationsettings.md)对象的属性和关系，包括**profileCardProperties**。
+
+此操作不会通过**itemInsights**导航属性返回[itemInsightsSettings](../resources/iteminsightssettings.md) 。 改用[Get itemInsightsSettings](iteminsightssettings-get.md) 。
 
 ## <a name="permissions"></a>权限
 
@@ -42,7 +44,7 @@ GET https://graph.microsoft.com/beta/organization/settings
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
