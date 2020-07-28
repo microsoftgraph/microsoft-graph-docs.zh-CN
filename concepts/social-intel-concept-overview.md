@@ -5,18 +5,18 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e12b9f2b8943832b6121e3830e369e48bef5b5ac
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
-ms.translationtype: MT
+ms.openlocfilehash: bbf16ed9f72eb85471e09a11bb0aa779960e6a15
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081247"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427408"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Microsoft Graph 中的人员和工作场所智能概述
 
 Microsoft 365 云服务的亿万用户组成了 Microsoft Graph 的核心部分。 用户的数据通过 Microsoft Graph 提供的服务得到精心的管理、保护和适当的授权，以提升企业生产力和创造力。 
 
-通过配置文件 API，您可以作为应用程序开发人员、模型和表示 Microsoft 365 服务中的人员，配置文件卡片 API 可让管理员控制在组织中的用户配置文件卡片上显示的信息。
+通过配置文件API，您可以作为应用开发人员为 Microsoft 365 服务中的人员建模并代表他们，借助配置文件 API，管理员可以控制组织中用户个人资料卡上显示的信息。
 
 因为在 Microsoft Graph 中有大量的用户数据，所以派生自用户社交交互的数据将尤为受到关注。 它可以对回答类似以下问题提供智能见解：
 
@@ -27,7 +27,7 @@ Microsoft 365 云服务的亿万用户组成了 Microsoft Graph 的核心部分�
 
 人员 API 基于用户的联系人、社交网络、组织目录以及电子邮件和 Skype 上的最近通信，返回按与该用户相关性排序的人员。 这对于选取人员的应用场景尤为有用。
 
-见解 API 使用高级分析和机器学习为用户提供他们在工作中所需的相关度最高的文件。 API 将熟悉 Microsoft 365 体验，其中包括 Office Delve、SharePoint 主页、OneDrive for Business 中的发现视图和 web 上的 Outlook。
+见解 API 使用高级分析和机器学习为用户提供他们在工作中所需的相关度最高的文件。 API 提升了我们所熟悉的 Microsoft 365 体验，其中包括 Office Delve、SharePoint Home、OneDrive for Business 中的发现视图以及 Outlook 网页版。
 
 ![人员和见解 API 为用户返回具有相关度的人员和文档](images/social-intel-concept-overview-data.png)
 
@@ -67,9 +67,9 @@ GET /me/people/?$search="topic:beetle"
 
 [配置文件](/graph/api/resources/profile) API 表示下一代建模并代表 Microsoft 365 服务中的人脉。 配置文件数据可与人脉数据一起使用，以基于 Microsoft Graph 生成自定义体验。
 
-## <a name="why-configure-profile-cards-in-your-organization-preview"></a>为什么要在组织中配置配置文件卡片（预览）？
+## <a name="why-configure-profile-cards-in-your-organization-preview"></a>为什么要在组织中配置个人资料卡片（预览版）？
 
-配置文件卡允许组织中的用户查看彼此相关的信息，例如其姓名和联系人信息。 管理员可以使用[配置文件卡片](/graph/api/resources/profilecardproperty)API 自定义在 Microsoft 365 人员体验中有关组织表面信息的方式。
+个人资料卡让组织中的用户可以查看其他人的信息，如姓名和联系信息。 管理员可以使用[个人资料卡](/graph/api/resources/profilecardproperty) API来定制有关 Microsoft 365 人员体验内的组织外观。
 
 ## <a name="why-integrate-with-document-based-insights"></a>为什么与基于文档的见解集成？
 
@@ -77,25 +77,25 @@ GET /me/people/?$search="topic:beetle"
 
 在平时的工作日中，用户通常会与存储在多个文档中的大量信息进行交互，并以多种不同的方式与其他用户协作。 当他们需要任何信息时，即可随时找到所需的信息，这一点很重要。
 
-您可以使用 insights API （包括[趋势分析](/graph/api/resources/insights-trending?view=graph-rest-1.0)、[共享](/graph/api/resources/insights-shared?view=graph-rest-1.0)和[使用](/graph/api/resources/insights-used?view=graph-rest-1.0)的 api），根据用户的当前上下文和需求从 Microsoft 365 中呈现文件，使用户在组织中实现更高的工作效率和改进协作。
+你可以使用见解 API（其中包含[热门](/graph/api/resources/insights-trending?view=graph-rest-1.0)、[共享](/graph/api/resources/insights-shared?view=graph-rest-1.0)和[使用](/graph/api/resources/insights-used?view=graph-rest-1.0) API），根据用户的当前上下文和需求跨 Microsoft 365 处理文件，使用户工作更为高效并提升组织中的协作。 组织可以为这些基于文档的见解[自定义隐私设置](insights-customize-item-insights-privacy.md)，并控制特定 Microsoft 365体验中这些见解的可用性。
 
 在应用中呈现见解 API 中的结果很简单。 每个结果都附带了一组常用可视化属性，例如，预览图像 URL 或预览文本。
 
 ### <a name="make-relevant-content-visible"></a>使相关内容可见
 
-在 Microsoft 365 中，Delve 使用_趋势_洞察力来帮助用户发现目前最感兴趣的文档。 请参见图 1。
+在 Microsoft 365 中，Delve 使用_热门_见解来帮助用户发现目前最令他们感兴趣的文档。 请参见图 1。
 
 通过编程的方式，可以使用见解 API 中的[热门](/graph/api/resources/insights-trending?view=graph-rest-1.0)实体为应用客户提供类似体验。 使用****“热门”实体可连接到最近热门或与用户相关的文档。 [列出热门文档](/graph/api/insights-list-trending?view=graph-rest-1.0)将返回存储在 OneDrive 或 SharePoint 团队网站上的文件，并参照这些文件的重要程度来对其排序。 
 
-**图1。Microsoft 365 中的 Delve 显示用户的热门文档**
+**图 1. Microsoft 365 中的 Delve 为用户显示热门文档**
 
-![Microsoft 365 中的 Delve 的屏幕截图，显示用户的热门文档](images/delve-concept.png)
+![Microsoft 365 中的 Delve 为用户显示热门文档的屏幕截图](images/delve-concept.png)
 
 ### <a name="allow-users-to-collaborate-and-get-back-to-work"></a>允许用户进行协作和恢复工作
 
-新的 Microsoft 365 人员卡可进入_使用_的和_共享_的见解，以连接人员和知识单元之间的数据点。 人员卡片将标识和显示有关人员的相关文档。 用户可以在整个套件内查看人员卡片（例如，在 Outlook 网页版中）。 请参见图 2。
+新的 Microsoft 365 人员卡片融入了“_使用_”和“_共享_”见解，以连接人员和知识单元之间的点。 人员卡片将标识和显示有关人员的相关文档。 用户可以在整个套件内查看人员卡片（例如，在 Outlook 网页版中）。 请参见图 2。
 
-见解 API 提供与[使用](/graph/api/resources/insights-used?view=graph-rest-1.0)和[共享](/graph/api/resources/insights-shared?view=graph-rest-1.0)实体类似的功能。 它们返回用户最近查看或使用的内容，或与最近在 Microsoft 365 中与用户共享的同事。
+见解 API 提供与[使用](/graph/api/resources/insights-used?view=graph-rest-1.0)和[共享](/graph/api/resources/insights-shared?view=graph-rest-1.0)实体类似的功能。 它们返回用户最近最常查看或使用的内容，或同事最近在 Microsoft 365 中与用户共享的内容。
 
 **图 2. Outlook 网页版显示用户的人员卡片**
 
@@ -112,14 +112,17 @@ GET /me/people/?$search="topic:beetle"
 在查找这些服务的 API 参考？
 
 - [使用 Microsoft Graph API 在应用中集成人员和工作区智能](/graph/api/resources/social-overview)
-- 人员 API[人员](/graph/api/resources/person)资源
-- [配置文件（预览）](/graph/api/resources/profile)资源
-- [配置文件卡片属性（预览）](/graph/api/resources/profilecardproperty)资源
+- 人脉 API [人员](/graph/api/resources/person) 资源
+- [个人资料（预览版）](/graph/api/resources/profile) 资源
+- [个人资料卡片（预览版）](/graph/api/resources/profilecardproperty) 资源
 - [见解 API](/graph/api/resources/officegraphinsights)
 - [分析 API（预览版）](/graph/api/resources/useranalytics)
 
 ## <a name="next-steps"></a>后续步骤
 
 * 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中使用你自己的文件试用人员、见解和分析 API。 登录并选择左侧列中的“显示更多示例”****。 使用菜单打开“人员”**** 和“见解”**** 和“分析”****。
-* 查找有关[人员 API](people-example.md)的详细信息。
-* 请参阅如何[自定义配置文件卡片](add-properties-profilecard.md)。
+* 查找有关[人脉 API](people-example.md) 的详细信息。
+* 请参阅如何 [自定义个人资料卡片](add-properties-profilecard.md)。
+* 了解有关[自定义用户隐私](insights-customize-item-insights-privacy.md)和 [insights API](/api-reference/beta/resources/iteminsights.md) 的详细信息。
+* 查找有关[分析 API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-balance-work-and-life) 的详细信息。
+* 查找有关[配置文件 API](/graph/api/resources/profile?view=graph-rest-beta) 的详细信息。

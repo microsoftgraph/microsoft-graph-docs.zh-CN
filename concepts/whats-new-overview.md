@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: e26203ef0a8846f611d570d98f30fd17dd6db4b3
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 14b02eedcb1636a40a68b2ecbcb3e814ca131c87
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183916"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427317"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -26,10 +26,19 @@ ms.locfileid: "45183916"
 [group](/graph/api/resources/group?view=graph-rest-v1.0) 实体下列属性的通用版本：**assignedLabels**、**expirationDateTime**、**membershipRule**、**membershipRuleProcessingState**、**preferredLanguage** 和 **theme**。
 
 ### <a name="identity-and-access"></a>身份和访问
-删除作为[设备](/graph/api/resources/device)的注册所有者或用户的用户。
+- 删除作为[设备](/graph/api/resources/device)的注册所有者或用户的用户。
+- 跟踪对新创建、更新或删除的应用程序本地表示形式（由 [servicePrincipals](/graph/api/resources/serviceprincipal) 资源表示）和委派权限授予（由 [oAuth2PermissionGrant](/graph/api/resources/oauth2permissiongrant) 资源表示）的更改，而无需对整个资源集合执行完全读取操作。
+- 正式发布[用于强制安全性默认设置的策略](/graph/api/resources/identitysecuritydefaultsenforcementpolicy)，可以保护组织免受常见攻击。
+
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
+- 正式发布[条件访问策略](/graph/api/resources/conditionalAccessPolicy)，它们是用于定义访问方案的自定义规则。
+- 正式发布表示自定义规则的[命名位置](/graph/api/resources/namedLocation)，用于定义在条件访问策略中使用的网络位置。
 
 ### <a name="schema-extensions"></a>架构扩展
-[架构扩展](/graph/api/resources/schemaextension)的功能现在可在[Microsoft Cloud for US Government](/graph/deployments)使用。
+[架构扩展](/graph/api/resources/schemaextension)功能现在可在[Microsoft Cloud for US Government](/graph/deployments)使用。
+
+### <a name="teamwork"></a>团队合作
+使用 `TeamsAppInstallation.ReadForTeam` 或 `TeamsAppInstallation.ReadWriteForTeam` 的委派权限，或者使用 `TeamsAppInstallation.ReadForTeam.All` 或 `TeamsAppInstallation.ReadWriteForTeam.All` 的应用程序权限来[列出已在团队中安装的应用](/graph/api/teamsappinstallation-list)。
 
 ## <a name="july-2020-new-in-preview-only"></a>2020 年 7 月：预览版新增功能
 
@@ -46,16 +55,26 @@ ms.locfileid: "45183916"
 Intune [7 月](changelog.md#july-2020)试用版更新。
 
 ### <a name="identity-and-access"></a>身份和访问
+- [获取访问令牌](/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta)，以授权 Azure AD 预配服务将用户预配到应用程序。
+- [获取](/graph/api/entitlementmanagementsettings-get?view=graph-rest-beta)或[更新](/graph/api/entitlementmanagementsettings-update?view=graph-rest-beta)权限管理设置，这些设置控制对组织内部和外部用户的组、应用程序和 SharePoint Online 网站的访问权限。 
+
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 - 将用户风险级别（`low`、`medium`、`high`、`none`）包含为应用 [条件访问策略](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta)的注意事项。
 - [使用密码更改作为授予控制](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta#special-considerations-when-using-passwordchange-as-a-control)，以便传递条件访问策略。
 
-### <a name="people-and-workplace-intelligence--profile-card-customization"></a>人脉和工作区智能 |个人资料卡片自定义
+### <a name="people-and-workplace-intelligence--insights"></a>人脉和工作场所智能|见解
+在 Microsoft 365 中，对[项见解](/graph/api/resources/iteminsights?view=graph-rest-beta)的可用性和显示进行更[精细的隐私控制](insights-customize-item-insights-privacy.md)。 这些见解表示 OneDrive for Business 中的用户和文档之间的关系，并使用高级分析和机器学习技术进行计算。 
+
+### <a name="people-and-workplace-intelligence--profile-card-customization"></a>人脉和工作区智能 | 个人资料卡片自定义
 管理员可以使用[个人资料卡属性](/graph/api/resources/profilecardproperty?view=graph-rest-beta) API，[自定义显示在组织个人资料卡上的属性](add-properties-profilecard.md)。
 
 ### <a name="workbooks-and-charts"></a>工作簿和图表
 [获取[工作簿](/graph/api/resources/workbook?view=graph-rest-beta)中长时间运行[操作](/graph/api/resources/workbookoperation?view=graph-rest-beta)的状态和任何结果](/graph/api/workbookoperation-get?view=graph-rest-beta)。
 
 ## <a name="june-2020-new-and-generally-available"></a>2020 年 6 月：新版本和正式版
+
+### <a name="calendar"></a>日历
+正式发布一项功能，它允许组织者接受备选会议时间提案，并允许受邀者在[暂时接受](/graph/api/event-tentativelyaccept?view=graph-rest-1.0)或[拒绝](/graph/api/event-decline?view=graph-rest-1.0)事件时[为会议建议新时间](outlook-calendar-meeting-proposals.md)。
 
 ### <a name="cloud-communications--online-meeting"></a>云通信 | 联机会议
 - [创建联机会议](/graph/api/application-post-onlinemeetings?view=graph-rest-1.0) 以提供基于区域的加入信息时，请使用 `Accept-Language` HTTP 标头。

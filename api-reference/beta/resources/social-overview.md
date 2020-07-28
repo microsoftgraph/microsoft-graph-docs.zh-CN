@@ -5,12 +5,12 @@ localization_priority: Priority
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: d1e1f49125aa8959c1cdd6b2f47cc5c4ff81d962
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
-ms.translationtype: MT
+ms.openlocfilehash: 86a8142882d9a9471ad128ca960ca3840cea7cca
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050965"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427471"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-and-workplace-intelligence-in-an-app"></a>使用 Microsoft Graph API 在应用中集成人员和工作区智能
 
@@ -22,7 +22,7 @@ Microsoft Graph 允许访问相关人员的有用数据、其个人资料、与�
 
 功能：人员
 
-你可以使用 [person](../resources/person.md) 资源和 People API 从邮件、联系人和社交网络中聚合某个人员的相关信息。 根据多种通信、协作和业务关系按相关性对结果进行排序。 通过此 API 可基于自己的条件对人员进行浏览、排序、选择、筛选或搜索。
+你可以使用 [person](../resources/person.md) 资源和 People API 从邮件、联系人和社交网络中聚合某个人员的相关信息。 根据多种通信、协作和业务关系按相关性对结果进行排序。 通过此 API 可以基于自己的条件对人员进行浏览、排序、选择、筛选或搜索。
 
 - [列出人员](../api/user-list-people.md)
 
@@ -34,13 +34,13 @@ Microsoft Graph 允许访问相关人员的有用数据、其个人资料、与�
 
 [profile](../resources/profile.md) 资源是关于租户内人员的信息的丰富源，提供了用于存储和检索人员信息的轻型机制。 
 
-## <a name="personalize-people-experiences-within-your-organization"></a>个性化组织中的人员体验
+## <a name="personalize-people-experiences-within-your-organization"></a>在组织内部提供个性化的人员体验
 
-功能：配置文件卡片自定义（预览）
+功能：个人资料卡片自定义（预览版）
 
-使管理员能够自定义在其组织内的 Microsoft 365 中使用的配置文件卡片上显示的信息。
+使管理员能够自定义在组织内的 Microsoft 365 中使用的个人资料卡片上显示的信息。
 
-[ProfileCardProperty](../resources/profileCardProperty.md)资源表示 Microsoft 365 配置文件卡片上的用户的一个属性，供组织以共享的人员体验为依据。
+[profileCardProperty](../resources/profileCardProperty.md) 资源表示 Microsoft 365 个人资料卡片上的用户的属性，便于组织打造共享的人员体验。
 
 ## <a name="help-users-get-the-most-relevant-documents-for-their-work"></a>帮助用户获得最相关的工作文档
 
@@ -51,6 +51,7 @@ Microsoft Graph 允许访问相关人员的有用数据、其个人资料、与�
 - 列出用户[常用的](../api/insights-list-trending.md)文档
 - 列出用户[使用的](../api/insights-list-used.md)文档
 - 列出[与用户共享或由用户共享的](../api/insights-list-shared.md)文档
+- 探索在组织内[为项目见解自定义隐私设置](/graph/insights-customize-item-insights-privacy.md)的方式。
 
 ## <a name="manage--mentions"></a>管理 @提及
 
@@ -86,7 +87,7 @@ Include the next sentence when supporting events.
 使用分析 API 获取用户的活动统计信息及相关设置：
 
 - [设置](../resources/settings.md)：要让分析 API 为用户返回结果，当前用户分析设置必须显示有效的 MyAnalytics 许可证、选择使用 MyAnalytics，并具有启用了图形的云托管邮箱。
-- [activityStatistics](../resources/activitystatistics.md)：获取用户花费的 Microsoft 365 活动的最后一个完整周（或指定时间范围）的数据，其中包括在工作时间和工作时间以及在工作时间和工作时间[范围内可用](meetingactivitystatistics.md)的小时[email](emailactivitystatistics.md)数[以及在工作](callactivitystatistics.md)时间和工作[时间中可用](chatactivitystatistics.md)的小时[数。](focusactivitystatistics.md)
+- [activityStatistics](../resources/activitystatistics.md)：获取整个上周用户花时间参与的 Microsoft 365 活动的相关数据，包括工作时间内及工作之余在[通话](callactivitystatistics.md)、[聊天（即时消息）](chatactivitystatistics.md)、[电子邮件](emailactivitystatistics.md)和[会议](meetingactivitystatistics.md)上花费的小时数，以及可用于[专注工作](focusactivitystatistics.md)的小时数。
 
-## <a name="whats-new"></a>最近更新
-了解这些 API 集的[最新新功能和更新](/graph/whats-new-overview)。
+## <a name="whats-new"></a>新增功能
+了解这些 API 集的[最新功能和更新](/graph/whats-new-overview)。
