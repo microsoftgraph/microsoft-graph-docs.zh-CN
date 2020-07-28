@@ -4,28 +4,28 @@ description: 在 Outlook 中，会议组织者可以允许被邀请者建议备�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 3e391f82670a2b9a9807ac88cb128ba909264b8b
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: d1273c967f9ea1476e83e7f2905c7ed4c29808d6
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622725"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427478"
 ---
-# <a name="propose-new-meeting-times-in-outlook-preview"></a>在 Outlook 中建议新的会议时间（预览）
+# <a name="propose-new-meeting-times-in-outlook"></a>在 Outlook 中建议新的会议时间
 
 在 Outlook 中，如果被邀请者无法在原始设置的日期/时间参加会议并暂定接受或拒绝，则会议组织者可以允许被邀请者建议备选会议时间。 组织者可通过适当调整会议时间来接受建议。
 
 ## <a name="example-attendee-responds-tentative-and-suggests-a-different-datetime"></a>示例：与会者做出暂定响应并建议不同的日期/时间
 下面是一个示例，其中 Alex 邀请 Adele 共进午餐，Adele 暂定接受并建议备选日期和时间，然后 Alex 通过相应地调整会议来接受建议：
 
-1. 作为组织者，Alex 向 Adele 发送了一个会议请求。 他将 [event](/graph/api/resources/event?view=graph-rest-beta) 的 **allowNewTimeProposals** 属性设置为 `true`，以便让 Adele 在需要时建议另一个时间。
+1. 作为组织者，Alex 向 Adele 发送了一个会议请求。 他将 [event](/graph/api/resources/event?view=graph-rest-1.0) 的 **allowNewTimeProposals** 属性设置为 `true`，以便让 Adele 在需要时建议另一个时间。
 
     <!-- {
       "blockType": "request",
       "name": "create_event"
     }-->
     ```http
-    POST https://graph.microsoft.com/beta/me/events
+    POST https://graph.microsoft.com/v1.0/me/events
     Prefer: outlook.timezone="Pacific Standard Time"
     Content-type: application/json
 
@@ -71,7 +71,7 @@ ms.locfileid: "37622725"
     Content-type: application/json
 
     {
-      "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
+      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
       "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAAAhBhkg==\"",
       "id": "AAMkADAwJXJGu0AAACEhWOAAA=",
       "createdDateTime": "2019-08-01T06:41:07.805128Z",
@@ -151,14 +151,14 @@ ms.locfileid: "37622725"
     }
     ```
 
-2. Adele 在她的收件箱中以 [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-beta) 的形式接收邀请。 她注意到 **allowNewTimeProposals** 属性已设置。 [使用与此 **eventMessageRequest** 相关联的 **event**](/graph/api/eventmessage-get#example-2?view=graph-rest-beta)，她做了一个暂定性答复，并在 **proposedNewTime** 正文参数中将日期建议为次日的同一时间。 她还将 **sendResponse** 参数设置为 true。
+2. Adele 在她的收件箱中以 [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-1.0) 的形式接收邀请。 她注意到 **allowNewTimeProposals** 属性已设置。 [使用与此 **eventMessageRequest** 相关联的 **event**](/graph/api/eventmessage-get?view=graph-rest-1.0#example-2)，她做了一个暂定性答复，并在 **proposedNewTime** 正文参数中将日期建议为次日的同一时间。 她还将 **sendResponse** 参数设置为 true。
 
     <!-- {
       "blockType": "request",
       "name": "event_tentativelyaccept"
     }-->
     ```http
-    POST https://graph.microsoft.com/beta/me/events/AAMkADU5NRaRqdoI4oeRpAAAB_woNAAA=/tentativelyAccept
+    POST https://graph.microsoft.com/v1.0/me/events/AAMkADU5NRaRqdoI4oeRpAAAB_woNAAA=/tentativelyAccept
     Content-type: application/json
 
     { 
@@ -188,7 +188,7 @@ ms.locfileid: "37622725"
     HTTP/1.1 202 Accepted
     ```
 
-3. Alex 收到一封 [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-beta) 类型的电子邮件。 他注意到了以下内容：
+3. Alex 收到一封 [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-1.0) 类型的电子邮件。 他注意到了以下内容：
 
    - 主题包含一个前缀，上面写着“已建议新时间：让我们共进午餐吧”
    - 发送者是 Adele Vance
@@ -200,7 +200,7 @@ ms.locfileid: "37622725"
       "name": "get_messages"
     }-->
     ```http
-    GET https://graph.microsoft.com/beta/me/messages?$top=1
+    GET https://graph.microsoft.com/v1.0/me/messages?$top=1
     Prefer: outlook.timezone="Pacific Standard Time"
     ```
 
@@ -219,8 +219,8 @@ ms.locfileid: "37622725"
     Preference-Applied: outlook.timezone="Pacific Standard Time"
 
     {
-       "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/messages",
-       "@odata.nextLink": "https://graph.microsoft.com/beta/me/messages?$top=1&$skip=4"",
+       "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/messages",
+       "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/messages?$top=1&$skip=4"",
        "value": [
           {
             "@odata.type": "#microsoft.graph.eventMessageResponse",
@@ -254,7 +254,6 @@ ms.locfileid: "37622725"
             "isAllDay": false,
             "isDelegated": false,
             "responseType": "tentativelyAccepted",
-            "mentionsPreview": null,
             "recurrence": null,
             "body": {
                 "contentType": "html",
@@ -314,14 +313,14 @@ ms.locfileid: "37622725"
     }
     ```
 
-4. Alex 还注意到，午餐的 **event** 现在包括一个指示 Adele 建议的 **proposedNewTime** 属性。 如果相应的与会者建议了备选会议时间，则此属性仅在 [attendee ](/graph/api/resources/attendee?view=graph-rest-beta) 实例中出现。 
+4. Alex 还注意到，午餐的 **event** 现在包括一个指示 Adele 建议的 **proposedNewTime** 属性。 如果相应的与会者建议了备选会议时间，则此属性仅在 [attendee ](/graph/api/resources/attendee?view=graph-rest-1.0) 实例中出现。 
 
     <!-- {
       "blockType": "request",
       "name": "event_get"
     }-->
     ```http
-    GET https://graph.microsoft.com/beta/me/events/AAMkADAwJXJGu0AAACEhWOAAA=?$select=subject,allowNewTimeProposals,start,end,attendees,organizer
+    GET https://graph.microsoft.com/v1.0/me/events/AAMkADAwJXJGu0AAACEhWOAAA=?$select=subject,allowNewTimeProposals,start,end,attendees,organizer
     Prefer: outlook.timezone="Pacific Standard Time"
     ```
 
@@ -335,7 +334,7 @@ ms.locfileid: "37622725"
     HTTP/1.1 200 Ok
 
     {
-        "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events(subject,allowNewTimeProposals,start,end,attendees,organizer)/$entity",
+        "@odata.context": "https://graph.microsoft.com/testexchangev1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events(subject,allowNewTimeProposals,start,end,attendees,organizer)/$entity",
         "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAAAhEDMA==\"",
         "id": "AAMkADAwJXJGu0AAACEhWOAAA=",
         "subject": "Let's go for lunch",
@@ -388,7 +387,7 @@ ms.locfileid: "37622725"
       "name": "event_update"
     }-->
     ```http
-    PATCH https://graph.microsoft.com/beta/me/events/AAMkADAwJXJGu0AAACEhWOAAA=
+    PATCH https://graph.microsoft.com/v1.0/me/events/AAMkADAwJXJGu0AAACEhWOAAA=
     Prefer: outlook.timezone="Pacific Standard Time"
     Content-type: application/json
 
@@ -416,7 +415,7 @@ ms.locfileid: "37622725"
     HTTP/1.1 200 Ok
 
     {
-      "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
+      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
       "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAAAhBizA==\"",
       "id": "AAMkADAwJXJGu0AAACEhWOAAA=",
       "createdDateTime": "2019-08-01T06:41:07.805128Z",
