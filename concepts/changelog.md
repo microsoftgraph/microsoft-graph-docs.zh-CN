@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 95d55141437825612c74f802783210dcf075d466
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: 3d22d73ae4e336f7eae585f8d535d276e29411f6
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408055"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427422"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -18,18 +18,28 @@ ms.locfileid: "45408055"
 
 ## <a name="july-2020"></a>2020 年 7 月
 
+### <a name="calendar"></a>日历
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | v1.0 | 向 [event](/graph/api/resources/event?view=graph-rest-1.0) 和 [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-1.0) 实体添加了 **allowNewTimeProposals** 属性。 |
+| 添加项 | v1.0 | 将 **proposedNewTime** 可选参数添加到 **event** 的 [tentativelyAccept](/graph/api/event-tentativelyaccept?view=graph-rest-1.0) 和 [decline](/graph/api/event-decline?view=graph-rest-1.0) 方法中。 |
+| 添加项 | v1.0 | 添加了基于 [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0) 的 [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-1.0) 实体，此外，还包括 **proposedNewTime** 和 **responseType** 属性。 |
+| 添加项 | v1.0 | 向 [attendee](/graph/api/resources/attendee?view=graph-rest-1.0) 复杂类型添加了 **proposedNewTime** 属性。 |
+
+
 ### <a name="change-notifications"></a>更改通知
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 删除 | Beta 和 v1.0 | 已删除从 [changeNotification](/graph/api/resources/changenotification) 类型中错误引入的 **sequenceNumber** 属性。|
-| 添加项 | Beta | 将[状态](/graph/api/resources/presence)添加到支持[更改通知](/graph/webhooks)的资源。 |
+| 添加项 | beta | 将[状态](/graph/api/resources/presence)添加到支持[更改通知](/graph/webhooks)的资源。 |
 
 ### <a name="cloud-communications"></a>云通信
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | beta | 为会议添加了 [Update onlineMeeting](/graph/api/onlinemeeting-update?view=graph-rest-beta) 操作。|
-| 添加项 | Beta | [状态](/graph/api/resources/presence)资源现支持[更改通知](/graph/webhooks)。 |
+| 添加项 | beta | [状态](/graph/api/resources/presence)资源现支持[更改通知](/graph/webhooks)。 |
 
 ### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
 
@@ -86,47 +96,49 @@ ms.locfileid: "45408055"
 |添加项|v1.0|向 [directoryObject](/graph/api/resources/directoryObject?view=graph-rest-1.0) 资源添加了 [getAvailableExtensionProperties](/graph/api/directoryObject-getAvailableExtensionProperties?view=graph-rest-1.0) 方法。|
 | 添加项 | beta | 已将**设置**导航属性添加到[组织](/graph/api/resources/organization?view=graph-rest-beta)实体。 |
 | 添加项 | beta | 添加了 [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta) 实体。  |
-| 添加项 | beta | 已将 **profileCardProperties** 导航属性添加到 **organizationSettings** 实体。 |
-| 添加项 | beta | 添加了 **profileCardProperty** 实体和以下操作： <br/> [List](/graph/api/organizationsettings-list-profilecardproperties) <br/> [创建](/graph/api/organizationsettings-post-profilecardproperties) <br/> [Get profileCardProperty](/graph/api/profilecardproperty-get?view=graph-rest-beta)实体。 <br/> [Update profileCardProperty](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [删除](/graph/api/profilecardproperty-delete) |
-| 添加项 | Beta 和 v1.0 | 已将以下操作添加到[设备](/graph/api/resources/device)： <br/> [删除注册的所有者](/graph/api/delete-registeredowners) <br/> [删除注册的用户](/graph/api/delete-registeredusers)|
-| 添加项 | Beta 和 v1.0 | 已将以下操作添加到[设备](/graph/api/resources/device)： <br/> [删除注册的所有者](/graph/api/device-delete-registeredowners) <br/> [删除注册的用户](/graph/api/delete-registeredusers)|
+| 添加 | Beta 和 v1.0 | 已将以下操作添加到[设备](/graph/api/resources/device)： <br/> [删除注册的所有者](/graph/api/delete-registeredowners) <br/> [删除注册的用户](/graph/api/delete-registeredusers)|
 | 添加项 | v1.0 | 向[group](/graph/api/resources/group?view=graph-rest-v1.0)实体添加了**assignedLabels**、**expirationDateTime**、**membershipRule**、**membershipRuleProcessingState**、**preferredLanguage**，以及**theme**属性。 |
 | 添加项 | beta | 已向 [group](/graph/api/resources/group?view=graph-rest-beta) 实体和 [user](/graph/api/resources/user?view=graph-rest-beta)实体添加了**infoCatalogs** 属性。 |
-| 添加 | beta | 已向 [conditionalaccessconditionset](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) 实体添加了 **userRiskLevels** 属性。 |
-| 添加项 | beta | 向 [conditionalAccessGrantControls](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta) 实体添加了 **passwordChange** 授权控件。 |
-| 添加项 | beta | 向 [synchronizationSchema](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta) 实体添加了 **id** 属性。 |
+| 添加 | beta | 向 [synchronizationSchema](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta) 实体添加了 **id** 属性。 |
 | 添加项 | beta | 向 [synchronization](/graph/api/resources/synchronization-synchronization?view=graph-rest-beta) 资源添加了[acquireAccessToken](/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta)方法|
 | Addition | beta | 添加了 [entitlementManagementSettings](/graph/api/resources/entitlementmanagementsettings?view=graph-rest-beta) 实体。 |
-| 添加项 | v1.0 | 添加了 [identitySecurityDefaultsEnforcementPolicy API](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-v1.0)，它表示 Azure Active Directory 安全默认值策略。|
+| 添加项 | v1.0 | 添加了 [identitySecurityDefaultsEnforcementPolicy API](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-1.0)，它表示 Azure Active Directory 安全默认值策略。|
 | 添加项        | v1.0        | 向 [servicePrincipal](/graph/api/serviceprincipal-delta) 添加了 [delta 查询](delta-query-overview.md)功能。 |
+| 添加项        | v1.0        | 为 [oauth2PermissionGrant](/graph/api/oauth2Permissiongrant-delta) 添加了 [delta 查询](delta-query-overview.md)功能。 |
 
-### <a name="identity-and-access--conditional-access"></a>身份和访问 | 条件访问
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
 | 添加项 | beta | 向 [conditionalaccessconditionset](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) 实体添加了 **userRiskLevels** 属性。 |
 | 新增 | beta | 向 [conditionalaccessgrantcontrols](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta) 实体添加了 **passwordChange** 授权控件。 |
 | 添加项 | v1.0 | 添加了新实体类型：<br/>[conditionalAccessPolicy](/graph/api/resources/conditionalAccessPolicy)<br/>
 | 添加项 | v1.0 | 新增了复杂类型：<br/>[conditionalAccessSessionControl](/graph/api/resources/conditionalAccessSessionControl)<br/>[applicationEnforcedRestrictionsSessionControl](/graph/api/resources/applicationEnforcedRestrictionsSessionControl)<br/>[cloudAppSecuritySessionControl](/graph/api/resources/cloudAppSecuritySessionControl)<br/>[signInFrequencySessionControl](/graph/api/resources/signInFrequencySessionControl)<br/>[persistentBrowserSessionControl](/graph/api/resources/persistentBrowserSessionControl)<br/>[conditionalAccessSessionControls](/graph/api/resources/conditionalAccessSessionControls)<br/>[conditionalAccessApplications](/graph/api/resources/conditionalAccessApplications)<br/>[conditionalAccessUsers](/graph/api/resources/conditionalAccessUsers)<br/>[conditionalAccessPlatforms](/graph/api/resources/conditionalAccessPlatforms)<br/>[conditionalAccessLocations](/graph/api/resources/conditionalAccessLocations)<br/>[conditionalAccessConditionSet](/graph/api/resources/conditionalAccessConditionSet)<br/>[conditionalAccessGrantControls](/graph/api/resources/conditionalAccessGrantControls)<br/>|
-| 添加项 | v1.0 | 添加了表示 Azure AD 条件访问中命名位置的 [namedLocation API](/graph/api/resources/namedLocation?view=graph-rest-v1.0)。 |
+| 添加项 | v1.0 | 添加了 [namedLocation API](/graph/api/resources/namedLocation?view=graph-rest-1.0)，这表示 Azure AD 条件访问中的已命名位置。 |
 
-### <a name="people-and-workplace-intelligence--profile-card-customization"></a>人脉和工作区智能 | 个人资料卡片自定义
+### <a name="people-and-workplace-intelligence--insights"></a>人脉和工作场所智能|见解
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 添加项 | beta | 已将 **itemInsights** 导航属性添加到 **organizationSettings** 实体。 |
+| 添加项 | beta | 添加了 **itemInsightsSettings** 实体和以下操作： <br/> [获取 itemInsightSettings](/graph/api/iteminsightssettings-get?view=graph-rest-beta) <br/> [更新 itemInsightSettings](/graph/api/iteminsightssettings-update?view=graph-rest-beta) |
+
+
+### <a name="people-and-workplace-intelligence--profile"></a>人员和工作场所智能 | 配置文件
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | beta | 已将 **profileCardProperties** 导航属性添加到 [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta) 实体。 |
-| 添加项 | beta | 添加了 **profileCardProperty** 实体和以下操作： <br/> [List](/graph/api/organizationsettings-list-profilecardproperties) <br/> [创建](/graph/api/organizationsettings-post-profilecardproperties) <br/> [获取](/graph/api/profilecardproperty-get?view=graph-rest-beta) <br/> [更新](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [删除](/graph/api/profilecardproperty-delete) |
+| 添加项 | beta | 添加了 **profileCardProperty** 实体和以下操作： <br/> [List](/graph/api/organizationsettings-list-profilecardproperties) <br/> [创建](/graph/api/organizationsettings-post-profilecardproperties) <br/> [获取](/graph/api/profilecardproperty-get?view=graph-rest-beta) <br/> [更新](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [删除](/graph/api/profilecardproperty-delete)。 |
 
 ### <a name="teamwork"></a>团队合作
-
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项 | beta、v1.0 | 添加了新权限 [TeamsAppInstallation.ReadForTeam](/graph/permissions-reference#Teams-app-installation-permissions)、[TeamsAppInstallation.ReadWriteForTeam](/graph/permissions-reference#Teams-app-installation-permissions)、[TeamsAppInstallation.ReadForTeam.All](/graph/permissions-reference#Teams-app-installation-permissions)、[TeamsAppInstallation.ReadWriteForTeam.All](/graph/permissions-reference#Teams-app-installation-permissions)。 |
+
 
 ### <a name="workbooks-and-charts"></a>工作簿和图表
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 |添加项|Beta 和 v1.0 |向 [Workbook](/graph/api/resources/workbook?view=graph-rest-beta) 实体添加了 [workbookOperation](/graph/api/resources/workbookoperation) 关系。 |
-|添加项|Beta 和 v1.0 |向 [Get workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) 实体添加了[Get workbookOperation](/graph/api/resources/workbookoperation-get) 方法。 |
-
+|添加项|Beta 和 v1.0 |向 [Get workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) 实体添加了[Get workbookOperation](/graph/api/workbookoperation-get) 方法。 |
 
 ## <a name="june-2020"></a>2020 年 6 月
 
@@ -1643,7 +1655,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
 | 添加项        | Beta  | 向 [mailboxUsageDetail](/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta) 实体添加了 **deletedItemCount** 属性。|
-| 添加        | Beta  | 向 [mailboxUsageDetail](/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta) 实体添加了 **deletedItemSizeInBytes** 属性。|
+| 添加项        | Beta  | 向 [mailboxUsageDetail](/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta) 实体添加了 **deletedItemSizeInBytes** 属性。|
 | 添加项        | Beta  | 向 [office365GroupsActivityDetail](/graph/api/resources/office365GroupsActivityDetail?view=graph-rest-beta) 实体添加了 **groupId** 属性。|
 
 ### <a name="teamwork"></a>团队合作
@@ -3328,7 +3340,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [shutDown](/graph/api/intune-devices-manageddevice-shutdown?view=graph-rest-1.0) 操作 |
 |Addition|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [recoverPasscode](/graph/api/intune-devices-manageddevice-recoverpasscode?view=graph-rest-1.0) 操作 |
 |Addition|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [cleanWindowsDevice](/graph/api/intune-devices-manageddevice-cleanwindowsdevice?view=graph-rest-1.0) 操作 |
-|添加|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [logoutSharedAppleDeviceActiveUser](/graph/api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser?view=graph-rest-1.0) 操作 |
+|添加项|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [logoutSharedAppleDeviceActiveUser](/graph/api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser?view=graph-rest-1.0) 操作 |
 |Addition|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [deleteUserFromSharedAppleDevice](/graph/api/intune-devices-manageddevice-deleteuserfromsharedappledevice?view=graph-rest-1.0) 操作 |
 |添加项|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [syncDevice](/graph/api/intune-devices-manageddevice-syncdevice?view=graph-rest-1.0) 操作 |
 |添加项|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [windowsDefenderScan](/graph/api/intune-devices-manageddevice-windowsdefenderscan?view=graph-rest-1.0) 操作 |
@@ -5043,4 +5055,3 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 修补程序             | v1.0 和 beta | 修复了通过用户主体名称 (UPN) 引用用户时可以选择其他用户上的某些用户属性的问题。例如：https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
 | 修补程序             | v1.0 和 beta | 修复了在调用 _microsoft.graph.reminderView_ 用户绑定功能时出现以下错误的问题：无法在类型 Microsoft.OutlookServices.Reminder 上找到名为 businessPhones 的属性。 |
 | 修补程序             | v1.0 和 beta | 修复了出现 400 错误的用户创建和更新 (POST/PATCH /v1.0/users)。 |
-
