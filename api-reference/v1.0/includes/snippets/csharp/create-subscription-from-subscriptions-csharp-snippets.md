@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 54e46b8b53a904ba11760ba9324ec56d689ac961
-ms.sourcegitcommit: 1a84f80798692fc0381b1acecfe023b3ce6ab02c
+ms.openlocfilehash: e15b2f988df06fe14f1ae1cf9e2b955744fe6da9
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41956398"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46512204"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var subscription = new Subscription
 {
-    ChangeType = "updated",
+    ChangeType = "created",
     NotificationUrl = "https://webhook.azurewebsites.net/api/send/myNotifyClient",
     Resource = "me/mailFolders('Inbox')/messages",
     ExpirationDateTime = DateTimeOffset.Parse("2016-11-20T18:23:45.9356913Z"),

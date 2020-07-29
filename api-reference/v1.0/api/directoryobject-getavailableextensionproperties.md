@@ -1,16 +1,16 @@
 ---
 title: directoryObject： getAvailableExtensionProperties
-description: 获取已在目录中注册的目录扩展属性的所有或已筛选列表。
+description: 获取已在目录中注册的目录扩展属性的所有或筛选列表。
 author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3276b114f3fa6370a4cc8d03b8b6607148bf3c7f
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: 3dfc4d3c8e6d2f379d717649c945aaa48e978916
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45225003"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509503"
 ---
 # <a name="directoryobject-getavailableextensionproperties"></a>directoryObject： getAvailableExtensionProperties
 命名空间：microsoft.graph
@@ -49,7 +49,7 @@ POST /directoryObjects/getAvailableExtensionProperties
 
 |参数|类型|说明|
 |:---|:---|:---|
-|isSyncedFromOnPremises|布尔值|`true`若要指定仅应返回从本地目录同步的扩展属性，则为  ; 否则为  。`false`若要指定仅应返回不是从本地目录同步的扩展属性。 如果省略该参数，则返回所有扩展属性（同步和未同步）。|
+|isSyncedFromOnPremises|Boolean|`true`若要指定仅应返回从本地目录同步的扩展属性，则为  ; 否则为  。`false`若要指定仅应返回不是从本地目录同步的扩展属性。 如果省略该参数，则返回所有扩展属性（同步和未同步）。|
 
 
 ## <a name="response"></a>响应
@@ -59,6 +59,8 @@ POST /directoryObjects/getAvailableExtensionProperties
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_getavailableextensionproperties"
@@ -74,6 +76,12 @@ Content-length: 43
   "isSyncedFromOnPremises": "Boolean"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-getavailableextensionproperties-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

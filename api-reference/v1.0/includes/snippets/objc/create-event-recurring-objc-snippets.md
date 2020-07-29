@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 744fc46fb776e96426d7da608a29a2160f7354ee
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: e2d379532465c552accc6c49f43f0ee8d1d77c42
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35723284"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46512290"
 ---
 ```objc
 
@@ -56,6 +56,7 @@ MSGraphEmailAddress *emailAddress = [[MSGraphEmailAddress alloc] init];
 [attendees setType: [MSGraphAttendeeType required]];
 [attendeesList addObject: attendees];
 [event setAttendees:attendeesList];
+[event setAllowNewTimeProposals: true];
 
 NSError *error;
 NSData *eventData = [event getSerializedDataWithError:&error];

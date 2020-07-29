@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 401167d6794c95fa719bc73a06505d3e149acfe3
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 36c0de47fcfa4c76c8900b27e719f50b2fd053fa
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885693"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46512352"
 ---
 ```java
 
@@ -70,6 +70,7 @@ Location locations2 = new Location();
 locations2.displayName = "Home Office";
 locationsList.add(locations2);
 event.locations = locationsList;
+event.allowNewTimeProposals = true;
 
 graphClient.me().events()
     .buildRequest( requestOptions )

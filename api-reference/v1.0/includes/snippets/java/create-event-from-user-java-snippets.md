@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 769117b99ff5b754ca939665a8bb9d01d2c2f403
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 97882171cc7a97453d772a485a2c0231356dfc8e
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35885691"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46512268"
 ---
 ```java
 
@@ -18,7 +18,7 @@ Event event = new Event();
 event.subject = "Let's go for lunch";
 ItemBody body = new ItemBody();
 body.contentType = BodyType.HTML;
-body.content = "Does late morning work for you?";
+body.content = "Does noon work for you?";
 event.body = body;
 DateTimeTimeZone start = new DateTimeTimeZone();
 start.dateTime = "2017-04-15T12:00:00";
@@ -40,6 +40,7 @@ attendees.emailAddress = emailAddress;
 attendees.type = AttendeeType.REQUIRED;
 attendeesList.add(attendees);
 event.attendees = attendeesList;
+event.allowNewTimeProposals = true;
 
 graphClient.me().events()
     .buildRequest( requestOptions )

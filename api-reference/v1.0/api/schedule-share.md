@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5173b8fff7b16c5a528c4accfaf11cb6a28b86b2
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 95072a3b61aa2a36d9ca3617c7c12d1dffce3ed4
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155143"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "44216415"
 ---
 # <a name="schedule-share"></a>日程安排：共享
 
@@ -28,7 +28,7 @@ ms.locfileid: "44155143"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Schedule。 All，Group. 所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Schedule.ReadWrite.All |
+|应用程序 | Schedule.ReadWrite.All |
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -51,7 +51,7 @@ POST /teams/{teamId}/schedule/share
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-|参数                   |类型           |Description  |
+|参数                   |类型           |说明  |
 |-----------------------|-------------------|--------------|
 | notifyTeam            |`Boolean`             |指示整个团队是否应获取有关此操作的可见通知，或仅获取已分配有班次的员工。 必需。       |
 | startDateTime         |`DateTimeOffset`   |共享日程上的班次的开始时间。 必需。   |
@@ -67,6 +67,8 @@ POST /teams/{teamId}/schedule/share
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schedule-share"
@@ -81,6 +83,24 @@ Content-type: application/json
   "endDateTime": "2018-10-15T00:00:00.000Z"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/schedule-share-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/schedule-share-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/schedule-share-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/schedule-share-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
