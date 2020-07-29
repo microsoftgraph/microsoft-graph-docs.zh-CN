@@ -5,12 +5,12 @@ author: stephenjust
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: 45b22c9e6ce7dc25256534ce5bfcfa91dc81c347
-ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
-ms.translationtype: MT
+ms.openlocfilehash: 3fae40563bbd89b5792d75b5d8a0a51c1cda17e3
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44408324"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509880"
 ---
 # <a name="working-with-the-call-records-api-in-microsoft-graph"></a>使用 Microsoft Graph 中的通话记录 API
 
@@ -25,8 +25,10 @@ ms.locfileid: "44408324"
 | Resource | Methods |
 | :-- | :-- |
 | [callRecord](callrecords-callrecord.md) | [获取 callRecord](../api/callrecords-callrecord-get.md) |
-| [Session](callrecords-session.md) | [获取 callRecord](../api/callrecords-callrecord-get.md)<br />[列出会话](../api/callrecords-session-list.md) |
-| [segment](callrecords-segment.md) | [获取 callRecord](../api/callrecords-callrecord-get.md)<br />[列出会话](../api/callrecords-session-list.md) |
+| [Session](callrecords-session.md) | [获取 callRecord](../api/callrecords-callrecord-get.md)<br />[列表会话](../api/callrecords-session-list.md) |
+| [segment](callrecords-segment.md) | [获取 callRecord](../api/callrecords-callrecord-get.md)<br />[列表会话](../api/callrecords-session-list.md) |
+| [pstnCallLogRow](callrecords-pstncalllogrow.md)|[Get pstnCallLogRow](../api/callrecords-callrecord-getpstncalls.md) |
+| [directRoutingLogRow](callrecords-directroutinglogrow.md) | [Get directRoutingLogRow](../api/callrecords-callrecord-getdirectroutingcalls.md)|
 
 ## <a name="call-record-structure"></a>呼叫记录结构
 

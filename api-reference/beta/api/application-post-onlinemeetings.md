@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cef3822e418b822c74293fbff9c0def9a7104c63
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
-ms.translationtype: MT
+ms.openlocfilehash: 30f15f495fc73f0d976da820b43c10a88b3d5f9c
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345168"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509523"
 ---
 # <a name="create-onlinemeeting"></a>创建 onlineMeeting
 
@@ -28,16 +28,15 @@ ms.locfileid: "44345168"
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | OnlineMeetings.ReadWrite                    |
-| 委派（个人 Microsoft 帐户） | 不支持                               |
-| 应用程序                            | OnlineMeetings.ReadWrite.All*  |
+| 委派（个人 Microsoft 帐户） | 不支持。                               |
+| 应用程序                            | 不支持。\* |
 
->**注意：** 在不久的将来，将支持使用应用程序令牌创建联机会议。 我们将提供其他应用程序策略，这些策略将对基于应用程序的权限范围进行补充。 现在，我们鼓励你将/me 路径与用户令牌一起使用。
+> [!IMPORTANT]
+> \* 在不久的将来将提供通过应用程序令牌创建联机会议的支持。 我们将提供其他应用程序策略，它们对基于应用程序的权限范围有补充。 目前必须将 /me 路径与用户令牌一起使用。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /app/onlineMeetings
-POST /communications/onlineMeetings
 POST /me/onlineMeetings
 ```
 
@@ -58,100 +57,7 @@ POST /me/onlineMeetings
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-an-online-meeting-with-application-token"></a>示例 1：使用应用程序令牌创建联机会议
-
-#### <a name="request"></a>请求
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create-onlinemeeting-app-token"
-}-->
-```http
-POST https://graph.microsoft.com/beta/communications/onlineMeetings
-Content-Type: application/json
-
-{
-  "startDateTime":"2019-09-09T14:33:30.8546353-07:00",
-  "endDateTime":"2019-09-09T15:03:30.8566356-07:00",
-  "subject":"Application Token Meeting",
-  "participants": {
-    "organizer": {
-      "identity": {
-        "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f"
-        }
-      }
-    }
-  }
-}
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-onlinemeeting-app-token-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-onlinemeeting-app-token-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-onlinemeeting-app-token-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-在请求正文中，提供 [onlineMeeting](../resources/onlinemeeting.md) 对象的 JSON 表示形式。
-
-#### <a name="response"></a>响应
-
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onlineMeeting"
-} -->
-```http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.onlineMeeting",
-  "autoAdmittedUsers": "everyone",
-  "audioConferencing": {
-    "tollNumber": "+12525634478",
-    "tollFreeNumber": "+18666390588",
-    "ConferenceId": "2425999",
-    "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=2425999"
-  },
-  "chatInfo": {
-    "threadId": "19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
-    "messageId": "0",
-    "replyChainMessageId": "0"
-  },
-  "creationDateTime": "2019-07-11T02:17:17.6491364Z",
-  "startDateTime": "2019-07-11T02:17:17.6491364Z",
-  "endDateTime": "2019-07-11T02:47:17.651138Z",
-  "id": "550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
-  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
-  "participants": {
-    "organizer": {
-      "identity": {
-        "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
-        }
-      },
-      "upn": "upn-value"
-    }
-  },
-  "subject": "Application Token Meeting"
-}
-```
-
-### <a name="example-2-create-an-online-meeting-with-user-token"></a>示例 2：使用用户令牌创建联机会议
+### <a name="example-1-create-an-online-meeting-with-user-token"></a>示例 1：使用用户令牌创建联机会议
 
 #### <a name="request"></a>请求
 
@@ -242,7 +148,7 @@ Content-Type: application/json
 ```
 
 
-### <a name="example-3-create-an-online-meeting-in-a-microsoft-teams-channel-with-a-user-token"></a>示例 3：使用用户令牌在 Microsoft Teams 频道中创建联机会议
+### <a name="example-2-create-an-online-meeting-in-a-microsoft-teams-channel-with-a-user-token"></a>示例 2：使用用户令牌在 Microsoft Teams 频道中创建联机会议
 
 #### <a name="request"></a>请求
 >**注意：** 传递的用户令牌的对象 ID 应当是有效负载中由 threadid 表示的频道的成员。
