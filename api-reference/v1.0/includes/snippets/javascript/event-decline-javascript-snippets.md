@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 6184f0d84f4ba099ecf0ec38e1cf52ccd019f9ab
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 90f6198e95ee83fbf9a8bbf67736e9855a87a06d
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35732639"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46512278"
 ---
 ```javascript
 
@@ -16,8 +16,18 @@ const options = {
 const client = Client.init(options);
 
 const decline = {
-  comment: "comment-value",
-  sendResponse: true
+  comment: "I won't be able to make this week. How about next week?",
+  sendResponse: true,
+  proposedNewTime: {
+      start: { 
+          dateTime: "2019-12-02T18:00:00", 
+          timeZone: "Pacific Standard Time" 
+      }, 
+      end: { 
+          dateTime: "2019-12-02T19:00:00", 
+          timeZone: "Pacific Standard Time" 
+      }     
+  }
 };
 
 let res = await client.api('/me/events/{id}/decline')
