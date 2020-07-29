@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 00b029c5dcbf297d7504a0c30ca7512d523c17ce
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: c1eb501cb9852d6d7733a6be3e78c4206326ddbe
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45225128"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509831"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>使用 Azure AD 权限管理 API
 
@@ -31,6 +31,7 @@ Azure Active Directory （Azure AD）权限管理可帮助您管理对组、应�
 - [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)：指示通过访问包分配为主题分配的特定于资源的角色。
 - [accessPackageCatalog](accesspackagecatalog.md)：访问包的容器。
 - [accessPackageResourceRequest](accesspackageresourcerequest.md)：将资源添加到访问包目录的请求。
+- [connectedOrganization](connectedorganization.md)：可请求访问的外部用户的已连接组织。
 - [entitlementManagementSettings](entitlementmanagementsettings.md)：适用于 Azure AD 权限管理的租户范围的设置。
 
 请注意，"权限管理" 功能（包括 API）包含在 Azure AD Premium P2 中。 使用权限管理的租户必须具有有效的已购买或试用版 Azure AD Premium P2 或 EMS E5 订阅。
@@ -67,6 +68,12 @@ Azure Active Directory （Azure AD）权限管理可帮助您管理对组、应�
 | [列出 accessPackageCatalog 资源角色](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md)集合 | 检索**accessPackageResourceRole**对象的列表。 |
 | [列出 accessPackageResourceRequests](../api/accesspackageresourcerequest-list.md) | [accessPackageResourceRequest](accesspackageresourcerequest.md)集合 | 读取**accessPackageResourceRequest**对象的属性和关系。 |
 | [创建 accessPackageResourceRequest](../api/accesspackageresourcerequest-post.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | 创建新的**accessPackageResourceRequest**对象。 |
+| [列出 connectedOrganizations](../api/connectedorganization-list.md) | [connectedOrganization](connectedorganization.md)集合 | 检索**connectedOrganization**对象的列表。 |
+| [创建 connectedOrganization](../api/connectedorganization-post.md) | [connectedOrganization](connectedorganization.md) | 创建新的**connectedOrganization**对象。 |
+| [获取 connectedOrganization](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | 读取**connectedOrganization**对象的属性和关系。 |
+| [更新 connectedOrganization](../api/connectedorganization-update.md) |无 | 更新**connectedOrganization**。 |
+| [删除 connectedOrganization](../api/connectedorganization-delete.md) |无 | 删除**connectedOrganization**。 |
+
 
 ## <a name="types"></a>类型
 
@@ -74,6 +81,7 @@ Azure Active Directory （Azure AD）权限管理可帮助您管理对组、应�
 - [approvalStage](approvalstage.md) -在[approvalSettings](approvalsettings.md)中使用，以指定主要、备份和升级审批者。
 - [userSet](userset.md)子[类型 singleUser](singleuser.md)、 [groupMembers](groupmembers.md)、 [connectedOrganizationMembers](connectedorganizationmembers.md)、 [requestorManager](requestormanager.md)、 [internalSponsors](internalsponsors.md)和[externalSponsors](externalsponsors.md) -在[requestorSettings](requestorsettings.md)、 [approvalStage](approvalstage.md)和[assignmentReviewSettings](assignmentreviewsettings.md)中使用。
 - [accessPackageSubject](accesspackagesubject.md) -在[accessPackageAssignment](accesspackageassignment.md)中用作具有访问包分配的主题用户。
+- [identitySource](identitysource.md) -用于[connectedOrganization](connectedorganization.md)、 [azureActiveDirectoryTenant](azureactivedirectorytenant.md)、 [domainIdentitySource](domainidentitysource.md)或[externalDomainFederation](externaldomainfederation.md)中的一个。
 
 ## <a name="see-also"></a>另请参阅
 

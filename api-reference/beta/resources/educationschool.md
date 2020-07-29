@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 208527c1b846a307b88e3f96204dba660caedb9a
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: 32ed190f39d84e4c756d265527f4f0a8bcaf73f5
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909551"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509810"
 ---
 # <a name="educationschool-resource-type"></a>educationSchool 资源类型
 
@@ -40,22 +40,23 @@ ms.locfileid: "44909551"
 
 ## <a name="properties"></a>属性
 
-| 属性            | 类型                                  | 说明                                               |
-| :------------------ | :------------------------------------ | :-------------------------------------------------------- |
-| id                  | 字符串                                | 该学校的 GUID。                                      |
-| address             | [physicalAddress](physicaladdress.md) | 学校地址。                                    |
-| createdBy           | [identitySet](identityset.md)         | 创建了学校的实体。                            |
-| description         | String                                | 学校描述。                                |
-| displayName         | 字符串                                | 学校的显示名称。                               |
-| externalId          | String                                | 同步系统中学校的 ID。                           |
-| externalPrincipalId | String                                | 同步系统中主体的 ID。                        |
-| externalSource      | String                                | 只读。 可能的值为 `sis` ： `lms` 或 `manual` 。 |
-| highestGrade        | String                                | 教授的最高年级。                                     |
-| lowestGrade         | String                                | 教授的最低年级。                                      |
-| phone               | String                                | 学校电话号码。                                   |
-| principalEmail      | String                                | 主体的电子邮件地址。                           |
-| principalName       | String                                | 主体名称。                                    |
-| schoolNumber        | String                                | 学校编号。                                            |
+| 属性             | 类型                                  | 说明                                                                                                                                                          |
+| :------------------- | :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                   | 字符串                                | 该学校的 GUID。                                                                                                                                                 |
+| address              | [physicalAddress](physicaladdress.md) | 学校地址。                                                                                                                                               |
+| createdBy            | [identitySet](identityset.md)         | 创建了学校的实体。                                                                                                                                       |
+| 说明          | String                                | 学校描述。                                                                                                                                           |
+| displayName          | 字符串                                | 学校的显示名称。                                                                                                                                          |
+| externalId           | String                                | 同步系统中学校的 ID。                                                                                                                                      |
+| externalPrincipalId  | 字符串                                | 同步系统中主体的 ID。                                                                                                                                   |
+| externalSource       | 字符串                                | 从其生成此资源的外部源的类型（自动根据而确定 `externalSourceDetail` ）。 可能的值包括： `sis` 、 `lms` 或 `manual` 。 |
+| externalSourceDetail | 字符串                                | 从中生成此资源的外部源的名称。                                                                                                   |
+| highestGrade         | 字符串                                | 教授的最高年级。                                                                                                                                                |
+| lowestGrade          | 字符串                                | 教授的最低年级。                                                                                                                                                 |
+| phone                | String                                | 学校电话号码。                                                                                                                                              |
+| principalEmail       | 字符串                                | 主体的电子邮件地址。                                                                                                                                      |
+| principalName        | 字符串                                | 主体名称。                                                                                                                                               |
+| schoolNumber         | 字符串                                | 学校编号。                                                                                                                                                       |
 
 ## <a name="relationships"></a>关系
 

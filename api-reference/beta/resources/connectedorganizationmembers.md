@@ -5,20 +5,20 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 20f4477998547d6e98572fd8409f69e811c2198d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7eddc19d3d802174ca015877ec362ec742f2e791
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507490"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509797"
 ---
 # <a name="connectedorganizationmembers-complex-type"></a>connectedOrganizationMembers 复杂类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[访问包分配策略](accesspackageassignmentpolicy.md)的请求设置中使用。 `@odata.type`该值`#microsoft.graph.connectedOrganizationMembers`指示此类型标识用户的集合，这些用户与已连接的组织相关联，将允许其请求访问包。
+在[访问包分配策略](accesspackageassignmentpolicy.md)的请求设置中使用。 `@odata.type`该值 `#microsoft.graph.connectedOrganizationMembers` 指示此类型标识用户的集合，这些用户与[已连接的组织](connectedorganization.md)相关联，将允许其请求访问包。
 
 ## <a name="properties"></a>属性
 
