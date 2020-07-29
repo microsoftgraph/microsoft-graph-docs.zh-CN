@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 6abd0db1be5ee9a3066de76b00d2f1815a626c2a
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: 91c96ce05eefd558281382ac19b188ed0a1a4305
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427093"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509683"
 ---
 # <a name="list-trending"></a>列出趋势
 
@@ -91,19 +91,35 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
   }
 }
 ```
-有关更多详细信息，请参阅[自定义 insights 隐私](/graph/insights-customize-item-insights-privacy.md)。
+有关详细信息，请参阅[自定义见解隐私](/graph/insights-customize-item-insights-privacy.md)。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
 下面是一个请求示例。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_me_trending"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/insights/trending
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-me-trending-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-me-trending-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-me-trending-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### <a name="response"></a>响应
 下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。 请参阅页面底部的 "未截断的示例" 响应。
 <!-- {

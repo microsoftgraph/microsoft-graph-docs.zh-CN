@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: de19cf6f33ed0c5b1930077232945564115cd14a
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: a4072a084b632389296266e54e4c0540da69e8ad
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45435003"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509640"
 ---
 # <a name="update-iteminsightssettings"></a>更新 itemInsightsSettings
 
@@ -68,6 +68,8 @@ PATCH /organization/{organizationId}/settings/itemInsights
 ### <a name="request"></a>请求
 
 以下是有关管理员更新 "**disabledForGroup**" 隐私设置以禁止显示用户的特定 Azure AD 组的项目见解的示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_iteminsightssettings"
@@ -81,6 +83,12 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-iteminsightssettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>响应
 

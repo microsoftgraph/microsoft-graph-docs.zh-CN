@@ -1,24 +1,24 @@
 ---
-title: 删除 identityProvider
-description: 删除 Identityprovider.read.all。
+title: 列出 availableProviderTypes
+description: 检索目录中所有可用的标识提供程序类型。
 localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c7e1d81f7a8e117bc31f9e827f83cc90bbb8db59
+ms.openlocfilehash: 6b3f44c1638bf698c477fd7e0d9e02538a963b21
 ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509761"
+ms.locfileid: "46510023"
 ---
-# <a name="delete-identityprovider"></a>删除 identityProvider
+# <a name="list-availableprovidertypes"></a>列出 availableProviderTypes
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除[identityprovider.read.all](../resources/identityprovider.md)。
+检索目录中可用的所有标识提供程序类型。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "46509761"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|IdentityProvider.ReadWrite.All|
+|委派（工作或学校帐户）|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 |委派（Microsoft 个人帐户）| 不支持。|
-|应用程序|IdentityProvider.ReadWrite.All|
+|应用程序|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 
 工作或学校帐户需要属于下列角色之一：
 * 全局管理员
@@ -37,8 +37,9 @@ ms.locfileid: "46509761"
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
-DELETE /identityProviders/{id}
+GET /identityProviders/availableProviderTypes
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -48,29 +49,26 @@ DELETE /identityProviders/{id}
 |Authorization|Bearer {token}。必需。|
 
 ## <a name="request-body"></a>请求正文
-
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204 No Content` 响应代码。
+如果成功，此函数会在响应正文中返回 `200 OK` 响应代码和一个 String 集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
-
 下面展示了示例请求。
 
 <!-- {
   "blockType": "request",
-  "name": "delete_identityprovider"
+  "name": "identityprovider_availableprovidertypes"
 }
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/identityProviders/{id}
+GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 ```
-
 
 ### <a name="response"></a>响应
 
@@ -80,10 +78,28 @@ DELETE https://graph.microsoft.com/beta/identityProviders/{id}
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "Collection(Edm.String)"
 }
 -->
 
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+      "Amazon",
+      "OpenIDConnect",
+      "Facebook",
+      "GitHub",
+      "Google",
+      "LinkedIn",
+      "Microsoft",
+      "QQ",
+      "Twitter",
+      "WeChat",
+      "Weibo"
+  ]
+}
 ```

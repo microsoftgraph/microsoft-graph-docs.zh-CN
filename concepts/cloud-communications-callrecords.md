@@ -4,12 +4,12 @@ description: 呼叫记录可帮助您深入了解组织内发生的呼叫和会�
 author: stephenjust
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 93d102de8d685a2ba7418069ea26024963230cf0
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 43d41184bbb2af9c63b2818f91ef578579df4119
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491705"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509593"
 ---
 # <a name="call-records-overview"></a>呼叫记录概述
 
@@ -26,6 +26,10 @@ ms.locfileid: "44491705"
 ## <a name="look-up-a-call-record-by-its-call-id"></a>按呼叫 ID 查找呼叫记录
 
 应用程序可以按其 ID 检索[呼叫记录](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0)。 可以从 webhook 通知或从管理工具检索到此 ID。
+
+## <a name="get-call-record-reports"></a>获取呼叫记录报告
+
+使用 Microsoft 团队连接到公用电话交换网（PSTN）的组织通常需要跟踪此使用情况，以了解相关成本。 [GetPstnCalls](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta)和[getDirectRoutingCalls](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta)函数以表格格式返回[呼叫记录](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta)数据的投影。
 
 ## <a name="see-also"></a>另请参阅
 

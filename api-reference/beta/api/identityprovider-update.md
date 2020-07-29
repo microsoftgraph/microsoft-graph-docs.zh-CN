@@ -1,16 +1,16 @@
 ---
 title: 更新 identityProvider
-description: 更新现有 Identityprovider.read.all 中的属性。
+description: 更新 Identityprovider.read.all 的属性。
 localization_priority: Normal
 doc_type: apiPageType
-author: Nickgmicrosoft
+author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1925e71e365d6a5f632176c62afc43ee30e829ee
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 6bd2944211312c1b5440390f7a1c7a84de205e9f
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199569"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509698"
 ---
 # <a name="update-identityprovider"></a>更新 identityProvider
 
@@ -18,7 +18,7 @@ ms.locfileid: "43199569"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新现有 [identityProvider](../resources/identityprovider.md) 中的属性。
+更新[identityprovider.read.all](../resources/identityprovider.md)对象的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -30,11 +30,14 @@ ms.locfileid: "43199569"
 |委派（Microsoft 个人帐户）| 不支持。|
 |应用程序| IdentityProvider.ReadWrite.All|
 
-工作或学校帐户必须是租户的全局管理员。
+工作或学校帐户需要属于下列角色之一：
+* 全局管理员
+* 外部标识提供程序管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 PATCH /identityProviders/{id}
 ```
@@ -48,74 +51,103 @@ PATCH /identityProviders/{id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，为 JSON 对象提供一个或多个需要更新的属性。
+在请求正文中，提供一个 JSON 对象，该对象具有需要为[identityprovider.read.all](../resources/identityprovider.md)或[openIdConnectProvider](../resources/openidconnectprovider.md)更新的一个或多个属性（仅适用于 Azure AD B2C）对象。
+
+### <a name="identityprovider-object"></a>Identityprovider.read.all 对象
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
 |clientId|字符串|应用程序的客户端 ID。 这是向标识提供程序注册应用程序时获取的客户端 ID。|
 |clientSecret|字符串|应用程序的客户端密码。 这是向标识提供程序注册应用程序时获取的客户端密码。|
 |name|字符串|标识提供程序的显示名称。|
+|type|字符串|标识提供程序类型。<ul>对于 B2B 方案：<li/>Google<li/>Facebook</ul><ul>对于 B2C 方案：<li/>Microsoft<li/>Google<li/>Amazon<li/>领英<li/>Facebook<li/>GitHub<li/>Twitter<li/>微博<li/>QQ<li/>微信<li/>OpenIDConnect</ul>|
+
+### <a name="openidconnectprovider-object"></a>openIdConnectProvider 对象
+
+|属性|类型|说明|
+|:---------------|:--------|:----------|
+|clientId|字符串|应用程序的客户端 ID。 这是向标识提供程序注册应用程序时获取的客户端 ID。|
+|clientSecret|字符串|应用程序的客户端密码。 这是向标识提供程序注册应用程序时获取的客户端密码。|
+|name|字符串|标识提供程序的显示名称。|
+|type|字符串|标识提供程序类型。 值必须为 `OpenIdConnect` 。|
+|claimsMapping|[claimsMapping](../resources/claimsmapping.md)|在 OIDC 提供程序将 ID 令牌发送回 Azure AD 之后，Azure AD 需要能够将声明从收到的令牌映射到 Azure AD 可识别和使用的声明。 此复杂类型将捕获该映射。|
+|domainHint|字符串|可以使用域提示直接跳到指定标识提供程序的登录页，而不是让用户在可用标识提供程序列表中进行选择。|
+|metadataUrl|字符串|开放 Id 的元数据文档的 URL 连接标识提供程序。|
+|responseMode|字符串|定义应用于将数据从自定义标识提供程序发送回 Azure AD B2C 的方法。 可以使用以下响应模式： <ul><li/>`form_post`：建议使用此响应模式以获得最佳安全性。 响应通过 HTTP POST 方法传输，其中的代码或令牌使用应用程序/x www 格式 urlencoded 格式在正文中进行编码。<li/>`query`：代码或令牌作为查询参数返回。</ul>|
+|responseType|字符串|描述在对自定义标识提供程序的 authorization_endpoint 的初始调用中发送回的信息类型。 可以使用以下响应类型：<ul><li/> `code`：按照授权代码流，代码将返回到 Azure AD B2C。 Azure AD B2C 将继续调用 token_endpoint 以交换令牌的代码。<li/> `id_token`：从自定义标识提供程序向 Azure AD B2C 返回 ID 令牌。 <li/>`token`：从自定义标识提供程序向 Azure AD B2C 返回访问令牌。 （目前 Azure AD B2C 不支持此值）</ul>|
+|scope|String|作用域定义要从自定义标识提供程序中收集的信息和权限。|
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `204 No Content` 响应代码。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
 
-以下示例会更新令牌生命周期 **identityProvider** 的定义并将其设置为组织默认值。
+### <a name="example-1-update-a-specific-identityprovider"></a>示例1：更新特定的**identityprovider.read.all**
 
-##### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
+下面展示了示例请求。
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_identityprovider"
-}-->
-```http
+}
+-->
+
+``` http
 PATCH https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 Content-type: application/json
 Content-length: 41
 
 {
-    "clientSecret": "1111111111111"
+  "clientSecret": "1111111111111"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-identityprovider-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-identityprovider-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a>响应
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-identityprovider-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### <a name="response"></a>响应
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
+### <a name="example-2-update-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>示例2：更新特定的**openIDConnectProvider** （仅适用于 AZURE AD B2C）
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Update identityProvider",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "update_openidconnectprovider"
 }
 -->
+
+``` http
+PATCH https://graph.microsoft.com/beta/identityProviders/OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a
+Content-type: application/json
+Content-length: 41
+
+{
+  "responseType": "id_token"
+}
+```
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```

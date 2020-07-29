@@ -1,16 +1,16 @@
 ---
 title: 列出 identityProvider
-description: 检索目录中的所有 identityProvider。
+description: 检索 Identityprovider.read.all 对象的列表。
 localization_priority: Normal
 doc_type: apiPageType
-author: Nickgmicrosoft
+author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a2c6279a6d5c3511d6b6786f3d561d0632933e66
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 640844dd4d1a60b5a4c5864c9ea7d34fe01faabb
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199548"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509721"
 ---
 # <a name="list-identityproviders"></a>列出 identityProvider
 
@@ -18,7 +18,7 @@ ms.locfileid: "43199548"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索目录中的所有 [identityProvider](../resources/identityprovider.md)。
+检索[identityProviders](../resources/identityprovider.md)对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -30,11 +30,14 @@ ms.locfileid: "43199548"
 |委派（Microsoft 个人帐户）| 不支持。|
 |应用程序|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 
-工作或学校帐户必须是租户的全局管理员。
+工作或学校帐户需要属于下列角色之一：
+* 全局管理员
+* 外部标识提供程序管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /identityProviders
 ```
@@ -51,39 +54,29 @@ GET /identityProviders
 
 ## <a name="response"></a>响应
 
-如果成功，则此方法将在响应正文中返回 `200 OK` 响应代码和 JSON 表示形式的 [identityProviders](../resources/identityprovider.md) 集合。
+如果成功，此方法在 `200 OK` 响应正文中返回响应代码和[Identityprovider.read.all](../resources/identityprovider.md)和[openIdConnectProvider](../resources/openIdConnectProvider.md)的集合（仅适用于 Azure AD B2C）对象。
 
 ## <a name="example"></a>示例
 
-以下示例会检索所有 **identityProvider**。
+### <a name="request"></a>请求
 
-##### <a name="request"></a>请求
+下面展示了示例请求。
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_identityproviders"
-}-->
-```msgraph-interactive
+  "name": "get_identityprovider"
+}
+-->
+
+``` http
 GET https://graph.microsoft.com/beta/identityProviders
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityproviders-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityproviders-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+### <a name="response"></a>响应
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-identityproviders-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+下面展示了示例响应。
 
----
-
-
-##### <a name="response"></a>响应
+**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "response",
@@ -91,33 +84,42 @@ GET https://graph.microsoft.com/beta/identityProviders
   "@odata.type": "microsoft.graph.IdentityProvider",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityProviders",
     "value": [
       {
-        "id": "Amazon-OAUTH",
-        "name": "Login with Amazon",
-        "type": "Amazon",
-        "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
-        "clientSecret": "*****"
-      }
+          "@odata.type": "microsoft.graph.identityProvider",
+          "id": "Amazon-OAUTH",
+          "name": "Login with Amazon",
+          "type": "Amazon",
+          "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
+          "clientSecret": "*****"
+      },
+      {
+          "@odata.type": "microsoft.graph.openIdConnectProvider",
+          "id": "OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a",
+          "name": "Login with the Contoso identity provider",
+          "type": "OpenIDConnect",
+          "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
+          "clientSecret": "*****",
+          "claimsMapping": {
+              "userId": "myUserId",
+              "givenName": "myGivenName",
+              "surname": "mySurname",
+              "email": "myEmail",
+              "displayName": "myDisplayName"
+          },
+          "domainHint": "contoso",
+          "metadataUrl": "https://mycustomoidc.com/.well-known/openid-configuration",
+          "responseMode": "form_post",
+          "responseType": "code",
+          "scope": "openid"
+      },
     ]
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "List identityProviders",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->

@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: f2d22f8e74aabd975f182b8cef783f8e94ba05d7
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: 62c1a0f2efda751153d42d985d196a69e35caee5
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45435010"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509635"
 ---
 # <a name="get-iteminsightssettings"></a>获取 itemInsightsSettings
 
@@ -60,14 +60,30 @@ GET /organization/{organizationId}/settings/itemInsights
 ## <a name="example"></a>示例
 
 ##### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_iteminsightssettings"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/itemInsights
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-iteminsightssettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-iteminsightssettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-iteminsightssettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>响应
 
