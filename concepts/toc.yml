@@ -99,7 +99,7 @@ items:
             href: findmeetingtimes-example.md
           - name: 获取忙/闲日程安排
             href: outlook-get-free-busy-schedule.md
-          - name: 建议新的会议时间（预览版）
+          - name: 建议新的会议时间
             href: outlook-calendar-meeting-proposals.md
           - name: 组织或参加联机会议
             href: outlook-calendar-online-meetings.md
@@ -275,6 +275,8 @@ items:
             href: people-example.md
           - name: 自定义个人资料卡片（预览）
             href: add-properties-profilecard.md
+          - name: 自定义见解隐私（预览）
+            href: insights-customize-item-insights-privacy.md
       - name: 个人联系人
         displayName: 'Outlook, Outlook contacts, Outlook contact, People'
         items:
