@@ -4,12 +4,12 @@ description: Microsoft Graph 提供可选的查询参数，可用于指定和控
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: bd87841a6c7a46d485c7ccd2b0f601f012712f63
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 6893030d8a910ea627a12b1198a8af0b99b95750
+ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183839"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46524364"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -143,6 +143,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 对 `$filter` 运算符的支持因 Microsoft Graph API 不同而异。 通常支持下列逻辑运算符： 
 
 - 等于 (`eq`)
+- 在 (`in`) 中
 - 不等于 (`ne`)
 - 大于 (`gt`)
 - 大于或等于 (`ge`)
@@ -171,7 +172,8 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 | 列出组织中的所有 Microsoft 365 组。 | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
 | 使用 OData 转换可实现显示名称以“ a”开头（包括返回的对象数）的组中的临时成员资格。 | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName,'a')&method=GET&version=v1.0) |
 
-> **注意：** Azure AD 资源不支持以下 `$filter` 运算符：`ne`、`gt`、`ge`、`lt`、`le` 和 `not`。所有 Microsoft Graph 资源目前均不支持 `contains` 字符串运算符。
+> **注意：** 请阅读特定目录对象（Azure AD 资源）的文档，了解有关 `$filter` 运算符支持的详细信息。
+> 所有 Microsoft Graph 资源目前均不支持 `contains` 字符串运算符。
 
 ## <a name="format-parameter"></a>format 参数
 
