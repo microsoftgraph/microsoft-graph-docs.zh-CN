@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f0718763e24ff8155cc9bd6fa6567c302dfc0f5d
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 5eced3dfe4a796f5d6db9340a1db819a7de4781f
+ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491670"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46524357"
 ---
 # <a name="archive-team"></a>存档团队
 
@@ -57,7 +57,7 @@ POST /teams/{id}/archive
     "shouldSetSpoSiteReadOnlyForMembers": true
 }
 ```
-此可选参数定义了是否在与团队关联的 Sharepoint Online 网站上将团队成员的权限设置为“只读”。 如果将其设置为 false 或完全省略正文，将导致跳过此步骤。
+此可选参数定义是否在与团队关联的 SharePoint Online 网站上将工作组成员的权限设置为只读。 如果将其设置为 false 或完全省略正文，将导致跳过此步骤。
 
 ## <a name="response"></a>响应
 

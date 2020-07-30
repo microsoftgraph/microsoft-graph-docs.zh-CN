@@ -6,12 +6,12 @@ title: 列出与我共享的文件
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 736147ebf41ac441fba19119250e5ec6dc90f1a9
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: e06497071d78d02df93338ed7cdbe67e6c67cbfe
+ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509558"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46524231"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>列出与已登录用户共享的项目
 
@@ -109,7 +109,7 @@ Content-Type: application/json
 ```http
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
-默认情况下， **sharedWithMe** retursn 项目在自己的租户中共享。 若要包含从外部租户共享的项目，请追加 `?allowexternal=true` 到 GET 请求。
+默认情况下， **sharedWithMe**返回在您自己的租户中共享的项目。 若要包含从外部租户共享的项目，请追加 `?allowexternal=true` 到 GET 请求。
 
 <!--
 {
