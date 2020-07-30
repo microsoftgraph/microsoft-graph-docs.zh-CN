@@ -5,18 +5,18 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: dd71918c1086f4eb7ff1378fbb4bfee17ba1a23a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0c48e7e5a0f6e075cbcd2a5042e7c9db21864a56
+ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459766"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "45427268"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
 命名空间：microsoft.graph
 
-[用户](user.md)日历或 Office 365 [组](group.md)日历中的事件。
+[用户](user.md)日历或 Microsoft 365 [组](group.md)默认日历中的事件。
 
 **事件**中包含的最大与会者人数，以及发送自 Exchange Online 邮箱的 [eventMessage](eventmessage.md) 中的收件人数上限都是 500 人。 有关详细信息，请参阅[发送限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits)。
 
@@ -64,6 +64,7 @@ ms.locfileid: "43459766"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
+|allowNewTimeProposals| 布尔值 | 如果会议组织者允许被邀请者在响应时建议新时间，则为`True`；否则为 `false`。 可选。 默认值为 `true`。 |
 |attendees|[与会者](attendee.md) 集合|事件的与会者集合。|
 |body|[itemBody](itembody.md)|与事件相关联的邮件正文。可以是 HTML 格式或文本格式。|
 |bodyPreview|字符串|与事件相关联的邮件预览。文本格式。|
@@ -92,7 +93,7 @@ ms.locfileid: "43459766"
 |originalStartTimeZone|字符串|创建事件时设置的开始时区。`tzone://Microsoft/Custom` 值表示旧的自定义时区在桌面版 Outlook 中设置。 |
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|事件的定期模式。|
 |reminderMinutesBeforeStart|Int32|事件开始时间（即提醒警报发生时间）之前的分钟数。|
-|responseRequested|Boolean|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
+|responseRequested|布尔值|默认值为 true，表示组织者愿意被邀请者发送事件响应。|
 |responseStatus|[responseStatus](responsestatus.md)|指示在事件消息的响应中发送的响应类型。|
 |sensitivity|敏感度| 可能的值包括 `normal`、`personal`、`private`、`confidential`。|
 |seriesMasterId|String|定期系列主项的 ID（如果此事件是定期系列的一部分）。|
@@ -189,6 +190,7 @@ ms.locfileid: "43459766"
 
 ```json
 {
+  "allowNewTimeProposals": "Boolean",
   "attendees": [{"@odata.type": "microsoft.graph.attendee"}],
   "body": {"@odata.type": "microsoft.graph.itemBody"},
   "bodyPreview": "string",
