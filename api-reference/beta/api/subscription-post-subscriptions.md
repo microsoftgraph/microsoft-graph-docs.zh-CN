@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: bae074c7599119063053069765c0653ce405e231
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: 10e764bef772b6874f811048b9ec5cdc101f1807
+ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524336"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46531458"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -41,24 +41,25 @@ ms.locfileid: "46524336"
 |[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
 |[列表](../resources/list.md) | Sites.ReadWrite.All | 不支持 | Sites.ReadWrite.All |
 |[邮件](../resources/message.md) | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read | Mail.ReadBasic、Mail.Read |
+|[状态](../resources/presence.md) | Presence.Read.All | 不支持 | 不支持 |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-### <a name="chatmessage-microsoft-teams"></a>了 chatmessage （Microsoft 团队）
+### <a name="chatmessage"></a>chatMessage
 
 具有委派权限的**了 chatmessage**订阅不支持资源数据（**includeResourceData**必须为 `false` ），并且不需要[加密](/graph/webhooks-with-resource-data)。
 
-具有应用程序权限的**了 chatmessage**订阅包括资源数据，并需要[加密](/graph/webhooks-with-resource-data)。 如果未指定[encryptionCertificate](../resources/subscription.md) ，则订阅创建将失败。 在创建**了 chatmessage**订阅之前，您必须请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
+具有应用程序权限的**了 chatmessage**订阅包括资源数据，并需要[加密](/graph/webhooks-with-resource-data)。 如果未指定[encryptionCertificate](../resources/subscription.md) ，则订阅创建将失败。 在创建**了 chatmessage**订阅之前，您必须请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。 
 
 > **注意：** `/teams/allMessages`，并且 `/chats/allMessages` 当前处于预览阶段。 在预览过程中，可以在不付费的情况下使用此 API，这取决于[Microsoft Api 使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context)。 但是，使用 API 的应用程序的用户可能需要订阅特定 Microsoft 365 产品。 在正式发行时，Microsoft 可能会要求您或您的客户根据通过 API 访问的数据量支付额外费用。
 
-### <a name="driveitem-onedrive"></a>driveItem （OneDrive）
+### <a name="driveitem"></a>driveItem
 
 对 OneDrive 项目的订阅适用其他限制。 这些限制适用于创建和管理（获取、更新和删除）订阅。
 
 在个人 OneDrive 上，可订阅根文件夹或该驱动器中的任何子文件夹。 在 OneDrive for Business 上，只可以订阅根文件夹。 对订阅的文件夹或者其层次结构中的任何文件、文件夹或其他 **driveItem** 实例所做更改属于请求的更改类型时，发送更改通知。 无法订阅不是文件夹的“**驱动器**”或“**driveItem**”实例，例如单个文件。
 
-### <a name="contact-event-and-message-outlook"></a>联系人、事件和邮件（Outlook）
+### <a name="contact-event-and-message"></a>联系人、事件和邮件
 
 对 Outlook 项目的订阅适用其他限制。 这些限制适用于创建和管理（获取、更新和删除）订阅。
 
@@ -67,6 +68,10 @@ ms.locfileid: "46524336"
 
   - 使用相应的应用程序权限订阅租户内_任何_用户的文件夹或邮箱中项目的更改。
   - 切勿使用 Outlook 共享权限（Contacts.Read.Shared、Calendars.Read.Shared、Mail.Read.Shared 及其相应的读写权限），因为它们**不**支持订阅对共享或委托文件夹中的项的更改通知。
+
+### <a name="presence"></a>状态
+
+**状态**订阅需要[加密](/graph/webhooks-with-resource-data)。 如果未指定[encryptionCertificate](../resources/subscription.md) ，则订阅创建将失败。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -130,22 +135,24 @@ Content-type: application/json
 
 ---
 
-
 以下是 resource 属性的有效值。
 
 | 资源类型 | 示例 |
 |:------ |:----- |
-|邮件|me/mailfolders('inbox')/messages<br />me/messages|
-|联系人|me/contacts|
-|日历|me/events|
-|用户|users|
-|组|groups|
-|对话|groups('*{id}*')/conversations|
-|驱动器|me/drive/root|
-|列表|sites/{site-id}/lists/{list-id}|
-|安全警报|security/alerts?$filter=status eq ‘New’|
-|通话记录|communications/callRecords|
-|[聊天消息](../resources/chatmessage.md) | 聊天/{id}/邮件、聊天/allMessages、团队/{id}/频道/{id}/邮件、团队/allMessages |
+|[通话记录](../resources/callrecords-callrecord.md)|`communications/callRecords`|
+|[聊天消息](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/allMessages`, `teams/{id}/channels/{id}/messages`, `teams/allMessages` |
+|[联系人](../resources/contact.md)|`me/contacts`|
+|[对话](../resources/conversation.md)|`groups('{id}')/conversations`|
+|[Drives](../resources/driveitem.md)|`me/drive/root`|
+|[Events](../resources/event.md)|`me/events`|
+|[组](../resources/group.md)|`groups`|
+|[List](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
+|[邮件](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
+|[Shell](../resources/presence.md)| `/communications/presences/{id}`（单个用户）（ `/communications/presences?$filter=id in ({id},{id}…)` 多个用户）|
+|[用户](../resources/user.md)|`users`|
+|[安全警报](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
+
+> **注意：** 以此开头的任何路径 `me` 也可以与 `users/{id}` `me` 特定用户而不是当前用户的目标一起使用。
 
 ### <a name="response"></a>响应
 

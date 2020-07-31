@@ -4,18 +4,20 @@ description: 你可以灵活地创建将来或即时使用的会议
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 22d44c32b6ece847283f2e572eeaf468eaac3dbe
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 5e6cf66dbecfe6c8d67354bc615f3f9766feef38
+ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289639"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46531514"
 ---
 # <a name="use-the-cloud-communications-api-to-create-or-join-online-meetings"></a>使用云通信 API 创建或加入联机会议
 
 联机会议提供了指定特定详细信息（如会议主题和所有与会者）的功能。 您还可以设置会议开始和结束的日期和时间。
 
 在线会议提供了创建将来或即时召开会议的灵活性。 设置在创建后立即启动的会议的功能对于需要立即关注与会者的意外问题和其他事件来说是理想之选。
+
+> **注释**这组 Api 可提供与 Microsoft 团队或 Skype 功能的灵活性和更丰富的集成;它不会更新或创建日历中的任何事件。 若要方便地向 Outlook 日历中添加联机会议，请使用日历 API。 有关详细信息，请参阅[在 Microsoft Graph 中选择 API 以创建和加入联机会议](choose-online-meeting-api.md)。
 
 ## <a name="create-an-online-meeting"></a>创建联机会议
 

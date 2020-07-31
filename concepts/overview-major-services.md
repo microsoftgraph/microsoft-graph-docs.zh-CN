@@ -1,19 +1,19 @@
 ---
 title: Microsoft Graph 中的主要服务和功能
-description: 'Microsoft Graph 使你能够使用 REST Api 和客户端库，与 Microsoft 365 中的最佳 Microsoft 365、Windows 10 和企业移动性和安全服务集成。 此外，它提供安全性和社交智能，可以提高用户的工作效率、创造性和团队协作，并保护企业资源和用户数据。 '
+description: '借助 Microsoft Graph，可以使用 REST API 和客户端库与 Microsoft 365、Windows 10 以及 Microsoft 365 中的企业移动性 + 安全性服务充分集成。 此外，它提供安全性和社交智能，可以提高用户的工作效率、创造性和团队协作，并保护企业资源和用户数据。 '
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 8c8b3bc0abce69a74f79ea1c59269c2d23c9d116
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
-ms.translationtype: MT
+ms.openlocfilehash: 7c083cc8c80d78c00988b547e2bc3cfe84008067
+ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050734"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46524378"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
-Microsoft Graph 使你能够使用 REST Api 和客户端库，与 Microsoft 365 中的最佳 Microsoft 365、Windows 10 和企业移动性和安全服务集成。 此外，它还提供安全性和智能，可以提升用户的工作效率、创意和团队协作，并保护企业资源和用户数据。 
+借助 Microsoft Graph，可以使用 REST API 和客户端库与 Microsoft 365、Windows 10 以及 Microsoft 365 中的企业移动性 + 安全性服务充分集成。 此外，它还提供安全性和智能，可以提升用户的工作效率、创意和团队协作，并保护企业资源和用户数据。 
 
 ## <a name="users-and-groups"></a>用户和组
 
@@ -21,12 +21,12 @@ Microsoft Graph 的核心是用户和组的概念。
 
 Microsoft Graph 中的_用户_是数以百万计使用 Microsoft 365 云服务的用户之一。 它是身份受到保护且访问得到妥善管理的焦点。 用户数据是业务发展的驱动力。 Microsoft Graph 服务可将这些数据提供给企业，在丰富的环境中、实时更新和深度见解中，并且始终仅在适当的权限下使用这些数据。
 
-Microsoft 365_组_是允许用户进行协作的基础实体。 它与其他服务集成，在任务规划、团队合作、教育等方面提供更丰富的方案。 
+Microsoft 365 _组_是允许用户进行协作的基本实体。 它与其他服务集成，在任务规划、团队合作、教育等方面提供更丰富的方案。 
 
 |功能     |支持服务  |说明 |更多信息 |
 |:-----------|:--------------------|:-----------|:----------------|
 | 用户 | Azure AD 和大多数高效工作、协作、智能和教育服务 | 用户是 Microsoft Graph 的核心重点，Microsoft Graph 服务围绕这一点构建以用户为中心的功能。 | [Microsoft Graph 中的用户概述](azuread-users-concept-overview.md)|
-|组 | Azure AD、OneDrive、OneNote、Outlook、Planner | Microsoft 365 组为用户提供了基本的协作单元，以共享对话、文件、便笺、日历、计划等。 | [Microsoft Graph 中的 Microsoft 365 组概述](office365-groups-concept-overview.md) |
+|组 | Azure AD、OneDrive、OneNote、Outlook、Planner | Microsoft 365 组为用户提供了基本协作单元，以共享对话、文件、笔记、日历和计划等。 | [Microsoft Graph 中的 Microsoft 365 组概述](office365-groups-concept-overview.md) |
 
 ## <a name="connecting-users-data-microsoft-365-services-and-your-apps"></a>连接用户数据、Microsoft 365 服务和你的应用
 
@@ -50,11 +50,11 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 
 |功能     |支持服务  |说明 |更多信息 |
 |:-----------|:--------------------|:-----------|:----------------|
-| 日历 | Outlook  | 允许用户在 Web、移动和桌面设备上设置约会和会议。 它是 Microsoft 365 中 Outlook 邮件通信中心的一部分，还允许用户管理电子邮件和联系人。 | [Outlook 日历概述](outlook-calendar-concept-overview.md)  |
+| 日历 | Outlook  | 允许用户在 Web、移动和桌面设备上设置约会和会议。 它是 Microsoft 365 中 Outlook 消息传递通信中心的一部分，还允许用户管理电子邮件和联系人。 | [Outlook 日历概述](outlook-calendar-concept-overview.md)  |
 | 文件 | OneDrive 和 SharePoint | 在 OneDrive 和 SharePoint 上管理和共享用户文件。 | [OneDrive 文件存储概述](onedrive-concept-overview.md) |
 | 邮件 | Outlook | 允许用户在 Web、移动和桌面设备上进行通信、组织邮件，并管理其工作流中的优先事项。 它是 Microsoft 365 中 Outlook 通信中心的一部分，还允许用户管理联系人和安排会议。 | [Outlook 邮件概述](outlook-mail-concept-overview.md) |
 | 笔记 | OneNote | 允许用户规划和组织观点及信息。 | [OneNote 笔记概述](integrate-with-onenote.md) |
-| 个人联系人 | Outlook | Web、移动和桌面设备上的联系人管理器。 它是 Microsoft 365 中 Outlook 邮件通信中心的一部分，还允许用户管理电子邮件和安排会议。  | [Outlook 个人联系人概述](outlook-contacts-concept-overview.md) |
+| 个人联系人 | Outlook | Web、移动和桌面设备上的联系人管理器。 它是 Microsoft 365 中 Outlook 消息传递通信中心的一部分，还允许用户管理电子邮件和安排会议。  | [Outlook 个人联系人概述](outlook-contacts-concept-overview.md) |
 | 工作簿和图表 | Excel | 允许用户使用 Excel 电子表格进行复杂计算、跟踪、分析和可视化数据，并生成专业报表。 | [Excel 工作簿和图表概述](excel-concept-overview.md) |
 
 
@@ -64,8 +64,8 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 -->
 |功能     |支持服务  |说明 |更多信息 |
 |:-----------|:--------------------|:-----------|:----------------|
-| 云通信 | Microsoft 团队、Skype | 允许应用和服务通过各种通信相关功能与用户进行交互，例如，启用 bot 以处理呼叫、在业务线中集成在线会议、显示用户的状态（预览）以及查找呼叫和联机会议的记录（预览）。 |
-| 站点和列表  | SharePoint | 面向用户和 Microsoft 365 组的基于 Web 的平台，用于共享、组织、管理和发现内容（包括列表、文件和注释）。 | [SharePoint 网站和内容概述](sharepoint-concept-overview.md) | 
+| 云通信 | Microsoft Teams, Skype | 允许应用和服务通过各种通信相关功能与用户进行交互，例如，允许聊天机器人处理呼叫、在业务线中集成联机会议、显示用户的当前状态（预览版）和查找通话和联机会议的记录（预览版）。 | [云通信概述](cloud-communications-concept-overview.md) |
+| 网站和列表  | SharePoint | 面向用户和 Microsoft 365 组的基于 Web 的平台，以共享、组织、管理和发现内容（包括列表、文件和笔记）。 | [SharePoint 网站和内容概述](sharepoint-concept-overview.md) | 
 |任务和计划 | Planner | 使 Microsoft 365 组中的用户能够创建计划、分配任务和跟踪进度。 | [Planner 计划和任务概述](planner-concept-overview.md) |
 |团队合作 |  Microsoft Teams | 面向团队的数字中心和基于聊天的工作区，用于共享文件、笔记、日历和计划。 | [Microsoft Teams 团队合作概述](teams-concept-overview.md) |
 
@@ -76,7 +76,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 |:-----------|:--------------------|:-----------|:----------------|
 | 人员 | Azure AD、Outlook、SharePoint 等 | 获取有关人员的信息，该对象按与用户的相关程度进行排序，相关程度由用户的通信和协作模式以及业务关系决定。  | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
 | 个人资料（预览版） | 配置文件 | 提供存储和检索有关租户内人员的信息的轻型机制。 | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
-| 配置文件卡片自定义（预览） | 配置文件卡片 | 为管理员提供了轻量机制，以自定义 orgaization 中 Microsoft 365 配置文件卡上的表面内容。 | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
+| 个人资料卡片自定义（预览版） | 个人资料卡片 | 为管理员提供了一种轻量级机制，用于自定义组织中 Microsoft 365 个人资料卡片表面上的内容。 | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
 | 文档见解  | Delve、OneDrive、Outlook、SharePoint | 使用高级分析和机器学习技术获取常用的文档，以及用户查看、修改或共享的文档。  | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md)  |
 | 分析（预览版） | MyAnalytics | 使用高级分析和机器学习技巧，提供了有关用户如何花费自己时间，以及用户与谁一起花费时间的见解。 此类数据可以帮助用户计划一天的日程安排，深入了解自己的不同工作模式，并帮助用户平衡工作和生活。  | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
 
@@ -129,7 +129,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 |功能     |支持服务  |说明 |更多信息 |
 |:-----------|:--------------------|:-----------|:----------------|
 | 客户预订（预览） | Microsoft Bookings | 针对组织，使其用户和客户可以直接在 Web 或 Facebook 上预定服务。 让业务提供商管理客户偏好、服务和定价、员工列表和日程安排，以及其他常见的业务信息。 | [Microsoft Bookings API 概述](booking-concept-overview.md) |
-| Financials（预览版） | Dynamics 365 Business Central | 支持管理财务数据、自动化和保护供应链、销售管理和改进的客户服务、项目管理，以及使用一体式业务管理解决方案优化操作。| [Business Central API 概述](dynamics-business-central-concept-overview.md) |
+| Financials（预览版） | Dynamics 365 业务中心 | 利用一站式商业管理解决方案，实现财务数据管理、供应链自动化和保护、销售管理和改进客户服务、项目管理和运营优化。| [Business Central API 概述](dynamics-business-central-concept-overview.md) |
 
 
 ## <a name="next-steps"></a>后续步骤

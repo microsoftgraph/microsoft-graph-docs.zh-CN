@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 44e1588873c27631ccee22f956838f8220078bad
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 610c0e19ac8b81908b1fe1ca18d0a1d10ed8410c
+ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44893674"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46531521"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -27,6 +27,7 @@ ms.locfileid: "44893674"
 - OneDrive for Business 中根文件夹[driveItem][] 的层次结构中的内容，或用户个人 OneDrive 中的根文件夹或子文件夹 [driveItem][] 的层次结构中的内容
 - SharePoint [网站][]下的[列表][] 
 - Outlook 中的[邮件][]、[事件][]或[联系人][]
+- Microsoft 团队中的用户[是否存在][]
 - Azure Active Directory 中的[用户][]或[组][]
 
 查看“[使用 Microsoft Graph API 获取更改通知](webhooks.md)”了解各支持资源的可能资源路径值。
@@ -54,7 +55,7 @@ ms.locfileid: "44893674"
 | id | 字符串 | 订阅的唯一标识符。只读。 |
 | applicationId | string | 用于创建订阅的应用程序的标识符。 只读。 |
 | creatorId | string | 已创建订阅的用户或服务主体的标识符。 如果应用程序使用委派权限来创建订阅，则此字段包含代表已登录的用户的 ID，该应用代表。 如果应用程序使用的是应用程序权限，则此字段包含与该应用对应的服务主体的 ID。 只读。 |
-| includeResourceData | Boolean | 当设置为时 `true` ，更改通知[包括资源数据](/graph/webhooks-with-resource-data)（如聊天邮件的内容）。 可选。 | 
+| includeResourceData | 布尔值 | 当设置为时 `true` ，更改通知[包括资源数据](/graph/webhooks-with-resource-data)（如聊天邮件的内容）。 可选。 | 
 | encryptionCertificate | string | 具有用于在更改通知中对资源数据进行加密的公钥的证书的 base64 编码表示形式。 可选。 当**includeResourceData**为 true 时是必需的。 | 
 | encryptionCertificateId | string | 自定义应用程序提供的标识符，用于帮助确定解密资源数据所需的证书。 可选。 当**includeResourceData**为 true 时是必需的。 |
 | latestSupportedTlsVersion | 字符串 | 指定由 **notificationUrl**指定的通知端点支持的 "传输层安全性 (TLS)" 的最新版本。 可能的值包括 `v1_0`、`v1_1`、`v1_2`、`v1_3`。 </br></br>对于通知终结点支持低于当前推荐版本（TLS 1.2）的版本的订阅者，通过设置 [Timeline](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) 指定此属性，可在完成升级到 TLS 1.2 前暂时使用其过时的 TLS 版本。 对于这些订阅者，不按时间线设置此属性会导致订阅操作失败。 </br></br>对于其通知端点已支持 TLS 1.2 的订阅者，设置此属性是可选的。 在这种情况下，Microsoft Graph 将属性默认设置为 `v1_2`。 |
@@ -64,13 +65,14 @@ ms.locfileid: "44893674"
 | Resource            | 最大过期时间  |
 |:--------------------|:-------------------------|
 | 安全**警报**     | 43200分钟（不到 30 天）  |
-| 团队**callRecord**    | 4230 分钟（不到 3 天）  |
+| Teams **callRecord**    | 4230 分钟（不到 3 天）  |
 | 团队**了 chatmessage**    | 60分钟（1小时）  |
 | 组**对话** | 4230 分钟（不到 3 天）    |
 | OneDrive **driveItem**    | 4230 分钟（不到 3 天）    |
 | SharePoint**列表**    | 4230 分钟（不到 3 天）    |
 | Outlook**邮件**、**事件**、**联系人**              | 4230 分钟（不到 3 天）    |
 | **用户**、**组**、其他目录资源   | 4230 分钟（不到 3 天）    |
+| **状态**        | 60分钟（1小时） |
 
 
 > **注意：** 现有和新的应用都不得超过支持的这一上限值。 今后，任何超出最大值的订阅创建或续订请求都将失败。
@@ -121,6 +123,7 @@ ms.locfileid: "44893674"
 [警报]: ./alert.md
 [chatMessage]: ./chatmessage.md
 [callRecord]: ./callrecords-callrecord.md
+[状态]: ./presence.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
