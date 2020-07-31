@@ -333,7 +333,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 注释
+          - name: 注意
             href: resources/onenote.md
             items:
               - name: 创建笔记本
@@ -869,7 +869,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: List ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: 增量
+              - name: delta
                 href: api/serviceprincipal-delta.md
               - name: 应用角色分配
                 href: resources/approleassignment.md
@@ -9637,28 +9637,6 @@ items:
                         href: api/subscribedsku-get.md
           - name: 标识和登录
             items:
-              - name: 审核日志
-                href: resources/azure-ad-auditlog-overview.md
-                items:
-                  - name: 目录审核
-                    href: resources/directoryaudit.md
-                    items:
-                      - name: 列出目录审核
-                        href: api/directoryaudit-list.md
-                      - name: 获取目录审核
-                        href: api/directoryaudit-get.md
-                  - name: 登录
-                    href: resources/signin.md
-                    items:
-                      - name: 列出登录
-                        href: api/signin-list.md
-                      - name: 获取登录
-                        href: api/signin-get.md
-                  - name: 预配日志
-                    href: resources/provisioningobjectsummary.md
-                    items:
-                      - name: 列表设置
-                        href: api/provisioningobjectsummary-list.md
               - name: 身份验证流策略
                 items:
                   - name: 身份验证流策略
@@ -9852,28 +9830,6 @@ items:
                     href: api/identityprovider-delete.md
                   - name: 列出可用的提供程序类型
                     href: api/identityprovider-list-availableprovidertypes.md
-              - name: 信息保护
-                items:
-                  - name: 威胁评估
-                    items:
-                      - name: 概述
-                        href: resources/threatassessment-api-overview.md
-                      - name: 威胁评估请求
-                        href: resources/threatassessmentrequest.md
-                      - name: 邮件评估请求
-                        href: resources/mailassessmentrequest.md
-                      - name: 电子邮件文件评估请求
-                        href: resources/emailfileassessmentrequest.md
-                      - name: 文件评估请求
-                        href: resources/fileAssessmentRequest.md
-                      - name: Url 评估请求
-                        href: resources/urlassessmentrequest.md
-                      - name: 列表
-                        href: api/informationprotection-list-threatassessmentrequests.md
-                      - name: 创建
-                        href: api/informationprotection-post-threatassessmentrequests.md
-                      - name: 获取
-                        href: api/threatassessmentrequest-get.md
               - name: 邀请管理器
                 href: resources/invitation.md
                 items:
@@ -9907,7 +9863,7 @@ items:
                     items:
                       - name: 创建
                         href: api/claimsmappingpolicy-post-claimsmappingpolicies.md
-                      - name: 列出
+                      - name: 列表
                         href: api/claimsmappingpolicy-list.md
                       - name: 获取
                         href: api/claimsmappingpolicy-get.md
@@ -9922,7 +9878,7 @@ items:
                     items:
                       - name: 创建
                         href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
-                      - name: 列出
+                      - name: 列表
                         href: api/homerealmdiscoverypolicy-list.md
                       - name: 获取
                         href: api/homerealmdiscoverypolicy-get.md
@@ -9937,7 +9893,7 @@ items:
                     items:
                       - name: 创建
                         href: api/tokenissuancepolicy-post-tokenissuancepolicy.md
-                      - name: 列出
+                      - name: 列表
                         href: api/tokenissuancepolicy-list.md
                       - name: 获取
                         href: api/tokenissuancepolicy-get.md
@@ -9952,7 +9908,7 @@ items:
                     items:
                       - name: 创建
                         href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
-                      - name: 列出
+                      - name: 列表
                         href: api/tokenlifetimepolicy-list.md
                       - name: 获取
                         href: api/tokenlifetimepolicy-get.md
@@ -10001,7 +9957,7 @@ items:
                     items:
                       - name: 列表
                         href: api/unifiedroleassignmentmultiple-list.md
-                      - name: 创建
+                      - name: Create
                         href: api/unifiedroleassignmentmultiple-post.md
                       - name: 获取
                         href: api/unifiedroleassignmentmultiple-get.md
@@ -10014,7 +9970,7 @@ items:
                 items:
                   - name: 列表
                     href: api/trustframework-list-keysets.md
-                  - name: 创建
+                  - name: Create
                     href: api/trustframework-post-keysets.md
                   - name: 获取
                     href: api/trustframeworkkeyset-get.md
@@ -10037,7 +9993,7 @@ items:
                 items:
                   - name: 列表
                     href: api/trustframework-list-trustframeworkpolicies.md
-                  - name: 创建
+                  - name: Create
                     href: api/trustframework-post-trustframeworkpolicy.md
                   - name: 获取
                     href: api/trustframeworkpolicy-get.md
@@ -10050,7 +10006,7 @@ items:
                 items:
                   - name: 列表
                     href: api/identityuserflow-list.md
-                  - name: 创建
+                  - name: Create
                     href: api/identityuserflow-post-userflows.md
                   - name: 获取
                     href: api/identityuserflow-get.md
@@ -10102,7 +10058,7 @@ items:
                         href: api/program-create.md
                       - name: 删除
                         href: api/program-delete.md
-                      - name: 列表
+                      - name: 列出
                         href: api/program-list.md
                       - name: 更新
                         href: api/program-update.md
@@ -10120,7 +10076,7 @@ items:
                   - name: 程序控制类型
                     href: resources/programcontroltype.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/programcontroltype-list.md
               - name: 权利管理
                 href: resources/entitlementmanagement-root.md
@@ -10329,7 +10285,7 @@ items:
                         items:
                           - name: 列出
                             href: api/governanceroleassignmentrequest-list.md
-                          - name: 创建
+                          - name: Create
                             href: api/governanceroleassignmentrequest-post.md
                           - name: 获取
                             href: api/governanceroleassignmentrequest-get.md
@@ -10729,7 +10685,7 @@ items:
               - name: Phones
                 href: resources/itemphone.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/profile-list-phones.md
                   - name: 创建
                     href: api/profile-post-phones.md
@@ -10742,7 +10698,7 @@ items:
               - name: Positions
                 href: resources/workposition.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/profile-list-positions.md
                   - name: 创建
                     href: api/profile-post-positions.md
@@ -10755,7 +10711,7 @@ items:
               - name: 项目
                 href: resources/projectparticipation.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/profile-list-projects.md
                   - name: 创建
                     href: api/profile-post-projects.md
@@ -10954,8 +10910,33 @@ items:
                     href: api/multivaluelegacyextendedproperty-get.md
       - name: 报告
         items:
+          - name: Azure AD 活动报告
+            items:
+              - name: 概述
+                href: resources/azure-ad-auditlog-overview.md
+              - name: 目录审核
+                href: resources/directoryaudit.md
+                items:
+                  - name: 列出目录审核
+                    href: api/directoryaudit-list.md
+                  - name: 获取目录审核
+                    href: api/directoryaudit-get.md
+              - name: 登录
+                href: resources/signin.md
+                items:
+                  - name: 列出登录
+                    href: api/signin-list.md
+                  - name: 获取登录
+                    href: api/signin-get.md
+              - name: Provisioning
+                href: resources/provisioningobjectsummary.md
+                items:
+                  - name: 列表设置
+                    href: api/provisioningobjectsummary-list.md
           - name: 标识和访问报告
             items:
+              - name: 概述
+                href: resources/report-identity-access.md
               - name: AD FS 应用程序活动
                 items:
                   - name: 信赖方详细汇总
@@ -11340,6 +11321,26 @@ items:
                     href: api/informationprotectionlabel-evaluateremoval.md
                   - name: 提取标签
                     href: api/informationprotectionlabel-extractlabel.md
+              - name: 威胁评估
+                items:
+                  - name: 概述
+                    href: resources/threatassessment-api-overview.md
+                  - name: 威胁评估请求
+                    href: resources/threatassessmentrequest.md
+                  - name: 邮件评估请求
+                    href: resources/mailassessmentrequest.md
+                  - name: 电子邮件文件评估请求
+                    href: resources/emailfileassessmentrequest.md
+                  - name: 文件评估请求
+                    href: resources/fileAssessmentRequest.md
+                  - name: Url 评估请求
+                    href: resources/urlassessmentrequest.md
+                  - name: 列出
+                    href: api/informationprotection-list-threatassessmentrequests.md
+                  - name: 创建
+                    href: api/informationprotection-post-threatassessmentrequests.md
+                  - name: 获取
+                    href: api/threatassessmentrequest-get.md
           - name: 安全功能分数
             href: resources/securescores.md
             items:
