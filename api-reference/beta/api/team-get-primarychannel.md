@@ -1,16 +1,16 @@
 ---
 title: 获取 primaryChannel
-description: 检索允许访问其默认常规通道的团队的导航属性。
+description: 检索允许访问默认“常规”频道的团队的导航属性。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0993eb206abb4ddaea321567f4bc21a9ec22fbbe
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: ce7d7bd956eaa1f96cf456a767aeb2950102046f
+ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863447"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46531416"
 ---
 # <a name="get-primarychannel"></a>获取 primaryChannel
 
@@ -35,12 +35,12 @@ ms.locfileid: "44863447"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/channels/{id}/primaryChannel
+GET /teams/{id}/primaryChannel
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$filter` 、 `$select` 和 `$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持使用 `$filter`、`$select` 和`$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
