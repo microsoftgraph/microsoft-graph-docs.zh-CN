@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fce130155d653b5e3c749bc5a44627caa3f04941
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: d7c744162357f59e5512b38178371f030ce78e1e
+ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124292"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "46539043"
 ---
 # <a name="get-group"></a>获取组
 
@@ -111,6 +111,7 @@ Content-type: application/json
   "groupTypes": [
       "Unified"
   ],
+  "isAssignableToRole": null,
   "mail": "golfassist@contoso.com",
   "mailEnabled": true,
   "mailNickname": "golfassist",
