@@ -1,16 +1,16 @@
 ---
 title: 创建组
-description: 创建新的 Office 365 组或安全组。
+description: 创建新的 Microsoft 365 组或安全组。
 author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e4fc80fc664404a0d17d535282e0d791b7e96cbb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4beb2df484a79aa129886bd16622115ffaa7b442
+ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43396611"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "46539064"
 ---
 # <a name="create-group"></a>创建组
 
@@ -20,7 +20,7 @@ ms.locfileid: "43396611"
 
 创建请求正文中指定的新[组](../resources/group.md)。 你可以创建以下组之一：
 
-* Office 365 组（统一组）
+* Microsoft 365 组（统一组）
 * 安全组
 
 此操作在默认情况下仅返回每个组的一部分属性。 这些默认属性将记录在[属性](../resources/group.md#properties)部分中。 若要获取_非_默认返回的属性，请执行 [GET 操作](group-get.md)，并在 `$select` OData 查询选项中指定这些属性。
@@ -55,14 +55,15 @@ POST /groups
 
 | 属性 | 类型 | 说明|
 |:---------------|:--------|:----------|
-| displayName | string | 要在组的通讯簿中显示的名称。 最大长度：256 个字符。 必需。 |
+| displayName | string | 要在组的通讯簿中显示的名称。 必需。 |
 | description | string | 组说明。 可选。 |
+| isAssignableToRole | Boolean | 设置为** true **可以将组分配给 Azure AD 角色。 只有特权角色管理员和全局管理员才能设置此属性的值。 可选。 |
 | mailEnabled | 布尔 | 对于已启用邮件的组，请设置为 **true**。 必需。 |
 | mailNickname | string | 组的邮件别名。 必需。 |
-| securityEnabled | boolean | 对于启用安全机制的组（包括 Office 365 组），请设置为 **true**。 必需。 |
+| securityEnabled | boolean | 对于启用安全机制的组（包括 Microsoft 365 组），请设置为 **true**。 必填。 |
 | owners | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组所有者。 可选。 |
 | members | [directoryObject](../resources/directoryobject.md) collection | 此属性表示创建时指定的组成员。 可选。 |
-|visibility|String|指定 Office 365 组的可见性。 可能的值是：`Private`、`Public`、`HiddenMembership` 或空（解释为 `Public`）。|
+|visibility|字符串|指定 Microsoft 365 组的可见性。 可能的值是：`Private`、`Public`、`HiddenMembership` 或空（解释为 `Public`）。|
 
 > **注意：** 使用 Microsoft Azure 门户创建的组始终将 **securityEnabled** 初始设置为 `true`。
 
@@ -70,7 +71,7 @@ POST /groups
 
 >**注意：** 在不指定所有者的情况下使用 Group.Create 应用程序权限创建组时，将会以匿名方式创建组，并且组将不可修改。 创建组时，可使用 `POST` 操作并为其添加所有者，以便指定可修改该组的所有者。
 
-> 以编程方式创建 Office 365 组时，若具有仅应用上下文且未指定所有者，则将以匿名方式创建组。 这样会导致在进一步执行手动操作前无法自动创建相关联的 SharePoint Online 网站。  
+> 以编程方式创建 Microsoft 365 组时，若具有仅应用上下文且未指定所有者，则将以匿名方式创建组。 这样会导致在进一步执行手动操作前无法自动创建相关联的 SharePoint Online 网站。  
 
 根据需要为你的组指定其他可写属性。 有关详细信息，请参阅[组](../resources/group.md)资源的属性。
 
@@ -80,7 +81,7 @@ POST /groups
 
 | 组类型 | 已分配成员身份 | 动态成员身份 |
 |:--------------|:------------------------|:---------------|
-| Office 365（也称为统一组）| `["Unified"]` | `["Unified","DynamicMembership"]`
+| Microsoft 365（也称为统一组）| `["Unified"]` | `["Unified","DynamicMembership"]`
 | 动态 | `[]` (_null_) | `["DynamicMembership"]`|
 
 ## <a name="response"></a>响应
@@ -89,12 +90,13 @@ POST /groups
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-an-office-365-group"></a>示例 1：创建 Office 365 组
+### <a name="example-1-create-a-microsoft-365-group"></a>示例 1：创建 Microsoft 365 组
 
-以下示例将创建 Office 365 组。
+以下示例将创建 Microsoft 365 组。
 
 #### <a name="request"></a>请求
 
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -149,6 +151,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
+   "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
      "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
      "deletedDateTime": null,
      "classification": null,
@@ -159,6 +162,7 @@ Content-type: application/json
      "groupTypes": [
          "Unified"
      ],
+   "isAssignableToRole": null,
      "mail": "golfassist@contoso.com",
      "mailEnabled": true,
      "mailNickname": "golfassist",
@@ -176,18 +180,20 @@ Content-type: application/json
      "resourceBehaviorOptions": [],
      "resourceProvisioningOptions": [],
      "securityEnabled": false,
+   "securityIdentifier": "S-1-12-1-1753967289-1089268234-832641959-555555555",
      "theme": null,
      "visibility": "Public",
      "onPremisesProvisioningErrors": []
 }
 ```
 
-### <a name="example-2-create-an-office-365-group-with-an-owner-and-members"></a>示例 2：创建包含所有者和成员的 Office 365 组
+### <a name="example-2-create-a-microsoft-365-group-with-an-owner-and-members"></a>示例 2：创建包含所有者和成员的 Microsoft 365 组
 
-以下示例将创建一个具有指定所有者和成员的 Office 365 组。 请注意，最多可以在组创建中添加 20 个关系，如所有者和成员。 随后，可以通过使用[添加成员](https://docs.microsoft.com/graph/api/group-post-members?view=graph-rest-beta&tabs=http) API 或 JSON 批处理来添加更多成员。
+以下示例将创建一个具有指定所有者和成员的 Microsoft 365 组。 请注意，最多可以在组创建中添加 20 个关系，如所有者和成员。 随后，可以通过使用[添加成员](https://docs.microsoft.com/graph/api/group-post-members?view=graph-rest-beta&tabs=http) API 或 JSON 批处理来添加更多成员。
 
 #### <a name="request"></a>请求
 
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -253,15 +259,18 @@ Content-type: application/json
     "deletedDateTime": null,
     "classification": null,
     "createdDateTime": "2018-12-27T22:17:07Z",
-    "creationOptions": [],
     "description": "Group with designated owner and members",
     "displayName": "Operations group",
+    "expirationDateTime": null,
     "groupTypes": [
         "Unified"
     ],
+    "isAssignableToRole": null,
     "mail": "operations2019@contoso.com",
     "mailEnabled": true,
     "mailNickname": "operations2019",
+    "membershipRule": null,
+    "membershipRuleProcessingState": null,
     "onPremisesLastSyncDateTime": null,
     "onPremisesSecurityIdentifier": null,
     "onPremisesSyncEnabled": null,
@@ -273,8 +282,90 @@ Content-type: application/json
     "resourceBehaviorOptions": [],
     "resourceProvisioningOptions": [],
     "securityEnabled": false,
+    "securityIdentifier": "S-1-12-1-1905728287-1207447622-870010782-555555555",
+    "theme": null,
     "visibility": "Public",
     "onPremisesProvisioningErrors": []
+}
+```
+
+### <a name="example-3-create-a-group-that-can-be-assigned-to-an-azure-ad-role"></a>示例 3：创建可以分配给 Azure AD 角色的组
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
+<!-- {
+  "blockType": "request",
+  "name": "create_role_enabled_group"
+}-->
+``` http
+POST https://graph.microsoft.com/beta/groups
+Content-Type: application/json
+
+{
+  "description": "Group assignable to a role",
+  "displayName": "Role assignable group",
+  "groupTypes": [
+    "Unified"
+  ],
+  "isAssignableToRole": true,
+  "mailEnabled": true,
+  "securityEnabled": true,
+  "mailNickname": "contosohelpdeskadministrators",
+  "visibility" : "Private"
+}
+```
+
+> **注意：** 创建属性不需要**可见性**和 **groupTypes** 属性，但会使用这些值自动填充。 将 **isAssignableToRole** 属性设置为 `true` 的组不能具有动态成员资格类型，也不能拥有所有者。 有关更多信息，请参见[使用组来管理 Azure AD 角色分配](https://go.microsoft.com/fwlink/?linkid=2103037)。
+
+#### <a name="response"></a>响应
+
+下面展示了示例响应。 它仅包括默认属性。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "create_role_enabled_group"
+} -->
+``` http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
+  "id": "502df398-d59c-469d-944f-34a50e60db3f",
+  "deletedDateTime": null,
+  "classification": null,
+  "createdDateTime": "2018-12-27T22:17:07Z",
+  "description": "Group assignable to a role",
+  "displayName": "Role assignable group",
+  "expirationDateTime": null,
+  "groupTypes": [
+    "Unified"
+  ],
+  "isAssignableToRole": true,
+  "mail": "operations2019@contoso.com",
+  "mailEnabled": true,
+  "mailNickname": "contosohelpdeskadministrators",
+  "membershipRule": null,
+  "membershipRuleProcessingState": null,
+  "onPremisesLastSyncDateTime": null,
+  "onPremisesSecurityIdentifier": null,
+  "onPremisesSyncEnabled": null,
+  "preferredDataLocation": "CAN",
+  "proxyAddresses": [
+    "SMTP:operations2019@contoso.com"
+  ],
+  "renewedDateTime": "2018-12-27T22:17:07Z",
+  "resourceBehaviorOptions": [],
+  "resourceProvisioningOptions": [],
+  "securityEnabled": true,
+  "securityIdentifier": "S-1-12-1-1905728287-1207447622-870010782-555555555",
+  "theme": null,
+  "visibility": "Private",
+  "onPremisesProvisioningErrors": []
 }
 ```
 

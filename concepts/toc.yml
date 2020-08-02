@@ -101,7 +101,7 @@ items:
             href: outlook-get-free-busy-schedule.md
           - name: 建议新的会议时间
             href: outlook-calendar-meeting-proposals.md
-          - name: 组织或参加联机会议
+          - name: 将事件设置为联机会议
             href: outlook-calendar-online-meetings.md
           - name: 选择联机会议 API
             href: choose-online-meeting-api.md

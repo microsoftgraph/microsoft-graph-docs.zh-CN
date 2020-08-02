@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: b4478c0ebec93e5156a46c68f7b8a035225d199f
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: 27745539ca9e8288e67d77565deea176f7534054
+ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427506"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "46539113"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -129,6 +129,7 @@ ms.locfileid: "45427506"
 |hideFromAddressLists |Boolean |如果该组未显示在 Outlook 用户界面的某些部分中（“**通讯簿**”中、用于选择邮件收件人的地址列表中以及用于搜索组的“**浏览组**”中），则为 true；否则为 false。 默认值为 **false**。 <br><br>仅在 $select 上返回。|
 |hideFromOutlookClients |Boolean |如果该组未显示在 Outlook 客户端（如 Outlook for Windows 和 Outlook 网页版）中，则为 true；否则为 false。 默认值为 **false**。 <br><br>仅在 $select 上返回。|
 |id|String|组的唯一标识符。 <br><br>默认情况下返回。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。|
+|isAssignableToRole|Boolean|指示是否可以将此组分配给 Azure Active Directory 角色。<br><br>此属性只能在创建组时设置，并且不可变。 只有全局管理员和特权角色管理员角色可以设置此属性。 有关更多信息，请参见[使用组来管理 Azure AD 角色分配](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>默认情况下返回。|
 |infoCatalogs|String 集合|标识分配到组的信息片段。 默认情况下返回。|
 |isSubscribedByMail|Boolean|指示登录用户是否订阅接收电子邮件对话。 默认值为 **True**。 <br><br>仅在 $select 上返回。 |
 |licenseProcessingState|String|指示对所有组成员的组许可证分配的状态。 可能的值是：`QueuedForProcessing`、`ProcessingInProgress` 和 `ProcessingComplete`。 <br><br>仅在 $select 上返回。 只读。 |
@@ -229,6 +230,7 @@ ms.locfileid: "45427506"
     "assignedLicenses",
     "autoSubscribeNewMembers",
     "hasMembersWithLicenseErrors",
+    "isAssignableToRole",
     "isSubscribedByMail",
     "licenseProcessingState",
     "unseenConversationsCount",
@@ -257,6 +259,7 @@ ms.locfileid: "45427506"
   "hideFromOutlookClients": false,
   "id": "string (identifier)",
   "isFavorite": true,
+  "isAssignableRole": false,
   "isSubscribedByMail": true,
   "licenseProcessingState": "string",
   "mail": "string",
