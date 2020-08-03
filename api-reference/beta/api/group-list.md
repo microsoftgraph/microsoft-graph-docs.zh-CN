@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 712cbf456ebf150890b83a2509de7b899bbef631
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: 9d63152f44fddc56ceaf8e0f357cd36cac930bf9
+ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895823"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "46539050"
 ---
 # <a name="list-groups"></a>列出组
 
@@ -41,7 +41,7 @@ GET /groups
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-若要仅列出 Microsoft 365 组（也称为 "统一组"），请在**groupTypes**上应用筛选器：
+若要仅列出 Microsoft 365 组（亦称为“统一组”），请对 **groupTypes** 应用筛选器：
 <!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unified')
@@ -52,16 +52,16 @@ GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unifi
 ```
 GET https://graph.microsoft.com/beta/groups?$orderby=displayName
 ```
-您还可以使用 `$count` 和 `$search` 查询参数来限制响应。 `$search`查询参数仅支持在**displayName**和**description**字段上进行词汇切分。 其他字段默认为 `$filter` 行为。 为此资源添加或更新项目时，将对其进行专门编制索引，以便 `$count` 与 `$search` 查询参数一起使用。 在添加或更新项目以及在索引中可用时，可能会出现轻微的延迟。
+你还可以使用 `$count` 和 `$search` 查询参数来限制响应。 `$search` 查询参数仅支持对 **displayName** 和**说明**字段进行标记化。 其他字段默认为 `$filter` 行为。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
-有关详细信息，请参阅[OData 查询参数](/graph/query-parameters)。
+有关详细信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
 | 名称 | 说明 |
 |:---- |:----------- |
 | Authorization  | Bearer {token}。必需。 |
-| ConsistencyLevel | 仍然. 此标头 `$count` 在使用时 `$search` 或在 `$filter` 与查询参数一起使用时是必需的 `$orderby` 。 它使用的索引可能不是最新的对象更改。 |
+| ConsistencyLevel | 最终。 当使用 `$search` 或将 `$filter` 与 `$orderby` 查询参数一起使用时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/groups?$orderby=displayName
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-a-list-of-groups"></a>示例1：获取组列表
+### <a name="example-1-get-a-list-of-groups"></a>示例 1：获取组列表
 
 #### <a name="request"></a>请求
 
@@ -117,20 +117,79 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups",
-  "value": [
-    {
-      "id": "11111111-2222-3333-4444-555555555555",
-      "mail": "group1@contoso.com",
-      "mailEnabled": true,
-      "mailNickname": "ContosoGroup1",
-      "securityEnabled": true
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups",
+    "value": [
+         {
+            "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+            "deletedDateTime": null,
+            "classification": null,
+            "createdDateTime": "2018-12-22T02:21:05Z",
+            "description": "Self help community for golf",
+            "displayName": "Golf Assist",
+            "expirationDateTime": null,
+            "groupTypes": [
+                "Unified"
+            ],
+            "isAssignableToRole": null,
+            "mail": "golfassist@contoso.com",
+            "mailEnabled": true,
+            "mailNickname": "golfassist",
+            "membershipRule": null,
+            "membershipRuleProcessingState": null,
+            "onPremisesLastSyncDateTime": null,
+            "onPremisesSecurityIdentifier": null,
+            "onPremisesSyncEnabled": null,
+            "preferredDataLocation": "CAN",
+            "preferredLanguage": null,
+            "proxyAddresses": [
+                "smtp:golfassist@contoso.onmicrosoft.com",
+                "SMTP:golfassist@contoso.com"
+            ],
+            "renewedDateTime": "2018-12-22T02:21:05Z",
+            "resourceBehaviorOptions": [],
+            "resourceProvisioningOptions": [],
+            "securityEnabled": false,
+            "theme": null,
+            "visibility": "Public",
+            "onPremisesProvisioningErrors": []
+        },
+        {
+            "id": "d7797254-3084-44d0-99c9-a3b5ab149538",
+            "deletedDateTime": null,
+            "classification": null,
+            "createdDateTime": "2018-11-19T20:29:40Z",
+            "description": "Talk about golf",
+            "displayName": "Golf Discussion",
+            "expirationDateTime": null,
+            "groupTypes": [],
+            "isAssignableToRole": null,
+            "mail": "golftalk@contoso.com",
+            "mailEnabled": true,
+            "mailNickname": "golftalk",
+            "membershipRule": null,
+            "membershipRuleProcessingState": null,
+            "onPremisesLastSyncDateTime": null,
+            "onPremisesSecurityIdentifier": null,
+            "onPremisesSyncEnabled": null,
+            "preferredDataLocation": "CAN",
+            "preferredLanguage": null,
+            "proxyAddresses": [
+                "smtp:golftalk@contoso.onmicrosoft.com",
+                "SMTP:golftalk@contoso.com"
+            ],
+            "renewedDateTime": "2018-11-19T20:29:40Z",
+            "resourceBehaviorOptions": [],
+            "resourceProvisioningOptions": [],
+            "securityEnabled": false,
+            "theme": null,
+            "visibility": null,
+            "onPremisesProvisioningErrors": []
+        }
+    ]
 }
 ```
 
-### <a name="example-2-get-a-filtered-list-of-groups-including-the-count-of-returned-objects"></a>示例2：获取组的已筛选列表，包括返回对象的计数
+### <a name="example-2-get-a-filtered-list-of-groups-including-the-count-of-returned-objects"></a>示例 2：获取组的筛选列表（包括返回的对象数）
 
 #### <a name="request"></a>请求
 
@@ -189,7 +248,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-only-a-count-of-groups"></a>示例3：仅获取组的计数
+### <a name="example-3-get-only-a-count-of-groups"></a>示例 3：仅获取组的计数
 
 #### <a name="request"></a>请求
 
@@ -222,7 +281,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- {
   "blockType": "response",
@@ -238,7 +297,7 @@ Content-type: text/plain
 893
 
 
-### <a name="example-4-use-filter-and-top-to-get-one-group-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例4：使用 $filter 和 $top 获取一个显示名称以 ' a ' 开头的组，其中包含返回对象的计数
+### <a name="example-4-use-filter-and-top-to-get-one-group-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 4：使用 $filter 和 $top 获取显示名称以“a”开头（包括返回的对象数）的组。
 
 #### <a name="request"></a>请求
 
@@ -280,7 +339,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-use-search-to-get-groups-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例5：使用 $search 获取显示名称包含字母 "Video" 的组，其中包括返回的对象的计数
+### <a name="example-5-use-search-to-get-groups-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 5：使用 $search 获取显示名称中包含字母“Video”（包括返回的对象数）的组。
 
 #### <a name="request"></a>请求
 
@@ -339,7 +398,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-6-use-search-to-get-groups-with-display-names-that-contain-the-letters-video-or-a-description-that-contains-the-letters-prod-including-a-count-of-returned-objects"></a>示例6：使用 $search 获取显示名称中包含字母 "Video" 的组或包含字母 "生产" 的说明，包括所返回对象的计数
+### <a name="example-6-use-search-to-get-groups-with-display-names-that-contain-the-letters-video-or-a-description-that-contains-the-letters-prod-including-a-count-of-returned-objects"></a>示例 6：使用 $search 获取显示名称中包含字母“Video”或其说明中包含字母“prod”（包括返回的对象数）的组。
 
 #### <a name="request"></a>请求
 

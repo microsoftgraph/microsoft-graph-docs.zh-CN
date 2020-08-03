@@ -1,27 +1,31 @@
 ---
-title: 使用 Outlook 组织和参加联机会议
-description: 在 Outlook 中，会议组织者可以允许被邀请者建议备选会议时间。
+title: 在 Outlook 日历中将事件启用为联机会议
+description: 在支持联机会议提供程序的机构中，管理员可以设置 Outlook 日历以支持使用这些提供程序的会议。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 7b668b6791655291dde71c4ef517c78a48c0fa8a
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: 04c3104fa55087f8f848c8efc03af5627e49268e
+ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895101"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46531500"
 ---
-# <a name="use-outlook-to-organize-or-attend-meetings-online"></a>使用 Outlook 组织或参加联机会议
+# <a name="enable-an-event-as-an-online-meeting-in-an-outlook-calendar"></a>在 Outlook 日历中将事件启用为联机会议 
+
+使用 Outlook 日历 API 组织事件，会议受邀者可在其中单击加入 URL，并在 Microsoft Teams 或 Skype 中参加联机会议。
 
 在支持联机会议提供程序的机构中，管理员可以设置 Outlook 日历以支持使用这些提供程序（其中一个作为默认提供程序）的会议。 可以在 Outlook 中[创建](#create-and-enable-a-meeting-online)或[更新](#update-a-meeting-to-enable-it-online)[事件](/graph/api/resources/event)，并允许与会者使用支持的提供程序加入联机会议。 你可以方便地[获取事件的联机会议信息](#get-information-to-join-meeting-online)****，包括用于加入会议的 URL。 
+
+> **注意** 日历 API 可让你方便地在 Outlook 日历中设置一个联机会议，与会者可在该日历中单击加入会议，并在 Teams 或 Skype 中继续其体验。 若要与 Teams 或 Skype 进行更具个性化、更丰富的集成，请使用云通信 API。 有关详细信息，请参阅[在 Microsoft Graph 中选择 API 以创建和加入联机会议](choose-online-meeting-api.md)。
 
 ## <a name="calendars-and-online-meeting-providers"></a>日历和联机会议提供程序
 
 支持以下任何联机会议提供程序的机构可设置 Outlook 日历并支持组织联机会议：
 
-- Microsoft 团队，作为 Microsoft 365 商业版或企业版套件的一部分获取
+- Microsoft Teams，作为 Microsoft 365 商业版或企业版套件的一部分获得
 - Skype
-- Skype for Business
+- Skype for Business（将被 [Microsoft Teams 取代](https://www.microsoft.com/microsoft-365/previous-versions/skype-for-business-online?OCID=AID2100233_SEM_XM02XAAAAIUvHAuF:20200730151407:s&msclkid=19b7c6af2c5c1bcea7d9998c06585710&ef_id=XM02XAAAAIUvHAuF:20200730151407:s)）
 
 查找 **allowedOnlineMeetingProviders** 和 **defaultOnlineMeetingProvider** 属性，验证 Outlook [日历](/graph/api/resources/calendar)是否支持任何联机会议提供程序。 下面的示例演示登录用户的默认日历支持两个提供程序（Microsoft Teams 和 Skype for Business），并将 Microsoft Teams 用作默认的联机会议提供程序。 
 
@@ -472,8 +476,8 @@ Content-type: application/json
 
 
 ## <a name="see-also"></a>另请参阅
-- 有关 Microsoft 团队与 Microsoft 365 的互操作性的信息，请参阅：
-  - [Exchange 和 Microsoft 团队如何交互](/microsoftteams/exchange-teams-interact)
+- 有关 Microsoft Teams 与 Microsoft 365 互操作性的信息，请参阅：
+  - [Exchange 与 Microsoft Teams 如何交互](/microsoftteams/exchange-teams-interact)
   - [设置共存和升级设置](/microsoftteams/setting-your-coexistence-and-upgrade-settings)
 - [在 Microsoft Graph 中选择 API 以创建和加入联机会议](choose-online-meeting-api.md)
 - [在 Outlook 日历中查找可能会议时间](findmeetingtimes-example.md)
