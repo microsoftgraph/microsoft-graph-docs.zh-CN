@@ -1,16 +1,16 @@
 ---
 title: identityProvider 资源类型
-description: 表示 Azure Active Directory (Azure AD) 标识提供程序。 标识提供程序可以是 Microsoft、Google、Facebook、Amazon 或 LinkedIn。
-localization_priority: Normal
+description: 代表 Azure Active Directory 租户和  Azure AD B2C 租户中的身份提供程序。
+localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: Nickgmicrosoft
-ms.openlocfilehash: 1c71fc88b4365031a126ee5c45f59de25f5fa3d9
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+author: namkedia
+ms.openlocfilehash: 449553213e41cb8b447511584c4905906011a4d4
+ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897055"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46509544"
 ---
 # <a name="identityprovider-resource-type"></a>identityProvider 资源类型
 
@@ -18,34 +18,38 @@ ms.locfileid: "44897055"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 Azure Active Directory (Azure AD) 标识提供程序。 标识提供程序可以是 Microsoft、Google、Facebook、Amazon 或 LinkedIn。
+代表 Azure Active Directory 租户和  Azure AD B2C 租户中的身份提供程序。
 
-在 Azure AD B2C 租户中配置标识提供程序可实现以下功能：
+对于 Azure AD 租户中的 Azure AD B2B 方案，身份提供程序类型可以是 Google 或 Facebook。
 
-* 用户使用使用者应用程序中的社交帐户进行注册并登录。 例如，应用程序可使用 Azure AD B2C 让用户能够通过 Facebook 帐户注册服务。
-* 用户将现有本地帐户链接到使用者应用程序中的社交帐户。 例如，用户已在应用程序中创建用户名和密码（本地帐户）。 之后，用户决定将现有本地帐户链接到其 Facebook 帐户，以便能使用 Facebook 进行登录。
+在 Azure AD B2C 租户中，身份提供程序类型可以是 Microsoft、Google、Facebook、Amazon、LinkedIn、Twitter 或任何 [openIdConnectProvider](../resources/openidconnectprovider.md)。 以下身份提供程序正处于预览阶段：微博、QQ、微信和 GitHub。
 
-通过在 Azure AD B2C 中配置标识提供程序，可实现之后的 B2B 来宾方案。 例如，组织在 Microsoft 365 中具有需要与 Gmail 用户共享的资源。 Gmail 将使用其 Google 帐户凭据来验证和访问文档。
+在 Azure AD B2C 租户中配置身份提供程序，用户可在应用程序中使用社交帐户或自定义 OpenID Connect 支持的提供程序进行注册和登录。 例如，应用程序可使用 Azure AD B2C 让用户能够通过 Facebook 帐户或他们自己的符合 OIDC 协议的自定义身份提供程序注册服务。
+
+通过在 Azure AD B2C 中配置身份提供程序，可实现新 Azure AD B2B 来宾方案。 例如，某组织在 Microsoft 365 中具有需要与 Gmail 用户共享的资源。 Gmail 将使用其 Google 帐户凭据来验证和访问文档。
+
+如果是具有 `OpenIDConnect` 且为 `type` 的自定义 OpenID Connect 身份提供程序， 则使用 [openIdConnectProvider](../resources/openidconnectprovider.md) 资源类型表示，该资源类型将继承自身份提供程序资源类型。 
 
 ## <a name="methods"></a>方法
 
-| 方法       | 返回类型  |说明|
+| 方法       | 返回类型  |Description|
 |:---------------|:--------|:----------|
-|[获取 identityProvider](../api/identityprovider-get.md) |identityProvider|读取现有 identityProvider 中的属性。|
-|[创建 identityProvider](../api/identityprovider-post-identityproviders.md)|identityProvider|新建 identityProvider。|
-|[更新 identityProvider](../api/identityprovider-update.md)|无|更新现有的 identityProvider。|
-|[删除 identityProvider](../api/identityprovider-delete.md)|无|删除现有的 identityProvider。|
-|[列出 identityProvider](../api/identityprovider-list.md)|identityProvider 集合|列出在租户中配置的所有 identityProvider。|
+|[List](../api/identityprovider-list.md)|identityProvider 集合|检索在租户中配置的所有标识提供程序。|
+|[创建](../api/identityprovider-post-identityproviders.md)|identityProvider|新建身份提供程序。|
+|[获取](../api/identityprovider-get.md) |identityProvider|检索身份提供程序的属性。|
+|[更新](../api/identityprovider-update.md)|无|更新身份提供程序。|
+|[删除](../api/identityprovider-delete.md)|无|删除身份提供程序。|
+|[列出可用的提供程序类型](../api/identityprovider-list-availableprovidertypes.md)|String 集合|检索所有可用的身份提供程序类型。|
 
 ## <a name="properties"></a>属性
 
-|属性|类型|必需|可为空|说明|
-|:---------------|:--------|:--------|:--------|:----------|
-|clientId|字符串|是|No|应用程序的客户端 ID。 这是向标识提供程序注册应用程序时获取的客户端 ID。|
-|clientSecret|字符串|是|No|应用程序的客户端密码。 这是向标识提供程序注册应用程序时获取的客户端密码。 这是只读的。 读取操作将返回“\*\*\*\*”。|
-|id|字符串|否|否|标识提供程序的 ID。|
-|name|字符串|否|否|标识提供程序的显示名称。|
-|type|String|是|否|标识提供程序类型。 它必须是下列值之一： <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>领英<li/>Facebook</ul>|
+|属性|类型|说明|
+|:---------------|:--------|:----------|
+|clientId|字符串|使用身份提供程序注册应用时获取的应用客户端 ID。 这是必填字段。|
+|clientSecret|字符串|使用身份提供程序注册应用时获取的应用客户端密码。 这是只读的。 读取操作将返回“\*\*\*\*”。 这是必填字段。|
+|id|字符串|标识提供程序的 ID。|
+|name|字符串|标识提供程序的显示名称。|
+|type|字符串|身份提供程序类型是必填字段。<ul>对于 B2B 方案：<li/>Google<li/>Facebook</ul><ul>对于 B2C 方案：<li/>Microsoft<li/>Google<li/>Amazon<li/>领英<li/>Facebook<li/>GitHub<li/>Twitter<li/>微博<li/>QQ<li/>微信<li/>OpenIDConnect</ul>|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>获取客户端 ID 和密码的位置
 
