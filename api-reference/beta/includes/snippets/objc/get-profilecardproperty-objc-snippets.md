@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e47c96b7c303a14b7510a26b468afd31a406962b
-ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
+ms.openlocfilehash: 8afe01ddbb8e761faa0d002c13d8c0795151a507
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45142555"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46569979"
 ---
 ```objc
 
@@ -18,7 +18,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-        MSGraphResponse *response = [[MSGraphResponse alloc] initWithData:data error:&nserror];
+        MSGraphProfileCardProperty *profileCardProperty = [[MSGraphProfileCardProperty alloc] initWithData:data error:&nserror];
 
 }];
 
