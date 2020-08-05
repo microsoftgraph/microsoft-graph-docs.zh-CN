@@ -4,12 +4,12 @@ description: 在支持联机会议提供程序的机构中，管理员可以设�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 04c3104fa55087f8f848c8efc03af5627e49268e
-ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
+ms.openlocfilehash: 03c628cd87ef9a6905898fdbc11dded437f4b8cc
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46531500"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46567423"
 ---
 # <a name="enable-an-event-as-an-online-meeting-in-an-outlook-calendar"></a>在 Outlook 日历中将事件启用为联机会议 
 
@@ -25,7 +25,7 @@ ms.locfileid: "46531500"
 
 - Microsoft Teams，作为 Microsoft 365 商业版或企业版套件的一部分获得
 - Skype
-- Skype for Business（将被 [Microsoft Teams 取代](https://www.microsoft.com/microsoft-365/previous-versions/skype-for-business-online?OCID=AID2100233_SEM_XM02XAAAAIUvHAuF:20200730151407:s&msclkid=19b7c6af2c5c1bcea7d9998c06585710&ef_id=XM02XAAAAIUvHAuF:20200730151407:s)）
+- Skype for Business（将被 [Microsoft Teams 取代](https://www.microsoft.com/microsoft-365/previous-versions/skype-for-business-online)）
 
 查找 **allowedOnlineMeetingProviders** 和 **defaultOnlineMeetingProvider** 属性，验证 Outlook [日历](/graph/api/resources/calendar)是否支持任何联机会议提供程序。 下面的示例演示登录用户的默认日历支持两个提供程序（Microsoft Teams 和 Skype for Business），并将 Microsoft Teams 用作默认的联机会议提供程序。 
 

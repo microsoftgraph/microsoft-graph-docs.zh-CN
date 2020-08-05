@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 317afc6fb5a5a7f19a9faae0e1a23183e5f7bbc7
-ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
+ms.openlocfilehash: 155d09ee373b52307fe4f22fbedee21ee40632d8
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46531451"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46567227"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -143,6 +143,8 @@ Content-Type: application/json
 虽然不需要 `clientState`，但必须包括它才能符合我们建议的更改通知处理过程。 通过设置此属性后，可以确认收到的更改通知来自 Microsoft Graph 服务。 因此，该属性的值应保密，并且只有你的应用程序和 Microsoft Graph 服务知道。
 
 如果成功，Microsoft Graph 将在正文中返回 `201 Created` 代码和 [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) 对象。
+
+> **注意：** 传递通知时，`notificationUrl` 属性中包含的任何查询字符串参数都将包含在 HTTP POST 请求中。
 
 #### <a name="notification-endpoint-validation"></a>通知终结点验证
 
