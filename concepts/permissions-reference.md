@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 5aac8896fc3f81005450dc0075199720954f400c
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 81f1682bfb47b851728b0521553cac5b74ecd8f0
+ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384323"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "46539120"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -408,12 +408,15 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 |权限    |显示字符串   |说明 |需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_CallRecords.Read.All_|读取所有通话记录|允许应用在没有用户登录的情况下读取所有通话和联机会议的通话记录。|是|
+|_CallRecords.Read.PstnCalls_|读取 PSTN 并直接路由通话日志数据（预览） |在没有已登录用户的情况下，允许应用读取所有 PSTN 和直接路由通话日志数据。|是|
 
 ### <a name="remarks"></a>备注
 
 _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与外部电话号码的通话）授权 [callRecords](/graph/api/resources/callrecords-callrecord) 的特权访问。 这包括与参与呼叫的人员有关的潜在敏感详细信息，以及与这些通话和会议相关的、可用于网络疑难解答的技术信息（IP地址、设备详细信息和其他网络信息）。
 
-> **重要说明：** 应谨慎为应用程序授予此权限。 通话记录可提供业务运营的见解，因此可能成为恶意参与者的目标。 仅为你信任的应用程序授予此权限，以满足你的数据保护要求。
+_CallRecords.Read.PstnCalls_权限授予应用访问 [PSTN (通话套餐)](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) 以及 [直接路由](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta)通话日志。 这包括与用户相关的潜在敏感信息以及与外部电话号码的通话。
+
+> **重要说明：** 应谨慎为应用程序授予这些权限。 通话记录可提供业务运营的见解，因此可能成为恶意参与者的目标。 仅为你信任的应用程序授予这些权限，以满足你的数据保护要求。
 
 > **重要说明：** 请确保你遵守有关通信的数据保护和机密性方面的法律和法规。 有关详细信息，请参阅[使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)并咨询法律顾问。
 
@@ -425,6 +428,7 @@ _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与
 
 * _CallRecords.Read.All_：检索通话记录 (`GET /v1.0/communications/callRecords/{id}`)。
 * _CallRecords.Read.All_：订阅新的通话记录 (`POST /v1.0/subscriptions`)。
+* _CallRecords.Read.PstnCalls_：检索指定时间范围 (`GET /v1.0/communications/callRecords/microsoft.graph.callRecords.getDirectRoutingCalls(fromDateTime={start date and time),toDateTime={end date and time))`) 内的直接路由通话。
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
@@ -1726,7 +1730,7 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 | _TeamsAppInstallation.ReadWriteForTeam_ | 管理团队中已安装的 Teams 应用| 允许应用在已登录用户可以访问的团队中读取、安装、更新和卸载 Teams 应用。 不允许读取特定于应用程序的设置。| 是 | 否 |
 | _TeamsAppInstallation.ReadWriteSelfForTeam_ （个人预览版） | 允许应用在 Teams 中管理其自身| 允许 Teams 应用为已登录用户可以访问的团队读取、安装、更新和卸载其自身。| 是 | 否 |
 
-#### <a name="application-permissions"></a>应用程序权限
+#### <a name="application-permissions"></a>应用权限
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 
 |:----------------|:------------------|:-------------|:-----------------------|
 | _TeamsAppInstallation.ReadForUser.All_ | 读取为所有用户安装的 Teams 应用| 允许应用读取为任何用户（无需是登录的用户）安装的 Teams 应用。 不允许读取特定于应用程序的设置。| 是 | 
@@ -1887,6 +1891,28 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 * _ThreatAssessment.Read.All_：读取威胁评估请求 (`GET /informationProtection/threatAssessmentRequests`)
 
 ---
+
+## <a name="taxonomy-permissions"></a>分类权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TermStore.Read.All_        | 读取术语库数据 | 允许应用读取术语库中的各种术语、集和组 | 是  | 否 |
+| _TermStore.ReadWrite.All_   | 读取和写入所有术语库数据 | 允许应用在术语库中编辑或删除术语、集和组 | 是  | 否 |
+
+
+### <a name="remarks"></a>注解
+
+分类权限仅对工作或学校帐户有效。
+
+### <a name="example-usage"></a>用法示例
+
+#### <a name="delegated"></a>Delegated
+
+* _TermStore.Read.All_：读取租户的 termStore（`GET /termStore`）
+* _TermStore.ReadWrite.All_：在 termStore 中创建新术语（`POST /termStore/sets/123/children`）
+
 
 ## <a name="user-permissions"></a>用户权限
 

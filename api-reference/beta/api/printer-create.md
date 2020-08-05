@@ -1,16 +1,16 @@
 ---
 title: 打印机：创建
-description: 创建（注册）具有通用打印服务的打印机。
+description: 使用通用打印服务创建 (寄存器) 打印机。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a0b64166b6d7c95f3ad4995321b50b2c4aaadda9
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
-ms.translationtype: Auto
+ms.openlocfilehash: f9a9f89ff7350f4b76641a2a6f3cfb9f7f97679b
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081060"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46566357"
 ---
 # <a name="printer-create"></a>打印机：创建
 
@@ -18,7 +18,7 @@ ms.locfileid: "45081060"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建（注册）具有通用打印服务的打印机。 这是一个长时间运行的操作，因此它返回可用于跟踪和验证打印机注册的[printerCreateOperation](../resources/printercreateoperation.md) 。
+创建 (注册) 使用通用打印服务的打印机。 这是一个长时间运行的操作，因此它返回可用于跟踪和验证打印机注册的[printerCreateOperation](../resources/printercreateoperation.md) 。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,13 +47,13 @@ POST /print/printers/create
 
 | 参数      | 类型    |说明| 是否必需？ |
 |:---------------|:--------|:----------|:----------|
-|displayName|String|要分配给打印机的显示名称。|是|
+|displayName|字符串|要分配给打印机的显示名称。|是|
 |manufacturer|String|打印机的制造商。|是|
-|model|String|打印机的型号。|是|
-|physicalDeviceId|String|打印机的物理设备 UUID。 如果属性为 true，则为必需 `hasPhysicalDevice` 。|否|
-|hasPhysicalDevice|Boolean|如果打印机具有物理输出设备，则为 True，否则为 false。 如果省略，则默认值为 true。|否|
-|certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|打印机创建并使用的证书的 x.509 证书签名请求（CSR），用于标识自己。|是|
-|connectorId|String|充当打印机代理的连接器的 Id。|否|
+|model|字符串|打印机的型号。|是|
+|physicalDeviceId|字符串|打印机的物理设备 UUID。 如果属性为 true，则为必需 `hasPhysicalDevice` 。|否|
+|hasPhysicalDevice|布尔|如果打印机具有物理输出设备，则为 True，否则为 false。 如果省略，则默认值为 true。|否|
+|certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|X.509 证书签名请求 (CSR) 为打印机创建并使用的证书来标识自己。|是|
+|connectorId|字符串|充当打印机代理的连接器的 Id。|否|
 
 ## <a name="response"></a>响应
 如果成功，此方法将 `202 Accepted` 在标头中返回响应代码和关联的[printerCreateOperation](../resources/printercreateoperation.md)的链接 `Operation-Location` 。
@@ -62,7 +62,7 @@ POST /print/printers/create
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
-下面展示了示例请求。 若要获取有关创建所需证书签名请求（CSR）的帮助，请参阅[CSR 生成代码示例](https://docs.microsoft.com/universal-print/hardware/universal-print-oem-certificate-signing-request)。
+下面展示了示例请求。 若要获取有关创建 (CSR) 所需的证书签名请求的帮助，请参阅[CSR 生成代码示例](https://docs.microsoft.com/universal-print/hardware/universal-print-oem-certificate-signing-request)。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -90,6 +90,14 @@ Content-length: 319
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-printer-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-printer-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-printer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

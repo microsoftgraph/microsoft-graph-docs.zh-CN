@@ -1,18 +1,18 @@
 ---
-title: 删除 taskTrigger
+title: Delete taskTrigger
 description: 删除打印机的任务触发器。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c96edf3379e1d20e35070e4e131ffb08cce98d5f
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: Auto
+ms.openlocfilehash: c63dad5a4367eb7cf196cf5a6aaf6e1350eef70f
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091584"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46566327"
 ---
-# <a name="delete-tasktrigger"></a>删除 taskTrigger
+# <a name="delete-tasktrigger"></a>Delete taskTrigger
 
 命名空间：microsoft.graph
 
@@ -51,6 +51,8 @@ DELETE /print/printers/{id}/taskTriggers/{id}
 ##### <a name="request"></a>请求
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_printer_tasktrigger"
@@ -58,6 +60,20 @@ DELETE /print/printers/{id}/taskTriggers/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/print/printers/1a5f91a7-9bd1-4d5f-bb86-f43554cac51c/taskTriggers/25be207e-1154-491f-aa68-a9f7007d4bec
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-printer-tasktrigger-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-printer-tasktrigger-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-printer-tasktrigger-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 47e8ba9564b1810da99e212ab9832142656d18f0
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 0bdffc4bfb6a4c87ce3949dd76f4a87d673d707d
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509998"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46566531"
 ---
 # <a name="create-connectedorganization"></a>创建 connectedOrganization
 
@@ -54,8 +54,8 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|连接的组织名称。 |
-|说明|字符串|连接的组织说明。|
+|displayName|字符串|连接的组织名称。 |
+|说明|String|连接的组织说明。|
 |identitySources|[identitySource](../resources/identitysource.md)集合|包含一个元素（此连接组织中的初始标识源）的集合。|
 
 
@@ -66,6 +66,8 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_connectedorganization_from_connectedorganizations"
@@ -88,6 +90,20 @@ Content-length: 100
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-connectedorganization-from-connectedorganizations-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-connectedorganization-from-connectedorganizations-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-connectedorganization-from-connectedorganizations-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

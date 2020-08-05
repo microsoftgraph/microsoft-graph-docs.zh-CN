@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 23d37c089e9c81939ba9342a7f5747dd979b8bec
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: 16f753005af0296f401b492db25031b021a3c3f9
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45225066"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46566862"
 ---
 # <a name="update-entitlementmanagementsettings"></a>更新 entitlementManagementSettings
 
@@ -38,7 +38,7 @@ PATCH /identityGovernance/entitlementManagement/settings
 ## <a name="request-headers"></a>请求标头
 | 名称         | 说明 |
 |:-------------|:------------|
-| Authorization | 持有者 \{token\}。 必需。 |
+| Authorization | 持有者 \{token\}。 必填。 |
 | Content-Type  | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
@@ -51,6 +51,8 @@ PATCH /identityGovernance/entitlementManagement/settings
 
 ### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_entitlementManagementSettings"
@@ -63,6 +65,20 @@ Content-type: application/json
   "externalUserLifecycleAction": "None"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-entitlementmanagementsettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-entitlementmanagementsettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-entitlementmanagementsettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

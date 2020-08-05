@@ -1,18 +1,18 @@
 ---
-title: 更新 taskDefinition
+title: Update taskDefinition
 description: 更新任务定义。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c0f0140b23291b77a5c00ff42b209f1f2af89a67
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: Auto
+ms.openlocfilehash: 60c8c53cc28724a7b36e00d1b1695288356cb343
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091583"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46566385"
 ---
-# <a name="update-taskdefinition"></a>更新 taskDefinition
+# <a name="update-taskdefinition"></a>Update taskDefinition
 
 命名空间：microsoft.graph
 
@@ -50,7 +50,7 @@ PATCH /print/taskDefinitions/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|String|PrintTaskDefinition 的名称。|
+|displayName|字符串|PrintTaskDefinition 的名称。|
 |createdBy|String|有关创建任务定义的应用程序的信息。 只有 `createdBy.displayName` 属性可以更新。|
 
 ## <a name="response"></a>响应
@@ -59,6 +59,8 @@ PATCH /print/taskDefinitions/{id}
 ### <a name="request"></a>请求
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "print_update_taskdefinition"
@@ -75,6 +77,20 @@ Content-length: 122
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/print-update-taskdefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/print-update-taskdefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/print-update-taskdefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

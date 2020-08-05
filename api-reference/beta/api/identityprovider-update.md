@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6bd2944211312c1b5440390f7a1c7a84de205e9f
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: be8c24c1c34dca1803bd1c527e043a5c52ac5e10
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509698"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46566672"
 ---
 # <a name="update-identityprovider"></a>更新 identityProvider
 
@@ -51,7 +51,7 @@ PATCH /identityProviders/{id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供一个 JSON 对象，该对象具有需要为[identityprovider.read.all](../resources/identityprovider.md)或[openIdConnectProvider](../resources/openidconnectprovider.md)更新的一个或多个属性（仅适用于 Azure AD B2C）对象。
+在请求正文中，提供一个 JSON 对象，该对象具有一个或多个属性，只需为 Azure AD B2C) 对象更新[identityprovider.read.all](../resources/identityprovider.md)或[openIdConnectProvider](../resources/openidconnectprovider.md) (的属性。
 
 ### <a name="identityprovider-object"></a>Identityprovider.read.all 对象
 
@@ -74,7 +74,7 @@ PATCH /identityProviders/{id}
 |domainHint|字符串|可以使用域提示直接跳到指定标识提供程序的登录页，而不是让用户在可用标识提供程序列表中进行选择。|
 |metadataUrl|字符串|开放 Id 的元数据文档的 URL 连接标识提供程序。|
 |responseMode|字符串|定义应用于将数据从自定义标识提供程序发送回 Azure AD B2C 的方法。 可以使用以下响应模式： <ul><li/>`form_post`：建议使用此响应模式以获得最佳安全性。 响应通过 HTTP POST 方法传输，其中的代码或令牌使用应用程序/x www 格式 urlencoded 格式在正文中进行编码。<li/>`query`：代码或令牌作为查询参数返回。</ul>|
-|responseType|字符串|描述在对自定义标识提供程序的 authorization_endpoint 的初始调用中发送回的信息类型。 可以使用以下响应类型：<ul><li/> `code`：按照授权代码流，代码将返回到 Azure AD B2C。 Azure AD B2C 将继续调用 token_endpoint 以交换令牌的代码。<li/> `id_token`：从自定义标识提供程序向 Azure AD B2C 返回 ID 令牌。 <li/>`token`：从自定义标识提供程序向 Azure AD B2C 返回访问令牌。 （目前 Azure AD B2C 不支持此值）</ul>|
+|responseType|字符串|描述在对自定义标识提供程序的 authorization_endpoint 的初始调用中发送回的信息类型。 可以使用以下响应类型：<ul><li/> `code`：按照授权代码流，代码将返回到 Azure AD B2C。 Azure AD B2C 将继续调用 token_endpoint 以交换令牌的代码。<li/> `id_token`：从自定义标识提供程序向 Azure AD B2C 返回 ID 令牌。 <li/>`token`：从自定义标识提供程序向 Azure AD B2C 返回访问令牌。 目前，Azure AD B2C 不支持此值 () </ul>|
 |scope|String|作用域定义要从自定义标识提供程序中收集的信息和权限。|
 
 ## <a name="response"></a>响应
@@ -89,6 +89,8 @@ PATCH /identityProviders/{id}
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_identityprovider"
@@ -104,6 +106,20 @@ Content-length: 41
   "clientSecret": "1111111111111"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-identityprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-identityprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-identityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -117,12 +133,14 @@ Content-length: 41
 ```http
 HTTP/1.1 204 No Content
 ```
-### <a name="example-2-update-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>示例2：更新特定的**openIDConnectProvider** （仅适用于 AZURE AD B2C）
+### <a name="example-2-update-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>示例2：仅为 Azure AD B2C) 更新特定的**openIDConnectProvider** (
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_openidconnectprovider"
@@ -138,6 +156,20 @@ Content-length: 41
   "responseType": "id_token"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-openidconnectprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-openidconnectprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-openidconnectprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

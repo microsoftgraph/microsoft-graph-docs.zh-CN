@@ -1,18 +1,18 @@
 ---
-title: 列出 taskTriggers
+title: List taskTriggers
 description: 检索与打印机关联的任务触发器列表。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1278e84070bc78c6fb0ead350bd464e8a102ea98
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: Auto
+ms.openlocfilehash: 189830fb76de676163a24a8166cff6017cceffc5
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091581"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46565893"
 ---
-# <a name="list-tasktriggers"></a>列出 taskTriggers
+# <a name="list-tasktriggers"></a>List taskTriggers
 
 命名空间：microsoft.graph
 
@@ -40,7 +40,7 @@ GET /print/printers/{id}/taskTriggers
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ### <a name="exceptions"></a>Exceptions
 某些运算符不受支持：、、、、 `$count` `$format` `$search` `$select` `$skip` 、 `$top` 。
@@ -58,6 +58,8 @@ GET /print/printers/{id}/taskTriggers
 ### <a name="request"></a>请求
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_printer_tasktriggers"
@@ -65,6 +67,20 @@ GET /print/printers/{id}/taskTriggers
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/{id}/taskTriggers
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-printer-tasktriggers-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-printer-tasktriggers-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-printer-tasktriggers-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

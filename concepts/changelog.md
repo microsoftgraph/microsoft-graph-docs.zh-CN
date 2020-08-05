@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 184116a0e81552cf4e6be6234e4685d13e73142c
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: f4e4923fbc90de444f390bf55f7c568e911c5ca6
+ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434856"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "46539106"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -27,8 +27,8 @@ ms.locfileid: "45434856"
 | 添加项 | v1.0 | 添加了基于 [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0) 的 [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-1.0) 实体，此外，还包括 **proposedNewTime** 和 **responseType** 属性。 |
 | 添加项 | v1.0 | 向 [attendee](/graph/api/resources/attendee?view=graph-rest-1.0) 复杂类型添加了 **proposedNewTime** 属性。 |
 
-
 ### <a name="change-notifications"></a>更改通知
+
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 删除 | Beta 和 v1.0 | 已删除从 [changeNotification](/graph/api/resources/changenotification) 类型中错误引入的 **sequenceNumber** 属性。|
@@ -40,6 +40,21 @@ ms.locfileid: "45434856"
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | beta | 为会议添加了 [Update onlineMeeting](/graph/api/onlinemeeting-update?view=graph-rest-beta) 操作。|
 | 添加项 | beta | [状态](/graph/api/resources/presence)资源现支持[更改通知](/graph/webhooks)。 |
+
+### <a name="cloud-communications--call-records"></a>云通信 | 通话记录
+
+将 PSTN 和直接路由通话报告添加到 Microsoft Graph (beta)。
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|添加项| beta |API 已添加至 [获取 PSTN 通话报告](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) 以及 [获取直接路由报告](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta)。|
+|添加项| beta |添加的新实体：<br /><li>[pstnCallLogRow](/graph/api/resources/callrecords-pstncalllogrow?view=graph-rest-beta)</li> <li>[directRoutingLogRow](/graph/api/resources/callrecords-directroutinglogrow?view=graph-rest-beta).</li>|
+
+### <a name="compliance--ediscovery"></a>合规性 | 电子数据展示
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | beta | 引入了合规性电子数据展示 API，包括[ediscoveryCase](/graph/api/resources/ediscoverycase?view=graph-rest-beta)、 [reviewSet](/graph/api/resources/reviewset?view=graph-rest-beta)、 [reviewSetQuery](/graph/api/resources/reviewsetquery?view=graph-rest-beta)和操作。 |
 
 ### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
 
@@ -88,7 +103,8 @@ ms.locfileid: "45434856"
 
 | **更改类型** | **版本** | **说明**                                                                                                                                                     |
 | :-------------- | :---------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 添加项        | beta        | 向 [`educationSynchronizationProfile`](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta) 资源添加了新的 `expirationDate` 属性。 |
+| 添加项        | beta        | 向[`educationSynchronizationProfile`](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta)资源添加了新 **expirationDate** 属性。 |
+| 添加             | beta        | 新 **externalSourceDetail** 属性已添加到 [educationSchool](/graph/api/resources/educationSchool?view=graph-rest-beta)、 [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta)、 [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) 资源 |
 
 ### <a name="extensions--schema-extensions"></a>扩展|架构扩展
 
@@ -110,7 +126,9 @@ ms.locfileid: "45434856"
 | Addition | beta | 添加了 [entitlementManagementSettings](/graph/api/resources/entitlementmanagementsettings?view=graph-rest-beta) 实体。 |
 | 添加项 | v1.0 | 添加了 [identitySecurityDefaultsEnforcementPolicy API](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-1.0)，它表示 Azure Active Directory 安全默认值策略。|
 | 添加项        | v1.0        | 向 [servicePrincipal](/graph/api/serviceprincipal-delta) 添加了 [delta 查询](delta-query-overview.md)功能。 |
+| 添加项 | beta | [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta) 已添加到权利管理。  |
 | 添加项        | v1.0        | 为 [oauth2PermissionGrant](/graph/api/oauth2Permissiongrant-delta) 添加了 [delta 查询](delta-query-overview.md)功能。 |
+| 添加项 | Beta | 已将新属性 **isAssignableToRole** 添加到 [组](/graph/api/resources/group?view=graph-rest-beta)。|
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 | **更改类型** | **版本** | **说明**                  |
@@ -119,6 +137,9 @@ ms.locfileid: "45434856"
 | 新增 | beta | 向 [conditionalaccessgrantcontrols](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta) 实体添加了 **passwordChange** 授权控件。 |
 | 添加项 | v1.0 | 添加了新实体类型：<br/>[conditionalAccessPolicy](/graph/api/resources/conditionalAccessPolicy)<br/>
 | 添加项 | v1.0 | 新增了复杂类型：<br/>[conditionalAccessSessionControl](/graph/api/resources/conditionalAccessSessionControl)<br/>[applicationEnforcedRestrictionsSessionControl](/graph/api/resources/applicationEnforcedRestrictionsSessionControl)<br/>[cloudAppSecuritySessionControl](/graph/api/resources/cloudAppSecuritySessionControl)<br/>[signInFrequencySessionControl](/graph/api/resources/signInFrequencySessionControl)<br/>[persistentBrowserSessionControl](/graph/api/resources/persistentBrowserSessionControl)<br/>[conditionalAccessSessionControls](/graph/api/resources/conditionalAccessSessionControls)<br/>[conditionalAccessApplications](/graph/api/resources/conditionalAccessApplications)<br/>[conditionalAccessUsers](/graph/api/resources/conditionalAccessUsers)<br/>[conditionalAccessPlatforms](/graph/api/resources/conditionalAccessPlatforms)<br/>[conditionalAccessLocations](/graph/api/resources/conditionalAccessLocations)<br/>[conditionalAccessConditionSet](/graph/api/resources/conditionalAccessConditionSet)<br/>[conditionalAccessGrantControls](/graph/api/resources/conditionalAccessGrantControls)<br/>|
+| 添加项 | v1.0 | 添加了 [namedLocation API](/graph/api/resources/namedLocation?view=graph-rest-v1.0)，这表示 Azure AD 条件访问中的已命名位置。 |
+|添加项|beta|已添加 [openIDConnectProvider](/graph/api/resources/openidconnectprovider?view=graph-rest-beta) 复杂类型 [availableprovidertypes](/graph/api/identityprovider-list-availableprovidertypes?view=graph-rest-beta) 方法和 [claimsMapping](/graph/api/resources/claimsmapping?view=graph-rest-beta) 属性。|
+|更改|beta|更新了[identityProvider](/graph/api/resources/identityprovider?view=graph-rest-beta) 实体和 [创建](/graph/api/identityprovider-post-identityproviders?view=graph-rest-beta)、[列表](/graph/api/identityprovider-list?view=graph-rest-beta)、[获取](/graph/api/identityprovider-get?view=graph-rest-beta)、[更新](/graph/api/identityprovider-update?view=graph-rest-beta)、[删除](/graph/api/identityprovider-delete?view=graph-rest-beta) 和 [发布](/graph/api/identityprovider-post-identityproviders?view=graph-rest-beta) 操作， 以包含 OpenID Connect 提供程序。|
 | 添加项 | v1.0 | 添加了 [namedLocation API](/graph/api/resources/namedLocation?view=graph-rest-1.0)，这表示 Azure AD 条件访问中的已命名位置。 |
 
 ### <a name="people-and-workplace-intelligence--insights"></a>人脉和工作场所智能|见解
@@ -134,17 +155,23 @@ ms.locfileid: "45434856"
 | 添加项 | beta | 已将 **profileCardProperties** 导航属性添加到 [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta) 实体。 |
 | 添加项 | beta | 添加了 **profileCardProperty** 实体和以下操作： <br/> [List](/graph/api/organizationsettings-list-profilecardproperties) <br/> [创建](/graph/api/organizationsettings-post-profilecardproperties) <br/> [获取](/graph/api/profilecardproperty-get?view=graph-rest-beta) <br/> [更新](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [删除](/graph/api/profilecardproperty-delete)。 |
 
+### <a name="sites-and-lists--taxonomy"></a>网站和列表 | 分类
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | beta | 引入了分类 API，包括 [termStore.store](/graph/api/resources/termstore-store?view=graph-rest-beta)、[termStore.term](/graph/api/resources/termstore-term?view=graph-rest-beta)、[termStore.set](/graph/api/resources/termstore-set?view=graph-rest-beta) 和 [termStore.relation](/graph/api/resources/termstore-relation?view=graph-rest-beta) 资源和相关方法。 |
+
 ### <a name="teamwork"></a>团队合作
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项 | beta、v1.0 | 添加了新权限 [TeamsAppInstallation.ReadForTeam](/graph/permissions-reference#Teams-app-installation-permissions)、[TeamsAppInstallation.ReadWriteForTeam](/graph/permissions-reference#Teams-app-installation-permissions)、[TeamsAppInstallation.ReadForTeam.All](/graph/permissions-reference#Teams-app-installation-permissions)、[TeamsAppInstallation.ReadWriteForTeam.All](/graph/permissions-reference#Teams-app-installation-permissions)。 |
-
+| 添加项 | beta | 添加了对频道和聊天邮件的[通知](/graph/api/subscription-post-subscriptions?view=graph-rest-beta)的委派权限支持。 |
 
 ### <a name="workbooks-and-charts"></a>工作簿和图表
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 |添加项|Beta 和 v1.0 |向 [Workbook](/graph/api/resources/workbook?view=graph-rest-beta) 实体添加了 [workbookOperation](/graph/api/resources/workbookoperation) 关系。 |
-|添加项|Beta 和 v1.0 |向 [Get workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) 实体添加了[Get workbookOperation](/graph/api/workbookoperation-get) 方法。 |
+|添加项|Beta 和 v1.0 |向 [Get workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) 实体添加了[Get workbookOperation](/graph/api/workbookoperation-get) 方法
 
 ## <a name="june-2020"></a>2020 年 6 月
 
@@ -375,7 +402,7 @@ ms.locfileid: "45434856"
 |:---|:---|:---|
 |添加项|beta|添加的新实体：<br/>[featureFlightedConfiguration](/graph/api/resources/intune-deviceconfig-featureflightedconfiguration?view=graph-rest-beta)<br/>|
 |添加项|beta|新增了复杂类型：<br/>[deviceHealthScriptBooleanParameter](/graph/api/resources/intune-devices-devicehealthscriptbooleanparameter?view=graph-rest-beta)<br/>[deviceHealthScriptDailySchedule](/graph/api/resources/intune-devices-devicehealthscriptdailyschedule?view=graph-rest-beta)<br/>[deviceHealthScriptHourlySchedule](/graph/api/resources/intune-devices-devicehealthscripthourlyschedule?view=graph-rest-beta)<br/>[deviceHealthScriptIntegerParameter](/graph/api/resources/intune-devices-devicehealthscriptintegerparameter?view=graph-rest-beta)<br/>[deviceHealthScriptParameter](/graph/api/resources/intune-devices-devicehealthscriptparameter?view=graph-rest-beta)<br/>[deviceHealthScriptRunOnceSchedule](/graph/api/resources/intune-devices-devicehealthscriptrunonceschedule?view=graph-rest-beta)<br/>[deviceHealthScriptRunSchedule](/graph/api/resources/intune-devices-devicehealthscriptrunschedule?view=graph-rest-beta)<br/>[deviceHealthScriptStringParameter](/graph/api/resources/intune-devices-devicehealthscriptstringparameter?view=graph-rest-beta)<br/>[deviceHealthScriptTimeSchedule](/graph/api/resources/intune-devices-devicehealthscripttimeschedule?view=graph-rest-beta)<br/>[macOSAppleEventReceiver](/graph/api/resources/intune-deviceconfig-macosappleeventreceiver?view=graph-rest-beta)<br/>[macOSPrivacyAccessControlItem](/graph/api/resources/intune-deviceconfig-macosprivacyaccesscontrolitem?view=graph-rest-beta)<br/>[macOSSystemExtension](/graph/api/resources/intune-deviceconfig-macossystemextension?view=graph-rest-beta)<br/>[macOSSystemExtensionTypeMapping](/graph/api/resources/intune-deviceconfig-macossystemextensiontypemapping?view=graph-rest-beta)<br/>|
-|添加|beta 版本|添加的新枚举类型：<br/>[androidDeviceOwnerEnrollmentProfileType](/graph/api/resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype?view=graph-rest-beta)<br/>[deviceManagementTemplateSubtype](/graph/api/resources/intune-deviceintent-devicemanagementtemplatesubtype?view=graph-rest-beta)<br/>[joinType](/graph/api/resources/intune-devices-jointype?view=graph-rest-beta)<br/>[macOSProcessIdentifierType](/graph/api/resources/intune-deviceconfig-macosprocessidentifiertype?view=graph-rest-beta)<br/>[macOSSystemExtensionType](/graph/api/resources/intune-deviceconfig-macossystemextensiontype?view=graph-rest-beta)<br/>|
+|添加|beta|添加的新枚举类型：<br/>[androidDeviceOwnerEnrollmentProfileType](/graph/api/resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype?view=graph-rest-beta)<br/>[deviceManagementTemplateSubtype](/graph/api/resources/intune-deviceintent-devicemanagementtemplatesubtype?view=graph-rest-beta)<br/>[joinType](/graph/api/resources/intune-devices-jointype?view=graph-rest-beta)<br/>[macOSProcessIdentifierType](/graph/api/resources/intune-deviceconfig-macosprocessidentifiertype?view=graph-rest-beta)<br/>[macOSSystemExtensionType](/graph/api/resources/intune-deviceconfig-macossystemextensiontype?view=graph-rest-beta)<br/>|
 |添加|beta|在 [mobileApp](/graph/api/resources/intune-shared-mobileapp?view=graph-rest-beta) 集合上添加了 [validateXml](/graph/api/intune-apps-mobileapp-validatexml?view=graph-rest-beta) 操作 |
 |添加|beta|在 [deviceManagementIntent](/graph/api/resources/intune-deviceintent-devicemanagementintent?view=graph-rest-beta) 上添加了 [createCopy](/graph/api/intune-deviceintent-devicemanagementintent-createcopy?view=graph-rest-beta) 操作 |
 |删除|beta|删除了以下实体：<br/>**comanagementEligibleDeviceEntity**<br/>**comanagementEligibleSummaryEntity**<br/>|
@@ -1210,7 +1237,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加|beta|向 [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript?view=graph-rest-beta) 实体添加了 **assignments**、**runSummary** 和 **deviceRunStates** 导航属性|
 |添加|beta|向 [deviceManagement](/graph/api/resources/intune-devices-devicemanagement?view=graph-rest-beta) 实体添加了 **deviceHealthScripts**、**userExperienceAnalyticsDevicePerformance**、**userExperienceAnalyticsRegressionSummary**、**userExperienceAnalyticsDeviceStartupHistory**、**groupPolicyMigrationReports** 和 **reports** 导航属性|
 |添加|beta|向 [iosDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-iosdevicefeaturesconfiguration?view=graph-rest-beta) 实体添加了 **singleSignOnExtensionPkinitCertificate** 导航属性|
-|添加|beta|向 [macOSDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-macosdevicefeaturesconfiguration?view=graph-rest-beta) 实体添加了 **singleSignOnExtensionPkinitCertificate** 导航属性|
+|添加项|beta|向 [macOSDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-macosdevicefeaturesconfiguration?view=graph-rest-beta) 实体添加了 **singleSignOnExtensionPkinitCertificate** 导航属性|
 |添加|beta|向 [auditActor](/graph/api/resources/intune-auditing-auditactor?view=graph-rest-beta) 复杂类型添加了 **scopeTags** 属性|
 |添加|beta|向 [deviceOperatingSystemSummary](/graph/api/resources/intune-devices-deviceoperatingsystemsummary?view=graph-rest-beta) 复杂类型添加了 **androidDedicatedCount**、**androidDeviceAdminCount**、**androidFullyManagedCount** 和 **androidWorkProfileCount** 属性|
 |添加|beta|向 [win32LobAppAssignmentSettings](/graph/api/resources/intune-shared-win32lobappassignmentsettings?view=graph-rest-beta) 复杂类型添加了 **restartSettings** 和 **installTimeSettings** 属性|
@@ -3850,7 +3877,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | beta        | 向 [BooleanColumn][BooleanColumn-beta] 类型添加了 **outputType** 属性。 |
 | 添加项        | beta        | 新增了复杂类型：[ContentTypeInfo][ContentTypeInfo-beta]、[ContentTypeOrder][ContentTypeOrder-beta]、[CurrencyColumn][CurrencyColumn-beta] 和 [SystemFacet][SystemFacet-beta]。 |
 | 添加项        | beta        | 向 [ListInfo][ListInfo-beta] 复杂类型添加了 **contentTypesEnabled** 属性。 |
-| 添加        | beta        | 向 [LookupColumn][LookupColumn-beta] 复杂类型添加了 **allowUnlimitedLength** 属性。 |
+| 添加项        | beta        | 向 [LookupColumn][LookupColumn-beta] 复杂类型添加了 **allowUnlimitedLength** 属性。 |
 | 更改          | beta        | 在 [LookupColumn][LookupColumn-beta] 复杂类型上将 **allowMultipleValue** 属性重命名为 **allowMultipleValues**。 |
 | 更改          | beta        | 在 [PersonOrGroupColumn][PersonOrGroupColumn-beta] 复杂类型上将 **chooseFrom** 属性重命名为 **chooseFromType**。 |
 | 删除        | beta        | 在 [NumberColumn][NumberColumn-beta] 复杂类型上删除了 **locale** 属性。 |

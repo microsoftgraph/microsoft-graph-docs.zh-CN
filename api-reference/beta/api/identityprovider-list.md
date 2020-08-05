@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 640844dd4d1a60b5a4c5864c9ea7d34fe01faabb
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 9c0944cf6dc195c8bdca924e3ccb9130daed50bb
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509721"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46566743"
 ---
 # <a name="list-identityproviders"></a>列出 identityProvider
 
@@ -54,7 +54,7 @@ GET /identityProviders
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `200 OK` 响应正文中返回响应代码和[Identityprovider.read.all](../resources/identityprovider.md)和[openIdConnectProvider](../resources/openIdConnectProvider.md)的集合（仅适用于 Azure AD B2C）对象。
+如果成功，此方法仅在 `200 OK` 响应正文中返回响应代码和[Identityprovider.read.all](../resources/identityprovider.md)和[OpenIdConnectProvider](../resources/openIdConnectProvider.md) (集合的 Azure AD B2C) 对象。
 
 ## <a name="example"></a>示例
 
@@ -62,6 +62,8 @@ GET /identityProviders
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_identityprovider"
@@ -71,6 +73,20 @@ GET /identityProviders
 ``` http
 GET https://graph.microsoft.com/beta/identityProviders
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-identityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

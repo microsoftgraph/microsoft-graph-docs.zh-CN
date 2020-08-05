@@ -1,18 +1,18 @@
 ---
-title: 更新 profileCardProperty
+title: Update profileCardProperty
 description: 更新 profileCardProperty 对象的属性。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 122b8c0007067dafd2f7326cffc1b4e3b1697890
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: ecc539254a4d5b909b6a912a7b902c926d447c5d
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123843"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46565840"
 ---
-# <a name="update-profilecardproperty"></a>更新 profileCardProperty
+# <a name="update-profilecardproperty"></a>Update profileCardProperty
 
 命名空间：microsoft.graph
 
@@ -54,7 +54,7 @@ PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/pr
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |批注|profileCardAnnotation 集合| 包含管理员已选择指定的任何可选或本地化标签。|
-|directoryPropertyName|String|包含用于在配置文件卡片上呈现的目录属性的名称。 |
+|directoryPropertyName|字符串|包含用于在配置文件卡片上呈现的目录属性的名称。 |
 
 ## <a name="response"></a>响应
 
@@ -91,6 +91,14 @@ Content-type: application/json
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-profilecardproperty-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-profilecardproperty-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-profilecardproperty-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

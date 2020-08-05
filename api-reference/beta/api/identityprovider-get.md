@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 288c84eef3efc0ca8495b3d579a0e02607faf40d
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 8715f1f15f775b802ed4c5bc145cf5a0cffb8fc3
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509720"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46566793"
 ---
 # <a name="get-identityprovider"></a>获取 identityProvider
 
@@ -53,7 +53,7 @@ GET /identityProviders/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[Identityprovider.read.all](../resources/identityprovider.md)或[openIdConnectProvider](../resources/openidconnectprovider.md) （仅适用于 AZURE AD B2C）的 JSON 表示形式。
+如果成功，此方法 `200 OK` 仅在响应正文中返回响应代码和[Identityprovider.read.all](../resources/identityprovider.md)或[openIdConnectProvider](../resources/openidconnectprovider.md) (的 JSON 表示形式（仅适用于 Azure AD B2C) ）。
 
 ## <a name="examples"></a>示例
 
@@ -63,6 +63,8 @@ GET /identityProviders/{id}
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_identityprovider"
@@ -72,6 +74,20 @@ GET /identityProviders/{id}
 ``` http
 GET https://graph.microsoft.com/beta/identityProviders/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-identityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -95,7 +111,7 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
-### <a name="example-2-retrieves-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>示例2：检索特定**openIDConnectProvider** （仅适用于 AZURE AD B2C）
+### <a name="example-2-retrieves-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>示例2：仅检索 Azure AD B2C) 的特定**openIDConnectProvider** (
 
 #### <a name="request"></a>请求
 
