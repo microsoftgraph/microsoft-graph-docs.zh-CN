@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 525f3819a68e79648494f692bb5d79e6cbef2dcd
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: fe9e9ff4015fac8298c1de523d463f96d633b9b3
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35725680"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46570144"
 ---
 ```javascript
 
@@ -17,12 +17,11 @@ const client = Client.init(options);
 
 const dismiss = {
   userIds: [
-    "04487ee0-f4f6-4e7f-8999-facc5a30e232",
-    "13387ee0-f4f6-4e7f-8999-facc5120e345"
+    "04487ee0-f4f6-4e7f-8999-facc5a30e232"
   ]
 };
 
-let res = await client.api('/riskyUsers/dismiss')
+let res = await client.api('/identityProtection/riskyUsers/dismiss')
     .version('beta')
     .post(dismiss);
 
