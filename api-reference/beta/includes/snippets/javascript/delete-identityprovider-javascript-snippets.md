@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 05f9dfbc3e04ddf3bfa9c0c22dd910e1560a3b24
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: d347badf1fb43a705edb8c925aeffc928389030f
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35705352"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46566805"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identityProviders/Amazon-OAuth')
+let res = await client.api('/identityProviders/{id}')
     .version('beta')
     .delete();
 
