@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b385c8ce1c86a6dee3116afd68681470097bbc48
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 1bb1ae728498c79cfe06efabe27b3986f8cdee4c
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384510"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46567343"
 ---
 # <a name="update-ipnamedlocation"></a>更新 ipNamedlocation
 
@@ -50,8 +50,8 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|String|位置的人可读名称。|
-|ipRanges|[ipRange](../resources/iprange.md) 集合|来自 IETF RFC5962 的 IPv4 CIDR 格式（1.2.3.4/32）或任何允许的 IPv6 格式的 IP 地址范围列表。|
-|isTrusted|布尔值|`true`如果此位置是明确信任的，则该值为。|
+|ipRanges|[ipRange](../resources/iprange.md) 集合|IPv4 CIDR 格式的 IP 地址范围列表 (1.2.3.4/32) 或来自 IETF RFC5962 的任何允许的 IPv6 格式。|
+|isTrusted|Boolean|`true`如果此位置是明确信任的，则该值为。|
 
 ## <a name="response"></a>响应
 
@@ -63,6 +63,8 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_ipnamedlocation"
@@ -85,6 +87,24 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-ipnamedlocation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-ipnamedlocation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-ipnamedlocation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-ipnamedlocation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

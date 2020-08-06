@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 91c297d9f82940e1578a088755144469690d33dc
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: e5c73b039ec2939505367d4faad9a34f332b3c12
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384496"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46567091"
 ---
 # <a name="update-countrynamedlocation"></a>更新 countryNamedLocation
 
@@ -49,9 +49,9 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|countriesAndRegions|String collection|由 ISO 3166-2 指定的两个字母格式的国家/地区和/或地区列表。|
+|countriesAndRegions|String 集合|由 ISO 3166-2 指定的两个字母格式的国家/地区和/或地区列表。|
 |displayName|String|位置的人可读名称。|
-|includeUnknownCountriesAndRegions|布尔值|值是 `true` 如果未映射到国家或地区的 IP 地址应包含在指定的位置。|
+|includeUnknownCountriesAndRegions|Boolean|值是 `true` 如果未映射到国家或地区的 IP 地址应包含在指定的位置。|
 
 ## <a name="response"></a>响应
 
@@ -63,6 +63,8 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_countrynamedlocation"
@@ -82,6 +84,24 @@ Content-type: application/json
     "includeUnknownCountriesAndRegions": false
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-countrynamedlocation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-countrynamedlocation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-countrynamedlocation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-countrynamedlocation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
