@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 2f743bccb17b44ffd53b583532d5d503c2d5919c
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: 93f86256e1e3a136bf9ea3f83bfd143614a96f62
+ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543371"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46566156"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "43543371"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[用户](user.md)日历或 Office 365 [组](group.md)日历中的事件。
+[用户](user.md)日历或 Microsoft 365 [组](group.md)默认日历中的事件。
 
 **事件**中包含的最大与会者人数，以及发送自 Exchange Online 邮箱的 [eventMessage](eventmessage.md) 中的收件人数上限都是 500 人。 有关详细信息，请参阅[发送限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits)。
 
