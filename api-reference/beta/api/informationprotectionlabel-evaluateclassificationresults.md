@@ -5,16 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 56e7c98ab4659723cecc6f20282eb5550fa2b709
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c73b28646291f8927629f2b00b4fae0f8bc8d2e9
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446361"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589282"
 ---
 # <a name="informationprotectionlabel-evaluateclassificationresults"></a>informationProtectionLabel: evaluateClassificationResults
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,9 +44,9 @@ ms.locfileid: "42446361"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :------------------------------------------ |
-| 委派（工作或学校帐户）     | InformationProtectionPolicy。请阅读            |
+| 委派（工作或学校帐户）     | InformationProtectionPolicy.Read            |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用程序                            | InformationProtectionPolicy        |
+| 应用程序                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -71,11 +71,11 @@ POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
 | 参数             | 类型                                                                    | 说明                                                                                                                                                                                                                                                                           |
 | :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | contentInfo           | [contentInfo](../resources/contentInfo.md)                              | 提供有关内容格式、内容状态和现有[元数据](../resources/keyvaluepair.md)的详细信息，作为键/值对。                                                                                                                                                   |
-| classificationResults | [classificationResult](../resources/classificationresult.md)集合 | 包含由数据分类终结点返回的一组分类结果。 Classificaiton 信息用于根据 Office 365 安全与合规中心中的 Microsoft 信息保护策略标签配置确定适当的标签。 |
+| classificationResults | [classificationResult](../resources/classificationresult.md)集合 | 包含由数据分类终结点返回的一组分类结果。 分类信息用于根据 Office 365 安全与合规中心中的 Microsoft 信息保护策略标签配置确定适当的标签。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和新的[informationProtectionAction](../resources/informationprotectionaction.md)集合对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的[informationProtectionAction](../resources/informationprotectionaction.md)集合对象。
 
 ## <a name="examples"></a>示例
 

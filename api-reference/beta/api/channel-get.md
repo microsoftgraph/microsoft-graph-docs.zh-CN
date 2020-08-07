@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3d327042486f1d5fe29a86f8e65b58908f8f9931
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 631b592dc75bc34d462fe27fee674f94035c1ab5
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491621"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589227"
 ---
 # <a name="get-channel"></a>获取频道
 
@@ -38,7 +38,6 @@ ms.locfileid: "44491621"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}
-
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数

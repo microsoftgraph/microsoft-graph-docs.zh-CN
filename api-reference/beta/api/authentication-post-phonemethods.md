@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2bd29ee6e2f78e8864bce6a09cac456c4ab5ce6a
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+ms.openlocfilehash: a855289f058454c0e7ff1fb301349f9e49ee12e6
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429582"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589228"
 ---
 # <a name="create-phoneauthenticationmethod"></a>创建 phoneAuthenticationMethod
 
@@ -20,7 +20,7 @@ ms.locfileid: "44429582"
 
 添加新的[电话身份验证方法](../resources/phoneauthenticationmethod.md)。 用户的每种类型只能有一个电话，在**phoneType**属性中捕获。 这意味着， `mobile` 向具有预先存在的手机的用户添加电话将会 `mobile` 失败。 此外，在添加电话之前，用户必须始终具有 `mobile` 电话 `alternateMobile` 。
 
-通过添加电话号码，可以在 Azure 多重身份验证（MFA）和自助服务密码重置（SSPR）（如果已启用）中使用。
+通过添加电话号码，可以在 Azure 多重身份验证 (MFA) 和自助服务密码重置 (SSPR) （如果已启用）中使用。
 
 此外，如果用户启用了策略以使用 SMS 登录并添加了一个 `mobile` 号码，则系统会尝试注册该号码以在该系统中使用。
 
@@ -28,11 +28,11 @@ ms.locfileid: "44429582"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 作用于自助的权限（从最高特权到最高特权） | 对其他用户的权限（从最低到最高特权）|
+| 权限类型                        | 从最高特权到最高特权) 对自己 (的权限 | 对其他人进行操作的权限 (从至少到最高特权) |
 |:---------------------------------------|:-------------------------|:-----------------|
 | 委派（工作或学校帐户）     | 不支持。 | UserAuthenticationMethod |
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| Application                            | 不支持。 | 不支持。 |
+| 应用程序                            | 不支持。 | 不支持。 |
 
 对于在其他用户上执行管理的委派方案，管理员需要[以下角色之一](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
@@ -58,7 +58,7 @@ POST /users/{id}/authentication/phoneMethods
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md)对象的 JSON 表示形式。 JSON 必须包括 `phoneNumber` and `phoneType` ，但不能 `smsSignInState` （只读）。
+在请求正文中，提供[phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md)对象的 JSON 表示形式。 JSON 必须包括 `phoneNumber` 和 `phoneType` ，但不 `smsSignInState` 是只读) 的 (。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
@@ -87,7 +87,7 @@ Content-type: application/json
 
 {
   "phoneNumber": "+1 2065555555",
-  "phoneType": "mobile",
+  "phoneType": "mobile"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

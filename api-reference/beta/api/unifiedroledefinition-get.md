@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 91b9097fffc8951c20c568fbe976e372655d671b
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 56409c083c8c4b2926fdc05bbf9ed18c3992e431
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218946"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589296"
 ---
 # <a name="get-unifiedroledefinition"></a>获取 unifiedRoleDefinition
 
@@ -20,7 +20,7 @@ ms.locfileid: "43218946"
 
 检索[unifiedRoleDefinition](../resources/unifiedRoleDefinition.md)对象的属性和关系。 当前 "目录" 是唯一受支持的 RBAC 应用程序。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -35,12 +35,12 @@ ms.locfileid: "43218946"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /roleManagement/{rbacApplication}/roleDefinitions/{id}
+GET /roleManagement/directory/roleDefinitions/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /roleManagement/{rbacApplication}/roleDefinitions/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[unifiedRoleDefinition](../resources/unifiedroledefinition.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[unifiedRoleDefinition](../resources/unifiedroledefinition.md)对象。
 
 ## <a name="example"></a>示例
 

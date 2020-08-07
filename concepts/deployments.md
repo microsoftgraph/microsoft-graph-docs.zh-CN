@@ -2,12 +2,12 @@
 title: 区域云部署
 description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。
 author: arpitha-dhanapathi
-ms.openlocfilehash: 4e9456bdc63ff8fea0f4751c2c3fb5fdc5274422
-ms.sourcegitcommit: 90aaba4e965945cb6550cf625cbc03287f39e531
+ms.openlocfilehash: 7693df9b66905c70ad0a75e88b5c9f605fe96857
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148510"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589261"
 ---
 # <a name="national-cloud-deployments"></a>区域云部署
 
@@ -29,7 +29,7 @@ ms.locfileid: "45148510"
 
 ## <a name="app-registration-and-token-service-root-endpoints"></a>应用注册和令牌服务根终结点
 
-在调用 Microsoft Graph Api 之前，应先注册您的应用程序并获取一个令牌。 下表列出了 Azure Active Directory （Azure AD）终结点的基 Url，这些终结点用于注册应用程序并获取每个国家/地区云的令牌。
+在调用 Microsoft Graph Api 之前，应先注册您的应用程序并获取一个令牌。 下表列出了 Azure AD) 终结点的 Azure Active Directory (的基 Url，以注册应用程序并获取每个国家/地区云的令牌。
 
 | 国家云 | Azure AD 门户终结点| Azure AD 终结点|
 |---------------------------|----------------|----------------|
@@ -49,7 +49,7 @@ ms.locfileid: "45148510"
 |---------------------------|----------------|----------------|
 | Microsoft Graph 全局服务 | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
 | 适用于美国政府 L4 的 Microsoft Graph | https://graph.microsoft.us | 不支持。 |
-| Microsoft Graph for 美国政府版 L5 （DOD） | https://dod-graph.microsoft.us | 不支持。 |
+| 适用于美国政府版 L5 (DOD) 的 Microsoft Graph | https://dod-graph.microsoft.us | 不支持。 |
 | Microsoft Graph 德国 | https://graph.microsoft.de | 不支持。 |
 | 由世纪互联运营的 Microsoft Graph 中国 | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
 
@@ -81,23 +81,23 @@ ms.locfileid: "45148510"
 | 安全性 | ✔ | ✔ | ✔ |
 | SharePoint| ✔ | ✔ | ✔ |
 | Teams | ✔ | ✔ | ✔ |
-| 规划器|✔ |✔ |✔ |
+| Planner|✔ |✔ |✔ |
 | 报告  |➖| ✔ |➖|
 | 组织联系人  |✔| ➖ |➖|
 | 应用程序  |✔| ➖ |➖|
 | 服务主体  |✔| ➖ |➖|
 | 更改通知（Webhook）  | ✔ |✔ |✔* |
-| Delta 查询 | ➖ | ✔ | ➖ |
+| Delta 查询 | ✔ | ✔ | ➖ |
 | 目录架构扩展 |✔|➖|➖|
 | 开放类型扩展|➖|➖|➖|
   
-Microsoft 云中国和 Microsoft 云德国的预览（在终结点上）中提供了以下 Microsoft Graph 功能 `/beta` （对于美国政府版，这些功能在 Microsoft 云中仅适用于美国政府的1.0 版终结点）：
+以下 Microsoft Graph 功能在 Microsoft 云中国和 Microsoft 云德国的终结点) 的 "预览" (中可用。 `/beta` 这些功能在 Microsoft 云中仅适用于美国政府版) 的 (v1.0 终结点：
 
 * 组织联系人
 * 应用程序
 * 服务主体
 
-(*)仅对 Exchange 和 OneDrive 服务的有限支持。 Azure AD services 不受支持。 
+ ( * 仅 ) 对 Exchange 和 OneDrive 服务的有限支持。 Azure AD services 不受支持。 
 
 > [!IMPORTANT]
 > 全局服务特定区域中的某些服务和功能在所有国家/地区群中可能不可用。 若要了解哪些服务可用，请参阅[地区提供的产品](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast)。
