@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 183742e6f6402b6ba00a749f80ae934a421ea1a4
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: 1b7bb4d4b9540deb60c064c75e67ccfcad008de0
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427107"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589128"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
@@ -74,7 +74,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
 ### <a name="request"></a>请求
-在下面的示例中，登录用户对指定事件的响应是暂定的，将**sendResponse** paremeter 设置为 true，并在**proposedNewTime**参数中包含一个替代时间。
+在下面的示例中，登录用户对指定事件的响应是暂定的，将**sendResponse**参数设置为 true，并在**proposedNewTime**参数中包含一个替代时间。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
