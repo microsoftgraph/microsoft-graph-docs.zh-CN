@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: fb555f40b448f50cf1e0a2a548b37ac5c32cfeab
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: 85c3a540c6aa2f0c7f3b00bf86a3e727997743b3
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524350"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589142"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -18,7 +18,10 @@ ms.locfileid: "46524350"
 > _预览_状态下的功能（包括 API 和工具）可能会发生更改，恕不另行通知，有些功能可能永远不会提升为正式发布 (GA) 状态。 不要在成品应用中使用预览功能。
 
 ## <a name="july-2020-new-and-generally-available"></a>2020 年 7 月：新版本和正式版
-      
+
+### <a name="calendar"></a>日历
+正式发布一项功能，它允许组织者接受备选会议时间提案，并允许受邀者在[暂时接受](/graph/api/event-tentativelyaccept?view=graph-rest-1.0)或[拒绝](/graph/api/event-decline?view=graph-rest-1.0)事件时[为会议建议新时间](outlook-calendar-meeting-proposals.md)。
+
 ### <a name="change-notifications"></a>更改通知
 已删除从 [changeNotification](/graph/api/resources/changenotification) 类型中错误引入的 **sequenceNumber** 资源。
 
@@ -43,7 +46,16 @@ ms.locfileid: "46524350"
 ## <a name="july-2020-new-in-preview-only"></a>2020 年 7 月：预览版新增功能
 
 ### <a name="cloud-communications"></a>云通信
-订阅有关 Microsoft Teams 上用户可用性更改的通知，如[状态](/graph/api/resources/presence?view=graph-rest-beta)资源所示。
+- 使用[更新](/graph/api/onlinemeeting-update?view=graph-rest-beta)操作来更新[联机会议](/graph/api/resources/onlinemeeting?view=graph-rest-beta)的 **startDateTime**、**endDateTime**、**participants** 或 **subject** 属性。
+- 订阅有关 Microsoft Teams 上用户可用性更改的通知，如[状态](/graph/api/resources/presence?view=graph-rest-beta)资源所示。
+
+### <a name="cloud-communications--call-records"></a>云通信 | 通话记录
+- [获取](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta)公用电话交换网 (PSTN) 通话的记录。
+- [获取](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta)直接路由通话的记录。
+
+### <a name="compliance--ediscovery"></a>合规性 | 电子数据展示
+首次推出的[电子数据展示事例](/graph/api/resources/ediscoverycase?view=graph-rest-beta)包含可在法律案件中作为证据的保管人、保留、集合、管理审阅集和导出。
+应用现在可以对收集用于诉讼、调查或法规请求的[审阅集数据](/graph/api/resources/reviewset?view=graph-rest-beta)进行[查询](/graph/api/resources/reviewsetquery?view=graph-rest-beta)和挑选。 这一首次推出的内容是 Microsoft 365 [高级电子数据展示](/microsoft-365/compliance/overview-ediscovery-20?view=o365-worldwide)的一部分。
 
 ### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
 - 使用应用程序权限 `Printer.ReadWrite.All` 和 [Internet 打印协议（IPP）编码](https://tools.ietf.org/html/rfc8010)至[更新打印机](/graph/api/printer-update?view=graph-rest-beta)。
@@ -54,6 +66,9 @@ ms.locfileid: "46524350"
 ### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 Intune [7 月](changelog.md#july-2020)试用版更新。
 
+### <a name="groups"></a>组
+使用 Microsoft 365 [组](/graph/api/resources/group?view=graph-rest-beta)的 **isAssignableToRole** 属性，并在创建组的过程中对其进行设置，以指示该组是否可以分配给 Azure AD 角色。 这[有助于在 Azure AD 中管理角色分配](/azure/active-directory/users-groups-roles/roles-groups-concept)，例如特权角色管理员或全局管理员可以创建 Microsoft 365 组并向该组分配 Azure AD 角色，而不是向单个用户分配这一角色，这样一来，用户加入该_组_后，他们会被间接分配既定角色。
+
 ### <a name="identity-and-access"></a>身份和访问
 - [获取访问令牌](/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta)，以授权 Azure AD 预配服务将用户预配到应用程序。
 - [获取](/graph/api/entitlementmanagementsettings-get?view=graph-rest-beta)或[更新](/graph/api/entitlementmanagementsettings-update?view=graph-rest-beta)权限管理设置，这些设置控制对组织内部和外部用户的组、应用程序和 SharePoint Online 网站的访问权限。 
@@ -61,6 +76,7 @@ Intune [7 月](changelog.md#july-2020)试用版更新。
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 - 将用户风险级别（`low`、`medium`、`high`、`none`）包含为应用 [条件访问策略](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta)的注意事项。
 - [使用密码更改作为授予控制](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta#special-considerations-when-using-passwordchange-as-a-control)，以便传递条件访问策略。
+- 在 Azure AD 租户和 Azure AD B2C 租户中，将 [OpenID Connect 提供程序](/graph/api/resources/openidconnectprovider?view=graph-rest-beta) (OIDC) 用作标识提供程序。 其 **claimsMapping** 属性允许 Azure AD 将 OIDC 提供程序的[声明映射](/graph/api/resources/claimsmapping?view=graph-rest-beta)到 Azure AD 可识别和使用的声明。
 
 ### <a name="people-and-workplace-intelligence--insights"></a>人脉和工作场所智能|见解
 在 Microsoft 365 中，对[项见解](/graph/api/resources/iteminsights?view=graph-rest-beta)的可用性和显示进行更[精细的隐私控制](insights-customize-item-insights-privacy.md)。 这些见解表示 OneDrive for Business 中的用户和文档之间的关系，并使用高级分析和机器学习技术进行计算。 
@@ -68,13 +84,13 @@ Intune [7 月](changelog.md#july-2020)试用版更新。
 ### <a name="people-and-workplace-intelligence--profile-card-customization"></a>人脉和工作区智能 | 个人资料卡片自定义
 管理员可以使用[个人资料卡属性](/graph/api/resources/profilecardproperty?view=graph-rest-beta) API，[自定义显示在组织个人资料卡上的属性](add-properties-profilecard.md)。
 
+### <a name="sites-and-lists"></a>网站和列表
+访问 SharePoint [术语库](/graph/api/resources/termstore-store?view=graph-rest-beta)分类系统，该系统的层次结构包括 [group](/graph/api/resources/termstore-group?view=graph-rest-beta)、[set](/graph/api/resources/termstore-set?view=graph-rest-beta) 和 [term](/graph/api/resources/termstore-term?view=graph-rest-beta) 资源，以及术语之间的 [relation](/graph/api/resources/termstore-relation?view=graph-rest-beta) 资源。
+
 ### <a name="workbooks-and-charts"></a>工作簿和图表
 [获取[工作簿](/graph/api/resources/workbook?view=graph-rest-beta)中长时间运行[操作](/graph/api/resources/workbookoperation?view=graph-rest-beta)的状态和任何结果](/graph/api/workbookoperation-get?view=graph-rest-beta)。
 
 ## <a name="june-2020-new-and-generally-available"></a>2020 年 6 月：新版本和正式版
-
-### <a name="calendar"></a>日历
-正式发布一项功能，它允许组织者接受备选会议时间提案，并允许受邀者在[暂时接受](/graph/api/event-tentativelyaccept?view=graph-rest-1.0)或[拒绝](/graph/api/event-decline?view=graph-rest-1.0)事件时[为会议建议新时间](outlook-calendar-meeting-proposals.md)。
 
 ### <a name="cloud-communications--online-meeting"></a>云通信 | 联机会议
 - [创建联机会议](/graph/api/application-post-onlinemeetings?view=graph-rest-1.0) 以提供基于区域的加入信息时，请使用 `Accept-Language` HTTP 标头。

@@ -1,23 +1,15 @@
 ---
 title: Microsoft Graph 错误响应和资源类型
-description: "  "
+description: 本主题介绍了 Microsoft Graph 响应中可能返回的一些错误。
 localization_priority: Priority
-ms.openlocfilehash: cc3a0a0acacd7477c1cf686089c0235850059443
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.openlocfilehash: 2af128f0c15942d5e9b025de8eecbf9af7f07117
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091422"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589275"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Microsoft Graph 错误响应和资源类型
-
-<!--In this article:
-  
--   [Status code](#msg-status-code)
--   [Error resource type](#msg-error-resource-type)
--   [Code property](#msg-code-property)
-
-<a name="msg_error_response"> </a> -->
 
 使用标准的 HTTP 状态代码以及 JSON 错误响应对象返回 Microsoft Graph 中的错误。
 
@@ -114,6 +106,7 @@ ms.locfileid: "45091422"
 |:--------------------------|:--------------
 | **accessDenied**          | 调用方没有执行该操作的权限。 
 | **activityLimitReached**  | 应用或用户已被限制。
+| **extensionError**        | 邮箱位于本地，并且 Exchange Server 不支持联合的 Microsoft Graph 请求，或者[应用程序策略](/graph/auth-limit-mailbox-access)会阻止应用程序访问邮箱。
 | **generalException**      | 发生未指定错误。
 | **invalidRange**          | 指定的字节范围无效或不可用。
 | **invalidRequest**        | 该请求格式有误或不正确。

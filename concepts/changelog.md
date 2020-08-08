@@ -3,18 +3,26 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: f4e4923fbc90de444f390bf55f7c568e911c5ca6
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 9b9f961b3804d2833f15e8a510bed4f39e67c5c6
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539106"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589268"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
 此变更日志涵盖 Microsoft Graph v1.0 和 beta 中特定的 API 级别更改。
 
 有关这些 API 更改的意义以及最新工具、组件、指南和教程添加项的摘要信息，请参阅 [Microsoft Graph 新增功能](whats-new-overview.md)。
+
+## <a name="august-2020"></a>2020 年 8 月
+
+### <a name="change-notifications"></a>更改通知
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | v1.0 | 通过 [delta 查询](/graph/api/event-delta)更改跟踪适用于 Microsoft Graph for US Government。 |
 
 ## <a name="july-2020"></a>2020 年 7 月
 
@@ -344,11 +352,6 @@ ms.locfileid: "46539106"
 | 添加项 | beta | 向 [regionalAndLanguageSettings](/graph/api/resources/regionalandlanguagesettings) 资源添加了 [regionalAndLanguageSettings-update](/graph/api/regionalandlanguagesettings-update) 功能。|
 | “更改” | beta | 向 [userSettings](/graph/api/resources/userSettings) 资源添加了 [regionalAndLanguageSettings](/graph/resources/regionalandlanguagesettings) 关系。|
 | “更改” | beta | 更新了 [User](/graph/api/resources/user?view=graph-rest-beta) 资源的 [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) 和 [regionalAndLanguageSettings](/graph/api/resources/regionalandlanguagesettings) 之间的澄清。|
-
-### <a name="users--outlook-settings"></a>用户|Outlook 设置
-
-| 更改类型 | 版本 | 说明                              |
-| :---------- | :------ | :--------------------------------------- |
 |添加项 | Beta | 向 [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) 添加了 **userPurpose** 属性。 有关支持用例的相关信息，请参阅 [userPurpose 资源类型](/graph/api/resources/userPurpose?view=graph-rest-beta)。|
 |添加项 | Beta | 添加了新的 [userPurpose](/graph/api/resources/userPurpose?view=graph-rest-beta) 复杂类型。|
 
@@ -402,7 +405,7 @@ ms.locfileid: "46539106"
 |:---|:---|:---|
 |添加项|beta|添加的新实体：<br/>[featureFlightedConfiguration](/graph/api/resources/intune-deviceconfig-featureflightedconfiguration?view=graph-rest-beta)<br/>|
 |添加项|beta|新增了复杂类型：<br/>[deviceHealthScriptBooleanParameter](/graph/api/resources/intune-devices-devicehealthscriptbooleanparameter?view=graph-rest-beta)<br/>[deviceHealthScriptDailySchedule](/graph/api/resources/intune-devices-devicehealthscriptdailyschedule?view=graph-rest-beta)<br/>[deviceHealthScriptHourlySchedule](/graph/api/resources/intune-devices-devicehealthscripthourlyschedule?view=graph-rest-beta)<br/>[deviceHealthScriptIntegerParameter](/graph/api/resources/intune-devices-devicehealthscriptintegerparameter?view=graph-rest-beta)<br/>[deviceHealthScriptParameter](/graph/api/resources/intune-devices-devicehealthscriptparameter?view=graph-rest-beta)<br/>[deviceHealthScriptRunOnceSchedule](/graph/api/resources/intune-devices-devicehealthscriptrunonceschedule?view=graph-rest-beta)<br/>[deviceHealthScriptRunSchedule](/graph/api/resources/intune-devices-devicehealthscriptrunschedule?view=graph-rest-beta)<br/>[deviceHealthScriptStringParameter](/graph/api/resources/intune-devices-devicehealthscriptstringparameter?view=graph-rest-beta)<br/>[deviceHealthScriptTimeSchedule](/graph/api/resources/intune-devices-devicehealthscripttimeschedule?view=graph-rest-beta)<br/>[macOSAppleEventReceiver](/graph/api/resources/intune-deviceconfig-macosappleeventreceiver?view=graph-rest-beta)<br/>[macOSPrivacyAccessControlItem](/graph/api/resources/intune-deviceconfig-macosprivacyaccesscontrolitem?view=graph-rest-beta)<br/>[macOSSystemExtension](/graph/api/resources/intune-deviceconfig-macossystemextension?view=graph-rest-beta)<br/>[macOSSystemExtensionTypeMapping](/graph/api/resources/intune-deviceconfig-macossystemextensiontypemapping?view=graph-rest-beta)<br/>|
-|添加|beta|添加的新枚举类型：<br/>[androidDeviceOwnerEnrollmentProfileType](/graph/api/resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype?view=graph-rest-beta)<br/>[deviceManagementTemplateSubtype](/graph/api/resources/intune-deviceintent-devicemanagementtemplatesubtype?view=graph-rest-beta)<br/>[joinType](/graph/api/resources/intune-devices-jointype?view=graph-rest-beta)<br/>[macOSProcessIdentifierType](/graph/api/resources/intune-deviceconfig-macosprocessidentifiertype?view=graph-rest-beta)<br/>[macOSSystemExtensionType](/graph/api/resources/intune-deviceconfig-macossystemextensiontype?view=graph-rest-beta)<br/>|
+|添加|beta 版本|添加的新枚举类型：<br/>[androidDeviceOwnerEnrollmentProfileType](/graph/api/resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype?view=graph-rest-beta)<br/>[deviceManagementTemplateSubtype](/graph/api/resources/intune-deviceintent-devicemanagementtemplatesubtype?view=graph-rest-beta)<br/>[joinType](/graph/api/resources/intune-devices-jointype?view=graph-rest-beta)<br/>[macOSProcessIdentifierType](/graph/api/resources/intune-deviceconfig-macosprocessidentifiertype?view=graph-rest-beta)<br/>[macOSSystemExtensionType](/graph/api/resources/intune-deviceconfig-macossystemextensiontype?view=graph-rest-beta)<br/>|
 |添加|beta|在 [mobileApp](/graph/api/resources/intune-shared-mobileapp?view=graph-rest-beta) 集合上添加了 [validateXml](/graph/api/intune-apps-mobileapp-validatexml?view=graph-rest-beta) 操作 |
 |添加|beta|在 [deviceManagementIntent](/graph/api/resources/intune-deviceintent-devicemanagementintent?view=graph-rest-beta) 上添加了 [createCopy](/graph/api/intune-deviceintent-devicemanagementintent-createcopy?view=graph-rest-beta) 操作 |
 |删除|beta|删除了以下实体：<br/>**comanagementEligibleDeviceEntity**<br/>**comanagementEligibleSummaryEntity**<br/>|
@@ -502,8 +505,6 @@ ms.locfileid: "46539106"
 |添加项|beta|添加的新实体：<br/>[androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration?view=graph-rest-beta)<br/>[appleExpeditedCheckinConfigurationBase](/graph/api/resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase?view=graph-rest-beta)<br/>[groupPolicyOperation](/graph/api/resources/intune-grouppolicy-grouppolicyoperation?view=graph-rest-beta)<br/>[groupPolicyUploadedDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile?view=graph-rest-beta)<br/>[iosExpeditedCheckinConfiguration](/graph/api/resources/intune-deviceconfig-iosexpeditedcheckinconfiguration?view=graph-rest-beta)<br/>[userExperienceAnalyticsScoreHistory](/graph/api/resources/intune-devices-userexperienceanalyticsscorehistory?view=graph-rest-beta)<br/>|
 |Addition|beta|新增了复杂类型：<br/>[androidManagedStoreAppAssignmentSettings](/graph/api/resources/intune-apps-androidmanagedstoreappassignmentsettings?view=graph-rest-beta)<br/>[androidManagedStoreAppTrack](/graph/api/resources/intune-apps-androidmanagedstoreapptrack?view=graph-rest-beta)<br/>[appleAppListItem](/graph/api/resources/intune-deviceconfig-appleapplistitem?view=graph-rest-beta)<br/>[deviceHealthScriptRemediationHistory](/graph/api/resources/intune-devices-devicehealthscriptremediationhistory?view=graph-rest-beta)<br/>[deviceHealthScriptRemediationHistoryData](/graph/api/resources/intune-devices-devicehealthscriptremediationhistorydata?view=graph-rest-beta)<br/>[deviceManagementSettingAbstractImplementationConstraint](/graph/api/resources/intune-deviceintent-devicemanagementsettingabstractimplementationconstraint?view=graph-rest-beta)<br/>[groupPolicyUploadedLanguageFile](/graph/api/resources/intune-grouppolicy-grouppolicyuploadedlanguagefile?view=graph-rest-beta)<br/>|
 |Addition|beta 版本|添加的新枚举类型：<br/>[androidProfileApplicability](/graph/api/resources/intune-apps-androidprofileapplicability?view=graph-rest-beta)<br/>[groupPolicyOperationStatus](/graph/api/resources/intune-grouppolicy-grouppolicyoperationstatus?view=graph-rest-beta)<br/>[groupPolicyOperationType](/graph/api/resources/intune-grouppolicy-grouppolicyoperationtype?view=graph-rest-beta)<br/>[groupPolicyUploadedDefinitionFileStatus](/graph/api/resources/intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus?view=graph-rest-beta)<br/>|
-|添加项|beta|添加 [getAvailableExtensionProperties](o:getAvailableExtensionProperties?view=graph-rest-beta) 操作|
-|添加项|beta|添加 [getObjectsById](o:getObjectsById?view=graph-rest-beta) 操作|
 |添加项|beta|在 [groupPolicyUploadedDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile?view=graph-rest-beta) 上添加了 [addLanguageFiles](/graph/api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-addlanguagefiles?view=graph-rest-beta) 操作 |
 |添加项|beta|在 [groupPolicyUploadedDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile?view=graph-rest-beta) 上添加了 [removeLanguageFiles](/graph/api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-removelanguagefiles?view=graph-rest-beta) 操作 |
 |添加项|beta|在 [groupPolicyUploadedDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile?view=graph-rest-beta) 上添加了 [updateLanguageFiles](/graph/api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-updatelanguagefiles?view=graph-rest-beta) 操作 |
@@ -639,14 +640,12 @@ ms.locfileid: "46539106"
 |添加项|beta|添加的新实体：<br/>[deviceManagementAutopilotPolicyStatusDetail](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail?view=graph-rest-beta)<br/>[groupPolicyCategory](/graph/api/resources/intune-grouppolicy-grouppolicycategory?view=graph-rest-beta)<br/>|
 |添加项|beta|新增了复杂类型：<br/>[configurationManagerActionResult](/graph/api/resources/intune-devices-configurationmanageractionresult?view=graph-rest-beta)<br/>[deviceHealthScriptRemediationSummary](/graph/api/resources/intune-devices-devicehealthscriptremediationsummary?view=graph-rest-beta)<br/>[deviceManagementSettingSddlConstraint](/graph/api/resources/intune-deviceintent-devicemanagementsettingsddlconstraint?view=graph-rest-beta)<br/>[iosAzureAdSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-iosazureadsinglesignonextension?view=graph-rest-beta)<br/>[macOSAssociatedDomainsKeyValuePair](/graph/api/resources/intune-deviceconfig-macosassociateddomainskeyvaluepair?view=graph-rest-beta)<br/>|
 |添加项|beta 版本|添加的新枚举类型：<br/>[configurationManagerActionDeliveryStatus](/graph/api/resources/intune-devices-configurationmanageractiondeliverystatus?view=graph-rest-beta)<br/>[deviceManagementAutopilotPolicyComplianceStatus](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus?view=graph-rest-beta)<br/>[deviceManagementAutopilotPolicyType](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotpolicytype?view=graph-rest-beta)<br/>[win32LobAppDeliveryOptimizationPriority](/graph/api/resources/intune-apps-win32lobappdeliveryoptimizationpriority?view=graph-rest-beta)<br/>|
-|添加项|beta|添加 [getAvailableExtensionProperties](o:getAvailableExtensionProperties?view=graph-rest-beta) 操作|
-|添加项|beta|添加 [getObjectsById](o:getObjectsById?view=graph-rest-beta) 操作|
 |添加项|beta|在 [applePushNotificationCertificate](/graph/api/resources/intune-devices-applepushnotificationcertificate?view=graph-rest-beta) 上添加了 [generateApplePushNotificationCertificateSigningRequest](/graph/api/intune-devices-applepushnotificationcertificate-generateapplepushnotificationcertificatesigningrequest?view=graph-rest-beta?view=graph-rest-beta) 操作 |
 |添加项|beta|在 [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting?view=graph-rest-beta) 上添加了 [generateEncryptionPublicKey](/graph/api/intune-enrollment-deponboardingsetting-generateencryptionpublickey?view=graph-rest-beta?view=graph-rest-beta) 操作 |
 |添加项|beta|在 [deviceManagementReports](/graph/api/resources/intune-reporting-devicemanagementreports?view=graph-rest-beta) 上添加了 [getSettingNonComplianceReport](/graph/api/intune-reporting-devicemanagementreports-getsettingnoncompliancereport?view=graph-rest-beta?view=graph-rest-beta) 操作 |
-|添加项|beta|在 [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript?view=graph-rest-beta) 集合上添加了 [getRemediationSummary](o:getRemediationSummary:Collection(microsoft.graph.deviceHealthScript?view=graph-rest-beta)?view=graph-rest-beta) 函数 |
+|添加项|beta|在 [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript?view=graph-rest-beta) 集合上添加了 [getRemediationSummary](/graph/api/intune-devices-devicehealthscript-getremediationsummary?view=graph-rest-beta) 函数 |
 |删除|beta|删除了以下复杂类型：<br/>**groupPolicyObjectFile**<br/>|
-|删除|beta|在 [groupPolicyMigrationReport](/graph/api/resources/intune-gpanalyticsservice-grouppolicymigrationreport?view=graph-rest-beta) 集合上删除了 [createMigrationReport](o:createMigrationReport:Collection(microsoft.graph.groupPolicyMigrationReport?view=graph-rest-beta)?view=graph-rest-beta) 操作 |
+|删除|beta|在 [groupPolicyMigrationReport](/graph/api/resources/intune-gpanalyticsservice-grouppolicymigrationreport?view=graph-rest-beta) 集合上删除了 [createMigrationReport](/graph/api/intune-gpanalyticsservice-grouppolicymigrationreport-createmigrationreport?view=graph-rest-beta) 操作 |
 |删除|beta|从 [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) 实体中删除了 **groupPolicyObjectFiles** 属性|
 |添加项|beta|向 [deviceManagementAutopilotEvent](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotevent?view=graph-rest-beta) 实体添加了 **deviceId** 属性|
 |添加项|beta|向 [groupPolicyDefinition](/graph/api/resources/intune-grouppolicy-grouppolicydefinition?view=graph-rest-beta) 实体添加了 **groupPolicyCategoryId** 属性|
@@ -687,7 +686,7 @@ ms.locfileid: "46539106"
 | 添加项 | beta | 添加了 [identitySecurityDefaultsEnforcementPolicy API](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-beta)，它表示 Azure Active Directory 安全默认值策略。|
 | 添加项 | beta | 已将 `$top` 和 `$skiptoken` 过滤器支持添加至 [List provisioningObjectSummary](/api-reference/beta/api/provisioningobjectsummary-list) 方法的支持分页上。 |
 
-### <a name="identity-and-access--conditional-access"></a>身份和访问 | 条件访问
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
@@ -827,7 +826,7 @@ ms.locfileid: "46539106"
 | 更改 | beta | 已使用请求程序、审批和审阅设置的附加属性更新了 [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta)。|
 | 添加项 | Beta 和 v1.0 | 添加了应用程序级和委派的 Policy.ReadWrite.ApplicationConfiguration 权限，以读取和写入有关应用程序配置策略的操作。|
 
-### <a name="identity-and-access--information-protection"></a>身份和访问 | 信息保护
+### <a name="security"></a>安全性
 
 | **更改类型** | **版本** | **说明**              |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -927,7 +926,7 @@ ms.locfileid: "46539106"
 |添加|beta|新增了复杂类型：<br/>[deviceManagementSettingFileConstraint](/graph/api/resources/intune-deviceintent-devicemanagementsettingfileconstraint?view=graph-rest-beta)<br/>[deviceManagementSettingProfileConstraint](/graph/api/resources/intune-deviceintent-devicemanagementsettingprofileconstraint?view=graph-rest-beta)<br/>[redirectSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-redirectsinglesignonextension?view=graph-rest-beta)<br/>[retireScheduledManagedDevice](/graph/api/resources/intune-deviceconfig-retirescheduledmanageddevice?view=graph-rest-beta)<br/>|
 |添加|beta 版本|添加的新枚举类型：<br/>[defenderRealtimeScanDirection](/graph/api/resources/intune-deviceconfig-defenderrealtimescandirection?view=graph-rest-beta)<br/>[managedAppDataIngestionLocation](/graph/api/resources/intune-mam-managedappdataingestionlocation?view=graph-rest-beta)<br/>[managedDeviceArchitecture](/graph/api/resources/intune-devices-manageddevicearchitecture?view=graph-rest-beta)<br/>[mdmSupportedState](/graph/api/resources/intune-gpanalyticsservice-mdmsupportedstate?view=graph-rest-beta)<br/>[scheduledRetireState](/graph/api/resources/intune-deviceconfig-scheduledretirestate?view=graph-rest-beta)<br/>|
 |添加|beta|在 [deviceCompliancePolicy](/graph/api/resources/intune-shared-devicecompliancepolicy?view=graph-rest-beta) 集合上添加了 [getDevicesScheduledToRetire](o:getDevicesScheduledToRetire:Collection(microsoft.graph.deviceCompliancePolicy)) 操作。 |
-|添加项|beta|在 [deviceCompliancePolicy](/graph/api/resources/intune-shared-devicecompliancepolicy?view=graph-rest-beta) 集合上添加了 [setScheduledRetireState](o:setScheduledRetireState:Collection(microsoft.graph.deviceCompliancePolicy)) 操作 |
+|添加项|beta|在 [deviceCompliancePolicy](/graph/api/resources/intune-shared-devicecompliancepolicy?view=graph-rest-beta) 集合上添加了 [setScheduledRetireState](/graph/api/intune-deviceconfig-devicecompliancepolicy-setscheduledretirestate?view=graph-rest-beta) 操作 |
 |添加|beta|对 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 新增了 [wipe](/graph/api/intune-devices-manageddevice-wipe) 操作 |
 |删除|beta|删除了 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 上的[擦除](/graph/api/intune-devices-manageddevice-wipe)操作 |
 |添加|beta|向 [androidCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidcompliancepolicy?view=graph-rest-beta) 实体添加了 **advancedThreatProtectionRequiredSecurityLevel** 和 **securityBlockDeviceAdministratorManagedDevices** 属性|
@@ -972,7 +971,7 @@ ms.locfileid: "46539106"
 | 添加项 | beta | 添加了新的实体类型 [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta)。 |
 |添加项|beta、v1.0|添加了以下支持：当应用程序无法访问响应集中的某些类型时，返回有限的信息。 有关更多详细信息，请参阅[为不可访问的成员对象返回有限的信息](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects)。|
 
-### <a name="identity-and-access--information-protection"></a>身份和访问 | 信息保护
+### <a name="security"></a>安全性
 
 | **更改类型** | **版本** | **说明**              |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1028,7 +1027,7 @@ ms.locfileid: "46539106"
 |:----------------|:------------|:-----------------------------------------|
 | 添加项        | Beta  | 增加了[更新会议室或会议室列表](/graph/api/resources/place-get?view=graph-rest-beta)的能力。|
 
-### <a name="cloud-communications--calls-and-online-meetings"></a>云通信 | 电话和网络会议
+### <a name="cloud-communications--call"></a>云通信 | 呼叫
 
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
@@ -1106,7 +1105,7 @@ ms.locfileid: "46539106"
 | 添加项 | v1.0 | 添加了[组](/graph/api/resources/group?view=graph-rest-1.0)资源的 [checkMemberObjects](/graph/api/group-checkmemberobjects?view=graph-rest-1.0) 操作。 |
 | 添加 | v1.0 | 添加了[用户](/graph/api/resources/user?view=graph-rest-1.0)资源的 [checkMemberObjects](/graph/api/user-checkmemberobjects?view=graph-rest-1.0) 操作。 |
 
-### <a name="identity-and-access--conditional-access"></a>身份和访问 | 条件访问
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
@@ -1114,7 +1113,7 @@ ms.locfileid: "46539106"
 | 添加项 | beta | 增加了对“仅报告”状态的支持：`enabledForReportingButNotEnforced`。|
 | 更改 | beta | 更新了对条件访问策略和命名位置执行写操作所需的权限。|
 
-### <a name="identity-and-access--information-protection"></a>身份和访问 | 信息保护
+### <a name="security"></a>安全性
 
 | **更改类型** | **版本** | **说明**              |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1287,7 +1286,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加 | v1.0 | 添加了新的复杂类型 [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-1.0)。 |
 | 添加 | v1.0 | 在 [organization](/graph/api/resources/organization?view=graph-rest-1.0) 资源上为 **certificateBasedAuthConfiguration** 添加了新的关系。 这将支持 [Azure Active Directory 中基于证书的身份验证](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)。|
 
-### <a name="identity-and-access--conditional-access"></a>身份和访问 | 条件访问
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
@@ -1295,7 +1294,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加 | Beta | 新增了复杂类型：<br/>[conditionalAccessSessionControl](/graph/api/resources/conditionalAccessSessionControl)<br/>[applicationEnforcedRestrictionsSessionControl](/graph/api/resources/applicationEnforcedRestrictionsSessionControl)<br/>[cloudAppSecuritySessionControl](/graph/api/resources/cloudAppSecuritySessionControl)<br/>[signInFrequencySessionControl](/graph/api/resources/signInFrequencySessionControl)<br/>[persistentBrowserSessionControl](/graph/api/resources/persistentBrowserSessionControl)<br/>[conditionalAccessSessionControls](/graph/api/resources/conditionalAccessSessionControls)<br/>[conditionalAccessApplications](/graph/api/resources/conditionalAccessApplications)<br/>[conditionalAccessUsers](/graph/api/resources/conditionalAccessUsers)<br/>[conditionalAccessPlatforms](/graph/api/resources/conditionalAccessPlatforms)<br/>[conditionalAccessLocations](/graph/api/resources/conditionalAccessLocations)<br/>[conditionalAccessDeviceStates](/graph/api/resources/conditionalAccessDeviceStates)<br/>[conditionalAccessConditionSet](/graph/api/resources/conditionalAccessConditionSet)<br/>[conditionalAccessGrantControls](/graph/api/resources/conditionalAccessGrantControls)<br/>|
 | 添加 | Beta | 添加了 [namedLocation API](/graph/api/resources/namedLocation?view=graph-rest-beta)，这表示 Azure AD 条件访问中的已命名位置。 |
 
-### <a name="identity-and-access--information-protection"></a>身份和访问 | 信息保护
+### <a name="security"></a>安全性
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -1351,11 +1350,6 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项 | v1.0 | 为 [user](/graph/api/resources/user?view=graph-rest-1.0) 资源添加了新的 **lastPasswordChangeDateTime** 属性。 |
 | 添加项 | beta | 添加了 [user: reprocessLicenseAssignment API](/graph/api-reference/beta/api/user-reprocesslicense?view=graph-rest-beta)，它可用于重新处理[用户](/graph/api/resources/user?view=graph-rest-beta)的所有基于组的许可证分配。 |
-
-### <a name="users--outlook-settings"></a>用户|Outlook 设置
-
-| **更改类型** | **版本** | **说明**                  |
-|:----------------|:------------|:-----------------------------------------|
 | 添加项        | V1.0        | [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) 资源的 **dateFormat** 和 **timeFormat** 属性。 属性表示用户的首选日期和时间格式。|
 
 ## <a name="september-2019"></a>2019 年 9 月
@@ -1390,7 +1384,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加项|beta|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice) 上添加了 [triggerConfigurationManagerAction](/graph/api/intune-devices-manageddevice-triggerconfigurationmanageraction.md) 操作 |
 |添加项|beta|在 [appleUserInitiatedEnrollmentProfile](/graph/api/resources/intune-enrollment-appleuserinitiatedenrollmentprofile) 上添加了 [setPriority](/graph/api/intune-enrollment-appleuserinitiatedenrollmentprofile-setpriority.md) 操作 |
 |Addition|beta|在 [windowsFeatureUpdateProfile](/graph/api/resources/intune-softwareupdate-windowsfeatureupdateprofile) 上添加了 [assign](/graph/api/intune-softwareupdate-windowsfeatureupdateprofile-assign.md) 操作 |
-|添加项|beta|在 [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting) 集合上添加了 [getExpiringVppTokenCount](o:getExpiringVppTokenCount:Collection(microsoft.graph.depOnboardingSetting)) 函数 |
+|添加项|beta|在 [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting) 集合上添加了 [getExpiringVppTokenCount](/graph/api/intune-enrollment-deponboardingsetting-getexpiringvpptokencount?view=graph-rest-beta) 函数 |
 |添加项|beta|向 [androidDeviceOwnerCompliancePolicy](/graph/api/resources/intune-deviceconfig-androiddeviceownercompliancepolicy) 实体添加了 **deviceThreatProtectionEnabled**、**deviceThreatProtectionRequiredSecurityLevel**、**securityRequireSafetyNetAttestationBasicIntegrity** 和 **securityRequireSafetyNetAttestationCertifiedDevice** 属性|
 |添加项|beta|向 [androidForWorkGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration) 实体添加了 **workProfileAllowWidgets** 属性|
 |添加项|beta|向 [androidManagedStoreApp](/graph/api/resources/intune-apps-androidmanagedstoreapp) 实体添加了 **isPrivate** 和 **isSystemApp** 属性|
@@ -1434,7 +1428,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | beta        | 向 [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta) 添加了新属性 **closeDateTime**。                                                                |
 | 更改          | beta        | 在 [educationMakeCodeResource](/graph/api/resources/educationMakeCodeResource?view=graph-rest-beta) 资源中，已将属性名称 **mkcd** 更改为 **projectId** 并将 **url** 更改为 **hostWebUrl**。 |
 
-### <a name="cloud-communications--calls-and-online-meetings"></a>云通信 | 电话和网络会议
+### <a name="cloud-communications--online-meeting"></a>云通信 | 联机会议
 
 | **更改类型** | **版本** | **说明**                                                                                                                                                      |
 |:----------------|:------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1484,11 +1478,6 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | Beta | 向 [user](/graph/api/resources/user?view=graph-rest-beta) 资源添加了 **identities** 属性。 此属性表示此用户可用于登录的标识集。|
 | Addition        | v1.0          | 添加了 [translateExchangeIds](/graph/api/user-translateexchangeids?view=graph-rest-1.0) 方法。|
-
-### <a name="users--outlook-settings"></a>用户|Outlook 设置
-
-| **更改类型** | **版本** | **说明**                  |
-|:----------------|:------------|:-----------------------------------------|
 | 添加项        | Beta        | [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) 资源的 **dateFormat** 和 **timeFormat** 属性。 属性表示用户的首选日期和时间格式。|
 
 ## <a name="august-2019"></a>2019 年 8 月
@@ -1582,7 +1571,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | v1.0  | 向 [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) 实体添加了 **ownerPrincipalName** 属性。|
 | 添加项        | v1.0  | 已将 **office365Active** 和 **office365Inactive** 属性添加到 [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) 实体。|
 
-### <a name="social-and-workplace-intelligence"></a>社交和工作场所智能
+### <a name="people-and-workplace-intelligence"></a>人员和工作场所智能
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1703,7 +1692,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项 | beta | 添加了[userTeamwork](/graph/api/resources/userteamwork?view=graph-rest-beta)的资源。 |
 | 添加项 | beta | 向[用户](/graph/api/resources/user?view=graph-rest-beta)资源添加了新方法，为用户个人应用启用以下方法： <br>[列出为用户安装的应用](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta) <br>[为用户安装应用](/graph/api/user-add-teamsappinstallation?view=graph-rest-beta) <br>[为用户卸载应用](/graph/api/user-delete-teamsappinstallation?view=graph-rest-beta) <br>[升级为用户安装的应用](/graph/api/user-upgrade-teamsappinstallation?view=graph-rest-beta)|
 
-### <a name="calls-and-online-meetings"></a>呼叫和联机会议
+### <a name="cloud-communications"></a>云通信
 
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
@@ -1717,7 +1706,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="june-2019"></a>2019 年 6 月
 
-### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 
 |更改类型|版本|说明|
 |:---|:---|:---|
@@ -1750,7 +1739,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |Addition|beta|向 [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta) 枚举类型添加了 **sharedSecret** 成员|
 |添加项|beta|向 [windows10EditionType](/graph/api/resources/intune-deviceconfig-windows10editiontype?view=graph-rest-beta) 枚举类型添加了 **windows10Home**、**windows10HomeChina**、**windows10HomeN**、**windows10HomeSingleLanguage**、**windows10Mobile**、**windows10IoTCore** 和 **windows10IoTCoreCommercial** 成员|
 
-### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
+### <a name="identity-and-access"></a>身份和访问
 
 | **更改类型** | **版本** | **说明**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |:----------------|:------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1761,7 +1750,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | Addition        | v1.0        | 在[用户](/graph/api/resources/user?view=graph-rest-1.0)资源上添加了 **signInSessionsValidFromDateTime** 属性。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Addition        | v1.0        | 在[用户](/graph/api/resources/user?view=graph-rest-1.0)资源上添加了 [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) 操作。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
-### <a name="mail-outlook"></a>邮件 (Outlook)
+### <a name="mail"></a>邮件
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -1773,14 +1762,14 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | :-------------- | :---------- | :--------------------------------------- |
 |添加项|beta| 添加了用于检索用户注册和使用情况信息的新报表：<br/><ul><li>[reportroot-getcredentialusagesummary](/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) - 报告自助服务密码重置的使用情况。</li><li>[reportroot-getcredentialuserregistrationcount](/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) - 报告自助服务密码重置和多重身份验证的注册数量。</li><li>[reportroot-list-credentialuserregistrationdetails](/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) - 报告自助服务密码重置和多重身份验证的使用情况。</li><li>[reportroot-list-usercredentialusagedetails](/graph/api/resources/reportroot-list-usercredentialusagedetails?view=graph-rest-beta) - 报告某个用户的自助式密码重置的使用情况。</li></ul> |
 
-### <a name="sites-and-lists-sharepoint"></a>网站和列表 (SharePoint)
+### <a name="sites-and-lists"></a>网站和列表
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | Beta        | 向 [user](/graph/api/resources/user?view=graph-rest-beta) 实体集添加了 [followSite](/graph/api/follow-site?view=graph-rest-beta) 导航属性 |
 | 添加项        | Beta        | 向 [user](/graph/api/resources/user?view=graph-rest-beta) 实体集添加了 [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta) 导航属性 |
 
-### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
+### <a name="teamwork"></a>团队合作
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -1794,13 +1783,13 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="may-2019"></a>2019 年 5 月
 
-### <a name="calendar-mail-personal-contacts-outlook"></a>日历、邮件和个人联系人 (Outlook)
+### <a name="calendar-mail-personal-contacts"></a>日历、邮件和个人联系人
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | v1.0 和 beta | 添加了管理员限制应用程序仅访问特定邮箱的功能，即使应用程序已被授予邮件、邮箱设置、日历或联系人的应用程序权限。 有关更多详细信息，请参阅[将应用程序权限界定为特定 Exchange Online 邮箱](auth-limit-mailbox-access.md)。 |
 
-### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 |更改类型|版本|说明|
 |:---|:---|:---|
 |Addition|beta|添加的新实体：<br/>[deviceManagementDerivedCredentialSettings](/graph/api/resources/intune-deviceconfig-devicemanagementderivedcredentialsettings?view=graph-rest-beta)<br/>[iosDerivedCredentialAuthenticationConfiguration](/graph/api/resources/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration?view=graph-rest-beta)<br/>[securityBaselineCategoryStateSummary](/graph/api/resources/intune-deviceintent-securitybaselinecategorystatesummary?view=graph-rest-beta)<br/>|
@@ -1842,7 +1831,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加项|beta|向 [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta) 枚举类型添加了 **derivedCredential** 成员|
 |添加项|beta|向 [wiFiAuthenticationMethod](/graph/api/resources/intune-deviceconfig-wifiauthenticationmethod?view=graph-rest-beta) 枚举类型添加了 **derivedCredential** 成员|
 
-### <a name="files-onedrive"></a>文件 (OneDrive)
+### <a name="files"></a>文件
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | Beta | 已添加[捆绑](/graph/api/resources/bundle?view=graph-rest-beta)复杂类型 |
@@ -1866,14 +1855,14 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | beta | 已将 **assignedlabels** 属性添加到[组](/graph/api/resources/group?view=graph-rest-beta)实体。 此属性表示与组关联的敏感度标签对（标签 ID、标签名称）列表。
 
-### <a name="identity-and-access-azure-ad--identity-protection"></a>身份和访问（Azure AD）| 身份保护
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | Beta | 添加了 [riskyUserHistoryItem](/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta) 实体。 |
 | Addition | Beta | 添加了[列表历史记录](/graph/api/riskyuser-list-history?view=graph-rest-beta)操作。 |
 
-### <a name="mail-outlook"></a>邮件 (Outlook)
+### <a name="mail"></a>邮件
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -1892,7 +1881,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | v1.0       | 向[安全 API](/graph/api/resources/securescore-api-overview?view=graph-rest-1.0) 添加了安全功能分数 API，包括以下资源和操作：<br/>[secureScore](/graph/api/resources/securescore?view=graph-rest-1.0)（及相关实体）<br/>[列出 secureScores](/graph/api/securescores-list?view=graph-rest-1.0)<br/>[secureScoreControlProfile](/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0)<br/>[列出 secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0)<br/>[更新 secureScoreControlProfile](/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0) |
 
-### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
+### <a name="teamwork"></a>团队合作
 
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
@@ -1903,13 +1892,13 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="april-2019"></a>2019 年 4 月
 
-### <a name="change-notifications-webhooks"></a>更改通知（Webhook）
+### <a name="change-notifications"></a>更改通知
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | beta | 添加 `subscriptionRemoved` 和 `missed` 这两种类型的生命周期通知，它们可对 Outlook 资源使用。 订阅应用可执行适当的操作来缓解通知中断的问题。 有关更多详细信息，请参阅[减少 Outlook 资源丢失的订阅和通知](webhooks-outlook-authz.md)。|
 
-### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 |更改类型|版本|说明|
 |:---|:---|:---|
 |Addition|beta|添加的新实体：<br/>[androidDeviceOwnerCompliancePolicy](/graph/api/resources/intune-deviceconfig-androiddeviceownercompliancepolicy?view=graph-rest-beta)<br/><br/>[macOSExtensionsConfiguration](/graph/api/resources/intune-deviceconfig-macosextensionsconfiguration?view=graph-rest-beta)<br/><br/>[mobileAppDependency](/graph/api/resources/intune-apps-mobileappdependency?view=graph-rest-beta)<br/><br/>[mobileAppRelationship](/graph/api/resources/intune-apps-mobileapprelationship?view=graph-rest-beta)<br/><br/>|
@@ -1938,7 +1927,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |Addition|beta|向 [resultantAppStateDetail](/graph/api/resources/intune-apps-resultantappstatedetail?view=graph-rest-beta) 枚举类型添加了 **dependencyFailedToInstall**、**dependencyWithRequirementsNotMet**、**dependencyPendingReboot****dependencyWithAutoInstallDisabled**、**autoInstallDisabled**、**installingDependencies**、**powerShellScriptRequirementNotMet**、**registryRequirementNotMet** 和 **fileSystemRequirementNotMet**<br/> 成员|
 |添加项|beta|向 [win32LobAppFileSystemDetectionType](/graph/api/resources/intune-apps-win32lobappfilesystemdetectiontype?view=graph-rest-beta) 枚举类型添加了 **doesNotExist**<br/> 成员|
 
-### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 |更改类型|版本|说明|
 |:---|:---|:---|
 |Addition|beta|添加的新实体：<br/>[deviceManagementAbstractComplexSettingDefinition](/graph/api/resources/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition?view=graph-rest-beta)<br/>[deviceManagementAbstractComplexSettingInstance](/graph/api/resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance?view=graph-rest-beta)<br/>[deviceManagementBooleanSettingInstance](/graph/api/resources/intune-deviceintent-devicemanagementbooleansettinginstance?view=graph-rest-beta)<br/>[deviceManagementCollectionSettingDefinition](/graph/api/resources/intune-deviceintent-devicemanagementcollectionsettingdefinition?view=graph-rest-beta)<br/>[deviceManagementCollectionSettingInstance](/graph/api/resources/intune-deviceintent-devicemanagementcollectionsettinginstance?view=graph-rest-beta)<br/>[deviceManagementComplexSettingDefinition](/graph/api/resources/intune-deviceintent-devicemanagementcomplexsettingdefinition?view=graph-rest-beta)<br/>[deviceManagementComplexSettingInstance](/graph/api/resources/intune-deviceintent-devicemanagementcomplexsettinginstance?view=graph-rest-beta)<br/>[deviceManagementIntegerSettingInstance](/graph/api/resources/intune-deviceintent-devicemanagementintegersettinginstance?view=graph-rest-beta)<br/>[deviceManagementIntent](/graph/api/resources/intune-deviceintent-devicemanagementintent?view=graph-rest-beta)<br/>[deviceManagementIntentAssignment](/graph/api/resources/intune-deviceintent-devicemanagementintentassignment?view=graph-rest-beta)<br/>[deviceManagementIntentDeviceSettingStateSummary](/graph/api/resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary?view=graph-rest-beta)<br/>[deviceManagementIntentDeviceState](/graph/api/resources/intune-deviceintent-devicemanagementintentdevicestate?view=graph-rest-beta)<br/>[deviceManagementIntentDeviceStateSummary](/graph/api/resources/intune-deviceintent-devicemanagementintentdevicestatesummary?view=graph-rest-beta)<br/>[deviceManagementIntentSettingCategory](/graph/api/resources/intune-deviceintent-devicemanagementintentsettingcategory?view=graph-rest-beta)<br/>[deviceManagementIntentUserState](/graph/api/resources/intune-deviceintent-devicemanagementintentuserstate?view=graph-rest-beta)<br/>[deviceManagementIntentUserStateSummary](/graph/api/resources/intune-deviceintent-devicemanagementintentuserstatesummary?view=graph-rest-beta)<br/>[deviceManagementSettingCategory](/graph/api/resources/intune-deviceintent-devicemanagementsettingcategory?view=graph-rest-beta)<br/>[deviceManagementSettingDefinition](/graph/api/resources/intune-deviceintent-devicemanagementsettingdefinition?view=graph-rest-beta)<br/>[deviceManagementSettingInstance](/graph/api/resources/intune-deviceintent-devicemanagementsettinginstance?view=graph-rest-beta)<br/>[deviceManagementStringSettingInstance](/graph/api/resources/intune-deviceintent-devicemanagementstringsettinginstance?view=graph-rest-beta)<br/>[deviceManagementTemplate](/graph/api/resources/intune-deviceintent-devicemanagementtemplate?view=graph-rest-beta)<br/>[deviceManagementTemplateSettingCategory](/graph/api/resources/intune-deviceintent-devicemanagementtemplatesettingcategory?view=graph-rest-beta)<br/>[securityBaselineDeviceState](/graph/api/resources/intune-deviceintent-securitybaselinedevicestate?view=graph-rest-beta)<br/>[securityBaselineSettingState](/graph/api/resources/intune-deviceintent-securitybaselinesettingstate?view=graph-rest-beta)<br/>[securityBaselineState](/graph/api/resources/intune-deviceintent-securitybaselinestate?view=graph-rest-beta)<br/>[securityBaselineStateSummary](/graph/api/resources/intune-deviceintent-securitybaselinestatesummary?view=graph-rest-beta)<br/>[securityBaselineTemplate](/graph/api/resources/intune-deviceintent-securitybaselinetemplate?view=graph-rest-beta)<br/>|
@@ -1950,7 +1939,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加项|beta|向 [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta) 实体添加了 **intents**、**settingDefinitions**、**templates** 和 **categories** 导航属性|
 |添加项|beta|向 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 实体添加了 **securityBaselineStates** 导航属性|
 
-### <a name="files-sites-and-lists-onedrive-for-business-and-sharepoint"></a>文件、站点和列表（OneDrive for Business 和 SharePoint）
+### <a name="sites-and-lists"></a>网站和列表
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1968,7 +1957,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | v1.0        | 添加了 **access** 属性至 [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta) 复杂类型。 |
 | 添加项        | v1.0        | 添加了 **location** 属性至 [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta) 复杂类型。 |
 
-### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
+### <a name="identity-and-access"></a>身份和访问
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -1978,7 +1967,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | Addition | beta | 对[用户](/graph/api/resources/user?view=graph-rest-beta)资源添加 **revokeSignInSessions** 操作。 这是 **invalidateAllRefreshTokens** 属性的重命名，但两项服务操作将均受支持，以使客户端顺畅迁移。 将在接下来的几个月中删除旧的服务操作 **invalidateAllRefreshTokens**。 |
 | 添加项 | Beta |引入了新的资源类型[trustFrameworkPolicy](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta)以支持[Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview)。 此资源类型支持[创建](/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta)、[列表](/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta)、[获取](/graph/api/trustframeworkpolicy-get?view=graph-rest-beta)、[更新](/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta)和[删除](/graph/api/trustframerkpolicy-delete?view=graph-rest-beta)操作。|
 
-### <a name="mail-outlook"></a>邮件 (Outlook)
+### <a name="mail"></a>邮件
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -1986,7 +1975,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | Addition        | Beta          | 添加了[获取消息的 MIME 内容](outlook-get-mime-message.md)的功能。 |
 | 添加项        | Beta          | 向事件、消息、Outlook 任务或组帖子添加了[获取文件或项目附件的原始内容](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment)的功能。 |
 
-### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
+### <a name="teamwork"></a>团队合作
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -1999,7 +1988,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="march-2019"></a>2019 年 3 月
 
-### <a name="calendar-outlook"></a>日历 (Outlook)
+### <a name="calendar"></a>日历
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |添加项 | v1.0 | 添加了 [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0) 操作，以及 [freeBusyError](/graph/api/resources/freebusyerror?view=graph-rest-1.0)、[scheduleInformation](/graph/api/resources/scheduleinformation?view=graph-rest-1.0) 和 [scheduleItem](/graph/api/resources/scheduleitem?view=graph-rest-1.0) 复杂类型，来支持[获取给定时间内用户的空闲/忙碌、可用性信息、通讯组列表和资源](outlook-get-free-busy-schedule.md)。 |
@@ -2012,14 +2001,14 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |删除 | Beta | 枚举： <br> **addressType** <br> **availabilityStatus** |
 |新增 | Beta | 还原了以下复杂类型： <br> [attendeeAvailability](/graph/api/resources/attendeeavailability?view=graph-rest-beta) <br> [locationConstraint](/graph/api/resources/locationconstraint?view=graph-rest-beta) <br> [meetingTimeSuggestionsResult](/graph/api/resources/meetingtimesuggestionsresult?view=graph-rest-beta) <br>[timeConstraint](/graph/api/resources/timeconstraint?view=graph-rest-beta) |
 
-### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 
 |更改类型|版本|说明|
 |:---|:---|:---|
 |Addition|beta|添加的新实体：<br/>[windowsHealthMonitoringConfiguration](/graph/api/resources/intune-deviceconfig-windowshealthmonitoringconfiguration?view=graph-rest-beta)<br/>|
 |添加项|beta|新增了复杂类型：<br/>[windowsFirewallRule](/graph/api/resources/intune-deviceconfig-windowsfirewallrule?view=graph-rest-beta)<br/>|
 |Addition|beta 版本|添加的新枚举类型：<br/>[androidManagedAppSafetyNetAppsVerificationType](/graph/api/resources/intune-mam-androidmanagedappsafetynetappsverificationtype?view=graph-rest-beta)<br/>[androidManagedAppSafetyNetDeviceAttestationType](/graph/api/resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype?view=graph-rest-beta)<br/>[windowsAutopilotDeviceType](/graph/api/resources/intune-enrollment-windowsautopilotdevicetype?view=graph-rest-beta)<br/>[windowsFirewallRuleInterfaceTypes](/graph/api/resources/intune-deviceconfig-windowsfirewallruleinterfacetypes?view=graph-rest-beta)<br/>[windowsFirewallRuleNetworkProfileTypes](/graph/api/resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes?view=graph-rest-beta)<br/>[windowsFirewallRuleTrafficDirectionType](/graph/api/resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype?view=graph-rest-beta)<br/>[windowsHealthMonitoringScope](/graph/api/resources/intune-deviceconfig-windowshealthmonitoringscope?view=graph-rest-beta)<br/>[windowsUpdateNotificationDisplayOption](/graph/api/resources/intune-deviceconfig-windowsupdatenotificationdisplayoption?view=graph-rest-beta)<br/>|
-|Addition|beta|在 [importedDeviceIdentity](/graph/api/resources/intune-enrollment-importeddeviceidentity?view=graph-rest-beta) 集合上添加了 [searchExistingIdentities](o:searchExistingIdentities:Collection(microsoft.graph.importedDeviceIdentity)) 操作 |
+|Addition|beta|在 [importedDeviceIdentity](/graph/api/resources/intune-enrollment-importeddeviceidentity?view=graph-rest-beta) 集合上添加了 [searchExistingIdentities](/graph/api/intune-enrollment-importeddeviceidentity-searchexistingidentities?view=graph-rest-beta) 操作 |
 |添加项|beta|在 [windowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-windowsautopilotdeviceidentity?view=graph-rest-beta) 上添加了 [assignResourceAccountToDevice](/graph/api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice?view=graph-rest-beta) 操作 |
 |添加项|beta|在 [windowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-windowsautopilotdeviceidentity?view=graph-rest-beta) 上添加了 [unassignResourceAccountFromDevice](/graph/api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice?view=graph-rest-beta) 操作 |
 |删除|beta|删除了以下枚举类型：<br/>**defenderScheduleScanDay**<br/>|
@@ -2053,7 +2042,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项 | beta | 添加新的 [educationFormResource](/graph/api/resources/educationFormResource?view=graph-rest-beta) 资源。|
 | 添加项 | beta | 在 [educationAssignmentIndividualRecipient](/graph/api/resources/educationAssignmentIndividualRecipient?view=graph-rest-beta) 资源上添加 **recipients** 属性。|
 
-### <a name="files-onedrive-for-business"></a>文件 (OneDrive for Business)
+### <a name="files"></a>文件
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -2061,13 +2050,13 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加        | Beta        | 向 [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) DateTimeOffset 类型添加了 **expirationDateTime** 属性。 |
 | Addition        | Beta        | 向[driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) 字符串类型添加了 **password** 属性。 |
 
-### <a name="financials-dynamics-365-business-central"></a>财务 (Dynamics 365 Business Central)
+### <a name="financials"></a>财务
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项        | Beta          | 为 Dynamics 365 Business Central 添加了财务 API。 有关详细信息，请参阅[财务 API 参考](/graph/api/resources/dynamics-graph-reference?view=graph-rest-1.0)。|
 
-### <a name="identity-and-access-directory-apis"></a>身份和访问 (目录 API)
+### <a name="identity-and-access"></a>身份和访问
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2075,7 +2064,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项 | Beta 和 v1.0 | 添加[设备](/graph/api/resources/device?view=graph-rest-1.0)资源上的 **complianceExpirationDateTime**、**profileType** 和 **systemLabels** 属性。|
 | 添加项 | Beta 和 v1.0 | 添加[用户](/graph/api/resources/user?view=graph-rest-1.0)资源上的 **isResourceAccount** 属性。|
 
-### <a name="identity-and-access--identity-protection"></a>身份和访问 | 身份保护
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2083,7 +2072,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加项 |beta| 引入了[“删除危险用户”](/graph/api/resources/riskyusers-dismiss?view=graph-rest-beta)方法，此方法支持管理员在 Azure AD Identity Protection 中删除已被标记为存在风险的用户。 |
 |添加项 |beta| 向 [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-beta) 资源引入了 **isProcessing** 属性。 |
 
-### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
+### <a name="teamwork"></a>团队合作
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2093,7 +2082,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="february-2019"></a>2019 年 2 月
 
-### <a name="calendar-outlook"></a>日历 (Outlook)
+### <a name="calendar"></a>日历
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2107,7 +2096,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |新增 | Beta | 已将 **order** 属性添加到 [meetingTimeSuggestion](/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta) |
 |删除 | Beta | 删除了以下复杂类型： <br> **attendeeAvailability** <br> **locationConstraint** <br> **meetingTimeSuggestionsResult** <br>**timeConstraint** |
 
-### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 
 |更改类型|版本|说明|
 |:---|:---|:---|
@@ -2135,14 +2124,14 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加项 |beta|在 [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) 上引入了 relatedContacts 新属性。|
 |添加项 |v1.0|在 [educationUser](/graph/api/resources/educationUser?view=graph-rest-1.0) 上引入了 relatedContacts 新属性。|
 
-### <a name="files-onedrive-for-business"></a>文件 (OneDrive for Business)
+### <a name="files"></a>文件
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | Beta        | 向 [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) DateTimeOffset 类型添加了 **expirationDateTime** 属性。 |
 | Addition        | Beta        | 向[driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) 字符串类型添加了 **password** 属性。 |
 
-### <a name="identity-and-access-directory-apis"></a>身份和访问 (目录 API)
+### <a name="identity-and-access"></a>身份和访问
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2153,7 +2142,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 删除 | beta | 不再支持并已删除以下派生类型：**targetResourceDevice**、**targetResourceDirectory**、**targetResourceGroup**、**targetResourcePolicy**、**targetResourceRole**、**targetResourceServicePrincipal**、**targetResourceUser** 和 **targetResourceOther**。 |
 | 添加项 |beta | 在 [domain](/graph/api/resources/domain?view=graph-rest-beta) 资源上添加 **passwordNotificationWindowInDays** 和 **passwordValidityPeriodInDays** 属性。|
 
-### <a name="notes-onenote"></a>备注 (OneNote)
+### <a name="notes"></a>注释
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2167,7 +2156,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | Beta 版本       | 向[安全性 API](/graph/api/resources/security-api-overview?view=graph-rest-beta) 添加了安全操作 API，包括以下资源和操作：<br/>[securityAction](/graph/api/resources/securityaction?view=graph-rest-beta)（及相关实体）<br/> [获取 securityAction](/graph/api/securityaction-get?view=graph-rest-beta)<br/>[创建 securityAction](/graph/api/securityactions-post?view=graph-rest-beta)<br/>[列出 securityAction](/graph/api/securityactions-list?view=graph-rest-beta)<br/>[取消 securityAction](/graph/api/securityaction-cancelsecurityaction?view=graph-rest-beta)
 | 添加项        | Beta 版本        | 向警报引入了 [historyStates](/graph/api/resources/alerthistorystate?view=graph-rest-beta) 集合这一复杂类型。 </br>添加了 [updateAlerts](/graph/api/alert-updatealerts?view=graph-rest-beta) 功能，以便更新一个请求中的多个警报。 |
 
-### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
+### <a name="teamwork"></a>团队合作
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2181,7 +2170,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="january-2019"></a>2019 年 1 月
 
-### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 
 |更改类型|版本|说明|
 |:---|:---|:---|
@@ -2206,13 +2195,13 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加|beta|向 [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta) 实体添加了 **mobileAppTroubleshootingEvents** 导航属性|
 |添加|beta|向 [mobileAppTroubleshootingEvent](/graph/api/resources/intune-devices-mobileapptroubleshootingevent?view=graph-rest-beta) 实体添加了 **appLogCollectionRequests** 导航属性|
 
-### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
+### <a name="identity-and-access"></a>身份和访问
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |添加项 |v1.0|为了支持在 Azure AD B2C 租户中配置标识提供者，引入了新的资源类型 [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-1.0) 实体，以及[创建](/graph/api/identityprovider-post-identityproviders?view=graph-rest-1.0)、[列出](/graph/api/identityprovider-list?view=graph-rest-1.0)、[获取](/graph/api/identityprovider-get?view=graph-rest-1.0)、[更新](/graph/api/identityprovider-update?view=graph-rest-1.0)和[删除](/graph/api/identityprovider-delete?view=graph-rest-1.0)操作。|
 
-### <a name="identity-and-access-directory-apis"></a>身份和访问 (目录 API)
+### <a name="identity-and-access"></a>身份和访问
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2231,7 +2220,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |:----------------|:------------|:-----------------------------------------|
 | 添加项        | Beta  | 已将 **office365Active** 和 **office365Inactive** 属性添加到 [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) 实体。|
 
-### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
+### <a name="teamwork"></a>团队合作
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2240,7 +2229,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="december-2018"></a>2018 年 12 月
 
-### <a name="identity-and-access--data-policy-operation"></a>身份和访问|数据策略操作
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -2248,7 +2237,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加 |v1.0| 在 [users](/graph/api/resources/users?view=graph-rest-1.0) 上添加了 [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-1.0) 操作。 此操作将提交数据策略操作请求，以导出由 Microsoft 为用户存储的个人数据。 |
 |添加 |v1.0| 添加了方法 [dataPolicyOperations](/graph/api/datapolicyoperation-get?view=graph-rest-1.0)。 该方法将检索 dataPolicyOperation 对象的属性。|
 
-### <a name="identity-and-access-directory-apis"></a>身份和访问 (目录 API)
+### <a name="identity-and-access"></a>身份和访问
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2258,7 +2247,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加 | v1.0 | 添加了 `memberOf` 方法以获取[设备的](/graph/api/resources/device?view=graph-rest-1.0)直接[成员身份](/graph/api/device-list-memberOf?view=graph-rest-1.0)。 添加此方法是为了获取成员身份列表，包括嵌套成员身份。|
 | 更改    | Beta | 重新整理了[组织联系人](/graph/api/resources/orgcontact?view=graph-rest-beta)资源。 物理地址属性（`city`、`country`、`postalCode`、`streetAddress` 和 `state`）和 `officeLocation` 现在位于 `addresses` 集合（采用新的 [physicalOfficeAddress](/graph/api/resources/physicalofficeaddress?view=graph-rest-beta) 资源类型），`mobilePhone`、`businessPhones` 和 `faxNumber` 现在位于 `phones` 集合中。 还添加了 `companyName` 和 `imAddresses`|
 
-### <a name="identity-and-access--privileged-identity-management"></a>身份和访问|特权身份管理
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2276,7 +2265,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | Beta        | 引入了新的复杂类型 [complianceInformation](/graph/api/complianceInformation/team?view=graph-rest-beta)。|
 | 添加项        | Beta        | 引入了新的复杂类型 [certificationControl](/graph/api/certificationControl/team?view=graph-rest-beta)。|
 
-### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
+### <a name="teamwork"></a>团队合作
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2285,7 +2274,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加 |beta| 向 [channel](/graph/api/resources/channel?view=graph-rest-beta) 添加了 isFavoriteByDefault、email 和 webUrl 属性。|
 |添加项 |beta| 向 [team](/graph/api/resources/team?view=graph-rest-beta) 添加了 displayName 属性。|
 |添加项 |beta| 向 [team](/graph/api/resources/team?view=graph-rest-beta) 添加了 description 属性。|
-|添加 |beta| 向 [team](/graph/api/resources/team?view=graph-rest-beta) 添加了 classification 属性。|
+|添加项 |beta| 向 [team](/graph/api/resources/team?view=graph-rest-beta) 添加了 classification 属性。|
 |添加 |beta| 向 [team](/graph/api/resources/team?view=graph-rest-beta) 添加了 [specialization](/graph/api/resources/teamspecialization?view=graph-rest-beta) 属性。|
 |添加 |beta| 向 [team](/graph/api/resources/team?view=graph-rest-beta) 添加了 [visibility](/graph/api/resources/teamvisibilitytype?view=graph-rest-beta) 属性。|
 |添加 |beta| 向 [team](/graph/api/resources/team?view=graph-rest-beta) 添加了 [template](/graph/api/resources/teamstemplate?view=graph-rest-beta) 属性。|
@@ -2301,13 +2290,13 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="november-2018"></a>2018 年 11 月
 
-### <a name="identity-and-access--data-policy-operations"></a>身份和访问|数据策略操作
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | beta        | 向 [dataPolicyOperation](/graph/api/resources/dataPolicyOperation?view=graph-rest-beta) 添加了新的 **progress** 属性。 这用于指定操作的进度。
 
-### <a name="identity-and-access-directory-apis"></a>身份和访问 (目录 API)
+### <a name="identity-and-access"></a>身份和访问
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2325,7 +2314,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | :---------- | :----------------------------------------- | :--------------------------------------- |
 | 添加项    | 由世纪互联运营的 Microsoft Graph 中国中的 Beta 版本 | 添加了以下 API：<br>[getEmailActivityUserDetail](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta)<br>[getEmailActivityCounts](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta)<br>[getEmailActivityUserCounts](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta)<br>[getEmailAppUsageUserDetail](/graph/api/reportroot-getemailappusageuserdetail?view=graph-rest-beta)<br>[getEmailAppUsageAppsUserCounts](/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-beta)<br>[getEmailAppUsageUserCounts](/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-beta)<br>[getEmailAppUsageVersionsUserCounts](/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-beta)<br>[getMailboxUsageDetail](/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-beta)<br>[getMailboxUsageMailboxCounts](/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-beta)<br>[getMailboxUsageQuotaStatusMailboxCounts](/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-beta)<br>[getMailboxUsageStorage](/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-beta)<br>[getOffice365ActivationsUserDetail](/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-beta)<br>[getOffice365ActivationCounts](/graph/api/reportroot-getoffice365activationcounts?view=graph-rest-beta)<br>[getOffice365ActivationsUserCounts](/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-beta)<br>[getOffice365ActiveUserDetail](/graph/api/reportroot-getoffice365activeuserdetail?view=graph-rest-beta)<br>[getOffice365ActiveUserCounts](/graph/api/reportroot-getoffice365activeusercounts?view=graph-rest-beta)<br>[getOffice365ServicesUserCounts](/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-beta)<br>[getOffice365GroupsActivityDetail](/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-beta)<br> [getOffice365GroupsActivityCounts](/graph/api/reportroot-getoffice365groupsactivitycounts?view=graph-rest-beta)<br>[getOffice365GroupsActivityGroupCounts](/graph/api/reportroot-getoffice365groupsactivitygroupcounts?view=graph-rest-beta)<br>[getOffice365GroupsActivityStorage](/graph/api/reportroot-getoffice365groupsactivitystorage?view=graph-rest-beta)<br>[getOffice365GroupsActivityFileCounts](/graph/api/reportroot-getoffice365groupsactivityfilecounts?view=graph-rest-beta)<br>[getOneDriveActivityUserDetail](/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-beta)<br>[getOneDriveActivityUserCounts](/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-beta)<br>[getOneDriveActivityFileCounts](/graph/api/reportroot-getonedriveactivityfilecounts?view=graph-rest-beta)<br>[getOneDriveUsageAccountDetail](/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-beta)<br>[getOneDriveUsageAccountCounts](/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-beta)<br>[getOneDriveUsageFileCounts](/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-beta)<br>[getOneDriveUsageStorage](/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-beta)<br>[getSharePointActivityUserDetail](/graph/api/reportroot-getsharepointactivityuserdetail?view=graph-rest-beta)<br>[getSharePointActivityFileCounts](/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-beta)<br>[getSharePointActivityUserCounts](/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-beta)<br>[getSharePointActivityPages](/graph/api/reportroot-getsharepointactivitypages?view=graph-rest-beta)<br>[getSharePointSiteUsageDetail](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-beta)<br>[getSharePointSiteUsageFileCounts](/graph/api/reportroot-getsharepointsiteusagefilecounts?view=graph-rest-beta)<br>[getSharePointSiteUsageSiteCounts](/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-beta)<br>[getSharePointSiteUsageStorage](/graph/api/reportroot-getsharepointsiteusagestorage?view=graph-rest-beta)<br>[getSharePointSiteUsagePages](/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-beta)<br>[getSkypeForBusinessActivityUserDetail](/graph/api/reportroot-getskypeforbusinessactivityuserdetail?view=graph-rest-beta)<br>[getSkypeForBusinessActivityCounts](/graph/api/reportroot-getskypeforbusinessactivitycounts?view=graph-rest-beta)<br>[getSkypeForBusinessActivityUserCounts](/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-beta)<br>[getSkypeForBusinessDeviceUsageUserDetail](/graph/api/reportroot-getskypeforbusinessdeviceusageuserdetail?view=graph-rest-beta)<br>[getSkypeForBusinessDeviceUsageDistributionUserCounts](/graph/api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts?view=graph-rest-beta)<br>[getSkypeForBusinessDeviceUsageUserCounts](/graph/api/reportroot-getskypeforbusinessdeviceusageusercounts?view=graph-rest-beta)<br>[getSkypeForBusinessOrganizerActivityCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-beta)<br>[getSkypeForBusinessOrganizerActivityUserCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivityusercounts?view=graph-rest-beta)<br>[getSkypeForBusinessOrganizerActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivityminutecounts?view=graph-rest-beta)<br>[getSkypeForBusinessParticipantActivityCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivitycounts?view=graph-rest-beta)<br>[getSkypeForBusinessParticipantActivityUserCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivityusercounts?view=graph-rest-beta)<br>[getSkypeForBusinessParticipantActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivityminutecounts?view=graph-rest-beta)<br>[getSkypeForBusinessPeerToPeerActivityCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivitycounts?view=graph-rest-beta)<br>[getSkypeForBusinessPeerToPeerActivityUserCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-beta)<br>[getSkypeForBusinessPeerToPeerActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-beta)。 |
 
-### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
+### <a name="teamwork"></a>团队合作
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2363,7 +2352,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="october-2018"></a>2018 年 10 月
 
-### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 
 |更改类型|版本|说明|
 |:---|:---|:---|
@@ -2404,7 +2393,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加项|beta|向 [windowsMalwareNameCount](/graph/api/resources/intune-devices-windowsmalwarenamecount?view=graph-rest-beta) 复杂类型添加了 **lastUpdateDateTime** 属性|
 |添加项|beta|向 [windowsMalwareStateCount](/graph/api/resources/intune-devices-windowsmalwarestatecount?view=graph-rest-beta) 复杂类型添加了 **lastUpdateDateTime** 属性|
 
-### <a name="identity-and-access--audit-logs"></a>标识和访问|审核日志
+### <a name="reports"></a>报告
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2413,7 +2402,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加项 |beta| 在[登录 API](/graph/api/resources/signin?view=graph-rest-beta) 中引入了其他登录属性，包括 `authenticationProcessingDetails`、`originalRequestID`、`isInteractive`、`tokenIssuerName`、`tokenIssuerType`、`correlationId` 和 `processingTimeinMilliseconds`。|
 |删除   |beta| 删除了属性 `isRisky`。|
 
-### <a name="identity-and-access-directory-apis"></a>身份和访问 (目录 API)
+### <a name="identity-and-access"></a>身份和访问
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2425,13 +2414,13 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项 | Beta | 添加了 **licenseAssignmentState** 资源以获取[基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。|
 | 添加项 | Beta | 向 [Group](/graph/api/resources/group?view=graph-rest-beta) 实体添加了 **assignedLicenses**、**licenseProcessingState**、**hasMembersWithLicenseErrors** 和 **membersWithLicenseErrors** 属性以获取[基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。|
 
-### <a name="identity-and-access--identity-protection"></a>身份和访问 | 身份保护
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |添加项 |beta| 引入了 [riskyUsers API](/graph/api/resources/riskyuser?view=graph-rest-beta)，这表示 Azure AD 用户处于危险之中，可以通过 Azure AD Identity Protection 检测到。 |
 
-### <a name="identity-and-access--privileged-identity-management"></a>身份和访问|特权身份管理
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2440,7 +2429,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项 | beta | 为 [privilegedRoleSettings](/graph/api/resources/privilegedrolesettings?view=graph-rest-beta) 添加了 [Update](/graph/api/privilegedrolesettings-update?view=graph-rest-beta)|
 | 删除 |beta| 弃用[自激活角色分配](/graph/api/privilegedrole_selfactivate?view=graph-rest-beta)|
 
-### <a name="personal-contacts-outlook"></a>个人联系人 (Outlook)
+### <a name="personal-contacts"></a>个人联系人
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -2451,24 +2440,34 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |:------------|:--------|:-----------------------------------------|
 | Addition    | v1.0    | 向 [getSharePointSiteUsageDetail](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-1.0) 添加了 **Site ID** 属性。 |
 
-### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
+### <a name="teamwork"></a>团队合作
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |添加项|beta|向[存档团队](/graph/api/team-archive?view=graph-rest-beta)和[解档团队](/graph/api/team-unarchive?view=graph-rest-beta) API 添加了应用程序权限支持。|
 
-### <a name="track-changes"></a>跟踪更改
+### <a name="identity-and-access"></a>身份和访问
 
 | **更改类型** | **版本** | **说明**                  |
 |:------------|:--------|:-----------------------------------------|
 | 添加项    | Beta   | 为 [directoryObject](/graph/api/directoryobject-delta?view=graph-rest-beta) 添加了 [delta 查询](delta-query-overview.md)功能 |
-| 更改      | v1.0 和 beta  | 为[用户](/graph/api/user-delta?view=graph-rest-1.0)和[组](/graph/api/group-delta?view=graph-rest-1.0)返回仅在 JSON 响应中更改的属性的替代行为。 |
 | 添加项    | v1.0   | 为 [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) 添加了 [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) 函数，以支持[使用 delta 查询更改跟踪](delta-query-overview.md)。 |
 
+### <a name="users"></a>用户
+
+| **更改类型** | **版本** | **说明**                  |
+|:------------|:--------|:-----------------------------------------|
+| 更改      | v1.0 和 beta  | 为[用户](/graph/api/user-delta?view=graph-rest-1.0)返回仅在 JSON 响应中更改的属性的替代行为。 |
+
+### <a name="groups"></a>组
+
+| **更改类型** | **版本** | **说明**                  |
+|:------------|:--------|:-----------------------------------------|
+| 更改      | v1.0 和 beta  | 为[组](/graph/api/group-delta?view=graph-rest-1.0)返回仅在 JSON 响应中更改的属性的替代行为。 |
 
 ## <a name="september-2018"></a>2018 年 9 月
 
-### <a name="calls-and-online-meetings"></a>呼叫和联机会议
+### <a name="cloud-communications"></a>云通信
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -2481,13 +2480,13 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | Beta        | 添加了用于管理 Microsoft Teams 在线会议的[在线会议](/graph/api/resources/audioroutinggroup?view=graph-rest-beta)资源和 API。 最初，只有一个用于在线会议的 API，旨在[检索在线会议对象](/graph/api/onlinemeeting-get?view=graph-rest-beta)。 还添加了与会议相关的[音频会议信息](/graph/api/resources/audioconferencing?view=graph-rest-beta)的相关资源（例如，拨号 URL、密码和电话号码）。 |
 | 添加项        | Beta        | 许多呼叫和会议 API 需要时间来完成，因此为这些长时间运行的操作添加了资源：[特定于呼叫的操作](/graph/api/resources/commsoperation?view=graph-rest-beta)、[播放音频提示](/graph/api/resources/playpromptoperation?view=graph-rest-beta)和[录制](/graph/api/resources/recordoperation?view=graph-rest-beta)。  |
 
-### <a name="data-access-microsoft-graph-data-connect"></a>数据访问（Microsoft Graph 数据连接）
+### <a name="data-access"></a>数据访问
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |添加项         | 不适用| 引入了批量访问 Microsoft 365 数据的功能。 有关详细信息，请参阅 [Microsoft Graph 数据连接（预览）](data-connect-overview.md)。|
 
-### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 |更改类型|版本|说明|
 |:---|:---|:---|
 |Addition|v1.0|在 [managedDeviceMobileAppConfiguration](/graph/api/resources/intune-apps-manageddevicemobileappconfiguration?view=graph-rest-1.0) 上添加了 [assign](/graph/api/intune-apps-manageddevicemobileappconfiguration-assign?view=graph-rest-1.0) 操作 |
@@ -2530,7 +2529,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加项|beta|向 [androidWorkProfileVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidworkprofilevpnconnectiontype?view=graph-rest-beta) 枚举类型添加了 **paloAltoGlobalProtect** 成员|
 |添加项|beta|向 [deviceComplianceActionType](/graph/api/resources/intune-deviceconfig-devicecomplianceactiontype?view=graph-rest-beta) 枚举类型添加了 **remoteLock** 成员|
 
-### <a name="files-sites-and-lists-onedrive-for-business-and-sharepoint"></a>文件、站点和列表（OneDrive for Business 和 SharePoint）
+### <a name="files"></a>文件
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -2560,19 +2559,19 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | v1.0        | 在 [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) 实体上添加了 **preview** 操作 |
 | 添加项        | v1.0        | 添加了 [itemPreviewInfo](/graph/api/resources/itempreviewinfo?view=graph-rest-1.0) 复杂类型 |
 
-### <a name="financials-dynamics-365-business-central"></a>财务 (Dynamics 365 Business Central)
+### <a name="financials"></a>财务
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项        | Beta          | 为 Dynamics 365 Business Central 添加了财务 API。 有关详细信息，请参阅[财务 API 参考](/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta)
 
-### <a name="mail-outlook"></a>邮件 (Outlook)
+### <a name="mail"></a>邮件
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项        | v1.0 和 beta | [message](/graph/api/resources/message?view=graph-rest-1.0) 实体的 **** 属性现在消息创建上可写。 |
 
-### <a name="notifications-project-rome"></a>通知 (Project Rome)
+### <a name="user-notifications"></a>用户通知
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -2586,7 +2585,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | Beta       | 向[安全 API](/graph/api/resources/securescore-api-overview?view=graph-rest-beta) 添加了安全功能分数 API，包括以下资源和操作：<br/>[secureScores](/graph/api/resources/securescores?view=graph-rest-beta)（和相关实体）<br/>[列出 secureScores](/graph/api/securescores-list?view=graph-rest-beta)<br/>[secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta)<br/>[列出 secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta)<br/>[更新 secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta) |
 | 添加项        | Beta        | 引入了新的复杂类型 [secureScoreControlStateUpdate](/graph/api/resources/securescorecontrolstateupdate?view=graph-rest-beta) |
 
-### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
+### <a name="teamwork"></a>团队合作
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2604,13 +2603,13 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="august-2018"></a>2018 年 8 月
 
-### <a name="calendar-outlook"></a>日历 (Outlook)
+### <a name="calendar"></a>日历
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | Beta | 添加了 [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-beta) 操作，以及 [freeBusyError](/graph/api/resources/freebusyerror?view=graph-rest-beta)、[scheduleInformation](/graph/api/resources/scheduleinformation?view=graph-rest-beta) 和 [scheduleItem](/graph/api/resources/scheduleitem?view=graph-rest-beta) 复杂类型，来支持[获取给定时间内用户的空闲/忙碌、可用性信息、通讯组列表和资源](outlook-get-free-busy-schedule.md)。 |
 
-### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 
 |更改类型|版本|说明|
 |:---|:---|:---|
@@ -2690,7 +2689,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加项|beta|向 [wiFiSecurityType](/graph/api/resources/intune-deviceconfig-wifisecuritytype?view=graph-rest-beta) 枚举类型添加了 **wpa2Personal** 和 **wpa2Enterprise** 成员|
 |加|beta|向 [windowsMalwareCategory](/graph/api/resources/intune-devices-windowsmalwarecategory?view=graph-rest-beta) 枚举类型添加了 **enterpriseUnwantedSoftware**、**ransom** 和 **hipsRule** 成员|
 
-### <a name="identity-and-access-directory-apis"></a>身份和访问 (目录 API)
+### <a name="identity-and-access"></a>身份和访问
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2699,7 +2698,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项 | v1.0 | 向 [User](/graph/api/resources/user?view=graph-rest-1.0) 实体添加了 [onPremisesExtensionAttributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-1.0) 属性，其中包含 15 个自定义扩展属性。 对于 onPremisesSyncEnabled 用户，此组属性在本地 Active Directory 中进行管理，并同步到 Azure AD，且为只读。 对于只使用云的用户（其中 onPremisesSyncEnabled 为 false），可以在创建或更新期间设置这些属性。|
 |添加项|v1.0|向 [User](/graph/api/resources/user?view=graph-rest-1.0) 实体添加了 **onPremisesDomainName**、**onPremisesSamAccountName** 和 **onPremisesUserPrincipalName** 属性|
 
-### <a name="mail-outlook"></a>邮件 (Outlook)
+### <a name="mail"></a>邮件
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2737,7 +2736,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | beta       | 向 [vulnerabilityState](/graph/api/resources/vulnerabilitystate?view=graph-rest-beta) 添加了 **wasRunning** 属性。|
 |删除项|beta| 从 [vulnerabilityState](/graph/api/resources/vulnerabilitystate?view=graph-rest-beta) 删除了 **name** 属性。 |
 
-### <a name="track-changes"></a>跟踪更改
+### <a name="applications"></a>应用程序
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -2746,7 +2745,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="july-2018"></a>2018 年 7 月
 
-### <a name="change-notifications-webhooks"></a>更改通知（Webhook）
+### <a name="change-notifications"></a>更改通知
 | 更改类型 | 版本 | 说明                              |
 |:------------|:--------|:-----------------------------------------|
 | 重大更改 | Beta 和 v1.0 | 将驱动器根项的 [Webhook](/graph/api/resources/webhooks?view=graph-rest-1.0) [最长订阅有效期](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type)缩短至 3 天。 |
@@ -2757,19 +2756,19 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | :-------------- | :---------- | :--------------------------------------- |
 | 更改          | Beta        | [application](/graph/api/resources/application?view=graph-rest-beta) 和 [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) API 将在预览版 (beta) 中得到更新。 第一个更改集将于 2018 年 7 月 16 日应用。 这些更改包括属性重命名和重构。 在更改完成后，大部分现有属性才可用。 将会添加新属性。 这些更改在发布到 v1.0 之前将先在预览版 (beta) 中发布。 |
 
-### <a name="identity-and-access--synchronization"></a>身份和访问|同步
+### <a name="applications"></a>应用程序
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | Beta | 向 [sychronizationStatus](/graph/api/resources/synchronization-synchronizationstatus?view=graph-rest-beta) 添加了 **progress** 属性，以允许客户端监视同步作业的进度。|
 
-### <a name="personal-contacts-outlook"></a>个人联系人 (Outlook)
+### <a name="personal-contacts"></a>个人联系人
 | **更改类型** | **版本**   | **说明**                          |
 |:--------------- |:------------- |:---------------------------------------- |
 |添加项 |Beta | 添加了复杂类型 [typedEmailAddress](/graph/api/resources/typedemailaddress?view=graph-rest-beta)。 |
 |更改 | Beta | 已将 [contact](/graph/api/resources/contact?view=graph-rest-beta) 的 **emailAddresses** 属性的类型更改为 **typedEmailAddress** 实例集合。|
 
-### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
+### <a name="teamwork"></a>团队合作
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2808,7 +2807,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="june-2018"></a>2018 年 6 月
 
-### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 
 |更改类型|版本|说明|
 |:---|:---|:---|
@@ -2853,20 +2852,20 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加项|beta|向 [mobileAppActionType](/graph/api/resources/intune-troubleshooting-mobileappactiontype?view=graph-rest-beta) 枚举类型添加了 **userRequestedInstall** 成员|
 |添加项|beta|向 [windows10EditionType](/graph/api/resources/intune-deviceconfig-windows10editiontype?view=graph-rest-beta) 枚举类型添加了 **notConfigured** 成员
 
-### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
+### <a name="identity-and-access"></a>身份和访问
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | beta | 向 [Azure AD](/graph/api/resources/azure-ad-overview?view=graph-rest-beta) 添加了[访问评审](/graph/api/resources/accessreviews-root?view=graph-rest-beta)功能。 |
 
-### <a name="identity-and-access-directory-apis"></a>身份和访问 (目录 API)
+### <a name="identity-and-access"></a>身份和访问
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | 全部 | 新的应用程序权限 _Application.ReadWrite.All_ 和 _Application.ReadWrite.OwnedBy_，允许客户端应用创建、读取、更新和删除应用程序和服务主体，如[权限主题](permissions-reference.md#application-resource-permissions)中所述。 |
 | 添加项 | v1.0 | 向 [user](/graph/api/resources/user?view=graph-rest-1.0) 资源添加了 **ageGroup**、**legalAgeGroupClassification** 和 **ConsentRequiredForMinor** 属性
 
-### <a name="identity-and-access--privileged-identity-management"></a>身份和访问|特权身份管理
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2886,7 +2885,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | beta 版本        | 添加了新枚举类型：<br/>[alertFeedback](/graph/api/resources/alertfeedbackenumtype?view=graph-rest-beta)<br/>[alertStatus](/graph/api/resources/alertstatusenumtype?view=graph-rest-beta)<br/>[alertType](/graph/api/resources/alerttypeenumtype?view=graph-rest-beta)<br/>[applicationPermissionsRequired](/graph/api/resources/applicationpermissionsrequiredenumtype?view=graph-rest-beta)<br/>[logonType](/graph/api/resources/logontypeenumtype?view=graph-rest-beta)<br/>[processIntegrityLevel](/graph/api/resources/processintegritylevelenumtype?view=graph-rest-beta)<br/>[securityNetworkProtocol](/graph/api/resources/securitynetworkprotocolenumtype?view=graph-rest-beta)<br/>[userAccountSecurityType](/graph/api/resources/useraccountsecuritytypeenumtype?view=graph-rest-beta)<br/>
 
 
-### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
+### <a name="teamwork"></a>团队合作
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |添加项         | Beta          | 添加了团队 [archive](/graph/api/team-archive?view=graph-rest-beta) 和 [unarchive](/graph/api/team-unarchive?view=graph-rest-beta) API。|
@@ -2898,7 +2897,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="may-2018"></a>2018 年 5 月
 
-### <a name="customer-booking-microsoft-bookings"></a>客户预订（Microsoft Bookings）
+### <a name="customer-booking"></a>客户预订
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2910,7 +2909,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | Beta          | 添加了 [bookingStaffMember](/graph/api/resources/bookingstaffmember?view=graph-rest-beta) 实体和以下 CRUD 方法： <br> [列出](/graph/api/bookingbusiness-list-staffmembers?view=graph-rest-beta) <br> [创建](/graph/api/bookingbusiness-post-staffmembers?view=graph-rest-beta) <br> [获取](/graph/api/bookingstaffmember-get?view=graph-rest-beta) <br> [更新](/graph/api/bookingstaffmember-update?view=graph-rest-beta) <br> [删除](/graph/api/bookingstaffmember-delete?view=graph-rest-beta)。|
 | 添加项        | Beta          | 添加了以下复杂类型： <br> [bookingNamedEntity](/graph/api/resources/bookingnamedentity?view=graph-rest-beta) <br> [bookingPerson](/graph/api/resources/bookingperson?view=graph-rest-beta) <br> [bookingReminder](/graph/api/resources/bookingreminder?view=graph-rest-beta) <br> [bookingWorkHours](/graph/api/resources/bookingworkhours?view=graph-rest-beta) <br> [bookingWorkTimeSlot](/graph/api/resources/bookingworktimeslot?view=graph-rest-beta)。|
 
-### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 |更改类型|版本|说明|
 |:---|:---|:---|
 |Addition|beta|添加了新实体：<br/>[androidWorkProfileCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidworkprofilecompliancepolicy?view=graph-rest-beta)<br/>[easEmailProfileConfigurationBase](/graph/api/resources/intune-deviceconfig-easemailprofileconfigurationbase?view=graph-rest-beta)<br/>[mobileAppIntentAndState](/graph/api/resources/intune-troubleshooting-mobileappintentandstate?view=graph-rest-beta)<br/>[mobileAppTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-mobileapptroubleshootingevent?view=graph-rest-beta)<br/>[unsupportedDeviceConfiguration](/graph/api/resources/intune-deviceconfig-unsupporteddeviceconfiguration?view=graph-rest-beta)<br/>[windowsKioskConfiguration](/graph/api/resources/intune-deviceconfig-windowskioskconfiguration?view=graph-rest-beta)<br/>|
@@ -2976,20 +2975,20 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项        | v1.0 和 beta | 向[发布](/graph/api/resources/post?view=graph-rest-1.0)实体添加****“重要性”属性。 |
 
-### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
+### <a name="identity-and-access"></a>身份和访问
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 更改           | beta          | 已将 [subscription](/graph/api/resources/subscription?view=graph-rest-beta) 实体的 **creatorUserId** 属性重命名为 **creatorId**，以更好地反映含义。 |
 
-### <a name="identity-and-access-directory-apis"></a>身份和访问 (目录 API)
+### <a name="identity-and-access"></a>身份和访问
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项        | v1.0        | 向[目录（已删除项目）](/graph/api/resources/directory?view=graph-rest-1.0)资源添加了[列出用户所拥有的已删除项](/graph/api/directory-deleteditems-user-owned?view=graph-rest-1.0)操作 |
 | 添加项 | beta | 向 [directory](/graph/api/resources/directory?view=graph-rest-beta) 资源添加了 [getUserOwnedObjects](/graph/api/directory-deleteditems-user-owned?view=graph-rest-beta) 函数，以列出给定用户拥有的已删除组。 |
 
-### <a name="social-and-workplace-intelligence--insights"></a>社交和工作场所智能|见解
+### <a name="people-and-workplace-intelligence--insights"></a>人脉和工作场所智能|见解
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -2998,7 +2997,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="april-2018"></a>2018 年 4 月
 
-### <a name="calendar-outlook"></a>日历 (Outlook)
+### <a name="calendar"></a>日历
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -3006,7 +3005,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | v1.0          | 向 [location](/graph/api/resources/location?view=graph-rest-1.0) 复杂类型添加了 **locationType** 属性。 |
 | Addition        | v1.0          | 向 [location](/graph/api/resources/location?view=graph-rest-1.0) 复杂类型添加了 **uniqueId** 和 **uniqueIdType** 属性。 在这种情况下，这些属性仅供内部使用。 |
 
-### <a name="cross-device-experiences-project-rome"></a>跨设备体验 (Project Rome)
+### <a name="cross-device-experiences"></a>跨设备体验
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3023,7 +3022,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项 | v.10 | 添加了 [Project Rome 概述](/graph/api/resources/project-rome-overview?view=graph-rest-1.0) |
 | 更改 | Beta | 向 [Upsert 活动](/graph/api/projectrome-put-activity?view=graph-rest-beta)添加了深层插入文档 |
 
-### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 |更改类型|版本|说明|
 |:---|:---|:---|
 |Addition|v1.0|添加的新实体：<br/>[managedDeviceMobileAppConfigurationDeviceStatus](/graph/api/resources/intune-apps-manageddevicemobileappconfigurationdevicestatus?view=graph-rest-1.0)<br/>|
@@ -3073,14 +3072,14 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |更改|Beta|更新了 [educationSynchronizationError](/graph/api/resources/educationsynchronizationerror?view=graph-rest-beta) 资源类型的说明文本。|
 |更改|Beta|更新了[获取同步错误](/graph/api/educationsynchronizationerrors-get?view=graph-rest-beta) API 的说明文本。|
 
-### <a name="identity-and-access--audit-logs"></a>标识和访问|审核日志
+### <a name="reports"></a>报告
 
 |更改类型|版本|说明|
 |:---|:---|:---|
 |添加项|Beta|添加了 [directoryAudit](/graph/api/resources/directoryaudit?view=graph-rest-beta) 和 [signIn](/graph/api/resources/signin?view=graph-rest-beta) 实体以支持新审核日志 API。 |
 |添加项|Beta|添加以下资源以支持审核日志 API：[appIndentity](/graph/api/resources/appidentity?view=graph-rest-beta)、[auditActivityInitiator](/graph/api/resources/auditactivityinitiator?view=graph-rest-beta)、[conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta)、[deviceDetail](/graph/api/resources/devicedetail?view=graph-rest-beta)、[mfaDetail](/graph/api/resources/mfadetail?view=graph-rest-beta)、[modifiedProperty](/graph/api/resources/modifiedproperty?view=graph-rest-beta)、[signinLocation](/graph/api/resources/signinlocation?view=graph-rest-beta)、[signinStatus](/graph/api/resources/signinstatus?view=graph-rest-beta)、[targetResource](/graph/api/resources/targetresource?view=graph-rest-beta)、[targetResourceApp](/graph/api/resources/targetresourceapp?view=graph-rest-beta)、[targetResourceDevice](/graph/api/resources/targetresourcedevice?view=graph-rest-beta)、[targetResourceDirectory](/graph/api/resources/targetresourcedirectory?view=graph-rest-beta)、[targetResourceGroup](/graph/api/resources/targetresourcegroup?view=graph-rest-beta)、[targetResourceOther](/graph/api/resources/targetresourceother?view=graph-rest-beta)、[targetResourcePolicy](/graph/api/resources/targetresourcepolicy?view=graph-rest-beta)、[targetResourceRole](/graph/api/resources/targetresourcerole?view=graph-rest-beta)、[targetResourceServicePrincipal](/graph/api/resources/targetresourceserviceprincipal?view=graph-rest-beta)、[targetResourceUser](/graph/api/resources/targetresourceuser?view=graph-rest-beta)、[userIdentity](/graph/api/resources/useridentity?view=graph-rest-beta) |
 
-### <a name="identity-and-access-directory-apis"></a>身份和访问 (目录 API)
+### <a name="users"></a>用户
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3088,8 +3087,16 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | Addition        | v1.0        | 向 [user](/graph/api/resources/user?view=graph-rest-1.0) 实体添加了 **legalAgeGroup、ageGroup 和 consentProvidedForMinor** 复杂类型。 |
 | 添加项        | v1.0        | 向 [webhook](/graph/api/resources/webhooks?view=graph-rest-1.0) 通知订阅添加了用户和组支持。 |
 | 添加项        | beta        | 向[目录（已删除项目）](/graph/api/resources/directory?view=graph-rest-beta)资源添加了[列出用户所拥有的已删除项](/graph/api/directory-deleteditems-user-owned?view=graph-rest-beta)操作 |
+| 添加项        | v1.0        | 向 [outlookUser](/graph/api/resources/outlookuser?view=graph-rest-1.0) 实体添加了新的 **masterCategories** 导航属性。 **masterCategories** 是 [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0) 对象的集合。 |
+| 添加项        | v1.0        | 添加了 [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0) 实体。 |
+| 添加项        | v1.0        | 添加了 [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0) 的以下 CRUD 操作：[创建](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0)、[获取](/graph/api/outlookcategory-get?view=graph-rest-1.0)、[更新](/graph/api/outlookcategory-update?view=graph-rest-1.0)和[删除](/graph/api/outlookcategory-delete?view=graph-rest-1.0)。 |
+| 添加项        | v1.0        | 向 [outlookUser](/graph/api/resources/outlookuser?view=graph-rest-1.0) 实体添加了新的 [supportedLanguages](/graph/api/outlookuser-supportedlanguages?view=graph-rest-1.0) 函数。 |
+| Addition        | v1.0        | 向 [outlookUser](/graph/api/resources/outlookuser?view=graph-rest-1.0) 实体添加了新的 [supportedTimeZones](/graph/api/outlookuser-supportedtimezones?view=graph-rest-1.0) 函数。 |
+|添加项 | v1.0 | 向 [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) 添加了新的 **workingHours** 属性。 请参阅 [workingHours 资源类型](/graph/api/resources/workinghours?view=graph-rest-1.0)，获取有关受支持用例的信息。|
+|添加项 | v1.0 | 添加了以下新复杂类型： <br> [workingHours](/graph/api/resources/workinghours?view=graph-rest-1.0) <br> [timeZoneBase](/graph/api/resources/timezonebase?view=graph-rest-1.0) <br> [customTimeZone](/graph/api/resources/customtimezone?view=graph-rest-1.0) <br> [standardTimeZoneOffset](/graph/api/resources/standardtimezoneoffset?view=graph-rest-1.0) <br> [daylightTimeZoneOffset](/graph/api/resources/daylighttimezoneoffset?view=graph-rest-1.0)|
 
-### <a name="mail-outlook"></a>邮件 (Outlook)
+
+### <a name="mail"></a>邮件
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3103,7 +3110,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项 | Beta | 为邮件搜索文件夹添加了以下 API：[创建](/graph/api/mailsearchfolder-post?view=graph-rest-beta)、[更新](/graph/api/mailsearchfolder-update?view=graph-rest-beta)。 |
 | 更改 | Beta | 为邮件搜索文件夹添加了以下支持：[删除邮件文件夹](/graph/api/mailfolder-delete?view=graph-rest-beta)、[获取邮件文件夹](/graph/api/mailfolder-get?view=graph-rest-beta)和[列出子文件夹](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta)。 |
 
-### <a name="personal-contacts-outlook"></a>个人联系人 (Outlook)
+### <a name="personal-contacts"></a>个人联系人
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3121,7 +3128,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | Beta       | 添加了[安全 API](/graph/api/resources/security-api-overview?view=graph-rest-beta)，包括以下资源和操作：<br/>[警报](/graph/api/resources/alert?view=graph-rest-beta)（和相关实体）<br/>[获取警报](/graph/api/alert-get?view=graph-rest-beta)<br/>[列出警报](/graph/api/alert-list?view=graph-rest-beta)<br/>[更新警报](/graph/api/alert-update?view=graph-rest-beta)<br/><br/>添加了以下支持文档：<br/>[错误](/graph/api/resources/security-error-codes?view=graph-rest-beta)<br/>[使用 Microsoft Graph 安全性 API 实现安全解决方案集成](security-integration.md)
 
-### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
+### <a name="teamwork"></a>团队合作
 
 |更改类型|版本|说明|
 |:---|:---|:---|
@@ -3134,22 +3141,9 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加项|Beta|向 [team](/graph/api/resources/team?view=graph-rest-beta) 资源添加了新的 webUrl 属性。|
 |更改项|Beta|更新了[频道](/graph/api/resources/channel?view=graph-rest-beta)实体的路径。|
 
-### <a name="users--outlook-settings"></a>用户|Outlook 设置
-
-| **更改类型** | **版本** | **说明**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | v1.0        | 向 [outlookUser](/graph/api/resources/outlookuser?view=graph-rest-1.0) 实体添加了新的 **masterCategories** 导航属性。 **masterCategories** 是 [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0) 对象的集合。 |
-| 添加项        | v1.0        | 添加了 [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0) 实体。 |
-| 添加项        | v1.0        | 添加了 [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0) 的以下 CRUD 操作：[创建](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0)、[获取](/graph/api/outlookcategory-get?view=graph-rest-1.0)、[更新](/graph/api/outlookcategory-update?view=graph-rest-1.0)和[删除](/graph/api/outlookcategory-delete?view=graph-rest-1.0)。 |
-| 添加项        | v1.0        | 向 [outlookUser](/graph/api/resources/outlookuser?view=graph-rest-1.0) 实体添加了新的 [supportedLanguages](/graph/api/outlookuser-supportedlanguages?view=graph-rest-1.0) 函数。 |
-| Addition        | v1.0        | 向 [outlookUser](/graph/api/resources/outlookuser?view=graph-rest-1.0) 实体添加了新的 [supportedTimeZones](/graph/api/outlookuser-supportedtimezones?view=graph-rest-1.0) 函数。 |
-|添加项 | v1.0 | 向 [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) 添加了新的 **workingHours** 属性。 请参阅 [workingHours 资源类型](/graph/api/resources/workinghours?view=graph-rest-1.0)，获取有关受支持用例的信息。|
-|添加项 | v1.0 | 添加了以下新复杂类型： <br> [workingHours](/graph/api/resources/workinghours?view=graph-rest-1.0) <br> [timeZoneBase](/graph/api/resources/timezonebase?view=graph-rest-1.0) <br> [customTimeZone](/graph/api/resources/customtimezone?view=graph-rest-1.0) <br> [standardTimeZoneOffset](/graph/api/resources/standardtimezoneoffset?view=graph-rest-1.0) <br> [daylightTimeZoneOffset](/graph/api/resources/daylighttimezoneoffset?view=graph-rest-1.0)|
-
-
 ## <a name="march-2018"></a>2018 年 3 月
 
-### <a name="cross-device-experiences-project-rome"></a>跨设备体验 (Project Rome)
+### <a name="cross-device-experiences"></a>跨设备体验
 
 | **更改类型** | **版本** | **说明**              |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3163,7 +3157,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 更改 | Beta | 向 [historyItem](/graph/api/resources/projectrome-historyitem?view=graph-rest-beta) 添加了 **activity** 导航属性 |
 | 更改项 | Beta | 向 [Project Rome 概述](/graph/api/resources/project-rome-overview?view=graph-rest-beta)添加了新 API |
 
-### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 
 |更改类型|版本|说明|
 |:---|:---|:---|
@@ -3221,7 +3215,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加项|beta|向 [mobileAppContent](/graph/api/resources/intune-apps-mobileappcontent?view=graph-rest-beta) 实体添加了 **containedApps** 导航属性|
 |添加项|beta|向 [windowsUniversalAppX](/graph/api/resources/intune-apps-windowsuniversalappx?view=graph-rest-beta) 实体添加了 **committedContainedApps** 导航属性|
 
-### <a name="files-onedrive-for-business"></a>文件 (OneDrive for Business)
+### <a name="files"></a>文件
 |更改类型|版本|说明|
 |:---|:---|:---|
 |Addition|v1.0|添加的新实体：<br/>[baseItemVersion](/graph/api/resources/baseitemversion?view=graph-rest-1.0)<br/>[driveItemVersion](/graph/api/resources/driveitemversion?view=graph-rest-1.0)<br/>[listItemVersion](/graph/api/resources/listitemversion?view=graph-rest-1.0)<br/> |
@@ -3249,21 +3243,21 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 新增        | v1.0        | 向 [group](/graph/api/resources/group?view=graph-rest-1.0) 添加了 [List groupLifecylePolicies](/graph/api/group-list-grouplifecyclepolicies?view=graph-rest-1.0) 函数 |
 | 更改 | v1.0 | 向 [group](/graph/api/resources/group?view=graph-rest-1.0) 添加了 renewedDateTime 属性和 [renew](/graph/api/group-renew?view=graph-rest-1.0) |
 
-### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
+### <a name="identity-and-access"></a>身份和访问
 
 |更改类型|版本|说明|
 |:---|:---|:---|
 |更改|beta|向[订阅](/graph/api/resources/subscription?view=graph-rest-beta)资源添加了 **applicationID** 和 **creatorUserID** 属性。 |
 |更改|beta|向[订阅](/graph/api/resources/subscription?view=graph-rest-beta) 实体添加了[列表](/graph/api/subscription-list?view=graph-rest-beta)操作。 |
 
-### <a name="identity-and-access--data-policy-operations"></a>身份和访问|数据策略操作
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | beta        | 添加了新实体 [dataPolicyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-beta)。 这表示可用于跟踪目的的提交数据策略操作。
 | 添加项        | beta        | 在 [users](/graph/api/resources/users?view=graph-rest-beta) 上添加了 [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-beta) 操作。 此操作将提交数据策略操作请求，以导出由 Microsoft 为用户存储的个人数据。 |
 
-### <a name="identity-and-access-directory-apis"></a>标识和访问（目录 API）
+### <a name="identity-and-access"></a>身份和访问
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3271,7 +3265,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | Beta        | 向 [organization](/graph/api/resources/organization?view=graph-rest-beta) 实体添加了 **privacyProfile** 复杂类型。 |
 | Addition        | v1.0        | 添加了对[还原并永久删除用户和组](/graph/api/resources/directory?view=graph-rest-1.0)的支持。 |
 
-### <a name="identity-and-access--terms-of-use"></a>身份和访问|使用条款
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3285,7 +3279,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | :-------------- | :---------- | :--------------------------------------- |
 |添加项|beta|向 [sharePointSiteUsageDetail](/graph/api/resources/sharepointsiteusagedetail?view=graph-rest-beta) 实体添加了 **siteId** 属性。|
 
-### <a name="workbooks-and-charts-excel"></a>工作簿和图表 (Excel)
+### <a name="workbooks-and-charts"></a>工作簿和图表
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3294,7 +3288,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="february-2018"></a>2018 年 2 月
 
-### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 |更改类型|版本|说明|
 |:---|:---|:---|
 |Addition|beta|新增了实体：<br/>[androidForWorkImportedPFXCertificateProfile](/graph/api/resources/intune-deviceconfig-androidforworkimportedpfxcertificateprofile?view=graph-rest-beta)<br/>[androidImportedPFXCertificateProfile](/graph/api/resources/intune-deviceconfig-androidimportedpfxcertificateprofile?view=graph-rest-beta)<br/>[importedWindowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentity?view=graph-rest-beta)<br/>[iosImportedPFXCertificateProfile](/graph/api/resources/intune-deviceconfig-iosimportedpfxcertificateprofile?view=graph-rest-beta)<br/>[windows10ImportedPFXCertificateProfile](/graph/api/resources/intune-deviceconfig-windows10importedpfxcertificateprofile?view=graph-rest-beta)<br/>[windows10KioskConfiguration](/graph/api/resources/intune-deviceconfig-windows10kioskconfiguration?view=graph-rest-beta)<br/>[windowsPhone81ImportedPFXCertificateProfile](/graph/api/resources/intune-deviceconfig-windowsphone81importedpfxcertificateprofile?view=graph-rest-beta)<br/>|
@@ -3332,7 +3326,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项    | Beta    | 向 [userActivationCounts](/graph/api/resources/useractivationcounts?view=graph-rest-beta) 实体添加了 **activatedOnSharedComputer** 属性。|
 | 添加项    | Beta    | 向 [office365ActivationsUserCounts](/graph/api/resources/office365activationsusercounts?view=graph-rest-beta) 实体添加了 **sharedComputerActivation** 属性。|
 
-### <a name="tasks-and-plans-planner"></a>任务和计划（规划器）
+### <a name="tasks-and-plans"></a>任务和计划
 
 |更改类型|版本|说明|
 |:---|:---|:---|
@@ -3353,7 +3347,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |Addition|v1.0|添加了 [JSON 批处理](json-batching.md)支持。 内部请求限制设置为 20。|
 |更改|Beta|将 [JSON 批处理](json-batching.md)内部请求限制从 5 增加到 20。|
 
-### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 |更改类型|版本|说明|
 |:---|:---|:---|
 |Addition|v1.0|添加了新实体：<br/>[androidCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidcompliancepolicy?view=graph-rest-1.0)<br/>[androidCustomConfiguration](/graph/api/resources/intune-deviceconfig-androidcustomconfiguration?view=graph-rest-1.0)<br/>[androidGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidgeneraldeviceconfiguration?view=graph-rest-1.0)<br/>[androidLobApp](/graph/api/resources/intune-apps-androidlobapp?view=graph-rest-1.0)<br/>[androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection?view=graph-rest-1.0)<br/>[androidManagedAppRegistration](/graph/api/resources/intune-mam-androidmanagedappregistration?view=graph-rest-1.0)<br/>[androidStoreApp](/graph/api/resources/intune-apps-androidstoreapp?view=graph-rest-1.0)<br/>[appleDeviceFeaturesConfigurationBase](/graph/api/resources/intune-deviceconfig-appledevicefeaturesconfigurationbase?view=graph-rest-1.0)<br/>[applePushNotificationCertificate](/graph/api/resources/intune-devices-applepushnotificationcertificate?view=graph-rest-1.0)<br/>[defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-1.0)<br/>[detectedApp](/graph/api/resources/intune-devices-detectedapp?view=graph-rest-1.0)<br/>[deviceAndAppManagementRoleAssignment](/graph/api/resources/intune-rbac-deviceandappmanagementroleassignment?view=graph-rest-1.0)<br/>[deviceAndAppManagementRoleDefinition](/graph/api/resources/intune-rbac-deviceandappmanagementroledefinition?view=graph-rest-1.0)<br/>[deviceAppManagement](/graph/api/resources/intune-shared-deviceappmanagement?view=graph-rest-1.0)<br/>[deviceCategory](/graph/api/resources/intune-shared-devicecategory?view=graph-rest-1.0)<br/>[deviceComplianceActionItem](/graph/api/resources/intune-deviceconfig-devicecomplianceactionitem?view=graph-rest-1.0)<br/>[deviceComplianceDeviceOverview](/graph/api/resources/intune-deviceconfig-devicecompliancedeviceoverview?view=graph-rest-1.0)<br/>[deviceComplianceDeviceStatus](/graph/api/resources/intune-deviceconfig-devicecompliancedevicestatus?view=graph-rest-1.0)<br/>[deviceCompliancePolicy](/graph/api/resources/intune-deviceconfig-devicecompliancepolicy?view=graph-rest-1.0)<br/>[deviceCompliancePolicyAssignment](/graph/api/resources/intune-deviceconfig-devicecompliancepolicyassignment?view=graph-rest-1.0)<br/>[deviceCompliancePolicyDeviceStateSummary](/graph/api/resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary?view=graph-rest-1.0)<br/>[deviceCompliancePolicySettingStateSummary](/graph/api/resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary?view=graph-rest-1.0)<br/>[deviceCompliancePolicyState](/graph/api/resources/intune-deviceconfig-devicecompliancepolicystate?view=graph-rest-1.0)<br/>[deviceComplianceScheduledActionForRule](/graph/api/resources/intune-deviceconfig-devicecompliancescheduledactionforrule?view=graph-rest-1.0)<br/>[deviceComplianceSettingState](/graph/api/resources/intune-deviceconfig-devicecompliancesettingstate?view=graph-rest-1.0)<br/>[deviceComplianceUserOverview](/graph/api/resources/intune-deviceconfig-devicecomplianceuseroverview?view=graph-rest-1.0)<br/>[deviceComplianceUserStatus](/graph/api/resources/intune-deviceconfig-devicecomplianceuserstatus?view=graph-rest-1.0)<br/>[deviceConfiguration](/graph/api/resources/intune-deviceconfig-deviceconfiguration?view=graph-rest-1.0)<br/>[deviceConfigurationAssignment](/graph/api/resources/intune-deviceconfig-deviceconfigurationassignment?view=graph-rest-1.0)<br/>[deviceConfigurationDeviceOverview](/graph/api/resources/intune-deviceconfig-deviceconfigurationdeviceoverview?view=graph-rest-1.0)<br/>[deviceConfigurationDeviceStateSummary](/graph/api/resources/intune-deviceconfig-deviceconfigurationdevicestatesummary?view=graph-rest-1.0)<br/>[deviceConfigurationDeviceStatus](/graph/api/resources/intune-deviceconfig-deviceconfigurationdevicestatus?view=graph-rest-1.0)<br/>[deviceConfigurationState](/graph/api/resources/intune-deviceconfig-deviceconfigurationstate?view=graph-rest-1.0)<br/>[deviceConfigurationUserOverview](/graph/api/resources/intune-deviceconfig-deviceconfigurationuseroverview?view=graph-rest-1.0)<br/>[deviceConfigurationUserStatus](/graph/api/resources/intune-deviceconfig-deviceconfigurationuserstatus?view=graph-rest-1.0)<br/>[deviceEnrollmentConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentconfiguration?view=graph-rest-1.0)<br/>[deviceEnrollmentLimitConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentlimitconfiguration?view=graph-rest-1.0)<br/>[deviceEnrollmentPlatformRestrictionsConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration?view=graph-rest-1.0)<br/>[deviceEnrollmentWindowsHelloForBusinessConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration?view=graph-rest-1.0)<br/>[deviceInstallState](/graph/api/resources/intune-books-deviceinstallstate?view=graph-rest-1.0)<br/>[deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-1.0)<br/>[deviceManagementExchangeConnector](/graph/api/resources/intune-onboarding-devicemanagementexchangeconnector?view=graph-rest-1.0)<br/>[deviceManagementPartner](/graph/api/resources/intune-onboarding-devicemanagementpartner?view=graph-rest-1.0)<br/>[deviceManagementTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-devicemanagementtroubleshootingevent?view=graph-rest-1.0)<br/>[eBookInstallSummary](/graph/api/resources/intune-books-ebookinstallsummary?view=graph-rest-1.0)<br/>[editionUpgradeConfiguration](/graph/api/resources/intune-deviceconfig-editionupgradeconfiguration?view=graph-rest-1.0)<br/>[enrollmentConfigurationAssignment](/graph/api/resources/intune-onboarding-enrollmentconfigurationassignment?view=graph-rest-1.0)<br/>[enrollmentTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-enrollmenttroubleshootingevent?view=graph-rest-1.0)<br/>[iosCertificateProfile](/graph/api/resources/intune-deviceconfig-ioscertificateprofile?view=graph-rest-1.0)<br/>[iosCompliancePolicy](/graph/api/resources/intune-deviceconfig-ioscompliancepolicy?view=graph-rest-1.0)<br/>[iosCustomConfiguration](/graph/api/resources/intune-deviceconfig-ioscustomconfiguration?view=graph-rest-1.0)<br/>[iosDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-iosdevicefeaturesconfiguration?view=graph-rest-1.0)<br/>[iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration?view=graph-rest-1.0)<br/>[iosLobApp](/graph/api/resources/intune-apps-ioslobapp?view=graph-rest-1.0)<br/>[iosManagedAppProtection](/graph/api/resources/intune-mam-iosmanagedappprotection?view=graph-rest-1.0)<br/>[iosManagedAppRegistration](/graph/api/resources/intune-mam-iosmanagedappregistration?view=graph-rest-1.0)<br/>[iosStoreApp](/graph/api/resources/intune-apps-iosstoreapp?view=graph-rest-1.0)<br/>[iosUpdateConfiguration](/graph/api/resources/intune-deviceconfig-iosupdateconfiguration?view=graph-rest-1.0)<br/>[iosUpdateDeviceStatus](/graph/api/resources/intune-deviceconfig-iosupdatedevicestatus?view=graph-rest-1.0)<br/>[iosVppApp](/graph/api/resources/intune-apps-iosvppapp?view=graph-rest-1.0)<br/>[iosVppEBook](/graph/api/resources/intune-books-iosvppebook?view=graph-rest-1.0)<br/>[iosVppEBookAssignment](/graph/api/resources/intune-books-iosvppebookassignment?view=graph-rest-1.0)<br/>[localizedNotificationMessage](/graph/api/resources/intune-notification-localizednotificationmessage?view=graph-rest-1.0)<br/>[macOSCompliancePolicy](/graph/api/resources/intune-deviceconfig-macoscompliancepolicy?view=graph-rest-1.0)<br/>[macOSCustomConfiguration](/graph/api/resources/intune-deviceconfig-macoscustomconfiguration?view=graph-rest-1.0)<br/>[macOSDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-macosdevicefeaturesconfiguration?view=graph-rest-1.0)<br/>[macOSGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-macosgeneraldeviceconfiguration?view=graph-rest-1.0)<br/>[macOSOfficeSuiteApp](/graph/api/resources/intune-apps-macosofficesuiteapp?view=graph-rest-1.0)<br/>[managedAndroidLobApp](/graph/api/resources/intune-apps-managedandroidlobapp?view=graph-rest-1.0)<br/>[managedAndroidStoreApp](/graph/api/resources/intune-apps-managedandroidstoreapp?view=graph-rest-1.0)<br/>[managedApp](/graph/api/resources/intune-apps-managedapp?view=graph-rest-1.0)<br/>[managedAppConfiguration](/graph/api/resources/intune-mam-managedappconfiguration?view=graph-rest-1.0)<br/>[managedAppOperation](/graph/api/resources/intune-mam-managedappoperation?view=graph-rest-1.0)<br/>[managedAppPolicy](/graph/api/resources/intune-mam-managedapppolicy?view=graph-rest-1.0)<br/>[managedAppPolicyDeploymentSummary](/graph/api/resources/intune-mam-managedapppolicydeploymentsummary?view=graph-rest-1.0)<br/>[managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-1.0)<br/>[managedAppRegistration](/graph/api/resources/intune-mam-managedappregistration?view=graph-rest-1.0)<br/>[managedAppStatus](/graph/api/resources/intune-mam-managedappstatus?view=graph-rest-1.0)<br/>[managedAppStatusRaw](/graph/api/resources/intune-mam-managedappstatusraw?view=graph-rest-1.0)<br/>[managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0)<br/>[managedDeviceMobileAppConfiguration](/graph/api/resources/intune-apps-manageddevicemobileappconfiguration?view=graph-rest-1.0)<br/>[managedDeviceMobileAppConfigurationAssignment](/graph/api/resources/intune-apps-manageddevicemobileappconfigurationassignment?view=graph-rest-1.0)<br/>[managedDeviceMobileAppConfigurationDeviceSummary](/graph/api/resources/intune-apps-manageddevicemobileappconfigurationdevicesummary?view=graph-rest-1.0)<br/>[managedDeviceMobileAppConfigurationUserStatus](/graph/api/resources/intune-apps-manageddevicemobileappconfigurationuserstatus?view=graph-rest-1.0)<br/>[managedDeviceMobileAppConfigurationUserSummary](/graph/api/resources/intune-apps-manageddevicemobileappconfigurationusersummary?view=graph-rest-1.0)<br/>[managedDeviceOverview](/graph/api/resources/intune-devices-manageddeviceoverview?view=graph-rest-1.0)<br/>[managedEBook](/graph/api/resources/intune-books-managedebook?view=graph-rest-1.0)<br/>[managedEBookAssignment](/graph/api/resources/intune-books-managedebookassignment?view=graph-rest-1.0)<br/>[managedIOSLobApp](/graph/api/resources/intune-apps-managedioslobapp?view=graph-rest-1.0)<br/>[managedIOSStoreApp](/graph/api/resources/intune-apps-managediosstoreapp?view=graph-rest-1.0)<br/>[managedMobileApp](/graph/api/resources/intune-mam-managedmobileapp?view=graph-rest-1.0)<br/>[managedMobileLobApp](/graph/api/resources/intune-apps-managedmobilelobapp?view=graph-rest-1.0)<br/>[mdmWindowsInformationProtectionPolicy](/graph/api/resources/intune-mam?view=graph-rest-1.0mwindowsinformationprotectionpolicy)<br/>[microsoftStoreForBusinessApp](/graph/api/resources/intune-apps-microsoftstoreforbusinessapp?view=graph-rest-1.0)<br/>[mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-1.0)<br/>[mobileAppAssignment](/graph/api/resources/intune-apps-mobileappassignment?view=graph-rest-1.0)<br/>[mobileAppCategory](/graph/api/resources/intune-apps-mobileappcategory?view=graph-rest-1.0)<br/>[mobileAppContent](/graph/api/resources/intune-apps-mobileappcontent?view=graph-rest-1.0)<br/>[mobileAppContentFile](/graph/api/resources/intune-apps-mobileappcontentfile?view=graph-rest-1.0)<br/>[mobileLobApp](/graph/api/resources/intune-apps-mobilelobapp?view=graph-rest-1.0)<br/>[mobileThreatDefenseConnector](/graph/api/resources/intune-onboarding-mobilethreatdefenseconnector?view=graph-rest-1.0)<br/>[notificationMessageTemplate](/graph/api/resources/intune-notification-notificationmessagetemplate?view=graph-rest-1.0)<br/>[onPremisesConditionalAccessSettings](/graph/api/resources/intune-onboarding-onpremisesconditionalaccesssettings?view=graph-rest-1.0)<br/>[remoteAssistancePartner](/graph/api/resources/intune-remoteassistance-remoteassistancepartner?view=graph-rest-1.0)<br/>[resourceOperation](/graph/api/resources/intune-rbac-resourceoperation?view=graph-rest-1.0)<br/>[roleAssignment](/graph/api/resources/intune-rbac-roleassignment?view=graph-rest-1.0)<br/>[roleDefinition](/graph/api/resources/intune-rbac-roledefinition?view=graph-rest-1.0)<br/>[settingStateDeviceSummary](/graph/api/resources/intune-deviceconfig-settingstatedevicesummary?view=graph-rest-1.0)<br/>[sharedPCConfiguration](/graph/api/resources/intune-deviceconfig-sharedpcconfiguration?view=graph-rest-1.0)<br/>[softwareUpdateStatusSummary](/graph/api/resources/intune-deviceconfig-softwareupdatestatussummary?view=graph-rest-1.0)<br/>[targetedManagedAppConfiguration](/graph/api/resources/intune-mam-targetedmanagedappconfiguration?view=graph-rest-1.0)<br/>targetedManagedAppPolicyAssignment<br/>[targetedManagedAppProtection](/graph/api/resources/intune-mam-targetedmanagedappprotection?view=graph-rest-1.0)<br/>[telecomExpenseManagementPartner](/graph/api/resources/intune-tem-telecomexpensemanagementpartner?view=graph-rest-1.0)<br/>[termsAndConditions](/graph/api/resources/intune-companyterms-termsandconditions?view=graph-rest-1.0)<br/>[termsAndConditionsAcceptanceStatus](/graph/api/resources/intune-companyterms-termsandconditionsacceptancestatus?view=graph-rest-1.0)<br/>[termsAndConditionsAssignment](/graph/api/resources/intune-companyterms-termsandconditionsassignment?view=graph-rest-1.0)<br/>[userInstallStateSummary](/graph/api/resources/intune-books-userinstallstatesummary?view=graph-rest-1.0)<br/>[webApp](/graph/api/resources/intune-apps-webapp?view=graph-rest-1.0)<br/>[windows10CompliancePolicy](/graph/api/resources/intune-deviceconfig-windows10compliancepolicy?view=graph-rest-1.0)<br/>[windows10CustomConfiguration](/graph/api/resources/intune-deviceconfig-windows10customconfiguration?view=graph-rest-1.0)<br/>[windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-1.0)<br/>[windows10EnterpriseModernAppManagementConfiguration](/graph/api/resources/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration?view=graph-rest-1.0)<br/>[windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-1.0)<br/>[windows10MobileCompliancePolicy](/graph/api/resources/intune-deviceconfig-windows10mobilecompliancepolicy?view=graph-rest-1.0)<br/>[windows10SecureAssessmentConfiguration](/graph/api/resources/intune-deviceconfig-windows10secureassessmentconfiguration?view=graph-rest-1.0)<br/>[windows10TeamGeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10teamgeneralconfiguration?view=graph-rest-1.0)<br/>[windows81CompliancePolicy](/graph/api/resources/intune-deviceconfig-windows81compliancepolicy?view=graph-rest-1.0)<br/>[windows81GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows81generalconfiguration?view=graph-rest-1.0)<br/>[windowsDefenderAdvancedThreatProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration?view=graph-rest-1.0)<br/>[windowsInformationProtection](/graph/api/resources/intune-mam-windowsinformationprotection?view=graph-rest-1.0)<br/>[windowsInformationProtectionAppLearningSummary](/graph/api/resources/intune-wip-windowsinformationprotectionapplearningsummary?view=graph-rest-1.0)<br/>[windowsInformationProtectionAppLockerFile](/graph/api/resources/intune-mam-windowsinformationprotectionapplockerfile?view=graph-rest-1.0)<br/>[windowsInformationProtectionNetworkLearningSummary](/graph/api/resources/intune-wip-windowsinformationprotectionnetworklearningsummary?view=graph-rest-1.0)<br/>[windowsInformationProtectionPolicy](/graph/api/resources/intune-mam-windowsinformationprotectionpolicy?view=graph-rest-1.0)<br/>[windowsMobileMSI](/graph/api/resources/intune-apps-windowsmobilemsi?view=graph-rest-1.0)<br/>[windowsPhone81CompliancePolicy](/graph/api/resources/intune-deviceconfig-windowsphone81compliancepolicy?view=graph-rest-1.0)<br/>[windowsPhone81CustomConfiguration](/graph/api/resources/intune-deviceconfig-windowsphone81customconfiguration?view=graph-rest-1.0)<br/>[windowsPhone81GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windowsphone81generalconfiguration?view=graph-rest-1.0)<br/>[windowsUniversalAppX](/graph/api/resources/intune-apps-windowsuniversalappx?view=graph-rest-1.0)<br/>[windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-1.0)<br/>|
@@ -3499,7 +3493,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="december-2017"></a>2017 年 12 月
 
-### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 
 |更改类型|版本|说明|
 |:---|:---|:---|
@@ -3541,22 +3535,27 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | Addition    | v1.0    | 新增了以下 API：<br>[getEmailActivityUserDetail](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-1.0)<br>[getEmailActivityCounts](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-1.0)<br>[getEmailActivityUserCounts](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-1.0)<br>[getEmailAppUsageUserDetail](/graph/api/reportroot-getemailappusageuserdetail?view=graph-rest-1.0)<br>[getEmailAppUsageAppsUserCounts](/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-1.0)<br>[getEmailAppUsageUserCounts](/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-1.0)<br>[getEmailAppUsageVersionsUserCounts](/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-1.0)<br>[getMailboxUsageDetail](/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-1.0)<br>[getMailboxUsageMailboxCounts](/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-1.0)<br>[getMailboxUsageQuotaStatusMailboxCounts](/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-1.0)<br>[getMailboxUsageStorage](/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-1.0)<br>[getOffice365ActivationsUserDetail](/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-1.0)<br>[getOffice365ActivationCounts](/graph/api/reportroot-getoffice365activationcounts?view=graph-rest-1.0)<br>[getOffice365ActivationsUserCounts](/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-1.0)<br>[getOffice365ActiveUserDetail](/graph/api/reportroot-getoffice365activeuserdetail?view=graph-rest-1.0)<br>[getOffice365ActiveUserCounts](/graph/api/reportroot-getoffice365activeusercounts?view=graph-rest-1.0)<br>[getOffice365ServicesUserCounts](/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-1.0)<br>[getOffice365GroupsActivityDetail](/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-1.0)<br> [getOffice365GroupsActivityCounts](/graph/api/reportroot-getoffice365groupsactivitycounts?view=graph-rest-1.0)<br>[getOffice365GroupsActivityGroupCounts](/graph/api/reportroot-getoffice365groupsactivitygroupcounts?view=graph-rest-1.0)<br>[getOffice365GroupsActivityStorage](/graph/api/reportroot-getoffice365groupsactivitystorage?view=graph-rest-1.0)<br>[getOffice365GroupsActivityFileCounts](/graph/api/reportroot-getoffice365groupsactivityfilecounts?view=graph-rest-1.0)<br>[getOneDriveActivityUserDetail](/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-1.0)<br>[getOneDriveActivityUserCounts](/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-1.0)<br>[getOneDriveActivityFileCounts](/graph/api/reportroot-getonedriveactivityfilecounts?view=graph-rest-1.0)<br>[getOneDriveUsageAccountDetail](/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-1.0)<br>[getOneDriveUsageAccountCounts](/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-1.0)<br>[getOneDriveUsageFileCounts](/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-1.0)<br>[getOneDriveUsageStorage](/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-1.0)<br>[getSharePointActivityUserDetail](/graph/api/reportroot-getsharepointactivityuserdetail?view=graph-rest-1.0)<br>[getSharePointActivityFileCounts](/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-1.0)<br>[getSharePointActivityUserCounts](/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-1.0)<br>[getSharePointActivityPages](/graph/api/reportroot-getsharepointactivitypages?view=graph-rest-1.0)<br>[getSharePointSiteUsageDetail](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-1.0)<br>[getSharePointSiteUsageFileCounts](/graph/api/reportroot-getsharepointsiteusagefilecounts?view=graph-rest-1.0)<br>[getSharePointSiteUsageSiteCounts](/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-1.0)<br>[getSharePointSiteUsageStorage](/graph/api/reportroot-getsharepointsiteusagestorage?view=graph-rest-1.0)<br>[getSharePointSiteUsagePages](/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-1.0)<br>[getSkypeForBusinessActivityUserDetail](/graph/api/reportroot-getskypeforbusinessactivityuserdetail?view=graph-rest-1.0)<br>[getSkypeForBusinessActivityCounts](/graph/api/reportroot-getskypeforbusinessactivitycounts?view=graph-rest-1.0)<br>[getSkypeForBusinessActivityUserCounts](/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-1.0)<br>[getSkypeForBusinessDeviceUsageUserDetail](/graph/api/reportroot-getskypeforbusinessdeviceusageuserdetail?view=graph-rest-1.0)<br>[getSkypeForBusinessDeviceUsageDistributionUserCounts](/graph/api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts?view=graph-rest-1.0)<br>[getSkypeForBusinessDeviceUsageUserCounts](/graph/api/reportroot-getskypeforbusinessdeviceusageusercounts?view=graph-rest-1.0)<br>[getSkypeForBusinessOrganizerActivityCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-1.0)<br>[getSkypeForBusinessOrganizerActivityUserCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivityusercounts?view=graph-rest-1.0)<br>[getSkypeForBusinessOrganizerActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivityminutecounts?view=graph-rest-1.0)<br>[getSkypeForBusinessParticipantActivityCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivitycounts?view=graph-rest-1.0)<br>[getSkypeForBusinessParticipantActivityUserCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivityusercounts?view=graph-rest-1.0)<br>[getSkypeForBusinessParticipantActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivityminutecounts?view=graph-rest-1.0)<br>[getSkypeForBusinessPeerToPeerActivityCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivitycounts?view=graph-rest-1.0)<br>[getSkypeForBusinessPeerToPeerActivityUserCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-1.0)<br>[getSkypeForBusinessPeerToPeerActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-1.0)<br>[getYammerActivityUserDetail](/graph/api/reportroot-getyammeractivityuserdetail?view=graph-rest-1.0)<br>[getYammerActivityCounts](/graph/api/reportroot-getyammeractivitycounts?view=graph-rest-1.0)<br>[getYammerActivityUserCounts](/graph/api/reportroot-getyammeractivityusercounts?view=graph-rest-1.0)<br>[getYammerDeviceUsageUserDetail](/graph/api/reportroot-getyammerdeviceusageuserdetail?view=graph-rest-1.0)<br>[getYammerDeviceUsageDistributionUserCounts](/graph/api/reportroot-getyammerdeviceusagedistributionusercounts?view=graph-rest-1.0)<br>[getYammerDeviceUsageUserCounts](/graph/api/reportroot-getyammerdeviceusageusercounts?view=graph-rest-1.0)<br>[getYammerGroupsActivityDetail](/graph/api/reportroot-getyammergroupsactivitydetail?view=graph-rest-1.0)<br>[getYammerGroupsActivityGroupCounts](/graph/api/reportroot-getyammergroupsactivitygroupcounts?view=graph-rest-1.0)<br>[getYammerGroupsActivityCounts](/graph/api/reportroot-getyammergroupsactivitycounts?view=graph-rest-1.0)。|
 | Addition    | Beta    | 新增了以下 API：<br>[getTeamsUserActivityUserDetail](/graph/api/reportroot-getteamsuseractivityuserdetail?view=graph-rest-beta)<br>[getTeamsUserActivityCounts](/graph/api/reportroot-getteamsuseractivitycounts?view=graph-rest-beta)<br>[getTeamsUserActivityUserCounts](/graph/api/reportroot-getteamsuseractivityusercounts?view=graph-rest-beta)<br>[getTeamsDeviceUsageUserDetail](/graph/api/reportroot-getteamsdeviceusageuserdetail?view=graph-rest-beta)<br>[getTeamsDeviceUsageUserCounts](/graph/api/reportroot-getteamsdeviceusageusercounts?view=graph-rest-beta)<br>[getTeamsDeviceUsageDistributionUserCounts](/graph/api/reportroot-getteamsdeviceusagedistributionusercounts?view=graph-rest-beta) |
 
-### <a name="track-changes"></a>跟踪更改
+### <a name="users"></a>用户
 
 | 更改类型 | 版本 | 说明                              |
 |:------------|:--------|:-----------------------------------------|
-| 更改      | v1.0    | 向[用户](/graph/api/user-delta?view=graph-rest-1.0)和[组](/graph/api/group-delta?view=graph-rest-1.0) 添加可选的增量查询筛选功能。 |
+| 更改      | v1.0    | 向[用户](/graph/api/user-delta?view=graph-rest-1.0)添加可选的 Delta 查询筛选功能。 |
 
+### <a name="groups"></a>组
+
+| 更改类型 | 版本 | 说明                              |
+|:------------|:--------|:-----------------------------------------|
+| 更改      | v1.0    | 向[组](/graph/api/group-delta?view=graph-rest-1.0)添加可选的 Delta 查询筛选功能。 |
 
 ## <a name="november-2017"></a>2017 年 11 月
 
-### <a name="change-notifications-webhooks"></a>更改通知（Webhook）
+### <a name="change-notifications"></a>更改通知
 
 | 更改类型 | 版本 | 说明                              |
 |:------------|:--------|:-----------------------------------------|
 | 重大更改 | Beta 和 v1.0 | 缩短了驱动器根项的 [Webhook](/graph/api/resources/webhooks?view=graph-rest-1.0) [最长订阅有效期](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type)。 新值是支持的驱动器根项最长订阅有效期。 |
 
-### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 |更改类型|版本|说明|
 |:---|:---|:---|
 |添加项|Beta|新增了实体：<br/>[auditEvent](/graph/api/resources/intune-auditing-auditevent?view=graph-rest-beta)<br/>[deviceManagementTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-devicemanagementtroubleshootingevent?view=graph-rest-beta)<br/>[deviceSetupConfiguration](/graph/api/resources/intune-deviceconfig-devicesetupconfiguration?view=graph-rest-beta)<br/>[enrollmentTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-enrollmenttroubleshootingevent?view=graph-rest-beta)<br/>[macOSOfficeSuiteApp](/graph/api/resources/intune-apps-macosofficesuiteapp?view=graph-rest-beta)<br/>[microsoftStoreForBusinessApp](/graph/api/resources/intune-apps-microsoftstoreforbusinessapp?view=graph-rest-beta)<br/>[ndesConnector](/graph/api/resources/intune-deviceconfig-ndesconnector?view=graph-rest-beta)<br/>|
@@ -3611,7 +3610,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |:---|:---|:---|
 |添加项|Beta|新增了对教育版方案的支持，包括添加了以下资源：<br/>[学校](/graph/api/resources/educationschool?view=graph-rest-beta)<br/>[课程](/graph/api/resources/educationclass?view=graph-rest-beta)<br/>[用户](/graph/api/resources/educationuser?view=graph-rest-beta)<br/>[作业](/graph/api/resources/educationassignment?view=graph-rest-beta)<br/>[提交](/graph/api/resources/educationsubmission?view=graph-rest-beta)<br/>请参阅资源主题，详细了解可用方法。|
 
-### <a name="identity-and-access--synchronization"></a>身份和访问|同步
+### <a name="applications"></a>应用程序
 
 | 更改类型 | 版本 | 说明                              |
 | :---------- | :------ | :--------------------------------------- |
@@ -3625,7 +3624,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="october-2017"></a>2017 年 10 月
 
-### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 |更改类型|版本|说明|
 |:---|:---|:---|
 |添加项|Beta|添加了新实体：<br/>[androidDeviceComplianceLocalActionLockDeviceWithPasscode](/graph/api/resources/intune-deviceconfig-androiddevicecompliancelocalactionlockdevicewithpasscode?view=graph-rest-beta)<br/>[iosLobAppProvisioningConfigurationAssignment](/graph/api/resources/intune-apps-ioslobappprovisioningconfigurationassignment?view=graph-rest-beta)<br/>[iosVppEBookAssignment](/graph/api/resources/intune-books-iosvppebookassignment?view=graph-rest-beta)<br/>[managedDeviceMobileAppConfigurationAssignment](/graph/api/resources/intune-apps-manageddevicemobileappconfigurationassignment?view=graph-rest-beta)<br/>[managedEBookAssignment](/graph/api/resources/intune-books-managedebookassignment?view=graph-rest-beta)<br/>[managedMobileApp](/graph/api/resources/intune-mam-managedmobileapp?view=graph-rest-beta)<br/>[mobileAppAssignment](/graph/api/resources/intune-apps-mobileappassignment?view=graph-rest-beta)<br/>[termsAndConditionsAssignment](/graph/api/resources/intune-companyterms-termsandconditionsassignment?view=graph-rest-beta)<br/>[vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-beta)<br/>[windows10PFXImportCertificateProfile](/graph/api/resources/intune-deviceconfig-windows10pfximportcertificateprofile?view=graph-rest-beta)<br/>[windowsAssignedAccessProfile](/graph/api/resources/intune-deviceconfig-windowsassignedaccessprofile?view=graph-rest-beta)<br/>[windowsDomainJoinConfiguration](/graph/api/resources/intune-deviceconfig-windowsdomainjoinconfiguration?view=graph-rest-beta)<br/>|
@@ -3686,13 +3685,13 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |更改内容|Beta|更改了 [deviceConfigurationSettingState](/graph/api/resources/intune-deviceconfig-deviceconfigurationsettingstate?view=graph-rest-beta) 复杂类型上以下属性的类型：<br/>**errorCode**（从 Int32 更改为 Int64）<br/>|
 |更改内容|Beta|更改了 [windowsNetworkIsolationPolicy](/graph/api/resources/intune-deviceconfig-windowsnetworkisolationpolicy?view=graph-rest-beta) 复杂类型上以下属性的类型：<br/>**enterpriseCloudResources** 从 [windowsNetworkIsolationCloudResourceCollection](/graph/api/resources/intune-deviceconfig-windowsnetworkisolationcloudresourcecollection?view=graph-rest-beta) 更改为 [proxiedDomain](/graph/api/resources/intune-deviceconfig-proxieddomain?view=graph-rest-beta) 集合<br/>**enterpriseInternalProxyServers** 从 windowsNetworkIsolationResourceCollection 更改为 String 集合<br/>**enterpriseIPRanges** 从 [windowsNetworkIsolationIPRangeCollection](/graph/api/resources/intune-deviceconfig-iprange?view=graph-rest-beta) 更改为 ipRange 集合<br/>**enterpriseNetworkDomainNames** 从 windowsNetworkIsolationResourceCollection 更改为 String 集合<br/>**enterpriseProxyServers** 从 windowsNetworkIsolationResourceCollection 更改为 String 集合<br/>**neutralDomainResources** 从 windowsNetworkIsolationResourceCollection 更改为 String 集合<br/>|
 
-### <a name="identity-and-access-azure-ad"></a>身份和访问 (Azure AD)
+### <a name="identity-and-access"></a>身份和访问
 
 | 更改类型 | 版本 | 说明                              |
 | :---------- | :------ | :--------------------------------------- |
 |添加项|Beta|添加了 [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-beta) 实体，以及 [create](/graph/api/identityprovider-post-identityproviders?view=graph-rest-beta)、[list](/graph/api/identityprovider-list?view=graph-rest-beta)、[get](/graph/api/identityprovider-get?view=graph-rest-beta)、[update](/graph/api/identityprovider-update?view=graph-rest-beta) 和 [delete](/graph/api/identityprovider-delete?view=graph-rest-beta) 操作。|
 
-### <a name="mail-outlook"></a>邮件 (Outlook)
+### <a name="mail"></a>邮件
 
 | 更改类型 | 版本 | 说明                              |
 | :---------- | :------ | :--------------------------------------- |
@@ -3720,14 +3719,14 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 更改      | Beta    | 添加了 [getYammerDeviceUsageUserDetail](/graph/api/reportroot-getyammerdeviceusageuserdetail?view=graph-rest-beta)、[getYammerDeviceUsageDistributionUserCounts](/graph/api/reportroot-getyammerdeviceusagedistributionusercounts?view=graph-rest-beta) 和 [getYammerDeviceUsageUserCounts](/graph/api/reportroot-getyammerdeviceusageusercounts?view=graph-rest-beta) API。 这些 API 取代了 YammerDeviceUsage API。 |
 | 更改      | Beta    | 添加了 [getYammerGroupsActivityDetail](/graph/api/reportroot-getyammergroupsactivitydetail?view=graph-rest-beta)、[getYammerGroupsActivityGroupCounts](/graph/api/reportroot-getyammergroupsactivitygroupcounts?view=graph-rest-beta) 和 [getYammerGroupsActivityCounts](/graph/api/reportroot-getyammergroupsactivitycounts?view=graph-rest-beta) API。 这些 API 取代了 YammerGroupsActivity API。 |
 
-### <a name="teamwork-microsoft-teams"></a>团队合作 (Microsoft Teams)
+### <a name="teamwork"></a>团队合作
 
 |更改类型|版本|说明|
 |:---|:---|:---|
 |添加项|beta|添加了新的 [team](/graph/api/resources/team?view=graph-rest-beta) 实体。|
 |添加项|beta|添加了对 [team](/graph/api/resources/team?view=graph-rest-beta) 实体执行的 [create](/graph/api/team-put-teams?view=graph-rest-beta)、[get](/graph/api/team-get?view=graph-rest-beta) 和 [update](/graph/api/team-update?view=graph-rest-beta) 操作。|
 
-### <a name="users--outlook-settings"></a>用户|Outlook 设置
+### <a name="users"></a>用户
 
 | 更改类型 | 版本 | 说明                              |
 | :---------- | :------ | :--------------------------------------- |
@@ -3737,7 +3736,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="september-2017"></a>2017 年 9 月
 
-### <a name="calendar-outlook"></a>日历 (Outlook)
+### <a name="calendar"></a>日历
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -3747,7 +3746,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | Beta          | 向 [location](/graph/api/resources/location?view=graph-rest-beta) 复杂类型添加了 **uniqueId** 和 **uniqueIdType** 属性。 在这种情况下，这些属性仅供内部使用。 |
 | 更改          | v1.0 和 Beta | 在用户已与登录用户共享日历，或已将其邮箱委派给登录用户时，此行为增强功能可获取该共享日历或其事件内容。 在这种情况下，只要登录 用户已经向应用提供了委派权限，应用即可指定该用户的 ID 或用户主体名称来[获取该共享日历](/graph/api/calendar-get?view=graph-rest-1.0)，或者[获取该共享日历中的事件](/graph/api/user-list-events?view=graph-rest-1.0)。 |
 
-### <a name="devices-and-apps-microsoft-intune"></a>设备和应用 (Microsoft Intune)
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
 
 | 更改类型 | 版本 | 说明                              |
 | :---------- | :------ | :--------------------------------------- |
@@ -3789,7 +3788,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 更改      | Beta    | 向 [targetedManagedAppProtection](/graph/api/resources/intune-mam-targetedmanagedappprotection?view=graph-rest-beta) 实体添加了 **assignments** 导航属性 |
 | 更改      | Beta    | 向 [windowsInformationProtection](/graph/api/resources/intune-mam-windowsinformationprotection?view=graph-rest-beta) 实体添加了 **assignments** 导航属性 |
 
-### <a name="files-onedrive-for-business"></a>文件 (OneDrive for Business)
+### <a name="files"></a>文件
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3924,7 +3923,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 [TextColumn]: /graph/api/resources/textcolumn?view=graph-rest-1.0
 
 
-### <a name="users--outlook-settings"></a>用户|Outlook 设置
+### <a name="users"></a>用户
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3978,7 +3977,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | v1.0 和 Beta | 向 **site** 添加了 [onenote](/graph/api/resources/onenote?view=graph-rest-1.0) 导航属性。 |
 | 添加项        | Beta          | 添加了用于复制操作的目标 *siteCollectionId* 和目标 *siteId* 参数。例如：[CopyNotebook](/graph/api/notebook-copynotebook?view=graph-rest-1.0)。 |
 
-### <a name="social-and-workplace-intelligence--people"></a>社交和工作场所智能 | 人员
+### <a name="people-and-workplace-intelligence--people"></a>人员和工作场所智能 | 人员
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -4025,7 +4024,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 更改           | Beta    | 将 **settingName**、**userId**、**userName**、**userEmail** 和 **currentValue** 属性添加到了 [deviceConfigurationSettingState](/graph/api/resources/intune-deviceconfig-deviceconfigurationsettingstate?view=graph-rest-beta) 复杂类型中 |
 | 更改           | Beta    | 向 [deviceOperatingSystemSummary](/graph/api/resources/intune-devices-deviceoperatingsystemsummary?view=graph-rest-beta) 复杂类型添加了 **unknownCount** 属性 |
 
-### <a name="identity-and-access--group-setting"></a>身份和访问|组设置
+### <a name="groups"></a>组
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -4102,7 +4101,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="may-2017"></a>2017 年 5 月
 
-### <a name="identity-and-access--application"></a>身份和访问|应用程序
+### <a name="application"></a>应用程序
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -4120,7 +4119,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | Beta        | 添加了对 Project Rome 的支持，包括[获取设备列表](/graph/api/user-list-devices?view=graph-rest-beta)、[发送命令到设备](/graph/api/send-device-command?view=graph-rest-beta)和[查看命令状态](/graph/api/get-device-command-status?view=graph-rest-beta)。 |
 | 添加项        | Beta        | 增加了对用户[活动](/graph/api/resources/projectrome-activity?view=graph-rest-beta)和 [historyItems](/graph/api/resources/projectrome-historyitem?view=graph-rest-beta) 的支持，其中包括 [upsert 活动](/graph/api/projectrome-put-activity?view=graph-rest-beta)和 [upsert historyItem](/graph/api/projectrome-put-historyitem?view=graph-rest-beta)。 |
 
-### <a name="identity-and-access--administrative-unit"></a>身份和访问|管理单元
+### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -4193,7 +4192,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 更改 | Beta | 向 **sharingLink** 添加了 **configuratorUrl** 和 **WebHtml** 属性。 <br/> 向 **folder** 资源类型添加了 **folderView** 资源类型和 **view** 属性。 <br/> 向 **driveItem** 添加了 **listItem** 导航属性。 <br/> 向 **drive** 添加了 **list** 导航属性。
 
 
-### <a name="open-extensions"></a>开放扩展
+### <a name="extensions--open-extensions"></a>扩展 | 开放扩展
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -4203,7 +4202,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | Beta          | 支持 `$expand` 在 [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta) 中[获取开放扩展](/graph/api/opentypeextension-get?view=graph-rest-1.0)。 |
 
 
-### <a name="schema-extensions"></a>架构扩展
+### <a name="extensions--schema-extensions"></a>扩展|架构扩展
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -4220,7 +4219,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |:--------------|:----------|:--------------|
 | 添加项 | v1.0 和 beta | 向 **group** 添加了 **drives** 和 **sites** 导航属性。
 
-### <a name="social-and-workplace-intelligence--insights"></a>社交和工作场所智能|见解
+### <a name="people-and-workplace-intelligence--insights"></a>人脉和工作场所智能|见解
 
 |**更改类型**|**版本**|**说明**|
 |:-------------|:-----------|:--------------|
@@ -4340,7 +4339,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="april-2017"></a>2017 年 4 月
 
-### <a name="identity-and-access--administrative-unit"></a>身份和访问|管理单元
+### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -4525,14 +4524,14 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | Beta        | 新资源：</br>[contract](/graph/api/resources/contract?view=graph-rest-beta) |
 | 添加        | Beta        | 在[域](/graph/api/resources/domain?view=graph-rest-beta)上添加了函数。<br/>新实体：</br>[domain](/graph/api/resources/domain?view=graph-rest-beta)<br/>[domainDnsRecord](/graph/api/resources/domaindnsrecord?view=graph-rest-beta)<br/>[domainDnsCnameRecord](/graph/api/resources/domaindnscnamerecord?view=graph-rest-beta)<br/>[domainDnsMxRecord](/graph/api/resources/domaindnsmxrecord?view=graph-rest-beta)<br/>[domainDnsSrvRecord](/graph/api/resources/domaindnssrvrecord?view=graph-rest-beta)<br/>[domainDnsTxtRecord](/graph/api/resources/domaindnstxtrecord?view=graph-rest-beta)<br/>[domainDnsUnavailableRecord](/graph/api/resources/domaindnsunavailablerecord?view=graph-rest-beta)<br/>新操作：</br>[forceDelete](/graph/api/domain-forcedelete?view=graph-rest-beta)</br>[verify](/graph/api/domain-verify?view=graph-rest-beta) |
 
-### <a name="schema-extensions"></a>架构扩展
+### <a name="extensions--schema-extensions"></a>扩展|架构扩展
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | Beta        | 使用[架构扩展](extensibility-overview.md#schema-extensions)通过应用程序数据扩展 Microsoft Graph。该操作在以下资源上受支持：<br/>管理单元<br/>日历事件<br/>设备<br/>组<br/>message<br/>组织<br/>个人联系人<br/>帖子<br/>用户<br/>请参阅以下示例：<br/>[使用架构扩展向组添加自定义数据（预览）](extensibility-schema-groups.md) |
 | 添加项        | Beta        | 提供另一种不需要验证的 .com 虚域就能创建架构扩展定义的方法。有关详细信息，请参阅[架构扩展](extensibility-overview.md#schema-extensions)。 |
 
-### <a name="open-extensions"></a>开放扩展
+### <a name="extensions--open-extensions"></a>扩展 | 开放扩展
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -4664,7 +4663,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | v1.0 和 beta | v2.0 授权终结点现在通过[管理员同意终结点](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions)支持[需要征得管理员同意的权限范围](permissions-reference.md)。 |
 | 添加项        | v1.0 和 beta | v2.0 授权终结点现在通过[管理员同意终结点](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions)支持对租户中的所有用户授予管理员同意。 |
 
-### <a name="identity-and-access--invitation-manager"></a>身份和访问|邀请管理器
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -4673,7 +4672,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="september-2016"></a>2016 年 9 月
 
-### <a name="identity-and-access--application"></a>身份和访问|应用程序
+### <a name="applications"></a>应用程序
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -4715,13 +4714,13 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | v1.0        | 应用可以使用 v1.0 Outlook 邮件、日历和联系人 API 访问使用 Exchange 2016 累积更新 3 (CU3) 的混合部署中的本地邮箱。可在特定的[混合部署](hybrid-rest-support.md)中查找有关 REST API 支持的更多详细信息。**注意：** 如果正在 v1.0 中使用这些 API 集，现在会发现应用（包括生产应用）可用于符合特定混合部署要求的本地邮箱。此功能仅在预览中可用。 |
 
-### <a name="identity-and-access--identity-protection"></a>身份和访问 | 身份保护
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 更改          | Beta        | 作为架构更改的一部分，两个位置属性的类型将在 identityRiskEvents 终结点中替换为新的复杂类型，将在 identityRiskEvents 终结点中更改/添加以下属性：</br>**location** 已从 Edm.String 更改为 ComplexType signInLocation。<br/>**previousLocation** 已从 Edm.String 更改为 ComplexType signInLocation。<br/>**signInLocation** 是新的 ComplexType，其中包含 city、state、countryOrRegion 和 geoCoordinates 属性。<br/>**geoCoordinates** 是新的 ComplexType，其中包含 latitude 和 longitude 属性。 |
 
-### <a name="identity-and-access--invitation-manager"></a>身份和访问|邀请管理器
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -4780,11 +4779,6 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | Beta        | 添加了 **refreshTokensValidFromDateTime** 只读属性，以指示刷新或会话令牌从何时开始生效。在该时间之前颁发的任何令牌均无效，且尝试使用此类令牌的任何行为将强制用户重新登录。 |
 | 添加项        | Beta        | 添加了 **showInAddressList** 属性来控制 Outlook 全局地址列表是否应包含此用户。 |
 | 添加项        | Beta        | 添加了 **invalidateAllRefreshTokens** 服务操作，可通过将 **refreshTokensValidFromDateTime** 用户属性重置为当前的日期时间来使向应用程序颁发的用户的所有刷新和会话令牌失效。 |
-
-### <a name="users--outlook-settings"></a>用户|Outlook 设置
-
-| **更改类型** | **版本** | **说明**                          |
-| :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | v1.0        | 添加了 [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) 复杂类型，其中包括 **automaticRepliesSetting**、**timeZone** 和 **language** 属性。 |
 | 添加项        | v1.0        | 向 [user](/graph/api/resources/user?view=graph-rest-1.0) 资源添加了 **mailboxSettings** 属性。 |
 
@@ -4804,13 +4798,13 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | v1.0        | Microsoft Graph 上的 Excel REST API 已公开发布。 现在可以在 Microsoft 365 中使用 Excel 工作簿构建丰富的深入集成。 有关详细信息，请参阅[在 Microsoft Graph 上使用新的 Excel REST API 增强你的应用](https://developer.microsoft.com/office/blogs/power-your-apps-with-the-new-excel-rest-api/)博客文章。 |
 
-### <a name="social-and-workplace-intelligence--people"></a>社交和工作场所智能|人员
+### <a name="people-and-workplace-intelligence--people"></a>人员和工作场所智能 | 人员
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 更改          | Beta        | 属性 WebSite 重命名为 Websites。有关详细信息，请参阅[即将对联系人和人员 API 做出的更改](https://developer.microsoft.com/office/blogs/upcoming-changes-to-contacts-and-people-apis/)。 |
 
-### <a name="identity-and-access--privileged-identity-management"></a>身份和访问|特权身份管理
+### <a name="identity-and-access--governance"></a>身份和访问 | 治理
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -4818,7 +4812,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="july-2016"></a>2016 年 7 月
 
-### <a name="identity-and-access--administrative-unit"></a>身份和访问|管理单元
+### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -4826,7 +4820,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 ## <a name="june-2016"></a>2016 年 6 月
 
-### <a name="identity-and-access--identity-protection"></a>身份和访问 | 身份保护
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
 
 |**更改类型**|**版本**|**说明**|
 |:--------------|:-----------|:--------------|
@@ -4852,7 +4846,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | v1.0        | 添加了 extensions，它是用以支持 OData v4 开放类型 openTypeExtension 的抽象类型。 |
 
-### <a name="identity-and-access--directory-setting"></a>身份和访问|目录设置
+### <a name="identity-and-access--directory-management"></a>身份和访问 | 目录管理
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -4980,7 +4974,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项        | v1.0 和 beta | 添加了 sharingInvitation 属性以提供此权限关联的任何共享邀请的详细信息。 |
 
-### <a name="social-and-workplace-intelligence--people"></a>社交和工作场所智能|人员
+### <a name="people-and-workplace-intelligence--people"></a>人员和工作场所智能 | 人员
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |

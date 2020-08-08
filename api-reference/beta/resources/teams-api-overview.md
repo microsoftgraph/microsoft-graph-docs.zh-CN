@@ -1,22 +1,22 @@
 ---
 title: 将 Microsoft Graph API 与 Microsoft Teams 结合使用
-description: Microsoft 团队是 Microsoft 365 中基于聊天的工作区，可提供对特定于团队的日历、文件、OneNote 笔记、Planner 计划等的内置访问权限。
+description: Microsoft Teams 是 Microsoft 365 中基于聊天的工作区，可提供对特定于团队的日历、文件、OneNote 笔记、规划器计划等对象的内置访问权限。
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 98e50a32ba363a4eb7fc9f6ecd26e77e9cf60c85
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: df81553fffb4b25cb8109af809e34676f6d3f874
+ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897979"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46589247"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft 团队是 Microsoft 365 中基于聊天的工作区，可提供对特定于团队的日历、文件、OneNote 笔记、Planner 计划、倒班计划等的内置访问权限。
+Microsoft Teams 是 Microsoft 365 中基于聊天的工作区，可提供对特定于团队的日历、文件、OneNote 笔记、规划器计划、排班计划等对象的内置访问权限。
 
 ## <a name="key-resources-in-microsoft-teams"></a>Microsoft Teams 中的重要资源
 
@@ -30,9 +30,9 @@ Microsoft 团队是 Microsoft 365 中基于聊天的工作区，可提供对特�
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [列出](../api/teamsappinstallation-list.md)、[安装](../api/teamsappinstallation-add.md)、[升级](../api/teamsappinstallation-delete.md)、[移除](../api/teamsappinstallation-delete.md) |
 |[chatMessage](../resources/chatmessage.md)| [列出](../api/channel-list-messages.md)、[发送](../api/channel-post-messages.md)、[读取](../api/channel-get-message.md) |
 | [call](../resources/call.md)| [应答](../api/call-answer.md)、[拒绝](../api/call-reject.md)、[重定向](../api/call-redirect.md)、[静音](../api/call-mute.md)、[取消静音](../api/call-unmute.md)、[更新元数据](../api/call-updatemetadata.md)、[更改屏幕共享角色](../api/call-changescreensharingrole.md)、[列出参与者](../api/call-list-participants.md)、[邀请参与者](../api/participant-invite.md)、[将所有参与者设为静音](../api/participant-muteall.md) |
-|[日程安排](../resources/schedule.md)| [创建或替换](../api/team-put-schedule.md)、[获取](../api/schedule-get.md)、[共享](../api/schedule-share.md) |
+|[schedule](../resources/schedule.md)| [创建或替换](../api/team-put-schedule.md)、[获取](../api/schedule-get.md)、[共享](../api/schedule-share.md) |
 |[schedulingGroup](../resources/schedulinggroup.md)| [创建](../api/schedule-post-schedulinggroups.md)、[列出](../api/schedule-list-schedulinggroups.md)、[获取](../api/schedulinggroup-get.md)、[替换](../api/schedulinggroup-put.md)、[删除](../api/schedulinggroup-delete.md) |
-|[ctrl](../resources/shift.md)| [创建](../api/schedule-post-shifts.md)、[列出](../api/schedule-list-shifts.md)、[获取](../api/shift-get.md)、[替换](../api/shift-put.md)、[删除](../api/shift-delete.md) |
+|[shift](../resources/shift.md)| [创建](../api/schedule-post-shifts.md)、[列出](../api/schedule-list-shifts.md)、[获取](../api/shift-get.md)、[替换](../api/shift-put.md)、[删除](../api/shift-delete.md) |
 |[timeOff](../resources/timeoff.md)| [创建](../api/schedule-post-timesoff.md)、[列出](../api/schedule-list-timesoff.md)、[获取](../api/timeoff-get.md)、[替换](../api/timeoff-put.md)、[删除](../api/timeoff-delete.md) |
 |[timeOffReason](../resources/timeoffreason.md)| [创建](../api/schedule-post-timeoffreasons.md)、[列出](../api/schedule-list-timeoffreasons.md)、[获取](../api/timeoffreason-get.md)、[替换](../api/timeoffreason-put.md)、[删除](../api/timeoffreason-delete.md) |
 
@@ -44,11 +44,11 @@ Microsoft Teams 的已测试性能和容量限制将记录在 [Microsoft Teams �
 
 频道内的文件存储在 SharePoint 中；[SharePoint online 限制](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)适用。
 
-另请参阅 [Microsoft Teams 服务限制](/graph/throttling)。
+另请参阅 [Microsoft Teams 服务限制](/graph/throttling#microsoft-teams-service-limits)。
 
 ## <a name="teams-and-groups"></a>用户和组
 
-在 Microsoft Graph 中，Microsoft Teams 由[组](../resources/group.md)资源表示。 Microsoft 团队和 Microsoft 365 组都满足了组协作的各种需求。 几乎所有基于组的功能都适用于 Microsoft 团队和 Microsoft 365 组，例如组日历、文件、便笺、照片、计划等。 [团队](team.md)和 Microsoft 365 组之间的主要区别是成员之间的通信模式。 团队成员的通信方式是在特定团队的上下文中进行持久聊天。 Microsoft 365 组成员通过组对话进行通信，这是在 Outlook 中的组上下文中发生的电子邮件对话。
+在 Microsoft Graph 中，Microsoft Teams 由[组](../resources/group.md)资源表示。 Microsoft Teams 和 Microsoft 365 组均可满足组协作的各种需求。 几乎所有基于组的功能都适用于 Microsoft Teams 和 Microsoft 365 组，例如组日历、文件、笔记、照片、计划等。 [团队](team.md)与 Microsoft 365 组之间的主要区别在于成员之间的通信模式。 团队成员的通信方式是在特定团队的上下文中进行持久聊天。 Microsoft 365 组成员通过组对话进行通信，它们是在 Outlook 的组上下文中发生的电子邮件对话。
 
 具有团队的任何组都具有 **resourceProvisioningOptions** 属性，它包含“团队”。
 
@@ -116,7 +116,7 @@ Microsoft Teams 的已测试性能和容量限制将记录在 [Microsoft Teams �
 未遵循这些轮询要求的应用将被视为违反了 [Microsoft API 使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)。 这可能导致额外的[限制](/graph/throttling)或暂停/终止使用 Microsoft API。
 
 ## <a name="whats-new"></a>最近更新
-查找有关此 API 集的[最新新功能和更新](/graph/whats-new-overview)。
+了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
 
 ## <a name="see-also"></a>另请参阅
 
