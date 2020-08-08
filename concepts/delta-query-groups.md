@@ -1,15 +1,15 @@
 ---
 title: 获取组的增量更改
 description: 使用 delta 查询，可通过一系列 delta 函数调用来查询组的添加、删除或更新。 delta 查询可便于发现组的更改
-author: baywet
+author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 0f91b33218ad07d140b910e061bdf3a76d676573
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 947ffe713d02eb55d8fa2630ad31406ef84e70fc
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892658"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598253"
 ---
 # <a name="get-incremental-changes-for-groups"></a>获取组的增量更改
 

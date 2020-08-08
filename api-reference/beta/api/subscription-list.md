@@ -2,19 +2,19 @@
 title: 列出订阅
 description: " 有关详细信息，请参阅以下方案。"
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: d48036e3c54d0014abf6676877a329bcb81964e1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c04d7bb51fa5f99694d01d703b18e5073450cf9
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453154"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598141"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,8 +26,8 @@ ms.locfileid: "42453154"
 
 | 权限类型  | 权限（从最低特权到最高特权）  |
 |:---------------- |:-------------------------------------------- |
-| [委派](/graph/auth-v2-user)（工作或学校帐户） | [创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。 Read. 所有（请参阅下面的）。 |
-| [委派](/graph/auth-v2-user)（个人 Microsoft 帐户） | [创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。 Read. 所有（请参阅下面的）。 |
+| [委派](/graph/auth-v2-user) (工作或学校帐户)  | [创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。读取。所有 (请参阅下面) 。 |
+| [委派](/graph/auth-v2-user) (个人 Microsoft 帐户)  | [创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。读取。所有 (请参阅下面) 。 |
 | [应用程序](/graph/auth-v2-service) | [创建订阅](subscription-post-subscriptions.md)所需的权限。 |
 
 响应结果基于调用应用的上下文。 以下是常见方案的摘要：

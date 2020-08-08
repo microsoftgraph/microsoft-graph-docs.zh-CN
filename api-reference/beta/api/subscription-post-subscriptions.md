@@ -2,15 +2,15 @@
 title: 创建订阅
 description: 订阅侦听器应用程序，以便在 Microsoft Graph 资源上的数据发生更改时接收更改通知。
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 10e764bef772b6874f811048b9ec5cdc101f1807
-ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
+ms.openlocfilehash: 36555a946aa9092d5cab6e27548a16ba783d738e
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46531458"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598134"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -29,10 +29,10 @@ ms.locfileid: "46531458"
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | 不支持 | 不支持 | CallRecords.Read.All  |
-|[了 chatmessage](../resources/chatmessage.md) （/teams/{id}/channels/{id}/messages） | ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All | 不支持 | ChannelMessage.Read.All  |
-|[了 chatmessage](../resources/chatmessage.md) （/teams/allMessages--组织中的所有频道邮件） | 不支持 | 不支持 | ChannelMessage.Read.All  |
-|[了 chatmessage](../resources/chatmessage.md) （/chats/{id}/messages） | Chat.Read、Chat.ReadWrite | 不支持 | Chat.Read.All  |
-|[了 chatmessage](../resources/chatmessage.md) （/chats/allMessages--组织中的所有聊天邮件） | 不支持 | 不支持 | Chat.Read.All  |
+|[了 chatmessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages)  | ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All | 不支持 | ChannelMessage.Read.All  |
+|[了 chatmessage](../resources/chatmessage.md) (/teams/allmessages--组织中的所有频道邮件)  | 不支持 | 不支持 | ChannelMessage.Read.All  |
+|[了 chatmessage](../resources/chatmessage.md) (/chats/{id}/messages)  | Chat.Read、Chat.ReadWrite | 不支持 | Chat.Read.All  |
+|[了 chatmessage](../resources/chatmessage.md) (/chats/allmessages--组织中的所有聊天邮件)  | 不支持 | 不支持 | Chat.Read.All  |
 |[联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md)（用户的个人 OneDrive） | 不支持 | Files.ReadWrite | 不支持 |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | 不支持 | Files.ReadWrite.All |
@@ -47,7 +47,7 @@ ms.locfileid: "46531458"
 
 ### <a name="chatmessage"></a>chatMessage
 
-具有委派权限的**了 chatmessage**订阅不支持资源数据（**includeResourceData**必须为 `false` ），并且不需要[加密](/graph/webhooks-with-resource-data)。
+具有委派权限的**了 chatmessage**订阅不支持资源数据 (**includeResourceData**必须 `false`) ，并且不需要[加密](/graph/webhooks-with-resource-data)。
 
 具有应用程序权限的**了 chatmessage**订阅包括资源数据，并需要[加密](/graph/webhooks-with-resource-data)。 如果未指定[encryptionCertificate](../resources/subscription.md) ，则订阅创建将失败。 在创建**了 chatmessage**订阅之前，您必须请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。 
 
@@ -55,13 +55,13 @@ ms.locfileid: "46531458"
 
 ### <a name="driveitem"></a>driveItem
 
-对 OneDrive 项目的订阅适用其他限制。 这些限制适用于创建和管理（获取、更新和删除）订阅。
+对 OneDrive 项目的订阅适用其他限制。 这些限制适用于创建以及管理 (获取、更新和删除) 订阅。
 
 在个人 OneDrive 上，可订阅根文件夹或该驱动器中的任何子文件夹。 在 OneDrive for Business 上，只可以订阅根文件夹。 对订阅的文件夹或者其层次结构中的任何文件、文件夹或其他 **driveItem** 实例所做更改属于请求的更改类型时，发送更改通知。 无法订阅不是文件夹的“**驱动器**”或“**driveItem**”实例，例如单个文件。
 
 ### <a name="contact-event-and-message"></a>联系人、事件和邮件
 
-对 Outlook 项目的订阅适用其他限制。 这些限制适用于创建和管理（获取、更新和删除）订阅。
+对 Outlook 项目的订阅适用其他限制。 这些限制适用于创建以及管理 (获取、更新和删除) 订阅。
 
 - 委派权限仅支持订阅登录用户的邮箱中的文件夹中的项目。 也就是说，不能使用委托的权限 Calendars.Read 来订阅另一个用户邮箱中的事件。
 - 订阅_共享或委托_文件夹中 Outlook 联系人、事件或邮件的更改通知：
@@ -148,7 +148,7 @@ Content-type: application/json
 |[组](../resources/group.md)|`groups`|
 |[List](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[邮件](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
-|[Shell](../resources/presence.md)| `/communications/presences/{id}`（单个用户）（ `/communications/presences?$filter=id in ({id},{id}…)` 多个用户）|
+|[Shell](../resources/presence.md)| `/communications/presences/{id}` (单个用户) ， `/communications/presences?$filter=id in ({id},{id}…)` (多个用户) |
 |[用户](../resources/user.md)|`users`|
 |[安全警报](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
 
@@ -186,7 +186,7 @@ Content-length: 252
 
 ## <a name="notification-endpoint-validation"></a>通知终结点验证
 
-订阅通知终结点（在**notificationUrl**属性中指定）必须能够响应验证请求，如[设置用户数据中的更改通知](/graph/webhooks#notification-endpoint-validation)中所述。 如果验证失败，创建订阅请求返回错误“400 请求无效”。
+ (在**notificationUrl**属性中指定的订阅通知终结点) 必须能够响应验证请求，如[设置用户数据中的更改通知](/graph/webhooks#notification-endpoint-validation)中所述。 如果验证失败，创建订阅请求返回错误“400 请求无效”。
 
 [error-response]: /graph/errors
 

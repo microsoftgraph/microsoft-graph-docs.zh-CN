@@ -44,6 +44,8 @@ items:
             href: /graph/webhooks-outlook-authz?context=graph/api/beta
           - name: 与资源数据有关的通知（预览版）
             href: /graph/webhooks-with-resource-data?context=graph/api/beta
+          - name: '获取发送的通知 (预览的不同方式) '
+            href: /graph/change-notifications-delivery?context=graph/api/beta
       - name: 更改跟踪
         displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
         items:

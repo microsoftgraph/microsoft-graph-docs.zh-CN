@@ -2,15 +2,15 @@
 title: changeNotificationEncryptedContent 资源类型
 description: 通过使用资源数据的订阅，客户端应用程序可以接收更改通知，以更改 Microsoft Graph 中的数据。 更改通知加密内容代表通知附带的加密数据。
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 1b89fcf99ed4a724bb86413d6ef369b121e28cd3
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+ms.openlocfilehash: 4ca2230cf3735cb696136f3b3014e8545202ebfe
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44430580"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598491"
 ---
 # <a name="changenotificationencryptedcontent-resource-type"></a>changeNotificationEncryptedContent 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "44430580"
 
 代表附加到更改通知的加密数据。
 
-有关详细信息，请参阅[设置包含资源数据的更改通知（预览）](/graph/webhooks-with-resource-data.md)。
+有关详细信息，请参阅[设置包含资源数据 (preview) 的更改通知](/graph/webhooks-with-resource-data.md)。
 
 ## <a name="methods"></a>方法
 

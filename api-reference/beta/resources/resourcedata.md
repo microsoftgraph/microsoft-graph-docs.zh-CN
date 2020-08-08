@@ -2,15 +2,15 @@
 title: resourceData 资源类型
 description: 表示附加到发送到订阅服务器的更改通知的资源数据。
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 0f962ddeb118f2f7e98cfa9cc5f3acc45f083071
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+ms.openlocfilehash: 5ea2380c53414e3ef4fe0845ee2638ba8ce86482
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44430578"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598533"
 ---
 # <a name="resourcedata-resource-type"></a>resourceData 资源类型
 

@@ -1,15 +1,15 @@
 ---
 title: 减少 Outlook 资源丢失的订阅和更改通知（预览版）
 description: 由于用户密码重置等安全事件，Outlook 可能会暂停传递更改通知。 需要处理特殊生命周期事件（`subscriptionRemoved` 和 `missed`），以确保传递更改通知不间断。
-author: baywet
+author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 2c299f2438ede2dc019fab63b7b84948fc0968af
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: 0377f8f0eca7cadfed0a76f84b257e8867f73e4c
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408062"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598190"
 ---
 # <a name="reduce-missing-subscriptions-and-change-notifications-for-outlook-resources-preview"></a>减少 Outlook 资源丢失的订阅和更改通知（预览版） 
 
