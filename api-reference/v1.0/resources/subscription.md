@@ -1,25 +1,25 @@
 ---
 title: 订阅资源类型
-description: 订阅允许客户端应用接收有关 Microsoft Graph 中的数据更改的更改通知。 目前，支持订阅以下资源：
+description: 借助订阅，客户端应用可以接收有关 Microsoft Graph 数据更改的变更通知。 目前，支持订阅以下资源：
 localization_priority: Priority
-author: baywet
+author: davidmu1
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2639e23181af020722311cb6db00c9464949725a
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: cbd4b1ea0244a9b5a88f5def52670c72d3ff2019
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897650"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598393"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
 命名空间：microsoft.graph
 
-订阅允许客户端应用接收有关 Microsoft Graph 中的数据更改的更改通知。 目前，支持订阅以下资源：
+借助订阅，客户端应用可以接收有关 Microsoft Graph 数据更改的变更通知。 目前，支持订阅以下资源：
 
 - Microsoft Graph 安全性 API 中的[警报][]
-- Microsoft 团队中的呼叫或会议之后生成的[callRecord][]
+- Microsoft Teams 中的通话或会议后生成的 [callRecord][]
 - Microsoft 365 组中的[对话][]
 - OneDrive for Business 中根文件夹[driveItem][] 的层次结构中的内容，或用户个人 OneDrive 中的根文件夹或子文件夹 [driveItem][] 的层次结构中的内容
 - SharePoint [网站][]下的[列表][] 
@@ -32,7 +32,7 @@ ms.locfileid: "44897650"
 
 | 方法 | 返回类型 | 说明 |
 |:-------|:------------|:------------|
-| [创建订阅](../api/subscription-post-subscriptions.md) | [订阅](subscription.md) | 订阅侦听器应用程序，以便在 Microsoft Graph 数据发生更改时接收更改通知。 |
+| [创建订阅](../api/subscription-post-subscriptions.md) | [订阅](subscription.md) | 订阅侦听器应用程序，在 Microsoft Graph 数据发生更改时接收变更通知。 |
 | [更新订阅](../api/subscription-update.md) | [订阅](subscription.md) | 通过更新其过期时间来续订订阅。 |
 | [列出订阅](../api/subscription-list.md) | [订阅](subscription.md) | 列出有效订阅。 |
 | [获取订阅](../api/subscription-get.md) | [订阅](subscription.md) | 读取 subscription 对象的属性和关系。 |
@@ -42,11 +42,11 @@ ms.locfileid: "44897650"
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
-| changeType | 字符串 | 必需。 指示订阅的资源中将引发更改通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。<br><br>注意：驱动器根项和列表更改通知仅支持 `updated` changeType。 用户和组更改通知支持 `updated` 和 `deleted` changeType。 |
-| notificationUrl | 字符串 | 必需。 将接收更改通知的终结点的 URL。 该 URL 必须使用 HTTPS 协议。 |
+| changeType | string | 必填。 指示订阅资源中将引发变更通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。<br><br>注意：驱动器根项和列表变更通知仅支持 `updated` changeType。 用户和组的变更通知支持 `updated` 和 `deleted` changeType。 |
+| notificationUrl | string | 必填。 将接收变更通知的终结点 URL。 该 URL 必须使用 HTTPS 协议。 |
 | resource | string | 必需。 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/v1.0/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。|
 | expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | 必需。 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 |
-| clientState | string | 可选。 指定 `clientState` 在每次更改通知中由服务发送的属性的值。 最大长度为 128 个字符。 客户端可以通过 `clientState` 将随订阅发送的属性的值与 `clientState` 每个更改通知接收的属性值进行比较，来检查更改通知是否来自服务。 |
+| clientState | 字符串 | 可选。 指定服务为每个变更通知发送的 `clientState` 属性的值。 最大长度为 128 个字符。 通过对比与订阅一起发送的 `clientState` 属性值和与每个变更通知一起接收的 `clientState` 属性值，客户端可以检查变更通知是否是由服务发送。 |
 | id | string | 订阅的唯一标识符。只读。 |
 | applicationId | string | 用于创建订阅的应用程序的标识符。 只读。 |
 | creatorId | string | 已创建订阅的用户或服务主体的标识符。 如果此应用使用委派权限来创建订阅，则此字段包含该应用代表其调用的已登录用户的 ID。 如果此应用使用应用程序权限，则此字段包含对应于该应用的服务主体的 ID。 只读。 |
@@ -63,7 +63,7 @@ ms.locfileid: "44897650"
 | 组对话 | 4230 分钟（不到 3 天）    |
 | 驱动器根项    | 4230 分钟（不到 3 天）    |
 | SharePoint 列表     | 4230 分钟（不到 3 天）    |
-| 团队 callRecord    | 4230 分钟（不到 3 天）  |
+| Teams callRecord    | 4230 分钟（不到 3 天）  |
 | 安全警报     | 43200分钟（不到 30 天）  |
 
 > **注意：** 现有和新的应用都不得超过支持的这一上限值。 今后，任何超出最大值的订阅创建或续订请求都将失败。

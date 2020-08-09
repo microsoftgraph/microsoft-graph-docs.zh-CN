@@ -1,16 +1,16 @@
 ---
 title: 设置用户数据更改的通知
 description: Microsoft Graph API 使用 Webhook 机制将更改通知传递到客户端。客户端是用于配置自身的 URL 以接收更改通知的 Web 服务。客户端应用使用更改通知在更改时更新其状态。
-author: baywet
+author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 6138f1ea8ebd293ab6cd34003c368ae0887bf5d2
-ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
+ms.openlocfilehash: 697f2d61125d4f295c4fca7af14a515554e8d384
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46589149"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598526"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -149,7 +149,7 @@ Content-Type: application/json
 
 如果成功，Microsoft Graph 将在正文中返回 `201 Created` 代码和 [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) 对象。
 
-> **注意：** 传递通知时，`notificationUrl` 属性中包含的任何查询字符串参数都将包含在 HTTP POST 请求中。
+> **注意：** 传递通知时，**notificationURL** 属性中包含的任何查询字符串参数都将包含在 HTTP POST 请求中。
 
 #### <a name="notification-endpoint-validation"></a>通知终结点验证
 
