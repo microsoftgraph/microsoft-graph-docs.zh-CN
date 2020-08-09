@@ -1,23 +1,23 @@
 ---
-author: baywet
+author: davidmu1
 localization_priority: Priority
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: a90d5f6986039d6d102ccdc926bb676345f861ed
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: 2c41ff749df7bfc4d53e09a59ab67a566ef5e5af
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44989856"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598019"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
 #### <a name="intune-notifications-service-limits"></a>Intune 通知服务限制
 
-| 请求类型 | 所有应用的每个租户限制 | 每个租户每个应用限制 |
+| 请求类型 | 所有应用的每个租户的使用限制 | 每个租户每个应用限制 |
 | ------------ | ------- | ------- |
-| POST, PUT, DELETE, PATCH | 每20秒200请求数 | 每20秒100请求数 |
-| 任意 | 每 20 秒 2000 个请求 | 每 20 秒 1000 个请求 |
+| POST, PUT, DELETE, PATCH | 每 20 秒 200 个请求 | 每 20 秒 100 个请求 |
+| 任何 | 每 20 秒 2000 个请求 | 每 20 秒 1000 个请求 |
 
-上述限制适用于以下资源：  
+上述限制适用于下列资源:  
 localizedNotificationMessage、notificationMessageTemplate。

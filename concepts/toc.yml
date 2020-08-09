@@ -89,7 +89,7 @@ items:
           - name: 配置应用程序代理
             href: application-proxy-configure-api.md
           - name: 配置预配
-            href: 'https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api?context=/graph/context'
+            href: application-provisioning-configure-api.md
       - name: 日历
         displayName: Outlook
         items:
@@ -364,11 +364,10 @@ items:
             href: excel-update-range-format.md
           - name: 向工作簿写入数据
             href: excel-write-to-workbook.md
-          - name: 资源
-            expanded: true
-            items:
-              - name: 错误代码
-                href: workbook-error-codes.md
+          - name: 最佳做法
+            href: workbook-best-practice.md
+          - name: 错误代码
+            href: workbook-error-codes.md
   - name: 开发
     expanded: true
     items:
@@ -418,6 +417,8 @@ items:
                 href: webhooks-outlook-authz.md
               - name: 与资源数据有关的通知（预览版）
                 href: webhooks-with-resource-data.md
+              - name: 获取通过不同方式传送的通知（预览版）
+                href: change-notifications-delivery.md
           - name: 更改跟踪
             displayName: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
             items:
