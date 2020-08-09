@@ -2,15 +2,15 @@
 title: changeNotification 资源类型
 description: 表示发送给订阅者的更改通知。
 localization_priority: Normal
-author: baywet
+author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 1120e5bbbecabd2b6ed00dd6796bb8849b0d5151
-ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
-ms.translationtype: Auto
+ms.openlocfilehash: 9c940de4dd8b57bfe04690a9df889c98d856bbc5
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/04/2020
-ms.locfileid: "45038497"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598507"
 ---
 # <a name="changenotification-resource-type"></a>changeNotification 资源类型
 
@@ -28,12 +28,12 @@ ms.locfileid: "45038497"
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
-| changeType | string | 指示将引发更改通知的更改的类型。 支持的值是：`created`、`updated`、`deleted`。 必需。 |
-| clientState | string | 订阅请求中发送的**clientState**属性的值（如果有）。 最大长度为 255 个字符。 客户端可以通过比较**clientState**属性的值，来检查更改通知是否来自服务。 与订阅一起发送的**clientState**属性的值将与每个更改通知收到的**clientState**属性的值进行比较。 可选。 |
-| id | 字符串 | 通知的唯一 ID。 可选。 |
-| resource | string | 发出更改通知的资源的 URI （相对于） `https://graph.microsoft.com` 。 必需。 |
-| resourceData | [resourceData](resourcedata.md) | 此属性的内容取决于要订阅资源的类型。 必需。 |
-| subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | 订阅的过期时间。 必需。 |
+| changeType | string | 指示将引发更改通知的更改的类型。 支持的值是：`created`、`updated`、`deleted`。 必填。 |
+| clientState | string | 在订阅请求中发送的**clientState**属性的值 (如果有任何) 。 最大长度为 255 个字符。 客户端可以通过比较**clientState**属性的值，来检查更改通知是否来自服务。 与订阅一起发送的**clientState**属性的值将与每个更改通知收到的**clientState**属性的值进行比较。 可选。 |
+| id | string | 通知的唯一 ID。 可选。 |
+| resource | string | 发出更改通知的资源的 URI （相对于） `https://graph.microsoft.com` 。 必填。 |
+| resourceData | [resourceData](resourcedata.md) | 此属性的内容取决于要订阅资源的类型。 必填。 |
+| subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | 订阅的过期时间。 必填。 |
 | subscriptionId | string | 生成通知的订阅的唯一标识符。 |
 | tenantId | containerparentjob | 来自其发出更改通知的租户的唯一标识符。 |
 

@@ -2,15 +2,15 @@
 title: 删除订阅
 description: 删除订阅。
 localization_priority: Normal
-author: baywet
+author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 045b0f1e8cbbe51f64718ecbce8874e6e49d57fe
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 6c5a123bdba05db63cdd3bc57c4fb65d411217a6
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491838"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598484"
 ---
 # <a name="delete-subscription"></a>删除订阅
 
@@ -68,7 +68,7 @@ DELETE /subscriptions/{id}
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `204 No Content` 响应代码。
-有关如何返回错误的详细信息，请参阅[错误响应][error-response]。
+要详细了解错误返回方式，请参阅[错误响应][error-response]。
 
 ## <a name="example"></a>示例
 

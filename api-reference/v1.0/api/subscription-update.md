@@ -2,15 +2,15 @@
 title: 更新订阅
 description: 通过延长到期时间续订订阅。
 localization_priority: Normal
-author: baywet
+author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: eb9100490ace0fdfd95b0a061d9735c2d3c72dae
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: e2528b9669607ff70ab0c29973a1097e05f524ee
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491684"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598442"
 ---
 # <a name="update-subscription"></a>更新订阅
 
@@ -67,7 +67,7 @@ PATCH /subscriptions/{id}
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [subscription](../resources/subscription.md) 对象。
 
-有关如何返回错误的详细信息，请参阅[错误响应][error-response]。
+要详细了解错误返回方式，请参阅[错误响应][error-response]。
 
 ## <a name="example"></a>示例
 

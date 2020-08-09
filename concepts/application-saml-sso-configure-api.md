@@ -5,12 +5,12 @@ author: kenwith
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b4e2c02fb5583febdaee7eb2e20bca7083b32635
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 5c6d73e0a85f185c2a903657ffe3c17277a87d11
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567466"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598428"
 ---
 # <a name="automate-saml-based-sso-app-configuration-with-microsoft-graph-api"></a>使用 Microsoft Graph API 自动化基于 SAML 的 SSO 应用配置
 
@@ -27,7 +27,7 @@ ms.locfileid: "46567466"
 | [5. 分配用户](#step-5-assign-users) | 向应用程序分配用户和组
 | [6. 配置应用程序端](#step-6-configure-the-application-side)| 获取 Azure AD SAML 元数据
 
-**文档中使用的所有 API 列表**
+**文章中使用的所有 API 列表**
 
 请确保你具有相应的权限来调用以下 API。
 
@@ -45,7 +45,7 @@ ms.locfileid: "46567466"
 
 ### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a>登录到 Microsoft Graph Explorer（推荐），Postman 或使用的任何其他 API 客户端
 
-1. 启动 [Microsoft Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)
+1. 启动 [Microsoft Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)。
 2. 选择**使用 Microsoft 登录**，然后使用 Azure AD 全局管理员或 App Admin 凭据登录。
 3. 成功登录后，将在左侧窗格中看到用户帐户详细信息。
 
@@ -191,9 +191,9 @@ Content-type: application/json
 ```
 ### <a name="set-single-sign-on-mode"></a>设置单一登录模式
 
-在此示例中，将在 [ servicePrincipal 资源类型](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)中将 `saml` 设置为单一登录模式。 可以配置的其他 SAML SSO 属性是：`notificationEmailAddresses`、`loginUrl`、和`samlSingleSignOnSettings.relayState`
+在此示例中，将在 [ servicePrincipal 资源类型](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)中将 `saml` 设置为单一登录模式。 可以配置的其他 SAML SSO 属性是：`notificationEmailAddresses`、`loginUrl`、和 `samlSingleSignOnSettings.relayState`。
 
-在此查询生效之前，需要在 Graph Explorer 中的**修改权限**选项卡上表示同意。 另外，请确保您使用的是先前获得的 **servicePrincipal** id。
+在此查询生效之前，需要在 Graph Explorer 中的**修改权限**选项卡上表示同意。 另外，请确保你使用的是先前获得的 **servicePrincipal** ID。
 
 #### <a name="request"></a>请求
 
@@ -264,7 +264,7 @@ HTTP/1.1 204
 
 如果应用程序需要令牌中的角色信息，请在应用程序对象中添加角色的定义。 对于 AWS，可以[启用用户配置](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api)以从该 AWS 账户获取所有角色。 
 
-有关详细信息，请参阅 [配置 SAML 令牌中颁发的角色声明](https://docs.microsoft.com/azure/active-directory/develop/active-directory-enterprise-app-role-management)
+有关详细信息，请参阅[配置 SAML 令牌中颁发的角色声明](https://docs.microsoft.com/azure/active-directory/develop/active-directory-enterprise-app-role-management)。
 
 > [!NOTE] 
 > 添加应用程序角色时，请勿修改默认应用程序角色 msiam_access。 
@@ -585,9 +585,9 @@ namespace Self_signed_cert
 * 密码
 * 公钥 
 
-从PFX文件中提取 Base64 编码公钥和私钥。 要了解有关属性的更多信息，请阅读 [keyCredential 资源类型](https://docs.microsoft.com/graph/api/resources/keycredential?view=graph-rest-1.0)。
+从PFX文件中提取 Base64 编码公钥和私钥。 要了解有关属性的更多信息，请参阅 [keyCredential 资源类型](https://docs.microsoft.com/graph/api/resources/keycredential?view=graph-rest-1.0)。
 
-确保用于“签名”的 keyCredential 的keyId 与 passwordCredential 的 keyId 相匹配。 可以通过获取证书指纹的哈希值来生成 `customkeyIdentifier`。 请参阅 C# 上面的参考代码。
+确保用于“签名”的 keyCredential 的keyId 与 passwordCredential 的 keyId 相匹配。 可以通过获取证书指纹的哈希值来生成 `customkeyIdentifier`。 请参阅前面的 C# 参考代码。
 
 #### <a name="request"></a>请求
 
@@ -731,7 +731,7 @@ Content-type: appRoleAssignments/json
 }
 ```
 
-有关详细信息，请参阅 [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-1.0) 资源类型。
+有关详细信息，请参阅 [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-1.0)。
 
 ## <a name="step-6-configure-the-application-side"></a>第 6 步：配置应用程序端
 
@@ -739,7 +739,7 @@ Content-type: appRoleAssignments/json
 
 使用以下 URL 获取特定配置的应用程序的 Azure AD SAML 元数据。 元数据包含诸如签名证书、Azure AD entityID和 Azure AD SingleSignOnService 等信息。
 
-https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}
+`https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`
 
 ## <a name="next-steps"></a>后续步骤
 - [使用 Microsoft Graph API 配置用户预配](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api)
