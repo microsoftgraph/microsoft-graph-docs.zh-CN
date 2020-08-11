@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 81f1682bfb47b851728b0521553cac5b74ecd8f0
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 8e99015b86be921d034ca41eb178581c75af49cf
+ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539120"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46630331"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -511,16 +511,14 @@ _CallRecords.Read.PstnCalls_权限授予应用访问 [PSTN (通话套餐)](/grap
 |_Chat.Read_ |读取聊天消息  |允许应用代表你读取 Microsoft Teams 中的一对一或群组聊天消息。 |否 | 否 |
 |_Chat.ReadBasic_ |读取用户聊天线程的名称和成员  |允许应用代表已登录用户读取一对一以及群组聊天线程的成员和说明。 |否 | 否 |
 |_Chat.ReadWrite_ |读取聊天消息并发送新消息  |允许应用代表你在 Microsoft Teams 中读取并发送一对一或群组聊天消息。 |否 | 否 |
-|_Chat.Send_（个人预览版）|发送用户聊天消息  |允许应用代表已登录用户在 Microsoft Teams 中发送一对一以及群组聊天消息。 |否 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Chat.Read.All_ |读取所有聊天消息  |允许应用在没有登录的用户的情况下读取 Microsoft Teams 中的一对一或群组聊天消息。 |是 | 否 |
-|_Chat.ReadBasic.All_ |读取用户聊天线程的名称和成员  |读取所有聊天线程的名称和成员。 |否 | 否 |
+|_Chat.ReadBasic.All_ |读取用户聊天线程的名称和成员  |读取所有聊天线程的名称和成员。 |是 | 否 |
 |_Chat.UpdatePolicyViolation.All_ |标记违反策略的聊天消息 |允许应用更新 Microsoft Teams 一对一聊天或群组聊天消息，方法是通过修补数据丢失保护 (DLP) 策略违反属性集来处理 DLP 处理的输出。 | 是 | 否 |
-|_Chat.Send.All_ （个人预览版）|发送用户聊天消息  |允许应用在没有已登录用户的情况下在 Microsoft Teams 中发送一对一以及群组聊天消息。 |否 | 否 |
 
 > **注意：** 对于频道中的消息，请参阅 [ChannelMessage 权限](#channel-message-permissions)。
 
@@ -1730,7 +1728,7 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 | _TeamsAppInstallation.ReadWriteForTeam_ | 管理团队中已安装的 Teams 应用| 允许应用在已登录用户可以访问的团队中读取、安装、更新和卸载 Teams 应用。 不允许读取特定于应用程序的设置。| 是 | 否 |
 | _TeamsAppInstallation.ReadWriteSelfForTeam_ （个人预览版） | 允许应用在 Teams 中管理其自身| 允许 Teams 应用为已登录用户可以访问的团队读取、安装、更新和卸载其自身。| 是 | 否 |
 
-#### <a name="application-permissions"></a>应用权限
+#### <a name="application-permissions"></a>应用程序权限
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 
 |:----------------|:------------------|:-------------|:-----------------------|
 | _TeamsAppInstallation.ReadForUser.All_ | 读取为所有用户安装的 Teams 应用| 允许应用读取为任何用户（无需是登录的用户）安装的 Teams 应用。 不允许读取特定于应用程序的设置。| 是 | 
