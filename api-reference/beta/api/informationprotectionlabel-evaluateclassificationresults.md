@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c73b28646291f8927629f2b00b4fae0f8bc8d2e9
-ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
+ms.openlocfilehash: ad1b8cc4c2792493e3ef511a9166c06c673482d6
+ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46589282"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46630268"
 ---
 # <a name="informationprotectionlabel-evaluateclassificationresults"></a>informationProtectionLabel: evaluateClassificationResults
 
@@ -111,7 +111,7 @@ User-agent: ContosoLOBApp/1.0
       "count": 4,
       "confidenceLevel": 75
     }
-   ]
+  ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -147,65 +147,65 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.informationProtectionAction)",
-    "value": [
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.informationProtectionAction)",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.applyLabelAction",
+      "responsibleSensitiveTypeIds": [
+        "cb353f78-2b72-4c3c-8827-92ebe4f69fdf"
+      ],
+      "actionSource": "automatic",
+      "label": {
+        "id": "722a5300-ac39-4c9a-88e3-f54c46676417",
+        "name": "Top Secret",
+        "description": "",
+        "color": "#000000",
+        "sensitivity": 13,
+        "tooltip": "This information is Top Secret.",
+        "isActive": true
+      },
+      "actions": [
         {
-            "@odata.type": "#microsoft.graph.applyLabelAction",
-            "responsibleSensitiveTypeIds": [
-                "cb353f78-2b72-4c3c-8827-92ebe4f69fdf"
-            ],
-            "actionSource": "automatic",
-            "label": {
-                "id": "722a5300-ac39-4c9a-88e3-f54c46676417",
-                "name": "Top Secret",
-                "description": "",
-                "color": "#000000",
-                "sensitivity": 13,
-                "tooltip": "This information is Top Secret.",
-                "isActive": true
+          "@odata.type": "#microsoft.graph.protectByTemplateAction",
+          "templateId": "0e7fea72-7bba-4438-a070-95c292cd6f8c"
+        },
+        {
+          "@odata.type": "#microsoft.graph.metadataAction",
+          "metadataToRemove": [],
+          "metadataToAdd": [
+            {
+              "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Enabled",
+              "value": "true"
             },
-            "actions": [
-                {
-                    "@odata.type": "#microsoft.graph.protectByTemplateAction",
-                    "templateId": "0e7fea72-7bba-4438-a070-95c292cd6f8c"
-                },
-                {
-                    "@odata.type": "#microsoft.graph.metadataAction",
-                    "metadataToRemove": [],
-                    "metadataToAdd": [
-                        {
-                            "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Enabled",
-                            "value": "true"
-                        },
-                        {
-                            "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SetDate",
-                            "value": "2019-10-03T21:50:20Z"
-                        },
-                        {
-                            "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Method",
-                            "value": "Standard"
-                        },
-                        {
-                            "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Name",
-                            "value": "Top Secret"
-                        },
-                        {
-                            "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SiteId",
-                            "value": "cb46c030-1825-4e81-a295-151c039dbf02"
-                        },
-                        {
-                            "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ActionId",
-                            "value": "76dc494e-6c59-43e6-88a1-0000edd58fca"
-                        },
-                        {
-                            "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ContentBits",
-                            "value": "8"
-                        }
-                    ]
-                }
-            ]
+            {
+              "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SetDate",
+              "value": "2019-10-03T21:50:20Z"
+            },
+            {
+              "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Method",
+              "value": "Standard"
+            },
+            {
+              "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Name",
+              "value": "Top Secret"
+            },
+            {
+              "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SiteId",
+              "value": "cb46c030-1825-4e81-a295-151c039dbf02"
+            },
+            {
+              "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ActionId",
+              "value": "76dc494e-6c59-43e6-88a1-0000edd58fca"
+            },
+            {
+              "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ContentBits",
+              "value": "8"
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }
 ```
 

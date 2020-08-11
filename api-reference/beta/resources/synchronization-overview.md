@@ -1,16 +1,16 @@
 ---
 title: Azure AD 同步 API 概述
-description: 自动创建、维护和删除云应用程序中的标识。
+description: 自动将标识从 HR 系统、Active Directory 和 Azure Active Directory 设置为云应用程序。
 localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1e1abd5adc0a36f8ece4f33fde45a5c17280f4e2
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: d1a2de9dcac9765899fa3eaff6173a3791984ade
+ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217610"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46630317"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Azure AD 同步 API 概述
 
@@ -18,7 +18,12 @@ ms.locfileid: "43217610"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory （Azure AD）标识同步（也称为 "设置"）允许您自动创建、维护和删除云中的标识（软件即服务或 SaaS）应用程序（如 Dropbox、Salesforce、ServiceNow 等）。 您可以使用 Microsoft Graph 中的同步 Api 以编程方式管理标识同步，包括：
+Azure Active Directory (Azure AD) identity 同步 (也称为 "设置" ) 允许您自动执行预配 (创建、维护) 和取消设置 (从以下任一项) 删除标识：
+- Active Directory 到 Azure AD
+- 从工作日到 Azure AD
+- Azure AD 到云应用程序，如 Dropbox、Salesforce、ServiceNow 等 
+
+您可以使用 Microsoft Graph 中的同步 Api 以编程方式管理标识同步，包括：
 
 - 创建、启动和停止同步作业
 - 对作业的同步架构进行更改
@@ -51,7 +56,7 @@ Azure Active Directory （Azure AD）标识同步（也称为 "设置"）允许�
 
 ## <a name="synchronization-template"></a>同步模板
 
-同步模板为特定应用程序提供了预配置的同步设置。 默认情况下，这些设置（最重要的[同步架构](synchronization-synchronizationschema.md)）将用于任何基于该模板的[同步作业](synchronization-synchronizationjob.md)。 模板由应用程序开发人员指定。
+同步模板为特定应用程序提供了预配置的同步设置。 这些设置 (最重要的是，默认情况下，[同步架构](synchronization-synchronizationschema.md)) 将用于任何基于该模板的[同步作业](synchronization-synchronizationjob.md)。 模板由应用程序开发人员指定。
 
 有关详细信息，请参阅[同步模板](synchronization-synchronizationtemplate.md)。
 

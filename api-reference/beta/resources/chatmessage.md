@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3a5f59c16e19fae5da17f8d43efc1f2ba63f00d4
-ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
+ms.openlocfilehash: 49f80dec9931c73bc42862cb682c1600fd39a4fe
+ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44272687"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46630296"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "44272687"
 
 表示 [渠道](channel.md)或[聊天](chat.md)中的单个聊天信息。 聊天消息可以是一个根聊天消息，也可以是由聊天消息中的**replyToId**属性定义的答复线程的一部分。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
@@ -29,16 +29,16 @@ ms.locfileid: "44272687"
 |[在频道 delta 中获取 Chatmessages 集合](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | 获取通道中的增量聊天消息。 |
 |[为新的频道消息创建订阅](../api/subscription-post-subscriptions.md) | [订阅](subscription.md) | 收听新的和编辑的频道消息以及对它们的反应。 |
 |[获取频道了 chatmessage](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | 从频道中获取单个根聊天消息。|
-|[在频道中创建 chatMessage](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| 在频道中创建新的顶级聊天邮件。|
+|[在频道或聊天中创建了 chatmessage](../api/chatmessage-post.md) | [chatMessage](chatmessage.md)| 在频道中创建新的顶级聊天邮件。|
 |**频道邮件答复**| | |
 |[列出对了 chatmessage 的答复](../api/channel-list-messagereplies.md) | [chatMessage](chatmessage.md) 集合| 频道中对聊天消息的所有回复的列表。|
 |[获取对了 chatmessage 的答复](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| 获取频道中的聊天消息的单个答复。|
 |[答复频道中的了 chatmessage](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| 在频道中答复现有聊天邮件。|
 |**1:1 和分组聊天消息**| | |
-|[在聊天中创建了 chatmessage](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| 在现有的1:1 或组聊天对话中发送聊天消息。|
-|[在聊天中列出 Chatmessages 集合](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | 列出1:1 或组聊天中的聊天消息。 |
+|[在聊天中创建了 chatmessage](../api/chat-post-message.md) | [chatMessage](chatmessage.md)| 在现有的1:1 或组聊天对话中发送聊天消息。|
+|[在聊天中列出 Chatmessages 集合](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | 列出1:1 或组聊天中的聊天消息。 |
 |[创建新聊天邮件的订阅](../api/subscription-post-subscriptions.md) | [订阅](subscription.md) | 收听新的和已编辑的聊天消息以及对它们的反应。 |
-|[在聊天中获取了 chatmessage](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | 在聊天中获取单个聊天消息。 |
+|[在聊天中获取了 chatmessage](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | 在聊天中获取单个聊天消息。 |
 |**托管内容**| | |
 |[列出所有已承载的内容](../api/chatmessage-list-chatmessagehostedcontents.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md)集合| 获取聊天消息中的所有托管内容。|
 |[获取托管内容](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | 从聊天消息中获取托管的内容。|
@@ -48,12 +48,12 @@ ms.locfileid: "44272687"
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |id|字符串| 只读。 邮件的唯一 Id。|
-|replyToId| string | 只读。 线程的父聊天消息或根聊天消息的 Id。 （仅适用于通道中不聊天的聊天邮件） |
+|replyToId| string | 只读。 线程的父聊天消息或根聊天消息的 Id。  (仅适用于频道中不聊天的聊天消息)  |
 |from|[identitySet](identityset.md)| 只读。 聊天消息发件人的详细信息。|
 |etag| string | 只读。 聊天消息的版本号。 |
 |messageType|string|聊天消息的类型。 可能的值是： `message` 。|
 |createdDateTime|dateTimeOffset|只读。 在聊天消息创建时的时间戳。|
-|lastModifiedDateTime|dateTimeOffset|只读。 在创建或编辑聊天消息时的时间戳，包括答复的时间（如果是频道中的根聊天邮件）或添加或删除了反应。 |
+|lastModifiedDateTime|dateTimeOffset|只读。 在创建或编辑聊天消息时的时间戳，包括答复的时间 (如果它是频道中的根聊天消息) 或者添加或删除了反应。 |
 |deletedDateTime|dateTimeOffset|只读。 删除聊天邮件的时间戳，如果未删除，则为 null。 |
 |subject|string| 聊天消息的主题，以纯文本形式。|
 |body|[itemBody](itembody.md)|聊天消息内容的纯文本/HTML 表示形式。 表示形式由正文中的 contentType 进行指定。 如果聊天消息包含[chatMessageMention](chatmessagemention.md)，则该内容始终为 HTML。 |
@@ -61,7 +61,7 @@ ms.locfileid: "44272687"
 |附件|[chatMessageAttachment](chatmessageattachment.md) 集合 |附加文件。 附件目前是只读的 – 不支持发送附件。 |
 |提及|[chatMessageMention](chatmessagemention.md) 集合| 聊天消息中提及的实体列表。 当前支持用户、机器人、团队、渠道。|
 |重要性|string | 聊天消息的重要性。 可能的值包括 `normal`、`high`、`urgent`。|
-|反应| [chatMessageReaction](./chatmessagereaction.md) 集合 | 此聊天消息的反应（例如，如）。|
+|反应| [chatMessageReaction](./chatmessagereaction.md) 集合 | 此聊天消息的反应 (例如，如) 。|
 |区域设置|string|客户端的聊天消息的区域设置。|
 
 ## <a name="json-representation"></a>JSON 表示形式

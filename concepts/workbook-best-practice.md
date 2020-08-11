@@ -4,12 +4,12 @@ description: 在 Microsoft Graph 中列出 Excel Api 的最佳实践和示例
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d824cf89a07c81bae3a2e129896da9af282be49c
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: ae790dea42e3ade46b74735ad826189a13a282d5
+ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598573"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46630345"
 ---
 # <a name="best-practices-for-working-with-the-excel-api-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Excel API 的最佳实践
 
@@ -141,6 +141,8 @@ HTTP/1.1 204 No Content
 
 ### <a name="initial-request-to-create-session"></a>创建会话的初始请求
 
+#### <a name="request"></a>请求
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/worksheets({id})/createSession
 Prefer: respond-async
@@ -150,8 +152,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>响应
-
+#### <a name="response"></a>响应
 长时间运行的操作模式将返回 `202 Accepted` 如下所示的响应。
 
 ```http
@@ -183,6 +184,7 @@ Content-length: 52
 ```http
 HTTP/1.1 500 Internal Server Error
 Content-type: application/json
+
 {
   "error":{
     "code": "internalServerError",
@@ -197,11 +199,14 @@ Content-type: application/json
     }
   }
 }
+```
+
+### <a name="poll-status-of-the-long-running-create-session"></a>长时间运行的创建会话的轮询状态
 
 
-### Poll status of the long-running create session
+使用长时间运行的操作模式，您可以使用以下请求在指定位置获取创建状态。 轮询状态的建议间隔大约为30秒。 最大间隔不应超过4分钟。
 
-With the long-running operation pattern, you can get the creation status at specified location by using the following request. The suggested interval to poll status is around 30 seconds. The maximum interval should be no more than 4 minutes.
+#### <a name="request"></a>请求
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
@@ -209,11 +214,14 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ope
 }
 ```
 
+#### <a name="response"></a>响应
+
 以下是操作状态为时的响应 `running` 。
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "id": {operation-id},
     "status": "running"
@@ -225,6 +233,7 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "id": {operation-id},
     "status": "succeeded",
@@ -237,6 +246,7 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "id": {operation-id},
   "status": "failed",
@@ -259,6 +269,8 @@ Content-type: application/json
 
 ### <a name="acquire-session-information"></a>获取会话信息
 
+#### <a name="request"></a>请求
+
 使用的状态 `succeeded` ，您可以通过 `resourceLocation` 与以下内容类似的请求来获取创建的会话信息。
 
 ```http
@@ -267,11 +279,13 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ses
 }
 ```
 
+#### <a name="response"></a>响应
 以下是答复。
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "id": "id-value",
     "persistChanges": true

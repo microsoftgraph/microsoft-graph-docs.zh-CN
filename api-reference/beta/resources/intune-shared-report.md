@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1e521979060d2892d8a4e135ca52a94fb195d527
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f017ce3ec744bb86ee3ea6e9820a0e29f8505514
+ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466068"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46630219"
 ---
 # <a name="report-resource-type"></a>report 资源类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "43466068"
 
 - 设备配置文件历史记录报告。
 - 注册失败报告。
+- Microsoft 365 使用情况报告
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

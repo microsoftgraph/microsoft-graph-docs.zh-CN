@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8715f1f15f775b802ed4c5bc145cf5a0cffb8fc3
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 4c7ba30513b6de77628aad6790a2050ff4ca8afb
+ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566793"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46630275"
 ---
 # <a name="get-identityprovider"></a>获取 identityProvider
 
@@ -57,7 +57,7 @@ GET /identityProviders/{id}
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-retrieves-a-specific-identityprovider"></a>示例1：检索特定**identityprovider.read.all**
+### <a name="example-1-retrieve-a-specific-identityprovider"></a>示例1：检索特定的 Identityprovider.read.all
 
 #### <a name="request"></a>请求
 
@@ -111,7 +111,7 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
-### <a name="example-2-retrieves-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>示例2：仅检索 Azure AD B2C) 的特定**openIDConnectProvider** (
+### <a name="example-2-retrieve-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>示例2：仅检索 Azure AD B2C) 的特定 openIDConnectProvider (
 
 #### <a name="request"></a>请求
 

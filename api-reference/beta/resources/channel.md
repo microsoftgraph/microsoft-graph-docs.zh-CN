@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7361e931dbc8fdb2416d73da499c2ea84bdc37ca
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: 184ea90c229d222299848aaec1119aff9497d4af
+ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081009"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46630310"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "45081009"
 |[添加频道成员](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| 向频道添加成员。 仅支持用于 `private` 的 `channelType`。|
 |[更新频道成员](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| 更新聊天成员。 仅支持用于 `private` 的 `channelType`。|
 |[删除频道成员](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| 删除频道的成员。 仅支持用于 `private` 的 `channelType`。|
-|[在频道中创建 chatMessage](../api/channel-post-messages.md) | [chatMessage](../resources/chatmessage.md) | 向频道发送消息。 |
+|[在频道中创建 chatMessage](../api/channel-post-message.md) | [chatMessage](../resources/chatmessage.md) | 向频道发送消息。 |
 |[在频道中创建 chatMessage 回复](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | 在频道中回复消息。|
 |[获取文件文件夹](../api/driveitem-get.md)| [driveItem](driveitem.md) | 检索用于存储频道文件的 SharePoint 文件夹的详细信息。 |
 
