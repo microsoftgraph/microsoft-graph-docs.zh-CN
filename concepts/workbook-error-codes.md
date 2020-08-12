@@ -4,12 +4,12 @@ description: 列出并描述 Microsoft Graph 中的工作簿和图表 Api 的错
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 26ddbdb9e1320a999e763a1c6b844f944a7de6f7
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: 8c975507b826f305ed3a0c994e5aa86384095e94
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408047"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46643910"
 ---
 # <a name="error-codes-for-workbooks-and-charts-apis-in-microsoft-graph"></a>Microsoft Graph 中的工作簿和图表 Api 的错误代码
 
@@ -43,6 +43,7 @@ ms.locfileid: "45408047"
 | **accessDenied**         | 无法执行所请求的操作。
 | **badRequestUncategorized**               | 该请求格式有误或不正确。
 | **conflictUncategorized**                   | 当前状态与请求预期的状态的冲突。
+| **filteredRangeConflict**                   | 操作失败，因为它与筛选的区域冲突。
 | **forbiddenUncategorized**                    | 不允许该请求。
 | **gatewayTimeoutUncategorized**         | 服务无法在时间限制内完成请求。
 | **generalException**         | 处理请求时出现内部错误。
