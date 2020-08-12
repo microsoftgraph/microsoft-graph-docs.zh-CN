@@ -1,24 +1,24 @@
 ---
 title: agreementFile 资源类型
-description: 表示租户使用 Azure Active Directory （Azure AD）管理的可自定义使用条款协议文件。 它包含有关协议文件的元数据（例如，名称、语言以及它是否为默认文件）。
+description: 表示租户使用 Azure Active Directory (Azure AD) 管理的可自定义使用条款协议文件。 它包含有关协议文件的元数据 (例如，名称、语言以及它是否为默认文件) 。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: ea78059ecf29f1cadb9634492ced726775f5614d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: raprakasMSFT
+ms.openlocfilehash: 0f8030680088a99c598d5c3576792583758840d9
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508371"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46643974"
 ---
-# <a name="agreementfile-resource-type"></a><span data-ttu-id="c2a07-104">agreementFile 资源类型</span><span class="sxs-lookup"><span data-stu-id="c2a07-104">agreementFile resource type</span></span>
+# <a name="agreementfile-resource-type"></a><span data-ttu-id="ae651-104">agreementFile 资源类型</span><span class="sxs-lookup"><span data-stu-id="ae651-104">agreementFile resource type</span></span>
 
-<span data-ttu-id="c2a07-105">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="c2a07-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ae651-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ae651-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c2a07-106">表示租户使用 Azure Active Directory （Azure AD）管理的可自定义使用条款协议文件。</span><span class="sxs-lookup"><span data-stu-id="c2a07-106">Represents a customizable terms of use agreement file that a tenant manages with Azure Active Directory (Azure AD).</span></span> <span data-ttu-id="c2a07-107">它包含有关协议文件的元数据（例如，名称、语言以及它是否为默认文件）。</span><span class="sxs-lookup"><span data-stu-id="c2a07-107">It contains metadata about the agreement file (for example, the name, the language, and whether it is the default file).</span></span>
+<span data-ttu-id="ae651-106">表示租户使用 Azure Active Directory (Azure AD) 管理的可自定义使用条款协议文件。</span><span class="sxs-lookup"><span data-stu-id="ae651-106">Represents a customizable terms of use agreement file that a tenant manages with Azure Active Directory (Azure AD).</span></span> <span data-ttu-id="ae651-107">它包含有关协议文件的元数据 (例如，名称、语言以及它是否为默认文件) 。</span><span class="sxs-lookup"><span data-stu-id="ae651-107">It contains metadata about the agreement file (for example, the name, the language, and whether it is the default file).</span></span>
 
 <!--
 ## Methods
@@ -30,22 +30,26 @@ ms.locfileid: "42508371"
 | [Delete](../api/agreementfile-delete.md) | None | Delete an **agreementFile** object. |
 -->
 
-## <a name="properties"></a><span data-ttu-id="c2a07-108">属性</span><span class="sxs-lookup"><span data-stu-id="c2a07-108">Properties</span></span>
-| <span data-ttu-id="c2a07-109">属性</span><span class="sxs-lookup"><span data-stu-id="c2a07-109">Property</span></span>     | <span data-ttu-id="c2a07-110">类型</span><span class="sxs-lookup"><span data-stu-id="c2a07-110">Type</span></span>        | <span data-ttu-id="c2a07-111">说明</span><span class="sxs-lookup"><span data-stu-id="c2a07-111">Description</span></span> |
+## <a name="properties"></a><span data-ttu-id="ae651-108">属性</span><span class="sxs-lookup"><span data-stu-id="ae651-108">Properties</span></span>
+| <span data-ttu-id="ae651-109">属性</span><span class="sxs-lookup"><span data-stu-id="ae651-109">Property</span></span>     | <span data-ttu-id="ae651-110">类型</span><span class="sxs-lookup"><span data-stu-id="ae651-110">Type</span></span>        | <span data-ttu-id="ae651-111">说明</span><span class="sxs-lookup"><span data-stu-id="ae651-111">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="c2a07-112">fileData</span><span class="sxs-lookup"><span data-stu-id="c2a07-112">fileData</span></span>|[<span data-ttu-id="c2a07-113">agreementFileData</span><span class="sxs-lookup"><span data-stu-id="c2a07-113">agreementFileData</span></span>](agreementfiledata.md)|<span data-ttu-id="c2a07-114">代表使用条款的 PDF 文档的数据。</span><span class="sxs-lookup"><span data-stu-id="c2a07-114">Data representing the terms of use PDF document.</span></span> <span data-ttu-id="c2a07-115">只读。</span><span class="sxs-lookup"><span data-stu-id="c2a07-115">Read-only.</span></span>|
-|<span data-ttu-id="c2a07-116">fileName</span><span class="sxs-lookup"><span data-stu-id="c2a07-116">fileName</span></span>|<span data-ttu-id="c2a07-117">String</span><span class="sxs-lookup"><span data-stu-id="c2a07-117">String</span></span>|<span data-ttu-id="c2a07-118">协议文件的名称（例如，TOU）。</span><span class="sxs-lookup"><span data-stu-id="c2a07-118">Name of the agreement file (for example, TOU.pdf).</span></span> <span data-ttu-id="c2a07-119">只读。</span><span class="sxs-lookup"><span data-stu-id="c2a07-119">Read-only.</span></span>|
-|<span data-ttu-id="c2a07-120">id</span><span class="sxs-lookup"><span data-stu-id="c2a07-120">id</span></span>|<span data-ttu-id="c2a07-121">String</span><span class="sxs-lookup"><span data-stu-id="c2a07-121">String</span></span>|<span data-ttu-id="c2a07-122">只读。</span><span class="sxs-lookup"><span data-stu-id="c2a07-122">Read-only.</span></span>|
-|<span data-ttu-id="c2a07-123">isDefault</span><span class="sxs-lookup"><span data-stu-id="c2a07-123">isDefault</span></span>|<span data-ttu-id="c2a07-124">Boolean</span><span class="sxs-lookup"><span data-stu-id="c2a07-124">Boolean</span></span>|<span data-ttu-id="c2a07-125">指示是否为默认协议文件（如果没有任何区域性与客户端首选项匹配）。</span><span class="sxs-lookup"><span data-stu-id="c2a07-125">Indicates whether this is the default agreement file if none of the cultures matches the client preference.</span></span> <span data-ttu-id="c2a07-126">如果没有任何文件被标记为默认值，则第一个文件将被视为默认值。</span><span class="sxs-lookup"><span data-stu-id="c2a07-126">If none of the files are marked as default, the first one will be treated as the default.</span></span> <span data-ttu-id="c2a07-127">只读。</span><span class="sxs-lookup"><span data-stu-id="c2a07-127">Read-only.</span></span>|
-|<span data-ttu-id="c2a07-128">language</span><span class="sxs-lookup"><span data-stu-id="c2a07-128">language</span></span>|<span data-ttu-id="c2a07-129">String</span><span class="sxs-lookup"><span data-stu-id="c2a07-129">String</span></span>|<span data-ttu-id="c2a07-130">协议文件的区域性（格式为 languagecode2/regioncode2）。</span><span class="sxs-lookup"><span data-stu-id="c2a07-130">Culture of the agreement file in the format languagecode2-country/regioncode2.</span></span> <span data-ttu-id="c2a07-131">languagecode2 是从 ISO 639-1 派生的一个由两个小写字母组成的代码。</span><span class="sxs-lookup"><span data-stu-id="c2a07-131">languagecode2 is a lowercase two-letter code derived from ISO 639-1.</span></span> <span data-ttu-id="c2a07-132">国家/regioncode2 派生自 ISO 3166，通常包含两个大写字母或一个 BCP-47 语言标记（例如 en-us）。</span><span class="sxs-lookup"><span data-stu-id="c2a07-132">country/regioncode2 is derived from ISO 3166 and usually consists of two uppercase letters, or a BCP-47 language tag (for example, en-US).</span></span> <span data-ttu-id="c2a07-133">只读。</span><span class="sxs-lookup"><span data-stu-id="c2a07-133">Read-only.</span></span>|
-
-## <a name="relationships"></a><span data-ttu-id="c2a07-134">关系</span><span class="sxs-lookup"><span data-stu-id="c2a07-134">Relationships</span></span>
-<span data-ttu-id="c2a07-135">无。</span><span class="sxs-lookup"><span data-stu-id="c2a07-135">None.</span></span>
+|<span data-ttu-id="ae651-112">fileData</span><span class="sxs-lookup"><span data-stu-id="ae651-112">fileData</span></span>|[<span data-ttu-id="ae651-113">agreementFileData</span><span class="sxs-lookup"><span data-stu-id="ae651-113">agreementFileData</span></span>](agreementfiledata.md)|<span data-ttu-id="ae651-114">代表使用条款的 PDF 文档的数据。</span><span class="sxs-lookup"><span data-stu-id="ae651-114">Data representing the terms of use PDF document.</span></span> <span data-ttu-id="ae651-115">只读。</span><span class="sxs-lookup"><span data-stu-id="ae651-115">Read-only.</span></span>|
+|<span data-ttu-id="ae651-116">fileName</span><span class="sxs-lookup"><span data-stu-id="ae651-116">fileName</span></span>|<span data-ttu-id="ae651-117">String</span><span class="sxs-lookup"><span data-stu-id="ae651-117">String</span></span>|<span data-ttu-id="ae651-118">协议文件的名称 (例如，TOU.pdf) 。</span><span class="sxs-lookup"><span data-stu-id="ae651-118">Name of the agreement file (for example, TOU.pdf).</span></span> <span data-ttu-id="ae651-119">只读。</span><span class="sxs-lookup"><span data-stu-id="ae651-119">Read-only.</span></span>|
+|<span data-ttu-id="ae651-120">id</span><span class="sxs-lookup"><span data-stu-id="ae651-120">id</span></span>|<span data-ttu-id="ae651-121">String</span><span class="sxs-lookup"><span data-stu-id="ae651-121">String</span></span>|<span data-ttu-id="ae651-122">只读。</span><span class="sxs-lookup"><span data-stu-id="ae651-122">Read-only.</span></span>|
+|<span data-ttu-id="ae651-123">isDefault</span><span class="sxs-lookup"><span data-stu-id="ae651-123">isDefault</span></span>|<span data-ttu-id="ae651-124">Boolean</span><span class="sxs-lookup"><span data-stu-id="ae651-124">Boolean</span></span>|<span data-ttu-id="ae651-125">指示是否为默认协议文件（如果没有任何区域性与客户端首选项匹配）。</span><span class="sxs-lookup"><span data-stu-id="ae651-125">Indicates whether this is the default agreement file if none of the cultures matches the client preference.</span></span> <span data-ttu-id="ae651-126">如果没有任何文件被标记为默认值，则第一个文件将被视为默认值。</span><span class="sxs-lookup"><span data-stu-id="ae651-126">If none of the files are marked as default, the first one will be treated as the default.</span></span> <span data-ttu-id="ae651-127">只读。</span><span class="sxs-lookup"><span data-stu-id="ae651-127">Read-only.</span></span>|
+|<span data-ttu-id="ae651-128">language</span><span class="sxs-lookup"><span data-stu-id="ae651-128">language</span></span>|<span data-ttu-id="ae651-129">String</span><span class="sxs-lookup"><span data-stu-id="ae651-129">String</span></span>|<span data-ttu-id="ae651-130">协议文件的区域性（格式为 languagecode2/regioncode2）。</span><span class="sxs-lookup"><span data-stu-id="ae651-130">Culture of the agreement file in the format languagecode2-country/regioncode2.</span></span> <span data-ttu-id="ae651-131">languagecode2 是从 ISO 639-1 派生的一个由两个小写字母组成的代码。</span><span class="sxs-lookup"><span data-stu-id="ae651-131">languagecode2 is a lowercase two-letter code derived from ISO 639-1.</span></span> <span data-ttu-id="ae651-132">国家/regioncode2 派生自 ISO 3166，通常包含两个大写字母或一个 BCP-47 语言标记 (例如 en-us) 。</span><span class="sxs-lookup"><span data-stu-id="ae651-132">country/regioncode2 is derived from ISO 3166 and usually consists of two uppercase letters, or a BCP-47 language tag (for example, en-US).</span></span> <span data-ttu-id="ae651-133">只读。</span><span class="sxs-lookup"><span data-stu-id="ae651-133">Read-only.</span></span>|
 
 
-## <a name="json-representation"></a><span data-ttu-id="c2a07-136">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c2a07-136">JSON representation</span></span>
+<!--
+## Relationships
+| Relationship | Type        | Description |
+|:-------------|:------------|:------------|
+|localizations|[agreementFileLocalization](agreementfilelocalization.md) collection|The localized version of the agreement files attached to the agreement.|
+-->
 
-<span data-ttu-id="c2a07-137">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c2a07-137">The following is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ae651-134">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="ae651-134">JSON representation</span></span>
+
+<span data-ttu-id="ae651-135">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ae651-135">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,24 +1,19 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 94e53e11d02a8f998285ca7ca3fbe6435f3da7b5
+ms.openlocfilehash: 80877247eaa2758120bbe0334ff23ebd8c35f01a
 ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643931"
+ms.locfileid: "46643929"
 ---
-```objc
+```java
 
-MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
+IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/policies/claimsMappingPolicies"]]];
-[urlRequest setHTTPMethod:@"POST"];
-[urlRequest setValue:@"claimsMappingPolicies/json" forHTTPHeaderField:@"Content-Type"];
-
-MSGraphClaimsMappingPolicy *claimsMappingPolicy = [[MSGraphClaimsMappingPolicy alloc] init];
-NSMutableArray *definitionList = [[NSMutableArray alloc] init];
-[definitionList addObject: @"{"ClaimsMappingPolicy": {
+ClaimsMappingPolicy claimsMappingPolicy = new ClaimsMappingPolicy();
+LinkedList<String> definitionList = new LinkedList<String>();
+definitionList.add("{"ClaimsMappingPolicy": {
                 "Version": 1,
                 "IncludeBasicClaimSet": "true",
                 "ClaimsSchema": [
@@ -49,22 +44,13 @@ NSMutableArray *definitionList = [[NSMutableArray alloc] init];
                     }
                 ]
             }
-        }"];
-[claimsMappingPolicy setDefinition:definitionList];
-[claimsMappingPolicy setDisplayName:@"AWS Claims policy"];
-[claimsMappingPolicy setIsOrganizationDefault: false];
+        }");
+claimsMappingPolicy.definition = definitionList;
+claimsMappingPolicy.displayName = "AWS Claims policy";
+claimsMappingPolicy.isOrganizationDefault = false;
 
-NSError *error;
-NSData *claimsMappingPolicyData = [claimsMappingPolicy getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:claimsMappingPolicyData];
-
-MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
-    completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
-
-        //Request Completed
-
-}];
-
-[meDataTask execute];
+graphClient.policies().claimsMappingPolicies()
+    .buildRequest()
+    .post(claimsMappingPolicy);
 
 ```
