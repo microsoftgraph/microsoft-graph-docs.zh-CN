@@ -1,16 +1,16 @@
 ---
 title: 协议资源类型
-description: 表示租户的可自定义使用条款协议，它是使用 Azure Active Directory （Azure AD）创建和管理的。
+description: 表示租户的可自定义使用条款协议，该协议是使用 Azure Active Directory (Azure AD) 创建和管理的。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 6ac24e7a46441b59e621425517371db9227b4010
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: b6b3ca4865e56961f6388e9be1a567de73026472
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218483"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46643993"
 ---
 # <a name="agreement-resource-type"></a>协议资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "43218483"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示租户的可自定义使用条款协议，它是使用 Azure Active Directory （Azure AD）创建和管理的。 您可以根据您的方案使用以下方法来创建和管理[Azure Active Directory 使用条款功能](/azure/active-directory/active-directory-tou)。
+表示租户的可自定义使用条款协议，该协议是使用 Azure Active Directory (Azure AD) 创建和管理的。 您可以根据您的方案使用以下方法来创建和管理[Azure Active Directory 使用条款功能](/azure/active-directory/active-directory-tou)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -37,14 +37,21 @@ ms.locfileid: "43218483"
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|String|协议的显示名称。|
-|id|字符串| 只读。|
-|isViewingBeforeAcceptanceRequired|Boolean|指示用户是否必须在接受前展开并查看协议。|
+|displayName|String|协议的显示名称。 显示名称用于协议的内部跟踪，但不向查看该协议的最终用户显示。|
+|id|String| 只读。|
+|isPerDeviceAcceptanceRequired|Boolean|通过此设置，您可以要求最终用户在其访问它的每台设备上接受此协议。 最终用户将需要在 Azure AD 中注册其设备（如果尚未这样做）。|
+|isViewingBeforeAcceptanceRequired|Boolean|指示用户是否必须在接受前展开协议。|
+|termsExpiration|[termsExpiration](termsexpiration.md)| 所有用户的到期计划和协议频率。 |
+|userReacceptRequiredFrequency|持续时间|持续时间，用户必须重新接受使用条款。 值以 ISO 8601 格式表示，持续时间。|
+
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|files|[agreementFile](agreementfile.md)集合|只读。 链接到此协议的 Pdf。|
+|acceptances|[agreementAcceptance](agreementacceptance.md) 集合|只读。 本协议 acceptances 的相关信息。|
+|files|[agreementFileLocalization](agreementfilelocalization.md)集合| 链接到此协议的 Pdf。 **注意：** 此属性正处于弃用的过程中。 使用**文件**属性而不是。|
+|file|[agreementFile](agreementfile.md) | 链接到此协议的 Pdf。|
+
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -61,9 +68,14 @@ ms.locfileid: "43218483"
 
 ```json
 {
-  "displayName": "String",
   "id": "String (identifier)",
-  "isViewingBeforeAcceptanceRequired": true
+  "displayName": "MSGraph Sample",
+  "isViewingBeforeAcceptanceRequired": true,
+  "isPerDeviceAcceptanceRequired": false,
+  "termsExpiration": {
+    "startDateTime": "2018-10-01T00:00:00.0000000Z",
+    "frequency": "PT1M"
+  }
 }
 
 ```

@@ -5,27 +5,27 @@ author: davidmu1
 ms.topic: conceptual
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 065e7cdc84a353c4636fc4e7d13c32d22c7bce70
-ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
+ms.openlocfilehash: d7b60e19cb0d3b1c6b015c47ddac604f4ebb2d55
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45142340"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46644000"
 ---
 # <a name="automate-the-configuration-of-application-proxy-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 自动配置应用程序代理
 
-在本文中，您将了解如何为应用程序创建和配置 Azure Active Directory （Azure AD）[应用程序代理](https://aka.ms/whyappproxy)。 应用程序代理提供了对本地 web 应用程序的安全远程访问和单一登录。 为应用程序配置应用程序代理后，用户可以通过外部 URL、"我的应用程序" 门户或其他内部应用程序门户访问其本地应用程序。
+在本文中，您将了解如何为应用程序创建和配置 Azure Active Directory (Azure AD) [应用程序代理](https://aka.ms/whyappproxy)。 应用程序代理提供了对本地 web 应用程序的安全远程访问和单一登录。 为应用程序配置应用程序代理后，用户可以通过外部 URL、"我的应用程序" 门户或其他内部应用程序门户访问其本地应用程序。
 
 本文假定您已经安装了连接器并完成了应用程序代理的[先决条件](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin)，以便连接器可以与 Azure AD 服务进行通信。
 
-请确保您具有调用以下 Api 的相应权限。
+请确保你具有相应的权限来调用以下 API。
 
 |资源类型 |方法 |
 |---------|---------|
 | [applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta)| [实例化 applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta) |
-|[来说](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)<br> [onPremisesPublishing](https://docs.microsoft.com/graph/api/resources/onpremisespublishing?view=graph-rest-beta)|[更新应用程序](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-beta)<br> [向 connectorGroup 添加应用程序](https://docs.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
+|[applications](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)<br> [onPremisesPublishing](https://docs.microsoft.com/graph/api/resources/onpremisespublishing?view=graph-rest-beta)|[更新应用程序](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-beta)<br> [向 connectorGroup 添加应用程序](https://docs.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
 |[连接器](https://docs.microsoft.com/graph/api/resources/connector?view=graph-rest-beta)| [获取连接器](https://docs.microsoft.com/graph/api/connector-get?view=graph-rest-beta)
-|[connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorGroup?view=graph-rest-beta)| [创建 connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [将连接器添加到 connectorGroup](https://docs.microsoft.com/graph/api/connector-post-memberof?view=graph-rest-beta) <br> |
+|[connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorGroup?view=graph-rest-beta)| [Create connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [Add connector to connectorGroup](https://docs.microsoft.com/graph/api/connector-post-memberof?view=graph-rest-beta) <br> |
 |[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[更新 servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [创建 appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
 
 >[!NOTE]
@@ -33,10 +33,10 @@ ms.locfileid: "45142340"
 
 ## <a name="step-1-create-a-custom-application"></a>步骤1：创建自定义应用程序
 
-### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a>登录到 Microsoft Graph 浏览器（推荐）、Postman 或任何其他使用的 API 客户端
+### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a>登录到 Microsoft Graph Explorer（推荐），Postman 或使用的任何其他 API 客户端
 
-1. 启动[Microsoft Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer)。
-2. 选择 **"使用 Microsoft 登录"** ，并使用 Azure AD 全局管理员或应用程序管理员凭据登录。
+1. 启动 [Microsoft Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)。
+2. 选择**使用 Microsoft 登录**，然后使用 Azure AD 全局管理员或 App Admin 凭据登录。
 3. 登录成功后，将在左窗格中看到用户帐户详细信息。
 
 ### <a name="create-a-custom-application"></a>创建自定义应用程序
@@ -139,8 +139,8 @@ Content-type: application/json
 ```
 
 
-### <a name="retrieve-app-object-id-and-service-principal-object-id"></a>检索应用程序对象 ID 和服务主体对象 ID
-使用上一次调用的响应检索并保存 application 对象 ID 和服务主体对象 ID。
+### <a name="retrieve-app-object-id-and-service-principal-object-id"></a>检索应用对象 ID 和服务主体对象 ID
+使用上一次调用的响应检索并保存应用程序对象 ID 和服务主体对象 ID。
 ```
 "application": {
     "objectId": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83"
@@ -420,7 +420,7 @@ HTTP/1.1 204 No content
 ```
 
 ## <a name="step-4-configure-single-sign-on"></a>步骤4：配置单一登录
-此应用程序使用集成的 Windows 身份验证（IWA）。 若要配置 IWA，请在[singleSignOnSettings](https://docs.microsoft.com/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta)资源类型中设置单一登录属性。
+此应用程序使用集成的 Windows 身份验证 (IWA) 。 若要配置 IWA，请在[singleSignOnSettings](https://docs.microsoft.com/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta)资源类型中设置单一登录属性。
 
 
 #### <a name="request"></a>请求
@@ -458,7 +458,7 @@ Content-type: appplication/json
 HTTP/1.1 204 No content
 ```
 
-## <a name="step-5-assign-users"></a>步骤5：分配用户
+## <a name="step-5-assign-users"></a>第 5 步：分配用户
 ### <a name="retrieve-approle-for-the-applicaiton"></a>检索应用程序的 appRole
 
 #### <a name="request"></a>请求
@@ -534,19 +534,21 @@ Content-type: application/json
         }
 ```
 
-### <a name="assign-users-and-groups-to-the-application"></a>将用户和组分配给应用程序
+### <a name="assign-users-and-groups-to-the-application"></a>向应用程序分配用户和组
 
 使用以下属性将用户分配给应用程序。
 
 | 属性  | 说明 |ID  |
 |---------|---------|---------|
 | principalId | 将分配给应用程序的用户的用户 ID | 2fe96d23-5dc6-4f35-8222-0426a8c115c8 |
-| principalType | 用户类型 | User |
+| principalType | 用户类型 | 用户 |
 | appRoleId |  应用程序的默认应用程序角色的应用程序角色 ID | 18d14569-c3bd-439b-9a66-3a2aee01d14f |
 | resourceId | 应用程序的 servicePrincipal ID | b00c693f-9658-4c06-bd1b-c402c4653dea |
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
@@ -563,6 +565,12 @@ Content-type: appRoleAssignments/json
   "resourceId":"b00c693f-9658-4c06-bd1b-c402c4653dea"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### <a name="response"></a>响应
 
 <!-- {
@@ -586,10 +594,10 @@ Content-type: application/json
 }
 ```
 
-有关详细信息，请参阅[appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-beta)资源类型。
+有关详细信息，请参阅 [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-beta) 资源类型。
 
 
 
 ## <a name="additional-steps"></a>其他步骤
 - [使用 PowerShell 示例为应用程序代理自动执行配置](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-powershell-samples.md)
-- [使用 Microsoft Graph API 自动执行基于 SAML 的 SSO 应用配置](https://docs.microsoft.com/azure/active-directory/manage-apps/application-saml-sso-configure-api.md)
+- [使用 Microsoft Graph API 自动化基于 SAML 的 SSO 应用配置](https://docs.microsoft.com/azure/active-directory/manage-apps/application-saml-sso-configure-api.md)

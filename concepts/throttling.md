@@ -1,15 +1,15 @@
 ---
 title: Microsoft Graph 限制指南
 description: 限制可调节并发调用服务的数量，以防止资源的过度使用。Microsoft Graph 旨在用于处理大量的请求。如果出现过多请求，限制将有助于保持 Microsoft Graph 的最佳性能和服务的可靠性。
-author: baywet
+author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 8af7a4ce6c303e2ac07e4387ff3dbad38abd735e
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: a38c6c77daa5a9a6adab469681b4f7b0c4291e32
+ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408090"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46598012"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -48,31 +48,7 @@ ms.locfileid: "45408090"
 2. 请重试请求。
 3. 如果请求再次失败，并显示 429 错误代码，则表示你仍然受限。继续使用建议的 `Retry-After` 延迟并重试请求直到成功。
 
-下列资源目前提供 `Retry-After` 标头：
-
-- [用户](/graph/api/resources/user?view=graph-rest-1.0)
-- [照片](/graph/api/resources/profilephoto?view=graph-rest-1.0)
-- [邮件](/graph/api/resources/message?view=graph-rest-1.0)
-- [日历（用户和组）](/graph/api/resources/event?view=graph-rest-1.0)
-- [联系人](/graph/api/resources/contact?view=graph-rest-1.0)
-- [附件](/graph/api/resources/attachment?view=graph-rest-1.0)
-- [组对话](/graph/api/resources/conversation?view=graph-rest-1.0)
-- [人员和社交活动](/graph/api/resources/social-overview?view=graph-rest-beta)
-- [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
-- [外部项（Microsoft 搜索）](/graph/api/resources/externalitem?view=graph-rest-beta)
-- [Report](/graph/api/resources/report)
-- [订阅](/graph/api/resources/subscription)
-- [威胁评估请求](/graph/api/resources/threatassessmentrequest)
-- [邮件评估请求](/graph/api/resources/mailassessmentrequest)
-- [电子邮件文件评估请求](/graph/api/resources/emailfileassessmentrequest)
-- [文件评估请求](/graph/api/resources/fileassessmentrequest)
-- [URL 评估请求](/graph/api/resources/urlassessmentrequest)
-- [威胁评估结果](/graph/api/resources/threatassessmentresult)
-- [趋势](/graph/api/resources/insights-trending)
-- [已使用见解](/graph/api/resources/insights-used)
-- [共享见解](/graph/api/resources/insights-shared)
-- [用户设置](/graph/api/resources/usersettings)
-- [邀请](/graph/api/resources/invitation)
+除非有说明，否则[服务特定限制](#service-specific-limits)部分中所述的所有资源和 API 均提供 `Retry-After` 标头。
 
 有关 Microsoft 云限制的更广泛讨论，请参阅[限制模式](https://docs.microsoft.com/azure/architecture/patterns/throttling)。
 
@@ -116,6 +92,14 @@ ms.locfileid: "45408090"
 #### <a name="outlook-service-resources"></a>Outlook 服务资源
 
 Outlook 服务提供以下资源。
+
+##### <a name="search-api-resources-preview"></a>搜索 API 资源（预览版）
+
+- [外部项（Microsoft 搜索）](/graph/api/resources/externalitem?view=graph-rest-beta)
+
+##### <a name="profile-api-resources"></a>配置文件 API 资源
+
+- [照片](/graph/api/resources/profilephoto?view=graph-rest-1.0)
 
 ##### <a name="calendar-api-resources"></a>日历 API 资源
 
@@ -198,7 +182,7 @@ activityHistoryItem、userActivity
 | PATCH team, channel, tab, installedApps, appCatalogs |  30 rps                         | 300 rps  |
 | DELETE channel, tab, installedApps, appCatalogs      |  15 rps                         | 150 rps  |
 | GET /teams/```{team-id}```, joinedTeams              |  30 rps                         | 300 rps  |
-| POST /teams/```{team-id}```, PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  | 
+| POST /teams/```{team-id}```, PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  |
 | GET channel message  | 5 rps | 100 rps |
 | GET 1:1/group chat message  | 3 rps | 30 rps |
 | POST channel message | 2 rps | 20 rps |
@@ -211,6 +195,137 @@ activityHistoryItem、userActivity
 每个应用每天最多可以将 3000 条消息发送到给定的频道。
 
 另请参阅 [Microsoft Teams 限制](/graph/api/resources/teams-api-overview#microsoft-teams-limits)和[投票要求](/graph/api/resources/teams-api-overview#polling-requirements)。
+
+上述限制适用于下列资源:  
+aadUserConversationMember、appCatalogs、changeTrackedEntity、channel、chatMessage、chatMessageHostedContent、conversationMember、offerShiftRequest、openShift、openShiftChangeRequest、schedule、scheduleChangeRequest、schedulingGroup、shift、shiftPreferences、swapShiftsChangeRequest、team、teamsApp、teamsAppDefinition、teamsAppInstallation、teamsAsyncOperation、teamsTab、teamsTemplate、teamwork、timeOff、timeOffReason、timeOffRequest、userSettings、workforceIntegration。
+
+### <a name="identity-and-access-service-limits"></a>身份和访问服务限制
+
+这些服务限制适用于以下实体：
+
+- [目录对象](/graph/api/resources/directoryobject)
+- [扩展属性](/graph/api/resources/extensionproperty)
+- [管理单元](/graph/api/resources/administrativeunit)
+- [应用程序](/graph/api/resources/application)
+- [应用角色分配](/graph/api/resources/approleassignment)
+- [基于证书的身份配置](/graph/api/resources/certificatebasedauthconfiguration)
+- [组织联系人](/graph/api/resources/orgcontact)
+- [Device](/graph/api/resources/device)
+- [目录对象合作伙伴参考](/graph/api/resources/directoryobjectpartnerreference)
+- [目录角色](/graph/api/resources/directoryrole)
+- [目录角色模板](/graph/api/resources/directoryroletemplate)
+- [域](/graph/api/resources/domain)
+- [域 dns 记录](/graph/api/resources/domaindnsrecord)
+- [域 dns cname 记录](/graph/api/resources/domaindnscnamerecord)
+- [域 dns mx 记录](/graph/api/resources/domaindnsmxrecord)
+- [域 dns srv 记录](/graph/api/resources/domaindnssrvrecord)
+- [域 dns txt 记录](/graph/api/resources/domaindnstxtrecord)
+- [域 dns 不可用记录](/graph/api/resources/domaindnsunavailablerecord)
+- [终结点](/graph/api/resources/endpoint)
+- [扩展属性](/graph/api/resources/extensionproperty)
+- [许可证详细信息](/graph/api/resources/licensedetails)
+- [组](/graph/api/resources/group)
+- [基于活动的超时策略](/graph/api/resources/activitybasedtimeoutpolicy)
+- [声明映射策略](/graph/api/resources/claimsmappingpolicy)
+- [主领域发现策略](/graph/api/resources/homerealmdiscoverypolicy)
+- [令牌颁发策略](/graph/api/resources/tokenissuancepolicy)
+- [令牌生存期策略](/graph/api/resources/tokenlifetimepolicy)
+- [策略基础](/graph/api/resources/policybase)
+- [Sts 策略](/graph/api/resources/stspolicy)
+- [合同](/graph/api/resources/contract)
+- [服务主体](/graph/api/resources/serviceprincipal)
+- [订阅的 SKU](/graph/api/resources/subscribedsku)
+- [Oauth2 权限授予](/graph/api/resources/oauth2permissiongrant)
+- [组织](/graph/api/resources/organization)
+- [用户](/graph/api/resources/user)
+- [组设置](/graph/api/resources/groupsetting)
+- [组设置模板](/graph/api/resources/groupsettingtemplate)
+
+#### <a name="pattern"></a>模式
+
+限制基于令牌存储桶算法，后者通过添加各个请求的成本来实现。 然后将请求成本的总和与预定限制进行比较。 只有超出限制的请求才会被限制。 如果超出任何限制，则响应将为 `429 Too Many Requests`。 即使在服务处于重要负载或基于特定租户的数据量的情况下，也可能会收到 `429 Too Many Requests` 的响应，而不会达到以下限制。 下表列出了现有限制。
+
+| 限制类型 | 资源单元配额 | 写入配额 |
+| ---------- | ----------- | -------------- |
+| 应用 + 租户对 | S：3500，M:5000，L:8000 每 10 秒钟 | 每 2 分钟 30 秒 3000 |
+| 应用程序 | 每 20 秒 150,000  | 每 5 分钟 70,000 |
+| 租户 | 不适用 | 每 5 分钟 9000 |
+
+> **注意**：应用程序 + 租户对限制因租户请求中运行的用户数而异。 租户规模定义如下：S - 小于 50 个用户，M - 50 至 500 个用户之间，L - 500 个以上用户。
+
+下表列出了基本请求费用。 未列出的任何请求的基础成本为 1。
+
+| 操作 | 请求路径 | 基本资源单位成本 | 写入成本 |
+| --------- | ------------ | ----------------- | ------------------ |
+| GET | `applications` | 2 | 0 |
+| GET | `applications/{id}/extensionProperties` | 2 | 0 |
+| GET | `contracts` | 3 | 0 |
+| POST | `directoryObjects/getByIds` |  3 | 0 |
+| GET | `domains/{id}/domainNameReferences` | 4 | 0 |
+| POST | `getObjectsById` | 3 | 0 |
+| GET | `groups/{id}/members` | 3 | 0 |
+| GET | `groups/{id}/transitiveMembers` | 5 | 0 |
+| POST | `isMemberOf` | 4 | 0 |
+| POST | `me/checkMemberGroups` | 4 | 0 |
+| POST | `me/checkMemberObjects` | 4 | 0 |
+| POST | `me/getMemberGroups` | 2 | 0 |
+| POST | `me/getMemberObjects` | 2 | 0 |
+| GET | `me/licenseDetails` | 2 | 0 |
+| GET | `me/memberOf` | 2 | 0 |
+| GET | `me/ownedObjects` | 2 | 0 |
+| GET | `me/transitiveMemberOf` | 2 | 0 |
+| GET | `oauth2PermissionGrants` | 2 | 0 |
+| GET | `oauth2PermissionGrants/{id}` | 2 | 0 |
+| GET | `servicePrincipals/{id}/appRoleAssignments` | 2 | 0 |
+| GET | `subscribedSkus` | 3 | 0 |
+| GET | `users` | 2 | 0 |
+| GET | 表中未列出的任何身份路径 | 1 | 0 |
+| POST | 表中未列出的任何身份路径 | 1 | 1 |
+| PATCH | 表中未列出的任何身份路径 | 1 | 1 |
+| PUT | 表中未列出的任何身份路径 | 1 | 1 |
+| DELETE | 表中未列出的任何身份路径 | 1 | 1 |
+
+影响请求费用的其他因素：
+
+- 使用 `$select` 可将成本降低 1
+- 使用 `$expand` 可将成本增加 1
+- 使用值小于 20 的 `$top` 会使成本降低1
+
+> **注意：** 请求费用不能低于 1。 适用于从 `me/` 开始的请求路径的任何请求费用也适用于以 `users/{id | userPrincipalName}/`开头的等效请求。
+
+#### <a name="additional-headers"></a>附加标题
+
+##### <a name="request-headers"></a>请求标头
+
+- **x-ms-throttle-priority** - 如果标头不存在或设置为任何其他值，则表示正常请求。 我们建议将优先级 `high` 用户启动的请求设置优先级。 此标头的值可以是以下值：
+  - 低 - 指示请求的优先级较低。 限制此请求不会导致出现用户可见的故障。
+  - 正常 - 如果未提供任何值，则为默认值。 表示请求是默认优先级。
+  - 高 - 表示请求具有高优先级。 限制此请求会导致出现用户可见的故障。
+
+> **注意**：如果限制请求，则首先限制低优先级请求，其次限制正常优先级请求，最后限制高优先级请求。 使用优先级请求标头不会更改限制。
+
+##### <a name="regular-responses-requests"></a>正常响应请求
+
+- **x-ms-resource-unit** - 指示用于此请求的资源单位。 值为正整数。
+- **x-ms-throttle-limit-percentage** - 仅当应用程序消耗了超过其限制的 0.8 时才返回。 该值的范围是 0.8 到 1.8，是使用限制的百分比。 调用者可以使用该值设置警报并采取措施。
+
+##### <a name="throttled-responses-requests"></a>受限制的响应请求
+
+- **x-ms-throttle-scope** - eg. `Tenant_Application/ReadWrite/9a3d526c-b3c1-4479-ba74-197b5c5751ae/0785ef7c-2d7a-4542-b048-95bcab406e0b`（）。 指示采用下列格式 `<Scope>/<Limit>/<ApplicationId>/<TenantId|UserId|ResourceId>` 的限制范围：
+  - 范围：（字符串，必填）
+    - Tenant_Application - 当前应用程序对特定租户的所有请求。
+    - 租户 - 当前租户的所有请求，与应用程序无关。
+    - 应用程序 - 当前应用程序的所有请求。
+  - 限制：（字符串、必填）
+    - 读取：读取范围请求 (GET)
+    - 写入：写入范围请求 (POST、PATCH、PUT、DELETE...)
+    - ReadWrite：所有范围请求（任何）
+  - ApplicationId （Guid、必填）
+  - TenantId|UserId|ResourceId: (Guid、必填）
+- **x-ms-throttle-information** - 指示限制的原因，可以有任何值（字符串）。 提供该值是为了进行诊断和故障排除，其中一些示例包括：
+  - CPULimitExceeded - 限制因为超过 cpu 应用的限值。
+  - WriteLimitExceeded - 限制因为超过写入限值。
+  - ResourceUnitLimitExceeded - 限制因为超过已分配资源单位的限值。
 
 ### <a name="information-protection"></a>信息保护
 
@@ -243,6 +358,9 @@ riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocat
 | 10 分钟内的 10,000 个 API 请求                  | v1.0 和 beta 终结点 |
 | 4 个并发请求                                      | v1.0 和 beta 终结点   |
 
+上述限制适用于下列资源:  
+people、trending、usedinsight、sharedInsight。
+
 ### <a name="microsoft-graph-reports-service-limits"></a>Microsoft Graph 报告的服务限制
 
 以下限制适用于 `/reports` 上的所有请求。
@@ -252,7 +370,9 @@ riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocat
 | 任何请求（CSV）         | 每10分钟14个请求   | 每10分钟40个请求 |
 | 任何请求（JSON、beta）  | 每10分钟100个请求  | 不适用                        |
 
-上述限制分别适用于每个报表 API。 例如，在10分钟内分别有对 Microsoft Teams 用户活动报告API的请求及对 Outlook 用户活动报告API的请求，将分别被视为14个请求中的1个请求，而不是14个请求中的2个请求。
+上述限制分别适用于每个报表 API。 例如，在 10 分钟内分别有对 Microsoft Teams 用户活动报告 API 的请求及对 Outlook 用户活动报告 API 的请求，将分别被视为 14 个请求中的 1 个请求，而不是 14 个请求中的 2 个请求。
+
+上述限制适用于**报告**资源。  
 
 ### <a name="invitation-manager-service-limits"></a>邀请管理器服务限制
 

@@ -6,10 +6,10 @@ author: michaelrm97
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: 45a185f71b93fa7ad5a5d791839487c7ab9b14e4
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
+ms.lasthandoff: 08/12/2020
 ms.locfileid: "45224793"
 ---
 # <a name="delete-registereduser"></a>删除 registeredUser

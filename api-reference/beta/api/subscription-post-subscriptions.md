@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 36555a946aa9092d5cab6e27548a16ba783d738e
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 1301b8dc1b1e327b8bef573ec307ea25b066cf76
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598134"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46643965"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -23,7 +23,7 @@ ms.locfileid: "46598134"
 ## <a name="permissions"></a>权限
 
 创建订阅需要对资源具有读取权限。 例如，若要获取邮件的更改通知，您的应用程序需要具有邮件读取权限。 
- 
+
  根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
@@ -51,7 +51,7 @@ ms.locfileid: "46598134"
 
 具有应用程序权限的**了 chatmessage**订阅包括资源数据，并需要[加密](/graph/webhooks-with-resource-data)。 如果未指定[encryptionCertificate](../resources/subscription.md) ，则订阅创建将失败。 在创建**了 chatmessage**订阅之前，您必须请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。 
 
-> **注意：** `/teams/allMessages`，并且 `/chats/allMessages` 当前处于预览阶段。 在预览过程中，可以在不付费的情况下使用此 API，这取决于[Microsoft Api 使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context)。 但是，使用 API 的应用程序的用户可能需要订阅特定 Microsoft 365 产品。 在正式发行时，Microsoft 可能会要求您或您的客户根据通过 API 访问的数据量支付额外费用。
+> **注意：** `/teams/allMessages`并且 `/chats/allMessages` 当前处于预览阶段，您可以在不付费的情况下使用此 API，这取决于[Microsoft api 使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context)。 从8月2020开始，它将仅适用于具有[所需许可证](/graph/teams-licenses)的用户和租户。 由于 `/teams/allMessages` 并 `/chats/allMessages` 为租户中的所有用户传递通知，因此必须授权租户中的所有用户。 将来，Microsoft 可能会要求您或您的客户根据通过 API 访问的数据量支付额外的费用。
 
 ### <a name="driveitem"></a>driveItem
 
@@ -184,7 +184,7 @@ Content-length: 252
 }
 ```
 
-## <a name="notification-endpoint-validation"></a>通知终结点验证
+### <a name="notification-endpoint-validation"></a>通知终结点验证
 
  (在**notificationUrl**属性中指定的订阅通知终结点) 必须能够响应验证请求，如[设置用户数据中的更改通知](/graph/webhooks#notification-endpoint-validation)中所述。 如果验证失败，创建订阅请求返回错误“400 请求无效”。
 

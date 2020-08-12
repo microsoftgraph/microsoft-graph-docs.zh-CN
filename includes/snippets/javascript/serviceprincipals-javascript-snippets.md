@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8ce3446a6ab4fb659945a49a10f693d3a3d39525
-ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
-ms.translationtype: MT
+ms.openlocfilehash: 2a7969abf092212c6ae3d36657520415e903ef92
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45142356"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46643927"
 ---
 ```javascript
 
@@ -18,14 +18,13 @@ const client = Client.init(options);
 const appRoleAssignment = Content-type: appRoleAssignments/json
 
 {
-  principalId: "2fe96d23-5dc6-4f35-8222-0426a8c115c8",
+  principalId: "6cad4079-4e79-4a3f-9efb-ea30a14bdb26",
   principalType: "User",
-  appRoleId:"18d14569-c3bd-439b-9a66-3a2aee01d14f",
-  resourceId:"b00c693f-9658-4c06-bd1b-c402c4653dea"
+  appRoleId:"454dc4c2-8176-498e-99df-8c4efcde41ef",
+  resourceId:"f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
 };
 
-let res = await client.api('/servicePrincipals/b00c693f-9658-4c06-bd1b-c402c4653dea/appRoleAssignments')
-    .version('beta')
+let res = await client.api('/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e/appRoleAssignments')
     .post(appRoleAssignment);
 
 ```

@@ -1,18 +1,18 @@
 ---
-title: agreementFile 资源类型
-description: 表示租户使用 Azure Active Directory (Azure AD) 管理的可自定义使用条款协议文件。 它包含有关协议文件的元数据 (例如，名称、语言以及它是否为默认文件) 。
+title: agreementFileLocalization 资源类型
+description: 表示 Azure Active Directory (Azure AD) 中的使用条款协议的本地化策略文件。 它包含有关协议文件的元数据 (例如，名称、语言以及它是否为默认文件) 。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 0f8030680088a99c598d5c3576792583758840d9
+ms.openlocfilehash: 63d498b37980a57b3653b41cb337e792b8c1a838
 ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643974"
+ms.locfileid: "46644024"
 ---
-# <a name="agreementfile-resource-type"></a>agreementFile 资源类型
+# <a name="agreementfilelocalization-resource-type"></a>agreementFileLocalization 资源类型
 
 命名空间：microsoft.graph
 
@@ -40,13 +40,6 @@ ms.locfileid: "46643974"
 |language|String|协议文件的区域性（格式为 languagecode2/regioncode2）。 languagecode2 是从 ISO 639-1 派生的一个由两个小写字母组成的代码。 国家/regioncode2 派生自 ISO 3166，通常包含两个大写字母或一个 BCP-47 语言标记 (例如 en-us) 。 只读。|
 
 
-<!--
-## Relationships
-| Relationship | Type        | Description |
-|:-------------|:------------|:------------|
-|localizations|[agreementFileLocalization](agreementfilelocalization.md) collection|The localized version of the agreement files attached to the agreement.|
--->
-
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
@@ -56,7 +49,7 @@ ms.locfileid: "46643974"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.agreementFile"
+  "@odata.type": "microsoft.graph.agreementFileLocalization"
 }-->
 
 ```json
@@ -75,7 +68,7 @@ ms.locfileid: "46643974"
 <!--
 {
   "type": "#page.annotation",
-  "description": "agreementFile resource",
+  "description": "agreementFileLocalization resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
