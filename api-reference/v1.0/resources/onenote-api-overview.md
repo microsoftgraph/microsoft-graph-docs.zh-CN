@@ -5,12 +5,12 @@ localization_priority: Priority
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: conceptualPageType
-ms.openlocfilehash: c22f38e7002e7619b1e9ee182866e850cf83cdf9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0d628c906a5e4153e0129b1142f1d100325843fd
+ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035915"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46630352"
 ---
 # <a name="use-the-onenote-rest-api"></a>使用 OneNote REST API
 
@@ -18,7 +18,7 @@ Microsoft Graph 可让应用程序获得对个人或组织帐户中用户的 One
 
 ## <a name="root-url"></a>根 URL
 OneNote 服务根 URL 为 OneNote API 的所有调用使用以下格式。
-```
+```http
 https://graph.microsoft.com/{version}/{location}/onenote/ 
 ```
 URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本：
@@ -26,14 +26,14 @@ URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本：
 - `v1.0` 用于稳定的生产代码。
 - `beta` 用于试用正在开发的功能。 Beta 终结点中的特性和功能可能改变；不推荐将其用于生产代码中。
 
-位置可以是 Office 365 或消费者版 OneDrive 上的用户笔记本，还可以是 Office 365 上的组笔记本或 SharePoint 站点托管的团队笔记本。 
+位置可以是 Microsoft 365 的用户笔记簿，或是消费者版 OneDrive ，或者是组笔记，或者可以是Microsoft 365 上的 SharePoint 站点托管团队笔记本。 
 
 ![OneNote API 开发堆栈](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/onenote-dev-diagram.png)
 
-### <a name="user-notebooks"></a>用户笔记本
+## <a name="user-notebooks"></a>用户笔记本
 要访问消费者版 OneDrive 或 OneDrive for Business 上的个人笔记本，请使用下列 URL 之一：
 
-```
+```http
 https://graph.microsoft.com/{version}/me/onenote/{notebooks | sections | sectionGroups | pages} 
 https://graph.microsoft.com/{version}/users/{userPrincipalName}/onenote/{notebooks | sections | sectionGroups | pages} 
 https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
@@ -43,17 +43,19 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 - `users/{id}` 用于指定用户已与当前用户共享的 OneNote 内容（此 URL 中）。 使用 [users](users.md) API。
 > **注意：** 可以通过在 `https://graph.microsoft.com/v1.0/users` 上发出 GET 请求来获取用户 ID。
 
-### <a name="group-notebooks"></a>组笔记本
+## <a name="group-notebooks"></a>组笔记本
 要访问组所有的笔记本，请使用下列服务根 URL：
 
-```
+```http
 https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
-### <a name="sharepoint-site-notebooks"></a>SharePoint 网站笔记本
+## <a name="sharepoint-site-notebooks"></a>SharePoint 网站笔记本
 
 要访问 SharePoint 团队网站拥有的笔记本，请使用下列服务根 URL：
 
-```
+```http
 https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 
+## <a name="whats-new"></a>最近更新
+了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。

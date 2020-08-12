@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 50d53f66629e31d490717cd2fcea047d5a5e10ff
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
-ms.translationtype: MT
+ms.openlocfilehash: 38d9f6044a90e422d68e55466ffd1e6191c54caf
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44335789"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46643916"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -28,9 +28,9 @@ ms.locfileid: "44335789"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All、Auditlogs.Read.All |
+|委派（工作或学校帐户） | User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Auditlogs.Read.All |
+|应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,14 +41,14 @@ GET /users
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)，以帮助自定义响应，包括 `$search` 、 `$count` 和 `$filter` 。 您可以 `$search` 在**displayName**属性上使用。 为此资源添加或更新项目时，将对其进行专门编制索引，以便 `$count` 与 `$search` 查询参数一起使用。 在添加或更新项目以及在索引中可用时，可能会出现轻微的延迟。
+此方法支持[OData query parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` `$search`可以用在 **displayName**属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
 ## <a name="request-headers"></a>请求标头
 
 | 标头 | 值 |
 |:------ |:----- |
 | Authorization | Bearer {token}（必需）  |
-| ConsistencyLevel | 仍然. 此标头 `$count` 在使用时 `$search` 或在 `$filter` 与查询参数一起使用时是必需的 `$orderby` 。 它使用的索引可能不是最新的对象更改。 |
+| ConsistencyLevel | 最终。 当使用 `$search` 或将 `$filter` 与 `$orderby` 查询参数一起使用时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -60,7 +60,7 @@ GET /users
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-all-users"></a>示例1：获取所有用户
+### <a name="example-1-get-all-users"></a>示例 1：列出所有用户
 
 #### <a name="request"></a>请求
 
@@ -117,7 +117,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-user-account-using-a-sign-in-name"></a>示例2：使用登录名获取用户帐户
+### <a name="example-2-get-a-user-account-using-a-sign-in-name"></a>示例 2：使用登录名创建用户帐户
 
 使用登录名（也称为本地帐户）查找用户帐户。
 
@@ -174,7 +174,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-users-including-their-last-sign-in-time"></a>示例3：获取用户，包括其上次登录时间
+### <a name="example-3-get-users-including-their-last-sign-in-time"></a>示例3：列出用户，包括其上次登录时间
 
 #### <a name="request"></a>请求
 
@@ -370,7 +370,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-6-get-only-a-count-of-users"></a>示例6：仅获取用户数
+### <a name="example-6-get-only-a-count-of-users"></a>示例 6：仅获取用户数量
 
 #### <a name="request"></a>请求
 
@@ -419,7 +419,7 @@ Content-type: text/plain
 893
 
 
-### <a name="example-7-use-filter-and-top-to-get-one-user-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例7：使用 $filter 和 $top 获取一个显示名称以 ' a ' 开头的用户，其中包含返回对象的计数
+### <a name="example-7-use-filter-and-top-to-get-one-user-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 7：使用 $filter 和 $top 获取显示名称以“a”开头（包括返回的对象数）的组。
 
 #### <a name="request"></a>请求
 
@@ -481,7 +481,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-8-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>示例8：使用 $search 获取显示名称中包含字母 "wa" 的用户，其中包括返回对象的计数
+### <a name="example-8-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>示例 8：使用 $search 获取显示名称中包含字母“wa”（包括返回的对象数）的组。
 
 #### <a name="request"></a>请求
 
@@ -543,7 +543,7 @@ Content-type: application/json
 
 ```
 
-### <a name="example-9-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-or-the-letters-to-including-a-count-of-returned-objects"></a>示例9：使用 $search 获取显示名称中包含字母 "wa" 或字母 "to" 的用户，包括返回对象的计数
+### <a name="example-9-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-or-the-letters-to-including-a-count-of-returned-objects"></a>示例 9：使用 $search 获取名称显示中包含字母“wa”或者包含字母“to”的的用户，包括返回对象的数量
 
 #### <a name="request"></a>请求
 
