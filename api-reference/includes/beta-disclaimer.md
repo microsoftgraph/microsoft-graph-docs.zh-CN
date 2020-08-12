@@ -4,10 +4,10 @@ ms.topic: include
 ms.date: 01/18/2019
 ms.author: jasonjoh
 ms.openlocfilehash: 3abce464b2d66a203efe49802542bd4b8bdf070a
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
+ms.lasthandoff: 08/12/2020
 ms.locfileid: "35705020"
 ---
 <!-- markdownlint-disable MD041-->

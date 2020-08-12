@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2f7b152babfecb70016cc78b650b39e426b43d06
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: d0a6c53023c6cc10109225f36e8ac0ecf2237301
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37995618"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46644963"
 ---
 ```javascript
 
@@ -30,7 +30,7 @@ const informationProtectionAction = {
       count: 4,
       confidenceLevel: 75
     }
-   ]
+  ]
 };
 
 let res = await client.api('/informationprotection/policy/labels/evaluateClassificationResults')
