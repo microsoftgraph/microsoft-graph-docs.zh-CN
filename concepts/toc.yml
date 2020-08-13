@@ -347,6 +347,8 @@ items:
             href: teams-configuring-builtin-tabs.md
           - name: 受保护的 API
             href: teams-protected-apis.md
+          - name: 聊天信息订阅许可证
+            href: teams-licenses.md
           - name: 使用机器人发送主动邮件
             href: teams-proactive-messaging.md
       - name: 工作簿和图表
@@ -368,6 +370,8 @@ items:
             href: workbook-best-practice.md
           - name: 错误代码
             href: workbook-error-codes.md
+          - name: 错误处理
+            href: workbook-error-handling.md
   - name: 开发
     expanded: true
     items:

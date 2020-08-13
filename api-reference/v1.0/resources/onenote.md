@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 207d7ce3f5cf572d3c32de23882e04a8cc9dd54d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 72adb53bdf50ee0a5c909b54cb11698fc593f8db
+ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447323"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46657915"
 ---
 # <a name="onenote-resource-type"></a>Onenote 资源类型
 
@@ -20,15 +20,15 @@ ms.locfileid: "42447323"
 
 所有通过 Microsoft Graph API 对 OneNote 服务的调用都使用此服务根 URL：
 
-```
+```http
 https://graph.microsoft.com/{version}/{location}/onenote/ 
 ```
 
-位置可以是 Office 365 或消费者版 OneDrive 上的用户笔记本，还可以是 Office 365 上的组笔记本或 SharePoint 站点托管的团队笔记本。 
+位置可以是 Microsoft 365 的用户笔记簿，或是消费者版 OneDrive ，或者是组笔记，或者可以是Microsoft 365 上的 SharePoint 站点托管团队笔记本。 
 
 **用户笔记本** 要访问消费者版 OneDrive 或 OneDrive for Business 上的个人笔记本，请使用下列 URL 之一：
 
-```
+```http
 https://graph.microsoft.com/{version}/me/onenote/{notebooks | sections | sectionGroups | pages} 
 https://graph.microsoft.com/{version}/users/{userPrincipalName}/onenote/{notebooks | sections | sectionGroups | pages} 
 https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
@@ -36,12 +36,12 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 
 **组笔记本** 要访问组所有的笔记本，请使用下列服务根 URL：
 
-```
+```http
 https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 **SharePoint 站点笔记本** 要访问 SharePoint 团队网站所有的笔记本，请使用下列服务根 URL：
 
-```
+```http
 https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 ## <a name="authorization"></a>授权
@@ -78,8 +78,14 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.onenote"
 }-->
-``` json
+```json
 {
+  "notebooks": [{ "@odata.type": "microsoft.graph.notebook" }],
+  "operations": [{ "@odata.type": "microsoft.graph.onenoteOperation" }],
+  "pages": [{ "@odata.type": "microsoft.graph.onenotePage" }],
+  "resources": [ { "@odata.type": "microsoft.graph.onenoteResource" } ],
+  "sectionGroups": [ { "@odata.type": "microsoft.graph.sectionGroup" } ],
+  "sections": [ { "@odata.type": "microsoft.graph.onenoteSection" } ]
 }
 ```
 

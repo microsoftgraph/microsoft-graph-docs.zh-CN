@@ -7,12 +7,12 @@ localization_priority: Priority
 description: Permission 资源提供有关授予 DriveItem 资源共享权限的相关信息。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5c4b881aaf10a56b65342dccebd417867c2b7b26
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: 7a60b07e2368d16f588e96094926138908463310
+ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934701"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46657929"
 ---
 # <a name="permission-resource-type"></a>Permission 资源类型
 
@@ -84,12 +84,11 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
 
 ### <a name="roles-property-values"></a>角色属性值
 
-| 角色        | 详细信息                                                                        |
-|:------------|:-------------------------------------------------------------------------------|
-| `read`      | 提供读取项的元数据和内容的功能。            |
-| `write`     | 提供读取并修改项的元数据和内容的功能。 |
-| `sp.owner`  | 对于 SharePoint 和 OneDrive for Business，这表示所有者角色。       |
-| `sp.member` | 对于 SharePoint 和 OneDrive for Business，这表示成员角色。      |
+| 角色              | 详细信息                                                                        |
+|:------------------|:-------------------------------------------------------------------------------|
+| 阅读            | 提供读取项的元数据和内容的功能。            |
+| 写入           | 提供读取并修改项的元数据和内容的功能。 |
+| sp.full 控制 | 对于 SharePoint 和 OneDrive for Business，这表示所有者角色。       |
 
 ## <a name="sharing-links"></a>共享链接
 最常见的权限类型是共享链接。 共享链接提供唯一 URL，其中包含要共享的资源，以及提供对此资源的访问权限的身份验证令牌。 用户无需登录，即可访问通过共享链接共享的内容。 用户可以共享链接，从而提供对内容的只读权限或写入权限。
