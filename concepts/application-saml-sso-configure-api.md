@@ -5,58 +5,58 @@ author: kenwith
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 425b9dbdef90860b0b46ab1b288f4a3c3809659f
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: edc69453401a72242b01721d570cbf942bbf815d
+ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643928"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46658118"
 ---
-# <a name="automate-saml-based-sso-app-configuration-with-microsoft-graph-api"></a><span data-ttu-id="2f9d2-103">使用 Microsoft Graph API 自动化基于 SAML 的 SSO 应用配置</span><span class="sxs-lookup"><span data-stu-id="2f9d2-103">Automate SAML-based SSO app configuration with Microsoft Graph API</span></span>
+# <a name="automate-saml-based-sso-app-configuration-with-microsoft-graph-api"></a><span data-ttu-id="53551-103">使用 Microsoft Graph API 自动化基于 SAML 的 SSO 应用配置</span><span class="sxs-lookup"><span data-stu-id="53551-103">Automate SAML-based SSO app configuration with Microsoft Graph API</span></span>
 
-<span data-ttu-id="2f9d2-104">在本文中，您将学习如何从 Azure Active Directory（Azure AD）库中创建和配置应用程序。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-104">In this article, you'll learn how to create and configure an application from the Azure Active Directory (Azure AD) Gallery.</span></span> <span data-ttu-id="2f9d2-105">本文使用 AWS 作为示例，但可以针对 Azure AD 库中的任何基于 SAML 的应用使用本文中的步骤。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-105">This article uses AWS as an example, but you can use the steps in this article for any SAML-based app in the Azure AD Gallery.</span></span>
+<span data-ttu-id="53551-104">在本文中，您将学习如何从 Azure Active Directory（Azure AD）库中创建和配置应用程序。</span><span class="sxs-lookup"><span data-stu-id="53551-104">In this article, you'll learn how to create and configure an application from the Azure Active Directory (Azure AD) Gallery.</span></span> <span data-ttu-id="53551-105">本文使用 AWS 作为示例，但可以针对 Azure AD 库中的任何基于 SAML 的应用使用本文中的步骤。</span><span class="sxs-lookup"><span data-stu-id="53551-105">This article uses AWS as an example, but you can use the steps in this article for any SAML-based app in the Azure AD Gallery.</span></span>
 
-<span data-ttu-id="2f9d2-106">**使用 Microsoft Graph API 来自动配置基于 SAML 的单一登录的步骤**</span><span class="sxs-lookup"><span data-stu-id="2f9d2-106">**Steps to use Microsoft Graph APIs to automate configuration of SAML-based single sign-on**</span></span>
+<span data-ttu-id="53551-106">**使用 Microsoft Graph API 来自动配置基于 SAML 的单一登录的步骤**</span><span class="sxs-lookup"><span data-stu-id="53551-106">**Steps to use Microsoft Graph APIs to automate configuration of SAML-based single sign-on**</span></span>
 
-| <span data-ttu-id="2f9d2-107">步骤</span><span class="sxs-lookup"><span data-stu-id="2f9d2-107">Step</span></span>  | <span data-ttu-id="2f9d2-108">详细信息</span><span class="sxs-lookup"><span data-stu-id="2f9d2-108">Details</span></span>  |
+| <span data-ttu-id="53551-107">步骤</span><span class="sxs-lookup"><span data-stu-id="53551-107">Step</span></span>  | <span data-ttu-id="53551-108">详细信息</span><span class="sxs-lookup"><span data-stu-id="53551-108">Details</span></span>  |
 |---------|---------|
-| [<span data-ttu-id="2f9d2-109">1. 创建库应用程序</span><span class="sxs-lookup"><span data-stu-id="2f9d2-109">1. Create the gallery application</span></span>](#step-1-create-the-gallery-application) | <span data-ttu-id="2f9d2-110">登录到 API 客户端</span><span class="sxs-lookup"><span data-stu-id="2f9d2-110">Sign in to the API client</span></span> <br> <span data-ttu-id="2f9d2-111">检索库应用</span><span class="sxs-lookup"><span data-stu-id="2f9d2-111">Retrieve the gallery application</span></span> <br> <span data-ttu-id="2f9d2-112">创建库应用程序</span><span class="sxs-lookup"><span data-stu-id="2f9d2-112">Create the gallery application</span></span>|
-| [<span data-ttu-id="2f9d2-113">2. 配置单一登录</span><span class="sxs-lookup"><span data-stu-id="2f9d2-113">2. Configure single sign-on</span></span>](#step-2-configure-single-sign-on) | <span data-ttu-id="2f9d2-114">检索应用对象 ID 和服务主体对象 ID</span><span class="sxs-lookup"><span data-stu-id="2f9d2-114">Retrieve app object ID and service principal object ID</span></span> <br> <span data-ttu-id="2f9d2-115">设置单一登录模式</span><span class="sxs-lookup"><span data-stu-id="2f9d2-115">Set single sign-on mode</span></span> <br> <span data-ttu-id="2f9d2-116">设置基本 SAML URL、例如标识符、回复 URL、登录 URL</span><span class="sxs-lookup"><span data-stu-id="2f9d2-116">Set basic SAML URLs such as identifier, reply URL, sign-on URL</span></span> <br> <span data-ttu-id="2f9d2-117">添加应用程序角色（可选）</span><span class="sxs-lookup"><span data-stu-id="2f9d2-117">Add app roles (Optional)</span></span>|
-| [<span data-ttu-id="2f9d2-118">3. 配置声明映射</span><span class="sxs-lookup"><span data-stu-id="2f9d2-118">3. Configure claims mapping</span></span>](#step-3-configure-claims-mapping) | <span data-ttu-id="2f9d2-119">创建声明映射策略</span><span class="sxs-lookup"><span data-stu-id="2f9d2-119">Create claims mapping policy</span></span> <br> <span data-ttu-id="2f9d2-120">向服务主体分配声明映射策略</span><span class="sxs-lookup"><span data-stu-id="2f9d2-120">Assign claims mapping policy to service principal</span></span>|
-| [<span data-ttu-id="2f9d2-121">4. 配置签名证书</span><span class="sxs-lookup"><span data-stu-id="2f9d2-121">4. Configure signing certificate</span></span>](#step-4-configure-signing-certificate) | <span data-ttu-id="2f9d2-122">创建证书</span><span class="sxs-lookup"><span data-stu-id="2f9d2-122">Create a certificate</span></span> <BR> <span data-ttu-id="2f9d2-123">添加自定义签名密钥</span><span class="sxs-lookup"><span data-stu-id="2f9d2-123">Add a custom signing key</span></span> <br> <span data-ttu-id="2f9d2-124">激活自定义签名密钥</span><span class="sxs-lookup"><span data-stu-id="2f9d2-124">Activate the custom signing key</span></span>|
-| [<span data-ttu-id="2f9d2-125">5. 分配用户</span><span class="sxs-lookup"><span data-stu-id="2f9d2-125">5. Assign users</span></span>](#step-5-assign-users) | <span data-ttu-id="2f9d2-126">向应用程序分配用户和组</span><span class="sxs-lookup"><span data-stu-id="2f9d2-126">Assign users and groups to the application</span></span>
-| [<span data-ttu-id="2f9d2-127">6. 配置应用程序端</span><span class="sxs-lookup"><span data-stu-id="2f9d2-127">6. Configure the application side</span></span>](#step-6-configure-the-application-side)| <span data-ttu-id="2f9d2-128">获取 Azure AD SAML 元数据</span><span class="sxs-lookup"><span data-stu-id="2f9d2-128">Get Azure AD SAML metadata</span></span>
+| [<span data-ttu-id="53551-109">1. 创建库应用程序</span><span class="sxs-lookup"><span data-stu-id="53551-109">1. Create the gallery application</span></span>](#step-1-create-the-gallery-application) | <span data-ttu-id="53551-110">登录到 API 客户端</span><span class="sxs-lookup"><span data-stu-id="53551-110">Sign in to the API client</span></span> <br> <span data-ttu-id="53551-111">检索库应用</span><span class="sxs-lookup"><span data-stu-id="53551-111">Retrieve the gallery application</span></span> <br> <span data-ttu-id="53551-112">创建库应用程序</span><span class="sxs-lookup"><span data-stu-id="53551-112">Create the gallery application</span></span>|
+| [<span data-ttu-id="53551-113">2. 配置单一登录</span><span class="sxs-lookup"><span data-stu-id="53551-113">2. Configure single sign-on</span></span>](#step-2-configure-single-sign-on) | <span data-ttu-id="53551-114">检索应用对象 ID 和服务主体对象 ID</span><span class="sxs-lookup"><span data-stu-id="53551-114">Retrieve app object ID and service principal object ID</span></span> <br> <span data-ttu-id="53551-115">设置单一登录模式</span><span class="sxs-lookup"><span data-stu-id="53551-115">Set single sign-on mode</span></span> <br> <span data-ttu-id="53551-116">设置基本 SAML URL、例如标识符、回复 URL、登录 URL</span><span class="sxs-lookup"><span data-stu-id="53551-116">Set basic SAML URLs such as identifier, reply URL, sign-on URL</span></span> <br> <span data-ttu-id="53551-117">添加应用程序角色（可选）</span><span class="sxs-lookup"><span data-stu-id="53551-117">Add app roles (Optional)</span></span>|
+| [<span data-ttu-id="53551-118">3. 配置声明映射</span><span class="sxs-lookup"><span data-stu-id="53551-118">3. Configure claims mapping</span></span>](#step-3-configure-claims-mapping) | <span data-ttu-id="53551-119">创建声明映射策略</span><span class="sxs-lookup"><span data-stu-id="53551-119">Create claims mapping policy</span></span> <br> <span data-ttu-id="53551-120">向服务主体分配声明映射策略</span><span class="sxs-lookup"><span data-stu-id="53551-120">Assign claims mapping policy to service principal</span></span>|
+| [<span data-ttu-id="53551-121">4. 配置签名证书</span><span class="sxs-lookup"><span data-stu-id="53551-121">4. Configure signing certificate</span></span>](#step-4-configure-signing-certificate) | <span data-ttu-id="53551-122">创建证书</span><span class="sxs-lookup"><span data-stu-id="53551-122">Create a certificate</span></span> <BR> <span data-ttu-id="53551-123">添加自定义签名密钥</span><span class="sxs-lookup"><span data-stu-id="53551-123">Add a custom signing key</span></span> <br> <span data-ttu-id="53551-124">激活自定义签名密钥</span><span class="sxs-lookup"><span data-stu-id="53551-124">Activate the custom signing key</span></span>|
+| [<span data-ttu-id="53551-125">5. 分配用户</span><span class="sxs-lookup"><span data-stu-id="53551-125">5. Assign users</span></span>](#step-5-assign-users) | <span data-ttu-id="53551-126">向应用程序分配用户和组</span><span class="sxs-lookup"><span data-stu-id="53551-126">Assign users and groups to the application</span></span>
+| [<span data-ttu-id="53551-127">6. 配置应用程序端</span><span class="sxs-lookup"><span data-stu-id="53551-127">6. Configure the application side</span></span>](#step-6-configure-the-application-side)| <span data-ttu-id="53551-128">获取 Azure AD SAML 元数据</span><span class="sxs-lookup"><span data-stu-id="53551-128">Get Azure AD SAML metadata</span></span>
 
-<span data-ttu-id="2f9d2-129">**文章中使用的所有 API 列表**</span><span class="sxs-lookup"><span data-stu-id="2f9d2-129">**List of all APIs used in the article**</span></span>
+<span data-ttu-id="53551-129">**文章中使用的所有 API 列表**</span><span class="sxs-lookup"><span data-stu-id="53551-129">**List of all APIs used in the article**</span></span>
 
-<span data-ttu-id="2f9d2-130">请确保你具有相应的权限来调用以下 API。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-130">Make sure you have the corresponding permissions to call the following APIs.</span></span>
+<span data-ttu-id="53551-130">请确保你具有相应的权限来调用以下 API。</span><span class="sxs-lookup"><span data-stu-id="53551-130">Make sure you have the corresponding permissions to call the following APIs.</span></span>
 
-|<span data-ttu-id="2f9d2-131">资源类型</span><span class="sxs-lookup"><span data-stu-id="2f9d2-131">Resource type</span></span> |<span data-ttu-id="2f9d2-132">方法</span><span class="sxs-lookup"><span data-stu-id="2f9d2-132">Method</span></span> |
+|<span data-ttu-id="53551-131">资源类型</span><span class="sxs-lookup"><span data-stu-id="53551-131">Resource type</span></span> |<span data-ttu-id="53551-132">方法</span><span class="sxs-lookup"><span data-stu-id="53551-132">Method</span></span> |
 |---------|---------|
-|[<span data-ttu-id="2f9d2-133">applicationTemplate</span><span class="sxs-lookup"><span data-stu-id="2f9d2-133">applicationTemplate</span></span>](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta)|[<span data-ttu-id="2f9d2-134">列出 applicationTemplate</span><span class="sxs-lookup"><span data-stu-id="2f9d2-134">List applicationTemplate</span></span>](https://docs.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-beta&tabs=http) <br>[<span data-ttu-id="2f9d2-135">实例化 applicationTemplate</span><span class="sxs-lookup"><span data-stu-id="2f9d2-135">Instantiate applicationTemplate</span></span>](https://docs.microsoft.com/graph/api/applicationtemplate-instantiate?view=graph-rest-beta&tabs=http)|
-|[<span data-ttu-id="2f9d2-136">servicePrincipals</span><span class="sxs-lookup"><span data-stu-id="2f9d2-136">servicePrincipals</span></span>](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[<span data-ttu-id="2f9d2-137">更新 servicePrincipal</span><span class="sxs-lookup"><span data-stu-id="2f9d2-137">Update servicePrincipal</span></span>](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [<span data-ttu-id="2f9d2-138">创建 appRoleAssignments</span><span class="sxs-lookup"><span data-stu-id="2f9d2-138">Create appRoleAssignments</span></span>](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-1.0&tabs=http) <br> [<span data-ttu-id="2f9d2-139">分配 claimsMappingPolicies</span><span class="sxs-lookup"><span data-stu-id="2f9d2-139">Assign claimsMappingPolicies</span></span>](https://docs.microsoft.com/graph/api/serviceprincipal-post-claimsmappingpolicies?view=graph-rest-beta&tabs=http)|
-|[<span data-ttu-id="2f9d2-140">applications</span><span class="sxs-lookup"><span data-stu-id="2f9d2-140">applications</span></span>](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)|[<span data-ttu-id="2f9d2-141">更新应用程序</span><span class="sxs-lookup"><span data-stu-id="2f9d2-141">Update application</span></span>](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-1.0&tabs=http)|
-|[<span data-ttu-id="2f9d2-142">claimsMappingPolicy</span><span class="sxs-lookup"><span data-stu-id="2f9d2-142">claimsMappingPolicy</span></span>](https://docs.microsoft.com/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)| [<span data-ttu-id="2f9d2-143">创建 claimsMappingPolicy</span><span class="sxs-lookup"><span data-stu-id="2f9d2-143">Create claimsMappingPolicy</span></span>](https://docs.microsoft.com/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?view=graph-rest-beta&tabs=http)
+|[<span data-ttu-id="53551-133">applicationTemplate</span><span class="sxs-lookup"><span data-stu-id="53551-133">applicationTemplate</span></span>](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta)|[<span data-ttu-id="53551-134">列出 applicationTemplate</span><span class="sxs-lookup"><span data-stu-id="53551-134">List applicationTemplate</span></span>](https://docs.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-beta&tabs=http) <br>[<span data-ttu-id="53551-135">实例化 applicationTemplate</span><span class="sxs-lookup"><span data-stu-id="53551-135">Instantiate applicationTemplate</span></span>](https://docs.microsoft.com/graph/api/applicationtemplate-instantiate?view=graph-rest-beta&tabs=http)|
+|[<span data-ttu-id="53551-136">servicePrincipals</span><span class="sxs-lookup"><span data-stu-id="53551-136">servicePrincipals</span></span>](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[<span data-ttu-id="53551-137">更新 servicePrincipal</span><span class="sxs-lookup"><span data-stu-id="53551-137">Update servicePrincipal</span></span>](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [<span data-ttu-id="53551-138">创建 appRoleAssignments</span><span class="sxs-lookup"><span data-stu-id="53551-138">Create appRoleAssignments</span></span>](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-1.0&tabs=http) <br> [<span data-ttu-id="53551-139">分配 claimsMappingPolicies</span><span class="sxs-lookup"><span data-stu-id="53551-139">Assign claimsMappingPolicies</span></span>](https://docs.microsoft.com/graph/api/serviceprincipal-post-claimsmappingpolicies?view=graph-rest-beta&tabs=http)|
+|[<span data-ttu-id="53551-140">applications</span><span class="sxs-lookup"><span data-stu-id="53551-140">applications</span></span>](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)|[<span data-ttu-id="53551-141">更新应用程序</span><span class="sxs-lookup"><span data-stu-id="53551-141">Update application</span></span>](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-1.0&tabs=http)|
+|[<span data-ttu-id="53551-142">claimsMappingPolicy</span><span class="sxs-lookup"><span data-stu-id="53551-142">claimsMappingPolicy</span></span>](https://docs.microsoft.com/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)| [<span data-ttu-id="53551-143">创建 claimsMappingPolicy</span><span class="sxs-lookup"><span data-stu-id="53551-143">Create claimsMappingPolicy</span></span>](https://docs.microsoft.com/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?view=graph-rest-beta&tabs=http)
 
 >[!NOTE]
-><span data-ttu-id="2f9d2-144">本文中所示的响应对象可能会被缩短以提高可读性。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-144">The response objects shown in this article might be shortened for readability.</span></span> <span data-ttu-id="2f9d2-145">所有属性都是从实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-145">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="53551-144">本文中所示的响应对象可能会被缩短以提高可读性。</span><span class="sxs-lookup"><span data-stu-id="53551-144">The response objects shown in this article might be shortened for readability.</span></span> <span data-ttu-id="53551-145">所有属性都是从实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="53551-145">All the properties will be returned from an actual call.</span></span>
 
-## <a name="step-1-create-the-gallery-application"></a><span data-ttu-id="2f9d2-146">第 1 步：创建库应用程序</span><span class="sxs-lookup"><span data-stu-id="2f9d2-146">Step 1: Create the gallery application</span></span>
+## <a name="step-1-create-the-gallery-application"></a><span data-ttu-id="53551-146">第 1 步：创建库应用程序</span><span class="sxs-lookup"><span data-stu-id="53551-146">Step 1: Create the gallery application</span></span>
 
-### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a><span data-ttu-id="2f9d2-147">登录到 Microsoft Graph Explorer（推荐），Postman 或使用的任何其他 API 客户端</span><span class="sxs-lookup"><span data-stu-id="2f9d2-147">Sign in to Microsoft Graph Explorer (recommended), Postman, or any other API client you use</span></span>
+### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a><span data-ttu-id="53551-147">登录到 Microsoft Graph Explorer（推荐），Postman 或使用的任何其他 API 客户端</span><span class="sxs-lookup"><span data-stu-id="53551-147">Sign in to Microsoft Graph Explorer (recommended), Postman, or any other API client you use</span></span>
 
-1. <span data-ttu-id="2f9d2-148">启动 [Microsoft Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-148">Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span></span>
-2. <span data-ttu-id="2f9d2-149">选择**使用 Microsoft 登录**，然后使用 Azure AD 全局管理员或 App Admin 凭据登录。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-149">Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator or App Admin credentials.</span></span>
-3. <span data-ttu-id="2f9d2-150">成功登录后，将在左侧窗格中看到用户帐户详细信息。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-150">Upon successful sign-in, you'll see the user account details in the left-hand pane.</span></span>
+1. <span data-ttu-id="53551-148">启动 [Microsoft Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)。</span><span class="sxs-lookup"><span data-stu-id="53551-148">Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span></span>
+2. <span data-ttu-id="53551-149">选择**使用 Microsoft 登录**，然后使用 Azure AD 全局管理员或 App Admin 凭据登录。</span><span class="sxs-lookup"><span data-stu-id="53551-149">Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator or App Admin credentials.</span></span>
+3. <span data-ttu-id="53551-150">成功登录后，将在左侧窗格中看到用户帐户详细信息。</span><span class="sxs-lookup"><span data-stu-id="53551-150">Upon successful sign-in, you'll see the user account details in the left-hand pane.</span></span>
 
-### <a name="retrieve-the-gallery-application-template-identifier"></a><span data-ttu-id="2f9d2-151">检索库应用程序模板标识符</span><span class="sxs-lookup"><span data-stu-id="2f9d2-151">Retrieve the gallery application template identifier</span></span>
+### <a name="retrieve-the-gallery-application-template-identifier"></a><span data-ttu-id="53551-151">检索库应用程序模板标识符</span><span class="sxs-lookup"><span data-stu-id="53551-151">Retrieve the gallery application template identifier</span></span>
 
-<span data-ttu-id="2f9d2-152">Azure AD 应用程序库中的每个应用程序都有一个[应用程序模板](https://docs.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-beta&tabs=http)，用于描述该应用程序的元数据。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-152">Applications in the Azure AD application gallery each have an [application template](https://docs.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-beta&tabs=http) that describes the metadata for that application.</span></span> <span data-ttu-id="2f9d2-153">使用此模板，可以在租户中创建应用程序和服务主体的实例以进行管理。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-153">Using this template, you can create an instance of the application and service principal in your tenant for management.</span></span>
+<span data-ttu-id="53551-152">Azure AD 应用程序库中的每个应用程序都有一个[应用程序模板](https://docs.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-beta&tabs=http)，用于描述该应用程序的元数据。</span><span class="sxs-lookup"><span data-stu-id="53551-152">Applications in the Azure AD application gallery each have an [application template](https://docs.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-beta&tabs=http) that describes the metadata for that application.</span></span> <span data-ttu-id="53551-153">使用此模板，可以在租户中创建应用程序和服务主体的实例以进行管理。</span><span class="sxs-lookup"><span data-stu-id="53551-153">Using this template, you can create an instance of the application and service principal in your tenant for management.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2f9d2-154">请求</span><span class="sxs-lookup"><span data-stu-id="2f9d2-154">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="53551-154">请求</span><span class="sxs-lookup"><span data-stu-id="53551-154">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="2f9d2-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="2f9d2-155">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="53551-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="53551-155">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_applicationtemplates"
@@ -65,22 +65,22 @@ ms.locfileid: "46643928"
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/applicationTemplates
 ```
-# <a name="c"></a>[<span data-ttu-id="2f9d2-156">C#</span><span class="sxs-lookup"><span data-stu-id="2f9d2-156">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="53551-156">C#</span><span class="sxs-lookup"><span data-stu-id="53551-156">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplates-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2f9d2-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2f9d2-157">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="53551-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="53551-157">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationtemplates-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2f9d2-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2f9d2-158">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="53551-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="53551-158">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-applicationtemplates-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="2f9d2-159">响应</span><span class="sxs-lookup"><span data-stu-id="2f9d2-159">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="53551-159">响应</span><span class="sxs-lookup"><span data-stu-id="53551-159">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -117,21 +117,21 @@ Content-type: application/json
 }
 ```
 
-### <a name="create-the-gallery-application"></a><span data-ttu-id="2f9d2-160">创建库应用程序</span><span class="sxs-lookup"><span data-stu-id="2f9d2-160">Create the gallery application</span></span>
+### <a name="create-the-gallery-application"></a><span data-ttu-id="53551-160">创建库应用程序</span><span class="sxs-lookup"><span data-stu-id="53551-160">Create the gallery application</span></span>
 
-<span data-ttu-id="2f9d2-161">使用在上一步中为应用程序检索的模板ID，在租户中为应用和服务主题[创建实例](https://docs.microsoft.com/graph/api/applicationtemplate-instantiate?view=graph-rest-beta&tabs=http)。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-161">Using the template ID that you retrieved for your application in the last step, [create an instance](https://docs.microsoft.com/graph/api/applicationtemplate-instantiate?view=graph-rest-beta&tabs=http) of the application and service principal in your tenant.</span></span>
+<span data-ttu-id="53551-161">使用在上一步中为应用程序检索的模板ID，在租户中为应用和服务主题[创建实例](https://docs.microsoft.com/graph/api/applicationtemplate-instantiate?view=graph-rest-beta&tabs=http)。</span><span class="sxs-lookup"><span data-stu-id="53551-161">Using the template ID that you retrieved for your application in the last step, [create an instance](https://docs.microsoft.com/graph/api/applicationtemplate-instantiate?view=graph-rest-beta&tabs=http) of the application and service principal in your tenant.</span></span>
 
 > [!NOTE] 
-> <span data-ttu-id="2f9d2-162">可以使用 applicationTemplate API 实例化[非库应用程序](https://docs.microsoft.com/azure/active-directory/manage-apps/view-applications-portal)。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-162">You can use applicationTemplate API to instantiate [Non-Gallery apps](https://docs.microsoft.com/azure/active-directory/manage-apps/view-applications-portal).</span></span> <span data-ttu-id="2f9d2-163">使用 applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-163">Use applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.</span></span>
+> <span data-ttu-id="53551-162">可以使用 applicationTemplate API 实例化[非库应用程序](https://docs.microsoft.com/azure/active-directory/manage-apps/view-applications-portal)。</span><span class="sxs-lookup"><span data-stu-id="53551-162">You can use applicationTemplate API to instantiate [Non-Gallery apps](https://docs.microsoft.com/azure/active-directory/manage-apps/view-applications-portal).</span></span> <span data-ttu-id="53551-163">使用 applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`。</span><span class="sxs-lookup"><span data-stu-id="53551-163">Use applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="2f9d2-164">留出一些时间将应用程序配置到 Azure AD 租户中。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-164">Allow some time for the app to be provisioned into your Azure AD tenant.</span></span> <span data-ttu-id="2f9d2-165">这不是即时的。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-165">It is not instant.</span></span> <span data-ttu-id="2f9d2-166">一种策略是每 5-10秒 对应用程序/服务主体对象执行 GET 查询，直到查询成功。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-166">One strategy is to do a GET query on the application / service principal object every 5-10 seconds until the query is successful.</span></span>
+> <span data-ttu-id="53551-164">留出一些时间将应用程序配置到 Azure AD 租户中。</span><span class="sxs-lookup"><span data-stu-id="53551-164">Allow some time for the app to be provisioned into your Azure AD tenant.</span></span> <span data-ttu-id="53551-165">这不是即时的。</span><span class="sxs-lookup"><span data-stu-id="53551-165">It is not instant.</span></span> <span data-ttu-id="53551-166">一种策略是每 5-10秒 对应用程序/服务主体对象执行 GET 查询，直到查询成功。</span><span class="sxs-lookup"><span data-stu-id="53551-166">One strategy is to do a GET query on the application / service principal object every 5-10 seconds until the query is successful.</span></span>
 
 
-#### <a name="request"></a><span data-ttu-id="2f9d2-167">请求</span><span class="sxs-lookup"><span data-stu-id="2f9d2-167">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="53551-167">请求</span><span class="sxs-lookup"><span data-stu-id="53551-167">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="2f9d2-168">HTTP</span><span class="sxs-lookup"><span data-stu-id="2f9d2-168">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="53551-168">HTTP</span><span class="sxs-lookup"><span data-stu-id="53551-168">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "applicationtemplate_instantiate"
@@ -145,22 +145,22 @@ Content-type: application/json
   "displayName": "AWS Contoso"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="2f9d2-169">C#</span><span class="sxs-lookup"><span data-stu-id="2f9d2-169">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="53551-169">C#</span><span class="sxs-lookup"><span data-stu-id="53551-169">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/applicationtemplate-instantiate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2f9d2-170">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2f9d2-170">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="53551-170">JavaScript</span><span class="sxs-lookup"><span data-stu-id="53551-170">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/applicationtemplate-instantiate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2f9d2-171">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2f9d2-171">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="53551-171">Objective-C</span><span class="sxs-lookup"><span data-stu-id="53551-171">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/applicationtemplate-instantiate-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="2f9d2-172">响应</span><span class="sxs-lookup"><span data-stu-id="2f9d2-172">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="53551-172">响应</span><span class="sxs-lookup"><span data-stu-id="53551-172">Response</span></span>
 
 
 <!-- {
@@ -207,11 +207,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-2-configure-single-sign-on"></a><span data-ttu-id="2f9d2-173">第 2 步：配置单一登录</span><span class="sxs-lookup"><span data-stu-id="2f9d2-173">Step 2: Configure single sign-on</span></span>
+## <a name="step-2-configure-single-sign-on"></a><span data-ttu-id="53551-173">第 2 步：配置单一登录</span><span class="sxs-lookup"><span data-stu-id="53551-173">Step 2: Configure single sign-on</span></span>
 
-### <a name="retrieve-app-object-id-and-service-principal-object-id"></a><span data-ttu-id="2f9d2-174">检索应用对象 ID 和服务主体对象 ID</span><span class="sxs-lookup"><span data-stu-id="2f9d2-174">Retrieve app object ID and service principal object ID</span></span>
+### <a name="retrieve-app-object-id-and-service-principal-object-id"></a><span data-ttu-id="53551-174">检索应用对象 ID 和服务主体对象 ID</span><span class="sxs-lookup"><span data-stu-id="53551-174">Retrieve app object ID and service principal object ID</span></span>
 
-<span data-ttu-id="2f9d2-175">使用上一次调用的响应检索并保存应用程序对象 ID 和服务主体对象 ID。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-175">Use the response from the previous call to retrieve and save the application object ID and service principal object ID.</span></span>
+<span data-ttu-id="53551-175">使用上一次调用的响应检索并保存应用程序对象 ID 和服务主体对象 ID。</span><span class="sxs-lookup"><span data-stu-id="53551-175">Use the response from the previous call to retrieve and save the application object ID and service principal object ID.</span></span>
 
 ```
 "application": {
@@ -221,49 +221,45 @@ Content-type: application/json
         "objectId": "f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
 }
 ```
-### <a name="set-single-sign-on-mode"></a><span data-ttu-id="2f9d2-176">设置单一登录模式</span><span class="sxs-lookup"><span data-stu-id="2f9d2-176">Set single sign-on mode</span></span>
+### <a name="set-single-sign-on-mode"></a><span data-ttu-id="53551-176">设置单一登录模式</span><span class="sxs-lookup"><span data-stu-id="53551-176">Set single sign-on mode</span></span>
 
-<span data-ttu-id="2f9d2-177">在此示例中，将在 [ servicePrincipal 资源类型](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)中将 `saml` 设置为单一登录模式。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-177">In this example, you'll set `saml` as the single sign-on mode in the [servicePrincipal resource type](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0).</span></span> <span data-ttu-id="2f9d2-178">可以配置的其他 SAML SSO 属性是：`notificationEmailAddresses`、`loginUrl`、和 `samlSingleSignOnSettings.relayState`。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-178">Other SAML SSO properties that you can configure are: `notificationEmailAddresses`, `loginUrl`, and `samlSingleSignOnSettings.relayState`.</span></span>
+<span data-ttu-id="53551-177">在此示例中，将在 [ servicePrincipal 资源类型](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)中将 `saml` 设置为单一登录模式。</span><span class="sxs-lookup"><span data-stu-id="53551-177">In this example, you'll set `saml` as the single sign-on mode in the [servicePrincipal resource type](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0).</span></span> <span data-ttu-id="53551-178">可以配置的其他 SAML SSO 属性是：`notificationEmailAddresses`、`loginUrl`、和 `samlSingleSignOnSettings.relayState`。</span><span class="sxs-lookup"><span data-stu-id="53551-178">Other SAML SSO properties that you can configure are: `notificationEmailAddresses`, `loginUrl`, and `samlSingleSignOnSettings.relayState`.</span></span>
 
-<span data-ttu-id="2f9d2-179">在此查询生效之前，需要在 Graph Explorer 中的**修改权限**选项卡上表示同意。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-179">Before this query will work you need to provide consent on the **Modify permissions** tab in Graph Explorer.</span></span> <span data-ttu-id="2f9d2-180">另外，请确保你使用的是先前获得的 **servicePrincipal** ID。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-180">Also, make sure you are using the **servicePrincipal** ID that you obtained earlier.</span></span>
+<span data-ttu-id="53551-179">在此查询生效之前，需要在 Graph Explorer 中的**修改权限**选项卡上表示同意。</span><span class="sxs-lookup"><span data-stu-id="53551-179">Before this query will work you need to provide consent on the **Modify permissions** tab in Graph Explorer.</span></span> <span data-ttu-id="53551-180">另外，请确保你使用的是先前获得的 **servicePrincipal** ID。</span><span class="sxs-lookup"><span data-stu-id="53551-180">Also, make sure you are using the **servicePrincipal** ID that you obtained earlier.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2f9d2-181">请求</span><span class="sxs-lookup"><span data-stu-id="2f9d2-181">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="53551-181">请求</span><span class="sxs-lookup"><span data-stu-id="53551-181">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="2f9d2-182">HTTP</span><span class="sxs-lookup"><span data-stu-id="2f9d2-182">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="53551-182">HTTP</span><span class="sxs-lookup"><span data-stu-id="53551-182">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
 }-->
 
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
+PATCH https://graph.microsoft.com/beta/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
 Content-type: servicePrincipal/json
 
 {
     "preferredSingleSignOnMode": "saml"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="2f9d2-183">C#</span><span class="sxs-lookup"><span data-stu-id="2f9d2-183">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="53551-183">C#</span><span class="sxs-lookup"><span data-stu-id="53551-183">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2f9d2-184">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2f9d2-184">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="53551-184">JavaScript</span><span class="sxs-lookup"><span data-stu-id="53551-184">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2f9d2-185">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2f9d2-185">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="53551-185">Objective-C</span><span class="sxs-lookup"><span data-stu-id="53551-185">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[<span data-ttu-id="2f9d2-186">Java</span><span class="sxs-lookup"><span data-stu-id="2f9d2-186">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="2f9d2-187">响应</span><span class="sxs-lookup"><span data-stu-id="2f9d2-187">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="53551-186">响应</span><span class="sxs-lookup"><span data-stu-id="53551-186">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -274,23 +270,23 @@ Content-type: servicePrincipal/json
 HTTP/1.1 204
 ```
 
-### <a name="set-basic-saml-urls-such-as-identifier-reply-url-sign-on-url"></a><span data-ttu-id="2f9d2-188">设置基本 SAML URL、例如标识符、回复 URL、登录 URL</span><span class="sxs-lookup"><span data-stu-id="2f9d2-188">Set basic SAML URLs such as identifier, reply URL, sign-on URL</span></span>
+### <a name="set-basic-saml-urls-such-as-identifier-reply-url-sign-on-url"></a><span data-ttu-id="53551-187">设置基本 SAML URL、例如标识符、回复 URL、登录 URL</span><span class="sxs-lookup"><span data-stu-id="53551-187">Set basic SAML URLs such as identifier, reply URL, sign-on URL</span></span>
 
-<span data-ttu-id="2f9d2-189">在应用程序对象中设置 AWS 的标识符并回复 URL。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-189">Set the identifier and reply URLs for AWS in the application object.</span></span>
+<span data-ttu-id="53551-188">在应用程序对象中设置 AWS 的标识符并回复 URL。</span><span class="sxs-lookup"><span data-stu-id="53551-188">Set the identifier and reply URLs for AWS in the application object.</span></span>
 
-<span data-ttu-id="2f9d2-190">请确保你使用的是之前获取的 **application** id。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-190">Make sure you are using the **application** id obtained earlier.</span></span>
+<span data-ttu-id="53551-189">请确保你使用的是之前获取的 **application** id。</span><span class="sxs-lookup"><span data-stu-id="53551-189">Make sure you are using the **application** id obtained earlier.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2f9d2-191">请求</span><span class="sxs-lookup"><span data-stu-id="2f9d2-191">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="53551-190">请求</span><span class="sxs-lookup"><span data-stu-id="53551-190">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="2f9d2-192">HTTP</span><span class="sxs-lookup"><span data-stu-id="2f9d2-192">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="53551-191">HTTP</span><span class="sxs-lookup"><span data-stu-id="53551-191">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
 }-->
 
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/applications/cbc071a6-0fa5-4859-8g55-e983ef63df63
+PATCH https://graph.microsoft.com/beta/applications/cbc071a6-0fa5-4859-8g55-e983ef63df63
 Content-type: applications/json
 
 {
@@ -304,25 +300,21 @@ Content-type: applications/json
     ]    
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="2f9d2-193">C#</span><span class="sxs-lookup"><span data-stu-id="2f9d2-193">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="53551-192">C#</span><span class="sxs-lookup"><span data-stu-id="53551-192">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2f9d2-194">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2f9d2-194">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="53551-193">JavaScript</span><span class="sxs-lookup"><span data-stu-id="53551-193">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2f9d2-195">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2f9d2-195">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="53551-194">Objective-C</span><span class="sxs-lookup"><span data-stu-id="53551-194">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[<span data-ttu-id="2f9d2-196">Java</span><span class="sxs-lookup"><span data-stu-id="2f9d2-196">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="2f9d2-197">响应</span><span class="sxs-lookup"><span data-stu-id="2f9d2-197">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="53551-195">响应</span><span class="sxs-lookup"><span data-stu-id="53551-195">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -332,26 +324,26 @@ Content-type: applications/json
 ```http
 HTTP/1.1 204
 ```
-### <a name="add-app-roles-optional"></a><span data-ttu-id="2f9d2-198">添加应用程序角色（可选）</span><span class="sxs-lookup"><span data-stu-id="2f9d2-198">Add app roles (Optional)</span></span>
+### <a name="add-app-roles-optional"></a><span data-ttu-id="53551-196">添加应用程序角色（可选）</span><span class="sxs-lookup"><span data-stu-id="53551-196">Add app roles (Optional)</span></span>
 
-<span data-ttu-id="2f9d2-199">如果应用程序需要令牌中的角色信息，请在应用程序对象中添加角色的定义。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-199">If the application requires the role information in the token, add the definition of the roles in the application object.</span></span> <span data-ttu-id="2f9d2-200">对于 AWS，可以[启用用户配置](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api)以从该 AWS 账户获取所有角色。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-200">For AWS, you can [enable user provisioning](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api) to fetch all the roles from that AWS account.</span></span> 
+<span data-ttu-id="53551-197">如果应用程序需要令牌中的角色信息，请在应用程序对象中添加角色的定义。</span><span class="sxs-lookup"><span data-stu-id="53551-197">If the application requires the role information in the token, add the definition of the roles in the application object.</span></span> <span data-ttu-id="53551-198">对于 AWS，可以[启用用户配置](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api)以从该 AWS 账户获取所有角色。</span><span class="sxs-lookup"><span data-stu-id="53551-198">For AWS, you can [enable user provisioning](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api) to fetch all the roles from that AWS account.</span></span> 
 
-<span data-ttu-id="2f9d2-201">有关详细信息，请参阅[配置 SAML 令牌中颁发的角色声明](https://docs.microsoft.com/azure/active-directory/develop/active-directory-enterprise-app-role-management)。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-201">For more information, see [Configure the role claim issued in the SAML token](https://docs.microsoft.com/azure/active-directory/develop/active-directory-enterprise-app-role-management).</span></span>
+<span data-ttu-id="53551-199">有关详细信息，请参阅[配置 SAML 令牌中颁发的角色声明](https://docs.microsoft.com/azure/active-directory/develop/active-directory-enterprise-app-role-management)。</span><span class="sxs-lookup"><span data-stu-id="53551-199">For more information, see [Configure the role claim issued in the SAML token](https://docs.microsoft.com/azure/active-directory/develop/active-directory-enterprise-app-role-management).</span></span>
 
 > [!NOTE] 
-> <span data-ttu-id="2f9d2-202">添加应用程序角色时，请勿修改默认应用程序角色 msiam_access。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-202">When adding app roles, don't modify the default app roles msiam_access.</span></span> 
+> <span data-ttu-id="53551-200">添加应用程序角色时，请勿修改默认应用程序角色 msiam_access。</span><span class="sxs-lookup"><span data-stu-id="53551-200">When adding app roles, don't modify the default app roles msiam_access.</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="2f9d2-203">请求</span><span class="sxs-lookup"><span data-stu-id="2f9d2-203">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="53551-201">请求</span><span class="sxs-lookup"><span data-stu-id="53551-201">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="2f9d2-204">HTTP</span><span class="sxs-lookup"><span data-stu-id="2f9d2-204">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="53551-202">HTTP</span><span class="sxs-lookup"><span data-stu-id="53551-202">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
 }-->
 
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/serviceprincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
+PATCH https://graph.microsoft.com/beta/serviceprincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
 Content-type: serviceprincipals/json
 
 {
@@ -391,26 +383,22 @@ Content-type: serviceprincipals/json
 
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="2f9d2-205">C#</span><span class="sxs-lookup"><span data-stu-id="2f9d2-205">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="53551-203">C#</span><span class="sxs-lookup"><span data-stu-id="53551-203">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2f9d2-206">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2f9d2-206">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="53551-204">JavaScript</span><span class="sxs-lookup"><span data-stu-id="53551-204">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2f9d2-207">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2f9d2-207">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="53551-205">Objective-C</span><span class="sxs-lookup"><span data-stu-id="53551-205">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[<span data-ttu-id="2f9d2-208">Java</span><span class="sxs-lookup"><span data-stu-id="2f9d2-208">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="2f9d2-209">响应</span><span class="sxs-lookup"><span data-stu-id="2f9d2-209">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="53551-206">响应</span><span class="sxs-lookup"><span data-stu-id="53551-206">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -420,36 +408,36 @@ Content-type: serviceprincipals/json
 HTTP/1.1 204
 ```
 
-## <a name="step-3-configure-claims-mapping"></a><span data-ttu-id="2f9d2-210">第 3 步：配置声明映射</span><span class="sxs-lookup"><span data-stu-id="2f9d2-210">Step 3: Configure claims mapping</span></span>
+## <a name="step-3-configure-claims-mapping"></a><span data-ttu-id="53551-207">第 3 步：配置声明映射</span><span class="sxs-lookup"><span data-stu-id="53551-207">Step 3: Configure claims mapping</span></span>
 
-### <a name="create-claims-mapping-policy"></a><span data-ttu-id="2f9d2-211">创建声明映射策略</span><span class="sxs-lookup"><span data-stu-id="2f9d2-211">Create claims mapping policy</span></span>
+### <a name="create-claims-mapping-policy"></a><span data-ttu-id="53551-208">创建声明映射策略</span><span class="sxs-lookup"><span data-stu-id="53551-208">Create claims mapping policy</span></span>
 
-<span data-ttu-id="2f9d2-212">除了基本声明之外，还为 Azure AD 配置以下声明以在 SAML 令牌中发出：</span><span class="sxs-lookup"><span data-stu-id="2f9d2-212">In addition to the basic claims, configure the following claims for Azure AD to emit in the SAML token:</span></span>
+<span data-ttu-id="53551-209">除了基本声明之外，还为 Azure AD 配置以下声明以在 SAML 令牌中发出：</span><span class="sxs-lookup"><span data-stu-id="53551-209">In addition to the basic claims, configure the following claims for Azure AD to emit in the SAML token:</span></span>
 
-| <span data-ttu-id="2f9d2-213">声明名称</span><span class="sxs-lookup"><span data-stu-id="2f9d2-213">Claim name</span></span> | <span data-ttu-id="2f9d2-214">源</span><span class="sxs-lookup"><span data-stu-id="2f9d2-214">Source</span></span>  |
+| <span data-ttu-id="53551-210">声明名称</span><span class="sxs-lookup"><span data-stu-id="53551-210">Claim name</span></span> | <span data-ttu-id="53551-211">源</span><span class="sxs-lookup"><span data-stu-id="53551-211">Source</span></span>  |
 |---------|---------|
-| `https://aws.amazon.com/SAML/Attributes/Role` | <span data-ttu-id="2f9d2-215">assignedroles</span><span class="sxs-lookup"><span data-stu-id="2f9d2-215">assignedroles</span></span>| 
-| `https://aws.amazon.com/SAML/Attributes/RoleSessionName` | <span data-ttu-id="2f9d2-216">userprincipalname</span><span class="sxs-lookup"><span data-stu-id="2f9d2-216">userprincipalname</span></span> |
-| `https://aws.amazon.com/SAML/Attributes/SessionDuration` | <span data-ttu-id="2f9d2-217">"900"</span><span class="sxs-lookup"><span data-stu-id="2f9d2-217">"900"</span></span> |
-| <span data-ttu-id="2f9d2-218">roles</span><span class="sxs-lookup"><span data-stu-id="2f9d2-218">roles</span></span> | <span data-ttu-id="2f9d2-219">assignedroles</span><span class="sxs-lookup"><span data-stu-id="2f9d2-219">assignedroles</span></span> |
-| `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier` | <span data-ttu-id="2f9d2-220">userprincipalname</span><span class="sxs-lookup"><span data-stu-id="2f9d2-220">userprincipalname</span></span> |
+| `https://aws.amazon.com/SAML/Attributes/Role` | <span data-ttu-id="53551-212">assignedroles</span><span class="sxs-lookup"><span data-stu-id="53551-212">assignedroles</span></span>| 
+| `https://aws.amazon.com/SAML/Attributes/RoleSessionName` | <span data-ttu-id="53551-213">userprincipalname</span><span class="sxs-lookup"><span data-stu-id="53551-213">userprincipalname</span></span> |
+| `https://aws.amazon.com/SAML/Attributes/SessionDuration` | <span data-ttu-id="53551-214">"900"</span><span class="sxs-lookup"><span data-stu-id="53551-214">"900"</span></span> |
+| <span data-ttu-id="53551-215">roles</span><span class="sxs-lookup"><span data-stu-id="53551-215">roles</span></span> | <span data-ttu-id="53551-216">assignedroles</span><span class="sxs-lookup"><span data-stu-id="53551-216">assignedroles</span></span> |
+| `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier` | <span data-ttu-id="53551-217">userprincipalname</span><span class="sxs-lookup"><span data-stu-id="53551-217">userprincipalname</span></span> |
 
-<span data-ttu-id="2f9d2-221">有关更多信息，请参阅[自定义令牌中发出的声明](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping)。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-221">For more information, see [Customize claims emitted in token](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping).</span></span>
+<span data-ttu-id="53551-218">有关更多信息，请参阅[自定义令牌中发出的声明](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping)。</span><span class="sxs-lookup"><span data-stu-id="53551-218">For more information, see [Customize claims emitted in token](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="2f9d2-222">声明映射策略中的某些项区分大小写（例如“Version”）。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-222">Some keys in the claims mapping policy are case sensitive (for example, "Version").</span></span> <span data-ttu-id="2f9d2-223">如果收到错误消息，例如“属性的值无效”，则可能是区分大小写的问题。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-223">If you receive an error message such as "Property has an invalid value", it might be a case sensitive issue.</span></span>
+> <span data-ttu-id="53551-219">声明映射策略中的某些项区分大小写（例如“Version”）。</span><span class="sxs-lookup"><span data-stu-id="53551-219">Some keys in the claims mapping policy are case sensitive (for example, "Version").</span></span> <span data-ttu-id="53551-220">如果收到错误消息，例如“属性的值无效”，则可能是区分大小写的问题。</span><span class="sxs-lookup"><span data-stu-id="53551-220">If you receive an error message such as "Property has an invalid value", it might be a case sensitive issue.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2f9d2-224">请求</span><span class="sxs-lookup"><span data-stu-id="2f9d2-224">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="53551-221">请求</span><span class="sxs-lookup"><span data-stu-id="53551-221">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="2f9d2-225">HTTP</span><span class="sxs-lookup"><span data-stu-id="2f9d2-225">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="53551-222">HTTP</span><span class="sxs-lookup"><span data-stu-id="53551-222">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
 }-->
 
 ```msgraph-interactive
-POST https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies
+POST https://graph.microsoft.com/beta/policies/claimsMappingPolicies
 Content-type: claimsMappingPolicies/json
 
 {
@@ -492,26 +480,22 @@ Content-type: claimsMappingPolicies/json
     "isOrganizationDefault": false
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="2f9d2-226">C#</span><span class="sxs-lookup"><span data-stu-id="2f9d2-226">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="53551-223">C#</span><span class="sxs-lookup"><span data-stu-id="53551-223">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2f9d2-227">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2f9d2-227">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="53551-224">JavaScript</span><span class="sxs-lookup"><span data-stu-id="53551-224">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2f9d2-228">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2f9d2-228">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="53551-225">Objective-C</span><span class="sxs-lookup"><span data-stu-id="53551-225">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[<span data-ttu-id="2f9d2-229">Java</span><span class="sxs-lookup"><span data-stu-id="2f9d2-229">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="2f9d2-230">响应</span><span class="sxs-lookup"><span data-stu-id="2f9d2-230">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="53551-226">响应</span><span class="sxs-lookup"><span data-stu-id="53551-226">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -535,14 +519,12 @@ Content-type: claimsMappingPolicies/json
 }
 ```
 
-### <a name="assign-claims-mapping-policy-to-service-principal"></a><span data-ttu-id="2f9d2-231">向服务主体分配声明映射策略</span><span class="sxs-lookup"><span data-stu-id="2f9d2-231">Assign claims mapping policy to service principal</span></span>
+### <a name="assign-claims-mapping-policy-to-service-principal"></a><span data-ttu-id="53551-227">向服务主体分配声明映射策略</span><span class="sxs-lookup"><span data-stu-id="53551-227">Assign claims mapping policy to service principal</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2f9d2-232">请求</span><span class="sxs-lookup"><span data-stu-id="2f9d2-232">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="53551-228">请求</span><span class="sxs-lookup"><span data-stu-id="53551-228">Request</span></span>
 
-
-# <a name="http"></a>[<span data-ttu-id="2f9d2-233">HTTP</span><span class="sxs-lookup"><span data-stu-id="2f9d2-233">HTTP</span></span>](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "servicePrincipals"
 }-->
 ```msgraph-interactive
@@ -554,14 +536,9 @@ Content-type: claimsMappingPolicies/json
   "@odata.id":"https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/6b33aa8e-51f3-41a6-a0fd-d660d276197a"
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="2f9d2-234">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2f9d2-234">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
-#### <a name="response"></a><span data-ttu-id="2f9d2-235">响应</span><span class="sxs-lookup"><span data-stu-id="2f9d2-235">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="53551-229">响应</span><span class="sxs-lookup"><span data-stu-id="53551-229">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -571,13 +548,13 @@ Content-type: claimsMappingPolicies/json
 HTTP/1.1 204
 ```
 
-## <a name="step-4-configure-signing-certificate"></a><span data-ttu-id="2f9d2-236">第 4 步：配置签名证书</span><span class="sxs-lookup"><span data-stu-id="2f9d2-236">Step 4: Configure signing certificate</span></span>
+## <a name="step-4-configure-signing-certificate"></a><span data-ttu-id="53551-230">第 4 步：配置签名证书</span><span class="sxs-lookup"><span data-stu-id="53551-230">Step 4: Configure signing certificate</span></span>
 
-<span data-ttu-id="2f9d2-237">默认情况下，使用 [applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta) API 无法创建签名证书。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-237">Using the [applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta) API doesn't create a signing certificate by default.</span></span> <span data-ttu-id="2f9d2-238">创建自定义签名证书并将其分配给应用程序。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-238">Create your custom signing cert and assign it to the application.</span></span> 
+<span data-ttu-id="53551-231">默认情况下，使用 [applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta) API 无法创建签名证书。</span><span class="sxs-lookup"><span data-stu-id="53551-231">Using the [applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta) API doesn't create a signing certificate by default.</span></span> <span data-ttu-id="53551-232">创建自定义签名证书并将其分配给应用程序。</span><span class="sxs-lookup"><span data-stu-id="53551-232">Create your custom signing cert and assign it to the application.</span></span> 
 
-### <a name="create-a-custom-signing-certificate"></a><span data-ttu-id="2f9d2-239">创建自定义签名证书</span><span class="sxs-lookup"><span data-stu-id="2f9d2-239">Create a custom signing certificate</span></span>
+### <a name="create-a-custom-signing-certificate"></a><span data-ttu-id="53551-233">创建自定义签名证书</span><span class="sxs-lookup"><span data-stu-id="53551-233">Create a custom signing certificate</span></span>
 
-<span data-ttu-id="2f9d2-240">要进行测试，可以使用以下 PowerShell 命令获取自签名证书。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-240">To test, you can use the following PowerShell command to get a self-signed certificate.</span></span> <span data-ttu-id="2f9d2-241">然后需要使用其他工具手动操作和提取所需的值。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-241">You will then need to manipulate and pull the values you need manually using other tools.</span></span> <span data-ttu-id="2f9d2-242">使用公司的最佳安全实践，创建用于生产的签名证书。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-242">Use the best security practice from your company to create a signing certificate for production.</span></span>
+<span data-ttu-id="53551-234">要进行测试，可以使用以下 PowerShell 命令获取自签名证书。</span><span class="sxs-lookup"><span data-stu-id="53551-234">To test, you can use the following PowerShell command to get a self-signed certificate.</span></span> <span data-ttu-id="53551-235">然后需要使用其他工具手动操作和提取所需的值。</span><span class="sxs-lookup"><span data-stu-id="53551-235">You will then need to manipulate and pull the values you need manually using other tools.</span></span> <span data-ttu-id="53551-236">使用公司的最佳安全实践，创建用于生产的签名证书。</span><span class="sxs-lookup"><span data-stu-id="53551-236">Use the best security practice from your company to create a signing certificate for production.</span></span>
 
 ```powershell
 Param(
@@ -604,7 +581,7 @@ Export-PfxCertificate -cert $path -FilePath $pfxFile -Password $pwdSecure
 Export-Certificate -cert $path -FilePath $cerFile
 ```
 
-<span data-ttu-id="2f9d2-243">或者，可以将以下 C# 控制台应用程序用作概念证明，以了解如何获取所需的值。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-243">Alternatively, the following C# console app can be used as a Proof of Concept to understand how the required values can be obtained.</span></span> <span data-ttu-id="2f9d2-244">请注意，该代码仅用于**学习和参考**，不应在生产中直接使用。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-244">Note that this code is for **learning and reference ONLY** and should not be used as-is in production.</span></span>
+<span data-ttu-id="53551-237">或者，可以将以下 C# 控制台应用程序用作概念证明，以了解如何获取所需的值。</span><span class="sxs-lookup"><span data-stu-id="53551-237">Alternatively, the following C# console app can be used as a Proof of Concept to understand how the required values can be obtained.</span></span> <span data-ttu-id="53551-238">请注意，该代码仅用于**学习和参考**，不应在生产中直接使用。</span><span class="sxs-lookup"><span data-stu-id="53551-238">Note that this code is for **learning and reference ONLY** and should not be used as-is in production.</span></span>
 
 ```csharp
 using System;
@@ -697,22 +674,22 @@ namespace Self_signed_cert
 }
 ```
 
-### <a name="add-a-custom-signing-key"></a><span data-ttu-id="2f9d2-245">添加自定义签名密钥</span><span class="sxs-lookup"><span data-stu-id="2f9d2-245">Add a custom signing key</span></span>
+### <a name="add-a-custom-signing-key"></a><span data-ttu-id="53551-239">添加自定义签名密钥</span><span class="sxs-lookup"><span data-stu-id="53551-239">Add a custom signing key</span></span>
 
-<span data-ttu-id="2f9d2-246">向服务主体添加以下信息：</span><span class="sxs-lookup"><span data-stu-id="2f9d2-246">Add the following information to the service principal:</span></span>
+<span data-ttu-id="53551-240">向服务主体添加以下信息：</span><span class="sxs-lookup"><span data-stu-id="53551-240">Add the following information to the service principal:</span></span>
 
-* <span data-ttu-id="2f9d2-247">私钥</span><span class="sxs-lookup"><span data-stu-id="2f9d2-247">Private key</span></span>
-* <span data-ttu-id="2f9d2-248">密码</span><span class="sxs-lookup"><span data-stu-id="2f9d2-248">Password</span></span>
-* <span data-ttu-id="2f9d2-249">公钥</span><span class="sxs-lookup"><span data-stu-id="2f9d2-249">Public key</span></span> 
+* <span data-ttu-id="53551-241">私钥</span><span class="sxs-lookup"><span data-stu-id="53551-241">Private key</span></span>
+* <span data-ttu-id="53551-242">密码</span><span class="sxs-lookup"><span data-stu-id="53551-242">Password</span></span>
+* <span data-ttu-id="53551-243">公钥</span><span class="sxs-lookup"><span data-stu-id="53551-243">Public key</span></span> 
 
-<span data-ttu-id="2f9d2-250">从PFX文件中提取 Base64 编码公钥和私钥。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-250">Extract the private and public key Base64 encoded from the PFX file.</span></span> <span data-ttu-id="2f9d2-251">要了解有关属性的更多信息，请参阅 [keyCredential 资源类型](https://docs.microsoft.com/graph/api/resources/keycredential?view=graph-rest-1.0)。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-251">To learn more about the properties, see [keyCredential resource type](https://docs.microsoft.com/graph/api/resources/keycredential?view=graph-rest-1.0).</span></span>
+<span data-ttu-id="53551-244">从PFX文件中提取 Base64 编码公钥和私钥。</span><span class="sxs-lookup"><span data-stu-id="53551-244">Extract the private and public key Base64 encoded from the PFX file.</span></span> <span data-ttu-id="53551-245">要了解有关属性的更多信息，请参阅 [keyCredential 资源类型](https://docs.microsoft.com/graph/api/resources/keycredential?view=graph-rest-1.0)。</span><span class="sxs-lookup"><span data-stu-id="53551-245">To learn more about the properties, see [keyCredential resource type](https://docs.microsoft.com/graph/api/resources/keycredential?view=graph-rest-1.0).</span></span>
 
-<span data-ttu-id="2f9d2-252">确保用于“签名”的 keyCredential 的keyId 与 passwordCredential 的 keyId 相匹配。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-252">Make sure that the keyId for the keyCredential used for "Sign" matches the keyId of the passwordCredential.</span></span> <span data-ttu-id="2f9d2-253">可以通过获取证书指纹的哈希值来生成 `customkeyIdentifier`。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-253">You can generate the `customkeyIdentifier` by getting the hash of the cert's thumbprint.</span></span> <span data-ttu-id="2f9d2-254">请参阅前面的 C# 参考代码。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-254">See the previous C# reference code.</span></span>
+<span data-ttu-id="53551-246">确保用于“签名”的 keyCredential 的keyId 与 passwordCredential 的 keyId 相匹配。</span><span class="sxs-lookup"><span data-stu-id="53551-246">Make sure that the keyId for the keyCredential used for "Sign" matches the keyId of the passwordCredential.</span></span> <span data-ttu-id="53551-247">可以通过获取证书指纹的哈希值来生成 `customkeyIdentifier`。</span><span class="sxs-lookup"><span data-stu-id="53551-247">You can generate the `customkeyIdentifier` by getting the hash of the cert's thumbprint.</span></span> <span data-ttu-id="53551-248">请参阅前面的 C# 参考代码。</span><span class="sxs-lookup"><span data-stu-id="53551-248">See the previous C# reference code.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2f9d2-255">请求</span><span class="sxs-lookup"><span data-stu-id="2f9d2-255">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="53551-249">请求</span><span class="sxs-lookup"><span data-stu-id="53551-249">Request</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="2f9d2-256">为了提高可读性，keyCredentials 属性中的“项”值被缩短。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-256">The "key" value in the keyCredentials property is shortened for readability.</span></span> <span data-ttu-id="2f9d2-257">该值为 base 64 编码。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-257">The value is base 64 encoded.</span></span> <span data-ttu-id="2f9d2-258">对于私钥，属性 `usage` 是“签名”。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-258">For the private key the property `usage` is "Sign".</span></span> <span data-ttu-id="2f9d2-259">对于公钥，属性 `usage` 是“验证”。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-259">For the public key the property `usage` is "Verify".</span></span>
+> <span data-ttu-id="53551-250">为了提高可读性，keyCredentials 属性中的“项”值被缩短。</span><span class="sxs-lookup"><span data-stu-id="53551-250">The "key" value in the keyCredentials property is shortened for readability.</span></span> <span data-ttu-id="53551-251">该值为 base 64 编码。</span><span class="sxs-lookup"><span data-stu-id="53551-251">The value is base 64 encoded.</span></span> <span data-ttu-id="53551-252">对于私钥，属性 `usage` 是“签名”。</span><span class="sxs-lookup"><span data-stu-id="53551-252">For the private key the property `usage` is "Sign".</span></span> <span data-ttu-id="53551-253">对于公钥，属性 `usage` 是“验证”。</span><span class="sxs-lookup"><span data-stu-id="53551-253">For the public key the property `usage` is "Verify".</span></span>
 
 <!-- {
   "blockType": "request",
@@ -759,7 +736,7 @@ Content-type: servicePrincipals/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="2f9d2-260">响应</span><span class="sxs-lookup"><span data-stu-id="2f9d2-260">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="53551-254">响应</span><span class="sxs-lookup"><span data-stu-id="53551-254">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -769,11 +746,11 @@ Content-type: servicePrincipals/json
 HTTP/1.1 204
 ```
 
-### <a name="activate-the-custom-signing-key"></a><span data-ttu-id="2f9d2-261">激活自定义签名密钥</span><span class="sxs-lookup"><span data-stu-id="2f9d2-261">Activate the custom signing key</span></span>
+### <a name="activate-the-custom-signing-key"></a><span data-ttu-id="53551-255">激活自定义签名密钥</span><span class="sxs-lookup"><span data-stu-id="53551-255">Activate the custom signing key</span></span>
 
-<span data-ttu-id="2f9d2-262">需要将 `preferredTokenSigningKeyThumbprint` 属性设置为想要 Azure AD 用于签署 SAML 响应的证书的指纹。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-262">You need to set the `preferredTokenSigningKeyThumbprint` property to the thumbprint of the certificate you want Azure AD to use to sign the SAML response.</span></span> 
+<span data-ttu-id="53551-256">需要将 `preferredTokenSigningKeyThumbprint` 属性设置为想要 Azure AD 用于签署 SAML 响应的证书的指纹。</span><span class="sxs-lookup"><span data-stu-id="53551-256">You need to set the `preferredTokenSigningKeyThumbprint` property to the thumbprint of the certificate you want Azure AD to use to sign the SAML response.</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="2f9d2-263">请求</span><span class="sxs-lookup"><span data-stu-id="2f9d2-263">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="53551-257">请求</span><span class="sxs-lookup"><span data-stu-id="53551-257">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -789,7 +766,7 @@ Content-type: servicePrincipals/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="2f9d2-264">响应</span><span class="sxs-lookup"><span data-stu-id="2f9d2-264">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="53551-258">响应</span><span class="sxs-lookup"><span data-stu-id="53551-258">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -798,25 +775,23 @@ Content-type: servicePrincipals/json
 ```http
 HTTP/1.1 204
 ```
-## <a name="step-5-assign-users"></a><span data-ttu-id="2f9d2-265">第 5 步：分配用户</span><span class="sxs-lookup"><span data-stu-id="2f9d2-265">Step 5: Assign users</span></span>
+## <a name="step-5-assign-users"></a><span data-ttu-id="53551-259">第 5 步：分配用户</span><span class="sxs-lookup"><span data-stu-id="53551-259">Step 5: Assign users</span></span>
 
-### <a name="assign-users-and-groups-to-the-application"></a><span data-ttu-id="2f9d2-266">向应用程序分配用户和组</span><span class="sxs-lookup"><span data-stu-id="2f9d2-266">Assign users and groups to the application</span></span>
+### <a name="assign-users-and-groups-to-the-application"></a><span data-ttu-id="53551-260">向应用程序分配用户和组</span><span class="sxs-lookup"><span data-stu-id="53551-260">Assign users and groups to the application</span></span>
 
-<span data-ttu-id="2f9d2-267">将以下用户分配给服务主体，然后分配 AWS_Role1。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-267">Assign the following user to the service principal and assign the AWS_Role1.</span></span> 
+<span data-ttu-id="53551-261">将以下用户分配给服务主体，然后分配 AWS_Role1。</span><span class="sxs-lookup"><span data-stu-id="53551-261">Assign the following user to the service principal and assign the AWS_Role1.</span></span> 
 
-| <span data-ttu-id="2f9d2-268">名称</span><span class="sxs-lookup"><span data-stu-id="2f9d2-268">Name</span></span>  | <span data-ttu-id="2f9d2-269">ID</span><span class="sxs-lookup"><span data-stu-id="2f9d2-269">ID</span></span>  |
+| <span data-ttu-id="53551-262">名称</span><span class="sxs-lookup"><span data-stu-id="53551-262">Name</span></span>  | <span data-ttu-id="53551-263">ID</span><span class="sxs-lookup"><span data-stu-id="53551-263">ID</span></span>  |
 |---------|---------|
-| <span data-ttu-id="2f9d2-270">用户 ID （principalId）</span><span class="sxs-lookup"><span data-stu-id="2f9d2-270">User ID (principalId)</span></span> | <span data-ttu-id="2f9d2-271">6cad4079-4e79-4a3f-9efb-ea30a14bdb26</span><span class="sxs-lookup"><span data-stu-id="2f9d2-271">6cad4079-4e79-4a3f-9efb-ea30a14bdb26</span></span> |
-| <span data-ttu-id="2f9d2-272">类型（PrincipalType）</span><span class="sxs-lookup"><span data-stu-id="2f9d2-272">Type (principalType)</span></span> | <span data-ttu-id="2f9d2-273">用户</span><span class="sxs-lookup"><span data-stu-id="2f9d2-273">User</span></span> |
-| <span data-ttu-id="2f9d2-274">应用程序角色 ID （appRoleId）</span><span class="sxs-lookup"><span data-stu-id="2f9d2-274">App role ID (appRoleId)</span></span> | <span data-ttu-id="2f9d2-275">454dc4c2-8176-498e-99df-8c4efcde41ef</span><span class="sxs-lookup"><span data-stu-id="2f9d2-275">454dc4c2-8176-498e-99df-8c4efcde41ef</span></span> |
-| <span data-ttu-id="2f9d2-276">servicePrincipalID (resourceId)</span><span class="sxs-lookup"><span data-stu-id="2f9d2-276">servicePrincipalID (resourceId)</span></span> | <span data-ttu-id="2f9d2-277">f47a6776-bca7-4f2e-bc6c-eec59d058e3e</span><span class="sxs-lookup"><span data-stu-id="2f9d2-277">f47a6776-bca7-4f2e-bc6c-eec59d058e3e</span></span> |
+| <span data-ttu-id="53551-264">用户 ID （principalId）</span><span class="sxs-lookup"><span data-stu-id="53551-264">User ID (principalId)</span></span> | <span data-ttu-id="53551-265">6cad4079-4e79-4a3f-9efb-ea30a14bdb26</span><span class="sxs-lookup"><span data-stu-id="53551-265">6cad4079-4e79-4a3f-9efb-ea30a14bdb26</span></span> |
+| <span data-ttu-id="53551-266">类型（PrincipalType）</span><span class="sxs-lookup"><span data-stu-id="53551-266">Type (principalType)</span></span> | <span data-ttu-id="53551-267">用户</span><span class="sxs-lookup"><span data-stu-id="53551-267">User</span></span> |
+| <span data-ttu-id="53551-268">应用程序角色 ID （appRoleId）</span><span class="sxs-lookup"><span data-stu-id="53551-268">App role ID (appRoleId)</span></span> | <span data-ttu-id="53551-269">454dc4c2-8176-498e-99df-8c4efcde41ef</span><span class="sxs-lookup"><span data-stu-id="53551-269">454dc4c2-8176-498e-99df-8c4efcde41ef</span></span> |
+| <span data-ttu-id="53551-270">servicePrincipalID (resourceId)</span><span class="sxs-lookup"><span data-stu-id="53551-270">servicePrincipalID (resourceId)</span></span> | <span data-ttu-id="53551-271">f47a6776-bca7-4f2e-bc6c-eec59d058e3e</span><span class="sxs-lookup"><span data-stu-id="53551-271">f47a6776-bca7-4f2e-bc6c-eec59d058e3e</span></span> |
 
-#### <a name="request"></a><span data-ttu-id="2f9d2-278">请求</span><span class="sxs-lookup"><span data-stu-id="2f9d2-278">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="53551-272">请求</span><span class="sxs-lookup"><span data-stu-id="53551-272">Request</span></span>
 
-
-# <a name="http"></a>[<span data-ttu-id="2f9d2-279">HTTP</span><span class="sxs-lookup"><span data-stu-id="2f9d2-279">HTTP</span></span>](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "servicePrincipals"
 }-->
 ```msgraph-interactive
@@ -831,13 +806,8 @@ Content-type: appRoleAssignments/json
   "resourceId":"f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="2f9d2-280">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2f9d2-280">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
-
-#### <a name="response"></a><span data-ttu-id="2f9d2-281">响应</span><span class="sxs-lookup"><span data-stu-id="2f9d2-281">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="53551-273">响应</span><span class="sxs-lookup"><span data-stu-id="53551-273">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -859,16 +829,16 @@ Content-type: appRoleAssignments/json
 }
 ```
 
-<span data-ttu-id="2f9d2-282">有关详细信息，请参阅 [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-1.0)。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-282">For more information, see [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-1.0).</span></span>
+<span data-ttu-id="53551-274">有关详细信息，请参阅 [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-1.0)。</span><span class="sxs-lookup"><span data-stu-id="53551-274">For more information, see [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-1.0).</span></span>
 
-## <a name="step-6-configure-the-application-side"></a><span data-ttu-id="2f9d2-283">第 6 步：配置应用程序端</span><span class="sxs-lookup"><span data-stu-id="2f9d2-283">Step 6: Configure the application side</span></span>
+## <a name="step-6-configure-the-application-side"></a><span data-ttu-id="53551-275">第 6 步：配置应用程序端</span><span class="sxs-lookup"><span data-stu-id="53551-275">Step 6: Configure the application side</span></span>
 
-### <a name="get-azure-ad-saml-metadata"></a><span data-ttu-id="2f9d2-284">获取 Azure AD SAML 元数据</span><span class="sxs-lookup"><span data-stu-id="2f9d2-284">Get Azure AD SAML metadata</span></span>
+### <a name="get-azure-ad-saml-metadata"></a><span data-ttu-id="53551-276">获取 Azure AD SAML 元数据</span><span class="sxs-lookup"><span data-stu-id="53551-276">Get Azure AD SAML metadata</span></span>
 
-<span data-ttu-id="2f9d2-285">使用以下 URL 获取特定配置的应用程序的 Azure AD SAML 元数据。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-285">Use the following URL to get the Azure AD SAML metadata for the specific configured application.</span></span> <span data-ttu-id="2f9d2-286">元数据包含诸如签名证书、Azure AD entityID和 Azure AD SingleSignOnService 等信息。</span><span class="sxs-lookup"><span data-stu-id="2f9d2-286">The metadata contains information such as the signing certificate, Azure AD entityID, and Azure AD SingleSignOnService, among others.</span></span>
+<span data-ttu-id="53551-277">使用以下 URL 获取特定配置的应用程序的 Azure AD SAML 元数据。</span><span class="sxs-lookup"><span data-stu-id="53551-277">Use the following URL to get the Azure AD SAML metadata for the specific configured application.</span></span> <span data-ttu-id="53551-278">元数据包含诸如签名证书、Azure AD entityID和 Azure AD SingleSignOnService 等信息。</span><span class="sxs-lookup"><span data-stu-id="53551-278">The metadata contains information such as the signing certificate, Azure AD entityID, and Azure AD SingleSignOnService, among others.</span></span>
 
 `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`
 
-## <a name="next-steps"></a><span data-ttu-id="2f9d2-287">后续步骤</span><span class="sxs-lookup"><span data-stu-id="2f9d2-287">Next steps</span></span>
-- [<span data-ttu-id="2f9d2-288">使用 Microsoft Graph API 配置用户预配</span><span class="sxs-lookup"><span data-stu-id="2f9d2-288">Use Microsoft Graph APIs to configure user provisioning</span></span>](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api)
-- [<span data-ttu-id="2f9d2-289">使用 AD FS 应用程序活动报告将应用程序迁移到 Azure AD</span><span class="sxs-lookup"><span data-stu-id="2f9d2-289">Use the AD FS application activity report to migrate applications to Azure AD</span></span>](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-application-activity)
+## <a name="next-steps"></a><span data-ttu-id="53551-279">后续步骤</span><span class="sxs-lookup"><span data-stu-id="53551-279">Next steps</span></span>
+- [<span data-ttu-id="53551-280">使用 Microsoft Graph API 配置用户预配</span><span class="sxs-lookup"><span data-stu-id="53551-280">Use Microsoft Graph APIs to configure user provisioning</span></span>](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api)
+- [<span data-ttu-id="53551-281">使用 AD FS 应用程序活动报告将应用程序迁移到 Azure AD</span><span class="sxs-lookup"><span data-stu-id="53551-281">Use the AD FS application activity report to migrate applications to Azure AD</span></span>](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-application-activity)
