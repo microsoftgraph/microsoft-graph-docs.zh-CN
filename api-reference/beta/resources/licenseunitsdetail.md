@@ -12,24 +12,24 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42522965"
 ---
-# <a name="licenseunitsdetail-resource-type"></a><span data-ttu-id="b409a-103">licenseUnitsDetail 资源类型</span><span class="sxs-lookup"><span data-stu-id="b409a-103">licenseUnitsDetail resource type</span></span>
+# <a name="licenseunitsdetail-resource-type"></a><span data-ttu-id="67b28-103">licenseUnitsDetail 资源类型</span><span class="sxs-lookup"><span data-stu-id="67b28-103">licenseUnitsDetail resource type</span></span>
 
-<span data-ttu-id="b409a-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="b409a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="67b28-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="67b28-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b409a-105">**subscribedSku** 实体的 [prepaidUnits](subscribedsku.md) 属性为 **licenseUnitsDetail** 类型。</span><span class="sxs-lookup"><span data-stu-id="b409a-105">The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is of type **licenseUnitsDetail**.</span></span>
+<span data-ttu-id="67b28-105">**subscribedSku** 实体的 [prepaidUnits](subscribedsku.md) 属性为 **licenseUnitsDetail** 类型。</span><span class="sxs-lookup"><span data-stu-id="67b28-105">The **prepaidUnits** property of the [subscribedSku](subscribedsku.md) entity is of type **licenseUnitsDetail**.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b409a-106">属性</span><span class="sxs-lookup"><span data-stu-id="b409a-106">Properties</span></span>
-| <span data-ttu-id="b409a-107">属性</span><span class="sxs-lookup"><span data-stu-id="b409a-107">Property</span></span>     | <span data-ttu-id="b409a-108">类型</span><span class="sxs-lookup"><span data-stu-id="b409a-108">Type</span></span>   |<span data-ttu-id="b409a-109">说明</span><span class="sxs-lookup"><span data-stu-id="b409a-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="67b28-106">属性</span><span class="sxs-lookup"><span data-stu-id="67b28-106">Properties</span></span>
+| <span data-ttu-id="67b28-107">属性</span><span class="sxs-lookup"><span data-stu-id="67b28-107">Property</span></span>     | <span data-ttu-id="67b28-108">类型</span><span class="sxs-lookup"><span data-stu-id="67b28-108">Type</span></span>   |<span data-ttu-id="67b28-109">说明</span><span class="sxs-lookup"><span data-stu-id="67b28-109">Description</span></span>|
 |:-------------|:-----|:----------|
-|<span data-ttu-id="b409a-110">已启用</span><span class="sxs-lookup"><span data-stu-id="b409a-110">enabled</span></span>|<span data-ttu-id="b409a-111">Int32</span><span class="sxs-lookup"><span data-stu-id="b409a-111">Int32</span></span>| <span data-ttu-id="b409a-112">启用的单位数。</span><span class="sxs-lookup"><span data-stu-id="b409a-112">The number of units that are enabled.</span></span> |
-|<span data-ttu-id="b409a-113">已挂起</span><span class="sxs-lookup"><span data-stu-id="b409a-113">suspended</span></span>|<span data-ttu-id="b409a-114">Int32</span><span class="sxs-lookup"><span data-stu-id="b409a-114">Int32</span></span>| <span data-ttu-id="b409a-115">挂起的单位数。</span><span class="sxs-lookup"><span data-stu-id="b409a-115">The number of units that are suspended.</span></span> |
-|<span data-ttu-id="b409a-116">警告</span><span class="sxs-lookup"><span data-stu-id="b409a-116">warning</span></span>|<span data-ttu-id="b409a-117">Int32</span><span class="sxs-lookup"><span data-stu-id="b409a-117">Int32</span></span>| <span data-ttu-id="b409a-118">处于警告状态的单位数。</span><span class="sxs-lookup"><span data-stu-id="b409a-118">The number of units that are in warning status.</span></span> |
+|<span data-ttu-id="67b28-110">已启用</span><span class="sxs-lookup"><span data-stu-id="67b28-110">enabled</span></span>|<span data-ttu-id="67b28-111">Int32</span><span class="sxs-lookup"><span data-stu-id="67b28-111">Int32</span></span>| <span data-ttu-id="67b28-112">启用的单位数。</span><span class="sxs-lookup"><span data-stu-id="67b28-112">The number of units that are enabled.</span></span> |
+|<span data-ttu-id="67b28-113">已挂起</span><span class="sxs-lookup"><span data-stu-id="67b28-113">suspended</span></span>|<span data-ttu-id="67b28-114">Int32</span><span class="sxs-lookup"><span data-stu-id="67b28-114">Int32</span></span>| <span data-ttu-id="67b28-115">挂起的单位数。</span><span class="sxs-lookup"><span data-stu-id="67b28-115">The number of units that are suspended.</span></span> |
+|<span data-ttu-id="67b28-116">警告</span><span class="sxs-lookup"><span data-stu-id="67b28-116">warning</span></span>|<span data-ttu-id="67b28-117">Int32</span><span class="sxs-lookup"><span data-stu-id="67b28-117">Int32</span></span>| <span data-ttu-id="67b28-118">处于警告状态的单位数。</span><span class="sxs-lookup"><span data-stu-id="67b28-118">The number of units that are in warning status.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="b409a-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="b409a-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="67b28-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="67b28-119">JSON representation</span></span>
 
-<span data-ttu-id="b409a-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b409a-120">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="67b28-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="67b28-120">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
