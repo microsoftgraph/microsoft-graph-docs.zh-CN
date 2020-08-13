@@ -14,7 +14,7 @@ ms.locfileid: "42522965"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>licenseUnitsDetail 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

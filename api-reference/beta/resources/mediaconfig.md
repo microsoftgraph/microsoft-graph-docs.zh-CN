@@ -14,7 +14,7 @@ ms.locfileid: "42522776"
 ---
 # <a name="mediaconfig-resource-type"></a>mediaConfig 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "42522776"
 
 | 属性       | 类型    | 说明|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | 布尔 |  |
+| removeFromDefaultAudioGroup | Boolean |  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

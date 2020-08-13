@@ -1,6 +1,6 @@
 ---
 title: 管理重点收件箱
-description: '重点收件箱允许您查看收件箱`Focused`的选项卡中的重要邮件，以及`Other`选项卡中的其余收件箱邮件。分类系统 '
+description: '重点收件箱允许您查看 `Focused` 收件箱的选项卡中的重要邮件，以及选项卡中的其余收件箱邮件 `Other` 。分类系统 '
 localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: ''
@@ -14,7 +14,7 @@ ms.locfileid: "42522853"
 ---
 # <a name="manage-focused-inbox"></a>管理重点收件箱
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

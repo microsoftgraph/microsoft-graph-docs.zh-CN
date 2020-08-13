@@ -70,7 +70,7 @@ ms.locfileid: "44845951"
 
 ### <a name="change-binding-syntax"></a>更改绑定语法
 
-默认情况下，若要展开表达式，请使用双花括号（ `{{expression}}` ）。 但是，您可以为已使用双花括号语法的环境更改此语法。 例如，下面的示例使用双方括号（ `[[expression]]` ）。
+默认情况下，若要展开表达式，请使用双花括号 ( `{{expression}}` ) 。 但是，您可以为已使用双花括号语法的环境更改此语法。 例如，下面的示例使用 ( ) 的双方括号 `[[expression]]` 。
 
 ```ts
 import { TemplateHelper } from '@microsoft/mgt';
