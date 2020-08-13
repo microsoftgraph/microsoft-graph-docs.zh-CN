@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: e213f12110399b90513d33af4d1745be3cdf3eae
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: f542c58d6b824b678afbe493d03ae760b3be428f
+ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898063"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46657922"
 ---
 # <a name="onenote-resource-type"></a>Onenote 资源类型
 
@@ -22,15 +22,15 @@ ms.locfileid: "44898063"
 
 所有通过 Microsoft Graph API 对 OneNote 服务的调用都使用此服务根 URL：
 
-```
+```http
 https://graph.microsoft.com/{version}/{location}/onenote/ 
 ```
 
-Microsoft 365 上的位置可以是 Microsoft 365 或消费者 OneDrive、组笔记本或 SharePoint 网站托管的团队笔记本上的用户笔记本。 
+位置可以是 Microsoft 365 的用户笔记簿，或是消费者版 OneDrive ，或者是组笔记，或者可以是Microsoft 365 上的 SharePoint 站点托管团队笔记本。 
 
 **用户笔记本** 要访问消费者版 OneDrive 或 OneDrive for Business 上的个人笔记本，请使用下列 URL 之一：
 
-```
+```http
 https://graph.microsoft.com/{version}/me/onenote/{notebooks | sections | sectionGroups | pages} 
 https://graph.microsoft.com/{version}/users/{userPrincipalName}/onenote/{notebooks | sections | sectionGroups | pages} 
 https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
@@ -38,12 +38,12 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 
 **组笔记本** 要访问组所有的笔记本，请使用下列服务根 URL：
 
-```
+```http
 https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 **SharePoint 站点笔记本** 要访问 SharePoint 团队网站所有的笔记本，请使用下列服务根 URL：
 
-```
+```http
 https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 

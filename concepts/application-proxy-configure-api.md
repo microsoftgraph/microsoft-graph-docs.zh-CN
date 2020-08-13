@@ -5,18 +5,18 @@ author: davidmu1
 ms.topic: conceptual
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d7b60e19cb0d3b1c6b015c47ddac604f4ebb2d55
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: 11ce7e7388ce6ab8b17244dbe964ff99cbeaf539
+ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46644000"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46658054"
 ---
 # <a name="automate-the-configuration-of-application-proxy-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 自动配置应用程序代理
 
-在本文中，您将了解如何为应用程序创建和配置 Azure Active Directory (Azure AD) [应用程序代理](https://aka.ms/whyappproxy)。 应用程序代理提供了对本地 web 应用程序的安全远程访问和单一登录。 为应用程序配置应用程序代理后，用户可以通过外部 URL、"我的应用程序" 门户或其他内部应用程序门户访问其本地应用程序。
+在本文中，您将了解如何为应用程序创建和配置 Azure Active Directory (Azure AD) [应用程序代理](https://aka.ms/whyappproxy) 。 应用程序代理提供了对本地 web 应用程序的安全远程访问和单一登录。 为应用程序配置应用程序代理后，用户可以通过外部 URL、"我的应用程序" 门户或其他内部应用程序门户访问其本地应用程序。
 
-本文假定您已经安装了连接器并完成了应用程序代理的[先决条件](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin)，以便连接器可以与 Azure AD 服务进行通信。
+本文假定您已经安装了连接器并完成了应用程序代理的 [先决条件](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) ，以便连接器可以与 Azure AD 服务进行通信。
 
 请确保你具有相应的权限来调用以下 API。
 
@@ -29,7 +29,7 @@ ms.locfileid: "46644000"
 |[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[更新 servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [创建 appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
 
 >[!NOTE]
-> 本文中所示的请求使用示例值。 你将需要更新这些。 为了提高可读性，还可能缩短了显示的响应对象。 所有属性都将通过实际调用返回。
+> 本文中所示的请求使用示例值。 你将需要更新这些。 为了提高可读性，还可能缩短了显示的响应对象。 所有属性都是从实际调用返回。
 
 ## <a name="step-1-create-a-custom-application"></a>步骤1：创建自定义应用程序
 
@@ -41,8 +41,8 @@ ms.locfileid: "46644000"
 
 ### <a name="create-a-custom-application"></a>创建自定义应用程序
 
-若要使用 API 为应用程序配置应用程序代理，您必须首先创建自定义应用程序，然后更新应用程序的**onPremisesPublishing**属性，以配置应用程序代理设置。
-使用[实例化 applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta)在租户中创建自定义应用程序和服务主体的实例，以供管理。 自定义应用程序的模板 ID 为： `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` 。
+若要使用 API 为应用程序配置应用程序代理，您必须首先创建自定义应用程序，然后更新应用程序的 **onPremisesPublishing** 属性，以配置应用程序代理设置。
+使用 [实例化 applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta) 在租户中创建自定义应用程序和服务主体的实例，以供管理。 自定义应用程序的模板 ID 为： `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` 。
 
 #### <a name="request"></a>请求
 
@@ -154,7 +154,7 @@ Content-type: application/json
 
 ### <a name="set-the-onpremisespublishing-configuration"></a>设置 onPremisesPublishing 配置
 
-使用上一步中的 applicationId 为应用程序配置应用程序代理，并将**onPremisesPublishing**属性更新为所需的配置。 在此示例中，您使用的是内部 url 的应用程序： `https://contosoiwaapp.com` 并使用外部 url 的默认域： `https://contosoiwaapp-contoso.msappproxy.net` 。 
+使用上一步中的 applicationId 为应用程序配置应用程序代理，并将 **onPremisesPublishing** 属性更新为所需的配置。 在此示例中，您使用的是内部 url 的应用程序： `https://contosoiwaapp.com` 并使用外部 url 的默认域： `https://contosoiwaapp-contoso.msappproxy.net` 。 
 
 #### <a name="request"></a>请求
 
@@ -420,7 +420,7 @@ HTTP/1.1 204 No content
 ```
 
 ## <a name="step-4-configure-single-sign-on"></a>步骤4：配置单一登录
-此应用程序使用集成的 Windows 身份验证 (IWA) 。 若要配置 IWA，请在[singleSignOnSettings](https://docs.microsoft.com/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta)资源类型中设置单一登录属性。
+此应用程序使用集成的 Windows 身份验证 (IWA) 。 若要配置 IWA，请在 [singleSignOnSettings](https://docs.microsoft.com/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta) 资源类型中设置单一登录属性。
 
 
 #### <a name="request"></a>请求
@@ -548,9 +548,8 @@ Content-type: application/json
 #### <a name="request"></a>请求
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "servicePrincipals"
 }-->
 ```msgraph-interactive
@@ -565,11 +564,6 @@ Content-type: appRoleAssignments/json
   "resourceId":"b00c693f-9658-4c06-bd1b-c402c4653dea"
 }
 ```
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### <a name="response"></a>响应
 

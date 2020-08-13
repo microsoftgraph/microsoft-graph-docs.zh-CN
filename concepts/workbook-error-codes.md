@@ -4,12 +4,12 @@ description: 列出并描述 Microsoft Graph 中的工作簿和图表 Api 的错
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 8c975507b826f305ed3a0c994e5aa86384095e94
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: 17a4695413f3cdbe640b58a3ab55594a39cabbe0
+ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643910"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46657859"
 ---
 # <a name="error-codes-for-workbooks-and-charts-apis-in-microsoft-graph"></a>Microsoft Graph 中的工作簿和图表 Api 的错误代码
 
@@ -60,6 +60,7 @@ ms.locfileid: "46643910"
 | **invalidSessionUnsupportedWorkbook**              | 请求中指定的会话无效，因为工作簿包含不受支持的功能或超出了大小限制。
 | **itemAlreadyExists**         | 所创建的资源已存在。
 | **itemNotFound**         | 所请求的资源不存在。
+| **methodNotAllowed**              | 该资源上不允许请求中指定的 HTTP 方法。
 | **methodNotAllowedUncategorized**              | 该资源上不允许请求中指定的 HTTP 方法。
 | **nonBlankCellOffSheet**         | 无法插入新单元格，因为它会将非空单元格推送到工作表的末尾。
 | **notFoundUncategorized**             | 找不到请求的资源。

@@ -6,12 +6,12 @@ description: 代表为 driveItem 授予的共享权限的权限资源
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 4a7eaa3b075e6a5c8a7b234e721c5d224bd489f9
-ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
+ms.openlocfilehash: 2a260a6702e2d50ceac598e379ea6185310052ce
+ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43146371"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46657908"
 ---
 # <a name="permission-resource-type"></a>权限资源类型
 
@@ -66,7 +66,7 @@ ms.locfileid: "43146371"
 
 | 属性            | 类型                        | 说明
 |:--------------------|:----------------------------|:-------------------------
-| id                  | 字符串                      | 在项目的所有权限中，某个权限的唯一标识符。只读。
+| id                  | String                      | 在项目的所有权限中，某个权限的唯一标识符。只读。
 | grantedTo           | [IdentitySet][]             | 对于用户类型权限，此权限的用户和应用程序的详细信息。只读。
 | grantedToIdentities | Collection([IdentitySet][]) | 对于链接类型权限，被授予权限的用户的详细信息。 只读。
 | invitation          | [SharingInvitation][]       | 此权限的全部关联共享邀请的详细信息。只读。
@@ -74,17 +74,16 @@ ms.locfileid: "43146371"
 | link                | [SharingLink][]             | 如果当前权限是链接类型权限，则提供当前权限的链接详细信息。只读。
 | 角色               | 集合（字符串）          | 权限类型，例如 `read`。有关角色的完整列表，请参阅如下内容。只读。
 | shareId             | String                      | 可用于通过 **[shares API][]** 访问此共享项的唯一令牌。 只读。
-| expirationDateTime  | DateTimeOffset              | Yyyy-mm-ddthh： MM： ssZ of DateTimeOffset 的格式指示权限的过期时间。 MinValue 指示此权限没有设置过期时间。 可选。
-| hasPassword         | 布尔                     | 这指示是否为此权限设置了密码，它仅显示为 "响应"。 可选和只读，仅适用于 OneDrive 个人版。
+| expirationDateTime  | DateTimeOffset              | DateTimeOffset 的格式 yyyy-MM-ddTHH:mm:ssZ 表示权限的过期时间。 DateTime.MinValue 表示此权限没有设置过期时间。 可选。
+| HasPassword         | 布尔值                     | 这表示是否为该权限设置了密码，它只在响应中显示。 可选、只读和仅限 OneDrive 个人版。
 
-### <a name="roles-property-values"></a>Roles 属性值
+### <a name="roles-property-values"></a>角色属性值
 
-| 值        | 详细信息                                                                        |
-|:------------|:-------------------------------------------------------------------------------|
-| `read`      | 提供读取项的元数据和内容的功能。            |
-| `write`     | 提供读取并修改项的元数据和内容的功能。 |
-| `sp.owner`  | 对于 SharePoint 和 OneDrive for Business，这表示所有者角色。       |
-| `sp.member` | 对于 SharePoint 和 OneDrive for Business，这表示成员角色。      |
+| 角色              | 详细信息                                                                        |
+|:------------------|:-------------------------------------------------------------------------------|
+| 自述            | 提供读取项的元数据和内容的功能。            |
+| 销帐           | 提供读取并修改项的元数据和内容的功能。 |
+| sp 完全控制 | 对于 SharePoint 和 OneDrive for Business，这表示所有者角色。       |
 
 权限资源使用 _facet_ 提供有关由该资源表示的权限类型的信息。
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 9fc17aa8dbcdf3c0083f4ec0e7cbeedff11a4597
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: 666a3057cdb4e4d69cac076eef94aef8f1f3e96a
+ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630405"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46657969"
 ---
 # <a name="reportroot-getm365appusercounts"></a>reportRoot： getM365AppUserCounts
 
@@ -20,9 +20,9 @@ ms.locfileid: "46630405"
 
 获取一个报告，该报告为您的组织中的每个应用程序（Outlook、Word、Excel、PowerPoint、OneNote 和工作组）提供活动用户数的趋势。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅[microsoft 365 报表-microsoft 365 应用程序使用](https://docs.microsoft.com/microsoft-365/admin/activity-reports/microsoft365-apps-usage)。
+> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [microsoft 365 报表-microsoft 365 应用程序使用](https://docs.microsoft.com/microsoft-365/admin/activity-reports/microsoft365-apps-usage)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -32,7 +32,7 @@ ms.locfileid: "46630405"
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用                            | Reports.Read.All                            |
 
-> **注意：** 为使应用程序代表用户读取服务使用情况报告的委派权限，租户管理员必须已为该用户分配适当的 Azure AD 有限管理员角色。 有关详细信息，请参阅[授权 For api 以读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
+> **注意：** 为使应用程序代表用户读取服务使用情况报告的委派权限，租户管理员必须已为该用户分配适当的 Azure AD 有限管理员角色。 有关详细信息，请参阅 [授权 For api 以读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -66,11 +66,11 @@ GET /reports/getM365AppUserCounts(period='{period_value}')
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[report](../resources/intune-shared-report.md)对象。 报告数据包含在**report**对象的**content**属性中。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [report](../resources/intune-shared-report.md) 对象。 报告数据包含在**report**对象的**content**属性中。
 
 ### <a name="csv"></a>CSV
 
-如果成功，请求**content**属性将返回一个 `302 Found` 响应，该响应将重定向到报告的 preauthenticated 下载 URL。 可以在响应的 `Location` 头中找到此 URL。
+如果成功，请求 **content** 属性将返回一个 `302 Found` 响应，该响应将重定向到报告的 preauthenticated 下载 URL。 可以在响应的 `Location` 头中找到此 URL。
 
 预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 标头。
 
@@ -88,7 +88,7 @@ CSV 文件包含下面的列标题：
 
 ### <a name="json"></a>JSON
 
-如果成功，请求**content**属性将 `200 OK` 在响应正文中返回响应代码和 JSON 对象。
+如果成功，请求 **content** 属性将 `200 OK` 在响应正文中返回响应代码和 JSON 对象。
 
 ## <a name="examples"></a>示例
 
@@ -98,9 +98,11 @@ CSV 文件包含下面的列标题：
 
 #### <a name="request"></a>请求
 
-下面的示例显示了获取**内容**属性的请求。
+下面的示例显示了获取 **内容** 属性的请求。
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getM365AppUserCounts_csv"
@@ -109,6 +111,20 @@ CSV 文件包含下面的列标题：
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getM365AppUserCounts(period='D7')/content?$format=text/csv
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getm365appusercounts-csv-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getm365appusercounts-csv-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getm365appusercounts-csv-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>响应
@@ -144,9 +160,11 @@ Report Refresh Date,Report Period,Report Date,Outlook,Word,Excel,PowerPoint,OneN
 
 #### <a name="request"></a>请求
 
-下面的示例显示了获取**内容**属性的请求。
+下面的示例显示了获取 **内容** 属性的请求。
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getM365AppUserCounts_json"
@@ -155,6 +173,20 @@ Report Refresh Date,Report Period,Report Date,Outlook,Word,Excel,PowerPoint,OneN
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getM365AppUserCounts(period='D7')/content?$format=application/json
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getm365appusercounts-json-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getm365appusercounts-json-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getm365appusercounts-json-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>响应
