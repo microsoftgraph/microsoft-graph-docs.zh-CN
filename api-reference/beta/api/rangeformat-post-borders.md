@@ -14,12 +14,12 @@ ms.locfileid: "42454561"
 ---
 # <a name="create-rangeborder"></a>创建 RangeBorder
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用此 API 创建新 RangeBorder。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -47,7 +47,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`201 Created`响应正文中返回响应代码和[workbookRangeBorder](../resources/workbookrangeborder.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[workbookRangeBorder](../resources/workbookrangeborder.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

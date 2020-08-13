@@ -14,7 +14,7 @@ ms.locfileid: "42521241"
 ---
 # <a name="recipients-resource-type"></a>收件人资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

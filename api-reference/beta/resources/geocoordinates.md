@@ -15,7 +15,7 @@ ms.locfileid: "42497634"
 ---
 # <a name="geocoordinates-resource-type"></a>geoCoordinates 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,13 +23,13 @@ ms.locfileid: "42497634"
 如果[**driveItem**](driveitem.md)具有非 null**位置**facet，则该项目表示一个文件，其中包含一个已知的位置关联。
 
 > [!NOTE]
-> 更新照片的纬度和经度时，必须提供[照片](photo.md)资源（空或其他）。
+> 更新照片的纬度和经度时，必须提供[照片](photo.md)资源 (空或其他) 。
 
 ## <a name="properties"></a>属性
 
 | 属性  | 类型   | 说明
 |:----------|:-------|:--------------------------------------------------------
-| 海拔  | 双精度 | 可选。此项高于海平面的高度（以英尺为单位）。只读。
+| 海拔  | Double | 可选。此项高于海平面的高度（以英尺为单位）。只读。
 | 纬度  | Double | 可选。 此项的纬度（以十进制表示）。 在 OneDrive 个人版上是可写的。
 | longitude | Double | 可选。 此项的经度（以十进制表示）。 在 OneDrive 个人版上是可写的。
 

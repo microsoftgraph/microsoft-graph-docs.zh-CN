@@ -4,12 +4,12 @@ description: JSON 批处理使你能够通过将多个请求合并为一个单�
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 6327fec0f19782adebf6504c367a559857616c16
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 5737d57ef9256333c6485abe4da400be9e7ec745
+ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598421"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46643986"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>使用 JSON 批处理在一个 HTTP 调用中合并多个请求
 
@@ -183,5 +183,4 @@ JSON 批处理的其他用例是绕过 URL 长度限制。如果筛选子句太�
 
 ## <a name="see-also"></a>另请参阅
 
-有关 JSON 批处理请求/响应格式的详细信息，请参阅 [OData JSON 格式版本 4.01 规范][odata-4.01-json]第 18 节。注意，此规范目前处于草稿版本，但应该不会更改。
-
+关于JSON批量请求/响应格式的更多信息，请参见[OData JSON Format 4.01版规范](http://docs.oasis-open.org/odata/odata-json-format/v4.01/odata-json-format-v4.01.html#sec_BatchRequestsandResponses) ，章节_Batch Requests and Responses_。

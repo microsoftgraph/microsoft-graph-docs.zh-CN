@@ -14,7 +14,7 @@ ms.locfileid: "42519027"
 ---
 # <a name="yammeractivityuserdetail-resource-type"></a>yammerActivityUserDetail 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 ## <a name="properties"></a>属性
 
@@ -29,7 +29,7 @@ ms.locfileid: "42519027"
 | postedCount       | Int64             |
 | readCount         | Int64             |
 | likedCount        | Int64             |
-| assignedProducts  | String 集合 |
+| assignedProducts  | String collection |
 | reportPeriod      | String            |
 
 ## <a name="json-representation"></a>JSON 表示形式

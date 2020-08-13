@@ -16,7 +16,7 @@ ms.locfileid: "42503654"
 ---
 # <a name="journallines-resource-type"></a>journalLines 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "42503654"
 |postingDate           |date                    |日志行的过帐日期。                          |
 |documentNumber        |字符串，最大大小为20 |指定日记行的文档编号。                  |
 |externalDocumentNumber|字符串，最大大小为20 |指定日记行的外部文档编号。        |
-|量                |数位                 |指定日记行所包含的总金额（包括 VAT）。|
+|量                |数位                 |指定日志行所包含的增值税)  (总金额。|
 |说明           |字符串，最大大小为50 |日记行的说明，由用户或 autocreated 提供。|
 |comment               |字符串，最大大小为250|用户在日志行上指定的注释。                      |
 |lastModifiedDateTime  |datetime                |修改日记行的最后一个日期/时间。 只读。        |
@@ -52,7 +52,7 @@ ms.locfileid: "42503654"
 
 日志行可以是维行的 "父实体"。
 
-帐户（accountId）必须存在于 "帐户" 表中。
+帐户表中必须存在 (accountId) 帐户。
 
 
 ## <a name="json-representation"></a>JSON 表示形式

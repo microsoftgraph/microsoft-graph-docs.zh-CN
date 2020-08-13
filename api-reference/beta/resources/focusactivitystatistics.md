@@ -14,7 +14,7 @@ ms.locfileid: "42497991"
 ---
 # <a name="focusactivitystatistics-resource-type"></a>focusActivityStatistics 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ ms.locfileid: "42497991"
 |:-------------|:------------|:------------|
 |activity|analyticsActivityType| 为其返回统计信息的焦点活动。|
 |duration|持续时间|总的工作时间总和（相当于至少两个连续的小时）在用户的 Microsoft Outlook 日历中，在用户设置的工作时间内没有与其他人召开会议。 值以 ISO 8601 格式表示，持续时间。|
-|endDate|Date|焦点活动结束的日期。 对于日历日期，该值以 ISO 8601 格式表示。 例如，属性值可以是 "2019-07-04"，它遵循 YYYY-MM-DD 格式。|
+|endDate|日期|焦点活动结束的日期。 对于日历日期，该值以 ISO 8601 格式表示。 例如，属性值可以是 "2019-07-04"，它遵循 YYYY-MM-DD 格式。|
 |id|String| 焦点活动的只读 ID。|
 |startDate|日期|焦点活动的开始日期。 对于日历日期，该值以 ISO 8601 格式表示。 例如，属性值可以是 "2019-07-03"，它遵循 YYYY-MM-DD 格式。|
 |timeZoneUsed|String|用户在 Outlook 日历中设置的时区用于计算。 例如，属性值可以是 "太平洋标准时间"。|

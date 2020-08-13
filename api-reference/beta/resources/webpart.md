@@ -15,7 +15,7 @@ ms.locfileid: "42519433"
 ---
 # <a name="webpart-resource"></a>webPart 资源
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +41,7 @@ ms.locfileid: "42519433"
 | 属性                | 类型             | 说明
 |:------------------------|:-----------------|:----------------------------------
 | **类型**                | String           | 指定 Web 部件类型的唯一标识符。 只读。
-| **data**                | [sitePageData][] | Web 部件的必需属性（因 Web 部件而异）
+| **data**                | [sitePageData][] | Web 部件 (的必需属性因 Web 部件而异) 
 
 [sitePageData]: sitepagedata.md
 

@@ -14,7 +14,7 @@ ms.locfileid: "42521697"
 ---
 # <a name="plannerplancontextcollection-resource-type"></a>plannerPlanContextCollection 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ ms.locfileid: "42521697"
 
 
 ## <a name="properties"></a>属性
-您可以定义此开放类型的属性。 属性值应是表示外部上下文作为属性名称的独特标识符。 属性值必须是[plannerPlanContext](plannerplancontext.md)对象。 根据 OData 要求，开放式类型中的属性名称不能包含以下字符： `.`、 `:`、 `%`、 `@`。 需要使用 URL 编码对这些字符进行编码。 若要删除收藏夹列表中的项，请将该属性的值设置`null`为。
+您可以定义此开放类型的属性。 属性值应是表示外部上下文作为属性名称的独特标识符。 属性值必须是[plannerPlanContext](plannerplancontext.md)对象。 根据 OData 要求，开放式类型中的属性名称不能包含以下字符： `.` 、 `:` 、 `%` 、 `@` 。 需要使用 URL 编码对这些字符进行编码。 若要删除收藏夹列表中的项，请将该属性的值设置为 `null` 。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

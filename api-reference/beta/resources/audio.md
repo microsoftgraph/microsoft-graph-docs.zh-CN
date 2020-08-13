@@ -15,7 +15,7 @@ ms.locfileid: "42508127"
 ---
 # <a name="audio-facet"></a>Audio Facet
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -14,7 +14,7 @@ ms.locfileid: "42518999"
 ---
 # <a name="yammerdeviceusageuserdetail-resource-type"></a>yammerDeviceUsageUserDetail 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 ## <a name="properties"></a>属性
 
@@ -26,12 +26,12 @@ ms.locfileid: "42518999"
 | userState         | String  |
 | stateChangeDate   | 日期    |
 | lastActivityDate  | 日期    |
-| usedWeb           | 布尔 |
-| usedWindowsPhone  | 布尔 |
-| usedAndroidPhone  | 布尔 |
-| usediPhone        | 布尔 |
-| usediPad          | 布尔 |
-| usedOthers        | 布尔 |
+| usedWeb           | Boolean |
+| usedWindowsPhone  | Boolean |
+| usedAndroidPhone  | Boolean |
+| usediPhone        | Boolean |
+| usediPad          | Boolean |
+| usedOthers        | Boolean |
 | reportPeriod      | String  |
 
 ## <a name="json-representation"></a>JSON 表示形式

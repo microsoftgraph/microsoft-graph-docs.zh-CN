@@ -14,7 +14,7 @@ ms.locfileid: "42508504"
 ---
 # <a name="accesspackageresourcerolescope-resource-type"></a>accessPackageResourceRoleScope 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +41,7 @@ ms.locfileid: "42508504"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|accessPackageResourceRole|[accessPackageResourceRole](accesspackageresourcerole.md)| 此为只读属性。 可为 NULL。|
+|accessPackageResourceRole|[accessPackageResourceRole](accesspackageresourcerole.md)| 只读。 可为 NULL。|
 |accessPackageResourceScope|[accessPackageResourceScope](accesspackageresourcescope.md)| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式

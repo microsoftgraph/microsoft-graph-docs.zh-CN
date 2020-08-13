@@ -14,7 +14,7 @@ ms.locfileid: "42496087"
 ---
 # <a name="informationprotectionaction-resource-type"></a>informationProtectionAction 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

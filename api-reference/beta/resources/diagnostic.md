@@ -14,7 +14,7 @@ ms.locfileid: "42507238"
 ---
 # <a name="diagnostic-resource-type"></a>诊断资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

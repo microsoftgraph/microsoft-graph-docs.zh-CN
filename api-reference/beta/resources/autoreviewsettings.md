@@ -14,7 +14,7 @@ ms.locfileid: "42508057"
 ---
 # <a name="autoreviewsettings-resource-type"></a>autoReviewSettings 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

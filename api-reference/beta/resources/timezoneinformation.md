@@ -1,6 +1,6 @@
 ---
 title: timeZoneInformation 资源类型
-description: 表示时区。 受支持的格式为 Windows，Internet 分配的号码颁发机构（IANA）时区（也称为 "Olson 时区"）
+description: '表示时区。 受支持的格式为 Windows，并且 Internet 分配的号码颁发机构 (IANA) 时区 (也称为 Olson 时区) '
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
@@ -14,7 +14,7 @@ ms.locfileid: "42519678"
 ---
 # <a name="timezoneinformation-resource-type"></a>timeZoneInformation 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

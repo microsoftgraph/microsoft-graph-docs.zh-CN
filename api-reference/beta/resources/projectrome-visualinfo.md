@@ -14,7 +14,7 @@ ms.locfileid: "42521395"
 ---
 # <a name="visualinfo-resource-type"></a>visualInfo 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,8 +30,8 @@ ms.locfileid: "42521395"
 
 |名称 | 类型 | 说明|
 |:----|:------|:-----------|
-|displayText | String | 必填。 用户独特活动的简短文本说明（例如，活动引用文档创建时的文档名称）|
-|说明 | String | 可选。 用户独特活动的更长文本说明（示例：文档名称、第一句和/或元数据）|
+|displayText | String | 必需。 用户独特活动的简短文本说明 (例如，当活动引用文档创建时的文档名称) |
+|说明 | String | 可选。 用户独特活动的更长文本说明 (示例：文档名称、第一句和/或元数据) |
 |backgroundColor | String | 可选。 用于呈现活动的应用程序源的 UI 品牌颜色中的活动的背景色。 必须是有效的十六进制颜色|
 |content | 非类型化 JSON 对象 | 可选。 用于提供自定义内容以在 Windows Shell UI 中呈现活动的自定义数据 JSON 对象块|
 |attribution | [imageInfo](../resources/projectrome-imageinfo.md) | 可选。 JSON 对象，用于表示表示用于生成活动的应用程序的图标|

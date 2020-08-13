@@ -14,7 +14,7 @@ ms.locfileid: "42455968"
 ---
 # <a name="participant-mute"></a>参与者：静音
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ ms.locfileid: "42455968"
 
 > **注意：** 仅组调用支持此方法。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 | :-------------- | :------------------------------------------ |
@@ -56,7 +56,7 @@ POST /communications/calls/{id}/participants/{id}/mute
 |适用|String|唯一的客户端上下文字符串。 最大限制为256个字符。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[muteParticipantOperation](../resources/muteParticipantoperation.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[muteParticipantOperation](../resources/muteParticipantoperation.md)对象。
 
 >**注意：** 当此 API 返回成功响应时，所有参与者都将收到名单更新。
 

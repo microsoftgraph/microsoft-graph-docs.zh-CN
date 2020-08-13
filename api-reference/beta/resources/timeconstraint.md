@@ -14,7 +14,7 @@ ms.locfileid: "42519741"
 ---
 # <a name="timeconstraint-resource-type"></a>timeConstraint 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "42519741"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|activityDomain|activityDomain|（可选）会议性质。 可能的值包括`work`： `personal`、 `unrestricted`、或`unknown`。|
+|activityDomain|activityDomain|（可选）会议性质。 可能的值包括： `work` 、 `personal` 、 `unrestricted` 或 `unknown` 。|
 |timeslots|[timeSlot](timeslot.md) 集合|一组时间段。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

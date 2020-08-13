@@ -15,7 +15,7 @@ ms.locfileid: "42507273"
 ---
 # <a name="deleteaction-resource-type"></a>DeleteAction 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ ms.locfileid: "42507273"
 | 属性名称 | 类型   | 说明
 |:--------------|:-------|:----------------------------------------------------
 | name          | string | 已删除的项的名称。
-| objectType    | string | `File`或`Folder`，具体取决于已删除项目的类型。
+| objectType    | string | `File`或 `Folder` ，具体取决于已删除项目的类型。
 
 ## <a name="remarks"></a>注解
 
