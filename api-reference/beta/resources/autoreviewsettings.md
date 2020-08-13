@@ -12,23 +12,23 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42508057"
 ---
-# <a name="autoreviewsettings-resource-type"></a><span data-ttu-id="51d9c-102">autoReviewSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="51d9c-102">autoReviewSettings resource type</span></span>
+# <a name="autoreviewsettings-resource-type"></a><span data-ttu-id="3dbc4-102">autoReviewSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="3dbc4-102">autoReviewSettings resource type</span></span>
 
-<span data-ttu-id="51d9c-103">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="51d9c-103">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3dbc4-103">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3dbc4-103">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-## <a name="properties"></a><span data-ttu-id="51d9c-104">属性</span><span class="sxs-lookup"><span data-stu-id="51d9c-104">Properties</span></span>
-|<span data-ttu-id="51d9c-105">属性</span><span class="sxs-lookup"><span data-stu-id="51d9c-105">Property</span></span>|<span data-ttu-id="51d9c-106">类型</span><span class="sxs-lookup"><span data-stu-id="51d9c-106">Type</span></span>|<span data-ttu-id="51d9c-107">说明</span><span class="sxs-lookup"><span data-stu-id="51d9c-107">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="3dbc4-104">属性</span><span class="sxs-lookup"><span data-stu-id="3dbc4-104">Properties</span></span>
+|<span data-ttu-id="3dbc4-105">属性</span><span class="sxs-lookup"><span data-stu-id="3dbc4-105">Property</span></span>|<span data-ttu-id="3dbc4-106">类型</span><span class="sxs-lookup"><span data-stu-id="3dbc4-106">Type</span></span>|<span data-ttu-id="3dbc4-107">说明</span><span class="sxs-lookup"><span data-stu-id="3dbc4-107">Description</span></span>|
 |:---|:---|:---|
-| <span data-ttu-id="51d9c-108">notReviewedResult</span><span class="sxs-lookup"><span data-stu-id="51d9c-108">notReviewedResult</span></span> | <span data-ttu-id="51d9c-109">String</span><span class="sxs-lookup"><span data-stu-id="51d9c-109">String</span></span> |  |
+| <span data-ttu-id="3dbc4-108">notReviewedResult</span><span class="sxs-lookup"><span data-stu-id="3dbc4-108">notReviewedResult</span></span> | <span data-ttu-id="3dbc4-109">String</span><span class="sxs-lookup"><span data-stu-id="3dbc4-109">String</span></span> |  |
 
-## <a name="relationships"></a><span data-ttu-id="51d9c-110">关系</span><span class="sxs-lookup"><span data-stu-id="51d9c-110">Relationships</span></span>
-<span data-ttu-id="51d9c-111">无</span><span class="sxs-lookup"><span data-stu-id="51d9c-111">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="3dbc4-110">关系</span><span class="sxs-lookup"><span data-stu-id="3dbc4-110">Relationships</span></span>
+<span data-ttu-id="3dbc4-111">无</span><span class="sxs-lookup"><span data-stu-id="3dbc4-111">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="51d9c-112">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="51d9c-112">JSON Representation</span></span>
-<span data-ttu-id="51d9c-113">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="51d9c-113">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3dbc4-112">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3dbc4-112">JSON Representation</span></span>
+<span data-ttu-id="3dbc4-113">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3dbc4-113">Here is a JSON representation of the resource.</span></span>
 <!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.autoReviewSettings"
