@@ -5,61 +5,61 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7b4a9a0b74969877ca1336facda8e63462919b6b
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: c6bfc200b4c514af15beb7f63b39474d2f51c563
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062124"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674062"
 ---
-# <a name="update-printconnector"></a><span data-ttu-id="8cc4b-103">更新 printConnector</span><span class="sxs-lookup"><span data-stu-id="8cc4b-103">Update printConnector</span></span>
+# <a name="update-printconnector"></a><span data-ttu-id="d92f1-103">更新 printConnector</span><span class="sxs-lookup"><span data-stu-id="d92f1-103">Update printConnector</span></span>
 
-<span data-ttu-id="8cc4b-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8cc4b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d92f1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d92f1-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8cc4b-105">更新**printConnector**对象的属性。</span><span class="sxs-lookup"><span data-stu-id="8cc4b-105">Update the properties of a **printConnector** object.</span></span>
+<span data-ttu-id="d92f1-105">更新 **printConnector** 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="d92f1-105">Update the properties of a **printConnector** object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8cc4b-106">权限</span><span class="sxs-lookup"><span data-stu-id="8cc4b-106">Permissions</span></span>
-<span data-ttu-id="8cc4b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8cc4b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d92f1-106">权限</span><span class="sxs-lookup"><span data-stu-id="d92f1-106">Permissions</span></span>
+<span data-ttu-id="d92f1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d92f1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="8cc4b-109">除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。</span><span class="sxs-lookup"><span data-stu-id="8cc4b-109">In addition to the following permissions, the user's tenant must have an active Universal Print subscription.</span></span>
+<span data-ttu-id="d92f1-109">若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。</span><span class="sxs-lookup"><span data-stu-id="d92f1-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span> <span data-ttu-id="d92f1-110">登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。</span><span class="sxs-lookup"><span data-stu-id="d92f1-110">The signed in user must be a [Printer Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
 
-|<span data-ttu-id="8cc4b-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="8cc4b-110">Permission type</span></span> | <span data-ttu-id="8cc4b-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8cc4b-111">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="d92f1-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="d92f1-111">Permission type</span></span> | <span data-ttu-id="d92f1-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d92f1-112">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="8cc4b-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8cc4b-112">Delegated (work or school account)</span></span>| <span data-ttu-id="8cc4b-113">已阅读的用户。所有</span><span class="sxs-lookup"><span data-stu-id="8cc4b-113">Users.Read.All</span></span> |
-|<span data-ttu-id="8cc4b-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8cc4b-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="8cc4b-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="8cc4b-115">Not Supported.</span></span>|
-|<span data-ttu-id="8cc4b-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="8cc4b-116">Application</span></span>|<span data-ttu-id="8cc4b-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="8cc4b-117">Not Supported.</span></span>|
+|<span data-ttu-id="d92f1-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d92f1-113">Delegated (work or school account)</span></span>| <span data-ttu-id="d92f1-114">User.Read</span><span class="sxs-lookup"><span data-stu-id="d92f1-114">User.Read</span></span> |
+|<span data-ttu-id="d92f1-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d92f1-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d92f1-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="d92f1-116">Not Supported.</span></span>|
+|<span data-ttu-id="d92f1-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="d92f1-117">Application</span></span>|<span data-ttu-id="d92f1-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="d92f1-118">Not Supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="8cc4b-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8cc4b-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d92f1-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d92f1-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /print/connectors/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="8cc4b-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="8cc4b-119">Request headers</span></span>
-| <span data-ttu-id="8cc4b-120">名称</span><span class="sxs-lookup"><span data-stu-id="8cc4b-120">Name</span></span>       | <span data-ttu-id="8cc4b-121">说明</span><span class="sxs-lookup"><span data-stu-id="8cc4b-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d92f1-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="d92f1-120">Request headers</span></span>
+| <span data-ttu-id="d92f1-121">名称</span><span class="sxs-lookup"><span data-stu-id="d92f1-121">Name</span></span>       | <span data-ttu-id="d92f1-122">说明</span><span class="sxs-lookup"><span data-stu-id="d92f1-122">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="8cc4b-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="8cc4b-122">Authorization</span></span> | <span data-ttu-id="8cc4b-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8cc4b-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="8cc4b-125">Content-type</span><span class="sxs-lookup"><span data-stu-id="8cc4b-125">Content-type</span></span>  | <span data-ttu-id="8cc4b-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="8cc4b-p103">application/json. Required.</span></span>|
+| <span data-ttu-id="d92f1-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="d92f1-123">Authorization</span></span> | <span data-ttu-id="d92f1-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d92f1-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d92f1-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="d92f1-126">Content-type</span></span>  | <span data-ttu-id="d92f1-p104">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="d92f1-p104">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="8cc4b-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="8cc4b-128">Request body</span></span>
-<span data-ttu-id="8cc4b-129">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="8cc4b-129">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="8cc4b-130">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="8cc4b-130">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="8cc4b-131">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="8cc4b-131">For best performance, don't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d92f1-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="d92f1-129">Request body</span></span>
+<span data-ttu-id="d92f1-130">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="d92f1-130">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="d92f1-131">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="d92f1-131">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="d92f1-132">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="d92f1-132">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="8cc4b-132">属性</span><span class="sxs-lookup"><span data-stu-id="8cc4b-132">Property</span></span>     | <span data-ttu-id="8cc4b-133">类型</span><span class="sxs-lookup"><span data-stu-id="8cc4b-133">Type</span></span>        | <span data-ttu-id="8cc4b-134">说明</span><span class="sxs-lookup"><span data-stu-id="8cc4b-134">Description</span></span> |
+| <span data-ttu-id="d92f1-133">属性</span><span class="sxs-lookup"><span data-stu-id="d92f1-133">Property</span></span>     | <span data-ttu-id="d92f1-134">类型</span><span class="sxs-lookup"><span data-stu-id="d92f1-134">Type</span></span>        | <span data-ttu-id="d92f1-135">说明</span><span class="sxs-lookup"><span data-stu-id="d92f1-135">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="8cc4b-135">name</span><span class="sxs-lookup"><span data-stu-id="8cc4b-135">name</span></span>|<span data-ttu-id="8cc4b-136">String</span><span class="sxs-lookup"><span data-stu-id="8cc4b-136">String</span></span>|<span data-ttu-id="8cc4b-137">连接器的名称。</span><span class="sxs-lookup"><span data-stu-id="8cc4b-137">The name of the connector.</span></span>|
-|<span data-ttu-id="8cc4b-138">fullyQualifiedDomainName</span><span class="sxs-lookup"><span data-stu-id="8cc4b-138">fullyQualifiedDomainName</span></span>|<span data-ttu-id="8cc4b-139">String</span><span class="sxs-lookup"><span data-stu-id="8cc4b-139">String</span></span>|<span data-ttu-id="8cc4b-140">连接器计算机的主机名。</span><span class="sxs-lookup"><span data-stu-id="8cc4b-140">The connector machine's hostname.</span></span>|
-|<span data-ttu-id="8cc4b-141">operatingSystem</span><span class="sxs-lookup"><span data-stu-id="8cc4b-141">operatingSystem</span></span>|<span data-ttu-id="8cc4b-142">String</span><span class="sxs-lookup"><span data-stu-id="8cc4b-142">String</span></span>|<span data-ttu-id="8cc4b-143">连接器计算机的操作系统版本。</span><span class="sxs-lookup"><span data-stu-id="8cc4b-143">The connector machine's operating system version.</span></span>|
-|<span data-ttu-id="8cc4b-144">appVersion</span><span class="sxs-lookup"><span data-stu-id="8cc4b-144">appVersion</span></span>|<span data-ttu-id="8cc4b-145">String</span><span class="sxs-lookup"><span data-stu-id="8cc4b-145">String</span></span>|<span data-ttu-id="8cc4b-146">连接器的版本。</span><span class="sxs-lookup"><span data-stu-id="8cc4b-146">The connector's version.</span></span>|
-|<span data-ttu-id="8cc4b-147">位置</span><span class="sxs-lookup"><span data-stu-id="8cc4b-147">location</span></span>|[<span data-ttu-id="8cc4b-148">printerLocation</span><span class="sxs-lookup"><span data-stu-id="8cc4b-148">printerLocation</span></span>](../resources/printerlocation.md)|<span data-ttu-id="8cc4b-149">连接器的物理位置和/或组织位置。</span><span class="sxs-lookup"><span data-stu-id="8cc4b-149">The physical and/or organizational location of the connector.</span></span>|
+|<span data-ttu-id="d92f1-136">name</span><span class="sxs-lookup"><span data-stu-id="d92f1-136">name</span></span>|<span data-ttu-id="d92f1-137">String</span><span class="sxs-lookup"><span data-stu-id="d92f1-137">String</span></span>|<span data-ttu-id="d92f1-138">连接器的名称。</span><span class="sxs-lookup"><span data-stu-id="d92f1-138">The name of the connector.</span></span>|
+|<span data-ttu-id="d92f1-139">fullyQualifiedDomainName</span><span class="sxs-lookup"><span data-stu-id="d92f1-139">fullyQualifiedDomainName</span></span>|<span data-ttu-id="d92f1-140">String</span><span class="sxs-lookup"><span data-stu-id="d92f1-140">String</span></span>|<span data-ttu-id="d92f1-141">连接器计算机的主机名。</span><span class="sxs-lookup"><span data-stu-id="d92f1-141">The connector machine's hostname.</span></span>|
+|<span data-ttu-id="d92f1-142">operatingSystem</span><span class="sxs-lookup"><span data-stu-id="d92f1-142">operatingSystem</span></span>|<span data-ttu-id="d92f1-143">String</span><span class="sxs-lookup"><span data-stu-id="d92f1-143">String</span></span>|<span data-ttu-id="d92f1-144">连接器计算机的操作系统版本。</span><span class="sxs-lookup"><span data-stu-id="d92f1-144">The connector machine's operating system version.</span></span>|
+|<span data-ttu-id="d92f1-145">appVersion</span><span class="sxs-lookup"><span data-stu-id="d92f1-145">appVersion</span></span>|<span data-ttu-id="d92f1-146">String</span><span class="sxs-lookup"><span data-stu-id="d92f1-146">String</span></span>|<span data-ttu-id="d92f1-147">连接器的版本。</span><span class="sxs-lookup"><span data-stu-id="d92f1-147">The connector's version.</span></span>|
+|<span data-ttu-id="d92f1-148">location</span><span class="sxs-lookup"><span data-stu-id="d92f1-148">location</span></span>|[<span data-ttu-id="d92f1-149">printerLocation</span><span class="sxs-lookup"><span data-stu-id="d92f1-149">printerLocation</span></span>](../resources/printerlocation.md)|<span data-ttu-id="d92f1-150">连接器的物理位置和/或组织位置。</span><span class="sxs-lookup"><span data-stu-id="d92f1-150">The physical and/or organizational location of the connector.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="8cc4b-150">响应</span><span class="sxs-lookup"><span data-stu-id="8cc4b-150">Response</span></span>
-<span data-ttu-id="8cc4b-151">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[printConnector](../resources/printConnector.md)对象。</span><span class="sxs-lookup"><span data-stu-id="8cc4b-151">If successful, this method returns a `200 OK` response code and an updated [printConnector](../resources/printConnector.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="8cc4b-152">示例</span><span class="sxs-lookup"><span data-stu-id="8cc4b-152">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="8cc4b-153">请求</span><span class="sxs-lookup"><span data-stu-id="8cc4b-153">Request</span></span>
-<span data-ttu-id="8cc4b-154">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="8cc4b-154">The following is an example of the request.</span></span>
+## <a name="response"></a><span data-ttu-id="d92f1-151">响应</span><span class="sxs-lookup"><span data-stu-id="d92f1-151">Response</span></span>
+<span data-ttu-id="d92f1-152">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [printConnector](../resources/printConnector.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="d92f1-152">If successful, this method returns a `200 OK` response code and an updated [printConnector](../resources/printConnector.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="d92f1-153">示例</span><span class="sxs-lookup"><span data-stu-id="d92f1-153">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d92f1-154">请求</span><span class="sxs-lookup"><span data-stu-id="d92f1-154">Request</span></span>
+<span data-ttu-id="d92f1-155">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="d92f1-155">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="8cc4b-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="8cc4b-155">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d92f1-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="d92f1-156">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_connector"
@@ -81,23 +81,23 @@ Content-length: 300
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="8cc4b-156">C#</span><span class="sxs-lookup"><span data-stu-id="8cc4b-156">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d92f1-157">C#</span><span class="sxs-lookup"><span data-stu-id="d92f1-157">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-connector-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="8cc4b-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8cc4b-157">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d92f1-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d92f1-158">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-connector-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="8cc4b-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8cc4b-158">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d92f1-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d92f1-159">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-connector-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="8cc4b-159">响应</span><span class="sxs-lookup"><span data-stu-id="8cc4b-159">Response</span></span>
-<span data-ttu-id="8cc4b-160">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="8cc4b-160">The following is an example of the response.</span></span>
-><span data-ttu-id="8cc4b-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="8cc4b-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d92f1-160">响应</span><span class="sxs-lookup"><span data-stu-id="d92f1-160">Response</span></span>
+<span data-ttu-id="d92f1-161">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="d92f1-161">The following is an example of the response.</span></span>
+><span data-ttu-id="d92f1-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="d92f1-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

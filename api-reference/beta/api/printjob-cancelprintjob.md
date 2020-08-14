@@ -5,53 +5,53 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7036676b686d60f8c841b39f2411f56e780bf716
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 85c84a9bf6b70de1103b8e07d33859146ac51962
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42947558"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674183"
 ---
-# <a name="printjob-cancelprintjob"></a><span data-ttu-id="61a17-103">printJob: cancelPrintJob</span><span class="sxs-lookup"><span data-stu-id="61a17-103">printJob: cancelPrintJob</span></span>
+# <a name="printjob-cancelprintjob"></a><span data-ttu-id="43d17-103">printJob: cancelPrintJob</span><span class="sxs-lookup"><span data-stu-id="43d17-103">printJob: cancelPrintJob</span></span>
 
-<span data-ttu-id="61a17-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="61a17-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="43d17-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="43d17-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="61a17-105">取消打印作业。</span><span class="sxs-lookup"><span data-stu-id="61a17-105">Cancel a print job.</span></span>
+<span data-ttu-id="43d17-105">取消打印作业。</span><span class="sxs-lookup"><span data-stu-id="43d17-105">Cancel a print job.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="61a17-106">权限</span><span class="sxs-lookup"><span data-stu-id="61a17-106">Permissions</span></span>
-<span data-ttu-id="61a17-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="61a17-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="43d17-106">权限</span><span class="sxs-lookup"><span data-stu-id="43d17-106">Permissions</span></span>
+<span data-ttu-id="43d17-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="43d17-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="61a17-109">除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。</span><span class="sxs-lookup"><span data-stu-id="61a17-109">In addition to the following permissions, the user's tenant must have an active Universal Print subscription.</span></span>
+<span data-ttu-id="43d17-109">除了以下权限之外，用户或应用程序的租户必须具有活动的通用打印订阅，并且具有授予 [获取打印机](printer-get.md) 访问权限的权限。</span><span class="sxs-lookup"><span data-stu-id="43d17-109">In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription and have a permission that grants [Get printer](printer-get.md) access.</span></span>
 
-|<span data-ttu-id="61a17-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="61a17-110">Permission type</span></span> | <span data-ttu-id="61a17-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="61a17-111">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="43d17-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="43d17-110">Permission type</span></span> | <span data-ttu-id="43d17-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="43d17-111">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="61a17-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="61a17-112">Delegated (work or school account)</span></span>| <span data-ttu-id="61a17-113">已阅读的用户。所有</span><span class="sxs-lookup"><span data-stu-id="61a17-113">Users.Read.All</span></span> |
-|<span data-ttu-id="61a17-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="61a17-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="61a17-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="61a17-115">Not Supported.</span></span>|
-|<span data-ttu-id="61a17-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="61a17-116">Application</span></span>|<span data-ttu-id="61a17-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="61a17-117">Not Supported.</span></span>|
+|<span data-ttu-id="43d17-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="43d17-112">Delegated (work or school account)</span></span>| <span data-ttu-id="43d17-113">PrintJob、ReadWriteBasic、PrintJob、All、ReadWriteBasic、All</span><span class="sxs-lookup"><span data-stu-id="43d17-113">PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All</span></span> |
+|<span data-ttu-id="43d17-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="43d17-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="43d17-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="43d17-115">Not Supported.</span></span>|
+|<span data-ttu-id="43d17-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="43d17-116">Application</span></span>| <span data-ttu-id="43d17-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="43d17-117">Not Supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="61a17-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="61a17-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="43d17-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="43d17-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /print/printers/{id}/jobs/{id}/cancelPrintJob
 ```
-## <a name="request-headers"></a><span data-ttu-id="61a17-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="61a17-119">Request headers</span></span>
-| <span data-ttu-id="61a17-120">名称</span><span class="sxs-lookup"><span data-stu-id="61a17-120">Name</span></span>          | <span data-ttu-id="61a17-121">说明</span><span class="sxs-lookup"><span data-stu-id="61a17-121">Description</span></span>   |
+## <a name="request-headers"></a><span data-ttu-id="43d17-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="43d17-119">Request headers</span></span>
+| <span data-ttu-id="43d17-120">名称</span><span class="sxs-lookup"><span data-stu-id="43d17-120">Name</span></span>          | <span data-ttu-id="43d17-121">说明</span><span class="sxs-lookup"><span data-stu-id="43d17-121">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="61a17-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="61a17-122">Authorization</span></span> | <span data-ttu-id="61a17-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="61a17-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="43d17-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="43d17-122">Authorization</span></span> | <span data-ttu-id="43d17-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="43d17-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="61a17-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="61a17-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="43d17-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="43d17-125">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="61a17-126">响应</span><span class="sxs-lookup"><span data-stu-id="61a17-126">Response</span></span>
-<span data-ttu-id="61a17-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="61a17-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="43d17-126">响应</span><span class="sxs-lookup"><span data-stu-id="43d17-126">Response</span></span>
+<span data-ttu-id="43d17-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="43d17-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="61a17-129">示例</span><span class="sxs-lookup"><span data-stu-id="61a17-129">Example</span></span>
-<span data-ttu-id="61a17-130">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="61a17-130">The following example shows how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="61a17-131">请求</span><span class="sxs-lookup"><span data-stu-id="61a17-131">Request</span></span>
-<span data-ttu-id="61a17-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="61a17-132">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="43d17-129">示例</span><span class="sxs-lookup"><span data-stu-id="43d17-129">Example</span></span>
+<span data-ttu-id="43d17-130">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="43d17-130">The following example shows how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="43d17-131">请求</span><span class="sxs-lookup"><span data-stu-id="43d17-131">Request</span></span>
+<span data-ttu-id="43d17-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="43d17-132">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="61a17-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="61a17-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="43d17-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="43d17-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printjob-cancelprintjob"
@@ -59,23 +59,23 @@ POST /print/printers/{id}/jobs/{id}/cancelPrintJob
 ```http
 POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/cancelPrintJob
 ```
-# <a name="c"></a>[<span data-ttu-id="61a17-134">C#</span><span class="sxs-lookup"><span data-stu-id="61a17-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="43d17-134">C#</span><span class="sxs-lookup"><span data-stu-id="43d17-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/printjob-cancelprintjob-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="61a17-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="61a17-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="43d17-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="43d17-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/printjob-cancelprintjob-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="61a17-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="61a17-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="43d17-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="43d17-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/printjob-cancelprintjob-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="61a17-137">响应</span><span class="sxs-lookup"><span data-stu-id="61a17-137">Response</span></span>
-<span data-ttu-id="61a17-138">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="61a17-138">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="43d17-137">响应</span><span class="sxs-lookup"><span data-stu-id="43d17-137">Response</span></span>
+<span data-ttu-id="43d17-138">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="43d17-138">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

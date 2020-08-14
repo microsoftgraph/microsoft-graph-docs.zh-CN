@@ -1,57 +1,57 @@
 ---
-title: 获取服务
+title: 列出 printServices
 description: 检索 printService 对象的列表，这些对象代表可供租户使用的服务。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 5c211e14d2ec699761a503fa2768eff59b9b0181
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 161942b9af137071621cfeaf6705b909ce26861a
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948258"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674503"
 ---
-# <a name="list-services"></a><span data-ttu-id="dbcb8-103">列出服务</span><span class="sxs-lookup"><span data-stu-id="dbcb8-103">List services</span></span>
+# <a name="list-printservices"></a><span data-ttu-id="f4c17-103">列出 printServices</span><span class="sxs-lookup"><span data-stu-id="f4c17-103">List printServices</span></span>
 
-<span data-ttu-id="dbcb8-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dbcb8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f4c17-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f4c17-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="dbcb8-105">检索[printService](../resources/printservice.md)对象的列表，这些对象代表可供租户使用的**服务**。</span><span class="sxs-lookup"><span data-stu-id="dbcb8-105">Retrieve a list of [printService](../resources/printservice.md) objects that represent the **services** available to your tenant.</span></span>
+<span data-ttu-id="f4c17-105">检索 [printService](../resources/printservice.md) 对象的列表，这些对象代表可供租户使用的 **服务** 。</span><span class="sxs-lookup"><span data-stu-id="f4c17-105">Retrieve a list of [printService](../resources/printservice.md) objects that represent the **services** available to your tenant.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="dbcb8-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="dbcb8-106">Permissions</span></span>
-<span data-ttu-id="dbcb8-107">不需要任何权限即可调用此 API，但用户的租户必须具有活动的通用打印订阅。</span><span class="sxs-lookup"><span data-stu-id="dbcb8-107">No permissions are needed to call this API, but the user's tenant must have an active Universal Print subscription.</span></span>
+## <a name="permissions"></a><span data-ttu-id="f4c17-106">权限</span><span class="sxs-lookup"><span data-stu-id="f4c17-106">Permissions</span></span>
+<span data-ttu-id="f4c17-107">不需要任何权限即可调用此 API，但若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅。</span><span class="sxs-lookup"><span data-stu-id="f4c17-107">No permissions are needed to call this API, but to use the Universal Print service, the user or app's tenant must have an active Universal Print subscription.</span></span>
 
-|<span data-ttu-id="dbcb8-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="dbcb8-108">Permission type</span></span> | <span data-ttu-id="dbcb8-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="dbcb8-109">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="f4c17-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="f4c17-108">Permission type</span></span> | <span data-ttu-id="f4c17-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f4c17-109">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="dbcb8-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="dbcb8-110">Delegated (work or school account)</span></span>|<span data-ttu-id="dbcb8-111">无。</span><span class="sxs-lookup"><span data-stu-id="dbcb8-111">None.</span></span>|
-|<span data-ttu-id="dbcb8-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="dbcb8-112">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="dbcb8-113">无。</span><span class="sxs-lookup"><span data-stu-id="dbcb8-113">None.</span></span>|
-|<span data-ttu-id="dbcb8-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="dbcb8-114">Application</span></span>|<span data-ttu-id="dbcb8-115">无。</span><span class="sxs-lookup"><span data-stu-id="dbcb8-115">None.</span></span>|
+|<span data-ttu-id="f4c17-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f4c17-110">Delegated (work or school account)</span></span>|<span data-ttu-id="f4c17-111">无。</span><span class="sxs-lookup"><span data-stu-id="f4c17-111">None.</span></span>|
+|<span data-ttu-id="f4c17-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f4c17-112">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f4c17-113">无。</span><span class="sxs-lookup"><span data-stu-id="f4c17-113">None.</span></span>|
+|<span data-ttu-id="f4c17-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="f4c17-114">Application</span></span>|<span data-ttu-id="f4c17-115">无。</span><span class="sxs-lookup"><span data-stu-id="f4c17-115">None.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="dbcb8-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="dbcb8-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f4c17-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f4c17-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /print/services
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="dbcb8-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="dbcb8-117">Optional query parameters</span></span>
-<span data-ttu-id="dbcb8-118">此方法支持一些 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="dbcb8-118">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="dbcb8-119">有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="dbcb8-119">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="f4c17-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="f4c17-117">Optional query parameters</span></span>
+<span data-ttu-id="f4c17-118">此方法支持一些 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="f4c17-118">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="f4c17-119">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="f4c17-119">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="dbcb8-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="dbcb8-120">Request headers</span></span>
-| <span data-ttu-id="dbcb8-121">名称</span><span class="sxs-lookup"><span data-stu-id="dbcb8-121">Name</span></span>      |<span data-ttu-id="dbcb8-122">说明</span><span class="sxs-lookup"><span data-stu-id="dbcb8-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f4c17-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="f4c17-120">Request headers</span></span>
+| <span data-ttu-id="f4c17-121">名称</span><span class="sxs-lookup"><span data-stu-id="f4c17-121">Name</span></span>      |<span data-ttu-id="f4c17-122">说明</span><span class="sxs-lookup"><span data-stu-id="f4c17-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="dbcb8-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="dbcb8-123">Authorization</span></span> | <span data-ttu-id="dbcb8-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="dbcb8-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f4c17-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="f4c17-123">Authorization</span></span> | <span data-ttu-id="f4c17-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f4c17-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="dbcb8-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="dbcb8-126">Request body</span></span>
-<span data-ttu-id="dbcb8-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="dbcb8-127">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="dbcb8-128">响应</span><span class="sxs-lookup"><span data-stu-id="dbcb8-128">Response</span></span>
-<span data-ttu-id="dbcb8-129">如果成功，此方法在响应`200 OK`正文中返回响应代码和[printService](../resources/printservice.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="dbcb8-129">If successful, this method returns a `200 OK` response code and a collection of [printService](../resources/printservice.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="dbcb8-130">示例</span><span class="sxs-lookup"><span data-stu-id="dbcb8-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="dbcb8-131">请求</span><span class="sxs-lookup"><span data-stu-id="dbcb8-131">Request</span></span>
-<span data-ttu-id="dbcb8-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="dbcb8-132">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f4c17-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="f4c17-126">Request body</span></span>
+<span data-ttu-id="f4c17-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f4c17-127">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="f4c17-128">响应</span><span class="sxs-lookup"><span data-stu-id="f4c17-128">Response</span></span>
+<span data-ttu-id="f4c17-129">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [printService](../resources/printservice.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="f4c17-129">If successful, this method returns a `200 OK` response code and a collection of [printService](../resources/printservice.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="f4c17-130">示例</span><span class="sxs-lookup"><span data-stu-id="f4c17-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f4c17-131">请求</span><span class="sxs-lookup"><span data-stu-id="f4c17-131">Request</span></span>
+<span data-ttu-id="f4c17-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="f4c17-132">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="dbcb8-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="dbcb8-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f4c17-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="f4c17-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_services"
@@ -59,23 +59,23 @@ GET /print/services
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/services
 ```
-# <a name="c"></a>[<span data-ttu-id="dbcb8-134">C#</span><span class="sxs-lookup"><span data-stu-id="dbcb8-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f4c17-134">C#</span><span class="sxs-lookup"><span data-stu-id="f4c17-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-services-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="dbcb8-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="dbcb8-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f4c17-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f4c17-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-services-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="dbcb8-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="dbcb8-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f4c17-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f4c17-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-services-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="dbcb8-137">响应</span><span class="sxs-lookup"><span data-stu-id="dbcb8-137">Response</span></span>
-<span data-ttu-id="dbcb8-138">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="dbcb8-138">The following is an example of the response.</span></span>
-><span data-ttu-id="dbcb8-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="dbcb8-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="f4c17-137">响应</span><span class="sxs-lookup"><span data-stu-id="f4c17-137">Response</span></span>
+<span data-ttu-id="f4c17-138">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="f4c17-138">The following is an example of the response.</span></span>
+><span data-ttu-id="f4c17-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="f4c17-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
