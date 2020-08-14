@@ -5,12 +5,12 @@ author: kenwith
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: edc69453401a72242b01721d570cbf942bbf815d
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: f1bab27f592d772472933aeebfcdcfdecd6151ab
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46658118"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673901"
 ---
 # <a name="automate-saml-based-sso-app-configuration-with-microsoft-graph-api"></a>使用 Microsoft Graph API 自动化基于 SAML 的 SSO 应用配置
 
@@ -441,42 +441,10 @@ POST https://graph.microsoft.com/beta/policies/claimsMappingPolicies
 Content-type: claimsMappingPolicies/json
 
 {
-    "definition":[
-            "{\"ClaimsMappingPolicy\": {
-                \"Version\": 1,
-                \"IncludeBasicClaimSet\": \"true\",
-                \"ClaimsSchema\": [
-                    {
-                        \"Source\": \"user\",
-                        \"ID\": \"assignedroles\",
-                        \"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"
-                    },
-                    {
-                        \"Source\": \"user\",
-                        \"ID\": \"userprincipalname\",
-                        \"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"
-                    },
-                    {
-                        \"Source\": \"user\",
-                        \"ID\": \"900\",
-                        \"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"
-                    },
-                    {
-                        \"Source\": \"user\",
-                        \"ID\": \"assignedroles\",
-                        \"SamlClaimType\": \"appRoles\"
-                    },
-                    {
-                        \"Source\": \"user\",
-                        \"ID\": \"userprincipalname\",
-                        \"SamlClaimType\": \"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\"
-                    }
-                ]
-            }
-        }"
-
+    "definition": [
+        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Source\":\"user\",\"ID\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/nameidentifier\"}]}}"
     ],
-    "displayName": "AWS Claims policy",
+    "displayName": "AWS Claims Policy",
     "isOrganizationDefault": false
 }
 ```
@@ -505,16 +473,17 @@ Content-type: claimsMappingPolicies/json
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 OK
 Content-type: claimsMappingPolicies/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/claimsMappingPolicies/$entity",
-    "id": "6b33aa8e-51f3-41a6-a0fd-d660d276197a",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/claimsMappingPolicies/$entity",
+    "id": "a7b19e62-9adb-4edb-8521-cd35305f095d",
+    "deletedDateTime": null,
     "definition": [
-        "{\"ClaimsMappingPolicy\": {\"Version\": 1,\"IncludeBasicClaimSet\": \"true\",\"ClaimsSchema\": [{\"Source\": \"user\",\"ID\": \"assignedroles\",\"SamlClaimType\":\"https://aws.amazon.com/SAML/Attributes/Role\"\r\n                    },{\"Source\": \"user\",\"ID\": \"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"},{\"Source\": \"user\",\"ID\": \"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"},{\"Source\": \"user\",\"ID\": \"assignedroles\",\"SamlClaimType\":\"appRoles\"},{\"Source\": \"user\",\"ID\": \"userprincipalname\",\"SamlClaimType\": \"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\"}]}}"
+        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Source\":\"user\",\"ID\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/nameidentifier\"}]}}"
     ],
-    "displayName": "AWS Claims policy",
+    "displayName": "AWS Claims Policy",
     "isOrganizationDefault": false
 }
 ```

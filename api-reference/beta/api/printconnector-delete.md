@@ -1,16 +1,16 @@
 ---
 title: 删除连接器
-description: 删除（注销）连接器。
+description: 删除 () 连接器中注销。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 03a8e040a2254798eb140075b02fe181021fb8ec
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 7740f8d9976db1f6bc7f2daf300342f4cab98c98
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42948171"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674314"
 ---
 # <a name="delete-connector"></a>删除连接器
 
@@ -18,16 +18,16 @@ ms.locfileid: "42948171"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除（注销） **printConnector**。
+删除 (注销) **printConnector**。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
+若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| 已阅读的用户。所有 |
+|委派（工作或学校帐户）| User.Read |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -49,7 +49,7 @@ DELETE /print/connectors/{id}
 
 ### <a name="error-conditions-and-messages"></a>错误条件和消息
 
-|应用场景|方法|代码|消息|
+|方案|方法|代码|消息|
 |--------|------|----|-------|
 |用户尝试删除已注册的一个或多个打印机的连接器|DELETE|409|在删除连接器之前，请注销关联的打印机。|
 

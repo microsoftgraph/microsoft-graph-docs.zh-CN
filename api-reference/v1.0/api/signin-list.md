@@ -1,22 +1,22 @@
 ---
 title: 列出 signIn
-description: 介绍 Microsoft Graph API 中登录资源（实体）的列表方法。
+description: 介绍了登录资源 (实体) 从 Microsoft Graph API 的列表方法。
 localization_priority: Normal
-author: kholtz
+author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a18aae68f1dbd94b7af551d6f1dc0b896535176a
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 041a77a1a96ab8652e6efd7e34131bea4c334c99
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124488"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673972"
 ---
 # <a name="list-signins"></a>列出 signIn
 
 命名空间：microsoft.graph
 
-检索租户的 Azure AD 用户登录信息。 在性质（用户名/密码作为身份验证令牌的一部分传递）和成功的联合登录中当前包括在登录日志中的登录登录。
+检索租户的 Azure AD 用户登录信息。 在性质 (中进行交互的登录，用户名/密码作为身份验证令牌的一部分传递) 并且当前包含在登录日志中的成功联合登录。
 
 ## <a name="permissions"></a>权限
 

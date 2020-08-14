@@ -1,16 +1,16 @@
 ---
 title: 使用身份验证方法使用情况报告 API
-description: 身份验证方法使用报告可帮助组织了解其最终用户使用的是自服务密码重置和多重身份验证（MFA）等 Azure Active Directory 功能的方式。
+description: 身份验证方法使用情况报告可帮助组织了解其最终用户如何使用 Azure Active Directory 功能，如自助密码重置和多重身份验证 (MFA) 。
 localization_priority: Normal
-author: kholtz
+author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: d7f7a8e6cddf308c5681f74ca6546a9467704cc6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4dbcea2f0b31a8a54354625188d53f04127bb235
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472198"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673922"
 ---
 # <a name="working-with-the-authentication-methods-usage-report-api"></a>使用身份验证方法使用情况报告 API
 
@@ -18,7 +18,7 @@ ms.locfileid: "43472198"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-身份验证方法使用情况报告可帮助您了解组织中的用户如何使用 Azure Active Directory （Azure AD）功能，如自助密码 rest 和多重身份验证（MFA）。
+身份验证方法使用情况报告可帮助你了解组织中的用户如何使用 Azure Active Directory (Azure AD) 功能，如自助密码重置和多重身份验证 (MFA)。
 
 这些报告提供如下信息：
 
@@ -30,7 +30,7 @@ ms.locfileid: "43472198"
 
 下表列出了可与此 API 一起使用的一些常见请求。
 
-| Operation | 在 Graph 浏览器中试用 | 说明 |
+| 操作 | 在 Graph 浏览器中试用 | 说明 |
 | --------- | --- | ----------- |
 | [getCredentialUserRegistrationcount](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta) | [获取/credentialuserregistrationcount](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | 获取注册了自助密码重置和 MFA 的用户数。 |
 | [getCredentialUsageSummary](/graph/api/resources/credentialusagesummary?view=graph-rest-beta) | [获取/credentialusagesummary](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUsageSummary&version=beta) | 获取使用自助密码重置的用户数量。 |
@@ -43,9 +43,9 @@ ms.locfileid: "43472198"
 
 ## <a name="next-steps"></a>后续步骤
 
-- 了解如何[部署 Azure Active Directory 自助服务密码重置](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)。
-- 了解如何部署[Azure Active DIRECTORY MFA](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)。
-- 了解如何启用[组合的安全信息注册](https://docs.microsoft.com/azure/active-directory/authentication/howto-registration-mfa-sspr-combined)。
+- 了解如何 [部署 Azure Active Directory 自助服务密码重置](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)。
+- 了解如何部署 [Azure Active DIRECTORY MFA](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)。
+- 了解如何启用 [组合的安全信息注册](https://docs.microsoft.com/azure/active-directory/authentication/howto-registration-mfa-sspr-combined)。
 
 
 

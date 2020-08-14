@@ -3,14 +3,14 @@ title: 获取 signIn
 doc_type: apiPageType
 description: 获取一个登录对象，其中包含 Azure Active Directory 租户的所有登录。
 localization_priority: Normal
-author: kholtz
+author: khotz
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c5cc845408d5aa3077d5150dee5a1ed560065a25
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: e1bbdbdc7790bf4310947f9e927f0d0eb44171e8
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123093"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674552"
 ---
 # <a name="get-signin"></a>获取 signIn
 
@@ -18,7 +18,7 @@ ms.locfileid: "43123093"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取一个[登录](../resources/signin.md)对象，其中包含租户的特定用户登录事件。 这包括要求用户输入用户名或密码以及会话令牌的登录。
+获取一个 [登录](../resources/signin.md) 对象，其中包含租户的特定用户登录事件。 这包括要求用户输入用户名或密码以及会话令牌的登录。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "43123093"
 |:--------------------|:---------------------------------------------------------|
 | 委派（工作或学校帐户） | AuditLog、目录、全部读取。所有 |
 | 委派（个人 Microsoft 帐户） | 不支持 |
-| Application | AuditLog、目录、全部读取。所有 | 
+| 应用程序 | AuditLog、目录、全部读取。所有 | 
 
 此外，应用还必须向 Azure AD [正确注册](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
 
@@ -55,7 +55,7 @@ GET /auditLogs/signIns/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[登录](../resources/signin.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [登录](../resources/signin.md) 对象。
 
 ## <a name="examples"></a>示例
 

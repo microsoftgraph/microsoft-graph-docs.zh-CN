@@ -1,16 +1,16 @@
 ---
 title: 删除打印机
-description: 删除（注销）打印机。
+description: 删除 (注销) 打印机。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 4f77c6564e321c1e250f89547e7dabad5d1305db
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 049b3d08cb73bd6b4e502e527f762c23767ab065
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948031"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674447"
 ---
 # <a name="delete-printer"></a>删除打印机
 
@@ -18,16 +18,16 @@ ms.locfileid: "42948031"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除（注销）[打印机](../resources/printer.md)。
+删除 (注销) [打印机](../resources/printer.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
+若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| 已阅读的用户。所有 |
+|委派（工作或学校帐户）| 完全控制 |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 

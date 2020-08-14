@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d1d24e65d35dc1460a17adaaff958a7a9c93b88f
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: d3cc5ddce32e6c892a45638d0616ea1415256d0a
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46565868"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673887"
 ---
 # <a name="create-tasktrigger"></a>Create taskTrigger
 
@@ -18,12 +18,12 @@ ms.locfileid: "46565868"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的[打印机](../resources/printer.md)上创建新的[任务触发器](../resources/printtasktrigger.md)。 目前，每台打印机只能指定**一个**任务触发器，但将来可以删除此限制。 此外，只有注册打印机的应用程序可以管理其任务触发器。
+在指定的[打印机](../resources/printer.md)上创建新的[任务触发器](../resources/printtasktrigger.md)。 目前，每台打印机只能指定 **一个** 任务触发器，但将来可以删除此限制。 此外，只有注册打印机的应用程序可以管理其任务触发器。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
+除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。 登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -44,10 +44,10 @@ POST /print/printers/{id}/taskTriggers
 | Content-type  | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[printTaskTrigger](../resources/printtasktrigger.md)对象的 JSON 表示形式。 使用格式提供对[printTaskDefinition](../resources/printtaskdefinition.md)的引用 `@odata.bind` ，如下面的示例所示。
+在请求正文中，提供 [printTaskTrigger](../resources/printtasktrigger.md) 对象的 JSON 表示形式。 使用格式提供对 [printTaskDefinition](../resources/printtaskdefinition.md) 的引用 `@odata.bind` ，如下面的示例所示。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[printTaskTrigger](../resources/printtasktrigger.md) 。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [printTaskTrigger](../resources/printtasktrigger.md) 。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求

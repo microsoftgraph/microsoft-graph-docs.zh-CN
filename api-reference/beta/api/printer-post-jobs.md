@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: bf7ef738b82482caddef6a64e1c0f0f8eeb47c27
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 2236e366e18941d81edcf1d2bdb4d4bf9b9823dd
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947777"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673736"
 ---
 # <a name="create-printjob"></a>创建 printJob
 
@@ -20,16 +20,16 @@ ms.locfileid: "42947777"
 
 为[打印机](../resources/printer.md)创建新的[printJob](../resources/printJob.md) 。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
+除了以下权限之外，用户或应用程序的租户必须具有活动的通用打印订阅，并且具有授予 [获取打印机](printer-get.md) 访问权限的权限。 登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| 已阅读的用户。所有 |
+|委派（工作或学校帐户）| PrintJob、ReadWriteBasic、PrintJob、All、ReadWriteBasic、All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序| 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -44,12 +44,12 @@ POST print/printers/{id}/jobs
 | Content-type  | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[printJob](../resources/printjob.md)对象的 JSON 表示形式，包括一个[printDocument](../resources/printDocument.md)对象。 在创建资源的过程中会自动设置作业和文档 Id。
+在请求正文中，提供 [printJob](../resources/printjob.md) 对象的 JSON 表示形式，包括一个 [printDocument](../resources/printDocument.md) 对象。 在创建资源的过程中会自动设置作业和文档 Id。
 
 目前，通用打印支持每个**printJob**对象仅支持一个**printDocument** 。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[printJob](../resources/printjob.md)对象以及关联的[printDocument](../resources/printDocument.md) 。 
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [printJob](../resources/printjob.md) 对象以及关联的 [printDocument](../resources/printDocument.md) 。 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

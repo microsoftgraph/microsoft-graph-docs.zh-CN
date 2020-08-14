@@ -3,14 +3,14 @@ title: 身份和访问权限报告 API 概述
 description: 访问身份和访问权限报告，了解企业中的员工如何使用 Azure Active Directory 租户中的应用。
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-author: kholtz
+author: khotz
 doc_type: conceptualPageType
-ms.openlocfilehash: ca225f663b6eed59f4780c6a26a2a95413b32946
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: 140aa4598f643defe42364e99dd0c5a79eb4ab6d
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524413"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673700"
 ---
 # <a name="identity-and-access-reports-api-overview"></a>身份和访问权限报告 API 概述
 

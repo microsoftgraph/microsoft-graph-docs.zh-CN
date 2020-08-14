@@ -16,10 +16,10 @@ ms.locfileid: "43181243"
 
 命名空间：microsoft.graph
 
-创建新的[certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md)对象。
+创建新的 [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) 对象。
 
 > [!NOTE]
-> 仅可创建**certificateBasedAuthConfiguration**的单个实例（集合只能有一个成员）。 它始终具有值为 "29728ade-6ae4-4ee9-9103-412912537da5" 的固定 ID。
+>  (集合只能有一个) 的成员，才能创建一个 **certificateBasedAuthConfiguration** 实例。 它始终具有值为 "29728ade-6ae4-4ee9-9103-412912537da5" 的固定 ID。
 
 ## <a name="permissions"></a>权限
 
@@ -29,7 +29,7 @@ ms.locfileid: "43181243"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Organization.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application    | Organization.ReadWrite.All |
+| 应用程序    | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,15 +48,15 @@ POST /organization/{id}/certificateBasedAuthConfiguration
 
 ## <a name="request-body"></a>请求正文
 
-创建[certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md)对象需要以下属性。
+创建 [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) 对象需要以下属性。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|certificateAuthorities| [certificateAuthority](../resources/certificateauthority.md)集合 |创建受信任的证书链的证书颁发机构的集合。  集合中的每个成员都必须包含**certificate**和**isRootAuthority**属性。 |
+|certificateAuthorities| [certificateAuthority](../resources/certificateauthority.md) 集合 |创建受信任的证书链的证书颁发机构的集合。  集合中的每个成员都必须包含 **certificate** 和 **isRootAuthority** 属性。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`201 Created`响应正文中返回响应代码和新的[certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 

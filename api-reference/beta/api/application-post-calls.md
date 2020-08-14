@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 056ec5a26c8eb38809acbbe56f5097137d265fbb
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 14b0e3adfc0f7a276b5b3715046133b4d459dae6
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289307"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673727"
 ---
 # <a name="create-call"></a>创建调用
 
@@ -18,7 +18,7 @@ ms.locfileid: "44289307"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建[呼叫](../resources/call.md)使你的 bot 能够创建新的传出对等或组呼叫，或加入现有会议。 你需要[注册呼叫机器人](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot)并查看所需的权限列表，如下所述。
+创建 [呼叫](../resources/call.md) 使你的 bot 能够创建新的传出对等或组呼叫，或加入现有会议。 你需要 [注册呼叫机器人](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) 并查看所需的权限列表，如下所述。
 
 > **注意：** 目前，仅支持 VoIP 呼叫。 
 
@@ -30,7 +30,7 @@ ms.locfileid: "44289307"
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                                                                           |
 | 委派（个人 Microsoft 帐户） | 不支持                                                                           |
-| 应用程序                            | JoinGroupCallsasGuest、JoinGroupCalls、calls、InitiateGroupCalls、All、和。 |
+| 应用程序                            | JoinGroupCallsasGuest、JoinGroupCalls、Calls.Ini的 tiate。全部，Calls.InitiateGroupCalls |
 
 > **注意：** 对于包含应用托管媒体的呼叫，除了列出的权限之一之外，还需要 AccessMedia 权限。
 
@@ -49,16 +49,16 @@ POST /communications/calls
 | Content-type  | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[call](../resources/call.md)对象的 JSON 表示形式。
+在请求正文中，提供 [call](../resources/call.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[call](../resources/call.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [call](../resources/call.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-create-peer-to-peer-voip-call-with-service-hosted-media"></a>示例1：使用服务托管媒体创建对等 VoIP 呼叫
 
-> **注意：** 此调用需要调用. Initiate。 All 权限。
+> **注意：** 此调用需要 Calls.Initiate。All 权限。
 
 ##### <a name="request"></a>请求
 以下示例显示了在 bot 和指定用户之间进行对等呼叫的请求。 在此示例中，媒体由服务托管。 必须使用实际值替换授权令牌、回调 URL、应用程序 ID、应用程序名称、用户 ID、用户名和租户 ID 的值，以使示例正常工作。
@@ -264,7 +264,7 @@ Content-Type: application/json
 
 ### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>示例2：使用应用程序托管媒体创建对等 VoIP 呼叫
 
-> **注意**：此示例需要调用 AccessMedia 所有权限。
+> **注意**：此示例需要 Calls.Initiate。所有权限和 AccessMedia 权限。
 
 ##### <a name="request"></a>请求
 以下示例显示了在 bot 和指定用户之间进行对等呼叫的请求。 在此示例中，媒体由应用程序本地承载。 必须使用实际值替换授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值，以使示例正常工作。
@@ -332,7 +332,7 @@ Content-Type: application/json
 
 ---
 
-`<Media Session Configuration>`是序列化的媒体会话配置，其中包含媒体堆栈的会话信息。 应在此处传递有关音频、视频、VBSS ssession 信息的特定信息。
+`<Media Session Configuration>` 是序列化的媒体会话配置，其中包含媒体堆栈的会话信息。 应在此处传递有关音频、视频、VBSS ssession 信息的特定信息。
 
 示例音频媒体会话 blob 如下所示
 ```json
@@ -549,9 +549,9 @@ Content-Type: application/json
 
 ### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a>示例5：加入服务托管媒体的计划会议
 若要加入计划的会议，我们需要获取线程 id、邮件 id、组织者 id 以及在其中安排会议的租户 id。
-可以从[获取联机会议 API](../api/onlinemeeting-get.md)获取此信息。
+可以从 [获取联机会议 API](../api/onlinemeeting-get.md)获取此信息。
 
-授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值必须替换为通过获取具有实际值的[联机会议 API](../api/onlinemeeting-get.md)获取的详细信息，以使示例正常工作。
+授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值必须替换为通过获取具有实际值的  [联机会议 API](../api/onlinemeeting-get.md) 获取的详细信息，以使示例正常工作。
 > **注意：** 此示例需要该 `Calls.JoinGroupCalls.All` 权限。
 
 ##### <a name="request"></a>请求
@@ -597,11 +597,13 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.identity",
         "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
         "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
-        "displayName": "Bob"
+        "displayName": "Bob",
+        "tenantId":"86dc81db-c112-4228-9222-63f3esaa1edb"
       }
     },
     "allowConversationWithoutHost": true
-  }
+  },
+  "tenantId":"86dc81db-c112-4228-9222-63f3esaa1edb"
 }
 ```
 ##### <a name="response"></a>响应
@@ -882,7 +884,7 @@ Content-Type: application/json
 >**注意：** 除了呼叫状态通知之外，对于加入会议方案，我们会收到名单通知。
 
 ### <a name="example-6-join-scheduled-meeting-with-app-hosted-media"></a>示例6：加入带应用程序托管媒体的计划会议
-若要使用应用程序托管媒体加入会议，请按照上面提供的示例中所示的[AppHostedMediaConfig](../resources/apphostedmediaconfig.md)更新媒体配置。
+若要使用应用程序托管媒体加入会议，请按照上面提供的示例中所示的 [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) 更新媒体配置。
 
 <!-- {
   "blockType": "example",
@@ -928,9 +930,9 @@ Content-Type: application/json
 
 
 ### <a name="example-7-join-channel-meeting-with-service-hosted-media"></a>示例7：加入使用服务托管媒体的渠道会议
-频道内的会议需要特定的详细信息，例如，可以使用[获取联机会议 API](../api/onlinemeeting-get.md)获取的线程 id、messageid 和组织者详细信息。
+频道内的会议需要特定的详细信息，例如，可以使用 [获取联机会议 API](../api/onlinemeeting-get.md)获取的线程 id、messageid 和组织者详细信息。
 
-授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值必须替换为通过获取具有实际值的[联机会议 API](../api/onlinemeeting-get.md)获取的详细信息，以使示例正常工作。
+授权令牌、回调 url、应用程序 id、应用程序名称、用户 id、用户名和租户 id 的值必须替换为通过获取具有实际值的  [联机会议 API](../api/onlinemeeting-get.md) 获取的详细信息，以使示例正常工作。
 
 > **注意：** 此示例需要该 `Calls.JoinGroupCalls.All` 权限。
 
@@ -986,7 +988,7 @@ Content-Type: application/json
 ```
 
 ### <a name="example-8-join-channel-meeting-as-a-guest-with-service-hosted-media"></a>示例8：以具有服务托管媒体的来宾身份加入通道会议
-若要将渠道会议作为来宾加入，您需要创建一个来宾[标识](../resources/identityset.md)，并将其添加为加入会议请求中的呼叫源。
+若要将渠道会议作为来宾加入，您需要创建一个来宾 [标识](../resources/identityset.md) ，并将其添加为加入会议请求中的呼叫源。
 显示名称是您希望在会议中为您的来宾标识显示的名称。 Id 可以是标识来宾标识的唯一 id。
 
 > **注意：** 此示例需要该 `Calls.JoinGroupCallsAsGuest.All` 权限。

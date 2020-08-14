@@ -2,15 +2,15 @@
 title: applicationSignInDetailedSummary 资源类型
 description: 表示应用程序登录摘要。
 localization_priority: Normal
-author: kholtz
+author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 79dbe02f723c9c8912ce8a227a47d6f50260c330
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b67eae972137e168218070013952dae4690bf95a
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455274"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673703"
 ---
 # <a name="applicationsigninsummary-resource-type"></a>applicationSignInSummary 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "43455274"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [获取 applicationSignInSummary](../api/applicationsigninsummary-get.md) | [applicationSignInSummary](applicationsigninsummary.md) | 读取**applicationSignInSummary**对象的属性和关系。 |
+| [获取 applicationSignInSummary](../api/applicationsigninsummary-get.md) | [applicationSignInSummary](applicationsigninsummary.md) | 读取 **applicationSignInSummary** 对象的属性和关系。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |

@@ -46,7 +46,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 |:---------------|:--------|:----------|
 |域|WorkbookSortField 集合|要用作排序依据的条件列表。|
 |matchCase|布尔|可选。是否让大小写对字符串排序产生影响。|
-|方法|字符串|可选。 用于中文字符的排序方法。  可能的值为： `PinYin`、 `StrokeCount`。|
+|方法|string|可选。 用于中文字符的排序方法。  可能的值为： `PinYin` 、 `StrokeCount` 。|
 
 ## <a name="response"></a>响应
 

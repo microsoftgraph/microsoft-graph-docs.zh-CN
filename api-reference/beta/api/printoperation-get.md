@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: dd03367e71a9c5273e294ac022d4ac9d8a5e2760
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 5edaaa14db3b708c78878b5d85e4634f0677d187
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46565627"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674181"
 ---
 # <a name="get-printoperation"></a>获取 printOperation
 
@@ -18,16 +18,18 @@ ms.locfileid: "46565627"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[printOperation](../resources/printoperation.md)对象的属性和关系。
+检索 [printOperation](../resources/printoperation.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
+登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| User.Read.All |
+|委派（工作或学校帐户）| "完全控制"、"全部"、"全打印机" |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序| 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +45,7 @@ GET /print/operations/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在 `200 OK` 响应正文中返回响应代码和[printOperation](../resources/printOperation.md)对象 (或**printOperation**) 的导数。
+如果成功，此方法在 `200 OK` 响应正文中返回响应代码和 [printOperation](../resources/printOperation.md) 对象 (或 **printOperation**) 的导数。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面展示了示例请求。

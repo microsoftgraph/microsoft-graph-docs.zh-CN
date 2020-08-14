@@ -1,35 +1,35 @@
 ---
-title: 删除 allowedUser
+title: 从打印机中删除 allowedUser
 description: 撤销指定用户的访问权限，以将打印作业提交到关联的打印机。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 790a4db92d2ad4f90839508f0dc15c83599422c9
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 46ebe8d1b813cd215cbdc663426042e7b2a162f6
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948059"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674370"
 ---
-# <a name="delete-alloweduser"></a>删除 allowedUser
+# <a name="delete-alloweduser-from-printer"></a>从打印机中删除 allowedUser
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-撤销指定用户的访问权限，以将打印作业提交到关联的[打印机](../resources/printer.md)。
+撤销指定用户的访问权限，以将打印作业提交到关联的 [打印机](../resources/printer.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
+若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| 已阅读的用户。所有 |
+|委派（工作或学校帐户）| 完全控制和所有打印机。 |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序| 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

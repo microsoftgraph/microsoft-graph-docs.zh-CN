@@ -1,18 +1,18 @@
 ---
-title: List endpoints
+title: 列出 printServiceEndpoints
 description: 检索由打印服务公开的终结点列表。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 213e80aa3bea4f3eabb49720fce3b97da2972348
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: c5e7f9ccc5348018269db227ccf620406807462f
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947537"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674139"
 ---
-# <a name="list-endpoints"></a>List endpoints
+# <a name="list-printserviceendpoints"></a>列出 printServiceEndpoints
 
 命名空间：microsoft.graph
 
@@ -20,8 +20,8 @@ ms.locfileid: "42947537"
 
 检索由打印服务公开的终结点列表。
 
-## <a name="permissions"></a>Permissions
-不需要任何权限即可调用此 API，但用户的租户必须具有活动的通用打印订阅。
+## <a name="permissions"></a>权限
+不需要任何权限即可调用此 API，但若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -36,7 +36,7 @@ GET /print/services/{id}/endpoints
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -46,7 +46,7 @@ GET /print/services/{id}/endpoints
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[printServiceEndpoint](../resources/printserviceendpoint.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [printServiceEndpoint](../resources/printserviceendpoint.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

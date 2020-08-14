@@ -1,35 +1,35 @@
 ---
-title: 列出 allowedGroups
+title: 列出 printerShare 的 allowedGroups
 description: 检索已授予访问权限的组列表，以将打印作业提交到关联的打印机共享。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 4b84366b7b2316037c8c0febc4df526db993f314
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 0eb4af8f894af9f5c8c6bce0fdf93e5068c6d364
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44216852"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674286"
 ---
-# <a name="list-allowedgroups"></a>列出 allowedGroups
+# <a name="list-allowedgroups-for-printershare"></a>列出 printerShare 的 allowedGroups
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索已授予访问权限的组列表，以将打印作业提交到关联的[printerShare](../resources/printershare.md)。
+检索已授予访问权限的组列表，以将打印作业提交到关联的 [printerShare](../resources/printershare.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
+若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| 已阅读的用户。所有 |
+|委派（工作或学校帐户）| PrinterShare、PrinterShare 和所有 |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /print/shares/{id}/allowedGroups
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[printIdentity](../resources/printidentity.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [printIdentity](../resources/printidentity.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 10bf87d66126d85bdc52c69659647c7728084ac5
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 62277a2b933edf9161a51b114c765fde948b4d26
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42948089"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674013"
 ---
 # <a name="printdocument-uploaddata"></a>printDocument： uploadData
 
@@ -18,22 +18,22 @@ ms.locfileid: "42948089"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-上载**printDocument**的单个二进制段。
+上载 **printDocument**的单个二进制段。
 
 您可以上传整个文件，或将文件拆分为多个字节范围，前提是没有请求大于 1 MB。
 
-可以按任意顺序上载文件的各个部分，并且可以并行上传，最大并发请求数为四个。 当上载文档的所有二进制片段时，二进制文件将链接到**printJob**。
+可以按任意顺序上载文件的各个部分，并且可以并行上传，最大并发请求数为四个。 当上载文档的所有二进制片段时，二进制文件将链接到 **printJob**。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
+除了以下权限之外，用户或应用程序的租户必须具有活动的通用打印订阅，并且具有授予 [获取打印机](printer-get.md) 访问权限的权限。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| 已阅读的用户。所有 |
+|委派（工作或学校帐户）| PrintJob，PrintJob。 |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序| 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -44,17 +44,17 @@ POST /print/printers/{id}/jobs/{id}/documents/{id}/uploadData
 | 名称          | 说明   |
 |:--------------|:--------------|
 | Authorization | Bearer {token}。必需。 |
-| 范围 | bytes = {startByteIndex}-{endByteIndex}  |
+| Range | bytes = {startByteIndex}-{endByteIndex}  |
 | Content-Length | {contentLength}‬  |
 | Content-type  | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-请求正文是一个二进制 blob，其中包含指定为`Range`标头中的非独占字节范围的文档的字节数。 
+请求正文是一个二进制 blob，其中包含指定为标头中的非独占字节范围的文档的字节数 `Range` 。 
 
 ## <a name="response"></a>响应
 如果成功，此方法将返回以下响应之一。 它不在响应正文中返回任何内容。
 
-| 条件     | 响应代码 |
+| Condition     | 响应代码 |
 |:--------------|:--------------|
 | 仍需上载一个或多个二进制段 | `202 Accepted` |
 | 已成功上载所有二进制段 | `201 Created` |

@@ -1,18 +1,18 @@
 ---
-title: 创建 allowedUser
+title: 为打印机创建 allowedUser
 description: 向指定的用户授予向关联打印机提交打印作业的权限。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 5ce2564b2878a3dff998c938366f132c08098a73
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: d6c419faa2569faea1b651ebe0b4faf61f9db13d
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947799"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674483"
 ---
-# <a name="create-alloweduser"></a>创建 allowedUser
+# <a name="create-alloweduser-for-printer"></a>为打印机创建 allowedUser
 
 命名空间：microsoft.graph
 
@@ -20,19 +20,20 @@ ms.locfileid: "42947799"
 
 向指定的用户授予向关联[打印机](../resources/printer.md)提交**打印作业**的权限。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
+若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| 已阅读的用户。所有 |
+|委派（工作或学校帐户）| 完全控制和所有打印机。 |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序| 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /print/printers/{id}/allowedUsers/$ref
 ```
@@ -43,7 +44,7 @@ POST /print/printers/{id}/allowedUsers/$ref
 | Content-type  | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，通过使用`@odata.id`格式提供对用户实体的引用，如下面的示例所示。
+在请求正文中，通过使用格式提供对用户实体的引用 `@odata.id` ，如下面的示例所示。
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `201 Created` 响应代码。
@@ -80,7 +81,7 @@ Content-length: 66
 
 ---
 
-在请求正文中，通过在 JSON 正文的`@odata.id`字段中添加用户的 MICROSOFT Graph URI，提供对用户实体的引用。
+在请求正文中，通过在 JSON 正文的字段中添加用户的 Microsoft Graph URI，提供对用户实体的引用 `@odata.id` 。
 
 ##### <a name="response"></a>响应
 下面展示了示例响应。 

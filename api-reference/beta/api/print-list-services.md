@@ -1,27 +1,27 @@
 ---
-title: 获取服务
+title: 列出 printServices
 description: 检索 printService 对象的列表，这些对象代表可供租户使用的服务。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 5c211e14d2ec699761a503fa2768eff59b9b0181
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 161942b9af137071621cfeaf6705b909ce26861a
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948258"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674503"
 ---
-# <a name="list-services"></a>列出服务
+# <a name="list-printservices"></a>列出 printServices
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[printService](../resources/printservice.md)对象的列表，这些对象代表可供租户使用的**服务**。
+检索 [printService](../resources/printservice.md) 对象的列表，这些对象代表可供租户使用的 **服务** 。
 
-## <a name="permissions"></a>Permissions
-不需要任何权限即可调用此 API，但用户的租户必须具有活动的通用打印订阅。
+## <a name="permissions"></a>权限
+不需要任何权限即可调用此 API，但若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -36,7 +36,7 @@ GET /print/services
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -46,7 +46,7 @@ GET /print/services
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[printService](../resources/printservice.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [printService](../resources/printservice.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

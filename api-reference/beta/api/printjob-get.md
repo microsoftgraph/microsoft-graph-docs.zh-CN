@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c634c4679cf65a8e723e55a4b0b9c39298a764b3
-ms.sourcegitcommit: 9f1e02ab486a2c3e0a128e5d36f46cebe4961581
+ms.openlocfilehash: 07744f37598c1bb32750bdf3697ca025182faaaa
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024425"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674209"
 ---
 # <a name="get-printjob"></a>获取 printJob
 
@@ -23,13 +23,13 @@ ms.locfileid: "45024425"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。
+除了以下权限之外，用户或应用程序的租户必须具有活动的通用打印订阅，并且具有授予 [获取打印机](printer-get.md) 访问权限的权限。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| 已阅读的用户。所有 |
+|委派（工作或学校帐户）| PrintJob、PrintJob、user.readbasic.all、PrintJob、PrintJob、ReadWriteBasic、all、PrintJob、PrintJob、ReadWriteBasic、PrintJob、、、、all |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|应用程序| PrintJob、PrintJob、PrintJob、all、all、All 和 All。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ GET /print/printers/{id}/jobs/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -48,13 +48,13 @@ GET /print/printers/{id}/jobs/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[printJob](../resources/printjob.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [printJob](../resources/printjob.md) 对象。
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-a-print-job"></a>示例1：获取打印作业
+### <a name="example-1-get-print-job"></a>示例1：获取打印作业
 
 #### <a name="request"></a>请求
-下面的示例演示了获取打印作业的请求。
+下面的示例演示了获取打印作业的元数据的请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -62,7 +62,7 @@ GET /print/printers/{id}/jobs/{id}
   "name": "get_printjob"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}
+GET https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb/jobs/5182
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-printjob-csharp-snippets.md)]
@@ -103,11 +103,62 @@ Content-length: 408
 }
 ```
 
-### <a name="example-2-get-a-print-job-and-its-associated-document-data"></a>示例2：获取打印作业及其关联的文档数据
+### <a name="example-2-get-print-job-with-task-list"></a>示例2：使用任务列表获取打印作业
+
+#### <a name="request"></a>请求
+下面是一个请求，用于获取打印作业以及正在对其执行或已执行的任何 [任务](../resources/printtask.md) 。
+
+<!-- {
+  "blockType": "request",
+  "name": "get_printjob_withtasks"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb/jobs/5182?$expand=tasks
+```
+
+#### <a name="response"></a>响应
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.printJob"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 774
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs(tasks())/$entity",
+  "id": "5182",
+  "createdDateTime": "2020-06-30T17:18:52.3930472Z",
+  "createdBy": {
+    "id": "",
+    "displayName": "",
+    "userPrincipalName": ""
+  },
+  "status": {
+    "processingState": "pendingHeld",
+    "processingStateDescription": "The job is not a candidate for processing yet."
+  },
+  "tasks": [
+    {
+      "id": "d036638b-1272-4bba-9227-732463823ed3",
+      "parentUrl": "https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb/jobs/5182",
+      "status": {
+        "state": "processing",
+        "description": "The task is being processed."
+      }
+    }
+  ]
+}
+```
+
+### <a name="example-3-get-a-print-job-and-its-associated-document-data"></a>示例3：获取打印作业及其关联的文档数据
 
 #### <a name="request"></a>请求
 下面的示例演示了获取打印作业及其关联的文档数据的请求。
-
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -116,6 +167,20 @@ Content-length: 408
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/86b6d420-7e6b-4797-a05c-af4e56cd81bd/jobs/31216?$expand=documents
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-printjob-withdocumentdata-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-printjob-withdocumentdata-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-printjob-withdocumentdata-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
