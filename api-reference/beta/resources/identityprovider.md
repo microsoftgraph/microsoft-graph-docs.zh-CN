@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: namkedia
-ms.openlocfilehash: 449553213e41cb8b447511584c4905906011a4d4
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 6549ba9c288dce75a42fb0eee54ecf756af822ab
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509544"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674265"
 ---
 # <a name="identityprovider-resource-type"></a>identityProvider 资源类型
 
@@ -18,15 +18,16 @@ ms.locfileid: "46509544"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表 Azure Active Directory 租户和  Azure AD B2C 租户中的身份提供程序。
+对 Azure Active Directory 租户和 Azure AD B2C 租户都标识具有[外部标识](https://docs.microsoft.com/azure/active-directory/external-identities/)的身份提供程序。
 
 对于 Azure AD 租户中的 Azure AD B2B 方案，身份提供程序类型可以是 Google 或 Facebook。
+
+通过在 Azure AD B2C 中配置身份提供程序，可实现新 Azure AD B2B 来宾方案。 例如，某组织在 Microsoft 365 中具有需要与 Gmail 用户共享的资源。 Gmail 将使用其 Google 帐户凭据来验证和访问文档。
 
 在 Azure AD B2C 租户中，身份提供程序类型可以是 Microsoft、Google、Facebook、Amazon、LinkedIn、Twitter 或任何 [openIdConnectProvider](../resources/openidconnectprovider.md)。 以下身份提供程序正处于预览阶段：微博、QQ、微信和 GitHub。
 
 在 Azure AD B2C 租户中配置身份提供程序，用户可在应用程序中使用社交帐户或自定义 OpenID Connect 支持的提供程序进行注册和登录。 例如，应用程序可使用 Azure AD B2C 让用户能够通过 Facebook 帐户或他们自己的符合 OIDC 协议的自定义身份提供程序注册服务。
 
-通过在 Azure AD B2C 中配置身份提供程序，可实现新 Azure AD B2B 来宾方案。 例如，某组织在 Microsoft 365 中具有需要与 Gmail 用户共享的资源。 Gmail 将使用其 Google 帐户凭据来验证和访问文档。
 
 如果是具有 `OpenIDConnect` 且为 `type` 的自定义 OpenID Connect 身份提供程序， 则使用 [openIdConnectProvider](../resources/openidconnectprovider.md) 资源类型表示，该资源类型将继承自身份提供程序资源类型。 
 

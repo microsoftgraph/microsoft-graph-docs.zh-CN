@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 73f89ac24bedad9cfd632674040b288aac151f23
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
-ms.translationtype: MT
+ms.openlocfilehash: 33e76189c13356b0746ce020576affa952abc994
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050741"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673803"
 ---
 # <a name="get-conversationmember"></a>获取 conversationMember
 
@@ -26,11 +26,11 @@ ms.locfileid: "45050741"
 
 |权限类型|权限（从最低特权到最高特权）|
 |---------|-------------|
-|委派（工作或学校帐户）| 对于**用户**或**聊天**资源： User.readbasic.all、聊天、阅读和读写<br/><br/>对于**信道**资源： ChannelMember、ChannelMember、group. All、group. all、all、all、all、all 和 all。 |
+|委派（工作或学校帐户）| 对于**用户**或**聊天**资源：Chat.ReadBasic、Chat.Read、Chat.ReadWrite<br/><br/>对于**频道**资源：ChannelMember.Read.All、ChannelMember.ReadWrite、Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| 对于**用户**或**聊天**资源： user.readbasic.all、聊天室、全部聊天。所有<br/><br/>对于**信道**Resource： ChannelMember、ChannelMember、group、group、group、group、all、group。 all，all，all，all，all，all，all |
+|应用程序| 对于**用户**或**聊天**资源：不支持。<br/><br/>对于**频道**资源：Member.Read.Group*、ChannelMember.Read.All、ChannelMember.ReadWrite.All、Group.Read.All、Group.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
-> **注意**：标记为 * 的权限使用[特定于资源的同意](https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于[特定于资源的同意](https://aka.ms/teams-rsc)。
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。

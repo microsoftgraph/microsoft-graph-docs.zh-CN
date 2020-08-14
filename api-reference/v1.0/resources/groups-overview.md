@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 149164ed9c066e58ec2d0ba8962a080aab010886
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: c3766f7b8e7be3a97ff95d43bd61147e8c1c4fb7
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45224953"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46673866"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>在 Microsoft Graph 中使用组
 
@@ -112,7 +112,7 @@ POST https://graph.microsoft.com/beta/groups
     "mailEnabled": true,
     "mailNickname": "marketing",
     "securityEnabled": false,
-    "membershipRule": 'user.department -eq "Marketing"',
+    "membershipRule": "user.department -eq \"Marketing\"",
     "membershipRuleProcessingState": "on"
 }
 ```

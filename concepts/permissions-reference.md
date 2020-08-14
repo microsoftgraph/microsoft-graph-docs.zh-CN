@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 8e99015b86be921d034ca41eb178581c75af49cf
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: 27335eb191352d37523975c7a506f39e7da725be
+ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630331"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674517"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1648,8 +1648,29 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 
 ---
 
-## <a name="teams-permissions"></a>Teams 权限
+## <a name="taxonomy-permissions"></a>分类权限
 
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TermStore.Read.All_        | 读取术语库数据 | 允许应用读取术语库中的各种术语、集和组 | 是  | 否 |
+| _TermStore.ReadWrite.All_   | 读取和写入所有术语库数据 | 允许应用在术语库中编辑或删除术语、集和组 | 是  | 否 |
+
+### <a name="remarks"></a>注解
+
+分类权限仅对工作或学校帐户有效。
+
+### <a name="example-usage"></a>用法示例
+
+#### <a name="delegated"></a>Delegated
+
+* _TermStore.Read.All_：读取租户的 termStore（`GET /termStore`）
+* _TermStore.ReadWrite.All_：在 termStore 中创建新术语（`POST /termStore/sets/123/children`）
+
+---
+
+## <a name="teams-permissions"></a>Teams 权限
 
 #### <a name="delegated-permissions"></a>委派权限
 
@@ -1890,27 +1911,63 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 
 ---
 
-## <a name="taxonomy-permissions"></a>分类权限
+## <a name="universal-print-permissions"></a>Universal Print permissions
 
 #### <a name="delegated-permissions"></a>委派权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TermStore.Read.All_        | 读取术语库数据 | 允许应用读取术语库中的各种术语、集和组 | 是  | 否 |
-| _TermStore.ReadWrite.All_   | 读取和写入所有术语库数据 | 允许应用在术语库中编辑或删除术语、集和组 | 是  | 否 |
+| _Printer.Create_ | 注册打印机 | 允许应用代表已登录的用户创建（注册）打印机。 | 是 | 否 |
+| _Printer.FullControl.All_ | 注册、读取、更新和注销打印机 | 允许应用代表已登录用户创建（注册）、读取、更新和删除（取消注册）打印机。 | 是 | 否 |
+| _Printer.Read.All_ | 读取打印机 | 允许应用代表已登录用户读取打印机。 | 是 | 否 |
+| _Printer.ReadWrite.All_ | 读取和更新打印机 | 允许应用代表已登录用户读取和更新打印机。不允许创建（正在注册）或删除（正在注销）打印机。 | 是 | 否 |
+| _PrinterShare.Read.All_ | 读取打印机共享 | 允许应用代表已登录用户读取打印机共享。 | 否 | 否 |
+| _PrinterShare.ReadWrite.All_ | 读写打印机共享 | 允许应用代表已登录用户读取和更新打印机共享。 | 是 | 否 |
+| _PrintJob.Read_ | 读取用户的打印作业 | 允许应用读取已登录用户所创建打印作业的元数据和文档内容。 | 否 | 否 |
+| _PrintJob.Read.All_ | 读取打印作业 | 允许应用代表已登录用户读取打印作业的元数据和文档内容。 | 是 | 否 |
+| _PrintJob.ReadBasic_ | 读取用户打印作业的基本信息 | 允许应用读取已登录用户所创建打印作业的元数据。 不允许访问打印作业文档内容。 | 否 | 否 |
+| _PrintJob.ReadBasic.All_ | 读取打印作业的基本信息 | 允许应用代表已登录用户读取打印作业的元数据。不允许访问打印作业文档内容。 | 是 | 否 |
+| _PrintJob.ReadWrite_ | 读取和写入用户的打印作业 | 允许应用读取和更新已登录用户所创建打印作业的元数据和文档内容。 | 否 | 否 |
+| _PrintJob.ReadWrite.All_ | 读取和写入打印作业 | 允许应用代表已登录用户读取和更新打印作业的元数据和文档内容。 | 是 | 否 |
+| _PrintJob.ReadWriteBasic_ | 读写用户打印作业的基本信息 | 允许应用读取和更新已登录用户所创建打印作业的元数据。 不允许访问打印作业文档内容。 | 否 | 否 |
+| _PrintJob.ReadWriteBasic.All_ | 读取和写入打印作业的基本信息 | 允许应用代表已登录用户读取和更新打印作业的元数据。不允许访问打印作业文档内容。 | 是 | 否 |
 
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Printer.Read.All_ | 读取打印机 | 允许应用在没有登录用户的情况下读取打印机。 | 是 |
+| _Printer.ReadWrite.All_ | 读取和更新打印机 | 允许应用在没有登录用户的情况下读取和更新打印机。 不允许创建（正在注册）或删除（正在注销）打印机。 | 是 |
+| _PrintJob.Manage.All_ | 在打印作业上执行高级操作 | 允许应用执行高级操作，如在没有登录用户的情况下重定向打印作业至其他打印机。 允许应用读取和更新打印作业的元数据。 | 是 |
+| _PrintJob.Read.All_ | 读取打印作业 | 允许应用在没有登录用户的情况下读取打印作业的元数据和文档内容。 | 是 |
+| _PrintJob.ReadBasic.All_ | 读取打印作业的基本信息 | 允许应用在没有登录用户的情况下读取打印作业的元数据。不允许访问打印作业文档内容。 | 是 |
+| _PrintJob.ReadWrite.All_ | 读取和写入打印作业 | 允许应用在没有登录用户的情况下读取和更新打印作业的元数据和文档内容。 | 是 |
+| _PrintJob.ReadWriteBasic.All_ | 读取和写入打印作业的基本信息 | 允许应用在没有登录用户的情况下读取和更新打印作业的元数据。不允许访问打印作业文档内容。 | 是 |
+| _PrintTaskDefinition.ReadWrite.All_ | 读取、写入和更新打印任务定义 | 允许应用在没有登录用户的情况下读取和更新打印任务定义。 | 是 |
 
 ### <a name="remarks"></a>注解
 
-分类权限仅对工作或学校帐户有效。
+* 若要使用通用打印服务，用户或应用的租户除了前面列出的权限外，还必须具有有效的通用打印订阅。
+
+* 某些权限可区分打印作业元数据和有效负载。 元数据描述了打印作业的配置（其名称和文档配置，例如应该装订还是彩色打印）。 有效负载是文档数据本身（要打印的 PDF 或 XPS 文件。）
+
+* 所有 PrintJob.* 权限还至少需要 Printer.Read.All（或更多特权权限），因为打印作业存储在打印机中。
 
 ### <a name="example-usage"></a>用法示例
 
 #### <a name="delegated"></a>Delegated
 
-* _TermStore.Read.All_：读取租户的 termStore（`GET /termStore`）
-* _TermStore.ReadWrite.All_：在 termStore 中创建新术语（`POST /termStore/sets/123/children`）
+* _Printer.Read.All_：获取租户中所有打印机的列表 (`GET /print/printers`)
+* _PrintJob.Read.All_：获取排队到打印机的所有打印作业的列表 (`GET /print/printers/{id}/jobs`)
+* _Printer.FullControl.All_：删除（注销）打印机 (`DELETE /print/printers/{id}`)
+* _PrintJob.ReadWriteBasic.All_：更新打印作业的元数据（例如当前状态）(`PATCH /print/printers/{id}/jobs/{id}`)
+* _PrintJob.ReadWrite.All_：创建打印作业并向其上传文档数据 (`POST /print/printers/{id}/jobs`)
 
+#### <a name="application"></a>应用程序
+
+* _Printer.Read.All_：获取租户中所有打印机的列表 (`GET /print/printers`)
+
+---
 
 ## <a name="user-permissions"></a>用户权限
 
