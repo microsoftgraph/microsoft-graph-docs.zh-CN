@@ -906,7 +906,7 @@ items:
                 items:
                   - name: 列出 memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: List transitive memberOf
+                  - name: 列出 transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -9705,7 +9705,7 @@ items:
                         href: api/authentication-list-methods.md
                       - name: 获取
                         href: api/authenticationmethod-get.md
-                  - name: 密码
+                  - name: Password
                     href: resources/passwordauthenticationmethod.md
                     items:
                       - name: 列表
@@ -10149,6 +10149,8 @@ items:
                         href: api/accesspackage-post.md
                       - name: 获取
                         href: api/accesspackage-get.md
+                      - name: 更新
+                        href: api/accesspackage-update.md
                       - name: 删除
                         href: api/accesspackage-delete.md
                   - name: 访问包分配
@@ -10165,6 +10167,8 @@ items:
                         href: api/accesspackageassignmentpolicy-post.md
                       - name: 获取
                         href: api/accesspackageassignmentpolicy-get.md
+                      - name: 更新
+                        href: api/accesspackageassignmentpolicy-update.md
                       - name: 删除
                         href: api/accesspackageassignmentpolicy-delete.md
                   - name: 访问包分配请求
@@ -10192,6 +10196,8 @@ items:
                         href: api/accesspackagecatalog-post.md
                       - name: 获取
                         href: api/accesspackagecatalog-get.md
+                      - name: 更新
+                        href: api/accesspackage-update.md
                       - name: 删除
                         href: api/accesspackagecatalog-delete.md
                       - name: 列出资源
@@ -10225,6 +10231,18 @@ items:
                         href: api/connectedorganization-update.md
                       - name: 删除
                         href: api/connectedorganization-delete.md
+                      - name: 列出外部发起人
+                        href: api/connectedorganization-list-externalsponsors.md
+                      - name: 列出内部赞助商
+                        href: api/connectedorganization-list-internalsponsors.md
+                      - name: 添加外部发起人
+                        href: api/connectedorganization-post-externalsponsors.md
+                      - name: 添加内部赞助商
+                        href: api/connectedorganization-post-internalsponsors.md
+                      - name: 删除外部发起人
+                        href: api/connectedorganization-delete-externalsponsors.md
+                      - name: 删除内部赞助商
+                        href: api/connectedorganization-delete-internalsponsors.md
                   - name: 权利管理设置
                     href: resources/entitlementmanagementsettings.md
                     items:
