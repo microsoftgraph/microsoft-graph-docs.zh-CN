@@ -5,12 +5,12 @@ localization_priority: Priority
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d11d5043e759900810315d4b3e3af8310cb996f0
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: ef54be828c9094c76c215c66c79fd2c1453503dc
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934904"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757228"
 ---
 # <a name="profilephoto-resource-type"></a>profilePhoto 资源类型
 
@@ -57,7 +57,6 @@ Exchange Online 支持的 HD 照片大小如下所示：'48x48'、'64x64'、'96x
   "height": 240,
   "width": 240
 }
-
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
