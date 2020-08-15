@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 93f86256e1e3a136bf9ea3f83bfd143614a96f62
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 8e994defe16659cafa94c259fe41a54ff2cfed6c
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566156"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757243"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
@@ -59,10 +59,12 @@ ms.locfileid: "46566156"
   "attendees": [{"@odata.type": "microsoft.graph.attendee"}],
   "body": {"@odata.type": "microsoft.graph.itemBody"},
   "bodyPreview": "string",
+  "cancelledOccurrences":["string"],
   "categories": ["string"],
   "changeKey": "string",
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "exceptionOccurrences":["string"],
   "hasAttachments": true,
   "uid": "string",
   "id": "string (identifier)",
@@ -76,6 +78,7 @@ ms.locfileid: "46566156"
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
   "locations": [{"@odata.type": "microsoft.graph.location"}],
+  "occurrenceId":"string",
   "onlineMeeting": {"@odata.type": "microsoft.graph.onlineMeetingInfo"},
   "onlineMeetingProvider": "string",
   "onlineMeetingUrl": "string",
@@ -111,10 +114,12 @@ ms.locfileid: "46566156"
 |attendees|[Attendee](attendee.md) 集合|事件的与会者集合。|
 |body|[ItemBody](itembody.md)|与事件相关联的邮件正文。可以是 HTML 格式或文本格式。|
 |bodyPreview|字符串|与事件相关联的邮件预览。文本格式。|
+|cancelledOccurrences|字符串集合|包含定期系列中已取消实例的 **occurrenceId** 属性值（如果该事件为系列母版事件）。 定期系列中已取消的实例称为 cancelledOccurences。<br><br>仅在 [Get](../api/event-get.md) 操作的 $select 中返回，该操作指定系列母版事件（即 seriesMasterId 属性值）的 ID。|
 |categories|String collection|与事件相关联的类别。 每个类别对应于为用户定义的 [outlookCategory](outlookcategory.md) 的 **displayName** 属性。|
 |changeKey|String|标识 event 对象的版本。每次事件更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|事件结束的日期、时间和时区。 默认情况下，结束时间为 UTC 时间。|
+|exceptionOccurrences|字符串集合|包含定期系列中的例外事件实例的 **id** 属性值。<br>例外可能不同于定期系列中的其他事件，如主题、开始或结束时间或与会者。 例外不包括已取消的事件。<br><br>仅在 [Get](../api/event-get.md) 操作的 $select 和 $expand 中返回，该操作指定系列母版事件（即 seriesMasterId 属性值）的 ID。|
 |hasAttachments|Boolean|如果事件包含附件，则设置为 true。|
 |id|String| 事件的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] 只读。 |
 |importance|String|事件的重要性。 可取值为：`low`、`normal`、`high`。|
@@ -127,6 +132,7 @@ ms.locfileid: "46566156"
 |lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |位置|[位置](location.md)|事件的位置。|
 |位置|[location](location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
+|occurrenceId|字符串|定期事件系列中的事件的标识符。 如果该事件不属于定期系列，则为 Null。<br><br>属性值的格式为 OID.{seriesMasterId-value}.{occurrence-start-date}。 {occurrence-start-date} 的时区是为相应 [recurrenceRange](recurrencerange.md) 定义的 recurrenceTimeZone 属性。<br><br>此属性可以识别定期系列中的任何事件，包括已修改或已取消的事件。 可使用此属性执行定期系列中的事件所支持的所有操作。|
 |onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| 关于与会者如何加入联机会议的详细信息。 默认值为 Null。 只读。 <br>设置 **isOnlineMeeting** 和 **onlineMeetingProvider** 属性以启用联机会议后，Microsoft Graph 将初始化 **onlineMeeting**。 设置后，会议仍保持联机，并且不能再次更改 **isOnlineMeeting**、**onlineMeetingProvider** 和 **onlneMeeting** 属性。|
 |onlineMeetingProvider|onlineMeetingProviderType| 表示联机会议服务提供商。 默认情况下，**onlineMeetingProvider** 为 `unknown`。 可取值为：`unknown`、`teamsForBusiness`、`skypeForBusiness` 和 `skypeForConsumer`。 可选。 <br> 设置 **isOnlineMeeting** 后，Microsoft Graph 将初始化 **onlineMeeting**。 随后，你不能再次更改 **onlineMeetingProvider**，并且会议仍保持联机。 |
 |onlineMeetingUrl|String|联机会议的 URL。 仅当组织者在 Outlook 中将事件指定为联机会议（如 Skype）才会设置此属性。 只读。<br>若要访问 URL 参加联机会议，请使用通过 **event** 的 **onlineMeeting** 属性公开的 **joinUrl**。 未来即将弃用 **onlineMeetingUrl** 属性。 |
@@ -168,7 +174,7 @@ ms.locfileid: "46566156"
 |attachments|[Attachment](attachment.md) 集合|事件的 [FileAttachment](fileattachment.md)、[ItemAttachment](itemattachment.md) 和 [referenceAttachment](referenceattachment.md) 附件的集合。 导航属性。 只读。 可为 Null。|
 |日历|[Calendar](calendar.md)|包含 event. Navigation 属性的日历。只读。|
 |extensions|[Extension](extension.md) 集合|为事件定义的开放扩展集合。可为空。|
-|实例|[Event](event.md) 集合|事件的实例。导航属性。只读。可为空。|
+|实例|[Event](event.md) 集合|定期系列的出现次数（如果该事件是系列母版事件）。 此属性包括定期模式的组成事件和已修改的例外，但不包括已从系列中取消的事件。 导航属性。 只读。 可为 Null。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为事件定义的多值扩展属性的集合。只读。可为 Null。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为事件定义的单值扩展属性的集合。只读。可为空。|
 

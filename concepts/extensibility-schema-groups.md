@@ -1,23 +1,23 @@
 ---
 title: '使用架构扩展向组添加自定义数据 '
-description: '我们将通过一个示例逐步介绍如何使用*架构扩展*。 '
+description: '本文将通过一个示例逐步介绍如何使用*架构扩展*。 '
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 57d23792583046afe3e00d2b2f549ccdf821c0a7
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 2e4dcaba5c02c4479c9a7a38b7471ccd390b59a1
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969757"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757047"
 ---
 # <a name="add-custom-data-to-groups-using-schema-extensions"></a>使用架构扩展向组添加自定义数据 
 
-我们将引导你完成一个示例，演示如何使用*架构扩展*。 
+本文将通过一个示例逐步介绍如何使用*架构扩展*。 
 
-假设你是一个名为“Graph Learn”的学习管理软件公司的开发人员，工作是为企业构建培训课程和材料。Office 365 组具有丰富的协作体验，是为在线课程和教师引导式课程的参与者提供交付课程内容和记录练习的绝佳方式。你可能希望将那些 Office 365 组用于使培训课程可轻松地被识别为培训课程，从而使其他开发人员可以发现你的组，并在你的学习课程的基础上构建丰富的体验。
+假设你是一个名为“Graph Learn”的学习管理软件公司的开发人员，工作是为企业构建培训课程和材料。Microsoft 365 组具有丰富的协作体验，是为在线课程和教师引导式课程的参与者提供交付课程内容和记录练习的绝佳方式。你可能希望将那些 Microsoft 365 组用于使培训课程可轻松地被识别为培训课程，从而使其他开发人员可以发现你的组，并在你的学习课程的基础上构建丰富的体验。
 
-针对这种应用场景，我们将介绍如何操作：
+在此情况下，本文将介绍如何：
 
 1. 查看可以使用的可用架构扩展定义。
 2. 注册以培训课程组为目标的架构扩展定义。
@@ -25,7 +25,7 @@ ms.locfileid: "37969757"
 4. 根据架构扩展定义向现有组添加、更新或删除自定义数据。
 5. 读回组和扩展数据。
 
->**注意：** 本主题介绍如何在**组**资源上创建和读取架构扩展值（步骤 3-5）。**管理单元**、**设备**、**事件**、**邮件**、**组织**、**帖子**和**用户**资源类型也支持相同方法。因此，可以对任意资源执行与以下示例请求相似的操作。请注意，**administrativeUnit** 仅适用于 beta 终结点。
+>**注意：** 本主题介绍如何在**组**资源上创建和读取架构扩展值（步骤 3-5）。**管理单元**、**设备**、**事件**、**邮件**、**组织**、**帖子**和**用户**资源类型也支持相同方法。你可以对任意资源执行与本文中的请求示例相似的操作。请注意，**administrativeUnit** 仅适用于 beta 终结点。
 
 ## <a name="1-view-available-schema-extensions"></a>1.查看可用的架构扩展
 首先，作为开发人员，可能希望找到应用可以重复使用的任何其他架构扩展定义。这可以通过查询 **schemaExtension** 资源来完成。  
@@ -34,11 +34,11 @@ ms.locfileid: "37969757"
 请注意响应中返回的扩展将**可用**作为**状态**值，即表示具有 **targetTypes** 属性中的资源访问权限的所有应用都可使用此扩展并通过增量更改更新此扩展。通常，无论**状态**如何，此操作都将返回满足指定筛选器的所有架构扩展，因此在使用扩展前请务必先检查其状态。
 
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 ```http
 GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id eq 'graphlearn_test'
 ```
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -74,7 +74,7 @@ Content-length: 420
 
 请注意，初次创建架构扩展时，其状态是 **InDevelopment**。在开发扩展期间，可以将其保持在此状态，在此期间仅创建该扩展的应用可以使用增量更改更新它或将其删除。准备共享此扩展以供其他应用使用时，请将**状态**设置为**可用**
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 ```http
 POST https://graph.microsoft.com/v1.0/schemaExtensions
 Content-type: application/json
@@ -100,7 +100,7 @@ Content-type: application/json
     ]
 }
 ```
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -133,7 +133,7 @@ Content-length: 420
 ## <a name="3-create-a-new-group-with-extended-data"></a>3.创建具有扩展数据的新组 
 使用我们刚刚注册的 `graphlearn_courses` 架构扩展定义创建一个_新_组并使用额外数据进行扩展。这是**组**资源的标准 ```POST```，其他 `graphlearn_courses` 复杂类型扩展在请求正文中定义。响应将不会返回任何数据扩展的镜像。我们需要使用 ```GET``` 操作按名称显式 ```$select``` 扩展。
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 ```http
 POST https://graph.microsoft.com/v1.0/groups
 Content-type: application/json
@@ -151,7 +151,7 @@ Content-type: application/json
     }
 }
 ```
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -176,7 +176,7 @@ Content-length: 420
 ## <a name="4-add-update-or-remove-custom-data-in-an-existing-group"></a>4.在现有组中添加、更新或删除自定义数据
 可以使用在 ```PATCH``` 请求的正文中定义的其他 `graphlearn_courses` 复杂类型扩展来扩展自定义数据并将其添加到_现有_组实例。  
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/dfc8016f-db97-4c47-a582-49cb8f849355
 Content-type: application/json
@@ -189,7 +189,7 @@ Content-length: 230
     }   
 }
 ```
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -208,14 +208,14 @@ HTTP/1.1 204 No Content
 
 下面的示例查找了具有 `graphlearn_courses` 扩展且 `courseId` 属性值与 `123` 相匹配的组，获取了组属性 **displayName**、 **id** 和 **description**，以及 `graphlearn_courses` 扩展中的自定义数据。（在实际查询中，请确保根据需要应用 URL 编码。）
 
-#### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 ```http
 GET https://graph.microsoft.com/v1.0/groups?$filter=graphlearn_courses/courseId eq ‘123’&$select=displayName,id,description,graphlearn_courses
 ```
 
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -241,8 +241,8 @@ Content-length: 326
 
 - [使用扩展向资源添加自定义数据](extensibility-overview.md)
 - [使用开放扩展向用户添加自定义数据（预览）](extensibility-open-users.md)
-- [Office 365 域](https://technet.microsoft.com/library/office-365-domains.aspx)
-- [添加并验证新 Office 365 的域](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
+- [Microsoft 365 域](https://technet.microsoft.com/library/office-365-domains.aspx)
+- [添加并验证新 Microsoft 365 的域](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [schemaExtension 资源类型](/graph/api/resources/schemaextension?view=graph-rest-1.0)
 - [列出 schemaExtension](/graph/api/schemaextension-list?view=graph-rest-1.0)
 - [创建 schemaExtension](/graph/api/schemaextension-post-schemaextensions?view=graph-rest-1.0)

@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: d162d4278912f4a3ef3eb23de001915736f0c304
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: ece8059ee0a627ed679488516634216ec7e51f52
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674421"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757141"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -22,6 +22,12 @@ ms.locfileid: "46674421"
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | Beta | 向 [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) 资源添加了 “[passwordSingleSignOnSettings](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta)” 属性。
+
+### <a name="calendar"></a>日历
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | beta | 向 [event](/graph/api/resources/event?view=graph-rest-beta) 实体添加了 **cancelledOccurrences**、**exceptionOccurrences** 和 **occurrenceId** 属性。
 
 ### <a name="change-notifications"></a>更改通知
 
@@ -45,6 +51,7 @@ ms.locfileid: "46674421"
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | beta | 在[使用条款协议中添加了下列属性](/graph/api/resources/agreement?view=graph-rest-beta):<ul><li>isPerDeviceAcceptanceRequired</li><li>termsExpiration</li><li>userReacceptRequiredFrequency</li></ul>|
 | 添加项 | beta | 已将新资源类型添加到 [使用条款协议](/graph/api/resources/agreement?view=graph-rest-beta)：</br>[agreementFile](/graph/api/resources/agreementfile?view=graph-rest-beta)|
+| 添加项 | beta | 向权利管理添加了 [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta) 内部和外部发起人。  |
 
 ### <a name="reports--microsoft-365-usage-reports"></a>报告 | Microsoft 365 使用情况报告
 
@@ -54,13 +61,14 @@ ms.locfileid: "46674421"
 | 添加项 | beta | 添加了 [getM365AppUserCounts](/graph/api/reportRoot-getM365AppUserCounts?view=graph-rest-beta) 方法。 |
 | 添加项 | beta | 添加了 [getM365AppPlatformUserCounts](/graph/api/reportRoot-getM365AppPlatformUserCounts?view=graph-rest-beta) 方法。 |
 
-### <a name="teamwork"></a>团队合作 
+### <a name="teamwork"></a>团队合作
 
 | **更改类型** | **版本** | **说明** |
 |:---|:---|:---|
 |添加项|beta|向 [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta) 资源添加了 **contentBytes** 属性。|
 |添加项|beta|向 [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta) 资源添加了 **contentType** 属性。|
 |添加项|beta|向 [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta) 资源添加了发送嵌入式图形的支持。|
+|添加项|beta|向 [team](/graph/api/resources/team?view=graph-rest-beta) 资源添加了 **isMembershipLimitedToOwners** 属性。|
 
 ## <a name="july-2020"></a>2020 年 7 月
 
@@ -174,6 +182,7 @@ ms.locfileid: "46674421"
 | 添加项        | v1.0        | 向 [servicePrincipal](/graph/api/serviceprincipal-delta) 添加了 [delta 查询](delta-query-overview.md)功能。 |
 | 添加项 | beta | [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta) 已添加到权利管理。  |
 | 添加项        | v1.0        | 为 [oauth2PermissionGrant](/graph/api/oauth2Permissiongrant-delta) 添加了 [delta 查询](delta-query-overview.md)功能。 |
+| 添加项 | beta | 向权利管理[访问包](/graph/api/resources/accesspackage?view=graph-rest-beta)、[访问包目录](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta)和[访问包分配策略](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta)添加了更新操作|
 | 添加项 | Beta | 已将新属性 **isAssignableToRole** 添加到 [组](/graph/api/resources/group?view=graph-rest-beta)。|
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
@@ -1233,7 +1242,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |更改类型|版本|说明|
 |:---|:---|:---|
 |Addition|beta|添加的新实体：<br/>[deviceHealthScriptAssignment](/graph/api/resources/intune-devices-devicehealthscriptassignment?view=graph-rest-beta)<br/>[deviceHealthScriptDeviceState](/graph/api/resources/intune-devices-devicehealthscriptdevicestate?view=graph-rest-beta)<br/>[deviceHealthScriptRunSummary](/graph/api/resources/intune-devices-devicehealthscriptrunsummary?view=graph-rest-beta)<br/>[deviceManagementCachedReportConfiguration](/graph/api/resources/intune-reporting-devicemanagementcachedreportconfiguration?view=graph-rest-beta)<br/>[deviceManagementExportJob](/graph/api/resources/intune-reporting-devicemanagementexportjob?view=graph-rest-beta)<br/>[deviceManagementReports](/graph/api/resources/intune-reporting-devicemanagementreports?view=graph-rest-beta)<br/>[deviceManagementReportSchedule](/graph/api/resources/intune-reporting-devicemanagementreportschedule?view=graph-rest-beta)<br/>[groupPolicyMigrationReport](/graph/api/resources/intune-gpanalyticsservice-grouppolicymigrationreport?view=graph-rest-beta)<br/>[groupPolicySettingMapping](/graph/api/resources/intune-gpanalyticsservice-grouppolicysettingmapping?view=graph-rest-beta)<br/>[macOSMicrosoftEdgeApp](/graph/api/resources/intune-apps-macosmicrosoftedgeapp?view=graph-rest-beta)<br/>[macOSPkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-macospkcscertificateprofile?view=graph-rest-beta)<br/>[userExperienceAnalyticsDevicePerformance](/graph/api/resources/intune-devices-userexperienceanalyticsdeviceperformance?view=graph-rest-beta)<br/>[userExperienceAnalyticsDeviceStartupHistory](/graph/api/resources/intune-devices-userexperienceanalyticsdevicestartuphistory?view=graph-rest-beta)<br/>[userExperienceAnalyticsRegressionSummary](/graph/api/resources/intune-devices-userexperienceanalyticsregressionsummary?view=graph-rest-beta)<br/>[windowsDefenderApplicationControlSupplementalPolicy](/graph/api/resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy?view=graph-rest-beta)<br/>[windowsDefenderApplicationControlSupplementalPolicyAssignment](/graph/api/resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment?view=graph-rest-beta)<br/>[windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus](/graph/api/resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus?view=graph-rest-beta)<br/>[windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary](/graph/api/resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary?view=graph-rest-beta)<br/>[windowsMicrosoftEdgeApp](/graph/api/resources/intune-apps-windowsmicrosoftedgeapp?view=graph-rest-beta)<br/>|
-|添加|beta|新增了复杂类型：<br/>[androidDeviceOwnerGlobalProxy](/graph/api/resources/intune-deviceconfig-androiddeviceownerglobalproxy?view=graph-rest-beta)<br/>[androidDeviceOwnerGlobalProxyAutoConfig](/graph/api/resources/intune-deviceconfig-androiddeviceownerglobalproxyautoconfig?view=graph-rest-beta)<br/>[androidDeviceOwnerGlobalProxyDirect](/graph/api/resources/intune-deviceconfig-androiddeviceownerglobalproxydirect?view=graph-rest-beta)<br/>[groupPolicyObjectFile](/graph/api/resources/intune-gpanalyticsservice-grouppolicyobjectfile?view=graph-rest-beta)<br/>[mobileAppInstallTimeSettings](/graph/api/resources/intune-shared-mobileappinstalltimesettings?view=graph-rest-beta)<br/>[scopeTagInfo](/graph/api/resources/intune-auditing-scopetaginfo?view=graph-rest-beta)<br/>[win32LobAppRestartSettings](/graph/api/resources/intune-shared-win32lobapprestartsettings?view=graph-rest-beta)<br/>|
+|添加项|beta|新增了复杂类型：<br/>[androidDeviceOwnerGlobalProxy](/graph/api/resources/intune-deviceconfig-androiddeviceownerglobalproxy?view=graph-rest-beta)<br/>[androidDeviceOwnerGlobalProxyAutoConfig](/graph/api/resources/intune-deviceconfig-androiddeviceownerglobalproxyautoconfig?view=graph-rest-beta)<br/>[androidDeviceOwnerGlobalProxyDirect](/graph/api/resources/intune-deviceconfig-androiddeviceownerglobalproxydirect?view=graph-rest-beta)<br/>[groupPolicyObjectFile](/graph/api/resources/intune-gpanalyticsservice-grouppolicyobjectfile?view=graph-rest-beta)<br/>[mobileAppInstallTimeSettings](/graph/api/resources/intune-shared-mobileappinstalltimesettings?view=graph-rest-beta)<br/>[scopeTagInfo](/graph/api/resources/intune-auditing-scopetaginfo?view=graph-rest-beta)<br/>[win32LobAppRestartSettings](/graph/api/resources/intune-shared-win32lobapprestartsettings?view=graph-rest-beta)<br/>|
 |添加|beta 版本|添加的新枚举类型：<br/>[deviceManagementReportFileFormat](/graph/api/resources/intune-reporting-devicemanagementreportfileformat?view=graph-rest-beta)<br/>[deviceManagementReportStatus](/graph/api/resources/intune-reporting-devicemanagementreportstatus?view=graph-rest-beta)<br/>[deviceManagementScheduledReportRecurrence](/graph/api/resources/intune-reporting-devicemanagementscheduledreportrecurrence?view=graph-rest-beta)<br/>[diskType](/graph/api/resources/intune-devices-disktype?view=graph-rest-beta)<br/>[groupPolicyMigrationReadiness](/graph/api/resources/intune-gpanalyticsservice-grouppolicymigrationreadiness?view=graph-rest-beta)<br/>[groupPolicySettingScope](/graph/api/resources/intune-gpanalyticsservice-grouppolicysettingscope?view=graph-rest-beta)<br/>[groupPolicySettingType](/graph/api/resources/intune-gpanalyticsservice-grouppolicysettingtype?view=graph-rest-beta)<br/>[managedAppDeviceThreatLevel](/graph/api/resources/intune-mam-managedappdevicethreatlevel?view=graph-rest-beta)<br/>[microsoftEdgeChannel](/graph/api/resources/intune-apps-microsoftedgechannel?view=graph-rest-beta)<br/>[remediationState](/graph/api/resources/intune-devices-remediationstate?view=graph-rest-beta)<br/>[userExperienceAnalyticsSummarizedBy](/graph/api/resources/intune-devices-userexperienceanalyticssummarizedby?view=graph-rest-beta)<br/>[win32LobAppRestartBehavior](/graph/api/resources/intune-apps-win32lobapprestartbehavior?view=graph-rest-beta)<br/>[windowsDefenderApplicationControlSupplementalPolicyStatuses](/graph/api/resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses?view=graph-rest-beta)<br/>|
 |添加|beta|在 [androidManagedStoreAccountEnterpriseSettings](/graph/api/resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings?view=graph-rest-beta) 上添加了 [approveApps](/graph/api/api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-approveapps?view=graph-rest-beta) 操作 |
 |添加|beta|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 集合上添加了 [executeAction](/graph/api/api/intune-devices-manageddevice-executeaction?view=graph-rest-beta) 操作 |

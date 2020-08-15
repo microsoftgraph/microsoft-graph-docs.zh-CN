@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5bc7a2d7b1684873f655bb83455d543f39a10254
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: e9f7340b08b65bb1e86bf5ce2a5be5f525662e41
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080861"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757266"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -61,6 +61,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |discoverySettings|[teamDiscoverySettings](teamdiscoverysettings.md) |用于让他人配置团队可发现性的设置。|
 |webUrl|string (readonly) | 用于转到 Microsoft Teams 客户端中团队的超链接。 这是在 Microsoft Teams 客户端中右键单击团队并选择**获取团队链接**时获取的 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 |
 |classSettings|[teamClassSettings](teamclasssettings.md) |配置班级设置。 仅当团队代表班级时可用。|
+|isMembershipLimitedToOwners|布尔值|如果设置为“`true`”，则团队当前处于“仅所有者”团队成员身份状态，且其他团队成员（如学生）不可访问。|
 
 ## <a name="relationships"></a>关系
 
@@ -103,7 +104,8 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
   "classification": "string",
   "specialization": "string",
   "visibility": "string",
-  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"}
+  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
+   "isMembershipLimitedToOwners":"boolean"
 }
 ```
 
