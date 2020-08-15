@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 22f72f23d0521b6e78e4d776b0e5e0288ebba46a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bf7fb031372c6dd512061f09abb15b1acbf5933f
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43365509"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757165"
 ---
 # <a name="get-event"></a>获取事件
 
@@ -20,12 +20,12 @@ ms.locfileid: "43365509"
 
 获取指定的 [event](../resources/event.md) 对象的属性和关系。
 
-在下列两种情况下，应用程序可获取其他用户的日历中的事件：
+如果以下情况，应用可以在其他用户的日历中获取事件：
 
-* 如果该应用具有应用程序权限，或者
-* 如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了日历，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。
+* 应用程序具有应用程序权限
+* 应用具有来自一个用户的相应委派 [权限](#permissions) ，另一个用户已与该用户共享日历，或者已向该用户授予了访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。
 
-由于 **event** 资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取**事件**实例中的自定义属性和扩展数据。
+由于 **事件** 资源支持 [扩展](/graph/extensibility-overview)，因此您还可以使用 `GET` 操作获取 **事件** 实例中的自定义属性和扩展数据。
 
 
 ### <a name="support-various-time-zones"></a>支持不同时区
@@ -71,11 +71,11 @@ GET /me/calendargroups/{id}/calendars/{id}/events/{id}
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | 字符串  | Bearer {token}。必需。 |
+| Authorization  | string  | Bearer {token}。必需。 |
 | Prefer: outlook.timezone | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |
 | Prefer: outlook.body-content-type | string | 要返回的 **body** 属性的格式。 可取值为“text”或“html”。 如果指定此 `Preference-Applied` 头，返回 `Prefer` 头作为证明。 如果未指定此头，采用 HTML 格式返回 **body** 属性。 可选。 |
 
@@ -85,9 +85,11 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [event](../resources/event.md) 对象。
-## <a name="example"></a>示例
-##### <a name="request-1"></a>请求 1
-第一个示例获取指定的事件。它指定以下内容：
+## <a name="examples"></a>示例
+
+### <a name="example-1-get-a-specified-event"></a>示例1：获取指定事件
+#### <a name="request"></a>请求
+下面的示例获取指定的事件。它指定以下内容：
 
 - 获取以太平洋标准时间格式返回的日期时间值的 `Prefer: outlook.timezone` 标头。 
 - 返回特定属性的 `$select` 查询参数。如果没有 `$select` 参数，将返回所有事件属性。
@@ -118,8 +120,8 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ---
 
-##### <a name="response-1"></a>响应 1
-下面是一个响应示例。 由于未指定任何 `Prefer: outlook.body-content-type` 标头，将以默认 HTML 格式返回 **body** 属性。 
+#### <a name="response"></a>响应
+下面是一个响应示例。由于未 `Prefer: outlook.body-content-type` 指定标头，因此 **body** 属性以默认的 HTML 格式返回。 
 
 <!-- {
   "blockType": "response",
@@ -205,9 +207,9 @@ Content-length: 1928
     }
 }
 ```
-
-##### <a name="request-2"></a>请求 2
-第二个示例演示如何使用`Prefer: outlook.body-content-type="text"`标头以文本格式获取指定事件的**body**属性。
+### <a name="example-2-get-the-body-property-in-text-format"></a>示例2：获取文本格式的 body 属性
+#### <a name="request"></a>请求
+下面的示例演示如何使用 `Prefer: outlook.body-content-type="text"` 标头以文本格式获取指定事件的 **body** 属性。
 
 该请求还使用 `$select` 查询参数返回特定属性。 如果没有 `$select` 参数，将返回所有事件属性。
 
@@ -235,7 +237,7 @@ Prefer: outlook.body-content-type="text"
 
 ---
 
-##### <a name="response-2"></a>响应 2
+#### <a name="response"></a>响应
 下面是一个响应示例。 以文本格式返回 **body** 属性。 
 
 <!-- {
@@ -263,10 +265,10 @@ Content-length: 636
 }
 ```
 
+### <a name="example-3-get-an-event-that-specifies-more-than-one-location"></a>示例3：获取一个指定多个位置的事件
+#### <a name="request"></a>请求
 
-##### <a name="request-3"></a>请求 3
-
-第三个示例演示如何获取一个指定多个位置的事件。 该请求指定返回特定属性的 `$select` 查询参数。 
+下面的示例演示如何获取一个指定多个位置的事件。 该请求指定返回特定属性的 `$select` 查询参数。 
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -291,10 +293,10 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=sub
 
 ---
 
-##### <a name="response-3"></a>响应 3
+#### <a name="response"></a>响应
 下面是一个响应示例。 **locations** 属性包括组织事件的 3 个地点的详细信息。 
 
-由于请求未指定`Prefer: outlook.timezone` any 或`Prefer: outlook.body-content-type`标头，因此**开始**和**结束**属性显示在默认的 UTC 时区中，而正文采用的是默认的 HTML 格式。  
+由于请求未指定 any `Prefer: outlook.timezone` 或 `Prefer: outlook.body-content-type` 标头，因此 **开始** 和 **结束** 属性显示在默认的 UTC 时区中，而正文采用的是默认的 HTML 格式。  
 
 <!-- {
   "blockType": "response",
@@ -393,12 +395,74 @@ Content-length: 1992
   }
 }
 ```
+### <a name="example-4-expand-a-series-master-event"></a>示例4：展开 "系列主数据" 事件
+#### <a name="request"></a>请求
+
+下面的示例展示了如何扩展定期系列的 "系列主事件" 以及异常和已取消的实例。 该请求指定返回特定属性的 `$select` 查询参数。 
+
+<!-- {
+  "blockType": "request",
+  "name": "get_event_seriesMaster_expansion"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences$expand=exceptionOccurrences
+```
+#### <a name="response"></a>响应
+GET 操作返回系列主事件的选定属性。 具体来说，对于 **exceptionOccurrences** 集合中的事件，该操作将返回 **id** 属性，以及适用的选定属性 (**subject**、 **start**、 **end**、 **occurrenceId**) 。 对于 **cancelledOccurrences** 集合中的事件，因为这些事件不再存在，该操作将仅返回其 **occurrenceId** 属性值。
+
+<!-- {
+  "blockType": "response",
+  "name": "get_event_seriesMaster_expansion",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1992
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences)/$entity",
+  "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
+  "id":"AAMkADAGAADDdm4NAAA=",
+  "subject": "Daily stand-up",
+  "cancelledOccurrences": [
+     "OID.AAMkADAGAADDdm4NAAA=.2020-04-30",
+     "OID.AAMkADAGAADDdm4NAAA=.2020-05-07",
+     "OID.AAMkADAGAADDdm4NAAA=.2020-05-14"
+    ],
+  "occurrenceId": null,
+    "start": {
+        "dateTime": "2020-04-23T11:30:00.0000000",
+        "timeZone": "UTC"
+    },
+  "end": {
+        "dateTime": "2020-04-23T12:00:00.0000000",
+        "timeZone": "UTC"
+    },
+  "exceptionOccurrences": [
+        {
+            "id": "AAMkADM0ZGRhMjdjLTA==",
+            "Subject": "SM update 24",
+            "occurrenceId": "OID.AAMkADAGAADDdm4NAAA=.2020-05-21",
+            "start": {
+                "dateTime": "2020-05-21T11:30:00.0000000",
+                "timeZone": "UTC"
+            },
+            "end": {
+                "dateTime": "2020-05-21T12:00:00.0000000",
+                "timeZone": "UTC"
+            }
+        }
+    ]
+}
+```
 
 ## <a name="see-also"></a>另请参阅
 
 - [使用扩展向资源添加自定义数据](/graph/extensibility-overview)
-- [使用开放扩展向用户添加自定义数据（预览）](/graph/extensibility-open-users)
-- [使用架构扩展向组添加自定义数据（预览）](/graph/extensibility-schema-groups)
+- [使用开放扩展向用户添加自定义数据](/graph/extensibility-open-users)
+- [使用架构扩展向组添加自定义数据](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

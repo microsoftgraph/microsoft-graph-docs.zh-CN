@@ -5,46 +5,47 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 66b7939541ba57dafc3be852c82c89781fc82381
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5e5066337ef88db6a036839ebcbfd454e7710f3a
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508532"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757200"
 ---
 # <a name="accesspackagecatalog-resource-type"></a>accessPackageCatalog 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包目录是零个或多个 access 程序包的容器。  访问包目录还可能具有在这些访问包中使用的链接资源，以提供访问权限。
+在 [AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包目录是零个或多个 access 程序包的容器。  访问包目录还可能具有在这些访问包中使用的链接资源，以提供访问权限。
 
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出 accessPackageCatalogs](../api/accesspackagecatalog-list.md) | [accessPackageCatalog](accesspackagecatalog.md)集合 | 检索 accesspackagecatalog 对象的列表。 |
+| [列出 accessPackageCatalogs](../api/accesspackagecatalog-list.md) | [accessPackageCatalog](accesspackagecatalog.md) 集合 | 检索 accesspackagecatalog 对象的列表。 |
 | [创建 accessPackageCatalog](../api/accesspackagecatalog-post.md) | [accessPackageCatalog](accesspackagecatalog.md) | 创建新的 accessPackageCatalog 对象。 |
 | [获取 accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | 读取 accessPackageCatalog 对象的属性和关系。 |
+| [更新 accessPackageCatalog](../api/accesspackagecatalog-update.md)|无 | 更新 accessPackageCatalog 对象的属性。 |
 | [删除 accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | 删除 accessPackageCatalog。 |
-| [列出 accessPackageCatalog 资源](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md)集合 | 检索目录中的 accessPackageResource 对象的列表。 |
-| [列出 accessPackageCatalog 资源角色](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md)集合 | 检索目录中资源的 accessPackageResourceRole 对象的列表。 |
+| [列出 accessPackageCatalog 资源](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md) 集合 | 检索目录中的 accessPackageResource 对象的列表。 |
+| [列出 accessPackageCatalog 资源角色](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md) 集合 | 检索目录中资源的 accessPackageResourceRole 对象的列表。 |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|catalogStatus|String|如果访问包`Published`可用于管理，则具有值。|
-|catalogType|String|一个`UserManaged`或`ServiceDefault`。 |
+|catalogStatus|字符串|`Published`如果访问包可用于管理，则具有值。|
+|catalogType|字符串|一个 `UserManaged` 或 `ServiceDefault` 。 |
 |createdBy|String|创建此资源的用户的 UPN。 只读。|
 |createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
-|说明|String|访问包目录的说明。|
-|displayName|String|访问包目录的显示名称。|
+|说明|字符串|访问包目录的说明。|
+|displayName|字符串|访问包目录的显示名称。|
 |id|字符串| 只读。|
-|isExternallyVisible|布尔|租户外部的用户是否可以请求此目录中的访问程序包。|
-|modifiedBy|String|上次修改此资源的用户的 UPN。 只读。|
+|isExternallyVisible|Boolean|租户外部的用户是否可以请求此目录中的访问程序包。|
+|modifiedBy|字符串|上次修改此资源的用户的 UPN。 只读。|
 |modifiedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
 
 
@@ -52,8 +53,8 @@ ms.locfileid: "42508532"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|accessPackages|[accessPackage](accesspackage.md)集合| 此目录中的访问包。 此为只读属性。 可为 NULL。|
-|accessPackageResources|[accessPackageResource](accesspackageresource.md)集合| 只读。可为空。|
+|accessPackages|[accessPackage](accesspackage.md) 集合| 此目录中的访问包。 只读。 可为 NULL。|
+|accessPackageResources|[accessPackageResource](accesspackageresource.md) 集合| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

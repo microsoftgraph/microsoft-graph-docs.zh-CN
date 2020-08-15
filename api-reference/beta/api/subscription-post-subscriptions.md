@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 43be4878353000d27a50b0f7215aa343f0a195c7
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 8f1392e8539f20c0480f9c4604119b5fdf4cbb16
+ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673822"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757298"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -51,7 +51,8 @@ ms.locfileid: "46673822"
 
 具有应用程序权限的**了 chatmessage**订阅包括资源数据，并需要[加密](/graph/webhooks-with-resource-data)。 如果未指定 [encryptionCertificate](../resources/subscription.md) ，则订阅创建将失败。 在创建 **了 chatmessage** 订阅之前，您必须请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。 
 
-> **注意：** `/teams/allMessages` 并且 `/chats/allMessages` 当前处于预览阶段，您可以在不付费的情况下使用此 API，这取决于 [Microsoft api 使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context)。 从8月2020开始，它将仅适用于具有 [所需许可证](/graph/teams-licenses)的用户和租户。 由于 `/teams/allMessages` 和 `/chats/allMessages` 为租户中的所有用户传递通知，因此租户中的所有用户都必须获得许可。 将来，Microsoft 可能会要求您或您的客户根据通过 API 访问的数据量支付额外的费用。
+> **注意：** `/teams/allMessages` 并且 `/chats/allMessages` 当前处于预览阶段，您可以在不付费的情况下使用此 API，这取决于 [Microsoft api 使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context)。 从8月2020开始，它将仅适用于具有 [所需许可证](/graph/teams-licenses)的用户和租户。 由于 `/teams/allMessages` 并 `/chats/allMessages` 为租户中的所有用户传递通知，因此租户中的所有用户都必须获得许可; 尝试创建没有适当许可证的订阅将导致401错误代码。
+将来，Microsoft 可能会要求您或您的客户根据通过 API 访问的数据量支付额外的费用。
 
 ### <a name="driveitem"></a>driveItem
 
