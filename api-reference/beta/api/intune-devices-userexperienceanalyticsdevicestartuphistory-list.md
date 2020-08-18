@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 78e6f455625b3e21a5d09c2a70848c972dcd9a71
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 460e96c313d5231ec3059cc01f269430dc1deaae
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43379497"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791335"
 ---
 # <a name="list-userexperienceanalyticsdevicestartuphistories"></a>列出 userExperienceAnalyticsDeviceStartupHistories
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)对象的属性和关系。
+列出 [userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,7 +50,7 @@ GET /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 675
+Content-Length: 722
 
 {
   "value": [
@@ -84,7 +84,8 @@ Content-Length: 675
       "totalLoginTimeInMs": 2,
       "isFirstLogin": true,
       "isFeatureUpdate": true,
-      "operatingSystemVersion": "Operating System Version value"
+      "operatingSystemVersion": "Operating System Version value",
+      "restartCategory": "restartWithUpdate"
     }
   ]
 }

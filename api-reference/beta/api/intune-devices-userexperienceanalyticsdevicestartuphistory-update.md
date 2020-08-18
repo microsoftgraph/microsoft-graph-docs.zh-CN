@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e53a0fc864fe87a69dafbbfcc789deda52ce7da1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3828ebf8a122d6c190a200e5e24625b25cd33859
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380175"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791342"
 ---
 # <a name="update-userexperienceanalyticsdevicestartuphistory"></a>更新 userExperienceAnalyticsDeviceStartupHistory
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)对象的属性。
+更新 [userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,13 +47,13 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperie
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)对象的 JSON 表示形式。
+在请求正文中，提供 [userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) 对象的 JSON 表示形式。
 
-下表显示创建[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)时所需的属性。
+下表显示创建 [userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|User experience analytics 设备启动历史记录的唯一标识符。|
+|id|String|User experience analytics 设备启动历史记录的唯一标识符。|
 |deviceId|String|User experience analytics 设备 id。|
 |startTime|DateTimeOffset|用户体验分析设备启动开始时间。|
 |coreBootTimeInMs|Int32|User experience analytics device core boot time （以毫秒为单位）。|
@@ -64,14 +64,15 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperie
 |coreLoginTimeInMs|Int32|User experience analytics device core login time （以毫秒为单位）。|
 |responsiveDesktopTimeInMs|Int32|用户体验分析响应桌面时间（以毫秒为单位）。|
 |totalLoginTimeInMs|Int32|User experience analytics 设备总登录时间（以毫秒为单位）。|
-|isFirstLogin|Boolean|User experience analytics 设备第一次登录。|
-|isFeatureUpdate|Boolean|User experience analytics 设备启动记录是一项功能更新。|
-|operatingSystemVersion|字符串|User experience analytics 设备启动记录的操作系统版本。|
+|isFirstLogin|布尔值|User experience analytics 设备第一次登录。|
+|isFeatureUpdate|布尔值|User experience analytics 设备启动记录是一项功能更新。|
+|operatingSystemVersion|String|User experience analytics 设备启动记录的操作系统版本。|
+|restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|OS 重新启动类别。 可取值为：`unknown`、`restartWithUpdate`、`restartWithoutUpdate`、`blueScreen`、`shutdownWithUpdate`、`shutdownWithoutUpdate`。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -80,7 +81,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperie
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperienceAnalyticsDeviceStartupHistoryId}
 Content-type: application/json
-Content-length: 533
+Content-length: 576
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
@@ -96,7 +97,8 @@ Content-length: 533
   "totalLoginTimeInMs": 2,
   "isFirstLogin": true,
   "isFeatureUpdate": true,
-  "operatingSystemVersion": "Operating System Version value"
+  "operatingSystemVersion": "Operating System Version value",
+  "restartCategory": "restartWithUpdate"
 }
 ```
 
@@ -105,7 +107,7 @@ Content-length: 533
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 582
+Content-Length: 625
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
@@ -122,7 +124,8 @@ Content-Length: 582
   "totalLoginTimeInMs": 2,
   "isFirstLogin": true,
   "isFeatureUpdate": true,
-  "operatingSystemVersion": "Operating System Version value"
+  "operatingSystemVersion": "Operating System Version value",
+  "restartCategory": "restartWithUpdate"
 }
 ```
 

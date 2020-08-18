@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c235781a73059830a3b0085bb7602e5484da7988
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: 7e3c31146e42f01da7ffa426884b51c1269184da
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45225016"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46789837"
 ---
 # <a name="update-windowsupdatestate"></a>更新 windowsUpdateState
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)对象的属性。
+更新 [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,11 +28,11 @@ ms.locfileid: "45225016"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp;&nbsp;**设备配置** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp;**软件更新** | DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp;&nbsp;**设备配置** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp;**软件更新** | DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -51,27 +51,27 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)对象的 JSON 表示形式。
+在请求正文中，提供 [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) 对象的 JSON 表示形式。
 
-下表显示创建[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)时所需的属性。
+下表显示创建 [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|这是实体的 Id。|
-|deviceId|字符串|设备的 id。|
+|deviceId|String|设备的 id。|
 |userId|String|用户的 id。|
 |deviceDisplayName|String|设备显示名称。|
-|userPrincipalName|字符串|用户主体名称。|
-|状态||Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
-|qualityUpdateVersion|字符串|设备的质量更新版本。|
-|featureUpdateVersion|字符串|设备的当前功能更新版本。|
+|userPrincipalName|String|用户主体名称。|
+|status|[windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
+|qualityUpdateVersion|String|设备的质量更新版本。|
+|featureUpdateVersion|String|设备的当前功能更新版本。|
 |lastScanDateTime|DateTimeOffset|Windows Update 代理成功扫描的日期时间。|
 |lastSyncDateTime|DateTimeOffset|上次与 Microsoft Intune 同步设备的日期时间。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) 对象。
 
 ## <a name="example"></a>示例
 

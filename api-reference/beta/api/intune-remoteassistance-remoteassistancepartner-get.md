@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b50d3180e7884d235038bf5caf30d9d5139f7850
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 579293ec6347f069c5da25e7e01773286df6aa81
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176138"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790341"
 ---
 # <a name="get-remoteassistancepartner"></a>获取 remoteAssistancePartner
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "44176138"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners/{
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 346
+Content-Length: 423
 
 {
   "value": {
@@ -77,7 +77,8 @@ Content-Length: 346
     "displayName": "Display Name value",
     "onboardingUrl": "https://example.com/onboardingUrl/",
     "onboardingStatus": "onboarding",
-    "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
+    "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00",
+    "onboardingRequestExpiryDateTime": "2017-01-01T00:02:07.7573274-08:00"
   }
 }
 ```

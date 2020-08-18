@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 01292d15da4bac6ff65c0412e2b40097804d20e5
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 9c478c59e3f9cdd9dcc2e16bff2f4ee15ac4069a
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792097"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790600"
 ---
 # <a name="list-windowsmanageddevices"></a>列出 windowsManagedDevices
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)对象的属性和关系。
+列出 [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,7 +53,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8628
+Content-Length: 8765
 
 {
   "value": [
@@ -93,6 +93,9 @@ Content-Length: 8628
         "operatingSystemLanguage": "Operating System Language value",
         "isSupervised": true,
         "isEncrypted": true,
+        "batterySerialNumber": "Battery Serial Number value",
+        "batteryHealthPercentage": 7,
+        "batteryChargeCycles": 3,
         "isSharedDevice": true,
         "sharedDeviceCachedUsers": [
           {

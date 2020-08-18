@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的配置设备的 Intune 终结点 (
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 927ec039942d594fcb34665ed3ff0641904fcb60
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 0b1e8e6e6505780fcf638892c1e18b9500d54423
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123923"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790929"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -358,6 +358,7 @@ ms.locfileid: "45123923"
 - [本地安全选项标准用户提升提示行为类型](intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)
 - [macOS apple 事件接收器](intune-deviceconfig-macosappleeventreceiver.md)
 - [macOS 关联的域的键/值对](intune-deviceconfig-macosassociateddomainskeyvaluepair.md)
+- [macOS Azure ad 单一登录扩展](intune-deviceconfig-macosazureadsinglesignonextension.md)
 - [macOS 证书配置文件基础](intune-deviceconfig-macoscertificateprofilebase.md)
 - [macOS 合规性策略](intune-deviceconfig-macoscompliancepolicy.md)
 - [macOS 内容缓存客户端策略](intune-deviceconfig-macoscontentcachingclientpolicy.md)

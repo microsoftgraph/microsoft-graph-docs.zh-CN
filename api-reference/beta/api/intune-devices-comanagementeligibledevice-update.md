@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cfda57d0c94d94d771010eb4d981581347e9d391
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: c37000958539038c9cc49860e115f68e1a4911a2
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792518"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46789942"
 ---
 # <a name="update-comanagementeligibledevice"></a>更新 comanagementEligibleDevice
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新[comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md)对象的属性。
+更新 [comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,15 +47,15 @@ PATCH /deviceManagement/comanagementEligibleDevices/{comanagementEligibleDeviceI
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md)对象的 JSON 表示形式。
+在请求正文中，提供 [comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md) 对象的 JSON 表示形式。
 
-下表显示创建[comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md)时所需的属性。
+下表显示创建 [comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备的唯一 Id|
+|id|String|设备的唯一 Id|
 |deviceName|String|DeviceName|
-|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|DeviceType. 可能的值为：、、、、、、、、、、、、、、、、、、、、、、、 `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `blackberry` `palm` `unknown` 。|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|DeviceType. 可能的值为：、、、、、、、、、、、、、、、、、、、、、、、、 `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` `unknown` 。|
 |clientRegistrationStatus|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|ClientRegistrationStatus. 可取值为：`notRegistered`、`registered`、`revoked`、`keyConflict`、`approvalPending`、`certificateReset`、`notRegisteredPendingEnrollment`、`unknown`。|
 |所有者|[所有者](../resources/intune-shared-ownertype.md)|所有者. 可取值为：`unknown`、`company`、`personal`。|
 |managementAgents|[managementAgentType](../resources/intune-shared-managementagenttype.md)|ManagementAgents. 可能的值是：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`、`microsoft365ManagedMdm`、`windowsManagementCloudApi`。|
@@ -77,7 +77,7 @@ PATCH /deviceManagement/comanagementEligibleDevices/{comanagementEligibleDeviceI
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md) 对象。
 
 ## <a name="example"></a>示例
 

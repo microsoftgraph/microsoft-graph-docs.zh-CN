@@ -1,18 +1,18 @@
 ---
-title: 获取 userExperienceAnalyticsDeviceStartupHistory
-description: 读取 userExperienceAnalyticsDeviceStartupHistory 对象的属性和关系。
+title: 获取 userExperienceAnalyticsAppHealthApplicationPerformance
+description: 读取 userExperienceAnalyticsAppHealthApplicationPerformance 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 93fa666edfadc398c5809644cd656f78923aa063
+ms.openlocfilehash: b565e811103e21b5f70884107e71d11b28f7a45e
 ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791356"
+ms.locfileid: "46790261"
 ---
-# <a name="get-userexperienceanalyticsdevicestartuphistory"></a>获取 userExperienceAnalyticsDeviceStartupHistory
+# <a name="get-userexperienceanalyticsapphealthapplicationperformance"></a>获取 userExperienceAnalyticsAppHealthApplicationPerformance
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "46791356"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取 [userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) 对象的属性和关系。
+读取 [userExperienceAnalyticsAppHealthApplicationPerformance](../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,7 +37,7 @@ ms.locfileid: "46791356"
 }
 -->
 ``` http
-GET /deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperienceAnalyticsDeviceStartupHistoryId}
+GET /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance/{userExperienceAnalyticsAppHealthApplicationPerformanceId}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -53,14 +53,14 @@ GET /deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperienc
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) 对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [userExperienceAnalyticsAppHealthApplicationPerformance](../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md) 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperienceAnalyticsDeviceStartupHistoryId}
+GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance/{userExperienceAnalyticsAppHealthApplicationPerformanceId}
 ```
 
 ### <a name="response"></a>响应
@@ -68,26 +68,26 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 676
+Content-Length: 691
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
-    "id": "13357123-7123-1335-2371-351323713513",
-    "deviceId": "Device Id value",
-    "startTime": "2017-01-01T00:03:29.2730865-08:00",
-    "coreBootTimeInMs": 0,
-    "groupPolicyBootTimeInMs": 7,
-    "featureUpdateBootTimeInMs": 9,
-    "totalBootTimeInMs": 1,
-    "groupPolicyLoginTimeInMs": 8,
-    "coreLoginTimeInMs": 1,
-    "responsiveDesktopTimeInMs": 9,
-    "totalLoginTimeInMs": 2,
-    "isFirstLogin": true,
-    "isFeatureUpdate": true,
-    "operatingSystemVersion": "Operating System Version value",
-    "restartCategory": "restartWithUpdate"
+    "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthApplicationPerformance",
+    "id": "c7962a87-2a87-c796-872a-96c7872a96c7",
+    "appName": "App Name value",
+    "appFriendlyName": "App Friendly Name value",
+    "appPublisher": "App Publisher value",
+    "activeDevices": 13,
+    "totalAppUsageDuration": 5,
+    "totalAppCrashes": 15,
+    "totalAppHangs": 13,
+    "meanTimeToFailure": 1,
+    "appHealthScore": 4.666666666666667,
+    "appHealthStatus": "App Health Status value",
+    "allOrgsHealthScore": 6.0,
+    "allOrgsMeanTimeToFailure": 8,
+    "tenantId": "Tenant Id value",
+    "memaTimeGenerated": "Mema Time Generated value"
   }
 }
 ```

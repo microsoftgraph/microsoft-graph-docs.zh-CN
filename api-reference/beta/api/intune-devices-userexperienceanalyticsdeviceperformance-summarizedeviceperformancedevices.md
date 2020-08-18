@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 64c1ea76e0f11e87724a4732727af1a3bca970e9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 10752b98e4d27c9f300c16c7b2e4a597048d7fc4
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43379681"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791461"
 ---
 # <a name="summarizedeviceperformancedevices-function"></a>summarizeDevicePerformanceDevices 函数
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -57,7 +57,7 @@ GET /deviceManagement/userExperienceAnalyticsDevicePerformance/summarizeDevicePe
 
 
 ## <a name="response"></a>响应
-如果成功，此函数会在`200 OK`响应正文中返回响应代码和[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)集合。
+如果成功，此函数会 `200 OK` 在响应正文中返回响应代码和 [userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) 集合。
 
 ## <a name="example"></a>示例
 
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 675
+Content-Length: 797
 
 {
   "value": [
@@ -92,7 +92,11 @@ Content-Length: 675
       "coreLoginTimeInMs": 1,
       "groupPolicyLoginTimeInMs": 8,
       "deviceCount": 11,
-      "responsiveDesktopTimeInMs": 9
+      "responsiveDesktopTimeInMs": 9,
+      "blueScreenCount": 15,
+      "restartCount": 12,
+      "averageBlueScreens": 6.0,
+      "averageRestarts": 5.0
     }
   ]
 }

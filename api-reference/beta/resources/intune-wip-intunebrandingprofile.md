@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: de98ae69eafcb076ca36985513d1fe3b3c601ac1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 707dc501d01de2a5bb589b2c10435ca1eaf77ac7
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471950"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790775"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>intuneBrandingProfile 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,11 +25,11 @@ ms.locfileid: "43471950"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 intuneBrandingProfiles](../api/intune-wip-intunebrandingprofile-list.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)集合|列出[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)对象的属性和关系。|
-|[获取 intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-get.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|读取[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)对象的属性和关系。|
-|[创建 intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-create.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|创建新的[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)对象。|
-|[删除 intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-delete.md)|无|删除[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)。|
-|[更新 intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|更新[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)对象的属性。|
+|[列出 intuneBrandingProfiles](../api/intune-wip-intunebrandingprofile-list.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) 集合|列出 [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) 对象的属性和关系。|
+|[获取 intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-get.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|读取 [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) 对象的属性和关系。|
+|[创建 intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-create.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|创建新的 [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) 对象。|
+|[删除 intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-delete.md)|无|删除 [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)。|
+|[更新 intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|更新 [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) 对象的属性。|
 |[分配操作](../api/intune-wip-intunebrandingprofile-assign.md)|无|尚未记录|
 
 ## <a name="properties"></a>属性
@@ -41,7 +41,7 @@ ms.locfileid: "43471950"
 |isDefaultProfile|布尔值|一个 Boolean 类型的值，该值表示是否将配置文件用作默认配置文件|
 |createdDateTime|DateTimeOffset|创建 BrandingProfile 的时间|
 |lastModifiedDateTime|DateTimeOffset|上次修改 BrandingProfile 的时间|
-|displayName|字符串|向最终用户显示的公司/组织名称|
+|displayName|String|向最终用户显示的公司/组织名称|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|公司门户应用程序和 web 门户中使用的主要主题颜色|
 |showLogo|布尔值|Boolean 类型的值，该值表示是否显示管理员提供的徽标图像|
 |showDisplayNameNextToLogo|布尔值|一个 Boolean 类型的值，该值表示是否在徽标图像旁边显示管理员提供的显示名称|
@@ -55,20 +55,22 @@ ms.locfileid: "43471950"
 |onlineSupportSiteUrl|String|指向公司/组织的 IT 支持人员网站的 URL|
 |onlineSupportSiteName|String|公司/组织的 IT 支持人员网站的显示名称|
 |privacyUrl|String|指向公司/组织的隐私策略的 URL|
-|customPrivacyMessage|String|有关管理员在设备上有权访问的内容的文本注释|
+|customPrivacyMessage|String|有关管理员在设备上没有访问权限的文本注释|
+|customCanSeePrivacyMessage|String|有关管理员在设备上有权访问的内容的文本注释|
+|customCantSeePrivacyMessage|String|有关管理员在设备上没有访问权限的文本注释|
 |isRemoveDeviceDisabled|布尔值|一个 Boolean 类型的值，该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "删除设备" 操作。|
 |isFactoryResetDisabled|布尔值|一个 Boolean 类型的值，该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "Factory 重置" 操作。|
-|companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)集合|按平台和设备所有权类型对公司门户的阻止操作的集合。|
+|companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md) 集合|按平台和设备所有权类型对公司门户的阻止操作的集合。|
 |showAzureADEnterpriseApps|布尔值|指示是否将在公司门户中显示 AzureAD 企业应用程序的布尔值|
 |showOfficeWebApps|布尔值|指示 Office WebApps 是否将显示在公司门户中的布尔值|
 |sendDeviceOwnershipChangePushNotification|布尔值|一个 Boolean 类型的值，该值指示当用户的设备所有权类型从个人更改为公司时是否向用户发送推送通知|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|向最终用户显示的自定义设备注册流。 可取值为：`availableWithPrompts`、`availableWithoutPrompts`、`unavailable`。|
-|roleScopeTagIds|String collection|分配给品牌配置文件的作用域标记列表|
+|roleScopeTagIds|字符串集合|分配给品牌配置文件的作用域标记列表|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|assignments|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)集合|品牌配置文件的组分配列表|
+|assignments|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) 集合|品牌配置文件的组分配列表|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -119,6 +121,8 @@ ms.locfileid: "43471950"
   "onlineSupportSiteName": "String",
   "privacyUrl": "String",
   "customPrivacyMessage": "String",
+  "customCanSeePrivacyMessage": "String",
+  "customCantSeePrivacyMessage": "String",
   "isRemoveDeviceDisabled": true,
   "isFactoryResetDisabled": true,
   "companyPortalBlockedActions": [

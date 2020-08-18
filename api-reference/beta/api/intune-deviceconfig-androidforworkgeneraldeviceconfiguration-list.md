@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 222097a7bbc2bd0670e303c536bff8df12749b87
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 02f94e2289fa33f342cb8e011c8440c4462bb9d1
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43435999"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790733"
 ---
 # <a name="list-androidforworkgeneraldeviceconfigurations"></a>列出 androidForWorkGeneralDeviceConfigurations
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)对象的属性和关系。
+列出 [androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3398
+Content-Length: 3580
 
 {
   "value": [
@@ -103,7 +103,9 @@ Content-Length: 3398
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
+      "passwordBlockFaceUnlock": true,
       "passwordBlockFingerprintUnlock": true,
+      "passwordBlockIrisUnlock": true,
       "passwordBlockTrustAgents": true,
       "passwordExpirationDays": 6,
       "passwordMinimumLength": 5,
@@ -121,7 +123,9 @@ Content-Length: 3398
       "workProfileBlockCrossProfileContactsSearch": true,
       "workProfileBlockCrossProfileCopyPaste": true,
       "workProfileDefaultAppPermissionPolicy": "prompt",
+      "workProfilePasswordBlockFaceUnlock": true,
       "workProfilePasswordBlockFingerprintUnlock": true,
+      "workProfilePasswordBlockIrisUnlock": true,
       "workProfilePasswordBlockTrustAgents": true,
       "workProfilePasswordExpirationDays": 1,
       "workProfilePasswordMinimumLength": 0,

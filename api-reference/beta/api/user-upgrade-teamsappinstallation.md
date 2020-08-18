@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 906828d4d14bdf19cfd8b2bc5f904e7219b40e55
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: 52d251346c5255b5943aeda6fde7c5ab10403b3a
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45196917"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46789900"
 ---
 # <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation： upgrade
 
@@ -20,15 +20,15 @@ ms.locfileid: "45196917"
 
 将指定[用户](../resources/user.md)的个人作用域中的[应用程序安装](../resources/teamsappinstallation.md)升级到最新版本的应用程序。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamsAppInstallation、ReadWriteForUser、All 和 All。 |
+|委派（工作或学校帐户） | TeamsAppInstallation.ReadWriteForUser |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsAppInstallation、ReadWriteForUser、all、All、All |
+|应用程序 | TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

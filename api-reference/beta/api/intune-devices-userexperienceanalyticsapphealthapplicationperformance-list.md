@@ -1,18 +1,18 @@
 ---
-title: 列出 userExperienceAnalyticsDevicePerformances
-description: 列出 userExperienceAnalyticsDevicePerformance 对象的属性和关系。
+title: 列出 userExperienceAnalyticsAppHealthApplicationPerformances
+description: 列出 userExperienceAnalyticsAppHealthApplicationPerformance 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 53a8896f0e3a103a6cea074a00267ac4ac696a8e
+ms.openlocfilehash: 5eee707d9d21b7f872f05d6ab91fbbfab175097a
 ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791452"
+ms.locfileid: "46790259"
 ---
-# <a name="list-userexperienceanalyticsdeviceperformances"></a>列出 userExperienceAnalyticsDevicePerformances
+# <a name="list-userexperienceanalyticsapphealthapplicationperformances"></a>列出 userExperienceAnalyticsAppHealthApplicationPerformances
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "46791452"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出 [userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) 对象的属性和关系。
+列出 [userExperienceAnalyticsAppHealthApplicationPerformance](../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,7 +37,7 @@ ms.locfileid: "46791452"
 }
 -->
 ``` http
-GET /deviceManagement/userExperienceAnalyticsDevicePerformance
+GET /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -50,14 +50,14 @@ GET /deviceManagement/userExperienceAnalyticsDevicePerformance
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) 对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [userExperienceAnalyticsAppHealthApplicationPerformance](../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md) 对象集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDevicePerformance
+GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance
 ```
 
 ### <a name="response"></a>响应
@@ -65,31 +65,27 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 797
+Content-Length: 737
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
-      "id": "852ae826-e826-852a-26e8-2a8526e82a85",
-      "deviceName": "Device Name value",
-      "model": "Model value",
-      "manufacturer": "Manufacturer value",
-      "diskType": "hdd",
-      "operatingSystemVersion": "Operating System Version value",
-      "bootScore": 9,
-      "coreBootTimeInMs": 0,
-      "groupPolicyBootTimeInMs": 7,
-      "healthStatus": "insufficientData",
-      "loginScore": 10,
-      "coreLoginTimeInMs": 1,
-      "groupPolicyLoginTimeInMs": 8,
-      "deviceCount": 11,
-      "responsiveDesktopTimeInMs": 9,
-      "blueScreenCount": 15,
-      "restartCount": 12,
-      "averageBlueScreens": 6.0,
-      "averageRestarts": 5.0
+      "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthApplicationPerformance",
+      "id": "c7962a87-2a87-c796-872a-96c7872a96c7",
+      "appName": "App Name value",
+      "appFriendlyName": "App Friendly Name value",
+      "appPublisher": "App Publisher value",
+      "activeDevices": 13,
+      "totalAppUsageDuration": 5,
+      "totalAppCrashes": 15,
+      "totalAppHangs": 13,
+      "meanTimeToFailure": 1,
+      "appHealthScore": 4.666666666666667,
+      "appHealthStatus": "App Health Status value",
+      "allOrgsHealthScore": 6.0,
+      "allOrgsMeanTimeToFailure": 8,
+      "tenantId": "Tenant Id value",
+      "memaTimeGenerated": "Mema Time Generated value"
     }
   ]
 }

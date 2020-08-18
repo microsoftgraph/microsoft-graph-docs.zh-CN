@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的管理设备 (REST) 的适用于 I
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ccbd1e60b39caf716b9059e0a3e145e42783cae0
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 6fa0cf5dff76290f0df56860c86df13d1a4ffb3a
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123902"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791601"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -165,6 +165,7 @@ ms.locfileid: "45123902"
 - [位置管理条件](intune-fencing-locationmanagementcondition.md)
 - [登录用户](intune-devices-loggedonuser.md)
 - [丢失模式状态](intune-devices-lostmodestate.md)
+- [Windows 设备的恶意软件状态](intune-devices-malwarestateforwindowsdevice.md)
 - [托管设备](intune-devices-manageddevice.md)
 - [托管设备体系结构](intune-devices-manageddevicearchitecture.md)
 - [托管设备清理设置](intune-devices-manageddevicecleanupsettings.md)
@@ -216,6 +217,7 @@ ms.locfileid: "45123902"
 - [一元管理条件表达式](intune-fencing-unarymanagementconditionexpression.md)
 - [一元管理条件表达式运算符类型](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [更新 Windows 设备帐户操作参数](intune-devices-updatewindowsdeviceaccountactionparameter.md)
+- [用户体验分析应用程序运行状况应用程序性能](intune-devices-userexperienceanalyticsapphealthapplicationperformance.md)
 - [用户体验分析基线](intune-devices-userexperienceanalyticsbaseline.md)
 - [用户体验分析类别](intune-devices-userexperienceanalyticscategory.md)
 - [User experience analytics 设备性能](intune-devices-userexperienceanalyticsdeviceperformance.md)
@@ -227,6 +229,8 @@ ms.locfileid: "45123902"
 - [用户体验分析真知灼见严重程度](intune-devices-userexperienceanalyticsinsightseverity.md)
 - [用户体验分析洞察力价值](intune-devices-userexperienceanalyticsinsightvalue.md)
 - [User experience analytics 指标](intune-devices-userexperienceanalyticsmetric.md)
+- [用户体验分析指标历史记录](intune-devices-userexperienceanalyticsmetrichistory.md)
+- [User experience analytics 操作系统重启类别](intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)
 - [用户体验分析概述](intune-devices-userexperienceanalyticsoverview.md)
 - [用户体验分析回归概况摘要](intune-devices-userexperienceanalyticsregressionsummary.md)
 - [用户体验分析分数历史记录](intune-devices-userexperienceanalyticsscorehistory.md)
@@ -249,6 +253,7 @@ ms.locfileid: "45123902"
 - [Windows 恶意软件名称计数](intune-devices-windowsmalwarenamecount.md)
 - [Windows 恶意软件概述](intune-devices-windowsmalwareoverview.md)
 - [Windows 恶意软件严重性](intune-devices-windowsmalwareseverity.md)
+- [Windows 恶意软件严重性计数](intune-devices-windowsmalwareseveritycount.md)
 - [Windows 恶意软件状态](intune-devices-windowsmalwarestate.md)
 - [Windows 恶意软件状态计数](intune-devices-windowsmalwarestatecount.md)
 - [Windows 恶意软件威胁状态](intune-devices-windowsmalwarethreatstate.md)

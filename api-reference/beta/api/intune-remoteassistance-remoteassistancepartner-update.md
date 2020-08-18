@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f8efa55477402748578a7198dec5ba6a3008ab2e
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 8d229150d2bdaa2d96a4b68fd3b9543e6276434f
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178435"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790544"
 ---
 # <a name="update-remoteassistancepartner"></a>更新 remoteAssistancePartner
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "44178435"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementServiceConfig.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|应用程序|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,11 +53,12 @@ PATCH /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|合作伙伴的唯一标识符。|
-|displayName|字符串|合作伙伴的显示名称。|
+|id|String|合作伙伴的唯一标识符。|
+|displayName|String|合作伙伴的显示名称。|
 |onboardingUrl|String|合作伙伴的载入门户的 URL，其中管理员可以配置其远程协助服务。|
 |onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|当前 TeamViewer 连接器状态的友好说明。 可取值为：`notOnboarded`、`onboarding`、`onboarded`。|
 |lastConnectionDateTime|DateTimeOffset|TEM 合作伙伴发送到 Intune 的上一个请求的时间戳。|
+|onboardingRequestExpiryDateTime|DateTimeOffset|在载入 OnboardingStatus 时，这是启动请求过期的日期时间。|
 
 
 
@@ -71,14 +72,15 @@ PATCH /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 Content-type: application/json
-Content-length: 266
+Content-length: 341
 
 {
   "@odata.type": "#microsoft.graph.remoteAssistancePartner",
   "displayName": "Display Name value",
   "onboardingUrl": "https://example.com/onboardingUrl/",
   "onboardingStatus": "onboarding",
-  "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
+  "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00",
+  "onboardingRequestExpiryDateTime": "2017-01-01T00:02:07.7573274-08:00"
 }
 ```
 
@@ -87,7 +89,7 @@ Content-length: 266
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 315
+Content-Length: 390
 
 {
   "@odata.type": "#microsoft.graph.remoteAssistancePartner",
@@ -95,7 +97,8 @@ Content-Length: 315
   "displayName": "Display Name value",
   "onboardingUrl": "https://example.com/onboardingUrl/",
   "onboardingStatus": "onboarding",
-  "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
+  "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00",
+  "onboardingRequestExpiryDateTime": "2017-01-01T00:02:07.7573274-08:00"
 }
 ```
 

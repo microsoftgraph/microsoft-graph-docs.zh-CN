@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2915b03d1dc850ee854f0b696a54efe109fd60c0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ce961ceff0d53efa1cb427b57f08341025ef46a7
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458169"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791622"
 ---
 # <a name="get-intunebrandingprofile"></a>获取 intuneBrandingProfile
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)对象的属性和关系。
+读取 [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,7 +53,7 @@ GET /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{in
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2095
+Content-Length: 2247
 
 {
   "value": {
@@ -111,6 +111,8 @@ Content-Length: 2095
     "onlineSupportSiteName": "Online Support Site Name value",
     "privacyUrl": "https://example.com/privacyUrl/",
     "customPrivacyMessage": "Custom Privacy Message value",
+    "customCanSeePrivacyMessage": "Custom Can See Privacy Message value",
+    "customCantSeePrivacyMessage": "Custom Cant See Privacy Message value",
     "isRemoveDeviceDisabled": true,
     "isFactoryResetDisabled": true,
     "companyPortalBlockedActions": [
