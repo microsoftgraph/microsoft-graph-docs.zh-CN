@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c70f522771c10b437514e92abb20e547cd25960
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 786c8df9a666b4728151b45ef3346fddd1b1297f
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43394156"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46792119"
 ---
 # <a name="update-macoslobapp"></a>更新 macOSLobApp
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新[macOSLobApp](../resources/intune-apps-macoslobapp.md)对象的属性。
+更新 [macOSLobApp](../resources/intune-apps-macoslobapp.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,47 +49,47 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[macOSLobApp](../resources/intune-apps-macoslobapp.md)对象的 JSON 表示形式。
+在请求正文中，提供 [macOSLobApp](../resources/intune-apps-macoslobapp.md) 对象的 JSON 表示形式。
 
-下表显示创建[macOSLobApp](../resources/intune-apps-macoslobapp.md)时所需的属性。
+下表显示创建 [macOSLobApp](../resources/intune-apps-macoslobapp.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|description|字符串|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|publisher|字符串|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|id|String|实体的键。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|description|String|应用的说明。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用的日期和时间。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|privacyInformationUrl|字符串|隐私声明 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|informationUrl|字符串|详细信息 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|developer|字符串|应用的开发者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|notes|字符串|应用的备注。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|uploadState|Int32|上载状态。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
+|privacyInformationUrl|String|隐私声明 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|informationUrl|String|详细信息 URL。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|所有者|String|应用的所有者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|uploadState|Int32|上载状态。 可能的值包括： 0- `Not Ready` 、1- `Ready` 、2- `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|字符串集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|committedContentVersion|字符串|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
+|committedContentVersion|String|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|总大小，包括所有已上传文件。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
-|bundleId|字符串|捆绑包 id。|
+|bundleId|String|捆绑包 id。|
 |minimumSupportedOperatingSystem|[macOSMinimumOperatingSystem](../resources/intune-apps-macosminimumoperatingsystem.md)|最低适用操作系统的值。|
-|buildNumber|String|MacOS 业务线（LoB）应用的内部版本号。|
-|versionNumber|字符串|MacOS 业务线（LoB）应用的版本号。|
-|childApps|[macOSLobChildApp](../resources/intune-apps-macoslobchildapp.md)集合|此捆绑包包中的应用程序列表|
+|buildNumber|String|MacOS 业务线 (LoB) 应用程序的内部版本号。|
+|versionNumber|String|MacOS 业务线 (LoB) 应用程序的版本号。|
+|childApps|[macOSLobChildApp](../resources/intune-apps-macoslobchildapp.md) 集合|此捆绑包包中的应用程序列表|
 |identityVersion|String|标识版本。|
 |md5HashChunkSize|Int32|MD5 哈希的块大小|
-|md5Hash|String 集合|MD5 哈希代码|
-|ignoreVersionDetection|Boolean|控制应用的版本是否将用于检测安装在设备上的应用的布尔值。 对于使用自我更新功能的 macOS 业务线（LoB）应用，请将此设置为 true。|
+|md5Hash|字符串集合|MD5 哈希代码|
+|ignoreVersionDetection|Boolean|控制应用的版本是否将用于检测安装在设备上的应用的布尔值。 将此值设置为 true，以便 macOS 业务线 (LoB) 使用自我更新功能的应用程序。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[macOSLobApp](../resources/intune-apps-macoslobapp.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [macOSLobApp](../resources/intune-apps-macoslobapp.md) 对象。
 
 ## <a name="example"></a>示例
 

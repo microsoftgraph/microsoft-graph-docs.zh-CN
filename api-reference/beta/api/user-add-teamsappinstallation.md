@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e46c97fa511a3d877e9d731fc9a135d1681d0022
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: efafaa5643f130f087edfdf730cae5d0503a3c85
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45196926"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46793101"
 ---
 # <a name="install-app-for-user"></a>为用户安装应用
 
@@ -20,15 +20,15 @@ ms.locfileid: "45196926"
 
 在指定[用户](../resources/user.md)的个人作用域中安装[应用程序](../resources/teamsapp.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamsAppInstallation、ReadWriteForUser、All 和 All。 |
+|委派（工作或学校帐户） | TeamsAppInstallation.ReadWriteForUser |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamsAppInstallation、ReadWriteForUser、all、All、All |
+|应用程序 | TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

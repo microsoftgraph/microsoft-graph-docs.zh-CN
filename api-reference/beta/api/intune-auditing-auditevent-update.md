@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dbd6ebfae64c34a79c09426e5784f06a4616040d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3a1cbc085b1ef5c95fb5faa820d38627ee787d4c
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43392858"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791846"
 ---
 # <a name="update-auditevent"></a>更新 auditEvent
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,17 +54,17 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|字符串|事件显示名称。|
-|componentName|字符串|组件名称。|
+|displayName|String|事件显示名称。|
+|componentName|String|组件名称。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|与审核事件关联的 AAD 用户和应用程序。|
-|activity|字符串|活动的友好名称。|
+|activity|String|活动的友好名称。|
 |activityDateTime|DateTimeOffset|执行活动时的日期时间（UTC 时间）。|
-|activityType|字符串|执行的活动类型。|
-|activityOperationType|字符串|活动的 HTTP 操作类型。|
+|activityType|String|执行的活动类型。|
+|activityOperationType|String|活动的 HTTP 操作类型。|
 |activityResult|String|活动结果。|
 |correlationId|Guid|用于关联系统内的活动的客户端请求 ID。|
 |resources|[auditResource](../resources/intune-auditing-auditresource.md) 集合|正在修改的资源。|
-|“类别”|字符串|审核类别。|
+|“类别”|String|审核类别。|
 
 
 
@@ -78,7 +78,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/auditEvents/{auditEventId}
 Content-type: application/json
-Content-length: 1603
+Content-length: 1697
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -102,7 +102,9 @@ Content-length: 1603
         "displayName": "Display Name value",
         "roleScopeTagId": "Role Scope Tag Id value"
       }
-    ]
+    ],
+    "remoteTenantId": "Remote Tenant Id value",
+    "remoteUserId": "Remote User Id value"
   },
   "activity": "Activity value",
   "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
@@ -135,7 +137,7 @@ Content-length: 1603
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1652
+Content-Length: 1746
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -160,7 +162,9 @@ Content-Length: 1652
         "displayName": "Display Name value",
         "roleScopeTagId": "Role Scope Tag Id value"
       }
-    ]
+    ],
+    "remoteTenantId": "Remote Tenant Id value",
+    "remoteUserId": "Remote User Id value"
   },
   "activity": "Activity value",
   "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",

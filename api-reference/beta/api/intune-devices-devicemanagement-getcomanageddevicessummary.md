@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 10bc2573d2bec17f0faf8532237e7a3ebda03cce
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 44dd46dc5fd48127ed380a50a9d43f98bb2364bb
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792378"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46792490"
 ---
 # <a name="getcomanageddevicessummary-function"></a>getComanagedDevicesSummary 函数
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -50,7 +50,7 @@ GET /deviceManagement/getComanagedDevicesSummary
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此函数会 `200 OK` 在响应正文中返回响应代码和[comanagedDevicesSummary](../resources/intune-devices-comanageddevicessummary.md) 。
+如果成功，此函数会 `200 OK` 在响应正文中返回响应代码和 [comanagedDevicesSummary](../resources/intune-devices-comanageddevicessummary.md) 。
 
 ## <a name="example"></a>示例
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/getComanagedDevicesSummary
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 348
+Content-Length: 379
 
 {
   "value": {
@@ -77,7 +77,8 @@ Content-Length: 348
     "windowsUpdateForBusinessCount": 13,
     "endpointProtectionCount": 7,
     "modernAppsCount": 15,
-    "officeAppsCount": 15
+    "officeAppsCount": 15,
+    "totalComanagedCount": 3
   }
 }
 ```

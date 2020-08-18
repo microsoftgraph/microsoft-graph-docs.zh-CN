@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: eafc92832fae17d36ff0baecd11237d973511d9f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d5706629d489a15c7cec9ed074612208263946a9
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43392905"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791839"
 ---
 # <a name="list-auditevents"></a>列出 auditEvents
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/auditEvents
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1873
+Content-Length: 1975
 
 {
   "value": [
@@ -92,7 +92,9 @@ Content-Length: 1873
             "displayName": "Display Name value",
             "roleScopeTagId": "Role Scope Tag Id value"
           }
-        ]
+        ],
+        "remoteTenantId": "Remote Tenant Id value",
+        "remoteUserId": "Remote User Id value"
       },
       "activity": "Activity value",
       "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",

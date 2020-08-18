@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 27335eb191352d37523975c7a506f39e7da725be
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: ecf122caa0a402d8a804efa360e71e53b6493da7
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674517"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46790747"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -188,13 +188,13 @@ _AdministrativeUnit.Read.All_ 和 _AdministrativeUnit.ReadWrite.All_ 仅对工�
 
 ## <a name="appcatalog-resource-permissions"></a>AppCatalog 资源权限
 
-
 #### <a name="delegated-permissions"></a>委派权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 需要 Microsoft 帐户 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------| :----------|
 | _AppCatalog.Read.All_ | 读取所有应用目录 | 允许应用读取应用目录中的应用。| 否 | 否 |
 | _AppCatalog.ReadWrite.All_ | 读取和写入所有应用目录  | 允许应用在应用目录中创建、读取、更新和删除应用。 | 是 | 否 |
+|_AppCatalog.Submit_|提交应用以供管理员审查|允许用户提交应用供管理员审查，以便发布在组织的应用目录中，并允许用户取消尚未发布的过去提交。</br> &#119821;&#119822;&#119827;&#119812;：非管理员用户通过添加 `requiresReview=true` 查询参数来提交应用以供审核。|是|否|
 
 #### <a name="application-permissions"></a>应用程序权限
 

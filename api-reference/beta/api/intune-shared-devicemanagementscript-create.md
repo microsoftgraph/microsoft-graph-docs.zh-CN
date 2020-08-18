@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 38cc8eddfc2a683e63494815e3f7499d10360efa
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: 9fe1cd9b413e3062e6c5ec06770160f0b73c7b08
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45225037"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46792287"
 ---
 # <a name="create-devicemanagementscript"></a>创建 deviceManagementScript
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)对象。
+创建新的 [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -57,10 +57,9 @@ POST /deviceManagement/deviceManagementScripts
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备管理脚本的唯一标识符。|
-|displayName|字符串|设备管理脚本的名称。|
-|说明|String|设备管理脚本的可选说明。|
-|runSchedule||脚本运行的间隔。 如果未定义，脚本将运行一次|
+|id|String|设备管理脚本的唯一标识符。|
+|displayName|String|设备管理脚本的名称。|
+|description|String|设备管理脚本的可选说明。|
 |scriptContent|Binary|脚本内容。|
 |createdDateTime|DateTimeOffset|设备管理脚本的创建日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
@@ -73,7 +72,7 @@ POST /deviceManagement/deviceManagementScripts
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -88,9 +87,6 @@ Content-length: 443
   "@odata.type": "#microsoft.graph.deviceManagementScript",
   "displayName": "Display Name value",
   "description": "Description value",
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
-  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "runAsAccount": "user",
   "enforceSignatureCheck": true,
@@ -114,9 +110,6 @@ Content-Length: 615
   "id": "59ea4525-4525-59ea-2545-ea592545ea59",
   "displayName": "Display Name value",
   "description": "Description value",
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
-  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

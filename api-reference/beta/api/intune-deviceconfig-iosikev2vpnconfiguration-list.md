@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dfdfe22363140d5567af531c411262205a789230
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: ba4c49d12bae10899160d0494495fc999b9d17d1
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123104"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46792322"
 ---
 # <a name="list-iosikev2vpnconfigurations"></a>列出 iosikEv2VpnConfigurations
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出[iosikEv2VpnConfiguration](../resources/intune-deviceconfig-iosikev2vpnconfiguration.md)对象的属性和关系。
+列出 [iosikEv2VpnConfiguration](../resources/intune-deviceconfig-iosikev2vpnconfiguration.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[iosikEv2VpnConfiguration](../resources/intune-deviceconfig-iosikev2vpnconfiguration.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [iosikEv2VpnConfiguration](../resources/intune-deviceconfig-iosikev2vpnconfiguration.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -153,6 +153,7 @@ Content-Length: 6070
           "probeRequiredUrl": "https://example.com/probeRequiredUrl/"
         }
       ],
+      "providerType": "appProxy",
       "proxyServer": {
         "@odata.type": "microsoft.graph.vpnProxyServer",
         "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
@@ -160,7 +161,6 @@ Content-Length: 6070
         "port": 4
       },
       "optInToDeviceIdSharing": true,
-      "providerType": "appProxy",
       "userDomain": "User Domain value",
       "strictEnforcement": true,
       "cloudName": "Cloud Name value",

@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 081697a0209a913a8993aba209983dbb5e86ef09
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f1a6d5275a8214f5698a41a711c1b82b1e48b960
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43379018"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46792658"
 ---
 # <a name="create-userexperienceanalyticsscorehistory"></a>创建 userExperienceAnalyticsScoreHistory
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md)对象。
+创建新的 [userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,17 +53,18 @@ POST /deviceManagement/userExperienceAnalyticsScoreHistory
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|User experience analytics 设备启动过程的唯一标识符。|
+|id|String|User experience analytics 设备启动过程的唯一标识符。|
 |startupDateTime|DateTimeOffset|User experience analytics 设备启动日期时间。|
-|startupScore|Int32|用户体验分析设备启动分数。|
-|coreBootScore|Int32|用户体验分析设备核心启动分数。|
-|coreSigninScore|Int32|用户体验分析设备核心登录分数。|
-|recommendedSoftwareScore|Int32|用户体验分析设备核心登录分数。|
+|startupScore|Int32|用户体验分析设备启动分数。 分数将在范围0-100，100是理想的分数。|
+|coreBootScore|Int32|用户体验分析设备核心启动分数。 分数将在范围0-100，100是理想的分数。|
+|coreSigninScore|Int32|用户体验分析设备核心登录分数。 分数将在范围0-100，100是理想的分数。|
+|recommendedSoftwareScore|Int32|用户体验分析设备核心登录分数。 分数将在范围0-100，100是理想的分数。|
+|restartScore|Int32|重启分数。 分数将在范围0-100，100为理想分数，0表示重新启动过多。 有效值为0至9999999|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -72,7 +73,7 @@ POST /deviceManagement/userExperienceAnalyticsScoreHistory
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsScoreHistory
 Content-type: application/json
-Content-length: 243
+Content-length: 266
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
@@ -80,7 +81,8 @@ Content-length: 243
   "startupScore": 12,
   "coreBootScore": 13,
   "coreSigninScore": 15,
-  "recommendedSoftwareScore": 8
+  "recommendedSoftwareScore": 8,
+  "restartScore": 12
 }
 ```
 
@@ -89,7 +91,7 @@ Content-length: 243
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 292
+Content-Length: 315
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
@@ -98,7 +100,8 @@ Content-Length: 292
   "startupScore": 12,
   "coreBootScore": 13,
   "coreSigninScore": 15,
-  "recommendedSoftwareScore": 8
+  "recommendedSoftwareScore": 8,
+  "restartScore": 12
 }
 ```
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6f592ba7900f0761a24b02495dc337046b615bb1
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 0e12a946db3e568faa171fa53299e6ec3546d455
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793463"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791790"
 ---
 # <a name="comanageddevicessummary-resource-type"></a>comanagedDevicesSummary 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -33,6 +33,7 @@ Co 托管设备的摘要数据
 |endpointProtectionCount|Int32|具有 EndpointProtection swung 的设备数量。 此属性是只读的。|
 |modernAppsCount|Int32|具有 ModernApps swung 的设备数量。 此属性是只读的。|
 |officeAppsCount|Int32|具有 Officeoffice swung 的设备数量。 此属性是只读的。|
+|totalComanagedCount|Int32|共同管理的设备的数量。 此属性是只读的。|
 
 ## <a name="relationships"></a>关系
 无
@@ -54,7 +55,8 @@ Co 托管设备的摘要数据
   "windowsUpdateForBusinessCount": 1024,
   "endpointProtectionCount": 1024,
   "modernAppsCount": 1024,
-  "officeAppsCount": 1024
+  "officeAppsCount": 1024,
+  "totalComanagedCount": 1024
 }
 ```
 

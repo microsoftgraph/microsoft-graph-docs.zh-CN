@@ -4,12 +4,12 @@ description: 列出用于管理租户组织的应用及其策略 (REST) 的适�
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f02aa12b3a0a0f03a49ab65a11c20f642cb27986
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 3c4dfa20789599012ccbd97d9db7950b87f53a86
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123776"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46793092"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -153,6 +153,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Win32 LOB 应用程序电源命令行管理程序脚本检测类型](intune-apps-win32lobapppowershellscriptdetectiontype.md)
 - [Win32 LOB 应用程序 power shell 脚本要求](intune-apps-win32lobapppowershellscriptrequirement.md)
 - [Win32 LOB 应用程序 power shell 脚本规则](intune-apps-win32lobapppowershellscriptrule.md)
+- [Win32 LOB 应用程序 power shell 脚本规则操作类型](intune-apps-win32lobapppowershellscriptruleoperationtype.md)
 - [Win32 LOB 应用产品代码检测](intune-apps-win32lobappproductcodedetection.md)
 - [Win32 LOB 应用程序产品代码规则](intune-apps-win32lobappproductcoderule.md)
 - [Win32 LOB 应用注册表检测](intune-apps-win32lobappregistrydetection.md)
@@ -167,7 +168,6 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Win32 LOB 应用程序规则](intune-apps-win32lobapprule.md)
 - [Win32 LOB 应用程序规则运算符](intune-apps-win32lobappruleoperator.md)
 - [Win32 LOB 应用程序规则类型](intune-apps-win32lobappruletype.md)
-- [Win32 LOB power shell 脚本规则操作类型](intune-apps-win32lobpowershellscriptruleoperationtype.md)
 - [Windows APPX](intune-apps-windowsappx.md)
 - [Windows 体系结构](intune-apps-windowsarchitecture.md)
 - [Windows 设备类型](intune-apps-windowsdevicetype.md)
