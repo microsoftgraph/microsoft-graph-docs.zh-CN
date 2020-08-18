@@ -5,20 +5,18 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5a7cae3ba43915f8dd024e3a9260876adb3ac2a4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2307bd50509cc1a44ee4de0a30309a2be98dcb3e
+ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533509"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46791671"
 ---
 # <a name="teamsapp-resource-type"></a>teamsApp 资源类型
 
 命名空间：microsoft.graph
 
-
-
-[Microsoft Teams](teams-api-overview.md) 应用对话框中的应用。
+代表[Microsoft Teams](teams-api-overview.md) 应用目录中的一个应用.
 
 用户可以在 Microsoft Teams 商店中看到这些应用，并且可以使用“[向团队添加应用](../api/teamsappinstallation-add.md)”方法将这些应用安装到 [Teams](team.md) 中。
 
@@ -38,7 +36,7 @@ ms.locfileid: "42533509"
 | id                  | string   | 目录应用生成的应用 ID（不同于开发人员在 [Microsoft Teams 应用压缩包](/microsoftteams/platform/concepts/apps/apps-package)中提供的 ID）。 |
 | externalId          | string   | 应用开发人员在 [Microsoft Teams 应用压缩包](/microsoftteams/platform/concepts/apps/apps-package)中提供的目录 ID。 |
 | displayName                | string   | 应用开发人员在 [Microsoft Teams 应用压缩包](/microsoftteams/platform/concepts/apps/apps-package)中提供的目录名称。 |
-| distributionMethod  | teamsAppDistributionMethod     | 应用的分配方法。 |
+| distributionMethod  | teamsAppDistributionMethod     | 应用的分配方法。 只读。|
 
 ### <a name="teamsappdistributionmethod-values"></a>teamsAppDistributionMethod 值
 
@@ -66,8 +64,8 @@ ms.locfileid: "42533509"
 {
   "id": "string",
   "externalId": "string",
-  "displayName": "Test App",
-  "distributionMethod": "Organization"
+  "displayName": "string",
+  "distributionMethod": "string"
 }
 ```
 
