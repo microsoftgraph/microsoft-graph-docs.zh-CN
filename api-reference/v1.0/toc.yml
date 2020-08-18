@@ -191,7 +191,7 @@ items:
           - name: 应用角色分配
             href: resources/approleassignment.md
             items:
-              - name: 列出
+              - name: 列表
                 href: api/user-list-approleassignments.md
               - name: 加法
                 href: api/user-post-approleassignments.md
@@ -234,7 +234,7 @@ items:
                 href: api/user-list-contactfolders.md
           - name: 委派权限授予
             items:
-              - name: 列出
+              - name: 列表
                 href: api/user-list-oauth2permissiongrants.md
           - name: 目录对象
             href: resources/directoryobject.md
@@ -490,7 +490,7 @@ items:
           - name: 应用角色分配
             href: resources/approleassignment.md
             items:
-              - name: 列出
+              - name: 列表
                 href: api/group-list-approleassignments.md
               - name: 加法
                 href: api/group-post-approleassignments.md
@@ -683,7 +683,7 @@ items:
                     href: api/application-delete-extensionproperty.md
               - name: Owners
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/application-list-owners.md
                   - name: 加法
                     href: api/application-post-owners.md
@@ -696,7 +696,7 @@ items:
                     items:
                       - name: Assign
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: 列出
+                      - name: 列表
                         href: api/application-list-tokenissuancepolicies.md
                       - name: 删除
                         href: api/application-delete-tokenissuancepolicies.md
@@ -705,7 +705,7 @@ items:
                     items:
                       - name: Assign
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: 列出
+                      - name: 列表
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: 删除
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -731,7 +731,7 @@ items:
               - name: 应用角色分配
                 href: resources/approleassignment.md
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/serviceprincipal-list-approleassignments.md
                   - name: 加法
                     href: api/serviceprincipal-post-approleassignments.md
@@ -755,7 +755,7 @@ items:
                     href: api/serviceprincipal-removekey.md
               - name: 委派权限授予
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
               - name: 成员身份
                 items:
@@ -773,7 +773,7 @@ items:
                     href: api/serviceprincipal-getmemberobjects.md
               - name: Owners
                 items:
-                  - name: 列出
+                  - name: 列表
                     href: api/serviceprincipal-list-owners.md
                   - name: 加法
                     href: api/serviceprincipal-post-owners.md
@@ -786,16 +786,16 @@ items:
                     items:
                       - name: Assign
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: 列出
+                      - name: 列表
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: 删除
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
-                  - name: 主页领域发现策略
+                  - name: 主领域发现策略
                     href: resources/homerealmdiscoverypolicy.md
                     items:
                       - name: Assign
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: 列出
+                      - name: 列表
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: 删除
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -804,7 +804,7 @@ items:
                     items:
                       - name: Assign
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: 列出
+                      - name: 列表
                         href: api/application-list-tokenissuancepolicies.md
                       - name: 删除
                         href: api/application-delete-tokenissuancepolicies.md
@@ -813,7 +813,7 @@ items:
                     items:
                       - name: Assign
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: 列出
+                      - name: 列表
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: 删除
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1069,7 +1069,7 @@ items:
                 items:
                   - name: 获取
                     href: api/participant-get.md
-                  - name: 列出
+                  - name: 列表
                     href: api/call-list-participants.md
                   - name: 参与者静音
                     href: api/participant-mute.md
@@ -3808,7 +3808,7 @@ items:
                         items:
                           - name: 命名位置
                             href: resources/namedlocation.md
-                          - name: 列出
+                          - name: 列表
                             href: api/conditionalaccessroot-list-namedlocations.md
                           - name: 获取
                             href: api/namedlocation-get.md
@@ -3868,7 +3868,7 @@ items:
                   - name: 风险检测
                     href: resources/riskdetection.md
                     items:
-                      - name: 列出
+                      - name: 列表
                         href: api/riskdetection-list.md
                       - name: 获取
                         href: api/riskdetection-get.md
@@ -3921,7 +3921,7 @@ items:
                         href: api/activitybasedtimeoutpolicy-update.md
                       - name: 删除
                         href: api/activitybasedtimeoutpolicy-delete.md
-                  - name: 主页领域发现策略
+                  - name: 主领域发现策略
                     href: resources/homerealmdiscoverypolicy.md
                     items:
                       - name: 列出
@@ -4672,7 +4672,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 计划
+          - name: 规划
             href: resources/plannerplan.md
             items:
               - name: 创建计划
@@ -4853,7 +4853,7 @@ items:
                 href: api/teamsapp-list.md
               - name: 更新目录中的应用
                 href: api/teamsapp-update.md
-              - name: 从目录中删除应用
+              - name: 从目录中删除应用程序
                 href: api/teamsapp-delete.md
           - name: 应用
             items:
@@ -4947,7 +4947,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: 获取
                     href: api/offershiftrequest-get.md
-                  - name: 列出
+                  - name: 列表
                     href: api/offershiftrequest-list.md
                   - name: 批准
                     href: api/offershiftrequest-approve.md
@@ -5098,7 +5098,7 @@ items:
           - name: 工作簿注释
             href: resources/workbookcomment.md
             items:
-              - name: 列出
+              - name: 列表
                 href: api/workbook-list-comments.md
               - name: 获取
                 href: api/workbookcomment-get.md
