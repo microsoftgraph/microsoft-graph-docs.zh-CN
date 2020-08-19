@@ -5,69 +5,65 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 0ae0568ff5f07eacc4ea0143f79baab55b46e83b
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: b32baed9dd6bad45f37b7be24b67308e0624b42c
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229407"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809395"
 ---
-# <a name="itemfacet-resource-type"></a><span data-ttu-id="493e5-103">itemFacet 资源类型</span><span class="sxs-lookup"><span data-stu-id="493e5-103">itemFacet resource type</span></span>
+# <a name="itemfacet-resource-type"></a><span data-ttu-id="76199-103">itemFacet 资源类型</span><span class="sxs-lookup"><span data-stu-id="76199-103">itemFacet resource type</span></span>
 
-<span data-ttu-id="493e5-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="493e5-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="76199-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="76199-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="493e5-105">表示[配置文件](profile.md)entityset 中的所有资源类型继承自的抽象基类型。</span><span class="sxs-lookup"><span data-stu-id="493e5-105">Represents the abstract base type that all resource types in the [profile](profile.md) entityset inherit from.</span></span>
+<span data-ttu-id="76199-105">表示 [配置文件](profile.md) entityset 中的所有资源类型继承自的抽象基类型。</span><span class="sxs-lookup"><span data-stu-id="76199-105">Represents the abstract base type that all resource types in the [profile](profile.md) entityset inherit from.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="493e5-106">属性</span><span class="sxs-lookup"><span data-stu-id="493e5-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="76199-106">属性</span><span class="sxs-lookup"><span data-stu-id="76199-106">Properties</span></span>
+|<span data-ttu-id="76199-107">属性</span><span class="sxs-lookup"><span data-stu-id="76199-107">Property</span></span>|<span data-ttu-id="76199-108">类型</span><span class="sxs-lookup"><span data-stu-id="76199-108">Type</span></span>|<span data-ttu-id="76199-109">说明</span><span class="sxs-lookup"><span data-stu-id="76199-109">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="76199-110">allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="76199-110">allowedAudiences</span></span>|<span data-ttu-id="76199-111">allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="76199-111">allowedAudiences</span></span>|<span data-ttu-id="76199-112">能够查看关联实体内包含的值的访问群体。</span><span class="sxs-lookup"><span data-stu-id="76199-112">The audiences that are able to see the values contained within the associated entity.</span></span> <span data-ttu-id="76199-113">可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="76199-113">Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="76199-114">createdBy</span><span class="sxs-lookup"><span data-stu-id="76199-114">createdBy</span></span>|[<span data-ttu-id="76199-115">identitySet</span><span class="sxs-lookup"><span data-stu-id="76199-115">identitySet</span></span>](../resources/identityset.md)|<span data-ttu-id="76199-116">提供创建实体的用户和/或应用程序的标识符。</span><span class="sxs-lookup"><span data-stu-id="76199-116">Provides the identifier of the user and/or application that created the entity.</span></span>|
+|<span data-ttu-id="76199-117">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="76199-117">createdDateTime</span></span>|<span data-ttu-id="76199-118">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="76199-118">DateTimeOffset</span></span>|<span data-ttu-id="76199-119">为创建实体时提供 dateTimeOffset。</span><span class="sxs-lookup"><span data-stu-id="76199-119">Provides the dateTimeOffset for when the entity was created.</span></span>|
+|<span data-ttu-id="76199-120">id</span><span class="sxs-lookup"><span data-stu-id="76199-120">id</span></span>|<span data-ttu-id="76199-121">String</span><span class="sxs-lookup"><span data-stu-id="76199-121">String</span></span>|<span data-ttu-id="76199-122">用于单独寻址实体的标识符。</span><span class="sxs-lookup"><span data-stu-id="76199-122">Identifier used for individually addressing an entity.</span></span> <span data-ttu-id="76199-123">继承自 [entity](../resources/entity.md)</span><span class="sxs-lookup"><span data-stu-id="76199-123">Inherited from [entity](../resources/entity.md)</span></span>|
+|<span data-ttu-id="76199-124">推导</span><span class="sxs-lookup"><span data-stu-id="76199-124">inference</span></span>|[<span data-ttu-id="76199-125">inferenceData</span><span class="sxs-lookup"><span data-stu-id="76199-125">inferenceData</span></span>](../resources/inferencedata.md)|<span data-ttu-id="76199-126">如果实体是由创建或修改应用程序推断的，则包含推理详细信息。</span><span class="sxs-lookup"><span data-stu-id="76199-126">Contains inference detail if the entity is inferred by the creating or modifying application.</span></span>|
+|<span data-ttu-id="76199-127">lastModifiedBy</span><span class="sxs-lookup"><span data-stu-id="76199-127">lastModifiedBy</span></span>|[<span data-ttu-id="76199-128">identitySet</span><span class="sxs-lookup"><span data-stu-id="76199-128">identitySet</span></span>](../resources/identityset.md)|<span data-ttu-id="76199-129">提供上次修改实体的用户和/或应用程序的标识符。</span><span class="sxs-lookup"><span data-stu-id="76199-129">Provides the identifier of the user and/or application that last modified the entity.</span></span>|
+|<span data-ttu-id="76199-130">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="76199-130">lastModifiedDateTime</span></span>|<span data-ttu-id="76199-131">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="76199-131">DateTimeOffset</span></span>|<span data-ttu-id="76199-132">为创建实体时提供 dateTimeOffset。</span><span class="sxs-lookup"><span data-stu-id="76199-132">Provides the dateTimeOffset for when the entity was created.</span></span>|
+|<span data-ttu-id="76199-133">source</span><span class="sxs-lookup"><span data-stu-id="76199-133">source</span></span>|[<span data-ttu-id="76199-134">personDataSource</span><span class="sxs-lookup"><span data-stu-id="76199-134">personDataSource</span></span>](../resources/persondatasource.md)|<span data-ttu-id="76199-135">实体中的值的起源（如果从另一个服务同步）。</span><span class="sxs-lookup"><span data-stu-id="76199-135">Where the values within an entity originated if synced from another service.</span></span>|
 
-| <span data-ttu-id="493e5-107">属性</span><span class="sxs-lookup"><span data-stu-id="493e5-107">Property</span></span>             | <span data-ttu-id="493e5-108">类型</span><span class="sxs-lookup"><span data-stu-id="493e5-108">Type</span></span>                            | <span data-ttu-id="493e5-109">说明</span><span class="sxs-lookup"><span data-stu-id="493e5-109">Description</span></span>                                                                                                                                                                                    |
-|:---------------------|:--------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|<span data-ttu-id="493e5-110">allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="493e5-110">allowedAudiences</span></span>      |<span data-ttu-id="493e5-111">string</span><span class="sxs-lookup"><span data-stu-id="493e5-111">string</span></span>                           | <span data-ttu-id="493e5-112">可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="493e5-112">Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span></span>                                                   |
-|<span data-ttu-id="493e5-113">createdBy</span><span class="sxs-lookup"><span data-stu-id="493e5-113">createdBy</span></span>             |[<span data-ttu-id="493e5-114">identitySet</span><span class="sxs-lookup"><span data-stu-id="493e5-114">identitySet</span></span>](identityset.md)    | <span data-ttu-id="493e5-115">实体最初创建时。</span><span class="sxs-lookup"><span data-stu-id="493e5-115">When the entity was originally created.</span></span>                                                                                                                                                        |
-|<span data-ttu-id="493e5-116">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="493e5-116">createdDateTime</span></span>       |<span data-ttu-id="493e5-117">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="493e5-117">DateTimeOffset</span></span>                   |<span data-ttu-id="493e5-p101">时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="493e5-p101">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
-|<span data-ttu-id="493e5-120">id</span><span class="sxs-lookup"><span data-stu-id="493e5-120">id</span></span>                    |<span data-ttu-id="493e5-121">String</span><span class="sxs-lookup"><span data-stu-id="493e5-121">String</span></span>                           | <span data-ttu-id="493e5-122">只读。</span><span class="sxs-lookup"><span data-stu-id="493e5-122">Read-only.</span></span>                                                                                                                                                                                     |
-|<span data-ttu-id="493e5-123">推导</span><span class="sxs-lookup"><span data-stu-id="493e5-123">inference</span></span>             |[<span data-ttu-id="493e5-124">inferenceData</span><span class="sxs-lookup"><span data-stu-id="493e5-124">inferenceData</span></span>](inferencedata.md)| <span data-ttu-id="493e5-125">如果对实体进行推断，则包含推理详细信息。</span><span class="sxs-lookup"><span data-stu-id="493e5-125">Contains inference detail if the entity is inferred.</span></span>                                                                                                                                           |
-|<span data-ttu-id="493e5-126">lastModifiedBy</span><span class="sxs-lookup"><span data-stu-id="493e5-126">lastModifiedBy</span></span>        |[<span data-ttu-id="493e5-127">identitySet</span><span class="sxs-lookup"><span data-stu-id="493e5-127">identitySet</span></span>](identityset.md)    | <span data-ttu-id="493e5-128">上次修改实体的合作伙伴或用户的标识符。</span><span class="sxs-lookup"><span data-stu-id="493e5-128">Identifier of the partner or user who last modified the entity.</span></span>                                                                                                                                |
-|<span data-ttu-id="493e5-129">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="493e5-129">lastModifiedDateTime</span></span>  |<span data-ttu-id="493e5-130">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="493e5-130">DateTimeOffset</span></span>                   |<span data-ttu-id="493e5-p102">时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="493e5-p102">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+## <a name="relationships"></a><span data-ttu-id="76199-136">关系</span><span class="sxs-lookup"><span data-stu-id="76199-136">Relationships</span></span>
+<span data-ttu-id="76199-137">无。</span><span class="sxs-lookup"><span data-stu-id="76199-137">None.</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="493e5-133">关系</span><span class="sxs-lookup"><span data-stu-id="493e5-133">Relationships</span></span>
-
-<span data-ttu-id="493e5-134">无</span><span class="sxs-lookup"><span data-stu-id="493e5-134">None</span></span>
-
-## <a name="json-representation"></a><span data-ttu-id="493e5-135">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="493e5-135">JSON representation</span></span>
-
-<span data-ttu-id="493e5-136">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="493e5-136">The following is a JSON representation of the resource.</span></span>
-
+## <a name="json-representation"></a><span data-ttu-id="76199-138">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="76199-138">JSON representation</span></span>
+<span data-ttu-id="76199-139">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="76199-139">The following is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.itemFacet",
-  "baseType": "",
-  "keyProperty": "id"
-}-->
-
-```json
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
+``` json
 {
-  "allowedAudiences": "string",
-  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "createdDateTime": "String (timestamp)",
+  "@odata.type": "#microsoft.graph.itemFacet",
   "id": "String (identifier)",
-  "inference": {"@odata.type": "microsoft.graph.inferenceData"},
-  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "lastModifiedDateTime": "String (timestamp)"
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
+  },
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "source": {
+    "@odata.type": "microsoft.graph.personDataSource"
+  }
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "itemFacet resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

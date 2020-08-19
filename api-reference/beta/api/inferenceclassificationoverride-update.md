@@ -1,69 +1,69 @@
 ---
 title: 更新 inferenceClassificationOverride
-description: '根据指定更改重点收件箱覆盖的**classifyAs**字段。 '
+description: '根据指定更改重点收件箱覆盖的 **classifyAs** 字段。 '
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
+author: svpsiva
 ms.prod: ''
-ms.openlocfilehash: 9417483ad5d46ac354d740e4803f7ac4be4a453d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1db87b1687d547541c61004c1bd82e0999dc1677
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446378"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807212"
 ---
-# <a name="update-inferenceclassificationoverride"></a><span data-ttu-id="cc520-103">更新 inferenceClassificationOverride</span><span class="sxs-lookup"><span data-stu-id="cc520-103">Update inferenceClassificationOverride</span></span>
+# <a name="update-inferenceclassificationoverride"></a><span data-ttu-id="273b4-103">更新 inferenceClassificationOverride</span><span class="sxs-lookup"><span data-stu-id="273b4-103">Update inferenceClassificationOverride</span></span>
 
-<span data-ttu-id="cc520-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="cc520-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="273b4-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="273b4-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cc520-105">根据指定更改[重点收件箱](../resources/manage-focused-inbox.md)覆盖的**classifyAs**字段。</span><span class="sxs-lookup"><span data-stu-id="cc520-105">Change the **classifyAs** field of a [Focused Inbox](../resources/manage-focused-inbox.md) override as specified.</span></span> 
+<span data-ttu-id="273b4-105">根据指定更改[重点收件箱](../resources/manage-focused-inbox.md)覆盖的**classifyAs**字段。</span><span class="sxs-lookup"><span data-stu-id="273b4-105">Change the **classifyAs** field of a [Focused Inbox](../resources/manage-focused-inbox.md) override as specified.</span></span>
 
-<span data-ttu-id="cc520-106">不能在 [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) 示例中使用 PATCH 更改任何其他字段。</span><span class="sxs-lookup"><span data-stu-id="cc520-106">You cannot use PATCH to change any other fields in an [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) instance.</span></span> 
+<span data-ttu-id="273b4-106">不能在 [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) 示例中使用 PATCH 更改任何其他字段。</span><span class="sxs-lookup"><span data-stu-id="273b4-106">You cannot use PATCH to change any other fields in an [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) instance.</span></span>
 
-<span data-ttu-id="cc520-107">如果发件人的替代存在，并且发件人更改了他/她的显示名称，可以使用 [POST](inferenceclassification-post-overrides.md) 强制更新现有替代中的名称字段。</span><span class="sxs-lookup"><span data-stu-id="cc520-107">If an override exists for a sender and the sender changes his/her display name, you can use [POST](inferenceclassification-post-overrides.md) to force an update to the name field in the existing override.</span></span>
+<span data-ttu-id="273b4-107">如果发件人的替代存在，并且发件人更改了他/她的显示名称，可以使用 [POST](inferenceclassification-post-overrides.md) 强制更新现有替代中的名称字段。</span><span class="sxs-lookup"><span data-stu-id="273b4-107">If an override exists for a sender and the sender changes his/her display name, you can use [POST](inferenceclassification-post-overrides.md) to force an update to the name field in the existing override.</span></span>
 
-<span data-ttu-id="cc520-108">如果发件人的替代存在，并且发件人更改了他/她的 SMTP 地址，“更新”此发件人的替代的唯一方法是：[删除](inferenceclassificationoverride-delete.md) 现有替代，然后使用新的 SMTP 地址 [创建](inferenceclassification-post-overrides.md) 新替代。</span><span class="sxs-lookup"><span data-stu-id="cc520-108">If an override exists for a sender and the sender changes his/her SMTP address, [deleting](inferenceclassificationoverride-delete.md) the existing override and [creating](inferenceclassification-post-overrides.md) a new one with the new SMTP address is the only way to "update" the override for this sender.</span></span>
+<span data-ttu-id="273b4-108">如果发件人的替代存在，并且发件人更改了他/她的 SMTP 地址，“更新”此发件人的替代的唯一方法是：[删除](inferenceclassificationoverride-delete.md) 现有替代，然后使用新的 SMTP 地址 [创建](inferenceclassification-post-overrides.md) 新替代。</span><span class="sxs-lookup"><span data-stu-id="273b4-108">If an override exists for a sender and the sender changes his/her SMTP address, [deleting](inferenceclassificationoverride-delete.md) the existing override and [creating](inferenceclassification-post-overrides.md) a new one with the new SMTP address is the only way to "update" the override for this sender.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cc520-109">权限</span><span class="sxs-lookup"><span data-stu-id="cc520-109">Permissions</span></span>
-<span data-ttu-id="cc520-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cc520-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="273b4-109">权限</span><span class="sxs-lookup"><span data-stu-id="273b4-109">Permissions</span></span>
+<span data-ttu-id="273b4-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="273b4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cc520-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="cc520-112">Permission type</span></span>      | <span data-ttu-id="cc520-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="cc520-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="273b4-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="273b4-112">Permission type</span></span>      | <span data-ttu-id="273b4-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="273b4-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cc520-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cc520-114">Delegated (work or school account)</span></span> | <span data-ttu-id="cc520-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cc520-115">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="cc520-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cc520-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cc520-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cc520-117">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="cc520-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="cc520-118">Application</span></span> | <span data-ttu-id="cc520-119">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cc520-119">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="273b4-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="273b4-114">Delegated (work or school account)</span></span> | <span data-ttu-id="273b4-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="273b4-115">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="273b4-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="273b4-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="273b4-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="273b4-117">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="273b4-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="273b4-118">Application</span></span> | <span data-ttu-id="273b4-119">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="273b4-119">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cc520-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cc520-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="273b4-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="273b4-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/inferenceClassification/overrides/{id}
 PATCH /users/{id}/inferenceClassification/overrides/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="cc520-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="cc520-121">Request headers</span></span>
-| <span data-ttu-id="cc520-122">名称</span><span class="sxs-lookup"><span data-stu-id="cc520-122">Name</span></span>       | <span data-ttu-id="cc520-123">类型</span><span class="sxs-lookup"><span data-stu-id="cc520-123">Type</span></span> | <span data-ttu-id="cc520-124">说明</span><span class="sxs-lookup"><span data-stu-id="cc520-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="273b4-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="273b4-121">Request headers</span></span>
+| <span data-ttu-id="273b4-122">名称</span><span class="sxs-lookup"><span data-stu-id="273b4-122">Name</span></span>       | <span data-ttu-id="273b4-123">类型</span><span class="sxs-lookup"><span data-stu-id="273b4-123">Type</span></span> | <span data-ttu-id="273b4-124">说明</span><span class="sxs-lookup"><span data-stu-id="273b4-124">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="cc520-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="cc520-125">Authorization</span></span>  | <span data-ttu-id="cc520-126">string</span><span class="sxs-lookup"><span data-stu-id="cc520-126">string</span></span>  | <span data-ttu-id="cc520-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="cc520-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="cc520-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="cc520-129">Content-Type</span></span> | <span data-ttu-id="cc520-130">string</span><span class="sxs-lookup"><span data-stu-id="cc520-130">string</span></span>  | <span data-ttu-id="cc520-p103">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="cc520-p103">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="273b4-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="273b4-125">Authorization</span></span>  | <span data-ttu-id="273b4-126">string</span><span class="sxs-lookup"><span data-stu-id="273b4-126">string</span></span>  | <span data-ttu-id="273b4-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="273b4-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="273b4-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="273b4-129">Content-Type</span></span> | <span data-ttu-id="273b4-130">string</span><span class="sxs-lookup"><span data-stu-id="273b4-130">string</span></span>  | <span data-ttu-id="273b4-p103">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="273b4-p103">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cc520-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="cc520-133">Request body</span></span>
-<span data-ttu-id="cc520-p104">在请求正文中，提供 **classifyAs** 的新值。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="cc520-p104">In the request body, supply the new value for **classifyAs**. For best performance you shouldn't include existing values that are not changing.</span></span>
+## <a name="request-body"></a><span data-ttu-id="273b4-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="273b4-133">Request body</span></span>
+<span data-ttu-id="273b4-p104">在请求正文中，提供 **classifyAs** 的新值。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="273b4-p104">In the request body, supply the new value for **classifyAs**. For best performance you shouldn't include existing values that are not changing.</span></span>
 
-| <span data-ttu-id="cc520-136">属性</span><span class="sxs-lookup"><span data-stu-id="cc520-136">Property</span></span>     | <span data-ttu-id="cc520-137">类型</span><span class="sxs-lookup"><span data-stu-id="cc520-137">Type</span></span>   |<span data-ttu-id="cc520-138">说明</span><span class="sxs-lookup"><span data-stu-id="cc520-138">Description</span></span>|
+| <span data-ttu-id="273b4-136">属性</span><span class="sxs-lookup"><span data-stu-id="273b4-136">Property</span></span>     | <span data-ttu-id="273b4-137">类型</span><span class="sxs-lookup"><span data-stu-id="273b4-137">Type</span></span>   |<span data-ttu-id="273b4-138">说明</span><span class="sxs-lookup"><span data-stu-id="273b4-138">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="cc520-139">classifyAs</span><span class="sxs-lookup"><span data-stu-id="cc520-139">classifyAs</span></span>|<span data-ttu-id="cc520-140">string</span><span class="sxs-lookup"><span data-stu-id="cc520-140">string</span></span>| <span data-ttu-id="cc520-p105">指定来自特定发件人的传入邮件始终应如何分类。可能的值是：`focused`、`other`。</span><span class="sxs-lookup"><span data-stu-id="cc520-p105">Specifies how incoming messages from a specific sender should always be classified as. Possible values are: `focused`, `other`.</span></span>|
+|<span data-ttu-id="273b4-139">classifyAs</span><span class="sxs-lookup"><span data-stu-id="273b4-139">classifyAs</span></span>|<span data-ttu-id="273b4-140">string</span><span class="sxs-lookup"><span data-stu-id="273b4-140">string</span></span>| <span data-ttu-id="273b4-p105">指定来自特定发件人的传入邮件始终应如何分类。可能的值是：`focused`、`other`。</span><span class="sxs-lookup"><span data-stu-id="273b4-p105">Specifies how incoming messages from a specific sender should always be classified as. Possible values are: `focused`, `other`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="cc520-143">响应</span><span class="sxs-lookup"><span data-stu-id="cc520-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="273b4-143">响应</span><span class="sxs-lookup"><span data-stu-id="273b4-143">Response</span></span>
 
-<span data-ttu-id="cc520-144">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="cc520-144">If successful, this method returns a `200 OK` response code and updated [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="cc520-145">示例</span><span class="sxs-lookup"><span data-stu-id="cc520-145">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="cc520-146">请求</span><span class="sxs-lookup"><span data-stu-id="cc520-146">Request</span></span>
-<span data-ttu-id="cc520-147">以下示例将 SMTP 地址 randiw@adatum.onmicrosoft.com 的替代从 `other` 更改为 `focused`。</span><span class="sxs-lookup"><span data-stu-id="cc520-147">The following example changes the override for the SMTP address randiw@adatum.onmicrosoft.com from `other` to `focused`.</span></span>
+<span data-ttu-id="273b4-144">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="273b4-144">If successful, this method returns a `200 OK` response code and updated [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="273b4-145">示例</span><span class="sxs-lookup"><span data-stu-id="273b4-145">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="273b4-146">请求</span><span class="sxs-lookup"><span data-stu-id="273b4-146">Request</span></span>
+<span data-ttu-id="273b4-147">以下示例将 SMTP 地址 randiw@adatum.onmicrosoft.com 的替代从 `other` 更改为 `focused`。</span><span class="sxs-lookup"><span data-stu-id="273b4-147">The following example changes the override for the SMTP address randiw@adatum.onmicrosoft.com from `other` to `focused`.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="cc520-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="cc520-148">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="273b4-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="273b4-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_inferenceclassificationoverride"
@@ -76,22 +76,22 @@ Content-type: application/json
   "classifyAs": "focused"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="cc520-149">C#</span><span class="sxs-lookup"><span data-stu-id="cc520-149">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="273b4-149">C#</span><span class="sxs-lookup"><span data-stu-id="273b4-149">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-inferenceclassificationoverride-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="cc520-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cc520-150">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="273b4-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="273b4-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-inferenceclassificationoverride-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="cc520-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cc520-151">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="273b4-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="273b4-151">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-inferenceclassificationoverride-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="cc520-152">响应</span><span class="sxs-lookup"><span data-stu-id="cc520-152">Response</span></span>
-<span data-ttu-id="cc520-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="cc520-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="273b4-152">响应</span><span class="sxs-lookup"><span data-stu-id="273b4-152">Response</span></span>
+<span data-ttu-id="273b4-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="273b4-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

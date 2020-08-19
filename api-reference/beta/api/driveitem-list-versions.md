@@ -4,37 +4,37 @@ description: OneDrive 和 SharePoint 可以配置为保留文件的历史记录�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-author: ''
-ms.openlocfilehash: eb90b0cdde2d66b2d1315b5ce8e9fbf6fb550768
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: JeremyKelley
+ms.openlocfilehash: cdbc2bd13704d6562ab05e98793f847e1237cd4b
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432507"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808877"
 ---
-# <a name="listing-versions-of-a-driveitem"></a><span data-ttu-id="1825c-103">列出 DriveItem 的版本</span><span class="sxs-lookup"><span data-stu-id="1825c-103">Listing versions of a DriveItem</span></span>
+# <a name="listing-versions-of-a-driveitem"></a><span data-ttu-id="cff59-103">列出 DriveItem 的版本</span><span class="sxs-lookup"><span data-stu-id="cff59-103">Listing versions of a DriveItem</span></span>
 
-<span data-ttu-id="1825c-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="1825c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="cff59-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cff59-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1825c-105">OneDrive 和 SharePoint 可以配置为保留文件的历史记录。</span><span class="sxs-lookup"><span data-stu-id="1825c-105">OneDrive and SharePoint can be configured to retain the history for files.</span></span>
-<span data-ttu-id="1825c-106">根据服务和配置，每次编辑都可以创建一个新版本，每次手动保存文件或永不保存。</span><span class="sxs-lookup"><span data-stu-id="1825c-106">Depending on the service and configuration, a new version can be created for each edit, each time the file is saved, manually, or never.</span></span>
+<span data-ttu-id="cff59-105">OneDrive 和 SharePoint 可以配置为保留文件的历史记录。</span><span class="sxs-lookup"><span data-stu-id="cff59-105">OneDrive and SharePoint can be configured to retain the history for files.</span></span>
+<span data-ttu-id="cff59-106">根据服务和配置，每次编辑都可以创建一个新版本，每次手动保存文件或永不保存。</span><span class="sxs-lookup"><span data-stu-id="cff59-106">Depending on the service and configuration, a new version can be created for each edit, each time the file is saved, manually, or never.</span></span>
 
-<span data-ttu-id="1825c-107">文档之前的版本可能会保留有限的一段时间，具体取决于管理员设置，这对于每个用户或位置可能是唯一的。</span><span class="sxs-lookup"><span data-stu-id="1825c-107">Previous versions of a document may be retained for a finite period of time depending on admin settings which may be unique per user or location.</span></span>
+<span data-ttu-id="cff59-107">文档之前的版本可能会保留有限的一段时间，具体取决于管理员设置，这对于每个用户或位置可能是唯一的。</span><span class="sxs-lookup"><span data-stu-id="cff59-107">Previous versions of a document may be retained for a finite period of time depending on admin settings which may be unique per user or location.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1825c-108">权限</span><span class="sxs-lookup"><span data-stu-id="1825c-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="cff59-108">权限</span><span class="sxs-lookup"><span data-stu-id="cff59-108">Permissions</span></span>
 
-<span data-ttu-id="1825c-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1825c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cff59-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cff59-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1825c-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="1825c-111">Permission type</span></span>      | <span data-ttu-id="1825c-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1825c-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="cff59-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="cff59-111">Permission type</span></span>      | <span data-ttu-id="cff59-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="cff59-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1825c-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1825c-113">Delegated (work or school account)</span></span> | <span data-ttu-id="1825c-114">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1825c-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1825c-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1825c-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1825c-116">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1825c-116">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1825c-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="1825c-117">Application</span></span> | <span data-ttu-id="1825c-118">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1825c-118">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="cff59-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cff59-113">Delegated (work or school account)</span></span> | <span data-ttu-id="cff59-114">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cff59-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="cff59-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cff59-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cff59-116">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cff59-116">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="cff59-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="cff59-117">Application</span></span> | <span data-ttu-id="cff59-118">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cff59-118">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="1825c-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1825c-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cff59-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cff59-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored"} -->
 
@@ -46,42 +46,42 @@ GET /sites/{site-id}/drive/items/{item-id}/versions
 GET /users/{user-id}/drive/items/{item-id}/versions
 ```
 
-## <a name="response"></a><span data-ttu-id="1825c-120">响应</span><span class="sxs-lookup"><span data-stu-id="1825c-120">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cff59-120">响应</span><span class="sxs-lookup"><span data-stu-id="cff59-120">Response</span></span>
 
-<span data-ttu-id="1825c-121">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [DriveItemVersion](../resources/driveitemversion.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="1825c-121">If successful, this method returns a `200 OK` response code and collection of [DriveItemVersion](../resources/driveitemversion.md) objects in the response body.</span></span>
-
-
-## <a name="example"></a><span data-ttu-id="1825c-122">示例</span><span class="sxs-lookup"><span data-stu-id="1825c-122">Example</span></span>
-
-<span data-ttu-id="1825c-123">本示例检索当前用户驱动器中的文件的版本。</span><span class="sxs-lookup"><span data-stu-id="1825c-123">This example retrieves the versions of a file in the current user's drive.</span></span>
-
-### <a name="http-request"></a><span data-ttu-id="1825c-124">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1825c-124">HTTP request</span></span>
+<span data-ttu-id="cff59-121">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [DriveItemVersion](../resources/driveitemversion.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="cff59-121">If successful, this method returns a `200 OK` response code and collection of [DriveItemVersion](../resources/driveitemversion.md) objects in the response body.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="1825c-125">HTTP</span><span class="sxs-lookup"><span data-stu-id="1825c-125">HTTP</span></span>](#tab/http)
+## <a name="example"></a><span data-ttu-id="cff59-122">示例</span><span class="sxs-lookup"><span data-stu-id="cff59-122">Example</span></span>
+
+<span data-ttu-id="cff59-123">本示例检索当前用户驱动器中的文件的版本。</span><span class="sxs-lookup"><span data-stu-id="cff59-123">This example retrieves the versions of a file in the current user's drive.</span></span>
+
+### <a name="http-request"></a><span data-ttu-id="cff59-124">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cff59-124">HTTP request</span></span>
+
+
+# <a name="http"></a>[<span data-ttu-id="cff59-125">HTTP</span><span class="sxs-lookup"><span data-stu-id="cff59-125">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-previous-versions", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/versions
 ```
-# <a name="c"></a>[<span data-ttu-id="1825c-126">C#</span><span class="sxs-lookup"><span data-stu-id="1825c-126">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="cff59-126">C#</span><span class="sxs-lookup"><span data-stu-id="cff59-126">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-previous-versions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1825c-127">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1825c-127">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="cff59-127">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cff59-127">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-previous-versions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1825c-128">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1825c-128">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="cff59-128">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cff59-128">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-previous-versions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="1825c-129">响应</span><span class="sxs-lookup"><span data-stu-id="1825c-129">Response</span></span>
+### <a name="response"></a><span data-ttu-id="cff59-129">响应</span><span class="sxs-lookup"><span data-stu-id="cff59-129">Response</span></span>
 
-<span data-ttu-id="1825c-130">这将返回版本的集合：</span><span class="sxs-lookup"><span data-stu-id="1825c-130">This returns a collection of versions:</span></span>
+<span data-ttu-id="cff59-130">这将返回版本的集合：</span><span class="sxs-lookup"><span data-stu-id="cff59-130">This returns a collection of versions:</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItemVersion)", "truncated": true } -->
 
@@ -129,11 +129,11 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="1825c-131">注解</span><span class="sxs-lookup"><span data-stu-id="1825c-131">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="cff59-131">注解</span><span class="sxs-lookup"><span data-stu-id="cff59-131">Remarks</span></span>
 
-<span data-ttu-id="1825c-132">OneDrive 不保留文件以前版本的完整元数据。</span><span class="sxs-lookup"><span data-stu-id="1825c-132">OneDrive does not preserve the complete metadata for previous versions of a file.</span></span>
+<span data-ttu-id="cff59-132">OneDrive 不保留文件以前版本的完整元数据。</span><span class="sxs-lookup"><span data-stu-id="cff59-132">OneDrive does not preserve the complete metadata for previous versions of a file.</span></span>
 
-<span data-ttu-id="1825c-133">当应用程序检索文件的可用版本列表时，将返回 [DriveItemVersion](../resources/driveitemversion.md) 资源，它提供有关特定版本的可用信息。</span><span class="sxs-lookup"><span data-stu-id="1825c-133">When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.</span></span>
+<span data-ttu-id="cff59-133">当应用程序检索文件的可用版本列表时，将返回 [DriveItemVersion](../resources/driveitemversion.md) 资源，它提供有关特定版本的可用信息。</span><span class="sxs-lookup"><span data-stu-id="cff59-133">When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.</span></span>
 
 
 <!--

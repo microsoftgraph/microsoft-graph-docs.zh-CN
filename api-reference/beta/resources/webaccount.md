@@ -5,74 +5,89 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: dbdae8f0035e92b1c5b74c0ef3f842d2eb5af37a
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: ae6bdc7dc16b072090a04773de93324385401f81
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228864"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809073"
 ---
-# <a name="webaccount-resource-type"></a><span data-ttu-id="1ff53-103">webAccount 资源类型</span><span class="sxs-lookup"><span data-stu-id="1ff53-103">webAccount resource type</span></span>
+# <a name="webaccount-resource-type"></a><span data-ttu-id="1c054-103">webAccount 资源类型</span><span class="sxs-lookup"><span data-stu-id="1c054-103">webAccount resource type</span></span>
 
-<span data-ttu-id="1ff53-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1ff53-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1c054-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1c054-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1ff53-105">表示用户已将其添加到其用户[配置文件](profile.md)中的 web 帐户。</span><span class="sxs-lookup"><span data-stu-id="1ff53-105">Represents web accounts the user has indicated they use or has added to their user [profile](profile.md).</span></span>
+<span data-ttu-id="1c054-105">表示用户已向其用户 [配置文件](profile.md)中添加或已添加的 web 帐户。</span><span class="sxs-lookup"><span data-stu-id="1c054-105">Represents web accounts the user has indicated they use or have added to their user [profile](profile.md).</span></span>
 
-<span data-ttu-id="1ff53-106">此资源类型继承自[itemFacet](itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="1ff53-106">This resource type inherits from [itemFacet](itemfacet.md).</span></span>
+<span data-ttu-id="1c054-106">此资源类型继承自 [itemFacet](itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="1c054-106">This resource type inherits from [itemFacet](itemfacet.md).</span></span>
 
-## <a name="methods"></a><span data-ttu-id="1ff53-107">方法</span><span class="sxs-lookup"><span data-stu-id="1ff53-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="1c054-107">方法</span><span class="sxs-lookup"><span data-stu-id="1c054-107">Methods</span></span>
 
-| <span data-ttu-id="1ff53-108">方法</span><span class="sxs-lookup"><span data-stu-id="1ff53-108">Method</span></span>                                                | <span data-ttu-id="1ff53-109">返回类型</span><span class="sxs-lookup"><span data-stu-id="1ff53-109">Return Type</span></span>                 | <span data-ttu-id="1ff53-110">说明</span><span class="sxs-lookup"><span data-stu-id="1ff53-110">Description</span></span>                                                       |
-|:------------------------------------------------------|:----------------------------|:------------------------------------------------------------------|
-| [<span data-ttu-id="1ff53-111">获取 webAccount</span><span class="sxs-lookup"><span data-stu-id="1ff53-111">Get webAccount</span></span>](../api/webaccount-get.md)            | [<span data-ttu-id="1ff53-112">webAccount</span><span class="sxs-lookup"><span data-stu-id="1ff53-112">webAccount</span></span>](webaccount.md) | <span data-ttu-id="1ff53-113">读取**webAccount**对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="1ff53-113">Read the properties and relationships of a **webAccount** object.</span></span> |
-| [<span data-ttu-id="1ff53-114">更新 webAccount</span><span class="sxs-lookup"><span data-stu-id="1ff53-114">Update webAccount</span></span>](../api/webaccount-update.md)      | [<span data-ttu-id="1ff53-115">webAccount</span><span class="sxs-lookup"><span data-stu-id="1ff53-115">webAccount</span></span>](webaccount.md) | <span data-ttu-id="1ff53-116">更新**webAccount**对象。</span><span class="sxs-lookup"><span data-stu-id="1ff53-116">Update a **webAccount** object.</span></span>                                   |
-| [<span data-ttu-id="1ff53-117">删除 webAccount</span><span class="sxs-lookup"><span data-stu-id="1ff53-117">Delete webAccount</span></span>](../api/webaccount-delete.md)      | <span data-ttu-id="1ff53-118">无</span><span class="sxs-lookup"><span data-stu-id="1ff53-118">None</span></span>                        | <span data-ttu-id="1ff53-119">删除**webAccount**对象。</span><span class="sxs-lookup"><span data-stu-id="1ff53-119">Delete a **webAccount** object.</span></span>                                   |
+|<span data-ttu-id="1c054-108">方法</span><span class="sxs-lookup"><span data-stu-id="1c054-108">Method</span></span>|<span data-ttu-id="1c054-109">返回类型</span><span class="sxs-lookup"><span data-stu-id="1c054-109">Return type</span></span>|<span data-ttu-id="1c054-110">说明</span><span class="sxs-lookup"><span data-stu-id="1c054-110">Description</span></span>|
+|:---|:---|:---|
+|[<span data-ttu-id="1c054-111">列出 webAccounts</span><span class="sxs-lookup"><span data-stu-id="1c054-111">List webAccounts</span></span>](../api/profile-list-webaccounts.md)|<span data-ttu-id="1c054-112">[webAccount](../resources/webaccount.md) 集合</span><span class="sxs-lookup"><span data-stu-id="1c054-112">[webAccount](../resources/webaccount.md) collection</span></span>|<span data-ttu-id="1c054-113">从 webAccounts 导航属性中获取 webAccount 资源。</span><span class="sxs-lookup"><span data-stu-id="1c054-113">Get the webAccount resources from the webAccounts navigation property.</span></span>|
+|[<span data-ttu-id="1c054-114">创建 webAccount</span><span class="sxs-lookup"><span data-stu-id="1c054-114">Create webAccount</span></span>](../api/profile-post-webaccounts.md)|[<span data-ttu-id="1c054-115">webAccount</span><span class="sxs-lookup"><span data-stu-id="1c054-115">webAccount</span></span>](../resources/webaccount.md)|<span data-ttu-id="1c054-116">创建新的 webAccount 对象。</span><span class="sxs-lookup"><span data-stu-id="1c054-116">Create a new webAccount object.</span></span>|
+|[<span data-ttu-id="1c054-117">获取 webAccount</span><span class="sxs-lookup"><span data-stu-id="1c054-117">Get webAccount</span></span>](../api/webaccount-get.md)|[<span data-ttu-id="1c054-118">webAccount</span><span class="sxs-lookup"><span data-stu-id="1c054-118">webAccount</span></span>](../resources/webaccount.md)|<span data-ttu-id="1c054-119">读取 [webAccount](../resources/webaccount.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="1c054-119">Read the properties and relationships of a [webAccount](../resources/webaccount.md) object.</span></span>|
+|[<span data-ttu-id="1c054-120">更新 webAccount</span><span class="sxs-lookup"><span data-stu-id="1c054-120">Update webAccount</span></span>](../api/webaccount-update.md)|[<span data-ttu-id="1c054-121">webAccount</span><span class="sxs-lookup"><span data-stu-id="1c054-121">webAccount</span></span>](../resources/webaccount.md)|<span data-ttu-id="1c054-122">更新 [webAccount](../resources/webaccount.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="1c054-122">Update the properties of a [webAccount](../resources/webaccount.md) object.</span></span>|
+|[<span data-ttu-id="1c054-123">删除 webAccount</span><span class="sxs-lookup"><span data-stu-id="1c054-123">Delete webAccount</span></span>](../api/webaccount-delete.md)|<span data-ttu-id="1c054-124">无</span><span class="sxs-lookup"><span data-stu-id="1c054-124">None</span></span>|<span data-ttu-id="1c054-125">删除一个 [webAccount](../resources/webaccount.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="1c054-125">Deletes a [webAccount](../resources/webaccount.md) object.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="1ff53-120">属性</span><span class="sxs-lookup"><span data-stu-id="1ff53-120">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="1c054-126">属性</span><span class="sxs-lookup"><span data-stu-id="1c054-126">Properties</span></span>
 
-| <span data-ttu-id="1ff53-121">属性</span><span class="sxs-lookup"><span data-stu-id="1ff53-121">Property</span></span>     | <span data-ttu-id="1ff53-122">类型</span><span class="sxs-lookup"><span data-stu-id="1ff53-122">Type</span></span>                                      | <span data-ttu-id="1ff53-123">说明</span><span class="sxs-lookup"><span data-stu-id="1ff53-123">Description</span></span>                                                                                    |
-|:-------------|:------------------------------------------|:-----------------------------------------------------------------------------------------------|
-|<span data-ttu-id="1ff53-124">说明</span><span class="sxs-lookup"><span data-stu-id="1ff53-124">description</span></span>   |<span data-ttu-id="1ff53-125">字符串</span><span class="sxs-lookup"><span data-stu-id="1ff53-125">String</span></span>                                     | <span data-ttu-id="1ff53-126">包含用户为所引用服务上的帐户提供的说明。</span><span class="sxs-lookup"><span data-stu-id="1ff53-126">Contains the description the user has provided for the account on the service being referenced.</span></span>|
-|<span data-ttu-id="1ff53-127">service</span><span class="sxs-lookup"><span data-stu-id="1ff53-127">service</span></span>       |[<span data-ttu-id="1ff53-128">serviceInformation</span><span class="sxs-lookup"><span data-stu-id="1ff53-128">serviceInformation</span></span>](serviceinformation.md)| <span data-ttu-id="1ff53-129">包含有关要关联的服务的基本详细信息。</span><span class="sxs-lookup"><span data-stu-id="1ff53-129">Contains basic detail about the service that is being associated.</span></span>                              |
-|<span data-ttu-id="1ff53-130">statusMessage</span><span class="sxs-lookup"><span data-stu-id="1ff53-130">statusMessage</span></span> |<span data-ttu-id="1ff53-131">String</span><span class="sxs-lookup"><span data-stu-id="1ff53-131">String</span></span>                                     | <span data-ttu-id="1ff53-132">包含来自云服务的状态邮件（如果提供或已同步）。</span><span class="sxs-lookup"><span data-stu-id="1ff53-132">Contains a status message from the cloud service if provided or synchronized.</span></span>                  |
-|<span data-ttu-id="1ff53-133">userId</span><span class="sxs-lookup"><span data-stu-id="1ff53-133">userId</span></span>        |<span data-ttu-id="1ff53-134">String</span><span class="sxs-lookup"><span data-stu-id="1ff53-134">String</span></span>                                     | <span data-ttu-id="1ff53-135">为 webaccount 显示的用户名。</span><span class="sxs-lookup"><span data-stu-id="1ff53-135">The user name  displayed for the webaccount.</span></span>                                                   |
-|<span data-ttu-id="1ff53-136">WebUrl</span><span class="sxs-lookup"><span data-stu-id="1ff53-136">webUrl</span></span>        |<span data-ttu-id="1ff53-137">String</span><span class="sxs-lookup"><span data-stu-id="1ff53-137">String</span></span>                                     | <span data-ttu-id="1ff53-138">包含指向云服务上的用户配置文件的链接（如果存在）。</span><span class="sxs-lookup"><span data-stu-id="1ff53-138">Contains a link to the user's profile on the cloud service if one exists.</span></span>                      |
+|<span data-ttu-id="1c054-127">属性</span><span class="sxs-lookup"><span data-stu-id="1c054-127">Property</span></span>|<span data-ttu-id="1c054-128">类型</span><span class="sxs-lookup"><span data-stu-id="1c054-128">Type</span></span>|<span data-ttu-id="1c054-129">说明</span><span class="sxs-lookup"><span data-stu-id="1c054-129">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="1c054-130">allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="1c054-130">allowedAudiences</span></span>|<span data-ttu-id="1c054-131">String</span><span class="sxs-lookup"><span data-stu-id="1c054-131">String</span></span>|<span data-ttu-id="1c054-132">能够查看实体中包含的值的访问群体。</span><span class="sxs-lookup"><span data-stu-id="1c054-132">The audiences that are able to see the values contained within the entity.</span></span> <span data-ttu-id="1c054-133">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="1c054-133">Inherited from [itemFacet](../resources/itemfacet.md).</span></span> <span data-ttu-id="1c054-134">可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="1c054-134">Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="1c054-135">createdBy</span><span class="sxs-lookup"><span data-stu-id="1c054-135">createdBy</span></span>|[<span data-ttu-id="1c054-136">identitySet</span><span class="sxs-lookup"><span data-stu-id="1c054-136">identitySet</span></span>](../resources/identityset.md)|<span data-ttu-id="1c054-137">提供创建实体的用户和/或应用程序的标识符。</span><span class="sxs-lookup"><span data-stu-id="1c054-137">Provides the identifier of the user and/or application that created the entity.</span></span> <span data-ttu-id="1c054-138">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="1c054-138">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="1c054-139">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="1c054-139">createdDateTime</span></span>|<span data-ttu-id="1c054-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1c054-140">DateTimeOffset</span></span>|<span data-ttu-id="1c054-141">为创建实体时提供 dateTimeOffset。</span><span class="sxs-lookup"><span data-stu-id="1c054-141">Provides the dateTimeOffset for when the entity was created.</span></span> <span data-ttu-id="1c054-142">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="1c054-142">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="1c054-143">description</span><span class="sxs-lookup"><span data-stu-id="1c054-143">description</span></span>|<span data-ttu-id="1c054-144">String</span><span class="sxs-lookup"><span data-stu-id="1c054-144">String</span></span>|<span data-ttu-id="1c054-145">包含用户为所引用服务上的帐户提供的说明。</span><span class="sxs-lookup"><span data-stu-id="1c054-145">Contains the description the user has provided for the account on the service being referenced.</span></span>|
+|<span data-ttu-id="1c054-146">id</span><span class="sxs-lookup"><span data-stu-id="1c054-146">id</span></span>|<span data-ttu-id="1c054-147">String</span><span class="sxs-lookup"><span data-stu-id="1c054-147">String</span></span>|<span data-ttu-id="1c054-148">用于单独寻址实体的标识符。</span><span class="sxs-lookup"><span data-stu-id="1c054-148">Identifier used for individually addressing the entity.</span></span> <span data-ttu-id="1c054-149">继承自 [entity](../resources/entity.md)</span><span class="sxs-lookup"><span data-stu-id="1c054-149">Inherited from [entity](../resources/entity.md)</span></span>|
+|<span data-ttu-id="1c054-150">推导</span><span class="sxs-lookup"><span data-stu-id="1c054-150">inference</span></span>|[<span data-ttu-id="1c054-151">inferenceData</span><span class="sxs-lookup"><span data-stu-id="1c054-151">inferenceData</span></span>](../resources/inferencedata.md)|<span data-ttu-id="1c054-152">如果实体是由创建或修改应用程序推断的，则包含推理详细信息。</span><span class="sxs-lookup"><span data-stu-id="1c054-152">Contains inference detail if the entity is inferred by the creating or modifying application.</span></span> <span data-ttu-id="1c054-153">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="1c054-153">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="1c054-154">lastModifiedBy</span><span class="sxs-lookup"><span data-stu-id="1c054-154">lastModifiedBy</span></span>|[<span data-ttu-id="1c054-155">identitySet</span><span class="sxs-lookup"><span data-stu-id="1c054-155">identitySet</span></span>](../resources/identityset.md)|<span data-ttu-id="1c054-156">提供上次修改实体的用户和/或应用程序的标识符。</span><span class="sxs-lookup"><span data-stu-id="1c054-156">Provides the identifier of the user and/or application that last modified the entity.</span></span> <span data-ttu-id="1c054-157">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="1c054-157">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="1c054-158">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="1c054-158">lastModifiedDateTime</span></span>|<span data-ttu-id="1c054-159">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1c054-159">DateTimeOffset</span></span>|<span data-ttu-id="1c054-160">为创建实体时提供 dateTimeOffset。</span><span class="sxs-lookup"><span data-stu-id="1c054-160">Provides the dateTimeOffset for when the entity was created.</span></span> <span data-ttu-id="1c054-161">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="1c054-161">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="1c054-162">service</span><span class="sxs-lookup"><span data-stu-id="1c054-162">service</span></span>|[<span data-ttu-id="1c054-163">serviceInformation</span><span class="sxs-lookup"><span data-stu-id="1c054-163">serviceInformation</span></span>](../resources/serviceinformation.md)| <span data-ttu-id="1c054-164">包含有关要关联的服务的基本详细信息。</span><span class="sxs-lookup"><span data-stu-id="1c054-164">Contains basic detail about the service that is being associated.</span></span> |
+|<span data-ttu-id="1c054-165">source</span><span class="sxs-lookup"><span data-stu-id="1c054-165">source</span></span>|[<span data-ttu-id="1c054-166">personDataSource</span><span class="sxs-lookup"><span data-stu-id="1c054-166">personDataSource</span></span>](../resources/persondatasource.md)|<span data-ttu-id="1c054-167">值的来源，如果从另一个服务同步。</span><span class="sxs-lookup"><span data-stu-id="1c054-167">Where the values originated if synced from another service.</span></span> <span data-ttu-id="1c054-168">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="1c054-168">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="1c054-169">statusMessage</span><span class="sxs-lookup"><span data-stu-id="1c054-169">statusMessage</span></span>|<span data-ttu-id="1c054-170">String</span><span class="sxs-lookup"><span data-stu-id="1c054-170">String</span></span>|<span data-ttu-id="1c054-171">包含来自云服务的状态邮件（如果提供或已同步）。</span><span class="sxs-lookup"><span data-stu-id="1c054-171">Contains a status message from the cloud service if provided or synchronized.</span></span> |
+|<span data-ttu-id="1c054-172">userId</span><span class="sxs-lookup"><span data-stu-id="1c054-172">userId</span></span>|<span data-ttu-id="1c054-173">String</span><span class="sxs-lookup"><span data-stu-id="1c054-173">String</span></span>|<span data-ttu-id="1c054-174">为 webaccount 显示的用户名。</span><span class="sxs-lookup"><span data-stu-id="1c054-174">The user name  displayed for the webaccount.</span></span>  |
+|<span data-ttu-id="1c054-175">webUrl</span><span class="sxs-lookup"><span data-stu-id="1c054-175">webUrl</span></span>|<span data-ttu-id="1c054-176">String</span><span class="sxs-lookup"><span data-stu-id="1c054-176">String</span></span>|<span data-ttu-id="1c054-177">包含指向云服务上的用户配置文件的链接（如果存在）。</span><span class="sxs-lookup"><span data-stu-id="1c054-177">Contains a link to the user's profile on the cloud service if one exists.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="1ff53-139">关系</span><span class="sxs-lookup"><span data-stu-id="1ff53-139">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="1c054-178">关系</span><span class="sxs-lookup"><span data-stu-id="1c054-178">Relationships</span></span>
+<span data-ttu-id="1c054-179">无。</span><span class="sxs-lookup"><span data-stu-id="1c054-179">None.</span></span>
 
-<span data-ttu-id="1ff53-140">无</span><span class="sxs-lookup"><span data-stu-id="1ff53-140">None</span></span>
-
-## <a name="json-representation"></a><span data-ttu-id="1ff53-141">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1ff53-141">JSON representation</span></span>
-
-<span data-ttu-id="1ff53-142">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1ff53-142">The following is a JSON representation of the resource.</span></span>
-
+## <a name="json-representation"></a><span data-ttu-id="1c054-180">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1c054-180">JSON representation</span></span>
+<span data-ttu-id="1c054-181">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1c054-181">The following is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.webAccount",
-  "baseType": ""
-}-->
-
-```json
+  "baseType": "microsoft.graph.itemFacet",
+  "openType": false
+}
+-->
+``` json
 {
+  "@odata.type": "#microsoft.graph.webAccount",
+  "id": "String (identifier)",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
+  },
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "source": {
+    "@odata.type": "microsoft.graph.personDataSource"
+  },
   "description": "String",
-  "service": {"@odata.type": "microsoft.graph.serviceInformation"},
-  "statusMessage": "String",
   "userId": "String",
+  "service": {
+    "@odata.type": "microsoft.graph.serviceInformation"
+  },
+  "statusMessage": "String",
   "webUrl": "String"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "webAccount resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
