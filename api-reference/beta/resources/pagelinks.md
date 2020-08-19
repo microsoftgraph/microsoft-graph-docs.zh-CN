@@ -4,17 +4,17 @@ description: 用于打开 OneNote 页面的链接。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 27f4c45a9ea2747d5ca5748184b84e4fabb54f55
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: jewan-microsoft
+ms.openlocfilehash: 3442862f52c1d8f6dd29ea2a2a0e99b2f65970f0
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522051"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812525"
 ---
 # <a name="pagelinks-resource-type"></a>pageLinks 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

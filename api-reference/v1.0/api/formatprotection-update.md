@@ -2,15 +2,15 @@
 title: 更新 formatProtection
 description: 更新 formatprotection 对象的属性。
 localization_priority: Normal
-author: ''
+author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 1d327ff491f6b40a0256bad1542d871db35ec7ac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 11654be4f58c001fc28185e09271cb44adac8910
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517255"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812721"
 ---
 # <a name="update-formatprotection"></a>更新 formatProtection
 
@@ -20,11 +20,11 @@ ms.locfileid: "42517255"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              | 
-|:--------------------|:---------------------------------------------------------| 
-|委派（工作或学校帐户） | Files.ReadWrite    | 
-|委派（个人 Microsoft 帐户） | 不支持。    | 
-|应用程序 | 不支持。 | 
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Files.ReadWrite    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -4,17 +4,17 @@ description: 常规用途的错误。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 4c68fa52046ccb48645aab1fbf2de4a772665328
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: d9c1245e89672fab3fa9cc22c87d677fd7ab9bf9
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497641"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809523"
 ---
 # <a name="genericerror-resource-type"></a>genericError 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

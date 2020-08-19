@@ -2,15 +2,15 @@
 title: NamedItem 资源类型
 description: 表示单元格区域或值的定义名称。名称可以为基元的已命名对象（如以下类型中所示）、range 对象或对区域的引用。此对象可用于获取与名称相关的 range 对象。
 localization_priority: Normal
-author: ''
+author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0aece739f4a65db35271e4fe6f2c87db3a2c56a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3be31cd34f1fe880c079bba50e7e612dfa26da45
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534208"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808212"
 ---
 # <a name="nameditem-resource-type"></a>NamedItem 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "42534208"
 表示单元格区域或值的定义名称。名称可以为基元的已命名对象（如以下类型中所示）、range 对象或对区域的引用。此对象可用于获取与名称相关的 range 对象。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -33,10 +33,10 @@ ms.locfileid: "42534208"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|name|字符串|对象的名称。只读。|
+|name|string|对象的名称。只读。|
 |comment|string|表示与此名称相关联的注释。|
 |scope|string|指明是否将 name 限定到工作簿或特定工作表。只读。|
-|类型|字符串|指示与名称相关的引用类型。 可能的值包括 `String`、`Integer`、`Double`、`Boolean`、`Range`。 只读。|
+|类型|string|指示与名称相关的引用类型。 可能的值包括 `String`、`Integer`、`Double`、`Boolean`、`Range`。 只读。|
 |value|Json|表示名称定义为引用的公式。例如 =Sheet14!$B$2:$H$12、=4.75 等。只读。|
 |visible|布尔|指定对象是否可见。|
 
@@ -66,7 +66,7 @@ ms.locfileid: "42534208"
   "type": "string",
   "value": {"@odata.type": "microsoft.graph.Json"},
   "visible": true
-  
+
 }
 
 ```

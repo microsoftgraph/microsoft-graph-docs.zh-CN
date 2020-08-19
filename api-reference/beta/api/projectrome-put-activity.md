@@ -1,16 +1,16 @@
 ---
 title: 创建或替换活动
-description: 为您的应用程序创建新的或替换现有的用户活动。 如果您想要在一个请求中创建用户活动及其相关的**historyItems** ，则可以使用深层插入。
+description: 为您的应用程序创建新的或替换现有的用户活动。 如果您想要在一个请求中创建用户活动及其相关的 **historyItems** ，则可以使用深层插入。
 localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
-author: ''
-ms.openlocfilehash: c9fcd985b3e3a2b38a02e4bf5366a84788bdc866
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ailae
+ms.openlocfilehash: 86bff5b76b30e832f355ebac57af96e4948feabc
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454855"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809948"
 ---
 # <a name="create-or-replace-an-activity"></a>创建或替换活动
 
@@ -18,7 +18,7 @@ ms.locfileid: "42454855"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为您的应用程序创建新的或替换现有的用户活动。 如果您想要在一个请求中创建用户活动及其相关的**historyItems** ，则可以使用[深层插入](#example-2-deep-insert)。
+为您的应用程序创建新的或替换现有的用户活动。 如果您想要在一个请求中创建用户活动及其相关的 **historyItems** ，则可以使用 [深层插入](#example-2-deep-insert)。
 
 ## <a name="permissions"></a>权限
 
@@ -38,9 +38,9 @@ ms.locfileid: "42454855"
 PUT /me/activities/{appActivityId}
 ```
 
-> **注意：** URL 中的 appActivityId 需要是 URL 安全的（除 RFC 2396 非保留字符之外的所有字符都必须转换为十六进制表示形式），但原始 appActivityId 不必是 URL 安全的。
+> **注意：** URL 中的 appActivityId 需要是 URL 安全 (除 RFC 2396 非保留字符之外的所有字符都必须转换为十六进制表示形式) ，但原始 appActivityId 不必是 URL 安全的。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称          | 类型   | 说明               |
 |:--------------|:-------|:--------------------------|
@@ -48,11 +48,11 @@ PUT /me/activities/{appActivityId}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[活动](../resources/projectrome-activity.md)对象的 JSON 表示形式。
+在请求正文中，提供 [活动](../resources/projectrome-activity.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将在`201 Created`创建活动或`200 OK`替换活动时返回响应代码。
+如果成功，此方法将在 `201 Created` 创建活动或替换活动时返回响应代码 `200 OK` 。
 
 ## <a name="examples"></a>示例
 
@@ -112,7 +112,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 <!-- {
     "blockType": "ignored",

@@ -2,15 +2,15 @@
 title: 实体资源类型
 description: ''
 localization_priority: Normal
-author: ''
-ms.prod: ''
+author: MSGraphDocsVteam
+ms.prod: keylimesoda
 doc_type: resourcePageType
-ms.openlocfilehash: fa126023c94b9c27766f23799a2f679bd12442ea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 07793284fba23aa0bad6479c6ff150a5b9942735
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532978"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808268"
 ---
 # <a name="entity-resource-type"></a>实体资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "42532978"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|字符串| 只读。|
+|id|String| 只读。|
 
 ## <a name="relationships"></a>关系
 无

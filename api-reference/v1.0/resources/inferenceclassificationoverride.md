@@ -2,15 +2,15 @@
 title: inferenceClassificationOverride 资源类型
 description: 表示来自特定发件人的传入邮件始终应如何分类的用户的替代。
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7a80283bd3f32c28b71d02acd2ae93e76cac1299
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c65bbecda618115e40a3c3cc36f2b952597b9c85
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531304"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808905"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>inferenceClassificationOverride 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "42531304"
 表示来自特定发件人的传入邮件始终应如何分类的用户的替代。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -29,7 +29,7 @@ ms.locfileid: "42531304"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|classifyAs|inferenceClassificationType| 指定来自特定发件人的传入邮件始终应如何分类。 可能的值为： `focused`、 `other`。|
+|classifyAs|inferenceClassificationType| 指定来自特定发件人的传入邮件始终应如何分类。 可能的值为： `focused` 、 `other` 。|
 |id|string| 替代的唯一标识符。只读。|
 |senderEmailAddress|[emailAddress](emailaddress.md)|为其创建替代的发件人的电子邮件地址信息。|
 

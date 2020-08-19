@@ -1,30 +1,30 @@
 ---
 title: cloudAppSecurityState 资源类型
-description: 包含有关云应用程序（destinationServiceName、destinationServiceIp）的状态信息。
+description: 包含有关云应用程序的状态信息 (destinationServiceName、destinationServiceIp) 。
 localization_priority: Normal
-author: ''
+author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 116f6a6ccdc65e518ebdb69476d3c3aaea42ab91
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ce08f432b980b110defdfa5a9a7816a71f3f7840
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533066"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808261"
 ---
 # <a name="cloudappsecuritystate-resource-type"></a>cloudAppSecurityState 资源类型
 
 命名空间：microsoft.graph
 
-包含有关云应用程序（destinationServiceName、destinationServiceIp）的状态信息。
+包含有关云应用程序的状态信息 (destinationServiceName、destinationServiceIp) 。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|destinationServiceIp|字符串|指向云应用程序/服务的连接的目标 IP 地址。|
-|destinationServiceName|字符串|云应用程序/服务名称（例如，"Salesforce"、"DropBox" 等）。|
-|riskScore|字符串|提供程序生成/计算的风险分数（云应用程序/服务）。 建议的值范围为0-1，这相当于一个百分比。|
+|destinationServiceIp|String|指向云应用程序/服务的连接的目标 IP 地址。|
+|destinationServiceName|String|云应用程序/服务名称 (例如 "Salesforce"、"DropBox" 等 ) 。|
+|riskScore|String|提供程序生成/计算的风险分数（云应用程序/服务）。 建议的值范围为0-1，这相当于一个百分比。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

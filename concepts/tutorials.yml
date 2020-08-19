@@ -8,12 +8,12 @@ metadata:
   author: jasonjoh
   ms.author: jasonjoh
   ms.date: 04/02/2020
-  ms.openlocfilehash: 93e103e5d4872b79eecf82efa36b89d83ef86efd
-  ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+  ms.openlocfilehash: 965fd4e2ad61274515022eeb472cc4baa931928e
+  ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/24/2020
-  ms.locfileid: "44864229"
+  ms.lasthandoff: 08/19/2020
+  ms.locfileid: "46811187"
 landingContent:
 - title: 构建您的第一个服务器端应用程序
   linkLists:
@@ -61,6 +61,12 @@ landingContent:
       url: /graph/tutorials/javascript
     - text: React
       url: /graph/tutorials/react
+- title: Microsoft 平台
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Azure 函数
+      url: /graph/tutorials/azure-functions
 - title: 应用场景
   linkLists:
   - linkListType: tutorial

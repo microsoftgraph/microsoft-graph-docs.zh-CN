@@ -4,20 +4,20 @@ description: 表示尝试获取用户、通讯组列表或资源可用性的错�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 163352538dac4d7ba27def978b3bcc379807d4e4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: harini84
+ms.openlocfilehash: e259685415a37e89429b5e0522e89a4fbe2f9fd2
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497718"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809535"
 ---
 # <a name="freebusyerror-resource-type"></a>freeBusyError 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
- 
+
 表示尝试获取用户、通讯组列表或资源可用性的错误信息。
 
 ## <a name="properties"></a>属性

@@ -3,18 +3,18 @@ title: 'Filter: apply'
 description: 在给定列中应用给定的筛选条件。
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
+author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: 6c8d25dd3e96e2d590746d949275a38c89e45eef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d250953f7df09162a778cac878259e6aa27ab4f1
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421660"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811201"
 ---
 # <a name="filter-apply"></a>Filter: apply
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -100,7 +100,7 @@ Content-length: 321
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 
+下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,

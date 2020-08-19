@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 613011ce44b05b1743a8d297fc63450d4eed7dee
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 3ad19981ac92f1320a3e9ac15137664453ebf3da
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790740"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808974"
 ---
 # <a name="list-teamsapp"></a>列出 teamsApp
 
@@ -28,7 +28,7 @@ ms.locfileid: "46790740"
 |:---------------------------------------|:------------------------------------|
 | 委派（工作或学校帐户）     | AppCatalog、AppCatalog、所有的、所有读写的。 all |
 | 委派（个人 Microsoft 帐户） | 不支持                       |
-| 应用程序                            | 不支持。 |
+| Application                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,6 +41,8 @@ GET /appCatalogs/teamsApps
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持使用 `$filter`、`$select` 和`$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+
+使用 `$expand=AppDefinitions` 将返回有关应用的状态的详细信息（如 **publishingState**），它反映应用程序提交的审阅状态，并返回应用程序是否已被批准、被拒绝或仍处于审阅状态。 
 
 > **注意：** 您可以对 [teamsApp](../resources/teamsapp.md) 对象的任何字段进行筛选，以缩短结果列表。 您可以使用以下任何筛选器操作：等于、不等于、和、或，而不是。
 
@@ -109,14 +111,34 @@ Content-Type: application/json
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamsapp"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
@@ -142,4 +164,64 @@ Content-Type: application/json
     }
   ]
 }
+```
+
+### <a name="example-3-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>示例3：列出具有给定 ID 的应用程序，并返回提交检查状态
+
+下面的示例列出了具有给定 ID 的应用程序，并展开 **appDefinitions** 以返回 **publishingState**，这将反映应用程序的提交审阅状态。 `Submitted` 表示正在等待审阅， `published` 表示该应用程序已由管理员批准，并且该 `rejected` 应用程序被管理员拒绝。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "list_teamsapp"
+}-->
+
+```http
+GET  https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id eq '876df28f-2e78-423b-94a5-44181bd0e225'&$expand=appDefinitions
+```
+
+#### <a name="response"></a>响应
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true,
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "id": "876df28f-2e78-423b-94a5-44181bd0e225",
+      "externalId": "f31b1263-ba99-435a-a679-911d24850d7c",
+      "name": "Test App",
+      "version": "1.0.1",
+      "distributionMethod": "Organization",
+      "appDefinitions": [
+                {
+
+                    "id": "NGQyMGNiNDUtZWViYS00ZTEyLWE3YzktMGQ0NDgzYjYxNzU2IyMxLjAuMA==",
+
+                    "teamsAppId": "876df28f-2e78-423b-94a5-44181bd0e225",
+
+                    "azureADAppId": null,
+
+                    "displayName": "Test App",
+
+                    "version": "1.0.1",
+
+                    "requiredResourceSpecificApplicationPermissions": [],
+
+                    "publishingState": "published"
+
+                  }
+            ]
+      }
+    ]
+  }
 ```

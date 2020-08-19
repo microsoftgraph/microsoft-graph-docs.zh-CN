@@ -1,22 +1,22 @@
 ---
 title: 获取用户活动
-description: 获取给定用户的活动。 与**最近**的 OData 函数不同，将返回不含历史记录的活动。 权限 Useractivity.readwrite.createdbyapp Useractivity.readwrite.createdbyapp 将对响应应用额外的筛选，以便仅返回应用程序所创建的活动。 如果用户特别是活动的，并且其他应用程序已创建了更新的活动，则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动，请使用**nextLink**属性进行分页。
+description: 获取给定用户的活动。 与 **最近** 的 OData 函数不同，将返回不含历史记录的活动。 权限 Useractivity.readwrite.createdbyapp Useractivity.readwrite.createdbyapp 将对响应应用额外的筛选，以便仅返回应用程序所创建的活动。 如果用户特别是活动的，并且其他应用程序已创建了更新的活动，则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动，请使用 **nextLink** 属性进行分页。
 localization_priority: Normal
 ms.prod: project-rome
-author: ''
+author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: 74ea4cf908e8d6aecf53bbc9f1011a51b23ac270
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cb1299084db728ed95f1e40399c031e7e8f086b3
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510730"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809262"
 ---
 # <a name="get-user-activities"></a>获取用户活动
 
 命名空间：microsoft.graph
 
-获取给定用户的活动。 与**最近**的 OData 函数不同，将返回不含历史记录的活动。 权限 Useractivity.readwrite.createdbyapp Useractivity.readwrite.createdbyapp 将对响应应用额外的筛选，以便仅返回应用程序所创建的活动。 如果用户特别是活动的，并且其他应用程序已创建了更新的活动，则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动，请使用**nextLink**属性进行分页。
+获取给定用户的活动。 与 **最近** 的 OData 函数不同，将返回不含历史记录的活动。 权限 Useractivity.readwrite.createdbyapp Useractivity.readwrite.createdbyapp 将对响应应用额外的筛选，以便仅返回应用程序所创建的活动。 如果用户特别是活动的，并且其他应用程序已创建了更新的活动，则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动，请使用 **nextLink** 属性进行分页。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "42510730"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | UserActivity.ReadWrite.CreatedByApp    |
 |委派（个人 Microsoft 帐户） | UserActivity.ReadWrite.CreatedByApp    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -38,7 +38,7 @@ GET /me/activities
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。 支持以下查询参数：
+此方法支持一些 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。 支持以下查询参数：
 
 - **historyItems**导航属性的 $expand。
 - $top，以限制跨页的最大项目数。
@@ -54,7 +54,7 @@ GET /me/activities
 /me/activities?$top=5
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|
@@ -66,7 +66,7 @@ GET /me/activities
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回`200 OK`应用程序的用户活动的响应代码。
+如果成功，此方法将返回 `200 OK` 应用程序的用户活动的响应代码。
 
 ## <a name="example"></a>示例
 

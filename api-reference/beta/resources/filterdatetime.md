@@ -4,17 +4,17 @@ description: 表示在筛选值时如何筛选日期。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 166ed04fc58933c805fdd388e14da683110d6729
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ruoyingl
+ms.openlocfilehash: 71d0f3dc82882b0726d98c2b7fd2b60bb215152a
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498047"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809815"
 ---
 # <a name="filterdatetime-resource-type"></a>FilterDatetime 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

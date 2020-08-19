@@ -5,20 +5,20 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: e70ef31e6eec65520a7d2773b7e86aa76059f406
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 791a36ba589842e9bd62f7f2c208717fd250bf59
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455233"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812833"
 ---
 # <a name="delete-profile"></a>删除配置文件
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从用户帐户中删除[配置文件](../resources/profile.md)对象。
+从用户帐户中删除 [配置文件](../resources/profile.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "42455233"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 应用程序                            | User.readbasic.all、所有用户读写全部。 All                            |
+| 委派（工作或学校帐户）     | 所有用户读写。 |
+| 委派（个人 Microsoft 帐户） | 所有用户读写。 |
+| 应用程序                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -36,6 +36,7 @@ ms.locfileid: "42455233"
 
 ```http
 DELETE /me/profile
+DELETE /users/{id | userPrincipalName}/profile
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -95,13 +96,3 @@ DELETE https://graph.microsoft.com/beta/me/profile
 ```http
 HTTP/1.1 204 No Content
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Delete profile",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

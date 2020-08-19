@@ -4,24 +4,24 @@ description: 此资源包含与安全分数控制相关的合规性数据。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 65eda1c24fee112ef18fc6682b537f92f924dcf8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: preetikr
+ms.openlocfilehash: 2c8bb3b2a016ec58da1ad58b01843a2691ad13b7
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507574"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811138"
 ---
 #  <a name="complianceinformation-resource-type"></a>complianceInformation 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 包含与安全得分控制相关联的合规性数据。
 
 |属性 |类型 |说明 |
 |:--|:--|:--|
-|certificationName | string | 合规性认证名称（例如，ISO 27018:2014、GDPR、FedRAMP、NIST 800-171） |
-|certificationControls | [certificationControl](certificationcontrol.md)集合 | 与证书关联的证书控制的集合 |
+|certificationName | string | 合规性认证名称 (例如，ISO 27018:2014、GDPR、FedRAMP、NIST 800-171)  |
+|certificationControls | [certificationControl](certificationcontrol.md) 集合 | 与证书关联的证书控制的集合 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

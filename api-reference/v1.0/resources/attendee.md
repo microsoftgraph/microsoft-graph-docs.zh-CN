@@ -2,15 +2,15 @@
 title: 与会者资源类型
 description: 会议与会者。 这可以是人或在 Exchange 服务器上为租户设置的资源（例如会议室或设备）。
 localization_priority: Normal
-author: ''
+author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6c90d086afb7716dc3696443f18931f17cb291d9
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: 858018ac269fdf16929e2f0efea6ec40bada7639
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427240"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808359"
 ---
 # <a name="attendee-resource-type"></a>与会者资源类型
 

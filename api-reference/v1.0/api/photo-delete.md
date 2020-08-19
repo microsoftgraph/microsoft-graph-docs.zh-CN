@@ -2,15 +2,15 @@
 title: 删除照片
 description: 删除照片。
 localization_priority: Normal
-author: ''
+author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 7af3cde6072b4bc709bf2cb10e56bd3b5885319f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 57cc725d5b668d4db72ec9b96c3be0cbdf20db46
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511031"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808744"
 ---
 # <a name="delete-photo"></a>删除照片
 
@@ -24,7 +24,7 @@ ms.locfileid: "42511031"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Files.ReadWrite    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

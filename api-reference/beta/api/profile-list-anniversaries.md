@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: dbcb732c9abe0dbee45016d5629693585faec5dc
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 7636ee52a7021845b512bbbdc9ed9100fb7771c8
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228672"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812837"
 ---
 # <a name="list-anniversaries"></a>列出周年纪念
 
@@ -18,7 +18,7 @@ ms.locfileid: "43228672"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从其[配置文件](../resources/profile.md)中检索给定用户的[personAnniversary](../resources/personanniversary.md)对象的列表。
+从其[配置文件](../resources/profile.md)中检索给定用户的[personAnniversary](../resources/personanniversary.md)对象列表。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "43228672"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
 | 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| Application                            | User.readbasic.all、所有用户读写全部。 All                            |
+| 应用程序                            | User.readbasic.all、所有用户读写全部。 All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -36,16 +36,17 @@ ms.locfileid: "43228672"
 
 ```http
 GET /me/profile/anniversaries
+GET /users/{id | userPrincipalName}/profile/anniversaries
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持以下 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持以下 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 |名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |$filter         |string   |将响应限制为仅包含指定条件的那些对象。                                                                                             |
-|$orderby        |string   |默认情况下，响应中的对象按其在查询中的 createdDateTime 值进行排序。 您可以使用 *$orderby*参数更改响应的顺序。|
+|$orderby        |string   |默认情况下，响应中的对象按其在查询中的 createdDateTime 值进行排序。 您可以使用 *$orderby* 参数更改响应的顺序。|
 |$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
 |$skip           |int      |跳过前 n 个结果，对于分页非常有用。                                                                                                                                |
 |$top            |int      |要返回的结果数。                                                                                                                                           |
@@ -62,7 +63,7 @@ GET /me/profile/anniversaries
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[personAnniversary](../resources/personanniversary.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [personAnniversary](../resources/personanniversary.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -93,40 +94,45 @@ GET https://graph.microsoft.com/beta/me/profile/anniversaries
 
 ---
 
-
 ### <a name="response"></a>响应
-
-下面展示了示例响应。
-
-> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
-
+**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.personAnniversary",
-  "isCollection": true
-} -->
-
-```http
+  "@odata.type": "collection(microsoft.graph.personAnniversary)"
+}
+-->
+``` http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
   "value": [
     {
-      "type": "type-value",
-      "date": "datetime-value"
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "type": "birthday",
+      "date": "Date"
     }
   ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "List anniversaries",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

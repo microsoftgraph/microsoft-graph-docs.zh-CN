@@ -2,22 +2,22 @@
 title: internetMessageHeader 资源类型
 description: '表示 Internet 邮件头（由 RFC5322 定义）的键/值对，可提供 '
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f717be91f466790c86b529d9cc81852e7c37853a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8da5bc8a862196a1bb013255d7474d8ebf18730d
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531257"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808842"
 ---
 # <a name="internetmessageheader-resource-type"></a>internetMessageHeader 资源类型
 
 命名空间：microsoft.graph
 
 
-一个键值对，它表示 Internet 邮件头，正如 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 所定义的那样，它提供邮件获取的从发件人到收件人的网络路径的详细信息。 
+一个键值对，它表示 Internet 邮件头，正如 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 所定义的那样，它提供邮件获取的从发件人到收件人的网络路径的详细信息。
 
 有关 Internet 邮件头示例，请参阅[查看电子邮件头](https://support.office.com/en-us/article/View-e-mail-message-headers-CD039382-DC6E-4264-AC74-C048563D212C#bm4)。
 

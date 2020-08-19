@@ -4,13 +4,13 @@ description: 指定时区何时从标准时间切换到夏令时。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: c31225868b463b8ea3dd719d451726f59a087f99
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: 28c1db72eec1b1556949bee3ce0c5acdc12af9e7
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507287"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809843"
 ---
 # <a name="daylighttimezoneoffset-resource-type"></a>daylightTimeZoneOffset 资源类型
 

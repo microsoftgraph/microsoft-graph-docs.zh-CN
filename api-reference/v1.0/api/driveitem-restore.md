@@ -5,18 +5,18 @@ localization_priority: Normal
 author: learafa
 ms.prod: files
 doc_type: apiPageType
-ms.openlocfilehash: 86c658ad853a11f3ff7a52a6efeb7b2cc1bdb6c2
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
-ms.translationtype: Auto
+ms.openlocfilehash: c25049e05b31d473b98f7118ae4cb9b49edc3681
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45007093"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808422"
 ---
 # <a name="driveitem-restore"></a>driveItem： restore
 
 命名空间：microsoft.graph
 
-还原已删除且当前在回收站中的[driveItem](../resources/driveitem.md) 。 **注意**：此功能目前仅适用于 OneDrive 个人版。
+还原已删除且当前在回收站中的 [driveItem](../resources/driveitem.md) 。 **注意**：此功能目前仅适用于 OneDrive 个人版。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "45007093"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | Files.ReadWrite.All |
-| 应用程序                            | Files.ReadWrite.All |
+| Application                            | Files.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -53,7 +53,7 @@ POST /me/drive/items/{item-id}/restore
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和还原的[driveItem](../resources/driveitem.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和还原的 [driveItem](../resources/driveitem.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -62,8 +62,6 @@ POST /me/drive/items/{item-id}/restore
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
-
-# <a name="http"></a>[HTTP](#tab/http)
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

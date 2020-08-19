@@ -4,29 +4,29 @@ description: '表示 governanceSubject 对特定 governanceResource 的访问权
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 3efdebea07bb824b2314af516810ca36ad43adc9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: shauliu
+ms.openlocfilehash: 113f25cd276cf01ce46e3c410ca4b5b409417d98
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497620"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809514"
 ---
 # <a name="governancepermission-resource-type"></a>governancePermission 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示[governanceSubject](../resources/governancesubject.md)对特定[governanceResource](../resources/governanceresource.md)的访问权限。  
+表示 [governanceSubject](../resources/governancesubject.md) 对特定 [governanceResource](../resources/governanceresource.md)的访问权限。
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|accessLevel|String|访问级别。 有效值： ``None``、 ``UserRead`` ``AdminRead``、和。 ``AdminReadWrite``|
-|isActive|布尔|指示请求者是否具有访问级别的任何活动角色分配。|
-|isEligible|布尔|指示请求者是否具有访问级别的任何符合条件的角色分配。|
+|accessLevel|String|访问级别。 有效值： ``None`` 、、 ``UserRead`` ``AdminRead`` 和 ``AdminReadWrite`` 。|
+|isActive|布尔值|指示请求者是否具有访问级别的任何活动角色分配。|
+|isEligible|布尔值|指示请求者是否具有访问级别的任何符合条件的角色分配。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

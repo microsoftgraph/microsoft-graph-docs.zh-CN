@@ -4,21 +4,21 @@ description: '代表 governanceRoleAssignmentRequest 的日程安排。 对于�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: d52df62d0bed004d2126a775c44b92b5f285607f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: shauliu
+ms.openlocfilehash: b2a0a4ff42da594f9a74e26cc0facca9564548eb
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497214"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809500"
 ---
 # <a name="governanceschedule-resource-type"></a>governanceSchedule 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)的日程安排。 对于角色分配请求，日程安排控制何时执行角色分配操作、何时停止角色分配以及执行角色分配操作的频率。 
+代表 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)的日程安排。 对于角色分配请求，日程安排控制何时执行角色分配操作、何时停止角色分配以及执行角色分配操作的频率。
 
 
 
@@ -26,8 +26,8 @@ ms.locfileid: "42497214"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |startDateTime|DateTimeOffset|角色分配的开始时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|endDateTime|DateTimeOffset|角色分配的结束时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 *注意：如果值为`null`，则表示永久分配。*|
-|type|String|角色分配计划类型。 目前`Once`仅支持。
+|endDateTime|DateTimeOffset|角色分配的结束时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 *注意：如果值为 `null` ，则表示永久分配。*|
+|type|String|角色分配计划类型。 `Once`目前仅支持。
 |duration|持续时间|角色分配的持续时间。 它的格式为 TimeSpan。|
 
 ## <a name="json-representation"></a>JSON 表示形式

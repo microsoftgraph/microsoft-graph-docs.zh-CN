@@ -3,14 +3,14 @@ title: driveItem： preview
 description: 此操作允许您获取项目的短生存期可嵌入 Url，以呈现临时预览。
 localization_priority: Normal
 ms.prod: sharepoint
-author: ''
+author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 95466aaeb0cfb9c4127391f4e19a75f58ce2931d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 470af653190001623ea90f6afb7955a3727cceb5
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517683"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808436"
 ---
 # <a name="driveitem-preview"></a>driveItem： preview
 
@@ -18,7 +18,7 @@ ms.locfileid: "42517683"
 
 此操作允许您获取项目的短生存期可嵌入 Url，以呈现临时预览。
 
-如果要获取持续生存期的可嵌入链接，请改用[createLink][] API。
+如果要获取持续生存期的可嵌入链接，请改用 [createLink][] API。
 
 > **注意：****预览**操作当前仅适用于 SharePoint 和 OneDrive for business。
 
@@ -32,7 +32,7 @@ ms.locfileid: "42517683"
 |:---------------------------------------|:-------------------------------------------
 | 委派（工作或学校帐户）     | 文件. 读取、文件读写、全部、读写全部。
 | 委派（个人 Microsoft 帐户） | Read，文件. ReadWrite，全部文件。
-| 应用程序                            | 不支持。
+| Application                            | 不支持。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -71,13 +71,13 @@ POST /shares/{shareId}/driveItem/preview
 
 | 名称           | 类型   | 说明
 |:---------------|:-------|:---------------------------------------------------
-| getUrl         | 字符串 | 适合使用 HTTP GET （iframe 等）进行嵌入的 URL
-| postUrl        | 字符串 | 适合使用 HTTP POST （窗体 POST、JS 等）嵌入的 URL
-| postParameters | 字符串 | 如果使用 postUrl，则发布要包括的参数
+| getUrl         | string | 适用于使用 HTTP GET (iframe 等嵌入的 URL ) 
+| postUrl        | string | 适合使用 HTTP POST (表单 post、JS 等进行嵌入的 URL ) 
+| postParameters | string | 如果使用 postUrl，则发布要包括的参数
 
 根据指定选项的 embed 支持的当前状态，可能会返回 getUrl、postUrl 或 both。
 
-postParameters 是格式为`application/x-www-form-urlencoded`的字符串，如果向 POSTURL 执行 POST，应相应地设置内容类型。 例如：
+postParameters 是格式为的字符串 `application/x-www-form-urlencoded` ，如果向 postUrl 执行 POST，应相应地设置内容类型。 例如：
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded

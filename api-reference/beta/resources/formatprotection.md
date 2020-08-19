@@ -4,17 +4,17 @@ description: 表示对范围对象的格式保护。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: c574ceefd33131562a0df504fad26bb225056ce7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ruoyingl
+ms.openlocfilehash: cbad1af0eea639b73e06d5678a2293d744964975
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497816"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809556"
 ---
 # <a name="formatprotection-resource-type"></a>FormatProtection 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

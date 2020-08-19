@@ -1,24 +1,24 @@
 ---
 title: 获取最近的用户活动
-description: " #C1. 该服务将查询最近的 historyItems，然后拉出这些相关的活动。 活动将根据**historyItem**上的最新**lastModified**进行排序。 这意味着不会在响应中包含不含**historyItems**的活动。 Useractivity.readwrite.createdbyapp 权限还将对响应应用额外的筛选，以便仅返回应用程序所创建的活动。 如果用户特别是活动的，并且其他应用程序已创建了更新的活动，则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动，请使用**nextLink**属性进行分页。"
+description: " #C1. 该服务将查询最近的 historyItems，然后拉出这些相关的活动。 活动将根据**historyItem**上的最新**lastModified**进行排序。 这意味着不会在响应中包含不含 **historyItems** 的活动。 Useractivity.readwrite.createdbyapp 权限还将对响应应用额外的筛选，以便仅返回应用程序所创建的活动。 如果用户特别是活动的，并且其他应用程序已创建了更新的活动，则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动，请使用 **nextLink** 属性进行分页。"
 localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
-author: ''
-ms.openlocfilehash: 1aa948b9a71c0855e7bde250b90ee56c2c923579
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ailae
+ms.openlocfilehash: 72c9e425a74f10d066b2fd958126623a5f900601
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454890"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809962"
 ---
 # <a name="get-recent-user-activities"></a>获取最近的用户活动
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取给定用户的最近活动。 此 OData 函数包含一些默认行为，以使其像 "最近使用过的" API 一样运行。 该服务将查询最近的[historyItems](../resources/projectrome-historyitem.md)，然后拉出这些相关的活动。 活动将根据**historyItem**上的最新**lastModified**进行排序。 这意味着不会在响应中包含不含**historyItems**的活动。 Useractivity.readwrite.createdbyapp 权限还将对响应应用额外的筛选，以便仅返回应用程序所创建的活动。 如果用户特别是活动的，并且其他应用程序已创建了更新的活动，则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动，请使用**nextLink**属性进行分页。
+获取给定用户的最近活动。 此 OData 函数包含一些默认行为，以使其像 "最近使用过的" API 一样运行。 该服务将查询最近的 [historyItems](../resources/projectrome-historyitem.md)，然后拉出这些相关的活动。 活动将根据**historyItem**上的最新**lastModified**进行排序。 这意味着不会在响应中包含不含 **historyItems** 的活动。 Useractivity.readwrite.createdbyapp 权限还将对响应应用额外的筛选，以便仅返回应用程序所创建的活动。 如果用户特别是活动的，并且其他应用程序已创建了更新的活动，则此服务器端筛选可能会导致空页面。 若要获取应用程序的活动，请使用 **nextLink** 属性进行分页。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ GET /me/activities/recent
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。 支持以下查询参数：
+此方法支持一些 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。 支持以下查询参数：
 
 - **historyItems**导航属性的 $expand。
 - $top，以限制跨页的最大项目数。
@@ -68,7 +68,7 @@ GET /me/activities/recent
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回`200 OK`应用程序的用户最近活动的响应代码。
+如果成功，此方法将返回 `200 OK` 应用程序的用户最近活动的响应代码。
 
 ## <a name="example"></a>示例
 

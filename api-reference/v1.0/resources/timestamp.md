@@ -2,19 +2,19 @@
 title: 时间戳资源类型
 description: 时间点的日期和时间信息。
 localization_priority: Normal
-author: ''
+author: JeremyKelley
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a3d013668d0a4a11473a51a103bbf8b942139c06
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0629eaabd282f03184be28ade67c2d17d5598602
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446812"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808142"
 ---
 # <a name="timestamp-resource-type"></a>时间戳资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 时间点的日期和时间信息。
 

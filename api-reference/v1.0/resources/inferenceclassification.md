@@ -2,26 +2,26 @@
 title: inferenceClassification 资源类型
 description: '用户邮件分类，确保仅关注对用户更相关或更重要的邮件。 '
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 894deaf58f8e2e6466a6670caadb1d587b2a227a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 67b115001bed8e95093598bc5bb9f1969fbb3493
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531316"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808933"
 ---
 # <a name="inferenceclassification-resource-type"></a>inferenceClassification 资源类型
 
 命名空间：microsoft.graph
 
-用户邮件分类，确保仅关注对用户更相关或更重要的邮件。 
+用户邮件分类，确保仅关注对用户更相关或更重要的邮件。
 
 有关详细信息，请参阅 [管理重点收件箱](manage-focused-inbox.md)。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|

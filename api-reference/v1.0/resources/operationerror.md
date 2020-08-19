@@ -2,23 +2,23 @@
 title: operationError 资源类型
 description: 描述 teamsAsyncOperation 中的错误。
 localization_priority: Normal
-author: ''
+author: billbliss
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0cf550b0c15d5bd6632490d40eae04c0b4f5f3f1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6ae6215d00bc573e6c8d004de743b10c0d381e43
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447281"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808160"
 ---
 # <a name="operationerror-resource-type"></a>operationError 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 
 
-描述[teamsAsyncOperation](teamsasyncoperation.md)中的错误。
+描述 [teamsAsyncOperation](teamsasyncoperation.md)中的错误。
 
 ## <a name="operationerror-properties"></a>operationError 属性
 | 属性     | 类型   |说明|

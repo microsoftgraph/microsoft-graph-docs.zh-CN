@@ -2,15 +2,15 @@
 title: 更新照片
 description: 更新 photo 对象的属性。
 localization_priority: Normal
-author: ''
+author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 41ce52fb4de9348b8bec9ea2e99848ee230cb268
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 269101c331e07d947ec6b22a1fc8edef0f6f4ee5
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511017"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808718"
 ---
 # <a name="update-photo"></a>更新照片
 
@@ -24,7 +24,7 @@ ms.locfileid: "42511017"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 不支持。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

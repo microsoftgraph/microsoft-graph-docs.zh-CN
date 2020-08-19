@@ -2,15 +2,15 @@
 title: 'Filter: clear'
 description: 清除给定列上的筛选器。
 localization_priority: Normal
-author: ''
+author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: be5f2054e589ff010b8942130108cec73a8f6a60
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 65ce55da63cc0991b2acfec34c5c38aa34f3e910
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517269"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809269"
 ---
 # <a name="filter-clear"></a>Filter: clear
 
@@ -24,7 +24,7 @@ ms.locfileid: "42517269"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -78,7 +78,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|na
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 
+下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -4,21 +4,21 @@ description: 列出组织中符合提供的筛选条件和查询选项的可用 
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-author: ''
-ms.openlocfilehash: 266f88af6b71317b271bec5ede1d2984d4e704fa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: JeremyKelley
+ms.openlocfilehash: bfedee99e7679aead910c675d605c0f0b776d42b
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453210"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809885"
 ---
 # <a name="enumerate-sites"></a>枚举网站
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出组织中符合提供的筛选条件和查询选项的可用[网站][]。
+列出组织中符合提供的筛选条件和查询选项的可用 [网站][] 。
 
 目前仅支持以下查询选项：
 
@@ -26,7 +26,7 @@ ms.locfileid: "42453210"
 |:-----------------------------|:------------------------|:--------------------
 |`siteCollection/root ne null` | `siteCollection,webUrl` | 列出组织中的所有根级别网站集。 对于发现每个地理位置的主站点很有用。
 
-此外，您可以对 "/sites" 集合使用**[$search][]** 查询，以查找与给定关键字匹配的网站。
+此外，您可以对 "/sites" 集合使用 **[$search][]** 查询，以查找与给定关键字匹配的网站。
 
 [$search]: site-search.md
 [网站]: ../resources/site.md
