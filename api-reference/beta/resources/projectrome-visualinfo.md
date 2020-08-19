@@ -1,16 +1,16 @@
 ---
 title: visualInfo 资源类型
-description: 一个代表 activity 对象中的**visualElements**属性的复杂类型。
+description: 一个代表 activity 对象中的 **visualElements** 属性的复杂类型。
 localization_priority: Normal
 ms.prod: project-rome
 doc_type: resourcePageType
-author: ''
-ms.openlocfilehash: 4e1fa1414b9d8efd655a0699a6019049bfbe67a6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ailae
+ms.openlocfilehash: 928ec4c9d759674bc066c45a5f82e2e8cdd3ee3b
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521395"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807457"
 ---
 # <a name="visualinfo-resource-type"></a>visualInfo 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "42521395"
 |名称 | 类型 | 说明|
 |:----|:------|:-----------|
 |displayText | String | 必需。 用户独特活动的简短文本说明 (例如，当活动引用文档创建时的文档名称) |
-|说明 | String | 可选。 用户独特活动的更长文本说明 (示例：文档名称、第一句和/或元数据) |
+|description | String | 可选。 用户独特活动的更长文本说明 (示例：文档名称、第一句和/或元数据) |
 |backgroundColor | String | 可选。 用于呈现活动的应用程序源的 UI 品牌颜色中的活动的背景色。 必须是有效的十六进制颜色|
 |content | 非类型化 JSON 对象 | 可选。 用于提供自定义内容以在 Windows Shell UI 中呈现活动的自定义数据 JSON 对象块|
 |attribution | [imageInfo](../resources/projectrome-imageinfo.md) | 可选。 JSON 对象，用于表示表示用于生成活动的应用程序的图标|

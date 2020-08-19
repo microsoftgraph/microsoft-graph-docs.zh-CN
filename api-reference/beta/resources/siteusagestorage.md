@@ -4,17 +4,17 @@ description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-author: ''
-ms.openlocfilehash: 33d78540a6dd5b3c15cb6d8fce80496be19f0711
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: JeremyKelley
+ms.openlocfilehash: 36ca6cc16ec4eeaf399bb8bd49db51c43a9dd8be
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520518"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807911"
 ---
 # <a name="siteusagestorage-resource-type"></a>siteUsageStorage 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 ## <a name="properties"></a>属性
 
@@ -37,10 +37,10 @@ ms.locfileid: "42520518"
 
 ```json
 {
-  "reportRefreshDate": "Date", 
-  "siteType": "String", 
-  "storageUsedInBytes": 1024, 
-  "reportDate": "Date", 
+  "reportRefreshDate": "Date",
+  "siteType": "String",
+  "storageUsedInBytes": 1024,
+  "reportDate": "Date",
   "reportPeriod": "String"
 }
 ```

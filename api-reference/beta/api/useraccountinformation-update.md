@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 429e26ef14ed461c61f00072cdad878f59d5870f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 23e0e1098bed5260cdea1d92afccf34888336132
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451596"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809174"
 ---
 # <a name="update-useraccountinformation"></a>更新 useraccountinformation
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,8 @@ ms.locfileid: "42451596"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/account/{id}
+PATCH /me/profile/accounts/{id}
+PATCH /users/{id | userPrincipalName}/profile/accounts/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -43,22 +44,22 @@ PATCH /me/profile/account/{id}
 | 名称           |说明                 |
 |:---------------|:---------------------------|
 | Authorization  | Bearer {token}。必需。  |
-| Content-Type   | application/json. 必需 |
+| Content-Type   | application/json. 必填 |
 
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性            | 类型                                    | 说明                                                                                    |
-|:--------------------|:----------------------------------------|:-----------------------------------------------------------------------------------------------|
-|ageGroup             |String                                   |显示用户的年龄组。 允许的`null`值`minor`、 `notAdult`和`adult`。 只读。 |
-|countryCode          |String                                   |包含与用户帐户关联的双字符 countryCode。                       |
-|preferredLanguageTag |[localeInfo](../resources/localeinfo.md) |包含用户与帐户相关的首选语言。                     |
-|userPrincipalName    |String                                   |与帐户关联的用户的用户主体名称（UPN）。                          |
+|属性|类型|说明|
+|:---|:---|:---|
+|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|countryCode|String|包含与用户帐户关联的双字符国家/地区代码。  |
+|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|包含用户与帐户相关的首选语言。   |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[userAccountInformation](../resources/useraccountinformation.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [userAccountInformation](../resources/useraccountinformation.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -77,13 +78,7 @@ PATCH https://graph.microsoft.com/beta/me/profile/account/{id}
 Content-type: application/json
 
 {
-  "ageGroup": "ageGroup-value",
-  "countryCode": "countryCode-value",
-  "preferredLanguageTag": {
-    "locale": "locale-value",
-    "displayName": "displayName-value"
-  },
-  "userPrincipalName": "userPrincipalName-value"
+  "countryCode": "NO"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -118,22 +113,31 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "ageGroup": "ageGroup-value",
-  "countryCode": "countryCode-value",
-  "preferredLanguageTag": {
-    "locale": "locale-value",
-    "displayName": "displayName-value"
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
   },
-  "userPrincipalName": "userPrincipalName-value"
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "ageGroup": "adult",
+  "countryCode": "NO",
+  "preferredLanguageTag": null,
+  "userPrincipalName": "innocenty.popov@adventureworks.com"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update useraccountinformation",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

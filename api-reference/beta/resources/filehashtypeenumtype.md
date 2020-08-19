@@ -4,13 +4,13 @@ description: 文件哈希类型的枚举。
 localization_priority: Normal
 doc_type: enumPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: c0d8c87f79580107d56ec84aa9b1a4bc397d4171
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+author: preetikr
+ms.openlocfilehash: fe8fa8e1147723ae8119ac4e5946bd9c29b872dc
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154141"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806588"
 ---
 # <a name="filehashtype-enum-type"></a>fileHashType 枚举类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "44154141"
 
 ## <a name="members"></a>成员
 
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知类型。|
 |sha1|1|SHA1 哈希类型。|

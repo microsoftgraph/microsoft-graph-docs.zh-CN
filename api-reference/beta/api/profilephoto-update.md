@@ -4,13 +4,13 @@ description: 更新租户中任意用户的照片，其中包括已登录用户�
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: bafdd48cf95f8f6c6eddb99a0cd4f4bb3138dd78
-ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
+author: kevinbellinger
+ms.openlocfilehash: 72c30f03b51e186321acf6b89790c0fbd1352f06
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/04/2020
-ms.locfileid: "45038679"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807981"
 ---
 # <a name="update-profilephoto"></a>更新 profilephoto
 
@@ -22,14 +22,14 @@ ms.locfileid: "45038679"
 
 在测试版中仅使用 PUT 进行此操作。
 
-> **注意**：更新**用户**照片时，此操作将先尝试更新 Microsoft 365 中的照片。 如果失败（由于用户不具有邮箱），此 API 将尝试更新 Azure Active Directory 中的照片。
+> **注意**：更新 **用户** 照片时，此操作将先尝试更新 Microsoft 365 中的照片。 如果此操作失败 (由于用户没有邮箱) ，此 API 将尝试更新 Azure Active Directory 中的照片。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | 已登录**用户**的个人资料照片：<br/>所有用户读写。<br /><br />对于 **group** 资源：<br />Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.ReadWrite |
+|委派（工作或学校帐户）     | 已登录 **用户**的个人资料照片：<br/>所有用户读写。<br /><br />对于 **group** 资源：<br />Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.ReadWrite |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 对于 **user** 资源：<br/>User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.ReadWrite |
 

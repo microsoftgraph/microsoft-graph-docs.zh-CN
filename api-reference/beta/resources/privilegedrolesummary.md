@@ -4,17 +4,17 @@ description: 特定角色的统计信息摘要。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 47ab49c6f91684924dab02d590427a875c1baa01
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: shauliu
+ms.openlocfilehash: 2ce475e224e1de714ee033c5b50e831ff54e8e4c
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521486"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807470"
 ---
 # <a name="privilegedrolesummary-resource-type"></a>privilegedRoleSummary 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,8 +33,8 @@ ms.locfileid: "42521486"
 |elevatedCount|int32|已分配角色并激活角色的用户数量。|
 |id|string| 角色的唯一标识符。 只读。|
 |managedCount|int32|已分配角色但角色被停用的用户数量。|
-|mfaEnabled|boolean|**如此**如果角色激活需要进行 MFA。 **假**如果角色激活不需要进行 MFA。|
-|状态|string| 可取值为：`ok`、`bad`。 值取决于（managedCount/usersCount）的比率。 如果该比率小于预定义的阈值， `ok`则返回。 否则， `bad`将返回。|
+|mfaEnabled|boolean|**如此** 如果角色激活需要进行 MFA。 **假** 如果角色激活不需要进行 MFA。|
+|状态|string| 可取值为：`ok`、`bad`。 值取决于 (managedCount/usersCount) 的比率。 如果该比率小于预定义的阈值， `ok` 则返回。 否则， `bad` 将返回。|
 |usersCount|int32|为角色分配的用户数。|
 
 ## <a name="relationships"></a>关系

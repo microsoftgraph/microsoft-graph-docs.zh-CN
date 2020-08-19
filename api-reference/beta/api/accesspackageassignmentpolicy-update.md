@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a0d83dc1ca17baf5fd179efe225af8694b5ea6bb
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: 086bc79bf6462d569f85e4abf885a8c8538356ae
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757413"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806394"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>更新 accessPackageAssignmentPolicy
 
@@ -50,9 +50,9 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|策略的显示名称。|
-|说明|字符串|策略的说明。|
-|canExtend|Boolean|指示用户是否可以在批准后扩展访问包分配的持续时间。|
+|displayName|String|策略的显示名称。|
+|description|String|策略的说明。|
+|canExtend|布尔值|指示用户是否可以在批准后扩展访问包分配的持续时间。|
 |durationInDays|Int32|此策略中的工作分配在过期之前持续的天数。|
 |expirationDateTime|DateTimeOffset|在此策略中创建的工作分配的到期日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |requestorSettings|[requestorSettings](../resources/requestorsettings.md)|可从该策略请求此访问包的人。|
@@ -68,6 +68,8 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accesspackageassignmentpolicy"
@@ -101,6 +103,16 @@ Content-length: 1000
   "accessReviewSettings" : null
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accesspackageassignmentpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-accesspackageassignmentpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

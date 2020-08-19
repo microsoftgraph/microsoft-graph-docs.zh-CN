@@ -4,13 +4,13 @@ description: 表示聊天消息实体的附件。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 1b9ddbb0b8dac124370b1d20ac42e3ab1da7d1e3
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+author: clearab
+ms.openlocfilehash: 3e20e730a4613fc893897a2698a7aa0eebdbbd0c
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791081"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808772"
 ---
 # <a name="chatmessageattachment-resource-type"></a>chatMessageAttachment 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "44791081"
 
 表示聊天消息实体的附件。
 
-类型的实体作为 `chatMessageAttachment` [Get 信道消息](../api/channel-list-messages.md)API 的一部分返回，作为[了 chatmessage](chatmessage.md)实体的一部分。
+类型的实体作为 `chatMessageAttachment` [Get 信道消息](../api/channel-list-messages.md) API 的一部分返回，作为 [了 chatmessage](chatmessage.md) 实体的一部分。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -28,7 +28,7 @@ ms.locfileid: "44791081"
 |id|string| 只读。 附件的唯一 id。|
 |contentType| string | 内容附件的媒体类型。 它可以具有以下值： <br><ul><li>`reference`：附件是指向其他文件的链接。 使用指向对象的链接填充 contentURL。</li><li>Bot 框架的[附件对象](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#attachment-object)支持的任何 contentTypes</li><li>`application/vnd.microsoft.card.codesnippet`：代码段。 </li><li>`application/vnd.microsoft.card.announcement`：通知标头。 </li>|
 |contentUrl|string|附件内容的 URL。 支持的协议： http、https、文件和数据。|
-|content|string|附件的内容。 如果附件是一个[丰富的卡片](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference)，请将该属性设置为富卡片对象。 此属性和 contentUrl 相互排斥。|
+|content|string|附件的内容。 如果附件是一个 [丰富的卡片](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference)，请将该属性设置为富卡片对象。 此属性和 contentUrl 相互排斥。|
 |name|string|附件的名称。|
 |thumbnailUrl| string |如果通道支持使用替代的较小的内容或 contentUrl 的缩略图图像的 URL。 例如，如果将 contentType 设置为 application/word 并将 contentUrl 设置为 Word 文档的位置，则可以包含表示该文档的缩略图图像。 频道可以显示缩略图图像而不是文档。 当用户单击图像时，通道将打开文档。|
 

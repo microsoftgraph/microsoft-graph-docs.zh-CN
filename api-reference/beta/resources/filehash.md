@@ -1,28 +1,28 @@
 ---
 title: fileHash 资源类型
-description: 包含有关文件哈希（加密和位置敏感）的状态信息。
+description: 包含有关文件哈希 (加密和位置敏感) 的状态信息。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: a163a89e1e7ca7cb2a6bdf4c65945a601323d8fd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: preetikr
+ms.openlocfilehash: 670addd8cc244ed5c97ceaca0b9544382d80ec92
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498236"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806581"
 ---
 # <a name="filehash-resource-type"></a>fileHash 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
-包含有关文件哈希（加密和位置敏感）的状态信息。
+包含有关文件哈希 (加密和位置敏感) 的状态信息。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|hashType|[fileHashType](filehashtypeenumtype.md)枚举|文件哈希类型。 可取值为：`unknown`、`sha1`、`sha256`、`md5`、`authenticodeHash256`、`lsHash`、`ctph`、`peSha1`、`peSha256`。|
+|hashType|[fileHashType](filehashtypeenumtype.md) 枚举|文件哈希类型。 可取值为：`unknown`、`sha1`、`sha256`、`md5`、`authenticodeHash256`、`lsHash`、`ctph`、`peSha1`、`peSha256`。|
 |hashValue|String|文件哈希值。|
 
 ## <a name="json-representation"></a>JSON 表示形式

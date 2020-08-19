@@ -4,17 +4,17 @@ description: 用于打开 OneNote 分区的链接。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 0e84f6d071423159918479bdb1836855fed113a6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: jewan-microsoft
+ms.openlocfilehash: 5b9941c50711411089b8bb3ba7342943b55989c7
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520869"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807458"
 ---
 # <a name="sectionlinks-resource-type"></a>sectionLinks 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

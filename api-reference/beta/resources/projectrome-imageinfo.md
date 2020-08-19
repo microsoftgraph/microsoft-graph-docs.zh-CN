@@ -1,20 +1,20 @@
 ---
 title: imageInfo 资源类型
-description: 一个复杂类型，用于表示 activity 对象的 visualInfo 部分中**的属性属性**。
+description: 一个复杂类型，用于表示 activity 对象的 visualInfo 部分中 **的属性属性** 。
 localization_priority: Normal
 ms.prod: project-rome
 doc_type: resourcePageType
-author: ''
-ms.openlocfilehash: 4b10536af68a20bd5c92da132406fe7dd8ee65b7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ailae
+ms.openlocfilehash: a57155a880e9ba4e00dd9a4d17ddae3742bbaa8e
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521409"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807478"
 ---
 # <a name="imageinfo-resource-type"></a>imageInfo 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ ms.locfileid: "42521409"
 |:----|:-----|:-----------|
 |iconUrl | String | Optional指向代表用于生成活动的应用程序的图标的 URI|
 |alternateText | String | Optional图像的可选文本可访问内容|
-|addImageQuery | 布尔 | Optional用于指示服务器能够动态呈现图像以响应参数化的参数。 例如-高对比度图像|
+|addImageQuery | 布尔值 | Optional用于指示服务器能够动态呈现图像以响应参数化的参数。 例如-高对比度图像|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,18 +5,20 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: cloud-communications
 author: gageames
-ms.openlocfilehash: ec07c5a5cfd4bae33848b8f0e886c7ad552164ae
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: 76a540a0c1a33a1ab1cb906888c5ee6c590c48ab
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491180"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806651"
 ---
+# <a name="call-records-enum-values"></a>呼叫记录枚举值
+
 命名空间：microsoft.graph.callRecords
 
 ### <a name="calltype-values"></a>callType 值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | groupCall
@@ -25,7 +27,7 @@ ms.locfileid: "44491180"
 
 ### <a name="clientplatform-values"></a>clientPlatform 值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | 时间
@@ -41,7 +43,7 @@ ms.locfileid: "44491180"
 
 ### <a name="failurestage-values"></a>failureStage 值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | callSetup
@@ -50,14 +52,14 @@ ms.locfileid: "44491180"
 
 ### <a name="mediastreamdirection-values"></a>mediaStreamDirection 值
 
-| Member
+| 成员
 |:--------------
 | callerToCallee
 | calleeToCaller
 
 ### <a name="modality-values"></a>模态值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | audio
@@ -69,7 +71,7 @@ ms.locfileid: "44491180"
 
 ### <a name="networkconnectiontype-values"></a>networkConnectionType 值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | 有线
@@ -80,7 +82,7 @@ ms.locfileid: "44491180"
 
 ### <a name="productfamily-values"></a>productFamily 值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | 协作
@@ -90,7 +92,7 @@ ms.locfileid: "44491180"
 
 ### <a name="servicerole-values"></a>serviceRole 值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | customBot
@@ -117,7 +119,7 @@ ms.locfileid: "44491180"
 
 ### <a name="userfeedbackrating-values"></a>userFeedbackRating 值
 
-| Member
+| 成员
 |:--------------
 | notRated
 | 失败
@@ -129,7 +131,7 @@ ms.locfileid: "44491180"
 
 ### <a name="wifiband-values"></a>wifiBand 值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | frequency24GHz
@@ -139,7 +141,7 @@ ms.locfileid: "44491180"
 
 ### <a name="wifiradiotype-values"></a>wifiRadioType 值
 
-| Member
+| 成员
 |:--------------
 | unknown
 | wifi80211a

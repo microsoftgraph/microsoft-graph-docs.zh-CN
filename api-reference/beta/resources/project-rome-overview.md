@@ -4,21 +4,21 @@ description: '项目罗马是 Microsoft 计划，用于构建一个平台，使�
 localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: fd3608c458b7e1f1fe3e39fdd35e1ba03a9f531e
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+author: ailae
+ms.openlocfilehash: f9d9900aecb7226ed33c5e0cf51c7ccfaf3d2e8d
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353664"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809319"
 ---
-# <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>使用 Microsoft Graph API 处理 Project 罗马 
+# <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>使用 Microsoft Graph API 处理 Project 罗马
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[项目罗马](https://developer.microsoft.com/en-us/windows/project-rome)是 Microsoft 计划，用于构建一个平台，使应用程序开发人员能够生成强大的跨设备体验。 Project 罗马启用不同的功能，以便在用户使用相同的 Microsoft 帐户或工作或学校帐户登录时连接不同的服务和客户端终结点。 这使您能够实现以用户任务（而不是设备）为中心的跨设备和跨平台体验。 
+[项目罗马](https://developer.microsoft.com/en-us/windows/project-rome) 是 Microsoft 计划，用于构建一个平台，使应用程序开发人员能够生成强大的跨设备体验。 Project 罗马启用不同的功能，以便在用户使用相同的 Microsoft 帐户或工作或学校帐户登录时连接不同的服务和客户端终结点。 这使您能够实现以用户任务（而不是设备）为中心的跨设备和跨平台体验。
 
-通过 Microsoft Graph 公开三个关键项目罗马功能，可帮助您实现大量的跨设备体验：活动、设备和通知。 
+通过 Microsoft Graph 公开三个关键项目罗马功能，可帮助您实现大量的跨设备体验：活动、设备和通知。
 
 ## <a name="activities"></a>活动
 
@@ -30,7 +30,7 @@ ms.locfileid: "44353664"
 
 当应用程序创建会话时，会向活动中添加一个历史记录项目，以反映用户参与的时段。 用户每次 reengages 活动时，都会向活动中添加一个新的历史记录项，以计入用户约定。
 
-当应用程序发布用户活动对象时，该对象将显示在 Windows 中的一些新 UI 图面上;例如，Cortana 通知和时间线。 您可以在活动对象中指定丰富的元数据（允许活动仅显示在适当的上下文中）和丰富的视觉对象（使用[自适应卡片](https://adaptivecards.io/)标记）。
+当应用程序发布用户活动对象时，该对象将显示在 Windows 中的一些新 UI 图面上;例如，Cortana 通知和时间线。 您可以指定丰富的元数据 (，以允许在活动对象中使用 [自适应卡片](https://adaptivecards.io/) 标记) 仅在适当的上下文中显示活动) 和丰富的视觉对象 (。
 
 您可以使用以下 Microsoft Graph Api 来创建和检索用户活动：
 
@@ -58,4 +58,4 @@ ms.locfileid: "44353664"
 - [获取命令状态](../api/get-device-command-status.md)
 
 ## <a name="whats-new"></a>最近更新
-查找有关此 API 集的[最新新功能和更新](/graph/whats-new-overview)。
+了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。

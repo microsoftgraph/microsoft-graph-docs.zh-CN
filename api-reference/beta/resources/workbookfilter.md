@@ -4,17 +4,17 @@ description: 管理表格列的筛选。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
-author: ''
-ms.openlocfilehash: 4a6255f522955e7e2041a8b9b2b23e39c5379ea1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ruoyingl
+ms.openlocfilehash: 39ebe2f59e5741e4580ef5300400a0b7e480ffad
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519230"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808514"
 ---
 # <a name="workbookfilter-resource-type"></a>workbookFilter 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -4,21 +4,21 @@ description: '用户邮件分类，确保仅关注对用户更相关或更重要
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: ebd2a76a58e23fce51afcec5ffec8891859172aa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: e2055e49d627edc4492df622f916518ca0ab71df
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496213"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809437"
 ---
 # <a name="inferenceclassification-resource-type"></a>inferenceClassification 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用户邮件分类，确保仅关注对用户更相关或更重要的邮件。 
+用户邮件分类，确保仅关注对用户更相关或更重要的邮件。
 
 有关详细信息，请参阅 [管理重点收件箱](manage-focused-inbox.md)。
 

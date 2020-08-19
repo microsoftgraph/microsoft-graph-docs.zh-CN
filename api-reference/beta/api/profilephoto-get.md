@@ -4,13 +4,13 @@ description: 获取指定的 profilePhoto 或其元数据（**profilePhoto** 属
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 77c5485adbbe27e5758d27663ef893e98ca2519e
-ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
+author: kevinbellinger
+ms.openlocfilehash: d5fed793fa7e7a9a3331308064976aba1bbf1e74
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/04/2020
-ms.locfileid: "45038661"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807974"
 ---
 # <a name="get-photo"></a>获取照片
 

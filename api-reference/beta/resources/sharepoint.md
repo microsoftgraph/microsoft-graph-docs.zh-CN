@@ -4,13 +4,13 @@ description: Microsoft Graph 中的 SharePoint API 支持以下核心情形：
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: conceptualPageType
-author: ''
-ms.openlocfilehash: a88580e0e84e93ed0188992b48c559d36f0406fa
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+author: JeremyKelley
+ms.openlocfilehash: ae0ef6e765800107e4b9afea2d9fb366cbaaaf30
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353418"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807133"
 ---
 # <a name="working-with-sharepoint-sites-in-microsoft-graph"></a>使用 Microsoft Graph 中的 SharePoint 网站
 
@@ -87,8 +87,7 @@ SharePoint API 公开了三种主要资源类型：
 | /sites/{site-id}/lists/{list-id}/items | 枚举[列表](list.md)下的 [listItem](listitem.md)。
 | /groups/{group-id}/sites/root          | 访问组的团队[网站][]。
 
-Sites can also be addressed by path by using the SharePoint hostname, followed by a colon and the relative path to the site.
-You can optionally transition back to addressing the resource model by putting another colon at the end.
+还可以使用 SharePoint 主机名，后面加上冒号和网站的相对路径，来为网站寻址。可以选择将另一个冒号置于末尾，转回为资源模型寻址。
 
 | Path                                           | 说明
 |:-----------------------------------------------|:-----------------------------------

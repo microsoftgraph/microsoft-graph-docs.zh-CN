@@ -4,13 +4,13 @@ description: '表示时区。 受支持的格式为 Windows，并且 Internet �
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 3deae74f1ffc991e6e9178a46575c21d69272d2c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: 7b6e91853f595e4213b87178e87cf49fb1b64579
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519678"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806518"
 ---
 # <a name="timezoneinformation-resource-type"></a>timeZoneInformation 资源类型
 

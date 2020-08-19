@@ -1,26 +1,26 @@
 ---
 title: 更新 inferenceClassificationOverride
-description: '根据指定更改重点收件箱覆盖的**classifyAs**字段。 '
+description: '根据指定更改重点收件箱覆盖的 **classifyAs** 字段。 '
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
+author: svpsiva
 ms.prod: ''
-ms.openlocfilehash: 9417483ad5d46ac354d740e4803f7ac4be4a453d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1db87b1687d547541c61004c1bd82e0999dc1677
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446378"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807212"
 ---
 # <a name="update-inferenceclassificationoverride"></a>更新 inferenceClassificationOverride
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-根据指定更改[重点收件箱](../resources/manage-focused-inbox.md)覆盖的**classifyAs**字段。 
+根据指定更改[重点收件箱](../resources/manage-focused-inbox.md)覆盖的**classifyAs**字段。
 
-不能在 [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) 示例中使用 PATCH 更改任何其他字段。 
+不能在 [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) 示例中使用 PATCH 更改任何其他字段。
 
 如果发件人的替代存在，并且发件人更改了他/她的显示名称，可以使用 [POST](inferenceclassification-post-overrides.md) 强制更新现有替代中的名称字段。
 

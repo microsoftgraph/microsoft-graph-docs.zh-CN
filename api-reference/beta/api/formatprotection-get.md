@@ -3,18 +3,18 @@ title: 获取 FormatProtection
 description: 检索 formatprotection 对象的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
+author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: 089ccdeec3a371d56e38121ae805cc49d4b75b2e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: de7af7dc7fa5004f82180c7d8d9ec208b6eb0cf6
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421618"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807346"
 ---
 # <a name="get-formatprotection"></a>获取 FormatProtection
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

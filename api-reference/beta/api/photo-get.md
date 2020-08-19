@@ -4,17 +4,17 @@ description: 检索 photo 对象的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: a7aa378695d6d1937340df734009844d9cc69efb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: MSGraphDocsVteam
+ms.openlocfilehash: 5f010abf89299b9e25660205f5180c2bd068af57
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455842"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806763"
 ---
 # <a name="get-photo"></a>获取照片
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

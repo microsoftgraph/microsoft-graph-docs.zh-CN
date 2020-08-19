@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 571a298bec352362f0796b953b00a6df010b1ce0
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: ebcdd31572f01c88ece9c92ed5cfbd79cdd30679
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228743"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807708"
 ---
 # <a name="update-personanniversary"></a>更新 personAnniversary
 
@@ -35,7 +35,8 @@ ms.locfileid: "43228743"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/anniversaries/{id} 
+PATCH /me/profile/anniversaries/{id}
+PATCH /users/{id | userPrincipalName}/profile/anniversaries/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -49,14 +50,18 @@ PATCH /me/profile/anniversaries/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | 说明                                                      |
-|:-------------|:------------|:-----------------------------------------------------------------|
-|date          |Date         | 包含与周年纪念类型相关联的日期。          |
-|类型          |string       | 可取值为：`birthday`、`wedding`、`unknownFutureValue`。|
+下表显示了可以在用户[配置文件](../resources/profile.md)中的现有[personAnniversary](../resources/personanniversary.md)对象内进行更新的属性。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|date|Date|包含与周年纪念类型相关联的日期。|
+|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|type|anniversaryType|日期所代表的周年纪念的类型。 可取值为：`birthday`、`wedding`、`unknownFutureValue`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[personAnniversary](../resources/personanniversary.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [personAnniversary](../resources/personanniversary.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -75,8 +80,7 @@ PATCH https://graph.microsoft.com/beta/me/profile/anniversaries/{id}
 Content-type: application/json
 
 {
-  "type": "type-value",
-  "date": "datetime-value"
+  "allowedAudiences": "contacts"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -110,17 +114,28 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "type": "type-value",
-  "date": "datetime-value"
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "contacts",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "type": "birthday",
+  "date": "Date"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update personanniversary",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

@@ -4,13 +4,13 @@ description: 表示排序操作中的条件。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
-author: ''
-ms.openlocfilehash: adcebc20b39d40ef283d25cfd2a8c247160580eb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ruoyingl
+ms.openlocfilehash: d5622a727ed084f7dc8e991dd76b166527988549
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519139"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807365"
 ---
 # <a name="workbooksortfield-resource-type"></a>workbookSortField 资源类型
 

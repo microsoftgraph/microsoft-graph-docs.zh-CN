@@ -4,17 +4,17 @@ description: 表示以 JSON 格式返回的数据
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 25a142fa9fedfb3746c884e936ba06486622ae11
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ruoyingl
+ms.openlocfilehash: b3568065acad7d6a32aba5d252ac58441c211d3e
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523042"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808673"
 ---
 # <a name="json-resource-type"></a>Json 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 表示以 JSON 格式返回的数据
 ## <a name="properties"></a>属性

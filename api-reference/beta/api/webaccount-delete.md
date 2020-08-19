@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a7424ce21138eed70a26e358d362dae3c75fcef0
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 6f642c8efeb56be75fc6f3f0639c56753401b928
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229071"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809220"
 ---
 # <a name="delete-webaccount"></a>删除 webAccount
 
@@ -18,7 +18,7 @@ ms.locfileid: "43229071"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从用户的配置文件中删除[webAccount](../resources/webaccount.md)对象。
+从用户的[配置文件](../resources/profile.md)中删除[webAccount](../resources/webaccount.md)对象。
 
 ## <a name="permissions"></a>权限
 
@@ -36,6 +36,7 @@ ms.locfileid: "43229071"
 
 ```http
 DELETE /me/profile/webAccounts/{id}
+DELETE /users/{id | userPrincipalName}/profile/webAccounts/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -94,13 +95,3 @@ DELETE https://graph.microsoft.com/beta/me/profile/webAccounts/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Delete webAccount",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

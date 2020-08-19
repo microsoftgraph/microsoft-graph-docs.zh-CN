@@ -4,17 +4,17 @@ description: 代表网站。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: ebdfef4a8ee4e11c2993dbd97a735c6e01960b6b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: AAmatino
+ms.openlocfilehash: 758d802a67979c4e43aefcdb4e8a3998be15b993
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519426"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809297"
 ---
 # <a name="website-resource-type"></a>网站资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

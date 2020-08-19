@@ -3,18 +3,18 @@ title: 'Filter: clear'
 description: 清除给定列上的筛选器。
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
+author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: 1f2a766167a629b976caadd7698884c794f2be68
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ba049e3137e52d9e3450757078cec87c1eb57e78
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421646"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807345"
 ---
 # <a name="filter-clear"></a>Filter: clear
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -75,7 +75,7 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|na
 
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 
+下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,

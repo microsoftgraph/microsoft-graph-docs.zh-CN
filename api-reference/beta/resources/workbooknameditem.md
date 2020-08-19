@@ -4,17 +4,17 @@ description: 表示单元格区域或值的定义名称。名称可以为基元�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
-author: ''
-ms.openlocfilehash: 17b9e7a04a2524febcb949829b626bc6efe6b779
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ruoyingl
+ms.openlocfilehash: 5d308669196945ebbd18431000ac5836ed4194cf
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519209"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807379"
 ---
 # <a name="workbooknameditem-resource-type"></a>workbookNamedItem 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "42519209"
 |[获取 NamedItem](../api/nameditem-get.md) | [workbookNamedItem](workbooknameditem.md) |读取 nameditem 对象的属性和关系。|
 |[更新](../api/nameditem-update.md) | [workbookNamedItem](workbooknameditem.md)   |更新 NamedItem 对象。 |
 |[Range](../api/nameditem-range.md)|[workbookRange](workbookrange.md)|返回与名称相关的 range 对象。如果已命名项目的类型不是区域，将引发异常。|
-|[列出](../api/nameditem-list.md) | [workbookNamedItem](workbooknameditem.md)集合 |获取 namedItem 对象集合。 |
+|[列出](../api/nameditem-list.md) | [workbookNamedItem](workbooknameditem.md) 集合 |获取 namedItem 对象集合。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -38,7 +38,7 @@ ms.locfileid: "42519209"
 |name|string|对象的名称。只读。|
 |comment|string|表示与此名称相关联的注释。|
 |scope|string|指明是否将 name 限定到工作簿或特定工作表。只读。|
-|类型|字符串|指示与名称相关的引用类型。可能的值是：`String`、`Integer`、`Double`、`Boolean`、`Range`。只读。|
+|类型|string|指示与名称相关的引用类型。可能的值是：`String`、`Integer`、`Double`、`Boolean`、`Range`。只读。|
 |value|string|表示名称定义为引用的公式。例如 =Sheet14!$B$2:$H$12、=4.75 等。只读。|
 |visible|布尔|指定对象是否可见。|
 
@@ -69,7 +69,7 @@ ms.locfileid: "42519209"
   "type": "string",
   "value": "string",
   "visible": true
-  
+
 }
 
 ```

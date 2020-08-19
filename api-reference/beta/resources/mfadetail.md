@@ -1,20 +1,20 @@
 ---
 title: mfaDetail 资源类型
-description: '指示特定登录的 MFA 详细信息。 它包括用于登录的身份验证方法以及身份验证的详细信息（例如：电话、短信或语音邮件） '
+description: '指示特定登录的 MFA 详细信息。 它包括用于登录的身份验证方法以及身份验证详细信息 (例如：电话、短信或语音邮件)  '
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 15c15d3ec6db5acb16387a4b76501229167b0912
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: khotz
+ms.openlocfilehash: f58736d890bc530239be413aec9a6920c64856ee
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522643"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809360"
 ---
 # <a name="mfadetail-resource-type"></a>mfaDetail 资源类型
 
-命名空间： microsoft. graph 指示特定登录的 MFA 详细信息。 它包括用于登录的身份验证方法以及身份验证的详细信息（例如：电话、短信或语音邮件） 
+命名空间： microsoft. graph 指示特定登录的 MFA 详细信息。 它包括用于登录的身份验证方法以及身份验证详细信息 (例如：电话、短信或语音邮件) 
 
 
 
@@ -22,7 +22,7 @@ ms.locfileid: "42522643"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |authDetail|String|当所需的 MFA 为 "是" 时，指示对应登录活动的 MFA 身份验证详细信息。|
-|authMethod|String|指示当 "MFA 必需" 字段为 "是" 时，对相应登录活动的 MFA 身份验证方法（SMS、电话、验证器应用程序值）。|
+|authMethod|String|指示当 "MFA 必需" 字段为 "是" 时， (SMS，Phone，身份验证器应用的 MFA 身份验证方法是相应登录活动的一些值) 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

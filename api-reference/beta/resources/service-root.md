@@ -4,17 +4,17 @@ description: 2015-10-25 14:57:30 UTC-->
 localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 87de80bb6a9de28f7ed2864d630bed7e7eb4d1c4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: MSGraphDocsVteam
+ms.openlocfilehash: 32149f2f94c383cc2cfe6667396d52321a9c2bfa
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520799"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808646"
 ---
 # <a name="service-root"></a>服务根
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,9 +37,9 @@ ms.locfileid: "42520799"
 |[列出 subscribedSku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) 集合 |获取 subscribedSku 对象集合。 |
 |[Create user](../api/user-post-users.md) |[user](user.md)| 通过发布到用户集合创建新用户。|
 |[列出用户](../api/user-list.md) | [用户](user.md) 集合 |获取 user 对象集合。 |
-|[创建 connectorGroup](../api/connectorgroup-post-connectorgroups.md) |[connectorGroup](connectorgroup.md)|通过发布到 connectorGroups 集合创建新的 connectorGroup。|
-|[列出 connectorGroup](../api/connectorgroup-list.md) | [connectorGroup](connectorgroup.md)集合 |获取 connectorGroup 对象集合。 |
-|[列表连接器](../api/connector-list.md) | [连接器](connector.md)集合 |获取连接器对象集合。 |
+|[Create connectorGroup](../api/connectorgroup-post-connectorgroups.md) |[connectorGroup](connectorgroup.md)|通过发布到 connectorGroups 集合创建新的 connectorGroup。|
+|[列出 connectorGroup](../api/connectorgroup-list.md) | [connectorGroup](connectorgroup.md) 集合 |获取 connectorGroup 对象集合。 |
+|[列表连接器](../api/connector-list.md) | [连接器](connector.md) 集合 |获取连接器对象集合。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

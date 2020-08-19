@@ -4,13 +4,13 @@ description: ''
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 66f3caa7b210f32c3eabc85c945eeec50745bd63
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: MSGraphDocsVteam
+ms.openlocfilehash: 42e569afee63452cc48311cc3304c209ea71d3f5
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499195"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806693"
 ---
 # <a name="entity-resource-type"></a>实体资源类型
 

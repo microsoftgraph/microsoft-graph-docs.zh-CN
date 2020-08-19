@@ -4,17 +4,17 @@ description: 长时间运行的操作的状态。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 44d1bdfdca902652d77d978b0eae4cffdf359f39
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: billbliss
+ms.openlocfilehash: e94970609c2ccfb99e61b254b080e1dbaa244ba6
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522156"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46809311"
 ---
 # <a name="operation-resource-type"></a>操作资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

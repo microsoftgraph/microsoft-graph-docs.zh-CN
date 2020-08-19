@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 60f14889f40faedf0e6c8e75a4ff20382db7554c
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: 2e129b4e32d277cc4dd61d118f69533e29302361
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510887"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808156"
 ---
 # <a name="delete-itememail"></a>删除 itemEmail
 
@@ -35,7 +35,8 @@ ms.locfileid: "43510887"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /me/profile/emails/{id} 
+DELETE /me/profile/emails/{id}
+DELETE /users/{id | userPrincipalName}/profile/emails/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头

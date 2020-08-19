@@ -4,17 +4,17 @@ description: 由名称/值对表示的设置。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 673627d726475708c79445f818f23104f0582ef7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: dkershaw10
+ms.openlocfilehash: 1710bd136391a8c7d6d38217cb1635407570086f
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520820"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806249"
 ---
 # <a name="settingvalue-resource-type"></a>settingValue 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "42520820"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|name|string|设置的名称（由 directorySettingTemplate 定义）。|
+|name|string|由 directorySettingTemplate) 定义的设置 (的名称。|
 |value|string|设置的值。|
 
 ## <a name="json-representation"></a>JSON 表示形式

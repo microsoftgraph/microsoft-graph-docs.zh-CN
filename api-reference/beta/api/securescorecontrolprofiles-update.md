@@ -4,21 +4,21 @@ description: 在任何集成的解决方案中更新可编辑的 secureScoreCont
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 7778a6a8760c368a261154b53b138ec3801701dc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: preetikr
+ms.openlocfilehash: 6ae4d5baa48792072ad424151fc58b0533678b13
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453620"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806385"
 ---
 # <a name="update-securescorecontrolprofiles"></a>更新 secureScoreControlProfiles
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在任何集成的解决方案中更新可编辑的**secureScoreControlProfiles**属性以更改各种属性，如 "**分配给/分配**" 或 " **tenantNote**"。
+在任何集成的解决方案中更新可编辑的 **secureScoreControlProfiles** 属性以更改各种属性，如 " **分配给/分配** " 或 " **tenantNote**"。
 
 ## <a name="permissions"></a>权限
 
@@ -52,7 +52,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |assignedTo|String|为会审、实现或修正分配的控制分析员的名称。|
-|tenantNote|String|控件上的分析师注释（针对客户控制管理）。|
+|tenantNote|String|针对客户控件管理) 的控件 (的分析师注释。|
 |controlStateUpdates| String|控件上的分析导向设置。 可取值为：`ignore`、`thirdParty`、`reviewed`。|
 
 
@@ -60,7 +60,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 如果成功，此方法返回 `204 No Content` 响应代码。
 
-如果使用可选请求标头，则该方法将在`200 OK`响应正文中返回响应代码和更新的[secureScoreControlProfiles](../resources/securescorecontrolprofiles.md)对象。
+如果使用可选请求标头，则该方法将 `200 OK` 在响应正文中返回响应代码和更新的 [secureScoreControlProfiles](../resources/securescorecontrolprofiles.md) 对象。
 
 ## <a name="example"></a>示例
 

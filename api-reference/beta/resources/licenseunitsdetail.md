@@ -4,13 +4,13 @@ description: '**subscribedSku** 实体的 prepaidUnits 属性为 **licenseUnitsD
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: c302ed46843a0ef8c235ec9e3e814a069dfa0e51
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: krbain
+ms.openlocfilehash: bbff4ac919f5973caff7fbbc30fdc5d7352550b4
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522965"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807505"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>licenseUnitsDetail 资源类型
 

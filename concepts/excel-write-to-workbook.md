@@ -4,12 +4,12 @@ description: q=excelstarter)。
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 1dd914289342a80a3efbe258a0bfad30506d63f1
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 0f78069ae88cfcc7ac7ab18cd17f0ace61d24631
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793666"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806728"
 ---
 # <a name="write-data-to-an-excel-workbook-with-microsoft-graph"></a>使用 Microsoft Graph 将数据写入 Excel 工作簿
 
@@ -31,12 +31,14 @@ Excel REST API 要求将简单的请求正文发布到代表 Excel 工作簿行�
 
 POST 正文如下所示：
 
-`{
+```json
+{
   "index": null,
   "values": [
     ['alex darrow', 'adarrow@tenant.onmicrosoft.com']
   ]
-}`
+}
+```
 
 第一个 `index` 参数的值指定要添加到零索引行数组的行的相对位置。 插入行下方的行将会向下移动。 `null` 参数指示将添加到结尾的新行。
 
@@ -52,52 +54,56 @@ POST 正文如下所示：
 
 `GraphResources.cs` 文件提供了帮助程序类，用于封装从 Microsoft Graph 中检索的用户数据，以及在写入工作簿时将使用的请求正文。
 
-    public class UserInfo
-    {
-        public string Name { get; set; }
-        public string Address { get; set; }
+```csharp
+public class UserInfo
+{
+    public string Name { get; set; }
+    public string Address { get; set; }
 
-    }
+}
 
-    public class UserInfoRequest
-    {
-        public string index { get; set; }
-        public string[][] values { get; set; }
-    }
+public class UserInfoRequest
+{
+    public string index { get; set; }
+    public string[][] values { get; set; }
+}
+```
 
 `GraphService.cs` 类包含 `AddInfoToExcel` 方法，可用于填充这些类、将请求信息序列化为 JSON 对象，然后将该对象作为 POST 请求正文传递。
 
-        public async Task<string> AddInfoToExcel(string accessToken, string name, string address)
+```csharp
+public async Task<string> AddInfoToExcel(string accessToken, string name, string address)
+{
+    string endpoint = "https://graph.microsoft.com/v1.0/me/drive/root:/demo.xlsx:/workbook/tables/Table1/rows/add";
+    using (var client = new HttpClient())
+    {
+        using (var request = new HttpRequestMessage(HttpMethod.Post, endpoint))
         {
-            string endpoint = "https://graph.microsoft.com/v1.0/me/drive/root:/demo.xlsx:/workbook/tables/Table1/rows/add";
-            using (var client = new HttpClient())
+            // Populate UserInfoRequest object
+            string[] userInfo = { name, address  };
+            string[][] userInfoArray = { userInfo };
+            UserInfoRequest userInfoRequest = new UserInfoRequest();
+            userInfoRequest.index = null;
+            userInfoRequest.values = userInfoArray;
+
+            // Serialize the information in the UserInfoRequest object
+            string jsonBody = JsonConvert.SerializeObject(userInfoRequest);
+            request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+            request.Content = new StringContent(jsonBody, Encoding.UTF8, "application/json");
+
+            using (var response = await client.SendAsync(request))
             {
-                using (var request = new HttpRequestMessage(HttpMethod.Post, endpoint))
+                if (response.IsSuccessStatusCode)
                 {
-                    // Populate UserInfoRequest object
-                    string[] userInfo = { name, address  };
-                    string[][] userInfoArray = { userInfo };
-                    UserInfoRequest userInfoRequest = new UserInfoRequest();
-                    userInfoRequest.index = null;
-                    userInfoRequest.values = userInfoArray;
-
-                    // Serialize the information in the UserInfoRequest object
-                    string jsonBody = JsonConvert.SerializeObject(userInfoRequest);
-                    request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-                    request.Content = new StringContent(jsonBody, Encoding.UTF8, "application/json");
-
-                    using (var response = await client.SendAsync(request))
-                    {
-                        if (response.IsSuccessStatusCode)
-                        {
-                            return Resource.Graph_UploadToExcel_Success_Result;
-                        }
-                        return response.ReasonPhrase;
-                    }
+                    return Resource.Graph_UploadToExcel_Success_Result;
                 }
+                return response.ReasonPhrase;
             }
         }
+    }
+}
+```
 
 ## <a name="add-a-row-or-rows-to-an-excel-workbook-in-angular"></a>将一行或多行添加到 Angular Excel 工作簿
 
@@ -107,25 +113,27 @@ POST 正文如下所示：
 
 `home.service.ts` 文件中的 `addInfoToExcel` 函数构造二维字符串数组和包含数组的请求正文。 然后使用 Microsoft Graph JavaScript 客户端库构造和发送请求。 响应以承诺的形式返回。
 
-      addInfoToExcel(user: MicrosoftGraph.User) {
-        const userInfo = [];
-        const userEmail = user.mail || user.userPrincipalName;    
-        userInfo.push([user.displayName, userEmail]);
+```typescript
+addInfoToExcel(user: MicrosoftGraph.User) {
+  const userInfo = [];
+  const userEmail = user.mail || user.userPrincipalName;
+  userInfo.push([user.displayName, userEmail]);
 
-        const userInfoRequestBody = {
-          index: null,
-          values: userInfo
-        };   
+  const userInfoRequestBody = {
+    index: null,
+    values: userInfo
+  };
 
-        const body = JSON.stringify(userInfoRequestBody);
+  const body = JSON.stringify(userInfoRequestBody);
 
-        var client = this.getClient();
-        var url = `${this.url}/me/drive/root:/${this.file}:/workbook/tables/${this.table}/rows/add`
-        return Observable.fromPromise(client
-        .api(url)
-        .post(body)
-        );
-      }
+  var client = this.getClient();
+  var url = `${this.url}/me/drive/root:/${this.file}:/workbook/tables/${this.table}/rows/add`
+  return Observable.fromPromise(client
+  .api(url)
+  .post(body)
+  );
+}
+```
 
 ## <a name="add-a-row-or-rows-to-an-excel-workbook-in-react"></a>将一行或多行添加到 React Excel 工作簿
 
@@ -133,26 +141,28 @@ POST 正文如下所示：
 
 `onWriteToExcel` 函数构造二维字符串数组并将其作为请求正文传递。 它使用 [axios](https://www.npmjs.com/package/axios) 发出进行 HTTP 请求。
 
-      onWriteToExcel() {
-        const { token, me } = this.state;
+```typescript
+onWriteToExcel() {
+  const { token, me } = this.state;
 
-        const myEmailAddress = me.mail || me.userPrincipalName;
-        const values = [];
+  const myEmailAddress = me.mail || me.userPrincipalName;
+  const values = [];
 
-        values.push([me.displayName, myEmailAddress]);
+  values.push([me.displayName, myEmailAddress]);
 
-        axios
-          .post('https://graph.microsoft.com/v1.0/me/drive/root:/demo.xlsx:/workbook/tables/Table1/rows/add',
-            { index: null, values },
-            { headers: { Authorization: `Bearer ${token}` }}
-          )
-          .then(res => {
-                          console.log(res);
-                          const successMessage = "Successfully wrote your data to demo.xlsx!";
-                          this.setState ({ successMessage });
-                         })
-          .catch(err => console.error(err));
-      }
+  axios
+    .post('https://graph.microsoft.com/v1.0/me/drive/root:/demo.xlsx:/workbook/tables/Table1/rows/add',
+      { index: null, values },
+      { headers: { Authorization: `Bearer ${token}` }}
+    )
+    .then(res => {
+                    console.log(res);
+                    const successMessage = "Successfully wrote your data to demo.xlsx!";
+                    this.setState ({ successMessage });
+                    })
+    .catch(err => console.error(err));
+}
+```
 
 ## <a name="see-also"></a>另请参阅
 
@@ -160,4 +170,4 @@ POST 正文如下所示：
 * [通过 Microsoft Graph 使用 Excel 工作簿函数](excel-use-functions.md)
 * [通过 Microsoft Graph 更新 Excel 区域的格式](excel-update-range-format.md)
 * [通过 Microsoft Graph 显示 Excel 图表图像](excel-display-chart-image.md)
-* [使用 Excel REST API](/graph/api/resources/excel?view=graph-rest-1.0)    
+* [使用 Excel REST API](/graph/api/resources/excel?view=graph-rest-1.0)

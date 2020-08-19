@@ -3,22 +3,22 @@ title: 获取设备命令状态
 description: 获取设备上命令的状态。 有关状态代码的完整列表，请参阅 actionStatus 的列表。
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
+author: ailae
 ms.prod: ''
-ms.openlocfilehash: fee9b291145bce2e5cca4bc54405a833e95ec053
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 33470cb5aceb402d6a37749fa8c2ebcfcd0bce75
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421436"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807330"
 ---
 # <a name="get-device-command-status"></a>获取设备命令状态
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取设备上命令的状态。 有关状态代码的完整列表，请参阅[actionStatus 的列表](#list-of-actionstatus)。
+获取设备上命令的状态。 有关状态代码的完整列表，请参阅 [actionStatus 的列表](#list-of-actionstatus)。
 
 ## <a name="permissions"></a>权限
 
@@ -87,7 +87,7 @@ HTTP/1.1 200 OK
 
 ## <a name="example"></a>示例
 
-在此示例中，将需要设备的 ID 以及已颁发给设备的命令的 ID。 在发出对`/me/devices`的 GET 呼叫时，将返回设备 ID，并且在对`/me/devices/{id}/command`进行开机自检呼叫时返回命令 id。
+在此示例中，将需要设备的 ID 以及已颁发给设备的命令的 ID。 在发出对的 GET 呼叫时，将返回设备 ID `/me/devices` ，并且在对进行开机自检呼叫时返回命令 id `/me/devices/{id}/command` 。
 
 #### <a name="request"></a>请求
 
@@ -181,13 +181,13 @@ HTTP/1.1 200 OK
 
 ### <a name="example"></a>示例
 
-在此示例中，将需要设备的 ID 以及已颁发给设备的命令的 ID。 在`/me/devices`发出 GET 呼叫时，将返回设备 ID，并在对`/me/devices/{id}/command`进行开机自检呼叫时返回命令 id。
+在此示例中，将需要设备的 ID 以及已颁发给设备的命令的 ID。 在发出 GET 呼叫时，将返回设备 ID `/me/devices` ，并在对进行开机自检呼叫时返回命令 id `/me/devices/{id}/command` 。
 
 #### <a name="request"></a>请求
 
 下面为请求示例。
 
-<!-- { 
+<!-- {
   "blockType": "ignored",
   "name": "get_command_payload"
 } -->

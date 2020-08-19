@@ -4,34 +4,34 @@ description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: ec4b6ba22aceaaaeb3c612f61eb522bfe14243c6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: preetikr
+ms.openlocfilehash: 5b50c67dff87121caf225ff7191ea8f377616522
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496864"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807939"
 ---
 # <a name="hostsecuritystate-resource-type"></a>hostSecurityState 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含有关主机的状态信息（包括设备、计算机等）。
+包含有关主机 (的状态信息，包括设备、计算机等) 。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
-|域名|String|主机 FQDN （完全限定的域名）（例如，machine.company.com）。|
-|isAzureAadJoined|布尔|如此如果主机已加入域到 Azure Active Directory 域服务。|
-|isAzureAadRegistered|布尔|如果主机注册到 Azure Active Directory 设备注册（BYOD 设备，而不是由企业完全管理），则该属性值为 True。|
-|isHybridAzureDomainJoined|布尔|如此如果主机已加入域到本地 Active Directory 域。|
+|域名|String|主机 FQDN (完全限定的域名)  (例如，machine.company.com) 。|
+|isAzureAadJoined|布尔值|如此如果主机已加入域到 Azure Active Directory 域服务。|
+|isAzureAadRegistered|布尔值|如果主机注册到 Azure Active Directory 设备注册 (BYOD 设备-即不是由企业) 完全管理的，则该属性值为 True。|
+|isHybridAzureDomainJoined|布尔值|如此如果主机已加入域到本地 Active Directory 域。|
 |netBiosName|String|本地主机名，不包含 DNS 域名。|
-|os|String|主机操作系统。 （例如，Windows10、MacOS、RHEL 等）。|
-|privateIpAddress|String|在出现警报时专用（不可路由） IPv4 或 IPv6 地址（请参阅[RFC 1918](https://tools.ietf.org/html/rfc1918)）。|
-|publicIpAddress|String|在警报时可公开路由的 IPv4 或 IPv6 地址（请参阅[RFC 1918](https://tools.ietf.org/html/rfc1918)）。|
+|os|String|主机操作系统。  (例如，Windows10、MacOS、RHEL 等 ) 。|
+|privateIpAddress|String|专用 (不可路由) IPv4 或 IPv6 地址 (请参阅在发出警报时) [RFC 1918](https://tools.ietf.org/html/rfc1918) 。|
+|publicIpAddress|String|可公开路由的 IPv4 或 IPv6 地址 (请参阅 [RFC 1918](https://tools.ietf.org/html/rfc1918)) 警报时间。|
 |riskScore|String|主机的提供程序生成/计算的风险分数。  建议的值范围为0-1，这相当于一个百分比。|
 
 ## <a name="json-representation"></a>JSON 表示形式

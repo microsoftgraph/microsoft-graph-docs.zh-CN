@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 0a6d63a32157d888fadfdb800c3f239ea6e92f98
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: abbfc0fdabad6dcd43ce49a906b59573d3f585da
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228750"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807701"
 ---
 # <a name="delete-personanniversary"></a>删除 personAnniversary
 
@@ -35,7 +35,8 @@ ms.locfileid: "43228750"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /me/profile/anniversaries/{id} 
+DELETE /me/profile/anniversaries/{id}
+DELETE /users/{id | userPrincipalName}/profile/anniversaries/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -93,13 +94,3 @@ DELETE https://graph.microsoft.com/beta/me/profile/anniversaries/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Delete personAnniversary",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

@@ -4,17 +4,17 @@ description: 表示特权角色的设置。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: c072f75095267910d128396c3848b2decca4728c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: shauliu
+ms.openlocfilehash: f1e213ff99f7d67894e4f764ea8862f9d3a8ce98
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521493"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807498"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>privilegedRoleSettings 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,14 +32,14 @@ ms.locfileid: "42521493"
 |:---------------|:--------|:----------|
 |elevationDuration|duration|激活角色的持续时间。|
 |id|string| 角色设置的唯一标识符。 只读。|
-|isMfaOnElevationConfigurable|boolean|如果 mfaOnElevation 是可配置的，**则为 true** 。 **假**如果 mfaOnElevation 不可配置。|
+|isMfaOnElevationConfigurable|boolean|如果 mfaOnElevation 是可配置的，**则为 true** 。 **假** 如果 mfaOnElevation 不可配置。|
 |lastGlobalAdmin|boolean|仅供内部使用。|
 |maxElavationDuration|duration|已激活角色的最大持续时间。|
-|mfaOnElevation|boolean|如果需要 MFA 以激活角色，**则为 true** 。 **假**如果无需进行 MFA 即可激活角色。|
+|mfaOnElevation|boolean|如果需要 MFA 以激活角色，**则为 true** 。 **假** 如果无需进行 MFA 即可激活角色。|
 |minElevationDuration|duration|已激活角色的最短持续时间。|
-|notificationToUserOnElevation|boolean|如果激活角色时向最终用户发送通知，**则为 true** 。 **假**如果在角色激活时不发送通知。|
-|ticketingInfoOnElevation|boolean|如果激活角色时需要票证信息，**则为 true** 。 **假**如果激活角色时不需要票证信息。|
-|approvalOnElevation|boolean|如果激活角色时需要进行审批，**则为 true** 。 **假**如果激活该角色时不需要审批。|
+|notificationToUserOnElevation|boolean|如果激活角色时向最终用户发送通知，**则为 true** 。 **假** 如果在角色激活时不发送通知。|
+|ticketingInfoOnElevation|boolean|如果激活角色时需要票证信息，**则为 true** 。 **假** 如果激活角色时不需要票证信息。|
+|approvalOnElevation|boolean|如果激活角色时需要进行审批，**则为 true** 。 **假** 如果激活该角色时不需要审批。|
 |approverIds| string 集合 |审批 id 的列表（如果激活需要审批）。|
 
 ## <a name="relationships"></a>关系

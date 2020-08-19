@@ -4,28 +4,28 @@ description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 3827562407b0c253c1d5a16ff26071e8500010bd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: preetikr
+ms.openlocfilehash: e030ce95ef2b8c5f1af5424bfdd0e727f2d3e2f6
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498166"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806539"
 ---
 # <a name="filesecuritystate-resource-type"></a>fileSecurityState 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含有关与警报相关的文件（不处理）的信息。
+包含有关文件的信息 (不处理与警报相关的) 。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
-|fileHash|[fileHash](filehash.md)|包含文件哈希（加密和位置敏感）的复杂类型。|
-|name|String|文件名（不含路径）。|
+|fileHash|[fileHash](filehash.md)|包含 (加密和位置敏感) 的文件哈希的复杂类型。|
+|name|String|不 (路径) 的文件名。|
 |路径|String|文件/imageFile 的完整文件路径。|
 |riskScore|String|通知文件的提供程序生成/计算风险分数。 建议的值范围为0-1，这相当于一个百分比。|
 
