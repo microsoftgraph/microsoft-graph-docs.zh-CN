@@ -10252,7 +10252,7 @@ items:
                       - name: 获取
                         href: api/accesspackagecatalog-get.md
                       - name: 更新
-                        href: api/accesspackage-update.md
+                        href: api/accesspackagecatalog-update.md
                       - name: 删除
                         href: api/accesspackagecatalog-delete.md
                       - name: 列出资源
@@ -10730,15 +10730,37 @@ items:
               - name: 删除用户的配置文件
                 href: api/profile-delete.md
               - name: 帐户信息
-                href: resources/useraccountinformation.md
                 items:
-                  - name: 列表
-                    href: api/profile-list-account.md
+                  - name: 用户帐户信息
+                    href: resources/useraccountinformation.md
+                  - name: 列出
+                    href: api/profile-list-accounts.md
+                  - name: 创建
+                    href: api/profile-post-accounts.md
                   - name: 获取
                     href: api/useraccountinformation-get.md
-              - name: 周年
-                href: resources/personanniversary.md
+                  - name: 更新
+                    href: api/useraccountinformation-update.md
+                  - name: 删除
+                    href: api/useraccountinformation-delete.md
+              - name: Addresses
                 items:
+                  - name: 项目地址
+                    href: resources/itemaddress.md
+                  - name: 列出
+                    href: api/profile-list-addresses.md
+                  - name: 创建
+                    href: api/profile-post-addresses.md
+                  - name: 获取
+                    href: api/itemaddress-get.md
+                  - name: 更新
+                    href: api/itemaddress-update.md
+                  - name: 删除
+                    href: api/itemaddress-delete.md
+              - name: 周年
+                items:
+                  - name: 人员周年纪念
+                    href: resources/personanniversary.md
                   - name: 列出
                     href: api/profile-list-anniversaries.md
                   - name: 创建
@@ -10749,9 +10771,38 @@ items:
                     href: api/personanniversary-update.md
                   - name: 删除
                     href: api/personanniversary-delete.md
-              - name: 教育活动
-                href: resources/educationalactivity.md
+              - name: 奖励
                 items:
+                  - name: 人员奖
+                    href: resources/personaward.md
+                  - name: 列出
+                    href: api/profile-list-awards.md
+                  - name: 创建
+                    href: api/profile-post-awards.md
+                  - name: 获取
+                    href: api/personaward-get.md
+                  - name: 更新
+                    href: api/personaward-update.md
+                  - name: 删除
+                    href: api/personaward-delete.md
+              - name: 证书
+                items:
+                  - name: 个人证书
+                    href: resources/personcertification.md
+                  - name: 列出
+                    href: api/profile-list-certifications.md
+                  - name: 创建
+                    href: api/profile-post-certifications.md
+                  - name: 获取
+                    href: api/personcertification-get.md
+                  - name: 更新
+                    href: api/personcertification-update.md
+                  - name: 删除
+                    href: api/personcertification-delete.md
+              - name: 教育活动
+                items:
+                  - name: 教育活动
+                    href: resources/educationalactivity.md
                   - name: 列出
                     href: api/profile-list-educationalactivities.md
                   - name: 创建
@@ -10763,8 +10814,9 @@ items:
                   - name: 删除
                     href: api/educationalactivity-delete.md
               - name: 电子邮件地址
-                href: resources/itememail.md
                 items:
+                  - name: 项目电子邮件
+                    href: resources/itememail.md
                   - name: 列出
                     href: api/profile-list-emails.md
                   - name: 创建
@@ -10776,8 +10828,9 @@ items:
                   - name: 删除
                     href: api/itememail-delete.md
               - name: Interests
-                href: resources/personinterest.md
                 items:
+                  - name: 人员兴趣
+                    href: resources/personinterest.md
                   - name: 列出
                     href: api/profile-list-interests.md
                   - name: 创建
@@ -10789,8 +10842,9 @@ items:
                   - name: 删除
                     href: api/personinterest-delete.md
               - name: 语言
-                href: resources/languageproficiency.md
                 items:
+                  - name: 语言熟练程度
+                    href: resources/languageproficiency.md
                   - name: 列出
                     href: api/profile-list-languages.md
                   - name: 创建
@@ -10802,8 +10856,9 @@ items:
                   - name: 删除
                     href: api/languageproficiency-delete.md
               - name: 名称
-                href: resources/personname.md
                 items:
+                  - name: 人员姓名
+                    href: resources/personname.md
                   - name: 列出
                     href: api/profile-list-names.md
                   - name: 创建
@@ -10814,9 +10869,38 @@ items:
                     href: api/personname-update.md
                   - name: 删除
                     href: api/personname-delete.md
-              - name: Phones
-                href: resources/itemphone.md
+              - name: 注释
                 items:
+                  - name: 人员批注
+                    href: resources/personannotation.md
+                  - name: 列出
+                    href: api/profile-list-notes.md
+                  - name: 创建
+                    href: api/profile-post-notes.md
+                  - name: 获取
+                    href: api/personannotation-get.md
+                  - name: 更新
+                    href: api/personannotation-update.md
+                  - name: 删除
+                    href: api/personannotation-delete.md
+              - name: 专利
+                items:
+                  - name: 物料专利
+                    href: resources/itempatent.md
+                  - name: 列出
+                    href: api/profile-list-patents.md
+                  - name: 创建
+                    href: api/profile-post-patents.md
+                  - name: 获取
+                    href: api/itempatent-get.md
+                  - name: 更新
+                    href: api/itempatent-update.md
+                  - name: 删除
+                    href: api/itempatent-delete.md
+              - name: Phones
+                items:
+                  - name: 项目电话
+                    href: resources/itemphone.md
                   - name: 列出
                     href: api/profile-list-phones.md
                   - name: 创建
@@ -10828,8 +10912,9 @@ items:
                   - name: 删除
                     href: api/itemphone-delete.md
               - name: Positions
-                href: resources/workposition.md
                 items:
+                  - name: 工作位置
+                    href: resources/workposition.md
                   - name: 列出
                     href: api/profile-list-positions.md
                   - name: 创建
@@ -10841,8 +10926,9 @@ items:
                   - name: 删除
                     href: api/workposition-delete.md
               - name: 项目
-                href: resources/projectparticipation.md
                 items:
+                  - name: 项目参与
+                    href: resources/projectparticipation.md
                   - name: 列出
                     href: api/profile-list-projects.md
                   - name: 创建
@@ -10853,9 +10939,38 @@ items:
                     href: api/projectparticipation-update.md
                   - name: 删除
                     href: api/projectparticipation-delete.md
-              - name: Skills
-                href: resources/skillproficiency.md
+              - name: 条目
                 items:
+                  - name: 项目出版物
+                    href: resources/itempublication.md
+                  - name: 列出
+                    href: api/profile-list-publications.md
+                  - name: 创建
+                    href: api/profile-post-publications.md
+                  - name: 获取
+                    href: api/itempublication-get.md
+                  - name: 更新
+                    href: api/itempublication-update.md
+                  - name: 删除
+                    href: api/itempublication-delete.md
+              - name: Responsibilities
+                items:
+                  - name: 人员责任
+                    href: resources/personresponsibility.md
+                  - name: 列出
+                    href: api/profile-list-responsibilities.md
+                  - name: 创建
+                    href: api/profile-post-responsibilities.md
+                  - name: 获取
+                    href: api/personresponsibility-get.md
+                  - name: 更新
+                    href: api/personresponsibility-update.md
+                  - name: 删除
+                    href: api/personresponsibility-delete.md
+              - name: Skills
+                items:
+                  - name: 技能熟练程度
+                    href: resources/skillproficiency.md
                   - name: 列出
                     href: api/profile-list-skills.md
                   - name: 创建
@@ -10867,8 +10982,9 @@ items:
                   - name: 删除
                     href: api/skillproficiency-delete.md
               - name: Web 帐户
-                href: resources/webaccount.md
                 items:
+                  - name: Web 帐户
+                    href: resources/webaccount.md
                   - name: 列出
                     href: api/profile-list-webaccounts.md
                   - name: 创建
@@ -10880,8 +10996,9 @@ items:
                   - name: 删除
                     href: api/webaccount-delete.md
               - name: 网站
-                href: resources/personwebsite.md
                 items:
+                  - name: 人员网站
+                    href: resources/personwebsite.md
                   - name: 列出
                     href: api/profile-list-websites.md
                   - name: 创建
@@ -11597,7 +11714,7 @@ items:
         items:
           - name: 概述
             href: resources/planner-overview.md
-          - name: 规划
+          - name: 计划
             href: resources/plannerplan.md
             items:
               - name: 列出组计划

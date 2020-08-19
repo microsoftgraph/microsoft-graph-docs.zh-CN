@@ -5,150 +5,152 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: cloud-communications
 author: gageames
-ms.openlocfilehash: ec07c5a5cfd4bae33848b8f0e886c7ad552164ae
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: 76a540a0c1a33a1ab1cb906888c5ee6c590c48ab
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491944"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808233"
 ---
-<span data-ttu-id="a3e49-103">命名空间：microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="a3e49-103">Namespace: microsoft.graph.callRecords</span></span>
+# <a name="call-records-enum-values"></a><span data-ttu-id="bc1cd-103">呼叫记录枚举值</span><span class="sxs-lookup"><span data-stu-id="bc1cd-103">Call records enum values</span></span>
 
-### <a name="calltype-values"></a><span data-ttu-id="a3e49-104">callType 值</span><span class="sxs-lookup"><span data-stu-id="a3e49-104">callType values</span></span>
+<span data-ttu-id="bc1cd-104">命名空间：microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="bc1cd-104">Namespace: microsoft.graph.callRecords</span></span>
 
-| <span data-ttu-id="a3e49-105">Member</span><span class="sxs-lookup"><span data-stu-id="a3e49-105">Member</span></span>
+### <a name="calltype-values"></a><span data-ttu-id="bc1cd-105">callType 值</span><span class="sxs-lookup"><span data-stu-id="bc1cd-105">callType values</span></span>
+
+| <span data-ttu-id="bc1cd-106">成员</span><span class="sxs-lookup"><span data-stu-id="bc1cd-106">Member</span></span>
 |:--------------
-| <span data-ttu-id="a3e49-106">unknown</span><span class="sxs-lookup"><span data-stu-id="a3e49-106">unknown</span></span>
-| <span data-ttu-id="a3e49-107">groupCall</span><span class="sxs-lookup"><span data-stu-id="a3e49-107">groupCall</span></span>
-| <span data-ttu-id="a3e49-108">peerToPeer</span><span class="sxs-lookup"><span data-stu-id="a3e49-108">peerToPeer</span></span>
-| <span data-ttu-id="a3e49-109">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="a3e49-109">unknownFutureValue</span></span>
+| <span data-ttu-id="bc1cd-107">unknown</span><span class="sxs-lookup"><span data-stu-id="bc1cd-107">unknown</span></span>
+| <span data-ttu-id="bc1cd-108">groupCall</span><span class="sxs-lookup"><span data-stu-id="bc1cd-108">groupCall</span></span>
+| <span data-ttu-id="bc1cd-109">peerToPeer</span><span class="sxs-lookup"><span data-stu-id="bc1cd-109">peerToPeer</span></span>
+| <span data-ttu-id="bc1cd-110">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="bc1cd-110">unknownFutureValue</span></span>
 
-### <a name="clientplatform-values"></a><span data-ttu-id="a3e49-110">clientPlatform 值</span><span class="sxs-lookup"><span data-stu-id="a3e49-110">clientPlatform values</span></span>
+### <a name="clientplatform-values"></a><span data-ttu-id="bc1cd-111">clientPlatform 值</span><span class="sxs-lookup"><span data-stu-id="bc1cd-111">clientPlatform values</span></span>
 
-| <span data-ttu-id="a3e49-111">Member</span><span class="sxs-lookup"><span data-stu-id="a3e49-111">Member</span></span>
+| <span data-ttu-id="bc1cd-112">成员</span><span class="sxs-lookup"><span data-stu-id="bc1cd-112">Member</span></span>
 |:--------------
-| <span data-ttu-id="a3e49-112">unknown</span><span class="sxs-lookup"><span data-stu-id="a3e49-112">unknown</span></span>
-| <span data-ttu-id="a3e49-113">时间</span><span class="sxs-lookup"><span data-stu-id="a3e49-113">windows</span></span>
-| <span data-ttu-id="a3e49-114">macOS</span><span class="sxs-lookup"><span data-stu-id="a3e49-114">macOS</span></span>
-| <span data-ttu-id="a3e49-115">iOS</span><span class="sxs-lookup"><span data-stu-id="a3e49-115">iOS</span></span>
-| <span data-ttu-id="a3e49-116">android</span><span class="sxs-lookup"><span data-stu-id="a3e49-116">android</span></span>
-| <span data-ttu-id="a3e49-117">web</span><span class="sxs-lookup"><span data-stu-id="a3e49-117">web</span></span>
-| <span data-ttu-id="a3e49-118">ipPhone</span><span class="sxs-lookup"><span data-stu-id="a3e49-118">ipPhone</span></span>
-| <span data-ttu-id="a3e49-119">roomSystem</span><span class="sxs-lookup"><span data-stu-id="a3e49-119">roomSystem</span></span>
-| <span data-ttu-id="a3e49-120">surfaceHub</span><span class="sxs-lookup"><span data-stu-id="a3e49-120">surfaceHub</span></span>
-| <span data-ttu-id="a3e49-121">holoLens</span><span class="sxs-lookup"><span data-stu-id="a3e49-121">holoLens</span></span>
-| <span data-ttu-id="a3e49-122">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="a3e49-122">unknownFutureValue</span></span>
+| <span data-ttu-id="bc1cd-113">unknown</span><span class="sxs-lookup"><span data-stu-id="bc1cd-113">unknown</span></span>
+| <span data-ttu-id="bc1cd-114">时间</span><span class="sxs-lookup"><span data-stu-id="bc1cd-114">windows</span></span>
+| <span data-ttu-id="bc1cd-115">macOS</span><span class="sxs-lookup"><span data-stu-id="bc1cd-115">macOS</span></span>
+| <span data-ttu-id="bc1cd-116">iOS</span><span class="sxs-lookup"><span data-stu-id="bc1cd-116">iOS</span></span>
+| <span data-ttu-id="bc1cd-117">android</span><span class="sxs-lookup"><span data-stu-id="bc1cd-117">android</span></span>
+| <span data-ttu-id="bc1cd-118">web</span><span class="sxs-lookup"><span data-stu-id="bc1cd-118">web</span></span>
+| <span data-ttu-id="bc1cd-119">ipPhone</span><span class="sxs-lookup"><span data-stu-id="bc1cd-119">ipPhone</span></span>
+| <span data-ttu-id="bc1cd-120">roomSystem</span><span class="sxs-lookup"><span data-stu-id="bc1cd-120">roomSystem</span></span>
+| <span data-ttu-id="bc1cd-121">surfaceHub</span><span class="sxs-lookup"><span data-stu-id="bc1cd-121">surfaceHub</span></span>
+| <span data-ttu-id="bc1cd-122">holoLens</span><span class="sxs-lookup"><span data-stu-id="bc1cd-122">holoLens</span></span>
+| <span data-ttu-id="bc1cd-123">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="bc1cd-123">unknownFutureValue</span></span>
 
-### <a name="failurestage-values"></a><span data-ttu-id="a3e49-123">failureStage 值</span><span class="sxs-lookup"><span data-stu-id="a3e49-123">failureStage values</span></span>
+### <a name="failurestage-values"></a><span data-ttu-id="bc1cd-124">failureStage 值</span><span class="sxs-lookup"><span data-stu-id="bc1cd-124">failureStage values</span></span>
 
-| <span data-ttu-id="a3e49-124">Member</span><span class="sxs-lookup"><span data-stu-id="a3e49-124">Member</span></span>
+| <span data-ttu-id="bc1cd-125">成员</span><span class="sxs-lookup"><span data-stu-id="bc1cd-125">Member</span></span>
 |:--------------
-| <span data-ttu-id="a3e49-125">unknown</span><span class="sxs-lookup"><span data-stu-id="a3e49-125">unknown</span></span>
-| <span data-ttu-id="a3e49-126">callSetup</span><span class="sxs-lookup"><span data-stu-id="a3e49-126">callSetup</span></span>
-| <span data-ttu-id="a3e49-127">midcall</span><span class="sxs-lookup"><span data-stu-id="a3e49-127">midcall</span></span>
-| <span data-ttu-id="a3e49-128">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="a3e49-128">unknownFutureValue</span></span>
+| <span data-ttu-id="bc1cd-126">unknown</span><span class="sxs-lookup"><span data-stu-id="bc1cd-126">unknown</span></span>
+| <span data-ttu-id="bc1cd-127">callSetup</span><span class="sxs-lookup"><span data-stu-id="bc1cd-127">callSetup</span></span>
+| <span data-ttu-id="bc1cd-128">midcall</span><span class="sxs-lookup"><span data-stu-id="bc1cd-128">midcall</span></span>
+| <span data-ttu-id="bc1cd-129">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="bc1cd-129">unknownFutureValue</span></span>
 
-### <a name="mediastreamdirection-values"></a><span data-ttu-id="a3e49-129">mediaStreamDirection 值</span><span class="sxs-lookup"><span data-stu-id="a3e49-129">mediaStreamDirection values</span></span>
+### <a name="mediastreamdirection-values"></a><span data-ttu-id="bc1cd-130">mediaStreamDirection 值</span><span class="sxs-lookup"><span data-stu-id="bc1cd-130">mediaStreamDirection values</span></span>
 
-| <span data-ttu-id="a3e49-130">Member</span><span class="sxs-lookup"><span data-stu-id="a3e49-130">Member</span></span>
+| <span data-ttu-id="bc1cd-131">成员</span><span class="sxs-lookup"><span data-stu-id="bc1cd-131">Member</span></span>
 |:--------------
-| <span data-ttu-id="a3e49-131">callerToCallee</span><span class="sxs-lookup"><span data-stu-id="a3e49-131">callerToCallee</span></span>
-| <span data-ttu-id="a3e49-132">calleeToCaller</span><span class="sxs-lookup"><span data-stu-id="a3e49-132">calleeToCaller</span></span>
+| <span data-ttu-id="bc1cd-132">callerToCallee</span><span class="sxs-lookup"><span data-stu-id="bc1cd-132">callerToCallee</span></span>
+| <span data-ttu-id="bc1cd-133">calleeToCaller</span><span class="sxs-lookup"><span data-stu-id="bc1cd-133">calleeToCaller</span></span>
 
-### <a name="modality-values"></a><span data-ttu-id="a3e49-133">模态值</span><span class="sxs-lookup"><span data-stu-id="a3e49-133">modality values</span></span>
+### <a name="modality-values"></a><span data-ttu-id="bc1cd-134">模态值</span><span class="sxs-lookup"><span data-stu-id="bc1cd-134">modality values</span></span>
 
-| <span data-ttu-id="a3e49-134">Member</span><span class="sxs-lookup"><span data-stu-id="a3e49-134">Member</span></span>
+| <span data-ttu-id="bc1cd-135">成员</span><span class="sxs-lookup"><span data-stu-id="bc1cd-135">Member</span></span>
 |:--------------
-| <span data-ttu-id="a3e49-135">unknown</span><span class="sxs-lookup"><span data-stu-id="a3e49-135">unknown</span></span>
-| <span data-ttu-id="a3e49-136">audio</span><span class="sxs-lookup"><span data-stu-id="a3e49-136">audio</span></span>
-| <span data-ttu-id="a3e49-137">video</span><span class="sxs-lookup"><span data-stu-id="a3e49-137">video</span></span>
-| <span data-ttu-id="a3e49-138">videoBasedScreenSharing</span><span class="sxs-lookup"><span data-stu-id="a3e49-138">videoBasedScreenSharing</span></span>
-| <span data-ttu-id="a3e49-139">data</span><span class="sxs-lookup"><span data-stu-id="a3e49-139">data</span></span>
-| <span data-ttu-id="a3e49-140">screenSharing</span><span class="sxs-lookup"><span data-stu-id="a3e49-140">screenSharing</span></span>
-| <span data-ttu-id="a3e49-141">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="a3e49-141">unknownFutureValue</span></span>
+| <span data-ttu-id="bc1cd-136">unknown</span><span class="sxs-lookup"><span data-stu-id="bc1cd-136">unknown</span></span>
+| <span data-ttu-id="bc1cd-137">audio</span><span class="sxs-lookup"><span data-stu-id="bc1cd-137">audio</span></span>
+| <span data-ttu-id="bc1cd-138">video</span><span class="sxs-lookup"><span data-stu-id="bc1cd-138">video</span></span>
+| <span data-ttu-id="bc1cd-139">videoBasedScreenSharing</span><span class="sxs-lookup"><span data-stu-id="bc1cd-139">videoBasedScreenSharing</span></span>
+| <span data-ttu-id="bc1cd-140">data</span><span class="sxs-lookup"><span data-stu-id="bc1cd-140">data</span></span>
+| <span data-ttu-id="bc1cd-141">screenSharing</span><span class="sxs-lookup"><span data-stu-id="bc1cd-141">screenSharing</span></span>
+| <span data-ttu-id="bc1cd-142">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="bc1cd-142">unknownFutureValue</span></span>
 
-### <a name="networkconnectiontype-values"></a><span data-ttu-id="a3e49-142">networkConnectionType 值</span><span class="sxs-lookup"><span data-stu-id="a3e49-142">networkConnectionType values</span></span>
+### <a name="networkconnectiontype-values"></a><span data-ttu-id="bc1cd-143">networkConnectionType 值</span><span class="sxs-lookup"><span data-stu-id="bc1cd-143">networkConnectionType values</span></span>
 
-| <span data-ttu-id="a3e49-143">Member</span><span class="sxs-lookup"><span data-stu-id="a3e49-143">Member</span></span>
+| <span data-ttu-id="bc1cd-144">成员</span><span class="sxs-lookup"><span data-stu-id="bc1cd-144">Member</span></span>
 |:--------------
-| <span data-ttu-id="a3e49-144">unknown</span><span class="sxs-lookup"><span data-stu-id="a3e49-144">unknown</span></span>
-| <span data-ttu-id="a3e49-145">有线</span><span class="sxs-lookup"><span data-stu-id="a3e49-145">wired</span></span>
-| <span data-ttu-id="a3e49-146">wifi</span><span class="sxs-lookup"><span data-stu-id="a3e49-146">wifi</span></span>
-| <span data-ttu-id="a3e49-147">流动</span><span class="sxs-lookup"><span data-stu-id="a3e49-147">mobile</span></span>
-| <span data-ttu-id="a3e49-148">形</span><span class="sxs-lookup"><span data-stu-id="a3e49-148">tunnel</span></span>
-| <span data-ttu-id="a3e49-149">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="a3e49-149">unknownFutureValue</span></span>
+| <span data-ttu-id="bc1cd-145">unknown</span><span class="sxs-lookup"><span data-stu-id="bc1cd-145">unknown</span></span>
+| <span data-ttu-id="bc1cd-146">有线</span><span class="sxs-lookup"><span data-stu-id="bc1cd-146">wired</span></span>
+| <span data-ttu-id="bc1cd-147">wifi</span><span class="sxs-lookup"><span data-stu-id="bc1cd-147">wifi</span></span>
+| <span data-ttu-id="bc1cd-148">流动</span><span class="sxs-lookup"><span data-stu-id="bc1cd-148">mobile</span></span>
+| <span data-ttu-id="bc1cd-149">形</span><span class="sxs-lookup"><span data-stu-id="bc1cd-149">tunnel</span></span>
+| <span data-ttu-id="bc1cd-150">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="bc1cd-150">unknownFutureValue</span></span>
 
-### <a name="productfamily-values"></a><span data-ttu-id="a3e49-150">productFamily 值</span><span class="sxs-lookup"><span data-stu-id="a3e49-150">productFamily values</span></span>
+### <a name="productfamily-values"></a><span data-ttu-id="bc1cd-151">productFamily 值</span><span class="sxs-lookup"><span data-stu-id="bc1cd-151">productFamily values</span></span>
 
-| <span data-ttu-id="a3e49-151">Member</span><span class="sxs-lookup"><span data-stu-id="a3e49-151">Member</span></span>
+| <span data-ttu-id="bc1cd-152">成员</span><span class="sxs-lookup"><span data-stu-id="bc1cd-152">Member</span></span>
 |:--------------
-| <span data-ttu-id="a3e49-152">unknown</span><span class="sxs-lookup"><span data-stu-id="a3e49-152">unknown</span></span>
-| <span data-ttu-id="a3e49-153">协作</span><span class="sxs-lookup"><span data-stu-id="a3e49-153">teams</span></span>
-| <span data-ttu-id="a3e49-154">skypeForBusiness</span><span class="sxs-lookup"><span data-stu-id="a3e49-154">skypeForBusiness</span></span>
-| <span data-ttu-id="a3e49-155">lync</span><span class="sxs-lookup"><span data-stu-id="a3e49-155">lync</span></span>
-| <span data-ttu-id="a3e49-156">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="a3e49-156">unknownFutureValue</span></span>
+| <span data-ttu-id="bc1cd-153">unknown</span><span class="sxs-lookup"><span data-stu-id="bc1cd-153">unknown</span></span>
+| <span data-ttu-id="bc1cd-154">协作</span><span class="sxs-lookup"><span data-stu-id="bc1cd-154">teams</span></span>
+| <span data-ttu-id="bc1cd-155">skypeForBusiness</span><span class="sxs-lookup"><span data-stu-id="bc1cd-155">skypeForBusiness</span></span>
+| <span data-ttu-id="bc1cd-156">lync</span><span class="sxs-lookup"><span data-stu-id="bc1cd-156">lync</span></span>
+| <span data-ttu-id="bc1cd-157">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="bc1cd-157">unknownFutureValue</span></span>
 
-### <a name="servicerole-values"></a><span data-ttu-id="a3e49-157">serviceRole 值</span><span class="sxs-lookup"><span data-stu-id="a3e49-157">serviceRole values</span></span>
+### <a name="servicerole-values"></a><span data-ttu-id="bc1cd-158">serviceRole 值</span><span class="sxs-lookup"><span data-stu-id="bc1cd-158">serviceRole values</span></span>
 
-| <span data-ttu-id="a3e49-158">Member</span><span class="sxs-lookup"><span data-stu-id="a3e49-158">Member</span></span>
+| <span data-ttu-id="bc1cd-159">成员</span><span class="sxs-lookup"><span data-stu-id="bc1cd-159">Member</span></span>
 |:--------------
-| <span data-ttu-id="a3e49-159">unknown</span><span class="sxs-lookup"><span data-stu-id="a3e49-159">unknown</span></span>
-| <span data-ttu-id="a3e49-160">customBot</span><span class="sxs-lookup"><span data-stu-id="a3e49-160">customBot</span></span>
-| <span data-ttu-id="a3e49-161">skypeForBusinessMicrosoftTeamsGateway</span><span class="sxs-lookup"><span data-stu-id="a3e49-161">skypeForBusinessMicrosoftTeamsGateway</span></span>
-| <span data-ttu-id="a3e49-162">skypeForBusinessAudioVideoMcu</span><span class="sxs-lookup"><span data-stu-id="a3e49-162">skypeForBusinessAudioVideoMcu</span></span>
-| <span data-ttu-id="a3e49-163">skypeForBusinessApplicationSharingMcu</span><span class="sxs-lookup"><span data-stu-id="a3e49-163">skypeForBusinessApplicationSharingMcu</span></span>
-| <span data-ttu-id="a3e49-164">skypeForBusinessCallQueues</span><span class="sxs-lookup"><span data-stu-id="a3e49-164">skypeForBusinessCallQueues</span></span>
-| <span data-ttu-id="a3e49-165">skypeForBusinessAutoAttendant</span><span class="sxs-lookup"><span data-stu-id="a3e49-165">skypeForBusinessAutoAttendant</span></span>
-| <span data-ttu-id="a3e49-166">mediationServer</span><span class="sxs-lookup"><span data-stu-id="a3e49-166">mediationServer</span></span>
-| <span data-ttu-id="a3e49-167">mediationServerCloudConnectorEdition</span><span class="sxs-lookup"><span data-stu-id="a3e49-167">mediationServerCloudConnectorEdition</span></span>
-| <span data-ttu-id="a3e49-168">exchangeUnifiedMessagingService</span><span class="sxs-lookup"><span data-stu-id="a3e49-168">exchangeUnifiedMessagingService</span></span>
-| <span data-ttu-id="a3e49-169">mediaController</span><span class="sxs-lookup"><span data-stu-id="a3e49-169">mediaController</span></span>
-| <span data-ttu-id="a3e49-170">conferencingAnnouncementService</span><span class="sxs-lookup"><span data-stu-id="a3e49-170">conferencingAnnouncementService</span></span>
-| <span data-ttu-id="a3e49-171">conferencingAttendant</span><span class="sxs-lookup"><span data-stu-id="a3e49-171">conferencingAttendant</span></span>
-| <span data-ttu-id="a3e49-172">audioTeleconferencerController</span><span class="sxs-lookup"><span data-stu-id="a3e49-172">audioTeleconferencerController</span></span>
-| <span data-ttu-id="a3e49-173">skypeForBusinessUnifiedCommunicationApplicationPlatform</span><span class="sxs-lookup"><span data-stu-id="a3e49-173">skypeForBusinessUnifiedCommunicationApplicationPlatform</span></span>
-| <span data-ttu-id="a3e49-174">responseGroupServiceAnnouncementService</span><span class="sxs-lookup"><span data-stu-id="a3e49-174">responseGroupServiceAnnouncementService</span></span>
-| <span data-ttu-id="a3e49-175">网</span><span class="sxs-lookup"><span data-stu-id="a3e49-175">gateway</span></span>
-| <span data-ttu-id="a3e49-176">skypeTranslator</span><span class="sxs-lookup"><span data-stu-id="a3e49-176">skypeTranslator</span></span>
-| <span data-ttu-id="a3e49-177">skypeForBusinessAttendant</span><span class="sxs-lookup"><span data-stu-id="a3e49-177">skypeForBusinessAttendant</span></span>
-| <span data-ttu-id="a3e49-178">responseGroupService</span><span class="sxs-lookup"><span data-stu-id="a3e49-178">responseGroupService</span></span>
-| <span data-ttu-id="a3e49-179">语音邮件</span><span class="sxs-lookup"><span data-stu-id="a3e49-179">voicemail</span></span>
-| <span data-ttu-id="a3e49-180">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="a3e49-180">unknownFutureValue</span></span>
+| <span data-ttu-id="bc1cd-160">unknown</span><span class="sxs-lookup"><span data-stu-id="bc1cd-160">unknown</span></span>
+| <span data-ttu-id="bc1cd-161">customBot</span><span class="sxs-lookup"><span data-stu-id="bc1cd-161">customBot</span></span>
+| <span data-ttu-id="bc1cd-162">skypeForBusinessMicrosoftTeamsGateway</span><span class="sxs-lookup"><span data-stu-id="bc1cd-162">skypeForBusinessMicrosoftTeamsGateway</span></span>
+| <span data-ttu-id="bc1cd-163">skypeForBusinessAudioVideoMcu</span><span class="sxs-lookup"><span data-stu-id="bc1cd-163">skypeForBusinessAudioVideoMcu</span></span>
+| <span data-ttu-id="bc1cd-164">skypeForBusinessApplicationSharingMcu</span><span class="sxs-lookup"><span data-stu-id="bc1cd-164">skypeForBusinessApplicationSharingMcu</span></span>
+| <span data-ttu-id="bc1cd-165">skypeForBusinessCallQueues</span><span class="sxs-lookup"><span data-stu-id="bc1cd-165">skypeForBusinessCallQueues</span></span>
+| <span data-ttu-id="bc1cd-166">skypeForBusinessAutoAttendant</span><span class="sxs-lookup"><span data-stu-id="bc1cd-166">skypeForBusinessAutoAttendant</span></span>
+| <span data-ttu-id="bc1cd-167">mediationServer</span><span class="sxs-lookup"><span data-stu-id="bc1cd-167">mediationServer</span></span>
+| <span data-ttu-id="bc1cd-168">mediationServerCloudConnectorEdition</span><span class="sxs-lookup"><span data-stu-id="bc1cd-168">mediationServerCloudConnectorEdition</span></span>
+| <span data-ttu-id="bc1cd-169">exchangeUnifiedMessagingService</span><span class="sxs-lookup"><span data-stu-id="bc1cd-169">exchangeUnifiedMessagingService</span></span>
+| <span data-ttu-id="bc1cd-170">mediaController</span><span class="sxs-lookup"><span data-stu-id="bc1cd-170">mediaController</span></span>
+| <span data-ttu-id="bc1cd-171">conferencingAnnouncementService</span><span class="sxs-lookup"><span data-stu-id="bc1cd-171">conferencingAnnouncementService</span></span>
+| <span data-ttu-id="bc1cd-172">conferencingAttendant</span><span class="sxs-lookup"><span data-stu-id="bc1cd-172">conferencingAttendant</span></span>
+| <span data-ttu-id="bc1cd-173">audioTeleconferencerController</span><span class="sxs-lookup"><span data-stu-id="bc1cd-173">audioTeleconferencerController</span></span>
+| <span data-ttu-id="bc1cd-174">skypeForBusinessUnifiedCommunicationApplicationPlatform</span><span class="sxs-lookup"><span data-stu-id="bc1cd-174">skypeForBusinessUnifiedCommunicationApplicationPlatform</span></span>
+| <span data-ttu-id="bc1cd-175">responseGroupServiceAnnouncementService</span><span class="sxs-lookup"><span data-stu-id="bc1cd-175">responseGroupServiceAnnouncementService</span></span>
+| <span data-ttu-id="bc1cd-176">网</span><span class="sxs-lookup"><span data-stu-id="bc1cd-176">gateway</span></span>
+| <span data-ttu-id="bc1cd-177">skypeTranslator</span><span class="sxs-lookup"><span data-stu-id="bc1cd-177">skypeTranslator</span></span>
+| <span data-ttu-id="bc1cd-178">skypeForBusinessAttendant</span><span class="sxs-lookup"><span data-stu-id="bc1cd-178">skypeForBusinessAttendant</span></span>
+| <span data-ttu-id="bc1cd-179">responseGroupService</span><span class="sxs-lookup"><span data-stu-id="bc1cd-179">responseGroupService</span></span>
+| <span data-ttu-id="bc1cd-180">语音邮件</span><span class="sxs-lookup"><span data-stu-id="bc1cd-180">voicemail</span></span>
+| <span data-ttu-id="bc1cd-181">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="bc1cd-181">unknownFutureValue</span></span>
 
-### <a name="userfeedbackrating-values"></a><span data-ttu-id="a3e49-181">userFeedbackRating 值</span><span class="sxs-lookup"><span data-stu-id="a3e49-181">userFeedbackRating values</span></span>
+### <a name="userfeedbackrating-values"></a><span data-ttu-id="bc1cd-182">userFeedbackRating 值</span><span class="sxs-lookup"><span data-stu-id="bc1cd-182">userFeedbackRating values</span></span>
 
-| <span data-ttu-id="a3e49-182">Member</span><span class="sxs-lookup"><span data-stu-id="a3e49-182">Member</span></span>
+| <span data-ttu-id="bc1cd-183">成员</span><span class="sxs-lookup"><span data-stu-id="bc1cd-183">Member</span></span>
 |:--------------
-| <span data-ttu-id="a3e49-183">notRated</span><span class="sxs-lookup"><span data-stu-id="a3e49-183">notRated</span></span>
-| <span data-ttu-id="a3e49-184">失败</span><span class="sxs-lookup"><span data-stu-id="a3e49-184">bad</span></span>
-| <span data-ttu-id="a3e49-185">比较</span><span class="sxs-lookup"><span data-stu-id="a3e49-185">poor</span></span>
-| <span data-ttu-id="a3e49-186">大量</span><span class="sxs-lookup"><span data-stu-id="a3e49-186">fair</span></span>
-| <span data-ttu-id="a3e49-187">比较</span><span class="sxs-lookup"><span data-stu-id="a3e49-187">good</span></span>
-| <span data-ttu-id="a3e49-188">非常好</span><span class="sxs-lookup"><span data-stu-id="a3e49-188">excellent</span></span>
-| <span data-ttu-id="a3e49-189">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="a3e49-189">unknownFutureValue</span></span>
+| <span data-ttu-id="bc1cd-184">notRated</span><span class="sxs-lookup"><span data-stu-id="bc1cd-184">notRated</span></span>
+| <span data-ttu-id="bc1cd-185">失败</span><span class="sxs-lookup"><span data-stu-id="bc1cd-185">bad</span></span>
+| <span data-ttu-id="bc1cd-186">比较</span><span class="sxs-lookup"><span data-stu-id="bc1cd-186">poor</span></span>
+| <span data-ttu-id="bc1cd-187">大量</span><span class="sxs-lookup"><span data-stu-id="bc1cd-187">fair</span></span>
+| <span data-ttu-id="bc1cd-188">比较</span><span class="sxs-lookup"><span data-stu-id="bc1cd-188">good</span></span>
+| <span data-ttu-id="bc1cd-189">非常好</span><span class="sxs-lookup"><span data-stu-id="bc1cd-189">excellent</span></span>
+| <span data-ttu-id="bc1cd-190">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="bc1cd-190">unknownFutureValue</span></span>
 
-### <a name="wifiband-values"></a><span data-ttu-id="a3e49-190">wifiBand 值</span><span class="sxs-lookup"><span data-stu-id="a3e49-190">wifiBand values</span></span>
+### <a name="wifiband-values"></a><span data-ttu-id="bc1cd-191">wifiBand 值</span><span class="sxs-lookup"><span data-stu-id="bc1cd-191">wifiBand values</span></span>
 
-| <span data-ttu-id="a3e49-191">Member</span><span class="sxs-lookup"><span data-stu-id="a3e49-191">Member</span></span>
+| <span data-ttu-id="bc1cd-192">成员</span><span class="sxs-lookup"><span data-stu-id="bc1cd-192">Member</span></span>
 |:--------------
-| <span data-ttu-id="a3e49-192">unknown</span><span class="sxs-lookup"><span data-stu-id="a3e49-192">unknown</span></span>
-| <span data-ttu-id="a3e49-193">frequency24GHz</span><span class="sxs-lookup"><span data-stu-id="a3e49-193">frequency24GHz</span></span>
-| <span data-ttu-id="a3e49-194">frequency50GHz</span><span class="sxs-lookup"><span data-stu-id="a3e49-194">frequency50GHz</span></span>
-| <span data-ttu-id="a3e49-195">frequency60GHz</span><span class="sxs-lookup"><span data-stu-id="a3e49-195">frequency60GHz</span></span>
-| <span data-ttu-id="a3e49-196">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="a3e49-196">unknownFutureValue</span></span>
+| <span data-ttu-id="bc1cd-193">unknown</span><span class="sxs-lookup"><span data-stu-id="bc1cd-193">unknown</span></span>
+| <span data-ttu-id="bc1cd-194">frequency24GHz</span><span class="sxs-lookup"><span data-stu-id="bc1cd-194">frequency24GHz</span></span>
+| <span data-ttu-id="bc1cd-195">frequency50GHz</span><span class="sxs-lookup"><span data-stu-id="bc1cd-195">frequency50GHz</span></span>
+| <span data-ttu-id="bc1cd-196">frequency60GHz</span><span class="sxs-lookup"><span data-stu-id="bc1cd-196">frequency60GHz</span></span>
+| <span data-ttu-id="bc1cd-197">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="bc1cd-197">unknownFutureValue</span></span>
 
-### <a name="wifiradiotype-values"></a><span data-ttu-id="a3e49-197">wifiRadioType 值</span><span class="sxs-lookup"><span data-stu-id="a3e49-197">wifiRadioType values</span></span>
+### <a name="wifiradiotype-values"></a><span data-ttu-id="bc1cd-198">wifiRadioType 值</span><span class="sxs-lookup"><span data-stu-id="bc1cd-198">wifiRadioType values</span></span>
 
-| <span data-ttu-id="a3e49-198">Member</span><span class="sxs-lookup"><span data-stu-id="a3e49-198">Member</span></span>
+| <span data-ttu-id="bc1cd-199">成员</span><span class="sxs-lookup"><span data-stu-id="bc1cd-199">Member</span></span>
 |:--------------
-| <span data-ttu-id="a3e49-199">unknown</span><span class="sxs-lookup"><span data-stu-id="a3e49-199">unknown</span></span>
-| <span data-ttu-id="a3e49-200">wifi80211a</span><span class="sxs-lookup"><span data-stu-id="a3e49-200">wifi80211a</span></span>
-| <span data-ttu-id="a3e49-201">wifi80211b</span><span class="sxs-lookup"><span data-stu-id="a3e49-201">wifi80211b</span></span>
-| <span data-ttu-id="a3e49-202">wifi80211g</span><span class="sxs-lookup"><span data-stu-id="a3e49-202">wifi80211g</span></span>
-| <span data-ttu-id="a3e49-203">wifi80211n</span><span class="sxs-lookup"><span data-stu-id="a3e49-203">wifi80211n</span></span>
-| <span data-ttu-id="a3e49-204">wifi80211ac</span><span class="sxs-lookup"><span data-stu-id="a3e49-204">wifi80211ac</span></span>
-| <span data-ttu-id="a3e49-205">wifi80211ax</span><span class="sxs-lookup"><span data-stu-id="a3e49-205">wifi80211ax</span></span>
-| <span data-ttu-id="a3e49-206">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="a3e49-206">unknownFutureValue</span></span>
+| <span data-ttu-id="bc1cd-200">unknown</span><span class="sxs-lookup"><span data-stu-id="bc1cd-200">unknown</span></span>
+| <span data-ttu-id="bc1cd-201">wifi80211a</span><span class="sxs-lookup"><span data-stu-id="bc1cd-201">wifi80211a</span></span>
+| <span data-ttu-id="bc1cd-202">wifi80211b</span><span class="sxs-lookup"><span data-stu-id="bc1cd-202">wifi80211b</span></span>
+| <span data-ttu-id="bc1cd-203">wifi80211g</span><span class="sxs-lookup"><span data-stu-id="bc1cd-203">wifi80211g</span></span>
+| <span data-ttu-id="bc1cd-204">wifi80211n</span><span class="sxs-lookup"><span data-stu-id="bc1cd-204">wifi80211n</span></span>
+| <span data-ttu-id="bc1cd-205">wifi80211ac</span><span class="sxs-lookup"><span data-stu-id="bc1cd-205">wifi80211ac</span></span>
+| <span data-ttu-id="bc1cd-206">wifi80211ax</span><span class="sxs-lookup"><span data-stu-id="bc1cd-206">wifi80211ax</span></span>
+| <span data-ttu-id="bc1cd-207">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="bc1cd-207">unknownFutureValue</span></span>
 
 <!--
 {

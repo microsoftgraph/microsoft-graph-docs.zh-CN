@@ -2,32 +2,32 @@
 title: responseStatus 资源类型
 description: 会议请求的响应状态。
 localization_priority: Normal
-author: ''
+author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 532cf48f59b94fefe8aa1c25546c066db0126e85
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 77adc43ef3485f7fcf42a8c1c77edc5d123a3424
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446966"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812658"
 ---
-# <a name="responsestatus-resource-type"></a><span data-ttu-id="85cb2-103">responseStatus 资源类型</span><span class="sxs-lookup"><span data-stu-id="85cb2-103">responseStatus resource type</span></span>
+# <a name="responsestatus-resource-type"></a><span data-ttu-id="d2cb5-103">responseStatus 资源类型</span><span class="sxs-lookup"><span data-stu-id="d2cb5-103">responseStatus resource type</span></span>
 
-<span data-ttu-id="85cb2-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="85cb2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d2cb5-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d2cb5-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="85cb2-105">会议请求的响应状态。</span><span class="sxs-lookup"><span data-stu-id="85cb2-105">The response status of a meeting request.</span></span>
+<span data-ttu-id="d2cb5-105">会议请求的响应状态。</span><span class="sxs-lookup"><span data-stu-id="d2cb5-105">The response status of a meeting request.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="85cb2-106">属性</span><span class="sxs-lookup"><span data-stu-id="85cb2-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d2cb5-106">属性</span><span class="sxs-lookup"><span data-stu-id="d2cb5-106">Properties</span></span>
 
-| <span data-ttu-id="85cb2-107">属性</span><span class="sxs-lookup"><span data-stu-id="85cb2-107">Property</span></span> | <span data-ttu-id="85cb2-108">类型</span><span class="sxs-lookup"><span data-stu-id="85cb2-108">Type</span></span>           | <span data-ttu-id="85cb2-109">说明</span><span class="sxs-lookup"><span data-stu-id="85cb2-109">Description</span></span> |
+| <span data-ttu-id="d2cb5-107">属性</span><span class="sxs-lookup"><span data-stu-id="d2cb5-107">Property</span></span> | <span data-ttu-id="d2cb5-108">类型</span><span class="sxs-lookup"><span data-stu-id="d2cb5-108">Type</span></span>           | <span data-ttu-id="d2cb5-109">说明</span><span class="sxs-lookup"><span data-stu-id="d2cb5-109">Description</span></span> |
 |:---------|:---------------|:------------|
-| <span data-ttu-id="85cb2-110">响应</span><span class="sxs-lookup"><span data-stu-id="85cb2-110">response</span></span> | <span data-ttu-id="85cb2-111">responseType</span><span class="sxs-lookup"><span data-stu-id="85cb2-111">responseType</span></span>   | <span data-ttu-id="85cb2-112">响应类型。</span><span class="sxs-lookup"><span data-stu-id="85cb2-112">The response type.</span></span> <span data-ttu-id="85cb2-113">可能的值包括 `None`、`Organizer`、`TentativelyAccepted`、`Accepted`、`Declined`、`NotResponded`。</span><span class="sxs-lookup"><span data-stu-id="85cb2-113">The possible values are: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.</span></span>
-| <span data-ttu-id="85cb2-114">时间</span><span class="sxs-lookup"><span data-stu-id="85cb2-114">time</span></span>     | <span data-ttu-id="85cb2-115">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="85cb2-115">DateTimeOffset</span></span> | <span data-ttu-id="85cb2-p102">响应返回的日期和时间。它使用 ISO 8601 格式，并始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="85cb2-p102">The date and time that the response was returned. It uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>
+| <span data-ttu-id="d2cb5-110">响应</span><span class="sxs-lookup"><span data-stu-id="d2cb5-110">response</span></span> | <span data-ttu-id="d2cb5-111">responseType</span><span class="sxs-lookup"><span data-stu-id="d2cb5-111">responseType</span></span>   | <span data-ttu-id="d2cb5-112">响应类型。</span><span class="sxs-lookup"><span data-stu-id="d2cb5-112">The response type.</span></span> <span data-ttu-id="d2cb5-113">可能的值包括 `None`、`Organizer`、`TentativelyAccepted`、`Accepted`、`Declined`、`NotResponded`。</span><span class="sxs-lookup"><span data-stu-id="d2cb5-113">The possible values are: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.</span></span>
+| <span data-ttu-id="d2cb5-114">时间</span><span class="sxs-lookup"><span data-stu-id="d2cb5-114">time</span></span>     | <span data-ttu-id="d2cb5-115">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d2cb5-115">DateTimeOffset</span></span> | <span data-ttu-id="d2cb5-p102">响应返回的日期和时间。它使用 ISO 8601 格式，并始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="d2cb5-p102">The date and time that the response was returned. It uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="85cb2-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="85cb2-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d2cb5-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d2cb5-119">JSON representation</span></span>
 
-<span data-ttu-id="85cb2-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="85cb2-120">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="d2cb5-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d2cb5-120">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
