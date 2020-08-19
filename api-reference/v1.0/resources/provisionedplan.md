@@ -2,33 +2,33 @@
 title: provisionedPlan 资源类型
 description: '**用户** 实体和 组织 实体的 provisionedPlans 属性都是一个 **provisionedPlan** 集合。'
 localization_priority: Normal
-author: ''
+author: davidmu1
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c12ce39739bd6f922edacf11654b24d6f7b471dd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8b7f3e5ac0c66dca2cb297986af1be6473de23c1
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447029"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806875"
 ---
-# <a name="provisionedplan-resource-type"></a><span data-ttu-id="a29f6-103">provisionedPlan 资源类型</span><span class="sxs-lookup"><span data-stu-id="a29f6-103">provisionedPlan resource type</span></span>
+# <a name="provisionedplan-resource-type"></a><span data-ttu-id="66f81-103">provisionedPlan 资源类型</span><span class="sxs-lookup"><span data-stu-id="66f81-103">provisionedPlan resource type</span></span>
 
-<span data-ttu-id="a29f6-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="a29f6-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="66f81-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="66f81-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="a29f6-105">**用户** 实体和 [组织](user.md) 实体的 [provisionedPlans](organization.md) 属性都是一个 **provisionedPlan** 集合。</span><span class="sxs-lookup"><span data-stu-id="a29f6-105">The **provisionedPlans** property of the [user](user.md) entity and the [organization](organization.md) entity is a collection of **provisionedPlan**.</span></span>
+<span data-ttu-id="66f81-105">**用户** 实体和 [组织](user.md) 实体的 [provisionedPlans](organization.md) 属性都是一个 **provisionedPlan** 集合。</span><span class="sxs-lookup"><span data-stu-id="66f81-105">The **provisionedPlans** property of the [user](user.md) entity and the [organization](organization.md) entity is a collection of **provisionedPlan**.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="a29f6-106">属性</span><span class="sxs-lookup"><span data-stu-id="a29f6-106">Properties</span></span>
-| <span data-ttu-id="a29f6-107">属性</span><span class="sxs-lookup"><span data-stu-id="a29f6-107">Property</span></span>     | <span data-ttu-id="a29f6-108">类型</span><span class="sxs-lookup"><span data-stu-id="a29f6-108">Type</span></span>   |<span data-ttu-id="a29f6-109">说明</span><span class="sxs-lookup"><span data-stu-id="a29f6-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="66f81-106">属性</span><span class="sxs-lookup"><span data-stu-id="66f81-106">Properties</span></span>
+| <span data-ttu-id="66f81-107">属性</span><span class="sxs-lookup"><span data-stu-id="66f81-107">Property</span></span>     | <span data-ttu-id="66f81-108">类型</span><span class="sxs-lookup"><span data-stu-id="66f81-108">Type</span></span>   |<span data-ttu-id="66f81-109">说明</span><span class="sxs-lookup"><span data-stu-id="66f81-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a29f6-110">capabilityStatus</span><span class="sxs-lookup"><span data-stu-id="a29f6-110">capabilityStatus</span></span>|<span data-ttu-id="a29f6-111">String</span><span class="sxs-lookup"><span data-stu-id="a29f6-111">String</span></span>|<span data-ttu-id="a29f6-112">例如，“Enabled”。</span><span class="sxs-lookup"><span data-stu-id="a29f6-112">For example, “Enabled”.</span></span>|
-|<span data-ttu-id="a29f6-113">provisioningStatus</span><span class="sxs-lookup"><span data-stu-id="a29f6-113">provisioningStatus</span></span>|<span data-ttu-id="a29f6-114">String</span><span class="sxs-lookup"><span data-stu-id="a29f6-114">String</span></span>|<span data-ttu-id="a29f6-115">例如，“Success”。</span><span class="sxs-lookup"><span data-stu-id="a29f6-115">For example, “Success”.</span></span>|
-|<span data-ttu-id="a29f6-116">service</span><span class="sxs-lookup"><span data-stu-id="a29f6-116">service</span></span>|<span data-ttu-id="a29f6-117">String</span><span class="sxs-lookup"><span data-stu-id="a29f6-117">String</span></span>|<span data-ttu-id="a29f6-118">服务名称；例如，“AccessControlS2S”</span><span class="sxs-lookup"><span data-stu-id="a29f6-118">The name of the service; for example, “AccessControlS2S”</span></span>|
+|<span data-ttu-id="66f81-110">capabilityStatus</span><span class="sxs-lookup"><span data-stu-id="66f81-110">capabilityStatus</span></span>|<span data-ttu-id="66f81-111">String</span><span class="sxs-lookup"><span data-stu-id="66f81-111">String</span></span>|<span data-ttu-id="66f81-112">例如，“Enabled”。</span><span class="sxs-lookup"><span data-stu-id="66f81-112">For example, “Enabled”.</span></span>|
+|<span data-ttu-id="66f81-113">provisioningStatus</span><span class="sxs-lookup"><span data-stu-id="66f81-113">provisioningStatus</span></span>|<span data-ttu-id="66f81-114">String</span><span class="sxs-lookup"><span data-stu-id="66f81-114">String</span></span>|<span data-ttu-id="66f81-115">例如，“Success”。</span><span class="sxs-lookup"><span data-stu-id="66f81-115">For example, “Success”.</span></span>|
+|<span data-ttu-id="66f81-116">service</span><span class="sxs-lookup"><span data-stu-id="66f81-116">service</span></span>|<span data-ttu-id="66f81-117">String</span><span class="sxs-lookup"><span data-stu-id="66f81-117">String</span></span>|<span data-ttu-id="66f81-118">服务名称；例如，“AccessControlS2S”</span><span class="sxs-lookup"><span data-stu-id="66f81-118">The name of the service; for example, “AccessControlS2S”</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="a29f6-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a29f6-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="66f81-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="66f81-119">JSON representation</span></span>
 
-<span data-ttu-id="a29f6-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a29f6-120">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="66f81-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="66f81-120">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
