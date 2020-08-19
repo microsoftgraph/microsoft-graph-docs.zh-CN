@@ -2,19 +2,19 @@
 title: registryKeyState 资源类型
 description: 包含有关与警报相关的注册表项更改的信息，以及更改了注册表项的过程。
 localization_priority: Normal
-author: ''
+author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0b014a0a2ce338524e6abf0e6bcaa532e2b5c1c9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b07f031fed393c4de41a55b55e8009ca9c8d8259
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446994"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806791"
 ---
 # <a name="registrykeystate-resource-type"></a>registryKeyState 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 包含有关与警报相关的注册表项更改的信息，以及更改了注册表项的过程。
 
@@ -22,15 +22,15 @@ ms.locfileid: "42446994"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|配置单元|registryHive|[Windows 注册表配置单元](/windows/desktop/sysinfo/registry-hives)： <ul><li>HKEY_CURRENT_CONFIG</li> <li>HKEY_CURRENT_USER</li> <li>HKEY_LOCAL_MACHINE \SAM</li> <li>HKEY_LOCAL_MACHINE \Security</li> <li>HKEY_LOCAL_MACHINE \Software</li> <li>HKEY_LOCAL_MACHINE \System</li> <li>HKEY_USERS\\。设置.</li></ul> 可取值为：`unknown`、`currentConfig`、`currentUser`、`localMachineSam`、`localMachineSecurity`、`localMachineSoftware`、`localMachineSystem`、`usersDefault`。|
-|注册表项|String|当前（如已更改）的注册表项（不包括配置单元）。|
-|oldKey|String|上一个（即 "更改前"）注册表项（不包括 HIVE）。|
-|oldValueData|String|以前的（即更改之前）注册表项值数据（内容）。|
-|oldValueName|String|以前的注册表项值名称（即 "更改前"）。|
+|配置单元|registryHive|[Windows 注册表配置单元](/windows/desktop/sysinfo/registry-hives)： <ul><li>HKEY_CURRENT_CONFIG</li> <li>HKEY_CURRENT_USER</li> <li>HKEY_LOCAL_MACHINE \SAM</li> <li>HKEY_LOCAL_MACHINE \Security</li> <li>HKEY_LOCAL_MACHINE \Software</li> <li>HKEY_LOCAL_MACHINE \System</li> <li>HKEY_USERS \\ 。设置.</li></ul> 可取值为：`unknown`、`currentConfig`、`currentUser`、`localMachineSam`、`localMachineSecurity`、`localMachineSoftware`、`localMachineSystem`、`usersDefault`。|
+|注册表项|String|当前 (即) 注册表项更改 (排除配置单元) 。|
+|oldKey|String|以前的 (，即在更改) 注册表项之前 (排除配置单元) 。|
+|oldValueData|String|以前的 (，即在更改) 注册表项值数据 (内容) 之前。|
+|oldValueName|String|以前的 (，即在更改) 注册表项值名称之前。|
 |操作|registryOperation|更改注册表项名称和/或值的操作。 可取值为：`unknown`、`create`、`modify`、`delete`。|
-|processId|Int32|修改注册表项的进程的进程 ID （PID）（进程详细信息将显示在警报的 "进程" 集合中）。|
-|valueData|String|当前（如已更改）的注册表项值数据（内容）。|
-|等值|String|当前（如已更改）的注册表项值名称|
+|processId|Int32|进程 ID (PID) 修改注册表项 (进程详细信息将显示在警报的 "进程" 集合) 中。|
+|valueData|String|当前 (即) 注册表项值数据 (内容) 更改。|
+|等值|String|当前 (即) 注册表项值名称更改|
 |valueType|registryValueType|[注册表项值类型](/windows/desktop/sysinfo/registry-value-types) <ul><li>REG_BINARY</li> <li>REG_DWORD</li> <li>REG_DWORD_LITTLE_ENDIAN</li> <li>REG_DWORD_BIG_ENDIAN</li><li>REG_EXPAND_SZ</li> <li>REG_LINK</li> <li>REG_MULTI_SZ</li> <li>REG_NONE</li> <li>REG_QWORD</li> <li>REG_QWORD_LITTLE_ENDIAN</li> <li>REG_SZ</li></ul> 可取值为：`unknown`、`binary`、`dword`、`dwordLittleEndian`、`dwordBigEndian`、`expandSz`、`link`、`multiSz`、`none`、`qword`、`qwordlittleEndian`、`sz`。|
 
 ## <a name="json-representation"></a>JSON 表示形式

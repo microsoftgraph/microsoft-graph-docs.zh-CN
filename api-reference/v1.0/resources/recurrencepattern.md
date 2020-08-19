@@ -2,21 +2,21 @@
 title: recurrencePattern 资源类型
 description: '描述了定期事件的重复发生频率。 '
 localization_priority: Normal
-author: ''
+author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: bc9f0a2745faf2a14c6200db81a6995b0835162e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dd04999c43aa248bcad7439a0d1e940ebd749129
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533873"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806805"
 ---
 # <a name="recurrencepattern-resource-type"></a>recurrencePattern 资源类型
 
 命名空间：microsoft.graph
 
-描述了定期[事件](event.md)的重复发生频率。 
+描述了定期[事件](event.md)的重复发生频率。
 
 可以使用下面的 6 种方法之一（具体视方案而定），指定定期事件的定期模式。 对于每种类型的模式，请指定时间间隔。 在为事件指定的日期范围内，实际发生的定期事件始终遵循此模式。 定期事件始终由 **recurrencePattern**（事件的重复发生频率）和 [recurrenceRange](recurrencerange.md)（事件在哪个日期范围内重复发生）进行定义。
 
@@ -41,7 +41,7 @@ ms.locfileid: "42533873"
 |daysOfWeek|dayOfWeek 集合|事件在星期几（一系列值）发生。 可取值包括：`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。 <br>如果 **type** 为 `relativeMonthly` 或 `relativeYearly`，且 **daysOfWeek** 指定超过一天，事件遵循相应模式的第一天规则。 <br> 如果 **type** 为 `weekly`、`relativeMonthly` 或 `relativeYearly`，此为必需属性。|
 |firstDayOfWeek|dayOfWeek|周的第一天。 可取值包括：`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。 默认值为 `sunday`。 如果 **type** 为 `weekly`，此为必需属性。 |
 |index|weekIndex|指定事件在 **daysOfsWeek** 中指定的允许天数的哪个实例上发生，从当月的第一个实例开始计数。 可能的值包括 `first`、`second`、`third`、`fourth`、`last`。 默认值为 `first`。 如果 **type** 为 `relativeMonthly` 或 `relativeYearly`，请使用此可选属性。 |
-|interval|Int32|间隔的单元数，可以是天数、周数、月数或年数，具体视 **type** 而定。 必需。 |
+|interval|Int32|间隔的单元数，可以是天数、周数、月数或年数，具体视 **type** 而定。 此为必需属性。 |
 |month|Int32|事件发生的月份。  这是一个介于 1 到 12 之间的数字。|
 |type|recurrencePatternType|定期模式类型：`daily`、`weekly`、`absoluteMonthly`、`relativeMonthly`、`absoluteYearly` 或 `relativeYearly`。 此为必需属性。|
 

@@ -2,15 +2,15 @@
 title: FilterDatetime 资源类型
 description: 表示在筛选值时如何筛选日期。
 localization_priority: Normal
-author: ''
+author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9214e8ecde9b2c09e06cfcc6d6145ea5319eace9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 616f6a67bf761d0346c6d232eb6392ee2dc5fd96
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531406"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807757"
 ---
 # <a name="filterdatetime-resource-type"></a>FilterDatetime 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "42531406"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|date|字符串|用于筛选数据的采用 ISO8601 格式的日期。|
+|date|string|用于筛选数据的采用 ISO8601 格式的日期。|
 |specificity|string|用于保留数据的日期的具体程度。 例如，如果日期是 2005-04-02 并且将特殊性设置为“月”，则筛选操作将保留包含 2009 年 4 月日期的所有行。 可能的值包括 `Year`、`Monday`、`Day`、`Hour`、`Minute`、`Second`。|
 
 ## <a name="relationships"></a>关系

@@ -2,15 +2,15 @@
 title: settingTemplateValue 资源类型
 description: 表示单个模板设置定义，包括设置的默认值（如果未实例化设置）。
 localization_priority: Normal
-author: ''
+author: dkershaw10
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: eea9f77b26ee0ce88e2c97c87e7cca50cbf48491
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a2046017dec6439c6db35169de15eb6bb49413b1
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533744"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806735"
 ---
 # <a name="settingtemplatevalue-resource-type"></a>settingTemplateValue 资源类型
 
@@ -22,10 +22,10 @@ ms.locfileid: "42533744"
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|默认|字符串| 设置的默认值。 |
-|说明|字符串| 设置的说明。 |
+|默认|String| 设置的默认值。 |
+|description|String| 设置的说明。 |
 |name|String| 设置的名称。 |
-|type|字符串| 设置的类型。 |
+|type|String| 设置的类型。 |
 
 ### <a name="json-representation"></a>JSON 表示形式
 

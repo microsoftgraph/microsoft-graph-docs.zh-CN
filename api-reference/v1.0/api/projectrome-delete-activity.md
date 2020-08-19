@@ -3,14 +3,14 @@ title: 删除活动
 description: 删除应用程序的现有用户活动。
 localization_priority: Normal
 ms.prod: project-rome
-author: ''
+author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: d4874fee43956afe98eeeb39338195a6d4ae5f1b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1ab0d5510ca8cb1a3a7376259904af22f1561014
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510744"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807043"
 ---
 # <a name="delete-an-activity"></a>删除活动
 
@@ -27,7 +27,7 @@ ms.locfileid: "42510744"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | UserActivity.ReadWrite.CreatedByApp    |
 |委派（个人 Microsoft 帐户） | UserActivity.ReadWrite.CreatedByApp    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,7 +49,7 @@ DELETE /me/activities/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回`204 No Content`响应代码（如果活动已删除）。
+如果成功，此方法将返回 `204 No Content` 响应代码（如果活动已删除）。
 
 ## <a name="example"></a>示例
 

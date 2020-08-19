@@ -2,19 +2,19 @@
 title: timeConstraint 资源类型
 description: 根据指定的活动和打开时间段的性质，将会议时间建议限制在一周的特定时间和几天。
 localization_priority: Normal
-author: ''
+author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: cc6ace98b84e8b844139c148215eeffdd4c3ad49
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e2ecde664dbdf0335ce84083dfe3c29473c5b1d5
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446819"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812139"
 ---
 # <a name="timeconstraint-resource-type"></a>timeConstraint 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 根据指定的活动和打开时间段的性质，将会议时间建议限制在一周的特定时间和几天。
 
@@ -40,7 +40,7 @@ ms.locfileid: "42446819"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|activityDomain|activityDomain|（可选）会议性质。 可能的值是： `work`、 `personal`、 `unrestricted`或`unknown`。|
+|activityDomain|activityDomain|（可选）会议性质。 可能的值是： `work` 、 `personal` 、 `unrestricted` 或 `unknown` 。|
 |timeslots|[timeSlot](timeslot.md) 集合|一组时间段。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

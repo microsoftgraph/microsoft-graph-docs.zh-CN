@@ -2,15 +2,15 @@
 title: 添加已命名项
 description: 使用用户的公式区域设置，将新名称添加到给定范围的集合。
 localization_priority: Normal
-author: ''
+author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 0320518218c76a5cbb7201a53b10f23a93d55f96
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: f24f4545d902a93435cf12753ac6608e4f8b2703
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108506"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807078"
 ---
 # <a name="add-named-item"></a>添加已命名项
 
@@ -51,7 +51,7 @@ POST /workbook/worksheets/{id|name}/names/add
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`200 OK`响应正文中返回响应代码和[WorkbookNamedItem](../resources/nameditem.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [WorkbookNamedItem](../resources/nameditem.md) 对象。
 
 
 ## <a name="example"></a>示例

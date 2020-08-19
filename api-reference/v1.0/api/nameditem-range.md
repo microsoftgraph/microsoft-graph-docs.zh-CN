@@ -2,29 +2,29 @@
 title: NamedItem：Range
 description: 返回与名称相关的 range 对象。如果已命名项目的类型不是区域，将引发异常。
 localization_priority: Normal
-author: ''
+author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: a29750f7105d0ba326b35633484a54554b96a055
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 8482abda58889811b8d2718b555a0954b67f07ea
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681792"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806147"
 ---
 # <a name="nameditem-range"></a>NamedItem：Range
 
 命名空间：microsoft.graph
 
 返回与名称相关的 range 对象。如果已命名项目的类型不是区域，将引发异常。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

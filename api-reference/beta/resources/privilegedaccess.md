@@ -1,27 +1,27 @@
 ---
 title: privilegedAccess 资源类型
-description: " 例如， `privilegedAccess/azureResources`表示用于管理对 Azure 资源的权限访问的 PIM。"
+description: " 例如， `privilegedAccess/azureResources` 表示用于管理对 Azure 资源的权限访问的 PIM。"
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 1c8388c8ba9fd79b44e0d037496313cf67774bdf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: shauliu
+ms.openlocfilehash: c57dd911d105ba4d096a09f9262b847db5240fa1
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521556"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811448"
 ---
 # <a name="privilegedaccess-resource-type"></a>privilegedAccess 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示由特权标识管理（PIM）服务提供的一组功能。 表示由 PIM `privilegedAccess`管理的不同提供程序的不同实例;例如， `privilegedAccess/azureResources`表示用于管理对 Azure 资源的权限访问的 PIM。
+表示由特权身份管理 (PIM) 服务提供的一组功能。 `privilegedAccess`表示由 PIM 管理的不同提供程序的不同实例; 例如， `privilegedAccess/azureResources` 表示用于管理对 Azure 资源的权限访问的 PIM。
 
 
-`privilegedAccess`目前为只读。 `privilegedAccess`实体`POST`集`PUT`上`PATCH`不支持`DELETE` 、、或操作。
+`privilegedAccess` 目前为只读。 `POST` `PUT` `PATCH` `DELETE` 实体集上不支持、、或操作 `privilegedAccess` 。
 
 ## <a name="properties"></a>属性
 | 属性  | 类型      |说明|
@@ -33,11 +33,11 @@ ms.locfileid: "42521556"
 ## <a name="relationships"></a>关系
 | 关系   | 类型                                         |说明|
 |:---------------|:---------------------------------------------|:----------|
-|resources       |[governanceResource](../resources/governanceresource.md)集合            |提供程序的资源集合。|
-|roleAssignments |[governanceRoleAssignment](../resources/governanceroleassignment.md)集合|提供程序的角色分配的集合。|
-|roleDefinitions |[governanceRoleDefinition](../resources/governanceroledefinition.md)集合|提供程序的角色 defintions 的集合。|
-|roleAssignmentRequests |[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)集合|提供程序的角色分配请求的集合。|
-|roleSettings |[governanceRoleSetting](../resources/governancerolesetting.md)集合|提供程序的角色设置的集合。|
+|resources       |[governanceResource](../resources/governanceresource.md) 集合            |提供程序的资源集合。|
+|roleAssignments |[governanceRoleAssignment](../resources/governanceroleassignment.md) 集合|提供程序的角色分配的集合。|
+|roleDefinitions |[governanceRoleDefinition](../resources/governanceroledefinition.md) 集合|提供程序的角色 defintions 的集合。|
+|roleAssignmentRequests |[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 集合|提供程序的角色分配请求的集合。|
+|roleSettings |[governanceRoleSetting](../resources/governancerolesetting.md) 集合|提供程序的角色设置的集合。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

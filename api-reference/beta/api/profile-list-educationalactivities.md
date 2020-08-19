@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 8d7efbcfbdb5cf16628a0a6c83488f8422d45d94
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 7ee6eb45776b00d04a3b7d51a38411d3e515f9ad
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229351"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811656"
 ---
 # <a name="list-educationalactivities"></a>列出 educationalActivities
 
@@ -28,7 +28,7 @@ ms.locfileid: "43229351"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
 | 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| Application                            | User.readbasic.all、所有用户读写全部。 All                            |
+| 应用程序                            | User.readbasic.all、所有用户读写全部。 All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -36,16 +36,17 @@ ms.locfileid: "43229351"
 
 ```http
 GET /me/profile/educationalActivities
+GET /users/{id | userPrincipalName}/profile/educationalActivities
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持以下 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持以下 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 |名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |$filter         |string   |将响应限制为仅包含指定条件的那些对象。                                                                                             |
-|$orderby        |string   |默认情况下，响应中的对象按其在查询中的 createdDateTime 值进行排序。 您可以使用 *$orderby*参数更改响应的顺序。|
+|$orderby        |string   |默认情况下，响应中的对象按其在查询中的 createdDateTime 值进行排序。 您可以使用 *$orderby* 参数更改响应的顺序。|
 |$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
 |$skip           |int      |跳过前 n 个结果，对于分页非常有用。                                                                                                                                |
 |$top            |int      |要返回的结果数。                                                                                                                                           |
@@ -56,14 +57,13 @@ GET /me/profile/educationalActivities
 |:---------------|:----------------------------|
 | Authorization  | Bearer {token}。必需。   |
 
-
 ## <a name="request-body"></a>请求正文
 
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[educationalActivity](../resources/educationalactivity.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [educationalActivity](../resources/educationalactivity.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -115,45 +115,57 @@ Content-type: application/json
 {
   "value": [
     {
-      "completionMonthYear": "datetime-value",
-      "endMonthYear": "datetime-value",
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "source": null,
+      "completionMonthYear": "Date",
+      "endMonthYear": "Date",
       "institution": {
-        "description": "description-value",
-        "displayName": "displayName-value",
+        "description": null,
+        "displayName": "Colorado State University",
         "location": {
-          "type": "type-value",
-          "postOfficeBox": "postOfficeBox-value",
-          "street": "street-value",
-          "city": "city-value",
-          "state": "state-value",
-          "countryOrRegion": "countryOrRegion-value",
-          "postalCode": "postalCode-value"
+          "type": "business",
+          "postOfficeBox": null,
+          "street": "12000 E Prospect Rd",
+          "city": "Fort Collins",
+          "state": "Colorado",
+          "countryOrRegion": "USA",
+          "postalCode": "80525"
         },
-        "webUrl": "webUrl-value"
+        "webUrl": "https://www.colostate.edu"
       },
       "program": {
-        "abbreviation": "abbreviation-value",
-        "activities": "activities-value",
-        "awards": "awards-value",
-        "description": "description-value",
-        "displayName": "displayName-value",
-        "fieldsOfStudy": "fieldsOfStudy-value",
-        "grade": "grade-value",
-        "notes": "notes-value",
-        "webUrl": "webUrl-value"
+        "abbreviation": "MBA",
+        "activities": null,
+        "awards": null,
+        "description": "Master of Business Administration with a major in Entreprenuership and Finance.",
+        "displayName": "Master of Business Administration",
+        "fieldsOfStudy": null,
+        "grade": "3.9",
+        "notes": null,
+        "webUrl": "https://biz.colostate.edu"
       },
-      "startMonthYear": "datetime-value"
+      "startMonthYear": "Date"
     }
   ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "List educationalActivities",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

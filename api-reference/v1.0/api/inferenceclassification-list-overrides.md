@@ -2,15 +2,15 @@
 title: 列出替代
 description: 获取用户设置为始终以特定方式对来自特定发件人的邮件进行分类的替代。
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: c6ccd43be95c7e3665823d28950e2cb646a3238e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a0a54566f2fd51c226e849be108125fd358edc08
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516743"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806171"
 ---
 # <a name="list-overrides"></a>列出替代
 

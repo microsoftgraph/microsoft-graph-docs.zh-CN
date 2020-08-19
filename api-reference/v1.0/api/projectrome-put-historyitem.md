@@ -3,14 +3,14 @@ title: 创建或替换 historyItem
 description: 为现有用户活动创建新的或替换现有的历史记录项。
 localization_priority: Normal
 ms.prod: project-rome
-author: ''
+author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: ce1abf2ea6df1e7a289802073a47bd1b9fdeb005
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: da5ba2c6f77023ac3f812a690404b23d648fb4ee
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510702"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811936"
 ---
 # <a name="create-or-replace-a-historyitem"></a>创建或替换 historyItem
 
@@ -27,7 +27,7 @@ ms.locfileid: "42510702"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | UserActivity.ReadWrite.CreatedByApp    |
 |委派（个人 Microsoft 帐户） | UserActivity.ReadWrite.CreatedByApp    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -39,7 +39,7 @@ PUT /me/activities/{id}/historyItems/{id}
 
 Id 必须是 GUID。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|
@@ -47,11 +47,11 @@ Id 必须是 GUID。
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[historyItem](../resources/projectrome-historyitem.md)对象的 JSON 表示形式。
+在请求正文中，提供 [historyItem](../resources/projectrome-historyitem.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将在`201 Created`创建 historyItem 或`200 OK`替换 historyItem 时返回响应代码。
+如果成功，此方法将在 `201 Created` 创建 historyItem 或 `200 OK` 替换 historyItem 时返回响应代码。
 
 ## <a name="example"></a>示例
 

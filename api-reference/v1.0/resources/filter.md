@@ -2,15 +2,15 @@
 title: 筛选器资源类型
 description: 管理表格列的筛选。
 localization_priority: Normal
-author: ''
+author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 06167bbb0eb55da409e807aeabc9bfaf8287cc9b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ecaa61bde452d13e7e8e7fe0c79e3b75eeaa591a
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531420"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807806"
 ---
 # <a name="filter-resource-type"></a>筛选器资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "42531420"
 管理表格列的筛选。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|

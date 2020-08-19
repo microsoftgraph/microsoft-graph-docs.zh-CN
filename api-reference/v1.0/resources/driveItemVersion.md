@@ -3,14 +3,14 @@ title: DriveItemVersion 资源类型
 description: '**DriveItemVersion**资源表示 DriveItem 的特定版本。'
 localization_priority: Normal
 ms.prod: sharepoint
-author: ''
+author: JeremyKelley
 doc_type: resourcePageType
-ms.openlocfilehash: b0ca825a0cd920ba10575ad2cd826da7e0b64055
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a2b960fdde86909e0974fe49f21c9d787b95a0ae
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531562"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807841"
 ---
 # <a name="driveitemversion-resource-type"></a>DriveItemVersion 资源类型
 

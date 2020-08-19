@@ -4,17 +4,17 @@ description: 表示公司的隐私配置文件，其中包括隐私声明 URL �
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: e43064fe520f100d582e740302a7606c9824b3f2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: davidmu1
+ms.openlocfilehash: 14ec9ae7119743e1b206f2d4b748cec09b9bfd3e
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521563"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811460"
 ---
 # <a name="privacyprofile-resource-type"></a>privacyProfile 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

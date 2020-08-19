@@ -2,19 +2,19 @@
 title: 键值资源类型
 description: 标准键值对资源类型。
 localization_priority: Normal
-author: ''
+author: dougeby
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: adac348de690b3796399a4276ede4280f35713b3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 94de9529f53fc018633c9fb5a361b45ad0067e73
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447603"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811306"
 ---
 # <a name="keyvalue-resource-type"></a>键值资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 表示键/值对。
 
@@ -23,7 +23,7 @@ ms.locfileid: "42447603"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |Key|string| 键/值对的键。 |
-|value|字符串| 键/值对的值。|
+|value|string| 键/值对的值。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 0344dc0d0f861fb653f1ed26e2b951978148c8b8
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 19b71bec26a22654f64d8e1d91e297ddf1681289
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229309"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811609"
 ---
 # <a name="create-workposition"></a>创建 workPosition
 
@@ -36,6 +36,7 @@ ms.locfileid: "43229309"
 
 ```http
 POST /me/profile/positions
+POST /users/{id | userPrincipalName}/profile/positions
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -47,11 +48,24 @@ POST /me/profile/positions
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[workPosition](../resources/workposition.md)对象的 JSON 表示形式。
+在请求正文中，提供 [workPosition](../resources/workposition.md) 对象的 JSON 表示形式。
+
+下表显示了在用户的[配置文件](../resources/profile.md)中创建新的[workPosition](../resources/workPosition.md)对象时可以设置的属性。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|categories|String collection|用户已与此位置关联的类别。|
+|征求|[relatedPerson](../resources/relatedperson.md) 集合|与此职位相关联的同事。|
+|介绍|[positionDetail](../resources/positiondetail.md)|包含有关职位的详细信息。 |
+|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|isCurrent|布尔值|指示位置是否是最新的。|
+|manager|[relatedPerson](../resources/relatedperson.md)|包含用户在此位置的经理的详细信息。|
+|source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`201, Created`响应正文中返回响应代码和新的[workPosition](../resources/workposition.md)对象。
+如果成功，此方法 `201, Created` 在响应正文中返回响应代码和新的 [workPosition](../resources/workposition.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -64,37 +78,28 @@ POST /me/profile/positions
 }-->
 
 ```http
-POST https://graph.microsoft.com/Beta/me/profile/positions
+POST https://graph.microsoft.com/beta/me/profile/positions
 Content-type: application/json
 
 {
-  "categories": [
-    "categories-value"
-  ],
   "detail": {
     "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
+      "displayName": "Adventureworks Ltd.",
+      "department": "Consulting",
+      "officeLocation": "AW23/344",
       "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
+        "type": "business",
+        "street": "123 Patriachy Ponds",
+        "city": "Moscow",
+        "countryOrRegion": "Russian Federation",
+        "postalCode": "RU-34621"
       },
-      "webUrl": "webUrl-value"
+      "webUrl": "https://www.adventureworks.com"
     },
-    "description": "description-value",
-    "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
-    "startMonthYear": "datetime-value",
-    "summary": "summary-value"
-  }
+    "jobTitle": "Senior Product Branding Manager II",
+    "role": "consulting",
+  },
+  "isCurrent": true
 }
 ```
 
@@ -115,42 +120,55 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "categories": [
-    "categories-value"
-  ],
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "categories": null,
   "detail": {
     "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
+      "displayName": "Adventureworks Ltd.",
+      "pronunciation": null,
+      "department": "Consulting",
+      "officeLocation": "AW23/344",
       "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
+        "type": "business",
+        "postOfficeBox": null,
+        "street": "123 Patriachy Ponds",
+        "city": "Moscow",
+        "state": null,
+        "countryOrRegion": "Russian Federation",
+        "postalCode": "RU-34621"
       },
-      "webUrl": "webUrl-value"
+      "webUrl": "https://www.adventureworks.com"
     },
-    "description": "description-value",
-    "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
+    "description": null,
+    "endMonthYear": null,
+    "jobTitle": "Senior Product Branding Manager II",
+    "role": "consulting",
     "startMonthYear": "datetime-value",
-    "summary": "summary-value"
-  }
+    "summary": null
+  },
+  "manager": null,
+  "colleagues": null,
+  "isCurrent": true
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create workPosition",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

@@ -4,13 +4,13 @@ description: '重点收件箱允许您查看 `Focused` 收件箱的选项卡中�
 localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 75d5dc07d2722964acc7975b8f41ca6d6fd18df5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: 83d29b26388938e478287e342a03dab762eb1633
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522853"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811467"
 ---
 # <a name="manage-focused-inbox"></a>管理重点收件箱
 
@@ -37,4 +37,4 @@ ms.locfileid: "42522853"
 
 [创建发件人替代](../api/inferenceclassification-post-overrides.md) | [列出所有用户替代](../api/inferenceclassification-list-overrides.md) |
 
-[更新发件人替代](../api/inferenceclassificationoverride-update.md) | [删除发件人替代](../api/inferenceclassificationoverride-delete.md) 
+[更新发件人替代](../api/inferenceclassificationoverride-update.md) | [删除发件人替代](../api/inferenceclassificationoverride-delete.md)

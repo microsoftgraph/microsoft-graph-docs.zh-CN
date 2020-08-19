@@ -4,17 +4,17 @@ description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-author: ''
-ms.openlocfilehash: 759f231181da13cc2d115ff332e909e3a8387474
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: JeremyKelley
+ms.openlocfilehash: 8ab079eb15fd2dfe2d66a07d5734b6aa9430055e
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522384"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812111"
 ---
 # <a name="onedriveusageaccountcounts-resource-type"></a>oneDriveUsageAccountCounts 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 ## <a name="properties"></a>属性
 
@@ -38,11 +38,11 @@ ms.locfileid: "42522384"
 
 ```json
 {
-  "reportRefreshDate": "Date", 
-  "siteType": "String", 
-  "total": 1024, 
-  "active": 1024, 
-  "reportDate": "Date", 
+  "reportRefreshDate": "Date",
+  "siteType": "String",
+  "total": 1024,
+  "active": 1024,
+  "reportDate": "Date",
   "reportPeriod": "String"
 }
 ```

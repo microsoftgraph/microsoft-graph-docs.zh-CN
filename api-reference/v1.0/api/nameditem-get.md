@@ -2,15 +2,15 @@
 title: 获取 NamedItem
 description: 检索 nameditem 对象的属性和关系。
 localization_priority: Normal
-author: ''
+author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 4a057ef478b21a11b4275c0502f6d68ea9b77f1d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9b9cec3652d79b07fefb927299efd4ee4c9c6253
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511409"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812356"
 ---
 # <a name="get-nameditem"></a>获取 NamedItem
 
@@ -24,7 +24,7 @@ ms.locfileid: "42511409"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /workbook/names/{name}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[WorkbookNamedItem](../resources/nameditem.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [WorkbookNamedItem](../resources/nameditem.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

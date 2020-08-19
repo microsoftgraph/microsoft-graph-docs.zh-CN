@@ -2,15 +2,15 @@
 title: 更新图标
 description: 更新 icon 对象的属性。
 localization_priority: Normal
-author: ''
+author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: d8cd6839991e16c5b8517d8ce3630fe81862cd1b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3f63b882c38daf44ab6a1b69e6f3dde30125ceb5
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516785"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806112"
 ---
 # <a name="update-icon"></a>更新图标
 
@@ -20,11 +20,11 @@ ms.locfileid: "42516785"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              | 
-|:--------------------|:---------------------------------------------------------| 
-|委派（工作或学校帐户） | Files.ReadWrite    | 
-|委派（个人 Microsoft 帐户） | 不支持。    | 
-|应用程序 | 不支持。 | 
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Files.ReadWrite    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |index|int|表示给定集合中图标的索引。|
-|set|string|表示图标所属的集合。 可能的值为： `Invalid`、 `ThreeArrows`、 `ThreeArrowsGray` `ThreeFlags` `ThreeTrafficLights1` `ThreeTrafficLights2` `ThreeSigns` `ThreeSymbols` `ThreeSymbols2` `FourArrows` `FourArrowsGray` `FiveBoxes`、、 `FourRedToBlack`、、、、、、、、、、、、、、、、。 `FourRating` `FourTrafficLights` `FiveArrows` `FiveArrowsGray` `FiveRating` `FiveQuarters` `ThreeStars` `ThreeTriangles`|
+|set|string|表示图标所属的集合。 可能的值为：、、、、、、、、、、、、、、、、、、、、 `Invalid` `ThreeArrows` `ThreeArrowsGray` `ThreeFlags` `ThreeTrafficLights1` `ThreeTrafficLights2` `ThreeSigns` `ThreeSymbols` `ThreeSymbols2` `FourArrows` `FourArrowsGray` `FourRedToBlack` `FourRating` `FourTrafficLights` `FiveArrows` `FiveArrowsGray` `FiveRating` `FiveQuarters` `ThreeStars` `ThreeTriangles` `FiveBoxes` 。|
 
 ## <a name="response"></a>响应
 

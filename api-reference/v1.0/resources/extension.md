@@ -2,15 +2,15 @@
 title: 扩展资源类型
 description: 用以支持 OData v4 开放类型 openTypeExtension 的抽象类型。
 localization_priority: Normal
-author: ''
+author: keylimesoda
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 89375d4856c5d2d93931c5e2d9c2e3b492c85273
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 076d3987fbc776e9e92937bbbb0913b67368962a
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532967"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812328"
 ---
 # <a name="extension-resource-type"></a>扩展资源类型
 
@@ -42,7 +42,7 @@ ms.locfileid: "42532967"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|字符串| 只读。|
+|id|String| 只读。|
 
 ## <a name="relationships"></a>关系
 无

@@ -1,20 +1,20 @@
 ---
 title: 管理重点收件箱
-description: '重点收件箱允许您查看收件箱`Focused`的选项卡中的重要邮件，以及`Other`选项卡中的其余收件箱邮件。分类系统 '
+description: '重点收件箱允许您查看 `Focused` 收件箱的选项卡中的重要邮件，以及选项卡中的其余收件箱邮件 `Other` 。分类系统 '
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: e9debdbb7e2c44276b6af82fa37cb5b33ab89c70
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4ae1801153f211ba9b4ba5d909e3a05dc0a5ee56
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447463"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807687"
 ---
 # <a name="manage-focused-inbox"></a>管理重点收件箱
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 通过重点收件箱，你可以查看收件箱的 `Focused` 选项卡中的重要邮件和 `Other` 选项卡中的其余收件箱邮件。分类系统最初按照默认方式组织收件箱邮件。可以随着时间推移通过用户界面或以编程方式对系统进行更正和培训。使用地越多，系统越能更好地推断哪些传入邮件是重要的。
 
@@ -35,4 +35,4 @@ ms.locfileid: "42447463"
 
 [创建发件人替代](../api/inferenceclassification-post-overrides.md) | [列出所有用户替代](../api/inferenceclassification-list-overrides.md) |
 
-[更新发件人替代](../api/inferenceclassificationoverride-update.md) | [删除发件人替代](../api/inferenceclassificationoverride-delete.md) 
+[更新发件人替代](../api/inferenceclassificationoverride-update.md) | [删除发件人替代](../api/inferenceclassificationoverride-delete.md)

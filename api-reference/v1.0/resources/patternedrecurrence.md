@@ -2,19 +2,19 @@
 title: patternedRecurrence 资源类型
 description: 定期模式和区域。
 localization_priority: Normal
-author: ''
+author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 77c413f98e4c329e7dc7ebcb2412ac12bedfad8d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1e69cc5b3e2ace9418333a0db79a2b9cbc3a37d2
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447225"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806959"
 ---
 # <a name="patternedrecurrence-resource-type"></a>patternedRecurrence 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 定期模式和区域。
 

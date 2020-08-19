@@ -2,19 +2,19 @@
 title: locationConstraintItem 资源类型
 description: 客户端声明的会议地点条件。
 localization_priority: Normal
-author: ''
+author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 404b0fd380c1161a827fe4610f744d0b9872c92b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dbfc43a96a06743ffb018f47882fb373638a45a3
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447526"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807659"
 ---
 # <a name="locationconstraintitem-resource-type"></a>locationConstraintItem 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 客户端声明的会议地点条件。
 

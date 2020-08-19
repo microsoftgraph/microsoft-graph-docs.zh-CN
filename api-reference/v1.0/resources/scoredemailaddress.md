@@ -2,15 +2,15 @@
 title: scoredEmailAddress 资源类型
 description: 表示经过评分的电子邮件地址。
 localization_priority: Normal
-author: ''
+author: AAmatino
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c16d9b2b6d88f651fa65375f0b8ea9418432cc73
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 81fabe954a104663cfcd228bfc182549355bc3db
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533807"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806749"
 ---
 # <a name="scoredemailaddress-resource-type"></a>scoredEmailAddress 资源类型
 

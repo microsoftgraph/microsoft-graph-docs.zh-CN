@@ -4,13 +4,13 @@ description: 从 Exchange Online 或 Azure Active Directory (AAD) 中访问的�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 0a9a38750cf42172a9445764e40d683e2e337600
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+author: kevinbellinger
+ms.openlocfilehash: dbaff3f61e7c430ae77ec10bea66a9c11dabaf05
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757245"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812034"
 ---
 # <a name="profilephoto-resource-type"></a>profilePhoto 资源类型
 

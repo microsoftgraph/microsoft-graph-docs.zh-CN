@@ -2,15 +2,15 @@
 title: 获取 singleValueLegacyExtendedProperty
 description: 可以使用特定的扩展属性或资源实例集合来获取扩展的单个资源实例
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 33a0d0462c0cf75c1e855e969b50521c337b3308
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6aac7f78830ba7f9a677d2840105fbf5292dbcc3
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509806"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807323"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>获取 singleValueLegacyExtendedProperty
 
@@ -18,11 +18,11 @@ ms.locfileid: "42509806"
 
 可以获取使用特定扩展属性扩展的单个资源实例，或包含与筛选器匹配的扩展属性的资源实例集合。
 
-使用查询参数 `$expand`，可以获取使用特定的扩展属性扩展的指定资源实例。 在 **id** 属性上使用 `$filter` 和 `eq` 运算符来指定扩展属性。 这是当前获取 [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) 对象（表示扩展属性）的唯一方式。 
+使用查询参数 `$expand`，可以获取使用特定的扩展属性扩展的指定资源实例。 在 **id** 属性上使用 `$filter` 和 `eq` 运算符来指定扩展属性。 这是当前获取 [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) 对象（表示扩展属性）的唯一方式。
 
 要获取具有某些扩展属性的资源实例，请使用 `$filter` 查询参数并在 **id** 属性上应用 `eq` 运算符。 另外，对于数字扩展属性，请在 **value** 属性上应用以下某个运算符：`eq`、`ne`、`ge`、`gt`、`le` 或 `lt`。 对于字符串类型的扩展属性，请在 **value** 上应用 `contains`、`startswith`、`eq` 或 `ne` 运算符。
 
-该筛选器应用于资源在已登录用户的邮箱中的所有实例。 
+该筛选器应用于资源在已登录用户的邮箱中的所有实例。
 
 在扩展属性的 **id** 中筛选字符串名称 (`Name`) 是区分大小写的。 筛选扩展属性的 **value** 属性是区分大小写的。
 
@@ -30,25 +30,25 @@ ms.locfileid: "42509806"
 
 - [日历](../resources/calendar.md)
 - [联系人](../resources/contact.md)
-- [contactFolder](../resources/contactfolder.md) 
+- [contactFolder](../resources/contactfolder.md)
 - [事件](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [邮件](../resources/message.md) 
+- [邮件](../resources/message.md)
 
 以及以下组资源：
 
 - 组 [日历](../resources/calendar.md)
 - 组 [事件](../resources/event.md)
-- 组[帖子](../resources/post.md) 
+- 组[帖子](../resources/post.md)
 
 有关何时使用开放扩展或扩展属性，以及如何指定扩展属性的详细信息，请参阅[扩展属性概述](../resources/extended-properties-overview.md)。
 
 ## <a name="permissions"></a>权限
-根据您要获取的扩展属性的资源以及所请求的权限类型（委派或应用程序），必须至少调用下表中指定的权限，才能调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据要获取扩展属性的资源以及您请求的权限类型 (委派或应用程序) ，在下表中指定的权限是调用此 API 所需的最低权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
-| [日历](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [事件](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
@@ -118,11 +118,12 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueE
 
 #### <a name="get-resource-instances-that-include-numeric-extended-properties-matching-a-filter"></a>获取包括与筛选器匹配的数值扩展属性的资源实例
 
-获取支持的资源实例，其中包含与筛选器匹配的数字扩展属性。 筛选器在 **id** 属性上使用 `eq` 运算符，并在 **value** 属性上使用以下运算符之一：`eq`、`ne`、`ge`、`gt`、`le` 或 `lt`。 请务必对筛选器字符串中的以下字符应用 [URL 编码](https://www.w3schools.com/tags/ref_urlencode.asp)：冒号、正斜杠和空格。
+获取支持的资源实例，其中包含与筛选器匹配的数字扩展属性。 筛选器在 **id** 属性上使用 `eq` 运算符，并在 **value** 属性上使用以下运算符之一：`eq`、`ne`、`ge`、`gt`、`le` 或 `lt`。
+请务必对筛选器字符串中的以下字符应用 [URL 编码](https://www.w3schools.com/tags/ref_urlencode.asp)：冒号、正斜杠和空格。
 
 以下语法行显示对 id 使用 `eq` 运算符的筛选器，对属性值使用另一个 `eq` 运算符。 可以使用适用于数值的其他运算符中的任何一个（`ne`、`ge`、`gt`、`le` 或 `lt`）替换 **value** 上的 `eq` 运算符。
 
-获取**邮件**实例：
+获取 **message** 实例：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
@@ -228,10 +229,10 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 ## <a name="path-parameters"></a>路径参数
 |参数|类型|说明|
 |:-----|:-----|:-----|
-|id_value|字符串|要匹配的扩展属性的 ID。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
+|id_value|String|要匹配的扩展属性的 ID。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
 |property_value |String|要匹配的扩展属性的值。 如果在上面的 **HTTP 请求**部分中列出，则为必需参数。 如果 {property_value} 不是字符串，请务必在与 {property_value} 比较时，将 `ep/value` 显式转换为相应的 Edm 数据类型。 有关示例，请参阅下面的[请求 4](#request-4)。 |
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -245,7 +246,7 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 
 #### <a name="get-resource-instance-expanded-with-a-matching-extended-property"></a>获取通过匹配的扩展属性扩展的资源实例
 响应正文包括通过匹配的 [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) 对象扩展的对象，此对象表示请求的资源实例。
-  
+
 #### <a name="get-resource-instances-that-contain-an-extended-property-matching-a-filter"></a>获取包含与筛选器匹配的扩展属性的资源实例
 响应主体包含一个或多个对象，它们表示包含匹配的扩展属性的资源实例。 响应正文不包含扩展属性。
 
@@ -350,7 +351,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProp
 
 - 它的 **id** 等同于字符串 `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`（包含 URL 编码，但此处为了方便阅读，已将其删除）。
 
-- 它的 **value** 包含字符串 `green`。 
+- 它的 **value** 包含字符串 `green`。
 
 <!-- { "blockType": "ignored" } -->
 ```http

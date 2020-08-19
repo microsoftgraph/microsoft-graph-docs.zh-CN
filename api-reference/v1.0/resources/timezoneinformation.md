@@ -1,20 +1,20 @@
 ---
 title: timeZoneInformation 资源类型
-description: 表示时区。 受支持的格式为 Windows，Internet 分配的号码颁发机构（IANA）时区（也称为 "Olson 时区"）
+description: '表示时区。 受支持的格式为 Windows，并且 Internet 分配的号码颁发机构 (IANA) 时区 (也称为 Olson 时区) '
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2b09e95db4c6d599e1e61925991912bb55ff8424
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 81f1eb3f8abbdcf95b94407019807d0d002dc286
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446805"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811824"
 ---
 # <a name="timezoneinformation-resource-type"></a>timeZoneInformation 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 
 表示时区。 支持的格式为 Windows，如果修复了当前已知问题，还支持 [Internet 编号分配机构 (IANA) 时区](https://www.iana.org/time-zones)（也称为 Olson 时区）格式。

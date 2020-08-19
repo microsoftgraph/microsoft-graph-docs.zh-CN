@@ -4,13 +4,13 @@ description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: b77583a54722822212fccc45014cdcdff1aba834
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: MSGraphDocsVteam
+ms.openlocfilehash: a5d01b44624fa530b60641d3086f3b2a1b3dfe63
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507675"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811537"
 ---
 # <a name="chunkeduploadsessiondescriptor-resource-type"></a>chunkedUploadSessionDescriptor 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "42507675"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|name|字符串||
+|name|String||
 
 ## <a name="json-representation"></a>JSON 表示形式
 

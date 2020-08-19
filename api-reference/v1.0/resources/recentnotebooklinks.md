@@ -2,15 +2,15 @@
 title: recentNotebookLinks 资源类型
 description: 用于打开 OneNote 笔记本的链接。 此资源类型以 recentNotebook 资源属性的形式存在。
 localization_priority: Normal
-author: ''
+author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a4eefb69476af9769795198fc7e67b154fa30eb0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f438437d5287e666e99e24e9a4ca1e207aceb527
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533899"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806826"
 ---
 # <a name="recentnotebooklinks-resource-type"></a>recentNotebookLinks 资源类型
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 26989c4eb5b7af987ab9a50555d3abdf07e3a16a
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 7a21c071fe0279330683718e6d4f939177afa4d2
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228690"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811719"
 ---
 # <a name="update-personname"></a>更新 contact.personname
 
@@ -36,6 +36,7 @@ ms.locfileid: "43228690"
 
 ```http
 PATCH /me/profile/names/{id}
+PATCH /users/{id | userPrincipalName}/profile/names/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -49,23 +50,27 @@ PATCH /me/profile/names/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型                                            | 说明                                                                             |
-|:-------------|:------------------------------------------------|:----------------------------------------------------------------------------------------|
-|displayName   |String                                           | 提供名和姓的顺序呈现。                              |
-|前         |String                                           | 用户的名字。                                                                 |
-|initials      |String                                           | 用户的首字母缩写。                                                                   |
-|languageTag   |String                                           | 包含遵循 IETF BCP47 格式的语言（en-us，无 NB，en-us）的名称。   |
-|末          |String                                           | 用户的姓氏。                                                                  |
-|maiden        |String                                           | 用户的预 marriage 姓。                                                          |
-|中间        |String                                           | 用户的中间名。                                                                     |
-|昵称      |String                                           | 用户的昵称。                                                                        |
-|拼音 |[yomiPersonName](../resources/yomipersonname.md) | 包含有关用户姓名的读音的详细信息。                                 |
-|后缀        |String                                           | 在 users 名称之后使用的指示符。 （例如： PhD.）                                       |
-|title         |字符串                                           | Honorifics 用于为用户名称加前缀。 （例如： Dr.、罗德、Madam、Mrs）                      |
+下表显示了可以在用户[配置文件](../resources/profile.md)中的现有[contact.personname](../resources/personname.md)对象内进行更新的属性。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|displayName|String|根据用户或其设备的区域设置，提供 firstName 和 lastName 的顺序呈现。|
+|前|String|用户的名字。|
+|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|initials|String|用户的首字母缩写。|
+|languageTag|String|包含以下语言的名称： (en-us、无 NB、en-us) 以下 IETF BCP47 格式。   |
+|末|String|用户的姓氏。|
+|maiden|String|Maiden 用户的名称。 |
+|中间|String|用户的中间名。|
+|昵称|String|用户的昵称。|
+|拼音|[yomiPersonName](../resources/yomipersonname.md)|有关如何对用户名称进行发音的指南。|
+|后缀|String|用户名称之后使用的指示符 (例如：博士. )   |
+|title|String|Honorifics 用于为用户名称加上前缀 (例如： Dr.、罗德、Madam、Mrs ) |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[contact.personname](../resources/personname.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [contact.personname](../resources/personname.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -84,13 +89,9 @@ PATCH https://graph.microsoft.com/beta/me/profile/names/{id}
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "first": "first-value",
-  "initials": "initials-value",
-  "last": "last-value",
-  "languageTag": "languageTag-value",
-  "maiden": "maiden-value"
+  "nickname": "Kesha"
 }
+
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-personname-csharp-snippets.md)]
@@ -123,21 +124,43 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "first": "first-value",
-  "initials": "initials-value",
-  "last": "last-value",
-  "languageTag": "languageTag-value",
-  "maiden": "maiden-value"
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "displayName": "Innocenty Popov",
+  "first": "Innocenty",
+  "initials": "IP",
+  "last": "Popov",
+  "languageTag": "en-US",
+  "maiden": null,
+  "middle": null,
+  "nickname": "Kesha",
+  "suffix": null,
+  "title": null,
+  "pronunciation": {
+    "displayName": "In-no ken-te ",
+    "first": "In-no ken-te Pop-ov",
+    "maiden": null,
+    "middle": null,
+    "last": "Pop-ov"
+  }
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update personname",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

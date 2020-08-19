@@ -2,15 +2,15 @@
 title: 获取 multiValueLegacyExtendedProperty
 description: 展开 "。
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 6a2642a0c93218020dfb001eca2578a1946453c9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8b014ea576f08b19f10d8943350dfc25983cf1d5
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511437"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812377"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>获取 multiValueLegacyExtendedProperty
 
@@ -24,10 +24,10 @@ ms.locfileid: "42511437"
 
 - [日历](../resources/calendar.md)
 - [联系人](../resources/contact.md)
-- [contactFolder](../resources/contactfolder.md) 
+- [contactFolder](../resources/contactfolder.md)
 - [事件](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [邮件](../resources/message.md) 
+- [邮件](../resources/message.md)
 
 以及以下组资源：
 
@@ -38,11 +38,11 @@ ms.locfileid: "42511437"
 有关何时使用开放扩展或扩展属性，以及如何指定扩展属性的详细信息，请参阅[扩展属性概述](../resources/extended-properties-overview.md)。
 
 ## <a name="permissions"></a>权限
-根据您要获取的扩展属性的资源以及所请求的权限类型（委派或应用程序），必须至少调用下表中指定的权限，才能调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据要获取扩展属性的资源以及您请求的权限类型 (委派或应用程序) ，在下表中指定的权限是调用此 API 所需的最低权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
-| [日历](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [事件](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
@@ -51,7 +51,7 @@ ms.locfileid: "42511437"
 | 组[帖子](../resources/post.md) | Group.Read.All | 不支持 | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
 | [邮件](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
- 
+
 ## <a name="http-request"></a>HTTP 请求
 
 获取通过与 **id** 属性中的筛选器匹配的扩展属性扩展的资源实例。请确保对筛选器字符串中的空白字符应用 [URL 编码](https://www.w3schools.com/tags/ref_urlencode.asp)。
@@ -114,7 +114,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueEx
 |:-----|:-----|:-----|
 |id_value|String|要匹配的扩展属性的 ID。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -124,7 +124,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueEx
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `200 OK` 响应代码。 
+如果成功，此方法返回 `200 OK` 响应代码。
 
 响应正文包括通过匹配的 [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) 对象扩展的对象，此对象表示请求的资源实例。
 

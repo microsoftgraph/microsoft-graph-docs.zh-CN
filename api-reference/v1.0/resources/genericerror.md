@@ -4,13 +4,13 @@ description: 常规用途的错误。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: d9e74b53cc5dcd184136439cc80583074633d88c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: 5a583c91c6f5b89ba594e0345c9c8cb256993f71
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531371"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812279"
 ---
 # <a name="genericerror-resource-type"></a>genericError 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "42531371"
 | 属性 | 类型 | 描述 |
 |:---------|:-----|:------------|
 | message | String | 错误消息。 |
-| code | 字符串 | 错误代码。 |
+| code | String | 错误代码。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

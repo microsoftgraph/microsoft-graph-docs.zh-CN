@@ -2,19 +2,19 @@
 title: 电话资源类型
 description: 表示电话号码。
 localization_priority: Normal
-author: ''
+author: davidmu1
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2e20932285f7009ee470ba66a6a9cd78c50d65ec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2817089138a27807fc21f33f1753748ae5221c22
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447183"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806966"
 ---
 # <a name="phone-resource-type"></a>电话资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 表示电话号码。
 
@@ -22,7 +22,7 @@ ms.locfileid: "42447183"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|number|string|电话号码。|
+|数字|string|电话号码。|
 |type|phoneType|电话号码的类型。 可取值包括：`home`、`business`、`mobile`、`other`、`assistant`、`homeFax`、`businessFax`、`otherFax`、`pager`、`radio`。|
 
 ## <a name="json-representation"></a>JSON 表示形式

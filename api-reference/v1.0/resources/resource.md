@@ -2,21 +2,21 @@
 title: OneNoteResource 资源类型
 description: 'OneNote 页面上的图像或其他文件资源。 '
 localization_priority: Normal
-author: ''
+author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 03dde18905892538e4f883f2e90b6b0c36fda460
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 56004eafb469c15b735f2213d9ea18ee5bd17124
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446973"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806784"
 ---
 # <a name="onenoteresource-resource-type"></a>OneNoteResource 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
-OneNote 页面上的图像或其他文件资源。 
+OneNote 页面上的图像或其他文件资源。
 
 您可以获取资源的二进制数据，但不支持获取资源对象或资源集合的 JSON 表示形式。
 
@@ -35,7 +35,7 @@ OneNote 页面上的图像或其他文件资源。
 }
 ```
 
-通过向资源的`content`终结点发送 get 请求获取特定资源的二进制数据：
+通过向资源的终结点发送 GET 请求获取特定资源的二进制数据 `content` ：
 
 ```
 GET ../onenote/resources/{id}/content
@@ -47,21 +47,21 @@ GET ../onenote/resources/{id}/content
 GET ../onenote/pages/{id}/content
 ```
 
-在页面 HTML 中， `img`标记包含`data-fullres-src`属性中的原始图像资源和`src`属性中优化的图像的终结点：
+在页面 HTML 中， `img` 标记包含属性中的原始图像资源 `data-fullres-src` 和属性中优化的图像的终结点 `src` ：
 ```
-<img 
-    src="image-resource-url"  
+<img
+    src="image-resource-url"
     data-src-type="media-type"
-    data-fullres-src="image-resource-url"  
+    data-fullres-src="image-resource-url"
     data-fullres-src-type="media-type" ... />
 ```
 
-`object`标记（表示 PDF、.DOCX 和 PNG 等文件）包含`data`属性中的文件资源的终结点：
+一个 `object` 代表文件（如 PDF、.docx 和 PNG）的标记 () 在属性中包含文件资源的终结点 `data` ：
 
 ```
 <object
     data="file-resource-url"
-    data-attachment="file-name.file-type" 
+    data-attachment="file-name.file-type"
     type="media-type" ... />
 ```
 
@@ -70,7 +70,7 @@ GET ../onenote/pages/{id}/content
 | 属性             | 类型            | 说明
 |:---------------------|:----------------|:---------------------------------
 | content              | 流          | 内容流
-| contentUrl           | String （url）    | 用于下载内容的 URL
+| contentUrl           |  (url 的字符串)     | 用于下载内容的 URL
 
 ## <a name="relationships"></a>关系
 无。

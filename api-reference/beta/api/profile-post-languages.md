@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 65b2bba9f6582b103475c50f6712f2bcb2317f0e
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: ca294f73e9fbac6ea08305f8a85a3688de82b455
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229323"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811619"
 ---
 # <a name="create-languageproficiency"></a>创建 languageProficiency
 
@@ -36,6 +36,7 @@ ms.locfileid: "43229323"
 
 ```http
 POST /me/profile/languages
+POST /users/{id | userPrincipalName}/profile/languages
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -47,11 +48,24 @@ POST /me/profile/languages
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[languageProficiency](../resources/languageproficiency.md)对象的 JSON 表示形式。
+在请求正文中，提供 [languageProficiency](../resources/languageproficiency.md) 对象的 JSON 表示形式。
+
+下表显示了在用户的[配置文件](../resources/profile.md)中创建新的[languageProficiency](../resources/languageproficiency.md)对象时可以设置的属性。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|displayName|String|包含语言的长格式名称。 |
+|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|读物|languageProficiencyLevel|表示对对象代表的语言进行阅读理解的用户。 可取值为：`elementary`、`conversational`、`limitedWorking`、`professionalWorking`、`fullProfessional`、`nativeOrBilingual` 或 `unknownFutureValue`。|
+|source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|发音|languageProficiencyLevel|表示面向对象所代表的语言的熟练程度的用户。 可取值为：`elementary`、`conversational`、`limitedWorking`、`professionalWorking`、`fullProfessional`、`nativeOrBilingual` 或 `unknownFutureValue`。|
+|tag|String|包含四个字符的 BCP47 名称，该语言 (en-us、无 NB、en-us) 。|
+|面向|languageProficiencyLevel|代表对象所代表的语言的已编写熟练程度的用户。 可取值为：`elementary`、`conversational`、`limitedWorking`、`professionalWorking`、`fullProfessional`、`nativeOrBilingual`、`unknownFutureValue`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`201, Created`响应正文中返回响应代码和新的[languageProficiency](../resources/languageproficiency.md)对象。
+如果成功，此方法 `201, Created` 在响应正文中返回响应代码和新的 [languageProficiency](../resources/languageproficiency.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -70,9 +84,11 @@ POST https://graph.microsoft.com/beta/me/profile/languages
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "tag": "tag-value",
-  "proficiency": "proficiency-value"
+  "displayName": "Norwegian Bokmål",
+  "tag": "nb-NO",
+  "spoken": "nativeOrBilingual",
+  "written": "nativeOrBilingual",
+  "reading": "nativeOrBilingual"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -107,18 +123,32 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "tag": "tag-value",
-  "proficiency": "proficiency-value"
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "displayName": "Norwegian Bokmål",
+  "tag": "nb-NO",
+  "spoken": "nativeOrBilingual",
+  "written": "nativeOrBilingual",
+  "reading": "nativeOrBilingual"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create languageProficiency",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

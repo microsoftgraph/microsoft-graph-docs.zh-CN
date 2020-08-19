@@ -4,13 +4,13 @@ description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 570b740fe5ed19a7308d74cf4710e2772d101e52
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: MSGraphDocsVteam
+ms.openlocfilehash: 090a52d44976797d2c6ef9f95847da2a652c1bde
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521241"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811985"
 ---
 # <a name="recipients-resource-type"></a>收件人资源类型
 

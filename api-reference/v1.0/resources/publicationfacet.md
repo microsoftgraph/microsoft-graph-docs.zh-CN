@@ -2,19 +2,19 @@
 title: PublicationFacet 资源类型
 description: '**publicationFacet** 资源提供有关 driveItemVersion 或 driveItem 资源发布状态的详细信息。'
 localization_priority: Normal
-author: ''
+author: JeremyKelley
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: defd2c9b06a0d866ce43bbd4a9e8b36bdad770fb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 91abd61454df2d06131a705dabcb87c9e4ce764f
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447036"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806889"
 ---
 # <a name="publicationfacet-resource-type"></a>PublicationFacet 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 **publicationFacet** 资源提供有关 [driveItemVersion](driveitemversion.md) 或 [driveItem](driveitem.md) 资源发布状态的详细信息。
 

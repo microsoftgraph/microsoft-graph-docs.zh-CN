@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b93d1ea6fa1449bf6491d3ed574e709ff2c883c5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2b09a39d5821d095e8e3a27eb1ec1bf95dda754a
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455863"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811608"
 ---
 # <a name="update-personwebsite"></a>更新 personwebsite
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,6 +36,7 @@ ms.locfileid: "42455863"
 
 ```http
 PATCH /me/profile/websites/{id}
+PATCH /users/{id | userPrincipalName}/profile/websites/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -49,20 +50,23 @@ PATCH /me/profile/websites/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型            | 说明                                                                         |
-|:-------------|:----------------|:------------------------------------------------------------------------------------|
-|categories    |String 集合| 包含用户与网站相关联的类别（例如：个人、食谱）  |
-|说明   |字符串           | 包含网站的说明。                                              |
-|displayName   |String           | 包含网站的友好名称。                                           |
-|webUrl        |String           | 包含指向网站本身的链接。                                              |
+|属性|类型|说明|
+|:---|:---|:---|
+|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|categories|String collection|包含用户与网站相关联的类别 (例如，个人、食谱) 。|
+|description|String|包含网站的说明。|
+|displayName|String|包含网站的友好名称。|
+|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|webUrl|String|包含指向网站本身的链接。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[personWebsite](../resources/personwebsite.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [personWebsite](../resources/personwebsite.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+# <a name="http"></a>[HTTP](#tab/http)
 
 下面展示了示例请求。
 <!-- {
@@ -71,18 +75,26 @@ PATCH /me/profile/websites/{id}
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/user/profile/websites/{id}
+PATCH https://graph.microsoft.com/beta/me/profile/websites/{id}
 Content-type: application/json
 
 {
-  "categories": [
-    "categories-value"
-  ],
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "webUrl": "webUrl-value"
+  "description": "Lyn Damer play in the Women's 1st Division (Toppserien) in Norway"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-personwebsite-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-personwebsite-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-personwebsite-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### <a name="response"></a>响应
 
@@ -101,21 +113,32 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
   "categories": [
-    "categories-value"
+    "football"
   ],
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "webUrl": "webUrl-value"
+  "description": "Lyn Damer play in the Women's 1st Division (Toppserien) in Norway",
+  "displayName": "Lyn Damer",
+  "webUrl": "www.lyndamer.no"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update personwebsite",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

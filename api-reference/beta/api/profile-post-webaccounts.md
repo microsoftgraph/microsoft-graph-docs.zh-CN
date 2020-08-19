@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: cc2619702a514bed8776d501ef26440f3a804ed2
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: b1bcf743737616ac5c48d3b8c3132b57d11464ac
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228616"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46812195"
 ---
 # <a name="create-webaccount"></a>创建 webAccount
 
@@ -36,6 +36,7 @@ ms.locfileid: "43228616"
 
 ```http
 POST /me/profile/webAccounts
+POST /users/{id | userPrincipalName}/profile/webAccounts
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -47,11 +48,24 @@ POST /me/profile/webAccounts
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[webAccount](../resources/webaccount.md)对象的 JSON 表示形式。
+在请求正文中，提供 [webAccount](../resources/webaccount.md) 对象的 JSON 表示形式。
+
+下表显示了在用户的[配置文件](../resources/profile.md)中创建新的[webAccount](../resources/webaccount.md)对象时可以设置的属性。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|description|String|包含用户为所引用服务上的帐户提供的说明。|
+|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|service|[serviceInformation](../resources/serviceinformation.md)| 包含有关要关联的服务的基本详细信息。 |
+|source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|statusMessage|String|包含来自云服务的状态邮件（如果提供或已同步）。 |
+|userId|String|为 webaccount 显示的用户名。  |
+|webUrl|String|包含指向云服务上的用户配置文件的链接（如果存在）。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`201, Created`响应正文中返回响应代码和新的[webAccount](../resources/webaccount.md)对象。
+如果成功，此方法 `201, Created` 在响应正文中返回响应代码和新的 [webAccount](../resources/webaccount.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -70,14 +84,12 @@ POST https://graph.microsoft.com/beta/me/profile/webAccounts
 Content-type: application/json
 
 {
-  "description": "description-value",
-  "userId": "userId-value",
+  "description": "My Github contributions!",
+  "userId": "innocenty.popov",
   "service": {
-    "name": "name-value",
-    "webUrl": "webUrl-value"
-  },
-  "statusMessage": "statusMessage-value",
-  "webUrl": "webUrl-value"
+    "name": "GitHub",
+    "webUrl": "https://github.com"
+  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -112,23 +124,35 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "description": "description-value",
-  "userId": "userId-value",
-  "service": {
-    "name": "name-value",
-    "webUrl": "webUrl-value"
+    "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
   },
-  "statusMessage": "statusMessage-value",
-  "webUrl": "webUrl-value"
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "description": "My Github contributions!",
+  "userId": "innocenty.popov",
+  "service": {
+    "name": "GitHub",
+    "webUrl": "https://github.com"
+  },
+  "statusMessage": null,
+  "webUrl": "https://github.com/innocenty.popov"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create webAccount",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

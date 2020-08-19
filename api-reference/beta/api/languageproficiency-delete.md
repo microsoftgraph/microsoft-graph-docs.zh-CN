@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 8c33c10a3dd4674c59816b18b84b1bce9d84bf26
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: a03b792e63b59ca77cd9a7fe44cc966ff6fdf4f1
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228936"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811803"
 ---
 # <a name="delete-languageproficiency"></a>删除 languageProficiency
 
@@ -36,6 +36,7 @@ ms.locfileid: "43228936"
 
 ```http
 DELETE /me/profile/languages/{id}
+DELETE /users/{id | userPrincipalName}/profile/languages/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -94,13 +95,3 @@ DELETE https://graph.microsoft.com/beta/me/profile/languages/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Delete languageProficiency",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

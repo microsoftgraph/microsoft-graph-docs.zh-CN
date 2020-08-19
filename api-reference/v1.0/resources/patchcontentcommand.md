@@ -2,15 +2,15 @@
 title: patchContentCommand 资源类型
 description: 对修补程序请求中的 OneNote 页面进行的更改。
 localization_priority: Normal
-author: ''
+author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3c8aab8770304f8616025d0d5ac2e70ad41a1340
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0a6ea27f1dd6206a97b6ad60daf783b3092b69a4
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534072"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807022"
 ---
 # <a name="patchcontentcommand-resource-type"></a>patchContentCommand 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "42534072"
 
 ## <a name="json-representation"></a>JSON 表示形式
 
-下面是资源的 JSON 表示形式，它是在[修补程序页/{id} '](../api/page-update.md)请求的正文中发送的。 
+下面是资源的 JSON 表示形式，它是在 [修补程序页/{id} '](../api/page-update.md) 请求的正文中发送的。
 
 <!-- {
   "blockType": "resource",
@@ -43,10 +43,10 @@ ms.locfileid: "42534072"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|action|onenotePatchActionType|要在目标元素上执行的操作。 可能的值为： `replace`、 `append`、 `delete` `insert`、或`prepend`。|
-|内容|String|要添加到页面的格式标准的 HTML 字符串或任意图像或二进制文件数据。 如果内容包含二进制数据，则必须使用包含 "命令" 部分`multipart/form-data`的内容类型发送该请求。 |
-|position|onenotePatchInsertPosition|要添加所提供的内容的位置，与目标元素有关。 可能的值为： `after` （默认）或`before`。|
-|target|字符串|要更新的元素。 必须是`#<data-id>`或生成`<id>`的元素，或`body`或`title`关键字。|
+|action|onenotePatchActionType|要在目标元素上执行的操作。 可能的值为： `replace` 、 `append` 、 `delete` 、 `insert` 或 `prepend` 。|
+|内容|String|要添加到页面的格式标准的 HTML 字符串或任意图像或二进制文件数据。 如果内容包含二进制数据，则必须使用 `multipart/form-data` 包含 "命令" 部分的内容类型发送该请求。 |
+|position|onenotePatchInsertPosition|要添加所提供的内容的位置，与目标元素有关。 可能的值包括： `after` (默认) 或 `before` 。|
+|target|String|要更新的元素。 必须是 `#<data-id>` 或生成 `<id>` 的元素，或 `body` 或 `title` 关键字。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

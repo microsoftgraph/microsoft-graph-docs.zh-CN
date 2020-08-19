@@ -2,23 +2,23 @@
 title: 更新 inferenceclassificationoverride
 description: '按指定内容更改替代的 **ClassifyAs** 字段。 '
 localization_priority: Normal
-author: ''
+author: svpsiva
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 1d1b9777862a3f985ae3801a8b6320950f777ba6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 985bdfa4646eb9e5145b14337084ec9ce65450fc
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516722"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46806483"
 ---
 # <a name="update-inferenceclassificationoverride"></a>更新 inferenceclassificationoverride
 
 命名空间：microsoft.graph
 
-按指定内容更改替代的 **ClassifyAs** 字段。 
+按指定内容更改替代的 **ClassifyAs** 字段。
 
-不能在 [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) 示例中使用 PATCH 更改任何其他字段。 
+不能在 [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) 示例中使用 PATCH 更改任何其他字段。
 
 如果发件人的替代存在，并且发件人更改了他/她的显示名称，可以使用 [POST](inferenceclassification-post-overrides.md) 强制更新现有替代中的名称字段。
 
@@ -51,7 +51,7 @@ PATCH /users/{id}/inferenceClassification/overrides/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|classifyAs|string| 指定来自特定发件人的传入邮件始终应如何分类。 可能的值为： `focused`、 `other`。|
+|classifyAs|string| 指定来自特定发件人的传入邮件始终应如何分类。 可能的值为： `focused` 、 `other` 。|
 
 ## <a name="response"></a>响应
 

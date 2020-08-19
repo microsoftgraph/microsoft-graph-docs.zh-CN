@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 5f9dcea968f3dde36de2ba46dc8c29c5c584a198
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: f55e3f7258dff1e41832085fd966b60c0272f32a
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228921"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811747"
 ---
 # <a name="update-languageproficiency"></a>更新 languageProficiency
 
@@ -36,6 +36,7 @@ ms.locfileid: "43228921"
 
 ```http
 PATCH /me/profile/languages/{id}
+PATCH /users/{id | userPrincipalName}/profile/languages/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -49,15 +50,20 @@ PATCH /me/profile/languages/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | 说明                                                                                                                                                 |
-|:-------------|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|displayName   |String       | 包含所述语言的长格式名称。                                                                                                   |
-|水平   |string       | 可取值为：`elementary`、`conversational`、`limitedWorking`、`professionalWorking`、`fullProfessional`、`nativeOrBilingual` 或 `unknownFutureValue`。|
-|tag           |String       | 包含4个字符 BCP47 语言的名称（en-us，无 NB，en-us）                                                                                  |
+|属性|类型|说明|
+|:---|:---|:---|
+|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|displayName|String|包含语言的长格式名称。 |
+|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|读物|languageProficiencyLevel|表示对对象代表的语言进行阅读理解的用户。 可取值为：`elementary`、`conversational`、`limitedWorking`、`professionalWorking`、`fullProfessional`、`nativeOrBilingual` 或 `unknownFutureValue`。|
+|source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|发音|languageProficiencyLevel|表示面向对象所代表的语言的熟练程度的用户。 可取值为：`elementary`、`conversational`、`limitedWorking`、`professionalWorking`、`fullProfessional`、`nativeOrBilingual` 或 `unknownFutureValue`。|
+|tag|String|包含四个字符的 BCP47 名称，该语言 (en-us、无 NB、en-us) 。|
+|面向|languageProficiencyLevel|代表对象所代表的语言的已编写熟练程度的用户。 可取值为：`elementary`、`conversational`、`limitedWorking`、`professionalWorking`、`fullProfessional`、`nativeOrBilingual`、`unknownFutureValue`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[languageProficiency](../resources/languageproficiency.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [languageProficiency](../resources/languageproficiency.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -76,9 +82,7 @@ PATCH https://graph.microsoft.com/beta/me/profile/languages/{id}
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "tag": "tag-value",
-  "proficiency": "proficiency-value"
+  "allowedAudiences": "organization"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -112,18 +116,32 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "tag": "tag-value",
-  "proficiency": "proficiency-value"
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "displayName": "Norwegian Bokmål",
+  "tag": "nb-NO",
+  "spoken": "nativeOrBilingual",
+  "written": "nativeOrBilingual",
+  "reading": "nativeOrBilingual"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update languageproficiency",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

@@ -2,15 +2,15 @@
 title: 更新 profilephoto
 description: 更新已登录**用户**、指定**组**或**联系人**的照片。 自此处起
 localization_priority: Priority
-author: ''
+author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 3384223413192b0c8ff9984482f7769037d1081b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b446d335f1143f5c9c6316495d6b6d14439e97b4
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510751"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46807036"
 ---
 # <a name="update-profilephoto"></a>更新 profilephoto
 

@@ -4,17 +4,17 @@ description: 表示排名排名的电子邮件地址。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: bdba5af83357737c77e3b5c441703e404f971587
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: AAmatino
+ms.openlocfilehash: f0311b379d2768a2dc704730b7547334e5a64c97
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521276"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811418"
 ---
 # <a name="rankedemailaddress-resource-type"></a>rankedEmailAddress 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
