@@ -4,13 +4,13 @@ description: 使用用户的公式区域设置，将新名称添加到给定范�
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: e5e8ee19488f4c81ffff4b2c1495863f989c5458
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+author: ruoyingl
+ms.openlocfilehash: d1c10057cc73726074bfef17771824917215da99
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108240"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810788"
 ---
 # <a name="add-named-item-formulalocal"></a>添加已命名项 FormulaLocal
 
@@ -44,7 +44,7 @@ POST /workbook/worksheets/{id|name}/names/add
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |name|string|已命名项的名称。|
-|公式|string|名称将引用的公式或区域。|
+|公式|字符串|名称将引用的公式或区域。|
 |comment|string|与此已命名项相关联的注释。|
 
 ## <a name="response"></a>响应

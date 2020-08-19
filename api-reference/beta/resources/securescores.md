@@ -4,21 +4,21 @@ description: 'top = n，其中 n = 要检索的数据的天数。 '
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 9c699ced69587d3e9791d22bc464013907319620
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: preetikr
+ms.openlocfilehash: 2deb3a4ab39b169778ad43f60170e51eaa32eda9
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520855"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810410"
 ---
 # <a name="securescore-resource-type"></a>secureScore 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示租户和控制级别上的每日记分数据的租户安全分数。 默认情况下，将保留90天的数据。 此数据按**createdDateTime**进行排序，从最新到最早。 这将允许您使用 $top = n 对响应进行分页，其中 n = 要检索的数据的天数。 
+表示租户和控制级别上的每日记分数据的租户安全分数。 默认情况下，将保留90天的数据。 此数据按 **createdDateTime**进行排序，从最新到最早。 这将允许您使用 $top = n 对响应进行分页，其中 n = 要检索的数据的天数。
 
 
 ## <a name="methods"></a>方法
@@ -29,7 +29,7 @@ ms.locfileid: "42520855"
 
 
 ## <a name="properties"></a>属性
-包含租户安全分数（每日快照数据）的属性的实体类型。
+包含租户安全分数的属性的实体类型 (每日快照数据) 。
 
 |属性 |类型 |说明 |
 |:--|:--|:--|
@@ -40,9 +40,9 @@ ms.locfileid: "42520855"
 |   activeUserCount |   Int32   |   给定租户的活动用户计数。  |
 |   currentScore    |   双精度  |   租户当前在指定日期的得分。    |
 |   maxScore |  双精度  |   指定日期上可能的租户最大分数。    |
-|   enabledServices |   String 集合   |   适用于租户的 Microsoft 提供的服务（例如，Exchange online、Skype、Sharepoint）。   |
-|   averageComparativeScores |  [averageComparativeScore](averagecomparativescore.md)集合    |作用域内不同作用域（例如，按行业划分的平均分数、按座位的平均方式）和控制类别（标识、数据、设备、应用程序、基础结构）。 |
-|   controlScores | [controlScore](controlscore.md)集合  |   包含一组控件的租户分数。   |
+|   enabledServices |   字符串集合   |   Microsoft 为租户提供的服务 (例如，Exchange online、Skype、Sharepoint) 。   |
+|   averageComparativeScores |  [averageComparativeScore](averagecomparativescore.md) 集合    |不同作用域的平均分数 (例如，行业平均值、座位) 和控制类别的平均 (标识、数据、设备、应用程序、基础结构) 在范围内。 |
+|   controlScores | [controlScore](controlscore.md) 集合  |   包含一组控件的租户分数。   |
 
 
 ## <a name="relationships"></a>关系

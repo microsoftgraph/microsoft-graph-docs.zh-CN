@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 7f0141e249e04d378724a2e3128e1e26f17e3ac2
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 9f629543692d514e6ff96f633eeed993e1e90e78
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792882"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810935"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -84,6 +84,12 @@ ms.locfileid: "46792882"
 | 添加项 | beta | 在[使用条款协议中添加了下列属性](/graph/api/resources/agreement?view=graph-rest-beta):<ul><li>isPerDeviceAcceptanceRequired</li><li>termsExpiration</li><li>userReacceptRequiredFrequency</li></ul>|
 | 添加项 | beta | 已将新资源类型添加到 [使用条款协议](/graph/api/resources/agreement?view=graph-rest-beta)：</br>[agreementFile](/graph/api/resources/agreementfile?view=graph-rest-beta)|
 | 添加项 | beta | 向权利管理添加了 [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta) 内部和外部发起人。  |
+
+### <a name="people-and-workplace-intelligence"></a>人员和工作场所智能
+
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 添加项 | Beta | 已将以下新关系添通过关联实体和方法加到[profile API](/graph/api/resources/profile?view=graph-rest-beta) ： <ul><li>[地址](/graph/api/resources/itemAddress?view=graph-rest-beta)</li><li>[纪念日](/graph/api/resources/personAnniversary?view=graph-rest-beta)</li><li>[奖项](/graph/api/resources/personAward?view=graph-rest-beta)</li><li>[证书](/graph/api/resources/personCertification?view=graph-rest-beta)</li><li>[笔记](/graph/api/resources/personAnnotation?view=graph-rest-beta)：</li><li>[专利](/graph/api/resources/itemPatent?view=graph-rest-beta)</li><li>[出版物](/graph/api/resources/itemPublication?view=graph-rest-beta)</li></ul>|
 
 ### <a name="reports--microsoft-365-usage-reports"></a>报告 | Microsoft 365 使用情况报告
 
@@ -3208,7 +3214,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 ### <a name="reports"></a>报告
 |更改类型|版本|说明|
 |:---|:---|:---|
-|添加项|beta| 添加了委派的访问支持。 |
+|Addition|beta| 添加了委派的访问支持。 |
 |Addition|v1.0| 添加了委派的访问支持。 |
 
 ### <a name="security"></a>安全性
@@ -3502,7 +3508,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加项|Beta|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 上添加了 [revokeAppleVppLicenses](/graph/api/intune-devices-manageddevice-revokeapplevpplicenses?view=graph-rest-beta) 操作 |
 |添加项|Beta|在 [deviceCompliancePolicy](/graph/api/resources/intune-deviceconfig-devicecompliancepolicy?view=graph-rest-beta) 上添加了 [assign](/graph/api/intune-deviceconfig-devicecompliancepolicy-assign?view=graph-rest-beta) 操作 |
 |添加项|Beta|对 [vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-beta) 新增了 [revokeLicenses](/graph/api/intune-onboarding-vpptoken-revokelicenses?view=graph-rest-beta) 操作 |
-|添加|Beta|在 [user](/graph/api/resources/intune-devices-user?view=graph-rest-beta) 上添加了 [wipeManagedAppRegistrationsByDeviceTag](/graph/api/intune-mam-user-wipemanagedappregistrationsbydevicetag?view=graph-rest-beta) 操作 |
+|添加项|Beta|在 [user](/graph/api/resources/intune-devices-user?view=graph-rest-beta) 上添加了 [wipeManagedAppRegistrationsByDeviceTag](/graph/api/intune-mam-user-wipemanagedappregistrationsbydevicetag?view=graph-rest-beta) 操作 |
 |添加项|Beta|在 [managedEBook](/graph/api/resources/intune-books-managedebook?view=graph-rest-beta) 上添加了 [assign](/graph/api/intune-books-managedebook-assign?view=graph-rest-beta) 操作 |
 |添加项|Beta|在 [user](/graph/api/resources/intune-devices-user?view=graph-rest-beta) 上添加了 [getEffectiveDeviceEnrollmentConfigurations](/graph/api/intune-onboarding-user-geteffectivedeviceenrollmentconfigurations?view=graph-rest-beta) 函数 |
 |删除|Beta|删除了以下实体：<br/>**appReportingOverviewStatus**<br/>**complianceSettingStateSummary**<br/>**deviceConfigurationUserStateSummary**<br/>**eBookGroupAssignment**<br/>**eBookVppGroupAssignment**<br/>**mobileAppGroupAssignment**<br/>**mobileAppVppGroupAssignment**<br/>|

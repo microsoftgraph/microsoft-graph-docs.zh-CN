@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7e2ee8f1da830253f8f8d8a2ada0d8ec8b0c029f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e8b5e6508af5b00ecdcd50180d8a5ed47c05c009
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42426302"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810893"
 ---
 # <a name="update-educationclass-properties"></a>更新 educationclass 属性
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ ms.locfileid: "42426302"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  不支持。  |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|应用程序 | EduRoster.ReadWrite.All | 
+|应用程序 | EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -48,8 +48,10 @@ PATCH /education/classes/{id}
 |说明|String| 课程说明。|
 |displayName|String| 课程名称。|
 |mailNickname|String| 用于向所有用户发送电子邮件的电子邮件别名（如果已启用）。 |
-<!-- Please verify the revised description here. -->
-|classCode|String| 由学校使用的课程代码。| |externalId|String| 来自同步系统的课程 ID。 | |externalName|String|同步系统中的课程名称。| |externalSource|string| 此课程的创建方式。 可取值为：`sis`、`manual`、`enum_sentinel`。|
+|classCode|String| 学校使用的类代码。|
+|externalId|String| 来自同步系统的课程 ID。 |
+|externalName|String|同步系统中的课程名称。|
+|externalSource|string| 此课程的创建方式。 可取值为：`sis`、`manual`、`enum_sentinel`。|
 
 ## <a name="response"></a>响应
 如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和更新的 [educationClass](../resources/educationclass.md) 对象。
@@ -87,7 +89,7 @@ Content-length: 224
 ---
 
 ##### <a name="response"></a>响应
-下面展示了示例响应。 
+下面展示了示例响应。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 

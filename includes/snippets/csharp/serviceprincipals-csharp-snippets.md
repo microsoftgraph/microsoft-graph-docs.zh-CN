@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8589604ff8262b514b39edf3fa7e0d021cb2e367
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: a88413caa7fa250908b2ef883442b2c64229f13d
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643930"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46813675"
 ---
 ```csharp
 
@@ -15,9 +15,9 @@ var claimsMappingPolicy = new ClaimsMappingPolicy
 {
     Definition = new List<String>()
     {
-        "{\"ClaimsMappingPolicy\": {\r\n                \"Version\": 1,\r\n                \"IncludeBasicClaimSet\": \"true\",\r\n                \"ClaimsSchema\": [\r\n                    {\r\n                        \"Source\": \"user\",\r\n                        \"ID\": \"assignedroles\",\r\n                        \"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"\r\n                    },\r\n                    {\r\n                        \"Source\": \"user\",\r\n                        \"ID\": \"userprincipalname\",\r\n                        \"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"\r\n                    },\r\n                    {\r\n                        \"Source\": \"user\",\r\n                        \"ID\": \"900\",\r\n                        \"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"\r\n                    },\r\n                    {\r\n                        \"Source\": \"user\",\r\n                        \"ID\": \"assignedroles\",\r\n                        \"SamlClaimType\": \"appRoles\"\r\n                    },\r\n                    {\r\n                        \"Source\": \"user\",\r\n                        \"ID\": \"userprincipalname\",\r\n                        \"SamlClaimType\": \"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\"\r\n                    }\r\n                ]\r\n            }\r\n        }"
+        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Source\":\"user\",\"ID\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/nameidentifier\"}]}}"
     },
-    DisplayName = "AWS Claims policy",
+    DisplayName = "AWS Claims Policy",
     IsOrganizationDefault = false
 };
 

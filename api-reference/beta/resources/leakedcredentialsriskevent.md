@@ -4,24 +4,24 @@ description: Azure Active Directory 标识保护检测到的某个帐户凭据�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: ec92a7a0b4d79cd55db36335a9138deb08c828eb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: cloudhandler
+ms.openlocfilehash: 90b062fa0e7f6d577accabf6d8b458174d2f696c
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522986"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810557"
 ---
 # <a name="leakedcredentialsriskevent-resource-type"></a>leakedCredentialsRiskEvent 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅[弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
+>**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅 [弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
 
-[Azure Active Directory 标识保护](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/)检测到的某个帐户凭据已在通配符中检测到的风险事件。 有关风险事件的完整信息，请参阅[AZURE AD Identity Protection 文档](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection-risk-events-types/)。
+[Azure Active Directory 标识保护](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/)检测到的某个帐户凭据已在通配符中检测到的风险事件。 有关风险事件的完整信息，请参阅 [AZURE AD Identity Protection 文档](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection-risk-events-types/)。
 
 
 ## <a name="methods"></a>方法
@@ -35,7 +35,7 @@ ms.locfileid: "42522986"
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| 风险事件关闭的日期和时间|
 |createdDateTime|dateTimeOffset| 风险事件的创建日期和时间。 此值始终大于或等于风险事件本身的日期时间。 这是查询风险事件时用作筛选器的正确属性。|
-|id|字符串| 只读|
+|id|string| 只读|
 |riskEventDateTime|dateTimeOffset| 风险事件发生的日期和时间|
 |riskEventStatus|string| 可取值为：`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons`。|
 |riskLevel|string| 可取值为：`low`、`medium`、`high`。|
@@ -47,7 +47,7 @@ ms.locfileid: "42522986"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|impactedUser|[用户](user.md)| 只读。可为空。|
+|impactedUser|[user](user.md)| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -3,14 +3,14 @@ title: 删除 historyItem
 description: 删除现有用户活动的现有历史记录项。
 localization_priority: Normal
 ms.prod: project-rome
-author: ''
+author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: fc6ed6a6a2f01667c32b9f2497a93e05e0f275ee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 084431ed1ad5ef6ff30986afe7a14037bbb4b5f5
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510737"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810288"
 ---
 # <a name="delete-a-historyitem"></a>删除 historyItem
 
@@ -27,7 +27,7 @@ ms.locfileid: "42510737"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | UserActivity.ReadWrite.CreatedByApp    |
 |委派（个人 Microsoft 帐户） | UserActivity.ReadWrite.CreatedByApp    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,7 +49,7 @@ DELETE /me/activities/{id}/historyItems/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在历史`204 No Content`记录项被删除时返回响应代码。
+如果成功，此方法在 `204 No Content` 历史记录项被删除时返回响应代码。
 
 ## <a name="example"></a>示例
 

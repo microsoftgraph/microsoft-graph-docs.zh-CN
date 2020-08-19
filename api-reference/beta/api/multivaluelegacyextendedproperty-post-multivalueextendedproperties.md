@@ -4,27 +4,27 @@ description: '在新建或现有的资源实例中创建一个或多个多值扩
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 8cb697f142a2f52b805723379ad35c4280a8d674
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: 80923a04e7ce8c932134ddc4f12754a0e26f44c5
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456809"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810837"
 ---
 # <a name="create-multi-value-extended-property"></a>创建多值扩展属性
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在新建或现有的资源实例中创建一个或多个多值扩展属性。 
+在新建或现有的资源实例中创建一个或多个多值扩展属性。
 
 支持以下用户资源：
 
 - [日历](../resources/calendar.md)
 - [联系人](../resources/contact.md)
-- [contactFolder](../resources/contactfolder.md) 
+- [contactFolder](../resources/contactfolder.md)
 - [事件](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [邮件](../resources/message.md)
@@ -35,16 +35,16 @@ ms.locfileid: "42456809"
 
 - 组 [日历](../resources/calendar.md)
 - 组 [事件](../resources/event.md)
-- 组[帖子](../resources/post.md) 
+- 组[帖子](../resources/post.md)
 
 有关何时使用开放扩展或扩展属性，以及如何指定扩展属性的详细信息，请参阅[扩展属性概述](../resources/extended-properties-overview.md)。
 
 ## <a name="permissions"></a>权限
-根据您要在其中创建扩展属性的资源以及所请求的权限类型（委派或应用程序），在下表中指定的权限是调用此 API 所需的最低权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据您要在其中创建扩展属性的资源以及请求的权限类型 (委派或应用程序) ，在下表中指定的权限是调用此 API 所需的最低权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
-| [日历](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
@@ -60,9 +60,9 @@ ms.locfileid: "42456809"
 可以在新建或现有的资源实例中创建扩展属性。
 
 若要在_新的_资源实例中创建一个或多个扩展属性，请使用与创建实例相同的 REST 请求，并包括新资源实例的属性和请求正文中的_扩展属性_。
-注意，一些资源支持以多种方式创建。 有关创建这些资源实例的详细信息，请参阅创建[邮件](../resources/message.md)的相应主题： [mailFolder](../api/user-post-mailfolders.md)、 [event](../api/user-post-events.md)、 [calendar](../api/user-post-calendars.md)、 [contact](../api/user-post-contacts.md)、 [contactFolder](../api/user-post-contactfolders.md)、 [outlook task](../resources/outlooktask.md)、 [outlook task folder](../resources/outlooktaskfolder.md)、 [group event](../api/group-post-events.md)和[group post](../resources/post.md)。 
- 
-以下是请求的语法。 
+注意，一些资源支持以多种方式创建。 有关创建这些资源实例的详细信息，请参阅创建 [邮件](../resources/message.md)的相应主题： [mailFolder](../api/user-post-mailfolders.md)、 [event](../api/user-post-events.md)、 [calendar](../api/user-post-calendars.md)、 [contact](../api/user-post-contacts.md)、 [contactFolder](../api/user-post-contactfolders.md)、 [outlook task](../resources/outlooktask.md)、 [outlook task folder](../resources/outlooktaskfolder.md)、 [group event](../api/group-post-events.md)和 [group post](../resources/post.md)。
+
+以下是请求的语法。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -170,7 +170,7 @@ PATCH /groups/{id}/events/{id}
 #### <a name="response-code"></a>响应代码
 在新建资源实例中成功创建扩展属性的操作返回 `201 Created`（在新的组帖子中除外），根据所用的方法，该操作可以返回 `200 OK` 或 `202 Accepted`。
 
-在现有的资源实例中，成功的创建操作返回 `200 OK`。 
+在现有的资源实例中，成功的创建操作返回 `200 OK`。
 
 
 #### <a name="response-body"></a>响应正文
@@ -185,9 +185,9 @@ PATCH /groups/{id}/events/{id}
 
 第一个示例在同一个 POST 操作的全新事件中创建一个多值扩展属性。除了通常要包括的新事件的属性，请求正文还包括 **multiValueExtendedProperties** 集合（包含一个扩展属性）。请求正文包括该多值扩展属性的如下参数：
 
-- **id**，将此属性指定为包含指定 GUID 和 `Recreation` 名称的字符串数组。 
+- **id**，将此属性指定为包含指定 GUID 和 `Recreation` 名称的字符串数组。
 - **value**，将 `Recreation` 指定为包含 3 个字符串值（`["Food", "Hiking", "Swimming"]`）的数组。
- 
+
 
 <!-- { "blockType": "ignored" } -->
 ```http

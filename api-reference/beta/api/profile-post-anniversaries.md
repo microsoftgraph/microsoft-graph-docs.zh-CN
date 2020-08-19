@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: d00734bf10467d8f76658fc3b6148f31f0201414
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 92caed6f034b53c53d21f6a0931b3f9e4786e26a
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455121"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810067"
 ---
 # <a name="create-personanniversary"></a>创建 personAnniversary
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,8 @@ ms.locfileid: "42455121"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /me/profile/anniversaries 
+POST /me/profile/anniversaries
+POST /users/{id | userPrincipalName}/profile/anniversaries
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -47,11 +48,21 @@ POST /me/profile/anniversaries
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[personAnniversary](../resources/personanniversary.md)对象的 JSON 表示形式。
+在请求正文中，提供 [personAnniversary](../resources/personanniversary.md) 对象的 JSON 表示形式。
+
+下表显示了可以在用户 [配置文件](../resources/profile.md)中的新 * * personAnniversary * * * * 对象中设置的属性。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|date|Date|包含与周年纪念类型相关联的日期。|
+|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|type|anniversaryType|日期所代表的周年纪念的类型。 可取值为：`birthday`、`wedding`、`unknownFutureValue`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`201, Created`响应正文中返回响应代码和新的[personAnniversary](../resources/personanniversary.md)对象。
+如果成功，此方法 `201, Created` 在响应正文中返回响应代码和新的 [personAnniversary](../resources/personanniversary.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -70,8 +81,8 @@ POST https://graph.microsoft.com/beta/me/profile/anniversaries
 Content-type: application/json
 
 {
-  "type": "type-value",
-  "date": "datetime-value"
+  "type": "birthday",
+  "date": "1980-01-08"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -87,7 +98,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### <a name="response"></a>响应
 
@@ -106,17 +116,28 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "type": "type-value",
-  "date": "datetime-value"
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "type": "birthday",
+  "date": "Date"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create personAnniversary",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

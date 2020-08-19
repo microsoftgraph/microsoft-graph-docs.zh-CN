@@ -4,17 +4,17 @@ description: 检索 nameditem 对象的属性和关系。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 48a61c6833619e77c37df9d9bb02f9daac756047
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ruoyingl
+ms.openlocfilehash: 4b21802bc790db0fb3bc2c54a1b42fb62479f6f1
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456794"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810802"
 ---
 # <a name="get-nameditem"></a>获取 NamedItem
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,7 +47,7 @@ GET /workbook/names/{name}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[workbookNamedItem](../resources/workbooknameditem.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookNamedItem](../resources/workbooknameditem.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

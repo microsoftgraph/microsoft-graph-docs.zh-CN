@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0dc41b151b008ba18eeea15d397cb225f4292317
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: daeaee3034e51f0dc351b19f193b4ae529e1f0f4
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673817"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810074"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>获取 ID 列表中的目录对象
 
@@ -18,7 +18,7 @@ ms.locfileid: "46673817"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回 ID 列表中指定的目录对象。  
+返回 ID 列表中指定的目录对象。
 
 该函数的一些常见用途是：
 

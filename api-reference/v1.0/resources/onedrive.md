@@ -3,19 +3,19 @@ title: 在 Microsoft Graph 中使用文件
 description: 可以使用 Microsoft Graph 创建一个跨 OneDrive、OneDrive for Business 和 SharePoint 文档库与文件连接的应用程序。
 localization_priority: Priority
 ms.prod: sharepoint
-author: ''
+author: jewan-microsoft
 doc_type: conceptualPageType
-ms.openlocfilehash: 043a380890e361b1ad5d920ba4c32de1e89d98ca
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4ca07cc41f0819f3c003ee91851e6e5387b7d325
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035908"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808191"
 ---
 # <a name="working-with-files-in-microsoft-graph"></a>在 Microsoft Graph 中使用文件
 
 可以使用 Microsoft Graph 创建一个跨 OneDrive、OneDrive for Business 和 SharePoint 文档库与文件连接的应用程序。
-通过 Microsoft Graph，可以使用存储在 Office 365 中的文件构建各种体验，从仅存储用户文档到复杂的文件共享方案均可。
+通过Microsoft Graph，你可以使用存储在Microsoft 365中的文件构建各种体验，从简单的存储用户文档到复杂的文件共享场景均可。
 
 Microsoft Graph 公开可用于文件的两个资源类型：
 
@@ -89,7 +89,7 @@ Microsoft Graph 公开可用于文件的两个资源类型：
 [驱动器资源](drive.md) 是用户的 OneDrive 或 [SharePoint][] 文档库内的顶级对象。
 几乎所有的文件操作都从查找特定驱动器资源开始。
 
-可以通过驱动器的唯一 ID 或 [用户](user.md)、[组](group.md) 或组织的默认驱动器查找驱动器资源。  
+可以通过驱动器的唯一 ID 或 [用户](user.md)、[组](group.md) 或组织的默认驱动器查找驱动器资源。 
 
 ## <a name="driveitem-resource"></a>DriveItem 资源
 
@@ -103,13 +103,16 @@ DriveItems 拥有多个 _Facet_，可提供有关项目标识和功能的数据�
 
 OneDrive 个人版用户可以向他们自己的 OneDrive 中添加其他驱动器的一个或多个共享项目。这些共享项目在具有 [remoteItem](remoteitem.md) facet 的**子项**集合中显示为 **DriveItem**。
 
-有关使用共享文件夹和远程项目的详细信息，请参阅 [Remote items and shared folders](remoteitem.md)（远程项目和共享文件夹）。   
+有关使用共享文件夹和远程项目的详细信息，请参阅 [Remote items and shared folders](remoteitem.md)（远程项目和共享文件夹）。
 
 ## <a name="sharing-and-permissions"></a>共享和权限
 
 OneDrive 和 SharePoint 文档库最常见的操作之一是与其他人共享内容。Microsoft Graph 使你的应用程序可以创建 [共享链接](../api/driveitem-createlink.md)、[添加权限并发送邀请](../api/driveitem-invite.md) 到驱动器中的项目。
 
 Microsoft Graph 还为应用提供了一种直接从共享链接 [访问共享内容](../api/shares-get.md) 的方法。
+
+## <a name="whats-new"></a>最近更新
+了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
 
 [SharePoint]: sharepoint.md
 [网站]: site.md

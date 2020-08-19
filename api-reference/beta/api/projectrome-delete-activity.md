@@ -4,17 +4,17 @@ description: 删除应用程序的现有用户活动。
 localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
-author: ''
-ms.openlocfilehash: 2c856fdfcc20ecc783cfa349302a50f53d6282e4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ailae
+ms.openlocfilehash: 193a87003e321123be71913dcaeeaf9c14dd1c09
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454918"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810014"
 ---
 # <a name="delete-an-activity"></a>删除活动
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,7 +51,7 @@ DELETE /me/activities/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回`204 No Content`响应代码（如果活动已删除）。
+如果成功，此方法将返回 `204 No Content` 响应代码（如果活动已删除）。
 
 ## <a name="example"></a>示例
 

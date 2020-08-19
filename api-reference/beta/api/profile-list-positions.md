@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 05304a8d6a3da42d8721c590d1b943a50dcea3a8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 60770c962298a764b686c6fa7c578c69e95dc0ec
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455145"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810678"
 ---
 # <a name="list-positions"></a>列表位置
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,16 +36,17 @@ ms.locfileid: "42455145"
 
 ```http
 GET /me/profile/positions
+GET /users/{id | userPrincipalName}/profile/positions
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持以下 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持以下 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-|Name            |值    |说明                                                                                                                                                                 |
+|名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |$filter         |string   |将响应限制为仅包含指定条件的那些对象。                                                                                             |
-|$orderby        |string   |默认情况下，响应中的对象按其在查询中的 createdDateTime 值进行排序。 您可以使用`$orderby`参数更改响应的顺序。|
+|$orderby        |string   |默认情况下，响应中的对象按其在查询中的 createdDateTime 值进行排序。 您可以使用参数更改响应的顺序 `$orderby` 。|
 |$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
 |$skip           |int      |跳过前 n 个结果，对于分页非常有用。                                                                                                                                |
 |$top            |int      |要返回的结果数。                                                                                                                                           |
@@ -62,7 +63,7 @@ GET /me/profile/positions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[workPosition](../resources/workposition.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workPosition](../resources/workposition.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -114,33 +115,56 @@ Content-type: application/json
 {
   "value": [
     {
-      "categories": [
-        "categories-value"
-      ],
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "source": null,
+      "categories": null,
       "detail": {
         "company": {
-          "displayName": "displayName-value",
-          "pronunciation": "pronunciation-value",
-          "department": "department-value",
-          "officeLocation": "officeLocation-value",
+          "displayName": "Adventureworks Ltd.",
+          "pronunciation": null,
+          "department": "Consulting",
+          "officeLocation": "AW23/344",
           "address": {
-            "type": "type-value",
-            "postOfficeBox": "postOfficeBox-value",
-            "street": "street-value",
-            "city": "city-value",
-            "state": "state-value",
-            "countryOrRegion": "countryOrRegion-value",
-            "postalCode": "postalCode-value"
+            "type": "business",
+            "postOfficeBox": null,
+            "street": "123 Patriachy Ponds",
+            "city": "Moscow",
+            "state": null,
+            "countryOrRegion": "Russian Federation",
+            "postalCode": "RU-34621"
           },
-          "webUrl": "webUrl-value"
+          "webUrl": "https://www.adventureworks.com"
         },
-        "description": "description-value",
-        "endMonthYear": "datetime-value",
-        "jobTitle": "jobTitle-value",
-        "role": "role-value",
+        "description": null,
+        "endMonthYear": null,
+        "jobTitle": "Senior Product Branding Manager II",
+        "role": "consulting",
         "startMonthYear": "datetime-value",
-        "summary": "summary-value"
-      }
+        "summary": null
+      },
+      "manager": null,
+      "colleagues": null,
+      "isCurrent": true
     }
   ]
 }

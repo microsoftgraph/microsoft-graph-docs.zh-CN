@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b0aa9353a9e16929bd71f41f5328c0fdaf12c531
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6a50fbae387a7599110dce8056f927f449681e04
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454925"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810027"
 ---
 # <a name="update-projectparticipation"></a>更新 projectparticipation
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,6 +36,7 @@ ms.locfileid: "42454925"
 
 ```http
 PATCH /me/profile/projects/{id}
+PATCH /users/{id | userPrincipalName}/profile/projects/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -45,23 +46,25 @@ PATCH /me/profile/projects/{id}
 | Authorization  | Bearer {token}。必需。   |
 | Content-Type   | application/json. Required. |
 
-
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型                                                     | 说明                                                                                        |
-|:-------------|:---------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
-|categories    |String 集合                                         | 包含用户与项目相关联的类别（例如：数字转换、石油远程测试机组）   |
-|客户端        |[companyDetail](../resources/companydetail.md)            | 包含有关项目所针对的客户端的详细信息。                                |
-|征求    |[relatedPerson](../resources/relatedperson.md)集合 | 对项目也有效的人员。                                                            |
-|介绍        |[positionDetail](../resources/positiondetail.md)          | 包含有关项目上的用户角色的详细信息。                                               |
-|displayName   |String                                                    | 包含项目的友好名称。                                                          |
-|人      |[relatedPerson](../resources/relatedperson.md)集合 | 赞助项目的人员（人员）。                                                          |
+|属性|类型|说明|
+|:---|:---|:---|
+|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|categories|String collection|包含用户与项目相关联的类别 (例如，数字转换、石油远程测试机组) 。 |
+|客户端|[companyDetail](../resources/companydetail.md)|包含有关项目所针对的客户端的详细信息。 |
+|collaborationTags|字符串集合|包含用户与兴趣相关的体验方案标记。 集合中允许的值为： `askMeAbout` 、 `ableToMentor` 、 `wantsToLearn` 、 `wantsToImprove` 。|
+|征求|[relatedPerson](../resources/relatedperson.md) 集合|列出也在项目中工作的人员。 |
+|介绍|[positionDetail](../resources/positiondetail.md)|包含有关用户在项目上的角色的详细信息。|
+|displayName|String|包含项目的友好名称。|
+|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|人|[relatedPerson](../resources/relatedperson.md) 集合|发起项目的人员或人员。    |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[projectParticipation](../resources/projectparticipation.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [projectParticipation](../resources/projectparticipation.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -80,64 +83,11 @@ PATCH https://graph.microsoft.com/beta/me/profile/projects/{id}
 Content-type: application/json
 
 {
-  "categories": [
-    "categories-value"
-  ],
+  "allowedAudiences": "organization",
   "client": {
-    "displayName": "displayName-value",
-    "pronunciation": "pronunciation-value",
-    "department": "department-value",
-    "officeLocation": "officeLocation-value",
-    "address": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
-    },
-    "webUrl": "webUrl-value"
-  },
-  "displayName": "displayName-value",
-  "detail": {
-    "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
-      "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
-      },
-      "webUrl": "webUrl-value"
-    },
-    "description": "description-value",
-    "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
-    "startMonthYear": "datetime-value",
-    "summary": "summary-value"
-  },
-  "colleagues": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ],
-  "sponsors": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ]
+    "department": "Corporate Marketing",
+    "webUrl": "https://www.contoso.com"
+  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -172,73 +122,57 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
   "categories": [
-    "categories-value"
+    "Branding"
   ],
   "client": {
-    "displayName": "displayName-value",
-    "pronunciation": "pronunciation-value",
-    "department": "department-value",
-    "officeLocation": "officeLocation-value",
-    "address": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
-    },
-    "webUrl": "webUrl-value"
+    "displayName": "Contoso Ltd.",
+    "pronunciation": null,
+    "department": "Corporate Marketing",
+    "officeLocation": null,
+    "address": null,
+    "webUrl": "https://www.contoso.com"
   },
-  "displayName": "displayName-value",
+  "displayName": "Contoso Re-branding Project",
   "detail": {
     "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
-      "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
-      },
-      "webUrl": "webUrl-value"
+      "displayName": "Adventureworks Inc.",
+      "pronunciation": null,
+      "department": "Consulting",
+      "officeLocation": null,
+      "address": null,
+      "webUrl": "https://adventureworks.com"
     },
-    "description": "description-value",
+    "description": "Rebranding of Contoso Ltd.",
     "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
+    "jobTitle": "Lead PM Rebranding",
+    "role": "project management",
     "startMonthYear": "datetime-value",
-    "summary": "summary-value"
+    "summary": "A 6 month project to help Contoso rebrand after they were divested from a parent organization."
   },
-  "colleagues": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ],
-  "sponsors": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ]
+  "colleagues": null,
+  "sponsors": null
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update projectparticipation",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

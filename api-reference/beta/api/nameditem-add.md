@@ -4,13 +4,13 @@ description: 使用用户的公式区域设置，将新名称添加到给定范�
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 9996d9974a0e98a86e3770228b2bd03495e30894
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+author: ruoyingl
+ms.openlocfilehash: b08abe6b4f5deb90c55b2452bb785157fec95cfe
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108226"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810816"
 ---
 # <a name="add-named-item"></a>添加已命名项
 
@@ -53,7 +53,7 @@ POST /workbook/worksheets/{id|name}/names/add
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`200 OK`响应正文中返回响应代码和[workbookNamedItem](../resources/workbooknameditem.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookNamedItem](../resources/workbooknameditem.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

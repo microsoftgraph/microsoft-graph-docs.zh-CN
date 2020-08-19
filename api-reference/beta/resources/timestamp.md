@@ -4,17 +4,17 @@ description: 时间点的日期和时间信息。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 72da26fa1e6dd428f53f2cb219a681a32a8ba42b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: JeremyKelley
+ms.openlocfilehash: 1037212f1adb0fb10326bbdf88416877e16a9fbe
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519692"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810991"
 ---
 # <a name="timestamp-resource-type"></a>时间戳资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

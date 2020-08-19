@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 75d45c0dff4828c292887e7d7fb1d8a6817c53dd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d8ba3970b9e828002fd2100e6cdf8a4ad8ce5620
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455154"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810634"
 ---
 # <a name="list-webaccounts"></a>列出 webAccounts
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,16 +36,17 @@ ms.locfileid: "42455154"
 
 ```http
 GET /me/profile/webAccounts
+GET /users/{id | userPrincipalName}/profile/webAccounts
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持以下 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持以下 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-|Name            |值    |说明                                                                                                                                                                 |
+|名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |$filter         |string   |将响应限制为仅包含指定条件的那些对象。                                                                                             |
-|$orderby        |string   |默认情况下，响应中的对象按其在查询中的 createdDateTime 值进行排序。 您可以使用 *$orderby*参数更改响应的顺序。|
+|$orderby        |string   |默认情况下，响应中的对象按其在查询中的 createdDateTime 值进行排序。 您可以使用 *$orderby* 参数更改响应的顺序。|
 |$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
 |$skip           |int      |跳过前 n 个结果，对于分页非常有用。                                                                                                                                |
 |$top            |int      |要返回的结果数。                                                                                                                                           |
@@ -62,7 +63,7 @@ GET /me/profile/webAccounts
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[webAccount](../resources/webaccount.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [webAccount](../resources/webaccount.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -114,25 +115,37 @@ Content-type: application/json
 {
   "value": [
     {
-      "description": "description-value",
-      "userId": "userId-value",
-      "service": {
-        "name": "name-value",
-        "webUrl": "webUrl-value"
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
       },
-      "statusMessage": "statusMessage-value",
-      "webUrl": "webUrl-value"
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "source": null,
+      "description": "My Github contributions!",
+      "userId": "innocenty.popov",
+      "service": {
+        "name": "GitHub",
+        "webUrl": "https://github.com"
+      },
+      "statusMessage": null,
+      "webUrl": "https://github.com/innocenty.popov"
     }
   ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "List webAccounts",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

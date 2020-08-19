@@ -4,17 +4,17 @@ description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 6ea09965bb598072eda36eb46a2f9edef63de050
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: kszb
+ms.openlocfilehash: 6bdcd96a8c6eb3dff29304bf8dc1dd8956d9063d
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520357"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811040"
 ---
 # <a name="skypeforbusinesspeertopeeractivitycounts-resource-type"></a>skypeForBusinessPeerToPeerActivityCounts 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 ## <a name="properties"></a>属性
 
@@ -40,13 +40,13 @@ ms.locfileid: "42520357"
 
 ```json
 {
-  "im": 1024, 
-  "audio": 1024, 
-  "video": 1024, 
-  "appSharing": 1024, 
-  "fileTransfer": 1024, 
-  "reportRefreshDate": "Date", 
-  "reportDate": "Date", 
+  "im": 1024,
+  "audio": 1024,
+  "video": 1024,
+  "appSharing": 1024,
+  "fileTransfer": 1024,
+  "reportRefreshDate": "Date",
+  "reportDate": "Date",
   "reportPeriod": "String"
 }
 ```

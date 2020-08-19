@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 87688a8e8049370ebe6a0bd4929450f3de7a1301
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 54c54827eb2719323078ca9325c46e0b7cf6449a
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228658"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810704"
 ---
 # <a name="list-names"></a>列出名称
 
@@ -28,7 +28,7 @@ ms.locfileid: "43228658"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
 | 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| Application                            | User.readbasic.all、所有用户读写全部。 All                            |
+| 应用程序                            | User.readbasic.all、所有用户读写全部。 All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -36,13 +36,22 @@ ms.locfileid: "43228658"
 
 ```http
 GET /me/profile/names
+GET /users/{id | userPrincipalName}/profile/names
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持以下 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求头
+|名称            |值    |说明                                                                                                                                                                 |
+|:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|$filter         |string   |将响应限制为仅包含指定条件的那些对象。                                                                                             |
+|$orderby        |string   |默认情况下，响应中的对象按其在查询中的 createdDateTime 值进行排序。 您可以使用 *$orderby* 参数更改响应的顺序。|
+|$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
+|$skip           |int      |跳过前 n 个结果，对于分页非常有用。                                                                                                                                |
+|$top            |int      |要返回的结果数。                                                                                                                                           |
+
+## <a name="request-headers"></a>请求标头
 
 | 名称           |说明                  |
 |:---------------|:----------------------------|
@@ -55,7 +64,7 @@ GET /me/profile/names
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[contact.personname](../resources/personname.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [contact.personname](../resources/personname.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -86,7 +95,6 @@ GET https://graph.microsoft.com/beta/me/profile/names
 
 ---
 
-
 ### <a name="response"></a>响应
 
 下面展示了示例响应。
@@ -107,23 +115,45 @@ Content-type: application/json
 {
   "value": [
     {
-      "displayName": "displayName-value",
-      "first": "first-value",
-      "initials": "initials-value",
-      "last": "last-value",
-      "languageTag": "languageTag-value",
-      "maiden": "maiden-value"
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "displayName": "Innocenty Popov",
+      "first": "Innocenty",
+      "initials": "IP",
+      "last": "Popov",
+      "languageTag": "en-US",
+      "maiden": null,
+      "middle": null,
+      "nickname": "Kesha",
+      "suffix": null,
+      "title": null,
+      "pronunciation": {
+        "displayName": "In-no ken-te ",
+        "first": "In-no ken-te Pop-ov",
+        "maiden": null,
+        "middle": null,
+        "last": "Pop-ov"
+      }
     }
   ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "List names",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

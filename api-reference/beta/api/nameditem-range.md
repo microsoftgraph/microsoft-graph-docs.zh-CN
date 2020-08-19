@@ -4,17 +4,17 @@ description: 返回与名称相关的 range 对象。如果已命名项目的类
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 6938ab3e73e43ea2ffc9d3bac0a9f9101f0c2c0c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: ruoyingl
+ms.openlocfilehash: 100532ee1038f2a43a889ad79d07b1245e0b375c
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456810"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810793"
 ---
 # <a name="nameditem-range"></a>NamedItem：Range
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

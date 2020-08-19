@@ -4,17 +4,17 @@ description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: 2f838d6eefc761849c37cd0646744233cef5a28b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: kszb
+ms.openlocfilehash: 66453b6d8889f4d6bf1be22c41bd534daa94dc72
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520427"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811075"
 ---
 # <a name="skypeforbusinessactivityuserdetail-resource-type"></a>skypeForBusinessActivityUserDetail 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 ## <a name="properties"></a>属性
 
@@ -50,10 +50,10 @@ ms.locfileid: "42520427"
 | participatedConferenceDialInOut3rdPartyCount | Int64             |
 | reportRefreshDate                        | 日期              |
 | userPrincipalName                        | String            |
-| isDeleted                                | 布尔           |
+| isDeleted                                | 布尔值           |
 | deletedDate                              | 日期              |
 | lastActivityDate                         | 日期              |
-| assignedProducts                         | String 集合 |
+| assignedProducts                         | 字符串集合 |
 | reportPeriod                             | String            |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -67,40 +67,40 @@ ms.locfileid: "42520427"
 
 ```json
 {
-  "totalPeerToPeerSessionCount": 1024, 
-  "totalOrganizedConferenceCount": 1024, 
-  "totalParticipatedConferenceCount": 1024, 
-  "peerToPeerLastActivityDate": "Date", 
-  "organizedConferenceLastActivityDate": "Date", 
-  "participatedConferenceLastActivityDate": "Date", 
-  "peerToPeerIMCount": 1024, 
-  "peerToPeerAudioCount": 1024, 
-  "peerToPeerAudioMinutes": 1024, 
-  "peerToPeerVideoCount": 1024, 
-  "peerToPeerVideoMinutes": 1024, 
-  "peerToPeerAppSharingCount": 1024, 
-  "peerToPeerFileTransferCount": 1024, 
-  "organizedConferenceIMCount": 1024, 
-  "organizedConferenceAudioVideoCount": 1024, 
-  "organizedConferenceAudioVideoMinutes": 1024, 
-  "organizedConferenceAppSharingCount": 1024, 
-  "organizedConferenceWebCount": 1024, 
-  "organizedConferenceDialInOut3rdPartyCount": 1024, 
-  "organizedConferenceCloudDialInOutMicrosoftCount": 1024, 
-  "organizedConferenceCloudDialInMicrosoftMinutes": 1024, 
-  "organizedConferenceCloudDialOutMicrosoftMinutes": 1024, 
-  "participatedConferenceIMCount": 1024, 
-  "participatedConferenceAudioVideoCount": 1024, 
-  "participatedConferenceAudioVideoMinutes": 1024, 
-  "participatedConferenceAppSharingCount": 1024, 
-  "participatedConferenceWebCount": 1024, 
-  "participatedConferenceDialInOut3rdPartyCount": 1024, 
-  "reportRefreshDate": "Date", 
-  "userPrincipalName": "String", 
-  "isDeleted": true, 
-  "deletedDate": "Date", 
-  "lastActivityDate": "Date", 
-  "assignedProducts": ["String"], 
+  "totalPeerToPeerSessionCount": 1024,
+  "totalOrganizedConferenceCount": 1024,
+  "totalParticipatedConferenceCount": 1024,
+  "peerToPeerLastActivityDate": "Date",
+  "organizedConferenceLastActivityDate": "Date",
+  "participatedConferenceLastActivityDate": "Date",
+  "peerToPeerIMCount": 1024,
+  "peerToPeerAudioCount": 1024,
+  "peerToPeerAudioMinutes": 1024,
+  "peerToPeerVideoCount": 1024,
+  "peerToPeerVideoMinutes": 1024,
+  "peerToPeerAppSharingCount": 1024,
+  "peerToPeerFileTransferCount": 1024,
+  "organizedConferenceIMCount": 1024,
+  "organizedConferenceAudioVideoCount": 1024,
+  "organizedConferenceAudioVideoMinutes": 1024,
+  "organizedConferenceAppSharingCount": 1024,
+  "organizedConferenceWebCount": 1024,
+  "organizedConferenceDialInOut3rdPartyCount": 1024,
+  "organizedConferenceCloudDialInOutMicrosoftCount": 1024,
+  "organizedConferenceCloudDialInMicrosoftMinutes": 1024,
+  "organizedConferenceCloudDialOutMicrosoftMinutes": 1024,
+  "participatedConferenceIMCount": 1024,
+  "participatedConferenceAudioVideoCount": 1024,
+  "participatedConferenceAudioVideoMinutes": 1024,
+  "participatedConferenceAppSharingCount": 1024,
+  "participatedConferenceWebCount": 1024,
+  "participatedConferenceDialInOut3rdPartyCount": 1024,
+  "reportRefreshDate": "Date",
+  "userPrincipalName": "String",
+  "isDeleted": true,
+  "deletedDate": "Date",
+  "lastActivityDate": "Date",
+  "assignedProducts": ["String"],
   "reportPeriod": "String"
 }
 ```

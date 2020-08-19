@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 5331e959fe2689cde356099067a33520f9374a6b
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 705362dae2aeb010375664edb818144fbbb6a375
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868366"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46813680"
 ---
 ```csharp
 
@@ -13,6 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var team = new Team
 {
+    IsMembershipLimitedToOwners = true,
     MemberSettings = new TeamMemberSettings
     {
         AllowCreateUpdateChannels = true

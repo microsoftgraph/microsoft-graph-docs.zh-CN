@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: fc8441dbf46647e0b4fcb12864591032deb27316
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: 9f8bf8f838d7f72d8007e4be3bce52dcbc20227f
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35868364"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46813658"
 ---
 ```objc
 
@@ -17,6 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphTeam *team = [[MSGraphTeam alloc] init];
+[team setIsMembershipLimitedToOwners: true];
 MSGraphTeamMemberSettings *memberSettings = [[MSGraphTeamMemberSettings alloc] init];
 [memberSettings setAllowCreateUpdateChannels: true];
 [team setMemberSettings:memberSettings];

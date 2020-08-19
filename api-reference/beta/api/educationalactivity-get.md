@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 6118622b033a6c524a100170a2177a98cad6f7d6
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: 3ed0dd490a8061abf8035a5722f660e09491a457
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510600"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810928"
 ---
 # <a name="get-educationalactivity"></a>获取 educationalActivity
 
@@ -18,7 +18,7 @@ ms.locfileid: "43510600"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从用户配置文件中检索[educationalActivity](../resources/educationalactivity.md)对象的属性和关系。
+从用户配置文件中检索 [educationalActivity](../resources/educationalactivity.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -36,19 +36,12 @@ ms.locfileid: "43510600"
 
 ```http
 GET /me/profile/educationalActivities/{id}
+GET /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持以下 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
-
-|名称            |值    |说明                                                                                                                                                                 |
-|:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |将响应限制为仅包含指定条件的那些对象。                                                                                             |
-|$orderby        |string   |默认情况下，响应中的对象按其在查询中的 createdDateTime 值进行排序。 您可以使用`$orderby`参数更改响应的顺序。|
-|$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
-|$skip           |int      |跳过前 n 个结果，对于分页非常有用。                                                                                                                                |
-|$top            |int      |要返回的结果数。                                                                                                                                           |
+此方法支持 `$select` 查询参数。 指定要包含在响应中的属性的列表，并以逗号分隔。 为获得最佳性能，请仅选择所需的属性子集。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -62,7 +55,7 @@ GET /me/profile/educationalActivities/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[educationalActivity](../resources/educationalactivity.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [educationalActivity](../resources/educationalactivity.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -111,43 +104,55 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "completionMonthYear": "datetime-value",
-  "endMonthYear": "datetime-value",
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "completionMonthYear": "Date",
+  "endMonthYear": "Date",
   "institution": {
-    "description": "description-value",
-    "displayName": "displayName-value",
+    "description": null,
+    "displayName": "Colorado State University",
     "location": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
+      "type": "business",
+      "postOfficeBox": null,
+      "street": "12000 E Prospect Rd",
+      "city": "Fort Collins",
+      "state": "Colorado",
+      "countryOrRegion": "USA",
+      "postalCode": "80525"
     },
-    "webUrl": "webUrl-value"
+    "webUrl": "https://www.colostate.edu"
   },
   "program": {
-    "abbreviation": "abbreviation-value",
-    "activities": "activities-value",
-    "awards": "awards-value",
-    "description": "description-value",
-    "displayName": "displayName-value",
-    "fieldsOfStudy": "fieldsOfStudy-value",
-    "grade": "grade-value",
-    "notes": "notes-value",
-    "webUrl": "webUrl-value"
+    "abbreviation": "MBA",
+    "activities": null,
+    "awards": null,
+    "description": "Master of Business Administration with a major in Entreprenuership and Finance.",
+    "displayName": "Master of Business Administration",
+    "fieldsOfStudy": null,
+    "grade": "3.9",
+    "notes": null,
+    "webUrl": "https://biz.colostate.edu"
   },
-  "startMonthYear": "datetime-value"
+  "startMonthYear": "Date"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get educationalActivity",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

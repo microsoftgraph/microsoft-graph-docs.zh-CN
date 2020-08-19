@@ -4,21 +4,21 @@ description: '表示事件、邮件或组帖子发送或接收端的用户的相
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: e5117517bd9a2d25d5a29de57ab4a5d3c963ca89
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: ccd210eeecd84acf8094f7a55b1733e64c4a5437
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521248"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810467"
 ---
 # <a name="recipient-resource-type"></a>收件人资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示事件、邮件或组帖子发送或接收端的用户的相关信息。 
+表示事件、邮件或组帖子发送或接收端的用户的相关信息。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
