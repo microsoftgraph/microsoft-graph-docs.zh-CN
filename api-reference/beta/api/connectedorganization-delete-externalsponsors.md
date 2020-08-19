@@ -5,52 +5,54 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bfdb23fe1da1c1724b47b9a17a9846d3d708ebbf
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: 2a14ce080f04b8448ba8fd9f09e09659453758cc
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757424"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810282"
 ---
-# <a name="remove-connected-organization-external-sponsor"></a><span data-ttu-id="d93cd-103">删除已连接的组织外部发起人</span><span class="sxs-lookup"><span data-stu-id="d93cd-103">Remove connected organization external sponsor</span></span>
+# <a name="remove-connected-organization-external-sponsor"></a><span data-ttu-id="9e267-103">删除已连接的组织外部发起人</span><span class="sxs-lookup"><span data-stu-id="9e267-103">Remove connected organization external sponsor</span></span>
 
-<span data-ttu-id="d93cd-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d93cd-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="9e267-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9e267-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d93cd-105">从连接的组织的外部发起人中删除用户或组。</span><span class="sxs-lookup"><span data-stu-id="d93cd-105">Remove a user or a group from the connected organization's external sponsors.</span></span> <span data-ttu-id="d93cd-106">外部发起人是一组用户，他们可以代表连接的组织中的其他用户批准请求。</span><span class="sxs-lookup"><span data-stu-id="d93cd-106">The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.</span></span>
+<span data-ttu-id="9e267-105">从连接的组织的外部发起人中删除用户或组。</span><span class="sxs-lookup"><span data-stu-id="9e267-105">Remove a user or a group from the connected organization's external sponsors.</span></span> <span data-ttu-id="9e267-106">外部发起人是一组用户，他们可以代表连接的组织中的其他用户批准请求。</span><span class="sxs-lookup"><span data-stu-id="9e267-106">The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d93cd-107">权限</span><span class="sxs-lookup"><span data-stu-id="d93cd-107">Permissions</span></span>
-<span data-ttu-id="d93cd-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d93cd-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9e267-107">权限</span><span class="sxs-lookup"><span data-stu-id="9e267-107">Permissions</span></span>
+<span data-ttu-id="9e267-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9e267-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d93cd-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="d93cd-110">Permission type</span></span>      | <span data-ttu-id="d93cd-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d93cd-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9e267-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="9e267-110">Permission type</span></span>      | <span data-ttu-id="9e267-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9e267-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d93cd-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d93cd-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="d93cd-113">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d93cd-113">EntitlementManagement.ReadWrite.All</span></span> |
-|<span data-ttu-id="d93cd-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d93cd-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d93cd-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="d93cd-115">Not supported.</span></span>    |
-|<span data-ttu-id="d93cd-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="d93cd-116">Application</span></span> | <span data-ttu-id="d93cd-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="d93cd-117">Not supported.</span></span> |
+|<span data-ttu-id="9e267-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9e267-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="9e267-113">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9e267-113">EntitlementManagement.ReadWrite.All</span></span> |
+|<span data-ttu-id="9e267-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9e267-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9e267-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="9e267-115">Not supported.</span></span>    |
+|<span data-ttu-id="9e267-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="9e267-116">Application</span></span> | <span data-ttu-id="9e267-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="9e267-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d93cd-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d93cd-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9e267-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9e267-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /identityGovernance/entitlementManagement/connectedOrganizations/{connectedOrganizationId}/externalSponsors/{id}/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="d93cd-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="d93cd-119">Request headers</span></span>
-| <span data-ttu-id="d93cd-120">名称</span><span class="sxs-lookup"><span data-stu-id="d93cd-120">Name</span></span>       | <span data-ttu-id="d93cd-121">说明</span><span class="sxs-lookup"><span data-stu-id="d93cd-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9e267-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="9e267-119">Request headers</span></span>
+| <span data-ttu-id="9e267-120">名称</span><span class="sxs-lookup"><span data-stu-id="9e267-120">Name</span></span>       | <span data-ttu-id="9e267-121">说明</span><span class="sxs-lookup"><span data-stu-id="9e267-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="d93cd-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="d93cd-122">Authorization</span></span>  | <span data-ttu-id="d93cd-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d93cd-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9e267-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="9e267-122">Authorization</span></span>  | <span data-ttu-id="9e267-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9e267-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d93cd-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="d93cd-125">Request body</span></span>
-<span data-ttu-id="d93cd-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="d93cd-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9e267-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="9e267-125">Request body</span></span>
+<span data-ttu-id="9e267-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="9e267-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d93cd-127">响应</span><span class="sxs-lookup"><span data-stu-id="d93cd-127">Response</span></span>
-<span data-ttu-id="d93cd-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="d93cd-p104">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="9e267-127">响应</span><span class="sxs-lookup"><span data-stu-id="9e267-127">Response</span></span>
+<span data-ttu-id="9e267-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="9e267-p104">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d93cd-130">示例</span><span class="sxs-lookup"><span data-stu-id="d93cd-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9e267-130">示例</span><span class="sxs-lookup"><span data-stu-id="9e267-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="d93cd-131">请求</span><span class="sxs-lookup"><span data-stu-id="d93cd-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="9e267-131">请求</span><span class="sxs-lookup"><span data-stu-id="9e267-131">Request</span></span>
 
-<span data-ttu-id="d93cd-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="d93cd-132">The following is an example of the request.</span></span>
+<span data-ttu-id="9e267-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="9e267-132">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="9e267-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="9e267-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_externalsponsor_from_connectedorganization"
@@ -59,10 +61,24 @@ DELETE /identityGovernance/entitlementManagement/connectedOrganizations/{connect
 ``` http
 DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{connectedOrganizationId}/externalSponsors/{id}/$ref
 ```
+# <a name="c"></a>[<span data-ttu-id="9e267-134">C#</span><span class="sxs-lookup"><span data-stu-id="9e267-134">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-externalsponsor-from-connectedorganization-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="d93cd-133">响应</span><span class="sxs-lookup"><span data-stu-id="d93cd-133">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="9e267-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9e267-135">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-externalsponsor-from-connectedorganization-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="d93cd-134">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="d93cd-134">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="9e267-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9e267-136">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-externalsponsor-from-connectedorganization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="9e267-137">响应</span><span class="sxs-lookup"><span data-stu-id="9e267-137">Response</span></span>
+
+<span data-ttu-id="9e267-138">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="9e267-138">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

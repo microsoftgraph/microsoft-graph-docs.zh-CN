@@ -5,71 +5,74 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b0aa9353a9e16929bd71f41f5328c0fdaf12c531
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6a50fbae387a7599110dce8056f927f449681e04
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454925"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46810027"
 ---
-# <a name="update-projectparticipation"></a><span data-ttu-id="b9e5f-103">更新 projectparticipation</span><span class="sxs-lookup"><span data-stu-id="b9e5f-103">Update projectparticipation</span></span>
+# <a name="update-projectparticipation"></a><span data-ttu-id="4d788-103">更新 projectparticipation</span><span class="sxs-lookup"><span data-stu-id="4d788-103">Update projectparticipation</span></span>
 
-<span data-ttu-id="b9e5f-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="b9e5f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4d788-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4d788-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b9e5f-105">更新用户的[配置文件](../resources/profile.md)中的[projectParticipation](../resources/projectParticipation.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="b9e5f-105">Update the properties of a [projectParticipation](../resources/projectParticipation.md) object in a user's [profile](../resources/profile.md).</span></span>
+<span data-ttu-id="4d788-105">更新用户的[配置文件](../resources/profile.md)中的[projectParticipation](../resources/projectParticipation.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="4d788-105">Update the properties of a [projectParticipation](../resources/projectParticipation.md) object in a user's [profile](../resources/profile.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b9e5f-106">权限</span><span class="sxs-lookup"><span data-stu-id="b9e5f-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4d788-106">权限</span><span class="sxs-lookup"><span data-stu-id="4d788-106">Permissions</span></span>
 
-<span data-ttu-id="b9e5f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b9e5f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4d788-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4d788-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="b9e5f-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="b9e5f-109">Permission type</span></span>                        | <span data-ttu-id="b9e5f-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b9e5f-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="4d788-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="4d788-109">Permission type</span></span>                        | <span data-ttu-id="4d788-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4d788-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="b9e5f-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b9e5f-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="b9e5f-112">所有用户读写。</span><span class="sxs-lookup"><span data-stu-id="b9e5f-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="b9e5f-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b9e5f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b9e5f-114">所有用户读写。</span><span class="sxs-lookup"><span data-stu-id="b9e5f-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="b9e5f-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="b9e5f-115">Application</span></span>                            | <span data-ttu-id="b9e5f-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b9e5f-116">User.ReadWrite.All</span></span>                          |
+| <span data-ttu-id="4d788-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4d788-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="4d788-112">所有用户读写。</span><span class="sxs-lookup"><span data-stu-id="4d788-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="4d788-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4d788-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4d788-114">所有用户读写。</span><span class="sxs-lookup"><span data-stu-id="4d788-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="4d788-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="4d788-115">Application</span></span>                            | <span data-ttu-id="4d788-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4d788-116">User.ReadWrite.All</span></span>                          |
 
-## <a name="http-request"></a><span data-ttu-id="b9e5f-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b9e5f-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4d788-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4d788-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 PATCH /me/profile/projects/{id}
+PATCH /users/{id | userPrincipalName}/profile/projects/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b9e5f-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="b9e5f-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="4d788-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="4d788-118">Request headers</span></span>
 
-| <span data-ttu-id="b9e5f-119">名称</span><span class="sxs-lookup"><span data-stu-id="b9e5f-119">Name</span></span>           |<span data-ttu-id="b9e5f-120">说明</span><span class="sxs-lookup"><span data-stu-id="b9e5f-120">Description</span></span>                  |
+| <span data-ttu-id="4d788-119">名称</span><span class="sxs-lookup"><span data-stu-id="4d788-119">Name</span></span>           |<span data-ttu-id="4d788-120">说明</span><span class="sxs-lookup"><span data-stu-id="4d788-120">Description</span></span>                  |
 |:---------------|:----------------------------|
-| <span data-ttu-id="b9e5f-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="b9e5f-121">Authorization</span></span>  | <span data-ttu-id="b9e5f-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b9e5f-p102">Bearer {token}. Required.</span></span>   |
-| <span data-ttu-id="b9e5f-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b9e5f-124">Content-Type</span></span>   | <span data-ttu-id="b9e5f-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="b9e5f-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="4d788-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="4d788-121">Authorization</span></span>  | <span data-ttu-id="4d788-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4d788-p102">Bearer {token}. Required.</span></span>   |
+| <span data-ttu-id="4d788-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4d788-124">Content-Type</span></span>   | <span data-ttu-id="4d788-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="4d788-p103">application/json. Required.</span></span> |
 
+## <a name="request-body"></a><span data-ttu-id="4d788-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="4d788-127">Request body</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="b9e5f-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="b9e5f-127">Request body</span></span>
+<span data-ttu-id="4d788-128">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="4d788-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="4d788-129">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="4d788-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="4d788-130">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="4d788-130">For best performance, don't include existing values that haven't changed.</span></span>
 
-<span data-ttu-id="b9e5f-128">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="b9e5f-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="b9e5f-129">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="b9e5f-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="b9e5f-130">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="b9e5f-130">For best performance, don't include existing values that haven't changed.</span></span>
+|<span data-ttu-id="4d788-131">属性</span><span class="sxs-lookup"><span data-stu-id="4d788-131">Property</span></span>|<span data-ttu-id="4d788-132">类型</span><span class="sxs-lookup"><span data-stu-id="4d788-132">Type</span></span>|<span data-ttu-id="4d788-133">说明</span><span class="sxs-lookup"><span data-stu-id="4d788-133">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="4d788-134">allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="4d788-134">allowedAudiences</span></span>|<span data-ttu-id="4d788-135">String</span><span class="sxs-lookup"><span data-stu-id="4d788-135">String</span></span>|<span data-ttu-id="4d788-136">能够查看实体中包含的值的访问群体。</span><span class="sxs-lookup"><span data-stu-id="4d788-136">The audiences that are able to see the values contained within the entity.</span></span> <span data-ttu-id="4d788-137">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="4d788-137">Inherited from [itemFacet](../resources/itemfacet.md).</span></span> <span data-ttu-id="4d788-138">可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="4d788-138">Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="4d788-139">categories</span><span class="sxs-lookup"><span data-stu-id="4d788-139">categories</span></span>|<span data-ttu-id="4d788-140">String collection</span><span class="sxs-lookup"><span data-stu-id="4d788-140">String collection</span></span>|<span data-ttu-id="4d788-141">包含用户与项目相关联的类别 (例如，数字转换、石油远程测试机组) 。</span><span class="sxs-lookup"><span data-stu-id="4d788-141">Contains categories a user has associated with the project (for example, digital transformation, oil rig).</span></span> |
+|<span data-ttu-id="4d788-142">客户端</span><span class="sxs-lookup"><span data-stu-id="4d788-142">client</span></span>|[<span data-ttu-id="4d788-143">companyDetail</span><span class="sxs-lookup"><span data-stu-id="4d788-143">companyDetail</span></span>](../resources/companydetail.md)|<span data-ttu-id="4d788-144">包含有关项目所针对的客户端的详细信息。</span><span class="sxs-lookup"><span data-stu-id="4d788-144">Contains detailed information about the client the project was for.</span></span> |
+|<span data-ttu-id="4d788-145">collaborationTags</span><span class="sxs-lookup"><span data-stu-id="4d788-145">collaborationTags</span></span>|<span data-ttu-id="4d788-146">字符串集合</span><span class="sxs-lookup"><span data-stu-id="4d788-146">String collection</span></span>|<span data-ttu-id="4d788-147">包含用户与兴趣相关的体验方案标记。</span><span class="sxs-lookup"><span data-stu-id="4d788-147">Contains experience scenario tags a user has associated with the interest.</span></span> <span data-ttu-id="4d788-148">集合中允许的值为： `askMeAbout` 、 `ableToMentor` 、 `wantsToLearn` 、 `wantsToImprove` 。</span><span class="sxs-lookup"><span data-stu-id="4d788-148">Allowed values in the collection are: `askMeAbout`, `ableToMentor`, `wantsToLearn`, `wantsToImprove`.</span></span>|
+|<span data-ttu-id="4d788-149">征求</span><span class="sxs-lookup"><span data-stu-id="4d788-149">colleagues</span></span>|<span data-ttu-id="4d788-150">[relatedPerson](../resources/relatedperson.md) 集合</span><span class="sxs-lookup"><span data-stu-id="4d788-150">[relatedPerson](../resources/relatedperson.md) collection</span></span>|<span data-ttu-id="4d788-151">列出也在项目中工作的人员。</span><span class="sxs-lookup"><span data-stu-id="4d788-151">Lists people that also worked on the project.</span></span> |
+|<span data-ttu-id="4d788-152">介绍</span><span class="sxs-lookup"><span data-stu-id="4d788-152">detail</span></span>|[<span data-ttu-id="4d788-153">positionDetail</span><span class="sxs-lookup"><span data-stu-id="4d788-153">positionDetail</span></span>](../resources/positiondetail.md)|<span data-ttu-id="4d788-154">包含有关用户在项目上的角色的详细信息。</span><span class="sxs-lookup"><span data-stu-id="4d788-154">Contains detail about the user's role on the project.</span></span>|
+|<span data-ttu-id="4d788-155">displayName</span><span class="sxs-lookup"><span data-stu-id="4d788-155">displayName</span></span>|<span data-ttu-id="4d788-156">String</span><span class="sxs-lookup"><span data-stu-id="4d788-156">String</span></span>|<span data-ttu-id="4d788-157">包含项目的友好名称。</span><span class="sxs-lookup"><span data-stu-id="4d788-157">Contains a friendly name for the project.</span></span>|
+|<span data-ttu-id="4d788-158">推导</span><span class="sxs-lookup"><span data-stu-id="4d788-158">inference</span></span>|[<span data-ttu-id="4d788-159">inferenceData</span><span class="sxs-lookup"><span data-stu-id="4d788-159">inferenceData</span></span>](../resources/inferencedata.md)|<span data-ttu-id="4d788-160">如果实体是由创建或修改应用程序推断的，则包含推理详细信息。</span><span class="sxs-lookup"><span data-stu-id="4d788-160">Contains inference detail if the entity is inferred by the creating or modifying application.</span></span> <span data-ttu-id="4d788-161">继承自 [itemFacet](../resources/itemfacet.md)。</span><span class="sxs-lookup"><span data-stu-id="4d788-161">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="4d788-162">人</span><span class="sxs-lookup"><span data-stu-id="4d788-162">sponsors</span></span>|<span data-ttu-id="4d788-163">[relatedPerson](../resources/relatedperson.md) 集合</span><span class="sxs-lookup"><span data-stu-id="4d788-163">[relatedPerson](../resources/relatedperson.md) collection</span></span>|<span data-ttu-id="4d788-164">发起项目的人员或人员。</span><span class="sxs-lookup"><span data-stu-id="4d788-164">The Person or people who sponsored the project.</span></span>    |
 
-| <span data-ttu-id="b9e5f-131">属性</span><span class="sxs-lookup"><span data-stu-id="b9e5f-131">Property</span></span>     | <span data-ttu-id="b9e5f-132">类型</span><span class="sxs-lookup"><span data-stu-id="b9e5f-132">Type</span></span>                                                     | <span data-ttu-id="b9e5f-133">说明</span><span class="sxs-lookup"><span data-stu-id="b9e5f-133">Description</span></span>                                                                                        |
-|:-------------|:---------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
-|<span data-ttu-id="b9e5f-134">categories</span><span class="sxs-lookup"><span data-stu-id="b9e5f-134">categories</span></span>    |<span data-ttu-id="b9e5f-135">String 集合</span><span class="sxs-lookup"><span data-stu-id="b9e5f-135">String collection</span></span>                                         | <span data-ttu-id="b9e5f-136">包含用户与项目相关联的类别（例如：数字转换、石油远程测试机组）</span><span class="sxs-lookup"><span data-stu-id="b9e5f-136">Contains categories a user has associated with the project (eg: digital transformation, oil rig)</span></span>   |
-|<span data-ttu-id="b9e5f-137">客户端</span><span class="sxs-lookup"><span data-stu-id="b9e5f-137">client</span></span>        |[<span data-ttu-id="b9e5f-138">companyDetail</span><span class="sxs-lookup"><span data-stu-id="b9e5f-138">companyDetail</span></span>](../resources/companydetail.md)            | <span data-ttu-id="b9e5f-139">包含有关项目所针对的客户端的详细信息。</span><span class="sxs-lookup"><span data-stu-id="b9e5f-139">Contains detailed information about the client the project was for.</span></span>                                |
-|<span data-ttu-id="b9e5f-140">征求</span><span class="sxs-lookup"><span data-stu-id="b9e5f-140">colleagues</span></span>    |<span data-ttu-id="b9e5f-141">[relatedPerson](../resources/relatedperson.md)集合</span><span class="sxs-lookup"><span data-stu-id="b9e5f-141">[relatedPerson](../resources/relatedperson.md) collection</span></span> | <span data-ttu-id="b9e5f-142">对项目也有效的人员。</span><span class="sxs-lookup"><span data-stu-id="b9e5f-142">People that also worked on the project.</span></span>                                                            |
-|<span data-ttu-id="b9e5f-143">介绍</span><span class="sxs-lookup"><span data-stu-id="b9e5f-143">detail</span></span>        |[<span data-ttu-id="b9e5f-144">positionDetail</span><span class="sxs-lookup"><span data-stu-id="b9e5f-144">positionDetail</span></span>](../resources/positiondetail.md)          | <span data-ttu-id="b9e5f-145">包含有关项目上的用户角色的详细信息。</span><span class="sxs-lookup"><span data-stu-id="b9e5f-145">Contains detail about the users role on the project.</span></span>                                               |
-|<span data-ttu-id="b9e5f-146">displayName</span><span class="sxs-lookup"><span data-stu-id="b9e5f-146">displayName</span></span>   |<span data-ttu-id="b9e5f-147">String</span><span class="sxs-lookup"><span data-stu-id="b9e5f-147">String</span></span>                                                    | <span data-ttu-id="b9e5f-148">包含项目的友好名称。</span><span class="sxs-lookup"><span data-stu-id="b9e5f-148">Contains a friendly name for the project.</span></span>                                                          |
-|<span data-ttu-id="b9e5f-149">人</span><span class="sxs-lookup"><span data-stu-id="b9e5f-149">sponsors</span></span>      |<span data-ttu-id="b9e5f-150">[relatedPerson](../resources/relatedperson.md)集合</span><span class="sxs-lookup"><span data-stu-id="b9e5f-150">[relatedPerson](../resources/relatedperson.md) collection</span></span> | <span data-ttu-id="b9e5f-151">赞助项目的人员（人员）。</span><span class="sxs-lookup"><span data-stu-id="b9e5f-151">Person(People) who sponsored the project.</span></span>                                                          |
+## <a name="response"></a><span data-ttu-id="4d788-165">响应</span><span class="sxs-lookup"><span data-stu-id="4d788-165">Response</span></span>
 
-## <a name="response"></a><span data-ttu-id="b9e5f-152">响应</span><span class="sxs-lookup"><span data-stu-id="b9e5f-152">Response</span></span>
+<span data-ttu-id="4d788-166">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [projectParticipation](../resources/projectparticipation.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4d788-166">If successful, this method returns a `200 OK` response code and an updated [projectParticipation](../resources/projectparticipation.md) object in the response body.</span></span>
 
-<span data-ttu-id="b9e5f-153">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[projectParticipation](../resources/projectparticipation.md)对象。</span><span class="sxs-lookup"><span data-stu-id="b9e5f-153">If successful, this method returns a `200 OK` response code and an updated [projectParticipation](../resources/projectparticipation.md) object in the response body.</span></span>
+## <a name="examples"></a><span data-ttu-id="4d788-167">示例</span><span class="sxs-lookup"><span data-stu-id="4d788-167">Examples</span></span>
 
-## <a name="examples"></a><span data-ttu-id="b9e5f-154">示例</span><span class="sxs-lookup"><span data-stu-id="b9e5f-154">Examples</span></span>
+### <a name="request"></a><span data-ttu-id="4d788-168">请求</span><span class="sxs-lookup"><span data-stu-id="4d788-168">Request</span></span>
 
-### <a name="request"></a><span data-ttu-id="b9e5f-155">请求</span><span class="sxs-lookup"><span data-stu-id="b9e5f-155">Request</span></span>
+<span data-ttu-id="4d788-169">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="4d788-169">The following is an example of the request.</span></span>
 
-<span data-ttu-id="b9e5f-156">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="b9e5f-156">The following is an example of the request.</span></span>
-
-# <a name="http"></a>[<span data-ttu-id="b9e5f-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="b9e5f-157">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4d788-170">HTTP</span><span class="sxs-lookup"><span data-stu-id="4d788-170">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_projectparticipation"
@@ -80,86 +83,33 @@ PATCH https://graph.microsoft.com/beta/me/profile/projects/{id}
 Content-type: application/json
 
 {
-  "categories": [
-    "categories-value"
-  ],
+  "allowedAudiences": "organization",
   "client": {
-    "displayName": "displayName-value",
-    "pronunciation": "pronunciation-value",
-    "department": "department-value",
-    "officeLocation": "officeLocation-value",
-    "address": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
-    },
-    "webUrl": "webUrl-value"
-  },
-  "displayName": "displayName-value",
-  "detail": {
-    "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
-      "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
-      },
-      "webUrl": "webUrl-value"
-    },
-    "description": "description-value",
-    "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
-    "startMonthYear": "datetime-value",
-    "summary": "summary-value"
-  },
-  "colleagues": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ],
-  "sponsors": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ]
+    "department": "Corporate Marketing",
+    "webUrl": "https://www.contoso.com"
+  }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="b9e5f-158">C#</span><span class="sxs-lookup"><span data-stu-id="b9e5f-158">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4d788-171">C#</span><span class="sxs-lookup"><span data-stu-id="4d788-171">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-projectparticipation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="b9e5f-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b9e5f-159">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4d788-172">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4d788-172">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-projectparticipation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="b9e5f-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b9e5f-160">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4d788-173">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4d788-173">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-projectparticipation-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="b9e5f-161">响应</span><span class="sxs-lookup"><span data-stu-id="b9e5f-161">Response</span></span>
+### <a name="response"></a><span data-ttu-id="4d788-174">响应</span><span class="sxs-lookup"><span data-stu-id="4d788-174">Response</span></span>
 
-<span data-ttu-id="b9e5f-162">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="b9e5f-162">The following is an example of the response.</span></span>
+<span data-ttu-id="4d788-175">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="4d788-175">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="b9e5f-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b9e5f-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="4d788-p108">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="4d788-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -172,73 +122,57 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
   "categories": [
-    "categories-value"
+    "Branding"
   ],
   "client": {
-    "displayName": "displayName-value",
-    "pronunciation": "pronunciation-value",
-    "department": "department-value",
-    "officeLocation": "officeLocation-value",
-    "address": {
-      "type": "type-value",
-      "postOfficeBox": "postOfficeBox-value",
-      "street": "street-value",
-      "city": "city-value",
-      "state": "state-value",
-      "countryOrRegion": "countryOrRegion-value",
-      "postalCode": "postalCode-value"
-    },
-    "webUrl": "webUrl-value"
+    "displayName": "Contoso Ltd.",
+    "pronunciation": null,
+    "department": "Corporate Marketing",
+    "officeLocation": null,
+    "address": null,
+    "webUrl": "https://www.contoso.com"
   },
-  "displayName": "displayName-value",
+  "displayName": "Contoso Re-branding Project",
   "detail": {
     "company": {
-      "displayName": "displayName-value",
-      "pronunciation": "pronunciation-value",
-      "department": "department-value",
-      "officeLocation": "officeLocation-value",
-      "address": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
-      },
-      "webUrl": "webUrl-value"
+      "displayName": "Adventureworks Inc.",
+      "pronunciation": null,
+      "department": "Consulting",
+      "officeLocation": null,
+      "address": null,
+      "webUrl": "https://adventureworks.com"
     },
-    "description": "description-value",
+    "description": "Rebranding of Contoso Ltd.",
     "endMonthYear": "datetime-value",
-    "jobTitle": "jobTitle-value",
-    "role": "role-value",
+    "jobTitle": "Lead PM Rebranding",
+    "role": "project management",
     "startMonthYear": "datetime-value",
-    "summary": "summary-value"
+    "summary": "A 6 month project to help Contoso rebrand after they were divested from a parent organization."
   },
-  "colleagues": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ],
-  "sponsors": [
-    {
-      "displayName": "displayName-value",
-      "relationship": "relationship-value",
-      "userPrincipalName": "userPrincipalName-value"
-    }
-  ]
+  "colleagues": null,
+  "sponsors": null
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update projectparticipation",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
