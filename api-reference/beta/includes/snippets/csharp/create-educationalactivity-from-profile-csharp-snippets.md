@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0a66182d4be0eee8cf091394ccb8e9f6d900ee5a
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: f17b276399e8350f8fc842cd381c28b8948ad5ac
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "37997842"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821263"
 ---
 ```csharp
 
@@ -17,31 +17,31 @@ var educationalActivity = new EducationalActivity
     EndMonthYear = new Date(1900,1,1),
     Institution = new InstitutionData
     {
-        Description = "description-value",
-        DisplayName = "displayName-value",
+        Description = null,
+        DisplayName = "Colorado State University",
         Location = new PhysicalAddress
         {
-            Type = PhysicalAddressType.Unknown,
-            PostOfficeBox = "postOfficeBox-value",
-            Street = "street-value",
-            City = "city-value",
-            State = "state-value",
-            CountryOrRegion = "countryOrRegion-value",
-            PostalCode = "postalCode-value"
+            Type = PhysicalAddressType.Business,
+            PostOfficeBox = null,
+            Street = "12000 E Prospect Rd",
+            City = "Fort Collins",
+            State = "Colorado",
+            CountryOrRegion = "USA",
+            PostalCode = "80525"
         },
-        WebUrl = "webUrl-value"
+        WebUrl = "https://www.colostate.edu"
     },
     Program = new EducationalActivityDetail
     {
-        Abbreviation = "abbreviation-value",
-        Activities = "activities-value",
-        Awards = "awards-value",
-        Description = "description-value",
-        DisplayName = "displayName-value",
-        FieldsOfStudy = "fieldsOfStudy-value",
-        Grade = "grade-value",
-        Notes = "notes-value",
-        WebUrl = "webUrl-value"
+        Abbreviation = "MBA",
+        Activities = null,
+        Awards = null,
+        Description = "Master of Business Administration with a major in Entreprenuership and Finance.",
+        DisplayName = "Master of Business Administration",
+        FieldsOfStudy = null,
+        Grade = "3.9",
+        Notes = null,
+        WebUrl = "https://biz.colostate.edu"
     },
     StartMonthYear = new Date(1900,1,1)
 };

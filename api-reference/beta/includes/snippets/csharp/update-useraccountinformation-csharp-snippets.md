@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fde7ad53c5ca7dca91d2c292ceffe5df92d15284
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 66cde31a971038772b7085713519535ac99ec8b9
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "37996237"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821113"
 ---
 ```csharp
 
@@ -13,14 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var userAccountInformation = new UserAccountInformation
 {
-    AgeGroup = "ageGroup-value",
-    CountryCode = "countryCode-value",
-    PreferredLanguageTag = new LocaleInfo
-    {
-        Locale = "locale-value",
-        DisplayName = "displayName-value"
-    },
-    UserPrincipalName = "userPrincipalName-value"
+    CountryCode = "NO"
 };
 
 await graphClient.Me.Profile.Account["{id}"]

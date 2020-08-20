@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2b2e89f29c5b56bb788a44e6d0c6d0166ec09515
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: b081e69d9f791283ac87f84b9e94f2f984d65336
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37997787"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821299"
 ---
 ```objc
 
@@ -17,12 +17,12 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphPersonName *personName = [[MSGraphPersonName alloc] init];
-[personName setDisplayName:@"displayName-value"];
-[personName setFirst:@"first-value"];
-[personName setInitials:@"initials-value"];
-[personName setLast:@"last-value"];
-[personName setLanguageTag:@"languageTag-value"];
-[personName setMaiden:@"maiden-value"];
+[personName setDisplayName:@"Innocenty Popov"];
+[personName setFirst:@"Innocenty"];
+[personName setInitials:@"IP"];
+[personName setLast:@"Popov"];
+[personName setLanguageTag:@"en-US"];
+[personName setMaiden: null];
 
 NSError *error;
 NSData *personNameData = [personName getSerializedDataWithError:&error];

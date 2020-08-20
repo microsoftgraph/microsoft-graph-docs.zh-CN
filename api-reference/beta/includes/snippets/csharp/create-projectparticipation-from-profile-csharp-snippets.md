@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 061a67cffd8b5d294d48dc851d94f409c72de235
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 2c15b4be14cb52ec66602c33f5d700ced99d3a01
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "37996498"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821188"
 ---
 ```csharp
 
@@ -15,71 +15,27 @@ var projectParticipation = new ProjectParticipation
 {
     Categories = new List<String>()
     {
-        "categories-value"
+        "Branding"
     },
     Client = new CompanyDetail
     {
-        DisplayName = "displayName-value",
-        Pronunciation = "pronunciation-value",
-        Department = "department-value",
-        OfficeLocation = "officeLocation-value",
-        Address = new PhysicalAddress
-        {
-            Type = PhysicalAddressType.Unknown,
-            PostOfficeBox = "postOfficeBox-value",
-            Street = "street-value",
-            City = "city-value",
-            State = "state-value",
-            CountryOrRegion = "countryOrRegion-value",
-            PostalCode = "postalCode-value"
-        },
-        WebUrl = "webUrl-value"
+        DisplayName = "Contoso Ltd.",
+        Department = "Corporate Marketing",
+        WebUrl = "https://www.contoso.com"
     },
-    DisplayName = "displayName-value",
+    DisplayName = "Contoso Re-branding Project",
     Detail = new PositionDetail
     {
         Company = new CompanyDetail
         {
-            DisplayName = "displayName-value",
-            Pronunciation = "pronunciation-value",
-            Department = "department-value",
-            OfficeLocation = "officeLocation-value",
-            Address = new PhysicalAddress
-            {
-                Type = PhysicalAddressType.Unknown,
-                PostOfficeBox = "postOfficeBox-value",
-                Street = "street-value",
-                City = "city-value",
-                State = "state-value",
-                CountryOrRegion = "countryOrRegion-value",
-                PostalCode = "postalCode-value"
-            },
-            WebUrl = "webUrl-value"
+            DisplayName = "Adventureworks Inc.",
+            Department = "Consulting",
+            WebUrl = "https://adventureworks.com"
         },
-        Description = "description-value",
-        EndMonthYear = new Date(1900,1,1),
-        JobTitle = "jobTitle-value",
-        Role = "role-value",
-        StartMonthYear = new Date(1900,1,1),
-        Summary = "summary-value"
-    },
-    Colleagues = new List<RelatedPerson>()
-    {
-        new RelatedPerson
-        {
-            DisplayName = "displayName-value",
-            Relationship = PersonRelationship.Manager,
-            UserPrincipalName = "userPrincipalName-value"
-        }
-    },
-    Sponsors = new List<RelatedPerson>()
-    {
-        new RelatedPerson
-        {
-            DisplayName = "displayName-value",
-            Relationship = PersonRelationship.Manager,
-            UserPrincipalName = "userPrincipalName-value"
-        }
+        Description = "Rebranding of Contoso Ltd.",
+        JobTitle = "Lead PM Rebranding",
+        Role = "project management",
+        Summary = "A 6 month project to help Contoso rebrand after they were divested from a parent organization."
     }
 };
 

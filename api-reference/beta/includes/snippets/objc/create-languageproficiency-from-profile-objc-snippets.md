@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9938f3275416235bd704f49f0df72be275a1abd0
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: fd31f1e16386f2e28ac5c570f78b41d969c92921
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "37996551"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821392"
 ---
 ```objc
 
@@ -17,9 +17,11 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphLanguageProficiency *languageProficiency = [[MSGraphLanguageProficiency alloc] init];
-[languageProficiency setDisplayName:@"displayName-value"];
-[languageProficiency setTag:@"tag-value"];
-[languageProficiency setProficiency: [MSGraphLanguageProficiencyLevel elementary]];
+[languageProficiency setDisplayName:@"Norwegian Bokmål"];
+[languageProficiency setTag:@"nb-NO"];
+[languageProficiency setSpoken: [MSGraphLanguageProficiencyLevel nativeOrBilingual]];
+[languageProficiency setWritten: [MSGraphLanguageProficiencyLevel nativeOrBilingual]];
+[languageProficiency setReading: [MSGraphLanguageProficiencyLevel nativeOrBilingual]];
 
 NSError *error;
 NSData *languageProficiencyData = [languageProficiency getSerializedDataWithError:&error];

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2ffc4b8021901dfb8b110362fbada09e4699d7a8
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: d8b2f57e9dcbe50d8895ccd3dd87857914276bc1
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37997730"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821180"
 ---
 ```objc
 
@@ -18,11 +18,10 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphPersonWebsite *personWebsite = [[MSGraphPersonWebsite alloc] init];
 NSMutableArray *categoriesList = [[NSMutableArray alloc] init];
-[categoriesList addObject: @"categories-value"];
+[categoriesList addObject: @"football"];
 [personWebsite setCategories:categoriesList];
-[personWebsite setDescription:@"description-value"];
-[personWebsite setDisplayName:@"displayName-value"];
-[personWebsite setWebUrl:@"webUrl-value"];
+[personWebsite setDisplayName:@"Lyn Damer"];
+[personWebsite setWebUrl:@"www.lyndamer.no"];
 
 NSError *error;
 NSData *personWebsiteData = [personWebsite getSerializedDataWithError:&error];

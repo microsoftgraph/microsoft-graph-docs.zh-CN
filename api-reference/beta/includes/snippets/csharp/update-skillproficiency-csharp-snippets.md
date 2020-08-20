@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 608410a75e85dded6d073d79536c8d04bf3f55c3
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 2186fe6f8c0c931c458930edafaf99e5c288f673
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37997492"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821275"
 ---
 ```csharp
 
@@ -15,11 +15,9 @@ var skillProficiency = new SkillProficiency
 {
     Categories = new List<String>()
     {
-        "categories-value"
+        "Professional"
     },
-    DisplayName = "displayName-value",
-    Proficiency = SkillProficiencyLevel.Elementary,
-    WebUrl = "webUrl-value"
+    Proficiency = SkillProficiencyLevel.AdvancedProfessional
 };
 
 await graphClient.Me.Profile.Skills["{id}"]

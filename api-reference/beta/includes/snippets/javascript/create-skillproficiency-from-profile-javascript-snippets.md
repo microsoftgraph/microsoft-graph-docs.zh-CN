@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: a281c92d0985562235d8e65a08e2112f2cdf1579
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 997ad7532dbd1041d4628feb0c47b24911a52e43
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "37997758"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821021"
 ---
 ```javascript
 
@@ -17,11 +17,14 @@ const client = Client.init(options);
 
 const skillProficiency = {
   categories: [
-    "categories-value"
+    "Professional"
   ],
-  displayName: "displayName-value",
-  proficiency: "proficiency-value",
-  webUrl: "webUrl-value"
+  allowedAudiences: "organization",
+  displayName: "API Design",
+  proficiency: "generalProfessional",
+  collaborationTags: [
+    "ableToMentor"
+  ]
 };
 
 let res = await client.api('/me/profile/skills')

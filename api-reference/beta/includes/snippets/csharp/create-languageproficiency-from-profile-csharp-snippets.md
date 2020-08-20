@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 90fb74c7de8da2c7aeff452d60d145cfa8c57ae6
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 747c12b961ccd5e0e7639ec8c54e2f0666149876
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "37996552"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821192"
 ---
 ```csharp
 
@@ -13,9 +13,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var languageProficiency = new LanguageProficiency
 {
-    DisplayName = "displayName-value",
-    Tag = "tag-value",
-    Proficiency = LanguageProficiencyLevel.Elementary
+    DisplayName = "Norwegian Bokmål",
+    Tag = "nb-NO",
+    Spoken = LanguageProficiencyLevel.NativeOrBilingual,
+    Written = LanguageProficiencyLevel.NativeOrBilingual,
+    Reading = LanguageProficiencyLevel.NativeOrBilingual
 };
 
 await graphClient.Me.Profile.Languages

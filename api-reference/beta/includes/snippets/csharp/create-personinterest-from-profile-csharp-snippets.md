@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 48e4531e0b2826e89b4e4098c1d5e6be94e1c697
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 24ae32af5dffee7d2349cd0e2aed66b36064c407
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37997814"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821049"
 ---
 ```csharp
 
@@ -15,11 +15,11 @@ var personInterest = new PersonInterest
 {
     Categories = new List<String>()
     {
-        "categories-value"
+        "Sports"
     },
-    Description = "description-value",
-    DisplayName = "displayName-value",
-    WebUrl = "webUrl-value"
+    Description = "World's greatest football club",
+    DisplayName = "Chelsea FC",
+    WebUrl = "https://www.chelseafc.com"
 };
 
 await graphClient.Me.Profile.Interests

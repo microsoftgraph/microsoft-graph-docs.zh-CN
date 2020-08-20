@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 38b1cbf4b483f76729783f16c8f942b661608a0d
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 0f4cd0890da1283154be9b2fb9b31569a14eb3b8
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37996070"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821037"
 ---
 ```objc
 
@@ -17,33 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphWorkPosition *workPosition = [[MSGraphWorkPosition alloc] init];
-NSMutableArray *categoriesList = [[NSMutableArray alloc] init];
-[categoriesList addObject: @"categories-value"];
-[workPosition setCategories:categoriesList];
-MSGraphPositionDetail *detail = [[MSGraphPositionDetail alloc] init];
-MSGraphCompanyDetail *company = [[MSGraphCompanyDetail alloc] init];
-[company setDisplayName:@"displayName-value"];
-[company setPronunciation:@"pronunciation-value"];
-[company setDepartment:@"department-value"];
-[company setOfficeLocation:@"officeLocation-value"];
-MSGraphPhysicalAddress *address = [[MSGraphPhysicalAddress alloc] init];
-[address setType: [MSGraphPhysicalAddressType unknown]];
-[address setPostOfficeBox:@"postOfficeBox-value"];
-[address setStreet:@"street-value"];
-[address setCity:@"city-value"];
-[address setState:@"state-value"];
-[address setCountryOrRegion:@"countryOrRegion-value"];
-[address setPostalCode:@"postalCode-value"];
-[company setAddress:address];
-[company setWebUrl:@"webUrl-value"];
-[detail setCompany:company];
-[detail setDescription:@"description-value"];
-[detail setEndMonthYear:@"datetime-value"];
-[detail setJobTitle:@"jobTitle-value"];
-[detail setRole:@"role-value"];
-[detail setStartMonthYear:@"datetime-value"];
-[detail setSummary:@"summary-value"];
-[workPosition setDetail:detail];
+[workPosition setIsCurrent: true];
 
 NSError *error;
 NSData *workPositionData = [workPosition getSerializedDataWithError:&error];

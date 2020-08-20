@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: ba739f2e4aca36fb4c1769d0310b8056ad6d9e6e
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 30fd2290f0b925cfbac9c51e3acbbee5586128ee
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37997729"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821045"
 ---
 ```csharp
 
@@ -15,11 +15,10 @@ var personWebsite = new PersonWebsite
 {
     Categories = new List<String>()
     {
-        "categories-value"
+        "football"
     },
-    Description = "description-value",
-    DisplayName = "displayName-value",
-    WebUrl = "webUrl-value"
+    DisplayName = "Lyn Damer",
+    WebUrl = "www.lyndamer.no"
 };
 
 await graphClient.Me.Profile.Websites

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 290fa32df7d0e559dfc26b61f46ee612b0ce9762
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: bce612492cd8847c1fcb32d5387f8e9e8b12ed1f
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "37997843"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821076"
 ---
 ```javascript
 
@@ -16,34 +16,34 @@ const options = {
 const client = Client.init(options);
 
 const educationalActivity = {
-  completionMonthYear: "datetime-value",
-  endMonthYear: "datetime-value",
+  completionMonthYear: "Date",
+  endMonthYear: "Date",
   institution: {
-    description: "description-value",
-    displayName: "displayName-value",
+    description: null,
+    displayName: "Colorado State University",
     location: {
-      type: "type-value",
-      postOfficeBox: "postOfficeBox-value",
-      street: "street-value",
-      city: "city-value",
-      state: "state-value",
-      countryOrRegion: "countryOrRegion-value",
-      postalCode: "postalCode-value"
+      type: "business",
+      postOfficeBox: null,
+      street: "12000 E Prospect Rd",
+      city: "Fort Collins",
+      state: "Colorado",
+      countryOrRegion: "USA",
+      postalCode: "80525"
     },
-    webUrl: "webUrl-value"
+    webUrl: "https://www.colostate.edu"
   },
   program: {
-    abbreviation: "abbreviation-value",
-    activities: "activities-value",
-    awards: "awards-value",
-    description: "description-value",
-    displayName: "displayName-value",
-    fieldsOfStudy: "fieldsOfStudy-value",
-    grade: "grade-value",
-    notes: "notes-value",
-    webUrl: "webUrl-value"
+    abbreviation: "MBA",
+    activities: null,
+    awards: null,
+    description: "Master of Business Administration with a major in Entreprenuership and Finance.",
+    displayName: "Master of Business Administration",
+    fieldsOfStudy: null,
+    grade: "3.9",
+    notes: null,
+    webUrl: "https://biz.colostate.edu"
   },
-  startMonthYear: "datetime-value"
+  startMonthYear: "Date"
 };
 
 let res = await client.api('/me/profile/educationalActivities')

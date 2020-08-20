@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 7c5ff9e096b5d809cd1adc75c6fe1105517d7490
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 471a857cd0f3141d61977ff3f8f90c1f0766779f
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37997786"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821119"
 ---
 ```javascript
 
@@ -16,12 +16,12 @@ const options = {
 const client = Client.init(options);
 
 const personName = {
-  displayName: "displayName-value",
-  first: "first-value",
-  initials: "initials-value",
-  last: "last-value",
-  languageTag: "languageTag-value",
-  maiden: "maiden-value"
+  displayName: "Innocenty Popov",
+  first: "Innocenty",
+  initials: "IP",
+  last: "Popov",
+  languageTag: "en-US",
+  maiden: null
 };
 
 let res = await client.api('/me/profile/names')

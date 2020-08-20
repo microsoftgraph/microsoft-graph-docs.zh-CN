@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 642f5639d547e6f2ac29e1868c094b0d553d6116
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: dca56c855ca8cbb0bbad4622be75ceaa16519fe3
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "37996239"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821241"
 ---
 ```objc
 
@@ -17,13 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphUserAccountInformation *userAccountInformation = [[MSGraphUserAccountInformation alloc] init];
-[userAccountInformation setAgeGroup:@"ageGroup-value"];
-[userAccountInformation setCountryCode:@"countryCode-value"];
-MSGraphLocaleInfo *preferredLanguageTag = [[MSGraphLocaleInfo alloc] init];
-[preferredLanguageTag setLocale:@"locale-value"];
-[preferredLanguageTag setDisplayName:@"displayName-value"];
-[userAccountInformation setPreferredLanguageTag:preferredLanguageTag];
-[userAccountInformation setUserPrincipalName:@"userPrincipalName-value"];
+[userAccountInformation setCountryCode:@"NO"];
 
 NSError *error;
 NSData *userAccountInformationData = [userAccountInformation getSerializedDataWithError:&error];

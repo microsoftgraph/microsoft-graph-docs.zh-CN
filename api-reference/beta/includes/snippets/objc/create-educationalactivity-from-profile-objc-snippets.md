@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 94a46af23661fb62485530e5b328e4cca7f06fcf
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 348cbf915d29d2b92fa8689ed67daab2dceded0c
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "37997844"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821078"
 ---
 ```objc
 
@@ -17,34 +17,34 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphEducationalActivity *educationalActivity = [[MSGraphEducationalActivity alloc] init];
-[educationalActivity setCompletionMonthYear:@"datetime-value"];
-[educationalActivity setEndMonthYear:@"datetime-value"];
+[educationalActivity setCompletionMonthYear:@"Date"];
+[educationalActivity setEndMonthYear:@"Date"];
 MSGraphInstitutionData *institution = [[MSGraphInstitutionData alloc] init];
-[institution setDescription:@"description-value"];
-[institution setDisplayName:@"displayName-value"];
+[institution setDescription: null];
+[institution setDisplayName:@"Colorado State University"];
 MSGraphPhysicalAddress *location = [[MSGraphPhysicalAddress alloc] init];
-[location setType: [MSGraphPhysicalAddressType unknown]];
-[location setPostOfficeBox:@"postOfficeBox-value"];
-[location setStreet:@"street-value"];
-[location setCity:@"city-value"];
-[location setState:@"state-value"];
-[location setCountryOrRegion:@"countryOrRegion-value"];
-[location setPostalCode:@"postalCode-value"];
+[location setType: [MSGraphPhysicalAddressType business]];
+[location setPostOfficeBox: null];
+[location setStreet:@"12000 E Prospect Rd"];
+[location setCity:@"Fort Collins"];
+[location setState:@"Colorado"];
+[location setCountryOrRegion:@"USA"];
+[location setPostalCode:@"80525"];
 [institution setLocation:location];
-[institution setWebUrl:@"webUrl-value"];
+[institution setWebUrl:@"https://www.colostate.edu"];
 [educationalActivity setInstitution:institution];
 MSGraphEducationalActivityDetail *program = [[MSGraphEducationalActivityDetail alloc] init];
-[program setAbbreviation:@"abbreviation-value"];
-[program setActivities:@"activities-value"];
-[program setAwards:@"awards-value"];
-[program setDescription:@"description-value"];
-[program setDisplayName:@"displayName-value"];
-[program setFieldsOfStudy:@"fieldsOfStudy-value"];
-[program setGrade:@"grade-value"];
-[program setNotes:@"notes-value"];
-[program setWebUrl:@"webUrl-value"];
+[program setAbbreviation:@"MBA"];
+[program setActivities: null];
+[program setAwards: null];
+[program setDescription:@"Master of Business Administration with a major in Entreprenuership and Finance."];
+[program setDisplayName:@"Master of Business Administration"];
+[program setFieldsOfStudy: null];
+[program setGrade:@"3.9"];
+[program setNotes: null];
+[program setWebUrl:@"https://biz.colostate.edu"];
 [educationalActivity setProgram:program];
-[educationalActivity setStartMonthYear:@"datetime-value"];
+[educationalActivity setStartMonthYear:@"Date"];
 
 NSError *error;
 NSData *educationalActivityData = [educationalActivity getSerializedDataWithError:&error];

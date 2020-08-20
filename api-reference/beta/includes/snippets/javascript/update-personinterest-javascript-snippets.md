@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f5e4e42b18e17a82548751aad9b8c19f3d1592ee
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 3e33e2d68c7e54ce701d1aa1a020018884220bc5
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37998101"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821326"
 ---
 ```javascript
 
@@ -17,11 +17,8 @@ const client = Client.init(options);
 
 const personInterest = {
   categories: [
-    "categories-value"
-  ],
-  description: "description-value",
-  displayName: "displayName-value",
-  webUrl: "webUrl-value"
+    "Sports"
+  ]
 };
 
 let res = await client.api('/me/profile/interests/{id}')

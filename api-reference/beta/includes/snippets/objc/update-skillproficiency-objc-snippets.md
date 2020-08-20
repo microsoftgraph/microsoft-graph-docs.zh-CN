@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 66a102fa906d048520b0317e827a6bae79e2f637
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 2b1b9e242b0b5f6b29795e246c9bb7d045573cc1
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37997491"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821270"
 ---
 ```objc
 
@@ -18,11 +18,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphSkillProficiency *skillProficiency = [[MSGraphSkillProficiency alloc] init];
 NSMutableArray *categoriesList = [[NSMutableArray alloc] init];
-[categoriesList addObject: @"categories-value"];
+[categoriesList addObject: @"Professional"];
 [skillProficiency setCategories:categoriesList];
-[skillProficiency setDisplayName:@"displayName-value"];
-[skillProficiency setProficiency: [MSGraphSkillProficiencyLevel elementary]];
-[skillProficiency setWebUrl:@"webUrl-value"];
+[skillProficiency setProficiency: [MSGraphSkillProficiencyLevel advancedProfessional]];
 
 NSError *error;
 NSData *skillProficiencyData = [skillProficiency getSerializedDataWithError:&error];
