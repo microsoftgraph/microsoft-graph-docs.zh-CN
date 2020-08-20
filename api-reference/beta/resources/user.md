@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 3cfec228869d9f007959cdf243fba4651834c306
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 2ce47ccf949589856335e73bf67cbe2f84d94ea4
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509798"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46808515"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -286,8 +286,7 @@ ms.locfileid: "46509798"
 |mailFolders|[mailFolder](mailfolder.md) 集合| 用户的邮件文件夹。只读。可为 Null。|
 |manager|[directoryObject](directoryobject.md)|是此用户的经理的用户或联系人。只读。（HTTP 方法：GET、PUT、DELETE）|
 |memberOf|[directoryObject](directoryobject.md) 集合|用户所属的所有组、目录角色和管理单元。只读。可为 Null。|
-|joinedTeams|[团队](team.md) 集合|用户所属的 Microsoft Teams 团队。 只读。 可为空。|
-|团队合作|[userTeamwork](userteamwork.md)| 可供用户使用的 Microsoft Teams 功能的容器。 只读。 可为 Null。|
+|joinedTeams|[团队](team.md) 集合|用户所属的 Microsoft Teams 团队。 只读。 可为 Null。|
 |messages|[message](message.md) 集合|邮箱或文件夹中的邮件。只读。可为 Null。|
 |onenote|[onenote](onenote.md)| 只读。|
 |outlook|[outlookUser](outlookuser.md)| 用户可用的选择性 Outlook 服务。 只读。 可为 Null。|
@@ -296,10 +295,13 @@ ms.locfileid: "46509798"
 |people|[person](person.md) 集合| 只读。与用户最相关的人员。该集合按其与用户的相关性排序，相关性由用户的通信、协作和业务关系决定。人脉是邮件、联系人和社交网络中的信息聚合。|
 |photo|[profilePhoto](profilephoto.md)| 用户的个人资料照片。只读。|
 |photos|[photo](photo.md) 集合| 只读。可为 Null。|
-|planner|[plannerUser](planneruser.md)| 用户可用的选择性 Planner 服务。 只读。 可为空。 |
+|planner|[plannerUser](planneruser.md)| 用户可用的选择性 Planner 服务。 只读。 可为 Null。 |
+|个人资料 |[个人资料](profile.md) | 表示在租户中描述用户的属性。 |
+|registeredDevices|[directoryObject](directoryobject.md) collection|已注册的用户的设备。只读。可为 Null。|
 |scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) 集合| 该用户的作用域角色管理单元成员身份。 只读。 可为 Null。|
 |settings|[userSettings](usersettings.md) | 只读。可为 Null。|
-|registeredDevices|[directoryObject](directoryobject.md) collection|已注册的用户的设备。只读。可为 Null。|
+|团队合作|[userTeamwork](userteamwork.md)| 可供用户使用的 Microsoft Teams 功能的容器。 只读。 可为 Null。|
+
 
 ### <a name="user-preferences-for-languages-and-regional-formats"></a>语言和区域格式的用户首选项
 **用户**资源包含[mailboxSettings](../resources/mailboxsettings.md)属性，其中包括用户的首选语言、数据和时间格式、默认时区以及其他专用于主要 Exchange 邮箱的设置。 这些首选项针对邮件客户端，且仅在用户已预配邮箱的情况下可用。 如果你的应用场景专注于 Outlook 邮件、日历、联系人或待办任务，可选择使用 **mailboxSettings**。
@@ -339,6 +341,7 @@ ms.locfileid: "46509798"
     "ownedDevices",
     "ownedObjects",
     "photo",
+    "profile",
     "registeredDevices"
   ],
   "keyProperty": "id",
@@ -438,6 +441,7 @@ ms.locfileid: "46509798"
   "outlook": {"@odata.type": "microsoft.graph.outlookUser"},
   "ownedDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "photo": {"@odata.type": "microsoft.graph.profilePhoto"},
+  "profile": {"@odata.type": "microsoft.graph.profile"},
   "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "signInActivity": {"@odata.type": "microsoft.graph.signInActivity"}
 }

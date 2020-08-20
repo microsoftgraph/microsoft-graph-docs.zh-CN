@@ -1,21 +1,21 @@
 ---
-title: 列出证书
-description: 从认证导航属性中获取 personCertifications 的集合。
+title: 列出认证
+description: 从认证导航属性获取 personCertifications 集合。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 22eaa430e24c7e196f49a3c72a3e92897b6e31b2
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: fd7f8196bf0b76ce16d1949d7e46c1d751a7f0db
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809608"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819338"
 ---
-# <a name="list-certifications"></a>列出证书
+# <a name="list-certifications"></a>列出认证
 命名空间：microsoft.graph
 
-从用户的[配置文件](../resources/profile.md)中检索[personCertification](../resources/personcertification.md)对象的列表。
+从用户的 [配置文件中检索 personCertification](../resources/personcertification.md) 对象 [列表](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -23,9 +23,9 @@ ms.locfileid: "46809608"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 应用程序                            | User.readbasic.all、所有用户读写全部。 All                            |
+| 委派（工作或学校帐户）     | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 应用程序                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,14 +40,14 @@ GET /users/{id | userPrincipalName}/profile/certifications
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持以下 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持以下 OData 查询参数，这有助于自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 |名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |$filter         |string   |将响应限制为仅包含指定条件的那些对象。                                                                                             |
-|$orderby        |string   |默认情况下，响应中的对象按其在查询中的 createdDateTime 值进行排序。 您可以使用 *$orderby* 参数更改响应的顺序。|
+|$orderby        |string   |默认情况下，响应中的对象在查询中按其 createdDateTime 值进行排序。 可以使用 $orderby 参数更改响应 *$orderby* 顺序。|
 |$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
-|$skip           |int      |跳过前 n 个结果，对于分页非常有用。                                                                                                                                |
+|$skip           |int      |跳过前 n 个结果，可用于分页。                                                                                                                                |
 |$top            |int      |要返回的结果数。                                                                                                                                           |
 
 ## <a name="request-headers"></a>请求标头
@@ -60,7 +60,7 @@ GET /users/{id | userPrincipalName}/profile/certifications
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [personCertification](../resources/personcertification.md) 对象集合。
+如果成功，此方法将在响应 `200 OK` 正文中返回响应代码和 [personCertification](../resources/personcertification.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -74,15 +74,15 @@ GET /users/{id | userPrincipalName}/profile/certifications
 GET https://graph.microsoft.com/beta/me/profile/certifications
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-itemcertifications-from-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-itemcertifications-from-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-itemcertifications-from-profile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

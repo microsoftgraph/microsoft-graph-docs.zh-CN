@@ -1,22 +1,22 @@
 ---
-title: 创建奖项
-description: 创建新的奖项对象。
+title: 创建奖励
+description: 创建新的奖励对象。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 07f4478350e00184616a719f40c3c21a014a6331
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b40795f5961bfe47388b01abaf1ce39725a8d113
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812911"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819561"
 ---
 # <a name="create-personaward"></a>创建 personAward
 
 命名空间：microsoft.graph
 
-在用户的[配置文件](../resources/profile.md)中创建新的[personAward](../resources/personaward.md)对象。
+在 [用户的配置文件中创建新的 personAward](../resources/personaward.md) [对象](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -24,8 +24,8 @@ ms.locfileid: "46812911"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。 |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。 |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All |
 | 应用程序                            | User.ReadWrite.All                            |
 ## <a name="http-request"></a>HTTP 请求
 
@@ -45,25 +45,25 @@ POST /users/{id | userPrincipalName}/profile/awards
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [personAward](../resources/personaward.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [personAward 对象的](../resources/personaward.md) JSON 表示形式。
 
-下表显示了在用户[配置文件](../resources/profile.md)中创建新的[personAward](../resources/personaward.md)对象时可以设置的属性。
+下表显示了在用户的配置文件中创建新 [personAward](../resources/personaward.md) 对象时可能设置 [的属性](../resources/profile.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|description|String|奖励或荣誉的 Descpription。 |
-|displayName|String|获奖或荣誉的名称。 |
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|issuedDate|日期|授予获奖或荣誉的日期。 |
-|issuingAuthority|String|授予奖项的证书颁发机构。  |
-|source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|thumbnailUrl|String|URL 引用获奖或荣誉的缩略图。  |
-|webUrl|String|引用奖项或荣誉的 URL。 |
+|description|String|奖励或移动者的说明。 |
+|displayName|String|奖励或移的姓名。 |
+|推据|[inferenceData](../resources/inferencedata.md)|如果实体受到创建或修改的应用程序的推理，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|issuedDate|日期|获得的奖励或手的日期。 |
+|issuingAuthority|String|向其授予或移访问者的授权。  |
+|source|[personDataSource](../resources/persondatasource.md)|同步到其他服务时从哪个位置发送值。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|thumbnailUrl|String|URL，用于引用奖励或更深的缩略图。  |
+|webUrl|String|引用奖励或移入者的 URL。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [personAward](../resources/personaward.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回响应代码 [和 personAward](../resources/personaward.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -88,15 +88,15 @@ Content-length: 497
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-personaward-from-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-personaward-from-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-personaward-from-profile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

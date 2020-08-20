@@ -1,16 +1,16 @@
 ---
 title: 更新 personWebsite
-description: 更新用户的配置文件中的 personWebsite 对象的属性。
+description: 更新用户配置文件中的 personWebsite 对象的属性。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 2b09a39d5821d095e8e3a27eb1ec1bf95dda754a
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 8dd02aa16cc6a97650cf44e368d26aa5f55ea19e
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811608"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819828"
 ---
 # <a name="update-personwebsite"></a>更新 personwebsite
 
@@ -18,7 +18,7 @@ ms.locfileid: "46811608"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新用户的[配置文件](../resources/profile.md)中的[personWebsite](../resources/personwebsite.md)对象的属性。
+更新用户配置文件中的 [personWebsite](../resources/personwebsite.md) 对象的 [属性](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,8 +26,8 @@ ms.locfileid: "46811608"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。          |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。          |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All          |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All          |
 | 应用程序                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -53,15 +53,15 @@ PATCH /users/{id | userPrincipalName}/profile/websites/{id}
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|categories|String collection|包含用户与网站相关联的类别 (例如，个人、食谱) 。|
+|categories|String collection|包含用户已关联的类别， (例如个人、收) 。|
 |description|String|包含网站的说明。|
 |displayName|String|包含网站的友好名称。|
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|webUrl|String|包含指向网站本身的链接。|
+|推据|[inferenceData](../resources/inferencedata.md)|如果实体受到创建或修改的应用程序的推理，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|webUrl|String|包含网站本身的链接。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [personWebsite](../resources/personwebsite.md) 对象。
+如果成功，此方法将在响应 `200 OK` 正文中返回响应代码和更新后的 [personWebsite](../resources/personwebsite.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -83,15 +83,15 @@ Content-type: application/json
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-personwebsite-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-personwebsite-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-personwebsite-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-personwebsite-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-personwebsite-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/update-personwebsite-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

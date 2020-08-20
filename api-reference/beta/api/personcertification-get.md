@@ -5,17 +5,17 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: dcff70295646bb5b668dc4a14e5547b7c58daa07
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: af3bc004cec2fae525e655c3b10c8e553db961b1
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812947"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819666"
 ---
 # <a name="get-personcertification"></a>获取 personCertification
 命名空间：microsoft.graph
 
-读取用户的[配置文件](../resources/profile.md)中的[personCertification](../resources/personcertification.md)对象的属性和关系。
+读取用户配置文件中的 [personCertification](../resources/personcertification.md) 对象的属性和 [关系](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -23,9 +23,9 @@ ms.locfileid: "46812947"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 应用程序                            | User.readbasic.all、所有用户读写全部。 All                            |
+| 委派（工作或学校帐户）     | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 应用程序                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ GET /users/{id | userPrincipalName}/profile/certifications/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` 查询参数。 指定要包含在响应中的属性的列表，并以逗号分隔。 为获得最佳性能，请仅选择所需的属性子集。
+此方法支持 `$select` 查询参数。 指定要在响应中包含的属性列表，并用逗号将它们分开。 为了获得最佳性能，请仅选择需要的属性子集。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -52,7 +52,7 @@ GET /users/{id | userPrincipalName}/profile/certifications/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [personCertification](../resources/personcertification.md) 对象。
+如果成功，此方法将在响应 `200 OK` 正文中返回 [响应代码和 personCertification](../resources/personcertification.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -67,15 +67,15 @@ GET /users/{id | userPrincipalName}/profile/certifications/{id}
 GET https://graph.microsoft.com/beta/me/profile/certifications/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-personcertification-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-personcertification-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-personcertification-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

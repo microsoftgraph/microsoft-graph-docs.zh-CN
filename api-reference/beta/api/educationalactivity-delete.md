@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 96c717171f683d2a32e62b4e79b80639e2cb5242
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: cfff22d975dbe9c54f3c4647cb07f42669a1fd9f
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810949"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819388"
 ---
 # <a name="delete-educationalactivity"></a>删除 educationalActivity
 
@@ -18,7 +18,7 @@ ms.locfileid: "46810949"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从用户的[配置文件](../resources/profile.md)中删除[educationalActivity](../resources/educationalactivity.md)对象。
+从 [用户配置文件中删除 educationalActivity](../resources/educationalactivity.md) [对象](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,8 +26,8 @@ ms.locfileid: "46810949"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。          |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。          |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All          |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All          |
 | 应用程序                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -58,6 +58,8 @@ DELETE /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_educationalactivity"
@@ -66,6 +68,20 @@ DELETE /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationalactivity-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-educationalactivity-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-educationalactivity-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 

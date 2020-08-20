@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 96158282c5e5a3c39440b710415bebb3de2eda2e
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 9d26dd248a10ba809e7c5a82c0abba9c57c7a1a2
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809179"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819631"
 ---
 # <a name="get-personinterest"></a>获取 personInterest
 
@@ -18,7 +18,7 @@ ms.locfileid: "46809179"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在用户的[配置文件](../resources/profile.md)中检索[personInterest](../resources/personinterest.md)对象的属性和关系。
+在用户的配置文件中检索 [personInterest](../resources/personinterest.md) 对象的属性和 [关系](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "46809179"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 应用程序                            | User.readbasic.all、所有用户读写全部。 All                            |
+| 委派（工作或学校帐户）     | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 应用程序                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,7 +41,7 @@ GET /users/{id | userPrincipalName}/profile/interests/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` 查询参数。 指定要包含在响应中的属性的列表，并以逗号分隔。 为获得最佳性能，请仅选择所需的属性子集。
+此方法支持 `$select` 查询参数。 指定要在响应中包含的属性列表，并用逗号将它们分开。 为了获得最佳性能，请仅选择需要的属性子集。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -55,7 +55,7 @@ GET /users/{id | userPrincipalName}/profile/interests/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [personInterest](../resources/personinterest.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [请求的 personInterest](../resources/personinterest.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -68,19 +68,19 @@ GET /users/{id | userPrincipalName}/profile/interests/{id}
   "name": "get_personinterest"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/interests/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-personname-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-personinterest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-personname-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-personinterest-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-personname-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-personinterest-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
