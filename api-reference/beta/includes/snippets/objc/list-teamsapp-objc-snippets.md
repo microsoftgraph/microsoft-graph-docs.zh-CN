@@ -1,18 +1,18 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 0b088e31e2ea4d4f31e4ac96976a7f23de83da9c
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: df3697633e7f1493a0f529fd9c72ec0207efc46c
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806291"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819984"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/appCatalogs/teamsApps?$filter=id%20eq%20'876df28f-2e78-423b-94a5-44181bd0e225'&$expand=appDefinitions"]]];
 [urlRequest setHTTPMethod:@"GET"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 

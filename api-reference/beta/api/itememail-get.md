@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: cfeecb0c911d72e846164a82762ea84d7a327c27
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: bd6f8a61ad52e8df7692253d9588c748bfce9d91
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808093"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46820033"
 ---
 # <a name="get-itememail"></a>获取 itemEmail
 
@@ -18,7 +18,7 @@ ms.locfileid: "46808093"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在用户的[配置文件](../resources/profile.md)中检索[itemEmail](../resources/itememail.md)对象的属性和关系。
+检索用户配置文件中的 [itemEmail](../resources/itememail.md) 对象的属性和 [关系](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "46808093"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
-| 应用程序                            | User.readbasic.all、所有用户读写全部。 All                            |
+| 委派（工作或学校帐户）     | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 应用程序                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,7 +41,7 @@ GET /users/{id | userPrincipalName}/profile/emails/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$select` 查询参数。 指定要包含在响应中的属性的列表，并以逗号分隔。 为获得最佳性能，请仅选择所需的属性子集。
+此方法支持 `$select` 查询参数。 指定要在响应中包含的属性列表，并用逗号将它们分开。 为了获得最佳性能，请仅选择需要的属性子集。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -53,7 +53,7 @@ GET /users/{id | userPrincipalName}/profile/emails/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [itemEmail](../resources/itememail.md) 对象。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [itemEmail](../resources/itememail.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -68,15 +68,15 @@ GET /users/{id | userPrincipalName}/profile/emails/{id}
 GET https://graph.microsoft.com/beta/users/{userId}/profile/emails/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-personname-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-itememail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-personname-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-itememail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-personname-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-itememail-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

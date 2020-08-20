@@ -1,22 +1,22 @@
 ---
-title: 创建专利
-description: 创建新的专利对象。
+title: 创建首要项目
+description: 创建新的父对象。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 193b0d9626ae94c807e2aeb50193ce2a4ed30de5
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 8345de1ca41dfd5e338b77c667ef06ae4b3bf31c
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812929"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46820285"
 ---
 # <a name="create-itempatent"></a>创建 itemPatent
 
 命名空间：microsoft.graph
 
-在用户的[配置文件](../resources/profile.md)中创建新的[itemPatent](../resources/itempatent.md)对象。
+在用户的 [配置文件中创建新的 itemPatent](../resources/itempatent.md) [对象](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -24,8 +24,8 @@ ms.locfileid: "46812929"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。 |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。 |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All |
 | 应用程序                            | User.ReadWrite.All                            |
 ## <a name="http-request"></a>HTTP 请求
 
@@ -45,26 +45,26 @@ POST /users/{id | userPrincipalName}/profile/patents
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [itemPatent](../resources/itempatent.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [itemPatent 对象的](../resources/itempatent.md) JSON 表示形式。
 
-下表显示了在用户[配置文件](../resources/profile.md)中创建新的[itemPatent](../resources/itempatent.md)对象时可以设置的属性。
+下表显示在用户的配置文件中创建新 [itemPatent](../resources/itempatent.md) 对象时可能设置 [的属性](../resources/profile.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|description|String|专利或档案的 Descpription。 |
-|displayName|String|专利或档案的标题。 |
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|isPending        |布尔值     |指示专利处于待处理状态。        |
-|issuedDate       |日期        |授予专利的日期。   |
-|issuingAuthority |String      |授予专利的证书颁发机构。     |
-|数字           |String      |专利号码。                      |
-|source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|webUrl           |String      |引用专利或档案的 URL。 |
+|description|String|专利或分级说明。 |
+|displayName|String|表示属性或下事的标题。 |
+|推据|[inferenceData](../resources/inferencedata.md)|如果实体受到创建或修改的应用程序的推理，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|isPending        |Boolean     |表示 Patent 正在挂起。        |
+|issuedDate       |日期        |获取该属性的日期。   |
+|issuingAuthority |String      |授予 Patent 权限的颁发机构。     |
+|数字           |String      |Patent 数。                      |
+|source|[personDataSource](../resources/persondatasource.md)|同步到其他服务时从哪个位置发送值。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|webUrl           |String      |引用 patent 或 Filing 的 URL。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [itemPatent](../resources/itempatent.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回 [响应代码和 itemPatent](../resources/itempatent.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -88,15 +88,15 @@ Content-length: 497
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-itempatent-from-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-itempatent-from-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-itempatent-from-profile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

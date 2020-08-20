@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 53007a55e163425df0184cc961ffdc6503dd40ba
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 0b2af3f166dd5ac1cc50ede5dd5bf54c15ec854e
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37996131"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819590"
 ---
 ```objc
 
@@ -17,14 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphWebAccount *webAccount = [[MSGraphWebAccount alloc] init];
-[webAccount setDescription:@"description-value"];
-[webAccount setUserId:@"userId-value"];
-MSGraphServiceInformation *service = [[MSGraphServiceInformation alloc] init];
-[service setName:@"name-value"];
-[service setWebUrl:@"webUrl-value"];
-[webAccount setService:service];
-[webAccount setStatusMessage:@"statusMessage-value"];
-[webAccount setWebUrl:@"webUrl-value"];
+[webAccount setWebUrl:@"https://github.com/innocenty.popov"];
 
 NSError *error;
 NSData *webAccountData = [webAccount getSerializedDataWithError:&error];

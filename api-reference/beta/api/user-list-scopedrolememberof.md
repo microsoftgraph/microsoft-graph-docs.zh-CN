@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 48b8412b8646cb6daa9d802bd48a966e7d12c58a
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 31b06e1f49833241f6a6f50e610b9286e0418edf
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107575"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46820272"
 ---
 # <a name="list-scopedadministratorof"></a>列出 scopedAdministratorOf
 
@@ -18,7 +18,7 @@ ms.locfileid: "43107575"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索用户的[scopedRoleMembership](../resources/scopedrolemembership.md)列表。
+检索用户的 [scopedRoleMembership](../resources/scopedrolemembership.md) 列表。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -32,8 +32,8 @@ ms.locfileid: "43107575"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/scopedAdministratorOf
-GET /users/{id}/scopedAdministratorOf
+GET /me/scopedRoleMemberOf 
+GET /users/{id}/scopedRoleMemberOf
 
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -49,7 +49,7 @@ GET /users/{id}/scopedAdministratorOf
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[scopedRoleMembership](../resources/scopedrolemembership.md)对象集合。
+如果成功，此方法将在响应 `200 OK` 正文中返回响应代码和 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -60,7 +60,7 @@ GET /users/{id}/scopedAdministratorOf
   "name": "get_scopedadministratorof"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/scopedAdministratorOf
+GET https://graph.microsoft.com/beta/me/scopedRoleMemberOf
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-scopedadministratorof-csharp-snippets.md)]

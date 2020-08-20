@@ -1,21 +1,21 @@
 ---
 title: 创建地址
-description: 创建一个新的地址对象。
+description: 创建新的地址对象。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a7338e553b483d4833c93036bf580aea4c9e4b00
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 2dab94f8aefe12a073041ade6a6deedcee07f8ab
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812913"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46820219"
 ---
 # <a name="create-addresses"></a>创建地址
 命名空间：microsoft.graph
 
-在用户的[配置文件](../resources/profile.md)中创建新的[itemAddress](../resources/itemaddress.md)对象。
+在用户配置文件中创建新的 [itemAddress](../resources/itemaddress.md) [对象](../resources/profile.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -23,8 +23,8 @@ ms.locfileid: "46812913"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。 |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。 |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All |
 | 应用程序                            | User.ReadWrite.All                            |
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,19 +46,19 @@ POST /users/{id | userPrincipalName}/profile/addresses
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [itemAddress](../resources/itemaddress.md) 对象的 JSON 表示形式。
 
-下表显示了在用户[配置文件](../resources/profile.md)中创建新的[itemAddress](../resources/itemaddress.md)对象时可以设置的属性。
+下表显示在用户的配置文件中新建 [itemAddress 对象时](../resources/itemaddress.md) 可能设置 [的属性](../resources/profile.md)。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|介绍|[physicalAddress](../resources/physicaladdress.md)|地址本身的详细信息。|
-|displayName|String|用户已分配到此地址的友好名称。 |
-|geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|地址的 geocoordinates。|
-|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|detail|[physicalAddress](../resources/physicaladdress.md)|关于地址本身的详细信息。|
+|displayName|String|用户分配给此地址的友好名称。 |
+|geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|地址的地理坐标。|
+|推据|[inferenceData](../resources/inferencedata.md)|如果实体受到创建或修改的应用程序的推理，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|source|[personDataSource](../resources/persondatasource.md)|同步到其他服务时从哪个位置发送值。 继承自 [itemFacet](../resources/itemfacet.md)。|
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [itemAddress](../resources/itemaddress.md) 对象。
+如果成功，此方法在响应 `201 Created` 正文中返回响应代码和 [itemAddress](../resources/itemaddress.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -87,15 +87,15 @@ Content-length: 497
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-itemaddress-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-itemaddress-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-itemaddress-from--objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,21 +1,22 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 2a0a494bf3c9e8a1f91976dfbc9e902224e3e48f
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 5ac2acea65e48b8c82a16811ad4375b87fdbaf5c
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808977"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819757"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("$filter", "id eq 'b1c5353a-7aca-41b3-830f-27d5218fe0e5'"));
+requestOptions.add(new QueryOption("$filter", "id eq '876df28f-2e78-423b-94a5-44181bd0e225',"));
 
 ITeamsAppCollectionPage teamsApps = graphClient.appCatalogs().teamsApps()
     .buildRequest( requestOptions )
+    .expand("appDefinitions")
     .get();
 
 ```

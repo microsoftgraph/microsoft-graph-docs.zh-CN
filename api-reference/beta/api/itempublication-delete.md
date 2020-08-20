@@ -1,22 +1,22 @@
 ---
 title: 删除 itemPublication
-description: 删除一个 itemPublication 对象。
+description: 删除 itemPublication 对象。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 5ea1f2a96c60d7682c3659cbce9ec3b51c638823
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: a43629bdbd20859a3c311f8efadf264a9f84bab2
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812943"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46820107"
 ---
 # <a name="delete-itempublication"></a>删除 itemPublication
 
 命名空间：microsoft.graph
 
-删除一个 [itemPublication](../resources/itempublication.md) 对象。
+删除 [itemPublication](../resources/itempublication.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -24,8 +24,8 @@ ms.locfileid: "46812943"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| 委派（工作或学校帐户）     | 所有用户读写。 |
-| 委派（个人 Microsoft 帐户） | 所有用户读写。 |
+| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All |
 | 应用程序                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -64,15 +64,15 @@ DELETE /users/{id | userPrincipalName}/profile/publications/{id}
 DELETE https://graph.microsoft.com/beta/me/profile/publications/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-itempublication-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-itempublication-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-itempublication-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: 列出 teamsApp
-description: '列出 Microsoft 团队应用程序目录中的应用程序。 '
+description: '列出 Microsoft Teams 应用目录中的应用。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3fa9e49c35101cd151b18c4af9066d371b729bfc
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c0948dcc2545a30480188741e1ca622c9acbde35
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806281"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46819983"
 ---
 # <a name="list-teamsapp"></a>列出 teamsApp
 
@@ -18,8 +18,8 @@ ms.locfileid: "46806281"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出 Microsoft 团队应用程序目录中的 [应用程序](../resources/teamsapp.md) 。
-这包括 Microsoft 团队存储中的应用程序，以及组织的应用程序目录 (租户应用程序目录) 中的应用程序。 若要仅从组织的应用程序目录中获取应用程序，请 `organization` 在请求中将 **distributionMethod** 指定为 ""。
+列出 [Microsoft](../resources/teamsapp.md) Teams 应用目录中的应用。
+这包括 Microsoft Teams 应用商店中的应用，以及组织内应用程序目录中的 (应用目录解决方案) 。 若要仅从组织的应用程序目录获取应用程序，请在 `organization` 请求**中指定为 distributionMethod。**
 
 ## <a name="permissions"></a>权限
 
@@ -27,7 +27,7 @@ ms.locfileid: "46806281"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:------------------------------------|
-| 委派（工作或学校帐户）     | AppCatalog、AppCatalog、所有的、所有读写的。 all |
+| 委派（工作或学校帐户）     | AppCatalog.Read.All、AppCatalog.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持                       |
 | 应用程序                            | 不支持。 |
 
@@ -43,9 +43,9 @@ GET /appCatalogs/teamsApps
 
 此方法支持使用 `$filter`、`$select` 和`$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-使用 `$expand=AppDefinitions` 将返回有关应用的状态的详细信息（如 **publishingState**），它反映应用程序提交的审阅状态，并返回应用程序是否已被批准、被拒绝或仍处于审阅状态。 
+使用 `$expand=AppDefinitions` 将返回有关应用状态的详细信息（例如 **publishingState），** 这将反映应用提交评审状态，并返回应用程序是否已被批准、拒绝或保持审查状态。 
 
-> **注意：** 您可以对 [teamsApp](../resources/teamsapp.md) 对象的任何字段进行筛选，以缩短结果列表。 您可以使用以下任何筛选器操作：等于、不等于、和、或，而不是。
+> **注意：** 可以筛选 [teamsApp](../resources/teamsapp.md) 对象的任何字段以缩短结果列表。 可以使用下列任何筛选器操作：等于、不等于和不等于和不等于。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -59,13 +59,13 @@ GET /appCatalogs/teamsApps
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [teamsApp](../resources/teamsapp.md) 对象的列表。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [teamsApp](../resources/teamsapp.md) 对象列表。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-list-all-applications-in-a-tenant"></a>示例1：列出租户中的所有应用程序
+### <a name="example-1-list-all-applications-in-a-tenant"></a>示例 1：列出租户中的所有应用程序
 
-下面的示例列出了特定于您的租户的所有应用程序。
+以下示例列出了特定于你的租户的所有应用程序。
 
 #### <a name="request"></a>请求
 
@@ -122,9 +122,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-list-applications-with-a-given-id"></a>示例2：列出具有给定 ID 的应用程序
+### <a name="example-2-list-applications-with-a-given-id"></a>示例 2：列出具有给定 ID 的应用程序
 
-下面的示例列出了具有给定 ID 的应用程序。
+以下示例列出具有给定 ID 的应用程序。
 
 #### <a name="request"></a>请求
 
@@ -179,20 +179,36 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>示例3：列出具有给定 ID 的应用程序，并返回提交检查状态
+### <a name="example-3-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>示例 3：列出具有给定 ID 的应用程序并返回提交审查状态
 
-下面的示例列出了具有给定 ID 的应用程序，并展开 **appDefinitions** 以返回 **publishingState**，这将反映应用程序的提交审阅状态。 `Submitted` 表示正在等待审阅， `published` 表示该应用程序已由管理员批准，并且该 `rejected` 应用程序被管理员拒绝。
+以下示例列出具有给定 ID 的应用程序，并扩展 **appDefinitions** 以返回 **publishingState，** 这反映了应用的提交审查状态。 `Submitted` 表示评论正在待定状态 `published` ，表示应用已由管理员批准 `rejected` ，且意味着应用程序被管理员拒绝。
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamsapp"
 }-->
 
-```http
+```msgraph-interactive
 GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id eq '876df28f-2e78-423b-94a5-44181bd0e225'&$expand=appDefinitions
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
