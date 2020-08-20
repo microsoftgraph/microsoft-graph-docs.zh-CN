@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5d25012a5420131821c37d94463d02734a9be2af
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 5a7ae4b8f6b95020104c6b25a8b6c14dc0cf7db4
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37997007"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821183"
 ---
 ```csharp
 
@@ -13,6 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var profile = await graphClient.Me.Profile
     .Request()
+    .Expand("skills($select=displayName)")
     .GetAsync();
 
 ```

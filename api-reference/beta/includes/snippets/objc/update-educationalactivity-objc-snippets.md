@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: c7df67c18d97f5eb359e6b95b83d2b0243df24b8
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: fe68f887828b016925c373ccc1636063e7f91a2e
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994754"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821104"
 ---
 ```objc
 
@@ -17,34 +17,17 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphEducationalActivity *educationalActivity = [[MSGraphEducationalActivity alloc] init];
-[educationalActivity setCompletionMonthYear:@"datetime-value"];
-[educationalActivity setEndMonthYear:@"datetime-value"];
 MSGraphInstitutionData *institution = [[MSGraphInstitutionData alloc] init];
-[institution setDescription:@"description-value"];
-[institution setDisplayName:@"displayName-value"];
 MSGraphPhysicalAddress *location = [[MSGraphPhysicalAddress alloc] init];
-[location setType: [MSGraphPhysicalAddressType unknown]];
-[location setPostOfficeBox:@"postOfficeBox-value"];
-[location setStreet:@"street-value"];
-[location setCity:@"city-value"];
-[location setState:@"state-value"];
-[location setCountryOrRegion:@"countryOrRegion-value"];
-[location setPostalCode:@"postalCode-value"];
+[location setType: [MSGraphPhysicalAddressType business]];
+[location setPostOfficeBox: null];
+[location setStreet:@"12000 E Prospect Rd"];
+[location setCity:@"Fort Collins"];
+[location setState:@"Colorado"];
+[location setCountryOrRegion:@"USA"];
+[location setPostalCode:@"80525"];
 [institution setLocation:location];
-[institution setWebUrl:@"webUrl-value"];
 [educationalActivity setInstitution:institution];
-MSGraphEducationalActivityDetail *program = [[MSGraphEducationalActivityDetail alloc] init];
-[program setAbbreviation:@"abbreviation-value"];
-[program setActivities:@"activities-value"];
-[program setAwards:@"awards-value"];
-[program setDescription:@"description-value"];
-[program setDisplayName:@"displayName-value"];
-[program setFieldsOfStudy:@"fieldsOfStudy-value"];
-[program setGrade:@"grade-value"];
-[program setNotes:@"notes-value"];
-[program setWebUrl:@"webUrl-value"];
-[educationalActivity setProgram:program];
-[educationalActivity setStartMonthYear:@"datetime-value"];
 
 NSError *error;
 NSData *educationalActivityData = [educationalActivity getSerializedDataWithError:&error];

@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 075cb850d37ef4834b2b3c0398e5c74190c983ac
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 5691c9e20a66a4b6a768aeee1d9dd53814f9d1ae
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37997815"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821193"
 ---
 ```objc
 
@@ -18,11 +18,11 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphPersonInterest *personInterest = [[MSGraphPersonInterest alloc] init];
 NSMutableArray *categoriesList = [[NSMutableArray alloc] init];
-[categoriesList addObject: @"categories-value"];
+[categoriesList addObject: @"Sports"];
 [personInterest setCategories:categoriesList];
-[personInterest setDescription:@"description-value"];
-[personInterest setDisplayName:@"displayName-value"];
-[personInterest setWebUrl:@"webUrl-value"];
+[personInterest setDescription:@"World's greatest football club"];
+[personInterest setDisplayName:@"Chelsea FC"];
+[personInterest setWebUrl:@"https://www.chelseafc.com"];
 
 NSError *error;
 NSData *personInterestData = [personInterest getSerializedDataWithError:&error];

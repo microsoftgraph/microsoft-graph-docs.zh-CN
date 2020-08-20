@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 741cba308db633f869781a7f7192aaebeff388b9
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 73dbea28fee7c6d18a74ae05c35597959e715ac8
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37996470"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821200"
 ---
 ```objc
 
@@ -17,14 +17,12 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphWebAccount *webAccount = [[MSGraphWebAccount alloc] init];
-[webAccount setDescription:@"description-value"];
-[webAccount setUserId:@"userId-value"];
+[webAccount setDescription:@"My Github contributions!"];
+[webAccount setUserId:@"innocenty.popov"];
 MSGraphServiceInformation *service = [[MSGraphServiceInformation alloc] init];
-[service setName:@"name-value"];
-[service setWebUrl:@"webUrl-value"];
+[service setName:@"GitHub"];
+[service setWebUrl:@"https://github.com"];
 [webAccount setService:service];
-[webAccount setStatusMessage:@"statusMessage-value"];
-[webAccount setWebUrl:@"webUrl-value"];
 
 NSError *error;
 NSData *webAccountData = [webAccount getSerializedDataWithError:&error];

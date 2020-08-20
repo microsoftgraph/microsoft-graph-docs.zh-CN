@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 372ed6eca766719c4e22ad51d2cc0daeaeed95f2
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: e05ff9720cde26e0d040f794fddea942a714a272
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37998241"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821014"
 ---
 ```objc
 
@@ -17,9 +17,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphLanguageProficiency *languageProficiency = [[MSGraphLanguageProficiency alloc] init];
-[languageProficiency setDisplayName:@"displayName-value"];
-[languageProficiency setTag:@"tag-value"];
-[languageProficiency setProficiency: [MSGraphLanguageProficiencyLevel elementary]];
+[languageProficiency setAllowedAudiences: [MSGraphAllowedAudiences organization]];
 
 NSError *error;
 NSData *languageProficiencyData = [languageProficiency getSerializedDataWithError:&error];

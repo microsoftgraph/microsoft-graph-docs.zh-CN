@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 704e1a3d46b58fb1aaef41cce5e28d85c65dafdf
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 484ece03f2c0dc57e0d7f4b18cc4b77d2ab1f33e
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "37997760"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821258"
 ---
 ```objc
 
@@ -18,11 +18,14 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphSkillProficiency *skillProficiency = [[MSGraphSkillProficiency alloc] init];
 NSMutableArray *categoriesList = [[NSMutableArray alloc] init];
-[categoriesList addObject: @"categories-value"];
+[categoriesList addObject: @"Professional"];
 [skillProficiency setCategories:categoriesList];
-[skillProficiency setDisplayName:@"displayName-value"];
-[skillProficiency setProficiency: [MSGraphSkillProficiencyLevel elementary]];
-[skillProficiency setWebUrl:@"webUrl-value"];
+[skillProficiency setAllowedAudiences: [MSGraphAllowedAudiences organization]];
+[skillProficiency setDisplayName:@"API Design"];
+[skillProficiency setProficiency: [MSGraphSkillProficiencyLevel generalProfessional]];
+NSMutableArray *collaborationTagsList = [[NSMutableArray alloc] init];
+[collaborationTagsList addObject: @"ableToMentor"];
+[skillProficiency setCollaborationTags:collaborationTagsList];
 
 NSError *error;
 NSData *skillProficiencyData = [skillProficiency getSerializedDataWithError:&error];

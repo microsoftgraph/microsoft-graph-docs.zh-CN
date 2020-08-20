@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 05f714d65c523a681a8ec3a0cceab16fdaef4ff3
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 25ad0564c39f150301335e315afc8b4cd34144b5
+ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "37996580"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46821149"
 ---
 ```csharp
 
@@ -14,7 +14,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var personAnniversary = new PersonAnniversary
 {
     Type = AnniversaryType.Birthday,
-    Date = new Date(1900,1,1)
+    Date = new Date(1980,1,8)
 };
 
 await graphClient.Me.Profile.Anniversaries
