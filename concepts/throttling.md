@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: a38c6c77daa5a9a6adab469681b4f7b0c4291e32
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: f00ef6f5c45736724f145e036a7fa78abdd107df
+ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598012"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46811845"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -33,6 +33,30 @@ ms.locfileid: "46598012"
 
 - 来自租户中所有应用程序的请求太多。
 - 来自所有租户中特定应用程序的请求太多。
+
+## <a name="sample-response"></a>示例响应
+
+每当超出限制阈值时，Microsoft Graph 都会提供与此类似的响应。
+
+```http
+HTTP/1.1 429 Too Many Requests
+Content-Type: application/json
+Retry-After: 2.128
+
+{
+  "error": {
+    "code": "TooManyRequests",
+    "innerError": {
+      "code": "429",
+      "date": "2020-08-18T12:51:51",
+      "message": "Please retry after",
+      "request-id": "94fb3b52-452a-4535-a601-69e0a90e3aa2",
+      "status": "429"
+    },
+    "message": "Please retry again laster."
+  }
+}
+```
 
 ## <a name="best-practices-to-handle-throttling"></a>处理限制的最佳实践
 
@@ -63,6 +87,12 @@ ms.locfileid: "46598012"
 
 >[!NOTE]
 >[大规模发现文件和检测更改的最佳做法](https://docs.microsoft.com/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online)详细介绍最佳做法。
+
+## <a name="throttling-and-batching"></a>限制和批处理
+
+[JSON 批处理](./json-batching.md)使你能够通过将多个请求合并为单个 JSON 对象来优化应用程序。 批次中的请求将根据限制进行单独评估，如果任何请求超出限制，则它将失败，并出现 `status` `429` 以及类似于上述内容的错误。 批次本身失败，状态代码为 `424`（失败的相关性）。 多个请求可能会在单个批次中受到限制。 应使用 JSON 内容的 `retry-after` 响应标头中提供的值，尝试批次中每个失败的请求。 你可以在最长 `retry-after` 值之后重试新批次中所有失败的请求。
+
+如果在受限制请求未经批处理时，SDK 自动重试这些请求，则不会自动重试属于批次的受限制请求。
 
 ## <a name="service-specific-limits"></a>服务特定限制
 
