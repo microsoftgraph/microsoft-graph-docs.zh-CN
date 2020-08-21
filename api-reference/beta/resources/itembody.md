@@ -5,16 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
 author: grangeryy
-ms.openlocfilehash: 7a500e212cf4533559bdff608adc0fa23f239860
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2c224e4e9db87f8da98ef34296cc193eb2fb564c
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523084"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849756"
 ---
 # <a name="itembody-resource-type"></a>itemBody 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,6 @@ ms.locfileid: "42523084"
   "content": "string",
   "contentType": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

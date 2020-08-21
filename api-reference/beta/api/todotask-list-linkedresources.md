@@ -1,0 +1,94 @@
+---
+title: 列出 linkedResources
+description: 从 linkedResources 导航属性中获取 linkedResources。
+author: avijityadav
+localization_priority: Normal
+ms.prod: outlook
+doc_type: apiPageType
+ms.openlocfilehash: 34edae5bbaaed3484e913d16963c0650864d7e7f
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849891"
+---
+# <a name="list-linkedresources"></a>列出 linkedResources
+命名空间：microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+从 linkedResources 导航属性中获取 linkedResources。
+
+## <a name="permissions"></a>权限
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+|权限类型|权限（从最高特权到最低特权）|
+|:---|:---|
+|委派（工作或学校帐户）|Tasks.ReadWrite|
+|委派（个人 Microsoft 帐户）|Tasks.ReadWrite|
+|应用程序|不支持。|
+
+## <a name="http-request"></a>HTTP 请求
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /me/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources
+GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources
+```
+
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+
+## <a name="request-headers"></a>请求标头
+|名称|说明|
+|:---|:---|
+|Authorization|Bearer {token}。必需。|
+
+## <a name="request-body"></a>请求正文
+请勿提供此方法的请求正文。
+
+## <a name="response"></a>响应
+
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [linkedResource](../resources/linkedresource.md) 对象集合。
+
+## <a name="examples"></a>示例
+
+### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["dfsdc-f9dfdfs-dcsda9", "e2dc-f9cce2-dce29"],
+  "name": "get_linkedresource"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources
+```
+
+
+### <a name="response"></a>响应
+**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "collection(microsoft.graph.linkedResource)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.linkedResource",
+      "id": "f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9",
+      "webUrl": "http:://microsoft.com",
+      "applicationName": "Microsoft",
+      "displayName": "Microsoft",
+      "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
+    }
+  ]
+}
+```
+

@@ -5,18 +5,21 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: adcb583df01aa25d0927e595b37fe09d56b3fbbb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 227de23959539187159abd92fcb1e1588419c9d4
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43408384"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849273"
 ---
 # <a name="get-outlooktaskgroup"></a>获取 outlookTaskGroup
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 获取指定的 Outlook 任务组的属性和关系。
 ## <a name="permissions"></a>权限
@@ -47,7 +50,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[outlookTaskGroup](../resources/outlooktaskgroup.md)对象。
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和 outlookTaskGroup](../resources/outlooktaskgroup.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

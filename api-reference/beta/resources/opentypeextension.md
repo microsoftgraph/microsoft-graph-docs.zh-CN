@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: resourcePageType
 ms.prod: extensions
-ms.openlocfilehash: 297055a6edb4eb4d094406e03b9e4136f1df68c4
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 1bba16d8207e6e31223ff562d016efdba01b77d0
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44864103"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849168"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension 资源类型（开放扩展）
 
@@ -37,6 +37,8 @@ ms.locfileid: "44864103"
 | [组织](organization.md) | GA |
 | [个人联系人](contact.md) | GA |
 | [用户](user.md) | GA |
+| [Task](todotask.md)  | 仅供预览 ||
+| [任务列表](todotasklist.md)  | 仅供预览 ||
 
 ## <a name="outlook-specific-considerations"></a>Outlook 特定注意事项
 
@@ -73,7 +75,7 @@ Outlook 资源（事件、邮件或个人联系人）上存在每个开放扩展
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | Description |
+| 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |extensionName|String|开放类型数据扩展的唯一文本标识符。必需。|
 |id|String| 连接具有 **extensionName** 扩展类型的完全限定的标识符 。只读。|
@@ -86,8 +88,7 @@ Outlook 资源（事件、邮件或个人联系人）上存在每个开放扩展
 
 | 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
-|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)（在现有资源实例中）或包含 openTypeExtension 对象的新[联系人](../resources/contact.md)、[事件](../resources/event.md)或[邮件](../resources/message.md)。 | 在现有的或新的资源实例中创建 openTypeExtension 对象。|
-|[获取](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |读取 openTypeExtension 对象的属性和关系。|
+|[创建](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (现有资源实例) [或包含](contact.md)openTypeExtension 对象的新联系人[、event](event.md) [、message](message.md) [、post](post.md) [、todoTask](todotask.md)或[todoTaskList。](todotasklist.md) | 在现有的或新的资源实例中创建 openTypeExtension 对象。||[获取](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |读取 openTypeExtension 对象的属性和关系。|
 |[更新](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |更新 openTypeExtension 对象。 |
 |[删除](../api/opentypeextension-delete.md) | 无 |删除 openTypeExtension 对象。 |
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9b53fc7c6e5dbbb4dd705bf41a2b6c4e4a8ceee6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e5dd844356b83005dd8df9d7e9b4ce52c8baa4e3
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467986"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849219"
 ---
 # <a name="list-taskgroups"></a>列出 taskGroups
 
@@ -18,9 +18,12 @@ ms.locfileid: "43467986"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
+
 获取用户邮箱中的所有 Outlook 任务组。
 
-响应始终包括默认任务组`My Tasks`以及邮箱中已创建的任何其他任务组。
+响应始终包括默认任务组 `My Tasks` ，以及已在邮箱中创建的任何其他任务组。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -49,7 +52,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[outlookTaskGroup](../resources/outlooktaskgroup.md)对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码 [和 outlookTaskGroup](../resources/outlooktaskgroup.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f4c08947189c4f43b478dfab6426291973daf241
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9dd41fcab7995c860e6ea2634a8b59185ba99e8d
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468112"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849380"
 ---
 # <a name="list-taskfolders"></a>列出 taskFolders
 
@@ -18,7 +18,10 @@ ms.locfileid: "43468112"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取特定[outlookTaskGroup](../resources/outlooktaskgroup.md)中的 Outlook 任务文件夹。
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
+
+获取特定 [outlookTaskGroup](../resources/outlooktaskgroup.md)中的 Outlook 任务文件夹。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,7 +50,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[outlookTaskFolder](../resources/outlooktaskfolder.md)对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和 outlookTaskFolder](../resources/outlooktaskfolder.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

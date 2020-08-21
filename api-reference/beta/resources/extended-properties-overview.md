@@ -5,18 +5,20 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: bafb7d1c0304dbc26f895e8c4ddb15bf088b21b3
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 7ac0a2c255b0327614936d6b97c7afe5f2c5088d
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896859"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849441"
 ---
 # <a name="outlook-extended-properties-overview"></a>Outlook 扩展属性概述
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
 扩展属性允许存储自定义数据，当 Outlook MAPI 属性_尚未在 Microsoft Graph API 元数据中公开_时，扩展属性专门用作应用访问这些属性的自定义数据的回退机制。可以使用扩展属性 REST API 在以下用户资源中存储或获取此类自定义数据：
 
@@ -29,7 +31,7 @@ ms.locfileid: "44896859"
 - [Outlook 任务](../resources/outlooktask.md)
 - [Outlook 任务文件夹](../resources/outlooktaskfolder.md)
 
-或者，在下面的 Microsoft 365 组资源中：
+或者，在以下 Microsoft 365 组资源中：
 
 - 组 [事件](../resources/event.md)
 - 组 [日历](../resources/calendar.md)

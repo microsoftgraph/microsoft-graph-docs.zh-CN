@@ -1,16 +1,16 @@
 ---
 title: 创建 outlookTaskFolder
-description: 在用户邮箱的默认任务组（`My Tasks`）中创建一个任务文件夹。
+description: 在用户邮箱的默认任务组 `My Tasks` () 任务文件夹。
 localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 63662dffac9cb36031efd11cac76eb8bd23b0da1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7f1c1767f125da2745837addb7852805630f5231
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456198"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849315"
 ---
 # <a name="create-outlooktaskfolder"></a>创建 outlookTaskFolder
 
@@ -18,7 +18,10 @@ ms.locfileid: "43456198"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在用户邮箱的默认任务组（`My Tasks`）中创建一个任务文件夹。
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
+
+在用户邮箱的默认任务组 `My Tasks` () 任务文件夹。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -41,15 +44,15 @@ POST /users/{id|userPrincipalName}/outlook/taskFolders
 | Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[outlookTaskFolder](../resources/outlooktaskfolder.md)对象的 JSON 表示形式。
+在请求正文中，提供 [outlookTaskFolder](../resources/outlooktaskfolder.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`201 Created`响应正文中返回响应代码和[outlookTaskFolder](../resources/outlooktaskfolder.md)对象。
+如果成功，此方法在 `201 Created` 响应正文中 [返回响应代码和 outlookTaskFolder](../resources/outlooktaskfolder.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面的示例在用户邮箱的默认任务组（`My Tasks`）中创建名为 "志愿者" 的任务文件夹。
+下面的示例在用户邮箱的默认任务组列创建名为"Volunteer" () `My Tasks` 任务文件夹。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -79,7 +82,7 @@ Content-length: 60
 
 ---
 
-在请求正文中，提供[outlookTaskFolder](../resources/outlooktaskfolder.md)对象的 JSON 表示形式。
+在请求正文中，提供 [outlookTaskFolder](../resources/outlooktaskfolder.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {

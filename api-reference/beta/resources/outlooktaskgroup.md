@@ -1,16 +1,16 @@
 ---
 title: outlookTaskGroup 资源类型
-description: '一组文件夹（outlookTaskFolder），其中包含 Outlook 任务（outlookTask 对象的集合）。 '
+description: 'outlookTaskFolder (outlookTaskFolder) 包含 outlookTask 对象 (集合中的一组) 。 '
 author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 8018863ed7fd142b99e0008f860495a4d13d4e01
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 112ffab7699a2c8812311ba0c21c2b0e47efff70
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463208"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849786"
 ---
 # <a name="outlooktaskgroup-resource-type"></a>outlookTaskGroup 资源类型
 
@@ -18,9 +18,12 @@ ms.locfileid: "43463208"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-一组文件夹（[outlookTaskFolder](outlooktaskfolder.md)），其中包含 Outlook 任务（ [outlookTask](outlooktask.md)对象的集合）。 
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
-在 Outlook 中，有一个不能重`My Tasks`命名或删除的默认任务组。 不过，您可以创建其他任务组。 
+
+[outlookTaskFolder (一组](outlooktaskfolder.md)) [outlookTaskfolder](outlooktask.md)对象 (outlookTask 对象的集合) 。 
+
+在 Outlook 中，有一个您无法 `My Tasks` 重命名或删除的默认任务组。 但是，你可以创建其他任务组。 
 
 
 ## <a name="methods"></a>方法
@@ -28,8 +31,8 @@ ms.locfileid: "43463208"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 outlookTaskGroup](../api/outlooktaskgroup-get.md) | [outlookTaskGroup](outlooktaskgroup.md) |获取指定的 Outlook 任务组的属性和关系。|
-|[创建 outlookTaskFolder](../api/outlooktaskgroup-post-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md)| 创建一个 Outlook 任务文件夹。|
-|[列出 taskFolders](../api/outlooktaskgroup-list-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md)集合| 获取 Outlook 任务文件夹的集合。|
+|[创建 outlookTaskFolder](../api/outlooktaskgroup-post-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md)| 创建 Outlook 任务文件夹。|
+|[列出 taskFolders](../api/outlooktaskgroup-list-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md) 集合| 获取 Outlook 任务文件夹的集合。|
 |[更新](../api/outlooktaskgroup-update.md) | [outlookTaskGroup](outlooktaskgroup.md)  |更新 Outlook 任务组的可写属性。 |
 |[删除](../api/outlooktaskgroup-delete.md) | 无 |删除指定的 Outlook 任务组。 |
 
@@ -39,13 +42,13 @@ ms.locfileid: "43463208"
 |changeKey|String|任务组的版本。|
 |groupKey|Edm.Guid|任务组的唯一 GUID 标识符。|
 |id|String|任务组的唯一字符串标识符。 只读。|
-|isDefaultGroup|布尔值|如此如果任务组是默认任务组。|
-|name|字符串|任务组的名称。|
+|isDefaultGroup|Boolean|如此 如果任务组是默认任务组。|
+|name|String|任务组的名称。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|taskFolders|[outlookTaskFolder](outlooktaskfolder.md)集合| 任务组中的任务文件夹的集合。 只读。 可为 Null。|
+|taskFolders|[outlookTaskFolder](outlooktaskfolder.md) 集合| 任务组中的任务文件夹集合。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

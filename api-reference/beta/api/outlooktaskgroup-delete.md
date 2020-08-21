@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a064930ea16fba8d86203a1c7f03fbb25f8a87d2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fd866a3b57a159e53c6e288ba6f8a70a097877f6
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463065"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849392"
 ---
 # <a name="delete-outlooktaskgroup"></a>删除 outlookTaskGroup
 
@@ -18,7 +18,10 @@ ms.locfileid: "43463065"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除指定的[outlookTaskGroup](../resources/outlooktaskgroup.md)。
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
+
+删除指定的 [outlookTaskGroup](../resources/outlooktaskgroup.md)。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: outlook
 author: svpsiva
-ms.openlocfilehash: b97cbdbcb63b396fe5aeea31f33593a6145cea25
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6af7e877c56b953de6c350f9c8c202df47ad1cde
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43367781"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849175"
 ---
 # <a name="delete-attachment"></a>删除附件
 
@@ -18,16 +18,18 @@ ms.locfileid: "43367781"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除用户日历[事件](../resources/event.md)、[邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或[帖子](../resources/post.md)中的附件。
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
+
+从用户日历事件、[邮件、Outlook](../resources/event.md)[message](../resources/message.md)任务[或帖子](../resources/outlooktask.md)中删除[附件](../resources/post.md)。
 
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-* 如果访问邮件中的附件： Mail. ReadWrite
-* 如果访问事件中的附件：日历. 读写
-* 如果访问 Outlook 任务中的附件： Tasks. ReadWrite
-* 如果访问组帖子中的附件： Group. ReadWrite. All
+* 如果访问邮件中的附件：Mail.ReadWrite
+* 如果访问事件中的附件：Calendars.ReadWrite
+* 如果访问 Outlook 任务中的附件：Tasks.ReadWrite
+* 如果访问组帖子中的附件：Group.ReadWrite.All
 
 <!--
 * If accessing attachments in Group Events or Posts: Group.ReadWrite.All
@@ -45,7 +47,7 @@ DELETE /me/calendar/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
-属于用户的指定[日历](../resources/calendar.md)中的[事件](../resources/event.md)的附件。
+指定日历 [中](../resources/event.md) 属于 [该用户的](../resources/calendar.md) 事件附件。
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendars/{id}/events/{id}/attachments/{id}
@@ -95,7 +97,7 @@ DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-[Outlook 任务](../resources/outlooktask.md)的附件。
+Outlook 任务的 [附件](../resources/outlooktask.md)。
 <!-- { "blockType": "ignored" } -->
 
 ```http

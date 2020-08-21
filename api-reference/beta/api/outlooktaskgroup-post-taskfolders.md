@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 05a0c3052114bcc1817a43f8476b4214da05ee67
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a058c8289efc384416937d144ae35f6379214609
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468097"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849217"
 ---
 # <a name="create-outlooktaskfolder"></a>创建 outlookTaskFolder
 
@@ -18,7 +18,10 @@ ms.locfileid: "43468097"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的[outlookTaskGroup](../resources/outlooktaskgroup.md)下创建 Outlook 任务文件夹。
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
+
+在指定的 [outlookTaskGroup](../resources/outlooktaskgroup.md)下创建 Outlook 任务文件夹。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,15 +43,15 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 | Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[outlookTaskFolder](../resources/outlooktaskfolder.md)对象的 JSON 表示形式。
+在请求正文中，提供 [outlookTaskFolder](../resources/outlooktaskfolder.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`201 Created`响应正文中返回响应代码和[outlookTaskFolder](../resources/outlooktaskfolder.md)对象。
+如果成功，此方法在 `201 Created` 响应正文中 [返回响应代码和 outlookTaskFolder](../resources/outlooktaskfolder.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面的示例创建一个在指定任务`Cooking`组中调用的任务文件夹。
+以下示例创建一个在指定的任务组 `Cooking` 中调用的任务文件夹。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -70,7 +73,7 @@ Content-length: 131
 
 ---
 
-在请求正文中，提供[outlookTaskFolder](../resources/outlooktaskfolder.md)对象的 JSON 表示形式。
+在请求正文中，提供 [outlookTaskFolder](../resources/outlooktaskfolder.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {

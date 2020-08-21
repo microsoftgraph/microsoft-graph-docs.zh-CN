@@ -5,18 +5,21 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7ef91997e37e356de5b6bad59226b6d316c95c87
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 689a377d611386c2ef24f762acddbd0543968417
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467993"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849350"
 ---
 # <a name="list-taskfolders"></a>列出 taskFolders
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 获取用户邮箱中的所有 Outlook 任务文件夹。
 ## <a name="permissions"></a>权限
@@ -47,7 +50,7 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[outlookTaskFolder](../resources/outlooktaskfolder.md)对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和 outlookTaskFolder](../resources/outlooktaskfolder.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

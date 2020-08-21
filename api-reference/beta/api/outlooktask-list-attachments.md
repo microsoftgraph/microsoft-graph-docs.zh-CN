@@ -1,16 +1,16 @@
 ---
 title: 列出附件
-description: 获取附加到 Outlook 任务的附件对象的列表。
+description: 获取附加到 Outlook 任务的 attachment 对象列表。
 author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 13c989da0a0553f3991abf9fd0aa8fd4159d9da6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 301db2de06a6f96e23379f2487b5c9002546582d
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413750"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849693"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -18,7 +18,10 @@ ms.locfileid: "43413750"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取附加到 Outlook 任务的[附件](../resources/attachment.md)对象的列表。
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
+
+获取附加 [到](../resources/attachment.md) Outlook 任务的 attachment 对象列表。
 
 ## <a name="permissions"></a>权限
 
@@ -55,7 +58,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[附件](../resources/attachment.md)对象集合。
+如果成功，此方法在响应 `200 OK` 正文中返回响应 [代码和](../resources/attachment.md) 附件对象集合。
 
 ## <a name="example"></a>示例
 

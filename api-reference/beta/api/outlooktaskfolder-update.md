@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ca2b8ec85c944ac1eea383e107d363525d44ed31
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 948f633ae43d32a16322e60ad2cdf497642af828
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43389582"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849735"
 ---
 # <a name="update-outlooktaskfolder"></a>更新 outlooktaskfolder
 
@@ -18,9 +18,12 @@ ms.locfileid: "43389582"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
+
 更新 Outlook 任务文件夹的可写属性。
 
-无法更改默认任务文件夹 "任务" 的 "**名称**" 属性值。
+[！任务 **"** 的默认任务文件夹的名称属性值不能更改。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,14 +51,14 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|name|字符串|任务文件夹的名称。|
+|name|String|任务文件夹的名称。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[outlookTaskFolder](../resources/outlooktaskfolder.md)对象。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码和更新的 [outlookTaskFolder](../resources/outlooktaskfolder.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面的示例将指定的任务文件夹的名称更改为`Charity work`。
+以下示例将指定的任务文件夹的名称更改为 `Charity work` .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

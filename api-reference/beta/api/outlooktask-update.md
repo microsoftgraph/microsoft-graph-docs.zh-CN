@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cc311b0e95e33dd189908d7bbec8fa9d57fd0282
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 55aa1216a2f1d0f2aac5257063525dadac98d3f6
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413592"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849679"
 ---
 # <a name="update-outlooktask"></a>更新 outlooktask
 
@@ -18,11 +18,14 @@ ms.locfileid: "43413592"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
+
 更改 Outlook 任务的可写属性。
 
-**CompletedDateTime**属性可以由**完整**操作进行设置，也可以通过修补程序操作进行显式设置。 如果使用修补程序设置**completedDateTime**，请确保同时将**状态**设置为`completed` 。
+**completedDateTime**属性可以由整个**操作设置**，也可以由 PATCH 操作显式设置。 如果您使用 PATCH 设置 **completedDateTime，** 请确保将 **状态也** `completed` 设置为 TRUE。
 
-默认情况下，此操作（以及 POST、GET 和[complete](../api/outlooktask-complete.md)任务操作）返回 UTC 格式的与日期相关的属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
+默认情况下，此操作会 (POST、GET 和 [完成](../api/outlooktask-complete.md) 任务操作) 返回 UTC 的与日期相关的属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
 
 ## <a name="permissions"></a>权限
 
@@ -48,7 +51,7 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 | 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
-| Prefer: outlook.timezone | 指定响应中时间属性的时区（如果未指定此标头，则采用 UTC 格式表示）。 可选。|
+| Prefer: outlook.timezone | 指定响应中的时区（如果未指定此标头，则该属性为 UTC 时间）。 可选。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -66,7 +69,7 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 |importance|string|事件的重要性。 可取值为：`low`、`normal`、`high`。|
 |isReminderOn|Boolean|如果设置警报以提醒用户有任务，则设置为 true。|
 |lastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|所有者|字符串|任务创建者的姓名。|
+|所有者|String|任务创建者的姓名。|
 |parentFolderId|String|任务的父文件夹的唯一标识符。|
 |定期|[patternedRecurrence](../resources/patternedrecurrence.md)|任务的定期模式。|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|提醒警报发出任务发生提醒的日期和时间。|
@@ -77,13 +80,13 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[outlookTask](../resources/outlooktask.md)对象。
+如果成功，此方法在响应 `200 OK` 正文中返回响应代码 [和更新的 outlookTask](../resources/outlooktask.md) 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-下面的示例修改**dueDateTime**属性，并使用`Prefer: outlook.timezone`头指定表示以东部标准时间（EST）响应中与日期相关的属性。
+以下示例修改 **dueDateTime 属性** ，并使用标头指定以东非标准时间或 EST 格式表示 `Prefer: outlook.timezone` (日期相关的) 。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

@@ -1,16 +1,16 @@
 ---
 title: 创建开放扩展
-description: 创建开放扩展（openTypeExtension 对象）并添加自定义属性
+description: 通过 openTypeExtension (创建开放) 并添加自定义属性
 localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: d6c06370494e9e89fa77d40a0889819f47f21d2c
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 4331ae8aa655ac0b250f809eeec682451a208026
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863367"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849623"
 ---
 # <a name="create-open-extension"></a>创建开放扩展
 
@@ -18,7 +18,7 @@ ms.locfileid: "44863367"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建开放扩展（[openTypeExtension](../resources/opentypeextension.md)对象），并在新的或现有的受支持的资源实例中添加自定义属性。
+在打开 [openTypeExtension](../resources/opentypeextension.md) 对象 (文件创建一个开) ，并在受支持资源的新实例或现有实例中添加自定义属性。
 
 > **请注意：** 如果要在 Outlook 资源上创建开放扩展，请参阅 [openTypeExtension 资源类型](../resources/opentypeextension.md#outlook-specific-considerations)中的 **Outlook 特定注意事项**。
 
@@ -37,6 +37,8 @@ ms.locfileid: "44863367"
 | [组织](../resources/organization.md) | Organization.ReadWrite.All | 不支持 | Organization.ReadWrite.All |
 | [个人联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [用户](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
+| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,6 +53,8 @@ POST /users/{id|userPrincipalName}/messages
 POST /groups/{id}/events
 POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
+POST /users/{id|userPrincipalName}/todo/lists
+POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks
 ```
 
 >**请注意：** 此语法显示了一些创建受支持资源实例的常用方式。 可用来创建这些资源实例的所有其他 POST 语法均支持以类似的方式从中创建开放扩展。
@@ -73,6 +77,8 @@ POST /users/{id|userPrincipalName}/messages/{id}/extensions
 POST /organization/{id}/extensions
 POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
+POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks/{id}/extensions
+POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 ```
 
 >**请注意：** 以上语法显示一些标识资源实例的常见方法，以便在其中创建一个扩展。 可用来标识这些资源实例的所有其他语法均支持以类似的方式在其中创建开放扩展。
@@ -94,7 +100,7 @@ POST /users/{id|userPrincipalName}/extensions
 
 ## <a name="request-body"></a>请求正文
 
-提供具有以下必需的名称-值对和任何其他自定义数据的[openTypeExtension](../resources/opentypeextension.md)的 JSON 正文。JSON 有效负载中的数据可以是基元类型，也可以是基元类型的数组。
+提供 [openTypeExtension 的](../resources/opentypeextension.md)JSON 正文，具有以下所需的名称-值对和其他任意自定义数据。 JSON 负载中的数据可以是基元类型或基元类型数组。
 
 | 名称       | 值 |
 |:---------------|:----------|
@@ -186,7 +192,7 @@ Content-Type: application/json
 
 下面是第一个示例的响应。响应正文包括新邮件的属性以及新扩展的以下属性：
 
-- 具有完全限定的名称 **** 的 `microsoft.graph.openTypeExtension.Com.Contoso.Referral` 属性。
+- 具有完全限定的名称 `microsoft.graph.openTypeExtension.Com.Contoso.Referral` 的 **Id** 属性。
 - 请求中指定的默认属性 **extensionName**。
 - 请求中指定的作为 3 个自定义属性存储的自定义数据。
 
