@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: ecf122caa0a402d8a804efa360e71e53b6493da7
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: b0d9992635e8523ab5fc652a9d58bfe138192afc
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790747"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849322"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1620,17 +1620,17 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Tasks.Read_ | 读取用户任务（预览版） | 允许应用读取用户任务。 | 否 | 是 |
+| _Tasks.Read_ | 读取用户的任务和任务列表（预览版） | 允许该应用读取已登录用户的任务和任务列表，包括与用户共享的任何内容。 不包括创建、删除或更新任何内容的权限。 | 否 | 是 |
 | _Tasks.Read.Shared_ | 读取用户任务和共享任务（预览版） | 允许应用读取用户有权访问的任务，包括用户个人任务和共享任务。 | 否 | 否 |
-| _Tasks.ReadWrite_ | 创建、读取、更新和删除用户任务和容器（预览版） | 允许应用创建、读取、更新和删除分配给已登录用户或与已登录用户共享的任务和容器（以及其中的任务）。| 否 | 是 |
+| _Tasks.ReadWrite_ | 创建、读取、更新和删除用户的任务和任务列表（预览版） | 允许该应用创建、读取、更新和删除已登录用户的任务和任务列表，包括与用户共享的任何内容。 | 否 | 是 |
 | _Tasks.ReadWrite.Shared_ | 读取和写入用户任务和共享任务（预览版） | 允许应用创建、读取、更新和删除用户有权访问的任务，包括用户个人任务和共享任务。 | 否 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
 无。
 
-### <a name="remarks"></a>注解
-_任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 任务的访问权限由[_组_权限](#group-permissions)控制。
+### <a name="remarks"></a>说明
+_任务_权限用于控制对微软待办任务和 Outlook 任务的访问权限（已弃用）。 Microsoft Planner 任务的访问权限由[_组_权限](#group-permissions)控制。
 
 目前仅工作或学校帐户支持_共享_权限。即使具有_共享_权限，如果未授予拥有共享内容的用户在文件夹内修改内容访问用户权限，读取和写入仍会失败。
 

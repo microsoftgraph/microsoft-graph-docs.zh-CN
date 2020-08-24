@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 2dfeaa8ba656adac608de31028772f8b5665f4f0
-ms.sourcegitcommit: 2e6fb1c0fef8cb3af1a72c115aa54902c71c99f5
+ms.openlocfilehash: 52b4ddad66eff17be04fcee612a839682f086660
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46658226"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849329"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -41,6 +41,10 @@ ms.locfileid: "46658226"
 
 ### <a name="teamwork"></a>团队合作
 获取[在聊天消息中托管的内容](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta)（如图像或代码段）。 请参阅[示例](/graph/api/chatmessagehostedcontent-get?view=graph-rest-beta&branch=master#example-2-get-hosted-content-bytes-for-an-image)，获取图像的内容字节。
+
+### <a name="to-do-tasks"></a>待办任务
+- 针对[微软待办](todo-concept-overview.md)推出了一组新 API，允许应用用户跨 Microsoft 365 客户端应用组织和跟踪个人任务。 有关详细信息，请参阅[使用微软待办 API](/graph/api/resources/todo-overview?view=graph-rest-beta)。
+- 弃用 [Outlook 任务 API](/graph/api/resources/outlooktask?view=graph-rest-beta)。
 
 ## <a name="july-2020-new-and-generally-available"></a>2020 年 7 月：新版本和正式版
 

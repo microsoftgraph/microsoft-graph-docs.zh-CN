@@ -4,12 +4,12 @@ description: '借助 Microsoft Graph，可以使用 REST API 和客户端库与 
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 7c083cc8c80d78c00988b547e2bc3cfe84008067
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: 9a6c46db31c8e9f85d494017e5ec00e430adc237
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524378"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849476"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
@@ -56,7 +56,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 | 笔记 | OneNote | 允许用户规划和组织观点及信息。 | [OneNote 笔记概述](integrate-with-onenote.md) |
 | 个人联系人 | Outlook | Web、移动和桌面设备上的联系人管理器。 它是 Microsoft 365 中 Outlook 消息传递通信中心的一部分，还允许用户管理电子邮件和安排会议。  | [Outlook 个人联系人概述](outlook-contacts-concept-overview.md) |
 | 工作簿和图表 | Excel | 允许用户使用 Excel 电子表格进行复杂计算、跟踪、分析和可视化数据，并生成专业报表。 | [Excel 工作簿和图表概述](excel-concept-overview.md) |
-
+| 微软待办任务（预览版） | 待办事项 | 让用户能够跨工作和生活管理个人任务。 它还与 Outlook、Teams、Planner 和 Cortana 集成，使其成为唯一存放 Microsoft 365 中用户个人任务的位置 | [微软待办任务概述](todo-concept-overview.md) |
 
 ## <a name="collaboration"></a>协作
 
@@ -76,7 +76,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 |:-----------|:--------------------|:-----------|:----------------|
 | 人员 | Azure AD、Outlook、SharePoint 等 | 获取有关人员的信息，该对象按与用户的相关程度进行排序，相关程度由用户的通信和协作模式以及业务关系决定。  | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
 | 个人资料（预览版） | 配置文件 | 提供存储和检索有关租户内人员的信息的轻型机制。 | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
-| 个人资料卡片自定义（预览版） | 个人资料卡片 | 为管理员提供了一种轻量级机制，用于自定义组织中 Microsoft 365 个人资料卡片表面上的内容。 | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
+| 个人资料卡片自定义（预览版） | 个人资料卡片 | 为管理员提供一种轻量级机制，以自定义组织中 Microsoft 365 个人资料卡上显示的内容。 | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
 | 文档见解  | Delve、OneDrive、Outlook、SharePoint | 使用高级分析和机器学习技术获取常用的文档，以及用户查看、修改或共享的文档。  | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md)  |
 | 分析（预览版） | MyAnalytics | 使用高级分析和机器学习技巧，提供了有关用户如何花费自己时间，以及用户与谁一起花费时间的见解。 此类数据可以帮助用户计划一天的日程安排，深入了解自己的不同工作模式，并帮助用户平衡工作和生活。  | [Microsoft Graph 中的人员和工作场所智能](social-intel-concept-overview.md) |
 

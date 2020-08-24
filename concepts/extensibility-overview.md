@@ -4,12 +4,12 @@ description: Microsoft Graph 提供单一 API 终结点，以便用户能够通�
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: e725b3951d40100a442f89bc2a4f5444c1ed2db0
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 61cd5227e495102a7ac957959cffffc104d85542
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42619101"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849105"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>使用扩展向资源添加自定义数据
 
@@ -40,6 +40,8 @@ Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求�
 | [组织](/graph/api/resources/organization?view=graph-rest-1.0) | GA | GA |
 | [个人联系人](/graph/api/resources/contact?view=graph-rest-1.0)| GA | GA |
 | [用户](/graph/api/resources/user?view=graph-rest-1.0) | GA | GA |
+| [任务](/graph/api/resources/todotask?view=graph-rest-beta) | 仅供预览 | 仅供预览 |
+| [任务列表](/graph/api/resources/todotasklist?view=graph-rest-beta) | 仅供预览 | 仅供预览 |
 
 使用工作或学校帐户登录时，可以对所有这些资源使用扩展。 此外，使用个人帐户登录时，可以对“**事件**”、“**帖子**”、“**组**”、“**邮件**”、“**联系人**”和“**用户**”资源使用扩展。
 
@@ -100,6 +102,8 @@ Microsoft Graph 提供两种类型的扩展。选择最适合应用程序需求�
 | 可用 | <ul><li>架构扩展可供任意租户中的所有应用使用。 </li><li>所有者应用将扩展设置为“可用”**** 后，任何应用只需将自定义数据添加到扩展中指定的资源类型实例即可（只要应用拥有对相应资源的权限）。 新建实例或更新现有实例时，应用可以分配自定义数据。 </li><li>只有所有者应用，才能使用增量更改更新扩展定义。 任何应用都无法删除这种状态下的扩展定义。 </li><li>所有者应用可以将架构扩展状态从“可用”**** 更改为“已弃用”****。</li></ul> |
 | 不推荐使用 | <ul><li>架构扩展定义不再可供读取或修改。 </li><li>任何应用都无法查看、更新、添加新属性或删除扩展。 </li><li>但是应用仍可读取、更新或删除现有扩展_属性值_。 </li></ul> |
 
+> **注意：** 其他开发人员从其他租户创建的架构扩展定义（标记为 `Available`）对所有开发人员可见（通过列出所有架构扩展）。 这不同于仅返回租户特定数据的其他 API。 另一方面，基于架构扩展定义创建的扩展数据是特定于租户的，并且只能由被显式授予权限的应用访问。 
+
 ### <a name="supported-property-data-types"></a>受支持的属性数据类型
 
 在架构扩展中定义属性时，支持以下数据类型：
@@ -153,6 +157,6 @@ Azure AD 支持类似的扩展类型，在一些 [directoryObject](/graph/api/re
 
 ## <a name="see-also"></a>另请参阅
 
-- [Office 365 域](https://technet.microsoft.com/library/office-365-domains.aspx)
+- [Microsoft 365 域](https://technet.microsoft.com/library/office-365-domains.aspx)
 
-- [添加并验证 Office 365 租户的域](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
+- [为 Microsoft 365 租户添加和验证域](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

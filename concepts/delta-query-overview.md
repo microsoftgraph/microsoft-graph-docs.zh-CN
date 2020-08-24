@@ -4,12 +4,12 @@ description: Delta 查询使应用程序能够发现新创建、更新或删除�
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 651fd2b0eb0ab34a1b9660aa7046da36be67f2a7
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: e0733e24ce07cd234f0d3ea9020f445d3fd8c0ea
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806755"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849308"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>使用 delta 查询跟踪 Microsoft Graph 数据变更
 
@@ -105,18 +105,18 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 ## <a name="supported-resources"></a>支持的资源
 
-目前，以下资源支持 delta 查询。
+目前，以下资源支持 delta 查询。 请注意，v1.0 中可用的某些资源的相应 **delta** 函数仍处于预览状态，如下所示。
 
 | **资源集合**                                        | **API**                                                                                                                                                                                          |
 |:---------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 应用程序                                                   | [application](/graph/api/resources/application) 资源的 [delta](/graph/api/application-delta) 函数                                                                                   |
-| 管理单元（预览版）                                 | [administrativeUnit](/graph/api/resources/administrativeunit) 资源的 [delta](/graph/api/administrativeunit-delta) 函数（预览版）                                                    |
-| 频道中的聊天消息（预览版）                           | [chatMessage](/graph/api/resources/chatmessage) 的 [delta](/graph/api/chatmessage-delta) 函数                                                                                            |
-| 类（预览版）                                              | [educationClass](/graph/api/resources/educationclass) 资源的 [delta](/graph/api/educationclass-delta) 函数（预览版）                                                                |
-| 目录对象（预览版）                                    | [directoryObject](/graph/api/resources/directoryobject) 资源的 [delta](/graph/api/directoryobject-delta) 函数（预览版）                                                             |
+| 管理单元（预览版）                         | [administrativeUnit](/graph/api/resources/administrativeunit) 资源的 [delta](/graph/api/administrativeunit-delta) 函数（预览版）                                                    |
+| 频道中的聊天消息                            | [chatMessage](/graph/api/resources/chatmessage) 的 [delta](/graph/api/chatmessage-delta) 函数（预览版）                                                                                            |
+| 课程                                               | [educationClass](/graph/api/resources/educationclass) 资源的 [delta](/graph/api/educationclass-delta) 函数（预览版）                                                                 |
+| 目录对象                                     | [directoryObject](/graph/api/resources/directoryobject) 资源的 [delta](/graph/api/directoryobject-delta) 函数（预览版）                                                              |
 | 目录角色                                                | [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) 资源的 [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) 函数                                     |
 | 驱动器项目\*                                                  | [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) 资源的 [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) 函数                                                 |
-| 教育用户（预览版）                                      | [educationUser](/graph/api/resources/educationuser) 资源的 [delta](/graph/api/educationuser-delta) 函数（预览版）                                                                   |
+| 教育用户                                       | [educationUser](/graph/api/resources/educationuser) 资源的 [delta](/graph/api/educationuser-delta) 函数（预览版）                                                                    |
 | 主日历的日历视图（日期范围）中的事件 | [事件](/graph/api/resources/event?view=graph-rest-1.0)资源的 [delta](/graph/api/event-delta?view=graph-rest-1.0) 函数                                                             |
 | 组                                                         | [组](/graph/api/resources/group?view=graph-rest-1.0)资源的 [delta](/graph/api/group-delta?view=graph-rest-1.0) 函数                                                             |
 | 邮件文件夹                                                   | [邮件文件夹](/graph/api/resources/mailfolder?view=graph-rest-1.0)资源的 [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) 函数                                              |
@@ -125,9 +125,11 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 | OAuth2PermissionGrants                               | [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant) 资源的 [delta](/graph/api/oauth2permissiongrant-delta) 函数 |
 | 私人联系人文件夹                                       | [联系人文件夹](/graph/api/resources/contactfolder?view=graph-rest-1.0)资源的 [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) 函数                                     |
 | 文件夹中的私人联系人                                  | [contact](/graph/api/resources/contact?view=graph-rest-1.0) 资源的 [delta](/graph/api/contact-delta?view=graph-rest-1.0) 函数                                                       |
-| Planner 项目\*\*（预览版）                                    | [plannerUser](/graph/api/resources/planneruser) 资源所有段的 [delta](/graph/api/planneruser-list-delta) 函数（预览版）                                                     |
-| 学校（预览版）                                              | [educationSchool](/graph/api/resources/educationschool) 资源的 [delta](/graph/api/educationschool-delta) 函数（预览版）                                                             |
+| Planner 项目\*\*（预览版）                                    | [plannerUser](/graph/api/resources/planneruser) 资源所有段的 [delta](/graph/api/planneruser-list-delta) 函数（预览版）                                                      |
+| 学校                                               | [educationSchool](/graph/api/resources/educationschool) 资源的 [delta](/graph/api/educationschool-delta) 函数（预览版）                                                              |
 | 服务主体                                   | [servicePrincipal](/graph/api/resources/serviceprincipal) 资源的 [delta](/graph/api/serviceprincipal-delta) 函数                                                          |
+| 任务列表中的任务（预览版）                                 | [todoTask](/graph/api/resources/todotask) 资源的 [delta](/graph/api/todotask-delta) 函数（预览版）                                                         |
+| 任务列表（预览版）                                           | [todoTaskList](/graph/api/resources/todotasklist) 资源的 [delta](/graph/api/todotasklist-delta) 函数（预览版）                                                         |
 | 用户                                                          | [用户](/graph/api/resources/user?view=graph-rest-1.0)资源的 [delta](/graph/api/user-delta?view=graph-rest-1.0) 函数                                                                |
 
 

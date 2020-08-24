@@ -4,12 +4,12 @@ description: '本文将通过一个示例逐步介绍如何使用*开放扩展*�
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 070480f7fbbc5fe3ab44509cb58476bcfb75bc3f
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: 81c1d77ecc2e57dec9ae18bf298d7390b71651dc
+ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757054"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46849091"
 ---
 # <a name="add-custom-data-to-users-using-open-extensions"></a>使用开放扩展向用户添加自定义数据
 本文将通过一个示例逐步介绍如何使用*开放扩展*。 
@@ -23,7 +23,7 @@ ms.locfileid: "46757054"
 3. 更改用户的漫游配置文件信息（开放扩展值）。
 4. 删除用户的漫游配置文件信息。
 
->**注意：** 本主题介绍如何在 **user** 资源上添加、读取、更新和删除开放扩展。**administrativeUnit**、**contact**、**device**、**event**、**group**、**group event、group post** 和 **organizaton** 资源类型也支持这些方法。  
+>**注意：** 本主题介绍如何在 **user** 资源上添加、读取、更新和删除开放扩展。**administrativeUnit**、**contact**、**device**、**event**、**group**、**organizaton**、**post**、**todoTask** 和 **todoTaskList** 资源类型也支持这些方法。  
 可以使用其中任一资源更新请求示例。 示例中显示的响应可能会被缩短以提高可读性。 
 
 ## <a name="1-add-roaming-profile-information"></a>1.添加漫游配置文件信息
