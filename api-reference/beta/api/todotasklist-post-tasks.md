@@ -5,19 +5,19 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 457a855f7746ce2ce4924f03e6a7862be4bce41f
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 5e8ddfc5fecc5c72cb3113294219f8a4cadf776e
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849878"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873132"
 ---
 # <a name="create-todotask"></a>创建 todoTask
-命名空间：microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的 [todoTaskList 中创建一个新任务对象](../resources/todotasklist.md)。
+在指定的 [todoTaskList](../resources/todotasklist.md)中创建新的任务对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
@@ -50,29 +50,31 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|任务的唯一标识符。 默认情况下，从一个列表移到另一个列表时，此值会更改。|
-|body|[itemBody](../resources/itembody.md)|通常包含有关任务的信息的任务正文。|
+|id|String|任务的唯一标识符。 默认情况下，在将项目从一个列表移动到另一个列表时，此值会发生更改。|
+|正文|[itemBody](../resources/itembody.md)|通常包含有关任务的信息的任务正文。|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|在指定时区内完成任务的日期。|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|要在指定时区内完成任务的日期。|
 |importance|importance|任务的重要性。 可取值为：`low`、`normal`、`high`。|
 |isReminderOn|Boolean|如果设置警报以提醒用户有任务，则设置为 true。|
-|recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|任务的定期模式。|
+|定期|[patternedRecurrence](../resources/patternedrecurrence.md)|任务的定期模式。|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|提醒警报发出任务发生提醒的日期和时间。|
-|status|taskStatus|指示任务的状态或进度。 可取值为：`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred`。|
-|title|String|任务的简要说明。|
-|createdDateTime|DateTimeOffset|任务的创建日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式。 例如，2020 年 1 月 1 日午夜 UTC 如下所示："2020-01-01T00：00：00Z"。|
-|lastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2020 年 1 月 1 日午夜 UTC 如下所示："2020-01-01T00：00：00Z"。|
-|bodyLastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2020 年 1 月 1 日午夜 UTC 如下所示："2020-01-01T00：00：00Z"。|
+|状态|taskStatus|指示任务的状态或进度。 可取值为：`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred`。|
+|title|String|任务的简短说明。|
+|createdDateTime|DateTimeOffset|任务的创建日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式。 例如，2020年1月1日午夜 UTC 将如下所示： "2020-01-01T00：00： 00Z"。|
+|lastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2020年1月1日午夜 UTC 将如下所示： "2020-01-01T00：00： 00Z"。|
+|bodyLastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2020年1月1日午夜 UTC 将如下所示： "2020-01-01T00：00： 00Z"。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回响应代码 [和 todoTask](../resources/todotask.md) 对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [todoTask](../resources/todotask.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtM"],
@@ -93,6 +95,12 @@ Content-length: 608
         }]
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-todotask-from-tasks-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

@@ -5,19 +5,19 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bedcf564fdc470a6bfcf1dacafe2efa82694e0ed
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: fe6a11f889978cd22807816f61be1c85ab7ec912
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849875"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873117"
 ---
 # <a name="update-todotasklist"></a>更新 todoTaskList
-命名空间：microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [todoTaskList 对象的](../resources/todotasklist.md) 属性。
+更新 [todoTaskList](../resources/todotasklist.md) 对象的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
@@ -46,21 +46,23 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [todoTaskList](../resources/todotasklist.md) 对象的 JSON 表示形式。
 
-下表显示创建 [todoTaskList 时所需的属性](../resources/todotasklist.md)。
+下表显示创建 [todoTaskList](../resources/todotasklist.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|指示任务列表的更新标题的域。|
+|displayName|String|指示任务列表更新的标题的字段。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [更新的 todoTaskList](../resources/todotasklist.md) 对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [todoTaskList](../resources/todotasklist.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADIyAAAhrbPWAAA="],
@@ -76,6 +78,12 @@ Content-length: 167
   "displayName": "Vacation Plan",
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-todotasklist-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

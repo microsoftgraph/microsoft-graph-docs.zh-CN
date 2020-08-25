@@ -3,12 +3,12 @@ title: Microsoft Graph 早期版本的亮点
 description: Microsoft Graph 早期版本中的新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 3a2f253ffdb80c2bc39907537e27d7399c573c2f
-ms.sourcegitcommit: 2e6fb1c0fef8cb3af1a72c115aa54902c71c99f5
+ms.openlocfilehash: de4aec69c62c611532143d2dfee2340b485d3a0f
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46658247"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873074"
 ---
 # <a name="highlights-of-earlier-releases"></a>早期版本的亮点
 
@@ -756,7 +756,7 @@ Exchange 管理员可以向应用程序授予应用程序权限, 并[限制该�
 ### <a name="identity-and-access"></a>身份和访问控制
 [身份提供程序](/graph/api/resources/identityprovider?view=graph-rest-1.0)
 [改进的身份验证指南](/graph/auth)
-[将应用从 Azure AD Graph 迁移到 Microsoft Graph](migrate-azure-ad-graph-overview.md)
+[将应用从 Azure AD Graph 迁移到 Microsoft Graph](migrate-azure-ad-graph-planning-checklist.md)
 
 ### <a name="sdks"></a>SDK
 [SDK 指南](/sdks/sdks-overview.md) API 片段（[示例](/graph/api/user-get?view=graph-rest-1.0&tabs=cs#sdk-sample-code)）

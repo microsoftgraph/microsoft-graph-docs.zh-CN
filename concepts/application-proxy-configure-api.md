@@ -5,12 +5,12 @@ author: davidmu1
 ms.topic: conceptual
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 11ce7e7388ce6ab8b17244dbe964ff99cbeaf539
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: cc99857905a0a308f49ddc41bf22da993ca8f1b4
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46658054"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873102"
 ---
 # <a name="automate-the-configuration-of-application-proxy-using-the-microsoft-graph-api"></a>使用 Microsoft Graph API 自动配置应用程序代理
 
@@ -22,60 +22,42 @@ ms.locfileid: "46658054"
 
 |资源类型 |方法 |
 |---------|---------|
-| [applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta)| [实例化 applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta) |
-|[applications](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)<br> [onPremisesPublishing](https://docs.microsoft.com/graph/api/resources/onpremisespublishing?view=graph-rest-beta)|[更新应用程序](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-beta)<br> [向 connectorGroup 添加应用程序](https://docs.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
+|[applications](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)<br> [onPremisesPublishing](https://docs.microsoft.com/graph/api/resources/onpremisespublishing?view=graph-rest-beta)| [创建应用程序](https://docs.microsoft.com/graph/api/application-post-applications?view=graph-rest-beta&tabs=http) <br> [更新应用程序](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-beta)<br> [向 connectorGroup 添加应用程序](https://docs.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
 |[连接器](https://docs.microsoft.com/graph/api/resources/connector?view=graph-rest-beta)| [获取连接器](https://docs.microsoft.com/graph/api/connector-get?view=graph-rest-beta)
 |[connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorGroup?view=graph-rest-beta)| [Create connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [Add connector to connectorGroup](https://docs.microsoft.com/graph/api/connector-post-memberof?view=graph-rest-beta) <br> |
-|[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[更新 servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [创建 appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
+|[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[创建 servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-post-serviceprincipals?view=graph-rest-beta&tabs=http) <br> [更新 servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [创建 appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
 
->[!NOTE]
-> 本文中所示的请求使用示例值。 你将需要更新这些。 为了提高可读性，还可能缩短了显示的响应对象。 所有属性都是从实际调用返回。
+> [!NOTE]
+> 本文中所示的请求使用示例值。 你将需要更新这些。 显示的响应对象可能还会缩短可读性。 
 
-## <a name="step-1-create-a-custom-application"></a>步骤1：创建自定义应用程序
+## <a name="step-1-create-an-application"></a>步骤1：创建应用程序
 
 ### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a>登录到 Microsoft Graph Explorer（推荐），Postman 或使用的任何其他 API 客户端
 
 1. 启动 [Microsoft Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)。
-2. 选择**使用 Microsoft 登录**，然后使用 Azure AD 全局管理员或 App Admin 凭据登录。
-3. 登录成功后，将在左窗格中看到用户帐户详细信息。
+2. 选择 **"使用 Microsoft 登录"** ，并使用 Azure AD 全局管理员或应用程序管理员凭据登录。
+3. 成功登录后，将在左窗格中看到用户帐户详细信息。
 
-### <a name="create-a-custom-application"></a>创建自定义应用程序
+### <a name="create-an-application"></a>创建应用程序
 
-若要使用 API 为应用程序配置应用程序代理，您必须首先创建自定义应用程序，然后更新应用程序的 **onPremisesPublishing** 属性，以配置应用程序代理设置。
-使用 [实例化 applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta) 在租户中创建自定义应用程序和服务主体的实例，以供管理。 自定义应用程序的模板 ID 为： `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` 。
+若要使用 API 为应用程序配置应用程序代理，请创建应用程序，将服务主体添加到应用中，然后更新应用程序的 **onPremisesPublishing** 属性以配置应用程序代理设置。 在创建应用程序时，将应用程序的 **signInAudience** 设置为 "AzureADMyOrg"。
 
 #### <a name="request"></a>请求
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_applicationTemplate"
+  "name": "create_application"
 }-->
 
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/applicationTemplates/8adf8e6e-67b2-4cf2-a259-e3dc5476c621/instantiate
+POST https://graph.microsoft.com/beta/applications
 Content-type: application/json
 
 {
-  "displayName": "Contoso IWA App"
+  "displayName": "Contoso IWA App",
+  "signInAudience":"AzureADMyOrg"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-applicationtemplate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-applicationtemplate-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-applicationtemplate-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 
 #### <a name="response"></a>响应
 
@@ -91,75 +73,124 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.applicationServicePrincipal",
-    "application": {
-        "objectId": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83",
-        "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b",
-        "applicationTemplateId": "8adf8e6e-67b2-4cf2-a259-e3dc5476c621",
-        "displayName": "Contoso IWA App",
-        "homepage": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=customappsso|ISV9.1|primary|z",
-        "identifierUris": [],
-        "publicClient": null,
-        "replyUrls": [],
-        "logoutUrl": null,
-        "samlMetadataUrl": null,
-        "errorUrl": null,
-        "groupMembershipClaims": null,
-        "availableToOtherTenants": false
-    },
-    "servicePrincipal": {
-        "objectId": "b00c693f-9658-4c06-bd1b-c402c4653dea",
-        "deletionTimestamp": null,
-        "accountEnabled": true,
-        "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b",
-        "appDisplayName": "Contoso API",
-        "applicationTemplateId": "8adf8e6e-67b2-4cf2-a259-e3dc5476c621",
-        "appRoleAssignmentRequired": true,
-        "displayName": "Contoso API",
-        "errorUrl": null,
-        "logoutUrl": null,
-        "homepage": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=customappsso|ISV9.1|primary|z",
-        "samlMetadataUrl": null,
-        "microsoftFirstParty": null,
-        "publisherName": "f/128 Photography",
-        "preferredTokenSigningKeyThumbprint": null,
-        "replyUrls": [],
-        "servicePrincipalNames": [
-            "d7fbfe28-c60e-46d2-8335-841923950d3b"
-        ],
-        "tags": [
-            "WindowsAzureActiveDirectoryIntegratedApp",
-            "WindowsAzureActiveDirectoryCustomSingleSignOnApplication"
-        ],
-        "notificationEmailAddresses": [],
-        "keyCredentials": [],
-        "passwordCredentials": []
-    }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
+  "id": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83",
+  "deletedDateTime": null,
+  "addIns": [],
+  "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b",
+  "applicationTemplateId": null,
+  "identifierUris": [],
+  "createdDateTime": "2020-08-11T21:07:47.5919755Z",
+  "description": null,
+  "displayName": "Contoso IWA App",
+  "isAuthorizationServiceEnabled": false,
+  "isDeviceOnlyAuthSupported": null,
+  "isFallbackPublicClient": null,
+  "groupMembershipClaims": null,
+  "notes": null,
+  "optionalClaims": null,
+  "orgRestrictions": [],
+  "publisherDomain": "f128.info",
+  "signInAudience": "AzureADandPersonalMicrosoftAccount",
+  "tags": [],
+  "tokenEncryptionKeyId": null,
+  "uniqueName": null,
+  "verifiedPublisher": {
+      "displayName": null,
+      "verifiedPublisherId": null,
+      "addedDateTime": null
+  },
 }
 ```
 
-
-### <a name="retrieve-app-object-id-and-service-principal-object-id"></a>检索应用对象 ID 和服务主体对象 ID
-使用上一次调用的响应检索并保存应用程序对象 ID 和服务主体对象 ID。
+### <a name="retrieve-the-application-object-id-and-appid"></a>检索应用程序对象 ID 和 appId
+使用上一次调用的响应检索并保存应用程序对象 ID 和应用程序 ID。
 ```
 "application": {
-    "objectId": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83"
-    }
-"servicePrincipal": {
-    "objectId": "b00c693f-9658-4c06-bd1b-c402c4653dea"
-    }
+  "id": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83",
+  "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b"
+}
+```
+### <a name="create-a-serviceprincipal-for-the-application-and-add-required-tags"></a>为应用程序创建一个 servicePrincipal 并添加所需的标记
+使用 **appId** 为应用程序创建服务主体。 然后添加为应用配置应用程序代理所需的标记。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "create_servicePrincipal"
+}-->
+
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/serviceprincipals
+Content-type: appplication/json
+
+{
+  "appId":"d7fbfe28-c60e-46d2-8335-841923950d3b",
+  "tags": [
+    "WindowsAzureActiveDirectoryIntegratedApp",
+    "WindowsAzureActiveDirectoryOnPremApp"
+  ]
+}
+```
+
+#### <a name="response"></a>响应
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.application",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals/$entity",
+  "id": "a8cac399-cde5-4516-a674-819503c61313",
+  "deletedDateTime": null,
+  "accountEnabled": true,
+  "alternativeNames": [],
+  "createdDateTime": null,
+  "deviceManagementAppType": null,
+  "appDescription": null,
+  "appDisplayName": "Contoso IWA App",
+  "appId": "d7fbfe28-c60e-46d2-8335-841923950d3b",
+  "applicationTemplateId": null,
+  "appOwnerOrganizationId": "7918d4b5-0442-4a97-be2d-36f9f9962ece",
+  "appRoleAssignmentRequired": false,
+  "description": null,
+  "displayName": "vtestapi2",
+  "errorUrl": null,
+  "homepage": null,
+  "isAuthorizationServiceEnabled": false,
+  "loginUrl": null,
+  "logoutUrl": null,
+  "notes": null,
+  "notificationEmailAddresses": [],
+  "preferredSingleSignOnMode": null,
+  "preferredTokenSigningKeyEndDateTime": null,
+  "preferredTokenSigningKeyThumbprint": null,
+  "publisherName": "f/128 Photography",
+  "replyUrls": [],
+  "samlMetadataUrl": null,
+  "samlSingleSignOnSettings": null,
+  "servicePrincipalNames": [
+      "b92b92d4-3874-46a5-b715-a00ea01cff93"
+  ],
+  "servicePrincipalType": "Application",
+}
 ```
 
 ## <a name="step-2-configure-application-proxy-properties"></a>步骤2：配置应用程序代理属性
 
 ### <a name="set-the-onpremisespublishing-configuration"></a>设置 onPremisesPublishing 配置
 
-使用上一步中的 applicationId 为应用程序配置应用程序代理，并将 **onPremisesPublishing** 属性更新为所需的配置。 在此示例中，您使用的是内部 url 的应用程序： `https://contosoiwaapp.com` 并使用外部 url 的默认域： `https://contosoiwaapp-contoso.msappproxy.net` 。 
+使用上一步中的 application 对象 ID 为应用程序配置应用程序代理，并将 **onPremisesPublishing** 属性更新为所需的配置。 在此示例中，您使用的是内部 URL 的应用程序： `https://contosoiwaapp.com` 并使用外部 url 的默认域： `https://contosoiwaapp-contoso.msappproxy.net` 。 
 
 #### <a name="request"></a>请求
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_application"
@@ -177,20 +208,6 @@ Content-type: appplication/json
     }
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-application-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-application-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-application-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>响应
 
@@ -202,11 +219,10 @@ Content-type: appplication/json
 ```http
 HTTP/1.1 204 No content
 ```
-### <a name="set-the-redirecturi-identifieruri-and-homepageurl-properties"></a>设置 redirectUri、identifierUri 和 homepageUrl 属性
-将应用程序的 " **redirectUri**"、" **identifierUri**" 和 " **homepageUrl** " propertes 更新为外部 URL。
+### <a name="complete-the-configuration-of-the-application"></a>完成应用程序的配置
+将应用程序的 " **redirectUri**"、" **identifierUri**" 和 " **HomepageUrl** " 属性更新为 **onPremisesPublishing** 属性中配置的外部 UR。 然后，将 [implicitGrantSettings](https://docs.microsoft.com/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0) 更新为 `true` 针对 **enabledTokenIssuance** 和 `false` **enabledAccessTokenIssuance**。
 
 #### <a name="request"></a>请求
-
 <!-- {
   "blockType": "request",
   "name": "update_application"
@@ -216,14 +232,19 @@ HTTP/1.1 204 No content
 PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
 Content-type: appplication/json
 
-{   
-   "identifierUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
-   "web": {
-      "redirectUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
-      "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net"
-   }
+{
+  "identifierUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
+  "web": {
+    "redirectUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
+    "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net",
+    "implicitGrantSettings": {
+      "enableIdTokenIssuance": true,
+      "enableAccessTokenIssuance": false
+    }
+  }
 }
 ```
+
 #### <a name="response"></a>响应
 
 <!-- {
@@ -243,8 +264,6 @@ HTTP/1.1 204 No content
 
 #### <a name="request"></a>请求
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "connector"
@@ -254,20 +273,6 @@ HTTP/1.1 204 No content
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors
 
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/connector-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/connector-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/connector-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>响应
 
@@ -379,8 +384,6 @@ HTTP/1.1 204 No content
 
 #### <a name="request"></a>请求
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "connectorGroup"
@@ -394,19 +397,6 @@ Content-type: application/json
 "@odata.id":"https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/connectorgroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/connectorgroup-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/connectorgroup-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### <a name="response"></a>响应
 
@@ -421,7 +411,6 @@ HTTP/1.1 204 No content
 
 ## <a name="step-4-configure-single-sign-on"></a>步骤4：配置单一登录
 此应用程序使用集成的 Windows 身份验证 (IWA) 。 若要配置 IWA，请在 [singleSignOnSettings](https://docs.microsoft.com/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta) 资源类型中设置单一登录属性。
-
 
 #### <a name="request"></a>请求
 
@@ -464,27 +453,13 @@ HTTP/1.1 204 No content
 #### <a name="request"></a>请求
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/b00c693f-9658-4c06-bd1b-c402c4653dea/appRoles
+GET https://graph.microsoft.com/beta/servicePrincipals/a8cac399-cde5-4516-a674-819503c61313/appRoles
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### <a name="response"></a>响应
 
@@ -497,7 +472,7 @@ HTTP/1.1 200
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals('b00c693f-9658-4c06-bd1b-c402c4653dea')/appRoles",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals('a8cac399-cde5-4516-a674-819503c61313')/appRoles",
     "value": [
         {
             "allowedMemberTypes": [
@@ -543,10 +518,9 @@ Content-type: application/json
 | principalId | 将分配给应用程序的用户的用户 ID | 2fe96d23-5dc6-4f35-8222-0426a8c115c8 |
 | principalType | 用户类型 | 用户 |
 | appRoleId |  应用程序的默认应用程序角色的应用程序角色 ID | 18d14569-c3bd-439b-9a66-3a2aee01d14f |
-| resourceId | 应用程序的 servicePrincipal ID | b00c693f-9658-4c06-bd1b-c402c4653dea |
+| resourceId | 应用程序的 servicePrincipal ID | a8cac399-cde5-4516-a674-819503c61313 |
 
 #### <a name="request"></a>请求
-
 
 <!-- {
   "blockType": "ignored",
@@ -561,7 +535,7 @@ Content-type: appRoleAssignments/json
   "principalId": "2fe96d23-5dc6-4f35-8222-0426a8c115c8",
   "principalType": "User",
   "appRoleId":"18d14569-c3bd-439b-9a66-3a2aee01d14f",
-  "resourceId":"b00c693f-9658-4c06-bd1b-c402c4653dea"
+  "resourceId":"a8cac399-cde5-4516-a674-819503c61313"
 }
 ```
 
@@ -584,12 +558,11 @@ Content-type: application/json
     "principalId": "2fe96d23-5dc6-4f35-8222-0426a8c115c8",
     "principalType": "User",
     "resourceDisplayName": "Contoso IWA App",
-    "resourceId": "b00c693f-9658-4c06-bd1b-c402c4653dea"
+    "resourceId": "a8cac399-cde5-4516-a674-819503c61313"
 }
 ```
 
 有关详细信息，请参阅 [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-beta) 资源类型。
-
 
 
 ## <a name="additional-steps"></a>其他步骤
