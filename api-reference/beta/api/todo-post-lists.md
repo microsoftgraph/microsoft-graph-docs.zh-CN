@@ -5,19 +5,19 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2628721edff8ad1dad559e590c3dade972220c73
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: a0753faa0c417d8e3f5fec326b27043e14b5a5ad
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849899"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872858"
 ---
 # <a name="create-todotasklist"></a>创建 todoTaskList
 命名空间：microsoft.graph
 
 创建新的列表对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
@@ -46,19 +46,21 @@ POST /users/{id|userPrincipalName}/todo/lists
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [todoTaskList](../resources/todotasklist.md) 对象的 JSON 表示形式。
 
-下表显示创建 [todoTaskList 时所需的属性](../resources/todotasklist.md)。
+下表显示创建 [todoTaskList](../resources/todotasklist.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|指示任务列表标题的域。|
+|displayName|String|指示任务列表的标题的字段。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回响应代码和 [todoTaskList](../resources/todotasklist.md) 对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [todoTaskList](../resources/todotasklist.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_todotasklist_from_lists"
@@ -73,6 +75,12 @@ Content-length: 60
   "displayName": "Travel items",
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-todotasklist-from-lists-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

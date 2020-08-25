@@ -5,19 +5,19 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b87170c634f1bd0a95bfac6118f97554426f2ecb
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 0ce6ff6c8fd519888682e53939238dab02215007
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849907"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872565"
 ---
 # <a name="update-linkedresource"></a>更新 linkedResource
-命名空间：microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [linkedResource 对象的](../resources/linkedresource.md) 属性。
+更新 [linkedResource](../resources/linkedresource.md) 对象的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
@@ -46,19 +46,21 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/l
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [linkedResource](../resources/linkedresource.md) 对象的 JSON 表示形式。
 
-下表显示更新 [linkedResource 时所需的属性](../resources/linkedresource.md)。
+下表显示了在更新 [linkedResource](../resources/linkedresource.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|继承自实体的链接实体生成的 [服务器 ID](../resources/entity.md)|
+|id|String|从[实体](../resources/entity.md)继承的链接实体的服务器生成 Id|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码 [和更新的 linkedResource](../resources/linkedresource.md) 对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [linkedResource](../resources/linkedresource.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["dfsdc-f9dfdfs-dcsda9", "e2dc-f9cce2-dce29", "f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9"],
@@ -77,6 +79,12 @@ Content-length: 166
   "displayName": "Microsoft",
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-linkedresource-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

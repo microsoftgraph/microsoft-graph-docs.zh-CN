@@ -3,17 +3,21 @@ title: 应用迁移规划清单
 description: 将应用程序从 Azure AD Graph 迁移到 Microsoft Graph 的清单
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 59114221b91f6dc1800f9f1601cb2e2c06709ff8
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+ms.prod: azure-active-directory
+ms.openlocfilehash: 5f859861c7c656f9287f4f6b3742f976c75299bc
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42926783"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872899"
 ---
 # <a name="app-migration-planning-checklist"></a>应用迁移规划清单
 
-使用以下检查表来规划迁移：
+> [!Important]
+> Azure AD Graph API 现已弃用。 我们将继续提供技术支持和安全更新，但不会再提供功能更新。
+> 从2022年6月30日起，我们将结束对 Azure AD Graph 的支持，将不再提供技术支持或安全更新。 此后使用 Azure AD Graph 的应用程序将不再接收来自 Azure AD Graph 终结点的响应。
+
+使用以下检查表来规划迁移。
 
 ## <a name="step-1-review-the-differences-between-the-apis"></a>步骤1：查看 Api 之间的差异
 
@@ -25,7 +29,7 @@ ms.locfileid: "42926783"
 
 - 在两个服务之间[请求调用语法](migrate-azure-ad-graph-request-differences.md)
 - [功能差异](migrate-azure-ad-graph-feature-differences.md)，如目录扩展、批处理、差异查询等
-- [实体资源名称](migrate-azure-ad-graph-resource-differences.md)及其类型
+- [实体资源名称](migrate-azure-ad-graph-resource-differences.md) 及其类型
 - 请求和响应对象的[属性](migrate-azure-ad-graph-property-differences.md)
 - [方法](migrate-azure-ad-graph-method-differences.md)（包括参数和类型）
 
@@ -37,25 +41,22 @@ ms.locfileid: "42926783"
 
 在某些情况下，新功能和功能旨在取代早期的方法。
 
-使用[Graph 浏览器](https://aka.ms/ge)体验新的呼叫并开发新的方法。 为获得最佳结果，请使用测试租户中的测试用户的凭据登录，以便您可以看到 API 对重要数据集执行的操作。
+使用 [Graph 浏览器](https://aka.ms/ge) 体验新的呼叫并开发新的方法。 为获得最佳结果，请使用测试租户中的测试用户的凭据登录，以便您可以看到 API 对重要数据集执行的操作。
 
 ## <a name="step-3-review-app-details"></a>步骤3：查看应用程序详细信息
 
-- [应用注册](migrate-azure-ad-graph-app-registration.md)和同意更改（应为 "无"）。
-- 令牌获取和[身份验证库](migrate-azure-ad-graph-authentication-library.md)。
-- 对于 .NET 应用程序，使用[客户端库](migrate-azure-ad-graph-client-libraries.md)。
+- [应用注册](migrate-azure-ad-graph-app-registration.md) 和许可更改 () 不应为 "无"。
+- 令牌获取和 [身份验证库](migrate-azure-ad-graph-authentication-library.md)。
+- 对于 .NET 应用程序，使用 [客户端库](migrate-azure-ad-graph-client-libraries.md)。
 
 ## <a name="step-4-deploy-test-and-extend-your-app"></a>步骤4：部署、测试和扩展应用程序
 
 在更新您的应用程序以供每个人更新之前，请确保全面测试并向客户访问群体转移您的部署。
 
-现在，您已将切换到 Microsoft Graph，对现在可以轻松解锁的更多数据集和功能的方法也变得更加轻松了。 您可以通过查看一些[示例](/graph/examples)来了解可能的情况。
+现在，您已将切换到 Microsoft Graph，对现在可以轻松解锁的更多数据集和功能的方法也变得更加轻松了。 您可以通过查看一些 [示例](/graph/examples)来了解可能的情况。
 
-如果你当前使用的是[AD 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)（ADAL），请考虑切换到[Microsoft 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries)（MSAL）。
+如果你当前使用的是 [AD 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) ，请考虑切换到 [Microsoft 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (MSAL) 。
 
 ## <a name="next-steps"></a>后续步骤
 
-- 了解用于启动步骤1：审阅 API 差异的[resquest 调用语法](migrate-azure-ad-graph-request-differences.md)。
-- 浏览[Microsoft Graph](/graph/overview)概念和实践。
-- 使用[Graph 浏览器](https://aka.ms/ge)试用 Microsoft Graph。
-- 若要了解有关进度更新和时间线的详细信息，请参阅[Microsoft Graph 或 AZURE AD Graph](https://developer.microsoft.com/en-us/graph/blogs/microsoft-graph-or-azure-ad-graph/)。
+- 了解开始步骤1：检查 API 差异的 [请求调用语法](migrate-azure-ad-graph-request-differences.md) 。

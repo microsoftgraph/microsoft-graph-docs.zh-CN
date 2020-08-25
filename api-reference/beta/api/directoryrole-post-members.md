@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0a62013b0a424e83eb2ad30bb554a6aba33b6d63
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 7d1b0c9aebf5cfbe1dcc502c9865f3d590367c60
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819362"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872671"
 ---
 # <a name="add-directory-role-member"></a>添加目录角色成员
 
@@ -19,12 +19,12 @@ ms.locfileid: "46819362"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建新的目录角色成员。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | RoleManagement.ReadWrite.Directory、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | RoleManagement、Directory.accessasuser.all 和所有子目录。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | RoleManagement.ReadWrite.Directory |
 
@@ -49,9 +49,9 @@ POST /directoryRoles/{id}/members/$ref
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-assign-a-built-in-role-to-a-user"></a>示例 1：向用户分配内置角色
+### <a name="example-1-assign-a-built-in-role-to-a-user"></a>示例1：向用户分配内置角色
 #### <a name="request"></a>请求
-以下示例向用户分配内置角色。
+下面的示例将一个内置角色分配给用户。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -75,6 +75,10 @@ Content-length: 30
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-directoryobject-from-directoryrole-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-directoryobject-from-directoryrole-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>响应
@@ -89,9 +93,9 @@ Content-length: 30
 HTTP/1.1 204 No content
 ```
 
-### <a name="example-2-assign-a-built-in-role-to-a-group"></a>示例 2：对组分配内置角色
+### <a name="example-2-assign-a-built-in-role-to-a-group"></a>示例2：向组分配内置角色
 #### <a name="request"></a>请求
-你可以使用特定资源集（如请求正文中的用户或组）或者可以使用泛型**directoryObjects。** 此示例演示如何使用 **directoryObjects**。
+您可以使用请求正文中的用户或组等特定资源集，也可以使用泛型 **directoryObjects**。 本示例演示如何使用 **directoryObjects**。
 
 <!-- {
   "blockType": "request",

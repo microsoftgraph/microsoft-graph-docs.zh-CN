@@ -1,23 +1,23 @@
 ---
-title: 列表列表
+title: 列出列表
 description: 获取 todoTaskList 对象及其属性的列表。
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 87b7cad3f24d8e0db1632edd43454a55d05e64b0
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 97ce611af4441027146d2ccd5d951beacd9d20d6
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849902"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873270"
 ---
-# <a name="list-lists"></a>列表列表
+# <a name="list-lists"></a>列出列表
 命名空间：microsoft.graph
 
-获取 [todoTaskList 对象](../resources/todotasklist.md) 及其属性的列表。
+获取 [todoTaskList](../resources/todotasklist.md) 对象及其属性的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
@@ -50,11 +50,13 @@ GET /users/{id|userPrincipalName}/todo/lists
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [todoTaskList](../resources/todotasklist.md) 对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [todoTaskList](../resources/todotasklist.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_todotasklist"
@@ -63,6 +65,20 @@ GET /users/{id|userPrincipalName}/todo/lists
 ``` http
 GET https://graph.microsoft.com/beta/me/todo/lists
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-todotasklist-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-todotasklist-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-todotasklist-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

@@ -5,19 +5,19 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5180b5a38dafceb30871e574208d5321c8b0c38c
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 4311af292480a51eeaaefabb1ef8cf277b211e2c
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849890"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873243"
 ---
 # <a name="create-linkedresources"></a>创建 linkedResources
-命名空间：microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建新的 linkedResources 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
@@ -46,25 +46,27 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/li
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [linkedResource](../resources/linkedresource.md) 对象的 JSON 表示形式。
 
-下表显示创建 [linkedResource 时所需的属性](../resources/linkedresource.md)。
+下表显示创建 [linkedResource](../resources/linkedresource.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|继承自实体的链接实体生成的 [服务器 ID](../resources/entity.md)|
-|webUrl|String|到链接的实体的深度链接 |
-|applicationName|String|指示发送已链接实体的源的应用名称的字段 |
-|displayName|String|指示所链接实体的标题的域。 |
-|externalId|String|与第三方/合作伙伴系统上的此任务相关联的对象的 ID |
+|id|String|从[实体](../resources/entity.md)继承的链接实体的服务器生成 Id|
+|webUrl|String|Deeplink 到链接实体 |
+|applicationName|String|指示发送链接实体的源的应用程序名称的字段 |
+|displayName|String|指示链接实体的标题的字段。 |
+|externalId|String|与第三方/合作伙伴系统上的此任务相关联的对象的 Id |
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 [响应代码和 linkedResource](../resources/linkedresource.md) 对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [linkedResource](../resources/linkedresource.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["dfsdc-f9dfdfs-dcsda9", "e2dc-f9cce2-dce29"],
@@ -84,6 +86,12 @@ Content-length: 166
   "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-linkedresource-from-linkedresources-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

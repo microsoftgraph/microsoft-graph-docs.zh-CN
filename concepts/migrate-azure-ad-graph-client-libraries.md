@@ -1,36 +1,36 @@
 ---
 title: 将 Azure AD Graph .NET 应用迁移到 Microsoft Graph
-description: 介绍如何将 Azure Active Directory （Azure AD） API 应用迁移到 Microsoft Graph API。
+description: 介绍如何将 Azure Active Directory (Azure AD) API 应用迁移到 Microsoft Graph API。
 author: dkershaw10
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 884802fafcccf4408b84da96f6c4f94818e31b16
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.prod: azure-active-directory
+ms.openlocfilehash: 757a8d43b3a0729e4d791c7a4f4f85640af87274
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234038"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872948"
 ---
 # <a name="migrate-net-client-library-use-to-microsoft-graph"></a>将 .NET 客户端库使用迁移到 Microsoft Graph
 
-本文是*第3步：查看迁移应用程序的应用程序详细信息的第3步：查看*该[过程](migrate-azure-ad-graph-planning-checklist.md)的详细信息。
+本文是 *第3步：查看迁移应用程序的应用程序详细信息的第3步：查看* 该 [过程](migrate-azure-ad-graph-planning-checklist.md)的详细信息。
 
-如果你的应用当前使用的是 Azure AD Graph 客户端库，请切换到[Microsoft Graph .net 客户端库](https://github.com/microsoftgraph/msgraph-sdk-dotnet)。
+如果你的应用当前使用的是 Azure AD Graph 客户端库，请切换到 [Microsoft Graph .net 客户端库](https://github.com/microsoftgraph/msgraph-sdk-dotnet)。
 
 >注意：仅 .NET Framework 4.5 和 .NET Standard 1.1 支持 Microsoft Graph .NET 客户端库。  但请参阅 Microsoft Graph .NET 客户端库，了解最新的支持信息。
 
 在这里，我们将介绍一些将迁移到 Microsoft Graph .NET 客户端库的常规步骤：
 
-- 如何创建 Microsoft Graph 客户端，给定访问令牌（您可以使用 ADAL 或 MSAL 获取）
+- 如何创建 Microsoft Graph 客户端，给定一个可使用 ADAL 或 MSAL 获取的访问令牌 () 
 - 如何表述请求
 - 如何使用查询生成器
 - 如何处理集合和分页  
 
 ## <a name="overview-of-the-migration-steps"></a>迁移步骤概述
 
-以下步骤假定您的应用程序已在使用 ADAL 获取访问令牌以调用 Azure AD Graph，而现在您将继续使用 ADAL。 切换到 MSAL 可作为[迁移到 MSAL](/graph/migrate-azure-ad-graph-authentication-library#migrate-to-msal)中所述的一个单独步骤完成。
+以下步骤假定您的应用程序已在使用 ADAL 获取访问令牌以调用 Azure AD Graph，而现在您将继续使用 ADAL。 切换到 MSAL 可作为 [迁移到 MSAL](/graph/migrate-azure-ad-graph-authentication-library#migrate-to-msal)中所述的一个单独步骤完成。
 
-1. 若要获取 Microsoft Graph 的访问令牌，请**** 将 resourceUrl `https://graph.windows.net`更新`https://graph.microsoft.com`为。
+1. 若要获取 Microsoft Graph 的访问令牌，请将 **resourceUrl** 更新 `https://graph.windows.net` 为 `https://graph.microsoft.com` 。
 
 2. 在您的应用程序中，通过更改以下内容更新对 Microsoft Graph 客户端库的引用：
 
@@ -38,15 +38,15 @@ ms.locfileid: "41234038"
     using Microsoft.Azure.ActiveDirectory.GraphClient;
     ```
 
-    自：
+    收件人：
 
     ``` csharp
     using Microsoft.Graph;
     ```
 
-3. 使用您的程序包管理器下载并更新[Microsoft Graph NuGet 包](https://www.nuget.org/packages/Microsoft.Graph/)并更新依赖项。
+3. 使用您的程序包管理器下载并更新 [Microsoft Graph NuGet 包](https://www.nuget.org/packages/Microsoft.Graph/) 并更新依赖项。
 
-4. 更新客户端构造函数`GraphServiceClient`，以创建而不`ActiveDirectoryClient`是。  以下代码段假定应用程序正在使用获取新`AcquireTokenAsyncForUser()`令牌的方法。 您可以在[active directory-dotnet-graphapi 示例](https://github.com/Azure-Samples/active-directory-dotnet-graphapi-console/blob/archive/GraphConsoleAppV3/AuthenticationHelper.cs)中查找此方法的定义。
+4. 更新客户端构造函数，以创建 `GraphServiceClient` 而不是 `ActiveDirectoryClient` 。  以下代码段假定应用程序正在使用 `AcquireTokenAsyncForUser()` 获取新令牌的方法。 您可以在 [active directory-dotnet-graphapi 示例](https://github.com/Azure-Samples/active-directory-dotnet-graphapi-console/blob/archive/GraphConsoleAppV3/AuthenticationHelper.cs)中查找此方法的定义。
 
     更改
 
@@ -55,7 +55,7 @@ ms.locfileid: "41234038"
     async () => await AcquireTokenAsyncForUser());
     ```
 
-    自：
+    收件人：
 
     ``` csharp
     GraphServiceClient graphClient = new GraphServiceClient(serviceRoot,
@@ -66,7 +66,7 @@ ms.locfileid: "41234038"
        }));
     ```
 
-    对于 Microsoft Graph 客户端库， `serviceRoot`此值还包括版本号。 目前，该值为`https://graph.microsoft.com/v1.0`。
+    对于 Microsoft Graph 客户端库，此 `serviceRoot` 值还包括版本号。 目前，该值为 `https://graph.microsoft.com/v1.0` 。
 
 5. 通过更改以下内容，更新请求以使用 Microsoft Graph 客户端请求生成器语法：
 
@@ -74,7 +74,7 @@ ms.locfileid: "41234038"
     signedInUser = (User)await client.Me.ExecuteAsync();
     ```
 
-    自：
+    收件人：
 
     ``` csharp
     signedInUser = (User)await client.Me.Request().GetAsync();
@@ -90,7 +90,7 @@ ms.locfileid: "41234038"
     client.Groups.Where(g => g.DisplayName.StartsWith("a")).ExecuteAsync();
     ```
 
-    自：
+    收件人：
 
     ``` csharp
     var groups = await
@@ -153,10 +153,9 @@ ms.locfileid: "41234038"
 
 [C # 控制台代码段应用程序](https://github.com/microsoftgraph/console-csharp-snippets-sample)重点介绍了 Microsoft Graph 客户端库和 Azure AD Graph 客户端库之间的差异。
 
-Azure AD Graph 客户端库仅支持 .NET 平台。  但是，Microsoft Graph 客户端库支持其他[平台和语言](/graph)，您可能会发现更适合您的解决方案。
+Azure AD Graph 客户端库仅支持 .NET 平台。  但是，Microsoft Graph 客户端库支持其他 [平台和语言](/graph) ，您可能会发现更适合您的解决方案。
 
 ## <a name="next-steps"></a>后续步骤
 
-- 了解如何[部署、测试和扩展](/graph/migrate-azure-ad-graph-deploy-test-extend)已迁移到 Microsoft Graph 的应用程序。
-- 浏览[Microsoft Graph](/graph/overview)概念和实践。
-- 使用[Graph 浏览器](https://aka.ms/ge)试用 Microsoft Graph。
+- 了解如何 [部署、测试和扩展](/graph/migrate-azure-ad-graph-deploy-test-extend) 已迁移到 Microsoft Graph 的应用程序。
+- 再次查看 [检查表](migrate-azure-ad-graph-planning-checklist.md) 。

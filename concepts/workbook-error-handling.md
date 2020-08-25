@@ -4,12 +4,12 @@ description: Microsoft Graph 中的 Excel Api 的错误处理说明
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 5b8fed4992376247bb57c3c9288cea8f66d36082
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: 3d7da5aa1c0891b148affd8fd66f9926ce2053e7
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46658133"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873368"
 ---
 # <a name="error-handling-for-excel-apis-in-microsoft-graph"></a>Microsoft Graph 中的 Excel Api 的错误处理
 
@@ -42,7 +42,7 @@ Content-type: application/json
 
 对于这两个错误响应，error 对象都具有以下结构。
 
->**注意：** 错误响应遵循[OData v4](https://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091)规范中有关错误响应的定义。
+>**注意：** 错误响应遵循 [OData v4](https://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091) 规范中有关错误响应的定义。
 
 ```json
 {
@@ -92,13 +92,13 @@ Microsoft Graph 客户端可以使用以下步骤来处理 Excel Api 中发生�
 | **internalServerErrorUncategorized**       | 发生未指定错误。 Microsoft Graph 客户端不应重新发送失败的请求。 如果在失败请求中指定会话，则不需要对会话进行进一步的访问。
 | **invalidArgument**         | 自变量无效、缺少或格式不正确。 Microsoft Graph 客户端不应重新发送失败的请求。
 | **invalidReference**         | 此引用对于当前操作无效。 Microsoft Graph 客户端不应重新发送失败的请求。
-| **invalidSessionAccessConflict**             | 由于与正在访问工作簿的其他客户端发生冲突，请求中指定的会话无效 (例如，另一个客户端已锁定工作簿以进行编辑) 。 对失败的请求中指定的会话的进一步访问不是预期的。 在解决冲突之前，不应在**createSession**请求中重新创建会话。 在不同的**createSession**请求中重新创建会话可能会或可能不会成功。 最终用户可以选择使用 Excel Online 手动执行相同的操作，以获取有关冲突的更多详细信息。
-| **invalidSessionAuthentication**         | 由于身份验证错误，请求中指定的会话无效。 对失败的请求中指定的会话的进一步访问不是预期的。 在提供适当的身份验证信息之前，不应使用相同的**createSession**请求重新创建会话。
-| **invalidSessionNotFound**         | 请求中指定的会话无效，因为找不到工作簿。 对失败的请求中指定的会话的进一步访问不是预期的。 不应使用相同的**createSession**请求重新创建会话。
+| **invalidSessionAccessConflict**             | 由于与正在访问工作簿的其他客户端发生冲突，请求中指定的会话无效 (例如，另一个客户端已锁定工作簿以进行编辑) 。 对失败的请求中指定的会话的进一步访问不是预期的。 在解决冲突之前，不应在 **createSession** 请求中重新创建会话。 在不同的 **createSession** 请求中重新创建会话可能会或可能不会成功。 最终用户可以选择使用 Excel Online 手动执行相同的操作，以获取有关冲突的更多详细信息。
+| **invalidSessionAuthentication**         | 由于身份验证错误，请求中指定的会话无效。 对失败的请求中指定的会话的进一步访问不是预期的。 在提供适当的身份验证信息之前，不应使用相同的 **createSession** 请求重新创建会话。
+| **invalidSessionNotFound**         | 请求中指定的会话无效，因为找不到工作簿。 对失败的请求中指定的会话的进一步访问不是预期的。 不应使用相同的 **createSession** 请求重新创建会话。
 | **invalidSessionReCreatable**             | 请求中指定的会话不存在或因暂时性错误而无效。 Microsoft Graph 客户端可以尝试重新创建会话并恢复工作。 对失败的请求中指定的会话的进一步访问不是预期的。
-| **invalidSessionRestricted**          | 由于服务配置或限制，在请求中指定的会话无效。 对失败的请求中指定的会话的进一步访问不是预期的。 在阻止请求的限制或配置发生更改之前，不应使用相同的**createSession**请求重新创建会话。 在不同的**createSession**请求中重新创建会话可能会或可能不会成功。 最终用户可以选择使用 Excel Online 手动执行相同的操作，以获取限制的更多详细信息。
-| **invalidSessionUnexpected**                | 由于意外问题，请求中指定的会话无效。 对失败的请求中指定的会话的进一步访问不是预期的。 不应使用相同的**createSession**请求重新创建会话。 在不同的**createSession**请求中重新创建会话可能会或可能不会成功。
-| **invalidSessionUnsupportedWorkbook**              | 请求中指定的会话无效，因为工作簿包含不受支持的功能或超出了大小限制。 通常情况下，其他访问工作簿的客户端会引入不受支持的因素。 对失败的请求中指定的会话的进一步访问不是预期的。 在删除不受支持的因素之前，不应使用相同的**createSession**请求重新创建会话。 在不同的 createSession 请求中重新创建会话可能会或可能不会成功。 最终用户可以选择使用 Excel Online 手动执行相同的操作，以获取不受支持的因素的更多详细信息，或使用工作簿可能受支持的 Excel 桌面。
+| **invalidSessionRestricted**          | 由于服务配置或限制，在请求中指定的会话无效。 对失败的请求中指定的会话的进一步访问不是预期的。 在阻止请求的限制或配置发生更改之前，不应使用相同的 **createSession** 请求重新创建会话。 在不同的 **createSession** 请求中重新创建会话可能会或可能不会成功。 最终用户可以选择使用 Excel Online 手动执行相同的操作，以获取限制的更多详细信息。
+| **invalidSessionUnexpected**                | 由于意外问题，请求中指定的会话无效。 对失败的请求中指定的会话的进一步访问不是预期的。 不应使用相同的 **createSession** 请求重新创建会话。 在不同的 **createSession** 请求中重新创建会话可能会或可能不会成功。
+| **invalidSessionUnsupportedWorkbook**              | 请求中指定的会话无效，因为工作簿包含不受支持的功能或超出了大小限制。 通常情况下，其他访问工作簿的客户端会引入不受支持的因素。 对失败的请求中指定的会话的进一步访问不是预期的。 在删除不受支持的因素之前，不应使用相同的 **createSession** 请求重新创建会话。 在不同的 createSession 请求中重新创建会话可能会或可能不会成功。 最终用户可以选择使用 Excel Online 手动执行相同的操作，以获取不受支持的因素的更多详细信息，或使用工作簿可能受支持的 Excel 桌面。
 | **itemAlreadyExists**         | 所创建的资源已存在。 Microsoft Graph 客户端不应重新发送失败的请求。
 | **itemNotFound**         | 所请求的资源不存在。 Microsoft Graph 客户端不应重新发送失败的请求。
 | **methodNotAllowed**         | 该资源上不允许请求中指定的 HTTP 方法。 Microsoft Graph 客户端不应重新发送失败的请求。
@@ -120,7 +120,7 @@ Microsoft Graph 客户端可以使用以下步骤来处理 Excel Api 中发生�
 
 ### <a name="3-parse-the-top-level-error-code"></a>3. 分析顶级错误代码
 
-如果在[错误代码](/concepts/workbook-error-codes.md)主题中找不到列出的二级错误代码，我们建议您按照为顶级错误（绑定到状态代码）提供的说明操作。 有关顶级错误代码和消息的详细信息，请参阅[错误代码](/concepts/workbook-error-codes.md)。
+如果在 [错误代码](workbook-error-codes.md) 主题中找不到列出的二级错误代码，我们建议您按照为顶级错误（绑定到状态代码）提供的说明操作。 有关顶级错误代码和消息的详细信息，请参阅 [错误代码](workbook-error-codes.md)。
 
 ### <a name="4-parse-the-status-code"></a>4. 分析状态代码
 
