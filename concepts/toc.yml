@@ -457,8 +457,6 @@ items:
           - name: Azure AD Graph
             displayName: 'Migration, Azure AD Graph'
             items:
-              - name: 概述
-                href: migrate-azure-ad-graph-overview.md
               - name: 应用迁移清单
                 href: migrate-azure-ad-graph-planning-checklist.md
               - name: 1：查看差异

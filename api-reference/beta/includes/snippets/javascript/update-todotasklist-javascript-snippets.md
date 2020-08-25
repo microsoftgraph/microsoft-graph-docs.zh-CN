@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 59a2fa7828f393c6583e5ba4b5d3ab9713835377
+ms.openlocfilehash: b6dfc22cc7a34d2b407011c9173ced12c3d12fd4
 ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873807"
+ms.locfileid: "46873118"
 ---
 ```javascript
 
@@ -15,8 +15,12 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/drive/root/search(q='Contoso Projec}')')
+const aAMkADIyAAAhrbPWAAA= = {
+  displayName: "Vacation Plan",
+};
+
+let res = await client.api('/me/todo/lists/AAMkADIyAAAhrbPWAAA=')
     .version('beta')
-    .get();
+    .update(aAMkADIyAAAhrbPWAAA=);
 
 ```
