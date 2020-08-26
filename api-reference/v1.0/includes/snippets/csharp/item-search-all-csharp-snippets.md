@@ -1,18 +1,18 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: 1ecb632ca44e324bb42b987ce085280184050175
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: b4d3f8a95f745bfe542b6437b898e6f945b307a1
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36367236"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873957"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var search = await graphClient.Me.Drive
-    .Search("{search-query}")
+    .Search("Contoso Project")
     .Request()
     .GetAsync();
 
