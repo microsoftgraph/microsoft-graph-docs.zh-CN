@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 5d8eea4ba454490434db2cf51f9c6adfe892a562
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 327d518a3db8409dd1c8fb828752197e685c4123
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849301"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873088"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -85,11 +85,11 @@ ms.locfileid: "46849301"
 | 添加项 | beta | 已将新资源类型添加到 [使用条款协议](/graph/api/resources/agreement?view=graph-rest-beta)：</br>[agreementFile](/graph/api/resources/agreementfile?view=graph-rest-beta)|
 | 添加项 | beta | 向权利管理添加了 [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta) 内部和外部发起人。  |
 
-### <a name="people-and-workplace-intelligence"></a>人员和工作场所智能
+### <a name="people-and-workplace-intelligence--profile"></a>人员和工作场所智能 | 配置文件
 
 | **更改类型** | **版本** | **说明**                  |
 |:----------------|:------------|:-----------------------------------------|
-| 添加项 | Beta | 已将以下新关系添通过关联实体和方法加到[profile API](/graph/api/resources/profile?view=graph-rest-beta) ： <ul><li>[地址](/graph/api/resources/itemAddress?view=graph-rest-beta)</li><li>[纪念日](/graph/api/resources/personAnniversary?view=graph-rest-beta)</li><li>[奖项](/graph/api/resources/personAward?view=graph-rest-beta)</li><li>[证书](/graph/api/resources/personCertification?view=graph-rest-beta)</li><li>[笔记](/graph/api/resources/personAnnotation?view=graph-rest-beta)：</li><li>[专利](/graph/api/resources/itemPatent?view=graph-rest-beta)</li><li>[出版物](/graph/api/resources/itemPublication?view=graph-rest-beta)</li></ul>|
+| 添加项 | Beta | 已将以下新关系添加到具有关联实体和方法 [profile](/graph/api/resources/profile?view=graph-rest-beta) API： <ul><li>[地址](/graph/api/resources/itemAddress?view=graph-rest-beta)</li><li>[纪念日](/graph/api/resources/personAnniversary?view=graph-rest-beta)</li><li>[奖项](/graph/api/resources/personAward?view=graph-rest-beta)</li><li>[证书](/graph/api/resources/personCertification?view=graph-rest-beta)</li><li>[笔记](/graph/api/resources/personAnnotation?view=graph-rest-beta)：</li><li>[专利](/graph/api/resources/itemPatent?view=graph-rest-beta)</li><li>[出版物](/graph/api/resources/itemPublication?view=graph-rest-beta)</li></ul>|
 
 ### <a name="reports--microsoft-365-usage-reports"></a>报告 | Microsoft 365 使用情况报告
 
@@ -110,13 +110,15 @@ ms.locfileid: "46849301"
 |添加项|Beta 和 v1.0|向 [teamsAppDefinition](/graph/api/resources/teamsappdefinition) 资源添加了 **publishingState** 属性。|
 |添加项|Beta 和 v1.0|添加了 **AppCatalog.Submit** 委派权限：<br><ul><li> [发布应用](/graph/api/teamsapp-publish?view=graph-rest-beta)</li><li>[删除应用](/graph/api/teamsapp-delete)</li>|
 |添加项|Beta 和 v1.0|添加了对 `requiresReview` 查询参数的支持：<br><ul><li> [发布应用](/graph/api/teamsapp-publish?view=graph-rest-beta)</li><li>[更新应用](/graph/api/teamsapp-update?view=graph-rest-beta)|
+|添加项|v1.0|添加了对直接[创建团队](/graph/api/team-post?view=graph-rest-1.0)的支持（无需先创建组），这也使你可以创建班级团队。|
+|添加项 | v1.0 | 向 [team](/graph/api/resources/team?view=graph-rest-1.0) 资源类型添加了 [members](/graph/api/team-post-members?view=graph-rest-1.0) 导航属性，以提高可靠性并降低延迟。|
 
 ### <a name="to-do-tasks"></a>待办任务 
 
 | **更改类型** | **版本** | **说明** |
 |:---|:---|:---|
-|添加项|beta|引入了微软待办 API，添加了 [todoTask](/graph/api/resources/todotask?view=graph-rest-beta)、[todoTaskList](/graph/api/resources/todotasklist?view=graph-rest-beta) 和 [linkedResource](/graph/api/resources/linkedresource?view=graph-rest-beta) 资源|
-|更改|beta|已弃用 Outlook 任务 API|
+|添加项|beta|引入了微软待办 API。 添加了 [todoTask](/graph/api/resources/todotask?view=graph-rest-beta)、[todoTaskList](/graph/api/resources/todotasklist?view=graph-rest-beta) 和 [linkedResource](/graph/api/resources/linkedresource?view=graph-rest-beta) 资源和 CRUD 操作。|
+|更改|beta|已启用 Outlook 任务 API，包括 [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-beta)、[outlookTaskFolder](/graph/api/resources/outlooktaskfolder?view=graph-rest-beta)、[outlookTaskGroup](/graph/api/resources/outlooktaskgroup?view=graph-rest-beta) 以及相关的操作和方法。|
 
 ## <a name="july-2020"></a>2020 年 7 月
 
@@ -3205,7 +3207,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加项        | v1.0          | 向 [message](/graph/api/resources/message?view=graph-rest-1.0) 实体添加了 **flag** 属性。 添加了共享的 [followupFlag](/graph/api/resources/followupflag?view=graph-rest-1.0) 复杂类型。|
 | 添加项        | v1.0        | 向 [message](/graph/api/resources/message?view=graph-rest-1.0) 实体添加了 **internetMessageHeaders** 属性。 |
 | Addition        | v1.0        | 添加了 [internetMessageHeader](/graph/api/resources/internetmessageheader?view=graph-rest-1.0) 复杂类型。 |
-| Addition        | v1.0        | 向 [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) 实体添加了 **messageRules** 导航属性。 **messageRules** 是 [messageRule](/graph/api/resources/messagerule?view=graph-rest-1.0) 实例的集合。 |
+| 添加项        | v1.0        | 向 [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) 实体添加了 **messageRules** 导航属性。 **messageRules** 是 [messageRule](/graph/api/resources/messagerule?view=graph-rest-1.0) 实例的集合。 |
 | 添加项        | v1.0        | 添加了 [messageRule](/graph/api/resources/messagerule?view=graph-rest-1.0) 实体，以及 [messageRuleActions](/graph/api/resources/messageruleactions?view=graph-rest-1.0)、[messageRulePredicates](/graph/api/resources/messagerulepredicates?view=graph-rest-1.0) 和 [sizeRange](/graph/api/resources/sizerange?view=graph-rest-1.0) 复杂类型。 |
 | Addition        | v1.0        | 添加了消息规则的以下 CRUD 操作：[创建](/graph/api/mailfolder-post-messagerules?view=graph-rest-1.0)、[列出](/graph/api/mailfolder-list-messagerules?view=graph-rest-1.0)、[获取](/graph/api/messagerule-get?view=graph-rest-1.0)、[更新](/graph/api/messagerule-update?view=graph-rest-1.0)和[删除](/graph/api/messagerule-delete?view=graph-rest-1.0)。 |
 | 添加项 | Beta | 添加了 [mailSearchFolder](/graph/api/resources/mailsearchfolder?view=graph-rest-beta)。 |

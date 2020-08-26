@@ -1,16 +1,16 @@
 ---
 title: 创建团队
-description: 新建团队。
+description: 创建新团队。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 55f1e6c61f687b8a43a55b2514d3afa2bed51311
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
-ms.translationtype: MT
+ms.openlocfilehash: ccdfc5ee542a8e819ecbf4d30450dcc8e2c19991
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681964"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873095"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -26,7 +26,7 @@ ms.locfileid: "44681964"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :------------------------------------------ |
-| 委派（工作或学校帐户）     | Group.ReadWrite.All、Directory.ReadWrite.All |
+| 委派（工作或学校帐户）     | Group.ReadWrite.All, Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用程序                            | Group.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -107,7 +107,7 @@ Content-Length: 0
 
 ### <a name="example-2-application-permissions"></a>示例 2：应用权限
 
-下面是使用应用程序权限的最小请求示例。 通过省略其他属性，客户端可以隐式采用 `template` 表示的预定义模板的默认值。 通过应用程序权限发出请求时，必须在 `owners` 集合中指定[用户](../resources/user.md)。
+下面是使用应用程序权限的最小请求示例。 通过省略其他属性，客户端可以隐式采用 `template` 表示的预定义模板的默认值。 通过应用程序权限发出请求时，必须在 `members` 集合中指定[用户](../resources/user.md)。
 
 #### <a name="request"></a>请求
 
@@ -124,8 +124,12 @@ Content-Type: application/json
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "displayName": "My Sample Team",
   "description": "My Sample Team’s Description",
-  "owners@odata.bind": [
-    "https://graph.microsoft.com/beta/users('userId')"
+  "members@odata.bind": [
+            {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "roles": ["owner"],
+            "userId": "0040b377-61d8-43db-94f5-81374122dc7e"
+        }
   ]
 }
 ```
@@ -289,7 +293,7 @@ Content-Length: 0
 此调用需注意以下几点：
 
 * 要创建团队，从中创建团队的组必须至少有一名所有者。
-* 所创建的团队将始终从组的显示名称、可见性、规范和所有者继承。 因此，在使用 **group@odata.bind** 属性进行此调用时，如果包含团队的 **displayName**、**visibility**、**specialization** 或 **owners@odata.bind** 属性，则将返回错误。
+* 所创建的团队将始终从组的显示名称、可见性、规范和成员继承。 因此，在使用 **group@odata.bind** 属性进行此调用时，如果包含团队的 **displayName**、**visibility**、**specialization** 或 **members@odata.bind** 属性，则将返回错误。
 * 如果在不到 15 分钟之前创建组，则可能会因为重复延迟导致“创建团队呼叫”失败并显示错误代码 404。 建议重试“创建团队”调用三次，每次调用之间延迟 10 秒。
 
 

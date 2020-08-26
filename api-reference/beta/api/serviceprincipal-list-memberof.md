@@ -1,34 +1,34 @@
 ---
-title: 列出 servicePrincipal memberOf
-description: 获取此服务主体是其直接成员的组和目录角色。 此操作不可传递。
+title: List servicePrincipal memberOf
+description: 获取此服务主体作为直接成员所属的组和目录角色。 此操作不可传递。
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 2d36c6b57fc5b73b0faec50d73de67a575aed811
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 09b80f11d7d7f434c70ea043185524e9f3fc70a8
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383110"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873109"
 ---
-# <a name="list-serviceprincipal-memberof"></a>列出 servicePrincipal memberOf
+# <a name="list-serviceprincipal-memberof"></a>List servicePrincipal memberOf
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取此[servicePrincipal](../resources/serviceprincipal.md)是其直接成员的组和目录角色。 此操作不可传递。
+获取此 [servicePrincipal](../resources/serviceprincipal.md) 作为直接成员所属的组和目录角色。 此操作不可传递。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | "Application"、"all"、"Directory.accessasuser.all"、"全部"、"全部"、"全部"、"全部"、"所有"    |
+|委派（工作或学校帐户） | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | "Application.readwrite.ownedby"、"全部"、"全部"、"全部"、"全部"、"全部"、"全部"、"全部"、"目录" |
+|应用程序 | Application.Read.All、Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -41,14 +41,14 @@ GET /servicePrincipals/{id}/memberOf
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持[OData 查询参数](/graph/query_parameters)，以帮助自定义响应，包括 `$search` 、 `$count` 和 `$filter` 。 此外，还会启用 OData 强制转换，例如，您可以强制转换为仅获取用户所属的 directoryRoles。 您可以 `$search` 在**displayName**属性上使用。 为此资源添加或更新项目时，将对其进行专门编制索引，以便 `$count` 与 `$search` 查询参数一起使用。 在添加或更新项目以及在索引中可用时，可能会出现轻微的延迟。
+此方法支持[OData query parameters](/graph/query_parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` 还启用了 OData 强制转换，例如，你可以强制转换为仅获取用户所属的 directoryRoles。 `$search`可以用在 **displayName**属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| ConsistencyLevel | 仍然. 在 `$count` 使用 `$search` 、 `$filter` 、 `$orderby` 或 OData 转换查询参数时，此标头和是必需的。 它使用的索引可能不是最新的，并包含对对象的最新更改。 |
+| ConsistencyLevel | 最终。 使用 `$search`、`$filter`、`$orderby` 或 OData 强制转换查询参数时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -59,7 +59,7 @@ GET /servicePrincipals/{id}/memberOf
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-groups-and-directory-roles-that-the-service-principal-is-a-direct-member-of"></a>示例1：获取服务主体是其直接成员的组和目录角色
+### <a name="example-1-get-groups-and-directory-roles-that-the-service-principal-is-a-direct-member-of"></a>示例 1：获取此服务主体作为直接成员所属的组和目录角色
 
 #### <a name="request"></a>请求
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf
 #### <a name="response"></a>响应
 
 下面展示了示例响应。 
-> **注意：** 为简洁起见，可能会截断此处展示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为简洁起见，可能会截断此处展示的响应对象。 将从实际调用中返回所有属性。
 
 <!-- {
   "blockType": "response",
@@ -120,7 +120,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-all-memberships"></a>示例2：仅获取所有成员身份的计数
+### <a name="example-2-get-only-a-count-of-all-memberships"></a>示例 2：仅获取所有可成员身份的计数
 
 #### <a name="request"></a>请求
 
@@ -168,7 +168,7 @@ Content-type: text/plain
 
 394
 
-### <a name="example-3-use-odata-cast-to-get-only-a-count-of-group-membership"></a>示例3：使用 OData 强制转换仅获取组成员身份的计数
+### <a name="example-3-use-odata-cast-to-get-only-a-count-of-group-membership"></a>示例 3：使用 OData 强制转换以仅获取组成员身份的计数
 
 #### <a name="request"></a>请求
 
@@ -216,7 +216,7 @@ Content-type: text/plain
 
 394
 
-### <a name="example-4-use-search-and-odata-cast-to-get-group-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例4：使用 $search 和 OData 强制转换来获取具有包含字母 "Video" 的显示名称的组成员身份，其中包括返回的对象的计数
+### <a name="example-4-use-search-and-odata-cast-to-get-group-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>示例 4：使用 $search 和 OData 强制转换获取显示名称中包含字母“Video”（包括返回的对象数）的组成员身份
 
 #### <a name="request"></a>请求
 
@@ -264,12 +264,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-use-filter-and-odata-cast-to-get-group-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>示例5：使用 $filter 和 OData 强制转换来获取具有以字母 "A" 开头的显示名称的组成员身份，其中包括返回对象的计数
+### <a name="example-5-use-filter-and-odata-cast-to-get-group-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>示例 5：使用 $filter 和 OData 强制转换获取显示名称以字母“A”开头（包括返回的对象数）的组成员身份
 
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_a_count"
@@ -278,6 +280,20 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'A')
 ConsistencyLevel: eventual
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-a-count-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-a-count-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-a-count-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 
