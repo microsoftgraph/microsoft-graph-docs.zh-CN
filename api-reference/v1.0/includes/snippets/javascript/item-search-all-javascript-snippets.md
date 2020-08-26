@@ -1,11 +1,11 @@
 ---
-description: 自动生成的文件。 不修改
-ms.openlocfilehash: fff5768e071426e50db00b5557ff2b5c3391b758
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+description: 自动生成文件。 请不要修改
+ms.openlocfilehash: f378f286c35c867d63000e71f2e44e6a0bb51b91
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35730791"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873925"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/drive/search(q='{search-query}')')
+let res = await client.api('/me/drive/search(q='Contoso Project')')
     .get();
 
 ```

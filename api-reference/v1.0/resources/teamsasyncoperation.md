@@ -1,16 +1,16 @@
 ---
 title: teamsAsyncOperation 资源类型
-description: 'Microsoft 团队 async operation 是 transcends 一个 API 请求的生存期的操作。 '
+description: 'Microsoft 团队异步操作 transcends 单个 API 请求的生存期。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: cfeb7aeae2621af9e8609ae503c3a0ef2d95e989
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 61173f92b6aa74d0a703366140f17f983d94c855
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533494"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873277"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>teamsAsyncOperation 资源类型
 
@@ -33,8 +33,8 @@ Microsoft 团队 async operation 是 transcends 一个 API 请求的生存期的
 |状态|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| 操作状态。|
 |lastActionDateTime|DateTimeOffset |上次更新异步操作的时间。|
 |attemptsCount|Int32|在标记为 "成功" 或 "失败" 之前尝试操作的次数。|
-|targetResourceId|containerparentjob |作为此异步操作（通常为[团队](../resources/team.md)）的结果创建或修改的对象的 ID。|
-|targetResourceLocation|字符串|作为此异步操作的结果创建或修改的对象的位置。 应将此 URL 视为不透明值，而不会将其解析为其组件路径。|
+|targetResourceId|containerparentjob |作为此异步操作（通常为 [团队](../resources/team.md)）的结果创建或修改的对象的 ID。|
+|targetResourceLocation|string|作为此异步操作的结果创建或修改的对象的位置。 应将此 URL 视为不透明值，而不会将其解析为其组件路径。|
 |error|[operationError](operationerror.md)|导致异步操作失败的任何错误。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -44,7 +44,7 @@ Microsoft 团队 async operation 是 transcends 一个 API 请求的生存期的
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.teamsasyncoperation"
+  "@odata.type": "microsoft.graph.teamsAsyncOperation"
 }-->
 
 ```json
