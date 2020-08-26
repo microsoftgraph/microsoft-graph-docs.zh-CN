@@ -4,16 +4,18 @@ description: 更改通知可以通过不同的技术来传送，包括 Webhook �
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 83014782c98d0807681a9d8da0d37b6092df167b
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: e7867a42e50b134692fd224a5132d9cc45b5bf2e
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598578"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873284"
 ---
 # <a name="get-change-notifications-delivered-in-different-ways-preview"></a>获取通过不同方式传送的更改通知（预览版）
 
 可通过不同方式向订阅者传送更改通知。 如果更改通知的主要传送模式是 Webhook，则对于高吞吐量场景或当接收方无法公开公用的通知 URL 时，利用 Webhooks 可能很困难。  
+
+此更改通知传递模式可用于支持 Microsoft Graph 更改通知的所有资源。
 
 高吞吐量场景的恰当例子包括订阅大量资源的应用程序、订阅频繁变更的资源的应用程序以及跨大量组织订阅资源的多租户应用程序。
 
@@ -23,7 +25,7 @@ ms.locfileid: "46598578"
 使用 Azure 事件中心接收更改通知与 Webhook 在某些方面有所不同，包括：
 
 - 不依赖公开显示的通知 URL。 事件中心 SDK 会将通知转发到你的应用程序。
-- 无需实施[通知 URL 验证](webhooks.md#notification-endpoint-validation)。
+- 无需恢复[通知 URL 验证](webhooks.md#notification-endpoint-validation)。 可忽略收到的验证消息。
 - 需要预配 Azure 事件中心。
 - 需要预配 Azure 密钥保管库。
 
@@ -140,6 +142,27 @@ echo "Notification Url:\n${notificationUrl}"
 在应用程序中接收通知之前，你需要创建另一个具有“侦听”权限的共享访问策略并获取连接字符串，类似于[配置 Azure 事件中心](#configuring-the-azure-event-hub)中列出的步骤。
 
 > **注意：** 为应用程序创建单独的策略来侦听事件中心消息，而不是重用在 Azure 密钥保管库中设置的相同连接字符串。 这可确保解决方案的每个组件仅具有所需的权限，并遵循最低权限安全原则。
+
+> **注意：** 应用程序会在每次创建新订阅时收到验证消息。 应忽略这些通知。 下面的示例表示验证消息的正文。
+
+```json
+ {
+    "value":[
+        {
+            "subscriptionId":"NA",
+            "subscriptionExpirationDateTime":"NA",
+            "clientState":"NA",
+            "changeType":"Validation: Testing client application reachability for subscription Request-Id: 522a8e7e-096a-494c-aaf1-ac0dcfca45b7",
+            "resource":"NA",
+            "resourceData":{
+                "@odata.type":"NA",
+                "@odata.id":"NA",
+                "id":"NA"
+            }
+        }
+    ]
+}
+```
 
 ### <a name="what-happens-if-the-microsoft-graph-change-tracking-application-is-missing"></a>如果缺少 Microsoft Graph 更改跟踪应用程序会怎样？
 

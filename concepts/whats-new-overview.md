@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 52b4ddad66eff17be04fcee612a839682f086660
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 94fab900fafb780c4561d82df4b82a8d210da4f0
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849329"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873375"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -22,19 +22,47 @@ ms.locfileid: "46849329"
 ### <a name="change-notifications"></a>更改通知
 在 Microsoft Graph for US Government 国家云中[跟踪受支持资源的更改](delta-query-overview.md)。
 
+### <a name="teamwork"></a>团队合作
+- 通过[应用程序定义](/graph/api/resources/teamsappdefinition)的 **publishingState** 属性获取 Microsoft Teams [应用](/graph/api/resources/teamsapp)的发布状态。 可能的值为 `submitted`、`published` 和 `rejected`。 请参阅[示例](/graph/api/teamsapp-list?view=graph-rest-1.0&tabs=http#example-3-list-applications-with-a-given-id-and-return-the-submission-review-state)。
+- 使用 `AppCatalog.Submit` 委派的权限，允许用户[提交应用](/graph/api/teamsapp-publish)并请求管理员审查。 对用户使用相同的权限来[取消](/graph/api/teamsapp-delete)过去提交的尚未发布的应用。 
 
 ## <a name="august-2020-new-in-preview-only"></a>2020 年 8 月：仅限预览版新增功能
 
 ### <a name="applications"></a>应用程序
 在[服务主体](/graph/api/resources/serviceprincipal?view=graph-rest-beta)应用程序资源中支持基于密码的单点登录，并在 **passwordSingleSignOnSettings** 属性中指定此类[设置](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta)。 有关 Azure AD 中基于密码的单一登录的信息，请参阅[配置基于密码的单一登录](/azure/active-directory/manage-apps/configure-password-single-sign-on-non-gallery-applications)。
 
+### <a name="calendar"></a>日历
+增强对涉及定期[事件](/graph/api/resources/event?view=graph-rest-beta)的方案的编程支持：
+- 通过使用 **occurrenceId** 属性，可以可靠地标识定期数据系列中的任何事件，包括已修改或已取消的事件。
+- 通过使用 **exceptionOccurrences** 属性获取定期数据系列中的任何例外事件。
+- 通过使用 **cancelledOccurrences** 属性获取数据系列中的任何取消事件。
+
 ### <a name="change-notifications"></a>更改通知
 - 使用[订阅](/graph/api/resources/subscription?view=graph-rest-beta)的 **includeResourceData** 属性，以[设置包含资源数据的更改通知](webhooks-with-resource-data.md)。 不要使用 **includeProperties** 属性。
 - 获取[通过事件中心发送的更改通知](change-notifications-delivery.md)。
 
+### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
+- 通过使用 **allowAllUser** 属性向所有用户和组授予对[打印机共享](/graph/api/resources/printershare?view=graph-rest-beta)的访问权限。
+- 使用新的委派和应用程序权限来访问或管理[打印文档](/graph/api/resources/printDocument?view=graph-rest-beta)、[打印作业](/graph/api/resources/printjob?view=graph-rest-beta)、[打印机](/graph/api/resources/printer?view=graph-rest-beta)、[打印机共享](/graph/api/resources/printershare?view=graph-rest-beta)或[打印任务定义](/graph/api/resources/printtaskdefinition?view=graph-rest-beta)。 有关详细信息，请参阅云打印 [8 月](changelog.md#august-2020)更新。
+
+### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
+beta 版本中的 Intune [8 月](changelog.md#august-2020)更新。
+
 ### <a name="identity-and-access--governance"></a>身份和访问 | 治理
 - 自定义[使用条款协议](/graph/api/resources/agreement?view=graph-rest-beta)，以支持协议的到期日和频率，要求用户按设备接受协议，或者按设定的频率重新接受协议。 
 - 使用 **file** 属性导航到某个[自定义协议](/graph/api/resources/agreementfile?view=graph-rest-beta)以了解使用条款。 不要使用 **files** 属性。
+- 添加、删除和列出内部或外部发起人，他们可以批准[互联组织](/graph/api/resources/connectedorganization?view=graph-rest-beta)关于访问组、应用程序或 SharePoint Online 网站的请求。 有关详细信息，请参阅[权利管理](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta)。
+
+### <a name="people-and-workplace-intelligence--profile"></a>人员和工作场所智能 | 个人资料
+在用户的[个人资料](/graph/api/resources/profile?view=graph-rest-beta)中添加和管理以下额外属性，这些属性可以在 Microsoft 365 和第三方应用程序的共享人员体验中体现：
+- [地址](/graph/api/resources/itemAddress?view=graph-rest-beta)
+- [纪念日](/graph/api/resources/personAnniversary?view=graph-rest-beta)
+- [奖项](/graph/api/resources/personAward?view=graph-rest-beta)
+- [证书](/graph/api/resources/personCertification?view=graph-rest-beta)
+- [笔记](/graph/api/resources/personAnnotation?view=graph-rest-beta)：
+- [专利](/graph/api/resources/itemPatent?view=graph-rest-beta)
+- [出版物](/graph/api/resources/itemPublication?view=graph-rest-beta)
+
 
 ### <a name="reports--microsoft-365-usage-reports"></a>报告 | Microsoft 365 使用情况报告
 获取[有关 Microsoft 365 应用使用情况的报告](/graph/api/resources/microsoft-365-apps-usage-report?view=graph-rest-beta)，特别是有关用户详细信息、用户数量和平台用户数量的报告。
