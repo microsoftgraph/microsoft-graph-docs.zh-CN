@@ -1,16 +1,16 @@
 ---
 title: 团队资源类型
-description: 'Microsoft Teams 中的团队是频道的集合。 '
+description: 'Microsoft Teams 团队是频道的集合。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1a3b05eb0f055cd1cbed84f0e98c1496015f8801
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: aca1ce59f40e758c132d835214442af70a4d571d
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050909"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46872871"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -29,7 +29,8 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[创建团队](../api/team-put-teams.md) | [团队](team.md) | 创建新的团队，或向现有组添加团队。|
+|[创建团队](../api/team-post.md) | [teamsAsyncOperation](teamsasyncoperation.md) | 从头开始创建团队。 |
+|[从组创建团队](../api/team-put-teams.md) | [team](team.md) | 创建新的团队，或向现有组添加团队。|
 |[获取团队](../api/team-get.md) | [team](team.md) | 检索指定团队的属性和关系。|
 |[更新团队](../api/team-update.md) | [team](team.md) |更新指定团队的属性。 |
 |[删除团队](/graph/api/group-delete?view=graph-rest-1.0) | 无 |删除团队及其关联的组。 |
@@ -44,24 +45,32 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型   | 说明 |
+| 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
+|displayName|string| 团队的名称。 |
+|description|string| 组的说明（可选）。 |
+|classification|string| 标签（可选）。 通常说明团队的数据或业务敏感性。 必须与租户目录中的一个预配置集匹配。 |
+|specialization|[teamSpecialization](teamspecialization.md)| 可选。 指示团队是否适用于特定用例。  每个团队专用化都可以访问针对其用例的独特行为和体验。 |
+|visibility|[teamVisibilityType](teamvisibilitytype.md)| 组和团队的可见性。 默认值为 Public。 |
 |funSettings|[teamFunSettings](teamfunsettings.md) |用于配置团队中 Giphy、成员和贴纸使用情况的设置。|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |用于配置来宾是否可以在团队中创建、更新或删除频道的设置。|
-|internalId | 字符串 | 已在一些位置（如审核日志/[Office 365 管理活动 API](/office/office-365-management-api/office-365-management-activity-api-reference)）使用的团队唯一 ID。 |
+|internalId | 字符串 | 已在一些位置（如审核日志/[Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)）使用的团队唯一 ID。 |
 |isArchived|Boolean|此团队是否处于只读模式。 |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |用于配置成员是否可以在团队中执行某些操作（例如，创建频道和添加机器人）的设置。|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |用于配置团队中的消息传递和提及的设置。|
 |webUrl|string (readonly) | 用于转到 Microsoft Teams 客户端中团队的超链接。 这是在 Microsoft Teams 客户端中右键单击团队并选择**获取团队链接**时获取的 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 |
-|classSettings|[teamClassSettings](teamclasssettings.md) |配置班级设置。 仅当团队代表班级时可用。|
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型   | 说明 |
+| 关系 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |channels|[channel](channel.md) 集合|与团队相关的频道和消息的集合。|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) 集合|此团队中安装的应用。|
+|members|[conversationMember](../resources/conversationmember.md) 集合|团队的成员和所有者。|
+|operations|[teamsAsyncOperation](teamsasyncoperation.md) 集合| 在此团队中运行过或正在运行的异步操作。 | 
 |[primaryChannel](../api/team-get-primarychannel.md)|[频道](channel.md)| 团队的常规频道。 | 
+|schedule|[日程安排](schedule.md)| 此团队的排班安排。|
+|template|[teamsTemplate](teamstemplate.md)| 创建此团队时所使用的模板。 请参阅[可用模板](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-templates)。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

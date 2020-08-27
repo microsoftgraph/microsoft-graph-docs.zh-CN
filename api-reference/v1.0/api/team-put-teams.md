@@ -1,18 +1,18 @@
 ---
-title: 创建团队
+title: 从组创建团队
 description: 在某个组下创建新的团队。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 85a351c3e7ecc276666b6ed912828828de756834
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
-ms.translationtype: MT
+ms.openlocfilehash: cdda1a24fad5827e9c320384a39325699d4d8165
+ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845699"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46873305"
 ---
-# <a name="create-team"></a>创建团队
+# <a name="create-team-from-group"></a>从组创建团队
 
 命名空间：microsoft.graph
 
@@ -30,7 +30,7 @@ ms.locfileid: "44845699"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All、Directory.ReadWrite.All |
+|委派（工作或学校帐户） | Group.ReadWrite.All, Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.ReadWrite.All、Directory.ReadWrite.All |
 
