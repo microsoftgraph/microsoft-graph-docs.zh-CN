@@ -6,12 +6,12 @@ title: 搜索文件
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 08774f68c9b5ec17ff3e0c5f4f6ba42e058245e1
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.openlocfilehash: edd6a0f1c43b7aa27b4089a63902840ce7e2562d
+ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091401"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47287468"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>搜索驱动器内的 DriveItems
 
@@ -58,13 +58,13 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 ### <a name="request"></a>请求
 
-下面的示例在登录用户的驱动器项的多个字段中搜索 "Contoso Project" 的匹配项。
+下面的示例在登录用户的驱动器项的多个字段中搜索“Contoso Project”的匹配项。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "item_search" }-->
 
 ```msgraph-interactive
-GET /me/drive/root/search(q='Contoso Projec}')
+GET /me/drive/root/search(q='Contoso Project')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-search-csharp-snippets.md)]

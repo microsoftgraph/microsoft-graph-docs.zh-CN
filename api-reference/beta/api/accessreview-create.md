@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ca2fcc1aa0fe7f61c757d2de6a29af52d51709d8
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 5247bacbbf15274f132c5d7620b806cfe99613b6
+ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123515"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47287454"
 ---
 # <a name="create-accessreview"></a>创建 accessReview
 
@@ -18,11 +18,11 @@ ms.locfileid: "43123515"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中，创建一个新的[accessReview](../resources/accessreview.md)对象。
+在 "Azure AD [access 评论](../resources/accessreviews-root.md) " 功能中，创建一个新的 [accessReview](../resources/accessreview.md) 对象。
 
-在发出此请求之前，呼叫者必须先[检索业务流模板列表](businessflowtemplate-list.md)，才能将值`businessFlowTemplateId`包含在请求中。
+在发出此请求之前，呼叫者必须先 [检索业务流模板列表](businessflowtemplate-list.md)，才能将值 `businessFlowTemplateId` 包含在请求中。
 
-发出此请求后，调用方应[创建一个 programControl](programcontrol-create.md)，以将访问审核链接到某个程序。  
+发出此请求后，调用方应 [创建一个 programControl](programcontrol-create.md)，以将访问审核链接到某个程序。  
 
 ## <a name="permissions"></a>权限
 
@@ -32,10 +32,10 @@ ms.locfileid: "43123515"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview、AccessReview 和所有 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | AccessReview.ReadWrite.Membership |
+|应用程序                            | AccessReview.ReadWrite.Membership |
 
-调用方还应具有 ProgramControl 权限，以便在创建访问审核之后，调用方可以创建[ProgramControl](../resources/programcontrol.md)。
-此外，登录用户还必须位于允许他们创建访问审阅的目录角色中。  有关更多详细信息，请参阅[access 评审](../resources/accessreviews-root.md)的角色和权限要求。
+调用方还应具有 ProgramControl 权限，以便在创建访问审核之后，调用方可以创建 [ProgramControl](../resources/programcontrol.md)。
+此外，登录用户还必须位于允许他们创建访问审阅的目录角色中。  有关更多详细信息，请参阅 [access 评审](../resources/accessreviews-root.md)的角色和权限要求。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ POST /accessReviews
 | Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[accessReview](../resources/accessreview.md)对象的 JSON 表示形式。
+在请求正文中，提供 [accessReview](../resources/accessreview.md) 对象的 JSON 表示形式。
 
 下表显示创建 accessReview 时所需的属性。
 
@@ -59,27 +59,27 @@ POST /accessReviews
 | `startDateTime`           |`DateTimeOffset`                                                | 计划开始评审时的日期时间。  这必须是将来的日期。   |
 | `endDateTime`             |`DateTimeOffset`                                                | 计划结束评审时的日期/时间。 此时间必须至少为一个晚于开始日期的一天。   |
 | `description`             |`String`                                                        | 要向审阅者显示的说明。 |
-| `businessFlowTemplateId`  |`String`                                                        | 从[businessFlowTemplate](../resources/businessflowtemplate.md)获取的业务流模板标识符。  |
-| `reviewerType`            |`String`                                                        | 审阅者的关系类型：审阅的对象的访问权限、 `self` `delegated`、或。 `entityOwners` | 
+| `businessFlowTemplateId`  |`String`                                                        | 从 [businessFlowTemplate](../resources/businessflowtemplate.md)获取的业务流模板标识符。  |
+| `reviewerType`            |`String`                                                        | 审阅者的关系类型：审阅的对象的访问权限、、 `self` `delegated` 或 `entityOwners` 。 | 
 | `reviewedEntity`          |`microsoft.graph.identity`                                      | 为其创建访问审核的对象，例如组的成员身份或向应用程序分配的用户。 | 
 
 
-如果要提供的 reviewerType 具有值`delegated`，则调用方还必须包括该`reviewers`属性，其中包含审阅人的[userIdentity](../resources/useridentity.md)的集合。
+如果要提供的 reviewerType 具有值 `delegated` ，则调用方还必须包括该 `reviewers` 属性，其中包含审阅人的 [userIdentity](../resources/useridentity.md) 的集合。
 
-如果您的应用程序在没有登录用户的情况下调用此 API，则呼叫者还必须包含**createdBy**属性，其值是将被标识为审阅的创建者的用户的[userIdentity](../resources/useridentity.md) 。
+如果您的应用程序在没有登录用户的情况下调用此 API，则呼叫者还必须包含 **createdBy** 属性，其值是将被标识为审阅的创建者的用户的 [userIdentity](../resources/useridentity.md) 。
 
-此外，呼叫者还可以包括设置、创建定期审阅系列或从默认的审阅行为更改。 特别是，若要创建定期检查，呼叫者必须在 " `accessReviewRecurrenceSettings`访问审核设置" 中包含 ""，
+此外，呼叫者还可以包括设置、创建定期审阅系列或从默认的审阅行为更改。 特别是，若要创建定期检查，呼叫者必须在 `accessReviewRecurrenceSettings` "访问审核设置" 中包含 ""，
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201, Created`正文中返回响应代码和[accessReview](../resources/accessreview.md)对象。
+如果成功，此方法 `201, Created` 在响应正文中返回响应代码和 [accessReview](../resources/accessreview.md) 对象。
 
 ## <a name="example"></a>示例
 
-下面的示例演示了如何创建一次性（非定期）访问审核，并将两个用户显式指定为审阅者。
+下面的示例演示了如何创建一次性 (不定期) 访问审核，明确地将两个用户指定为审阅者。
 
 ### <a name="request"></a>请求
-在请求正文中，提供[accessReview](../resources/accessreview.md)对象的 JSON 表示形式。
+在请求正文中，提供 [accessReview](../resources/accessreview.md) 对象的 JSON 表示形式。
 
 <!-- {
   "blockType": "ignored",
@@ -94,7 +94,7 @@ Content-type: application/json
     "startDateTime":"2017-02-10T00:35:53.214Z",
     "endDateTime":"2017-03-12T00:35:53.214Z",
     "reviewedEntity": {
-        "id": "99025615-a0b1-47ec-9117-35377b10998b",
+        "id": "99025615-a0b1-47ec-9117-35377b10998b"
     },
     "reviewerType" : "delegated",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",

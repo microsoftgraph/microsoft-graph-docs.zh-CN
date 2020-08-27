@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b42d564f37a6e81ca48933e01c59c99de9845592
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 6f8cb1f316bf9051dba0fe0ac138d75faf95c8d7
+ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791594"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47287489"
 ---
 # <a name="teamsappdefinition-resource-type"></a>teamsAppDefinition 资源类型
 
@@ -25,11 +25,11 @@ ms.locfileid: "46791594"
 | 属性            | 类型     | 说明 |
 |:------------------- |:-------- |:----------- |
 | id                  | string   | 唯一 id (不是团队的 appid) 。 |
-| teamsAppId          | 字符串   | 团队应用程序清单中的 id。 |
-| publishingState| 字符串|特定版本的团队应用程序的已发布状态。 可能的值是：</br>`submitted` —团队应用程序的特定版本已提交，正在进行审阅。 </br>`published`  —发布特定版本的团队应用程序的请求已由管理员批准，并且应用已发布。 </br> `rejected` —管理员拒绝了发布特定版本的团队应用程序的请求。 |
-| azureADAppId        | 字符串   | 来自团队应用程序清单的 WebApplicationInfo.id。 |
+| teamsAppId          | string   | 团队应用程序清单中的 id。 |
+| publishingState| string|特定版本的团队应用程序的已发布状态。 可能的值是：</br>`submitted` —团队应用程序的特定版本已提交，正在进行审阅。 </br>`published`  —发布特定版本的团队应用程序的请求已由管理员批准，并且应用已发布。 </br> `rejected` —管理员拒绝了发布特定版本的团队应用程序的请求。 |
+| azureADAppId        | string   | 来自团队应用程序清单的 WebApplicationInfo.id。 |
 | displayName         | string   | 应用程序开发人员提供的应用程序的名称。 |
-| version             | 字符串   | 应用程序的版本号。 |
+| version             | string   | 应用程序的版本号。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -44,7 +44,7 @@ ms.locfileid: "46791594"
   "id": "string",
   "teamsAppId": "string",
   "displayName": "Test App",
-  "version": "1.0.0",
+  "version": "1.0.0"
 }
 ```
 

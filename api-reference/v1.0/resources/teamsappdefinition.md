@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 322b7f50ccb51702ae05ca55f8e73396321a0283
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 33c16f396d1975b3ffd25de3cf0a8b9f9d7bbf50
+ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791678"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47287482"
 ---
 # <a name="teamsappdefinition-resource-type"></a>teamsAppDefinition 资源类型
 
@@ -23,10 +23,10 @@ ms.locfileid: "46791678"
 | 属性            | 类型     | 说明 |
 |:------------------- |:-------- |:----------- |
 | id                  | string   | 唯一 ID (团队应用程序 ID) 。 |
-| teamsAppId          | 字符串   | 团队应用程序清单中的 ID。 |
-| publishingState| 字符串|特定版本的团队应用程序的已发布状态。 可能的值是：</br>`submitted` —团队应用程序的特定版本已提交，正在进行审阅。 </br>`published`  —发布特定版本的团队应用程序的请求已由管理员批准，并且应用已发布。 </br> `rejected` —管理员拒绝了发布特定版本的团队应用程序的请求。 |
+| teamsAppId          | string   | 团队应用程序清单中的 ID。 |
+| publishingState| string|特定版本的团队应用程序的已发布状态。 可能的值是：</br>`submitted` —团队应用程序的特定版本已提交，正在进行审阅。 </br>`published`  —发布特定版本的团队应用程序的请求已由管理员批准，并且应用已发布。 </br> `rejected` —管理员拒绝了发布特定版本的团队应用程序的请求。 |
 | displayName         | string   | 应用程序开发人员提供的应用程序的名称。 |
-| version             | 字符串   | 应用程序的版本号。 |
+| version             | string   | 应用程序的版本号。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -41,7 +41,7 @@ ms.locfileid: "46791678"
   "id": "string",
   "teamsAppId": "string",
   "displayName": "string",
-  "version": "string",
+  "version": "string"
 }
 ```
 

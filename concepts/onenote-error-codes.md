@@ -4,12 +4,12 @@ description: 本文介绍当通过 API 发送的请求失败时，Microsoft Grap
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: fad96eba2b5b2fa628cae81cdfdc859dc572e938
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 49b61a5acec84cc4425c85329ce8482fb9c31eb7
+ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898021"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47287433"
 ---
 # <a name="error-codes-for-onenote-apis-in-microsoft-graph"></a>Microsoft Graph 中的 OneNote API 错误代码
 
@@ -333,7 +333,7 @@ OData 查询无效。
 ### <a name="20166"></a>20166
 应用程序在短时间内以用户身份发出的请求过多。 当 API 检测到应用程序使用的资源过多时，它会返回 429 状态代码和此错误，以帮助确保 OneNote API 保持稳定和可响应状态。 
 
-有关详细信息，请参阅 [OneNote API 限制及避免方法](https://blogs.msdn.com/b/onenotedev/archive/2016/01/13/onenote-api-throttling-and-best-practices.aspx)。
+有关详细信息，请参阅 [Microsoft Graph 服务特定限制指南](/graph/throttling#service-specific-limits)。
 
 ### <a name="20168"></a>20168
 请求中指定的视频源不受支持。 请参阅[支持的视频网站](onenote-images-files.md#adding-videos)获取最新列表。
