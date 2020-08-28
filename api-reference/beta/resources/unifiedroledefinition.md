@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fd26a0526327c4b630f52fd80d5a75b4df9430c7
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 3172f733d83ee0fd549318992f67aa61bdc2bf96
+ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218021"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47296552"
 ---
 # <a name="unifiedroledefinition-resource-type"></a>unifiedRoleDefinition 资源类型
 
@@ -20,11 +20,11 @@ ms.locfileid: "43218021"
 
 UnifiedRoleDefinition 是列出可执行的操作（如读取、写入和删除）的权限的集合。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出 unifiedRoleDefinition](../api/rbacapplication-list-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md)集合 | 读取 unifiedRoleDefinition 对象及其属性的列表。 |
+| [列出 unifiedRoleDefinition](../api/rbacapplication-list-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) 集合 | 读取 unifiedRoleDefinition 对象及其属性的列表。 |
 | [获取 unifiedRoleDefinition](../api/unifiedroledefinition-get.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | 读取 unifiedRoleDefinition 对象的属性。 |
 | [创建 unifiedRoleDefinition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | 创建 unifiedRoleDefinition 对象。 |
 | [更新 unifiedRoleDefinition](../api/unifiedroledefinition-update.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | 更新 unifiedRoleDefinition 对象。 |
@@ -35,13 +35,14 @@ UnifiedRoleDefinition 是列出可执行的操作（如读取、写入和删除�
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |说明|String| UnifiedRoleDefinition 的说明。 当 isBuiltIn 为 true 时为只读。 |
-|displayName|字符串| UnifiedRoleDefinition 的显示名称。 当 isBuiltIn 为 true 时为只读。 必需。|
-|id|字符串| UnifiedRoleDefinition 的唯一标识符。 键，不可为 null，只读。 |
-|isBuiltIn|布尔值| 指示 unifiedRoleDefinition 是否是产品或自定义的默认设置的一部分的标志。 只读。 |
+|displayName|String| UnifiedRoleDefinition 的显示名称。 当 isBuiltIn 为 true 时为只读。 必需。|
+|id|String| UnifiedRoleDefinition 的唯一标识符。 键，不可为 null，只读。 |
+|isBuiltIn|Boolean| 指示 unifiedRoleDefinition 是否是产品或自定义的默认设置的一部分的标志。 只读。 |
 |isEnabled|Boolean| 指示角色是否已启用分配的标志。 如果为 false，则该角色不可用于分配。 当 isBuiltIn 为 true 时为只读。 |
 |resourceScopes|String collection| 由角色定义授予的范围权限列表应用于。 目前仅支持 "/"。 当 isBuiltIn 为 true 时为只读。 **请勿使用。即将弃用此建议。将作用域附加到角色分配** | 
-|rolePermissions|[unifiedRolePermission](unifiedrolepermission.md)集合| 角色中包含的权限的列表。 当 isBuiltIn 为 true 时为只读。 必需。 |
-|templateId|字符串| 当 isBuiltIn 为 false 时可设置的自定义模板标识符。 如果一个要求标识符在不同目录中是相同的，则通常使用此标识符。 当 isBuiltIn 为 true 时为只读。 |
+|rolePermissions|[unifiedRolePermission](unifiedrolepermission.md) 集合| 角色中包含的权限的列表。 当 isBuiltIn 为 true 时为只读。 必需项。 |
+|templateId|String| 当 isBuiltIn 为 false 时可设置的自定义模板标识符。 如果一个要求标识符在不同目录中是相同的，则通常使用此标识符。 当 isBuiltIn 为 true 时为只读。 |
+|inheritsPermissionsFrom| [unifiedRoleDefinition](unifiedroledefinition.md) 集合| 指定角色定义继承自的角色定义的只读集合。 只有 Azure AD 内置角色才支持此属性。 |
 |version|String| 指示 unifiedRoleDefinition 的版本。 当 isBuiltIn 为 true 时为只读。|
 
 ## <a name="relationships"></a>关系
@@ -72,6 +73,7 @@ UnifiedRoleDefinition 是列出可执行的操作（如读取、写入和删除�
   "resourceScopes": ["String"],
   "rolePermissions": [{"@odata.type": "microsoft.graph.unifiedRolePermission"}],
   "templateId": "String",
+  "inheritsPermissionsFrom": [{"@odata.type": "microsoft.graph.unifiedRoleDefinition"}],
   "version": "String"
 }
 ```

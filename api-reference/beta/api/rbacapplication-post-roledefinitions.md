@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0243d4db0d60b7bdde357babb4b5090146f713b1
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: dd41fad0e87d05856f78daf7eb35bc61cdbf4c75
+ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43806183"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47296524"
 ---
 # <a name="create-unifiedroledefinition"></a>创建 unifiedRoleDefinition
 
@@ -18,9 +18,9 @@ ms.locfileid: "43806183"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[unifiedRoleDefinition](../resources/unifiedroledefinition.md)对象。
+创建新的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -46,7 +46,7 @@ POST /roleManagement/directory/roleDefinitions
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[unifiedRoleDefinition](../resources/unifiedroledefinition.md)对象的 JSON 表示形式。
+在请求正文中，提供 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象的 JSON 表示形式。
 
 下表显示创建 roleDefinition 时所需的属性。
 
@@ -54,11 +54,11 @@ POST /roleManagement/directory/roleDefinitions
 |:---------------|:--------|:----------|
 |displayName |string |角色定义的显示名称。|
 |isEnabled |Boolean |指示角色是否已启用分配的标志。 如果为 false，则该角色不可用于分配。|
-|rolePermissions |[unifiedRolePermission](../resources/unifiedrolepermission.md)集合 |角色中包含的权限的列表。|
+|rolePermissions |[unifiedRolePermission](../resources/unifiedrolepermission.md) 集合 |角色中包含的权限的列表。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`201 Created`响应正文中返回响应代码和新的[unifiedRoleDefinition](../resources/unifiedroledefinition.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -139,7 +139,9 @@ Content-type: application/json
             ],
             "condition": null
         }
-    ]
+    ],
+    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('c2cb59a3-2d01-4176-a458-95b0e674966f')/inheritsPermissionsFrom",
+    "inheritsPermissionsFrom": []
 }
 ```
 

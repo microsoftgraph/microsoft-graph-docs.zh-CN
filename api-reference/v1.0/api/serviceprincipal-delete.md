@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: d57bc6d6370f433a1d67ff2acf719f99c5195877
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 3aeec8e560535eec0108331b04f3f0dda18133cd
+ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383565"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47296502"
 ---
 # <a name="delete-serviceprincipal"></a>删除 servicePrincipal
 
 命名空间：microsoft.graph
 
-删除[servicePrincipal](../resources/serviceprincipal.md)对象。
+删除 [servicePrincipal](../resources/serviceprincipal.md) 对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -31,7 +31,6 @@ ms.locfileid: "44383565"
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /servicePrincipals/{id}
-
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|

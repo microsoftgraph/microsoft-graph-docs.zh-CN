@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1816d7b2bf4a1e9ea688d89acf8cfd1065edfabe
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 1fa0867517279954100117d60d933255a5fee587
+ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805939"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47296496"
 ---
 # <a name="update-unifiedroledefinition"></a>更新 unifiedRoleDefinition
 
@@ -18,9 +18,9 @@ ms.locfileid: "43805939"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[unifiedRoleDefinition](../resources/unifiedroledefinition.md)对象的属性。
+更新 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -51,18 +51,19 @@ PATCH /roleManagement/directory/roleDefinitions/{id}
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |说明|String| 角色定义的说明。 当 isBuiltIn 为 true 时为只读。 |
-|displayName|字符串| 角色定义的显示名称。 当 isBuiltIn 为 true 时为只读。 必需。|
-|id|字符串| 角色定义的唯一标识符。 键，不可为 null，只读。 |
-|isBuiltIn|布尔值| 指示角色定义是否是产品或自定义的默认设置的一部分的标志。 只读。 |
+|displayName|String| 角色定义的显示名称。 当 isBuiltIn 为 true 时为只读。 必需。|
+|id|String| 角色定义的唯一标识符。 键，不可为 null，只读。 |
+|isBuiltIn|Boolean| 指示角色定义是否是产品或自定义的默认设置的一部分的标志。 只读。 |
 |isEnabled|Boolean| 指示角色是否已启用分配的标志。 如果为 false，则该角色不可用于分配。 当 isBuiltIn 为 true 时为只读。 |
 |resourceScopes|String collection| 由角色定义授予的范围权限列表应用于。 目前仅支持 "/"。 当 isBuiltIn 为 true 时为只读。 **请勿使用。此属性将很快被弃用。将作用域附加到角色分配。**|
-|rolePermissions|[unifiedRolePermission](../resources/unifiedrolepermission.md)集合| 角色中包含的权限的列表。 当 isBuiltIn 为 true 时为只读。 必需。 |
-|templateId|字符串| 当 isBuiltIn 为 false 时可设置的自定义模板标识符。 如果一个要求标识符在不同目录中是相同的，则通常使用此标识符。 当 isBuiltIn 为 true 时为只读。 |
+|rolePermissions|[unifiedRolePermission](../resources/unifiedrolepermission.md) 集合| 角色中包含的权限的列表。 当 isBuiltIn 为 true 时为只读。 必需项。 |
+|templateId|String| 当 isBuiltIn 为 false 时可设置的自定义模板标识符。 如果一个要求标识符在不同目录中是相同的，则通常使用此标识符。 当 isBuiltIn 为 true 时为只读。 |
+|inheritsPermissionsFrom| [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 集合| 指定角色定义继承自的角色定义的只读集合。 只有 Azure AD 内置角色才支持此属性。 |
 |version|String| 指示角色定义的版本。 当 isBuiltIn 为 true 时为只读。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[unifiedRoleDefinition](../resources/unifiedroledefinition.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [unifiedRoleDefinition](../resources/unifiedroledefinition.md) 对象。
 
 ## <a name="example"></a>示例
 
