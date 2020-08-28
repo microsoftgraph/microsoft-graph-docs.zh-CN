@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4ed0950f9613d1a4376e7417273af2baf65842f7
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
-ms.translationtype: MT
+ms.openlocfilehash: cfac02afde353dd5e463551ec7c6b8314e1bc8e6
+ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681959"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47287641"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var team = new Team
     AdditionalData = new Dictionary<string, object>()
     {
         {"template@odata.bind", "https://graph.microsoft.com/beta/teamsTemplates('standard')"},
-        {"owners@odata.bind", "[\"https://graph.microsoft.com/beta/users('userId')\"]"}
+        {"members@odata.bind", "[{\"@odata.type\":\"#microsoft.graph.aadUserConversationMember\",\"roles\":[\"owner\"],\"userId\":\"0040b377-61d8-43db-94f5-81374122dc7e\"}]"}
     }
 };
 
