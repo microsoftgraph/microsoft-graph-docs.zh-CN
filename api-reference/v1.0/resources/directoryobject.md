@@ -5,12 +5,12 @@ localization_priority: Priority
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4e690598a9e93dbbbc7527bbfcd8864e0b800bc5
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: aa0134fdd39c339b2dbeb0a611850971b1a9d0ee
+ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45225100"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47287447"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "45225100"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|id|String|用作此对象的唯一标识符的 Guid；例如，12345678-9abc-def0-1234-56789abcde。键。不可为 null。只读。|
+|id|String|对象的唯一标识符。 例如，12345678-9abc-def0-1234-56789abcde。 **id** 属性的值通常（但不总是）用唯一标识符表示；将它视为不透明标识符，不要总将它当作唯一标识符。 键。 不可为 null。 只读。|
 
 ## <a name="relationships"></a>关系
 
