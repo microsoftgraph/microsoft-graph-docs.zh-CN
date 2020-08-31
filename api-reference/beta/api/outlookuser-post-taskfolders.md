@@ -1,18 +1,18 @@
 ---
 title: 创建 outlookTaskFolder
-description: 在用户邮箱的默认任务组 `My Tasks` () 任务文件夹。
+description: 在默认任务组中创建任务文件夹 (`My Tasks` 用户邮箱的) 。
 localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7f1c1767f125da2745837addb7852805630f5231
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 0fd6d8aaf8a088c93ff38db50142ed2f21714643
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849315"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312150"
 ---
-# <a name="create-outlooktaskfolder"></a>创建 outlookTaskFolder
+# <a name="create-outlooktaskfolder-deprecated"></a>创建 outlookTaskFolder (弃用) 
 
 命名空间：microsoft.graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "46849315"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-在用户邮箱的默认任务组 `My Tasks` () 任务文件夹。
+在默认任务组中创建任务文件夹 (`My Tasks` 用户邮箱的) 。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -48,11 +48,11 @@ POST /users/{id|userPrincipalName}/outlook/taskFolders
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `201 Created` 响应正文中 [返回响应代码和 outlookTaskFolder](../resources/outlooktaskfolder.md) 对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [outlookTaskFolder](../resources/outlooktaskfolder.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面的示例在用户邮箱的默认任务组列创建名为"Volunteer" () `My Tasks` 任务文件夹。
+下面的示例在用户邮箱的默认任务组 () 中创建名为 "志愿者" 的任务文件夹 `My Tasks` 。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 43fd850274006d763535ad30b2de58f634375541
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 19afac29a257dac404bcd8d006462aea7ba5c4b0
+ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181692"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47287461"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject 资源类型
 
@@ -34,14 +34,14 @@ ms.locfileid: "43181692"
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|返回 user、group 或 directory 对象所属的所有组。检查是可传递的。|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| 返回 user、group 或 directory 对象所属的所有组和目录角色。检查是可传递的。 |
 |[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](directoryobject.md) 集合 | 基于提供的 ID 集获取目录对象集。 |
-|[validateProperties](../api/directoryobject-validateproperties.md)|Json| 验证 Office 365 组的显示名称或邮件别名是否符合命名策略。 |
+|[validateProperties](../api/directoryobject-validateproperties.md)|Json| 验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。 |
 |[delta](../api/directoryobject-delta.md)|[directoryObject](directoryobject.md) collection| 获取目录对象的增量更改。 支持按派生类型筛选。 |
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|id|String|用作此对象的唯一标识符的 Guid；例如，12345678-9abc-def0-1234-56789abcde12。 密钥。 不可为 null。 只读。|
+|id|String|对象的唯一标识符。 例如，12345678-9abc-def0-1234-56789abcde。 **id** 属性的值通常（但不总是）用唯一标识符表示；将它视为不透明标识符，不要总将它视为唯一标识符。 键。 不可为 null。 只读。|
 
 ## <a name="relationships"></a>关系
 

@@ -5,14 +5,14 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 70844fbce7a59c2d40b2186b424b1662ed60f9d0
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: b29c699bad356307ce70aaab84be6b7d990b7e86
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849749"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312089"
 ---
-# <a name="update-outlooktaskgroup"></a>更新 outlooktaskgroup
+# <a name="update-outlooktaskgroup-deprecated"></a>更新 outlooktaskgroup (弃用) 
 
 命名空间：microsoft.graph
 
@@ -23,7 +23,7 @@ ms.locfileid: "46849749"
 
 更新 Outlook 任务组的可写属性。
 
-请注意，您无法修改默认任务组"My Tasks"的名称。
+请注意，不能修改默认任务组 "我的任务" 的名称。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -53,10 +53,10 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文 `200 OK` 中返回响应代码和更新的 [outlookTaskGroup](../resources/outlooktaskgroup.md) 对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [outlookTaskGroup](../resources/outlooktaskgroup.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-以下示例将任务组的名称更改为"Personal Tasks"。 
+下面的示例将任务组的名称更改为 "个人任务"。 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

@@ -5,14 +5,14 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a058c8289efc384416937d144ae35f6379214609
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 95c657c69b059e9049378d67382237b4080bc717
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849217"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311947"
 ---
-# <a name="create-outlooktaskfolder"></a>创建 outlookTaskFolder
+# <a name="create-outlooktaskfolder-deprecated"></a>创建 outlookTaskFolder (弃用) 
 
 命名空间：microsoft.graph
 
@@ -47,11 +47,11 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `201 Created` 响应正文中 [返回响应代码和 outlookTaskFolder](../resources/outlooktaskfolder.md) 对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [outlookTaskFolder](../resources/outlooktaskfolder.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-以下示例创建一个在指定的任务组 `Cooking` 中调用的任务文件夹。
+下面的示例创建一个 `Cooking` 在指定任务组中调用的任务文件夹。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

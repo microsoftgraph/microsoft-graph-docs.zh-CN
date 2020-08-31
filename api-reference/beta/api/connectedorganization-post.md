@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0bdffc4bfb6a4c87ce3949dd76f4a87d673d707d
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 1d6208b12d547e4634fb9b95b02575c80753afb1
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566531"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311856"
 ---
 # <a name="create-connectedorganization"></a>创建 connectedOrganization
 
@@ -18,7 +18,7 @@ ms.locfileid: "46566531"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[connectedOrganization](../resources/connectedorganization.md)对象。
+创建新的 [connectedOrganization](../resources/connectedorganization.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -48,20 +48,20 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[connectedOrganization](../resources/connectedorganization.md)对象的 JSON 表示形式。
+在请求正文中，提供 [connectedOrganization](../resources/connectedorganization.md) 对象的 JSON 表示形式。
 
-下表显示创建[connectedOrganization](../resources/connectedorganization.md)时所需的属性。
+下表显示创建 [connectedOrganization](../resources/connectedorganization.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|连接的组织名称。 |
-|说明|String|连接的组织说明。|
-|identitySources|[identitySource](../resources/identitysource.md)集合|包含一个元素（此连接组织中的初始标识源）的集合。|
-
+|displayName|String|连接的组织名称。 |
+|description|String|连接的组织说明。|
+|identitySources|[identitySource](../resources/identitysource.md) 集合|包含一个元素（此连接组织中的初始标识源）的集合。|
+|state|connectedOrganizationState|已连接组织的状态定义了请求者范围类型的工作分配策略是否 `AllConfiguredConnectedOrganizationSubjects` 适用。 可取值为：`configured`、`proposed`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[connectedOrganization](../resources/connectedorganization.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [connectedOrganization](../resources/connectedorganization.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -87,7 +87,8 @@ Content-length: 100
       "domainName": "example.com",
       "displayName": "example.com"
       }
-  ]
+  ],
+  "state":"proposed"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -124,7 +125,8 @@ Content-type: application/json
   "createdBy": "admin@contoso.com",
   "createdDateTime": "2020-06-08T20:13:53.7099947Z",
   "modifiedBy": "admin@contoso.com",
-  "modifiedDateTime": "2020-06-08T20:13:53.7099947Z"
+  "modifiedDateTime": "2020-06-08T20:13:53.7099947Z",
+  "state":"proposed"
 }
 ```
 

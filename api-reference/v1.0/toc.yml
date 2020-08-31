@@ -122,6 +122,8 @@ items:
         href: /graph/sdks/batch-requests?context=graph/api/1.0
       - name: 上传大文件
         href: /graph/sdks/large-file-upload?context=graph/api/1.0
+      - name: 使用 beta API
+        href: /graph/sdks/use-beta?context=graph/api/1.0
   - name: 使用工具包
     items:
       - name: 工具包概述
@@ -325,7 +327,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 备注
+          - name: 注释
             href: resources/onenote.md
             items:
               - name: 创建笔记本

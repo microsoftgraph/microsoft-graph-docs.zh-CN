@@ -5,14 +5,14 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 689a377d611386c2ef24f762acddbd0543968417
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: e20150e15cf56b20f17694b54c41027dfb0c9b42
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849350"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311933"
 ---
-# <a name="list-taskfolders"></a>列出 taskFolders
+# <a name="list-taskfolders-deprecated"></a>列出 taskFolders (弃用) 
 
 命名空间：microsoft.graph
 
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和 outlookTaskFolder](../resources/outlooktaskfolder.md) 对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [outlookTaskFolder](../resources/outlooktaskfolder.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

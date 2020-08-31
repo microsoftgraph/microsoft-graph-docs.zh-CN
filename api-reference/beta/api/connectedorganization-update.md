@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 804beb5db6fe42d430912fc14377764b9f4d6dcb
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: aa3cc0e2a09d09f694295742e3faabe704ec6a87
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566503"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311849"
 ---
 # <a name="update-connectedorganization"></a>更新 connectedOrganization
 
@@ -18,7 +18,7 @@ ms.locfileid: "46566503"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[connectedOrganization](../resources/connectedorganization.md)对象以更改其一个或多个属性。
+更新 [connectedOrganization](../resources/connectedorganization.md) 对象以更改其一个或多个属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,18 +46,19 @@ PATCH /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[connectedOrganization](../resources/connectedorganization.md)对象的 JSON 表示形式。
+在请求正文中，提供 [connectedOrganization](../resources/connectedorganization.md) 对象的 JSON 表示形式。
 
-下表显示了在更新[connectedOrganization](../resources/connectedorganization.md)时所需的属性。
+下表显示了在更新 [connectedOrganization](../resources/connectedorganization.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-| `displayName`  |`String` | 连接的组织名称。  |
-| `description`  |`String` | 连接的组织说明。 |
+| displayName  |String | 连接的组织名称。  |
+| description  |String | 连接的组织说明。 |
+| state        |connectedOrganizationState|已连接组织的状态定义了请求者范围类型的工作分配策略是否 `AllConfiguredConnectedOrganizationSubjects` 适用。 可取值为：`configured`、`proposed`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `204 Accepted` 在响应正文中返回响应代码和[connectedOrganization](../resources/connectedorganization.md)对象。
+如果成功，此方法 `204 Accepted` 在响应正文中返回响应代码和 [connectedOrganization](../resources/connectedorganization.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -76,7 +77,8 @@ Content-length: 100
 
 {
   "displayName":"Connected organization new name",
-  "description":"Connected organization new description"
+  "description":"Connected organization new description",
+  "state":"configured"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -110,7 +112,8 @@ Content-type: application/json
 {
   "id": "006111db-0810-4494-a6df-904d368bd81b",
   "displayName":"Connected organization new name",
-  "description":"Connected organization new description"
+  "description":"Connected organization new description",
+  "state":"configured"
 }
 ```
 

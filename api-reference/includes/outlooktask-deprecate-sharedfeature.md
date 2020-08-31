@@ -3,14 +3,14 @@ author: angelgolfer-ms
 ms.topic: include
 ms.date: 08/19/2020
 ms.author: angelgolfer-ms
-ms.openlocfilehash: dc07865639edb7870a5b598ef6d04b2d9e004dd4
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 5d18255267a85721b9156b0cfedf7cab9fadfb7d
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849155"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312074"
 ---
 <!-- markdownlint-disable MD041-->
 
 > [!CAUTION]
-> 对于将 Outlook 任务与 Outlook 任务一起使用的现有应用程序，应该会进行更新。
+> 将此功能与 Outlook 任务结合使用的现有应用程序应更新，因为 Outlook 任务已被弃用。 有关详细信息，请参阅 [在公共预览版中执行 api](https://developer.microsoft.com/graph/blogs/the-new-improved-microsoft-graph-to-do-apis-are-now-in-public-preview/) 。

@@ -1,18 +1,18 @@
 ---
 title: 创建附件
-description: 使用此 API 将附件添加到 outlookTask。
+description: 使用此 API 可将附件添加到 outlookTask。
 author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3dc0ab4e62844bf565cdff834e57ba9843d30873
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: d589fb84e62712fa744acb373af8678e8db8242f
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849672"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311975"
 ---
-# <a name="create-attachment"></a>创建附件
+# <a name="create-attachment-deprecated"></a>创建 (弃用的附件) 
 
 命名空间：microsoft.graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "46849672"
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-使用此 API 将附件 [添加到](../resources/attachment.md) [outlookTask](../resources/outlooktask.md)。 附件可以是[fileAttachment](../resources/fileattachment.md) (或 Outlook 项)  ([类型的文件) 。](../resources/itemattachment.md)
+使用此 API 可将 [附件](../resources/attachment.md) 添加到 [outlookTask](../resources/outlooktask.md)。 附件可以是 [fileAttachment](../resources/fileattachment.md) 类型的文件 () 或 Outlook 项目 ([itemAttachment](../resources/itemattachment.md) 类型) 。
 
 ## <a name="permissions"></a>权限
 
@@ -47,7 +47,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
-| Content-Type | 一个表示实体正文中数据类型的字符串。 必需。 |
+| Content-Type | 一个字符串，表示实体的正文中的数据类型。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -59,7 +59,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-add-file-attachment"></a>示例 1：添加文件附件 
+### <a name="example-1-add-file-attachment"></a>示例1：添加文件附件 
 
 #### <a name="request"></a>请求
 
@@ -126,7 +126,7 @@ HTTP 201 Created
 }
 ```
 
-### <a name="example-2-add-item-attachment"></a>示例 2：添加项目附件
+### <a name="example-2-add-item-attachment"></a>示例2：添加项目附件
 
 #### <a name="request"></a>请求
 

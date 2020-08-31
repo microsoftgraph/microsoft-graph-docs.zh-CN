@@ -5,21 +5,21 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 105f1b2190d241c57b0c0ee6e7dd483eb0ead680
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 14dcac081d870a5a25ffa8afdb8dd7424e44cfd8
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181082"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311716"
 ---
-# <a name="list-identityriskevents"></a>列出 identityRiskEvents
+# <a name="list-identityriskevents-deprecated"></a>列出 identityRiskEvents (弃用) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!NOTE]
->**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅[弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
+>[!CAUTION]
+>**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅 [弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
 
 检索 identityriskevent 对象的列表。
 
@@ -48,7 +48,7 @@ GET /identityRiskEvents
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[identityRiskEvent](../resources/identityriskevent.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [identityRiskEvent](../resources/identityriskevent.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

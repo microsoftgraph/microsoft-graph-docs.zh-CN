@@ -5,14 +5,14 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 50bc54603005d226f6c05c03f4ccee772ec1d8fb
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 6fc405645d352b4de97e3a167107b4ad41710a48
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849714"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311989"
 ---
-# <a name="get-outlooktask"></a>获取 outlookTask
+# <a name="get-outlooktask-deprecated"></a>获取 outlookTask (弃用) 
 
 命名空间：microsoft.graph
 
@@ -23,7 +23,7 @@ ms.locfileid: "46849714"
 
 获取用户邮箱中的 Outlook 任务的属性和关系。
 
-默认情况下，此操作会 (POST、PATCH 和 [完成](../api/outlooktask-complete.md) 的任务操作) 返回与日期相关的属性) 使用 UTC 格式返回日期相关的属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
+默认情况下，此操作 (和 POST、PATCH 和 [complete](../api/outlooktask-complete.md) 任务操作) 返回 UTC 格式的日期相关属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
 
 ## <a name="permissions"></a>权限
 
@@ -53,7 +53,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 | 名称                     | 说明                                       |
 |:-------------------------|:--------------------------------------------------|
 | Authorization            | Bearer {token}。必需。                         |
-| Prefer: outlook.timezone | 指定响应中的时区（如果未指定此标头，则该属性为 UTC 时间）。 可选。 |
+| Prefer: outlook.timezone | 指定响应中时间属性的时区（如果未指定此标头，则采用 UTC 格式表示）。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -61,11 +61,11 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和 outlookTask](../resources/outlooktask.md) 对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [outlookTask](../resources/outlooktask.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-an-outlook-task"></a>示例 1：获取 Outlook 任务
+### <a name="example-1-get-an-outlook-task"></a>示例1：获取 Outlook 任务
 
 #### <a name="request"></a>请求
 
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTrgAAA=
 
 下面是一个响应示例。 默认情况下，响应中的 date-time 属性采用的是 UTC。
 
-> **注意：** 为简洁起见，可能会截断此处展示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为简洁起见，可能会截断此处展示的响应对象。 将从实际调用中返回所有属性。
 
 <!-- {
   "blockType": "response",
@@ -146,11 +146,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>示例 2：获取在太小标准时间内具有日期-时间属性的 Outlook 任务
+### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>示例2：在太平洋标准时间内使用日期时间属性获取 Outlook 任务
 
 #### <a name="request"></a>请求
 
-此示例使用 `Prefer: outlook.timezone` 标头指定在太大的标准时间的响应中应返回 API 返回日期时间属性。
+此示例使用 `Prefer: outlook.timezone` 标头来指定 API 应在太平洋标准时间的响应中返回日期时间属性。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -180,7 +180,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。 以指定的太长时间返回响应中的日期-时间属性。
+下面是一个响应示例。 响应中的日期-时间属性以指定的太平洋标准时间返回。
 
 > **注意：** 为简洁起见，可能会截断此处展示的响应对象。 将从实际调用中返回所有属性。
 

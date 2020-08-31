@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7d1b0c9aebf5cfbe1dcc502c9865f3d590367c60
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: fd0a76aed1c1ec1d2b1b52af73a790ea842ee87f
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872671"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311905"
 ---
 # <a name="add-directory-role-member"></a>添加目录角色成员
 
@@ -19,7 +19,7 @@ ms.locfileid: "46872671"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建新的目录角色成员。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -32,7 +32,6 @@ ms.locfileid: "46872671"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directoryRoles/{id}/members/$ref
-
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|

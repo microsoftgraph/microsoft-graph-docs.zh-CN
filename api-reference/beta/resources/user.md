@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 43c83c07622d5209ec21519438d861300f971a04
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 6f1971e51cb9641d696da0531def0f574f93e3cb
+ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849770"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47287496"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -175,7 +175,7 @@ ms.locfileid: "46849770"
 | faxNumber | String | 用户的传真号。 <br><br>仅在 $select 上返回。 |
 | givenName | String | 用户的名。 <br><br>默认情况下返回。 支持 $filter。|
 | hireDate | DateTimeOffset | 用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'` <br><br>仅在 $select 上返回。 |
-| id | String | 用户的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 <br><br>默认返回。 不可为空。 只读。|
+| id | String | 用户的唯一标识符。 应视为不透明的标识符。 继承自 [directoryObject](directoryobject.md)。 <br><br>默认返回。 不可为空。 只读。|
 | identities | [objectIdentity](objectIdentity.md) 集合 | 表示可用于登录此用户帐户的标识。 标识可由 Microsoft （也称为本地帐户）、组织或社交身份提供商（如 Facebook、Google 和 Microsoft）提供，并绑定到用户帐户。 可能包含具有相同 **signInType** 值的多个项目。 <br><br>仅在 $select 上返回。 支持 $filter。 |
 | imAddresses | String collection | 用户的即时消息 IP 语音 (VOIP) 会话初始协议 (SIP) 地址。只读。|
 | infoCatalogs | 字符串集合 | 标识分配给用户的信息片段。 默认情况下返回。 |
@@ -185,7 +185,7 @@ ms.locfileid: "46849770"
 | lastPasswordChangeDateTime | DateTimeOffset | 此 Azure AD 用户上次更改其密码的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'` <br><br>仅在 $select 上返回。 |
 | legalAgeGroupClassification | String | 由企业应用程序用于确定用户的法定年龄组。 此属性为只读，并且基于 **ageGroup** 和 **consentProvidedForMinor** 属性进行计算。 允许的值：`null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 $select 上返回。 |
 | licenseAssignmentStates | [licenseAssignmentState](licenseassignmentstate.md) 集合 | 此用户的许可证分配状态。 <br><br>仅在 $select 上返回。 只读。 |
-| mail | String | 用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。 <br><br>默认返回。 只读。 支持 $filter。 |
+| mail | String | 用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 只读。 支持 $filter。 |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | 已登录用户的主邮箱的设置。 可以[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)用于向传入邮件发送自动答复、区域设置和时区的设置。 <br><br>仅在 $select 上返回。 |
 | mailNickname | String | 用户的邮件别名。 创建用户时必须指定此属性。 <br><br>仅在 $select 上返回。 支持 $filter。 |
 | mobilePhone | String | 用户的主要移动电话号码。 <br><br>默认返回。 |

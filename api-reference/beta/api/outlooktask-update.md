@@ -5,14 +5,14 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 55aa1216a2f1d0f2aac5257063525dadac98d3f6
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 5c65cb43839506c162bd424aa1df084b44964567
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849679"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311968"
 ---
-# <a name="update-outlooktask"></a>更新 outlooktask
+# <a name="update-outlooktask-deprecated"></a>更新 outlooktask (弃用) 
 
 命名空间：microsoft.graph
 
@@ -23,9 +23,9 @@ ms.locfileid: "46849679"
 
 更改 Outlook 任务的可写属性。
 
-**completedDateTime**属性可以由整个**操作设置**，也可以由 PATCH 操作显式设置。 如果您使用 PATCH 设置 **completedDateTime，** 请确保将 **状态也** `completed` 设置为 TRUE。
+**CompletedDateTime**属性可以由**完整**操作进行设置，也可以通过修补程序操作进行显式设置。 如果使用修补程序设置 **completedDateTime**，请确保同时将 **状态** 设置为 `completed` 。
 
-默认情况下，此操作会 (POST、GET 和 [完成](../api/outlooktask-complete.md) 任务操作) 返回 UTC 的与日期相关的属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
+默认情况下，此操作 (和 POST、GET 和 [complete](../api/outlooktask-complete.md) 任务操作) 返回 UTC 格式的日期相关属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。
 
 ## <a name="permissions"></a>权限
 
@@ -51,7 +51,7 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 | 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
-| Prefer: outlook.timezone | 指定响应中的时区（如果未指定此标头，则该属性为 UTC 时间）。 可选。|
+| Prefer: outlook.timezone | 指定响应中时间属性的时区（如果未指定此标头，则采用 UTC 格式表示）。 可选。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -59,7 +59,7 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|body|[itemBody](../resources/itembody.md)|通常包含有关任务的信息的任务正文。 请注意，仅支持 HTML 类型。|
+|正文|[itemBody](../resources/itembody.md)|通常包含有关任务的信息的任务正文。 请注意，仅支持 HTML 类型。|
 |类别|String 集合|与任务关联的类别。|
 |changeKey|String|任务的版本。|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|在指定时区内完成任务的日期。|
@@ -80,13 +80,13 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码 [和更新的 outlookTask](../resources/outlooktask.md) 对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [outlookTask](../resources/outlooktask.md) 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-以下示例修改 **dueDateTime 属性** ，并使用标头指定以东非标准时间或 EST 格式表示 `Prefer: outlook.timezone` (日期相关的) 。
+下面的示例修改 **dueDateTime** 属性，并使用 `Prefer: outlook.timezone` 标头来指定表示在美国东部标准时间 (EST) 的响应中的日期相关属性。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

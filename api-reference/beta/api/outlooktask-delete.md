@@ -5,14 +5,14 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e9c7a5912fc824d22666c15693b440be3cf36353
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 02f7835d968cbcfd87a39ac7cefd3a109feb0fc7
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849798"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311618"
 ---
-# <a name="delete-outlooktask"></a>删除 outlookTask
+# <a name="delete-outlooktask-deprecated"></a>删除 outlookTask (弃用) 
 
 命名空间：microsoft.graph
 

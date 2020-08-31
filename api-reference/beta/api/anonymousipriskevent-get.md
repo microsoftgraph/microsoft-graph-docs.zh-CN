@@ -5,21 +5,21 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: cloudhandler
-ms.openlocfilehash: 2fb493c35d6d26f3b1a7b4212cbe242da0062ba3
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: c4c514e1b838c8146841b3eb1c42988d9e709f9f
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43178952"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311484"
 ---
-# <a name="get-anonymousipriskevent"></a>获取 anonymousIpRiskEvent
+# <a name="get-anonymousipriskevent-deprecated"></a>获取 anonymousIpRiskEvent (弃用) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!NOTE]
->**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅[弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
+>[!CAUTION]
+>**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅 [弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
 
 检索 anonymousipriskevent 对象的属性和关系。
 ## <a name="permissions"></a>权限
@@ -48,7 +48,7 @@ GET /anonymousIpRiskEvents/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文的值中返回响应代码和[anonymousIpRiskEvent](../resources/anonymousipriskevent.md)对象。
+如果成功，此方法 `200 OK` 在响应正文的值中返回响应代码和 [anonymousIpRiskEvent](../resources/anonymousipriskevent.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

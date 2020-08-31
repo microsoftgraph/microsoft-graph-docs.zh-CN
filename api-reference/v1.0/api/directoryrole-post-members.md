@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1c5f958f4543c985b6ecf8684080d261ed874028
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 6521438d82f02deef1334d2a7b710fa87ee9c8d6
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181376"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312013"
 ---
 # <a name="add-directory-role-member"></a>添加目录角色成员
 
@@ -25,13 +25,12 @@ ms.locfileid: "43181376"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | RoleManagement、Directory.accessasuser.all 和所有子目录。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | RoleManagement.ReadWrite.Directory |
+|应用程序 | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directoryRoles/{id}/members/$ref
-
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -91,8 +90,6 @@ Content-type: application/json
 } -->
 ```http
 HTTP/1.1 204 No Content
-Content-type: text/plain
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

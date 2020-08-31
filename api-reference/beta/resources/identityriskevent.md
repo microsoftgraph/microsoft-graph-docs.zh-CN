@@ -5,21 +5,21 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fa8fef43c462559d5c4420637b635b5371ef90ab
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: a04baa476c18dc5a581fffa2e466d3fcbdfa0c68
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181727"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312024"
 ---
-# <a name="identityriskevent-resource-type"></a>identityRiskEvent 资源类型
+# <a name="identityriskevent-resource-type-deprecated"></a>identityRiskEvent 资源类型 (弃用) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!NOTE]
->**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅[弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
+>[!CAUTION]
+>**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅 [弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
 
 [Azure Active Directory 标识保护](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/)检测到的风险事件。 它是每个特定风险事件类型的基本类型：
 
@@ -32,7 +32,7 @@ ms.locfileid: "43181727"
 |[suspiciousIpRiskEvent](suspiciousipriskevent.md) | 来自可疑 IP 地址的登录。 |
 |[unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md) | 来自不熟悉位置的登录。 |
 
-有关风险事件的完整信息，请参阅[AZURE AD Identity Protection 文档](/azure/active-directory/active-directory-reporting-risk-events)。
+有关风险事件的完整信息，请参阅 [AZURE AD Identity Protection 文档](/azure/active-directory/active-directory-reporting-risk-events)。
 
 ## <a name="methods"></a>方法
 
@@ -45,7 +45,7 @@ ms.locfileid: "43181727"
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| 风险事件关闭的日期和时间|
 |createdDateTime|dateTimeOffset| 风险事件的创建日期和时间。 此值始终大于或等于风险事件本身的日期时间。 这是查询风险事件时用作筛选器的正确属性。|
-|id|字符串| 只读|
+|id|string| 只读|
 |riskEventDateTime|dateTimeOffset| 风险事件发生的日期和时间|
 |riskEventStatus|string| 可取值为：`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons`。|
 |riskLevel|string| 可取值为：`low`、`medium`、`high`。|

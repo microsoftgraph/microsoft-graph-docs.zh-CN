@@ -5,14 +5,14 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8e5517f61327ff26e9e84fdb93faf5be40e1a1d3
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 005c411ed7eb441c44895f9c23fce727cae1a84b
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849700"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312164"
 ---
-# <a name="delete-outlooktaskfolder"></a>删除 outlookTaskFolder
+# <a name="delete-outlooktaskfolder-deprecated"></a>删除 outlookTaskFolder (弃用) 
 
 命名空间：microsoft.graph
 

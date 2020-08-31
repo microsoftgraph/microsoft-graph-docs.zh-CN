@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 49998005ef65fe132dbc3ff230ea40d25de06b8d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f64ddaa66d20b2caf64e0f7b59d854afd7c246a1
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440820"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311262"
 ---
 # <a name="get-call"></a>获取呼叫
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +49,7 @@ GET /communications/calls/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[call](../resources/call.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [call](../resources/call.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -157,6 +157,7 @@ Content-Type: application/json
   "answeredBy": null,
   "chatInfo": null,
   "meetingInfo": null,
+  "transcription": null,
   "meetingCapability": null,
   "toneInfo": null
 }
@@ -254,6 +255,11 @@ Content-Type: application/json
       }
     },
     "allowConversationWithoutHost": true
+  },
+  "transcription": {
+    "@odata.type": "#microsoft.graph.callTranscriptionInfo",
+    "state": "inactive",
+    "lastModifiedDateTime": "2020-05-28T00:10:54.104318Z"
   },
   "routingPolicies": [],
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",

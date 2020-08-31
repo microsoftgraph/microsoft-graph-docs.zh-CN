@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 14b0e3adfc0f7a276b5b3715046133b4d459dae6
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 2c0c78e83cce85550a483da794dd86b83695d865
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673727"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311463"
 ---
 # <a name="create-call"></a>创建调用
 
@@ -196,6 +196,7 @@ Content-Type: application/json
   "answeredBy": null,
   "chatInfo": null,
   "meetingInfo": null,
+  "transcription": null,
   "meetingCapability": null,
   "toneInfo": null
 }
@@ -409,6 +410,7 @@ Content-Type: application/json
   "answeredBy": null,
   "chatInfo": null,
   "meetingInfo": null,
+  "transcription": null,
   "meetingCapability": null,
   "toneInfo": null
 }
@@ -675,6 +677,7 @@ Content-Type: application/json
     },
     "allowConversationWithoutHost": true
   },
+  "transcription": null,
   "routingPolicies": [],
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
   "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",

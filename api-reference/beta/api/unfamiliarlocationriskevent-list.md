@@ -5,21 +5,21 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: cloudhandler
-ms.openlocfilehash: 7fe24b9b96fd1a36f40ed0e78fe23612962e279b
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: cb4112e8d9cf8ef686b706b9f286c17e8078bfee
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181488"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311379"
 ---
-# <a name="list-unfamiliarlocationriskevents"></a>列出 unfamiliarLocationRiskEvents
+# <a name="list-unfamiliarlocationriskevents-deprecated"></a>列出 unfamiliarLocationRiskEvents (弃用) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!NOTE]
->**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅[弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
+>[!CAUTION]
+>**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅 [弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
 
 检索 unfamiliarlocationriskevent 对象的列表。
 ## <a name="permissions"></a>权限
@@ -47,7 +47,7 @@ GET /unfamiliarLocationRiskEvents
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[unfamiliarLocationRiskEvent](../resources/unfamiliarlocationriskevent.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [unfamiliarLocationRiskEvent](../resources/unfamiliarlocationriskevent.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
