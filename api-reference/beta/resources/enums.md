@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 3a24d5a57a0514f01a30b34a52c28e72399794dc
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: b8559d855be3056a5f73de1eaa0f2da571bd61ab
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312045"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319566"
 ---
 # <a name="enum-values"></a>枚举值
 
@@ -97,7 +97,7 @@ ms.locfileid: "47312045"
 |:--------------
 | file
 | 项
-| reference
+| 参考
 
 ### <a name="analyticsactivitytype-values"></a>analyticsActivityType 值
 
@@ -546,8 +546,8 @@ ms.locfileid: "47312045"
 | 自动
 | noPreview
 | checklist
-| description
-| reference
+| 说明
+| 参考
 
 
 ### <a name="status-values"></a>status 值
@@ -662,7 +662,7 @@ ms.locfileid: "47312045"
 | preset7  | 7      |
 | preset8  | 8      |
 | preset9  | 9      |
-| preset10 | 10     |
+| preset10 | 10      |
 | preset11 | 11     |
 | preset12 | 12     |
 | preset13 | 13     |
@@ -726,7 +726,7 @@ ms.locfileid: "47312045"
 | 成员    | 值 | 说明                   |
 | :-------- | :---- | :---------------------------- |
 | unknown   | 0     | 陌生.                      |
-| 可信 | 10     | 完整性级别不受信任。 |
+| 可信 | 10      | 完整性级别不受信任。 |
 | 降低       | 20    | 完整性级别较低。       |
 | 中等    | 30    | 完整性级别为 "中"。    |
 | 高效      | 40    | 完整性级别为 "高"。      |
@@ -773,7 +773,7 @@ ms.locfileid: "47312045"
 | multiSz           | 7      | REG_MULTI_SZ 注册表值类型。            |
 | 无              | 8      | REG_NONE 注册表值类型。                |
 | qword             | 9      | REG_QWORD 注册表值类型。               |
-| qwordlittleEndian | 10     | REG_QWORD_LITTLE_ENDIAN 注册表值类型。 |
+| qwordlittleEndian | 10      | REG_QWORD_LITTLE_ENDIAN 注册表值类型。 |
 | sz                | 11     | REG_SZ 注册表值类型。                  |
 
 ### <a name="alertseverity-values"></a>alertSeverity 值
@@ -795,7 +795,7 @@ ms.locfileid: "47312045"
 | 成员     | 值 | 说明           |
 | :--------- | :---- | :-------------------- |
 | unknown    | 0     | 未知状态。       |
-| newAlert   | 10     | 警报是新的。         |
+| newAlert   | 10      | 警报是新的。         |
 | inProgress | 20    | 警报正在进行中。 |
 | 经过   | 30    | 警报已解决。    |
 
@@ -1240,7 +1240,7 @@ ms.locfileid: "47312045"
 | notInAddressBook      | 7      | 将发件人排除在通讯簿之外。 |
 | firstTimeSender       | 8      | 由于第一次发件人而被阻止。   |
 | autoPurgeToInbox      | 9      | TimeTravel 将邮件移动到收件箱。   |
-| autoPurgeToJunk       | 10     | TimeTravel 将邮件移动到垃圾邮件。    |
+| autoPurgeToJunk       | 10      | TimeTravel 将邮件移动到垃圾邮件。    |
 | autoPurgeToDeleted    | 11     | TimeTravel 将邮件移动到 "已删除"。 |
 | 出站              | 12     | 出站邮件。                      |
 | notJunk               | 13     | 由于非垃圾邮件而启用。              |
@@ -1267,6 +1267,17 @@ ms.locfileid: "47312045"
 | leakedCredentials
 | investigationsThreatIntelligence
 | 泛型
+| 向 unknownfuturevalue
+
+### <a name="userflowtype-values"></a>userFlowType 值
+|成员
+|:----------------------
+| 注册
+| 登录
+| signUpOrSignIn
+| passwordReset
+| profileUpdate
+| resourceOwnerPasswordCredentialSignIn
 | 向 unknownfuturevalue
 
 ### <a name="openidconnectresponsemode-values"></a>openIdConnectResponseMode 值

@@ -5,26 +5,26 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b5ab0cc6e2179adb62316cbcdc06b7dd52abc439
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4bc0a60043c9877b4c48a889f93fa48a852c3780
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508511"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319581"
 ---
 # <a name="accesspackageresourcerole-resource-type"></a>accessPackageResourceRole 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包资源角色是对在资源中定义的角色的引用，可在 access 程序包中使用。
+在 [AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包资源角色是对资源中定义的角色的引用。 创建访问包时，可以使用该引用来指定访问包应传递到的每个目录资源的角色，方法是 [创建访问包资源角色作用域](../api/accesspackage-post-accesspackageresourcerolescopes.md)。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出 accessPackageCatalog 资源角色](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md)集合 | 检索目录的 accessPackageResourceRole 对象的列表。 |
+| [列出 accessPackageCatalog 资源角色](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md) 集合 | 检索目录的 accessPackageResourceRole 对象的列表。 |
 
 ## <a name="properties"></a>属性
 
@@ -32,9 +32,9 @@ ms.locfileid: "42508511"
 |:-------------|:------------|:------------|
 |说明|String|资源角色的说明。|
 |displayName|String|资源角色的显示名称，例如应用程序定义的角色。|
-|id|字符串| 只读。|
+|id|String| 只读。|
 |originId|String|源系统中资源角色的唯一标识符。 |
-|originSystem|String|源系统中资源的类型。|
+|originSystem|String|源系统中资源的类型，例如 `SharePointOnline` `AadApplication` 或 `AadGroup` 。|
 
 ## <a name="relationships"></a>关系
 

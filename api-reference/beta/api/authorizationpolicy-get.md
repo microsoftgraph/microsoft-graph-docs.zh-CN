@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 04a13bba8d434465a65598ec490d96fb8d3c4916
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: 3f0629cf7be5898c91cc9b5f5212fac56db96ffe
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44492203"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319391"
 ---
 # <a name="get-authorizationpolicy"></a>获取 authorizationPolicy
 
@@ -18,9 +18,9 @@ ms.locfileid: "44492203"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[authorizationPolicy](../resources/authorizationpolicy.md)对象的属性。
+检索 [authorizationPolicy](../resources/authorizationpolicy.md) 对象的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "44492203"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy： Read. All，Policy. ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Policy： Read. All，Policy. ReadWrite |
+| 应用程序                            | Policy： Read. All，Policy. ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ GET /policies/authorizationPolicy/authorizationPolicy
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和单个[authorizationPolicy](../resources/authorizationpolicy.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和单个 [authorizationPolicy](../resources/authorizationpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -87,5 +87,13 @@ Content-type: application/json
     "enabledPreviewFeatures": [],
     "guestUserRoleId": "10dae51f-b6af-4016-8d66-8c2a99b929b3",
     "blockMsolPowerShell": ""
+    "defaultUserRolePermissions": {
+        "allowedToCreateApps": true,
+        "allowedToCreateSecurityGroups": false,
+        "allowedToReadOtherUsers": true
+    }
+    "allowedToSignUpEmailBasedSubscriptions": false,
+    "allowedToUseSSPR": true,
+    "allowEmailVerifiedUsersToJoinOrganization": true,
 }
 ```

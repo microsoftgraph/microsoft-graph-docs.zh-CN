@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 908d1e4b2fd27895416058a1c8528126dad7ca6b
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: 11b3095bf54f6d5ffe1af4ca4926fe4409429b48
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757186"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319531"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>accessPackageAssignmentRequest 资源类型
 
@@ -18,8 +18,7 @@ ms.locfileid: "46757186"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包分配请求由要获取访问包分配的用户创建。 如果请求成功，并且具有必要的审批，则用户将收到访问包分配，并且是最终的访问包分配的主题。  Azure AD 还会自动创建访问包分配请求，以用于跟踪访问删除。
-
+在 [AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包分配请求是由要获取访问包分配的用户创建或代表的。 如果请求成功，并且具有必要的审批，则用户将收到访问包分配，并且是最终的访问包分配的主题。  Azure AD 还会自动创建访问包分配请求，以用于跟踪访问删除。
 
 ## <a name="methods"></a>方法
 
@@ -35,13 +34,13 @@ ms.locfileid: "46757186"
 |:-------------|:------------|:------------|
 |completedDate|DateTimeOffset|请求的处理结束日期（成功或失败）。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
 |createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
-|id|字符串| 只读。|
+|id|String| 只读。|
 |isValidationOnly|Boolean|如果请求不处理工作分配，则为 True。|
-|合理化|字符串|请求者提供的理由。|
-|requestState|字符串|、、、、、或中的一个 `PendingApproval` `Canceled`  `Denied` `Delivering` `Delivered` `PartiallyDelivered` `Submitted` `Scheduled` 。 只读。|
-|requestStatus|字符串|有关请求处理状态的详细信息。 只读。|
-|requestType|字符串|、、或的其中一个 `UserAdd` `UserRemove` `AdminAdd` `AdminRemove` `SystemRemove` 。 只读。|
-|accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| 请求创建的访问包分配。|
+|合理化|String|请求者提供的理由。|
+|requestState|String|、、、、、或中的一个 `PendingApproval` `Canceled`  `Denied` `Delivering` `Delivered` `PartiallyDelivered` `Submitted` `Scheduled` 。 只读。|
+|requestStatus|String|有关请求处理状态的详细信息。 只读。|
+|requestType|String|、、或的其中一个 `UserAdd` `UserRemove` `AdminAdd` `AdminRemove` `SystemRemove` 。 来自用户自身的请求将对或进行 requestType `UserAdd` `UserRemove` 。 只读。|
+|accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| 对于或的 requestType `UserAdd` `AdminAdd` ，这是请求创建的访问包分配。  对于的 requestType `UserRemove` `AdminRemove` 或 `SystemRemove` ，它具有 `id` 要删除的现有工作分配的属性。|
 
 ## <a name="relationships"></a>关系
 

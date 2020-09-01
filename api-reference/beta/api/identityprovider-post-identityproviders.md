@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 987ce00a1f3c39e148e99c8743ec669009462e2b
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 69e4a9b1e1511e8eb053ce8a47012effcaad21b2
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566707"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319547"
 ---
 # <a name="create-identityprovider"></a>创建 identityProvider
 
@@ -18,7 +18,7 @@ ms.locfileid: "46566707"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[identityprovider.read.all](../resources/identityprovider.md)对象。
+创建新的 [identityprovider.read.all](../resources/identityprovider.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -51,7 +51,7 @@ POST /identityProviders
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，仅为 Azure AD B2C) 对象提供[identityprovider.read.all](../resources/identityprovider.md)或[OPENIDCONNECTPROVIDER](../resources/openidconnectprovider.md) (的 JSON 表示形式。 下表中列出的所有属性均未必需属性。
+在请求正文中，仅为 Azure AD B2C) 对象提供 [identityprovider.read.all](../resources/identityprovider.md) 或 [OPENIDCONNECTPROVIDER](../resources/openidconnectprovider.md) (的 JSON 表示形式。 下表中列出的所有属性均未必需属性。
 
 ### <a name="identityprovider-object"></a>Identityprovider.read.all 对象
 
@@ -71,18 +71,18 @@ POST /identityProviders
 |name|字符串|标识提供程序的显示名称。|
 |type|字符串|标识提供程序类型。 值必须为 `OpenIdConnect` 。|
 |claimsMapping|[claimsMapping](../resources/claimsmapping.md)|在 `userId` `displayname` claimsMapping 对象中，和属性是必需的。|
-|metadataUrl|字符串|开放 Id 的元数据文档的 URL 连接标识提供程序。|
-|responseMode|字符串|定义应用于将数据从自定义标识提供程序发送回 Azure AD B2C 的方法。 可以使用以下响应模式： <ul><li/>`form_post`：建议使用此响应模式以获得最佳安全性。 响应通过 HTTP POST 方法传输，其中的代码或令牌使用应用程序/x www 格式 urlencoded 格式在正文中进行编码。<li/>`query`：代码或令牌作为查询参数返回。</ul>|
-|responseType|字符串|描述在对自定义标识提供程序的 authorization_endpoint 的初始调用中发送回的信息类型。 可以使用以下响应类型：<ul><li/> `code`：按照授权代码流，代码将返回到 Azure AD B2C。 Azure AD B2C 将继续调用 token_endpoint 以交换令牌的代码。<li/> `id_token`：从自定义标识提供程序向 Azure AD B2C 返回 ID 令牌。 <li/>`token`：从自定义标识提供程序向 Azure AD B2C 返回访问令牌。 目前，Azure AD B2C 不支持此值 () </ul>|
+|metadataUrl|String|开放 Id 的元数据文档的 URL 连接标识提供程序。|
+|responseMode|String|定义应用于将数据从自定义标识提供程序发送回 Azure AD B2C 的方法。 可以使用以下响应模式： <ul><li/>`form_post` ：建议使用此响应模式以获得最佳安全性。 响应通过 HTTP POST 方法传输，其中的代码或令牌使用应用程序/x www 格式 urlencoded 格式在正文中进行编码。<li/>`query` ：代码或令牌作为查询参数返回。</ul>|
+|responseType|String|描述在对自定义标识提供程序的 authorization_endpoint 的初始调用中发送回的信息类型。 可以使用以下响应类型：<ul><li/> `code` ：按照授权代码流，代码将返回到 Azure AD B2C。 Azure AD B2C 将继续调用 token_endpoint 以交换令牌的代码。<li/> `id_token` ：从自定义标识提供程序向 Azure AD B2C 返回 ID 令牌。 <li/>`token` ：从自定义标识提供程序向 Azure AD B2C 返回访问令牌。 目前，Azure AD B2C 不支持此值 () </ul>|
 |scope|String|作用域定义要从自定义标识提供程序中收集的信息和权限。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 仅在响应正文中返回响应代码和[Identityprovider.read.all](../resources/identityprovider.md)或[OPENIDCONNECTPROVIDER](../resources/openidconnectprovider.md) (的 Azure AD B2C) 对象。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
+如果成功，此方法 `201 Created` 仅在响应正文中返回响应代码和 [Identityprovider.read.all](../resources/identityprovider.md) 或 [OPENIDCONNECTPROVIDER](../resources/openidconnectprovider.md) (的 Azure AD B2C) 对象。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-a-specific-identityprovider"></a>示例1：创建特定的**identityprovider.read.all**
+### <a name="example-1-create-a-specific-identityprovider"></a>示例1：创建特定的 **identityprovider.read.all**
 
 #### <a name="request"></a>请求
 
@@ -133,7 +133,7 @@ Content-length: 154
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.IdentityProvider"
+  "@odata.type": "microsoft.graph.identityProvider"
 } -->
 
 ```http
@@ -149,7 +149,7 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
-### <a name="example-2-create-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>示例2：仅为 Azure AD B2C) 创建特定的**openIDConnectProvider** (
+### <a name="example-2-create-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>示例2：仅为 Azure AD B2C) 创建特定的 **openIDConnectProvider** (
 
 #### <a name="request"></a>请求
 

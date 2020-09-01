@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4c7ba30513b6de77628aad6790a2050ff4ca8afb
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: 2203296635f40707673a2a8d5c621bf5c9ff8726
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630275"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319546"
 ---
 # <a name="get-identityprovider"></a>获取 identityProvider
 
@@ -18,7 +18,7 @@ ms.locfileid: "46630275"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[identityprovider.read.all](../resources/identityprovider.md)的属性和关系。
+检索 [identityprovider.read.all](../resources/identityprovider.md)的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -53,7 +53,7 @@ GET /identityProviders/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 仅在响应正文中返回响应代码和[Identityprovider.read.all](../resources/identityprovider.md)或[openIdConnectProvider](../resources/openidconnectprovider.md) (的 JSON 表示形式（仅适用于 Azure AD B2C) ）。
+如果成功，此方法 `200 OK` 仅在响应正文中返回响应代码和 [Identityprovider.read.all](../resources/identityprovider.md) 或 [openIdConnectProvider](../resources/openidconnectprovider.md) (的 JSON 表示形式（仅适用于 Azure AD B2C) ）。
 
 ## <a name="examples"></a>示例
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/identityProviders/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.IdentityProvider"
+  "@odata.type": "microsoft.graph.identityProvider"
 } -->
 
 ```http
