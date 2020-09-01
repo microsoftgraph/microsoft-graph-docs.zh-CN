@@ -505,6 +505,8 @@ items:
             href: sdks/batch-requests.md
           - name: 上传大文件
             href: sdks/large-file-upload.md
+          - name: 使用 beta 版 API
+            href: sdks/use-beta.md
       - name: 使用工具包
         items:
           - name: 工具包概述

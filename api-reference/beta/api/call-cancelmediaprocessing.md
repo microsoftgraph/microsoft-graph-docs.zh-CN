@@ -1,24 +1,26 @@
 ---
 title: 调用： cancelMediaProcessing
-description: 取消对任何正在进行的 PlayPrompt 或 RecordResponse 操作的媒体处理。
+description: 取消对任何正在进行的 playPrompt 或 recordResponse 操作的媒体处理。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0f9ec0eaede3383d6e99a05e4aa4023dd914d9b3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3556d8b0445d51a79979434f70dc1417f021ba2d
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440883"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319412"
 ---
 # <a name="call-cancelmediaprocessing"></a>调用： cancelMediaProcessing
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-取消对任何正在进行的[播放提示](./call-playprompt.md)或[记录响应](./call-record.md)操作的处理。
+取消对正在进行的媒体操作的处理。
+
+媒体操作指的是 IVR 操作 [playPrompt](./call-playprompt.md) 和 [recordResponse](./call-record.md)，这些操作在默认情况下排队为按顺序处理。 **CancelMediaProcessing**方法将取消进程中的任何操作以及排队的操作。 例如，此 API 可用于清理新媒体操作的 IVR 操作队列。 但是，它不会取消 **ubscribeToTone** 操作，因为它独立于任何操作队列运行。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -51,7 +53,7 @@ POST /communications/calls/{id}/cancelMediaProcessing
 | 适用  | String  | 客户端上下文。                                            |
 
 ## <a name="response"></a>响应
-如果成功，此方法将返回`200 OK`一个 HTTP 响应代码和一个位置标头，其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 URI。
+如果成功，此方法将返回一个 `200 OK` HTTP 响应代码和一个位置标头，其中包含为此请求创建的 [COMMSOPERATION](../resources/commsoperation.md) 的 URI。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -142,7 +144,7 @@ Content-Type: application/json
           "@odata.type": "#microsoft.graph.resultInfo",
           "code": 400,
           "subcode": 8508,
-          "message": "Action falied, the operation was cancelled."
+          "message": "Action failed, the operation was cancelled."
         },
         "recordingLocation": "",
         "recordingAccessToken": "",

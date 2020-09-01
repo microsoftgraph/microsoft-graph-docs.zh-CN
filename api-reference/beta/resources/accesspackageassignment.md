@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2b52b9dbd7b2b76df34ab6c55a46b69718d4a0e2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f7a2fe772dc7b3be328fad452a5b193ccf7a7ed0
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508560"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319454"
 ---
 # <a name="accesspackageassignment-resource-type"></a>accessPackageAssignment 资源类型
 
@@ -46,9 +46,9 @@ ms.locfileid: "42508560"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|accessPackage|[accessPackage](accesspackage.md)| 只读。 可为 NULL。|
-|accessPackageAssignmentPolicy|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| 只读。 可为 NULL。|
-|accessPackageAssignmentResourceRoles|[accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) 集合| 只读。 可为 NULL。|
+|accessPackage|[accessPackage](accesspackage.md)| 只读。 可为 Null。|
+|accessPackageAssignmentPolicy|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| 只读。 可为 Null。|
+|accessPackageAssignmentResourceRoles|[accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) 集合| 为此分配传递给目标用户的资源角色。 只读。 可为 Null。|
 |target|[accessPackageSubject](accesspackagesubject.md)| 访问包分配的主题。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

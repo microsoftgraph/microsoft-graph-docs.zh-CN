@@ -5,14 +5,14 @@ author: mashriv
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: f580c9d39ad9252cc94274c50e6c2dfca704ceff
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: e51f58ddc923a1ccee87abcdad8456e53d209703
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849579"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312129"
 ---
-# <a name="outlooktask-resource-type"></a>outlookTask 资源类型
+# <a name="outlooktask-resource-type-deprecated"></a>outlookTask 资源类型（不推荐使用）
 
 命名空间：microsoft.graph
 

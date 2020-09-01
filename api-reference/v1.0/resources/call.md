@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: be58f906ae9de82240fc022e293851da44e24510
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: d1883b5f00e0662035db76964899d735023e4d58
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510462"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311828"
 ---
 # <a name="call-resource-type"></a>call 资源类型
 
@@ -73,6 +73,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) 或 [serviceHostedMediaConfig](servicehostedmediaconfig.md) | 媒体配置。 必需。                                                                        |
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | 只读。 通话媒体状态。 |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) 或 [tokenMeetingInfo](tokenmeetinginfo.md)             | 加入会议所需的会议信息。                                                                                                            |
+transcription     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                          | 通话的脚本信息。 只读。    |
 | myParticipantId     | String                                                                                                 | 只读。                                                                                                                                                                        |
 | requestedModalities | String 集合                                                                                      | 请求模态的列表。 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`。                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | 结果信息。 例如，可以保留终止原因。 只读。                                                                                                        |
@@ -104,6 +105,7 @@ incomingContext            | [incomingContext](incomingContext.md)              
     "incomingContext",
     "mediaState",
     "meetingInfo",
+    "transcription",
     "myParticipantId",
     "replacesContext",
     "resultInfo",
@@ -125,7 +127,8 @@ incomingContext            | [incomingContext](incomingContext.md)              
   "id": "String (identifier)",
   "mediaConfig": {"@odata.type": "#microsoft.graph.mediaConfig"},
   "mediaState": {"@odata.type": "#microsoft.graph.callMediaState"},
-  "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},
+  "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},  
+  "transcription": {"@odata.type": "#microsoft.graph.callTranscriptionInfo"},
   "myParticipantId": "String",
   "replacesContext": "String",
   "requestedModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],

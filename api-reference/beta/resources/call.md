@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b97fc0ce4ca6ead942347357dd99d125dd95f583
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: 0f0d4f6f62727e9e4324bacb4d688ac9e1ab791f
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510644"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311365"
 ---
 # <a name="call-resource-type"></a>call 资源类型
 
@@ -86,7 +86,8 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | 只读。 通话媒体状态。 |
 | meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | 包含会议功能。 只读。                                                                                                       |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) 或 [tokenMeetingInfo](tokenmeetinginfo.md)             | 会议信息。 会议情境所需的信息。                                                                                                              |
-| myParticipantId     | String                                                                                                 | 只读。                                                                                                                                                                        |
+|transcription     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                         | 通话的脚本信息。 只读。                           |
+myParticipantId     | String                                                                                                   | 只读。                                                                                                                                                                        |
 | requestedModalities | String 集合                                                                                      | 请求模态的列表。 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`。                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | 结果信息。 例如，可以保留终止原因。 只读。                                                                                                        |
 | ringingTimeoutInSeconds | Int32                                                                                              | 传出对等呼叫的以秒为单位的响铃超时。 此属性的最大值为 115 秒。                                                                                        |
@@ -103,7 +104,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 
 | 关系        | 类型                                                 | 说明                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
-| audioRoutingGroups  | [audioRoutingGroup](audioroutinggroup.md) 集合 | 只读。 可为 NULL。                                                |
+| audioRoutingGroups  | [audioRoutingGroup](audioroutinggroup.md) 集合 | 只读。可为空。                                                |
 | operations          | [commsOperation](commsoperation.md) 集合       | 只读。可为空。                                                |
 | participants        | [participant](participant.md) 集合             | 只读。可为空。                                                |
 
@@ -125,6 +126,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
     "mediaState",
     "meetingCapability",
     "meetingInfo",
+    "transcription",
     "myParticipantId",
     "replacesContext",
     "resultInfo",
@@ -156,6 +158,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
   "mediaState": {"@odata.type": "#microsoft.graph.callMediaState"},
   "meetingCapability": {"@odata.type": "#microsoft.graph.meetingCapability"},
   "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},
+  "transcription": {"@odata.type": "#microsoft.graph.callTranscriptionInfo"},
   "myParticipantId": "String",
   "replacesContext": "String",
   "requestedModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],

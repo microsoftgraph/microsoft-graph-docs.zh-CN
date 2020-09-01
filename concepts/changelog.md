@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 327d518a3db8409dd1c8fb828752197e685c4123
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: f961ca441ddcde086a4bf3e69a451a8f0c2d1e44
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873088"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47312101"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -28,6 +28,12 @@ ms.locfileid: "46873088"
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | beta | 向 [event](/graph/api/resources/event?view=graph-rest-beta) 实体添加了 **cancelledOccurrences**、**exceptionOccurrences** 和 **occurrenceId** 属性。
+
+### <a name="cloud-communications"></a>云通信
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | Beta 和 v1.0 | 向 [call](/graph/api/resources/call) 实体添加了 **transcription** 属性。|
 
 ### <a name="change-notifications"></a>更改通知
 
@@ -84,6 +90,9 @@ ms.locfileid: "46873088"
 | 添加项 | beta | 在[使用条款协议中添加了下列属性](/graph/api/resources/agreement?view=graph-rest-beta):<ul><li>isPerDeviceAcceptanceRequired</li><li>termsExpiration</li><li>userReacceptRequiredFrequency</li></ul>|
 | 添加项 | beta | 已将新资源类型添加到 [使用条款协议](/graph/api/resources/agreement?view=graph-rest-beta)：</br>[agreementFile](/graph/api/resources/agreementfile?view=graph-rest-beta)|
 | 添加项 | beta | 向权利管理添加了 [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta) 内部和外部发起人。  |
+| 添加项 | beta | 向 [unifiedRoleDefinition](/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) 资源添加了 inheritsPermissionsFrom 属性。 |
+| 添加项 | beta | 向 [connectedOrganization](/graph/api/resources/connectedOrganization?view=graph-rest-beta) 资源添加了 **connectedOrganizationState** 枚举类型和 **state** 属性。|
+| 更改   | beta | 将 **requestorSettings** 允许值从“AllExistingConnectedOrganizationSubjects”重命名为了“AllConfiguredConnectedOrganizationSubjects” |
 
 ### <a name="people-and-workplace-intelligence--profile"></a>人员和工作场所智能 | 配置文件
 

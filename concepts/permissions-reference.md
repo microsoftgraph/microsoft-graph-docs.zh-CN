@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: b0d9992635e8523ab5fc652a9d58bfe138192afc
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: e44c2345058f66bb6d992e8d3523ab38e84349b7
+ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849322"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47311996"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -475,7 +475,7 @@ _CallRecords.Read.PstnCalls_权限授予应用访问 [PSTN (通话套餐)](/grap
 |_ChannelMessage.Delete_（个人预览版）|删除用户的频道消息 |允许应用代表已登录的用户在 Microsoft Teams 中删除频道消息。 |是 | 否 |
 |_ChannelMessage.Edit_ （个人预览版）|编辑用户的频道消息 |允许应用代表已登录的用户在 Microsoft Teams 中编辑频道消息。 |是 | 否 |
 |_ChannelMessage.Read.All_ |读取用户频道消息  |允许应用代表已登录的用户在 Microsoft Teams 中读取频道消息。 |是 | 否 |
-|_ChannelMessage.Send_ |发送频道消息 |允许应用代表已登录的用户在 Microsoft Teams 中发送频道消息。 |是 | 否 |
+|_ChannelMessage.Send_ |发送频道消息 |允许应用代表已登录的用户在 Microsoft Teams 中发送频道消息。 |否| 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -1676,14 +1676,14 @@ _任务_权限用于控制对微软待办任务和 Outlook 任务的访问权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Teams.ReadBasic.All_ | 读取团队的名称和说明 | 代表已登录用户读取团队的名称和说明。 | 否 | 否 |
+| _Team.ReadBasic.All_ | 读取团队的名称和说明 | 代表已登录用户读取团队的名称和说明。  | 否 | 否 |
 | _Teams.Create_（个人预览版） | 创建团队 | 代表已登录用户创建团队。 | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Teams.ReadBasic.All_ | 获取所有团队列表 | 在没有用户登录的情况下获取所有团队列表。  | 是 | 否 |
+| _Team.ReadBasic.All_ | 获取所有团队列表 | 在没有用户登录的情况下获取所有团队列表。   | 是 | 否 |
 | _Teams.Create_（个人预览版） | 创建团队 | 在没有用户登录的情况下创建团队。 | 是 | 否 |
 
 ## <a name="team-settings-permissions"></a>团队设置权限
@@ -1692,15 +1692,15 @@ _任务_权限用于控制对微软待办任务和 Outlook 任务的访问权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsSettings.Read.All_ | 读取团队设置 | 代表已登录用户读取此团队的设置。 | 是 | 否 |
-| _TeamsSettings.ReadWrite.All_ | 读取和更改团队的设置 | 代表已登录用户读取和更改所有团队的设置。   | 是 | 否 |
+| _TeamSettings.Read.All_ | 读取团队设置 | 代表已登录用户读取此团队的设置。  | 是 | 否 |
+| _TeamSettings.ReadWrite.All_ | 读取和更改团队的设置 | 代表已登录用户读取和更改所有团队的设置。    | 是 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsSettings.Read.All_ | 读取所有团队设置 | 在没有登录用户的情况下读取此团队的设置。    | 是 | 否 |
-| _TeamsSettings.ReadWrite.All_ | 读取和更改所有团队的设置。 | 在没有登录用户的情况下读取和更改所有团队的设置。 | 是 | 否 |
+| _TeamSettings.Read.All_ | 读取所有团队设置 | 在没有登录用户的情况下读取此团队的设置。 | 是 | 否 |
+| _TeamSettings.ReadWrite.All_ | 读取和更改所有团队的设置。 | 在没有登录用户的情况下读取和更改所有团队的设置。  | 是 | 否 |
 
 ## <a name="teams-activity-permissions-private-preview"></a>Teams 活动权限（[个人预览版](#permissions-availability-status)）
 
@@ -1799,7 +1799,7 @@ _任务_权限用于控制对微软待办任务和 Outlook 任务的访问权限
 
 | 权限 | 显示字符串 | 说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| Team.ReadBasic.All | 读取团队的名称和说明| 代表已登录用户读取团队的名称和说明。|是| 否 |
+| Team.ReadBasic.All | 读取团队的名称和说明| 代表已登录用户读取团队的名称和说明。|否| 否 |
 | TeamSettings.Read.All | 读取团队设置| 代表已登录用户读取所有团队的设置。|是| 否 |
 | TeamSettings.ReadWrite.All | 读取和更改团队的设置。| 代表已登录用户读取和更改所有团队的设置。|是| 否 |
 
