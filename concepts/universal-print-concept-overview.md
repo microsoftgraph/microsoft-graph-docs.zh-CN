@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 3ae838f408b6c0452a10379080895e5fdc64b6b1
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.openlocfilehash: b15da734583200891cc451b332cccd24a6ef47f8
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091527"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319524"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>通用打印云打印 API 概述
 
@@ -84,12 +84,17 @@ Microsoft Graph 通用打印 API 可让你的应用程序支持拉取打印。 �
 
 7. 当用户选择要打印的一个或多个作业时，应用程序可以[将打印作业重定向到物理打印机](/graph/api/printjob-redirect?view=graph-rest-beta)，作业将开始打印！ 仅当关联打印机上有一个 [printTask](/graph/api/resources/printtask?view=graph-rest-beta) 处于 `processing` 状态时，重定向调用才会成功，该打印机是由此应用在步骤 4 中创建的触发器启动的。 重定向任务后，该任务将自动设置为 `completed` 状态。
 
+   >**注意：** 将删除在 2 天内未重定向的已暂停打印作业。
+
 ## <a name="api-reference"></a>API 参考
 在查找此服务的 API 参考？
 
 - [Microsoft Graph Beta 中的通用打印 API](/graph/api/resources/print?view=graph-rest-beta)
 
+## <a name="provide-feedback"></a>提供反馈
+
+欢迎在提供有关通用打印 API 的反馈。 在 [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) 上提供建议。
+
 ## <a name="see-also"></a>另请参阅
 
 - [什么是通用打印](https://docs.microsoft.com/universal-print/fundamentals/universal-print-whatis)
-- 欢迎在 [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) 上提供有关通用打印 API 的反馈！
