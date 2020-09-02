@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 729fc1bf28f86f7e44a62ccb1bd28b71c75b6852
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 8d4f491f5e38b28c49cb1dede5c7049bb9e52d9f
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566532"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331088"
 ---
 ```objc
 
@@ -25,6 +25,7 @@ MSGraphIdentitySource *identitySources = [[MSGraphIdentitySource alloc] init];
 [identitySources setDisplayName:@"example.com"];
 [identitySourcesList addObject: identitySources];
 [connectedOrganization setIdentitySources:identitySourcesList];
+[connectedOrganization setState:@"proposed"];
 
 NSError *error;
 NSData *connectedOrganizationData = [connectedOrganization getSerializedDataWithError:&error];
