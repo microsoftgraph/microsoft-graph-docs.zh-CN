@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f1c9ae71507d9e2c6206dab8d757d74640e99a39
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: ca92e50b37480258bf6924d0f5435f7a503d798c
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566533"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331064"
 ---
 ```javascript
 
@@ -24,7 +24,8 @@ const connectedOrganization = {
       domainName: "example.com",
       displayName: "example.com"
       }
-  ]
+  ],
+  state:"proposed"
 };
 
 let res = await client.api('/identityGovernance/entitlementManagement/connectedOrganizations/')
