@@ -5,19 +5,19 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: cce2fadc8dd2990f4b58b74dad554050f8e526d2
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 5aebe53a7bec3fffc90bb27c7beb60c89b500942
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539210"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47330199"
 ---
 # <a name="update-term"></a>更新术语
 命名空间： termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[term](../resources/termstore-term.md)对象的属性。
+更新 [term](../resources/termstore-term.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,25 +46,27 @@ PATCH /termStore/sets/{setId}/terms/{termId}
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[term](../resources/termstore-term.md)对象的 JSON 表示形式。
+在请求正文中，提供 [term](../resources/termstore-term.md) 对象的 JSON 表示形式。
 
-下表显示了可为[术语](../resources/termstore-term.md)更新的属性。
+下表显示了可为 [术语](../resources/termstore-term.md)更新的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|标题|[termStore](../resources/termstore-localizedlabel.md)集合的 localizedLabel|术语的标签|
-|说明|[termStore](../resources/termstore-localizeddescription.md)集合的 localizedDescription|有关术语的说明|
-|properties|[键值](../resources/keyvalue.md)集合|与术语关联的属性|
+|标题|[termStore](../resources/termstore-localizedlabel.md) 集合的 localizedLabel|术语的标签|
+|说明|[termStore](../resources/termstore-localizeddescription.md) 集合的 localizedDescription|有关术语的说明|
+|properties|[键值](../resources/keyvalue.md) 集合|与术语关联的属性|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[term](../resources/termstore-term.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [term](../resources/termstore-term.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_term"
@@ -85,6 +87,20 @@ Content-length: 366
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-term-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-term-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-term-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

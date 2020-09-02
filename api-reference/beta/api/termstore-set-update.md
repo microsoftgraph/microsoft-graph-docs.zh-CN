@@ -5,19 +5,19 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: cf2910e70b9eabf79a925f36be911427b31a8d9e
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 65d5857f253f3d5a94d8043b843fb95cb00421f6
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539245"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47330394"
 ---
 # <a name="update-set"></a>更新集
 命名空间： termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[set](../resources/termstore-set.md)对象的属性。
+更新 [set](../resources/termstore-set.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,25 +47,27 @@ PATCH /termStore/sets/{setId}
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[set](../resources/termstore-set.md)对象的 JSON 表示形式。
+在请求正文中，提供 [set](../resources/termstore-set.md) 对象的 JSON 表示形式。
 
-下表显示了可以为该[集](../resources/termstore-set.md)编辑的属性。
+下表显示了可以为该 [集](../resources/termstore-set.md)编辑的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|localizedNames|[termStore](../resources/termstore-localizedname.md)集合的 localizedName|集的名称|
+|localizedNames|[termStore](../resources/termstore-localizedname.md) 集合的 localizedName|集的名称|
 |说明|String|集的说明|
-|properties|[键值](../resources/keyvalue.md)集合|集的属性|
+|properties|[键值](../resources/keyvalue.md) 集合|集的属性|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[set](../resources/termstore-set.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [set](../resources/termstore-set.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_set"
@@ -80,6 +82,20 @@ Content-length: 288
   "description": "mySet"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-set-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-set-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-set-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

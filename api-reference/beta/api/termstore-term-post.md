@@ -5,19 +5,19 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 2d2c18f802d9dfe68aa17b46c4dc196a31e3f93c
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: a94b020c8133dd154d3ce672fadc7966566e4a60
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539214"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47330138"
 ---
 # <a name="create-term"></a>创建术语
 命名空间： termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建一个新的[术语](../resources/termstore-term.md)对象。
+创建一个新的 [术语](../resources/termstore-term.md) 对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,23 +47,25 @@ POST /termStore/sets/{setId}/terms/{termId}/children
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[term](../resources/termstore-term.md)对象的 JSON 表示形式。
+在请求正文中，提供 [term](../resources/termstore-term.md) 对象的 JSON 表示形式。
 
-下表显示创建[术语](../resources/termstore-term.md)时所需的属性。
+下表显示创建 [术语](../resources/termstore-term.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|标题|[termStore](../resources/termstore-localizedlabel.md)集合的 localizedLabel|要创建的术语的标签|
+|标题|[termStore](../resources/termstore-localizedlabel.md) 集合的 localizedLabel|要创建的术语的标签|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[term](../resources/termstore-term.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [term](../resources/termstore-term.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_term_from_"
@@ -84,6 +86,20 @@ Content-length: 366
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-term-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-term-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-term-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应

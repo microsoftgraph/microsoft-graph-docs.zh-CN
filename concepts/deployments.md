@@ -2,12 +2,12 @@
 title: 区域云部署
 description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。
 author: arpitha-dhanapathi
-ms.openlocfilehash: 7693df9b66905c70ad0a75e88b5c9f605fe96857
-ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
+ms.openlocfilehash: cc302e4bc56e207b117667dc907b3bb928aaa164
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46589261"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47329332"
 ---
 # <a name="national-cloud-deployments"></a>区域云部署
 
@@ -23,7 +23,7 @@ ms.locfileid: "46589261"
 
 本文提供了有关不同 Microsoft Graph 国家云部署的信息，以及每个区域中的开发人员可用的功能。
 
->**注意：** [Microsoft Graph 数据连接](https://docs.microsoft.com/graph/data-connect-concept-overview?view=graph-rest-1.0)不支持任何国家云部署。 
+>**注意：** [Microsoft Graph 数据连接](https://docs.microsoft.com/graph/data-connect-concept-overview?view=graph-rest-1.0) 不支持任何国家云部署。 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/R_3E0IVypRM]
 
@@ -38,12 +38,12 @@ ms.locfileid: "46589261"
 |Azure AD 德国 |https://portal.microsoftazure.de|`https://login.microsoftonline.de`|
 |由世纪互联运营的 Azure AD 中国 |https://portal.azure.cn|`https://login.chinacloudapi.cn`|
 
-若要了解有关 Azure AD 访问令牌和 Microsoft Graph 的详细信息，请参阅[身份验证基础](./auth/auth-concepts.md)。 对于 Azure AD 身份验证方案，请参阅[AZURE ad 身份验证基础](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios)。
+若要了解有关 Azure AD 访问令牌和 Microsoft Graph 的详细信息，请参阅 [身份验证基础](./auth/auth-concepts.md)。 对于 Azure AD 身份验证方案，请参阅 [AZURE ad 身份验证基础](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios)。
 
 
 ## <a name="microsoft-graph-and-graph-explorer-service-root-endpoints"></a>Microsoft Graph 和 Graph 浏览器服务根终结点
 
-下表显示了每个国家/地区群的 Microsoft Graph 和[Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)的服务根终结点。
+下表显示了每个国家/地区群的 Microsoft Graph 和 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer) 的服务根终结点。
 
 | 区域云 | Microsoft Graph | Graph 浏览器 |
 |---------------------------|----------------|----------------|
@@ -100,7 +100,7 @@ ms.locfileid: "46589261"
  ( * 仅 ) 对 Exchange 和 OneDrive 服务的有限支持。 Azure AD services 不受支持。 
 
 > [!IMPORTANT]
-> 全局服务特定区域中的某些服务和功能在所有国家/地区群中可能不可用。 若要了解哪些服务可用，请参阅[地区提供的产品](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast)。
+> 全局服务特定区域中的某些服务和功能在所有国家/地区群中可能不可用。 若要了解哪些服务可用，请参阅 [地区提供的产品](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast)。
 
 
 若要了解有关国家/地区云的详细信息，请参阅下列主题：

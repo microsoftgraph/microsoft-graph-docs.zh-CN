@@ -5,19 +5,19 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 50a41ab87d3f105eeec04ced231ca8c3aa7e3bee
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: e097cfcb0ae83346433cf9ec9a510174e31a1bc4
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46565787"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47330051"
 ---
 # <a name="update-store"></a>更新存储
 命名空间： termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[store](../resources/termstore-store.md)对象的属性。
+更新 [store](../resources/termstore-store.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -45,20 +45,20 @@ PATCH /termStore
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[store](../resources/termstore-store.md)对象的 JSON 表示形式。
+在请求正文中，提供 [store](../resources/termstore-store.md) 对象的 JSON 表示形式。
 
-下表显示了可以为[存储区](../resources/termstore-store.md)编辑的属性。
+下表显示了可以为 [存储区](../resources/termstore-store.md)编辑的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|defaultLanguageTag|字符串|[Termstore](../resources/termstore-store.md)的默认语言。|
-|languageTags|String 集合|[Termstore](../resources/termstore-store.md)中可用的语言|
+|defaultLanguageTag|String|[Termstore](../resources/termstore-store.md)的默认语言。|
+|languageTags|String collection|[Termstore](../resources/termstore-store.md)中可用的语言|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[store](../resources/termstore-store.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [store](../resources/termstore-store.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -85,6 +85,10 @@ Content-length: 133
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-store-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-store-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

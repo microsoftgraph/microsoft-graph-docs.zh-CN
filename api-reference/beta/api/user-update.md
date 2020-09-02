@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d11283c8f456087d0a4ce816734c9ca05152cbe0
-ms.sourcegitcommit: a1a57e803c334e11316dd571ad1b54c95406740e
+ms.openlocfilehash: da38df2f5ed7ad82866c971cdd7b2ad31ba51041
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44413453"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47330251"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -57,7 +57,7 @@ PATCH /users/{id | userPrincipalName}
 |accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。 创建用户时此属性是必需的。    |
 |assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|分配给该用户的许可证。不可为 null。            |
 |birthday|DateTimeOffset|用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|businessPhones| 字符串集合 | 用户的电话号码。注意：虽然这是字符串集合，但是只能为该属性设置一个号码。|
+|businessPhones| String collection | 用户的电话号码。注意：虽然这是字符串集合，但是只能为该属性设置一个号码。|
 |城市|String|用户所在的城市。|
 |country|String|用户所在的国家/地区；例如，“美国”或“英国”。|
 |department|String|用户工作部门的名称。|
@@ -65,9 +65,10 @@ PATCH /users/{id | userPrincipalName}
 |employeeId|String|由组织分配给该用户的员工标识符。|
 |givenName|String|用户的名。|
 |hireDate|DateTimeOffset|用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|identities|[objectIdentity](../resources/objectidentity.md) 集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft、组织或诸如 Facebook、Google 和 Microsoft 等社交标识提供者提供，并绑定到用户帐户。 对**标识**的任何更新都将替换整个集合，并且您必须在集合中提供 userPrincipalName **signInType**标识。|
+|identities|[objectIdentity](../resources/objectidentity.md) 集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft、组织或诸如 Facebook、Google 和 Microsoft 等社交标识提供者提供，并绑定到用户帐户。 对 **标识** 的任何更新都将替换整个集合，并且您必须在集合中提供 userPrincipalName **signInType** 标识。|
 |interests|String collection|用户介绍自身兴趣的列表。|
 |jobTitle|String|用户的职务。|
+|mail|String|用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。 对此属性的更改还将更新用户的 **proxyAddresses** 集合，以包含作为 SMTP 地址的值。 <br><br>默认情况下返回。 支持 $filter。|
 |mailNickname|String|用户的邮件别名。 创建用户时必须指定此属性。|
 |mobilePhone|String|用户的主要移动电话号码。|
 |mySite|String|用户个人网站的 URL。|
@@ -85,14 +86,14 @@ PATCH /users/{id | userPrincipalName}
 |state|String|用户地址中的省/市/自治区或省。|
 |streetAddress|String|用户公司地点的街道地址。|
 |surname|String|用户的姓氏。|
-|usageLocation|字符串|两个字母的国家/地区代码（ISO 标准 3166）。 为检查服务在国家/地区的可用性，这对根据法律要求将分配许可证的用户而言是必需的。  示例包括：“US”、“JP”和“GB”。 不可为 null。|
-|userPrincipalName|字符串|用户的用户主体名称 (UPN)。UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。按照惯例，此名称应映射到用户的电子邮件名称。常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。创建用户时此属性是必需的。可从 [组织](../resources/organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。支持 $filter 和 $orderby。
+|usageLocation|String|两个字母的国家/地区代码（ISO 标准 3166）。 为检查服务在国家/地区的可用性，这对根据法律要求将分配许可证的用户而言是必需的。  示例包括：“US”、“JP”和“GB”。 不可为 null。|
+|userPrincipalName|String|用户的用户主体名称 (UPN)。UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。按照惯例，此名称应映射到用户的电子邮件名称。常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。创建用户时此属性是必需的。可从 [组织](../resources/organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。支持 $filter 和 $orderby。
 |userType|String|可用于对目录中的用户类型分类的字符串值，例如“成员”和“访客”。          |
 
-由于**用户**资源支持[扩展](/graph/extensibility-overview)，因此您可以使用该 `PATCH` 操作在现有**用户**实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
+由于 **用户** 资源支持 [扩展](/graph/extensibility-overview)，因此您可以使用该 `PATCH` 操作在现有 **用户** 实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
 
 > [!NOTE] 
-> 以下属性无法使用仅应用程序上下文进行更新： **aboutMe**、**生日**、**雇用**日期、**兴趣**、**我**的爱好、 **pastProjects**、 **preferredName**、**责任**、**学校**和**技能**。
+> 以下属性无法使用仅应用程序上下文进行更新： **aboutMe**、 **生日**、 **雇用**日期、 **兴趣**、 **我**的爱好、 **pastProjects**、 **preferredName**、 **责任**、 **学校**和 **技能**。
 
 ## <a name="response"></a>响应
 

@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 477fda55761220d61afc480ab1a8f8304bf879dc
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: c1225bf6f9aacef77ece20c659a51b36d362ff31
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539242"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47329344"
 ---
 # <a name="list-groups"></a>列出组
 命名空间： termStore
@@ -52,11 +52,13 @@ GET /termStore/groups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `200 OK` 响应正文中返回响应代码和[group](../resources/termstore-group.md)对象集合。
+如果成功，此方法在 `200 OK` 响应正文中返回响应代码和 [group](../resources/termstore-group.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_group"
@@ -66,6 +68,20 @@ GET /termStore/groups
 ``` http
 GET https://graph.microsoft.com/beta/termStore/groups
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>响应
