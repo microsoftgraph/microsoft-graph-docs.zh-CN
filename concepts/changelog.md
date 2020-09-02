@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: f961ca441ddcde086a4bf3e69a451a8f0c2d1e44
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: b3f9d291d634aef2c33661aea18348be2dfa65f1
+ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312101"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47319440"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -42,6 +42,13 @@ ms.locfileid: "47312101"
 | 添加项 | v1.0 | 通过 [delta 查询](/graph/api/event-delta)更改跟踪适用于 Microsoft Graph for US Government。 |
 | 删除 | Beta | 已从 [订阅](/graph/api/resources/subscription?view=graph-rest-beta) 实体中删除 “**includeProperties**” 属性。 将此属性替换为 “**includeResourceData**” 属性。 |
 | 添加项 | Beta | 添加了功能，获取[通过事件中心发送的更改通知](change-notifications-delivery.md)。 |
+
+### <a name="cloud-communications"></a>云通信
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | Beta 和 v1.0 | 向 [call](/graph/api/resources/call) 实体添加了 **transcription** 属性。|
+| 添加项 | v1.0 | 向 [call](/graph/api/resources/call) 实体添加了 **cancelMediaProcessing** API。|
 
 ### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
 
@@ -85,6 +92,7 @@ ms.locfileid: "47312101"
 |添加项|beta|向 [resultantAppStateDetail](/graph/api/resources/intune-apps-resultantappstatedetail?view=graph-rest-beta) 枚举类型添加了 **iosAppStoreUpdateFailedToInstall**, **vppAppHasUpdateAvailable**、**userRejectedUpdate**、**managedAppNoLongerPresent**、**userRejectedInstall** 和 **userIsNotLoggedIntoAppStore** 成员|
 
 ### <a name="identity-and-access"></a>身份和访问
+
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | beta | 在[使用条款协议中添加了下列属性](/graph/api/resources/agreement?view=graph-rest-beta):<ul><li>isPerDeviceAcceptanceRequired</li><li>termsExpiration</li><li>userReacceptRequiredFrequency</li></ul>|
@@ -93,6 +101,14 @@ ms.locfileid: "47312101"
 | 添加项 | beta | 向 [unifiedRoleDefinition](/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) 资源添加了 inheritsPermissionsFrom 属性。 |
 | 添加项 | beta | 向 [connectedOrganization](/graph/api/resources/connectedOrganization?view=graph-rest-beta) 资源添加了 **connectedOrganizationState** 枚举类型和 **state** 属性。|
 | 更改   | beta | 将 **requestorSettings** 允许值从“AllExistingConnectedOrganizationSubjects”重命名为了“AllConfiguredConnectedOrganizationSubjects” |
+| 添加项 | beta | 向 [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta) 资源类型添加了以下属性：<ul><li>**defaultUserRolePermissions**</li><li>**allowedToUseSSPR**</li><li>**allowedToSignUpEmailBasedSubscriptions**</li><li>**allowEmailVerifiedUsersToJoinOrganization**</li></ul>|
+
+### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | beta | 添加了 [b2cUserFlows](/graph/api/resources/b2cuserflows?view=graph-rest-beta) 实体，用于在 Azure Active Directory B2C 租户中管理用户流。 |
+| 添加项 | beta | 添加了 [b2xUserFlows](/graph/api/resources/b2xuserflows?view=graph-rest-beta) 实体，用于在 Azure Active Directory 租户中管理自助注册用户流。 |
 
 ### <a name="people-and-workplace-intelligence--profile"></a>人员和工作场所智能 | 配置文件
 
@@ -2215,7 +2231,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |:---|:---|:---|
 |Addition|beta|增加了新实体：<br/>[androidOmaCpConfiguration](/graph/api/resources/intune-deviceconfig-androidomacpconfiguration?view=graph-rest-beta)<br/>[managedDeviceEncryptionState](/graph/api/resources/intune-deviceconfig-manageddeviceencryptionstate?view=graph-rest-beta)<br/>|
 |添加项|beta|新增了复杂类型：<br/>[deliveryOptimizationBandwidth](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidth?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthAbsolute](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthabsolute?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthBusinessHoursLimit](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthHoursWithPercentage](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthhourswithpercentage?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthPercentage](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthpercentage?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdCustom](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidcustom?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdSource](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidsource?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdSourceOptions](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidsourceoptions?view=graph-rest-beta)<br/>[deliveryOptimizationMaxCacheSize](/graph/api/resources/intune-deviceconfig-deliveryoptimizationmaxcachesize?view=graph-rest-beta)<br/>[deliveryOptimizationMaxCacheSizeAbsolute](/graph/api/resources/intune-deviceconfig-deliveryoptimizationmaxcachesizeabsolute?view=graph-rest-beta)<br/>[deliveryOptimizationMaxCacheSizePercentage](/graph/api/resources/intune-deviceconfig-deliveryoptimizationmaxcachesizepercentage?view=graph-rest-beta)<br/>[encryptionReportPolicyDetails](/graph/api/resources/intune-deviceconfig-encryptionreportpolicydetails?view=graph-rest-beta)<br/>|
-|添加项|beta 版本|增加了新枚举类型：<br/>[advancedBitLockerState](/graph/api/resources/intune-deviceconfig-advancedbitlockerstate?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdOptionsType](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype?view=graph-rest-beta)<br/>[deliveryOptimizationRestrictPeerSelectionByOptions](/graph/api/resources/intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions?view=graph-rest-beta)<br/>[deviceTypes](/graph/api/resources/intune-deviceconfig-devicetypes?view=graph-rest-beta)<br/>[edgeKioskModeRestrictionType](/graph/api/resources/intune-deviceconfig-edgekioskmoderestrictiontype?view=graph-rest-beta)<br/>[encryptionReadinessState](/graph/api/resources/intune-deviceconfig-encryptionreadinessstate?view=graph-rest-beta)<br/>[encryptionState](/graph/api/resources/intune-deviceconfig-encryptionstate?view=graph-rest-beta)<br/>|
+|添加项|beta|增加了新枚举类型：<br/>[advancedBitLockerState](/graph/api/resources/intune-deviceconfig-advancedbitlockerstate?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdOptionsType](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype?view=graph-rest-beta)<br/>[deliveryOptimizationRestrictPeerSelectionByOptions](/graph/api/resources/intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions?view=graph-rest-beta)<br/>[deviceTypes](/graph/api/resources/intune-deviceconfig-devicetypes?view=graph-rest-beta)<br/>[edgeKioskModeRestrictionType](/graph/api/resources/intune-deviceconfig-edgekioskmoderestrictiontype?view=graph-rest-beta)<br/>[encryptionReadinessState](/graph/api/resources/intune-deviceconfig-encryptionreadinessstate?view=graph-rest-beta)<br/>[encryptionState](/graph/api/resources/intune-deviceconfig-encryptionstate?view=graph-rest-beta)<br/>|
 |添加项|beta|向 [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting?view=graph-rest-beta) 实体添加了 **roleScopeTagIds** 属性|
 |添加项|beta|向 [iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration?view=graph-rest-beta) 实体添加了 **autoFillForceAuthentication**、**cellularBlockPlanModification**、**classroomForceAutomaticallyJoinClasses**、**classroomForceUnpromptedAppAndDeviceLock**、**esimBlockModification**、**proximityBlockSetupToNewDevice**、**softwareUpdatesEnforcedDelayInDays** 和 **softwareUpdatesForceDelayed** 属性|
 |添加项|beta|向 [macOSGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-macosgeneraldeviceconfiguration?view=graph-rest-beta) 实体添加了 **softwareUpdatesEnforcedDelayInDays**、**softwareUpdatesForceDelayed** 和 **contentCachingBlocked** 属性|
@@ -2806,7 +2822,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | v1.0 | 向 [Organization](/graph/api/resources/organization?view=graph-rest-beta) 资源添加了 isMultipleDataLocationsForServicesEnabled 属性，允许应用确认已为多地理位置功能启用了租户。 向 [user](/graph/api/resources/user?view=graph-rest-beta) 和 [group](/graph/api/resources/group?view=graph-rest-beta) 资源添加了 preferredDataLocation 属性，允许为用户和组设置首选数据位置。|
+| 添加项 | v1.0 | 向 [organization](/graph/api/resources/organization?view=graph-rest-beta) 资源添加了 **isMultipleDataLocationsForServicesEnabled** 属性，使应用能够确认已为多地理位置功能启用了某个租户。 向 [group](/graph/api/resources/group?view=graph-rest-beta) 资源添加了 **preferredDataLocation** 属性，允许为组设置首选数据位置。|
 | 添加项 | v1.0 | 向 [User](/graph/api/resources/user?view=graph-rest-1.0) and [Group](/graph/api/resources/group?view=graph-rest-1.0) 实体添加了 [onPremisesProvisioningErrors](/graph/api/resources/onpremisesprovisioningerror?view=graph-rest-1.0) 属性，表示在使用 Microsoft 同步产品（包括 Azure AD Connect、DirSync 和 MIM + 连接器），将本地目录同步到 Azure Active Directory 时发生目录同步错误。|
 | 添加项 | v1.0 | 向 [User](/graph/api/resources/user?view=graph-rest-1.0) 实体添加了 [onPremisesExtensionAttributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-1.0) 属性，其中包含 15 个自定义扩展属性。 对于 onPremisesSyncEnabled 用户，此组属性在本地 Active Directory 中进行管理，并同步到 Azure AD，且为只读。 对于只使用云的用户（其中 onPremisesSyncEnabled 为 false），可以在创建或更新期间设置这些属性。|
 |添加项|v1.0|向 [User](/graph/api/resources/user?view=graph-rest-1.0) 实体添加了 **onPremisesDomainName**、**onPremisesSamAccountName** 和 **onPremisesUserPrincipalName** 属性|
@@ -4067,7 +4083,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | Change      | Beta    | 向 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 实体添加了 **configurationManagerClientEnabledFeatures** 属性 |
 | Change      | Beta    | 从 [organization](/graph/api/resources/intune-onboarding-organization?view=graph-rest-beta) 实体中删除了 **intuneBrand** 属性 |
 | Change      | Beta    | 向 [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta) 实体添加了 **smartScreenEnableInShell**、**smartScreenBlockOverrideForFiles**、**applicationGuardEnabled**、**applicationGuardBlockFileTransfer**、**applicationGuardBlockNonEnterpriseContent**、**applicationGuardAllowPersistence** 和 **applicationGuardForceAuditing** 属性 |
-| Change      | Beta    | 向 [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta) 实体添加了 **searchBlockDiacritics**、**searchDisableAutoLanguageDetection**、**searchDisableIndexingEncryptedItems**、**searchEnableRemoteQueries**、**searchDisableUseLocation**、**searchDisableIndexerBackoff**、**searchDisableIndexingRemovableDrive**、**searchEnableAutomaticIndexSizeManangement**、**smartScreenEnableAppInstallControl** 和 **privacyAdvertisingId** 属性 |
+| 更改      | Beta    | 向 [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta) 实体添加了 **searchBlockDiacritics**、**searchDisableAutoLanguageDetection**、**searchDisableIndexingEncryptedItems**、**searchEnableRemoteQueries**、**searchDisableUseLocation**、**searchDisableIndexerBackoff**、**searchDisableIndexingRemovableDrive**、**searchEnableAutomaticIndexSizeManangement**、**smartScreenEnableAppInstallControl** 和 **privacyAdvertisingId** 属性 |
 | Change      | Beta    | 从 [windows10TeamGeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10teamgeneralconfiguration?view=graph-rest-beta) 实体中删除了 **settingsDeviceName** 属性 |
 | Change      | Beta    | 从 [windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta) 实体中删除了 **restartMode** 属性 |
 | 更改      | Beta    | 向 [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) 实体添加了 **detectedApps** 和 **managedDevices** 导航属性 |
