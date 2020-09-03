@@ -126,7 +126,7 @@ items:
         href: /graph/sdks/batch-requests?context=graph/api/beta
       - name: 上传大文件
         href: /graph/sdks/large-file-upload?context=graph/api/beta
-      - name: 使用 beta API
+      - name: 使用 beta 版 API
         href: /graph/sdks/use-beta?context=graph/api/beta
   - name: 使用工具包
     items:
@@ -9942,8 +9942,11 @@ items:
                       - name: 消除
                         href: api/riskyusers-dismiss.md
               - name: 标识提供程序
-                href: resources/identityprovider.md
                 items:
+                  - name: 标识提供程序类型
+                    href: resources/identityprovider.md
+                  - name: OpenID Connect 标识提供程序类型
+                    href: resources/openidconnectprovider.md
                   - name: 列出
                     href: api/identityprovider-list.md
                   - name: 创建
@@ -11906,7 +11909,7 @@ items:
               - name: 获取团队照片
                 href: api/team-get-photo.md
               - name: 更新团队照片
-                href: api/team-update-photo.md
+                href: api/profilephoto-update.md
           - name: 组（团队）
             href: resources/group.md
             items:
