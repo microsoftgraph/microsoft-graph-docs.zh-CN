@@ -1,32 +1,32 @@
 ---
-title: 为滚动密钥生成已所有权令牌的证明
-description: 作为 addKey 和 removeKey 方法的请求验证的一部分，需要使用已拥有令牌的证明。 本文档提供了有关生成已占有令牌证明的指南。
+title: 生成用于滚动密钥的所有权证明令牌
+description: 作为对 addKey 和 removeKey 方法的请求验证的一部分，需要提供所有权证明令牌。 本文档提供生成所有权证明令牌的指南。
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: 516673b3f5ef318f1c2cc42778d8bec99471c630
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
-ms.translationtype: MT
+ms.openlocfilehash: b0e0384ab440bb08eb3b708c4ad057da42986c5c
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289649"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47330090"
 ---
-# <a name="generating-proof-of-possession-tokens-for-rolling-keys"></a><span data-ttu-id="83d10-104">为滚动密钥生成已所有权令牌的证明</span><span class="sxs-lookup"><span data-stu-id="83d10-104">Generating proof of possession tokens for rolling keys</span></span>
+# <a name="generating-proof-of-possession-tokens-for-rolling-keys"></a><span data-ttu-id="e0afe-104">生成用于滚动密钥的所有权证明令牌</span><span class="sxs-lookup"><span data-stu-id="e0afe-104">Generating proof of possession tokens for rolling keys</span></span>
 
-<span data-ttu-id="83d10-105">您可以使用[应用程序](/graph/resources/application?view=graph-rest-v1.0)上定义的**addKey**和**removeKey**方法和[servicePrincipal](/graph/resources/serviceprincipal?view=graph-rest-v1.0)资源以编程方式滚动过期的项。</span><span class="sxs-lookup"><span data-stu-id="83d10-105">You can use the **addKey** and **removeKey** methods defined on the [application](/graph/resources/application?view=graph-rest-v1.0) and [servicePrincipal](/graph/resources/serviceprincipal?view=graph-rest-v1.0) resources to roll expiring keys programmatically.</span></span>
+<span data-ttu-id="e0afe-105">可以使用在 [application](/graph/api/resources/application?view=graph-rest-1.0) 和 [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0) 资源上定义的 **addKey** 和 **removeKey** 方法，以编程方式滚动过期密钥。</span><span class="sxs-lookup"><span data-stu-id="e0afe-105">You can use the **addKey** and **removeKey** methods defined on the [application](/graph/api/resources/application?view=graph-rest-1.0) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0) resources to roll expiring keys programmatically.</span></span>
 
-<span data-ttu-id="83d10-106">作为这些方法的请求验证的一部分，可以在调用方法之前验证现有密钥的所有权证明。</span><span class="sxs-lookup"><span data-stu-id="83d10-106">As part of the request validation for these methods, a proof of possession of an existing key is verified before the methods can be invoked.</span></span> <span data-ttu-id="83d10-107">校样由自签名的 JWT 令牌表示。</span><span class="sxs-lookup"><span data-stu-id="83d10-107">The proof is represented by a self-signed JWT token.</span></span> <span data-ttu-id="83d10-108">必须使用应用程序的现有有效证书之一的私钥对此 JWT 令牌进行签名。</span><span class="sxs-lookup"><span data-stu-id="83d10-108">This JWT token must be signed using the private key of one of the application's existing valid certificates.</span></span> <span data-ttu-id="83d10-109">令牌寿命不应超过10分钟。</span><span class="sxs-lookup"><span data-stu-id="83d10-109">The token lifespan should not exceed 10 minutes.</span></span>
+<span data-ttu-id="e0afe-106">作为对这些方法的请求验证的一部分，在调用这些方法之前，将对现有密钥的所有权证明进行验证。</span><span class="sxs-lookup"><span data-stu-id="e0afe-106">As part of the request validation for these methods, a proof of possession of an existing key is verified before the methods can be invoked.</span></span> <span data-ttu-id="e0afe-107">该证明由自签名的 JWT 令牌表示。</span><span class="sxs-lookup"><span data-stu-id="e0afe-107">The proof is represented by a self-signed JWT token.</span></span> <span data-ttu-id="e0afe-108">此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。</span><span class="sxs-lookup"><span data-stu-id="e0afe-108">This JWT token must be signed using the private key of one of the application's existing valid certificates.</span></span> <span data-ttu-id="e0afe-109">令牌有效期不应超过 10 分钟。</span><span class="sxs-lookup"><span data-stu-id="e0afe-109">The token lifespan should not exceed 10 minutes.</span></span>
 
-> <span data-ttu-id="83d10-110">**注意：** 没有任何现有有效证书的应用程序（尚未添加任何证书，或所有证书已过期）将无法使用此服务操作。</span><span class="sxs-lookup"><span data-stu-id="83d10-110">**Note:** Applications that don’t have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won’t be able to use this service action.</span></span> <span data-ttu-id="83d10-111">可以使用[更新应用程序](/graph/api/application-update?view=graph-rest-v1.0)操作来改为执行更新。</span><span class="sxs-lookup"><span data-stu-id="83d10-111">You can use the [Update application](/graph/api/application-update?view=graph-rest-v1.0) operation to perform an update instead.</span></span>
+> <span data-ttu-id="e0afe-110">**注意：** 没有任何现有有效证书（尚未添加证书，或者所有证书均已过期）的应用程序将无法使用此服务操作。</span><span class="sxs-lookup"><span data-stu-id="e0afe-110">**Note:** Applications that don’t have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won’t be able to use this service action.</span></span> <span data-ttu-id="e0afe-111">可改用[更新应用程序](/graph/api/application-update?view=graph-rest-v1.0)操作来执行更新。</span><span class="sxs-lookup"><span data-stu-id="e0afe-111">You can use the [Update application](/graph/api/application-update?view=graph-rest-v1.0) operation to perform an update instead.</span></span>
 
-<span data-ttu-id="83d10-112">令牌应包含以下声明：</span><span class="sxs-lookup"><span data-stu-id="83d10-112">The token should contain the following claims:</span></span>
+<span data-ttu-id="e0afe-112">令牌应包含以下声明：</span><span class="sxs-lookup"><span data-stu-id="e0afe-112">The token should contain the following claims:</span></span>
 
-- <span data-ttu-id="83d10-113">`aud`-需要访问群体 `00000002-0000-0000-c000-000000000000` 。</span><span class="sxs-lookup"><span data-stu-id="83d10-113">`aud` - Audience needs to be `00000002-0000-0000-c000-000000000000`.</span></span>
-- <span data-ttu-id="83d10-114">`iss`-颁发者必须是正在进行呼叫的应用程序的__id__ 。</span><span class="sxs-lookup"><span data-stu-id="83d10-114">`iss` - Issuer needs to be the __id__  of the application that is making the call.</span></span>
-- <span data-ttu-id="83d10-115">`nbf`-不早时间。</span><span class="sxs-lookup"><span data-stu-id="83d10-115">`nbf` - Not before time.</span></span>
-- <span data-ttu-id="83d10-116">`exp`-过期时间应为 "nbf" + 10 分钟。</span><span class="sxs-lookup"><span data-stu-id="83d10-116">`exp` - Expiration time should be "nbf" + 10 mins.</span></span>
+- <span data-ttu-id="e0afe-113">`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</span><span class="sxs-lookup"><span data-stu-id="e0afe-113">`aud` - Audience needs to be `00000002-0000-0000-c000-000000000000`.</span></span>
+- <span data-ttu-id="e0afe-114">`iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__。</span><span class="sxs-lookup"><span data-stu-id="e0afe-114">`iss` - Issuer needs to be the __id__  of the application that is making the call.</span></span>
+- <span data-ttu-id="e0afe-115">`nbf` -“不早于”时间。</span><span class="sxs-lookup"><span data-stu-id="e0afe-115">`nbf` - Not before time.</span></span>
+- <span data-ttu-id="e0afe-116">`exp` - 过期时间应该是“不早于”+ 10 分钟。</span><span class="sxs-lookup"><span data-stu-id="e0afe-116">`exp` - Expiration time should be "nbf" + 10 mins.</span></span>
 
-<span data-ttu-id="83d10-117">您可以使用下面的代码示例生成此已占有令牌的证明。</span><span class="sxs-lookup"><span data-stu-id="83d10-117">You can use the following code example to generate this proof of possession token.</span></span>
+<span data-ttu-id="e0afe-117">可使用以下代码示例来生成此所有权证明令牌。</span><span class="sxs-lookup"><span data-stu-id="e0afe-117">You can use the following code example to generate this proof of possession token.</span></span>
 
 ```csharp
 using System;
