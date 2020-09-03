@@ -195,6 +195,10 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: 身份验证方法
             href: authenticationmethods-get-started.md
+          - name: 管控
+            items:
+              - name: 创建访问程序包
+                href: tutorial-access-package-api.md
       - name: 邮件
         displayName: 'Outlook, Outlook mail'
         items:

@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 6f1971e51cb9641d696da0531def0f574f93e3cb
-ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
+ms.openlocfilehash: c4e9c0a3141ec8dfeb557b7e6b6b5fd2cd5eaff6
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47287496"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47329479"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -161,7 +161,7 @@ ms.locfileid: "47287496"
 | birthday | DateTimeOffset | 用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'` <br><br>仅在 $select 上返回。 |
 | businessPhones | String collection | 用户的电话号码。 仅可为此属性设置一个数字。 <br><br>默认返回。 |
 | 城市 | String | 用户所在的城市。 <br><br>仅在 $select 上返回。 支持 $filter。 |
-| companyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 <br><br>仅在 $select 上返回。 |
+| companyName | String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 此公司名称的最大长度为 64 个字符。<br><br>仅在 $select 上返回。 |
 | consentProvidedForMinor | String| 设置是否已获得未成年人的同意。 允许的值：`null`、`granted`、`denied` 和 `notRequired`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 $select 上返回。 |
 | country | String | 用户所在的国家/地区；例如，“美国”或“英国”。 <br><br>仅在 $select 上返回。 支持 $filter。 |
 | createdDateTime | DateTimeOffset | 创建用户的日期和时间。 值无法修改，并在实体创建时自动填充。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 属性可为 Null。 Null 值表示无法为用户确定准确的创建时间。 <br><br>仅在 $select 上返回。 只读。 支持 $filter。 |
@@ -185,7 +185,7 @@ ms.locfileid: "47287496"
 | lastPasswordChangeDateTime | DateTimeOffset | 此 Azure AD 用户上次更改其密码的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'` <br><br>仅在 $select 上返回。 |
 | legalAgeGroupClassification | String | 由企业应用程序用于确定用户的法定年龄组。 此属性为只读，并且基于 **ageGroup** 和 **consentProvidedForMinor** 属性进行计算。 允许的值：`null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 <br><br>仅在 $select 上返回。 |
 | licenseAssignmentStates | [licenseAssignmentState](licenseassignmentstate.md) 集合 | 此用户的许可证分配状态。 <br><br>仅在 $select 上返回。 只读。 |
-| mail | String | 用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 只读。 支持 $filter。 |
+| mail | String | 用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。 <br><br>默认返回。 支持 $filter。 |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | 已登录用户的主邮箱的设置。 可以[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)用于向传入邮件发送自动答复、区域设置和时区的设置。 <br><br>仅在 $select 上返回。 |
 | mailNickname | String | 用户的邮件别名。 创建用户时必须指定此属性。 <br><br>仅在 $select 上返回。 支持 $filter。 |
 | mobilePhone | String | 用户的主要移动电话号码。 <br><br>默认返回。 |

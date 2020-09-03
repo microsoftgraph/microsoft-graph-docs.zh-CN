@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4568b44ac0da8727a9f6155127ab3de88c8b7029
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 52ce3945a02a0b8780a81316e17109c6a2338f85
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107848"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47330384"
 ---
 # <a name="get-a-user"></a>获取用户
 
@@ -31,20 +31,33 @@ ms.locfileid: "43107848"
 |委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite    |
 |应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
-## <a name="http-request"></a>HTTP 请求
+调用 `/me` 终结点需要已登录的用户，因此需要委派权限。 使用 `/me` 的终结点时不支持应用程序权限。
+
+对于特定用户：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}
 ```
+
+对于登录用户：
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me
+```
+
 ## <a name="optional-query-parameters"></a>可选的查询参数
+
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+
 ## <a name="request-headers"></a>请求标头
+
 | 标头       | 值|
 |:-----------|:------|
 | Authorization  | Bearer {token}。必需。|
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
