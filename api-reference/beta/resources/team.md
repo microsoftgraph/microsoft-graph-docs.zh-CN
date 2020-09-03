@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e9f7340b08b65bb1e86bf5ce2a5be5f525662e41
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: b548c59a72af84a1a30d30cf0edb6fdf39df26d5
+ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757266"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47340045"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -41,7 +41,6 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |[列出你的团队](../api/user-list-joinedteams.md) | [team](team.md) 集合 | 列出你属于的团队。 |
 |[列出所有团队](/graph/teams-list-all-teams) | [group](group.md) 集合 | 列出具有团队的所有组。 |
 |[获取团队照片](../api/team-get-photo.md) | 二进制数据 | 获取团队的照片（图片）。 |
-|[更新团队照片](../api/team-update-photo.md) | 无 | 更新团队的照片（图片）。 |
 
 ## <a name="properties"></a>属性
 
