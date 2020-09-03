@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: kevinbellinger
-ms.openlocfilehash: 72c30f03b51e186321acf6b89790c0fbd1352f06
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 5ba0cb3b88e5048141cea8085550a4c3e389130e
+ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807981"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47340017"
 ---
 # <a name="update-profilephoto"></a>更新 profilephoto
 
@@ -18,9 +18,9 @@ ms.locfileid: "46807981"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新租户中任何用户的照片，包括登录用户或指定的组或联系人。由于目前每个 REST 请求的总大小限制为8MB，这会限制您可以添加到8MB 下的照片的大小。
+更新租户中任何用户的照片，包括已登录用户或指定的组或联系人。由于目前每个 REST 请求的总大小限制为8MB，因此您可以添加的照片的大小限制为 8 MB 以下。
 
-在测试版中仅使用 PUT 进行此操作。
+仅在此操作中使用 PUT。
 
 > **注意**：更新 **用户** 照片时，此操作将先尝试更新 Microsoft 365 中的照片。 如果此操作失败 (由于用户没有邮箱) ，此 API 将尝试更新 Azure Active Directory 中的照片。
 
@@ -48,6 +48,14 @@ PUT /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
+
+若要更新团队的照片：
+
+<!-- { "blockType": "ignored" } -->
+```http
+PUT /groups/{teamId}/photo/$value`
+```
+
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
@@ -62,8 +70,8 @@ PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 如果成功，此方法返回 `200 OK` 响应代码。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+### <a name="request"></a>请求
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -87,8 +95,10 @@ Binary data for the image
 
 ---
 
-##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+### <a name="response"></a>响应
+下面展示了示例响应。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

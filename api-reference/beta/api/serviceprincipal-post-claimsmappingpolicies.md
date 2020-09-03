@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 476e2cff0c2fe519ce99b1157df5a27c013b6a04
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: fca74b192ac261edbe4ba0e6af67760d409dd30d
+ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218631"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47340038"
 ---
 # <a name="assign-claimsmappingpolicy"></a>分配 claimsMappingPolicy
 
@@ -18,9 +18,9 @@ ms.locfileid: "43218631"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将[claimsMappingPolicy](../resources/claimsmappingpolicy.md)分配给[servicePrincipal](../resources/servicePrincipal.md)。
+将 [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 分配给 [servicePrincipal](../resources/servicePrincipal.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/claimsMappingPolicies/$ref
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应分配给服务主体的[claimsMappingPolicy](../resources/claimsmappingpolicy.md)对象的`@odata.id`标识符（使用属性）。
+在请求正文中，使用[claimsMappingPolicy](../resources/claimsmappingpolicy.md) `@odata.id` 应分配给服务主体的属性) 提供 claimsMappingPolicy 对象 (的标识符。
 
 ## <a name="response"></a>响应
 
@@ -66,7 +66,7 @@ POST /servicePrincipals/{id}/claimsMappingPolicies/$ref
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/claimsMappingPolicies
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/claimsMappingPolicies/$ref
 Content-Type: application/json
 
 {

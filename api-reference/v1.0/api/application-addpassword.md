@@ -5,20 +5,20 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 703a4f83d40d4f6096e4604a6667669d692bc1bb
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 1d816e00298ca0a82df3f595f19950bb44570ab4
+ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44286938"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47340052"
 ---
 # <a name="application-addpassword"></a>应用程序： addPassword
 
 命名空间：microsoft.graph
 
-向[应用程序](../resources/application.md)添加强密码。
+向 [应用程序](../resources/application.md)添加强密码。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,7 +47,7 @@ POST /applications/{id}/addPassword
 
 在请求正文中，提供 `passwordCredential` 具有以下属性的可选对象。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | displayName | String | 密码的友好名称。 可选。 |
 | endDateTime | DateTimeOffset | 密码过期的日期和时间，使用 ISO 8601 格式表示，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 可选。 默认值为 "startDateTime + 2 年"。 |
@@ -55,7 +55,7 @@ POST /applications/{id}/addPassword
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的[passwordCredential](../resources/passwordcredential.md)对象。 Response 对象中的**secretText**属性包含由 Azure Active Directory 生成的强密码，其长度为16-64 个字符。 将来无法检索此密码。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [passwordCredential](../resources/passwordcredential.md) 对象。 Response 对象中的 **secretText** 属性包含由 Azure Active Directory 生成的强密码，其长度为16-64 个字符。 将来无法检索此密码。
 
 ## <a name="examples"></a>示例
 
@@ -63,7 +63,7 @@ POST /applications/{id}/addPassword
 
 ### <a name="request"></a>请求
 
-下面展示了示例请求。
+下面展示了示例请求。 在请求中指定的 **id** 是应用程序的 **id** 属性的值，而不是 **appId** 属性的值。 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

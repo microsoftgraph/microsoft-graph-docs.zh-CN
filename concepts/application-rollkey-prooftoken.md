@@ -1,32 +1,32 @@
 ---
-title: 为滚动密钥生成已所有权令牌的证明
-description: 作为 addKey 和 removeKey 方法的请求验证的一部分，需要使用已拥有令牌的证明。 本文档提供了有关生成已占有令牌证明的指南。
+title: 生成用于滚动密钥的所有权证明令牌
+description: 作为对 addKey 和 removeKey 方法的请求验证的一部分，需要提供所有权证明令牌。 本文档提供生成所有权证明令牌的指南。
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: 516673b3f5ef318f1c2cc42778d8bec99471c630
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
-ms.translationtype: MT
+ms.openlocfilehash: b0e0384ab440bb08eb3b708c4ad057da42986c5c
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289649"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47330090"
 ---
-# <a name="generating-proof-of-possession-tokens-for-rolling-keys"></a>为滚动密钥生成已所有权令牌的证明
+# <a name="generating-proof-of-possession-tokens-for-rolling-keys"></a>生成用于滚动密钥的所有权证明令牌
 
-您可以使用[应用程序](/graph/resources/application?view=graph-rest-v1.0)上定义的**addKey**和**removeKey**方法和[servicePrincipal](/graph/resources/serviceprincipal?view=graph-rest-v1.0)资源以编程方式滚动过期的项。
+可以使用在 [application](/graph/api/resources/application?view=graph-rest-1.0) 和 [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0) 资源上定义的 **addKey** 和 **removeKey** 方法，以编程方式滚动过期密钥。
 
-作为这些方法的请求验证的一部分，可以在调用方法之前验证现有密钥的所有权证明。 校样由自签名的 JWT 令牌表示。 必须使用应用程序的现有有效证书之一的私钥对此 JWT 令牌进行签名。 令牌寿命不应超过10分钟。
+作为对这些方法的请求验证的一部分，在调用这些方法之前，将对现有密钥的所有权证明进行验证。 该证明由自签名的 JWT 令牌表示。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌有效期不应超过 10 分钟。
 
-> **注意：** 没有任何现有有效证书的应用程序（尚未添加任何证书，或所有证书已过期）将无法使用此服务操作。 可以使用[更新应用程序](/graph/api/application-update?view=graph-rest-v1.0)操作来改为执行更新。
+> **注意：** 没有任何现有有效证书（尚未添加证书，或者所有证书均已过期）的应用程序将无法使用此服务操作。 可改用[更新应用程序](/graph/api/application-update?view=graph-rest-v1.0)操作来执行更新。
 
 令牌应包含以下声明：
 
-- `aud`-需要访问群体 `00000002-0000-0000-c000-000000000000` 。
-- `iss`-颁发者必须是正在进行呼叫的应用程序的__id__ 。
-- `nbf`-不早时间。
-- `exp`-过期时间应为 "nbf" + 10 分钟。
+- `aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。
+- `iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__。
+- `nbf` -“不早于”时间。
+- `exp` - 过期时间应该是“不早于”+ 10 分钟。
 
-您可以使用下面的代码示例生成此已占有令牌的证明。
+可使用以下代码示例来生成此所有权证明令牌。
 
 ```csharp
 using System;

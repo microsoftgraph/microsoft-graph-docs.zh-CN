@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6d6a0a69c7154d9ac9576e051c82a173435ec0db
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 32f088779b925484f42004a8316d1f246ce4fa65
+ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289381"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47339996"
 ---
 # <a name="application-addpassword"></a>应用程序： addPassword
 
@@ -18,7 +18,7 @@ ms.locfileid: "44289381"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-向[应用程序](../resources/application.md)添加强密码。
+向 [应用程序](../resources/application.md)添加强密码。
 
 ## <a name="permissions"></a>权限
 
@@ -57,7 +57,7 @@ POST /applications/{id}/addPassword
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的[passwordCredential](../resources/passwordcredential.md)对象。 Response 对象中的**secretText**属性包含由 Azure Active Directory 生成的强密码，其长度为16-64 个字符。 将来无法检索此密码。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [passwordCredential](../resources/passwordcredential.md) 对象。 Response 对象中的 **secretText** 属性包含由 Azure Active Directory 生成的强密码，其长度为16-64 个字符。 将来无法检索此密码。
 
 ## <a name="examples"></a>示例
 
@@ -65,7 +65,7 @@ POST /applications/{id}/addPassword
 
 ### <a name="request"></a>请求
 
-下面展示了示例请求。
+下面展示了示例请求。 在请求中指定的 **id** 是应用程序的 **id** 属性的值，而不是 **appId** 属性的值。 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
