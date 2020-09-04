@@ -1,64 +1,69 @@
 ---
 title: 添加成员
-description: 通过**members**导航属性将成员添加到 Microsoft 365 组、安全组或启用邮件的安全组。
+description: 通过 **members** 导航属性将成员添加到 Microsoft 365 组、安全组或启用邮件的安全组。
 localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0388d13d0e50c6ffcc415503a75afb8af56fa14f
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 6a9e0ddc322b21d4ac94e6bd3c63f80318be4642
+ms.sourcegitcommit: b6ca83070b6f015c09de215a82cf2b581181c33e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897146"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47367262"
 ---
-# <a name="add-member"></a><span data-ttu-id="3d920-103">添加成员</span><span class="sxs-lookup"><span data-stu-id="3d920-103">Add member</span></span>
+# <a name="add-member"></a><span data-ttu-id="bc2b3-103">添加成员</span><span class="sxs-lookup"><span data-stu-id="bc2b3-103">Add member</span></span>
 
-<span data-ttu-id="3d920-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3d920-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="bc2b3-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bc2b3-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="3d920-105">通过**members**导航属性将成员添加到 Microsoft 365 组或安全组。</span><span class="sxs-lookup"><span data-stu-id="3d920-105">Add a member to a Microsoft 365 group or a security group through the **members** navigation property.</span></span>
+<span data-ttu-id="bc2b3-105">通过 **members** 导航属性将成员添加到 Microsoft 365 组或安全组。</span><span class="sxs-lookup"><span data-stu-id="bc2b3-105">Add a member to a Microsoft 365 group or a security group through the **members** navigation property.</span></span>
 
-<span data-ttu-id="3d920-106">您可以添加用户、组织联系人、服务主体或其他组。</span><span class="sxs-lookup"><span data-stu-id="3d920-106">You can add users, organizational contacts, service principals or other groups.</span></span> 
+<span data-ttu-id="bc2b3-106">您可以添加用户、组织联系人、服务主体或其他组。</span><span class="sxs-lookup"><span data-stu-id="bc2b3-106">You can add users, organizational contacts, service principals or other groups.</span></span> 
 
 > [!IMPORTANT]
-> <span data-ttu-id="3d920-107">只能向通过云管理的安全和 Microsoft 365 组添加用户。</span><span class="sxs-lookup"><span data-stu-id="3d920-107">You can only add users to security and Microsoft 365 groups managed through the cloud.</span></span>
+> <span data-ttu-id="bc2b3-107">只能向通过云管理的安全和 Microsoft 365 组添加用户。</span><span class="sxs-lookup"><span data-stu-id="bc2b3-107">You can only add users to security and Microsoft 365 groups managed through the cloud.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3d920-108">Permissions</span><span class="sxs-lookup"><span data-stu-id="3d920-108">Permissions</span></span>
-<span data-ttu-id="3d920-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3d920-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="bc2b3-108">Permissions</span><span class="sxs-lookup"><span data-stu-id="bc2b3-108">Permissions</span></span>
+<span data-ttu-id="bc2b3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="bc2b3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3d920-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="3d920-111">Permission type</span></span>      | <span data-ttu-id="3d920-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3d920-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bc2b3-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="bc2b3-111">Permission type</span></span>      | <span data-ttu-id="bc2b3-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bc2b3-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3d920-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3d920-113">Delegated (work or school account)</span></span> | <span data-ttu-id="3d920-114">GroupMember.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="3d920-114">GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="3d920-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3d920-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3d920-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="3d920-116">Not supported.</span></span>    |
-|<span data-ttu-id="3d920-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="3d920-117">Application</span></span> | <span data-ttu-id="3d920-118">GroupMember.ReadWrite.All、Group.ReadWrite.All 和 Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3d920-118">GroupMember.ReadWrite.All, Group.ReadWrite.All and Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="bc2b3-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bc2b3-113">Delegated (work or school account)</span></span> | <span data-ttu-id="bc2b3-114">GroupMember.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="bc2b3-114">GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="bc2b3-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bc2b3-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bc2b3-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="bc2b3-116">Not supported.</span></span>    |
+|<span data-ttu-id="bc2b3-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="bc2b3-117">Application</span></span> | <span data-ttu-id="bc2b3-118">GroupMember.ReadWrite.All、Group.ReadWrite.All 和 Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bc2b3-118">GroupMember.ReadWrite.All, Group.ReadWrite.All and Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3d920-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3d920-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bc2b3-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bc2b3-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/members/$ref
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3d920-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="3d920-120">Request headers</span></span>
-| <span data-ttu-id="3d920-121">标头</span><span class="sxs-lookup"><span data-stu-id="3d920-121">Header</span></span>       | <span data-ttu-id="3d920-122">值</span><span class="sxs-lookup"><span data-stu-id="3d920-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="bc2b3-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="bc2b3-120">Request headers</span></span>
+
+| <span data-ttu-id="bc2b3-121">标头</span><span class="sxs-lookup"><span data-stu-id="bc2b3-121">Header</span></span>       | <span data-ttu-id="bc2b3-122">值</span><span class="sxs-lookup"><span data-stu-id="bc2b3-122">Value</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="3d920-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="3d920-123">Authorization</span></span>  | <span data-ttu-id="3d920-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="3d920-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="3d920-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="3d920-126">Content-type</span></span>   | <span data-ttu-id="3d920-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="3d920-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="bc2b3-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="bc2b3-123">Authorization</span></span>  | <span data-ttu-id="bc2b3-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="bc2b3-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="bc2b3-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="bc2b3-126">Content-type</span></span>   | <span data-ttu-id="bc2b3-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="bc2b3-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="3d920-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="3d920-129">Request body</span></span>
-<span data-ttu-id="3d920-130">在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md)、[user](../resources/user.md)、[group](../resources/group.md) 或 [organizational contact](../resources/orgcontact.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3d920-130">In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), [group](../resources/group.md), or [organizational contact](../resources/orgcontact.md) object to be added.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bc2b3-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="bc2b3-129">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="3d920-131">响应</span><span class="sxs-lookup"><span data-stu-id="3d920-131">Response</span></span>
-<span data-ttu-id="3d920-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="3d920-p104">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="bc2b3-130">在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md)、[user](../resources/user.md)、[group](../resources/group.md) 或 [organizational contact](../resources/orgcontact.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bc2b3-130">In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), [group](../resources/group.md), or [organizational contact](../resources/orgcontact.md) object to be added.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="3d920-134">示例</span><span class="sxs-lookup"><span data-stu-id="3d920-134">Examples</span></span>
-### <a name="example-1-add-a-member-to-a-group"></a><span data-ttu-id="3d920-135">示例1：向组中添加成员</span><span class="sxs-lookup"><span data-stu-id="3d920-135">Example 1: Add a member to a group</span></span>
-#### <a name="request"></a><span data-ttu-id="3d920-136">请求</span><span class="sxs-lookup"><span data-stu-id="3d920-136">Request</span></span>
-<span data-ttu-id="3d920-137">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="3d920-137">The following is an example of the request.</span></span>
+## <a name="response"></a><span data-ttu-id="bc2b3-131">响应</span><span class="sxs-lookup"><span data-stu-id="bc2b3-131">Response</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="3d920-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="3d920-138">HTTP</span></span>](#tab/http)
+<span data-ttu-id="bc2b3-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="bc2b3-p104">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+
+## <a name="examples"></a><span data-ttu-id="bc2b3-134">示例</span><span class="sxs-lookup"><span data-stu-id="bc2b3-134">Examples</span></span>
+
+### <a name="example-1-add-a-member-to-a-group"></a><span data-ttu-id="bc2b3-135">示例1：向组中添加成员</span><span class="sxs-lookup"><span data-stu-id="bc2b3-135">Example 1: Add a member to a group</span></span>
+
+#### <a name="request"></a><span data-ttu-id="bc2b3-136">请求</span><span class="sxs-lookup"><span data-stu-id="bc2b3-136">Request</span></span>
+
+<span data-ttu-id="bc2b3-137">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="bc2b3-137">The following is an example of the request.</span></span>
+
 <!-- {
   "blockType": "request",
-  "name": "create_member_from_group"
+  "name": "add_member_to_group"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/members/$ref
@@ -69,26 +74,9 @@ Content-length: 30
   "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="3d920-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3d920-139">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-member-from-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="3d920-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3d920-140">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-member-from-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="c"></a>[<span data-ttu-id="3d920-141">C#</span><span class="sxs-lookup"><span data-stu-id="3d920-141">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-member-from-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[<span data-ttu-id="3d920-142">Java</span><span class="sxs-lookup"><span data-stu-id="3d920-142">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-member-from-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-#### <a name="response"></a><span data-ttu-id="3d920-143">响应</span><span class="sxs-lookup"><span data-stu-id="3d920-143">Response</span></span>
-<span data-ttu-id="3d920-144">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="3d920-144">The following is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="bc2b3-138">响应</span><span class="sxs-lookup"><span data-stu-id="bc2b3-138">Response</span></span>
+<span data-ttu-id="bc2b3-139">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="bc2b3-139">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -99,15 +87,17 @@ Content-length: 30
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-add-multiple-members-to-a-group-in-a-single-request"></a><span data-ttu-id="3d920-145">示例2：将多个成员添加到单个请求中的组</span><span class="sxs-lookup"><span data-stu-id="3d920-145">Example 2: Add multiple members to a group in a single request</span></span>
-<span data-ttu-id="3d920-146">本示例演示如何在修补程序操作中将多个成员添加到具有 OData 绑定支持的组中。</span><span class="sxs-lookup"><span data-stu-id="3d920-146">This example shows how to add multiple members to a group with OData bind support in a PATCH operation.</span></span> <span data-ttu-id="3d920-147">请注意，单个请求中最长可添加20个成员。</span><span class="sxs-lookup"><span data-stu-id="3d920-147">Note that up to 20 members can be added in a single request.</span></span> <span data-ttu-id="3d920-148">不支持 POST 操作。</span><span class="sxs-lookup"><span data-stu-id="3d920-148">The POST operation is not supported.</span></span>
-#### <a name="request"></a><span data-ttu-id="3d920-149">请求</span><span class="sxs-lookup"><span data-stu-id="3d920-149">Request</span></span>
-<span data-ttu-id="3d920-150">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="3d920-150">The following is an example of the request.</span></span>
+### <a name="example-2-add-multiple-members-to-a-group-in-a-single-request"></a><span data-ttu-id="bc2b3-140">示例2：将多个成员添加到单个请求中的组</span><span class="sxs-lookup"><span data-stu-id="bc2b3-140">Example 2: Add multiple members to a group in a single request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="3d920-151">HTTP</span><span class="sxs-lookup"><span data-stu-id="3d920-151">HTTP</span></span>](#tab/http)
+<span data-ttu-id="bc2b3-141">本示例演示如何在修补程序操作中将多个成员添加到具有 OData 绑定支持的组中。</span><span class="sxs-lookup"><span data-stu-id="bc2b3-141">This example shows how to add multiple members to a group with OData bind support in a PATCH operation.</span></span> <span data-ttu-id="bc2b3-142">请注意，单个请求中最长可添加20个成员。</span><span class="sxs-lookup"><span data-stu-id="bc2b3-142">Note that up to 20 members can be added in a single request.</span></span> <span data-ttu-id="bc2b3-143">不支持 POST 操作。</span><span class="sxs-lookup"><span data-stu-id="bc2b3-143">The POST operation is not supported.</span></span>
+
+#### <a name="request"></a><span data-ttu-id="bc2b3-144">请求</span><span class="sxs-lookup"><span data-stu-id="bc2b3-144">Request</span></span>
+
+<span data-ttu-id="bc2b3-145">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="bc2b3-145">The following is an example of the request.</span></span>
+
 <!-- {
   "blockType": "request",
-  "name": "create_member_from_group"
+  "name": "add_multiple_members_to_group"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/{id}
@@ -122,26 +112,9 @@ Content-length: 30
     ]
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="3d920-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3d920-152">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-member-from-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="3d920-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3d920-153">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-member-from-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="c"></a>[<span data-ttu-id="3d920-154">C#</span><span class="sxs-lookup"><span data-stu-id="3d920-154">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-member-from-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[<span data-ttu-id="3d920-155">Java</span><span class="sxs-lookup"><span data-stu-id="3d920-155">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-member-from-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-#### <a name="response"></a><span data-ttu-id="3d920-156">响应</span><span class="sxs-lookup"><span data-stu-id="3d920-156">Response</span></span>
-<span data-ttu-id="3d920-157">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="3d920-157">The following is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="bc2b3-146">响应</span><span class="sxs-lookup"><span data-stu-id="bc2b3-146">Response</span></span>
+<span data-ttu-id="bc2b3-147">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="bc2b3-147">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
