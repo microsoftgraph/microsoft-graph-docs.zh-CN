@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4136e62886c91092c62349f0587d60c53f4d2c83
-ms.sourcegitcommit: a1a57e803c334e11316dd571ad1b54c95406740e
-ms.translationtype: MT
+ms.openlocfilehash: 9331482f3665da170e2f98055627083bbf3a1132
+ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44413502"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47330057"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -63,6 +63,7 @@ PATCH /users/{id | userPrincipalName}
 |hireDate|DateTimeOffset|用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |interests|String collection|用户介绍自身兴趣的列表。|
 |jobTitle|String|用户的职务。|
+|mail|String|用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。 对此属性的更改也将更新用户的 **proxyAddresses** 集合，以便将该值包含为 SMTP 地址。 <br><br>支持 $filter。|
 |mailNickname|String|用户的邮件别名。 创建用户时必须指定此属性。|
 |mobilePhone|String|用户的主要移动电话号码。|
 |mySite|String|用户个人网站的 URL。|
@@ -85,7 +86,7 @@ PATCH /users/{id | userPrincipalName}
 |userType|String|可用于对目录中的用户类型分类的字符串值，例如“成员”和“访客”。          |
 
 > [!NOTE] 
-> 以下属性无法使用仅应用程序上下文进行更新： **aboutMe**、**生日**、**雇用**日期、**兴趣**、**我**的爱好、 **pastProjects**、 **preferredName**、**责任**、**学校**和**技能**。
+> 以下属性无法使用仅限应用程序上下文进行更新：**aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**。
 
 ## <a name="response"></a>响应
 

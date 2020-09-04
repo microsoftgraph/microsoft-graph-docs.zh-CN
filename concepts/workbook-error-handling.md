@@ -4,12 +4,12 @@ description: Microsoft Graph 中的 Excel Api 的错误处理说明
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3d7da5aa1c0891b148affd8fd66f9926ce2053e7
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 82bbcf6c93146c66aa76d01aa3d111f515a97b61
+ms.sourcegitcommit: b6ca83070b6f015c09de215a82cf2b581181c33e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873368"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47367220"
 ---
 # <a name="error-handling-for-excel-apis-in-microsoft-graph"></a>Microsoft Graph 中的 Excel Api 的错误处理
 
@@ -120,7 +120,7 @@ Microsoft Graph 客户端可以使用以下步骤来处理 Excel Api 中发生�
 
 ### <a name="3-parse-the-top-level-error-code"></a>3. 分析顶级错误代码
 
-如果在 [错误代码](workbook-error-codes.md) 主题中找不到列出的二级错误代码，我们建议您按照为顶级错误（绑定到状态代码）提供的说明操作。 有关顶级错误代码和消息的详细信息，请参阅 [错误代码](workbook-error-codes.md)。
+如果在 [错误代码](workbook-error-codes.md#error-code) 主题中找不到列出的二级错误代码，我们建议您按照为顶级错误（绑定到状态代码）提供的说明操作。 有关顶级错误代码和消息的详细信息，请参阅 [详细错误代码](workbook-error-codes.md#detailed-error-code)。
 
 ### <a name="4-parse-the-status-code"></a>4. 分析状态代码
 
