@@ -4,12 +4,12 @@ description: 微软待办提供一种管理任务和计划日常工作的简单�
 author: avijityadav
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: b4d99b59b73942d9093587689b92f13f8475325f
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: f68aa1e4948fdac3ecaed94e75abe750f84db8f4
+ms.sourcegitcommit: b6ca83070b6f015c09de215a82cf2b581181c33e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849807"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47367227"
 ---
 # <a name="to-do-api-overview-preview"></a>微软待办 API 概述（预览版）
 微软待办提供了一种简单的方法便于用户管理其任务和计划日常工作。 任务以任务列表形式组织，可以从任何设备跨微软待办客户端、Outlook 和 Teams 访问。
@@ -33,11 +33,11 @@ ms.locfileid: "46849807"
 
 |操作|请求|
 |:--------|:--|
-|列出所有任务列表 |获取 https://graph.microsoft.com/beta/me/todo/lists|
-|列出任务列表中的所有任务|获取 https://graph.microsoft.com/me/todo/lists/{todoTaskListId}/tasks|
-|创建新任务|发布 https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks|
-|更新任务|修补 https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}|
-|删除任务|删除 https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}|
+| 列出所有任务列表 | 获取 https://graph.microsoft.com/beta/me/todo/lists |
+| 列出任务列表中的所有任务 | 获取 https://graph.microsoft.com/me/todo/lists/{todoTaskListId}/tasks |
+| 创建新任务 | 发布 https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks |
+| 更新任务 | 修补 https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
+| 删除任务 | 删除 https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
 
 ## <a name="api-reference"></a>API 参考
 在查找此服务的 API 参考？
