@@ -8,12 +8,12 @@ metadata:
   author: jasonjoh
   ms.author: jasonjoh
   ms.date: 04/02/2020
-  ms.openlocfilehash: 965fd4e2ad61274515022eeb472cc4baa931928e
-  ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+  ms.openlocfilehash: e162c52238b81246d40de7b5d0e5ed9f3d67a544
+  ms.sourcegitcommit: b6ca83070b6f015c09de215a82cf2b581181c33e
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/19/2020
-  ms.locfileid: "46811187"
+  ms.lasthandoff: 09/04/2020
+  ms.locfileid: "47367283"
 landingContent:
 - title: 构建您的第一个服务器端应用程序
   linkLists:
@@ -65,8 +65,12 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Azure 函数
+    - text: Azure Functions
       url: /graph/tutorials/azure-functions
+    - text: Power Automate
+      url: /graph/tutorials/power-automate
+    - text: SharePoint 框架
+      url: /graph/tutorials/spfx
 - title: 应用场景
   linkLists:
   - linkListType: tutorial
