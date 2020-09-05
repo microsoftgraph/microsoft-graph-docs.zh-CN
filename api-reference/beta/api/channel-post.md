@@ -1,16 +1,16 @@
 ---
 title: 创建频道
-description: 在 Microsoft 团队中创建请求正文中指定的新频道。
+description: 在请求正文中指定的 Microsoft 团队中创建新通道。
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d496f69b20613c4c42c7ce842d23299d653c2ada
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 37fe0ed34ad7dc44d760376f75a49ffa3766ba6c
+ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384344"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "47400404"
 ---
 # <a name="create-channel"></a>创建频道
 
@@ -18,7 +18,7 @@ ms.locfileid: "45384344"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Microsoft 团队中创建请求正文中指定的新[频道](../resources/channel.md)。
+在团队中创建一个新的 [频道](../resources/channel.md) ，如请求正文中所指定。
 
 ## <a name="permissions"></a>权限
 
@@ -28,9 +28,9 @@ ms.locfileid: "45384344"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | "创建"、"组"、"全部"、"全部"、"全部"    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 例如，Group *、信道. Create、Group. All、    |
+|Application | 例如，Group *、信道. 创建、组读写全部、全部、团队合作。全部迁移|
 
-> **注意**：标记为 * 的权限使用[特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于[特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
@@ -45,7 +45,7 @@ POST /teams/{id}/channels
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
 

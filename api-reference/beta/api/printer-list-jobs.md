@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a7a219763c3efbea41c28e58a16358e7962dd04d
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: d442f39a0327c511a105b420fd57b775c6f06853
+ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673773"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "47400405"
 ---
 # <a name="list-printjobs"></a>列出 printJobs
 
@@ -31,7 +31,7 @@ ms.locfileid: "46673773"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| PrintJob、PrintJob、user.readbasic.all、PrintJob、PrintJob、ReadWriteBasic、all、PrintJob、PrintJob、ReadWriteBasic、PrintJob、、、、all |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| PrintJob、PrintJob、PrintJob、all、all、All 和 All。 |
+|Application| PrintJob、PrintJob、PrintJob、all、all、All 和 All。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -41,6 +41,9 @@ GET /print/printers/{id}/jobs
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+
+* 默认情况下，" **documents** " 属性将从响应中省略。 若要同时为每个打印作业返回 [printDocuments](../resources/printdocument.md) 的列表，请使用 `$expand=documents` 。
+* 此方法支持通过创建打印作业的用户对其进行筛选。 使用 `$filter=createdBy/userPrincipalName eq '{upn}'` ，其中 **{upn}** 是关联用户的 [用户主体名称](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) 。
 
 ### <a name="exceptions"></a>Exceptions
 某些运算符不受支持： `$count` 、 `$search` 、 `$filter` 。

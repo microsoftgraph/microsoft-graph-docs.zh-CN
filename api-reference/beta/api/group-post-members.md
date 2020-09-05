@@ -1,16 +1,16 @@
 ---
 title: 添加成员
-description: 通过**members**导航属性将成员添加到 Microsoft 365 组或安全组。
+description: 通过 **members** 导航属性将成员添加到 Microsoft 365 组或安全组。
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fe3f3a5fe1bde8c14e9dbc3a6e12e486dd7c1bd2
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 8ad6c08b500218290418183447cf7f82572eb45e
+ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895809"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "47400415"
 ---
 # <a name="add-member"></a>添加成员
 
@@ -18,7 +18,7 @@ ms.locfileid: "44895809"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过**members**导航属性将成员添加到 Microsoft 365 组或安全组。
+通过 **members** 导航属性将成员添加到 Microsoft 365 组或安全组。
 
 您可以添加用户、服务主体或其他组。 
 
@@ -37,7 +37,7 @@ ms.locfileid: "44895809"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/members/$ref
+POST /groups/{group-id}/members/$ref
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -61,7 +61,7 @@ POST /groups/{id}/members/$ref
   "name": "add_group_member"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/members/$ref
+POST https://graph.microsoft.com/beta/groups/{group-id}/members/$ref
 Content-type: application/json
 Content-length: 30
 
@@ -83,7 +83,7 @@ Content-length: 30
 
 ---
 
-在请求正文中，提供 `id` 要添加的[directoryObject](../resources/directoryobject.md)、 [user](../resources/user.md)或[group](../resources/group.md)对象的 JSON 表示形式。
+在请求正文中，提供 `id` 要添加的 [directoryObject](../resources/directoryobject.md)、 [user](../resources/user.md)或 [group](../resources/group.md) 对象的 JSON 表示形式。
 
 ### <a name="response"></a>响应
 下面是一个响应示例。
