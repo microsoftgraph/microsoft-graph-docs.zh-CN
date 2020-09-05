@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6a9e0ddc322b21d4ac94e6bd3c63f80318be4642
-ms.sourcegitcommit: b6ca83070b6f015c09de215a82cf2b581181c33e
+ms.openlocfilehash: 74d6ba0443cadf236c6f4af8c0194dfa0cae3d53
+ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47367262"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "47400487"
 ---
 # <a name="add-member"></a>添加成员
 
@@ -24,6 +24,7 @@ ms.locfileid: "47367262"
 > 只能向通过云管理的安全和 Microsoft 365 组添加用户。
 
 ## <a name="permissions"></a>Permissions
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -35,7 +36,7 @@ ms.locfileid: "47367262"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/members/$ref
+POST /groups/{group-id}/members/$ref
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -66,7 +67,7 @@ POST /groups/{id}/members/$ref
   "name": "add_member_to_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/members/$ref
+POST https://graph.microsoft.com/v1.0/groups/{group-id}/members/$ref
 Content-type: application/json
 Content-length: 30
 
@@ -75,7 +76,10 @@ Content-length: 30
 }
 ```
 
+在请求正文中，提供要添加的 directoryObject、user 或 group 对象的 id 的 JSON 表示形式。
+
 #### <a name="response"></a>响应
+
 下面展示了示例响应。
 
 <!-- {
@@ -100,7 +104,7 @@ HTTP/1.1 204 No Content
   "name": "add_multiple_members_to_group"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groups/{id}
+PATCH https://graph.microsoft.com/v1.0/groups/{group-id}
 Content-type: application/json
 Content-length: 30
 
@@ -112,6 +116,8 @@ Content-length: 30
     ]
 }
 ```
+
+在请求正文中，提供要添加的 directoryObject、user 或 group 对象的 id 的 JSON 表示形式。
 
 #### <a name="response"></a>响应
 下面展示了示例响应。
