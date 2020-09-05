@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5a02f0cd05c0f092fbafc584e9a74a578122f7c5
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: 13612b3bef1d7b466e860d61f0b52eb060547337
+ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896502"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47340059"
 ---
 # <a name="get-team-photo"></a>获取团队照片
 
@@ -20,11 +20,11 @@ ms.locfileid: "44896502"
 
 获取团队的照片（图片），或者获取照片的元数据。 通常情况下，最佳做法是先尝试在元数据中检索想要获取的照片的尺寸，以确保该尺寸可用。 检索到元数据后，使用 `/$value` 路径获取照片的二进制数据。
 
-此方法首先尝试从 Microsoft 365 检索指定的照片。 如果照片在 Microsoft 365 中不可用，则它会尝试改为从 Azure Active Directory 检索照片。
+此方法会先尝试从 Microsoft 365 中检索指定的照片。 如果 Microsoft 365 中没有此照片，则它会改为尝试在 Active Directory 中检索照片。
 
-以下是 Microsoft 365 中受支持的 HD 照片的大小：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和648x648 像素。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。
+Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和 648x648 像素。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。
 
-可以获取最大照片的元数据，也可以指定尺寸来获取相应照片尺寸的元数据。 即使请求的尺寸不可用，也仍可获取更小的尺寸。 例如，上传的照片最大为 504x504 像素，则除 648x648 尺寸以外的所有照片都可供下载。 如果指定的大小在 Microsoft 365 或 Azure Active Directory 中不可用，则使用元数据的其余部分返回的大小为1x1。
+可以获取最大照片的元数据，也可以指定尺寸来获取相应照片尺寸的元数据。 即使请求的尺寸不可用，也仍可获取更小的尺寸。 例如，上传的照片最大为 504x504 像素，则除 648x648 尺寸以外的所有照片都可供下载。 如果在 Microsoft 365 或 Azure Active Directory 中找不到指定尺寸，则返回 1x1 的尺寸和剩余元数据。
 
 > [!Note]
 > REST 请求的总大小不得超过 4 MB。 这将照片尺寸限制为小于 4 MB。
@@ -35,11 +35,11 @@ ms.locfileid: "44896502"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.readbasic.all、TeamSettings、TeamSettings、Group、group、group。 all、、、all、all、all、all 和 all。 all |
+|委派（工作或学校帐户） | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | TeamSettings、*TeamSettings*、User.readbasic.all、TeamSettings、、group、group、group、group。 all、、、、all、all、all、all、All 和 all 的所有 |
+|应用程序 | 不支持。 |
 
-> **注意**：标记为 * 的权限使用[特定于资源的同意](https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于[特定于资源的同意](https://aka.ms/teams-rsc)。
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
@@ -77,7 +77,7 @@ GET /beta/teams/{id}/photo/{size}/$value
 
 |**参数**|**类型**|**说明**|
 |:-----|:-----|:-----|
-|size  |String  | 照片尺寸。 Microsoft 365 上支持的 HD 照片的大小如下所示：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和648x648。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。 可选。|
+|size  |String  | 照片尺寸。 Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和 648x648。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。 可选。|
 
 ## <a name="request-headers"></a>请求标头
 
