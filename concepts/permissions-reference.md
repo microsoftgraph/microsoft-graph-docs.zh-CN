@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: e44c2345058f66bb6d992e8d3523ab38e84349b7
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 0c51ef8d681601cbe7434ff0dd2a06eaf0cd2a7c
+ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311996"
+ms.lasthandoff: 09/05/2020
+ms.locfileid: "47400466"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -342,6 +342,7 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 | _Channel.ReadBasic.All_ | 读取所有频道的名称和说明。 | 在没有登录用户的情况下读取所有频道名称和说明。  | 是 | 否 |
 | _Channel.Create_ | 创建频道。 | 在没有登录用户的情况下在任何团队中创建频道。  | 是 | 否 |
 | _Channel.Delete.All_ | 删除频道。 | 在没有登录用户的情况下删除任何团队中的频道。  | 是 | 否 |
+|_团队合作。迁移。所有_|管理迁移到 Microsoft Teams|创建和管理用于迁移到 Microsoft Teams 的资源|是|是|
 
 ## <a name="channel-settings-permissions"></a>频道设置权限
 
@@ -1685,6 +1686,7 @@ _任务_权限用于控制对微软待办任务和 Outlook 任务的访问权限
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Team.ReadBasic.All_ | 获取所有团队列表 | 在没有用户登录的情况下获取所有团队列表。   | 是 | 否 |
 | _Teams.Create_（个人预览版） | 创建团队 | 在没有用户登录的情况下创建团队。 | 是 | 否 |
+|_团队合作。迁移。所有_|管理迁移到 Microsoft Teams|创建和管理用于迁移到 Microsoft Teams 的资源|是|是|
 
 ## <a name="team-settings-permissions"></a>团队设置权限
 
