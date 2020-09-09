@@ -1,53 +1,53 @@
 ---
 title: Microsoft Graph 身份验证方法 API 入门
-description: Microsoft Graph 中的身份验证方法 API 使组织能够以编程方式管理其用户的身份验证方法，从而获得注册了多重身份验证（MFA）和自助服务密码重置（SSPR）的用户。
+description: Microsoft Graph 中的身份验证方法 API 使组织能够以编程方式管理其用户身份验证方法，从而使已注册用户能够执行多重身份验证 (MFA) 和自助服务密码重置 (SSPR)。
 author: mmcla
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f8f08ae59f7a2ad0e16c4fc0c3af5637bcbfaaca
-ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
-ms.translationtype: MT
+ms.openlocfilehash: 0b6a29e200adeedba1c42357980dd4d1315dc351
+ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44272807"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47413294"
 ---
 # <a name="get-started-with-the-microsoft-graph-authentication-methods-api"></a>Microsoft Graph 身份验证方法 API 入门
 
-[身份验证方法](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods)是用户在 Azure Active Directory （azure AD）中进行身份验证的方法。 Azure AD 中的身份验证方法包括密码和电话（例如，SMS 和语音呼叫），这些方法可在 Microsoft Graph 中进行管理，如 FIDO2 安全密钥和 Microsoft 身份验证器应用等许多其他内容。 身份验证方法在主要、第二因素和分步身份验证以及自助密码重置（SSPR）过程中也使用。
+[身份验证方法](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) 是用户在 Azure Active Directory (Azure AD) 中的身份验证方式。 Azure AD 中的身份验证方法包括密码和手机（例如，短信和语音呼叫），目前可在 Microsoft Graph 中对这些方法进行管理，此外还有 FIDO2 安全密钥和 Microsoft Authenticator 应用。 身份验证方法用于主要、双重因素和分步身份验证，此外还适用于自助式密码重置 (SSPR) 流程。
 
-您可以使用身份验证方法 Api 来管理用户的身份验证方法。 例如，你能够：
+可使用身份验证方法 API 来管理用户的身份验证方法。 例如，你能够：
 
-* 为用户添加电话号码，如果启用这些号码，则该号码可在策略中使用该号码进行短信和语音呼叫身份验证
+* 为用户添加一个电话号码，通过策略启用短信和语音呼叫身份验证后，该用户即可使用该号码进行此类身份验证
 * 更新或删除分配给用户的电话号码
-* 启用或禁用 SMS 登录号码
+* 启用或禁用用于短信登录的号码
 * 重置用户密码
 
-Api 是管理用户的身份验证方法的主要工具。
+API 是用于管理用户身份验证方法的一种关键工具。
 
-在本教程中，你将了解如何执行以下操作：
+在本教程中，你将学习如何：
 
 > [!div class="checklist"]
-> * 使用正确的角色和权限向 Azure AD 进行身份验证
+> * 使用正确的角色和权限对 Azure AD 进行身份验证
 > * 检查用户的身份验证方法
-> * 为用户添加新电话号码
-> * 从用户中删除电话号码
-> * 重置用户的密码
+> * 为用户添加新的电话号码
+> * 删除用户的电话号码
+> * 重置用户密码
 
-## <a name="step-1-authenticate-to-azure-ad-with-the-right-roles-and-permissions"></a>步骤1：使用正确的角色和权限向 Azure AD 进行身份验证
+## <a name="step-1-authenticate-to-azure-ad-with-the-right-roles-and-permissions"></a>步骤 1：使用正确的角色和权限对 Azure AD 进行身份验证
 
-使用您喜爱的[工具与 Microsoft Graph 交互](use-the-api.md#tools-for-interacting-with-microsoft-graph)，使用具有以下角色之一的帐户登录：
+使用你喜欢的[工具与 Microsoft Graph 交互](use-the-api.md#tools-for-interacting-with-microsoft-graph)，使用具有以下一种角色的帐户登录：
 
 * 全局管理员
 * 特权身份验证管理员
 * 身份验证管理员
 
-接下来，修改您的权限。 我们将使用[UserAuthenticationMethod](permissions-reference.md#user-authentication-method-permissions-preview) ，以确保在 Graph 资源管理器或你的应用程序中启用了此教程。
+接下来，修改你的权限。 在本教程中，我们将使用 [UserAuthenticationMethod.ReadWrite.All](permissions-reference.md#user-authentication-method-permissions-preview)，因此，请确保已在 Graph 浏览器或你的应用中启用此权限。
 
-在分配并许可范围后，即可开始使用 API。 此处的示例使用名为 "Avery Howard" 的标准用户。 应使用预先存在的测试帐户，或按照[这些说明](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#add-a-new-user)创建一个新的测试帐户。 这些 Api 是实时的，因此不会对真实用户进行测试。
+分配范围并获得同意后，即可开始使用 API。 此处的示例使用名为 Avery Howard 的标准用户。 您应该使用现有的测试帐户，或按照[这些说明](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#add-a-new-user)创建一个新的测试帐户。 这些 API 是实时的，因此请不要在实际用户上对其进行测试。
 
-## <a name="step-2-check-the-users-authentication-methods"></a>步骤2：检查用户的身份验证方法
+## <a name="step-2-check-the-users-authentication-methods"></a>步骤 2：检查用户的身份验证方法
 
-打电话以查看用户的身份验证方法。 获取 URL 以查看用户的配置文件并添加 `/authentication/methods` ：
+拨打电话，以查看用户的身份验证方法。 获取 URL 以查看用户的个人资料并添加 `/authentication/methods`：
 
 ### <a name="request"></a>请求
 
@@ -71,9 +71,9 @@ GET https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/au
 }
 ```
 
-## <a name="step-3-add-new-phone-numbers-for-the-user"></a>步骤3：为用户添加新电话号码
+## <a name="step-3-add-new-phone-numbers-for-the-user"></a>步骤 3：为用户添加新的电话号码
 
-在上一步中，新用户（Avery）仅注册了密码。 若要将新电话号码分配给 Avery 以供使用，请 `POST` 在正文中使用电话类型和号码发出请求。 若要告知系统正在添加的电话号码，您还需要将 URL 的结束值从更改 `methods` 为 `phoneMethods` 。
+在上一步中，新用户 (Avery) 仅注册了密码。 若要分配新的电话号码供 Avery 使用，请在正文中使用电话类型和号码发出 `POST` 请求。 若要告知系统正在添加电话号码，还需要将 URL 的末尾从 `methods` 更改为 `phoneMethods`。
 
 ### <a name="request"></a>请求
 
@@ -101,7 +101,7 @@ Content-Type: application/json
 }
 ```
 
-若要添加 Avery 的办公室号码，您将 `POST` 再次指向相同的 URL，但会更新电话类型和号码：
+要添加 Avery 的办公室号码，你将再次`POST`访问相同的 URL，但要更新电话类型和电话号码：
 
 ### <a name="request"></a>请求
 
@@ -129,7 +129,7 @@ Content-Type: application/json
 }
 ```
 
-对电话方法 URL 执行更多操作 `GET` ，以查看所有 Avery 的电话号码：
+对电话方法 URL 再执行一次 `GET`，以查看 Avery 的所有电话号码：
 
 ### <a name="request"></a>请求
 
@@ -159,11 +159,11 @@ GET https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/au
 }
 ```
 
-确认您可以按预期看到两个数字。
+确认你可以按预期看到这两个号码。
 
-## <a name="step-4-remove-a-phone-number-from-the-user"></a>步骤4：从用户中删除电话号码
+## <a name="step-4-remove-a-phone-number-from-the-user"></a>步骤 4：删除用户的电话号码
 
-在这种情况下，Avery 现在在家工作，您需要从其帐户中删除其办公室号码。 您需要通过将 `DELETE` office PHONE ID 追加到电话方法 url 来创建 office 电话 url。 查看上 Avery 的手机列表： office 电话 ID 以 "e37f" 开头。
+在本场景中，Avery 现在在家工作，你需要从他们的帐户中删除他们的办公室号码。 需要在办公室电话 URL 上呼叫 `DELETE`，可以通过将办公室电话的 ID 附加到电话方法 URL 来创建办公室电话 URL。 查看上面的 Avery 电话列表：办公室电话 ID 以“e37f”开头。
 
 ### <a name="request"></a>请求
 
@@ -171,7 +171,7 @@ GET https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/au
 DELETE https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/authentication/phoneMethods/e37fc753-ff3b-4958-9484-eaa9425c82bc
 ```
 
-由于没有其他需要的办公室电话，响应中没有数据。 您可以通过查看所有 Avery 的方法来确认它是否已消失，这与 `GET` 之前所做的完全相同：
+响应中没有数据，因为没有更多符合预期的办公室电话。 可通过查看 Avery 的所有方法来确认它已删除，与之前的发出的 `GET` 相同：
 
 ### <a name="request"></a>请求
 
@@ -202,11 +202,11 @@ GET https://graph.microsoft.com/beta/users/avery.howard@wingtiptoysonline.com/au
 }
 ```
 
-正如预期一样，用户现在可以返回到仅拥有一个移动电话和一个密码。
+正如预期的那样，用户现在又回到只有一部手机和一个密码的状态。
 
-## <a name="step-5-reset-the-users-password"></a>步骤5：重置用户的密码
+## <a name="step-5-reset-the-users-password"></a>步骤 5：重置用户密码
 
-在这种情况下，Avery 忘记了密码，你需要为其重置。 若要重置，您将 `POST` 为其密码的 URL （请参阅在 Avery 的身份验证方法列表中以 "28c1" 开头的 ID），并指定 "resetPassword" 操作。 在请求正文中提供新密码。
+在此场景中，Avery 忘记了密码，你需要为他们重置。 若要重置密码，你需要向其密码的 URL 发出 `POST`（请查看 Avery 身份验证方法列表中以“28c1”开头的 ID），并指定“resetPassword”操作。 在请求正文中提供新密码。
 
 ### <a name="request"></a>请求
 
@@ -223,11 +223,11 @@ Content-Type: application/json
 
 ### <a name="response"></a>响应
 
-```
+``` http
 Location: https://graph.microsoft.com/beta/users/ed178e23-7447-4892-baf8-fc46f8af26ce/authentication/operations/74bfa1a6-c0e0-4957-8c37-f91048f4959e?aadgdc=BY01P&aadgsu=ssprprod-a
 ```
 
-由于这会将密码同步到租户的本地基础结构中的 Active Directory，因此可能需要几分钟时间，因此您有一个地址，您可以在其中查看它是否已完成。 此地址位于响应的位置标头中，可查看该 URL 上的状态 do `GET` 。
+由于这是将密码向下同步到租户的本地基础结构中的 Active Directory，可能需要几分钟，因此你有一个可以查看其是否完整的地址。 此地址位于响应的位置标头中，可查看该 URL 上的 `GET` 状态。
 
 ### <a name="request"></a>请求
 
@@ -249,17 +249,17 @@ GET https://graph.microsoft.com/beta/users/ed178e23-7447-4892-baf8-fc46f8af26ce/
 }
 ```
 
-和成功！ 您已完成查看用户的配置文件、其身份验证方法、添加和删除电话号码以及重置其密码。 现在，你可以开始管理自己的用户的方法。
+成功！ 你已经演练了查看用户个人资料、查看用户的身份验证方法、添加和删除电话号码以及重置用户密码。 现在可以开始管理自己用户的方法了。
 
 ## <a name="api-reference"></a>API 参考
 
-查找身份验证方法的 API 参考？
+在查找身份验证方法的 API 参考？
 
-* 请参阅[AZURE AD 身份验证方法 API 概述](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta)
+* 请参阅 [Azure AD 身份验证方法 API 概述](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>后续步骤
 
-* 了解如何[使用身份验证方法 REST api](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta)。
+* 了解如何[使用身份验证方法 REST API](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta)。
 * 使用 Azure AD 对 Microsoft Graph [进行身份验证](/graph/auth)。
 * 将 [Azure AD 登录](https://azure.microsoft.com/develop/identity/signin/)集成到应用或网站中。
 * 有关 Azure AD API 中新增功能的信息，请参阅[更改日志](changelog.md)。
