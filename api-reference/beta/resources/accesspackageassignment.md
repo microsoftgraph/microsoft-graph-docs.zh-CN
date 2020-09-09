@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f7a2fe772dc7b3be328fad452a5b193ccf7a7ed0
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 1cb32a36e40f419c42be8caa31d9081ac461d88f
+ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319454"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47413287"
 ---
 # <a name="accesspackageassignment-resource-type"></a>accessPackageAssignment 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "47319454"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 [AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包分配是一段时间内特定主题的访问包分配。  例如，访问包分配可能表明用户 "Alice" 已通过访问包 "Sales" 在2019年1月到7月2019的阶段分配了访问权限。
+在 [AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包分配是一段时间内特定主题的访问包分配。  例如，访问包分配可以声明用户 Alice 已通过访问包 Sales （2019年1月1日至7月2019）分配了访问权限。
 
 ## <a name="methods"></a>方法
 
@@ -41,6 +41,7 @@ ms.locfileid: "47319454"
 |id|String| 只读。|
 |isExtended|Boolean|指示访问包分配是否已扩展。 只读。|
 |targetId|String| 包含工作分配的主题的 ID。 只读。|
+|schedule|[requestSchedule](requestschedule.md)| 当访问工作分配准备就绪时。 只读。|
 
 ## <a name="relationships"></a>关系
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 11b3095bf54f6d5ffe1af4ca4926fe4409429b48
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 3a3309df4106d30de2190b1c321adb3ea0b1a670
+ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319531"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47413308"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>accessPackageAssignmentRequest 资源类型
 
@@ -40,6 +40,7 @@ ms.locfileid: "47319531"
 |requestState|String|、、、、、或中的一个 `PendingApproval` `Canceled`  `Denied` `Delivering` `Delivered` `PartiallyDelivered` `Submitted` `Scheduled` 。 只读。|
 |requestStatus|String|有关请求处理状态的详细信息。 只读。|
 |requestType|String|、、或的其中一个 `UserAdd` `UserRemove` `AdminAdd` `AdminRemove` `SystemRemove` 。 来自用户自身的请求将对或进行 requestType `UserAdd` `UserRemove` 。 只读。|
+|schedule|[requestSchedule](requestschedule.md)| 要将访问权限分配给请求者的日期范围。 只读。|
 |accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| 对于或的 requestType `UserAdd` `AdminAdd` ，这是请求创建的访问包分配。  对于的 requestType `UserRemove` `AdminRemove` 或 `SystemRemove` ，它具有 `id` 要删除的现有工作分配的属性。|
 
 ## <a name="relationships"></a>关系
@@ -47,7 +48,6 @@ ms.locfileid: "47319531"
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |请求程序|[accessPackageSubject](accesspackagesubject.md)| 分配了请求的主题或分配了直接分配的主题。 只读。 可为 Null。|
-
 
 ## <a name="json-representation"></a>JSON 表示形式
 
