@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 08f00502239b2200844a237da72fbb64e357b8f4
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 8d2a50ecb482f0ceee1db28f58b1c1ef46936346
+ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684364"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47414063"
 ---
 ```csharp
 
@@ -19,7 +19,7 @@ var claimsMappingPolicy = new ClaimsMappingPolicy
     }
 };
 
-await graphClient.ServicePrincipals["{id}"].ClaimsMappingPolicies
+await graphClient.ServicePrincipals["{id}"].ClaimsMappingPolicies.References
     .Request()
     .AddAsync(claimsMappingPolicy);
 
