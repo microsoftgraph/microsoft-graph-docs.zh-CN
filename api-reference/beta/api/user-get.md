@@ -31,7 +31,7 @@ ms.locfileid: "47330384"
 |委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite    |
 |应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
-调用 `/me` 终结点需要已登录的用户，因此需要委派权限。 使用 `/me` 的终结点时不支持应用程序权限。
+调用 `/me` 终结点需要已登录的用户，因此需要委派权限。 使用 `/me` 终结点时不支持应用程序权限。
 
 对于特定用户：
 <!-- { "blockType": "ignored" } -->
