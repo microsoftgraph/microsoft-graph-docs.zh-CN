@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 96a91194c29c5207a3e450bd70e093ef74e56a85
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: bde4732b54110707229dea4a1858c18239529f8f
+ms.sourcegitcommit: 7dcae492d8b4707d068adca3a74732e25a8198e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757284"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47423647"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>使用 Azure AD 权限管理 API
 
@@ -33,6 +33,8 @@ Azure Active Directory (Azure AD) 权限管理可帮助您管理对内部用户�
 - [accessPackageResourceRequest](accesspackageresourcerequest.md)：将资源添加到访问包目录的请求。
 - [connectedOrganization](connectedorganization.md)：可请求访问的外部用户的已连接组织。
 - [entitlementManagementSettings](entitlementmanagementsettings.md)：适用于 Azure AD 权限管理的租户范围的设置。
+
+有关演示如何使用权限管理来创建内部用户可以自助处理请求的资源包的教程，请参阅 [create an access package Using Microsoft Graph api](/graph/tutorial-access-package-api)。
 
 请注意，"权限管理" 功能（包括 API）包含在 Azure AD Premium P2 中。 使用权限管理的租户必须具有有效的已购买或试用版 Azure AD Premium P2 或 EMS E5 订阅。
 
@@ -76,8 +78,8 @@ Azure Active Directory (Azure AD) 权限管理可帮助您管理对内部用户�
 | [获取 connectedOrganization](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | 读取 **connectedOrganization** 对象的属性和关系。 |
 | [更新 connectedOrganization](../api/connectedorganization-update.md) |无 | 更新 **connectedOrganization**。 |
 | [删除 connectedOrganization](../api/connectedorganization-delete.md) |无 | 删除 **connectedOrganization**。 |
-|[列出 internalSponsors](../api/connectedorganization-list-internalsponsors.md) | [directoryObject](directoryobject.md) 集合 | 检索 **connectedOrganization 的** 内部发起人列表。 |
-|[列出 externalSponsors](../api/connectedorganization-list-externalsponsors.md) | [directoryObject](directoryobject.md) 集合 | 检索 **connectedOrganization 的** 外部发起人列表。 |
+|[列出 internalSponsors](../api/connectedorganization-list-internalsponsors.md) | [directoryObject](directoryobject.md) collection | 检索 **connectedOrganization 的** 内部发起人列表。 |
+|[列出 externalSponsors](../api/connectedorganization-list-externalsponsors.md) | [directoryObject](directoryobject.md) collection | 检索 **connectedOrganization 的** 外部发起人列表。 |
 |[添加 internalSponsors](../api/connectedorganization-post-internalsponsors.md) | 无 | 将用户或组添加到 **connectedOrganization 的** 内部发起人。 |
 |[添加 externalSponsors](../api/connectedorganization-post-externalsponsors.md) | 无 | 将用户或组添加到 **connectedOrganization 的** 外部发起人。 |
 |[删除 internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | 无 | 从 **connectedOrganization 的** 内部发起人中删除用户或组。 |

@@ -1,16 +1,16 @@
 ---
 title: onlineMeeting 资源类型
-description: 包含有关会议的信息，包括联接 URL、与会者列表和说明。
+description: 包含有关会议的信息。
 author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: bfc1055b3e700b951957ffd1bce0fe7a541846b0
-ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
+ms.openlocfilehash: 7fb35436ac58e7d161f413ffbc00af4965f39c22
+ms.sourcegitcommit: 7dcae492d8b4707d068adca3a74732e25a8198e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46589254"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47423644"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
@@ -22,42 +22,48 @@ ms.locfileid: "46589254"
 
 ## <a name="methods"></a>方法
 
-| 方法         | 返回类型 | 说明 |
-|:---------------|:--------|:----------|
-| [创建](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | 创建联机会议。 |
-| [获取](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | 读取**onlineMeeting**对象的属性和关系。 |
-| [创建或获取 onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | 使用自定义外部 ID 创建联机会议。 如果会议已存在，请检索其属性。 |
-| [更新](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | 更新联机会议的 " **startDateTime**"、" **endDateTime**"、"**主题**" 和 "**参与者**" 属性。 |
-| [删除](../api/onlinemeeting-delete.md) | 无 | 删除**onlineMeeting**资源。 |
+| 方法                                                             | 返回类型                       | 说明                                                                                                       |
+| :----------------------------------------------------------------- | :-------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
+| [创建](../api/application-post-onlineMeetings.md)                | [onlineMeeting](onlinemeeting.md) | 创建联机会议。                                                                                         |
+| [获取](../api/onlinemeeting-get.md)                                 | [onlineMeeting](onlinemeeting.md) | 读取 **onlineMeeting** 对象的属性和关系。                                             |
+| [创建或获取 onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | 使用自定义外部 ID 创建联机会议。 如果会议已存在，请检索其属性。      |
+| [更新](../api/onlinemeeting-update.md)                           | [onlineMeeting](onlinemeeting.md) | 更新联机会议的 " **startDateTime**"、" **endDateTime**"、" **主题**" 和 " **参与者** " 属性。 |
+| [删除](../api/onlinemeeting-delete.md)                           | 无                              | 删除 **onlineMeeting** 资源。                                                                             |
 
 ## <a name="properties"></a>属性
 
-| 属性                  | 类型                                                   | 说明                                                                                                                |
-| :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| autoAdmittedUsers         | String                                                 | 指定将自动允许加入联机会议的参与者类型的设置。 可取值为：`everyone`、`everyoneInSameAndFederatedCompany`、`everyoneInCompany`、`invitedUsersInCompany`、`organizer`。 只读。|
-| audioConferencing         | [audioConferencing](audioconferencing.md)              | 电话访问 (电话拨入) 联机会议的信息。 只读。 |
-| chatInfo                  | [chatInfo](chatinfo.md)                                | 与此联机会议关联的聊天信息。 |
-| creationDateTime          | DateTime                                               | 以 UTC 表示的会议创建时间。 只读。 |
-| startDateTime             | DateTime                                               | 以 UTC 表示的会议开始时间。 |
-| endDateTime               | DateTime                                               | 以 UTC 表示的会议结束时间。 |
-| id                        | String                                                 | 与联机会议关联的默认 ID。 只读。 |
-| joinWebUrl                   | String                                                 | 联机会议的加入 URL。 只读。|
-| participants              | [meetingParticipants](meetingparticipants.md)          | 与联机会议关联的参与者。  这包括组织者和与会者。 |
-| subject                   | String                                                 | 联机会议的主题。 |
-| capabilities              | String collection                                      | 会议功能的列表。 可能的值是： `questionAndAnswer` 。 |
-| videoTeleconferenceId     | String                                                 | 视频电话会议 ID。 只读。 |
-| joinInformation | [itemBody](itembody.md) | 在 "Accept-Language" 请求 HTTP 标头中指定的语言和区域设置变量形式的联接信息。 只读 |
-| externalId                | String                                                 | 外部 ID。 自定义 ID。 可选。 |
+| 属性              | 类型                                          | 说明                                                                                                                                                                                                                                                 |
+| :-------------------- | :-------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| autoAdmittedUsers     | String                                        | 指定将自动允许加入联机会议的参与者类型的设置。 可取值为：`everyone`、`everyoneInSameAndFederatedCompany`、`everyoneInCompany`、`invitedUsersInCompany`、`organizer`。 只读。 |
+| audioConferencing     | [audioConferencing](audioconferencing.md)     | 电话访问 (电话拨入) 联机会议的信息。 只读。                                                                                                                                                                                    |
+| chatInfo              | [chatInfo](chatinfo.md)                       | 与此联机会议关联的聊天信息。                                                                                                                                                                                                   |
+| creationDateTime      | 日期时间                                      | 以 UTC 表示的会议创建时间。 只读。                                                                                                                                                                                                                |
+| startDateTime         | 日期时间                                      | 以 UTC 表示的会议开始时间。                                                                                                                                                                                                                              |
+| endDateTime           | 日期时间                                      | 以 UTC 表示的会议结束时间。                                                                                                                                                                                                                                |
+| id                    | String                                        | 与联机会议关联的默认 ID。 只读。                                                                                                                                                                                               |
+| joinWebUrl            | String                                        | 联机会议的加入 URL。 只读。                                                                                                                                                                                                              |
+| participants          | [meetingParticipants](meetingparticipants.md) | 与联机会议关联的参与者。  这包括组织者和与会者。                                                                                                                                                        |
+| subject               | String                                        | 联机会议的主题。                                                                                                                                                                                                                          |
+| capabilities          | String collection                             | 会议功能的列表。 可能的值是： `questionAndAnswer` 。                                                                                                                                                                                 |
+| videoTeleconferenceId | String                                        | 视频电话会议 ID。 只读。                                                                                                                                                                                                                   |
+| joinInformation       | [itemBody](itembody.md)                       | 在 "Accept-Language" 请求 HTTP 标头中指定的语言和区域设置变量形式的联接信息。 只读                                                                                                                                       |
+| externalId            | String                                        | 外部 ID。 自定义 ID。 可选。                                                                                                                                                                                                                     |
+| isEntryExitAnnounced  | Boolean                                       | 当呼叫者加入或离开时是否发出通知。                                                                                                                                                                                                      |
+| lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | 指定哪些参与者可以绕过会议厅。                                                                                                                                                                                                  |
+| allowedPresenters     | onlineMeetingPresenters                       | 指定谁可以成为会议中的演示者。 下面列出了可能的值。                                                                                                                                                                            |
 
-### <a name="autoadmittedusers-values"></a>autoAdmittedUsers 值
-| 值 | 说明  |
-| :------------------------ | :----------------------------------------------------- |
-| organizer － 组织者 | 仅会议组织者被直接承认。  其他人将在大厅中等待，直到组织者承认  |
-| invitedUsersInCompany | 会议组织者和组织者邀请的同一家公司中的用户直接加入会议。  其他人在大厅等待，直到被许可。  |
-| everyoneInCompany | 与组织者在同一公司中的所有人都直接加入会议。  联合匿名用户在大厅等待，直到被许可。  |
-| everyoneInSameAndFederatedCompany |  与组织者和联合公司在同一公司中的所有人都直接加入会议。  匿名用户在大厅等待，直到被许可。  |
-| 成员 | 允许任何用户，这意味着每个人 (包括匿名用户) 可以直接加入会议，而无需在会议厅中等待。  |
+> [!IMPORTANT]
+> **AutoAdmittedUsers**属性已过时。 使用 **lobbyBypassSettings** ，而不是会议选项配置。
 
+### <a name="onlinemeetingpresenters-values"></a>onlineMeetingPresenters 值
+
+| 值              | 说明                                                   |
+| ------------------ | ------------------------------------------------------------- |
+| 成员           | 每个人都是演示者 (这是) 的默认选项。             |
+| 组织       | 组织者组织中的所有人都是演示者。          |
+| roleIsPresenter    | 只有其角色为演示者的参与者为演示者。 |
+| 组织者          | 只有组织者是演示者。                           |
+| 向 unknownfuturevalue | Unknow 未来值。                                          |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -70,7 +76,6 @@ ms.locfileid: "46589254"
 }-->
 ```json
 {
-  "autoAdmittedUsers": "everyone | everyoneInSameAndFederatedCompany | everyoneInCompany | invitedUsersInCompany | organizer",
   "audioConferencing": {"@odata.type": "#microsoft.graph.audioConferencing"},
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
@@ -81,7 +86,10 @@ ms.locfileid: "46589254"
   "startDateTime": "String (timestamp)",
   "subject": "String",
   "capabilities": [ "questionAndAnswer" ],
-  "videoTeleconferenceId": "String"
+  "videoTeleconferenceId": "String",
+  "isEntryExitAnnounced": "Boolean",
+  "lobbyBypassSettings": {"@odata.type": "#microsoft.graph.lobbyBypassSettings"},
+  "allowedPresenters": "everyone | organization | roleIsPresenter | organizer | unknownFutureValue"
 }
 ```
 

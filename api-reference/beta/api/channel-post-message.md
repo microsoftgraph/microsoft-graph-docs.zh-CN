@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8ade0014f24abd169d71ca2d0b0ea6b9fffc2517
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: 29b0f905c1fddb1c85b28d726f825fc42256933b
+ms.sourcegitcommit: 7dcae492d8b4707d068adca3a74732e25a8198e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630395"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47423637"
 ---
 # <a name="create-chatmessage-in-a-channel"></a>在频道中创建 chatMessage
 
@@ -20,11 +20,11 @@ ms.locfileid: "46630395"
 
 在指定的[频道](../resources/channel.md)中创建新的[了 chatmessage](../resources/chatmessage.md) 。
 
-*我们建议您不要将此 API 用于数据迁移。它不具有典型迁移所需的吞吐量。*
+> **注意**：我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
-> **注意**：违反使用 Microsoft 团队作为日志文件的[使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)。 仅发送人员将阅读的邮件。
+> **注意**：违反使用 Microsoft 团队作为日志文件的 [使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) 。 仅发送人员将阅读的邮件。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -51,16 +51,16 @@ POST /teams/{id}/channels/{id}/messages
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[了 chatmessage](../resources/chatmessage.md)对象的 JSON 表示形式。 只有 body 属性是必需的，其他属性是可选的。
+在请求正文中，提供 [了 chatmessage](../resources/chatmessage.md) 对象的 JSON 表示形式。 只有 body 属性是必需的，其他属性是可选的。
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[了 chatmessage](../resources/chatmessage.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [了 chatmessage](../resources/chatmessage.md) 对象。
 
 ## <a name="examples"></a>示例
 
-有关示例的更完整列表，请参阅[Create 了 chatmessage in a 信道 or chat](chatmessage-post.md)。
+有关示例的更完整列表，请参阅 [Create 了 chatmessage in a 信道 or chat](chatmessage-post.md)。
 
 ### <a name="request"></a>请求
 下面展示了示例请求。

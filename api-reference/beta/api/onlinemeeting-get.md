@@ -1,16 +1,16 @@
 ---
 title: 获取 onlineMeeting
-description: 检索**联机会议**对象的属性和关系。
+description: 检索 **联机会议** 对象的属性和关系。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b4325f30133ad42e4b7c3df9669bede2b82722c8
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 7aaf1c19a6da04b3ceca9124051f056af473c04f
+ms.sourcegitcommit: 7dcae492d8b4707d068adca3a74732e25a8198e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916421"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47423658"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -18,11 +18,11 @@ ms.locfileid: "43916421"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[onlineMeeting](../resources/onlinemeeting.md)对象的属性和关系。
+检索 [onlineMeeting](../resources/onlinemeeting.md) 对象的属性和关系。
 
-> **注意：** 目前`GET`仅[VTC 会议 id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up)支持此方法。这些 Id 是为云-视频互操作许可的用户生成的，此方法用于获取加入会议的详细信息。
+> **注意：**`GET`目前仅[VTC 会议 id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up)支持此方法。这些 Id 是为云-视频互操作许可的用户生成的，此方法用于获取加入会议的详细信息。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -148,7 +148,13 @@ Content-Length: 1574
   },
   "startDateTime": "2018-05-30T00:30:00Z",
   "subject": "Test Meeting.",
-  "videoTeleconferenceId": "123456789"
+  "videoTeleconferenceId": "123456789",
+  "lobbyBypassSettings": {
+    "scope": "everyone",
+    "isDialInBypassEnabled": true
+  },
+  "isEntryExitAnnounced": true,
+  "allowedPresenters": "everyone"
 }
 ```
 >**注意：** 如果指定了 'Accept-Language: ja' 来指示日语，则响应将包括以下内容。
