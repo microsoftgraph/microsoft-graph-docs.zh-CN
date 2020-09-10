@@ -24,7 +24,7 @@ ms.locfileid: "47319433"
 
 ### <a name="teamwork"></a>团队合作
 - 通过[应用程序定义](/graph/api/resources/teamsappdefinition)的 **publishingState** 属性获取 Microsoft Teams [应用](/graph/api/resources/teamsapp)的发布状态。 可能的值为 `submitted`、`published` 和 `rejected`。 请参阅[示例](/graph/api/teamsapp-list?view=graph-rest-1.0&tabs=http#example-3-list-applications-with-a-given-id-and-return-the-submission-review-state)。
-- 使用 `AppCatalog.Submit` 委派的权限，允许用户[提交应用](/graph/api/teamsapp-publish)并请求管理员审查。 对用户使用相同的权限来[取消](/graph/api/teamsapp-delete)过去提交的尚未发布的应用。 
+- 使用 `AppCatalog.Submit` 委派的权限，允许用户[提交应用](/graph/api/teamsapp-publish)并请求管理员审查。 对于用户[取消](/graph/api/teamsapp-delete)过去提交的尚未发布的应用使用相同的权限。 
 
 ## <a name="august-2020-new-in-preview-only"></a>2020 年 8 月：仅限预览版新增功能
 
