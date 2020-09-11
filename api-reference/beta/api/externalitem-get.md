@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 0e668c6ee1d571287304e0920a4636c81cd06ca7
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
-ms.translationtype: Auto
+ms.openlocfilehash: c24a456759a7921faf353f8c7cba6e8407362f65
+ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005137"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47439953"
 ---
 # <a name="get-externalitem"></a>获取 externalItem
 
@@ -18,13 +18,13 @@ ms.locfileid: "45005137"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[externalitem](../resources/externalitem.md)对象的属性和关系。
+获取 [externalitem](../resources/externalitem.md) 对象的属性和关系。
 
 此 API 是为诊断目的而提供的。 不应将其用于任何其他用途。 对此 API 的重复请求可能会导致 `429` 出现 HTTP 错误。
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -44,10 +44,10 @@ GET /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="path-parameters"></a>路径参数
 
-| 参数     | 类型   | 说明                                         |
+| 参数     | 类型   | Description                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | `id`包含[externalConnection](../resources/externalconnection.md)的属性 |
-| item-id       | string | ExternalItem 的开发人员提供的 `id` 属性[externalItem](../resources/externalitem.md)。 |
+| connection-id | 字符串 | `id`包含[externalConnection](../resources/externalconnection.md)的属性 |
+| item-id       | 字符串 | ExternalItem 的开发人员提供的 `id` 属性[externalItem](../resources/externalitem.md)。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -65,7 +65,7 @@ GET /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[externalItem](../resources/externalitem.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [externalItem](../resources/externalitem.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -99,7 +99,7 @@ Content-type: application/json
       "type": "user",
       "value": "49103559-feac-4575-8b94-254814dfca72",
       "accessType": "deny",
-      "identitySource": "Azure Active Directory"
+      "identitySource": "azureActiveDirectory"
     }
   ],
   "properties": {

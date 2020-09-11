@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: de4b983592978ca05b2e2db8fe1eccd0697147fb
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: e9d44fe63b03ab7da1da62402d5579f58dec195b
+ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43718617"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47439968"
 ---
 # <a name="update-externalitem"></a>更新 externalitem
 
@@ -18,11 +18,11 @@ ms.locfileid: "43718617"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[externalitem](../resources/externalitem.md)的属性。
+更新 [externalitem](../resources/externalitem.md)的属性。
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "43718617"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | ExternalItem.ReadWrite.All |
+| 应用程序                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,10 +42,10 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="path-parameters"></a>路径参数
 
-| 参数     | 类型   | 说明                                         |
+| 参数     | 类型   | Description                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | 包含`id` [externalConnection](../resources/externalconnection.md)的属性 |
-| item-id       | string | ExternalItem 的开发人员`id`提供的属性[externalItem](../resources/externalitem.md)。 |
+| connection-id | 字符串 | `id`包含[externalConnection](../resources/externalconnection.md)的属性 |
+| item-id       | 字符串 | ExternalItem 的开发人员提供的 `id` 属性[externalItem](../resources/externalitem.md)。 |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -56,25 +56,25 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值。 未包含在请求正文中的`properties`现有属性（对象内的属性除外）将保留其以前的值，或根据对其他属性值的更改重新计算这些属性。 为了获得最佳性能，请勿加入尚未更改的现有值。 可更新以下属性。
+在请求正文中，提供应更新的相关字段的值。 现有属性 (排除 `properties` 请求正文中不包含的对象) 中的属性将保留其以前的值，或根据其他属性值的更改重新计算这些属性。 为了获得最佳性能，请勿加入尚未更改的现有值。 可更新以下属性。
 
-| 属性   | 类型                                  | 说明               |
+| 属性   | 类型                                  | Description               |
 |:-----------|:--------------------------------------|:--------------------------|
-| acl        | [acl](../resources/acl.md)集合 | 一组访问控制项。 每个条目指定向用户或组授予的访问权限。 |
+| acl        | [acl](../resources/acl.md) 集合 | 一组访问控制项。 每个条目指定向用户或组授予的访问权限。 |
 | content    | [externalItemContent](../resources/externalitemcontent.md) | 项目内容的纯文本或 HTML 表示形式。 此属性中的文本为全文检索的文本。 |
-| properties | 对象                                | 包含项属性的属性包。 属性必须符合为[externalConnection](../resources/externalconnection.md)定义的[架构](../resources/schema.md)。 |
+| properties | Object                                | 包含项属性的属性包。 属性必须符合为[externalConnection](../resources/externalconnection.md)定义的[架构](../resources/schema.md)。 |
 
 ### <a name="updating-the-acl-collection"></a>更新 acl 集合
 
-如果该`acl`属性包含在更新请求中，则将使用请求中包含的集合覆盖现有的 ACL 集合。
+如果该 `acl` 属性包含在更新请求中，则将使用请求中包含的集合覆盖现有的 ACL 集合。
 
 ### <a name="updating-the-properties-object"></a>更新 properties 对象
 
-如果该`properties`属性包含在更新请求中，则现有属性包将被请求中包含的值覆盖。
+如果该 `properties` 属性包含在更新请求中，则现有属性包将被请求中包含的值覆盖。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[externalItem](../resources/externalitem.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [externalItem](../resources/externalitem.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -98,7 +98,7 @@ Content-type: application/json
       "type": "user",
       "value": "49103559-feac-4575-8b94-254814dfca72",
       "accessType": "grant",
-      "identitySource": "Azure Active Directory"
+      "identitySource": "azureActiveDirectory"
     }
   ]
 }
@@ -141,7 +141,7 @@ Content-type: application/json
       "type": "user",
       "value": "49103559-feac-4575-8b94-254814dfca72",
       "accessType": "grant",
-      "identitySource": "Azure Active Directory"
+      "identitySource": "azureActiveDirectory"
     }
   ],
   "properties": {

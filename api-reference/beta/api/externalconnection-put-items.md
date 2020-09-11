@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7d6b7f1abf94aacd7732c7fb767a0220d6892abf
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: dfb3d3d6e10f2da9f1032aeeae0b6a2ba1c15087
+ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43718603"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47439969"
 ---
 # <a name="create-externalitem"></a>创建 externalItem
 
@@ -18,13 +18,13 @@ ms.locfileid: "43718603"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[externalItem](../resources/externalitem.md)。
+创建新的 [externalItem](../resources/externalitem.md)。
 
-此 API 可用于创建自定义项。 通过在 JSON 正文中包含`@odata.type`属性来指定要创建的类型。 包含的[externalConnection](../resources/externalconnection.md)必须具有相应类型的已注册[架构](../resources/schema.md)。
+此 API 可用于创建自定义项。 通过在 JSON 正文中包含属性来指定要创建的类型 `@odata.type` 。 包含的 [externalConnection](../resources/externalconnection.md) 必须具有相应类型的已注册 [架构](../resources/schema.md) 。
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -32,7 +32,7 @@ ms.locfileid: "43718603"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | ExternalItem.ReadWrite.All |
+| 应用程序                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -44,10 +44,10 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="path-parameters"></a>路径参数
 
-| 参数     | 类型   | 说明                                         |
+| 参数     | 类型   | Description                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | 包含`id` [externalConnection](../resources/externalconnection.md)的属性 |
-| item-id       | string | ExternalItem 的开发人员`id`提供的属性[externalItem](../resources/externalitem.md)。 如果不存在具有此`id`项的项目，则会创建一个新项目。 如果某个项目已经存在`id`，则会被在正文中发送的对象覆盖。 |
+| connection-id | 字符串 | `id`包含[externalConnection](../resources/externalconnection.md)的属性 |
+| item-id       | 字符串 | ExternalItem 的开发人员提供的 `id` 属性[externalItem](../resources/externalitem.md)。 如果不存在具有此项的项目 `id` ，则会创建一个新项目。 如果某个项目已经存在，则 `id` 会被在正文中发送的对象覆盖。 |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -58,17 +58,17 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[externalItem](../resources/externalitem.md)对象的 JSON 表示形式。 有效负载限制为 4 MB。
+在请求正文中，提供 [externalItem](../resources/externalitem.md) 对象的 JSON 表示形式。 有效负载限制为 4 MB。
 
 ### <a name="creating-an-externalitem"></a>创建 externalItem
 
-在创建时`externalItem`，需要以下字段： `@odata.type`、 `acl`和。 `properties` 该`properties`对象必须至少包含一个属性。
+在创建时 `externalItem` ，需要以下字段： `@odata.type` 、 `acl` 和 `properties` 。 该 `properties` 对象必须至少包含一个属性。
 
-所有`DateTime`类型属性都必须采用 ISO 8601 格式。
+所有 `DateTime` 类型属性都必须采用 ISO 8601 格式。
 
-中的属性`externalItem`应在以下方案中使用有效负载中的类型说明符：
+中的属性 `externalItem` 应在以下方案中使用有效负载中的类型说明符：
 
-- 对于`String` type 属性，如果该值包含非 ASCII 字符。
+- 对于 `String` type 属性，如果该值包含非 ASCII 字符。
 
     ```json
     "description@odata.type": "String",
@@ -86,7 +86,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
     ```
 
     > [!IMPORTANT]
-    > 如果包含类型`Collection(DateTime)`的属性，则必须使用类型说明符`Collection(DateTimeOffset)`。
+    > 如果包含类型的属性 `Collection(DateTime)` ，则必须使用类型说明符 `Collection(DateTimeOffset)` 。
 
 ## <a name="response"></a>响应
 
@@ -117,7 +117,7 @@ Content-type: application/json
       "type": "user",
       "value": "49103559-feac-4575-8b94-254814dfca72",
       "accessType": "deny",
-      "identitySource": "Azure Active Directory"
+      "identitySource": "azureActiveDirectory"
     }
   ],
   "properties": {

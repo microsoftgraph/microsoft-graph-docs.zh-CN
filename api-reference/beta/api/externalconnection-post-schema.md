@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: f91baaaa879aa0ddcc2212604cac3670adc445e4
-ms.sourcegitcommit: 9f1e02ab486a2c3e0a128e5d36f46cebe4961581
+ms.openlocfilehash: aa17555a34cd449bcfd4978ef5d6710ed992e4b2
+ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024367"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47439981"
 ---
 # <a name="create-schema"></a>创建架构
 
@@ -18,11 +18,11 @@ ms.locfileid: "45024367"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为 Microsoft Search[连接](../resources/externalconnection.md)创建架构。
+为 Microsoft Search [连接](../resources/externalconnection.md)创建架构。
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,15 +50,15 @@ POST /external/connections/{id}/schema
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[架构](../resources/schema.md)对象的 JSON 表示形式。
+在请求正文中，提供 [架构](../resources/schema.md) 对象的 JSON 表示形式。
 
 注册自定义项目架构时， `schema` 对象的 `baseType` 属性必须设置为 `microsoft.graph.externalItem` ，并且必须包含 `properties` 属性。 该 `properties` 对象必须至少包含一个属性，最多为64。
 
 ## <a name="response"></a>响应
 
-在 `Prefer: respond-async` 请求中包含标头的情况下，如果成功，此方法将在 `202 Accepted` 响应标头中返回响应代码和 URL， `Location` 该 URL 可用于[获取操作状态](../api/connectionoperation-get.md)。
+在 `Prefer: respond-async` 请求中包含标头的情况下，如果成功，此方法将在 `202 Accepted` 响应标头中返回响应代码和 URL， `Location` 该 URL 可用于 [获取操作状态](../api/connectionoperation-get.md)。
 
-如果在 `Prefer: respond-async` 请求中不包含标头，则此方法在 `201 Created` 响应正文中返回响应代码和新[架构](../resources/schema.md)对象。
+如果在 `Prefer: respond-async` 请求中不包含标头，则此方法在 `201 Created` 响应正文中返回响应代码和新 [架构](../resources/schema.md) 对象。
 
 > [!NOTE]
 > 创建架构是一个容易导致网关超时的长时间运行的过程。 我们建议使用 `Prefer: respond-async` 标头以避免超时错误。
@@ -99,7 +99,6 @@ Prefer: respond-async
       "type": "String",
       "isQueryable": "true",
       "isRetrievable": "true",
-      "isRefinable": "true",
       "isSearchable": "false"
     },
     {
