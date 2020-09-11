@@ -5,32 +5,32 @@ author: stephenjust
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f04f554d02b3d2a9598abf9b49d7fe139cd6733b
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: d42dc962579efd783f56bc0e2f9fd0b15c334a10
+ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509997"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47439855"
 ---
-# <a name="callrecord-getdirectroutingcalls"></a><span data-ttu-id="8fa43-103">callRecord: getDirectRoutingCalls</span><span class="sxs-lookup"><span data-stu-id="8fa43-103">callRecord: getDirectRoutingCalls</span></span>
+# <a name="callrecord-getdirectroutingcalls"></a><span data-ttu-id="9f644-103">callRecord: getDirectRoutingCalls</span><span class="sxs-lookup"><span data-stu-id="9f644-103">callRecord: getDirectRoutingCalls</span></span>
 
-<span data-ttu-id="8fa43-104">命名空间：microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="8fa43-104">Namespace: microsoft.graph.callRecords</span></span>
+<span data-ttu-id="9f644-104">命名空间：microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="9f644-104">Namespace: microsoft.graph.callRecords</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8fa43-105">将直接路由呼叫的日志作为[directRoutingLogRow](../resources/callrecords-directroutinglogrow.md)条目的集合获取。</span><span class="sxs-lookup"><span data-stu-id="8fa43-105">Get a log of direct routing calls as a collection of [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) entries.</span></span>
+<span data-ttu-id="9f644-105">将直接路由呼叫的日志作为 [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) 条目的集合获取。</span><span class="sxs-lookup"><span data-stu-id="9f644-105">Get a log of direct routing calls as a collection of [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) entries.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8fa43-106">权限</span><span class="sxs-lookup"><span data-stu-id="8fa43-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9f644-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="9f644-106">Permissions</span></span>
 
-<span data-ttu-id="8fa43-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8fa43-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9f644-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9f644-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8fa43-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="8fa43-109">Permission type</span></span>|<span data-ttu-id="8fa43-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="8fa43-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="9f644-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="9f644-109">Permission type</span></span>|<span data-ttu-id="9f644-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="9f644-110">Permissions (from most to least privileged)</span></span>|
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="8fa43-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8fa43-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="8fa43-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="8fa43-112">Not supported.</span></span> |
-| <span data-ttu-id="8fa43-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8fa43-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8fa43-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="8fa43-114">Not supported.</span></span> |
-| <span data-ttu-id="8fa43-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="8fa43-115">Application</span></span>| <span data-ttu-id="8fa43-116">CallRecords。 PstnCalls</span><span class="sxs-lookup"><span data-stu-id="8fa43-116">CallRecords.Read.PstnCalls</span></span>|
+| <span data-ttu-id="9f644-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9f644-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="9f644-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="9f644-112">Not supported.</span></span> |
+| <span data-ttu-id="9f644-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9f644-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9f644-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="9f644-114">Not supported.</span></span> |
+| <span data-ttu-id="9f644-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="9f644-115">Application</span></span>                            | <span data-ttu-id="9f644-116">CallRecords.Read.All</span><span class="sxs-lookup"><span data-stu-id="9f644-116">CallRecords.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8fa43-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8fa43-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9f644-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9f644-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -41,31 +41,31 @@ ms.locfileid: "46509997"
 GET /communications/callRecords/getDirectRoutingCalls
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8fa43-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="8fa43-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="9f644-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="9f644-118">Request headers</span></span>
 
-|<span data-ttu-id="8fa43-119">名称</span><span class="sxs-lookup"><span data-stu-id="8fa43-119">Name</span></span>|<span data-ttu-id="8fa43-120">说明</span><span class="sxs-lookup"><span data-stu-id="8fa43-120">Description</span></span>|
+|<span data-ttu-id="9f644-119">名称</span><span class="sxs-lookup"><span data-stu-id="9f644-119">Name</span></span>|<span data-ttu-id="9f644-120">说明</span><span class="sxs-lookup"><span data-stu-id="9f644-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="8fa43-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="8fa43-121">Authorization</span></span>|<span data-ttu-id="8fa43-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8fa43-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="9f644-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="9f644-121">Authorization</span></span>|<span data-ttu-id="9f644-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9f644-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="function-parameters"></a><span data-ttu-id="8fa43-124">函数参数</span><span class="sxs-lookup"><span data-stu-id="8fa43-124">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="9f644-124">函数参数</span><span class="sxs-lookup"><span data-stu-id="9f644-124">Function parameters</span></span>
 
-<span data-ttu-id="8fa43-125">在请求 URL 中，提供以下查询参数（含值）。</span><span class="sxs-lookup"><span data-stu-id="8fa43-125">In the request URL, provide the following query parameters with values.</span></span>
-<span data-ttu-id="8fa43-126">下表显示了可用于此函数的参数。</span><span class="sxs-lookup"><span data-stu-id="8fa43-126">The following table shows the parameters that can be used with this function.</span></span>
+<span data-ttu-id="9f644-125">在请求 URL 中，提供以下查询参数（含值）。</span><span class="sxs-lookup"><span data-stu-id="9f644-125">In the request URL, provide the following query parameters with values.</span></span>
+<span data-ttu-id="9f644-126">下表显示了可用于此函数的参数。</span><span class="sxs-lookup"><span data-stu-id="9f644-126">The following table shows the parameters that can be used with this function.</span></span>
 
-|<span data-ttu-id="8fa43-127">参数</span><span class="sxs-lookup"><span data-stu-id="8fa43-127">Parameter</span></span>|<span data-ttu-id="8fa43-128">类型</span><span class="sxs-lookup"><span data-stu-id="8fa43-128">Type</span></span>|<span data-ttu-id="8fa43-129">说明</span><span class="sxs-lookup"><span data-stu-id="8fa43-129">Description</span></span>|
+|<span data-ttu-id="9f644-127">参数</span><span class="sxs-lookup"><span data-stu-id="9f644-127">Parameter</span></span>|<span data-ttu-id="9f644-128">类型</span><span class="sxs-lookup"><span data-stu-id="9f644-128">Type</span></span>|<span data-ttu-id="9f644-129">Description</span><span class="sxs-lookup"><span data-stu-id="9f644-129">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="8fa43-130">fromDateTime</span><span class="sxs-lookup"><span data-stu-id="8fa43-130">fromDateTime</span></span>|<span data-ttu-id="8fa43-131">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="8fa43-131">DateTimeOffset</span></span>|<span data-ttu-id="8fa43-132">要查询的时间范围的开始时间。</span><span class="sxs-lookup"><span data-stu-id="8fa43-132">Start of time range to query.</span></span> <span data-ttu-id="8fa43-133">UTC （含）。</span><span class="sxs-lookup"><span data-stu-id="8fa43-133">UTC, inclusive.</span></span><br/><span data-ttu-id="8fa43-134">时间范围基于呼叫开始时间。</span><span class="sxs-lookup"><span data-stu-id="8fa43-134">Time range is based on the call start time.</span></span>|
-|<span data-ttu-id="8fa43-135">toDateTime</span><span class="sxs-lookup"><span data-stu-id="8fa43-135">toDateTime</span></span>|<span data-ttu-id="8fa43-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="8fa43-136">DateTimeOffset</span></span>|<span data-ttu-id="8fa43-137">要查询的时间范围的结束时间。</span><span class="sxs-lookup"><span data-stu-id="8fa43-137">End of time range to query.</span></span> <span data-ttu-id="8fa43-138">UTC （含）。</span><span class="sxs-lookup"><span data-stu-id="8fa43-138">UTC, inclusive.</span></span>|
+|<span data-ttu-id="9f644-130">fromDateTime</span><span class="sxs-lookup"><span data-stu-id="9f644-130">fromDateTime</span></span>|<span data-ttu-id="9f644-131">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9f644-131">DateTimeOffset</span></span>|<span data-ttu-id="9f644-132">要查询的时间范围的开始时间。</span><span class="sxs-lookup"><span data-stu-id="9f644-132">Start of time range to query.</span></span> <span data-ttu-id="9f644-133">UTC （含）。</span><span class="sxs-lookup"><span data-stu-id="9f644-133">UTC, inclusive.</span></span><br/><span data-ttu-id="9f644-134">时间范围基于呼叫开始时间。</span><span class="sxs-lookup"><span data-stu-id="9f644-134">Time range is based on the call start time.</span></span>|
+|<span data-ttu-id="9f644-135">toDateTime</span><span class="sxs-lookup"><span data-stu-id="9f644-135">toDateTime</span></span>|<span data-ttu-id="9f644-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9f644-136">DateTimeOffset</span></span>|<span data-ttu-id="9f644-137">要查询的时间范围的结束时间。</span><span class="sxs-lookup"><span data-stu-id="9f644-137">End of time range to query.</span></span> <span data-ttu-id="9f644-138">UTC （含）。</span><span class="sxs-lookup"><span data-stu-id="9f644-138">UTC, inclusive.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="8fa43-139">响应</span><span class="sxs-lookup"><span data-stu-id="8fa43-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9f644-139">响应</span><span class="sxs-lookup"><span data-stu-id="9f644-139">Response</span></span>
 
-<span data-ttu-id="8fa43-140">如果成功，此函数会在 `200 OK` 响应正文中返回响应代码和[directRoutingLogRow](../resources/callrecords-directroutinglogrow.md)条目集合。</span><span class="sxs-lookup"><span data-stu-id="8fa43-140">If successful, this function returns a `200 OK` response code and a collection of [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) entries in the response body.</span></span>
+<span data-ttu-id="9f644-140">如果成功，此函数会在 `200 OK` 响应正文中返回响应代码和 [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) 条目集合。</span><span class="sxs-lookup"><span data-stu-id="9f644-140">If successful, this function returns a `200 OK` response code and a collection of [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) entries in the response body.</span></span>
   
-<span data-ttu-id="8fa43-141">如果日期范围中的条目数超过1000个，则正文还包含一个 `@odata.NextLink` URL，用于查询下一页的呼叫条目。</span><span class="sxs-lookup"><span data-stu-id="8fa43-141">If there are more than 1000 entries in the date range, the body also includes an `@odata.NextLink` with a URL to query the next page of call entries.</span></span> <span data-ttu-id="8fa43-142">日期范围中的最后一页没有 `@odata.NextLink` 。</span><span class="sxs-lookup"><span data-stu-id="8fa43-142">The last page in the date range does not have `@odata.NextLink`.</span></span> <span data-ttu-id="8fa43-143">有关详细信息，请参阅[在应用中分页 Microsoft Graph 数据](/graph/paging)。</span><span class="sxs-lookup"><span data-stu-id="8fa43-143">For more information, see [paging Microsoft Graph data in your app](/graph/paging).</span></span>
+<span data-ttu-id="9f644-141">如果日期范围中的条目数超过1000个，则正文还包含一个 `@odata.NextLink` URL，用于查询下一页的呼叫条目。</span><span class="sxs-lookup"><span data-stu-id="9f644-141">If there are more than 1000 entries in the date range, the body also includes an `@odata.NextLink` with a URL to query the next page of call entries.</span></span> <span data-ttu-id="9f644-142">日期范围中的最后一页没有 `@odata.NextLink` 。</span><span class="sxs-lookup"><span data-stu-id="9f644-142">The last page in the date range does not have `@odata.NextLink`.</span></span> <span data-ttu-id="9f644-143">有关详细信息，请参阅 [在应用中分页 Microsoft Graph 数据](/graph/paging)。</span><span class="sxs-lookup"><span data-stu-id="9f644-143">For more information, see [paging Microsoft Graph data in your app](/graph/paging).</span></span>
 
-## <a name="examples"></a><span data-ttu-id="8fa43-144">示例</span><span class="sxs-lookup"><span data-stu-id="8fa43-144">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="9f644-144">示例</span><span class="sxs-lookup"><span data-stu-id="9f644-144">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="8fa43-145">请求</span><span class="sxs-lookup"><span data-stu-id="8fa43-145">Request</span></span>
+### <a name="request"></a><span data-ttu-id="9f644-145">请求</span><span class="sxs-lookup"><span data-stu-id="9f644-145">Request</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -77,9 +77,9 @@ GET /communications/callRecords/getDirectRoutingCalls
 GET https://graph.microsoft.com/beta/communications/callRecords/getDirectRoutingCalls(fromDateTime=2019-11-01,toDateTime=2019-12-01)
 ```
 
-### <a name="response"></a><span data-ttu-id="8fa43-146">响应</span><span class="sxs-lookup"><span data-stu-id="8fa43-146">Response</span></span>
+### <a name="response"></a><span data-ttu-id="9f644-146">响应</span><span class="sxs-lookup"><span data-stu-id="9f644-146">Response</span></span>
 
-<span data-ttu-id="8fa43-147">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="8fa43-147">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="9f644-147">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="9f644-147">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -121,8 +121,8 @@ HTTP/1.1 200 OK
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="8fa43-148">另请参阅</span><span class="sxs-lookup"><span data-stu-id="8fa43-148">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9f644-148">另请参阅</span><span class="sxs-lookup"><span data-stu-id="9f644-148">See also</span></span>
 
-* <span data-ttu-id="8fa43-149">Microsoft 团队管理中心中的[Microsoft 团队直接路由使用情况报告](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing)</span><span class="sxs-lookup"><span data-stu-id="8fa43-149">[Microsoft Teams direct routing usage report](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) in the Microsoft Teams admin center</span></span>
-* <span data-ttu-id="8fa43-150">Microsoft 团队管理中心中[用于直接路由的运行状况仪表板](https://docs.microsoft.com/MicrosoftTeams/direct-routing-health-dashboard)</span><span class="sxs-lookup"><span data-stu-id="8fa43-150">[Health Dashboard for direct routing](https://docs.microsoft.com/MicrosoftTeams/direct-routing-health-dashboard) in the Microsoft Teams admin center</span></span>
-* [<span data-ttu-id="8fa43-151">Microsoft Graph 中的 PSTN 呼叫报告</span><span class="sxs-lookup"><span data-stu-id="8fa43-151">PSTN call report in Microsoft Graph</span></span>](callrecords-callrecord-getpstncalls.md)
+* <span data-ttu-id="9f644-149">Microsoft 团队管理中心中的[Microsoft 团队直接路由使用情况报告](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing)</span><span class="sxs-lookup"><span data-stu-id="9f644-149">[Microsoft Teams direct routing usage report](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) in the Microsoft Teams admin center</span></span>
+* <span data-ttu-id="9f644-150">Microsoft 团队管理中心中[用于直接路由的运行状况仪表板](https://docs.microsoft.com/MicrosoftTeams/direct-routing-health-dashboard)</span><span class="sxs-lookup"><span data-stu-id="9f644-150">[Health Dashboard for direct routing](https://docs.microsoft.com/MicrosoftTeams/direct-routing-health-dashboard) in the Microsoft Teams admin center</span></span>
+* [<span data-ttu-id="9f644-151">Microsoft Graph 中的 PSTN 呼叫报告</span><span class="sxs-lookup"><span data-stu-id="9f644-151">PSTN call report in Microsoft Graph</span></span>](callrecords-callrecord-getpstncalls.md)
