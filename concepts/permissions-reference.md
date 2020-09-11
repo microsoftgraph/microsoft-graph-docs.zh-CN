@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 0c51ef8d681601cbe7434ff0dd2a06eaf0cd2a7c
-ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
+ms.openlocfilehash: 3bed252af8ecbbcd4e54d34a4f5dcf53fd0a323f
+ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "47400466"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47439869"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -409,13 +409,10 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 |权限    |显示字符串   |说明 |需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_CallRecords.Read.All_|读取所有通话记录|允许应用在没有用户登录的情况下读取所有通话和联机会议的通话记录。|是|
-|_CallRecords.Read.PstnCalls_|读取 PSTN 并直接路由通话日志数据（预览） |在没有已登录用户的情况下，允许应用读取所有 PSTN 和直接路由通话日志数据。|是|
 
 ### <a name="remarks"></a>备注
 
 _CallRecords.Read.All_ 权限为组织内每次通话和联机会议（包括与外部电话号码的通话）授权 [callRecords](/graph/api/resources/callrecords-callrecord) 的特权访问。 这包括与参与呼叫的人员有关的潜在敏感详细信息，以及与这些通话和会议相关的、可用于网络疑难解答的技术信息（IP地址、设备详细信息和其他网络信息）。
-
-_CallRecords.Read.PstnCalls_权限授予应用访问 [PSTN (通话套餐)](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) 以及 [直接路由](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta)通话日志。 这包括与用户相关的潜在敏感信息以及与外部电话号码的通话。
 
 > **重要说明：** 应谨慎为应用程序授予这些权限。 通话记录可提供业务运营的见解，因此可能成为恶意参与者的目标。 仅为你信任的应用程序授予这些权限，以满足你的数据保护要求。
 
@@ -429,7 +426,7 @@ _CallRecords.Read.PstnCalls_权限授予应用访问 [PSTN (通话套餐)](/grap
 
 * _CallRecords.Read.All_：检索通话记录 (`GET /v1.0/communications/callRecords/{id}`)。
 * _CallRecords.Read.All_：订阅新的通话记录 (`POST /v1.0/subscriptions`)。
-* _CallRecords.Read.PstnCalls_：检索指定时间范围 (`GET /v1.0/communications/callRecords/microsoft.graph.callRecords.getDirectRoutingCalls(fromDateTime={start date and time),toDateTime={end date and time))`) 内的直接路由通话。
+* _CallRecords.Read.All_：检索指定时间范围 (`GET /v1.0/communications/callRecords/microsoft.graph.callRecords.getDirectRoutingCalls(fromDateTime={start date and time),toDateTime={end date and time))`) 内的直接路由通话记录。
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 
