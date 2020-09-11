@@ -4,12 +4,12 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: f00ef6f5c45736724f145e036a7fa78abdd107df
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 1ad37eca7c3351d21fd324f549d558806b0df869
+ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811845"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47440002"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 
@@ -53,7 +53,7 @@ Retry-After: 2.128
       "request-id": "94fb3b52-452a-4535-a601-69e0a90e3aa2",
       "status": "429"
     },
-    "message": "Please retry again laster."
+    "message": "Please retry again later."
   }
 }
 ```
