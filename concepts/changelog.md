@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: dc72761a6dbd54572527b4d67fef0febb4103785
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: d210a46682d425f702b040a39f40b133c0d14f94
+ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330042"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47413266"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -16,7 +16,32 @@ ms.locfileid: "47330042"
 
 有关这些 API 更改的意义以及最新工具、组件、指南和教程添加项的摘要信息，请参阅 [Microsoft Graph 新增功能](whats-new-overview.md)。
 
-## <a name="september"></a>九月
+## <a name="september-2020"></a>2020 年 9 月
+
+### <a name="reports"></a>报告
+
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 添加项        | Beta 和 v1.0 | 已将 **outlookM365** 和 **outlook2019** 属性添加到 [getEmailAppUsageVersionsUserCounts](/graph/api/resources/emailappusageversionsusercount?view=graph-rest-beta) 实体。|
+
+### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
+
+| **更改类型** | **版本**   | **说明**                          |
+|:---|:---|:---|
+| 添加项 | beta | 添加了对 [List printJobs](/graph/api/printer-list-jobs?view=graph-rest-beta) 方法的 `$expand=documents` 和 `$filter=createdBy/userPrincipalName` 查询参数的支持。 |
+
+### <a name="identity-and-access"></a>身份和访问
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | beta | 已将**计划** 属性添加到权限管理中的[accessPackageAssignment](/graph/api/resources/accesspackageassignment?view=graph-rest-beta) 和 [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta)。|
+
+### <a name="teamwork"></a>团队合作
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|添加项|beta| 向[频道](/graph/api/resources/channel?view=graph-rest-beta)和[团队](/graph/api/resources/team?view=graph-rest-beta)资源中添加了 **createdDateTime** 属性。|
+
 
 ### <a name="users"></a>用户
 
@@ -27,6 +52,7 @@ ms.locfileid: "47330042"
 ## <a name="august-2020"></a>2020 年 8 月
 
 ### <a name="applications"></a>应用程序
+
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | Beta | 向 [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) 资源添加了 “[passwordSingleSignOnSettings](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta)” 属性。
@@ -36,12 +62,6 @@ ms.locfileid: "47330042"
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | beta | 向 [event](/graph/api/resources/event?view=graph-rest-beta) 实体添加了 **cancelledOccurrences**、**exceptionOccurrences** 和 **occurrenceId** 属性。
-
-### <a name="cloud-communications"></a>云通信
-
-| **更改类型** | **版本**   | **说明**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | Beta 和 v1.0 | 向 [call](/graph/api/resources/call) 实体添加了 **transcription** 属性。|
 
 ### <a name="change-notifications"></a>更改通知
 
@@ -57,14 +77,15 @@ ms.locfileid: "47330042"
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | Beta 和 v1.0 | 向 [call](/graph/api/resources/call) 实体添加了 **transcription** 属性。|
 | 添加项 | v1.0 | 向 [call](/graph/api/resources/call) 实体添加了 **cancelMediaProcessing** API。|
+| 添加项 | Beta 和 v1.0 | 向 [call](/graph/api/resources/call) 实体添加了 **transcription** 属性。|
 
 ### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
 
 | **更改类型** | **版本**   | **说明**                          |
 |:---|:---|:---|
-| 添加项 | beta | 添加了新的[委派权限](/graph/permissions-reference#universal-print-permissions)： <br/><ul><li>Printer.Create</li><li>Printer.FullControl.All</li><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrinterShare.Read.All</li><li>PrinterShare.ReadWrite.All</li><li>PrintJob.Read</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic</li><li>PrintJob.ReadWriteBasic.All</li></ul> | 
+| 添加项 | beta | 添加了新的[委派权限](/graph/permissions-reference#universal-print-permissions)： <br/><ul><li>Printer.Create</li><li>Printer.FullControl.All</li><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrinterShare.Read.All</li><li>PrinterShare.ReadWrite.All</li><li>PrintJob.Read</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic</li><li>PrintJob.ReadWriteBasic.All</li></ul> |
 | Addition | beta | 添加了新的[仅限应用权限](/graph/permissions-reference#universal-print-permissions)： <br/><ul><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrintJob.Manage.All</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic.All</li><li>PrintTaskDefinition.ReadWrite.All</li></ul> |
-| 更改 | beta | 添加了新的权限要求以： <ul><li>[列出打印机](/graph/api/print-list-printers?view=graph-rest-beta)</li><li>[获取打印机](/graph/api/printer-get?view=graph-rest-beta)</li><li>[更新打印机](/graph/api/printer-update?view=graph-rest-beta)</li><li>[删除打印机](/graph/api/printer-delete?view=graph-rest-beta)</li><li>[列出 allowedGroups (printer)](/graph/api/printer-list-allowedgroups?view=graph-rest-beta)</li><li>[列出 allowedUsers (printer)](/graph/api/printer-list-allowedusers?view=graph-rest-beta)</li><li>[创建 allowedGroup (printer)](/graph/api/printer-post-allowedgroups?view=graph-rest-beta)</li><li>[创建 allowedUser (printer)](/graph/api/printer-post-allowedusers?view=graph-rest-beta)</li><li>[删除 allowedGroup (printer)](/graph/api/printer-delete-allowedgroup?view=graph-rest-beta)</li><li>[删除 allowedUser (printer)](/graph/api/printer-delete-alloweduser?view=graph-rest-beta)</li><li>[getCapabilities (printer)](/graph/api/printer-getcapabilities?view=graph-rest-beta)</li><li>[列出连接器（打印机）](/graph/api/printer-list-connectors?view=graph-rest-beta)</li><li>[列出作业（打印机）](/graph/api/printer-list-jobs?view=graph-rest-beta)</li><li>[创建作业（打印机）](/graph/api/printer-post-jobs?view=graph-rest-beta)</li><li>[resetDefaults (printer)](/graph/api/printer-resetdefaults?view=graph-rest-beta)</li><li>[列出共享项](/graph/api/print-list-shares?view=graph-rest-beta)</li><li>[获取 printerShare](/graph/api/printershare-get?view=graph-rest-beta)</li><li>[创建 printerShare](/graph/api/print-post-shares?view=graph-rest-beta)</li><li>[更新 printerShare](/graph/api/printershare-update?view=graph-rest-beta)</li><li>[删除 printerShare](/graph/api/printershare-delete?view=graph-rest-beta)</li><li>[列出 allowedGroups (printerShare)](/graph/api/printershare-list-allowedgroups?view=graph-rest-beta)</li><li>[列出 allowedUsers (printerShare)](/graph/api/printershare-list-allowedusers?view=graph-rest-beta)</li><li>[创建 allowedGroup (printerShare)](/graph/api/printershare-post-allowedgroups?view=graph-rest-beta)</li><li>[创建 allowedUser (printerShare)](/graph/api/printershare-post-allowedusers?view=graph-rest-beta)</li><li>[删除 allowedGroup (printerShare)](/graph/api/printershare-delete-allowedgroup?view=graph-rest-beta)</li><li>[删除 allowedUser (printerShare)](/graph/api/printershare-delete-alloweduser?view=graph-rest-beta)</li><li>[创建 printJob](/graph/api/printer-post-jobs?view=graph-rest-beta)</li><li>[获取 printJob](/graph/api/printjob-get?view=graph-rest-beta)</li><li>[uploadData (printDocument)](/graph/api/printdocument-uploaddata?view=graph-rest-beta)</li><li>[startPrintJob (printJob)](/graph/api/printjob-startprintjob?view=graph-rest-beta)</li><li>[cancelPrintJob (printJob)](/graph/api/printjob-cancelprintjob?view=graph-rest-beta)</li></ul> | 
+| 更改 | beta | 添加了新的权限要求以： <ul><li>[列出打印机](/graph/api/print-list-printers?view=graph-rest-beta)</li><li>[获取打印机](/graph/api/printer-get?view=graph-rest-beta)</li><li>[更新打印机](/graph/api/printer-update?view=graph-rest-beta)</li><li>[删除打印机](/graph/api/printer-delete?view=graph-rest-beta)</li><li>[列出 allowedGroups (printer)](/graph/api/printer-list-allowedgroups?view=graph-rest-beta)</li><li>[列出 allowedUsers (printer)](/graph/api/printer-list-allowedusers?view=graph-rest-beta)</li><li>[创建 allowedGroup (printer)](/graph/api/printer-post-allowedgroups?view=graph-rest-beta)</li><li>[创建 allowedUser (printer)](/graph/api/printer-post-allowedusers?view=graph-rest-beta)</li><li>[删除 allowedGroup (printer)](/graph/api/printer-delete-allowedgroup?view=graph-rest-beta)</li><li>[删除 allowedUser (printer)](/graph/api/printer-delete-alloweduser?view=graph-rest-beta)</li><li>[getCapabilities (printer)](/graph/api/printer-getcapabilities?view=graph-rest-beta)</li><li>[列出连接器（打印机）](/graph/api/printer-list-connectors?view=graph-rest-beta)</li><li>[列出作业（打印机）](/graph/api/printer-list-jobs?view=graph-rest-beta)</li><li>[创建作业（打印机）](/graph/api/printer-post-jobs?view=graph-rest-beta)</li><li>[resetDefaults (printer)](/graph/api/printer-resetdefaults?view=graph-rest-beta)</li><li>[列出共享项](/graph/api/print-list-shares?view=graph-rest-beta)</li><li>[获取 printerShare](/graph/api/printershare-get?view=graph-rest-beta)</li><li>[创建 printerShare](/graph/api/print-post-shares?view=graph-rest-beta)</li><li>[更新 printerShare](/graph/api/printershare-update?view=graph-rest-beta)</li><li>[删除 printerShare](/graph/api/printershare-delete?view=graph-rest-beta)</li><li>[列出 allowedGroups (printerShare)](/graph/api/printershare-list-allowedgroups?view=graph-rest-beta)</li><li>[列出 allowedUsers (printerShare)](/graph/api/printershare-list-allowedusers?view=graph-rest-beta)</li><li>[创建 allowedGroup (printerShare)](/graph/api/printershare-post-allowedgroups?view=graph-rest-beta)</li><li>[创建 allowedUser (printerShare)](/graph/api/printershare-post-allowedusers?view=graph-rest-beta)</li><li>[删除 allowedGroup (printerShare)](/graph/api/printershare-delete-allowedgroup?view=graph-rest-beta)</li><li>[删除 allowedUser (printerShare)](/graph/api/printershare-delete-alloweduser?view=graph-rest-beta)</li><li>[创建 printJob](/graph/api/printer-post-jobs?view=graph-rest-beta)</li><li>[获取 printJob](/graph/api/printjob-get?view=graph-rest-beta)</li><li>[uploadData (printDocument)](/graph/api/printdocument-uploaddata?view=graph-rest-beta)</li><li>[startPrintJob (printJob)](/graph/api/printjob-startprintjob?view=graph-rest-beta)</li><li>[cancelPrintJob (printJob)](/graph/api/printjob-cancelprintjob?view=graph-rest-beta)</li></ul> |
 | 更改 | beta | 向 [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) 资源添加 **allowAllUsers** 属性。 |
 
 ### <a name="devices-and-apps--corporate-management"></a>设备和应用 | 公司管理
@@ -391,7 +412,7 @@ ms.locfileid: "47330042"
 |添加项|beta|向 [vpnEncryptionAlgorithmType](/graph/api/resources/intune-deviceconfig-vpnencryptionalgorithmtype?view=graph-rest-beta) 枚举类型添加了 **aes192** 和 **aes192Gcm** 成员|
 |添加项|beta|向 [vpnIntegrityAlgorithmType](/graph/api/resources/intune-deviceconfig-vpnintegrityalgorithmtype?view=graph-rest-beta) 枚举类型添加了 **md5** 成员|
 |添加项|beta|向 [vppTokenState](/graph/api/resources/intune-onboarding-vpptokenstate?view=graph-rest-beta) 枚举类型添加了 **duplicateLocationId** 成员|
-|添加项|beta|已添加的新实体：<br/>[complianceManagementPartner](/graph/api/resources/intune-onboarding-compliancemanagementpartner?view=graph-rest-1.0)<br/>|
+|添加项|beta|添加的新实体：<br/>[complianceManagementPartner](/graph/api/resources/intune-onboarding-compliancemanagementpartner?view=graph-rest-1.0)<br/>|
 |添加项|beta|新增了复杂类型：<br/>[complianceManagementPartnerAssignment](/graph/api/resources/intune-onboarding-compliancemanagementpartner?view=graph-rest-1.0)<br/>|
 |添加项|beta|将 **complianceManagementPartners** 导航属性添加到 [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-1.0) 实体中|
 
@@ -1419,7 +1440,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加 | v1.0 | 添加了新的 [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) 资源。 这些联系人由组织管理，不同于[个人联系人](outlook-contacts-concept-overview.md)|
 | 添加项 | v1.0 | 添加了新的 [physicalOfficeAddress](/graph/api/resources/physicalOfficeAddress?view=graph-rest-1.0) 资源。 |
 | 添加 | v1.0 | 添加了新实体 [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-1.0)。 |
-| 添加 | v1.0 | 添加了新的复杂类型 [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-1.0)。 |
+| 添加项 | v1.0 | 添加了新的复杂类型 [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-1.0)。 |
 | 添加 | v1.0 | 在 [organization](/graph/api/resources/organization?view=graph-rest-1.0) 资源上为 **certificateBasedAuthConfiguration** 添加了新的关系。 这将支持 [Azure Active Directory 中基于证书的身份验证](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)。|
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
@@ -3220,7 +3241,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | v1.0        | 向 [organization](/graph/api/resources/organization?view=graph-rest-1.0) 实体添加了 **privacyProfile** 复杂类型。 |
-| 添加项        | v1.0        | 向 [user](/graph/api/resources/user?view=graph-rest-1.0) 实体添加了 **legalAgeGroup、ageGroup 和 consentProvidedForMinor** 复杂类型。 |
+| Addition        | v1.0        | 向 [user](/graph/api/resources/user?view=graph-rest-1.0) 实体添加了 **legalAgeGroup、ageGroup 和 consentProvidedForMinor** 复杂类型。 |
 | 添加项        | v1.0        | 向 [webhook](/graph/api/resources/webhooks?view=graph-rest-1.0) 通知订阅添加了用户和组支持。 |
 | 添加项        | beta        | 向[目录（已删除项目）](/graph/api/resources/directory?view=graph-rest-beta)资源添加了[列出用户所拥有的已删除项](/graph/api/directory-deleteditems-user-owned?view=graph-rest-beta)操作 |
 | 添加项        | v1.0        | 向 [outlookUser](/graph/api/resources/outlookuser?view=graph-rest-1.0) 实体添加了新的 **masterCategories** 导航属性。 **masterCategories** 是 [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0) 对象的集合。 |
@@ -3519,7 +3540,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |添加|v1.0|在 [deviceEnrollmentConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentconfiguration?view=graph-rest-1.0) 上添加了 [setPriority](/graph/api/intune-onboarding-deviceenrollmentconfiguration-setpriority?view=graph-rest-1.0) 操作 |
 |Addition|v1.0|在 [deviceEnrollmentConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentconfiguration?view=graph-rest-1.0) 上添加了 [assign](/graph/api/intune-onboarding-deviceenrollmentconfiguration-assign?view=graph-rest-1.0) 操作 |
 |添加项|v1.0|在 [targetedManagedAppProtection](/graph/api/resources/intune-mam-targetedmanagedappprotection?view=graph-rest-1.0) 上添加了 [assign](/graph/api/intune-mam-targetedmanagedappprotection-assign?view=graph-rest-1.0) 操作 |
-|添加|v1.0|在 [targetedManagedAppConfiguration](/graph/api/resources/intune-mam-targetedmanagedappconfiguration?view=graph-rest-1.0) 上添加了 [assign](/graph/api/intune-mam-targetedmanagedappconfiguration-assign?view=graph-rest-1.0) 操作 |
+|添加项|v1.0|在 [targetedManagedAppConfiguration](/graph/api/resources/intune-mam-targetedmanagedappconfiguration?view=graph-rest-1.0) 上添加了 [assign](/graph/api/intune-mam-targetedmanagedappconfiguration-assign?view=graph-rest-1.0) 操作 |
 |添加|v1.0|在 [windowsInformationProtection](/graph/api/resources/intune-mam-windowsinformationprotection?view=graph-rest-1.0) 上添加了 [assign](/graph/api/intune-mam-windowsinformationprotection-assign?view=graph-rest-1.0) 操作 |
 |添加项|v1.0|在 [managedAppPolicy](/graph/api/resources/intune-mam-managedapppolicy?view=graph-rest-1.0) 上添加了 [targetApps](/graph/api/intune-mam-managedapppolicy-targetapps?view=graph-rest-1.0) 操作 |
 |Addition|v1.0|在 [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-1.0) 上添加了 [targetApps](/graph/api/intune-mam-managedappprotection-targetapps?view=graph-rest-1.0) 操作 |
