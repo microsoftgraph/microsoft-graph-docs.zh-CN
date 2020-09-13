@@ -4,12 +4,12 @@ description: Microsoft Graph 提供可选的查询参数，可用于指定和控
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 6893030d8a910ea627a12b1198a8af0b99b95750
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: 54660e943204598a7e83c29b8cc7e1d731490146
+ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524364"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47439995"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -355,38 +355,48 @@ Content-type: application/json
 
 ### <a name="using-search-on-directory-object-collections"></a>在目录对象集合上使用 $search
 
-可以使用`$search` 查询参数根据搜索条件限制结果，比如查找由空格、大小写和字符类型（数字和特殊字符）分隔的字符串中的单词。 标记的搜索支持仅适用于 displayName 和说明字段。 任何字段都可以放入 `$search`中，而不是 **displayName** 的字段，**说明** 默认 `$filter` startswith 行为。 例如：
+可使用 `$search` 查询参数来使用标记筛选结果。 标记化搜索的工作原理是提取输入和输出字符串中的单词，并使用空格、数字、不同的大小写和符号分隔这些词，如下所示：
+
+* **空格**： `hello world` => `hello`、 `world`
+* **不同的大小写**⁽¹⁾： `HelloWorld`  或  `helloWORLD` => `hello`、 `world`
+* **符号**⁽²⁾： `hello.world` => `hello`、 `.`、`world`、`helloworld`
+* **数字**： `hello123world` => `hello`、 `123`、`world`
+
+⁽¹⁾ 目前，标记化仅在大小写从小写转换为大写时才有效，因此  `HELLOworld` 被视为一个标记： `helloworld`，`HelloWORld` 是两个标记：`hello`、`world`。 ⁽²⁾ 标记化逻辑还会合并仅由符号分隔的单词；例如，搜索 `helloworld`  将找到 `hello-world` 和 `hello.world`。
+
+> **注意**：标记化后，标记将独立于原始大小写进行匹配，并且将以任何顺序匹配。
+> `$search` 目录对象集合上的查询参数**需要**特殊的请求标头：`ConsistencyLevel: eventual`。
+
+标记化搜索支持仅适用于 **displayName** 和 **description** 字段。 任何字段都可以放入 `$search`；非 **displayName** 和 **description** 的字段默认为 `$filter` startswith 行为。 例如：
 
 `https://graph.microsoft.com/beta/groups/?$search="displayName:OneVideo"`
- 
-这将查找显示名称看起来像 "OneVideo" 的所有组。 也可与`$search`配合使用`$filter`。 例如： 
- 
-`https://graph.microsoft.com/beta/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"` 
- 
-这将查找显示名称类似于“OneVideo”的所有启用邮件的组。 结果是根据逻辑结合（"AND"）和`$filter`整个查询`$search`来限制。 搜索文本基于大小写进行标记，但是匹配以不区分大小写的方式执行。 例如，“OneVideo”将被分割成两个输入令牌“one”和“video”，但是匹配不区分大小写的属性。 
- 
- 
-搜索的语法遵循以下规则： 
- 
-- 通用格式： $search = "clause1" [AND |或] "[clauseX]"。 
-- 支持任何子句。 支持适用于优先级的括号。 
-- 每个子句的语法<property>：<text to search>。 
-- 必须在子句中指定属性名称。 可以在中使用的任何属性`$filter`也可以在内使用 `$search`。 根据属性的不同，如果属性不支持搜索，那么搜索行为要么是“search”，要么是“start with”。 
-- 必须将完整子句部分置于双引号内。  
-- 必须将逻辑运算符 "AND" 和 "OR" 置于双引号之外。 它们必须处于大写形式。 
-- 考虑到整个子句部分需要放在双引号内，如果<text to search>包含双引号和反斜杠，则需要使用反斜杠对其进行转义。 无需转义其他字符。 
 
-下表显示了一些示例。 
- 
+这将查找显示名称看起来像 "OneVideo" 的所有组。 也可与`$search`配合使用`$filter`。 例如：
+
+`https://graph.microsoft.com/beta/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"`
+
+这将查找显示名称类似于“OneVideo”的所有启用邮件的组。 结果是根据逻辑结合（"AND"）和`$filter`整个查询`$search`来限制。 搜索文本基于大小写进行标记，但是匹配以不区分大小写的方式执行。 例如，“OneVideo”将被分割成两个输入标记“one”和“video”，但是匹配不区分大小写的属性。
+
+搜索的语法遵循以下规则：
+
+* 通用格式：$search="clause1" \[AND \| OR\] "\[clauseX\]"\.
+* 支持任何子句。 支持适用于优先级的括号。
+* 每个子句的语法是："\<property>:\<text to search>"。
+* 必须在子句中指定属性名称。 可以在中使用的任何属性`$filter`也可以在内使用 `$search`。 根据属性的不同，如果属性不支持搜索，那么搜索行为要么是“search”，要么是“start with”。
+* 必须将完整子句部分置于双引号内。
+* 必须将逻辑运算符 "AND" 和 "OR" 置于双引号之外。 它们必须处于大写形式。
+* 考虑到整个子句部分需要放在双引号内，如果包含双引号和反斜杠，则需要使用反斜杠对其进行转义。 无需转义其他字符。
+
+下表显示了一些示例。
 
 | 对象类 | 说明 | 示例 |
 | ------------ | ----------- | ------- |
-| 用户 | 通讯簿显示用户的名称。 |  `https://graph.microsoft.com/beta/users?$search="displayName:Guthr"` |
+| 用户 | 通讯簿显示用户的名称。 | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr"` |
 | 用户 | 通讯簿显示用户的名称或邮件。 | `https://graph.microsoft.com/beta/users?$search="displayName:Guthr" OR "mail:Guthr"` |
 | Group | 通讯簿显群组的名称或说明。 | `https://graph.microsoft.com/beta/groups?$search="description:One" AND ("displayName:Video" OR "displayName:Drive")` |
 | Group | 通讯簿在启用邮件组上显示名称。 | `https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq true&$search="displayName:OneVideo"` |
 
-你提供的字符串输入 `$search`以及上面指出的可搜索属性都按空格、不同的大小写和字符类型(数字和特殊字符)划分为多个部分。
+你在 `$search` 中提供的字符串输入以及可搜索属性都按空格、不同的大小写和字符类型（数字和特殊字符）划分为多个部分。
 
 ## <a name="select-parameter"></a>select 参数
 
@@ -417,8 +427,9 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 ## <a name="skiptoken-parameter"></a>skipToken 参数
 
-由于服务器端分页或由于使用 [`$top`](#top-parameter) 参数来限制响应的页面大小，致使一些请求返回多页数据。许多 Microsoft Graph API 使用 `skipToken` 查询参数来引用结果的后续页面。`$skiptoken` 参数包含引用下一页结果的不透明令牌，并在响应的 `@odata.nextLink` 属性中提供的 URL 中返回。若要了解详细信息，请参阅[分页](./paging.md)。
-
+由于服务器端分页或由于使用 [`$top`](#top-parameter) 参数来限制响应的页面大小，致使一些请求返回多页数据。 许多 Microsoft Graph API 使用 `skipToken` 查询参数来引用结果的后续页面。  
+`$skiptoken` 参数包含引用下一页结果的不透明令牌，并在响应的 `@odata.nextLink` 属性中提供的 URL 中返回。 若要了解详细信息，请参阅[分页](./paging.md)。
+> **注意**：如果你使用的是 OData 计数（在查询字符串中添加 `$count=true`），则 `@odata.count` 属性将仅在第一页中出现。
 
 ## <a name="top-parameter"></a>top 参数
 
