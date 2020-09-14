@@ -4,12 +4,12 @@ description: 在 Microsoft Graph 中列出 Excel Api 的最佳实践和示例
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: ae790dea42e3ade46b74735ad826189a13a282d5
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: c113d162874c3121e97534b8d098d1c52a24fe77
+ms.sourcegitcommit: f26428bce3034e206b901e9c747cffcf64b55882
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630345"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47651293"
 ---
 # <a name="best-practices-for-working-with-the-excel-api-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Excel API 的最佳实践
 
@@ -124,7 +124,7 @@ Content-length: 0
 HTTP/1.1 204 No Content
 ```
 
-有关更多详细信息，请参阅[创建会话](/graph/api/workbook-createsession?view=graph-rest-1.0)和[关闭会话](/graph/api/workbook-closesession?view=graph-rest-1.0)。
+有关更多详细信息，请参阅 [创建会话](/graph/api/workbook-createsession?view=graph-rest-1.0) 和 [关闭会话](/graph/api/workbook-closesession?view=graph-rest-1.0)。
 
 ## <a name="working-with-apis-that-take-a-long-time-to-complete"></a>使用需要很长时间才能完成的 Api
 
@@ -190,7 +190,7 @@ Content-type: application/json
     "code": "internalServerError",
     "message": "An internal server error occurred while processing the request.",
     "innerError": {
-      "code": ""internalServerErrorUncategorized",
+      "code": "internalServerErrorUncategorized",
       "message": "An unspecified error has occurred.",
       "innerError": {
         "code": "GenericFileOpenError",
@@ -265,7 +265,7 @@ Content-type: application/json
 }
 ```
 
-有关错误的更多详细信息，请参阅[错误代码](/concepts/workbook-error-codes.md)
+有关错误的更多详细信息，请参阅 [错误代码](/concepts/workbook-error-codes.md)
 
 ### <a name="acquire-session-information"></a>获取会话信息
 
