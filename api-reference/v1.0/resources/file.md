@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: 文件
+title: 文件资源 thype
 localization_priority: Normal
 description: 文件资源将与文件相关的数据项分组到一个单一结构。
-ms.prod: ''
+ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: c316e3b09f00ffebd7ebfab5e47b49c7df3980d3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2d44d912116f517a67cce36811a1cacf59c32270
+ms.sourcegitcommit: f26428bce3034e206b901e9c747cffcf64b55882
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532958"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47651314"
 ---
 # <a name="file-resource-type"></a>File 资源类型
 
@@ -20,7 +19,8 @@ ms.locfileid: "42532958"
 
 **文件**资源将与文件相关的数据项分组到一个单一结构。
 
-如果 [**DriveItem**](driveitem.md) 具有一个非 null **文件**方面，则该项表示一个文件。除了其他属性，文件还具有**内容**关系，其中包含文件字节流。
+如果 [**DriveItem**](driveitem.md) 具有非 null **文件** facet，则该项目表示一个文件。
+除了其他属性，文件还具有 **content** 关系，其中包含文件字节流。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -41,7 +41,7 @@ ms.locfileid: "42532958"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型                    | 说明                                                                                                                                      |
+| 属性 | 类型                    | 描述                                                                                                                                      |
 |:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
 | 哈希   | [哈希](hashes.md) | 文件二进制内容的哈希值（如果可用）。只读。                                                                                    |
 | mimeType | string                  | 文件的 MIME 类型。这由服务器上的逻辑决定，不能是在上载文件时提供的值。只读。 |
