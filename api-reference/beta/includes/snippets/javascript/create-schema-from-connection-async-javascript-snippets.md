@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 4e3b538f8922b3a9f28e59bcd1d5a5b7359b00d5
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: 0a0be5918145f7b5471039eb8a80e045dd83eec2
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081723"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47938445"
 ---
 ```javascript
 
@@ -32,7 +32,6 @@ const schema = {
       type: "String",
       isQueryable: "true",
       isRetrievable: "true",
-      isRefinable: "true",
       isSearchable: "false"
     },
     {

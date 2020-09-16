@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5dc48df8356f20c9aa02b70914a41ac69a6c43ff
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 9f30312fb8230fcc44fe69ce6e6e54c2edd4af4a
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44685063"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47938416"
 ---
 ```csharp
 
@@ -20,7 +20,7 @@ var externalItem = new ExternalItem
             Type = AclType.User,
             Value = "49103559-feac-4575-8b94-254814dfca72",
             AccessType = AccessType.Deny,
-            IdentitySource = "Azure Active Directory"
+            IdentitySource = "azureActiveDirectory"
         }
     },
     Properties = new Properties

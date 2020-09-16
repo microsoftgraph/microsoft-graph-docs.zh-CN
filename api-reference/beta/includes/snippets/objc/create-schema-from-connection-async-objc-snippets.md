@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 944835343e8187459021bb5a7f6e93b87c1e9b50
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: 5b28ec43c7d2cdeb72e6b284788afc2d27cae2b3
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081725"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47938436"
 ---
 ```objc
 
@@ -34,7 +34,6 @@ MSGraphProperty *properties = [[MSGraphProperty alloc] init];
 [properties setType: [MSGraphPropertyType String]];
 [properties setIsQueryable:@"true"];
 [properties setIsRetrievable:@"true"];
-[properties setIsRefinable:@"true"];
 [properties setIsSearchable:@"false"];
 [propertiesList addObject: properties];
 MSGraphProperty *properties = [[MSGraphProperty alloc] init];

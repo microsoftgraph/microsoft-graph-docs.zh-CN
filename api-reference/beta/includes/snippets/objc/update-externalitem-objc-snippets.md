@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f9fe4afbf43c76dda61b2a51ca4d1abf99d2dbdd
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 354a137352c1a20815c8c37b763b2b6251666344
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994484"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47938402"
 ---
 ```objc
 
@@ -22,7 +22,7 @@ MSGraphAcl *acl = [[MSGraphAcl alloc] init];
 [acl setType: [MSGraphAclType user]];
 [acl setValue:@"49103559-feac-4575-8b94-254814dfca72"];
 [acl setAccessType: [MSGraphAccessType grant]];
-[acl setIdentitySource:@"Azure Active Directory"];
+[acl setIdentitySource:@"azureActiveDirectory"];
 [aclList addObject: acl];
 [externalItem setAcl:aclList];
 
