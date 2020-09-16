@@ -3,18 +3,18 @@ title: MSAL 提供程序
 description: MSAL 提供程序使用 MSAL.js 登录用户并获取令牌以用于 Microsoft Graph
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: df5a2e50a72c75a8a0af62e66d9bd73c3d428606
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: e66434a1000667891304db5f0cff78c4e8b38152
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845825"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843154"
 ---
 # <a name="msal-provider"></a>MSAL 提供程序
 
-MSAL 提供程序使用[MSAL.js](https://github.com/AzureAD/microsoft-authentication-library-for-js)登录用户并获取令牌以用于 Microsoft Graph。
+MSAL 提供程序使用 [MSAL.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) 登录用户并获取令牌以用于 Microsoft Graph。
 
-若要了解详细信息，请参阅[提供程序](../providers.md)。
+若要了解详细信息，请参阅 [提供程序](../providers.md)。
 
 ## <a name="get-started"></a>入门
 
@@ -22,7 +22,7 @@ MSAL 提供程序使用[MSAL.js](https://github.com/AzureAD/microsoft-authentica
 
 ### <a name="initialize-in-your-html-page"></a>在 HTML 页面中初始化
 
-若要在 HTML 中初始化 MSAL 提供程序，最简单的方法是创建新的提供程序。 使用 `mgt-msal-provider` 组件设置**客户端 id**和其他属性。 这将创建一个 `UserAgentApplication` 将用于所有身份验证和获取令牌的新实例。
+若要在 HTML 中初始化 MSAL 提供程序，最简单的方法是创建新的提供程序。 使用 `mgt-msal-provider` 组件设置 **客户端 id** 和其他属性。 这将创建一个 `UserAgentApplication` 将用于所有身份验证和获取令牌的新实例。
 
 ```html
 <mgt-msal-provider client-id="<YOUR_CLIENT_ID>"
@@ -34,7 +34,7 @@ MSAL 提供程序使用[MSAL.js](https://github.com/AzureAD/microsoft-authentica
 
 | 属性    | 说明                                                                                                                                                                                                                                                           |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 客户端 id    | 字符串客户端 ID （请参阅创建应用/客户端 ID）。 必填。                                                                                                                                                                                                           |
+| 客户端 id    | 字符串客户端 ID (请参阅创建应用/客户端 ID) 。 必需。                                                                                                                                                                                                           |
 | 登录类型   | `redirect`和 `popup` -默认值之间的枚举为 `redirect` 。 可选。                                                                                                                                                                                   |
 | scopes       | 用户必须同意登录时的作用域的逗号分隔字符串。 可选。                                                                                                                                                                                     |
 | 监管    | 颁发机构字符串-默认为常用证书颁发机构。 对于单租户应用，请使用租户 ID 或租户名称。 例如， `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` 或 `https://login.microsoftonline.com/[your-tenant-id]` 。 可选。 |
@@ -66,12 +66,12 @@ interface MsalConfig {
 }
 ```
 
-您必须提供 `clientId` （以创建新的 `UserAgentApplication` ）。
+您必须提供 `clientId` (才能创建新 `UserAgentApplication`) 。
 
-若要详细了解 MSAL.js 以及在初始化 MSAL 库时可使用的其他选项，请参阅[MSAL 文档](https://docs.microsoft.com/azure/active-directory/develop/msal-js-initializing-client-applications)。
+若要详细了解 MSAL.js 以及在初始化 MSAL 库时可使用的其他选项，请参阅 [MSAL 文档](https://docs.microsoft.com/azure/active-directory/develop/msal-js-initializing-client-applications)。
 
 ## <a name="creating-an-appclient-id"></a>创建应用/客户端 ID
 
-有关如何注册应用并获取客户端 ID 的详细信息，请参阅[注册应用程序快速入门](/azure/active-directory/develop/quickstart-register-app)。
+有关如何注册应用并获取客户端 ID 的详细信息，请参阅 [注册应用程序快速入门](/azure/active-directory/develop/quickstart-register-app)。
 
->**注意：** MSAL 仅支持 OAuth 的隐式流。 请确保在 Azure 门户中的应用程序中启用隐式流（默认情况下不启用）。 在 "**身份验证**" 下，找到 "**隐式授予**" 部分，然后选择 "**访问令牌**" 和**ID 令牌**的复选框。 若要使用公共证书颁发机构，请**在任何组织目录中设置帐户**。 若要使用特定租户，请在 `authority` 初始化过程中设置。
+>**注意：** MSAL 仅支持 OAuth 的隐式流。 请务必在 Azure 门户中的应用程序中启用隐式流， (默认情况下不启用它) 。 在 " **身份验证**" 下，找到 " **隐式授予** " 部分，然后选择 " **访问令牌** " 和 **ID 令牌**的复选框。 若要使用公共证书颁发机构，请 **在任何组织目录中设置帐户**。 若要使用特定租户，请在 `authority` 初始化过程中设置。

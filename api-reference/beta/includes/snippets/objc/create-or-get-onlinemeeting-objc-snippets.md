@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8711f1a5dddf88c49a9f066901112dc457f3b6d8
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: 8fb76f4adb0e1d295190f12f524a6fe5f2bfd9c3
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082371"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47842762"
 ---
 ```objc
 
@@ -19,7 +19,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
 MSGraphChatInfo *chatInfo = [[MSGraphChatInfo alloc] init];
-[chatInfo setThreadId:@"19%3A3b52398f3c524556894b776357c1dd79%40thread.skype"];
+[chatInfo setThreadId:@"19:7ebda77322dd4505ac4dedb5b67df076@thread.tacv2"];
 payloadDictionary[@"chatInfo"] = chatInfo;
 
 NSString *startDateTimeDateTimeString = @"02/06/2020 01:49:21";
@@ -34,24 +34,14 @@ NSString *externalId = @"7eb8263f-d0e0-4149-bb1c-1f0476083c56";
 payloadDictionary[@"externalId"] = externalId;
 
 MSGraphMeetingParticipants *participants = [[MSGraphMeetingParticipants alloc] init];
-MSGraphMeetingParticipantInfo *organizer = [[MSGraphMeetingParticipantInfo alloc] init];
-MSGraphIdentitySet *identity = [[MSGraphIdentitySet alloc] init];
-MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
-[user setId:@"d4a060b5-a8fc-450c-837b-750b2c280000"];
-[user setTenantId:@"72f988bf-86f1-41af-91ab-2d7cd0110000"];
-[identity setUser:user];
-[organizer setIdentity:identity];
-[organizer setUpn:@"test1@contoso.com"];
-[participants setOrganizer:organizer];
 NSMutableArray *attendeesList = [[NSMutableArray alloc] init];
 MSGraphMeetingParticipantInfo *attendees = [[MSGraphMeetingParticipantInfo alloc] init];
 MSGraphIdentitySet *identity = [[MSGraphIdentitySet alloc] init];
 MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [user setId:@"1f35f2e6-9cab-44ad-8d5a-b74c14720000"];
-[user setIdentityProvider:@"MSA"];
 [identity setUser:user];
 [attendees setIdentity:identity];
-[attendees setUpn:@"test@contoso.com"];
+[attendees setUpn:@"test1@contoso.com"];
 [attendeesList addObject: attendees];
 [participants setAttendees:attendeesList];
 payloadDictionary[@"participants"] = participants;

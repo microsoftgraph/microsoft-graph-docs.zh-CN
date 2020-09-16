@@ -1,16 +1,16 @@
 ---
 title: 'onlineMeeting: createOrGet'
-description: 使用自定义指定的外部 ID 创建联机会议。 如果已存在外部 ID，此 API 将返回具有该外部 ID 的 **onlineMeeting** 对象。
+description: 使用自定义指定的外部 ID 创建联机会议。 如果已存在外部 ID，此 API 将返回具有该外部 ID 的 onlineMeeting 对象。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d99a9ac98fd5fbb4ca5c96904831bb76c93b158c
-ms.sourcegitcommit: f26428bce3034e206b901e9c747cffcf64b55882
+ms.openlocfilehash: c66b3ccdf0ddc5e60b68b34c546193b8081d2c69
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47651321"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47842776"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting: createOrGet
 
@@ -26,34 +26,47 @@ ms.locfileid: "47651321"
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
-|:---------------------------------------|:--------------------------------------------|
+| :------------------------------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | OnlineMeetings.ReadWrite                    |
-| 委派（个人 Microsoft 帐户） | 不支持                               |
-| 应用程序                            | 不支持                |
+| 委派（个人 Microsoft 帐户） | 不支持。                              |
+| 应用程序                            | OnlineMeetings.ReadWrite.All*                |
+
+> [!IMPORTANT]
+> \* 管理员必须创建 [应用程序访问策略](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) 并将其授予用户，授权在该策略中配置的应用程序，以创建或获取一个外部 ID 代表该用户的联机会议， (用户 id 在请求路径) 中指定。
 
 ## <a name="http-request"></a>HTTP 请求
+
+使用委派令牌时的请求：
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/createOrGet
 ```
 
+使用应用程序令牌时请求：
+<!-- { "blockType": "ignored" } -->
+```http
+POST /users/{userId}/onlineMeetings/createOrGet
+```
+
+> **注意：** `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅 [应用程序访问策略](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md)。
+
 ## <a name="request-headers"></a>请求标头
-| 名称          | 说明               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}。必需。 |
+| 名称          | 说明                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}。必需。   |
 | Content-type  | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数        | 类型                                     |描述                                                                                                                                    |
-|:-----------------|:-----------------------------------------|:--------------------------------------------------------------------------|
-| chatInfo         |[chatInfo](../resources/chatinfo.md)                   |与此联机会议关联的聊天信息。|
-| endDateTime      | 日期时间                                 | 以 UTC 表示的会议结束时间。 |
-| externalId       | String                                   | 外部 ID。 自定义 ID。  (必需的)  |
-| participants     | [meetingParticipants](../resources/meetingparticipants.md)          | 与联机会议关联的参与者。  这包括组织者和与会者。 |
-| startDateTime    | 日期时间                                 | 以 UTC 表示的会议开始时间。 |
-| subject          | String                                   | 联机会议的主题。 |
+| 参数     | 类型                                                       | 说明                                                                                          |
+| :------------ | :--------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
+| chatInfo      | [chatInfo](../resources/chatinfo.md)                       | 与此联机会议关联的聊天信息。                                            |
+| endDateTime   | 日期时间                                                   | 以 UTC 表示的会议结束时间。                                                                         |
+| externalId    | String                                                     | 外部 ID。 自定义 ID。  (必需的)                                                              |
+| participants  | [meetingParticipants](../resources/meetingparticipants.md) | 与联机会议关联的参与者。  这包括组织者和与会者。 |
+| startDateTime | 日期时间                                                   | 以 UTC 表示的会议开始时间。                                                                       |
+| subject       | String                                                     | 联机会议的主题。                                                                   |
 
 > **注意：**
 >
@@ -74,6 +87,8 @@ POST /me/onlineMeetings/createOrGet
 
 #### <a name="request"></a>请求
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-or-get-onlinemeeting"
@@ -102,6 +117,20 @@ Content-Type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-or-get-onlinemeeting-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-or-get-onlinemeeting-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-or-get-onlinemeeting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>响应
 

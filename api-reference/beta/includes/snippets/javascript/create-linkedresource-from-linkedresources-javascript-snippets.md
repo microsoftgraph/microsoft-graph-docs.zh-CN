@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 1c1568a9fa7c71266bcd7c815986239f6a7845de
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 9df22a6ac2a23a9f466390a3e992407eeb96ada8
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873244"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843112"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const linkedResources = {
+const linkedResource = {
   @odata.type: "#microsoft.graph.linkedResource",
   webUrl: "http:://microsoft.com",
   applicationName: "Microsoft",
@@ -25,6 +25,6 @@ const linkedResources = {
 
 let res = await client.api('/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources')
     .version('beta')
-    .post(linkedResources);
+    .post(linkedResource);
 
 ```

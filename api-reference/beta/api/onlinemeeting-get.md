@@ -1,16 +1,16 @@
 ---
 title: 获取 onlineMeeting
-description: 检索 **联机会议** 对象的属性和关系。
+description: 检索 onlineMeeting 对象的属性和关系。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7aaf1c19a6da04b3ceca9124051f056af473c04f
-ms.sourcegitcommit: 7dcae492d8b4707d068adca3a74732e25a8198e7
+ms.openlocfilehash: 435a8fcd37a44d6d6a31de2c8ae4e10f67a75951
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47423658"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843273"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -20,34 +20,42 @@ ms.locfileid: "47423658"
 
 检索 [onlineMeeting](../resources/onlinemeeting.md) 对象的属性和关系。
 
-> **注意：**`GET`目前仅[VTC 会议 id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up)支持此方法。这些 Id 是为云-视频互操作许可的用户生成的，此方法用于获取加入会议的详细信息。
-
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权）           |
-|:---------------------------------------|:------------------------------------------------------|
+| :------------------------------------- | :---------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持。                                        |
 | 委派（个人 Microsoft 帐户） | 不支持。                                        |
-| 应用程序                            | OnlineMeetings.Read.All                               |
+| 应用程序                            | OnlineMeetings、OnlineMeetings 和所有 * |
+
+> [!IMPORTANT]
+> \* 管理员必须创建 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy.md) ，并向用户授予该策略中配置的应用程序，以代表该用户检索联机会议 (用户 ID 在请求路径) 中指定。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
+GET /users/{userId}/onlineMeetings/{meetingId}
 ```
-> **注意：**`/app` 路径已弃用。 今后将使用 `/communications` 路径。
+
+> **注意：**
+>
+> - 路径 `/app` 已弃用。 今后，请使用路径 `/communications`。
+> - `id` 在前两个路由中，是指 [VTC 会议 id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up)。
+> - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关更多详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy.md)。
+> - `meetingId`是[onlineMeeting 实体](../resources/onlinemeeting.md)的**id** 。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称          | 说明               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}。必需。 |
-| Accept-Language  | 语言。 可选。 |
+| 名称            | 说明               |
+| :-------------- | :------------------------ |
+| Authorization   | Bearer {token}。必需。 |
+| Accept-Language | 语言。 可选。       |
 
 如果请求包含 `Accept-Language` HTTP 标头，`joinInformation` 的 `content` 将采用 `Accept-Language` 标头中指定的语言和区域设置变量中。 默认内容将为英语。
 
