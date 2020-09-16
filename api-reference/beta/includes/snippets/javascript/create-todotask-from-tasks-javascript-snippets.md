@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: e781e5418c01fd411336376df490c2f088e1dc78
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 6fe8e2cfe9209894841be22912d8f84e5e724537
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873131"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843035"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const tasks = {
+const todoTask = {
   title:"A new task",
   linkedResources: [{
             webUrl: "http://microsoft.com",
@@ -26,6 +26,6 @@ const tasks = {
 
 let res = await client.api('/me/todo/lists/AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtM/tasks')
     .version('beta')
-    .post(tasks);
+    .post(todoTask);
 
 ```
