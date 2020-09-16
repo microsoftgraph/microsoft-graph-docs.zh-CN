@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 31f7b40b8f6c1f6de1fcaf6122c4311e5a65d016
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 0dc3c5f3021c5479ef3eb6f227d7fbe512e0c122
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792140"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843161"
 ---
 # <a name="update-teamsapp"></a>更新 teamsApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "46792140"
 | 权限类型                        | 权限（从最低特权到最高特权）|
 |:----------------------------------     |:-------------|
 | 委派（工作或学校帐户）     | AppCatalog、所有的目录读写。 |
-| 委派（工作或学校帐户） | AppCatalog|
+| 委派（工作或学校帐户） | AppCatalog.Submit|
 | 委派（个人 Microsoft 帐户） | 不支持|
 | 应用程序                            | 不支持。 |
 
@@ -40,12 +40,6 @@ ms.locfileid: "46792140"
 ```http
 POST /appCatalogs/teamsApps/{id}/appDefinitions
 ```
-
-## <a name="query-parameters"></a>查询参数
-
-|属性|类型|说明|
-|----|----|----|
-|requiresReview| 布尔值 | 此可选查询参数触发应用程序审阅过程。 具有管理员权限的用户无需触发评审即可提交应用程序。 如果用户希望在发布之前请求审阅，则必须将其设置  `requiresReview` 为 `true` 。 具有管理员权限的用户可以选择不设置 `requiresReview` 或设置值 `false`  ，并且应用将被视为 "已批准"，并将立即发布。|
 
 ## <a name="request-headers"></a>请求标头
 
@@ -97,67 +91,3 @@ Content-length: 244
 ```http
 HTTP/1.1 204 No Content
 ```
-
-### <a name="example-2-update-a-previously-reviewed-and-published-application-to-the-teams-app-catalog"></a>示例2：将以前查看和发布的应用程序更新到团队应用程序目录
-
-### <a name="request"></a>请求
-
-<!-- markdownlint-disable MD034 -->
-<!-- {
-  "blockType": "request",
-  "name": "update_teamsapp"
-}-->
-
-```http
-POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22/appDefinitions?requiresReview=true
-Content-type: application/zip
-Content-length: 244
-
-[Zip file containing a Teams app package]
-```
-
-### <a name="response"></a>响应
-
-如果成功，此方法 `201 Created` `publishingState` `submitted` 在响应正文中返回响应代码和键/值对：。 有关详细信息，请参阅 [teamsAppDefinition](../resources/teamsappdefinition.md)。
-
-<!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.teamsApp",
-  "truncated": true
-} -->
-
-```http
-HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22/appDefinitions/MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA==
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1/$metadata#appDefinition",
-    "@odata.etag": "158749010",
-    "id": "MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA==",
-    "teamsAppId": "e3e29acb-8c79-412b-b746-e6c39ff4cd22",
-    "displayName": "Test app",
-    "version": "1.0.11",
-    "azureADAppId": "a651cc7d-ec54-4fb2-9d0e-2c58dc830b0b",
-    "requiredResourceSpecificApplicationPermissions":[
-         "ChannelMessage.Read.Group",
-         "Channel.Create.Group",
-         "Tab.ReadWrite.Group",
-         "Member.Read.Group"
-    ],
-    "publishingState": "submitted",
-    "lastModifiedDateTime": "2020-02-10 22:48:33.841",
-}
-```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2020-08-08 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "teamsApp resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->

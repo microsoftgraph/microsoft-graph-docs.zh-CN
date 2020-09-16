@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 838fccb30041f61b7477bc53ced3c7d1d93e39a1
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 6aeef8c0faf1ab89b48d086839688e9ebe120efd
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808942"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843168"
 ---
 # <a name="publish-teamsapp"></a>发布 teamsapp
 
@@ -29,24 +29,13 @@ ms.locfileid: "46808942"
 |:----------------------------------     |:-------------|
 | 委派（工作或学校帐户）     | AppCatalog、所有的目录读写。 |
 | 委派（个人 Microsoft 帐户） | 不支持|
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /appCatalogs/teamsApps
 ```
-若要发布需要评审的应用程序，请执行以下操作：
-
-```http
-POST /appCatalogs/teamsApps?requiresReview:{Boolean}
-```
-
-## <a name="query-parameters"></a>查询参数
-
-|属性|类型|说明|
-|----|----|----|
-|requiresReview| 布尔值 | 此可选查询参数触发应用程序审阅过程。 具有管理员权限的用户无需触发评审即可提交应用程序。 如果用户希望在发布之前请求审阅，则必须将其设置  `requiresReview` 为 `true` 。 具有管理员权限的用户可以选择不设置 `requiresReview` 或设置值 `false`  ，并且应用将被视为 "已批准"，并将立即发布。|
 
 ## <a name="request-headers"></a>请求标头
 
@@ -94,54 +83,6 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "id": "e3e29acb-8c79-412b-b746-e6c39ff4cd22",
-  "externalId": "b5561ec9-8cab-4aa3-8aa2-d8d7172e4311",
-  "name": "Test App",
-  "version": "1.0.0",
-  "distributionMethod": "organization"
-}
-```
-### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a>示例2：将要审阅的新应用程序上载到组织的应用程序目录
-
-#### <a name="request"></a>请求
-
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_teamsapp"
-}-->
-
-```http
-POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?requiresReview=true
-Content-type: application/zip
-Content-length: 244
-```
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-teamsapp-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-teamsapp-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a>响应
-
-<!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.teamsApp",
-  "truncated": true
-} -->
-
-```http
-HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps/$entity",
   "id": "e3e29acb-8c79-412b-b746-e6c39ff4cd22",
   "externalId": "b5561ec9-8cab-4aa3-8aa2-d8d7172e4311",
   "name": "Test App",

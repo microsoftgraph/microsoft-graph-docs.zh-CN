@@ -5,18 +5,18 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 470af653190001623ea90f6afb7955a3727cceb5
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 613fab3adf4da1d3fd2f972818d0cee83db6f6cf
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808436"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843182"
 ---
 # <a name="driveitem-preview"></a>driveItem： preview
 
 命名空间：microsoft.graph
 
-此操作允许您获取项目的短生存期可嵌入 Url，以呈现临时预览。
+此操作允许您获取项目的短生存期可嵌入 URL，以便呈现临时预览。
 
 如果要获取持续生存期的可嵌入链接，请改用 [createLink][] API。
 
@@ -30,9 +30,9 @@ ms.locfileid: "46808436"
 
 | 权限类型                        | 权限（从最低特权到最高特权）
 |:---------------------------------------|:-------------------------------------------
-| 委派（工作或学校帐户）     | 文件. 读取、文件读写、全部、读写全部。
-| 委派（个人 Microsoft 帐户） | Read，文件. ReadWrite，全部文件。
-| Application                            | 不支持。
+| 委派（工作或学校帐户）     | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All
+| 委派（个人 Microsoft 帐户） | 不支持。
+| 应用程序                            | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -71,9 +71,9 @@ POST /shares/{shareId}/driveItem/preview
 
 | 名称           | 类型   | 说明
 |:---------------|:-------|:---------------------------------------------------
-| getUrl         | string | 适用于使用 HTTP GET (iframe 等嵌入的 URL ) 
-| postUrl        | string | 适合使用 HTTP POST (表单 post、JS 等进行嵌入的 URL ) 
-| postParameters | string | 如果使用 postUrl，则发布要包括的参数
+| getUrl         | 字符串 | 适用于使用 HTTP GET (iframe 等嵌入的 URL ) 
+| postUrl        | 字符串 | 适合使用 HTTP POST (表单 post、JS 等进行嵌入的 URL ) 
+| postParameters | 字符串 | 如果使用 postUrl，则发布要包括的参数
 
 根据指定选项的 embed 支持的当前状态，可能会返回 getUrl、postUrl 或 both。
 
