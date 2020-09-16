@@ -1,11 +1,11 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 6bba7fad557ac49a141a0a45301fa42b39a5e163
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: 031e6b0b1ade5820619084e52a9c174b46e32f50
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43935181"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47938466"
 ---
 ```javascript
 
@@ -22,7 +22,7 @@ const externalItem = {
       type: "user",
       value: "49103559-feac-4575-8b94-254814dfca72",
       accessType: "deny",
-      identitySource: "Azure Active Directory"
+      identitySource: "azureActiveDirectory"
     }
   ],
   properties: {
