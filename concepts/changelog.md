@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: d210a46682d425f702b040a39f40b133c0d14f94
-ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
+ms.openlocfilehash: c39b67352231924b826351248d208d2005dd8add
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47413266"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47843245"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -18,11 +18,12 @@ ms.locfileid: "47413266"
 
 ## <a name="september-2020"></a>2020 年 9 月
 
-### <a name="reports"></a>报告
+### <a name="cloud-communications"></a>云通信
 
-| **更改类型** | **版本** | **说明**                  |
-|:----------------|:------------|:-----------------------------------------|
-| 添加项        | Beta 和 v1.0 | 已将 **outlookM365** 和 **outlook2019** 属性添加到 [getEmailAppUsageVersionsUserCounts](/graph/api/resources/emailappusageversionsusercount?view=graph-rest-beta) 实体。|
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | beta 版本 | 已将 **lobbyBypassSettings**、 **isEntryExitAnnounced**"和 **allowedPresenters** 属性添加到 [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) 实体。|
+| 添加项 | beta | 添加了对 [onlineMeeting ](/graph/api/resources/onlinemeeting?view=graph-rest-beta)实体的应用程序权限的支持和关联的方法。 |
 
 ### <a name="devices-and-apps--cloud-printing"></a>设备和应用 | 云打印
 
@@ -35,6 +36,12 @@ ms.locfileid: "47413266"
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | beta | 已将**计划** 属性添加到权限管理中的[accessPackageAssignment](/graph/api/resources/accesspackageassignment?view=graph-rest-beta) 和 [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta)。|
+
+### <a name="reports"></a>报告
+
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 添加项        | Beta 和 v1.0 | 已将 **outlookM365** 和 **outlook2019** 属性添加到 [getEmailAppUsageVersionsUserCounts](/graph/api/resources/emailappusageversionsusercount?view=graph-rest-beta) 实体。|
 
 ### <a name="teamwork"></a>团队合作
 
@@ -75,7 +82,6 @@ ms.locfileid: "47413266"
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项 | Beta 和 v1.0 | 向 [call](/graph/api/resources/call) 实体添加了 **transcription** 属性。|
 | 添加项 | v1.0 | 向 [call](/graph/api/resources/call) 实体添加了 **cancelMediaProcessing** API。|
 | 添加项 | Beta 和 v1.0 | 向 [call](/graph/api/resources/call) 实体添加了 **transcription** 属性。|
 
@@ -1440,7 +1446,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 | 添加 | v1.0 | 添加了新的 [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) 资源。 这些联系人由组织管理，不同于[个人联系人](outlook-contacts-concept-overview.md)|
 | 添加项 | v1.0 | 添加了新的 [physicalOfficeAddress](/graph/api/resources/physicalOfficeAddress?view=graph-rest-1.0) 资源。 |
 | 添加 | v1.0 | 添加了新实体 [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-1.0)。 |
-| 添加项 | v1.0 | 添加了新的复杂类型 [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-1.0)。 |
+| 添加 | v1.0 | 添加了新的复杂类型 [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-1.0)。 |
 | 添加 | v1.0 | 在 [organization](/graph/api/resources/organization?view=graph-rest-1.0) 资源上为 **certificateBasedAuthConfiguration** 添加了新的关系。 这将支持 [Azure Active Directory 中基于证书的身份验证](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)。|
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>身份和访问 | 身份和登录
@@ -2664,7 +2670,7 @@ Microsoft 搜索现在公开了在 Microsoft Graph 中搜索和索引数据的�
 |更改|beta|更改了 [appleVpnConfiguration](/graph/api/resources/intune-deviceconfig-applevpnconfiguration?view=graph-rest-beta) 实体上的以下属性：<br/>将 **enablePerApp** 从必需更改为可选<br/>|
 |添加项|beta|向 [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta) 实体添加了 **disableProtectionOfManagedOutboundOpenInData** 和 **protectInboundDataFromUnknownSources** 属性|
 |添加项|beta|向 [deviceAppManagement](/graph/api/resources/intune-shared-deviceappmanagement?view=graph-rest-beta) 实体添加了 **microsoftStoreForBusinessPortalSelection** 属性|
-|添加项|beta|向 [iosCompliancePolicy](/graph/api/resources/intune-deviceconfig-ioscompliancepolicy?view=graph-rest-beta) 实体添加了 **passcodeMinutesOfInactivityBeforeScreenTimeout** 属性|
+|添加项|beta 版本|向 [iosCompliancePolicy](/graph/api/resources/intune-deviceconfig-ioscompliancepolicy?view=graph-rest-beta) 实体添加了 **passcodeMinutesOfInactivityBeforeScreenTimeout** 属性|
 |添加项|beta|向 [iosEasEmailProfileConfiguration](/graph/api/resources/intune-deviceconfig-ioseasemailprofileconfiguration?view=graph-rest-beta) 实体添加了 **useOAuth** 属性|
 |添加项|beta|向 [iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration?view=graph-rest-beta) 实体添加了 **kioskModeBlockVolumeButtons**、**classroomForceRequestPermissionToLeaveClasses**、**keychainBlockCloudSync**、**pkiBlockOTAUpdates**、**privacyForceLimitAdTracking**、**enterpriseBookBlockBackup**、**enterpriseBookBlockMetadataSync**、**airPrintBlocked**、**airPrintBlockCredentialsStorage**、**airPrintForceTrustedTLS**、**airPrintBlockiBeaconDiscovery**、**blockSystemAppRemoval** 和 **vpnBlockCreation** 属性|
 |Addition|beta|向 [iosManagedAppProtection](/graph/api/resources/intune-mam-iosmanagedappprotection?view=graph-rest-beta) 实体添加了 **disableProtectionOfManagedOutboundOpenInData** 和 **protectInboundDataFromUnknownSources** 属性|

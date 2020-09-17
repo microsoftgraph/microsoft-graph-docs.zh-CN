@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: Microsoft Graph 新增功能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 8784f43683578c3dfd730f5bf08e2d4e84abed57
-ms.sourcegitcommit: f4e95b6e06dedeca0aa6b27e8ad1c655b1d45fec
+ms.openlocfilehash: 7d1fa2979084ac901c26b1f4e5da5994b9c39874
+ms.sourcegitcommit: f26428bce3034e206b901e9c747cffcf64b55882
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47448437"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47651301"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -23,7 +23,7 @@ ms.locfileid: "47448437"
 [获取含 Outlook 2019 和 Outlook for Microsoft 365 唯一用户的计数报告](/graph/api/reportroot-getemailappusageversionsusercounts)。
 
 ### <a name="users"></a>用户
-除通过 "**邮件** 属性" 获取 [用户](/graph/api/resources/user) 的 SMTP 地址之外，你现在可以设置该属性并更新用户的电子邮件地址。 
+除通过“**邮件**属性” 获取[用户](/graph/api/resources/user) 的 SMTP 地址之外，你现在可以设置该属性并更新用户的电子邮件地址。 
 
 ## <a name="september-2020-new-in-preview-only"></a>2020 年 9 月：仅限预览版的新增功能
 
@@ -48,7 +48,7 @@ ms.locfileid: "47448437"
 
 ### <a name="cloud-communications"></a>云通信
 - [取消](/graph/api/call-cancelmediaprocessing)流程或队列中的任何交互式语音响应 (VR) 操作，这些操作可以是[播放音频提示](/graph/api/call-playprompt)或[录制响应](/graph/api/call-record)。
-- 通过 **transciption** 属性[调用听录信息](/graph/api/resources/calltranscriptioninfo)。
+- 通过“**听录**”属性[调用听录信息](/graph/api/resources/calltranscriptioninfo)。
 
 ### <a name="teamwork"></a>团队合作
 - 使用另一种方法，无需创建组即可直接[创建团队](/graph/api/team-post)。
