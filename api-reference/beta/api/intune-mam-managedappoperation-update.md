@@ -3,35 +3,35 @@ title: 更新 managedAppOperation
 description: 更新 managedAppOperation 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 66b951399428998c3881c67b3cf04b9462f0c909
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a45946b63c913bd06a696a706ffaab7a32e65fac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455863"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986376"
 ---
-# <a name="update-managedappoperation"></a><span data-ttu-id="e5256-103">更新 managedAppOperation</span><span class="sxs-lookup"><span data-stu-id="e5256-103">Update managedAppOperation</span></span>
+# <a name="update-managedappoperation"></a><span data-ttu-id="a57b1-103">更新 managedAppOperation</span><span class="sxs-lookup"><span data-stu-id="a57b1-103">Update managedAppOperation</span></span>
 
-<span data-ttu-id="e5256-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e5256-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a57b1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a57b1-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="e5256-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="e5256-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="a57b1-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="a57b1-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="e5256-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="e5256-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="a57b1-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="a57b1-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e5256-107">更新 [managedAppOperation](../resources/intune-mam-managedappoperation.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="e5256-107">Update the properties of a [managedAppOperation](../resources/intune-mam-managedappoperation.md) object.</span></span>
+<span data-ttu-id="a57b1-107">更新 [managedAppOperation](../resources/intune-mam-managedappoperation.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="a57b1-107">Update the properties of a [managedAppOperation](../resources/intune-mam-managedappoperation.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="e5256-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="e5256-108">Prerequisites</span></span>
-<span data-ttu-id="e5256-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e5256-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="a57b1-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="a57b1-108">Prerequisites</span></span>
+<span data-ttu-id="a57b1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a57b1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e5256-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="e5256-111">Permission type</span></span>|<span data-ttu-id="e5256-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="e5256-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="a57b1-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="a57b1-111">Permission type</span></span>|<span data-ttu-id="a57b1-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="a57b1-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="e5256-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e5256-113">Delegated (work or school account)</span></span>|<span data-ttu-id="e5256-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e5256-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="e5256-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e5256-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e5256-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="e5256-116">Not supported.</span></span>|
-|<span data-ttu-id="e5256-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="e5256-117">Application</span></span>|<span data-ttu-id="e5256-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e5256-118">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="a57b1-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a57b1-113">Delegated (work or school account)</span></span>|<span data-ttu-id="a57b1-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a57b1-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="a57b1-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a57b1-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a57b1-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="a57b1-116">Not supported.</span></span>|
+|<span data-ttu-id="a57b1-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="a57b1-117">Application</span></span>|<span data-ttu-id="a57b1-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a57b1-118">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e5256-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e5256-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a57b1-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a57b1-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,34 +40,34 @@ ms.locfileid: "43455863"
 PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{managedAppOperationId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e5256-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="e5256-120">Request headers</span></span>
-|<span data-ttu-id="e5256-121">标头</span><span class="sxs-lookup"><span data-stu-id="e5256-121">Header</span></span>|<span data-ttu-id="e5256-122">值</span><span class="sxs-lookup"><span data-stu-id="e5256-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a57b1-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="a57b1-120">Request headers</span></span>
+|<span data-ttu-id="a57b1-121">标头</span><span class="sxs-lookup"><span data-stu-id="a57b1-121">Header</span></span>|<span data-ttu-id="a57b1-122">值</span><span class="sxs-lookup"><span data-stu-id="a57b1-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="e5256-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e5256-123">Authorization</span></span>|<span data-ttu-id="e5256-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="e5256-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="e5256-125">接受</span><span class="sxs-lookup"><span data-stu-id="e5256-125">Accept</span></span>|<span data-ttu-id="e5256-126">application/json</span><span class="sxs-lookup"><span data-stu-id="e5256-126">application/json</span></span>|
+|<span data-ttu-id="a57b1-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="a57b1-123">Authorization</span></span>|<span data-ttu-id="a57b1-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="a57b1-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="a57b1-125">接受</span><span class="sxs-lookup"><span data-stu-id="a57b1-125">Accept</span></span>|<span data-ttu-id="a57b1-126">application/json</span><span class="sxs-lookup"><span data-stu-id="a57b1-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e5256-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="e5256-127">Request body</span></span>
-<span data-ttu-id="e5256-128">在请求正文中，提供 [managedAppOperation](../resources/intune-mam-managedappoperation.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e5256-128">In the request body, supply a JSON representation for the [managedAppOperation](../resources/intune-mam-managedappoperation.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a57b1-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="a57b1-127">Request body</span></span>
+<span data-ttu-id="a57b1-128">在请求正文中，提供 [managedAppOperation](../resources/intune-mam-managedappoperation.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a57b1-128">In the request body, supply a JSON representation for the [managedAppOperation](../resources/intune-mam-managedappoperation.md) object.</span></span>
 
-<span data-ttu-id="e5256-129">下表显示创建 [managedAppOperation](../resources/intune-mam-managedappoperation.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="e5256-129">The following table shows the properties that are required when you create the [managedAppOperation](../resources/intune-mam-managedappoperation.md).</span></span>
+<span data-ttu-id="a57b1-129">下表显示创建 [managedAppOperation](../resources/intune-mam-managedappoperation.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="a57b1-129">The following table shows the properties that are required when you create the [managedAppOperation](../resources/intune-mam-managedappoperation.md).</span></span>
 
-|<span data-ttu-id="e5256-130">属性</span><span class="sxs-lookup"><span data-stu-id="e5256-130">Property</span></span>|<span data-ttu-id="e5256-131">类型</span><span class="sxs-lookup"><span data-stu-id="e5256-131">Type</span></span>|<span data-ttu-id="e5256-132">说明</span><span class="sxs-lookup"><span data-stu-id="e5256-132">Description</span></span>|
+|<span data-ttu-id="a57b1-130">属性</span><span class="sxs-lookup"><span data-stu-id="a57b1-130">Property</span></span>|<span data-ttu-id="a57b1-131">类型</span><span class="sxs-lookup"><span data-stu-id="a57b1-131">Type</span></span>|<span data-ttu-id="a57b1-132">说明</span><span class="sxs-lookup"><span data-stu-id="a57b1-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e5256-133">displayName</span><span class="sxs-lookup"><span data-stu-id="e5256-133">displayName</span></span>|<span data-ttu-id="e5256-134">String</span><span class="sxs-lookup"><span data-stu-id="e5256-134">String</span></span>|<span data-ttu-id="e5256-135">操作名称。</span><span class="sxs-lookup"><span data-stu-id="e5256-135">The operation name.</span></span>|
-|<span data-ttu-id="e5256-136">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="e5256-136">lastModifiedDateTime</span></span>|<span data-ttu-id="e5256-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e5256-137">DateTimeOffset</span></span>|<span data-ttu-id="e5256-138">上次修改应用操作的时间。</span><span class="sxs-lookup"><span data-stu-id="e5256-138">The last time the app operation was modified.</span></span>|
-|<span data-ttu-id="e5256-139">state</span><span class="sxs-lookup"><span data-stu-id="e5256-139">state</span></span>|<span data-ttu-id="e5256-140">String</span><span class="sxs-lookup"><span data-stu-id="e5256-140">String</span></span>|<span data-ttu-id="e5256-141">操作的当前状态</span><span class="sxs-lookup"><span data-stu-id="e5256-141">The current state of the operation</span></span>|
-|<span data-ttu-id="e5256-142">id</span><span class="sxs-lookup"><span data-stu-id="e5256-142">id</span></span>|<span data-ttu-id="e5256-143">字符串</span><span class="sxs-lookup"><span data-stu-id="e5256-143">String</span></span>|<span data-ttu-id="e5256-144">实体的键。</span><span class="sxs-lookup"><span data-stu-id="e5256-144">Key of the entity.</span></span>|
-|<span data-ttu-id="e5256-145">version</span><span class="sxs-lookup"><span data-stu-id="e5256-145">version</span></span>|<span data-ttu-id="e5256-146">String</span><span class="sxs-lookup"><span data-stu-id="e5256-146">String</span></span>|<span data-ttu-id="e5256-147">实体的版本。</span><span class="sxs-lookup"><span data-stu-id="e5256-147">Version of the entity.</span></span>|
+|<span data-ttu-id="a57b1-133">displayName</span><span class="sxs-lookup"><span data-stu-id="a57b1-133">displayName</span></span>|<span data-ttu-id="a57b1-134">String</span><span class="sxs-lookup"><span data-stu-id="a57b1-134">String</span></span>|<span data-ttu-id="a57b1-135">操作名称。</span><span class="sxs-lookup"><span data-stu-id="a57b1-135">The operation name.</span></span>|
+|<span data-ttu-id="a57b1-136">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="a57b1-136">lastModifiedDateTime</span></span>|<span data-ttu-id="a57b1-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a57b1-137">DateTimeOffset</span></span>|<span data-ttu-id="a57b1-138">上次修改应用操作的时间。</span><span class="sxs-lookup"><span data-stu-id="a57b1-138">The last time the app operation was modified.</span></span>|
+|<span data-ttu-id="a57b1-139">state</span><span class="sxs-lookup"><span data-stu-id="a57b1-139">state</span></span>|<span data-ttu-id="a57b1-140">String</span><span class="sxs-lookup"><span data-stu-id="a57b1-140">String</span></span>|<span data-ttu-id="a57b1-141">操作的当前状态</span><span class="sxs-lookup"><span data-stu-id="a57b1-141">The current state of the operation</span></span>|
+|<span data-ttu-id="a57b1-142">id</span><span class="sxs-lookup"><span data-stu-id="a57b1-142">id</span></span>|<span data-ttu-id="a57b1-143">String</span><span class="sxs-lookup"><span data-stu-id="a57b1-143">String</span></span>|<span data-ttu-id="a57b1-144">实体的键。</span><span class="sxs-lookup"><span data-stu-id="a57b1-144">Key of the entity.</span></span>|
+|<span data-ttu-id="a57b1-145">version</span><span class="sxs-lookup"><span data-stu-id="a57b1-145">version</span></span>|<span data-ttu-id="a57b1-146">String</span><span class="sxs-lookup"><span data-stu-id="a57b1-146">String</span></span>|<span data-ttu-id="a57b1-147">实体的版本。</span><span class="sxs-lookup"><span data-stu-id="a57b1-147">Version of the entity.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="e5256-148">响应</span><span class="sxs-lookup"><span data-stu-id="e5256-148">Response</span></span>
-<span data-ttu-id="e5256-149">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [managedAppOperation](../resources/intune-mam-managedappoperation.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="e5256-149">If successful, this method returns a `200 OK` response code and an updated [managedAppOperation](../resources/intune-mam-managedappoperation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="a57b1-148">响应</span><span class="sxs-lookup"><span data-stu-id="a57b1-148">Response</span></span>
+<span data-ttu-id="a57b1-149">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [managedAppOperation](../resources/intune-mam-managedappoperation.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="a57b1-149">If successful, this method returns a `200 OK` response code and an updated [managedAppOperation](../resources/intune-mam-managedappoperation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e5256-150">示例</span><span class="sxs-lookup"><span data-stu-id="e5256-150">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a57b1-150">示例</span><span class="sxs-lookup"><span data-stu-id="a57b1-150">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="e5256-151">请求</span><span class="sxs-lookup"><span data-stu-id="e5256-151">Request</span></span>
-<span data-ttu-id="e5256-152">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e5256-152">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="a57b1-151">请求</span><span class="sxs-lookup"><span data-stu-id="a57b1-151">Request</span></span>
+<span data-ttu-id="a57b1-152">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a57b1-152">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{managedAppOperationId}
 Content-type: application/json
@@ -81,8 +81,8 @@ Content-length: 159
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="e5256-153">响应</span><span class="sxs-lookup"><span data-stu-id="e5256-153">Response</span></span>
-<span data-ttu-id="e5256-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e5256-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="a57b1-153">响应</span><span class="sxs-lookup"><span data-stu-id="a57b1-153">Response</span></span>
+<span data-ttu-id="a57b1-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a57b1-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -97,6 +97,9 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
+
+
 
 
 
