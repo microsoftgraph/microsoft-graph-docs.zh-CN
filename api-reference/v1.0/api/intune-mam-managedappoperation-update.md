@@ -3,14 +3,14 @@ title: 更新 managedAppOperation
 description: 更新 managedAppOperation 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 19904908a94bd56fa2f454dae5099b3b1bd4754b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c2750cfb36136e9d3b0b91828dd01b0e9b934c0e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43399064"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965965"
 ---
 # <a name="update-managedappoperation"></a>更新 managedAppOperation
 
@@ -54,7 +54,7 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 |displayName|String|操作名称。|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用操作的时间。|
 |state|String|操作的当前状态|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |version|String|实体的版本。|
 
 
@@ -95,6 +95,9 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
+
+
 
 
 

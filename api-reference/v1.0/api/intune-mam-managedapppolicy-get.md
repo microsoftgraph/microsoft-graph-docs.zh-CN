@@ -3,14 +3,14 @@ title: 获取 managedAppPolicy
 description: 读取 managedAppPolicy 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7c2bb4b6b9db1ba919c7407c42a381a49ee8af12
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ff738d62e94a5f41f016a07a0f30a77e60f30e06
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43399057"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965958"
 ---
 # <a name="get-managedapppolicy"></a>获取 managedAppPolicy
 
@@ -82,6 +82,9 @@ Content-Length: 373
   }
 }
 ```
+
+
+
 
 
 

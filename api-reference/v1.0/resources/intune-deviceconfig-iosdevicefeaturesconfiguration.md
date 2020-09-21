@@ -3,14 +3,14 @@ title: iosDeviceFeaturesConfiguration 资源类型
 description: iOS 设备功能配置的配置文件。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8d608670057f162693192966263e4a24bf9f770b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 68cbb51aff6244b5558f12adbc5d28e3040f30ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407063"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967595"
 ---
 # <a name="iosdevicefeaturesconfiguration-resource-type"></a>iosDeviceFeaturesConfiguration 资源类型
 
@@ -35,11 +35,11 @@ iOS 设备功能配置的配置文件。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assetTagTemplate|String|设备的资产标签信息，显示在登录窗口和锁定屏幕上。|
 |lockScreenFootnote|String|显示在登录窗口和锁定屏幕上的脚注。 在 iOS 9.3.1 及更高版本中可用。|
@@ -136,6 +136,8 @@ iOS 设备功能配置的配置文件。
   ]
 }
 ```
+
+
 
 
 

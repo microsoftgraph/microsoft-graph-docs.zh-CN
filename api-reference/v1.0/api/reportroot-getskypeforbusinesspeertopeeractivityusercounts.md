@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: d911e3f6b95db619af6f22568470261859782e76
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: f7181510c708e10a938cb3e85cc912429f76e5d6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897629"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967766"
 ---
 # <a name="reportroot-getskypeforbusinesspeertopeeractivityusercounts"></a>reportRoot: getSkypeForBusinessPeerToPeerActivityUserCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "44897629"
 
 获取使用情况趋势，即组织中召开的对等会话的唯一用户数和类型。 对等会话类型包括 IM、音频、视频、应用共享和文件传输。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅[Microsoft 365 reports-Skype For business 对等活动](https://docs.microsoft.com/skypeforbusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)。
+> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 reports-Skype For business 对等活动](https://docs.microsoft.com/skypeforbusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)。
 
 ## <a name="permissions"></a>权限
 
@@ -30,7 +30,7 @@ ms.locfileid: "44897629"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
-**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 For api 以读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
+**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -128,3 +128,4 @@ Report Refresh Date,Report Date,Report Period,IM,Audio,Video,App Sharing,File Tr
   "suppressions": [
   ]
 }-->
+

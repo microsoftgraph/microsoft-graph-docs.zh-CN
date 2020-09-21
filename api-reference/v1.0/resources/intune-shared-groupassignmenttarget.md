@@ -3,14 +3,14 @@ title: groupAssignmentTarget 资源类型
 description: 表示组的赋值。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4467c312581307a6603f5c83e4aa2e4e7fa1fa8b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e46297a1670136ffc1c7de07c4e4640121a50434
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445708"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967504"
 ---
 # <a name="groupassignmenttarget-resource-type"></a>groupAssignmentTarget 资源类型
 
@@ -44,6 +44,8 @@ ms.locfileid: "43445708"
   "groupId": "String"
 }
 ```
+
+
 
 
 

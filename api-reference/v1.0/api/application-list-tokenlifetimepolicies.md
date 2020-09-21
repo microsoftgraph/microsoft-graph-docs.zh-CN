@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f7b9d70054cc3d0b578917f9b98f8c1083558833
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 17b6502323b62603c119fa04137d46b0ffef770c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43510538"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966441"
 ---
 # <a name="list-assigned-tokenlifetimepolicy"></a>列表已分配 tokenLifetimePolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "43510538"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy. All 和 ApplicationConfiguration 和应用程序的所有读写全部。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Policy. All 和 Application.readwrite.ownedby、Application.readwrite.ownedby、ApplicationConfiguration 和、、ApplicationConfiguration 和应用程序的、、和和的所有应用程序中的 |
+| 应用程序                            | Policy. All 和 Application.readwrite.ownedby、Application.readwrite.ownedby、ApplicationConfiguration 和、、ApplicationConfiguration 和应用程序的、、和和的所有应用程序中的 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ GET /applications/{id}/tokenLifetimePolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[tokenLifetimePolicy](../resources/tokenlifetimepolicy.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -127,3 +127,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

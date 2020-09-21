@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: ”列表”资源代表网站中的列表。
 doc_type: resourcePageType
-ms.openlocfilehash: a63f4bdbf3ef8290a9295bc0ecb9abdee5452b45
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: c84ae2e54e0b319467951ad6fb65a419b65c013d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108443"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967441"
 ---
 # <a name="list-resource"></a>List 资源
 
@@ -154,3 +154,4 @@ ms.locfileid: "43108443"
     "Lists": "#"
   }
 } -->
+

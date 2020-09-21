@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a33da99187ba8d8bbc64ea119dd3c3a13491a92e
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: e0450d4bdb35978fcb1f7b375babd6900f11b88d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108408"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967749"
 ---
 # <a name="user-checkmemberobjects"></a>用户： checkMemberObjects
 
@@ -26,7 +26,7 @@ ms.locfileid: "43108408"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | User.readbasic.all、所有用户读写全部。 All<br><br>此外：<br><br><ul><li>如果检查组中的成员身份： Group. All、Group. ReadWrite。 All</li><li>如果检查管理单元的成员身份： AdministrativeUnit、AdministrativeUnit</li><li>如果检查目录角色中的成员身份： RoleManagement 和目录角色： RoleManagement</li></ul>Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All  |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | User.readbasic.all、所有用户读写全部。 All<br>并<ul><li>如果检查组中的成员身份： Group. All、Group. ReadWrite。 All</li><li>如果检查管理单元的成员身份： AdministrativeUnit、AdministrativeUnit</li><li>如果检查目录角色中的成员身份： RoleManagement 和目录角色： RoleManagement</li></ul>Directory.Read.All、Directory.ReadWrite.All |
+| 应用程序                            | User.readbasic.all、所有用户读写全部。 All<br>并<ul><li>如果检查组中的成员身份： Group. All、Group. ReadWrite。 All</li><li>如果检查管理单元的成员身份： AdministrativeUnit、AdministrativeUnit</li><li>如果检查目录角色中的成员身份： RoleManagement 和目录角色： RoleManagement</li></ul>Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ POST /users/{id}/checkMemberObjects
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和新的 String collection 对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 String collection 对象。
 
 ## <a name="examples"></a>示例
 
@@ -136,3 +136,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

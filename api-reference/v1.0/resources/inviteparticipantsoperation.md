@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 54223a5b9e807dc45a9868b3251b8d8b1a0fcd72
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7e729a572ceb69f59ed6cc00cd0a2e132765ed8a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447687"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967490"
 ---
 # <a name="inviteparticipantsoperation-resource-type"></a>inviteParticipantsOperation 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 表示长时间运行的参与者邀请操作的状态，通过调用参与者-邀请 API 触发。
 
@@ -26,7 +26,7 @@ ms.locfileid: "42447687"
 | id                             | String                      | 服务器操作 id。只读。                                                                                              |
 | participants | [invitationParticipantInfo](invitationParticipantInfo.md) 集合 | 要邀请的参与者。 |
 | resultInfo                     | [resultInfo](resultinfo.md) | 结果信息。  只读。                                                                                             |
-| status                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                  |
+| 状态                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -59,3 +59,4 @@ ms.locfileid: "42447687"
   "tocPath": "",
   "suppressions": []
 }-->
+

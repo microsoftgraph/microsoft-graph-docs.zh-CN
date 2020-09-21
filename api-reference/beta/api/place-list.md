@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fea5be249ae7d5494637410794987c5b554e2b1d
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 38af98443e34ec64cdaa70316966451c4a58eb16
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290073"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966915"
 ---
 # <a name="list-places"></a>列表位置
 
@@ -18,18 +18,18 @@ ms.locfileid: "44290073"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取在租户中定义的指定类型的[位置](../resources/place.md)对象的集合。 例如，您可以获取租户中的所有会议室、所有会议室列表或特定会议室列表中的会议室。
+获取在租户中定义的指定类型的 [位置](../resources/place.md) 对象的集合。 例如，您可以获取租户中的所有会议室、所有会议室列表或特定会议室列表中的会议室。
 
 **Place**对象可以是下列类型之一：
 
-* 包含丰富属性（如聊天室的电子邮件地址、辅助功能、容量和设备支持）的[会议室](../resources/room.md)。 
-* 包含会议室列表的电子邮件地址的[会议室列表](../resources/roomlist.md)，以及用于获取会议室列表中的会议室实例集合的导航属性。 
+* 包含丰富属性（如聊天室的电子邮件地址、辅助功能、容量和设备支持）的 [会议室](../resources/room.md) 。 
+* 包含会议室列表的电子邮件地址的 [会议室列表](../resources/roomlist.md) ，以及用于获取会议室列表中的会议室实例集合的导航属性。 
 
 **聊天室**和**roomList**均派生自**place**对象。
 
 默认情况下，此操作返回每页100个位置。 
 
-与[findRooms](../api/user-findrooms.md)和[findRoomLists](../api/user-findroomlists.md)函数相比，此操作为聊天室和会议室列表返回更丰富的有效负载。 有关比较的详细信息，请参阅[详细信息](../resources/place.md#using-the-places-api)。
+与 [findRooms](../api/user-findrooms.md) 和 [findRoomLists](../api/user-findroomlists.md) 函数相比，此操作为聊天室和会议室列表返回更丰富的有效负载。 有关比较的详细信息，请参阅 [详细信息](../resources/place.md#using-the-places-api) 。
 
 ## <a name="permissions"></a>权限
 
@@ -63,7 +63,7 @@ GET /places/microsoft.graph.roomlist
 GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 ```
 
->**注意**：若要获取会议室列表中的聊天室，必须按其**emailAddress**属性（而不是**id**）指定会议室列表。 
+>**注意**：若要获取会议室列表中的聊天室，必须按其 **emailAddress** 属性（而不是 **id**）指定会议室列表。 
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持以下查询参数来帮助自定义响应：
@@ -75,7 +75,7 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 
 使用 $top 自定义页面大小。 默认页面大小是 100。
 
-有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -89,7 +89,7 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[place](../resources/place.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [place](../resources/place.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -97,7 +97,7 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 
 #### <a name="request"></a>请求
 
-下面的示例演示如何获取租户中的所有[聊天室](../resources/room.md)对象。
+下面的示例演示如何获取租户中的所有 [聊天室](../resources/room.md) 对象。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -127,7 +127,7 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -215,7 +215,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面的示例演示如何获取租户中的所有[roomList](../resources/roomlist.md)对象。
+下面的示例演示如何获取租户中的所有 [roomList](../resources/roomlist.md) 对象。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -245,7 +245,7 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
 
 下面展示了示例响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -393,3 +393,5 @@ Content-type: application/json
     "Error: Malformed function params 'id-of-roomlist'"
   ]
 }-->
+
+

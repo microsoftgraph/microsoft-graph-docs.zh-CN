@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f77b02c25e0342656af0d33f59d38191dcccc46e
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 4ba60b3008bcab8afb6136f3a9848e8ffb0dc6a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330101"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966392"
 ---
 # <a name="call-cancelmediaprocessing"></a>调用： cancelMediaProcessing
 
@@ -179,3 +179,4 @@ Content-Type: application/json
   ]
 }
 -->
+

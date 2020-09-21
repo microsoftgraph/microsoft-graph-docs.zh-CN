@@ -3,14 +3,14 @@ title: 删除 roleAssignment
 description: 删除 roleAssignment。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a89391e8f1c95028133fbf03ed35a420f8425291
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 07d7f6c76b0628554a7a05df7a61971246c5b670
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465979"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965846"
 ---
 # <a name="delete-roleassignment"></a>删除 roleAssignment
 
@@ -63,6 +63,9 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions/{roleDe
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

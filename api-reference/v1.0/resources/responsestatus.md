@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 77adc43ef3485f7fcf42a8c1c77edc5d123a3424
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 69aae664c21290d00505997d5ff84658620d67e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812658"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967210"
 ---
 # <a name="responsestatus-resource-type"></a>responseStatus 资源类型
 
@@ -53,3 +53,4 @@ ms.locfileid: "46812658"
   "section": "documentation",
   "tocPath": ""
 }-->
+

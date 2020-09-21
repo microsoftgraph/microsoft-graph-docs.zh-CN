@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: azure-ad
 doc_type: resourcePageType
-ms.openlocfilehash: 13d377f05650f50f9f87f618ca1c9c07d1da70ee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d98d0aaa4850e8ef2b82f9f5deb17424c3ab98d3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534221"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967378"
 ---
 # <a name="modifiedproperty-resource-type"></a>modifiedProperty 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "42534221"
 |:---------------|:--------|:----------|
 |displayName|String|指示已更改的目标属性的属性名称。|
 |NewValue|String|指示值的更新值。|
-|oldValue|字符串|指示属性的前一个值（在更新之前）。|
+|oldValue|String|指示属性的 update) 之前 (以前的值。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -55,3 +55,4 @@ ms.locfileid: "42534221"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: eb85ea8e1759dc948f764b391e25a51b97090566
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 51806154a36433ee054250bc1c306b64953a8766
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447372"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967371"
 ---
 # <a name="muteparticipantoperation-resource-type"></a>MuteParticipantOperation 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 描述呼叫参与者静音操作的响应格式。
 
@@ -25,7 +25,7 @@ ms.locfileid: "42447372"
 | 适用                  | String                      | 唯一的客户端上下文字符串。 最多可以有256个字符。                                                                               |
 | id                             | String                      | 服务器操作 ID。 只读。                                                                                            |
 | resultInfo                     | [resultInfo](resultinfo.md) | 结果信息。  只读。                                                                                            |
-| status                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                 |
+| 状态                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                 |
 
 ## <a name="relationships"></a>关系
 无。
@@ -59,3 +59,4 @@ ms.locfileid: "42447372"
   "section": "documentation",
   "tocPath": ""
 }-->
+

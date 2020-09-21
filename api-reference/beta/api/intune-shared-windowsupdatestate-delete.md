@@ -3,24 +3,24 @@ title: 删除 windowsUpdateState
 description: 删除 windowsUpdateState。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dda36872332e6a957a7315df26a114dfbafd0062
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c6a7c9d4b2b08db57d3c25f6d4d3e7d9d46435a8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456212"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967022"
 ---
 # <a name="delete-windowsupdatestate"></a>删除 windowsUpdateState
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)。
+删除 [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,11 +29,11 @@ ms.locfileid: "43456212"
 |:---|:---|
 |委派（工作或学校帐户）||
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp;&nbsp; **软件更新** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp;&nbsp;**软件更新** | DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp;&nbsp; **软件更新** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp;&nbsp;**软件更新** | DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -69,6 +69,9 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

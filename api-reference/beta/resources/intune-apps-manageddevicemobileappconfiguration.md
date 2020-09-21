@@ -3,20 +3,20 @@ title: managedDeviceMobileAppConfiguration 资源类型
 description: 已注册设备移动应用配置的抽象类
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d4deb062c7b927712d0557aa3257ba719e45bc12
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7418811c38c56c3d68b906e82774b2a8c1d4685e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458720"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966665"
 ---
 # <a name="manageddevicemobileappconfiguration-resource-type"></a>managedDeviceMobileAppConfiguration 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -32,9 +32,9 @@ ms.locfileid: "43458720"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |targetedMobileApps|String 集合|关联的应用。|
-|roleScopeTagIds|String 集合|此应用配置实体的范围标记列表。|
+|roleScopeTagIds|String collection|此应用配置实体的范围标记列表。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |description|String|管理员提供的设备配置说明。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
@@ -45,7 +45,7 @@ ms.locfileid: "43458720"
 |关系|类型|说明|
 |:---|:---|:---|
 |assignments|[managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) 集合|应用配置的组分配列表。|
-|deviceStatuses|[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md)集合|ManagedDeviceMobileAppConfigurationDeviceStatus 的列表。|
+|deviceStatuses|[managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) 集合|ManagedDeviceMobileAppConfigurationDeviceStatus 的列表。|
 |userStatuses|[managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md) 集合|ManagedDeviceMobileAppConfigurationUserStatus 列表|
 |deviceStatusSummary|[managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune-apps-manageddevicemobileappconfigurationdevicesummary.md)|应用配置设备状态摘要。|
 |userStatusSummary|[managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md)|应用配置用户状态摘要。|
@@ -75,6 +75,9 @@ ms.locfileid: "43458720"
   "version": 1024
 }
 ```
+
+
+
 
 
 

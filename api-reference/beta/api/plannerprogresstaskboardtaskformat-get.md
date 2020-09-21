@@ -5,16 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: c08d7c7c8e545e9fdaa456a9f39cafe694285a79
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7c4d66799351679a306e529ecd52935c6e086f09
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455653"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966875"
 ---
 # <a name="get-plannerprogresstaskboardtaskformat"></a>获取 plannerProgressTaskBoardTaskFormat
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -105,3 +105,5 @@ Content-length: 76
   ]
 }
 -->
+
+

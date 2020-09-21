@@ -3,20 +3,20 @@ title: assign 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c8ac1577057ada182c9ab93fc617f14873fcb77
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: c127dc16e64196624a7383ea061ef6c2e29ced9b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791305"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966931"
 ---
 # <a name="assign-action"></a>分配操作
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,7 +53,7 @@ POST /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfile
 
 |属性|类型|说明|
 |:---|:---|:---|
-|assignments|[windowsFeatureUpdateProfileAssignment](../resources/intune-softwareupdate-windowsfeatureupdateprofileassignment.md)集合|尚未记录|
+|assignments|[windowsFeatureUpdateProfileAssignment](../resources/intune-softwareupdate-windowsfeatureupdateprofileassignment.md) 集合|尚未记录|
 
 
 
@@ -90,6 +90,9 @@ Content-length: 460
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

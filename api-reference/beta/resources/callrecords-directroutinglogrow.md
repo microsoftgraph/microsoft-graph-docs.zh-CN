@@ -5,12 +5,12 @@ author: stephenjust
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3a01ed8410532264fceb0164ef4f703b636ccdef
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 2b3636882236d24e3da1435e89904de1f2845756
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46510164"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966765"
 ---
 # <a name="directroutinglogrow-resource-type"></a>directRoutingLogRow 资源类型
 
@@ -27,24 +27,24 @@ ms.locfileid: "46510164"
 |id|String|唯一的呼叫标识符。 Containerparentjob.|
 |correlationId|String|调用 Microsoft 支持时可使用的呼叫的标识符。 Containerparentjob.|
 |userId|String|在 Graph 中调用用户的 ID。 对于 bot 呼叫类型，此信息和其他用户信息将为 null/空。 Containerparentjob.|
-|userPrincipalName|字符串|Azure Active Directory 中的 UserPrincipalName （登录名）。 这通常与用户的 SIP 地址相同，并且可以与用户的电子邮件地址相同。|
-|userDisplayName|字符串|用户的显示名称。|
+|userPrincipalName|String|在 Azure Active Directory 中) 的 UserPrincipalName (登录名。 这通常与用户的 SIP 地址相同，并且可以与用户的电子邮件地址相同。|
+|userDisplayName|String|用户的显示名称。|
 |startDateTime|DateTimeOffset|呼叫开始时间。<br/>对于失败和未应答的呼叫，这可能等于 "邀请" 或 "失败时间"。|
 |inviteDateTime|DateTimeOffset| 发送初始邀请时。|
-|failureDateTime|DateTimeOffset| 仅存在失败（未完全建立）呼叫的情况。|
-|endDateTime|DateTimeOffset| 仅存在成功（完全建立）的呼叫。 呼叫结束的时间。|
+|failureDateTime|DateTimeOffset| 仅存在失败的 (未完全建立) 调用的情况。|
+|endDateTime|DateTimeOffset| 仅存在成功 (完全建立的) 调用的情况。 呼叫结束的时间。|
 |duration|Int32| 呼叫的持续时间（以秒为单位）。|
-|callType|字符串| 呼叫类型和方向。|
-|successfulCall|布尔| 成功或尝试。|
-|callerNumber|字符串| 发出呼叫的用户或机器人的号码。 E.164[格式，](https://en.wikipedia.org/wiki/E.164)但可能包含其他数据。|
-|calleeNumber|字符串| 接收呼叫的用户或机器人的号码。 E.164[格式，](https://en.wikipedia.org/wiki/E.164)但可能包含其他数据。|
-|mediaPathLocation|字符串| 用于非旁路呼叫中的媒体路径的数据中心。|
-|signalingLocation|字符串| 用于对绕过和非绕过呼叫发出信号的数据中心。|
+|callType|String| 呼叫类型和方向。|
+|successfulCall|Boolean| 成功或尝试。|
+|callerNumber|String| 发出呼叫的用户或机器人的号码。 E.164[格式，](https://en.wikipedia.org/wiki/E.164)但可能包含其他数据。|
+|calleeNumber|String| 接收呼叫的用户或机器人的号码。 E.164[格式，](https://en.wikipedia.org/wiki/E.164)但可能包含其他数据。|
+|mediaPathLocation|String| 用于非旁路呼叫中的媒体路径的数据中心。|
+|signalingLocation|String| 用于对绕过和非绕过呼叫发出信号的数据中心。|
 |finalSipCode|Int32| 调用结束的代码（ [RFC 3261](https://tools.ietf.org/html/rfc3261)）。|
 |callEndSubReason|Int32| 除了 SIP 代码之外，Microsoft 还提供了指示特定问题的子代码。|
-|finalSipCodePhrase|字符串| SIP 代码和 Microsoft 子代码的说明。|
-|trunkFullyQualifiedDomainName|字符串| 会话边界控制器的完全限定的域名称。|
-|mediaBypassEnabled|布尔| 指示是否为媒体旁路启用了中继。|
+|finalSipCodePhrase|String| SIP 代码和 Microsoft 子代码的说明。|
+|trunkFullyQualifiedDomainName|String| 会话边界控制器的完全限定的域名称。|
+|mediaBypassEnabled|Boolean| 指示是否为媒体旁路启用了中继。|
 
 ## <a name="relationships"></a>关系
 
@@ -86,3 +86,5 @@ ms.locfileid: "46510164"
   "mediaBypassEnabled": "Boolean"
 }
 ```
+
+

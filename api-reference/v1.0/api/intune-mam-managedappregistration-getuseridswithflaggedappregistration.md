@@ -3,14 +3,14 @@ title: getUserIdsWithFlaggedAppRegistration 函数
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bf68ce2707d772eec15729c564e7259a3835ef50
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 002f21ad181d52e6ee2ab4602c3fbbc83f766509
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43398666"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965923"
 ---
 # <a name="getuseridswithflaggedappregistration-function"></a>getUserIdsWithFlaggedAppRegistration 函数
 
@@ -71,6 +71,9 @@ Content-Length: 79
   ]
 }
 ```
+
+
+
 
 
 

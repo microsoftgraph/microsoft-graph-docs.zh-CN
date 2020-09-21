@@ -3,14 +3,14 @@ title: 更新 windowsUpdateState
 description: 更新 windowsUpdateState 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e3c31146e42f01da7ffa426884b51c1269184da
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 27b486f909e7bfcd11c4d354d5a60160e79024bf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46789837"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966945"
 ---
 # <a name="update-windowsupdatestate"></a>更新 windowsUpdateState
 
@@ -62,7 +62,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |userId|String|用户的 id。|
 |deviceDisplayName|String|设备显示名称。|
 |userPrincipalName|String|用户主体名称。|
-|status|[windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
+|状态|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows udpate 状态。 可取值为：`upToDate`、`pendingInstallation`、`pendingReboot`、`failed`。|
 |qualityUpdateVersion|String|设备的质量更新版本。|
 |featureUpdateVersion|String|设备的当前功能更新版本。|
 |lastScanDateTime|DateTimeOffset|Windows Update 代理成功扫描的日期时间。|
@@ -117,6 +117,9 @@ Content-Length: 553
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
+
+
+
 
 
 

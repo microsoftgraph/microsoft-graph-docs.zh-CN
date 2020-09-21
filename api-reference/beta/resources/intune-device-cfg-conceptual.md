@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的配置设备的 Intune 终结点 (
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0b1e8e6e6505780fcf638892c1e18b9500d54423
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 416485ee39f02ba6a3b6532f159e124ecf1f1841
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790929"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966546"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -84,6 +84,7 @@ ms.locfileid: "46790929"
 - [Android 键盘锁功能](intune-deviceconfig-androidkeyguardfeature.md)
 - [Android OMA cp 配置](intune-deviceconfig-androidomacpconfiguration.md)
 - [Android PKCS 证书配置文件](intune-deviceconfig-androidpkcscertificateprofile.md)
+- [Android 必需的密码复杂性](intune-deviceconfig-androidrequiredpasswordcomplexity.md)
 - [Android 所需密码类型](intune-deviceconfig-androidrequiredpasswordtype.md)
 - [Android SCEP 证书配置文件](intune-deviceconfig-androidscepcertificateprofile.md)
 - [Android 信任的根证书](intune-deviceconfig-androidtrustedrootcertificate.md)
@@ -386,6 +387,7 @@ ms.locfileid: "46790929"
 - [macOS 重定向单一登录扩展](intune-deviceconfig-macosredirectsinglesignonextension.md)
 - [macOS SCEP 证书配置文件](intune-deviceconfig-macosscepcertificateprofile.md)
 - [macOS 单一登录扩展](intune-deviceconfig-macossinglesignonextension.md)
+- [macOS 软件更新延迟策略](intune-deviceconfig-macossoftwareupdatedelaypolicy.md)
 - [macOS 系统扩展](intune-deviceconfig-macossystemextension.md)
 - [macOS 系统扩展类型](intune-deviceconfig-macossystemextensiontype.md)
 - [macOS 系统扩展类型映射](intune-deviceconfig-macossystemextensiontypemapping.md)
@@ -610,3 +612,5 @@ ms.locfileid: "46790929"
 - [Windows Wi-Fi 配置](intune-deviceconfig-windowswificonfiguration.md)
 - [Windows Wi-Fi 企业版 e a p 配置](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
 - [有线网络接口](intune-deviceconfig-wirednetworkinterface.md)
+
+

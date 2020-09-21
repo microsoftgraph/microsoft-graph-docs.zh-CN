@@ -7,12 +7,12 @@ localization_priority: Normal
 description: remoteItem 资源指示 driveItem 引用存在于其他驱动器中的项。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 131336245f60d0f62da7bc7cc9922c32e3f545a3
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: 3688711b588ee40b8ec0aac0dc04f543cf2e2294
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986087"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967329"
 ---
 # <a name="remoteitem-resource-type"></a>RemoteItem 资源类型
 
@@ -92,3 +92,4 @@ ms.locfileid: "42986087"
   "section": "documentation",
   "tocPath": "Facets/RemoteItem"
 } -->
+

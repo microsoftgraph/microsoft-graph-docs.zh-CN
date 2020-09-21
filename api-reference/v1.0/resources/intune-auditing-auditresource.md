@@ -3,14 +3,14 @@ title: auditResource 资源类型
 description: 包含审核资源的属性的类。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 35d4385ca16569e1b7e0177995c32ae22e5a0aa0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 895f88bf20219447e9f9609271b731b941263798
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439485"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965678"
 ---
 # <a name="auditresource-resource-type"></a>auditResource 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "43439485"
 |:---|:---|:---|
 |displayName|String|显示名称。|
 |ModifiedProperties|[auditProperty](../resources/intune-auditing-auditproperty.md) 集合|已修改属性列表。|
-|type|字符串|审核资源的类型。|
+|type|String|审核资源的类型。|
 |resourceId|String|审核资源的 ID。|
 
 ## <a name="relationships"></a>关系
@@ -54,6 +54,8 @@ ms.locfileid: "43439485"
   "resourceId": "String"
 }
 ```
+
+
 
 
 

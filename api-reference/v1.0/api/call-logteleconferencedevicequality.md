@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3c50089bb2f0bf4278ce8450350c12e7c54c1bb2
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: d0cae26a29e6aa6cbcfcc140b079590a4ebfa4d4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124222"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966329"
 ---
 # <a name="call-logteleconferencedevicequality"></a>调用： logTeleconferenceDeviceQuality
 
@@ -18,7 +18,7 @@ ms.locfileid: "43124222"
 
 记录视频电话会议设备质量数据。
 
-云视频互操作（CVI） bot 代表视频电话会议（VTC）设备，可充当会议呼叫中的 VTC 设备的后端代理。 由于 CVI bot 位于 VTC 和 Microsoft 团队基础结构的中间作为 VTC 代理，因此它具有两个媒体支线。 一个媒体条在 CVI bot 和团队基础结构之间，例如团队会议服务器或团队客户端。 其他媒体腿位于 CVI bot 和 VTC 设备之间。 
+云 Video 互操作 (CVI) bot 代表视频电话会议 (VTC) 设备，并充当会议呼叫中的 VTC 设备的后端代理。 由于 CVI bot 位于 VTC 和 Microsoft 团队基础结构的中间作为 VTC 代理，因此它具有两个媒体支线。 一个媒体条在 CVI bot 和团队基础结构之间，例如团队会议服务器或团队客户端。 其他媒体腿位于 CVI bot 和 VTC 设备之间。 
 
 第三方合作伙伴拥有 VTC 媒体腿，并且团队基础结构无法访问第三方呼叫线路的质量数据。  此方法仅供 CVI 合作伙伴提供其媒体质量数据。
 
@@ -30,7 +30,7 @@ ms.locfileid: "43124222"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Calls.AccessMedia.All |
+| 应用程序                            | Calls.AccessMedia.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -203,3 +203,4 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+

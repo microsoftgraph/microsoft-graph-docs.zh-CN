@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 1e1fe5318d05fc6d04161aa27a36723dd0317ec1
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: b5928746f7550250ad11d995781c8fc620fdcf00
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383586"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967777"
 ---
 # <a name="delete-an-approleassignment-granted-for-a-service-principal"></a>删除为服务主体授予的 appRoleAssignment
 
 命名空间：microsoft.graph
 
-删除已授予某个资源服务主体的用户、组或客户端服务主体的[appRoleAssignment](../resources/approleassignment.md) 。
+删除已授予某个资源服务主体的用户、组或客户端服务主体的 [appRoleAssignment](../resources/approleassignment.md) 。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "44383586"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AppRoleAssignment、Directory.accessasuser.all 和所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | AppRoleAssignment |
+|应用程序 | AppRoleAssignment.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -37,9 +37,9 @@ DELETE /servicePrincipals/{id}/appRoleAssignedTo/{id}
 ```
 
 > [!NOTE]
-> 作为一种最佳做法，我们建议通过 `appRoleAssignedTo` _资源_服务主体的关系（而不是 `appRoleAssignments` 分配的用户、组或服务主体的关系）删除应用程序角色分配。
+> 作为一种最佳做法，我们建议通过 `appRoleAssignedTo` _资源_ 服务主体的关系（而不是 `appRoleAssignments` 分配的用户、组或服务主体的关系）删除应用程序角色分配。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
@@ -114,3 +114,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

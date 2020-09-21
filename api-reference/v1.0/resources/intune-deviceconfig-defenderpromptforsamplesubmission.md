@@ -3,14 +3,14 @@ title: defenderPromptForSampleSubmission 枚举类型
 description: 提示用户提交示例的可能值。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6936124fceea8bbf84656ffdb4904d7cfca14f22
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c71187dfbb15b2dc8d1f1826575d961ba61c8065
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449002"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967630"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>defenderPromptForSampleSubmission 枚举类型
 
@@ -24,10 +24,12 @@ ms.locfileid: "43449002"
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|用户定义，默认值，无意向。|
-|alwaysPrompt|1|始终提示。|
-|promptBeforeSendingPersonalData|双面|发送个人数据前提示。|
+|alwaysPrompt|1 |始终提示。|
+|promptBeforeSendingPersonalData|2 |发送个人数据前提示。|
 |neverSendData|第三章|从不发送数据。|
 |sendAllDataWithoutPrompting|4 |在不提示的情况下发送所有数据。|
+
+
 
 
 

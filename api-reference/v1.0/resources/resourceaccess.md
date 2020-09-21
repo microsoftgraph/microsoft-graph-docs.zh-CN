@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 3a450645e126681f900d228b5d60a5201893cf2d
-ms.sourcegitcommit: 53a57f19a5b16029b540e61ddfba6c2b4e45cfc5
+ms.openlocfilehash: c5fb2478fbce4aeece78e70983ee15fda46ac602
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "44593616"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967231"
 ---
 # <a name="resourceaccess-resource-type"></a>resourceAccess 资源类型
 
@@ -21,8 +21,8 @@ ms.locfileid: "44593616"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|Guid|资源应用程序公开的[oauth2PermissionScopes](permissionscope.md)或[appRole](approle.md)实例之一的唯一标识符。|
-|type|String|指定**id**属性引用的是[oauth2PermissionScopes](permissionscope.md)还是[appRole](approle.md)。 可能的值为 `Scope` 或 `Role` 。|
+|id|Guid|资源应用程序公开的 [oauth2PermissionScopes](permissionscope.md) 或 [appRole](approle.md) 实例之一的唯一标识符。|
+|type|String|指定 **id** 属性引用的是 [oauth2PermissionScopes](permissionscope.md) 还是 [appRole](approle.md)。 可能的值为 `Scope` 或 `Role` 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -56,3 +56,4 @@ ms.locfileid: "44593616"
   "suppressions": []
 }
 -->
+

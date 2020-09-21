@@ -3,14 +3,14 @@ title: deviceCompliancePolicyDeviceStateSummary 资源类型
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0326b33fa4fa421d327542cabf80c45c4e8ef648
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 01aaeb851a8a7be9f07e49c140e151f438bb9978
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448867"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967609"
 ---
 # <a name="devicecompliancepolicydevicestatesummary-resource-type"></a>deviceCompliancePolicyDeviceStateSummary 资源类型
 
@@ -66,6 +66,8 @@ ms.locfileid: "43448867"
   "conflictDeviceCount": 1024
 }
 ```
+
+
 
 
 

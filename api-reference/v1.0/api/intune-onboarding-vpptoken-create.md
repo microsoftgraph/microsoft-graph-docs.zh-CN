@@ -3,14 +3,14 @@ title: 创建 vppToken
 description: 创建新的 vppToken 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e9c4bde3521fded68ff4a394929b30128f146f53
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5e1e7c42dfd48d7f2b9e3b1c47ebadb555f938b4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452855"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965909"
 ---
 # <a name="create-vpptoken"></a>创建 vppToken
 
@@ -116,6 +116,9 @@ Content-Length: 574
   "countryOrRegion": "Country Or Region value"
 }
 ```
+
+
+
 
 
 

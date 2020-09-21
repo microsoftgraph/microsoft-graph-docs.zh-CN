@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 41777f5b3740315eedd114dae33026135a64d26f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 40bbdfd22d077fcb993b5884c869ffb2414f2560
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508700"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965720"
 ---
 # <a name="list-pivottables"></a>List pivotTables
 
@@ -109,3 +109,4 @@ Content-length: 83
   "suppressions": [
   ]
 }-->
+

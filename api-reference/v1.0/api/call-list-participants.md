@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e26603bba1b8f441de53eaf6ecc45b2d579542d4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 19df1df2502c5a13c0034d3910cb903d6a380032
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518705"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966336"
 ---
 # <a name="list-participants"></a>列出参与者
 
@@ -38,7 +38,7 @@ GET /communications/calls/{id}/participants
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称          | 说明               |
 |:--------------|:--------------------------|
@@ -50,7 +50,7 @@ GET /communications/calls/{id}/participants
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[参与者](../resources/participant.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [参与者](../resources/participant.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -181,3 +181,4 @@ Content-Type: application/json
   ]
 }
 -->
+

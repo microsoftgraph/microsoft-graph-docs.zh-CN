@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 969e6553009081574c70184ed5da5496c1f5bd0b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 62aaeb698aadc8a16f266e70aa96027ca953debe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508644"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967651"
 ---
 # <a name="create-chart"></a>创建图表
 
@@ -39,11 +39,11 @@ POST /workbook/worksheets/{id|name}/charts/
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[WorkbookChart](../resources/chart.md)对象的 JSON 表示形式。
+在请求正文中，提供 [WorkbookChart](../resources/chart.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`201 Created`响应正文中返回响应代码和[WorkbookChart](../resources/chart.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [WorkbookChart](../resources/chart.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -83,7 +83,7 @@ Content-length: 52
 
 ---
 
-在请求正文中，提供[WorkbookChart](../resources/chart.md)对象的 JSON 表示形式。
+在请求正文中，提供 [WorkbookChart](../resources/chart.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
@@ -114,3 +114,4 @@ Content-length: 52
   "suppressions": [
   ]
 }-->
+

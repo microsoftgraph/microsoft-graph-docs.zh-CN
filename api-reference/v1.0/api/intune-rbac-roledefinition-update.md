@@ -3,14 +3,14 @@ title: 更新 roleDefinition
 description: 更新 roleDefinition 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 24f2d59dfe54dea9d914fc302e43204393beea5f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b7669e4b4a5ca791ab071a673f8609e409111599
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461283"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965762"
 ---
 # <a name="update-roledefinition"></a>更新 roleDefinition
 
@@ -52,7 +52,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 此为只读，且自动生成。|
+|id|String|实体的键。 此为只读，且自动生成。|
 |displayName|String|角色定义的显示名称。|
 |description|String|角色定义的说明。|
 |rolePermissions|[rolePermission](../resources/intune-rbac-rolepermission.md) 集合|允许此角色执行的角色权限列表。 它们必须与定义为 rolePermission 一部分的 actionName 匹配。|
@@ -127,6 +127,9 @@ Content-Length: 629
   "isBuiltIn": true
 }
 ```
+
+
+
 
 
 

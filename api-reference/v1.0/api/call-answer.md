@@ -5,22 +5,22 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d8719a226f05473ee068bac98364ae5ec01eadaa
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 7460622ba14a9b31fc439123795883a6d7d431b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183979"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966400"
 ---
 # <a name="call-answer"></a>呼叫：应答
 
 命名空间：microsoft.graph
 
-使机器人能够应答传入[呼叫](../resources/call.md)。 传入呼叫请求可以是来自组呼叫或对等呼叫中参与者的邀请。 如果收到某个组呼叫邀请，则通知将包含[chatInfo](../resources/chatinfo.md)和[meetingInfo](../resources/meetinginfo.md)参数。
+使机器人能够应答传入 [呼叫](../resources/call.md)。 传入呼叫请求可以是来自组呼叫或对等呼叫中参与者的邀请。 如果收到某个组呼叫邀请，则通知将包含 [chatInfo](../resources/chatinfo.md) 和 [meetingInfo](../resources/meetinginfo.md) 参数。
 
-在呼叫超时之前，机器人应应答、[拒绝](./call-reject.md)或[重定向](./call-redirect.md)呼叫。当前超时值为15秒。
+在呼叫超时之前，机器人应应答、 [拒绝](./call-reject.md)或 [重定向](./call-redirect.md) 呼叫。当前超时值为15秒。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 您无需任何权限即可应答对等呼叫。 若要加入组呼叫，您需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权）                 |
@@ -49,8 +49,8 @@ POST /communications/calls/{id}/answer
 | 参数        | 类型                                     |说明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是 `https` 。    |
-|acceptedModalities|String 集合                         |接受形式的列表。 可取值为：`audio`、`video`、`videoBasedScreenSharing`。 应答呼叫的必选。 |
-|mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) 或 [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |媒体配置。 需要                                                                                                            |
+|acceptedModalities|String collection                         |接受形式的列表。 可取值为：`audio`、`video`、`videoBasedScreenSharing`。 应答呼叫的必选。 |
+|mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) 或 [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |媒体配置。  (必需的)                                                                                                             |
 
 ## <a name="response"></a>响应
 此方法返回 `202 Accepted` 响应代码。
@@ -438,8 +438,8 @@ Content-Type: application/json
 
 ### <a name="example-3-answer-a-policy-based-recording-call"></a>示例3：应答基于策略的录制呼叫
 
-在[基于策略的录制方案](https://docs.microsoft.com/microsoftteams/teams-recording-policy)下，在 "策略" 下的参与者加入呼叫之前，传入呼叫通知将发送到与该策略关联的 bot。
-可以在**botData**属性下找到联接信息。 然后，bot 可以选择应答呼叫并相应地[更新录制状态](call-updaterecordingstatus.md)。
+在 [基于策略的录制方案](https://docs.microsoft.com/microsoftteams/teams-recording-policy)下，在 "策略" 下的参与者加入呼叫之前，传入呼叫通知将发送到与该策略关联的 bot。
+可以在 **botData** 属性下找到联接信息。 然后，bot 可以选择应答呼叫并相应地 [更新录制状态](call-updaterecordingstatus.md) 。
 
 下面的示例展示了 bot 在这种情况下将收到的传入呼叫通知。
 
@@ -555,3 +555,4 @@ Content-Type: application/json
   ]
 }
 -->
+

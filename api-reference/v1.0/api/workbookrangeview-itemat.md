@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 35ca224c5e46359672ee48e2e62b6a0b56a68377
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 118274017a67d330a3c5e3927fe3d93c7ce30ad2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508721"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965692"
 ---
 # <a name="workbookrangeview-itemat"></a>workbookRangeView: itemAt
 
@@ -84,3 +84,4 @@ Content-length: 194
   "index": 99
 }
 ```
+

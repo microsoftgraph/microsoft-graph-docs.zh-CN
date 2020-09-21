@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: c9da2041a6d982556ec909375ff46b3a9b3e2e2d
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 29fb3d93db939ec077444c367d74aadc7cd751fb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598401"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967224"
 ---
 # <a name="resourcedata-resource-type"></a>resourceData 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "46598401"
 
 表示附加到发送到订阅服务器的更改通知的资源数据。
 
-有关详细信息，请参阅[使用 Microsoft GRAPH API 获取更改通知](webhooks.md)。
+有关详细信息，请参阅 [使用 Microsoft GRAPH API 获取更改通知](webhooks.md)。
 
 ## <a name="methods"></a>方法
 
@@ -26,7 +26,7 @@ ms.locfileid: "46598401"
 
 ## <a name="properties"></a>属性
 
-对于 Outlook 资源， **resourceData**包含以下字段：
+对于 Outlook 资源， **resourceData** 包含以下字段：
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
@@ -73,3 +73,4 @@ ms.locfileid: "46598401"
   "suppressions": []
 }
 -->
+

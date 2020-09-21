@@ -3,14 +3,14 @@ title: syncDevice 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ad60082606f1dd55c7836267b892e760395638f
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 184ecd238a8db5985ae294dc7676e08c2dbc59ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556196"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965986"
 ---
 # <a name="syncdevice-action"></a>syncDevice 操作
 
@@ -27,7 +27,7 @@ ms.locfileid: "44556196"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.PrivilegedOperations.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -65,6 +65,9 @@ POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: 列出 managedAppOperations
 description: 列出 managedAppOperation 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8329b9cfd81b264394cddeca77ec742761202f49
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 528943c20e8a5e6c049620262dbfb0e380e1e77b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43399071"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965972"
 ---
 # <a name="list-managedappoperations"></a>列出 managedAppOperations
 
@@ -78,6 +78,9 @@ Content-Length: 329
   ]
 }
 ```
+
+
+
 
 
 

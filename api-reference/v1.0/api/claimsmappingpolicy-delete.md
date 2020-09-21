@@ -5,18 +5,18 @@ localization_priority: Normal
 author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5749effbb234444cf3ba609df58a0af598c9b204
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: 4ff68292b6140f3c0175f28adecacb68e18a0cc2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863826"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966252"
 ---
 # <a name="delete-claimsmappingpolicy"></a>删除 claimsMappingPolicy
 
 命名空间：microsoft.graph
 
-删除[claimsMappingPolicy](../resources/claimsmappingpolicy.md)对象。
+删除 [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -106,3 +106,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

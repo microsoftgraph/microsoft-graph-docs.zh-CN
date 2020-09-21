@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f7965f89fb8ce44f8475a86cea1a4e2d45999f2a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 84d9d5b4135aa69bd8271087a3ad6de68978d68e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508728"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965748"
 ---
 # <a name="workbookrange-visibleview"></a>workbookRange: visibleView
 
@@ -106,3 +106,4 @@ Content-length: 194
   "suppressions": [
   ]
 }-->
+

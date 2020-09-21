@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 009dfc9adf0ec86d1dc3f7e9cf380b3fce13845b
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
-ms.translationtype: MT
+ms.openlocfilehash: cafaae793f68ebdfb16661f05c9798f38eb8747a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290235"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966401"
 ---
 # <a name="list-applications"></a>列出应用程序
 
@@ -24,9 +24,9 @@ ms.locfileid: "44290235"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.accessasuser.all、全部读取、全部、全部、目录、全部和全部。    |
+|委派（工作或学校帐户） | Application.Read.All、 Application.ReadWrite.All、 Directory.Read.All、 Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 应用程序。全部，全部读取全部，全部 |
+|应用程序 | Application.Read.All、 Application.ReadWrite.All、 Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -171,3 +171,4 @@ Content-length: 1229
   ]
 }
 -->
+

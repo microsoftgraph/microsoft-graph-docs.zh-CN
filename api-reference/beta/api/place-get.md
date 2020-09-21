@@ -5,24 +5,24 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0dc07c3c649cb472abc2a33a819fcaf9a7935589
-ms.sourcegitcommit: b88dce7297f196345f16c2c126d7bdd482d22a23
+ms.openlocfilehash: a281c07e71d715ed123403fe16b2fd3fcc764a05
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44006319"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966910"
 ---
 # <a name="get-place"></a>获取位置
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-获取由其 ID 或电子邮件地址指定的[place](../resources/place.md)对象的属性和关系。 
+获取由其 ID 或电子邮件地址指定的 [place](../resources/place.md) 对象的属性和关系。 
 
 **Place**对象可以是下列类型之一：
 
-* 包含丰富属性（如聊天室的电子邮件地址、辅助功能、容量和设备支持）的[会议室](../resources/room.md)。
-* 包含会议室列表的电子邮件地址的[会议室列表](../resources/roomlist.md)，以及用于获取该会议室列表中的**会议室**实例集合的导航属性。
+* 包含丰富属性（如聊天室的电子邮件地址、辅助功能、容量和设备支持）的 [会议室](../resources/room.md) 。
+* 包含会议室列表的电子邮件地址的 [会议室列表](../resources/roomlist.md) ，以及用于获取该会议室列表中的 **会议室** 实例集合的导航属性。
 
 **聊天室**和**roomList**均派生自[place](../resources/place.md)对象。 
 
@@ -45,9 +45,9 @@ GET /places/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-使用 $select 获取特定的**位置**属性。
+使用 $select 获取特定的 **位置** 属性。
 
-有关 OData 查询选项的详细信息，请参阅[odata 查询参数](/graph/query-parameters)。
+有关 OData 查询选项的详细信息，请参阅 [odata 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -61,7 +61,7 @@ GET /places/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[place](../resources/place.md)对象。
+如果成功，此方法在 `200 OK` 响应正文中返回响应代码和请求的 [place](../resources/place.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -219,3 +219,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: svpsiva
-ms.openlocfilehash: 187627c5137ca40cebb63340e7841ab470748f44
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: c745b2516d2ff3455d00b18df97acd01188f5e29
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312075"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966784"
 ---
 # <a name="attachment-resource-type"></a>attachment 资源类型
 
@@ -46,7 +46,7 @@ Outlook 任务不支持引用附件。
 |[将附件添加到用户事件中](../api/event-post-attachments.md) | [附件](attachment.md) |将文件、项目或链接附件添加到用户日历中的事件中。|
 |[将附件添加到邮件中](../api/message-post-attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到邮件中。 此操作将限制可添加到 4 MB 以下的附件的大小。|
 |[创建会话以附加大型文件](../api/attachment-createuploadsession.md)| [uploadSession](uploadsession.md) | 创建一个允许应用程序以迭代方式上载文件范围的上载会话，以便将文件附加到指定的 **邮件**。 文件大小必须介于3MB 和150MB 之间。|
-|[将附件添加到 Outlook 任务](../api/outlooktask-post-attachments.md) (弃用)  | [附件](attachment.md) |将文件或项目附件添加到 Outlook 任务中。|
+|[将附件添加到 Outlook 任务](../api/outlooktask-post-attachments.md) (弃用)  | [attachment](attachment.md) |将文件或项目附件添加到 Outlook 任务中。|
 |[将附件添加到帖子中](../api/post-post-attachments.md) | [附件](attachment.md) |将文件、项目或链接附件添加到组帖子。|
 |[列出用户事件的附件](../api/event-list-attachments.md) | [附件](attachment.md)集合 | 获取用户日历中事件的附件列表。 |
 |[列出邮件的附件](../api/message-list-attachments.md) | [附件](attachment.md) 集合 | 获取邮件的附件列表。 |
@@ -108,3 +108,5 @@ Outlook 任务不支持引用附件。
   "suppressions": []
 }
 -->
+
+

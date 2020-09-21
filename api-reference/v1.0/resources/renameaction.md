@@ -6,12 +6,12 @@ description: RenameAction 对象提供有关重命名项的活动的信息。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: b21d4630ca29aff9322d5114a5048b42f19fa4a0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 693c5d8586a7ceef2c30f1e6dae17ac47d8e2d1f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533851"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967315"
 ---
 # <a name="renameaction-resource-type"></a>renameAction 资源类型
 
@@ -55,3 +55,4 @@ ms.locfileid: "42533851"
   "suppressions": []
 }
 -->
+
