@@ -3,37 +3,37 @@ title: hasPayloadLinks 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 47bf788ea6f7196b1b9387c28638523576e13f5c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0592d02958fc9969e77f27a9cd085616b523bffc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43390771"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969541"
 ---
-# <a name="haspayloadlinks-action"></a><span data-ttu-id="e3f70-103">hasPayloadLinks 操作</span><span class="sxs-lookup"><span data-stu-id="e3f70-103">hasPayloadLinks action</span></span>
+# <a name="haspayloadlinks-action"></a><span data-ttu-id="0ed6c-103">hasPayloadLinks 操作</span><span class="sxs-lookup"><span data-stu-id="0ed6c-103">hasPayloadLinks action</span></span>
 
-<span data-ttu-id="e3f70-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e3f70-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="0ed6c-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0ed6c-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="e3f70-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="e3f70-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="0ed6c-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="0ed6c-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="e3f70-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="e3f70-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0ed6c-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="0ed6c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e3f70-107">尚未记录</span><span class="sxs-lookup"><span data-stu-id="e3f70-107">Not yet documented</span></span>
+<span data-ttu-id="0ed6c-107">尚未记录</span><span class="sxs-lookup"><span data-stu-id="0ed6c-107">Not yet documented</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="e3f70-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="e3f70-108">Prerequisites</span></span>
-<span data-ttu-id="e3f70-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e3f70-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="0ed6c-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="0ed6c-108">Prerequisites</span></span>
+<span data-ttu-id="0ed6c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0ed6c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e3f70-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="e3f70-111">Permission type</span></span>|<span data-ttu-id="e3f70-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="e3f70-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="0ed6c-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="0ed6c-111">Permission type</span></span>|<span data-ttu-id="0ed6c-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="0ed6c-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="e3f70-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e3f70-113">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="e3f70-114">&nbsp;&nbsp; **策略集**</span><span class="sxs-lookup"><span data-stu-id="e3f70-114">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="e3f70-115">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="e3f70-115">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="e3f70-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e3f70-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e3f70-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="e3f70-117">Not supported.</span></span>|
-|<span data-ttu-id="e3f70-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="e3f70-118">Application</span></span>||
-| <span data-ttu-id="e3f70-119">&nbsp;&nbsp; **策略集**</span><span class="sxs-lookup"><span data-stu-id="e3f70-119">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="e3f70-120">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="e3f70-120">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="0ed6c-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0ed6c-113">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="0ed6c-114">&nbsp;&nbsp;**策略集**</span><span class="sxs-lookup"><span data-stu-id="0ed6c-114">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="0ed6c-115">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="0ed6c-115">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="0ed6c-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0ed6c-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0ed6c-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="0ed6c-117">Not supported.</span></span>|
+|<span data-ttu-id="0ed6c-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="0ed6c-118">Application</span></span>||
+| <span data-ttu-id="0ed6c-119">&nbsp;&nbsp;**策略集**</span><span class="sxs-lookup"><span data-stu-id="0ed6c-119">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="0ed6c-120">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="0ed6c-120">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e3f70-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e3f70-121">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0ed6c-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0ed6c-121">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -42,30 +42,30 @@ ms.locfileid: "43390771"
 POST /deviceManagement/deviceCompliancePolicies/hasPayloadLinks
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e3f70-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="e3f70-122">Request headers</span></span>
-|<span data-ttu-id="e3f70-123">标头</span><span class="sxs-lookup"><span data-stu-id="e3f70-123">Header</span></span>|<span data-ttu-id="e3f70-124">值</span><span class="sxs-lookup"><span data-stu-id="e3f70-124">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0ed6c-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="0ed6c-122">Request headers</span></span>
+|<span data-ttu-id="0ed6c-123">标头</span><span class="sxs-lookup"><span data-stu-id="0ed6c-123">Header</span></span>|<span data-ttu-id="0ed6c-124">值</span><span class="sxs-lookup"><span data-stu-id="0ed6c-124">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="e3f70-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="e3f70-125">Authorization</span></span>|<span data-ttu-id="e3f70-126">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="e3f70-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="e3f70-127">接受</span><span class="sxs-lookup"><span data-stu-id="e3f70-127">Accept</span></span>|<span data-ttu-id="e3f70-128">application/json</span><span class="sxs-lookup"><span data-stu-id="e3f70-128">application/json</span></span>|
+|<span data-ttu-id="0ed6c-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="0ed6c-125">Authorization</span></span>|<span data-ttu-id="0ed6c-126">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="0ed6c-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="0ed6c-127">接受</span><span class="sxs-lookup"><span data-stu-id="0ed6c-127">Accept</span></span>|<span data-ttu-id="0ed6c-128">application/json</span><span class="sxs-lookup"><span data-stu-id="0ed6c-128">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e3f70-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="e3f70-129">Request body</span></span>
-<span data-ttu-id="e3f70-130">在请求正文中，提供参数的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e3f70-130">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0ed6c-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="0ed6c-129">Request body</span></span>
+<span data-ttu-id="0ed6c-130">在请求正文中，提供参数的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0ed6c-130">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="e3f70-131">下表显示了可用于此操作的参数。</span><span class="sxs-lookup"><span data-stu-id="e3f70-131">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="0ed6c-131">下表显示了可用于此操作的参数。</span><span class="sxs-lookup"><span data-stu-id="0ed6c-131">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="e3f70-132">属性</span><span class="sxs-lookup"><span data-stu-id="e3f70-132">Property</span></span>|<span data-ttu-id="e3f70-133">类型</span><span class="sxs-lookup"><span data-stu-id="e3f70-133">Type</span></span>|<span data-ttu-id="e3f70-134">说明</span><span class="sxs-lookup"><span data-stu-id="e3f70-134">Description</span></span>|
+|<span data-ttu-id="0ed6c-132">属性</span><span class="sxs-lookup"><span data-stu-id="0ed6c-132">Property</span></span>|<span data-ttu-id="0ed6c-133">类型</span><span class="sxs-lookup"><span data-stu-id="0ed6c-133">Type</span></span>|<span data-ttu-id="0ed6c-134">说明</span><span class="sxs-lookup"><span data-stu-id="0ed6c-134">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e3f70-135">payloadIds</span><span class="sxs-lookup"><span data-stu-id="e3f70-135">payloadIds</span></span>|<span data-ttu-id="e3f70-136">String collection</span><span class="sxs-lookup"><span data-stu-id="e3f70-136">String collection</span></span>|<span data-ttu-id="e3f70-137">尚未记录</span><span class="sxs-lookup"><span data-stu-id="e3f70-137">Not yet documented</span></span>|
+|<span data-ttu-id="0ed6c-135">payloadIds</span><span class="sxs-lookup"><span data-stu-id="0ed6c-135">payloadIds</span></span>|<span data-ttu-id="0ed6c-136">String collection</span><span class="sxs-lookup"><span data-stu-id="0ed6c-136">String collection</span></span>|<span data-ttu-id="0ed6c-137">尚未记录</span><span class="sxs-lookup"><span data-stu-id="0ed6c-137">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="e3f70-138">响应</span><span class="sxs-lookup"><span data-stu-id="e3f70-138">Response</span></span>
-<span data-ttu-id="e3f70-139">如果成功，此操作会在`200 OK`响应正文中返回响应代码和[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md)集合。</span><span class="sxs-lookup"><span data-stu-id="e3f70-139">If successful, this action returns a `200 OK` response code and a [hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="0ed6c-138">响应</span><span class="sxs-lookup"><span data-stu-id="0ed6c-138">Response</span></span>
+<span data-ttu-id="0ed6c-139">如果成功，此操作会 `200 OK` 在响应正文中返回响应代码和 [hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) 集合。</span><span class="sxs-lookup"><span data-stu-id="0ed6c-139">If successful, this action returns a `200 OK` response code and a [hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e3f70-140">示例</span><span class="sxs-lookup"><span data-stu-id="e3f70-140">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0ed6c-140">示例</span><span class="sxs-lookup"><span data-stu-id="0ed6c-140">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="e3f70-141">请求</span><span class="sxs-lookup"><span data-stu-id="e3f70-141">Request</span></span>
-<span data-ttu-id="e3f70-142">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e3f70-142">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="0ed6c-141">请求</span><span class="sxs-lookup"><span data-stu-id="0ed6c-141">Request</span></span>
+<span data-ttu-id="0ed6c-142">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="0ed6c-142">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/hasPayloadLinks
 
@@ -79,8 +79,8 @@ Content-length: 53
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="e3f70-143">响应</span><span class="sxs-lookup"><span data-stu-id="e3f70-143">Response</span></span>
-<span data-ttu-id="e3f70-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e3f70-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="0ed6c-143">响应</span><span class="sxs-lookup"><span data-stu-id="0ed6c-143">Response</span></span>
+<span data-ttu-id="0ed6c-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="0ed6c-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -100,6 +100,9 @@ Content-Length: 249
   ]
 }
 ```
+
+
+
 
 
 

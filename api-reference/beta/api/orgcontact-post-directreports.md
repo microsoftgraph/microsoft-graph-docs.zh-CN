@@ -5,52 +5,52 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3eef2d525fc6e619edbe3a9f022a0b9f91e9bae7
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: a090656c524f9d5c0a2ff7127ab4e0197714ef4b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44680680"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969464"
 ---
-# <a name="create-directreport"></a><span data-ttu-id="43b9d-103">创建 directReport</span><span class="sxs-lookup"><span data-stu-id="43b9d-103">Create directReport</span></span>
+# <a name="create-directreport"></a><span data-ttu-id="f256f-103">创建 directReport</span><span class="sxs-lookup"><span data-stu-id="f256f-103">Create directReport</span></span>
 
-<span data-ttu-id="43b9d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="43b9d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f256f-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f256f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="43b9d-105">使用此 API 创建新的 directReport。</span><span class="sxs-lookup"><span data-stu-id="43b9d-105">Use this API to create a new directReport.</span></span>
-## <a name="permissions"></a><span data-ttu-id="43b9d-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="43b9d-106">Permissions</span></span>
-<span data-ttu-id="43b9d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="43b9d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f256f-105">使用此 API 创建新的 directReport。</span><span class="sxs-lookup"><span data-stu-id="f256f-105">Use this API to create a new directReport.</span></span>
+## <a name="permissions"></a><span data-ttu-id="f256f-106">权限</span><span class="sxs-lookup"><span data-stu-id="f256f-106">Permissions</span></span>
+<span data-ttu-id="f256f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f256f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="43b9d-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="43b9d-109">Permission type</span></span>      | <span data-ttu-id="43b9d-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="43b9d-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f256f-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="f256f-109">Permission type</span></span>      | <span data-ttu-id="f256f-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f256f-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="43b9d-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="43b9d-111">Delegated (work or school account)</span></span> | <span data-ttu-id="43b9d-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="43b9d-112">Not supported.</span></span>    |
-|<span data-ttu-id="43b9d-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="43b9d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="43b9d-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="43b9d-114">Not supported.</span></span>    |
-|<span data-ttu-id="43b9d-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="43b9d-115">Application</span></span> | <span data-ttu-id="43b9d-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="43b9d-116">Not supported.</span></span> |
+|<span data-ttu-id="f256f-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f256f-111">Delegated (work or school account)</span></span> | <span data-ttu-id="f256f-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="f256f-112">Not supported.</span></span>    |
+|<span data-ttu-id="f256f-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f256f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f256f-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="f256f-114">Not supported.</span></span>    |
+|<span data-ttu-id="f256f-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="f256f-115">Application</span></span> | <span data-ttu-id="f256f-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="f256f-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="43b9d-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="43b9d-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f256f-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f256f-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /contacts/{id}/directReports
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="43b9d-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="43b9d-118">Request headers</span></span>
-| <span data-ttu-id="43b9d-119">名称</span><span class="sxs-lookup"><span data-stu-id="43b9d-119">Name</span></span>       | <span data-ttu-id="43b9d-120">类型</span><span class="sxs-lookup"><span data-stu-id="43b9d-120">Type</span></span> | <span data-ttu-id="43b9d-121">说明</span><span class="sxs-lookup"><span data-stu-id="43b9d-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f256f-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="f256f-118">Request headers</span></span>
+| <span data-ttu-id="f256f-119">名称</span><span class="sxs-lookup"><span data-stu-id="f256f-119">Name</span></span>       | <span data-ttu-id="f256f-120">类型</span><span class="sxs-lookup"><span data-stu-id="f256f-120">Type</span></span> | <span data-ttu-id="f256f-121">说明</span><span class="sxs-lookup"><span data-stu-id="f256f-121">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="43b9d-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="43b9d-122">Authorization</span></span>  | <span data-ttu-id="43b9d-123">string</span><span class="sxs-lookup"><span data-stu-id="43b9d-123">string</span></span>  | <span data-ttu-id="43b9d-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="43b9d-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f256f-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="f256f-122">Authorization</span></span>  | <span data-ttu-id="f256f-123">string</span><span class="sxs-lookup"><span data-stu-id="f256f-123">string</span></span>  | <span data-ttu-id="f256f-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f256f-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="43b9d-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="43b9d-126">Request body</span></span>
-<span data-ttu-id="43b9d-127">在请求正文中，提供 [directoryObject](../resources/directoryobject.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="43b9d-127">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f256f-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="f256f-126">Request body</span></span>
+<span data-ttu-id="f256f-127">在请求正文中，提供 [directoryObject](../resources/directoryobject.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f256f-127">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="43b9d-128">响应</span><span class="sxs-lookup"><span data-stu-id="43b9d-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f256f-128">响应</span><span class="sxs-lookup"><span data-stu-id="f256f-128">Response</span></span>
 
-<span data-ttu-id="43b9d-129">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="43b9d-129">If successful, this method returns `201 Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+<span data-ttu-id="f256f-129">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f256f-129">If successful, this method returns `201 Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="43b9d-130">示例</span><span class="sxs-lookup"><span data-stu-id="43b9d-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="43b9d-131">请求</span><span class="sxs-lookup"><span data-stu-id="43b9d-131">Request</span></span>
-<span data-ttu-id="43b9d-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="43b9d-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f256f-130">示例</span><span class="sxs-lookup"><span data-stu-id="f256f-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f256f-131">请求</span><span class="sxs-lookup"><span data-stu-id="f256f-131">Request</span></span>
+<span data-ttu-id="f256f-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f256f-132">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="43b9d-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="43b9d-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f256f-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="f256f-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_orgcontact"
@@ -65,19 +65,19 @@ Content-length: 30
   }
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="43b9d-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="43b9d-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f256f-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f256f-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-orgcontact-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="43b9d-135">C#</span><span class="sxs-lookup"><span data-stu-id="43b9d-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f256f-135">C#</span><span class="sxs-lookup"><span data-stu-id="f256f-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-directoryobject-from-orgcontact-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="43b9d-136">在请求正文中，提供 [directoryObject](../resources/directoryobject.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="43b9d-136">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="43b9d-137">响应</span><span class="sxs-lookup"><span data-stu-id="43b9d-137">Response</span></span>
-<span data-ttu-id="43b9d-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="43b9d-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="f256f-136">在请求正文中，提供 [directoryObject](../resources/directoryobject.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f256f-136">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="f256f-137">响应</span><span class="sxs-lookup"><span data-stu-id="f256f-137">Response</span></span>
+<span data-ttu-id="f256f-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f256f-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -108,3 +108,5 @@ Content-length: 51
   ]
 }
 -->
+
+

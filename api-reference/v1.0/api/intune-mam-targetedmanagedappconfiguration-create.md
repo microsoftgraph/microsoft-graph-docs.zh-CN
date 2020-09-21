@@ -3,33 +3,33 @@ title: 创建 targetedManagedAppConfiguration
 description: 创建新的 targetedManagedAppConfiguration 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5cef545a97b59524c13e52bf6d302779c1e79f4f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 47cedcc9eb3ee6ca2157165145ed53a033019d73
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43398178"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968050"
 ---
-# <a name="create-targetedmanagedappconfiguration"></a><span data-ttu-id="19447-103">创建 targetedManagedAppConfiguration</span><span class="sxs-lookup"><span data-stu-id="19447-103">Create targetedManagedAppConfiguration</span></span>
+# <a name="create-targetedmanagedappconfiguration"></a><span data-ttu-id="0a27d-103">创建 targetedManagedAppConfiguration</span><span class="sxs-lookup"><span data-stu-id="0a27d-103">Create targetedManagedAppConfiguration</span></span>
 
-<span data-ttu-id="19447-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="19447-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="0a27d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0a27d-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="19447-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="19447-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0a27d-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="0a27d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="19447-106">创建新的 [targetedManagedAppConfiguration](../resources/intune-mam-targetedmanagedappconfiguration.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="19447-106">Create a new [targetedManagedAppConfiguration](../resources/intune-mam-targetedmanagedappconfiguration.md) object.</span></span>
+<span data-ttu-id="0a27d-106">创建新的 [targetedManagedAppConfiguration](../resources/intune-mam-targetedmanagedappconfiguration.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="0a27d-106">Create a new [targetedManagedAppConfiguration](../resources/intune-mam-targetedmanagedappconfiguration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="19447-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="19447-107">Prerequisites</span></span>
-<span data-ttu-id="19447-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="19447-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="0a27d-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="0a27d-107">Prerequisites</span></span>
+<span data-ttu-id="0a27d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0a27d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="19447-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="19447-110">Permission type</span></span>|<span data-ttu-id="19447-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="19447-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="0a27d-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="0a27d-110">Permission type</span></span>|<span data-ttu-id="0a27d-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="0a27d-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="19447-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="19447-112">Delegated (work or school account)</span></span>|<span data-ttu-id="19447-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="19447-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="19447-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="19447-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="19447-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="19447-115">Not supported.</span></span>|
-|<span data-ttu-id="19447-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="19447-116">Application</span></span>|<span data-ttu-id="19447-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="19447-117">Not supported.</span></span>|
+|<span data-ttu-id="0a27d-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0a27d-112">Delegated (work or school account)</span></span>|<span data-ttu-id="0a27d-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0a27d-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="0a27d-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0a27d-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0a27d-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="0a27d-115">Not supported.</span></span>|
+|<span data-ttu-id="0a27d-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="0a27d-116">Application</span></span>|<span data-ttu-id="0a27d-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="0a27d-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="19447-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="19447-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0a27d-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0a27d-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,38 +38,38 @@ ms.locfileid: "43398178"
 POST /deviceAppManagement/targetedManagedAppConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="19447-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="19447-119">Request headers</span></span>
-|<span data-ttu-id="19447-120">标头</span><span class="sxs-lookup"><span data-stu-id="19447-120">Header</span></span>|<span data-ttu-id="19447-121">值</span><span class="sxs-lookup"><span data-stu-id="19447-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0a27d-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="0a27d-119">Request headers</span></span>
+|<span data-ttu-id="0a27d-120">标头</span><span class="sxs-lookup"><span data-stu-id="0a27d-120">Header</span></span>|<span data-ttu-id="0a27d-121">值</span><span class="sxs-lookup"><span data-stu-id="0a27d-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="19447-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="19447-122">Authorization</span></span>|<span data-ttu-id="19447-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="19447-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="19447-124">接受</span><span class="sxs-lookup"><span data-stu-id="19447-124">Accept</span></span>|<span data-ttu-id="19447-125">application/json</span><span class="sxs-lookup"><span data-stu-id="19447-125">application/json</span></span>|
+|<span data-ttu-id="0a27d-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="0a27d-122">Authorization</span></span>|<span data-ttu-id="0a27d-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="0a27d-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="0a27d-124">接受</span><span class="sxs-lookup"><span data-stu-id="0a27d-124">Accept</span></span>|<span data-ttu-id="0a27d-125">application/json</span><span class="sxs-lookup"><span data-stu-id="0a27d-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="19447-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="19447-126">Request body</span></span>
-<span data-ttu-id="19447-127">在请求正文中，提供 targetedManagedAppConfiguration 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="19447-127">In the request body, supply a JSON representation for the targetedManagedAppConfiguration object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0a27d-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="0a27d-126">Request body</span></span>
+<span data-ttu-id="0a27d-127">在请求正文中，提供 targetedManagedAppConfiguration 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0a27d-127">In the request body, supply a JSON representation for the targetedManagedAppConfiguration object.</span></span>
 
-<span data-ttu-id="19447-128">下表显示创建 targetedManagedAppConfiguration 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="19447-128">The following table shows the properties that are required when you create the targetedManagedAppConfiguration.</span></span>
+<span data-ttu-id="0a27d-128">下表显示创建 targetedManagedAppConfiguration 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="0a27d-128">The following table shows the properties that are required when you create the targetedManagedAppConfiguration.</span></span>
 
-|<span data-ttu-id="19447-129">属性</span><span class="sxs-lookup"><span data-stu-id="19447-129">Property</span></span>|<span data-ttu-id="19447-130">类型</span><span class="sxs-lookup"><span data-stu-id="19447-130">Type</span></span>|<span data-ttu-id="19447-131">说明</span><span class="sxs-lookup"><span data-stu-id="19447-131">Description</span></span>|
+|<span data-ttu-id="0a27d-129">属性</span><span class="sxs-lookup"><span data-stu-id="0a27d-129">Property</span></span>|<span data-ttu-id="0a27d-130">类型</span><span class="sxs-lookup"><span data-stu-id="0a27d-130">Type</span></span>|<span data-ttu-id="0a27d-131">说明</span><span class="sxs-lookup"><span data-stu-id="0a27d-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="19447-132">displayName</span><span class="sxs-lookup"><span data-stu-id="19447-132">displayName</span></span>|<span data-ttu-id="19447-133">字符串</span><span class="sxs-lookup"><span data-stu-id="19447-133">String</span></span>|<span data-ttu-id="19447-134">策略显示名称。</span><span class="sxs-lookup"><span data-stu-id="19447-134">Policy display name.</span></span> <span data-ttu-id="19447-135">继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span><span class="sxs-lookup"><span data-stu-id="19447-135">Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span></span>|
-|<span data-ttu-id="19447-136">description</span><span class="sxs-lookup"><span data-stu-id="19447-136">description</span></span>|<span data-ttu-id="19447-137">String</span><span class="sxs-lookup"><span data-stu-id="19447-137">String</span></span>|<span data-ttu-id="19447-138">策略的说明。</span><span class="sxs-lookup"><span data-stu-id="19447-138">The policy's description.</span></span> <span data-ttu-id="19447-139">继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span><span class="sxs-lookup"><span data-stu-id="19447-139">Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span></span>|
-|<span data-ttu-id="19447-140">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="19447-140">createdDateTime</span></span>|<span data-ttu-id="19447-141">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="19447-141">DateTimeOffset</span></span>|<span data-ttu-id="19447-142">创建策略的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="19447-142">The date and time the policy was created.</span></span> <span data-ttu-id="19447-143">继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span><span class="sxs-lookup"><span data-stu-id="19447-143">Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span></span>|
-|<span data-ttu-id="19447-144">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="19447-144">lastModifiedDateTime</span></span>|<span data-ttu-id="19447-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="19447-145">DateTimeOffset</span></span>|<span data-ttu-id="19447-146">上次修改策略的时间。</span><span class="sxs-lookup"><span data-stu-id="19447-146">Last time the policy was modified.</span></span> <span data-ttu-id="19447-147">继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span><span class="sxs-lookup"><span data-stu-id="19447-147">Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span></span>|
-|<span data-ttu-id="19447-148">id</span><span class="sxs-lookup"><span data-stu-id="19447-148">id</span></span>|<span data-ttu-id="19447-149">字符串</span><span class="sxs-lookup"><span data-stu-id="19447-149">String</span></span>|<span data-ttu-id="19447-150">实体的键。</span><span class="sxs-lookup"><span data-stu-id="19447-150">Key of the entity.</span></span> <span data-ttu-id="19447-151">继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span><span class="sxs-lookup"><span data-stu-id="19447-151">Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span></span>|
-|<span data-ttu-id="19447-152">version</span><span class="sxs-lookup"><span data-stu-id="19447-152">version</span></span>|<span data-ttu-id="19447-153">String</span><span class="sxs-lookup"><span data-stu-id="19447-153">String</span></span>|<span data-ttu-id="19447-154">实体的版本。</span><span class="sxs-lookup"><span data-stu-id="19447-154">Version of the entity.</span></span> <span data-ttu-id="19447-155">继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span><span class="sxs-lookup"><span data-stu-id="19447-155">Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span></span>|
-|<span data-ttu-id="19447-156">customSettings</span><span class="sxs-lookup"><span data-stu-id="19447-156">customSettings</span></span>|<span data-ttu-id="19447-157">[keyValuePair](../resources/intune-mam-keyvaluepair.md) 集合</span><span class="sxs-lookup"><span data-stu-id="19447-157">[keyValuePair](../resources/intune-mam-keyvaluepair.md) collection</span></span>|<span data-ttu-id="19447-158">要发送到配置范围确定的用户应用的一组字符串键和字符串值对，不由此服务更改。继承自 [ managedAppConfiguration ](../resources/intune-mam-managedappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="19447-158">A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service Inherited from [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md)</span></span>|
-|<span data-ttu-id="19447-159">deployedAppCount</span><span class="sxs-lookup"><span data-stu-id="19447-159">deployedAppCount</span></span>|<span data-ttu-id="19447-160">Int32</span><span class="sxs-lookup"><span data-stu-id="19447-160">Int32</span></span>|<span data-ttu-id="19447-161">当前策略部署到的应用的计数。</span><span class="sxs-lookup"><span data-stu-id="19447-161">Count of apps to which the current policy is deployed.</span></span>|
-|<span data-ttu-id="19447-162">isAssigned</span><span class="sxs-lookup"><span data-stu-id="19447-162">isAssigned</span></span>|<span data-ttu-id="19447-163">Boolean</span><span class="sxs-lookup"><span data-stu-id="19447-163">Boolean</span></span>|<span data-ttu-id="19447-164">指示策略是否部署到任何包含组。</span><span class="sxs-lookup"><span data-stu-id="19447-164">Indicates if the policy is deployed to any inclusion groups or not.</span></span>|
+|<span data-ttu-id="0a27d-132">displayName</span><span class="sxs-lookup"><span data-stu-id="0a27d-132">displayName</span></span>|<span data-ttu-id="0a27d-133">String</span><span class="sxs-lookup"><span data-stu-id="0a27d-133">String</span></span>|<span data-ttu-id="0a27d-134">策略显示名称。</span><span class="sxs-lookup"><span data-stu-id="0a27d-134">Policy display name.</span></span> <span data-ttu-id="0a27d-135">继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span><span class="sxs-lookup"><span data-stu-id="0a27d-135">Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span></span>|
+|<span data-ttu-id="0a27d-136">description</span><span class="sxs-lookup"><span data-stu-id="0a27d-136">description</span></span>|<span data-ttu-id="0a27d-137">String</span><span class="sxs-lookup"><span data-stu-id="0a27d-137">String</span></span>|<span data-ttu-id="0a27d-138">策略的说明。</span><span class="sxs-lookup"><span data-stu-id="0a27d-138">The policy's description.</span></span> <span data-ttu-id="0a27d-139">继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span><span class="sxs-lookup"><span data-stu-id="0a27d-139">Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span></span>|
+|<span data-ttu-id="0a27d-140">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="0a27d-140">createdDateTime</span></span>|<span data-ttu-id="0a27d-141">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="0a27d-141">DateTimeOffset</span></span>|<span data-ttu-id="0a27d-142">创建策略的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="0a27d-142">The date and time the policy was created.</span></span> <span data-ttu-id="0a27d-143">继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span><span class="sxs-lookup"><span data-stu-id="0a27d-143">Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span></span>|
+|<span data-ttu-id="0a27d-144">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="0a27d-144">lastModifiedDateTime</span></span>|<span data-ttu-id="0a27d-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="0a27d-145">DateTimeOffset</span></span>|<span data-ttu-id="0a27d-146">上次修改策略的时间。</span><span class="sxs-lookup"><span data-stu-id="0a27d-146">Last time the policy was modified.</span></span> <span data-ttu-id="0a27d-147">继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span><span class="sxs-lookup"><span data-stu-id="0a27d-147">Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span></span>|
+|<span data-ttu-id="0a27d-148">id</span><span class="sxs-lookup"><span data-stu-id="0a27d-148">id</span></span>|<span data-ttu-id="0a27d-149">String</span><span class="sxs-lookup"><span data-stu-id="0a27d-149">String</span></span>|<span data-ttu-id="0a27d-150">实体的键。</span><span class="sxs-lookup"><span data-stu-id="0a27d-150">Key of the entity.</span></span> <span data-ttu-id="0a27d-151">继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span><span class="sxs-lookup"><span data-stu-id="0a27d-151">Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span></span>|
+|<span data-ttu-id="0a27d-152">version</span><span class="sxs-lookup"><span data-stu-id="0a27d-152">version</span></span>|<span data-ttu-id="0a27d-153">String</span><span class="sxs-lookup"><span data-stu-id="0a27d-153">String</span></span>|<span data-ttu-id="0a27d-154">实体的版本。</span><span class="sxs-lookup"><span data-stu-id="0a27d-154">Version of the entity.</span></span> <span data-ttu-id="0a27d-155">继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span><span class="sxs-lookup"><span data-stu-id="0a27d-155">Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)</span></span>|
+|<span data-ttu-id="0a27d-156">customSettings</span><span class="sxs-lookup"><span data-stu-id="0a27d-156">customSettings</span></span>|<span data-ttu-id="0a27d-157">[keyValuePair](../resources/intune-mam-keyvaluepair.md) 集合</span><span class="sxs-lookup"><span data-stu-id="0a27d-157">[keyValuePair](../resources/intune-mam-keyvaluepair.md) collection</span></span>|<span data-ttu-id="0a27d-158">要发送到配置范围确定的用户应用的一组字符串键和字符串值对，不由此服务更改。继承自 [ managedAppConfiguration ](../resources/intune-mam-managedappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="0a27d-158">A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service Inherited from [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md)</span></span>|
+|<span data-ttu-id="0a27d-159">deployedAppCount</span><span class="sxs-lookup"><span data-stu-id="0a27d-159">deployedAppCount</span></span>|<span data-ttu-id="0a27d-160">Int32</span><span class="sxs-lookup"><span data-stu-id="0a27d-160">Int32</span></span>|<span data-ttu-id="0a27d-161">当前策略部署到的应用的计数。</span><span class="sxs-lookup"><span data-stu-id="0a27d-161">Count of apps to which the current policy is deployed.</span></span>|
+|<span data-ttu-id="0a27d-162">isAssigned</span><span class="sxs-lookup"><span data-stu-id="0a27d-162">isAssigned</span></span>|<span data-ttu-id="0a27d-163">Boolean</span><span class="sxs-lookup"><span data-stu-id="0a27d-163">Boolean</span></span>|<span data-ttu-id="0a27d-164">指示策略是否部署到任何包含组。</span><span class="sxs-lookup"><span data-stu-id="0a27d-164">Indicates if the policy is deployed to any inclusion groups or not.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="19447-165">响应</span><span class="sxs-lookup"><span data-stu-id="19447-165">Response</span></span>
-<span data-ttu-id="19447-166">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [targetedManagedAppConfiguration](../resources/intune-mam-targetedmanagedappconfiguration.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="19447-166">If successful, this method returns a `201 Created` response code and a [targetedManagedAppConfiguration](../resources/intune-mam-targetedmanagedappconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="0a27d-165">响应</span><span class="sxs-lookup"><span data-stu-id="0a27d-165">Response</span></span>
+<span data-ttu-id="0a27d-166">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [targetedManagedAppConfiguration](../resources/intune-mam-targetedmanagedappconfiguration.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="0a27d-166">If successful, this method returns a `201 Created` response code and a [targetedManagedAppConfiguration](../resources/intune-mam-targetedmanagedappconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="19447-167">示例</span><span class="sxs-lookup"><span data-stu-id="19447-167">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0a27d-167">示例</span><span class="sxs-lookup"><span data-stu-id="0a27d-167">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="19447-168">请求</span><span class="sxs-lookup"><span data-stu-id="19447-168">Request</span></span>
-<span data-ttu-id="19447-169">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="19447-169">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="0a27d-168">请求</span><span class="sxs-lookup"><span data-stu-id="0a27d-168">Request</span></span>
+<span data-ttu-id="0a27d-169">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="0a27d-169">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/targetedManagedAppConfigurations
 Content-type: application/json
@@ -92,8 +92,8 @@ Content-length: 388
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="19447-170">响应</span><span class="sxs-lookup"><span data-stu-id="19447-170">Response</span></span>
-<span data-ttu-id="19447-p108">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="19447-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="0a27d-170">响应</span><span class="sxs-lookup"><span data-stu-id="0a27d-170">Response</span></span>
+<span data-ttu-id="0a27d-p108">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="0a27d-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -118,6 +118,9 @@ Content-Length: 560
   "isAssigned": true
 }
 ```
+
+
+
 
 
 
