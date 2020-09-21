@@ -3,14 +3,14 @@ title: 创建 userExperienceAnalyticsMetricHistory
 description: 创建新的 userExperienceAnalyticsMetricHistory 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ac109c158205e21e28b2fb8c5defa60ad9b3b576
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 7b5f02c4cb7558c3c3e18661e3978a16227d23b5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793216"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970108"
 ---
 # <a name="create-userexperienceanalyticsmetrichistory"></a>创建 userExperienceAnalyticsMetricHistory
 
@@ -89,6 +89,9 @@ Content-Length: 185
   "metricDateTime": "2017-01-01T00:00:28.4495993-08:00"
 }
 ```
+
+
+
 
 
 

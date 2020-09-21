@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7876b150a61cf3390126ab278c4a77fefc1bab03
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 175ab50057986a84dbfa4e962face3c05147a2c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793100"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968868"
 ---
 # <a name="uninstall-app-for-user"></a>为用户卸载应用
 
@@ -100,3 +100,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

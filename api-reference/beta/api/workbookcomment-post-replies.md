@@ -5,18 +5,18 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7fde36d6d5d40d22009a52ab279f91ce10dd2e8b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fe85d3334cad78f0156c10b0ba3d2863df8fd6f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451397"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968767"
 ---
 # <a name="create-workbookcommentreply"></a>创建 workbookCommentReply
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
-创建新的[workbookCommentReply](../resources/workbookcommentreply.md)对象。
+创建新的 [workbookCommentReply](../resources/workbookcommentreply.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -44,11 +44,11 @@ POST /workbook/comments/{id}/replies
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[workbookCommentReply](../resources/workbookcommentreply.md)对象的 JSON 表示形式。
+在请求正文中，提供 [workbookCommentReply](../resources/workbookcommentreply.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[workbookCommentReply](../resources/workbookcommentreply.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [workbookCommentReply](../resources/workbookcommentreply.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -118,3 +118,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

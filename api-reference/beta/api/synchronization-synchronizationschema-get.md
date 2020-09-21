@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e7b7d961b70be43f569c391660ef567b1852c42d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 136e24507497db7a109272b41d1ad4c11d3b971e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471187"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969170"
 ---
 # <a name="get-synchronizationschema"></a>获取 synchronizationSchema
 
@@ -49,7 +49,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[synchronizationSchema](../resources/synchronization-synchronizationschema.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [synchronizationSchema](../resources/synchronization-synchronizationschema.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -150,3 +150,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

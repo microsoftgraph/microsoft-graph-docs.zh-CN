@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 766415e531c374078938890a85aef8efc16daa62
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 67108d39e0818e04c91bff66f901967e3a9de2aa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517591"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968288"
 ---
 # <a name="get-educationclass"></a>获取 educationClass
 
@@ -118,3 +118,4 @@ Content-length: 224
   "suppressions": [
   ]
 }-->
+

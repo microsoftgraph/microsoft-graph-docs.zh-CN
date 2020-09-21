@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 5e024eb8f912c5daaa25686dfa9a16ff3a195540
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c279d4e5074723a8fac1c37ec326efc9517b95da
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510940"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47967917"
 ---
 # <a name="list-tasks"></a>列出任务
 
@@ -132,3 +132,4 @@ Content-length: 833
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 13612b3bef1d7b466e860d61f0b52eb060547337
-ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
+ms.openlocfilehash: 180907b77679658793b35e72092f0aac3f8988e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47340059"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969037"
 ---
 # <a name="get-team-photo"></a>获取团队照片
 
@@ -173,3 +173,5 @@ GET https://graph.microsoft.com/beta/teams/{id}/photo/240x240/$value
   ]
 }
 -->
+
+

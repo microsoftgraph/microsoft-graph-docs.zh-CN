@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2eb2a971ebca944c11379d0250fb89786a80fa4c
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 27ec47b3926743a4113154ea5a96db911ddb6c2a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107904"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968863"
 ---
 # <a name="delete-a-user"></a>删除用户
 
@@ -105,3 +105,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

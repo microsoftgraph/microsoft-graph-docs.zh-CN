@@ -3,24 +3,24 @@ title: 创建 deviceManagementReportSchedule
 description: 创建新的 deviceManagementReportSchedule 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9cfcdc8202bc6767ef723c47249f42cfba71e1d2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 506ce1a38363e75ae22e683dd0ca31de6ed34d80
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43391624"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969569"
 ---
 # <a name="create-devicemanagementreportschedule"></a>创建 deviceManagementReportSchedule
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)对象。
+创建新的 [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,24 +53,24 @@ POST /deviceManagement/reports/reportSchedules
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|此实体的唯一标识符|
-|reportScheduleName|字符串|计划的名称|
+|id|String|此实体的唯一标识符|
+|reportScheduleName|String|计划的名称|
 |subject|String|已传递的计划报告的主题|
-|电子邮件|String 集合|计划报告传递到的电子邮件|
-|recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|计划报告传递的频率。 可取值为：`none`、`daily`、`weekly`、`monthly`。|
+|电子邮件|String collection|计划报告传递到的电子邮件|
+|定期|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|计划报告传递的频率。 可取值为：`none`、`daily`、`weekly`、`monthly`。|
 |startDateTime|DateTimeOffset|计划报告的开始交付时间|
 |endDateTime|DateTimeOffset|计划报告的结束传递时间|
 |userId|String|创建报表的用户的 Id|
-|reportName|字符串|报告的名称|
-|filter|字符串|在报表上应用的筛选器|
-|select|String 集合|从报告中选择的列|
-|By|String 集合|报表中的列的排序|
+|reportName|String|报告的名称|
+|filter|String|在报表上应用的筛选器|
+|select|String collection|从报告中选择的列|
+|By|String collection|报表中的列的排序|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|计划报告的格式。 可取值为：`csv`、`pdf`。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -134,6 +134,9 @@ Content-Length: 588
   "format": "pdf"
 }
 ```
+
+
+
 
 
 

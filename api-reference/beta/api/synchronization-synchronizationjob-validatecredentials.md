@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cc61dd5eb9d5e012f0fce672eac4f330eb460df3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ceb65ac10fed3dee257893e2629ca137c749cb13
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437510"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969205"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
 
@@ -45,11 +45,11 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|useSavedCredentials|Boolean|时`true`，将`credentials`忽略该参数，而改为验证以前保存的凭据（如果有）。 |
-|凭据|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)集合|要验证的凭据。 当`useSavedCredentials`参数为`true`时忽略。|
+|useSavedCredentials|Boolean|时 `true` ，将 `credentials` 忽略该参数，并且将对以前保存的凭据 (（如果已对任何) 进行验证）。 |
+|凭据|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) 集合|要验证的凭据。 当 `useSavedCredentials` 参数为时忽略 `true` 。|
 
 ## <a name="response"></a>响应
-如果验证成功，此方法将`204, No Content`返回响应代码。 它不在响应正文中返回任何内容。
+如果验证成功，此方法将返回 `204, No Content` 响应代码。 它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 
@@ -112,3 +112,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

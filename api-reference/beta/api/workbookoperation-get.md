@@ -5,16 +5,16 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c5ead367116603a286574a30551134f9176d1477
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 176fceea261e209a533d75fe231cf65c734dbf5a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566169"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968757"
 ---
 # <a name="get-workbookoperation"></a>获取 workbookOperation
 
-检索[workbookOperation](../resources/workbookoperation.md)对象的状态。
+检索 [workbookOperation](../resources/workbookoperation.md) 对象的状态。
 
 ## <a name="permissions"></a>权限
 
@@ -46,7 +46,7 @@ GET workbook/operations/{operation-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[workbookOperation](../resources/workbookoperation.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [workbookOperation](../resources/workbookoperation.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -146,3 +146,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

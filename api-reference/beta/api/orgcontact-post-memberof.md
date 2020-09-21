@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 187c8a866d4fe66721f7fde782cc976bab4d9a76
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 4f523427d14f5ae5fdba4eeee33399d895277229
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44680668"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969429"
 ---
 # <a name="create-memberof"></a>创建 memberOf
 
@@ -19,7 +19,7 @@ ms.locfileid: "44680668"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用此 API 创建新的 memberOf。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -108,3 +108,5 @@ Content-length: 51
   ]
 }
 -->
+
+

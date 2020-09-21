@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 59b279d115c8815809fae97504eb0af3ef2e8d5d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a30ecf1b705dd2e2c1aab9cc8fb33c9c25a067ea
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471165"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969161"
 ---
 # <a name="update-synchronizationschema"></a>更新 synchronizationSchema
 
@@ -44,11 +44,11 @@ PUT /applications/{id}/synchronization/templates/{templateId}/schema
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[synchronizationSchema](../resources/synchronization-synchronizationschema.md)对象以将现有架构替换为。
+在请求正文中，提供 [synchronizationSchema](../resources/synchronization-synchronizationschema.md) 对象以将现有架构替换为。
 
 ## <a name="response"></a>响应
 
-如果成功，则返回`204 No Content`响应代码。 它不在响应正文中返回任何内容。
+如果成功，则返回 `204 No Content` 响应代码。 它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 
@@ -147,3 +147,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

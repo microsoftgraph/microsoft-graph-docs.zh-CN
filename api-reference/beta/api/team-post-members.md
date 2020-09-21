@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5a6a397e0b9f1b74d657e55354c03f062c8364dd
-ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
+ms.openlocfilehash: 70b067b16438fb869f0c84932c5a9568f2fd0232
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45142435"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969000"
 ---
 # <a name="create-members"></a>创建成员
 命名空间：microsoft.graph
@@ -111,3 +111,5 @@ Content-type: application/json
     "email": "CameronW@M365x987948.OnMicrosoft.com"
 }
 ```
+
+

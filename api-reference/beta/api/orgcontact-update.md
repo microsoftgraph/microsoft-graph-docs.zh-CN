@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: aa9704c44dc8dc7068bf387b97669e2c42aecdd2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 189a1d9274f3a0a77392bb1ebca04911c7bf2c0a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43403222"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969434"
 ---
 # <a name="update-orgcontact"></a>更新 orgcontact
 
@@ -43,28 +43,28 @@ PATCH /contacts/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|city|字符串||
-|country|字符串||
-|department|字符串||
+|城市|String||
+|country|String||
+|department|String||
 |onPremisesSyncEnabled|Boolean||
-|displayName|字符串||
-|givenName|字符串||
-|jobTitle|字符串||
+|displayName|String||
+|givenName|String||
+|jobTitle|String||
 |onPremisesLastSyncDateTime|DateTimeOffset||
 |mail|String||
-|mailNickname|字符串||
-|mobilePhone|字符串||
-|officeLocation|字符串||
-|postalCode|字符串||
+|mailNickname|String||
+|mobilePhone|String||
+|officeLocation|String||
+|postalCode|String||
 |proxyAddresses|String||
-|state|字符串||
-|streetAddress|字符串||
+|state|String||
+|streetAddress|String||
 |surname|String||
 |businessPhones|String collection||
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[orgContact](../resources/orgcontact.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [orgContact](../resources/orgcontact.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -141,3 +141,5 @@ Content-length: 222
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e5559e2c581e573e8154168ba5bd1db39cdb536e
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 9e9cedfa435d235baa7099c5755fc6bead5c2aaa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896474"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968927"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -137,3 +137,5 @@ Content-length: 39
   ]
 }
 -->
+
+

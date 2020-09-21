@@ -5,20 +5,20 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5e2864a36db568184557340a44a5c447da44ec80
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a043b34a12d388b29e0301308e34781eb1baaa90
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451446"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968855"
 ---
 # <a name="get-workbookapplication"></a>获取 workbookApplication
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[workbookApplication](../resources/workbookapplication.md)对象的属性和关系。
+检索 [workbookApplication](../resources/workbookapplication.md) 对象的属性和关系。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -46,7 +46,7 @@ GET /workbook/application
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[workbookApplication](../resources/workbookapplication.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookApplication](../resources/workbookapplication.md) 对象。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面是一个请求示例。
@@ -105,3 +105,5 @@ Content-length: 48
   ]
 }
 -->
+
+

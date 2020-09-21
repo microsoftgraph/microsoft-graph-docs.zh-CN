@@ -1,16 +1,16 @@
 ---
 title: 'synchronizationSchema: parseExpression'
-description: '(../resources/synchronization_attributemappingsource）对象。 '
+description: " ( .。。/resources/synchronization_attributemappingsource) 对象。 "
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 303be61d58d8b132d6aeb91aeee0406620f53f3a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0ad35d176f2807b2daedc7296a2adc657a285b6f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471180"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969156"
 ---
 # <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: parseExpression
 
@@ -18,9 +18,9 @@ ms.locfileid: "43471180"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将给定的字符串表达式分析为[attributeMappingSource](../resources/synchronization-attributemappingsource.md)对象。
+将给定的字符串表达式分析为 [attributeMappingSource](../resources/synchronization-attributemappingsource.md) 对象。
 
-有关表达式的详细信息，请参阅[在 Azure Active Directory 中编写属性映射的表达式](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)。
+有关表达式的详细信息，请参阅 [在 Azure Active Directory 中编写属性映射的表达式](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,7 +53,7 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 |targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |将映射到此表达式的属性的定义。 可选。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -205,3 +205,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

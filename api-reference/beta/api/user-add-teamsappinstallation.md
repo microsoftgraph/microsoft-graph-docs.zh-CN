@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: efafaa5643f130f087edfdf730cae5d0503a3c85
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 6a79d338af74ab96fb92f596c9413f0b8161539d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793101"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968974"
 ---
 # <a name="install-app-for-user"></a>为用户安装应用
 
@@ -110,3 +110,5 @@ HTTP/1.1 201 Created
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

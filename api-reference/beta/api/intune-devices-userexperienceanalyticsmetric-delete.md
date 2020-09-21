@@ -3,14 +3,14 @@ title: 删除 userExperienceAnalyticsMetric
 description: 删除 userExperienceAnalyticsMetric。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 663eb0801ac02205fa5159439ffea0ad869ee99e
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 44bb8f2bb435c9dac4b6a3d14a3a5f35f02a5b62
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46789893"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970143"
 ---
 # <a name="delete-userexperienceanalyticsmetric"></a>删除 userExperienceAnalyticsMetric
 
@@ -69,6 +69,9 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalytics
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

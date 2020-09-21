@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2b9840ba7d543a01a8ed458489cf91c257c9f71f
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: bff62225e00f2c42dca1462dee18a110d63ac90c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124105"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969002"
 ---
 # <a name="list-members"></a>列出成员
 命名空间：microsoft.graph
@@ -122,3 +122,5 @@ Content-Type: application/json
     ]
 }
 ```
+
+

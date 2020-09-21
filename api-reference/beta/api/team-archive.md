@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5eced3dfe4a796f5d6db9340a1db819a7de4781f
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: 5b5a6ac62098e2d5f2bba21c0bc32c7045cb9930
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524357"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969051"
 ---
 # <a name="archive-team"></a>存档团队
 
@@ -32,11 +32,11 @@ ms.locfileid: "46524357"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamSettings、Group 写全部、所有的 ReadWrite。 All |
+|委派（工作或学校帐户） | TeamSettings.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | TeamSettings *、TeamSettings、all、ReadWrite、all、all、All、All |
 
-> **注意**：标记为 * 的权限使用[特定于资源的同意](https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于[特定于资源的同意](https://aka.ms/teams-rsc)。
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
@@ -57,7 +57,7 @@ POST /teams/{id}/archive
     "shouldSetSpoSiteReadOnlyForMembers": true
 }
 ```
-此可选参数定义是否在与团队关联的 SharePoint Online 网站上将工作组成员的权限设置为只读。 如果将其设置为 false 或完全省略正文，将导致跳过此步骤。
+此可选参数定义了是否在与团队关联的 SharePoint Online 网站上将团队成员的权限设置为“只读”。 如果将其设置为 false 或完全省略正文，将导致跳过此步骤。
 
 ## <a name="response"></a>响应
 
@@ -113,3 +113,5 @@ Content-Length: 0
   "suppressions": []
 }
 -->
+
+

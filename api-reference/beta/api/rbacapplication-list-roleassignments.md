@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 525fa925ae3c953908138de2e2d61ff921df057f
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 6586de66b1e56820427ca2d6e5c0cdf9d70cc0de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45007120"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969303"
 ---
 # <a name="list-unifiedroleassignments"></a>列出 unifiedRoleAssignments
 
@@ -18,7 +18,7 @@ ms.locfileid: "45007120"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取提供程序的[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象的列表。
+获取提供程序的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ GET /roleManagement/directory/roleAssignments
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此操作需要 `$filter` 查询参数。 您可以对 `roleDefinitionId` 或属性进行筛选 `principalId` 。 该 `roleDefinitionId` 属性可以是角色对象 id，也可以是角色模板对象 id。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此操作需要 `$filter` 查询参数。 您可以对 `roleDefinitionId` 或属性进行筛选 `principalId` 。 该 `roleDefinitionId` 属性可以是角色对象 id，也可以是角色模板对象 id。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /roleManagement/directory/roleAssignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$f
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 <!-- {
   "blockType": "response",
@@ -285,3 +285,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

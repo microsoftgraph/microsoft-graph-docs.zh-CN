@@ -5,21 +5,21 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 30f4a700d90f3a323117caac3fbf981d6f8318e1
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: d5a4ce624de5bbea2e2dc444c4395c9050cc4c1a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383852"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968309"
 ---
 # <a name="application-removekey"></a>应用程序： removeKey
 
 命名空间：microsoft.graph
 
-从[应用程序](../resources/application.md)中删除密钥凭据。 应用程序可以使用此方法和[addKey](application-addkey.md)自动滚动其过期密钥。
+从 [应用程序](../resources/application.md)中删除密钥凭据。 应用程序可以使用此方法和 [addKey](application-addkey.md) 自动滚动其过期密钥。
 
 > [!NOTE]
-> [Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) And [update servicePrincipal](../api/serviceprincipal-update.md)操作可继续用于添加和更新应用程序或用户上下文的任何应用程序的密钥凭据。
+> [Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) And [update servicePrincipal](../api/serviceprincipal-update.md) 操作可继续用于添加和更新应用程序或用户上下文的任何应用程序的密钥凭据。
 
 作为此方法的请求验证的一部分，在可以执行操作之前，将验证已拥有现有密钥的证明。
 
@@ -53,10 +53,10 @@ POST /applications/{id}/removeKey
 
 在请求正文中，提供以下必需属性。
 
-| 属性  | 类型 | Description|
+| 属性  | 类型 | 说明|
 |:----------|:-----|:-----------|
 | keyId     | GUID | 密码的唯一标识符。|
-| 证明 | String | 自签名的 JWT 令牌，用作已有密钥的所有权证明。 必须使用应用程序的现有有效证书之一的私钥对此 JWT 令牌进行签名。 令牌应包含以下声明：<ul><li>`aud`-需要访问群体 `00000002-0000-0000-c000-000000000000` 。</li><li>`iss`-颁发者必须是正在进行呼叫的应用程序的__id__ 。</li><li>`nbf`-不早时间。</li><li>`exp`-过期时间应为 "nbf" + 10 分钟。</li></ul><br>下面是可用于生成此已占有令牌证明的代码[示例](/graph/application-rollkey-prooftoken)。|
+| 证明 | String | 自签名的 JWT 令牌，用作已有密钥的所有权证明。 此 JWT 令牌必须使用应用程序现有有效证书之一的私钥进行签名。 令牌应包含以下声明：<ul><li>`aud` - 受众需要是 `00000002-0000-0000-c000-000000000000`。</li><li>`iss` -颁发者必须是正在进行呼叫的应用程序的 __ID__。</li><li>`nbf` -“不早于”时间。</li><li>`exp` - 过期时间应该是“不早于”+ 10 分钟。</li></ul><br>下面是可用于生成此已占有令牌证明的代码 [示例](/graph/application-rollkey-prooftoken) 。|
 
 ## <a name="response"></a>响应
 
@@ -127,3 +127,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

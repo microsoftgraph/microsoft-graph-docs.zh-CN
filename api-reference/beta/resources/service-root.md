@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: ''
 author: MSGraphDocsVteam
-ms.openlocfilehash: 32149f2f94c383cc2cfe6667396d52321a9c2bfa
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c800d75b3802d73cb0b7da4ef62d25141f9ebdee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808646"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968353"
 ---
 # <a name="service-root"></a>服务根
 
@@ -53,3 +53,5 @@ ms.locfileid: "46808646"
   "suppressions": []
 }
 -->
+
+

@@ -5,20 +5,20 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bd3f5ed410fb7ba2294fb57f4cd7bdb065f99981
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 3b38007e3482e5cd35bf239deb8a6a823c99702e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289663"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47968295"
 ---
 # <a name="application-removepassword"></a>应用程序： removePassword
 
 命名空间：microsoft.graph
 
-删除[应用程序](../resources/application.md)中的密码。
+删除 [应用程序](../resources/application.md)中的密码。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -45,7 +45,7 @@ POST /applications/{id}/removePassword
 
 ## <a name="request-body"></a>请求正文
 
-| 属性  | 类型 | Description|
+| 属性  | 类型 | 说明|
 |:----------|:-----|:-----------|
 | keyId     | GUID | 密码的唯一标识符。 必需。 |
 
@@ -117,3 +117,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

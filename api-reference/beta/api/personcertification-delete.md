@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: da30a5b3646dc5b72ccc726740d6ad7f076490d1
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 24183622b540934bdf6007d1fe4b3508de323a17
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812949"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969293"
 ---
 # <a name="delete-personcertification"></a>删除 personCertification
 命名空间：microsoft.graph
@@ -86,3 +86,5 @@ DELETE https://graph.microsoft.com/beta/user/{userId}/profile/certifications/{id
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+

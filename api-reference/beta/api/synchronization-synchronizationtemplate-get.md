@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e0f5ff93cc87bd5c4cca2ada9891ba8ce4d02ac4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cbbbc56b78523b88edd1d958179f6a479aa5163f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471158"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969135"
 ---
 # <a name="get-synchronizationtemplate"></a>获取 synchronizationTemplate
 
@@ -48,7 +48,7 @@ GET servicePrincipals/{id}/synchronization/templates/{templateId}
 
 ### <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) 对象。
 
 ### <a name="example"></a>示例
 
@@ -74,3 +74,5 @@ HTTP/1.1 200 OK
         }
 }
 ```
+
+
