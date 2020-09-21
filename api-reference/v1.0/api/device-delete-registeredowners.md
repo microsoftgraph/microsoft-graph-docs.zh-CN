@@ -5,12 +5,12 @@ localization_priority: Normal
 author: michaelrm97
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3763b566bc479afdaa85faeb946153efdd30e264
-ms.sourcegitcommit: 9c1abb1c87177da20e1f5bbf1fae8131ab7e4f16
+ms.openlocfilehash: afad1b2c93d552cbb3dfe2f63dc0509fd3faf5d6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45146716"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013403"
 ---
 # <a name="delete-registeredowner"></a>删除 registeredOwner
 
@@ -60,6 +60,24 @@ DELETE /devices/{id}/registeredOwners/{id}/$ref
 ```msgraph-interactive
 DELETE https://graph.microsoft.com/v1.0/devices/{id}/registeredOwners/{id}/$ref
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-registeredowners-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-registeredowners-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-registeredowners-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-registeredowners-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
@@ -86,3 +104,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

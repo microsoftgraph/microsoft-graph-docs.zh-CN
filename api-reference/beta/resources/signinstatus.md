@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: SarahBar
-ms.openlocfilehash: 7cb48f7a4235b28231ab93fc3ccfba074f80d286
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 339041f4fa332efdf949ed5d3c4cad1ad6fdcf2c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808597"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067112"
 ---
 # <a name="signinstatus-resource-type"></a>signInStatus 资源类型
 
@@ -55,3 +55,5 @@ ms.locfileid: "46808597"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

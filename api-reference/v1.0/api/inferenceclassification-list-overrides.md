@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: a0a54566f2fd51c226e849be108125fd358edc08
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 38f888d1375aef53f5a407e006eae5de8da5641c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806171"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033375"
 ---
 # <a name="list-overrides"></a>列出替代
 
@@ -121,3 +121,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

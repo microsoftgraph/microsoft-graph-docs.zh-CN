@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f62adf38b0c417871f207f20ab8eb5bcb530af82
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 5433504aec92d8fb96a00857ff4e27c7bfc200c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124516"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973398"
 ---
 # <a name="update-a-group-setting"></a>更新组设置
 
@@ -27,7 +27,7 @@ ms.locfileid: "43124516"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Directory.ReadWrite.All |
+|应用程序 | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ PATCH /groups/{id}/settings/{id}
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-| 值 | [settingValue](../resources/settingvalue.md)集合 | 更新的值集。 您必须包含整个集合集。 您不能更新单个值集。 |
+| 值 | [settingValue](../resources/settingvalue.md) 集合 | 更新的值集。 您必须包含整个集合集。 您不能更新单个值集。 |
 
 ## <a name="response"></a>响应
 
@@ -59,7 +59,7 @@ PATCH /groups/{id}/settings/{id}
 
 ### <a name="example-1-update-a-tenant-wide-group-setting"></a>示例1：更新租户范围内的组设置
 
-在此示例中`{id}` ，是租户范围的 groupSetting 对象的标识符。
+在此示例中， `{id}` 是租户范围的 groupSetting 对象的标识符。
 
 #### <a name="request"></a>请求
 
@@ -167,7 +167,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-update-a-specific-group-setting"></a>示例2：更新特定的组设置
 
-在此示例中，请求`{id}`中的第一个是组的标识符，第二个`{id}`是 groupSetting 对象的标识符。
+在此示例中，请求中的第一个 `{id}` 是组的标识符，第二个 `{id}` 是 groupSetting 对象的标识符。
 
 #### <a name="request"></a>请求
 
@@ -232,3 +232,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

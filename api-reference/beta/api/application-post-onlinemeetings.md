@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 30f15f495fc73f0d976da820b43c10a88b3d5f9c
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 1450e7784394c175209ef1c5524871d029a49981
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509523"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47842783"
 ---
 # <a name="create-onlinemeeting"></a>创建 onlineMeeting
 
@@ -18,34 +18,45 @@ ms.locfileid: "46509523"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表用户使用用户令牌中的对象 ID (OID) 创建联机会议。
+通过在用户令牌（委托权限）或请求路径（应用程序权限）中使用对象 ID (OID)，代表用户创建联机会议。
 
 > **注意**：会议不会显示在用户的日历上。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 权限（从最低特权到最高特权） |
-|:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | OnlineMeetings.ReadWrite                    |
-| 委派（个人 Microsoft 帐户） | 不支持。                               |
-| 应用程序                            | 不支持。\* |
+| 权限类型                        | 权限（从最低特权到最高特权）           |
+| :------------------------------------- | :---------------------------------------------------- |
+| 委派（工作或学校帐户）     | OnlineMeetings.ReadWrite                              |
+| 委派（个人 Microsoft 帐户） | 不支持。                                        |
+| 应用程序                            | OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All* |
 
 > [!IMPORTANT]
-> \* 在不久的将来将提供通过应用程序令牌创建联机会议的支持。 我们将提供其他应用程序策略，它们对基于应用程序的权限范围有补充。 目前必须将 /me 路径与用户令牌一起使用。
+> \* 管理员必须创建[应用程序访问策略](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md)并将其授予用户，才能授权在此策略中配置的应用代表该用户（在请求路径中指定的用户 ID）创建联机会议。
 
 ## <a name="http-request"></a>HTTP 请求
+
+使用委派令牌时的请求：
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings
 ```
 
+使用应用程序令牌时的请求：
+<!-- { "blockType": "ignored" } -->
+```http
+POST /users/{userId}/onlineMeetings
+```
+
+> **注意：** `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅[应用程序访问策略](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md)。
+
 ## <a name="request-headers"></a>请求标头
-| 名称          | 说明               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}。必需。 |
-| Content-type  | application/json. Required. |
-| Accept-Language  | 语言。 可选。 |
+
+| 名称            | 说明                 |
+| :-------------- | :-------------------------- |
+| Authorization   | Bearer {token}。必需。   |
+| Content-type    | application/json. Required. |
+| Accept-Language | 语言。 可选。         |
 
 如果请求包含 `Accept-Language` HTTP 标头，`joinInformation` 的 `content` 将采用 `Accept-Language` 标头中指定的语言和区域设置变量中。 默认内容将为英语。
 

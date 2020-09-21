@@ -5,12 +5,12 @@ localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: fb06e9dfe56edb0e7882d0cdce8ee4564375ed93
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d4dd1bc6a84b1d3e5f1b412986de686c9e6f5312
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440560"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979474"
 ---
 # <a name="emailappusageappsusercounts-resource-type"></a>emailAppUsageAppsUserCounts 资源类型
 
@@ -56,3 +56,5 @@ ms.locfileid: "43440560"
   "reportPeriod": "String"
 }
 ```
+
+

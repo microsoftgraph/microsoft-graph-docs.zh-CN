@@ -3,14 +3,14 @@ title: comanagedDevicesSummary 资源类型
 description: Co 托管设备的摘要数据
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e12a946db3e568faa171fa53299e6ec3546d455
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 42a92fd725c9f0b99037825c240dd017bf6c9c82
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791790"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060774"
 ---
 # <a name="comanageddevicessummary-resource-type"></a>comanagedDevicesSummary 资源类型
 
@@ -59,6 +59,9 @@ Co 托管设备的摘要数据
   "totalComanagedCount": 1024
 }
 ```
+
+
+
 
 
 

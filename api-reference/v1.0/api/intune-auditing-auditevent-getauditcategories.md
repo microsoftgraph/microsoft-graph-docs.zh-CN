@@ -3,14 +3,14 @@ title: getAuditCategories 函数
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a7c8b4e9ec640798e01cf2b92ec85a3a2cce5150
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: bd4d0616278234441525c24484d7e8bb8eec1d80
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43470505"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966112"
 ---
 # <a name="getauditcategories-function"></a>getAuditCategories 函数
 
@@ -27,7 +27,7 @@ ms.locfileid: "43470505"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -71,6 +71,9 @@ Content-Length: 57
   ]
 }
 ```
+
+
+
 
 
 

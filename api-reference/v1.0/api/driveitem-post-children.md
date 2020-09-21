@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 使用指定的父项或路径在驱动器中新建文件夹或 DriveItem。
 doc_type: apiPageType
-ms.openlocfilehash: 33a925f02bb70473bb2d5c1518d7de3b3085502d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d57162189315d760d523e3ae3504fbd9660a5bd9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517690"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073278"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>在驱动器中新建文件夹
 
@@ -147,3 +147,4 @@ Content-Type: application/json
   "suppressions": [
   ]
 } -->
+

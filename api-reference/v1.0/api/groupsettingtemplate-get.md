@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 019f948a9c540670e485128c1093c1374fc47d87
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 109a63a026fbacc88e89d5f65166fc19a1a8e96c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124530"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973370"
 ---
 # <a name="get-a-group-setting-template"></a>获取组设置模板
 
@@ -131,3 +131,4 @@ Content-length: 1341
   "suppressions": [
   ]
 }-->
+

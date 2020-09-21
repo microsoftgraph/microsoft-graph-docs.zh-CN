@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d1a2de9dcac9765899fa3eaff6173a3791984ade
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: f97d4d86b2cd66bc62e23dc1f99622ed7af2084c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630317"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067081"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Azure AD 同步 API 概述
 
@@ -34,17 +34,17 @@ Azure Active Directory (Azure AD) identity 同步 (也称为 "设置" ) 允许�
 * [使用 Azure Active Directory 实现用户预配和预配到 SaaS 应用程序的自动化](/azure/active-directory/active-directory-saas-app-provisioning)
 * [在 Azure 门户中管理企业应用的用户帐户设置](/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
 
-您还可以在示例租户或您自己的租户中的[Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中尝试 API。
+您还可以在示例租户或您自己的租户中的 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer) 中尝试 API。
 
 ## <a name="synchronization-job"></a>同步作业
 
 同步作业通过定期在后台运行、轮询一个目录中的更改并将它们推送到另一个目录来执行同步。 同步作业始终特定于租户中的应用程序的特定实例。 作为同步作业安装程序的一部分，您需要授予在目标目录中读取和写入对象的权限，并自定义作业的同步架构。
 
-有关详细信息，请参阅[同步作业](synchronization-synchronizationjob.md)。
+有关详细信息，请参阅 [同步作业](synchronization-synchronizationjob.md)。
 
 ## <a name="synchronization-schema"></a>同步架构
 
-同步架构定义哪些对象将被同步以及它们的同步方式。 同步架构包含特定同步作业的大部分安装信息。 通常情况下，您将自定义一些[属性映射](synchronization-attributemapping.md)，或添加[作用域筛选器](synchronization-filter.md)以仅同步满足特定条件的对象。
+同步架构定义哪些对象将被同步以及它们的同步方式。 同步架构包含特定同步作业的大部分安装信息。 通常情况下，您将自定义一些 [属性映射](synchronization-attributemapping.md)，或添加 [作用域筛选器](synchronization-filter.md) 以仅同步满足特定条件的对象。
 
 同步架构包括以下组件：
 
@@ -52,21 +52,21 @@ Azure Active Directory (Azure AD) identity 同步 (也称为 "设置" ) 允许�
 - 同步规则
 - 对象映射
 
-有关详细信息，请参阅[同步架构](synchronization-synchronizationschema.md)。
+有关详细信息，请参阅 [同步架构](synchronization-synchronizationschema.md)。
 
 ## <a name="synchronization-template"></a>同步模板
 
-同步模板为特定应用程序提供了预配置的同步设置。 这些设置 (最重要的是，默认情况下，[同步架构](synchronization-synchronizationschema.md)) 将用于任何基于该模板的[同步作业](synchronization-synchronizationjob.md)。 模板由应用程序开发人员指定。
+同步模板为特定应用程序提供了预配置的同步设置。 这些设置 (最重要的是，默认情况下， [同步架构](synchronization-synchronizationschema.md)) 将用于任何基于该模板的 [同步作业](synchronization-synchronizationjob.md) 。 模板由应用程序开发人员指定。
 
-有关详细信息，请参阅[同步模板](synchronization-synchronizationtemplate.md)。
+有关详细信息，请参阅 [同步模板](synchronization-synchronizationtemplate.md)。
 
 ## <a name="working-with-the-synchronization-api"></a>使用同步 API
 
-使用同步 API 主要涉及访问[synchronizationJob](synchronization-synchronizationjob.md)和[synchronizationSchema](synchronization-synchronizationschema.md)资源。 若要查找您的[synchronizationJob](synchronization-synchronizationjob.md)资源，您需要知道同步作业所属的服务主体对象的 ID。 下面的示例展示了如何使用**synchronizationJob**和**synchronizationSchema**资源。
+使用同步 API 主要涉及访问 [synchronizationJob](synchronization-synchronizationjob.md) 和 [synchronizationSchema](synchronization-synchronizationschema.md) 资源。 若要查找您的 [synchronizationJob](synchronization-synchronizationjob.md) 资源，您需要知道同步作业所属的服务主体对象的 ID。 下面的示例展示了如何使用 **synchronizationJob** 和 **synchronizationSchema** 资源。
 
 ### <a name="authorization"></a>Authorization
 
-Azure AD 同步 API 使用 OAuth 2.0 进行授权。 在向 API 发出任何请求之前，你需要获取访问令牌。 有关详细信息，请参阅[获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview)。 若要访问同步资源，应用程序需要使用目录 ReadWrite。所有权限。 有关详细信息，请参阅[Directory 权限](/graph/permissions-reference#directory-permissions)。
+Azure AD 同步 API 使用 OAuth 2.0 进行授权。 在向 API 发出任何请求之前，你需要获取访问令牌。 有关详细信息，请参阅 [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview)。 若要访问同步资源，应用程序需要使用目录 ReadWrite。所有权限。 有关详细信息，请参阅 [Directory 权限](/graph/permissions-reference#directory-permissions)。
 
 ### <a name="find-the-service-principal-object-by-display-name"></a>按显示名称查找服务主体对象
 
@@ -205,6 +205,8 @@ HTTP/1.1 200 OK
 
 * [配置与目录扩展属性的同步](../resources/synchronization-configure-with-directory-extension-attributes.md)
 * [配置与自定义目标属性的同步](../resources/synchronization-configure-with-custom-target-attributes.md)
+
+
 
 
 

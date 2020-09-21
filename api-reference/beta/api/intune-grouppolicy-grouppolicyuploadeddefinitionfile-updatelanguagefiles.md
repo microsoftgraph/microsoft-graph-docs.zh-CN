@@ -3,20 +3,20 @@ title: updateLanguageFiles 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 631a147bf095930f12b729ae0ab79e01f1bffa91
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 99521a5031e31cdcbc4ed22b5652577686c69ff2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440888"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040593"
 ---
 # <a name="updatelanguagefiles-action"></a>updateLanguageFiles 操作
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,7 +53,7 @@ POST /deviceManagement/groupPolicyUploadedDefinitionFiles/{groupPolicyUploadedDe
 
 |属性|类型|说明|
 |:---|:---|:---|
-|groupPolicyUploadedLanguageFiles|[groupPolicyUploadedLanguageFile](../resources/intune-grouppolicy-grouppolicyuploadedlanguagefile.md)集合|尚未记录|
+|groupPolicyUploadedLanguageFiles|[groupPolicyUploadedLanguageFile](../resources/intune-grouppolicy-grouppolicyuploadedlanguagefile.md) 集合|尚未记录|
 
 
 
@@ -89,6 +89,9 @@ Content-length: 347
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

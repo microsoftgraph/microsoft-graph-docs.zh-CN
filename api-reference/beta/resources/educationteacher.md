@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 4cd8b11d5f398177ec301e6cb7d834268e97c005
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: a2eae690076553090dbd32f46f0b777a998b615d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909702"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979537"
 ---
 # <a name="educationteacher-resource-type"></a>educationTeacher 资源类型
 
@@ -61,3 +61,5 @@ ms.locfileid: "44909702"
   "suppressions": []
 }
 -->
+
+

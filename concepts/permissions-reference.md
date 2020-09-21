@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 3bed252af8ecbbcd4e54d34a4f5dcf53fd0a323f
-ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
+ms.openlocfilehash: 8f1edef15b236bff614077cdddbb66603a6f3fc0
+ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47439869"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47842972"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -1188,8 +1188,10 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 
 |权限    |显示字符串   |说明 |需经过管理员同意 |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_OnlineMeetings.Read.All_|从应用阅读联机会议详细信息 |允许应用在没有登录用户的情况下读取组织中的 VTC 相关联机会议详细信息。|是|
+|_OnlineMeetings.Read.All_|从应用阅读联机会议详细信息 |允许应用在没有已登录用户的情况下读取组织中的联机会议详细信息。|是|
 |_OnlineMeetings.ReadWrite.All_|从应用阅读联机会议详细信息|使应用在无登录用户的情况下创建，阅读在线会议。|是|
+
+> **重要**管理员可以配置[应用程序访问策略](cloud-communication-online-meeting-application-access-policy.md)以允许应用代表用户访问联机会议。
 
 ### <a name="example-usage"></a>用法示例
 
@@ -1200,8 +1202,14 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 
 #### <a name="application"></a>应用程序
 
-* _OnlineMeetings.Read.All_：检索[联机会议](/graph/api/onlinemeeting-get?view=graph-rest-beta)的属性和关系 (`GET /beta/communications/onlinemeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'`)。
-
+* _OnlineMeetings.Read.All_
+  * 检索[联机会议](/graph/api/onlinemeeting-get?view=graph-rest-beta)的属性和关系 (`GET /beta/communications/onlinemeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'`)。
+  * 代表用户检索[联机会议](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`GET /beta/users/{userId}/onlineMeetings/{id})
+* _OnlineMeetings.ReadWrite.All_
+  * 代表用户创建[联机会议](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`POST /beta/users/{userId}/onlineMeetings/)
+  * 代表用户更新[联机会议](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`PATCH /beta/users/{userId}/onlineMeetings/{id})
+  * 代表用户删除[联机会议](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`DELETE /beta/users/{userId}/onlineMeetings/{id})
+  
 > **注意**：创建[联机会议](/graph/api/application-post-onlinemeetings?view=graph-rest-beta)时会代表用户创建一个会议，但不会在该用户的日历上显示该会议。
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
@@ -1573,6 +1581,24 @@ _ProgramControl.Read.All_ 和 _ProgramControl.ReadWrite.All_ 仅对工作或学�
 
 - _SecurityEvents.Read.All_：从对租户可用的所有许可安全提供程序中读取所有安全警报的列表 (`GET /beta/security/alerts`)
 - _SecurityEvents.ReadWrite.All_：更新或读取对租户可用的所有许可安全提供程序中的安全警报 (`PATCH /beta/security/alerts/{id}`)
+
+---
+
+## <a name="short-notes-permissions-private-preview"></a>简短注释权限（[个人预览版](#permissions-availability-status)）
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串  | 说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ShortNotes.Read_ | 阅读已登录用户的简短注释 | 允许应用读取登录用户有权访问的所有简短注释。 | 否 | 是 |
+| _ShortNotes.ReadWrite_ | 阅读、创建、编辑和删除已登录用户的简短注释 | 允许应用阅读、创建、编辑和删除已登录用户的简短注释。 | 否 | 是 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _ShortNotes.Read.All_ | 阅读所有用户的简短注释 | 允许应用在没有已登录用户的情况下读取所有简短注释。 | 是 | 
+| _ShortNotes.ReadWrite.All_ | 阅读、创建、编辑和删除所有用户的简短注释 | 允许应用阅读、创建、编辑和删除已登录用户的所有简短注释。 | 是 |
 
 ---
 

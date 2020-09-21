@@ -5,12 +5,12 @@ localization_priority: Normal
 author: learafa
 ms.prod: files
 doc_type: apiPageType
-ms.openlocfilehash: c25049e05b31d473b98f7118ae4cb9b49edc3681
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 4b7198543c97fdb59179a2898ddcc367feb6c19d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808422"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073255"
 ---
 # <a name="driveitem-restore"></a>driveItem： restore
 
@@ -26,7 +26,7 @@ ms.locfileid: "46808422"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | Files.ReadWrite.All |
-| Application                            | Files.ReadWrite.All |
+| 应用程序                            | Files.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -130,3 +130,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Items/Restore"
 }-->
+

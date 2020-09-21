@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 884c39273d8d474a228cd8f4a8f2b321950e8caf
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 7c32f3bc22d2357c0eca88e6f693cd958a6dd5ae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217547"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013452"
 ---
 # <a name="synchronizationerror-resource-type"></a>synchronizationError 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "43217547"
 <!-- Add descriptions for the properties. -->
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|code|字符串||
+|code|String||
 |message|String||
 |tenantActionable|Boolean||
 
@@ -62,3 +62,5 @@ ms.locfileid: "43217547"
   "suppressions": []
 }
 -->
+
+

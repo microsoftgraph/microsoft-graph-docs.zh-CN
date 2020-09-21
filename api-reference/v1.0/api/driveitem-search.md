@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 在项目层次结构中搜索与查询匹配的项目。
 doc_type: apiPageType
-ms.openlocfilehash: 0abdd3f1f509a7c1692356888fddf805ff9833c5
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.openlocfilehash: 057100295bb73996b1834ffdc81446b25e803289
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091380"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073234"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>搜索驱动器内的 DriveItems
 
@@ -195,3 +195,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+

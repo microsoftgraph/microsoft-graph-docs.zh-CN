@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 37415dbaef870af14104db19006c7a8d74cea5a7
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: c2bb711827e730c9a43e36abce2a09c0c1db1bdf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199875"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033438"
 ---
 # <a name="list-identityproviders"></a>列出 identityProvider
 
@@ -121,3 +121,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

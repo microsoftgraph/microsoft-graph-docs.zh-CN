@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 0ba6a1d67db75ce5c08654d74e959e08d529a0e7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d2a43300922ddf88df908d39d82b6efde2369348
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457065"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979488"
 ---
 # <a name="emailaddress-resource-type"></a>emailAddress 资源类型
 
@@ -58,3 +58,5 @@ ms.locfileid: "43457065"
   "suppressions": []
 }
 -->
+
+

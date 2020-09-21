@@ -5,20 +5,20 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 13792bcffabbc9dceb272cd1cf156fbf9a5a5a10
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb6b665814281629836f4c5148b567de776ef2ac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520567"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067123"
 ---
 # <a name="singleuser-complex-type"></a>singleUser 复杂类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[访问包分配策略](accesspackageassignmentpolicy.md)的请求、审批和分配审阅设置中使用。 `@odata.type`该值`#microsoft.graph.singleUser`指示此用户集标识租户中将允许作为请求者、审批者或审阅者的特定用户。
+在 [访问包分配策略](accesspackageassignmentpolicy.md)的请求、审批和分配审阅设置中使用。 `@odata.type`该值 `#microsoft.graph.singleUser` 指示此用户集标识租户中将允许作为请求者、审批者或审阅者的特定用户。
 
 ## <a name="properties"></a>属性
 
@@ -26,9 +26,9 @@ ms.locfileid: "42520567"
 
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
-| id |字符串 | Azure AD 中用户的 ID。 |
+| id |String | Azure AD 中用户的 ID。 |
 | 说明 |String | Azure AD 中的用户的名称。 只读。 |
-| isBackup | 布尔 | 对于审批阶段的**singleUser** ，指示用户是否为备份回退审批者。 |
+| isBackup | Boolean | 对于审批阶段的 **singleUser** ，指示用户是否为备份回退审批者。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -61,3 +61,5 @@ ms.locfileid: "42520567"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

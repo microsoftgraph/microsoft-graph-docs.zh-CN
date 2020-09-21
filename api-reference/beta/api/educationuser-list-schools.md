@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 973412d50aef6e57ac9d985d9d6acee8af792d2b
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: f69fb905fb886cd6dc06da90f0a8d997954b6cc4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006805"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006989"
 ---
 # <a name="list-schools"></a>列出学校
 
@@ -159,3 +159,5 @@ Content-length: 345
   ]
 }
 -->
+
+

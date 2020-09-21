@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 2ba9b9d8ecf6766cddfa670ae2e33b39d0e6acb6
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: 0e792b55cddaee3069eaaf53cc9dce68aae041e9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434870"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979544"
 ---
 # <a name="educationsynchronizationprofilestatus-resource-type"></a>educationSynchronizationProfileStatus 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "45434870"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示学校数据[同步配置文件](educationsynchronizationprofile.md)的同步状态。
+表示学校数据 [同步配置文件](educationsynchronizationprofile.md)的同步状态。
 
-> **注意：** 由于后台同步处理的异步特性，对**educationSynchronizationProfileStatus**的更新可能会延迟。
+> **注意：** 由于后台同步处理的异步特性，对 **educationSynchronizationProfileStatus** 的更新可能会延迟。
 
 ## <a name="methods"></a>方法
 
@@ -32,7 +32,7 @@ ms.locfileid: "45434870"
 
 | 属性                    | 类型                           | 说明                                                                                                              |
 | :-------------------------- | :----------------------------- | :----------------------------------------------------------------------------------------------------------------------- |
-| id                          | 字符串                         | 资源的唯一标识符。 （只读）                                                                      |
+| id                          | String                         | 资源的唯一标识符。  (只读)                                                                       |
 | 状态                      | educationSynchronizationStatus | 同步的状态。可能的值为： `paused` 、、、、 `inProgress` `success` `error` `quarantined` 、 `validationError` 。 |
 | lastSynchronizationDateTime | DateTimeOffset                 | 表示在目录中观察到的最新更改的时间。                                        |
 
@@ -54,3 +54,5 @@ ms.locfileid: "45434870"
   "lastSynchronizationDateTime": "DateTimeOffset"
 }
 ```
+
+

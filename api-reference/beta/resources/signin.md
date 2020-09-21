@@ -5,12 +5,12 @@ description: 提供有关目录中用户或应用程序登录活动的详细信�
 author: khotz
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 243e4cd7402824d7217374e9ccf2152aa4a63163
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: efdb9162846c0c5ab8fd25e75b3d820059fe970b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674538"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067200"
 ---
 # <a name="signin-resource-type"></a>signIn 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "46674538"
 |appId|String|Azure Active Directory 中的应用程序标识符。|
 |appliedConditionalAccessPolicies|[conditionalAccessPolicy](conditionalaccesspolicy.md) 集合|由相应的登录活动触发的条件访问策略的列表。|
 |authenticationDetails|[authenticationDetail](authenticationdetail.md) 集合|身份验证尝试的结果和身份验证方法的其他详细信息。|
-|authenticationMethodsUsed|String collection|使用的身份验证方法。 可能的值：、、、、、 `SMS` `Authenticator App` `App Verification code` `Password` `FIDO` `PTA` 或 `PHS` 。|
+|authenticationMethodsUsed|String 集合|使用的身份验证方法。 可能的值：、、、、、 `SMS` `Authenticator App` `App Verification code` `Password` `FIDO` `PTA` 或 `PHS` 。|
 |authenticationProcessingDetails|[keyValue](keyvalue.md) 集合|其他身份验证处理详细信息，例如在联合身份验证时 PTA/PHS 或服务器/服务器场名称的代理名称。|
 |authenticationRequirement | string | 这将在所有登录步骤中保留所需的最高级别的身份验证，以便登录成功。|
 |clientAppUsed|String|用于登录活动的旧客户端。 例如，浏览器、Exchange Active Sync、新式客户端、IMAP、MAPI、SMTP 或 POP。|
@@ -54,7 +54,7 @@ ms.locfileid: "46674538"
 |resourceId|String|用户登录到的资源的标识符。|
 |riskDetail|riskDetail|风险用户的特定状态、登录或风险事件背后的原因。 可能的值：、、、、、、、、、 `none` `adminGeneratedTemporaryPassword` `userPerformedSecuredPasswordChange` `userPerformedSecuredPasswordReset` `adminConfirmedSigninSafe` `aiConfirmedSigninSafe` `userPassedMFADrivenByRiskBasedPolicy` `adminDismissedAllRiskForUser` `adminConfirmedSigninCompromised` 或 `unknownFutureValue` 。 值 `none` 表示到目前为止尚未对用户或登录执行任何操作。 **注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 返回所有其他客户 `hidden` 。|
 |riskEventTypes|riskEventType 集合|与登录相关联的风险事件类型的列表。 可能的值：、、、、、、、、、 `unlikelyTravel` `anonymizedIPAddress` `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence`  `generic` 或 `unknownFutureValue` 。|
-|riskEventTypes_v2|String collection|与登录相关联的风险事件类型的列表。 可能的值：、、、、、、、、、 `unlikelyTravel` `anonymizedIPAddress` `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence`  `generic` 或 `unknownFutureValue` 。|
+|riskEventTypes_v2|String 集合|与登录相关联的风险事件类型的列表。 可能的值：、、、、、、、、、 `unlikelyTravel` `anonymizedIPAddress` `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence`  `generic` 或 `unknownFutureValue` 。|
 |riskLevelAggregated|riskLevel|聚合风险级别。 可能的值： `none` 、、、、 `low` `medium` `high` `hidden` 或 `unknownFutureValue` 。 值 `hidden` 表示用户或登录未启用 Azure AD Identity Protection。 **注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 返回所有其他客户 `hidden` 。|
 |riskLevelDuringSignIn|riskLevel|登录过程中的风险级别。 可能的值： `none` 、、、、 `low` `medium` `high` `hidden` 或 `unknownFutureValue` 。 值 `hidden` 表示用户或登录未启用 Azure AD Identity Protection。 **注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 返回所有其他客户 `hidden` 。|
 |riskState|riskState|有风险的用户、登录或风险事件的风险状态。 可能的值：、、、、、 `none` `confirmedSafe` `remediated` `dismissed` `atRisk` `confirmedCompromised` 或 `unknownFutureValue` 。|
@@ -135,3 +135,5 @@ ms.locfileid: "46674538"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

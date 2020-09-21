@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0c668380c05c1a76aa971eef85f133a0e9cf8a07
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: c5d84b8f6ff80f146c02da1d29074181807b16c2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44862547"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079804"
 ---
 # <a name="kerberossignonsettings-resource-type"></a>kerberosSignOnSettings 资源类型
 
@@ -18,18 +18,18 @@ ms.locfileid: "44862547"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示在通过 Azure AD 应用程序代理发布本地应用程序时， [onPremisesPublishingSingleSignOn](onpremisespublishingsinglesignon.md)资源的 Keberos 约束委派（KCD）设置。 应用程序代理使用 Kerberos 约束委派（KCD）来支持对集成的 Windows 身份验证应用程序的单点登录。 有关详细信息，请参阅[使用应用程序代理以单点登录到应用的 Kerberos 约束委派](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd)。
+表示在通过 Azure AD 应用程序代理发布本地应用程序时， [onPremisesPublishingSingleSignOn](onpremisespublishingsinglesignon.md) 资源的 Keberos 约束委派 (KCD) 设置。 应用程序代理使用 Kerberos 约束委派 (KCD) 来支持对集成的 Windows 身份验证应用程序的单点登录。 有关详细信息，请参阅 [使用应用程序代理以单点登录到应用的 Kerberos 约束委派](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd)。
 
 >[!NOTE]
->请勿使用此属性来配置 SAML 或基于密码的单一登录。 如果要配置 SAML 单一登录，则必须在[servicePrincipal](serviceprincipal.md)上设置此设置。
-如果要配置基于密码的单签名，则必须使用[createPasswordSingleSignOnCredentials](../api/serviceprincipal-createpasswordsinglesignoncredentials.md)进行设置。
+>请勿使用此属性来配置 SAML 或基于密码的单一登录。 如果要配置 SAML 单一登录，则必须在 [servicePrincipal](serviceprincipal.md)上设置此设置。
+如果要配置基于密码的单签名，则必须使用 [createPasswordSingleSignOnCredentials](../api/serviceprincipal-createpasswordsinglesignoncredentials.md)进行设置。
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |kerberosServicePrincipalName|String| 应用程序服务器的内部应用程序 SPN。 此 SPN 必须位于连接器可以向其提供委派凭据的服务列表中。 |
-|kerberosSignOnMappingAttributeType|String| 代表用户使用的连接器的委派登录标识。 有关详细信息，请参阅使用[不同的内部部署和云标识](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd#working-with-different-on-premises-and-cloud-identities)。 可取值为：`userPrincipalName`、`onPremisesUserPrincipalName`、`userPrincipalUsername`、`onPremisesUserPrincipalUsername`、`onPremisesSAMAccountName`。|
+|kerberosSignOnMappingAttributeType|String| 代表用户使用的连接器的委派登录标识。 有关详细信息，请参阅使用 [不同的内部部署和云标识 ](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd#working-with-different-on-premises-and-cloud-identities)。 可取值为：`userPrincipalName`、`onPremisesUserPrincipalName`、`userPrincipalUsername`、`onPremisesUserPrincipalUsername`、`onPremisesSAMAccountName`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -60,3 +60,4 @@ ms.locfileid: "44862547"
   "section": "documentation",
   "tocPath": ""
 }-->
+

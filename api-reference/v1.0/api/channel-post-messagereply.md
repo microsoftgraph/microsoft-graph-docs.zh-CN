@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 86d246098801954c811d56e2357356f9b5c4a4c2
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: e8f173dd957db3b3dac92cce285693ec93f687c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345798"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013445"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>答复频道中的邮件
 
@@ -44,11 +44,11 @@ POST /teams/{id}/channels/{id}/messages/{id}/replies
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[message](../resources/chatmessage.md)对象的 JSON 表示形式。 只有 body 属性是必需的，其他属性是可选的。
+在请求正文中，提供 [message](../resources/chatmessage.md) 对象的 JSON 表示形式。 只有 body 属性是必需的，其他属性是可选的。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 将在已创建的[邮件](../resources/chatmessage.md)中返回响应代码。
+如果成功，此方法 `201 Created` 将在已创建的 [邮件](../resources/chatmessage.md) 中返回响应代码。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
@@ -147,3 +147,4 @@ Content-length: 160
   ]
 }
 -->
+

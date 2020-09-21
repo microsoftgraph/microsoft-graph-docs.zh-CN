@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b6dec53d1a29ea4434169ccbc902c47691dc7b8b
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 654c352b104d6df25e92b6ba541293647d4aa395
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199863"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033410"
 ---
 # <a name="create-identityprovider"></a>创建 identityProvider
 
@@ -102,5 +102,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

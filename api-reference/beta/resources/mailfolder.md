@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: bbce8afa1926444af025b0b57d857f94a296e852
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2279d5da5bf663b776ec9deee5241103079d4bb1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443095"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079803"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder 资源类型
 
@@ -83,7 +83,7 @@ GET /me/mailFolders/drafts
 |parentFolderId|String|MailFolder 的父 mailFolder 的唯一标识符。|
 |totalItemCount|Int32|邮箱中项的数量|
 |unreadItemCount|Int32|mailFolder 中标记为未读的项的数量。|
-|wellKnownName|String|文件夹的已知文件夹名称。 上面列出了可能的值。 此属性仅为 Outlook 创建的默认文件夹设置。 对于其他文件夹，此属性为**null**。|
+|wellKnownName|String|文件夹的已知文件夹名称。 上面列出了可能的值。 此属性仅为 Outlook 创建的默认文件夹设置。 对于其他文件夹，此属性为 **null**。|
 
 **有效的访问项计数**
 
@@ -157,3 +157,5 @@ Outlook 中的邮件文件夹可包含多个类型的项，例如，收件箱可
   "suppressions": []
 }
 -->
+
+

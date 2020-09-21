@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 613fab3adf4da1d3fd2f972818d0cee83db6f6cf
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 5fea16ce14e2df4b87ddc2b3f9246dfe758ec5b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843182"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073262"
 ---
 # <a name="driveitem-preview"></a>driveItem： preview
 
@@ -71,9 +71,9 @@ POST /shares/{shareId}/driveItem/preview
 
 | 名称           | 类型   | 说明
 |:---------------|:-------|:---------------------------------------------------
-| getUrl         | 字符串 | 适用于使用 HTTP GET (iframe 等嵌入的 URL ) 
-| postUrl        | 字符串 | 适合使用 HTTP POST (表单 post、JS 等进行嵌入的 URL ) 
-| postParameters | 字符串 | 如果使用 postUrl，则发布要包括的参数
+| getUrl         | string | 适用于使用 HTTP GET (iframe 等嵌入的 URL ) 
+| postUrl        | string | 适合使用 HTTP POST (表单 post、JS 等进行嵌入的 URL ) 
+| postParameters | string | 如果使用 postUrl，则发布要包括的参数
 
 根据指定选项的 embed 支持的当前状态，可能会返回 getUrl、postUrl 或 both。
 
@@ -88,3 +88,4 @@ param1=value&param2=another%20value
 ### <a name="pagezoom"></a>页面/缩放
 
 "页面" 和 "缩放" 选项可能不适用于所有预览版应用程序，但如果预览应用支持它，则会应用。
+

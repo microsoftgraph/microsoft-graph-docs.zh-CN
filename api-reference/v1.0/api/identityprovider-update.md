@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 023797466cc1574343a64776ecb0dcaf226be04c
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: d518bbd7d7cfc488fca298e0c5df5c9a74f822c5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199876"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033417"
 ---
 # <a name="update-identityprovider"></a>更新 identityProvider
 
@@ -119,3 +119,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 doc_type: conceptualPageType
 author: JeremyKelley
-ms.openlocfilehash: 67334416e7c149e4b915a21426b8ca4c04da968f
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 999b4dc500391417bacdcb992acc99e04ca1e0d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812153"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079802"
 ---
 # <a name="working-with-files-in-microsoft-graph"></a>在 Microsoft Graph 中使用文件
 
@@ -111,3 +111,5 @@ Microsoft Graph 还为应用提供了一种直接从共享链接 [访问共享�
 
 ## <a name="whats-new"></a>最近更新
 了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
+
+

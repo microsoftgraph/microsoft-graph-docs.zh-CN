@@ -3,14 +3,14 @@ title: 创建 deviceInstallState
 description: 创建新的 deviceInstallState 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d672672efd1bac5752b9b93b878b207a603fff2a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f4f8c2d1761ee6dd8e49caaa1fb8270d20dc1631
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455537"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47966084"
 ---
 # <a name="create-deviceinstallstate"></a>创建 deviceInstallState
 
@@ -109,6 +109,9 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
+
+
+
 
 
 

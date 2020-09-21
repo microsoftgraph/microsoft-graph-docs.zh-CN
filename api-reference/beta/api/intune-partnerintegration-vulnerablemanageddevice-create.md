@@ -3,14 +3,14 @@ title: 创建 vulnerableManagedDevice
 description: 创建新的 vulnerableManagedDevice 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 109a641f78fd1f29eabebbb9c73941efc557fde4
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: a15e76ec74f2e1a4d55b57eb2d7d81d1eecc0dae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790260"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986355"
 ---
 # <a name="create-vulnerablemanageddevice"></a>创建 vulnerableManagedDevice
 
@@ -95,6 +95,9 @@ Content-Length: 263
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
+
+
+
 
 
 

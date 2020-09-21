@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b354be83058d67dc99cd3ffd7c98798017733199
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bcda7c036c7f0f7fc37214af2d340fe0ed888e48
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518572"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013424"
 ---
 # <a name="chart-image"></a>图表：图像
 
@@ -47,7 +47,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fitt
 |:---------------|:--------|:----------|
 |height|Int32|生成的图像的所需高度。 可选。|
 |width|Int32|生成的图像的所需宽度。 可选。|
-|fittingMode|string|用于将图表缩放到指定尺寸（如果同时设置了高度和宽度）的方法。  可能的值包括 `Fit`、`FitAndCenter`、`Fill`。|
+|fittingMode|string|如果高度和宽度均设置) ，则用于将图表缩放到指定尺寸的方法 (。  可能的值包括 `Fit`、`FitAndCenter`、`Fill`。|
 
 ## <a name="response"></a>响应
 
@@ -96,3 +96,4 @@ Content-type: application/json;odata.metadata=minimal;odata.streaming=true
   "section": "documentation",
   "tocPath": ""
 }-->
+
