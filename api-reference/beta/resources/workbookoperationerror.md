@@ -5,28 +5,28 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a04d26a7bdeb14f35859e7c1b02e781b64189201
-ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
+ms.openlocfilehash: 42e8eea86222c360d9b08e70b7d6fded2a12afb4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45165128"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070392"
 ---
-# <a name="workbookoperationerror-resource-type"></a><span data-ttu-id="58483-103">workbookOperationError 资源类型</span><span class="sxs-lookup"><span data-stu-id="58483-103">workbookOperationError resource type</span></span>
+# <a name="workbookoperationerror-resource-type"></a><span data-ttu-id="c978d-103">workbookOperationError 资源类型</span><span class="sxs-lookup"><span data-stu-id="c978d-103">workbookOperationError resource type</span></span>
 
-<span data-ttu-id="58483-104">表示失败的工作簿操作中的错误。</span><span class="sxs-lookup"><span data-stu-id="58483-104">Represents an error from a failed workbook operation.</span></span>
+<span data-ttu-id="c978d-104">表示失败的工作簿操作中的错误。</span><span class="sxs-lookup"><span data-stu-id="c978d-104">Represents an error from a failed workbook operation.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="58483-105">属性</span><span class="sxs-lookup"><span data-stu-id="58483-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="c978d-105">属性</span><span class="sxs-lookup"><span data-stu-id="c978d-105">Properties</span></span>
 
-| <span data-ttu-id="58483-106">属性</span><span class="sxs-lookup"><span data-stu-id="58483-106">Property</span></span>     | <span data-ttu-id="58483-107">类型</span><span class="sxs-lookup"><span data-stu-id="58483-107">Type</span></span>        | <span data-ttu-id="58483-108">说明</span><span class="sxs-lookup"><span data-stu-id="58483-108">Description</span></span> |
+| <span data-ttu-id="c978d-106">属性</span><span class="sxs-lookup"><span data-stu-id="c978d-106">Property</span></span>     | <span data-ttu-id="c978d-107">类型</span><span class="sxs-lookup"><span data-stu-id="c978d-107">Type</span></span>        | <span data-ttu-id="c978d-108">说明</span><span class="sxs-lookup"><span data-stu-id="c978d-108">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="58483-109">code</span><span class="sxs-lookup"><span data-stu-id="58483-109">code</span></span>|<span data-ttu-id="58483-110">String</span><span class="sxs-lookup"><span data-stu-id="58483-110">String</span></span>| <span data-ttu-id="58483-111">错误代码。</span><span class="sxs-lookup"><span data-stu-id="58483-111">The error code.</span></span>|
-|<span data-ttu-id="58483-112">message</span><span class="sxs-lookup"><span data-stu-id="58483-112">message</span></span>|<span data-ttu-id="58483-113">String</span><span class="sxs-lookup"><span data-stu-id="58483-113">String</span></span>| <span data-ttu-id="58483-114">错误消息。</span><span class="sxs-lookup"><span data-stu-id="58483-114">The error message.</span></span>|
-|<span data-ttu-id="58483-115">innererror</span><span class="sxs-lookup"><span data-stu-id="58483-115">innererror</span></span>|<span data-ttu-id="58483-116">error object</span><span class="sxs-lookup"><span data-stu-id="58483-116">error object</span></span>| <span data-ttu-id="58483-p101">可选。可能比顶级错误更具体的其他错误对象。</span><span class="sxs-lookup"><span data-stu-id="58483-p101">Optional. Additional error objects that may be more specific than the top level error.</span></span>|
+|<span data-ttu-id="c978d-109">code</span><span class="sxs-lookup"><span data-stu-id="c978d-109">code</span></span>|<span data-ttu-id="c978d-110">String</span><span class="sxs-lookup"><span data-stu-id="c978d-110">String</span></span>| <span data-ttu-id="c978d-111">错误代码。</span><span class="sxs-lookup"><span data-stu-id="c978d-111">The error code.</span></span>|
+|<span data-ttu-id="c978d-112">message</span><span class="sxs-lookup"><span data-stu-id="c978d-112">message</span></span>|<span data-ttu-id="c978d-113">String</span><span class="sxs-lookup"><span data-stu-id="c978d-113">String</span></span>| <span data-ttu-id="c978d-114">错误消息。</span><span class="sxs-lookup"><span data-stu-id="c978d-114">The error message.</span></span>|
+|<span data-ttu-id="c978d-115">innererror</span><span class="sxs-lookup"><span data-stu-id="c978d-115">innererror</span></span>|<span data-ttu-id="c978d-116">error object</span><span class="sxs-lookup"><span data-stu-id="c978d-116">error object</span></span>| <span data-ttu-id="c978d-p101">可选。可能比顶级错误更具体的其他错误对象。</span><span class="sxs-lookup"><span data-stu-id="c978d-p101">Optional. Additional error objects that may be more specific than the top level error.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="58483-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="58483-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c978d-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c978d-119">JSON representation</span></span>
 
-<span data-ttu-id="58483-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="58483-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="c978d-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c978d-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -54,3 +54,5 @@ ms.locfileid: "45165128"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

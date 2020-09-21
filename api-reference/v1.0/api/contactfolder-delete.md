@@ -5,50 +5,50 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cf70727a5960a37982522f158bc1b0d4cfac46c1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 18c3a64c1ec00b2ad385ac6c33e94d7d4df699d7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462173"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057609"
 ---
-# <a name="delete-contactfolder"></a><span data-ttu-id="ff44f-103">删除 contactFolder</span><span class="sxs-lookup"><span data-stu-id="ff44f-103">Delete contactFolder</span></span>
+# <a name="delete-contactfolder"></a><span data-ttu-id="2c5a6-103">删除 contactFolder</span><span class="sxs-lookup"><span data-stu-id="2c5a6-103">Delete contactFolder</span></span>
 
-<span data-ttu-id="ff44f-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ff44f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2c5a6-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2c5a6-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="ff44f-105">删除默认 contactFolder 以外的 contactFolder。</span><span class="sxs-lookup"><span data-stu-id="ff44f-105">Delete contactFolder other than the default contactFolder.</span></span>
-## <a name="permissions"></a><span data-ttu-id="ff44f-106">权限</span><span class="sxs-lookup"><span data-stu-id="ff44f-106">Permissions</span></span>
-<span data-ttu-id="ff44f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ff44f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2c5a6-105">删除默认 contactFolder 以外的 contactFolder。</span><span class="sxs-lookup"><span data-stu-id="2c5a6-105">Delete contactFolder other than the default contactFolder.</span></span>
+## <a name="permissions"></a><span data-ttu-id="2c5a6-106">权限</span><span class="sxs-lookup"><span data-stu-id="2c5a6-106">Permissions</span></span>
+<span data-ttu-id="2c5a6-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2c5a6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ff44f-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="ff44f-109">Permission type</span></span>      | <span data-ttu-id="ff44f-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ff44f-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2c5a6-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="2c5a6-109">Permission type</span></span>      | <span data-ttu-id="2c5a6-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2c5a6-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ff44f-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ff44f-111">Delegated (work or school account)</span></span> | <span data-ttu-id="ff44f-112">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ff44f-112">Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="ff44f-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ff44f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ff44f-114">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ff44f-114">Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="ff44f-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="ff44f-115">Application</span></span> | <span data-ttu-id="ff44f-116">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ff44f-116">Contacts.ReadWrite</span></span> |
+|<span data-ttu-id="2c5a6-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2c5a6-111">Delegated (work or school account)</span></span> | <span data-ttu-id="2c5a6-112">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2c5a6-112">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="2c5a6-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2c5a6-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2c5a6-114">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2c5a6-114">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="2c5a6-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="2c5a6-115">Application</span></span> | <span data-ttu-id="2c5a6-116">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2c5a6-116">Contacts.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ff44f-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ff44f-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2c5a6-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2c5a6-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/contactFolders/{id}
 DELETE /users/{id | userPrincipalName}/contactFolders/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="ff44f-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="ff44f-118">Request headers</span></span>
-| <span data-ttu-id="ff44f-119">名称</span><span class="sxs-lookup"><span data-stu-id="ff44f-119">Name</span></span>       | <span data-ttu-id="ff44f-120">类型</span><span class="sxs-lookup"><span data-stu-id="ff44f-120">Type</span></span> | <span data-ttu-id="ff44f-121">说明</span><span class="sxs-lookup"><span data-stu-id="ff44f-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2c5a6-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="2c5a6-118">Request headers</span></span>
+| <span data-ttu-id="2c5a6-119">名称</span><span class="sxs-lookup"><span data-stu-id="2c5a6-119">Name</span></span>       | <span data-ttu-id="2c5a6-120">类型</span><span class="sxs-lookup"><span data-stu-id="2c5a6-120">Type</span></span> | <span data-ttu-id="2c5a6-121">说明</span><span class="sxs-lookup"><span data-stu-id="2c5a6-121">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="ff44f-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="ff44f-122">Authorization</span></span>  | <span data-ttu-id="ff44f-123">string</span><span class="sxs-lookup"><span data-stu-id="ff44f-123">string</span></span>  | <span data-ttu-id="ff44f-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ff44f-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2c5a6-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2c5a6-122">Authorization</span></span>  | <span data-ttu-id="2c5a6-123">string</span><span class="sxs-lookup"><span data-stu-id="2c5a6-123">string</span></span>  | <span data-ttu-id="2c5a6-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2c5a6-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ff44f-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="ff44f-126">Request body</span></span>
-<span data-ttu-id="ff44f-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="ff44f-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2c5a6-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="2c5a6-126">Request body</span></span>
+<span data-ttu-id="2c5a6-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="2c5a6-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ff44f-128">响应</span><span class="sxs-lookup"><span data-stu-id="ff44f-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2c5a6-128">响应</span><span class="sxs-lookup"><span data-stu-id="2c5a6-128">Response</span></span>
 
-<span data-ttu-id="ff44f-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="ff44f-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="2c5a6-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="2c5a6-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ff44f-131">示例</span><span class="sxs-lookup"><span data-stu-id="ff44f-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ff44f-132">请求</span><span class="sxs-lookup"><span data-stu-id="ff44f-132">Request</span></span>
-<span data-ttu-id="ff44f-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ff44f-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="2c5a6-131">示例</span><span class="sxs-lookup"><span data-stu-id="2c5a6-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2c5a6-132">请求</span><span class="sxs-lookup"><span data-stu-id="2c5a6-132">Request</span></span>
+<span data-ttu-id="2c5a6-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2c5a6-133">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="ff44f-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="ff44f-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2c5a6-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="2c5a6-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_contactfolder"
@@ -56,26 +56,26 @@ DELETE /users/{id | userPrincipalName}/contactFolders/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/contactFolders/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="ff44f-135">C#</span><span class="sxs-lookup"><span data-stu-id="ff44f-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2c5a6-135">C#</span><span class="sxs-lookup"><span data-stu-id="2c5a6-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-contactfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ff44f-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ff44f-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2c5a6-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2c5a6-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-contactfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ff44f-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ff44f-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2c5a6-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2c5a6-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-contactfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="ff44f-138">Java</span><span class="sxs-lookup"><span data-stu-id="ff44f-138">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="2c5a6-138">Java</span><span class="sxs-lookup"><span data-stu-id="2c5a6-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-contactfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="ff44f-139">响应</span><span class="sxs-lookup"><span data-stu-id="ff44f-139">Response</span></span>
-<span data-ttu-id="ff44f-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="ff44f-140">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="2c5a6-139">响应</span><span class="sxs-lookup"><span data-stu-id="2c5a6-139">Response</span></span>
+<span data-ttu-id="2c5a6-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="2c5a6-140">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -95,3 +95,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+
