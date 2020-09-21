@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 1a4aa2ba57978a4062d7eb383a6e8e8e3477d60b
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 6d4c5c378452bee186d7ff6c9f8fb47238b770d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44680640"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036042"
 ---
 # <a name="create-plannertask"></a>创建 plannerTask
 
@@ -136,3 +136,5 @@ Content-length: 677
   ]
 }
 -->
+
+

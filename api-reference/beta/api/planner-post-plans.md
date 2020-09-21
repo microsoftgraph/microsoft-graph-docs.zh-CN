@@ -5,16 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: ee45f0172a964837fc6b97ef068a64ccd465a73d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 37c5ffaec0ff2acf86fc8d5da27868aed8e7707c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455779"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036060"
 ---
 # <a name="create-plannerplan"></a>创建 plannerPlan
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -135,3 +135,5 @@ Content-length: 357
   ]
 }
 -->
+
+

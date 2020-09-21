@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 5cd2982129d08d39398fc842828fab3183c62973
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 0eb3d5093a7b59ca090509edb47e204ef67004c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43443504"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965406"
 ---
 # <a name="message-resource-type"></a>邮件资源类型
 
@@ -202,3 +202,4 @@ mailFolder 中的邮件。
   "section": "documentation",
   "tocPath": ""
 }-->
+

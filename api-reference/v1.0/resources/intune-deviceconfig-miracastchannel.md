@@ -3,14 +3,14 @@ title: miracastChannel 枚举类型
 description: Miracast 通道的可能值。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1c5c7e6208e912c04e88a3b2cf75e5897544f798
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6ed102cf6be62a6c4f5e70117eb5f1fd77e6c5c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473083"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003064"
 ---
 # <a name="miracastchannel-enum-type"></a>miracastChannel 枚举类型
 
@@ -24,8 +24,8 @@ Miracast 通道的可能值。
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|用户定义，默认值，无意向。|
-|一个|1|次.|
-|two|双面|以下.|
+|一个|1 |次.|
+|two|2 |以下.|
 |three|第三章|条.|
 |four|4 |条.|
 |five|5 |五百.|
@@ -34,7 +34,7 @@ Miracast 通道的可能值。
 |无穷|8 |无穷.|
 |九点|9 |九点.|
 |个人|10 |个人.|
-|11|11x17|11.|
+|11|11 |11.|
 |thirtySix|36|36。|
 |40|40|40。|
 |fortyFour|44|44。|
@@ -44,6 +44,8 @@ Miracast 通道的可能值。
 |oneHundredFiftySeven|157|OneHundredFifty-七。|
 |oneHundredSixtyOne|161|OneHundredSixty-One。|
 |oneHundredSixtyFive|165|OneHundredSixty-5。|
+
+
 
 
 

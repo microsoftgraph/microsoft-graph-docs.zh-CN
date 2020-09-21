@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7d08673808fb67f7c6feb640a5dc3c81057e6f92
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 20dbb5c9734777ba127419c4fbcb1602131467ff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518166"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009980"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: reply
 
@@ -110,3 +110,4 @@ HTTP/1.1 202 Accepted
   "suppressions": [
   ]
 }-->
+

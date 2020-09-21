@@ -1,22 +1,22 @@
 ---
 title: 列出组
-description: 列出组织中所有可用的组，包括但不限于 Office 365 组。
+description: 列出组织中所有可用的组，包括但不限于 Microsoft 365 组。
 localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fefccee51195adafb1bb3881b6a39336059d7857
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 4dd291610e6c25a916a76a72768a5dd456171b2f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125139"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057554"
 ---
 # <a name="list-groups"></a>列出组
 
 命名空间：microsoft.graph
 
-列出组织中的所有组，包括但不限于 Office 365 组。 
+列出组织中的所有组，包括但不限于 Microsoft 365 组。 
 
 此操作在默认情况下仅返回每个组的一部分属性。 这些默认属性将记录在[属性](../resources/group.md#properties)部分中。 若要获取_非_默认返回的属性，请对组执行 [GET](group-get.md) 操作，并在 `$select` OData 查询选项中指定属性。 **hasMembersWithLicenseErrors** 属性是一个例外，不会在 `$select` 查询中返回。
 
@@ -36,7 +36,7 @@ GET /groups
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-若要仅列出 Office 365 组（亦称为“统一组”），请对 **groupTypes** 应用筛选器：
+若要仅列出 Microsoft 365 组（亦称为“统一组”），请对 **groupTypes** 应用筛选器：
 <!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')
@@ -253,3 +253,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

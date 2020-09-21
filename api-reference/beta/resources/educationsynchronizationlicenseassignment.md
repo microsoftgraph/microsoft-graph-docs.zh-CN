@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 9d46e19c1869f7dff96a563dd54b1b9f303ce85a
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: b5aea834ff2943046aff8a390ae110d775fd2f20
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434961"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989638"
 ---
 # <a name="educationsynchronizationlicenseassignment-resource-type"></a>educationSynchronizationLicenseAssignment 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "45434961"
 | 属性  | 类型              | 说明                                                                                    |
 | :-------- | :---------------- | :--------------------------------------------------------------------------------------------- |
 | appliesTo | String            | 要分配给许可证的用户角色类型。 可取值为：`student`、`teacher`、`faculty`。 |
-| skuIds    | 字符串集合 | 表示要分配的许可证的 SKU 标识符。                                      |
+| skuIds    | String collection | 表示要分配的许可证的 SKU 标识符。                                      |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -43,3 +43,5 @@ ms.locfileid: "45434961"
   "skuIds": ["String"]
 }
 ```
+
+

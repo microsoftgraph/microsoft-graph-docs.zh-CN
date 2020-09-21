@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 258da369c6a254aa2cff1f611564eb3121d3633b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 55e23dead8ea894b57451bf65586672ea125fc35
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472227"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050276"
 ---
 # <a name="applicationenforcedrestrictionssessioncontrol-resource-type"></a>applicationEnforcedRestrictionsSessionControl 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "43472227"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-实施应用程序限制的会话控制。 Inehrits 来自[条件访问会话控制](conditionalaccesssessioncontrol.md)。
+实施应用程序限制的会话控制。 Inehrits 来自 [条件访问会话控制](conditionalaccesssessioncontrol.md)。
 
 ## <a name="properties"></a>属性
 
@@ -58,3 +58,5 @@ ms.locfileid: "43472227"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

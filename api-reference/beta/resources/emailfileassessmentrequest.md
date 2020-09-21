@@ -5,20 +5,20 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: de892cb10d7333b8807253f99148edbdcedf5d66
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 848ba0e1d7bfae16270f12d5acb153c083ca1d06
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499405"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989568"
 ---
 # <a name="emailfileassessmentrequest-resource-type"></a>emailFileAssessmentRequest 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于创建和检索从[threatAssessmentRequest](threatAssessmentRequest.md)派生的电子邮件文件威胁评估。
+用于创建和检索从 [threatAssessmentRequest](threatAssessmentRequest.md)派生的电子邮件文件威胁评估。
 
 电子邮件文件可以是 .eml 文件类型。
 
@@ -26,30 +26,30 @@ ms.locfileid: "42499405"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [创建 threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [emailFileAssessmentRequest](emailFileAssessmentRequest.md) | 通过发布**emailFileAssessmentRequest**对象创建新的电子邮件文件评估请求。 |
-| [获取 threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [emailFileAssessmentRequest](emailfileassessmentrequest.md) | 读取**emailFileAssessmentRequest**对象的属性和关系。 |
+| [创建 threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [emailFileAssessmentRequest](emailFileAssessmentRequest.md) | 通过发布 **emailFileAssessmentRequest** 对象创建新的电子邮件文件评估请求。 |
+| [获取 threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [emailFileAssessmentRequest](emailfileassessmentrequest.md) | 读取 **emailFileAssessmentRequest** 对象的属性和关系。 |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |contentData|String|Base64 编码的 .eml 电子邮件文件内容。 由于未存储文件内容，因此无法将其取回。|
-|destinationRoutingReason|[mailDestinationRoutingReason](enums.md#maildestinationroutingreason-values)|邮件路由到其目标的原因。 可能的值为`none`： `mailFlowRule`、 `safeSender`、 `blockedSender` `advancedSpamFiltering` `domainAllowList` `domainBlockList` `notInAddressBook` `firstTimeSender` `junk`、、 `autoPurgeToJunk`、、、、、、、、、、。 `autoPurgeToInbox` `autoPurgeToDeleted` `outbound` `notJunk`|
+|destinationRoutingReason|[mailDestinationRoutingReason](enums.md#maildestinationroutingreason-values)|邮件路由到其目标的原因。 可能的值为：、、、、、、、、、、、、、、 `none` `mailFlowRule` `safeSender` `blockedSender` `advancedSpamFiltering` `domainAllowList` `domainBlockList` `notInAddressBook` `firstTimeSender` `autoPurgeToInbox` `autoPurgeToJunk` `autoPurgeToDeleted` `outbound` `notJunk` `junk` 。|
 |recipientEmail|String|其策略用于评估邮件的邮件收件人。|
 |“类别”|[threatCategory](enums.md#threatcategory-values)|威胁类别。 可取值为：`spam`、`phishing`、`malware`。|
 |contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|威胁评估的内容类型。 可取值为：`mail`、`url`、`file`。|
 |createdBy|[identitySet](identityset.md)|威胁评估请求创建程序。|
 |createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|来自提交者的预期评估。 可能的值是：`block`、`unblock`。|
-|id|String|威胁评估请求 ID 是一个全局唯一标识符（GUID）。|
+|id|String|威胁评估请求 ID 是 GUID)  (全局唯一标识符。|
 |requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|威胁评估请求的来源。 可取值为：`user`、`administrator`。|
-|status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|评估过程状态。 可取值为：`pending`、`completed`。|
+|状态|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|评估过程状态。 可取值为：`pending`、`completed`。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|results|[threatAssessmentResult](threatassessmentresult.md)集合|威胁评估结果的集合。 只读。 默认情况下， `GET /threatAssessmentRequests/{id}` a 不会返回此属性，除非`$expand`您应用于该属性。|
+|results|[threatAssessmentResult](threatassessmentresult.md) 集合|威胁评估结果的集合。 只读。 默认情况下，a 不 `GET /threatAssessmentRequests/{id}` 会返回此属性，除非您应用于该属性 `$expand` 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -90,3 +90,5 @@ ms.locfileid: "42499405"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

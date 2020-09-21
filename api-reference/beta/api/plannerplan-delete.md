@@ -5,16 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 2dd5fb3b825c00cc5ff7a62720893992be101232
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b4f1ebba2b1fb3c48019a71a2b0fe54b869ce77c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455700"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036022"
 ---
 # <a name="delete-plannerplan"></a>删除 plannerPlan
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -99,3 +99,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

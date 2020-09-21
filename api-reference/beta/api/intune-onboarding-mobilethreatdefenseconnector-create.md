@@ -3,20 +3,20 @@ title: 创建 mobileThreatDefenseConnector
 description: 创建新的 mobileThreatDefenseConnector 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 43f283455ffc33267d9497cd3277c49d35202d68
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: caed5284908a614efc9eb84ea546b42762e84028
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43403284"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969821"
 ---
 # <a name="create-mobilethreatdefenseconnector"></a>创建 mobileThreatDefenseConnector
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,11 +53,11 @@ POST /deviceManagement/mobileThreatDefenseConnectors
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|尚未记录|
+|id|String|尚未记录|
 |lastHeartbeatDateTime|DateTimeOffset|从数据同步合作伙伴接收到上一个检测信号的日期/时间|
 |partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|此帐户的数据同步合作伙伴状态。 可取值为：`unavailable`、`available`、`enabled`、`unresponsive`。|
-|androidMobileApplicationManagementEnabled|Boolean|对于 Android，请设置是否应在移动应用程序管理（MAM）评估期间使用来自数据同步合作伙伴的数据。 每个平台只能有一个合作伙伴启用移动应用程序管理（MAM）评估。|
-|iosMobileApplicationManagementEnabled|Boolean|对于 IOS，获取或设置是否应在移动应用程序管理（MAM）评估期间使用来自数据同步合作伙伴的数据。 每个平台只能有一个合作伙伴启用移动应用程序管理（MAM）评估。|
+|androidMobileApplicationManagementEnabled|Boolean|对于 Android，请设置是否应在移动应用程序管理 (MAM) 评估期间使用来自数据同步合作伙伴的数据。 对于移动应用程序管理 (MAM) 评估，仅可为每个平台启用一个合作伙伴。|
+|iosMobileApplicationManagementEnabled|Boolean|对于 IOS，获取或设置是否应在移动应用程序管理 (MAM) 评估期间使用来自数据同步合作伙伴的数据。 对于移动应用程序管理 (MAM) 评估，仅可为每个平台启用一个合作伙伴。|
 |androidEnabled|Boolean|对于 Android 设备，设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
 |iosEnabled|Boolean|对于 iOS 设备，获取或设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
 |windowsEnabled|Boolean|对于 Windows，获取或设置是否应在合规性评估期间使用来自数据同步合作伙伴的数据|
@@ -131,6 +131,9 @@ Content-Length: 775
   "allowPartnerToCollectIOSApplicationMetadata": true
 }
 ```
+
+
+
 
 
 

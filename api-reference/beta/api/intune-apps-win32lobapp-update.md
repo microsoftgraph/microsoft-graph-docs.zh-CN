@@ -3,14 +3,14 @@ title: 更新 win32LobApp
 description: 更新 win32LobApp 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9c04dba30ce696878a5c00e276ca860fbf2db206
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 8e833b5d47dec60391ca72e1f6580d6b4d32f83d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791552"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976667"
 ---
 # <a name="update-win32lobapp"></a>更新 win32LobApp
 
@@ -71,8 +71,10 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |uploadState|Int32|上载状态。 可能的值包括： 0- `Not Ready` 、1- `Ready` 、2- `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|字符串集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersedingAppCount|Int32|此应用程序直接或间接取代的应用程序总数量。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersededAppCount|Int32|此应用程序直接或间接取代的应用程序总数量。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |committedContentVersion|String|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|总大小，包括所有已上传文件。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
@@ -91,7 +93,6 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md) 集合|用于安装后行为的返回代码。|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|如果此 Win32 应用是 MSI 应用程序，则为 MSI 详细信息。|
 |setupFilePath|String|加密的 Win32LobApp 包中的安装程序文件的相对路径。|
-|installLanguage|String|尚未记录|
 |minimumSupportedWindowsRelease|String|支持的最小 windows 版本的值。|
 
 
@@ -106,7 +107,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 3304
+Content-length: 3313
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -131,6 +132,8 @@ Content-length: 3304
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -210,7 +213,6 @@ Content-length: 3304
     "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value",
-  "installLanguage": "Install Language value",
   "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
 }
 ```
@@ -220,7 +222,7 @@ Content-length: 3304
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3476
+Content-Length: 3485
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -248,6 +250,8 @@ Content-Length: 3476
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -327,10 +331,12 @@ Content-Length: 3476
     "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value",
-  "installLanguage": "Install Language value",
   "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
 }
 ```
+
+
+
 
 
 

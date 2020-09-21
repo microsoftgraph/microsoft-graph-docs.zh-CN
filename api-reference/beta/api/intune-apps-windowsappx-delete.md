@@ -3,24 +3,24 @@ title: 删除 windowsAppX
 description: 删除 windowsAppX。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c669a7305d10d37f1d9a1e6fa4e4dc22a96479c5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 29ad11f3f73295eeae7de99ecd17ef1b51be7c1d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43393800"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976646"
 ---
 # <a name="delete-windowsappx"></a>删除 windowsAppX
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除[windowsAppX](../resources/intune-apps-windowsappx.md)。
+删除 [windowsAppX](../resources/intune-apps-windowsappx.md)。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -67,6 +67,9 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

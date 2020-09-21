@@ -5,12 +5,12 @@ localization_priority: Normal
 author: billbliss
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6ae6215d00bc573e6c8d004de743b10c0d381e43
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 014112d78b19ee08836139dc39d8d99b8459027b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808160"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003022"
 ---
 # <a name="operationerror-resource-type"></a>operationError 资源类型
 
@@ -51,3 +51,4 @@ ms.locfileid: "46808160"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: ac2b2ac3b734071f8537e149034788999a983f15
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c9d41a99b55052dd95abb737a5097043b0a05aeb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806182"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057615"
 ---
 # <a name="restore-a-previous-version-of-a-driveitem"></a>还原 DriveItem 的以前版本
 
@@ -95,3 +95,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 } -->
+

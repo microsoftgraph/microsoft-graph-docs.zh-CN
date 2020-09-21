@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 58ae743f26d729a2b18fbfaa5bf0bbc0dcf48d70
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9460157789ee0b668b3ece8e360a9aaa6609da41
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518194"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010029"
 ---
 # <a name="create-thread"></a>创建线程
 
@@ -119,3 +119,4 @@ Content-length: 346
   "suppressions": [
   ]
 }-->
+

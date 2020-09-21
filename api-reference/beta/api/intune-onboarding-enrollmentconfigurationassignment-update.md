@@ -3,20 +3,20 @@ title: 更新 enrollmentConfigurationAssignment
 description: 更新 enrollmentConfigurationAssignment 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aa4556309abf27cb92defa45869b072b1d351eea
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 8f1e26ced68fc9163ed8aa925c1a22d1cac2a2b9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791775"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47969828"
 ---
 # <a name="update-enrollmentconfigurationassignment"></a>更新 enrollmentConfigurationAssignment
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -103,6 +103,9 @@ Content-Length: 438
   "sourceId": "Source Id value"
 }
 ```
+
+
+
 
 
 

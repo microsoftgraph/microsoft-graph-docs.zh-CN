@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: da38df2f5ed7ad82866c971cdd7b2ad31ba51041
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 1d8555f1b64336e0fc4cd052e54bf74f59b3f2d1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330251"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050316"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -68,7 +68,7 @@ PATCH /users/{id | userPrincipalName}
 |identities|[objectIdentity](../resources/objectidentity.md) 集合| 表示可用于登录此用户帐户的标识。 标识可由 Microsoft、组织或诸如 Facebook、Google 和 Microsoft 等社交标识提供者提供，并绑定到用户帐户。 对 **标识** 的任何更新都将替换整个集合，并且您必须在集合中提供 userPrincipalName **signInType** 标识。|
 |interests|String collection|用户介绍自身兴趣的列表。|
 |jobTitle|String|用户的职务。|
-|mail|String|用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。 对此属性的更改还将更新用户的 **proxyAddresses** 集合，以包含作为 SMTP 地址的值。 <br><br>默认情况下返回。 支持 $filter。|
+|mail|String|用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。 对此属性的更改也将更新用户的 **proxyAddresses** 集合，以便将该值包含为 SMTP 地址。 <br><br>默认情况下返回。 支持 $filter。|
 |mailNickname|String|用户的邮件别名。 创建用户时必须指定此属性。|
 |mobilePhone|String|用户的主要移动电话号码。|
 |mySite|String|用户个人网站的 URL。|
@@ -93,7 +93,7 @@ PATCH /users/{id | userPrincipalName}
 由于 **用户** 资源支持 [扩展](/graph/extensibility-overview)，因此您可以使用该 `PATCH` 操作在现有 **用户** 实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
 
 > [!NOTE] 
-> 以下属性无法使用仅应用程序上下文进行更新： **aboutMe**、 **生日**、 **雇用**日期、 **兴趣**、 **我**的爱好、 **pastProjects**、 **preferredName**、 **责任**、 **学校**和 **技能**。
+> 以下属性无法使用仅限应用程序上下文进行更新：**aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**。
 
 ## <a name="response"></a>响应
 
@@ -218,3 +218,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

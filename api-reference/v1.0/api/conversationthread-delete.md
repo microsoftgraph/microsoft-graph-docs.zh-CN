@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6a35ac0bc0c6149db0f6f5c8cc886b2cd92ae60c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a3b6207681eb67ea38b26cff8e8b5a14ff70de0a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518187"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010022"
 ---
 # <a name="delete-conversationthread"></a>删除 conversationThread
 
@@ -96,3 +96,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

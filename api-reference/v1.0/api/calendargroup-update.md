@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ddd1c931df1826f04db4ef25f397ccc18691174a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3d48510e0f540cc79408296c9f934a2757b0f23d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471748"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070274"
 ---
 # <a name="update-calendargroup"></a>更新 calendarGroup
 
@@ -134,3 +134,4 @@ Content-length: 110
   "suppressions": [
   ]
 }-->
+

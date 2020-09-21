@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7065463c73f45c415f9ae64256952a4752669d52
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2910412938ee167c68a14c3a37080adee450f7da
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462166"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057596"
 ---
 # <a name="contactfolder-delta"></a>contactFolder: delta
 
@@ -54,7 +54,7 @@ GET /users/{id}/contactFolders/delta
 | 名称       | 类型 | 说明 |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | 字符串  | application/json. Required. |
+| Content-Type  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}。可选。 |
 
 ## <a name="response"></a>响应
@@ -145,3 +145,4 @@ Content-length: 254
   "suppressions": [
   ]
 }-->
+

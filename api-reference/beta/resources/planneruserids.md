@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 629525dfd8d011d1275785c3b1b31827722b9729
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b2fec8b10079047b6020114197bc5f68f25298d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807918"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063967"
 ---
 # <a name="planneruserids-resource-type"></a>plannerUserIds 资源类型
 
@@ -64,3 +64,5 @@ ms.locfileid: "46807918"
   "suppressions": []
 }
 -->
+
+

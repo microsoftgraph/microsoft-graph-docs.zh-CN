@@ -5,16 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 70ca7596cfb809a16b76f684a85c97b0c3e43a50
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 309f464afe33f09366f7905af7698660dd161094
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521634"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063968"
 ---
 # <a name="planneruser-resource-type"></a>plannerUser 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,10 +25,10 @@ ms.locfileid: "42521634"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[List tasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) 集合| 获取分配给用户的[plannerTasks](plannertask.md) 。|
-|[列出 favoritePlans](../api/planneruser-list-favoriteplans.md) |[plannerPlan](plannerplan.md) 集合| 获取用户标记为收藏的[plannerPlans](plannerplan.md) 。|
-|[列出 recentPlans](../api/planneruser-list-recentplans.md) |[plannerPlan](plannerplan.md) 集合| 获取用户最近查看过的[plannerPlans](plannerplan.md) 。|
-|[更新](../api/planneruser-update.md) | [plannerUser](planneruser.md)| 更新**plannerUser**对象。 |
+|[List tasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) 集合| 获取分配给用户的 [plannerTasks](plannertask.md) 。|
+|[列出 favoritePlans](../api/planneruser-list-favoriteplans.md) |[plannerPlan](plannerplan.md) 集合| 获取用户标记为收藏的 [plannerPlans](plannerplan.md) 。|
+|[列出 recentPlans](../api/planneruser-list-recentplans.md) |[plannerPlan](plannerplan.md) 集合| 获取用户最近查看过的 [plannerPlans](plannerplan.md) 。|
+|[更新](../api/planneruser-update.md) | [plannerUser](planneruser.md)| 更新 **plannerUser** 对象。 |
 
 
 ## <a name="properties"></a>属性
@@ -41,9 +41,9 @@ ms.locfileid: "42521634"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|tasks|[plannerTask](plannertask.md) collection| 只读。 可为 NULL。 返回分配给用户的[plannerTasks](plannertask.md) 。|
-|favoritePlans|[plannerPlan](plannerplan.md) 集合| 只读。 可为 NULL。 返回用户标记为收藏夹的[plannerPlans](plannerplan.md) 。|
-|recentPlans|[plannerPlan](plannerplan.md) 集合| 只读。 可为 NULL。 返回用户最近在支持最近计划的应用程序中查看的[plannerPlans](plannerplan.md) 。 |
+|tasks|[plannerTask](plannertask.md) collection| 只读。 可为 NULL。 返回分配给用户的 [plannerTasks](plannertask.md) 。|
+|favoritePlans|[plannerPlan](plannerplan.md) 集合| 只读。 可为 NULL。 返回用户标记为收藏夹的 [plannerPlans](plannerplan.md) 。|
+|recentPlans|[plannerPlan](plannerplan.md) 集合| 只读。 可为 NULL。 返回用户最近在支持最近计划的应用程序中查看的 [plannerPlans](plannerplan.md) 。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -79,3 +79,5 @@ ms.locfileid: "42521634"
   "suppressions": []
 }
 -->
+
+

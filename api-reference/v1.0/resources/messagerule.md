@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 34dec4fddd8373d1b2fcb49969f6048711a11beb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 87f6413b3b7bb38d45a8ba30dc39c3168a2a0d97
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443497"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965398"
 ---
 # <a name="messagerule-resource-type"></a>messageRule 资源类型
 
@@ -71,7 +71,7 @@ ms.locfileid: "43443497"
 |[Get rule](../api/messagerule-get.md) | [messageRule](messagerule.md) |读取 **messageRule** 对象的属性和关系。|
 |[Create](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) |通过指定一组条件和操作来创建 **messageRule** 对象。|
 |[Update](../api/messagerule-update.md) | [messageRule](messagerule.md) |为 **messageRule** 对象更改可写属性并保存更改。 |
-|[Delete](../api/messagerule-delete.md) | 无 |删除指定的 **messageRule** 对象。 |
+|[删除](../api/messagerule-delete.md) | 无 |删除指定的 **messageRule** 对象。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -82,3 +82,4 @@ ms.locfileid: "43443497"
   "section": "documentation",
   "tocPath": ""
 }-->
+

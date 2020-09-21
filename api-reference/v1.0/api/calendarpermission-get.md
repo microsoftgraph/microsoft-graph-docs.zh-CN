@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 89c31c3a8a1500e4cc520d6dbe25cc41babd642c
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: ab5fefbb2b88511d6b40aaf80772f582975eec02
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806585"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070301"
 ---
 # <a name="get-calendarpermission"></a>获取 calendarPermission
 
@@ -47,7 +47,7 @@ GET /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -61,7 +61,7 @@ GET /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[calendarPermission](../resources/calendarpermission.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [calendarPermission](../resources/calendarpermission.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -141,3 +141,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

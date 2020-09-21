@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 424eb7d8fd90a5f3ac25263d985be84d526051eb
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b7df1498260be758fd7c945fe013b09d09e1aed0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809199"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050295"
 ---
 # <a name="delete-useraccountinformation"></a>删除 userAccountInformation
 
@@ -79,3 +79,4 @@ DELETE https://graph.microsoft.com/beta/me/profile/accounts/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+

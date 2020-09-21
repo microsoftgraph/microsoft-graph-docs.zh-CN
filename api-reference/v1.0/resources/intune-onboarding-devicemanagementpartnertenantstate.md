@@ -3,14 +3,14 @@ title: deviceManagementPartnerTenantState 枚举类型
 description: 此租户的合作伙伴状态。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 957aedbf567696bf550648477bd1da47e1cfaed7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 60b8b87129c2e98dacbc868ad1bec09f3373f9da
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459429"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003071"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>deviceManagementPartnerTenantState 枚举类型
 
@@ -24,11 +24,13 @@ ms.locfileid: "43459429"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|合作伙伴状态未知。|
-|才|1|合作伙伴不可用。|
-|enabled|双面|启用合作伙伴。|
+|才|1 |合作伙伴不可用。|
+|enabled|2 |启用合作伙伴。|
 |异常|第三章|合作伙伴连接已终止。|
 |拒绝|4 |拒绝合作伙伴邮件。|
 |无|5 |合作伙伴无响应。|
+
+
 
 
 

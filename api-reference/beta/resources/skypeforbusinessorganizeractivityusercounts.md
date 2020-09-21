@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: f17f821b5234414185d359d98aa284233c1efb55
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c88ee5faa6236ffe7802db9bf7ede38d8a7bdb36
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808604"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063931"
 ---
 # <a name="skypeforbusinessorganizeractivityusercounts-resource-type"></a>skypeForBusinessOrganizerActivityUserCounts 资源类型
 
@@ -52,3 +52,5 @@ ms.locfileid: "46808604"
   "reportPeriod": "String"
 }
 ```
+
+

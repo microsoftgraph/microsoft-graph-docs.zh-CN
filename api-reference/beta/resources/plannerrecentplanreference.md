@@ -5,21 +5,21 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 1dc33d8a5f2ae34776154a2a0f11df854dea51e5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eefbcf79da1ae2ef76010eace5248708b6c61010
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521662"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063998"
 ---
 # <a name="plannerrecentplanreference-resource-type"></a>plannerRecentPlanReference 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerRecentPlanReference**资源类型代表一个对用户最近查看过的[plannerPlan](plannerplan.md)的引用。 用户的**plannerRecentPlanReferences**由应用程序显式维护。 任何实现最近计划功能的应用程序都应记录用户上次查看计划的时间，并相应地更新**plannerRecentPlanReference**项。
-应用应注意， **plannerRecentPlanReference**条目可以引用已删除的**plannerPlans** 、用户无法再访问或已使用其他标题进行更新。
+**PlannerRecentPlanReference**资源类型代表一个对用户最近查看过的[plannerPlan](plannerplan.md)的引用。 用户的 **plannerRecentPlanReferences** 由应用程序显式维护。 任何实现最近计划功能的应用程序都应记录用户上次查看计划的时间，并相应地更新 **plannerRecentPlanReference** 项。
+应用应注意， **plannerRecentPlanReference** 条目可以引用已删除的 **plannerPlans** 、用户无法再访问或已使用其他标题进行更新。
 我们建议应用在存在差异时通知用户，并将这些条目保持为最新。
 
 ## <a name="properties"></a>属性
@@ -60,3 +60,5 @@ ms.locfileid: "42521662"
   "suppressions": []
 }
 -->
+
+

@@ -3,24 +3,24 @@ title: 获取 androidDeviceOwnerGeneralDeviceConfiguration
 description: 读取 androidDeviceOwnerGeneralDeviceConfiguration 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 05fe6905de32d91acc75543e4c9d5265cc1f5933
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 352352aefda733c98dae5cfc4457287d9a976325
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123370"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47995995"
 ---
 # <a name="get-androiddeviceownergeneraldeviceconfiguration"></a>获取 androidDeviceOwnerGeneralDeviceConfiguration
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取[androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)对象的属性和关系。
+读取 [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -55,7 +55,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5824
+Content-Length: 6589
 
 {
   "value": {
@@ -210,10 +210,27 @@ Content-Length: 5824
     "vpnAlwaysOnLockdownMode": true,
     "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
     "wifiBlockEditConfigurations": true,
-    "wifiBlockEditPolicyDefinedConfigurations": true
+    "wifiBlockEditPolicyDefinedConfigurations": true,
+    "personalProfileAppsAllowInstallFromUnknownSources": true,
+    "personalProfileCameraBlocked": true,
+    "personalProfileScreenCaptureBlocked": true,
+    "workProfilePasswordExpirationDays": 1,
+    "workProfilePasswordMinimumLength": 0,
+    "workProfilePasswordMinimumNumericCharacters": 11,
+    "workProfilePasswordMinimumNonLetterCharacters": 13,
+    "workProfilePasswordMinimumLetterCharacters": 10,
+    "workProfilePasswordMinimumLowerCaseCharacters": 13,
+    "workProfilePasswordMinimumUpperCaseCharacters": 13,
+    "workProfilePasswordMinimumSymbolCharacters": 10,
+    "workProfilePasswordPreviousPasswordCountToBlock": 15,
+    "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
+    "workProfilePasswordRequiredType": "required"
   }
 }
 ```
+
+
+
 
 
 

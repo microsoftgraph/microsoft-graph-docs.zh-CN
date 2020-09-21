@@ -5,18 +5,18 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0d029163603b9c5bdafc9f8fa0c2394fb157ebe8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1876ce76ffde8750a268ae1fed769a7b8ab7658e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460548"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010052"
 ---
 # <a name="list-contracts"></a>列出合同
 
 命名空间：microsoft.graph
 
-检索与合作伙伴租户关联的[合同](../resources/contract.md)对象的列表。
+检索与合作伙伴租户关联的 [合同](../resources/contract.md) 对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -54,7 +54,7 @@ GET /contracts
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[Contract](../resources/contract.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [Contract](../resources/contract.md) 对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -124,3 +124,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8cc29f0acd317087113c8c5c1f1e6d30a11d248d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c6367f238f238f91709352d1b8c96fbadafe7d73
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518208"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010043"
 ---
 # <a name="get-conversation"></a>获取对话
 
@@ -110,3 +110,4 @@ Content-length: 201
   "suppressions": [
   ]
 }-->
+
