@@ -122,7 +122,7 @@ items:
         href: /graph/sdks/batch-requests?context=graph/api/1.0
       - name: 上传大文件
         href: /graph/sdks/large-file-upload?context=graph/api/1.0
-      - name: 使用 beta API
+      - name: 使用 beta 版 API
         href: /graph/sdks/use-beta?context=graph/api/1.0
   - name: 使用工具包
     items:
@@ -1078,10 +1078,12 @@ items:
               - name: 参与者
                 href: resources/participant.md
                 items:
-                  - name: 获取
-                    href: api/participant-get.md
                   - name: 列表
                     href: api/call-list-participants.md
+                  - name: 获取
+                    href: api/participant-get.md
+                  - name: 删除
+                    href: api/participant-delete.md
                   - name: 参与者静音
                     href: api/participant-mute.md
                   - name: 邀请参与者
@@ -3634,6 +3636,35 @@ items:
             href: resources/azure-ad-overview.md
           - name: 目录管理
             items:
+              - name: 管理单元
+                href: resources/administrativeunit.md
+                items:
+                  - name: 列出
+                    href: api/administrativeunit-list.md
+                  - name: 创建
+                    href: api/administrativeunit-post-administrativeunits.md
+                  - name: 获取
+                    href: api/administrativeunit-get.md
+                  - name: 更新
+                    href: api/administrativeunit-update.md
+                  - name: 删除
+                    href: api/administrativeunit-delete.md
+                  - name: 添加成员
+                    href: api/administrativeunit-post-members.md
+                  - name: 列出成员
+                    href: api/administrativeunit-list-members.md
+                  - name: 获取成员
+                    href: api/administrativeunit-get-members.md
+                  - name: 删除成员
+                    href: api/administrativeunit-delete-members.md
+                  - name: 添加作用域角色管理员
+                    href: api/administrativeunit-post-scopedrolemembers.md
+                  - name: 列出作用域角色管理员
+                    href: api/administrativeunit-list-scopedrolemembers.md
+                  - name: 获取作用域角色管理员
+                    href: api/administrativeunit-get-scopedrolemembers.md
+                  - name: 删除作用域角色管理员
+                    href: api/administrativeunit-delete-scopedrolemembers.md
               - name: 合同
                 href: resources/contract.md
                 items:

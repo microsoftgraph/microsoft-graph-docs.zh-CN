@@ -1297,10 +1297,12 @@ items:
               - name: 参与者
                 href: resources/participant.md
                 items:
-                  - name: 获取
-                    href: api/participant-get.md
                   - name: 列表
                     href: api/call-list-participants.md
+                  - name: 获取
+                    href: api/participant-get.md
+                  - name: 删除
+                    href: api/participant-delete.md
                   - name: 配置 Mixer
                     href: api/participant-configuremixer.md
                   - name: 参与者静音
@@ -2519,6 +2521,23 @@ items:
                         href: api/intune-apps-mobileapprelationship-get.md
                   - name: 移动应用关系状态
                     href: resources/intune-apps-mobileapprelationshipstate.md
+                  - name: 移动应用关系类型
+                    href: resources/intune-apps-mobileapprelationshiptype.md
+                  - name: 移动应用取代
+                    href: resources/intune-apps-mobileappsupersedence.md
+                    items:
+                      - name: 列表
+                        href: api/intune-apps-mobileappsupersedence-list.md
+                      - name: 获取
+                        href: api/intune-apps-mobileappsupersedence-get.md
+                      - name: 创建
+                        href: api/intune-apps-mobileappsupersedence-create.md
+                      - name: 删除
+                        href: api/intune-apps-mobileappsupersedence-delete.md
+                      - name: 更新
+                        href: api/intune-apps-mobileappsupersedence-update.md
+                  - name: 移动应用取代类型
+                    href: resources/intune-apps-mobileappsupersedencetype.md
                   - name: 移动包含的应用
                     href: resources/intune-apps-mobilecontainedapp.md
                     items:
@@ -3171,6 +3190,8 @@ items:
                     href: resources/intune-enrollment-outofboxexperiencesettings.md
                   - name: 平台
                     href: resources/intune-enrollment-platform.md
+                  - name: 建议的注册限制
+                    href: resources/intune-enrollment-suggestedenrollmentlimit.md
                   - name: Windows Autopilot Deployment 配置文件分配
                     href: resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md
                     items:
@@ -3721,6 +3742,8 @@ items:
                         href: api/intune-deviceconfig-androidpkcscertificateprofile-delete.md
                       - name: 更新
                         href: api/intune-deviceconfig-androidpkcscertificateprofile-update.md
+                  - name: Android 必需的密码复杂性
+                    href: resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md
                   - name: Android 所需密码类型
                     href: resources/intune-deviceconfig-androidrequiredpasswordtype.md
                   - name: Android SCEP 证书配置文件
@@ -5363,6 +5386,8 @@ items:
                         href: api/intune-deviceconfig-macosscepcertificateprofile-update.md
                   - name: macOS 单一登录扩展
                     href: resources/intune-deviceconfig-macossinglesignonextension.md
+                  - name: macOS 软件更新延迟策略
+                    href: resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md
                   - name: macOS 系统扩展
                     href: resources/intune-deviceconfig-macossystemextension.md
                   - name: macOS 系统扩展类型
@@ -7392,6 +7417,8 @@ items:
                     href: resources/intune-devices-manageddevicearchitecture.md
                   - name: 托管设备清理设置
                     href: resources/intune-devices-manageddevicecleanupsettings.md
+                  - name: 托管设备管理功能
+                    href: resources/intune-devices-manageddevicemanagementfeatures.md
                   - name: 托管设备型号和制造商
                     href: resources/intune-devices-manageddevicemodelsandmanufacturers.md
                   - name: 托管的设备概述
@@ -7628,6 +7655,32 @@ items:
                     href: resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md
                   - name: 更新 Windows 设备帐户操作参数
                     href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
+                  - name: 按应用程序版本的用户体验分析应用运行状况应用程序性能
+                    href: resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md
+                    items:
+                      - name: 列表
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-list.md
+                      - name: 获取
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-get.md
+                      - name: 创建
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-create.md
+                      - name: 删除
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-delete.md
+                      - name: 更新
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-update.md
+                  - name: 用户体验分析应用运行状况应用程序的性能（按 o s 版本）
+                    href: resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md
+                    items:
+                      - name: 列表
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-list.md
+                      - name: 获取
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-get.md
+                      - name: 创建
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-create.md
+                      - name: 删除
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-delete.md
+                      - name: 更新
+                        href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-update.md
                   - name: 用户体验分析应用程序运行状况应用程序性能
                     href: resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md
                     items:
@@ -7641,6 +7694,58 @@ items:
                         href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-delete.md
                       - name: 更新
                         href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-update.md
+                  - name: User experience analytics 应用程序运行状况设备模型性能
+                    href: resources/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance.md
+                    items:
+                      - name: 列表
+                        href: api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-list.md
+                      - name: 获取
+                        href: api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-get.md
+                      - name: 创建
+                        href: api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-create.md
+                      - name: 删除
+                        href: api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-delete.md
+                      - name: 更新
+                        href: api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-update.md
+                  - name: User experience analytics 应用程序运行状况设备性能
+                    href: resources/intune-devices-userexperienceanalyticsapphealthdeviceperformance.md
+                    items:
+                      - name: 列表
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-list.md
+                      - name: 获取
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-get.md
+                      - name: 创建
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-create.md
+                      - name: 删除
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-delete.md
+                      - name: 更新
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-update.md
+                  - name: User experience analytics 应用程序运行状况设备性能详细信息
+                    href: resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md
+                    items:
+                      - name: 列表
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-list.md
+                      - name: 获取
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-get.md
+                      - name: 创建
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-create.md
+                      - name: 删除
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-delete.md
+                      - name: 更新
+                        href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-update.md
+                  - name: User experience analytics 应用运行状况 o s 版本性能
+                    href: resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md
+                    items:
+                      - name: 列表
+                        href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-list.md
+                      - name: 获取
+                        href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-get.md
+                      - name: 创建
+                        href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-create.md
+                      - name: 删除
+                        href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-delete.md
+                      - name: 更新
+                        href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-update.md
                   - name: 用户体验分析基线
                     href: resources/intune-devices-userexperienceanalyticsbaseline.md
                     items:
@@ -7904,6 +8009,8 @@ items:
                     href: resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md
                   - name: Android 托管应用安全网络设备证明类型
                     href: resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md
+                  - name: Android 托管应用安全 net 评估类型
+                    href: resources/intune-mam-androidmanagedappsafetynetevaluationtype.md
                   - name: Android 移动应用标识符
                     href: resources/intune-mam-androidmobileappidentifier.md
                   - name: 应用管理级别
@@ -8837,6 +8944,8 @@ items:
                     href: resources/intune-shared-runstate.md
                   - name: 保存的 UI 状态生成选项
                     href: resources/intune-shared-saveduistategenerationoptions.md
+                  - name: 设置源类型
+                    href: resources/intune-shared-settingsourcetype.md
                   - name: 目标受管理应用的配置
                     href: resources/intune-shared-targetedmanagedappconfiguration.md
                     items:
@@ -9551,6 +9660,14 @@ items:
                     href: api/administrativeunit-get-scopedrolemembers.md
                   - name: 删除作用域角色管理员
                     href: api/administrativeunit-delete-scopedrolemembers.md
+              - name: 'BitLocker 恢复密钥 (预览) '
+                items:
+                  - name: BitLocker 恢复密钥
+                    href: resources/bitlockerrecoverykey.md
+                  - name: 列表
+                    href: api/bitlocker-list-recoverykeys.md
+                  - name: 获取
+                    href: api/bitlockerrecoverykey-get.md
               - name: 合同
                 href: resources/contract.md
                 items:
@@ -10054,6 +10171,13 @@ items:
                         href: api/identitysecuritydefaultsenforcementpolicy-get.md
                       - name: 更新
                         href: api/identitysecuritydefaultsenforcementpolicy-update.md
+                  - name: 连续访问评估策略
+                    href: resources/continuousaccessevaluationpolicy.md
+                    items:
+                      - name: 获取
+                        href: api/continuousaccessevaluationpolicy-get.md
+                      - name: 更新
+                        href: api/continuousaccessevaluationpolicy-update.md
               - name: 角色管理
                 href: resources/rolemanagement.md
                 items:
@@ -10156,7 +10280,7 @@ items:
                         href: api/b2cuserflows-get.md
                       - name: 列出标识提供程序
                         href: api/b2cuserflows-list-identityproviders.md
-                      - name: 添加标识提供程序
+                      - name: 添加标识提供者
                         href: api/b2cuserflows-update-identityprovider.md
                       - name: 删除标识提供程序
                         href: api/b2cuserflows-delete-identityprovider.md
@@ -10173,11 +10297,11 @@ items:
                         href: api/b2xuserflows-delete.md
                       - name: 列出标识提供程序
                         href: api/b2xuserflows-list-identityproviders.md
-                      - name: 添加标识提供程序
+                      - name: 添加标识提供者
                         href: api/b2xuserflows-update-identityprovider.md
                       - name: 删除标识提供程序
                         href: api/b2xuserflows-delete-identityprovider.md
-          - name: 治理
+          - name: 管控
             items:
               - name: 访问审查
                 href: resources/accessreviews-root.md
@@ -10952,7 +11076,7 @@ items:
                     href: api/itempatent-update.md
                   - name: 删除
                     href: api/itempatent-delete.md
-              - name: Phones
+              - name: 手机
                 items:
                   - name: 项目电话
                     href: resources/itemphone.md
@@ -12022,6 +12146,8 @@ items:
                 href: api/chatmessage-post.md
               - name: 回复消息
                 href: api/channel-post-messagereply.md
+              - name: 更新邮件
+                href: api/chatmessage-update.md
               - name: 列出承载的内容
                 href: api/chatmessage-list-chatmessagehostedcontents.md
               - name: 获取托管内容
