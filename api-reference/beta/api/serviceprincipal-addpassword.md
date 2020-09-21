@@ -1,16 +1,16 @@
 ---
 title: servicePrincipal： addPassword
-description: 将强密码添加到 servicePrincipal。
+description: 向 servicePrincipal 添加强密码。
 localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 673a2fea2c198d961832a34733b028666104a6a3
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 2a9fff1b34a97e4281279da7aeed9eab581b356d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291074"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044663"
 ---
 # <a name="serviceprincipal-addpassword"></a>servicePrincipal： addPassword
 
@@ -18,7 +18,7 @@ ms.locfileid: "44291074"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将强密码添加到[servicePrincipal](../resources/serviceprincipal.md)对象。
+将强密码添加到 [servicePrincipal](../resources/serviceprincipal.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -53,11 +53,11 @@ POST /servicePrincipals/{id}/addPassword
 |:---------------|:--------|:----------|
 | displayName | String | 密码的友好名称。 可选。 |
 | endDateTime | DateTimeOffset | 密码过期的日期和时间，使用 ISO 8601 格式表示，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 可选。 默认值为 "startDateTime + 2 年"。 |
-| startDateTime | DateTimeOffset | 密码生效的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 可选。 默认值为 "now"。 |
+| startDateTime | DateTimeOffset | 密码生效的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 可选。 默认值为 "now"。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的[passwordCredential](../resources/passwordcredential.md)对象。 Response 对象中的**secretText**属性包含由 Azure Active Directory 生成的强密码，其长度为16-64 个字符。 将来无法检索此密码。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [passwordCredential](../resources/passwordcredential.md) 对象。 Response 对象中的 **secretText** 属性包含由 Azure Active Directory 生成的强密码，其长度为16-64 个字符。 将来无法检索此密码。
 
 ## <a name="examples"></a>示例
 
@@ -124,3 +124,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 04ecd6062dfbcba3ff885e9734a6802440866725
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cc5cbf0f96d3c9199ecd9b622d9724ec10dd472e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448292"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037652"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune 中的共享资源
 
@@ -39,6 +39,8 @@ ms.locfileid: "43448292"
 - [URI](intune-shared-uri.md)
 - [用户](intune-shared-user.md)
 - [VPP 令牌帐户类型](intune-shared-vpptokenaccounttype.md)
+
+
 
 
 

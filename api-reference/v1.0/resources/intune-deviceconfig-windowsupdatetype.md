@@ -3,14 +3,14 @@ title: windowsUpdateType 枚举类型
 description: 将从哪些分支设备接收其更新
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 673f95c2f1bd6e3e1d0523af91290922b793c91d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b139112db8a106dfa57c7d3ddb98e2415294914b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451337"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091374"
 ---
 # <a name="windowsupdatetype-enum-type"></a>windowsUpdateType 枚举类型
 
@@ -24,11 +24,13 @@ ms.locfileid: "43451337"
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|允许用户进行设置。|
-|各种|1|半年频道（定向）。 设备从半年频道（定向）获取所有适用的功能更新。|
-|businessReadyOnly|双面|半年频道。 设备从半年频道获取功能更新。|
+|各种|1 |目标) 的半年频道 (。 设备将从半年频道 (目标) 获取所有适用的功能更新。|
+|businessReadyOnly|2 |半年频道。 设备从半年频道获取功能更新。|
 |windowsInsiderBuildFast|第三章|Windows 预览体验成员内部版本-快速|
 |windowsInsiderBuildSlow|4 |Windows 预览体验成员内部版本-慢|
 |windowsInsiderBuildRelease|5 |发布 Windows 预览体验成员内部版本|
+
+
 
 
 

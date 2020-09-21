@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7779fb851812c00c15749877517b79273752ab58
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 9ea400e40074b30943412cf7b5fbae75f9037ca1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217589"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023882"
 ---
 # <a name="referencedobject-resource-type"></a>referencedObject 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "43217589"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-描述对在同一[目录定义](synchronization-directorydefinition.md)中定义的另一个对象的引用。
+描述对在同一 [目录定义](synchronization-directorydefinition.md)中定义的另一个对象的引用。
 
 ## <a name="properties"></a>属性
 
 | 属性                   | 类型                      | 说明    |
 |:---------------------------|:--------------------------|:---------------|
-|referencedObjectName        |字符串                     |引用的对象的名称。 必须与[目录定义](synchronization-directorydefinition.md)中的一个对象相匹配。|
-|referencedProperty          |字符串                     |**目前不支持**。 引用的对象中属性的名称，其值将用作引用。|
+|referencedObjectName        |String                     |引用的对象的名称。 必须与 [目录定义](synchronization-directorydefinition.md)中的一个对象相匹配。|
+|referencedProperty          |String                     |**目前不支持**。 引用的对象中属性的名称，其值将用作引用。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -60,3 +60,5 @@ ms.locfileid: "43217589"
 }
 -->
             
+
+

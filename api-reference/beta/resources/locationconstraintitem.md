@@ -5,16 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 41b112da0ce62765432112dabbf999106b33379e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 58c05dadf30399ef704980b3bbbf24ac74330f6e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522902"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058094"
 ---
 # <a name="locationconstraintitem-resource-type"></a>locationConstraintItem 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -73,3 +73,5 @@ ms.locfileid: "42522902"
   "suppressions": []
 }
 -->
+
+

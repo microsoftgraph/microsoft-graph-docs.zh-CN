@@ -3,14 +3,14 @@ title: 更新 officeSuiteApp
 description: 更新 officeSuiteApp 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7570ac026779d0508a40991179fdbb5496c8c3b6
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 16105781f02931fd3eaf62b3ca4703fc20d9290d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791909"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976905"
 ---
 # <a name="update-officesuiteapp"></a>更新 officeSuiteApp
 
@@ -71,17 +71,19 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |uploadState|Int32|上载状态。 可能的值包括： 0- `Not Ready` 、1- `Ready` 、2- `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|字符串集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|autoAcceptEula|布尔值|要在 enduser 的设备上自动接受 EULA 的值。|
+|supersedingAppCount|Int32|此应用程序直接或间接取代的应用程序总数量。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersededAppCount|Int32|此应用程序直接或间接取代的应用程序总数量。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|autoAcceptEula|Boolean|要在 enduser 的设备上自动接受 EULA 的值。|
 |productIds|[officeProductId](../resources/intune-apps-officeproductid.md) 集合|表示 Office365 套件 SKU 的产品 Id。 可取值为：`o365ProPlusRetail`、`o365BusinessRetail`、`visioProRetail`、`projectProRetail`。|
 |excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md)|表示从所选 Office365 产品 Id 中排除的应用程序的属性。|
-|useSharedComputerActivation|布尔值|表示共享计算机激活是否不适用于 Office365 应用程序套件的属性。|
+|useSharedComputerActivation|Boolean|表示共享计算机激活是否不适用于 Office365 应用程序套件的属性。|
 |updateChannel|[officeUpdateChannel](../resources/intune-apps-officeupdatechannel.md)|用于表示 Office365 更新通道的属性。 可取值为：`none`、`current`、`deferred`、`firstReleaseCurrent`、`firstReleaseDeferred`、`monthlyEnterprise`。|
 |officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|表示 Office365 应用程序套件版本的属性。 可取值为：`none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
-|localesToInstall|字符串集合|用于表示安装 Office365 中的应用程序时所安装的区域设置的属性。 它使用标准 RFC 6033。 Ref https://technet.microsoft.com/library/cc179219(v=office.16).aspx|
+|localesToInstall|String collection|用于表示安装 Office365 中的应用程序时所安装的区域设置的属性。 它使用标准 RFC 6033。 Ref https://technet.microsoft.com/library/cc179219(v=office.16).aspx|
 |installProgressDisplayLevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|指定设备上安装进度设置 UI 的显示级别。 可取值为：`none`、`full`。|
-|shouldUninstallOlderVersionsOfOffice|布尔值|用于确定是否在将 Office365 应用套件部署到设备时是否卸载现有 Office MSI 的属性。|
+|shouldUninstallOlderVersionsOfOffice|Boolean|用于确定是否在将 Office365 应用套件部署到设备时是否卸载现有 Office MSI 的属性。|
 |targetVersion|String|表示应在设备上保持部署的 Office365 应用程序套件的特定目标版本的属性。|
 |updateVersion|String|表示可用于 Office365 应用程序套件的特定目标版本的更新版本的属性。|
 |officeConfigurationXml|Binary|表示可为 Office 专业增强版应用程序指定的 XML 配置文件的属性。 优先于所有其他属性。 如果存在，将使用 XML 配置文件来创建应用程序。|
@@ -98,7 +100,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1618
+Content-length: 1675
 
 {
   "@odata.type": "#microsoft.graph.officeSuiteApp",
@@ -123,6 +125,8 @@ Content-length: 1618
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "autoAcceptEula": true,
   "productIds": [
     "o365BusinessRetail"
@@ -164,7 +168,7 @@ Content-length: 1618
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1790
+Content-Length: 1847
 
 {
   "@odata.type": "#microsoft.graph.officeSuiteApp",
@@ -192,6 +196,8 @@ Content-Length: 1790
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "autoAcceptEula": true,
   "productIds": [
     "o365BusinessRetail"
@@ -227,6 +233,9 @@ Content-Length: 1790
   "officeConfigurationXml": "b2ZmaWNlQ29uZmlndXJhdGlvblhtbA=="
 }
 ```
+
+
+
 
 
 

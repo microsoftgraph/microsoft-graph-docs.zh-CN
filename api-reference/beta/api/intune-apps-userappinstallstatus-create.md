@@ -3,24 +3,24 @@ title: 创建 userAppInstallStatus
 description: 创建新的 userAppInstallStatus 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 672cf1f7acd6e93ac129ef405953ccdd2ce8c863
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1b1a0eef5025431a2dd9550cc45a009a89abd190
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43403960"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976842"
 ---
 # <a name="create-userappinstallstatus"></a>创建 userAppInstallStatus
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)对象。
+创建新的 [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -55,7 +55,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses
 |:---|:---|:---|
 |id|String|实体的键。|
 |userName|String|用户名。|
-|userPrincipalName|字符串|用户主体名称。|
+|userPrincipalName|String|用户主体名称。|
 |installedDeviceCount|Int32|已安装设备的计数。|
 |failedDeviceCount|Int32|已失败设备的计数。|
 |notInstalledDeviceCount|Int32|未安装设备的计数。|
@@ -63,7 +63,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -101,6 +101,9 @@ Content-Length: 288
   "notInstalledDeviceCount": 7
 }
 ```
+
+
+
 
 
 

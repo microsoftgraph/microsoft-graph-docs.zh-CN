@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 4ae1801153f211ba9b4ba5d909e3a05dc0a5ee56
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: fa70b6461ed1b01c789c27a62e5fbf29f62f2121
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807687"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965531"
 ---
 # <a name="manage-focused-inbox"></a>管理重点收件箱
 
@@ -36,3 +36,4 @@ ms.locfileid: "46807687"
 [创建发件人替代](../api/inferenceclassification-post-overrides.md) | [列出所有用户替代](../api/inferenceclassification-list-overrides.md) |
 
 [更新发件人替代](../api/inferenceclassificationoverride-update.md) | [删除发件人替代](../api/inferenceclassificationoverride-delete.md)
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a98f932150532e4ee844b1cc243e068157e32585
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 9e586a94d18001702b845429236edabc04991a97
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289129"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996736"
 ---
 # <a name="application-removepassword"></a>应用程序： removePassword
 
@@ -18,7 +18,7 @@ ms.locfileid: "44289129"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从[应用程序](../resources/application.md)中删除密码。
+从 [应用程序](../resources/application.md)中删除密码。
 
 ## <a name="permissions"></a>权限
 
@@ -115,3 +115,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

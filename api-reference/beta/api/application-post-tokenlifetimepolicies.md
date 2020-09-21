@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 93cef7b8bf48fc1a2c1b54a11745a3393cb365aa
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 32d363b8466e65bb7ea146890f0df7dc3cc058d3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107057"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996774"
 ---
 # <a name="assign-tokenlifetimepolicy"></a>分配 tokenLifetimePolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "43107057"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将[tokenLifetimePolicy](../resources/tokenlifetimepolicy.md)分配给[应用程序](../resources/application.md)或[servicePrincipal](../resources/servicePrincipal.md)。
+将 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 分配给 [应用程序](../resources/application.md) 或 [servicePrincipal](../resources/servicePrincipal.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -48,7 +48,7 @@ POST /servicePrincipals/{id}/tokenLifetimePolicies/$ref
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应分配给应用[tokenLifetimePolicy](../resources/tokenlifetimepolicy.md)程序或服务主体的`@odata.id` tokenLifetimePolicy 对象的标识符（使用属性）。
+在请求正文中，提供 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象的标识符 (使用 `@odata.id` 应分配给应用程序或服务主体的属性) 。
 
 ## <a name="response"></a>响应
 
@@ -111,3 +111,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

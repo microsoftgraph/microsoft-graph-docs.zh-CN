@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bba1be37d3a654fa6d2bd64cc443cde76d844a60
-ms.sourcegitcommit: 53a57f19a5b16029b540e61ddfba6c2b4e45cfc5
+ms.openlocfilehash: 6e0204fea1a3291bbca4c942a03e5364fc5b4a47
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44491642"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983296"
 ---
 # <a name="delete-channel"></a>删除频道
 
@@ -18,7 +18,7 @@ ms.locfileid: "44491642"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除[频道](../resources/channel.md)。
+删除 [频道](../resources/channel.md)。
 
 > **请注意**：应用程序权限和此 API 存在已知问题。 有关详细信息，请参阅[已知问题列表](/graph/known-issues#application-permissions)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "44491642"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | "全部"、"."、"组"、"所有"、"    |
 
-> **注意**：标记为 * 的权限使用[特定于资源的同意](https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于[特定于资源的同意](https://aka.ms/teams-rsc)。
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

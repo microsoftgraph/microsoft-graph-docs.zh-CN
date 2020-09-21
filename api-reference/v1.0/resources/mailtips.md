@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 926f2c48981da637083e747245ecdee1b94351cb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bf331b0263027008923698c642a2ddec7464e53e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461836"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965545"
 ---
 # <a name="mailtips-resource-type"></a>邮件提示资源类型
 
@@ -96,3 +96,4 @@ ms.locfileid: "43461836"
   "section": "documentation",
   "tocPath": ""
 }-->
+

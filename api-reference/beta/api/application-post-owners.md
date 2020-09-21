@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0d22addf96dfa3b900b4d195b8fb0611548fced5
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 01afa7e599d01cee40a16de8f7a4ecdb3c9b9360
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289136"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996792"
 ---
 # <a name="add-owner"></a>添加所有者
 
@@ -108,3 +108,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

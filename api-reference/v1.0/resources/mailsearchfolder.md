@@ -5,18 +5,18 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3e0c392270ac6b82462c7ffb99afb722c6e60bc9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: db408d5f479ea331fb2597d38da0ee3847dde189
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461867"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965566"
 ---
 # <a name="mailsearchfolder-resource-type"></a>mailSearchFolder 资源类型
 
 命名空间：microsoft.graph
 
-**MailSearchFolder**是用户邮箱中的虚拟文件夹，其中包含与指定的搜索条件匹配的所有电子邮件项目。 **mailSearchFolder**继承自[mailFolder](mailfolder.md)。 可以在用户的 Exchange Online 邮箱中的任何文件夹中创建搜索文件夹。 但是，在 Outlook 中显示的搜索文件夹、Outlook for web 或 Outlook Live 中，必须在**WellKnownFolderName**文件夹中创建该文件夹。 
+**MailSearchFolder**是用户邮箱中的虚拟文件夹，其中包含与指定的搜索条件匹配的所有电子邮件项目。 **mailSearchFolder** 继承自 [mailFolder](mailfolder.md)。 可以在用户的 Exchange Online 邮箱中的任何文件夹中创建搜索文件夹。 但是，在 Outlook 中显示的搜索文件夹、Outlook for web 或 Outlook Live 中，必须在 **WellKnownFolderName** 文件夹中创建该文件夹。 
 
 ## <a name="search-folder-lifecycle"></a>搜索文件夹生命周期
 
@@ -37,15 +37,15 @@ ms.locfileid: "43461867"
 | [获取搜索文件夹](../api/mailfolder-get.md) | [mailSearchFolder](mailsearchfolder.md) | 获取指定的搜索文件夹。 |
 | [更新搜索文件夹](../api/mailsearchfolder-update.md) | [mailSearchFolder](mailsearchfolder.md) | 更新指定的搜索文件夹。 |
 | [删除搜索文件夹](../api/mailfolder-delete.md) | 无 | 删除指定的搜索文件夹。 |
-| [列出搜索文件夹中的所有邮件](../api/mailfolder-list-messages.md) | [邮件](message.md)集合 | 列出指定的搜索文件夹中的所有邮件。 |
+| [列出搜索文件夹中的所有邮件](../api/mailfolder-list-messages.md) | [message](message.md) 集合 | 列出指定的搜索文件夹中的所有邮件。 |
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 | isSupported | Boolean | 指示是否可使用 REST Api 编辑搜索文件夹。 |
-| includeNestedFolders | Boolean | 指示应如何在搜索中遍历邮箱文件夹层次结构。 `true`表示应执行深入搜索以在**sourceFolderIds**中显式指定的每个文件夹的层次结构中包含子文件夹。 `false`表示仅对**sourceFolderIds**中显式指定的每个文件夹进行浅表搜索。 |
-| sourceFolderIds | String 集合 | 应挖掘的邮箱文件夹。 |
+| includeNestedFolders | Boolean | 指示应如何在搜索中遍历邮箱文件夹层次结构。 `true` 表示应执行深入搜索以在 **sourceFolderIds**中显式指定的每个文件夹的层次结构中包含子文件夹。 `false` 表示仅对 **sourceFolderIds**中显式指定的每个文件夹进行浅表搜索。 |
+| sourceFolderIds | String collection | 应挖掘的邮箱文件夹。 |
 | filterQuery | String | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -79,3 +79,4 @@ ms.locfileid: "43461867"
   "suppressions": []
 }
 -->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 649cb40d06d5a89cba9a07162410a71ebc54ca2e
-ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
+ms.openlocfilehash: 6c180edcb830d4225aafda9e5ec8dd1a5aa2f91e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45142235"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996780"
 ---
 # <a name="assign-tokenissuancepolicy"></a>分配 tokenIssuancePolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "45142235"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将[tokenIssuancePolicy](../resources/tokenissuancepolicy.md)分配给[应用程序](../resources/application.md)。
+将 [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) 分配给 [应用程序](../resources/application.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -47,7 +47,7 @@ POST /applications/{id}/tokenIssuancePolicies/$ref
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应分配给应用程序的[tokenIssuancePolicy](../resources/tokenissuancepolicy.md)对象的标识符（使用 `@odata.id` 属性）。
+在请求正文中，使用[tokenIssuancePolicy](../resources/tokenissuancepolicy.md) `@odata.id` 应分配给应用程序的属性) 提供 tokenIssuancePolicy 对象 (的标识符。
 
 ## <a name="response"></a>响应
 
@@ -111,3 +111,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

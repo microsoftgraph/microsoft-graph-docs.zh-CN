@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 631b592dc75bc34d462fe27fee674f94035c1ab5
-ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
+ms.openlocfilehash: a6f21e549e73f8d62a3dda507ca396893510e47c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46589227"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983268"
 ---
 # <a name="get-channel"></a>获取频道
 
@@ -26,11 +26,11 @@ ms.locfileid: "46589227"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.readbasic.all、ChannelSettings、ChannelSettings、Group、group、group。 all、、all、all、all、all、all 和 all 的所有读写。    |
+|委派（工作或学校帐户） | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | User.readbasic.all、ChannelSettings、ChannelSettings、ChannelSettings、、group、*group、group*、group、group、group、group、group。 all、、、all、all、all 和 all    |
 
-> **注意**：标记为 * 的权限使用[特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于[特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
@@ -125,3 +125,5 @@ Content-length: 201
   ]
 }
 -->
+
+

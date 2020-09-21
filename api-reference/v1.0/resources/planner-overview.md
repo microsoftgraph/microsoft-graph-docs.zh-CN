@@ -1,26 +1,26 @@
 ---
 title: 使用 Planner REST API
-description: 你可以使用 Microsoft Graph 中的 Planner API 创建任务并将其分配给 Office 365 中某个组的用户。
+description: 可以使用 Microsoft Graph 中的 Planner API 创建任务，并将其分配给 Microsoft 365 中某个群组的用户。
 author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: c2326aef5ba443cad8668669f189d97ca2da65ae
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: ae72d196c5d27160c94e0ba0d2309b43ece06bb5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618694"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037638"
 ---
 # <a name="use-the-planner-rest-api"></a>使用 Planner REST API
 
-你可以使用 Microsoft Graph 中的 Planner API 创建任务并将其分配给 Office 365 中某个组的用户。
+可以使用 Microsoft Graph 中的 Planner API 创建任务，并将其分配给 Microsoft 365 中某个群组的用户。
 
-开始使用 Planner API 之前，需要了解主对象互相之间以及与 Office 365 组的关系。
+开始使用 Planner API 之前，需要了解主对象互相之间以及与 Microsoft 365 组的关系。
 
-## <a name="office-365-groups"></a>Office 365 组
+## <a name="microsoft-365-groups"></a>Microsoft 365 组
 
-Office 365 组是 Planner API 中的计划的所有者。
+Microsoft 365 群组是 Planner API 中的计划的所有者。
 若要[获取组所有的计划](../api/plannergroup-list-plans.md)，请发出以下 HTTP 请求。
 
 ``` http
@@ -107,4 +107,8 @@ Planner 使用 **etag** 对所有资源进行版本控制。 这些 **etag** 在
 
 所有 Planer API `POST`、`PATCH` 和 `DELETE` 请求都需要使用受请求约束的资源的最后一个已知 etag 值指定 `If-Match` 标头。
 如果请求中指定的 etag 值不再匹配服务中资源的版本，也会返回 412 状态代码。 在这种情况下，客户端应该再次读取资源并获取新的 etag。
+
+## <a name="whats-new"></a>最近更新
+了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
+
 

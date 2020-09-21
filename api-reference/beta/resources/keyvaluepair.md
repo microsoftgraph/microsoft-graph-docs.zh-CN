@@ -5,16 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 2417ada5a3fa3937d6560f62a47c99f6b47d44e0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c2f68a6311eb0271506a307c2fa877b830621514
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523014"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058114"
 ---
 # <a name="keyvaluepair-resource-type"></a>keyValuePair 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ Action 参数的项值对。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|name|String|此键值对的名称|
+|名称|String|此键值对的名称|
 |value|String|此键值对的值|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -56,3 +56,4 @@ Action 参数的项值对。
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: cdd0bb125fd8b84177b1370bca633f6d9ae5bb87
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3efd8a90e1ca42193a858a37465a49bc17fd164a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534263"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037673"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>meetingParticipantInfo 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "42534263"
 | 属性       | 类型                          | 说明                              |
 |:---------------|:------------------------------|:-----------------------------------------|
 | 窃取       | [identitySet](identityset.md) | 参与者的标识信息。 |
-| upn            | 字符串                        | 参与者的用户主体名称。  |
+| upn            | String                        | 参与者的用户主体名称。  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -55,3 +55,4 @@ ms.locfileid: "42534263"
   "suppressions": []
 }
 -->
+

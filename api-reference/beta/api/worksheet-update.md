@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: cf3c19ec56b9d4da0efbc2e99fc208bb378a6008
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 702286ad3b4e87086f62cf68b94d33057713903a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451171"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989736"
 ---
 # <a name="update-worksheet"></a>更新工作表
 
@@ -19,7 +19,7 @@ ms.locfileid: "42451171"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 worksheet 对象的属性。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -50,7 +50,7 @@ PATCH /workbook/worksheets/{id|name}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[workbookWorksheet](../resources/workbookworksheet.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [workbookWorksheet](../resources/workbookworksheet.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -118,3 +118,5 @@ Content-length: 100
   ]
 }
 -->
+
+

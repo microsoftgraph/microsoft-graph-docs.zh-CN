@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d9f5df716d62f2ae33e9a6c90d5803413b8c69b9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 53029bf5c8fc195bcafa52409b6d00b03f547c68
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461829"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965559"
 ---
 # <a name="mailtipserror-resource-type"></a>mailTipsError 资源类型
 
@@ -53,3 +53,4 @@ ms.locfileid: "43461829"
   "section": "documentation",
   "tocPath": ""
 }-->
+

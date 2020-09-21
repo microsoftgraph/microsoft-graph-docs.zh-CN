@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 6d041a24c9c2f4b6ff6165fc902848ded1453cdc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eeab85177fe1fe36d5723d760937ba7a9aa66298
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451309"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989799"
 ---
 # <a name="workbookrangeview-range"></a>workbookRangeView: range
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -97,3 +97,5 @@ Content-length: 157
   "columnIndex": 99
 }
 ```
+
+

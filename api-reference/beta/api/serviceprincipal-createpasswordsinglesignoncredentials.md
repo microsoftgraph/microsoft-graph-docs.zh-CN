@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c988f9bf41b18d265d75aadd518d65acf2d4ded1
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 7edecd61c6dfeaacaabf3b7ff6ff789584397631
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44287001"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044653"
 ---
 # <a name="serviceprincipal-createpasswordsinglesignoncredentials"></a>servicePrincipal： createPasswordSingleSignOnCredentials
 
@@ -31,7 +31,7 @@ ms.locfileid: "44287001"
 | 应用程序                            | 所有的读写全部和目录。全部 |
 
 > [!NOTE]
-> 用户可以为自己创建凭据。 具有以下角色的服务主体所有者和管理员可以为任何用户或组创建凭据： GlobalAdministrator、ApplicationAdministrator、CloudApplicationAdministrator。 若要了解详细信息，请参阅[目录角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
+> 用户可以为自己创建凭据。 具有以下角色的服务主体所有者和管理员可以为任何用户或组创建凭据： GlobalAdministrator、ApplicationAdministrator、CloudApplicationAdministrator。 若要了解详细信息，请参阅 [目录角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,11 +55,11 @@ POST /servicePrincipals/{id}/createPasswordSingleSignOnCredentials
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|String|此凭据集所属的用户或组的 ID。|
-|凭据|[凭据](../resources/credential.md)集合|定义完整的登录流的 credential 对象的列表。|
+|凭据|[凭据](../resources/credential.md) 集合|定义完整的登录流的 credential 对象的列表。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的[passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -150,3 +150,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

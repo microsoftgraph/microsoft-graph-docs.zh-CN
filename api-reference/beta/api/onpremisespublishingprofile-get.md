@@ -1,16 +1,16 @@
 ---
 title: 获取 onPremisesPublishingProfile
-description: 检索[onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md)对象的属性和关系。
+description: 检索 [onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) 对象的属性和关系。
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9fe411c59577132dfd770db20db11bce4061d75d
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: dadf7cf9efbd7b8db37091b99b66c7747959fd5f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199905"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010739"
 ---
 # <a name="get-onpremisespublishingprofile"></a>获取 onPremisesPublishingProfile
 
@@ -18,7 +18,7 @@ ms.locfileid: "43199905"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md)对象的属性和关系。
+检索 [onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "43199905"
 |:--------------------------------------|:---------------------------------------------------------|
 | 委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ GET ~/onPremisesPublishingProfiles/{publishingType}/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -172,3 +172,5 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

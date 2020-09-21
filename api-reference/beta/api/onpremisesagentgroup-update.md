@@ -1,16 +1,16 @@
 ---
 title: 更新 onPremisesAgentGroup
-description: 更新**onPremisesAgentGroup**对象的属性。
+description: 更新 **onPremisesAgentGroup** 对象的属性。
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 58d452bea88c58de944cdb4f48bf482025abb2ba
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 1d2aac32242617891574e2aa51f220e8d990e7e1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200234"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010778"
 ---
 # <a name="update-onpremisesagentgroup"></a>更新 onPremisesAgentGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "43200234"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象的属性。
+更新 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "43200234"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -118,3 +118,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

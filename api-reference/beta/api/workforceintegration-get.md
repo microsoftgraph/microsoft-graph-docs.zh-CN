@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f66479af44efcbc686ad5d3acfa7155b26447a0f
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 404a2968c9dc3413ecdd5c9f95d3170ed8bc6222
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154099"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989771"
 ---
 # <a name="get-workforceintegration"></a>获取 workforceIntegration
 
@@ -18,7 +18,7 @@ ms.locfileid: "44154099"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[workforceintegration](../resources/workforceintegration.md)对象的属性和关系。
+检索 [workforceintegration](../resources/workforceintegration.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "44154099"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | WorkforceIntegration、WorkforceIntegration 和所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,9 +40,9 @@ GET /teamwork/workforceIntegrations/{workforceIntegrationId}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -54,7 +54,7 @@ GET /teamwork/workforceIntegrations/{workforceIntegrationId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[workforceIntegration](../resources/workforceintegration.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [workforceIntegration](../resources/workforceintegration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -125,3 +125,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

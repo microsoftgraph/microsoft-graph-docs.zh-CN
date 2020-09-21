@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b810e83e1444312ede43933edaf2d29d76ab9b07
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 7e7640b781c15f19d9ee15883d715c99243cbd5f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154092"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989764"
 ---
 # <a name="create-workforceintegration"></a>创建 workforceIntegration
 
@@ -18,7 +18,7 @@ ms.locfileid: "44154092"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[workforceIntegration](../resources/workforceintegration.md)对象。
+创建新的 [workforceIntegration](../resources/workforceintegration.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "44154092"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | WorkforceIntegration |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,11 +47,11 @@ POST /teamwork/workforceIntegrations
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[workforceIntegration](../resources/workforceintegration.md)对象的 JSON 表示形式。
+在请求正文中，提供 [workforceIntegration](../resources/workforceintegration.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[workforceIntegration](../resources/workforceintegration.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [workforceIntegration](../resources/workforceintegration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -59,7 +59,7 @@ POST /teamwork/workforceIntegrations
 
 #### <a name="request"></a>请求
 
-下面是创建新的**workforceIntegration**对象的请求示例。
+下面是创建新的 **workforceIntegration** 对象的请求示例。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -154,7 +154,7 @@ Content-type: application/json
 ```
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面介绍响应示例。
 ```
 HTTP/1.1 200 OK
 {
@@ -172,7 +172,7 @@ HTTP/1.1 200 OK
 }
 
 ```
-若要更新启用了 SwapRequest 的现有**workforceIntegration**对象以进行资格筛选，请参阅[update](../api/workforceintegration-update.md)方法。
+若要更新启用了 SwapRequest 的现有 **workforceIntegration** 对象以进行资格筛选，请参阅 [update](../api/workforceintegration-update.md) 方法。
 
 ### <a name="example-3-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>示例3：在 eligibilityFilteringEnabledEntities 中包含 SwapRequest 时提取符合条件的班次
 
@@ -227,3 +227,5 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

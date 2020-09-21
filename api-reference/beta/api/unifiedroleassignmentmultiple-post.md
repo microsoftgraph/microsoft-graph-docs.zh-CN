@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 326f58cdce239c2a33ac555497f67b0bc0387b71
-ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
+ms.openlocfilehash: 687e29bdc2668c360a935260a99b2d831f29f1c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/04/2020
-ms.locfileid: "45038518"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989866"
 ---
 # <a name="create-unifiedroleassignmentmultiple"></a>创建 unifiedRoleAssignmentMultiple
 
@@ -18,7 +18,7 @@ ms.locfileid: "45038518"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md)对象。 使用此对象在 Microsoft Intune 中创建角色分配。 对于其他 Micrsoft 365 应用程序（如 Azure AD），请使用[unifiedRoleAssignment](../resources/unifiedroleassignment.md)。
+创建新的 [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象。 使用此对象在 Microsoft Intune 中创建角色分配。 对于其他 Micrsoft 365 应用程序 (如 Azure AD) ，请使用 [unifiedRoleAssignment](../resources/unifiedroleassignment.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -47,19 +47,19 @@ POST /roleManagement/deviceManagement/roleAssignments
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md)对象的 JSON 表示形式。 请求必须具有在 Azure AD 中定义的作用域（例如 `directoryScopeIds` ）或特定于应用程序的作用域（例如） `appScopeId` 。 Azure AD 作用域的示例包括租户（"/"）、管理单元或应用程序。 
+在请求正文中，提供 [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象的 JSON 表示形式。 请求必须具有在 Azure AD 中定义的作用域（例如 `directoryScopeIds` ）或特定于应用程序的作用域（例如） `appScopeId` 。 Azure AD 作用域的示例包括租户 ( "/" ) 、管理单元或应用程序。 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-create-a-role-assignment-in-intune-over-two-scope-groups-which-are-azure-ad-objects"></a>示例1：在 Intune 中在两个作用域组（Azure AD 对象）上创建角色分配
+### <a name="example-1-create-a-role-assignment-in-intune-over-two-scope-groups-which-are-azure-ad-objects"></a>示例1：在 Intune 中的两个作用域组之间创建角色分配 (它们是 Azure AD 对象) 
 
 #### <a name="request"></a>请求
 
-下面展示了示例请求。 请注意，使用**roleTemplateId**进行**roleDefinitionId**。 **roleDefinitionId**可以是服务范围的模板 ID，也可以是特定于目录的**roleDefinitionId**。
+下面展示了示例请求。 请注意，使用 **roleTemplateId** 进行 **roleDefinitionId**。 **roleDefinitionId** 可以是服务范围的模板 ID，也可以是特定于目录的 **roleDefinitionId**。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -199,3 +199,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

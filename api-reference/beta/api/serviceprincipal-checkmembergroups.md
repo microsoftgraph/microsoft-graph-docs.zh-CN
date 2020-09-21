@@ -1,24 +1,24 @@
 ---
-title: servicePrincipal： checkMemberGroups
-description: 检查指定组列表中的成员身份。 从列表中返回，这些组的服务主体具有直接或可传递的成员身份。
+title: servicePrincipal：checkMemberGroups
+description: 检查指定组列表中的成员身份。 将列表中具有直接或可传递成员身份的服务主体组返回。
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 47edde97d964b6f860a4b6d41a9d3bda04bb9e08
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 2e36d11d63d0ce8cd5ab5a1e8b894d4638c22eaf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383446"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044683"
 ---
-# <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal： checkMemberGroups
+# <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal：checkMemberGroups
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检查指定组列表中的成员身份。 从列表中返回，这些组的[servicePrincipal](../resources/serviceprincipal.md)具有直接或可传递的成员资格。
+检查指定组列表中的成员身份。 将列表中具有直接或可传递成员身份的 [servicePrincipal](../resources/serviceprincipal.md) 组返回。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,13 +44,13 @@ POST /servicePrincipals/{id}/checkMemberGroups
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |Description|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |groupIds|String collection||
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和字符串集合对象。
+如果成功，该运营商将返回 `200 OK` 响应代码和响应正文中的字符串集合对象。
 
 ## <a name="examples"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -122,3 +122,5 @@ Content-length: 39
   ]
 }
 -->
+
+

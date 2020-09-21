@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8a79845d8b592ed2812b085479f2de8ace19e6a0
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: b405b97f6a98452241704cdd74bb2b697a945601
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219156"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078064"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>配置与自定义目标属性的同步
 
@@ -18,9 +18,9 @@ ms.locfileid: "43219156"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-您可以自定义同步架构，以包括在目标目录中定义的自定义属性。 本文介绍如何通过添加名`officeCode`为的新字段来自定义 Salesforce 订阅。 你将同步从 Azure Active Directory （Azure AD）设置为 Salesforce，对于每个用户，将使用 Azure AD `officeCode`中的`extensionAttribute10`字段的值填充 Salesforce 中的字段。
+您可以自定义同步架构，以包括在目标目录中定义的自定义属性。 本文介绍如何通过添加名为的新字段来自定义 Salesforce 订阅 `officeCode` 。 你已设置从 Azure Active Directory (Azure AD) 到 Salesforce 的同步，并且对于每个用户，将 `officeCode` 使用 `extensionAttribute10` Azure AD 中的字段的值填充 Salesforce 中的字段。
 
-本文假定您已添加了一个应用程序，该应用程序支持通过[Azure 门户](https://portal.azure.com)同步到您的租户，您知道应用程序显示名称，并且您具有 Microsoft Graph 的授权令牌。 有关如何获取授权令牌的信息，请参阅[获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview)。
+本文假定您已添加了一个应用程序，该应用程序支持通过 [Azure 门户](https://portal.azure.com)同步到您的租户，您知道应用程序显示名称，并且您具有 Microsoft Graph 的授权令牌。 有关如何获取授权令牌的信息，请参阅 [获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview)。
 
 ## <a name="find-the-service-principal-object-by-display-name"></a>按显示名称查找服务主体对象
 
@@ -52,12 +52,12 @@ Authorization: Bearer {Token}
 }
 ```
 
-`{servicePrincipalId}`为`167e33e9-f80e-490e-b4d8-698d4a80fb3e`。
+`{servicePrincipalId}`为 `167e33e9-f80e-490e-b4d8-698d4a80fb3e` 。
 
 
 ## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>在服务主体的上下文中列出同步作业 
 
-下面的示例演示如何获取需要使用`jobId`的。 通常情况下，响应仅返回一个作业。
+下面的示例演示如何获取 `jobId` 需要使用的。 通常情况下，响应仅返回一个作业。
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
@@ -76,7 +76,7 @@ Authorization: Bearer {Token}
 }
 ```
 
-`{jobId}`为`SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`。
+`{jobId}`为 `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa` 。
 
 
 ## <a name="get-the-synchronization-schema"></a>获取同步架构
@@ -207,17 +207,17 @@ Content-Type: application/json
 
 ## <a name="add-a-definition-for-the-officecode-attribute-and-a-mapping-between-attributes"></a>为 officeCode 属性添加定义以及属性之间的映射
 
-使用您选择的纯文本编辑器（例如，[记事本 + +](https://notepad-plus-plus.org/)或[JSON 编辑器 Online](https://www.jsoneditoronline.org/)）执行以下操作：
+使用您选择的纯文本编辑器 (例如， [记事本 + +](https://notepad-plus-plus.org/) 或 [JSON 编辑器联机](https://www.jsoneditoronline.org/)) 到：
 
-1. 为`officeCode`属性添加[属性定义](synchronization-attributedefinition.md)。 
+1. 为属性添加 [属性定义](synchronization-attributedefinition.md) `officeCode` 。 
 
-    - 在 "目录" 下，查找名称为 "salesforce.com" 的目录，并在对象的数组中查找名为**User**的一个。
+    - 在 "目录" 下，查找名称为 "salesforce.com" 的目录，并在对象的数组中查找名为 **User**的一个。
     - 将新属性添加到列表中，并指定名称和类型，如下面的示例所示。
 
-2. 在和`officeCode` `extensionAttribute10`之间添加[属性映射](synchronization-attributemapping.md)。
+2. 在和之间添加 [属性映射](synchronization-attributemapping.md) `officeCode` `extensionAttribute10` 。
 
-    - 在 " [synchronizationRules](synchronization-synchronizationrule.md)" 下，查找指定 Azure AD 作为源目录的规则，并将 Salesforce.com 指定为目标`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`目录（）。
-    - 在规则的 " [objectMappings](synchronization-objectmapping.md) " 中，查找 "用户之间的`"sourceObjectName": "User",   "targetObjectName": "User"`映射" （）。
+    - 在 " [synchronizationRules](synchronization-synchronizationrule.md)" 下，查找指定 Azure AD 作为源目录的规则，并将 "Salesforce.com" 指定为目标目录 (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`) 。
+    - 在规则的 " [objectMappings](synchronization-objectmapping.md) " 中，查找 "用户 () 之间的映射 `"sourceObjectName": "User",   "targetObjectName": "User"` 。
     - 在**objectMapping**的[attributeMappings](synchronization-attributemapping.md)数组中，添加一个新项，如下面的示例所示。
 
 ```json
@@ -295,3 +295,5 @@ HTTP/1.1 201 No Content
   "suppressions": [
   ]
 }-->
+
+

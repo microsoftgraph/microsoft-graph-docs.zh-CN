@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: bb5b5e47ba1a8478d93146138364c3eb212503bb
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 5398e58b6e0edc8b7b87021946f69986d3f619a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383432"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044637"
 ---
 # <a name="delete-an-approleassignment-granted-to-a-service-principal"></a>删除向服务主体授予的 appRoleAssignment
 
@@ -18,9 +18,9 @@ ms.locfileid: "44383432"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除已授予服务主体的[appRoleAssignment](../resources/approleassignment.md) 。
+删除已授予服务主体的 [appRoleAssignment](../resources/approleassignment.md) 。
 
-分配给服务主体的应用程序角色也称为 "[应用程序权限](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types)"。 删除服务主体的应用程序角色分配等效于撤消仅应用权限授予。
+分配给服务主体的应用程序角色也称为 " [应用程序权限](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types)"。 删除服务主体的应用程序角色分配等效于撤消仅应用权限授予。
 
 ## <a name="permissions"></a>权限
 
@@ -30,7 +30,7 @@ ms.locfileid: "44383432"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AppRoleAssignment、Directory.accessasuser.all 和所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | AppRoleAssignment |
+|应用程序 | AppRoleAssignment.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,9 +41,9 @@ DELETE /servicePrincipals/{id}/appRoleAssignments/{id}
 ```
 
 > [!NOTE]
-> 作为一种最佳做法，我们建议通过 `appRoleAssignedTo` _资源_服务主体的关系（而不是 `appRoleAssignments` 分配的用户、组或服务主体的关系）删除应用程序角色分配。
+> 作为一种最佳做法，我们建议通过 `appRoleAssignedTo` _资源_ 服务主体的关系（而不是 `appRoleAssignments` 分配的用户、组或服务主体的关系）删除应用程序角色分配。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
@@ -114,3 +114,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

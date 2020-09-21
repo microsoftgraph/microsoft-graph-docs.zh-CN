@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 3cce44c14eb9253bc391014a555966e1f4c50a2c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 873f5058b7e56bd825a174b760320fe19ecb1373
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510548"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051493"
 ---
 # <a name="update-rangeborder"></a>更新 RangeBorder
 
@@ -44,13 +44,13 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/{sideInd
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|color|字符串|表示窗体 #RRGGBB（例如“FFA500”）的边框线条颜色或作为已命名的 HTML 颜色（例如“orange”）的 HTML 颜色代码。|
-|style|string|线条样式的常量之一，指定边框的线条样式。 可能的值为： `None`、 `Continuous`、 `Dash` `DashDot` `DashDotDot` `Dot` `Double`、、、、 `SlantDashDot`。|
+|color|string|表示窗体 #RRGGBB（例如“FFA500”）的边框线条颜色或作为已命名的 HTML 颜色（例如“orange”）的 HTML 颜色代码。|
+|style|string|线条样式的常量之一，指定边框的线条样式。 可能的值为：、、、、、、 `None` `Continuous` `Dash` `DashDot` `DashDotDot` `Dot` `Double` `SlantDashDot` 。|
 |weight|string|指定区域周围的边框的粗细。 可能的值包括 `Hairline`、`Thin`、`Medium`、`Thick`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookRangeBorder](../resources/rangeborder.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [WorkbookRangeBorder](../resources/rangeborder.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -122,3 +122,4 @@ Content-length: 136
   "suppressions": [
   ]
 }-->
+

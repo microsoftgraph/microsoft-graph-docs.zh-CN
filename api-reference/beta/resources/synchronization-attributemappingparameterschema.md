@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 12f1a38340b4c341d65930000c22a6cd2daeb567
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 32710c5411f054ad096bdd293a2f7d46e89a6944
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219170"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078073"
 ---
 # <a name="attributemappingparameterschema-resource-type"></a>attributeMappingParameterSchema 资源类型
 
@@ -18,16 +18,16 @@ ms.locfileid: "43219170"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-描述在[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)中使用的单个参数。
+描述在 [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)中使用的单个参数。
 
 ## <a name="properties"></a>属性
 
 | 属性                   | 类型                      | 说明    |
 |:---------------------------|:-------------------------|:---------------|
-|allowMultipleOccurrences    |Boolean                   |给定参数可多次提供（例如， `Concatenate(string,string,...)`函数中的多个输入字符串）。 |
-|name                        |String                    |参数名称。 |
-|必需                    |Boolean                   |`true`如果参数是必需的;否则`false`为。 |
-|type                        |字符串                    |可取值为：`Boolean`、`Binary`、`Reference`、`Integer` 或 `String`。 默认值为 `String`。|
+|allowMultipleOccurrences    |Boolean                   |可以多次提供给定参数 (例如，函数中的多个输入字符串 `Concatenate(string,string,...)`) 。 |
+|名称                        |String                    |参数名称。 |
+|必需                    |Boolean                   |`true` 如果参数是必需的;否则为 `false` 。 |
+|type                        |String                    |可取值为：`Boolean`、`Binary`、`Reference`、`Integer` 或 `String`。 默认值为 `String`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -63,3 +63,5 @@ ms.locfileid: "43219170"
   "suppressions": []
 }
 -->
+
+

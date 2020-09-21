@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a18a2742c49db6a57bf5a710c3f7d5563c329393
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: c209b42d9b18ec0fc935c588a42e98a9c62c42e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107010"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996715"
 ---
 # <a name="get-applicationsignindetailedsummary"></a>获取 applicationSignInDetailedSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "43107010"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[applicationSignInDetailSummary](../resources/applicationsignindetailedsummary.md)对象的属性和关系。
+检索 [applicationSignInDetailSummary](../resources/applicationsignindetailedsummary.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。
@@ -49,7 +49,7 @@ GET /reports/applicationSignInDetailedSummary/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[applicationSignInDetailedSummary](../resources/applicationsignindetailedsummary.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [applicationSignInDetailedSummary](../resources/applicationsignindetailedsummary.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -118,3 +118,5 @@ Content-length: 295
   "suppressions": [
   ]
 }-->
+
+

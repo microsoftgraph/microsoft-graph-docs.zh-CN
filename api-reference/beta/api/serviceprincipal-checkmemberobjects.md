@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c70bc51af3a26d00b48ccf97302c9754fff9efd6
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 8213b2db1cb61eb947816e6b9a3c62485606783c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334041"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044660"
 ---
 # <a name="serviceprincipal-checkmemberobjects"></a>servicePrincipal： checkMemberObjects
 
@@ -18,9 +18,9 @@ ms.locfileid: "44334041"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检查指定的[servicePrincipal](../resources/serviceprincipal.md)对象的组、目录角色或管理单位列表中的成员资格。 此方法是可传递的。
+检查指定的 [servicePrincipal](../resources/serviceprincipal.md) 对象的组、目录角色或管理单位列表中的成员资格。 此方法是可传递的。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -49,7 +49,7 @@ POST /servicePrincipals/{id}/checkMemberObjects
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型        | Description |
+| 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |ids|String collection|包含目录角色的组、目录角色、管理单元或 roleTemplate Id 的对象 Id 的集合，用于检查成员身份。 最高可指定20个对象。|
 
@@ -134,3 +134,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

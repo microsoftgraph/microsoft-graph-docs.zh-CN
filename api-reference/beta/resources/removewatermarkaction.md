@@ -5,20 +5,20 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 271058e3ae56b2ded72c577f453d2af920d3ef0c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0b75a001e7673bbeb1513eaac82555d228d712f5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521136"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023957"
 ---
 # <a name="removewatermarkaction-resource-type"></a>removeWatermarkAction 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示一个操作，该操作指定要从信息中删除的内容水印的详细信息（如果适用）。 如果由于更新或删除标签而要删除水印， [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md)、 [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md)或[EvaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) api 可能会返回**removeWatermarkAction** 。 该操作指示使用应用程序移除包含之前适用的内容水印的特定 UI 元素。
+表示一个操作，该操作指定要从信息中删除的内容水印的详细信息（如果适用）。 如果由于更新或删除标签而要删除水印， [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md)、 [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md)或 [EvaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) api 可能会返回 **removeWatermarkAction** 。 该操作指示使用应用程序移除包含之前适用的内容水印的特定 UI 元素。
 
 ## <a name="properties"></a>属性
 
@@ -54,3 +54,4 @@ ms.locfileid: "42521136"
   "section": "documentation",
   "tocPath": ""
 }-->
+

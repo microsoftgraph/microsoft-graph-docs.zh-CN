@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 634a5531358a1be501c0b3b61f207c85394dba11
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c838baf0a05f57ebf7f80b962d4b4d06daa06452
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447456"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47965538"
 ---
 # <a name="mediaconfig-resource-type"></a>mediaConfig 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 包含用于连接到呼叫的媒体配置的抽象基类。
 
@@ -44,3 +44,4 @@ ms.locfileid: "42447456"
   "suppressions": []
 }
 -->
+

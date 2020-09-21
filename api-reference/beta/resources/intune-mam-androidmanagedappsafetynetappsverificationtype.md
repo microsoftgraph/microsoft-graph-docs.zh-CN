@@ -3,20 +3,20 @@ title: androidManagedAppSafetyNetAppsVerificationType 枚举类型
 description: 管理员在托管应用上强制实施了 Android SafetyNet 设备证明要求。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f0524f820615a1662a0edf58e3f3066da5147f34
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c720d2fdc851bb0f2c48e7d5e35bcfa63e9ee653
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43385727"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030568"
 ---
 # <a name="androidmanagedappsafetynetappsverificationtype-enum-type"></a>androidManagedAppSafetyNetAppsVerificationType 枚举类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -26,7 +26,10 @@ ms.locfileid: "43385727"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|无要求集|
-|enabled|1|要求 Android 设备已启用 SafetyNet 应用验证|
+|enabled|1 |要求 Android 设备已启用 SafetyNet 应用验证|
+
+
+
 
 
 

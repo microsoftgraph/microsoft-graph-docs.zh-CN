@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7f66bb02a1cb38757e18c31004c67dea7bea7b37
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: 54407dcbc45d2a14011ec50aba81bc7ddd759383
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44990288"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989862"
 ---
 # <a name="list-unifiedroleassignmentmultiple"></a>列出 unifiedRoleAssignmentMultiple
 
@@ -18,7 +18,7 @@ ms.locfileid: "44990288"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md)对象的列表。 使用此项可在 Microsoft Intune 中获取角色分配的列表。 对于其他 Micrsoft 365 应用程序（如 Azure AD），请使用[unifiedRoleAssignment](../resources/unifiedroleassignment.md)。
+获取 [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象的列表。 使用此项可在 Microsoft Intune 中获取角色分配的列表。 对于其他 Micrsoft 365 应用程序 (如 Azure AD) ，请使用 [unifiedRoleAssignment](../resources/unifiedroleassignment.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -39,7 +39,7 @@ GET /roleManagement/deviceManagement/roleAssignments
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-您可以对 `roleDefinitionId` 或属性进行筛选 `principalId` 。 该 `roleDefinitionId` 属性可以是角色对象 id，也可以是角色模板对象 id。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+您可以对 `roleDefinitionId` 或属性进行筛选 `principalId` 。 该 `roleDefinitionId` 属性可以是角色对象 id，也可以是角色模板对象 id。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -53,7 +53,7 @@ GET /roleManagement/deviceManagement/roleAssignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -115,3 +115,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

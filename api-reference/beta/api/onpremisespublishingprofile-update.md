@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 83f4023b350357512c0c976ad63cf9c86cffc9c1
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: dc3e664ffa65b4dc8f1a4d003dade424c9d154e1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199768"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010736"
 ---
 # <a name="update-onpremisespublishingprofile"></a>更新 onPremisesPublishingProfile
 
@@ -18,7 +18,7 @@ ms.locfileid: "43199768"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md)对象的属性。
+更新 [onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "43199768"
 |:--------------------------------------|:---------------------------------------------------------|
 | 委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/hybridAgentUpdaterConfigur
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|hybridAgentUpdaterConfiguration|hybridAgentUpdaterConfiguration|表示[hybridAgentUpdaterConfiguration](../resources/hybridagentupdaterconfiguration.md)。|
+|hybridAgentUpdaterConfiguration|hybridAgentUpdaterConfiguration|表示 [hybridAgentUpdaterConfiguration](../resources/hybridagentupdaterconfiguration.md)。|
 
 ## <a name="response"></a>响应
 
@@ -186,3 +186,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

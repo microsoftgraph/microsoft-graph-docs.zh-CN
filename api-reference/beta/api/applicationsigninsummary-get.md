@@ -1,16 +1,16 @@
 ---
 title: 获取 applicationSignInSummary
-description: 检索**applicationSigninSummary**对象的属性和关系。
+description: 检索 **applicationSigninSummary** 对象的属性和关系。
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c7b085b8142c8f2bd2a2a0b0f502178a7179a398
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: cbc72087d34473345d359ba6b57653226ea03e64
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107043"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996680"
 ---
 # <a name="get-applicationsigninsummary"></a>获取 applicationSignInSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "43107043"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[applicationSigninSummary](../resources/applicationsigninsummary.md)对象的属性和关系。
+检索 [applicationSigninSummary](../resources/applicationsigninsummary.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。
@@ -39,7 +39,7 @@ GET reports/getAzureADApplicationSignInSummary(period='{period}')
 
 | 参数 | 说明 |
 |:----------|:----------|
-| period | `D7` （最近七天）或`D30` （最近30天）;其他值会生成错误。 |
+| period | `D7` (最近七天) 或 `D30` (最近30天) ; 其他值会产生错误。 |
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -50,7 +50,7 @@ GET reports/getAzureADApplicationSignInSummary(period='{period}')
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[applicationSignInSummary](../resources/applicationsigninsummary.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [applicationSignInSummary](../resources/applicationsigninsummary.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(
 ---
 
 ### <a name="response"></a>响应
-下面是一个响应示例。 
+下面介绍响应示例。 
 
 >**注意：** 在此处显示的响应对象将缩短 mmight 以提高可读性。 所有属性都将通过实际调用返回。
 <!-- {
@@ -113,3 +113,5 @@ Content-length: 157
   "suppressions": [
   ]
 }-->
+
+

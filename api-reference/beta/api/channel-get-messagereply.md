@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0ff885b7e2fdb8424ffef611a909955ac471ae33
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 0d95727411b89f467804547f77795873c87dcd31
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491629"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983284"
 ---
 # <a name="get-a-reply-to-a-channel-message"></a>获取对频道消息的答复
 
@@ -20,7 +20,7 @@ ms.locfileid: "44491629"
 
 获取团队[频道](../resources/channel.md)中对[邮件](../resources/chatmessage.md)的单个答复。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,9 +28,9 @@ ms.locfileid: "44491629"
 |---------|-------------|
 |委派（工作或学校帐户）| ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application| ChannelMessage *、ChannelMessage、group、group、group、group 写。 All |
+|应用程序| ChannelMessage *、ChannelMessage、group、group、group、group 写。 All |
 
-> **注意**：标记为 * 的权限使用[特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于[特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
@@ -178,3 +178,5 @@ Content-type: application/json
   ]
 }
 -->
+
+
