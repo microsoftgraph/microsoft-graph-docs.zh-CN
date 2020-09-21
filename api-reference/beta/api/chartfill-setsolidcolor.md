@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 6ffc3fb80b0e4e0dcebfb9d411585c5c68de59c7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6beb88854f3f70536c4555cbf795278a80628857
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42439469"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983002"
 ---
 # <a name="chartfill-setsolidcolor"></a>ChartFill: setSolidColor
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -111,3 +111,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

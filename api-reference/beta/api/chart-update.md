@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 032ad42d8ae882d9ff1e388e95fb378228b72d78
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 58541996c235293dbde4edd5a0d5328ec765e17d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42439784"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983149"
 ---
 # <a name="update-chart"></a>更新图表
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +52,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[workbookChart](../resources/workbookchart.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [workbookChart](../resources/workbookchart.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -118,3 +118,5 @@ Content-length: 52
   ]
 }
 -->
+
+

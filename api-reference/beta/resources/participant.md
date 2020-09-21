@@ -5,26 +5,28 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6ae920e35c3ba7c2b31c5947f15b3e9d6585a21c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7598171b4d706a639a11d425ffa409e25126dcf8
+ms.sourcegitcommit: d12bd5435c198bcd096e1f7f6a2716f4a04631cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522037"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48137146"
 ---
 # <a name="participant-resource-type"></a>参与者资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-参与者类型。
+表示呼叫中的参与者。
 
 ## <a name="methods"></a>方法
 
 | 方法                                                 | 返回类型                                                 | 说明                                    |
 |:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|
-| [获取参与者](../api/participant-get.md)           | [参与者](participant.md)                               | 读取**参与者**对象的属性。 |
+| [列出参与者](../api/participant-get.md)         | [参与者](participant.md)                               | 在呼叫中检索 **参与者** 对象的列表。 |
+| [获取参与者](../api/participant-get.md)           | [参与者](participant.md)                               | 读取 **参与者** 对象的属性。 |
+| [删除参与者](../api/participant-delete.md)     | 无   | 删除呼叫中的参与者。                  |
 | [ConfigureMixer](../api/participant-configuremixer.md) | [commsOperation](commsoperation.md)                         | 配置参与者音频混合器。         |
 | [邀请](../api/participant-invite.md)                 | [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)                         | 邀请参与者加入呼叫。              |
 | [参与者静音](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | 将呼叫中的参与者静音。                  |
@@ -36,9 +38,9 @@ ms.locfileid: "42522037"
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
 | id                   | String                                   | 参与者 ID。                                          |
 | info                 | [participantInfo](participantinfo.md)    | 参与者的参与者。                          |
-| isInLobby            | 布尔                                  | `true`如果参与者处于会议厅中。                          |
-| isMuted              | 布尔                                  | `true`如果参与者处于静音（客户端或服务器为静音）。    |
-| mediaStreams         | [mediaStream](mediastream.md)集合 | 媒体流的列表。                                   |
+| isInLobby            | Boolean                                  | `true` 如果参与者处于会议厅中。                          |
+| isMuted              | Boolean                                  | `true` 如果与会者已静音 (客户端或服务器) 。    |
+| mediaStreams         | [mediaStream](mediastream.md) 集合 | 媒体流的列表。                                   |
 | metadata             | String                                   | 名单中参与者提供的数据的 blob。     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | 有关参与者是否有录制功能的信息。 |
 
@@ -80,3 +82,5 @@ ms.locfileid: "42522037"
   "suppressions": []
 }
 -->
+
+

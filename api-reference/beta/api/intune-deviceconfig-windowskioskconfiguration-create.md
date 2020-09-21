@@ -3,24 +3,24 @@ title: 创建 windowsKioskConfiguration
 description: 创建新的 windowsKioskConfiguration 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bbf0366942793996e570c0924b8e5458eeb3e572
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: be440c4866e22461b06dc22d69728c4416d148d6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43335264"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022608"
 ---
 # <a name="create-windowskioskconfiguration"></a>创建 windowsKioskConfiguration
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md)对象。
+创建新的 [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -65,10 +65,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md)集合|此策略设置允许为展台配置定义展台配置文件的列表。 此集合最多可包含3个元素。|
-|kioskBrowserDefaultUrl|字符串|指定浏览器在启动时应导航到的默认 URL。|
+|kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md) 集合|此策略设置允许为展台配置定义展台配置文件的列表。 此集合最多可包含3个元素。|
+|kioskBrowserDefaultUrl|String|指定浏览器在启动时应导航到的默认 URL。|
 |kioskBrowserEnableHomeButton|Boolean|启用展台浏览器的 "主页" 按钮。 默认情况下，"主页" 按钮处于禁用状态。|
-|kioskBrowserEnableNavigationButtons|Boolean|启用展台浏览器的导航按钮（前进/后退）。 默认情况下，导航按钮处于禁用状态。|
+|kioskBrowserEnableNavigationButtons|Boolean|启用展台浏览器的导航按钮 (向前/向后) 。 默认情况下，导航按钮处于禁用状态。|
 |kioskBrowserEnableEndSessionButton|Boolean|启用展台浏览器的结束会话按钮。 默认情况下，"结束会话" 按钮处于禁用状态。|
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|指定在展台浏览器以全新状态重新启动之前会话处于空闲状态的分钟数。  有效值为1-1440。 有效值为1至1440|
 |kioskBrowserBlockedURLs|String 集合|指定展台浏览器不应导航到的 Url|
@@ -79,7 +79,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -267,6 +267,9 @@ Content-Length: 3001
   }
 }
 ```
+
+
+
 
 
 

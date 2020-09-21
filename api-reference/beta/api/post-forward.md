@@ -5,16 +5,16 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ff8bbab2bf23622deeefd3aaa8cd163186f834d8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c07f7c3176a74745af54efe3cd3624381624deb7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455474"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043115"
 ---
 # <a name="post-forward"></a>帖子：转发
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -118,3 +118,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

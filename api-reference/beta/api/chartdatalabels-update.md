@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7682c29203e057b23f19259422c61c4264c1f3d4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ec22e73267faba4559b453fe0353aeb0c967a2bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42439497"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983044"
 ---
 # <a name="update-workbookchartdatalabels"></a>更新 workbookChartDataLabels
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,18 +44,18 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/datalabels
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|position|字符串|表示数据标签位置的 DataLabelPosition 值。可能的值是：`None`、`Center`、`InsideEnd`、`InsideBase`、`OutsideEnd`、`Left`、`Right`、`Top`、`Bottom`、`BestFit`、`Callout`。|
+|position|string|表示数据标签位置的 DataLabelPosition 值。可能的值是：`None`、`Center`、`InsideEnd`、`InsideBase`、`OutsideEnd`、`Left`、`Right`、`Top`、`Bottom`、`BestFit`、`Callout`。|
 |separator|string|表示用于图表中数据标签的分隔符的字符串。|
-|showBubbleSize|boolean|表示数据标签气泡大小是否可见的布尔值。|
-|showCategoryName|boolean|表示数据标签类别名称是否可见的布尔值。|
-|showLegendKey|boolean|表示数据标签图例标示是否可见的布尔值。|
-|showPercentage|boolean|表示数据标签百分比是否可见的布尔值。|
-|showSeriesName|boolean|表示数据标签系列名称是否可见的布尔值。|
+|showBubbleSize|布尔|表示数据标签气泡大小是否可见的布尔值。|
+|showCategoryName|布尔|表示数据标签类别名称是否可见的布尔值。|
+|showLegendKey|布尔|表示数据标签图例标示是否可见的布尔值。|
+|showPercentage|布尔|表示数据标签百分比是否可见的布尔值。|
+|showSeriesName|布尔|表示数据标签系列名称是否可见的布尔值。|
 |showValue|布尔|表示数据标签值是否可见的布尔值。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[workbookChartDataLabels](../resources/workbookchartdatalabels.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [workbookChartDataLabels](../resources/workbookchartdatalabels.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -126,3 +126,5 @@ Content-length: 134
   ]
 }
 -->
+
+

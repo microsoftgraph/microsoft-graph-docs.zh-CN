@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4065c0180c8d7e313c9773310884d26967bc9df6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5a9070d46e1a90a7dff9517a83c7342c69d097c0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464020"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070238"
 ---
 # <a name="get-device"></a>获取设备
 
@@ -110,3 +110,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

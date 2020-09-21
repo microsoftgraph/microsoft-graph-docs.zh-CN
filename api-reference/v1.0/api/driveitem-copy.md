@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 以异步方式在新父项下或使用新名称创建一个 driveItem 副本（包括任何子项）。
 doc_type: apiPageType
-ms.openlocfilehash: dd8036439a2808f6122f50de982219e243bc11c8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6382b4713125817a0c0f677ae4cbf790cf4551ac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517788"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009889"
 ---
 # <a name="copy-a-driveitem"></a>复制 DriveItem
 
@@ -122,3 +122,4 @@ Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B
   "suppressions": [
   ]
 } -->
+

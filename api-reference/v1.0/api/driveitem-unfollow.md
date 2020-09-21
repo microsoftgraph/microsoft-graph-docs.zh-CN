@@ -6,20 +6,20 @@ title: 取消追随驱动器项目
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 577b35a0d10cbbe624f2615b21cf4a9b5fb8ceaa
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: f0148663bbe25902a96d1a3d89fea16d509a0ad8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124370"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063800"
 ---
 # <a name="unfollow-drive-item"></a>取消追随驱动器项目
 
 命名空间：microsoft.graph
 
-取消追随[driveItem](../resources/driveitem.md)。
+取消追随 [driveItem](../resources/driveitem.md)。
 
->**注意：** 若要关注某个项目，请参阅 "[关注项](driveitem-follow.md)"。
+>**注意：** 若要关注某个项目，请参阅 " [关注项](driveitem-follow.md)"。
 
 ## <a name="permissions"></a>权限
 
@@ -53,7 +53,7 @@ POST /users/{user-id}/drive/items/{item-id}/unfollow
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面是一个请求示例。
-本示例将 unfollows 标识为的`{item-id}`项目。
+本示例将 unfollows 标识为的项目 `{item-id}` 。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -99,3 +99,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

@@ -5,16 +5,16 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3612f3a33927af4980032543170c0872230f4f4d
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 5a3feb48157514c2a5eb6cf2283ef37eb133c42b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125076"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057491"
 ---
 # <a name="create-conversation"></a>创建对话
 
-命名空间： microsoft. graph 通过包含线程和帖子创建新的[对话](../resources/conversation.md)。 
+命名空间： microsoft. graph 通过包含线程和帖子创建新的 [对话](../resources/conversation.md) 。 
 
 使用[回复线程](conversationthread-reply.md)或[回复帖子](post-reply.md)进一步发布到该对话。
 
@@ -25,7 +25,7 @@ ms.locfileid: "43125076"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -140,3 +140,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

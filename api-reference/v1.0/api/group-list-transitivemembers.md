@@ -1,24 +1,24 @@
 ---
-title: 列表组可传递成员
+title: List group transitive members
 description: 获取组成员的列表。 组可以将用户、设备、组织联系人和其他组作为成员。 此操作是可传递的，并返回所有嵌套成员的简单列表。
 author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e1c4ec7765f40e2867ea39f8d5de4cc6cbd2bd4b
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 24c10425331f965e8e09dc6d6dad6bc71d774f15
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289423"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057540"
 ---
-# <a name="list-group-transitive-members"></a>列表组可传递成员
+# <a name="list-group-transitive-members"></a>List group transitive members
 
 命名空间：microsoft.graph
 
 获取组成员的列表。 组可以将用户、设备、组织联系人和其他组作为成员。 此操作是可传递的，并返回所有嵌套成员的简单列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -140,3 +140,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

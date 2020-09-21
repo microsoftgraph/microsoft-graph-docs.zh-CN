@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: shauliu
-ms.openlocfilehash: 384558109521fe93c5ef4331e88355c8757cf5fc
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 12f99f7face3013a3286b95ce90c377ff2d1bbf5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809486"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989512"
 ---
 # <a name="governancesubject-resource-type"></a>governanceSubject 资源类型
 
@@ -69,3 +69,5 @@ ms.locfileid: "46809486"
   "suppressions": []
 }
 -->
+
+

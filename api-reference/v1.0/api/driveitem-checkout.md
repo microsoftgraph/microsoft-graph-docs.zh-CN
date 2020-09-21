@@ -5,18 +5,18 @@ title: driveItem：签出
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 04b8d15498c7795dfbe97dac8ea064140ca48466
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 60b9f5de40f925354a0513c1b467295bf24ccb85
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43511080"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009896"
 ---
 # <a name="driveitem-checkout"></a>driveItem：签出
 
 命名空间：microsoft.graph
 
-签出**driveItem**资源，以防止其他人编辑该文档，并在[签](driveitem-checkin.md)入所记录的文档之前阻止您的更改可见。
+签出 **driveItem** 资源，以防止其他人编辑该文档，并在 [签](driveitem-checkin.md)入所记录的文档之前阻止您的更改可见。
 
 ## <a name="permissions"></a>权限
 
@@ -102,3 +102,4 @@ HTTP/1.1 204 No content
   ]
 }
 -->
+

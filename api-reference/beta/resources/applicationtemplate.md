@@ -5,20 +5,20 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c707a9010103f4226e62782a83891ff880a245e8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1dcb5d1a4f1a86521081487ec66494d76c035b82
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508259"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050232"
 ---
 # <a name="applicationtemplate-resource-type"></a>applicationTemplate 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示[AZURE AD 应用程序库](/azure/active-directory/saas-apps/tutorial-list)中的应用程序。
+表示 [AZURE AD 应用程序库](/azure/active-directory/saas-apps/tutorial-list)中的应用程序。
 
 ## <a name="methods"></a>方法
 
@@ -33,15 +33,15 @@ ms.locfileid: "42508259"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|categories|String 集合|应用程序的类别列表。 受支持的值可以`Collaboration`是`Business Management`： `Consumer`、`Content management`、 `CRM` `Data services` `Developer services` `E-commerce` `Education` `ERP` `Web design & hosting`、、、、、、、、、、、、、、、、、、、、和。 `Finance` `Health` `Human resources` `IT infrastructure` `Mail` `Management` `Marketing` `Media` `Productivity` `Project management` `Telecommunications` `Tools, Travel`|
-|说明|String|应用程序的说明。|
-|displayName|字符串|应用程序名。|
+|类别|String 集合|应用程序的类别列表。 受支持的值可以是：、、、、、、、、、、、、、、、、、、、、、、 `Collaboration` `Business Management` `Consumer` `Content management` `CRM` `Data services` `Developer services` `E-commerce` `Education` `ERP` `Finance` `Health` `Human resources` `IT infrastructure` `Mail` `Management` `Marketing` `Media` `Productivity` `Project management` `Telecommunications` `Tools, Travel` 和 `Web design & hosting` 。|
+|description|String|应用程序的说明。|
+|displayName|String|应用程序名。|
 |homePageUrl|String|应用程序的主页 URL。|
-|id|字符串| 应用程序的唯一标识符。 只读。|
+|id|String| 应用程序的唯一标识符。 只读。|
 |logoUrl|String|用于获取此应用程序徽标的 URL。|
 |发布者|String|此应用程序的发布者的名称。|
-|supportedProvisioningTypes|String 集合|此应用程序支持的预配模式的列表。 唯一有效的值为`sync`。|
-|supportedSingleSignOnModes|String 集合|此应用程序支持的单一登录模式列表。 受支持的值`password`为`saml`、 `external`、和`oidc`。|
+|supportedProvisioningTypes|String 集合|此应用程序支持的预配模式的列表。 唯一有效的值为 `sync` 。|
+|supportedSingleSignOnModes|String 集合|此应用程序支持的单一登录模式列表。 受支持的值为 `password` 、、 `saml` `external` 和 `oidc` 。|
 
 ## <a name="relationships"></a>关系
 
@@ -83,3 +83,5 @@ ms.locfileid: "42508259"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

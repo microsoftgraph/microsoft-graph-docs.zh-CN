@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 68b514f41802f1c7b266cc9a3d13b5d2b34c81e7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 72ffa27b7721ee17f6275dbed8f9a4ea60e196cd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518586"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063833"
 ---
 # <a name="chart-delete"></a>Chart: delete
 
@@ -74,3 +74,4 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c83511faf6034caab1c55ec394c3e53394011097
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 9a63834cc83c9f96e5e0776d8c676b1741c075ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43806122"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063869"
 ---
 # <a name="create-channel"></a>创建频道
 
@@ -118,3 +118,4 @@ Content-length: 201
   "suppressions": [
   ]
 }-->
+

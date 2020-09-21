@@ -5,20 +5,20 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: e7dca8677b935fb7a5ed83a647815ed435d1e82c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 24d6b25675ae440562a8376da66af371fed4b00b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437803"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002959"
 ---
 # <a name="get-connectionoperation"></a>获取 connectionOperation
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[connectionOperation](../resources/connectionoperation.md)的属性。
+检索 [connectionOperation](../resources/connectionoperation.md)的属性。
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -52,7 +52,7 @@ GET /external/connections/{connection-id}/operations/{operation-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[connectionOperation](../resources/connectionoperation.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [connectionOperation](../resources/connectionoperation.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -119,3 +119,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

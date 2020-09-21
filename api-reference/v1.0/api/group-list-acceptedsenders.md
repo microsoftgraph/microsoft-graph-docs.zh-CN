@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 036ab2cfe7f9b1fbe1e98e71e706f59c4a5d551b
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 47e2a442b2f38d46a0b23df06556d3381ad9e10f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125279"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070217"
 ---
 # <a name="list-acceptedsenders"></a>列出 acceptedSender
 
@@ -25,7 +25,7 @@ ms.locfileid: "43125279"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -113,3 +113,4 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
+

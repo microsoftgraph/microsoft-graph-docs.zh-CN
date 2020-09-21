@@ -5,20 +5,20 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 431f5e01f9e74f5c9c8d5adf9b9cc2ffa8473b04
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: e2d4a591a1bc200eb96248fbeed1630fe4d22def
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897181"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077742"
 ---
 # <a name="orgcontact-getmembergroups"></a>orgContact： getMemberGroups
 
 命名空间：microsoft.graph
 
-返回[组织联系人](../resources/orgcontact.md)所属的所有组。 检查是可传递的，这和读取 **memberOf** 导航属性不同，后者仅返回用户是其直接成员的组。
+返回 [组织联系人](../resources/orgcontact.md) 所属的所有组。 检查是可传递的，这和读取 **memberOf** 导航属性不同，后者仅返回用户是其直接成员的组。
 
-此函数支持在 Azure Active Directory （Azure AD）中预配的 Microsoft 365 和其他类型的组。 每个请求可以返回的最大组数为 2046 组。 
+此函数支持在 Azure Active Directory (Azure AD) 中预配的 Microsoft 365 和其他类型的组。 每个请求可以返回的最大组数为 2046 组。 
 
 >[!NOTE]
 >Microsoft 365 组不能包含组。 Microsoft 365 组中的成员身份始终是直接的。
@@ -53,7 +53,7 @@ POST /contacts/{id}/getMemberGroups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和字符串集合对象。
+如果成功，该运营商将返回 `200 OK` 响应代码和响应正文中的字符串集合对象。
 
 ## <a name="example"></a>示例
 
@@ -129,3 +129,4 @@ Content-length: 39
   ]
 }
 -->
+

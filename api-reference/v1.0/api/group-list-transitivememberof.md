@@ -1,18 +1,18 @@
 ---
-title: 列表组可传递的 memberOf
+title: List group transitive memberOf
 description: 获取组所属的组。  此操作是可传递的，还将包括此组嵌套成员的所有组。 与获取用户的 Microsoft 365 组不同，这将返回所有类型的组，而不仅仅是 Microsoft 365 组。
 author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ba428fb4f0eb78171ac8f29e659047065148f592
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: c3f698329ba11f0c8d4d68711176318fae62debf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897853"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057547"
 ---
-# <a name="list-group-transitive-memberof"></a>列表组可传递的 memberOf
+# <a name="list-group-transitive-memberof"></a>List group transitive memberOf
 
 命名空间：microsoft.graph
 
@@ -124,3 +124,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

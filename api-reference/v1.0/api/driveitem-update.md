@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 按 ID 或路径更新 DriveItem 元数据。
 doc_type: apiPageType
-ms.openlocfilehash: 59fdd390e9e4b0bdb66837b1bd360add50e7903b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 799a643170a89336fe24d3e7bc4922e6bd007ff4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517655"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063786"
 ---
 # <a name="update-driveitem-properties"></a>更新 DriveItem 属性
 
@@ -129,3 +129,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+

@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 99889abd2d3d9272f4f0ecb9b4d1b5321029beea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5555ae61920751d63a70fdb86199ffa572dcb9be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519657"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083945"
 ---
 # <a name="toneinfo-resource-type"></a>toneInfo 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ ms.locfileid: "42519657"
 | 属性       | 类型    | 说明|
 |:---------------|:--------|:----------|
 | sequenceId | Int64 | 用于对 DTMF 事件进行排序的增量标识符。 |
-| 按键 | String | 可能的值是`tone0`： `tone1`、 `tone2`、 `tone3` `tone4` `tone5` `tone6` `tone7` `tone8` `tone9` `flash`、、 `star`、、、、、、、、、、、、。 `pound` `a` `b` `c` `d` |
+| 按键 | 字符串 | 可能的值是：、、、、、、、、、、、、、、、、 `tone0` `tone1` `tone2` `tone3` `tone4` `tone5` `tone6` `tone7` `tone8` `tone9` `star` `pound` `a` `b` `c` `d` `flash` 。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -57,3 +57,5 @@ ms.locfileid: "42519657"
   "suppressions": []
 }
 -->
+
+

@@ -3,24 +3,24 @@ title: 更新 deviceManagementReportSchedule
 description: 更新 deviceManagementReportSchedule 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 83da32c440b068a560d8891ce896809f4116f6fa
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 49b23869d3232f0ddb990bfabd642c75a0cd1420
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43391500"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043106"
 ---
 # <a name="update-devicemanagementreportschedule"></a>更新 deviceManagementReportSchedule
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新[deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)对象的属性。
+更新 [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,22 +47,22 @@ PATCH /deviceManagement/reports/reportSchedules/{deviceManagementReportScheduleI
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)对象的 JSON 表示形式。
+在请求正文中，提供 [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) 对象的 JSON 表示形式。
 
-下表显示创建[deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)时所需的属性。
+下表显示创建 [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|此实体的唯一标识符|
-|reportScheduleName|字符串|计划的名称|
-|subject|String|已传递的计划报告的主题|
+|id|String|此实体的唯一标识符|
+|reportScheduleName|String|计划的名称|
+|主题|String|已传递的计划报告的主题|
 |电子邮件|String 集合|计划报告传递到的电子邮件|
-|recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|计划报告传递的频率。 可取值为：`none`、`daily`、`weekly`、`monthly`。|
+|定期|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|计划报告传递的频率。 可取值为：`none`、`daily`、`weekly`、`monthly`。|
 |startDateTime|DateTimeOffset|计划报告的开始交付时间|
 |endDateTime|DateTimeOffset|计划报告的结束传递时间|
 |userId|String|创建报表的用户的 Id|
-|reportName|字符串|报告的名称|
-|filter|字符串|在报表上应用的筛选器|
+|reportName|String|报告的名称|
+|filter|String|在报表上应用的筛选器|
 |select|String 集合|从报告中选择的列|
 |By|String 集合|报表中的列的排序|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|计划报告的格式。 可取值为：`csv`、`pdf`。|
@@ -70,7 +70,7 @@ PATCH /deviceManagement/reports/reportSchedules/{deviceManagementReportScheduleI
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -134,6 +134,9 @@ Content-Length: 588
   "format": "pdf"
 }
 ```
+
+
+
 
 
 

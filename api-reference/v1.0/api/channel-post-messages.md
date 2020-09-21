@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 24a20255d39cb6789b655702c0de6a54cc2cf59f
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: ae273c120aa505b972a31794406bb700c7c49364
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345777"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063870"
 ---
 # <a name="create-chatmessage-in-a-channel"></a>在频道中创建 chatMessage
 
@@ -46,11 +46,11 @@ POST /teams/{id}/channels/{id}/messages
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[message](../resources/chatmessage.md)对象的 JSON 表示形式。 只有 body 属性是必需的，其他属性是可选的。
+在请求正文中，提供 [message](../resources/chatmessage.md) 对象的 JSON 表示形式。 只有 body 属性是必需的，其他属性是可选的。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[了 chatmessage](../resources/chatmessage.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [了 chatmessage](../resources/chatmessage.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -182,7 +182,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面介绍响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -247,7 +247,7 @@ Content-length: 160
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
->**注意：** 附件的 ID 必须是唯一的，并且可以是一个新的随机生成的 GUID。 但是，在_正文_和_附件_元素中，附件的 ID 必须相同。
+>**注意：** 附件的 ID 必须是唯一的，并且可以是一个新的随机生成的 GUID。 但是，在 _正文_ 和 _附件_ 元素中，附件的 ID 必须相同。
 
 <!-- {
   "blockType": "request",
@@ -278,7 +278,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面介绍响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -337,7 +337,7 @@ Content-length: 160
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
->**注意：** 该文件必须已在 SharePoint 中。 若要查找文件属性，请获取文件的**driveItem** 。 例如，/drives/{id}/items/{id}。 附件 ID 是**driveItem**的**ETAG**中的 GUID，附件**contentURL**是**driveItem**的文件夹的**webUrl**以及**driveItem**的名称，而附件名称是**driveItem**的名称。
+>**注意：** 该文件必须已在 SharePoint 中。 若要查找文件属性，请获取文件的 **driveItem** 。 例如，/drives/{id}/items/{id}。 附件 ID 是**driveItem**的**ETAG**中的 GUID，附件**contentURL**是**driveItem**的文件夹的**webUrl**以及**driveItem**的名称，而附件名称是**driveItem**的名称。
 
 <!-- {
   "blockType": "request",
@@ -365,7 +365,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面介绍响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -436,3 +436,4 @@ Content-type: application/json
   ]
 }
 -->
+

@@ -5,25 +5,25 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0b0647bb7c271f722129738a36f1afed5ed5365e
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: adea95729dd4e6558885223245a7225811f14677
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909735"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002945"
 ---
 # <a name="realtedcontact-resource-type"></a>realtedContact 资源类型
 
 命名空间：microsoft.graph
 
-与为监护人、工具、医生等提供信息的[educationUser](../resources/educationuser.md)相关的联系人记录。
+与为监护人、工具、医生等提供信息的 [educationUser](../resources/educationuser.md) 相关的联系人记录。
 
 ## <a name="properties"></a>属性
 
 | 属性      | 类型                  | 说明                                                                                                                               |
 | :------------ | :-------------------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
-| id            | 字符串                | Azure Active Directory 中的联系人的标识。                                                                                    |
-| displayName   | 字符串                | 联系人的名称。 必需。                                                                                                            |
+| id            | String                | Azure Active Directory 中的联系人的标识。                                                                                    |
+| displayName   | String                | 联系人的名称。 必需。                                                                                                            |
 | emailAddress  | String                | 联系人的主电子邮件地址。                                                                                                     |
 | mobilePhone   | String                | 联系人的移动电话号码。                                                                                                       |
 | 关系  | `contactRelationship` | 与用户的关系。 可能的值为、、、、、、 `parent` `relative` `aide` `doctor` `guardian` `child` `other` `unknownFutureValue` 。 |
@@ -65,3 +65,4 @@ ms.locfileid: "44909735"
   ]
 }
 -->
+

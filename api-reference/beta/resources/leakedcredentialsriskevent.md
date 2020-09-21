@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: cloudhandler
-ms.openlocfilehash: 750ee984ca1329b6abd4f21f9b0e10da5db14c6b
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: c9c1efda0cb4c11899d5884da05a91f07e5a000d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312143"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029224"
 ---
 # <a name="leakedcredentialsriskevent-resource-type-deprecated"></a>leakedCredentialsRiskEvent 资源类型 (弃用) 
 
@@ -47,7 +47,7 @@ ms.locfileid: "47312143"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|impactedUser|[user](user.md)| 只读。可为空。|
+|impactedUser|[用户](user.md)| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -91,3 +91,5 @@ ms.locfileid: "47312143"
   "suppressions": []
 }
 -->
+
+

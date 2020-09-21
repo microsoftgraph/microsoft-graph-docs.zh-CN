@@ -5,25 +5,25 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f3ad60b441bbccd5b71df0634033ee0a4eeae46e
-ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
-ms.translationtype: MT
+ms.openlocfilehash: 6ffb969b08704ac8235fe630e89c9bec65a140f2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47413323"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057428"
 ---
 # <a name="add-member"></a>添加成员
 
 命名空间：microsoft.graph
 
-通过 **members** 导航属性将成员添加到 Microsoft 365 组或安全组。
+通过 **members** 导航属性将成员添加到 Microsoft 365 组或安全组中。
 
-您可以添加用户、组织联系人、服务主体或其他组。 
+可以添加用户、组织联系人、服务主体或其他组。 
 
 > [!IMPORTANT]
-> 只能向通过云管理的安全和 Microsoft 365 组添加用户。
+> 只能向通过云管理的安全组和 Microsoft 365 组添加用户。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -56,7 +56,7 @@ POST /groups/{group-id}/members/$ref
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-add-a-member-to-a-group"></a>示例1：向组中添加成员
+### <a name="example-1-add-a-member-to-a-group"></a>示例 1：将成员添加到组
 
 #### <a name="request"></a>请求
 
@@ -96,7 +96,7 @@ Content-length: 30
 ---
 
 
-在请求正文中，提供要添加的 directoryObject、user 或 group 对象的 id 的 JSON 表示形式。
+在请求正文中，提供要添加的 directoryObject、user 或 group 对象的 JSON 表示形式。
 
 #### <a name="response"></a>响应
 
@@ -111,9 +111,9 @@ Content-length: 30
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-add-multiple-members-to-a-group-in-a-single-request"></a>示例2：将多个成员添加到单个请求中的组
+### <a name="example-2-add-multiple-members-to-a-group-in-a-single-request"></a>示例 2：在单个请求中向组添加多个成员
 
-本示例演示如何在修补程序操作中将多个成员添加到具有 OData 绑定支持的组中。 请注意，单个请求中最长可添加20个成员。 不支持 POST 操作。
+此示例说明了如何在 PATCH 操作中通过 OData 绑定支持向组添加多个成员。 请注意，在单个请求中最多可以添加 20 个成员。 不支持 POST 操作。
 
 #### <a name="request"></a>请求
 
@@ -157,7 +157,7 @@ Content-length: 30
 ---
 
 
-在请求正文中，提供要添加的 directoryObject、user 或 group 对象的 id 的 JSON 表示形式。
+在请求正文中，提供要添加的 directoryObject、user 或 group 对象的 JSON 表示形式。
 
 #### <a name="response"></a>响应
 下面展示了示例响应。
@@ -182,3 +182,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

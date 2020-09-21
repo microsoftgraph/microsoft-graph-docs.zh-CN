@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0d93ca2abcc75adfb35ac65333f346f95de08d1c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ab4f4043fe23102c279a3a948858e0e3ed633de3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42439567"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983080"
 ---
 # <a name="workbookchartcollection-add"></a>workbookChartCollection：添加
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,13 +45,13 @@ POST /workbook/worksheets/{id|name}/charts/add
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|类型|string|表示图表的类型。  可能的值为： `ColumnClustered`、 `ColumnStacked`、 `ColumnStacked100` `BarClustered` `BarStacked` `BarStacked100` `LineStacked` `PieOfPie` `etc.`、、、、、、、、、、。 `LineStacked100` `LineMarkers` `LineMarkersStacked` `LineMarkersStacked100`|
+|类型|string|表示图表的类型。  可能的值为：、、、、、、、、、、、、 `ColumnClustered` `ColumnStacked` `ColumnStacked100` `BarClustered` `BarStacked` `BarStacked100` `LineStacked` `LineStacked100` `LineMarkers` `LineMarkersStacked` `LineMarkersStacked100` `PieOfPie` `etc.` 。|
 |sourceData|Json|对应于源数据的 Range 对象。|
-|seriesBy|string|可选。 指定列或行在图表上用作数据系列的方式。  可能的值包括 `Auto`、`Columns`、`Rows`。|
+|seriesBy|字符串|可选。 指定列或行在图表上用作数据系列的方式。  可能的值包括 `Auto`、`Columns`、`Rows`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`200 OK`响应正文中返回响应代码和[workbookChart](../resources/workbookchart.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookChart](../resources/workbookchart.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -121,3 +121,5 @@ Content-length: 52
   ]
 }
 -->
+
+

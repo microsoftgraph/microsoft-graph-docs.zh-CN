@@ -5,16 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 3fc3e8a67e92091b5e273d45c483751c63dbbf0a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 827e7a45fa12b233d78db22eb86a0bc094be9195
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521718"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084009"
 ---
 # <a name="plannerorderhintsbyassignee-resource-type"></a>plannerOrderHintsByAssignee 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +22,8 @@ ms.locfileid: "42521718"
 此类型是开放类型。 这些属性是分配给该任务的用户的 id，并且值是 order 提示。
 
 ## <a name="properties"></a>属性
-可由客户端定义打开类型的属性。 在这种情况下，客户端必须提供作为属性名称分配给该任务的用户的 id，并将有效的[order 提示](planner-order-hint-format.md)作为值。
-无法从此类型中删除属性。 该服务将自动删除值，因为更新了包含的[plannerTask](plannertask.md)上的工作分配。
+可由客户端定义打开类型的属性。 在这种情况下，客户端必须提供作为属性名称分配给该任务的用户的 id，并将有效的 [order 提示](planner-order-hint-format.md) 作为值。
+无法从此类型中删除属性。 该服务将自动删除值，因为更新了包含的 [plannerTask](plannertask.md) 上的工作分配。
 
 示例：
 
@@ -55,3 +55,5 @@ ms.locfileid: "42521718"
   "suppressions": []
 }
 -->
+
+

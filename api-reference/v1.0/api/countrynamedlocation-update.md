@@ -5,18 +5,18 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e5c73b039ec2939505367d4faad9a34f332b3c12
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 814dfc073707ef99c1a97635884cabe822b00003
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567091"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009903"
 ---
 # <a name="update-countrynamedlocation"></a>更新 countryNamedLocation
 
 命名空间：microsoft.graph
 
-更新[countryNamedLocation](../resources/countryNamedLocation.md)对象的属性。
+更新 [countryNamedLocation](../resources/countryNamedLocation.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -49,7 +49,7 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|countriesAndRegions|String 集合|由 ISO 3166-2 指定的两个字母格式的国家/地区和/或地区列表。|
+|countriesAndRegions|String collection|由 ISO 3166-2 指定的两个字母格式的国家/地区和/或地区列表。|
 |displayName|String|位置的人可读名称。|
 |includeUnknownCountriesAndRegions|Boolean|值是 `true` 如果未映射到国家或地区的 IP 地址应包含在指定的位置。|
 
@@ -126,3 +126,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

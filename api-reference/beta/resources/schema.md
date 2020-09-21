@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: c7780cd7c31da98a618053febba1b75c5e318931
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: 0d5182e68fd1b1d53abb5b3fa623f3048abfe723
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44990263"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083965"
 ---
 # <a name="schema-resource-type"></a>架构资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "44990263"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-介绍内容的类型，以及如何在 Microsoft Search[连接](externalconnection.md)中对项目中的每个属性编制索引。
+介绍内容的类型，以及如何在 Microsoft Search [连接](externalconnection.md)中对项目中的每个属性编制索引。
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -33,8 +33,8 @@ ms.locfileid: "44990263"
 
 | 属性   | 类型                               | 说明                |
 |:-----------|:-----------------------------------|:---------------------------|
-| #c1   | String                             | 必须设置为 `microsoft.graph.externalItem`。 必需。 |
-| properties | [属性](property.md)集合 | 为连接中的项目定义的属性。 最小属性数为1，最大值为128。 |
+| #c1   | 字符串                             | 必须设置为 `microsoft.graph.externalItem`。 必需。 |
+| properties | [属性](property.md) 集合 | 为连接中的项目定义的属性。 最小属性数为1，最大值为128。 |
 
 ## <a name="relationships"></a>关系
 
@@ -71,3 +71,5 @@ ms.locfileid: "44990263"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e8687b6bdc7739f2efdcc76de7c139fd5240780b
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 1cb61064b05668193947043998749e6306d3d606
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811866"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002952"
 ---
 # <a name="reminder-resource-type"></a>提醒资源类型
 
@@ -65,3 +65,4 @@ ms.locfileid: "46811866"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,18 +5,18 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0620c4dec67377d7a08f1d3f02ac882d1d2e5951
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: acab2983a68e5ddfe054b4efefc9308b64eb448d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451662"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077749"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
 命名空间：microsoft.graph
 
-列出此[组织联系人](../resources/orgcontact.md)所属的组。
+列出此 [组织联系人](../resources/orgcontact.md) 所属的组。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -123,3 +123,4 @@ Content-length: 155
   ]
 }
 -->
+

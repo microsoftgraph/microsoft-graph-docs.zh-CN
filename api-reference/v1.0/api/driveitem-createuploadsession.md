@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 通过创建上传会话，使应用可以上传最大大小的文件。
 doc_type: apiPageType
-ms.openlocfilehash: 44d260d4df6edc2dae9acfc2e7db5d9a1618b947
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 65c768e053175925c8f25b0d5bf603a8d15fa7b8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517774"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009868"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
 
@@ -37,7 +37,10 @@ ms.locfileid: "42517774"
 
 ## <a name="create-an-upload-session"></a>创建上传会话
 
-要开始上载大文件，你的应用程序必须先请求新的上载会话。这可以创建一个临时存储位置，在上载完成之前保存文件字节数。上载最后一个字节后，上载会话即完成，最终文件会出现在目标文件夹中。
+要开始上载大文件，你的应用程序必须先请求新的上载会话。
+这可以创建一个临时存储位置，在上载完成之前保存文件字节数。
+上载最后一个字节后，上载会话即完成，最终文件会出现在目标文件夹中。
+或者，你可以通过在请求参数中设置 `deferCommit` 属性来推迟目标位置中的文件的最终创建，直到你显式发出完成上传的请求。
 
 ### <a name="http-request"></a>HTTP 请求
 
@@ -54,26 +57,28 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ### <a name="request-body"></a>请求正文
 
 无需请求正文。
-但是，你可以在请求主体中指定 `item` 属性，以提供与上传的文件相关的其他数据。
+但是，你可以在请求正文中指定属性，以提供有关正在上传的文件的其他数据，并自定义上传操作的语义。
 
+例如， `item` 属性允许设置以下参数：
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
-  "@microsoft.graph.conflictBehavior": "rename | fail | replace",
+  "@microsoft.graph.conflictBehavior": "fail (default) | replace | rename",
   "description": "description",
-  "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
+  "fileSize": 1234,
   "name": "filename.txt"
 }
 ```
 
-例如，要控制是否已获得文件名的行为，可以在请求正文中指定冲突行为属性。
+下面的示例控制文件名已被使用时的行为，并指定在发出显式完成请求之前，不应创建最终文件：
 
 <!-- { "blockType": "ignored" } -->
 ```json
 {
   "item": {
     "@microsoft.graph.conflictBehavior": "rename"
-  }
+  },
+  "deferCommit": true
 }
 ```
 
@@ -83,13 +88,12 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *if-match* | etag  | 如果包含此请求标头，且提供的 eTag（或 cTag）与项目中的当前 eTag 不匹配，则返回 `412 Precondition Failed` 错误响应。 |
 
-## <a name="properties"></a>属性
+## <a name="parameters"></a>参数
 
-| 属性             | 类型               | 说明
-|:---------------------|:-------------------|:---------------------------------
-| 说明          | 字符串             | 提供项的用户可见的说明。读写。仅在 OneDrive 个人版上
-| fileSystemInfo       | [fileSystemInfo][] | 客户端上的文件系统信息。读写。
-| name                 | String             | 项目名称（文件名和扩展名）。读写。
+| 参数            | 类型                          | 说明
+|:---------------------|:------------------------------|:---------------------------------
+| 项                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | 有关正在上传的文件的数据
+| deferCommit          | 布尔值                       | 如果设置为 true，则需要发出显式请求才能在目标位置中进行文件的最终创建。 仅适用于 OneDrive for Business。
 
 ### <a name="request"></a>请求
 
@@ -115,6 +119,8 @@ Content-Type: application/json
 如果成功，此请求的响应将详细说明应将其余请求作为 [UploadSession](../resources/uploadsession.md) 资源发送到哪里。
 
 此资源详细说明了应将文件的字节范围上传到哪里以及上传会话何时到期。
+
+如果已指定 `fileSize` 参数，并且超出了可用配额，则将返回 `507 Insufficent Storage` 响应，并且不会创建上传会话。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession",
        "optionalProperties": [ "nextExpectedRanges" ]  } -->
@@ -206,7 +212,14 @@ Content-Type: application/json
 
 ## <a name="completing-a-file"></a>完成文件
 
-接收最后一个文件字节范围后，服务器将响应 `HTTP 201 Created` 或 `HTTP 200 OK`。
+如果 `deferCommit` 为 false 或未设置，则在将文件的最终字节范围放入上传 URL 时，将自动完成上传。
+
+如果 `deferCommit` 为 true，则可通过以下两种方式显式完成上传：
+- 将文件的最终字节范围放入上传 URL 后，将最终的 POST 请求发送到内容长度为零的上传 URL（当前仅在 OneDrive for Business 和 SharePoint 中受支持）。
+- 将文件的最终字节范围放入上传 URL 后，以[处理上传错误](#handle-upload-errors)的相同方式发送最终 PUT 请求（目前仅在 OneDrive Personal 中受支持）。
+
+
+上传完成后，服务器将使用 `HTTP 201 Created` 或 `HTTP 200 OK` 响应最终请求。
 响应正文还会包括 **driveItem** 的默认属性集，用来表示已完成的文件。
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
@@ -232,6 +245,28 @@ Content-Type: application/json
   "file": { }
 }
 ```
+
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "commit-upload", "scopes": "files.readwrite" } -->
+
+```
+POST https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
+Content-Length: 0
+```
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": "912310013A123",
+  "name": "largefile.vhd",
+  "size": 128,
+  "file": { }
+}
+```
+
 
 ## <a name="handling-upload-conflicts"></a>处理上传冲突
 
@@ -373,7 +408,6 @@ Content-Type: application/json
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
-[fileSystemInfo]: ../resources/filesysteminfo.md
 
 <!-- {
   "type": "#page.annotation",
@@ -385,3 +419,4 @@ Content-Type: application/json
   ],
   "section": "documentation"
 } -->
+
