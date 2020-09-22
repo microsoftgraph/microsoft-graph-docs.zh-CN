@@ -5,22 +5,22 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e4825a0da4d03b42f85a5dd1582fa9bbe7521b97
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c5454d52d30b6174cfbb5a387fea0d115d4981a4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42425791"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002401"
 ---
 # <a name="get-educationrubric"></a>获取 educationRubric
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[educationRubric](../resources/educationrubric.md)对象的属性和关系。
+检索 [educationRubric](../resources/educationrubric.md) 对象的属性和关系。
 
-请注意，在获取工作分配的 rubric （`GET /education/me/assignments/{id}/rubric`）时，返回的内容是存在于下`/education/users/{id}/rubrics`的原始 rubric 的不可变副本。 副本与该特定工作分配相关联。
+请注意，在 () 中获取工作分配的 rubric 时 `GET /education/me/assignments/{id}/rubric` ，返回的内容是存在于下的原始 rubric 的不可变副本 `/education/users/{id}/rubrics` 。 副本与该特定工作分配相关联。
 
 ## <a name="permissions"></a>权限
 
@@ -52,7 +52,7 @@ GET /education/me/rubrics/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[educationRubric](../resources/educationrubric.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [educationRubric](../resources/educationrubric.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/education/me/rubrics/{id}
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面介绍响应示例。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
@@ -200,3 +200,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

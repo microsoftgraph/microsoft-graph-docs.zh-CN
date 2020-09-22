@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 78c1a67e8bac080a3ad9e433d1969d6828ee4e5d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c13137b384d4b58c903eac70074f39a71696c93d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427016"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002400"
 ---
 # <a name="remove-a-student"></a>删除学生
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -98,3 +98,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

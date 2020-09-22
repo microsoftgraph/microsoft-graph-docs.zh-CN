@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 34766ce4e6fe210369869f71213fb596432cbaab
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: 0efc2ed9addd7b8a890068ebfae53c29e7351987
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081224"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002416"
 ---
 # <a name="educationclass-delta"></a>educationClass： delta
 
@@ -18,7 +18,7 @@ ms.locfileid: "45081224"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取新创建的或更新的类（包括成员身份更改），而无需对整个类集合执行完全读取。 有关详细信息，请参阅[使用 delta 查询](/graph/delta-query-overview)。
+获取新创建的或更新的类（包括成员身份更改），而无需对整个类集合执行完全读取。 有关详细信息，请参阅 [使用 delta 查询](/graph/delta-query-overview) 。
 
 ## <a name="permissions"></a>权限
 
@@ -50,7 +50,7 @@ GET /education/classes/delta
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[educationClass](../resources/educationclass.md)集合对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [educationClass](../resources/educationclass.md) 集合对象。
 
 > [!IMPORTANT]
 > educationClass 增量不包括已删除的类。
@@ -135,3 +135,5 @@ Content-length: 585
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

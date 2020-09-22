@@ -5,22 +5,22 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fced432aba9e0127651e1af751baa86354464847
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4b574b730a636e451328db9dc5341345b103fc82
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42425784"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002387"
 ---
 # <a name="update-educationrubric"></a>更新 educationRubric
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[educationRubric](../resources/educationrubric.md)对象的属性。
+更新 [educationRubric](../resources/educationrubric.md) 对象的属性。
 
-仅在发布工作分配之前可以更新`PATCH /education/me/assignments/{id}/rubric`附加到工作分配的 rubric （），而更新的内容实际上是`/education/users/{id}/rubrics`中存在的原始 rubric。 发布工作分配后，将创建一个 rubric 的不可变副本，该副本将附加到该特定工作分配。 可以使用[GET/education/me/assignments/{id}/rubric](educationrubric-get.md)检索 rubric，但不能对其进行更新。
+仅在发布工作分配之前 () 更新附加到工作分配的 rubric `PATCH /education/me/assignments/{id}/rubric` ，而更新的内容实际上是中存在的原始 rubric `/education/users/{id}/rubrics` 。 发布工作分配后，将创建一个 rubric 的不可变副本，该副本将附加到该特定工作分配。 可以使用 [GET/education/me/assignments/{id}/rubric](educationrubric-get.md)检索 rubric，但不能对其进行更新。
 
 ## <a name="permissions"></a>权限
 
@@ -61,7 +61,7 @@ PATCH /education/me/assignments/{id}/rubric
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[educationRubric](../resources/educationrubric.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [educationRubric](../resources/educationrubric.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -199,3 +199,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
