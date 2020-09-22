@@ -5,18 +5,18 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 84e0d6ef33cd63acb283806f994ca108873f0d0f
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: dd12448bf0e20824c7b3baa67caddfbe42f0595e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44217920"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023042"
 ---
 # <a name="timeoffrequest-approve"></a>timeOffRequest：批准
 
 命名空间：microsoft.graph
 
-批准[timeoffrequest](../resources/timeoffrequest.md)。
+批准 [timeoffrequest](../resources/timeoffrequest.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "44217920"
 |:---------------------------------------|:--------------------------------------------|
 |委派（工作或学校帐户） | Schedule。 All，Group. 所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Schedule.ReadWrite.All |
+|应用程序 | Schedule.ReadWrite.All |
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -121,3 +121,4 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+

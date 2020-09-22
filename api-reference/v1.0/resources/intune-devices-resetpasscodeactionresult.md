@@ -3,14 +3,14 @@ title: resetPasscodeActionResult 资源类型
 description: 重置密码操作结果
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d8510dcb20fa0af50df1db24927b97c32afb1188
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6725e0a51ad9b4053278dcf03c91236a7d820665
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439440"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091017"
 ---
 # <a name="resetpasscodeactionresult-resource-type"></a>resetPasscodeActionResult 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "43439440"
 |属性|类型|说明|
 |:---|:---|:---|
 |actionName|String|操作名称 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
-|actionState|[actionState](../resources/intune-devices-actionstate.md)|继承自[deviceActionResult](../resources/intune-devices-deviceactionresult.md)的操作的状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
+|actionState|[actionState](../resources/intune-devices-actionstate.md)|继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)的操作的状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
 |startDateTime|DateTimeOffset|操作启动的时间 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|操作状态上次更新的时间 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |密码|String|新生成的设备密码 |
@@ -52,6 +52,8 @@ ms.locfileid: "43439440"
   "passcode": "String"
 }
 ```
+
+
 
 
 
