@@ -5,32 +5,32 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c98adf1b2dc92f09b0da98212ea17027e8dd4dba
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 101befb5a5309b34472f6f3f74fbd4bf84d24d01
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810739"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034763"
 ---
-# <a name="list-languages"></a><span data-ttu-id="a8f5e-103">列出语言</span><span class="sxs-lookup"><span data-stu-id="a8f5e-103">List languages</span></span>
+# <a name="list-languages"></a><span data-ttu-id="69fa1-103">列出语言</span><span class="sxs-lookup"><span data-stu-id="69fa1-103">List languages</span></span>
 
-<span data-ttu-id="a8f5e-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a8f5e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="69fa1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="69fa1-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a8f5e-105">从用户的[配置文件](../resources/profile.md)中检索[languageProficiency](../resources/languageproficiency.md)对象的列表。</span><span class="sxs-lookup"><span data-stu-id="a8f5e-105">Retrieve a list of [languageProficiency](../resources/languageproficiency.md) objects from a user's [profile](../resources/profile.md).</span></span>
+<span data-ttu-id="69fa1-105">从用户的[配置文件](../resources/profile.md)中检索[languageProficiency](../resources/languageproficiency.md)对象的列表。</span><span class="sxs-lookup"><span data-stu-id="69fa1-105">Retrieve a list of [languageProficiency](../resources/languageproficiency.md) objects from a user's [profile](../resources/profile.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a8f5e-106">权限</span><span class="sxs-lookup"><span data-stu-id="a8f5e-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="69fa1-106">权限</span><span class="sxs-lookup"><span data-stu-id="69fa1-106">Permissions</span></span>
 
-<span data-ttu-id="a8f5e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a8f5e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="69fa1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="69fa1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="a8f5e-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="a8f5e-109">Permission type</span></span>                        | <span data-ttu-id="a8f5e-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a8f5e-110">Permissions (from least to most privileged)</span></span>                                      |
+| <span data-ttu-id="69fa1-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="69fa1-109">Permission type</span></span>                        | <span data-ttu-id="69fa1-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="69fa1-110">Permissions (from least to most privileged)</span></span>                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| <span data-ttu-id="a8f5e-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a8f5e-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="a8f5e-112">User. Read、User.readbasic.all、user. all、All、user. all。 All</span><span class="sxs-lookup"><span data-stu-id="a8f5e-112">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
-| <span data-ttu-id="a8f5e-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a8f5e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a8f5e-114">User. Read、User.readbasic.all、user. all、All、user. all。 All</span><span class="sxs-lookup"><span data-stu-id="a8f5e-114">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
-| <span data-ttu-id="a8f5e-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="a8f5e-115">Application</span></span>                            | <span data-ttu-id="a8f5e-116">User.readbasic.all、所有用户读写全部。 All</span><span class="sxs-lookup"><span data-stu-id="a8f5e-116">User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
+| <span data-ttu-id="69fa1-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="69fa1-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="69fa1-112">User. Read、User.readbasic.all、user. all、All、user. all。 All</span><span class="sxs-lookup"><span data-stu-id="69fa1-112">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
+| <span data-ttu-id="69fa1-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="69fa1-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="69fa1-114">User. Read、User.readbasic.all、user. all、All、user. all。 All</span><span class="sxs-lookup"><span data-stu-id="69fa1-114">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
+| <span data-ttu-id="69fa1-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="69fa1-115">Application</span></span>                            | <span data-ttu-id="69fa1-116">User.readbasic.all、所有用户读写全部。 All</span><span class="sxs-lookup"><span data-stu-id="69fa1-116">User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a8f5e-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a8f5e-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="69fa1-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="69fa1-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,39 +39,39 @@ GET /me/profile/languages
 GET /users/{id | userPrincipalName}/profile/languages
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="a8f5e-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="a8f5e-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="69fa1-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="69fa1-118">Optional query parameters</span></span>
 
-<span data-ttu-id="a8f5e-119">此方法支持以下 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="a8f5e-119">This method supports the following OData query parameters to help customize the response.</span></span> <span data-ttu-id="a8f5e-120">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="a8f5e-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="69fa1-119">此方法支持以下 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="69fa1-119">This method supports the following OData query parameters to help customize the response.</span></span> <span data-ttu-id="69fa1-120">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="69fa1-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-|<span data-ttu-id="a8f5e-121">名称</span><span class="sxs-lookup"><span data-stu-id="a8f5e-121">Name</span></span>            |<span data-ttu-id="a8f5e-122">值</span><span class="sxs-lookup"><span data-stu-id="a8f5e-122">Value</span></span>    |<span data-ttu-id="a8f5e-123">说明</span><span class="sxs-lookup"><span data-stu-id="a8f5e-123">Description</span></span>                                                                                                                                                                 |
+|<span data-ttu-id="69fa1-121">名称</span><span class="sxs-lookup"><span data-stu-id="69fa1-121">Name</span></span>            |<span data-ttu-id="69fa1-122">值</span><span class="sxs-lookup"><span data-stu-id="69fa1-122">Value</span></span>    |<span data-ttu-id="69fa1-123">说明</span><span class="sxs-lookup"><span data-stu-id="69fa1-123">Description</span></span>                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|<span data-ttu-id="a8f5e-124">$filter</span><span class="sxs-lookup"><span data-stu-id="a8f5e-124">$filter</span></span>         |<span data-ttu-id="a8f5e-125">string</span><span class="sxs-lookup"><span data-stu-id="a8f5e-125">string</span></span>   |<span data-ttu-id="a8f5e-126">将响应限制为仅包含指定条件的那些对象。</span><span class="sxs-lookup"><span data-stu-id="a8f5e-126">Limits the response to only those objects which contain the specified criteria.</span></span>                                                                                             |
-|<span data-ttu-id="a8f5e-127">$orderby</span><span class="sxs-lookup"><span data-stu-id="a8f5e-127">$orderby</span></span>        |<span data-ttu-id="a8f5e-128">string</span><span class="sxs-lookup"><span data-stu-id="a8f5e-128">string</span></span>   |<span data-ttu-id="a8f5e-129">默认情况下，响应中的对象按其在查询中的 createdDateTime 值进行排序。</span><span class="sxs-lookup"><span data-stu-id="a8f5e-129">By default the objects in the response are sorted by their createdDateTime value in a query.</span></span> <span data-ttu-id="a8f5e-130">您可以使用 *$orderby* 参数更改响应的顺序。</span><span class="sxs-lookup"><span data-stu-id="a8f5e-130">You can change the order of the of the response using the *$orderby* parameter.</span></span>|
-|<span data-ttu-id="a8f5e-131">$select</span><span class="sxs-lookup"><span data-stu-id="a8f5e-131">$select</span></span>         |<span data-ttu-id="a8f5e-132">string</span><span class="sxs-lookup"><span data-stu-id="a8f5e-132">string</span></span>   |<span data-ttu-id="a8f5e-p104">要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。</span><span class="sxs-lookup"><span data-stu-id="a8f5e-p104">Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.</span></span>                                        |
-|<span data-ttu-id="a8f5e-135">$skip</span><span class="sxs-lookup"><span data-stu-id="a8f5e-135">$skip</span></span>           |<span data-ttu-id="a8f5e-136">int</span><span class="sxs-lookup"><span data-stu-id="a8f5e-136">int</span></span>      |<span data-ttu-id="a8f5e-137">跳过前 n 个结果，对于分页非常有用。</span><span class="sxs-lookup"><span data-stu-id="a8f5e-137">Skip the first n results, useful for paging.</span></span>                                                                                                                                |
-|<span data-ttu-id="a8f5e-138">$top</span><span class="sxs-lookup"><span data-stu-id="a8f5e-138">$top</span></span>            |<span data-ttu-id="a8f5e-139">int</span><span class="sxs-lookup"><span data-stu-id="a8f5e-139">int</span></span>      |<span data-ttu-id="a8f5e-140">要返回的结果数。</span><span class="sxs-lookup"><span data-stu-id="a8f5e-140">Number of results to be returned.</span></span>                                                                                                                                           |
+|<span data-ttu-id="69fa1-124">$filter</span><span class="sxs-lookup"><span data-stu-id="69fa1-124">$filter</span></span>         |<span data-ttu-id="69fa1-125">string</span><span class="sxs-lookup"><span data-stu-id="69fa1-125">string</span></span>   |<span data-ttu-id="69fa1-126">将响应限制为仅包含指定条件的那些对象。</span><span class="sxs-lookup"><span data-stu-id="69fa1-126">Limits the response to only those objects which contain the specified criteria.</span></span>                                                                                             |
+|<span data-ttu-id="69fa1-127">$orderby</span><span class="sxs-lookup"><span data-stu-id="69fa1-127">$orderby</span></span>        |<span data-ttu-id="69fa1-128">string</span><span class="sxs-lookup"><span data-stu-id="69fa1-128">string</span></span>   |<span data-ttu-id="69fa1-129">默认情况下，响应中的对象按其在查询中的 createdDateTime 值进行排序。</span><span class="sxs-lookup"><span data-stu-id="69fa1-129">By default the objects in the response are sorted by their createdDateTime value in a query.</span></span> <span data-ttu-id="69fa1-130">您可以使用 *$orderby* 参数更改响应的顺序。</span><span class="sxs-lookup"><span data-stu-id="69fa1-130">You can change the order of the of the response using the *$orderby* parameter.</span></span>|
+|<span data-ttu-id="69fa1-131">$select</span><span class="sxs-lookup"><span data-stu-id="69fa1-131">$select</span></span>         |<span data-ttu-id="69fa1-132">string</span><span class="sxs-lookup"><span data-stu-id="69fa1-132">string</span></span>   |<span data-ttu-id="69fa1-p104">要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。</span><span class="sxs-lookup"><span data-stu-id="69fa1-p104">Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.</span></span>                                        |
+|<span data-ttu-id="69fa1-135">$skip</span><span class="sxs-lookup"><span data-stu-id="69fa1-135">$skip</span></span>           |<span data-ttu-id="69fa1-136">int</span><span class="sxs-lookup"><span data-stu-id="69fa1-136">int</span></span>      |<span data-ttu-id="69fa1-137">跳过前 n 个结果，对于分页非常有用。</span><span class="sxs-lookup"><span data-stu-id="69fa1-137">Skip the first n results, useful for paging.</span></span>                                                                                                                                |
+|<span data-ttu-id="69fa1-138">$top</span><span class="sxs-lookup"><span data-stu-id="69fa1-138">$top</span></span>            |<span data-ttu-id="69fa1-139">int</span><span class="sxs-lookup"><span data-stu-id="69fa1-139">int</span></span>      |<span data-ttu-id="69fa1-140">要返回的结果数。</span><span class="sxs-lookup"><span data-stu-id="69fa1-140">Number of results to be returned.</span></span>                                                                                                                                           |
 
-## <a name="request-headers"></a><span data-ttu-id="a8f5e-141">请求标头</span><span class="sxs-lookup"><span data-stu-id="a8f5e-141">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="69fa1-141">请求标头</span><span class="sxs-lookup"><span data-stu-id="69fa1-141">Request headers</span></span>
 
-| <span data-ttu-id="a8f5e-142">名称</span><span class="sxs-lookup"><span data-stu-id="a8f5e-142">Name</span></span>           |<span data-ttu-id="a8f5e-143">说明</span><span class="sxs-lookup"><span data-stu-id="a8f5e-143">Description</span></span>                  |
+| <span data-ttu-id="69fa1-142">名称</span><span class="sxs-lookup"><span data-stu-id="69fa1-142">Name</span></span>           |<span data-ttu-id="69fa1-143">说明</span><span class="sxs-lookup"><span data-stu-id="69fa1-143">Description</span></span>                  |
 |:---------------|:----------------------------|
-| <span data-ttu-id="a8f5e-144">Authorization</span><span class="sxs-lookup"><span data-stu-id="a8f5e-144">Authorization</span></span>  | <span data-ttu-id="a8f5e-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a8f5e-p105">Bearer {token}. Required.</span></span>   |
+| <span data-ttu-id="69fa1-144">Authorization</span><span class="sxs-lookup"><span data-stu-id="69fa1-144">Authorization</span></span>  | <span data-ttu-id="69fa1-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="69fa1-p105">Bearer {token}. Required.</span></span>   |
 
-## <a name="request-body"></a><span data-ttu-id="a8f5e-147">请求正文</span><span class="sxs-lookup"><span data-stu-id="a8f5e-147">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="69fa1-147">请求正文</span><span class="sxs-lookup"><span data-stu-id="69fa1-147">Request body</span></span>
 
-<span data-ttu-id="a8f5e-148">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="a8f5e-148">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="69fa1-148">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="69fa1-148">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a8f5e-149">响应</span><span class="sxs-lookup"><span data-stu-id="a8f5e-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="69fa1-149">响应</span><span class="sxs-lookup"><span data-stu-id="69fa1-149">Response</span></span>
 
-<span data-ttu-id="a8f5e-150">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [languageProficiency](../resources/languageproficiency.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="a8f5e-150">If successful, this method returns a `200 OK` response code and a collection of [languageProficiency](../resources/languageproficiency.md) objects in the response body.</span></span>
+<span data-ttu-id="69fa1-150">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [languageProficiency](../resources/languageproficiency.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="69fa1-150">If successful, this method returns a `200 OK` response code and a collection of [languageProficiency](../resources/languageproficiency.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="a8f5e-151">示例</span><span class="sxs-lookup"><span data-stu-id="a8f5e-151">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="69fa1-151">示例</span><span class="sxs-lookup"><span data-stu-id="69fa1-151">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="a8f5e-152">请求</span><span class="sxs-lookup"><span data-stu-id="a8f5e-152">Request</span></span>
+### <a name="request"></a><span data-ttu-id="69fa1-152">请求</span><span class="sxs-lookup"><span data-stu-id="69fa1-152">Request</span></span>
 
-<span data-ttu-id="a8f5e-153">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="a8f5e-153">The following is an example of the request.</span></span>
+<span data-ttu-id="69fa1-153">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="69fa1-153">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="a8f5e-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="a8f5e-154">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="69fa1-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="69fa1-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_languages"
@@ -80,26 +80,26 @@ GET /users/{id | userPrincipalName}/profile/languages
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/languages
 ```
-# <a name="c"></a>[<span data-ttu-id="a8f5e-155">C#</span><span class="sxs-lookup"><span data-stu-id="a8f5e-155">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="69fa1-155">C#</span><span class="sxs-lookup"><span data-stu-id="69fa1-155">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-languages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a8f5e-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a8f5e-156">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="69fa1-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="69fa1-156">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-languages-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="a8f5e-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a8f5e-157">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="69fa1-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="69fa1-157">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-languages-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="a8f5e-158">响应</span><span class="sxs-lookup"><span data-stu-id="a8f5e-158">Response</span></span>
+### <a name="response"></a><span data-ttu-id="69fa1-158">响应</span><span class="sxs-lookup"><span data-stu-id="69fa1-158">Response</span></span>
 
-<span data-ttu-id="a8f5e-159">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="a8f5e-159">The following is an example of the response.</span></span>
+<span data-ttu-id="69fa1-159">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="69fa1-159">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="a8f5e-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="a8f5e-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="69fa1-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="69fa1-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -146,3 +146,5 @@ Content-type: application/json
   ]
 }
 ```
+
+

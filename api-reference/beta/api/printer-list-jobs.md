@@ -5,63 +5,63 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d442f39a0327c511a105b420fd57b775c6f06853
-ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
+ms.openlocfilehash: ea0cc63521ccaac667abe5ef62baf47cabb4c152
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "47400405"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035642"
 ---
-# <a name="list-printjobs"></a><span data-ttu-id="73ac3-103">列出 printJobs</span><span class="sxs-lookup"><span data-stu-id="73ac3-103">List printJobs</span></span>
+# <a name="list-printjobs"></a><span data-ttu-id="16edc-103">列出 printJobs</span><span class="sxs-lookup"><span data-stu-id="16edc-103">List printJobs</span></span>
 
-<span data-ttu-id="73ac3-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="73ac3-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="16edc-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="16edc-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="73ac3-105">检索与 [打印机](../resources/printer.md)关联的打印作业的列表。</span><span class="sxs-lookup"><span data-stu-id="73ac3-105">Retrieve a list of print jobs associated with the [printer](../resources/printer.md).</span></span>
+<span data-ttu-id="16edc-105">检索与 [打印机](../resources/printer.md)关联的打印作业的列表。</span><span class="sxs-lookup"><span data-stu-id="16edc-105">Retrieve a list of print jobs associated with the [printer](../resources/printer.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="73ac3-106">权限</span><span class="sxs-lookup"><span data-stu-id="73ac3-106">Permissions</span></span>
-<span data-ttu-id="73ac3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="73ac3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="16edc-106">权限</span><span class="sxs-lookup"><span data-stu-id="16edc-106">Permissions</span></span>
+<span data-ttu-id="16edc-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="16edc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="73ac3-109">若要使用通用打印服务，用户或应用程序的租户必须具有活动的通用打印订阅、授予 " [获取打印机](printer-get.md) 访问" 权限的权限以及下表中列出的权限之一。</span><span class="sxs-lookup"><span data-stu-id="73ac3-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, a permission that grants [Get printer](printer-get.md) access, and one of the permissions listed in the following table.</span></span> <span data-ttu-id="73ac3-110">登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。</span><span class="sxs-lookup"><span data-stu-id="73ac3-110">The signed in user must be a [Printer Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
+<span data-ttu-id="16edc-109">若要使用通用打印服务，用户或应用程序的租户必须具有活动的通用打印订阅、授予 " [获取打印机](printer-get.md) 访问" 权限的权限以及下表中列出的权限之一。</span><span class="sxs-lookup"><span data-stu-id="16edc-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, a permission that grants [Get printer](printer-get.md) access, and one of the permissions listed in the following table.</span></span> <span data-ttu-id="16edc-110">登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。</span><span class="sxs-lookup"><span data-stu-id="16edc-110">The signed in user must be a [Printer Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
 
-<span data-ttu-id="73ac3-111">若要从其他用户读取打印作业，则已登录用户必须是打印管理员，并且必须是 PrintJob、PrintJob、PrintJob 或 ReadWriteBasic。所有权限的 User.readbasic.all。</span><span class="sxs-lookup"><span data-stu-id="73ac3-111">To read print jobs from another user, the signed in user needs to be a print administrator and have the PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, or PrintJob.ReadWrite.All permission.</span></span>
+<span data-ttu-id="16edc-111">若要从其他用户读取打印作业，则已登录用户必须是打印管理员，并且必须是 PrintJob、PrintJob、PrintJob 或 ReadWriteBasic。所有权限的 User.readbasic.all。</span><span class="sxs-lookup"><span data-stu-id="16edc-111">To read print jobs from another user, the signed in user needs to be a print administrator and have the PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, or PrintJob.ReadWrite.All permission.</span></span>
 
-|<span data-ttu-id="73ac3-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="73ac3-112">Permission type</span></span> | <span data-ttu-id="73ac3-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="73ac3-113">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="16edc-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="16edc-112">Permission type</span></span> | <span data-ttu-id="16edc-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="16edc-113">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="73ac3-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="73ac3-114">Delegated (work or school account)</span></span>| <span data-ttu-id="73ac3-115">PrintJob、PrintJob、user.readbasic.all、PrintJob、PrintJob、ReadWriteBasic、all、PrintJob、PrintJob、ReadWriteBasic、PrintJob、、、、all</span><span class="sxs-lookup"><span data-stu-id="73ac3-115">PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All</span></span> |
-|<span data-ttu-id="73ac3-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="73ac3-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="73ac3-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="73ac3-117">Not Supported.</span></span>|
-|<span data-ttu-id="73ac3-118">Application</span><span class="sxs-lookup"><span data-stu-id="73ac3-118">Application</span></span>| <span data-ttu-id="73ac3-119">PrintJob、PrintJob、PrintJob、all、all、All 和 All。</span><span class="sxs-lookup"><span data-stu-id="73ac3-119">PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All</span></span> |
+|<span data-ttu-id="16edc-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="16edc-114">Delegated (work or school account)</span></span>| <span data-ttu-id="16edc-115">PrintJob、PrintJob、user.readbasic.all、PrintJob、PrintJob、ReadWriteBasic、all、PrintJob、PrintJob、ReadWriteBasic、PrintJob、、、、all</span><span class="sxs-lookup"><span data-stu-id="16edc-115">PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All</span></span> |
+|<span data-ttu-id="16edc-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="16edc-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="16edc-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="16edc-117">Not Supported.</span></span>|
+|<span data-ttu-id="16edc-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="16edc-118">Application</span></span>| <span data-ttu-id="16edc-119">PrintJob、PrintJob、PrintJob、all、all、All 和 All。</span><span class="sxs-lookup"><span data-stu-id="16edc-119">PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="73ac3-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="73ac3-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="16edc-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="16edc-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /print/printers/{id}/jobs
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="73ac3-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="73ac3-121">Optional query parameters</span></span>
-<span data-ttu-id="73ac3-122">此方法支持一些 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="73ac3-122">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="73ac3-123">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="73ac3-123">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="16edc-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="16edc-121">Optional query parameters</span></span>
+<span data-ttu-id="16edc-122">此方法支持一些 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="16edc-122">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="16edc-123">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="16edc-123">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-* <span data-ttu-id="73ac3-124">默认情况下，" **documents** " 属性将从响应中省略。</span><span class="sxs-lookup"><span data-stu-id="73ac3-124">The **documents** property is omitted from the response by default.</span></span> <span data-ttu-id="73ac3-125">若要同时为每个打印作业返回 [printDocuments](../resources/printdocument.md) 的列表，请使用 `$expand=documents` 。</span><span class="sxs-lookup"><span data-stu-id="73ac3-125">To also return a list of [printDocuments](../resources/printdocument.md) for each print job, use `$expand=documents`.</span></span>
-* <span data-ttu-id="73ac3-126">此方法支持通过创建打印作业的用户对其进行筛选。</span><span class="sxs-lookup"><span data-stu-id="73ac3-126">This method supports filtering print jobs by the user who created them.</span></span> <span data-ttu-id="73ac3-127">使用 `$filter=createdBy/userPrincipalName eq '{upn}'` ，其中 **{upn}** 是关联用户的 [用户主体名称](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) 。</span><span class="sxs-lookup"><span data-stu-id="73ac3-127">Use `$filter=createdBy/userPrincipalName eq '{upn}'`, where **{upn}** is the [user principal name](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of the associated user.</span></span>
+* <span data-ttu-id="16edc-124">默认情况下，" **documents** " 属性将从响应中省略。</span><span class="sxs-lookup"><span data-stu-id="16edc-124">The **documents** property is omitted from the response by default.</span></span> <span data-ttu-id="16edc-125">若要同时为每个打印作业返回 [printDocuments](../resources/printdocument.md) 的列表，请使用 `$expand=documents` 。</span><span class="sxs-lookup"><span data-stu-id="16edc-125">To also return a list of [printDocuments](../resources/printdocument.md) for each print job, use `$expand=documents`.</span></span>
+* <span data-ttu-id="16edc-126">此方法支持通过创建打印作业的用户对其进行筛选。</span><span class="sxs-lookup"><span data-stu-id="16edc-126">This method supports filtering print jobs by the user who created them.</span></span> <span data-ttu-id="16edc-127">使用 `$filter=createdBy/userPrincipalName eq '{upn}'` ，其中 **{upn}** 是关联用户的 [用户主体名称](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) 。</span><span class="sxs-lookup"><span data-stu-id="16edc-127">Use `$filter=createdBy/userPrincipalName eq '{upn}'`, where **{upn}** is the [user principal name](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of the associated user.</span></span>
 
-### <a name="exceptions"></a><span data-ttu-id="73ac3-128">Exceptions</span><span class="sxs-lookup"><span data-stu-id="73ac3-128">Exceptions</span></span>
-<span data-ttu-id="73ac3-129">某些运算符不受支持： `$count` 、 `$search` 、 `$filter` 。</span><span class="sxs-lookup"><span data-stu-id="73ac3-129">Some operators are not supported: `$count`, `$search`, `$filter`.</span></span>
+### <a name="exceptions"></a><span data-ttu-id="16edc-128">Exceptions</span><span class="sxs-lookup"><span data-stu-id="16edc-128">Exceptions</span></span>
+<span data-ttu-id="16edc-129">某些运算符不受支持： `$count` 、 `$search` 、 `$filter` 。</span><span class="sxs-lookup"><span data-stu-id="16edc-129">Some operators are not supported: `$count`, `$search`, `$filter`.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="73ac3-130">请求标头</span><span class="sxs-lookup"><span data-stu-id="73ac3-130">Request headers</span></span>
-| <span data-ttu-id="73ac3-131">名称</span><span class="sxs-lookup"><span data-stu-id="73ac3-131">Name</span></span>      |<span data-ttu-id="73ac3-132">说明</span><span class="sxs-lookup"><span data-stu-id="73ac3-132">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="16edc-130">请求标头</span><span class="sxs-lookup"><span data-stu-id="16edc-130">Request headers</span></span>
+| <span data-ttu-id="16edc-131">名称</span><span class="sxs-lookup"><span data-stu-id="16edc-131">Name</span></span>      |<span data-ttu-id="16edc-132">说明</span><span class="sxs-lookup"><span data-stu-id="16edc-132">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="73ac3-133">Authorization</span><span class="sxs-lookup"><span data-stu-id="73ac3-133">Authorization</span></span> | <span data-ttu-id="73ac3-p106">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="73ac3-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="16edc-133">Authorization</span><span class="sxs-lookup"><span data-stu-id="16edc-133">Authorization</span></span> | <span data-ttu-id="16edc-p106">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="16edc-p106">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="73ac3-136">请求正文</span><span class="sxs-lookup"><span data-stu-id="73ac3-136">Request body</span></span>
-<span data-ttu-id="73ac3-137">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="73ac3-137">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="73ac3-138">响应</span><span class="sxs-lookup"><span data-stu-id="73ac3-138">Response</span></span>
-<span data-ttu-id="73ac3-139">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [printJob](../resources/printjob.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="73ac3-139">If successful, this method returns a `200 OK` response code and collection of [printJob](../resources/printjob.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="73ac3-140">示例</span><span class="sxs-lookup"><span data-stu-id="73ac3-140">Example</span></span>
-### <a name="request"></a><span data-ttu-id="73ac3-141">请求</span><span class="sxs-lookup"><span data-stu-id="73ac3-141">Request</span></span>
-<span data-ttu-id="73ac3-142">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="73ac3-142">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="16edc-136">请求正文</span><span class="sxs-lookup"><span data-stu-id="16edc-136">Request body</span></span>
+<span data-ttu-id="16edc-137">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="16edc-137">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="16edc-138">响应</span><span class="sxs-lookup"><span data-stu-id="16edc-138">Response</span></span>
+<span data-ttu-id="16edc-139">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [printJob](../resources/printjob.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="16edc-139">If successful, this method returns a `200 OK` response code and collection of [printJob](../resources/printjob.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="16edc-140">示例</span><span class="sxs-lookup"><span data-stu-id="16edc-140">Example</span></span>
+### <a name="request"></a><span data-ttu-id="16edc-141">请求</span><span class="sxs-lookup"><span data-stu-id="16edc-141">Request</span></span>
+<span data-ttu-id="16edc-142">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="16edc-142">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="73ac3-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="73ac3-143">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="16edc-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="16edc-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_jobs"
@@ -69,23 +69,23 @@ GET /print/printers/{id}/jobs
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/{id}/jobs
 ```
-# <a name="c"></a>[<span data-ttu-id="73ac3-144">C#</span><span class="sxs-lookup"><span data-stu-id="73ac3-144">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="16edc-144">C#</span><span class="sxs-lookup"><span data-stu-id="16edc-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-jobs-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="73ac3-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="73ac3-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="16edc-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="16edc-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-jobs-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="73ac3-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="73ac3-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="16edc-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="16edc-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-jobs-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="73ac3-147">响应</span><span class="sxs-lookup"><span data-stu-id="73ac3-147">Response</span></span>
-<span data-ttu-id="73ac3-148">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="73ac3-148">The following is an example of the response.</span></span>
-><span data-ttu-id="73ac3-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="73ac3-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="16edc-147">响应</span><span class="sxs-lookup"><span data-stu-id="16edc-147">Response</span></span>
+<span data-ttu-id="16edc-148">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="16edc-148">The following is an example of the response.</span></span>
+><span data-ttu-id="16edc-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="16edc-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -122,3 +122,5 @@ Content-length: 461
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

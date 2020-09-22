@@ -5,53 +5,53 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 0eb4af8f894af9f5c8c6bce0fdf93e5068c6d364
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 0536d5f2ac03cf766feecc3bd3e134f4b47b0952
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674286"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035503"
 ---
-# <a name="list-allowedgroups-for-printershare"></a><span data-ttu-id="b8862-103">列出 printerShare 的 allowedGroups</span><span class="sxs-lookup"><span data-stu-id="b8862-103">List allowedGroups for printerShare</span></span>
+# <a name="list-allowedgroups-for-printershare"></a><span data-ttu-id="66bbb-103">列出 printerShare 的 allowedGroups</span><span class="sxs-lookup"><span data-stu-id="66bbb-103">List allowedGroups for printerShare</span></span>
 
-<span data-ttu-id="b8862-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b8862-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="66bbb-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="66bbb-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b8862-105">检索已授予访问权限的组列表，以将打印作业提交到关联的 [printerShare](../resources/printershare.md)。</span><span class="sxs-lookup"><span data-stu-id="b8862-105">Retrieve a list of groups that have been granted access to submit print jobs to the associated [printerShare](../resources/printershare.md).</span></span>
+<span data-ttu-id="66bbb-105">检索已授予访问权限的组列表，以将打印作业提交到关联的 [printerShare](../resources/printershare.md)。</span><span class="sxs-lookup"><span data-stu-id="66bbb-105">Retrieve a list of groups that have been granted access to submit print jobs to the associated [printerShare](../resources/printershare.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b8862-106">权限</span><span class="sxs-lookup"><span data-stu-id="b8862-106">Permissions</span></span>
-<span data-ttu-id="b8862-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b8862-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="66bbb-106">权限</span><span class="sxs-lookup"><span data-stu-id="66bbb-106">Permissions</span></span>
+<span data-ttu-id="66bbb-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="66bbb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="b8862-109">若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。</span><span class="sxs-lookup"><span data-stu-id="b8862-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span> <span data-ttu-id="b8862-110">登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。</span><span class="sxs-lookup"><span data-stu-id="b8862-110">The signed in user must be a [Printer Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
+<span data-ttu-id="66bbb-109">若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。</span><span class="sxs-lookup"><span data-stu-id="66bbb-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span> <span data-ttu-id="66bbb-110">登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。</span><span class="sxs-lookup"><span data-stu-id="66bbb-110">The signed in user must be a [Printer Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
 
-|<span data-ttu-id="b8862-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="b8862-111">Permission type</span></span> | <span data-ttu-id="b8862-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b8862-112">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="66bbb-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="66bbb-111">Permission type</span></span> | <span data-ttu-id="66bbb-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="66bbb-112">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="b8862-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b8862-113">Delegated (work or school account)</span></span>| <span data-ttu-id="b8862-114">PrinterShare、PrinterShare 和所有</span><span class="sxs-lookup"><span data-stu-id="b8862-114">PrinterShare.Read.All, PrinterShare.ReadWrite.All</span></span> |
-|<span data-ttu-id="b8862-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b8862-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b8862-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="b8862-116">Not Supported.</span></span>|
-|<span data-ttu-id="b8862-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="b8862-117">Application</span></span>|<span data-ttu-id="b8862-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="b8862-118">Not Supported.</span></span>|
+|<span data-ttu-id="66bbb-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="66bbb-113">Delegated (work or school account)</span></span>| <span data-ttu-id="66bbb-114">PrinterShare、PrinterShare 和所有</span><span class="sxs-lookup"><span data-stu-id="66bbb-114">PrinterShare.Read.All, PrinterShare.ReadWrite.All</span></span> |
+|<span data-ttu-id="66bbb-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="66bbb-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="66bbb-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="66bbb-116">Not Supported.</span></span>|
+|<span data-ttu-id="66bbb-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="66bbb-117">Application</span></span>|<span data-ttu-id="66bbb-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="66bbb-118">Not Supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="b8862-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b8862-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="66bbb-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="66bbb-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /print/shares/{id}/allowedGroups
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b8862-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="b8862-120">Request headers</span></span>
-| <span data-ttu-id="b8862-121">名称</span><span class="sxs-lookup"><span data-stu-id="b8862-121">Name</span></span>      |<span data-ttu-id="b8862-122">说明</span><span class="sxs-lookup"><span data-stu-id="b8862-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="66bbb-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="66bbb-120">Request headers</span></span>
+| <span data-ttu-id="66bbb-121">名称</span><span class="sxs-lookup"><span data-stu-id="66bbb-121">Name</span></span>      |<span data-ttu-id="66bbb-122">说明</span><span class="sxs-lookup"><span data-stu-id="66bbb-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="b8862-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="b8862-123">Authorization</span></span> | <span data-ttu-id="b8862-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b8862-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="66bbb-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="66bbb-123">Authorization</span></span> | <span data-ttu-id="66bbb-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="66bbb-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b8862-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="b8862-126">Request body</span></span>
-<span data-ttu-id="b8862-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="b8862-127">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="b8862-128">响应</span><span class="sxs-lookup"><span data-stu-id="b8862-128">Response</span></span>
-<span data-ttu-id="b8862-129">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [printIdentity](../resources/printidentity.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="b8862-129">If successful, this method returns a `200 OK` response code and a collection of [printIdentity](../resources/printidentity.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="b8862-130">示例</span><span class="sxs-lookup"><span data-stu-id="b8862-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="b8862-131">请求</span><span class="sxs-lookup"><span data-stu-id="b8862-131">Request</span></span>
-<span data-ttu-id="b8862-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="b8862-132">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="66bbb-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="66bbb-126">Request body</span></span>
+<span data-ttu-id="66bbb-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="66bbb-127">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="66bbb-128">响应</span><span class="sxs-lookup"><span data-stu-id="66bbb-128">Response</span></span>
+<span data-ttu-id="66bbb-129">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [printIdentity](../resources/printidentity.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="66bbb-129">If successful, this method returns a `200 OK` response code and a collection of [printIdentity](../resources/printidentity.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="66bbb-130">示例</span><span class="sxs-lookup"><span data-stu-id="66bbb-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="66bbb-131">请求</span><span class="sxs-lookup"><span data-stu-id="66bbb-131">Request</span></span>
+<span data-ttu-id="66bbb-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="66bbb-132">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="b8862-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="b8862-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="66bbb-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="66bbb-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_allowedGroups"
@@ -59,23 +59,23 @@ GET /print/shares/{id}/allowedGroups
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/shares/{id}/allowedGroups
 ```
-# <a name="c"></a>[<span data-ttu-id="b8862-134">C#</span><span class="sxs-lookup"><span data-stu-id="b8862-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="66bbb-134">C#</span><span class="sxs-lookup"><span data-stu-id="66bbb-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-allowedgroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="b8862-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b8862-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="66bbb-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="66bbb-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-allowedgroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="b8862-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b8862-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="66bbb-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="66bbb-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-allowedgroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="b8862-137">响应</span><span class="sxs-lookup"><span data-stu-id="b8862-137">Response</span></span>
-<span data-ttu-id="b8862-138">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="b8862-138">The following is an example of the response.</span></span>
-><span data-ttu-id="b8862-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b8862-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="66bbb-137">响应</span><span class="sxs-lookup"><span data-stu-id="66bbb-137">Response</span></span>
+<span data-ttu-id="66bbb-138">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="66bbb-138">The following is an example of the response.</span></span>
+><span data-ttu-id="66bbb-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="66bbb-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -107,3 +107,5 @@ Content-length: 233
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
