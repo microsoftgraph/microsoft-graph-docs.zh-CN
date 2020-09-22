@@ -3,14 +3,14 @@ title: 获取 userExperienceAnalyticsDevicePerformance
 description: 读取 userExperienceAnalyticsDevicePerformance 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 14a7afbb519a4b67019f6cf03acef7adfd80bcbc
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 007bacb2d6a94e658519b23a90ea888bd53f1d9c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791440"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050645"
 ---
 # <a name="get-userexperienceanalyticsdeviceperformance"></a>获取 userExperienceAnalyticsDevicePerformance
 
@@ -95,6 +95,9 @@ Content-Length: 743
   }
 }
 ```
+
+
+
 
 
 

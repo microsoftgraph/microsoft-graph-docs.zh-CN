@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f1187f694af6222090bc4577c8981ae42fbd92f8
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 4ac7eac13ef82da7d962e2a5306b37212870db0c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44218423"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051261"
 ---
 # <a name="list-timesoff"></a>列出 timesOff
 
@@ -18,7 +18,7 @@ ms.locfileid: "44218423"
 
 按[计划](../resources/schedule.md)获取[timeOff](../resources/timeoff.md)实例的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "44218423"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 请参阅 all、Group、Group. all、Schedule、Group、Group。所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Schedule. All、Schedule、All |
+|应用程序 | Schedule. All、Schedule、All |
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -38,9 +38,9 @@ ms.locfileid: "44218423"
 GET /teams/{teamId}/schedule/timesOff
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `$filter` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持 `$filter` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头       | 值 |
 |:---------------|:--------|
@@ -51,13 +51,13 @@ GET /teams/{teamId}/schedule/timesOff
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[timeOff](../resources/timeoff.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [timeOff](../resources/timeoff.md) 对象集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-下面是一个请求的示例，该请求获取具有共享版本的所有**timeOff**对象和草稿版本的2019年3月18日之间的草稿。
+下面是一个请求的示例，该请求获取具有共享版本的所有 **timeOff** 对象和草稿版本的2019年3月18日之间的草稿。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -151,3 +151,4 @@ Content-length: 401
   ]
 }
 -->
+

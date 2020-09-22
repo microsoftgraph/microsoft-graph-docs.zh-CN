@@ -3,24 +3,24 @@ title: 创建 deviceHealthScriptAssignment
 description: 创建新的 deviceHealthScriptAssignment 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 605b21c3de1a7408224c3544e6f3bbb7d4adf04f
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 8d3de33569d5ce0fa0592dcb509187eeeb2a9b32
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792413"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050771"
 ---
 # <a name="create-devicehealthscriptassignment"></a>创建 deviceHealthScriptAssignment
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md)对象。
+创建新的 [deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -56,13 +56,13 @@ POST /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/assign
 |:---|:---|:---|
 |id|String|设备运行状况脚本分配实体的键。 此属性是只读的。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|将脚本设定为的 Azure Active Directory 组|
-|runRemediationScript|布尔值|确定是只运行检测脚本还是运行两个检测脚本和修正脚本|
+|runRemediationScript|Boolean|确定是只运行检测脚本还是运行两个检测脚本和修正脚本|
 |runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|目标组的脚本运行计划|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -114,6 +114,9 @@ Content-Length: 575
   }
 }
 ```
+
+
+
 
 
 

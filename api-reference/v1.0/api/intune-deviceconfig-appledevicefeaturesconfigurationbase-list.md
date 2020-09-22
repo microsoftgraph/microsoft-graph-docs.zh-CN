@@ -3,14 +3,14 @@ title: 列出 appleDeviceFeaturesConfigurationBases
 description: 列出 appleDeviceFeaturesConfigurationBase 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 22ae72a38425c938fec8a1b2c4d9698c5355f6ed
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9ad6bfbca58d68a7c405a14a016ae1d76ad491fe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43400925"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052241"
 ---
 # <a name="list-appledevicefeaturesconfigurationbases"></a>列出 appleDeviceFeaturesConfigurationBases
 
@@ -79,6 +79,9 @@ Content-Length: 407
   ]
 }
 ```
+
+
+
 
 
 

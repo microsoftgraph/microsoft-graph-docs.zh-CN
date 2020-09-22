@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: b291d871686b514474f754500d490be3ad331441
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c5fb3588c7d06f726c71c81279c0994fd0de4019
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458009"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050085"
 ---
 # <a name="credentialuserregistrationcount-resource-type"></a>credentialUserRegistrationCount 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "43458009"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [getCredentialUserRegistrationCount](../api/reportroot-getcredentialuserregistrationcount.md) | credentialUserRegistrationCount 集合 | 报告您的组织中的多少用户为自助密码重置和多重身份验证（MFA）功能注册的用户的当前状态。 |
+| [getCredentialUserRegistrationCount](../api/reportroot-getcredentialuserregistrationcount.md) | credentialUserRegistrationCount 集合 | 报告您的组织中的多少用户为自助服务密码重置和多重身份验证 (MFA) 功能注册的用户的当前状态。 |
 
 ## <a name="properties"></a>属性
 
@@ -32,7 +32,7 @@ ms.locfileid: "43458009"
 |:-------------|:------------|:------------|
 | id | String | 活动的唯一标识符。 只读。 |
 | totalUserCount | Int64 | 提供租户中的总用户计数。 |
-| userRegistrationCounts | [userRegistrationCount](userregistrationcount.md)集合 | 租户中用户的注册计数和状态信息的集合。 |
+| userRegistrationCounts | [userRegistrationCount](userregistrationcount.md) 集合 | 租户中用户的注册计数和状态信息的集合。 |
 
 ## <a name="relationships"></a>关系
 
@@ -75,3 +75,4 @@ ms.locfileid: "43458009"
   "section": "documentation",
   "tocPath": ""
 }-->
+

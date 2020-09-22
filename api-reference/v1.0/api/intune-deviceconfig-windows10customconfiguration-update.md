@@ -3,14 +3,14 @@ title: 更新 windows10CustomConfiguration
 description: 更新 windows10CustomConfiguration 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8794fd0856e8ee4b12d7273e9ac96e4bf5ce6be5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6ffce4d4c18203365d442af55b69378269ec8339
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456847"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051842"
 ---
 # <a name="update-windows10customconfiguration"></a>更新 windows10CustomConfiguration
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -116,6 +116,9 @@ Content-Length: 576
   ]
 }
 ```
+
+
+
 
 
 

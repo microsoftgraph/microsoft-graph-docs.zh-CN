@@ -3,14 +3,14 @@ title: 删除 deviceConfigurationAssignment
 description: 删除 deviceConfigurationAssignment。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e97017bb64e82c96623a665161e8333127e896f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b038a01a1cd81d7c147bac33772b656ff2b83155
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462908"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051884"
 ---
 # <a name="delete-deviceconfigurationassignment"></a>删除 deviceConfigurationAssignment
 
@@ -63,6 +63,9 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

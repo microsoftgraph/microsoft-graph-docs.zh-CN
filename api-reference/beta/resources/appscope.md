@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 23a3d18a8a712ddff8470d91a677f3d0f18dabf2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2a4acec62c34240d4aa852c6f1960f0dc563d4b6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459333"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050134"
 ---
 # <a name="appscope-resource-type"></a>appScope 资源类型
 
@@ -65,3 +65,4 @@ ms.locfileid: "43459333"
   "suppressions": []
 }
 -->
+

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: efd8b1e7722eabcacd05512b0101735d677d9b89
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 7da256308ee63607d7d2d0e7ba62cb3030db4835
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895642"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049854"
 ---
 # <a name="devicehealth-resource-type"></a>deviceHealth 资源类型
 
@@ -52,3 +52,4 @@ ms.locfileid: "42895642"
   "section": "documentation",
   "tocPath": ""
 }-->
+

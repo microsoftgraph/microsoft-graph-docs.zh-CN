@@ -3,14 +3,14 @@ title: 更新 userExperienceAnalyticsDevicePerformance
 description: 更新 userExperienceAnalyticsDevicePerformance 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 054f050697c3425d757b5e3d2e89fba7ef3b6b9a
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: aecb06c539644770d2478533e6c66c46324ee09c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791384"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050568"
 ---
 # <a name="update-userexperienceanalyticsdeviceperformance"></a>更新 userExperienceAnalyticsDevicePerformance
 
@@ -140,6 +140,9 @@ Content-Length: 684
   "averageRestarts": 5.0
 }
 ```
+
+
+
 
 
 

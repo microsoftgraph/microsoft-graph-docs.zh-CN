@@ -3,20 +3,20 @@ title: managedDeviceMobileAppConfigurationUserStatus 资源类型
 description: 包含某个用户的 MDM 移动应用配置状态的属性、继承属性和操作。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5b51a474a3b3ed2742ebeb531ae8bf5e853fdb34
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: abe83748f74d390c11079838f3f961c57a14cc93
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458684"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049721"
 ---
 # <a name="manageddevicemobileappconfigurationuserstatus-resource-type"></a>managedDeviceMobileAppConfigurationUserStatus 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -39,7 +39,7 @@ ms.locfileid: "43458684"
 |devicesCount|Int32|该用户的设备计数。|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|策略报告的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间。|
-|userPrincipalName|字符串|UserPrincipalName。|
+|userPrincipalName|String|UserPrincipalName。|
 
 ## <a name="relationships"></a>关系
 无
@@ -63,6 +63,9 @@ ms.locfileid: "43458684"
   "userPrincipalName": "String"
 }
 ```
+
+
+
 
 
 

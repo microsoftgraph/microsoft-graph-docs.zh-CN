@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7437986c3da827f0c36fdddfad59653d75fc7f1f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 92e44151149771ecd448c04f90d55f329fe51fb2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510695"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051682"
 ---
 # <a name="range-boundingrect"></a>Range:BoundingRect
 
@@ -101,3 +101,4 @@ Content-length: 169
   "section": "documentation",
   "tocPath": ""
 }-->
+

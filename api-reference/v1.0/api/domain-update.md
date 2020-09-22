@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b22677f64057cfa0baf16afb76d58a0d6d456203
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 12818d1eb152315774b7de90b691ea410ce2bc71
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43179407"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052283"
 ---
 # <a name="update-domain"></a>更新域
 
@@ -29,7 +29,7 @@ ms.locfileid: "43179407"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Domain.ReadWrite.All |
+|应用程序 | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +52,7 @@ PATCH /domains/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将`204 No Content`返回响应代码，不返回任何响应正文。
+如果成功，此方法将返回 `204 No Content` 响应代码，不返回任何响应正文。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -117,3 +117,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

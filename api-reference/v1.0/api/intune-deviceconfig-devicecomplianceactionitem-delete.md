@@ -3,14 +3,14 @@ title: 删除 deviceComplianceActionItem
 description: 删除 deviceComplianceActionItem。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ac7419380c3e2b24332dbd20fad6d523b4bec4e5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f774aed9f23efac9327174da1bad07eeb18bebb8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43400895"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052157"
 ---
 # <a name="delete-devicecomplianceactionitem"></a>删除 deviceComplianceActionItem
 
@@ -63,6 +63,9 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

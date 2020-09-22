@@ -5,12 +5,12 @@ localization_priority: Priority
 author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 7e3731d225ec86ba0a4789401394fa062085d992
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 50ba7c1c60e121760f26a26cdb090ef984c9f4b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807057"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051821"
 ---
 # <a name="get-photo"></a>获取照片
 
@@ -201,3 +201,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

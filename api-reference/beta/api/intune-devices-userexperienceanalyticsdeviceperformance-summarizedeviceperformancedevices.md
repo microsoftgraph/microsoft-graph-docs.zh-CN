@@ -3,14 +3,14 @@ title: summarizeDevicePerformanceDevices 函数
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 10752b98e4d27c9f300c16c7b2e4a597048d7fc4
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 1d971e807c144cc5b3d9ce04eef25d11b438fafc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791461"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050631"
 ---
 # <a name="summarizedeviceperformancedevices-function"></a>summarizeDevicePerformanceDevices 函数
 
@@ -101,6 +101,9 @@ Content-Length: 797
   ]
 }
 ```
+
+
+
 
 
 

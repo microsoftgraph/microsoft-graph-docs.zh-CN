@@ -6,16 +6,16 @@ title: DefaultColumnValue
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 57c66b627a61c59f78166bd8d6a14aef41cdd36d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b6e161f6d0e0c38ab6a1aeef7d17894ba11141c3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507280"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049952"
 ---
 # <a name="defaultcolumnvalue-resource-type"></a>DefaultColumnValue 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,7 +44,7 @@ ms.locfileid: "42507280"
 一次只能指定 **formula** 或 **value** 两者之一。
 
 SharePoint 公式使用一种类似于 Excel 公式的语法。
-有关详细信息，请参阅[SharePoint 列表中常见公式的示例][SPFormulas]。
+有关详细信息，请参阅 [SharePoint 列表中常见公式的示例][SPFormulas] 。
 
 [SPFormulas]: https://support.office.com/en-us/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
 
@@ -59,3 +59,5 @@ SharePoint 公式使用一种类似于 Excel 公式的语法。
   "suppressions": []
 }
 -->
+
+

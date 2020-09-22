@@ -3,14 +3,14 @@ title: 列出 userExperienceAnalyticsDevicePerformances
 description: 列出 userExperienceAnalyticsDevicePerformance 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53a8896f0e3a103a6cea074a00267ac4ac696a8e
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: d43b8ec65be24fc73f4077546daf6f3605dc1e9b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791452"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050638"
 ---
 # <a name="list-userexperienceanalyticsdeviceperformances"></a>列出 userExperienceAnalyticsDevicePerformances
 
@@ -94,6 +94,9 @@ Content-Length: 797
   ]
 }
 ```
+
+
+
 
 
 

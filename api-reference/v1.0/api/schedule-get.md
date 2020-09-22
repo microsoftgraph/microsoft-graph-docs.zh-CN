@@ -1,25 +1,25 @@
 ---
 title: 获取日程安排
-description: 检索**schedule**对象的属性和关系。
+description: 检索 **schedule** 对象的属性和关系。
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b953e911ba834b9707df33926e4a2a355653dcb3
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: b7f70e65831d435b01dd75d1d86241d77d16cdc9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845881"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051289"
 ---
 # <a name="get-schedule"></a>获取日程安排
 
 命名空间：microsoft.graph
 
-检索[schedule](../resources/schedule.md)对象的属性和关系。
+检索 [schedule](../resources/schedule.md) 对象的属性和关系。
 
-计划创建过程符合[基于资源的长时间运行的操作（RELO）的一个 API 指南](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)。
-当客户端使用[PUT 方法](team-put-schedule.md)时，如果设置了计划，该操作将更新计划;否则，该操作将在后台启动计划设置过程。
+计划创建过程符合 [基于资源的长时间运行操作 (RELO) 的 API 指南 ](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)。
+当客户端使用 [PUT 方法](team-put-schedule.md)时，如果设置了计划，该操作将更新计划;否则，该操作将在后台启动计划设置过程。
 
 在计划设置过程中，客户端可以使用 GET 方法获取计划，并查看 `provisionStatus` 设置的当前状态的属性。 如果设置失败，客户端可以从属性获取其他信息 `provisionStatusCode` 。
 
@@ -61,7 +61,7 @@ GET /teams/{teamId}/schedule
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[schedule](../resources/schedule.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [schedule](../resources/schedule.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -142,3 +142,4 @@ Content-length: 401
   ]
 }
 -->
+

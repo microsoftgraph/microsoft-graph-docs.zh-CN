@@ -5,20 +5,20 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 51f57683e06f90e877b4cd72e62d0898d0ef8013
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eb8c95fa7d13f57cca2c2fe19d7b992e6e2cab98
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42501428"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049742"
 ---
 # <a name="educationpointsoutcome-resource-type"></a>educationPointsOutcome 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-提供数字等级的[educationOutcome](educationoutcome.md) 。
+提供数字等级的 [educationOutcome](educationoutcome.md) 。
 
 ## <a name="methods"></a>方法
 
@@ -67,3 +67,4 @@ ms.locfileid: "42501428"
   "section": "documentation",
   "tocPath": ""
 }-->
+

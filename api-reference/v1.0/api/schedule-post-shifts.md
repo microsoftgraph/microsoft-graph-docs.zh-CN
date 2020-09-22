@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c714d4ddf6423c524d3bb3382bf6f2f9222a48c5
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: f3e46b510cbee338b123ec771dc1571eed2963f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44218350"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051219"
 ---
 # <a name="create-shift"></a>创建班次
 
@@ -26,7 +26,7 @@ ms.locfileid: "44218350"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Schedule。 All，Group. 所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Schedule.ReadWrite.All |
+|应用程序 | Schedule.ReadWrite.All |
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -47,7 +47,7 @@ POST /teams/{teamId}/schedule/shifts
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[shift](../resources/shift.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [shift](../resources/shift.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -203,3 +203,4 @@ Content-length: 401
   ]
 }
 -->
+

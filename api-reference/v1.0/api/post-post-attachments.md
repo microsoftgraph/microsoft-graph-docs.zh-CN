@@ -5,18 +5,18 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 79d0035a0ee14fa047bd02b77e3a35cfa9b82ada
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 1dfb6e35caccdfd943e1c701bc265bdcc91c92e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682063"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051856"
 ---
 # <a name="add-attachment"></a>添加附件
 
 命名空间：microsoft.graph
 
-创建组帖子时添加[附件](../resources/attachment.md)。
+创建组帖子时添加 [附件](../resources/attachment.md) 。
 
 此操作将限制可添加到 4 MB 以下的附件的大小。
 
@@ -28,7 +28,7 @@ ms.locfileid: "44682063"
 
 所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -38,7 +38,7 @@ ms.locfileid: "44682063"
 |应用程序 | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
-在组的[conversationThread](../resources/conversationthread.md)中创建[帖子](../resources/post.md)时包含附件。 指定父[对话](../resources/conversation.md)是可选的。
+在组的[conversationThread](../resources/conversationthread.md)中创建[帖子](../resources/post.md)时包含附件。 指定父 [对话](../resources/conversation.md) 是可选的。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -51,11 +51,11 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 | Authorization  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供包含**post**参数的 JSON 对象。
+在请求正文中，提供包含 **post** 参数的 JSON 对象。
 
-| 参数    | 类型   |Description|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|帖子|[帖子](../resources/post.md)|要答复的新帖子，其中包含[附件](../resources/attachment.md)集合中的一个或多个附件。|
+|帖子|[帖子](../resources/post.md)|要答复的新帖子，其中包含 [附件](../resources/attachment.md) 集合中的一个或多个附件。|
 
 ## <a name="response"></a>响应
 
@@ -248,3 +248,4 @@ HTTP/1.1 202 Accpted
   "suppressions": [
   ]
 }-->
+

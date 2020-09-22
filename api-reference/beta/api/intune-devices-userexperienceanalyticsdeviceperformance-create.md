@@ -3,14 +3,14 @@ title: 创建 userExperienceAnalyticsDevicePerformance
 description: 创建新的 userExperienceAnalyticsDevicePerformance 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0de1046a65d0509400f1cf6338fd6af4f6eaac28
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: f76f62ff69701fd57a41080b344c5f5fd2366227
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791448"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050659"
 ---
 # <a name="create-userexperienceanalyticsdeviceperformance"></a>创建 userExperienceAnalyticsDevicePerformance
 
@@ -140,6 +140,9 @@ Content-Length: 684
   "averageRestarts": 5.0
 }
 ```
+
+
+
 
 
 

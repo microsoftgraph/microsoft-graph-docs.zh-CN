@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 03bc5e121d8ef3c6c0271db206849376e0764899
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 63a5b15a57186f6af62c111f9b0e6642304bca2d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181348"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052290"
 ---
 # <a name="delete-domain"></a>删除域
 
@@ -31,7 +31,7 @@ ms.locfileid: "43181348"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Domain.ReadWrite.All |
+|应用程序 | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -110,3 +110,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

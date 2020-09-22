@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: cd96a94d6e247d01b2643517afdde3759b67a182
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: fd407967b11d7a28f0d6275bb0d6cfa045b417a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807029"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051689"
 ---
 # <a name="create-or-replace-an-activity"></a>创建或替换活动
 
@@ -26,7 +26,7 @@ ms.locfileid: "46807029"
 |:---------------------------------------|:------------------------------------|
 | 委派（工作或学校帐户）     | UserActivity.ReadWrite.CreatedByApp |
 | 委派（个人 Microsoft 帐户） | UserActivity.ReadWrite.CreatedByApp |
-| Application                            | 不支持。                      |
+| 应用程序                            | 不支持。                      |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -110,7 +110,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 <!-- {
     "blockType": "ignored",
@@ -303,3 +303,4 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

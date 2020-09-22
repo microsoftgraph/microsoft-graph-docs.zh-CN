@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 658a20ea25c729bbde1a4228aea11b9d9e7f25cc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e384750dce3d74d3c52cfb6b837b0034041d9a0b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510646"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051703"
 ---
 # <a name="get-range"></a>获取区域
 
@@ -110,3 +110,4 @@ Content-length: 169
   "suppressions": [
   ]
 }-->
+

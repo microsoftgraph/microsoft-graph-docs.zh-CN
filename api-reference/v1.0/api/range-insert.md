@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 03aa65fda58a405ce3548f62cc94235f97d69fc0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 62666c5b5cb9754c7cfdbc28e8e36c25ad86df2a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510639"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051687"
 ---
 # <a name="range-insert"></a>Range: insert
 
@@ -45,7 +45,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/insert
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|Shift|string|指定移动单元格的方式。  可能的值为： `Down`、 `Right`。|
+|Shift|string|指定移动单元格的方式。  可能的值为： `Down` 、 `Right` 。|
 
 ## <a name="response"></a>响应
 
@@ -122,3 +122,4 @@ Content-length: 169
   "suppressions": [
   ]
 }-->
+

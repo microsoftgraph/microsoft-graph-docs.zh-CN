@@ -5,18 +5,18 @@ title: 列出关注的项
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 10c3dba22df34b15f5c9cb17eefe7586ce4fb872
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 1c24795cb1682472c66a57a09dabadb2104d5e72
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124320"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052269"
 ---
 # <a name="list-followed-items"></a>列出关注的项
 
 命名空间：microsoft.graph
 
-列出已登录用户的后续[项目](../resources/driveitem.md)。
+列出已登录用户的后续 [项目](../resources/driveitem.md) 。
 此集合包含用户驱动器中的项目，以及他们有从其他驱动器进行访问的权限的项目。
 
 ## <a name="permissions"></a>权限
@@ -59,7 +59,7 @@ GET /me/drive/following
 
 ## <a name="response"></a>响应
 
-此方法返回驱动器所有者正在关注的项目的[driveItem](../resources/driveitem.md)资源的集合。
+此方法返回驱动器所有者正在关注的项目的 [driveItem](../resources/driveitem.md) 资源的集合。
 如果未找到任何项目，则返回一个空集合。
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
@@ -97,3 +97,4 @@ Content-type: application/json
   ]
 }
 -->
+

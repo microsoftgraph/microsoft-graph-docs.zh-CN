@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 使用特殊集合可以按名称访问特殊文件夹。
 doc_type: apiPageType
-ms.openlocfilehash: 402e8c8876962ef657e22fb7dbf8f4ded5c0f923
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b915a39f61505adb01a20b3e08a08916c32a0938
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517830"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052318"
 ---
 # <a name="get-a-special-folder-by-name"></a>按名称获取特殊文件夹
 
@@ -168,3 +168,4 @@ Content-Type: application/json
   "suppressions": [
   ]
 } -->
+

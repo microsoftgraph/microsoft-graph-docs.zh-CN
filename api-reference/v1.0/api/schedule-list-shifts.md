@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0a3011416bd526941b2cab7439f29194b1b6cde7
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 5a30a054686bea00e56b518df07ccbfac55eccab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44218494"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051275"
 ---
 # <a name="list-shifts"></a>列出班次
 
@@ -18,7 +18,7 @@ ms.locfileid: "44218494"
 
 按[计划](../resources/schedule.md)获取[班次](../resources/shift.md)实例的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "44218494"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 请参阅 all、Group、Group. all、Schedule、Group、Group。所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Schedule. All、Schedule、All |
+|应用程序 | Schedule. All、Schedule、All |
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -39,9 +39,9 @@ GET /teams/{teamId}/schedule/shifts
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 $filter [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持 $filter [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头       | 值 |
 |:---------------|:--------|
@@ -52,13 +52,13 @@ GET /teams/{teamId}/schedule/shifts
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[shift](../resources/shift.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [shift](../resources/shift.md) 对象集合。
 
 ## <a name="example"></a>示例
 
 #### <a name="request"></a>请求
 
-下面是一个请求的示例，该请求获取具有共享版本的所有**shift**对象和在2019年3月18日之间的草稿版本。
+下面是一个请求的示例，该请求获取具有共享版本的所有 **shift** 对象和在2019年3月18日之间的草稿版本。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -174,3 +174,4 @@ Content-length: 401
   ]
 }
 -->
+

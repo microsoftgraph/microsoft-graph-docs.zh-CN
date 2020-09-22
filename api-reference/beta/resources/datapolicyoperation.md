@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9057d46a3d01b525f2c430817e875e7ef7bf62d5
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: bec2403ca4e1bad13af801b67d95f3ec9b30d4f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124796"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049987"
 ---
 # <a name="datapolicyoperation-resource-type"></a>dataPolicyOperation 资源类型
 
@@ -76,3 +76,5 @@ ms.locfileid: "43124796"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

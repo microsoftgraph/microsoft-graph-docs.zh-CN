@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 736575ba8958a45cad76f7142967c2a629b0732a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 311f89b67549e6bc373029aef82c88ca0e592f3d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458024"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050092"
 ---
 # <a name="credentialusagesummary-resource-type"></a>credentialUsageSummary 资源类型
 
@@ -30,9 +30,9 @@ ms.locfileid: "43458024"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| authMethod | string | 表示用户使用的身份验证方法。 可能的值是`email`： `mobileSMS`、 `mobileCall`、 `officePhone`、 `securityQuestion` 、（仅用于自助密码重置）、 `appNotification` `appCode`、和`alternateMobileCall` （仅支持注册）。 |
+| authMethod | string | 表示用户使用的身份验证方法。 可能的值为： `email` 、、、、 `mobileSMS` `mobileCall` `officePhone` `securityQuestion` (仅用于自助密码重置) 、、 `appNotification` `appCode` 和  `alternateMobileCall` (仅支持注册) 。 |
 | failureActivityCount | Int64 | 提供失败重置或注册数据的计数。 |
-| 功能 | string | 定义要报告的功能。 可能的值为`registration` ： `reset`和。 |
+| 功能 | string | 定义要报告的功能。 可能的值为： `registration` 和 `reset` 。 |
 | id | String | 活动的唯一标识符。 只读。 |
 | successfulActivityCount | Int64 | 提供成功注册或重置的次数。 |
 
@@ -73,3 +73,4 @@ ms.locfileid: "43458024"
   "section": "documentation",
   "tocPath": ""
 }-->
+

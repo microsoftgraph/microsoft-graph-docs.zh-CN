@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4778696b4a10bbf4f826e9c414904275d62c60f4
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: dba5ffe34a7c7e56ffe98dd1ab8207a8c39eedf2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "44218122"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051282"
 ---
 # <a name="list-schedulegroups"></a>列出 scheduleGroups
 
@@ -49,7 +49,7 @@ GET /teams/{teamId}/schedule/schedulingGroups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[schedulingGroup](../resources/schedulinggroup.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [schedulingGroup](../resources/schedulinggroup.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -145,3 +145,4 @@ Content-length: 401
   ]
 }
 -->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8d19eefbc9ca7f9a750ddf5ebe231cf57366d765
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 69d8d1e2314021752a5f1a0ab3650d8176ecc8dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472143"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049847"
 ---
 # <a name="devicedetail-resource-type"></a>deviceDetail 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "43472143"
 |浏览器|String|指示用于登录的浏览器信息。|
 |deviceId|String|指用于登录的设备的 UniqueID。|
 |displayName|String|指用于登录的设备的名称。|
-|isCompliant|布尔值|指示设备是否合规。|
+|isCompliant|Boolean|指示设备是否合规。|
 |isManaged|Boolean|指示设备是否为托管设备。|
 |operatingSystem|String|指示用于登录的 OS 名称和版本。|
 |trustType|String|指示有关登录设备是否已加入工作区、AzureAD 加入和加入域的信息。 |
@@ -63,3 +63,5 @@ ms.locfileid: "43472143"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

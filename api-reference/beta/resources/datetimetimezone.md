@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 592e8cecccdf8d1514515c4b67a9517352f5a643
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e7f283cc98406564a7c58a525a689b54e043a333
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463058"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049966"
 ---
 # <a name="datetimetimezone-resource-type"></a>dateTimeTimeZone 资源类型
 
@@ -262,3 +262,5 @@ Etc/GMT-12
   "suppressions": []
 }
 -->
+
+

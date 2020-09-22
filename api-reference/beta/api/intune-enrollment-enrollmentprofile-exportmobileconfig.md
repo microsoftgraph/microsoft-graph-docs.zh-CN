@@ -3,20 +3,20 @@ title: exportMobileConfig 函数
 description: 导出移动配置
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8cf4e6615837eeb45942e8a7e0ab617477dc9135
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a6bac7e7f9f2c2144e146a90a08c1799b725f651
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448253"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050505"
 ---
 # <a name="exportmobileconfig-function"></a>exportMobileConfig 函数
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -50,7 +50,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentP
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此函数会在`200 OK`响应正文中返回响应代码和字符串。
+如果成功，此函数会在 `200 OK` 响应正文中返回响应代码和字符串。
 
 ## <a name="example"></a>示例
 
@@ -71,6 +71,9 @@ Content-Length: 45
   "value": "Export Mobile Config value"
 }
 ```
+
+
+
 
 
 

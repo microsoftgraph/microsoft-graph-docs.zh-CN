@@ -5,12 +5,12 @@ localization_priority: Priority
 author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: b446d335f1143f5c9c6316495d6b6d14439e97b4
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: a738802e47367ddebc5c4d5ae54bfcd2612b4cf3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807036"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051765"
 ---
 # <a name="update-profilephoto"></a>更新 profilephoto
 
@@ -112,3 +112,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

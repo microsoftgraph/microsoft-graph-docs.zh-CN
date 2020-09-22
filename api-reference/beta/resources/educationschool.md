@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 32ed190f39d84e4c756d265527f4f0a8bcaf73f5
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: f18b5d9906063a542ee76e7d69f66d01a5178f18
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509810"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049730"
 ---
 # <a name="educationschool-resource-type"></a>educationSchool 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "46509810"
 
 学校。 **EducationSchool**资源当前与[administrativeUnit](administrativeunit.md)资源相对应并共享相同的 ID。
 
-此资源是[educationOrganization](educationorganization.md)的子类型。
+此资源是 [educationOrganization](educationorganization.md)的子类型。
 
 ## <a name="methods"></a>方法
 
@@ -42,21 +42,21 @@ ms.locfileid: "46509810"
 
 | 属性             | 类型                                  | 说明                                                                                                                                                          |
 | :------------------- | :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id                   | 字符串                                | 该学校的 GUID。                                                                                                                                                 |
+| id                   | String                                | 该学校的 GUID。                                                                                                                                                 |
 | address              | [physicalAddress](physicaladdress.md) | 学校地址。                                                                                                                                               |
 | createdBy            | [identitySet](identityset.md)         | 创建了学校的实体。                                                                                                                                       |
-| 说明          | String                                | 学校描述。                                                                                                                                           |
-| displayName          | 字符串                                | 学校的显示名称。                                                                                                                                          |
+| description          | String                                | 学校描述。                                                                                                                                           |
+| displayName          | String                                | 学校的显示名称。                                                                                                                                          |
 | externalId           | String                                | 同步系统中学校的 ID。                                                                                                                                      |
-| externalPrincipalId  | 字符串                                | 同步系统中主体的 ID。                                                                                                                                   |
-| externalSource       | 字符串                                | 从其生成此资源的外部源的类型（自动根据而确定 `externalSourceDetail` ）。 可能的值包括： `sis` 、 `lms` 或 `manual` 。 |
-| externalSourceDetail | 字符串                                | 从中生成此资源的外部源的名称。                                                                                                   |
-| highestGrade         | 字符串                                | 教授的最高年级。                                                                                                                                                |
-| lowestGrade          | 字符串                                | 教授的最低年级。                                                                                                                                                 |
+| externalPrincipalId  | String                                | 同步系统中主体的 ID。                                                                                                                                   |
+| externalSource       | String                                | 从) 中自动确定的 (从其生成此资源的外部源的类型 `externalSourceDetail` 。 可能的值包括： `sis` 、 `lms` 或 `manual` 。 |
+| externalSourceDetail | String                                | 从中生成此资源的外部源的名称。                                                                                                   |
+| highestGrade         | String                                | 教授的最高年级。                                                                                                                                                |
+| lowestGrade          | String                                | 教授的最低年级。                                                                                                                                                 |
 | phone                | String                                | 学校电话号码。                                                                                                                                              |
-| principalEmail       | 字符串                                | 主体的电子邮件地址。                                                                                                                                      |
-| principalName        | 字符串                                | 主体名称。                                                                                                                                               |
-| schoolNumber         | 字符串                                | 学校编号。                                                                                                                                                       |
+| principalEmail       | String                                | 主体的电子邮件地址。                                                                                                                                      |
+| principalName        | String                                | 主体名称。                                                                                                                                               |
+| schoolNumber         | String                                | 学校编号。                                                                                                                                                       |
 
 ## <a name="relationships"></a>关系
 
@@ -109,3 +109,5 @@ ms.locfileid: "46509810"
     "Error: Resource educationSchool has documented navigation properties, but we thought it was a complex type!"
   ]
 }-->
+
+

@@ -3,14 +3,14 @@ title: scheduleActionsForRules 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c4a127acc4a8a7b86091600e8e8de50b52e96ef
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 21214569b47aeb4740414ad65e13a9795b884c62
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43400069"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052115"
 ---
 # <a name="scheduleactionsforrules-action"></a>scheduleActionsForRules 操作
 
@@ -84,6 +84,9 @@ Content-length: 242
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 
