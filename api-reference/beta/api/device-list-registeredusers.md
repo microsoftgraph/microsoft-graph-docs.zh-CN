@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 75410a900201110d04b52c9b1d2b65f5a9e0d4de
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7417f48b38bb45f5967da9df443ae15c5383e725
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386849"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996204"
 ---
 # <a name="list-registeredusers"></a>列出 registeredUser
 
@@ -115,3 +115,5 @@ Content-length: 55
   ]
 }
 -->
+
+

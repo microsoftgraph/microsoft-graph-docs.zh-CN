@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c06699c99a381e46195f9e9bcb4eb772655df349
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: a8b48da33ec7107f80bf8345da71374e70d5edcd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895697"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996643"
 ---
 # <a name="attachment-createuploadsession"></a>附件： createUploadSession
 
@@ -18,26 +18,26 @@ ms.locfileid: "44895697"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建一个允许应用程序以迭代方式上载文件范围的上载会话，以便将该文件附加到 Outlook 项目。 项目可以是[消息](../resources/message.md)或[事件](../resources/event.md)。
+创建一个允许应用程序以迭代方式上载文件范围的上载会话，以便将该文件附加到 Outlook 项目。 项目可以是 [消息](../resources/message.md) 或 [事件](../resources/event.md)。
 
-如果文件大小在 3 MB 到 150 MB 之间，则使用此方法附加文件。 若要附加小于 3 MB 的文件，请 `POST` 在 Outlook 项目的 "**附件**" 导航属性上执行操作; 请参阅如何为[邮件](message-post-attachments.md)或[事件](event-post-attachments.md)执行此操作。 
+如果文件大小在 3 MB 到 150 MB 之间，则使用此方法附加文件。 若要附加小于 3 MB 的文件，请 `POST` 在 Outlook 项目的 " **附件** " 导航属性上执行操作; 请参阅如何为 [邮件](message-post-attachments.md) 或 [事件](event-post-attachments.md)执行此操作。 
 
 作为响应的一部分，此操作将返回可在后续顺序查询中使用的上载 URL `PUT` 。 每个操作的请求标头 `PUT` 允许您指定要上载的确切字节范围。 这样，如果在上载过程中断开网络连接，则可以恢复传输。 
 
 以下是使用上载会话将文件附加到 Outlook 项目的步骤：
 
 1. 创建上传会话。
-2. 在该上传会话中，以迭代方式上载字节的范围（每次最长为 4 MB），直到上载了文件的所有字节，并将该文件附加到指定的项目。
+2. 在该上传会话中，在每次) 上载文件的所有字节，并将该文件附加到指定的项目中时，会在每次重复上载的字节范围 (最大为 4 MB。
 3. 保存附件的 ID 以供将来访问。
 4. 可选：删除上传会话。
 
-有关示例，请参阅[将大型文件附加到 Outlook 消息或事件](/graph/outlook-large-attachments)。
+有关示例，请参阅 [将大型文件附加到 Outlook 消息或事件](/graph/outlook-large-attachments) 。
 
 > [!TIP]
-> Exchange Online 允许管理员自定义 Microsoft 365 邮箱的邮件大小限制，包括任何邮件附件。 默认情况下，此邮件大小限制为 35 MB。 了解如何[自定义最大邮件大小](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb)，以支持大于租户默认限制的附件。 
+> Exchange Online 允许管理员自定义 Microsoft 365 邮箱的邮件大小限制，包括任何邮件附件。 默认情况下，此邮件大小限制为 35 MB。 了解如何 [自定义最大邮件大小](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) ，以支持大于租户默认限制的附件。 
 
 > [!IMPORTANT] 
-> 如果要将大型文件附加到共享或委派邮箱中的邮件或事件，请注意[已知问题](/graph/known-issues#attaching-large-files-to-messages)。
+> 如果要将大型文件附加到共享或委派邮箱中的邮件或事件，请注意 [已知问题](/graph/known-issues#attaching-large-files-to-messages) 。
 
 
 ## <a name="permissions"></a>权限
@@ -52,14 +52,14 @@ ms.locfileid: "44895697"
 
 ## <a name="http-request"></a>HTTP 请求
 
-创建用于将文件附加到**事件**的上载会话： 
+创建用于将文件附加到 **事件**的上载会话： 
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/{id}/attachments/createUploadSession
 ```
 
-创建用于将文件附加到**邮件**的上载会话： 
+创建用于将文件附加到 **邮件**的上载会话： 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -79,11 +79,11 @@ POST /me/messages/{id}/attachments/createUploadSession
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|AttachmentItem|[attachmentItem](../resources/attachmentitem.md)|表示要上载和附加的项的属性。 至少指定附件类型（ `file` ）、名称和文件大小。|
+|AttachmentItem|[attachmentItem](../resources/attachmentitem.md)|表示要上载和附加的项的属性。 至少要指定附件类型 (`file`) 、名称和文件大小。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[uploadSession](../resources/uploadsession.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [uploadSession](../resources/uploadsession.md) 对象。
 
 >**注意**： 
 >
@@ -168,3 +168,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

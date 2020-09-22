@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 31c2b41ee0a4cd13d9a4ef8c83e9b06ac27c8b30
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8c90b1962a935e597f313fe8d0624e529cced097
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382011"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996344"
 ---
 # <a name="contact-delta"></a>contact: delta
 
@@ -144,3 +144,5 @@ Content-length: 337
   ]
 }
 -->
+
+

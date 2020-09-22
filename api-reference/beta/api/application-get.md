@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fe7136cc8defe9a8c7e3fb6ebd7b5ca12083204f
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
-ms.translationtype: MT
+ms.openlocfilehash: 921ce6e6713f1fe4bf4f9fe094f3726303ef71e1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289339"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996925"
 ---
 # <a name="get-application"></a>获取应用程序
 
@@ -25,9 +25,9 @@ ms.locfileid: "44289339"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | "Application"、"all"、"Directory.accessasuser.all"、"全部"、"全部"、"全部"、"全部"、"所有"    |
+|委派（工作或学校帐户） | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | "Application.readwrite.ownedby"、"所有"、"readwrite"、"全部"、"所有"、" |
+|应用程序 | Application.Read.All、 Directory.Read.All、 Application.ReadWrite.OwnedBy、  Application.ReadWrite.All、 Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -156,3 +156,5 @@ Content-length: 1044
   ]
 }
 -->
+
+

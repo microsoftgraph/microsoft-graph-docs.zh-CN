@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1739f0ec6869a51b945f1bbb63eafe41cfd7811a
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 2d7b07cf00005f7fed6918983858d9d9b9357f21
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289353"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996939"
 ---
 # <a name="delete-application"></a>删除应用程序
 
@@ -96,3 +96,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

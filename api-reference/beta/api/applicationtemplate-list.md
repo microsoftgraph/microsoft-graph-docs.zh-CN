@@ -5,20 +5,20 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2baa42a7bc985aec6deae580cfd5a4db59e0818d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5df0ee457464e766fd2581bcb9440039029fc58a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441366"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996649"
 ---
 # <a name="list-applicationtemplates"></a>列出 applicationTemplates
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 Azure AD 应用程序库中检索[applicationTemplate](../resources/applicationtemplate.md)对象的列表。
+从 Azure AD 应用程序库中检索 [applicationTemplate](../resources/applicationtemplate.md) 对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -44,10 +44,10 @@ GET /applicationTemplates
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 
 
-- 您可以在有限`$filter`的方式中使用该参数。 只能按**displayName**或**类别**进行筛选。 例如， `$filter=contains(displayName, 'salesf')` 或 `$filter=categories/any(c:contains(c, 'myCategory'))`。
-- 可以在任何`$orderby`GET `$top,`请求`$skip`中使用和查询参数。
+- 您可以 `$filter` 在有限的方式中使用该参数。 只能按 **displayName** 或 **类别**进行筛选。 例如， `$filter=contains(displayName, 'salesf')` 或 `$filter=categories/any(c:contains(c, 'myCategory'))`。
+- 可以 `$orderby` `$top,` `$skip` 在任何 GET 请求中使用和查询参数。
 
-有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -61,7 +61,7 @@ GET /applicationTemplates
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[applicationTemplate](../resources/applicationtemplate.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [applicationTemplate](../resources/applicationtemplate.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/applicationTemplates
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面介绍响应示例。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
@@ -136,3 +136,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

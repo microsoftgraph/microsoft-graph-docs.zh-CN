@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4ae5e9381cfb39412f311032b7cd5faae41430e0
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: b26e7a2d872e75217a0a4fc0a40e9e88df197310
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566616"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996529"
 ---
 # <a name="delete-connectedorganization"></a>删除 connectedOrganization
 
@@ -18,7 +18,7 @@ ms.locfileid: "46566616"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除[connectedOrganization](../resources/connectedorganization.md)对象。
+删除 [connectedOrganization](../resources/connectedorganization.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -101,3 +101,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

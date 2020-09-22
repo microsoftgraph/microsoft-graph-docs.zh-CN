@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1450e7784394c175209ef1c5524871d029a49981
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: a3d0b530648c7ad1bbe9e41750525c8f4b572695
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47842783"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996806"
 ---
 # <a name="create-onlinemeeting"></a>创建 onlineMeeting
 
@@ -32,7 +32,7 @@ ms.locfileid: "47842783"
 | 应用程序                            | OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All* |
 
 > [!IMPORTANT]
-> \* 管理员必须创建[应用程序访问策略](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md)并将其授予用户，才能授权在此策略中配置的应用代表该用户（在请求路径中指定的用户 ID）创建联机会议。
+> \* 管理员必须创建[应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)并将其授予用户，才能授权在此策略中配置的应用代表该用户（在请求路径中指定的用户 ID）创建联机会议。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,7 +48,7 @@ POST /me/onlineMeetings
 POST /users/{userId}/onlineMeetings
 ```
 
-> **注意：** `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅[应用程序访问策略](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md)。
+> **注意：** `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅[应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -238,3 +238,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cf0084753a100d1ba3670a3a92435358437f1b06
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 3b4a72fc419b64863a51c6a422bea17e35911b35
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810219"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996526"
 ---
 # <a name="list-externalsponsors"></a>列出 externalSponsors
 
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/co
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
@@ -117,3 +117,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

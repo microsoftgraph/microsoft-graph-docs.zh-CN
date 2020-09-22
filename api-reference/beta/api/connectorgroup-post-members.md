@@ -1,24 +1,24 @@
 ---
-title: 将连接器添加到 connectorGroup
+title: Add connector to connectorGroup
 description: 使用此 API 将连接器添加到 connectorGroup。
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4df3f5a1b721528e1a72a0b5970f5577d6cf5696
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 6b50461281a5568b50463964d6b8c292fd63928f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006862"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996419"
 ---
-# <a name="add-connector-to-connectorgroup"></a>将连接器添加到 connectorGroup
+# <a name="add-connector-to-connectorgroup"></a>Add connector to connectorGroup
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将[连接器](../resources/connector.md)添加到[connectorGroup](../resources/connectorgroup.md)。
+将 [连接器](../resources/connector.md) 添加到 [connectorGroup](../resources/connectorgroup.md)。
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -41,11 +41,11 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/members
 | Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供指向[连接器](../resources/connector.md)对象的链接的 JSON 表示形式。
+在请求正文中，提供指向 [连接器](../resources/connector.md) 对象的链接的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[连接器](../resources/connector.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [连接器](../resources/connector.md) 对象。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
@@ -103,3 +103,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

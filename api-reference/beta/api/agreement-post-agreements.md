@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 52c7395dcc714bf32c5dbaebeab856885b8e021e
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: d8be5e20c4a528febe7fa127be309b6be9108588
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217993"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997112"
 ---
 # <a name="create-agreement"></a>创建协议
 
@@ -18,8 +18,8 @@ ms.locfileid: "43217993"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[协议](../resources/agreement.md)对象。
-## <a name="permissions"></a>Permissions
+创建新的 [协议](../resources/agreement.md) 对象。
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -39,7 +39,7 @@ POST /agreements
 | Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[协议](../resources/agreement.md)对象的 JSON 表示形式。
+在请求正文中，提供 [协议](../resources/agreement.md) 对象的 JSON 表示形式。
 
 下表显示创建用户时所需的属性。
 
@@ -47,17 +47,17 @@ POST /agreements
 |:-------------|:------------|:------------|
 |displayName|String|协议的显示名称。|
 |isViewingBeforeAcceptanceRequired|Boolean|指示用户是否必须在接受前展开并查看协议。|
-|files/fileName|字符串|协议文件的名称（例如，TOU）。|
+|files/fileName|String|协议文件的名称 (例如，TOU.pdf) 。|
 |files/isDefault|Boolean|指示是否为默认协议文件（如果没有任何区域性与客户端首选项匹配）。 如果没有任何文件被标记为默认值，则第一项将被视为默认值。|
-|文件/语言|字符串|协议文件的区域性（格式为 languagecode2/regioncode2）。 languagecode2 是从 ISO 639-1 派生的一个由两个小写字母组成的代码。 国家/regioncode2 派生自 ISO 3166，通常包含两个大写字母或一个 BCP-47 语言标记（例如 en-us）。|
+|文件/语言|String|协议文件的区域性（格式为 languagecode2/regioncode2）。 languagecode2 是从 ISO 639-1 派生的一个由两个小写字母组成的代码。 国家/regioncode2 派生自 ISO 3166，通常包含两个大写字母或一个 BCP-47 语言标记 (例如 en-us) 。|
 |files/fileData/data|Binary|表示使用 PDF 文档的术语的数据。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201, Created`正文中返回响应代码和[协议](../resources/agreement.md)对象。
+如果成功，此方法 `201, Created` 在响应正文中返回响应代码和 [协议](../resources/agreement.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-在请求正文中，提供[协议](../resources/agreement.md)对象的 JSON 表示形式。
+在请求正文中，提供 [协议](../resources/agreement.md) 对象的 JSON 表示形式。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -130,3 +130,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ad57d69d2cbf049b5fcb51ddcf76f83f81f992e4
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 7fa771ed3a2242cd6b4c08e4e07c869bae7e446b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810113"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996498"
 ---
 # <a name="add-connected-organization-internal-sponsor"></a>添加已连接的组织内部赞助商
 
@@ -109,3 +109,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

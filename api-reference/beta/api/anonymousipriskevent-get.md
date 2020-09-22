@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: cloudhandler
-ms.openlocfilehash: c4c514e1b838c8146841b3eb1c42988d9e709f9f
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: b29d08a520c57530cebaadb76ccd3ef27268c308
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311484"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997014"
 ---
 # <a name="get-anonymousipriskevent-deprecated"></a>获取 anonymousIpRiskEvent (弃用) 
 
@@ -99,3 +99,5 @@ Content-length: 237
   "suppressions": []
 }
 -->
+
+

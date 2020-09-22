@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1d6208b12d547e4634fb9b95b02575c80753afb1
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 2ab424f84781039498e2d3132a5174de63b23ad4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311856"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996484"
 ---
 # <a name="create-connectedorganization"></a>创建 connectedOrganization
 
@@ -139,3 +139,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

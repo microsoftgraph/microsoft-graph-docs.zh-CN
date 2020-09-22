@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e6986a751129dd0fa41ad97185ae4f860349119f
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 4a3365834c6f637724d470bcd058aac79748e655
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289374"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996981"
 ---
 # <a name="delete-extensionproperty"></a>删除 extensionProperty
 
@@ -18,7 +18,7 @@ ms.locfileid: "44289374"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除[extensionProperty](../resources/extensionproperty.md)。
+删除 [extensionProperty](../resources/extensionproperty.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

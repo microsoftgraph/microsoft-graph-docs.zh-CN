@@ -5,20 +5,20 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fbf38412fc6442ffcc0a7037e2a1dcde30a35469
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 21c350a3ed5b1ca11257c7fc5e2fe53fed785920
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441401"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996670"
 ---
 # <a name="get-applicationtemplate"></a>获取 applicationTemplate
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[applicationTemplate](../resources/applicationtemplate.md)对象的属性。
+检索 [applicationTemplate](../resources/applicationtemplate.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -42,9 +42,9 @@ GET /applicationTemplates/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-您可以使用`$select`查询参数来仅指定所需的属性以获得最佳性能。 始终返回 **id** 属性。 
+您可以使用 `$select` 查询参数来仅指定所需的属性以获得最佳性能。 始终返回 **id** 属性。 
 
-有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -58,7 +58,7 @@ GET /applicationTemplates/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[applicationTemplate](../resources/applicationtemplate.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [applicationTemplate](../resources/applicationtemplate.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/applicationTemplates/{id}
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面介绍响应示例。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
@@ -128,3 +128,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

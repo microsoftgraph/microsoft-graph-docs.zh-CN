@@ -5,16 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 684c96aeb0f297c783343001a1ab00bc82f9da63
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9db39c6b7e9455e7350910eafd7ebe5ad06a5dd3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441632"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997051"
 ---
 # <a name="alert-updatealerts"></a>警报： updateAlerts
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,15 +46,15 @@ POST /security/alerts/updateAlerts
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供具有以下参数的 JSON 对象。 每个实体都必须具有**id**和**vendorInformation**属性。 有关可更新的属性的详细信息，请参阅[更新警报](alert-update.md)。
+在请求正文中，提供具有以下参数的 JSON 对象。 每个实体都必须具有 **id** 和 **vendorInformation** 属性。 有关可更新的属性的详细信息，请参阅 [更新警报](alert-update.md)。
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|值|[警报](../resources/alert.md)集合| 要更新的通知的集合。 每个实体都必须具有要更新的**id**、 **vendorInformation**和其他可编辑属性。|
+|值|[警报](../resources/alert.md)集合| 要更新的通知的集合。 每个实体都必须具有要更新的 **id**、 **vendorInformation**和其他可编辑属性。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`200, OK`响应正文中返回响应代码和[警报](../resources/alert.md)集合对象。
+如果成功，此方法 `200, OK` 在响应正文中返回响应代码和 [警报](../resources/alert.md) 集合对象。
 
 ## <a name="examples"></a>示例
 
@@ -111,7 +111,7 @@ Content-type: application/json
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面介绍响应示例。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
@@ -152,3 +152,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

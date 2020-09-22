@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c8a837e3290ad273c58e5d407e9c6d26a1c53b74
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
-ms.translationtype: MT
+ms.openlocfilehash: 2517a88aa136851c33595697c5b67548ffc836a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333222"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996848"
 ---
 # <a name="list-applications"></a>列出应用程序
 
@@ -26,9 +26,9 @@ ms.locfileid: "44333222"
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:--------------- |:------------------------------------------- |
-| 委派（工作或学校帐户） | 所有的读取全部、全部的 Directory.accessasuser.all、全部、全部、全部、目录、全部、    |
+| 委派（工作或学校帐户） | Application.Read.All、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序 | 应用程序。全部，全部读取全部，全部 |
+| 应用程序 | Application.Read.All、Application.ReadWrite.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -38,14 +38,14 @@ GET /applications
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持[OData 查询参数](/graph/query-parameters)，以帮助自定义响应，包括 `$search` 、 `$count` 和 `$filter` 。 您可以 `$search` 在**displayName**属性上使用。 为此资源添加或更新项目时，将对其进行专门编制索引，以便 `$count` 与 `$search` 查询参数一起使用。 在添加或更新项目以及在索引中可用时，可能会出现轻微的延迟。
+此方法支持[OData query parameters](/graph/query-parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` `$search`可以用在 **displayName**属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
 ## <a name="request-headers"></a>请求标头
 
 | 名称 | 说明 |
 |:---- |:----------- |
 | Authorization  | Bearer {token}。必需。  |
-| ConsistencyLevel | 仍然. 此标头 `$count` 在使用时 `$search` 或在 `$filter` 与查询参数一起使用时是必需的 `$orderby` 。 它使用的索引可能不是最新的对象更改。 |
+| ConsistencyLevel | 最终。 当使用 `$search` 或将 `$filter` 与 `$orderby` 查询参数一起使用时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -57,7 +57,7 @@ GET /applications
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-the-list-of-applications"></a>示例1：获取应用程序列表
+### <a name="example-1-get-the-list-of-applications"></a>示例 1：获取应用程序列表
 
 #### <a name="request"></a>请求
 
@@ -114,7 +114,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-applications"></a>示例2：仅获取应用程序数
+### <a name="example-2-get-only-a-count-of-applications"></a>示例 2：仅获取应用程序计数
 
 #### <a name="request"></a>请求
 
@@ -163,7 +163,7 @@ Content-type: text/plain
 893
 
 
-### <a name="example-3-use-filter-and-top-to-get-one-application-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例3：使用 $filter 和 $top 获取一个显示名称以 ' a ' 开头的应用程序，其中包含返回对象的计数
+### <a name="example-3-use-filter-and-top-to-get-one-application-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 3：使用 $filter 和 $top 获取一个显示名称以“a”开头的应用程序，其中包括返回的对象数
 
 #### <a name="request"></a>请求
 
@@ -208,7 +208,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-search-to-get-applications-with-display-names-that-contain-the-letters-web-including-a-count-of-returned-objects"></a>示例4：使用 $search 获取显示名称中包含字母 "Web" 的应用程序，其中包括返回对象的计数
+### <a name="example-4-use-search-to-get-applications-with-display-names-that-contain-the-letters-web-including-a-count-of-returned-objects"></a>示例 4：使用 $search 获取显示名称中包含字母“Web”的应用程序，其中包括返回的对象数
 
 #### <a name="request"></a>请求
 
@@ -281,3 +281,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

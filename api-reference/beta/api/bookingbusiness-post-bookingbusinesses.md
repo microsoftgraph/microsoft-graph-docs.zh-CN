@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 05c39a802ad320c56a7a910f3dfac67196e04f43
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4d15a3c34031b717014cb17fd728acae638f4ceb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43366517"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996598"
 ---
 # <a name="create-bookingbusiness"></a>创建 bookingBusiness
 
@@ -20,13 +20,13 @@ ms.locfileid: "43366517"
 
 在租户中创建新的 Microsoft 预订业务。
 
-这是设置预订业务（必须在其中指定业务显示名称）的第一步。 您可以包含其他信息（如商务地址、网站地址和计划策略），也可以在以后通过[更新](bookingbusiness-update.md) **bookingBusiness**来设置该信息。
+这是设置预订业务（必须在其中指定业务显示名称）的第一步。 您可以包含其他信息（如商务地址、网站地址和计划策略），也可以在以后通过 [更新](bookingbusiness-update.md) **bookingBusiness**来设置该信息。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  预订. 全部  |
+|委派（工作或学校帐户） |  Bookings.Manage.All  |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。 |
 
@@ -42,11 +42,11 @@ POST /bookingBusinesses
 | Authorization  | Bearer {code}|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[bookingBusiness](../resources/bookingbusiness.md)对象的 JSON 表示形式。
+在请求正文中，提供 [bookingBusiness](../resources/bookingbusiness.md) 对象的 JSON 表示形式。
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在`201, Created`响应正文中返回响应代码和[bookingBusiness](../resources/bookingbusiness.md)对象。
+如果成功，此方法 `201, Created` 在响应正文中返回响应代码和 [bookingBusiness](../resources/bookingbusiness.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -92,7 +92,7 @@ Content-type: application/json
 
 ---
 
-在请求正文中，提供[bookingBusiness](../resources/bookingbusiness.md)对象的 JSON 表示形式。
+在请求正文中，提供 [bookingBusiness](../resources/bookingbusiness.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
@@ -206,3 +206,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

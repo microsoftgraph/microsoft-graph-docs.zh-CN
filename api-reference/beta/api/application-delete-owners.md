@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 501342f6798898baf35951975197a04a8ec86aac
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: f8ec6a288da6baa4dfa2d41de964a382b0e3207b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289367"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996974"
 ---
 # <a name="remove-owner"></a>删除所有者
 
@@ -18,7 +18,7 @@ ms.locfileid: "44289367"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从[应用程序](../resources/application.md)中删除所有者。
+从 [应用程序](../resources/application.md)中删除所有者。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -109,3 +109,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

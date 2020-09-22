@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a45037dc22298482001bb3f010aca538e4939ecd
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 1d937f6a52d80896714519bc43b0dc2595f9d902
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006857"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996414"
 ---
 # <a name="assign-a-connectorgroup-to-an-application"></a>将 connectorGroup 分配给应用程序
 
@@ -18,7 +18,7 @@ ms.locfileid: "45006857"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将[connectorGroup](../resources/connectorgroup.md)分配给[应用程序](../resources/application.md)。
+将 [connectorGroup](../resources/connectorgroup.md) 分配给 [应用程序](../resources/application.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -42,7 +42,7 @@ PUT /applications/{id}/connectorGroup/$ref
 | Content-type | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[connectorGroup](../resources/connectorgroup.md)对象的 JSON 表示形式。
+在请求正文中，提供 [connectorGroup](../resources/connectorgroup.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
@@ -98,3 +98,5 @@ HTTP/1.1 204 No content
   "suppressions": []
 }
 -->
+
+

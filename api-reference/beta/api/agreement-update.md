@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: e729400d27bee48a83079b95ea27bed072bc33c2
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 07b8fce1de78ac062ae9ea38ed4d22a5d345cace
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217986"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997135"
 ---
 # <a name="update-agreement"></a>更新协议
 
@@ -18,8 +18,8 @@ ms.locfileid: "43217986"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[协议](../resources/agreement.md)对象的属性。
-## <a name="permissions"></a>Permissions
+更新 [协议](../resources/agreement.md) 对象的属性。
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -47,7 +47,7 @@ PATCH /agreements/{id}
 |isViewingBeforeAcceptanceRequired|Boolean|用户是否必须在接受前展开并查看协议。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[协议](../resources/agreement.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [协议](../resources/agreement.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
@@ -113,3 +113,5 @@ Content-length: 105
   ]
 }
 -->
+
+

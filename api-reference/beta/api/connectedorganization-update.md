@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: aa3cc0e2a09d09f694295742e3faabe704ec6a87
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 7f7591a709065e42e9de87ea94873454512bbb0c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311849"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996474"
 ---
 # <a name="update-connectedorganization"></a>更新 connectedOrganization
 
@@ -128,3 +128,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

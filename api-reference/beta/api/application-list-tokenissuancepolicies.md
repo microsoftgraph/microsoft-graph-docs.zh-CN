@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1c39d82332e2ea278afd169f059e642c66c59bdc
-ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
+ms.openlocfilehash: bbc1f7254088887fd295abb8348e7818e33f85e3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45142239"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996897"
 ---
 # <a name="list-assigned-tokenissuancepolicies"></a>列表已分配 tokenIssuancePolicies
 
@@ -50,7 +50,7 @@ GET /applications/{id}/tokenIssuancePolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[tokenIssuancePolicy](../resources/tokenissuancepolicy.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -123,3 +123,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

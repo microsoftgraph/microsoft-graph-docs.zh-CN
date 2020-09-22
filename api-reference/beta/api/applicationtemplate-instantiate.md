@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 12928d7917ea0a274c69454d82943d72a7587c67
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: a06ace04fd87b91e56834fe874c8f6de141d7020
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050713"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996659"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationTemplate：实例化
 
@@ -54,7 +54,7 @@ POST /applicationTemplates/{id}/instantiate
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 OK` 在响应正文中返回响应代码和新的[applicationServicePrincipal](../resources/applicationserviceprincipal.md)对象。
+如果成功，此方法 `201 OK` 在响应正文中返回响应代码和新的 [applicationServicePrincipal](../resources/applicationserviceprincipal.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -65,7 +65,7 @@ POST /applicationTemplates/{id}/instantiate
 下面展示了示例请求。
 
 > [!NOTE] 
-> 您可以使用此 API 实例化[非库应用程序](https://docs.microsoft.com/azure/active-directory/manage-apps/add-non-gallery-app)。 对**applicationTemplate**：使用以下 ID `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` 。
+> 您可以使用此 API 实例化 [非库应用程序](https://docs.microsoft.com/azure/active-directory/manage-apps/add-non-gallery-app)。 对 **applicationTemplate**：使用以下 ID `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` 。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -98,7 +98,7 @@ Content-type: application/json
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
@@ -172,3 +172,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

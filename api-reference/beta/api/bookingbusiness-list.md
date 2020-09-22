@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: c71ef053941b82b436bd453f8c3927af4222caf7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cbef8b345db23f1b396d1667bd0acb17cbdcf7a6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43366624"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996617"
 ---
 # <a name="list-bookingbusinesses"></a>列出 Errorexceededfindcountlimit
 
@@ -18,11 +18,11 @@ ms.locfileid: "43366624"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取已为租户创建的[bookingbusiness](../resources/bookingbusiness.md)对象的集合。
+获取已为租户创建的 [bookingbusiness](../resources/bookingbusiness.md) 对象的集合。
 
-此操作仅返回集合中每个预订业务的**id**和**displayName** 。 出于性能考虑，它不返回其他属性。 您可以通过在[get](bookingbusiness-get.md)操作中指定其**Id**来获取预订业务的其他属性。
+此操作仅返回集合中每个预订业务的 **id** 和 **displayName** 。 出于性能考虑，它不返回其他属性。 您可以通过在[get](bookingbusiness-get.md)操作中指定其**Id**来获取预订业务的其他属性。
 
-您还可以通过在`query`参数中指定字符串以执行租户的业务中的子字符串匹配，从而查询预订业务。 请参阅以下[示例](#request-2)。
+您还可以通过在参数中指定字符串 `query` 以执行租户的业务中的子字符串匹配，从而查询预订业务。 请参阅以下[示例](#request-2)。
 
 
 ## <a name="permissions"></a>权限
@@ -42,7 +42,7 @@ GET /bookingBusinesses
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
-此方法还支持接受`query`字符串值的参数。 此参数将 GET 结果限制为与指定的字符串匹配的企业。 您可以参阅下面的[示例](#request-2)。
+此方法还支持 `query` 接受字符串值的参数。 此参数将 GET 结果限制为与指定的字符串匹配的企业。 您可以参阅下面的 [示例](#request-2) 。
 
 
 ## <a name="request-headers"></a>请求标头
@@ -53,7 +53,7 @@ GET /bookingBusinesses
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[bookingBusiness](../resources/bookingbusiness.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [bookingBusiness](../resources/bookingbusiness.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1
 下面的示例获取租户中的预订企业。
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses
 ---
 
 ##### <a name="response-1"></a>响应 1
-下面是一个响应示例。
+下面介绍响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -109,7 +109,7 @@ Content-type: application/json
 
 
 ##### <a name="request-2"></a>请求 2
-下面的示例演示如何使用`query`参数在租户中获取一个或多个匹配的预订企业。
+下面的示例演示如何使用参数在 `query` 租户中获取一个或多个匹配的预订企业。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -169,3 +169,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

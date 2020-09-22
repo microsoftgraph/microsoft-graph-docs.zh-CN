@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2c0c78e83cce85550a483da794dd86b83695d865
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 30c8cc7e7d08ab71927405c5f4103bad133976d7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311463"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996820"
 ---
 # <a name="create-call"></a>创建调用
 
@@ -1127,3 +1127,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

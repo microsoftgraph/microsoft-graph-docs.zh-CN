@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 61570106a40d1635b036673d61e660cb64c2f40b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c019e092c102facc19bcf0503d983cd4fb257e77
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43381803"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996190"
 ---
 # <a name="create-device"></a>创建设备
 
@@ -43,7 +43,7 @@ POST /devices
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [device](../resources/device.md) 对象的 JSON 表示形式。
 
-由于**设备**资源支持[扩展](/graph/extensibility-overview)，因此可以在创建设备`POST`实例时使用该操作并向其添加包含自己的数据的自定义属性。
+由于 **设备** 资源支持 [扩展](/graph/extensibility-overview)，因此可以在 `POST` 创建设备实例时使用该操作并向其添加包含自己的数据的自定义属性。
 
 ## <a name="response"></a>响应
 
@@ -141,3 +141,5 @@ Content-length: 364
   ]
 }
 -->
+
+

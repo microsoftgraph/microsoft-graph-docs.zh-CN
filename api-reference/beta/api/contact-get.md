@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2c94248438f52403e1563725b69c1eea9181b268
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f18f55f657b1bbf260cc773063a1ab3b8e33722a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382004"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996347"
 ---
 # <a name="get-contact"></a>获取联系人
 
@@ -37,7 +37,7 @@ ms.locfileid: "43382004"
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
-用户邮箱中的[联系人](../resources/contact.md)。
+用户邮箱中的 [联系人](../resources/contact.md) 。
 ```http
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
@@ -55,7 +55,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 ## <a name="optional-query-parameters"></a>可选的查询参数
 |名称|值|说明|
 |:---------------|:--------|:-------|
-|$expand|string|要在响应中扩展和添加的关系（以逗号分隔的列表）。 有关受支持的名称，请参阅[contact](../resources/contact.md)对象的关系表。 |
+|$expand|string|要在响应中扩展和添加的关系（以逗号分隔的列表）。 有关受支持的名称，请参阅 [contact](../resources/contact.md) 对象的关系表。 |
 |$select|string|要在响应中包括的属性的列表（以逗号分隔）。|
 
 ## <a name="request-headers"></a>请求标头
@@ -195,3 +195,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

@@ -1,26 +1,26 @@
 ---
-title: 创建 connectorGroup
+title: Create connectorGroup
 description: 使用此 API 创建新的 connectorGroup。
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 77d37dc53c963b2e5e1227d29cac49c0642768bd
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 5aa92cbb94b17d269fe0d140f37b5687a12f0f15
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681237"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996420"
 ---
-# <a name="create-connectorgroup"></a>创建 connectorGroup
+# <a name="create-connectorgroup"></a>Create connectorGroup
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[connectorGroup](../resources/connectorgroup.md)。
+创建新的 [connectorGroup](../resources/connectorgroup.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -41,11 +41,11 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 | Authorization  | 负载. Requried|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[connectorGroup](../resources/connectorgroup.md)对象的 JSON 表示形式。
+在请求正文中，提供 [connectorGroup](../resources/connectorgroup.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[connectorGroup](../resources/connectorgroup.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [connectorGroup](../resources/connectorgroup.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -80,7 +80,7 @@ Content-length: 99
 
 ---
 
-在请求正文中，提供[connectorGroup](../resources/connectorgroup.md)对象的 JSON 表示形式。
+在请求正文中，提供 [connectorGroup](../resources/connectorgroup.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
@@ -114,3 +114,5 @@ Content-length: 119
   "suppressions": []
 }
 -->
+
+

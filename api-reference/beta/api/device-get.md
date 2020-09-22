@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e182ce24be3b85332f6318c7b7096228c60951be
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7bd26ef368129329ce581dd28fd27376287af8c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386974"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996297"
 ---
 # <a name="get-device"></a>获取设备
 
@@ -20,7 +20,7 @@ ms.locfileid: "43386974"
 
 获取 device 对象的属性和关系。
 
-由于**设备**资源支持[扩展](/graph/extensibility-overview)，因此您还可以使用此`GET`操作获取**设备**实例中的自定义属性和扩展数据。
+由于 **设备** 资源支持 [扩展](/graph/extensibility-overview)，因此您还可以使用此 `GET` 操作获取 **设备** 实例中的自定义属性和扩展数据。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -120,3 +120,5 @@ Content-length: 322
   ]
 }
 -->
+
+
