@@ -3,14 +3,14 @@ title: omaSetting 资源类型
 description: OMA 设置定义。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0172d3cb6955df6e154758750fdc87aef2789292
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e49aa085eb0cf23384bbed739235df46e5da1f72
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473076"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978172"
 ---
 # <a name="omasetting-resource-type"></a>omaSetting 资源类型
 
@@ -23,7 +23,7 @@ OMA 设置定义。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|显示名称。|
+|displayName|String|显示名称。|
 |description|String|说明。|
 |omaUri|String|OMA。|
 
@@ -45,6 +45,8 @@ OMA 设置定义。
   "omaUri": "String"
 }
 ```
+
+
 
 
 

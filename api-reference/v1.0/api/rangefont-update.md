@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 660e7853a13464a902aee944a61f0134ac0263a3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: be97858b4a4a26e1c820e04819a638387c5b3a1d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510506"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978690"
 ---
 # <a name="update-rangefont"></a>更新 rangefont
 
@@ -44,8 +44,8 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|bold|boolean|表示字体的加粗状态。|
-|color|字符串|文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
+|bold|布尔|表示字体的加粗状态。|
+|color|string|文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
 |italic|布尔|表示字体的斜体状态。|
 |name|string|字体名称（例如"Calibri"）|
 |大小|double|字号|
@@ -53,7 +53,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookRangeFont](../resources/rangefont.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [WorkbookRangeFont](../resources/rangefont.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -128,3 +128,4 @@ Content-length: 134
   "suppressions": [
   ]
 }-->
+

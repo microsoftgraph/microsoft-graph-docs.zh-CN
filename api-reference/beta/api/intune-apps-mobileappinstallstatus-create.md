@@ -3,14 +3,14 @@ title: 创建 mobileAppInstallStatus
 description: 创建新的 mobileAppInstallStatus 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 93938848a45d7cd4b8c12d642c4834bfde227fa5
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 1026935c8eb012e0a434a2364da60e6d69d0db20
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791041"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977213"
 ---
 # <a name="create-mobileappinstallstatus"></a>创建 mobileAppInstallStatus
 
@@ -123,6 +123,9 @@ Content-Length: 604
   "displayVersion": "Display Version value"
 }
 ```
+
+
+
 
 
 

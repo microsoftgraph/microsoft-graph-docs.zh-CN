@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 3115e341142143d949a51506a15d09dd760c678e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cd12a5b650fadcc87db98bf0f860d34ec0fc9ad7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510653"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978725"
 ---
 # <a name="range-entirerow"></a>Range:EntireRow
 
@@ -113,3 +113,4 @@ Content-length: 169
   "suppressions": [
   ]
 }-->
+

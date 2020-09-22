@@ -3,14 +3,14 @@ title: omaSettingDateTime 资源类型
 description: OMA 设置日期时间定义。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8d8d9151ad40ef42ca24730197cdebe882eccb97
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6291fc5b81de9dea1bfa67515f4df296d9e3001e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473039"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978151"
 ---
 # <a name="omasettingdatetime-resource-type"></a>omaSettingDateTime 资源类型
 
@@ -26,7 +26,7 @@ OMA 设置日期时间定义。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|显示名称。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|displayName|String|显示名称。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|String|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|DateTimeOffset|值。|
@@ -50,6 +50,8 @@ OMA 设置日期时间定义。
   "value": "String (timestamp)"
 }
 ```
+
+
 
 
 

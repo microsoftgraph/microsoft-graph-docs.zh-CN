@@ -1,16 +1,16 @@
 ---
 title: 从频道中删除选项卡
-description: '从团队中的指定通道中删除（unpins）选项卡。 '
+description: '从团队内的指定通道中删除 (unpins) 选项卡。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3350e88d8686114cb16d17772de59edebd19a2e6
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 3591b479e132a365995907eae4806585c69c7cc3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491754"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978340"
 ---
 # <a name="delete-tab-from-channel"></a>从频道中删除选项卡
 
@@ -18,16 +18,16 @@ ms.locfileid: "44491754"
 
 
 
-从[团队](../resources/team.md)中的指定[通道](../resources/channel.md)中删除（unpins）选项卡。 
+从[团队](../resources/team.md)内的指定[通道](../resources/channel.md)中删除 (unpins) 选项卡。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsTab、Group 写全部、所有的 ReadWrite。 All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | TeamsTab、Group 写全部、所有的 ReadWrite。 All |
+|应用程序 | TeamsTab、Group 写全部、所有的 ReadWrite。 All |
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
@@ -76,3 +76,4 @@ HTTP/1.1 204 No Content
   "tocPath": ""
 }
 -->
+

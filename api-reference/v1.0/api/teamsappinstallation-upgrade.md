@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b2ec98883f3db8b8f9ba20b19b6848fc5bd99b5b
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: 6bf3a366b5e500bdd5fd928851ed2730e3280650
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45197049"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978368"
 ---
 # <a name="upgrade-an-app-in-a-team"></a>升级团队中的应用程序
 
@@ -105,3 +105,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

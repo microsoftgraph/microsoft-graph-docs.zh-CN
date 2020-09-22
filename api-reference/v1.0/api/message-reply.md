@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 65119240411d8643c73722a0781a28311edf8743
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b0a5792a78e6c982faec585677b5785d17632136
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467276"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978858"
 ---
 # <a name="message-reply"></a>消息：答复
 
@@ -18,12 +18,12 @@ ms.locfileid: "43467276"
 
 全部在一个 **reply** 调用中回复邮件的发件人、添加注释或修改任意可更新的属性。然后邮件保存在已发送邮件文件夹中。
 
-或者，您可以先[创建草稿答复邮件](../api/message-createreply.md)以包含注释或更新任何邮件属性，然后[发送](../api/message-send.md)回复。
+或者，您可以先 [创建草稿答复邮件](../api/message-createreply.md) 以包含注释或更新任何邮件属性，然后 [发送](../api/message-send.md) 回复。
 
 **注意**
 
-- 您可以指定`message`参数的注释或**body**属性。 同时指定这两个将返回 HTTP 400 错误的请求错误。
-- 如果在原始邮件中指定了**replyTo**属性（根据 Internet 邮件格式（[RFC 2822](https://www.rfc-editor.org/info/rfc2822)）），则应将答复发送给**replyTo**中的收件人，而不是发**件**人属性中的收件人。 
+- 您可以指定参数的注释或 **body** 属性 `message` 。 同时指定这两个将返回 HTTP 400 错误的请求错误。
+- 如果在原始邮件中指定了 **replyTo** 属性（根据 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) 的 Internet 邮件格式，则应将答复发送到 **replyTo** 中的收件人，而不是 **发件** 人属性中的收件人。 
 
 
 ## <a name="permissions"></a>权限
@@ -138,3 +138,4 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+

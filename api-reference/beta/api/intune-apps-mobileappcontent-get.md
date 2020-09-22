@@ -3,20 +3,20 @@ title: 获取 mobileAppContent
 description: 读取 mobileAppContent 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 263f38d820bf5e09960079e2e288cfe0a9b7b58c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fe2ec039e7b08e4098a0ef2b42cdf7eda3213d41
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43404298"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977430"
 ---
 # <a name="get-mobileappcontent"></a>获取 mobileAppContent
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -79,6 +79,9 @@ Content-Length: 130
   }
 }
 ```
+
+
+
 
 
 

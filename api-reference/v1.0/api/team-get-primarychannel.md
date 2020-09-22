@@ -5,18 +5,18 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 50f3bc5fd03c509afe73616bc79ba3cd1582bfe6
-ms.sourcegitcommit: 95c1cf4f70a9322d276dc84726457eeaf98169e2
+ms.openlocfilehash: 19047d78899fa3ab918ce6928fac7f755d9e0f4b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46531507"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978515"
 ---
 # <a name="get-primarychannel"></a>获取 primaryChannel
 
 命名空间：microsoft.graph
 
-获取 [团队](../resources/team.md)的默认[频道](../resources/channel.md)、**常规**。
+获取[团队](../resources/team.md)的默认[频道](../resources/channel.md)（**常规**）。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,7 +37,7 @@ GET /teams/{id}/primaryChannel
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$filter` 和、`$select` 和`$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持使用 `$filter`、`$select` 和`$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -115,3 +115,4 @@ Content-length: 401
   "suppressions": [
   ]
 }-->
+

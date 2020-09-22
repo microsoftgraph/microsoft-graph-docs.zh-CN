@@ -1,27 +1,27 @@
 ---
 title: 创建或替换计划
-description: 创建或替换**schedule**对象。
+description: 创建或替换 **schedule** 对象。
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b5999fd3728dafe65e1832a632ce27d314b3d8b3
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 7c03184d4b9917e9942787ad76bdc52f1ff6641e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154176"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978466"
 ---
 # <a name="create-or-replace-schedule"></a>创建或替换计划
 
 命名空间：microsoft.graph
 
-创建或替换[schedule](../resources/schedule.md)对象。
+创建或替换 [schedule](../resources/schedule.md) 对象。
 
-计划创建过程符合[基于资源的长时间运行的操作（RELO）的一个 API 指南](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)。
+计划创建过程符合 [基于资源的长时间运行操作 (RELO) 的 API 指南 ](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)。
 当客户端使用 PUT 方法时，如果设置了计划，则操作将替换计划;否则，该操作将在后台启动计划设置过程。
 
-在计划设置过程中，客户端可以使用[get 方法](schedule-get.md)获取计划，并查看设置`provisionStatus`的当前状态的属性。 如果设置失败，客户端可以从`provisionStatusCode`属性获取其他信息。
+在计划设置过程中，客户端可以使用 [get 方法](schedule-get.md) 获取计划，并查看 `provisionStatus` 设置的当前状态的属性。 如果设置失败，客户端可以从属性获取其他信息 `provisionStatusCode` 。
 
 客户端也可以检查计划的配置。
 
@@ -34,7 +34,7 @@ ms.locfileid: "44154176"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Schedule。 All，Group. 所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Schedule.ReadWrite.All |
+|应用程序 | Schedule.ReadWrite.All |
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -55,11 +55,11 @@ PUT /teams/{teamId}/schedule
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[schedule](../resources/schedule.md)对象的 JSON 表示形式。
+在请求正文中，提供 [schedule](../resources/schedule.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[schedule](../resources/schedule.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [schedule](../resources/schedule.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -125,3 +125,4 @@ Content-length: 401
   ]
 }
 -->
+

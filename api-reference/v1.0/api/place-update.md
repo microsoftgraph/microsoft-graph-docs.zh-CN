@@ -5,21 +5,21 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: d9d966a0fd901ccb040e0a15bbff88c247032bd3
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 6c62796c56c2e0af51b7a159dead20b51f21e87f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336362"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978802"
 ---
 # <a name="update-place"></a>更新位置
 
 命名空间：microsoft.graph
 
 
-更新[place](../resources/place.md)对象的属性，该对象可以是一个[聊天室](../resources/room.md)或[roomList](../resources/roomlist.md)。 您可以通过指定**id**或**emailAddress**属性来标识**聊天室**或**roomList** 。
+更新 [place](../resources/place.md) 对象的属性，该对象可以是一个 [聊天室](../resources/room.md) 或 [roomList](../resources/roomlist.md)。 您可以通过指定**id**或**emailAddress**属性来标识**聊天室**或**roomList** 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -46,7 +46,7 @@ PATCH /places/{id | emailAddress}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值。 一次只能更新一个位置资源（**会议室**或**roomList**）的实例。 在请求正文中，使用 `@odata.type` 指定位置的类型，并包含要更新的类型的属性。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
+在请求正文中，提供应更新的相关字段的值。 一次只能更新一个位置资源 (**会议室** 或 **roomList**) 的实例。 在请求正文中，使用 `@odata.type` 指定位置的类型，并包含要更新的类型的属性。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
 | 属性               | 类型                                              | 说明 |
 |:-----------------------|:--------------------------------------------------|:--|
@@ -68,7 +68,7 @@ PATCH /places/{id | emailAddress}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[place](../resources/place.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [place](../resources/place.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -120,10 +120,10 @@ Content-length: 285
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面介绍响应示例。
 
 > [!NOTE]
-> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
+> 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -229,7 +229,7 @@ Content-type: application/json
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面介绍响应示例。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
@@ -278,3 +278,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

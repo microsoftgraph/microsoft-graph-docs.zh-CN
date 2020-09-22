@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f46d2d7bf7cfcacfc2ecec01dfe9a59d6dffcc4f
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: dfe6d2748fa3fd148292e005a9f600a0568627fd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45197056"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978375"
 ---
 # <a name="list-apps-in-team"></a>列出团队中的应用
 
@@ -38,7 +38,7 @@ GET /teams/{id}/installedApps
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 $filter、$select 和 $expand [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持 $filter、$select 和 $expand [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -52,7 +52,7 @@ GET /teams/{id}/installedApps
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[teamsAppInstallation](../resources/teamsappinstallation.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [teamsAppInstallation](../resources/teamsappinstallation.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -208,3 +208,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

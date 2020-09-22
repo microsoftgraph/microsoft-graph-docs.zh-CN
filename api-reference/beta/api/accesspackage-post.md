@@ -5,20 +5,20 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ef57e5400d2bb93bf566badfc76fa8c890206809
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2fc35b0c2de4f8d152cef00194bf74b5fd5b8845
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448506"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977950"
 ---
 # <a name="create-accesspackage"></a>创建 accessPackage
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[accessPackage](../resources/accesspackage.md)对象。
+创建新的 [accessPackage](../resources/accesspackage.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -42,16 +42,16 @@ POST /identityGovernance/entitlementManagement/accessPackages
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[accessPackage](../resources/accesspackage.md)对象的 JSON 表示形式。
+在请求正文中，提供 [accessPackage](../resources/accesspackage.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回一个201创建的响应代码和一个新的[accessPackage](../resources/accesspackage.md)对象。
+如果成功，此方法在响应正文中返回一个201创建的响应代码和一个新的 [accessPackage](../resources/accesspackage.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -125,3 +125,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

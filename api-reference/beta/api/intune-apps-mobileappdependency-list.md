@@ -3,24 +3,24 @@ title: 列出 mobileAppDependencies
 description: 列出 mobileAppDependency 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 85da4798bc3cc7d7c1f63e9ff63bd4ecde4c52d6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 80a9125417f09cb44b538b5851415bb2444eb4bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43415019"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977246"
 ---
 # <a name="list-mobileappdependencies"></a>列出 mobileAppDependencies
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)对象的属性和关系。
+列出 [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,7 +50,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/relationships
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 317
+Content-Length: 348
 
 {
   "value": [
@@ -74,12 +74,16 @@ Content-Length: 317
       "id": "c7f6f9ab-f9ab-c7f6-abf9-f6c7abf9f6c7",
       "targetId": "Target Id value",
       "targetDisplayName": "Target Display Name value",
+      "targetType": "parent",
       "dependencyType": "autoInstall",
       "dependentAppCount": 1
     }
   ]
 }
 ```
+
+
+
 
 
 

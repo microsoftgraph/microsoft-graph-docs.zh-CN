@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7c6f6b643c2ab794b06af5de9b94499e6d2bd235
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 769e6bdd6542c1b1a4900338f60e0e434c9e6b06
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491775"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978445"
 ---
 # <a name="update-team"></a>更新团队
 
@@ -18,17 +18,17 @@ ms.locfileid: "44491775"
 
 
 
-更新指定[团队](../resources/team.md)的属性。
+更新指定 [团队](../resources/team.md)的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamSettings、Group 写全部、所有的 ReadWrite。 All |
+|委派（工作或学校帐户） | TeamSettings.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application |TeamSettings、Group 写全部、所有的 ReadWrite。 All |
+|应用程序 |TeamSettings.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
@@ -45,7 +45,7 @@ PATCH /teams/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[team](../resources/team.md)对象的 JSON 表示形式。
+在请求正文中，提供 [team](../resources/team.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
@@ -118,3 +118,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

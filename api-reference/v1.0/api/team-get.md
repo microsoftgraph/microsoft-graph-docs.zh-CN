@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dc9a45e22022b6f95ab0e7dde4187bfe105af093
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 1deccdccd907e71d96ce623182d2f5bf03adb16f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845797"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978487"
 ---
 # <a name="get-team"></a>获取团队
 
@@ -137,3 +137,4 @@ Content-length: 401
   "section": "documentation",
   "tocPath": ""
 }-->
+

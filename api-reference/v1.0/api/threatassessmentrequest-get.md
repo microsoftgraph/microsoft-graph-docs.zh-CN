@@ -5,22 +5,22 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 27081a3868eefb26f2668261abf3241ea5b8ea0d
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 9b68ccdcb31dcc4f90e8b90f7590e69e912deb94
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42858806"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978312"
 ---
 # <a name="get-threatassessmentrequest"></a>获取 threatAssessmentRequest
 
-检索指定的[threatAssessmentRequest](../resources/threatassessmentrequest.md)对象的属性和关系。
+检索指定的 [threatAssessmentRequest](../resources/threatassessmentrequest.md) 对象的属性和关系。
 
 威胁评估请求可以是以下类型之一：
 
 * [邮件](../resources/mailAssessmentRequest.md)
 * [电子邮件文件](../resources/emailFileAssessmentRequest.md)
-* [文件](../resources/fileAssessmentRequest.md)
+* [File](../resources/fileAssessmentRequest.md)
 * [URL](../resources/urlAssessmentRequest.md)
 
 ## <a name="permissions"></a>权限
@@ -43,11 +43,11 @@ GET /informationProtection/threatAssessmentRequests/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持以下 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持以下 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 |名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$expand         |string   |在`$expand=results`查询中使用以检索威胁评估结果。                                                                                              |
+|$expand         |string   |`$expand=results`在查询中使用以检索威胁评估结果。                                                                                              |
 |$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
 
 ## <a name="request-headers"></a>请求标头
@@ -62,7 +62,7 @@ GET /informationProtection/threatAssessmentRequests/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[threatAssessmentRequest](../resources/threatassessmentrequest.md)对象。 返回该类型的属性： [mailAssessmentRequest](../resources/mailAssessmentRequest.md)、 [emailFileAssessmentRequest](../resources/emailFileAssessmentRequest.md)、 [fileAssessmentRequest](../resources/fileAssessmentRequest.md)、 [urlAssessmentRequest](../resources/urlAssessmentRequest.md)。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [threatAssessmentRequest](../resources/threatassessmentrequest.md) 对象。 返回该类型的属性： [mailAssessmentRequest](../resources/mailAssessmentRequest.md)、 [emailFileAssessmentRequest](../resources/emailFileAssessmentRequest.md)、 [fileAssessmentRequest](../resources/fileAssessmentRequest.md)、 [urlAssessmentRequest](../resources/urlAssessmentRequest.md)。
 
 ## <a name="examples"></a>示例
 
@@ -452,3 +452,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

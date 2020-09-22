@@ -3,14 +3,14 @@ title: 列出 deviceAndAppManagementRoleDefinitions
 description: 列出 deviceAndAppManagementRoleDefinition 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d01c636fbdc1541c053f8786804a5b638b43fc06
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: da8d9887b38b72adc3610486a6becf8c88af5dc5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43452637"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978851"
 ---
 # <a name="list-deviceandappmanagementroledefinitions"></a>列出 deviceAndAppManagementRoleDefinitions
 
@@ -27,7 +27,7 @@ ms.locfileid: "43452637"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -93,6 +93,9 @@ Content-Length: 768
   ]
 }
 ```
+
+
+
 
 
 

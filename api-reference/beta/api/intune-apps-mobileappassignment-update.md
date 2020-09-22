@@ -3,20 +3,20 @@ title: 更新 mobileAppAssignment
 description: 更新 mobileAppAssignment 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b43aff448c7db5a6665b0fdafd4921e8fb774c7
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: ea6de90e151caf9a0d4d51147af2f87ec2a0f679
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793316"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977535"
 ---
 # <a name="update-mobileappassignment"></a>更新 mobileAppAssignment
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -117,6 +117,9 @@ Content-Length: 640
   "sourceId": "Source Id value"
 }
 ```
+
+
+
 
 
 

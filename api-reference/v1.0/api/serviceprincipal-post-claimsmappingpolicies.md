@@ -5,12 +5,12 @@ localization_priority: Normal
 author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b22afa1dd68f90bbae069055fb0999a90ed17a0b
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: 45e69c257a101ea594bc7bb1b0f6750d1215b006
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863546"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978634"
 ---
 # <a name="assign-claimsmappingpolicy"></a>分配 claimsMappingPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "44863546"
 
 
 
-将[claimsMappingPolicy](../resources/claimsmappingpolicy.md)分配给[servicePrincipal](../resources/serviceprincipal.md)。
+将 [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 分配给 [servicePrincipal](../resources/serviceprincipal.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/claimsMappingPolicies/$ref
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应分配给服务主体的[claimsMappingPolicy](../resources/claimsmappingpolicy.md)对象的标识符（使用 `@odata.id` 属性）。
+在请求正文中，使用[claimsMappingPolicy](../resources/claimsmappingpolicy.md) `@odata.id` 应分配给服务主体的属性) 提供 claimsMappingPolicy 对象 (的标识符。
 
 ## <a name="response"></a>响应
 
@@ -115,3 +115,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

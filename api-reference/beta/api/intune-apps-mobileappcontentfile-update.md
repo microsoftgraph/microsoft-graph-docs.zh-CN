@@ -3,20 +3,20 @@ title: 更新 mobileAppContentFile
 description: 更新 mobileAppContentFile 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bf26e28f7c24c49f573f2607a6c0abb4f4afcc6e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0fe430fb9d646a47ecc53acac46441d9cf7b1cf6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43415423"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977311"
 ---
 # <a name="update-mobileappcontentfile"></a>更新 mobileAppContentFile
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -118,6 +118,9 @@ Content-Length: 503
   "isDependency": true
 }
 ```
+
+
+
 
 
 

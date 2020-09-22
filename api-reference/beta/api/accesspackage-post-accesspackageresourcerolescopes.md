@@ -5,20 +5,20 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6dbe277f3f6b05bb7df55adf8523d7111f6f17cd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 39ed9ce31cd6a49e3ff1bbda81ff406a335353e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448513"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977941"
 ---
 # <a name="create-accesspackageresourcerolescope"></a>创建 accessPackageResourceRoleScope
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) ，用于将资源角色添加到访问包中。  访问包资源必须已存在于访问包目录中。  对此访问包的任何后续访问包分配请求都将包含此资源角色。  
+创建新的 [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) ，用于将资源角色添加到访问包中。  访问包资源必须已存在于访问包目录中。  对此访问包的任何后续访问包分配请求都将包含此资源角色。  
 
 ## <a name="permissions"></a>权限
 
@@ -47,11 +47,11 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackage
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md)对象的 JSON 表示形式。  在对象中包含与[accessPackageResourceRole](../resources/accesspackageresourcerole.md)和[accessPackageResourceScope](../resources/accesspackageresourcescope.md)的关系。  
+在请求正文中，提供 [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) 对象的 JSON 表示形式。  在对象中包含与 [accessPackageResourceRole](../resources/accesspackageresourcerole.md) 和 [accessPackageResourceScope](../resources/accesspackageresourcescope.md)的关系。  
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回一个200系列响应代码和一个新的[accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md)对象。
+如果成功，此方法在响应正文中返回一个200系列响应代码和一个新的 [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -98,7 +98,7 @@ Content-type: application/json
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面介绍响应示例。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -131,3 +131,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
