@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e7729762a93e5185d45289b2377ecd961d894552
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d9947e256001abd8168c886a0435e0725b3a1483
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808856"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072842"
 ---
 # <a name="physicaladdress-resource-type"></a>physicalAddress 资源类型
 
@@ -60,3 +60,4 @@ ms.locfileid: "46808856"
   "section": "documentation",
   "tocPath": ""
 }-->
+

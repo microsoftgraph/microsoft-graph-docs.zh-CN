@@ -5,18 +5,18 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d9398c42c8f4404e2d61a8d63f9d30870cb9d751
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: aac03c9f27d6d9d62d4781d16487538fc212be56
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510831"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073374"
 ---
 # <a name="call-redirect"></a>呼叫：重定向
 
 命名空间：microsoft.graph
 
-重定向尚未[应答](./call-answer.md)或[拒绝](./call-reject.md)的传入呼叫。 术语 "重定向" 和 "转发" 可交换使用呼叫。
+重定向尚未 [应答](./call-answer.md) 或 [拒绝](./call-reject.md) 的传入呼叫。 术语 "重定向" 和 "转发" 可交换使用呼叫。
 
 在呼叫超时之前，机器人应重定向呼叫。当前超时值为15秒。
 
@@ -51,8 +51,8 @@ POST /communications/calls/{id}/redirect
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) 集合|重定向操作的目标参与者。 如果指定了多个目标，则为同时调用。 这意味着将同时 rang 所有目标，并且只会连接所选取的第一个目标。 对于同时，我们最高支持25个目标。
-|timeout|Int32|重定向操作的超时（以秒为单位）。 超时值的范围介于15和90秒之间（含这两个值）。 对于多个目标，默认超时值为55秒，为多个目标为60秒（可能会发生更改）。 |
-|callbackUri|String|这将允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是`https`。|
+|timeout|Int32|用于重定向操作) 的超时 (（秒）。 超时值的范围介于15和90秒之间（含这两个值）。 对于多个目标，默认超时值为每个目标为60秒的一个目标，默认值为55秒 (主题将) 。 |
+|callbackUri|String|这将允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是 `https` 。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `202 Accepted` 响应代码。
@@ -413,3 +413,4 @@ Content-Type: application/json
   ]
 }
 -->
+

@@ -5,20 +5,20 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ddc507d4c958b7453e53df1f0475497cb0b3ad89
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 76450b0d6b0f3a532a4e3472d2ce99ead8c933e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521157"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073444"
 ---
 # <a name="removecontentfooteraction-resource-type"></a>removeContentFooterAction 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示一个操作，该操作指定要从信息中删除的内容页脚的详细信息（如果适用）。 如果由于更新或删除标签而要删除页脚， [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md)、 [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md)或[EvaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) api 可能会返回**removeContentFooterAction** 。 该操作指示使用应用程序移除包含之前适用的内容页脚的特定 UI 元素。
+表示一个操作，该操作指定要从信息中删除的内容页脚的详细信息（如果适用）。 如果由于更新或删除标签而要删除页脚， [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md)、 [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md)或 [EvaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) api 可能会返回 **removeContentFooterAction** 。 该操作指示使用应用程序移除包含之前适用的内容页脚的特定 UI 元素。
 
 ## <a name="properties"></a>属性
 
@@ -54,3 +54,4 @@ ms.locfileid: "42521157"
   "section": "documentation",
   "tocPath": ""
 }-->
+

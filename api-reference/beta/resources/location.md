@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 265dcc7626aaaee1a43997b8c51cea9feb4763c5
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 764dcfd92095a2432cd42527ba98af1ed0e5c535
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43442714"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073578"
 ---
 # <a name="location-resource-type"></a>位置资源类型
 
@@ -82,3 +82,5 @@ ms.locfileid: "43442714"
   "suppressions": []
 }
 -->
+
+

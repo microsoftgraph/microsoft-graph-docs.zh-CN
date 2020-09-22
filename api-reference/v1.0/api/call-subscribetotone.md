@@ -1,23 +1,23 @@
 ---
 title: 调用： subscribeToTone
-description: 订阅 DTMF （双音多频信号）。 这样，您就可以在用户按 "Dialpad" 上的键时收到通知。
+description: 订阅 DTMF (双音多频信号) 。 这样，您就可以在用户按 "Dialpad" 上的键时收到通知。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 45b2145c002eb17a5bc65f946646ce70bf3872f8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1cfdc09a35a0f04d5ce3e2ffffec80524f40c1e5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518663"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073360"
 ---
 # <a name="call-subscribetotone"></a>调用： subscribeToTone
 
 命名空间：microsoft.graph
 
 
-订阅 DTMF （双音多频信号）。 这样，您就可以在用户按 "dialpad" 上的键时收到通知。
+订阅 DTMF (双音多频信号) 。 这样，您就可以在用户按 "dialpad" 上的键时收到通知。
 
 > [!Note]
 > 仅使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)支持**subscribeToTone**操作。
@@ -49,7 +49,7 @@ POST /communications/calls/{id}/subscribeToTone
 
 | 参数      | 类型    | 说明 |
 |:---------------|:--------|:------------|
-| 适用  | 字符串  | 唯一的客户端上下文字符串。 最多可以有256个字符。 |
+| 适用  | String  | 唯一的客户端上下文字符串。 最多可以有256个字符。 |
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `200 OK` 响应代码。
@@ -120,7 +120,7 @@ Location: https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-40
 
 ##### <a name="notification---tone-notification"></a>通知-音调通知
 
-通知包含[toneinfo](../resources/toneinfo.md)资源中所按音调的信息。
+通知包含 [toneinfo](../resources/toneinfo.md) 资源中所按音调的信息。
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -166,3 +166,4 @@ Content-Type: application/json
   ]
 }
 -->
+

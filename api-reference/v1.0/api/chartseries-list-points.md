@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d4e01f07b96fc854c9006819c591e7aaa41bc1b9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a75f3e569dc2ea8435d55ad9e4c06d9126e343eb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518362"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073304"
 ---
 # <a name="list-points"></a>列出点
 
@@ -108,3 +108,4 @@ Content-length: 32
   "suppressions": [
   ]
 }-->
+

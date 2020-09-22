@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: svpsiva
-ms.openlocfilehash: d86c8f1a4d9760c8effe41defbb6d3cdb828f192
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
+ms.openlocfilehash: 002eb0ce4433e36b53b5e844ea857812022e653c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991787"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073661"
 ---
 # <a name="localeinfo-resource-type"></a>localeInfo 资源类型
 
@@ -59,3 +59,5 @@ ms.locfileid: "43991787"
   "suppressions": []
 }
 -->
+
+

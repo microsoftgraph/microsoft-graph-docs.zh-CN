@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 84437efcc144e05ebbabaa887fe0d59cff715ff9
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 73bc2ed1c8a94f4f3c4d1135c929d94d6990f40f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896572"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074133"
 ---
 # <a name="section-copytonotebook"></a>部分： copyToNotebook
 
@@ -52,12 +52,12 @@ POST /sites/{id}/onenote/sections/{id}/copyToNotebook
 |siteCollectionId|String|要复制到的 SharePoint 网站的 id。 仅在复制到 SharePoint 网站时使用。|
 |siteId|String|要复制到的 SharePoint 网站的 id。 仅在复制到 SharePoint 网站时使用。|
 |groupId|String|要复制到的组的 id。 仅在复制到 Microsoft 365 组时使用。|
-|id|String|必填。 目标笔记本的 id。 |
+|id|String|必需。 目标笔记本的 id。 |
 |renameAs|String|副本的名称。 默认值为现有项目的名称。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `202 Accepted` 响应代码和 `Operation-Location` 标头。 轮询操作-位置终结点以[获取复制操作的状态](onenoteoperation-get.md)。
+如果成功，此方法将返回 `202 Accepted` 响应代码和 `Operation-Location` 标头。 轮询操作-位置终结点以 [获取复制操作的状态](onenoteoperation-get.md)。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -119,3 +119,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

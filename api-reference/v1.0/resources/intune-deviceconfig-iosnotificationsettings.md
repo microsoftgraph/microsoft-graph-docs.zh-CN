@@ -3,14 +3,14 @@ title: iosNotificationSettings 资源类型
 description: 说明通知设置的项。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4ceffa61669b9601e85e354e856c80a85d025f8b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0e3dc929e96869475d4376c344bf08ff17ae7edd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43410440"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074984"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>iosNotificationSettings 资源类型
 
@@ -26,11 +26,11 @@ ms.locfileid: "43410440"
 |bundleID|String|要向其应用这些通知设置的应用的捆绑 ID。|
 |appName|String|要与 bundleID 关联的应用程序名称。|
 |发布者|String|要与 bundleID 关联的发布者。|
-|enabled|Boolean|指示是否允许此应用使用通知。|
-|showInNotificationCenter|Boolean|指示是否可以在通知中心中显示通知。|
-|showOnLockScreen|Boolean|指示是否可以在锁定屏幕上显示通知。|
+|enabled|布尔值|指示是否允许此应用使用通知。|
+|showInNotificationCenter|布尔值|指示是否可以在通知中心中显示通知。|
+|showOnLockScreen|布尔值|指示是否可以在锁定屏幕上显示通知。|
 |alertType|[iosNotificationAlertType](../resources/intune-deviceconfig-iosnotificationalerttype.md)|指示此应用的通知的警报类型。 可取值为：`deviceDefault`、`banner`、`modal`、`none`。|
-|badgesEnabled|Boolean|指示是否允许此应用使用徽章。|
+|badgesEnabled|布尔值|指示是否允许此应用使用徽章。|
 |soundsEnabled|布尔值|指示是否允许此应用使用声音。|
 
 ## <a name="relationships"></a>关系
@@ -57,6 +57,8 @@ ms.locfileid: "43410440"
   "soundsEnabled": true
 }
 ```
+
+
 
 
 

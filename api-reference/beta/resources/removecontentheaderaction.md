@@ -5,20 +5,20 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 907113e20b5e4257a672190433efd055a628c17f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 63dc9556ace567f4505b40c1882bd56b087a7835
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521150"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073423"
 ---
 # <a name="removecontentheaderaction-resource-type"></a>removeContentHeaderAction 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示一个操作，该操作指定要从信息中删除的内容标头的详细信息（如果适用）。 如果由于更新或删除标签而要删除标头，则[evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md)、 [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md)或[EvaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) api 可能会返回**removeContentHeaderAction** 。 该操作指示使用应用程序移除包含之前适用的内容头的特定 UI 元素。
+表示一个操作，该操作指定要从信息中删除的内容标头的详细信息（如果适用）。 如果由于更新或删除标签而要删除标头，则 [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md)、 [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md)或 [EvaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md) api 可能会返回 **removeContentHeaderAction** 。 该操作指示使用应用程序移除包含之前适用的内容头的特定 UI 元素。
 
 ## <a name="properties"></a>属性
 
@@ -54,3 +54,4 @@ ms.locfileid: "42521150"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,14 +3,14 @@ title: sync 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f0e4a7f8d31fa4542e01180257ca601685dc4eb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 668aed40e347ac609401ed1b65dca9acf75354b9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451783"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075117"
 ---
 # <a name="sync-action"></a>sync 操作
 
@@ -78,6 +78,9 @@ Content-length: 31
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

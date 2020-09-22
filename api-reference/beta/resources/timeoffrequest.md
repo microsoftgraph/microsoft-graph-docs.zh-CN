@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f27f0ccbd3e73ade95dedca49c15fe1489d773b5
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 1b1e6c3f55b716590a399c9324ea759ff93810d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154379"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073388"
 ---
 # <a name="timeoffrequest-resource-type"></a>timeOffRequest 资源类型
 
@@ -18,25 +18,25 @@ ms.locfileid: "44154379"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示要采用[timeoff](../resources/timeoff.md)的班次请求的类型。
+表示要采用 [timeoff](../resources/timeoff.md)的班次请求的类型。
 
 ## <a name="methods"></a>方法
 
-| 方法       | 返回类型 | 说明 |
+| 方法       | 返回类型 | Description |
 |:-------------|:------------|:------------|
-| [List](../api/timeoffrequest-list.md) | [timeOffRequest](timeoffrequest.md)集合 | 获取此计划中的**timeOffRequest**对象的列表。|
-| [获取](../api/timeoffrequest-get.md) | [timeOffRequest](timeoffrequest.md) | 读取**timeOffRequest**对象的属性和关系。 |
-| [删除](../api/timeoffrequest-delete.md) | None | 删除**timeOffRequest**对象。 |
-| [批准](../api/timeoffrequest-approve.md)|None|批准请假时间请求。|
-| [拒绝](../api/timeoffrequest-decline.md)|None|拒绝休息时间请求。|
+| [List](../api/timeoffrequest-list.md) | [timeOffRequest](timeoffrequest.md) 集合 | 获取此计划中的 **timeOffRequest** 对象的列表。|
+| [Get](../api/timeoffrequest-get.md) | [timeOffRequest](timeoffrequest.md) | 读取 **timeOffRequest** 对象的属性和关系。 |
+| [删除](../api/timeoffrequest-delete.md) | 无 | 删除 **timeOffRequest** 对象。 |
+| [批准](../api/timeoffrequest-approve.md)|无|批准请假时间请求。|
+| [拒绝](../api/timeoffrequest-decline.md)|无|拒绝休息时间请求。|
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|endDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|startDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|timeOffReasonId|字符串|休息时间的原因。|
+|endDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|startDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|timeOffReasonId|String|休息时间的原因。|
 
 ## <a name="relationships"></a>关系
 
@@ -72,3 +72,5 @@ ms.locfileid: "44154379"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

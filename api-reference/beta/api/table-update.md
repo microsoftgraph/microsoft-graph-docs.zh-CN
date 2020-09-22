@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b93fc732676dcfe922e165246f05146df60ea03c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9e2c36b0e4dce697c08be3cb0ad5b30a290244ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452769"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074060"
 ---
 # <a name="update-table"></a>更新表
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,7 +46,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |name|string|表的名称。|
-|showHeaders|布尔|指示标头行是否可见。该值可以设置为显示或删除标头行。|
+|showHeaders|boolean|指示标头行是否可见。该值可以设置为显示或删除标头行。|
 |showTotals|boolean|指示总计行是否可见。该值可以设置为显示或删除总计行。|
 |style|string|表示表格样式的常量值。可能的值是：TableStyleLight1 thru TableStyleLight21、TableStyleMedium1 thru TableStyleMedium28、TableStyleStyleDark1 thru TableStyleStyleDark11。还可以指定工作簿中显示的用户定义的自定义样式。|
 
@@ -122,3 +122,5 @@ Content-length: 109
   ]
 }
 -->
+
+

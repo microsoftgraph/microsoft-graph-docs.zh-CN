@@ -3,14 +3,14 @@ title: 列出 securityConfigurationTasks
 description: 列出 securityConfigurationTask 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b3f732c5aeb5b7b2876ce9e96129bc606804b44c
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 7e3eaa47d67381358a44d1df2f87eb68f7e6521c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793218"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074515"
 ---
 # <a name="list-securityconfigurationtasks"></a>列出 securityConfigurationTasks
 
@@ -98,6 +98,9 @@ Content-Length: 983
   ]
 }
 ```
+
+
+
 
 
 

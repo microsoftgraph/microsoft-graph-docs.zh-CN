@@ -3,14 +3,14 @@ title: localizedNotificationMessage 资源类型
 description: 指定区域设置的通知消息模板的文本内容。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 569491c92e51e1f7efa5adae54eac91e61646660
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ecc7e479ccc2909b96fbcb2b9d9a12900716ea25
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459670"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072996"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>localizedNotificationMessage 资源类型
 
@@ -32,10 +32,10 @@ ms.locfileid: "43459670"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |locale|String|此消息的目标区域设置。|
-|主题|String|消息模板主题。|
+|subject|String|消息模板主题。|
 |messageTemplate|String|消息模板内容。|
 |isDefault|Boolean|用于指示这是否是语言回退的默认区域设置的标记。 此标志只能设置。 若要取消设置，请在其他本地化通知消息中将该属性设置为 true。|
 
@@ -61,6 +61,8 @@ ms.locfileid: "43459670"
   "isDefault": true
 }
 ```
+
+
 
 
 

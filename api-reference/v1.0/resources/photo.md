@@ -7,12 +7,12 @@ localization_priority: Normal
 description: 照片资源提供 driveItem 中的照片和相机属性，例如 EXIF 元数据。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a62a138cbd48645b6b296abcde72af0cef19e259
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 362d4f76f56fa5824985a3580d6008d8c5081a7c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863731"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072849"
 ---
 # <a name="photo-resource-type"></a>Photo 资源类型
 
@@ -49,10 +49,10 @@ ms.locfileid: "44863731"
 | **takenDateTime**       | DateTimeOffset | 表示照片拍摄的时间和日期。只读。
 | **cameraMake**          | String         | 相机制造商。只读。
 | **cameraModel**         | String         | 相机型号。只读。
-| **fNumber**             | 双精度         | 相机的 F-stop 值。只读。
-| **exposureDenominator** | 双精度         | 相机的曝光时间分数的分母。只读。
+| **fNumber**             | Double         | 相机的 F-stop 值。只读。
+| **exposureDenominator** | Double         | 相机的曝光时间分数的分母。只读。
 | **exposureNumerator**   | Double         | 相机的曝光时间分数的分子。只读。
-| **focalLength**         | 双精度数         | 相机的焦距。只读。
+| **focalLength**         | Double         | 相机的焦距。只读。
 | **iso**                 | Int32          | 相机的 ISO 值。只读。
 | **orientation**         | Int16          | 相机中的方向值。 在 OneDrive 个人版上是可写的。      |
 
@@ -68,3 +68,4 @@ OneDrive for Business 和 SharePoint 仅返回 **takenDateTime** 属性。
   "section": "documentation",
   "tocPath": "Facets/Photo"
 } -->
+

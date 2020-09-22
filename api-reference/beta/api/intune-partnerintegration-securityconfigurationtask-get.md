@@ -3,14 +3,14 @@ title: 获取 securityConfigurationTask
 description: 读取 securityConfigurationTask 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6403cc544dfca382d15e658a31cb8133132f2076
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 13254f98b7c3745ef92cd467a0e0f3854bdd064a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793247"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074529"
 ---
 # <a name="get-securityconfigurationtask"></a>获取 securityConfigurationTask
 
@@ -99,6 +99,9 @@ Content-Length: 921
   }
 }
 ```
+
+
+
 
 
 

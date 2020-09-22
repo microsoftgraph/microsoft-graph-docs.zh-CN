@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 108091747e7fd9e0b14db9161c05bd0a25b2ef4e
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 70b0e7875a2634f6f06cea2de9bc2bf0a10ab348
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916337"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074012"
 ---
 # <a name="list-tokenissuancepolicy"></a>列出 tokenIssuancePolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "43916337"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[tokenIssuancePolicy](../resources/tokenIssuancePolicy.md)对象的列表。
+获取 [tokenIssuancePolicy](../resources/tokenIssuancePolicy.md) 对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -38,9 +38,9 @@ ms.locfileid: "43916337"
 GET policies/tokenIssuancePolicies
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
 
-`$expand`此方法支持`$filter`、、 `$select`和`$top` OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。 使用`$expand`时，请确保您的应用程序请求读取展开的对象的权限。
+此方法支持 `$expand` 、 `$filter` 、 `$select` 和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用时 `$expand` ，请确保您的应用程序请求读取展开的对象的权限。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET policies/tokenIssuancePolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[tokenIssuancePolicy](../resources/tokenIssuancePolicy.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [tokenIssuancePolicy](../resources/tokenIssuancePolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -128,3 +128,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -3,14 +3,14 @@ title: deviceEnrollmentConfiguration 资源类型
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2ff64f603b6cc899d3a8005dea9d65796106df0a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 73f2826af52e88f27e629ef4cb25013d17d3edb5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459580"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072961"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>deviceEnrollmentConfiguration 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "43459580"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|尚未记录|
+|id|String|尚未记录|
 |displayName|String|尚未记录|
 |description|String|尚未记录|
 |优先级|Int32|尚未记录|
@@ -64,6 +64,8 @@ ms.locfileid: "43459580"
   "version": 1024
 }
 ```
+
+
 
 
 

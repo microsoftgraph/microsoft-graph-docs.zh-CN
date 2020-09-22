@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: c93338c39a2dfce144688fb7c042d6e520ed6ac8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7a23f44192b17ae2dfa745496dfbc2b4b1f5a836
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445573"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072947"
 ---
 # <a name="telecom-expense-management-in-microsoft-intune"></a>Microsoft Intune 中的电信费用管理
 
@@ -23,6 +23,8 @@ ms.locfileid: "43445573"
 以下 Graph 资源可用于在 Intune 中管理电信费用：  
 
 - [电信费用管理合作伙伴](intune-tem-telecomexpensemanagementpartner.md)
+
+
 
 
 

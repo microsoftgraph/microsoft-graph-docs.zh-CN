@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的管理设备 (REST) 的适用于 I
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 6fa0cf5dff76290f0df56860c86df13d1a4ffb3a
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 4c365a5713d8a2b9da24e1a8eee89121395ec6e9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791601"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073955"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -169,6 +169,7 @@ ms.locfileid: "46791601"
 - [托管设备](intune-devices-manageddevice.md)
 - [托管设备体系结构](intune-devices-manageddevicearchitecture.md)
 - [托管设备清理设置](intune-devices-manageddevicecleanupsettings.md)
+- [托管设备管理功能](intune-devices-manageddevicemanagementfeatures.md)
 - [托管设备型号和制造商](intune-devices-manageddevicemodelsandmanufacturers.md)
 - [托管设备概述](intune-devices-manageddeviceoverview.md)
 - [托管的设备合作伙伴报告的运行状况](intune-devices-manageddevicepartnerreportedhealthstate.md)
@@ -217,7 +218,13 @@ ms.locfileid: "46791601"
 - [一元管理条件表达式](intune-fencing-unarymanagementconditionexpression.md)
 - [一元管理条件表达式运算符类型](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [更新 Windows 设备帐户操作参数](intune-devices-updatewindowsdeviceaccountactionparameter.md)
+- [按应用程序版本的用户体验分析应用运行状况应用程序性能](intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md)
+- [用户体验分析应用运行状况应用程序的性能（按 o s 版本）](intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md)
 - [用户体验分析应用程序运行状况应用程序性能](intune-devices-userexperienceanalyticsapphealthapplicationperformance.md)
+- [User experience analytics 应用程序运行状况设备模型性能](intune-devices-userexperienceanalyticsapphealthdevicemodelperformance.md)
+- [User experience analytics 应用程序运行状况设备性能](intune-devices-userexperienceanalyticsapphealthdeviceperformance.md)
+- [User experience analytics 应用程序运行状况设备性能详细信息](intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md)
+- [User experience analytics 应用运行状况 o s 版本性能](intune-devices-userexperienceanalyticsapphealthosversionperformance.md)
 - [用户体验分析基线](intune-devices-userexperienceanalyticsbaseline.md)
 - [用户体验分析类别](intune-devices-userexperienceanalyticscategory.md)
 - [User experience analytics 设备性能](intune-devices-userexperienceanalyticsdeviceperformance.md)
@@ -261,3 +268,5 @@ ms.locfileid: "46791601"
 - [Windows 管理应用](intune-devices-windowsmanagementapp.md)
 - [Windows 管理应用运行状况状态](intune-devices-windowsmanagementapphealthstate.md)
 - [Windows 保护状态](intune-devices-windowsprotectionstate.md)
+
+

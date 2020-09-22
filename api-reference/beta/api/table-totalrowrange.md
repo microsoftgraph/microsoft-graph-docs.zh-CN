@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 26d3e07f4571743ea301c2ee664a5bef72d2f1d9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2d46c0c53f0299a7b70bf138a6cd3e2ecc433547
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452790"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074074"
 ---
 # <a name="table-totalrowrange"></a>Table:TotalRowRange
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -110,3 +110,5 @@ Content-length: 169
   ]
 }
 -->
+
+

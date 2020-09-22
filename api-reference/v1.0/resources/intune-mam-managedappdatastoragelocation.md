@@ -3,14 +3,14 @@ title: managedAppDataStorageLocation 枚举类型
 description: 托管应用可能存储其数据的存储位置
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: de09f36f8823927a42fd5508be90db8ced098b71
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a716af1a5744ab6362cace84e55898cffb2dff2d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445768"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074942"
 ---
 # <a name="managedappdatastoragelocation-enum-type"></a>managedAppDataStorageLocation 枚举类型
 
@@ -23,9 +23,11 @@ ms.locfileid: "43445768"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|oneDriveForBusiness|1|OneDrive for Business|
-|sharePoint|双面|SharePoint|
+|oneDriveForBusiness|1 |OneDrive for Business|
+|sharePoint|2 |SharePoint|
 |localStorage|6 |设备上的本地存储|
+
+
 
 
 

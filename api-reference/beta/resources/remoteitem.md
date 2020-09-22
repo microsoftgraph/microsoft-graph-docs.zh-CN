@@ -6,12 +6,12 @@ title: RemoteItem
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 0b672f917487719b8994d8c99aad8be8c8d24190
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: 87d3c19d6d6714f88fb3404f4485ed303a86e051
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986094"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073447"
 ---
 # <a name="remoteitem-resource-type"></a>RemoteItem 资源类型
 
@@ -92,3 +92,5 @@ ms.locfileid: "42986094"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: cloudhandler
-ms.openlocfilehash: 4fbad6d2b2cc736167f313ad6f70b8f0aea2e63b
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 735108451ac9de71a7d05d4146f490ad94df0e82
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806546"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073640"
 ---
 # <a name="locatedriskevent-resource-type"></a>locatedRiskEvent 资源类型
 
@@ -99,3 +99,5 @@ ms.locfileid: "46806546"
   "suppressions": []
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: 列出 settingStateDeviceSummaries
 description: 列出 settingStateDeviceSummary 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b05be3f4176eeac3214bfc81310272c689c1e0a6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: eb476eafedd6d4959addd5cc5c06e9200f15b645
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43387605"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075299"
 ---
 # <a name="list-settingstatedevicesummaries"></a>列出 settingStateDeviceSummaries
 
@@ -84,6 +84,9 @@ Content-Length: 486
   ]
 }
 ```
+
+
+
 
 
 

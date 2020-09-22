@@ -5,22 +5,22 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: baa44ba0eec9ef8a4bc9e4111a7c313a26dfa1de
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bc6c91368d262972918654ea860cb8f03844c359
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518670"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073367"
 ---
 # <a name="call-reject"></a>呼叫：拒绝
 
 命名空间：microsoft.graph
 
-启用机器人以拒绝传入呼叫。 传入呼叫请求可以是来自组呼叫或对等呼叫中参与者的邀请。 如果收到某个组呼叫邀请，则通知将包含**chatInfo**和**meetingInfo**参数。
+启用机器人以拒绝传入呼叫。 传入呼叫请求可以是来自组呼叫或对等呼叫中参与者的邀请。 如果收到某个组呼叫邀请，则通知将包含 **chatInfo** 和 **meetingInfo** 参数。
 
 在呼叫超时之前，机器人应应答或拒绝呼叫。当前超时值为15秒。
 
-此 API 不会结束已应答的现有呼叫。 使用[删除呼叫](../api/call-delete.md)结束呼叫。
+此 API 不会结束已应答的现有呼叫。 使用 [删除呼叫](../api/call-delete.md) 结束呼叫。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -48,8 +48,8 @@ POST /communications/calls/{id}/reject
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|reason|字符串|拒绝原因。 可能的值`None`为`Busy`和`Forbidden` |
-|callbackUri|字符串|这将允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是`https`。|
+|reason|String|拒绝原因。 可能的值 `None` 为 `Busy` 和 `Forbidden` |
+|callbackUri|String|这将允许 bot 为当前呼叫提供特定的回调 URI，以接收后续通知。 如果尚未设置此属性，则将改为使用 bot 的全局回调 URI。 这必须是 `https` 。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
@@ -245,3 +245,4 @@ Content-Type: application/json
   ]
 }
 -->
+

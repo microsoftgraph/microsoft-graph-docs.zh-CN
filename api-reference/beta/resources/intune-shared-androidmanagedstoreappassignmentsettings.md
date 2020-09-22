@@ -3,20 +3,20 @@ title: androidManagedStoreAppAssignmentSettings 资源类型
 description: 包含用于将 Android 托管存储移动应用程序分配给组的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cfdca91e3499a495ba810b1c791653d62c769e4a
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 383c272efc420cba893208e806a29df55f5429f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178211"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073675"
 ---
 # <a name="androidmanagedstoreappassignmentsettings-resource-type"></a>androidManagedStoreAppAssignmentSettings 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "44178211"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|androidManagedStoreAppTrackIds|字符串集合|要为此应用分配启用的跟踪 Id。|
+|androidManagedStoreAppTrackIds|String 集合|要为此应用分配启用的跟踪 Id。|
 
 ## <a name="relationships"></a>关系
 无
@@ -48,6 +48,9 @@ ms.locfileid: "44178211"
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: 获取 deviceManagementDerivedCredentialSettings
 description: 读取 deviceManagementDerivedCredentialSettings 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bed43b24d60404d5354e245dea9a84f124c90af8
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 7dda9173205802f18fa73063954aa133bb93ef9b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812602"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074424"
 ---
 # <a name="get-devicemanagementderivedcredentialsettings"></a>获取 deviceManagementDerivedCredentialSettings
 
@@ -85,7 +85,10 @@ Content-Length: 155
     "id": "bc650741-0741-bc65-4107-65bc410765bc"
   }
 }
-```
+
+
+
+
 
 
 

@@ -1,32 +1,32 @@
 ---
 title: plannerAssignedToTaskBoardTaskFormat 资源类型
-description: '**PlannerAssignedToTaskBoardTaskFormat**资源表示用于在任务板的 "分配器" 视图（由任务分配到的用户组织的视图）中正确呈现任务的信息。 每个任务都有一个与之关联的**plannerAssignedToTaskBoardTaskFormat**对象。'
+description: '**PlannerAssignedToTaskBoardTaskFormat**资源表示用于在任务板的 "分配器" 视图中正确呈现任务的信息，该信息 (将任务分配给其) 的用户组织的视图。 每个任务都有一个与之关联的 **plannerAssignedToTaskBoardTaskFormat** 对象。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 56ac6b3e11d308c0ad12bd94b7e67c67378e6916
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e75ee719b183fb04f5f30ecc919bf39b8fcf7146
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521809"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073591"
 ---
 # <a name="plannerassignedtotaskboardtaskformat-resource-type"></a>plannerAssignedToTaskBoardTaskFormat 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerAssignedToTaskBoardTaskFormat**资源表示用于在任务板的 "分配器" 视图（由任务分配到的用户组织的视图）中正确呈现任务的信息。 每个[任务](plannertask.md)都有一个与之关联的**plannerAssignedToTaskBoardTaskFormat**对象。
+**PlannerAssignedToTaskBoardTaskFormat**资源表示用于在任务板的 "分配器" 视图中正确呈现任务的信息，该信息 (将任务分配给其) 的用户组织的视图。 每个 [任务](plannertask.md) 都有一个与之关联的 **plannerAssignedToTaskBoardTaskFormat** 对象。
 
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 plannerAssignedToTaskBoardTaskFormat](../api/plannerassignedtotaskboardtaskformat-get.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md) |读取**plannerAssignedToTaskBoardTaskFormat**对象的属性和关系。|
-|[更新](../api/plannerassignedtotaskboardtaskformat-update.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)  |更新**plannerAssignedToTaskBoardTaskFormat**对象。 |
+|[获取 plannerAssignedToTaskBoardTaskFormat](../api/plannerassignedtotaskboardtaskformat-get.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md) |读取 **plannerAssignedToTaskBoardTaskFormat** 对象的属性和关系。|
+|[更新](../api/plannerassignedtotaskboardtaskformat-update.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)  |更新 **plannerAssignedToTaskBoardTaskFormat** 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -71,3 +71,5 @@ ms.locfileid: "42521809"
   "suppressions": []
 }
 -->
+
+

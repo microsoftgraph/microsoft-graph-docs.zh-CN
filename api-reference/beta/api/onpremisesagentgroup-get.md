@@ -1,16 +1,16 @@
 ---
 title: 获取 onPremisesAgentGroup
-description: 检索[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象的属性和关系。
+description: 检索 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象的属性和关系。
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 73abcc34462f776d669e9188ffeef92b28f15d01
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: ea1a76aeab6437b46aa5ce4c9068b6f7ee6312b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556266"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074256"
 ---
 # <a name="get-onpremisesagentgroup"></a>获取 onPremisesAgentGroup
 
@@ -18,9 +18,9 @@ ms.locfileid: "44556266"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象的属性和关系。
+检索 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "44556266"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +42,7 @@ GET /onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -54,7 +54,7 @@ GET /onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -132,3 +132,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

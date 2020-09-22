@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 171e3b97699a5d236a21c862802b4164369b67b5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0cc357679ec6a0d869e0c77f37a275a4598ebf04
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454736"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074214"
 ---
 # <a name="range-lastcolumn"></a>Range:LastColumn
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -111,3 +111,5 @@ Content-length: 169
   ]
 }
 -->
+
+

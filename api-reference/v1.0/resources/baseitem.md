@@ -7,12 +7,12 @@ localization_priority: Normal
 description: baseItem 资源是抽象资源，其中包含一组在若干其他资源类型中共享的常见类型。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 181895c835544540387c96856c9cbbfb3b5e4f5d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c247891afed001977174f3de232a8b2385e0841
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532010"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075082"
 ---
 # <a name="baseitem-resource-type"></a>BaseItem 资源类型
 
@@ -72,7 +72,7 @@ ms.locfileid: "42532010"
 
 | 关系       | 类型     | 说明
 |:-------------------|:---------|:---------------------------------------------
-| createdByUser      | [用户][] | 创建了项的用户的身份。 只读。
+| createdByUser      | [user][] | 创建了项的用户的身份。 只读。
 | lastModifiedByUser | [user][] | 上次修改项的用户的标识。 只读。
 
 [identitySet]: identityset.md
@@ -92,3 +92,4 @@ ms.locfileid: "42532010"
   "section": "documentation",
   "tocPath": "Resources/BaseItem"
 } -->
+

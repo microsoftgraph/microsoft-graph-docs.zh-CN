@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: harini84
-ms.openlocfilehash: 5a4d671107165d6569529ad81d602639e5062a1b
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 8232cafb5b08e94ef23a1b37eac87efe8a7184d1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810452"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073521"
 ---
 # <a name="recurrencerange-resource-type"></a>recurrenceRange 资源类型
 
@@ -78,3 +78,5 @@ ms.locfileid: "46810452"
   ]
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: windowsInformationProtectionIPRangeCollection 资源类型
 description: Windows 信息保护 IP 范围集合
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 131694ba3ef67f1f87a1e40cd7545ad6e78717de
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b243f8923ac44b516a93608fd5c7d82c9cb1296f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468395"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074893"
 ---
 # <a name="windowsinformationprotectioniprangecollection-resource-type"></a>windowsInformationProtectionIPRangeCollection 资源类型
 
@@ -49,6 +49,8 @@ Windows 信息保护 IP 范围集合
   ]
 }
 ```
+
+
 
 
 
