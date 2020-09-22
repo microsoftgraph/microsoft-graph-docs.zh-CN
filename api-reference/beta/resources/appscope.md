@@ -5,39 +5,39 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 23a3d18a8a712ddff8470d91a677f3d0f18dabf2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2a4acec62c34240d4aa852c6f1960f0dc563d4b6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459333"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050134"
 ---
-# <a name="appscope-resource-type"></a><span data-ttu-id="b10b6-103">appScope 资源类型</span><span class="sxs-lookup"><span data-stu-id="b10b6-103">appScope resource type</span></span>
+# <a name="appscope-resource-type"></a><span data-ttu-id="93bd6-103">appScope 资源类型</span><span class="sxs-lookup"><span data-stu-id="93bd6-103">appScope resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b10b6-104">角色分配的范围决定了主体已被授予访问权限的资源集。</span><span class="sxs-lookup"><span data-stu-id="b10b6-104">The scope of a role assignment determines the set of resources for which the principal has been granted access.</span></span> <span data-ttu-id="b10b6-105">应用程序范围是由特定应用程序定义和理解的范围。</span><span class="sxs-lookup"><span data-stu-id="b10b6-105">An app scope is a scope defined and understood by a specific application.</span></span> <span data-ttu-id="b10b6-106">另一种类型的作用域是目录作用域。</span><span class="sxs-lookup"><span data-stu-id="b10b6-106">The other type of scope is directory scope.</span></span> <span data-ttu-id="b10b6-107">目录作用域是存储在多个应用程序可理解的目录中的共享作用域。</span><span class="sxs-lookup"><span data-stu-id="b10b6-107">Directory scopes are shared scopes stored in the directory that are understood by multiple applications.</span></span> 
+<span data-ttu-id="93bd6-104">角色分配的范围决定了主体已被授予访问权限的资源集。</span><span class="sxs-lookup"><span data-stu-id="93bd6-104">The scope of a role assignment determines the set of resources for which the principal has been granted access.</span></span> <span data-ttu-id="93bd6-105">应用程序范围是由特定应用程序定义和理解的范围。</span><span class="sxs-lookup"><span data-stu-id="93bd6-105">An app scope is a scope defined and understood by a specific application.</span></span> <span data-ttu-id="93bd6-106">另一种类型的作用域是目录作用域。</span><span class="sxs-lookup"><span data-stu-id="93bd6-106">The other type of scope is directory scope.</span></span> <span data-ttu-id="93bd6-107">目录作用域是存储在多个应用程序可理解的目录中的共享作用域。</span><span class="sxs-lookup"><span data-stu-id="93bd6-107">Directory scopes are shared scopes stored in the directory that are understood by multiple applications.</span></span> 
 
-<span data-ttu-id="b10b6-108">这在单个主体、单作用域实体和多个主体中均采用了多个作用域实体。</span><span class="sxs-lookup"><span data-stu-id="b10b6-108">This is employed in both the single principal, single scope entity and multiple principal, multiple scope entities.</span></span>
+<span data-ttu-id="93bd6-108">这在单个主体、单作用域实体和多个主体中均采用了多个作用域实体。</span><span class="sxs-lookup"><span data-stu-id="93bd6-108">This is employed in both the single principal, single scope entity and multiple principal, multiple scope entities.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="b10b6-109">方法</span><span class="sxs-lookup"><span data-stu-id="b10b6-109">Methods</span></span>
-<span data-ttu-id="b10b6-110">无</span><span class="sxs-lookup"><span data-stu-id="b10b6-110">None</span></span>
+## <a name="methods"></a><span data-ttu-id="93bd6-109">方法</span><span class="sxs-lookup"><span data-stu-id="93bd6-109">Methods</span></span>
+<span data-ttu-id="93bd6-110">无</span><span class="sxs-lookup"><span data-stu-id="93bd6-110">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b10b6-111">属性</span><span class="sxs-lookup"><span data-stu-id="b10b6-111">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="93bd6-111">属性</span><span class="sxs-lookup"><span data-stu-id="93bd6-111">Properties</span></span>
 
-| <span data-ttu-id="b10b6-112">属性</span><span class="sxs-lookup"><span data-stu-id="b10b6-112">Property</span></span> | <span data-ttu-id="b10b6-113">类型</span><span class="sxs-lookup"><span data-stu-id="b10b6-113">Type</span></span> | <span data-ttu-id="b10b6-114">说明</span><span class="sxs-lookup"><span data-stu-id="b10b6-114">Description</span></span> |
+| <span data-ttu-id="93bd6-112">属性</span><span class="sxs-lookup"><span data-stu-id="93bd6-112">Property</span></span> | <span data-ttu-id="93bd6-113">类型</span><span class="sxs-lookup"><span data-stu-id="93bd6-113">Type</span></span> | <span data-ttu-id="93bd6-114">说明</span><span class="sxs-lookup"><span data-stu-id="93bd6-114">Description</span></span> |
 |:-------- |:---- |:----------- |
-| <span data-ttu-id="b10b6-115">id</span><span class="sxs-lookup"><span data-stu-id="b10b6-115">id</span></span> | <span data-ttu-id="b10b6-116">string</span><span class="sxs-lookup"><span data-stu-id="b10b6-116">string</span></span> | <span data-ttu-id="b10b6-117">表示工作分配范围的特定于应用程序的容器或资源的 Id。</span><span class="sxs-lookup"><span data-stu-id="b10b6-117">Id of an app-specific container or resource representing the scope of the assignment.</span></span> <span data-ttu-id="b10b6-118">通常是资源的不可变 id。</span><span class="sxs-lookup"><span data-stu-id="b10b6-118">Usually the immutable id of the resource.</span></span> <span data-ttu-id="b10b6-119">工作分配的范围决定了主体已被授予访问权限的一组资源。</span><span class="sxs-lookup"><span data-stu-id="b10b6-119">The scope of an assignment determines the set of resources for which the principal has been granted access.</span></span> <span data-ttu-id="b10b6-120">此属性是必需的。</span><span class="sxs-lookup"><span data-stu-id="b10b6-120">This property is required.</span></span> |
-| <span data-ttu-id="b10b6-121">type</span><span class="sxs-lookup"><span data-stu-id="b10b6-121">type</span></span> | <span data-ttu-id="b10b6-122">String</span><span class="sxs-lookup"><span data-stu-id="b10b6-122">String</span></span> | <span data-ttu-id="b10b6-123">描述应用程序范围所表示的应用程序特定资源的类型。</span><span class="sxs-lookup"><span data-stu-id="b10b6-123">Describes the type of app-specific resource represented by the app scope.</span></span> <span data-ttu-id="b10b6-124">出于显示目的而提供，因此用户界面可以向用户传达应用程序范围所表示的应用程序特定资源的类型。</span><span class="sxs-lookup"><span data-stu-id="b10b6-124">Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.</span></span> <span data-ttu-id="b10b6-125">此属性是只读的。</span><span class="sxs-lookup"><span data-stu-id="b10b6-125">This property is read only.</span></span> |
-| <span data-ttu-id="b10b6-126">displayName</span><span class="sxs-lookup"><span data-stu-id="b10b6-126">displayName</span></span> | <span data-ttu-id="b10b6-127">string</span><span class="sxs-lookup"><span data-stu-id="b10b6-127">string</span></span> | <span data-ttu-id="b10b6-128">提供应用程序范围所表示的应用程序特定资源的显示名称。</span><span class="sxs-lookup"><span data-stu-id="b10b6-128">Provides the display name of the app-specific resource represented by the app scope.</span></span> <span data-ttu-id="b10b6-129">出于显示目的而提供，因为 appScopeId 通常是不可变且不可读的可读 id。此属性是只读的。</span><span class="sxs-lookup"><span data-stu-id="b10b6-129">Provided for display purposes since appScopeId is often an immutable, non-human-readable id. This property is read only.</span></span> |
+| <span data-ttu-id="93bd6-115">id</span><span class="sxs-lookup"><span data-stu-id="93bd6-115">id</span></span> | <span data-ttu-id="93bd6-116">string</span><span class="sxs-lookup"><span data-stu-id="93bd6-116">string</span></span> | <span data-ttu-id="93bd6-117">表示工作分配范围的特定于应用程序的容器或资源的 Id。</span><span class="sxs-lookup"><span data-stu-id="93bd6-117">Id of an app-specific container or resource representing the scope of the assignment.</span></span> <span data-ttu-id="93bd6-118">通常是资源的不可变 id。</span><span class="sxs-lookup"><span data-stu-id="93bd6-118">Usually the immutable id of the resource.</span></span> <span data-ttu-id="93bd6-119">工作分配的范围决定了主体已被授予访问权限的一组资源。</span><span class="sxs-lookup"><span data-stu-id="93bd6-119">The scope of an assignment determines the set of resources for which the principal has been granted access.</span></span> <span data-ttu-id="93bd6-120">此属性是必需的。</span><span class="sxs-lookup"><span data-stu-id="93bd6-120">This property is required.</span></span> |
+| <span data-ttu-id="93bd6-121">type</span><span class="sxs-lookup"><span data-stu-id="93bd6-121">type</span></span> | <span data-ttu-id="93bd6-122">String</span><span class="sxs-lookup"><span data-stu-id="93bd6-122">String</span></span> | <span data-ttu-id="93bd6-123">描述应用程序范围所表示的应用程序特定资源的类型。</span><span class="sxs-lookup"><span data-stu-id="93bd6-123">Describes the type of app-specific resource represented by the app scope.</span></span> <span data-ttu-id="93bd6-124">出于显示目的而提供，因此用户界面可以向用户传达应用程序范围所表示的应用程序特定资源的类型。</span><span class="sxs-lookup"><span data-stu-id="93bd6-124">Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.</span></span> <span data-ttu-id="93bd6-125">此属性是只读的。</span><span class="sxs-lookup"><span data-stu-id="93bd6-125">This property is read only.</span></span> |
+| <span data-ttu-id="93bd6-126">displayName</span><span class="sxs-lookup"><span data-stu-id="93bd6-126">displayName</span></span> | <span data-ttu-id="93bd6-127">string</span><span class="sxs-lookup"><span data-stu-id="93bd6-127">string</span></span> | <span data-ttu-id="93bd6-128">提供应用程序范围所表示的应用程序特定资源的显示名称。</span><span class="sxs-lookup"><span data-stu-id="93bd6-128">Provides the display name of the app-specific resource represented by the app scope.</span></span> <span data-ttu-id="93bd6-129">出于显示目的而提供，因为 appScopeId 通常是不可变且不可读的可读 id。此属性是只读的。</span><span class="sxs-lookup"><span data-stu-id="93bd6-129">Provided for display purposes since appScopeId is often an immutable, non-human-readable id. This property is read only.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="b10b6-130">关系</span><span class="sxs-lookup"><span data-stu-id="b10b6-130">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="93bd6-130">关系</span><span class="sxs-lookup"><span data-stu-id="93bd6-130">Relationships</span></span>
 
-<span data-ttu-id="b10b6-131">无</span><span class="sxs-lookup"><span data-stu-id="b10b6-131">None</span></span>
+<span data-ttu-id="93bd6-131">无</span><span class="sxs-lookup"><span data-stu-id="93bd6-131">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="b10b6-132">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="b10b6-132">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="93bd6-132">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="93bd6-132">JSON representation</span></span>
 
-<span data-ttu-id="b10b6-133">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b10b6-133">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="93bd6-133">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="93bd6-133">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -65,3 +65,4 @@ ms.locfileid: "43459333"
   "suppressions": []
 }
 -->
+

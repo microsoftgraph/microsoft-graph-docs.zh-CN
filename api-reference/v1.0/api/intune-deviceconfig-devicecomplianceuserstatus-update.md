@@ -3,33 +3,33 @@ title: 更新 deviceComplianceUserStatus
 description: 更新 deviceComplianceUserStatus 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 48bb44bdadd9fa9c3a029d3e4d48982493423057
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5ffe31e3a342a9527872be73ab081cca721dca1b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446156"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051989"
 ---
-# <a name="update-devicecomplianceuserstatus"></a><span data-ttu-id="675ed-103">更新 deviceComplianceUserStatus</span><span class="sxs-lookup"><span data-stu-id="675ed-103">Update deviceComplianceUserStatus</span></span>
+# <a name="update-devicecomplianceuserstatus"></a><span data-ttu-id="803b7-103">更新 deviceComplianceUserStatus</span><span class="sxs-lookup"><span data-stu-id="803b7-103">Update deviceComplianceUserStatus</span></span>
 
-<span data-ttu-id="675ed-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="675ed-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="803b7-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="803b7-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="675ed-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="675ed-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="803b7-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="803b7-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="675ed-106">更新 [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="675ed-106">Update the properties of a [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) object.</span></span>
+<span data-ttu-id="803b7-106">更新 [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="803b7-106">Update the properties of a [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="675ed-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="675ed-107">Prerequisites</span></span>
-<span data-ttu-id="675ed-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="675ed-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="803b7-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="803b7-107">Prerequisites</span></span>
+<span data-ttu-id="803b7-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="803b7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="675ed-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="675ed-110">Permission type</span></span>|<span data-ttu-id="675ed-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="675ed-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="803b7-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="803b7-110">Permission type</span></span>|<span data-ttu-id="803b7-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="803b7-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="675ed-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="675ed-112">Delegated (work or school account)</span></span>|<span data-ttu-id="675ed-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="675ed-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="675ed-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="675ed-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="675ed-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="675ed-115">Not supported.</span></span>|
-|<span data-ttu-id="675ed-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="675ed-116">Application</span></span>|<span data-ttu-id="675ed-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="675ed-117">Not supported.</span></span>|
+|<span data-ttu-id="803b7-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="803b7-112">Delegated (work or school account)</span></span>|<span data-ttu-id="803b7-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="803b7-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="803b7-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="803b7-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="803b7-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="803b7-115">Not supported.</span></span>|
+|<span data-ttu-id="803b7-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="803b7-116">Application</span></span>|<span data-ttu-id="803b7-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="803b7-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="675ed-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="675ed-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="803b7-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="803b7-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,35 +38,35 @@ ms.locfileid: "43446156"
 PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatuses/{deviceComplianceUserStatusId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="675ed-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="675ed-119">Request headers</span></span>
-|<span data-ttu-id="675ed-120">标头</span><span class="sxs-lookup"><span data-stu-id="675ed-120">Header</span></span>|<span data-ttu-id="675ed-121">值</span><span class="sxs-lookup"><span data-stu-id="675ed-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="803b7-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="803b7-119">Request headers</span></span>
+|<span data-ttu-id="803b7-120">标头</span><span class="sxs-lookup"><span data-stu-id="803b7-120">Header</span></span>|<span data-ttu-id="803b7-121">值</span><span class="sxs-lookup"><span data-stu-id="803b7-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="675ed-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="675ed-122">Authorization</span></span>|<span data-ttu-id="675ed-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="675ed-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="675ed-124">接受</span><span class="sxs-lookup"><span data-stu-id="675ed-124">Accept</span></span>|<span data-ttu-id="675ed-125">application/json</span><span class="sxs-lookup"><span data-stu-id="675ed-125">application/json</span></span>|
+|<span data-ttu-id="803b7-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="803b7-122">Authorization</span></span>|<span data-ttu-id="803b7-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="803b7-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="803b7-124">接受</span><span class="sxs-lookup"><span data-stu-id="803b7-124">Accept</span></span>|<span data-ttu-id="803b7-125">application/json</span><span class="sxs-lookup"><span data-stu-id="803b7-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="675ed-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="675ed-126">Request body</span></span>
-<span data-ttu-id="675ed-127">在请求正文中，提供 [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="675ed-127">In the request body, supply a JSON representation for the [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="803b7-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="803b7-126">Request body</span></span>
+<span data-ttu-id="803b7-127">在请求正文中，提供 [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="803b7-127">In the request body, supply a JSON representation for the [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) object.</span></span>
 
-<span data-ttu-id="675ed-128">下表显示了创建 [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="675ed-128">The following table shows the properties that are required when you create the [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md).</span></span>
+<span data-ttu-id="803b7-128">下表显示了创建 [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="803b7-128">The following table shows the properties that are required when you create the [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md).</span></span>
 
-|<span data-ttu-id="675ed-129">属性</span><span class="sxs-lookup"><span data-stu-id="675ed-129">Property</span></span>|<span data-ttu-id="675ed-130">类型</span><span class="sxs-lookup"><span data-stu-id="675ed-130">Type</span></span>|<span data-ttu-id="675ed-131">说明</span><span class="sxs-lookup"><span data-stu-id="675ed-131">Description</span></span>|
+|<span data-ttu-id="803b7-129">属性</span><span class="sxs-lookup"><span data-stu-id="803b7-129">Property</span></span>|<span data-ttu-id="803b7-130">类型</span><span class="sxs-lookup"><span data-stu-id="803b7-130">Type</span></span>|<span data-ttu-id="803b7-131">说明</span><span class="sxs-lookup"><span data-stu-id="803b7-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="675ed-132">id</span><span class="sxs-lookup"><span data-stu-id="675ed-132">id</span></span>|<span data-ttu-id="675ed-133">String</span><span class="sxs-lookup"><span data-stu-id="675ed-133">String</span></span>|<span data-ttu-id="675ed-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="675ed-134">Key of the entity.</span></span>|
-|<span data-ttu-id="675ed-135">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="675ed-135">userDisplayName</span></span>|<span data-ttu-id="675ed-136">String</span><span class="sxs-lookup"><span data-stu-id="675ed-136">String</span></span>|<span data-ttu-id="675ed-137">DevicePolicyStatus 的用户名。</span><span class="sxs-lookup"><span data-stu-id="675ed-137">User name of the DevicePolicyStatus.</span></span>|
-|<span data-ttu-id="675ed-138">devicesCount</span><span class="sxs-lookup"><span data-stu-id="675ed-138">devicesCount</span></span>|<span data-ttu-id="675ed-139">Int32</span><span class="sxs-lookup"><span data-stu-id="675ed-139">Int32</span></span>|<span data-ttu-id="675ed-140">该用户的设备计数。</span><span class="sxs-lookup"><span data-stu-id="675ed-140">Devices count for that user.</span></span>|
-|<span data-ttu-id="675ed-141">status</span><span class="sxs-lookup"><span data-stu-id="675ed-141">status</span></span>|[<span data-ttu-id="675ed-142">complianceStatus</span><span class="sxs-lookup"><span data-stu-id="675ed-142">complianceStatus</span></span>](../resources/intune-shared-compliancestatus.md)|<span data-ttu-id="675ed-143">策略报告的符合性状态。</span><span class="sxs-lookup"><span data-stu-id="675ed-143">Compliance status of the policy report.</span></span> <span data-ttu-id="675ed-144">可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。</span><span class="sxs-lookup"><span data-stu-id="675ed-144">Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span></span>|
-|<span data-ttu-id="675ed-145">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="675ed-145">lastReportedDateTime</span></span>|<span data-ttu-id="675ed-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="675ed-146">DateTimeOffset</span></span>|<span data-ttu-id="675ed-147">策略报告的上次修改日期时间。</span><span class="sxs-lookup"><span data-stu-id="675ed-147">Last modified date time of the policy report.</span></span>|
-|<span data-ttu-id="675ed-148">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="675ed-148">userPrincipalName</span></span>|<span data-ttu-id="675ed-149">字符串</span><span class="sxs-lookup"><span data-stu-id="675ed-149">String</span></span>|<span data-ttu-id="675ed-150">UserPrincipalName。</span><span class="sxs-lookup"><span data-stu-id="675ed-150">UserPrincipalName.</span></span>|
+|<span data-ttu-id="803b7-132">id</span><span class="sxs-lookup"><span data-stu-id="803b7-132">id</span></span>|<span data-ttu-id="803b7-133">String</span><span class="sxs-lookup"><span data-stu-id="803b7-133">String</span></span>|<span data-ttu-id="803b7-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="803b7-134">Key of the entity.</span></span>|
+|<span data-ttu-id="803b7-135">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="803b7-135">userDisplayName</span></span>|<span data-ttu-id="803b7-136">String</span><span class="sxs-lookup"><span data-stu-id="803b7-136">String</span></span>|<span data-ttu-id="803b7-137">DevicePolicyStatus 的用户名。</span><span class="sxs-lookup"><span data-stu-id="803b7-137">User name of the DevicePolicyStatus.</span></span>|
+|<span data-ttu-id="803b7-138">devicesCount</span><span class="sxs-lookup"><span data-stu-id="803b7-138">devicesCount</span></span>|<span data-ttu-id="803b7-139">Int32</span><span class="sxs-lookup"><span data-stu-id="803b7-139">Int32</span></span>|<span data-ttu-id="803b7-140">该用户的设备计数。</span><span class="sxs-lookup"><span data-stu-id="803b7-140">Devices count for that user.</span></span>|
+|<span data-ttu-id="803b7-141">status</span><span class="sxs-lookup"><span data-stu-id="803b7-141">status</span></span>|[<span data-ttu-id="803b7-142">complianceStatus</span><span class="sxs-lookup"><span data-stu-id="803b7-142">complianceStatus</span></span>](../resources/intune-shared-compliancestatus.md)|<span data-ttu-id="803b7-143">策略报告的符合性状态。</span><span class="sxs-lookup"><span data-stu-id="803b7-143">Compliance status of the policy report.</span></span> <span data-ttu-id="803b7-144">可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。</span><span class="sxs-lookup"><span data-stu-id="803b7-144">Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span></span>|
+|<span data-ttu-id="803b7-145">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="803b7-145">lastReportedDateTime</span></span>|<span data-ttu-id="803b7-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="803b7-146">DateTimeOffset</span></span>|<span data-ttu-id="803b7-147">策略报告的上次修改日期时间。</span><span class="sxs-lookup"><span data-stu-id="803b7-147">Last modified date time of the policy report.</span></span>|
+|<span data-ttu-id="803b7-148">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="803b7-148">userPrincipalName</span></span>|<span data-ttu-id="803b7-149">String</span><span class="sxs-lookup"><span data-stu-id="803b7-149">String</span></span>|<span data-ttu-id="803b7-150">UserPrincipalName。</span><span class="sxs-lookup"><span data-stu-id="803b7-150">UserPrincipalName.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="675ed-151">响应</span><span class="sxs-lookup"><span data-stu-id="675ed-151">Response</span></span>
-<span data-ttu-id="675ed-152">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和更新的 [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="675ed-152">If successful, this method returns a `200 OK` response code and an updated [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="803b7-151">响应</span><span class="sxs-lookup"><span data-stu-id="803b7-151">Response</span></span>
+<span data-ttu-id="803b7-152">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和更新的 [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="803b7-152">If successful, this method returns a `200 OK` response code and an updated [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="675ed-153">示例</span><span class="sxs-lookup"><span data-stu-id="675ed-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="803b7-153">示例</span><span class="sxs-lookup"><span data-stu-id="803b7-153">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="675ed-154">请求</span><span class="sxs-lookup"><span data-stu-id="675ed-154">Request</span></span>
-<span data-ttu-id="675ed-155">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="675ed-155">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="803b7-154">请求</span><span class="sxs-lookup"><span data-stu-id="803b7-154">Request</span></span>
+<span data-ttu-id="803b7-155">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="803b7-155">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userStatuses/{deviceComplianceUserStatusId}
 Content-type: application/json
@@ -82,8 +82,8 @@ Content-length: 287
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="675ed-156">响应</span><span class="sxs-lookup"><span data-stu-id="675ed-156">Response</span></span>
-<span data-ttu-id="675ed-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="675ed-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="803b7-156">响应</span><span class="sxs-lookup"><span data-stu-id="803b7-156">Response</span></span>
+<span data-ttu-id="803b7-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="803b7-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -99,6 +99,9 @@ Content-Length: 336
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
 
 
 
