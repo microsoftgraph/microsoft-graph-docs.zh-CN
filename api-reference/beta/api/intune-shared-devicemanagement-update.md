@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75bca64ce38779e0e9c1f905525414e5b0308f81
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d829950fdcbca21145f3bda88c90833eb38831c2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43390050"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022412"
 ---
 # <a name="update-devicemanagement"></a>更新 deviceManagement
 
@@ -28,49 +28,49 @@ ms.locfileid: "43390050"
 
 请注意，该权限根据工作流的不同而有所不同。
 
-| 权限&nbsp;类型&nbsp;（按&nbsp;工作流） | 权限（从最高特权到最低特权） |
+| &nbsp; &nbsp; 工作流)  (的权限类型 &nbsp; | 权限（从最高特权到最低特权） |
 |:---|:---|
 | 委派（工作或学校帐户） ||
-| &nbsp;&nbsp; **适用于工作的 Android** | DeviceManagementConfiguration.ReadWrite.All  |
+| &nbsp;&nbsp;**适用于工作的 Android** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp; &nbsp; **审核** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **公司条款** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp;&nbsp; **设备意向** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; **电子 SIM** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp;&nbsp; **注册** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **防护** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp;&nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;**设备意向** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;**电子 SIM** | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp;&nbsp;**注册** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;**防护** | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp; &nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **策略集** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;**策略集** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **基于角色的访问控制 (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
-| &nbsp;&nbsp; **远程访问** | DeviceManagementConfiguration.Read.All |
-| &nbsp;&nbsp; **远程协助** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **软件更新** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **电信费用管理** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;**远程访问** | DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp;**远程协助** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;**软件更新** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;**电信费用管理** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Windows 信息保护** | DeviceManagementApps.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。|
 | 应用程序 ||
-| &nbsp;&nbsp; **适用于工作的 Android** | DeviceManagementConfiguration.ReadWrite.All  |
+| &nbsp;&nbsp;**适用于工作的 Android** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp; &nbsp; **审核** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **公司条款** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp;&nbsp; **设备意向** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; **电子 SIM** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp;&nbsp; **注册** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **防护** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp;&nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;**设备意向** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;**电子 SIM** | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp;&nbsp;**注册** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;**防护** | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp; &nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **策略集** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;**策略集** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **基于角色的访问控制 (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
-| &nbsp;&nbsp; **远程访问** | DeviceManagementConfiguration.Read.All |
-| &nbsp;&nbsp; **远程协助** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **软件更新** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **电信费用管理** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;**远程访问** | DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp;**远程协助** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;**软件更新** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;**电信费用管理** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Windows 信息保护** | DeviceManagementApps.ReadWrite.All |
 
@@ -98,7 +98,7 @@ PATCH /deviceManagement
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备的唯一标识符。|
+|id|String|设备的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|GUID|给定租户的 Intune 帐户 ID|
 |legacyPcManangementEnabled|Boolean|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
@@ -191,6 +191,9 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
+
+
+
 
 
 

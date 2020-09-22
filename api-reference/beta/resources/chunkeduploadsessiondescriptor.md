@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: MSGraphDocsVteam
-ms.openlocfilehash: a5d01b44624fa530b60641d3086f3b2a1b3dfe63
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d71146ef2c91e05639aa7e179466a7ff7cd36be4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811537"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021954"
 ---
 # <a name="chunkeduploadsessiondescriptor-resource-type"></a>chunkedUploadSessionDescriptor 资源类型
 
@@ -50,3 +50,5 @@ ms.locfileid: "46811537"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

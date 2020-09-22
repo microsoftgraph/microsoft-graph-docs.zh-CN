@@ -3,14 +3,14 @@ title: 获取 windowsWifiEnterpriseEAPConfiguration
 description: 读取 windowsWifiEnterpriseEAPConfiguration 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bfa9f8b6fa28561b437a7ca9e683ffa3342b5b61
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 25ac5eeeb1341625eac815db3dadc6ae5b593db5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46789963"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022559"
 ---
 # <a name="get-windowswifienterpriseeapconfiguration"></a>获取 windowsWifiEnterpriseEAPConfiguration
 
@@ -140,6 +140,9 @@ Content-Length: 2719
   }
 }
 ```
+
+
+
 
 
 

@@ -6,16 +6,16 @@ title: ChoiceColumn
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 8b9b6db64bb1215a4be3fde10bce1a40bb5ffce3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a5e6efa944756077eb29467be6e75013d4bf28aa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507682"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021985"
 ---
 # <a name="choicecolumn-resource-type"></a>ChoiceColumn 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,3 +53,5 @@ ms.locfileid: "42507682"
   "suppressions": []
 }
 -->
+
+

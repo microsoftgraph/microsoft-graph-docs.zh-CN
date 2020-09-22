@@ -5,19 +5,19 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f82194dff2e805fe73d11ad4301a0e2c74347335
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: Auto
+ms.openlocfilehash: 3ff671b2dd15057f3bfc93634f00e2caebe9d3bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897587"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023098"
 ---
 # <a name="riskyuser-confirmcompromised"></a>riskyUser: confirmCompromised
 命名空间：microsoft.graph
 
 >**注意：** RiskyUsers API 需要 Azure AD Premium P2 许可证。
 
-确认一个或多个[riskyUser](../resources/riskyuser.md)对象已泄露。 此操作将目标用户的风险级别设置为 "高"。
+确认一个或多个 [riskyUser](../resources/riskyuser.md) 对象已泄露。 此操作将目标用户的风险级别设置为 "高"。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions_reference)。
@@ -92,4 +92,5 @@ Content-length: 39
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 

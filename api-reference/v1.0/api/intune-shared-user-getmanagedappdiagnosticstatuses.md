@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a6d816da11ce25041d02523eeb647eb4ebd4aec
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b9d02243cad091753083cf2019fca501229e7d24
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43411318"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023112"
 ---
 # <a name="getmanagedappdiagnosticstatuses-function"></a>getManagedAppDiagnosticStatuses 函数
 
@@ -26,7 +26,7 @@ ms.locfileid: "43411318"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）| _因上下文而异_|
-| &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
+| &nbsp;&nbsp;MAM | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -79,6 +79,9 @@ Content-Length: 249
   ]
 }
 ```
+
+
+
 
 
 

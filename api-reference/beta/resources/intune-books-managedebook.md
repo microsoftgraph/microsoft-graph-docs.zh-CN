@@ -3,20 +3,20 @@ title: managedEBook 资源类型
 description: 包含托管电子书基属性的抽象类。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f3bcbd777c87150103fe21495370adddf3afe90
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 01fd5b25e4fb7861ef2ea6e2ddd0c810f706b8f7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43403012"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021789"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -32,8 +32,8 @@ ms.locfileid: "43403012"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
-|displayName|字符串|电子书的名称。|
+|id|String|实体的键。|
+|displayName|String|电子书的名称。|
 |description|String|说明。|
 |publisher|String|发布者。|
 |publishedDateTime|DateTimeOffset|电子书的发布日期和时间。|
@@ -41,12 +41,12 @@ ms.locfileid: "43403012"
 |createdDateTime|DateTimeOffset|电子书文件的创建日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改电子书的日期和时间。|
 |informationUrl|String|详细信息 Url。|
-|privacyInformationUrl|字符串|隐私声明 Url。|
+|privacyInformationUrl|String|隐私声明 Url。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|类别|[managedEBookCategory](../resources/intune-books-managedebookcategory.md)集合|此电子书的类别列表。|
+|类别|[managedEBookCategory](../resources/intune-books-managedebookcategory.md) 集合|此电子书的类别列表。|
 |assignments|[managedEBookAssignment](../resources/intune-books-managedebookassignment.md) 集合|此电子书的分配列表。|
 |installSummary|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|移动应用安装摘要。|
 |deviceStates|[deviceInstallState](../resources/intune-books-deviceinstallstate.md) 集合|此电子书的安装状态列表。|
@@ -79,6 +79,9 @@ ms.locfileid: "43403012"
   "privacyInformationUrl": "String"
 }
 ```
+
+
+
 
 
 

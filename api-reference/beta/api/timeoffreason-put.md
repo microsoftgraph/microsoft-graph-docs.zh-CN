@@ -5,22 +5,22 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6e28a22e7a49d35d7ae0f06affb0652ad37ce538
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9151028749b4e5ea1e8d2d59cb87487fdfc07267
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452279"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022190"
 ---
 # <a name="replace-timeoffreason"></a>替换 timeOffReason
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-替换现有的[timeOffReason](../resources/timeoffreason.md)。
+替换现有的 [timeOffReason](../resources/timeoffreason.md)。
 
-如果指定的[timeOffReason](../resources/timeoffreason.md)不存在，则此方法`404 Not found`返回。
+如果指定的 [timeOffReason](../resources/timeoffreason.md) 不存在，则此方法返回 `404 Not found` 。
 
 ## <a name="permissions"></a>权限
 
@@ -53,11 +53,11 @@ PUT /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[timeOffReason](../resources/timeoffreason.md)对象的 JSON 表示形式。
+在请求正文中，提供 [timeOffReason](../resources/timeoffreason.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[timeOffReason](../resources/timeoffreason.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [timeOffReason](../resources/timeoffreason.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -144,3 +144,5 @@ Content-length: 401
   ]
 }
 -->
+
+

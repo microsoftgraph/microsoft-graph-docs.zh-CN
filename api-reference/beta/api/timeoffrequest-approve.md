@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2819c3dc5882a8e120801d1b5f399541a23d61ba
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: b9d0e253293c15e6e08f118789af2bca1e6c0c32
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44217141"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022174"
 ---
 # <a name="timeoffrequest-approve"></a>timeOffRequest：批准
 
@@ -18,7 +18,7 @@ ms.locfileid: "44217141"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-批准[timeoffrequest](../resources/timeoffrequest.md)。
+批准 [timeoffrequest](../resources/timeoffrequest.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "44217141"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-|Application | 计划的所有写。 *  |
+|应用程序 | 计划的所有写。 *  |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
@@ -118,3 +118,5 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

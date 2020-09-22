@@ -1,24 +1,24 @@
 ---
-title: 列出 servicePrincipals
+title: List servicePrincipals
 description: 检索 servicePrincipal 对象列表。
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: edbd17d4730ead8e230eb7b3b38a547ac199e922
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 49754534525c3328fc2a2793a67b9c8ce5263371
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44382669"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022237"
 ---
-# <a name="list-serviceprincipals"></a>列出 servicePrincipals
+# <a name="list-serviceprincipals"></a>List servicePrincipals
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[servicePrincipal](../resources/serviceprincipal.md)对象的列表。
+检索 [servicePrincipal](../resources/serviceprincipal.md) 对象列表。
 
 ## <a name="permissions"></a>权限
 
@@ -39,14 +39,14 @@ GET /servicePrincipals
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持[OData 查询参数](/graph/query_parameters)，以帮助自定义响应，包括 `$search` 、 `$count` 和 `$filter` 。 您可以 `$search` 在**displayName**属性上使用。 为此资源添加或更新项目时，将对其进行专门编制索引，以便 `$count` 与 `$search` 查询参数一起使用。 在添加或更新项目以及在索引中可用时，可能会出现轻微的延迟。
+此方法支持[OData query parameters](/graph/query_parameters)以帮助自定义响应，包括 `$search`、`$count`、 和 `$filter` `$search`可以用在 **displayName**属性。 为该资源添加或更新项目时，将对它们进行专门索引，以便与 `$count` 和 `$search` 查询参数一起使用。 在添加或更新项目与在索引中可用之间可能会稍有延迟。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称 | 说明 |
 |:---- |:----------- |
 | Authorization | Bearer {token}。必需。 |
-| ConsistencyLevel | 仍然. 此标头 `$count` 在使用时 `$search` 或在 `$filter` 与查询参数一起使用时是必需的 `$orderby` 。 它使用的索引可能不是最新的对象更改。 |
+| ConsistencyLevel | 最终。 当使用 `$search` 或将 `$filter` 与 `$orderby` 查询参数一起使用时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -54,11 +54,11 @@ GET /servicePrincipals
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[servicePrincipal](../resources/serviceprincipal.md)对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [servicePrincipal](../resources/serviceprincipal.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-a-list-of-service-principals"></a>示例1：获取服务主体的列表
+### <a name="example-1-get-a-list-of-service-principals"></a>示例 1：获取服务主体列表
 
 #### <a name="request"></a>请求
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/serviceprincipals
 #### <a name="response"></a>响应
 
 下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -116,7 +116,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-service-principals"></a>示例2：仅获取服务主体的计数
+### <a name="example-2-get-only-a-count-of-service-principals"></a>示例 2：仅获取服务主体的计数
 
 #### <a name="request"></a>请求
 
@@ -149,7 +149,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- {
   "blockType": "response",
@@ -165,7 +165,7 @@ Content-type: text/plain
 893
 
 
-### <a name="example-3-use-filter-and-top-to-get-one-service-principal-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例3：使用 $filter 和 $top 获取一个具有以 "a" 开头的显示名称的服务主体，其中包含返回对象的计数
+### <a name="example-3-use-filter-and-top-to-get-one-service-principal-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>示例 3：使用 $filter 和 $top 获取一个显示名称以“a”开头的服务主体，其中包括返回的对象数
 
 #### <a name="request"></a>请求
 
@@ -210,7 +210,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-search-to-get-service-principals-with-display-names-that-contain-the-letters-team-including-a-count-of-returned-objects"></a>示例4：使用 $search 获取显示名称包含字母 "Team" 的服务主体，其中包括返回对象的计数
+### <a name="example-4-use-search-to-get-service-principals-with-display-names-that-contain-the-letters-team-including-a-count-of-returned-objects"></a>示例 4：使用 $search 获取显示名称中包含字母“Team”的服务主体，其中包括返回的对象数
 
 #### <a name="request"></a>请求
 
@@ -283,3 +283,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

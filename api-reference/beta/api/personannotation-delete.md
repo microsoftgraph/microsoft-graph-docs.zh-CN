@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 5f9bf692b7e386ca47042ee763fa0d9e57f86fea
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b7aa573e5579d2387a1a93e7ff7bac44a398db4f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809614"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022279"
 ---
 # <a name="delete-personannotation"></a>删除 personAnnotation
 命名空间：microsoft.graph
@@ -86,3 +86,5 @@ DELETE https://graph.microsoft.com/beta/user/{userId}/profile/notes/{id}
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+

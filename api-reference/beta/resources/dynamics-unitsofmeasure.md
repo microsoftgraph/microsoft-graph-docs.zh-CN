@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 9b0774f24109f40684039bd8ac98188903f28c3d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 97fb9fd7f36042a2ff056570e5e05330ff2e60a9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42503010"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021926"
 ---
 # <a name="unitsofmeasure-resource-type"></a>unitsOfMeasure 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,7 +46,7 @@ ms.locfileid: "42503010"
 
 ## <a name="json-representation"></a>JSON 表示形式
 
-下面是**unitsOfMeasure**资源的 JSON 表示形式。
+下面是 **unitsOfMeasure** 资源的 JSON 表示形式。
 
 ```json
 {
@@ -58,3 +58,5 @@ ms.locfileid: "42503010"
 }
 
 ```
+
+

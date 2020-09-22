@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 6f642c8efeb56be75fc6f3f0639c56753401b928
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 55e3d63d48b4a1c443eafefc047aad9b9bf23be5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809220"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022055"
 ---
 # <a name="delete-webaccount"></a>删除 webAccount
 
@@ -95,3 +95,5 @@ DELETE https://graph.microsoft.com/beta/me/profile/webAccounts/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+
+

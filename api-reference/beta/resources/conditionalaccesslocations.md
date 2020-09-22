@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a92d99d7a9e80084b8ec1ce385ce76d1f522b359
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 2a6b4175decf2d4985d17b64014b09d9299af06e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916780"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021950"
 ---
 # <a name="conditionalaccesslocations-resource-type"></a>conditionalAccessLocations 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "43916780"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| includeLocations | String 集合 | 除非明确排除、 `All`或`AllTrusted`，否则策略范围中的位置 id。 |
+| includeLocations | String 集合 | 除非明确排除、或，否则策略范围中的位置 Id `All` `AllTrusted` 。 |
 | excludeLocations | String 集合 | 从策略范围中排除的位置 Id。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -61,3 +61,4 @@ ms.locfileid: "43916780"
   "section": "documentation",
   "tocPath": ""
 }-->
+

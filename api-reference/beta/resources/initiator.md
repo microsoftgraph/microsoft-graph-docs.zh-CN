@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6d279ce00855cb8125085e48bddf63f1b8f0e5e2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c0b6b326925d0ca3f0dbf8c0c25df266834ecce6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461725"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021908"
 ---
 # <a name="initiator-resource-type"></a>发起程序资源类型
 
@@ -58,3 +58,5 @@ ms.locfileid: "43461725"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: Profile
 doc_type: apiPageType
-ms.openlocfilehash: e39d4411e07d130b8974f6ff51a108acbb8da3cf
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 1c67ccd6c5e248265cdab14933b6728250681a8f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809210"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022071"
 ---
 # <a name="get-useraccountinformation"></a>获取 userAccountInformation
 
@@ -116,3 +116,5 @@ Content-type: application/json
   "userPrincipalName": "innocenty.popov@adventureworks.com"
 }
 ```
+
+

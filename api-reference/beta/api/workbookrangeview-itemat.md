@@ -5,16 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5d6423e8899d9bc07038cf72ef453a87c44f53ba
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 02e46192fa77009a25e9f8fe8158e544c970baeb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451327"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022034"
 ---
 # <a name="workbookrangeview-itemat"></a>workbookRangeView: itemAt
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -84,3 +84,5 @@ Content-length: 194
   "index": 99
 }
 ```
+
+
