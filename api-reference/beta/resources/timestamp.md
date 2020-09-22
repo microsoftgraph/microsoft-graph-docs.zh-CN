@@ -5,24 +5,24 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: JeremyKelley
-ms.openlocfilehash: 1037212f1adb0fb10326bbdf88416877e16a9fbe
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 295c4c8b4cee6ba476b5bae57ebd71de8d107c1c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810991"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075396"
 ---
-# <a name="timestamp-resource-type"></a><span data-ttu-id="431e3-103">时间戳资源类型</span><span class="sxs-lookup"><span data-stu-id="431e3-103">timeStamp resource type</span></span>
+# <a name="timestamp-resource-type"></a><span data-ttu-id="be5bc-103">时间戳资源类型</span><span class="sxs-lookup"><span data-stu-id="be5bc-103">timeStamp resource type</span></span>
 
-<span data-ttu-id="431e3-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="431e3-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="be5bc-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="be5bc-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="431e3-105">时间点的日期和时间信息。</span><span class="sxs-lookup"><span data-stu-id="431e3-105">Date and time information for a point in time.</span></span>
+<span data-ttu-id="be5bc-105">时间点的日期和时间信息。</span><span class="sxs-lookup"><span data-stu-id="be5bc-105">Date and time information for a point in time.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="431e3-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="431e3-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="be5bc-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="be5bc-106">JSON representation</span></span>
 
-<span data-ttu-id="431e3-107">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="431e3-107">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="be5bc-107">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="be5bc-107">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -40,12 +40,12 @@ ms.locfileid: "46810991"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="431e3-108">属性</span><span class="sxs-lookup"><span data-stu-id="431e3-108">Properties</span></span>
-| <span data-ttu-id="431e3-109">属性</span><span class="sxs-lookup"><span data-stu-id="431e3-109">Property</span></span>     | <span data-ttu-id="431e3-110">类型</span><span class="sxs-lookup"><span data-stu-id="431e3-110">Type</span></span>   |<span data-ttu-id="431e3-111">说明</span><span class="sxs-lookup"><span data-stu-id="431e3-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="be5bc-108">属性</span><span class="sxs-lookup"><span data-stu-id="be5bc-108">Properties</span></span>
+| <span data-ttu-id="be5bc-109">属性</span><span class="sxs-lookup"><span data-stu-id="be5bc-109">Property</span></span>     | <span data-ttu-id="be5bc-110">类型</span><span class="sxs-lookup"><span data-stu-id="be5bc-110">Type</span></span>   |<span data-ttu-id="be5bc-111">说明</span><span class="sxs-lookup"><span data-stu-id="be5bc-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="431e3-112">date</span><span class="sxs-lookup"><span data-stu-id="431e3-112">date</span></span>|<span data-ttu-id="431e3-113">Date</span><span class="sxs-lookup"><span data-stu-id="431e3-113">Date</span></span>|<span data-ttu-id="431e3-114">时间戳的日期部分。</span><span class="sxs-lookup"><span data-stu-id="431e3-114">The date portion of the timestamp.</span></span>|
-|<span data-ttu-id="431e3-115">time</span><span class="sxs-lookup"><span data-stu-id="431e3-115">time</span></span>|<span data-ttu-id="431e3-116">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="431e3-116">TimeOfDay</span></span>|<span data-ttu-id="431e3-117">时间戳的时间部分。</span><span class="sxs-lookup"><span data-stu-id="431e3-117">The time portion of the timestamp.</span></span>|
-|<span data-ttu-id="431e3-118">timeZone</span><span class="sxs-lookup"><span data-stu-id="431e3-118">timeZone</span></span>|<span data-ttu-id="431e3-119">String</span><span class="sxs-lookup"><span data-stu-id="431e3-119">String</span></span>|<span data-ttu-id="431e3-120">时间戳的时区部分，是世界上的 24 longitudinal 区域之一。</span><span class="sxs-lookup"><span data-stu-id="431e3-120">The timezone portion of the timestamp, which is one of the 24 longitudinal areas in the world.</span></span>|
+|<span data-ttu-id="be5bc-112">date</span><span class="sxs-lookup"><span data-stu-id="be5bc-112">date</span></span>|<span data-ttu-id="be5bc-113">Date</span><span class="sxs-lookup"><span data-stu-id="be5bc-113">Date</span></span>|<span data-ttu-id="be5bc-114">时间戳的日期部分。</span><span class="sxs-lookup"><span data-stu-id="be5bc-114">The date portion of the timestamp.</span></span>|
+|<span data-ttu-id="be5bc-115">time</span><span class="sxs-lookup"><span data-stu-id="be5bc-115">time</span></span>|<span data-ttu-id="be5bc-116">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="be5bc-116">TimeOfDay</span></span>|<span data-ttu-id="be5bc-117">时间戳的时间部分。</span><span class="sxs-lookup"><span data-stu-id="be5bc-117">The time portion of the timestamp.</span></span>|
+|<span data-ttu-id="be5bc-118">timeZone</span><span class="sxs-lookup"><span data-stu-id="be5bc-118">timeZone</span></span>|<span data-ttu-id="be5bc-119">String</span><span class="sxs-lookup"><span data-stu-id="be5bc-119">String</span></span>|<span data-ttu-id="be5bc-120">时间戳的时区部分，是世界上的 24 longitudinal 区域之一。</span><span class="sxs-lookup"><span data-stu-id="be5bc-120">The timezone portion of the timestamp, which is one of the 24 longitudinal areas in the world.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -59,3 +59,5 @@ ms.locfileid: "46810991"
   "suppressions": []
 }
 -->
+
+
