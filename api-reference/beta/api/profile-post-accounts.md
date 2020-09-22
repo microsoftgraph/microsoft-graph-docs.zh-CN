@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 67e77365f4ad46a48aac49ba8733093df5a758ce
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: bddb2367a3f5c595fbca2609e9ec42cce7a677be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812914"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034529"
 ---
 # <a name="create-account"></a>创建帐户
 命名空间：microsoft.graph
@@ -134,3 +134,5 @@ Content-Type: application/json
   "userPrincipalName": "innocenty.popov@adventureworks.com"
 }
 ```
+
+

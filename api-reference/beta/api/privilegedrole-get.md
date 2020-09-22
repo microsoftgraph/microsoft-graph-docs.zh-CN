@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: efaa5ae2fbf0f2a9089352a97285780f38c1b713
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: a3dcdff7395d3ec531dec9fd38686430c707995a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218769"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035174"
 ---
 # <a name="get-privilegedrole"></a>获取 privilegedRole
 
@@ -18,12 +18,12 @@ ms.locfileid: "43218769"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[privilegedRole](../resources/privilegedrole.md)对象的属性和关系。 
+检索 [privilegedRole](../resources/privilegedrole.md) 对象的属性和关系。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-请求者需要具有以下角色之一：_特权角色管理员_、_全局管理员_、_安全管理员_或_安全读者_。
+请求者需要具有以下角色之一： _特权角色管理员_、 _全局管理员_、 _安全管理员_或 _安全读者_。
  
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -51,7 +51,7 @@ GET /privilegedRoleAssignments/{id}/roleInfo
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[privilegedRole](../resources/privilegedrole.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [privilegedRole](../resources/privilegedrole.md) 对象。
 
 请注意，需要将租户注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
 ## <a name="example"></a>示例
@@ -111,3 +111,5 @@ Content-length: 46
   ]
 }
 -->
+
+

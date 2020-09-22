@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: ddfdd14ab941b364161f335e1b9ee7fc2d6e0cd1
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 526853a4a902848731f17231e186e9a7f708e981
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674356"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035640"
 ---
 # <a name="list-tasktriggers"></a>List taskTriggers
 
@@ -118,3 +118,5 @@ Content-length: 254
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

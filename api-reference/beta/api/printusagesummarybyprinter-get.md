@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: universal-print
 ms.date: 2/4/2020
 doc_type: apiPageType
-ms.openlocfilehash: 7849fc956168b15b19b932bdc3acb6c32d71c5ea
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 54b62ecab5016970f5c9e3034207e38e13fcef92
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673957"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035230"
 ---
 # <a name="get-printusagesummarybyprinter"></a>获取 printUsageSummaryByPrinter
 
@@ -95,3 +95,4 @@ Content-length: 269
   "section": "documentation",
   "tocPath": ""
 }-->
+

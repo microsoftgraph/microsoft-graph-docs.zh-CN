@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d3cc5ddce32e6c892a45638d0616ea1415256d0a
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: f3a3673e098c67ac3bf7b01a3d607e38afe95add
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673887"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035629"
 ---
 # <a name="create-tasktrigger"></a>Create taskTrigger
 
@@ -21,7 +21,7 @@ ms.locfileid: "46673887"
 在指定的[打印机](../resources/printer.md)上创建新的[任务触发器](../resources/printtasktrigger.md)。 目前，每台打印机只能指定 **一个** 任务触发器，但将来可以删除此限制。 此外，只有注册打印机的应用程序可以管理其任务触发器。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户的租户还必须具有活动的通用打印订阅。 登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
@@ -104,3 +104,5 @@ Content-length: 196
   "event": "jobStarted"
 }
 ```
+
+

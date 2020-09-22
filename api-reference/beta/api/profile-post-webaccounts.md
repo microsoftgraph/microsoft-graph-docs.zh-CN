@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b1bcf743737616ac5c48d3b8c3132b57d11464ac
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 23990dd1022985a91953d714eeab5f886b5cca6d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812195"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034341"
 ---
 # <a name="create-webaccount"></a>创建 webAccount
 
@@ -61,7 +61,7 @@ POST /users/{id | userPrincipalName}/profile/webAccounts
 |source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |statusMessage|String|包含来自云服务的状态邮件（如果提供或已同步）。 |
 |userId|String|为 webaccount 显示的用户名。  |
-|webUrl|String|包含指向云服务上的用户配置文件的链接（如果存在）。|
+|WebUrl|String|包含指向云服务上的用户配置文件的链接（如果存在）。|
 
 ## <a name="response"></a>响应
 
@@ -156,3 +156,5 @@ Content-type: application/json
   "webUrl": "https://github.com/innocenty.popov"
 }
 ```
+
+

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 85c84a9bf6b70de1103b8e07d33859146ac51962
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 311236ed0c34064291db93731c5ad8bb62c242a3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674183"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035468"
 ---
 # <a name="printjob-cancelprintjob"></a>printJob: cancelPrintJob
 
@@ -94,3 +94,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

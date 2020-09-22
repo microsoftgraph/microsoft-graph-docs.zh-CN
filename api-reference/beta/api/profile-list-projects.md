@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 338f1830f321ac470d5075fd5e885c80d7a5c272
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 1ccf2b2c4498cba63e2055b5cd0c0649441314e1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810677"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034661"
 ---
 # <a name="list-projects"></a>列出项目
 
@@ -171,3 +171,5 @@ Content-type: application/json
   ]
 }
 ```
+
+

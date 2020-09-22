@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 5d4163b8932278a4679ca553875ccf8658a925d9
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 727d3d1f061f01196ac6382ca80f8d9a3c0c8000
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218736"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035074"
 ---
 # <a name="delete-privilegedroleassignment"></a>Delete privilegedRoleAssignment
 
@@ -18,11 +18,11 @@ ms.locfileid: "43218736"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除[privilegedRoleAssignment](../resources/privilegedroleassignment.md)。
-## <a name="permissions"></a>Permissions
+删除 [privilegedRoleAssignment](../resources/privilegedroleassignment.md)。
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-请求者需要具有_特权角色管理员_角色。
+请求者需要具有 _特权角色管理员_ 角色。
  
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -37,7 +37,7 @@ ms.locfileid: "43218736"
 DELETE /privilegedRoleAssignments/{id}
 ```
 
-``{id}``请注意，格式为 "userId_roleId"，其中 UserId 是 azure AD 用户 ID 的 guid 字符串，RoleId 是 azure 管理员角色 ID 的 guid 字符串。
+请注意， ``{id}`` 格式为 "userId_roleId"，其中 userId 是 AZURE AD 用户 id 的 guid 字符串，roleId 是 azure 管理员角色 id 的 guid 字符串。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
@@ -101,3 +101,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

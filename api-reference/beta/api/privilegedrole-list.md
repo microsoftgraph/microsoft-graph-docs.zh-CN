@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: a5d8d6f35d21bcabd19b1888124e9533b22ae702
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: ad90e326f53b4ff0080d249797e0de1751ebb1c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218757"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035111"
 ---
 # <a name="list-privilegedroles"></a>列出 privilegedRoles
 
@@ -18,13 +18,13 @@ ms.locfileid: "43218757"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[privilegedRole](../resources/privilegedrole.md)对象的列表。
+检索 [privilegedRole](../resources/privilegedrole.md) 对象的列表。
 
 若要筛选查询中的结果，请在 URL 中使用标准 OData ``$filter`` 表达式。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-请求者需要具有以下角色之一：_特权角色管理员_、_全局管理员_、_安全管理员_或_安全读者_。
+请求者需要具有以下角色之一： _特权角色管理员_、 _全局管理员_、 _安全管理员_或 _安全读者_。
  
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -51,7 +51,7 @@ GET /privilegedRoles
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[privilegedRole](../resources/privilegedrole.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [privilegedRole](../resources/privilegedrole.md) 对象集合。
 
 请注意，需要将租户注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
 ## <a name="example"></a>示例
@@ -116,3 +116,5 @@ Content-length: 83
   ]
 }
 -->
+
+

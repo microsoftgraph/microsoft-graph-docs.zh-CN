@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 370e0b738b00c6fa7be404a036db4679cf49638a
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 371c76738833eeabfafb68b1b8c6816f831e32ef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674034"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035615"
 ---
 # <a name="printer-resetdefaults"></a>打印机： resetDefaults
 
@@ -94,3 +94,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

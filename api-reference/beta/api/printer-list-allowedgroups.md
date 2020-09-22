@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 834adaf0aa575f0b1bc0d4df8017f3ee6bdf80c0
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: e8e661a8a6fd388b8ddf7a611ae9401d01cc7601
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673894"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035757"
 ---
 # <a name="list-allowedgroups-for-printer"></a>列出打印机的 allowedGroups
 
@@ -109,3 +109,5 @@ Content-length: 233
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

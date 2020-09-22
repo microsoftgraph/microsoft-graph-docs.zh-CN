@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 93501ddef6d24432f6569e535ef3231bafe4dd51
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 0bb661870b69565d1f692dc2d5406224112968d8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46565166"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035332"
 ---
 # <a name="list-tasks"></a>列出任务
 
@@ -20,7 +20,7 @@ ms.locfileid: "46565166"
 
 检索与[任务定义](../resources/printtaskdefinition.md)关联的[任务](../resources/printtask.md)列表。
 
-有关如何使用此 API 将拉取打印支持添加到通用打印的详细信息，请参阅[扩展通用打印以支持请求打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
+有关如何使用此 API 将拉取打印支持添加到通用打印的详细信息，请参阅 [扩展通用打印以支持请求打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -31,7 +31,7 @@ ms.locfileid: "46565166"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| 不支持。 |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| PrintTaskDefinition |
+|应用程序| PrintTaskDefinition.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -53,7 +53,7 @@ GET /print/taskDefinitions/{id}/tasks
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[printTask](../resources/printtask.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [printTask](../resources/printtask.md) 对象集合。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面展示了示例请求。
@@ -122,3 +122,5 @@ Content-length: 429
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

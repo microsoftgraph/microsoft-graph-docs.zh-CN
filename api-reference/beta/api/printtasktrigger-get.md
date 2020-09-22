@@ -1,18 +1,18 @@
 ---
-title: 获取 taskTrigger
+title: Get taskTrigger
 description: 从打印机中获取任务触发器。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: aeb7d5481a550ac3e9223023aaef92ed009eb85e
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: Auto
+ms.openlocfilehash: c24e5207b1bb9b791a98c1d5c87971797b807809
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091566"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035251"
 ---
-# <a name="get-tasktrigger"></a>获取 taskTrigger
+# <a name="get-tasktrigger"></a>Get taskTrigger
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "45091566"
 
 从[打印机](../resources/printer.md)中获取[任务触发器](../resources/printtasktrigger.md)。
 
-有关如何使用此 API 将拉取打印支持添加到通用打印的详细信息，请参阅[扩展通用打印以支持请求打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
+有关如何使用此 API 将拉取打印支持添加到通用打印的详细信息，请参阅 [扩展通用打印以支持请求打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,11 +47,13 @@ GET /print/printers/{id}/taskTriggers/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[printTaskTrigger](../resources/printtasktrigger.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [printTaskTrigger](../resources/printtasktrigger.md) 对象。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面展示了示例请求。
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_printer_tasktrigger"
@@ -59,6 +61,20 @@ GET /print/printers/{id}/taskTriggers/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/{printerId}/taskTriggers/{taskTriggerId}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-printer-tasktrigger-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-printer-tasktrigger-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-printer-tasktrigger-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
@@ -91,3 +107,5 @@ Content-length: 181
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

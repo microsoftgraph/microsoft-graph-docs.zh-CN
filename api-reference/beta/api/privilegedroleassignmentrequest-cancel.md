@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 674b89cc122c51a4532d445ff8499a4194aa63ab
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: abb1bbd8c7d8c866ab1149d7a3c2ed810dcc4fde
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218687"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034985"
 ---
 # <a name="cancel-privilegedroleassignmentrequest"></a>取消 privilegedRoleAssignmentRequest
 
@@ -18,9 +18,9 @@ ms.locfileid: "43218687"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-取消[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)。
+取消 [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -45,7 +45,7 @@ POST /privilegedRoleAssignmentRequests({requestid})/cancel
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `200 Ok` 响应代码。 它在响应正文中返回[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 。
+如果成功，此方法返回 `200 Ok` 响应代码。 它在响应正文中返回 [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 。
 
 ### <a name="error-codes"></a>错误代码
 此 API 返回标准的 HTTP 错误代码。 此外，它还返回下表中列出的自定义错误代码。
@@ -131,3 +131,5 @@ Content-length: 304
   ]
 }
 -->
+
+

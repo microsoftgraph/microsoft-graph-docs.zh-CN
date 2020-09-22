@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 2236e366e18941d81edcf1d2bdb4d4bf9b9823dd
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 43aa46f8ceb13f59be157279f87dca0ad5c8790b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673736"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035618"
 ---
 # <a name="create-printjob"></a>创建 printJob
 
@@ -21,7 +21,7 @@ ms.locfileid: "46673736"
 为[打印机](../resources/printer.md)创建新的[printJob](../resources/printJob.md) 。 
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 除了以下权限之外，用户或应用程序的租户必须具有活动的通用打印订阅，并且具有授予 [获取打印机](printer-get.md) 访问权限的权限。 登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
@@ -101,3 +101,5 @@ Content-length: 425
   ]
 }
 ```
+
+

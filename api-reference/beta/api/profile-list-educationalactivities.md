@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 7ee6eb45776b00d04a3b7d51a38411d3e515f9ad
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: eba7fb19503de2d99a37ddd9799c7caf37aa31fd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811656"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034790"
 ---
 # <a name="list-educationalactivities"></a>列出 educationalActivities
 
@@ -169,3 +169,5 @@ Content-type: application/json
   ]
 }
 ```
+
+

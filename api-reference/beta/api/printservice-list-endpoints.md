@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c5e7f9ccc5348018269db227ccf620406807462f
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 1da253e7e8909f69ed738cc98842a619ee2c1c3e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674139"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035356"
 ---
 # <a name="list-printserviceendpoints"></a>列出 printServiceEndpoints
 
@@ -108,3 +108,5 @@ Content-length: 305
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

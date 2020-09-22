@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 436eed58d6f66212ad87bfaf489767807987d41e
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 46938229882213a818416df37b7a3edb1f9d3336
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812958"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034845"
 ---
 # <a name="list-accounts"></a>列表帐户
 
@@ -147,3 +147,5 @@ Content-type: application/json
   ]
 }
 ```
+
+

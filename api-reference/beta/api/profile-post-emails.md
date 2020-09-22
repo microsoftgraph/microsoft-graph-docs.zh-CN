@@ -1,16 +1,16 @@
 ---
 title: 创建 itemEmail
-description: 新建 itemEmail。
+description: 创建新的 itemEmail。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 3577a0daa807c7f5016ae34b22174ffd1c2fe813
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: de684a581eb9c36cc1763cb557523a7b10ca2c06
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819526"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034493"
 ---
 # <a name="create-itememail"></a>创建 itemEmail
 
@@ -18,7 +18,7 @@ ms.locfileid: "46819526"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在用户配置文件 [中新建 itemEmail](../resources/itememail.md) [对象](../resources/profile.md)。
+在用户的[配置文件](../resources/profile.md)中创建新的[itemEmail](../resources/itememail.md)对象。
 
 ## <a name="permissions"></a>权限
 
@@ -26,8 +26,8 @@ ms.locfileid: "46819526"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All          |
-| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All          |
+| 委派（工作或学校帐户）     | 所有用户读写。          |
+| 委派（个人 Microsoft 帐户） | 所有用户读写。          |
 | 应用程序                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -50,22 +50,22 @@ POST /users/{id | userPrincipalName}/profile/emails
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [itemEmail](../resources/itememail.md) 对象的 JSON 表示形式。
 
-下表显示了在用户的配置文件中创建新 [itemEmail](../resources/itememail.md) 对象时可能设置 [的属性](../resources/profile.md)。
+下表显示了在用户[配置文件](../resources/profile.md)中创建新的[itemEmail](../resources/itememail.md)对象时可以设置的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |address|String|电子邮件地址本身。|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|displayName|String|用户与特定电子邮件地址关联的名称或标签。|
-|推据|[inferenceData](../resources/inferencedata.md)|如果实体受到创建或修改的应用程序的推理，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|source|[personDataSource](../resources/persondatasource.md)|同步到其他服务时从哪个位置发送值。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|displayName|String|用户与特定电子邮件地址相关联的名称或标签。|
+|推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
+|source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |type|emailType|电子邮件地址的类型。 可取值为：`unknown`、`work`、`personal`、`main`、`other`。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回响应代码和 [itemEmail](../resources/itememail.md) 对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [itemEmail](../resources/itememail.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -137,3 +137,5 @@ Content-Type: application/json
   "type": null
 }
 ```
+
+

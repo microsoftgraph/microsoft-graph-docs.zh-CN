@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a4b8e5c3a3ccd32d75505c0eba5da762ec60b2aa
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d5de0db3f1a1ba8244908100fe9f4e16765c441c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810627"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034630"
 ---
 # <a name="list-skills"></a>列表技能
 
@@ -151,3 +151,5 @@ Content-type: application/json
   ]
 }
 ```
+
+

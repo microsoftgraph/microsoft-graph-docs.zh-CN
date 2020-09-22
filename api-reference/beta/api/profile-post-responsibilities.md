@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 272424204c0fd9f7d3d970ad66fed3fe77e9ad68
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 9c0907217bd75b79bc7e200dfc5d9deb901a2bfe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812909"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034343"
 ---
 # <a name="create-personresponsibility"></a>创建 personResponsibility
 命名空间：microsoft.graph
@@ -52,12 +52,12 @@ POST /users/{id | userPrincipalName}/profile/responsibilities
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|collaborationTags|字符串集合|包含用户与兴趣相关的体验方案标记。 集合中允许的值为： `askMeAbout` 、 `ableToMentor` 、 `wantsToLearn` 、 `wantsToImprove` 。|
+|collaborationTags|String 集合|包含用户与兴趣相关的体验方案标记。 集合中允许的值为： `askMeAbout` 、 `ableToMentor` 、 `wantsToLearn` 、 `wantsToImprove` 。|
 |description|String|责任的说明。|
 |displayName|String|包含责任的友好名称。 |
 |推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|webUrl|String|包含指向有关责任的网页或资源的链接。|
+|WebUrl|String|包含指向有关责任的网页或资源的链接。|
 
 ## <a name="response"></a>响应
 
@@ -141,3 +141,5 @@ Content-Type: application/json
   ]
 }
 ```
+
+

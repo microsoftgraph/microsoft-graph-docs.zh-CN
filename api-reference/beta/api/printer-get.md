@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c98ecee9c0dfa075831c0df5cee9142540b58e1a
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 7529c9c7b34884c68af01d73e0bf20a30bb3d3d8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674440"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035759"
 ---
 # <a name="get-printer"></a>获取打印机
 
@@ -149,3 +149,5 @@ Content-length: 1313
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

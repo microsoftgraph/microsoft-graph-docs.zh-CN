@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: daff07214fb8c9346d15fd1ebbb8151189cbef0d
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 0954dab90dd43f4afdc6ed384ec8e2f540cc1dd0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218673"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034951"
 ---
 # <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest： my
 
@@ -20,7 +20,7 @@ ms.locfileid: "43218673"
 
 获取请求者的特权角色分配请求。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -46,7 +46,7 @@ POST /privilegedRoleAssignmentRequests/my
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在`200 OK`响应正文中返回响应代码和[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)集合对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 集合对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -155,3 +155,5 @@ Content-length: 304
   ]
 }
 -->
+
+

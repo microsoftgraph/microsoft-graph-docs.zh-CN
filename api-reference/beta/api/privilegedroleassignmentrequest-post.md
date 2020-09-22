@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: afc7251bafdb6570eca801abc41ff39216d7381b
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 0184824c47bc13120122df15b4c2473e0ad3cb12
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218666"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034934"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>创建 privilegedRoleAssignmentRequest
 
@@ -18,9 +18,9 @@ ms.locfileid: "43218666"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建[privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)对象。
+创建 [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -41,18 +41,18 @@ POST /privilegedRoleAssignmentRequests
 | Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)对象的 JSON 表示形式。 
+在请求正文中，提供 [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) 对象的 JSON 表示形式。 
 
 | 属性     | 类型    |  说明|
 |:---------------|:--------|:----------|
-|roleId|字符串|角色的 ID。 此为必需属性。|
-|type|字符串|表示角色分配上的操作的类型。 值可以是`AdminAdd`： Administrators 将用户添加到角色;`UserAdd`：用户添加角色分配。 必需。|
-|assignmentState|字符串|工作分配的状态。 此值可`Eligible`用于符合条件的`Active`工作分配-如果是由`Active`管理员直接分配的，或者是由用户的符合条件的工作分配激活的。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必需。|
-|reason|字符串|需要为角色分配请求提供审核和审阅目的的原因。|
+|roleId|String|角色的 ID。 此为必需属性。|
+|type|String|表示角色分配上的操作的类型。 值可以是 `AdminAdd` ： Administrators 将用户添加到角色; `UserAdd` ：用户添加角色分配。 必需。|
+|assignmentState|String|工作分配的状态。 此值可 `Eligible` 用于符合条件的工作分配 `Active` -如果是由管理员直接分配的 `Active` ，或者是由用户的符合条件的工作分配激活的。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必需。|
+|reason|String|需要为角色分配请求提供审核和审阅目的的原因。|
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|角色分配请求的日程安排。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) 对象。
 
 ### <a name="error-codes"></a>错误代码
 此 API 返回该标准 HTTP 错误代码。 此外，它还可以返回下表中列出的错误代码。
@@ -165,3 +165,5 @@ Content-length: 304
   ]
 }
 -->
+
+

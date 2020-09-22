@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d442f39a0327c511a105b420fd57b775c6f06853
-ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
+ms.openlocfilehash: ea0cc63521ccaac667abe5ef62baf47cabb4c152
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "47400405"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035642"
 ---
 # <a name="list-printjobs"></a>列出 printJobs
 
@@ -31,7 +31,7 @@ ms.locfileid: "47400405"
 |:---------------|:--------------------------------------------|
 |委派（工作或学校帐户）| PrintJob、PrintJob、user.readbasic.all、PrintJob、PrintJob、ReadWriteBasic、all、PrintJob、PrintJob、ReadWriteBasic、PrintJob、、、、all |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application| PrintJob、PrintJob、PrintJob、all、all、All 和 All。 |
+|应用程序| PrintJob、PrintJob、PrintJob、all、all、All 和 All。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -122,3 +122,5 @@ Content-length: 461
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

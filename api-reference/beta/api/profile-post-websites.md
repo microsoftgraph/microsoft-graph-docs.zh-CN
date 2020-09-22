@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: becee4f5812c339bb7149b18b57def91b1a4e695
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 7a5d3dc4e3558e936aa299a8c93a8a62337e9a20
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810053"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034334"
 ---
 # <a name="create-personwebsite"></a>创建 personWebsite
 
@@ -55,12 +55,12 @@ POST /users/{id | userPrincipalName}/profile/websites
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|categories|String collection|包含用户与网站相关联的类别 (例如，个人、食谱) 。|
+|类别|String 集合|包含用户与网站相关联的类别 (例如，个人、食谱) 。|
 |description|String|包含网站的说明。|
 |displayName|String|包含网站的友好名称。|
 |推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|webUrl|String|包含指向网站本身的链接。|
+|WebUrl|String|包含指向网站本身的链接。|
 
 ## <a name="response"></a>响应
 
@@ -151,3 +151,5 @@ Content-type: application/json
   "webUrl": "www.lyndamer.no"
 }
 ```
+
+

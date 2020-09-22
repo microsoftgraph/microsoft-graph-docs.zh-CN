@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 79891be7aa63269cb0d1f96393756f9d41d046d0
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 1beddad763dbe4f7d70ffeeeef0c5131f6df1157
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218750"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035097"
 ---
 # <a name="privilegedrole-selfactivate"></a>privilegedRole: selfActivate
 
@@ -20,13 +20,13 @@ ms.locfileid: "43218750"
 
 激活分配给请求者的角色。
 
->**注意：** 12月2018日生效，此 API 将不再受支持且不应使用。 请改用[Create PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest-post.md) 。
+>**注意：** 12月2018日生效，此 API 将不再受支持且不应使用。 请改用 [Create PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest-post.md) 。
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-请求者只能调用```selfActivate```分配给他的角色。
+请求者只能调用 ```selfActivate``` 分配给他的角色。
  
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -41,7 +41,7 @@ ms.locfileid: "43218750"
 POST /privilegedRoles/{id}/selfActivate
 ```
 
-请注意``{id}`` ，它是目标角色 ID。
+请注意，它 ``{id}`` 是目标角色 ID。
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
@@ -53,13 +53,13 @@ POST /privilegedRoles/{id}/selfActivate
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |reason|string|可选。 有关此角色激活原因的说明。|
-|duration|string|可选。 有效值可以是```min``` （最小激活持续时间） ```default``` 、（角色的默认激活持续时间）或双精度值来指定激活的小时数。 指定的持续时间不能长于角色设置中角色的激活持续时间。 |
+|duration|string|可选。 有效值可以 ```min``` (最小激活持续时间) 、 ```default``` () 角色的默认激活持续时间或使用 double 值指定激活的小时数。 指定的持续时间不能长于角色设置中角色的激活持续时间。 |
 |ticketNumber|string|可选。 用于跟踪此角色激活的票证编号。|
 |ticketSystem|string|可选。 票证系统。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[privilegedRoleAssignment](../resources/privilegedroleassignment.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [privilegedRoleAssignment](../resources/privilegedroleassignment.md) 对象。
 
 请注意，需要将租户注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
 ## <a name="example"></a>示例
@@ -136,3 +136,5 @@ Content-length: 184
   ]
 }
 -->
+
+

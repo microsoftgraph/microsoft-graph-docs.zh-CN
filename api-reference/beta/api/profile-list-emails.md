@@ -1,16 +1,16 @@
 ---
 title: 列出电子邮件
-description: 检索 itemEmail 对象列表。
+description: 检索 itemEmail 对象的列表。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a3ab4f80069131904d9d619e7ddddb72c5a19511
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 63db846d35bf79eac426ad4e986a5b36aaec8a1d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819451"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034768"
 ---
 # <a name="list-emails"></a>列出电子邮件
 
@@ -18,7 +18,7 @@ ms.locfileid: "46819451"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从用户的 [配置文件检索 itemEmail](../resources/itememail.md) 对象 [列表](../resources/profile.md)。
+从用户的[配置文件](../resources/profile.md)中检索[itemEmail](../resources/itememail.md)对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "46819451"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
-| 委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
-| 应用程序                            | User.ReadBasic.All、User.Read.All、User.ReadWrite.All |
+| 委派（工作或学校帐户）     | User. Read、User.readbasic.all、user. all、All、user. all。 All |
+| 委派（个人 Microsoft 帐户） | User. Read、User.readbasic.all、user. all、All、user. all。 All |
+| 应用程序                            | User.readbasic.all、所有用户读写全部。 All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,14 +41,14 @@ GET /users/{id | userPrincipalName}/profile/emails
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持以下 OData 查询参数，这有助于自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
+此方法支持以下 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 |名称            |值    |说明                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |$filter         |string   |将响应限制为仅包含指定条件的那些对象。                                                                                             |
-|$orderby        |string   |默认情况下，响应中的对象在查询中按其 createdDateTime 值进行排序。 可以使用 $orderby 参数更改响应 *$orderby* 顺序。|
+|$orderby        |string   |默认情况下，响应中的对象按其在查询中的 createdDateTime 值进行排序。 您可以使用 *$orderby* 参数更改响应的顺序。|
 |$select         |string   |要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。                                        |
-|$skip           |int      |跳过前 n 个结果，可用于分页。                                                                                                                                |
+|$skip           |int      |跳过前 n 个结果，对于分页非常有用。                                                                                                                                |
 |$top            |int      |要返回的结果数。                                                                                                                                           |
 
 ## <a name="request-headers"></a>请求标头
@@ -63,7 +63,7 @@ GET /users/{id | userPrincipalName}/profile/emails
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回响应代码和 [itemEmail](../resources/itememail.md) 对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [itemEmail](../resources/itememail.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -135,3 +135,5 @@ Content-Type: application/json
   ]
 }
 ```
+
+

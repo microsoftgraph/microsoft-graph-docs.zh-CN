@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ea4b8095d1af6e080e1e42162bbf1f8d56678446
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: e410904881c588dd2e15deef008fda089210335f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811620"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034474"
 ---
 # <a name="create-personname"></a>创建 Contact.personname
 
@@ -163,3 +163,5 @@ Content-type: application/json
   "pronunciation": null
 }
 ```
+
+

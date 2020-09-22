@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 08551b793212a54aafe1dc37fd965d695a77c962
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 033d7bfd53c67167e71f7e75d5f1691a17e5f9cd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218792"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035202"
 ---
 # <a name="create-privilegedapproval"></a>创建 privilegedApproval
 
@@ -19,7 +19,7 @@ ms.locfileid: "43218792"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用此 API 创建新的 privilegedApproval。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -41,11 +41,11 @@ POST /privilegedApproval
 | Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[privilegedApproval](../resources/privilegedapproval.md)对象的 JSON 表示形式。
+在请求正文中，提供 [privilegedApproval](../resources/privilegedapproval.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`201 Created`响应正文中返回响应代码和[privilegedApproval](../resources/privilegedapproval.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [privilegedApproval](../resources/privilegedapproval.md) 对象。
 
 请注意，需要将租户注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
 
@@ -85,7 +85,7 @@ Content-length: 180
 
 ---
 
-在请求正文中，提供[privilegedApproval](../resources/privilegedapproval.md)对象的 JSON 表示形式。
+在请求正文中，提供 [privilegedApproval](../resources/privilegedapproval.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
@@ -121,3 +121,5 @@ Content-length: 200
   ]
 }
 -->
+
+

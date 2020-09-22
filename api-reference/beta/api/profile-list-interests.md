@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 57337f9cb78cd06bbf3427864fb6131beafa1e66
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: fbaeb9b1b3aadda736d3685753cac295667b8fcf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810744"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034762"
 ---
 # <a name="list-interests"></a>列出兴趣
 
@@ -148,3 +148,5 @@ Content-type: application/json
   ]
 }
 ```
+
+

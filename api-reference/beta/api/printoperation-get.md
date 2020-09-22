@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 5edaaa14db3b708c78878b5d85e4634f0677d187
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 93aad04bb6e2d12666cb918b32b543ebc8fac4a2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674181"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035363"
 ---
 # <a name="get-printoperation"></a>获取 printOperation
 
@@ -133,3 +133,5 @@ Content-length: 1199
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

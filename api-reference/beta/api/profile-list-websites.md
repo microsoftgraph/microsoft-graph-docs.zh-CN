@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f4738353e4417060c3296ed1173fe97e7d3a018d
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 5a9e0ccd4727b148955c493a3135a46c1b81adb2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810639"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034614"
 ---
 # <a name="list-websites"></a>列出网站
 
@@ -146,3 +146,5 @@ Content-type: application/json
   ]
 }
 ```
+
+

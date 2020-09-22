@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: d3871704a30dda2a9d07098b7b8307c987a64dc9
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 9f15f7653f7d50c381de39df549f6719fe495179
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218785"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035188"
 ---
 # <a name="update-privilegedapproval"></a>更新 privilegedapproval
 
@@ -19,7 +19,7 @@ ms.locfileid: "43218785"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 privilegedapproval 对象的属性。
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -46,17 +46,17 @@ PATCH /privilegedApproval/{id}
 |:---------------|:--------|:----------|
 |approvalDuration|持续时间||
 |approvalState|string| 可取值为：`pending`、`approved`、`denied`、`aborted`、`canceled`。|
-|approvalType|字符串||
-|approverReason|字符串||
+|approvalType|String||
+|approverReason|String||
 |endDateTime|DateTimeOffset||
-|requestorReason|字符串||
-|roleId|字符串||
+|requestorReason|String||
+|roleId|String||
 |startDateTime|DateTimeOffset||
 |userId|String||
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将`204 No Content`返回响应代码
+如果成功，此方法将返回 `204 No Content` 响应代码
 
 请注意，需要将租户注册到 PIM。 否则，将返回 HTTP 403 禁止的状态代码。
 
@@ -100,3 +100,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

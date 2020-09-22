@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c63dad5a4367eb7cf196cf5a6aaf6e1350eef70f
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 4f034f90c6eec0d0fae62d6fecddf2d23bc274b3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566327"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035786"
 ---
 # <a name="delete-tasktrigger"></a>Delete taskTrigger
 
@@ -18,7 +18,7 @@ ms.locfileid: "46566327"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除[打印机](../resources/printer.md)的[任务触发器](../resources/printtasktrigger.md)，以防止在指定打印机上触发任务的相关打印事件。
+删除 [打印机](../resources/printer.md)的 [任务触发器](../resources/printtasktrigger.md) ，以防止在指定打印机上触发任务的相关打印事件。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -96,3 +96,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

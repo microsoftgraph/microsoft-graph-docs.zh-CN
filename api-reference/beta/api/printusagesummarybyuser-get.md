@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d887efd0ca11e06ca4a3f3636444ae792206f257
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: b1a7e2d9e051901a65bae864a1a3888d66e468d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673701"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035219"
 ---
 # <a name="get-printusagesummarybyuser"></a>获取 printUsageSummaryByUser
 
@@ -94,3 +94,4 @@ Content-length: 251
   "section": "documentation",
   "tocPath": ""
 }-->
+
