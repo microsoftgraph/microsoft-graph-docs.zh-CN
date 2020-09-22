@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: c4148e5740c9b31368be336a615524ced426a560
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: cd6f352ad114307933682f4d6df22408b54ebc73
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219226"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070581"
 ---
 # <a name="privilegedapproval-resource-type"></a>privilegedApproval 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "43219226"
 表示在用于获取角色的特权标识管理中请求的审批。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -36,19 +36,19 @@ ms.locfileid: "43219226"
 |:---------------|:--------|:----------|
 |approvalDuration|持续时间||
 |approvalState|string| 可取值为：`pending`、`approved`、`denied`、`aborted`、`canceled`。|
-|approvalType|字符串||
-|approverReason|字符串||
-|endDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|id|字符串| 只读。|
-|requestorReason|字符串||
-|roleId|字符串||
-|startDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|approvalType|String||
+|approverReason|String||
+|endDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|id|String| 只读。|
+|requestorReason|String||
+|roleId|String||
+|startDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |userId|String||
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|roleInfo|[privilegedRole](privilegedrole.md)| 只读。 可为 Null。|
+|roleInfo|[privilegedRole](privilegedrole.md)| 只读。 可为 NULL。|
 |申请|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| 只读。 此审批对象的角色分配请求|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -92,3 +92,5 @@ ms.locfileid: "43219226"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1ab0a102cf430a98a0a5662af30cdd8cd36a3430
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 154e6cf9bc06ab53e5a2013127349eeda5538b5b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44846060"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057890"
 ---
 # <a name="useridentity-type"></a>userIdentity 类型
 
@@ -18,22 +18,22 @@ ms.locfileid: "44846060"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-对于 Azure AD[访问审核](accessreviews-root.md)，此类型表示访问评审的创建者或审阅者的 Azure ad 用户标识。
+对于 Azure AD [访问审核](accessreviews-root.md)，此类型表示访问评审的创建者或审阅者的 Azure ad 用户标识。
 在 Azure AD 审核日志的上下文中，这表示已启动或受审核活动影响的用户信息。
 
-此类型继承自[标识](identity.md)，并且具有一个附加属性（用户的用户主体名称）。
+此类型继承自 [标识](identity.md) ，并且具有一个附加属性（用户的用户主体名称）。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 无。  [创建 accessReview](../api/accessreview-create.md)时，您可以在请求的正文中包含此类型的对象。
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | Description|
+| 属性 | 类型 | 说明|
 |:---------------|:--------|:----------|
 | `displayName` | `String` | 此身份的显示名称。 请注意，这可能并不总是可用，也不是最新的。    |
 | `id`          | `String` | 身份的唯一标识符。  |
-| `ipAddress`| `String`| 指示执行活动的用户使用的客户端 IP 地址（仅限审核日志）。|
+| `ipAddress`| `String`| 指示用户执行活动 (仅) 审核日志中使用的客户端 IP 地址。|
 | `userPrincipalName`|`String` | 用户的 userPrincipalName 属性。 |
 
 ## <a name="remarks"></a>注解
@@ -48,7 +48,7 @@ ms.locfileid: "44846060"
 
 | 方法                                                                | 返回类型                                | 说明                             |
 |:----------------------------------------------------------------------|:-------------------------------------------|:----------------------------------------|
-| [获取 accessReview 审阅者](../api/accessreview-listreviewers.md)    | [userIdentity](useridentity.md)集合 | 获取 accessReview 的审阅者。   |
+| [获取 accessReview 审阅者](../api/accessreview-listreviewers.md)    | [userIdentity](useridentity.md) 集合 | 获取 accessReview 的审阅者。   |
 | [添加 accessReview 审阅者](../api/accessreview-addreviewer.md)       | 无。                                      | 向 accessReview 添加审阅者。      |
 | [删除 accessReview 审阅者](../api/accessreview-removereviewer.md) | 无。                                      | 从 accessReview 中删除审阅者。 |
 
@@ -84,3 +84,5 @@ ms.locfileid: "44846060"
   "suppressions": []
 }
 -->
+
+

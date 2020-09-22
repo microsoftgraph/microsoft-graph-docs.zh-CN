@@ -3,14 +3,14 @@ title: managedAppOperation 资源类型
 description: 表示对应用注册应用的操作。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 87b18c311c263dfb70c2aa8015044d280a48c6cd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b45712c4b52c2af37dbe062eda6fd3553d5da1c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43406620"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090989"
 ---
 # <a name="managedappoperation-resource-type"></a>managedAppOperation 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "43406620"
 |displayName|String|操作名称。|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用操作的时间。|
 |state|String|操作的当前状态|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |version|String|实体的版本。|
 
 ## <a name="relationships"></a>关系
@@ -59,6 +59,8 @@ ms.locfileid: "43406620"
   "version": "String"
 }
 ```
+
+
 
 
 

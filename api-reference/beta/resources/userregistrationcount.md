@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: e322f073655ffaa975464d666a365410138f6e51
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5aa86a0b490ddb2cd68a504f5a4879f922fa0cf2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43384978"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057821"
 ---
 # <a name="userregistrationcount-resource-type"></a>userRegistrationCount 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "43384978"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 | registrationCount | Int64 | 为你的租户提供注册计数。 |
-| registrationStatus | 字符串 | 表示用户注册的状态。 可能的值是`registered`： `enabled`、 `capable`、和`mfaRegistered`。 |
+| registrationStatus | String | 表示用户注册的状态。 可能的值是： `registered` 、 `enabled` 、 `capable` 和 `mfaRegistered` 。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -56,3 +56,4 @@ ms.locfileid: "43384978"
   "section": "documentation",
   "tocPath": ""
 }-->
+

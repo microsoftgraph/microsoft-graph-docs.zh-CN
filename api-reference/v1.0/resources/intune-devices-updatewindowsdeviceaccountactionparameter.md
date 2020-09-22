@@ -3,14 +3,14 @@ title: updateWindowsDeviceAccountActionParameter 资源类型
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b09bb3d73c49ff4436a295b602061c5afc41f579
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e64fafd1bea9b939489bef6360bdded6df6941a6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439417"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091031"
 ---
 # <a name="updatewindowsdeviceaccountactionparameter-resource-type"></a>updateWindowsDeviceAccountActionParameter 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "43439417"
 |属性|类型|说明|
 |:---|:---|:---|
 |deviceAccount|[windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|尚未记录|
-|passwordRotationEnabled|Boolean|尚未记录|
+|passwordRotationEnabled|布尔值|尚未记录|
 |calendarSyncEnabled|布尔值|尚未记录|
 |deviceAccountEmail|String|尚未记录|
 |exchangeServer|String|尚未记录|
@@ -54,6 +54,8 @@ ms.locfileid: "43439417"
   "sessionInitiationProtocalAddress": "String"
 }
 ```
+
+
 
 
 

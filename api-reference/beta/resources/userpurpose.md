@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: abheek-das
-ms.openlocfilehash: b4ed5db9dfa87b2829d78371339c166c3bb74265
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
-ms.translationtype: Auto
+ms.openlocfilehash: 83abf3bd19434867bbd162b6260ed5f4445d8ffd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44846372"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057841"
 ---
 # <a name="userpurpose-resource-type"></a>userPurpose 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "44846372"
 |成员|说明|
 |:---------------|:--------|
 |unknown|找不到有关邮箱的任何信息。|
-|用户|具有本地林中邮箱的用户帐户。|
+|user|具有本地林中邮箱的用户帐户。|
 |带有|链接到另一个林中的用户帐户的邮箱。|
 |shared|由两个或更多用户帐户共享的邮箱。|
 |室|表示会议室的邮箱。|
@@ -68,3 +68,5 @@ ms.locfileid: "44846372"
   "suppressions": []
 }
 -->
+
+
