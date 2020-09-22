@@ -3,20 +3,20 @@ title: mobileAppContent 资源类型
 description: 包含特定应用版本的内容属性。 每个 mobileAppContent 都可以具有多个 mobileAppContentFile。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 96058f7af6bdf375ffdc2a6df4558afd96145627
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e88cab2a1d06ff31a64dbdf71de46e78068070d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458581"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076370"
 ---
 # <a name="mobileappcontent-resource-type"></a>mobileAppContent 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -40,7 +40,7 @@ ms.locfileid: "43458581"
 |关系|类型|说明|
 |:---|:---|:---|
 |files|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) 集合|此应用内容版本的文件列表。|
-|containedApps|[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)集合|充当包的 MobileLobApp 中包含的应用程序的集合。|
+|containedApps|[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) 集合|充当包的 MobileLobApp 中包含的应用程序的集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -56,6 +56,9 @@ ms.locfileid: "43458581"
   "id": "String (identifier)"
 }
 ```
+
+
+
 
 
 

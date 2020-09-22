@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 295ee62018f9be6ae6ac9b58471c3e2e6bca4c4b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1ab9cefa4c97aa718d3590556da751adc37a766a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440643"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076813"
 ---
 # <a name="outlookuser-supportedtimezones"></a>outlookUser: supportedTimeZones
 
@@ -204,3 +204,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

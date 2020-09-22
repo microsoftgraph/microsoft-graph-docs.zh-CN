@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cd6642ddce672302920338a2e1bad0c650f1c04b
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 1991e21b5dc1c6c0b2ced2904a17b65257e7a5dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218624"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076762"
 ---
 # <a name="assign-homerealmdiscoverypolicy"></a>分配 homeRealmDiscoveryPolicy
 
@@ -18,9 +18,9 @@ ms.locfileid: "43218624"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md)分配给[servicePrincipal](../resources/servicePrincipal.md)。
+将 [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) 分配给 [servicePrincipal](../resources/servicePrincipal.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/homeRealmDiscoveryPolicies/$ref
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应分配给服务主体的[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md)对象的`@odata.id`标识符（使用属性）。
+在请求正文中，使用[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) `@odata.id` 应分配给服务主体的属性) 提供 homeRealmDiscoveryPolicy 对象 (的标识符。
 
 ## <a name="response"></a>响应
 
@@ -110,3 +110,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

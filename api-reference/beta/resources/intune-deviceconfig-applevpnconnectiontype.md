@@ -3,14 +3,14 @@ title: appleVpnConnectionType 枚举类型
 description: Apple VPN 连接类型。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d1761d80b867dc37db47737d5baa1fdf0fc8f58b
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: b3797e01d523907731a72aa8b44c9613e4e1400e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790453"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075957"
 ---
 # <a name="applevpnconnectiontype-enum-type"></a>appleVpnConnectionType 枚举类型
 
@@ -26,8 +26,8 @@ Apple VPN 连接类型。
 |成员|值|说明|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect。|
-|pulseSecure|1|脉冲安全。|
-|f5EdgeClient|双面|F5 边缘客户端。|
+|pulseSecure|1 |脉冲安全。|
+|f5EdgeClient|2 |F5 边缘客户端。|
 |dellSonicWallMobileConnect|第三章|戴尔 SonicWALL 移动连接。|
 |checkPointCapsuleVpn|4 |检查点胶囊 VPN。|
 |customVpn|5 |自定义 VPN。|
@@ -36,13 +36,16 @@ Apple VPN 连接类型。
 |ciscoAnyConnectV2|8 |Cisco AnyConnect V2。|
 |paloAltoGlobalProtect|9 |Palo Alto 网络 GlobalProtect。|
 |zscalerPrivateAccess|10 |Zscaler 私有访问。|
-|f5Access2018|11x17|F5 访问2018。|
+|f5Access2018|11 |F5 访问2018。|
 |citrixSso|12 |Citrix Sso。|
-|paloAltoGlobalProtectV2|13|Palo Alto 网络 GlobalProtect V2。|
+|paloAltoGlobalProtectV2|13 |Palo Alto 网络 GlobalProtect V2。|
 |ikEv2|14 |IKEv2.|
 |alwaysOn|15 |AlwaysOn.|
 |microsoftTunnel|16 |Microsoft 隧道。|
 |netMotionMobility|17 |NetMotion 移动性。|
+
+
+
 
 
 

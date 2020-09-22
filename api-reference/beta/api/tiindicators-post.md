@@ -5,20 +5,20 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: fdfeb1af207c8005f6018a7e5df9557a78066211
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5de9e8b01fa02f02fbfa8248a7f307360cd1c6ac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452321"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076496"
 ---
 # <a name="create-threat-intelligence-indicator"></a>创建威胁情报指标
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[tiIndicator](../resources/tiindicator.md)对象。
+创建新的 [tiIndicator](../resources/tiindicator.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -46,11 +46,11 @@ POST /security/tiIndicators
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供包含至少一个[电子邮件](../resources/tiindicator.md#indicator-observables---email)、[文件](../resources/tiindicator.md#indicator-observables---file)或[网络](../resources/tiindicator.md#indicator-observables---network)可观测对象的[tiIndicator](../resources/tiindicator.md)对象的 JSON 表示形式，并提供以下必需字段`action`： `description`、 `expirationDateTime`、 `targetProduct`、 `threatType`、 `tlpLevel`、。 
+在请求正文中，提供包含至少一个[电子邮件](../resources/tiindicator.md#indicator-observables---email)、[文件](../resources/tiindicator.md#indicator-observables---file)或[网络](../resources/tiindicator.md#indicator-observables---network)可观测对象的[tiIndicator](../resources/tiindicator.md)对象的 JSON 表示形式，并提供以下必需字段： `action` 、、、、 `description` `expirationDateTime` `targetProduct` `threatType` 、 `tlpLevel` 。 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`201 Created`响应正文中返回响应代码和[tiIndicator](../resources/tiindicator.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [tiIndicator](../resources/tiindicator.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -103,7 +103,7 @@ Content-type: application/json
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
@@ -141,3 +141,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

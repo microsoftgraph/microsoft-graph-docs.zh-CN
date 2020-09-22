@@ -1,24 +1,24 @@
 ---
 title: 'tiIndicator: updateTiIndicators'
-description: 在一个请求中（而不是多个请求）更新多个威胁情报（TI）指示器。
+description: 在一个请求中（而不是多个请求）更新多个威胁智能 (TI) 指示器。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: d4c05efc931daba5953f49f2789b54dbb163fa08
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0be11755ff976037ab593c3273ed70b30eb4e4dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452349"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076509"
 ---
 # <a name="tiindicator-updatetiindicators"></a>tiIndicator: updateTiIndicators
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在一个请求中（而不是多个请求）更新多个威胁情报（TI）指示器。
+在一个请求中（而不是多个请求）更新多个威胁智能 (TI) 指示器。
 
 ## <a name="permissions"></a>权限
 
@@ -46,15 +46,15 @@ POST /security/tiIndicators/updateTiIndicators
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供具有以下参数的 JSON 对象。 有关可更新的属性的详细信息，请参阅[更新 tiIndicator](tiindicator-update.md)。 每个 tiIndicator 的必填字段`id`为`expirationDateTime`： `targetProduct`、、。
+在请求正文中，提供具有以下参数的 JSON 对象。 有关可更新的属性的详细信息，请参阅 [更新 tiIndicator](tiindicator-update.md)。 每个 tiIndicator 的必填字段为： `id` 、 `expirationDateTime` 、 `targetProduct` 。
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|值|tiIndicator 集合| 要更新的**tiIndicators**的集合。 每个实体都必须具有要更新的**id**和其他可编辑属性。|
+|值|tiIndicator 集合| 要更新的 **tiIndicators** 的集合。 每个实体都必须具有要更新的 **id** 和其他可编辑属性。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[tiIndicator](../resources/tiindicator.md)对象集合。  如果存在错误，则此方法返回`206 Partial Content`响应代码。  有关详细信息，请参阅[错误](../resources/security-error-codes.md#threat-indicator-bulk-action-errors)。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [tiIndicator](../resources/tiindicator.md) 对象集合。  如果存在错误，则此方法返回 `206 Partial Content` 响应代码。  有关详细信息，请参阅 [错误](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) 。
 
 ## <a name="examples"></a>示例
 
@@ -105,7 +105,7 @@ Content-type: application/json
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
@@ -148,3 +148,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

@@ -6,16 +6,16 @@ title: ItemActivityTimeSet
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 33a9f4c42393c0c77c331889d8e77244de6226e1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9295337237c681fd0ec02c9fa8061bf206059600
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523105"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075659"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>ItemActivityTimeSet 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -66,3 +66,5 @@ ms.locfileid: "42523105"
   "suppressions": []
 }
 -->
+
+

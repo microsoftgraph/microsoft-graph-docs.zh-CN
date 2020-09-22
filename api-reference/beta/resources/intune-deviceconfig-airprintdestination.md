@@ -3,20 +3,20 @@ title: airPrintDestination 资源类型
 description: 表示 AirPrint 目标。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a89415cfaf2555d870c2f2ebb552776fd7720e4f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 84575b172dee1f07d114abb202b3868ab936ce9a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470969"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076181"
 ---
 # <a name="airprintdestination-resource-type"></a>airPrintDestination 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "43470969"
 |ipAddress|String|AirPrint 目标的 IP 地址。|
 |resourcePath|String|与打印机关联的资源路径。 这对应于 _ipps tcp Bonjour record 的 rp 参数。 例如： printers/Canon_MG5300_series、printers/Xerox_Phaser_7600、ipp/print、Epson_IPP_Printer。|
 |端口|Int32|AirPrint 目标的侦听端口。 如果未指定此项，AirPrint 将使用默认端口。 在 iOS 11.0 和更高版本中可用。|
-|forceTls|布尔值|如果为 true，则 AirPrint 连接通过传输层安全性（TLS）进行保护。 默认为 false。 在 iOS 11.0 和更高版本中可用。|
+|forceTls|Boolean|如果为 true，则 AirPrint 连接受传输层安全性 (TLS) 的保护。 默认为 false。 在 iOS 11.0 和更高版本中可用。|
 
 ## <a name="relationships"></a>关系
 无
@@ -49,6 +49,9 @@ ms.locfileid: "43470969"
   "forceTls": true
 }
 ```
+
+
+
 
 
 

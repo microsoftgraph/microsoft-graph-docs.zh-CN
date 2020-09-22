@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
 author: grangeryy
-ms.openlocfilehash: 2c224e4e9db87f8da98ef34296cc193eb2fb564c
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 8ee076b96df14b4d4c4958b4c1d6bdf36fecdde2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849756"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075614"
 ---
 # <a name="itembody-resource-type"></a>itemBody 资源类型
 
@@ -57,3 +57,5 @@ ms.locfileid: "46849756"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b5de60708ec0c8a6a0e22cd4f64b847395620bd0
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: e47ca7c35ddd535ec9809039cc57c4be670ef85a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806316"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076615"
 ---
 # <a name="update-teamsapp"></a>更新 teamsApp
 
@@ -47,7 +47,7 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 |属性|类型|说明|
 |----|----|----|
-|requiresReview| 布尔值 | 此可选查询参数触发应用程序审阅过程。 具有管理员权限的用户无需触发评审即可提交应用程序。 如果用户希望在发布之前请求审阅，则必须将其设置  `requiresReview` 为 `true` 。 具有管理员权限的用户可以选择不设置 `requiresReview` 或设置值 `false`  ，并且应用将被视为 "已批准"，并将立即发布。|
+|requiresReview| Boolean | 此可选查询参数触发应用程序审阅过程。 具有管理员权限的用户无需触发评审即可提交应用程序。 如果用户希望在发布之前请求审阅，则必须将其设置  `requiresReview` 为 `true` 。 具有管理员权限的用户可以选择不设置 `requiresReview` 或设置值 `false`  ，并且应用将被视为 "已批准"，并将立即发布。|
 
 ## <a name="request-headers"></a>请求标头
 
@@ -148,3 +148,5 @@ Content-Type: application/json
     "lastModifiedDateTime": "2020-02-10 22:48:33.841",
 }
 ```
+
+

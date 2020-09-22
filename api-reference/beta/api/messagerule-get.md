@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 932337a15ac558d8f92c3b0f76a2c40b7ad74984
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 7583123e7d2f6f46830d88528f208c0527a09ab5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43448440"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076814"
 ---
 # <a name="get-rule"></a>获取规则
 
@@ -130,3 +130,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

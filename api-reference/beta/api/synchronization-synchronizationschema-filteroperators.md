@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b80c14879cb04f615d4feafaece48166f56b1a7f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: aaea4985f19a475f57c655cebd6d909d5f09e0fc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443012"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076651"
 ---
 # <a name="synchronizationschema-filteroperators"></a>synchronizationSchema: filterOperators
 
@@ -18,7 +18,7 @@ ms.locfileid: "43443012"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出[作用域筛选器](../resources/synchronization-filter.md)支持的所有运算符。
+列出 [作用域筛选器](../resources/synchronization-filter.md)支持的所有运算符。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,7 +49,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/filterOpera
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200, OK`正文中返回响应代码和[filterOperatorSchema](../resources/synchronization-filteroperatorschema.md)集合对象。
+如果成功，此方法 `200, OK` 在响应正文中返回响应代码和 [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) 集合对象。
 
 ## <a name="example"></a>示例
 
@@ -205,3 +205,5 @@ non-string type names like "Integer" or "Boolean"
   ]
 }
 -->
+
+

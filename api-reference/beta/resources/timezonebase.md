@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: svpsiva
-ms.openlocfilehash: a587070c32c85881ddf40d3f9cb2e64d5dd4aa50
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 514256444025bd0d600ba76cb65690add2877c88
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808506"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075394"
 ---
 # <a name="timezonebase-resource-type"></a>timeZoneBase 资源类型
 
@@ -58,3 +58,5 @@ ms.locfileid: "46808506"
   "suppressions": []
 }
 -->
+
+

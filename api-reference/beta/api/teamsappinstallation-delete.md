@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ebed3b8750d6ef9ec67b7f92076415ed1fbfb0f9
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: f0986aa744e7c2ec22c5b89dd055966e4ad040b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45197014"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076608"
 ---
 # <a name="remove-app-from-team"></a>从团队中删除应用
 
@@ -20,7 +20,7 @@ ms.locfileid: "45197014"
 
 从指定的[团队](../resources/team.md)中卸载[应用程序](../resources/teamsappinstallation.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

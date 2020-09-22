@@ -6,22 +6,22 @@ title: ItemAnalytics
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 4035ff821927d520ed457c3040be01bd9368240c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0ef1fd6778b9ed31c0cd6dcd5ac14316675d697f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523098"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075628"
 ---
 # <a name="itemanalytics-resource-type"></a>itemAnalytics 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **ItemAnalytics**资源提供有关项目上发生的活动的分析。 此资源目前仅适用于 SharePoint 和 OneDrive for business。
 
-您还可以使用[getActivitiesByInterval][] API 检索自定义时间范围或时间间隔内的分析。
+您还可以使用 [getActivitiesByInterval][] API 检索自定义时间范围或时间间隔内的分析。
 
 >**注意：****ItemAnalytics**资源在所有[国家/地区部署](/graph/deployments)中尚不可用。
 
@@ -63,3 +63,5 @@ ms.locfileid: "42523098"
   "suppressions": []
 }
 -->
+
+

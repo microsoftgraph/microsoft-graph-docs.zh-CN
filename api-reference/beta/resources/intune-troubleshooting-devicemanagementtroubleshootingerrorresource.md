@@ -3,20 +3,20 @@ title: deviceManagementTroubleshootingErrorResource 资源类型
 description: 表示指向疑难解答信息的链接的对象，则该链接可能指向 Azure 门户或 Microsoft doc。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 60a098774f8302ec23322fc18af1998ba6e14480
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 18537e1fa81fd082cc7fd78d2675540535195a32
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43388242"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075782"
 ---
 # <a name="devicemanagementtroubleshootingerrorresource-resource-type"></a>deviceManagementTroubleshootingErrorResource 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "43388242"
 |属性|类型|说明|
 |:---|:---|:---|
 |text|String|尚未记录|
-|link|字符串|指向 web 资源的链接。 可以包含以下任何格式化程序： {{UPN}}、{{DeviceGUID}}、{{UserGUID}}|
+|link|String|指向 web 资源的链接。 可以包含以下任何格式化程序： {{UPN}}、{{DeviceGUID}}、{{UserGUID}}|
 
 ## <a name="relationships"></a>关系
 无
@@ -45,6 +45,9 @@ ms.locfileid: "43388242"
   "link": "String"
 }
 ```
+
+
+
 
 
 

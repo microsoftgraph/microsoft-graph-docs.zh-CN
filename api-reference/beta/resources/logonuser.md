@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: f480ff8c67c602512d7d8ef3f090366734f0ca7e
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 737a3ad71ee34641dd6d2c719a7a1975d3fb11ae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808660"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075523"
 ---
 # <a name="logonuser-resource-type"></a>logonUser 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "46808660"
 |firstSeenDateTime|DateTimeOffset|按此用户帐户的最早登录发生的日期时间 (提供程序确定的时间段) 。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |lastSeenDateTime|DateTimeOffset|发生此用户帐户的最新登录的日期时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |logonId|String|用户登录 ID。|
-|了 logontypes|字符串集合|从第一次查看之时开始，登录用户看到的登录类型的集合。 可取值为：`unknown`、`interactive`、`remoteInteractive`、`network`、`batch`、`service`。|
+|了 logontypes|String 集合|从第一次查看之时开始，登录用户看到的登录类型的集合。 可取值为：`unknown`、`interactive`、`remoteInteractive`、`network`、`batch`、`service`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -64,3 +64,5 @@ ms.locfileid: "46808660"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

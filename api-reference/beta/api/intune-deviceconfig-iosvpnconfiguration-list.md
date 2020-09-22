@@ -3,14 +3,14 @@ title: 列出 iosVpnConfigurations
 description: 列出 iosVpnConfiguration 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 45019463083113f9b9d8dc8b35479f7cb293f05c
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 34cb5470dfad4b079eeebfdb9c2c49d86c66ea04
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790908"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077531"
 ---
 # <a name="list-iosvpnconfigurations"></a>列出 iosVpnConfigurations
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3697
+Content-Length: 3879
 
 {
   "value": [
@@ -154,6 +154,10 @@ Content-Length: 3697
         }
       ],
       "providerType": "appProxy",
+      "excludedDomains": [
+        "Excluded Domains value"
+      ],
+      "disableOnDemandUserOverride": true,
       "proxyServer": {
         "@odata.type": "microsoft.graph.vpnProxyServer",
         "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
@@ -175,11 +179,15 @@ Content-Length: 3697
           "appStoreUrl": "https://example.com/appStoreUrl/",
           "appId": "App Id value"
         }
-      ]
+      ],
+      "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
     }
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 68345ec9c443f0c83d96e54a0ee9d4fbbc5279ff
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 339fa4c3a3ef54b8bb93b6b7517162c1fc9f8bc8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319489"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075542"
 ---
 # <a name="tiindicator-resource-type"></a>tiIndicator 资源类型
 
@@ -74,7 +74,7 @@ ms.locfileid: "47319489"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |action|string| 在 targetProduct 安全工具中匹配指标时要应用的操作。 可取值为：`unknown`、`allow`、`block`、`alert`。 **必需。**|
-|activityGroupNames|String collection|负责威胁指示器所涵盖的恶意活动的各方) 的网络威胁智能名称 (s。|
+|activityGroupNames|String 集合|负责威胁指示器所涵盖的恶意活动的各方) 的网络威胁智能名称 (s。|
 |additionalInformation|String|可以放置其他 tiIndicator 属性中未涵盖的指标中的额外数据的 "容器" 区域。 放置在 additionalInformation 中的数据通常不会被 targetProduct 安全工具使用。|
 |azureTenantId|字符串| 当指标为引入时由系统进行标记。 提交客户端的 Azure Active Directory 租户 id。 **必需。**|
 |confidence|Int32|一个整数，表示对指示器中的数据准确标识恶意行为的可信度。 可接受的值为0–100，100的值为最高。|
@@ -88,10 +88,10 @@ ms.locfileid: "47319489"
 |killChain|[killChain](#killchain-values) 集合|一个 JSON 字符串数组，用于描述此指示器针对终止链上的哪个点或点。 有关确切值，请参阅下面的 "killChain 值"。 |
 |knownFalsePositives|String|指示符可能导致误报的情况。 这应该是可读的文本。|
 |lastReportedDateTime|DateTimeOffset|上次发现指示器的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|malwareFamilyNames|String collection|与指示器关联的恶意软件系列名称（如果存在）。 如果所有可能都可以通过 Windows Defender 安全智能 [威胁百科全书](https://www.microsoft.com/wdsi/threats)找到，microsoft 将首选 microsoft 恶意软件系列名称。|
+|malwareFamilyNames|String 集合|与指示器关联的恶意软件系列名称（如果存在）。 如果所有可能都可以通过 Windows Defender 安全智能 [威胁百科全书](https://www.microsoft.com/wdsi/threats)找到，microsoft 将首选 microsoft 恶意软件系列名称。|
 |passiveOnly|Boolean |确定该指示符是否应触发对最终用户可见的事件。 如果设置为 "true"，则安全工具将不会通知最终用户已发生 "命中"。 通常情况下，这通常被视为审核或静默模式，安全产品只需记录已发生的匹配项，但不会执行该操作。 默认值为 false。 |
 |severity|Int32| 一个整数，表示由指示器中的数据标识的恶意行为的严重程度。 可接受的值为0–5，其中5为最严重，0表示根本不严重。 默认值为3。 |
-|tags|String collection|存储任意标记/关键字的字符串的 JSON 数组。 |
+|tags|String 集合|存储任意标记/关键字的字符串的 JSON 数组。 |
 |targetProduct|String|一个字符串值，表示应应用指标的单个安全产品。 可接受的值为： `Azure Sentinel` 、 `Microsoft Defender ATP` 。 **Required**|
 |threatType|[threatType](#threattype-values)| 每个指示器都必须具有有效的指示器威胁类型。 可取值为：`Botnet`、`C2`、`CryptoMining`、`Darknet`、`DDoS`、`MaliciousUrl`、`Malware`、`Phishing`、`Proxy`、`PUA`、`WatchList`。 **必需。** |
 |tlpLevel|[tlpLevel](#tlplevel-values)| 指标的流量灯协议值。 可取值为：`unknown`、`white`、`green`、`amber`、`red`。 **必需。**|
@@ -157,7 +157,7 @@ ms.locfileid: "47319489"
 | unknown |  0    | |
 | 对手 |  1     |该指示器描述了敌人。|
 | 性能 |  2    |指示器是入侵者的一种功能。|
-| 基本 | 3  |此指标介绍了入侵者的基础结构。|
+| 基本 | 第三章 |此指标介绍了入侵者的基础结构。|
 | 者 | 4  |该指标描述敌人的牺牲品。|
 | 向 unknownfuturevalue | 127 | |
 
@@ -170,7 +170,7 @@ ms.locfileid: "47319489"
 |Delivery|将攻击代码分发给受害者的过程 (例如，USB、电子邮件、网站) 。|
 |具备|利用漏洞的攻击代码 (例如，代码执行) 。|
 |安装|在漏洞受到攻击后安装恶意软件。|
-|侦测|指标是活动组收集信息以用于将来的攻击的证据。|
+|侦查|指标是活动组收集信息以用于将来的攻击的证据。|
 |Weaponization|将漏洞变成攻击代码 (例如，恶意软件) 。|
 
 ### <a name="threattype-values"></a>threatType 值
@@ -291,3 +291,5 @@ ms.locfileid: "47319489"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

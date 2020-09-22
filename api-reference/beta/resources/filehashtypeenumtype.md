@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: enumPageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: fe8fa8e1147723ae8119ac4e5946bd9c29b872dc
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ab94fec4d4a8f6940b7c2bfccc61d38d9fe66887
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806588"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076384"
 ---
 # <a name="filehashtype-enum-type"></a>fileHashType 枚举类型
 
@@ -25,11 +25,13 @@ ms.locfileid: "46806588"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知类型。|
-|sha1|1|SHA1 哈希类型。|
-|sha256|双面| SHA256 哈希类型。|
+|sha1|1 |SHA1 哈希类型。|
+|sha256|2 | SHA256 哈希类型。|
 |md5|第三章| MD5 哈希类型。|
 |authenticodeHash256|4 | AuthenticodeHash256 哈希类型。|
 |lsHash|5 | LsHash 哈希类型。|
 |ctph|6 | CTPH 哈希类型。|
 |peSha1|7 | PESHA1 哈希类型。|
 |peSha256|8 | PESHA256 哈希类型。|
+
+

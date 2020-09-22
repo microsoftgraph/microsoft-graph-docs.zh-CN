@@ -1,33 +1,33 @@
 ---
-title: servicePrincipal：添加所有者
+title: 'servicePrincipal: 添加所有者'
 description: 添加服务主体的所有者。
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 555d2341d68ff48d34c3bf56b112b6a7ab501c9d
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 2618223235fbc7f81eab110d272d1b02c0e14054
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44382725"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076767"
 ---
-# <a name="serviceprincipal-add-owner"></a>servicePrincipal：添加所有者
+# <a name="serviceprincipal-add-owner"></a>servicePrincipal: 添加所有者
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为[servicePrincipal](../resources/serviceprincipal.md)添加所有者。
+添加 [servicePrincipal](../resources/serviceprincipal.md) 的所有者。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | "ReadWrite"、"全部" 和 "Directory.accessasuser.all"、"全部" 和 "所有"。    |
+|委派（工作或学校帐户） | Application.ReadWrite.All 和Directory.Read.All、 Application.ReadWrite.All 和Directory.ReadWrite.All、 Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Application.readwrite.ownedby 和 Application.readwrite.ownedby 和所有和所有的读写全部，all 和所有读写全部。 all 和所有读写全部。 all 和所有读写全部。  |
+|应用程序 | Application.ReadWrite.OwnedBy 和Directory.Read.All、 Application.ReadWrite.All 和Directory.Read.All、 Application.ReadWrite.OwnedBy 和Directory.ReadWrite.All、 Application.ReadWrite.All 和Directory.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /servicePrincipals/{id}/owners/$ref
 | Authorization | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[directoryObject](../resources/directoryobject.md)对象的 JSON 表示形式。
+在请求正文中，提供 [directoryObject](../resources/directoryobject.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
@@ -81,7 +81,7 @@ Content-length: 30
 ---
 
 
-在请求正文中，提供[directoryObject](../resources/directoryobject.md)对象的 JSON 表示形式。
+在请求正文中，提供 [directoryObject](../resources/directoryobject.md) 对象的 JSON 表示形式。
 ### <a name="response"></a>响应
 下面展示了示例响应。
 
@@ -106,3 +106,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: befafe249bc42d4f0ac166b35177310deb2ea4b1
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: e5c4af3b903940473bc1548e91ee42dbbc10f9aa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45197021"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076619"
 ---
 # <a name="add-app-to-team"></a>向团队添加应用
 
@@ -18,9 +18,9 @@ ms.locfileid: "45197021"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将[应用程序](../resources/teamsapp.md)安装到指定的[团队](../resources/team.md)。
+将 [应用程序](../resources/teamsapp.md) 安装到指定的 [团队](../resources/team.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -110,3 +110,5 @@ HTTP/1.1 200 OK
   "suppressions": []
 }
 -->
+
+

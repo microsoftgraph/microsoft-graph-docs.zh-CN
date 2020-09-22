@@ -6,12 +6,12 @@ title: ItemActivity
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 4cac403e44abaf9ae69f78005555772b9979046f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a1ce6b675a1e28eb60bc7ebbf86d3cd1cd0dc5a7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523119"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075673"
 ---
 # <a name="itemactivity-resource-type"></a>ItemActivity 资源类型
 
@@ -116,3 +116,5 @@ ms.locfileid: "42523119"
   "suppressions": []
 }
 -->
+
+

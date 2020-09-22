@@ -6,16 +6,16 @@ title: ItemActionStat
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 6ab31d8a155e0b9fd54b3f2185e7d05969291ec1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8316239a7e00cdc74921c42b70431eba60cdc2d7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523126"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075670"
 ---
 # <a name="itemactionstat-resource-type"></a>itemActionStat 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,3 +53,5 @@ ms.locfileid: "42523126"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 04cdadefd9c784c07d4b93c02bf7c9f51e7e3e73
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 4ad289b745fcd26adea3cbe2698f01dde3d87d30
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154449"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075495"
 ---
 # <a name="timeoff-resource-type"></a>timeOff 资源类型
 
@@ -24,21 +24,21 @@ ms.locfileid: "44154449"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[Create](../api/schedule-post-timesoff.md) | [timeOff](timeoff.md) | 创建新的**timeOff**对象。|
-|[List](../api/schedule-list-timesoff.md) | [timeOff](timeoff.md)集合 | 获取此计划中的**timeOff**对象的列表。|
-|[获取](../api/timeoff-get.md) | [timeOff](timeoff.md) | 按 ID 获取**timeOff**对象。|
-|[Replace](../api/timeoff-put.md) | [timeOff](timeoff.md) | 替换**timeOff**对象。|
-|[删除](../api/timeoff-delete.md) | None | 从计划中删除**timeOff**对象。|
+|[Create](../api/schedule-post-timesoff.md) | [timeOff](timeoff.md) | 创建新的 **timeOff** 对象。|
+|[List](../api/schedule-list-timesoff.md) | [timeOff](timeoff.md) 集合 | 获取此计划中的 **timeOff** 对象的列表。|
+|[Get](../api/timeoff-get.md) | [timeOff](timeoff.md) | 按 ID 获取 **timeOff** 对象。|
+|[Replace](../api/timeoff-put.md) | [timeOff](timeoff.md) | 替换 **timeOff** 对象。|
+|[删除](../api/timeoff-delete.md) | 无 | 从计划中删除 **timeOff** 对象。|
 
 ## <a name="properties"></a>属性
 |名称          |类型           |说明                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id            |`string`      |`timeOff` 的 ID。|
-| userId            |`string`      |分配给的`timeOff`用户的 ID。 必需。|
-| sharedTimeOff     | [timeOffItem](timeoffitem.md)  |员工和经理可查看`timeOff`的共享版本。 必需。|
-| draftTimeOff      | [timeOffItem](timeoffitem.md)        |经理可查看的草稿`timeOff`版本。 必需。|
-| createdDateTime       |`DateTimeOffset`        |首次创建时的时间`timeOff`戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 |
-| lastModifiedDateTime      |`DateTimeOffset`        |上次更新此`timeOff`时间戳的时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 |
+| userId            |`string`      |分配给的用户的 ID `timeOff` 。 必需。|
+| sharedTimeOff     | [timeOffItem](timeoffitem.md)  |`timeOff`员工和经理可查看的共享版本。 必需。|
+| draftTimeOff      | [timeOffItem](timeoffitem.md)        |经理可查看的草稿版本 `timeOff` 。 必需。|
+| createdDateTime       |`DateTimeOffset`        |首次创建时的时间戳 `timeOff` 。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 |
+| lastModifiedDateTime      |`DateTimeOffset`        |上次更新此时间戳的时间戳 `timeOff` 。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 |
 | lastModifiedBy        | [identitySet](identityset.md)        |上次更新 `timeOff` 的标识。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -76,3 +76,5 @@ ms.locfileid: "44154449"
   "suppressions": []
 }
 -->
+
+
