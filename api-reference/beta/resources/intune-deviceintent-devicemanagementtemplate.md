@@ -3,14 +3,14 @@ title: deviceManagementTemplate 资源类型
 description: 表示已定义的设备设置集合的实体
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67bc7414ec7f4546111e033f4b46b744cd9ed100
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: f898df5eb0208e3c7b12210708c76bc93f84cf53
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790411"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061050"
 ---
 # <a name="devicemanagementtemplate-resource-type"></a>deviceManagementTemplate 资源类型
 
@@ -39,11 +39,11 @@ ms.locfileid: "46790411"
 |:---|:---|:---|
 |id|String|模板 ID|
 |displayName|String|模板的显示名称|
-|description|String|模板的说明|
+|说明|String|模板的说明|
 |versionInfo|String|模板的版本信息|
-|isDeprecated|布尔值|模板已弃用或不已弃用。 无法从已弃用的模板创建意向。|
+|isDeprecated|Boolean|模板已弃用或不已弃用。 无法从已弃用的模板创建意向。|
 |intentCount|Int32|从此模板创建的意向数。|
-|templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|模板的类型。 可取值为：`securityBaseline`、`specializedDevices`、`advancedThreatProtectionSecurityBaseline`、`deviceConfiguration`、`custom`、`securityTemplate`、`microsoftEdgeSecurityBaseline`、`microsoftOffice365ProPlusSecurityBaseline`、`deviceCompliance`、`deviceConfigurationForOffice365`。|
+|templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|模板的类型。 可取值为：`securityBaseline`、`specializedDevices`、`advancedThreatProtectionSecurityBaseline`、`deviceConfiguration`、`custom`、`securityTemplate`、`microsoftEdgeSecurityBaseline`、`microsoftOffice365ProPlusSecurityBaseline`、`deviceCompliance`、`deviceConfigurationForOffice365`、`cloudPC`。|
 |platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|模板的平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`windows10XProfile`、`all`。|
 |templateSubtype|[deviceManagementTemplateSubtype](../resources/intune-deviceintent-devicemanagementtemplatesubtype.md)|模板的子类型。 可取值为：`none`、`firewall`、`diskEncryption`、`attackSurfaceReduction`、`endpointDetectionReponse`、`accountProtection` 或 `antivirus`。|
 |publishedDateTime|DateTimeOffset|发布模板时|
@@ -51,7 +51,7 @@ ms.locfileid: "46790411"
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|settings|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) 集合|此模板包含的所有设置的集合|
+|设置|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) 集合|此模板包含的所有设置的集合|
 |categories|[deviceManagementTemplateSettingCategory](../resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md) 集合|模板中设置类别的集合|
 |migratableTo|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md) 集合|此模板可以迁移到的模板集合|
 
@@ -78,6 +78,9 @@ ms.locfileid: "46790411"
   "publishedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

@@ -3,27 +3,27 @@ title: deviceManagementSettingSddlConstraint 资源类型
 description: 强制实施设置的约束是格式正确的 SDDL
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 56836ee15ef8b19407b56af231305e35f4361ba7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 434d4a634a480ae4c2b09aa55c28981bbf078324
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420052"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061117"
 ---
 # <a name="devicemanagementsettingsddlconstraint-resource-type"></a>deviceManagementSettingSddlConstraint 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 强制实施设置的约束是格式正确的 SDDL
 
 
-继承自[deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
+继承自 [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -44,6 +44,9 @@ ms.locfileid: "43420052"
   "@odata.type": "#microsoft.graph.deviceManagementSettingSddlConstraint"
 }
 ```
+
+
+
 
 
 
