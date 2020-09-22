@@ -5,32 +5,32 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4fbfb2155d0921de33b9aea78e6ab015994d6208
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 131a07a9b7935b97d9b392a555503fe68ac4c2a8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916386"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983429"
 ---
-# <a name="get-activitybasedtimeoutpolicy"></a><span data-ttu-id="16caa-103">获取 activityBasedTimeoutPolicy</span><span class="sxs-lookup"><span data-stu-id="16caa-103">Get activityBasedTimeoutPolicy</span></span>
+# <a name="get-activitybasedtimeoutpolicy"></a><span data-ttu-id="92186-103">获取 activityBasedTimeoutPolicy</span><span class="sxs-lookup"><span data-stu-id="92186-103">Get activityBasedTimeoutPolicy</span></span>
 
-<span data-ttu-id="16caa-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="16caa-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="92186-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="92186-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="16caa-105">获取[activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="16caa-105">Get the properties of an [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object.</span></span>
+<span data-ttu-id="92186-105">获取 [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="92186-105">Get the properties of an [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="16caa-106">权限</span><span class="sxs-lookup"><span data-stu-id="16caa-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="92186-106">权限</span><span class="sxs-lookup"><span data-stu-id="92186-106">Permissions</span></span>
 
-<span data-ttu-id="16caa-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="16caa-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="92186-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="92186-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="16caa-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="16caa-109">Permission type</span></span>                        | <span data-ttu-id="16caa-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="16caa-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="92186-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="92186-109">Permission type</span></span>                        | <span data-ttu-id="92186-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="92186-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="16caa-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="16caa-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="16caa-112">Policy： Read. All，ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="16caa-112">Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration</span></span> |
-| <span data-ttu-id="16caa-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="16caa-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="16caa-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="16caa-114">Not supported.</span></span> |
-| <span data-ttu-id="16caa-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="16caa-115">Application</span></span>                            | <span data-ttu-id="16caa-116">Policy： Read. All，ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="16caa-116">Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration</span></span> |
+| <span data-ttu-id="92186-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="92186-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="92186-112">Policy： Read. All，ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="92186-112">Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration</span></span> |
+| <span data-ttu-id="92186-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="92186-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="92186-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="92186-114">Not supported.</span></span> |
+| <span data-ttu-id="92186-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="92186-115">Application</span></span>                            | <span data-ttu-id="92186-116">Policy： Read. All，ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="92186-116">Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="16caa-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="16caa-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="92186-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="92186-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,31 +38,31 @@ ms.locfileid: "43916386"
 GET /policies/activityBasedTimeoutPolicies/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="16caa-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="16caa-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="92186-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="92186-118">Optional query parameters</span></span>
 
-<span data-ttu-id="16caa-119">此方法支持`$select` OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="16caa-119">This method supports the `$select` OData query parameters to help customize the response.</span></span> <span data-ttu-id="16caa-120">有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="16caa-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="92186-119">此方法支持 `$select` OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="92186-119">This method supports the `$select` OData query parameters to help customize the response.</span></span> <span data-ttu-id="92186-120">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="92186-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="16caa-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="16caa-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="92186-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="92186-121">Request headers</span></span>
 
-| <span data-ttu-id="16caa-122">名称</span><span class="sxs-lookup"><span data-stu-id="16caa-122">Name</span></span>      |<span data-ttu-id="16caa-123">说明</span><span class="sxs-lookup"><span data-stu-id="16caa-123">Description</span></span>|
+| <span data-ttu-id="92186-122">名称</span><span class="sxs-lookup"><span data-stu-id="92186-122">Name</span></span>      |<span data-ttu-id="92186-123">说明</span><span class="sxs-lookup"><span data-stu-id="92186-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="16caa-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="16caa-124">Authorization</span></span> | <span data-ttu-id="16caa-125">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="16caa-125">Bearer {token}</span></span> |
+| <span data-ttu-id="92186-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="92186-124">Authorization</span></span> | <span data-ttu-id="92186-125">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="92186-125">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="16caa-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="16caa-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="92186-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="92186-126">Request body</span></span>
 
-<span data-ttu-id="16caa-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="16caa-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="92186-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="92186-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="16caa-128">响应</span><span class="sxs-lookup"><span data-stu-id="16caa-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="92186-128">响应</span><span class="sxs-lookup"><span data-stu-id="92186-128">Response</span></span>
 
-<span data-ttu-id="16caa-129">如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md)对象。</span><span class="sxs-lookup"><span data-stu-id="16caa-129">If successful, this method returns a `200 OK` response code and the requested [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object in the response body.</span></span>
+<span data-ttu-id="92186-129">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="92186-129">If successful, this method returns a `200 OK` response code and the requested [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="16caa-130">示例</span><span class="sxs-lookup"><span data-stu-id="16caa-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="92186-130">示例</span><span class="sxs-lookup"><span data-stu-id="92186-130">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="16caa-131">请求</span><span class="sxs-lookup"><span data-stu-id="16caa-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="92186-131">请求</span><span class="sxs-lookup"><span data-stu-id="92186-131">Request</span></span>
 
-<span data-ttu-id="16caa-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="16caa-132">The following is an example of the request.</span></span>
+<span data-ttu-id="92186-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="92186-132">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="16caa-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="16caa-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="92186-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="92186-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_activitybasedtimeoutpolicy"
@@ -71,26 +71,26 @@ GET /policies/activityBasedTimeoutPolicies/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/activityBasedTimeoutPolicies/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="16caa-134">C#</span><span class="sxs-lookup"><span data-stu-id="16caa-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="92186-134">C#</span><span class="sxs-lookup"><span data-stu-id="92186-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-activitybasedtimeoutpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="16caa-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="16caa-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="92186-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="92186-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-activitybasedtimeoutpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="16caa-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="16caa-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="92186-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="92186-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-activitybasedtimeoutpolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="16caa-137">响应</span><span class="sxs-lookup"><span data-stu-id="16caa-137">Response</span></span>
+### <a name="response"></a><span data-ttu-id="92186-137">响应</span><span class="sxs-lookup"><span data-stu-id="92186-137">Response</span></span>
 
-<span data-ttu-id="16caa-138">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="16caa-138">The following is an example of the response.</span></span>
+<span data-ttu-id="92186-138">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="92186-138">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="16caa-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="16caa-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="92186-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="92186-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -121,3 +121,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -6,140 +6,140 @@ title: 列出驱动器
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 06bf3b2b6daa9bb95b4767c876d8a7aa9893290d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 319a0b18952b13de329aabccc222f01bdbf02e18
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433221"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982232"
 ---
-# <a name="list-available-drives"></a><span data-ttu-id="1a310-103">列出可用的驱动器</span><span class="sxs-lookup"><span data-stu-id="1a310-103">List available drives</span></span>
+# <a name="list-available-drives"></a><span data-ttu-id="9481e-103">列出可用的驱动器</span><span class="sxs-lookup"><span data-stu-id="9481e-103">List available drives</span></span>
 
-<span data-ttu-id="1a310-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="1a310-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="9481e-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9481e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1a310-105">检索可用于目标用户、组或[站点](../resources/site.md)的 [Drive](../resources/drive.md) 资源列表。</span><span class="sxs-lookup"><span data-stu-id="1a310-105">Retrieve the list of [Drive](../resources/drive.md) resources available for a target User, Group, or [Site](../resources/site.md).</span></span>
+<span data-ttu-id="9481e-105">检索可用于目标用户、组或[站点](../resources/site.md)的 [Drive](../resources/drive.md) 资源列表。</span><span class="sxs-lookup"><span data-stu-id="9481e-105">Retrieve the list of [Drive](../resources/drive.md) resources available for a target User, Group, or [Site](../resources/site.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1a310-106">权限</span><span class="sxs-lookup"><span data-stu-id="1a310-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9481e-106">权限</span><span class="sxs-lookup"><span data-stu-id="9481e-106">Permissions</span></span>
 
-<span data-ttu-id="1a310-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1a310-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9481e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9481e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1a310-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="1a310-109">Permission type</span></span>      | <span data-ttu-id="1a310-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1a310-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9481e-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="9481e-109">Permission type</span></span>      | <span data-ttu-id="9481e-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9481e-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1a310-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1a310-111">Delegated (work or school account)</span></span> | <span data-ttu-id="1a310-112">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1a310-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1a310-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1a310-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1a310-114">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1a310-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1a310-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="1a310-115">Application</span></span> | <span data-ttu-id="1a310-116">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1a310-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="9481e-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9481e-111">Delegated (work or school account)</span></span> | <span data-ttu-id="9481e-112">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9481e-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="9481e-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9481e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9481e-114">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9481e-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="9481e-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="9481e-115">Application</span></span> | <span data-ttu-id="9481e-116">Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9481e-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="list-a-groups-drives"></a><span data-ttu-id="1a310-117">列出组的驱动器</span><span class="sxs-lookup"><span data-stu-id="1a310-117">List a group's drives</span></span>
+## <a name="list-a-groups-drives"></a><span data-ttu-id="9481e-117">列出组的驱动器</span><span class="sxs-lookup"><span data-stu-id="9481e-117">List a group's drives</span></span>
 
-<span data-ttu-id="1a310-118">若要列出某个组的文档库，应用应请求组中的 **drives** 关系。</span><span class="sxs-lookup"><span data-stu-id="1a310-118">To list the document libraries for a group, your app requests the **drives** relationship on the Group.</span></span>
+<span data-ttu-id="9481e-118">若要列出某个组的文档库，应用应请求组中的 **drives** 关系。</span><span class="sxs-lookup"><span data-stu-id="9481e-118">To list the document libraries for a group, your app requests the **drives** relationship on the Group.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="1a310-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1a310-119">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="9481e-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9481e-119">HTTP request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="1a310-120">HTTP</span><span class="sxs-lookup"><span data-stu-id="1a310-120">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9481e-120">HTTP</span><span class="sxs-lookup"><span data-stu-id="9481e-120">HTTP</span></span>](#tab/http)
 <!-- {"blockType": "request", "name": "group-list-drives", "scopes": "groups.read.all" } -->
 
 ```msgraph-interactive
 GET /groups/{groupId}/drives
 ```
-# <a name="c"></a>[<span data-ttu-id="1a310-121">C#</span><span class="sxs-lookup"><span data-stu-id="1a310-121">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9481e-121">C#</span><span class="sxs-lookup"><span data-stu-id="9481e-121">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-list-drives-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1a310-122">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1a310-122">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9481e-122">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9481e-122">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-list-drives-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1a310-123">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1a310-123">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9481e-123">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9481e-123">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-list-drives-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="list-a-sites-drives"></a><span data-ttu-id="1a310-124">列出站点的驱动器</span><span class="sxs-lookup"><span data-stu-id="1a310-124">List a site's drives</span></span>
+## <a name="list-a-sites-drives"></a><span data-ttu-id="9481e-124">列出站点的驱动器</span><span class="sxs-lookup"><span data-stu-id="9481e-124">List a site's drives</span></span>
 
-<span data-ttu-id="1a310-125">若要列出某个站点的文档库，应用应请求站点中的 **drives** 关系。</span><span class="sxs-lookup"><span data-stu-id="1a310-125">To list the document libraries for a site, your app requests the **drives** relationship on the Site.</span></span>
+<span data-ttu-id="9481e-125">若要列出某个站点的文档库，应用应请求站点中的 **drives** 关系。</span><span class="sxs-lookup"><span data-stu-id="9481e-125">To list the document libraries for a site, your app requests the **drives** relationship on the Site.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="1a310-126">HTTP</span><span class="sxs-lookup"><span data-stu-id="1a310-126">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9481e-126">HTTP</span><span class="sxs-lookup"><span data-stu-id="9481e-126">HTTP</span></span>](#tab/http)
 <!-- {"blockType": "request", "name": "site-list-drives", "scopes": "sites.read.all" } -->
 
 ```msgraph-interactive
 GET /sites/{siteId}/drives
 ```
-# <a name="c"></a>[<span data-ttu-id="1a310-127">C#</span><span class="sxs-lookup"><span data-stu-id="1a310-127">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9481e-127">C#</span><span class="sxs-lookup"><span data-stu-id="9481e-127">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/site-list-drives-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1a310-128">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1a310-128">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9481e-128">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9481e-128">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/site-list-drives-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1a310-129">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1a310-129">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9481e-129">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9481e-129">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/site-list-drives-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="list-a-users-drives"></a><span data-ttu-id="1a310-130">列出用户的驱动器</span><span class="sxs-lookup"><span data-stu-id="1a310-130">List a user's drives</span></span>
+## <a name="list-a-users-drives"></a><span data-ttu-id="9481e-130">列出用户的驱动器</span><span class="sxs-lookup"><span data-stu-id="9481e-130">List a user's drives</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="1a310-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="1a310-131">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9481e-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="9481e-131">HTTP</span></span>](#tab/http)
 <!-- {"blockType": "request", "name": "user-list-drives", "scopes": "files.read.all" } -->
 
 ```msgraph-interactive
 GET /users/{userId}/drives
 ```
-# <a name="c"></a>[<span data-ttu-id="1a310-132">C#</span><span class="sxs-lookup"><span data-stu-id="1a310-132">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9481e-132">C#</span><span class="sxs-lookup"><span data-stu-id="9481e-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-list-drives-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1a310-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1a310-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9481e-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9481e-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-list-drives-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1a310-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1a310-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9481e-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9481e-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-list-drives-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="list-the-current-users-drives"></a><span data-ttu-id="1a310-135">列出当前用户的驱动器</span><span class="sxs-lookup"><span data-stu-id="1a310-135">List the current user's drives</span></span>
+## <a name="list-the-current-users-drives"></a><span data-ttu-id="9481e-135">列出当前用户的驱动器</span><span class="sxs-lookup"><span data-stu-id="9481e-135">List the current user's drives</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="1a310-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="1a310-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9481e-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="9481e-136">HTTP</span></span>](#tab/http)
 <!-- {"blockType": "request", "name": "enum-drives", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /me/drives
 ```
-# <a name="c"></a>[<span data-ttu-id="1a310-137">C#</span><span class="sxs-lookup"><span data-stu-id="1a310-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9481e-137">C#</span><span class="sxs-lookup"><span data-stu-id="9481e-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/enum-drives-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1a310-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1a310-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9481e-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9481e-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/enum-drives-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1a310-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1a310-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9481e-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9481e-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/enum-drives-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="1a310-140">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="1a310-140">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="9481e-140">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="9481e-140">Optional query parameters</span></span>
 
-<span data-ttu-id="1a310-141">此方法支持使用 `$expand`、`$select`、`$skipToken`、`$top` 和 `$orderby` [OData 查询参数](/graph/query-parameters)自定义响应。</span><span class="sxs-lookup"><span data-stu-id="1a310-141">This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="9481e-141">此方法支持使用 `$expand`、`$select`、`$skipToken`、`$top` 和 `$orderby` [OData 查询参数](/graph/query-parameters)自定义响应。</span><span class="sxs-lookup"><span data-stu-id="9481e-141">This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1a310-142">响应</span><span class="sxs-lookup"><span data-stu-id="1a310-142">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9481e-142">响应</span><span class="sxs-lookup"><span data-stu-id="9481e-142">Response</span></span>
 
-<span data-ttu-id="1a310-143">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Drive](../resources/drive.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="1a310-143">If successful, this method returns a `200 OK` response code and collection of [Drive](../resources/drive.md) objects in the response body.</span></span>
+<span data-ttu-id="9481e-143">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Drive](../resources/drive.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="9481e-143">If successful, this method returns a `200 OK` response code and collection of [Drive](../resources/drive.md) objects in the response body.</span></span>
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.drive)",
@@ -178,14 +178,14 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="1a310-144">备注</span><span class="sxs-lookup"><span data-stu-id="1a310-144">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9481e-144">备注</span><span class="sxs-lookup"><span data-stu-id="9481e-144">Remarks</span></span>
 
-<span data-ttu-id="1a310-145">大多数用户将只有一个 Drive 资源。</span><span class="sxs-lookup"><span data-stu-id="1a310-145">Most users will only have a single Drive resource.</span></span>
+<span data-ttu-id="9481e-145">大多数用户将只有一个 Drive 资源。</span><span class="sxs-lookup"><span data-stu-id="9481e-145">Most users will only have a single Drive resource.</span></span>
 
-<span data-ttu-id="1a310-146">组和站点可使用多个 Drive 资源。</span><span class="sxs-lookup"><span data-stu-id="1a310-146">Groups and Sites may have multiple Drive resources available.</span></span>
+<span data-ttu-id="9481e-146">组和站点可使用多个 Drive 资源。</span><span class="sxs-lookup"><span data-stu-id="9481e-146">Groups and Sites may have multiple Drive resources available.</span></span>
 
-<span data-ttu-id="1a310-147">默认情况下将隐藏包含 [system][] Facet 的 Drive。</span><span class="sxs-lookup"><span data-stu-id="1a310-147">Drives with the [system][] facet are hidden by default.</span></span>
-<span data-ttu-id="1a310-148">若要列出它们，请在 `$select` 语句中包含 `system`。</span><span class="sxs-lookup"><span data-stu-id="1a310-148">To list them, include `system` in your `$select` statement.</span></span>
+<span data-ttu-id="9481e-147">默认情况下将隐藏包含 [system][] Facet 的 Drive。</span><span class="sxs-lookup"><span data-stu-id="9481e-147">Drives with the [system][] facet are hidden by default.</span></span>
+<span data-ttu-id="9481e-148">若要列出它们，请在 `$select` 语句中包含 `system`。</span><span class="sxs-lookup"><span data-stu-id="9481e-148">To list them, include `system` in your `$select` statement.</span></span>
 
 [system]: ../resources/systemfacet.md
 
@@ -200,3 +200,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

@@ -5,36 +5,36 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4d7660d1360216e4bc648d98e2899ead2aff0064
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: 50ae9c5157d78eb55492dd4021d777149d4620c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630393"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982652"
 ---
-# <a name="send-chatmessage-in-a-chat"></a><span data-ttu-id="40b89-103">在聊天中发送了 chatmessage</span><span class="sxs-lookup"><span data-stu-id="40b89-103">Send chatMessage in a chat</span></span>
+# <a name="send-chatmessage-in-a-chat"></a><span data-ttu-id="fd722-103">在聊天中发送了 chatmessage</span><span class="sxs-lookup"><span data-stu-id="fd722-103">Send chatMessage in a chat</span></span>
 
-<span data-ttu-id="40b89-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="40b89-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="fd722-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fd722-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="40b89-105">在指定的[聊天](../resources/chat.md)中创建新的[了 chatmessage](../resources/chatmessage.md) 。</span><span class="sxs-lookup"><span data-stu-id="40b89-105">Create a new [chatMessage](../resources/chatmessage.md) in the specified [chat](../resources/chat.md).</span></span> <span data-ttu-id="40b89-106">此 API 无法创建新聊天;在创建聊天消息之前，必须使用 "[列表聊天](chat-list.md)" 方法检索现有聊天的 ID。</span><span class="sxs-lookup"><span data-stu-id="40b89-106">This API cannot create an new chat; you must use the [list chats](chat-list.md) method to retreive the ID of an existing chat before creating a chat message.</span></span>
+<span data-ttu-id="fd722-105">在指定的[聊天](../resources/chat.md)中创建新的[了 chatmessage](../resources/chatmessage.md) 。</span><span class="sxs-lookup"><span data-stu-id="fd722-105">Create a new [chatMessage](../resources/chatmessage.md) in the specified [chat](../resources/chat.md).</span></span> <span data-ttu-id="fd722-106">此 API 无法创建新聊天;在创建聊天消息之前，必须使用 " [列表聊天](chat-list.md) " 方法检索现有聊天的 ID。</span><span class="sxs-lookup"><span data-stu-id="fd722-106">This API cannot create an new chat; you must use the [list chats](chat-list.md) method to retreive the ID of an existing chat before creating a chat message.</span></span>
 
-> <span data-ttu-id="40b89-107">**注意**：我们建议您不要使用此 API 进行数据迁移。</span><span class="sxs-lookup"><span data-stu-id="40b89-107">**Note**: We don't recommend that you use this API for data migration.</span></span> <span data-ttu-id="40b89-108">它不具有典型迁移所需的吞吐量。</span><span class="sxs-lookup"><span data-stu-id="40b89-108">It does not have the throughput necessary for a typical migration.</span></span>
+> <span data-ttu-id="fd722-107">**注意**：我们建议您不要使用此 API 进行数据迁移。</span><span class="sxs-lookup"><span data-stu-id="fd722-107">**Note**: We don't recommend that you use this API for data migration.</span></span> <span data-ttu-id="fd722-108">它不具有典型迁移所需的吞吐量。</span><span class="sxs-lookup"><span data-stu-id="fd722-108">It does not have the throughput necessary for a typical migration.</span></span>
 
-> <span data-ttu-id="40b89-109">**注意**：违反使用 Microsoft 团队作为日志文件的[使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)。</span><span class="sxs-lookup"><span data-stu-id="40b89-109">**Note**: It is a violation of the [terms of use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file.</span></span> <span data-ttu-id="40b89-110">仅发送人员将阅读的邮件。</span><span class="sxs-lookup"><span data-stu-id="40b89-110">Only send messages that people will read.</span></span>
+> <span data-ttu-id="fd722-109">**注意**：违反使用 Microsoft 团队作为日志文件的 [使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) 。</span><span class="sxs-lookup"><span data-stu-id="fd722-109">**Note**: It is a violation of the [terms of use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file.</span></span> <span data-ttu-id="fd722-110">仅发送人员将阅读的邮件。</span><span class="sxs-lookup"><span data-stu-id="fd722-110">Only send messages that people will read.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="40b89-111">权限</span><span class="sxs-lookup"><span data-stu-id="40b89-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="fd722-111">权限</span><span class="sxs-lookup"><span data-stu-id="fd722-111">Permissions</span></span>
 
-<span data-ttu-id="40b89-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="40b89-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fd722-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="fd722-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="40b89-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="40b89-114">Permission type</span></span>                        | <span data-ttu-id="40b89-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="40b89-115">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="fd722-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="fd722-114">Permission type</span></span>                        | <span data-ttu-id="fd722-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="fd722-115">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="40b89-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="40b89-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="40b89-117">了 chatmessage、聊天室</span><span class="sxs-lookup"><span data-stu-id="40b89-117">ChatMessage.Send, Chat.ReadWrite</span></span> |
-| <span data-ttu-id="40b89-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="40b89-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="40b89-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="40b89-119">Not supported.</span></span> |
-| <span data-ttu-id="40b89-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="40b89-120">Application</span></span>                            | <span data-ttu-id="40b89-121">不支持。</span><span class="sxs-lookup"><span data-stu-id="40b89-121">Not supported.</span></span> |
+| <span data-ttu-id="fd722-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fd722-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="fd722-117">了 chatmessage、聊天室</span><span class="sxs-lookup"><span data-stu-id="fd722-117">ChatMessage.Send, Chat.ReadWrite</span></span> |
+| <span data-ttu-id="fd722-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fd722-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fd722-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="fd722-119">Not supported.</span></span> |
+| <span data-ttu-id="fd722-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="fd722-120">Application</span></span>                            | <span data-ttu-id="fd722-121">不支持。</span><span class="sxs-lookup"><span data-stu-id="fd722-121">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="40b89-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="40b89-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fd722-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fd722-122">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -43,29 +43,29 @@ POST /chats/{id}/messages
 POST /users/{id}/chats/{id}/messages
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="40b89-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="40b89-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="fd722-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="fd722-123">Request headers</span></span>
 
-| <span data-ttu-id="40b89-124">名称</span><span class="sxs-lookup"><span data-stu-id="40b89-124">Name</span></span>          | <span data-ttu-id="40b89-125">说明</span><span class="sxs-lookup"><span data-stu-id="40b89-125">Description</span></span>   |
+| <span data-ttu-id="fd722-124">名称</span><span class="sxs-lookup"><span data-stu-id="fd722-124">Name</span></span>          | <span data-ttu-id="fd722-125">说明</span><span class="sxs-lookup"><span data-stu-id="fd722-125">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="40b89-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="40b89-126">Authorization</span></span> | <span data-ttu-id="40b89-127">Bearer {code}。</span><span class="sxs-lookup"><span data-stu-id="40b89-127">Bearer {code}.</span></span> <span data-ttu-id="40b89-128">必需。</span><span class="sxs-lookup"><span data-stu-id="40b89-128">Required.</span></span> |
+| <span data-ttu-id="fd722-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="fd722-126">Authorization</span></span> | <span data-ttu-id="fd722-127">Bearer {code}。</span><span class="sxs-lookup"><span data-stu-id="fd722-127">Bearer {code}.</span></span> <span data-ttu-id="fd722-128">必需。</span><span class="sxs-lookup"><span data-stu-id="fd722-128">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="40b89-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="40b89-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="fd722-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="fd722-129">Request body</span></span>
 
-<span data-ttu-id="40b89-130">在请求正文中，提供[了 chatmessage](../resources/chatmessage.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="40b89-130">In the request body, supply a JSON representation of a [chatMessage](../resources/chatmessage.md) object.</span></span>
+<span data-ttu-id="fd722-130">在请求正文中，提供 [了 chatmessage](../resources/chatmessage.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="fd722-130">In the request body, supply a JSON representation of a [chatMessage](../resources/chatmessage.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="40b89-131">响应</span><span class="sxs-lookup"><span data-stu-id="40b89-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fd722-131">响应</span><span class="sxs-lookup"><span data-stu-id="fd722-131">Response</span></span>
 
-<span data-ttu-id="40b89-132">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[了 chatmessage](../resources/chatmessage.md)对象。</span><span class="sxs-lookup"><span data-stu-id="40b89-132">If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.</span></span>
+<span data-ttu-id="fd722-132">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [了 chatmessage](../resources/chatmessage.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="fd722-132">If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="40b89-133">示例</span><span class="sxs-lookup"><span data-stu-id="40b89-133">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="fd722-133">示例</span><span class="sxs-lookup"><span data-stu-id="fd722-133">Examples</span></span>
 
-<span data-ttu-id="40b89-134">有关示例的更完整列表，请参阅[Create 了 chatmessage in a 信道 or chat](chatmessage-post.md)。</span><span class="sxs-lookup"><span data-stu-id="40b89-134">For a more comprehensive list of examples, see [Create chatMessage in a channel or a chat](chatmessage-post.md).</span></span>
+<span data-ttu-id="fd722-134">有关示例的更完整列表，请参阅 [Create 了 chatmessage in a 信道 or chat](chatmessage-post.md)。</span><span class="sxs-lookup"><span data-stu-id="fd722-134">For a more comprehensive list of examples, see [Create chatMessage in a channel or a chat](chatmessage-post.md).</span></span>
 
-### <a name="request"></a><span data-ttu-id="40b89-135">请求</span><span class="sxs-lookup"><span data-stu-id="40b89-135">Request</span></span>
+### <a name="request"></a><span data-ttu-id="fd722-135">请求</span><span class="sxs-lookup"><span data-stu-id="fd722-135">Request</span></span>
 
-<span data-ttu-id="40b89-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="40b89-136">The following is an example of the request.</span></span>
+<span data-ttu-id="fd722-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="fd722-136">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="40b89-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="40b89-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="fd722-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="fd722-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_chat"
@@ -81,26 +81,26 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="40b89-138">C#</span><span class="sxs-lookup"><span data-stu-id="40b89-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="fd722-138">C#</span><span class="sxs-lookup"><span data-stu-id="fd722-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-chat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="40b89-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="40b89-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="fd722-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fd722-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-chat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="40b89-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="40b89-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="fd722-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fd722-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-chat-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="40b89-141">响应</span><span class="sxs-lookup"><span data-stu-id="40b89-141">Response</span></span>
+### <a name="response"></a><span data-ttu-id="fd722-141">响应</span><span class="sxs-lookup"><span data-stu-id="fd722-141">Response</span></span>
 
-<span data-ttu-id="40b89-142">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="40b89-142">The following is an example of the response.</span></span>
+<span data-ttu-id="fd722-142">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="fd722-142">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="40b89-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="40b89-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="fd722-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="fd722-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -142,3 +142,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

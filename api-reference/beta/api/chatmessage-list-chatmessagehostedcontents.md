@@ -5,37 +5,37 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 51311dccc3ba5068d2d6485763c157dbbc8c3a35
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 7e235a902421e7f969e9d9e63400e08e7ebfb253
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491290"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982633"
 ---
-# <a name="list-hostedcontents"></a><span data-ttu-id="aa9bc-103">列出 hostedContents</span><span class="sxs-lookup"><span data-stu-id="aa9bc-103">List hostedContents</span></span>
+# <a name="list-hostedcontents"></a><span data-ttu-id="69fa7-103">列出 hostedContents</span><span class="sxs-lookup"><span data-stu-id="69fa7-103">List hostedContents</span></span>
 
-<span data-ttu-id="aa9bc-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="aa9bc-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="69fa7-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="69fa7-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="aa9bc-105">从邮件中检索[chatMessageHostedContent](../resources/chatmessagehostedcontent.md)对象的列表。</span><span class="sxs-lookup"><span data-stu-id="aa9bc-105">Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) objects from a message.</span></span>
+<span data-ttu-id="69fa7-105">从邮件中检索 [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="69fa7-105">Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) objects from a message.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="aa9bc-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="aa9bc-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="69fa7-106">权限</span><span class="sxs-lookup"><span data-stu-id="69fa7-106">Permissions</span></span>
 
-<span data-ttu-id="aa9bc-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="aa9bc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="69fa7-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="69fa7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="aa9bc-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="aa9bc-109">Permission type</span></span>                        | <span data-ttu-id="aa9bc-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="aa9bc-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="69fa7-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="69fa7-109">Permission type</span></span>                        | <span data-ttu-id="69fa7-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="69fa7-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-|<span data-ttu-id="aa9bc-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="aa9bc-111">Delegated (work or school account)</span></span>| <span data-ttu-id="aa9bc-112">对于**用户**或**聊天**资源：聊天、阅读、读写</span><span class="sxs-lookup"><span data-stu-id="aa9bc-112">For **user** or **chat** resource: Chat.Read, Chat.ReadWrite</span></span><br/><br/><span data-ttu-id="aa9bc-113">对于**信道**资源： ChannelMessage、Group. WriteAll。请参阅。</span><span class="sxs-lookup"><span data-stu-id="aa9bc-113">For **channel** resource: ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll</span></span> |
-|<span data-ttu-id="aa9bc-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="aa9bc-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="aa9bc-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="aa9bc-115">Not supported.</span></span>|
-|<span data-ttu-id="aa9bc-116">Application</span><span class="sxs-lookup"><span data-stu-id="aa9bc-116">Application</span></span>| <span data-ttu-id="aa9bc-117">对于**用户**或**聊天**资源：聊天、全部、聊天室。所有</span><span class="sxs-lookup"><span data-stu-id="aa9bc-117">For **user** or **chat** resource: Chat.Read.All, Chat.ReadWrite.All</span></span><br/><br/><span data-ttu-id="aa9bc-118">对于**信道**资源： ChannelMessage \*、ChannelMessage、group. All、Group. All。 all</span><span class="sxs-lookup"><span data-stu-id="aa9bc-118">For **channel** resource: ChannelMessage.Read.Group\*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="69fa7-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="69fa7-111">Delegated (work or school account)</span></span>| <span data-ttu-id="69fa7-112">对于 **用户** 或 **聊天** 资源：聊天、阅读、读写</span><span class="sxs-lookup"><span data-stu-id="69fa7-112">For **user** or **chat** resource: Chat.Read, Chat.ReadWrite</span></span><br/><br/><span data-ttu-id="69fa7-113">对于 **信道** 资源： ChannelMessage、Group. WriteAll。请参阅。</span><span class="sxs-lookup"><span data-stu-id="69fa7-113">For **channel** resource: ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll</span></span> |
+|<span data-ttu-id="69fa7-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="69fa7-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="69fa7-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="69fa7-115">Not supported.</span></span>|
+|<span data-ttu-id="69fa7-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="69fa7-116">Application</span></span>| <span data-ttu-id="69fa7-117">对于 **用户** 或 **聊天** 资源：聊天、全部、聊天室。所有</span><span class="sxs-lookup"><span data-stu-id="69fa7-117">For **user** or **chat** resource: Chat.Read.All, Chat.ReadWrite.All</span></span><br/><br/><span data-ttu-id="69fa7-118">对于 **信道** 资源： ChannelMessage \*、ChannelMessage、group. All、Group. All。 all</span><span class="sxs-lookup"><span data-stu-id="69fa7-118">For **channel** resource: ChannelMessage.Read.Group\*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="aa9bc-119">**注意**：标记为 \* 的权限使用[特定于资源的同意]( https://aka.ms/teams-rsc)。</span><span class="sxs-lookup"><span data-stu-id="aa9bc-119">**Note**: Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
+> <span data-ttu-id="69fa7-119">**注意**：标有 \* 的权限用于[特定于资源的同意]( https://aka.ms/teams-rsc)。</span><span class="sxs-lookup"><span data-stu-id="69fa7-119">**Note**: Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="aa9bc-120">在使用应用程序权限调用此 API 之前，你必须先请求访问权限。</span><span class="sxs-lookup"><span data-stu-id="aa9bc-120">Before calling this API with application permissions, you must request access.</span></span> <span data-ttu-id="aa9bc-121">有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。</span><span class="sxs-lookup"><span data-stu-id="aa9bc-121">For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).</span></span>
+> <span data-ttu-id="69fa7-120">在使用应用程序权限调用此 API 之前，你必须先请求访问权限。</span><span class="sxs-lookup"><span data-stu-id="69fa7-120">Before calling this API with application permissions, you must request access.</span></span> <span data-ttu-id="69fa7-121">有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。</span><span class="sxs-lookup"><span data-stu-id="69fa7-121">For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="aa9bc-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="aa9bc-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="69fa7-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="69fa7-122">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -45,31 +45,31 @@ GET /users/{id}/chats/{id}/messages/{id}/hostedContents
 GET /teams/{id}/channels/{id}/messages/{id}/hostedContents
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="aa9bc-123">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="aa9bc-123">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="69fa7-123">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="69fa7-123">Optional query parameters</span></span>
 
-<span data-ttu-id="aa9bc-124">此操作不支持使用 [OData 查询参数](/graph/query-parameters)来自定义响应。</span><span class="sxs-lookup"><span data-stu-id="aa9bc-124">This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="69fa7-124">此操作不支持使用 [OData 查询参数](/graph/query-parameters)来自定义响应。</span><span class="sxs-lookup"><span data-stu-id="69fa7-124">This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="aa9bc-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="aa9bc-125">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="69fa7-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="69fa7-125">Request headers</span></span>
 
-| <span data-ttu-id="aa9bc-126">名称</span><span class="sxs-lookup"><span data-stu-id="aa9bc-126">Name</span></span>      |<span data-ttu-id="aa9bc-127">说明</span><span class="sxs-lookup"><span data-stu-id="aa9bc-127">Description</span></span>|
+| <span data-ttu-id="69fa7-126">名称</span><span class="sxs-lookup"><span data-stu-id="69fa7-126">Name</span></span>      |<span data-ttu-id="69fa7-127">说明</span><span class="sxs-lookup"><span data-stu-id="69fa7-127">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="aa9bc-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="aa9bc-128">Authorization</span></span> | <span data-ttu-id="aa9bc-129">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="aa9bc-129">Bearer {code}</span></span> |
+| <span data-ttu-id="69fa7-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="69fa7-128">Authorization</span></span> | <span data-ttu-id="69fa7-129">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="69fa7-129">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="aa9bc-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="aa9bc-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="69fa7-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="69fa7-130">Request body</span></span>
 
-<span data-ttu-id="aa9bc-131">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="aa9bc-131">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="69fa7-131">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="69fa7-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="aa9bc-132">响应</span><span class="sxs-lookup"><span data-stu-id="aa9bc-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="69fa7-132">响应</span><span class="sxs-lookup"><span data-stu-id="69fa7-132">Response</span></span>
 
-<span data-ttu-id="aa9bc-133">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[chatMessageHostedContent](../resources/chatmessagehostedcontent.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="aa9bc-133">If successful, this method returns a `200 OK` response code and a collection of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) objects in the response body.</span></span>
+<span data-ttu-id="69fa7-133">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="69fa7-133">If successful, this method returns a `200 OK` response code and a collection of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="aa9bc-134">示例</span><span class="sxs-lookup"><span data-stu-id="aa9bc-134">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="69fa7-134">示例</span><span class="sxs-lookup"><span data-stu-id="69fa7-134">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="aa9bc-135">请求</span><span class="sxs-lookup"><span data-stu-id="aa9bc-135">Request</span></span>
+### <a name="request"></a><span data-ttu-id="69fa7-135">请求</span><span class="sxs-lookup"><span data-stu-id="69fa7-135">Request</span></span>
 
-<span data-ttu-id="aa9bc-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="aa9bc-136">The following is an example of the request.</span></span>
+<span data-ttu-id="69fa7-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="69fa7-136">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="aa9bc-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="aa9bc-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="69fa7-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="69fa7-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_hostedcontents"
@@ -78,27 +78,27 @@ GET /teams/{id}/channels/{id}/messages/{id}/hostedContents
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents
 ```
-# <a name="c"></a>[<span data-ttu-id="aa9bc-138">C#</span><span class="sxs-lookup"><span data-stu-id="aa9bc-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="69fa7-138">C#</span><span class="sxs-lookup"><span data-stu-id="69fa7-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-hostedcontents-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="aa9bc-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="aa9bc-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="69fa7-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="69fa7-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-hostedcontents-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="aa9bc-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="aa9bc-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="69fa7-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="69fa7-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-hostedcontents-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="aa9bc-141">响应</span><span class="sxs-lookup"><span data-stu-id="aa9bc-141">Response</span></span>
+### <a name="response"></a><span data-ttu-id="69fa7-141">响应</span><span class="sxs-lookup"><span data-stu-id="69fa7-141">Response</span></span>
 
-<span data-ttu-id="aa9bc-142">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="aa9bc-142">The following is an example of the response.</span></span>
+<span data-ttu-id="69fa7-142">下面介绍响应示例。</span><span class="sxs-lookup"><span data-stu-id="69fa7-142">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="aa9bc-143">为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="aa9bc-143">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="aa9bc-144">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="aa9bc-144">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="69fa7-143">为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="69fa7-143">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="69fa7-144">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="69fa7-144">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -131,3 +131,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+
