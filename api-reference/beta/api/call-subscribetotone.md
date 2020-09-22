@@ -1,24 +1,24 @@
 ---
 title: 调用： subscribeToTone
-description: 订阅 DTMF （双音多频信号）。 这样，您就可以在用户按 "Dialpad" 上的键时收到通知。
+description: 订阅 DTMF (双音多频信号) 。 这样，您就可以在用户按 "Dialpad" 上的键时收到通知。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: db11ab63008dc092206550a91b027878d3cf1547
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aea175602f363477103fba7b6fad785ce4f22c5f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440750"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987293"
 ---
 # <a name="call-subscribetotone"></a>调用： subscribeToTone
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-订阅 DTMF （双音多频信号）。 这样，您就可以在用户按 "Dialpad" 上的键时收到通知。
+订阅 DTMF (双音多频信号) 。 这样，您就可以在用户按 "Dialpad" 上的键时收到通知。
 
 > [!Note]
 > 仅使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)支持**subscribeToTone**操作。
@@ -118,7 +118,7 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
 
 ##### <a name="notification---tone-notification"></a>通知-音调通知
 
-通知包含[toneinfo](../resources/toneinfo.md)资源中所按音调的信息。
+通知包含 [toneinfo](../resources/toneinfo.md) 资源中所按音调的信息。
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -164,3 +164,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

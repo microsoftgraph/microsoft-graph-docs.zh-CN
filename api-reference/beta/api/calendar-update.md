@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e68e33ba57b784af10e1b0b22e271ca0da1bbaf3
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 461c4729708c1d338d41f04a1f35419461f938f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895627"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987608"
 ---
 # <a name="update-calendar"></a>更新日历
 
@@ -18,7 +18,7 @@ ms.locfileid: "44895627"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 [calendar](../resources/calendar.md) 对象的属性。 日历可以是[用户](../resources/user.md)的一个，也可以是 Microsoft 365[组](../resources/group.md)的默认日历。
+更新 [calendar](../resources/calendar.md) 对象的属性。 日历可以是 [用户](../resources/user.md)的一个，也可以是 Microsoft 365 [组](../resources/group.md)的默认日历。
 ## <a name="permissions"></a>权限
 根据事件所处日历类型和所请求的权限类型（委派型或应用程序），需要下列某一权限来调用此 API。 要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。
 
@@ -149,3 +149,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

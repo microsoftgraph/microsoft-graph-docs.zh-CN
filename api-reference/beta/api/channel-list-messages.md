@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 093e220ce0dd4b895e6de5e5b9c8ab98d980bd9f
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: MT
+ms.openlocfilehash: 19aa91baec24381a4dbf5cc7c27a052b144433d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491607"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987147"
 ---
 # <a name="list-channel-messages"></a>列出频道消息
 
@@ -30,9 +30,9 @@ ms.locfileid: "44491607"
 |---------|-------------|
 |委派（工作或学校帐户）| ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| ChannelMessage *、ChannelMessage、group、group、group、group 写。 All |
+|应用程序| ChannelMessage.Read.Group* 、ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All |
 
-> **注意**：标记为 * 的权限使用[特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于[特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
@@ -266,3 +266,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

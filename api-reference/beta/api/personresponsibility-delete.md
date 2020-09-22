@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: bb99620a23370f6763fa6544a3992053f5057183
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 8e5ae2fecc8c1845712b1d15161694da9c215ae1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812937"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986236"
 ---
 # <a name="delete-personresponsibility"></a>删除 personResponsibility
 命名空间：microsoft.graph
@@ -73,3 +73,5 @@ DELETE https://graph.microsoft.com/beta/me/profile/responsibilities/0fb4c1e3-c1e
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+

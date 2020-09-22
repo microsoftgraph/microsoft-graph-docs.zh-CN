@@ -3,14 +3,14 @@ title: wipe 操作
 description: 擦除设备
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a85197b3b2e567f269122bf9289a24045e22bc9d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6011accbde9a0670a2a780aeeea99b17e9c19237
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43474410"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985109"
 ---
 # <a name="wipe-action"></a>擦除操作
 
@@ -53,7 +53,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|keepEnrollmentData|Boolean|尚未记录|
+|keepEnrollmentData|布尔|尚未记录|
 |keepUserData|Boolean|尚未记录|
 |macOsUnlockCode|字符串|尚未记录|
 
@@ -84,6 +84,9 @@ Content-length: 109
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

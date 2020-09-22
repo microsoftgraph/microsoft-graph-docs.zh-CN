@@ -3,20 +3,20 @@ title: revokeAllLicenses 操作
 description: 为给定的应用程序吊销所有分配的 iOS VPP 许可证。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1190b70319703e9c1c6ef235131eb86774b1eae6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7cbc18823a2a8bad3fb28a930d4e0207d4c65b57
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43394546"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987013"
 ---
 # <a name="revokealllicenses-action"></a>revokeAllLicenses 操作
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -82,6 +82,9 @@ Content-length: 36
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

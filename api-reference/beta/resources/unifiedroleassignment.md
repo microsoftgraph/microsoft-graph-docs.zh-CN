@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 683a6daf510e10c53cf44ec64d93ce2398212ce4
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: cf08510d15f661f98365fe0346eb72b9b6d7b0bf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218035"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985627"
 ---
 # <a name="unifiedroleassignment-resource-type"></a>unifiedRoleAssignment 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "43218035"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-UnifiedRoleAssignment 用于授予对资源的访问权限。 它表示分配给特定范围内的主体（通常为用户）的角色定义。
+UnifiedRoleAssignment 用于授予对资源的访问权限。 它表示分配给主体的角色定义 (通常是特定范围内的用户) 。
 
 提供 directoryScopeId 或 appScopeId 是必需的。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -34,16 +34,16 @@ UnifiedRoleAssignment 用于授予对资源的访问权限。 它表示分配给
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|字符串| UnifiedRoleAssignment 的唯一标识符。 键，不可为 null，只读。 |
-|roleDefinitionId|字符串| 工作分配所针对的 unifiedRoleDefinition 的 ID。 只读。 |
-|roleDefinition|[unifiedRoleDefinition](unifiedroledefinition.md)|指示工作分配所针对的 roleDefinition 的属性。 提供，以便呼叫者可以在获取角色分配`$expand`的同时使用该角色定义。 roleDefinition.Id 将自动展开
-|principalId|字符串| 向其授予分配的主体的 Objectid。 |
-|作主|[directoryObject](directoryobject.md)| 引用分配的主体的属性。 提供，以便呼叫者可以在获取角色`$expand`分配的同时使用。 只读。 |
-|directoryScopeId|字符串|表示工作分配范围的目录对象的 Id。 工作分配的范围决定了主体已被授予访问权限的一组资源。 目录作用域是存储在多个应用程序可理解的目录中的共享作用域。 应用范围是此应用程序仅定义和理解的作用域。|
-|directoryScope|[directoryObject](directoryobject.md)|属性引用作为工作分配范围的目录对象。 提供，以便呼叫者可以使用`$expand`与获取角色分配相同的时间获取目录对象。 只读。 |
-|appScopeId|字符串|当分配作用域是特定于应用的应用程序特定作用域的 Id。 工作分配的范围决定了主体已被授予访问权限的一组资源。 目录作用域是存储在多个应用程序可理解的目录中的共享作用域。 对租户范围范围使用 "/"。 应用范围是此应用程序仅定义和理解的作用域。|
+|id|String| UnifiedRoleAssignment 的唯一标识符。 键，不可为 null，只读。 |
+|roleDefinitionId|String| 工作分配所针对的 unifiedRoleDefinition 的 ID。 只读。 |
+|roleDefinition|[unifiedRoleDefinition](unifiedroledefinition.md)|指示工作分配所针对的 roleDefinition 的属性。 提供，以便呼叫者可以在获取角色分配的同时使用该角色定义 `$expand` 。 roleDefinition.Id 将自动展开
+|principalId|String| 向其授予分配的主体的 Objectid。 |
+|作主|[directoryObject](directoryobject.md)| 引用分配的主体的属性。 提供，以便呼叫者可以 `$expand` 在获取角色分配的同时使用。 只读。 |
+|directoryScopeId|String|表示工作分配范围的目录对象的 Id。 工作分配的范围决定了主体已被授予访问权限的一组资源。 目录作用域是存储在多个应用程序可理解的目录中的共享作用域。 应用范围是此应用程序仅定义和理解的作用域。|
+|directoryScope|[directoryObject](directoryobject.md)|属性引用作为工作分配范围的目录对象。 提供，以便呼叫者可以使用 `$expand` 与获取角色分配相同的时间获取目录对象。 只读。 |
+|appScopeId|String|当分配作用域是特定于应用的应用程序特定作用域的 Id。 工作分配的范围决定了主体已被授予访问权限的一组资源。 目录作用域是存储在多个应用程序可理解的目录中的共享作用域。 对租户范围范围使用 "/"。 应用范围是此应用程序仅定义和理解的作用域。|
 |appScope|[appScope](appscope.md)|只读属性，其中包含特定应用程序作用域的详细信息，当分配作用域为应用程序特定时。 包容实体。 |
-|resourceScope|字符串| 应用 unifiedRoleAssignment 的范围。 对于服务范围，这是 "/"。 **请勿使用。此属性将很快被弃用。**|
+|resourceScope|String| 应用 unifiedRoleAssignment 的范围。 对于服务范围，这是 "/"。 **请勿使用。此属性将很快被弃用。**|
 
 ## <a name="relationships"></a>关系
 
@@ -87,3 +87,4 @@ UnifiedRoleAssignment 用于授予对资源的访问权限。 它表示分配给
   "section": "documentation",
   "tocPath": ""
 }-->
+

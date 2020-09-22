@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 17c25df842975c324ab827fc071283df7a5d44cd
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: f27094a28423137eb6c8e9661b42449f9cf7ac6c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123088"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986229"
 ---
 # <a name="create-programcontrol"></a>创建 programControl
 
@@ -18,13 +18,13 @@ ms.locfileid: "43123088"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中，创建一个新的[programControl](../resources/programcontrol.md)对象。  这会将访问审核链接到某个程序。
+在 "Azure AD [access 评论](../resources/accessreviews-root.md) " 功能中，创建一个新的 [programControl](../resources/programcontrol.md) 对象。  这会将访问审核链接到某个程序。
 
 在发出此请求之前，呼叫者必须先
 
-- [创建了一个程序](program-create.md)或[检索了一个程序](program-list.md)，以使`programId`其值包含在请求中，
-- [创建了访问](accessreview-create.md)审核或[检索到访问审核](accessreview-get.md)，以在请求中包含`controlId`的值，以及
-- [检索了程序控制类型的列表](programcontroltype-list.md)，以将值`controlTypeId`包含在请求中。
+- [创建了一个程序](program-create.md) 或 [检索了一个程序](program-list.md)，以使 `programId` 其值包含在请求中，
+- [创建了访问](accessreview-create.md) 审核或 [检索到访问审核](accessreview-get.md)，以 `controlId` 在请求中包含的值，以及
+- [检索了程序控制类型的列表](programcontroltype-list.md)，以将值 `controlTypeId` 包含在请求中。
 
 
 ## <a name="permissions"></a>权限
@@ -34,9 +34,9 @@ ms.locfileid: "43123088"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | ProgramControl.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            |  ProgramControl.ReadWrite.All  |
+|应用程序                            |  ProgramControl.ReadWrite.All  |
 
-登录用户还必须位于允许他们创建**programControl**的目录角色中。 
+登录用户还必须位于允许他们创建 **programControl**的目录角色中。 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ POST /programControls
 | Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[programControl](../resources/programcontrol.md)对象的 JSON 表示形式。
+在请求正文中，提供 [programControl](../resources/programcontrol.md) 对象的 JSON 表示形式。
 
 下表显示创建程序控件时所需的属性。
 
@@ -60,12 +60,12 @@ POST /programControls
 | `controlTypeId`          |`String`                | ProgramControlType 标识程序控制的类型-例如，链接到来宾访问审阅的控件。 |
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201, Created`正文中返回响应代码和[programControl](../resources/programcontrol.md)对象。
+如果成功，此方法 `201, Created` 在响应正文中返回响应代码和 [programControl](../resources/programcontrol.md) 对象。
 
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-在请求正文中，提供[programControl](../resources/programcontrol.md)对象的 JSON 表示形式。
+在请求正文中，提供 [programControl](../resources/programcontrol.md) 对象的 JSON 表示形式。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -124,7 +124,7 @@ Content-type: application/json
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列出 programControlTypes](../api/programcontroltype-list.md) | [programControlType](../resources/programcontroltype.md)集合| 列出程序控制类型。 |
+|[列出 programControlTypes](../api/programcontroltype-list.md) | [programControlType](../resources/programcontroltype.md) 集合| 列出程序控制类型。 |
 
 
 <!--
@@ -138,3 +138,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

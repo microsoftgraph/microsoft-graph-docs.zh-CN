@@ -6,16 +6,16 @@ title: SystemFacet
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: c30f1f360a8bb355c09265d3c0a5f7f6b574f56e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7c5e690462db9b2f9309302f15d1c277b39fca1f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520007"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985669"
 ---
 # <a name="system-facet"></a>系统 Facet
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,3 +45,5 @@ ms.locfileid: "42520007"
   "suppressions": []
 }
 -->
+
+

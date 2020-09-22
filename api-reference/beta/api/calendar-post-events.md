@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6b3c47b9c1864b8ddb571040366df411a1ee11cd
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 007a8e5cb98d76f5bf36f14e7730f96b7ae86457
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895634"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987685"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -18,7 +18,7 @@ ms.locfileid: "44895634"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 在日历中创建新事件。 日历可以是[用户](../resources/user.md)的一个，也可以是 Microsoft 365[组](../resources/group.md)的默认日历。 
+使用此 API 在日历中创建新事件。 日历可以是 [用户](../resources/user.md)的一个，也可以是 Microsoft 365 [组](../resources/group.md)的默认日历。 
 
 ## <a name="permissions"></a>权限
 根据创建事件的日历类型和所请求的权限类型（委派型或应用程序），需要下列某一权限来调用此 API。 要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。
@@ -68,7 +68,7 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ### <a name="example-1-create-an-event-in-a-specific-calendar"></a>示例 1：在特定日历中创建事件
 
 #### <a name="request"></a>请求
-下面的示例在特定日历中创建一个事件，并为该事件分配一个可选的**transactionId**值。
+下面的示例在特定日历中创建一个事件，并为该事件分配一个可选的 **transactionId** 值。
 
 在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
 
@@ -400,3 +400,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

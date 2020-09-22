@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 37fe0ed34ad7dc44d760376f75a49ffa3766ba6c
-ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
+ms.openlocfilehash: 765cbee31f97ab20db34fb07052beaaa5f6e99c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "47400404"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987067"
 ---
 # <a name="create-channel"></a>创建频道
 
@@ -28,7 +28,7 @@ ms.locfileid: "47400404"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | "创建"、"组"、"全部"、"全部"、"全部"    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 例如，Group *、信道. 创建、组读写全部、全部、团队合作。全部迁移|
+|应用程序 | 例如，Group *、信道. 创建、组读写全部、全部、团队合作。全部迁移|
 
 > **注意**：标有 * 的权限用于[特定于资源的同意]( https://aka.ms/teams-rsc)。
 
@@ -202,3 +202,5 @@ Content-length: 201
   ]
 }
 -->
+
+

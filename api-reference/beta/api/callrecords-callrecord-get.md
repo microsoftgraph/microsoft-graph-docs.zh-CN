@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6c576dcc355330e380b92445a09e9adaa82165fa
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: a3b71723aaa83cd9b70e8f43e32eba2654dc240c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183818"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987195"
 ---
 # <a name="get-callrecord"></a>获取 callRecord
 
@@ -18,11 +18,11 @@ ms.locfileid: "45183818"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[callRecord](../resources/callrecords-callrecord.md)对象的属性和关系。
+检索 [callRecord](../resources/callrecords-callrecord.md) 对象的属性和关系。
 
 有两种方法可以获取**callRecord**的**id** ：
 
-* 订阅对终结点的[更改通知](/graph/api/resources/webhooks?view=graph-rest-beta) `/communications/callRecords` 。
+* 订阅对终结点的 [更改通知](/graph/api/resources/webhooks?view=graph-rest-beta) `/communications/callRecords` 。
 * 使用[调用](../resources/call.md)的**callChainId**属性。 只有在关联的呼叫完成后，呼叫记录才可用。
 
 ## <a name="permissions"></a>权限
@@ -59,7 +59,7 @@ GET /communications/callRecords/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[callRecords callRecord](../resources/callrecords-callrecord.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [callRecords callRecord](../resources/callrecords-callrecord.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -67,7 +67,7 @@ GET /communications/callRecords/{id}
 
 #### <a name="request"></a>请求
 
-下面的示例演示了从[callRecord](../resources/callrecords-callrecord.md)获取基本详细信息的请求。
+下面的示例演示了从 [callRecord](../resources/callrecords-callrecord.md)获取基本详细信息的请求。
 
 <!-- {
   "blockType": "ignored",
@@ -135,7 +135,7 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-下面是从[callRecord](../resources/callrecords-callrecord.md)中获取完整详细信息（包括会话和分段组件）的请求示例。
+下面是从 [callRecord](../resources/callrecords-callrecord.md)中获取完整详细信息（包括会话和分段组件）的请求示例。
 
 <!-- {
   "blockType": "ignored",
@@ -148,7 +148,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=ses
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。 如果 "会话" 列表被截断， `sessions@odata.nextlink` 将提供一个值，以检索下一个会话页面。
+下面介绍响应示例。 如果 "会话" 列表被截断， `sessions@odata.nextlink` 将提供一个值，以检索下一个会话页面。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
@@ -403,3 +403,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

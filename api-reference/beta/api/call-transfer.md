@@ -5,24 +5,24 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7be036e05bd772d01a9235427daa26b8044ba17e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3c4fc0e6b104e1888199f8323b787333b57b75d8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440743"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987286"
 ---
 # <a name="call-transfer"></a>呼叫：转移
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 转移活动的对等呼叫。
 
-> **注意：** 仅当受让方和 transfer 目标是属于同一租户的 Microsoft 团队用户时，才支持此项。 不支持转移到 PSTN 号码。 若要了解有关 transferor、受让方和转让目标的详细信息，请参阅[RFC 5589](https://tools.ietf.org/html/rfc5589#section-2)。
+> **注意：** 仅当受让方和 transfer 目标是属于同一租户的 Microsoft 团队用户时，才支持此项。 不支持转移到 PSTN 号码。 若要了解有关 transferor、受让方和转让目标的详细信息，请参阅 [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2)。
 
-咨询转移意味着在进行转移之前，transferor 可以通知他们要将呼叫转接到的人员（受让方）。 这与直接传输呼叫相对。
+咨询转移意味着在进行转移之前，transferor 可以通知他们要将呼叫转接到 (受让方) 的人。 这与直接传输呼叫相对。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -216,7 +216,7 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-failed"></a>通知-传输失败
 
-> **注意：** 当呼叫转移失败时，呼叫状态将为`established`。
+> **注意：** 当呼叫转移失败时，呼叫状态将为 `established` 。
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -388,7 +388,7 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-failed"></a>通知-传输失败
 
-> **注意：** 当呼叫转移失败时，呼叫状态将为`established`。
+> **注意：** 当呼叫转移失败时，呼叫状态将为 `established` 。
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -436,3 +436,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

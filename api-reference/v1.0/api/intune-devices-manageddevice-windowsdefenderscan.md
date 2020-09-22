@@ -3,14 +3,14 @@ title: windowsDefenderScan 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c9bd5e626869a5b22ebd50697f3b8b84b3b28a46
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 726901e4aebec6654117a556ed2eeff97afa8e72
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43474467"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985123"
 ---
 # <a name="windowsdefenderscan-action"></a>windowsDefenderScan 操作
 
@@ -80,6 +80,9 @@ Content-length: 25
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e0a12f2160e1d3c9f35862c34fbe571ac2a8e3d7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8581032cb6856c86c325f03f5936dede4a8e1e68
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452676"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986142"
 ---
 # <a name="tablerow-delete"></a>TableRow: delete
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -82,3 +82,5 @@ HTTP/1.1 200 OK
   "suppressions": []
 }
 -->
+
+

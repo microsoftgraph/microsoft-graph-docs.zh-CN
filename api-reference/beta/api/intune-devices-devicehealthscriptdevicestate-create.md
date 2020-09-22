@@ -3,24 +3,24 @@ title: 创建 deviceHealthScriptDeviceState
 description: 创建新的 deviceHealthScriptDeviceState 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ff64deb4d0a1a27787f4b8a345c18e4e2ff3c073
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f331069b5fa833ec6b7df3dd5b92e4149b7bfa8e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380589"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986628"
 ---
 # <a name="create-devicehealthscriptdevicestate"></a>创建 deviceHealthScriptDeviceState
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md)对象。
+创建新的 [deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,22 +53,22 @@ POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunState
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备运行状况脚本设备状态实体的键。 此属性是只读的。|
+|id|String|设备运行状况脚本设备状态实体的键。 此属性是只读的。|
 |detectionState|[runState](../resources/intune-shared-runstate.md)|Lastest 设备运行状况脚本执行的检测状态。 可取值为：`unknown`、`success`、`fail`、`scriptError`、`pending`、`notApplicable`。|
 |lastStateUpdateDateTime|DateTimeOffset|执行设备运行状况脚本的最后时间戳|
 |expectedStateUpdateDateTime|DateTimeOffset|应在何时执行设备运行状况脚本的下一个时间戳|
 |lastSyncDateTime|DateTimeOffset|上次 Intune 管理扩展与 Intune 同步的时间|
-|preRemediationDetectionScriptOutput|字符串|修正前的检测脚本输出|
-|preRemediationDetectionScriptError|字符串|修正前的检测脚本中的错误|
-|remediationScriptError|字符串|修正脚本的错误输出|
-|postRemediationDetectionScriptOutput|字符串|修正后的检测脚本输出|
-|postRemediationDetectionScriptError|字符串|更正后来自检测脚本的错误|
+|preRemediationDetectionScriptOutput|String|修正前的检测脚本输出|
+|preRemediationDetectionScriptError|String|修正前的检测脚本中的错误|
+|remediationScriptError|String|修正脚本的错误输出|
+|postRemediationDetectionScriptOutput|String|修正后的检测脚本输出|
+|postRemediationDetectionScriptError|String|更正后来自检测脚本的错误|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|来自 lastest 设备运行状况脚本执行的修正状态。 可取值为：`unknown`、`skipped`、`success`、`remediationFailed`、`scriptError`。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -116,6 +116,9 @@ Content-Length: 811
   "remediationState": "skipped"
 }
 ```
+
+
+
 
 
 

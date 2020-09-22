@@ -5,12 +5,12 @@ localization_priority: Priority
 author: mahage-msft
 ms.prod: compliance
 doc_type: conceptualPageType
-ms.openlocfilehash: 04cacac77e88dc5e7c266c39d5a48ffdd9d65cef
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: c7300fa41a6264b4006aca3a2d5049d10f30341f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46510027"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986096"
 ---
 # <a name="use-the-microsoft-graph-ediscovery-api"></a>使用 Microsoft Graph 电子数据展示 API
 
@@ -33,4 +33,6 @@ Microsoft Graph API 包括以下关键实体。
 | 电子数据展示事例 | [ediscoveryCase](ediscoverycase.md) | 电子数据展示事例是所有电子数据展示对象（包括保管人、保留、搜索、审阅集和导出）的容器。 |
 | 电子数据展示审阅集| [reviewSet](reviewset.md) | 电子数据展示审阅集是一组以电子形式存储的信息静态集，用于诉讼、调查或法规请求。 |
 | 电子数据展示审阅集查询 | [reviewSetQuery](reviewsetquery.md) | 电子数据展示审阅集查询用于发现、挑选、审阅和标记 [ESI](https://en.wikipedia.org/wiki/Electronically_stored_information_(Federal_Rules_of_Civil_Procedure))，最终目标是向请求者或对方法律顾问提供产品。
+
+
 

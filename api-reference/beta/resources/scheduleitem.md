@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-teams
 author: harini84
-ms.openlocfilehash: b4bbf2586543b4f731c136eaffbc955741191db6
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 9c7ed4d1683a4b6f45161db5304d70dce17d0dd4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812792"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985804"
 ---
 # <a name="scheduleitem-resource-type"></a>scheduleItem 资源类型
 
@@ -24,10 +24,10 @@ ms.locfileid: "46812792"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |end |[dateTimeTimeZone](datetimetimezone.md) |相应事件结束时的日期、时间和时区。 |
-|isPrivate |布尔值 |相应事件的敏感度。 如果已标记事件，则为 True `private` ，否则为 false。 可选。 |
+|isPrivate |Boolean |相应事件的敏感度。 如果已标记事件，则为 True `private` ，否则为 false。 可选。 |
 |位置 |String | 保留或参与的相应事件的位置。 可选。|
 |start |[dateTimeTimeZone](datetimetimezone.md) |相应事件的开始日期、时间和时区。 |
-|status |freeBusyStatus | 相应事件期间用户或资源的可用性状态。 可能的值包括 `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。 |
+|状态 |freeBusyStatus | 相应事件期间用户或资源的可用性状态。 可能的值包括 `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。 |
 |subject |String | 相应事件的主题行。 可选。|
 
 
@@ -69,3 +69,5 @@ ms.locfileid: "46812792"
   "suppressions": []
 }
 -->
+
+

@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: da3de64ce9517ffd3e2025b4c659baef27526f6f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7e2e1252a34d6efc6004aa78873a11139fece83f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440792"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987342"
 ---
 # <a name="call-mute"></a>呼叫：静音
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "42440792"
 
 这是一种服务器静音，这意味着服务器将丢弃此参与者的所有音频数据包，即使参与者继续传输音频也是如此。
 
-有关如何处理静音操作的更多详细信息，请参阅[muteParticipantOperation](../resources/muteparticipantoperation.md)
+有关如何处理静音操作的更多详细信息，请参阅 [muteParticipantOperation](../resources/muteparticipantoperation.md)
 
 > **注意：** 仅组调用支持此方法。
 
@@ -57,7 +57,7 @@ POST /communications/calls/{id}/mute
 |适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[muteParticipantOperation](../resources/muteParticipantoperation.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [muteParticipantOperation](../resources/muteParticipantoperation.md) 对象。
 
 > **注意：** 此操作返回成功响应后，所有参与者都将收到名单更新
 
@@ -191,3 +191,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

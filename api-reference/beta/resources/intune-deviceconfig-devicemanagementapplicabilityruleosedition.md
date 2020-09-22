@@ -3,20 +3,20 @@ title: deviceManagementApplicabilityRuleOsEdition 资源类型
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 754d70f3f383bb90c7de83931b99a90902bf7ba2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a2e145f54116272687683789e67cbab3e6429bf4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469312"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985942"
 ---
 # <a name="devicemanagementapplicabilityruleosedition-resource-type"></a>deviceManagementApplicabilityRuleOsEdition 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "43469312"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|osEditionTypes|[windows10EditionType](../resources/intune-deviceconfig-windows10editiontype.md)集合|适用性规则 OS 版本类型。|
+|osEditionTypes|[windows10EditionType](../resources/intune-deviceconfig-windows10editiontype.md) 集合|适用性规则 OS 版本类型。|
 |name|String|对象的名称。|
 |ruleType|[deviceManagementApplicabilityRuleType](../resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md)|适用性规则类型。 可取值为：`include`、`exclude`。|
 
@@ -49,6 +49,9 @@ ms.locfileid: "43469312"
   "ruleType": "String"
 }
 ```
+
+
+
 
 
 

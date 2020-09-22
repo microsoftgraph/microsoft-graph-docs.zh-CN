@@ -1,22 +1,22 @@
 ---
 title: 使用 Microsoft 搜索 API 查询数据
-description: 使用搜索 API，应用可以在经过身份验证的用户的上下文中搜索 Office 365 数据
+description: 使用搜索 API，应用程序可以在已认证用户的上下文中搜索 Microsoft 365 数据
 localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: db10ddaf3e1cb7984ddfe16854f60c3d68dbb7ae
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: e77c0170487b0762538d98376921565857c9b3c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866621"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985783"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>使用 Microsoft 搜索 API 查询数据
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-可使用 Microsoft 搜索 API 来查询应用中的 Office 365 数据。
+可使用 Microsoft 搜索 API 来查询应用程序中的 Microsoft 365 数据。
 
 搜索请求在登录用户的上下文中运行，并使用[包含委派权限的访问令牌](/graph/auth-v2-user)进行标识。
 
@@ -117,3 +117,8 @@ Microsoft 搜索 API 提供了[查询](../api/search-query.md)方法，可在 Mi
   - 按日期对 **message** 或 **event** 类型结果进行排序。
 
   - 按相关性对 **driveItem**、**externalFile** 或 **externalItem** 类型结果进行排序。
+
+## <a name="whats-new"></a>最近更新
+了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
+
+

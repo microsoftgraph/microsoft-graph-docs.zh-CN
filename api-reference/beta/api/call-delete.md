@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: eaf528a980e7a9b776de8f919d455328b08c7a91
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b87ced1c3755462691122b1ccce65e7bb8688d35
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440827"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987440"
 ---
 # <a name="delete-call"></a>删除呼叫
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -162,3 +162,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

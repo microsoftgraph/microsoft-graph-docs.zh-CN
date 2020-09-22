@@ -1,16 +1,16 @@
 ---
 title: 创建团队
-description: 创建新团队。
+description: 新建团队。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ccdfc5ee542a8e819ecbf4d30450dcc8e2c19991
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: fdae19af982d8e8c73db968123361fa3700d684c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873095"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986166"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -29,6 +29,7 @@ ms.locfileid: "46873095"
 | 委派（工作或学校帐户）     | Group.ReadWrite.All, Directory.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用程序                            | Group.ReadWrite.All、Directory.ReadWrite.All |
+|应用程序|Teamwork.Migrate.All|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -43,7 +44,7 @@ POST /teams
 | 标头        | 值                     |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}。必需。 |
-| Content-Type  | application/json          |
+| Content-Type  | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
 
@@ -555,3 +556,5 @@ Content-Length: 0
 - [Teams 零售模板入门](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
 - [Teams 医疗保健模板入门](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
 - [创建包含团队的组](/graph/teams-create-group-and-team)
+
+

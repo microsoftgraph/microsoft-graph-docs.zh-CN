@@ -3,14 +3,14 @@ title: 列出 deviceComplianceScheduledActionForRules
 description: 列出 deviceComplianceScheduledActionForRule 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5226a1b67494a6e4252f622634854bf6b2a1c5b9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5b7d60fd66e038a068e859539d1535e8040bfbee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43399619"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985361"
 ---
 # <a name="list-devicecompliancescheduledactionforrules"></a>列出 deviceComplianceScheduledActionForRules
 
@@ -75,6 +75,9 @@ Content-Length: 208
   ]
 }
 ```
+
+
+
 
 
 

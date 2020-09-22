@@ -5,16 +5,16 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: b5c46353d0533fb2c032765527ed5ccf7107e1b3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: db647c47c528428820acc2ded9b079546b991be6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520912"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985739"
 ---
 # <a name="searchquery-resource-type"></a>searchQuery 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,3 +56,4 @@ ms.locfileid: "42520912"
   "section": "documentation",
   "tocPath": ""
 }-->
+

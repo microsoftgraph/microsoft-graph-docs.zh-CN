@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 4c1d159ecb9750e7ad531f19f61d8ebbb462dbcc
-ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
+ms.openlocfilehash: 06dec4840edae33d51ddb64fb48d93aaa8ccdfda
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44226994"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986064"
 ---
 # <a name="usedinsight-resource-type"></a>usedInsight 资源类型
 
@@ -42,7 +42,7 @@ ms.locfileid: "44226994"
 
 | 属性      | 类型          | 说明  |
 | ------------- |---------------| -------------|
-| 资源      | [实体](entity.md)集合    | 用于导航到所使用的项目。 对于文件附件，类型为*fileAttachment*。 对于链接的附件，类型为*driveItem*。 |
+| 资源      | [实体](entity.md) 集合    | 用于导航到所使用的项目。 对于文件附件，类型为 *fileAttachment*。 对于链接的附件，类型为 *driveItem*。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -64,3 +64,5 @@ ms.locfileid: "44226994"
   "resourceReference": { "@odata.type": "microsoft.graph.resourceReference" }
 }
 ```
+
+

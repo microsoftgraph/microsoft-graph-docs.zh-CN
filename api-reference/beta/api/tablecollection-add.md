@@ -5,16 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a3f795996cd0446db112b875837637ea34512031
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4d609491ee2b9380c347450b99ca7049b4c155c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452762"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986201"
 ---
 # <a name="tablecollection-add"></a>TableCollection: add
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,7 +56,7 @@ POST /workbook/worksheets/{id|name}/tables/add
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`200 OK`响应正文中返回响应代码和[workbookTable](../resources/workbooktable.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookTable](../resources/workbooktable.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -127,3 +127,5 @@ Content-length: 109
   ]
 }
 -->
+
+

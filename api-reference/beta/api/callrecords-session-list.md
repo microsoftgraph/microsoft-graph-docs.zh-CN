@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6d22859d305a257414ef36f091c19aec0eba47b9
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 547bf8bf570a020be5939e27392a5534d1a742da
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183825"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987160"
 ---
 # <a name="list-callrecord-sessions"></a>列出 callRecord 会话
 
@@ -54,7 +54,7 @@ GET /communications/callRecords/{id}/sessions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[session](../resources/callrecords-session.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [session](../resources/callrecords-session.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -392,3 +392,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

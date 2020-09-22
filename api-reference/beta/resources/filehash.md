@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 670addd8cc244ed5c97ceaca0b9544382d80ec92
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 06097280b54e065842db7aa53ff060ce2ce5d5e1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806581"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986083"
 ---
 # <a name="filehash-resource-type"></a>fileHash 资源类型
 
@@ -54,3 +54,5 @@ ms.locfileid: "46806581"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

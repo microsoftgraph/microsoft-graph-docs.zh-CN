@@ -3,14 +3,14 @@ title: 删除 importedWindowsAutopilotDeviceIdentityUpload
 description: 删除 importedWindowsAutopilotDeviceIdentityUpload。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 052f76275edcaa0f13e5c114bd32b6f37ce3c3fb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1100d01638ffef08f07d09e89530af3fa93ff8fe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462901"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985081"
 ---
 # <a name="delete-importedwindowsautopilotdeviceidentityupload"></a>删除 importedWindowsAutopilotDeviceIdentityUpload
 
@@ -18,7 +18,7 @@ ms.locfileid: "43462901"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)。
+删除 [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -63,6 +63,9 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilo
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: bef2bd71d3ac039165146bcc5783eef7ba67a785
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: ee879104878189ddcaf51f65e4e127a61798c811
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863703"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986054"
 ---
 # <a name="integerrange-resource-type"></a>integerRange 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "44863703"
 表示由两个 Int64 边界描述的整数的包含范围。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |start|Int64|整数范围的非独占下限。|
 |end|Int64|整数范围的上下限。|
@@ -54,3 +54,4 @@ ms.locfileid: "44863703"
   "section": "documentation",
   "tocPath": ""
 }-->
+

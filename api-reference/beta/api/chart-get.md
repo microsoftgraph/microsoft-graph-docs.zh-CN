@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 50aaf78cd57591ba1c8666c56a790550f913b12a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8b55f41024a48fcd4b52780ecb9efc9a7c9a3390
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440036"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987055"
 ---
 # <a name="get-workbookchart"></a>获取 workbookchart
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,7 +47,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[workbookChart](../resources/workbookchart.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookChart](../resources/workbookchart.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -106,3 +106,5 @@ Content-length: 52
   ]
 }
 -->
+
+

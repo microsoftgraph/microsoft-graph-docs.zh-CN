@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 7f28245c22916575d505b3e9f8db65070cbbbf5e
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 8b9289807778c1a44940d8e8eb0d9163ed12f006
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895623"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985858"
 ---
 # <a name="printserviceendpoint-resource-type"></a>printServiceEndpoint 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "42895623"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|String|终结点的人可读显示名称。|
-|name|String|标识终结点提供的服务的唯一名称。 可能的值包括`discovery` ：（发现服务） `notification` 、（通知服务） `ipp` 、（IPP 服务）和`registration` （注册服务）。 只读。|
+|name|String|标识终结点提供的服务的唯一名称。 可能的值包括： `discovery` (发现服务) 、 `notification` (通知服务) 、 `ipp` (IPP 服务) 和 `registration` (注册服务) 。 只读。|
 |url|String|可用于访问服务的 URI。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -62,3 +62,4 @@ ms.locfileid: "42895623"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,14 +3,14 @@ title: 获取 deviceComplianceScheduledActionForRule
 description: 读取 deviceComplianceScheduledActionForRule 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc077c7534a6c7bfbeb11188b6472282fbb0239d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 450750653925b7930ea48523b00862728c1d4c6e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446190"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985368"
 ---
 # <a name="get-devicecompliancescheduledactionforrule"></a>获取 deviceComplianceScheduledActionForRule
 
@@ -76,6 +76,9 @@ Content-Length: 188
   }
 }
 ```
+
+
+
 
 
 

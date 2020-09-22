@@ -3,14 +3,14 @@ title: 列出 androidGeneralDeviceConfigurations
 description: 列出 androidGeneralDeviceConfiguration 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 884aeb5b0b37c3f1d2899adf51bf58948387a6d6
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: d09eb2b2f0505e4eeb3a133e941642bfdb4905f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43470633"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985440"
 ---
 # <a name="list-androidgeneraldeviceconfigurations"></a>列出 androidGeneralDeviceConfigurations
 
@@ -27,7 +27,7 @@ ms.locfileid: "43470633"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -167,6 +167,9 @@ Content-Length: 3618
   ]
 }
 ```
+
+
+
 
 
 

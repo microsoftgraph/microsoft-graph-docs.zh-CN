@@ -3,14 +3,14 @@ title: 更新 deviceComplianceScheduledActionForRule
 description: 更新 deviceComplianceScheduledActionForRule 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8936ad39af18e51a7f5e7b17a26357a587a3d5d8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9ebef56114aa1fedf9a3d6032fe0f4bbdb971684
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43399604"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985340"
 ---
 # <a name="update-devicecompliancescheduledactionforrule"></a>更新 deviceComplianceScheduledActionForRule
 
@@ -87,6 +87,9 @@ Content-Length: 163
   "ruleName": "Rule Name value"
 }
 ```
+
+
+
 
 
 

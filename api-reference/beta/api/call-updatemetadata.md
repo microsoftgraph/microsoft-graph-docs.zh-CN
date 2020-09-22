@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 793639bed1288dd6873a6f2b4afba53efba9e533
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c31028880f9fc6160daf0d8a734f3efe28ad757f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440701"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987254"
 ---
 # <a name="call-updatemetadata"></a>调用： updateMetadata
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ ms.locfileid: "42440701"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| 应用程序     | JoinGroupCallsasGuest、JoinGroupCalls、InitiateGroupCalls 和。 All |
+| 应用程序     | JoinGroupCallsasGuest、JoinGroupCalls、Calls.InitiateGroupCalls 的所有请求 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ POST /communications/calls/{id}/updateMetadata
 |适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-返回`202 Accepted`响应代码和位置标头，其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。
+返回 `202 Accepted` 响应代码和位置标头，其中包含为此请求创建的 [commsOperation](../resources/commsoperation.md) 的 uri。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -126,3 +126,5 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: df899fbf71f0370c6c4fd27ef098dd4ddadf3fd7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 363043276751a3dc6742ea6fb9a32303cdb9b090
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440981"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987659"
 ---
 # <a name="calendar-getschedule"></a>日历：getSchedule
 
@@ -257,3 +257,5 @@ Content-type: application/json
   "suppressions": []
 }
 -->
+
+

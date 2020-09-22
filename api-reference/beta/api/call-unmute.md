@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5bb958a1faad2c8698876501ef539465cb0c254d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 432af873a871aff959da9731d2d1679d2fcf89d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440722"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987244"
 ---
 # <a name="call-unmute"></a>呼叫：取消静音
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "42440722"
 
 这是一种服务器取消静音，这意味着服务器将再次开始将此参与者的音频数据包发送给其他参与者。
 
-有关如何处理静音操作的详细信息，请参阅[unmuteParticipantOperation](../resources/unmuteParticipantoperation.md)。
+有关如何处理静音操作的详细信息，请参阅 [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md)。
 
 > **注意：** 仅组调用支持此方法。
 
@@ -56,7 +56,7 @@ POST /communications/calls/{id}/unmute
 |适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[unmuteParticipantOperation](../resources/unmuteParticipantoperation.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) 对象。
 
 >**注意：** 当此 API 返回成功响应时，所有参与者都将收到名单更新。
 
@@ -187,3 +187,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

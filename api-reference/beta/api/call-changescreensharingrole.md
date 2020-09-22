@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 949afc82423bc3c36df90c009603e98c0a23da59
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9c1195c0f2c7d76a163ad9f3194ea02e96c5982f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440876"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987447"
 ---
 # <a name="call-changescreensharingrole"></a>调用： changeScreenSharingRole
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,7 +53,7 @@ POST /communications/calls/{id}/changeScreenSharingRole
 |role|String|可能的值为： "查看器"、"共享资源"|
 
 ## <a name="response"></a>响应
-如果成功，此方法将返回`202 Accepted`响应代码，并且所有参与者都将收到名单更新。
+如果成功，此方法将返回 `202 Accepted` 响应代码，并且所有参与者都将收到名单更新。
 
 ## <a name="example"></a>示例
 
@@ -102,7 +102,7 @@ Content-Length: 24
 HTTP/1.1 202 Accepted
 ```
 ##### <a name="notification---roster-updated-with-participant-sending-screen-sharing-video"></a>通知-名单随参与者发送屏幕共享视频而更新
-记下`direction: sendOnly`媒体流上的属性。
+记下 `direction: sendOnly` 媒体流上的属性。
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -165,3 +165,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

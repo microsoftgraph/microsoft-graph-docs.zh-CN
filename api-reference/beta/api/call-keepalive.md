@@ -5,24 +5,24 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 226655a34cf2c6d2aed03e1905243077dc19a2b2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 125f4e54c73602aedd434a9847ef4c68f7624575
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440813"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987426"
 ---
 # <a name="call-keepalive"></a>call： keepAlive
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 每15至45分钟向此 API 发出一次请求，以确保正在进行的呼叫仍处于活动状态。 在45分钟内未收到此请求的呼叫被视为非活动状态，随后将结束。
 
 必须在前一个请求的45分钟内或开始呼叫开始时至少执行一次成功的请求。
 
-我们建议您以较短的时间间隔（每15分钟）发送请求。 确保这些请求成功，以阻止调用超时和结束。
+建议您在每15分钟 () 发送较短时间间隔的请求。 确保这些请求成功，以阻止调用超时和结束。
 
-尝试向已结束的呼叫发送请求将导致`404 Not-Found`错误。 应在应用程序一侧清理与此呼叫相关的资源。
+尝试向已结束的呼叫发送请求将导致 `404 Not-Found` 错误。 应在应用程序一侧清理与此呼叫相关的资源。
 
 ## <a name="permissions"></a>权限
 若要调用此 API，可能需要以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,7 +49,7 @@ POST /communications/calls/{id}/keepAlive
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-此方法返回一个`200 OK` HTTP 响应代码。
+此方法返回一个 `200 OK` HTTP 响应代码。
 
 ## <a name="examples"></a>示例
 
@@ -105,3 +105,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

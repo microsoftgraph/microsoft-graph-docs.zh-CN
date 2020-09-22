@@ -5,16 +5,16 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 722641b42a403565afcf7baa9de42af2b36a9dec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3d010f3731fa65e1ab2dc3abbf84ffdc5ebdb732
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520926"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985774"
 ---
 # <a name="searchhit-resource-type"></a>searchHit 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +29,7 @@ ms.locfileid: "42520926"
 |_id|String|项的内部标识符。|
 |_score|Int32|结果的分数或顺序。|
 |_sortField|String|使用的排序顺序。 它可以是 DateTime 或相关性。|
-|_summary|String|结果的摘要（如果摘要可用）。|
+|_summary|String| (如果摘要可用) 的结果摘要。|
 |_source|[实体](entity.md)|搜索结果的基础图形表示形式。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -64,3 +64,4 @@ ms.locfileid: "42520926"
   "section": "documentation",
   "tocPath": ""
 }-->
+

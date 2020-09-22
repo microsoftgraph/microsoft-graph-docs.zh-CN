@@ -5,12 +5,12 @@ author: stephenjust
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d42dc962579efd783f56bc0e2f9fd0b15c334a10
-ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
+ms.openlocfilehash: 65b6311e66969d4b4daa3066eeef3fc4bcdd73ee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47439855"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987176"
 ---
 # <a name="callrecord-getdirectroutingcalls"></a>callRecord: getDirectRoutingCalls
 
@@ -20,7 +20,7 @@ ms.locfileid: "47439855"
 
 将直接路由呼叫的日志作为 [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) 条目的集合获取。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,7 +52,7 @@ GET /communications/callRecords/getDirectRoutingCalls
 在请求 URL 中，提供以下查询参数（含值）。
 下表显示了可用于此函数的参数。
 
-|参数|类型|Description|
+|参数|类型|说明|
 |:---|:---|:---|
 |fromDateTime|DateTimeOffset|要查询的时间范围的开始时间。 UTC （含）。<br/>时间范围基于呼叫开始时间。|
 |toDateTime|DateTimeOffset|要查询的时间范围的结束时间。 UTC （含）。|
@@ -126,3 +126,5 @@ HTTP/1.1 200 OK
 * Microsoft 团队管理中心中的[Microsoft 团队直接路由使用情况报告](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing)
 * Microsoft 团队管理中心中[用于直接路由的运行状况仪表板](https://docs.microsoft.com/MicrosoftTeams/direct-routing-health-dashboard)
 * [Microsoft Graph 中的 PSTN 呼叫报告](callrecords-callrecord-getpstncalls.md)
+
+

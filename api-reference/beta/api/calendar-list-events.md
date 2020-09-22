@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 121e16524fb3edd54fe8cb1562c7fa38cd208fa9
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: e10a1c859b024b258269d3fa6e18f292fb46690c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895641"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987655"
 ---
 # <a name="list-events"></a>列出事件
 
@@ -18,7 +18,7 @@ ms.locfileid: "44895641"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索日历中的事件列表。  日历可以是[用户](../resources/user.md)的一个，也可以是 Microsoft 365[组](../resources/group.md)的默认日历。 事件列表包含单个实例会议和系列母版。
+检索日历中的事件列表。  日历可以是 [用户](../resources/user.md)的一个，也可以是 Microsoft 365 [组](../resources/group.md)的默认日历。 事件列表包含单个实例会议和系列母版。
 
 要获取扩展的事件实例，可以[获取日历视图](calendar-list-calendarview.md)，或者[获取事件的实例](event-list-instances.md)。
 
@@ -135,3 +135,5 @@ Content-length: 354
   ]
 }
 -->
+
+

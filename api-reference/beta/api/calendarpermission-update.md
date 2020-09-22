@@ -5,18 +5,18 @@ localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 970edd0479798fc07e505476b24796b890221396
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb7f68b832b55f177791647de7a973b588c9a4a0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440890"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987480"
 ---
 # <a name="update-calendarpermission"></a>更新 calendarPermission
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
-通过日历的相应[calendarPermission](../resources/calendarpermission.md)对象更新分配给现有 sharee 或代理的权限。
+通过日历的相应 [calendarPermission](../resources/calendarpermission.md) 对象更新分配给现有 sharee 或代理的权限。
 
 ## <a name="permissions"></a>权限
 
@@ -63,13 +63,13 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[calendarPermission](../resources/calendarpermission.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [calendarPermission](../resources/calendarpermission.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
-下面的示例将 sharee、Adele、的权限级别更改为`write`。
+下面的示例将 sharee、Adele、的权限级别更改为 `write` 。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -145,3 +145,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
