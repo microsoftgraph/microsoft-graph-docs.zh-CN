@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 8b014ea576f08b19f10d8943350dfc25983cf1d5
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b948c237bd4d63e23519b79b61f0573b734a19a6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812377"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018982"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>获取 multiValueLegacyExtendedProperty
 
@@ -188,3 +188,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

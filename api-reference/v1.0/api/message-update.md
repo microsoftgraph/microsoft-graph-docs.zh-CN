@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 170ee8004e20aa83305fd454c8691a6c30551d7a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 262d3e7bd9b58d4472cc7edacc98135486f586ab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43355020"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019066"
 ---
 # <a name="update-message"></a>更新邮件
 
@@ -151,3 +151,4 @@ Content-length: 248
   "suppressions": [
   ]
 }-->
+

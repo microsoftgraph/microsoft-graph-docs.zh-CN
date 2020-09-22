@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 46c7ce750e2508ee20920782c8c68b34cd9570c5
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 17525f56a6d2bca8d079f8c08ddd8e352b8a29b8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108821"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018990"
 ---
 # <a name="list-events"></a>列出事件
 
@@ -210,3 +210,4 @@ Content-length: 1932
   "suppressions": [
   ]
 }-->
+

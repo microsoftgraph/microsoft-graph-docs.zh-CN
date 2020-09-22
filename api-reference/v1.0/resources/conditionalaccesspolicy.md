@@ -5,18 +5,18 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b74360794ddad62a1cbda9b835f0490d447d8367
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 46d9e8499f0ec0529c7dbe2f459388b974c7d5fe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384464"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018858"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>conditionalAccessPolicy 资源类型
 
 命名空间：microsoft.graph
 
-表示 Azure Active Directory 条件访问策略。 条件访问策略是定义访问方案的自定义规则。 有关详细信息，请参阅[条件访问文档](https://docs.microsoft.com/azure/active-directory/conditional-access/)。
+表示 Azure Active Directory 条件访问策略。 条件访问策略是定义访问方案的自定义规则。 有关详细信息，请参阅 [条件访问文档](https://docs.microsoft.com/azure/active-directory/conditional-access/)。
 
 ## <a name="methods"></a>方法
 
@@ -36,7 +36,7 @@ ms.locfileid: "45384464"
 |createdDateTime|DateTimeOffset| 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读. |
 |displayName|String| 指定 conditionalAccessPolicy 对象的显示名称。 |
 |grantControls|[conditionalAccessGrantControls](conditionalaccessgrantcontrols.md)| 指定必须满足的授予控制以通过策略。 |
-|id|字符串| 指定 conditionalAccessPolicy 对象的标识符。 只读。|
+|id|String| 指定 conditionalAccessPolicy 对象的标识符。 只读。|
 |modifiedDateTime| DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读. |
 |sessionControls|[conditionalAccessSessionControls](conditionalaccesssessioncontrols.md)| 指定登录后强制实施的会话控制。 |
 |state|string| 指定 conditionalAccessPolicy 对象的状态。 可取值为：`enabled`、`disabled`、`enabledForReportingButNotEnforced`。 此为必需属性。 |
@@ -83,3 +83,4 @@ ms.locfileid: "45384464"
   "section": "documentation",
   "tocPath": ""
 }-->
+

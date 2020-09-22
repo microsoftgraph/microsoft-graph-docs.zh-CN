@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f5378764f36bf5fed858755a475fd85a400a2fed
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 2b4cdf4fbd1b81d4a4376983a424c2579376a76d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384469"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018898"
 ---
 # <a name="conditionalaccesslocations-resource-type"></a>conditionalAccessLocations 资源类型
 
@@ -59,3 +59,4 @@ ms.locfileid: "45384469"
   "section": "documentation",
   "tocPath": ""
 }-->
+

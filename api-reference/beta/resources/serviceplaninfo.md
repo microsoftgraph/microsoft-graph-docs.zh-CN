@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: krbain
-ms.openlocfilehash: bf27255c2e5d52cfa1b0fb6529dc7d4fa949deda
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ab76cced936ebaa9f69a7fe7d4a2c2c4909475d7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808639"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019486"
 ---
 # <a name="serviceplaninfo-resource-type"></a>servicePlanInfo 资源类型
 
@@ -63,3 +63,5 @@ ms.locfileid: "46808639"
   "suppressions": []
 }
 -->
+
+

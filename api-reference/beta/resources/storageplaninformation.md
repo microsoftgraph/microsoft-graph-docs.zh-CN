@@ -6,16 +6,16 @@ title: StoragePlanInformation
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 79254efa033528bd8fd4cf66a07959a71e3fef1a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4c115276631c67cb796fd06c582dd490d4c59b20
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520434"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019472"
 ---
 # <a name="storageplaninformation-resource-type"></a>storagePlanInformation 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "42520434"
 
 | 属性名称     | 类型      | 说明                                                             |
 |:------------------|:----------|:----------------------------------------------------------------------- |
-| upgradeAvailable  | 布尔   | 指示是否有更高的存储配额计划可用。 只读。 |
+| upgradeAvailable  | Boolean   | 指示是否有更高的存储配额计划可用。 只读。 |
 
 
 <!--
@@ -52,4 +52,6 @@ ms.locfileid: "42520434"
   "suppressions": []
 }
 -->
+
+
 

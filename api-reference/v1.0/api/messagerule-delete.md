@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3d4405473188108e304dc18b280d70ebb18806db
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cef718dc2f9ef23cc006ba61a3cde71c38d2b1c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43354902"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019045"
 ---
 # <a name="delete-messagerule"></a>删除 messageRule
 
@@ -100,3 +100,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

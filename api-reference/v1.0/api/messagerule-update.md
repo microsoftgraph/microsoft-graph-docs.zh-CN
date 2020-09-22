@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1a2e633f4121d9b57b450764460d6d2b874c024d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2e06f7d481407e6feafbb7e43e7d7836dd710d89
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451700"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019003"
 ---
 # <a name="update-rule"></a>更新规则
 
@@ -136,3 +136,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

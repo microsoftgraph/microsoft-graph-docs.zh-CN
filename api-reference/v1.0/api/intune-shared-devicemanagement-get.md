@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4deb0f0fa4e33b1b3451deb4a15ee4a41f5599ad
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7571c263fbd80e2118bf8dd3b87cd3b8eda38c7b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463873"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019129"
 ---
 # <a name="get-devicemanagement"></a>获取 deviceManagement
 
@@ -23,7 +23,7 @@ ms.locfileid: "43463873"
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限&nbsp;类型&nbsp;（按&nbsp;工作流） | 权限（从最高特权到最低特权） |
+| &nbsp; &nbsp; 工作流)  (的权限类型 &nbsp; | 权限（从最高特权到最低特权） |
 |:---|:---|
 | 委派（工作或学校帐户） | |
 | &nbsp;&nbsp;审核 | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
@@ -33,11 +33,11 @@ ms.locfileid: "43463873"
 | &nbsp;&nbsp;注册 | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp;通知 | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp;载入 | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
-| &nbsp;&nbsp; RBAC | DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All |
+| &nbsp;&nbsp;RBAC | DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All |
 | &nbsp;&nbsp;远程协助 | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp;电信费用管理 | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp;故障排除 | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
-| &nbsp;&nbsp; Windows 信息保护 | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+| &nbsp;&nbsp;Windows 信息保护 | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 | 委派（个人 Microsoft 帐户） | 不支持。|
 | 应用程序 | 不支持。 |
 
@@ -107,6 +107,9 @@ Content-Length: 918
   }
 }
 ```
+
+
+
 
 
 

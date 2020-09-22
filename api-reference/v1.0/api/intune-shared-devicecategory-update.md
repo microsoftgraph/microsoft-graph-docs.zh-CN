@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 84dca5f142e526da4624ae62b5c8c229c8bd14da
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 818a23039bc761072801f83ee1991da25109fca6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463880"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019143"
 ---
 # <a name="update-devicecategory"></a>更新 deviceCategory
 
@@ -26,7 +26,7 @@ ms.locfileid: "43463880"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp;&nbsp; **载入**和 <br> &nbsp;&nbsp; **设备管理**| DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp;**载入**和 <br> &nbsp;&nbsp;**设备管理**| DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备类别的唯一标识符。 只读。|
+|id|String|设备类别的唯一标识符。 只读。|
 |**载入**|
 |displayName|String|设备类别的显示名称。|
 |description|String|设备类别的可选说明。|
@@ -93,6 +93,9 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
+
+
+
 
 
 

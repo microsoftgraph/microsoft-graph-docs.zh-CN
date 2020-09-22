@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: aadf38ac5cff15e4c085f77df36aa6fd48fa272f
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: e48d179e53111cc69b72eb8aa61c52ae105764df
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384471"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018905"
 ---
 # <a name="conditionalaccessgrantcontrols-resource-type"></a>conditionalAccessGrantControls 资源类型
 
@@ -23,9 +23,9 @@ ms.locfileid: "45384471"
 | 属性 | 类型 | 说明 |
 |:-------- |:---- |:----------- |
 | operator | String | 定义授予控件的关系。 可能的值： `AND` 、 `OR` 。 |
-| builtInControls | String collection | 策略所需的内置控件的值列表。 可能的值： `Block` 、、、、 `Mfa` `CompliantDevice` `DomainJoinedDevice` `ApprovedApplication` 、`CompliantApplication` |
-| customAuthenticationFactors | String collection | 策略所需的自定义控件 Id 的列表。 有关详细信息，请参阅[自定义控件](https://docs.microsoft.com/azure/active-directory/conditional-access/controls)。 |
-| termsOfUse | String collection | 策略所需的[使用条款](https://docs.microsoft.com/graph/api/resources/agreement)id 的列表。 |
+| builtInControls | String collection | 策略所需的内置控件的值列表。 可能的值： `Block` 、、、、 `Mfa` `CompliantDevice` `DomainJoinedDevice` `ApprovedApplication` 、 `CompliantApplication` |
+| customAuthenticationFactors | String collection | 策略所需的自定义控件 Id 的列表。 有关详细信息，请参阅 [自定义控件](https://docs.microsoft.com/azure/active-directory/conditional-access/controls)。 |
+| termsOfUse | String collection | 策略所需的 [使用条款](https://docs.microsoft.com/graph/api/resources/agreement) id 的列表。 |
 
 ## <a name="relationships"></a>关系
 
@@ -65,3 +65,4 @@ ms.locfileid: "45384471"
   "section": "documentation",
   "tocPath": ""
 }-->
+

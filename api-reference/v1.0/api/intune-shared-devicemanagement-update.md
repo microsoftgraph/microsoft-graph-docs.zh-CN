@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 57fddece1d8059e46121f23596180636c5765913
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f265c4e8665d607b1bed87e7c61949131877fa99
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463819"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019115"
 ---
 # <a name="update-devicemanagement"></a>更新 deviceManagement
 
@@ -23,7 +23,7 @@ ms.locfileid: "43463819"
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限&nbsp;类型&nbsp;（按&nbsp;工作流） | 权限（从最高特权到最低特权） |
+| &nbsp; &nbsp; 工作流)  (的权限类型 &nbsp; | 权限（从最高特权到最低特权） |
 |:---|:---|
 | 委派（工作或学校帐户） |
 | &nbsp;&nbsp;审核 | DeviceManagementApps.ReadWrite.All |
@@ -31,14 +31,14 @@ ms.locfileid: "43463819"
 | &nbsp;&nbsp;公司注册 | DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp;&nbsp;设备配置 | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp;设备管理 | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; Endpoint protection | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;Endpoint protection | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp;通知 | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp;载入 | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp;基于角色的访问控制 | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp;&nbsp;远程协助 | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp;电信费用管理 | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp;故障排除 | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; Windows 信息保护 | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp;Windows 信息保护 | DeviceManagementApps.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。|
 | 应用程序 | 不支持。 |
 
@@ -144,6 +144,9 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
+
+
+
 
 
 

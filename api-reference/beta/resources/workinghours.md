@@ -5,16 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: 67a61c5ca767f00c32bf568cea4e495d5b0909ac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c6904a5aaa63932597bbb0b921406112d49165af
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519069"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019388"
 ---
 # <a name="workinghours-resource-type"></a>workingHours 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -69,3 +69,5 @@ ms.locfileid: "42519069"
   "suppressions": []
 }
 -->
+
+

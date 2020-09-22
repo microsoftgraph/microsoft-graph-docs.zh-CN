@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d11bda4be798bb4a9d9c0e1048258020c5c2ca08
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2276547b99e297f1e015e12f9ed2254d3cb4632d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533048"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018975"
 ---
 # <a name="commsnotification-resource-type"></a>commsNotification 资源类型
 
@@ -21,10 +21,10 @@ ms.locfileid: "42533048"
 ## <a name="properties"></a>属性
 | 属性       | 类型    | 说明                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
-| changeType     | 字符串  | 可取值为：`created`、`updated`、`deleted`。      |
-| resourceUrl       | 字符串  | 已更改的资源的 URI。                      |
+| changeType     | String  | 可取值为：`created`、`updated`、`deleted`。      |
+| resourceUrl       | String  | 已更改的资源的 URI。                      |
 
-> **注意：** `resourceData`可用作其他数据。 它可以是实体，也可以是实体集合，具体取决于通知中打包的更改数。
+> **注意：** `resourceData` 可用作其他数据。 它可以是实体，也可以是实体集合，具体取决于通知中打包的更改数。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -59,3 +59,4 @@ ms.locfileid: "42533048"
   "suppressions": []
 }
 -->
+
