@@ -5,59 +5,59 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2bea2b06f4d016859a4fb482dfb32dd8a1365eca
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: fa88af236a42920a80a54933175adf1cebd821c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123711"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001867"
 ---
-# <a name="grouplifecyclepolicy-addgroup"></a><span data-ttu-id="75245-103">groupLifecyclePolicy: addGroup</span><span class="sxs-lookup"><span data-stu-id="75245-103">groupLifecyclePolicy: addGroup</span></span>
+# <a name="grouplifecyclepolicy-addgroup"></a><span data-ttu-id="344bf-103">groupLifecyclePolicy: addGroup</span><span class="sxs-lookup"><span data-stu-id="344bf-103">groupLifecyclePolicy: addGroup</span></span>
 
-<span data-ttu-id="75245-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="75245-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="344bf-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="344bf-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="75245-105">将组添加到生命周期策略。</span><span class="sxs-lookup"><span data-stu-id="75245-105">Adds a group to a lifecycle policy.</span></span>
+<span data-ttu-id="344bf-105">将组添加到生命周期策略。</span><span class="sxs-lookup"><span data-stu-id="344bf-105">Adds a group to a lifecycle policy.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="75245-106">权限</span><span class="sxs-lookup"><span data-stu-id="75245-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="344bf-106">权限</span><span class="sxs-lookup"><span data-stu-id="344bf-106">Permissions</span></span>
 
-<span data-ttu-id="75245-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="75245-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="344bf-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="344bf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="75245-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="75245-109">Permission type</span></span>      | <span data-ttu-id="75245-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="75245-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="344bf-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="344bf-109">Permission type</span></span>      | <span data-ttu-id="344bf-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="344bf-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="75245-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="75245-111">Delegated (work or school account)</span></span> | <span data-ttu-id="75245-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="75245-112">Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="75245-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="75245-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="75245-114">不支持</span><span class="sxs-lookup"><span data-stu-id="75245-114">Not supported</span></span> |
-|<span data-ttu-id="75245-115">Application</span><span class="sxs-lookup"><span data-stu-id="75245-115">Application</span></span> | <span data-ttu-id="75245-116">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="75245-116">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="344bf-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="344bf-111">Delegated (work or school account)</span></span> | <span data-ttu-id="344bf-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="344bf-112">Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="344bf-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="344bf-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="344bf-114">不支持</span><span class="sxs-lookup"><span data-stu-id="344bf-114">Not supported</span></span> |
+|<span data-ttu-id="344bf-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="344bf-115">Application</span></span> | <span data-ttu-id="344bf-116">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="344bf-116">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="75245-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="75245-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="344bf-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="344bf-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groupLifecyclePolicies/{id}/addGroup
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="75245-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="75245-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="344bf-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="344bf-118">Request headers</span></span>
 
-| <span data-ttu-id="75245-119">名称</span><span class="sxs-lookup"><span data-stu-id="75245-119">Name</span></span> | <span data-ttu-id="75245-120">说明</span><span class="sxs-lookup"><span data-stu-id="75245-120">Description</span></span> |
+| <span data-ttu-id="344bf-119">名称</span><span class="sxs-lookup"><span data-stu-id="344bf-119">Name</span></span> | <span data-ttu-id="344bf-120">说明</span><span class="sxs-lookup"><span data-stu-id="344bf-120">Description</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="75245-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="75245-121">Authorization</span></span> | <span data-ttu-id="75245-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="75245-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="75245-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="75245-124">Content-Type</span></span>  | <span data-ttu-id="75245-125">application/json</span><span class="sxs-lookup"><span data-stu-id="75245-125">application/json</span></span> |
+| <span data-ttu-id="344bf-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="344bf-121">Authorization</span></span> | <span data-ttu-id="344bf-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="344bf-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="344bf-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="344bf-124">Content-Type</span></span>  | <span data-ttu-id="344bf-125">application/json</span><span class="sxs-lookup"><span data-stu-id="344bf-125">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="75245-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="75245-126">Request body</span></span>
-<span data-ttu-id="75245-127">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="75245-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="344bf-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="344bf-126">Request body</span></span>
+<span data-ttu-id="344bf-127">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="344bf-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="75245-128">参数</span><span class="sxs-lookup"><span data-stu-id="75245-128">Parameter</span></span> | <span data-ttu-id="75245-129">类型</span><span class="sxs-lookup"><span data-stu-id="75245-129">Type</span></span> | <span data-ttu-id="75245-130">说明</span><span class="sxs-lookup"><span data-stu-id="75245-130">Description</span></span> |
+| <span data-ttu-id="344bf-128">参数</span><span class="sxs-lookup"><span data-stu-id="344bf-128">Parameter</span></span> | <span data-ttu-id="344bf-129">类型</span><span class="sxs-lookup"><span data-stu-id="344bf-129">Type</span></span> | <span data-ttu-id="344bf-130">说明</span><span class="sxs-lookup"><span data-stu-id="344bf-130">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="75245-131">groupId</span><span class="sxs-lookup"><span data-stu-id="75245-131">groupId</span></span>|<span data-ttu-id="75245-132">Guid</span><span class="sxs-lookup"><span data-stu-id="75245-132">Guid</span></span>| <span data-ttu-id="75245-133">要添加到策略的组的 ID。</span><span class="sxs-lookup"><span data-stu-id="75245-133">The id of the group to add to the policy.</span></span> |
+|<span data-ttu-id="344bf-131">groupId</span><span class="sxs-lookup"><span data-stu-id="344bf-131">groupId</span></span>|<span data-ttu-id="344bf-132">Guid</span><span class="sxs-lookup"><span data-stu-id="344bf-132">Guid</span></span>| <span data-ttu-id="344bf-133">要添加到策略的组的 ID。</span><span class="sxs-lookup"><span data-stu-id="344bf-133">The id of the group to add to the policy.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="75245-134">响应</span><span class="sxs-lookup"><span data-stu-id="75245-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="344bf-134">响应</span><span class="sxs-lookup"><span data-stu-id="344bf-134">Response</span></span>
 
-<span data-ttu-id="75245-135">如果成功，此方法返回 `200 OK` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="75245-135">If successful, this method returns `200 OK` response code.</span></span> <span data-ttu-id="75245-136">如果组已添加到策略，便会在响应正文中返回 **true** 值。</span><span class="sxs-lookup"><span data-stu-id="75245-136">If the group is added to the policy, a **true** value is returned in the response body.</span></span> <span data-ttu-id="75245-137">否则，响应正文中返回 **false** 值。</span><span class="sxs-lookup"><span data-stu-id="75245-137">Otherwise, a **false** value is returned in the reponse body.</span></span>
+<span data-ttu-id="344bf-135">如果成功，此方法返回 `200 OK` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="344bf-135">If successful, this method returns `200 OK` response code.</span></span> <span data-ttu-id="344bf-136">如果组已添加到策略，便会在响应正文中返回 **true** 值。</span><span class="sxs-lookup"><span data-stu-id="344bf-136">If the group is added to the policy, a **true** value is returned in the response body.</span></span> <span data-ttu-id="344bf-137">否则，响应正文中返回 **false** 值。</span><span class="sxs-lookup"><span data-stu-id="344bf-137">Otherwise, a **false** value is returned in the reponse body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="75245-138">示例</span><span class="sxs-lookup"><span data-stu-id="75245-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="344bf-138">示例</span><span class="sxs-lookup"><span data-stu-id="344bf-138">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="75245-139">请求</span><span class="sxs-lookup"><span data-stu-id="75245-139">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="344bf-139">请求</span><span class="sxs-lookup"><span data-stu-id="344bf-139">Request</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -73,7 +73,7 @@ Content-length: 57
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="75245-140">响应</span><span class="sxs-lookup"><span data-stu-id="75245-140">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="344bf-140">响应</span><span class="sxs-lookup"><span data-stu-id="344bf-140">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -98,3 +98,5 @@ Content-length: 21
   "suppressions": []
 }
 -->
+
+
