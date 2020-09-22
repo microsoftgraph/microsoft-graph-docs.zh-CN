@@ -5,14 +5,14 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3567627fc1d30bf64c25b4d61b3eb22491a025ea
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e80eab3d3935c119046570576a18344447a486d8
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987108"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192355"
 ---
-# <a name="create-chatmessage-in-a-channel"></a>在频道中创建 chatMessage
+# <a name="create-chatmessage-in-channel"></a>在信道中创建了 chatmessage
 
 命名空间：microsoft.graph
 
@@ -120,7 +120,8 @@ Content-length: 160
     "etag": "id-value",
     "messageType": "message",
     "createdDateTime": "2019-02-04T19:58:15.511Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deleted": false,
     "subject": null,
     "summary": null,

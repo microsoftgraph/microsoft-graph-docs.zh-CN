@@ -1,16 +1,16 @@
 ---
 title: 答复频道中的邮件
-description: 在渠道中回复现有消息。
+description: 答复频道中的现有邮件。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 02e177ace9c463efa115da531a6d95020820bf72
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bd656b24e107a8884acb96c5fe2d09861fa54ed2
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987062"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192334"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>答复频道中的邮件
 
@@ -108,7 +108,8 @@ Content-length: 160
     "etag": "id-value",
     "messageType": "message",
     "createdDateTime": "2019-02-04T19:58:15.511Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deleted": false,
     "subject": null,
     "summary": null,

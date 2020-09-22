@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9e586a94d18001702b845429236edabc04991a97
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d09b98c8fbf3a9367ecd2c1f64b6a544c9baa7d5
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996736"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192415"
 ---
 # <a name="application-removepassword"></a>应用程序： removePassword
 
@@ -26,9 +26,9 @@ ms.locfileid: "47996736"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 所有的 Directory.accessasuser.all，all，all，All |
-| 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Application.readwrite.ownedby、所有的 readwrite、全部、读写。 |
+| 委派（工作或学校帐户）     | Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（个人 Microsoft 帐户） | Application.ReadWrite.All |
+| 应用程序                            | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,7 +47,7 @@ POST /applications/{id}/removePassword
 
 ## <a name="request-body"></a>请求正文
 
-| 属性  | 类型 | 说明|
+| 属性  | 类型 | 描述|
 |:----------|:-----|:-----------|
 | keyId     | GUID | 密码的唯一标识符。 必需。 |
 

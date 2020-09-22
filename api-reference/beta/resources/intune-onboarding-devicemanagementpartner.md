@@ -3,26 +3,26 @@ title: deviceManagementPartner 资源类型
 description: 表示与设备管理合作伙伴的连接的实体。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 652e6671b46570d418bc7669d93ec69a37a31b79
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: ceb517fe2dcb5787743f97e3732a187abc613b71
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44788890"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029566"
 ---
 # <a name="devicemanagementpartner-resource-type"></a>deviceManagementPartner 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示与设备管理合作伙伴的连接的实体。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 deviceManagementPartners](../api/intune-onboarding-devicemanagementpartner-list.md)|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) 集合|列出 [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) 对象的属性和关系。|
@@ -45,7 +45,7 @@ ms.locfileid: "44788890"
 |whenPartnerDevicesWillBeMarkedAsNonCompliant|DateTimeOffset|PartnerDevices 将被标记为不符合时的 UTC 格式的日期/时间。 这将很快变成 obselete。|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|要删除 PartnerDevices 时的日期/时间（UTC 时间）|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|PartnerDevices 将被标记为“不符合”时的日期/时间（UTC 时间）|
-|groupsRequiringPartnerEnrollment|[deviceManagementPartnerAssignment](../resources/intune-onboarding-devicemanagementpartnerassignment.md)集合|指定注册是否通过合作伙伴的用户组。|
+|groupsRequiringPartnerEnrollment|[deviceManagementPartnerAssignment](../resources/intune-onboarding-devicemanagementpartnerassignment.md) 集合|指定注册是否通过合作伙伴的用户组。|
 
 ## <a name="relationships"></a>关系
 无
@@ -84,6 +84,9 @@ ms.locfileid: "44788890"
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bd4a28300d18db4ef9bf7dded1b739d0870ffa49
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 538c7e8948e8680e9b898aa73eb02ba9ece505be
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996813"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192414"
 ---
 # <a name="create-extensionproperty"></a>创建 extensionProperty
 
@@ -26,9 +26,9 @@ ms.locfileid: "47996813"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 所有的 Directory.accessasuser.all，all，all，All    |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Application.readwrite.ownedby、所有的 readwrite、全部、读写。 |
+|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（个人 Microsoft 帐户） | Application.ReadWrite.All    |
+|应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,11 +49,11 @@ POST /applications/{id}/extensionProperties
 在请求正文中，提供具有以下属性的 [extensionProperty](../resources/extensionproperty.md) 对象。
 
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | 描述 |
 |:-------------|:------------|:------------|
-|DataType|String| 指定 extension 属性可以包含的值的数据类型。 支持以下值。 不可为空。 <ul><li>`Binary` -最多为256字节</li><li>`Boolean`</li><li>`DateTime` -必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer` -32-位值。</li><li>`LargeInteger` -64-位值。</li><li>`String` -最多为-256 个字符</li></ul>|
-|name|String| 扩展属性的名称。 不可为空。 |
-|targetObjects|String collection| 支持以下值。 不可为空。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|DataType|String| 指定 extension 属性可以包含的值的数据类型。 支持以下值。 不可为 null。 <ul><li>`Binary` -最多为256字节</li><li>`Boolean`</li><li>`DateTime` -必须以 ISO 8601 格式指定。 存储为 UTC 格式。</li><li>`Integer` -32-位值。</li><li>`LargeInteger` -64-位值。</li><li>`String` -最多为-256 个字符</li></ul>|
+|name|字符串| 扩展属性的名称。 不可为 null。 |
+|targetObjects|String collection| 支持以下值。 不可为 null。 <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 
 ## <a name="response"></a>响应
