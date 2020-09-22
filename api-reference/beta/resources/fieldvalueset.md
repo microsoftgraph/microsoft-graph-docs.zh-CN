@@ -6,24 +6,24 @@ title: FieldValueSet
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: f5c7f741fe5f1dd46b4ffe7572d2bd982aea4853
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 62a7d55813877a1808c4930322f1a0ddc33bf89f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498418"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071197"
 ---
-# <a name="fieldvalueset-resource"></a><span data-ttu-id="b1575-103">FieldValueSet 资源</span><span class="sxs-lookup"><span data-stu-id="b1575-103">FieldValueSet resource</span></span>
+# <a name="fieldvalueset-resource"></a><span data-ttu-id="8aa05-103">FieldValueSet 资源</span><span class="sxs-lookup"><span data-stu-id="8aa05-103">FieldValueSet resource</span></span>
 
-<span data-ttu-id="b1575-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="b1575-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8aa05-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8aa05-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b1575-105">表示 [listItem](listitem.md) 资源中的列值。</span><span class="sxs-lookup"><span data-stu-id="b1575-105">Represents the column values in a [listItem](listitem.md) resource.</span></span>
+<span data-ttu-id="8aa05-105">表示 [listItem](listitem.md) 资源中的列值。</span><span class="sxs-lookup"><span data-stu-id="8aa05-105">Represents the column values in a [listItem](listitem.md) resource.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="b1575-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="b1575-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8aa05-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="8aa05-106">JSON representation</span></span>
 
-<span data-ttu-id="b1575-107">下面是 **fieldValueSet** 资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b1575-107">Here is a JSON representation of a **fieldValueSet** resource.</span></span>
+<span data-ttu-id="8aa05-107">下面是 **fieldValueSet** 资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8aa05-107">Here is a JSON representation of a **fieldValueSet** resource.</span></span>
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.fieldValueSet",
        "keyProperty": "id", "openType": true } -->
 
@@ -37,24 +37,24 @@ ms.locfileid: "42498418"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="b1575-108">属性</span><span class="sxs-lookup"><span data-stu-id="b1575-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="8aa05-108">属性</span><span class="sxs-lookup"><span data-stu-id="8aa05-108">Properties</span></span>
 
-<span data-ttu-id="b1575-109">**listItem** 中的每个用户可见字段作为 **fieldValueSet** 中的名称/值对返回。</span><span class="sxs-lookup"><span data-stu-id="b1575-109">Each user-visible field in the **listItem** is returned as a name-value pair in the **fieldValueSet**.</span></span>
-<span data-ttu-id="b1575-110">上面是针对包含**作者**、**名称**、**颜色**和**数量**这四列列表的一个示例。</span><span class="sxs-lookup"><span data-stu-id="b1575-110">The example above is for a list that contains four columns, **Author**, **Name**, **Color**, and **Quantity**.</span></span>
+<span data-ttu-id="8aa05-109">**listItem** 中的每个用户可见字段作为 **fieldValueSet** 中的名称/值对返回。</span><span class="sxs-lookup"><span data-stu-id="8aa05-109">Each user-visible field in the **listItem** is returned as a name-value pair in the **fieldValueSet**.</span></span>
+<span data-ttu-id="8aa05-110">上面是针对包含**作者**、**名称**、**颜色**和**数量**这四列列表的一个示例。</span><span class="sxs-lookup"><span data-stu-id="8aa05-110">The example above is for a list that contains four columns, **Author**, **Name**, **Color**, and **Quantity**.</span></span>
 
-<span data-ttu-id="b1575-111">默认情况下不返回查找字段（如上述 `Author`）。</span><span class="sxs-lookup"><span data-stu-id="b1575-111">Lookup fields (like `Author` above) are not returned by default.</span></span>
-<span data-ttu-id="b1575-112">相反，服务器会返回一个引用查找中锁定的 listItem 的“LookupId”字段（如上述 `AuthorLookupId`）。</span><span class="sxs-lookup"><span data-stu-id="b1575-112">Instead, the server returns a 'LookupId' field (like `AuthorLookupId` above) referencing the listItem targeted in the lookup.</span></span>
-<span data-ttu-id="b1575-113">“LookupId”字段的名称是原始字段名称，后跟 `LookupId`。</span><span class="sxs-lookup"><span data-stu-id="b1575-113">The name of the 'LookupId' field is the original field name followed by `LookupId`.</span></span>
+<span data-ttu-id="8aa05-111">默认情况下不返回查找字段（如上述 `Author`）。</span><span class="sxs-lookup"><span data-stu-id="8aa05-111">Lookup fields (like `Author` above) are not returned by default.</span></span>
+<span data-ttu-id="8aa05-112">相反，服务器会返回一个引用查找中锁定的 listItem 的“LookupId”字段（如上述 `AuthorLookupId`）。</span><span class="sxs-lookup"><span data-stu-id="8aa05-112">Instead, the server returns a 'LookupId' field (like `AuthorLookupId` above) referencing the listItem targeted in the lookup.</span></span>
+<span data-ttu-id="8aa05-113">“LookupId”字段的名称是原始字段名称，后跟 `LookupId`。</span><span class="sxs-lookup"><span data-stu-id="8aa05-113">The name of the 'LookupId' field is the original field name followed by `LookupId`.</span></span>
 
-<span data-ttu-id="b1575-114">单个查询中可能请求最多 12 个查找字段。</span><span class="sxs-lookup"><span data-stu-id="b1575-114">Up to 12 lookup fields may be requested in a single query.</span></span>
-<span data-ttu-id="b1575-115">如果请求包含带所需字段的 `select` 语句，服务器将返回查找值。</span><span class="sxs-lookup"><span data-stu-id="b1575-115">The server will return lookup values if your request includes a `select` statement with the fields you need.</span></span>
-<span data-ttu-id="b1575-116">示例：</span><span class="sxs-lookup"><span data-stu-id="b1575-116">Example:</span></span>
+<span data-ttu-id="8aa05-114">单个查询中可能请求最多 12 个查找字段。</span><span class="sxs-lookup"><span data-stu-id="8aa05-114">Up to 12 lookup fields may be requested in a single query.</span></span>
+<span data-ttu-id="8aa05-115">如果请求包含带所需字段的 `select` 语句，服务器将返回查找值。</span><span class="sxs-lookup"><span data-stu-id="8aa05-115">The server will return lookup values if your request includes a `select` statement with the fields you need.</span></span>
+<span data-ttu-id="8aa05-116">示例：</span><span class="sxs-lookup"><span data-stu-id="8aa05-116">Example:</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Author,BookTitle,PageCount)
 ```
 
-<span data-ttu-id="b1575-117">你可以在单个查询中请求最多 12 个查找字段以及任意数量的常规字段。</span><span class="sxs-lookup"><span data-stu-id="b1575-117">You may request up to 12 lookup fields in a single query, plus any number of regular fields.</span></span>
+<span data-ttu-id="8aa05-117">你可以在单个查询中请求最多 12 个查找字段以及任意数量的常规字段。</span><span class="sxs-lookup"><span data-stu-id="8aa05-117">You may request up to 12 lookup fields in a single query, plus any number of regular fields.</span></span>
 
 <!--
 {
@@ -66,3 +66,5 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
   "suppressions": []
 }
 -->
+
+
