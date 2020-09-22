@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 1c92225c0a95f49bd95b8c81abac70a0600f7cea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3da2dc2719f24bfd986d5a3df550b4635b734131
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497991"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052878"
 ---
 # <a name="focusactivitystatistics-resource-type"></a>focusActivityStatistics 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "42497991"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示有关用户可用于焦点工作的时间的数据。 这基于[activityStatistics](../resources/activitystatistics.md)。
+表示有关用户可用于焦点工作的时间的数据。 这基于 [activityStatistics](../resources/activitystatistics.md)。
 
 ## <a name="properties"></a>属性
 
@@ -69,3 +69,4 @@ ms.locfileid: "42497991"
   "section": "documentation",
   "tocPath": ""
 }-->
+

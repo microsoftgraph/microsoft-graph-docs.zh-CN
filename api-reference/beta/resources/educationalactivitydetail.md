@@ -5,31 +5,31 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: ccacf02184bbf54e49949d7671d34dde93b3859f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2f19f5e02ae26281a5ac1b2b48498a426f976e8b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502821"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055659"
 ---
 # <a name="educationalactivitydetail-resource-type"></a>educationalActivityDetail 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表用户已进行并在[educationalActivity](educationalActivity.md)资源中使用的 undergraduate、毕业、postgraduate 学位或其他教学活动的其他详细信息。
+代表用户已进行并在 [educationalActivity](educationalActivity.md) 资源中使用的 undergraduate、毕业、postgraduate 学位或其他教学活动的其他详细信息。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明                                                   |
 |:-------------|:------------|:--------------------------------------------------------------|
-|缩写  |String       |缩短学位或程序的名称（示例： PhD、MBA）    |
+|缩写  |String       |简短的学位或程序名称 (例如： PhD、MBA)     |
 |activities    |String       |课外与程序一起开展的活动。   |
-|奖励        |String       |与该计划相关的任何奖项或荣誉。              |
-|说明   |字符串       |用户提供的程序的简短说明。         |
-|displayName   |字符串       |用户提供的程序的长格式名称。      |
-|fieldsOfStudy |String       |与程序关联的 Majors 和未成年人。 （如果适用） |
+|奖项        |String       |与该计划相关的任何奖项或荣誉。              |
+|说明   |String       |用户提供的程序的简短说明。         |
+|displayName   |String       |用户提供的程序的长格式名称。      |
+|fieldsOfStudy |String       |与程序关联的 Majors 和未成年人。  (（如果适用）)  |
 |grade         |String       |最终成绩、类、GPA 或分数。                          |
 |notes         |String       |用户提供的其他笔记。                        |
 |webUrl        |String       |指向 "度" 或 "程序" 页面的链接。                            |
@@ -70,3 +70,4 @@ ms.locfileid: "42502821"
   "section": "documentation",
   "tocPath": ""
 }-->
+

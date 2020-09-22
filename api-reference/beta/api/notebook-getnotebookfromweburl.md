@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 6b42bd6425b35333f7f14021182bc4141497e1a1
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 77e0a2f181275876ce0a692808877038cc3a4a87
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44894821"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053532"
 ---
 # <a name="notebook-getnotebookfromweburl"></a>笔记本： getNotebookFromWebUrl
 
@@ -18,7 +18,7 @@ ms.locfileid: "44894821"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用其 URL 路径检索[笔记本](../resources/notebook.md)对象的属性和关系。
+使用其 URL 路径检索 [笔记本](../resources/notebook.md) 对象的属性和关系。
 
 Microsoft 365 上的位置可以是 Microsoft 365、组笔记本或 SharePoint 网站托管的团队笔记本上的用户笔记本。
 ## <a name="permissions"></a>权限
@@ -52,7 +52,7 @@ POST /sites/{id}/onenote/notebooks/GetNotebookFromWebUrl
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[笔记本](../resources/notebook.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [笔记本](../resources/notebook.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -126,3 +126,5 @@ Content-Length: 544
   "suppressions": [
   ]
 }-->
+
+

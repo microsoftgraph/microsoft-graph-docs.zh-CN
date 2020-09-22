@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: e030ce95ef2b8c5f1af5424bfdd0e727f2d3e2f6
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: bec30dec9f30186d3a8a5a0bcbd9be15874c8297
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806539"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055475"
 ---
 # <a name="filesecuritystate-resource-type"></a>fileSecurityState 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "46806539"
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
 |fileHash|[fileHash](filehash.md)|包含 (加密和位置敏感) 的文件哈希的复杂类型。|
-|name|String|不 (路径) 的文件名。|
+|名称|String|不 (路径) 的文件名。|
 |路径|String|文件/imageFile 的完整文件路径。|
 |riskScore|String|通知文件的提供程序生成/计算风险分数。 建议的值范围为0-1，这相当于一个百分比。|
 
@@ -63,3 +63,5 @@ ms.locfileid: "46806539"
   "suppressions": []
 }
 -->
+
+

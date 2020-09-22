@@ -1,16 +1,16 @@
 ---
 title: educationWordResource 资源类型
-description: 'EducationResource 的子类。 这是 Word 文档资源。 必须将 Word 文件上载到与**fileResource**目录关联的 '
+description: 'EducationResource 的子类。 这是 Word 文档资源。 必须将 Word 文件上载到与 **fileResource** 目录关联的 '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 06b1f097199bbf188c0bc0a538fe471b07cdec91
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 69339b3192a37c286f430a4b65c1aee64a9cbab5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499944"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055566"
 ---
 # <a name="educationwordresource-resource-type"></a>educationWordResource 资源类型
 
@@ -18,13 +18,13 @@ ms.locfileid: "42499944"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[EducationResource](educationresource.md)的子类。 这是 Word 文档资源。 必须在与分配或提交相关联的**fileResource**目录中上载 Word 文件。
+[EducationResource](educationresource.md)的子类。 这是 Word 文档资源。 必须在与分配或提交相关联的 **fileResource** 目录中上载 Word 文件。
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|fileUrl|字符串|文件在磁盘上的位置。|
+|fileUrl|String|文件在磁盘上的位置。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -57,3 +57,5 @@ ms.locfileid: "42499944"
   "suppressions": []
 }
 -->
+
+

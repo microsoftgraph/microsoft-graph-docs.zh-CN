@@ -5,16 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: f21b1f4a2a36a8c1e56195eb779166e0512106a1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f6f0f659d508616b90740d41906429858df2b68f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456703"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053480"
 ---
 # <a name="create-section"></a>创建分区
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +49,7 @@ POST /sites/{id}/onenote/notebooks/{id}/sections
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[onenoteSection](../resources/onenotesection.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [onenoteSection](../resources/onenotesection.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -128,3 +128,5 @@ Content-length: 272
   ]
 }
 -->
+
+

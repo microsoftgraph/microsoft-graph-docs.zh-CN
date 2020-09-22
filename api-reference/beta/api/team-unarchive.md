@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cdf4ac0b7687836559614d2b51d04f831a9ff0f2
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 971e8b242f6eb154834422622c5c33df08779788
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491908"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055727"
 ---
 # <a name="unarchive-team"></a>解档团队
 
@@ -18,20 +18,20 @@ ms.locfileid: "44491908"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-还原存档的[团队](../resources/team.md)。 这将恢复用户发送邮件和编辑团队的能力，abiding 受租户和团队设置的支持。 使用[存档](team-archive.md)API 存档团队。
+还原存档的 [团队](../resources/team.md)。 这将恢复用户发送邮件和编辑团队的能力，abiding 受租户和团队设置的支持。 使用 [存档](team-archive.md) API 存档团队。
 
 Unarchiving 是一种异步操作。 异步操作成功完成后，团队即为 unarchived，这可能会在此 API 的响应之后发生。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | TeamSettings、Group 写全部、所有的 ReadWrite。 All |
+|委派（工作或学校帐户） | TeamSettings.ReadWrite.All、Group.ReadWrite.All、Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | TeamSettings *、TeamSettings、all、ReadWrite、all、all、All、All |
+|应用程序 | TeamSettings *、TeamSettings、all、ReadWrite、all、all、All、All |
 
-> **注意**：标记为 * 的权限使用[特定于资源的同意](https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于[特定于资源的同意](https://aka.ms/teams-rsc)。
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
@@ -51,7 +51,7 @@ POST /teams/{id}/unarchive
 
 ## <a name="response"></a>响应
 
-如果 unarchiving 成功启动，此方法将返回 `202 Accepted` 响应代码。 该响应还将包含一个 `Location` 标头，其中包含为处理团队的 unarchiving 而创建的[teamsAsyncOperation](../resources/teamsasyncoperation.md)的位置。 通过向此位置发出 GET 请求，检查 unarchiving 操作的状态。
+如果 unarchiving 成功启动，此方法将返回 `202 Accepted` 响应代码。 该响应还将包含一个 `Location` 标头，其中包含为处理团队的 unarchiving 而创建的 [teamsAsyncOperation](../resources/teamsasyncoperation.md) 的位置。 通过向此位置发出 GET 请求，检查 unarchiving 操作的状态。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
@@ -105,3 +105,5 @@ Content-Length: 0
   "suppressions": []
 }
 -->
+
+

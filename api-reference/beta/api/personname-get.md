@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 93a5e52285ae4e1eb346a7dd8a6a76f35a77892d
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ef1fd3a2287f74278676976c57f07a67c22441e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811712"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055853"
 ---
 # <a name="get-personname"></a>获取 Contact.personname
 
@@ -39,7 +39,7 @@ GET /me/profile/names/{id}
 GET /users/{id | userPrincipalName}/profile/names/{id}
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
 
 此方法支持 `$select` 查询参数。 指定要包含在响应中的属性的列表，并以逗号分隔。 为获得最佳性能，请仅选择所需的属性子集。
 
@@ -144,3 +144,5 @@ Content-type: application/json
   }
 }
 ```
+
+

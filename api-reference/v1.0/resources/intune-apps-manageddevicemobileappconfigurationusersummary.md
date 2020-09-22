@@ -3,14 +3,14 @@ title: managedDeviceMobileAppConfigurationUserSummary 资源类型
 description: 包含 MDM 移动应用配置用户状态摘要的属性、继承属性和操作。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 99311c3fca0d1b1ecbe701057c9172d723ae8f05
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 608353667b4e9d8a16b699d3390cbb7e04eaf9a0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43474175"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054670"
 ---
 # <a name="manageddevicemobileappconfigurationusersummary-resource-type"></a>managedDeviceMobileAppConfigurationUserSummary 资源类型
 
@@ -62,6 +62,8 @@ ms.locfileid: "43474175"
   "configurationVersion": 1024
 }
 ```
+
+
 
 
 

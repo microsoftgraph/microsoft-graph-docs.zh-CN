@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: b313fc055eb2d4f60ae2fec3edcb031ac9046f59
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c0647ea22e6c67cd1d3c16059e38293b7f3d061
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456747"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053535"
 ---
 # <a name="get-notebook"></a>获取笔记本
 
@@ -18,8 +18,8 @@ ms.locfileid: "42456747"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[笔记本](../resources/notebook.md)对象的属性和关系。
-## <a name="permissions"></a>Permissions
+检索 [笔记本](../resources/notebook.md) 对象的属性和关系。
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -36,8 +36,8 @@ GET /users/{id | userPrincipalName}/onenote/notebooks/{id}
 GET /groups/{id}/onenote/notebooks/{id}
 GET /sites/{id}/onenote/notebooks/{id}
 ```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 `select` 和 `expand` [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。
+## <a name="optional-query-parameters"></a>可选查询参数
+此方法支持 `select` 和 `expand` [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 笔记本的有效 `expand` 值为 `sections` 和 `sectionGroups`。
 
@@ -52,7 +52,7 @@ GET /sites/{id}/onenote/notebooks/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[笔记本](../resources/notebook.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [笔记本](../resources/notebook.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -123,3 +123,5 @@ Content-length: 284
   ]
 }
 -->
+
+

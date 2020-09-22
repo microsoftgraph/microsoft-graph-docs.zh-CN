@@ -3,20 +3,20 @@ title: getManagementConditionStatementsForPlatform 函数
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 92a557fd31f68a41e6c5757059b1cae362fac164
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: c45382e5d2f7155be45c07c3846cd15fdec9b56f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178071"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054110"
 ---
 # <a name="getmanagementconditionstatementsforplatform-function"></a>getManagementConditionStatementsForPlatform 函数
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "44178071"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,12 +53,12 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 
 |属性|类型|说明|
 |:---|:---|:---|
-|platform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|尚未记录|
+|平台|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|尚未记录|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此函数会在`200 OK`响应正文中返回响应代码和[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)集合。
+如果成功，此函数会 `200 OK` 在响应正文中返回响应代码和 [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) 集合。
 
 ## <a name="example"></a>示例
 
@@ -96,6 +96,9 @@ Content-Length: 615
   ]
 }
 ```
+
+
+
 
 
 

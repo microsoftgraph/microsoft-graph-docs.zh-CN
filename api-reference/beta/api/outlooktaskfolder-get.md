@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 62d645ebf39ebd3635a72cf71670cfb6d0442d9e
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 4beea2cf11f3769d96bc94749028608cbfc239c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311961"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053410"
 ---
 # <a name="get-outlooktaskfolder-deprecated"></a>获取 outlookTaskFolder (弃用) 
 
@@ -114,3 +114,5 @@ Content-length: 151
   ]
 }
 -->
+
+

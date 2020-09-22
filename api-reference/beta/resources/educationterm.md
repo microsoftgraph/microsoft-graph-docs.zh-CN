@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 2d93bba585393b11cdb0adc573a8fed5b895ed6a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 46f68833487f6b542569a1b042daeed836c13053
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500000"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055573"
 ---
 # <a name="educationterm-resource-type"></a>educationTerm 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ ms.locfileid: "42500000"
 |:---------------|:--------|:----------|
 |displayName| String| 学期的显示名称。| 
 |externalId|String| 同步系统中的学期 ID。|
-|startDate|日期|学期开始日期。|
+|startDate|Date|学期开始日期。|
 |endDate|Date|学期结束日期。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -61,3 +61,5 @@ ms.locfileid: "42500000"
   "suppressions": []
 }
 -->
+
+

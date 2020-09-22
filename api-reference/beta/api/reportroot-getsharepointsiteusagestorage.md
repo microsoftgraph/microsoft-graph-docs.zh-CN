@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: d586d2736b5da0949f0b9207c7918e9fb8ad60ef
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 0b9347bb6f526d92f646fc1a87a615f7177fc7a6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896218"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053375"
 ---
 # <a name="reportroot-getsharepointsiteusagestorage"></a>reportRoot: getSharePointSiteUsageStorage
 
@@ -20,7 +20,7 @@ ms.locfileid: "44896218"
 
 获取报表周期内分配和使用的存储趋势。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅[Microsoft 365 报表-SharePoint 网站使用情况](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)。
+> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 报表-SharePoint 网站使用情况](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)。
 
 ## <a name="permissions"></a>权限
 
@@ -32,7 +32,7 @@ ms.locfileid: "44896218"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
-**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 For api 以读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
+**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -76,7 +76,7 @@ CSV 文件包含下面的列标题。
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和**[siteUsageStorage](../resources/siteusagestorage.md)** 对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **[siteUsageStorage](../resources/siteusagestorage.md)** 对象。
 
 ## <a name="example"></a>示例
 
@@ -186,3 +186,5 @@ Content-Length: 248
   "suppressions": [
   ]
 }-->
+
+

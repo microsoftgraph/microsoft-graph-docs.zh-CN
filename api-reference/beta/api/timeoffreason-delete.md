@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1e71e976167b94d144037d93bf9bb3dff59cc5b7
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: e5768df9f0aa039c8eec8d17fb8e83afa0ca9214
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44154421"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055734"
 ---
 # <a name="delete-timeoffreason"></a>删除 timeOffReason
 
@@ -18,11 +18,11 @@ ms.locfileid: "44154421"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过设置**isActive**属性将[timeOffReason](../resources/timeoffreason.md)标记为非活动状态。 每个团队必须至少包含一个**timeOffReason**。
+通过设置**isActive**属性将[timeOffReason](../resources/timeoffreason.md)标记为非活动状态。 每个团队必须至少包含一个 **timeOffReason**。
 
-此方法不会删除指定的**timeOffReason**实例。 已分配此原因的[timeOffItem](../resources/timeoffitem.md)实例仍将被分配给此原因。
+此方法不会删除指定的 **timeOffReason** 实例。 已分配此原因的[timeOffItem](../resources/timeoffitem.md)实例仍将被分配给此原因。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "44154421"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 计划的所有写。 * |
+|应用程序 | 计划的所有写。 * |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
@@ -114,3 +114,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

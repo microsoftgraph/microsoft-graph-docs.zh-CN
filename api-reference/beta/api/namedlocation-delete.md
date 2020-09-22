@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c8902f8d164582c0677da8193f605a9d66bcc3bb
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: cbb975deb1ed335df24ab830bf4182d7a48d96cd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556208"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053536"
 ---
 # <a name="delete-namedlocation"></a>删除 namedLocation
 
@@ -18,9 +18,9 @@ ms.locfileid: "44556208"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除[namedLocation](../resources/namedlocation.md)对象。
+删除 [namedLocation](../resources/namedlocation.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "44556208"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Policy。 Read. All 和 ConditionalAccess |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Policy。 Read. All 和 ConditionalAccess |
+| 应用程序                            | Policy。 Read. All 和 ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

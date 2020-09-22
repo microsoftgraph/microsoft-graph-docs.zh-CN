@@ -3,24 +3,24 @@ title: 更新 managementConditionStatement
 description: 更新 managementConditionStatement 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f2d9750b35ed4103a2a2e603bcd9a25b7b6ff3b6
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 173a2b22320de975568a9d56ad113f5881bbef38
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178057"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054089"
 ---
 # <a name="update-managementconditionstatement"></a>更新 managementConditionStatement
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)对象的属性。
+更新 [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "44178057"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -48,26 +48,26 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)对象的 JSON 表示形式。
+在请求正文中，提供 [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) 对象的 JSON 表示形式。
 
-下表显示创建[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)时所需的属性。
+下表显示创建 [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|管理条件语句的唯一标识符。 创建时分配的系统生成值。|
+|id|String|管理条件语句的唯一标识符。 创建时分配的系统生成值。|
 |displayName|String|管理条件语句的管理员定义名称。|
-|说明|字符串|管理员定义的管理条件语句的说明。|
+|说明|String|管理员定义的管理条件语句的说明。|
 |createdDateTime|DateTimeOffset|管理条件语句的创建时间。 生成的服务端。|
 |modifiedDateTime|DateTimeOffset|上次修改管理条件语句的时间。 更新了服务端。|
 |表达式|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|用于评估管理条件语句是否已激活/停用的管理条件语句表达式。|
 |eTag|String|管理条件语句的 ETag。 更新了服务端。|
-|applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|适用于此管理条件语句的平台。
+|applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md) 集合|适用于此管理条件语句的平台。
 这是通过查看与管理条件语句相关的管理条件和查找适用平台的交集计算得出的。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -117,6 +117,9 @@ Content-Length: 526
   ]
 }
 ```
+
+
+
 
 
 

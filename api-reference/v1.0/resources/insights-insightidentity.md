@@ -5,18 +5,18 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 3a23344a18979c7d1aa69b8e841007812797b238
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f4b8bc6b66598753c0755d249ab37283810e8db7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531303"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054866"
 ---
 # <a name="insightidentity"></a>insightIdentity
 
 命名空间：microsoft.graph
 
-包含[sharedInsight](insights-shared.md)项目的属性的复杂类型。 
+包含 [sharedInsight](insights-shared.md) 项目的属性的复杂类型。 
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -39,6 +39,7 @@ ms.locfileid: "42531303"
 
 | 属性              | 类型          | 说明  |
 | -------------         |-----------    | -------------|
-| displayName       | 字符串          | 共享项目的用户的显示名称。 |
-| id              | 字符串        | 共享项的用户的 id。     |
+| displayName       | String          | 共享项目的用户的显示名称。 |
+| id              | String        | 共享项的用户的 id。     |
 | address             | String      | 共享项目的用户的电子邮件地址。  |
+

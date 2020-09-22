@@ -5,20 +5,20 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: f2bd2d84d6f7dbc18fc5e37079eebc4289dd2ee2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: af0fbc4247e7ffc9c8285409789d0437d8e09cb5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499594"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055510"
 ---
 # <a name="emailactivitystatistics-resource-type"></a>emailActivityStatistics 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示有关用户在 Microsoft Outlook 的电子邮件活动中所用时间的数据。 这基于[activityStatistics](../resources/activitystatistics.md)。
+表示有关用户在 Microsoft Outlook 的电子邮件活动中所用时间的数据。 这基于 [activityStatistics](../resources/activitystatistics.md)。
 
 ## <a name="properties"></a>属性
 
@@ -26,7 +26,7 @@ ms.locfileid: "42499594"
 |:-------------|:------------|:------------|
 |activity|analyticsActivityType| 返回其统计信息的电子邮件活动。|
 |duration|持续时间|在电子邮件上花费的总小时数。 值以 ISO 8601 格式表示，持续时间。|
-|endDate|Date|电子邮件活动结束的日期。 对于日历日期，该值以 ISO 8601 格式表示。 例如，属性值可以是 "2019-07-04"，它遵循 YYYY-MM-DD 格式。|
+|endDate|日期|电子邮件活动结束的日期。 对于日历日期，该值以 ISO 8601 格式表示。 例如，属性值可以是 "2019-07-04"，它遵循 YYYY-MM-DD 格式。|
 |id|String| 电子邮件活动的只读 ID。|
 |startDate|日期|电子邮件活动的开始日期。 对于日历日期，该值以 ISO 8601 格式表示。 例如，属性值可以是 "2019-07-03"，它遵循 YYYY-MM-DD 格式。|
 |timeZoneUsed|String|用户在 Outlook 日历中设置的时区用于计算。 例如，属性值可以是 "太平洋标准时间"。|
@@ -75,3 +75,4 @@ ms.locfileid: "42499594"
   "section": "documentation",
   "tocPath": ""
 }-->
+

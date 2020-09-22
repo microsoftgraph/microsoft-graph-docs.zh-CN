@@ -3,14 +3,14 @@ title: managedDeviceMobileAppConfigurationUserStatus 资源类型
 description: 包含某个用户的 MDM 移动应用配置状态的属性、继承属性和操作。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 69a9d500fcf6e11c2df64bfb99cf3d7147f4cc8a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1c5331094c1817b2a5730770ad769d54149bde95
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43474203"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054677"
 ---
 # <a name="manageddevicemobileappconfigurationuserstatus-resource-type"></a>managedDeviceMobileAppConfigurationUserStatus 资源类型
 
@@ -37,7 +37,7 @@ ms.locfileid: "43474203"
 |devicesCount|Int32|该用户的设备计数。|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|策略报告的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间。|
-|userPrincipalName|字符串|UserPrincipalName。|
+|userPrincipalName|String|UserPrincipalName。|
 
 ## <a name="relationships"></a>关系
 无
@@ -61,6 +61,8 @@ ms.locfileid: "43474203"
   "userPrincipalName": "String"
 }
 ```
+
+
 
 
 

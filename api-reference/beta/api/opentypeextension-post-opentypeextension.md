@@ -1,16 +1,16 @@
 ---
 title: 创建开放扩展
-description: 通过 openTypeExtension (创建开放) 并添加自定义属性
+description: 创建开放扩展 (openTypeExtension 对象) 并添加自定义属性
 localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 4331ae8aa655ac0b250f809eeec682451a208026
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: f0449222e9d9694636653f23c0467f6e325d66d9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849623"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055888"
 ---
 # <a name="create-open-extension"></a>创建开放扩展
 
@@ -18,7 +18,7 @@ ms.locfileid: "46849623"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在打开 [openTypeExtension](../resources/opentypeextension.md) 对象 (文件创建一个开) ，并在受支持资源的新实例或现有实例中添加自定义属性。
+创建开放扩展 ([openTypeExtension](../resources/opentypeextension.md) 对象) 并在受支持的资源的新实例或现有实例中添加自定义属性。
 
 > **请注意：** 如果要在 Outlook 资源上创建开放扩展，请参阅 [openTypeExtension 资源类型](../resources/opentypeextension.md#outlook-specific-considerations)中的 **Outlook 特定注意事项**。
 
@@ -37,8 +37,8 @@ ms.locfileid: "46849623"
 | [组织](../resources/organization.md) | Organization.ReadWrite.All | 不支持 | Organization.ReadWrite.All |
 | [个人联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [用户](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | 全部写读。 |
+| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | 全部写读。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -100,7 +100,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 
 ## <a name="request-body"></a>请求正文
 
-提供 [openTypeExtension 的](../resources/opentypeextension.md)JSON 正文，具有以下所需的名称-值对和其他任意自定义数据。 JSON 负载中的数据可以是基元类型或基元类型数组。
+提供具有以下必需的名称-值对和任何其他自定义数据的 [openTypeExtension](../resources/opentypeextension.md)的 JSON 正文。 JSON 负载中的数据可以是基元类型或基元类型数组。
 
 | 名称       | 值 |
 |:---------------|:----------|
@@ -587,3 +587,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

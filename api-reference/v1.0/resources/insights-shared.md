@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 9b7bb8c2a69ebab16171ff4a74283d0993aefc8a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c78ef6c63d1970f92a2a68a91cd674d39cbce736
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532873"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054810"
 ---
 # <a name="sharedinsight-resource-type"></a>sharedInsight 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "42532873"
 
 **注意**：我们目前正在努力使用数据填充共享 API 的结果。 发布后的第一周可能缺少一些数据。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
@@ -33,7 +33,7 @@ ms.locfileid: "42532873"
 
 | 属性              | 类型                      | 说明  |
 | -------------         |---------------            | -------------|
-| id                    | 字符串                    | 关系的唯一标识符。 只读。        |
+| id                    | String                    | 关系的唯一标识符。 只读。        |
 | lastShared            | [sharingDetail](insights-sharingdetail.md)                | 共享项目的详细信息。 只读。        |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | 可用于在体验中可视化文档的属性。 只读      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | 引用共享文档的属性，例如文档的 url 和类型。 只读       |
@@ -42,7 +42,7 @@ ms.locfileid: "42532873"
 
 | 属性      | 类型          | 说明  |
 | ------------- |---------------| -------------|
-| 资源      | 实体集合 | 用于导航到已共享的项目。 对于文件附件，类型为*fileAttachment*。 对于链接的附件，类型为*driveItem*。 |
+| 资源      | 实体集合 | 用于导航到已共享的项目。 对于文件附件，类型为 *fileAttachment*。 对于链接的附件，类型为 *driveItem*。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -61,3 +61,4 @@ ms.locfileid: "42532873"
   "resource": [ { "@odata.type": "microsoft.graph.entity" } ]
 }
 ```
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b183466b102b480913c3841585ea3349e7ac2386
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: 84f34740bd5e16bb001cd3618edf4c4b669155f2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45225067"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052881"
 ---
 # <a name="entitlementmanagementsettings-resource-type"></a>entitlementManagementSettings 资源类型
 
@@ -18,20 +18,20 @@ ms.locfileid: "45225067"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示控制[AZURE AD 权限管理](entitlementmanagement-root.md)行为的设置。
+表示控制 [AZURE AD 权限管理](entitlementmanagement-root.md)行为的设置。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [获取](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | 读取**entitlementManagementSettings**对象的属性。 |
-| [更新](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | 更新**entitlementManagementSettings**对象的属性。 |
+| [获取](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | 读取 **entitlementManagementSettings** 对象的属性。 |
+| [更新](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | 更新 **entitlementManagementSettings** 对象的属性。 |
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|externalUserLifecycleAction|字符串|`None`、、或中的一个 `BlockSignIn` `BlockSignInAndDelete` 。 |
+|externalUserLifecycleAction|String|`None`、、或中的一个 `BlockSignIn` `BlockSignInAndDelete` 。 |
 |daysUntilExternalUserDeletedAfterBlocked|Int64|如果 `externalUserLifecycleAction` 为 `BlockSignInAndDelete` ，则在删除外部用户的帐户之前，阻止外部用户登录的天数。|
 
 ## <a name="relationships"></a>关系
@@ -68,3 +68,5 @@ ms.locfileid: "45225067"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

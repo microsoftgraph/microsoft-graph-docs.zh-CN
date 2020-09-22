@@ -5,19 +5,19 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b8323a8b2b5cc9ad9547182d9db8bdeba17934f7
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 8008abbfa10bbc0c7267384c66afc7c7c1c1c328
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539217"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055718"
 ---
 # <a name="create-relation"></a>创建关系
 命名空间： termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[relation](../resources/termstore-relation.md)对象。 这些用于在术语之间或术语和 set 之间创建固定的和 resued 的关系。 在术语和 set 之间创建固定/重用术语时，在帖子正文中 fromTerm 必须为 null。
+创建新的 [relation](../resources/termstore-relation.md) 对象。 这些用于在术语之间或术语和 set 之间创建固定的和 resued 的关系。 在术语和 set 之间创建固定/重用术语时，在帖子正文中 fromTerm 必须为 null。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,9 +46,9 @@ POST /termStore/sets/{setId}/terms/{termId}/relations
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[relation](../resources/termstore-relation.md)对象的 JSON 表示形式。
+在请求正文中，提供 [relation](../resources/termstore-relation.md) 对象的 JSON 表示形式。
 
-下表显示创建[关系](../resources/termstore-relation.md)时所需的属性。
+下表显示创建 [关系](../resources/termstore-relation.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -60,7 +60,7 @@ POST /termStore/sets/{setId}/terms/{termId}/relations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[relation](../resources/termstore-relation.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [relation](../resources/termstore-relation.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -127,3 +127,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

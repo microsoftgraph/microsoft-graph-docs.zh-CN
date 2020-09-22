@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6acd1928b223789df7580a5f74eefc723570ca93
-ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
+ms.openlocfilehash: 02bc6117ccf8a7ab0ce0bd1905883afdf61fc542
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42962540"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054908"
 ---
 # <a name="incomingcontext-resource-type"></a>incomingContext 资源类型
 
@@ -62,3 +62,4 @@ ms.locfileid: "42962540"
   "suppressions": []
 }
 -->
+

@@ -3,43 +3,44 @@ title: mobileAppDependency 资源类型
 description: 描述两个移动应用之间的依赖关系类型。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 723ea306b366612c7d91d839e00209372ad70944
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 9b55faee86852d8b7070850a4c14a2df8fe82631
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790871"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052738"
 ---
 # <a name="mobileappdependency-resource-type"></a>mobileAppDependency 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 描述两个移动应用之间的依赖关系类型。
 
 
-继承自[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)
+继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 mobileAppDependencies](../api/intune-apps-mobileappdependency-list.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)集合|列出[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)对象的属性和关系。|
-|[获取 mobileAppDependency](../api/intune-apps-mobileappdependency-get.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|读取[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)对象的属性和关系。|
-|[创建 mobileAppDependency](../api/intune-apps-mobileappdependency-create.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|创建新的[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)对象。|
-|[删除 mobileAppDependency](../api/intune-apps-mobileappdependency-delete.md)|无|删除[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)。|
-|[更新 mobileAppDependency](../api/intune-apps-mobileappdependency-update.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|更新[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)对象的属性。|
+|[列出 mobileAppDependencies](../api/intune-apps-mobileappdependency-list.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md) 集合|列出 [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) 对象的属性和关系。|
+|[获取 mobileAppDependency](../api/intune-apps-mobileappdependency-get.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|读取 [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) 对象的属性和关系。|
+|[创建 mobileAppDependency](../api/intune-apps-mobileappdependency-create.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|创建新的 [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) 对象。|
+|[删除 mobileAppDependency](../api/intune-apps-mobileappdependency-delete.md)|无|删除 [mobileAppDependency](../resources/intune-apps-mobileappdependency.md)。|
+|[更新 mobileAppDependency](../api/intune-apps-mobileappdependency-update.md)|[mobileAppDependency](../resources/intune-apps-mobileappdependency.md)|更新 [mobileAppDependency](../resources/intune-apps-mobileappdependency.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|关系实体 id。继承自[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetId|String|目标移动应用程序的应用程序 id。继承自[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetDisplayName|String|目标移动应用程序的显示名称。 继承自[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|id|String|关系实体 id。继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetId|String|目标移动应用程序的应用程序 id。继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayName|String|目标移动应用程序的显示名称。 继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|表示目标是父项还是子项的关系的类型。 继承自 [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)。 可取值为：`child`、`parent`。|
 |dependencyType|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|父应用和子应用之间的依赖关系的类型。 可取值为：`detect`、`autoInstall`。|
 |dependentAppCount|Int32|子应用程序的依赖项总数。|
 
@@ -60,10 +61,14 @@ ms.locfileid: "44790871"
   "id": "String (identifier)",
   "targetId": "String",
   "targetDisplayName": "String",
+  "targetType": "String",
   "dependencyType": "String",
   "dependentAppCount": 1024
 }
 ```
+
+
+
 
 
 

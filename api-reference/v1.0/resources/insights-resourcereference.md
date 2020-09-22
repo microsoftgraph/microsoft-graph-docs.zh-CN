@@ -5,18 +5,18 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: aa00eb06ac239b4f93a200e72ecbe88c99d6189c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 56f1cc992deaa74623930074ea75b6cb0fa9e0ac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532869"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054838"
 ---
 # <a name="resourcereference-resource-type"></a>resourceReference 资源类型
 
 命名空间：microsoft.graph
 
-包含[officeGraphInsights](officegraphinsights.md)的属性的复杂类型。
+包含 [officeGraphInsights](officegraphinsights.md)的属性的复杂类型。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -41,4 +41,5 @@ ms.locfileid: "42532869"
 | ------------- |-----------| -------------|
 | webUrl        | String    | 指向引用项的 URL。 |
 | id            | String    | 项目的唯一标识符。           |
-| type          | 字符串    | 一个可用于对项目进行分类的字符串值，例如 "driveItem" |
+| type          | String    | 一个可用于对项目进行分类的字符串值，例如 "driveItem" |
+

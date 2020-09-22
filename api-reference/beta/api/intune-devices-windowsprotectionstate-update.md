@@ -3,14 +3,14 @@ title: 更新 windowsProtectionState
 description: 更新 windowsProtectionState 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 593ba645ef109742c295c3f45bb2c2e4d3af3be6
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 655a26c781dfa5badbd4c672579326e2a77079d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790551"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056084"
 ---
 # <a name="update-windowsprotectionstate"></a>更新 windowsProtectionState
 
@@ -54,15 +54,15 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备保护状态对象的唯一标识符。 这是设备的设备 id|
-|malwareProtectionEnabled|布尔值|已启用反恶意软件|
+|malwareProtectionEnabled|Boolean|已启用反恶意软件|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|计算机的状态 (如干净或挂起的完全扫描或挂起的重新启动等) 。 可取值为：`clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
-|realTimeProtectionEnabled|布尔值|是否启用了实时保护？|
-|networkInspectionSystemEnabled|布尔值|网络检查系统是否已启用？|
-|quickScanOverdue|布尔值|快速扫描是否过期？|
-|fullScanOverdue|布尔值|完全扫描逾期？|
-|signatureUpdateOverdue|布尔值|签名是否已过期？|
-|rebootRequired|布尔值|是否需要重新启动？|
-|fullScanRequired|布尔值|需要完全扫描吗？|
+|realTimeProtectionEnabled|Boolean|是否启用了实时保护？|
+|networkInspectionSystemEnabled|Boolean|网络检查系统是否已启用？|
+|quickScanOverdue|Boolean|快速扫描是否过期？|
+|fullScanOverdue|Boolean|完全扫描逾期？|
+|signatureUpdateOverdue|Boolean|签名是否已过期？|
+|rebootRequired|Boolean|是否需要重新启动？|
+|fullScanRequired|Boolean|需要完全扫描吗？|
 |engineVersion|String|当前 endpoint protection 引擎的版本|
 |signatureVersion|String|当前恶意软件定义版本|
 |antiMalwareVersion|String|当前反恶意软件版本|
@@ -137,6 +137,9 @@ Content-Length: 914
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
+
+
+
 
 
 

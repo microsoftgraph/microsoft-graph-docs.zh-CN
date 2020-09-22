@@ -6,16 +6,16 @@ title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 03f3dae851cf9a23dbe300f834846046dce4de74
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e457840ee55206b47b035ae53127c5bf3e5130c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522944"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055258"
 ---
 # <a name="listitem-resource"></a>ListItem 资源
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "42522944"
 | [更新][]                     | PATCH /items/{item-id}
 | [更新列值][Update] | PATCH /items/{item-id}/fields
 
-[获取]: ../api/listitem-get.md
+[Get]: ../api/listitem-get.md
 [获取分析结果]: ../api/itemanalytics-get.md
 [按间隔获取活动]: ../api/itemactivity-getbyinterval.md
 [Create]: ../api/listitem-create.md
@@ -143,3 +143,5 @@ ms.locfileid: "42522944"
   "suppressions": []
 }
 -->
+
+

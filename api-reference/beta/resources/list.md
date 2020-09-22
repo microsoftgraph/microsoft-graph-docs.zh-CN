@@ -6,12 +6,12 @@ title: List
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 861e3c0b90c68ebf7a4a554e94097f790182727e
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 7eae3ca5530b04d004888edf1cfe75e67a83b310
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43109045"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055314"
 ---
 # <a name="list-resource"></a>List 资源
 
@@ -39,7 +39,7 @@ ms.locfileid: "43109045"
 | [删除列表项][]      | DELETE /lists/{list-id}/items/{item-id}
 | [创建列表项][]      | POST /lists/{list-id}
 | [获取最近的活动][] | GET /lists/{list-id}/activities
-| [获取 WebSocket 频道][] | 获取/lists/{list-id}/subscriptions/socketIo
+| [获取 WebSocket 频道][] | GET /lists/{list-id}/subscriptions/socketIo
 
 [获取列表]: ../api/list-get.md
 [创建列表]: ../api/list-create.md
@@ -122,7 +122,7 @@ ms.locfileid: "43109045"
 | **activities**    | [itemActivity][] 集合 | 最近发生在此列表内的活动。
 | **drive**         | [drive][]                   | 仅存在于文档库中。 允许使用 [driveItems][driveItem] 作为 [drive][] 资源访问列表。
 | **项目**         | Collection([listItem][])    | 列表中包含的所有项。
-| 订阅      | [订阅][]集合 | 列表上的一组订阅。
+| 订阅      | [订阅][]集合 | 列表上的订阅集。
 
 [baseItem]: baseitem.md
 [contentType]: contenttype.md
@@ -150,3 +150,5 @@ ms.locfileid: "43109045"
   "suppressions": []
 }
 -->
+
+

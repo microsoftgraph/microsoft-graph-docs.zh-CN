@@ -1,32 +1,32 @@
 ---
-title: 列出 servicePrincipal memberOf
-description: 获取此服务主体是其直接成员的组和目录角色。 此操作不可传递。
+title: List servicePrincipal memberOf
+description: 获取此服务主体作为直接成员所属的组和目录角色。 此操作不可传递。
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 65de131fb08be8bda00e73b5bdda6eb552a80008
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 912022c740b5610b05d7e8f8c8d53a6cac4c576b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383971"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054950"
 ---
-# <a name="list-serviceprincipal-memberof"></a>列出 servicePrincipal memberOf
+# <a name="list-serviceprincipal-memberof"></a>List servicePrincipal memberOf
 
 命名空间：microsoft.graph
 
-获取此[servicePrincipal](../resources/serviceprincipal.md)是其直接成员的组和目录角色。 此操作不可传递。
+获取此 [servicePrincipal](../resources/serviceprincipal.md) 作为直接成员所属的组和目录角色。 此操作不可传递。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 所有的读取全部、全部的 Directory.accessasuser.all、全部、全部、全部、目录、全部、    |
+|委派（工作或学校帐户） | Application.Read.All、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 应用程序。全部，全部读取全部，全部为，全部为。 |
+|应用程序 | Application.Read.All、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -130,3 +130,4 @@ Content-type: application/json
   ]
 }
 -->
+

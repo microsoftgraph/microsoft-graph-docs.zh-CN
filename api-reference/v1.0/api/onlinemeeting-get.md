@@ -1,26 +1,26 @@
 ---
 title: 获取 onlineMeeting
-description: 检索**联机会议**对象的属性和关系。
+description: 检索 **联机会议** 对象的属性和关系。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d1351bfa5c2315f89cda384ee2346ea54441635f
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 99f5c4211ea7a649bb7da92bf35bcd8ade84d42e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556161"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055027"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
 命名空间：microsoft.graph
 
-检索[onlineMeeting](../resources/onlinemeeting.md)对象的属性和关系。
+检索 [onlineMeeting](../resources/onlinemeeting.md) 对象的属性和关系。
 
 > **注意：**`GET`目前仅[VTC 会议 id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up)支持此方法。这些 Id 是为云-视频互操作许可的用户生成的，此方法用于获取加入会议的详细信息。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "44556161"
 |:---------------------------------------|:------------------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。                                        |
 | 委派（个人 Microsoft 帐户） | 不支持。                                        |
-| Application                            | OnlineMeetings.Read.All |
+| 应用程序                            | OnlineMeetings.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
@@ -171,3 +171,4 @@ Content-Length: 1574
   ]
 }
 -->
+

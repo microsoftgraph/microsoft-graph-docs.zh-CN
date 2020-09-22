@@ -3,14 +3,14 @@ title: downloadApplePushNotificationCertificateSigningRequest 函数
 description: 下载 Apple 推送通知证书签名请求
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c815853a99a67edfd176728d301bed000dfd75c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 64c3dee18991b796096ff7c8c122885884a584b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43388780"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055083"
 ---
 # <a name="downloadapplepushnotificationcertificatesigningrequest-function"></a>downloadApplePushNotificationCertificateSigningRequest 函数
 
@@ -48,7 +48,7 @@ GET /deviceManagement/applePushNotificationCertificate/downloadApplePushNotifica
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此函数会在`200 OK`响应正文中返回响应代码和字符串。
+如果成功，此函数会在 `200 OK` 响应正文中返回响应代码和字符串。
 
 ## <a name="example"></a>示例
 
@@ -69,6 +69,9 @@ Content-Length: 85
   "value": "Download Apple Push Notification Certificate Signing Request value"
 }
 ```
+
+
+
 
 
 

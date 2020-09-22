@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 0e8707ebdf2de009794f8df274df1870e0a19259
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 5af33e93b542a4a6bafd285f93a639fd0a3a88a0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896607"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052969"
 ---
 # <a name="reportroot-getyammerdeviceusageuserdetail-function"></a>reportRoot: getYammerDeviceUsageUserDetail function
 
@@ -20,7 +20,7 @@ ms.locfileid: "44896607"
 
 获取用户的 Yammer 设备使用情况的详细信息。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅[Microsoft 365 报表-Yammer 设备使用情况](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38)。
+> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 报表-Yammer 设备使用情况](https://support.office.com/client/Yammer-device-usage-b793ffdd-effa-43d0-849a-b1ca2e899f38)。
 
 ## <a name="permissions"></a>权限
 
@@ -32,7 +32,7 @@ ms.locfileid: "44896607"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
-**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 For api 以读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
+**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -88,7 +88,7 @@ CSV 文件包含下面的列标题。
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和**[yammerDeviceUsageUserDetail](../resources/yammerdeviceusageuserdetail.md)** 对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **[yammerDeviceUsageUserDetail](../resources/yammerdeviceusageuserdetail.md)** 对象。
 
 此请求的默认页面大小为200个项目。
 
@@ -208,3 +208,5 @@ Content-Length: 442
   "suppressions": [
   ]
 }-->
+
+

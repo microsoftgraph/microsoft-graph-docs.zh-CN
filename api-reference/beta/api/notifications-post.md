@@ -5,16 +5,16 @@ localization_priority: Normal
 ms.prod: notifications
 doc_type: apiPageType
 author: merzink
-ms.openlocfilehash: 1828f72bfcedb701597ce4b0d55e274a25fcf834
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e8e5f06505593c4048d4cf20f8df0e42be3630bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456682"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055944"
 ---
 # <a name="create-and-send-a-notification"></a>创建和发送通知
 
-命名空间： microsoft. graph[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建并发送针对用户通过 Microsoft Graph 的通知。 通知存储在 Microsoft Graph 通知源存储中，并发送到用户登录到的所有设备终结点上的所有应用程序客户端。  
 
@@ -22,7 +22,7 @@ ms.locfileid: "42456682"
 您的应用程序服务不需要任何额外的权限即可向目标用户发布通知。  
 
 > [!IMPORTANT]
-> 如果选择通过委派权限代表用户发布通知，则需要以下权限之一才能调用此 API。 建议您不要选择此选项来创建通知。 如果想要了解详细信息，包括如何选择权限，请参阅[权限](/graph/permissions-reference)。
+> 如果选择通过委派权限代表用户发布通知，则需要以下权限之一才能调用此 API。 建议您不要选择此选项来创建通知。 如果想要了解详细信息，包括如何选择权限，请参阅 [权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -42,26 +42,26 @@ POST /me/notifications/
 ## <a name="request-headers"></a>请求标头
 |名称 | 说明|
 |:----|:-----------|
-|Authorization | 授权标头用于传递呼叫方的凭据。 持有者 {令牌}。 必填。 |
+|Authorization | 授权标头用于传递呼叫方的凭据。 持有者 {令牌}。 必需。 |
 |X-UNS-ID | Microsoft Graph 通知服务在创建订阅后返回的 UserNotificationSubscriptionId，并用于面向特定用户。 必需。 |
 |Content-type | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[通知](../resources/projectrome-notification.md)对象的 JSON 表示形式。
+在请求正文中，提供 [通知](../resources/projectrome-notification.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法将`201 Created`返回响应代码，指示已成功创建和存储通知。 随后，通知将通过有效订阅扇到所有指定的终结点。 
+如果成功，此方法将返回 `201 Created` 响应代码，指示已成功创建和存储通知。 随后，通知将通过有效订阅扇到所有指定的终结点。 
 
 下表列出了可能返回的错误和响应代码。
 
 |错误代码             | Descrition                             |
 |:-----------------------------------|:----------------------------------------------------------|
-|HttpStatusCode。 BadRequest           | Body 为数组（不支持多个通知）。|
+|HttpStatusCode。 BadRequest           | Body 是一个数组， (不支持多个通知) 。|
 |HttpStatusCode。 BadRequest           | 正文与 API 的协定不匹配。               |
 |HttpStatusCode            | 呼叫者位于阻止列表中。                          |
 |HttpStatusCode。 MethodNotAllowed     | 不支持使用的 HTTP 方法。                     |
 |HttpStatusCode。 BadRequest           | 请求中存在不受支持的标头。 不支持两个标头：<br/><br/>修改时间-自<br/>If-Range |                    
-|HttpStatusCode。 UnsupportedMediaType | 标头内容编码存在，并且具有除`Deflate`或`Gzip`之外的压缩算法值。  |
+|HttpStatusCode。 UnsupportedMediaType | 标头内容编码存在，并且具有除或之外的压缩算法 `Deflate` 值 `Gzip` 。  |
 |HttpStatusCode。 BadRequest           | 有效负载无效。                                           |
 |HttpStatusCode            | 呼叫者无权代表用户执行操作或向用户发送通知。                         |
 |HttpStatusCode 未经授权         |  请求正文包含无效的活动数据类型。        |
@@ -126,4 +126,6 @@ request-id: 71e62feb-8d72-4912-8b2c-4cee9d89e781
     }
 }
 ```
+
+
 

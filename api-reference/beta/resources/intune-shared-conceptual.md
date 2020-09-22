@@ -1,15 +1,15 @@
 ---
 title: Microsoft Intune 中的共享资源-Microsoft Graph API
-description: 列出支持租户组织的多个工作流的 Intune 终结点（REST）的 Microsoft Graph API。
+description: 列出支持租户组织的多个工作流 (REST) 的适用于 Intune 终结点的 Microsoft Graph API。
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 06be7eefad204f0cef73d8c0d16d70159f9142db
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 60588a0c9a2714da80c0d5e24b4300146e3b1556
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793757"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055426"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Microsoft Intune 中的共享资源
 
@@ -80,6 +80,7 @@ ms.locfileid: "44793757"
 - [按帐户类型运行](intune-shared-runasaccounttype.md)
 - [运行状态](intune-shared-runstate.md)
 - [保存的 UI 状态生成选项](intune-shared-saveduistategenerationoptions.md)
+- [设置源类型](intune-shared-settingsourcetype.md)
 - [目标托管应用配置](intune-shared-targetedmanagedappconfiguration.md)
 - [URI](intune-shared-uri.md)
 - [用户](intune-shared-user.md)
@@ -94,3 +95,5 @@ ms.locfileid: "44793757"
 - [Windows 域加入配置](intune-shared-windowsdomainjoinconfiguration.md)
 - [Windows Universal AppX 应用分配设置](intune-shared-windowsuniversalappxappassignmentsettings.md)
 - [Windows 更新状态](intune-shared-windowsupdatestate.md)
+
+

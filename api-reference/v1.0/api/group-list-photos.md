@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: eaf689a51e675d5d134a841971b35122fd7e88be
-ms.sourcegitcommit: 889096fb1821ee90ffa1b2dcce046efd6e97acef
+ms.openlocfilehash: 8534dee6f67168f25a5e355b69bad879ba4ce7f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022815"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055118"
 ---
 # <a name="list-photos"></a>List photos
 
@@ -114,3 +114,4 @@ Content-length: 94
   "suppressions": [
   ]
 }-->
+

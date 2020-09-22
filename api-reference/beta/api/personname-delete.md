@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ed7d825e4a8ee060455558d6004022c14e856ded
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 860c36f3b53a6d8142059f8769a80894df187c95
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811740"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055856"
 ---
 # <a name="delete-personname"></a>删除 Contact.personname
 
@@ -95,3 +95,5 @@ DELETE https://graph.microsoft.com/beta/me/profile/names/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+
+

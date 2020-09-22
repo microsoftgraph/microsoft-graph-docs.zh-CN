@@ -3,24 +3,24 @@ title: 创建 windowsFeatureUpdateProfile
 description: 创建新的 windowsFeatureUpdateProfile 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b2f5b68a0cb3f2773b2ea6ab933cbf341515811e
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 68382c5b5dfdf38cb57f926b3aed7623e6180cb2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124007"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053697"
 ---
 # <a name="create-windowsfeatureupdateprofile"></a>创建 windowsFeatureUpdateProfile
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)对象。
+创建新的 [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,18 +53,18 @@ POST /deviceManagement/windowsFeatureUpdateProfiles
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的标识符。|
+|id|String|实体的标识符。|
 |displayName|String|配置文件的显示名称。|
 |说明|String|用户指定的配置文件的说明。|
 |featureUpdateVersion|String|将部署到此配置文件目标的设备的功能更新版本。 版本可以是任何受支持的版本，例如，1709、1803或1809等。|
 |createdDateTime|DateTimeOffset|创建配置文件的日期时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改配置文件的日期时间。|
-|roleScopeTagIds|String collection|此功能更新实体的范围标记列表。|
+|roleScopeTagIds|String 集合|此功能更新实体的范围标记列表。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -106,6 +106,9 @@ Content-Length: 441
   ]
 }
 ```
+
+
+
 
 
 

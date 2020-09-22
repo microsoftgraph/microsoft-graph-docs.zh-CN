@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3015b58619b0b78315d92470c3181582bbbc9043
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0f9abc53e3e76d8fe8eba2aab666a9b77e79a75e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463998"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055167"
 ---
 # <a name="list-registeredowners"></a>列出 registeredOwner
 
@@ -111,3 +111,4 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
+

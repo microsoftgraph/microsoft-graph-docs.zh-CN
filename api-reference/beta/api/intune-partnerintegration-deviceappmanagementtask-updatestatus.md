@@ -3,20 +3,20 @@ title: updateStatus 操作
 description: 设置任务的状态并附加注释。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f48563ae657934a84441648a314b93ac4af2656
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2cdd3de9ba71e9e88307b8e90975851400dbb6a2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445304"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053887"
 ---
 # <a name="updatestatus-action"></a>updateStatus 操作
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -82,6 +82,9 @@ Content-length: 52
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

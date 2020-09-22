@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 41f41df6b773d18aecb132bb3311447bbeb72bd3
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: d9c3269db1b211a5188beb458f0f94aa209439d3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "42452314"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055735"
 ---
 # <a name="delete-timeoff"></a>删除 timeOff
 
@@ -20,7 +20,7 @@ ms.locfileid: "42452314"
 
 从[计划](../resources/schedule.md)中删除[timeOff](../resources/timeoff.md)实例。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "42452314"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 计划的所有写。 * |
+|应用程序 | 计划的所有写。 * |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
@@ -112,3 +112,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

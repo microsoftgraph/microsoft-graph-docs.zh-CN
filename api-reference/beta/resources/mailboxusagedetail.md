@@ -5,12 +5,12 @@ localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 485dba38275cb437f069abf1309bdc0705ad967a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bea72f49f1cefc7874d9a5aa7e92e7dcd7caaa71
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473477"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055230"
 ---
 # <a name="mailboxusagedetail-resource-type"></a>mailboxUsageDetail 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "43473477"
 | reportRefreshDate               | 日期    |
 | userPrincipalName               | String  |
 | displayName                     | String  |
-| isDeleted                       | 布尔值 |
+| isDeleted                       | Boolean |
 | deletedDate                     | 日期    |
 | createdDate                     | 日期    |
 | lastActivityDate                | 日期    |
@@ -64,3 +64,5 @@ ms.locfileid: "43473477"
   "reportPeriod": "String"
 }
 ```
+
+

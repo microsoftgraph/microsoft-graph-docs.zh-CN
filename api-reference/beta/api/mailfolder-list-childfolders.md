@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a996c6ea9aeb972b8b3e1bb8b3eb6ce37c4a9b01
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 412f38352dadbd42810d4b153a788912c95e04d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457129"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053627"
 ---
 # <a name="list-childfolders"></a>列出 childFolder
 
@@ -233,3 +233,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

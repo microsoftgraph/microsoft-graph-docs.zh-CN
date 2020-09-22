@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 60eba61b9f786cb6a7d5c506558e16eb9e2d5d60
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9c04831cf419d85a3d055462f4f42cf275c0afa2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465388"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053711"
 ---
 # <a name="update-reportroot"></a>更新 reportRoot
 
@@ -28,11 +28,11 @@ ms.locfileid: "43465388"
 |:---|:---|
 |委派（工作或学校帐户）||
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **故障排除** | DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **故障排除** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -86,6 +86,9 @@ Content-Length: 101
   "id": "9ab6b3dd-b3dd-9ab6-ddb3-b69addb3b69a"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d820e23e48eac46feb82e1304e5dffcf83e5d032
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: e44d1958a5fd10d41d7d55904cda5478c90acaed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200280"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053389"
 ---
 # <a name="list-publishedresources"></a>列出 publishedResources
 
@@ -18,7 +18,7 @@ ms.locfileid: "43200280"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[publishedResource](../resources/publishedresource.md)对象的列表。
+检索 [publishedResource](../resources/publishedresource.md) 对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "43200280"
 |:--------------------------------------|:---------------------------------------------------------|
 | 委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ GET ~/onPremisesPublishingProfiles/{publishingType}/publishedResources
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[publishedResource](../resources/publishedresource.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [publishedResource](../resources/publishedresource.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -130,3 +130,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

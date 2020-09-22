@@ -5,16 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2a4da2900ec12233e680238fb294c38a9e17ebbe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b5deebaec460bd8c1993cc0c308e68e6f6f986a9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521234"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055181"
 ---
 # <a name="recommendlabelaction-resource-type"></a>recommendLabelAction 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ ms.locfileid: "42521234"
 | 属性                    | 类型                                                                     | 说明                                                           |
 | :-------------------------- | :----------------------------------------------------------------------- | :-------------------------------------------------------------------- |
 | actionSource                | String                                                                   | 可能的值是：`manual`、`automatic`、`recommended`、`default`。 |
-| actions                     | [informationProtectionAction](informationprotectionaction.md)集合 | 用户接受标签时要执行的操作。                                                                       |
+| actions                     | [informationProtectionAction](informationprotectionaction.md) 集合 | 用户接受标签时要执行的操作。                                                                       |
 | label                       | [labelDetails](labeldetails.md)                                          | 建议使用的标签。                                                                      |
 | responsibleSensitiveTypeIds | Guid 集合                                                          | 导致提供建议的敏感信息类型 Guid。                                                                      |
 
@@ -60,3 +60,5 @@ ms.locfileid: "42521234"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

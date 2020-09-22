@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: d783a8c4ad833be0b6dabf9b9405256796b880b7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 31a8096ebe5cb8aecba56a1a6f6c6367adf4b7af
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43397442"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054873"
 ---
 # <a name="informationalurl-resource-type"></a>informationalUrl 资源类型
 
@@ -63,3 +63,4 @@ ms.locfileid: "43397442"
   "suppressions": []
 }
 -->
+

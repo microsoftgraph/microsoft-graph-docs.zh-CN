@@ -5,16 +5,16 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 2954e511cee6929a66bb593c4f449f7410852c7f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a18c6cc00ef72e7222296f65d1bdae6293d2211f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500721"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055645"
 ---
 # <a name="educationsubmissionindividualrecipient-resource-type"></a>educationSubmissionIndividualRecipient 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "42500721"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
 |userId|String|向其分配提交的用户的用户 ID。|
 
@@ -57,3 +57,5 @@ ms.locfileid: "42500721"
   "suppressions": []
 }
 -->
+
+

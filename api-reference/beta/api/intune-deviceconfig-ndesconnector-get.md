@@ -3,24 +3,24 @@ title: 获取 ndesConnector
 description: 读取 ndesConnector 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 85b7a38c4707597feb914cfc3194a4d43a5f38c6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cd4cef2d387a5b324a535a6bfef1d8c0e6e47a36
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43342926"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054509"
 ---
 # <a name="get-ndesconnector"></a>获取 ndesConnector
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)对象的属性和关系。
+读取 [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,7 +53,7 @@ GET /deviceManagement/ndesConnectors/{ndesConnectorId}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -80,6 +80,9 @@ Content-Length: 261
   }
 }
 ```
+
+
+
 
 
 

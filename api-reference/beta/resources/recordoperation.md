@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0f34d3367b104ca5c1645ce3d4c95b184dcb6009
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ccf7f4b196866ccc8f038047a29f4b3dabd96642
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521220"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055153"
 ---
 # <a name="recordoperation-resource-type"></a>recordOperation 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "42521220"
 | recordingAccessToken           | String                      | 检索录制所需的访问令牌。                                                                                              |
 | recordingLocation              | String                      | 录制所在的位置。                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | 结果信息。  只读。                                                                                              |
-| status                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                |
+| 状态                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                |
 
 ## <a name="relationships"></a>关系
 无。
@@ -70,3 +70,5 @@ ms.locfileid: "42521220"
   "suppressions": []
 }
 -->
+
+

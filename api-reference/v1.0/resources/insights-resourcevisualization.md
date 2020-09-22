@@ -5,18 +5,18 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 2480f55cf0e7ea12d9bfaf31941a943095f62c31
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 93adb5c8dcef2cb7472d2f58385f8c2a779566c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898035"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054817"
 ---
 # <a name="resourcevisualization-resource-type"></a>resourceVisualization 资源类型
 
 命名空间：microsoft.graph
 
-包含[officeGraphInsights](officegraphinsights.md)的属性的复杂类型。
+包含 [officeGraphInsights](officegraphinsights.md)的属性的复杂类型。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -46,8 +46,8 @@ ms.locfileid: "44898035"
 | 属性              | 类型          | 说明  |
 | -------------         |---------------| -------------|
 | title                 | String        | 项目的标题文本。               |
-| type              | 字符串        | 项目的媒体类型。 可用于根据特定类型筛选特定文件。 请参阅以下支持的类型。 |
-| 群组             | String        | 项目的媒体类型。 可用于根据受支持的 IANA 媒体 Mime 类型筛选特定类型的文件。 请注意，并非所有媒体 Mime 类型都受支持。 |
+| type              | String        | 项目的媒体类型。 可用于根据特定类型筛选特定文件。 请参阅以下支持的类型。 |
+| mediaType             | String        | 项目的媒体类型。 可用于根据受支持的 IANA 媒体 Mime 类型筛选特定类型的文件。 请注意，并非所有媒体 Mime 类型都受支持。 |
 | previewImageUrl       | String        | 指向项目的预览图像的 URL。 |
 | previewText           | String        | 项目的预览文本。 |
 | containerWebUrl       | String        | 指向存储项目的文件夹的路径。 |
@@ -82,12 +82,12 @@ ms.locfileid: "44898035"
 - Spsite
 -   其他
 
-示例查询：`https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+示例查询： `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 注意：对于 `spsite` 您可能需要按 desc 排序才能 `lastUsed/lastAccessedDateTime` 检索有效结果
 
 ## <a name="containertype-property-values"></a>containerType 属性值
-根据[officeGraphInsights](officegraphinsights.md)返回文件的容器，受支持的类型可能有所不同。 例如，仅[sharedInsight](insights-shared.md)真知灼见将从 "收存箱"、"Box" 和 "GDrive" 返回文件。
+根据 [officeGraphInsights](officegraphinsights.md) 返回文件的容器，受支持的类型可能有所不同。 例如，仅 [sharedInsight](insights-shared.md) 真知灼见将从 "收存箱"、"Box" 和 "GDrive" 返回文件。
 
 -   OneDriveBusiness
 -   Site
@@ -96,4 +96,5 @@ ms.locfileid: "44898035"
 -   Box
 -   GDrive
 
-示例查询：`https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+示例查询： `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+

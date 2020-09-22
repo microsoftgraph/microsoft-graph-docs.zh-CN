@@ -1,16 +1,16 @@
 ---
 title: 获取 riskDetection
-description: 检索**riskdetection**对象的属性。
+description: 检索 **riskdetection** 对象的属性。
 localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f87245d2f07600afd612273fdf3a28a36db44b78
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 80b1099fa2641973bfe842311f0086fd09fffcd4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863535"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052927"
 ---
 # <a name="get-riskdetection"></a>获取 riskDetection
 
@@ -18,7 +18,7 @@ ms.locfileid: "44863535"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索**riskDetection**对象的属性。
+检索 **riskDetection** 对象的属性。
 
 >[!NOTE]
 >您必须具有 Azure AD 高级 P1 或 P2 许可证，才能使用风险检测 API。
@@ -50,7 +50,7 @@ GET /identityProtection/riskDetections/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[riskDetection](../resources/riskdetection.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [riskDetection](../resources/riskdetection.md) 对象。
 
 ## <a name="examples"></a>示例
 ### <a name="example-1-get-risk-detections"></a>示例1：获取风险检测
@@ -194,4 +194,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
 

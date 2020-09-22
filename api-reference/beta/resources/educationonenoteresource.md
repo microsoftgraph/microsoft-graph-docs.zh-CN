@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: cec9c2f2a092175c7ccecaa09c7b8b510000205c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 890adf73330fd6ac9b5642c94b2995eda8d625bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42501547"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055644"
 ---
 # <a name="educationonenoteresource-resource-type"></a>educationOneNoteResource 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -58,3 +58,5 @@ ms.locfileid: "42501547"
   "suppressions": []
 }
 -->
+
+

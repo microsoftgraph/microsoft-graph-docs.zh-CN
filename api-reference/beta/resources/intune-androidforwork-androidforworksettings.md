@@ -3,20 +3,20 @@ title: androidForWorkSettings 资源类型
 description: Android for Work 设置。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 50153f0db801764aa22872468b87f5c7eaf1cbaf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ef0452ea29b6966f24778662a429bb1534c8068f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459198"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052851"
 ---
 # <a name="androidforworksettings-resource-type"></a>androidForWorkSettings 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -44,7 +44,7 @@ Android for Work 设置。
 |lastModifiedDateTime|DateTimeOffset|Android for Work 设置的上次修改时间|
 |enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|指示哪些用户可以在 Android for Work 设备管理中注册设备。 可取值为：`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions`。|
 |targetGroupIds|String collection|指定当 enrollmentTarget 设置为“定向”时可以在 Android for Work 设备管理中注册设备的 AAD 组。|
-|deviceOwnerManagementEnabled|布尔值|指示此帐户是否为使用 CloudDPC 的 Android 设备所有者管理 flighting。|
+|deviceOwnerManagementEnabled|Boolean|指示此帐户是否为使用 CloudDPC 的 Android 设备所有者管理 flighting。|
 
 ## <a name="relationships"></a>关系
 无
@@ -74,6 +74,9 @@ Android for Work 设置。
   "deviceOwnerManagementEnabled": true
 }
 ```
+
+
+
 
 
 

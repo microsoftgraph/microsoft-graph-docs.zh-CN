@@ -3,20 +3,20 @@ title: mobileAppContentFile 资源类型
 description: 包含与给定 mobileAppContent 版本关联的单个安装程序文件的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3bce88846edac696cc2a751f19c36d06a0afb8be
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 951265a964f4c7f96fbfe44d865c02ebbfc659dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440420"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052801"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>mobileAppContentFile 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -40,7 +40,7 @@ ms.locfileid: "43440420"
 |isCommitted|Boolean|指示文件是否已提交的值。|
 |id|String|文件 ID。|
 |createdDateTime|DateTimeOffset|创建文件的时间。|
-|name|String|文件名称。|
+|名称|String|文件名称。|
 |size|Int64|加密前的文件大小。|
 |sizeEncrypted|Int64|加密后的文件大小。|
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure 存储 URI 的到期时间。|
@@ -77,6 +77,9 @@ ms.locfileid: "43440420"
   "isDependency": true
 }
 ```
+
+
+
 
 
 

@@ -6,16 +6,16 @@ title: ListItemVersion
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: ac09e46d974f8fe5c54fe47d4023674b07c66a1c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: de11928d2ac6f0f78e2dabbd34ebb25d927c5aa9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522937"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055237"
 ---
 # <a name="listitemversion-resource-type"></a>ListItemVersion 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -80,3 +80,5 @@ ms.locfileid: "42522937"
   "suppressions": []
 }
 -->
+
+

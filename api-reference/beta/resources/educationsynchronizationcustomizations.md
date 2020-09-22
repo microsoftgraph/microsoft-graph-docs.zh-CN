@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 6df720b8f0e02ba24f3972833a6a76219d327925
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: d3bfbec774b0ce5ff749e78b0057799501f432c3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790927"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055588"
 ---
 # <a name="educationsynchronizationcustomizations-resource-type"></a>educationSynchronizationCustomizations 资源类型
 
@@ -73,3 +73,5 @@ ms.locfileid: "44790927"
   }
 }
 ```
+
+

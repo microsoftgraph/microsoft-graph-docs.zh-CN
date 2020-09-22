@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 2da92b666ee125b91bd2a3782e2dba3f213b593a
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: 6169037891c4f54a75e4cd1f6b07053a099d5766
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909693"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055713"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>在 Microsoft Graph 中使用教育 API
 
@@ -43,7 +43,7 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 
 ## <a name="rostering"></a>Rostering
 
-通过名册 Api，你可以从学校的 Microsoft 365 租户（使用[Microsoft School Data Sync](https://sds.microsoft.com/)预配）中提取数据。这些 Api 提供了对学校、节、教师、学生和名册的信息的访问。 API 既支持仅应用（同步）方案，也支持应用 + 用户（交互）方案。 支持交互式方案的 API 基于调用 API 的用户角色，强制实施相应地区的 RBAC 策略。 这可以提供一致的 API 和最小策略展现，而无需考虑租户中的管理配置。 此外，API 还提供特定于教育的权限，确保相应用户具有访问数据的权限。
+通过名册 Api，你可以从学校的 Microsoft 365 租户（使用 [Microsoft School Data Sync](https://sds.microsoft.com/)预配）中提取数据。这些 Api 提供了对学校、节、教师、学生和名册的信息的访问。 API 既支持仅应用（同步）方案，也支持应用 + 用户（交互）方案。 支持交互式方案的 API 基于调用 API 的用户角色，强制实施相应地区的 RBAC 策略。 这可以提供一致的 API 和最小策略展现，而无需考虑租户中的管理配置。 此外，API 还提供特定于教育的权限，确保相应用户具有访问数据的权限。
 
 可以使用名册 API 让应用用户了解：
 
@@ -82,7 +82,7 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 分配 Api 提供以下关键资源：
 
 - [educationAssignment](educationassignment.md) -工作分配 API 的核心对象。 表示分配给课程中的学生或团队成员的任务或工作单元，作为其研究的一部分。
-- [educationSubmission](educationsubmission.md) -表示个人（或组）提交的工作分配的资源，以及该工作分配的相关评分和反馈。
+- [educationSubmission](educationsubmission.md) -表示单个 (或组) 为工作分配提交的资源，以及该工作分配的相关评分和反馈。
 - [educationResource](educationresource.md) -表示要分配或提交的学习对象。 **EducationResource**与**educationAssignment**和/或**educationSubmission**相关联。
 
 分配 Api 支持以下方案：
@@ -106,7 +106,7 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 
 ## <a name="school-data-sync-management"></a>学校数据同步管理
 
-[学校数据同步](https://sds.microsoft.com/)可帮助您自动执行从使用 Azure Active Directory （azure AD）和 Microsoft 365 导入和同步学生信息系统中的名单数据的过程。 您可以使用 Microsoft Graph 中的学校数据同步管理 Api 设置 CSV 文件或受支持的 SIS API 连接器的同步。
+[学校数据同步](https://sds.microsoft.com/) 可帮助您自动执行从学生信息系统中导入和同步名单数据的过程，该过程与 Azure Active Directory (azure AD) 和 Microsoft 365。 您可以使用 Microsoft Graph 中的学校数据同步管理 Api 设置 CSV 文件或受支持的 SIS API 连接器的同步。
 
 学校数据同步管理 Api 支持以下方案：
 
@@ -124,7 +124,7 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 
 ## <a name="whats-new"></a>最近更新
 
-查找有关此 API 集的[最新新功能和更新](/graph/whats-new-overview)。
+了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -132,3 +132,5 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 
 - 探索对你的方案最有帮助的资源和方法。
 - 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中使用 API。
+
+

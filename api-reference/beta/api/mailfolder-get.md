@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: af2f7c04e1a24c514098b7d5801bb04c07d89102
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5263c45740bb0fbb70e723c387cb94cfb47b05b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457136"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053662"
 ---
 # <a name="get-mailfolder"></a>获取 mailFolder
 
@@ -204,3 +204,5 @@ Content-type: application/json
   ]
 }
 -->
+
+
