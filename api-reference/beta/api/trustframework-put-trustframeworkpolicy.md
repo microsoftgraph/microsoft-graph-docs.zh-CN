@@ -5,34 +5,34 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: de1df6c258794165e37d3572d4bee5da84316c83
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 9807802d426fc5069a83014e52f0ed2210e05102
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215908"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027347"
 ---
-# <a name="update-or-create-trustframeworkpolicy"></a><span data-ttu-id="cbaea-103">更新或创建 trustFrameworkPolicy</span><span class="sxs-lookup"><span data-stu-id="cbaea-103">Update or create trustFrameworkPolicy</span></span>
+# <a name="update-or-create-trustframeworkpolicy"></a><span data-ttu-id="458e5-103">更新或创建 trustFrameworkPolicy</span><span class="sxs-lookup"><span data-stu-id="458e5-103">Update or create trustFrameworkPolicy</span></span>
 
-<span data-ttu-id="cbaea-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cbaea-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="458e5-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="458e5-104">Namespace: microsoft.graph</span></span>
 
-><span data-ttu-id="cbaea-105">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="cbaea-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="cbaea-106">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="cbaea-106">Use of these APIs in production applications is not supported.</span></span>
+><span data-ttu-id="458e5-105">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="458e5-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="458e5-106">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="458e5-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="cbaea-107">更新现有[trustFrameworkPolicy](../resources/trustframeworkpolicy.md) ，如果不存在，则创建一个。</span><span class="sxs-lookup"><span data-stu-id="cbaea-107">Update an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) or create one if it does not exist.</span></span>
+<span data-ttu-id="458e5-107">更新现有 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) ，如果不存在，则创建一个。</span><span class="sxs-lookup"><span data-stu-id="458e5-107">Update an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) or create one if it does not exist.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cbaea-108">Permissions</span><span class="sxs-lookup"><span data-stu-id="cbaea-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="458e5-108">权限</span><span class="sxs-lookup"><span data-stu-id="458e5-108">Permissions</span></span>
 
-<span data-ttu-id="cbaea-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="cbaea-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).</span></span>
+<span data-ttu-id="458e5-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="458e5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="cbaea-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="cbaea-111">Permission type</span></span>      | <span data-ttu-id="cbaea-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="cbaea-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="458e5-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="458e5-111">Permission type</span></span>      | <span data-ttu-id="458e5-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="458e5-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cbaea-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cbaea-113">Delegated (work or school account)</span></span>|<span data-ttu-id="cbaea-114">Policy.ReadWrite.TrustFramework</span><span class="sxs-lookup"><span data-stu-id="cbaea-114">Policy.ReadWrite.TrustFramework</span></span>|
-|<span data-ttu-id="cbaea-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cbaea-115">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="cbaea-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="cbaea-116">Not supported.</span></span>|
-|<span data-ttu-id="cbaea-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="cbaea-117">Application</span></span>|<span data-ttu-id="cbaea-118">Policy.ReadWrite.TrustFramework</span><span class="sxs-lookup"><span data-stu-id="cbaea-118">Policy.ReadWrite.TrustFramework</span></span>|
+|<span data-ttu-id="458e5-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="458e5-113">Delegated (work or school account)</span></span>|<span data-ttu-id="458e5-114">Policy.ReadWrite.TrustFramework</span><span class="sxs-lookup"><span data-stu-id="458e5-114">Policy.ReadWrite.TrustFramework</span></span>|
+|<span data-ttu-id="458e5-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="458e5-115">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="458e5-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="458e5-116">Not supported.</span></span>|
+|<span data-ttu-id="458e5-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="458e5-117">Application</span></span>|<span data-ttu-id="458e5-118">Policy.ReadWrite.TrustFramework</span><span class="sxs-lookup"><span data-stu-id="458e5-118">Policy.ReadWrite.TrustFramework</span></span>|
 
-<span data-ttu-id="cbaea-119">工作或学校帐户必须是租户的全局管理员。</span><span class="sxs-lookup"><span data-stu-id="cbaea-119">The work or school account must be a global administrator of the tenant.</span></span>
+<span data-ttu-id="458e5-119">工作或学校帐户必须是租户的全局管理员。</span><span class="sxs-lookup"><span data-stu-id="458e5-119">The work or school account must be a global administrator of the tenant.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="cbaea-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cbaea-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="458e5-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="458e5-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,31 +40,31 @@ ms.locfileid: "43215908"
 PUT /trustFramework/policies/{id}/$value
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="cbaea-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="cbaea-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="458e5-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="458e5-121">Request headers</span></span>
 
-|<span data-ttu-id="cbaea-122">名称</span><span class="sxs-lookup"><span data-stu-id="cbaea-122">Name</span></span>|<span data-ttu-id="cbaea-123">说明</span><span class="sxs-lookup"><span data-stu-id="cbaea-123">Description</span></span>|
+|<span data-ttu-id="458e5-122">名称</span><span class="sxs-lookup"><span data-stu-id="458e5-122">Name</span></span>|<span data-ttu-id="458e5-123">说明</span><span class="sxs-lookup"><span data-stu-id="458e5-123">Description</span></span>|
 |:---------------|:----------|
-|<span data-ttu-id="cbaea-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="cbaea-124">Authorization</span></span>|<span data-ttu-id="cbaea-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="cbaea-p103">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="cbaea-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="cbaea-127">Content-Type</span></span>|<span data-ttu-id="cbaea-128">application/xml。</span><span class="sxs-lookup"><span data-stu-id="cbaea-128">application/xml.</span></span> <span data-ttu-id="cbaea-129">必需。</span><span class="sxs-lookup"><span data-stu-id="cbaea-129">Required.</span></span>|
+|<span data-ttu-id="458e5-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="458e5-124">Authorization</span></span>|<span data-ttu-id="458e5-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="458e5-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="458e5-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="458e5-127">Content-Type</span></span>|<span data-ttu-id="458e5-128">application/xml。</span><span class="sxs-lookup"><span data-stu-id="458e5-128">application/xml.</span></span> <span data-ttu-id="458e5-129">必需。</span><span class="sxs-lookup"><span data-stu-id="458e5-129">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="cbaea-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="cbaea-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="458e5-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="458e5-130">Request body</span></span>
 
-<span data-ttu-id="cbaea-131">在请求正文中，提供[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)对象的 XML 表示形式。</span><span class="sxs-lookup"><span data-stu-id="cbaea-131">In the request body, provide an XML representation of the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object.</span></span> 
+<span data-ttu-id="458e5-131">在请求正文中，提供 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 对象的 XML 表示形式。</span><span class="sxs-lookup"><span data-stu-id="458e5-131">In the request body, provide an XML representation of the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object.</span></span> 
 
-><span data-ttu-id="cbaea-132">**注意：** 内容类型必须为`application/xml`。</span><span class="sxs-lookup"><span data-stu-id="cbaea-132">**Note:** the content type must be `application/xml`.</span></span>
+><span data-ttu-id="458e5-132">**注意：** 内容类型必须为 `application/xml` 。</span><span class="sxs-lookup"><span data-stu-id="458e5-132">**Note:** the content type must be `application/xml`.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cbaea-133">响应</span><span class="sxs-lookup"><span data-stu-id="cbaea-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="458e5-133">响应</span><span class="sxs-lookup"><span data-stu-id="458e5-133">Response</span></span>
 
-<span data-ttu-id="cbaea-134">响应将为以下之一：</span><span class="sxs-lookup"><span data-stu-id="cbaea-134">The response will be one of the following:</span></span>
-- <span data-ttu-id="cbaea-135">如果存在[trustFrameworkPolicy](../resources/trustframeworkpolicy.md) ，则成功的请求将返回`200 OK`响应代码。</span><span class="sxs-lookup"><span data-stu-id="cbaea-135">If a [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) exists, a successful request returns a `200 OK` response code.</span></span>
-- <span data-ttu-id="cbaea-136">如果[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)不存在，则成功的请求将返回`201 Created`响应代码。</span><span class="sxs-lookup"><span data-stu-id="cbaea-136">If a [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) does not exist, a successful request returns a `201 Created` response code.</span></span>
-- <span data-ttu-id="cbaea-137">如果失败，将返回 `4xx` 错误并显示具体详细信息。</span><span class="sxs-lookup"><span data-stu-id="cbaea-137">If unsuccessful, a `4xx` error will be returned with specific details.</span></span>
+<span data-ttu-id="458e5-134">响应将为以下之一：</span><span class="sxs-lookup"><span data-stu-id="458e5-134">The response will be one of the following:</span></span>
+- <span data-ttu-id="458e5-135">如果存在 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) ，则成功的请求将返回 `200 OK` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="458e5-135">If a [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) exists, a successful request returns a `200 OK` response code.</span></span>
+- <span data-ttu-id="458e5-136">如果 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 不存在，则成功的请求将返回 `201 Created` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="458e5-136">If a [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) does not exist, a successful request returns a `201 Created` response code.</span></span>
+- <span data-ttu-id="458e5-137">如果失败，将返回 `4xx` 错误并显示具体详细信息。</span><span class="sxs-lookup"><span data-stu-id="458e5-137">If unsuccessful, a `4xx` error will be returned with specific details.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cbaea-138">示例</span><span class="sxs-lookup"><span data-stu-id="cbaea-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="458e5-138">示例</span><span class="sxs-lookup"><span data-stu-id="458e5-138">Example</span></span>
 
-<span data-ttu-id="cbaea-139">下面的示例更新**trustFrameworkPolicy**。</span><span class="sxs-lookup"><span data-stu-id="cbaea-139">The following example updates a **trustFrameworkPolicy**.</span></span>
+<span data-ttu-id="458e5-139">下面的示例更新 **trustFrameworkPolicy**。</span><span class="sxs-lookup"><span data-stu-id="458e5-139">The following example updates a **trustFrameworkPolicy**.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="cbaea-140">请求</span><span class="sxs-lookup"><span data-stu-id="cbaea-140">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="458e5-140">请求</span><span class="sxs-lookup"><span data-stu-id="458e5-140">Request</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -79,7 +79,7 @@ Content-Type: application/xml
 </TrustFrameworkPolicy>
 ```
 
-##### <a name="response"></a><span data-ttu-id="cbaea-141">响应</span><span class="sxs-lookup"><span data-stu-id="cbaea-141">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="458e5-141">响应</span><span class="sxs-lookup"><span data-stu-id="458e5-141">Response</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -107,3 +107,5 @@ Content-Type: application/xml
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
