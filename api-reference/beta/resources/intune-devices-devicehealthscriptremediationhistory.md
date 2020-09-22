@@ -3,20 +3,20 @@ title: deviceHealthScriptRemediationHistory 资源类型
 description: 在给定日期之前通过设备运行状况脚本修正的设备数（上次修改时间）。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b086ae2b9513b649cddee8408a36193de3925282
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 51f85549ecceb1a867bd08f5ef21b223a22c3f67
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178547"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060305"
 ---
 # <a name="devicehealthscriptremediationhistory-resource-type"></a>deviceHealthScriptRemediationHistory 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "44178547"
 |属性|类型|说明|
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|为 healthscript 计算结果历史记录的日期。|
-|historyData|[deviceHealthScriptRemediationHistoryData](../resources/intune-devices-devicehealthscriptremediationhistorydata.md)集合|在给定日期由设备运行状况脚本修正的设备的数量。|
+|historyData|[deviceHealthScriptRemediationHistoryData](../resources/intune-devices-devicehealthscriptremediationhistorydata.md) 集合|在给定日期由设备运行状况脚本修正的设备的数量。|
 
 ## <a name="relationships"></a>关系
 无
@@ -52,6 +52,9 @@ ms.locfileid: "44178547"
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1a4aefd4db0b85b051a4528aedf68f2ffabe400c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 94b7eddf81790789e1788faa3477f1ad99cdc47f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463335"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060081"
 ---
 # <a name="deviceappmanagement-resource-type"></a>deviceAppManagement 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -39,21 +39,21 @@ ms.locfileid: "43463335"
 |microsoftStoreForBusinessLanguage|String|用于从适用于企业的 Microsoft Store 同步应用程序的区域设置信息。 特定于国家/地区的区域性。 这些区域性的名称遵循 RFC 4646（Windows Vista 和更高版本）。 格式为 <languagecode2>-<country/regioncode2>，其中 <languagecode2> 是从 ISO 639-1 派生的两个小写字母组成的代码，<country/regioncode2> 是从 ISO 3166 派生的两个大写字母组成的代码。 例如，“en-US”（“英语(美国)）是一个特定的区域性。|
 |microsoftStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|上次完成从适用于企业的 Microsoft Store 的应用程序同步的时间。|
 |microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|适用于企业的 Microsoft Store 的应用上次成功同步帐户的时间。|
-|microsoftStoreForBusinessPortalSelection|[microsoftStoreForBusinessPortalSelectionOptions](../resources/intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)|最终用户门户信息用于将应用程序从 Microsoft Store for Business to Intune 公司门户同步。 有三个选项可供选择\["仅限公司门户"、"公司门户和专用存储"、"仅专用存储\]"。 可取值为：`none`、`companyPortal`、`privateStore`。|
+|microsoftStoreForBusinessPortalSelection|[microsoftStoreForBusinessPortalSelectionOptions](../resources/intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)|最终用户门户信息用于将应用程序从 Microsoft Store for Business to Intune 公司门户同步。 有三个选项可供选择 \[ "仅限公司门户"、"公司门户和专用存储"、"仅专用存储" \] 。 可取值为：`none`、`companyPortal`、`privateStore`。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |**应用**|
-|enterpriseCodeSigningCertificates|[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)集合|Windows 企业代码签名证书。|
-|iosLobAppProvisioningConfigurations|[iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)集合|IOS Lob 应用程序设置配置。|
+|enterpriseCodeSigningCertificates|[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) 集合|Windows 企业代码签名证书。|
+|iosLobAppProvisioningConfigurations|[iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) 集合|IOS Lob 应用程序设置配置。|
 |mobileAppCategories|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md) 集合|移动应用类别。|
 |mobileAppConfigurations|[managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) 集合|托管设备移动应用程序配置。|
 |mobileApps|[mobileApp](../resources/intune-shared-mobileapp.md) 集合|移动应用。|
 |symantecCodeSigningCertificate|[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)|WinPhone Symantec 代码签名证书。|
 |**Books.xml**|
 |managedEBooks|[managedEBook](../resources/intune-books-managedebook.md) 集合|托管的电子书。|
-|managedEBookCategories|[managedEBookCategory](../resources/intune-books-managedebookcategory.md)集合|移动电子书类别。|
+|managedEBookCategories|[managedEBookCategory](../resources/intune-books-managedebookcategory.md) 集合|移动电子书类别。|
 |**设备管理**|
 |windowsManagementApp|[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)|Windows 管理应用。|
 |**移动应用管理 (MAM)**|
@@ -67,20 +67,20 @@ ms.locfileid: "43463335"
 |targetedManagedAppConfigurations|[targetedManagedAppConfiguration](../resources/intune-shared-targetedmanagedappconfiguration.md) 集合|托管应用配置目标。|
 |windowsInformationProtectionPolicies|[windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md) 集合|对未注册 MDM 的设备上运行的应用的 Windows 信息保护。|
 |**载入**|
-|sideLoadingKeys|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)集合|安装 Windows 8 和8.1 应用程序所需的端加载密钥。|
+|sideLoadingKeys|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) 集合|安装 Windows 8 和8.1 应用程序所需的端加载密钥。|
 |vppTokens|[vppToken](../resources/intune-onboarding-vpptoken.md) 集合|此组织的 Vpp 令牌列表。|
 |**策略集**|
-|policySets|[policySet](../resources/intune-policyset-policyset.md)集合|策略和应用程序的 PolicySet|
+|policySets|[policySet](../resources/intune-policyset-policyset.md) 集合|策略和应用程序的 PolicySet|
 |mobileApps|[mobileApp](../resources/intune-shared-mobileapp.md) 集合|移动应用。|
 |targetedManagedAppConfigurations|[targetedManagedAppConfiguration](../resources/intune-shared-targetedmanagedappconfiguration.md) 集合|托管应用配置目标。|
 |androidManagedAppProtections|[androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md) 集合|Android 托管应用策略。|
 |iosManagedAppProtections|[iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md) 集合|iOS 托管应用策略。|
 |mdmWindowsInformationProtectionPolicies|[mdmWindowsInformationProtectionPolicy](../resources/intune-shared-mdmwindowsinformationprotectionpolicy.md) 集合|对已注册 MDM 的设备上运行的应用的 Windows 信息保护。|
-|iosLobAppProvisioningConfigurations|[iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)集合|IOS Lob 应用程序设置配置。|
+|iosLobAppProvisioningConfigurations|[iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) 集合|IOS Lob 应用程序设置配置。|
 |**合作伙伴集成**|
-|deviceAppManagementTasks|[deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)集合|设备应用管理任务。|
+|deviceAppManagementTasks|[deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) 集合|设备应用管理任务。|
 |**Unlock**|
-|wdacSupplementalPolicies|[windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)集合|Windows Defender 应用程序控制补充策略的集合。|
+|wdacSupplementalPolicies|[windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) 集合|Windows Defender 应用程序控制补充策略的集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。  请注意，这只是一个示例。查询对实际查询的响应将包含适用于上下文的属性。  
@@ -100,6 +100,9 @@ ms.locfileid: "43463335"
   "microsoftStoreForBusinessLastCompletedApplicationSyncTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

@@ -3,20 +3,20 @@ title: deviceManagementExchangeAccessStateReason 枚举类型
 description: 设备 Exchange 访问状态原因。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b00f25dd6936e4fd664106d2903ed3451a5ca496
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0b2e45192ee953ca38e3738c87ee3c0714d0dfdd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43388336"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060151"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>deviceManagementExchangeAccessStateReason 枚举类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -26,8 +26,8 @@ ms.locfileid: "43388336"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|未发现来自 Exchange 的访问状态原因|
-|unknown|1|未知访问状态原因|
-|exchangeGlobalRule|双面|由 Exchange 全局规则确定的访问状态|
+|unknown|1 |未知访问状态原因|
+|exchangeGlobalRule|2 |由 Exchange 全局规则确定的访问状态|
 |exchangeIndividualRule|第三章|由 Exchange 单个规则确定的访问状态|
 |exchangeDeviceRule|4 |由 Exchange 设备规则确定的访问状态|
 |exchangeUpgrade|5 |Exchange 升级导致的访问状态|
@@ -37,10 +37,13 @@ ms.locfileid: "43388336"
 |notCompliant|9 |由合规性挑战吊销的访问状态|
 |notEnrolled|10 |由管理质询吊销的访问状态|
 |unknownLocation|12 |由于未知位置导致的访问状态|
-|mfaRequired|13|由于 MFA 质询而导致的访问状态|
+|mfaRequired|13 |由于 MFA 质询而导致的访问状态|
 |azureADBlockDueToAccessPolicy|14 |由 AAD 访问策略吊销的访问状态|
 |compromisedPassword|15 |通过密码被破解的密码吊销的访问状态|
 |deviceNotKnownWithManagedApp|16 |由托管应用程序质询吊销的访问状态|
+
+
+
 
 
 

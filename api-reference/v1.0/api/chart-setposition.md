@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 21f6756dfab97d6c3449bea20348dff773b4d8d9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a98b7e528074fe0ad234b330222ca01f8ce17691
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518537"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059997"
 ---
 # <a name="chart-setposition"></a>Chart: setPosition
 
@@ -109,3 +109,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

@@ -6,16 +6,16 @@ title: SharedDriveItem
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: f310d35c6126573f022a13934faf911de1122606
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a2e1252437608d474e92346ed0aaba4a3a50053d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520729"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060027"
 ---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,7 +55,7 @@ ms.locfileid: "42520729"
 | 属性 | 类型                          | 说明                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
 | id       | String                        | 要访问的内容的唯一标识符。              |
-| name     | String                        | 共享项的显示名称。                             |
+| 名称     | String                        | 共享项的显示名称。                             |
 | 所有者    | [IdentitySet](identityset.md) | 正在引用的共享项的所有者信息。 |
 
 ## <a name="relationships"></a>关系
@@ -63,16 +63,16 @@ ms.locfileid: "42520729"
 | 关系名称 | 类型                | 说明
 | ------------------|:--------------------|:-----------------------------------
 | **driveItem**     | [**driveItem**][driveItem] | 用于访问基础 **driveItem**
-| **list**          | [**簿**][list]           | 用于访问基础 **list**
+| **list**          | [**list**][list]           | 用于访问基础 **list**
 | **listItem**      | [**listItem**][listItem]   | 用于访问基础 **listItem**
 | **权限**    | [**拒绝**][permission] | 用于访问代表基础共享链接的**权限**
-| **site**          | [**网站**][site]           | 用于访问基础 **site**
+| **site**          | [**site**][site]           | 用于访问基础 **site**
 
 另外，对于从个人 OneDrive 帐户共享的 **driveItems**，也可使用以下关系。
 
 | 关系名称 | 类型                         | 说明
 | ------------------|:-----------------------------|:-----------------------------------
-| **items**         | [**driveItem**][driveItem]集合 | 共享根中包含的所有 driveItem。 不能枚举该集合。
+| **items**         | [**driveItem**][driveItem] 集合 | 共享根中包含的所有 driveItem。 不能枚举该集合。
 | **driveItem**     | [**driveItem**][driveItem]            | 用于访问基础 **driveItem**
 
 [driveItem]: driveitem.md
@@ -101,3 +101,5 @@ ms.locfileid: "42520729"
   "suppressions": []
 }
 -->
+
+

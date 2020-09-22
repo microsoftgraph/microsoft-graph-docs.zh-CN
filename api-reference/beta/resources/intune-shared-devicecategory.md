@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0aa67ac9dbe7be255ff1b27013f7e2eeecb7d185
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1a7f9d2e8566bf18546ede630405677e029c7019
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443630"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060053"
 ---
 # <a name="devicecategory-resource-type"></a>deviceCategory 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -34,10 +34,10 @@ ms.locfileid: "43443630"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备类别的唯一标识符。 只读。|
+|id|String|设备类别的唯一标识符。 只读。|
 |**载入**|
 |displayName|String|设备类别的显示名称。|
-|description|String|设备类别的说明（可选）。|
+|说明|String|设备类别的说明（可选）。|
 
 ## <a name="relationships"></a>关系
 无
@@ -58,6 +58,9 @@ ms.locfileid: "43443630"
   "description": "String"
 }
 ```
+
+
+
 
 
 

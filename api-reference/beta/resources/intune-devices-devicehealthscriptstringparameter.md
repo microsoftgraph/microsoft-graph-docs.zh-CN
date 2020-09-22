@@ -3,36 +3,36 @@ title: deviceHealthScriptStringParameter 资源类型
 description: 字符串脚本参数的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0b4eaf19d891b9b2f37c5b1a2661080cabf5a569
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 60562ff6908d96f5694f5182b66d61fba16f21e6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176132"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060200"
 ---
 # <a name="devicehealthscriptstringparameter-resource-type"></a>deviceHealthScriptStringParameter 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 字符串脚本参数的属性。
 
 
-继承自[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)
+继承自 [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|name|字符串|继承自[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)的 param 的名称|
+|名称|String|继承自[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)的 param 的名称|
 |说明|String|继承自[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)的参数的说明|
 |isRequired|Boolean|是否需要从[DeviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)继承 param|
 |applyDefaultValueWhenNotAssigned|Boolean|从[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)中继承未分配的情况时是否应用 DefaultValue|
-|默认|字符串|String param 的默认值|
+|默认|String|String param 的默认值|
 
 ## <a name="relationships"></a>关系
 无
@@ -54,6 +54,9 @@ ms.locfileid: "44176132"
   "defaultValue": "String"
 }
 ```
+
+
+
 
 
 

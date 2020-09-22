@@ -3,20 +3,20 @@ title: deviceGeoLocation 资源类型
 description: 设备位置
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 896f463daadef157b9f8c10628dd9101508b88f0
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: c189b21570dcc218586f4cc74cd605aa6712f0c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44175642"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060480"
 ---
 # <a name="devicegeolocation-resource-type"></a>deviceGeoLocation 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,12 +27,12 @@ ms.locfileid: "44175642"
 |:---|:---|:---|
 |lastCollectedDateTimeUtc|DateTimeOffset|记录位置时的时间，相对于 UTC|
 |lastCollectedDateTime|DateTimeOffset|记录位置时的时间，相对于 UTC|
-|longitude|双精度数|设备位置的经度坐标|
-|latitude|双精度|设备位置的纬度坐标|
-|altitude|双精度|高度，以高出海平面的米数表示|
-|horizontalAccuracy|双精度|经度和纬度的准确度，以米为单位|
-|verticalAccuracy|双精度|高度的准确度，以米为单位|
-|heading|双精度|相对于真北的方位，以度为单位|
+|longitude|Double|设备位置的经度坐标|
+|latitude|Double|设备位置的纬度坐标|
+|altitude|Double|高度，以高出海平面的米数表示|
+|horizontalAccuracy|Double|经度和纬度的准确度，以米为单位|
+|verticalAccuracy|Double|高度的准确度，以米为单位|
+|heading|Double|相对于真北的方位，以度为单位|
 |speed|Double|设备的移动速度，以米/秒为单位|
 
 ## <a name="relationships"></a>关系
@@ -59,6 +59,9 @@ ms.locfileid: "44175642"
   "speed": "4.2"
 }
 ```
+
+
+
 
 
 

@@ -3,34 +3,34 @@ title: deviceHealthScriptRunOnceSchedule 资源类型
 description: 设备运行状况脚本运行一次计划。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d043e60793376b636b826f10728c60607eb812a5
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 4df6220bc95cd98e07a49073c3a7e5da6ab4096d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178533"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060270"
 ---
 # <a name="devicehealthscriptrunonceschedule-resource-type"></a>deviceHealthScriptRunOnceSchedule 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 设备运行状况脚本运行一次计划。
 
 
-继承自[deviceHealthScriptTimeSchedule](../resources/intune-devices-devicehealthscripttimeschedule.md)
+继承自 [deviceHealthScriptTimeSchedule](../resources/intune-devices-devicehealthscripttimeschedule.md)
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |interval|Int32|每小时计划的 x 值，每隔 x 小时在每日计划的每 x 小时，每周计划的 x 周，每个 x 个月的日程安排。 从[DeviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)继承的有效值1到23|
-|useUtc|Boolean|指示时间是 Utc 还是客户端本地时间。 继承自[deviceHealthScriptTimeSchedule](../resources/intune-devices-devicehealthscripttimeschedule.md)|
-|time|TimeOfDay|在什么时候计划运行脚本。 此集合最多可包含20个元素。 继承自[deviceHealthScriptTimeSchedule](../resources/intune-devices-devicehealthscripttimeschedule.md)|
+|useUtc|Boolean|指示时间是 Utc 还是客户端本地时间。 继承自 [deviceHealthScriptTimeSchedule](../resources/intune-devices-devicehealthscripttimeschedule.md)|
+|time|TimeOfDay|在什么时候计划运行脚本。 此集合最多可包含20个元素。 继承自 [deviceHealthScriptTimeSchedule](../resources/intune-devices-devicehealthscripttimeschedule.md)|
 |date|Date|计划运行脚本的日期。 此集合最多可包含20个元素。|
 
 ## <a name="relationships"></a>关系
@@ -52,6 +52,9 @@ ms.locfileid: "44178533"
   "date": "String (Date)"
 }
 ```
+
+
+
 
 
 
