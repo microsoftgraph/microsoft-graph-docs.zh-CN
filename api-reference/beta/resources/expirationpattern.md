@@ -5,41 +5,41 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 62c49b7e725b923b95c514a7d3e955fed5fce46c
-ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
+ms.openlocfilehash: f9200d336ae69ae02c45ab1d6fc3d9df86691ebc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47413382"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026971"
 ---
-# <a name="expirationpattern-resource-type"></a><span data-ttu-id="33531-103">expirationPattern 资源类型</span><span class="sxs-lookup"><span data-stu-id="33531-103">expirationPattern resource type</span></span>
+# <a name="expirationpattern-resource-type"></a><span data-ttu-id="da923-103">expirationPattern 资源类型</span><span class="sxs-lookup"><span data-stu-id="da923-103">expirationPattern resource type</span></span>
 
-<span data-ttu-id="33531-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="33531-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="da923-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="da923-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="33531-105">在 [AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包分配请求由要获取访问包分配的用户创建。</span><span class="sxs-lookup"><span data-stu-id="33531-105">In [Azure AD entitlement management](entitlementmanagement-root.md), an access package assignment request is created by a user who wants to obtain an access package assignment.</span></span> <span data-ttu-id="33531-106">此请求可以包括用户想要进行分配的日程安排。</span><span class="sxs-lookup"><span data-stu-id="33531-106">This request can include a schedule for when the user would like to have an assignment.</span></span>  <span data-ttu-id="33531-107">通过此类请求生成的访问包分配也有计划。</span><span class="sxs-lookup"><span data-stu-id="33531-107">An access package assignment that results from such a request also has a schedule.</span></span>  <span data-ttu-id="33531-108">[RequestSchedule](requestschedule.md)的 "过期" 字段指示访问包分配应何时过期。</span><span class="sxs-lookup"><span data-stu-id="33531-108">The expiration field of a [requestSchedule](requestschedule.md) indicates when the access package assignment should expire.</span></span>
+<span data-ttu-id="da923-105">在 [AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包分配请求由要获取访问包分配的用户创建。</span><span class="sxs-lookup"><span data-stu-id="da923-105">In [Azure AD entitlement management](entitlementmanagement-root.md), an access package assignment request is created by a user who wants to obtain an access package assignment.</span></span> <span data-ttu-id="da923-106">此请求可以包括用户想要进行分配的日程安排。</span><span class="sxs-lookup"><span data-stu-id="da923-106">This request can include a schedule for when the user would like to have an assignment.</span></span>  <span data-ttu-id="da923-107">通过此类请求生成的访问包分配也有计划。</span><span class="sxs-lookup"><span data-stu-id="da923-107">An access package assignment that results from such a request also has a schedule.</span></span>  <span data-ttu-id="da923-108">[RequestSchedule](requestschedule.md)的 "过期" 字段指示访问包分配应何时过期。</span><span class="sxs-lookup"><span data-stu-id="da923-108">The expiration field of a [requestSchedule](requestschedule.md) indicates when the access package assignment should expire.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="33531-109">属性</span><span class="sxs-lookup"><span data-stu-id="33531-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="da923-109">属性</span><span class="sxs-lookup"><span data-stu-id="da923-109">Properties</span></span>
 
-| <span data-ttu-id="33531-110">属性</span><span class="sxs-lookup"><span data-stu-id="33531-110">Property</span></span>     | <span data-ttu-id="33531-111">类型</span><span class="sxs-lookup"><span data-stu-id="33531-111">Type</span></span>        | <span data-ttu-id="33531-112">说明</span><span class="sxs-lookup"><span data-stu-id="33531-112">Description</span></span> |
+| <span data-ttu-id="da923-110">属性</span><span class="sxs-lookup"><span data-stu-id="da923-110">Property</span></span>     | <span data-ttu-id="da923-111">类型</span><span class="sxs-lookup"><span data-stu-id="da923-111">Type</span></span>        | <span data-ttu-id="da923-112">说明</span><span class="sxs-lookup"><span data-stu-id="da923-112">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="33531-113">endDateTime</span><span class="sxs-lookup"><span data-stu-id="33531-113">endDateTime</span></span>|<span data-ttu-id="33531-114">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="33531-114">DateTimeOffset</span></span>|<span data-ttu-id="33531-115">时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。</span><span class="sxs-lookup"><span data-stu-id="33531-115">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="33531-116">例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。</span><span class="sxs-lookup"><span data-stu-id="33531-116">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span>|
-|<span data-ttu-id="33531-117">duration</span><span class="sxs-lookup"><span data-stu-id="33531-117">duration</span></span>|<span data-ttu-id="33531-118">持续时间</span><span class="sxs-lookup"><span data-stu-id="33531-118">Duration</span></span>|<span data-ttu-id="33531-119">请求者所需的 access 持续时间。</span><span class="sxs-lookup"><span data-stu-id="33531-119">The requestor's desired duration of access.</span></span> <span data-ttu-id="33531-120">如果在请求中指定，则 endDateTime 不应存在。</span><span class="sxs-lookup"><span data-stu-id="33531-120">If specified in a request, endDateTime should not be present.</span></span>|
-|<span data-ttu-id="33531-121">type</span><span class="sxs-lookup"><span data-stu-id="33531-121">type</span></span>|<span data-ttu-id="33531-122">expirationPatternType</span><span class="sxs-lookup"><span data-stu-id="33531-122">expirationPatternType</span></span>|<span data-ttu-id="33531-123">请求者所需的过期模式类型。</span><span class="sxs-lookup"><span data-stu-id="33531-123">The requestor's desired expiration pattern type.</span></span>|
+|<span data-ttu-id="da923-113">endDateTime</span><span class="sxs-lookup"><span data-stu-id="da923-113">endDateTime</span></span>|<span data-ttu-id="da923-114">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="da923-114">DateTimeOffset</span></span>|<span data-ttu-id="da923-115">时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。</span><span class="sxs-lookup"><span data-stu-id="da923-115">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="da923-116">例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。</span><span class="sxs-lookup"><span data-stu-id="da923-116">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span>|
+|<span data-ttu-id="da923-117">duration</span><span class="sxs-lookup"><span data-stu-id="da923-117">duration</span></span>|<span data-ttu-id="da923-118">持续时间</span><span class="sxs-lookup"><span data-stu-id="da923-118">Duration</span></span>|<span data-ttu-id="da923-119">请求者所需的 access 持续时间。</span><span class="sxs-lookup"><span data-stu-id="da923-119">The requestor's desired duration of access.</span></span> <span data-ttu-id="da923-120">如果在请求中指定，则 endDateTime 不应存在。</span><span class="sxs-lookup"><span data-stu-id="da923-120">If specified in a request, endDateTime should not be present.</span></span>|
+|<span data-ttu-id="da923-121">type</span><span class="sxs-lookup"><span data-stu-id="da923-121">type</span></span>|<span data-ttu-id="da923-122">expirationPatternType</span><span class="sxs-lookup"><span data-stu-id="da923-122">expirationPatternType</span></span>|<span data-ttu-id="da923-123">请求者所需的过期模式类型。</span><span class="sxs-lookup"><span data-stu-id="da923-123">The requestor's desired expiration pattern type.</span></span>|
 
-### <a name="expirationpatterntype-values"></a><span data-ttu-id="33531-124">expirationPatternType 值</span><span class="sxs-lookup"><span data-stu-id="33531-124">expirationPatternType values</span></span>
+### <a name="expirationpatterntype-values"></a><span data-ttu-id="da923-124">expirationPatternType 值</span><span class="sxs-lookup"><span data-stu-id="da923-124">expirationPatternType values</span></span>
 
-| <span data-ttu-id="33531-125">成员</span><span class="sxs-lookup"><span data-stu-id="33531-125">Member</span></span> | <span data-ttu-id="33531-126">值</span><span class="sxs-lookup"><span data-stu-id="33531-126">Value</span></span>| <span data-ttu-id="33531-127">说明</span><span class="sxs-lookup"><span data-stu-id="33531-127">Description</span></span> |
+| <span data-ttu-id="da923-125">成员</span><span class="sxs-lookup"><span data-stu-id="da923-125">Member</span></span> | <span data-ttu-id="da923-126">值</span><span class="sxs-lookup"><span data-stu-id="da923-126">Value</span></span>| <span data-ttu-id="da923-127">说明</span><span class="sxs-lookup"><span data-stu-id="da923-127">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="33531-128">notSpecified</span><span class="sxs-lookup"><span data-stu-id="33531-128">notSpecified</span></span>|<span data-ttu-id="33531-129">0</span><span class="sxs-lookup"><span data-stu-id="33531-129">0</span></span>|<span data-ttu-id="33531-130">未指定任何过期计划。</span><span class="sxs-lookup"><span data-stu-id="33531-130">No expiration schedule was specified.</span></span>|
-|<span data-ttu-id="33531-131">noExpiration</span><span class="sxs-lookup"><span data-stu-id="33531-131">noExpiration</span></span>|<span data-ttu-id="33531-132">1</span><span class="sxs-lookup"><span data-stu-id="33531-132">1</span></span>|<span data-ttu-id="33531-133">请求者不希望访问过期。</span><span class="sxs-lookup"><span data-stu-id="33531-133">The requestor did not wish the access to expire.</span></span>|
-|<span data-ttu-id="33531-134">afterDateTime</span><span class="sxs-lookup"><span data-stu-id="33531-134">afterDateTime</span></span>|<span data-ttu-id="33531-135">双面</span><span class="sxs-lookup"><span data-stu-id="33531-135">2</span></span>|<span data-ttu-id="33531-136">访问将在指定的日期和时间后过期。</span><span class="sxs-lookup"><span data-stu-id="33531-136">Access will expire after a specified date and time.</span></span>|
-|<span data-ttu-id="33531-137">afterDuration</span><span class="sxs-lookup"><span data-stu-id="33531-137">afterDuration</span></span>|<span data-ttu-id="33531-138">第三章</span><span class="sxs-lookup"><span data-stu-id="33531-138">3</span></span>|<span data-ttu-id="33531-139">访问将在相对于要授予访问权限的指定持续时间之后过期。</span><span class="sxs-lookup"><span data-stu-id="33531-139">Access will expire after a specified duration relative to access being granted.</span></span>|
+|<span data-ttu-id="da923-128">notSpecified</span><span class="sxs-lookup"><span data-stu-id="da923-128">notSpecified</span></span>|<span data-ttu-id="da923-129">0</span><span class="sxs-lookup"><span data-stu-id="da923-129">0</span></span>|<span data-ttu-id="da923-130">未指定任何过期计划。</span><span class="sxs-lookup"><span data-stu-id="da923-130">No expiration schedule was specified.</span></span>|
+|<span data-ttu-id="da923-131">noExpiration</span><span class="sxs-lookup"><span data-stu-id="da923-131">noExpiration</span></span>|<span data-ttu-id="da923-132">1 </span><span class="sxs-lookup"><span data-stu-id="da923-132">1</span></span>|<span data-ttu-id="da923-133">请求者不希望访问过期。</span><span class="sxs-lookup"><span data-stu-id="da923-133">The requestor did not wish the access to expire.</span></span>|
+|<span data-ttu-id="da923-134">afterDateTime</span><span class="sxs-lookup"><span data-stu-id="da923-134">afterDateTime</span></span>|<span data-ttu-id="da923-135">2 </span><span class="sxs-lookup"><span data-stu-id="da923-135">2</span></span>|<span data-ttu-id="da923-136">访问将在指定的日期和时间后过期。</span><span class="sxs-lookup"><span data-stu-id="da923-136">Access will expire after a specified date and time.</span></span>|
+|<span data-ttu-id="da923-137">afterDuration</span><span class="sxs-lookup"><span data-stu-id="da923-137">afterDuration</span></span>|<span data-ttu-id="da923-138">第三章</span><span class="sxs-lookup"><span data-stu-id="da923-138">3</span></span>|<span data-ttu-id="da923-139">访问将在相对于要授予访问权限的指定持续时间之后过期。</span><span class="sxs-lookup"><span data-stu-id="da923-139">Access will expire after a specified duration relative to access being granted.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="33531-140">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="33531-140">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="da923-140">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="da923-140">JSON representation</span></span>
 
-<span data-ttu-id="33531-141">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="33531-141">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="da923-141">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="da923-141">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -66,3 +66,5 @@ ms.locfileid: "47413382"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

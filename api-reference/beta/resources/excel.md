@@ -5,54 +5,54 @@ localization_priority: Normal
 author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: 9a7ca111f0f61577ea4b02a9ea76e48c35bd2fbe
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: cd7e3401032f77f83d5cc430116190ba547d26b3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353747"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027011"
 ---
-# <a name="working-with-excel-in-microsoft-graph"></a><span data-ttu-id="eebd7-103">在 Microsoft Graph 中使用 Excel</span><span class="sxs-lookup"><span data-stu-id="eebd7-103">Working with Excel in Microsoft Graph</span></span>
+# <a name="working-with-excel-in-microsoft-graph"></a><span data-ttu-id="df59c-103">在 Microsoft Graph 中使用 Excel</span><span class="sxs-lookup"><span data-stu-id="df59c-103">Working with Excel in Microsoft Graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="eebd7-p101">可以使用 Microsoft Graph，使 Web 和移动应用程序可以读取和修改存储在 OneDrive、SharePoint 或其他支持的存储平台中的 Excel 工作簿。`Workbook`（或 Excel 文件）资源通过关系包含所有其他 Excel 资源。可以通过识别文件在该 URL 中的位置，借助 [驱动器 API](drive.md) 访问工作簿。例如：</span><span class="sxs-lookup"><span data-stu-id="eebd7-p101">You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive, SharePoint, or other supported storage platforms. The `Workbook` (or Excel file) resource contains all the other Excel resources through relationships. You can access a workbook through the [Drive API](drive.md) by identifying the location of the file in the URL. For example:</span></span>
+<span data-ttu-id="df59c-p101">可以使用 Microsoft Graph，使 Web 和移动应用程序可以读取和修改存储在 OneDrive、SharePoint 或其他支持的存储平台中的 Excel 工作簿。`Workbook`（或 Excel 文件）资源通过关系包含所有其他 Excel 资源。可以通过识别文件在该 URL 中的位置，借助 [驱动器 API](drive.md) 访问工作簿。例如：</span><span class="sxs-lookup"><span data-stu-id="df59c-p101">You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive, SharePoint, or other supported storage platforms. The `Workbook` (or Excel file) resource contains all the other Excel resources through relationships. You can access a workbook through the [Drive API](drive.md) by identifying the location of the file in the URL. For example:</span></span>
 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
 
-<span data-ttu-id="eebd7-p102">可以通过使用标准 REST API 访问一组 Excel 对象（例如表、区域或图表），以便对工作簿执行创建、读取、更新和删除 (CRUD) 操作。例如，`https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`</span><span class="sxs-lookup"><span data-stu-id="eebd7-p102">You can access a set of Excel objects (such as Table, Range, or Chart) by using standard REST APIs to perform  create, read, update, and delete (CRUD) operations on the workbook. For example, `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`</span></span>  
-<span data-ttu-id="eebd7-110">返回属于工作簿的工作表对象的集合。</span><span class="sxs-lookup"><span data-stu-id="eebd7-110">returns a collection of worksheet objects that are part of the workbook.</span></span>    
+<span data-ttu-id="df59c-p102">可以通过使用标准 REST API 访问一组 Excel 对象（例如表、区域或图表），以便对工作簿执行创建、读取、更新和删除 (CRUD) 操作。例如，`https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`</span><span class="sxs-lookup"><span data-stu-id="df59c-p102">You can access a set of Excel objects (such as Table, Range, or Chart) by using standard REST APIs to perform  create, read, update, and delete (CRUD) operations on the workbook. For example, `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`</span></span>  
+<span data-ttu-id="df59c-110">返回属于工作簿的工作表对象的集合。</span><span class="sxs-lookup"><span data-stu-id="df59c-110">returns a collection of worksheet objects that are part of the workbook.</span></span>    
 
 
-<span data-ttu-id="eebd7-111">**注意：** Excel REST API 仅支持 Office Open XML 文件格式的工作簿。</span><span class="sxs-lookup"><span data-stu-id="eebd7-111">**Note:** The Excel REST API supports only Office Open XML file formatted workbooks.</span></span> <span data-ttu-id="eebd7-112">不支持扩展名为 `.xls` 的工作簿。</span><span class="sxs-lookup"><span data-stu-id="eebd7-112">The `.xls` extension workbooks are not supported.</span></span> 
+<span data-ttu-id="df59c-111">**注意：** Excel REST API 仅支持 Office Open XML 文件格式的工作簿。</span><span class="sxs-lookup"><span data-stu-id="df59c-111">**Note:** The Excel REST API supports only Office Open XML file formatted workbooks.</span></span> <span data-ttu-id="df59c-112">不支持扩展名为 `.xls` 的工作簿。</span><span class="sxs-lookup"><span data-stu-id="df59c-112">The `.xls` extension workbooks are not supported.</span></span> 
 
-## <a name="authorization-and-scopes"></a><span data-ttu-id="eebd7-113">授权和范围</span><span class="sxs-lookup"><span data-stu-id="eebd7-113">Authorization and scopes</span></span>
+## <a name="authorization-and-scopes"></a><span data-ttu-id="df59c-113">授权和范围</span><span class="sxs-lookup"><span data-stu-id="df59c-113">Authorization and scopes</span></span>
 
-<span data-ttu-id="eebd7-p104">可以使用 [Azure AD v.20 终结点](https://developer.microsoft.com/graph/docs/authorization/converged_auth) 对 Excel API 进行身份验证。所有 API 都要求提供 `Authorization: Bearer {access-token}` HTTP 标头。</span><span class="sxs-lookup"><span data-stu-id="eebd7-p104">You can use the [Azure AD v.20 endpoint](https://developer.microsoft.com/graph/docs/authorization/converged_auth) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.</span></span>   
+<span data-ttu-id="df59c-p104">可以使用 [Azure AD v.20 终结点](https://developer.microsoft.com/graph/docs/authorization/converged_auth) 对 Excel API 进行身份验证。所有 API 都要求提供 `Authorization: Bearer {access-token}` HTTP 标头。</span><span class="sxs-lookup"><span data-stu-id="df59c-p104">You can use the [Azure AD v.20 endpoint](https://developer.microsoft.com/graph/docs/authorization/converged_auth) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.</span></span>   
   
-<span data-ttu-id="eebd7-116">要使用 Excel 资源，需要以下 [权限范围](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) 之一：</span><span class="sxs-lookup"><span data-stu-id="eebd7-116">One of the following [permission scopes](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) is required to use the Excel resource:</span></span>
+<span data-ttu-id="df59c-116">要使用 Excel 资源，需要以下 [权限范围](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) 之一：</span><span class="sxs-lookup"><span data-stu-id="df59c-116">One of the following [permission scopes](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) is required to use the Excel resource:</span></span>
 
-* <span data-ttu-id="eebd7-117">Files.Read</span><span class="sxs-lookup"><span data-stu-id="eebd7-117">Files.Read</span></span> 
-* <span data-ttu-id="eebd7-118">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="eebd7-118">Files.ReadWrite</span></span>
+* <span data-ttu-id="df59c-117">Files.Read</span><span class="sxs-lookup"><span data-stu-id="df59c-117">Files.Read</span></span> 
+* <span data-ttu-id="df59c-118">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="df59c-118">Files.ReadWrite</span></span>
 
 
-## <a name="sessions-and-persistence"></a><span data-ttu-id="eebd7-119">会话和永久性</span><span class="sxs-lookup"><span data-stu-id="eebd7-119">Sessions and persistence</span></span>
+## <a name="sessions-and-persistence"></a><span data-ttu-id="df59c-119">会话和永久性</span><span class="sxs-lookup"><span data-stu-id="df59c-119">Sessions and persistence</span></span>
 
-<span data-ttu-id="eebd7-120">可以在以下任一模式下调用 Excel API：</span><span class="sxs-lookup"><span data-stu-id="eebd7-120">Excel APIs can be called in one of two modes:</span></span> 
+<span data-ttu-id="df59c-120">可以在以下任一模式下调用 Excel API：</span><span class="sxs-lookup"><span data-stu-id="df59c-120">Excel APIs can be called in one of two modes:</span></span> 
 
-1. <span data-ttu-id="eebd7-p105">永久会话 - 保持（保存）对工作簿所做的全部更改。这是常用的操作模式。</span><span class="sxs-lookup"><span data-stu-id="eebd7-p105">Persistent session - All changes made to the workbook are persisted (saved). This is the usual mode of operation.</span></span> 
-2. <span data-ttu-id="eebd7-p106">非永久会话 - 不会将 API 所做的更改保存到源位置。相反，Excel 后端服务器保留文件的临时副本，体现在特定 API 会话期间所做的更改。Excel 会话过期时，这些更改将丢失。此模式可用于需要进行分析或获得计算结果或图表图像的应用，但不会影响文档状态。</span><span class="sxs-lookup"><span data-stu-id="eebd7-p106">Non-persistent session - Changes made by the API are not saved to the source location. Instead, the Excel backend server keeps a temporary copy of the file that reflects the changes made during that particular API session. When the Excel session expires, the changes are lost. This mode is useful for apps that need to do analysis or obtain the results of a calculation or a chart image, but not affect the document state.</span></span>   
+1. <span data-ttu-id="df59c-p105">永久会话 - 保持（保存）对工作簿所做的全部更改。这是常用的操作模式。</span><span class="sxs-lookup"><span data-stu-id="df59c-p105">Persistent session - All changes made to the workbook are persisted (saved). This is the usual mode of operation.</span></span> 
+2. <span data-ttu-id="df59c-p106">非永久会话 - 不会将 API 所做的更改保存到源位置。相反，Excel 后端服务器保留文件的临时副本，体现在特定 API 会话期间所做的更改。Excel 会话过期时，这些更改将丢失。此模式可用于需要进行分析或获得计算结果或图表图像的应用，但不会影响文档状态。</span><span class="sxs-lookup"><span data-stu-id="df59c-p106">Non-persistent session - Changes made by the API are not saved to the source location. Instead, the Excel backend server keeps a temporary copy of the file that reflects the changes made during that particular API session. When the Excel session expires, the changes are lost. This mode is useful for apps that need to do analysis or obtain the results of a calculation or a chart image, but not affect the document state.</span></span>   
 
-<span data-ttu-id="eebd7-127">若要表示 API 中的会话，请使用 `workbook-session-id: {session-id}` 标头。</span><span class="sxs-lookup"><span data-stu-id="eebd7-127">To represent the session in the API, use the `workbook-session-id: {session-id}` header.</span></span> 
+<span data-ttu-id="df59c-127">若要表示 API 中的会话，请使用 `workbook-session-id: {session-id}` 标头。</span><span class="sxs-lookup"><span data-stu-id="df59c-127">To represent the session in the API, use the `workbook-session-id: {session-id}` header.</span></span> 
 
-><span data-ttu-id="eebd7-p107">**注意：** Excel API 不需要会话标头也能起作用。但是，建议你使用会话标头来提高性能。如果不使用会话标头，API 调用过程中进行的更改_仅_保持在该文件中。</span><span class="sxs-lookup"><span data-stu-id="eebd7-p107">**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.</span></span>  
+><span data-ttu-id="df59c-p107">**注意：** Excel API 不需要会话标头也能起作用。但是，建议你使用会话标头来提高性能。如果不使用会话标头，API 调用过程中进行的更改_仅_保持在该文件中。</span><span class="sxs-lookup"><span data-stu-id="df59c-p107">**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.</span></span>  
 
-### <a name="api-call-to-get-a-session"></a><span data-ttu-id="eebd7-131">获取会话的 API 调用</span><span class="sxs-lookup"><span data-stu-id="eebd7-131">API call to get a session</span></span> 
+### <a name="api-call-to-get-a-session"></a><span data-ttu-id="df59c-131">获取会话的 API 调用</span><span class="sxs-lookup"><span data-stu-id="df59c-131">API call to get a session</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="eebd7-132">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-132">Request</span></span> 
+#### <a name="request"></a><span data-ttu-id="df59c-132">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-132">Request</span></span> 
 
-<span data-ttu-id="eebd7-133">通过将 `persistchanges` 值设置为 `true` 或 `false` 可传递一个 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="eebd7-133">Pass a JSON object by setting the `persistchanges` value to `true` or `false`.</span></span> 
+<span data-ttu-id="df59c-133">通过将 `persistchanges` 值设置为 `true` 或 `false` 可传递一个 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="df59c-133">Pass a JSON object by setting the `persistchanges` value to `true` or `false`.</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -63,10 +63,10 @@ authorization: Bearer {access-token}
 { "persistChanges": true }
 ```
 
-<span data-ttu-id="eebd7-134">当 `persistChanges` 值设置为 `false` 时，则返回非永久会话 id。</span><span class="sxs-lookup"><span data-stu-id="eebd7-134">When the value of `persistChanges` is set to `false`, a non-persistent session id is returned.</span></span>  
+<span data-ttu-id="df59c-134">当 `persistChanges` 值设置为 `false` 时，则返回非永久会话 id。</span><span class="sxs-lookup"><span data-stu-id="df59c-134">When the value of `persistChanges` is set to `false`, a non-persistent session id is returned.</span></span>  
 
 
-#### <a name="response"></a><span data-ttu-id="eebd7-135">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-135">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="df59c-135">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-135">Response</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -80,10 +80,10 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="usage"></a><span data-ttu-id="eebd7-136">用法</span><span class="sxs-lookup"><span data-stu-id="eebd7-136">Usage</span></span> 
+#### <a name="usage"></a><span data-ttu-id="df59c-136">用法</span><span class="sxs-lookup"><span data-stu-id="df59c-136">Usage</span></span> 
 
-<span data-ttu-id="eebd7-137">将前一个调用中返回的会话 ID </span><span class="sxs-lookup"><span data-stu-id="eebd7-137">The session ID returned from the previous call is passed as a header on subsequent API requests in</span></span>  
-<span data-ttu-id="eebd7-138">作为 `workbook-session-id` HTTP 标头的后续 API 请求中的标头进行传递。</span><span class="sxs-lookup"><span data-stu-id="eebd7-138">`workbook-session-id` HTTP header.</span></span> 
+<span data-ttu-id="df59c-137">将前一个调用中返回的会话 ID </span><span class="sxs-lookup"><span data-stu-id="df59c-137">The session ID returned from the previous call is passed as a header on subsequent API requests in</span></span>  
+<span data-ttu-id="df59c-138">作为 `workbook-session-id` HTTP 标头的后续 API 请求中的标头进行传递。</span><span class="sxs-lookup"><span data-stu-id="df59c-138">`workbook-session-id` HTTP header.</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -92,16 +92,16 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-><span data-ttu-id="eebd7-139">注意：如果会话 ID 已过期，会话上会返回 `404` HTTP 错误代码。</span><span class="sxs-lookup"><span data-stu-id="eebd7-139">Note: If the session id has expired, a `404` HTTP error code is returned on the session.</span></span> <span data-ttu-id="eebd7-140">在这种情况下，可以选择新建一个会话，然后继续。</span><span class="sxs-lookup"><span data-stu-id="eebd7-140">In such a scenarion, you can choose to create a new session and continue.</span></span> <span data-ttu-id="eebd7-141">另一种方法是定期刷新会话，以使会话处于活动状态。</span><span class="sxs-lookup"><span data-stu-id="eebd7-141">Another approach would be to refresh the session periodically to keep the session alive.</span></span> <span data-ttu-id="eebd7-142">通常，如果永久会话处于不活动状态的时间达到 5 分钟左右，则会话会过期。</span><span class="sxs-lookup"><span data-stu-id="eebd7-142">Typically the persistent session expires after about 5 minutes of inactivity.</span></span> <span data-ttu-id="eebd7-143">如果非永久会话处于不活动状态的时间达到 7 分钟左右，则会过期。</span><span class="sxs-lookup"><span data-stu-id="eebd7-143">Non persistent session expires after about 7 minutes of inactivity.</span></span> 
+><span data-ttu-id="df59c-139">注意：如果会话 ID 已过期，会话上会返回 `404` HTTP 错误代码。</span><span class="sxs-lookup"><span data-stu-id="df59c-139">Note: If the session id has expired, a `404` HTTP error code is returned on the session.</span></span> <span data-ttu-id="df59c-140">在这种情况下，可以选择新建一个会话，然后继续。</span><span class="sxs-lookup"><span data-stu-id="df59c-140">In such a scenarion, you can choose to create a new session and continue.</span></span> <span data-ttu-id="df59c-141">另一种方法是定期刷新会话，以使会话处于活动状态。</span><span class="sxs-lookup"><span data-stu-id="df59c-141">Another approach would be to refresh the session periodically to keep the session alive.</span></span> <span data-ttu-id="df59c-142">通常，如果永久会话处于不活动状态的时间达到 5 分钟左右，则会话会过期。</span><span class="sxs-lookup"><span data-stu-id="df59c-142">Typically the persistent session expires after about 5 minutes of inactivity.</span></span> <span data-ttu-id="df59c-143">如果非永久会话处于不活动状态的时间达到 7 分钟左右，则会过期。</span><span class="sxs-lookup"><span data-stu-id="df59c-143">Non persistent session expires after about 7 minutes of inactivity.</span></span> 
 
-## <a name="common-excel-scenarios"></a><span data-ttu-id="eebd7-144">常见的 Excel 方案</span><span class="sxs-lookup"><span data-stu-id="eebd7-144">Common Excel scenarios</span></span>
+## <a name="common-excel-scenarios"></a><span data-ttu-id="df59c-144">常见的 Excel 方案</span><span class="sxs-lookup"><span data-stu-id="df59c-144">Common Excel scenarios</span></span>
 
-<span data-ttu-id="eebd7-145">本节提供可用于 Excel 对象的常见操作的示例。</span><span class="sxs-lookup"><span data-stu-id="eebd7-145">This section provides examples of the common operations you can use on Excel objects.</span></span>
+<span data-ttu-id="df59c-145">本节提供可用于 Excel 对象的常见操作的示例。</span><span class="sxs-lookup"><span data-stu-id="df59c-145">This section provides examples of the common operations you can use on Excel objects.</span></span>
 
-### <a name="worksheet-operations"></a><span data-ttu-id="eebd7-146">工作表操作</span><span class="sxs-lookup"><span data-stu-id="eebd7-146">Worksheet operations</span></span>
+### <a name="worksheet-operations"></a><span data-ttu-id="df59c-146">工作表操作</span><span class="sxs-lookup"><span data-stu-id="df59c-146">Worksheet operations</span></span>
 
-#### <a name="list-worksheets-part-of-the-workbook"></a><span data-ttu-id="eebd7-147">列出工作簿的工作表部分</span><span class="sxs-lookup"><span data-stu-id="eebd7-147">List worksheets part of the workbook</span></span> 
-<span data-ttu-id="eebd7-148">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-148">Request</span></span> 
+#### <a name="list-worksheets-part-of-the-workbook"></a><span data-ttu-id="df59c-147">列出工作簿的工作表部分</span><span class="sxs-lookup"><span data-stu-id="df59c-147">List worksheets part of the workbook</span></span> 
+<span data-ttu-id="df59c-148">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-148">Request</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -111,7 +111,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="eebd7-149">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-149">Response</span></span>
+<span data-ttu-id="df59c-149">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-149">Response</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -138,7 +138,7 @@ content-type: application/json;odata.metadata
   ]
 }
 ```
-#### <a name="add-a-new-worksheet"></a><span data-ttu-id="eebd7-150">添加新的工作表</span><span class="sxs-lookup"><span data-stu-id="eebd7-150">Add a new worksheet</span></span> 
+#### <a name="add-a-new-worksheet"></a><span data-ttu-id="df59c-150">添加新的工作表</span><span class="sxs-lookup"><span data-stu-id="df59c-150">Add a new worksheet</span></span> 
  
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -150,7 +150,7 @@ workbook-session-id: {session-id}
 { "name": "Sheet32243" }
 ```
 
-<span data-ttu-id="eebd7-151">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-151">Response</span></span>
+<span data-ttu-id="df59c-151">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-151">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
@@ -166,7 +166,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="get-a-new-worksheet"></a><span data-ttu-id="eebd7-152">获取新的工作表</span><span class="sxs-lookup"><span data-stu-id="eebd7-152">Get a new worksheet</span></span> 
+#### <a name="get-a-new-worksheet"></a><span data-ttu-id="df59c-152">获取新的工作表</span><span class="sxs-lookup"><span data-stu-id="df59c-152">Get a new worksheet</span></span> 
  
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -176,7 +176,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="eebd7-153">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-153">Response</span></span>
+<span data-ttu-id="df59c-153">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-153">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
@@ -192,11 +192,11 @@ content-type: application/json;odata.metadata
 }
 ```
 
-<span data-ttu-id="eebd7-154">\*\*注意：也可以使用 ID 检索工作表。</span><span class="sxs-lookup"><span data-stu-id="eebd7-154">\*\* Note: Worksheets can also be retrieved using the ID.</span></span> <span data-ttu-id="eebd7-155">但是，目前 ID 包含需要经过 URL 编码才能使 API 工作的 `{` 和“}”字符。</span><span class="sxs-lookup"><span data-stu-id="eebd7-155">However, currently the ID contains `{` and '}' characters, which needs to be URL encoded for the API to work.</span></span> <span data-ttu-id="eebd7-156">示例：若要获取 ID 为 `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}` 的工作表，请将路径中的 ID 进行 URL 编码，编码为 `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`。</span><span class="sxs-lookup"><span data-stu-id="eebd7-156">Example: In order to get a worksheet with ID of `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}`, URL encode the ID in the path as `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`.</span></span> 
+<span data-ttu-id="df59c-154">\*\*注意：也可以使用 ID 检索工作表。</span><span class="sxs-lookup"><span data-stu-id="df59c-154">\*\* Note: Worksheets can also be retrieved using the ID.</span></span> <span data-ttu-id="df59c-155">但是，目前 ID 包含需要经过 URL 编码才能使 API 工作的 `{` 和“}”字符。</span><span class="sxs-lookup"><span data-stu-id="df59c-155">However, currently the ID contains `{` and '}' characters, which needs to be URL encoded for the API to work.</span></span> <span data-ttu-id="df59c-156">示例：若要获取 ID 为 `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}` 的工作表，请将路径中的 ID 进行 URL 编码，编码为 `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`。</span><span class="sxs-lookup"><span data-stu-id="df59c-156">Example: In order to get a worksheet with ID of `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}`, URL encode the ID in the path as `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`.</span></span> 
 
-#### <a name="delete-a-worksheet"></a><span data-ttu-id="eebd7-157">删除工作表</span><span class="sxs-lookup"><span data-stu-id="eebd7-157">Delete a worksheet</span></span>
+#### <a name="delete-a-worksheet"></a><span data-ttu-id="df59c-157">删除工作表</span><span class="sxs-lookup"><span data-stu-id="df59c-157">Delete a worksheet</span></span>
 
-<span data-ttu-id="eebd7-158">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-158">Request</span></span>
+<span data-ttu-id="df59c-158">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-158">Request</span></span>
 ```
 DELETE /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D')
 content-type: Application/Json 
@@ -204,16 +204,16 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="eebd7-159">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-159">Response</span></span>
+<span data-ttu-id="df59c-159">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-159">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 
-#### <a name="update-worksheet-properties"></a><span data-ttu-id="eebd7-160">更新工作表属性</span><span class="sxs-lookup"><span data-stu-id="eebd7-160">Update worksheet properties</span></span>
+#### <a name="update-worksheet-properties"></a><span data-ttu-id="df59c-160">更新工作表属性</span><span class="sxs-lookup"><span data-stu-id="df59c-160">Update worksheet properties</span></span>
 
-<span data-ttu-id="eebd7-161">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-161">Request</span></span> 
+<span data-ttu-id="df59c-161">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-161">Request</span></span> 
 
 ```
 PATCH /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/SheetA
@@ -225,7 +225,7 @@ workbook-session-id: {session-id}
 { "name": "SheetA", "position": 3 }
 ```
 
-<span data-ttu-id="eebd7-162">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-162">Response</span></span>
+<span data-ttu-id="df59c-162">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-162">Response</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -242,11 +242,11 @@ content-type: application/json;odata.metadata
 }
 ```
 
-### <a name="chart-operations"></a><span data-ttu-id="eebd7-163">图表操作</span><span class="sxs-lookup"><span data-stu-id="eebd7-163">Chart operations</span></span>
+### <a name="chart-operations"></a><span data-ttu-id="df59c-163">图表操作</span><span class="sxs-lookup"><span data-stu-id="df59c-163">Chart operations</span></span>
 
-#### <a name="list-charts-that-are-part-of-the-worksheet"></a><span data-ttu-id="eebd7-164">列出属于工作表的图表</span><span class="sxs-lookup"><span data-stu-id="eebd7-164">List charts that are part of the worksheet</span></span> 
+#### <a name="list-charts-that-are-part-of-the-worksheet"></a><span data-ttu-id="df59c-164">列出属于工作表的图表</span><span class="sxs-lookup"><span data-stu-id="df59c-164">List charts that are part of the worksheet</span></span> 
 
-<span data-ttu-id="eebd7-165">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-165">Request</span></span>
+<span data-ttu-id="df59c-165">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-165">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http 
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts
@@ -255,7 +255,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id} 
 ```
 
-<span data-ttu-id="eebd7-166">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-166">Response</span></span>
+<span data-ttu-id="df59c-166">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-166">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
@@ -277,11 +277,11 @@ content-type: application/json;odata.metadata
 }
 ```
 
-<span data-ttu-id="eebd7-167">\*\*注意：图表 ID 包含需要经过 URL 编码才能使 API 工作的 `{` 和 `}` 字符（例如 `{00000000-0008-0000-0100-000003000000}`）。</span><span class="sxs-lookup"><span data-stu-id="eebd7-167">\*\* Note: Chart ID contains `{` and `}` characters (example: `{00000000-0008-0000-0100-000003000000}`), which needs to be URL encoded for the API to work.</span></span> <span data-ttu-id="eebd7-168">示例：若要获取图表对象，请将路径中的 ID 进行 URL 编码，编码为 `/charts/%7B00000000-0008-0000-0100-000003000000%7D`。</span><span class="sxs-lookup"><span data-stu-id="eebd7-168">Example: In order to get a chart object, URL encode the ID in the path as `/charts/%7B00000000-0008-0000-0100-000003000000%7D`.</span></span> 
+<span data-ttu-id="df59c-167">\*\*注意：图表 ID 包含需要经过 URL 编码才能使 API 工作的 `{` 和 `}` 字符（例如 `{00000000-0008-0000-0100-000003000000}`）。</span><span class="sxs-lookup"><span data-stu-id="df59c-167">\*\* Note: Chart ID contains `{` and `}` characters (example: `{00000000-0008-0000-0100-000003000000}`), which needs to be URL encoded for the API to work.</span></span> <span data-ttu-id="df59c-168">示例：若要获取图表对象，请将路径中的 ID 进行 URL 编码，编码为 `/charts/%7B00000000-0008-0000-0100-000003000000%7D`。</span><span class="sxs-lookup"><span data-stu-id="df59c-168">Example: In order to get a chart object, URL encode the ID in the path as `/charts/%7B00000000-0008-0000-0100-000003000000%7D`.</span></span> 
 
-#### <a name="get-chart-image"></a><span data-ttu-id="eebd7-169">获取图表图像</span><span class="sxs-lookup"><span data-stu-id="eebd7-169">Get chart image</span></span>
+#### <a name="get-chart-image"></a><span data-ttu-id="df59c-169">获取图表图像</span><span class="sxs-lookup"><span data-stu-id="df59c-169">Get chart image</span></span>
 
-<span data-ttu-id="eebd7-170">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-170">Request</span></span>
+<span data-ttu-id="df59c-170">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-170">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B00000000-0008-0000-0100-000003000000%7D')/Image(width=0,height=0,fittingMode='fit')
@@ -289,7 +289,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id} 
 ```
 
-<span data-ttu-id="eebd7-171">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-171">Response</span></span>
+<span data-ttu-id="df59c-171">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-171">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
@@ -301,9 +301,9 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="add-a-chart"></a><span data-ttu-id="eebd7-172">添加图表</span><span class="sxs-lookup"><span data-stu-id="eebd7-172">Add a chart</span></span>  
+#### <a name="add-a-chart"></a><span data-ttu-id="df59c-172">添加图表</span><span class="sxs-lookup"><span data-stu-id="df59c-172">Add a chart</span></span>  
 
-<span data-ttu-id="eebd7-173">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-173">Request</span></span>
+<span data-ttu-id="df59c-173">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-173">Request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -315,7 +315,7 @@ authorization: Bearer {access-token}
 { "type": "ColumnClustered", "sourcedata": "A1:C4", "seriesby": "Auto" }
 ```
 
-<span data-ttu-id="eebd7-174">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-174">Response</span></span>
+<span data-ttu-id="df59c-174">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-174">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
@@ -334,7 +334,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="update-a-chart"></a><span data-ttu-id="eebd7-175">更新图表</span><span class="sxs-lookup"><span data-stu-id="eebd7-175">Update a chart</span></span>
+#### <a name="update-a-chart"></a><span data-ttu-id="df59c-175">更新图表</span><span class="sxs-lookup"><span data-stu-id="df59c-175">Update a chart</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http 
@@ -346,7 +346,7 @@ workbook-session-id: {session-id}
 { "height": 216.0, "left": 0, "name": "NewName", "top": 0, "width": 360.0 }
 
 ```
-<span data-ttu-id="eebd7-176">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-176">Response</span></span> 
+<span data-ttu-id="df59c-176">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-176">Response</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -365,9 +365,9 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="update-chart-source-data"></a><span data-ttu-id="eebd7-177">更新图表的源数据</span><span class="sxs-lookup"><span data-stu-id="eebd7-177">Update chart source data</span></span> 
+#### <a name="update-chart-source-data"></a><span data-ttu-id="df59c-177">更新图表的源数据</span><span class="sxs-lookup"><span data-stu-id="df59c-177">Update chart source data</span></span> 
 
-<span data-ttu-id="eebd7-178">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-178">Request</span></span>
+<span data-ttu-id="df59c-178">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-178">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D')/setData
@@ -379,17 +379,17 @@ workbook-session-id: {session-id}
 { "sourceData": "A1:C4", "seriesBy": "Auto" }
 ```
 
-<span data-ttu-id="eebd7-179">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-179">Response</span></span>
+<span data-ttu-id="df59c-179">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-179">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
-### <a name="table-operations"></a><span data-ttu-id="eebd7-180">表操作</span><span class="sxs-lookup"><span data-stu-id="eebd7-180">Table operations</span></span> 
+### <a name="table-operations"></a><span data-ttu-id="df59c-180">表操作</span><span class="sxs-lookup"><span data-stu-id="df59c-180">Table operations</span></span> 
 
-#### <a name="get-list-of-tables"></a><span data-ttu-id="eebd7-181">获取表列表</span><span class="sxs-lookup"><span data-stu-id="eebd7-181">Get list of tables</span></span> 
+#### <a name="get-list-of-tables"></a><span data-ttu-id="df59c-181">获取表列表</span><span class="sxs-lookup"><span data-stu-id="df59c-181">Get list of tables</span></span> 
 
-<span data-ttu-id="eebd7-182">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-182">Request</span></span>
+<span data-ttu-id="df59c-182">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-182">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/tables
@@ -398,16 +398,16 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="eebd7-183">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-183">Response</span></span>
+<span data-ttu-id="df59c-183">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-183">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 ```
 
-#### <a name="create-table"></a><span data-ttu-id="eebd7-184">创建表</span><span class="sxs-lookup"><span data-stu-id="eebd7-184">Create table</span></span>
+#### <a name="create-table"></a><span data-ttu-id="df59c-184">创建表</span><span class="sxs-lookup"><span data-stu-id="df59c-184">Create table</span></span>
 
-<span data-ttu-id="eebd7-185">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-185">Request</span></span>
+<span data-ttu-id="df59c-185">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-185">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables/$/add
@@ -418,7 +418,7 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "hasHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-<span data-ttu-id="eebd7-186">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-186">Response</span></span>
+<span data-ttu-id="df59c-186">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-186">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
@@ -435,9 +435,9 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="update-table"></a><span data-ttu-id="eebd7-187">更新表</span><span class="sxs-lookup"><span data-stu-id="eebd7-187">Update table</span></span>
+#### <a name="update-table"></a><span data-ttu-id="df59c-187">更新表</span><span class="sxs-lookup"><span data-stu-id="df59c-187">Update table</span></span>
 
-<span data-ttu-id="eebd7-188">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-188">Request</span></span>
+<span data-ttu-id="df59c-188">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-188">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http 
 PATCH /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')
@@ -448,7 +448,7 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "showHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-<span data-ttu-id="eebd7-189">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-189">Response</span></span>
+<span data-ttu-id="df59c-189">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-189">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
@@ -465,8 +465,8 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="get-list-of-table-rows"></a><span data-ttu-id="eebd7-190">获取表行列表</span><span class="sxs-lookup"><span data-stu-id="eebd7-190">Get list of table rows</span></span>
-<span data-ttu-id="eebd7-191">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-191">Request</span></span> 
+#### <a name="get-list-of-table-rows"></a><span data-ttu-id="df59c-190">获取表行列表</span><span class="sxs-lookup"><span data-stu-id="df59c-190">Get list of table rows</span></span>
+<span data-ttu-id="df59c-191">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-191">Request</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -475,7 +475,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="eebd7-192">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-192">Response</span></span>
+<span data-ttu-id="df59c-192">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-192">Response</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -555,9 +555,9 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="get-list-of-table-columns"></a><span data-ttu-id="eebd7-193">获取表列列表</span><span class="sxs-lookup"><span data-stu-id="eebd7-193">Get list of table columns</span></span>
+#### <a name="get-list-of-table-columns"></a><span data-ttu-id="df59c-193">获取表列列表</span><span class="sxs-lookup"><span data-stu-id="df59c-193">Get list of table columns</span></span>
 
-<span data-ttu-id="eebd7-194">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-194">Request</span></span>
+<span data-ttu-id="df59c-194">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-194">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns
@@ -565,7 +565,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="eebd7-195">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-195">Response</span></span> 
+<span data-ttu-id="df59c-195">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-195">Response</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -667,9 +667,9 @@ content-type: application/json;odata.metadata
 ```
 
 
-#### <a name="add-a-table-row"></a><span data-ttu-id="eebd7-196">添加表行</span><span class="sxs-lookup"><span data-stu-id="eebd7-196">Add a table row</span></span>
+#### <a name="add-a-table-row"></a><span data-ttu-id="df59c-196">添加表行</span><span class="sxs-lookup"><span data-stu-id="df59c-196">Add a table row</span></span>
 
-<span data-ttu-id="eebd7-197">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-197">Request</span></span>
+<span data-ttu-id="df59c-197">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-197">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows
@@ -680,7 +680,7 @@ workbook-session-id: {session-id}
 { "values": [ [ "Jan-15-2016", "49", "37" ] ], "index": null }
 ```
 
-<span data-ttu-id="eebd7-198">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-198">Response</span></span>
+<span data-ttu-id="df59c-198">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-198">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
@@ -700,9 +700,9 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="add-a-table-column"></a><span data-ttu-id="eebd7-199">添加表列</span><span class="sxs-lookup"><span data-stu-id="eebd7-199">Add a table column</span></span> 
+#### <a name="add-a-table-column"></a><span data-ttu-id="df59c-199">添加表列</span><span class="sxs-lookup"><span data-stu-id="df59c-199">Add a table column</span></span> 
 
-<span data-ttu-id="eebd7-200">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-200">Request</span></span>
+<span data-ttu-id="df59c-200">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-200">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')/Columns
@@ -713,7 +713,7 @@ accept: application/Json
 { "values": [ [ "Status" ], [ "Open" ], [ "Closed" ] ], "index": 2 }
 ```
 
-<span data-ttu-id="eebd7-201">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-201">Response</span></span> 
+<span data-ttu-id="df59c-201">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-201">Response</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http 
@@ -740,9 +740,9 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="delete-table-row"></a><span data-ttu-id="eebd7-202">删除表行</span><span class="sxs-lookup"><span data-stu-id="eebd7-202">Delete table row</span></span>
+#### <a name="delete-table-row"></a><span data-ttu-id="df59c-202">删除表行</span><span class="sxs-lookup"><span data-stu-id="df59c-202">Delete table row</span></span>
 
-<span data-ttu-id="eebd7-203">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-203">Request</span></span>
+<span data-ttu-id="df59c-203">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-203">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http  
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows/$/ItemAt(index=6)
@@ -750,14 +750,14 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="eebd7-204">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-204">Response</span></span>
+<span data-ttu-id="df59c-204">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-204">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
-#### <a name="delete-table-column"></a><span data-ttu-id="eebd7-205">删除表列</span><span class="sxs-lookup"><span data-stu-id="eebd7-205">Delete table column</span></span> 
-<span data-ttu-id="eebd7-206">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-206">Request</span></span>
+#### <a name="delete-table-column"></a><span data-ttu-id="df59c-205">删除表列</span><span class="sxs-lookup"><span data-stu-id="df59c-205">Delete table column</span></span> 
+<span data-ttu-id="df59c-206">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-206">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns('3')
@@ -765,14 +765,14 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="eebd7-207">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-207">Response</span></span>
+<span data-ttu-id="df59c-207">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-207">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
-#### <a name="convert-table-to-range"></a><span data-ttu-id="eebd7-208">将表转换为区域</span><span class="sxs-lookup"><span data-stu-id="eebd7-208">Convert table to range</span></span> 
-<span data-ttu-id="eebd7-209">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-209">Request</span></span>
+#### <a name="convert-table-to-range"></a><span data-ttu-id="df59c-208">将表转换为区域</span><span class="sxs-lookup"><span data-stu-id="df59c-208">Convert table to range</span></span> 
+<span data-ttu-id="df59c-209">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-209">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('1')/convertToRange
@@ -780,15 +780,15 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="eebd7-210">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-210">Response</span></span>
+<span data-ttu-id="df59c-210">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-210">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK 
 content-type: application/json;odata.metadata 
 ```
 
-#### <a name="table-sort"></a><span data-ttu-id="eebd7-211">表排序</span><span class="sxs-lookup"><span data-stu-id="eebd7-211">Table sort</span></span>
-<span data-ttu-id="eebd7-212">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-212">Request</span></span>
+#### <a name="table-sort"></a><span data-ttu-id="df59c-211">表排序</span><span class="sxs-lookup"><span data-stu-id="df59c-211">Table sort</span></span>
+<span data-ttu-id="df59c-212">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-212">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/sort/apply
@@ -805,14 +805,14 @@ workbook-session-id: {session-id}
 ```
 
 
-<span data-ttu-id="eebd7-213">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-213">Response</span></span>
+<span data-ttu-id="df59c-213">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-213">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
-#### <a name="table-filter"></a><span data-ttu-id="eebd7-214">表筛选器</span><span class="sxs-lookup"><span data-stu-id="eebd7-214">Table filter</span></span>
-<span data-ttu-id="eebd7-215">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-215">Request</span></span>
+#### <a name="table-filter"></a><span data-ttu-id="df59c-214">表筛选器</span><span class="sxs-lookup"><span data-stu-id="df59c-214">Table filter</span></span>
+<span data-ttu-id="df59c-215">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-215">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/apply
@@ -830,15 +830,15 @@ workbook-session-id: {session-id}
 }
 ```
 
-<span data-ttu-id="eebd7-216">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-216">Response</span></span>
+<span data-ttu-id="df59c-216">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-216">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 
-#### <a name="clear-filter"></a><span data-ttu-id="eebd7-217">清除筛选器</span><span class="sxs-lookup"><span data-stu-id="eebd7-217">Clear filter</span></span>
-<span data-ttu-id="eebd7-218">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-218">Request</span></span>
+#### <a name="clear-filter"></a><span data-ttu-id="df59c-217">清除筛选器</span><span class="sxs-lookup"><span data-stu-id="df59c-217">Clear filter</span></span>
+<span data-ttu-id="df59c-218">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-218">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/clear
@@ -846,17 +846,17 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="eebd7-219">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-219">Response</span></span>
+<span data-ttu-id="df59c-219">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-219">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
-### <a name="range-operations"></a><span data-ttu-id="eebd7-220">区域操作</span><span class="sxs-lookup"><span data-stu-id="eebd7-220">Range operations</span></span>
+### <a name="range-operations"></a><span data-ttu-id="df59c-220">区域操作</span><span class="sxs-lookup"><span data-stu-id="df59c-220">Range operations</span></span>
 
-#### <a name="get-range"></a><span data-ttu-id="eebd7-221">获取区域</span><span class="sxs-lookup"><span data-stu-id="eebd7-221">Get Range</span></span> 
+#### <a name="get-range"></a><span data-ttu-id="df59c-221">获取区域</span><span class="sxs-lookup"><span data-stu-id="df59c-221">Get Range</span></span> 
 
-<span data-ttu-id="eebd7-222">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-222">Request</span></span>
+<span data-ttu-id="df59c-222">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-222">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/worksheets('test')/range(address='A1:B2')
@@ -864,7 +864,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="eebd7-223">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-223">Response</span></span> 
+<span data-ttu-id="df59c-223">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-223">Response</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -958,7 +958,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="range-update"></a><span data-ttu-id="eebd7-224">区域更新</span><span class="sxs-lookup"><span data-stu-id="eebd7-224">Range update</span></span> 
+#### <a name="range-update"></a><span data-ttu-id="df59c-224">区域更新</span><span class="sxs-lookup"><span data-stu-id="df59c-224">Range update</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1061,8 +1061,8 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="range-sort"></a><span data-ttu-id="eebd7-225">区域排序</span><span class="sxs-lookup"><span data-stu-id="eebd7-225">Range sort</span></span>
-<span data-ttu-id="eebd7-226">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-226">Request</span></span>
+#### <a name="range-sort"></a><span data-ttu-id="df59c-225">区域排序</span><span class="sxs-lookup"><span data-stu-id="df59c-225">Range sort</span></span>
+<span data-ttu-id="df59c-226">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-226">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/usedRange/sort/apply
@@ -1078,15 +1078,15 @@ workbook-session-id: {session-id}
 }
 ```
 
-<span data-ttu-id="eebd7-227">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-227">Response</span></span>
+<span data-ttu-id="df59c-227">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-227">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 
-### <a name="named-items"></a><span data-ttu-id="eebd7-228">已命名项目</span><span class="sxs-lookup"><span data-stu-id="eebd7-228">Named items</span></span>
-<span data-ttu-id="eebd7-229">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-229">Request</span></span>
+### <a name="named-items"></a><span data-ttu-id="df59c-228">已命名项目</span><span class="sxs-lookup"><span data-stu-id="df59c-228">Named items</span></span>
+<span data-ttu-id="df59c-229">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-229">Request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1095,7 +1095,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-<span data-ttu-id="eebd7-230">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-230">Response</span></span> 
+<span data-ttu-id="df59c-230">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-230">Response</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http 
@@ -1130,15 +1130,15 @@ content-type: application/json
 }
 ```
 
-### <a name="work-with-nulls"></a><span data-ttu-id="eebd7-231">使用 null</span><span class="sxs-lookup"><span data-stu-id="eebd7-231">Work with nulls</span></span>
+### <a name="work-with-nulls"></a><span data-ttu-id="df59c-231">使用 null</span><span class="sxs-lookup"><span data-stu-id="df59c-231">Work with nulls</span></span>
 
-#### <a name="null-input-in-2-d-array"></a><span data-ttu-id="eebd7-232">二维数组中的 null 输入</span><span class="sxs-lookup"><span data-stu-id="eebd7-232">null input in 2-D array</span></span>
+#### <a name="null-input-in-2-d-array"></a><span data-ttu-id="df59c-232">二维数组中的 null 输入</span><span class="sxs-lookup"><span data-stu-id="df59c-232">null input in 2-D array</span></span>
 
-<span data-ttu-id="eebd7-p111">区域和表资源中将忽略二维数组中的 `null` 输入（对于值、数字格式、公式）。当 `null` 输入在值、值的数字格式或值的公式网格中发送时，不会对预期目标（单元格）进行更新。</span><span class="sxs-lookup"><span data-stu-id="eebd7-p111">`null` input inside a two-dimensional array (for values, number-format, formula) is ignored in the Range and Table resources. No update will take place to the intended target (cell) when `null` input is sent in values or number-format or formula grid of values.</span></span>
+<span data-ttu-id="df59c-p111">区域和表资源中将忽略二维数组中的 `null` 输入（对于值、数字格式、公式）。当 `null` 输入在值、值的数字格式或值的公式网格中发送时，不会对预期目标（单元格）进行更新。</span><span class="sxs-lookup"><span data-stu-id="df59c-p111">`null` input inside a two-dimensional array (for values, number-format, formula) is ignored in the Range and Table resources. No update will take place to the intended target (cell) when `null` input is sent in values or number-format or formula grid of values.</span></span>
 
-<span data-ttu-id="eebd7-235">例如，要仅更新区域的特定部分（例如某些单元格的数字格式）并保留区域其他部分的现有数字格式，请根据需要设置数字格式并对其他单元格发送 `null`。</span><span class="sxs-lookup"><span data-stu-id="eebd7-235">For example, to only update specific parts of the Range, such as a cell's Number Format, and to retain the existing number-format on other parts of the Range, set the Number Format where needed and send `null` for the other cells.</span></span>
+<span data-ttu-id="df59c-235">例如，要仅更新区域的特定部分（例如某些单元格的数字格式）并保留区域其他部分的现有数字格式，请根据需要设置数字格式并对其他单元格发送 `null`。</span><span class="sxs-lookup"><span data-stu-id="df59c-235">For example, to only update specific parts of the Range, such as a cell's Number Format, and to retain the existing number-format on other parts of the Range, set the Number Format where needed and send `null` for the other cells.</span></span>
 
-<span data-ttu-id="eebd7-236">在以下设置请求中，仅会设置区域数字格式的某些部分，同时保留其余部分的现有数字格式（通过传递 null）。</span><span class="sxs-lookup"><span data-stu-id="eebd7-236">In the following set request, only some parts of the Range Number Format are set while the existing Number Format on the remaining part is retained (by passing nulls).</span></span>
+<span data-ttu-id="df59c-236">在以下设置请求中，仅会设置区域数字格式的某些部分，同时保留其余部分的现有数字格式（通过传递 null）。</span><span class="sxs-lookup"><span data-stu-id="df59c-236">In the following set request, only some parts of the Range Number Format are set while the existing Number Format on the remaining part is retained (by passing nulls).</span></span>
 
 ```json
 {
@@ -1147,9 +1147,9 @@ content-type: application/json
 }
 ```
 
-#### <a name="null-input-for-a-property"></a><span data-ttu-id="eebd7-237">属性的 null 输入</span><span class="sxs-lookup"><span data-stu-id="eebd7-237">null input for a property</span></span>
+#### <a name="null-input-for-a-property"></a><span data-ttu-id="df59c-237">属性的 null 输入</span><span class="sxs-lookup"><span data-stu-id="df59c-237">null input for a property</span></span>
 
-<span data-ttu-id="eebd7-p112">`null` 并非整个属性的有效的单个输入。例如，以下输入无效，因为整个值不能设置为 null，也不能忽略。</span><span class="sxs-lookup"><span data-stu-id="eebd7-p112">`null` is not a valid single input for the entire property. For example, the following is not valid because the entire values cannot be set to null or ignored.</span></span>
+<span data-ttu-id="df59c-p112">`null` 并非整个属性的有效的单个输入。例如，以下输入无效，因为整个值不能设置为 null，也不能忽略。</span><span class="sxs-lookup"><span data-stu-id="df59c-p112">`null` is not a valid single input for the entire property. For example, the following is not valid because the entire values cannot be set to null or ignored.</span></span>
 
 ```json
 {
@@ -1158,7 +1158,7 @@ content-type: application/json
 
 ```
 
-<span data-ttu-id="eebd7-240">以下输入无效，因为 null 不是有效的颜色值。</span><span class="sxs-lookup"><span data-stu-id="eebd7-240">The following is not valid either as null is not a valid color value.</span></span>
+<span data-ttu-id="df59c-240">以下输入无效，因为 null 不是有效的颜色值。</span><span class="sxs-lookup"><span data-stu-id="df59c-240">The following is not valid either as null is not a valid color value.</span></span>
 
 ```json
 {
@@ -1166,11 +1166,11 @@ content-type: application/json
 }
 ```
 
-#### <a name="null-response"></a><span data-ttu-id="eebd7-241">Null 响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-241">Null-Response</span></span>
+#### <a name="null-response"></a><span data-ttu-id="df59c-241">Null 响应</span><span class="sxs-lookup"><span data-stu-id="df59c-241">Null-Response</span></span>
 
-<span data-ttu-id="eebd7-242">由不一致的值组成的格式属性的表示形式将导致在响应中返回 null 值。</span><span class="sxs-lookup"><span data-stu-id="eebd7-242">Representation of formatting properties that consists of non-uniform values results in the return of a null value in the response.</span></span>
+<span data-ttu-id="df59c-242">由不一致的值组成的格式属性的表示形式将导致在响应中返回 null 值。</span><span class="sxs-lookup"><span data-stu-id="df59c-242">Representation of formatting properties that consists of non-uniform values results in the return of a null value in the response.</span></span>
 
-<span data-ttu-id="eebd7-p113">例如，区域可以由一个或多个单元格组成。如果指定区域中包含的单个单元格不具有一致的格式值，则不会定义区域级别表示形式。</span><span class="sxs-lookup"><span data-stu-id="eebd7-p113">For example, a Range can consist of one or more cells. In cases where the individual cells contained in the Range specified don't have uniform formatting values, the range level representation will be undefined.</span></span>
+<span data-ttu-id="df59c-p113">例如，区域可以由一个或多个单元格组成。如果指定区域中包含的单个单元格不具有一致的格式值，则不会定义区域级别表示形式。</span><span class="sxs-lookup"><span data-stu-id="df59c-p113">For example, a Range can consist of one or more cells. In cases where the individual cells contained in the Range specified don't have uniform formatting values, the range level representation will be undefined.</span></span>
 
 ```json
 {
@@ -1179,24 +1179,24 @@ content-type: application/json
 }
 ```
 
-<span data-ttu-id="eebd7-245">在以下情况下，也会返回 null 值：</span><span class="sxs-lookup"><span data-stu-id="eebd7-245">A null value is also returned in the response in the following cases:</span></span>
-- <span data-ttu-id="eebd7-246">如果在尝试获取对象的特定属性时发生错误并且此属性可设置为 null，则该属性可能会返回 null 值。</span><span class="sxs-lookup"><span data-stu-id="eebd7-246">If an error occurs when trying to get a certain property of an object and this property can be set as a null, the property might return a null value in the response.</span></span>
-- <span data-ttu-id="eebd7-247">对于 range 对象，在获取整行或整列的区域时，某些属性可能会返回 null。</span><span class="sxs-lookup"><span data-stu-id="eebd7-247">For a range object, when getting a range for entire row or entire column, some properties might return null as the response.</span></span> <span data-ttu-id="eebd7-248">如果区域大小超过了上限（5M 单元格），则某些属性将返回 null 值。</span><span class="sxs-lookup"><span data-stu-id="eebd7-248">If the range size exceeds the upper limitation (5M cells), some properties will return null as the value.</span></span>
+<span data-ttu-id="df59c-245">在以下情况下，也会返回 null 值：</span><span class="sxs-lookup"><span data-stu-id="df59c-245">A null value is also returned in the response in the following cases:</span></span>
+- <span data-ttu-id="df59c-246">如果在尝试获取对象的特定属性时发生错误并且此属性可设置为 null，则该属性可能会返回 null 值。</span><span class="sxs-lookup"><span data-stu-id="df59c-246">If an error occurs when trying to get a certain property of an object and this property can be set as a null, the property might return a null value in the response.</span></span>
+- <span data-ttu-id="df59c-247">对于 range 对象，在获取整行或整列的区域时，某些属性可能会返回 null。</span><span class="sxs-lookup"><span data-stu-id="df59c-247">For a range object, when getting a range for entire row or entire column, some properties might return null as the response.</span></span> <span data-ttu-id="df59c-248">如果区域大小超过了上限（5M 单元格），则某些属性将返回 null 值。</span><span class="sxs-lookup"><span data-stu-id="df59c-248">If the range size exceeds the upper limitation (5M cells), some properties will return null as the value.</span></span>
 
-### <a name="blank-input-and-output"></a><span data-ttu-id="eebd7-249">空白输入和输出</span><span class="sxs-lookup"><span data-stu-id="eebd7-249">Blank input and output</span></span>
+### <a name="blank-input-and-output"></a><span data-ttu-id="df59c-249">空白输入和输出</span><span class="sxs-lookup"><span data-stu-id="df59c-249">Blank input and output</span></span>
 
-<span data-ttu-id="eebd7-p115">更新请求中的空白值视为清除或重置相应属性的指令。空白值表示为两个双引号，中间没有空格：`""`。</span><span class="sxs-lookup"><span data-stu-id="eebd7-p115">Blank values in update requests are treated as an instruction to clear or reset the respective property. A blank value is represented by two double quotation marks with no space in-between: `""`</span></span>
+<span data-ttu-id="df59c-p115">更新请求中的空白值视为清除或重置相应属性的指令。空白值表示为两个双引号，中间没有空格：`""`。</span><span class="sxs-lookup"><span data-stu-id="df59c-p115">Blank values in update requests are treated as an instruction to clear or reset the respective property. A blank value is represented by two double quotation marks with no space in-between: `""`</span></span>
 
-<span data-ttu-id="eebd7-252">示例：</span><span class="sxs-lookup"><span data-stu-id="eebd7-252">Examples:</span></span>
+<span data-ttu-id="df59c-252">示例：</span><span class="sxs-lookup"><span data-stu-id="df59c-252">Examples:</span></span>
 
-* <span data-ttu-id="eebd7-253">对于 `values`，将清除区域值。这与清除应用程序中的内容相同。</span><span class="sxs-lookup"><span data-stu-id="eebd7-253">For `values`, the range value is cleared out. This is the same as clearing the contents in the application.</span></span>
+* <span data-ttu-id="df59c-253">对于 `values`，将清除区域值。这与清除应用程序中的内容相同。</span><span class="sxs-lookup"><span data-stu-id="df59c-253">For `values`, the range value is cleared out. This is the same as clearing the contents in the application.</span></span>
 
-* <span data-ttu-id="eebd7-254">对于 `numberFormat`，数字格式设置为 `General`。</span><span class="sxs-lookup"><span data-stu-id="eebd7-254">For `numberFormat`, the number format is set to `General`.</span></span>
+* <span data-ttu-id="df59c-254">对于 `numberFormat`，数字格式设置为 `General`。</span><span class="sxs-lookup"><span data-stu-id="df59c-254">For `numberFormat`, the number format is set to `General`.</span></span>
 
-* <span data-ttu-id="eebd7-255">对于 `formula` 和 `formulaLocale`，将清除公式值。</span><span class="sxs-lookup"><span data-stu-id="eebd7-255">For `formula` and `formulaLocale`, the formula values are cleared.</span></span>
+* <span data-ttu-id="df59c-255">对于 `formula` 和 `formulaLocale`，将清除公式值。</span><span class="sxs-lookup"><span data-stu-id="df59c-255">For `formula` and `formulaLocale`, the formula values are cleared.</span></span>
 
 
-<span data-ttu-id="eebd7-p116">对于读取操作，预计单元格内容为空时会收到空白值。如果单元格不包含数据或值，该 API 将返回空白值。空白值表示为两个双引号，中间没有空格：`""`。</span><span class="sxs-lookup"><span data-stu-id="eebd7-p116">For read operations, expect to receive blank values if the contents of the cells are blanks. If the cell contains no data or value, the API returns a blank value. Blank value is represented by two double quotation marks with no space in-between: `""`</span></span>
+<span data-ttu-id="df59c-p116">对于读取操作，预计单元格内容为空时会收到空白值。如果单元格不包含数据或值，该 API 将返回空白值。空白值表示为两个双引号，中间没有空格：`""`。</span><span class="sxs-lookup"><span data-stu-id="df59c-p116">For read operations, expect to receive blank values if the contents of the cells are blanks. If the cell contains no data or value, the API returns a blank value. Blank value is represented by two double quotation marks with no space in-between: `""`</span></span>
 
 ```json
 {
@@ -1211,22 +1211,22 @@ content-type: application/json
 ```
 
 
-### <a name="unbounded-range"></a><span data-ttu-id="eebd7-259">无限区域</span><span class="sxs-lookup"><span data-stu-id="eebd7-259">Unbounded Range</span></span>
+### <a name="unbounded-range"></a><span data-ttu-id="df59c-259">无限区域</span><span class="sxs-lookup"><span data-stu-id="df59c-259">Unbounded Range</span></span>
 
-#### <a name="read"></a><span data-ttu-id="eebd7-260">读取</span><span class="sxs-lookup"><span data-stu-id="eebd7-260">Read</span></span>
+#### <a name="read"></a><span data-ttu-id="df59c-260">读取</span><span class="sxs-lookup"><span data-stu-id="df59c-260">Read</span></span>
 
-<span data-ttu-id="eebd7-261">无限区域地址仅包含列或行标识符和未指定的行标识符或列标识符（分别），例如：</span><span class="sxs-lookup"><span data-stu-id="eebd7-261">Unbounded Range address contains only column or row identifiers and unspecified row identifier or column identifiers (respectively), such as:</span></span>
+<span data-ttu-id="df59c-261">无限区域地址仅包含列或行标识符和未指定的行标识符或列标识符（分别），例如：</span><span class="sxs-lookup"><span data-stu-id="df59c-261">Unbounded Range address contains only column or row identifiers and unspecified row identifier or column identifiers (respectively), such as:</span></span>
 
-* <span data-ttu-id="eebd7-262">`C:C`、`A:F`、`A:XFD`（包含未指定的行）</span><span class="sxs-lookup"><span data-stu-id="eebd7-262">`C:C`, `A:F`, `A:XFD` (contains unspecified rows)</span></span>
-* <span data-ttu-id="eebd7-263">`2:2`、`1:4`、`1:1048546`（包含未指定的列）</span><span class="sxs-lookup"><span data-stu-id="eebd7-263">`2:2`, `1:4`, `1:1048546` (contains unspecified columns)</span></span>
+* <span data-ttu-id="df59c-262">`C:C`、`A:F`、`A:XFD`（包含未指定的行）</span><span class="sxs-lookup"><span data-stu-id="df59c-262">`C:C`, `A:F`, `A:XFD` (contains unspecified rows)</span></span>
+* <span data-ttu-id="df59c-263">`2:2`、`1:4`、`1:1048546`（包含未指定的列）</span><span class="sxs-lookup"><span data-stu-id="df59c-263">`2:2`, `1:4`, `1:1048546` (contains unspecified columns)</span></span>
 
-<span data-ttu-id="eebd7-p117">当 API 发出检索无限区域 (`getRange('C:C')`) 的请求时，返回的响应包含单元格级别属性的 `null`例如 `values`、`text`、`numberFormat` 或 `formula`。其他区域属性（例如 `address` 或 `cellCount`）将反映无限区域。</span><span class="sxs-lookup"><span data-stu-id="eebd7-p117">When the API makes a request to retrieve an unbounded Range (`getRange('C:C')`), the response returned contains `null` for cell-level properties such as `values`, `text`, `numberFormat`, or `formula`. Other Range properties such as `address` or `cellCount` will reflect the unbounded range.</span></span>
+<span data-ttu-id="df59c-p117">当 API 发出检索无限区域 (`getRange('C:C')`) 的请求时，返回的响应包含单元格级别属性的 `null`例如 `values`、`text`、`numberFormat` 或 `formula`。其他区域属性（例如 `address` 或 `cellCount`）将反映无限区域。</span><span class="sxs-lookup"><span data-stu-id="df59c-p117">When the API makes a request to retrieve an unbounded Range (`getRange('C:C')`), the response returned contains `null` for cell-level properties such as `values`, `text`, `numberFormat`, or `formula`. Other Range properties such as `address` or `cellCount` will reflect the unbounded range.</span></span>
 
-#### <a name="write"></a><span data-ttu-id="eebd7-266">写入</span><span class="sxs-lookup"><span data-stu-id="eebd7-266">Write</span></span>
+#### <a name="write"></a><span data-ttu-id="df59c-266">写入</span><span class="sxs-lookup"><span data-stu-id="df59c-266">Write</span></span>
 
-<span data-ttu-id="eebd7-267">**不允许**在无限区域上设置单元格级别属性（例如值、numberFormat 等），因为输入请求可能过大而无法处理。</span><span class="sxs-lookup"><span data-stu-id="eebd7-267">Setting cell level properties (such as values, numberFormat, etc.) on unbounded Range is **not allowed** because the input request might be too large to handle.</span></span>
+<span data-ttu-id="df59c-267">**不允许**在无限区域上设置单元格级别属性（例如值、numberFormat 等），因为输入请求可能过大而无法处理。</span><span class="sxs-lookup"><span data-stu-id="df59c-267">Setting cell level properties (such as values, numberFormat, etc.) on unbounded Range is **not allowed** because the input request might be too large to handle.</span></span>
 
-<span data-ttu-id="eebd7-268">例如，下面不是一个有效的更新请求，因为所请求的区域是无限的。</span><span class="sxs-lookup"><span data-stu-id="eebd7-268">For example, the following is not a valid update request because the requested range is unbounded.</span></span>
+<span data-ttu-id="df59c-268">例如，下面不是一个有效的更新请求，因为所请求的区域是无限的。</span><span class="sxs-lookup"><span data-stu-id="df59c-268">For example, the following is not a valid update request because the requested range is unbounded.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1237,25 +1237,25 @@ PATCH /workbook/worksheets('Sheet1')/range(address="A:B")
 }
 ```
 
-<span data-ttu-id="eebd7-269">当尝试对此类区域执行更新操作时，API 将返回错误。</span><span class="sxs-lookup"><span data-stu-id="eebd7-269">When an update operation is attempted on such a Range, the API will return an error.</span></span>
+<span data-ttu-id="df59c-269">当尝试对此类区域执行更新操作时，API 将返回错误。</span><span class="sxs-lookup"><span data-stu-id="df59c-269">When an update operation is attempted on such a Range, the API will return an error.</span></span>
 
 
-### <a name="large-range"></a><span data-ttu-id="eebd7-270">大区域</span><span class="sxs-lookup"><span data-stu-id="eebd7-270">Large Range</span></span>
+### <a name="large-range"></a><span data-ttu-id="df59c-270">大区域</span><span class="sxs-lookup"><span data-stu-id="df59c-270">Large Range</span></span>
 
-<span data-ttu-id="eebd7-p118">大区域意味着区域大小对于单个 API 调用来说过大。区域中包含的很多因素（例如单元格数量、值、numberFormat 和公式）都会使响应过大，而不适合于 API 交互。API 努力尝试返回或写入到请求的数据。但是，由于资源利用率较高，涉及的大尺寸可能会导致 API 错误的情况。</span><span class="sxs-lookup"><span data-stu-id="eebd7-p118">Large Range implies a Range of a size that is too large for a single API call. Many factors such as number of cells, values, numberFormat, and formulas contained in the range can make the response so large that it becomes unsuitable for API interaction. The API makes a best attempt to return or write to the requested data. However, the large size involved might result in an API error condition because of the large resource utilization.</span></span>
+<span data-ttu-id="df59c-p118">大区域意味着区域大小对于单个 API 调用来说过大。区域中包含的很多因素（例如单元格数量、值、numberFormat 和公式）都会使响应过大，而不适合于 API 交互。API 努力尝试返回或写入到请求的数据。但是，由于资源利用率较高，涉及的大尺寸可能会导致 API 错误的情况。</span><span class="sxs-lookup"><span data-stu-id="df59c-p118">Large Range implies a Range of a size that is too large for a single API call. Many factors such as number of cells, values, numberFormat, and formulas contained in the range can make the response so large that it becomes unsuitable for API interaction. The API makes a best attempt to return or write to the requested data. However, the large size involved might result in an API error condition because of the large resource utilization.</span></span>
 
-<span data-ttu-id="eebd7-275">为了避免出现这种情况，建议以多个较小的区域大小对大区域执行读取或写入。</span><span class="sxs-lookup"><span data-stu-id="eebd7-275">To avoid this, we recommend that you read or write for large Range in multiple smaller range sizes.</span></span>
+<span data-ttu-id="df59c-275">为了避免出现这种情况，建议以多个较小的区域大小对大区域执行读取或写入。</span><span class="sxs-lookup"><span data-stu-id="df59c-275">To avoid this, we recommend that you read or write for large Range in multiple smaller range sizes.</span></span>
 
 
-### <a name="single-input-copy"></a><span data-ttu-id="eebd7-276">单个输入副本</span><span class="sxs-lookup"><span data-stu-id="eebd7-276">Single input copy</span></span>
+### <a name="single-input-copy"></a><span data-ttu-id="df59c-276">单个输入副本</span><span class="sxs-lookup"><span data-stu-id="df59c-276">Single input copy</span></span>
 
-<span data-ttu-id="eebd7-p119">为了支持使用相同的值或数字格式更新区域或在整个区域应用相同的公式，在一组 API 中使用以下约定。在 Excel 中，此行为与在 CTRL+Enter 模式下将值或公式输入到区域中相似。</span><span class="sxs-lookup"><span data-stu-id="eebd7-p119">To support updating a range with the same values or number-format or applying same formula across a range, the following convention is used in the set API. In Excel, this behavior is similar to inputting values or formulas to a range in the CTRL+Enter mode.</span></span>
+<span data-ttu-id="df59c-p119">为了支持使用相同的值或数字格式更新区域或在整个区域应用相同的公式，在一组 API 中使用以下约定。在 Excel 中，此行为与在 CTRL+Enter 模式下将值或公式输入到区域中相似。</span><span class="sxs-lookup"><span data-stu-id="df59c-p119">To support updating a range with the same values or number-format or applying same formula across a range, the following convention is used in the set API. In Excel, this behavior is similar to inputting values or formulas to a range in the CTRL+Enter mode.</span></span>
 
-<span data-ttu-id="eebd7-279">API 将查找*单个单元格值*，如果目标区域尺寸与输入区域尺寸不符，它将在 CTRL+Enter 模式下，使用请求中提供的值或公式更新整个区域。</span><span class="sxs-lookup"><span data-stu-id="eebd7-279">The API will look for a *single cell value* and, if the target range dimension doesn't match the input range dimension, it will apply the update to the entire range in the CTRL+Enter model with the value or formula provided in the request.</span></span>
+<span data-ttu-id="df59c-279">API 将查找*单个单元格值*，如果目标区域尺寸与输入区域尺寸不符，它将在 CTRL+Enter 模式下，使用请求中提供的值或公式更新整个区域。</span><span class="sxs-lookup"><span data-stu-id="df59c-279">The API will look for a *single cell value* and, if the target range dimension doesn't match the input range dimension, it will apply the update to the entire range in the CTRL+Enter model with the value or formula provided in the request.</span></span>
 
-#### <a name="examples"></a><span data-ttu-id="eebd7-280">示例</span><span class="sxs-lookup"><span data-stu-id="eebd7-280">Examples</span></span>
+#### <a name="examples"></a><span data-ttu-id="df59c-280">示例</span><span class="sxs-lookup"><span data-stu-id="df59c-280">Examples</span></span>
 
-<span data-ttu-id="eebd7-p120">以下请求使用“Sample text”文本更新选定的区域。请注意，区域包含 200 个单元格，而提供的输入仅包含 1 个单元格值。</span><span class="sxs-lookup"><span data-stu-id="eebd7-p120">The following request updates the selected range with the text of "Sample text". Note that Range has 200 cells, whereas the provided input only has 1 cell value.</span></span>
+<span data-ttu-id="df59c-p120">以下请求使用“Sample text”文本更新选定的区域。请注意，区域包含 200 个单元格，而提供的输入仅包含 1 个单元格值。</span><span class="sxs-lookup"><span data-stu-id="df59c-p120">The following request updates the selected range with the text of "Sample text". Note that Range has 200 cells, whereas the provided input only has 1 cell value.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1266,12 +1266,12 @@ PATCH /workbook/worksheets('Sheet1')/range(address="A1:B00")
 }
 ```
 
-### <a name="workbook-functions"></a><span data-ttu-id="eebd7-283">工作簿函数</span><span class="sxs-lookup"><span data-stu-id="eebd7-283">Workbook functions</span></span> 
-<span data-ttu-id="eebd7-284">可以通过 /Functions 资源中包含的函数集合访问工作簿函数。</span><span class="sxs-lookup"><span data-stu-id="eebd7-284">You can access the workbook functions through a collection of functions included in the /Functions resource.</span></span> 
+### <a name="workbook-functions"></a><span data-ttu-id="df59c-283">工作簿函数</span><span class="sxs-lookup"><span data-stu-id="df59c-283">Workbook functions</span></span> 
+<span data-ttu-id="df59c-284">可以通过 /Functions 资源中包含的函数集合访问工作簿函数。</span><span class="sxs-lookup"><span data-stu-id="df59c-284">You can access the workbook functions through a collection of functions included in the /Functions resource.</span></span> 
 
 <!-- LG: Where is the Functions resource? We should link to this.
 -->
-##### <a name="request"></a><span data-ttu-id="eebd7-285">请求</span><span class="sxs-lookup"><span data-stu-id="eebd7-285">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="df59c-285">请求</span><span class="sxs-lookup"><span data-stu-id="df59c-285">Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/pmt
@@ -1287,7 +1287,7 @@ workbook-session-id: {session-id}
 ```
 
 
-##### <a name="response"></a><span data-ttu-id="eebd7-286">响应</span><span class="sxs-lookup"><span data-stu-id="eebd7-286">Response</span></span> 
+##### <a name="response"></a><span data-ttu-id="df59c-286">响应</span><span class="sxs-lookup"><span data-stu-id="df59c-286">Response</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http 
@@ -1303,11 +1303,11 @@ content-type: application/json
 }
 ```
 
-## <a name="error-information"></a><span data-ttu-id="eebd7-287">错误信息</span><span class="sxs-lookup"><span data-stu-id="eebd7-287">Error information</span></span> 
+## <a name="error-information"></a><span data-ttu-id="df59c-287">错误信息</span><span class="sxs-lookup"><span data-stu-id="df59c-287">Error information</span></span> 
 
-<span data-ttu-id="eebd7-p121">返回错误，其中包括 HTTP 错误代码和错误对象。错误 `code` 和 `message` 解释了导致错误的原因。</span><span class="sxs-lookup"><span data-stu-id="eebd7-p121">Errors are returned with an HTTP error code and an error object. An error `code` and `message` explain the reason for the error.</span></span>
+<span data-ttu-id="df59c-p121">返回错误，其中包括 HTTP 错误代码和错误对象。错误 `code` 和 `message` 解释了导致错误的原因。</span><span class="sxs-lookup"><span data-stu-id="df59c-p121">Errors are returned with an HTTP error code and an error object. An error `code` and `message` explain the reason for the error.</span></span>
  
-<span data-ttu-id="eebd7-290">示例如下。</span><span class="sxs-lookup"><span data-stu-id="eebd7-290">The following is an example.</span></span>
+<span data-ttu-id="df59c-290">示例如下。</span><span class="sxs-lookup"><span data-stu-id="df59c-290">The following is an example.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -1326,5 +1326,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="whats-new"></a><span data-ttu-id="eebd7-291">最近更新</span><span class="sxs-lookup"><span data-stu-id="eebd7-291">What's new</span></span>
-<span data-ttu-id="eebd7-292">查找有关此 API 集的[最新新功能和更新](/graph/whats-new-overview)。</span><span class="sxs-lookup"><span data-stu-id="eebd7-292">Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.</span></span>
+## <a name="whats-new"></a><span data-ttu-id="df59c-291">最近更新</span><span class="sxs-lookup"><span data-stu-id="df59c-291">What's new</span></span>
+<span data-ttu-id="df59c-292">了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。</span><span class="sxs-lookup"><span data-stu-id="df59c-292">Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.</span></span>
+
+
