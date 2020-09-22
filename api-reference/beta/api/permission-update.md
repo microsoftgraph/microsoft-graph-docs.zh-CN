@@ -6,16 +6,16 @@ title: 更改共享权限
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 3c5d0f45db2cf73c53adfd697840c2eb55c4c8c6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 397894f75203d58782a40e20d236b7cc6478eb46
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455943"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040306"
 ---
 # <a name="update-sharing-permission"></a>更新共享权限
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -132,3 +132,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

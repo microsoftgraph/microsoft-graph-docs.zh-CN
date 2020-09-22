@@ -3,35 +3,35 @@ title: windowsKioskDesktopApp 资源类型
 description: 一类应用程序的基类
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: af8e97b8b1aac3fcee5592da78b96bc2ccfd5143
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 145cc54d3d04a3a703ad65f5ee91a71df7bb63ab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463462"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039781"
 ---
 # <a name="windowskioskdesktopapp-resource-type"></a>windowsKioskDesktopApp 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 一类应用程序的基类
 
 
-继承自[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)
+继承自 [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|从[WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的启动布局的应用程序磁贴大小。 可取值为：`hidden`、`small`、`medium`、`wide`、`large`。|
+|startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|从 [WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的启动布局的应用程序磁贴大小。 可取值为：`hidden`、`small`、`medium`、`wide`、`large`。|
 |name|String|表示从[WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的应用程序的友好名称|
-|appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|从[WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的应用程序类型。 可取值为：`unknown`、`store`、`desktop`、`aumId`。|
-|autoLaunch|布尔值|允许在从[WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的多应用程序展台模式中自动启动应用程序|
+|appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|从 [WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的应用程序类型。 可取值为：`unknown`、`store`、`desktop`、`aumId`。|
+|autoLaunch|Boolean|允许在从[WindowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的多应用程序展台模式中自动启动应用程序|
 |路径|String|定义桌面应用程序的路径|
 |desktopApplicationId|String|定义应用程序的 DesktopApplicationID|
 |desktopApplicationLinkPath|String|定义应用程序的 DesktopApplicationLinkPath|
@@ -58,6 +58,9 @@ ms.locfileid: "43463462"
   "desktopApplicationLinkPath": "String"
 }
 ```
+
+
+
 
 
 

@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: d05b30dbbb5ecb6aa8a1934a5fe2a1b35cbe890b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a2102a77748ebef8267792a887a522fa716619ab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502856"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040038"
 ---
 # <a name="vendors-resource-type"></a>供应商资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "42502856"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|GUID|供应商的唯一 ID。 不可编辑。|
-|number|string|供应商编号。|
+|数字|string|供应商编号。|
 |displayName|string|供应商的显示名称。|
 |address|[翻.省略](../resources/dynamics-complextypes.md)|供应商的地址。|
 |phoneNumber|string|供应商的电话号码。|
@@ -82,4 +82,6 @@ ms.locfileid: "42502856"
 }
 
 ```
+
+
 

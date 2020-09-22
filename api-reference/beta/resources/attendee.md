@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: harini84
-ms.openlocfilehash: f08734a9ec03c5e7e95a00abc5c95a9c968fa81c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ec43db868c2934d569bf62e8e808d755b9d2cffc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472317"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040166"
 ---
 # <a name="attendee-resource-type"></a>与会者资源类型
 
@@ -65,3 +65,5 @@ ms.locfileid: "43472317"
   "suppressions": []
 }
 -->
+
+

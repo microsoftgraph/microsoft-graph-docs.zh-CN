@@ -5,16 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a26728fb39fccd1512a559638c595551a20c0042
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4a6e92f2c31a5972528fefdea68a4fa8a61677da
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508176"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040177"
 ---
 # <a name="assignmentreviewsettings-resource-type"></a>assignmentReviewSettings 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,11 +27,11 @@ ms.locfileid: "42508176"
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
 | isEnabled| Boolean | 如果为 true，则此策略中的工作分配需要进行访问检查。 |
-| recurrenceType | String | 定期的间隔，例如`monthly`或。 `quarterly` |
-| reviewerType | String | 应要求谁是`Self`或`Reviewers`，由谁来进行审阅。 |
+| recurrenceType | String | 定期的间隔，例如 `monthly` 或 `quarterly` 。 |
+| reviewerType | String | 应要求谁是或，由谁来进行 `Self` 审阅 `Reviewers` 。 |
 | startDateTime | DateTimeOffset | 第一次审阅应开始时。 |
 | durationInDays | Int32 | 允许来自审阅者的输入的天数。|
-| 审批 | [userSet](userset.md)集合 | 如果 reviewerType 是`Reviewers`，则此集合将使用[singleUser](singleuser.md)和[groupMembers](groupmembers.md)的集合指定将成为审阅者的用户（通过 ID 或作为组的成员）。 |
+| 审批 | [userSet](userset.md) 集合 | 如果 reviewerType 是 `Reviewers` ，则此集合将使用 [SingleUser](singleuser.md) 和 [groupMembers](groupmembers.md)的集合指定将成为审阅者的用户（通过 ID 或作为组的成员）。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -68,3 +68,5 @@ ms.locfileid: "42508176"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

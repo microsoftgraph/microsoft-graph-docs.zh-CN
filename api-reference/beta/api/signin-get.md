@@ -5,12 +5,12 @@ description: 获取一个登录对象，其中包含 Azure Active Directory 租�
 localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e1bbdbdc7790bf4310947f9e927f0d0eb44171e8
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 8b2ab1ae6fc7fcae39e77a7a0b8e2ab1a86323ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674552"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040191"
 ---
 # <a name="get-signin"></a>获取 signIn
 
@@ -338,3 +338,5 @@ Content-length: 211
   ]
 }
 ```
+
+

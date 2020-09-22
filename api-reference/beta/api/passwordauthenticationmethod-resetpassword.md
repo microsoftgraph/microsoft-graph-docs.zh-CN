@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d90107b5a54fed5dbc552ed61f93574396725651
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+ms.openlocfilehash: aef4019edc27375418af3f5c4b1630037c50745a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429581"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040334"
 ---
 # <a name="passwordauthenticationmethod-resetpassword"></a>passwordAuthenticationMethod: resetPassword
 
@@ -18,7 +18,7 @@ ms.locfileid: "44429581"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-启动与[密码身份验证方法](../resources/passwordauthenticationmethod.md)对象关联的密码的重置。 这只能由具有相应权限的管理员执行，并且无法在用户自己的帐户上执行。
+启动与 [密码身份验证方法](../resources/passwordauthenticationmethod.md) 对象关联的密码的重置。 这只能由具有相应权限的管理员执行，并且无法在用户自己的帐户上执行。
 
 此流将新密码写入 Azure Active Directory，并将其推送到本地 Active Directory （如果使用密码写回进行配置）。 管理员既可以提供新密码，也可以让系统生成一个新密码。 系统会提示用户在下一次登录时更改其密码。
 
@@ -28,13 +28,13 @@ ms.locfileid: "44429581"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 作用于自助的权限（从最高特权到最高特权） | 对其他用户的权限（从最低到最高特权）|
+| 权限类型                        | 从最高特权到最高特权) 对自己 (的权限 | 对其他人进行操作的权限 (从至少到最高特权) |
 |:---------------------------------------|:-------------------------|:-----------------|
 | 委派（工作或学校帐户）     | 不支持。 | UserAuthenticationMethod |
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| Application                            | 不支持。 | 不支持。 |
+| 应用程序                            | 不支持。 | 不支持。 |
 
-对于在其他用户上执行管理的委派方案，管理员需要[以下角色之一](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 特权身份验证管理员
@@ -205,3 +205,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

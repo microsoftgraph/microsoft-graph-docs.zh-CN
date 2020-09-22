@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b10bef4904d443ca975f5f98834b3b2d1c72a7e7
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: f0610fb376b265a261b8a88ab4181dd89bb9f6c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916814"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040069"
 ---
 # <a name="conditionalaccessdevices-resource-type"></a>conditionalAccessDevices 资源类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "43916814"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| includeDeviceStates | String 集合 | 策略作用域中的状态。 `All`是唯一允许的值。 |
-| excludeDeviceStates | String 集合 | 策略作用域中排除的状态。 可能的值`Compliant`： `DomainJoined`、。 |
+| includeDeviceStates | String 集合 | 策略作用域中的状态。 `All` 是唯一允许的值。 |
+| excludeDeviceStates | String 集合 | 策略作用域中排除的状态。 可能的值： `Compliant` 、 `DomainJoined` 。 |
 
 ## <a name="relationships"></a>关系
 
@@ -61,3 +61,5 @@ ms.locfileid: "43916814"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6e971c8b608ad5e42c225cea2aa5da0ad06cedbc
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 21030399181247cc46edb7119c1d9b9ac067f184
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843259"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040481"
 ---
 # <a name="update-onlinemeeting"></a>更新 onlineMeeting
 
@@ -29,7 +29,7 @@ ms.locfileid: "47843259"
 | 应用程序                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \* 管理员必须创建 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy.md) ，并向用户授予该策略中配置的应用程序，以便代表该用户更新联机会议 (用户 ID 在请求路径) 中指定。
+> \* 管理员必须创建 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy) ，并向用户授予该策略中配置的应用程序，以便代表该用户更新联机会议 (用户 ID 在请求路径) 中指定。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,7 +47,7 @@ PATCH https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
 
 > **注意：**
 >
-> - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关更多详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy.md)。
+> - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关更多详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 > - `meetingId`是[onlineMeeting 实体](../resources/onlinemeeting.md)的**id** 。
 
 ## <a name="request-headers"></a>请求标头
@@ -159,3 +159,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

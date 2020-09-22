@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b2101b45826475013124149c90e10edb3147153f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8d3e93b73894ee93e642993dbfa575e43c72181e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455968"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040362"
 ---
 # <a name="participant-mute"></a>参与者：静音
 
@@ -22,11 +22,11 @@ ms.locfileid: "42455968"
 
 这是一种服务器静音，这意味着服务器将丢弃此参与者的所有音频数据包，即使参与者继续传输音频也是如此。
 
-有关如何处理静音操作的详细信息，请参阅[muteParticipantOperation](../resources/muteParticipantoperation.md)。
+有关如何处理静音操作的详细信息，请参阅 [muteParticipantOperation](../resources/muteParticipantoperation.md)。
 
 > **注意：** 仅组调用支持此方法。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 | :-------------- | :------------------------------------------ |
@@ -56,7 +56,7 @@ POST /communications/calls/{id}/participants/{id}/mute
 |适用|String|唯一的客户端上下文字符串。 最大限制为256个字符。|
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[muteParticipantOperation](../resources/muteParticipantoperation.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [muteParticipantOperation](../resources/muteParticipantoperation.md) 对象。
 
 >**注意：** 当此 API 返回成功响应时，所有参与者都将收到名单更新。
 
@@ -180,3 +180,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 2f37685212c48f3afe75a9c7daf2776f08aa92f6
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 189ef82b66a972146488510a3de608c88fab4d1a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896432"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040432"
 ---
 # <a name="page-copytosection"></a>页面： copyToSection
 
@@ -53,11 +53,11 @@ POST /sites/{id}/onenote/pages/{id}/copyToSection
 |siteCollectionId|String|要复制到的 SharePoint 网站的 id。 仅在复制到 SharePoint 网站时使用。|
 |siteId|String|要复制到的 SharePoint 网站的 id。 仅在复制到 SharePoint 网站时使用。|
 |groupId|String|要复制到的组的 id。 仅在复制到 Microsoft 365 组时使用。|
-|id|String|必填。 目标部分的 id。|
+|id|String|必需。 目标部分的 id。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `202 Accepted` 响应代码和 `Operation-Location` 标头。 轮询操作-位置终结点以[获取复制操作的状态](onenoteoperation-get.md)。
+如果成功，此方法将返回 `202 Accepted` 响应代码和 `Operation-Location` 标头。 轮询操作-位置终结点以 [获取复制操作的状态](onenoteoperation-get.md)。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -118,3 +118,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

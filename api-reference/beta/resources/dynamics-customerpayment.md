@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: bd990ea9778ada7d43c9b8192d77cf8af618909b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bf5536181f965765615a7e2d707d6503813cfb76
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42504634"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040040"
 ---
 # <a name="customerpayments-resource-type"></a>customerPayments 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,10 +43,10 @@ ms.locfileid: "42504634"
 |postingDate|date|客户付款的过帐日期。|
 |documentNumber|字符串，最大大小为20|指定客户付款的文档编号。|
 |externalDocumentNumber|字符串，最大大小为20|指定客户付款的外部文档编号。|
-|量|数位|指定客户付款包含的总金额（包括 VAT）。|
+|量|数位|指定客户付款包含的增值税)  (总金额。|
 |appliesToInvoiceId|GUID|与付款相关的发票的唯一 ID。|
 |appliesToInvoiceNumber|字符串，最大大小为20|与付款相关的发票的编号。|
-|说明|字符串，最大大小为50|客户付款的说明，由用户或 autocreated 提供。|
+|description|字符串，最大大小为50|客户付款的说明，由用户或 autocreated 提供。|
 |comment|字符串，最大大小为250|用户在客户付款上指定的注释。|
 |lastModifiedDateTime|datetime|客户付款修改后的最后一个日期/时间。 只读。|
 
@@ -56,9 +56,9 @@ ms.locfileid: "42504634"
 
 客户付款可以是维行的 "父实体"。
 
-客户（customerId）必须存在于 Customers 表中。
+客户 (customerId) 必须存在于 Customers 表中。
 
-发票（appliesToInvoiceId）必须存在于 "销售发票" 表中。
+发票 (appliesToInvoiceId) 必须存在于销售发票表中。
 
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -84,4 +84,6 @@ ms.locfileid: "42504634"
     "lastModifiedDateTime": "datetime"
 }
 ```
+
+
 

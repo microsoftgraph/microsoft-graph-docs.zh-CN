@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: efe7180b352ae29bc64f663fa9122d670378dff5
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: f41220c662214402e705f92d46c200c874309ce8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "42453327"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040201"
 ---
 # <a name="replace-shift"></a>替换班次
 
@@ -18,11 +18,11 @@ ms.locfileid: "42453327"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-替换现有[班次](../resources/shift.md)。
+替换现有 [班次](../resources/shift.md)。
 
-如果指定的[班次](../resources/shift.md)不存在，则此方法返回 `404 Not found` 。
+如果指定的 [班次](../resources/shift.md) 不存在，则此方法返回 `404 Not found` 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,7 +30,7 @@ ms.locfileid: "42453327"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 计划的所有写。 * |
+|应用程序 | 计划的所有写。 * |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
@@ -53,11 +53,11 @@ PUT /teams/{teamId}/schedule/shifts/{shiftId}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[shift](../resources/shift.md)对象的 JSON 表示形式。
+在请求正文中，提供 [shift](../resources/shift.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[shift](../resources/shift.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [shift](../resources/shift.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -223,3 +223,5 @@ Content-length: 401
   ]
 }
 -->
+
+

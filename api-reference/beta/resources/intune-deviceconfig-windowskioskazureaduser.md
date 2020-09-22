@@ -3,33 +3,33 @@ title: windowsKioskAzureADUser 资源类型
 description: 用于为展台配置标识 AzureAD 用户帐户的类
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9c1dd759906ec4a4891fdbb2fb57d9c5258aa102
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 687d51118cee3c6ba2ee7a1b106cd7b0313c6c08
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466776"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039802"
 ---
 # <a name="windowskioskazureaduser-resource-type"></a>windowsKioskAzureADUser 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 用于为展台配置标识 AzureAD 用户帐户的类
 
 
-继承自[windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
+继承自 [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |userId|String|将锁定到此展台配置的 AzureAD 用户的 ID|
-|userPrincipalName|字符串|将锁定到此展台配置的用户帐户|
+|userPrincipalName|String|将锁定到此展台配置的用户帐户|
 
 ## <a name="relationships"></a>关系
 无
@@ -48,6 +48,9 @@ ms.locfileid: "43466776"
   "userPrincipalName": "String"
 }
 ```
+
+
+
 
 
 

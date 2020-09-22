@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b3f87e6981abf18a4f082839c3e3e47455d36961
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 998a96fdf9ee874a3ae58a6029d31f270117fdca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44154323"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040187"
 ---
 # <a name="update-shiftpreferences"></a>更新 shiftPreferences
 
@@ -18,9 +18,9 @@ ms.locfileid: "44154323"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[shiftPreferences](../resources/shiftpreferences.md)对象的属性和关系。
+更新 [shiftPreferences](../resources/shiftpreferences.md) 对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "44154323"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,7 +46,7 @@ PUT /users/{userId}/settings/shiftPreferences
 | Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[shiftPreferences](../resources/shiftpreferences.md)对象的 JSON 表示形式。
+在请求正文中，提供 [shiftPreferences](../resources/shiftpreferences.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
@@ -129,3 +129,5 @@ HTTP/1.1 204 NO CONTENT
   ]
 }
 -->
+
+

@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: b7d3fee76df5f60c47639183f7d3e7ce54164f81
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 43368ace9a47064833aa388dda0a7da31d9e5f0c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42503213"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040033"
 ---
 # <a name="trialbalance-resource-type"></a>trialBalance 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "42503213"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|number|string|TrialBalance 项目的 G/L 帐号|
+|数字|string|TrialBalance 项目的 G/L 帐号|
 |accountId|GUID|记录的 G/L 帐户的唯一标识符。|
 |accountType|string|记录的 G/L 帐户的帐户类型。|
 |显示屏|string|TrialBalance 项目的 G/L 帐户名称。|
@@ -64,4 +64,6 @@ ms.locfileid: "42503213"
 }
 
 ```
+
+
 
