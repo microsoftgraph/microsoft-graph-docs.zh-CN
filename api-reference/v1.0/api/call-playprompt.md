@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 527797215da0ef961c83679fcec313c183a1cd63
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 4759beaed98f5384deb41e982d5ce8a5ee1da396
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682177"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979166"
 ---
 # <a name="call-playprompt"></a>调用： playPrompt
 
@@ -18,12 +18,12 @@ ms.locfileid: "44682177"
 
 在呼叫中播放提示。
 
-有关如何处理操作的详细信息，请参阅[commsOperation](../resources/commsoperation.md)
+有关如何处理操作的详细信息，请参阅 [commsOperation](../resources/commsoperation.md)
 
 > [!Note]
 > 仅使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)支持**playPrompt**操作。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
@@ -47,13 +47,13 @@ POST /communications/calls/{id}/playPrompt
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |Description|
+| 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|提示|[MediaPrompt](../resources/mediaprompt.md)集合| 要播放的提示。 支持的最大 MediaPrompt 集合大小为20。|
+|提示|[MediaPrompt](../resources/mediaprompt.md) 集合| 要播放的提示。 支持的最大 MediaPrompt 集合大小为20。|
 |适用|String|唯一的客户端上下文字符串。 最多可以有256个字符。|
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[playPromptOperation](../resources/playpromptoperation.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [playPromptOperation](../resources/playpromptoperation.md) 对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -179,3 +179,4 @@ Content-Type: application/json
   ]
 }
 -->
+

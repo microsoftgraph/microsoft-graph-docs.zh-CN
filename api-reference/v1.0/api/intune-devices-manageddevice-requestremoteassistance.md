@@ -3,14 +3,14 @@ title: requestRemoteAssistance 操作
 description: 请求远程协助
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 01f71756c82c6a4f6b7bbf8d020407a2c03a7238
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dab874529ebf42b2ef788ea534c69254b4256e19
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450542"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979033"
 ---
 # <a name="requestremoteassistance-action"></a>requestRemoteAssistance 操作
 
@@ -65,6 +65,9 @@ POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

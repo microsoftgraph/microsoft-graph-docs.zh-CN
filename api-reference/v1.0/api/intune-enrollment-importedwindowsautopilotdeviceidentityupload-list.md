@@ -3,14 +3,14 @@ title: 列出 importedWindowsAutopilotDeviceIdentityUploads
 description: 列出 importedWindowsAutopilotDeviceIdentityUpload 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 43ae051b5bbd6bbd4f5dd5ca74d558bd82eae07d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c3a13de39cacf4a6e37c792a85491bcc9cebbf28
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447857"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979012"
 ---
 # <a name="list-importedwindowsautopilotdeviceidentityuploads"></a>列出 importedWindowsAutopilotDeviceIdentityUploads
 
@@ -18,7 +18,7 @@ ms.locfileid: "43447857"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)对象的属性和关系。
+列出 [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -48,7 +48,7 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -76,6 +76,9 @@ Content-Length: 270
   ]
 }
 ```
+
+
+
 
 
 
