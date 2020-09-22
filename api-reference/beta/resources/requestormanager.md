@@ -5,20 +5,20 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8b2e3062383dd1cc1c7d04342b2dcbd5be0afd67
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4fecc2cb7d637c00f0f3f1b63d0080514639ed07
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521122"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026360"
 ---
 # <a name="requestomanager-complex-type"></a>requestoManager 复杂类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[访问包分配策略](accesspackageassignmentpolicy.md)的审批设置中使用。 它是[userSet](userset.md)的子类型，其中`@odata.type`值`#microsoft.graph.requestorManager`表示请求用户的经理是审批者。  在使用 requestorManager 创建访问包分配策略审批阶段时，还应包括另一个审批者（如单个用户或组成员），以防请求用户没有经理。
+在 [访问包分配策略](accesspackageassignmentpolicy.md)的审批设置中使用。 它是 [userSet](userset.md)的子类型，其中 `@odata.type` 值 `#microsoft.graph.requestorManager` 表示请求用户的经理是审批者。  在使用 requestorManager 创建访问包分配策略审批阶段时，还应包括另一个审批者（如单个用户或组成员），以防请求用户没有经理。
 
 
 ## <a name="properties"></a>属性
@@ -26,7 +26,7 @@ ms.locfileid: "42521122"
 
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
-| isBackup | 布尔 | 对于审批阶段中的经理，指示管理器是否为备份回退审批者。 |
+| isBackup | Boolean | 对于审批阶段中的经理，指示管理器是否为备份回退审批者。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -57,3 +57,5 @@ ms.locfileid: "42521122"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

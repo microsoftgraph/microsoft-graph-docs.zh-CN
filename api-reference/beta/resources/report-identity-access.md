@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: microsoft-identity-platform
 author: khotz
 doc_type: conceptualPageType
-ms.openlocfilehash: 140aa4598f643defe42364e99dd0c5a79eb4ab6d
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 731eed0f0610c19fde4289b067e03ca2a4533898
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673700"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026369"
 ---
 # <a name="identity-and-access-reports-api-overview"></a>身份和访问权限报告 API 概述
 
@@ -48,3 +48,5 @@ AD FS 应用程序活动报告可提供与使用 Active Directory 联合身份�
 
 - 深入了解对方案最有帮助的资源的方法和属性。
 - 在 [Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer)中试用 API。
+
+

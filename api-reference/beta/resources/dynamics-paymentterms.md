@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: cf6917b724f9e35735d63d1cda13c01d6f9003bf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1e9e7951da79d524002f004410ef6939d7be5b99
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42503598"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027077"
 ---
 # <a name="paymentterms-resource-type"></a>paymentTerms 资源类型
 
@@ -40,7 +40,7 @@ ms.locfileid: "42503598"
 |dueDateCalculation            |string  |指定用于计算必须进行付款的日期的公式。|
 |discountDateCalculation       |string  |指定用于计算要获取折扣付款所必须进行的日期的公式。|
 |discountPercent               |数位 |指定针对发票金额的提前付款应用的折扣百分比。|
-|calculateDiscountOnCreditMemos|boolean |指定是否应将折扣应用于贷方通知单。 **如果为 True** ，则表示将提供折扣， **false**表示不会给出折扣。|
+|calculateDiscountOnCreditMemos|boolean |指定是否应将折扣应用于贷方通知单。 **如果为 True** ，则表示将提供折扣， **false** 表示不会给出折扣。|
 |lastModifiedDateTime          |datetime|上次修改 paymentTerms 的日期/时间。 只读。|  
 
 
@@ -65,3 +65,5 @@ ms.locfileid: "42503598"
 }
 
 ```
+
+

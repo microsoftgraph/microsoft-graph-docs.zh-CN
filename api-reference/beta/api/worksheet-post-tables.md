@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ea88fc2fdd0d5514cbcf4211ff8452d0fd51eb4c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e8bcf6989433750302b30595e29c2b101cf2234b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451180"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024666"
 ---
 # <a name="create-table"></a>创建表
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,12 +45,12 @@ POST /workbook/worksheets/{id|name}/tables/add
 
 | 参数       | 类型|说明|
 |:---------------|:----------|:----------|
-| Address  | string| 区域地址。 如果要从`worksheets/{id|name}/tables/add`路径调用此 API，则无需支持地址中的工作表名称前缀。 但是，如果要调用此`workbook/tables/add`路径 off，请提供需要在其上创建表的工作表名称（示例：） `sheet1!A1:D4`|
+| Address  | string| 区域地址。 如果要从路径调用此 API `worksheets/{id|name}/tables/add` ，则无需支持地址中的工作表名称前缀。 但是，如果要调用此 `workbook/tables/add` 路径 off，请提供需要在其上创建表的工作表名称 (例如： `sheet1!A1:D4`) |
 | hasHeaders  | 布尔|指示区域是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`201 Created`响应正文中返回响应代码和[workbookTable](../resources/workbooktable.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [workbookTable](../resources/workbooktable.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -119,3 +119,5 @@ Content-length: 109
   ]
 }
 -->
+
+

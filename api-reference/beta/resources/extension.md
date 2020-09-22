@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: keylimesoda
-ms.openlocfilehash: 9dc9a53e98c43992c09158bac79afb49abcfee2f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5925c24c18dd091e866ec9b7012e2e0dd2f1cb60
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43423802"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026948"
 ---
 # <a name="extension-resource-type"></a>扩展资源类型
 
@@ -64,3 +64,5 @@ ms.locfileid: "43423802"
   "suppressions": []
 }
 -->
+
+

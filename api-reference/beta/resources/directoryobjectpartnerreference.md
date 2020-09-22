@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1e98395b627489b73a3638c88afc91b9edd86e54
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a161fcd8dea1084ebb004e054daa220c85d83d26
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442982"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027116"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>directoryObjectPartnerReference 资源类型
 
@@ -25,9 +25,9 @@ ms.locfileid: "43442982"
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |说明|String| 返回的对象的说明。 只读。 |
-|displayName|字符串| 返回的目录对象的名称，如 group 或 application。 只读。 |
+|displayName|String| 返回的目录对象的名称，如 group 或 application。 只读。 |
 |externalPartnerTenantId|Guid| 合作伙伴租户的租户标识符。 只读。 |
-|id|字符串| 资源的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 只读。 |
+|id|String| 资源的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 只读。 |
 |objectType|String| 合作伙伴租户中被引用对象的类型。 只读。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -66,3 +66,5 @@ ms.locfileid: "43442982"
   "suppressions": []
 }
 -->
+
+

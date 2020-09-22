@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 7ac0a2c255b0327614936d6b97c7afe5f2c5088d
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: f8a30c69b42ce52f6a81450ffa8739d7d87a12f7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849441"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026955"
 ---
 # <a name="outlook-extended-properties-overview"></a>Outlook 扩展属性概述
 
@@ -31,7 +31,7 @@ ms.locfileid: "46849441"
 - [Outlook 任务](../resources/outlooktask.md)
 - [Outlook 任务文件夹](../resources/outlooktaskfolder.md)
 
-或者，在以下 Microsoft 365 组资源中：
+或者，在下面的 Microsoft 365 组资源中：
 
 - 组 [事件](../resources/event.md)
 - 组 [日历](../resources/calendar.md)
@@ -98,4 +98,6 @@ ms.locfileid: "46849441"
 
 - [在新建或现有的资源实例中创建扩展属性](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md)
 - [使用 `$expand` 获取一个包含扩展属性的资源实例](../api/multivaluelegacyextendedproperty-get.md)
+
+
 

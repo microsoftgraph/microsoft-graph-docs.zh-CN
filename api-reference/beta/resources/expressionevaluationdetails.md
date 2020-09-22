@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 347e356bda19228ea8b3738b5bf8b72f57da95f7
-ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
+ms.openlocfilehash: f2d14d19bee60581c65d43e81b5ec69acc53df0a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44272825"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026970"
 ---
 # <a name="expressionevaluationdetails-resource-type"></a>expressionEvaluationDetails 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "44272825"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 | 表达式 | String | 表示已计算的表达式。 |
 | expressionEvaluationDetails | expressionEvaluationDetails 集合 | 表示表达式计算的详细信息。 |
@@ -60,3 +60,5 @@ ms.locfileid: "44272825"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

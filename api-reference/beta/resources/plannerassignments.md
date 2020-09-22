@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 7f131b848f3cef6f6874a81d27ab565bd9165121
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8150e859ccee08a8272bc9a140e50ef7ae3bed68
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521795"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026542"
 ---
 # <a name="plannerassignments-resource-type"></a>plannerAssignments 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "42521795"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerAssignments**资源表示[plannerTask](plannertask.md)资源的工作分配。 此类型是开放类型。 此类型中的每个属性名称都是分配给任务的用户对象的 ID。 可以将用户分配给使用其 ID 命名的新属性的任务，并将[plannerassignment](plannerassignment.md)对象的 orderHint 属性填充为值。 通过将以其 ID 命名的 bookmark 设置为 null，可以从任务中取消分配工作负责人。
+**PlannerAssignments**资源表示[plannerTask](plannertask.md)资源的工作分配。 此类型是开放类型。 此类型中的每个属性名称都是分配给任务的用户对象的 ID。 可以将用户分配给使用其 ID 命名的新属性的任务，并将 [plannerassignment](plannerassignment.md) 对象的 orderHint 属性填充为值。 通过将以其 ID 命名的 bookmark 设置为 null，可以从任务中取消分配工作负责人。
 
 
 ## <a name="properties"></a>属性
-可由客户端定义打开类型的属性。 但在这种情况下，客户端必须提供指定用户的 Id 作为属性名称。 必须将属性设置为**plannerAssignment**对象，才能创建或修改工作负责人，并为 null 以删除它们。
+可由客户端定义打开类型的属性。 但在这种情况下，客户端必须提供指定用户的 Id 作为属性名称。 必须将属性设置为 **plannerAssignment** 对象，才能创建或修改工作负责人，并为 null 以删除它们。
 
 示例：
 
@@ -57,3 +57,5 @@ ms.locfileid: "42521795"
   "suppressions": []
 }
 -->
+
+

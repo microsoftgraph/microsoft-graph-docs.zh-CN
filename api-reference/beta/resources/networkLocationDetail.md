@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 88146920f769afbc833d53bb9455ee046f5961e3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 210201613a2f93c99472b42c5ea3ef231a10125d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459781"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026605"
 ---
 # <a name="networklocationdetail-resource-type"></a>networkLocationDetail 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "43459781"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|networkNames|String collection|提供登录时使用的网络的名称。|
+|networkNames|String 集合|提供登录时使用的网络的名称。|
 |网络|网络| 提供登录时使用的网络类型。 可取值为：`intranet`、`extranet`、`namedNetwork`、`trusted`、`unknownFutureValue`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -56,3 +56,4 @@ ms.locfileid: "43459781"
   "section": "documentation",
   "tocPath": ""
 }-->
+

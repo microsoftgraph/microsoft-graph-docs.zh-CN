@@ -3,14 +3,14 @@ title: recoverPasscode 操作
 description: 恢复密码
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c3906caaa48f6eec3ba293609bbe8ae6eadb4386
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4f94c58bff4f8db16b768e5de04cae91dd296987
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407389"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025807"
 ---
 # <a name="recoverpasscode-action"></a>recoverPasscode 操作
 
@@ -65,6 +65,9 @@ POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

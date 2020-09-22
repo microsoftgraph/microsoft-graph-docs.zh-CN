@@ -5,20 +5,20 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: e8216e08c4f7232c67c51fa8291ece63178472b3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d43412f621fd325bc0590990af1ef783f72f4c05
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42495597"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026892"
 ---
 # <a name="sharingdetail-resource-type"></a>sharingDetail 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含[sharedInsight](insights-shared.md)项目的属性的复杂类型。 
+包含 [sharedInsight](insights-shared.md) 项目的属性的复杂类型。 
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -48,3 +48,5 @@ ms.locfileid: "42495597"
 | sharingType             | String        | 确定文档的共享方式，可以是 "链接"、"附件"、"组"、"网站"。     |
 | sharedBy                | [insightIdentity](insights-insightidentity.md)      | 共享文档的用户。  |
 | sharingReference        | [resourceReference](insights-resourcereference.md)      |  |
+
+

@@ -3,20 +3,20 @@ title: userAppInstallStatus 资源类型
 description: 包含用户的安装状态的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ccc47a51273038be692d2a508d5f6adba73f9f40
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ccae01f74466c839e602d5f7b5c62536fc409a15
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462524"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026843"
 ---
 # <a name="userappinstallstatus-resource-type"></a>userAppInstallStatus 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,11 +25,11 @@ ms.locfileid: "43462524"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 userAppInstallStatuses](../api/intune-apps-userappinstallstatus-list.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)集合|列出[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)对象的属性和关系。|
-|[获取 userAppInstallStatus](../api/intune-apps-userappinstallstatus-get.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|读取[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)对象的属性和关系。|
-|[创建 userAppInstallStatus](../api/intune-apps-userappinstallstatus-create.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|创建新的[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)对象。|
-|[删除 userAppInstallStatus](../api/intune-apps-userappinstallstatus-delete.md)|无|删除[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)。|
-|[更新 userAppInstallStatus](../api/intune-apps-userappinstallstatus-update.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|更新[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)对象的属性。|
+|[列出 userAppInstallStatuses](../api/intune-apps-userappinstallstatus-list.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) 集合|列出 [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) 对象的属性和关系。|
+|[获取 userAppInstallStatus](../api/intune-apps-userappinstallstatus-get.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|读取 [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) 对象的属性和关系。|
+|[创建 userAppInstallStatus](../api/intune-apps-userappinstallstatus-create.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|创建新的 [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) 对象。|
+|[删除 userAppInstallStatus](../api/intune-apps-userappinstallstatus-delete.md)|无|删除 [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)。|
+|[更新 userAppInstallStatus](../api/intune-apps-userappinstallstatus-update.md)|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|更新 [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -45,7 +45,7 @@ ms.locfileid: "43462524"
 |关系|类型|说明|
 |:---|:---|:---|
 |应用程序|[mobileApp](../resources/intune-shared-mobileapp.md)|指向移动应用程序的导航链接。|
-|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)集合|设备上的应用程序的安装状态。|
+|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) 集合|设备上的应用程序的安装状态。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -66,6 +66,9 @@ ms.locfileid: "43462524"
   "notInstalledDeviceCount": 1024
 }
 ```
+
+
+
 
 
 

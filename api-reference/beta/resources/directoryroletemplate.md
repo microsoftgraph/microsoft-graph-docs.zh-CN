@@ -1,16 +1,16 @@
 ---
 title: directoryRoleTemplate 资源类型
-description: 表示目录角色模板。 目录角色模板指定目录角色（directoryRole）的属性值。 每个可在租户中激活的目录角色都有一个关联的目录角色模板对象。
+description: 表示目录角色模板。 目录角色模板指定目录角色 (directoryRole) 的属性值。 每个可在租户中激活的目录角色都有一个关联的目录角色模板对象。
 localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ff827f53b23658adf71ed97d6193d0174a48b3fb
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 3316936c755ec05cbfad9d1fe9876fc14a2e1ba4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181797"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027088"
 ---
 # <a name="directoryroletemplate-resource-type"></a>directoryRoleTemplate 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "43181797"
 |:---------------|:--------|:----------|
 |说明|String|可设置目录角色说明。只读。|
 |displayName|String|可设置目录角色显示名称。只读。 |
-|id|字符串|模板的的唯一标识符。继承自 [directoryObject](directoryobject.md)。在 POST 请求中指定 **roleTemplateId** 属性的目录角色模板的 **id** 将在租户中激活 [directoryRole](directoryrole.md)。密钥，不可为 NULL。只读。|
+|id|String|模板的的唯一标识符。继承自 [directoryObject](directoryobject.md)。在 POST 请求中指定 **roleTemplateId** 属性的目录角色模板的 **id** 将在租户中激活 [directoryRole](directoryrole.md)。密钥，不可为 NULL。只读。|
 
 ## <a name="relationships"></a>关系
 无
@@ -73,3 +73,5 @@ ms.locfileid: "43181797"
   "suppressions": []
 }
 -->
+
+

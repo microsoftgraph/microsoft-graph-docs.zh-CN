@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 9d25d78d51a39d3240d0d7566b7037f55e379fe1
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c111082fe0b9a2f2090de3fe3abb71a96fd4a80d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811110"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026584"
 ---
 # <a name="networkconnection-resource-type"></a>networkConnection 资源类型
 
@@ -42,7 +42,7 @@ ms.locfileid: "46811110"
 |sourceAddress|String|源 (（即网络连接) 的来源) IP 地址） (。|
 |sourceLocation|String|与网络连接的源相关联的 IP 地址映射)  (位置。|
 |sourcePort|String|源 (（即网络连接) 的 IP 端口 (）的来源) 。|
-|status|connectionStatus|网络连接状态。 可取值为：`unknown`、`attempted`、`succeeded`、`blocked`、`failed`。|
+|状态|connectionStatus|网络连接状态。 可取值为：`unknown`、`attempted`、`succeeded`、`blocked`、`failed`。|
 |urlParameters|String|参数 (后缀) 的目标 URL。|
 
 ### <a name="securitynetworkprotocol-values"></a>securityNetworkProtocol 值
@@ -51,8 +51,8 @@ ms.locfileid: "46811110"
 |:---|:---|:---|
 |unknown|-1|未知协议。|
 |ip|0|Internet 协议。|
-|icmp|1| Internet 控制邮件协议。|
-|igmp|双面| Internet 组管理协议。|
+|icmp|1 | Internet 控制邮件协议。|
+|igmp|2 | Internet 组管理协议。|
 |ggp|第三章| 网关到网关协议。|
 |ipv4|4 | Internet 协议版本4。|
 |tcp|6 | 传输控制协议。|
@@ -123,3 +123,5 @@ ms.locfileid: "46811110"
   "suppressions": []
 }
 -->
+
+

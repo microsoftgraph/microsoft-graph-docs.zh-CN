@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 94ebd10ef87946b5333ec5a06d5edccadc298158
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d45153a08572f32f29128fd4d3f51638d71c951b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42503570"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027067"
 ---
 # <a name="shipmentmethods-resource-type"></a>shipmentMethods 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,5 +56,7 @@ ms.locfileid: "42503570"
 }
 
 ```
+
+
 
 

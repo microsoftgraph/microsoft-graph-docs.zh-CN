@@ -5,18 +5,18 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 89c98d2d136ba60f438409b36f0ecbffdb3937ef
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: e050b70cf7842bb79a29288d1b7bc6a832905af0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383593"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025401"
 ---
 # <a name="serviceprincipal-checkmemberobjects"></a>servicePrincipal： checkMemberObjects
 
 命名空间：microsoft.graph
 
-检查指定的[servicePrincipal](../resources/serviceprincipal.md)对象的组、目录角色或管理单位列表中的成员资格。 此方法是可传递的。
+检查指定的 [servicePrincipal](../resources/serviceprincipal.md) 对象的组、目录角色或管理单位列表中的成员资格。 此方法是可传递的。
 
 ## <a name="permissions"></a>权限
 
@@ -46,7 +46,7 @@ POST /servicePrincipals/{id}/checkMemberObjects
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型        | Description |
+| 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |ids|String collection|包含目录角色的组、目录角色、管理单元或 roleTemplate Id 的对象 Id 的集合，用于检查成员身份。 最高可指定20个对象。|
 
@@ -135,3 +135,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

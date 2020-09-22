@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 6e76ae1b53d70ff876f6eab378e9b91914c1f488
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e7fd44a48691f9eae5739602e70a7b3fbafd3019
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510954"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025569"
 ---
 # <a name="delete-plannerbucket"></a>删除 plannerBucket
 
@@ -98,3 +98,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

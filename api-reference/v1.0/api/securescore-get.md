@@ -5,18 +5,18 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 9b49dde04751aab72eb3c05f9a863cc72df60e7f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 95cff85f94e8f7df96773ee727a0b2097f78d4cb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509862"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025499"
 ---
 # <a name="get-securescore"></a>获取 secureScore
 
 命名空间：microsoft.graph
 
-检索[secureScore](../resources/securescore.md)对象的属性和关系。
+检索 [secureScore](../resources/securescore.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -48,7 +48,7 @@ GET /security/secureScores/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和**secureScore**对象。 如果从提供程序返回了 2xx 或 404 以外的状态代码，或者提供程序超时，则响应将是 `206 Partial Content` 状态代码，提供程序的响应位于警告标头中。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 错误响应](../resources/security-error-codes.md)。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **secureScore** 对象。 如果从提供程序返回了 2xx 或 404 以外的状态代码，或者提供程序超时，则响应将是 `206 Partial Content` 状态代码，提供程序的响应位于警告标头中。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 错误响应](../resources/security-error-codes.md)。
 
 ## <a name="example"></a>示例
 
@@ -158,3 +158,4 @@ Content-type: application/json
   ]
 }
 -->
+

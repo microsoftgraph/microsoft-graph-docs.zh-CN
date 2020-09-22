@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a7ae6fe3f01eb5105791770451fba1bf1525290e
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 4a7ccc00cdaa0ab594c9f35dde1ed819a9c5565c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383810"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024659"
 ---
 # <a name="worksheet-range"></a>Worksheet:Range
 
@@ -26,7 +26,7 @@ ms.locfileid: "44383810"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Files.ReadWrite    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ GET /workbook/worksheets/{id|name}/Range
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |Description|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |address|string|可选。区域的地址或名称。如果未指定，则返回整个工作表区域。|
 
@@ -120,3 +120,5 @@ Content-length: 169
   ]
 }
 -->
+
+

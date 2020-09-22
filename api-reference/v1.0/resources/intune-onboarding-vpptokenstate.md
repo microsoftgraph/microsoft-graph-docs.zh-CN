@@ -3,14 +3,14 @@ title: vppTokenState 枚举类型
 description: 与 Apple Volume Purchase Program 令牌关联的可能状态。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 52b184490f4653898383deeda6996e353964d9b0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 07a9441923e99089fc3dc2ebe9627972237207e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441719"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025275"
 ---
 # <a name="vpptokenstate-enum-type"></a>vppTokenState 枚举类型
 
@@ -24,10 +24,12 @@ ms.locfileid: "43441719"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|默认状态。|
-|有效|1|令牌有效。|
-|期满|双面|令牌已过期。|
+|有效|1 |令牌有效。|
+|期满|2 |令牌已过期。|
 |无效|第三章|令牌无效。|
 |assignedToExternalMDM|4 |令牌由另一个 MDM 服务管理。|
+
+
 
 
 

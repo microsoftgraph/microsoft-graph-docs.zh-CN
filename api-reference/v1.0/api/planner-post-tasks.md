@@ -5,12 +5,12 @@ localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: a7800ee4331b3a81a16accd2d01f132a53bc511d
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 3b3af628ab1dde864597fa6b2a10a7006e994201
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681683"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025660"
 ---
 # <a name="create-plannertask"></a>创建 plannerTask
 
@@ -132,3 +132,4 @@ Content-length: 677
   "suppressions": [
   ]
 }-->
+

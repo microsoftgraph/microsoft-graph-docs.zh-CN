@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3eb00ac2f540980d346a2b167555a1bfdb1f7cfe
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 2f50969aa02b5115e061e7e874e7f9b5667f3570
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917535"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024526"
 ---
 # <a name="activitybasedtimeoutpolicy-resource-type"></a>activityBasedTimeoutPolicy 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "43917535"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示一个策略，该策略可控制支持基于活动的超时功能的应用程序的 web 会话的空闲超时。 应用程序在处于非活动状态一段时间后强制自动 signout。 此类型的策略仅可在组织级别应用（通过将**isOrganizationDefault**属性设置为`true`）。
+表示一个策略，该策略可控制支持基于活动的超时功能的应用程序的 web 会话的空闲超时。 应用程序在处于非活动状态一段时间后强制自动 signout。 通过将 **isOrganizationDefault** 属性设置为) ，只能在组织级别 (应用此类型的策略 `true` 。
 
-继承自[stsPolicy](stsPolicy.md)。
+继承自 [stsPolicy](stsPolicy.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -36,7 +36,7 @@ ms.locfileid: "43917535"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|字符串| 此策略的唯一标识符。 只读。|
+|id|String| 此策略的唯一标识符。 只读。|
 |定义|String 集合| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
 |description|String| 此策略的说明。|
 |displayName|String| 此策略的显示名称。 必需。|
@@ -44,7 +44,7 @@ ms.locfileid: "43917535"
 
 
 ### <a name="properties-of-an-activity-based-timeout-policy-definition"></a>基于活动的超时策略定义的属性
-下面的属性构成了表示基于活动的超时策略的 JSON 对象。 此 JSON 对象必须**转换为转义了引号的字符串**，以将其插入到**定义**属性中。 下面以 JSON 格式显示了一个示例：
+下面的属性构成了表示基于活动的超时策略的 JSON 对象。 此 JSON 对象必须 **转换为转义了引号的字符串** ，以将其插入到 **定义** 属性中。 下面以 JSON 格式显示了一个示例：
 
 <!-- {
   "blockType": "ignored"
@@ -102,3 +102,4 @@ ms.locfileid: "43917535"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: jewan-microsoft
-ms.openlocfilehash: 4114704a13b4116534d96743ceacfba51df67847
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 4e342194fbfc3f73c417b988e3a166ef24b52788
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812444"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026381"
 ---
 # <a name="recentnotebooklinks-resource-type"></a>recentNotebookLinks 资源类型
 
@@ -58,3 +58,5 @@ ms.locfileid: "46812444"
   "suppressions": []
 }
 -->
+
+

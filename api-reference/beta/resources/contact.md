@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 2866d316deffa3160e5c43535a55df93efa429ca
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4fd41e9c5027d685f064c86e927f86af1212d299
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458103"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027123"
 ---
 # <a name="contact-resource-type"></a>联系人资源类型
 
@@ -89,20 +89,20 @@ ms.locfileid: "43458103"
 |:---------------|:--------|:----------|
 |assistantName|String|联系人助理的姓名。|
 |birthday|DateTimeOffset|联系人的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
-|categories|String 集合|与联系人关联的类别。 每个类别对应于为用户定义的 [outlookCategory](outlookcategory.md) 的 **displayName** 属性。|
+|类别|String collection|与联系人关联的类别。 每个类别对应于为用户定义的 [outlookCategory](outlookcategory.md) 的 **displayName** 属性。|
 |changeKey|String|标识联系人的版本。每次联系人更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |children|String collection|联系人子女的姓名。|
 |companyName|String|联系人所在公司的名称。|
 |createdDateTime|DateTimeOffset|创建联系人的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |部门|String|联系人所在的部门。|
 |displayName|String|联系人的显示名称。 可以在[创建](../api/user-post-contacts.md)或[更新](../api/contact-update.md)操作中指定显示名称。 请注意，对其他属性的后续更新可能会导致自动生成的值覆盖你指定的 displayName 值。 若要保留预先存在的值，请始终在[更新](../api/contact-update.md)操作中将其作为 displayName。|
-|emailAddresses|[typedEmailAddress](typedemailaddress.md)集合|联系人的电子邮件地址。|
+|emailAddresses|[typedEmailAddress](typedemailaddress.md) 集合|联系人的电子邮件地址。|
 |fileAs|String|联系人备案的姓名。|
 |flag|[followupFlag](followupflag.md)|指示联系人的状态、开始日期、截止日期或完成日期的标志值。 |
 |gender |String |联系人的性别。 |
 |generation|String|联系人所属的代。|
 |givenName|String|联系人的名。|
-|id|字符串| 联系人的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] 只读。 |
+|id|String| 联系人的唯一标识符。 [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] 只读。 |
 |imAddresses|String collection|联系人的即时消息 (IM) 地址。|
 |initials|String|联系人的姓名缩写。|
 |jobTitle|String|联系人的职务。|
@@ -114,11 +114,11 @@ ms.locfileid: "43458103"
 |parentFolderId|String|联系人的父文件夹 ID。|
 |personalNotes|String|有关联系人的用户备注。|
 |phones |[phone](phone.md) collection |与联系人关联的电话号码，例如，家庭电话、移动电话和商务电话。 |
-|postalAddresses |[physicalAddress](physicaladdress.md)集合 |与联系人关联的地址，例如家庭地址和公司地址。 |
+|postalAddresses |[physicalAddress](physicaladdress.md) 集合 |与联系人关联的地址，例如家庭地址和公司地址。 |
 |profession|String|联系人的职业。|
 |spouseName|String|联系人配偶/伴侣的姓名。|
 |surname|String|联系人的姓氏。|
-|title|字符串|联系人的职位。|
+|title|String|联系人的职位。|
 |websites |[website](website.md) collection|与联系人关联的网站。 |
 |weddingAnniversary |日期 |联系人的婚礼周年纪念。 |
 |yomiCompanyName|String|联系人的注音日文公司名称。|
@@ -128,7 +128,7 @@ ms.locfileid: "43458103"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|extensions|[扩展](extension.md)集合|为联系人定义的开放扩展集合。 可为 Null。|
+|extensions|[扩展](extension.md)集合|为联系人定义的开放扩展集合。 可为空。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为联系人定义的多值扩展属性的集合。只读。可为 Null。|
 |photo|[照片](profilephoto.md)| 可选的联系人照片。可以获取或设置联系人的照片。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为联系人定义的单值扩展属性的集合。只读。可为 Null。|
@@ -173,3 +173,5 @@ ms.locfileid: "43458103"
   "suppressions": []
 }
 -->
+
+

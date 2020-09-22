@@ -5,16 +5,16 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 48bc8c4009833111f465d0b9c6d4363af5be8ca2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1ec1769f0eaba61ce56acac4d6b17ead6f819f35
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461432"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026024"
 ---
 # <a name="delete-conversation"></a>删除对话
 
-命名空间： microsoft. graph 删除[会话](../resources/conversation.md)对象。
+命名空间： microsoft. graph 删除 [会话](../resources/conversation.md) 对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -96,3 +96,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

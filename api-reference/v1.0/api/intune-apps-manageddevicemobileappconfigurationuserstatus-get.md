@@ -3,14 +3,14 @@ title: 获取 managedDeviceMobileAppConfigurationUserStatus
 description: 读取 managedDeviceMobileAppConfigurationUserStatus 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53ca0f65d4c69e9ba082e6dea002f38053023ee5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3a2f2b627ca4dd18985b28ee44186697391a5caa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471650"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025891"
 ---
 # <a name="get-manageddevicemobileappconfigurationuserstatus"></a>获取 managedDeviceMobileAppConfigurationUserStatus
 
@@ -80,6 +80,9 @@ Content-Length: 388
   }
 }
 ```
+
+
+
 
 
 

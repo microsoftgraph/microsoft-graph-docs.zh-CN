@@ -1,22 +1,22 @@
 ---
 title: servicePrincipal： addPassword
-description: 将强密码添加到 servicePrincipal。
+description: 向 servicePrincipal 添加强密码。
 localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6893c98fa9a759f2fd432ce7425cdc9b3832f71c
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: ab4e1a8fef31f9f2284604f39812bf6056ec82d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383621"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025415"
 ---
 # <a name="serviceprincipal-addpassword"></a>servicePrincipal： addPassword
 
 命名空间：microsoft.graph
 
-将强密码添加到[servicePrincipal](../resources/serviceprincipal.md)对象。
+将强密码添加到 [servicePrincipal](../resources/serviceprincipal.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/addPassword
 
 在请求正文中，提供 `passwordCredential` 具有以下属性的可选对象。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | displayName | String | 密码的友好名称。 可选。 |
 | endDateTime | DateTimeOffset | 密码过期的日期和时间，使用 ISO 8601 格式表示，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 可选。 默认值为 "startDateTime + 2 年"。 |
@@ -55,7 +55,7 @@ POST /servicePrincipals/{id}/addPassword
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的[passwordCredential](../resources/passwordcredential.md)对象。 Response 对象中的**secretText**属性包含由 Azure Active Directory 生成的强密码，其长度为16-64 个字符。 将来无法检索此密码。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [passwordCredential](../resources/passwordcredential.md) 对象。 Response 对象中的 **secretText** 属性包含由 Azure Active Directory 生成的强密码，其长度为16-64 个字符。 将来无法检索此密码。
 
 ## <a name="examples"></a>示例
 
@@ -134,3 +134,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

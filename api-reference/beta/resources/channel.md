@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 184ea90c229d222299848aaec1119aff9497d4af
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: 8b055a8a76a888fc5fc2e3f213b8be69f34f6413
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630310"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024425"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -51,6 +51,19 @@ ms.locfileid: "46630310"
 |email|String| 用于向频道发送邮件的电子邮件地址。 只读。|
 |webUrl|String|将转到 Microsoft Teams 中的频道的超链接。 在 Microsoft Teams 中右键单击某个频道并选择“获取频道链接”即可获得此 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 只读。|
 |membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|频道的类型。 可在创建期间设置，但不可更改。 默认：标准。|
+|createdDateTime|dateTimeOffset|只读。 创建频道的时间戳。|
+
+### <a name="instance-attributes"></a>实例属性
+
+实例属性是具有特殊行为的属性。这些属性是临时的，并且 a) 定义服务应执行的行为或 b) 提供短期的属性值，例如过期项目的下载 URL。
+
+| 属性名称| 类型   | 说明
+|:-----------------------|:-------|:-------------------------|
+|@microsoft. graph channelCreationMode|string|指示频道处于迁移状态，并且当前正用于迁移目的。 它接受一个值：`migration`。|
+
+> **注意**：`ChannelCreationMode` 是采用值 `migration`的枚举。
+
+有关 POST 请求示例，请参阅[请求（在迁移状态下创建频道）](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams#request-create-a-team-in-migration-state)。
 
 ## <a name="relationships"></a>关系
 
@@ -60,6 +73,7 @@ ms.locfileid: "46630310"
 |选项卡|[teamsTab](../resources/teamstab.md) 集合|频道中的所有选项卡集合。 一种导航属性。|
 |成员|[conversationMember](conversationmember.md) 集合|与频道关联的成员资格记录的集合。|
 |[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|用于存储频道文件的位置的元数据。|
+|operations|[teamsAsyncOperation](teamsasyncoperation.md) 集合| 在此团队中运行过或正在运行的异步操作。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -82,7 +96,8 @@ ms.locfileid: "46630310"
   "isFavoriteByDefault": true,
   "email": "string",
   "webUrl": "string",
-  "membershipType": "channelMembershipType"
+  "membershipType": "channelMembershipType",
+  "createdDateTime": "string (timestamp)"
 }
 ```
 
@@ -98,3 +113,5 @@ ms.locfileid: "46630310"
   "suppressions": []
 }
 -->
+
+

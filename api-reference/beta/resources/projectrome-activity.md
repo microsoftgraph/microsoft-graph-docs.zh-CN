@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: resourcePageType
 author: ailae
-ms.openlocfilehash: e811cadb7b592916d1a85fda3e9ece37f744f35f
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: f72a63280df3cb32d7814cd00f28ac457880d67e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810517"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026521"
 ---
 # <a name="activity-resource-type"></a>活动资源类型
 
@@ -49,7 +49,7 @@ ms.locfileid: "46810517"
 |activationUrl | String | 必需。 用于在由 appId 表示的最佳本机体验中启动活动的 URL。 如果不存在本机应用程序，则可能启动基于 web 的应用程序。|
 |fallbackUrl | String | 可选。 用于在基于 web 的应用程序中启动活动的 URL （如果有）。|
 |contentUrl | String | 可选。 当内容可以在本机或基于 web 的应用程序体验之外呈现时使用 (例如，指向 RSS 源) 中的项的指针。|
-|visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | 必需项。 包含用于在 UX 中呈现活动的信息的对象。|
+|visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | 必需。 包含用于在 UX 中呈现活动的信息的对象。|
 |contentInfo | 非类型化 JSON 对象 | 可选。 根据 [schema.org](https://schema.org) 语法的内容的自定义数据 JSON-LD 可扩展说明。|
 |expirationDateTime | DateTimeOffset | 由服务器进行设置。 当对象在服务器上过期时的日期时间（UTC）。|
 |状态 | string | 由服务器进行设置。 用于标识有效对象的状态代码。 值：活动、已更新、已删除、已忽略。|
@@ -111,3 +111,5 @@ ms.locfileid: "46810517"
   "suppressions": []
 }
 -->
+
+

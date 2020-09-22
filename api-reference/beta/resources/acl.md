@@ -5,16 +5,16 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a957feaffe36e76a36958ef7855376bcfe58484e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d0745ab4a04233a654b829da8f93defb855fc0f9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508448"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024554"
 ---
 # <a name="acl-resource-type"></a>acl 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +29,7 @@ ms.locfileid: "42508448"
 | accessType     | String | 授予对标识的访问权限。 可取值为：`grant`、`deny`。 |
 | identitySource | String | 必须设置为 `Azure Active Directory`。           |
 | type           | String | 标识的类型。 可取值为：`user`、`group`、`everyone`、`everyoneExceptGuests`。 |
-| value          | String | Azure Active Directory 标识符。 如果`type`为`user`或`group`， `value`则将设置为用户或组的对象标识符。 如果`type`为`everyone`或`everyoneExceptGuests`， `value`则将设置为 Azure Active Directory 租户的租户标识符。 |
+| value          | String | Azure Active Directory 标识符。 如果 `type` 为 `user` 或 `group` ， `value` 则将设置为用户或组的对象标识符。 如果 `type` 为 `everyone` 或 `everyoneExceptGuests` ， `value` 则将设置为 Azure Active Directory 租户的租户标识符。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -62,3 +62,5 @@ ms.locfileid: "42508448"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

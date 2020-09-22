@@ -5,16 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 05bbd7ee4b2d4b2b9c4e772b19bd26c86d91cc69
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5b4e9edf4007d7bc5d4028e4f9202e09647ca863
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508420"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024513"
 ---
 # <a name="addcontentfooteraction-resource-type"></a>addContentFooterAction 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42508420"
 | fontColor     | String | 用于页脚的字体颜色。                      |
 | fontName      | String | 要用于页脚的字体的名称。                       |
 | fontSize      | Int32  | 用于页脚的字号。                              |
-| 页脚        | Int32  | 文档底部的页眉的边距。     |
+| margin        | Int32  | 文档底部的页眉的边距。     |
 | text          | String | 页脚本身的内容。                            |
 | uiElementName | String | 应在其中放置页脚的 UI 元素的名称。 |
 
@@ -66,3 +66,4 @@ ms.locfileid: "42508420"
   "section": "documentation",
   "tocPath": ""
 }-->
+

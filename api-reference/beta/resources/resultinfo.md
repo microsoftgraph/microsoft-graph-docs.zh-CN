@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: aa55f8cdcb7ca4639aa4975a28ae2bcbcd625588
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7202cd0bfa7dee3db3e37d2cab4333da49a41856
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521080"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026241"
 ---
 # <a name="resultinfo-resource-type"></a>resultInfo 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "42521080"
 
 该代码指定结果是否为一般性成功或失败。 
 
-子代码提供与成功或失败类型相关的补充信息（例如，呼叫转移成功）。
+子代码提供与成功或失败的类型相关的补充信息 (例如，呼叫转移成功) 。
 
 
 ## <a name="properties"></a>属性
@@ -64,3 +64,5 @@ ms.locfileid: "42521080"
   "suppressions": []
 }
 -->
+
+

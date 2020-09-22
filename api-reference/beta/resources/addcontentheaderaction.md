@@ -5,16 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d426252b6ab83557c3d3085ac4ffa7a530aae271
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7e7a5675cdf150f03b283f664e248319d49c820d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508406"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024514"
 ---
 # <a name="addcontentheaderaction-resource-type"></a>addContentHeaderAction 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42508406"
 | fontColor     | String | 标头使用的字体颜色。                      |
 | fontName      | String | 要用于标头的字体的名称。                       |
 | fontSize      | Int32  | 标头使用的字号。                              |
-| 页脚        | Int32  | 文档顶部的页眉的边距。        |
+| margin        | Int32  | 文档顶部的页眉的边距。        |
 | text          | String | 标头本身的内容。                            |
 | uiElementName | String | 应在其中放置标头的 UI 元素的名称。 |
 
@@ -66,3 +66,4 @@ ms.locfileid: "42508406"
   "section": "documentation",
   "tocPath": ""
 }-->
+

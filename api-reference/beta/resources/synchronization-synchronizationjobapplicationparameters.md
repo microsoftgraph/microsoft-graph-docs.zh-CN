@@ -5,12 +5,12 @@ author: ArvindHarinder1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c0f0b7cae5a3ce9c49ea64b603390ea65831144b
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
-ms.translationtype: Auto
+ms.openlocfilehash: eaa569faa7705baf95ef5843ad0ae1e66a0bf1ff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45007153"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026108"
 ---
 # <a name="synchronizationjobapplicationparameters-resource-type"></a>synchronizationJobApplicationParameters 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "45007153"
 |属性|类型|说明|
 |:---|:---|:---|
 |ruleId|String|要应用的 synchronizationRule 的标识符;对于具有单个 synchronizationRule 的 synchronizationJob 是可选的。|
-|聚焦|[synchronizationJobSubject](../resources/synchronization-synchronizationjobsubject.md)集合|要应用 synchronizationJob 的一个或多个对象的标识符。|
+|聚焦|[synchronizationJobSubject](../resources/synchronization-synchronizationjobsubject.md) 集合|要应用 synchronizationJob 的一个或多个对象的标识符。|
 
 ## <a name="relationships"></a>关系
 无。
@@ -45,3 +45,5 @@ ms.locfileid: "45007153"
   ]
 }
 ```
+
+

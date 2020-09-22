@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 3c8f244b9c3601aaeb315b09bb51d21275a63f6f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 373e4785d19a7983f890ee3c3574533323829954
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42503255"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027039"
 ---
 # <a name="taxgroups-resource-type"></a>taxGroups 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,5 +57,7 @@ ms.locfileid: "42503255"
 }
 
 ```
+
+
 
 

@@ -3,14 +3,14 @@ title: managedAppPinCharacterSet 枚举类型
 description: 要用于用户的应用程序 PIN 的字符集
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 897150a1cdc8a6c372b39f1ca3d8f361f93b8585
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2fc52ff7b236fe88775c8fb6963533183e854039
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468531"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025345"
 ---
 # <a name="managedapppincharacterset-enum-type"></a>managedAppPinCharacterSet 枚举类型
 
@@ -24,7 +24,9 @@ ms.locfileid: "43468531"
 |成员|值|说明|
 |:---|:---|:---|
 |位数|0|数字字符|
-|alphanumericAndSymbol|1|字母数字和符号字符|
+|alphanumericAndSymbol|1 |字母数字和符号字符|
+
+
 
 
 

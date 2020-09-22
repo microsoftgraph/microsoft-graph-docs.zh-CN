@@ -7,16 +7,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: listInfo 复杂类型提供有关 list 的其他信息。
 doc_type: resourcePageType
-ms.openlocfilehash: ddb43fc69b14aaacd93b4db0e397dd6e35171663
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a7a0a7d400d54ce27dc2f0c8a3397def301fa7aa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447568"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025260"
 ---
 # <a name="listinfo-resource"></a>ListInfo 资源
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 **listInfo** 复杂类型提供有关 [list][] 的其他信息。
 
@@ -45,7 +45,7 @@ ms.locfileid: "42447568"
 
 | 属性名称           | 类型    | 说明
 |:------------------------|:--------|:------------------------------------------------
-| **contentTypesEnabled** | 布尔 | 如果为 `true`，则表明已为此列表启用内容类型。
+| **contentTypesEnabled** | Boolean | 如果为 `true`，则表明已为此列表启用内容类型。
 | **hidden**              | Boolean | 如果为 `true`，则表明该列表通常在 SharePoint 用户体验中不可见。
 | **template**            | String  | 一个枚举值，表示创建列表时使用的基本列表模板。 可能的值包括 `documentLibrary`、`genericList`、`task`、`survey`、`announcements`、`contacts` 等。
 
@@ -68,3 +68,4 @@ ms.locfileid: "42447568"
   ],
   "tocPath": ""
 }-->
+

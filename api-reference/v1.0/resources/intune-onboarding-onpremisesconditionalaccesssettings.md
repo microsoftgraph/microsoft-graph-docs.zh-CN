@@ -3,14 +3,14 @@ title: onPremisesConditionalAccessSettings 资源类型
 description: 表示租户的 Exchange 本地条件访问设置的单例实体。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 44e0174ce6b7c8918e100c345189f79050038f9b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 354fa9af591e3c9837d24fe23d114480eea73e03
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441763"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025289"
 ---
 # <a name="onpremisesconditionalaccesssettings-resource-type"></a>onPremisesConditionalAccessSettings 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "43441763"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|尚未记录|
-|enabled|布尔值|指示是否为该组织启用了本地条件访问|
+|enabled|Boolean|指示是否为该组织启用了本地条件访问|
 |includedGroups|Guid 集合|本地条件访问将面向的用户组。 这些组中的所有用户都需要托管移动设备并符合邮件访问的要求。|
 |excludedGroups|Guid 集合|将由本地条件访问豁免的用户组。 这些组中的所有用户都将从条件访问策略中豁免。|
 |overrideDefaultRule|Boolean|允许设备时重写默认访问规则以确保授予访问。|
@@ -60,6 +60,8 @@ ms.locfileid: "43441763"
   "overrideDefaultRule": true
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8aa79fb8372b9603c8c0d4845d6107e9f3f3cd76
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: c3626d2e63fcea6a536d6dbd18845ea5331b428d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181762"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027074"
 ---
 # <a name="directorysetting-resource-type"></a>directorySetting 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "43181762"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-可以基于可用的[directorySettingTemplates](directorysettingtemplate.md)创建目录设置，并将其更改为预设的默认值。 这些设置可以控制实体或功能行为，既可以在租户范围级别，也可以在特定实体级别进行。 如果在租户范围和特定实体级别定义相同的设置，则特定实体级别设置可能会从租户范围设置中退出。  例如，租户范围内的设置可能会允许来宾受到现有组成员的邀请，但特定的组设置可能会退出，而不允许由组成员邀请来宾。 当前的系统定义的设置仅控制 Office 组的行为。
+可以基于可用的 [directorySettingTemplates](directorysettingtemplate.md)创建目录设置，并将其更改为预设的默认值。 这些设置可以控制实体或功能行为，既可以在租户范围级别，也可以在特定实体级别进行。 如果在租户范围和特定实体级别定义相同的设置，则特定实体级别设置可能会从租户范围设置中退出。  例如，租户范围内的设置可能会允许来宾受到现有组成员的邀请，但特定的组设置可能会退出，而不允许由组成员邀请来宾。 当前的系统定义的设置仅控制 Office 组的行为。
 
 > **注意**： directorySetting 资源类型的/beta 版本仅适用于组。 /V1.0 版本已重命名为 groupSetting。
 
@@ -38,7 +38,7 @@ ms.locfileid: "43181762"
 |displayName|string|来自关联模板的此组设置的显示名称。 只读。|
 |id|string| 这些设置的唯一标识符。 只读。|
 |templateId|string| 用于创建此组设置的模板的唯一标识符。 只读。|
-|values|[settingValue](settingvalue.md)集合| 名称值对的集合。 必须包含并设置在模板中定义的所有设置。|
+|values|[settingValue](settingvalue.md) 集合| 名称值对的集合。 必须包含并设置在模板中定义的所有设置。|
 
 ## <a name="relationships"></a>关系
 无
@@ -78,3 +78,5 @@ ms.locfileid: "43181762"
   "suppressions": []
 }
 -->
+
+

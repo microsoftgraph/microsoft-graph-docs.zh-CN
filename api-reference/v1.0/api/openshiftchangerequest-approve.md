@@ -5,18 +5,18 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 148b4c52a6f288d961c949cc0d599cb468c8b322
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 86ee81554c030eb0d4306866af386bba9e45a6cf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155066"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025667"
 ---
 # <a name="openshiftchangerequest-approve"></a>openShiftChangeRequest：批准
 
 命名空间：microsoft.graph
 
-批准[openShiftChangeRequest](../resources/openshiftchangerequest.md)对象。
+批准 [openShiftChangeRequest](../resources/openshiftchangerequest.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "44155066"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Schedule。 All，Group. 所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Schedule.ReadWrite.All |
+| 应用程序                            | Schedule.ReadWrite.All |
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -100,3 +100,4 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+

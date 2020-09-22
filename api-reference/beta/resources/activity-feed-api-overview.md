@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: conceptualPageType
 author: ailae
-ms.openlocfilehash: 9f0a596670e879907ca780fa7f11189d6343bf3d
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 681465df2896d8c7ef9586b131b217676fec0683
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811548"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024547"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>使用活动源 REST API
 
@@ -80,3 +80,5 @@ Each activity represents a unique...
 
 - 了解 [Microsoft 在使用活动时的体验](https://channel9.msdn.com/events/Build/2017/B8108)。
 - 了解 [活动源 API 并获取我离开的位置](https://channel9.msdn.com/Events/Windows/Windows-Developer-Day-Fall-Creators-Update/WinDev011)。
+
+

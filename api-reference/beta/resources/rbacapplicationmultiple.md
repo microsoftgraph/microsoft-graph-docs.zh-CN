@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e7f44133050a616cac190aee5c7eeac9904f8715
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: 5caf422293a0e06fa9ba524af2a4809b49709140
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44990265"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026388"
 ---
 # <a name="rbacapplicationmultiple-resource-type"></a>rbacApplicationMultiple 资源类型
 
@@ -18,16 +18,16 @@ ms.locfileid: "44990265"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于在单个角色分配中支持多个主体和多个作用域的 Microsoft 365 RBAC 提供程序的统一角色定义和角色分配的角色管理容器。 这不同于[rbacApplication](rbacapplication.md)资源类型。 Microsoft Intune 是此类 RBAC 提供程序的一个示例。 Intune 中的角色分配可以具有主体阵列和作用域组的阵列。
+用于在单个角色分配中支持多个主体和多个作用域的 Microsoft 365 RBAC 提供程序的统一角色定义和角色分配的角色管理容器。 这不同于 [rbacApplication](rbacapplication.md) 资源类型。 Microsoft Intune 是此类 RBAC 提供程序的一个示例。 Intune 中的角色分配可以具有主体阵列和作用域组的阵列。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
 | [创建 unifiedRoleAssignmentMultiple](../api/unifiedroleassignmentmultiple-post.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) | 通过发布到 roleAssignments 集合创建新的 unifiedRoleAssignmentMultiple。 |
-| [列出 roleAssignmentsMultiple](../api/unifiedroleassignmentmultiple-list.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md)集合 | 获取 unifiedRoleAssignmentMultiple 对象集合。 |
+| [列出 roleAssignmentsMultiple](../api/unifiedroleassignmentmultiple-list.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) 集合 | 获取 unifiedRoleAssignmentMultiple 对象集合。 |
 | [创建 unifiedRoleDefinition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | 通过发布到 roleDefinitions 集合创建新的 unifiedRoleDefinition。 |
-| [List roleDefinitions](../api/rbacapplication-list-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md)集合 | 获取 unifiedRoleDefinition 对象集合。 |
+| [List roleDefinitions](../api/rbacapplication-list-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) 集合 | 获取 unifiedRoleDefinition 对象集合。 |
 
 ## <a name="properties"></a>属性
 
@@ -50,3 +50,5 @@ ms.locfileid: "44990265"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

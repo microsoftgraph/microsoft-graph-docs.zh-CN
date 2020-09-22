@@ -5,18 +5,18 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 33b0bef244789beebd37402e91bfb96838d8bbec
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 3ca0aaafe1dd9a18507e8c20b7bffa941c0a71e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566470"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025716"
 ---
 # <a name="get-ipnamedlocation"></a>获取 ipNamedLocation
 
 命名空间：microsoft.graph
 
-检索[ipNamedLocation](../resources/ipNamedLocation.md)对象的属性和关系。
+检索 [ipNamedLocation](../resources/ipNamedLocation.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -52,7 +52,7 @@ GET /identity/conditionalAccess/namedLocations/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[ipNamedLocation](../resources/ipnamedlocation.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [ipNamedLocation](../resources/ipnamedlocation.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -135,3 +135,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

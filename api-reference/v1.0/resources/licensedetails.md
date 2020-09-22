@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6e57be3eb8524dc5edf2d8daf683a45de12601c1
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 0e733e9f85e1c9ea28dfb5ed44017e0fec44b4ee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811313"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025241"
 ---
 # <a name="licensedetails-resource-type"></a>licenseDetails 资源类型
 
@@ -68,3 +68,4 @@ ms.locfileid: "46811313"
   "section": "documentation",
   "tocPath": ""
 }-->
+

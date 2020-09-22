@@ -5,12 +5,12 @@ localization_priority: Normal
 author: anandyadavMSFT
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3c6eb4b38f2af40d3c559da91ab3275086d0e652
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 024fe8619ced3287560ad6246ca3169577a56383
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450833"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024426"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "43450833"
 
 该资源支持通过提供 [delta](../api/administrativeunit-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
 
-来看一个示例。 假设 Contoso Corp 由两个部门组成-一个 West 海岸部门和一个东海岸部门。 Contoso 的目录角色的作用范围限定为整个租户。 先生，Contoso company administrator，想要委派管理责任，但将这些职责范围限定为 West 海岸部门或东海岸部门。  用户可以创建*西海岸 admistrative 单元*，并将所有 West 海岸用户放入此管理单元。  同样，他可以创建一个*东海岸管理单元*。  现在，可以开始将管理责任委派给其他人，但**范围限定**为创建的新管理单元。 先生将 Jennifer 放在*帮助台管理员*角色中，**作用域**为*西海岸管理单元*。  这允许 Jennifer 重置任何用户的密码，但前提是这些用户位于*西海岸管理单元*中。  同样，工作先生将 Dave 放在*用户帐户管理员*角色中，该角色的**作用域**为*东海岸管理单元*。  这允许 Dave 更新用户、分配许可证和重置任何用户的密码，但前提是这些用户位于 "*东海岸" 管理单元*中。 有关视频概述，请参阅[Azure Active Directory 管理单元简介](https://channel9.msdn.com/Series/Windows-Azure-Active-Directory/Introduction-to-Azure-Active-Directory-Administrative-Units)。
+来看一个示例。 假设 Contoso Corp 由两个部门组成-一个 West 海岸部门和一个东海岸部门。 Contoso 的目录角色的作用范围限定为整个租户。 先生，Contoso company administrator，想要委派管理责任，但将这些职责范围限定为 West 海岸部门或东海岸部门。  用户可以创建 *西海岸 admistrative 单元* ，并将所有 West 海岸用户放入此管理单元。  同样，他可以创建一个 *东海岸管理单元*。  现在，可以开始将管理责任委派给其他人，但 **范围限定** 为创建的新管理单元。 先生将 Jennifer 放在 *帮助台管理员* 角色中， **作用域** 为 *西海岸管理单元*。  这允许 Jennifer 重置任何用户的密码，但前提是这些用户位于 *西海岸管理单元*中。  同样，工作先生将 Dave 放在 *用户帐户管理员* 角色中，该角色的 **作用域** 为 *东海岸管理单元*。  这允许 Dave 更新用户、分配许可证和重置任何用户的密码，但前提是这些用户位于 " *东海岸" 管理单元*中。 有关视频概述，请参阅 [Azure Active Directory 管理单元简介](https://channel9.msdn.com/Series/Windows-Azure-Active-Directory/Introduction-to-Azure-Active-Directory-Administrative-Units)。
 
 使用此资源，可以使用[扩展](/graph/extensibility-overview)将自己的数据添加到自定义属性。
 
@@ -33,14 +33,14 @@ ms.locfileid: "43450833"
 
 | 方法   | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
-|[Create](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | 创建新的管理单元。|
-|[List](../api/administrativeunit-list.md) | [administrativeUnit](administrativeunit.md)集合 |列出所有 administrativeUnits 的属性。|
+|[创建](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | 创建新的管理单元。|
+|[List](../api/administrativeunit-list.md) | [administrativeUnit](administrativeunit.md) 集合 |列出所有 administrativeUnits 的属性。|
 |[获取](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |读取特定 administrativeUnit 对象的属性和关系。|
 |[更新](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |更新 administrativeUnit 对象。 |
 |[删除](../api/administrativeunit-delete.md) | 无 |删除 administrativeUnit 对象。 |
-|[获取增量](../api/administrativeunit-delta.md)|[administrativeUnit](administrativeunit.md)|获取新创建、更新或删除的**administrativeUnits** ，而无需对整个资源集合执行完全读取。|
-|[添加成员](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| 添加成员（用户或组）。|
-|[列出成员](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) 集合| 获取（用户和组）成员的列表。|
+|[Get delta](../api/administrativeunit-delta.md)|[administrativeUnit](administrativeunit.md)|获取新创建、更新或删除的 **administrativeUnits** ，而无需对整个资源集合执行完全读取。|
+|[添加成员](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| 将成员添加 (用户或组) 。|
+|[List members](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) 集合| 获取 (的用户和组) 成员的列表。|
 |[获取成员](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| 获取特定成员。|
 |[删除成员](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| 删除成员。|
 |[添加作用域角色成员](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 添加作用域角色成员。|
@@ -65,8 +65,8 @@ ms.locfileid: "43450833"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |extensions|[扩展](extension.md)集合|为此管理单元定义的开放扩展的集合。 可为 Null。|
-|members|[directoryObject](directoryobject.md) collection|作为此 Adminsitrative 单位的成员的用户和组。 HTTP 方法： GET （list members）、POST （添加成员）、删除（移除成员）。|
-|scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) 集合| 此管理单元的作用域角色成员。  HTTP 方法： GET （list scopedRoleMemberships）、POST （add scopedRoleMembership）、DELETE （remove scopedRoleMembership）。 |
+|members|[directoryObject](directoryobject.md) collection|作为此 Adminsitrative 单位的成员的用户和组。 HTTP 方法：获取 (的列表成员) 、POST (添加成员) 、删除 (删除成员) 。|
+|scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) 集合| 此管理单元的作用域角色成员。  HTTP 方法： GET (list scopedRoleMemberships) ，POST (add scopedRoleMembership) ，DELETE (remove scopedRoleMembership) 。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -111,3 +111,5 @@ ms.locfileid: "43450833"
   "suppressions": []
 }
 -->
+
+

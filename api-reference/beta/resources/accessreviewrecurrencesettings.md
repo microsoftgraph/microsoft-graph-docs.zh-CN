@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsofit-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 7c45a0b57d869acdb49c5a37f235232c70e8ec6f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e629bbe5affbf2f21b7c4041e62a3df68785dacc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472234"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024580"
 ---
 # <a name="accessreviewrecurrencesettings-resource-type"></a>accessReviewRecurrenceSettings 资源类型
 
@@ -43,6 +43,8 @@ ms.locfileid: "43472234"
     "recurrenceCount":"Int32"
 }
 ```
+
+
 
 
 

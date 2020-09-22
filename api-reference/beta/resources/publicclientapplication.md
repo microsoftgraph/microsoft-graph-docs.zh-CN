@@ -1,16 +1,16 @@
 ---
 title: publicClientApplication 资源类型
-description: 指定非 Web 应用程序或 Web Api 的设置。 （例如，移动或其他公共客户端，如在桌面设备上运行的已安装应用程序）
+description: '指定非 Web 应用程序或 Web Api 的设置。  (例如，移动或其他公共客户端（如在桌面设备上运行的已安装应用程序）) '
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 55b4afed8db68fe07cb04965c1665f26f61b1c59
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0fd7715380577097a93cd8d8cc8a62178f50ec24
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457298"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026423"
 ---
 # <a name="publicclientapplication-resource-type"></a>publicClientApplication 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "43457298"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定非 web 应用或非 web API 的设置（例如，移动或其他公共客户端，如在桌面设备上运行的已安装应用程序）。
+指定非 web 应用程序或非 web API (的设置，例如，移动或其他公用客户端（如在桌面设备上运行的已安装应用程序) ）。
 
 ## <a name="properties"></a>属性
 
@@ -57,3 +57,5 @@ ms.locfileid: "43457298"
   "suppressions": []
 }
 -->
+
+

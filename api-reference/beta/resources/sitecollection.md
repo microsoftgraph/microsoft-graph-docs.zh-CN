@@ -6,16 +6,16 @@ title: SiteCollection
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 240f0b804e8b87c0dc3aae1e03a46be3527bed22
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 775680424557040d303664ba6fc445122bbd8965
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520539"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026227"
 ---
 # <a name="sitecollection-resource"></a>SiteCollection 资源
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -65,3 +65,5 @@ ms.locfileid: "42520539"
   "suppressions": []
 }
 -->
+
+

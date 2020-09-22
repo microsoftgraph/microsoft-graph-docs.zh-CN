@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: 9a7ca111f0f61577ea4b02a9ea76e48c35bd2fbe
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: cd7e3401032f77f83d5cc430116190ba547d26b3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353747"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027011"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Excel
 
@@ -1327,4 +1327,6 @@ Content-Type: application/json
 ```
 
 ## <a name="whats-new"></a>最近更新
-查找有关此 API 集的[最新新功能和更新](/graph/whats-new-overview)。
+了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7a726b1aa3aa122422cd43003366996c479461e0
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 34f2e368b45f3a9647eedfd3a6dc1ab6b2b6e9cc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217568"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026164"
 ---
 # <a name="stringkeylongvaluepair-resource-type"></a>stringKeyLongValuePair 资源类型
 
@@ -58,3 +58,5 @@ ms.locfileid: "43217568"
   "suppressions": []
 }
 -->
+
+
