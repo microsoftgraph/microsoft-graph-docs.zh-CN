@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0cc54c66b9c3df97c97b783f1ae3f8639e7bb71a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 69b052058f4b626646164e7162f8c3508171842f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43375901"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002882"
 ---
 # <a name="update-contactfolder"></a>更新 contactfolder
 
@@ -47,7 +47,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 |:---------------|:--------|:----------|
 |displayName|String|文件夹的显示名称。|
 |parentFolderId|String|文件夹的父文件夹 ID。|
-|wellKnownName|string|文件夹的名称（如果文件夹是可识别的文件夹）。 当前`contacts`是唯一可识别的 "联系人" 文件夹。|
+|wellKnownName|字符串|文件夹的名称（如果文件夹是可识别的文件夹）。 当前 `contacts` 是唯一可识别的 "联系人" 文件夹。|
 
 ## <a name="response"></a>响应
 
@@ -118,3 +118,5 @@ Content-length: 104
   ]
 }
 -->
+
+

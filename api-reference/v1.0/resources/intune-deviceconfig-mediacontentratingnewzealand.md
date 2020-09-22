@@ -3,14 +3,14 @@ title: mediaContentRatingNewZealand 资源类型
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6787ec82cf70aa10c72a20ab60619449dbb14327
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2860f308cb25b679ea12b2b2d978cf15dc87c40a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473104"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003092"
 ---
 # <a name="mediacontentratingnewzealand-resource-type"></a>mediaContentRatingNewZealand 资源类型
 
@@ -43,6 +43,8 @@ ms.locfileid: "43473104"
   "tvRating": "String"
 }
 ```
+
+
 
 
 

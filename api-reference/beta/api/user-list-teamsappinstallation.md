@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 17233aadd5afaee212dae6f4bc10f0af52e0f2aa
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: ff38da671199bc7bb3b66fe498a86d95817ad649
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793113"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004297"
 ---
 # <a name="list-apps-installed-for-user"></a>列出为用户安装的应用
 
@@ -183,3 +183,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

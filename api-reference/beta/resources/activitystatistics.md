@@ -5,25 +5,25 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 69b90ae911ca956dedf3a7675d7666c7faa4b906
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e94f9ad746c497e3b81eff6b919c50a59c6a0a11
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508427"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004276"
 ---
 # <a name="activitystatistics-resource-type"></a>activityStatistics 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示用户在工作时间内和工作时间以外的各种工作活动所花费的时间，用于请求中的指定时间范围，这将使用一天的聚合周期。
 
-以下类型的统计信息派生自**activityStatistics**：
+以下类型的统计信息派生自 **activityStatistics**：
 
 * [通话](callactivitystatistics.md)
-* [聊天](chatactivitystatistics.md)
+* [参与](chatactivitystatistics.md)
 * [电子邮件](emailactivitystatistics.md)
 * [焦点](focusactivitystatistics.md)
 * [要求](meetingactivitystatistics.md)
@@ -48,9 +48,9 @@ For example, the ID "email_2019-08-10_2019-08-12" represents the emailActivitySt
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|activity |analyticsActivityType |返回其统计信息的活动的类型。 可能的值为： `call`、 `chat`、 `email` `focus`、和`meeting`。 |
+|activity |analyticsActivityType |返回其统计信息的活动的类型。 可能的值为： `call` 、 `chat` 、 `email` 、 `focus` 和 `meeting` 。 |
 |duration |持续时间 |活动所用的总小时数。 值以 ISO 8601 格式表示，持续时间。 |
-|endDate |Date |活动结束的日期，以 ISO 8601 格式表示的日历日期。 例如，属性值可以是 "2019-07-03"，它遵循 YYYY-MM-DD 格式。 |
+|endDate |日期 |活动结束的日期，以 ISO 8601 格式表示的日历日期。 例如，属性值可以是 "2019-07-03"，它遵循 YYYY-MM-DD 格式。 |
 |id |String |活动的只读 ID。 请勿为您的方案分析或自定义值。 |
 |startDate |日期 |活动启动的日期，以 ISO 8601 格式表示的日历日期。 例如，属性值可以是 "2019-07-04"，它遵循 YYYY-MM-DD 格式。 |
 |timeZoneUsed |String |用户在 Microsoft Outlook 中设置的时区用于计算。 例如，属性值可以是 "太平洋标准时间"。 |
@@ -92,3 +92,4 @@ For example, the ID "email_2019-08-10_2019-08-12" represents the emailActivitySt
   "section": "documentation",
   "tocPath": ""
 }--> 
+

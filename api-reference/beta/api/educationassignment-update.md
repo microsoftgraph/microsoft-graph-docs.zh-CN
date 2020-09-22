@@ -5,20 +5,20 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 043268b4822c8f43a332d8a6908a3d6a3c407634
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5d9dba365e554f317d4c085bc51e1967b7d0ab78
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427268"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002541"
 ---
 # <a name="update-educationassignment"></a>更新 educationassignment
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新工作分配对象。 只有课堂中的教师才能执行此操作。 请注意，不能使用 PATCH 请求来更改工作分配的状态。 使用 "[发布](../api/educationassignment-publish.md)" 操作可更改工作分配状态。
+更新工作分配对象。 只有课堂中的教师才能执行此操作。 请注意，不能使用 PATCH 请求来更改工作分配的状态。 使用 " [发布](../api/educationassignment-publish.md) " 操作可更改工作分配状态。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -45,8 +45,8 @@ PATCH /education/classes/{id}/assignments/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowLateSubmissions|布尔| 提交在截止日期之后是否可以提交。|
-|allowStudentsToAddResourcesToSubmission|布尔| 学生是否可以将资源添加到提交。 指示提交的唯一项目是否来自工作分配资源列表。 |
+|allowLateSubmissions|Boolean| 提交在截止日期之后是否可以提交。|
+|allowStudentsToAddResourcesToSubmission|Boolean| 学生是否可以将资源添加到提交。 指示提交的唯一项目是否来自工作分配资源列表。 |
 |assignDateTime|DateTimeOffset| 应将分配发布给学生的日期。 |
 |assignTo|educationAssignmentRecipient| 获取工作分配的学生。|
 |closeDateTime|DateTimeOffset| 将为提交关闭工作分配的日期。 这是可选字段，如果工作分配不 allowLateSubmissions 或 closeDateTime 与 dueDateTime 相同，则可以为 null，但如果指定，则它必须大于或等于 dueDateTime。|
@@ -56,7 +56,7 @@ PATCH /education/classes/{id}/assignments/{id}
 |指令|itemBody| 向学生分配的说明以及工作分配。 |
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[educationAssignment](../resources/educationassignment.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [educationAssignment](../resources/educationassignment.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -95,7 +95,7 @@ Content-length: 279
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 
+下面展示了示例响应。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 将从实际调用中返回所有属性。
 
@@ -136,3 +136,5 @@ Content-length: 279
   ]
 }
 -->
+
+

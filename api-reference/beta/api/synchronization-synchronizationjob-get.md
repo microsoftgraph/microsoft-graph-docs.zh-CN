@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1bfe5c6e5932448eda4f977f9619843ed4bdec2d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4e6d0da0f18d68b61f67e57e40962de714b0e561
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466425"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004366"
 ---
 # <a name="get-synchronizationjob"></a>获取 synchronizationJob
 
@@ -47,7 +47,7 @@ GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 
 ## <a name="response"></a>响应
 
-如果成功，则在`200 OK`响应正文中返回具有[synchronizationJob](../resources/synchronization-synchronizationjob.md)的响应。
+如果成功，则 `200 OK` 在响应正文中返回具有 [synchronizationJob](../resources/synchronization-synchronizationjob.md) 的响应。
 
 ## <a name="example"></a>示例
 
@@ -147,3 +147,5 @@ Content-length: 2577
   ]
 }
 -->
+
+

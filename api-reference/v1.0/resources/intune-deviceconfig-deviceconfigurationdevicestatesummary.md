@@ -3,14 +3,14 @@ title: deviceConfigurationDeviceStateSummary 资源类型
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67fe927cf98f7802661938e54215c894804e5730
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3cf23f9ad6979b3d446f6f70fcd9f585101c49a7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447797"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003225"
 ---
 # <a name="deviceconfigurationdevicestatesummary-resource-type"></a>deviceConfigurationDeviceStateSummary 资源类型
 
@@ -62,6 +62,8 @@ ms.locfileid: "43447797"
   "conflictDeviceCount": 1024
 }
 ```
+
+
 
 
 

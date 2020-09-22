@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ad330d5b4db44550512c48d52ff80f4ec76e74d8
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 58d9c86030d1171b2c081962ac9721872f14f9cb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181383"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004625"
 ---
 # <a name="update-organization"></a>更新组织
 
@@ -18,7 +18,7 @@ ms.locfileid: "43181383"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新当前经过身份验证的组织的属性。 在这种情况`organization`下，将定义为恰好一个记录的集合，因此必须在请求中指定其**ID** 。  该**ID**也称为组织的**tenantId** 。
+更新当前经过身份验证的组织的属性。 在这种情况下， `organization` 将定义为恰好一个记录的集合，因此必须在请求中指定其 **ID** 。  该 **ID** 也称为组织的 **tenantId** 。
 
 ## <a name="permissions"></a>权限
 
@@ -52,13 +52,13 @@ PATCH /organization/{id}
 
 | 属性  | 类型 |说明|
 |:---------------|:--------|:----------|
-|marketingNotificationEmails|String 集合|                                        **注意：** 不可为 null。            |
+|marketingNotificationEmails|String collection|                                        **注意：** 不可为 null。            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|组织的隐私配置文件（设置 statementUrl 和 contactEmail）。            |
 |securityComplianceNotificationMails|String collection||
-|securityComplianceNotificationPhones|String 集合||
+|securityComplianceNotificationPhones|String collection||
 |technicalNotificationMails|String collection|                                        **注意：** 不可为 null。            |
 
-由于**组织**资源支持[扩展](/graph/extensibility-overview)，因此您可以使用该`PATCH`操作在现有**组织**实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
+由于 **组织** 资源支持 [扩展](/graph/extensibility-overview)，因此您可以使用该 `PATCH` 操作在现有 **组织** 实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
 
 ## <a name="response"></a>响应
 
@@ -141,3 +141,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fe657b591109f6d2e5e2863c9eb24a27055dd061
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fe8531c4c63606303148fcdf7def3db57768b24d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455996"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004583"
 ---
 # <a name="participant-configuremixer"></a>参与者： configureMixer
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ ms.locfileid: "42455996"
 | :-------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | JoinGroupCalls、InitiateGroupCalls 和所有调用 |
+| 应用程序     | JoinGroupCalls Calls.InitiateGroupCalls。所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,11 +47,11 @@ POST /communications/calls/{id}/participants/configureMixer
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|participantMixerLevels|[participantMixerLevel](../resources/participantmixerlevel.md)集合| 指定的音频参与者的混音器级别配置。|
+|participantMixerLevels|[participantMixerLevel](../resources/participantmixerlevel.md) 集合| 指定的音频参与者的混音器级别配置。|
 |适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-返回`202 Accepted`响应代码和位置标头，其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。
+返回 `202 Accepted` 响应代码和位置标头，其中包含为此请求创建的 [commsOperation](../resources/commsoperation.md) 的 uri。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -175,3 +175,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

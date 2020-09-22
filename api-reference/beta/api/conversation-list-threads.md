@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b71fb32f786ddfe0736ef6e14dc44d8c0e2d12f0
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: 4107769053a652a5542ff5ba77f14e7b7545e3ec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44743907"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002805"
 ---
 # <a name="list-threads"></a>列出线程
 
@@ -130,3 +130,5 @@ Content-length: 536
   ]
 }
 -->
+
+

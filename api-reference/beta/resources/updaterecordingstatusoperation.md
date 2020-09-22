@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b27aca68e159775bc9e4559d1ff6d5c005c9929a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 92c91d7e31f681e1d742c6a5354b4e221b4ebc6e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519587"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003478"
 ---
 # <a name="updaterecordingstatusoperation-resource-type"></a>updateRecordingStatusOperation 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,9 +25,9 @@ ms.locfileid: "42519587"
 | 属性            | 类型                        | 说明|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
 | 适用       | String                      | 唯一的客户端上下文字符串。 最大限制为256个字符。                              |
-| id                  | 字符串                      | 只读。                                                                         |
+| id                  | String                      | 只读。                                                                         |
 | resultInfo          | [resultInfo](resultinfo.md) | 结果信息。 只读。                                                 |
-| status              | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。               |
+| 状态              | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。               |
 
 ## <a name="relationships"></a>关系
 无
@@ -64,3 +64,5 @@ ms.locfileid: "42519587"
   "suppressions": []
 }
 -->
+
+

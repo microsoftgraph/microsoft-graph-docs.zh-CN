@@ -3,14 +3,14 @@ title: deviceComplianceScheduledActionForRule 资源类型
 description: 计划的规则操作
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b2c4b5970d35155980009d18cde5aa25690422f2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 391017a3ded43f40286b841594e80e773294e7a5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465800"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003239"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>deviceComplianceScheduledActionForRule 资源类型
 
@@ -55,6 +55,8 @@ ms.locfileid: "43465800"
   "ruleName": "String"
 }
 ```
+
+
 
 
 

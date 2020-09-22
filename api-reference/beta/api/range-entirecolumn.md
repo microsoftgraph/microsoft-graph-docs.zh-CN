@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f746d5370bd4d0df58443d09585974e414bfac56
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e668734ee4a777109c0c77a04a1df6851acd1650
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454780"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004468"
 ---
 # <a name="range-entirecolumn"></a>Range:EntireColumn
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -111,3 +111,5 @@ Content-length: 169
   ]
 }
 -->
+
+

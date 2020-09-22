@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f827dc86f8dd569ff330ac0acd4fdb4096bba603
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a13322b62a484d9a24bf8c59aa5b31bad7eb41a7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454757"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004443"
 ---
 # <a name="range-entirerow"></a>Range:EntireRow
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -111,3 +111,5 @@ Content-length: 169
   ]
 }
 -->
+
+

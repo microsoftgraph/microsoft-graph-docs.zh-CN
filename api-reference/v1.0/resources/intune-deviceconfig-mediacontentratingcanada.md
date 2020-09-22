@@ -3,14 +3,14 @@ title: mediaContentRatingCanada 资源类型
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 08673417c883c2aa2a8082010a0eaa001ca02004
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c806a284afc3eec0e2439b53711459254227793d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43410077"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003169"
 ---
 # <a name="mediacontentratingcanada-resource-type"></a>mediaContentRatingCanada 资源类型
 
@@ -43,6 +43,8 @@ ms.locfileid: "43410077"
   "tvRating": "String"
 }
 ```
+
+
 
 
 

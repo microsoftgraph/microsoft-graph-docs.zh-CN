@@ -5,16 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 3729078eb803cea09a998aee819904876e88c6c2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cf8043b4409b29220841e2706649050003b09f34
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508343"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004277"
 ---
 # <a name="alerthistorystate-resource-type"></a>alertHistoryState 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,13 +24,13 @@ ms.locfileid: "42508343"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|appId|String| 向警报提交更新（修补程序）的呼叫应用程序的应用程序 ID。 应从身份验证令牌中提取 appId，并且调用应用程序不手动输入该 appId。 |
-|assignedTo|String| 向其分配了警报的用户的 UPN （注意： alert。分配程序仅存储最后一个 value/UPN）。 |
+|appId|String| 向警报提交更新 (PATCH) 的调用应用程序的应用程序 ID。 应从身份验证令牌中提取 appId，并且调用应用程序不手动输入该 appId。 |
+|assignedTo|String| 用户的 UPN 已将警报分配给 (注意： alert。分配仅存储最后一个 value/UPN) 。 |
 |comments|字符串集合|登录用户输入的注释。|
 |反馈|String| 此更新中有关通知的分析师反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。|
-|status|String| 警报状态值（如果已更新）。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`、`dismissed`。|
+|状态|String| 如果) 更新，则通知状态值 (。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`、`dismissed`。|
 |updatedDateTime|DateTimeOffset| 通知更新的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|user|String| 更新了警报的已登录用户（在用户/委派身份验证模式下）中的 UPN。 |
+|user|String| 更新了警报的已登录用户的 UPN (从持有者令牌中获取-如果在用户/委派身份验证模式中) 。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -66,3 +66,4 @@ ms.locfileid: "42508343"
   "section": "documentation",
   "tocPath": ""
 }-->
+

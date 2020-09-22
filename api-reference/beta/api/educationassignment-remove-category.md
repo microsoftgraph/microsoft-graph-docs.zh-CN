@@ -5,16 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d154f4c46eaeaa84807966b3f78947e09ba01be0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: edcc71fcacf96dacdd9200e48f2ddedbbcda381e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427338"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002532"
 ---
 # <a name="remove-educationcategory"></a>删除 educationCategory
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -59,7 +59,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/1900
 ```
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 
+下面介绍响应示例。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 将从实际调用中返回所有属性。
 
@@ -84,3 +84,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

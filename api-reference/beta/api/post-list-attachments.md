@@ -5,16 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 51be738bc631fad1df61b6fd9e570b0b1a088cd8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b86eb79e7c4c97f7ae1121af973232b5e6acfa8b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455483"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004548"
 ---
 # <a name="list-attachments"></a>列出附件
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +29,7 @@ ms.locfileid: "42455483"
 |应用程序 | Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
-在组的[conversationThread](../resources/conversationthread.md)中获取[帖子](../resources/post.md)的附件。 指定父[对话](../resources/conversation.md)是可选的。
+在组的[conversationThread](../resources/conversationthread.md)中获取[帖子](../resources/post.md)的附件。 指定父 [对话](../resources/conversation.md) 是可选的。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -128,3 +128,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

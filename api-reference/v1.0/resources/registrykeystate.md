@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: b07f031fed393c4de41a55b55e8009ca9c8d8259
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: eaf1b3ff83a9809b2c283cdad7aef95bd9ca908d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806791"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002938"
 ---
 # <a name="registrykeystate-resource-type"></a>registryKeyState 资源类型
 
@@ -70,3 +70,4 @@ ms.locfileid: "46806791"
   "section": "documentation",
   "tocPath": ""
 }-->
+

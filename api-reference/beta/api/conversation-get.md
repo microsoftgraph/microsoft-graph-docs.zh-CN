@@ -5,16 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 216ac565f4002c1a5949c873c98bf06d5d886905
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5839c54dea464e61cea282fef7ca0d8023ec7305
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436613"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002812"
 ---
 # <a name="get-conversation"></a>获取对话
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -110,3 +110,5 @@ Content-length: 201
   ]
 }
 -->
+
+

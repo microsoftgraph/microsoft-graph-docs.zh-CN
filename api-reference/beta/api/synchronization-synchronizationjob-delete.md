@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: dd732200b8ab02be3bffc443272a45f2da8a9a77
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6bd25cf435a65f8b5a9b55308b4fd05a8e8de05d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466432"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004408"
 ---
 # <a name="delete-synchronizationjob"></a>删除 synchronizationJob
 
@@ -47,7 +47,7 @@ DELETE /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 
 ## <a name="response"></a>响应
 
-如果成功，则返回`204 No Content`响应。 它不在响应正文中返回任何内容。
+如果成功，则返回 `204 No Content` 响应。 它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 
@@ -101,3 +101,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

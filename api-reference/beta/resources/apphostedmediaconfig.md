@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 70bd631631dd5d4fdebe55d379ea61f98fba19a6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0e28d222209e528c9b6b24a2cdecedf3b318172b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508308"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004219"
 ---
 # <a name="apphostedmediaconfig-resource-type"></a>appHostedMediaConfig 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ ms.locfileid: "42508308"
 | 属性                          | 类型    | 说明                                                     |
 | :-------------------------------- | :------ | :---------------------------------------------------------------|
 | 块                              | String  | 由智能媒体代理生成的媒体配置 blob。    |
-| removeFromDefaultAudioGroup       | 布尔 | 从默认音频组中删除音频                       |
+| removeFromDefaultAudioGroup       | Boolean | 从默认音频组中删除音频                       |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -58,3 +58,5 @@ ms.locfileid: "42508308"
   "suppressions": []
 }
 -->
+
+

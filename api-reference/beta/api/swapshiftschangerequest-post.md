@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1563837620e65c71ec834b8b877a795e5e0e5c22
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: c4dd366ae1d9fc98cd495584581d3dfa0b73ab93
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154393"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004416"
 ---
 # <a name="create-swapshiftschangerequest"></a>创建 swapShiftsChangeRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "44154393"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建[swapShiftsChangeRequest](../resources/swapshiftschangerequest.md)对象的实例。
+创建 [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) 对象的实例。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "44154393"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 计划的所有写。 * |
+| 应用程序                            | 计划的所有写。 * |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
@@ -42,9 +42,9 @@ POST /teams/{teamId}/schedule/swapShiftsChangeRequests
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -52,11 +52,11 @@ POST /teams/{teamId}/schedule/swapShiftsChangeRequests
 | Content-type | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供新的[swapShiftsChangeRequest](../resources/swapshiftschangerequest.md)对象的 JSON 表示形式。
+在请求正文中，提供新的 [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和创建的[swapShiftsChangeRequest](../resources/swapshiftschangerequest.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和创建的 [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -123,3 +123,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: bbc4a765ae8b61154bbbd304b131038f52b131ee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c893b8c14cdb321d435f08c71c50fe43893c76f2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532080"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003253"
 ---
 # <a name="attendeeavailability-resource-type"></a>attendeeAvailability 资源类型
 
@@ -52,3 +52,4 @@ ms.locfileid: "42532080"
   "section": "documentation",
   "tocPath": ""
 }-->
+

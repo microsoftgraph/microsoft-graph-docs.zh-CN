@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 953a23ee0d0c7506592681d9de65e05b5cc1cc9b
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: d4c77e03bf54252cd8f93f29d4e9760371e37697
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806404"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004562"
 ---
 # <a name="phoneauthenticationmethod-enablesmssignin"></a>phoneAuthenticationMethod: enableSmsSignIn
 
@@ -18,23 +18,23 @@ ms.locfileid: "43806404"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为现有`mobile`的电话号码启用 SMS 登录。 若要成功启用，请执行以下操作：
+为现有的电话号码启用 SMS 登录 `mobile` 。 若要成功启用，请执行以下操作：
 
-* 电话必须具有`"phoneType": "mobile"`。
-* 电话在 SMS 登录系统中必须是唯一的（其他任何人也都不能使用该号码）。
-* 必须为用户启用[身份验证方法](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods)策略中的 SMS 登录。
+* 电话必须具有 `"phoneType": "mobile"` 。
+* 电话在 SMS 登录系统中必须是唯一的 (任何其他人也不能使用该号码) 。
+* 必须为用户启用 [身份验证方法](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) 策略中的 SMS 登录。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 作用于自助的权限（从最高特权到最高特权） | 对其他用户的权限（从最低到最高特权）|
+| 权限类型                        | 从最高特权到最高特权) 对自己 (的权限 | 对其他人进行操作的权限 (从至少到最高特权) |
 |:---------------------------------------|:-------------------------|:-----------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod，UserAuthenticationMethod。 | UserAuthenticationMethod |
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
 | 应用程序                            | 不支持。 | 不支持。 |
 
-对于在其他用户上执行管理的委派方案，管理员需要[以下角色之一](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 特权身份验证管理员
@@ -117,3 +117,5 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

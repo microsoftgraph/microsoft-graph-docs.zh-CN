@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0e417f8b10f50a101e0473b6ab9a53dacdb6a4be
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 3746964bd9f04f6d9cd321ec8ac15cb4d9981d92
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673808"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002763"
 ---
 # <a name="list-conversationmembers"></a>列出 conversationMembers
 
@@ -130,3 +130,5 @@ Content-length: 201
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 40ed8afa7700bc2fa1639986c336d15130b03a57
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: c3e6ac54c966ef924bf54d7b860b48cfc2e6a034
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050753"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002762"
 ---
 # <a name="add-conversationmember"></a>添加 conversationMember
 
@@ -18,10 +18,10 @@ ms.locfileid: "45050753"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将[conversationMember](../resources/conversationmember.md)添加到[频道](../resources/channel.md)。
+将 [conversationMember](../resources/conversationmember.md) 添加到 [频道](../resources/channel.md)。
 
 > [!NOTE]
->此操作仅在具有[channelMembershipType](../resources/enums.md#channelmembershiptype-values)的通道上受支持 `private` 。 与任何其他[channelMembershipType](../resources/enums.md#channelmembershiptype-values)的调用将返回400错误请求响应。
+>此操作仅在具有 [channelMembershipType](../resources/enums.md#channelmembershiptype-values) 的通道上受支持 `private` 。 与任何其他 [channelMembershipType](../resources/enums.md#channelmembershiptype-values) 的调用将返回400错误请求响应。
 
 ## <a name="permissions"></a>权限
 
@@ -52,7 +52,7 @@ POST /teams/{id}/channels/{id}/members
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |角色|string 集合|该用户的角色。|
-|用户|[用户](../resources/user.md)|要添加到频道的用户。|
+|user|[用户](../resources/user.md)|要添加到频道的用户。|
 
 ## <a name="response"></a>响应
 
@@ -121,3 +121,5 @@ Content-length: 468
   "email": null
 }
 ```
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: michaelrm97
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 45a185f71b93fa7ad5a5d791839487c7ab9b14e4
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: 36982981c5dcdf15526c5d163d7d088e8ce19326
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "45224793"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002560"
 ---
 # <a name="delete-registereduser"></a>删除 registeredUser
 
@@ -102,3 +102,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

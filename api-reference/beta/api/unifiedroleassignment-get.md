@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1011d3188987b2702be3faee4424fd4cda77d91f
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 00b9a325ec79b555476b0ff153266c267141efc5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215799"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004317"
 ---
 # <a name="get-unifiedroleassignment"></a>获取 unifiedRoleAssignment
 
@@ -18,9 +18,9 @@ ms.locfileid: "43215799"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象的属性和关系。
+检索 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,7 +40,7 @@ GET /roleManagement/directory/roleAssignments/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /roleManagement/directory/roleAssignments/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -114,11 +114,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-details-of-a-role-assignment-with-expand"></a>示例2：获取角色分配的详细信息`$expand`
+### <a name="example-2-get-details-of-a-role-assignment-with-expand"></a>示例2：获取角色分配的详细信息 `$expand`
 
 #### <a name="request"></a>请求
 
-以下是包含`$expand`查询参数的请求的示例。
+以下是包含查询参数的请求的示例 `$expand` 。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -203,3 +203,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

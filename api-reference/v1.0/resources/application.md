@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e3c281356587fbe96fa06fd760cb76beafc1b06a
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: 9e016142df550896a92abc752a25de50ae60f9f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45224974"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003372"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -149,3 +149,4 @@ ms.locfileid: "45224974"
   "suppressions": []
 }
 -->
+

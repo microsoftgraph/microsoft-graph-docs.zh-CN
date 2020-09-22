@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 5df3abd262ae9b09fa1843648906c70d07e6ec51
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
+ms.openlocfilehash: 2027654cbbeab483a965cdbce8d743092ec9f379
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991860"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003274"
 ---
 # <a name="attachmentitem-resource-type"></a>attachmentItem 资源类型
 
@@ -22,10 +22,10 @@ ms.locfileid: "43991860"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|attachmentType|字符串| 附件的类型。 可取值为：`file`、`item`、`reference`。 此为必需属性。|
+|attachmentType|String| 附件的类型。 可取值为：`file`、`item`、`reference`。 此为必需属性。|
 |contentType|String|附件中的数据的性质。 可选。|
 |isInline|Boolean|如果附件是内嵌附件，则为 `true`；否则为 `false`。 可选。|
-|name|字符串|附件的显示名称。 它可以是描述性字符串，不必是实际的文件名。 必需。|
+|name|String|附件的显示名称。 它可以是描述性字符串，不必是实际的文件名。 必需。|
 |size|Int64|附件大小，以字节为单位。 此为必需属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式

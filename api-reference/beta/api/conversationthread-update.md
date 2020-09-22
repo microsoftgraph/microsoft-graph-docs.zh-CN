@@ -5,16 +5,16 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 51a7624901ef0324204e851b21afd14fcf95b77f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9654dbb15fcda9ee3084f504b114570083e5d551
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436214"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002683"
 ---
 # <a name="update-conversationthread"></a>更新 conversationthread
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -136,3 +136,5 @@ Content-length: 419
   ]
 }
 -->
+
+

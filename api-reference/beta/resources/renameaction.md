@@ -6,16 +6,16 @@ title: RenameAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 6745f932c0a2d9b92273f45e147439cfbd2ed911
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e14521b6be27a9b4b2772cd80c172e5faf73b0d3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521129"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003498"
 ---
 # <a name="renameaction-resource-type"></a>RenameAction 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ ms.locfileid: "42521129"
 | 属性名称 | 类型   | 说明
 |:--------------|:-------|:----------------------------------------------------
 | oldName       | string | 项的原名称。
-| newName       | string | 项的新名称。
+| newName       | 字符串 | 项的新名称。
 
 ## <a name="remarks"></a>注解
 
@@ -59,3 +59,5 @@ ms.locfileid: "42521129"
   "suppressions": []
 }
 -->
+
+

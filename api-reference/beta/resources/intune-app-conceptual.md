@@ -4,12 +4,12 @@ description: 列出用于管理租户组织的应用及其策略 (REST) 的适�
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3c4dfa20789599012ccbd97d9db7950b87f53a86
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 0afe1b29abeb82922f1e36d1d61ca86f2e2bcd23
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793092"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004156"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -119,6 +119,9 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [移动应用发布状态](intune-apps-mobileapppublishingstate.md)
 - [移动应用关系](intune-apps-mobileapprelationship.md)
 - [移动应用关系状态](intune-apps-mobileapprelationshipstate.md)
+- [移动应用关系类型](intune-apps-mobileapprelationshiptype.md)
+- [移动应用取代](intune-apps-mobileappsupersedence.md)
+- [移动应用取代类型](intune-apps-mobileappsupersedencetype.md)
 - [移动包含的应用](intune-apps-mobilecontainedapp.md)
 - [移动 LOB 应用](intune-apps-mobilelobapp.md)
 - [Office 客户端签入状态](intune-cirrus-officeclientcheckinstatus.md)
@@ -184,3 +187,5 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Windows 应用商店应用](intune-apps-windowsstoreapp.md)
 - [Windows 通用 AppX](intune-apps-windowsuniversalappx.md)
 - [Windows Universal APPX 包含的应用](intune-apps-windowsuniversalappxcontainedapp.md)
+
+

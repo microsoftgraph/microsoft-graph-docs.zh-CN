@@ -3,14 +3,14 @@ title: mediaContentRatingAustralia 资源类型
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b25b309e011645c376a23c08b8673a7579ae69ad
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 38a72d9fdc77eea40b02c43464c7e8934885831e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43410132"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003197"
 ---
 # <a name="mediacontentratingaustralia-resource-type"></a>mediaContentRatingAustralia 资源类型
 
@@ -43,6 +43,8 @@ ms.locfileid: "43410132"
   "tvRating": "String"
 }
 ```
+
+
 
 
 

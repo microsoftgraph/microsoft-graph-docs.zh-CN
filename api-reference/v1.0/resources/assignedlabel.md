@@ -5,18 +5,18 @@ localization_priority: Normal
 author: krbain
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 2e527dbf8cc1dd42474bee467f5e1f9a0beca261
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: b3c226624e850d0d1a5bb2e3866246ecaee9d832
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45184008"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003309"
 ---
 # <a name="assignedlabel-resource-type"></a>assignedLabel 资源类型
 
 命名空间：microsoft.graph
 
-代表分配给 Microsoft 365 组的敏感度标签。 通过将分类（如机密、高度机密或常规）分配给组，允许管理员在组上强制实施特定的组设置。 敏感度标签由 Microsoft 365 Security & 合规性中心中的管理员发布，作为 Microsoft 信息保护功能的一部分。 有关敏感度标签的详细信息，请参阅[敏感度标签概述](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide)。
+代表分配给 Microsoft 365 组的敏感度标签。 通过将分类分配到组 (（如机密、高度机密或常规) ），允许管理员强制组中的特定组设置。 敏感度标签由 Microsoft 365 Security & 合规性中心中的管理员发布，作为 Microsoft 信息保护功能的一部分。 有关敏感度标签的详细信息，请参阅 [敏感度标签概述](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide)。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

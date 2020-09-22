@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: cloudhandler
-ms.openlocfilehash: ffd9e8939c04be658a08915430b571ecb452490d
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: e233e1995748f57a5da9eca51bf336b60d5273b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311519"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004268"
 ---
 # <a name="anonymousipriskevent-resource-type-deprecated"></a>anonymousIpRiskEvent 资源类型 (弃用) 
 
@@ -36,20 +36,20 @@ ms.locfileid: "47311519"
 |closedDateTime|dateTimeOffset| 风险事件关闭的日期和时间|
 |createdDateTime|dateTimeOffset| 风险事件的创建日期和时间。 此值始终大于或等于风险事件本身的日期时间。 这是查询风险事件时用作筛选器的正确属性。|
 |id|string| 只读|
-|ipAddress|string| 登录的 IP 地址|
+|ipAddress|字符串| 登录的 IP 地址|
 |location|string| 连接到登录 IP 地址的位置|
 |riskEventDateTime|dateTimeOffset| 风险事件发生的日期和时间|
-|riskEventStatus|string| 可取值为：`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons`。|
+|riskEventStatus|字符串| 可取值为：`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons`。|
 |riskLevel|string| 可取值为：`low`、`medium`、`high`。|
-|riskEventType|string| 风险的类型|
-|userDisplayName|string| 具有风险的用户的名称|
+|riskEventType|字符串| 风险的类型|
+|userDisplayName|字符串| 具有风险的用户的名称|
 |userId|string| 用户面临风险的 id|
 |userPrincipalName|string| 用户面临风险的用户主体名称|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|impactedUser|[user](user.md)| 只读。可为空。|
+|impactedUser|[用户](user.md)| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -95,3 +95,5 @@ ms.locfileid: "47311519"
   "suppressions": []
 }
 -->
+
+

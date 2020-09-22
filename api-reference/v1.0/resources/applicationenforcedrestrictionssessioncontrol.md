@@ -5,18 +5,18 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 993b28afafebe1240f99a7eddaeee85e47962ec6
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 0819b9133e6495bbe6691170ce0c38a2d93302d7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384622"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003365"
 ---
 # <a name="applicationenforcedrestrictionssessioncontrol-resource-type"></a>applicationEnforcedRestrictionsSessionControl 资源类型
 
 命名空间：microsoft.graph
 
-实施应用程序限制的会话控制。 继承自[条件访问会话控制](conditionalaccesssessioncontrol.md)。
+实施应用程序限制的会话控制。 继承自 [条件访问会话控制](conditionalaccesssessioncontrol.md)。
 
 ## <a name="properties"></a>属性
 
@@ -56,3 +56,4 @@ ms.locfileid: "45384622"
   "section": "documentation",
   "tocPath": ""
 }-->
+

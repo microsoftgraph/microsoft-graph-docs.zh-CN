@@ -3,24 +3,24 @@ title: 创建 policySet
 description: 创建新的 policySet 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 22a1d700b0f82cb98876e4fadb439ee5010fed12
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 93eb8bc0f8aa415190f5e0e4b3f0dbdc4fe317a5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456290"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004849"
 ---
 # <a name="create-policyset"></a>创建 policySet
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[policySet](../resources/intune-policyset-policyset.md)对象。
+创建新的 [policySet](../resources/intune-policyset-policyset.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,20 +53,20 @@ POST /deviceAppManagement/policySets
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|PolicySet 的键。|
+|id|String|PolicySet 的键。|
 |createdDateTime|DateTimeOffset|PolicySet 的创建时间。|
 |lastModifiedDateTime|DateTimeOffset|PolicySet 的上次修改时间。|
 |displayName|String|PolicySet 的 DisplayName。|
 |description|String|PolicySet 的说明。|
 |状态|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|PolicySet 的验证/分配状态。 可取值为：`unknown`、`validating`、`partialSuccess`、`success`、`error`、`notAssigned`。|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|错误代码（如果发生）。 可取值为：`noError`、`unauthorized`、`notFound`、`deleted`。|
-|guidedDeploymentTags|String 集合|引导部署的标记|
-|roleScopeTags|String 集合|PolicySet 的 RoleScopeTags|
+|guidedDeploymentTags|String collection|引导部署的标记|
+|roleScopeTags|String collection|PolicySet 的 RoleScopeTags|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[policySet](../resources/intune-policyset-policyset.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [policySet](../resources/intune-policyset-policyset.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -116,6 +116,9 @@ Content-Length: 489
   ]
 }
 ```
+
+
+
 
 
 

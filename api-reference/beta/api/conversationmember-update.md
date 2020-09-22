@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cb67a3ec07a7f22d40beea9d9831ea486e338ebe
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.openlocfilehash: f190e16094d2c0c1ea383ae2ff982812654759ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091387"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002705"
 ---
 # <a name="update-conversationmember"></a>更新 conversationMember
 
@@ -19,10 +19,10 @@ ms.locfileid: "45091387"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在[团队](../resources/team.md)中更新[conversationMember](../resources/conversationmember.md)的角色。
-或[频道](../resources/channel.md)。
+或 [频道](../resources/channel.md)。
 
 > [!NOTE]
-> 在通道上，此操作仅在具有[channelMembershipType](../resources/enums.md#channelmembershiptype-values)的通道上受支持 `private` 。 与任何其他[channelMembershipType](../resources/enums.md#channelmembershiptype-values)的调用将返回 `400 Bad Request` 响应。
+> 在通道上，此操作仅在具有 [channelMembershipType](../resources/enums.md#channelmembershiptype-values) 的通道上受支持 `private` 。 与任何其他 [channelMembershipType](../resources/enums.md#channelmembershiptype-values) 的调用将返回 `400 Bad Request` 响应。
 
 ## <a name="permissions"></a>权限
 
@@ -119,3 +119,5 @@ Content-length: 475
   "email": null
 }
 ```
+
+
