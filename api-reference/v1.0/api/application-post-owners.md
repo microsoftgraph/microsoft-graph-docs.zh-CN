@@ -5,20 +5,20 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9056bdf9ca72578a732ed219daa209d6db14fe21
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 3b91447ae4c031df3c910dbc799740bc9b7076a5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289677"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039017"
 ---
 # <a name="add-owner"></a>添加所有者
 
 命名空间：microsoft.graph
 
-通过发布到所有者集合将所有者添加到[应用程序](../resources/application.md)。
+通过发布到所有者集合将所有者添加到 [应用程序](../resources/application.md) 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -112,3 +112,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

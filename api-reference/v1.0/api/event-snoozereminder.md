@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5c5c5d7f70e5d447f246eb04d0b4542890cbcbde
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b64f1b621cc6171870227185fcc17f1e326e8d26
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461628"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038776"
 ---
 # <a name="event-snoozereminder"></a>event: snoozeReminder
 
@@ -124,3 +124,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

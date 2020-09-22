@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 34523b5ff0e358344b8c3c5b695e89a9bdddd7a2
-ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
+ms.openlocfilehash: a2940b4b873630f21ceb3c7db21456e81e8c859a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45165105"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039186"
 ---
 # <a name="workbook-resource-type"></a>工作簿资源类型
 
@@ -32,11 +32,11 @@ ms.locfileid: "45165105"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|names|[workbookNamedItem](workbooknameditem.md)集合 |表示工作簿范围内的已命名项目（称为区域和常量）的集合。只读。|
-|表格|[workbookTable](workbooktable.md)集合 |表示与工作簿关联的表的集合。只读。|
-|Worksheets|[workbookWorksheet](workbookworksheet.md)集合 |表示与工作簿关联的工作表的集合。 只读。|
+|names|[workbookNamedItem](workbooknameditem.md) 集合 |表示工作簿范围内的已命名项目（称为区域和常量）的集合。只读。|
+|表格|[workbookTable](workbooktable.md) 集合 |表示与工作簿关联的表的集合。只读。|
+|Worksheets|[workbookWorksheet](workbookworksheet.md) 集合 |表示与工作簿关联的工作表的集合。 只读。|
 |workbbookApplication|[workbookApplication](workbookapplication.md) |表示管理工作簿的 Excel workbookApplication。|
-|operations|[workbookOperation](workbookoperation.md)集合|工作簿操作的状态。 不支持获取操作集合，但如果 `Location` 响应中返回了标头，则可以获取长时间运行的操作的状态。 只读。 可为 Null。|
+|operations|[workbookOperation](workbookoperation.md) 集合|工作簿操作的状态。 不支持获取操作集合，但如果响应中返回 `Location` 标头，可以获取长时间运行操作的状态。 只读。 可为空。|
 
 ## <a name="functions"></a>函数
 
@@ -161,3 +161,5 @@ content-type: application/json;odata.metadata
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

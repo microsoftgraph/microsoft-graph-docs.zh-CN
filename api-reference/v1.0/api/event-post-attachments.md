@@ -5,20 +5,20 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 750c86af5b7dab98e806abdba6b01e7dfe935aac
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fc4ac88d706d64cbcf260fb841c0fd4297aa5114
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461635"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038789"
 ---
 # <a name="add-attachment"></a>添加附件
 
 命名空间：microsoft.graph
 
-使用此 API 可将[附件](../resources/attachment.md)添加到现有[事件](../resources/event.md)中。 此操作将限制可添加到 3 MB 以下的附件的大小。
+使用此 API 可将 [附件](../resources/attachment.md) 添加到现有 [事件](../resources/event.md)中。 此操作将限制可添加到 3 MB 以下的附件的大小。
 
-如果组织者将附件添加到会议事件中，则组织者随后可以[更新](event-update.md)事件以发送附件并为每个与会者同时更新事件。
+如果组织者将附件添加到会议事件中，则组织者随后可以 [更新](event-update.md) 事件以发送附件并为每个与会者同时更新事件。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -223,3 +223,4 @@ Content-length: 162
   "suppressions": [
   ]
 }-->
+

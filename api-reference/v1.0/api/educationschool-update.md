@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2cbbd02b3fcbb3653e1cc3a9adeffc18865894cb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5f1428992c909ac5c8e33cfd0ec53131ea5a0feb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517444"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038945"
 ---
 # <a name="update-educationschool-properties"></a>更新 educationSchool 属性
 
@@ -48,15 +48,15 @@ PATCH /education/schools/{id}
 
 | 属性            | 类型                                               | 说明                        |
 | :------------------ | :------------------------------------------------- | :--------------------------------- |
-| displayName         | 字符串                                             | 学校的显示名称         |
-| 说明         | 字符串                                             | 学校描述          |
-| principalEmail      | 字符串                                             | 主体的电子邮件地址     |
-| principalName       | 字符串                                             | 主体名称              |
-| externalPrincipalId | 字符串                                             | 同步系统中主体的 ID。 |
-| highestGrade        | 字符串                                             | 教授的最高年级。              |
-| lowestGrade         | 字符串                                             | 教授的最低年级。               |
-| schoolNumber        | 字符串                                             | 学校编号。                     |
-| externalId          | 字符串                                             | 同步系统中学校的 ID。    |
+| displayName         | String                                             | 学校的显示名称         |
+| description         | String                                             | 学校描述          |
+| principalEmail      | String                                             | 主体的电子邮件地址     |
+| principalName       | String                                             | 主体名称              |
+| externalPrincipalId | String                                             | 同步系统中主体的 ID。 |
+| highestGrade        | String                                             | 教授的最高年级。              |
+| lowestGrade         | String                                             | 教授的最低年级。               |
+| schoolNumber        | String                                             | 学校编号。                     |
+| externalId          | String                                             | 同步系统中学校的 ID。    |
 | phone               | String                                             | 学校电话号码。            |
 | address             | [physicalAddress](../resources/physicaladdress.md) | 学校地址。             |
 | createdBy           | [identitySet](../resources/identityset.md)         | 创建了学校的实体。     |
@@ -157,3 +157,4 @@ Content-length: 292
   "suppressions": [
   ]
 }-->
+

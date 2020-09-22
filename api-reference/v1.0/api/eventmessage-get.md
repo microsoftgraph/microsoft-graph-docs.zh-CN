@@ -1,16 +1,16 @@
 ---
 title: 获取 eventMessage
-description: 在**事件**导航属性中展开参数，以在与会者的日历中获取关联的事件。
+description: 在 **事件** 导航属性中展开参数，以在与会者的日历中获取关联的事件。
 localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6aae4c310ad98c81bec05929699826d4f6eff6c4
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: 8f3d05bf9e2ed8de15ab1b79946dbf4c71ce7920
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427485"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038751"
 ---
 # <a name="get-eventmessage"></a>获取 eventMessage
 
@@ -359,3 +359,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: aafc3875277982e57413a924181680e172ba4d82
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e12d5fba4378054a16a4b7fc21573ab966f67d01
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461658"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038786"
 ---
 # <a name="list-instances"></a>列表实例
 
@@ -201,3 +201,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

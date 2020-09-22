@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fea55d7f4fdaa0b4cefd7cce16d9f1c8f7836362
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8ec7dbc4b42cffa98e0cc7924ed3703d03cd60fc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517430"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038919"
 ---
 # <a name="get-user"></a>获取用户
 
@@ -118,3 +118,4 @@ Content-length: 491
   "suppressions": [
   ]
 }-->
+

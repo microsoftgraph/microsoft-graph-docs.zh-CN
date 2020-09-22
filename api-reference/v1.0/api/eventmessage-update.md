@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dc0955b6d0490f5eb499916fef1bc682f6652500
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 66484d7ba599ec3805bdb75361d2766790566c6d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461515"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038681"
 ---
 # <a name="update-eventmessage"></a>更新 eventMessage
 
@@ -127,3 +127,4 @@ Content-length: 248
   "suppressions": [
   ]
 }-->
+

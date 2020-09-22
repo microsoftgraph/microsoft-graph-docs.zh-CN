@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: jewan-microsoft
-ms.openlocfilehash: fc4f3962e5be1eeb69598548067b61aa86c9c246
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 6e95775881ef78c70c50a634134ba20341173e77
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806273"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039193"
 ---
 # <a name="onenoteresource-resource-type"></a>onenoteResource 资源类型
 
@@ -94,3 +94,5 @@ GET ../onenote/pages/{id}/content
   "suppressions": []
 }
 -->
+
+

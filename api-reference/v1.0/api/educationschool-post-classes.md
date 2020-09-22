@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f3ea3d025e55d9e56bc8488d404ca2c028f3bbb8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3601ccb8c6f46ed3ca48685cc438e41d62710a45
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517458"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038954"
 ---
 # <a name="add-educationclass-to-educationschool"></a>将 educationClass 添加到 educationSchool
 
@@ -107,3 +107,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

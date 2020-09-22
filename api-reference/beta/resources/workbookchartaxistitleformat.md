@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a676bb28ccce19c7f4293e9fc082a59ec0cfdbb7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c585fc426474fe0a7790874331a2ae53227fc1a7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519356"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039048"
 ---
 # <a name="workbookchartaxistitleformat-resource-type"></a>workbookChartAxisTitleFormat 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -63,3 +63,5 @@ ms.locfileid: "42519356"
   "suppressions": []
 }
 -->
+
+

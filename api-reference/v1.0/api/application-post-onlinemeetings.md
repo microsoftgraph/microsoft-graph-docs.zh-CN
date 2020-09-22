@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e0d855e84947c7dc480a4168b3d15baebecb1f80
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: be8fb17a2c59024a0902923eb775c8972bb702f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556343"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039031"
 ---
 # <a name="create-onlinemeeting"></a>创建 onlineMeeting
 
@@ -158,3 +158,4 @@ Content-Type: application/json
   ]
 }
 -->
+

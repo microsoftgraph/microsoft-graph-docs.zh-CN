@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3f9f59543dfc596d06718c5e7b351a5a447b2018
-ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
+ms.openlocfilehash: d4db2cb360083c654128c1a4b363fe72387afd08
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44568815"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038730"
 ---
 # <a name="add-attachment"></a>添加附件
 
@@ -26,7 +26,7 @@ ms.locfileid: "44568815"
 
 所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -172,3 +172,4 @@ HTTP/1.1 201 Created
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 65ce55da63cc0991b2acfec34c5c38aa34f3e910
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: cceb7aacf1b06e15397ac9b227f9a595ee4d78b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809269"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038633"
 ---
 # <a name="filter-clear"></a>Filter: clear
 
@@ -24,7 +24,7 @@ ms.locfileid: "46809269"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -98,3 +98,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

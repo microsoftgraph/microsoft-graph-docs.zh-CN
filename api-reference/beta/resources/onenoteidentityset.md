@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: c0d2f0b4ed65ac83a59036c362136b7af772d21c
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 32c4d7001f0ab8a7341470e749aa4dc6833599e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290579"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039214"
 ---
 # <a name="onenoteidentityset-resource-type"></a>oneNoteIdentitySet 资源类型
 
@@ -20,10 +20,10 @@ ms.locfileid: "44290579"
 
 **支持即将推出**
 
-OneNoteIdentitySet 类型是[OneNoteIdentity](onenoteidentity.md)对象的键控集合。
-它用于表示一组与_笔记本_、_节_或_页面_的各种事件相关联的标识，如 "_创建者_" 或 "_上次修改者_"。 
+OneNoteIdentitySet 类型是 [OneNoteIdentity](onenoteidentity.md) 对象的键控集合。
+它用于表示一组与 _笔记本_、 _节_ 或 _页面_的各种事件相关联的标识，如 " _创建者_ " 或 " _上次修改者_"。 
  
-当前它包含单个密钥，即_**user**_。  将来，可能会添加用于更改项目的设备或应用程序等键。
+当前它包含单个密钥，即 _**user**_。  将来，可能会添加用于更改项目的设备或应用程序等键。
 
 将来，此类型将与[了解 identityset](identityset.md)合并。
 
@@ -62,3 +62,5 @@ OneNoteIdentitySet 类型是[OneNoteIdentity](onenoteidentity.md)对象的键控
   "suppressions": []
 }
 -->
+
+

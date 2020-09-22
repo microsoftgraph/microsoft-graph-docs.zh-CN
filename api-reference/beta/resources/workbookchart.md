@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f28e89ae20d5675da303f11dc67b6e4b562b5340
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb430048de0b8141c7da74d9377bd937659af221
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519405"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039158"
 ---
 # <a name="workbookchart-resource-type"></a>workbookChart 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,13 +27,13 @@ ms.locfileid: "42519405"
 |:---------------|:--------|:----------|
 |[获取图表](../api/chart-get.md) | [workbookChart](workbookchart.md) |读取 chart 对象的属性和关系。|
 |[创建 ChartSeries](../api/chart-post-series.md) |[workbookChartSeries](workbookchartseries.md)| 通过发布到序列集合创建新的 ChartSeries。|
-|[创建系列](../api/chart-list-series.md) |[workbookChartSeries](workbookchartseries.md)集合| 获取 ChartSeries 对象集合。|
+|[创建系列](../api/chart-list-series.md) |[workbookChartSeries](workbookchartseries.md) 集合| 获取 ChartSeries 对象集合。|
 |[更新](../api/chart-update.md) | [workbookChart](workbookchart.md)   |更新 Chart 对象。 |
 |[图像](../api/chart-image.md)|图像 base64 编码字符串|通过缩放图表适应指定的尺寸，将图表呈现为 base64 编码的图像。|
 |[删除](../api/chart-delete.md)|无|删除 chart 对象。|
 |[Setdata](../api/chart-setdata.md)|无|重置图表的源数据。|
 |[Setposition](../api/chart-setposition.md)|无|相对于工作表上的单元格放置图表。|
-|[列出](../api/chart-list.md) | [workbookChart](workbookchart.md)集合 |获取 chart 对象集合。 |
+|[列出](../api/chart-list.md) | [workbookChart](workbookchart.md) 集合 |获取 chart 对象集合。 |
 |[Itemat](../api/chartcollection-itemat.md)|[workbookChart](workbookchart.md)|根据其在集合中的位置获取图表。|
 |[添加](../api/chartcollection-add.md)|[workbookChart](workbookchart.md)|创建新图表。|
 
@@ -54,7 +54,7 @@ ms.locfileid: "42519405"
 |dataLabels|[workbookChartDataLabels](workbookchartdatalabels.md)|表示图表上的数据标签。只读。|
 |format|[workbookChartAreaFormat](workbookchartareaformat.md)|封装图表区域的格式属性。只读。|
 |legend|[workbookChartLegend](workbookchartlegend.md)|表示图表的图例。只读。|
-|series|[workbookChartSeries](workbookchartseries.md)集合|表示单个系列或图表中的系列集合。只读。|
+|series|[workbookChartSeries](workbookchartseries.md) 集合|表示单个系列或图表中的系列集合。只读。|
 |职位|[workbookChartTitle](workbookcharttitle.md)|表示指定图表的标题，包括标题的文本、可见性、位置和格式。只读。|
 |工作表|[workbookWorksheet](workbookworksheet.md)|包含当前 chart 的 worksheet 对象。 只读。|
 
@@ -94,3 +94,5 @@ ms.locfileid: "42519405"
   "suppressions": []
 }
 -->
+
+
