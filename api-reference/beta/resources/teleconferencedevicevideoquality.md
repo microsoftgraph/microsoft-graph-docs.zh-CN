@@ -5,41 +5,41 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0ba68e9b6566cde9ede255d2f3a196558621aad7
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: 311f8811935d9fc67fd74ed3e720d3e60c0c583a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510985"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046231"
 ---
-# <a name="teleconferencedevicevideoquality-resource-type"></a><span data-ttu-id="da149-103">teleconferenceDeviceVideoQuality 资源类型</span><span class="sxs-lookup"><span data-stu-id="da149-103">teleconferenceDeviceVideoQuality resource type</span></span>
+# <a name="teleconferencedevicevideoquality-resource-type"></a><span data-ttu-id="f5f09-103">teleconferenceDeviceVideoQuality 资源类型</span><span class="sxs-lookup"><span data-stu-id="f5f09-103">teleconferenceDeviceVideoQuality resource type</span></span>
 
-<span data-ttu-id="da149-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="da149-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f5f09-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f5f09-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="da149-105">表示视频电话会议设备视频质量数据。</span><span class="sxs-lookup"><span data-stu-id="da149-105">Represents video teleconferencing device video quality data.</span></span>
+<span data-ttu-id="f5f09-105">表示视频电话会议设备视频质量数据。</span><span class="sxs-lookup"><span data-stu-id="f5f09-105">Represents video teleconferencing device video quality data.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="da149-106">属性</span><span class="sxs-lookup"><span data-stu-id="da149-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f5f09-106">属性</span><span class="sxs-lookup"><span data-stu-id="f5f09-106">Properties</span></span>
 
-<span data-ttu-id="da149-107">**TeleconferenceDeviceVideoQuality**资源继承[teleconferenceDeviceMediaQuality](teleconferencedevicemediaquality.md)中的属性，并包含以下其他属性。</span><span class="sxs-lookup"><span data-stu-id="da149-107">The **teleconferenceDeviceVideoQuality** resource inherits the properties from [teleconferenceDeviceMediaQuality](teleconferencedevicemediaquality.md), and includes the following additional properties.</span></span>
+<span data-ttu-id="f5f09-107">**TeleconferenceDeviceVideoQuality**资源继承[teleconferenceDeviceMediaQuality](teleconferencedevicemediaquality.md)中的属性，并包含以下其他属性。</span><span class="sxs-lookup"><span data-stu-id="f5f09-107">The **teleconferenceDeviceVideoQuality** resource inherits the properties from [teleconferenceDeviceMediaQuality](teleconferencedevicemediaquality.md), and includes the following additional properties.</span></span>
 
-| <span data-ttu-id="da149-108">属性</span><span class="sxs-lookup"><span data-stu-id="da149-108">Property</span></span>     | <span data-ttu-id="da149-109">类型</span><span class="sxs-lookup"><span data-stu-id="da149-109">Type</span></span>        | <span data-ttu-id="da149-110">说明</span><span class="sxs-lookup"><span data-stu-id="da149-110">Description</span></span> |
+| <span data-ttu-id="f5f09-108">属性</span><span class="sxs-lookup"><span data-stu-id="f5f09-108">Property</span></span>     | <span data-ttu-id="f5f09-109">类型</span><span class="sxs-lookup"><span data-stu-id="f5f09-109">Type</span></span>        | <span data-ttu-id="f5f09-110">说明</span><span class="sxs-lookup"><span data-stu-id="f5f09-110">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="da149-111">averageInboundBitRate</span><span class="sxs-lookup"><span data-stu-id="da149-111">averageInboundBitRate</span></span>|<span data-ttu-id="da149-112">双精度</span><span class="sxs-lookup"><span data-stu-id="da149-112">Double</span></span>|<span data-ttu-id="da149-113">每秒平均入站流视频比特率。</span><span class="sxs-lookup"><span data-stu-id="da149-113">The average inbound stream video bit rate per second.</span></span>|
-|<span data-ttu-id="da149-114">averageInboundFrameRate</span><span class="sxs-lookup"><span data-stu-id="da149-114">averageInboundFrameRate</span></span>|<span data-ttu-id="da149-115">双精度</span><span class="sxs-lookup"><span data-stu-id="da149-115">Double</span></span>|<span data-ttu-id="da149-116">每秒平均入站流视频帧速率。</span><span class="sxs-lookup"><span data-stu-id="da149-116">The average inbound stream video frame rate per second.</span></span>|
-|<span data-ttu-id="da149-117">averageOutboundBitRate</span><span class="sxs-lookup"><span data-stu-id="da149-117">averageOutboundBitRate</span></span>|<span data-ttu-id="da149-118">双精度</span><span class="sxs-lookup"><span data-stu-id="da149-118">Double</span></span>|<span data-ttu-id="da149-119">每秒的平均出站流视频比特率。</span><span class="sxs-lookup"><span data-stu-id="da149-119">The average outbound stream video bit rate per second.</span></span>|
-|<span data-ttu-id="da149-120">averageOutboundFrameRate</span><span class="sxs-lookup"><span data-stu-id="da149-120">averageOutboundFrameRate</span></span>|<span data-ttu-id="da149-121">双精度</span><span class="sxs-lookup"><span data-stu-id="da149-121">Double</span></span>|<span data-ttu-id="da149-122">每秒的平均出站流视频帧速率。</span><span class="sxs-lookup"><span data-stu-id="da149-122">The average outbound stream video frame rate per second.</span></span>|
+|<span data-ttu-id="f5f09-111">averageInboundBitRate</span><span class="sxs-lookup"><span data-stu-id="f5f09-111">averageInboundBitRate</span></span>|<span data-ttu-id="f5f09-112">双精度</span><span class="sxs-lookup"><span data-stu-id="f5f09-112">Double</span></span>|<span data-ttu-id="f5f09-113">每秒平均入站流视频比特率。</span><span class="sxs-lookup"><span data-stu-id="f5f09-113">The average inbound stream video bit rate per second.</span></span>|
+|<span data-ttu-id="f5f09-114">averageInboundFrameRate</span><span class="sxs-lookup"><span data-stu-id="f5f09-114">averageInboundFrameRate</span></span>|<span data-ttu-id="f5f09-115">双精度</span><span class="sxs-lookup"><span data-stu-id="f5f09-115">Double</span></span>|<span data-ttu-id="f5f09-116">每秒平均入站流视频帧速率。</span><span class="sxs-lookup"><span data-stu-id="f5f09-116">The average inbound stream video frame rate per second.</span></span>|
+|<span data-ttu-id="f5f09-117">averageOutboundBitRate</span><span class="sxs-lookup"><span data-stu-id="f5f09-117">averageOutboundBitRate</span></span>|<span data-ttu-id="f5f09-118">双精度</span><span class="sxs-lookup"><span data-stu-id="f5f09-118">Double</span></span>|<span data-ttu-id="f5f09-119">每秒的平均出站流视频比特率。</span><span class="sxs-lookup"><span data-stu-id="f5f09-119">The average outbound stream video bit rate per second.</span></span>|
+|<span data-ttu-id="f5f09-120">averageOutboundFrameRate</span><span class="sxs-lookup"><span data-stu-id="f5f09-120">averageOutboundFrameRate</span></span>|<span data-ttu-id="f5f09-121">双精度</span><span class="sxs-lookup"><span data-stu-id="f5f09-121">Double</span></span>|<span data-ttu-id="f5f09-122">每秒的平均出站流视频帧速率。</span><span class="sxs-lookup"><span data-stu-id="f5f09-122">The average outbound stream video frame rate per second.</span></span>|
 
-### <a name="derived-types"></a><span data-ttu-id="da149-123">派生类型</span><span class="sxs-lookup"><span data-stu-id="da149-123">Derived types</span></span>
+### <a name="derived-types"></a><span data-ttu-id="f5f09-123">派生类型</span><span class="sxs-lookup"><span data-stu-id="f5f09-123">Derived types</span></span>
 
-| <span data-ttu-id="da149-124">类型</span><span class="sxs-lookup"><span data-stu-id="da149-124">Type</span></span>                                                 | <span data-ttu-id="da149-125">说明</span><span class="sxs-lookup"><span data-stu-id="da149-125">Description</span></span>                                                         |
+| <span data-ttu-id="f5f09-124">类型</span><span class="sxs-lookup"><span data-stu-id="f5f09-124">Type</span></span>                                                 | <span data-ttu-id="f5f09-125">说明</span><span class="sxs-lookup"><span data-stu-id="f5f09-125">Description</span></span>                                                         |
 |:-----------------------------------------------------|:--------------------------------------------------------------------|
-| [<span data-ttu-id="da149-126">teleconferenceDeviceScreenSharingQuality</span><span class="sxs-lookup"><span data-stu-id="da149-126">teleconferenceDeviceScreenSharingQuality</span></span>](teleconferencedevicescreensharingquality.md)    | <span data-ttu-id="da149-127">视频电话会议设备屏幕-共享质量数据。</span><span class="sxs-lookup"><span data-stu-id="da149-127">Video teleconferencing device screen-sharing quality data.</span></span> |
+| [<span data-ttu-id="f5f09-126">teleconferenceDeviceScreenSharingQuality</span><span class="sxs-lookup"><span data-stu-id="f5f09-126">teleconferenceDeviceScreenSharingQuality</span></span>](teleconferencedevicescreensharingquality.md)    | <span data-ttu-id="f5f09-127">视频电话会议设备屏幕-共享质量数据。</span><span class="sxs-lookup"><span data-stu-id="f5f09-127">Video teleconferencing device screen-sharing quality data.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="da149-128">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="da149-128">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f5f09-128">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f5f09-128">JSON representation</span></span>
 
-<span data-ttu-id="da149-129">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="da149-129">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f5f09-129">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f5f09-129">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -89,3 +89,5 @@ ms.locfileid: "43510985"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

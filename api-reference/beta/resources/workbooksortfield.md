@@ -5,38 +5,38 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
 author: ruoyingl
-ms.openlocfilehash: d5622a727ed084f7dc8e991dd76b166527988549
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 5f296d7d2d748213c24f1d49f6363f86d2b1af84
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807365"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046102"
 ---
-# <a name="workbooksortfield-resource-type"></a><span data-ttu-id="ae818-103">workbookSortField 资源类型</span><span class="sxs-lookup"><span data-stu-id="ae818-103">workbookSortField resource type</span></span>
+# <a name="workbooksortfield-resource-type"></a><span data-ttu-id="4b464-103">workbookSortField 资源类型</span><span class="sxs-lookup"><span data-stu-id="4b464-103">workbookSortField resource type</span></span>
 
-<span data-ttu-id="ae818-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ae818-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4b464-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4b464-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ae818-105">表示排序操作中的条件。</span><span class="sxs-lookup"><span data-stu-id="ae818-105">Represents a condition in a sorting operation.</span></span>
+<span data-ttu-id="4b464-105">表示排序操作中的条件。</span><span class="sxs-lookup"><span data-stu-id="4b464-105">Represents a condition in a sorting operation.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ae818-106">属性</span><span class="sxs-lookup"><span data-stu-id="ae818-106">Properties</span></span>
-| <span data-ttu-id="ae818-107">属性</span><span class="sxs-lookup"><span data-stu-id="ae818-107">Property</span></span>     | <span data-ttu-id="ae818-108">类型</span><span class="sxs-lookup"><span data-stu-id="ae818-108">Type</span></span>   |<span data-ttu-id="ae818-109">说明</span><span class="sxs-lookup"><span data-stu-id="ae818-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="4b464-106">属性</span><span class="sxs-lookup"><span data-stu-id="4b464-106">Properties</span></span>
+| <span data-ttu-id="4b464-107">属性</span><span class="sxs-lookup"><span data-stu-id="4b464-107">Property</span></span>     | <span data-ttu-id="4b464-108">类型</span><span class="sxs-lookup"><span data-stu-id="4b464-108">Type</span></span>   |<span data-ttu-id="4b464-109">说明</span><span class="sxs-lookup"><span data-stu-id="4b464-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ae818-110">ascending</span><span class="sxs-lookup"><span data-stu-id="ae818-110">ascending</span></span>|<span data-ttu-id="ae818-111">boolean</span><span class="sxs-lookup"><span data-stu-id="ae818-111">boolean</span></span>|<span data-ttu-id="ae818-112">表示是否以升序方式进行排序。</span><span class="sxs-lookup"><span data-stu-id="ae818-112">Represents whether the sorting is done in an ascending fashion.</span></span>|
-|<span data-ttu-id="ae818-113">color</span><span class="sxs-lookup"><span data-stu-id="ae818-113">color</span></span>|<span data-ttu-id="ae818-114">string</span><span class="sxs-lookup"><span data-stu-id="ae818-114">string</span></span>|<span data-ttu-id="ae818-115">表示按字体或单元格颜色进行排序时，条件的目标颜色。</span><span class="sxs-lookup"><span data-stu-id="ae818-115">Represents the color that is the target of the condition if the sorting is on font or cell color.</span></span>|
-|<span data-ttu-id="ae818-116">dataOption</span><span class="sxs-lookup"><span data-stu-id="ae818-116">dataOption</span></span>|<span data-ttu-id="ae818-117">string</span><span class="sxs-lookup"><span data-stu-id="ae818-117">string</span></span>|<span data-ttu-id="ae818-p101">表示此字段的其他排序选项。可能的值是：`Normal`、`TextAsNumber`。</span><span class="sxs-lookup"><span data-stu-id="ae818-p101">Represents additional sorting options for this field. Possible values are: `Normal`, `TextAsNumber`.</span></span>|
-|<span data-ttu-id="ae818-120">Key</span><span class="sxs-lookup"><span data-stu-id="ae818-120">key</span></span>|<span data-ttu-id="ae818-121">int</span><span class="sxs-lookup"><span data-stu-id="ae818-121">int</span></span>|<span data-ttu-id="ae818-p102">表示条件所在的列（或行，具体取决于排序方向）。表示与第一列（或行）的偏移量。</span><span class="sxs-lookup"><span data-stu-id="ae818-p102">Represents the column (or row, depending on the sort orientation) that the condition is on. Represented as an offset from the first column (or row).</span></span>|
-|<span data-ttu-id="ae818-124">sortOn</span><span class="sxs-lookup"><span data-stu-id="ae818-124">sortOn</span></span>|<span data-ttu-id="ae818-125">string</span><span class="sxs-lookup"><span data-stu-id="ae818-125">string</span></span>|<span data-ttu-id="ae818-p103">表示此条件的排序类型。可能的值是：`Value`、`CellColor`、`FontColor`、`Icon`。</span><span class="sxs-lookup"><span data-stu-id="ae818-p103">Represents the type of sorting of this condition. Possible values are: `Value`, `CellColor`, `FontColor`, `Icon`.</span></span>|
+|<span data-ttu-id="4b464-110">ascending</span><span class="sxs-lookup"><span data-stu-id="4b464-110">ascending</span></span>|<span data-ttu-id="4b464-111">boolean</span><span class="sxs-lookup"><span data-stu-id="4b464-111">boolean</span></span>|<span data-ttu-id="4b464-112">表示是否以升序方式进行排序。</span><span class="sxs-lookup"><span data-stu-id="4b464-112">Represents whether the sorting is done in an ascending fashion.</span></span>|
+|<span data-ttu-id="4b464-113">color</span><span class="sxs-lookup"><span data-stu-id="4b464-113">color</span></span>|<span data-ttu-id="4b464-114">string</span><span class="sxs-lookup"><span data-stu-id="4b464-114">string</span></span>|<span data-ttu-id="4b464-115">表示按字体或单元格颜色进行排序时，条件的目标颜色。</span><span class="sxs-lookup"><span data-stu-id="4b464-115">Represents the color that is the target of the condition if the sorting is on font or cell color.</span></span>|
+|<span data-ttu-id="4b464-116">dataOption</span><span class="sxs-lookup"><span data-stu-id="4b464-116">dataOption</span></span>|<span data-ttu-id="4b464-117">string</span><span class="sxs-lookup"><span data-stu-id="4b464-117">string</span></span>|<span data-ttu-id="4b464-p101">表示此字段的其他排序选项。可能的值是：`Normal`、`TextAsNumber`。</span><span class="sxs-lookup"><span data-stu-id="4b464-p101">Represents additional sorting options for this field. Possible values are: `Normal`, `TextAsNumber`.</span></span>|
+|<span data-ttu-id="4b464-120">Key</span><span class="sxs-lookup"><span data-stu-id="4b464-120">key</span></span>|<span data-ttu-id="4b464-121">int</span><span class="sxs-lookup"><span data-stu-id="4b464-121">int</span></span>|<span data-ttu-id="4b464-p102">表示条件所在的列（或行，具体取决于排序方向）。表示与第一列（或行）的偏移量。</span><span class="sxs-lookup"><span data-stu-id="4b464-p102">Represents the column (or row, depending on the sort orientation) that the condition is on. Represented as an offset from the first column (or row).</span></span>|
+|<span data-ttu-id="4b464-124">sortOn</span><span class="sxs-lookup"><span data-stu-id="4b464-124">sortOn</span></span>|<span data-ttu-id="4b464-125">string</span><span class="sxs-lookup"><span data-stu-id="4b464-125">string</span></span>|<span data-ttu-id="4b464-p103">表示此条件的排序类型。可能的值是：`Value`、`CellColor`、`FontColor`、`Icon`。</span><span class="sxs-lookup"><span data-stu-id="4b464-p103">Represents the type of sorting of this condition. Possible values are: `Value`, `CellColor`, `FontColor`, `Icon`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="ae818-128">关系</span><span class="sxs-lookup"><span data-stu-id="ae818-128">Relationships</span></span>
-| <span data-ttu-id="ae818-129">关系</span><span class="sxs-lookup"><span data-stu-id="ae818-129">Relationship</span></span> | <span data-ttu-id="ae818-130">类型</span><span class="sxs-lookup"><span data-stu-id="ae818-130">Type</span></span>   |<span data-ttu-id="ae818-131">说明</span><span class="sxs-lookup"><span data-stu-id="ae818-131">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="4b464-128">关系</span><span class="sxs-lookup"><span data-stu-id="4b464-128">Relationships</span></span>
+| <span data-ttu-id="4b464-129">关系</span><span class="sxs-lookup"><span data-stu-id="4b464-129">Relationship</span></span> | <span data-ttu-id="4b464-130">类型</span><span class="sxs-lookup"><span data-stu-id="4b464-130">Type</span></span>   |<span data-ttu-id="4b464-131">说明</span><span class="sxs-lookup"><span data-stu-id="4b464-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ae818-132">icon</span><span class="sxs-lookup"><span data-stu-id="ae818-132">icon</span></span>|[<span data-ttu-id="ae818-133">workbookIcon</span><span class="sxs-lookup"><span data-stu-id="ae818-133">workbookIcon</span></span>](workbookicon.md)|<span data-ttu-id="ae818-134">表示对单元格图标进行排序时，条件的目标图标。</span><span class="sxs-lookup"><span data-stu-id="ae818-134">Represents the icon that is the target of the condition if the sorting is on the cell's icon.</span></span>|
+|<span data-ttu-id="4b464-132">icon</span><span class="sxs-lookup"><span data-stu-id="4b464-132">icon</span></span>|[<span data-ttu-id="4b464-133">workbookIcon</span><span class="sxs-lookup"><span data-stu-id="4b464-133">workbookIcon</span></span>](workbookicon.md)|<span data-ttu-id="4b464-134">表示对单元格图标进行排序时，条件的目标图标。</span><span class="sxs-lookup"><span data-stu-id="4b464-134">Represents the icon that is the target of the condition if the sorting is on the cell's icon.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="ae818-135">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="ae818-135">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4b464-135">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="4b464-135">JSON representation</span></span>
 
-<span data-ttu-id="ae818-136">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ae818-136">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="4b464-136">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4b464-136">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -71,3 +71,5 @@ ms.locfileid: "46807365"
   "suppressions": []
 }
 -->
+
+
