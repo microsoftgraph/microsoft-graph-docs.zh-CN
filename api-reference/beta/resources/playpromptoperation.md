@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 1bc49a3fbf494e378ec695af1f53c0ca4ea313ec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a1f5c72ed315714039d964c99437af28425bb064
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521619"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033648"
 ---
 # <a name="playpromptoperation-resource-type"></a>playPromptOperation 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +26,9 @@ ms.locfileid: "42521619"
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
 | 适用       | String                      | 唯一的客户端上下文字符串。 最大限制为256个字符。                              |
 | completionReason    | String                      | 可取值为：`unknown`、`completedSuccessfully`、`mediaOperationCanceled`。 |
-| id                  | 字符串                      | 只读。                                                                         |
+| id                  | String                      | 只读。                                                                         |
 | resultInfo          | [resultInfo](resultinfo.md) | 结果信息。 只读。                                |
-| status              | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。               |
+| 状态              | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。               |
 
 ## <a name="relationships"></a>关系
 无
@@ -66,3 +66,5 @@ ms.locfileid: "42521619"
   "suppressions": []
 }
 -->
+
+

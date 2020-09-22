@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 78280017d71fe0cbcaa84ec22905da6848f45f98
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 57e3204e15755e9ec7ce0150f46c6f0409ca3120
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897881"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032689"
 ---
 # <a name="educationclass-resource-type"></a>educationClass 资源类型
 
@@ -38,10 +38,10 @@ ms.locfileid: "44897881"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id| 字符串| 课程的唯一标识符。|
+|id| String| 课程的唯一标识符。|
 |description|String| 课程说明。|
 |displayName|String| 课程名称。|
-|mailNickname|字符串| 向所有成员发送电子邮件的邮件名称（如果已启用）。 |
+|mailNickname|String| 向所有成员发送电子邮件的邮件名称（如果已启用）。 |
 |createdBy|[identitySet](identityset.md)| 创建了课程的实体 |
 |classCode|String| 学校用于标识课程的课程代码。|
 |externalId|String| 来自同步系统的课程 ID。 |
@@ -94,3 +94,4 @@ ms.locfileid: "44897881"
   "section": "documentation",
   "tocPath": ""
 }-->
+

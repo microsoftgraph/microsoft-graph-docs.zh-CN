@@ -5,18 +5,18 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cdec20fe4802bb71d410ddd019c8159f46c0cb75
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 54c7c25b058c380363e86d4aab3b4f90b80b700b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566024"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033496"
 ---
 # <a name="list-namedlocations"></a>列出 namedLocations
 
 命名空间：microsoft.graph
 
-获取[namedLocation](../resources/namedlocation.md)对象的列表。
+获取 [namedLocation](../resources/namedlocation.md) 对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -52,7 +52,7 @@ GET /identity/conditionalAccess/namedLocations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[namedLocation](../resources/namedlocation.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [namedLocation](../resources/namedlocation.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -415,3 +415,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

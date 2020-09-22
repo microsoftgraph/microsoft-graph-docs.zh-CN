@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: shauliu
-ms.openlocfilehash: 113f25cd276cf01ce46e3c410ca4b5b409417d98
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 14c8335cab401c246f95452dac699daa4f81ea93
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809514"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033842"
 ---
 # <a name="governancepermission-resource-type"></a>governancePermission 资源类型
 
@@ -25,8 +25,8 @@ ms.locfileid: "46809514"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |accessLevel|String|访问级别。 有效值： ``None`` 、、 ``UserRead`` ``AdminRead`` 和 ``AdminReadWrite`` 。|
-|isActive|布尔值|指示请求者是否具有访问级别的任何活动角色分配。|
-|isEligible|布尔值|指示请求者是否具有访问级别的任何符合条件的角色分配。|
+|isActive|Boolean|指示请求者是否具有访问级别的任何活动角色分配。|
+|isEligible|Boolean|指示请求者是否具有访问级别的任何符合条件的角色分配。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -46,3 +46,5 @@ ms.locfileid: "46809514"
 }
 
 ```
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: c440be4ad291857fad9540cccad2e43d3a0e7121
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 88d7283d1eac1f3b7bcc7d947fa1961494a58041
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43227686"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033571"
 ---
 # <a name="relatedperson-resource-type"></a>relatedPerson 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "43227686"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示有关与用户的[配置文件](profile.md)中给定实体内的信息相关的人员的信息。
+表示有关与用户的 [配置文件](profile.md) 中给定实体内的信息相关的人员的信息。
 
 ## <a name="properties"></a>属性
 
@@ -58,3 +58,5 @@ ms.locfileid: "43227686"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

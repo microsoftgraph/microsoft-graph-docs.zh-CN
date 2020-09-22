@@ -6,12 +6,12 @@ description: 项目是 OneDrive API 中的主数据模型。 每项都是一个�
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 60ca96d7c29bd5c0a31412d8016cc2d17d6515b8
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 86416189a6e69c0b485e314159976931fffcc81e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229491"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032752"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -59,6 +59,7 @@ ms.locfileid: "43229491"
 | name                 | String             | 项目名称（文件名和扩展名）。读写。
 | package              | [package][]        | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。
 | parentReference      | [itemReference][]  | 父信息（如果此项具有父级）。读写。
+| pendingOperations    | [pendingOperations][] | 如果存在，则表示可能影响 driveItem 状态的一个或多个操作正在等待完成。 只读。
 | photo                | [照片][]          | 照片元数据（如果此项包含照片）。只读。
 | publication          | [publicationFacet][] | 在支持此类操作的位置提供有关某个项目的已发布或签出状态信息。 默认情况下，不会返回此属性。 只读。 |
 | remoteItem           | [remoteItem][]     | 远程项目数据（如果此项是从驱动器共享的项目，而不是被访问的项目）。只读。
@@ -134,6 +135,7 @@ ms.locfileid: "43229491"
   "image": { "@odata.type": "microsoft.graph.image" },
   "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
   "package": { "@odata.type": "microsoft.graph.package" },
+  "pendingOperations": { "@odata.type": "microsoft.graph.pendingOperations" },
   "photo": { "@odata.type": "microsoft.graph.photo" },
   "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
   "remoteItem": { "@odata.type": "microsoft.graph.remoteItem" },
@@ -229,7 +231,8 @@ ms.locfileid: "43229491"
 [geoCoordinates]: geocoordinates.md
 [listItem]: listitem.md
 [package]: package.md
-[permission]: permission.md
+[权限]: permission.md
+[pendingOperations]: pendingoperations.md
 [photo]: photo.md
 [remoteItem]: remoteitem.md
 [root]: root.md
@@ -257,3 +260,4 @@ ms.locfileid: "43229491"
   "tocPath": "Items",
   "tocBookmarks": { "Resources/Item": "#" }
 } -->
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a6f11cad32e48b259f3754ed08e4bad769f9a4c6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2aedb1869a0dee1cc9e0d13fa85ca3c06bcc1d1c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531926"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032822"
 ---
 # <a name="chart-resource-type"></a>图表资源类型
 
@@ -19,13 +19,13 @@ ms.locfileid: "42531926"
 表示工作簿中的 chart 对象。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取图表](../api/chart-get.md) | [WorkbookChart](chart.md) |读取 chart 对象的属性和关系。|
 |[创建 ChartSeries](../api/chart-post-series.md) |[WorkbookChartSeries](chartseries.md)| 通过发布到序列集合创建新的 ChartSeries。|
-|[创建系列](../api/chart-list-series.md) |[WorkbookChartSeries](chartseries.md)集合| 获取 ChartSeries 对象集合。|
+|[创建系列](../api/chart-list-series.md) |[WorkbookChartSeries](chartseries.md) 集合| 获取 ChartSeries 对象集合。|
 |[更新](../api/chart-update.md) | [WorkbookChart](chart.md)   |更新 Chart 对象。 |
 |[图像](../api/chart-image.md)|图像 base64 编码字符串|通过缩放图表适应指定的尺寸，将图表呈现为 base64 编码的图像。|
 |[删除](../api/chart-delete.md)|无|删除 chart 对象。|
@@ -52,7 +52,7 @@ ms.locfileid: "42531926"
 |dataLabels|[WorkbookChartDataLabels](chartdatalabels.md)|表示图表上的数据标签。只读。|
 |format|[WorkbookChartAreaFormat](chartareaformat.md)|封装图表区域的格式属性。只读。|
 |legend|[WorkbookChartLegend](chartlegend.md)|表示图表的图例。只读。|
-|series|[WorkbookChartSeries](chartseries.md)集合|表示单个系列或图表中的系列集合。只读。|
+|series|[WorkbookChartSeries](chartseries.md) 集合|表示单个系列或图表中的系列集合。只读。|
 |职位|[WorkbookChartTitle](charttitle.md)|表示指定图表的标题，包括标题的文本、可见性、位置和格式。只读。|
 |worksheet|[WorkbookWorksheet](worksheet.md)|包含当前 chart 的 worksheet 对象。 只读。|
 
@@ -89,3 +89,4 @@ ms.locfileid: "42531926"
   "section": "documentation",
   "tocPath": ""
 }-->
+

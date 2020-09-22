@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: b0a7b8d087ea7ba1bea7ce8a743d101fa05722d8
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: fe2426f9261a98796877567812f8a0a580a1de0f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427438"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032584"
 ---
 # <a name="eventmessagerequest-resource-type"></a>eventMessageRequest 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "45427438"
 
 **EventMessageRequest**实体是从[eventMessage](eventmessage.md)派生的。
 
-若要响应会议请求，请先使用**事件**导航属性访问相应的事件，如以下[示例](../api/eventmessage-get.md#example-2)所示。 然后，[接受](../api/event-accept.md)、 [tentativelyAccept](../api/event-tentativelyaccept.md)或[拒绝](../api/event-decline.md)与**eventMessageRequest**关联的事件。
+若要响应会议请求，请先使用 **事件** 导航属性访问相应的事件，如以下 [示例](../api/eventmessage-get.md#example-2)所示。 然后， [接受](../api/event-accept.md)、 [tentativelyAccept](../api/event-tentativelyaccept.md)或 [拒绝](../api/event-decline.md) 与 **eventMessageRequest**关联的事件。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -96,14 +96,14 @@ ms.locfileid: "45427438"
 |bodyPreview|String|邮件正文中的前 255 个字符。|
 |类别|String collection|与邮件关联的类别。|
 |ccRecipients|[recipient](recipient.md) collection|邮件的抄送收件人。|
-|changeKey|字符串|邮件的版本。|
+|changeKey|String|邮件的版本。|
 |conversationId|String|电子邮件所属对话的 ID。|
 |conversationIndex|Edm.Binary|电子邮件所属对话的索引。|
 |createdDateTime|DateTimeOffset|创建邮件的日期和时间。|
 |endDateTime|[DateTimeTimeZone](datetimetimezone.md)|请求的会议的结束时间。|
 |发件人|[recipient](recipient.md)|发送邮件邮箱的所有者。 在多数情况中，此数值与“**发件人**”属性相同，但共享或委派情景除外。 值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
 |hasAttachments|Boolean|指示邮件是否包含附件。|
-|id|字符串|只读。|
+|id|String|只读。|
 |importance|String| 邮件的重要性：`Low`、`Normal`、`High`。|
 |inferenceClassification|String| 可取值为：`Focused`、`Other`。|
 |isDelegated|Boolean|如果代理可访问此会议请求响应，则为 True，否则为 false。 默认为 false。|
@@ -126,7 +126,7 @@ ms.locfileid: "45427438"
 |sender|[recipient](recipient.md)|实际用于生成邮件的帐户。 大多数情况下，此值与“**from**”属性相同。 从[共享邮箱](/exchange/collaboration/shared-mailboxes/shared-mailboxes)发送邮件时，可以将此属性设置为其他值，[对于共享日历，或设置为代理人](/graph/outlook-share-delegate-calendar.md)。 在任何情况下，此值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
 |sentDateTime|DateTimeOffset|发送邮件的日期和时间。|
 |startDateTime|[DateTimeTimeZone](datetimetimezone.md)|请求的会议的开始时间。|
-|主题|String|邮件的主题。|
+|subject|String|邮件的主题。|
 |toRecipients|[recipient](recipient.md) collection|邮件的收件人。|
 |type|String|所需会议的类型： `singleInstance` 、 `occurence` 、 `exception` 、 `seriesMaster` 。|
 |uniqueBody|[itemBody](itembody.md)|当前邮件专用的邮件正文部分。|
@@ -135,7 +135,7 @@ ms.locfileid: "45427438"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md) 集合|邮件的[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)和[referenceAttachment](referenceattachment.md)附件的集合。 只读。 可为 Null。|
+|attachments|[attachment](attachment.md) 集合|邮件的 [fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)和 [referenceAttachment](referenceattachment.md) 附件的集合。 只读。 可为 Null。|
 |event|[event](event.md)| 与事件消息相关联的事件。对于与会者或会议室资源，假定已将日历助理设为在会议请求事件消息到达时自动更新包含事件的日历。导航属性。只读。|
 |extensions|[扩展](extension.md)集合| 为 eventMessage 定义的开放扩展集合。只读。可为 NULL。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 eventMessage 定义的多值扩展属性的集合。只读。可为 Null。|
@@ -148,7 +148,7 @@ ms.locfileid: "45427438"
 |:---------------|:--------|:----------|
 |[获取 eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |读取 eventmessage 对象的属性和关系。|
 |[更新](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |更新 eventMessage 对象。|
-|[删除](../api/eventmessage-delete.md) | None |更新 eventMessage 对象。|
+|[删除](../api/eventmessage-delete.md) | 无 |更新 eventMessage 对象。|
 |[copy](../api/message-copy.md)|[message](message.md)|将邮件复制到文件夹。|
 |[createForward](../api/message-createforward.md)|[message](message.md)|创建转发邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
 |[createReply](../api/message-createreply.md)|[message](message.md)|创建回复邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
@@ -183,3 +183,4 @@ ms.locfileid: "45427438"
   "suppressions": []
 }
 -->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 36ca6cc16ec4eeaf399bb8bd49db51c43a9dd8be
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 84b46861196e8893655fc5abc69ad1d4809cfd03
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807911"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033511"
 ---
 # <a name="siteusagestorage-resource-type"></a>siteUsageStorage 资源类型
 
@@ -44,3 +44,5 @@ ms.locfileid: "46807911"
   "reportPeriod": "String"
 }
 ```
+
+

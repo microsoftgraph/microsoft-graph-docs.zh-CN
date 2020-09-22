@@ -6,12 +6,12 @@ title: GeoCoordinates
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 07b0a39155b8c9c4dc02d6cff1e0a93c1a9cd418
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d091858c4856ad133b72e757e837fb49b3c0594f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497634"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033837"
 ---
 # <a name="geocoordinates-resource-type"></a>geoCoordinates 资源类型
 
@@ -20,10 +20,10 @@ ms.locfileid: "42497634"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 根据文件中包含的元数据提供位置的地理坐标和仰角。
-如果[**driveItem**](driveitem.md)具有非 null**位置**facet，则该项目表示一个文件，其中包含一个已知的位置关联。
+如果 [**driveItem**](driveitem.md) 具有非 null **位置** facet，则该项目表示一个文件，其中包含一个已知的位置关联。
 
 > [!NOTE]
-> 更新照片的纬度和经度时，必须提供[照片](photo.md)资源 (空或其他) 。
+> 更新照片的纬度和经度时，必须提供 [照片](photo.md) 资源 (空或其他) 。
 
 ## <a name="properties"></a>属性
 
@@ -63,3 +63,5 @@ ms.locfileid: "42497634"
   "suppressions": []
 }
 -->
+
+

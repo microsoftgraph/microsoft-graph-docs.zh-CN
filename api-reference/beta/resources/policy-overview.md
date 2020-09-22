@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 8e1524220b8062e92fbd4318d3cdc0af7500d0a4
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 5abecc785db2b2dcd141b528814642e6356abfa7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491845"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033634"
 ---
 # <a name="azure-ad-policy-overview"></a>Azure AD 策略概述
 
@@ -18,7 +18,7 @@ ms.locfileid: "44491845"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory （Azure AD）使用策略控制组织中的 Azure AD 功能行为。 策略是您可以在应用程序、服务主体、组或其分配到的整个组织上实施的自定义规则。
+Azure Active Directory (Azure AD) 使用策略控制组织中的 Azure AD 功能行为。 策略是您可以在应用程序、服务主体、组或其分配到的整个组织上实施的自定义规则。
 
 ## <a name="what-policies-are-available"></a>有哪些策略可用？
 
@@ -35,4 +35,6 @@ Azure Active Directory （Azure AD）使用策略控制组织中的 Azure AD 功
 ## <a name="next-steps"></a>后续步骤
 
 * 查看上面列出的不同策略资源类型及其各种方法。
-* 请尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的 API。
+* 在 [Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer)中试用 API。
+
+

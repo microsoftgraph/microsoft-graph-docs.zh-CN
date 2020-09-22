@@ -3,14 +3,14 @@ title: resultantAppStateDetail 枚举类型
 description: 指示有关应用程序为何具有特定安装状态的其他详细信息的枚举。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 390af3d25993aac335765346c6bb9b938a71ad6d
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 35c27c685afe5be19d5ffe41cb0750f07b5b30d6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790201"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033795"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>resultantAppStateDetail 枚举类型
 
@@ -26,8 +26,8 @@ ms.locfileid: "46790201"
 |成员|值|说明|
 |:---|:---|:---|
 |noAdditionalDetails|0|没有可用的其他详细信息。|
-|dependencyFailedToInstall|1|一个或多个应用程序的依存关系未能安装。|
-|dependencyWithRequirementsNotMet|双面|一个或多个应用程序的依赖项具有未满足的要求。|
+|dependencyFailedToInstall|1 |一个或多个应用程序的依存关系未能安装。|
+|dependencyWithRequirementsNotMet|2 |一个或多个应用程序的依赖项具有未满足的要求。|
 |dependencyPendingReboot|第三章|一个或多个应用程序的依赖项需要重新启动设备才能完成安装。|
 |dependencyWithAutoInstallDisabled|4 |一个或多个应用程序的依赖项配置为不自动安装。|
 |iosAppStoreUpdateFailedToInstall|1000|最新版本的应用程序无法从早期版本进行更新。|
@@ -52,6 +52,9 @@ ms.locfileid: "46790201"
 |minimumOsVersionNotMet|-1002|目标设备上的 OS 版本小于配置的最小值。|
 |minimumDiskSpaceNotMet|-1001|目标设备上的可用磁盘空间小于配置的最小值。|
 |processorArchitectureNotApplicable|-1000|设备体系结构 (例如，x86/amd64) 不适用于应用程序。|
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: a6e32f7bf9c635423ca1aace92aea160f6cc2706
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b4f00fc4c44b3019dccbded1fd222aa211d78c7a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531525"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032675"
 ---
 # <a name="educationorganization-resource-type"></a>educationOrganization 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "42531525"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|说明|字符串| 组织说明。|
+|说明|String| 组织说明。|
 |displayName|String| 组织显示名称。|
 |externalSource|educationExternalSource| 从中创建此组织的源。 可能的值包括 `sis`、`manual`、`unknownFutureValue`。|
 
@@ -61,3 +61,4 @@ ms.locfileid: "42531525"
   "section": "documentation",
   "tocPath": ""
 }-->
+

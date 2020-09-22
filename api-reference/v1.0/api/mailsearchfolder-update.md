@@ -5,18 +5,18 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 050817afe7a2906e58dfc86e48c3d14fab4908d5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4cee0bd483501dfa9328ad71bb9210616d55670a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43355222"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032962"
 ---
 # <a name="update-mailsearchfolder"></a>更新 mailSearchFolder
 
 命名空间：microsoft.graph
 
-更新[mailSearchFolder](../resources/mailsearchfolder.md)对象的可写属性。
+更新 [mailSearchFolder](../resources/mailsearchfolder.md) 对象的可写属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,16 +46,16 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | displayName | String | [MailFolder](../resources/mailfolder.md)的显示名称。|
-| includeNestedFolders | Boolean | 应如何遍历邮箱文件夹层次结构。 `true`表示应执行深入搜索，而不是`false`指应改为进行浅表搜索。 |
-| sourceFolderIds | String 集合 | 应挖掘的邮箱文件夹。 |
+| includeNestedFolders | Boolean | 应如何遍历邮箱文件夹层次结构。 `true` 表示应执行深入搜索，而 `false` 不是指应改为进行浅表搜索。 |
+| sourceFolderIds | String collection | 应挖掘的邮箱文件夹。 |
 | filterQuery | String | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[mailFolder](../resources/mailfolder.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [mailFolder](../resources/mailfolder.md) 对象。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
-下面是一个更新搜索文件夹的**filterQuery**属性的示例请求。
+下面是一个更新搜索文件夹的 **filterQuery** 属性的示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -134,3 +134,4 @@ Content-type: application/json
   ]
 }
 -->
+

@@ -5,18 +5,18 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: afcda6aee90a6d50741c82b4b37869c97fbfb555
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 780abea12cf61655f8d529dadf2f8c4414401dc2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463752"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032899"
 ---
 # <a name="list-transitivememberof"></a>列出 transitiveMemberOf
 
 命名空间：microsoft.graph
 
-获取此[组织联系人](../resources/orgcontact.md)所属的组。 API 请求是可传递的，并返回组织联系人是其嵌套成员的所有组。
+获取此 [组织联系人](../resources/orgcontact.md) 所属的组。 API 请求是可传递的，并返回组织联系人是其嵌套成员的所有组。
 
 ## <a name="permissions"></a>权限
 
@@ -38,7 +38,7 @@ GET /contacts/{id}/transitiveMemberOf
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持`$select` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持 `$select` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -131,3 +131,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

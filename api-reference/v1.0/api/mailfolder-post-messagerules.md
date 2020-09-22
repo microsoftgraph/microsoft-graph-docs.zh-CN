@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9525480d123aa2689ed2ae05b3766d35aa4aec53
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 311566f63476dc03d3e2139ce714dc59bacb3903
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43361968"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032997"
 ---
 # <a name="create-rule"></a>创建规则
 
@@ -48,9 +48,9 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 
 | 名称       | 类型|说明|
 |:--------|:-------|:----------|
-|actions|[messageRuleActions](../resources/messageruleactions.md)|满足相应条件（如果有的话）时对邮件执行的操作。 必填。|
+|actions|[messageRuleActions](../resources/messageruleactions.md)|满足相应条件（如果有的话）时对邮件执行的操作。 必需。|
 |conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|满足条件时，将触发该规则的相应操作。 可选。|
-|displayName| String  | 规则的显示名称。 必填。|
+|displayName| String  | 规则的显示名称。 必需。|
 |exceptions| [messageRulePredicates](../resources/messagerulepredicates.md)| 表示规则的例外情况。 可选。 |
 |isEnabled | Boolean | 指示是否启用规则以应用到邮件。 可选。 |
 |Sequence| Int32 | 表示在其他规则中执行规则的顺序。 必需。|
@@ -162,3 +162,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: notifications
 doc_type: conceptualPageType
 author: merzink
-ms.openlocfilehash: 4347be4028debf7f01a80b5ca27a9fd7d1a04cb4
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 96b27aa9a57c26666ae9b4fc09c4dadca52b8d6a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353110"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033655"
 ---
 # <a name="use-the-notifications-rest-api-in-microsoft-graph"></a>使用 Microsoft Graph 的通知 REST API
 
@@ -32,3 +32,5 @@ ms.locfileid: "44353110"
 - 请参阅[通知资源](../resources/projectrome-notification.md)并创建通知，以与用户交互。 
 - 在 [Graph 资源管理器](https://developer.microsoft.com/graph/graph-explorer)中试用 API。
 - 按照[集成概述](/graph/notifications-integration-e2e-overview)主题中的步骤开始客户端集成。
+
+

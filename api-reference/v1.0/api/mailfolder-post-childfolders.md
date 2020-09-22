@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: de1c8723e7a4d1606eba2abf876c85ecf76e67a5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 529e6750784436ef5db00de0c89c2fc0d9e04a6c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457966"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033011"
 ---
 # <a name="create-mailfolder"></a>创建 MailFolder
 
@@ -48,7 +48,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供具有以下参数的 JSON 对象。 **displayName**是[mailFolder](../resources/mailfolder.md)对象的唯一可写属性。
+在请求正文中，提供具有以下参数的 JSON 对象。 **displayName** 是 [mailFolder](../resources/mailfolder.md) 对象的唯一可写属性。
 
 | 参数 | 类型 | 说明 |
 |:----------|:-----|:------------|
@@ -56,7 +56,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`201 Created`响应正文中返回响应代码和[mailFolder](../resources/mailfolder.md)资源。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [mailFolder](../resources/mailfolder.md) 资源。
 
 ## <a name="example"></a>示例
 
@@ -134,3 +134,4 @@ Content-length: 179
   "suppressions": [
   ]
 }-->
+

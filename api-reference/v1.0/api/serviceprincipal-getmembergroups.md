@@ -1,22 +1,22 @@
 ---
-title: servicePrincipal： getMemberGroups
+title: servicePrincipal：getMemberGroups
 description: 获取此服务主体所属的组列表。  检查是可传递的。
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 1680109fff35b4a30d88cabffcae81fc7a776f31
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 98266f8796bb90b494424fd68e3cbddd064a3b4c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44384006"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032864"
 ---
-# <a name="serviceprincipal-getmembergroups"></a>servicePrincipal： getMemberGroups
+# <a name="serviceprincipal-getmembergroups"></a>servicePrincipal：getMemberGroups
 
 命名空间：microsoft.graph
 
-获取此[servicePrincipal](../resources/serviceprincipal.md)所属组的列表。  检查是可传递的。
+获取此[服务主体](../resources/serviceprincipal.md)所属的组列表。  检查是可传递的。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,13 +43,13 @@ POST /servicePrincipals/{id}/getMemberGroups
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |Description|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |securityEnabledOnly|Boolean|设置为 **false**。只支持对用户仅返回启用安全机制的组。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和字符串集合对象。
+如果成功，该运营商将返回 `200 OK` 响应代码和响应正文中的字符串集合对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -124,3 +124,4 @@ Content-length: 39
   ]
 }
 -->
+

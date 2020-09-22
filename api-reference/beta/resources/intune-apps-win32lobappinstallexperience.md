@@ -3,20 +3,20 @@ title: win32LobAppInstallExperience 资源类型
 description: 包含 Win32 应用程序的安装体验属性
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2470aeac3b92052e801db12d4da7f76113a9c8d4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b18675a00a9d0e9540bcc57208900dfb925ab72a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43422971"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033774"
 ---
 # <a name="win32lobappinstallexperience-resource-type"></a>win32LobAppInstallExperience 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -45,6 +45,9 @@ ms.locfileid: "43422971"
   "deviceRestartBehavior": "String"
 }
 ```
+
+
+
 
 
 

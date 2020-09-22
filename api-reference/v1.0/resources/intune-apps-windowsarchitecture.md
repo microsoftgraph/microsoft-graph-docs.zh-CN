@@ -3,14 +3,14 @@ title: Windowsarchitecture 更改枚举类型
 description: 包含 Windows 体系结构的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1ae392a259ba5b95d985a46cf52796e8bc4c26d2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d7e2339af550ed193894f1eb457216fc1c64c6a2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439597"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032507"
 ---
 # <a name="windowsarchitecture-enum-type"></a>Windowsarchitecture 更改枚举类型
 
@@ -24,10 +24,12 @@ ms.locfileid: "43439597"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|未设置任何标志。|
-|系列|1|是否支持 X86 Windows 体系结构类型。|
-|x64|双面|是否支持 X64 Windows 体系结构类型。|
+|系列|1 |是否支持 X86 Windows 体系结构类型。|
+|x64|2 |是否支持 X64 Windows 体系结构类型。|
 |整理|4 |是否支持 Arm Windows 体系结构类型。|
 |中性|8 |是否支持非特定 Windows 体系结构类型。|
+
+
 
 
 

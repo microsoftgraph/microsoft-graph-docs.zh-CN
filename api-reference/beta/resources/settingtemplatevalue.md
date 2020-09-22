@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: dkershaw10
-ms.openlocfilehash: 024007ef05edbb4c3e2e9f8cc901d654734a39ab
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b0f9db75d870cc775b22011674e6a460e11d8812
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806266"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033531"
 ---
 # <a name="settingtemplatevalue-resource-type"></a>settingTemplateValue 资源类型
 
@@ -63,3 +63,5 @@ ms.locfileid: "46806266"
   "suppressions": []
 }
 -->
+
+

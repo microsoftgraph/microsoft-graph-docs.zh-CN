@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 0c36ea4d861738316a3ce6593c12a79a59d97c68
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c1263f004b9c3c85621bc2cef4fe8622a7a1cb54
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809402"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033691"
 ---
 # <a name="itemphone-resource-type"></a>itemPhone 资源类型
 
@@ -88,3 +88,5 @@ ms.locfileid: "46809402"
   "number": "String"
 }
 ```
+
+

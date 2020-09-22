@@ -5,16 +5,16 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: abd68f3623f78d57b2db5812038223dc6137027f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 822ac02be4f3dc5d507aa5d9dbbb2fa22b194b64
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520764"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033533"
 ---
 # <a name="settings-resource-type"></a>设置资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,9 +32,9 @@ ms.locfileid: "42520764"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|hasGraphMailbox|布尔|指定用户的主邮箱是否托管在云中，是否已为 Microsoft Graph 启用。|
-|hasLicense|布尔|指定是否为用户分配了 MyAnalytics 许可证。|
-|hasOptedOut|布尔|指定用户是否选择了 "MyAnalytics"。|
+|hasGraphMailbox|Boolean|指定用户的主邮箱是否托管在云中，是否已为 Microsoft Graph 启用。|
+|hasLicense|Boolean|指定是否为用户分配了 MyAnalytics 许可证。|
+|hasOptedOut|Boolean|指定用户是否选择了 "MyAnalytics"。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -66,3 +66,4 @@ ms.locfileid: "42520764"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 743153a623dcd4768f32e450643ba95eb4fea7c5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e689a77484aad7b2a6d1412c4a49e07f33ea0441
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467335"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033018"
 ---
 # <a name="mailfolder-move"></a>mailFolder: move
 
@@ -54,7 +54,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`200 OK`响应正文中返回响应代码和[mailFolder](../resources/mailfolder.md)资源。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [mailFolder](../resources/mailfolder.md) 资源。
 
 ## <a name="example"></a>示例
 
@@ -135,3 +135,4 @@ Content-length: 179
   "suppressions": [
   ]
 }-->
+

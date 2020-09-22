@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 3792f0c867538c77522566110be36ac15d952396
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5f93b35dc48087b8d40db0cc3eabc2ba3ba10c8b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531548"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032682"
 ---
 # <a name="educationroot-resource-type"></a>educationRoot 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "42531548"
 
 `/education` 命名空间公开特定于教育部门的功能。 `/education` 命名空间中的一些对象可在 Microsoft Graph 的其他部分中找到（例如，[users](user.md)）。 教育命名空间提供有关这些对象特定于教育的属性和功能。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -35,8 +35,8 @@ ms.locfileid: "42531548"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|classes|[educationClass](educationclass.md) 集合| 只读。 可为空。|
-|me|[educationUser](educationuser.md)| 只读。 可为空。|
+|classes|[educationClass](educationclass.md) 集合| 只读。可为 NULL。|
+|me|[educationUser](educationuser.md)| 只读。可为 NULL。|
 |schools|[educationSchool](educationschool.md) 集合| 只读。可为 NULL。|
 |users|[educationUser](educationuser.md) 集合| 只读。可为空。|
 
@@ -107,3 +107,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

@@ -5,18 +5,18 @@ localization_priority: Normal
 author: JeremyKelley
 ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 1f3ef83f36af70aa2efd3cce8d0215d705114e50
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: c05c69f0cf72f74913882ddbf75355dc37592584
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863871"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032717"
 ---
 # <a name="driveitemuploadableproperties-resource-type"></a>driveItemUploadableProperties 资源类型
 
 命名空间：microsoft.graph
 
-表示在[创建上载会话](../api/driveitem-createuploadsession.md)时要上载的项。
+表示在 [创建上载会话](../api/driveitem-createuploadsession.md)时要上载的项。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -58,3 +58,4 @@ ms.locfileid: "44863871"
   "section": "documentation",
   "tocPath": ""
 }-->
+

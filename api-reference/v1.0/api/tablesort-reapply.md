@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 458f9d35bf6e5630935bb6dfce3f79e4588bd2b0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7a279160b966bca86aea70f376cdd50c3b138441
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509455"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032857"
 ---
 # <a name="tablesort-reapply"></a>TableSort: reapply
 
@@ -98,3 +98,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

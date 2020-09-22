@@ -3,14 +3,14 @@ title: 获取 iosCertificateProfile
 description: 读取 iosCertificateProfile 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e68a60bff6022a864eff4bb31f77cd25f3738ec
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 63ecc7592d0753c90f05e143960c9d63f4211e59
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442109"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033291"
 ---
 # <a name="get-ioscertificateprofile"></a>获取 iosCertificateProfile
 
@@ -80,6 +80,9 @@ Content-Length: 364
   }
 }
 ```
+
+
+
 
 
 

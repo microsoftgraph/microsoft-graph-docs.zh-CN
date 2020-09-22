@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6be514ab591ed355b4d6661255d0057255900db5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 77c9e786622b025e84780390fe64495fa98412bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473180"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033095"
 ---
 # <a name="mailfolder-delta"></a>mailFolder: delta
 
@@ -54,7 +54,7 @@ GET /users/{id}/mailFolders/delta
 | 名称       | 类型 | 说明 |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | 字符串  | application/json. Required. |
+| Content-Type  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}。可选。 |
 
 ## <a name="response"></a>响应
@@ -144,3 +144,4 @@ Content-length: 254
   "suppressions": [
   ]
 }-->
+

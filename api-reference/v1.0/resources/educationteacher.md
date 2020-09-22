@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 494fc0d3bed992a8df4921fe8601024e7eb01668
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 516322bd57dd29b8e9cd42c3662e173d4a4100fa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533002"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032613"
 ---
 # <a name="educationteacher-resource-type"></a>educationTeacher 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "42533002"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|externalId|字符串| 源系统中教师的 ID。|
+|externalId|String| 源系统中教师的 ID。|
 |teacherNumber|String|教师编号。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -54,3 +54,4 @@ ms.locfileid: "42533002"
   "section": "documentation",
   "tocPath": ""
 }-->
+

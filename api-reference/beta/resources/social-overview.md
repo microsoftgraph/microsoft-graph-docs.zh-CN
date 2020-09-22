@@ -5,12 +5,12 @@ localization_priority: Priority
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 86a8142882d9a9471ad128ca960ca3840cea7cca
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: 11015af6ad1d75b6668052933d3dbbd5289c1731
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427471"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033522"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-and-workplace-intelligence-in-an-app"></a>使用 Microsoft Graph API 在应用中集成人员和工作区智能
 
@@ -91,3 +91,5 @@ Include the next sentence when supporting events.
 
 ## <a name="whats-new"></a>新增功能
 了解这些 API 集的[最新功能和更新](/graph/whats-new-overview)。
+
+

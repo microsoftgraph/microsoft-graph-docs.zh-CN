@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 59558512d27bb92c48fb5c0ac2dd0fb52f7c426d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5060120cdbf2a8b6f6497c6bb22efc5d5d084cd1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531506"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032571"
 ---
 # <a name="educationterm-resource-type"></a>educationTerm 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "42531506"
 |:---------------|:--------|:----------|
 |displayName| String| 学期的显示名称。| 
 |externalId|String| 同步系统中的学期 ID。|
-|startDate|日期|学期开始日期。|
+|startDate|Date|学期开始日期。|
 |endDate|Date|学期结束日期。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -56,3 +56,4 @@ ms.locfileid: "42531506"
   "section": "documentation",
   "tocPath": ""
 }-->
+

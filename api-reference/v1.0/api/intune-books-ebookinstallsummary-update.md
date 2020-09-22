@@ -3,14 +3,14 @@ title: 更新 eBookInstallSummary
 description: 更新 eBookInstallSummary 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e0bc28ef68125b61c22687db60a1db98040bb8d8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0ce0ab9542cf92c398cae20a7e7af564774c5dc8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43356031"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033305"
 ---
 # <a name="update-ebookinstallsummary"></a>更新 eBookInstallSummary
 
@@ -102,6 +102,9 @@ Content-Length: 285
   "notInstalledUserCount": 5
 }
 ```
+
+
+
 
 
 

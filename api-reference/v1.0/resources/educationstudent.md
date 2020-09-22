@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b9d98d64dbb5e859f98eca84bb46a3137d808424
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c8cc053900a774f6a79bcabb5350a840959aeeb1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531493"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032614"
 ---
 # <a name="educationstudent-resource-type"></a>educationStudent 资源类型
 
@@ -22,10 +22,10 @@ ms.locfileid: "42531493"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |birthDate|Date| 学生的出生日期。|
-|externalId|字符串| 源系统中学生的 ID。|
+|externalId|String| 源系统中学生的 ID。|
 |gender|educationGender| 可能的值包括 `female`、`male`、`other`、`unknownFutureValue`。|
-|grade|字符串|学生的当前年级。|
-|graduationYear|字符串| 学生从学校毕业的年份。|
+|grade|String|学生的当前年级。|
+|graduationYear|String| 学生从学校毕业的年份。|
 |studentNumber|String| 学生编号。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -60,3 +60,4 @@ ms.locfileid: "42531493"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 407f29c7d8f9468c5e9b1da1badad294cb655121
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2ed10fd9be0a49fbf25acac635cf29b1759c31eb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531512"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032654"
 ---
 # <a name="educationschool-resource-type"></a>educationSchool 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "42531512"
 
 一种表示学校的资源，用于管理所表示学校的课程、教师和学生。  
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法                                                   | 返回类型                                    | 说明                                                                                 |
 | :------------------------------------------------------- | :--------------------------------------------- | :------------------------------------------------------------------------------------------ |
-| [Get](../api/educationschool-get.md)                     | [educationSchool](educationschool.md)          | 读取 **educationSchool** 对象的属性和关系。                         |
+| [获取](../api/educationschool-get.md)                     | [educationSchool](educationschool.md)          | 读取 **educationSchool** 对象的属性和关系。                         |
 | [Add class](../api/educationschool-post-classes.md)      | [educationClass](educationclass.md)            | 通过发布到课程导航属性，为学校添加一个新的 **educationClass**。  |
 | [List classes](../api/educationschool-list-classes.md)   | [educationClass](educationclass.md) 集合 | 获取 **educationClass** 对象集合。                                               |
 | [Remove class](../api/educationschool-delete-classes.md) | [educationClass](educationclass.md)            | 通过课程导航属性从学校删除 **educationClass**。       |
@@ -37,16 +37,16 @@ ms.locfileid: "42531512"
 | 属性            | 类型                                  | 说明                                                                        |
 | :------------------ | :------------------------------------ | :--------------------------------------------------------------------------------- |
 | id                  | String                                | 该学校的 GUID。                                                               |
-| displayName         | 字符串                                | 学校的显示名称。                                                        |
-| 说明         | 字符串                                | 学校描述。                                                         |
+| displayName         | String                                | 学校的显示名称。                                                        |
+| description         | String                                | 学校描述。                                                         |
 | 状态              | string                                | 只读。 可能的值包括 `inactive`、`active`、`expired`、`deleteable`。 |
 | externalSource      | educationExternalSource               | 只读。  可能的值包括 `sis`、`manual`、`unknownFutureValue`。        |
-| principalEmail      | 字符串                                | 主体的电子邮件地址。                                                    |
-| principalName       | 字符串                                | 主体名称。                                                             |
-| externalPrincipalId | 字符串                                | 同步系统中主体的 ID。                                                 |
-| highestGrade        | 字符串                                | 教授的最高年级。                                                              |
-| lowestGrade         | 字符串                                | 教授的最低年级。                                                               |
-| schoolNumber        | 字符串                                | 学校编号。                                                                     |
+| principalEmail      | String                                | 主体的电子邮件地址。                                                    |
+| principalName       | String                                | 主体名称。                                                             |
+| externalPrincipalId | String                                | 同步系统中主体的 ID。                                                 |
+| highestGrade        | String                                | 教授的最高年级。                                                              |
+| lowestGrade         | String                                | 教授的最低年级。                                                               |
+| schoolNumber        | String                                | 学校编号。                                                                     |
 | externalId          | String                                | 同步系统中学校的 ID。                                                    |
 | phone               | String                                | 学校电话号码。                                                            |
 | address             | [physicalAddress](physicaladdress.md) | 学校地址。                                                             |
@@ -99,3 +99,4 @@ ms.locfileid: "42531512"
   "section": "documentation",
   "tocPath": ""
 }-->
+

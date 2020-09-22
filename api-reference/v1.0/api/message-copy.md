@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 92ee0aeaa230015c0073177ab8f48e7ed5b91596
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7947477e7fcf724f30b91f6c0991d13eae12ba27
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43355207"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032955"
 ---
 # <a name="message-copy"></a>message: copy
 
@@ -139,3 +139,4 @@ Content-length: 248
   "suppressions": [
   ]
 }-->
+

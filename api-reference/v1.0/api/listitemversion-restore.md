@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: f8f7aa23a1db378dea805ed5250c0d27e3d0c554
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b21a149ced03ed75589c5995fae283413fe107bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812700"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033130"
 ---
 # <a name="restore-a-previous-version-of-a-listitem"></a>还原 ListItem 的以前版本
 
@@ -90,3 +90,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 } -->
+
