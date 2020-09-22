@@ -5,27 +5,27 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: daf48391c0dd26ded407659ff9159703aed31566
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ef7f459fd345992cb51e8c3ac2742146648772dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806819"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078988"
 ---
-# <a name="recipient-resource-type"></a><span data-ttu-id="19ef1-103">收件人资源类型</span><span class="sxs-lookup"><span data-stu-id="19ef1-103">recipient resource type</span></span>
+# <a name="recipient-resource-type"></a><span data-ttu-id="6ecd4-103">收件人资源类型</span><span class="sxs-lookup"><span data-stu-id="6ecd4-103">recipient resource type</span></span>
 
-<span data-ttu-id="19ef1-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="19ef1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6ecd4-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6ecd4-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="19ef1-105">表示事件、邮件或组帖子发送或接收端的用户的相关信息。</span><span class="sxs-lookup"><span data-stu-id="19ef1-105">Represents information about a user in the sending or receiving end of an event, message or group post.</span></span>
+<span data-ttu-id="6ecd4-105">表示事件、邮件或组帖子发送或接收端的用户的相关信息。</span><span class="sxs-lookup"><span data-stu-id="6ecd4-105">Represents information about a user in the sending or receiving end of an event, message or group post.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="19ef1-106">属性</span><span class="sxs-lookup"><span data-stu-id="19ef1-106">Properties</span></span>
-| <span data-ttu-id="19ef1-107">属性</span><span class="sxs-lookup"><span data-stu-id="19ef1-107">Property</span></span>     | <span data-ttu-id="19ef1-108">类型</span><span class="sxs-lookup"><span data-stu-id="19ef1-108">Type</span></span>   |<span data-ttu-id="19ef1-109">说明</span><span class="sxs-lookup"><span data-stu-id="19ef1-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="6ecd4-106">属性</span><span class="sxs-lookup"><span data-stu-id="6ecd4-106">Properties</span></span>
+| <span data-ttu-id="6ecd4-107">属性</span><span class="sxs-lookup"><span data-stu-id="6ecd4-107">Property</span></span>     | <span data-ttu-id="6ecd4-108">类型</span><span class="sxs-lookup"><span data-stu-id="6ecd4-108">Type</span></span>   |<span data-ttu-id="6ecd4-109">说明</span><span class="sxs-lookup"><span data-stu-id="6ecd4-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="19ef1-110">emailAddress</span><span class="sxs-lookup"><span data-stu-id="19ef1-110">emailAddress</span></span>|[<span data-ttu-id="19ef1-111">EmailAddress</span><span class="sxs-lookup"><span data-stu-id="19ef1-111">EmailAddress</span></span>](emailaddress.md)|<span data-ttu-id="19ef1-112">收件人的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="19ef1-112">The recipient's email address.</span></span>|
+|<span data-ttu-id="6ecd4-110">emailAddress</span><span class="sxs-lookup"><span data-stu-id="6ecd4-110">emailAddress</span></span>|[<span data-ttu-id="6ecd4-111">EmailAddress</span><span class="sxs-lookup"><span data-stu-id="6ecd4-111">EmailAddress</span></span>](emailaddress.md)|<span data-ttu-id="6ecd4-112">收件人的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="6ecd4-112">The recipient's email address.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="19ef1-113">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="19ef1-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6ecd4-113">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="6ecd4-113">JSON representation</span></span>
 
-<span data-ttu-id="19ef1-114">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="19ef1-114">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="6ecd4-114">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6ecd4-114">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -51,3 +51,4 @@ ms.locfileid: "46806819"
   "section": "documentation",
   "tocPath": ""
 }-->
+

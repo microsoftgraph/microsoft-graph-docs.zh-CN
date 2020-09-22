@@ -3,35 +3,35 @@ title: 创建 windowsInformationProtectionDeviceRegistration
 description: 创建新的 windowsInformationProtectionDeviceRegistration 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ba47d32f3ddc7dbc71435c99a936813c161ec8d7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 63f9d63b9e84d4f67100df7cff35d791e729c151
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465508"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078680"
 ---
-# <a name="create-windowsinformationprotectiondeviceregistration"></a><span data-ttu-id="a580f-103">创建 windowsInformationProtectionDeviceRegistration</span><span class="sxs-lookup"><span data-stu-id="a580f-103">Create windowsInformationProtectionDeviceRegistration</span></span>
+# <a name="create-windowsinformationprotectiondeviceregistration"></a><span data-ttu-id="e05c2-103">创建 windowsInformationProtectionDeviceRegistration</span><span class="sxs-lookup"><span data-stu-id="e05c2-103">Create windowsInformationProtectionDeviceRegistration</span></span>
 
-<span data-ttu-id="a580f-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a580f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e05c2-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e05c2-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="a580f-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="a580f-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="e05c2-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="e05c2-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="a580f-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="a580f-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e05c2-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="e05c2-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a580f-107">创建新的[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)对象。</span><span class="sxs-lookup"><span data-stu-id="a580f-107">Create a new [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) object.</span></span>
+<span data-ttu-id="e05c2-107">创建新的 [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="e05c2-107">Create a new [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="a580f-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="a580f-108">Prerequisites</span></span>
-<span data-ttu-id="a580f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a580f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="e05c2-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="e05c2-108">Prerequisites</span></span>
+<span data-ttu-id="e05c2-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e05c2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a580f-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="a580f-111">Permission type</span></span>|<span data-ttu-id="a580f-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="a580f-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="e05c2-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="e05c2-111">Permission type</span></span>|<span data-ttu-id="e05c2-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="e05c2-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="a580f-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a580f-113">Delegated (work or school account)</span></span>|<span data-ttu-id="a580f-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a580f-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="a580f-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a580f-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a580f-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="a580f-116">Not supported.</span></span>|
-|<span data-ttu-id="a580f-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="a580f-117">Application</span></span>|<span data-ttu-id="a580f-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a580f-118">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="e05c2-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e05c2-113">Delegated (work or school account)</span></span>|<span data-ttu-id="e05c2-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e05c2-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="e05c2-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e05c2-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e05c2-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="e05c2-116">Not supported.</span></span>|
+|<span data-ttu-id="e05c2-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="e05c2-117">Application</span></span>|<span data-ttu-id="e05c2-118">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e05c2-118">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="a580f-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a580f-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e05c2-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e05c2-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,36 +40,36 @@ ms.locfileid: "43465508"
 POST /deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a580f-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="a580f-120">Request headers</span></span>
-|<span data-ttu-id="a580f-121">标头</span><span class="sxs-lookup"><span data-stu-id="a580f-121">Header</span></span>|<span data-ttu-id="a580f-122">值</span><span class="sxs-lookup"><span data-stu-id="a580f-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e05c2-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="e05c2-120">Request headers</span></span>
+|<span data-ttu-id="e05c2-121">标头</span><span class="sxs-lookup"><span data-stu-id="e05c2-121">Header</span></span>|<span data-ttu-id="e05c2-122">值</span><span class="sxs-lookup"><span data-stu-id="e05c2-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="a580f-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="a580f-123">Authorization</span></span>|<span data-ttu-id="a580f-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="a580f-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="a580f-125">接受</span><span class="sxs-lookup"><span data-stu-id="a580f-125">Accept</span></span>|<span data-ttu-id="a580f-126">application/json</span><span class="sxs-lookup"><span data-stu-id="a580f-126">application/json</span></span>|
+|<span data-ttu-id="e05c2-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e05c2-123">Authorization</span></span>|<span data-ttu-id="e05c2-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="e05c2-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="e05c2-125">接受</span><span class="sxs-lookup"><span data-stu-id="e05c2-125">Accept</span></span>|<span data-ttu-id="e05c2-126">application/json</span><span class="sxs-lookup"><span data-stu-id="e05c2-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a580f-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="a580f-127">Request body</span></span>
-<span data-ttu-id="a580f-128">在请求正文中，提供 windowsInformationProtectionDeviceRegistration 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a580f-128">In the request body, supply a JSON representation for the windowsInformationProtectionDeviceRegistration object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e05c2-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="e05c2-127">Request body</span></span>
+<span data-ttu-id="e05c2-128">在请求正文中，提供 windowsInformationProtectionDeviceRegistration 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e05c2-128">In the request body, supply a JSON representation for the windowsInformationProtectionDeviceRegistration object.</span></span>
 
-<span data-ttu-id="a580f-129">下表显示创建 windowsInformationProtectionDeviceRegistration 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="a580f-129">The following table shows the properties that are required when you create the windowsInformationProtectionDeviceRegistration.</span></span>
+<span data-ttu-id="e05c2-129">下表显示创建 windowsInformationProtectionDeviceRegistration 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="e05c2-129">The following table shows the properties that are required when you create the windowsInformationProtectionDeviceRegistration.</span></span>
 
-|<span data-ttu-id="a580f-130">属性</span><span class="sxs-lookup"><span data-stu-id="a580f-130">Property</span></span>|<span data-ttu-id="a580f-131">类型</span><span class="sxs-lookup"><span data-stu-id="a580f-131">Type</span></span>|<span data-ttu-id="a580f-132">说明</span><span class="sxs-lookup"><span data-stu-id="a580f-132">Description</span></span>|
+|<span data-ttu-id="e05c2-130">属性</span><span class="sxs-lookup"><span data-stu-id="e05c2-130">Property</span></span>|<span data-ttu-id="e05c2-131">类型</span><span class="sxs-lookup"><span data-stu-id="e05c2-131">Type</span></span>|<span data-ttu-id="e05c2-132">说明</span><span class="sxs-lookup"><span data-stu-id="e05c2-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a580f-133">id</span><span class="sxs-lookup"><span data-stu-id="a580f-133">id</span></span>|<span data-ttu-id="a580f-134">字符串</span><span class="sxs-lookup"><span data-stu-id="a580f-134">String</span></span>|<span data-ttu-id="a580f-135">实体的键。</span><span class="sxs-lookup"><span data-stu-id="a580f-135">Key of the entity.</span></span>|
-|<span data-ttu-id="a580f-136">userId</span><span class="sxs-lookup"><span data-stu-id="a580f-136">userId</span></span>|<span data-ttu-id="a580f-137">String</span><span class="sxs-lookup"><span data-stu-id="a580f-137">String</span></span>|<span data-ttu-id="a580f-138">与此设备注册记录相关联的 UserId。</span><span class="sxs-lookup"><span data-stu-id="a580f-138">UserId associated with this device registration record.</span></span>|
-|<span data-ttu-id="a580f-139">deviceRegistrationId</span><span class="sxs-lookup"><span data-stu-id="a580f-139">deviceRegistrationId</span></span>|<span data-ttu-id="a580f-140">字符串</span><span class="sxs-lookup"><span data-stu-id="a580f-140">String</span></span>|<span data-ttu-id="a580f-141">此设备注册记录的设备标识符。</span><span class="sxs-lookup"><span data-stu-id="a580f-141">Device identifier for this device registration record.</span></span>|
-|<span data-ttu-id="a580f-142">deviceName</span><span class="sxs-lookup"><span data-stu-id="a580f-142">deviceName</span></span>|<span data-ttu-id="a580f-143">String</span><span class="sxs-lookup"><span data-stu-id="a580f-143">String</span></span>|<span data-ttu-id="a580f-144">设备名称。</span><span class="sxs-lookup"><span data-stu-id="a580f-144">Device name.</span></span>|
-|<span data-ttu-id="a580f-145">deviceType</span><span class="sxs-lookup"><span data-stu-id="a580f-145">deviceType</span></span>|<span data-ttu-id="a580f-146">String</span><span class="sxs-lookup"><span data-stu-id="a580f-146">String</span></span>|<span data-ttu-id="a580f-147">设备类型，例如，Windows 便携式计算机 VS Windows phone。</span><span class="sxs-lookup"><span data-stu-id="a580f-147">Device type, for example, Windows laptop VS Windows phone.</span></span>|
-|<span data-ttu-id="a580f-148">deviceMacAddress</span><span class="sxs-lookup"><span data-stu-id="a580f-148">deviceMacAddress</span></span>|<span data-ttu-id="a580f-149">String</span><span class="sxs-lookup"><span data-stu-id="a580f-149">String</span></span>|<span data-ttu-id="a580f-150">设备 Mac 地址。</span><span class="sxs-lookup"><span data-stu-id="a580f-150">Device Mac address.</span></span>|
-|<span data-ttu-id="a580f-151">lastCheckInDateTime</span><span class="sxs-lookup"><span data-stu-id="a580f-151">lastCheckInDateTime</span></span>|<span data-ttu-id="a580f-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a580f-152">DateTimeOffset</span></span>|<span data-ttu-id="a580f-153">设备的上次签入时间。</span><span class="sxs-lookup"><span data-stu-id="a580f-153">Last checkin time of the device.</span></span>|
+|<span data-ttu-id="e05c2-133">id</span><span class="sxs-lookup"><span data-stu-id="e05c2-133">id</span></span>|<span data-ttu-id="e05c2-134">String</span><span class="sxs-lookup"><span data-stu-id="e05c2-134">String</span></span>|<span data-ttu-id="e05c2-135">实体的键。</span><span class="sxs-lookup"><span data-stu-id="e05c2-135">Key of the entity.</span></span>|
+|<span data-ttu-id="e05c2-136">userId</span><span class="sxs-lookup"><span data-stu-id="e05c2-136">userId</span></span>|<span data-ttu-id="e05c2-137">String</span><span class="sxs-lookup"><span data-stu-id="e05c2-137">String</span></span>|<span data-ttu-id="e05c2-138">与此设备注册记录相关联的 UserId。</span><span class="sxs-lookup"><span data-stu-id="e05c2-138">UserId associated with this device registration record.</span></span>|
+|<span data-ttu-id="e05c2-139">deviceRegistrationId</span><span class="sxs-lookup"><span data-stu-id="e05c2-139">deviceRegistrationId</span></span>|<span data-ttu-id="e05c2-140">字符串</span><span class="sxs-lookup"><span data-stu-id="e05c2-140">String</span></span>|<span data-ttu-id="e05c2-141">此设备注册记录的设备标识符。</span><span class="sxs-lookup"><span data-stu-id="e05c2-141">Device identifier for this device registration record.</span></span>|
+|<span data-ttu-id="e05c2-142">deviceName</span><span class="sxs-lookup"><span data-stu-id="e05c2-142">deviceName</span></span>|<span data-ttu-id="e05c2-143">String</span><span class="sxs-lookup"><span data-stu-id="e05c2-143">String</span></span>|<span data-ttu-id="e05c2-144">设备名称。</span><span class="sxs-lookup"><span data-stu-id="e05c2-144">Device name.</span></span>|
+|<span data-ttu-id="e05c2-145">deviceType</span><span class="sxs-lookup"><span data-stu-id="e05c2-145">deviceType</span></span>|<span data-ttu-id="e05c2-146">String</span><span class="sxs-lookup"><span data-stu-id="e05c2-146">String</span></span>|<span data-ttu-id="e05c2-147">设备类型，例如，Windows 便携式计算机 VS Windows phone。</span><span class="sxs-lookup"><span data-stu-id="e05c2-147">Device type, for example, Windows laptop VS Windows phone.</span></span>|
+|<span data-ttu-id="e05c2-148">deviceMacAddress</span><span class="sxs-lookup"><span data-stu-id="e05c2-148">deviceMacAddress</span></span>|<span data-ttu-id="e05c2-149">String</span><span class="sxs-lookup"><span data-stu-id="e05c2-149">String</span></span>|<span data-ttu-id="e05c2-150">设备 Mac 地址。</span><span class="sxs-lookup"><span data-stu-id="e05c2-150">Device Mac address.</span></span>|
+|<span data-ttu-id="e05c2-151">lastCheckInDateTime</span><span class="sxs-lookup"><span data-stu-id="e05c2-151">lastCheckInDateTime</span></span>|<span data-ttu-id="e05c2-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e05c2-152">DateTimeOffset</span></span>|<span data-ttu-id="e05c2-153">设备的上次签入时间。</span><span class="sxs-lookup"><span data-stu-id="e05c2-153">Last checkin time of the device.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="a580f-154">响应</span><span class="sxs-lookup"><span data-stu-id="a580f-154">Response</span></span>
-<span data-ttu-id="a580f-155">如果成功，此方法在响应`201 Created`正文中返回响应代码和[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)对象。</span><span class="sxs-lookup"><span data-stu-id="a580f-155">If successful, this method returns a `201 Created` response code and a [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e05c2-154">响应</span><span class="sxs-lookup"><span data-stu-id="e05c2-154">Response</span></span>
+<span data-ttu-id="e05c2-155">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="e05c2-155">If successful, this method returns a `201 Created` response code and a [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a580f-156">示例</span><span class="sxs-lookup"><span data-stu-id="a580f-156">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e05c2-156">示例</span><span class="sxs-lookup"><span data-stu-id="e05c2-156">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="a580f-157">请求</span><span class="sxs-lookup"><span data-stu-id="a580f-157">Request</span></span>
-<span data-ttu-id="a580f-158">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a580f-158">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="e05c2-157">请求</span><span class="sxs-lookup"><span data-stu-id="e05c2-157">Request</span></span>
+<span data-ttu-id="e05c2-158">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e05c2-158">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 Content-type: application/json
@@ -86,8 +86,8 @@ Content-length: 366
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="a580f-159">响应</span><span class="sxs-lookup"><span data-stu-id="a580f-159">Response</span></span>
-<span data-ttu-id="a580f-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a580f-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="e05c2-159">响应</span><span class="sxs-lookup"><span data-stu-id="e05c2-159">Response</span></span>
+<span data-ttu-id="e05c2-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e05c2-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -104,6 +104,9 @@ Content-Length: 415
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
+
+
+
 
 
 
