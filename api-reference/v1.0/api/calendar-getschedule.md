@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5863493215a2d4a04df3f1adf711a671bfcb6fcb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: de04a0771b5d4d298140fa150ba414a47bc3d094
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518810"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023380"
 ---
 # <a name="calendar-getschedule"></a>日历：getSchedule
 
@@ -258,3 +258,4 @@ Content-type: application/json
   "tocPath": ""
 }
 -->
+

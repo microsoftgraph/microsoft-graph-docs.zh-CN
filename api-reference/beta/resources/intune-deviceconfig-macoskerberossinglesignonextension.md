@@ -3,27 +3,27 @@ title: macOSKerberosSingleSignOnExtension 资源类型
 description: 表示 macOS 设备的 Kerberos 类型单一登录扩展配置文件。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 44abc4972e078bc0aac6e6be9a30357bd97a8198
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: af63d68bb0d8dd566ad2f97c26ff2bc73c8460da
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447059"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024113"
 ---
 # <a name="macoskerberossinglesignonextension-resource-type"></a>macOSKerberosSingleSignOnExtension 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示 macOS 设备的 Kerberos 类型单一登录扩展配置文件。
 
 
-继承自[macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)
+继承自 [macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -37,7 +37,7 @@ ms.locfileid: "43447059"
 |isDefaultRealm|Boolean|如果为 true，则将选择此配置文件的领域作为默认领域。 如果配置了多个 Kerberos 类型配置文件，则必须执行此步骤。|
 |passwordBlockModification|Boolean|启用或禁用密码更改。|
 |passwordExpirationDays|Int32|替代默认密码到期天数（天）。 对于大多数域，此值是自动计算的。|
-|passwordExpirationNotificationDays|Int32|获取或设置通知用户其密码将到期的天数（默认值为15）。|
+|passwordExpirationNotificationDays|Int32|获取或设置通知用户其密码将到期 (默认值为 15) 的天数。|
 |userPrincipalName|String|获取或设置要用于此配置文件的原理用户名。 不需要包含领域名称。|
 |passwordRequireActiveDirectoryComplexity|Boolean|启用或禁用密码是否必须符合 Active Directory 的复杂性要求。|
 |passwordPreviousPasswordBlockCount|Int32|获取或设置要阻止的以前密码的数目。|
@@ -92,6 +92,9 @@ ms.locfileid: "43447059"
   "passwordChangeUrl": "String"
 }
 ```
+
+
+
 
 
 

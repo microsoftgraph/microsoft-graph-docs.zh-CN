@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ba7b481f4b20033e1a4ffcd42ac92421bc3536a4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e20811129b069011db8b6a8ab9a6b762603b7600
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519118"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023749"
 ---
 # <a name="workbooktablerow-resource-type"></a>workbookTableRow 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +29,7 @@ ms.locfileid: "42519118"
 |[更新](../api/tablerow-update.md) | [workbookTableRow](workbooktablerow.md)  |更新 TableRow 对象。 |
 |[Range](../api/tablerow-range.md)|[workbookRange](workbookrange.md)|返回与整个行相关的 range 对象。|
 |[删除](../api/tablerow-delete.md)|无|从表中删除行。|
-|[列出](../api/tablerow-list.md) | [workbookTableRow](workbooktablerow.md)集合 |获取 tableRow 对象的集合。 |
+|[列出](../api/tablerow-list.md) | [workbookTableRow](workbooktablerow.md) 集合 |获取 tableRow 对象的集合。 |
 |[Itemat](../api/tablerowcollection-itemat.md)|[workbookTableRow](workbooktablerow.md)|根据其在集合中的位置获取行。|
 |[添加](../api/tablerowcollection-add.md)|[workbookTableRow](workbooktablerow.md)|向表中添加新行。|
 
@@ -75,3 +75,5 @@ ms.locfileid: "42519118"
   "suppressions": []
 }
 -->
+
+

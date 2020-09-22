@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 32ebcbb4b4d0c8721b5cd1d1a421edb37d836821
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 30c2ed5e6884fb73460847b61c1b32ba8ae0a692
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519125"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023763"
 ---
 # <a name="workbooktablecolumn-resource-type"></a>workbookTableColumn 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "42519125"
 |[Range](../api/tablecolumn-range.md)|[workbookRange](workbookrange.md)|获取与整个列相关的 range 对象。|
 |[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[workbookRange](workbookrange.md)|获取与列的总计行相关的 range 对象。|
 |[删除](../api/tablecolumn-delete.md)|无|从表中删除列。|
-|[列出](../api/tablecolumn-list.md) | [workbookTableColumn](workbooktablecolumn.md)集合 |获取 tableColumn 对象的集合。 |
+|[列出](../api/tablecolumn-list.md) | [workbookTableColumn](workbooktablecolumn.md) 集合 |获取 tableColumn 对象的集合。 |
 |[Itemat](../api/tablecolumncollection-itemat.md)|[workbookTableColumn](workbooktablecolumn.md)|根据其在集合中的位置获取列。|
 |[添加](../api/tablecolumncollection-add.md)|[workbookTableColumn](workbooktablecolumn.md)|向表中添加新列。|
 
@@ -40,7 +40,7 @@ ms.locfileid: "42519125"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|int|返回标识表内的列的唯一键。只读。|
-|Index|INT|返回表的列集合内列的索引编号。从零开始编制索引。只读。|
+|Index|int|返回表的列集合内列的索引编号。从零开始编制索引。只读。|
 |name|string|返回表格列的名称。|
 |values|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
@@ -85,3 +85,5 @@ ms.locfileid: "42519125"
   "suppressions": []
 }
 -->
+
+

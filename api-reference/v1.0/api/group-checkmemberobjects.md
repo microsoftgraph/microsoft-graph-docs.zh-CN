@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: acaf5d6b129536e2e8f6acb7e9f19a721e0cc49f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d8cb8324c3b812963e461d63807aa2a071ff8a63
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461446"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023329"
 ---
 # <a name="group-checkmemberobjects"></a>组： checkMemberObjects
 
@@ -53,7 +53,7 @@ POST /groups/{id}/checkMemberObjects
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和字符串集合对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和字符串集合对象。
 
 ## <a name="examples"></a>示例
 
@@ -135,3 +135,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

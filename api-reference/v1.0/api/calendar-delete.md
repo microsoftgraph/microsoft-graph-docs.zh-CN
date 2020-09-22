@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1fcb1f6a26ced9657a528aa27f8248fb008df08c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dd7918dc46172fa107dc3d55ab072684daed2e86
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471874"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023693"
 ---
 # <a name="delete-calendar"></a>删除日历
 
@@ -104,3 +104,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

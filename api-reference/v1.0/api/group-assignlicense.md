@@ -5,27 +5,27 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d12d45fcc913f340b29b77b85643ed1a9c55f7e2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a0772d0aca5a60bb4c5d9faa7d75efcd8d9ef385
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461492"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023700"
 ---
 # <a name="group-assignlicense"></a>组： assignLicense
 
 命名空间：microsoft.graph
 
-在组中添加或删除许可证。 分配给该组的许可证将被分配给组中的所有用户。 若要了解有关基于组的许可的详细信息，请参阅[什么是 Azure Active Directory 中的基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。
+在组中添加或删除许可证。 分配给该组的许可证将被分配给组中的所有用户。 若要了解有关基于组的许可的详细信息，请参阅 [什么是 Azure Active Directory 中的基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。
 
-若要获取目录中可用的订阅，请执行[Get subscribedsku 请求](../resources/subscribedsku.md)。
+若要获取目录中可用的订阅，请执行 [Get subscribedsku 请求](../resources/subscribedsku.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All、Directory.ReadWrite.All    |
+|委派（工作或学校帐户） | Group.ReadWrite.All, Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -50,7 +50,7 @@ POST /groups/{id}/assignLicense
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`202 Accepted`正文中返回响应代码和目标[组](../resources/group.md)对象。
+如果成功，此方法 `202 Accepted` 在响应正文中返回响应代码和目标 [组](../resources/group.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -205,3 +205,4 @@ location: https://graph.microsoft.com/v2/d056d009-17b3-4106-8173-cd3978ada898/di
   ]
 }
 -->
+

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fe4db80727bc2af3dc3e1d41be6d4207ffacf96d
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: b3d6ec3bdaa8a2d9f9cc25d30a5e9250545eeb41
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682146"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023390"
 ---
 # <a name="call-recordresponse"></a>调用： recordResponse
 
@@ -19,15 +19,15 @@ ms.locfileid: "44682146"
 录制来自呼叫方的简短音频回复。
 在收到响应提示后，bot 可以利用此程序从呼叫者处获取语音响应。
 
-有关如何处理操作的详细信息，请参阅[commsOperation](../resources/commsOperation.md)
+有关如何处理操作的详细信息，请参阅 [commsOperation](../resources/commsOperation.md)
 
 >**注意：** 只有使用[serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)启动的[调用](../resources/call.md)才支持这样做。
 
 此操作不用于记录整个调用。 录制的最大长度为2分钟。 该录制不会被云通信平台永久保存，并且在呼叫结束后不久将被丢弃。 在录制操作完成后，bot 必须使用已完成的通知中提供的 recordingLocation 值立即下载录制。
 
->**注意：** 任何收集的媒体都**不**会保留。 请确保在呼叫录音时遵守地区的法律和法规。 有关详细信息，请咨询法律顾问。
+>**注意：** 任何收集的媒体都 **不** 会保留。 请确保在呼叫录音时遵守地区的法律和法规。 有关详细信息，请咨询法律顾问。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
@@ -50,19 +50,19 @@ POST /communications/calls/{id}/recordResponse
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数      | 类型    |Description|
+| 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|提示|[mediaPrompt](../resources/mediaprompt.md)集合 | 要播放的提示。 支持的最大 mediaPrompt 集合大小为1。|
+|提示|[mediaPrompt](../resources/mediaprompt.md) 集合 | 要播放的提示。 支持的最大 mediaPrompt 集合大小为1。|
 |bargeInAllowed|Boolean| 如果为 true，则 recordResponse 请求将 barge 到其他现有的排队/当前处理的 record/playprompt 请求中。 默认值为 false。 |
-|initialSilenceTimeoutInSeconds | Int32| 在我们开始进行记录响应操作并使操作失败之前，允许的最大初始静音（用户静默）。 如果我们正在播放提示，则此计时器在提示完成后启动。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒 |
-|maxSilenceTimeoutInSeconds|Int32| 用户开始发言后允许的最大静音（暂停）时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
+|initialSilenceTimeoutInSeconds | Int32| 最大初始静音 (用户静音) 允许在我们超时之前开始记录响应操作并使操作失败。 如果我们正在播放提示，则此计时器在提示完成后启动。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒 |
+|maxSilenceTimeoutInSeconds|Int32| 最大无声 (暂停用户开始发言后允许的) 时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
 |maxRecordDurationInSeconds|Int32| 停止录制前的 recordResponse 操作的最长持续时间。 默认值 = 5 秒，最小值 = 1 秒，最大值 = 120 秒。|
 |playBeep|Boolean| 如果为 true，则会播放提示音，指示用户可以开始记录其邮件。 默认值为 true。|
 |stopTones|String collection|指定结束录音的停止音。|
 |适用|String|唯一的客户端上下文字符串。 最大限制为256个字符。|
 
 ## <a name="response"></a>响应
-此方法返回 `200 OK` 响应代码和位置标头，其中包含为此请求创建的[RECORDOPERATION](../resources/recordoperation.md)的 URI。
+此方法返回 `200 OK` 响应代码和位置标头，其中包含为此请求创建的 [RECORDOPERATION](../resources/recordoperation.md) 的 URI。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -228,3 +228,4 @@ Content-Type: application/octet-stream
   ]
 }
 -->
+
