@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9c29d8ea5e8d88775434ad7f6707fa3dd218c0b9
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: b248267fa3493e81eb9764ce17cec7f651b8093c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180893"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008782"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -110,3 +110,5 @@ Content-length: 55
   ]
 }
 -->
+
+

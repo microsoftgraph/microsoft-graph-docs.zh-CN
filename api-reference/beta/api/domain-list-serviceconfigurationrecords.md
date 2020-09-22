@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 655f653c7edb679417fa4496f8dbbfceccfbad0f
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: b724ef3dbf35ed76cd80c19f33f99f8f70537f77
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180051"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008503"
 ---
 # <a name="list-serviceconfigurationrecords"></a>列出 serviceConfigurationRecords
 
@@ -18,7 +18,7 @@ ms.locfileid: "43180051"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索为域启用服务所需的[domainDnsRecord](../resources/domaindnsrecord.md)对象的列表。
+检索为域启用服务所需的 [domainDnsRecord](../resources/domaindnsrecord.md) 对象的列表。
 
 使用返回的列表将记录添加到域的区域文件中。 可以通过域注册机构或 DNS 服务器配置来完成此操作。
 
@@ -56,7 +56,7 @@ GET /domains/{id}/serviceConfigurationRecords
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[domainDnsRecord](../resources/domaindnsrecord.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [domainDnsRecord](../resources/domaindnsrecord.md) 对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -133,3 +133,5 @@ Content-length: 220
   ]
 }
 -->
+
+

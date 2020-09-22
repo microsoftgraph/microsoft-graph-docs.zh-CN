@@ -3,20 +3,20 @@ title: createInstance 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 893d87fabbdf1d25bad409d358586e8ec53f09a4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c165339bd2cdf3f6cf990b7279844737c8d4c8aa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43381421"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011345"
 ---
 # <a name="createinstance-action"></a>createInstance 操作
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,14 +55,14 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devi
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|尚未记录|
-|description|字符串|尚未记录|
-|settingsDelta|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)集合|尚未记录|
+|description|String|尚未记录|
+|settingsDelta|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) 集合|尚未记录|
 |roleScopeTagIds|String collection|尚未记录|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此操作会在`200 OK`响应正文中返回响应代码和[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) 。
+如果成功，此操作会 `200 OK` 在响应正文中返回响应代码和 [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) 。
 
 ## <a name="example"></a>示例
 
@@ -113,6 +113,9 @@ Content-Length: 418
   }
 }
 ```
+
+
+
 
 
 

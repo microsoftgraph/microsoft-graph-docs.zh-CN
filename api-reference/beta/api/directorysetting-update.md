@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a65b8f1cbb38a6286303d7e51e68a1d5a98c74e0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d6d76e5d416af96b916ac8f5325ee0a95681f649
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43375588"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008629"
 ---
 # <a name="update-a-directory-setting"></a>更新目录设置
 
@@ -20,7 +20,7 @@ ms.locfileid: "43375588"
 
 更新特定目录设置对象的属性。
 
-> **注意**：此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为*更新 groupSettings*。
+> **注意**：此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为 *更新 groupSettings*。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -48,7 +48,7 @@ PATCH /groups/{id}/settings/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| 值 | [settingValue](../resources/settingvalue.md)集合 | 更新的值集。注意：必须提供整个集合组。无法更新单个值集合。 |
+| 值 | [settingValue](../resources/settingvalue.md) 集合 | 更新的值集。注意：必须提供整个集合组。无法更新单个值集合。 |
 
 ## <a name="response"></a>响应
 
@@ -114,3 +114,5 @@ HTTP/1.1 204 OK
   ]
 }
 -->
+
+

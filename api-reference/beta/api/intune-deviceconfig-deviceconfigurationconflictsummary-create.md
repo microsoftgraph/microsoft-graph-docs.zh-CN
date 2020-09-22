@@ -3,24 +3,24 @@ title: 创建 deviceConfigurationConflictSummary
 description: 创建新的 deviceConfigurationConflictSummary 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: da12ba87e7eb2ac0ae24daacde1c1b4325781698
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 34071af61f3906b709a3ecf03884ae91569593f7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433575"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011499"
 ---
 # <a name="create-deviceconfigurationconflictsummary"></a>创建 deviceConfigurationConflictSummary
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)对象。
+创建新的 [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -55,13 +55,13 @@ POST /deviceManagement/deviceConfigurationConflictSummary
 |:---|:---|:---|
 |conflictingDeviceConfigurations|[settingSource](../resources/intune-deviceconfig-settingsource.md) 集合|与给定设置发生冲突的策略集|
 |id|String|此组冲突策略的 id。 此 id 是 ConflictingDeviceConfigurations 中的所有策略的 id，以字典顺序分隔，由下划线分隔。|
-|contributingSettings|String 集合|与给定策略发生冲突的设置集|
+|contributingSettings|String collection|与给定策略发生冲突的设置集|
 |deviceCheckinsImpacted|Int32|受冲突策略和设置影响的签入次数|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -70,7 +70,7 @@ POST /deviceManagement/deviceConfigurationConflictSummary
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationConflictSummary
 Content-type: application/json
-Content-length: 361
+Content-length: 398
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationConflictSummary",
@@ -78,7 +78,8 @@ Content-length: 361
     {
       "@odata.type": "microsoft.graph.settingSource",
       "id": "Id value",
-      "displayName": "Display Name value"
+      "displayName": "Display Name value",
+      "sourceType": "deviceIntent"
     }
   ],
   "contributingSettings": [
@@ -93,7 +94,7 @@ Content-length: 361
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 410
+Content-Length: 447
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationConflictSummary",
@@ -101,7 +102,8 @@ Content-Length: 410
     {
       "@odata.type": "microsoft.graph.settingSource",
       "id": "Id value",
-      "displayName": "Display Name value"
+      "displayName": "Display Name value",
+      "sourceType": "deviceIntent"
     }
   ],
   "id": "d5f22c23-2c23-d5f2-232c-f2d5232cf2d5",
@@ -111,6 +113,9 @@ Content-Length: 410
   "deviceCheckinsImpacted": 6
 }
 ```
+
+
+
 
 
 

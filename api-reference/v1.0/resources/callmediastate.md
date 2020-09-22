@@ -5,25 +5,25 @@ author: ananmishr
 ms.prod: cloud-communications
 localization_priority: Normal
 doc_type: resourcePageType
-ms.openlocfilehash: 3bf6b0e2387ac658ad506e3b4ea226a9a8f66e6d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 24dde1de6248413a7fe7753492b40995f994e66d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531959"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009371"
 ---
 # <a name="callmediastate-resource-type"></a>callMediaState 资源类型
 
 命名空间：microsoft.graph
 
 
-表示[呼叫](call.md)的媒体状态。
+表示 [呼叫](call.md)的媒体状态。
 
 ## <a name="properties"></a>属性
 
 | 属性            | 类型    | 说明                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| audio           | 字符串  | 音频媒体状态。 可取值为：`active`、`inactive`。 |
+| audio           | String  | 音频媒体状态。 可取值为：`active`、`inactive`。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -51,3 +51,4 @@ ms.locfileid: "42531959"
   "section": "documentation",
   "tocPath": ""
 }-->
+

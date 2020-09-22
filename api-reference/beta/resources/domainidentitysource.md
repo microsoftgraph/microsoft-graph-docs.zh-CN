@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 134f0ae3c382c879b48d468545dd40f2d6bd101b
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 63301dbf42a4589fd204290c157c6e6f63e473d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46510156"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010304"
 ---
 # <a name="domainidentitysource-resource-type"></a>domainIdentitySource 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "46510156"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[connectedOrganization](connectedOrganization.md)的标识源中使用。 `@odata.type`该值 `#microsoft.graph.domainIdentitySource` 指示此类型将域标识为连接的组织的标识源。
+在 [connectedOrganization](connectedOrganization.md)的标识源中使用。 `@odata.type`该值 `#microsoft.graph.domainIdentitySource` 指示此类型将域标识为连接的组织的标识源。
 
 ## <a name="properties"></a>属性
 
@@ -60,3 +60,5 @@ ms.locfileid: "46510156"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

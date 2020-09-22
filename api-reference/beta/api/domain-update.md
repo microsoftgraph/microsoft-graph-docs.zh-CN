@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6c39f488b3d41c099d996023617d726be09a9cdf
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 5195241cb1a011079935c5a7518f73c1b8220f1b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43179841"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008482"
 ---
 # <a name="update-domain"></a>更新域
 
@@ -54,7 +54,7 @@ PATCH /domains/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将`204 No Content`返回响应代码，不返回任何响应正文。
+如果成功，此方法将返回 `204 No Content` 响应代码，不返回任何响应正文。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -116,3 +116,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

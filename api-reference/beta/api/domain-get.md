@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 76d87e3a25f85747c6e600ce2e5621b8e2c87543
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 9994060eedc41084c22fff41b6ee7681acc2e566
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180072"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008519"
 ---
 # <a name="get-domain"></a>获取域
 
@@ -56,7 +56,7 @@ GET /domains/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[domain](../resources/domain.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [domain](../resources/domain.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
@@ -119,3 +119,5 @@ Content-length: 192
   ]
 }
 -->
+
+

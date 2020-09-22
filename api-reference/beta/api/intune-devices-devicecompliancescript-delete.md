@@ -3,24 +3,24 @@ title: 删除 deviceComplianceScript
 description: 删除 deviceComplianceScript。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 80593afa9707c517c9ac361e66a143a1c9f00278
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 8d8f57f99b597541cb3e82cdfc4c42ce97b78e4f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792497"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011331"
 ---
 # <a name="delete-devicecompliancescript"></a>删除 deviceComplianceScript
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除[deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md)。
+删除 [deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md)。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -65,6 +65,9 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceComplianceScripts
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

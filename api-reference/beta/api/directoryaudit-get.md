@@ -1,16 +1,16 @@
 ---
 title: 获取 directoryAudit
-description: 介绍了 Microsoft Graph API 中的 directoryAudit 资源（实体）的 get 方法（beta 版本）。
+description: 介绍了 Microsoft Graph API (beta 版本) 中的 directoryAudit 资源 (entity) 的 get 方法。
 localization_priority: Normal
 author: SarahBar
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7be5578e1417ca930acd986febffffb244309712
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: f438927eba98dfa96514292ba68765989d83278a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543350"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008923"
 ---
 # <a name="get-directoryaudit"></a>获取 directoryAudit
 
@@ -18,7 +18,7 @@ ms.locfileid: "43543350"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取特定的 Azure Active Directory 审核日志项。 这包括由 Azure Active Directory 中的各种服务生成的审核日志项目，如用户、应用程序、设备和组管理、特权身份管理（PIM）、访问查看、使用条款、标识保护、密码管理（自助服务和管理员密码重置）、自助服务组管理等等。
+获取特定的 Azure Active Directory 审核日志项。 这包括由 Azure Active Directory 中的各种服务生成的审核日志项目，如用户、应用程序、设备和组管理、特权身份管理 (PIM) 、访问评论、使用条款、标识保护、密码管理 (自助服务和管理员密码重置) 、自助服务组管理等。
 
 ## <a name="permissions"></a>权限
 
@@ -41,7 +41,7 @@ GET /auditLogs/directoryAudits/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 OData 查询参数来帮助自定义响应。 有关如何使用此参数的详细信息，请参阅[OData 查询参数](/graph/query_parameters)。
+此方法支持 OData 查询参数来帮助自定义响应。 有关如何使用此参数的详细信息，请参阅 [OData 查询参数](/graph/query_parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -55,7 +55,7 @@ GET /auditLogs/directoryAudits/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[directoryAudit](../resources/directoryaudit.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [directoryAudit](../resources/directoryaudit.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -158,3 +158,5 @@ Content-length: 218
   "suppressions": [
   ]
 }-->
+
+

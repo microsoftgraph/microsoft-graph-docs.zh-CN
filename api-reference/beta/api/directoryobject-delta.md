@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d2f90d11e8ec4b052a6f5f8ff03603acdff6fe29
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 3ea2d7b6cbf722ae43e57d1649192a4d44717001
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180956"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008930"
 ---
 # <a name="directoryobject-delta"></a>directoryObject： delta
 
@@ -18,7 +18,7 @@ ms.locfileid: "43180956"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在单个增量查询中获取以下类型的新创建、更新或删除的目录对象：[用户](../resources/user.md)、[组](../resources/group.md)和[组织联系人](../resources/orgcontact.md)。 有关详细信息，请参阅[更改跟踪](/graph/delta-query-overview)。
+在单个增量查询中获取以下类型的新创建、更新或删除的目录对象： [用户](../resources/user.md)、 [组](../resources/group.md) 和 [组织联系人](../resources/orgcontact.md)。 有关详细信息，请参阅[更改跟踪](/graph/delta-query-overview)。
 
 ## <a name="permissions"></a>权限
 
@@ -42,7 +42,7 @@ GET /directoryObjects/delta
 
 ## <a name="query-parameters"></a>查询参数
 
-跟踪更改会产生一个或多个**delta**函数调用的往返。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。
+跟踪更改会产生一个或多个 **delta** 函数调用的往返。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。
 
 只需预先指定所需的任何查询参数一次。
 
@@ -57,8 +57,8 @@ GET /directoryObjects/delta
 
 此方法支持可选 OData 查询参数来帮助自定义响应。
 
-- 您可以与`$filter`特殊`isOf`运算符一起使用，以筛选从 directoryObject 派生的类型的子集。
-  - 您可以将多个表达式与`or`结合使用，这样您就可以让单个增量查询跟踪多个类型。 有关详细信息，请参阅[第三个示例](#request-3)。
+- 您可以 `$filter` 与特殊运算符一起使用， `isOf` 以筛选从 directoryObject 派生的类型的子集。
+  - 您可以将多个表达式与结合使用，这样您就可以 `or` 让单个增量查询跟踪多个类型。 有关详细信息，请参阅 [第三个示例](#request-3) 。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -136,7 +136,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta
 
 ### <a name="response-1"></a>响应 1
 
-以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 未`isOf`使用任何筛选器，因此将返回从 directoryObject 派生的所有类型。
+以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 未 `isOf` 使用任何筛选器，因此将返回从 directoryObject 派生的所有类型。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
@@ -266,7 +266,7 @@ Content-type: application/json
 
 ### <a name="request-3"></a>请求 3
 
-下一个示例显示使用`isOf`运算符筛选出仅用户和组实体的初始请求：
+下一个示例显示使用 `isOf` 运算符筛选出仅用户和组实体的初始请求：
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -356,3 +356,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

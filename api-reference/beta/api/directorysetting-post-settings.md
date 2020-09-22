@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c4bc56c34da07d5e8f1d367c4187c5709b130698
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1b545da38604547737fcb6a9b8c26db8a33452aa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43375619"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008643"
 ---
 # <a name="create-a-directory-setting"></a>创建目录设置
 
@@ -18,11 +18,11 @@ ms.locfileid: "43375619"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-根据 directorySettingTemplates 中可用的模板，使用此 API 创建新的设置。 这些设置可以是租户级别，也可以是对象级别（当前仅适用于组）。 创建请求必须为模板中定义的所有设置提供 settingValues。 对于组特定的设置，仅控制是否可以设置组成员是否可以邀请来宾用户的设置。 这样一来，一旦能够将来宾用户添加到组中，就可以控制此行为。
+根据 directorySettingTemplates 中可用的模板，使用此 API 创建新的设置。 这些设置可以是租户级别，也可以是对象级别 (仅适用于组) 。 创建请求必须为模板中定义的所有设置提供 settingValues。 对于组特定的设置，仅控制是否可以设置组成员是否可以邀请来宾用户的设置。 这样一来，一旦能够将来宾用户添加到组中，就可以控制此行为。
 
-> **注意**：此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为*Create groupSettings*。
+> **注意**：此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为 *Create groupSettings*。
 
-若要获取在 beta 版中支持的模板及其属性的列表，请使用[directorySettingTemplate 查询](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta)。 （对于 v1.0 终结点，请调用[groupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)。）
+若要获取在 beta 版中支持的模板及其属性的列表，请使用 [directorySettingTemplate 查询](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta)。  (v1.0 终结点，请调用 [groupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)。 ) 
 
 
 ## <a name="permissions"></a>权限
@@ -46,11 +46,11 @@ POST /groups/{id}/settings
 | Authorization  | Bearer {token}。必需。|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[directorySetting](../resources/directorysetting.md)对象的 JSON 表示形式。  但是，将根据引用的设置模板名称设置设置的显示名称。
+在请求正文中，提供 [directorySetting](../resources/directorysetting.md) 对象的 JSON 表示形式。  但是，将根据引用的设置模板名称设置设置的显示名称。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`201 Created`响应正文中返回响应代码和[directorySetting](../resources/directorysetting.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [directorySetting](../resources/directorysetting.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -90,7 +90,7 @@ Content-length: 222
 
 ---
 
-在请求正文中，提供[directorySetting](../resources/directorysetting.md)对象的 JSON 表示形式。
+在请求正文中，提供 [directorySetting](../resources/directorysetting.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
@@ -130,3 +130,5 @@ Content-length: 244
   ]
 }
 -->
+
+

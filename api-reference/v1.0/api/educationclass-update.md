@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ce3dd12343574455c6afb55cf509fbfd2583b588
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 14ad018efa1aee22a8f6557fdab34b7d2fc6decf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062621"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009766"
 ---
 # <a name="update-educationclass-properties"></a>更新 educationclass 属性
 
@@ -45,7 +45,7 @@ PATCH /education/classes/{id}
 |:---------------|:--------|:----------|
 |说明|String| 课程说明。|
 |displayName|String| 课程名称。|
-|mailNickname|字符串| 用于向所有用户发送电子邮件的电子邮件别名（如果已启用）。 |
+|mailNickname|String| 用于向所有用户发送电子邮件的电子邮件别名（如果已启用）。 |
 |classCode|String| 学校使用的类代码。|
 |externalId|String| 来自同步系统的课程 ID。 |
 |externalName|String|同步系统中的课程名称。|
@@ -134,3 +134,4 @@ Content-length: 224
   "suppressions": [
   ]
 }-->
+

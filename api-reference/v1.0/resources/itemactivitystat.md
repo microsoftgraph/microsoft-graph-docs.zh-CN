@@ -6,16 +6,16 @@ description: ItemActivityStat 对象提供有关项目上发生的活动的信�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 11b19e4b953d4353382aec15071c6589b5bb23c0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 80cc78486415f809082a2e9631dee86293e3389e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447666"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009322"
 ---
 # <a name="itemactivitystat-resource-type"></a>itemActivityStat 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 **ItemActivityStat**资源提供有关在一段时间内发生的活动的信息。
 
@@ -24,14 +24,14 @@ ms.locfileid: "42447666"
 | 属性         | 类型                    | 说明
 |:-----------------|:------------------------|:----------------------------------------
 | incompleteData   | [incompleteData][]      | 指示此时间间隔中的统计信息基于不完整的数据。 只读。
-| isTrending       | 布尔                 | 指示项目是否为 "趋势"。 只读。
+| isTrending       | Boolean                 | 指示项目是否为 "趋势"。 只读。
 | startDateTime    | DateTimeOffset          | 时间间隔开始时。 只读。
 | endDateTime      | DateTimeOffset          | 时间间隔结束时。 只读。
-| create           | [itemActionStat][]      | 有关此间隔中的**创建**操作的统计信息。 只读。
-| edit             | [itemActionStat][]      | 有关此间隔中的**编辑**操作的统计信息。 只读。
-| delete           | [itemActionStat][]      | 有关此间隔中的**删除**操作的统计信息。 只读。
-| move             | [itemActionStat][]      | 有关此间隔中**移动**操作的统计信息。 只读。
-| 访问           | [itemActionStat][]      | 有关此间隔中的**访问**操作的统计信息。 只读。
+| create           | [itemActionStat][]      | 有关此间隔中的 **创建** 操作的统计信息。 只读。
+| edit             | [itemActionStat][]      | 有关此间隔中的 **编辑** 操作的统计信息。 只读。
+| delete           | [itemActionStat][]      | 有关此间隔中的 **删除** 操作的统计信息。 只读。
+| move             | [itemActionStat][]      | 有关此间隔中 **移动** 操作的统计信息。 只读。
+| 访问           | [itemActionStat][]      | 有关此间隔中的 **访问** 操作的统计信息。 只读。
 
 [itemActionStat]: itemactionstat.md
 [incompleteData]: incompletedata.md
@@ -78,3 +78,4 @@ ms.locfileid: "42447666"
   "suppressions": []
 }
 -->
+

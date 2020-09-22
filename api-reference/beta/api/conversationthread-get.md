@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4d65f8a2807b3821f845e8e06bf56ed6801319f0
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: a216fe70c2b6668fae869d36c3c7be4a61eb9de6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44743924"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009056"
 ---
 # <a name="get-conversationthread"></a>获取 conversationThread
 
@@ -125,3 +125,5 @@ Content-length: 419
   ]
 }
 -->
+
+

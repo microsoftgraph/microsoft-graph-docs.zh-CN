@@ -6,23 +6,23 @@ description: ItemActivity 对象提供有关项目上发生的活动的信息。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: f1ffbcc84f3cb399b131ae40c46cae9230e4cac8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4ae71056fccebcb372891124b01999004b1957c2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447673"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009329"
 ---
 # <a name="itemactivity-resource-type"></a>itemActivity 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 **ItemActivity**资源提供有关在项目或容器中发生的活动的信息。
 目前仅适用于 SharePoint 和 OneDrive for Business。
 
-在 itemActivity 中发生的操作将在[itemActionSet][]属性中进行详细说明。
+在 itemActivity 中发生的操作将在 [itemActionSet][] 属性中进行详细说明。
 
->**注意：** **itemActivity**目前仅适用于 SharePoint 和 OneDrive for business。
+>**注意：** **itemActivity** 目前仅适用于 SharePoint 和 OneDrive for business。
 
 [itemActionSet]: itemactionset.md#properties
 
@@ -79,3 +79,4 @@ ms.locfileid: "42447673"
   "suppressions": []
 }
 -->
+

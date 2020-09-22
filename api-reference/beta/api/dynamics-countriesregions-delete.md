@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: be8f7a06e0095ffcf09278f39828aea7a3d0fb51
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 11e0515caad03fdff6ceb35871c54858b9dfed5d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431940"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008367"
 ---
 # <a name="delete-countriesregions"></a>删除 countriesRegions
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42431940"
 |权限类型 |权限（从最低特权到最高特权）|
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
-|委派（个人 Microsoft 帐户|不支持。|
+|委派 (个人 Microsoft 帐户|不支持。|
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -42,7 +42,7 @@ DELETE /financials/companies/{id}/countriesRegions/{id}
 |标头|值|
 |------|-----|
 |Authorization  |Bearer {token}。必需。 |
-|If-Match       |必填。 如果包含此请求标头，且提供的 eTag 与**countriesRegions**上的当前标记不匹配，则不会更新**countriesRegions** 。 |
+|If-Match       |必需。 如果包含此请求标头，且提供的 eTag 与 **countriesRegions**上的当前标记不匹配，则不会更新 **countriesRegions** 。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -67,3 +67,5 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/countriesRegio
 ```json
 HTTP/1.1 204 No Content
 ```
+
+

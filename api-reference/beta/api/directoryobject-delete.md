@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 74e1420bacd7a8c1437301dc1c01511acf46c9a9
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 6bb655c26e91891eda9ac59236f5c08e8960bd4c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180963"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008909"
 ---
 # <a name="delete-directoryobject"></a>删除 directoryObject
 
@@ -80,3 +80,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 302ee25dd2856ef4ab8e275862c109d31d78f85a
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+ms.openlocfilehash: 1308b230a9c05345a434d5e8f0012eb8fb8f276b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429571"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010631"
 ---
 # <a name="delete-phoneauthenticationmethod"></a>删除 phoneAuthenticationMethod
 
@@ -18,25 +18,25 @@ ms.locfileid: "44429571"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除用户的[电话身份验证方法](../resources/phoneauthenticationmethod.md)。 
+删除用户的 [电话身份验证方法](../resources/phoneauthenticationmethod.md)。 
 
 >**注意：** 这将从用户中删除电话号码，并且这些号码将无法再使用身份验证的号码（无论是通过短信还是语音呼叫）。
 
-请注意，用户的编号不能为数字 `alternateMobile` `mobile` 。 如果要 `mobile` 从也有号码的用户中删除号码 `alternateMobile` ，请首先将该号码[更新](phoneauthenticationmethod-update.md) `mobile` 为新号码，然后删除该 `alternateMobile` 号码。
+请注意，用户的编号不能为数字 `alternateMobile` `mobile` 。 如果要 `mobile` 从也有号码的用户中删除号码 `alternateMobile` ，请首先将该号码 [更新](phoneauthenticationmethod-update.md) `mobile` 为新号码，然后删除该 `alternateMobile` 号码。
 
-如果电话号码是用户的默认 Azure 多重身份验证（MFA）身份验证方法，则不能将其删除。 让用户更改其默认的身份验证方法，然后删除该号码。
+如果电话号码是用户的默认 Azure 多重身份验证 (MFA) 身份验证方法，则不能将其删除。 让用户更改其默认的身份验证方法，然后删除该号码。
 
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 作用于自助的权限（从最高特权到最高特权） | 对其他用户的权限（从最低到最高特权）|
+| 权限类型                        | 从最高特权到最高特权) 对自己 (的权限 | 对其他人进行操作的权限 (从至少到最高特权) |
 |:---------------------------------------|:-------------------------|:-----------------|
 | 委派（工作或学校帐户）     | 不支持。 | UserAuthenticationMethod |
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
-| Application                            | 不支持。 | 不支持。 |
+| 应用程序                            | 不支持。 | 不支持。 |
 
-对于在其他用户上执行管理的委派方案，管理员需要[以下角色之一](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 特权身份验证管理员
@@ -117,3 +117,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

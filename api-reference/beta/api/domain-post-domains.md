@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ded38d78a5cd01f5b52ebeaba840001438698a7a
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 2deb86488ed23c8c58e71a9cb917e78082a78e90
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180009"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008489"
 ---
 # <a name="create-domain"></a>创建域
 
@@ -108,3 +108,5 @@ Content-length: 192
   "suppressions": []
 }
 -->
+
+

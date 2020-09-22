@@ -7,12 +7,12 @@ localization_priority: Normal
 description: 使用 Shares API 访问共享的 driveItem 时，返回 sharedDriveItem 资源。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 10e6146151b64470386b6071bc19cb8764744b3e
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: 91e55039d73a30b954be4ec67b7d7ea1d6a6f70d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934897"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009175"
 ---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem 资源类型
 
@@ -53,7 +53,7 @@ ms.locfileid: "43934897"
 | 属性 | 类型                          | 说明                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
 | id       | String                        | 要访问的内容的唯一标识符。              |
-| name     | 字符串                        | 共享项的显示名称。                             |
+| name     | String                        | 共享项的显示名称。                             |
 | 所有者    | [IdentitySet](identityset.md) | 正在引用的共享项的所有者信息。 |
 
 ## <a name="relationships"></a>关系
@@ -70,8 +70,8 @@ ms.locfileid: "43934897"
 
 | 关系名称 | 类型                         | 说明
 | ------------------|:-----------------------------|:-----------------------------------
-| **items**         | [**driveItem**][driveItem]集合 | 共享根中包含的所有 driveItem。 不能枚举此集合。
-| **root**          | [**driveItem**][driveItem]   | 用于访问基础**driveItem**。 已弃用-- `driveItem`改用。
+| **items**         | [**driveItem**][driveItem] 集合 | 共享根中包含的所有 driveItem。 不能枚举此集合。
+| **root**          | [**driveItem**][driveItem]   | 用于访问基础 **driveItem**。 已弃用-- `driveItem` 改用。
 
 [driveItem]: driveitem.md
 [list]: list.md
@@ -79,7 +79,7 @@ ms.locfileid: "43934897"
 [permission]: permission.md
 [site]: site.md
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法                                  | REST 路径                |
 | :-------------------------------------- | :----------------------- |
@@ -96,3 +96,4 @@ ms.locfileid: "43934897"
   "section": "documentation",
   "tocPath": "Resources/Share"
 } -->
+

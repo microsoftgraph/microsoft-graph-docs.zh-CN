@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 66997034c1b83770af7e247e77464b98f8c20cda
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 184d02a0aacd290b54f398566b667ad0ee63b807
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808338"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009385"
 ---
 # <a name="automaticrepliesmailtips-resource-type"></a>automaticRepliesMailTips 资源类型
 
@@ -60,3 +60,4 @@ ms.locfileid: "46808338"
   "section": "documentation",
   "tocPath": ""
 }-->
+

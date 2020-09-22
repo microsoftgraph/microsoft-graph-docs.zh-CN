@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4417efadbaeef723edbff90e5f5a355eaaed923a
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 6f0d292998fb37a7832b3807aaa7ced54908241f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180879"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008755"
 ---
 # <a name="list-directoryroles"></a>列出 directoryRoles
 
@@ -111,3 +111,5 @@ Content-length: 187
   ]
 }
 -->
+
+

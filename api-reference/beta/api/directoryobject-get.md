@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 29fee99420ea038e5d0e7b096a2f3adbf7e5eea5
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 6f1ebf6f44fbe1116433cffd78502ae29abfb668
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180949"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008895"
 ---
 # <a name="get-directoryobject"></a>获取 directoryObject
 
@@ -102,3 +102,5 @@ Content-length: 22
   ]
 }
 -->
+
+

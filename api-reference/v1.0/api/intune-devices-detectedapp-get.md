@@ -3,14 +3,14 @@ title: 获取 detectedApp
 description: 读取 detectedApp 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aefefab9e5c82c0e40cb4b6bd37f446269218a61
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8359e2ee44716d25accdf6e96a9f9076e37445c5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456764"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009602"
 ---
 # <a name="get-detectedapp"></a>获取 detectedApp
 
@@ -79,6 +79,9 @@ Content-Length: 247
   }
 }
 ```
+
+
+
 
 
 

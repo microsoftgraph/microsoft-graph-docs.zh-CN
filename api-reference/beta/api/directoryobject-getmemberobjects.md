@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 254287569da163b66fb58e9a0be292c3c6d22a64
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 062f8169ecc918b46f8ba044bee95488a6b2f2c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180935"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008818"
 ---
 # <a name="get-member-objects"></a>获取成员对象
 
@@ -126,3 +126,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

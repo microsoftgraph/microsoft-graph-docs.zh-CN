@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fd0a76aed1c1ec1d2b1b52af73a790ea842ee87f
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: ff6569531dd264223e0352b659531a02aaab4a05
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311905"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008734"
 ---
 # <a name="add-directory-role-member"></a>添加目录角色成员
 
@@ -135,3 +135,5 @@ HTTP/1.1 204 No content
   ]
 }
 -->
+
+

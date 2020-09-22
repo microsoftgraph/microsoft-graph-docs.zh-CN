@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 使用此 API 检索特定格式的项的内容。
 doc_type: apiPageType
-ms.openlocfilehash: 3b9e07ed5e1bbe44c89cb307e73c6741f23fe8e7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca39ea1bb0707093b782a7068f965cb7716eb381
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517753"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009798"
 ---
 # <a name="download-a-file-in-another-format"></a>以其他格式下载文件
 
@@ -116,3 +116,4 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
   "suppressions": [
   ]
 } -->
+

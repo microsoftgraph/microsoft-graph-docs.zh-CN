@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 171d3b51690863256d7ffa18257ebb85a4cd3fa0
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: e24689de713df4d41b2c095c742055ec1059101e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "42453805"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010568"
 ---
 # <a name="create-timeoff"></a>创建 timeOff
 
@@ -20,7 +20,7 @@ ms.locfileid: "42453805"
 
 在[计划](../resources/schedule.md)中创建新的[timeOff](../resources/timeoff.md)实例。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "42453805"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 计划的所有写。 * |
+|应用程序 | 计划的所有写。 * |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
@@ -51,7 +51,7 @@ POST /teams/{teamId}/schedule/timesOff
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[timeOff](../resources/timeoff.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [timeOff](../resources/timeoff.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -155,3 +155,5 @@ Content-length: 401
   ]
 }
 -->
+
+

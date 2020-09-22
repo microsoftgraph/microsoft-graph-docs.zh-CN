@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5cb858308ab7fba8102cb39208384d8234baddd9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2d89803fd775b6ec6be921b500ab6eb95aad4969
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517542"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009763"
 ---
 # <a name="list-classes"></a>列出课程
 
@@ -124,3 +124,4 @@ Content-length: 277
   "suppressions": [
   ]
 }-->
+

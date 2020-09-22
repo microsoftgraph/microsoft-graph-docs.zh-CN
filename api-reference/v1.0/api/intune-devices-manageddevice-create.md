@@ -3,14 +3,14 @@ title: 创建 managedDevice
 description: 创建新的 managedDevice 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 95842e9ac269f23c7e1254a469adcf8a76ed68b0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f78891af7a5175381e5ea7a9dd73dd5552b5ca57
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456713"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009511"
 ---
 # <a name="create-manageddevice"></a>创建 managedDevice
 
@@ -53,7 +53,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备唯一标识符|
+|id|String|设备唯一标识符|
 |userId|String|与设备关联的用户的唯一标识符|
 |deviceName|String|设备的名称|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|设备的所有权。 可以是 "公司" 或 "个人"。 可取值为：`unknown`、`company`、`personal`。|
@@ -82,12 +82,12 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 |remoteAssistanceSessionUrl|String|允许与设备建立远程协助会话的 URL。|
 |remoteAssistanceSessionErrorDetails|String|用于在创建远程协助会话对象时识别问题的错误字符串。|
 |isEncrypted|Boolean|设备加密状态|
-|userPrincipalName|字符串|设备用户主体名称|
+|userPrincipalName|String|设备用户主体名称|
 |model|String|设备的型号|
 |manufacturer|String|设备的制造商|
 |imei|String|IMEI|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期的到期日期/时间|
-|serialNumber|字符串|序列号|
+|serialNumber|String|序列号|
 |phoneNumber|String|设备的电话号码|
 |androidSecurityPatchLevel|String|Android 安全修补程序级别|
 |userDisplayName|String|用户显示名称|
@@ -324,6 +324,9 @@ Content-Length: 4705
   "partnerReportedThreatState": "activated"
 }
 ```
+
+
+
 
 
 

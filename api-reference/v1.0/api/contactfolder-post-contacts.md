@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 78d967862d586c064975c82872b8263a92c345e5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a1ead090f2ad376213d18ed29ed1d88b65693aad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467658"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010120"
 ---
 # <a name="create-contact"></a>创建联系人
 
@@ -144,3 +144,4 @@ Content-length: 210
   "suppressions": [
   ]
 }-->
+

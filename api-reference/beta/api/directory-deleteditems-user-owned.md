@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ebf1e51810eacbbd14fa59b7d266f2fce4969c8b
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 84d0c9d688ef67fa36354c4cc037ecb61777eb0d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180998"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008916"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>列出用户拥有的已删除项目
 
@@ -18,7 +18,7 @@ ms.locfileid: "43180998"
 
 检索指定用户拥有的最近删除的项目的列表。  
 
-目前，列出已删除项目仅支持用户拥有的[应用程序](../resources/application.md)和[组](../resources/group.md)资源的功能。
+目前，列出已删除项目仅支持用户拥有的 [应用程序](../resources/application.md) 和 [组](../resources/group.md) 资源的功能。
 
 这是一个服务操作，这意味着它不支持分页。  API 返回最大为1000个已删除的对象，这些对象归用户所有，按 ID 排序。
 
@@ -48,15 +48,15 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 请求正文需要以下参数：
 
-| 参数    | 类型 |说明|
+| 参数    | 类型 |描述|
 |:---------------|:--------|:----------|
 |userId|String|所有者的 ID。|
-|type|字符串|要返回的所拥有的对象的类型;`group`目前是唯一受支持的值。|
+|type|String|要返回的所拥有的对象的类型; `group` 目前是唯一受支持的值。|
 
 
 ## <a name="response"></a>响应
 
-成功的请求`200 OK`返回响应代码;response 对象包括[目录（已删除项目）](../resources/directory.md)属性。
+成功的请求返回 `200 OK` 响应代码; response 对象包括 [目录 (删除的项) ](../resources/directory.md) 属性。
 
 ## <a name="example"></a>示例
 
@@ -114,5 +114,7 @@ Content-length: 1249
         ]
  }
 ```
+
+
 
 

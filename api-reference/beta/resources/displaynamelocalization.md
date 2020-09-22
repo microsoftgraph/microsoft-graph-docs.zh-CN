@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 8ae6c62acfacfccd22cc9985386762a2f61a2bc7
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
-ms.translationtype: Auto
+ms.openlocfilehash: e02af0d4fcd5cdf4ce08df4403736bd6b9c60a84
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050854"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010400"
 ---
 # <a name="displaynamelocalization-resource-type"></a>displayNameLocalization 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "45050854"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName   |String       | 如果存在，则此字段的值包含已为**languageTag**字段中存在的语言设置的**displayName**字符串。|
-|languageTag   |String       | 提供在其中提供了**displayName**字段的语言的语言区域性代码和友好名称。                  |
+|languageTag   |String       | 提供在其中提供了 **displayName** 字段的语言的语言区域性代码和友好名称。                  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -54,3 +54,5 @@ ms.locfileid: "45050854"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

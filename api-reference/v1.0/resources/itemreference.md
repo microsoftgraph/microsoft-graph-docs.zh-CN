@@ -7,16 +7,16 @@ localization_priority: Normal
 description: ItemReference 资源提供通过 API 寻址 DriveItem 所需的必要信息。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1c25b75dd422eb9d9fe515c425c9e71672bdecf8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a13fb5a3606b72c96a15317a9a7b1d5844184f4c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447617"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009224"
 ---
 # <a name="itemreference-resource-type"></a>ItemReference 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 **ItemReference** 资源提供了通过 API 查找 [DriveItem](driveitem.md) 的必要信息。
 
@@ -46,10 +46,10 @@ ms.locfileid: "42447617"
 
 | 属性      | 类型              | 说明
 |:--------------|:------------------|:-----------------------------------------
-| driveId       | 字符串            | 包含项的驱动器实例的唯一标识符。只读。
+| driveId       | String            | 包含项的驱动器实例的唯一标识符。只读。
 | driveType     | String            | 标识驱动器的类型。 请参阅 [drive][] 资源查看其值。
 | id            | String            | 项在驱动器中的唯一标识符。只读。
-| name          | 字符串            | 所引用的项的名称。只读。
+| name          | String            | 所引用的项的名称。只读。
 | 路径          | String            | 可用于导航到该项的路径。只读。
 | shareId       | String            | 可通过 [Shares][] API 访问的共享资源的唯一标识符。
 | sharepointIds | [sharepointIds][] | 返回对 SharePoint REST 兼容性有用的标识符。只读。
@@ -82,3 +82,4 @@ GET https://graph.microsoft.com/v1.0/drives/{driveId}/items/{id}
   ],
   "tocPath": "Resources/ItemReference"
 } -->
+

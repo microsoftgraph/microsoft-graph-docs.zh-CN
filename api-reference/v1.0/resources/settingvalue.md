@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 211609f81bf2ff8123783660b50e1bdd06cb3d56
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 4f565f598db7e69a48a924279a3ed228f2651755
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808121"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009216"
 ---
 # <a name="settingvalue-resource-type"></a>settingValue 资源类型
 
@@ -55,3 +55,4 @@ ms.locfileid: "46808121"
   "section": "documentation",
   "tocPath": ""
 }-->
+

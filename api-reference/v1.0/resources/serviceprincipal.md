@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: c23cfa46279a3d11824df4f97aafd88f9d9f3dec
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: 69fb12b694558fa8d8624d09f108f0c285365a12
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408118"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009210"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -177,3 +177,4 @@ ms.locfileid: "45408118"
     ]
 }
 -->
+

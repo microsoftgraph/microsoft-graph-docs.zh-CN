@@ -6,16 +6,16 @@ description: ItemActionSet 对象提供有关项目上发生的活动的信息�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: e7c2357965acaf049e8483b33b888116fea6e994
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 30372027d90c8ae4472c6cf66a164b5dbaff08ee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447659"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009315"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>itemActivityTimeSet 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 **ItemActivityTimeSet**资源提供有关何时发生某个项目的[活动][activity]的信息。
 
@@ -62,3 +62,4 @@ ms.locfileid: "42447659"
   "suppressions": []
 }
 -->
+

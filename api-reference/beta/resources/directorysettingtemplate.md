@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 03803fddb12401e8d04318e8f4e7d7c63029b709
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 032ddf2ffd557f88a944aafbb72164e2fe356d77
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181523"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010421"
 ---
 # <a name="directorysettingtemplate-resource-type"></a>directorySettingTemplate 资源类型
 
@@ -34,8 +34,8 @@ ms.locfileid: "43181523"
 |:---------------|:--------|:----------|
 |说明|string|模板的说明。 只读。|
 |displayName|string|模板的显示名称。 只读。 |
-|id|字符串| 模板的唯一标识符。 只读。|
-|values|[settingTemplateValue](settingtemplatevalue.md)集合| Settemplatevalues 的集合，该集合列出了组成此模板的可用设置、默认值和类型的集合。  只读。 |
+|id|string| 模板的唯一标识符。 只读。|
+|values|[settingTemplateValue](settingtemplatevalue.md) 集合| Settemplatevalues 的集合，该集合列出了组成此模板的可用设置、默认值和类型的集合。  只读。 |
 
 ## <a name="relationships"></a>关系
 无
@@ -75,3 +75,5 @@ ms.locfileid: "43181523"
   "suppressions": []
 }
 -->
+
+

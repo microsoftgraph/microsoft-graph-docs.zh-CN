@@ -5,12 +5,12 @@ author: dhanyahk
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7b0632271c2fd02fa6137df3065d413f0e35a046
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 86ecd0e7721ad804174359baf19bfde7a3230c16
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532086"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009448"
 ---
 # <a name="auditlogroot-resource-type"></a>auditLogRoot 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "42532086"
 
 包含不同类型的审核日志。 此资源返回 singleton auditLog 资源。 它不包含任何可用属性。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -35,8 +35,8 @@ ms.locfileid: "42532086"
 
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|directoryAudits|[directoryAudit](directoryaudit.md)集合| 只读。 可为空。|
-|signIns|[登录](signin.md)集合| 只读。可为空。|
+|directoryAudits|[directoryAudit](directoryaudit.md) 集合| 只读。 可为 Null。|
+|signIns|[登录](signin.md) 集合| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -108,3 +108,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

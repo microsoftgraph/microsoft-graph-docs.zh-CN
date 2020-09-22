@@ -3,14 +3,14 @@ title: 更新 detectedApp
 description: 更新 detectedApp 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e708909b613fc4aceedab6ba7023c042e81b9807
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d03608902330139f3b18fe2457048099c28ecc97
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456748"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009581"
 ---
 # <a name="update-detectedapp"></a>更新 detectedApp
 
@@ -52,7 +52,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|检测到的应用程序的唯一标识符。 创建此应用程序时，Intune 将自动生成它。 只读。|
-|displayName|字符串|发现的应用程序的名称。 只读|
+|displayName|String|发现的应用程序的名称。 只读|
 |version|String|发现的应用程序的版本。 只读|
 |sizeInByte|Int64|发现的应用程序的大小，以字节为单位。 只读|
 |deviceCount|Int32|已安装此应用程序的设备数量|
@@ -96,6 +96,9 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
+
+
+
 
 
 

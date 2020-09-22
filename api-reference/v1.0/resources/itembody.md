@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f8a07a07ceb8af5f5c6db53dd6386caee715f4e4
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: d10d242f1148bf2b7f5c1d6ed8700f1caa4ece37
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849098"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009245"
 ---
 # <a name="itembody-resource-type"></a>itemBody 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "46849098"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |内容|String|项目的内容。|
-|contentType|bodyType|内容的类型。 可能的值为 `text` 和 `html`。|
+|contentType|Office.mailboxenums.bodytype|内容的类型。 可能的值为 `text` 和 `html`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -52,3 +52,4 @@ ms.locfileid: "46849098"
   "section": "documentation",
   "tocPath": ""
 }-->
+

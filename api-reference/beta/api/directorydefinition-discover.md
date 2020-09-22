@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 86ab651035693eb0477f0f6f6aa1275e5ed7c814
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6b78cfe4eefa17893cf072f15e56837a4e6ee078
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386835"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008928"
 ---
 # <a name="directorydefinition-discover"></a>directoryDefinition：发现
 
@@ -50,7 +50,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/directories/{di
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将`200 OK`返回一个包含[directoryDefinition](../resources/synchronization-directorydefinition.md)对象的响应。
+如果成功，此方法将返回一个 `200 OK` 包含 [directoryDefinition](../resources/synchronization-directorydefinition.md) 对象的响应。
 
 ## <a name="example"></a>示例
 
@@ -118,3 +118,5 @@ Content-type: application/json
   "version": "bf8c03ac-d45e-47fe-b3a1-711a9418b2b1"
 }
  ```
+
+

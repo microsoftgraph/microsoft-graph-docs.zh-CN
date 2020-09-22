@@ -3,24 +3,24 @@ title: 更新 userPFXCertificate
 description: 更新 userPFXCertificate 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aa08241b3a672914d01058a8e0b817d737403670
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b258c5aee92430dfc68aa50ac4d45f663b582107
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43421518"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010897"
 ---
 # <a name="update-userpfxcertificate"></a>更新 userPFXCertificate
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象的属性。
+更新 [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,9 +47,9 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象的 JSON 表示形式。
+在请求正文中，提供 [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) 对象的 JSON 表示形式。
 
-下表显示创建[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)时所需的属性。
+下表显示创建 [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -60,7 +60,7 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 |startDateTime|DateTimeOffset|证书的有效期开始日期/时间。|
 |expirationDateTime|DateTimeOffset|证书的有效期到期日期/时间。|
 |providerName|String|用于加密此 blob 的加密提供程序。|
-|名|String|用于对 blob 进行加密的密钥（在提供程序中）的名称。|
+|名|String|提供程序) 用于对 blob 进行加密的密钥 (的名称。|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|加密/解密过程中提供程序使用的填充方案。 可取值为：`none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
 |encryptedPfxBlob|Binary|加密的 PFX blob。|
 |encryptedPfxPassword|String|加密的 PFX 密码。|
@@ -70,7 +70,7 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -120,6 +120,9 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
 
 
 

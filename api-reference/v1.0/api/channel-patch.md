@@ -5,18 +5,18 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7b3b9321fc4ce95fdbb06eeb83491344c7c40bd3
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: f31e4cb54c28cf2cfedae4f7c7fca8e95b62c44c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897804"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010155"
 ---
 # <a name="patch-channel"></a>修补程序通道
 
 命名空间：microsoft.graph
 
-更新指定[通道](../resources/channel.md)的属性。
+更新指定 [通道](../resources/channel.md)的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -95,3 +95,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

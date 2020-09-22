@@ -6,22 +6,22 @@ title: SharingLink
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: e96164b636866637a30f733cb46da5124d90fa49
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c79de95408b334d11dd6c2682dc12a0679f686c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520644"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010162"
 ---
 # <a name="sharinglink-resource-type"></a>sharingLink 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **SharingLink**资源将与链接相关的数据项分组到一个单一结构中。
 
-如果[**权限**](permission.md)资源具有非 null **sharingLink** facet，则该权限表示共享链接（而不是授予给个人或组的权限）。
+如果 [**权限**](permission.md) 资源具有非 null **sharingLink** facet，则该权限表示的是共享链接 (而不是授予给个人或组) 的权限。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -50,8 +50,8 @@ ms.locfileid: "42520644"
 |:---------------|:--------------|:-------------------------------------
 | application    | [Identity][]  | 链接所关联的应用。
 | type           | String        | 创建的链接类型。
-| scope          | 字符串        | 由该权限表示的链接范围。值 `anonymous` 表示该链接对任何人均可用，`organization` 表示该链接仅可由登录到同一个租户的用户使用。
-| preventsDownload | 布尔       | 如果为 true，则用户只能使用此链接查看 web 上的项目，并且无法使用它下载项目的内容。 仅适用于 OneDrive for Business 和 SharePoint。
+| scope          | String        | 由该权限表示的链接范围。值 `anonymous` 表示该链接对任何人均可用，`organization` 表示该链接仅可由登录到同一个租户的用户使用。
+| preventsDownload | Boolean       | 如果为 true，则用户只能使用此链接查看 web 上的项目，并且无法使用它下载项目的内容。 仅适用于 OneDrive for Business 和 SharePoint。
 | webHtml        | String        | 对于 `embed` 链接，此属性包含在网页上嵌入项的 `<iframe>` 元素的 HTML 代码。
 | webUrl         | String        | 在 OneDrive 网站上的浏览器中打开项的 URL。
 
@@ -59,7 +59,7 @@ ms.locfileid: "42520644"
 
 ### <a name="type-options"></a>类型选项
 
-下表定义了**type**属性的可能值。
+下表定义了 **type** 属性的可能值。
 
 | 值    | Role     | 说明
 |:---------|:---------|:---------------------------------------------------------
@@ -69,7 +69,7 @@ ms.locfileid: "42520644"
 
 ### <a name="scope-options"></a>作用域选项
 
-下表定义了**scope**属性的可能值。
+下表定义了 **scope** 属性的可能值。
 
 | 值            | 说明
 |:-----------------|:------------------------------------------------------------
@@ -90,3 +90,5 @@ ms.locfileid: "42520644"
   "suppressions": []
 }
 -->
+
+

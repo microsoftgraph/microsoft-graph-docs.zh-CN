@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3d4abe74ed67910e82bcdf936de3a7b54b463ac9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8be0e4a6410376b395f1e7f28868f0051bee28b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43375542"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008608"
 ---
 # <a name="list-directorysettingtemplates"></a>列出 directorySettingTemplates
 
@@ -18,9 +18,9 @@ ms.locfileid: "43375542"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-目录设置模板代表目录设置的一组模板，在租户中可以创建和使用目录设置。  此操作将检索可用的**directorySettingTemplates**对象的列表。
+目录设置模板代表目录设置的一组模板，在租户中可以创建和使用目录设置。  此操作将检索可用的 **directorySettingTemplates** 对象的列表。
 
-> **注意**：此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为*List groupSettingTemplate*。
+> **注意**：此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为 *List groupSettingTemplate*。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,7 +49,7 @@ GET /directorySettingTemplates
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[directorySettingTemplate](../resources/directorysettingtemplate.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [directorySettingTemplate](../resources/directorysettingtemplate.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -121,3 +121,5 @@ Content-length: 343
   ]
 }
 -->
+
+

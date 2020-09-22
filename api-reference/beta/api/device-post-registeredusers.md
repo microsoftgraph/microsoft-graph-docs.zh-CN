@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a18f329a94c80e4ea727e728fbdc44c815edc456
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: 0a86321af42a299c3d786bc5ea133b8d861e800b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45224753"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009062"
 ---
 # <a name="create-registereduser"></a>创建 registeredUser
 
@@ -105,3 +105,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

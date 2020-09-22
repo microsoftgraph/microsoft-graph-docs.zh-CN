@@ -3,14 +3,14 @@ title: bypassActivationLock 操作
 description: 跳过激活锁
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e9b18dff94ffa30e4bb800551d16cb6b7a1c7f4f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 16c5dae705e4d2ed64b209083544222650d15bbd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456727"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009546"
 ---
 # <a name="bypassactivationlock-action"></a>bypassActivationLock 操作
 
@@ -65,6 +65,9 @@ POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

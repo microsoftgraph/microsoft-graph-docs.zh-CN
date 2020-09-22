@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fd963c2235735381d2f8b6709aaea3cebdaea53b
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: a425563e3cdf45fa8b01c14935939b3ef0f66012
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44287736"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008965"
 ---
 # <a name="restore-deleted-item"></a>恢复已删除的项目
 
@@ -20,7 +20,7 @@ ms.locfileid: "44287736"
 
 从[已删除的项目](../resources/directory.md)中还原最近删除的项目。 
 
-目前，仅支持[应用程序](../resources/application.md)、[组](../resources/group.md)和[用户](../resources/user.md)资源的 "已删除邮件" 功能。 如果意外删除项目，可完全还原该项目。
+目前，仅支持 [应用程序](../resources/application.md)、 [组](../resources/group.md) 和 [用户](../resources/user.md) 资源的 "已删除邮件" 功能。 如果意外删除项目，可完全还原该项目。
 
 最近删除的项目将保留最多 30 天的可用时间。 30 天后，该项目将永久删除。
 
@@ -135,3 +135,5 @@ Content-type: application/json
   ]
 }
 -->
+
+
