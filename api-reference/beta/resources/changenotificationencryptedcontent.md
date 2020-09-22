@@ -1,48 +1,40 @@
 ---
 title: changeNotificationEncryptedContent 资源类型
-description: 通过使用资源数据的订阅，客户端应用程序可以接收更改通知，以更改 Microsoft Graph 中的数据。 更改通知加密内容代表通知附带的加密数据。
+description: 一个 changeNotificationEncryptedContent 对象，代表附加到更改通知的加密数据。
 localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 4ca2230cf3735cb696136f3b3014e8545202ebfe
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: c3d5f576c5259ba69f6fa2194cf52d7834a1f717
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598491"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192159"
 ---
-# <a name="changenotificationencryptedcontent-resource-type"></a><span data-ttu-id="3d9e1-104">changeNotificationEncryptedContent 资源类型</span><span class="sxs-lookup"><span data-stu-id="3d9e1-104">changeNotificationEncryptedContent resource type</span></span>
+# <a name="changenotificationencryptedcontent-resource-type"></a><span data-ttu-id="2cb2a-103">changeNotificationEncryptedContent 资源类型</span><span class="sxs-lookup"><span data-stu-id="2cb2a-103">changeNotificationEncryptedContent resource type</span></span>
 
-<span data-ttu-id="3d9e1-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3d9e1-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2cb2a-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2cb2a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3d9e1-106">代表附加到更改通知的加密数据。</span><span class="sxs-lookup"><span data-stu-id="3d9e1-106">Represents the encrypted data attached to a change notification.</span></span>
+<span data-ttu-id="2cb2a-105">代表附加到更改通知的加密数据。</span><span class="sxs-lookup"><span data-stu-id="2cb2a-105">Represents the encrypted data attached to a change notification.</span></span>
 
-<span data-ttu-id="3d9e1-107">有关详细信息，请参阅[设置包含资源数据 (preview) 的更改通知](/graph/webhooks-with-resource-data.md)。</span><span class="sxs-lookup"><span data-stu-id="3d9e1-107">For details, see [Set up change notifications that include resource data (preview)](/graph/webhooks-with-resource-data.md).</span></span>
+<span data-ttu-id="2cb2a-106">有关详细信息，请参阅 [设置包含资源数据 (preview) 的更改通知 ](/graph/webhooks-with-resource-data.md)。</span><span class="sxs-lookup"><span data-stu-id="2cb2a-106">For details, see [Set up change notifications that include resource data (preview)](/graph/webhooks-with-resource-data.md).</span></span>
 
-## <a name="methods"></a><span data-ttu-id="3d9e1-108">方法</span><span class="sxs-lookup"><span data-stu-id="3d9e1-108">Methods</span></span>
+## <a name="properties"></a><span data-ttu-id="2cb2a-107">属性</span><span class="sxs-lookup"><span data-stu-id="2cb2a-107">Properties</span></span>
 
-<span data-ttu-id="3d9e1-109">无。</span><span class="sxs-lookup"><span data-stu-id="3d9e1-109">None.</span></span>
-
-## <a name="properties"></a><span data-ttu-id="3d9e1-110">属性</span><span class="sxs-lookup"><span data-stu-id="3d9e1-110">Properties</span></span>
-
-| <span data-ttu-id="3d9e1-111">属性</span><span class="sxs-lookup"><span data-stu-id="3d9e1-111">Property</span></span> | <span data-ttu-id="3d9e1-112">类型</span><span class="sxs-lookup"><span data-stu-id="3d9e1-112">Type</span></span> | <span data-ttu-id="3d9e1-113">说明</span><span class="sxs-lookup"><span data-stu-id="3d9e1-113">Description</span></span> |
+| <span data-ttu-id="2cb2a-108">属性</span><span class="sxs-lookup"><span data-stu-id="2cb2a-108">Property</span></span> | <span data-ttu-id="2cb2a-109">类型</span><span class="sxs-lookup"><span data-stu-id="2cb2a-109">Type</span></span> | <span data-ttu-id="2cb2a-110">说明</span><span class="sxs-lookup"><span data-stu-id="2cb2a-110">Description</span></span> |
 |:---------|:-----|:------------|
-| <span data-ttu-id="3d9e1-114">data</span><span class="sxs-lookup"><span data-stu-id="3d9e1-114">data</span></span> | <span data-ttu-id="3d9e1-115">string</span><span class="sxs-lookup"><span data-stu-id="3d9e1-115">string</span></span> | <span data-ttu-id="3d9e1-116">以 Base64 编码的加密数据，生成完整的资源 respresented 作为 JSON。</span><span class="sxs-lookup"><span data-stu-id="3d9e1-116">Base64-encoded encrypted data that produces a full resource respresented as JSON.</span></span> <span data-ttu-id="3d9e1-117">数据已使用密码套件的提供进行了加密 `dataKey` `AES/CBC/PKCS5PADDING` 。</span><span class="sxs-lookup"><span data-stu-id="3d9e1-117">The data has been encrypted with the provided `dataKey` using an `AES/CBC/PKCS5PADDING` cipher suite.</span></span> |
-| <span data-ttu-id="3d9e1-118">dataSignature</span><span class="sxs-lookup"><span data-stu-id="3d9e1-118">dataSignature</span></span> | <span data-ttu-id="3d9e1-119">string</span><span class="sxs-lookup"><span data-stu-id="3d9e1-119">string</span></span> | <span data-ttu-id="3d9e1-120">用于验证目的的用于数据的 Base64 编码的 HMAC 哈希值。</span><span class="sxs-lookup"><span data-stu-id="3d9e1-120">Base64-encoded HMAC-SHA256 hash of the data for validation purposes.</span></span> |
-| <span data-ttu-id="3d9e1-121">dataKey</span><span class="sxs-lookup"><span data-stu-id="3d9e1-121">dataKey</span></span> | <span data-ttu-id="3d9e1-122">string</span><span class="sxs-lookup"><span data-stu-id="3d9e1-122">string</span></span> | <span data-ttu-id="3d9e1-123">由 Microsoft Graph 生成的 Base64 编码的对称密钥，用于加密数据值并生成数据签名。</span><span class="sxs-lookup"><span data-stu-id="3d9e1-123">Base64-encoded symmetric key generated by Microsoft Graph to encrypt the data value and to generate the data signature.</span></span> <span data-ttu-id="3d9e1-124">此密钥使用订阅过程中提供的证书公钥进行加密。</span><span class="sxs-lookup"><span data-stu-id="3d9e1-124">This key is encrypted with the certificate public key that was provided during the subscription.</span></span> <span data-ttu-id="3d9e1-125">必须使用证书私钥对其进行解密，然后才能将其用于解密数据或验证签名。</span><span class="sxs-lookup"><span data-stu-id="3d9e1-125">It must be decrypted with the certificate private key before it can be used to decrypt the data or verify the signature.</span></span> <span data-ttu-id="3d9e1-126">已使用以下密码套件对此项进行了加密： `RSA/ECB/OAEPWithSHA1AndMGF1Padding` 。</span><span class="sxs-lookup"><span data-stu-id="3d9e1-126">This key has been encrypted with the following cipher suite: `RSA/ECB/OAEPWithSHA1AndMGF1Padding`.</span></span> |
-| <span data-ttu-id="3d9e1-127">encryptionCertificateId</span><span class="sxs-lookup"><span data-stu-id="3d9e1-127">encryptionCertificateId</span></span> | <span data-ttu-id="3d9e1-128">string</span><span class="sxs-lookup"><span data-stu-id="3d9e1-128">string</span></span> | <span data-ttu-id="3d9e1-129">用于加密的证书的 ID `dataKey` 。</span><span class="sxs-lookup"><span data-stu-id="3d9e1-129">ID of the certificate used to encrypt the `dataKey`.</span></span> |
-| <span data-ttu-id="3d9e1-130">encryptionCertificateThumbprint</span><span class="sxs-lookup"><span data-stu-id="3d9e1-130">encryptionCertificateThumbprint</span></span> | <span data-ttu-id="3d9e1-131">string</span><span class="sxs-lookup"><span data-stu-id="3d9e1-131">string</span></span> | <span data-ttu-id="3d9e1-132">用于加密的证书的指纹的十六进制表示形式 `dataKey` 。</span><span class="sxs-lookup"><span data-stu-id="3d9e1-132">Hexadecimal representation of the thumbprint of the certificate used to encrypt the `dataKey`.</span></span> |
+| <span data-ttu-id="2cb2a-111">data</span><span class="sxs-lookup"><span data-stu-id="2cb2a-111">data</span></span> | <span data-ttu-id="2cb2a-112">string</span><span class="sxs-lookup"><span data-stu-id="2cb2a-112">string</span></span> | <span data-ttu-id="2cb2a-113">以 Base64 编码的加密数据，生成完整的资源 respresented 作为 JSON。</span><span class="sxs-lookup"><span data-stu-id="2cb2a-113">Base64-encoded encrypted data that produces a full resource respresented as JSON.</span></span> <span data-ttu-id="2cb2a-114">数据已使用密码套件的提供进行了加密 `dataKey` `AES/CBC/PKCS5PADDING` 。</span><span class="sxs-lookup"><span data-stu-id="2cb2a-114">The data has been encrypted with the provided `dataKey` using an `AES/CBC/PKCS5PADDING` cipher suite.</span></span> |
+| <span data-ttu-id="2cb2a-115">dataSignature</span><span class="sxs-lookup"><span data-stu-id="2cb2a-115">dataSignature</span></span> | <span data-ttu-id="2cb2a-116">string</span><span class="sxs-lookup"><span data-stu-id="2cb2a-116">string</span></span> | <span data-ttu-id="2cb2a-117">用于验证目的的用于数据的 Base64 编码的 HMAC 哈希值。</span><span class="sxs-lookup"><span data-stu-id="2cb2a-117">Base64-encoded HMAC-SHA256 hash of the data for validation purposes.</span></span> |
+| <span data-ttu-id="2cb2a-118">dataKey</span><span class="sxs-lookup"><span data-stu-id="2cb2a-118">dataKey</span></span> | <span data-ttu-id="2cb2a-119">string</span><span class="sxs-lookup"><span data-stu-id="2cb2a-119">string</span></span> | <span data-ttu-id="2cb2a-120">由 Microsoft Graph 生成的 Base64 编码的对称密钥，用于加密数据值并生成数据签名。</span><span class="sxs-lookup"><span data-stu-id="2cb2a-120">Base64-encoded symmetric key generated by Microsoft Graph to encrypt the data value and to generate the data signature.</span></span> <span data-ttu-id="2cb2a-121">此密钥使用订阅过程中提供的证书公钥进行加密。</span><span class="sxs-lookup"><span data-stu-id="2cb2a-121">This key is encrypted with the certificate public key that was provided during the subscription.</span></span> <span data-ttu-id="2cb2a-122">必须使用证书私钥对其进行解密，然后才能将其用于解密数据或验证签名。</span><span class="sxs-lookup"><span data-stu-id="2cb2a-122">It must be decrypted with the certificate private key before it can be used to decrypt the data or verify the signature.</span></span> <span data-ttu-id="2cb2a-123">已使用以下密码套件对此项进行了加密： `RSA/ECB/OAEPWithSHA1AndMGF1Padding` 。</span><span class="sxs-lookup"><span data-stu-id="2cb2a-123">This key has been encrypted with the following cipher suite: `RSA/ECB/OAEPWithSHA1AndMGF1Padding`.</span></span> |
+| <span data-ttu-id="2cb2a-124">encryptionCertificateId</span><span class="sxs-lookup"><span data-stu-id="2cb2a-124">encryptionCertificateId</span></span> | <span data-ttu-id="2cb2a-125">string</span><span class="sxs-lookup"><span data-stu-id="2cb2a-125">string</span></span> | <span data-ttu-id="2cb2a-126">用于加密的证书的 ID `dataKey` 。</span><span class="sxs-lookup"><span data-stu-id="2cb2a-126">ID of the certificate used to encrypt the `dataKey`.</span></span> |
+| <span data-ttu-id="2cb2a-127">encryptionCertificateThumbprint</span><span class="sxs-lookup"><span data-stu-id="2cb2a-127">encryptionCertificateThumbprint</span></span> | <span data-ttu-id="2cb2a-128">string</span><span class="sxs-lookup"><span data-stu-id="2cb2a-128">string</span></span> | <span data-ttu-id="2cb2a-129">用于加密的证书的指纹的十六进制表示形式 `dataKey` 。</span><span class="sxs-lookup"><span data-stu-id="2cb2a-129">Hexadecimal representation of the thumbprint of the certificate used to encrypt the `dataKey`.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="3d9e1-133">关系</span><span class="sxs-lookup"><span data-stu-id="3d9e1-133">Relationships</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2cb2a-130">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="2cb2a-130">JSON representation</span></span>
 
-<span data-ttu-id="3d9e1-134">无。</span><span class="sxs-lookup"><span data-stu-id="3d9e1-134">None.</span></span>
-
-## <a name="json-representation"></a><span data-ttu-id="3d9e1-135">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3d9e1-135">JSON representation</span></span>
-
-<span data-ttu-id="3d9e1-136">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3d9e1-136">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="2cb2a-131">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2cb2a-131">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -74,3 +66,5 @@ ms.locfileid: "46598491"
   "suppressions": []
 }
 -->
+
+

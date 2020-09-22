@@ -5,60 +5,60 @@ localization_priority: Priority
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 81eca376937954a6d2411795a8b030ddbc89825a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 75e4d9a0829714b469fec07a4e4f093043c5c6af
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471881"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070385"
 ---
-# <a name="get-attachment"></a><span data-ttu-id="2f54a-103">获取附件</span><span class="sxs-lookup"><span data-stu-id="2f54a-103">Get attachment</span></span>
+# <a name="get-attachment"></a><span data-ttu-id="b0d9a-103">获取附件</span><span class="sxs-lookup"><span data-stu-id="b0d9a-103">Get attachment</span></span>
 
-<span data-ttu-id="2f54a-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2f54a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b0d9a-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b0d9a-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="2f54a-105">读取附加到用户[事件](../resources/event.md)、[邮件](../resources/message.md)或[帖子](../resources/post.md)的附件的属性、关系或原始内容。</span><span class="sxs-lookup"><span data-stu-id="2f54a-105">Read the properties, relationships, or raw contents of an attachment, attached to a user [event](../resources/event.md), [message](../resources/message.md), or [post](../resources/post.md).</span></span> 
+<span data-ttu-id="b0d9a-105">读取附加到用户[事件](../resources/event.md)、[邮件](../resources/message.md)或[帖子](../resources/post.md)的附件的属性、关系或原始内容。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-105">Read the properties, relationships, or raw contents of an attachment, attached to a user [event](../resources/event.md), [message](../resources/message.md), or [post](../resources/post.md).</span></span> 
 
-<span data-ttu-id="2f54a-106">附件可以是下列类型之一：</span><span class="sxs-lookup"><span data-stu-id="2f54a-106">An attachment can be one of the following types:</span></span>
+<span data-ttu-id="b0d9a-106">附件可以是下列类型之一：</span><span class="sxs-lookup"><span data-stu-id="b0d9a-106">An attachment can be one of the following types:</span></span>
 
-* <span data-ttu-id="2f54a-107">文件（[fileAttachment](../resources/fileattachment.md) 资源）。</span><span class="sxs-lookup"><span data-stu-id="2f54a-107">A file ([fileAttachment](../resources/fileattachment.md) resource).</span></span>
-* <span data-ttu-id="2f54a-108">项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）。</span><span class="sxs-lookup"><span data-stu-id="2f54a-108">An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).</span></span> <span data-ttu-id="2f54a-109">可使用 `$expand` 来进一步获取该项的属性。</span><span class="sxs-lookup"><span data-stu-id="2f54a-109">You can use `$expand` to further get the properties of that item.</span></span> <span data-ttu-id="2f54a-110">请参阅以下[示例](#request-2)。</span><span class="sxs-lookup"><span data-stu-id="2f54a-110">See an [example](#request-2) below.</span></span>
-* <span data-ttu-id="2f54a-111">指向文件的链接（[referenceAttachment](../resources/referenceattachment.md) 资源）。</span><span class="sxs-lookup"><span data-stu-id="2f54a-111">A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).</span></span>
+* <span data-ttu-id="b0d9a-107">文件（[fileAttachment](../resources/fileattachment.md) 资源）。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-107">A file ([fileAttachment](../resources/fileattachment.md) resource).</span></span>
+* <span data-ttu-id="b0d9a-108">项（由 [itemAttachment](../resources/itemattachment.md) 资源表示的联系人、事件或邮件）。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-108">An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).</span></span> <span data-ttu-id="b0d9a-109">可使用 `$expand` 来进一步获取该项的属性。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-109">You can use `$expand` to further get the properties of that item.</span></span> <span data-ttu-id="b0d9a-110">请参阅以下[示例](#request-2)。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-110">See an [example](#request-2) below.</span></span>
+* <span data-ttu-id="b0d9a-111">指向文件的链接（[referenceAttachment](../resources/referenceattachment.md) 资源）。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-111">A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).</span></span>
 
-<span data-ttu-id="2f54a-112">所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="2f54a-112">All these types of attachment resources are derived from the [attachment](../resources/attachment.md) resource.</span></span> 
+<span data-ttu-id="b0d9a-112">所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-112">All these types of attachment resources are derived from the [attachment](../resources/attachment.md) resource.</span></span> 
 
-### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a><span data-ttu-id="2f54a-113">获取文件或项目附件的原始内容</span><span class="sxs-lookup"><span data-stu-id="2f54a-113">Get the raw contents of a file or item attachment</span></span>
-<span data-ttu-id="2f54a-114">你可以附加路径段 `/$value` 以获取文件或项目附件的原始内容。</span><span class="sxs-lookup"><span data-stu-id="2f54a-114">You can append the path segment `/$value` to get the raw contents of a file or item attachment.</span></span> 
+### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a><span data-ttu-id="b0d9a-113">获取文件或项目附件的原始内容</span><span class="sxs-lookup"><span data-stu-id="b0d9a-113">Get the raw contents of a file or item attachment</span></span>
+<span data-ttu-id="b0d9a-114">你可以附加路径段 `/$value` 以获取文件或项目附件的原始内容。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-114">You can append the path segment `/$value` to get the raw contents of a file or item attachment.</span></span> 
 
-<span data-ttu-id="2f54a-115">对于文件附件，内容类型基于其原始内容类型。</span><span class="sxs-lookup"><span data-stu-id="2f54a-115">For a file attachment, the content type is based on its original content type.</span></span> <span data-ttu-id="2f54a-116">请参阅以下[示例](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message)。</span><span class="sxs-lookup"><span data-stu-id="2f54a-116">See an [example](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message) below.</span></span>
+<span data-ttu-id="b0d9a-115">对于文件附件，内容类型基于其原始内容类型。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-115">For a file attachment, the content type is based on its original content type.</span></span> <span data-ttu-id="b0d9a-116">请参阅以下[示例](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message)。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-116">See an [example](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message) below.</span></span>
 
-<span data-ttu-id="2f54a-117">对于作为[联系人](../resources/contact.md)、[事件](../resources/event.md)或[邮件](../resources/message.md)的项目附件，返回的原始内容为 MIME 格式。</span><span class="sxs-lookup"><span data-stu-id="2f54a-117">For an item attachment that is a [contact](../resources/contact.md), [event](../resources/event.md), or [message](../resources/message.md), the raw contents returned is in MIME format.</span></span>
+<span data-ttu-id="b0d9a-117">对于作为[联系人](../resources/contact.md)、[事件](../resources/event.md)或[邮件](../resources/message.md)的项目附件，返回的原始内容为 MIME 格式。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-117">For an item attachment that is a [contact](../resources/contact.md), [event](../resources/event.md), or [message](../resources/message.md), the raw contents returned is in MIME format.</span></span>
 
-| <span data-ttu-id="2f54a-118">项目附件类型</span><span class="sxs-lookup"><span data-stu-id="2f54a-118">Item attachment type</span></span>  | <span data-ttu-id="2f54a-119">返回的原始内容</span><span class="sxs-lookup"><span data-stu-id="2f54a-119">Raw contents returned</span></span> |
+| <span data-ttu-id="b0d9a-118">项目附件类型</span><span class="sxs-lookup"><span data-stu-id="b0d9a-118">Item attachment type</span></span>  | <span data-ttu-id="b0d9a-119">返回的原始内容</span><span class="sxs-lookup"><span data-stu-id="b0d9a-119">Raw contents returned</span></span> |
 |:-----------|:----------|
-| <span data-ttu-id="2f54a-120">**联系人**</span><span class="sxs-lookup"><span data-stu-id="2f54a-120">**contact**</span></span> | <span data-ttu-id="2f54a-121">[vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME 格式。</span><span class="sxs-lookup"><span data-stu-id="2f54a-121">[vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME format.</span></span> <span data-ttu-id="2f54a-122">请参阅[示例](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message)。</span><span class="sxs-lookup"><span data-stu-id="2f54a-122">See [example](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message).</span></span> |
-| <span data-ttu-id="2f54a-123">**事件**</span><span class="sxs-lookup"><span data-stu-id="2f54a-123">**event**</span></span> | <span data-ttu-id="2f54a-124">iCal MIME 格式。</span><span class="sxs-lookup"><span data-stu-id="2f54a-124">iCal MIME format.</span></span> <span data-ttu-id="2f54a-125">请参阅[示例](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message)。</span><span class="sxs-lookup"><span data-stu-id="2f54a-125">See [example](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message).</span></span> |
-| <span data-ttu-id="2f54a-126">**邮件**</span><span class="sxs-lookup"><span data-stu-id="2f54a-126">**message**</span></span> | <span data-ttu-id="2f54a-127">MIME 格式。</span><span class="sxs-lookup"><span data-stu-id="2f54a-127">MIME format.</span></span> <span data-ttu-id="2f54a-128">请参阅[示例](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message)。</span><span class="sxs-lookup"><span data-stu-id="2f54a-128">See [example](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message).</span></span> |
+| <span data-ttu-id="b0d9a-120">**联系人**</span><span class="sxs-lookup"><span data-stu-id="b0d9a-120">**contact**</span></span> | <span data-ttu-id="b0d9a-121">[vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME 格式。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-121">[vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME format.</span></span> <span data-ttu-id="b0d9a-122">请参阅[示例](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message)。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-122">See [example](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message).</span></span> |
+| <span data-ttu-id="b0d9a-123">**事件**</span><span class="sxs-lookup"><span data-stu-id="b0d9a-123">**event**</span></span> | <span data-ttu-id="b0d9a-124">iCal MIME 格式。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-124">iCal MIME format.</span></span> <span data-ttu-id="b0d9a-125">请参阅[示例](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message)。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-125">See [example](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message).</span></span> |
+| <span data-ttu-id="b0d9a-126">**邮件**</span><span class="sxs-lookup"><span data-stu-id="b0d9a-126">**message**</span></span> | <span data-ttu-id="b0d9a-127">MIME 格式。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-127">MIME format.</span></span> <span data-ttu-id="b0d9a-128">请参阅[示例](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message)。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-128">See [example](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message).</span></span> |
 
-<span data-ttu-id="2f54a-129">尝试获取参考附件的 `$value` 时返回 HTTP 405。</span><span class="sxs-lookup"><span data-stu-id="2f54a-129">Attempting to get the `$value` of a reference attachment returns HTTP 405.</span></span>
+<span data-ttu-id="b0d9a-129">尝试获取参考附件的 `$value` 时返回 HTTP 405。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-129">Attempting to get the `$value` of a reference attachment returns HTTP 405.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2f54a-130">权限</span><span class="sxs-lookup"><span data-stu-id="2f54a-130">Permissions</span></span>
-<span data-ttu-id="2f54a-p106">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2f54a-p106">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b0d9a-130">权限</span><span class="sxs-lookup"><span data-stu-id="b0d9a-130">Permissions</span></span>
+<span data-ttu-id="b0d9a-p106">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-p106">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-* <span data-ttu-id="2f54a-133">如果访问邮件中的附件：Mail.Read。</span><span class="sxs-lookup"><span data-stu-id="2f54a-133">If accessing attachments in messages: Mail.Read.</span></span>
-* <span data-ttu-id="2f54a-134">如果访问事件中的附件：Calendars.Read。</span><span class="sxs-lookup"><span data-stu-id="2f54a-134">If accessing attachments in events: Calendars.Read.</span></span>
-* <span data-ttu-id="2f54a-135">如果访问组帖子中的附件：Group.Read.All。</span><span class="sxs-lookup"><span data-stu-id="2f54a-135">If accessing attachments in group posts: Group.Read.All.</span></span>
+* <span data-ttu-id="b0d9a-133">如果访问邮件中的附件：Mail.Read。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-133">If accessing attachments in messages: Mail.Read.</span></span>
+* <span data-ttu-id="b0d9a-134">如果访问事件中的附件：Calendars.Read。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-134">If accessing attachments in events: Calendars.Read.</span></span>
+* <span data-ttu-id="b0d9a-135">如果访问组帖子中的附件：Group.Read.All。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-135">If accessing attachments in group posts: Group.Read.All.</span></span>
 
 <!--
 * If accessing attachments in group events or posts: Group.Read.All.
 -->
 
-## <a name="http-request"></a><span data-ttu-id="2f54a-136">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2f54a-136">HTTP request</span></span>
-<span data-ttu-id="2f54a-137">此部分显示了支持附件的每个实体（[事件](../resources/event.md)、[邮件](../resources/message.md)和[帖子](../resources/post.md)）的 HTTP GET 请求语法：</span><span class="sxs-lookup"><span data-stu-id="2f54a-137">This section shows the HTTP GET request syntax for each of the entities ([event](../resources/event.md), [message](../resources/message.md), and [post](../resources/post.md)) that support attachments:</span></span>
+## <a name="http-request"></a><span data-ttu-id="b0d9a-136">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b0d9a-136">HTTP request</span></span>
+<span data-ttu-id="b0d9a-137">此部分显示了支持附件的每个实体（[事件](../resources/event.md)、[邮件](../resources/message.md)和[帖子](../resources/post.md)）的 HTTP GET 请求语法：</span><span class="sxs-lookup"><span data-stu-id="b0d9a-137">This section shows the HTTP GET request syntax for each of the entities ([event](../resources/event.md), [message](../resources/message.md), and [post](../resources/post.md)) that support attachments:</span></span>
 
-- <span data-ttu-id="2f54a-138">若要获取附件的属性和关系，请指定要索引到**附件**集合的附件 ID，它已附加到指定的[事件](../resources/event.md)、[邮件](../resources/message.md)或[帖子](../resources/post.md)实例。</span><span class="sxs-lookup"><span data-stu-id="2f54a-138">To get the properties and relationships of an attachment, specify the attachment ID to index into the **attachments** collection, attached to the specified [event](../resources/event.md), [message](../resources/message.md), or [post](../resources/post.md) instance.</span></span>
-- <span data-ttu-id="2f54a-139">如果附件是文件或 Outlook 项目（联系人、事件或邮件），则可以通过将路径段 `/$value` 附加到请求 URL 来进一步获取附件的原始内容。</span><span class="sxs-lookup"><span data-stu-id="2f54a-139">If the attachment is a file or Outlook item (contact, event, or message), you can further get the raw contents of the attachment by appending the path segment `/$value` to the request URL.</span></span>
+- <span data-ttu-id="b0d9a-138">若要获取附件的属性和关系，请指定要索引到**附件**集合的附件 ID，它已附加到指定的[事件](../resources/event.md)、[邮件](../resources/message.md)或[帖子](../resources/post.md)实例。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-138">To get the properties and relationships of an attachment, specify the attachment ID to index into the **attachments** collection, attached to the specified [event](../resources/event.md), [message](../resources/message.md), or [post](../resources/post.md) instance.</span></span>
+- <span data-ttu-id="b0d9a-139">如果附件是文件或 Outlook 项目（联系人、事件或邮件），则可以通过将路径段 `/$value` 附加到请求 URL 来进一步获取附件的原始内容。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-139">If the attachment is a file or Outlook item (contact, event, or message), you can further get the raw contents of the attachment by appending the path segment `/$value` to the request URL.</span></span>
 
-<span data-ttu-id="2f54a-140">用户的默认[日历](../resources/calendar.md)中的[事件](../resources/event.md)附件。</span><span class="sxs-lookup"><span data-stu-id="2f54a-140">Attachments for an [event](../resources/event.md) in the user's default [calendar](../resources/calendar.md).</span></span>
+<span data-ttu-id="b0d9a-140">用户的默认[日历](../resources/calendar.md)中的[事件](../resources/event.md)附件。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-140">Attachments for an [event](../resources/event.md) in the user's default [calendar](../resources/calendar.md).</span></span>
 
 <!--
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
@@ -72,7 +72,7 @@ GET /me/events/{id}/attachments/{id}/$value
 GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}/$value
 ```
 
-<span data-ttu-id="2f54a-141">指定的用户[日历](../resources/calendar.md)中的[事件](../resources/event.md)附件。</span><span class="sxs-lookup"><span data-stu-id="2f54a-141">Attachments for an [event](../resources/event.md) in the specified user [calendar](../resources/calendar.md).</span></span>
+<span data-ttu-id="b0d9a-141">指定的用户[日历](../resources/calendar.md)中的[事件](../resources/event.md)附件。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-141">Attachments for an [event](../resources/event.md) in the specified user [calendar](../resources/calendar.md).</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}/events/{id}/attachments/{id}
@@ -87,7 +87,7 @@ GET /groups/{id}/events/{id}/attachments/{id}
 GET /groups/{id}/calendar/events/{id}/attachments/{id}
 -->
 
-<span data-ttu-id="2f54a-142">属于用户的默认 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="2f54a-142">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="b0d9a-142">属于用户的默认 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-142">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
@@ -96,7 +96,7 @@ GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/att
 GET /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}/$value
 GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}/$value
 ```
-<span data-ttu-id="2f54a-143">属于用户的 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="2f54a-143">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="b0d9a-143">属于用户的 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-143">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
@@ -105,7 +105,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}/$value
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}/$value
 ```
-<span data-ttu-id="2f54a-144">用户邮箱中的 [邮件](../resources/message.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="2f54a-144">Attachments for a [message](../resources/message.md) in a user's mailbox.</span></span>
+<span data-ttu-id="b0d9a-144">用户邮箱中的 [邮件](../resources/message.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-144">Attachments for a [message](../resources/message.md) in a user's mailbox.</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}/attachments/{id}
@@ -114,7 +114,7 @@ GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
 GET /me/messages/{id}/attachments/{id}/$value
 GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}/$value
 ```
-<span data-ttu-id="2f54a-145">用户邮箱的顶级 [mailFolder](../resources/mailfolder.md) 中包含的 [邮件](../resources/message.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="2f54a-145">Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.</span></span>
+<span data-ttu-id="b0d9a-145">用户邮箱的顶级 [mailFolder](../resources/mailfolder.md) 中包含的 [邮件](../resources/message.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-145">Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages/{id}/attachments/{id}
@@ -123,7 +123,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{
 GET /me/mailFolders/{id}/messages/{id}/attachments/{id}/$value
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
-<span data-ttu-id="2f54a-p107">用户邮箱的 [mailFolder](../resources/mailfolder.md) 的子文件夹中包含的 [邮件](../resources/message.md) 附件。下面的示例显示了一个嵌套级别，但邮件可能位于子级的子级中，诸如此类。 </span><span class="sxs-lookup"><span data-stu-id="2f54a-p107">Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The example below shows one level of nesting, but a message can be located in a child of a child and so on. </span></span><!-- { "blockType": "ignored" } -->
+<span data-ttu-id="b0d9a-p107">用户邮箱的 [mailFolder](../resources/mailfolder.md) 的子文件夹中包含的 [邮件](../resources/message.md) 附件。下面的示例显示了一个嵌套级别，但邮件可能位于子级的子级中，诸如此类。 </span><span class="sxs-lookup"><span data-stu-id="b0d9a-p107">Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The example below shows one level of nesting, but a message can be located in a child of a child and so on. </span></span><!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
@@ -131,7 +131,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}/$value
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
-<span data-ttu-id="2f54a-148">属于组的 [对话](../resources/conversation.md) 的 [线程](../resources/conversationthread.md) 中的 [帖子](../resources/post.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="2f54a-148">Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.</span></span>
+<span data-ttu-id="b0d9a-148">属于组的 [对话](../resources/conversation.md) 的 [线程](../resources/conversationthread.md) 中的 [帖子](../resources/post.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-148">Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
@@ -140,33 +140,33 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="2f54a-149">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="2f54a-149">Optional query parameters</span></span>
-<span data-ttu-id="2f54a-150">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="2f54a-150">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="2f54a-151">请求标头</span><span class="sxs-lookup"><span data-stu-id="2f54a-151">Request headers</span></span>
-| <span data-ttu-id="2f54a-152">名称</span><span class="sxs-lookup"><span data-stu-id="2f54a-152">Name</span></span>       | <span data-ttu-id="2f54a-153">类型</span><span class="sxs-lookup"><span data-stu-id="2f54a-153">Type</span></span> | <span data-ttu-id="2f54a-154">说明</span><span class="sxs-lookup"><span data-stu-id="2f54a-154">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="b0d9a-149">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="b0d9a-149">Optional query parameters</span></span>
+<span data-ttu-id="b0d9a-150">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-150">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b0d9a-151">请求标头</span><span class="sxs-lookup"><span data-stu-id="b0d9a-151">Request headers</span></span>
+| <span data-ttu-id="b0d9a-152">名称</span><span class="sxs-lookup"><span data-stu-id="b0d9a-152">Name</span></span>       | <span data-ttu-id="b0d9a-153">类型</span><span class="sxs-lookup"><span data-stu-id="b0d9a-153">Type</span></span> | <span data-ttu-id="b0d9a-154">说明</span><span class="sxs-lookup"><span data-stu-id="b0d9a-154">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="2f54a-155">Authorization</span><span class="sxs-lookup"><span data-stu-id="2f54a-155">Authorization</span></span>  | <span data-ttu-id="2f54a-156">string</span><span class="sxs-lookup"><span data-stu-id="2f54a-156">string</span></span>  | <span data-ttu-id="2f54a-p108">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2f54a-p108">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b0d9a-155">Authorization</span><span class="sxs-lookup"><span data-stu-id="b0d9a-155">Authorization</span></span>  | <span data-ttu-id="b0d9a-156">string</span><span class="sxs-lookup"><span data-stu-id="b0d9a-156">string</span></span>  | <span data-ttu-id="b0d9a-p108">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-p108">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2f54a-159">请求正文</span><span class="sxs-lookup"><span data-stu-id="2f54a-159">Request body</span></span>
-<span data-ttu-id="2f54a-160">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="2f54a-160">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b0d9a-159">请求正文</span><span class="sxs-lookup"><span data-stu-id="b0d9a-159">Request body</span></span>
+<span data-ttu-id="b0d9a-160">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-160">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2f54a-161">响应</span><span class="sxs-lookup"><span data-stu-id="2f54a-161">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b0d9a-161">响应</span><span class="sxs-lookup"><span data-stu-id="b0d9a-161">Response</span></span>
 
-<span data-ttu-id="2f54a-162">如果成功，此方法返回 `200 OK` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="2f54a-162">If successful, this method returns a `200 OK` response code.</span></span>
+<span data-ttu-id="b0d9a-162">如果成功，此方法返回 `200 OK` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-162">If successful, this method returns a `200 OK` response code.</span></span>
 
-<span data-ttu-id="2f54a-163">如果要获取附件的属性和关系，则响应正文应包含 [attachment](../resources/attachment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="2f54a-163">If you're getting the properties and relationships of an attachment, the response body includes an [attachment](../resources/attachment.md) object.</span></span> <span data-ttu-id="2f54a-164">返回附件类型的属性：[fileAttachment](../resources/fileattachment.md)、[itemAttachment](../resources/itemattachment.md) 或 [referenceAttachment](../resources/referenceattachment.md)。</span><span class="sxs-lookup"><span data-stu-id="2f54a-164">The properties of that type of attachment are returned: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md), or [referenceAttachment](../resources/referenceattachment.md).</span></span>
+<span data-ttu-id="b0d9a-163">如果要获取附件的属性和关系，则响应正文应包含 [attachment](../resources/attachment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-163">If you're getting the properties and relationships of an attachment, the response body includes an [attachment](../resources/attachment.md) object.</span></span> <span data-ttu-id="b0d9a-164">返回附件类型的属性：[fileAttachment](../resources/fileattachment.md)、[itemAttachment](../resources/itemattachment.md) 或 [referenceAttachment](../resources/referenceattachment.md)。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-164">The properties of that type of attachment are returned: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md), or [referenceAttachment](../resources/referenceattachment.md).</span></span>
 
-<span data-ttu-id="2f54a-165">如果要获取文件或项目附件的原始内容，则响应正文应包含附件的原始值。</span><span class="sxs-lookup"><span data-stu-id="2f54a-165">If you're getting the raw contents of a file or item attachment, the response body includes the raw value of the attachment.</span></span>
+<span data-ttu-id="b0d9a-165">如果要获取文件或项目附件的原始内容，则响应正文应包含附件的原始值。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-165">If you're getting the raw contents of a file or item attachment, the response body includes the raw value of the attachment.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="2f54a-166">示例</span><span class="sxs-lookup"><span data-stu-id="2f54a-166">Examples</span></span> 
+## <a name="examples"></a><span data-ttu-id="b0d9a-166">示例</span><span class="sxs-lookup"><span data-stu-id="b0d9a-166">Examples</span></span> 
 
-### <a name="example-1-get-the-properties-of-a-file-attachment"></a><span data-ttu-id="2f54a-167">示例 1：获取文件附件的属性</span><span class="sxs-lookup"><span data-stu-id="2f54a-167">Example 1: Get the properties of a file attachment</span></span>
+### <a name="example-1-get-the-properties-of-a-file-attachment"></a><span data-ttu-id="b0d9a-167">示例 1：获取文件附件的属性</span><span class="sxs-lookup"><span data-stu-id="b0d9a-167">Example 1: Get the properties of a file attachment</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2f54a-168">请求</span><span class="sxs-lookup"><span data-stu-id="2f54a-168">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="b0d9a-168">请求</span><span class="sxs-lookup"><span data-stu-id="b0d9a-168">Request</span></span>
 
-<span data-ttu-id="2f54a-169">下面的示例展示了用于获取事件的文件附件的请求。</span><span class="sxs-lookup"><span data-stu-id="2f54a-169">Here is an example of the request to get a file attachment on an event.</span></span>
+<span data-ttu-id="b0d9a-169">下面的示例展示了用于获取事件的文件附件的请求。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-169">Here is an example of the request to get a file attachment on an event.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="2f54a-170">HTTP</span><span class="sxs-lookup"><span data-stu-id="2f54a-170">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b0d9a-170">HTTP</span><span class="sxs-lookup"><span data-stu-id="b0d9a-170">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_file_attachment_v1",
@@ -175,27 +175,27 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$va
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=
 ```
-# <a name="c"></a>[<span data-ttu-id="2f54a-171">C#</span><span class="sxs-lookup"><span data-stu-id="2f54a-171">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b0d9a-171">C#</span><span class="sxs-lookup"><span data-stu-id="b0d9a-171">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-file-attachment-v1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2f54a-172">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2f54a-172">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b0d9a-172">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b0d9a-172">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-file-attachment-v1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2f54a-173">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2f54a-173">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b0d9a-173">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b0d9a-173">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-file-attachment-v1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="2f54a-174">Java</span><span class="sxs-lookup"><span data-stu-id="2f54a-174">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="b0d9a-174">Java</span><span class="sxs-lookup"><span data-stu-id="b0d9a-174">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-file-attachment-v1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="2f54a-175">响应</span><span class="sxs-lookup"><span data-stu-id="2f54a-175">Response</span></span>
-<span data-ttu-id="2f54a-p110">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2f54a-p110">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="b0d9a-175">响应</span><span class="sxs-lookup"><span data-stu-id="b0d9a-175">Response</span></span>
+<span data-ttu-id="b0d9a-p110">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-p110">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_file_attachment_v1",
@@ -220,13 +220,13 @@ Content-type: application/json
     "contentBytes": "UEsDBBQABgAIAAAAIQ4AAAAA"
 }
 ```
-### <a name="example-2-get-the-properties-of-an-item-attachment"></a><span data-ttu-id="2f54a-179">示例 2：获取项目附件的属性</span><span class="sxs-lookup"><span data-stu-id="2f54a-179">Example 2: Get the properties of an item attachment</span></span>
+### <a name="example-2-get-the-properties-of-an-item-attachment"></a><span data-ttu-id="b0d9a-179">示例 2：获取项目附件的属性</span><span class="sxs-lookup"><span data-stu-id="b0d9a-179">Example 2: Get the properties of an item attachment</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2f54a-180">请求</span><span class="sxs-lookup"><span data-stu-id="2f54a-180">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="b0d9a-180">请求</span><span class="sxs-lookup"><span data-stu-id="b0d9a-180">Request</span></span>
 
-<span data-ttu-id="2f54a-181">下一个示例演示如何在邮件上获取项目附件。</span><span class="sxs-lookup"><span data-stu-id="2f54a-181">The next example shows how to get an item attachment on a message.</span></span> <span data-ttu-id="2f54a-182">返回 **itemAttachment** 的属性。</span><span class="sxs-lookup"><span data-stu-id="2f54a-182">The properties of the **itemAttachment** are returned.</span></span>
+<span data-ttu-id="b0d9a-181">下一个示例演示如何在邮件上获取项目附件。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-181">The next example shows how to get an item attachment on a message.</span></span> <span data-ttu-id="b0d9a-182">返回 **itemAttachment** 的属性。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-182">The properties of the **itemAttachment** are returned.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="2f54a-183">HTTP</span><span class="sxs-lookup"><span data-stu-id="2f54a-183">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b0d9a-183">HTTP</span><span class="sxs-lookup"><span data-stu-id="b0d9a-183">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADA1M-zAAA=", "AAMkADA1M-CJKtzmnlcqVgqI="],
@@ -235,26 +235,26 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAMkADA1M-CJKtzmnlcqVgqI=
 ```
-# <a name="c"></a>[<span data-ttu-id="2f54a-184">C#</span><span class="sxs-lookup"><span data-stu-id="2f54a-184">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b0d9a-184">C#</span><span class="sxs-lookup"><span data-stu-id="b0d9a-184">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2f54a-185">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2f54a-185">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b0d9a-185">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b0d9a-185">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2f54a-186">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2f54a-186">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b0d9a-186">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b0d9a-186">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="2f54a-187">Java</span><span class="sxs-lookup"><span data-stu-id="2f54a-187">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="b0d9a-187">Java</span><span class="sxs-lookup"><span data-stu-id="b0d9a-187">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-item-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="2f54a-188">响应</span><span class="sxs-lookup"><span data-stu-id="2f54a-188">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="b0d9a-188">响应</span><span class="sxs-lookup"><span data-stu-id="b0d9a-188">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_item_attachment",
@@ -277,11 +277,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message"></a><span data-ttu-id="2f54a-189">示例 3：展开并获取附加到邮件的项目的属性</span><span class="sxs-lookup"><span data-stu-id="2f54a-189">Example 3: Expand and get the properties of the item attached to a message</span></span>
-#### <a name="request"></a><span data-ttu-id="2f54a-190">请求</span><span class="sxs-lookup"><span data-stu-id="2f54a-190">Request</span></span>
-<span data-ttu-id="2f54a-191">下一个示例演示如何使用 `$expand` 来获取附加到该邮件的项目（联系人、事件或邮件）的属性。</span><span class="sxs-lookup"><span data-stu-id="2f54a-191">The next example shows how to use `$expand` to get the properties of the item (contact, event, or message) that is attached to the message.</span></span> <span data-ttu-id="2f54a-192">在此示例中，该项目是一封邮件；还会返回该附加邮件的属性。</span><span class="sxs-lookup"><span data-stu-id="2f54a-192">In this example, that item is a message; the properties of that attached message are also returned.</span></span>
+### <a name="example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message"></a><span data-ttu-id="b0d9a-189">示例 3：展开并获取附加到邮件的项目的属性</span><span class="sxs-lookup"><span data-stu-id="b0d9a-189">Example 3: Expand and get the properties of the item attached to a message</span></span>
+#### <a name="request"></a><span data-ttu-id="b0d9a-190">请求</span><span class="sxs-lookup"><span data-stu-id="b0d9a-190">Request</span></span>
+<span data-ttu-id="b0d9a-191">下一个示例演示如何使用 `$expand` 来获取附加到该邮件的项目（联系人、事件或邮件）的属性。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-191">The next example shows how to use `$expand` to get the properties of the item (contact, event, or message) that is attached to the message.</span></span> <span data-ttu-id="b0d9a-192">在此示例中，该项目是一封邮件；还会返回该附加邮件的属性。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-192">In this example, that item is a message; the properties of that attached message are also returned.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="2f54a-193">HTTP</span><span class="sxs-lookup"><span data-stu-id="2f54a-193">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b0d9a-193">HTTP</span><span class="sxs-lookup"><span data-stu-id="b0d9a-193">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADA1M-zAAA=", "AAMkADA1M-CJKtzmnlcqVgqI="],
@@ -290,26 +290,26 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAMkADA1M-CJKtzmnlcqVgqI=/?$expand=microsoft.graph.itemattachment/item 
 ```
-# <a name="c"></a>[<span data-ttu-id="2f54a-194">C#</span><span class="sxs-lookup"><span data-stu-id="2f54a-194">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b0d9a-194">C#</span><span class="sxs-lookup"><span data-stu-id="b0d9a-194">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-and-expand-item-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2f54a-195">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2f54a-195">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b0d9a-195">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b0d9a-195">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-and-expand-item-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2f54a-196">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2f54a-196">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b0d9a-196">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b0d9a-196">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-and-expand-item-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="2f54a-197">Java</span><span class="sxs-lookup"><span data-stu-id="2f54a-197">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="b0d9a-197">Java</span><span class="sxs-lookup"><span data-stu-id="b0d9a-197">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-and-expand-item-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="2f54a-198">响应</span><span class="sxs-lookup"><span data-stu-id="2f54a-198">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="b0d9a-198">响应</span><span class="sxs-lookup"><span data-stu-id="b0d9a-198">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_and_expand_item_attachment",
@@ -386,12 +386,12 @@ Content-type: application/json
 
 
 
-### <a name="example-4-get-the-properties-of-a-reference-attachment"></a><span data-ttu-id="2f54a-199">示例 4：获取参考附件的属性</span><span class="sxs-lookup"><span data-stu-id="2f54a-199">Example 4: Get the properties of a reference attachment</span></span>
+### <a name="example-4-get-the-properties-of-a-reference-attachment"></a><span data-ttu-id="b0d9a-199">示例 4：获取参考附件的属性</span><span class="sxs-lookup"><span data-stu-id="b0d9a-199">Example 4: Get the properties of a reference attachment</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2f54a-200">请求</span><span class="sxs-lookup"><span data-stu-id="2f54a-200">Request</span></span>
-<span data-ttu-id="2f54a-201">下面的示例展示了用于获取消息的参考附件的请求。</span><span class="sxs-lookup"><span data-stu-id="2f54a-201">Here is an example of the request to get a reference attachment on a message.</span></span>
+#### <a name="request"></a><span data-ttu-id="b0d9a-200">请求</span><span class="sxs-lookup"><span data-stu-id="b0d9a-200">Request</span></span>
+<span data-ttu-id="b0d9a-201">下面的示例展示了用于获取消息的参考附件的请求。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-201">Here is an example of the request to get a reference attachment on a message.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="2f54a-202">HTTP</span><span class="sxs-lookup"><span data-stu-id="2f54a-202">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b0d9a-202">HTTP</span><span class="sxs-lookup"><span data-stu-id="b0d9a-202">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_reference_attachment",
@@ -400,26 +400,26 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKgAAA=/attachments/AAMkAGUzY5QKgAAABEgAQAISJOe1FEqdNsMEQmpZjRW8=
 ```
-# <a name="c"></a>[<span data-ttu-id="2f54a-203">C#</span><span class="sxs-lookup"><span data-stu-id="2f54a-203">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b0d9a-203">C#</span><span class="sxs-lookup"><span data-stu-id="b0d9a-203">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-reference-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2f54a-204">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2f54a-204">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b0d9a-204">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b0d9a-204">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-reference-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2f54a-205">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2f54a-205">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b0d9a-205">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b0d9a-205">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-reference-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="2f54a-206">Java</span><span class="sxs-lookup"><span data-stu-id="2f54a-206">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="b0d9a-206">Java</span><span class="sxs-lookup"><span data-stu-id="b0d9a-206">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-reference-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="2f54a-207">响应</span><span class="sxs-lookup"><span data-stu-id="2f54a-207">Response</span></span>
-<span data-ttu-id="2f54a-p113">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2f54a-p113">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="b0d9a-207">响应</span><span class="sxs-lookup"><span data-stu-id="b0d9a-207">Response</span></span>
+<span data-ttu-id="b0d9a-p113">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-p113">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_reference_attachment",
@@ -442,11 +442,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-get-the-raw-contents-of-a-file-attachment-on-a-message"></a><span data-ttu-id="2f54a-211">示例 5：获取邮件上的文件附件的原始内容</span><span class="sxs-lookup"><span data-stu-id="2f54a-211">Example 5: Get the raw contents of a file attachment on a message</span></span>
+### <a name="example-5-get-the-raw-contents-of-a-file-attachment-on-a-message"></a><span data-ttu-id="b0d9a-211">示例 5：获取邮件上的文件附件的原始内容</span><span class="sxs-lookup"><span data-stu-id="b0d9a-211">Example 5: Get the raw contents of a file attachment on a message</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2f54a-212">请求</span><span class="sxs-lookup"><span data-stu-id="2f54a-212">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="b0d9a-212">请求</span><span class="sxs-lookup"><span data-stu-id="b0d9a-212">Request</span></span>
 
-<span data-ttu-id="2f54a-213">下面是请求获取已附加到邮件的 Word 文件原始内容的示例。</span><span class="sxs-lookup"><span data-stu-id="2f54a-213">Here is an example of the request to get the raw contents of a Word file that has been attached to a message.</span></span>
+<span data-ttu-id="b0d9a-213">下面是请求获取已附加到邮件的 Word 文件原始内容的示例。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-213">Here is an example of the request to get the raw contents of a Word file that has been attached to a message.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_value_file_attachment",
@@ -457,8 +457,8 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=/$value
 ```
 
-#### <a name="response"></a><span data-ttu-id="2f54a-214">响应</span><span class="sxs-lookup"><span data-stu-id="2f54a-214">Response</span></span>
-<span data-ttu-id="2f54a-215">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="2f54a-215">Here is an example of the response.</span></span> <span data-ttu-id="2f54a-216">实际响应正文包含文件附件的原始字节，为简洁起见，此处为缩写。</span><span class="sxs-lookup"><span data-stu-id="2f54a-216">The actual response body includes the raw bytes of the file attachment, which are abbreviated here for brevity.</span></span>
+#### <a name="response"></a><span data-ttu-id="b0d9a-214">响应</span><span class="sxs-lookup"><span data-stu-id="b0d9a-214">Response</span></span>
+<span data-ttu-id="b0d9a-215">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-215">Here is an example of the response.</span></span> <span data-ttu-id="b0d9a-216">实际响应正文包含文件附件的原始字节，为简洁起见，此处为缩写。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-216">The actual response body includes the raw bytes of the file attachment, which are abbreviated here for brevity.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -473,11 +473,11 @@ HTTP/1.1 200 OK
 ```
 
 
-### <a name="example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a><span data-ttu-id="2f54a-217">示例 6：获取邮件上的联系人附件的 MIME 原始内容</span><span class="sxs-lookup"><span data-stu-id="2f54a-217">Example 6: Get the MIME raw contents of a contact attachment on a message</span></span>
+### <a name="example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a><span data-ttu-id="b0d9a-217">示例 6：获取邮件上的联系人附件的 MIME 原始内容</span><span class="sxs-lookup"><span data-stu-id="b0d9a-217">Example 6: Get the MIME raw contents of a contact attachment on a message</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2f54a-218">请求</span><span class="sxs-lookup"><span data-stu-id="2f54a-218">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="b0d9a-218">请求</span><span class="sxs-lookup"><span data-stu-id="b0d9a-218">Request</span></span>
 
-<span data-ttu-id="2f54a-219">下面是请求获取已附加到邮件的联系人项目原始内容的示例。</span><span class="sxs-lookup"><span data-stu-id="2f54a-219">Here is an example of the request to get the raw contents of a contact item that has been attached to a message.</span></span> 
+<span data-ttu-id="b0d9a-219">下面是请求获取已附加到邮件的联系人项目原始内容的示例。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-219">Here is an example of the request to get the raw contents of a contact item that has been attached to a message.</span></span> 
 <!-- {
   "blockType": "ignored",
   "name": "get_value_contact_attachment",
@@ -488,8 +488,8 @@ HTTP/1.1 200 OK
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADI5MAAGjk2PxAAA=/attachments/AAMkADI5MAAGjk2PxAAABEgAQACEJqrbJZBNIlr3pGFvd9K8=/$value
 ```
 
-#### <a name="response"></a><span data-ttu-id="2f54a-220">响应</span><span class="sxs-lookup"><span data-stu-id="2f54a-220">Response</span></span>
-<span data-ttu-id="2f54a-221">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="2f54a-221">Here is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="b0d9a-220">响应</span><span class="sxs-lookup"><span data-stu-id="b0d9a-220">Response</span></span>
+<span data-ttu-id="b0d9a-221">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-221">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "ignored",
@@ -522,11 +522,11 @@ END:VCARD
 ```
 
 
-### <a name="example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a><span data-ttu-id="2f54a-222">示例 7：获取邮件上的事件附件的 MIME 原始内容</span><span class="sxs-lookup"><span data-stu-id="2f54a-222">Example 7: Get the MIME raw contents of an event attachment on a message</span></span>
+### <a name="example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a><span data-ttu-id="b0d9a-222">示例 7：获取邮件上的事件附件的 MIME 原始内容</span><span class="sxs-lookup"><span data-stu-id="b0d9a-222">Example 7: Get the MIME raw contents of an event attachment on a message</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2f54a-223">请求</span><span class="sxs-lookup"><span data-stu-id="2f54a-223">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="b0d9a-223">请求</span><span class="sxs-lookup"><span data-stu-id="b0d9a-223">Request</span></span>
 
-<span data-ttu-id="2f54a-224">下面是请求获取已附加到邮件的事件原始内容的示例。</span><span class="sxs-lookup"><span data-stu-id="2f54a-224">Here is an example of the request to get the raw contents of an event that has been attached to a message.</span></span> 
+<span data-ttu-id="b0d9a-224">下面是请求获取已附加到邮件的事件原始内容的示例。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-224">Here is an example of the request to get the raw contents of an event that has been attached to a message.</span></span> 
 <!-- {
   "blockType": "ignored",
   "name": "get_value_event_attachment",
@@ -537,8 +537,8 @@ END:VCARD
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADVIOAAA=/attachments/AAMkADVIOAAABEgAQACvkutl6c4FMifPyS6NvXsM=/$value
 ```
 
-#### <a name="response"></a><span data-ttu-id="2f54a-225">响应</span><span class="sxs-lookup"><span data-stu-id="2f54a-225">Response</span></span>
-<span data-ttu-id="2f54a-226">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="2f54a-226">Here is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="b0d9a-225">响应</span><span class="sxs-lookup"><span data-stu-id="b0d9a-225">Response</span></span>
+<span data-ttu-id="b0d9a-226">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-226">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "ignored",
@@ -602,11 +602,11 @@ END:VCALENDAR
 ```
 
 
-### <a name="example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a><span data-ttu-id="2f54a-227">示例 8：获取邮件上的会议邀请项目附件的 MIME 原始内容</span><span class="sxs-lookup"><span data-stu-id="2f54a-227">Example 8: Get the MIME raw contents of a meeting invitation item attachment on a message</span></span>
+### <a name="example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a><span data-ttu-id="b0d9a-227">示例 8：获取邮件上的会议邀请项目附件的 MIME 原始内容</span><span class="sxs-lookup"><span data-stu-id="b0d9a-227">Example 8: Get the MIME raw contents of a meeting invitation item attachment on a message</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2f54a-228">请求</span><span class="sxs-lookup"><span data-stu-id="2f54a-228">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="b0d9a-228">请求</span><span class="sxs-lookup"><span data-stu-id="b0d9a-228">Request</span></span>
 
-<span data-ttu-id="2f54a-229">下面是请求获取已附加到邮件的会议邀请（[eventMessage](../resources/eventmessage.md) 类型）的原始内容的示例。</span><span class="sxs-lookup"><span data-stu-id="2f54a-229">Here is an example of the request to get the raw contents of a meeting invitation (of the [eventMessage](../resources/eventmessage.md) type) that has been attached to a message.</span></span> <span data-ttu-id="2f54a-230">**eventMessage** 实体基于**邮件**类型。</span><span class="sxs-lookup"><span data-stu-id="2f54a-230">The **eventMessage** entity is based on the **message** type.</span></span>
+<span data-ttu-id="b0d9a-229">下面是请求获取已附加到邮件的会议邀请（[eventMessage](../resources/eventmessage.md) 类型）的原始内容的示例。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-229">Here is an example of the request to get the raw contents of a meeting invitation (of the [eventMessage](../resources/eventmessage.md) type) that has been attached to a message.</span></span> <span data-ttu-id="b0d9a-230">**eventMessage** 实体基于**邮件**类型。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-230">The **eventMessage** entity is based on the **message** type.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_value_message_attachment",
@@ -617,10 +617,10 @@ END:VCALENDAR
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKiAAA=/attachments/AAMkAGUzY5QKiAAABEgAQAK8ktgiIO19OqkvUZAqLmyQ=/$value
 ```
 
-#### <a name="response"></a><span data-ttu-id="2f54a-231">响应</span><span class="sxs-lookup"><span data-stu-id="2f54a-231">Response</span></span>
-<span data-ttu-id="2f54a-232">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="2f54a-232">Here is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="b0d9a-231">响应</span><span class="sxs-lookup"><span data-stu-id="b0d9a-231">Response</span></span>
+<span data-ttu-id="b0d9a-232">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-232">Here is an example of the response.</span></span> 
 
-<span data-ttu-id="2f54a-233">响应正文包含 MIME 格式的 **eventMessage** 附件。</span><span class="sxs-lookup"><span data-stu-id="2f54a-233">The response body includes the **eventMessage** attachment in MIME format.</span></span> <span data-ttu-id="2f54a-234">为简洁起见，已截断 **eventMessage** 的正文。</span><span class="sxs-lookup"><span data-stu-id="2f54a-234">The body of the  **eventMessage** is truncated for brevity.</span></span> <span data-ttu-id="2f54a-235">可通过实际调用返回完整的邮件正文。</span><span class="sxs-lookup"><span data-stu-id="2f54a-235">The full message body is returned from an actual call.</span></span>
+<span data-ttu-id="b0d9a-233">响应正文包含 MIME 格式的 **eventMessage** 附件。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-233">The response body includes the **eventMessage** attachment in MIME format.</span></span> <span data-ttu-id="b0d9a-234">为简洁起见，已截断 **eventMessage** 的正文。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-234">The body of the  **eventMessage** is truncated for brevity.</span></span> <span data-ttu-id="b0d9a-235">可通过实际调用返回完整的邮件正文。</span><span class="sxs-lookup"><span data-stu-id="b0d9a-235">The full message body is returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -691,3 +691,4 @@ QkVHSU46VkNBTEVOREFSDQpNRVRIT0Q6UkVRVUVTVA0KUFJPRElEOk1pY3Jvc29mdCBFeGNoYW5n
   ],
   "tocPath": ""
 }-->
+
