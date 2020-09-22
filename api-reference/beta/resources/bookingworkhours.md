@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: fab0282e3ce380b8aa4283bd9a783fe8b2fc3390
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0c6eec989e4c5474115810dfefe6578d7fc5deec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463598"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071673"
 ---
 # <a name="bookingworkhours-resource-type"></a>bookingWorkHours 资源类型
 
@@ -18,13 +18,13 @@ ms.locfileid: "43463598"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-代表[bookingBusiness](bookingbusiness.md)或[bookingStaffMember](bookingstaffmember.md)的一周中一天的工作时间集。
+代表 [bookingBusiness](bookingbusiness.md) 或 [bookingStaffMember](bookingstaffmember.md)的一周中一天的工作时间集。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |为期|String| 此实例所代表的星期中的一天。 可取值为：`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday` 或 `saturday`。|
-|因此|[bookingWorkTimeSlot](bookingworktimeslot.md)集合|一天中的开始/结束时间的列表。|
+|因此|[bookingWorkTimeSlot](bookingworktimeslot.md) 集合|一天中的开始/结束时间的列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -58,3 +58,5 @@ ms.locfileid: "43463598"
   "suppressions": []
 }
 -->
+
+

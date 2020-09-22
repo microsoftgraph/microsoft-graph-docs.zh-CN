@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6e985d99c1fb86c71b862d0f055af96eba2c2a66
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 1833972fc97559cf10dac75e08ab11b5fe633a81
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353621"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071547"
 ---
 # <a name="clientuseragent-resource-type"></a>clientUserAgent 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "44353621"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示呼叫中终结点的客户端用户代理。 继承自[userAgent](callrecords-useragent.md)类型。
+表示呼叫中终结点的客户端用户代理。 继承自 [userAgent](callrecords-useragent.md) 类型。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |applicationVersion|String|标识此终结点使用的应用程序软件的版本。|
-|headerValue|字符串|此终结点报告的用户代理标头值。|
-|platform|callRecords。 clientPlatform|标识此终结点使用的平台。 可取值为：`unknown`、`windows`、`macOS`、`iOS`、`android`、`web`、`ipPhone`、`roomSystem`、`surfaceHub`、`holoLens`、`unknownFutureValue`。|
+|headerValue|String|此终结点报告的用户代理标头值。|
+|平台|callRecords。 clientPlatform|标识此终结点使用的平台。 可取值为：`unknown`、`windows`、`macOS`、`iOS`、`android`、`web`、`ipPhone`、`roomSystem`、`surfaceHub`、`holoLens`、`unknownFutureValue`。|
 |productFamily|callRecords。 productFamily|标识此终结点使用的应用程序软件系列。 可取值为：`unknown`、`teams`、`skypeForBusiness`、`lync`、`unknownFutureValue`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -60,3 +60,4 @@ ms.locfileid: "44353621"
   "section": "documentation",
   "tocPath": ""
 }-->
+

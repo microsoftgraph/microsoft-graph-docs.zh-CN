@@ -5,20 +5,20 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e9f39258ec4aa202053c5979658e70e352a38f20
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9beb83beff4b2c80ee267f3e967fc12619017e42
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456369"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071911"
 ---
 # <a name="list-openshiftchangerequests"></a>列出 openShiftChangeRequests
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索团队中的[openShiftChangeRequest](../resources/openshiftchangerequest.md)对象的列表。
+检索团队中的 [openShiftChangeRequest](../resources/openshiftchangerequest.md) 对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ GET /teams/{id}/schedule/openShiftsChangeRequests
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /teams/{id}/schedule/openShiftsChangeRequests
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[openShiftChangeRequest](../resources/openshiftchangerequest.md)对象的列表。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [openShiftChangeRequest](../resources/openshiftchangerequest.md) 对象的列表。
 
 ## <a name="examples"></a>示例
 
@@ -122,3 +122,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

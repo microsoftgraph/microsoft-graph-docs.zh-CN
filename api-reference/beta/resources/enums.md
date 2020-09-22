@@ -5,16 +5,25 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: b8559d855be3056a5f73de1eaa0f2da571bd61ab
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 04d6b7a92a7e2ee2acf8ad539c055286326310af
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319566"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071253"
 ---
 # <a name="enum-values"></a>枚举值
 
 命名空间：microsoft.graph
+
+### <a name="volumetype-values"></a>volumeType 值 
+
+| 成员
+|:--------------
+| operatingSystemVolume
+| fixedDataVolume
+| removableDataVolume
+| 向 unknownfuturevalue
 
 ### <a name="allowedaudiences-values"></a>allowedAudiences 值
 
@@ -105,7 +114,7 @@ ms.locfileid: "47319566"
 |:--------------
 | 通话
 | 聊天
-| 电子邮件
+| email
 | 焦点
 | 要求
 
@@ -113,7 +122,7 @@ ms.locfileid: "47319566"
 
 |成员|
 |:---|
-|电子邮件|
+|email|
 |mobilePhone|
 |officePhone|
 |securityQuestion|
@@ -137,7 +146,7 @@ ms.locfileid: "47319566"
 | 父级             | 0     | 用户的父级。                       |
 | 彼此           | 1      | 用户的相对路径。                     |
 | aide               | 2      | 用户的 aide。                         |
-| dr.             | 3      | 用户的医生。                       |
+| dr.             | 第三章     | 用户的医生。                       |
 | 监护           | 4      | 用户的监护人。                     |
 | 该子              | 5      | 用户的子级。                        |
 | 相互              | 6      | 与用户的未指定关系。 |
@@ -241,7 +250,7 @@ ms.locfileid: "47319566"
 | 任意             | 0     |
 | 暂        | 1      |
 | 空闲             | 2      |
-| oof              | 3      |
+| oof              | 第三章     |
 | workingElsewhere | 4      |
 | unknown          | -1    |
 
@@ -291,7 +300,7 @@ ms.locfileid: "47319566"
 | lightBlue   | 0     |
 | lightGreen  | 1      |
 | lightOrange | 2      |
-| lightGray   | 3      |
+| lightGray   | 第三章     |
 | lightYellow | 4      |
 | lightTeal   | 5      |
 | lightPink   | 6      |
@@ -305,7 +314,7 @@ ms.locfileid: "47319566"
 | 成员             | 值 |
 | :----------------- | :---- |
 | 删除           | 2      |
-| deletionFailed     | 3      |
+| deletionFailed     | 第三章     |
 | provisioningFailed | 5      |
 | 已设置        | 6      |
 | 设置       | 7      |
@@ -319,7 +328,7 @@ ms.locfileid: "47319566"
 | 停留             | 0     |
 | inProgress         | 1      |
 | success            | 2      |
-| error              | 3      |
+| error              | 第三章     |
 | validationError    | 4      |
 | 隔离        | 5      |
 | 向 unknownfuturevalue | 6      |
@@ -655,14 +664,14 @@ ms.locfileid: "47319566"
 | preset0  | 0     |
 | preset1  | 1      |
 | preset2  | 2      |
-| preset3  | 3      |
+| preset3  | 第三章     |
 | preset4  | 4      |
 | preset5  | 5      |
 | preset6  | 6      |
 | preset7  | 7      |
 | preset8  | 8      |
 | preset9  | 9      |
-| preset10 | 10      |
+| preset10 | 10     |
 | preset11 | 11     |
 | preset12 | 12     |
 | preset13 | 13     |
@@ -687,7 +696,7 @@ ms.locfileid: "47319566"
 | unknown        | 0     | 陌生.                  |
 | truePositive   | 1      | 警报为 true-肯定。   |
 | falsePositive  | 2      | 警报为 false-肯定。  |
-| benignPositive | 3      | 警报为良性-肯定。 |
+| benignPositive | 第三章     | 警报为良性-肯定。 |
 
 ### <a name="filehashtype-values"></a>fileHashType 值
 
@@ -696,7 +705,7 @@ ms.locfileid: "47319566"
 | unknown             | 0     | 未知类型。                  |
 | sha1                | 1      | SHA1 哈希类型。                |
 | sha256              | 2      | SHA256 哈希类型。              |
-| md5                 | 3      | MD5 哈希类型。                 |
+| md5                 | 第三章     | MD5 哈希类型。                 |
 | authenticodeHash256 | 4      | AuthenticodeHash256 哈希类型。 |
 | lsHash              | 5      | LsHash 哈希类型。              |
 | ctph                | 6      | CTPH 哈希类型。                |
@@ -718,7 +727,7 @@ ms.locfileid: "47319566"
 | unknown   | 0     | 未知的连接状态。 |
 | 尝试 | 1      | 已尝试连接。      |
 | 完成 | 2      | 连接成功。      |
-| 堵塞   | 3      | 连接被阻止。        |
+| 堵塞   | 第三章     | 连接被阻止。        |
 | 未能    | 4      | 连接失败。         |
 
 ### <a name="processintegritylevel-values"></a>processIntegrityLevel 值
@@ -726,7 +735,7 @@ ms.locfileid: "47319566"
 | 成员    | 值 | 说明                   |
 | :-------- | :---- | :---------------------------- |
 | unknown   | 0     | 陌生.                      |
-| 可信 | 10      | 完整性级别不受信任。 |
+| 可信 | 10     | 完整性级别不受信任。 |
 | 降低       | 20    | 完整性级别较低。       |
 | 中等    | 30    | 完整性级别为 "中"。    |
 | 高效      | 40    | 完整性级别为 "高"。      |
@@ -741,7 +750,7 @@ ms.locfileid: "47319566"
 | unknown                 | 0     | 未知配置单元。                     |
 | currentConfig           | 1      | HKEY_CURRENT_CONFIG 配置单元。         |
 | currentUser             | 2      | HKEY_CURRENT_USER 配置单元。           |
-| localMachineSam         | 3      | HKEY_LOCAL_MACHINE \SAM 配置单元。      |
+| localMachineSam         | 第三章     | HKEY_LOCAL_MACHINE \SAM 配置单元。      |
 | localMachineSamSoftware | 4      | HKEY_LOCAL_MACHINE \Software 配置单元。 |
 | localMachineSystem      | 5      | HKEY_LOCAL_MACHINE \System 配置单元。   |
 | usersDefault            | 6      | HKEY_USERS \\ 。默认配置单元。        |
@@ -755,7 +764,7 @@ ms.locfileid: "47319566"
 | unknown | 0     | 未知的注册表值类型。 |
 | create  | 1      | 创建注册表。             |
 | modify  | 2      | 修改注册表。             |
-| delete  | 3      | 删除注册表。             |
+| delete  | 第三章     | 删除注册表。             |
 
 ### <a name="registryvaluetype-values"></a>registryValueType 值
 
@@ -766,14 +775,14 @@ ms.locfileid: "47319566"
 | unknown           | 0     | 未知的注册表值类型。                 |
 | 数字            | 1      | REG_BINARY 注册表值类型。              |
 | 值             | 2      | REG_DWORD 注册表值类型。               |
-| dwordLittleEndian | 3      | REG_DWORD_LITTLE_ENDIAN 注册表值类型。 |
+| dwordLittleEndian | 第三章     | REG_DWORD_LITTLE_ENDIAN 注册表值类型。 |
 | dwordBigEndian    | 4      | REG_DWORD_BIG_ENDIAN 注册表值类型。    |
 | expandSz          | 5      | REG_EXPAND_SZ 注册表值类型。           |
 | link              | 6      | REG_LINK 注册表值类型。                |
 | multiSz           | 7      | REG_MULTI_SZ 注册表值类型。            |
 | 无              | 8      | REG_NONE 注册表值类型。                |
 | qword             | 9      | REG_QWORD 注册表值类型。               |
-| qwordlittleEndian | 10      | REG_QWORD_LITTLE_ENDIAN 注册表值类型。 |
+| qwordlittleEndian | 10     | REG_QWORD_LITTLE_ENDIAN 注册表值类型。 |
 | sz                | 11     | REG_SZ 注册表值类型。                  |
 
 ### <a name="alertseverity-values"></a>alertSeverity 值
@@ -785,7 +794,7 @@ ms.locfileid: "47319566"
 | unknown       | 0     | 严重度未知。              |
 | 之 | 1      | 严重性仅适用于信息。 |
 | 降低           | 2      | 严重性为低。                  |
-| 中等        | 3      | 严重性为 "中"。               |
+| 中等        | 第三章     | 严重性为 "中"。               |
 | 高效          | 4      | 严重性为高。                 |
 
 ### <a name="alertstatus-values"></a>alertStatus 值
@@ -795,7 +804,7 @@ ms.locfileid: "47319566"
 | 成员     | 值 | 说明           |
 | :--------- | :---- | :-------------------- |
 | unknown    | 0     | 未知状态。       |
-| newAlert   | 10      | 警报是新的。         |
+| newAlert   | 10     | 警报是新的。         |
 | inProgress | 20    | 警报正在进行中。 |
 | 经过   | 30    | 警报已解决。    |
 
@@ -819,7 +828,7 @@ ms.locfileid: "47319566"
 | 式       | 0     | 登录是交互式的。        |
 | remoteInteractive | 1      | 登录是远程交互的。 |
 | network           | 2      | 登录为网络。            |
-| batch             | 3      | 登录是批处理。              |
+| batch             | 第三章     | 登录是批处理。              |
 | service           | 4      | 登录为 "服务"。            |
 
 ### <a name="useraccountsecuritytype-values"></a>userAccountSecurityType 值
@@ -832,6 +841,15 @@ ms.locfileid: "47319566"
 | 普通      | 0     | "标准用户" 组的成员。 |
 | 能力         | 1      | Power Users 组的成员。    |
 | 联系 | 2      | Administrators 组的成员。 |
+
+### <a name="chatmessagepolicyviolationdlpactiontypevalues"></a>chatMessagePolicyViolationDlpActionType 值
+
+| 值 |
+|:-----------------|
+| 无 |
+| NotifySender |
+| BlockAccess |
+| BlockAccessExternal |
 
 ### <a name="scopeoperatormultivaluedcomparisontype-values"></a>scopeOperatorMultiValuedComparisonType 值
 
@@ -1022,6 +1040,23 @@ ms.locfileid: "47319566"
 |user|
 |向 unknownfuturevalue|
 
+### <a name="chatmessagepolicyviolationuseractiontype-values"></a>chatMessagePolicyViolationUserActionType 值
+
+| 成员   | Int 值 |  说明 |
+|:---------------|:--------|:----------|
+| 无 | 0 | 默认值。 这是用户未对 DLP 阻止的邮件执行操作时邮件上的值。 |
+| Override | 1  | 发件人已覆盖邮件结论并发送邮件。|
+| ReportFalsePositive | 2  | 发件人已将邮件 "肯定为" 作为 "误报" 的管理员报告。|
+
+### <a name="chatmessagepolicyviolationverdictdetailstype-values"></a>chatMessagePolicyViolationVerdictDetailsType 值
+
+| 成员   | Int 值 |  说明 |
+|:---------------|:--------|:----------|
+| 无 | 0 |  不允许用户覆盖邮件。 如果未提供 policyTip，则不允许用户将邮件报告为误报。 在所有其他情况下，用户可以将邮件报告为误报。|
+| AllowFalsePositiveOverride | 1  |  不允许用户显式重写 block，除非将其与 `AllowOverrideWithoutJustification` 或标志组合 `AllowOverrideWithJustification` 。 对违规报告误报会自动覆盖该阻止并发送邮件。 |
+| AllowOverrideWithoutJustification | 2  | 允许用户替代阻止并发送邮件。 不需要对齐文本。 专用于 `AllowOverrideWithJustification` 。 |
+| AllowOverrideWithJustification | 4  |  允许用户替代阻止并发送邮件。 需要理由文本。 专用于 `AllowOverrideWithoutJustification` 。|
+
 ### <a name="entitytype-values"></a>entityType 值
 
 | 成员       |
@@ -1067,7 +1102,7 @@ ms.locfileid: "47319566"
 | 成员  | 值 | 说明                          |
 | :------ | :---- | :----------------------------------- |
 | 设置 | 0     | 内容是文件或非电子邮件类型。 |
-| 电子邮件   | 1      | 内容是一封电子邮件。                 |
+| email   | 1      | 内容是一封电子邮件。                 |
 
 ### <a name="contentstate-values"></a>contentState 值
 
@@ -1092,7 +1127,7 @@ ms.locfileid: "47319566"
 | 手动        | 0     | 用户手动选择标签。                          |
 | 自动     | 1      | 策略条件的结果是选择了标签。       |
 | 建议   | 2      | 要应用推荐的标签的选择。                    |
-| policyDefault | 3      | 用户不执行任何操作且策略-默认标签已应用。 |
+| policyDefault | 第三章     | 用户不执行任何操作且策略-默认标签已应用。 |
 | 强制     | 4      | 用户在强制选择标签后选择了一个标签。         |
 
 ### <a name="contentalignment-values"></a>contentAlignment 值
@@ -1185,7 +1220,7 @@ ms.locfileid: "47319566"
 |:-------|:------|:------------------------|
 | mail   | 1      | 邮件威胁。            |
 | url    | 2      | URL 威胁。             |
-| file   | 3      | 附件文件威胁。 |
+| file   | 第三章     | 附件文件威胁。 |
 
 ### <a name="threatexpectedassessment-values"></a>threatExpectedAssessment 值
 
@@ -1200,7 +1235,7 @@ ms.locfileid: "47319566"
 |:-------------------|:------|:-------------------|
 | 垃圾邮件 (spam)               | 1      | 垃圾邮件威胁。       |
 | 仿冒           | 2      | 网络钓鱼威胁。   |
-| 受到            | 3      | 恶意软件威胁。    |
+| 受到            | 第三章     | 恶意软件威胁。    |
 | 向 unknownfuturevalue | 4      | 一个 sentinel 成员。 |
 
 ### <a name="threatassessmentstatus-values"></a>threatAssessmentStatus 值
@@ -1224,7 +1259,7 @@ ms.locfileid: "47319566"
 |:-------------------|:------|:-----------------------------------------------------|
 | checkPolicy        | 1      | 策略检查结果，仅用于 `mail` 评估。 |
 | 重新扫描             | 2      | 重新扫描结果。                                   |
-| 向 unknownfuturevalue | 3      | 一个 sentinel 成员。                                   |
+| 向 unknownfuturevalue | 第三章     | 一个 sentinel 成员。                                   |
 
 ### <a name="maildestinationroutingreason-values"></a>mailDestinationRoutingReason 值
 
@@ -1233,14 +1268,14 @@ ms.locfileid: "47319566"
 | 无                  | 0     | 尚不知道。                       |
 | mailFlowRule          | 1      | Exchange 传输规则。            |
 | safeSender            | 2      | 安全发件人列表。                   |
-| blockedSender         | 3      | 阻止发件人列表。                |
+| blockedSender         | 第三章     | 阻止发件人列表。                |
 | advancedSpamFiltering | 4      | 高级垃圾邮件 flitering 选项。     |
 | domainAllowList       | 5      | 发件人域允许列表。           |
 | domainBlockList       | 6      | 发件人域阻止列表。           |
 | notInAddressBook      | 7      | 将发件人排除在通讯簿之外。 |
 | firstTimeSender       | 8      | 由于第一次发件人而被阻止。   |
 | autoPurgeToInbox      | 9      | TimeTravel 将邮件移动到收件箱。   |
-| autoPurgeToJunk       | 10      | TimeTravel 将邮件移动到垃圾邮件。    |
+| autoPurgeToJunk       | 10     | TimeTravel 将邮件移动到垃圾邮件。    |
 | autoPurgeToDeleted    | 11     | TimeTravel 将邮件移动到 "已删除"。 |
 | 出站              | 12     | 出站邮件。                      |
 | notJunk               | 13     | 由于非垃圾邮件而启用。              |
@@ -1320,3 +1355,5 @@ ms.locfileid: "47319566"
 | 尚未            | 0     | 具有此状态值的已连接组织包含在请求者范围类型的分配策略中 `AllConfiguredConnectedOrganizationSubjects` 。                                                          |
 | 审批              | 1      | 系统自动创建的已连接组织具有此状态值。 它们不包含在请求程序范围类型的分配策略中 `AllConfiguredConnectedOrganizationSubjects` 。   |
 | 向 unknownfuturevalue    | 2      | 一个 sentinel 成员。                                                                                                                                                                                                 |
+
+

@@ -6,16 +6,16 @@ title: BooleanColumn
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: b1d5cb1ef019127bc5a850a295a63c874e37691a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f7f0d5c8fa874b928a3da5fd0a5d0492894288f5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507871"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071651"
 ---
 # <a name="booleancolumn-resource-type"></a>BooleanColumn 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,3 +45,5 @@ ms.locfileid: "42507871"
   "suppressions": []
 }
 -->
+
+

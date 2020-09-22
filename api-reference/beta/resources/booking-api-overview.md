@@ -5,12 +5,12 @@ localization_priority: Priority
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: conceptualPageType
-ms.openlocfilehash: 96a30ee3a0bfe4a4b823625d024d54d4b98f4c31
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: 588b7728a29e6eae3e4378da009c907b92ad32f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543378"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071869"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>使用 Microsoft Graph 中的 Microsoft Bookings API
 
@@ -29,7 +29,7 @@ Microsoft Bookings 可让企业组织和小型企业所有者以最少量的设�
 
 第一次客户预约之前，请完成以下步骤。 确保为相应的操作提供适当的[访问令牌](/graph/auth-overview)。
 
-1. 确保企业具有 [Office 365 商业高级版](https://products.office.com/zh-CN/business/office-365-business-premium)订阅。
+1. 确保企业具有 [Microsoft 365 商业高级版](https://products.office.com/zh-CN/business/office-365-business-premium)订阅。
 2. 通过向实体集发送 POST 操作来创建新的 **bookingBusiness**。 至少应为新企业指定客户将看到的名称：
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -74,7 +74,7 @@ POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/publish
 Authorization: Bearer {access token}
 ```
 
-通常，若要列出 Office 365 租户中的所有预订企业：
+通常，若要列出 Microsoft 365 租户中的所有预订企业：
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses
@@ -96,9 +96,13 @@ Authorization: Bearer {access token}
 | 获取某个日期范围内的约会 | [bookingBusiness](bookingbusiness.md) | [列出 Bookings 日历视图](../api/bookingbusiness-list-calendarview.md) |
 | 获取货币 | [bookingCurrency](bookingcurrency.md) | [bookingCurrency 的方法](bookingcurrency.md#methods) |
 
+## <a name="whats-new"></a>最近更新
+了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
 
 ## <a name="see-also"></a>另请参阅
 
 - 尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的 API。
 - 请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners)。
 - 了解如何在 Microsoft Graph 中选择[权限](/graph/permissions-reference)。
+
+

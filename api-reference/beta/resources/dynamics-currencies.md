@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: e986777d277e84246104561e5e275d7508b41b7b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 42dc5fec859aff758b2f46812a63b10f49f0498a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42504732"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071365"
 ---
 # <a name="currencies-resource-type"></a>货币资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -62,4 +62,6 @@ ms.locfileid: "42504732"
 }
 
 ```
+
+
 

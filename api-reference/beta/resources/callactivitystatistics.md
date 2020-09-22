@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 03625811beec7df8cd679455e9853ea49edf0ed6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8d7eb23fc0ed148b38f3cb7adb29d8af49fa7400
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507815"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071526"
 ---
 # <a name="callactivitystatistics-resource-type"></a>callActivityStatistics 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "42507815"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示有关用户在 Microsoft 团队或 Skype for business 上的呼叫活动中花费的时间的数据。 这基于[activityStatistics](../resources/activitystatistics.md)。
+表示有关用户在 Microsoft 团队或 Skype for business 上的呼叫活动中花费的时间的数据。 这基于 [activityStatistics](../resources/activitystatistics.md)。
 
 ## <a name="properties"></a>属性
 
@@ -70,3 +70,4 @@ ms.locfileid: "42507815"
   "section": "documentation",
   "tocPath": ""
 }-->
+

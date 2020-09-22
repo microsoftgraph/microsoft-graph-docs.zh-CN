@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d5674e04faf2c5aa0510d63b76aea0e82fff3859
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ed69755569092732504ee3c18e69f9828cf39921
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451208"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071883"
 ---
 # <a name="list-tables"></a>列出表格
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,7 +47,7 @@ GET /workbook/worksheets/{id|name}/tables
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[workbookTable](../resources/workbooktable.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookTable](../resources/workbooktable.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -113,3 +113,5 @@ Content-length: 158
   ]
 }
 -->
+
+

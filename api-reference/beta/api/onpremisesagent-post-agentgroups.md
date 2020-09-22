@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7b8ad12fe08c6846718be1ac39ba2f4a62627a83
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 80a90b19d4f9d93208ce3dc79813732c7e756b78
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199758"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072002"
 ---
 # <a name="assign-onpremisesagent-to-onpremisesagentgroup"></a>将 onPremisesAgent 分配给 onPremisesAgentGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "43199758"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将[onPremisesAgent](../resources/onpremisesagent.md)分配给[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象。
+将 [onPremisesAgent](../resources/onpremisesagent.md) 分配给 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "43199758"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,11 +46,11 @@ POST /onPremisesPublishingProfiles/{publishingType}/agents/{id1}/agentGroups/$re
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供对[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象的 OData 引用的 JSON 表示形式。
+在请求正文中，提供对 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象的 OData 引用的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -78,7 +78,7 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 ---
 
 
-在请求正文中，提供对[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象的 OData 引用的 JSON 表示形式。
+在请求正文中，提供对 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象的 OData 引用的 JSON 表示形式。
 
 ```http
 {
@@ -111,3 +111,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

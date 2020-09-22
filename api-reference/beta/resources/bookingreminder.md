@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 039f01375b2483f1bda1a63e999556d194fae048
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f12a794b6ca624d3ef41a61bc93a8a0c9a867e99
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457427"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071757"
 ---
 # <a name="bookingreminder-resource-type"></a>bookingReminder 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "43457427"
 | 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
 |message|String|提醒中的邮件。|
-|一定|持续时间|约会开始前的时间量应发送提醒。 它以[ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示。|
+|一定|持续时间|约会开始前的时间量应发送提醒。 它以 [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式表示。|
 |recipients|String| Shouold 收到提醒的人员。 可取值为：`allAttendees`、`staff`、`customer`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -61,3 +61,5 @@ ms.locfileid: "43457427"
   "suppressions": []
 }
 -->
+
+

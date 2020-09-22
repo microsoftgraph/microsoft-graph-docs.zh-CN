@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 14762c01563f922d790bce375e1c7d3b97594d35
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 9c5eabe4503bf8ac3f6d98d16a0a85a6f01d5af4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "42453773"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071925"
 ---
 # <a name="delete-schedulinggroup"></a>删除 schedulingGroup
 
@@ -18,10 +18,10 @@ ms.locfileid: "42453773"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过设置[schedulingGroup](../resources/schedulinggroup.md)的**isActive**属性将其标记为非活动状态。
-此方法不会从计划中删除[schedulingGroup](../resources/schedulinggroup.md) 。 分配给计划组的现有[班次](../resources/shift.md)实例仍为组的一部分。
+通过设置 [schedulingGroup](../resources/schedulinggroup.md) 的 **isActive** 属性将其标记为非活动状态。
+此方法不会从计划中删除 [schedulingGroup](../resources/schedulinggroup.md) 。 分配给计划组的现有 [班次](../resources/shift.md) 实例仍为组的一部分。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "42453773"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 计划的所有写。 * |
+|应用程序 | 计划的所有写。 * |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
@@ -113,3 +113,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

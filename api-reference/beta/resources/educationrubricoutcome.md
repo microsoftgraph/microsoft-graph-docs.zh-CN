@@ -5,20 +5,20 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 93e6585a6963a6f31c2613e2f2e12cce7246b7d8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ade372d6bd5e669f0dcde1ac36e8ef06e473cd43
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42501008"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071274"
 ---
 # <a name="educationrubricoutcome-resource-type"></a>educationRubricOutcome 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-提供评分的 rubric 的[educationOutcome](educationoutcome.md) 。
+提供评分的 rubric 的 [educationOutcome](educationoutcome.md) 。
 
 ## <a name="methods"></a>方法
 
@@ -32,10 +32,10 @@ ms.locfileid: "42501008"
 |:-------------|:------------|:------------|
 |lastModifiedBy|[identitySet](identityset.md)|修改资源的最后一个用户。|
 |lastModifiedDateTime|DateTimeOffset|上次修改资源的时间点。  时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|publishedRubricQualityFeedback|[rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md)集合|在向学生发布评分时所做的 rubricQualityFeedback 属性的副本。|
-|publishedRubricQualitySelectedLevels|[rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md)集合|在向学生发布评分时所做的 rubricQualitySelectedLevels 属性的副本。|
-|rubricQualityFeedback|[rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md)集合|针对此 rubric 的每种质量的特定反馈的集合。|
-|rubricQualitySelectedLevels|[rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md)集合|为此工作分配评分的同时，教师为每种质量选择的级别。|
+|publishedRubricQualityFeedback|[rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md) 集合|在向学生发布评分时所做的 rubricQualityFeedback 属性的副本。|
+|publishedRubricQualitySelectedLevels|[rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md) 集合|在向学生发布评分时所做的 rubricQualitySelectedLevels 属性的副本。|
+|rubricQualityFeedback|[rubricQualityFeedbackModel](rubricqualityfeedbackmodel.md) 集合|针对此 rubric 的每种质量的特定反馈的集合。|
+|rubricQualitySelectedLevels|[rubricQualitySelectedColumnModel](rubricqualityselectedcolumnmodel.md) 集合|为此工作分配评分的同时，教师为每种质量选择的级别。|
 
 ## <a name="relationships"></a>关系
 
@@ -73,3 +73,4 @@ ms.locfileid: "42501008"
   "section": "documentation",
   "tocPath": ""
 }-->
+

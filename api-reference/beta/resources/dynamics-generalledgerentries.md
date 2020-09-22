@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: f1dc4ec7bb3fa30f7dc6362c850893953c4aa6aa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 354dac3ca4912231b7ced6449f61623c18dbd36d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42503976"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071330"
 ---
 # <a name="generalledgerentries-resource-type"></a>generalLedgerEntries 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -66,4 +66,6 @@ ms.locfileid: "42503976"
 }
 
 ```
+
+
 

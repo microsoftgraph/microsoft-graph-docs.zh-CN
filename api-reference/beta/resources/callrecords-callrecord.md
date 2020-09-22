@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 19519ec646e87060e3721add2188ead6533abc15
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: a119b95daf651ca5a91c269210a81a9a9a3cc1f0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509873"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071533"
 ---
 # <a name="callrecord-resource-type"></a>callRecord 资源类型
 
@@ -24,17 +24,17 @@ ms.locfileid: "46509873"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [获取 callRecord](../api/callrecords-callrecord-get.md) | [callRecords。 callRecord](callrecords-callrecord.md) | 读取**callRecord**对象的属性和关系。 |
-| [获取 PSTN 呼叫](../api/callrecords-callrecord-getpstncalls.md) | [callRecords。 pstnCallLogRow](callrecords-pstncalllogrow.md)| 读取**pstnCallLogRow**对象的属性。 |
-| [获取直接路由呼叫](../api/callrecords-callrecord-getdirectroutingcalls.md) | [callRecords。 directRoutingLogRow](callrecords-directroutinglogrow.md)| 读取**directRoutingLogRow**对象的属性。 |
+| [获取 callRecord](../api/callrecords-callrecord-get.md) | [callRecords。 callRecord](callrecords-callrecord.md) | 读取 **callRecord** 对象的属性和关系。 |
+| [获取 PSTN 呼叫](../api/callrecords-callrecord-getpstncalls.md) | [callRecords。 pstnCallLogRow](callrecords-pstncalllogrow.md)| 读取 **pstnCallLogRow** 对象的属性。 |
+| [获取直接路由呼叫](../api/callrecords-callrecord-getdirectroutingcalls.md) | [callRecords。 directRoutingLogRow](callrecords-directroutinglogrow.md)| 读取 **directRoutingLogRow** 对象的属性。 |
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |endDateTime|DateTimeOffset|上次用户离开呼叫时的 UTC 时间。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|id|字符串|呼叫记录的唯一标识符。 只读。|
-|joinWebUrl|字符串|与呼叫关联的会议 URL。 可能不可用于 peerToPeer 呼叫记录类型。|
+|id|String|呼叫记录的唯一标识符。 只读。|
+|joinWebUrl|String|与呼叫关联的会议 URL。 可能不可用于 peerToPeer 呼叫记录类型。|
 |lastModifiedDateTime|DateTimeOffset|创建呼叫记录时的 UTC 时间。 DatetimeOffset 类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |形式|callRecords 集合。|在呼叫中使用的所有形式的列表。 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`、`screenSharing` 或 `unknownFutureValue`。|
 |组织者|[identitySet](identityset.md)|组织方的标识。|
@@ -47,7 +47,7 @@ ms.locfileid: "46509873"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|会话|[callRecords](callrecords-session.md)集合的|呼叫中涉及的会话列表。 对等呼叫通常仅具有一个会话，而组调用通常每个参与者至少有一个会话。 只读。 可为 Null。|
+|会话|[callRecords](callrecords-session.md) 集合的|呼叫中涉及的会话列表。 对等呼叫通常仅具有一个会话，而组调用通常每个参与者至少有一个会话。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -87,3 +87,5 @@ ms.locfileid: "46509873"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

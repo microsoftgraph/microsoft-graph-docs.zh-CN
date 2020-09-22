@@ -6,16 +6,16 @@ title: CalculatedColumn
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: c9bd8963ed847e60bb5b71abfd100cd372dd1dc5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc46a6987e6fbd2e1f1c77f026118b93b5974fe8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507850"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071628"
 ---
 # <a name="calculatedcolumn-resource-type"></a>CalculatedColumn 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ ms.locfileid: "42507850"
 | **outputType** | string  | 用于设置此列中值的格式的输出类型。 必须为 `boolean`、`currency`、`dateTime`、`number` 或 `text`.的其中一个。
 
 SharePoint 公式使用一种类似于 Excel 公式的语法。
-有关详细信息，请参阅[SharePoint 列表中常见公式的示例][SPFormulas]。
+有关详细信息，请参阅 [SharePoint 列表中常见公式的示例][SPFormulas] 。
 
 [SPFormulas]: https://support.office.com/en-us/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
 
@@ -57,3 +57,5 @@ SharePoint 公式使用一种类似于 Excel 公式的语法。
   "suppressions": []
 }
 -->
+
+

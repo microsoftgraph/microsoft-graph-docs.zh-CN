@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 42ad0826cdabbba2c3b26101d93160f71344fc6c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5b527902c5d6e39bb752e07838c6a5e1c3022bb0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453653"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071785"
 ---
 # <a name="bookingcustomer-resource-type"></a>bookingCustomer 资源类型
 
@@ -18,23 +18,23 @@ ms.locfileid: "43453653"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-表示[bookingBusiness](bookingbusiness.md)的客户。
+表示 [bookingBusiness](bookingbusiness.md)的客户。
 
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列出客户](../api/bookingbusiness-list-customers.md) | [bookingCustomer](bookingcustomer.md)集合 | 获取**bookingCustomer**对象的列表。 |
-|[创建 bookingCustomer](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | 创建新的**bookingCustomer**对象。 |
-|[获取 bookingCustomer](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |读取**bookingCustomer**对象的属性和关系。|
-|[更新](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md) |更新**bookingCustomer**对象。 |
-|[删除](../api/bookingcustomer-delete.md) | 无 |删除**bookingCustomer**对象。 |
+|[列出客户](../api/bookingbusiness-list-customers.md) | [bookingCustomer](bookingcustomer.md) 集合 | 获取 **bookingCustomer** 对象的列表。 |
+|[创建 bookingCustomer](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | 创建新的 **bookingCustomer** 对象。 |
+|[获取 bookingCustomer](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |读取 **bookingCustomer** 对象的属性和关系。|
+|[更新](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md) |更新 **bookingCustomer** 对象。 |
+|[删除](../api/bookingcustomer-delete.md) | 无 |删除 **bookingCustomer** 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName|字符串|客户的名称。|
+|displayName|String|客户的名称。|
 |emailAddress|String|客户的 SMTP 地址。|
 |id|String| 客户的 ID。 只读。|
 
@@ -75,3 +75,5 @@ ms.locfileid: "43453653"
   "suppressions": []
 }
 -->
+
+

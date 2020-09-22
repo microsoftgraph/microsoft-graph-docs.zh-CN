@@ -5,20 +5,20 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f17aa21de65fef33b0c7e4a94151eab4f49583ac
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: c4719632f7d3e2944f1dda81134acc11aa014c06
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394748"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071528"
 ---
 # <a name="endpoint-resource-type"></a>终结点资源类型
 
-命名空间： callRecords
+命名空间：microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示调用中的终结点。 终结点可以是用户的设备、会议、应用程序/机器人等。[ParticipantEndpoint](callrecords-participantendpoint.md)和[serviceEndpoint](callrecords-serviceendpoint.md)类型继承自此类型。
+表示调用中的终结点。 终结点可以是用户的设备、会议、应用程序/机器人等。 [ParticipantEndpoint](callrecords-participantendpoint.md) 和 [serviceEndpoint](callrecords-serviceendpoint.md) 类型继承自此类型。
 
 ## <a name="properties"></a>属性
 
@@ -54,3 +54,4 @@ ms.locfileid: "42394748"
   "section": "documentation",
   "tocPath": ""
 }-->
+

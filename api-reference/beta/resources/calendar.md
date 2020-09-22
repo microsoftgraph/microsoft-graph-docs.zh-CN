@@ -1,16 +1,16 @@
 ---
 title: 日历资源类型
-description: 日历即事件容器。 它可以是用户的日历，也可以是 Microsoft 365 组的默认日历。
+description: 日历即事件容器。 它可以是用户的日历，或者是 Microsoft 365 组的默认日历。
 localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 6eabbb23ddcab85baf4277f25c586b4affd2c6bc
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: 145154f9ac69c069b6ea27906727642390036378
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897818"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071626"
 ---
 # <a name="calendar-resource-type"></a>日历资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "44897818"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-日历即事件容器。 它可以是[用户](user.md)的日历，也可以是 Microsoft 365[组](group.md)的默认日历。
+日历即事件容器。 它可以是 [用户](user.md)的日历，或者 Microsoft 365 [组](group.md)的默认日历。
 
 > **注意：** 与用户日历和组日历交互的方式稍有不同：
 
@@ -32,9 +32,9 @@ ms.locfileid: "44897818"
 |:---------------|:--------|:----------|
 |[列出日历](../api/user-list-calendars.md)|[日历](calendar.md) 集合|获取所有用户的日历，或者获取默认或其他特定日历组中的日历。|
 |[创建日历](../api/user-post-calendars.md) |[calendar](calendar.md)| 在默认日历组或用户的指定日历组中新建日历。|
-|[Get calendar](../api/calendar-get.md) | [calendar](calendar.md) |获取 **calendar** 对象的属性和关系。 日历可以是用户的一个，也可以是 Microsoft 365 组的默认日历。 |
-|[Update](../api/calendar-update.md) | [calendar](calendar.md)  |更新 **calendar** 对象的属性。 日历可以是用户的一个，也可以是 Microsoft 365 组的默认日历。 |
-|[Delete](../api/calendar-delete.md) | 无 |删除 calendar 对象。 |
+|[Get calendar](../api/calendar-get.md) | [calendar](calendar.md) |获取 **calendar** 对象的属性和关系。 可以是用户的日历，也可以是 Microsoft 365 组的默认日历。 |
+|[更新](../api/calendar-update.md) | [calendar](calendar.md)  |更新 **calendar** 对象的属性。 可以是用户的日历，也可以是 Microsoft 365 组的默认日历。 |
+|[删除](../api/calendar-delete.md) | 无 |删除 calendar 对象。 |
 |[列出 calendarView](../api/calendar-list-calendarview.md) |[事件](event.md) 集合| 从用户的主日历 `(../me/calendarview)` 或指定日历中，获取由时间范围定义的日历视图中的事件发生次数、异常和单个实例。|
 |[列出事件](../api/calendar-list-events.md) |[事件](event.md) 集合| 检索日历中的事件列表。该列表包含单实例会议和系列主控事件。|
 |[创建事件](../api/calendar-post-events.md) |[event](event.md)| 在默认或指定日历中创建新事件。|
@@ -50,13 +50,13 @@ ms.locfileid: "44897818"
 |:---------------|:--------|:----------|
 |allowedOnlineMeetingProviders|string 集合| 表示此日历中可用于创建联机会议的联机会议服务提供商。 可取值为：`unknown`、`skypeForBusiness`、`skypeForConsumer`、`teamsForBusiness`。|
 |calendarGroupId|字符串|要在其中创建日历的 [calendarGroup](calendargroup.md)。 若用户从未显式设置日历的组，此属性为空。|
-|canEdit |布尔 |如果用户可以写入日历则为 true，否则为 false。对于创建此日历的用户，此属性为 true。通过 Outlook 客户端或相应的 [calendarPermission](calendarpermission.md) 资源，此属性对于共享日历并且授予写入访问权限的用户同样为 true。只读。|
+|canEdit |Boolean |如果用户可以写入日历则为 true，否则为 false。对于创建此日历的用户，此属性为 true。通过 Outlook 客户端或相应的 [calendarPermission](calendarpermission.md) 资源，此属性对于共享日历并且授予写入访问权限的用户同样为 true。只读。|
 |canShare |Boolean |如果用户有权共享日历则为 ture，否则为 false。 只有创建日历的用户才可以进行共享。 只读。|
 |canViewPrivateItems |Boolean |如果用户可以读取已标记为私有的日历项，则为 true，否则返回 false。 此属性通过 Outlook 客户端或相应的 [calendarPermission](calendarpermission.md) 资源进行设定。 只读。|
-|changeKey|String|标识 calendar 对象的版本。每次日历更改时，changeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。只读。|
+|changeKey|字符串|标识 calendar 对象的版本。每次日历更改时，changeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。只读。|
 |color|String|在 UI 中指定将该日历与其他日历区分开来的颜色主题。属性值有：LightBlue=0、LightGreen=1、LightOrange=2、LightGray=3、LightYellow=4、LightTeal=5、LightPink=6、LightBrown=7、LightRed=8、MaxColor=9、Auto=-1|
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|从此日历发送的会议的默认联机会议提供商。 可取值为：`unknown`、`skypeForBusiness`、`skypeForConsumer`、`teamsForBusiness`。|
-|hexColor|String|日历颜色，使用十六进制颜色代码表示，其中包含三个十六进制值，每个值介于 00 到 FF 之间，表示 RGB 颜色空间中颜色的红色、绿色或蓝色组件。 若用户从未显式设置日历的颜色，此属性为空。 |
+|hexColor|字符串|日历颜色，使用十六进制颜色代码表示，其中包含三个十六进制值，每个值介于 00 到 FF 之间，表示 RGB 颜色空间中颜色的红色、绿色或蓝色组件。 若用户从未显式设置日历的颜色，此属性为空。 |
 |id|String|日历的唯一标识符。只读。|
 |isDefaultCalendar|Boolean|若此为默认用于新建事件的默认日志则为 True，反之为 false。|
 |isRemovable|Boolean| 表示是否可以从用户邮箱删除此用户日志。|
@@ -124,3 +124,5 @@ ms.locfileid: "44897818"
   "suppressions": []
 }
 -->
+
+

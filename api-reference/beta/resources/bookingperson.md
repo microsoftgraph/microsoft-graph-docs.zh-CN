@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: d5ebbd7c4abaf34b31ac3f3d8e75defd6c939ec0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 04fabd62ee89c275d25075de7b489e512ebe3167
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453660"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071771"
 ---
 # <a name="bookingperson-resource-type"></a>bookingPerson 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "43453660"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-这是 Microsoft 记帐企业中的人员的基本类型，可以是[bookingCustomer](bookingcustomer.md)或[bookingStaffMember](bookingstaffmember.md)。
+这是 Microsoft 记帐企业中的人员的基本类型，可以是 [bookingCustomer](bookingcustomer.md) 或 [bookingStaffMember](bookingstaffmember.md)。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName|字符串|派生实体的名称，与客户进行交互。|
+|displayName|String|派生实体的名称，与客户进行交互。|
 |emailAddress|String|人员的电子邮件地址。|
 |id|String| 派生实体的 ID。 只读。|
 
@@ -64,3 +64,5 @@ ms.locfileid: "43453660"
   "suppressions": []
 }
 -->
+
+

@@ -5,20 +5,20 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 17ebc8d0a7ffe9a59dd5225439e90af41aaa688a
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 944e827e0e7827190b3ff879a2f62d52d6fa15c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394749"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071529"
 ---
 # <a name="deviceinfo-resource-type"></a>deviceInfo 资源类型
 
-命名空间： callRecords
+命名空间：microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示有关呼叫中使用的设备（麦克风、扬声器、相机等）的信息。
+表示有关呼叫中使用的设备 (麦克风、扬声器、相机等 ) 的信息。
 
 ## <a name="properties"></a>属性
 
@@ -31,7 +31,7 @@ ms.locfileid: "42394749"
 |deviceClippingEventRatio|双精度|媒体终结点在捕获的音频中检测到的剪辑在导致发送的音频质量较差时检测到的呼叫的一小部分。|
 |deviceGlitchEventRatio|双精度|媒体终结点检测到或捕获的音频中由于导致发送或接收的音频质量较差而发生了故障或间隙的呼叫的一小部分。|
 |howlingEventCount|Int32|呼叫期间媒体终结点检测到 howling 或 screeching 音频的次数。|
-|initialSignalLevelRootMeanSquare|双精度|呼叫的前30秒内传入信号的根平均平方（RMS）。|
+|initialSignalLevelRootMeanSquare|双精度|最高为呼叫的前30秒的传入信号的根平均平方 (RMS) 。|
 |lowSpeechLevelEventRatio|双精度|媒体终结点检测到较低语音级别导致发送音频质量较差的呼叫的小部分。|
 |lowSpeechToNoiseEventRatio|双精度|媒体终结点检测到的流量较低的流量的小到噪音级别导致音频质量较差的呼叫。|
 |micGlitchRate|双精度|媒体终结点麦克风的每5分钟间隔一次的故障次数。|
@@ -95,3 +95,4 @@ ms.locfileid: "42394749"
   "section": "documentation",
   "tocPath": ""
 }-->
+
