@@ -3,20 +3,20 @@ title: 获取 windows10EndpointProtectionConfiguration
 description: 读取 windows10EndpointProtectionConfiguration 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 44975c4620acdaf9be4fb77411f639b1f3e9285b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 49e5fafae3466b95e9774193ef1e10b8d76c274c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43431372"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043701"
 ---
 # <a name="get-windows10endpointprotectionconfiguration"></a>获取 windows10EndpointProtectionConfiguration
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 32668
+Content-Length: 32710
 
 {
   "value": {
@@ -560,6 +560,7 @@ Content-Length: 32668
     "firewallBlockStatefulFTP": true,
     "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
     "firewallPreSharedKeyEncodingMethod": "none",
+    "firewallIPSecExemptionsNone": true,
     "firewallIPSecExemptionsAllowNeighborDiscovery": true,
     "firewallIPSecExemptionsAllowICMP": true,
     "firewallIPSecExemptionsAllowRouterDiscovery": true,
@@ -813,6 +814,9 @@ Content-Length: 32668
   }
 }
 ```
+
+
+
 
 
 

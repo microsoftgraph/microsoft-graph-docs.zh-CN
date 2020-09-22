@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 55a69b817aab8d8becd579413852c9778605054b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6d10d0f2e1be05e42ecdb5f97b2b7c1cd0810507
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464050"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044093"
 ---
 # <a name="device-checkmemberobjects"></a>设备： checkMemberObjects
 
@@ -53,7 +53,7 @@ POST /devices/{id}/checkMemberObjects
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和字符串集合对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和字符串集合对象。
 
 ## <a name="examples"></a>示例
 
@@ -135,3 +135,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

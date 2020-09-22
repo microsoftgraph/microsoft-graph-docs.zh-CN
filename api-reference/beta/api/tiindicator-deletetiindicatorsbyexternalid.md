@@ -1,24 +1,24 @@
 ---
 title: 'tiIndicator: deleteTiIndicatorsByExternalId'
-description: 在一个请求中（而不是多个请求）删除多个威胁情报（TI）指示器，并且该请求包含外部 Id 而不是 Id。
+description: 在一个请求（而不是多个请求）中删除多个威胁智能 (TI) 指示器，并且该请求包含外部 Id 而不是 Id。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 28c31d6545189728bdcf17cfadadd5b2aa2fc85d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 04d9e95bce724f354c7e1a39e49083dd3cc3c090
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452384"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042819"
 ---
 # <a name="tiindicator-deletetiindicatorsbyexternalid"></a>tiIndicator: deleteTiIndicatorsByExternalId
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-当请求包含外部 Id 而不是 Id 时，在一个请求中（而不是多个请求）删除多个威胁智能（TI）指示器。
+当请求包含外部 Id 而不是 Id 时，在一个请求中删除多个威胁智能 (TI) 指示器，而不是多个请求。
 
 ## <a name="permissions"></a>权限
 
@@ -54,7 +54,7 @@ POST /security/tiIndicators/deleteTiIndicatorsByExternalId
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`200, OK`响应正文中返回响应代码和[resultInfo](../resources/resultinfo.md)集合对象。 如果存在错误，则此方法返回`206 Partial Content`响应代码。  有关详细信息，请参阅[错误](../resources/security-error-codes.md#threat-indicator-bulk-action-errors)。
+如果成功，此方法 `200, OK` 在响应正文中返回响应代码和 [resultInfo](../resources/resultinfo.md) 集合对象。 如果存在错误，则此方法返回 `206 Partial Content` 响应代码。  有关详细信息，请参阅 [错误](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) 。
 
 ## <a name="examples"></a>示例
 
@@ -99,7 +99,7 @@ Content-type: application/json
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面介绍响应示例。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
@@ -137,3 +137,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

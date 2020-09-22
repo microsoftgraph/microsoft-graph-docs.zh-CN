@@ -5,19 +5,19 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8ed30c99a509f062e7b6f6dc255e1bf08cfbf31b
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 78d0482a3427874af55d2788e3e7b56b40a80cd7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46565809"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044268"
 ---
 # <a name="get-store"></a>获取存储区
 命名空间： termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取[store](../resources/termstore-store.md)对象的属性和关系。
+读取 [store](../resources/termstore-store.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,7 +46,7 @@ GET /termStore
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[store](../resources/termstore-store.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [store](../resources/termstore-store.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -107,3 +107,5 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
+
+

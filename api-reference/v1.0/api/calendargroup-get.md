@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2c2c91944e8ea05c129a32bdbb2835fa06b753d0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 379992f5941f72504d3495b4ac617189f82726b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471801"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044128"
 ---
 # <a name="get-calendargroup"></a>获取 calendarGroup
 
@@ -127,3 +127,4 @@ Content-length: 110
   "suppressions": [
   ]
 }-->
+

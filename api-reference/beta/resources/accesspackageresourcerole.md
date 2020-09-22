@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4bc0a60043c9877b4c48a889f93fa48a852c3780
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: ff36109d59ee0bef4d81caf16c16f69f26b0a03e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319581"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042805"
 ---
 # <a name="accesspackageresourcerole-resource-type"></a>accessPackageResourceRole 资源类型
 
@@ -75,3 +75,5 @@ ms.locfileid: "47319581"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

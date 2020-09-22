@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 47e9b8d00572edec1feb956686983cdf8972573b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9ed84d1224aa1096ff22cfe0230c9b441a1ef048
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454554"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042974"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +48,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |域|workbookSortField 集合|要用作排序依据的条件列表。|
-|matchCase|boolean|可选。是否让大小写对字符串排序产生影响。|
+|matchCase|布尔|可选。是否让大小写对字符串排序产生影响。|
 |hasHeaders|布尔|可选。该区域是否有标头。|
 |orientation|string|可选。该操作是对行还是列排序。可能的值是：`Rows`、`Columns`。|
 |方法|string|可选。用于中文字符的排序方法。可能的值是：`PinYin`、`StrokeCount`。|
@@ -131,3 +131,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

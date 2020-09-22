@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 3aeec8e560535eec0108331b04f3f0dda18133cd
-ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
+ms.openlocfilehash: 071f767c31b8cee19defc5ccd635d73cce8c0f5f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47296502"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044081"
 ---
 # <a name="delete-serviceprincipal"></a>删除 servicePrincipal
 
@@ -101,3 +101,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

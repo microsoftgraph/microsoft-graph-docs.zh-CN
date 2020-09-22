@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: dc1e1f8242072be9b0db8a03849d1fa9c5355411
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 2ba08b47fca02c67c3d55762747b010bf4b77ad6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674531"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042995"
 ---
 # <a name="list-printconnectors"></a>列出 printConnectors
 
@@ -21,7 +21,7 @@ ms.locfileid: "46674531"
 检索打印连接器的列表。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
@@ -147,3 +147,5 @@ Content-length: 1289
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

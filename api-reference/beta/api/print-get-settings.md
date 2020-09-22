@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 9114e213426735bda89243269513d45c05054bb3
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: b0f82c3d46dc8d49e9e348d38505f3ef6e793997
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674524"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043057"
 ---
 # <a name="get-printsettings"></a>获取 printSettings
 
@@ -21,7 +21,7 @@ ms.locfileid: "46674524"
 检索通用打印服务的租户范围设置。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 若要使用通用打印服务，用户或应用的租户必须具有活动的通用打印订阅，以及下表中列出的权限。 登录用户必须是 [打印机管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
@@ -104,3 +104,5 @@ Content-length: 144
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 875bce80b4d4319439acf7c4d202a052770990a3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7a78daf6f0e1dd1cd4a271e89b19d541fbe32d0d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407125"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043925"
 ---
 # <a name="calendargroup-resource-type"></a>calendarGroup 资源类型
 
@@ -23,10 +23,10 @@ ms.locfileid: "43407125"
 | 方法                                                      | 返回类型                        | 说明                                                   |
 | :---------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------ |
 | [列出日历组](../api/user-list-calendargroups.md)  | [日历](calendar.md) 集合 | 获取用户的日历组。                               |
-| [创建日历组](../api/user-post-calendargroups.md) | [Calendar](calendar.md)            | 创建新的日历组。                                  |
+| [创建日历组](../api/user-post-calendargroups.md) | [日历](calendar.md)            | 创建新的日历组。                                  |
 | [创建日历组](../api/calendargroup-get.md)           | [calendarGroup](calendargroup.md)  | 读取 calendar 对象的属性和关系。 |
 | [更新](../api/calendargroup-update.md)                    | [calendarGroup](calendargroup.md)  | 更新 calendarGroup 对象。                                  |
-| [Delete](../api/calendargroup-delete.md)                    | 无                               | 删除 calendarGroup 对象。                                  |
+| [删除](../api/calendargroup-delete.md)                    | 无                               | 删除 calendarGroup 对象。                                  |
 | [List calendars](../api/calendargroup-list-calendars.md)    | [Calendar](calendar.md) collection | 列出日历组中的日历。                           |
 | [创建日历](../api/calendargroup-post-calendars.md)   | [日历](calendar.md)            | 在日历组中创建新日历。                    |
 
@@ -34,7 +34,7 @@ ms.locfileid: "43407125"
 
 | 属性  | 类型   | 说明                                                                                                                                                                                               |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name      | 字符串 | 组名称。                                                                                                                                                                                           |
+| name      | String | 组名称。                                                                                                                                                                                           |
 | changeKey | String | 标识日历组的版本。每次日历组更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。只读。 |
 | classId   | Guid   | 类标识符。只读。                                                                                                                                                                          |
 | id        | String | 组的唯一标识符。只读。                                                                                                                                                                 |
@@ -89,3 +89,4 @@ ms.locfileid: "43407125"
   "section": "documentation",
   "tocPath": ""
 }-->
+

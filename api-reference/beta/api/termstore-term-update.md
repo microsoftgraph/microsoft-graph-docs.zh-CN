@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5aebe53a7bec3fffc90bb27c7beb60c89b500942
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 4a1c2689d657a1b9c4f984be3b5fd3f80599d901
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330199"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042826"
 ---
 # <a name="update-term"></a>更新术语
 命名空间： termStore
@@ -140,3 +140,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

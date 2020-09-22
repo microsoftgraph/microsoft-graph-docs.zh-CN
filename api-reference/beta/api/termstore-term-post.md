@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a94b020c8133dd154d3ce672fadc7966566e4a60
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 8833dea03f14e0b91b6f7e008d16b52aed4f3898
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330138"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042833"
 ---
 # <a name="create-term"></a>创建术语
 命名空间： termStore
@@ -142,3 +142,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

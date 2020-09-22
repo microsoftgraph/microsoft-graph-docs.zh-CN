@@ -5,12 +5,12 @@ title: 关注网站列表
 localization_priority: Normal
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: 0df243fc7f01cd01ce54e753e60acd65d1a202e8
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 6f6eba8436b79d8b56741b7329b527b1a06c2ed2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006983"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044404"
 ---
 # <a name="list-followed-sites"></a>关注网站列表
 
@@ -18,7 +18,7 @@ ms.locfileid: "45006983"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出已登录用户的后续[网站](../resources/site.md)。
+列出已登录用户的后续 [网站](../resources/site.md) 。
 
 ## <a name="permissions"></a>权限
 
@@ -61,7 +61,7 @@ GET /users/{user-id}/followedSites
 
 ## <a name="response"></a>响应
 
-此方法返回用户正在关注的[网站](../resources/site.md)资源的集合。
+此方法返回用户正在关注的 [网站](../resources/site.md) 资源的集合。
 如果找不到任何网站，则返回一个空集合。
 
 ## <a name="example"></a>示例
@@ -141,3 +141,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

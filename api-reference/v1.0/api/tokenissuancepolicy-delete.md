@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7d08d494b4b59a76a134a1b563f2fa0ed8c66bfd
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: b6a16c367b06fc67ead648d2103e0f01f233e61d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916986"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043981"
 ---
 # <a name="delete-tokenissuancepolicy"></a>删除 tokenIssuancePolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "43916986"
 
 
 
-删除[tokenIssuancePolicy](../resources/tokenissuancepolicy.md)对象。
+删除 [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -109,3 +109,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

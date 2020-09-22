@@ -3,20 +3,20 @@ title: vpnTunnelConfigurationType 枚举类型
 description: 将向 VPN 客户端提供的用于配置的隧道的类型
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d60d8fdd812fe18a5010683ddc0d1ef6cd8fbf06
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 34d955776328d6824808205a6c151f72c07ab592
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43358928"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042399"
 ---
 # <a name="vpntunnelconfigurationtype-enum-type"></a>vpnTunnelConfigurationType 枚举类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -26,8 +26,11 @@ ms.locfileid: "43358928"
 |成员|值|说明|
 |:---|:---|:---|
 |wifiAndCellular|0|WiFi 和蜂窝隧道|
-|蜂窝|1|仅蜂窝隧道|
-|wifi|双面|仅 WiFi 隧道|
+|蜂窝|1 |仅蜂窝隧道|
+|wifi|2 |仅 WiFi 隧道|
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: mohitpcad
 ms.prod: Sharepoint
 localization_priority: Normal
 doc_type: apiPageType
-ms.openlocfilehash: 22ed47e1332dbe8ff5da8597f51d58017c10093f
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 12379deab4db543ac06a83dd4d3922ed0fe4e0b4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329919"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042868"
 ---
 # <a name="list-children"></a>列出子项
 命名空间： termStore
@@ -125,3 +125,5 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
+
+

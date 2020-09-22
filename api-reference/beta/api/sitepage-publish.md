@@ -6,20 +6,20 @@ title: 发布页面
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 90d08b3f8fae2ed186d1809b4318eec7ef9cf5dc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e40f864ce224916a2c60e5c82e0aecbfff213fbc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453166"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044377"
 ---
 # <a name="sitepage-publish"></a>sitePage：发布
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-发布[sitePage][]资源的最新版本，使页面的版本可供所有用户使用。 如果该页面已签出，请签入该页面并发布它。 如果页面已签出到此 API 的调用方，则会自动签入并发布该页面。
+发布 [sitePage][] 资源的最新版本，使页面的版本可供所有用户使用。 如果该页面已签出，请签入该页面并发布它。 如果页面已签出到此 API 的调用方，则会自动签入并发布该页面。
 
 [sitePage]: ../resources/sitepage.md
 
@@ -66,3 +66,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

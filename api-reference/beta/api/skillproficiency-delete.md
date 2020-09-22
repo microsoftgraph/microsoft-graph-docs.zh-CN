@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 501eb80a9ab304579920d7f615a6a08b5a764577
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 083492b41f9d6387f5e1c29262914d5e8e98c4d7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811159"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044401"
 ---
 # <a name="delete-skillproficiency"></a>删除 skillProficiency
 
@@ -96,3 +96,5 @@ DELETE https://graph.microsoft.com/beta/me/profile/skills/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+
+

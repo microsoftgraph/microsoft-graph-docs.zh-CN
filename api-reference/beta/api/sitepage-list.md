@@ -1,29 +1,29 @@
 ---
 author: rahmit
-description: 从网站中的网站页面 [列表] 获取 sitePage 对象的集合。 将返回网站中的所有页面（使用分页）。
+description: 从网站中的网站页面 [列表] 获取 sitePage 对象的集合。 在分页)  (返回网站中的所有页面。
 ms.date: 03/15/2018
 title: 列出网站中的页面
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ff281526e49fa9b9f6a790f00e4d83f4cf95853e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1f3a77b7f6d70d79cc1f44635266144f9d8ceb2d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453157"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044429"
 ---
 # <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>在网站的 "网站页面" 列表中列出页面
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从网站[网站][]的 "网站页面"[列表][]中获取[sitePage][]对象的集合。 将返回网站中的所有页面（使用分页）。
+从网站[网站][]的 "网站页面"[列表][]中获取[sitePage][]对象的集合。 在分页)  (返回网站中的所有页面。
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
-[网站]: ../resources/site.md
+[site]: ../resources/site.md
 
 ## <a name="permissions"></a>权限
 
@@ -245,3 +245,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

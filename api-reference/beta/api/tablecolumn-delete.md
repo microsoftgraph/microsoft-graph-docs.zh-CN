@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: fb17d6df2649db901ca80f6f8399b3a19b1d384d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 54677953cbad7be5e0f7221dc82e23f0593c31dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452755"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042959"
 ---
 # <a name="tablecolumn-delete"></a>TableColumn: delete
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -82,3 +82,5 @@ HTTP/1.1 200 OK
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: microsoft-identity-platform
 author: khotz
-ms.openlocfilehash: c88a6d3b1761043512858c109de182b38c3abeba
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 1b0aa0b3deec7aa0d38f1af544755584f493a8e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673975"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042749"
 ---
 # <a name="activity-reports-api-overview"></a>活动报告 API 概述
 
@@ -79,3 +79,5 @@ Azure AD 提供以下三种类型的活动报告：
 - 审查 [directoryAudit](directoryaudit.md) 资源和操作。
 - 审查 [signIn](signin.md) 资源和操作。 
 - 审查 [provisioningObjectSummary](provisioningobjectsummary.md) 资源。
+
+

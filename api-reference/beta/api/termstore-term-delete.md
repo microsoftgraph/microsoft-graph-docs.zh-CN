@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 9fe4d60e81a6124fbb7745c40864ef66ac5de40a
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: bd694ac1d97b24652387e75f14c4f29d38dd3eb0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330016"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044259"
 ---
 # <a name="delete-term"></a>删除术语
 命名空间： termStore
@@ -103,3 +103,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

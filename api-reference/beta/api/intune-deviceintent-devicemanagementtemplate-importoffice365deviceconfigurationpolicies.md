@@ -3,14 +3,14 @@ title: importOffice365DeviceConfigurationPolicies 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 51f97db40ad94525a5db1afa803cddd2bb0694c1
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 76da266c9bf4d1646634fe7dc5363d2ed5d77e40
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793248"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043505"
 ---
 # <a name="importoffice365deviceconfigurationpolicies-action"></a>importOffice365DeviceConfigurationPolicies 操作
 
@@ -85,6 +85,9 @@ Content-Length: 452
   ]
 }
 ```
+
+
+
 
 
 

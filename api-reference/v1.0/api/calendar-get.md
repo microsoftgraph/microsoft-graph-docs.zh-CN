@@ -5,18 +5,18 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0a216938f99d03bcc15e8b46ef64eee8a91cfd60
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4063dc980137a2959cce6cd8fc379bb6646c9f53
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471867"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044163"
 ---
 # <a name="get-calendar"></a>获取日历
 
 命名空间：microsoft.graph
 
-获取 [calendar](../resources/calendar.md) 对象的属性和关系。 可以是[用户](../resources/user.md)的日历，也可以是 Office 365 [组](../resources/group.md)的默认日历。
+获取 [calendar](../resources/calendar.md) 对象的属性和关系。 可以是[用户](../resources/user.md)的日历，也可以是 Microsoft 365 [组](../resources/group.md)的默认日历。
 
 在下列两种情况下，应用可获取其他用户的日历：
 
@@ -141,3 +141,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
