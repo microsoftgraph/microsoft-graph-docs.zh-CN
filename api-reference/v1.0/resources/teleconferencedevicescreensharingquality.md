@@ -5,26 +5,26 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 7581aba181ad98a15c0cb28067183dea520dbe31
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: 4485001c076fd25b4d5ab7dd7f06f7ccab4c81a4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082717"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086268"
 ---
-# <a name="teleconferencedevicescreensharingquality-resource-type"></a><span data-ttu-id="6d711-103">teleconferenceDeviceScreenSharingQuality 资源类型</span><span class="sxs-lookup"><span data-stu-id="6d711-103">teleconferenceDeviceScreenSharingQuality resource type</span></span>
+# <a name="teleconferencedevicescreensharingquality-resource-type"></a><span data-ttu-id="3d685-103">teleconferenceDeviceScreenSharingQuality 资源类型</span><span class="sxs-lookup"><span data-stu-id="3d685-103">teleconferenceDeviceScreenSharingQuality resource type</span></span>
 
-<span data-ttu-id="6d711-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6d711-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3d685-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3d685-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="6d711-105">表示视频电话会议设备屏幕共享质量数据。</span><span class="sxs-lookup"><span data-stu-id="6d711-105">Represents video teleconferencing device screen-sharing quality data.</span></span>
+<span data-ttu-id="3d685-105">表示视频电话会议设备屏幕共享质量数据。</span><span class="sxs-lookup"><span data-stu-id="3d685-105">Represents video teleconferencing device screen-sharing quality data.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="6d711-106">属性</span><span class="sxs-lookup"><span data-stu-id="6d711-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="3d685-106">属性</span><span class="sxs-lookup"><span data-stu-id="3d685-106">Properties</span></span>
 
-<span data-ttu-id="6d711-107">**TeleconferenceDeviceScreenSharingQuality**继承[teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md)中的所有属性。</span><span class="sxs-lookup"><span data-stu-id="6d711-107">The **teleconferenceDeviceScreenSharingQuality** inherits all the properties from [teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md).</span></span>
+<span data-ttu-id="3d685-107">**TeleconferenceDeviceScreenSharingQuality**继承[teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md)中的所有属性。</span><span class="sxs-lookup"><span data-stu-id="3d685-107">The **teleconferenceDeviceScreenSharingQuality** inherits all the properties from [teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md).</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="6d711-108">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="6d711-108">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3d685-108">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3d685-108">JSON representation</span></span>
 
-<span data-ttu-id="6d711-109">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6d711-109">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="3d685-109">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3d685-109">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -74,3 +74,4 @@ ms.locfileid: "43082717"
   "section": "documentation",
   "tocPath": ""
 }-->
+

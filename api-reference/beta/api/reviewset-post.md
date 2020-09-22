@@ -5,30 +5,30 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 5220140589758b20285d738a4d60eadfd80defe1
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 52fcf121c3725a61ce833e766122baab0d3a2137
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566243"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085414"
 ---
-# <a name="create-reviewset"></a><span data-ttu-id="49e54-103">创建 reviewSet</span><span class="sxs-lookup"><span data-stu-id="49e54-103">Create reviewSet</span></span>
+# <a name="create-reviewset"></a><span data-ttu-id="8976e-103">创建 reviewSet</span><span class="sxs-lookup"><span data-stu-id="8976e-103">Create reviewSet</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="49e54-104">创建新的[reviewSet](../resources/reviewset.md)对象。</span><span class="sxs-lookup"><span data-stu-id="49e54-104">Create a new [reviewSet](../resources/reviewset.md) object.</span></span> <span data-ttu-id="49e54-105">请求正文包含审阅集的显示名称，该名称是唯一的可写属性。</span><span class="sxs-lookup"><span data-stu-id="49e54-105">The request body contains the display name of the review set, which is the only writable property.</span></span>
+<span data-ttu-id="8976e-104">创建新的 [reviewSet](../resources/reviewset.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="8976e-104">Create a new [reviewSet](../resources/reviewset.md) object.</span></span> <span data-ttu-id="8976e-105">请求正文包含审阅集的显示名称，该名称是唯一的可写属性。</span><span class="sxs-lookup"><span data-stu-id="8976e-105">The request body contains the display name of the review set, which is the only writable property.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="49e54-106">权限</span><span class="sxs-lookup"><span data-stu-id="49e54-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="8976e-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="8976e-106">Permissions</span></span>
 
-<span data-ttu-id="49e54-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="49e54-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8976e-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8976e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="49e54-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="49e54-109">Permission type</span></span>                        | <span data-ttu-id="49e54-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="49e54-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="8976e-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="8976e-109">Permission type</span></span>                        | <span data-ttu-id="8976e-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8976e-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="49e54-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="49e54-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="49e54-112">User.Read</span><span class="sxs-lookup"><span data-stu-id="49e54-112">User.Read</span></span> |
-| <span data-ttu-id="49e54-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="49e54-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="49e54-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="49e54-114">Not supported.</span></span> |
-| <span data-ttu-id="49e54-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="49e54-115">Application</span></span>                            | <span data-ttu-id="49e54-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="49e54-116">Not supported.</span></span> |
+| <span data-ttu-id="8976e-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8976e-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="8976e-112">User.Read</span><span class="sxs-lookup"><span data-stu-id="8976e-112">User.Read</span></span> |
+| <span data-ttu-id="8976e-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8976e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8976e-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="8976e-114">Not supported.</span></span> |
+| <span data-ttu-id="8976e-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="8976e-115">Application</span></span>                            | <span data-ttu-id="8976e-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="8976e-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="49e54-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="49e54-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8976e-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8976e-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,31 +36,31 @@ ms.locfileid: "46566243"
 POST /compliance/ediscovery/cases/{id}/reviewSets/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="49e54-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="49e54-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8976e-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="8976e-118">Request headers</span></span>
 
-| <span data-ttu-id="49e54-119">名称</span><span class="sxs-lookup"><span data-stu-id="49e54-119">Name</span></span>       | <span data-ttu-id="49e54-120">说明</span><span class="sxs-lookup"><span data-stu-id="49e54-120">Description</span></span>|
+| <span data-ttu-id="8976e-119">名称</span><span class="sxs-lookup"><span data-stu-id="8976e-119">Name</span></span>       | <span data-ttu-id="8976e-120">说明</span><span class="sxs-lookup"><span data-stu-id="8976e-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="49e54-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="49e54-121">Authorization</span></span> | <span data-ttu-id="49e54-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="49e54-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8976e-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="8976e-121">Authorization</span></span> | <span data-ttu-id="8976e-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8976e-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="49e54-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="49e54-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="8976e-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="8976e-124">Request body</span></span>
 
-<span data-ttu-id="49e54-125">在请求正文中，提供[reviewSet](../resources/reviewset.md)的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="49e54-125">In the request body, supply JSON representation of the [reviewSet](../resources/reviewset.md).</span></span>  <span data-ttu-id="49e54-126">下表列出了必需的属性。</span><span class="sxs-lookup"><span data-stu-id="49e54-126">The following table lists the required properties.</span></span>
+<span data-ttu-id="8976e-125">在请求正文中，提供 [reviewSet](../resources/reviewset.md)的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8976e-125">In the request body, supply JSON representation of the [reviewSet](../resources/reviewset.md).</span></span>  <span data-ttu-id="8976e-126">下表列出了必需的属性。</span><span class="sxs-lookup"><span data-stu-id="8976e-126">The following table lists the required properties.</span></span>
 
-| <span data-ttu-id="49e54-127">属性</span><span class="sxs-lookup"><span data-stu-id="49e54-127">Property</span></span>     | <span data-ttu-id="49e54-128">类型</span><span class="sxs-lookup"><span data-stu-id="49e54-128">Type</span></span>        | <span data-ttu-id="49e54-129">说明</span><span class="sxs-lookup"><span data-stu-id="49e54-129">Description</span></span> |
+| <span data-ttu-id="8976e-127">属性</span><span class="sxs-lookup"><span data-stu-id="8976e-127">Property</span></span>     | <span data-ttu-id="8976e-128">类型</span><span class="sxs-lookup"><span data-stu-id="8976e-128">Type</span></span>        | <span data-ttu-id="8976e-129">说明</span><span class="sxs-lookup"><span data-stu-id="8976e-129">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="49e54-130">displayName</span><span class="sxs-lookup"><span data-stu-id="49e54-130">displayName</span></span>  | <span data-ttu-id="49e54-131">string</span><span class="sxs-lookup"><span data-stu-id="49e54-131">string</span></span>      | <span data-ttu-id="49e54-132">评审集的名称。</span><span class="sxs-lookup"><span data-stu-id="49e54-132">The name of the review set.</span></span> |
+| <span data-ttu-id="8976e-130">displayName</span><span class="sxs-lookup"><span data-stu-id="8976e-130">displayName</span></span>  | <span data-ttu-id="8976e-131">string</span><span class="sxs-lookup"><span data-stu-id="8976e-131">string</span></span>      | <span data-ttu-id="8976e-132">评审集的名称。</span><span class="sxs-lookup"><span data-stu-id="8976e-132">The name of the review set.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="49e54-133">响应</span><span class="sxs-lookup"><span data-stu-id="49e54-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8976e-133">响应</span><span class="sxs-lookup"><span data-stu-id="8976e-133">Response</span></span>
 
-<span data-ttu-id="49e54-134">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[reviewSet](../resources/reviewset.md)对象。</span><span class="sxs-lookup"><span data-stu-id="49e54-134">If successful, this method returns a `201 Created` response code and a [reviewSet](../resources/reviewset.md) object in the response body.</span></span>
+<span data-ttu-id="8976e-134">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [reviewSet](../resources/reviewset.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="8976e-134">If successful, this method returns a `201 Created` response code and a [reviewSet](../resources/reviewset.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="49e54-135">示例</span><span class="sxs-lookup"><span data-stu-id="49e54-135">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="8976e-135">示例</span><span class="sxs-lookup"><span data-stu-id="8976e-135">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="49e54-136">请求</span><span class="sxs-lookup"><span data-stu-id="49e54-136">Request</span></span>
+### <a name="request"></a><span data-ttu-id="8976e-136">请求</span><span class="sxs-lookup"><span data-stu-id="8976e-136">Request</span></span>
 
-<span data-ttu-id="49e54-137">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="49e54-137">The following is an example of the request.</span></span>
+<span data-ttu-id="8976e-137">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="8976e-137">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="49e54-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="49e54-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="8976e-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="8976e-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_reviewset"
@@ -74,26 +74,26 @@ Content-type: application/json
   "displayName": "My Reviewset 3",
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="49e54-139">C#</span><span class="sxs-lookup"><span data-stu-id="49e54-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="8976e-139">C#</span><span class="sxs-lookup"><span data-stu-id="8976e-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-reviewset-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="49e54-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="49e54-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="8976e-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8976e-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-reviewset-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="49e54-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="49e54-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="8976e-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8976e-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-reviewset-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="49e54-142">响应</span><span class="sxs-lookup"><span data-stu-id="49e54-142">Response</span></span>
+### <a name="response"></a><span data-ttu-id="8976e-142">响应</span><span class="sxs-lookup"><span data-stu-id="8976e-142">Response</span></span>
 
-<span data-ttu-id="49e54-143">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="49e54-143">The following is an example of the response.</span></span>
+<span data-ttu-id="8976e-143">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="8976e-143">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="49e54-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="49e54-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="8976e-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="8976e-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -128,3 +128,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
