@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 82361ae49127fae002041cf2705c07239add557e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6a4fb6cc26cc4652aa3b16b815829b9c6b7c13be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509708"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045479"
 ---
 # <a name="table-converttorange"></a>Table: convertToRange
 
@@ -110,3 +110,4 @@ Content-length: 169
   "suppressions": [
   ]
 }-->
+

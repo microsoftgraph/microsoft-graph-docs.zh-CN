@@ -6,16 +6,16 @@ title: 从 SharePoint 网站中删除页面
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 10193e9d60d9ed254b2598a2845a487641554553
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d573553ee87b70adfd1f2cde575ce6182dedf8b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453180"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044485"
 ---
 # <a name="delete-page-from-the-site-pages-list-of-a-site"></a>从网站的 "网站页面" 列表中删除页面
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,11 +23,11 @@ ms.locfileid: "42453180"
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
-[网站]: ../resources/site.md
+[site]: ../resources/site.md
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 >**注意：** 若要删除项，用户必须已授予应用程序对要删除的项的写入权限。
 
@@ -58,7 +58,7 @@ DELETE /sites/{site-id}/pages/{page-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此调用将返回`204 No Content`响应，表示资源已被删除，没有任何可返回的内容。
+如果成功，此调用将返回 `204 No Content` 响应，表示资源已被删除，没有任何可返回的内容。
 
 ## <a name="example"></a>示例
 
@@ -87,3 +87,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

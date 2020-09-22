@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 24a3e2208e564c4ae542a3332c6f5958ec106f19
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 7f4ebd1229a702cbb77e6b13aeeef0be9c118b30
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383180"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044576"
 ---
 # <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal： List createdObjects
 
@@ -25,9 +25,9 @@ ms.locfileid: "44383180"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | "Application"、"all"、"Directory.accessasuser.all"、"全部"、"全部"、"全部"、"全部"、"所有"    |
+|委派（工作或学校帐户） | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | "Application.readwrite.ownedby"、"所有"、"readwrite"、"全部"、"所有"、" |
+|应用程序 | "Application.readwrite.ownedby"、"所有"、"readwrite"、"全部"、"所有"、" |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -115,3 +115,5 @@ Content-length: 55
   ]
 }
 -->
+
+

@@ -3,20 +3,20 @@ title: 删除 deviceAndAppManagementRoleAssignment
 description: 删除 deviceAndAppManagementRoleAssignment。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6312381fcc175b8436f5ed1ae76a6f3cd9775f7a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: af4739b2ad37ad0a6f58a450138d9de5ca3e81d6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43421487"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045046"
 ---
 # <a name="delete-deviceandappmanagementroleassignment"></a>删除 deviceAndAppManagementRoleAssignment
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -65,6 +65,9 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/roleAssignments/{device
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

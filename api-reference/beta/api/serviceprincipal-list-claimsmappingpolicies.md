@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 83bad7c305506814bdd931dcf29a4a3513625fd3
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: c92dae5381b1c9b2364994e8859185b054485862
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219086"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044604"
 ---
 # <a name="list-assigned-claimsmappingpolicy"></a>列表已分配 claimsMappingPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "43219086"
 
 列出分配给[servicePrincipal](../resources/servicePrincipal.md)的[claimsMappingPolicy](../resources/claimsmappingpolicy.md)对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,7 +50,7 @@ GET /servicePrincipals/{id}/claimsMappingPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[claimsMappingPolicy](../resources/claimsMappingPolicy.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [claimsMappingPolicy](../resources/claimsMappingPolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -122,3 +122,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

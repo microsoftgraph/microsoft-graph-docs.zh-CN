@@ -5,21 +5,21 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 65ca715730dde77d50e0ed45f14615e6c211a745
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: b3b865066c498e340f917dd72aaf06e75593a66f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383929"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045515"
 ---
 # <a name="create-serviceprincipal"></a>创建 servicePrincipal
 
 命名空间：microsoft.graph
 
-创建新的[servicePrincipal](../resources/serviceprincipal.md)对象。
+创建一个新的 [servicePrincipal](../resources/serviceprincipal.md) 对象。
 
 > [!IMPORTANT]
-> 不支持在创建 servicePrincipals 时添加[**passwordCredential**](../resources/passwordcredential.md) 。 使用[addPassword](serviceprincipal-addpassword.md)方法可添加 servicePrincipal 的密码。
+> 不支持在创建 servicePrincipals 时添加[** passwordCredential**](../resources/passwordcredential.md)。 使用 [addPassword](serviceprincipal-addpassword.md) 方法为 servicePrincipal 添加密码。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "44383929"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.accessasuser.all 的所有应用程序。    |
+|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
 
@@ -44,11 +44,11 @@ POST /serviceprincipals
 | Content-Type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[serviceprincipal](../resources/serviceprincipal.md)对象的 JSON 表示形式。 请求正文必须包含**appId**。
+在请求正文中，提供 [serviceprincipal](../resources/serviceprincipal.md) 对象的 JSON 表示形式。 请求正文必须包含 **appId**。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[serviceprincipal](../resources/serviceprincipal.md)对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [serviceprincipal](../resources/serviceprincipal.md) 对象。
 
 ## <a name="examples"></a>示例
 ### <a name="request"></a>请求
@@ -132,3 +132,4 @@ Content-type: application/json
     "passwordCredentials": []
 }
 ```
+

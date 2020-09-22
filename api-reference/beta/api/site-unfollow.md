@@ -5,18 +5,18 @@ description: 取消追随用户的网站
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b818e77eb509756a26697d6c7ccf0124f7959b5e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c15c8d05e688bd9c02455340f8f94d0f33939b26
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453189"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044492"
 ---
 # <a name="unfollow-site"></a>取消关注网站 
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
-取消追随用户的[网站](../resources/site.md)或多个网站。
+取消追随用户的 [网站](../resources/site.md) 或多个网站。
 
 ## <a name="permissions"></a>权限
 
@@ -41,14 +41,14 @@ POST /users/{user-id}/followedSites/remove
 在请求正文中，提供包含下表中所述的 id 参数的 JSON 对象的数组。 
 
 
-| Name                 | 值  | 说明                                                            |
+| 名称                 | 值  | 说明                                                            |
 |:---------------------|:-------|:-----------------------------------------------------------------------|
 |   id                 | string | 项的[唯一标识符](../resources/site.md#id-property)。 |
 
 ## <a name="response"></a>响应
 
-* 如果请求成功，此方法将返回不包含`204`任何内容的状态代码。  
-* 如果在 unfollowing 任何指定的网站时发生错误，此方法将返回一个`207`状态代码，并且响应正文将包含一个包含[Error](/graph/errors)对象和 siteIds 的条目的数组，这些条目指示哪些网站无法未点击。
+* 如果请求成功，此方法将返回 `204` 不包含任何内容的状态代码。  
+* 如果在 unfollowing 任何指定的网站时发生错误，此方法将返回一个 `207` 状态代码，并且响应正文将包含一个包含 [error](/graph/errors) 对象和 siteIds 的条目的数组，这些条目指示哪些网站无法未点击。
 
 ## <a name="example"></a>示例
 
@@ -138,3 +138,5 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+
+

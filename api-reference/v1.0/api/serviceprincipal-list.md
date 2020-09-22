@@ -1,22 +1,22 @@
 ---
-title: 列出 servicePrincipals
+title: List servicePrincipals
 description: 检索 servicePrincipal 对象列表。
 author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9f7d6064546887a820a4d056d22de40fb084b6d2
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 46b14333d100c4c4859690978a39397a2781290c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383943"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045605"
 ---
-# <a name="list-serviceprincipals"></a>列出 servicePrincipals
+# <a name="list-serviceprincipals"></a>List servicePrincipals
 
 命名空间：microsoft.graph
 
-检索[servicePrincipal](../resources/serviceprincipal.md)对象的列表。
+检索 [servicePrincipal](../resources/serviceprincipal.md) 对象列表。
 
 ## <a name="permissions"></a>权限
 
@@ -24,9 +24,9 @@ ms.locfileid: "44383943"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 所有的读取全部、全部的 Directory.accessasuser.all、全部、全部、全部、目录、全部、    |
+|委派（工作或学校帐户） | Application.Read.All、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 应用程序。全部，全部读取全部，全部 |
+|应用程序 | Application.Read.All、 Application.ReadWrite.All、 Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,7 +49,7 @@ GET /servicePrincipals
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[servicePrincipal](../resources/serviceprincipal.md)对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [servicePrincipal](../resources/serviceprincipal.md) 对象集合。
 
 ## <a name="examples"></a>示例
 ### <a name="request"></a>请求
@@ -146,3 +146,4 @@ Content-type: application/json
   ]
 }
 -->
+

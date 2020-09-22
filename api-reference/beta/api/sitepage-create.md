@@ -6,12 +6,12 @@ title: 在 SharePoint 网站中创建新页面
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5fdbe35219f3d7b543cd95e2533e46044b1429e4
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 1a326b83055cf25d3741976981fc499f0fdd8788
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681991"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044499"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>在网站的 "网站页面" 列表中创建页面
 
@@ -21,7 +21,7 @@ ms.locfileid: "44681991"
 
 在[网站][]的 "网站页面"[列表][]中创建新的[sitePage][] 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -41,7 +41,7 @@ POST /sites/{site-id}/pages
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供要创建的[sitePage][]资源的 JSON 表示形式。
+在请求正文中，提供要创建的 [sitePage][] 资源的 JSON 表示形式。
 
 ## <a name="example"></a>示例
 
@@ -116,7 +116,7 @@ Content-Type: application/json
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在创建的页面的响应正文中返回[sitePage][] 。
+如果成功，此方法在创建的页面的响应正文中返回 [sitePage][] 。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
@@ -201,7 +201,7 @@ Content-type: application/json
 
 [列表]: ../resources/list.md
 [listItem]: ../resources/listitem.md
-[网站]: ../resources/site.md
+[site]: ../resources/site.md
 [sitePage]: ../resources/sitepage.md
 
 <!--
@@ -214,3 +214,5 @@ Content-type: application/json
   "suppressions": []
 }
 -->
+
+

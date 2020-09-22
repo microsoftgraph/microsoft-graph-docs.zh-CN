@@ -6,16 +6,16 @@ title: 获取网站中的页面
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 9854dff5708d12b5e48c0cd64567ff3ddb12d832
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2c7e93ea3fc2378bb056dbd60a8616eefcfbae20
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453175"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044450"
 ---
 # <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>在网站的 "网站页面" 列表中获取页面
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ ms.locfileid: "42453175"
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
-[网站]: ../resources/site.md
+[site]: ../resources/site.md
 
 ## <a name="permissions"></a>权限
 
@@ -163,3 +163,5 @@ Content-type: application/json
   ]
 }
 -->
+
+
