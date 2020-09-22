@@ -5,68 +5,68 @@ description: 获取一个登录对象，其中包含 Azure Active Directory 租�
 localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e1bbdbdc7790bf4310947f9e927f0d0eb44171e8
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 8b2ab1ae6fc7fcae39e77a7a0b8e2ab1a86323ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674552"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040191"
 ---
-# <a name="get-signin"></a><span data-ttu-id="99297-103">获取 signIn</span><span class="sxs-lookup"><span data-stu-id="99297-103">Get signIn</span></span>
+# <a name="get-signin"></a><span data-ttu-id="5ca05-103">获取 signIn</span><span class="sxs-lookup"><span data-stu-id="5ca05-103">Get signIn</span></span>
 
-<span data-ttu-id="99297-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="99297-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5ca05-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5ca05-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="99297-105">获取一个 [登录](../resources/signin.md) 对象，其中包含租户的特定用户登录事件。</span><span class="sxs-lookup"><span data-stu-id="99297-105">Get a [signIn](../resources/signin.md) object that contains a specific user sign-in event for your tenant.</span></span> <span data-ttu-id="99297-106">这包括要求用户输入用户名或密码以及会话令牌的登录。</span><span class="sxs-lookup"><span data-stu-id="99297-106">This includes sign-ins where a user is asked to enter a username or password, and session tokens.</span></span>
+<span data-ttu-id="5ca05-105">获取一个 [登录](../resources/signin.md) 对象，其中包含租户的特定用户登录事件。</span><span class="sxs-lookup"><span data-stu-id="5ca05-105">Get a [signIn](../resources/signin.md) object that contains a specific user sign-in event for your tenant.</span></span> <span data-ttu-id="5ca05-106">这包括要求用户输入用户名或密码以及会话令牌的登录。</span><span class="sxs-lookup"><span data-stu-id="5ca05-106">This includes sign-ins where a user is asked to enter a username or password, and session tokens.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="99297-107">权限</span><span class="sxs-lookup"><span data-stu-id="99297-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="5ca05-107">权限</span><span class="sxs-lookup"><span data-stu-id="5ca05-107">Permissions</span></span>
 
-<span data-ttu-id="99297-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="99297-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="5ca05-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5ca05-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="99297-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="99297-110">Permission type</span></span>      | <span data-ttu-id="99297-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="99297-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5ca05-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="5ca05-110">Permission type</span></span>      | <span data-ttu-id="5ca05-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5ca05-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-| <span data-ttu-id="99297-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="99297-112">Delegated (work or school account)</span></span> | <span data-ttu-id="99297-113">AuditLog、目录、全部读取。所有</span><span class="sxs-lookup"><span data-stu-id="99297-113">AuditLog.Read.All, Directory.Read.All</span></span> |
-| <span data-ttu-id="99297-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="99297-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="99297-115">不支持</span><span class="sxs-lookup"><span data-stu-id="99297-115">Not supported</span></span> |
-| <span data-ttu-id="99297-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="99297-116">Application</span></span> | <span data-ttu-id="99297-117">AuditLog、目录、全部读取。所有</span><span class="sxs-lookup"><span data-stu-id="99297-117">AuditLog.Read.All, Directory.Read.All</span></span> | 
+| <span data-ttu-id="5ca05-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5ca05-112">Delegated (work or school account)</span></span> | <span data-ttu-id="5ca05-113">AuditLog、目录、全部读取。所有</span><span class="sxs-lookup"><span data-stu-id="5ca05-113">AuditLog.Read.All, Directory.Read.All</span></span> |
+| <span data-ttu-id="5ca05-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5ca05-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5ca05-115">不支持</span><span class="sxs-lookup"><span data-stu-id="5ca05-115">Not supported</span></span> |
+| <span data-ttu-id="5ca05-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="5ca05-116">Application</span></span> | <span data-ttu-id="5ca05-117">AuditLog、目录、全部读取。所有</span><span class="sxs-lookup"><span data-stu-id="5ca05-117">AuditLog.Read.All, Directory.Read.All</span></span> | 
 
-<span data-ttu-id="99297-118">此外，应用还必须向 Azure AD [正确注册](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。</span><span class="sxs-lookup"><span data-stu-id="99297-118">In addition, apps must be [properly registered](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.</span></span>
+<span data-ttu-id="5ca05-118">此外，应用还必须向 Azure AD [正确注册](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。</span><span class="sxs-lookup"><span data-stu-id="5ca05-118">In addition, apps must be [properly registered](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="99297-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="99297-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5ca05-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5ca05-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /auditLogs/signIns/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="99297-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="99297-120">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="5ca05-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="5ca05-120">Optional query parameters</span></span>
 
-<span data-ttu-id="99297-121">此方法支持 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="99297-121">This method supports OData query parameters to help customize the response.</span></span> <span data-ttu-id="99297-122">关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query_parameters)。</span><span class="sxs-lookup"><span data-stu-id="99297-122">For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).</span></span>
+<span data-ttu-id="5ca05-121">此方法支持 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="5ca05-121">This method supports OData query parameters to help customize the response.</span></span> <span data-ttu-id="5ca05-122">关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query_parameters)。</span><span class="sxs-lookup"><span data-stu-id="5ca05-122">For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="99297-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="99297-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="5ca05-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="5ca05-123">Request headers</span></span>
 
-| <span data-ttu-id="99297-124">名称</span><span class="sxs-lookup"><span data-stu-id="99297-124">Name</span></span>      |<span data-ttu-id="99297-125">说明</span><span class="sxs-lookup"><span data-stu-id="99297-125">Description</span></span>|
+| <span data-ttu-id="5ca05-124">名称</span><span class="sxs-lookup"><span data-stu-id="5ca05-124">Name</span></span>      |<span data-ttu-id="5ca05-125">说明</span><span class="sxs-lookup"><span data-stu-id="5ca05-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="99297-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="99297-126">Authorization</span></span> | <span data-ttu-id="99297-127">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="99297-127">Bearer {token}</span></span> |
+| <span data-ttu-id="5ca05-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="5ca05-126">Authorization</span></span> | <span data-ttu-id="5ca05-127">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="5ca05-127">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="99297-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="99297-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="5ca05-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="5ca05-128">Request body</span></span>
 
-<span data-ttu-id="99297-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="99297-129">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="5ca05-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="5ca05-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="99297-130">响应</span><span class="sxs-lookup"><span data-stu-id="99297-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5ca05-130">响应</span><span class="sxs-lookup"><span data-stu-id="5ca05-130">Response</span></span>
 
-<span data-ttu-id="99297-131">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [登录](../resources/signin.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="99297-131">If successful, this method returns a `200 OK` response code and a [signIn](../resources/signin.md) object in the response body.</span></span>
+<span data-ttu-id="5ca05-131">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [登录](../resources/signin.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="5ca05-131">If successful, this method returns a `200 OK` response code and a [signIn](../resources/signin.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="99297-132">示例</span><span class="sxs-lookup"><span data-stu-id="99297-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="5ca05-132">示例</span><span class="sxs-lookup"><span data-stu-id="5ca05-132">Examples</span></span>
 
-### <a name="example-1-user-signs-in-using-mfa-which-is-triggered-by-a-conditional-access-policy-primary-authentication-is-through-fido"></a><span data-ttu-id="99297-133">示例1：用户使用 MFA 登录，这是由条件访问策略触发的。</span><span class="sxs-lookup"><span data-stu-id="99297-133">Example 1: User signs in using MFA, which is triggered by a conditional access policy.</span></span> <span data-ttu-id="99297-134">主要身份验证是通过 FIDO。</span><span class="sxs-lookup"><span data-stu-id="99297-134">Primary authentication is through FIDO.</span></span>
+### <a name="example-1-user-signs-in-using-mfa-which-is-triggered-by-a-conditional-access-policy-primary-authentication-is-through-fido"></a><span data-ttu-id="5ca05-133">示例1：用户使用 MFA 登录，这是由条件访问策略触发的。</span><span class="sxs-lookup"><span data-stu-id="5ca05-133">Example 1: User signs in using MFA, which is triggered by a conditional access policy.</span></span> <span data-ttu-id="5ca05-134">主要身份验证是通过 FIDO。</span><span class="sxs-lookup"><span data-stu-id="5ca05-134">Primary authentication is through FIDO.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="99297-135">请求</span><span class="sxs-lookup"><span data-stu-id="99297-135">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="5ca05-135">请求</span><span class="sxs-lookup"><span data-stu-id="5ca05-135">Request</span></span>
 
-<span data-ttu-id="99297-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="99297-136">The following is an example of the request.</span></span>
+<span data-ttu-id="5ca05-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5ca05-136">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="99297-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="99297-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="5ca05-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="5ca05-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signin_1"
@@ -74,23 +74,23 @@ GET /auditLogs/signIns/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="99297-138">C#</span><span class="sxs-lookup"><span data-stu-id="99297-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="5ca05-138">C#</span><span class="sxs-lookup"><span data-stu-id="5ca05-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="99297-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="99297-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="5ca05-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5ca05-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="99297-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="99297-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="5ca05-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5ca05-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signin-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="99297-141">响应</span><span class="sxs-lookup"><span data-stu-id="99297-141">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="5ca05-141">响应</span><span class="sxs-lookup"><span data-stu-id="5ca05-141">Response</span></span>
 
-<span data-ttu-id="99297-142">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="99297-142">The following is an example of the response.</span></span>
+<span data-ttu-id="5ca05-142">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="5ca05-142">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -211,14 +211,14 @@ Content-length: 211
 }
 ```
 
-### <a name="example-2-user-signs-in-with-only-primary-authentication-primary-authentication-is-through-cloud-password"></a><span data-ttu-id="99297-143">示例2：用户仅使用主身份验证进行登录。</span><span class="sxs-lookup"><span data-stu-id="99297-143">Example 2: User signs in with only primary authentication.</span></span> <span data-ttu-id="99297-144">主要身份验证通过云密码。</span><span class="sxs-lookup"><span data-stu-id="99297-144">Primary authentication is through cloud password.</span></span>
+### <a name="example-2-user-signs-in-with-only-primary-authentication-primary-authentication-is-through-cloud-password"></a><span data-ttu-id="5ca05-143">示例2：用户仅使用主身份验证进行登录。</span><span class="sxs-lookup"><span data-stu-id="5ca05-143">Example 2: User signs in with only primary authentication.</span></span> <span data-ttu-id="5ca05-144">主要身份验证通过云密码。</span><span class="sxs-lookup"><span data-stu-id="5ca05-144">Primary authentication is through cloud password.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="99297-145">请求</span><span class="sxs-lookup"><span data-stu-id="99297-145">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="5ca05-145">请求</span><span class="sxs-lookup"><span data-stu-id="5ca05-145">Request</span></span>
 
-<span data-ttu-id="99297-146">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="99297-146">The following is an example of the request.</span></span>
+<span data-ttu-id="5ca05-146">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="5ca05-146">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="99297-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="99297-147">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="5ca05-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="5ca05-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signin_2"
@@ -226,24 +226,24 @@ Content-length: 211
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="99297-148">C#</span><span class="sxs-lookup"><span data-stu-id="99297-148">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="5ca05-148">C#</span><span class="sxs-lookup"><span data-stu-id="5ca05-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="99297-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="99297-149">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="5ca05-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5ca05-149">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="99297-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="99297-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="5ca05-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5ca05-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signin-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="99297-151">响应</span><span class="sxs-lookup"><span data-stu-id="99297-151">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="5ca05-151">响应</span><span class="sxs-lookup"><span data-stu-id="5ca05-151">Response</span></span>
 
-<span data-ttu-id="99297-152">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="99297-152">The following is an example of the response.</span></span>
+<span data-ttu-id="5ca05-152">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="5ca05-152">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -338,3 +338,5 @@ Content-length: 211
   ]
 }
 ```
+
+

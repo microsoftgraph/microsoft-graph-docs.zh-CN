@@ -3,35 +3,35 @@ title: 更新 securityBaselineDeviceState
 description: 更新 securityBaselineDeviceState 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c22daa6ea3b71726993167d1df12df83d28d5d7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 18efc12260a92a258edde460d2ebe3875f50e86d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43427340"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040869"
 ---
-# <a name="update-securitybaselinedevicestate"></a><span data-ttu-id="384e8-103">更新 securityBaselineDeviceState</span><span class="sxs-lookup"><span data-stu-id="384e8-103">Update securityBaselineDeviceState</span></span>
+# <a name="update-securitybaselinedevicestate"></a><span data-ttu-id="f785b-103">更新 securityBaselineDeviceState</span><span class="sxs-lookup"><span data-stu-id="f785b-103">Update securityBaselineDeviceState</span></span>
 
-<span data-ttu-id="384e8-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="384e8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f785b-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f785b-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="384e8-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="384e8-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="f785b-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="f785b-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="384e8-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="384e8-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f785b-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="f785b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="384e8-107">更新[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="384e8-107">Update the properties of a [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md) object.</span></span>
+<span data-ttu-id="f785b-107">更新 [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="f785b-107">Update the properties of a [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="384e8-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="384e8-108">Prerequisites</span></span>
-<span data-ttu-id="384e8-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="384e8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="f785b-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="f785b-108">Prerequisites</span></span>
+<span data-ttu-id="f785b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f785b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="384e8-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="384e8-111">Permission type</span></span>|<span data-ttu-id="384e8-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="384e8-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="f785b-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="f785b-111">Permission type</span></span>|<span data-ttu-id="f785b-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="f785b-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="384e8-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="384e8-113">Delegated (work or school account)</span></span>|<span data-ttu-id="384e8-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="384e8-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="384e8-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="384e8-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="384e8-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="384e8-116">Not supported.</span></span>|
-|<span data-ttu-id="384e8-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="384e8-117">Application</span></span>|<span data-ttu-id="384e8-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="384e8-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="f785b-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f785b-113">Delegated (work or school account)</span></span>|<span data-ttu-id="f785b-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f785b-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="f785b-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f785b-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f785b-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="f785b-116">Not supported.</span></span>|
+|<span data-ttu-id="f785b-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="f785b-117">Application</span></span>|<span data-ttu-id="f785b-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f785b-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="384e8-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="384e8-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f785b-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f785b-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,35 +40,35 @@ ms.locfileid: "43427340"
 PATCH /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.securityBaselineTemplate/deviceStates/{securityBaselineDeviceStateId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="384e8-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="384e8-120">Request headers</span></span>
-|<span data-ttu-id="384e8-121">标头</span><span class="sxs-lookup"><span data-stu-id="384e8-121">Header</span></span>|<span data-ttu-id="384e8-122">值</span><span class="sxs-lookup"><span data-stu-id="384e8-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f785b-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="f785b-120">Request headers</span></span>
+|<span data-ttu-id="f785b-121">标头</span><span class="sxs-lookup"><span data-stu-id="f785b-121">Header</span></span>|<span data-ttu-id="f785b-122">值</span><span class="sxs-lookup"><span data-stu-id="f785b-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="384e8-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="384e8-123">Authorization</span></span>|<span data-ttu-id="384e8-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="384e8-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="384e8-125">接受</span><span class="sxs-lookup"><span data-stu-id="384e8-125">Accept</span></span>|<span data-ttu-id="384e8-126">application/json</span><span class="sxs-lookup"><span data-stu-id="384e8-126">application/json</span></span>|
+|<span data-ttu-id="f785b-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="f785b-123">Authorization</span></span>|<span data-ttu-id="f785b-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="f785b-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="f785b-125">接受</span><span class="sxs-lookup"><span data-stu-id="f785b-125">Accept</span></span>|<span data-ttu-id="f785b-126">application/json</span><span class="sxs-lookup"><span data-stu-id="f785b-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="384e8-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="384e8-127">Request body</span></span>
-<span data-ttu-id="384e8-128">在请求正文中，提供[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="384e8-128">In the request body, supply a JSON representation for the [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f785b-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="f785b-127">Request body</span></span>
+<span data-ttu-id="f785b-128">在请求正文中，提供 [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f785b-128">In the request body, supply a JSON representation for the [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md) object.</span></span>
 
-<span data-ttu-id="384e8-129">下表显示创建[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="384e8-129">The following table shows the properties that are required when you create the [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md).</span></span>
+<span data-ttu-id="f785b-129">下表显示创建 [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="f785b-129">The following table shows the properties that are required when you create the [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md).</span></span>
 
-|<span data-ttu-id="384e8-130">属性</span><span class="sxs-lookup"><span data-stu-id="384e8-130">Property</span></span>|<span data-ttu-id="384e8-131">类型</span><span class="sxs-lookup"><span data-stu-id="384e8-131">Type</span></span>|<span data-ttu-id="384e8-132">说明</span><span class="sxs-lookup"><span data-stu-id="384e8-132">Description</span></span>|
+|<span data-ttu-id="f785b-130">属性</span><span class="sxs-lookup"><span data-stu-id="f785b-130">Property</span></span>|<span data-ttu-id="f785b-131">类型</span><span class="sxs-lookup"><span data-stu-id="f785b-131">Type</span></span>|<span data-ttu-id="f785b-132">说明</span><span class="sxs-lookup"><span data-stu-id="f785b-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="384e8-133">id</span><span class="sxs-lookup"><span data-stu-id="384e8-133">id</span></span>|<span data-ttu-id="384e8-134">String</span><span class="sxs-lookup"><span data-stu-id="384e8-134">String</span></span>|<span data-ttu-id="384e8-135">实体的唯一标识符</span><span class="sxs-lookup"><span data-stu-id="384e8-135">Unique identifier of the entity</span></span>|
-|<span data-ttu-id="384e8-136">managedDeviceId</span><span class="sxs-lookup"><span data-stu-id="384e8-136">managedDeviceId</span></span>|<span data-ttu-id="384e8-137">String</span><span class="sxs-lookup"><span data-stu-id="384e8-137">String</span></span>|<span data-ttu-id="384e8-138">Intune 设备 id</span><span class="sxs-lookup"><span data-stu-id="384e8-138">Intune device id</span></span>|
-|<span data-ttu-id="384e8-139">deviceDisplayName</span><span class="sxs-lookup"><span data-stu-id="384e8-139">deviceDisplayName</span></span>|<span data-ttu-id="384e8-140">String</span><span class="sxs-lookup"><span data-stu-id="384e8-140">String</span></span>|<span data-ttu-id="384e8-141">设备的显示名称</span><span class="sxs-lookup"><span data-stu-id="384e8-141">Display name of the device</span></span>|
-|<span data-ttu-id="384e8-142">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="384e8-142">userPrincipalName</span></span>|<span data-ttu-id="384e8-143">String</span><span class="sxs-lookup"><span data-stu-id="384e8-143">String</span></span>|<span data-ttu-id="384e8-144">用户主体名称</span><span class="sxs-lookup"><span data-stu-id="384e8-144">User Principal Name</span></span>|
-|<span data-ttu-id="384e8-145">state</span><span class="sxs-lookup"><span data-stu-id="384e8-145">state</span></span>|[<span data-ttu-id="384e8-146">securityBaselineComplianceState</span><span class="sxs-lookup"><span data-stu-id="384e8-146">securityBaselineComplianceState</span></span>](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|<span data-ttu-id="384e8-147">安全基准合规性状态。</span><span class="sxs-lookup"><span data-stu-id="384e8-147">Security baseline compliance state.</span></span> <span data-ttu-id="384e8-148">可取值为：`unknown`、`secure`、`notApplicable`、`notSecure`、`error`、`conflict`。</span><span class="sxs-lookup"><span data-stu-id="384e8-148">Possible values are: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.</span></span>|
-|<span data-ttu-id="384e8-149">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="384e8-149">lastReportedDateTime</span></span>|<span data-ttu-id="384e8-150">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="384e8-150">DateTimeOffset</span></span>|<span data-ttu-id="384e8-151">策略报告的上次修改日期时间</span><span class="sxs-lookup"><span data-stu-id="384e8-151">Last modified date time of the policy report</span></span>|
+|<span data-ttu-id="f785b-133">id</span><span class="sxs-lookup"><span data-stu-id="f785b-133">id</span></span>|<span data-ttu-id="f785b-134">String</span><span class="sxs-lookup"><span data-stu-id="f785b-134">String</span></span>|<span data-ttu-id="f785b-135">实体的唯一标识符</span><span class="sxs-lookup"><span data-stu-id="f785b-135">Unique identifier of the entity</span></span>|
+|<span data-ttu-id="f785b-136">managedDeviceId</span><span class="sxs-lookup"><span data-stu-id="f785b-136">managedDeviceId</span></span>|<span data-ttu-id="f785b-137">String</span><span class="sxs-lookup"><span data-stu-id="f785b-137">String</span></span>|<span data-ttu-id="f785b-138">Intune 设备 id</span><span class="sxs-lookup"><span data-stu-id="f785b-138">Intune device id</span></span>|
+|<span data-ttu-id="f785b-139">deviceDisplayName</span><span class="sxs-lookup"><span data-stu-id="f785b-139">deviceDisplayName</span></span>|<span data-ttu-id="f785b-140">String</span><span class="sxs-lookup"><span data-stu-id="f785b-140">String</span></span>|<span data-ttu-id="f785b-141">设备的显示名称</span><span class="sxs-lookup"><span data-stu-id="f785b-141">Display name of the device</span></span>|
+|<span data-ttu-id="f785b-142">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="f785b-142">userPrincipalName</span></span>|<span data-ttu-id="f785b-143">String</span><span class="sxs-lookup"><span data-stu-id="f785b-143">String</span></span>|<span data-ttu-id="f785b-144">用户主体名称</span><span class="sxs-lookup"><span data-stu-id="f785b-144">User Principal Name</span></span>|
+|<span data-ttu-id="f785b-145">state</span><span class="sxs-lookup"><span data-stu-id="f785b-145">state</span></span>|[<span data-ttu-id="f785b-146">securityBaselineComplianceState</span><span class="sxs-lookup"><span data-stu-id="f785b-146">securityBaselineComplianceState</span></span>](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|<span data-ttu-id="f785b-147">安全基准合规性状态。</span><span class="sxs-lookup"><span data-stu-id="f785b-147">Security baseline compliance state.</span></span> <span data-ttu-id="f785b-148">可取值为：`unknown`、`secure`、`notApplicable`、`notSecure`、`error`、`conflict`。</span><span class="sxs-lookup"><span data-stu-id="f785b-148">Possible values are: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.</span></span>|
+|<span data-ttu-id="f785b-149">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="f785b-149">lastReportedDateTime</span></span>|<span data-ttu-id="f785b-150">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f785b-150">DateTimeOffset</span></span>|<span data-ttu-id="f785b-151">策略报告的上次修改日期时间</span><span class="sxs-lookup"><span data-stu-id="f785b-151">Last modified date time of the policy report</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="384e8-152">响应</span><span class="sxs-lookup"><span data-stu-id="384e8-152">Response</span></span>
-<span data-ttu-id="384e8-153">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="384e8-153">If successful, this method returns a `200 OK` response code and an updated [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f785b-152">响应</span><span class="sxs-lookup"><span data-stu-id="f785b-152">Response</span></span>
+<span data-ttu-id="f785b-153">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f785b-153">If successful, this method returns a `200 OK` response code and an updated [securityBaselineDeviceState](../resources/intune-deviceintent-securitybaselinedevicestate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="384e8-154">示例</span><span class="sxs-lookup"><span data-stu-id="384e8-154">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f785b-154">示例</span><span class="sxs-lookup"><span data-stu-id="f785b-154">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="384e8-155">请求</span><span class="sxs-lookup"><span data-stu-id="384e8-155">Request</span></span>
-<span data-ttu-id="384e8-156">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="384e8-156">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="f785b-155">请求</span><span class="sxs-lookup"><span data-stu-id="f785b-155">Request</span></span>
+<span data-ttu-id="f785b-156">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f785b-156">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.securityBaselineTemplate/deviceStates/{securityBaselineDeviceStateId}
 Content-type: application/json
@@ -84,8 +84,8 @@ Content-length: 310
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="384e8-157">响应</span><span class="sxs-lookup"><span data-stu-id="384e8-157">Response</span></span>
-<span data-ttu-id="384e8-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="384e8-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="f785b-157">响应</span><span class="sxs-lookup"><span data-stu-id="f785b-157">Response</span></span>
+<span data-ttu-id="f785b-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f785b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -101,6 +101,9 @@ Content-Length: 359
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
+
+
+
 
 
 
