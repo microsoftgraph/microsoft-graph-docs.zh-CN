@@ -1,28 +1,28 @@
 ---
 title: 使用 Planner REST API
-description: 你可以使用 Microsoft Graph 中的 Planner API 创建任务并将其分配给 Office 365 中某个组的用户。
+description: 可以使用 Microsoft Graph 中的 Planner API 创建任务，并将其分配给 Microsoft 365 中某个组的用户。
 author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: c18262f6ae437d674214845228876177c65a62f5
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 68937861670ec9299b24dc00a881b01c77f5787e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618940"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094972"
 ---
 # <a name="use-the-planner-rest-api"></a>使用 Planner REST API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-你可以使用 Microsoft Graph 中的 Planner API 创建任务并将其分配给 Office 365 中某个组的用户。
+可以使用 Microsoft Graph 中的 Planner API 创建任务，并将其分配给 Microsoft 365 中某个组的用户。
 
-开始尝试 Planner API 之前，需要了解 Planner API 中主对象互相之间以及与 Office 365 组的关系。
+在开始使用 Planner API 之前，了解主对象相互之间以及与 Microsoft 365 组之间的关系将会有所帮助。
 
-## <a name="office-365-groups"></a>Office 365 组
+## <a name="microsoft-365-groups"></a>Microsoft 365 组
 
-Office 365 组是 Planner API 中的计划的所有者。
+Microsoft 365 组是 Planner API 中的计划的所有者。
 若要[获取组所有的计划](../api/plannergroup-list-plans.md)，请发出以下 HTTP 请求。
 
 ``` http
@@ -35,7 +35,8 @@ GET /groups/{group-id}/planner/plans
 
 ## <a name="plans"></a>计划
 
-[计划](plannerplan.md)是[任务](plannertask.md)的容器。 若要[在计划中创建一个任务](../api/planner-post-tasks.md)，在创建任务时，将任务对象中的 `planId` 属性设置为计划的 ID。
+[计划](plannerplan.md)是[任务](plannertask.md)的容器。
+若要[在计划中创建一个任务](../api/planner-post-tasks.md)，在创建任务时，将任务对象中的 `planId` 属性设置为计划的 ID。
 目前无法在没有计划的情况下创建任务。
 若要[检索计划的任务](../api/plannerplan-list-tasks.md)，请发出以下 HTTP 请求。
 
@@ -47,7 +48,7 @@ GET /planner/plans/{plan-id}/tasks
 
 可以通过在任务对象的 [assignments](plannerassignments.md) 属性中添加[分配](plannerassignment.md)将每个任务分配给一位用户。要分配任务的用户 ID 是 `assignments` 上的开放属性的名称，且必须指定分配上的 `orderHint` 属性。
 
-## <a name="task-and-plan-details"></a>任务和计划详细信息 
+## <a name="task-and-plan-details"></a>任务和计划详细信息
 
 Planner 资源会排列到基本对象和详细对象中。基本对象提供对适合列表视图的资源的通用属性的访问权限，而详细对象提供对适合深化视图的资源的大型属性的访问权限。
 
@@ -67,7 +68,7 @@ Planner 资源会排列到基本对象和详细对象中。基本对象提供对
 
 所有排序均由 [Planner 顺序提示](planner-order-hint-format.md)中介绍的原则指定。
 
-## <a name="delta">使用 delta 查询跟踪更改</a>
+## <a name=""></a><a name="delta">使用 delta 查询跟踪更改</a>
 
 Planner 的 delta 查询功能支持查询用户订阅的对象。
 
@@ -77,9 +78,9 @@ Planner 的 delta 查询功能支持查询用户订阅的对象。
 | :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | 任务                 | <ul><li>由用户创建</li><li>已分配给用户</li><li>属于用户拥有的计划</li><li>包含在通过计划的 **SharedWith** 集合与用户共享的计划中</li> |
 | 计划                 | <ul><li>通过计划的 **SharedWith** 集合与用户共享</li></ul>                                                                                                                     |
-| Buckets               | <ul><li>包含在通过计划的 **SharedWith** 集合与用户共享的计划中</li></ul>                                                                                                 |  |
+| Buckets               | <ul><li>包含在通过计划的 **SharedWith** 集合与用户共享的计划中</li></ul>                                                                                                 |
 
-### <a name="objectcache">填充 delta 查询的对象缓存</a>
+### <a name=""></a><a name="objectcache">填充 delta 查询的对象缓存</a>
 
 如果要使用 Planner delta 查询 API，请保留用户有兴趣查看的对象的本地缓存，以便应用 delta 响应源中的更改。
 
@@ -122,7 +123,8 @@ Planner 的 delta 查询调用流如下所示：
 ## <a name="planner-resource-versioning"></a>Planner 资源版本控制
 
 Planner 使用 **etag** 对所有资源进行版本控制。 这些 **etag** 在每个资源上返回 `@odata.etag` 属性。 `PATCH` 和 `DELETE` 请求要求使用 `If-Match` 标头指定客户端已知的最后一个 **etag**。
-如果目标更改与相同资源上的 Planner 服务接受的较新更改不冲突，则 Planner 允许对资源的旧版本进行更改。 客户端可以通过计算顺序字符串比较中的较大 **etag** 值，确定在相同的资源中，哪个 **etag** 较新。 每个资源都有唯一的 **etag**。 不同资源的 etag 值（包括具有包含关系的 etag 值）无法比较。
+如果目标更改与相同资源上的 Planner 服务接受的较新更改不冲突，则 Planner 允许对资源的旧版本进行更改。 客户端可以通过计算顺序字符串比较中的较大 **etag** 值，确定在相同的资源中，哪个 **etag** 较新。
+每个资源都有唯一的 **etag**。 不同资源的 etag 值（包括具有包含关系的 etag 值）无法比较。
 按预期，客户端应用程序需要通过读取项的最新版本处理与[错误代码](/graph/errors) **409** 和 **412** 相关的版本控制，并解决冲突的更改。
 
 ## <a name="common-planner-error-conditions"></a>常见的 Planner 错误条件
@@ -160,8 +162,11 @@ Planner 使用 **etag** 对所有资源进行版本控制。 这些 **etag** 在
 | MaximumContextsOnPlan         | [plannerPlan](plannerplan.md) 资源上的 `contexts` 属性包含的值过多。                                                                                                          |
 | MaximumPlannerPlans       | 组已包含一个计划。 目前，组只能包含一个计划。 **注意：** 某些 Microsoft 应用程序可能超出此限制。 将来，我们会将此功能扩展到所有应用程序。                                                                                                      |
 
-### <a name="412-precondition-failed"></a>412 前提条件不满足 
+### <a name="412-precondition-failed"></a>412 前提条件不满足
 
 所有 Planer API `POST`、`PATCH` 和 `DELETE` 请求都需要使用受请求约束的资源的最后一个已知 etag 值指定 `If-Match` 标头。
 如果请求中指定的 etag 值不再匹配服务中资源的版本，也会返回 412 状态代码。 在这种情况下，客户端应该再次读取资源并获取新的 etag。
+
+## <a name="whats-new"></a>最近更新
+了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
 

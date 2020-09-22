@@ -3,14 +3,14 @@ title: mobileAppAssignmentSettings 资源类型
 description: 包含用于为组分配移动应用的属性的抽象类。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dcd4e0b9655838d7b74e9b0d9bf35245a118c905
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c3b0e9df047250e6711a6a1c9091dcb98c822fd4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457860"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094412"
 ---
 # <a name="mobileappassignmentsettings-resource-type"></a>mobileAppAssignmentSettings 资源类型
 
@@ -39,6 +39,8 @@ ms.locfileid: "43457860"
   "@odata.type": "#microsoft.graph.mobileAppAssignmentSettings"
 }
 ```
+
+
 
 
 

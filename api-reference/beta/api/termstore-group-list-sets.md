@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f4d35decdae3303576565e2844206c7bfe16cf23
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 951a1e0522695a81061142dc7f76639ed4bb353c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330264"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092963"
 ---
 # <a name="list-sets"></a>列表集
 命名空间： termStore
@@ -19,7 +19,7 @@ ms.locfileid: "47330264"
 
 获取 [set](../resources/termstore-set.md) 对象及其属性的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
@@ -126,3 +126,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

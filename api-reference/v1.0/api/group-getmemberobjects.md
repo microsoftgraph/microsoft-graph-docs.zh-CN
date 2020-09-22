@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 627d8528216f678ec1f7d5eabc1e8126e7451f41
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c1da59fa3644b8ca1ab3d06f71cfba3f61f5abcf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43316745"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094692"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 
@@ -117,3 +117,4 @@ Content-length: 39
   "suppressions": [
   ]
 }-->
+

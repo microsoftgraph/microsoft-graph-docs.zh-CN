@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e742dd0e785a94b33a57e55b50a00aab0c207ab4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5fe43e317bd0231bb8d2e87143e4230c8719ce9c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533521"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093992"
 ---
 # <a name="teammessagingsettings-resource-type"></a>teamMessagingSettings 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "42533521"
 
 
 
-用于配置[团队](team.md)中的消息传递和提及的设置。
+用于配置 [团队](team.md)中的消息传递和提及的设置。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -57,3 +57,4 @@ ms.locfileid: "42533521"
   "section": "documentation",
   "tocPath": ""
 }-->
+

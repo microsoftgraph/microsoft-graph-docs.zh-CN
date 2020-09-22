@@ -3,52 +3,52 @@ title: kerberosSingleSignOnExtension 资源类型
 description: 表示 Kerberos 类型的单一登录扩展配置文件。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c17165a224939156916c78a5ed9f19e79052f1da
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dfee87de0b8067585b84c6071cd0ab0c4b4abb86
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440000"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092557"
 ---
 # <a name="kerberossinglesignonextension-resource-type"></a>kerberosSingleSignOnExtension 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示 Kerberos 类型的单一登录扩展配置文件。
 
 
-继承自[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)
+继承自 [singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|型|String|获取或设置此配置文件的区分大小写的领域名称。|
-|域|String 集合|获取或设置应用程序扩展为其执行 SSO 的主机名或域名的列表。|
-|blockAutomaticLogin|Boolean|启用或禁用密钥链用法。|
-|cacheName|String|获取或设置要用于此配置文件的 Kerberos 缓存的通用安全服务名称。|
-|credentialBundleIdAccessControlList|String 集合|获取或设置允许访问 Kerberos 票证授予票证的应用捆绑包 Id 的列表。|
-|domainRealms|String 集合|获取或设置自定义域领域映射的领域列表。 领域区分大小写。|
-|isDefaultRealm|Boolean|如果为 true，则将选择此配置文件的领域作为默认领域。 如果配置了多个 Kerberos 类型配置文件，则必须执行此步骤。|
-|passwordBlockModification|Boolean|启用或禁用密码更改。|
+|型|字符串|获取或设置此配置文件的区分大小写的领域名称。|
+|域|字符串集合|获取或设置应用程序扩展为其执行 SSO 的主机名或域名的列表。|
+|blockAutomaticLogin|布尔|启用或禁用密钥链用法。|
+|cacheName|字符串|获取或设置要用于此配置文件的 Kerberos 缓存的通用安全服务名称。|
+|credentialBundleIdAccessControlList|字符串集合|获取或设置允许访问 Kerberos 票证授予票证的应用捆绑包 Id 的列表。|
+|domainRealms|字符串集合|获取或设置自定义域领域映射的领域列表。 领域区分大小写。|
+|isDefaultRealm|布尔|如果为 true，则将选择此配置文件的领域作为默认领域。 如果配置了多个 Kerberos 类型配置文件，则必须执行此步骤。|
+|passwordBlockModification|布尔|启用或禁用密码更改。|
 |passwordExpirationDays|Int32|替代默认密码到期天数（天）。 对于大多数域，此值是自动计算的。|
-|passwordExpirationNotificationDays|Int32|获取或设置通知用户其密码将到期的天数（默认值为15）。|
-|userPrincipalName|String|获取或设置要用于此配置文件的原理用户名。 不需要包含领域名称。|
-|passwordRequireActiveDirectoryComplexity|Boolean|启用或禁用密码是否必须符合 Active Directory 的复杂性要求。|
+|passwordExpirationNotificationDays|Int32|获取或设置通知用户其密码将到期 (默认值为 15) 的天数。|
+|userPrincipalName|字符串|获取或设置要用于此配置文件的原理用户名。 不需要包含领域名称。|
+|passwordRequireActiveDirectoryComplexity|布尔|启用或禁用密码是否必须符合 Active Directory 的复杂性要求。|
 |passwordPreviousPasswordBlockCount|Int32|获取或设置要阻止的以前密码的数目。|
 |passwordMinimumLength|Int32|获取或设置密码的最小长度。|
 |passwordMinimumAgeDays|Int32|获取或设置用户可以再次更改密码之前的最小天数。|
-|passwordRequirementsDescription|String|获取或设置密码复杂性要求的说明。|
-|requireUserPresence|Boolean|获取或设置是否需要通过触摸 ID、面孔 ID 或密码进行身份验证以访问密钥链条目。|
-|activeDirectorySiteCode|String|获取或设置 Active Directory 站点。|
-|passwordEnableLocalSync|Boolean|启用或禁用密码同步。 这不会影响使用 macOS 上的移动帐户登录的用户。|
-|blockActiveDirectorySiteAutoDiscovery|Boolean|启用或禁用 Kerberos 扩展是否可以自动确定其站点名称。|
-|passwordChangeUrl|String|获取或设置用户启动密码更改时将发送到的 URL。|
+|passwordRequirementsDescription|字符串|获取或设置密码复杂性要求的说明。|
+|requireUserPresence|布尔|获取或设置是否需要通过触摸 ID、面孔 ID 或密码进行身份验证以访问密钥链条目。|
+|activeDirectorySiteCode|字符串|获取或设置 Active Directory 站点。|
+|passwordEnableLocalSync|布尔|启用或禁用密码同步。 这不会影响使用 macOS 上的移动帐户登录的用户。|
+|blockActiveDirectorySiteAutoDiscovery|布尔|启用或禁用 Kerberos 扩展是否可以自动确定其站点名称。|
+|passwordChangeUrl|字符串|获取或设置用户启动密码更改时将发送到的 URL。|
 
 ## <a name="relationships"></a>关系
 无
@@ -92,6 +92,9 @@ ms.locfileid: "43440000"
   "passwordChangeUrl": "String"
 }
 ```
+
+
+
 
 
 

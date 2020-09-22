@@ -3,20 +3,20 @@ title: win32LobAppRule 资源类型
 description: 用于存储 Win32 LOB 应用程序的检测或要求规则数据的基本复杂类型。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ffde7ad4549d3807602e7d02f088107e56541a44
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 78873e384208a9825ae02432c22cd55e84921a9d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790290"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092732"
 ---
 # <a name="win32lobapprule-resource-type"></a>win32LobAppRule 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -43,6 +43,9 @@ ms.locfileid: "44790290"
   "ruleType": "String"
 }
 ```
+
+
+
 
 
 

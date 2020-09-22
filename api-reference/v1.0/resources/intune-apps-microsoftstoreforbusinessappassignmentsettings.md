@@ -3,14 +3,14 @@ title: microsoftStoreForBusinessAppAssignmentSettings 资源类型
 description: 包含用于为组分配适用于企业的 Microsoft 应用商店移动应用的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dbfb271e8cfb0d019a0e127d1ad81ee033544a17
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 32186cd4c5b4321d668e350b5f03ec6e127399cd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43457888"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094454"
 ---
 # <a name="microsoftstoreforbusinessappassignmentsettings-resource-type"></a>microsoftStoreForBusinessAppAssignmentSettings 资源类型
 
@@ -44,6 +44,8 @@ ms.locfileid: "43457888"
   "useDeviceContext": true
 }
 ```
+
+
 
 
 

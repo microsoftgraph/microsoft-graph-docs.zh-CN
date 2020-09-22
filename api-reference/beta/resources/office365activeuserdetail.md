@@ -5,16 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 7027d581e9dfd883a7dca6f91d3a1d56184097ac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 05a47c175e7e9ed6334e691f91556190e459eec0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522461"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092417"
 ---
 # <a name="office365activeuserdetail-resource-type"></a>office365ActiveUserDetail 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 ## <a name="properties"></a>属性
 
@@ -43,7 +43,7 @@ ms.locfileid: "42522461"
 | skypeForBusinessLicenseAssignDate | 日期              | 为用户分配 Skype For Business 许可证的最后一个日期。 |
 | yammerLicenseAssignDate           | 日期              | 向用户分配 Yammer 许可证的最后日期。 |
 | teamsLicenseAssignDate            | 日期              | 向用户分配团队许可证的最后日期。 |
-| assignedProducts                  | String 集合 | 为用户分配的所有产品。  |
+| assignedProducts                  | 字符串集合 | 为用户分配的所有产品。  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -82,3 +82,5 @@ ms.locfileid: "42522461"
   "assignedProducts": ["String"]
 }
 ```
+
+

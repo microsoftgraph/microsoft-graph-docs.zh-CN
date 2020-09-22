@@ -5,23 +5,23 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 312acf937fdb90940a640d35c6a19c88981e842c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 40b1e21933adedaf8d1c4e16aa91d69c4af17668
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533556"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094041"
 ---
 # <a name="teamclasssettings-resource-type"></a>teamClassSettings 资源类型
 
 命名空间：microsoft.graph
 
-表示[团队](team.md)的特定于类的属性。 仅当团队代表班级时可用。
+表示 [团队](team.md)的特定于类的属性。 仅当团队代表班级时可用。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|notifyGuardiansAboutAssignments|Boolean|如果设置为`true`，则允许将每周分配摘要电子邮件发送给父/监护人，前提是租户管理员已启用全局设置。|
+|notifyGuardiansAboutAssignments|Boolean|如果设置为 `true` ，则允许将每周分配摘要电子邮件发送给父/监护人，前提是租户管理员已启用全局设置。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -50,3 +50,4 @@ ms.locfileid: "42533556"
   "suppressions": []
 }
 -->
+

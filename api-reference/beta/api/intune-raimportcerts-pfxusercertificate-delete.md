@@ -3,24 +3,24 @@ title: 删除 pfxUserCertificate
 description: 删除 pfxUserCertificate。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a36ab5d9e2fae3cefb1922569ec6a9a14955d50
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5f129e4a5f0a5247261bc2cdb085cbbb40637f3b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437687"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093152"
 ---
 # <a name="delete-pfxusercertificate"></a>删除 pfxUserCertificate
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)。
+删除 [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -65,6 +65,9 @@ DELETE https://graph.microsoft.com/beta/pfxUserCertificates/{pfxUserCertificates
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

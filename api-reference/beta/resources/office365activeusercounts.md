@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 4841377ba8b9aa5a94ca97b50847517be5b2f0cc
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 8d640bbb3f49c95902134893f1eba4b4064ccca5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898070"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092452"
 ---
 # <a name="office365activeusercounts-resource-type"></a>office365ActiveUserCounts 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "44898070"
 | yammer            | Int64  | Yammer 中的活动用户数。 任何可以发布、阅读或赞邮件的用户都被视为活动用户。 |
 | 协作             | Int64  | Microsoft 团队中的活动用户数。 任何在团队频道中投递了邮件、在私人聊天会话中发送的邮件或参与会议或呼叫的用户都被视为活动用户。 |
 | reportDate        | 日期   | 用户数处于活动状态的日期。 |
-| reportPeriod      | String | 报告覆盖的天数。    |
+| reportPeriod      | 字符串 | 报告覆盖的天数。    |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -54,3 +54,5 @@ ms.locfileid: "44898070"
   "reportPeriod": "String"
 }
 ```
+
+

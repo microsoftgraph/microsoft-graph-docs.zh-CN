@@ -5,16 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: f07743a592753daff2670478c6f2fe18207f6013
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c67de6592d32c15e7d64112ce9ac31b6a5d4c41
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522454"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092424"
 ---
 # <a name="office365groupsactivitycounts-resource-type"></a>office365GroupsActivityCounts 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 ## <a name="properties"></a>属性
 
@@ -26,7 +26,7 @@ ms.locfileid: "42522454"
 | yammerMessagesRead     | Int64  | Yammer 组中读取的邮件数。 |
 | yammerMessagesLiked    | Int64  | Yammer 组中的已赞邮件数。 |
 | reportDate             | 日期   | 向组邮箱或邮件中发送了大量电子邮件的日期已在 Yammer 组中投递、读取或赞 |
-| reportPeriod           | String | 报告覆盖的天数。    |
+| reportPeriod           | 字符串 | 报告覆盖的天数。    |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -48,3 +48,5 @@ ms.locfileid: "42522454"
   "reportPeriod": "String"
 }
 ```
+
+

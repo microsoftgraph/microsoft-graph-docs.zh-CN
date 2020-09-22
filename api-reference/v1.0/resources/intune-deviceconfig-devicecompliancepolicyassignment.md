@@ -3,14 +3,14 @@ title: deviceCompliancePolicyAssignment 资源类型
 description: 设备符合性策略分配。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a83011ab27fde9890895ec86e499477d1fb04929
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 26aeffe9c98d641b15b1e50d651a33524461a422
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448882"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094265"
 ---
 # <a name="devicecompliancepolicyassignment-resource-type"></a>deviceCompliancePolicyAssignment 资源类型
 
@@ -55,6 +55,8 @@ ms.locfileid: "43448882"
   }
 }
 ```
+
+
 
 
 

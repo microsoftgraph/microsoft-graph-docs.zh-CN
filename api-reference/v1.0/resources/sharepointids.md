@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: SharePointIds 资源将存储在 SharePoint 网站或 OneDrive for Business 中的项的各种标识符分组到一个单一结构。
 doc_type: resourcePageType
-ms.openlocfilehash: d619b4b82da7c4c1d80e59b969ce5edf727ffbb8
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: 4289f2b4785ca06588722ee12c0e6620b092ddce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934890"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094167"
 ---
 # <a name="sharepointids-resource-type"></a>SharePointIds 资源类型
 
@@ -53,7 +53,7 @@ ms.locfileid: "43934890"
 | listItemUniqueId | string       | OneDrive for Business 或 SharePoint 网站中的项的唯一标识符 (guid)。
 | siteId           | string       | 项的网站集 (SPSite) 的唯一标识符 (guid)。
 | siteUrl          | string (url) | 包含项的网站的 SharePoint URL。
-| tenantId         | string       | 租赁的唯一标识符（guid）。
+| tenantId         | string       | 租赁 (guid) 的唯一标识符。
 | webId            | string       | 项的网站集 (SPWeb) 的唯一标识符 (guid)。
 
 ## <a name="remarks"></a>注解
@@ -71,3 +71,4 @@ ms.locfileid: "43934890"
   "section": "documentation",
   "tocPath": "Facets/SharepointIds"
 } -->
+

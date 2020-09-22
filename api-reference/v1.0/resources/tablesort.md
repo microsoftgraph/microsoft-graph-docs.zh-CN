@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3772d0063fc19eb3a3c46953d5c85d8085f0a72a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0d06cbc518f421802a529c17046c1670bd16cd71
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533565"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094069"
 ---
 # <a name="tablesort-resource-type"></a>TableSort 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "42533565"
 管理对 Table 对象的排序操作。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -31,9 +31,9 @@ ms.locfileid: "42533565"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|域|[WorkbookSortField](sortfield.md)集合|表示最后一次对表排序所使用的当前条件。 只读。|
+|域|[WorkbookSortField](sortfield.md) 集合|表示最后一次对表排序所使用的当前条件。 只读。|
 |matchCase|boolean|表示最后一次对表进行排序时大小写是否有影响。只读。|
-|方法|string|表示最后一次对表排序所使用的中文字符排序方法。 可能的值为： `PinYin`、 `StrokeCount`。 只读。|
+|方法|string|表示最后一次对表排序所使用的中文字符排序方法。 可能的值为： `PinYin` 、 `StrokeCount` 。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -66,3 +66,4 @@ ms.locfileid: "42533565"
   "section": "documentation",
   "tocPath": ""
 }-->
+

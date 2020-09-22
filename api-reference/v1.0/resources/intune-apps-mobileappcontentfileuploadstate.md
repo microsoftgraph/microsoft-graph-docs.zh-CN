@@ -3,14 +3,14 @@ title: mobileAppContentFileUploadState 枚举类型
 description: 包含上载请求状态的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fd0fefa3e4c5f2e0d53fb18abbd8badfdf0b15aa
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 45267bb2186b7f77e6cead6dc114a7490ade4f86
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43410867"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094349"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>mobileAppContentFileUploadState 枚举类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "43410867"
 |成员|值|说明|
 |:---|:---|:---|
 |success|0|尚未记录|
-|transientError|1|尚未记录|
-|error|双面|尚未记录|
+|transientError|1 |尚未记录|
+|error|2 |尚未记录|
 |unknown|第三章|尚未记录|
 |azureStorageUriRequestSuccess|100|尚未记录|
 |azureStorageUriRequestPending|101|尚未记录|
@@ -39,6 +39,8 @@ ms.locfileid: "43410867"
 |commitFilePending|301|尚未记录|
 |commitFileFailed|302|尚未记录|
 |commitFileTimedOut|303|尚未记录|
+
+
 
 
 

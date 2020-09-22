@@ -3,14 +3,14 @@ title: Importedwindowsautopilotdeviceidentityupload 函数
 description: 创建具有 autopilot 设备流的上载请求。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5499750978a8679753f0a1a168bee43684024a08
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4b46f8e76dbbb431af7f9d163615b3bda39ba53c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471375"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094594"
 ---
 # <a name="autopilotdevicestream-function"></a>Importedwindowsautopilotdeviceidentityupload 函数
 
@@ -48,7 +48,7 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWin
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此函数会在`200 OK`响应正文中返回响应代码和字符串。
+如果成功，此函数会在 `200 OK` 响应正文中返回响应代码和字符串。
 
 ## <a name="example"></a>示例
 
@@ -69,6 +69,9 @@ Content-Length: 48
   "value": "Autopilot Device Stream value"
 }
 ```
+
+
+
 
 
 

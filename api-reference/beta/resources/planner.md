@@ -1,38 +1,38 @@
 ---
 title: planner 资源类型
-description: '**Planner**资源是 planner 对象模型的入口点。 它返回单一实例**planner**资源。  它不包含任何可用属性。'
+description: '**Planner**资源是 planner 对象模型的入口点。 它返回单一实例 **planner** 资源。  它不包含任何可用属性。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 45dc3ee05f5cee36ac1eecc99aff03f71b93c515
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8acc6d4d7ce6e91912f9fe5cb940967def8e1078
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521826"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094951"
 ---
 # <a name="planner-resource-type"></a>planner 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Planner**资源是 planner 对象模型的入口点。 它返回单一实例**planner**资源。  它不包含任何可用属性。
+**Planner**资源是 planner 对象模型的入口点。 它返回单一实例 **planner** 资源。  它不包含任何可用属性。
 
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[创建 plannerBucket](../api/planner-post-buckets.md) |[plannerBucket](plannerbucket.md)| 通过发布到存储桶集合创建新的**plannerBucket** 。|
-|[创建 plannerPlan](../api/planner-post-plans.md) |[plannerPlan](plannerplan.md)| 通过发布到计划集合创建新的**plannerPlan** 。|
-|[创建 plannerTask](../api/planner-post-tasks.md) |[plannerTask](plannertask.md)| 通过发布到 tasks 集合创建新的**plannerTask** 。|
+|[创建 plannerBucket](../api/planner-post-buckets.md) |[plannerBucket](plannerbucket.md)| 通过发布到存储桶集合创建新的 **plannerBucket** 。|
+|[创建 plannerPlan](../api/planner-post-plans.md) |[plannerPlan](plannerplan.md)| 通过发布到计划集合创建新的 **plannerPlan** 。|
+|[创建 plannerTask](../api/planner-post-tasks.md) |[plannerTask](plannertask.md)| 通过发布到 tasks 集合创建新的 **plannerTask** 。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|String| 只读。 **Planner**资源的标识符。|
+|id|字符串| 只读。 **Planner**资源的标识符。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
@@ -73,3 +73,5 @@ ms.locfileid: "42521826"
   "suppressions": []
 }
 -->
+
+

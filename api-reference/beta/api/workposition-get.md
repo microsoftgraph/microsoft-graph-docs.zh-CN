@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 63a138ade10ff99514b227f31bdeeb5cc6ad9697
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 9a600be212907e12d03329aa3027c86d41b726ec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807610"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092954"
 ---
 # <a name="get-workposition"></a>获取 workPosition
 
@@ -20,7 +20,7 @@ ms.locfileid: "46807610"
 
 在用户的[配置文件](../resources/profile.md)中检索[workPosition](../resources/workposition.md)对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -157,3 +157,5 @@ Content-type: application/json
   "isCurrent": true
 }
 ```
+
+

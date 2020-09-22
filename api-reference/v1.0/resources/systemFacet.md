@@ -7,12 +7,12 @@ localization_priority: Normal
 description: 系统 Facet 指示对象由系统为其自己的操作进行管理。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0a8b171474bcbe3e16c383856945eb37db763a05
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 545c9a0f9499e1532d55c4609bce10aaa0ff049e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533599"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094125"
 ---
 # <a name="system-facet"></a>系统 Facet
 
@@ -41,3 +41,4 @@ ms.locfileid: "42533599"
   "section": "documentation",
   "tocPath": "Facets/System"
 } -->
+

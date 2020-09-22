@@ -3,20 +3,20 @@ title: iosVpnSecurityAssociationParameters 资源类型
 description: VPN 安全关联参数
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 85f69b9cf8e19acf09ca0ca179df6cd7fee2fbd9
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: fc1bf75fffe3f4008171320a78d1a487cdd0771a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793897"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092662"
 ---
 # <a name="iosvpnsecurityassociationparameters-resource-type"></a>iosVpnSecurityAssociationParameters 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -28,7 +28,7 @@ VPN 安全关联参数
 |securityEncryptionAlgorithm|[vpnEncryptionAlgorithmType](../resources/intune-deviceconfig-vpnencryptionalgorithmtype.md)|加密算法。 可取值为：`aes256`、`des`、`tripleDes`、`aes128`、`aes128Gcm`、`aes256Gcm`、`aes192`、`aes192Gcm`。|
 |securityIntegrityAlgorithm|[vpnIntegrityAlgorithmType](../resources/intune-deviceconfig-vpnintegrityalgorithmtype.md)|完整性算法。 可取值为：`sha2_256`、`sha1_96`、`sha1_160`、`sha2_384`、`sha2_512`、`md5`。|
 |securityDiffieHellmanGroup|Int32|Diffie-hellman 组|
-|lifetimeInMinutes|Int32|生存时间（分钟）|
+|lifetimeInMinutes|Int32|生存时间 (分钟) |
 
 ## <a name="relationships"></a>关系
 无
@@ -49,6 +49,9 @@ VPN 安全关联参数
   "lifetimeInMinutes": 1024
 }
 ```
+
+
+
 
 
 

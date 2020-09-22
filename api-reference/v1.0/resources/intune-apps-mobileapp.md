@@ -3,14 +3,14 @@ title: mobileApp 资源类型
 description: 包含 Intune 移动应用基属性的抽象类。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8287895e66c016f92cdee7c4da8e3d9881b239b8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4124a114a60f20f6540cdef7ba97787f980afdb0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457874"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094446"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp 资源类型
 
@@ -30,9 +30,9 @@ ms.locfileid: "43457874"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |displayName|String|管理员提供或导入的应用标题。|
-|description|字符串|应用的说明。|
+|description|String|应用的说明。|
 |publisher|String|应用的发布者。|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。|
@@ -82,6 +82,8 @@ ms.locfileid: "43457874"
   "publishingState": "String"
 }
 ```
+
+
 
 
 

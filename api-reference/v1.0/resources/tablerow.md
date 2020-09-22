@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a6b134cb91d0c59c8e89848bfb5397fc13f5b469
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3eca83aeea75300ed9165ac822b15212c866f152
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533583"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094090"
 ---
 # <a name="tablerow-resource-type"></a>TableRow 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "42533583"
 表示表中的行。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -69,3 +69,4 @@ ms.locfileid: "42533583"
   "section": "documentation",
   "tocPath": ""
 }-->
+

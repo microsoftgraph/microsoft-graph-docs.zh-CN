@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 80b688d700dff94d1a746e651b83a4b0236d1a39
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 3249bf48ceab062b47f6f725f9d897fe96fd5667
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44154400"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092970"
 ---
 # <a name="update-workforceintegration"></a>更新 workforceintegration
 
@@ -18,7 +18,7 @@ ms.locfileid: "44154400"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[workforceintegration](../resources/workforceintegration.md)对象的属性。
+更新 [workforceintegration](../resources/workforceintegration.md) 对象的属性。
 
 ## <a name="permissions"></a>Permissions
 
@@ -28,7 +28,7 @@ ms.locfileid: "44154400"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     |WorkforceIntegration |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,25 +48,25 @@ PATCH /teamwork/workforceIntegrations
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |apiVersion|Int32|回调 url 的 API 版本。 从1开始。|
-|displayName|String|劳动力集成的名称。|
+|displayName|字符串|劳动力集成的名称。|
 |技术|workforceIntegrationEncryption|劳动力集成加密资源。 |
-|isActive|Boolean|指示此劳动力集成当前是否处于活动状态且可用。|
+|isActive|布尔|指示此劳动力集成当前是否处于活动状态且可用。|
 |支持|string| 可能的值为、、、、 `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` 。 如果选择多个值，则所有值必须以大写形式的第一个字母开头。|
-|supportedEntities|string| 此属性将替换1.0 版中的**支持**。 建议使用此属性，而不**支持**。 **支持**属性将在 beta 中仍受支持。 可能的值为、、、、 `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` 。 如果选择多个值，则所有值必须以大写形式的第一个字母开头。|
+|supportedEntities|string| 此属性将替换1.0 版中的 **支持** 。 建议使用此属性，而不 **支持**。 **支持**属性将在 beta 中仍受支持。 可能的值为、、、、 `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` 。 如果选择多个值，则所有值必须以大写形式的第一个字母开头。|
 |url|String| 劳动力集成 url，用于从班次服务进行回调。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[workforceIntegration](../resources/workforceintegration.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [workforceIntegration](../resources/workforceintegration.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-update-a-workforceintegration-object"></a>示例1：更新 workforceIntegration 对象
 
-下面的示例更新一个**workforceIntegration**对象。
+下面的示例更新一个 **workforceIntegration** 对象。
 
 #### <a name="request"></a>请求
 
@@ -140,7 +140,7 @@ Content-type: application/json
 
 ### <a name="example-2-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a>示例2：创建一个新的 workforceIntegration，并为其启用 SwapRequest 的资格筛选
 
-下面的示例将创建一个新的**workforceIntegration** ，其中 SwapRequest 启用了资格筛选。
+下面的示例将创建一个新的 **workforceIntegration** ，其中 SwapRequest 启用了资格筛选。
 
 #### <a name="request"></a>请求
 
@@ -184,7 +184,7 @@ HTTP/1.1 200 OK
 }
 
 ```
-若要创建新的**workforceIntegration**并启用 SwapRequest 的资格筛选，请参阅[create](../api/workforceintegration-post.md)方法。
+若要创建新的 **workforceIntegration** 并启用 SwapRequest 的资格筛选，请参阅 [create](../api/workforceintegration-post.md) 方法。
 
 ### <a name="example-3-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>示例3：在 eligibilityFilteringEnabledEntities 中包含 SwapRequest 时提取符合条件的班次
 
@@ -239,3 +239,5 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

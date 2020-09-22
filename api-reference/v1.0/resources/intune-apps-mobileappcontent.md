@@ -3,14 +3,14 @@ title: mobileAppContent 资源类型
 description: 包含特定应用版本的内容属性。 每个 mobileAppContent 都可以具有多个 mobileAppContentFile。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6e25318e22007e202586e1c629c2d932a30bbab1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 08b2cba09a8b9dadc1d86e1d430b93440de21681
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43410945"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094384"
 ---
 # <a name="mobileappcontent-resource-type"></a>mobileAppContent 资源类型
 
@@ -53,6 +53,8 @@ ms.locfileid: "43410945"
   "id": "String (identifier)"
 }
 ```
+
+
 
 
 

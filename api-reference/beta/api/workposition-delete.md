@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 9335b58e8f379d478f2e50e90d34c8ecfd62e3f9
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d11a4f12e4b0837ab6a18c56eb4547872ba8563f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807617"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092949"
 ---
 # <a name="delete-workposition"></a>删除 workPosition
 
@@ -20,7 +20,7 @@ ms.locfileid: "46807617"
 
 从用户的[配置文件](../resources/profile.md)中删除特定的[workPosition](../resources/workposition.md)对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -97,3 +97,5 @@ DELETE https://graph.microsoft.com/beta/me/profile/positions/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+
+

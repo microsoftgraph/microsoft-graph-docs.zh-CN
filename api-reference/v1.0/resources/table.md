@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Priority
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 87189999f94cacbbcc4b8e3d0e8cdfe97e7993a6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dc01389c119ff145ec976056327b2a56a2256a0d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533589"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094097"
 ---
 # <a name="table-resource-type"></a>表资源类型
 
@@ -102,3 +102,4 @@ ms.locfileid: "42533589"
   "section": "documentation",
   "tocPath": ""
 }-->
+

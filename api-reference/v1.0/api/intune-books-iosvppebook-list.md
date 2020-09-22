@@ -3,14 +3,14 @@ title: 列出 iosVppEBooks
 description: 列出 iosVppEBook 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ff138b428d4d679b02f1965fd50addfb2749de8c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b9f6a269b70595b1d518810ff62174180f9f95b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43355777"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094657"
 ---
 # <a name="list-iosvppebooks"></a>列出 iosVppEBooks
 
@@ -97,6 +97,9 @@ Content-Length: 1097
   ]
 }
 ```
+
+
+
 
 
 

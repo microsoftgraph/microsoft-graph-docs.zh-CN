@@ -5,18 +5,18 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 86c4ec4e419fb9305c0a11ba4443e991ed062020
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 9c1ff7a6afc33cb9907533e33f02d275af79a04b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155108"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094790"
 ---
 # <a name="group-delta"></a>group: delta
 
 命名空间：microsoft.graph
 
-获取新创建、更新或删除的组，包括组成员身份更改，而无需对整个组集合执行完全读取。 有关详细信息，请参阅[Using Delta Query](/graph/delta-query-overview) 。
+获取新创建、更新或删除的组，包括组成员身份更改，而无需对整个组集合执行完全读取。 有关详细信息，请参阅 [Using Delta Query](/graph/delta-query-overview) 。
 
 ## <a name="permissions"></a>权限
 
@@ -46,7 +46,7 @@ GET /groups/delta
 
 在后续请求中，可以复制并应用之前响应中返回的 `nextLink` 或 `deltaLink` URL，因为此 URL 已包含所需的编码参数。
 
-| 查询参数 | 类型  |Description|
+| 查询参数 | 类型  |说明|
 |:---------------|:--------|:----------|
 | $deltatoken | string | 对同一个组集合之前的 **delta** 函数调用的 `deltaLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示该组更改跟踪的完成状态。将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
 | $skiptoken | string | 对之前的 **delta** 函数调用的 `nextLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示同一个组集合中有进一步的更改需要追踪。 |
@@ -56,7 +56,7 @@ GET /groups/delta
 此方法支持可选的 OData 查询参数来帮助自定义响应。
 
 - 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 *id* 属性。
-- 您可以使用`$select=members`获取成员身份更改。 此外，还可以通过选择**directoryObject 集合**类型的任何[组关系](../resources/group.md#relationships)来跟踪其他更改，如所有权和其他更改。
+- 您可以使用 `$select=members` 获取成员身份更改。 此外，还可以通过选择**directoryObject 集合**类型的任何[组关系](../resources/group.md#relationships)来跟踪其他更改，如所有权和其他更改。
 - 提供对 `$filter` 的有限支持：
   - 唯一支持的 `$filter` 表达式用于跟踪对特定对象 `$filter=id+eq+{value}` 的更改。 可以筛选多个对象。 例如，`https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`。 筛选对象不能超出 50 个。
 
@@ -74,7 +74,7 @@ GET /groups/delta
 
 ### <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和[组](../resources/group.md)集合对象。 该响应还包括一个状态令牌，它可以是`nextLink` url，也`deltaLink`可以是 url。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和[组](../resources/group.md)集合对象。 该响应还包括一个状态令牌，它可以是 `nextLink` url，也可以是 `deltaLink` url。
 
 - 如果返回 `nextLink`URL：
   - 这表示绘画中存在要检索的其他数据页面。 应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。
@@ -144,7 +144,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 >
-> 请注意， *members@delta*属性的存在，其中包括组中 member 对象的 id。
+> 请注意， *members@delta* 属性的存在，其中包括组中 member 对象的 id。
 
 <!-- {
   "blockType": "response",
@@ -320,3 +320,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

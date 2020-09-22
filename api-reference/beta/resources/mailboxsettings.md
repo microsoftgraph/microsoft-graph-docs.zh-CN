@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 36cc855b76b7d87d951f733fd0f84739f04aa138
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: c3ff60d591257929d2856720ad298231d2afb944
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44846168"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095020"
 ---
 # <a name="mailboxsettings-resource-type"></a>mailboxSettings 资源类型
 
@@ -24,15 +24,15 @@ ms.locfileid: "44846168"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |archiveFolder|string|用户存档文件夹的文件夹 ID。 只读。|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|自动通知发件人有传入电子邮件（包含一封来自已登录用户的邮件）的配置设置。|
-|dateFormat|字符串|用户邮箱的日期格式。|
+|dateFormat|string|用户邮箱的日期格式。|
 |delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| 如果用户具有日历代理，则指定代理、邮箱所有者，还是同时接收会议邮件和会议响应。 可取值为：`sendToDelegateAndInformationToPrincipal`、`sendToDelegateAndPrincipal`、`sendToDelegateOnly`。 默认值为 `sendToDelegateOnly` 。|
 |语言|[localeInfo](localeinfo.md)|用户的区域设置信息，包括首选语言和国家/地区。|
-|timeFormat|字符串|用户邮箱的时间格式。|
-|timeZone|字符串|用户邮箱的默认时区。|
+|timeFormat|string|用户邮箱的时间格式。|
+|timeZone|string|用户邮箱的默认时区。|
 |workingHours|[workingHours](workinghours.md)|特定时区用户一周的工作天数和小时数。|
 |userPurpose|[userPurpose](userpurpose.md)|邮箱的用途。 用于将单个用户的邮箱与 Exchange Online 中的共享邮箱和设备邮箱区分开来。 只读。|
 
@@ -74,3 +74,5 @@ ms.locfileid: "44846168"
   "suppressions": []
 }
 -->
+
+

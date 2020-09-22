@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d75ae8d97d3d2c95cc1779e38346efeea3026f23
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7087457ac68c98b40b1c89dc4b99b13ae85d46b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533533"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094006"
 ---
 # <a name="teammembersettings-resource-type"></a>teamMemberSettings 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "42533533"
 
 
 
-用于配置成员是否可以在[团队](team.md)中执行某些操作（例如，创建频道和添加 bot）的设置。
+用于配置成员是否可以在 [团队](team.md)中执行某些操作（例如，创建频道和添加 bot）的设置。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -59,3 +59,4 @@ ms.locfileid: "42533533"
   "section": "documentation",
   "tocPath": ""
 }-->
+

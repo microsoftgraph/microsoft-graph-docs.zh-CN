@@ -5,18 +5,18 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4e383834693e77501ad540278e78ff6473cbed93
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 654f6b23a92544a62290d81b76263d8b3c57b37c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46565938"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094882"
 ---
 # <a name="create-conditionalaccesspolicy"></a>创建 conditionalAccessPolicy
 
 命名空间：microsoft.graph
 
-创建新的[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)。
+创建新的 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -45,17 +45,17 @@ POST /identity/conditionalAccess/policies
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)对象的 JSON 表示形式。
+在请求正文中，提供 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象的 JSON 表示形式。
 
 有效策略应至少包含以下内容之一：
 
-* [应用程序](../resources/conditionalaccessapplications.md)规则。 例如，`'includeApplications': 'none'`。
-* [用户](../resources/conditionalaccessusers.md)规则。 例如，`'includeUsers': 'none'`。
+* [应用程序](../resources/conditionalaccessapplications.md) 规则。 例如，`'includeApplications': 'none'`。
+* [用户](../resources/conditionalaccessusers.md) 规则。 例如，`'includeUsers': 'none'`。
 * [授予](../resources/conditionalaccessgrantcontrols.md) /[会话](../resources/conditionalaccesssessioncontrols.md)控制。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -90,7 +90,7 @@ Content-type: application/json
             ]
         },
         "users": {
-            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"],
+            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"]
         },
         "locations": {
             "includeLocations": [
@@ -224,7 +224,7 @@ Content-type: application/json
             ]
         },
         "users": {
-            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"],
+            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"]
         },
         "locations": {
             "includeLocations": [
@@ -553,7 +553,7 @@ Content-type: application/json
             ]
         },
         "users": {
-            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"],
+            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"]
         }
     },
     "grantControls": {
@@ -635,3 +635,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

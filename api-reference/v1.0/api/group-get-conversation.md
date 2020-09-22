@@ -5,16 +5,16 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c4f1700bc8b6647139e95c5d2ded5bd9edaa5cf7
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: 45f0fffe4490a44a95bddaf2cd3864ca2817a18f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744039"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094769"
 ---
 # <a name="get-conversation"></a>获取对话
 
-命名空间： microsoft. graph 获取[对话](../resources/conversation.md)对象。
+命名空间： microsoft. graph 获取 [对话](../resources/conversation.md) 对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -114,3 +114,4 @@ Content-length: 644
   "suppressions": [
   ]
 }-->
+

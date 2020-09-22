@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 4df97a37cf1f2dc086af8905f6ec168a7ac458b0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1d56c6a09c866a8d023466b57be1468d8f771269
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533542"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093999"
 ---
 # <a name="teamguestsettings-resource-type"></a>teamGuestSettings 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "42533542"
 
 
 
-用于配置来宾是否可以在[团队](team.md)中创建、更新或删除频道的设置。
+用于配置来宾是否可以在 [团队](team.md)中创建、更新或删除频道的设置。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -51,3 +51,4 @@ ms.locfileid: "42533542"
   "section": "documentation",
   "tocPath": ""
 }-->
+

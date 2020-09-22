@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 999a4582a67813f3a16590145529508dd5fc42e7
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 14794102c04e18105557bccc8e285d0dd1990529
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43361844"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094552"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
@@ -115,3 +115,4 @@ Content-length: 248
   "suppressions": [
   ]
 }-->
+
