@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 7581aba181ad98a15c0cb28067183dea520dbe31
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: 4485001c076fd25b4d5ab7dd7f06f7ccab4c81a4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082717"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086268"
 ---
 # <a name="teleconferencedevicescreensharingquality-resource-type"></a>teleconferenceDeviceScreenSharingQuality 资源类型
 
@@ -74,3 +74,4 @@ ms.locfileid: "43082717"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a1ce31fd39c94299ccb6e2a0cc1330a44a149db3
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: d5a25b287d4f82aaaf9a7773893f96a02a7cf124
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916849"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085190"
 ---
 # <a name="conditionalaccessapplications-resource-type"></a>conditionalAccessApplications 资源类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "43916849"
 
 | 属性 | 类型 | 说明 |
 |:-------- |:---- |:----------- |
-| includeApplications | String 集合 | 策略应用于的应用程序 Id 列表，除非明确排除（在 excludeApplications 中）。 也可以将设置为`All`。 |
-| excludeApplications | String 集合 | 从策略中显式排除的应用程序 Id 的列表。 |
-| includeUserActions | String 集合 | 要包括的用户操作（例如`urn:user:registersecurityinfo`） |
+| includeApplications | 字符串集合 | 该策略应用于的应用程序 Id 列表，除非在 excludeApplications) 中显式排除 (。 也可以将设置为 `All` 。 |
+| excludeApplications | 字符串集合 | 从策略中显式排除的应用程序 Id 的列表。 |
+| includeUserActions | 字符串集合 | 要包括的用户操作 (例如 `urn:user:registersecurityinfo`)  |
 
 ## <a name="relationships"></a>关系
 
@@ -63,3 +63,4 @@ ms.locfileid: "43916849"
   "section": "documentation",
   "tocPath": ""
 }-->
+

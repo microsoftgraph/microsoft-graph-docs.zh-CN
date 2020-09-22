@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
 author: ailae
-ms.openlocfilehash: 86bff5b76b30e832f355ebac57af96e4948feabc
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 43b36f83206981d3f5e748365dcf5fd2b7e07563
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809948"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085467"
 ---
 # <a name="create-or-replace-an-activity"></a>创建或替换活动
 
@@ -20,7 +20,7 @@ ms.locfileid: "46809948"
 
 为您的应用程序创建新的或替换现有的用户活动。 如果您想要在一个请求中创建用户活动及其相关的 **historyItems** ，则可以使用 [深层插入](#example-2-deep-insert)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -308,3 +308,5 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
+
+

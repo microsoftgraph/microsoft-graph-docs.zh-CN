@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
 doc_type: apiPageType
-ms.openlocfilehash: 3a549ca4b50d1a0e873a905a6312e30d6bf1e838
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 4c4d5cbd4ac37e18ea766894381939f1b18021a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863514"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085318"
 ---
 # <a name="riskyuser-dismiss"></a>riskyUser：消除
 
@@ -21,8 +21,8 @@ ms.locfileid: "44863514"
 
 >**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
 
-消除一个或多个[riskyUser](../resources/riskyuser.md)对象的风险。 此操作将目标用户的风险级别设置为 "无"。
-## <a name="permissions"></a>权限
+消除一个或多个 [riskyUser](../resources/riskyuser.md) 对象的风险。 此操作将目标用户的风险级别设置为 "无"。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -149,3 +149,5 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+
+

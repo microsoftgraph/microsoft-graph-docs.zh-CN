@@ -3,20 +3,20 @@ title: windows10TeamGeneralConfiguration 资源类型
 description: 本主题提供由 windows10TeamGeneralConfiguration 资源公开的已声明方法、属性和关系的说明。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7485ac045ba4683403bb4663a55ee41500b8f070
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9db672f8c8a8050c0790df1100fd4e799d910972
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473662"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084735"
 ---
 # <a name="windows10teamgeneralconfiguration-resource-type"></a>windows10TeamGeneralConfiguration 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -39,28 +39,28 @@ ms.locfileid: "43473662"
 |:---|:---|:---|
 |id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|布尔值|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|字符串集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|此策略的设备模式适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|说明|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|azureOperationalInsightsBlockTelemetry|布尔值|指示是否阻止 Azure 操作见解。|
+|azureOperationalInsightsBlockTelemetry|Boolean|指示是否阻止 Azure 操作见解。|
 |azureOperationalInsightsWorkspaceId|String|Azure 操作见解工作区 ID。|
 |azureOperationalInsightsWorkspaceKey|String|Azure 操作见解工作区键。|
-|connectAppBlockAutoLaunch|布尔值|指定是否在启动投影时自动启动 Connect 应用。|
-|maintenanceWindowBlocked|布尔值|指示是否阻止设置设备更新的维护时段。|
+|connectAppBlockAutoLaunch|Boolean|指定是否在启动投影时自动启动 Connect 应用。|
+|maintenanceWindowBlocked|Boolean|指示是否阻止设置设备更新的维护时段。|
 |maintenanceWindowDurationInHours|Int32|设备更新的维护时段持续时间。 有效值为 0 至 5|
 |maintenanceWindowStartTime|TimeOfDay|设备更新的维护时段开始时间。|
 |miracastChannel|[miracastChannel](../resources/intune-deviceconfig-miracastchannel.md)|频道。 可取值为：`userDefined`、`one`、`two`、`three`、`four`、`five`、`six`、`seven`、`eight`、`nine`、`ten`、`eleven`、`thirtySix`、`forty`、`fortyFour`、`fortyEight`、`oneHundredFortyNine`、`oneHundredFiftyThree`、`oneHundredFiftySeven`、`oneHundredSixtyOne`、`oneHundredSixtyFive`。|
-|miracastBlocked|布尔值|指示是否阻止无线投影。|
-|miracastRequirePin|布尔值|指示是否需要 PIN 才能进行无线投影。|
-|settingsBlockMyMeetingsAndFiles|布尔值|指定是否禁用“开始”菜单中的“我的会议和文件”功能，该功能显示来自 Office 365 的已登录用户的会议和文件。|
+|miracastBlocked|Boolean|指示是否阻止无线投影。|
+|miracastRequirePin|Boolean|指示是否需要 PIN 才能进行无线投影。|
+|settingsBlockMyMeetingsAndFiles|Boolean|指定是否禁用“开始”菜单中的“我的会议和文件”功能，该功能显示来自 Office 365 的已登录用户的会议和文件。|
 |settingsBlockSessionResume|Boolean|指定是否允许在会话超时时恢复会话。|
-|settingsBlockSigninSuggestions|布尔值|指定是否禁用计划会议的被邀请者自动填充登录对话框。|
+|settingsBlockSigninSuggestions|Boolean|指定是否禁用计划会议的被邀请者自动填充登录对话框。|
 |settingsDefaultVolume|Int32|指定新会话的默认音量值。 允许的值为 0-100。 默认值为 45。 有效值为 0 至 100|
 |settingsScreenTimeoutInMinutes|Int32|指定 Hub 屏幕关闭前的分钟数。|
 |settingsSessionTimeoutInMinutes|Int32|指定会话超时前的分钟数。|
@@ -72,7 +72,7 @@ ms.locfileid: "43473662"
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) 集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) 集合|按设备的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) 集合|按用户的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -144,6 +144,9 @@ ms.locfileid: "43473662"
   "welcomeScreenMeetingInformation": "String"
 }
 ```
+
+
+
 
 
 

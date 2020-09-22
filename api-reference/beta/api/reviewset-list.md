@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 6a78f504812f0026f20d95204573fdaf483614d3
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 6fb2c5c1874e9c4fdd6dc59bf4b52783b6e1f88b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566274"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085421"
 ---
 # <a name="list-reviewsets"></a>列出 reviewSets
 
@@ -18,7 +18,7 @@ ms.locfileid: "46566274"
 
 检索[ediscoveryCase](../resources/ediscoverycase.md)对象中的[reviewSet](../resources/reviewset.md)对象的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,7 +48,7 @@ GET /compliance/ediscovery/cases/{id}/reviewSets
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[reviewSet](../resources/reviewset.md)集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [reviewSet](../resources/reviewset.md) 集合。
 
 ## <a name="examples"></a>示例
 
@@ -133,3 +133,5 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -3,14 +3,14 @@ title: 删除 deviceCompliancePolicySettingStateSummary
 description: 删除 deviceCompliancePolicySettingStateSummary。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e9c194f5249da2bd978fa19f50d962b5c9ef3f43
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7034eea0960e4e06d41ccb26b2d23c1857bb1405
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43399885"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083454"
 ---
 # <a name="delete-devicecompliancepolicysettingstatesummary"></a>删除 deviceCompliancePolicySettingStateSummary
 
@@ -63,6 +63,9 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicyS
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -3,24 +3,24 @@ title: 更新 dataSharingConsent
 description: 更新 dataSharingConsent 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e37956c7365118f6d5c33a59d911755c3247d404
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b6f6133b79eb7d214405e6d0c30f869b167cd676
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426618"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085869"
 ---
 # <a name="update-datasharingconsent"></a>更新 dataSharingConsent
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)对象的属性。
+更新 [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,24 +47,24 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)对象的 JSON 表示形式。
+在请求正文中，提供 [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) 对象的 JSON 表示形式。
 
-下表显示创建[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)时所需的属性。
+下表显示创建 [dataSharingConsent](../resources/intune-devices-datasharingconsent.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|数据共享同意 Id|
-|serviceDisplayName|String|服务工作流的显示名称|
-|termsUrl|String|数据共享同意的 TermsUrl|
-|granted|Boolean|"数据共享同意" 的 "已授予" 状态|
+|id|字符串|数据共享同意 Id|
+|serviceDisplayName|字符串|服务工作流的显示名称|
+|termsUrl|字符串|数据共享同意的 TermsUrl|
+|granted|布尔|"数据共享同意" 的 "已授予" 状态|
 |grantDateTime|DateTimeOffset|授予此帐户的时间许可|
-|grantedByUpn|String|授予此帐户同意的用户的 Upn|
-|grantedByUserId|String|授予此帐户同意的用户的用户 Id|
+|grantedByUpn|字符串|授予此帐户同意的用户的 Upn|
+|grantedByUserId|字符串|授予此帐户同意的用户的用户 Id|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -104,6 +104,9 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
+
+
+
 
 
 

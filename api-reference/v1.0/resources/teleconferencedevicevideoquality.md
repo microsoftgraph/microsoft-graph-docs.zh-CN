@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: bbcc0b99a75a61375bcf68dc20d32c4052d4f885
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: 8f892fe059828cd7fd71ec19914b5b5db0b9e3cf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43511167"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086226"
 ---
 # <a name="teleconferencedevicevideoquality-resource-type"></a>teleconferenceDeviceVideoQuality 资源类型
 
@@ -87,3 +87,4 @@ ms.locfileid: "43511167"
   "section": "documentation",
   "tocPath": ""
 }-->
+

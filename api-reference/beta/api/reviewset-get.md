@@ -5,20 +5,20 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 82d0ef09d4040d29fc34d8f3388b30655b4b400c
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 6bbc6d0dc347e056740591ca401289534ffb179e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566300"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085443"
 ---
 # <a name="get-reviewset"></a>获取 reviewSet
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[reviewSet](../resources/reviewset.md)对象的属性和关系。
+检索 [reviewSet](../resources/reviewset.md) 对象的属性和关系。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,11 +40,11 @@ GET /compliance/ediscovery/cases/{id}/reviewSets/{id}
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-默认情况下，将返回所有审阅集字段;但是，可以使用 OData 查询参数指定要返回的某些字段 `$select` 。  例如，若要仅返回**displayName**和 ID，请在查询中添加以下内容： `$select=displayName,Id` 。
+默认情况下，将返回所有审阅集字段;但是，可以使用 OData 查询参数指定要返回的某些字段 `$select` 。  例如，若要仅返回 **displayName** 和 ID，请在查询中添加以下内容： `$select=displayName,Id` 。
 
-由于请求可能会返回多种情况，因此您可以使用**displayName**对它们进行筛选。  若要按**displayName**筛选，请将以下内容添加到您的查询中： `$filter=displayName eq 'rs1'` ，其中的审阅集名称为 rs1。
+由于请求可能会返回多种情况，因此您可以使用 **displayName**对它们进行筛选。  若要按 **displayName**筛选，请将以下内容添加到您的查询中： `$filter=displayName eq 'rs1'` ，其中的审阅集名称为 rs1。
 
-有关筛选和指定字段的详细信息，请参阅[在 OData uri 中使用筛选器表达式](https://docs.microsoft.com/dynamics-nav/using-filter-expressions-in-odata-uris)。
+有关筛选和指定字段的详细信息，请参阅 [在 OData uri 中使用筛选器表达式 ](https://docs.microsoft.com/dynamics-nav/using-filter-expressions-in-odata-uris)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -58,7 +58,7 @@ GET /compliance/ediscovery/cases/{id}/reviewSets/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[reviewSet](../resources/reviewset.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [reviewSet](../resources/reviewset.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -129,3 +129,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -3,20 +3,20 @@ title: enableLostMode 操作
 description: 启用丢失模式
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c31de1f333ecf933d7e4ee8b81514c217fcdfe52
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 32a2b7a0d3c2de59fca79baf9c874c5b0eb09e82
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792301"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085862"
 ---
 # <a name="enablelostmode-action"></a>enableLostMode 操作
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -90,6 +90,9 @@ Content-length: 103
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

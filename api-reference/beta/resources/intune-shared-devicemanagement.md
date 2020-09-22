@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a04fd011fc1f06911fdabe5dfa69d33e7cc6d18f
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 507a823d01683affb23341539221c7b6d3317129
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792889"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084371"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -64,10 +64,10 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|与设备关联的唯一标识符。|
+|id|字符串|与设备关联的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|Guid|给定租户的 Intune 帐户 ID|
-|legacyPcManangementEnabled|布尔值|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
+|legacyPcManangementEnabled|布尔|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
 |maximumDepTokens|Int32|每个租户允许的最大 DEP 令牌数。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|帐户级别设置。|
 |**设备管理**|
@@ -134,14 +134,14 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
 |remoteActionAudits|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) 集合|与租户的设备远程操作审核列表。|
 |windowsMalwareInformation|[windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md) 集合|租户中受影响的恶意软件的列表。|
 |mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) 集合|MobileAppTroubleshootingEvent 的集合属性。|
-|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md)|用户体验分析概述|
-|userExperienceAnalyticsBaselines|[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) 集合|用户体验分析基线|
+|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/intune-devices-userExperienceAnalyticsOverview.md)|用户体验分析概述|
+|userExperienceAnalyticsBaselines|[userExperienceAnalyticsBaseline](../resources/intune-devices-userExperienceAnalyticsBaseline.md) 集合|用户体验分析基线|
 |userExperienceAnalyticsCategories|[userExperienceAnalyticsCategory](../resources/intune-devices-userExperienceAnalyticsCategory.md) 集合|用户体验分析类别|
-|userExperienceAnalyticsDevicePerformance|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) 集合|User experience analytics 设备性能|
-|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userexperienceanalyticsregressionsummary.md)|用户体验分析回归概况摘要|
-|userExperienceAnalyticsDeviceStartupHistory|[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) 集合|User experience analytics 设备启动历史记录|
-|userExperienceAnalyticsDeviceStartupProcesses|[userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) 集合|用户体验分析设备启动过程|
-|userExperienceAnalyticsDeviceStartupProcessPerformance|[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md) 集合|User experience analytics 设备启动过程性能|
+|userExperienceAnalyticsDevicePerformance|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userExperienceAnalyticsDevicePerformance.md) 集合|User experience analytics 设备性能|
+|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userExperienceAnalyticsRegressionSummary.md)|用户体验分析回归概况摘要|
+|userExperienceAnalyticsDeviceStartupHistory|[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userExperienceAnalyticsDeviceStartupHistory.md) 集合|User experience analytics 设备启动历史记录|
+|userExperienceAnalyticsDeviceStartupProcesses|[userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userExperienceAnalyticsDeviceStartupProcess.md) 集合|用户体验分析设备启动过程|
+|userExperienceAnalyticsDeviceStartupProcessPerformance|[userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userExperienceAnalyticsDeviceStartupProcessPerformance.md) 集合|User experience analytics 设备启动过程性能|
 |**开户**|
 |depOnboardingSettings|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) 集合|每个租户的多个 DEP 令牌集合。|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) 集合|导入的设备标识。|
@@ -213,6 +213,9 @@ DeviceManagement 资源代表其内容因工作流而异的容器，包括：
   "subscriptionState": "String"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: 创建 managedDeviceEncryptionState
 description: 创建新的 managedDeviceEncryptionState 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4498cf04a586cb5e758f8e2213eb956765fb803f
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 495d40ae9da2c11845b99a65d7dcdfad28e02a6f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790922"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086215"
 ---
 # <a name="create-manageddeviceencryptionstate"></a>创建 managedDeviceEncryptionState
 
@@ -53,11 +53,11 @@ POST /deviceManagement/managedDeviceEncryptionStates
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
-|userPrincipalName|String|用户名|
-|deviceType|[deviceTypes](../resources/intune-shared-devicetype.md)|设备的平台。 可能的值为：、、、、、、、、、、、、、、、、、、、、、 `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `blackberry` `palm` `unknown` 。|
+|id|字符串|实体的键。|
+|userPrincipalName|字符串|用户名|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|设备的平台。 可能的值为：、、、、、、、、、、、、、、、、、、、、、 `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `blackberry` `palm` `unknown` 。|
 |osVersion|String|设备的操作系统版本|
-|tpmSpecificationVersion|String|设备 TPM 版本|
+|tpmSpecificationVersion|字符串|设备 TPM 版本|
 |deviceName|String|设备名称|
 |encryptionReadinessState|[encryptionReadinessState](../resources/intune-deviceconfig-encryptionreadinessstate.md)|加密准备情况状态。 可取值为：`notReady`、`ready`。|
 |encryptionState|[encryptionState](../resources/intune-deviceconfig-encryptionstate.md)|设备加密状态。 可取值为：`notEncrypted`、`encrypted`。|
@@ -131,6 +131,9 @@ Content-Length: 753
   ]
 }
 ```
+
+
+
 
 
 

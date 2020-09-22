@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b4c58b7cf9c2a4ee4cb5d7840160c36573c23a71
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6aa379edac52c0fb484e4f32ecadf36a37039a64
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454561"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085477"
 ---
 # <a name="create-rangeborder"></a>创建 RangeBorder
 
@@ -43,11 +43,11 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[workbookRangeBorder](../resources/workbookrangeborder.md)对象的 JSON 表示形式。
+在请求正文中，提供 [workbookRangeBorder](../resources/workbookrangeborder.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[workbookRangeBorder](../resources/workbookrangeborder.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [workbookRangeBorder](../resources/workbookrangeborder.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -85,7 +85,7 @@ Content-length: 136
 
 ---
 
-在请求正文中，提供[workbookRangeBorder](../resources/workbookrangeborder.md)对象的 JSON 表示形式。
+在请求正文中，提供 [workbookRangeBorder](../resources/workbookrangeborder.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
@@ -120,3 +120,5 @@ Content-length: 136
   ]
 }
 -->
+
+

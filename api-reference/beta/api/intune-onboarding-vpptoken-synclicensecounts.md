@@ -3,14 +3,14 @@ title: syncLicenseCounts 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 278c13537f4a7c802d3517c6090f080a66faf211
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 08509ed0f8603182d856bd95fa886f3b173dff92
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793223"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085750"
 ---
 # <a name="synclicensecounts-action"></a>syncLicenseCounts 操作
 
@@ -65,6 +65,9 @@ POST https://graph.microsoft.com/beta/deviceAppManagement/vppTokens/syncLicenseC
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

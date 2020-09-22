@@ -5,20 +5,20 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 7c4a29c9e113b33bbb2efb8b3933ffb9cfb10262
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 84f26d18a6f4c53299503fb21d6e36e0337d53d7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46510011"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085333"
 ---
 # <a name="list-reviewsetqueries"></a>列出 reviewSetQueries
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索电子数据展示[reviewSetQuery](../resources/reviewsetquery.md)对象的列表。
+检索电子数据展示 [reviewSetQuery](../resources/reviewsetquery.md) 对象的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,21 +52,37 @@ GET /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[reviewSetQuery](../resources/reviewsetquery.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [reviewSetQuery](../resources/reviewsetquery.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_reviewsetquery"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/2eef613a-ca2d-42f4-89fe-84d5198ddedf/reviewSets/b26888b3-e1f5-47c5-bdf2-33d1b90cb2e8/queries
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-reviewsetquery-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-reviewsetquery-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-reviewsetquery-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
@@ -141,3 +157,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: bd0603c220e0bd90f1f8ace2889efe5124175153
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: 75849cd322f50974299f92c752833045a7d2bd94
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43511174"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086331"
 ---
 # <a name="teleconferencedevicemediaquality-resource-type"></a>teleconferenceDeviceMediaQuality 资源类型
 
@@ -23,20 +23,20 @@ ms.locfileid: "43511174"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |averageInboundJitter|持续时间|平均入站流网络抖动。|
-|averageInboundPacketLossRateInPercentage|双精度|以百分比表示的平均入站流数据包丢失率（0-100）。 例如，0.01 表示0.01%。|
+|averageInboundPacketLossRateInPercentage|双精度|以 (0-100) 为单位的平均入站流数据包丢失率（百分比）。 例如，0.01 表示0.01%。|
 |averageInboundRoundTripDelay|持续时间|平均入站流网络往返延迟。|
 |averageOutboundJitter|持续时间|平均出站流网络抖动。|
-|averageOutboundPacketLossRateInPercentage|双精度|以百分比表示的平均出站流数据包丢失率（0-100）。 例如，0.01 表示0.01%。|
+|averageOutboundPacketLossRateInPercentage|双精度|平均出站流数据包丢失率 (0-100) 的百分比。 例如，0.01 表示0.01%。|
 |averageOutboundRoundTripDelay|持续时间|平均出站流网络往返延迟。|
 |channelIndex|Int32|媒体的通道索引。 索引从1开始。  如果媒体会话包含3个视频形式，通道索引将为1、2和3。|
 |inboundPackets|Int64|入站数据包的总数。|
 |localIPAddress|String|媒体会话的本地 IP 地址。|
 |localPort|Int32|本地媒体端口。|
 |maximumInboundJitter|持续时间|最大入站流网络抖动。|
-|maximumInboundPacketLossRateInPercentage|双精度|以百分比表示的最大入站流数据包丢失率（0-100）。 例如，0.01 表示0.01%。|
+|maximumInboundPacketLossRateInPercentage|双精度|以 (0-100) 的百分比表示的最大入站流数据包丢失率。 例如，0.01 表示0.01%。|
 |maximumInboundRoundTripDelay|持续时间|入站流网络的最大往返延迟。|
 |maximumOutboundJitter|持续时间|最大出站流网络抖动。|
-|maximumOutboundPacketLossRateInPercentage|双精度|以百分比表示的最大出站流数据包丢失率（0-100）。 例如，0.01 表示0.01%。|
+|maximumOutboundPacketLossRateInPercentage|双精度|以 (0-100) 的百分比表示的最大出站流数据包丢失率。 例如，0.01 表示0.01%。|
 |maximumOutboundRoundTripDelay|持续时间|最大出站流网络往返延迟。|
 |mediaDuration|持续时间|整个模态的持续时间。 如果启用和禁用媒体多次，则 MediaDuration 将的所有持续时间的总和。|
 |networkLinkSpeedInBytes|Int64|网络链接速度（以字节为单位）|
@@ -100,3 +100,4 @@ ms.locfileid: "43511174"
   "section": "documentation",
   "tocPath": ""
 }-->
+

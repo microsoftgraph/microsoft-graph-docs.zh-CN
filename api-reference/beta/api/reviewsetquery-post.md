@@ -5,20 +5,20 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: e318c99408fdd0cb5e884a869cbbc2de8ce53c1b
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 86f84a37965ddbcc6d0577024b8e1e747d5615b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46510010"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085326"
 ---
 # <a name="create-reviewsetquery"></a>创建 reviewSetQuery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[reviewSetQuery](../resources/reviewsetquery.md)对象。
+创建新的 [reviewSetQuery](../resources/reviewsetquery.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -44,7 +44,7 @@ POST /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[reviewSetQuery](../resources/reviewsetquery.md)对象的 JSON 表示形式。 下表列出了必需的属性。
+在请求正文中，提供 [reviewSetQuery](../resources/reviewsetquery.md) 对象的 JSON 表示形式。 下表列出了必需的属性。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
@@ -52,13 +52,15 @@ POST /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[reviewSetQuery](../resources/reviewsetquery.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [reviewSetQuery](../resources/reviewsetquery.md) 对象。
 
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
 
 下面展示了示例请求。
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_reviewsetquery"
@@ -73,6 +75,20 @@ Content-type: application/json
      "query": "(subject:\"Quarterly Financials\")"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-reviewsetquery-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-reviewsetquery-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/post-reviewsetquery-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>响应
 
@@ -121,3 +137,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

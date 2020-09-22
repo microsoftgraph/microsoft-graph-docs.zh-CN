@@ -3,14 +3,14 @@ title: 创建 deviceCompliancePolicySettingStateSummary
 description: 创建新的 deviceCompliancePolicySettingStateSummary 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c63c4a0f31c2db63db0d3ef65d3516f1cea3528
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 86a9c93c07ec2d8f180e146e18b96a32895f92be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43399932"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083468"
 ---
 # <a name="create-devicecompliancepolicysettingstatesummary"></a>创建 deviceCompliancePolicySettingStateSummary
 
@@ -114,6 +114,9 @@ Content-Length: 440
   "conflictDeviceCount": 3
 }
 ```
+
+
+
 
 
 

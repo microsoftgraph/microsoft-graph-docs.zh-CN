@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0746fc8e72c52ef3d406d7473e4bdf43f59d6562
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: d8d5b9806532750ff352634bde845d00fb920790
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107547"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085274"
 ---
 # <a name="list-trendingaround"></a>列出 trendingAround
 
@@ -20,9 +20,9 @@ ms.locfileid: "43107547"
 
 计算出的真知灼见，可返回围绕用户的项目趋势的列表。
 
-**注意：** 此 API 将被弃用，并将替换为[趋势 api](../resources/insights-trending.md)。
+**注意：** 此 API 将被弃用，并将替换为 [趋势 api](../resources/insights-trending.md)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -52,7 +52,7 @@ GET /drive/root/lastModifiedByUser/trendingAround
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 200 OK 响应代码和[driveItem](../resources/driveitem.md)对象集合。
+如果成功，此方法在响应正文中返回 200 OK 响应代码和 [driveItem](../resources/driveitem.md) 对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -74,3 +74,5 @@ Content-length: 226
   "webUrl": "webUrl-value",
 }
 ```
+
+

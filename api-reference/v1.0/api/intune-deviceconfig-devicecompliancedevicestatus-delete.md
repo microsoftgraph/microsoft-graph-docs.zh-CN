@@ -3,14 +3,14 @@ title: 删除 deviceComplianceDeviceStatus
 description: 删除 deviceComplianceDeviceStatus。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e5be7d2e7bdd63190867ed5803aebe8c32f6c687
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 366711f044bf07714c54026282db8f754b0a6fc0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43400302"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083594"
 ---
 # <a name="delete-devicecompliancedevicestatus"></a>删除 deviceComplianceDeviceStatus
 
@@ -63,6 +63,9 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

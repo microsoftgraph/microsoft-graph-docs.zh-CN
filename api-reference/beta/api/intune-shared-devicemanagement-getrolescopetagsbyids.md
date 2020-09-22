@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 57532f6eaf9f4ba8a6dfa4efe37930e3121bc8cc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a63e3f1defaa5a0be7f650424bd8a111fb468cbf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43390135"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085589"
 ---
 # <a name="getrolescopetagsbyids-function"></a>getRoleScopeTagsByIds 函数
 
@@ -58,7 +58,7 @@ GET /deviceManagement/getRoleScopeTagsByIds
 
 
 ## <a name="response"></a>响应
-如果成功，此函数会在`200 OK`响应正文中返回响应代码和[roleScopeTag](../resources/intune-rbac-rolescopetag.md)集合。
+如果成功，此函数会 `200 OK` 在响应正文中返回响应代码和 [roleScopeTag](../resources/intune-rbac-rolescopetag.md) 集合。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
@@ -87,6 +87,9 @@ Content-Length: 231
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,21 +5,21 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 0319b23a6f48727901baba18f3f829b66a5d3c9a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2879c82946e308644893e4ed4015d2e2705d6854
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455736"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085575"
 ---
 # <a name="update-plannerbucket"></a>更新 plannerbucket
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 **plannerbucket** 对象的属性。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -44,8 +44,8 @@ PATCH /planner/buckets/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|name|字符串|存储桶的名称。|
-|orderHint|字符串|用于为列表视图中的此类型项目排序的提示。此格式在[使用规划器中的排序提示](../resources/planner-order-hint-format.md)定义中。|
+|名称|字符串|存储桶的名称。|
+|orderHint|String|用于为列表视图中的此类型项目排序的提示。此格式在[使用规划器中的排序提示](../resources/planner-order-hint-format.md)定义中。|
 |planId|String|此存储桶所属的计划 id。|
 
 ## <a name="response"></a>响应
@@ -120,3 +120,5 @@ Content-length: 245
   ]
 }
 -->
+
+

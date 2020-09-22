@@ -3,20 +3,20 @@ title: revokeLicenses 操作
 description: 吊销与特定 appleVolumePurchaseProgramToken 相关联的许可证
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e9aa65a3b84caa54b6be160e25e2c4e595966139
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 37d40a1048cb9af536f650d14840f17ee76889e5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43383653"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085820"
 ---
 # <a name="revokelicenses-action"></a>revokeLicenses 操作
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,6 +54,7 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/revokeLicenses
 |属性|类型|说明|
 |:---|:---|:---|
 |notifyManagedDevices|Boolean|尚未记录|
+|revokeUntrackedLicenses|Boolean|尚未记录|
 
 
 
@@ -68,10 +69,11 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/revokeLicenses
 POST https://graph.microsoft.com/beta/deviceAppManagement/vppTokens/{vppTokenId}/revokeLicenses
 
 Content-type: application/json
-Content-length: 36
+Content-length: 72
 
 {
-  "notifyManagedDevices": true
+  "notifyManagedDevices": true,
+  "revokeUntrackedLicenses": true
 }
 ```
 
@@ -80,6 +82,9 @@ Content-length: 36
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

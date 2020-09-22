@@ -3,24 +3,24 @@ title: 更新 managedDeviceCertificateState
 description: 更新 managedDeviceCertificateState 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b060137765444db66aaebce884fa30fe07830afa
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 6490692a9fb74d222d87642859da460ba29f8a08
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45122880"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086261"
 ---
 # <a name="update-manageddevicecertificatestate"></a>更新 managedDeviceCertificateState
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)对象的属性。
+更新 [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -68,9 +68,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)对象的 JSON 表示形式。
+在请求正文中，提供 [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) 对象的 JSON 表示形式。
 
-下表显示创建[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)时所需的属性。
+下表显示创建 [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -83,27 +83,27 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|使用者名称格式。 可取值为：`commonName`、`commonNameIncludingEmail`、`commonNameAsEmail`、`custom`、`commonNameAsIMEI`、`commonNameAsSerialNumber`、`commonNameAsAadDeviceId`、`commonNameAsIntuneDeviceId`、`commonNameAsDurableDeviceId`。|
 |certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|使用者可选名称格式。 可取值为：`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService`。|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|撤消状态。 可取值为：`none`、`pending`、`issued`、`failed`、`revoked`。|
-|certificateProfileDisplayName|String|证书配置文件显示名称|
+|certificateProfileDisplayName|字符串|证书配置文件显示名称|
 |deviceDisplayName|String|设备显示名称|
 |userDisplayName|String|用户显示名称|
 |certificateExpirationDateTime|DateTimeOffset|证书到期日期|
 |certificateLastIssuanceStateChangedDateTime|DateTimeOffset|上次证书颁发状态更改|
 |lastCertificateStateChangeDateTime|DateTimeOffset|上次证书颁发状态更改|
-|certificateIssuer|String|颁发者|
-|certificateThumbprint|String|为|
-|certificateSerialNumber|String|序列号|
+|certificateIssuer|字符串|颁发者|
+|certificateThumbprint|字符串|为|
+|certificateSerialNumber|字符串|序列号|
 |certificateKeyLength|Int32|密钥长度|
-|certificateEnhancedKeyUsage|String|扩展密钥用法|
+|certificateEnhancedKeyUsage|字符串|扩展密钥用法|
 |certificateValidityPeriod|Int32|有效期|
-|certificateSubjectNameFormatString|String|自定义主题名称格式的主题名称格式字符串|
-|certificateSubjectAlternativeNameFormatString|String|自定义格式的使用者可选名称格式字符串|
+|certificateSubjectNameFormatString|字符串|自定义主题名称格式的主题名称格式字符串|
+|certificateSubjectAlternativeNameFormatString|字符串|自定义格式的使用者可选名称格式字符串|
 |certificateIssuanceDateTime|DateTimeOffset|颁发日期|
 |certificateErrorCode|Int32|错误代码|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -179,6 +179,9 @@ Content-Length: 1566
   "certificateErrorCode": 4
 }
 ```
+
+
+
 
 
 

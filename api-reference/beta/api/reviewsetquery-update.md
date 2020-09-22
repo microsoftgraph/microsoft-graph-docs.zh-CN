@@ -5,20 +5,20 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 9ba2a3f51bee694001fde5f7f62f0f452aa0bcff
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: daf8471b4bfea2509a2adbd84e23a96622998c5b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46510009"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085281"
 ---
 # <a name="update-reviewsetquery"></a>更新 reviewSetQuery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新电子数据展示[reviewSetQuery](../resources/reviewsetquery.md)的属性。
+更新电子数据展示 [reviewSetQuery](../resources/reviewsetquery.md)的属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,8 +48,8 @@ PATCH /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| displayName | String | 他们的审阅集查询的显示名称。 |
-| 查询 | 字符串 | KQL （关键字查询语言）查询中的查询字符串。 有关详细信息，请参阅[Document metadata fields](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)。 |
+| displayName | 字符串 | 他们的审阅集查询的显示名称。 |
+| 查询 | 字符串 | KQL (关键字查询语言) 查询中的查询字符串。 有关详细信息，请参阅 [Document metadata fields](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)。 |
 
 ## <a name="response"></a>响应
 
@@ -99,3 +99,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

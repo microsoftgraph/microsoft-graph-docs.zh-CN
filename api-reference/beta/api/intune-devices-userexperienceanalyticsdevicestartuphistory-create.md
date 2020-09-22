@@ -3,14 +3,14 @@ title: 创建 userExperienceAnalyticsDeviceStartupHistory
 description: 创建新的 userExperienceAnalyticsDeviceStartupHistory 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f5b91043417fb0e33dd7f7781c82503525b5d185
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 1a40b3ad891de0cbf95294bddc5d4c6fa05016a0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791349"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085848"
 ---
 # <a name="create-userexperienceanalyticsdevicestartuphistory"></a>创建 userExperienceAnalyticsDeviceStartupHistory
 
@@ -53,7 +53,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|User experience analytics 设备启动历史记录的唯一标识符。|
+|id|字符串|User experience analytics 设备启动历史记录的唯一标识符。|
 |deviceId|String|User experience analytics 设备 id。|
 |startTime|DateTimeOffset|用户体验分析设备启动开始时间。|
 |coreBootTimeInMs|Int32|User experience analytics device core boot time （以毫秒为单位）。|
@@ -64,10 +64,12 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 |coreLoginTimeInMs|Int32|User experience analytics device core login time （以毫秒为单位）。|
 |responsiveDesktopTimeInMs|Int32|用户体验分析响应桌面时间（以毫秒为单位）。|
 |totalLoginTimeInMs|Int32|User experience analytics 设备总登录时间（以毫秒为单位）。|
-|isFirstLogin|布尔值|User experience analytics 设备第一次登录。|
-|isFeatureUpdate|布尔值|User experience analytics 设备启动记录是一项功能更新。|
+|isFirstLogin|布尔|User experience analytics 设备第一次登录。|
+|isFeatureUpdate|布尔|User experience analytics 设备启动记录是一项功能更新。|
 |operatingSystemVersion|String|User experience analytics 设备启动记录的操作系统版本。|
-|restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|OS 重新启动类别。 可取值为：`unknown`、`restartWithUpdate`、`restartWithoutUpdate`、`blueScreen`、`shutdownWithUpdate`、`shutdownWithoutUpdate`。|
+|restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|OS 重新启动类别。 可取值为：`unknown`、`restartWithUpdate`、`restartWithoutUpdate`、`blueScreen`、`shutdownWithUpdate`、`shutdownWithoutUpdate`、`longPowerButtonPress`、`bootError`。|
+|restartStopCode|字符串|操作系统重新启动停止代码。 这将显示可用于查找蓝屏原因的 bug 检查代码。|
+|restartFaultBucket|字符串|OS 重新启动故障存储桶。 故障存储桶用于查找有关系统崩溃的其他信息。|
 
 
 
@@ -81,7 +83,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 Content-type: application/json
-Content-length: 576
+Content-length: 680
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
@@ -98,7 +100,9 @@ Content-length: 576
   "isFirstLogin": true,
   "isFeatureUpdate": true,
   "operatingSystemVersion": "Operating System Version value",
-  "restartCategory": "restartWithUpdate"
+  "restartCategory": "restartWithUpdate",
+  "restartStopCode": "Restart Stop Code value",
+  "restartFaultBucket": "Restart Fault Bucket value"
 }
 ```
 
@@ -107,7 +111,7 @@ Content-length: 576
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 625
+Content-Length: 729
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
@@ -125,9 +129,14 @@ Content-Length: 625
   "isFirstLogin": true,
   "isFeatureUpdate": true,
   "operatingSystemVersion": "Operating System Version value",
-  "restartCategory": "restartWithUpdate"
+  "restartCategory": "restartWithUpdate",
+  "restartStopCode": "Restart Stop Code value",
+  "restartFaultBucket": "Restart Fault Bucket value"
 }
 ```
+
+
+
 
 
 

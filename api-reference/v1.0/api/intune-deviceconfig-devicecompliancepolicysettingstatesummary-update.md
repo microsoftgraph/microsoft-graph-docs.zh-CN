@@ -3,14 +3,14 @@ title: 更新 deviceCompliancePolicySettingStateSummary
 description: 更新 deviceCompliancePolicySettingStateSummary 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c5e15705768853b4d840df01fe0b4e76eefc997
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c0db252857b83b70bd1e07ad1400ca88f6d83025
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43399736"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083440"
 ---
 # <a name="update-devicecompliancepolicysettingstatesummary"></a>更新 deviceCompliancePolicySettingStateSummary
 
@@ -114,6 +114,9 @@ Content-Length: 440
   "conflictDeviceCount": 3
 }
 ```
+
+
+
 
 
 

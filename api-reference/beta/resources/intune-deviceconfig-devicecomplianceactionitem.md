@@ -3,20 +3,20 @@ title: deviceComplianceActionItem 资源类型
 description: 计划的操作配置
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cde85db4e580e7cb91c77428c0d4728e5d096628
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 288337de04735026bc041ecbe9123bacb6daa90d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437397"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085120"
 ---
 # <a name="devicecomplianceactionitem-resource-type"></a>deviceComplianceActionItem 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -34,7 +34,7 @@ ms.locfileid: "43437397"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |gracePeriodHours|Int32|强制执行操作前要等待的小时数。 有效值为 0 至 8760|
 |actionType|[deviceComplianceActionType](../resources/intune-deviceconfig-devicecomplianceactiontype.md)|要执行的操作。 可取值为：`noAction`、`notification`、`block`、`retire`、`wipe`、`removeResourceAccessProfiles`、`pushNotification`、`remoteLock`。|
 |notificationTemplateId|String|要使用的通知消息模板|
@@ -63,6 +63,9 @@ ms.locfileid: "43437397"
   ]
 }
 ```
+
+
+
 
 
 

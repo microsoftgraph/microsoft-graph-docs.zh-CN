@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a6ff5b6d9031c142821728b31cb66f8b0c5d100f
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: a9e0f2602840344db0f9c6464f709e1c44c9a8ee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845462"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085444"
 ---
 # <a name="reports-getprinterarchivedprintjobs"></a>报告： getPrinterArchivedPrintJobs
 
@@ -18,7 +18,7 @@ ms.locfileid: "44845462"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取排队等候特定[打印机](../resources/printer.md)的存档打印作业的列表。
+获取排队等候特定 [打印机](../resources/printer.md)的存档打印作业的列表。
 
 ## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,14 +44,14 @@ GET /reports/getPrinterArchivedPrintJobs
 
 ## <a name="function-parameters"></a>函数参数
 
-| 参数     | 类型                 | 是否必需？ | Description                                                          |
+| 参数     | 类型                 | 是否必需？ | 说明                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
 | `printerId`   | `Edm.String`         | 是       | 要为其返回数据的打印机的 ID。                            |
-| `periodStart` | `Edm.DateTimeOffset` | 否        | 要在其中包含数据的时间段的开始日期（含）。 |
-| `periodEnd`   | `Edm.DateTimeOffset` | 否        | 要在其中包含数据的时间段的结束日期（含）。   |
+| `periodStart` | `Edm.DateTimeOffset` | 否        | 开始日期 (包含的时间段内包含的数据) 。 |
+| `periodEnd`   | `Edm.DateTimeOffset` | 否        | 结束日期 (包含的数据的时间段的) 。   |
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[archivedPrintJob](../resources/archivedprintjob.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [archivedPrintJob](../resources/archivedprintjob.md) 对象集合。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -101,3 +101,4 @@ Content-length: 236
   "section": "documentation",
   "tocPath": ""
 }-->
+

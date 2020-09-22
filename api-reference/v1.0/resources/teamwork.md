@@ -5,12 +5,12 @@ author: akumar39
 doc_type: resourcePageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: d19322c6ca68290fa4c85adccb49652fee3cf669
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 1fcb4ff7727c9a17e4c950b26d71be71f63479a5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44153773"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086373"
 ---
 # <a name="teamwork-resource-type"></a>teamwork 资源类型
 
@@ -61,3 +61,4 @@ ms.locfileid: "44153773"
 ## <a name="see-also"></a>另请参阅
 
 - [userTeamwork 资源类型](userteamwork.md)
+

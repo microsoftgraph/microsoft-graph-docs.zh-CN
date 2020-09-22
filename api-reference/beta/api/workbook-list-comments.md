@@ -5,20 +5,20 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d3be5ce51eb4cef13b366b19b5b95b56e5cd75a0
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: 909fde9424a2b54f64d80c8d3ef187f44db1126f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408111"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085260"
 ---
 # <a name="list-workbookcomments"></a>列出 workbookComments
 
 命名空间：microsoft.graph
 
-检索[workbookComment](../resources/workbookcomment.md)对象的列表。
+检索  [workbookComment](../resources/workbookcomment.md) 对象的列表。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,7 +48,7 @@ GET /workbook/comments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[workbookComment](../resources/workbookcomment.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookComment](../resources/workbookcomment.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -117,3 +117,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

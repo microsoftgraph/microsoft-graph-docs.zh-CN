@@ -3,34 +3,34 @@ title: androidDeviceOwnerGlobalProxyDirect 资源类型
 description: Android 设备所有者全局代理 Direct。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7f1b57ebdfb44504295824637352d543ff64111e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 020ad601a261427df8a573c38e4b992a830d31bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463484"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085155"
 ---
 # <a name="androiddeviceownerglobalproxydirect-resource-type"></a>androidDeviceOwnerGlobalProxyDirect 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Android 设备所有者全局代理 Direct。
 
 
-继承自[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)
+继承自 [androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|host|String|主机名|
+|host|字符串|主机名|
 |端口|Int32|端口|
-|excludedHosts|String collection|已排除的主机|
+|excludedHosts|字符串集合|已排除的主机|
 
 ## <a name="relationships"></a>关系
 无
@@ -52,6 +52,9 @@ Android 设备所有者全局代理 Direct。
   ]
 }
 ```
+
+
+
 
 
 

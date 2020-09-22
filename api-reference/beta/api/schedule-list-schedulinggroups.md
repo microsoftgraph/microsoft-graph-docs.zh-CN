@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 995c27fadaee51b423b171a5c60417d0e89239db
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 56520e5cbab4111b0316583a24220c82d54e5759
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "42453844"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085317"
 ---
 # <a name="list-schedulegroups"></a>列出 scheduleGroups
 
@@ -28,7 +28,7 @@ ms.locfileid: "42453844"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Schedule. All *、schedule、all* |
+|应用程序 | Schedule. All *、schedule、all* |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
@@ -53,7 +53,7 @@ GET /teams/{teamId}/schedule/schedulingGroups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[schedulingGroup](../resources/schedulinggroup.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [schedulingGroup](../resources/schedulinggroup.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -141,3 +141,5 @@ Content-length: 401
   ]
 }
 -->
+
+

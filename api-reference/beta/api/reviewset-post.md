@@ -5,20 +5,20 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 5220140589758b20285d738a4d60eadfd80defe1
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 52fcf121c3725a61ce833e766122baab0d3a2137
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566243"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085414"
 ---
 # <a name="create-reviewset"></a>创建 reviewSet
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[reviewSet](../resources/reviewset.md)对象。 请求正文包含审阅集的显示名称，该名称是唯一的可写属性。
+创建新的 [reviewSet](../resources/reviewset.md) 对象。 请求正文包含审阅集的显示名称，该名称是唯一的可写属性。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -44,7 +44,7 @@ POST /compliance/ediscovery/cases/{id}/reviewSets/{id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[reviewSet](../resources/reviewset.md)的 JSON 表示形式。  下表列出了必需的属性。
+在请求正文中，提供 [reviewSet](../resources/reviewset.md)的 JSON 表示形式。  下表列出了必需的属性。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
@@ -52,7 +52,7 @@ POST /compliance/ediscovery/cases/{id}/reviewSets/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[reviewSet](../resources/reviewset.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [reviewSet](../resources/reviewset.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -128,3 +128,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
