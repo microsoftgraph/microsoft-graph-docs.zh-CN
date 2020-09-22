@@ -5,30 +5,30 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a913c910183c1abeae57a3a9f00d7f0c92f9bb69
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c95871ba4a318bebfdb56680405c069da5481bca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522566"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055223"
 ---
-# <a name="nomediaconfig-resource-type"></a><span data-ttu-id="5935e-103">noMediaConfig 资源类型</span><span class="sxs-lookup"><span data-stu-id="5935e-103">noMediaConfig resource type</span></span>
+# <a name="nomediaconfig-resource-type"></a><span data-ttu-id="d3b3f-103">noMediaConfig 资源类型</span><span class="sxs-lookup"><span data-stu-id="d3b3f-103">noMediaConfig resource type</span></span>
 
-<span data-ttu-id="5935e-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="5935e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d3b3f-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d3b3f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5935e-105">用于指示无媒体的媒体配置。</span><span class="sxs-lookup"><span data-stu-id="5935e-105">Media configuration for indicating no media.</span></span>
+<span data-ttu-id="d3b3f-105">用于指示无媒体的媒体配置。</span><span class="sxs-lookup"><span data-stu-id="d3b3f-105">Media configuration for indicating no media.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5935e-106">属性</span><span class="sxs-lookup"><span data-stu-id="5935e-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d3b3f-106">属性</span><span class="sxs-lookup"><span data-stu-id="d3b3f-106">Properties</span></span>
 
-| <span data-ttu-id="5935e-107">属性</span><span class="sxs-lookup"><span data-stu-id="5935e-107">Property</span></span>       | <span data-ttu-id="5935e-108">类型</span><span class="sxs-lookup"><span data-stu-id="5935e-108">Type</span></span>    | <span data-ttu-id="5935e-109">说明</span><span class="sxs-lookup"><span data-stu-id="5935e-109">Description</span></span>|
+| <span data-ttu-id="d3b3f-107">属性</span><span class="sxs-lookup"><span data-stu-id="d3b3f-107">Property</span></span>       | <span data-ttu-id="d3b3f-108">类型</span><span class="sxs-lookup"><span data-stu-id="d3b3f-108">Type</span></span>    | <span data-ttu-id="d3b3f-109">说明</span><span class="sxs-lookup"><span data-stu-id="d3b3f-109">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="5935e-110">removeFromDefaultAudioGroup</span><span class="sxs-lookup"><span data-stu-id="5935e-110">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="5935e-111">布尔</span><span class="sxs-lookup"><span data-stu-id="5935e-111">Boolean</span></span> |  |
+| <span data-ttu-id="d3b3f-110">removeFromDefaultAudioGroup</span><span class="sxs-lookup"><span data-stu-id="d3b3f-110">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="d3b3f-111">Boolean</span><span class="sxs-lookup"><span data-stu-id="d3b3f-111">Boolean</span></span> |  |
 
-## <a name="json-representation"></a><span data-ttu-id="5935e-112">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="5935e-112">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d3b3f-112">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d3b3f-112">JSON representation</span></span>
 
-<span data-ttu-id="5935e-113">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5935e-113">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d3b3f-113">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d3b3f-113">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -56,3 +56,5 @@ ms.locfileid: "42522566"
   "suppressions": []
 }
 -->
+
+

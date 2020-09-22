@@ -3,36 +3,36 @@ title: deviceAndAppManagementAssignmentTarget 资源类型
 description: 赋值目标的基类型。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4194d5afb7f7c90f658c558d8609badef2d89cfc
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: ec22ad7ff3a7fe12ba77511ce7c9fc40c6bc49ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793491"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055377"
 ---
-# <a name="deviceandappmanagementassignmenttarget-resource-type"></a><span data-ttu-id="f3815-103">deviceAndAppManagementAssignmentTarget 资源类型</span><span class="sxs-lookup"><span data-stu-id="f3815-103">deviceAndAppManagementAssignmentTarget resource type</span></span>
+# <a name="deviceandappmanagementassignmenttarget-resource-type"></a><span data-ttu-id="6a2cc-103">deviceAndAppManagementAssignmentTarget 资源类型</span><span class="sxs-lookup"><span data-stu-id="6a2cc-103">deviceAndAppManagementAssignmentTarget resource type</span></span>
 
-<span data-ttu-id="f3815-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f3815-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6a2cc-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6a2cc-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="f3815-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="f3815-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="6a2cc-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="6a2cc-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="f3815-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="f3815-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6a2cc-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="6a2cc-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="f3815-107">赋值目标的基类型。</span><span class="sxs-lookup"><span data-stu-id="f3815-107">Base type for assignment targets.</span></span>
+<span data-ttu-id="6a2cc-107">赋值目标的基类型。</span><span class="sxs-lookup"><span data-stu-id="6a2cc-107">Base type for assignment targets.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="f3815-108">属性</span><span class="sxs-lookup"><span data-stu-id="f3815-108">Properties</span></span>
-|<span data-ttu-id="f3815-109">属性</span><span class="sxs-lookup"><span data-stu-id="f3815-109">Property</span></span>|<span data-ttu-id="f3815-110">类型</span><span class="sxs-lookup"><span data-stu-id="f3815-110">Type</span></span>|<span data-ttu-id="f3815-111">说明</span><span class="sxs-lookup"><span data-stu-id="f3815-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="6a2cc-108">属性</span><span class="sxs-lookup"><span data-stu-id="6a2cc-108">Properties</span></span>
+|<span data-ttu-id="6a2cc-109">属性</span><span class="sxs-lookup"><span data-stu-id="6a2cc-109">Property</span></span>|<span data-ttu-id="6a2cc-110">类型</span><span class="sxs-lookup"><span data-stu-id="6a2cc-110">Type</span></span>|<span data-ttu-id="6a2cc-111">说明</span><span class="sxs-lookup"><span data-stu-id="6a2cc-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="f3815-112">deviceAndAppManagementAssignmentFilterId</span><span class="sxs-lookup"><span data-stu-id="f3815-112">deviceAndAppManagementAssignmentFilterId</span></span>|<span data-ttu-id="f3815-113">String</span><span class="sxs-lookup"><span data-stu-id="f3815-113">String</span></span>|<span data-ttu-id="f3815-114">目标工作分配的筛选器的 Id。</span><span class="sxs-lookup"><span data-stu-id="f3815-114">The Id of the filter for the target assignment.</span></span>|
-|<span data-ttu-id="f3815-115">deviceAndAppManagementAssignmentFilterType</span><span class="sxs-lookup"><span data-stu-id="f3815-115">deviceAndAppManagementAssignmentFilterType</span></span>|[<span data-ttu-id="f3815-116">deviceAndAppManagementAssignmentFilterType</span><span class="sxs-lookup"><span data-stu-id="f3815-116">deviceAndAppManagementAssignmentFilterType</span></span>](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|<span data-ttu-id="f3815-117">目标工作分配的筛选器类型，即 Exclude 或 Include。</span><span class="sxs-lookup"><span data-stu-id="f3815-117">The type of filter of the target assignment i.e. Exclude or Include.</span></span> <span data-ttu-id="f3815-118">可取值为：`none`、`include`。</span><span class="sxs-lookup"><span data-stu-id="f3815-118">Possible values are: `none`, `include`.</span></span>|
+|<span data-ttu-id="6a2cc-112">deviceAndAppManagementAssignmentFilterId</span><span class="sxs-lookup"><span data-stu-id="6a2cc-112">deviceAndAppManagementAssignmentFilterId</span></span>|<span data-ttu-id="6a2cc-113">String</span><span class="sxs-lookup"><span data-stu-id="6a2cc-113">String</span></span>|<span data-ttu-id="6a2cc-114">目标工作分配的筛选器的 Id。</span><span class="sxs-lookup"><span data-stu-id="6a2cc-114">The Id of the filter for the target assignment.</span></span>|
+|<span data-ttu-id="6a2cc-115">deviceAndAppManagementAssignmentFilterType</span><span class="sxs-lookup"><span data-stu-id="6a2cc-115">deviceAndAppManagementAssignmentFilterType</span></span>|[<span data-ttu-id="6a2cc-116">deviceAndAppManagementAssignmentFilterType</span><span class="sxs-lookup"><span data-stu-id="6a2cc-116">deviceAndAppManagementAssignmentFilterType</span></span>](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|<span data-ttu-id="6a2cc-117">目标工作分配的筛选器类型，即 Exclude 或 Include。</span><span class="sxs-lookup"><span data-stu-id="6a2cc-117">The type of filter of the target assignment i.e. Exclude or Include.</span></span> <span data-ttu-id="6a2cc-118">可取值为：`none`、`include`。</span><span class="sxs-lookup"><span data-stu-id="6a2cc-118">Possible values are: `none`, `include`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="f3815-119">关系</span><span class="sxs-lookup"><span data-stu-id="f3815-119">Relationships</span></span>
-<span data-ttu-id="f3815-120">无</span><span class="sxs-lookup"><span data-stu-id="f3815-120">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="6a2cc-119">关系</span><span class="sxs-lookup"><span data-stu-id="6a2cc-119">Relationships</span></span>
+<span data-ttu-id="6a2cc-120">无</span><span class="sxs-lookup"><span data-stu-id="6a2cc-120">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="f3815-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f3815-121">JSON Representation</span></span>
-<span data-ttu-id="f3815-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f3815-122">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6a2cc-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="6a2cc-121">JSON Representation</span></span>
+<span data-ttu-id="6a2cc-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6a2cc-122">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
@@ -45,6 +45,9 @@ ms.locfileid: "44793491"
   "deviceAndAppManagementAssignmentFilterType": "String"
 }
 ```
+
+
+
 
 
 
