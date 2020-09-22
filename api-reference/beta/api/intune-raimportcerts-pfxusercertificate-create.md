@@ -3,35 +3,35 @@ title: 创建 pfxUserCertificate
 description: 创建新的 pfxUserCertificate 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c564f89cb711981708684da2d8be943e8531e10
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 15ce1610e1b67782a347d8b85013a0faf544c19d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437694"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093173"
 ---
-# <a name="create-pfxusercertificate"></a><span data-ttu-id="6ce29-103">创建 pfxUserCertificate</span><span class="sxs-lookup"><span data-stu-id="6ce29-103">Create pfxUserCertificate</span></span>
+# <a name="create-pfxusercertificate"></a><span data-ttu-id="fa57d-103">创建 pfxUserCertificate</span><span class="sxs-lookup"><span data-stu-id="fa57d-103">Create pfxUserCertificate</span></span>
 
-<span data-ttu-id="6ce29-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6ce29-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="fa57d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fa57d-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="6ce29-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="6ce29-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="fa57d-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="fa57d-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="6ce29-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="6ce29-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="fa57d-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="fa57d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="6ce29-107">创建新的[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="6ce29-107">Create a new [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) object.</span></span>
+<span data-ttu-id="fa57d-107">创建新的 [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="fa57d-107">Create a new [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="6ce29-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="6ce29-108">Prerequisites</span></span>
-<span data-ttu-id="6ce29-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6ce29-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="fa57d-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="fa57d-108">Prerequisites</span></span>
+<span data-ttu-id="fa57d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="fa57d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6ce29-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="6ce29-111">Permission type</span></span>|<span data-ttu-id="6ce29-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="6ce29-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="fa57d-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="fa57d-111">Permission type</span></span>|<span data-ttu-id="fa57d-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="fa57d-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="6ce29-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6ce29-113">Delegated (work or school account)</span></span>|<span data-ttu-id="6ce29-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6ce29-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="6ce29-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6ce29-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6ce29-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="6ce29-116">Not supported.</span></span>|
-|<span data-ttu-id="6ce29-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="6ce29-117">Application</span></span>|<span data-ttu-id="6ce29-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6ce29-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="fa57d-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fa57d-113">Delegated (work or school account)</span></span>|<span data-ttu-id="fa57d-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fa57d-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="fa57d-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fa57d-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="fa57d-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="fa57d-116">Not supported.</span></span>|
+|<span data-ttu-id="fa57d-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="fa57d-117">Application</span></span>|<span data-ttu-id="fa57d-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fa57d-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="6ce29-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6ce29-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fa57d-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fa57d-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,46 +40,46 @@ ms.locfileid: "43437694"
 POST /pfxUserCertificates
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="6ce29-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="6ce29-120">Request headers</span></span>
-|<span data-ttu-id="6ce29-121">标头</span><span class="sxs-lookup"><span data-stu-id="6ce29-121">Header</span></span>|<span data-ttu-id="6ce29-122">值</span><span class="sxs-lookup"><span data-stu-id="6ce29-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fa57d-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="fa57d-120">Request headers</span></span>
+|<span data-ttu-id="fa57d-121">标头</span><span class="sxs-lookup"><span data-stu-id="fa57d-121">Header</span></span>|<span data-ttu-id="fa57d-122">值</span><span class="sxs-lookup"><span data-stu-id="fa57d-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="6ce29-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="6ce29-123">Authorization</span></span>|<span data-ttu-id="6ce29-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="6ce29-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="6ce29-125">接受</span><span class="sxs-lookup"><span data-stu-id="6ce29-125">Accept</span></span>|<span data-ttu-id="6ce29-126">application/json</span><span class="sxs-lookup"><span data-stu-id="6ce29-126">application/json</span></span>|
+|<span data-ttu-id="fa57d-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="fa57d-123">Authorization</span></span>|<span data-ttu-id="fa57d-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="fa57d-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="fa57d-125">接受</span><span class="sxs-lookup"><span data-stu-id="fa57d-125">Accept</span></span>|<span data-ttu-id="fa57d-126">application/json</span><span class="sxs-lookup"><span data-stu-id="fa57d-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6ce29-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="6ce29-127">Request body</span></span>
-<span data-ttu-id="6ce29-128">在请求正文中，提供 pfxUserCertificate 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6ce29-128">In the request body, supply a JSON representation for the pfxUserCertificate object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fa57d-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="fa57d-127">Request body</span></span>
+<span data-ttu-id="fa57d-128">在请求正文中，提供 pfxUserCertificate 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="fa57d-128">In the request body, supply a JSON representation for the pfxUserCertificate object.</span></span>
 
-<span data-ttu-id="6ce29-129">下表显示创建 pfxUserCertificate 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="6ce29-129">The following table shows the properties that are required when you create the pfxUserCertificate.</span></span>
+<span data-ttu-id="fa57d-129">下表显示创建 pfxUserCertificate 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="fa57d-129">The following table shows the properties that are required when you create the pfxUserCertificate.</span></span>
 
-|<span data-ttu-id="6ce29-130">属性</span><span class="sxs-lookup"><span data-stu-id="6ce29-130">Property</span></span>|<span data-ttu-id="6ce29-131">类型</span><span class="sxs-lookup"><span data-stu-id="6ce29-131">Type</span></span>|<span data-ttu-id="6ce29-132">说明</span><span class="sxs-lookup"><span data-stu-id="6ce29-132">Description</span></span>|
+|<span data-ttu-id="fa57d-130">属性</span><span class="sxs-lookup"><span data-stu-id="fa57d-130">Property</span></span>|<span data-ttu-id="fa57d-131">类型</span><span class="sxs-lookup"><span data-stu-id="fa57d-131">Type</span></span>|<span data-ttu-id="fa57d-132">说明</span><span class="sxs-lookup"><span data-stu-id="fa57d-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6ce29-133">tenantId</span><span class="sxs-lookup"><span data-stu-id="6ce29-133">tenantId</span></span>|<span data-ttu-id="6ce29-134">Guid</span><span class="sxs-lookup"><span data-stu-id="6ce29-134">Guid</span></span>|<span data-ttu-id="6ce29-135">尚未记录</span><span class="sxs-lookup"><span data-stu-id="6ce29-135">Not yet documented</span></span>|
-|<span data-ttu-id="6ce29-136">userId</span><span class="sxs-lookup"><span data-stu-id="6ce29-136">userId</span></span>|<span data-ttu-id="6ce29-137">Guid</span><span class="sxs-lookup"><span data-stu-id="6ce29-137">Guid</span></span>|<span data-ttu-id="6ce29-138">尚未记录</span><span class="sxs-lookup"><span data-stu-id="6ce29-138">Not yet documented</span></span>|
-|<span data-ttu-id="6ce29-139">为</span><span class="sxs-lookup"><span data-stu-id="6ce29-139">thumbprint</span></span>|<span data-ttu-id="6ce29-140">String</span><span class="sxs-lookup"><span data-stu-id="6ce29-140">String</span></span>|<span data-ttu-id="6ce29-141">尚未记录</span><span class="sxs-lookup"><span data-stu-id="6ce29-141">Not yet documented</span></span>|
-|<span data-ttu-id="6ce29-142">userUpn</span><span class="sxs-lookup"><span data-stu-id="6ce29-142">userUpn</span></span>|<span data-ttu-id="6ce29-143">String</span><span class="sxs-lookup"><span data-stu-id="6ce29-143">String</span></span>|<span data-ttu-id="6ce29-144">尚未记录</span><span class="sxs-lookup"><span data-stu-id="6ce29-144">Not yet documented</span></span>|
-|<span data-ttu-id="6ce29-145">encryptedPfxBlob</span><span class="sxs-lookup"><span data-stu-id="6ce29-145">encryptedPfxBlob</span></span>|<span data-ttu-id="6ce29-146">String</span><span class="sxs-lookup"><span data-stu-id="6ce29-146">String</span></span>|<span data-ttu-id="6ce29-147">尚未记录</span><span class="sxs-lookup"><span data-stu-id="6ce29-147">Not yet documented</span></span>|
-|<span data-ttu-id="6ce29-148">encryptedPfxPassword</span><span class="sxs-lookup"><span data-stu-id="6ce29-148">encryptedPfxPassword</span></span>|<span data-ttu-id="6ce29-149">String</span><span class="sxs-lookup"><span data-stu-id="6ce29-149">String</span></span>|<span data-ttu-id="6ce29-150">尚未记录</span><span class="sxs-lookup"><span data-stu-id="6ce29-150">Not yet documented</span></span>|
-|<span data-ttu-id="6ce29-151">certStartDate</span><span class="sxs-lookup"><span data-stu-id="6ce29-151">certStartDate</span></span>|<span data-ttu-id="6ce29-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="6ce29-152">DateTimeOffset</span></span>|<span data-ttu-id="6ce29-153">尚未记录</span><span class="sxs-lookup"><span data-stu-id="6ce29-153">Not yet documented</span></span>|
-|<span data-ttu-id="6ce29-154">certExpirationDate</span><span class="sxs-lookup"><span data-stu-id="6ce29-154">certExpirationDate</span></span>|<span data-ttu-id="6ce29-155">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="6ce29-155">DateTimeOffset</span></span>|<span data-ttu-id="6ce29-156">尚未记录</span><span class="sxs-lookup"><span data-stu-id="6ce29-156">Not yet documented</span></span>|
-|<span data-ttu-id="6ce29-157">providerName</span><span class="sxs-lookup"><span data-stu-id="6ce29-157">providerName</span></span>|<span data-ttu-id="6ce29-158">String</span><span class="sxs-lookup"><span data-stu-id="6ce29-158">String</span></span>|<span data-ttu-id="6ce29-159">尚未记录</span><span class="sxs-lookup"><span data-stu-id="6ce29-159">Not yet documented</span></span>|
-|<span data-ttu-id="6ce29-160">encryptionKeyName</span><span class="sxs-lookup"><span data-stu-id="6ce29-160">encryptionKeyName</span></span>|<span data-ttu-id="6ce29-161">String</span><span class="sxs-lookup"><span data-stu-id="6ce29-161">String</span></span>|<span data-ttu-id="6ce29-162">尚未记录</span><span class="sxs-lookup"><span data-stu-id="6ce29-162">Not yet documented</span></span>|
-|<span data-ttu-id="6ce29-163">paddingScheme</span><span class="sxs-lookup"><span data-stu-id="6ce29-163">paddingScheme</span></span>|<span data-ttu-id="6ce29-164">Int32</span><span class="sxs-lookup"><span data-stu-id="6ce29-164">Int32</span></span>|<span data-ttu-id="6ce29-165">尚未记录</span><span class="sxs-lookup"><span data-stu-id="6ce29-165">Not yet documented</span></span>|
-|<span data-ttu-id="6ce29-166">状态</span><span class="sxs-lookup"><span data-stu-id="6ce29-166">status</span></span>|<span data-ttu-id="6ce29-167">Int32</span><span class="sxs-lookup"><span data-stu-id="6ce29-167">Int32</span></span>|<span data-ttu-id="6ce29-168">尚未记录</span><span class="sxs-lookup"><span data-stu-id="6ce29-168">Not yet documented</span></span>|
-|<span data-ttu-id="6ce29-169">intendedPurpose</span><span class="sxs-lookup"><span data-stu-id="6ce29-169">intendedPurpose</span></span>|<span data-ttu-id="6ce29-170">Int32</span><span class="sxs-lookup"><span data-stu-id="6ce29-170">Int32</span></span>|<span data-ttu-id="6ce29-171">尚未记录</span><span class="sxs-lookup"><span data-stu-id="6ce29-171">Not yet documented</span></span>|
-|<span data-ttu-id="6ce29-172">createdTime</span><span class="sxs-lookup"><span data-stu-id="6ce29-172">createdTime</span></span>|<span data-ttu-id="6ce29-173">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="6ce29-173">DateTimeOffset</span></span>|<span data-ttu-id="6ce29-174">尚未记录</span><span class="sxs-lookup"><span data-stu-id="6ce29-174">Not yet documented</span></span>|
-|<span data-ttu-id="6ce29-175">isDeleted</span><span class="sxs-lookup"><span data-stu-id="6ce29-175">isDeleted</span></span>|<span data-ttu-id="6ce29-176">Boolean</span><span class="sxs-lookup"><span data-stu-id="6ce29-176">Boolean</span></span>|<span data-ttu-id="6ce29-177">尚未记录</span><span class="sxs-lookup"><span data-stu-id="6ce29-177">Not yet documented</span></span>|
-|<span data-ttu-id="6ce29-178">lastModifiedTime</span><span class="sxs-lookup"><span data-stu-id="6ce29-178">lastModifiedTime</span></span>|<span data-ttu-id="6ce29-179">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="6ce29-179">DateTimeOffset</span></span>|<span data-ttu-id="6ce29-180">尚未记录</span><span class="sxs-lookup"><span data-stu-id="6ce29-180">Not yet documented</span></span>|
-|<span data-ttu-id="6ce29-181">eTag</span><span class="sxs-lookup"><span data-stu-id="6ce29-181">eTag</span></span>|<span data-ttu-id="6ce29-182">String</span><span class="sxs-lookup"><span data-stu-id="6ce29-182">String</span></span>|<span data-ttu-id="6ce29-183">尚未记录</span><span class="sxs-lookup"><span data-stu-id="6ce29-183">Not yet documented</span></span>|
+|<span data-ttu-id="fa57d-133">tenantId</span><span class="sxs-lookup"><span data-stu-id="fa57d-133">tenantId</span></span>|<span data-ttu-id="fa57d-134">Guid</span><span class="sxs-lookup"><span data-stu-id="fa57d-134">Guid</span></span>|<span data-ttu-id="fa57d-135">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fa57d-135">Not yet documented</span></span>|
+|<span data-ttu-id="fa57d-136">userId</span><span class="sxs-lookup"><span data-stu-id="fa57d-136">userId</span></span>|<span data-ttu-id="fa57d-137">Guid</span><span class="sxs-lookup"><span data-stu-id="fa57d-137">Guid</span></span>|<span data-ttu-id="fa57d-138">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fa57d-138">Not yet documented</span></span>|
+|<span data-ttu-id="fa57d-139">为</span><span class="sxs-lookup"><span data-stu-id="fa57d-139">thumbprint</span></span>|<span data-ttu-id="fa57d-140">String</span><span class="sxs-lookup"><span data-stu-id="fa57d-140">String</span></span>|<span data-ttu-id="fa57d-141">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fa57d-141">Not yet documented</span></span>|
+|<span data-ttu-id="fa57d-142">userUpn</span><span class="sxs-lookup"><span data-stu-id="fa57d-142">userUpn</span></span>|<span data-ttu-id="fa57d-143">String</span><span class="sxs-lookup"><span data-stu-id="fa57d-143">String</span></span>|<span data-ttu-id="fa57d-144">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fa57d-144">Not yet documented</span></span>|
+|<span data-ttu-id="fa57d-145">encryptedPfxBlob</span><span class="sxs-lookup"><span data-stu-id="fa57d-145">encryptedPfxBlob</span></span>|<span data-ttu-id="fa57d-146">String</span><span class="sxs-lookup"><span data-stu-id="fa57d-146">String</span></span>|<span data-ttu-id="fa57d-147">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fa57d-147">Not yet documented</span></span>|
+|<span data-ttu-id="fa57d-148">encryptedPfxPassword</span><span class="sxs-lookup"><span data-stu-id="fa57d-148">encryptedPfxPassword</span></span>|<span data-ttu-id="fa57d-149">String</span><span class="sxs-lookup"><span data-stu-id="fa57d-149">String</span></span>|<span data-ttu-id="fa57d-150">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fa57d-150">Not yet documented</span></span>|
+|<span data-ttu-id="fa57d-151">certStartDate</span><span class="sxs-lookup"><span data-stu-id="fa57d-151">certStartDate</span></span>|<span data-ttu-id="fa57d-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fa57d-152">DateTimeOffset</span></span>|<span data-ttu-id="fa57d-153">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fa57d-153">Not yet documented</span></span>|
+|<span data-ttu-id="fa57d-154">certExpirationDate</span><span class="sxs-lookup"><span data-stu-id="fa57d-154">certExpirationDate</span></span>|<span data-ttu-id="fa57d-155">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fa57d-155">DateTimeOffset</span></span>|<span data-ttu-id="fa57d-156">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fa57d-156">Not yet documented</span></span>|
+|<span data-ttu-id="fa57d-157">providerName</span><span class="sxs-lookup"><span data-stu-id="fa57d-157">providerName</span></span>|<span data-ttu-id="fa57d-158">String</span><span class="sxs-lookup"><span data-stu-id="fa57d-158">String</span></span>|<span data-ttu-id="fa57d-159">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fa57d-159">Not yet documented</span></span>|
+|<span data-ttu-id="fa57d-160">encryptionKeyName</span><span class="sxs-lookup"><span data-stu-id="fa57d-160">encryptionKeyName</span></span>|<span data-ttu-id="fa57d-161">String</span><span class="sxs-lookup"><span data-stu-id="fa57d-161">String</span></span>|<span data-ttu-id="fa57d-162">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fa57d-162">Not yet documented</span></span>|
+|<span data-ttu-id="fa57d-163">paddingScheme</span><span class="sxs-lookup"><span data-stu-id="fa57d-163">paddingScheme</span></span>|<span data-ttu-id="fa57d-164">Int32</span><span class="sxs-lookup"><span data-stu-id="fa57d-164">Int32</span></span>|<span data-ttu-id="fa57d-165">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fa57d-165">Not yet documented</span></span>|
+|<span data-ttu-id="fa57d-166">状态</span><span class="sxs-lookup"><span data-stu-id="fa57d-166">status</span></span>|<span data-ttu-id="fa57d-167">Int32</span><span class="sxs-lookup"><span data-stu-id="fa57d-167">Int32</span></span>|<span data-ttu-id="fa57d-168">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fa57d-168">Not yet documented</span></span>|
+|<span data-ttu-id="fa57d-169">intendedPurpose</span><span class="sxs-lookup"><span data-stu-id="fa57d-169">intendedPurpose</span></span>|<span data-ttu-id="fa57d-170">Int32</span><span class="sxs-lookup"><span data-stu-id="fa57d-170">Int32</span></span>|<span data-ttu-id="fa57d-171">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fa57d-171">Not yet documented</span></span>|
+|<span data-ttu-id="fa57d-172">createdTime</span><span class="sxs-lookup"><span data-stu-id="fa57d-172">createdTime</span></span>|<span data-ttu-id="fa57d-173">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fa57d-173">DateTimeOffset</span></span>|<span data-ttu-id="fa57d-174">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fa57d-174">Not yet documented</span></span>|
+|<span data-ttu-id="fa57d-175">isDeleted</span><span class="sxs-lookup"><span data-stu-id="fa57d-175">isDeleted</span></span>|<span data-ttu-id="fa57d-176">Boolean</span><span class="sxs-lookup"><span data-stu-id="fa57d-176">Boolean</span></span>|<span data-ttu-id="fa57d-177">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fa57d-177">Not yet documented</span></span>|
+|<span data-ttu-id="fa57d-178">lastModifiedTime</span><span class="sxs-lookup"><span data-stu-id="fa57d-178">lastModifiedTime</span></span>|<span data-ttu-id="fa57d-179">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fa57d-179">DateTimeOffset</span></span>|<span data-ttu-id="fa57d-180">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fa57d-180">Not yet documented</span></span>|
+|<span data-ttu-id="fa57d-181">eTag</span><span class="sxs-lookup"><span data-stu-id="fa57d-181">eTag</span></span>|<span data-ttu-id="fa57d-182">String</span><span class="sxs-lookup"><span data-stu-id="fa57d-182">String</span></span>|<span data-ttu-id="fa57d-183">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fa57d-183">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="6ce29-184">响应</span><span class="sxs-lookup"><span data-stu-id="6ce29-184">Response</span></span>
-<span data-ttu-id="6ce29-185">如果成功，此方法在响应`201 Created`正文中返回响应代码和[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="6ce29-185">If successful, this method returns a `201 Created` response code and a [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="fa57d-184">响应</span><span class="sxs-lookup"><span data-stu-id="fa57d-184">Response</span></span>
+<span data-ttu-id="fa57d-185">如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="fa57d-185">If successful, this method returns a `201 Created` response code and a [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6ce29-186">示例</span><span class="sxs-lookup"><span data-stu-id="6ce29-186">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fa57d-186">示例</span><span class="sxs-lookup"><span data-stu-id="fa57d-186">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="6ce29-187">请求</span><span class="sxs-lookup"><span data-stu-id="6ce29-187">Request</span></span>
-<span data-ttu-id="6ce29-188">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="6ce29-188">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="fa57d-187">请求</span><span class="sxs-lookup"><span data-stu-id="fa57d-187">Request</span></span>
+<span data-ttu-id="fa57d-188">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="fa57d-188">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/pfxUserCertificates
 Content-type: application/json
@@ -107,8 +107,8 @@ Content-length: 789
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="6ce29-189">响应</span><span class="sxs-lookup"><span data-stu-id="6ce29-189">Response</span></span>
-<span data-ttu-id="6ce29-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="6ce29-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="fa57d-189">响应</span><span class="sxs-lookup"><span data-stu-id="fa57d-189">Response</span></span>
+<span data-ttu-id="fa57d-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="fa57d-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -135,6 +135,9 @@ Content-Length: 789
   "eTag": "ETag value"
 }
 ```
+
+
+
 
 
 

@@ -5,28 +5,28 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5447e2a145594f3db2d7077f07ba9b5b9deb2109
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0e4c08620130a0e584d6056e6b1297df4bdf9137
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460563"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094883"
 ---
-# <a name="list-contacts"></a><span data-ttu-id="b7634-103">列出联系人</span><span class="sxs-lookup"><span data-stu-id="b7634-103">List contacts</span></span>
+# <a name="list-contacts"></a><span data-ttu-id="561be-103">列出联系人</span><span class="sxs-lookup"><span data-stu-id="561be-103">List contacts</span></span>
 
-<span data-ttu-id="b7634-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b7634-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="561be-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="561be-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="b7634-105">从已登录用户的默认联系人文件夹 (`.../me/contacts`) 或指定的联系人文件夹中获取联系人集合。</span><span class="sxs-lookup"><span data-stu-id="b7634-105">Get a contact collection from the default Contacts folder of the signed-in user (`.../me/contacts`), or from the specified contact folder.</span></span>
-## <a name="permissions"></a><span data-ttu-id="b7634-106">权限</span><span class="sxs-lookup"><span data-stu-id="b7634-106">Permissions</span></span>
-<span data-ttu-id="b7634-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b7634-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="561be-105">从已登录用户的默认联系人文件夹 (`.../me/contacts`) 或指定的联系人文件夹中获取联系人集合。</span><span class="sxs-lookup"><span data-stu-id="561be-105">Get a contact collection from the default Contacts folder of the signed-in user (`.../me/contacts`), or from the specified contact folder.</span></span>
+## <a name="permissions"></a><span data-ttu-id="561be-106">权限</span><span class="sxs-lookup"><span data-stu-id="561be-106">Permissions</span></span>
+<span data-ttu-id="561be-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="561be-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b7634-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="b7634-109">Permission type</span></span>      | <span data-ttu-id="b7634-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b7634-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="561be-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="561be-109">Permission type</span></span>      | <span data-ttu-id="561be-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="561be-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b7634-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b7634-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b7634-112">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b7634-112">Contacts.Read, Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="b7634-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b7634-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b7634-114">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b7634-114">Contacts.Read, Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="b7634-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="b7634-115">Application</span></span> | <span data-ttu-id="b7634-116">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b7634-116">Contacts.Read, Contacts.ReadWrite</span></span> |
+|<span data-ttu-id="561be-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="561be-111">Delegated (work or school account)</span></span> | <span data-ttu-id="561be-112">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="561be-112">Contacts.Read, Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="561be-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="561be-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="561be-114">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="561be-114">Contacts.Read, Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="561be-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="561be-115">Application</span></span> | <span data-ttu-id="561be-116">Contacts.Read、Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="561be-116">Contacts.Read, Contacts.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b7634-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b7634-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="561be-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="561be-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts
@@ -35,24 +35,24 @@ GET /users/{id | userPrincipalName}/contacts
 GET /me/contactFolders/{id}/contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/contacts
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="b7634-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="b7634-118">Optional query parameters</span></span>
-<span data-ttu-id="b7634-119">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="b7634-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="b7634-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="b7634-120">Request headers</span></span>
-| <span data-ttu-id="b7634-121">名称</span><span class="sxs-lookup"><span data-stu-id="b7634-121">Name</span></span>       | <span data-ttu-id="b7634-122">类型</span><span class="sxs-lookup"><span data-stu-id="b7634-122">Type</span></span> | <span data-ttu-id="b7634-123">说明</span><span class="sxs-lookup"><span data-stu-id="b7634-123">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="561be-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="561be-118">Optional query parameters</span></span>
+<span data-ttu-id="561be-119">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="561be-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="561be-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="561be-120">Request headers</span></span>
+| <span data-ttu-id="561be-121">名称</span><span class="sxs-lookup"><span data-stu-id="561be-121">Name</span></span>       | <span data-ttu-id="561be-122">类型</span><span class="sxs-lookup"><span data-stu-id="561be-122">Type</span></span> | <span data-ttu-id="561be-123">说明</span><span class="sxs-lookup"><span data-stu-id="561be-123">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="b7634-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="b7634-124">Authorization</span></span>  | <span data-ttu-id="b7634-125">string</span><span class="sxs-lookup"><span data-stu-id="b7634-125">string</span></span>  | <span data-ttu-id="b7634-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b7634-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="561be-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="561be-124">Authorization</span></span>  | <span data-ttu-id="561be-125">string</span><span class="sxs-lookup"><span data-stu-id="561be-125">string</span></span>  | <span data-ttu-id="561be-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="561be-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b7634-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="b7634-128">Request body</span></span>
-<span data-ttu-id="b7634-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="b7634-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="561be-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="561be-128">Request body</span></span>
+<span data-ttu-id="561be-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="561be-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b7634-130">响应</span><span class="sxs-lookup"><span data-stu-id="b7634-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="561be-130">响应</span><span class="sxs-lookup"><span data-stu-id="561be-130">Response</span></span>
 
-<span data-ttu-id="b7634-131">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Contact](../resources/contact.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="b7634-131">If successful, this method returns a `200 OK` response code and collection of [Contact](../resources/contact.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="b7634-132">示例</span><span class="sxs-lookup"><span data-stu-id="b7634-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="b7634-133">请求</span><span class="sxs-lookup"><span data-stu-id="b7634-133">Request</span></span>
-<span data-ttu-id="b7634-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="b7634-134">Here is an example of the request.</span></span>
+<span data-ttu-id="561be-131">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Contact](../resources/contact.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="561be-131">If successful, this method returns a `200 OK` response code and collection of [Contact](../resources/contact.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="561be-132">示例</span><span class="sxs-lookup"><span data-stu-id="561be-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="561be-133">请求</span><span class="sxs-lookup"><span data-stu-id="561be-133">Request</span></span>
+<span data-ttu-id="561be-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="561be-134">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="b7634-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="b7634-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="561be-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="561be-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contactfolder_get_contacts"
@@ -60,26 +60,26 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/contacts
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/contacts
 ```
-# <a name="c"></a>[<span data-ttu-id="b7634-136">C#</span><span class="sxs-lookup"><span data-stu-id="b7634-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="561be-136">C#</span><span class="sxs-lookup"><span data-stu-id="561be-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/contactfolder-get-contacts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="b7634-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b7634-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="561be-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="561be-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/contactfolder-get-contacts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="b7634-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b7634-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="561be-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="561be-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/contactfolder-get-contacts-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="b7634-139">Java</span><span class="sxs-lookup"><span data-stu-id="b7634-139">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="561be-139">Java</span><span class="sxs-lookup"><span data-stu-id="561be-139">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/contactfolder-get-contacts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="b7634-140">响应</span><span class="sxs-lookup"><span data-stu-id="b7634-140">Response</span></span>
-<span data-ttu-id="b7634-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b7634-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="561be-140">响应</span><span class="sxs-lookup"><span data-stu-id="561be-140">Response</span></span>
+<span data-ttu-id="561be-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="561be-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -116,3 +116,4 @@ Content-length: 263
   "suppressions": [
   ]
 }-->
+
