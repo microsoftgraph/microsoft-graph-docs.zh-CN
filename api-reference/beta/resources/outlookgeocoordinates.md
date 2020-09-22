@@ -5,24 +5,24 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 92b2df1b9e08c242871f6995ee14364295a6b732
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: edc2d02919b876cbd77ddc8cd7995c1670628fc1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463300"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998369"
 ---
-# <a name="outlookgeocoordinates-resource-type"></a><span data-ttu-id="f043d-103">outlookGeoCoordinates 资源类型</span><span class="sxs-lookup"><span data-stu-id="f043d-103">outlookGeoCoordinates resource type</span></span>
+# <a name="outlookgeocoordinates-resource-type"></a><span data-ttu-id="99a8a-103">outlookGeoCoordinates 资源类型</span><span class="sxs-lookup"><span data-stu-id="99a8a-103">outlookGeoCoordinates resource type</span></span>
 
-<span data-ttu-id="f043d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f043d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="99a8a-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="99a8a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f043d-105">地理坐标、海拔，以及它们物理位置的精确度。</span><span class="sxs-lookup"><span data-stu-id="f043d-105">The geographic coordinates, elevation, and their degree of accuracy for a physical location.</span></span>
+<span data-ttu-id="99a8a-105">地理坐标、海拔，以及它们物理位置的精确度。</span><span class="sxs-lookup"><span data-stu-id="99a8a-105">The geographic coordinates, elevation, and their degree of accuracy for a physical location.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="f043d-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f043d-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="99a8a-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="99a8a-106">JSON representation</span></span>
 
-<span data-ttu-id="f043d-107">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f043d-107">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="99a8a-107">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="99a8a-107">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -42,14 +42,14 @@ ms.locfileid: "43463300"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="f043d-108">属性</span><span class="sxs-lookup"><span data-stu-id="f043d-108">Properties</span></span>
-| <span data-ttu-id="f043d-109">属性</span><span class="sxs-lookup"><span data-stu-id="f043d-109">Property</span></span>     | <span data-ttu-id="f043d-110">类型</span><span class="sxs-lookup"><span data-stu-id="f043d-110">Type</span></span>   |<span data-ttu-id="f043d-111">说明</span><span class="sxs-lookup"><span data-stu-id="f043d-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="99a8a-108">属性</span><span class="sxs-lookup"><span data-stu-id="99a8a-108">Properties</span></span>
+| <span data-ttu-id="99a8a-109">属性</span><span class="sxs-lookup"><span data-stu-id="99a8a-109">Property</span></span>     | <span data-ttu-id="99a8a-110">类型</span><span class="sxs-lookup"><span data-stu-id="99a8a-110">Type</span></span>   |<span data-ttu-id="99a8a-111">说明</span><span class="sxs-lookup"><span data-stu-id="99a8a-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f043d-112">accuracy</span><span class="sxs-lookup"><span data-stu-id="f043d-112">accuracy</span></span>|<span data-ttu-id="f043d-113">double</span><span class="sxs-lookup"><span data-stu-id="f043d-113">double</span></span>|<span data-ttu-id="f043d-114">纬度和经度的精确度。</span><span class="sxs-lookup"><span data-stu-id="f043d-114">The accuracy of the latitude and longitude.</span></span> <span data-ttu-id="f043d-115">举个例子，精确度可以以米为单位度量，如纬度和经度可以精确到 50 米内。</span><span class="sxs-lookup"><span data-stu-id="f043d-115">As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.</span></span>|
-|<span data-ttu-id="f043d-116">altitude</span><span class="sxs-lookup"><span data-stu-id="f043d-116">altitude</span></span>|<span data-ttu-id="f043d-117">double</span><span class="sxs-lookup"><span data-stu-id="f043d-117">double</span></span>|<span data-ttu-id="f043d-118">位置的海拔高度。</span><span class="sxs-lookup"><span data-stu-id="f043d-118">The altitude of the location.</span></span>|
-|<span data-ttu-id="f043d-119">altitudeAccuracy</span><span class="sxs-lookup"><span data-stu-id="f043d-119">altitudeAccuracy</span></span>|<span data-ttu-id="f043d-120">double</span><span class="sxs-lookup"><span data-stu-id="f043d-120">double</span></span>|<span data-ttu-id="f043d-121">海拔高度的精确度。</span><span class="sxs-lookup"><span data-stu-id="f043d-121">The accuracy of the altitude.</span></span>|
-|<span data-ttu-id="f043d-122">latitude</span><span class="sxs-lookup"><span data-stu-id="f043d-122">latitude</span></span>|<span data-ttu-id="f043d-123">double</span><span class="sxs-lookup"><span data-stu-id="f043d-123">double</span></span>|<span data-ttu-id="f043d-124">位置的纬度。</span><span class="sxs-lookup"><span data-stu-id="f043d-124">The latitude of the location.</span></span>|
-|<span data-ttu-id="f043d-125">longitude</span><span class="sxs-lookup"><span data-stu-id="f043d-125">longitude</span></span>|<span data-ttu-id="f043d-126">double</span><span class="sxs-lookup"><span data-stu-id="f043d-126">double</span></span>|<span data-ttu-id="f043d-127">位置的经度。</span><span class="sxs-lookup"><span data-stu-id="f043d-127">The longitude of the location.</span></span>|
+|<span data-ttu-id="99a8a-112">accuracy</span><span class="sxs-lookup"><span data-stu-id="99a8a-112">accuracy</span></span>|<span data-ttu-id="99a8a-113">double</span><span class="sxs-lookup"><span data-stu-id="99a8a-113">double</span></span>|<span data-ttu-id="99a8a-114">纬度和经度的精确度。</span><span class="sxs-lookup"><span data-stu-id="99a8a-114">The accuracy of the latitude and longitude.</span></span> <span data-ttu-id="99a8a-115">举个例子，精确度可以以米为单位度量，如纬度和经度可以精确到 50 米内。</span><span class="sxs-lookup"><span data-stu-id="99a8a-115">As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.</span></span>|
+|<span data-ttu-id="99a8a-116">altitude</span><span class="sxs-lookup"><span data-stu-id="99a8a-116">altitude</span></span>|<span data-ttu-id="99a8a-117">double</span><span class="sxs-lookup"><span data-stu-id="99a8a-117">double</span></span>|<span data-ttu-id="99a8a-118">位置的海拔高度。</span><span class="sxs-lookup"><span data-stu-id="99a8a-118">The altitude of the location.</span></span>|
+|<span data-ttu-id="99a8a-119">altitudeAccuracy</span><span class="sxs-lookup"><span data-stu-id="99a8a-119">altitudeAccuracy</span></span>|<span data-ttu-id="99a8a-120">double</span><span class="sxs-lookup"><span data-stu-id="99a8a-120">double</span></span>|<span data-ttu-id="99a8a-121">海拔高度的精确度。</span><span class="sxs-lookup"><span data-stu-id="99a8a-121">The accuracy of the altitude.</span></span>|
+|<span data-ttu-id="99a8a-122">latitude</span><span class="sxs-lookup"><span data-stu-id="99a8a-122">latitude</span></span>|<span data-ttu-id="99a8a-123">double</span><span class="sxs-lookup"><span data-stu-id="99a8a-123">double</span></span>|<span data-ttu-id="99a8a-124">位置的纬度。</span><span class="sxs-lookup"><span data-stu-id="99a8a-124">The latitude of the location.</span></span>|
+|<span data-ttu-id="99a8a-125">longitude</span><span class="sxs-lookup"><span data-stu-id="99a8a-125">longitude</span></span>|<span data-ttu-id="99a8a-126">double</span><span class="sxs-lookup"><span data-stu-id="99a8a-126">double</span></span>|<span data-ttu-id="99a8a-127">位置的经度。</span><span class="sxs-lookup"><span data-stu-id="99a8a-127">The longitude of the location.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -63,3 +63,5 @@ ms.locfileid: "43463300"
   "suppressions": []
 }
 -->
+
+
