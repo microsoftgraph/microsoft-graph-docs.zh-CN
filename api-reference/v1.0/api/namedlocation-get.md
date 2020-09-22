@@ -5,30 +5,30 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3978099156d8580c05e436d64cde46fd19f8f087
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: f05785844fd7ee67d0db6b89854e0bdbde94e381
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567312"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020861"
 ---
-# <a name="get-namedlocation"></a><span data-ttu-id="1add3-103">获取 namedLocation</span><span class="sxs-lookup"><span data-stu-id="1add3-103">Get namedLocation</span></span>
+# <a name="get-namedlocation"></a><span data-ttu-id="3f2fe-103">获取 namedLocation</span><span class="sxs-lookup"><span data-stu-id="3f2fe-103">Get namedLocation</span></span>
 
-<span data-ttu-id="1add3-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1add3-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3f2fe-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3f2fe-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="1add3-105">检索[namedLocation](../resources/namedlocation.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="1add3-105">Retrieve the properties and relationships of a [namedLocation](../resources/namedlocation.md) object.</span></span>
+<span data-ttu-id="3f2fe-105">检索 [namedLocation](../resources/namedlocation.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="3f2fe-105">Retrieve the properties and relationships of a [namedLocation](../resources/namedlocation.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1add3-106">权限</span><span class="sxs-lookup"><span data-stu-id="1add3-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="3f2fe-106">权限</span><span class="sxs-lookup"><span data-stu-id="3f2fe-106">Permissions</span></span>
 
-<span data-ttu-id="1add3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1add3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3f2fe-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3f2fe-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="1add3-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="1add3-109">Permission type</span></span>                        | <span data-ttu-id="1add3-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1add3-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="3f2fe-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="3f2fe-109">Permission type</span></span>                        | <span data-ttu-id="3f2fe-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3f2fe-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="1add3-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1add3-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="1add3-112">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="1add3-112">Policy.Read.All</span></span> |
-| <span data-ttu-id="1add3-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1add3-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1add3-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="1add3-114">Not supported.</span></span> |
-| <span data-ttu-id="1add3-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="1add3-115">Application</span></span>                            | <span data-ttu-id="1add3-116">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="1add3-116">Policy.Read.All</span></span> |
+| <span data-ttu-id="3f2fe-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3f2fe-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="3f2fe-112">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="3f2fe-112">Policy.Read.All</span></span> |
+| <span data-ttu-id="3f2fe-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3f2fe-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3f2fe-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="3f2fe-114">Not supported.</span></span> |
+| <span data-ttu-id="3f2fe-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="3f2fe-115">Application</span></span>                            | <span data-ttu-id="3f2fe-116">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="3f2fe-116">Policy.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1add3-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1add3-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3f2fe-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3f2fe-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,32 +36,32 @@ ms.locfileid: "46567312"
 GET /identity/conditionalAccess/namedLocations/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="1add3-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="1add3-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="3f2fe-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="3f2fe-118">Optional query parameters</span></span>
 
-<span data-ttu-id="1add3-119">此方法支持 `select` OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="1add3-119">This method supports the `select` OData query parameter to help customize the response.</span></span> <span data-ttu-id="1add3-120">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="1add3-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="3f2fe-119">此方法支持 `select` OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="3f2fe-119">This method supports the `select` OData query parameter to help customize the response.</span></span> <span data-ttu-id="3f2fe-120">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="3f2fe-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="1add3-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="1add3-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="3f2fe-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="3f2fe-121">Request headers</span></span>
 
-| <span data-ttu-id="1add3-122">名称</span><span class="sxs-lookup"><span data-stu-id="1add3-122">Name</span></span>      |<span data-ttu-id="1add3-123">说明</span><span class="sxs-lookup"><span data-stu-id="1add3-123">Description</span></span>|
+| <span data-ttu-id="3f2fe-122">名称</span><span class="sxs-lookup"><span data-stu-id="3f2fe-122">Name</span></span>      |<span data-ttu-id="3f2fe-123">说明</span><span class="sxs-lookup"><span data-stu-id="3f2fe-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="1add3-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="1add3-124">Authorization</span></span> | <span data-ttu-id="1add3-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="1add3-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3f2fe-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="3f2fe-124">Authorization</span></span> | <span data-ttu-id="3f2fe-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="3f2fe-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1add3-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="1add3-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3f2fe-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="3f2fe-127">Request body</span></span>
 
-<span data-ttu-id="1add3-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="1add3-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="3f2fe-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="3f2fe-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1add3-129">响应</span><span class="sxs-lookup"><span data-stu-id="1add3-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3f2fe-129">响应</span><span class="sxs-lookup"><span data-stu-id="3f2fe-129">Response</span></span>
 
-<span data-ttu-id="1add3-130">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[namedLocation](../resources/namedlocation.md)对象。</span><span class="sxs-lookup"><span data-stu-id="1add3-130">If successful, this method returns a `200 OK` response code and the requested [namedLocation](../resources/namedlocation.md) object in the response body.</span></span>
+<span data-ttu-id="3f2fe-130">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [namedLocation](../resources/namedlocation.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="3f2fe-130">If successful, this method returns a `200 OK` response code and the requested [namedLocation](../resources/namedlocation.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="1add3-131">示例</span><span class="sxs-lookup"><span data-stu-id="1add3-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="3f2fe-131">示例</span><span class="sxs-lookup"><span data-stu-id="3f2fe-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="1add3-132">请求</span><span class="sxs-lookup"><span data-stu-id="1add3-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="3f2fe-132">请求</span><span class="sxs-lookup"><span data-stu-id="3f2fe-132">Request</span></span>
 
-<span data-ttu-id="1add3-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="1add3-133">The following is an example of the request.</span></span>
+<span data-ttu-id="3f2fe-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="3f2fe-133">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="1add3-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="1add3-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="3f2fe-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="3f2fe-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_namedlocation"
@@ -70,30 +70,30 @@ GET /identity/conditionalAccess/namedLocations/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/namedLocations/0854951d-5fc0-4eb1-b392-9b2c9d7949c2
 ```
-# <a name="c"></a>[<span data-ttu-id="1add3-135">C#</span><span class="sxs-lookup"><span data-stu-id="1add3-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="3f2fe-135">C#</span><span class="sxs-lookup"><span data-stu-id="3f2fe-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-namedlocation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1add3-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1add3-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="3f2fe-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3f2fe-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-namedlocation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1add3-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1add3-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="3f2fe-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3f2fe-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-namedlocation-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="1add3-138">Java</span><span class="sxs-lookup"><span data-stu-id="1add3-138">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="3f2fe-138">Java</span><span class="sxs-lookup"><span data-stu-id="3f2fe-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-namedlocation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="1add3-139">响应</span><span class="sxs-lookup"><span data-stu-id="1add3-139">Response</span></span>
+### <a name="response"></a><span data-ttu-id="3f2fe-139">响应</span><span class="sxs-lookup"><span data-stu-id="3f2fe-139">Response</span></span>
 
-<span data-ttu-id="1add3-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="1add3-140">The following is an example of the response.</span></span>
+<span data-ttu-id="3f2fe-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="3f2fe-140">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="1add3-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="1add3-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="3f2fe-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="3f2fe-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -135,3 +135,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
