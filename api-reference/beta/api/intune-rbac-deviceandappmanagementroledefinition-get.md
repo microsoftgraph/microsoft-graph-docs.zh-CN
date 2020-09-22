@@ -3,35 +3,35 @@ title: 获取 deviceAndAppManagementRoleDefinition
 description: 读取 deviceAndAppManagementRoleDefinition 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c3ce0285275c01340fd218381a14d86ec3cb8a34
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d4b4f93093c7481a9ce3a9d1fa0b27ae2adcf25e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437630"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044933"
 ---
-# <a name="get-deviceandappmanagementroledefinition"></a><span data-ttu-id="0c6dc-103">获取 deviceAndAppManagementRoleDefinition</span><span class="sxs-lookup"><span data-stu-id="0c6dc-103">Get deviceAndAppManagementRoleDefinition</span></span>
+# <a name="get-deviceandappmanagementroledefinition"></a><span data-ttu-id="3a834-103">获取 deviceAndAppManagementRoleDefinition</span><span class="sxs-lookup"><span data-stu-id="3a834-103">Get deviceAndAppManagementRoleDefinition</span></span>
 
-<span data-ttu-id="0c6dc-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0c6dc-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3a834-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3a834-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="0c6dc-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="0c6dc-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="3a834-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="3a834-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="0c6dc-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="0c6dc-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3a834-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="3a834-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="0c6dc-107">读取 [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="0c6dc-107">Read properties and relationships of the [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) object.</span></span>
+<span data-ttu-id="3a834-107">读取 [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="3a834-107">Read properties and relationships of the [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="0c6dc-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="0c6dc-108">Prerequisites</span></span>
-<span data-ttu-id="0c6dc-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0c6dc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="3a834-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="3a834-108">Prerequisites</span></span>
+<span data-ttu-id="3a834-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3a834-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0c6dc-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="0c6dc-111">Permission type</span></span>|<span data-ttu-id="0c6dc-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="0c6dc-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="3a834-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="3a834-111">Permission type</span></span>|<span data-ttu-id="3a834-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="3a834-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="0c6dc-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0c6dc-113">Delegated (work or school account)</span></span>|<span data-ttu-id="0c6dc-114">DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="0c6dc-114">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span>|
-|<span data-ttu-id="0c6dc-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0c6dc-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0c6dc-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="0c6dc-116">Not supported.</span></span>|
-|<span data-ttu-id="0c6dc-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="0c6dc-117">Application</span></span>|<span data-ttu-id="0c6dc-118">DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="0c6dc-118">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span>|
+|<span data-ttu-id="3a834-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3a834-113">Delegated (work or school account)</span></span>|<span data-ttu-id="3a834-114">DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="3a834-114">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span>|
+|<span data-ttu-id="3a834-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3a834-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3a834-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="3a834-116">Not supported.</span></span>|
+|<span data-ttu-id="3a834-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="3a834-117">Application</span></span>|<span data-ttu-id="3a834-118">DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="3a834-118">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="0c6dc-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0c6dc-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3a834-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3a834-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -41,31 +41,31 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}
 GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/roleDefinition
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="0c6dc-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="0c6dc-120">Optional query parameters</span></span>
-<span data-ttu-id="0c6dc-121">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="0c6dc-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="3a834-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="3a834-120">Optional query parameters</span></span>
+<span data-ttu-id="3a834-121">此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="3a834-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="0c6dc-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="0c6dc-122">Request headers</span></span>
-|<span data-ttu-id="0c6dc-123">标头</span><span class="sxs-lookup"><span data-stu-id="0c6dc-123">Header</span></span>|<span data-ttu-id="0c6dc-124">值</span><span class="sxs-lookup"><span data-stu-id="0c6dc-124">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3a834-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="3a834-122">Request headers</span></span>
+|<span data-ttu-id="3a834-123">标头</span><span class="sxs-lookup"><span data-stu-id="3a834-123">Header</span></span>|<span data-ttu-id="3a834-124">值</span><span class="sxs-lookup"><span data-stu-id="3a834-124">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="0c6dc-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="0c6dc-125">Authorization</span></span>|<span data-ttu-id="0c6dc-126">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="0c6dc-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="0c6dc-127">接受</span><span class="sxs-lookup"><span data-stu-id="0c6dc-127">Accept</span></span>|<span data-ttu-id="0c6dc-128">application/json</span><span class="sxs-lookup"><span data-stu-id="0c6dc-128">application/json</span></span>|
+|<span data-ttu-id="3a834-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="3a834-125">Authorization</span></span>|<span data-ttu-id="3a834-126">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="3a834-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="3a834-127">接受</span><span class="sxs-lookup"><span data-stu-id="3a834-127">Accept</span></span>|<span data-ttu-id="3a834-128">application/json</span><span class="sxs-lookup"><span data-stu-id="3a834-128">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="0c6dc-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="0c6dc-129">Request body</span></span>
-<span data-ttu-id="0c6dc-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="0c6dc-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3a834-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="3a834-129">Request body</span></span>
+<span data-ttu-id="3a834-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="3a834-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0c6dc-131">响应</span><span class="sxs-lookup"><span data-stu-id="0c6dc-131">Response</span></span>
-<span data-ttu-id="0c6dc-132">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="0c6dc-132">If successful, this method returns a `200 OK` response code and [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="3a834-131">响应</span><span class="sxs-lookup"><span data-stu-id="3a834-131">Response</span></span>
+<span data-ttu-id="3a834-132">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="3a834-132">If successful, this method returns a `200 OK` response code and [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0c6dc-133">示例</span><span class="sxs-lookup"><span data-stu-id="0c6dc-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3a834-133">示例</span><span class="sxs-lookup"><span data-stu-id="3a834-133">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="0c6dc-134">请求</span><span class="sxs-lookup"><span data-stu-id="0c6dc-134">Request</span></span>
-<span data-ttu-id="0c6dc-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="0c6dc-135">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="3a834-134">请求</span><span class="sxs-lookup"><span data-stu-id="3a834-134">Request</span></span>
+<span data-ttu-id="3a834-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="3a834-135">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDefinitionId}
 ```
 
-### <a name="response"></a><span data-ttu-id="0c6dc-136">响应</span><span class="sxs-lookup"><span data-stu-id="0c6dc-136">Response</span></span>
-<span data-ttu-id="0c6dc-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="0c6dc-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="3a834-136">响应</span><span class="sxs-lookup"><span data-stu-id="3a834-136">Response</span></span>
+<span data-ttu-id="3a834-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="3a834-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -123,6 +123,9 @@ Content-Length: 1391
   }
 }
 ```
+
+
+
 
 
 

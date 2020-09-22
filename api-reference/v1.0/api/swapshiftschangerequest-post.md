@@ -5,32 +5,32 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fae65ef9812b68bea46960966af7caf694cb3b37
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 3f803e41b9a78209d400048085454dc6b1aebfe0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155017"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045484"
 ---
-# <a name="create-swapshiftschangerequest"></a><span data-ttu-id="88be0-103">创建 swapShiftsChangeRequest</span><span class="sxs-lookup"><span data-stu-id="88be0-103">Create swapShiftsChangeRequest</span></span>
+# <a name="create-swapshiftschangerequest"></a><span data-ttu-id="67424-103">创建 swapShiftsChangeRequest</span><span class="sxs-lookup"><span data-stu-id="67424-103">Create swapShiftsChangeRequest</span></span>
 
-<span data-ttu-id="88be0-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="88be0-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="67424-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="67424-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="88be0-105">创建[swapShiftsChangeRequest](../resources/swapshiftschangerequest.md)对象的实例。</span><span class="sxs-lookup"><span data-stu-id="88be0-105">Create an instance of a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.</span></span>
+<span data-ttu-id="67424-105">创建 [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) 对象的实例。</span><span class="sxs-lookup"><span data-stu-id="67424-105">Create an instance of a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="88be0-106">权限</span><span class="sxs-lookup"><span data-stu-id="88be0-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="67424-106">权限</span><span class="sxs-lookup"><span data-stu-id="67424-106">Permissions</span></span>
 
-<span data-ttu-id="88be0-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="88be0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="67424-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="67424-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="88be0-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="88be0-109">Permission type</span></span>                        | <span data-ttu-id="88be0-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="88be0-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="67424-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="67424-109">Permission type</span></span>                        | <span data-ttu-id="67424-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="67424-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-|<span data-ttu-id="88be0-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="88be0-111">Delegated (work or school account)</span></span> |<span data-ttu-id="88be0-112">Schedule。 All，Group. 所有</span><span class="sxs-lookup"><span data-stu-id="88be0-112">Schedule.ReadWrite.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="88be0-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="88be0-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="88be0-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="88be0-114">Not supported.</span></span>    |
-|<span data-ttu-id="88be0-115">Application</span><span class="sxs-lookup"><span data-stu-id="88be0-115">Application</span></span> | <span data-ttu-id="88be0-116">Schedule.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88be0-116">Schedule.ReadWrite.All</span></span> |
+|<span data-ttu-id="67424-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="67424-111">Delegated (work or school account)</span></span> |<span data-ttu-id="67424-112">Schedule。 All，Group. 所有</span><span class="sxs-lookup"><span data-stu-id="67424-112">Schedule.ReadWrite.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="67424-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="67424-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="67424-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="67424-114">Not supported.</span></span>    |
+|<span data-ttu-id="67424-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="67424-115">Application</span></span> | <span data-ttu-id="67424-116">Schedule.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="67424-116">Schedule.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="88be0-117">**注意**：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="88be0-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="88be0-118">全局管理员可以访问他们不是其成员的组。</span><span class="sxs-lookup"><span data-stu-id="88be0-118">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="67424-117">**注意**：此 API 支持管理员权限。</span><span class="sxs-lookup"><span data-stu-id="67424-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="67424-118">全局管理员可以访问他们不是其成员的组。</span><span class="sxs-lookup"><span data-stu-id="67424-118">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="88be0-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="88be0-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="67424-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="67424-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,29 +38,29 @@ ms.locfileid: "44155017"
 POST /teams/{teamId}/schedule/swapShiftsChangeRequests
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="88be0-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="88be0-120">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="67424-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="67424-120">Optional query parameters</span></span>
 
-<span data-ttu-id="88be0-121">此方法支持一些 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="88be0-121">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="88be0-122">有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="88be0-122">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="67424-121">此方法支持一些 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="67424-121">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="67424-122">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="67424-122">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="88be0-123">请求头</span><span class="sxs-lookup"><span data-stu-id="88be0-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="67424-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="67424-123">Request headers</span></span>
 
-| <span data-ttu-id="88be0-124">名称</span><span class="sxs-lookup"><span data-stu-id="88be0-124">Name</span></span>      |<span data-ttu-id="88be0-125">说明</span><span class="sxs-lookup"><span data-stu-id="88be0-125">Description</span></span>|
+| <span data-ttu-id="67424-124">名称</span><span class="sxs-lookup"><span data-stu-id="67424-124">Name</span></span>      |<span data-ttu-id="67424-125">说明</span><span class="sxs-lookup"><span data-stu-id="67424-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="88be0-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="88be0-126">Authorization</span></span> | <span data-ttu-id="88be0-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="88be0-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="88be0-129">Content-type</span><span class="sxs-lookup"><span data-stu-id="88be0-129">Content-type</span></span> | <span data-ttu-id="88be0-p105">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="88be0-p105">application/json. Required.</span></span>|
+| <span data-ttu-id="67424-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="67424-126">Authorization</span></span> | <span data-ttu-id="67424-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="67424-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="67424-129">Content-type</span><span class="sxs-lookup"><span data-stu-id="67424-129">Content-type</span></span> | <span data-ttu-id="67424-p105">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="67424-p105">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="88be0-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="88be0-132">Request body</span></span>
-<span data-ttu-id="88be0-133">在请求正文中，提供新的[swapShiftsChangeRequest](../resources/swapshiftschangerequest.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="88be0-133">In the request body, provide a JSON representation of a new [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="67424-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="67424-132">Request body</span></span>
+<span data-ttu-id="67424-133">在请求正文中，提供新的 [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="67424-133">In the request body, provide a JSON representation of a new [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="88be0-134">响应</span><span class="sxs-lookup"><span data-stu-id="88be0-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="67424-134">响应</span><span class="sxs-lookup"><span data-stu-id="67424-134">Response</span></span>
 
-<span data-ttu-id="88be0-135">如果成功，此方法在响应`200 OK`正文中返回响应代码和创建的[swapShiftsChangeRequest](../resources/swapshiftschangerequest.md)对象。</span><span class="sxs-lookup"><span data-stu-id="88be0-135">If successful, this method returns a `200 OK` response code and the created [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object in the response body.</span></span>
+<span data-ttu-id="67424-135">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和创建的 [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="67424-135">If successful, this method returns a `200 OK` response code and the created [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="88be0-136">示例</span><span class="sxs-lookup"><span data-stu-id="88be0-136">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="67424-136">示例</span><span class="sxs-lookup"><span data-stu-id="67424-136">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="88be0-137">请求</span><span class="sxs-lookup"><span data-stu-id="88be0-137">Request</span></span>
+### <a name="request"></a><span data-ttu-id="67424-137">请求</span><span class="sxs-lookup"><span data-stu-id="67424-137">Request</span></span>
 
-<span data-ttu-id="88be0-138">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="88be0-138">The following is an example of the request.</span></span>
+<span data-ttu-id="67424-138">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="67424-138">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request"
 }-->
@@ -78,11 +78,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="88be0-139">响应</span><span class="sxs-lookup"><span data-stu-id="88be0-139">Response</span></span>
+### <a name="response"></a><span data-ttu-id="67424-139">响应</span><span class="sxs-lookup"><span data-stu-id="67424-139">Response</span></span>
 
-<span data-ttu-id="88be0-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="88be0-140">The following is an example of the response.</span></span>
+<span data-ttu-id="67424-140">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="67424-140">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="88be0-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="88be0-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="67424-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="67424-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -121,3 +121,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

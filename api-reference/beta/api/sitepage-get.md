@@ -6,69 +6,68 @@ title: 获取网站中的页面
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 9854dff5708d12b5e48c0cd64567ff3ddb12d832
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2c7e93ea3fc2378bb056dbd60a8616eefcfbae20
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453175"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044450"
 ---
-# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="4d0f2-103">在网站的 "网站页面" 列表中获取页面</span><span class="sxs-lookup"><span data-stu-id="4d0f2-103">Get a page in the site pages list of a site</span></span>
+# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="e1b41-103">在网站的 "网站页面" 列表中获取页面</span><span class="sxs-lookup"><span data-stu-id="e1b41-103">Get a page in the site pages list of a site</span></span>
 
-<span data-ttu-id="4d0f2-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="4d0f2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e1b41-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e1b41-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4d0f2-105">返回[网站][]的 "网站页面"[列表][]中的[sitePage][]的元数据。</span><span class="sxs-lookup"><span data-stu-id="4d0f2-105">Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].</span></span>
+<span data-ttu-id="e1b41-105">返回[网站][]的 "网站页面"[列表][]中的[sitePage][]的元数据。</span><span class="sxs-lookup"><span data-stu-id="e1b41-105">Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].</span></span>
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
-[网站]: ../resources/site.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="4d0f2-109">权限</span><span class="sxs-lookup"><span data-stu-id="4d0f2-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e1b41-109">权限</span><span class="sxs-lookup"><span data-stu-id="e1b41-109">Permissions</span></span>
 
-<span data-ttu-id="4d0f2-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4d0f2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e1b41-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e1b41-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4d0f2-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="4d0f2-112">Permission type</span></span>      | <span data-ttu-id="4d0f2-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4d0f2-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e1b41-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="e1b41-112">Permission type</span></span>      | <span data-ttu-id="e1b41-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e1b41-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4d0f2-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4d0f2-114">Delegated (work or school account)</span></span> | <span data-ttu-id="4d0f2-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4d0f2-115">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="4d0f2-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4d0f2-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4d0f2-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="4d0f2-117">Not supported.</span></span>    |
-|<span data-ttu-id="4d0f2-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="4d0f2-118">Application</span></span> | <span data-ttu-id="4d0f2-119">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4d0f2-119">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="e1b41-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e1b41-114">Delegated (work or school account)</span></span> | <span data-ttu-id="e1b41-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e1b41-115">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="e1b41-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e1b41-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e1b41-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="e1b41-117">Not supported.</span></span>    |
+|<span data-ttu-id="e1b41-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="e1b41-118">Application</span></span> | <span data-ttu-id="e1b41-119">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e1b41-119">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4d0f2-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4d0f2-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e1b41-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e1b41-120">HTTP request</span></span>
 
 ```http
 GET /sites/{site-id}/pages/{page-id}
 ```
 
-## <a name="example"></a><span data-ttu-id="4d0f2-121">示例</span><span class="sxs-lookup"><span data-stu-id="4d0f2-121">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e1b41-121">示例</span><span class="sxs-lookup"><span data-stu-id="e1b41-121">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="4d0f2-122">请求</span><span class="sxs-lookup"><span data-stu-id="4d0f2-122">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="e1b41-122">请求</span><span class="sxs-lookup"><span data-stu-id="e1b41-122">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="4d0f2-123">HTTP</span><span class="sxs-lookup"><span data-stu-id="4d0f2-123">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e1b41-123">HTTP</span><span class="sxs-lookup"><span data-stu-id="e1b41-123">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-page", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```msgraph-interactive
 GET /sites/{site-id}/pages/{page-id}
 ```
-# <a name="c"></a>[<span data-ttu-id="4d0f2-124">C#</span><span class="sxs-lookup"><span data-stu-id="4d0f2-124">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e1b41-124">C#</span><span class="sxs-lookup"><span data-stu-id="e1b41-124">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-page-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4d0f2-125">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4d0f2-125">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e1b41-125">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e1b41-125">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-page-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4d0f2-126">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4d0f2-126">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e1b41-126">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e1b41-126">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-page-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="4d0f2-127">响应</span><span class="sxs-lookup"><span data-stu-id="4d0f2-127">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="e1b41-127">响应</span><span class="sxs-lookup"><span data-stu-id="e1b41-127">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
@@ -164,3 +163,5 @@ Content-type: application/json
   ]
 }
 -->
+
+
