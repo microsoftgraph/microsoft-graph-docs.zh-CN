@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 8641760070299e8c94271b5a3c18edd4959d8e70
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 69bcef2996fff224a5d5839667087d860f4f5b2c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218014"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997174"
 ---
 # <a name="delete-agreement"></a>删除协议
 
@@ -18,8 +18,8 @@ ms.locfileid: "43218014"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除[协议](../resources/agreement.md)对象。
-## <a name="permissions"></a>Permissions
+删除 [协议](../resources/agreement.md) 对象。
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -93,3 +93,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

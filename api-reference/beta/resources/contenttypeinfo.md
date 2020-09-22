@@ -6,16 +6,16 @@ title: ContentTypeInfo
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 0aa9518f2b9597f910586ab49284dfe6f44a17ad
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fa6a72974714d333d44b3ef9160d3b5c9e92157a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507427"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998908"
 ---
 # <a name="contenttypeinfo-resource-type"></a>ContentTypeInfo 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "42507427"
 | 属性名称  | 类型    | 说明
 |:---------------|:--------|:--------------------------------------------------
 | **id**         | string  | 内容类型的 ID。
-| **名称**       | string  | 内容类型的名称。
+| **name**       | string  | 内容类型的名称。
 
 <!--
 {
@@ -50,3 +50,5 @@ ms.locfileid: "42507427"
   "suppressions": []
 }
 -->
+
+

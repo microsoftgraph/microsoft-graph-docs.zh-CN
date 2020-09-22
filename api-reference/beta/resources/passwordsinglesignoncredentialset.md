@@ -5,16 +5,16 @@ localization_priority: Normal
 author: bharathramh92
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9191362f0e6c98d57c609445fbe1caf3bdd775a2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 87aafa6e21171088f9b4b5eac318f6c9551e18ee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522002"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998199"
 ---
 # <a name="passwordsinglesignoncredentialset-resource-type"></a>passwordSingleSignOnCredentialSet 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "42522002"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|凭据|[凭据](credential.md)集合|定义完整的登录流的 credential 对象的列表。|
+|凭据|[凭据](credential.md) 集合|定义完整的登录流的 credential 对象的列表。|
 |id|String|此凭据集所属的用户或组的 ID。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -56,3 +56,5 @@ ms.locfileid: "42522002"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

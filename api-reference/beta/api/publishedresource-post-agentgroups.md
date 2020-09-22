@@ -1,16 +1,16 @@
 ---
 title: 将 publishedResource 分配给 onPremisesAgentGroup
-description: 将**publishedResource**对象分配给**onPremisesAgentGroup**对象。
+description: 将 **publishedResource** 对象分配给 **onPremisesAgentGroup** 对象。
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 12a30d04b27b0ed098fd12c71fabed90fa321cf8
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 6654f4e9b9c67d8fd6b9df58b9a1dfd91a79076c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199996"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999172"
 ---
 # <a name="assign-publishedresource-to-onpremisesagentgroup"></a>将 publishedResource 分配给 onPremisesAgentGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "43199996"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将[publishedResource](../resources/publishedresource.md)对象分配给[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象。
+将 [publishedResource](../resources/publishedresource.md) 对象分配给 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "43199996"
 |:--------------------------------------|:---------------------------------------------------------|
 | 委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,11 +46,11 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}/ag
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[onPremisesAgentGroup](../resources/onpremisesagentgroup.md)对象的 JSON 表示形式。
+在请求正文中，提供 [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[publishedResource](../resources/publishedresource.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [publishedResource](../resources/publishedresource.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -97,3 +97,5 @@ HTTP/1.1 204
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

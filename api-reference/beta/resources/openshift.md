@@ -5,30 +5,30 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e544f54c7fbf015ed1050ab23d76217b311bdeaf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 534756fd26fcac13d150e9cbd1782a8f334e5a2f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522191"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998563"
 ---
 # <a name="openshift-resource-type"></a>openShift 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表[计划](../resources/schedule.md)中未分配的打开班次。
+代表 [计划](../resources/schedule.md)中未分配的打开班次。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [Create](../api/openshift-post.md) | [openShift](openshift.md) | 创建**openShift**对象的实例。 |
-| [List](../api/openshift-list.md) | [OpenShift](openshift.md)的集合 | 列出团队中的**openShift**对象的属性和关系。|
-| [获取](../api/openshift-get.md) | [openShift](openshift.md) | 读取**openShift**对象的属性和关系。 |
-| [更新](../api/openshift-update.md) | [openShift](openshift.md) | 更新**openShift**对象。 |
-| [删除](../api/openshift-delete.md) | 无 | 删除**openShift**对象。 |
+| [创建](../api/openshift-post.md) | [openShift](openshift.md) | 创建 **openShift** 对象的实例。 |
+| [List](../api/openshift-list.md) | [OpenShift](openshift.md)的集合 | 列出团队中的 **openShift** 对象的属性和关系。|
+| [获取](../api/openshift-get.md) | [openShift](openshift.md) | 读取 **openShift** 对象的属性和关系。 |
+| [更新](../api/openshift-update.md) | [openShift](openshift.md) | 更新 **openShift** 对象。 |
+| [删除](../api/openshift-delete.md) | 无 | 删除 **openShift** 对象。 |
 
 ## <a name="properties"></a>属性
 
@@ -72,3 +72,5 @@ ms.locfileid: "42522191"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

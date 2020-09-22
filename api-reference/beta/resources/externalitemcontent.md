@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: db0276307e824faa0c5606a8fb1212a0ad25e654
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: a9121648f35dd09d8fb87d4738bb2bf6e9b3960b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43805659"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998808"
 ---
 # <a name="externalitemcontent-resource-type"></a>externalItemContent 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "43805659"
 | 属性 | 类型   | 说明                                                                                 |
 |:---------|:-------|:--------------------------------------------------------------------------------------------|
 | 值    | String | ExternalItem 的内容。 此为必需属性。                                                 |
-| type     | 字符串 | Value 属性中的内容类型。 可能的值为 `text` 和 `html`。 必需。 |
+| type     | String | Value 属性中的内容类型。 可能的值为 `text` 和 `html`。 必需。 |
 
 ## <a name="relationships"></a>关系
 
@@ -63,3 +63,5 @@ ms.locfileid: "43805659"
   "tocPath": "",
   "suppressions": []
 }-->
+
+

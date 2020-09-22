@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 7e0c5b2b08c2a901f259863f05a4dff0e8e46a00
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: c9f9958750cca1aaa40ba9394832e5974bed8cc3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312119"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998360"
 ---
 # <a name="outlooktaskfolder-resource-type-deprecated"></a>outlookTaskFolder 资源类型 (弃用) 
 
@@ -95,3 +95,5 @@ ms.locfileid: "47312119"
   "suppressions": []
 }
 -->
+
+

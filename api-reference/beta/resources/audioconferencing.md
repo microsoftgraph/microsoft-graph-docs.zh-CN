@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ab74b8819cc8dec7d63d5072cee1f1a147accd16
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8cff9b4405dc853e8502fccd9311899bb397b758
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508120"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999004"
 ---
 # <a name="audioconferencing-resource-type"></a>audioConferencing 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "42508120"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示[onlineMeeting](onlinemeeting.md)的电话访问信息。
+表示 [onlineMeeting](onlinemeeting.md)的电话访问信息。
 
 ## <a name="properties"></a>属性
 
@@ -61,3 +61,5 @@ ms.locfileid: "42508120"
   "suppressions": []
 }
 -->
+
+

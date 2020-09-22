@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5352c6fdbe468a75c2db7f3831ef9349224c682b
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 1c0c7650c6637b8af0308bb74a644998788eecbf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107491"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999053"
 ---
 # <a name="create-calendar"></a>创建日历
 
@@ -132,3 +132,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

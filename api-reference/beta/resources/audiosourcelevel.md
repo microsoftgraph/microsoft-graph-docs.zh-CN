@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: beb67d906c5f159f94ab8f64863eb383286489b2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eb98e434540dd00529963c48ff3f3296e17e0c01
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508099"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998948"
 ---
 # <a name="audiosourcelevel-resource-type"></a>audioSourceLevel 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,8 +24,8 @@ ms.locfileid: "42508099"
 
 | 属性               | 类型    | 说明                                                                                         |
 | :--------------------- | :------ | :---------------------------------------------------------------------------------------------------|
-| duckOthers             | 布尔 | 允许此源在活动时有其他源。 如果设置为 true，则必须设置 ducking 级别。|
-| 块级                  | Int64   | 源的 Ducking 级别（如果`duckOthers`设置为`true`）。                                     |
+| duckOthers             | Boolean | 允许此源在活动时有其他源。 如果设置为 true，则必须设置 ducking 级别。|
+| 块级                  | Int64   | 源的 Ducking 级别（如果 `duckOthers` 设置为） `true` 。                                     |
 | 参与者            | String  | 源参与者音频流。                                                                |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -59,3 +59,5 @@ ms.locfileid: "42508099"
   "suppressions": []
 }
 -->
+
+

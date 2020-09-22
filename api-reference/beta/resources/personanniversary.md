@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 6d59ee0d95b4f5ad0a79ad86476e971e5f9e9896
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 9c6f979ae1bb0378b22b91494866f724c4fe6628
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812490"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997975"
 ---
 # <a name="personanniversary-resource-type"></a>personAnniversary 资源类型
 
@@ -83,3 +83,5 @@ ms.locfileid: "46812490"
   "date": "Date"
 }
 ```
+
+

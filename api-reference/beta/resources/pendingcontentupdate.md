@@ -6,12 +6,12 @@ author: JeremyKelley
 ms.date: 08/06/2019
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7862d8da186448d08d6dfd5691ae83e29bd57a5e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5e7291ac4591ba63bec96108dd46bf9561358bb4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521974"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998083"
 ---
 # <a name="pendingcontentupdate-resource-type"></a>pendingContentUpdate 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "42521974"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指示可能会影响**driveItem**的二进制内容的操作正在等待完成。
+指示可能会影响 **driveItem** 的二进制内容的操作正在等待完成。
 
 ## <a name="properties"></a>属性
 
@@ -55,3 +55,5 @@ ms.locfileid: "42521974"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

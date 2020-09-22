@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: 66453b6d8889f4d6bf1be22c41bd534daa94dc72
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 28b57aa0a6cb1f7684c26f3cf60ed531534f76a4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811075"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997555"
 ---
 # <a name="skypeforbusinessactivityuserdetail-resource-type"></a>skypeForBusinessActivityUserDetail 资源类型
 
@@ -50,10 +50,10 @@ ms.locfileid: "46811075"
 | participatedConferenceDialInOut3rdPartyCount | Int64             |
 | reportRefreshDate                        | 日期              |
 | userPrincipalName                        | String            |
-| isDeleted                                | 布尔值           |
+| isDeleted                                | Boolean           |
 | deletedDate                              | 日期              |
 | lastActivityDate                         | 日期              |
-| assignedProducts                         | 字符串集合 |
+| assignedProducts                         | String collection |
 | reportPeriod                             | String            |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -104,3 +104,5 @@ ms.locfileid: "46811075"
   "reportPeriod": "String"
 }
 ```
+
+

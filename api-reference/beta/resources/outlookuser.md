@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 25aae9eeea7c2bf216ec94ffa2f1ac9654e04d79
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 6473a7a3808982467f50bafc810cbca80e4ce0dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312108"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998339"
 ---
 # <a name="outlookuser-resource-type"></a>outlookUser 资源类型
 
@@ -80,3 +80,5 @@ ms.locfileid: "47312108"
   "suppressions": []
 }
 -->
+
+

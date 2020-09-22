@@ -6,21 +6,21 @@ title: ContentType
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: a051a8bb31cd138d351321255e77b7fb1517fe3e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7b08a6d215674ae0799838ef1488e2173336f070
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507448"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998929"
 ---
 # <a name="contenttype-resource-type"></a>ContentType 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **ContentType** 资源代表 SharePoint 中的_内容类型_。
-内容类型允许您定义一组列，这些列必须存在于列表中[**的**][listItem]每个[**列表**][list]中。
+内容类型允许您定义一组列，这些列必须存在于列表中 [**的**][listItem] 每个 [**列表**][list]中。
 
 [list]: list.md
 [listItem]: listitem.md
@@ -56,7 +56,7 @@ ms.locfileid: "42507448"
 | **hidden**        | boolean              | 指示内容类型是否隐藏于此列表的“新建”菜单中。
 | **id**            | string               | 内容类型的唯一标识符。
 | **inheritedFrom** | [itemReference][]    | 如果此内容类型继承自另一个作用域（如某个站点），则会提供对在其中定义内容类型的项的引用。
-| **名称**          | string               | 内容类型的名称。
+| **name**          | string               | 内容类型的名称。
 | **order**         | [contentTypeOrder][] | 指定在选择 UI 中显示内容类型的顺序。
 | **parentId**      | string               | 内容类型的唯一标识符。
 | **readOnly**      | boolean              | 如果为 `true`，则不能修改内容类型，除非此值首次设置为 `false`。
@@ -85,3 +85,5 @@ ms.locfileid: "42507448"
   "suppressions": []
 }
 -->
+
+

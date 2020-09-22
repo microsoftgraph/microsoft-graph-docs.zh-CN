@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 90b068127c4ed0a4bad53be825499c7994c35e80
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: d84abad95f0165d89adc0ea5cc8bae6e5c140eb7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123361"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997296"
 ---
 # <a name="get-administrativeunit"></a>获取 administrativeUnit
 
@@ -18,9 +18,9 @@ ms.locfileid: "43123361"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[administrativeUnit](../resources/administrativeunit.md)对象的属性和关系。
+检索 [administrativeUnit](../resources/administrativeunit.md) 对象的属性和关系。
 
-由于**administrativeUnit**资源支持[扩展](/graph/extensibility-overview)，因此您还可以使用此`GET`操作获取**administrativeUnit**实例中的自定义属性和扩展数据。
+由于 **administrativeUnit** 资源支持 [扩展](/graph/extensibility-overview)，因此您还可以使用此 `GET` 操作获取 **administrativeUnit** 实例中的自定义属性和扩展数据。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -30,7 +30,7 @@ ms.locfileid: "43123361"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AdministrativeUnit、AdministrativeUnit、Directory.accessasuser.all、all、、all、all 和的所有子目录。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | AdministrativeUnit、AdministrativeUnit、all、all、all、All 和所有的 |
+|应用程序 | AdministrativeUnit、AdministrativeUnit、all、all、all、All 和所有的 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +50,7 @@ GET /administrativeUnits/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[administrativeUnit](../resources/administrativeunit.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [administrativeUnit](../resources/administrativeunit.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -119,3 +119,5 @@ Content-length: 134
   ]
 }
 -->
+
+

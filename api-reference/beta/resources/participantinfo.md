@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: bd9c57961bee93e7d01e504bccb8671a8f1dd449
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b48c8d9e8e2b7b39a63b919ff30178d8c8ac8536
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522030"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998241"
 ---
 # <a name="participantinfo-resource-type"></a>participantInfo 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,8 +25,8 @@ ms.locfileid: "42522030"
 | 属性       | 类型                          | 说明                                                                                                                                                |
 |:---------------|:------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | countryCode    | String                        | 呼叫开始时参与者最佳估计物理位置的 ISO 3166-1 Alpha-2 国家/地区代码。 只读。                             |
-| endpointType   | String                        | 参与者正在使用的终结点的类型。 可能的值包括`default`： `skypeForBusiness`、或`skypeForBusinessVoipPhone`。 只读。              |
-| 窃取       | [identitySet](identityset.md) | 与此参与者关联的[了解 identityset](identityset.md) 。 只读。                                                                             |
+| endpointType   | String                        | 参与者正在使用的终结点的类型。 可能的值包括： `default` 、 `skypeForBusiness` 或 `skypeForBusinessVoipPhone` 。 只读。              |
+| 窃取       | [identitySet](identityset.md) | 与此参与者关联的 [了解 identityset](identityset.md) 。 只读。                                                                             |
 | languageId     | String                        | 语言区域性字符串。 只读。                                                                                                                    |
 | 范围         | String                        | 参与者的家乡区域。 它可以是国家/地区、一个洲或更大的地理区域。 这不会根据参与者的当前物理位置而变化，这与 countryCode 不同。 只读。 |
 
@@ -66,3 +66,5 @@ ms.locfileid: "42522030"
   "suppressions": []
 }
 -->
+
+

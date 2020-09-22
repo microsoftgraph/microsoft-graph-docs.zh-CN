@@ -3,14 +3,14 @@ title: remoteLock 操作
 description: 远程锁定
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1cc86617a50634fd4e0a34e02f8846a857e4e13b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 862aec8ab3e0742f6c6d75e8c06e772c7f836310
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450557"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997388"
 ---
 # <a name="remotelock-action"></a>remoteLock 操作
 
@@ -65,6 +65,9 @@ POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -1,24 +1,24 @@
 ---
 title: person 资源类型
-description: 有关来自邮件、联系人和社交网络的人员的信息聚合。用户可以是本地联系人、来自社交网络的联系人、组织的目录以及来自最近通信（例如电子邮件和 Skype）的人员。
+description: 有关来自邮件、联系人和社交网络的人员的信息聚合。用户可以是本地联系人、来自社交网络的联系人、组织的目录以及来自最近通信 (（如电子邮件和 Skype) ）的人员。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 4df5f82bd14ba56969c26facef82b59f3ac7e3f0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc63a75af497a2402955c39a2bcfc8efe370c782
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521937"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998038"
 ---
 # <a name="person-resource-type"></a>person 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-有关来自邮件、联系人和社交网络的人员的信息聚合。 用户可以是本地联系人、来自社交网络的联系人、组织的目录以及来自最近通信（例如电子邮件和 Skype）的人员。
+有关来自邮件、联系人和社交网络的人员的信息聚合。用户可以是本地联系人、来自社交网络的联系人、组织的目录以及来自最近通信 (（如电子邮件和 Skype) ）的人员。
 
 ## <a name="methods"></a>方法
 
@@ -30,27 +30,27 @@ ms.locfileid: "42521937"
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|birthday|string|人员的生日。|
-|companyName|string|人员的公司名称。|
-|department|string|人员的部门。|
+|birthday|字符串|人员的生日。|
+|companyName|字符串|人员的公司名称。|
+|department|字符串|人员的部门。|
 |displayName|string|人员的显示名称。|
-|emailAddresses|[rankedEmailAddress](rankedemailaddress.md)集合|人员的电子邮件地址。|
-|givenName|string|人员的名字。|
-|id|string|人员的唯一标识符。 只读。|
+|emailAddresses|[rankedEmailAddress](rankedemailaddress.md) 集合|人员的电子邮件地址。|
+|givenName|字符串|人员的名字。|
+|id|string|人员的唯一标识符。只读。|
 |isFavorite|boolean|如果用户已将此人员标记为常用联系人，则为 `true`。|
-|mailboxType|string|由个人的电子邮件地址表示的邮箱类型。|
-|officeLocation|string|人员的办公室位置。|
-|personNotes|string|用户对此人员所做的自由格式备注。|
-|personType|string|人员类型，例如通讯组列表。|
+|mailboxType|字符串|由个人的电子邮件地址表示的邮箱类型。|
+|officeLocation|字符串|人员的办公室位置。|
+|personNotes|字符串|用户对此人员所做的自由格式备注。|
+|personType|字符串|人员类型，例如通讯组列表。|
 |phones|[phone](phone.md) collection|人员的电话号码。|
 |postalAddresses|[location](location.md) collection|人员的地址。|
-|profession|string|人员的职业。|
-|源|[personDataSource](persondatasource.md)集合|用户数据来自的源，例如目录或 Outlook 联系人。|
-|surname|string|人员的姓氏。|
+|profession|字符串|人员的职业。|
+|源|[personDataSource](persondatasource.md) 集合|用户数据来自的源，例如目录或 Outlook 联系人。|
+|surname|字符串|人员的姓氏。|
 |title|string|人员的职务。|
 |userPrincipalName|string|人员的用户主体名称 (UPN)。UPN 是人员基于 Internet 标准 [RFC 822](https://www.ietf.org/rfc/rfc0822.txt) 的 Internet 式登录名。按照惯例，此名称应映射到人员的电子邮件名称。常规格式为：别名@域。|
 |websites|[website](website.md) collection|人员的网站。|
-|yomiCompany|string|人员所在公司的注音日文名称。|
+|yomiCompany|字符串|人员所在公司的注音日文名称。|
 
 ## <a name="relationships"></a>关系
 
@@ -107,3 +107,5 @@ ms.locfileid: "42521937"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b00fd5e294e7688a1d2c43a9e3eddbed7dd77bf7
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: 967eb8092e5cf7e971ecc690dded4dbae3578f52
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45196965"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999067"
 ---
 # <a name="upgrade-an-app-in-a-team"></a>升级团队中的应用程序
 
@@ -20,7 +20,7 @@ ms.locfileid: "45196965"
 
 将[团队](../resources/team.md)中的[应用程序安装](../resources/teamsappinstallation.md)升级到最新版本的应用程序。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -105,3 +105,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

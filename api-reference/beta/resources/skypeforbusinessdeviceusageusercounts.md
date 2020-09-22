@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: 01867d92037f3bf80a7db2c25cc96a967ac560cd
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: e568e2bc396c5b7299441f8f8c513afcdada5c16
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808709"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997534"
 ---
 # <a name="skypeforbusinessdeviceusageusercounts-resource-type"></a>skypeForBusinessDeviceUsageUserCounts 资源类型
 
@@ -50,3 +50,5 @@ ms.locfileid: "46808709"
   "reportPeriod": "String"
 }
 ```
+
+

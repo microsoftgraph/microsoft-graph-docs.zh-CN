@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 14fab9555cda459b776f91d2f4a10ab4a172f9be
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ec38c4a2136a2c80261073e49ddd3a07ebfa8614
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812756"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997688"
 ---
 # <a name="sharepointsiteusagepages-resource-type"></a>sharePointSiteUsagePages 资源类型
 
@@ -44,3 +44,5 @@ ms.locfileid: "46812756"
   "reportPeriod": "String"
 }
 ```
+
+

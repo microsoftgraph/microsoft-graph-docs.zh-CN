@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a373789cb566653956aa9dad2732d1fac226f441
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 37df91802c8759f9490552329ca7edf22b3cea9d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123305"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997173"
 ---
 # <a name="update-administrativeunit"></a>更新 administrativeunit
 
@@ -18,7 +18,7 @@ ms.locfileid: "43123305"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[administrativeUnit](../resources/administrativeunit.md)对象的属性。
+更新 [administrativeUnit](../resources/administrativeunit.md) 对象的属性。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -27,7 +27,7 @@ ms.locfileid: "43123305"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AdministrativeUnit、Directory.accessasuser.all 和所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | AdministrativeUnit.ReadWrite.All |
+|应用程序 | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ PATCH /administrativeUnits/{id}
 |displayName|string|管理单元的显示名称。|
 |visibility|string|管理单元的可见性。 如果未设置，则默认值为 "public"。 可以设置为 "HiddenMembership"，这将隐藏非成员的成员资格。|
 
-由于**administrativeUnit**资源支持[扩展](/graph/extensibility-overview)，因此您可以使用该`PATCH`操作在现有**administrativeUnit**实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
+由于 **administrativeUnit** 资源支持 [扩展](/graph/extensibility-overview)，因此您可以使用该 `PATCH` 操作在现有 **administrativeUnit** 实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
 
 ## <a name="response"></a>响应
 
@@ -126,3 +126,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

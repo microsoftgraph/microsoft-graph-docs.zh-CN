@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: davidmu1
-ms.openlocfilehash: 162d6a0ccb927c6a48dc01dc3d1e716ab949d89d
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 0e87557a3c31ef1fb8f5ebbbdd2ff29b67d8ff8c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812048"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997898"
 ---
 # <a name="phone-resource-type"></a>电话资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "46812048"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|数字|string|电话号码。|
+|数字|字符串|电话号码。|
 |type|String|电话号码的类型。 可取值为：`home`、`business`、`mobile`、`other`、`assistant`、`homeFax`、`businessFax`、`otherFax`、`pager`、`radio`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -59,3 +59,5 @@ ms.locfileid: "46812048"
   "suppressions": []
 }
 -->
+
+

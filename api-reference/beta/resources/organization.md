@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: be1abf31e87695a7ec0ca074ea741fcd602ae814
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: ec213bd54fb7143fd9d1da57b849d3147eb8f580
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050902"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998481"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -40,15 +40,15 @@ ms.locfileid: "45050902"
 |:-------- |:---- |:----------- |
 | assignedPlans | [assignedPlan](assignedplan.md) 集合 | 与租户相关的服务计划的集合。不可为空。 |
 | businessPhones | 字符串集合 | 组织的电话号码。 **注意：** 虽然这是字符串集合，但是只能为该属性设置一个号码。 |
-| city | String | 组织地址所在的城市名称。 |
+| 城市 | String | 组织地址所在的城市名称。 |
 | country | String | 组织地址所在的国家/地区名称。 |
 | countryLetterCode | String | 组织所在的国家/地区缩写。 |
-| createdDateTime | DateTimeOffset | 组织的创建时间戳。 值无法修改，并在组织创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
+| createdDateTime | DateTimeOffset | 组织的创建时间戳。 值无法修改，并在组织创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
 | deletedDateTime | DateTimeOffset | 表示采用 ISO 8601 格式创建 Azure AD 的日期和时间，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
 | displayName | String | 租户的显示名称。 |
-| id | 字符串 | 租户 ID，表示组织（或租户）的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 |
+| id | 字符串 | 租户 ID，表示组织（或租户）的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为空。 只读。 |
 | isMultipleDataLocationsForServicesEnabled | 布尔值 | 如果组织支持多地理位置，则为 **true**；如果组织不支持多地理位置，则为 **false**；**为空**（默认）。 只读。 有关详细信息，请参阅 [OneDrive Online 多地理位置](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。 |
-| marketingNotificationEmails | String collection | 不可为 null。 |
+| marketingNotificationEmails | String collection | 不可为空。 |
 | objectType | String | 一个标识对象类型的字符串。对于租户，该值始终为“Company”。 |
 | onPremisesLastSyncDateTime | DateTimeOffset | 租户上次与本地目录同步的时间和日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 | onPremisesSyncEnabled | Boolean | 如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。 |
@@ -61,7 +61,7 @@ ms.locfileid: "45050902"
 | state | String | 组织地址所在的省/自治区/直辖市名称。 |
 | street | String | 组织地址所在的街道名称。 |
 | technicalNotificationMails |String collection | 不可为空。 |
-| verifiedDomains | [verifiedDomain](verifieddomain.md)集合|与该租户相关联的域集合。不可为 null。 |
+| verifiedDomains | [verifiedDomain](verifieddomain.md) 集合|与该租户相关联的域集合。不可为 null。 |
 
 ## <a name="relationships"></a>关系
 
@@ -133,3 +133,5 @@ ms.locfileid: "45050902"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 3515c4e051977b6ca0d358fa94c566b717b7c1c1
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 1b61321dfeb0a9aa14651e7d13ad7184b30c3423
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812412"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997786"
 ---
 # <a name="sharepointsiteusagedetail-resource-type"></a>sharePointSiteUsageDetail 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "46812412"
 | siteUrl                 | String  |
 | ownerDisplayName        | String  |
 | ownerPrincipalName      | String  |
-| isDeleted               | 布尔值 |
+| isDeleted               | Boolean |
 | lastActivityDate        | 日期    |
 | fileCount               | Int64   |
 | activeFileCount         | Int64   |
@@ -64,3 +64,5 @@ ms.locfileid: "46812412"
   "reportPeriod": "String"
 }
 ```
+
+

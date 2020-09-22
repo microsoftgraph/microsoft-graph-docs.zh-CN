@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 31e4ec08014907480cfe7bafaa21b061ec1434b6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fdec09b80eddfc4a4ea3f87425c211ed49f22ded
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522023"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998234"
 ---
 # <a name="participantmixerlevel-resource-type"></a>participantMixerLevel 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,10 +24,10 @@ ms.locfileid: "42522023"
 
 | 属性               | 类型                                                      | 说明                                                                                         |
 | :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------|
-| ducking                | [audioDuckingConfiguration](audioduckingconfiguration.md) | 此 partipant 自定义组合的其他源的 ducking （逐步淘汰 in 和 out）配置。       |
+| ducking                | [audioDuckingConfiguration](audioduckingconfiguration.md) | 此 partipant 自定义组合的其他源的 ducking (逐步淘汰) 配置。       |
 | exclusiveMode          | boolean                                                   | 是否应从组合中删除没有显式源级别的源。                       |
 | 参与者            | String                                                    | 为其配置了混合器的参与者。                                             |
-| sourceLevels           | [audioSourceLevel](audiosourcelevel.md)集合        | 其他源的级别配置。                                                              |
+| sourceLevels           | [audioSourceLevel](audiosourcelevel.md) 集合        | 其他源的级别配置。                                                              |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -89,3 +89,5 @@ ms.locfileid: "42522023"
   "suppressions": []
 }
 -->
+
+

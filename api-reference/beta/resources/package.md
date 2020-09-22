@@ -6,16 +6,16 @@ title: 程序包
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: d58d370abb628138040f34a0ffa6362c86b6a1ae
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 851e2bbe5bbacea6fe988dac1fa72fe32886cec0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522058"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998332"
 ---
 # <a name="package-resource-type"></a>包资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,3 +52,5 @@ ms.locfileid: "42522058"
   "suppressions": []
 }
 -->
+
+

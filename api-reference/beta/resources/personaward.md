@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 3031994e3b19fdd3962118c21d86a334c63781ea
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: cf9656eee15c2f537f7ba7e2727ce406850878c0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812951"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997944"
 ---
 # <a name="personaward-resource-type"></a>personAward 资源类型
 
@@ -87,3 +87,5 @@ ms.locfileid: "46812951"
   "webUrl": "String"
 }
 ```
+
+

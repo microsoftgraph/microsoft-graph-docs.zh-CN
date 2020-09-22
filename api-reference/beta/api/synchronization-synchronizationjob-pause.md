@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b49d19273da7ef832e27d643c7133132c19190f9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 74e3c4518ebaea6347daced9f1a4dcdc070501b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437554"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999081"
 ---
 # <a name="synchronizationjob-pause"></a>synchronizationJob： pause
 
@@ -18,7 +18,7 @@ ms.locfileid: "43437554"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-临时停止同步。 所有进度（包括作业状态）均保持不变，作业将从[开始](../api/synchronization-synchronizationjob-start.md)调用时停止的位置继续。
+临时停止同步。 所有进度（包括作业状态）均保持不变，作业将从 [开始](../api/synchronization-synchronizationjob-start.md) 调用时停止的位置继续。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/pause
 
 ## <a name="response"></a>响应
 
-如果成功，则返回`204 No Content`响应。 它不在响应正文中返回任何内容。
+如果成功，则返回 `204 No Content` 响应。 它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 
@@ -100,3 +100,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

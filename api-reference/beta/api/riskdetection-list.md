@@ -1,16 +1,16 @@
 ---
 title: 列出 riskDetection
-description: 检索**riskDetection**对象的集合的属性。
+description: 检索 **riskDetection** 对象的集合的属性。
 localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 34be626aad44315ac3a0b368a6d48297188a4b6a
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 3fd3fe9e0ba1c6c4bbd1aa3c2766787af892934e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863528"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999144"
 ---
 # <a name="list-riskdetection"></a>列出 riskDetection
 
@@ -18,7 +18,7 @@ ms.locfileid: "44863528"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索**riskDetection**对象的集合的属性。
+检索 **riskDetection** 对象的集合的属性。
 
 >[!NOTE]
 >您必须具有 Azure AD 高级 P1 或 P2 许可证，才能使用风险检测 API。
@@ -57,7 +57,7 @@ GET /identityProtection/riskDetections
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[riskDetection](../resources/riskdetection.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [riskDetection](../resources/riskdetection.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -303,3 +303,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

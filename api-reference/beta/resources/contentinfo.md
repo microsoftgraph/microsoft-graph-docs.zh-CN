@@ -5,20 +5,20 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 04fcee1c95628782d4a959732afa88bf689e4ea7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d7e0c159d46cb680329efc6a93896ca3df7270f7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507434"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998907"
 ---
 # <a name="contentinfo-resource-type"></a>contentInfo 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示要标记的某些信息的当前状态。 **contentInfo**将传递到[evaluateRemoval](../api/informationprotectionlabel-evaluateRemoval.md)、 [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md)和[evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md) api，以向 API 描述信息的当前状态。 此**contentInfo**详细说明了如何在应用、更新或删除标签时添加或删除要添加或删除的元数据、内容标记和保护的结果。 
+表示要标记的某些信息的当前状态。 **contentInfo** 将传递到 [evaluateRemoval](../api/informationprotectionlabel-evaluateRemoval.md)、 [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md)和 [evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md) api，以向 API 描述信息的当前状态。 此 **contentInfo** 详细说明了如何在应用、更新或删除标签时添加或删除要添加或删除的元数据、内容标记和保护的结果。 
 
 ## <a name="properties"></a>属性
 
@@ -60,3 +60,4 @@ ms.locfileid: "42507434"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ba932538e984af37a4f005ddcc2167c29d2267d0
-ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
+ms.openlocfilehash: c61367520f9dccb47fe238a92366cefd41748865
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "43557911"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998227"
 ---
 # <a name="passwordauthenticationmethod-resource-type"></a>passwordAuthenticationMethod 资源类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "43557911"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-|[列出 passwordAuthenticationMethods](../api/authentication-list-passwordmethods.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md)集合 | 读取此用户的所有**passwordAuthenticationMethod**对象的属性和关系。 |
-|[获取 passwordAuthenticationMethod](../api/passwordauthenticationmethod-get.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) | 读取**passwordAuthenticationMethod**对象的属性和关系。 |
+|[列出 passwordAuthenticationMethods](../api/authentication-list-passwordmethods.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) 集合 | 读取此用户的所有 **passwordAuthenticationMethod** 对象的属性和关系。 |
+|[获取 passwordAuthenticationMethod](../api/passwordauthenticationmethod-get.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) | 读取 **passwordAuthenticationMethod** 对象的属性和关系。 |
 |[重置密码](../api/passwordauthenticationmethod-resetpassword.md)|无|在云中重置用户的密码，如果同步，则在本地进行同步。|
 
 ## <a name="properties"></a>属性
@@ -33,7 +33,7 @@ ms.locfileid: "43557911"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |creationDateTime|DateTimeOffset|上次更新此密码的日期和时间。 当前未填充此属性。 只读。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|id|字符串| 为此用户注册的此密码的标识符。 只读。|
+|id|String| 为此用户注册的此密码的标识符。 只读。|
 |密码|String|出于安全的的情况，密码始终在列表或 GET 操作中以 null 的形式返回。|
 
 ## <a name="relationships"></a>关系
@@ -71,3 +71,5 @@ ms.locfileid: "43557911"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

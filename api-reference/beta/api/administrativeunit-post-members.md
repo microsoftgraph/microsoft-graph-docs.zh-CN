@@ -1,16 +1,16 @@
 ---
 title: 添加成员
-description: 使用此 API 将成员（用户或组）添加到管理单元。
+description: 使用此 API 将成员 (用户或组) 添加到管理单元。
 author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 91767a0d83fe35363879045cc703fb564806d228
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: ef1ff3e00de98a248fbe6a3b059b2de739d7df7b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123263"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997212"
 ---
 # <a name="add-a-member"></a>添加成员
 
@@ -18,7 +18,7 @@ ms.locfileid: "43123263"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 将成员（用户或组）添加到管理单元。
+使用此 API 将成员 (用户或组) 添加到管理单元。
 
 `NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
 
@@ -30,7 +30,7 @@ ms.locfileid: "43123263"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AdministrativeUnit、Directory.accessasuser.all 和所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | AdministrativeUnit.ReadWrite.All |
+|应用程序 | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ POST /administrativeUnits/{id}/members/$ref
 | Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供要`id`添加的[用户](../resources/user.md)、[组](../resources/group.md)或[directoryObject](../resources/directoryobject.md) 。
+在请求正文中，提供 `id` 要添加的 [用户](../resources/user.md)、  [组](../resources/group.md) 或 [directoryObject](../resources/directoryobject.md) 。
 
 ## <a name="response"></a>响应
 
@@ -63,7 +63,7 @@ Content-length: 109
 }
 
 ```
-在请求正文中，提供`id`要添加的[用户](../resources/user.md)或[组](../resources/group.md)对象。
+在请求正文中，提供 `id` 要添加的 [用户](../resources/user.md) 或 [组](../resources/group.md) 对象。
 
 ##### <a name="response"></a>响应
 下面是一个响应示例。
@@ -71,3 +71,5 @@ Content-length: 109
 ```http
 HTTP/1.1 204 No Content
 ```
+
+

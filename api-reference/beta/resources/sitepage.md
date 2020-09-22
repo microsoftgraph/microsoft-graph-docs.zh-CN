@@ -6,26 +6,26 @@ title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 6b7ce7bc14ce95ec4573fb7660cb584703d4a54e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bdb7c0c89938eb3419607839aa1973812788063c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520532"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997695"
 ---
 # <a name="sitepage-resource"></a>sitePage 资源
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此资源表示 "SitePages"[列表][]中的页面。
-它包含[Web 部件][]s 的标题、布局和集合。
+此资源表示 "SitePages" [列表][]中的页面。
+它包含 [Web 部件][]s 的标题、布局和集合。
 
 ## <a name="tasks-on-a-page"></a>页面上的任务
 
-以下任务可用于**sitePage**资源。
-下面的所有示例都是相对于[网站][]而言的`https://graph.microsoft.com/{api-version}/sites/{site-id}`，例如：。
+以下任务可用于 **sitePage** 资源。
+下面的所有示例都是相对于 [网站][]而言的，例如： `https://graph.microsoft.com/{api-version}/sites/{site-id}` 。
 
 | 常见任务                     | HTTP 方法
 |:--------------------------------|:------------------------------
@@ -43,7 +43,7 @@ ms.locfileid: "42520532"
 
 ## <a name="json-representation"></a>JSON 表示形式
 
-下面是**sitePage**资源的 JSON 表示形式。
+下面是 **sitePage** 资源的 JSON 表示形式。
 
 <!--{
   "blockType": "resource",
@@ -94,7 +94,7 @@ ms.locfileid: "42520532"
 | 属性名称      | 类型                       | 说明
 |:-------------------|:---------------------------|:---------------------------
 | title              | 字符串                     | 页面的标题。
-| 页面布局         | string                     | 页面的页面布局的名称。
+| 页面布局         | 字符串                     | 页面的页面布局的名称。
 | 部件           | [.Webpart][]                | 页面上的 web 部件。
 
 ## <a name="authoring-metadata"></a>创作元数据
@@ -131,7 +131,7 @@ ms.locfileid: "42520532"
 [listInfo]: listinfo.md
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md
-[site]: site.md
+[网站]: site.md
 [.Webpart]: webpart.md
 
 <!--
@@ -157,3 +157,5 @@ TODO:
     * Add the URL to the underlying list item resource in the API
 * PATCH for list item patches /item/{item-id}/fields.
 -->
+
+

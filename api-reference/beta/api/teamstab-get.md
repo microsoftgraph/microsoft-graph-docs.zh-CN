@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5e8a2cfc5c17cbd90dd713d3cb19e43ee24b32ea
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: dc8370a7df8663293d2d2562a4dfd45928b8bed9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491719"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999041"
 ---
 # <a name="get-tab"></a>获取选项卡
 
@@ -18,17 +18,17 @@ ms.locfileid: "44491719"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索指定[选项卡](../resources/teamstab.md)的属性和关系。 
+检索指定 [选项卡](../resources/teamstab.md)的属性和关系。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | TeamsTab，TeamsTab，all，group，all，Read. all，all，all，all，all，all，all |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | TeamsTab、*TeamsTab*、TeamsTab、、group. all、、、、all、all 和 all。 all，all，all，all，all，all |
-> **注意**：标记为 * 的权限使用[特定于资源的同意]( https://aka.ms/teams-rsc)。
+|应用程序 | TeamsTab、*TeamsTab*、TeamsTab、、group. all、、、、all、all 和 all。 all，all，all，all，all，all |
+> **注意**：标有 * 的权限用于[特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
@@ -39,9 +39,9 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 $select 和 $expand [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持 $select 和 $expand [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
@@ -51,7 +51,7 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[tab](../resources/teamstab.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [tab](../resources/teamstab.md) 对象。
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -98,3 +98,5 @@ Content-length: 401
   "suppressions": []
 }
 -->
+
+

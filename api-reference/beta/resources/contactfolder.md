@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 328d742163d04b26d2e46f7a89309e0184ea6198
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 10e48459645c8af6d03787a3b2395398098cc7e0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458088"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998928"
 ---
 # <a name="contactfolder-resource-type"></a>contactFolder 资源类型
 
@@ -45,9 +45,9 @@ ms.locfileid: "43458088"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |displayName|String|文件夹的显示名称。|
-|id|字符串|联系人文件夹的唯一标识符。只读。|
+|id|String|联系人文件夹的唯一标识符。只读。|
 |parentFolderId|String|文件夹的父文件夹 ID。|
-|wellKnownName|string|文件夹的名称（如果文件夹是可识别的文件夹）。 当前`contacts`是唯一可识别的 "联系人" 文件夹。|
+|wellKnownName|字符串|文件夹的名称（如果文件夹是可识别的文件夹）。 当前 `contacts` 是唯一可识别的 "联系人" 文件夹。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
@@ -55,7 +55,7 @@ ms.locfileid: "43458088"
 |childFolders|[ContactFolder](contactfolder.md) 集合|文件夹中的子文件夹集合。导航属性。只读。可为 Null。|
 |contacts|[Contact](contact.md) collection|文件夹中的联系人。导航属性。只读。可为 Null。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 contactFolder 定义的多值扩展属性的集合。只读。可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为 contactFolder 定义的单值扩展属性的集合。只读。可为 Null。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为 contactFolder 定义的单值扩展属性的集合。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -101,3 +101,5 @@ ms.locfileid: "43458088"
   "suppressions": []
 }
 -->
+
+

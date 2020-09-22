@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: e0e32646df18d7c6dfb58106568bb2a74261fa30
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 06f96df47780a3bb89197584aa50625925a49dcb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218000"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997121"
 ---
 # <a name="list-agreements"></a>列出协议
 
@@ -18,8 +18,8 @@ ms.locfileid: "43218000"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[协议](../resources/agreement.md)对象的列表。
-## <a name="permissions"></a>Permissions
+检索 [协议](../resources/agreement.md) 对象的列表。
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -46,7 +46,7 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[协议](../resources/agreement.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [协议](../resources/agreement.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
@@ -109,3 +109,5 @@ Content-length: 146
   ]
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: 列出 vppTokens
 description: 列出 vppToken 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a68702c01dafd0931c429039e3519782abf9ff9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0d1f078dae05263ddeac149a123ef3f088f376b6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452810"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997380"
 ---
 # <a name="list-vpptokens"></a>列出 vppTokens
 
@@ -85,6 +85,9 @@ Content-Length: 659
   ]
 }
 ```
+
+
+
 
 
 

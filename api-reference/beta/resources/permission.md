@@ -6,12 +6,12 @@ description: 代表为 driveItem 授予的共享权限的权限资源
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 2a260a6702e2d50ceac598e379ea6185310052ce
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: 3151e6d070695f2010417f6befbb0c4e83fd3830
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46657908"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998084"
 ---
 # <a name="permission-resource-type"></a>权限资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "46657908"
 共享权限具有许多不同的形式。
 **权限**资源通过资源上的 facet 表示这些不同的表单。
 
->**注意：** OneDrive for Business 和 SharePoint 文档库不返回**inheritedFrom**属性。
+>**注意：** OneDrive for Business 和 SharePoint 文档库不返回 **inheritedFrom** 属性。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -81,9 +81,9 @@ ms.locfileid: "46657908"
 
 | 角色              | 详细信息                                                                        |
 |:------------------|:-------------------------------------------------------------------------------|
-| 自述            | 提供读取项的元数据和内容的功能。            |
-| 销帐           | 提供读取并修改项的元数据和内容的功能。 |
-| sp 完全控制 | 对于 SharePoint 和 OneDrive for Business，这表示所有者角色。       |
+| 阅读            | 提供读取项的元数据和内容的功能。            |
+| 写入           | 提供读取并修改项的元数据和内容的功能。 |
+| sp.full 控制 | 对于 SharePoint 和 OneDrive for Business，这表示所有者角色。       |
 
 权限资源使用 _facet_ 提供有关由该资源表示的权限类型的信息。
 
@@ -198,7 +198,7 @@ ms.locfileid: "46657908"
 
 ## <a name="sharing-invitations"></a>共享邀请
 
-由[邀请][]或[授予][]API 发送的权限可以在[邀请][SharingInvitation] facet 中为不匹配已知帐户的电子邮件地址提供其他信息。 在这种情况下， **grantedTo**属性可能不会设置，直到该邀请链接被兑换（当用户首次单击该链接并登录）时才会发生此事件。
+由 [邀请][] 或 [授予][] API 发送的权限可以在 [邀请][SharingInvitation] facet 中为不匹配已知帐户的电子邮件地址提供其他信息。 在这种情况下， **grantedTo** 属性可能不会设置，直到该邀请链接被兑换（当用户首次单击该链接并登录）时才会发生此事件。
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
 
@@ -272,3 +272,5 @@ ms.locfileid: "46657908"
   "suppressions": []
 }
 -->
+
+

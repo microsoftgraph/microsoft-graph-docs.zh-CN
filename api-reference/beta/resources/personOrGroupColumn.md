@@ -6,12 +6,12 @@ title: PersonOrGroupColumn
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: c2b10d24acb1c4004de486904a8f2091c0a3db15
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 51a6f8653becc78d8bd95f3bc5a18d9ac342bda8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845734"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998031"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>PersonOrGroupColumn 资源类型
 
@@ -36,10 +36,10 @@ ms.locfileid: "44845734"
 
 ## <a name="properties"></a>属性
 
-| 属性名称              | 类型    | Description
+| 属性名称              | 类型    | 说明
 |:---------------------------|:--------|:--------------------------------------
 | **allowMultipleSelection** | boolean | 指示是否可以从源中选择多个值。
-| **displayAs**              | 字符串  | 如何显示有关所选个人或组的信息。 请参阅下文。
+| **displayAs**              | string  | 如何显示有关所选个人或组的信息。 请参阅下文。
 | **chooseFromType**         | string  | 是否允许仅选择人员，或同时选择人员和组。 必须为 `peopleAndGroups` 或 `peopleOnly` 的其中一个。
 
 ## <a name="displayas-values"></a>DisplayAs 值
@@ -77,3 +77,5 @@ ms.locfileid: "44845734"
   "suppressions": []
 }
 -->
+
+

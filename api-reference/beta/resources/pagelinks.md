@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: jewan-microsoft
-ms.openlocfilehash: 3442862f52c1d8f6dd29ea2a2a0e99b2f65970f0
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 0a475e7315b08111c97a762f19caeff16d94874d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812525"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998311"
 ---
 # <a name="pagelinks-resource-type"></a>pageLinks 资源类型
 
@@ -57,3 +57,5 @@ ms.locfileid: "46812525"
   "suppressions": []
 }
 -->
+
+

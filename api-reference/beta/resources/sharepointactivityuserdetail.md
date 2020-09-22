@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 20b99e3c6431d945200db868cc02302600e0e76c
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 7394e2fab0604286e8066b64e86f413f421472cf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807113"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997793"
 ---
 # <a name="sharepointactivityuserdetail-resource-type"></a>sharePointActivityUserDetail 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "46807113"
 | :------------------------ | :---------------- |
 | reportRefreshDate         | 日期              |
 | userPrincipalName         | String            |
-| isDeleted                 | 布尔值           |
+| isDeleted                 | Boolean           |
 | deletedDate               | 日期              |
 | lastActivityDate          | 日期              |
 | viewedOrEditedFileCount   | Int64             |
@@ -30,7 +30,7 @@ ms.locfileid: "46807113"
 | sharedInternallyFileCount | Int64             |
 | sharedExternallyFileCount | Int64             |
 | visitedPageCount          | Int64             |
-| assignedProducts          | 字符串集合 |
+| assignedProducts          | String collection |
 | reportPeriod              | String            |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -58,3 +58,5 @@ ms.locfileid: "46807113"
   "reportPeriod": "String"
 }
 ```
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: SarahBar
-ms.openlocfilehash: 49c60dc42cb84d047f36904b2af11fe5c8d3bd8e
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: f5f472be4d8fd40d053efa4ae2b5ad38e4925c76
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812546"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998912"
 ---
 # <a name="auditactivityinitiator-resource-type"></a>auditActivityInitiator 资源类型
 
@@ -53,3 +53,5 @@ ms.locfileid: "46812546"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

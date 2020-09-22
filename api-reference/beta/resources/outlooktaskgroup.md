@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: afd5da7663a9328a87b5df2616b0093a4208caeb
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: f2ddf43dbbe580b74e69d3f3d85ef226de673a54
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312115"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998353"
 ---
 # <a name="outlooktaskgroup-resource-type-deprecated"></a>outlookTaskGroup 资源类型 (弃用) 
 
@@ -86,3 +86,5 @@ ms.locfileid: "47312115"
   "suppressions": []
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: 列出 managedIOSStoreApps
 description: 列出 managedIOSStoreApp 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2eef6884d580afc1b501e5b5b2ccd9e1609427a4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d1d33fbbac87f39d1c4cb7296c74df7dcc6f7392
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442504"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997436"
 ---
 # <a name="list-managediosstoreapps"></a>列出 managedIOSStoreApps
 
@@ -109,6 +109,9 @@ Content-Length: 1457
   ]
 }
 ```
+
+
+
 
 
 

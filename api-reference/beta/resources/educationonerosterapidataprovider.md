@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ea02186b7d9bd7bed14c6ea5b46023da81814f07
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 5b96322cdb408069136a46aa9c83cf363cc1b6f2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791060"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998843"
 ---
 # <a name="educationonerosterapidataprovider-resource"></a>educationOneRosterApiDataProvider 资源
 
@@ -18,20 +18,20 @@ ms.locfileid: "44791060"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于在将[ONEROSTER API](https://www.imsglobal.org/activity/onerosterlis)用作输入源时设置学校数据同步配置文件。
+用于在将 [ONEROSTER API](https://www.imsglobal.org/activity/onerosterlis) 用作输入源时设置学校数据同步配置文件。
 
-派生自[educationSynchronizationDataProvider](educationsynchronizationdataprovider.md)。
+派生自 [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md)。
 
 ## <a name="properties"></a>属性
 
 | 属性           | 类型                                         | 说明                                                                                           |
 | :----------------- | :------------------------------------------- | :---------------------------------------------------------------------------------------------------- |
 | connectionUrl      | String                                       | 指向 OneRoster 实例的连接 URL。                                                         |
-| providerName       | String                                       | 由[OneRoster 规范][oneroster]定义的 OneRoster 服务提供程序名称。           |
-| schoolsIds         | String collection                            | 要同步的[学校/组织][orgs]的列表 `sourcedId` 。                                                   |
-| termIds            | String collection                            | 要同步的[学术会话][terms]的列表。                                                       |
-| connectionSettings | [educationSynchronizationConnectionSettings] | OneRoster 实例的[oauth 1.0][onerosteroauth1]或[oauth 2.0][onerosteroauth2]设置。 |
-| 操作     | [educationSynchronizationCustomizations]）    | 要应用于同步配置文件的可选自定义项。                                  |
+| providerName       | String                                       | 由 [OneRoster 规范][oneroster]定义的 OneRoster 服务提供程序名称。           |
+| schoolsIds         | String collection                            | 要同步的 [学校/组织][orgs]的列表 `sourcedId` 。                                                   |
+| termIds            | String collection                            | 要同步的 [学术会话][terms] 的列表。                                                       |
+| connectionSettings | [educationSynchronizationConnectionSettings] | OneRoster 实例的 [oauth 1.0][onerosteroauth1] 或 [oauth 2.0][onerosteroauth2] 设置。 |
+| 操作     | [educationSynchronizationCustomizations])     | 要应用于同步配置文件的可选自定义项。                                  |
 
 > [!IMPORTANT]
 > OneRoster 使用学术会议，而不是一年的时间来细分其数据。 此细分在学校数据同步 UI 中被抽象掉，而不是在此 API 中。 您需要调用 OneRoster `/terms` 终结点以获取学术会话 id 的集合，以便填充该 `termIds` 集合。
@@ -84,3 +84,5 @@ ms.locfileid: "44791060"
       "Error: microsoft.graph.educationoneRosterApiDataProvider/connectionSettings:\r\n      Referenced type microsoft.graph.educationSynchronizationConnectionSettings is not defined in the doc set! Potential suggestion: microsoft.graph.settings"
   ]
 }-->
+
+

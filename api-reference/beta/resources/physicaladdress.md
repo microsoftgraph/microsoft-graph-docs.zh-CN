@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 36edf38d16ca5e27fe5995eb59ec9150c3d76d87
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d3d0a998f317a0fa19e7c29aabda5bc8e3908f85
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455551"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997823"
 ---
 # <a name="physicaladdress-resource-type"></a>physicalAddress 资源类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "43455551"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|city|String|城市。|
-|countryOrRegion|字符串|国家或地区。它是任意格式的字符串值，例如“United States”。|
+|城市|String|城市。|
+|countryOrRegion|String|国家或地区。它是任意格式的字符串值，例如“United States”。|
 |postalCode|String|邮政编码。|
 |postOfficeBox|String|邮局编号。|
 |state|String|省/市/自治区。|
@@ -70,3 +70,5 @@ ms.locfileid: "43455551"
   "suppressions": []
 }
 -->
+
+

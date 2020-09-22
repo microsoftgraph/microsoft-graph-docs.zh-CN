@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 88436021375c85e85fc009611b2279705801ad12
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0d0303e3a80e0231487701d66076ef8fa52be358
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463239"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998370"
 ---
 # <a name="outlookitem-resource-type"></a>outlookItem 资源类型
 
@@ -43,10 +43,10 @@ ms.locfileid: "43463239"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|categories|String collection||
+|类别|String collection||
 |changeKey|String||
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|id|字符串| 只读。|
+|id|String| 只读。|
 |lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 
 ## <a name="relationships"></a>关系
@@ -65,3 +65,5 @@ ms.locfileid: "43463239"
   "suppressions": []
 }
 -->
+
+

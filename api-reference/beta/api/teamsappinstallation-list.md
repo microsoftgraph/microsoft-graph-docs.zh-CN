@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f57c7bb3f585950ebe983c6eca3a7c512f486037
-ms.sourcegitcommit: 79267b6d78c3510ef609953c5a664e692794caaa
+ms.openlocfilehash: ea696bba473c04fafbd7af716316359dba4efe48
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45197000"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999084"
 ---
 # <a name="list-apps-in-team"></a>列出团队中的应用
 
@@ -20,7 +20,7 @@ ms.locfileid: "45197000"
 
 检索在指定[团队](../resources/team.md)中[安装的应用程序](../resources/teamsappinstallation.md)的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,7 +40,7 @@ GET /teams/{id}/installedApps
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 $filter、$select 和 $expand [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持 $filter、$select 和 $expand [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /teams/{id}/installedApps
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[teamsAppInstallation](../resources/teamsappinstallation.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [teamsAppInstallation](../resources/teamsappinstallation.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -205,3 +205,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

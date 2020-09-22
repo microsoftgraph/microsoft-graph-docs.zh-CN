@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 3d919e8423904a3b67dfdacc0921d20ccdb4243a
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d01c9fe6c4171c16d96e5b81eb8537ea0cbeb1a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807407"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997674"
 ---
 # <a name="skillproficiency-resource-type"></a>skillProficiency 资源类型
 
@@ -36,8 +36,8 @@ ms.locfileid: "46807407"
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|categories|String collection|包含用户与技能相关联的类别 (例如，个人、职业、爱好) 。 |
-|collaborationTags|字符串集合|包含用户与兴趣相关的体验方案标记。 集合中允许的值为： `askMeAbout` 、 `ableToMentor` 、 `wantsToLearn` 、 `wantsToImprove` 。|
+|类别|String collection|包含用户与技能相关联的类别 (例如，个人、职业、爱好) 。 |
+|collaborationTags|String collection|包含用户与兴趣相关的体验方案标记。 集合中允许的值为： `askMeAbout` 、 `ableToMentor` 、 `wantsToLearn` 、 `wantsToImprove` 。|
 |createdBy|[identitySet](../resources/identityset.md)|提供创建实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |createdDateTime|DateTimeOffset|为创建实体时提供 dateTimeOffset。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |displayName|String|包含技能的友好名称。 |
@@ -92,3 +92,4 @@ ms.locfileid: "46807407"
   ]
 }
 ```
+

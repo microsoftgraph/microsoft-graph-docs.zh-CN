@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a74b5e670c5a38ea1a959db058d407c4a6bb896e
-ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
+ms.openlocfilehash: 68d69c8dde26a0634604c60a01e3c30d9421a8ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45165098"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999032"
 ---
 # <a name="create-session"></a>创建会话
 
@@ -61,7 +61,7 @@ POST /workbook/createSession
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[workbookSessionInfo](../resources/workbooksessioninfo.md)对象。 对于长时间运行的操作，它会 `202 Accepted ` 在响应中返回响应代码和 `Location` 标头，其中包含空正文。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [workbookSessionInfo](../resources/workbooksessioninfo.md) 对象。 对于长时间运行的操作，它会 `202 Accepted ` 在响应中返回响应代码和 `Location` 标头，其中包含空正文。
 
 ## <a name="examples"></a>示例
 
@@ -153,3 +153,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

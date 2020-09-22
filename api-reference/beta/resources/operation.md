@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: billbliss
-ms.openlocfilehash: e94970609c2ccfb99e61b254b080e1dbaa244ba6
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: f57b9f14603fdeae539e872d87b5af2645cedef0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809311"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998509"
 ---
 # <a name="operation-resource-type"></a>操作资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "46809311"
 | createdDateTime    | DateTimeOffset  | 操作的开始时间。                                                |
 | id                 | String          | 操作 id。只读。 由服务器生成。                                  |
 | lastActionDateTime | DateTimeOffset  | 操作的上一操作的时间。                                   |
-| status             | String          | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。 |
+| 状态             | String          | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。 |
 
 ## <a name="relationships"></a>关系
 
@@ -83,3 +83,5 @@ ms.locfileid: "46809311"
   "suppressions": []
 }
 -->
+
+

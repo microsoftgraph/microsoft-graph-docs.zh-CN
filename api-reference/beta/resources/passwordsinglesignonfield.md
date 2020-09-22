@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e20bcd2b9ddeab5ce255285fb6e13af5acb72fce
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: d79f2347acabae0323e008a43adb7938d70d3768
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46658174"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998192"
 ---
 # <a name="passwordsinglesignonfield-resource-type"></a>passwordSingleSignOnField 资源类型
 
@@ -58,3 +58,4 @@ ms.locfileid: "46658174"
   "section": "documentation",
   "tocPath": ""
 }-->
+

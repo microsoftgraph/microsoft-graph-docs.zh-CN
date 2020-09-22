@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ad6599e16dd9500f03b8f88b09482af4ef8d4b73
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 77a64ffacaefaf348d018b28c1b1c569196f6a6a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123312"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997240"
 ---
 # <a name="list-administrativeunits"></a>列出 administrativeUnits
 
@@ -18,7 +18,7 @@ ms.locfileid: "43123312"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[administrativeUnit](../resources/administrativeunit.md)对象的列表。
+检索 [administrativeUnit](../resources/administrativeunit.md) 对象的列表。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -27,7 +27,7 @@ ms.locfileid: "43123312"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AdministrativeUnit、AdministrativeUnit、Directory.accessasuser.all、all、、all、all 和的所有子目录。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | AdministrativeUnit、AdministrativeUnit、all、all、all、All 和所有的 |
+|应用程序 | AdministrativeUnit、AdministrativeUnit、all、all、all、All 和所有的 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /administrativeUnits
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[administrativeUnit](../resources/administrativeunit.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [administrativeUnit](../resources/administrativeunit.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -112,3 +112,5 @@ Content-length: 179
   ]
 }
 -->
+
+

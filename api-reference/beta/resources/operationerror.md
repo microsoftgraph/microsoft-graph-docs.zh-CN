@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: billbliss
-ms.openlocfilehash: 2419d4230e5618f601a5d8fe0743ec9ef807cf00
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d3511979cc03df496a8c12f948ddd728e3cd0c19
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809320"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998510"
 ---
 # <a name="operationerror-resource-type"></a>operationError 资源类型
 
@@ -54,3 +54,5 @@ ms.locfileid: "46809320"
   "suppressions": []
 }
 -->
+
+

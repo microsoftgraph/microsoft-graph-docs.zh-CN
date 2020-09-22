@@ -5,16 +5,16 @@ author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6695f1cd92ccde1fb26a581fce49c0c233deb141
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ff575398f3829c5d2adbe92799f5b9dca953aa4e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42501512"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998822"
 ---
 # <a name="educationonpremisesinfo-resource-type"></a>educationOnPremisesInfo 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 用于将本地 Active Directory 用户帐户与 Azure AD 用户对象相关联的其他信息。
 
@@ -51,3 +51,5 @@ ms.locfileid: "42501512"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
