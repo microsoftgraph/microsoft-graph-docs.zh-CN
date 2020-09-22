@@ -3,27 +3,27 @@ title: managementConditionExpressionString 资源类型
 description: 管理条件表达式字符串是管理条件表达式的字符串表示形式。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9f5a17a7057888d02decb20dc5f611e7d5e1ebd9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 65bb0bf3faca38775f00c256d5b23d9cf132d13f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43357844"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031310"
 ---
 # <a name="managementconditionexpressionstring-resource-type"></a>managementConditionExpressionString 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 管理条件表达式字符串是管理条件表达式的字符串表示形式。
 
 
-继承自[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)
+继承自 [managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -46,6 +46,9 @@ ms.locfileid: "43357844"
   "value": "String"
 }
 ```
+
+
+
 
 
 

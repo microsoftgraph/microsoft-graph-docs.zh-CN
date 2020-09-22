@@ -3,20 +3,20 @@ title: windowsUserType 枚举类型
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b472f74ad1ea88398a19cda9101e93e4ec53cb66
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 674f37219a76be35c20547fa42655fe1fc1d4c23
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43358114"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031534"
 ---
 # <a name="windowsusertype-enum-type"></a>windowsUserType 枚举类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -26,7 +26,10 @@ ms.locfileid: "43358114"
 |成员|值|说明|
 |:---|:---|:---|
 |联系|0|尚未记录|
-|普通|1|尚未记录|
+|普通|1 |尚未记录|
+
+
+
 
 
 

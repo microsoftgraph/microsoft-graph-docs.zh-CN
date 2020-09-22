@@ -3,27 +3,27 @@ title: binaryManagementConditionExpression 资源类型
 description: 使用二元运算计算的管理条件表达式。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2ce144a72d649709b54a9e9acd48107fee118040
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: a3ce5eb4f58d22224d881da3284639185a894e53
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179191"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031422"
 ---
 # <a name="binarymanagementconditionexpression-resource-type"></a>binaryManagementConditionExpression 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 使用二元运算计算的管理条件表达式。
 
 
-继承自[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
+继承自 [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -270,6 +270,9 @@ ms.locfileid: "44179191"
   }
 }
 ```
+
+
+
 
 
 

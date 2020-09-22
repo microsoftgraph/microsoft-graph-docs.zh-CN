@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 95348955e0ea881280ff6c0f2be46a5a415a97e5
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: d3d77c91e7aaae2562d15bfe3558f92b3c623a81
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107624"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031842"
 ---
 # <a name="list-owneddevices"></a>List ownedDevices
 
@@ -110,3 +110,5 @@ Content-length: 55
   ]
 }
 -->
+
+

@@ -1,18 +1,18 @@
 ---
-title: 列出 ownedObjects
+title: List ownedObjects
 description: 获取用户拥有的 directory 对象的列表。
 author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c7d19ebaadd9f7046d6da25cfd1577ee4599d17d
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 8cf334224fa926eaf159b407e05c5b4d9a8a76e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107596"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031821"
 ---
-# <a name="list-ownedobjects"></a>列出 ownedObjects
+# <a name="list-ownedobjects"></a>List ownedObjects
 
 命名空间：microsoft.graph
 
@@ -110,3 +110,5 @@ Content-length: 55
   ]
 }
 -->
+
+

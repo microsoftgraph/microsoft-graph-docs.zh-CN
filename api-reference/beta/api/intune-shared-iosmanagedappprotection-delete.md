@@ -3,20 +3,20 @@ title: 删除 iosManagedAppProtection
 description: 删除 iosManagedAppProtection。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 41c525159367196fb8c6cbef5e51f51eba494569
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 25c661e4539b9cff4a38c751a03eb0db1161cd32
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43362931"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031940"
 ---
 # <a name="delete-iosmanagedappprotection"></a>删除 iosManagedAppProtection
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,11 +29,11 @@ ms.locfileid: "43362931"
 |:---|:---|
 |委派（工作或学校帐户）||
 | &nbsp; &nbsp; **移动应用管理 (MAM)** | DeviceManagementApps.ReadWrite.All|
-| &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All|
+| &nbsp;&nbsp;**策略集** | DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
 | &nbsp; &nbsp; **移动应用管理 (MAM)** | DeviceManagementApps.ReadWrite.All|
-| &nbsp;&nbsp; **策略集** | DeviceManagementApps.ReadWrite.All|
+| &nbsp;&nbsp;**策略集** | DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -69,6 +69,9 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtect
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

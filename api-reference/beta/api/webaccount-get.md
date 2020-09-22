@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 88f788972281cf6ec389c17aa397e1421696accb
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: e63042c8af99f7f0ed5c685b5d570fbfcf9c86de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809171"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031807"
 ---
 # <a name="get-webaccount"></a>获取 webAccount
 
@@ -136,3 +136,5 @@ Content-type: application/json
   "webUrl": "https://github.com/innocenty.popov"
 }
 ```
+
+

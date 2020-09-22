@@ -4,12 +4,12 @@ description: 列出你可用于管理租户组织及其设备、应用、访问�
 author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: 3b479617ce476492ca716db7742f1e10aab88b18
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: e1c93c38c1667d1681e280b69ff106060900b46c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45225051"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031114"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Intune  
 
@@ -51,4 +51,7 @@ Microsoft Graph 通过权限控制对资源的访问。 作为开发者，你必
 
 - 了解[如何使用 Azure AD](https://docs.microsoft.com/intune/intune-graph-apis) 访问适用于 Intune 的 Microsoft Graph API。  
 - 浏览 [PowerShell Intune 示例](https://github.com/microsoftgraph/powershell-intune-samples)，这些示例演示如何在工作示例上下文中使用适用于 Intune 的 Microsoft Graph API。
+
+
+
 
