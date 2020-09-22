@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: insights
 description: columnDefinition 资源上的 personOrGroupColumn 指示列值，该值表示从目录中选择的个人或组。
 doc_type: resourcePageType
-ms.openlocfilehash: b9c3774405dbb8d2e98a9823a84be97d5df09b0b
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 8d4875ba813f5c1491135b2d1615c4146b438304
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845475"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032416"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>PersonOrGroupColumn 资源类型
 
@@ -34,10 +34,10 @@ ms.locfileid: "44845475"
 
 ## <a name="properties"></a>属性
 
-| 属性名称              | 类型    | Description
+| 属性名称              | 类型    | 说明
 |:---------------------------|:--------|:--------------------------------------
 | **allowMultipleSelection** | boolean | 指示是否可以从源中选择多个值。
-| **displayAs**              | 字符串  | 如何显示有关所选个人或组的信息。 请参阅下文。
+| **displayAs**              | string  | 如何显示有关所选个人或组的信息。 请参阅下文。
 | **chooseFromType**         | string  | 是否允许仅选择人员，或同时选择人员和组。 必须为 `peopleAndGroups` 或 `peopleOnly` 的其中一个。
 
 ## <a name="displayas-options"></a>DisplayAs 选项
@@ -78,3 +78,4 @@ ms.locfileid: "44845475"
   ],
   "tocPath": "Resources/PersonOrGroupColumn"
 } -->
+

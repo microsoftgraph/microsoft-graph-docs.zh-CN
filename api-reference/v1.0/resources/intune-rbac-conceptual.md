@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 9f6b05771f298d3e24561727016bfa37e65e211a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8dc379cfcd58ce0d36e4595c35a6c4fc7d36f622
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441674"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032423"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Microsoft Intune 中的基于角色的访问控制
 
@@ -29,6 +29,8 @@ Intune 的基于角色的访问控制决定哪些人可以对 Intune 对象执�
 - [角色分配](intune-rbac-roleassignment.md)
 - [角色定义](intune-rbac-roledefinition.md)
 - [角色权限](intune-rbac-rolepermission.md)
+
+
 
 
 

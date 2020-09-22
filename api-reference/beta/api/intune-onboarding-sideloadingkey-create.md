@@ -3,24 +3,24 @@ title: 创建 sideLoadingKey
 description: 创建新的 sideLoadingKey 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0591e70f624d73ca6de2b2779b31b5610d7a9613
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5283c555cdf111c8651173574634cbdb6fc9bafe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448724"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032178"
 ---
 # <a name="create-sideloadingkey"></a>创建 sideLoadingKey
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)对象。
+创建新的 [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,9 +53,9 @@ POST /deviceAppManagement/sideLoadingKeys
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|侧加载密钥唯一 Id。|
+|id|String|侧加载密钥唯一 Id。|
 |value|String|侧加载密钥值，它是一个5x5 值，由 hiphens 分隔。|
-|displayName|字符串|向 It 专业管理员显示的侧加载密钥名称。|
+|displayName|String|向 It 专业管理员显示的侧加载密钥名称。|
 |description|String|向 It 专业管理员显示的侧加载密钥说明。|
 |totalActivation|Int32|向 It 专业管理员显示的端加载密钥总激活数。|
 |lastUpdatedDateTime|String|向 It 专业管理员显示的侧加载密钥上次更新日期。|
@@ -63,7 +63,7 @@ POST /deviceAppManagement/sideLoadingKeys
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -101,6 +101,9 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
+
+
+
 
 
 
