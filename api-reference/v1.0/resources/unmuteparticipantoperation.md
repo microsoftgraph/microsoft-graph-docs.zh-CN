@@ -5,34 +5,34 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d1365ea90f2c6cd1d6670204d40da4ea1fd84591
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4a3a4428f1c7be9a840b18625b788b26751eca57
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533438"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090632"
 ---
-# <a name="unmuteparticipantoperation-resource-type"></a><span data-ttu-id="2a781-103">unmuteParticipantOperation 资源类型</span><span class="sxs-lookup"><span data-stu-id="2a781-103">unmuteParticipantOperation resource type</span></span>
+# <a name="unmuteparticipantoperation-resource-type"></a><span data-ttu-id="91758-103">unmuteParticipantOperation 资源类型</span><span class="sxs-lookup"><span data-stu-id="91758-103">unmuteParticipantOperation resource type</span></span>
 
-<span data-ttu-id="2a781-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2a781-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="91758-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="91758-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="2a781-105">描述呼叫参与者取消静音操作的响应格式。</span><span class="sxs-lookup"><span data-stu-id="2a781-105">Describes the response format of a call participant unmute operation.</span></span>
+<span data-ttu-id="91758-105">描述呼叫参与者取消静音操作的响应格式。</span><span class="sxs-lookup"><span data-stu-id="91758-105">Describes the response format of a call participant unmute operation.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="2a781-106">属性</span><span class="sxs-lookup"><span data-stu-id="2a781-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="91758-106">属性</span><span class="sxs-lookup"><span data-stu-id="91758-106">Properties</span></span>
 
-| <span data-ttu-id="2a781-107">属性</span><span class="sxs-lookup"><span data-stu-id="2a781-107">Property</span></span>                       | <span data-ttu-id="2a781-108">类型</span><span class="sxs-lookup"><span data-stu-id="2a781-108">Type</span></span>                        | <span data-ttu-id="2a781-109">说明</span><span class="sxs-lookup"><span data-stu-id="2a781-109">Description</span></span>                                                                                                                                       |
+| <span data-ttu-id="91758-107">属性</span><span class="sxs-lookup"><span data-stu-id="91758-107">Property</span></span>                       | <span data-ttu-id="91758-108">类型</span><span class="sxs-lookup"><span data-stu-id="91758-108">Type</span></span>                        | <span data-ttu-id="91758-109">说明</span><span class="sxs-lookup"><span data-stu-id="91758-109">Description</span></span>                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="2a781-110">适用</span><span class="sxs-lookup"><span data-stu-id="2a781-110">clientContext</span></span>                  | <span data-ttu-id="2a781-111">字符串</span><span class="sxs-lookup"><span data-stu-id="2a781-111">String</span></span>                      | <span data-ttu-id="2a781-112">唯一的客户端上下文字符串。</span><span class="sxs-lookup"><span data-stu-id="2a781-112">Unique client context string.</span></span> <span data-ttu-id="2a781-113">最多可以有256个字符。</span><span class="sxs-lookup"><span data-stu-id="2a781-113">Can have a maximum of 256 characters.</span></span>                                                                               |
-| <span data-ttu-id="2a781-114">id</span><span class="sxs-lookup"><span data-stu-id="2a781-114">id</span></span>                             | <span data-ttu-id="2a781-115">String</span><span class="sxs-lookup"><span data-stu-id="2a781-115">String</span></span>                      | <span data-ttu-id="2a781-116">服务器操作 ID。</span><span class="sxs-lookup"><span data-stu-id="2a781-116">The server operation ID.</span></span> <span data-ttu-id="2a781-117">只读。</span><span class="sxs-lookup"><span data-stu-id="2a781-117">Read-only.</span></span>                                                                                            |
-| <span data-ttu-id="2a781-118">resultInfo</span><span class="sxs-lookup"><span data-stu-id="2a781-118">resultInfo</span></span>                     | [<span data-ttu-id="2a781-119">resultInfo</span><span class="sxs-lookup"><span data-stu-id="2a781-119">resultInfo</span></span>](resultinfo.md) | <span data-ttu-id="2a781-120">结果信息。</span><span class="sxs-lookup"><span data-stu-id="2a781-120">The result information.</span></span>  <span data-ttu-id="2a781-121">只读。</span><span class="sxs-lookup"><span data-stu-id="2a781-121">Read-only.</span></span>                                                                                            |
-| <span data-ttu-id="2a781-122">状态</span><span class="sxs-lookup"><span data-stu-id="2a781-122">status</span></span>                         | <span data-ttu-id="2a781-123">String</span><span class="sxs-lookup"><span data-stu-id="2a781-123">String</span></span>                      | <span data-ttu-id="2a781-124">可能的值是：`notStarted`、`running`、`completed`、`failed`。</span><span class="sxs-lookup"><span data-stu-id="2a781-124">Possible values are: `notStarted`, `running`, `completed`, `failed`.</span></span> <span data-ttu-id="2a781-125">只读。</span><span class="sxs-lookup"><span data-stu-id="2a781-125">Read-only.</span></span>                                                 |
+| <span data-ttu-id="91758-110">适用</span><span class="sxs-lookup"><span data-stu-id="91758-110">clientContext</span></span>                  | <span data-ttu-id="91758-111">String</span><span class="sxs-lookup"><span data-stu-id="91758-111">String</span></span>                      | <span data-ttu-id="91758-112">唯一的客户端上下文字符串。</span><span class="sxs-lookup"><span data-stu-id="91758-112">Unique client context string.</span></span> <span data-ttu-id="91758-113">最多可以有256个字符。</span><span class="sxs-lookup"><span data-stu-id="91758-113">Can have a maximum of 256 characters.</span></span>                                                                               |
+| <span data-ttu-id="91758-114">id</span><span class="sxs-lookup"><span data-stu-id="91758-114">id</span></span>                             | <span data-ttu-id="91758-115">String</span><span class="sxs-lookup"><span data-stu-id="91758-115">String</span></span>                      | <span data-ttu-id="91758-116">服务器操作 ID。</span><span class="sxs-lookup"><span data-stu-id="91758-116">The server operation ID.</span></span> <span data-ttu-id="91758-117">只读。</span><span class="sxs-lookup"><span data-stu-id="91758-117">Read-only.</span></span>                                                                                            |
+| <span data-ttu-id="91758-118">resultInfo</span><span class="sxs-lookup"><span data-stu-id="91758-118">resultInfo</span></span>                     | [<span data-ttu-id="91758-119">resultInfo</span><span class="sxs-lookup"><span data-stu-id="91758-119">resultInfo</span></span>](resultinfo.md) | <span data-ttu-id="91758-120">结果信息。</span><span class="sxs-lookup"><span data-stu-id="91758-120">The result information.</span></span>  <span data-ttu-id="91758-121">只读。</span><span class="sxs-lookup"><span data-stu-id="91758-121">Read-only.</span></span>                                                                                            |
+| <span data-ttu-id="91758-122">status</span><span class="sxs-lookup"><span data-stu-id="91758-122">status</span></span>                         | <span data-ttu-id="91758-123">String</span><span class="sxs-lookup"><span data-stu-id="91758-123">String</span></span>                      | <span data-ttu-id="91758-124">可能的值是：`notStarted`、`running`、`completed`、`failed`。</span><span class="sxs-lookup"><span data-stu-id="91758-124">Possible values are: `notStarted`, `running`, `completed`, `failed`.</span></span> <span data-ttu-id="91758-125">只读。</span><span class="sxs-lookup"><span data-stu-id="91758-125">Read-only.</span></span>                                                 |
 
-## <a name="relationships"></a><span data-ttu-id="2a781-126">关系</span><span class="sxs-lookup"><span data-stu-id="2a781-126">Relationships</span></span>
-<span data-ttu-id="2a781-127">无。</span><span class="sxs-lookup"><span data-stu-id="2a781-127">None.</span></span>
+## <a name="relationships"></a><span data-ttu-id="91758-126">关系</span><span class="sxs-lookup"><span data-stu-id="91758-126">Relationships</span></span>
+<span data-ttu-id="91758-127">无。</span><span class="sxs-lookup"><span data-stu-id="91758-127">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="2a781-128">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="2a781-128">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="91758-128">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="91758-128">JSON representation</span></span>
 
-<span data-ttu-id="2a781-129">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2a781-129">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="91758-129">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="91758-129">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -59,3 +59,4 @@ ms.locfileid: "42533438"
   "section": "documentation",
   "tocPath": ""
 }-->
+
