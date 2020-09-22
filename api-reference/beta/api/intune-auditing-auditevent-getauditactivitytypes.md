@@ -3,20 +3,20 @@ title: getAuditActivityTypes 函数
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ac5aba223fbac4face840e89ae417650ae19a096
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c730a5154cbd9b8ab23572fbf9950077c6824abd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43392976"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975904"
 ---
 # <a name="getauditactivitytypes-function"></a>getAuditActivityTypes 函数
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -52,7 +52,7 @@ GET /deviceManagement/auditEvents/getAuditActivityTypes
 
 |属性|类型|说明|
 |:---|:---|:---|
-|“类别”|字符串|尚未记录|
+|“类别”|String|尚未记录|
 
 
 
@@ -80,6 +80,9 @@ Content-Length: 61
   ]
 }
 ```
+
+
+
 
 
 

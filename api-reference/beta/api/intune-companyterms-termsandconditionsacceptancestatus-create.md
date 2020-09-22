@@ -3,20 +3,20 @@ title: 创建 termsAndConditionsAcceptanceStatus
 description: 创建新的 termsAndConditionsAcceptanceStatus 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 507fb1c9a558a017baa4fd05f28585bcac4c4e81
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5fe683af13b6fac6380cfaa8c5c638d73f931a43
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436522"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975029"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>创建 termsAndConditionsAcceptanceStatus
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -57,7 +57,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatu
 |userDisplayName|String|实体所表示的接受状态所属用户的显示名称。|
 |acceptedVersion|Int32|用户所接受的最新 T&C 版本号。|
 |acceptedDateTime|DateTimeOffset|用户上次接受条款时的日期/时间。|
-|userPrincipalName|字符串|接受术语的用户的 userPrincipalName。|
+|userPrincipalName|String|接受术语的用户的 userPrincipalName。|
 
 
 
@@ -98,6 +98,9 @@ Content-Length: 313
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
 
 
 

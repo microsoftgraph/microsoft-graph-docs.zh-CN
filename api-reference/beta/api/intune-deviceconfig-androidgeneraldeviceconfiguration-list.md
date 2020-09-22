@@ -3,20 +3,20 @@ title: 列出 androidGeneralDeviceConfigurations
 description: 列出 androidGeneralDeviceConfiguration 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f14ad5a6d4a139d4a19fe0a56cc898d3e880b30b
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 7a02b68bcfeb2348543cdcaed0d1effc2db3f821
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43344628"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974770"
 ---
 # <a name="list-androidgeneraldeviceconfigurations"></a>列出 androidGeneralDeviceConfigurations
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "43344628"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4623
+Content-Length: 4667
 
 {
   "value": [
@@ -147,6 +147,7 @@ Content-Length: 4623
       "passwordPreviousPasswordBlockCount": 2,
       "passwordSignInFailureCountBeforeFactoryReset": 12,
       "passwordRequiredType": "alphabetic",
+      "requiredPasswordComplexity": "low",
       "passwordRequired": true,
       "powerOffBlocked": true,
       "factoryResetBlocked": true,
@@ -196,6 +197,9 @@ Content-Length: 4623
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,20 +3,20 @@ title: 删除 termsAndConditionsAcceptanceStatus
 description: 删除 termsAndConditionsAcceptanceStatus。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 25693f618d2b89f656c702173af8f03a349aac2b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8edd7f5b767b28d1957cf3e3a76f806ed2771625
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436515"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975015"
 ---
 # <a name="delete-termsandconditionsacceptancestatus"></a>删除 termsAndConditionsAcceptanceStatus
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -65,6 +65,9 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{ter
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

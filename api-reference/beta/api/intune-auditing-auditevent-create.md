@@ -3,14 +3,14 @@ title: 创建 auditEvent
 description: 创建新的 auditEvent 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b431d15975f1e8a1165579cd74f3aeaf1d21597
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: a0db1aba61db9650440756c9eba9961e4633cfae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790859"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975940"
 ---
 # <a name="create-auditevent"></a>创建 auditEvent
 
@@ -191,6 +191,9 @@ Content-Length: 1746
   "category": "Category value"
 }
 ```
+
+
+
 
 
 

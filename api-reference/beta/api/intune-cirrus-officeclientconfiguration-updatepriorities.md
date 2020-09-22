@@ -3,20 +3,20 @@ title: updatePriorities 操作
 description: 更新策略优先级。
 localization_priority: Normal
 author: dougeby
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 07bbff5017523849d3be81b800bb2ea37eab1cd8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 761cf4d51d5047f753dc87a35e0ba17740dacdb6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43392058"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975316"
 ---
 # <a name="updatepriorities-action"></a>updatePriorities 操作
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,7 +53,7 @@ POST /officeConfiguration/clientConfigurations/microsoft.management.services.api
 
 |属性|类型|说明|
 |:---|:---|:---|
-|officeConfigurationPolicyIds|String 集合|Office 配置策略 id 列表|
+|officeConfigurationPolicyIds|String collection|Office 配置策略 id 列表|
 |officeConfigurationPriorities|Int32 集合|Office 配置优先级列表|
 
 
@@ -86,6 +86,9 @@ Content-length: 143
 ``` http
 HTTP/1.1 200 OK
 ```
+
+
+
 
 
 

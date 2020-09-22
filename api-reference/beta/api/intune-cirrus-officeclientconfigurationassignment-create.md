@@ -3,20 +3,20 @@ title: 创建 officeClientConfigurationAssignment
 description: 将目标组添加到现有策略中。
 localization_priority: Normal
 author: dougeby
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e9517ee0937146a7e05b016d5f58a49236ca229
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 81c6e0d9770c8bb361869f75fa594dbdfd759cbc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43392006"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975302"
 ---
 # <a name="create-officeclientconfigurationassignment"></a>创建 officeClientConfigurationAssignment
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,13 +53,13 @@ POST /officeConfiguration/clientConfigurations/{key}/assignments
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|OfficeConfigurationAssignment 的 Id。|
+|id|String|OfficeConfigurationAssignment 的 Id。|
 |target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|由管理员定义的目标分配。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 Created`正文中返回响应代码和[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)对象。
+如果成功，此方法 `200 Created` 在响应正文中返回响应代码和 [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -93,6 +93,9 @@ Content-Length: 221
   }
 }
 ```
+
+
+
 
 
 

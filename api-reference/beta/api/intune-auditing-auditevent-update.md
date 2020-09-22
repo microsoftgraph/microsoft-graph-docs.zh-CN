@@ -3,14 +3,14 @@ title: 更新 auditEvent
 description: 更新 auditEvent 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a1cbc085b1ef5c95fb5faa820d38627ee787d4c
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 8831ed349c830d119029fd554922b1d3742d6989
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791846"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47975862"
 ---
 # <a name="update-auditevent"></a>更新 auditEvent
 
@@ -191,6 +191,9 @@ Content-Length: 1746
   "category": "Category value"
 }
 ```
+
+
+
 
 
 
