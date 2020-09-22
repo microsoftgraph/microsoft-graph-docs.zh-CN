@@ -5,18 +5,18 @@ localization_priority: Normal
 author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 82cab29a9b2876b325205f422e595293a5327ee1
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: dbc70494077e9d2dea878c2da8657b3cf630aef1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863204"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083867"
 ---
 # <a name="update-claimsmappingpolicy"></a>更新 claimsmappingpolicy
 
 命名空间：microsoft.graph
 
-更新[claimsMappingPolicy](../resources/claimsmappingpolicy.md)对象的属性。
+更新 [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -51,7 +51,7 @@ PATCH /policies/claimsMappingPolicies/{id}
 |:-------------|:------------|:------------|
 |定义|String collection| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。  必需。|
 |description|String| 此策略的说明。|
-|displayName|String| 此策略的显示名称。 必填。|
+|displayName|String| 此策略的显示名称。 必需。|
 |isOrganizationDefault|Boolean|如果设置为 true，则激活此策略。 对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。 可选，默认值为 false。|
 
 ## <a name="response"></a>响应
@@ -133,3 +133,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

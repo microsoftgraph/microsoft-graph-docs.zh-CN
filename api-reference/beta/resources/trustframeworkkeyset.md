@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c0784bffd1682f59e94d728c2311ffaaa01681c5
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 17e9e0d73ce25fab0462d6ee8eb50e3e232f8340
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218049"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083888"
 ---
 # <a name="trustframeworkkeyset-resource-type"></a>trustFrameworkKeySet 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "43218049"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示信任框架密钥集/策略键。 标识体验框架存储可在策略中使用的机密。 密码可以是密码、证书或其他文件。 在门户中，这些实体显示为`Policy keys`。 标识体验框架使用 keysets 的 JSON Web 密钥（JWK）标准。 此实体遵循[RFC 7517 第5部分](https://tools.ietf.org/html/rfc7517#section-5)中指定的格式。
+表示信任框架密钥集/策略键。 标识体验框架存储可在策略中使用的机密。 密码可以是密码、证书或其他文件。 在门户中，这些实体显示为 `Policy keys` 。 标识体验框架使用 JSON Web 密钥 (keysets 的 JWK) standard。 此实体遵循 [RFC 7517 第5部分](https://tools.ietf.org/html/rfc7517#section-5)中指定的格式。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
-| 方法       | 返回类型 | 说明 |
+| 方法       | 返回类型 | Description |
 |:-------------|:------------|:------------|
-| [List](../api/trustframework-list-keysets.md) | [trustFrameworkKeySet](trustframeworkkeyset.md)组 | 列出 trustFrameworkKeySets。 |
-| [创建](../api/trustframework-post-keysets.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) | 创建 trustFrameworkKeySet。 |
-| [获取](../api/trustframeworkkeyset-get.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) | 读取 trustFrameworkKeySet 对象的属性和关系。 |
+| [List](../api/trustframework-list-keysets.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) 组 | 列出 trustFrameworkKeySets。 |
+| [Create](../api/trustframework-post-keysets.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) | 创建 trustFrameworkKeySet。 |
+| [Get](../api/trustframeworkkeyset-get.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) | 读取 trustFrameworkKeySet 对象的属性和关系。 |
 | [更新](../api/trustframeworkkeyset-update.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) | 更新 trustFrameworkKeySet 对象。 |
 | [删除](../api/trustframeworkkeyset-delete.md) | 无 | 删除 trustFrameworkKeySet 对象。 |
 |[生成密钥](../api/trustframeworkkeyset-generatekey.md)|[trustFrameworkKey](trustframeworkkey.md)| 在键集内生成密钥。 |
@@ -40,7 +40,7 @@ ms.locfileid: "43218049"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|字符串| Trustframework 键集的唯一标识符 |
-|标示|[trustFrameworkKey](trustframeworkkey.md)集合| 键的集合。 |
+|标示|[trustFrameworkKey](trustframeworkkey.md) 集合| 键的集合。 |
 
 ## <a name="relationships"></a>关系
 
@@ -76,3 +76,5 @@ ms.locfileid: "43218049"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

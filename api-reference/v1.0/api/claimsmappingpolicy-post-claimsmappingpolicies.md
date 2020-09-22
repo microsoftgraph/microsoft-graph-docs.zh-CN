@@ -5,18 +5,18 @@ localization_priority: Normal
 author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1a1570e237c57f565c66afd0c921c31b6b8765f1
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: e4d7b95680877ed16e0366f526b3b16b1f61c7b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863230"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083874"
 ---
 # <a name="create-claimsmappingpolicy"></a>创建 claimsMappingPolicy
 
 命名空间：microsoft.graph
 
-创建新的[claimsMappingPolicy](../resources/claimsmappingpolicy.md)对象。
+创建新的 [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -45,11 +45,11 @@ POST policies/claimsMappingPolicies
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[claimsMappingPolicy](../resources/claimsmappingpolicy.md)对象的 JSON 表示形式。
+在请求正文中，提供 [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[claimsMappingPolicy](../resources/claimsmappingpolicy.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -129,3 +129,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,18 +5,18 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: db09904e99eb892a5ee09acd43dde1967ce3ea39
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 6030679dceb11e9424cdf7e88859ec27b346fb4a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43179442"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083860"
 ---
 # <a name="list-domainnamereferences"></a>列出 domainNameReferences
 
 命名空间：microsoft.graph
 
-使用对域的引用检索[directoryObject](../resources/directoryobject.md)列表。 返回的列表将包含对域具有依赖性的所有目录对象。
+使用对域的引用检索 [directoryObject](../resources/directoryobject.md) 列表。 返回的列表将包含对域具有依赖性的所有目录对象。
 
 ## <a name="permissions"></a>权限
 
@@ -27,7 +27,7 @@ ms.locfileid: "43179442"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 不支持。 |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Domain.ReadWrite.All |
+|应用程序 | Domain.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -128,3 +128,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

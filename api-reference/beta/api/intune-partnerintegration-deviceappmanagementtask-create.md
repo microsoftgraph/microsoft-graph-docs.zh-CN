@@ -3,24 +3,24 @@ title: 创建 deviceAppManagementTask
 description: 创建新的 deviceAppManagementTask 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a85d1eab1db9399f89e384f07bca058f2568e96
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0410b5912dfdfcc98238fdb58fd1058690b96c83
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445378"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036350"
 ---
 # <a name="create-deviceappmanagementtask"></a>创建 deviceAppManagementTask
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)对象。
+创建新的 [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,9 +53,9 @@ POST /deviceAppManagement/deviceAppManagementTasks
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体键。|
+|id|String|实体键。|
 |displayName|String|名称。|
-|description|字符串|说明。|
+|description|String|说明。|
 |createdDateTime|DateTimeOffset|创建日期。|
 |dueDateTime|DateTimeOffset|到期日期。|
 |“类别”|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|类别。 可取值为：`unknown`、`advancedThreatProtection`。|
@@ -68,7 +68,7 @@ POST /deviceAppManagement/deviceAppManagementTasks
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -115,6 +115,9 @@ Content-Length: 508
   "status": "pending"
 }
 ```
+
+
+
 
 
 
