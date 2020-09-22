@@ -6,12 +6,12 @@ description: CommentAction 对象提供有关对项目所做的注释的信息�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: f3720d84624fa728a168515beb28422ab355b335
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f1632847461b1aa0cde429edfc4d8c5cff11ee3e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531807"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988329"
 ---
 # <a name="commentaction-resource-type"></a>commentAction 资源类型
 
@@ -58,3 +58,4 @@ ms.locfileid: "42531807"
   "suppressions": []
 }
 -->
+

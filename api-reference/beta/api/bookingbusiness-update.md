@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: b820d65a50b2a07bd1c3e95936bc6ee304f20d96
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: be5b4fc09bccded8b7f1e9739b7e1c080b5c73d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376602"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987972"
 ---
 # <a name="update-bookingbusiness"></a>更新 bookingbusiness
 
@@ -18,7 +18,7 @@ ms.locfileid: "43376602"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[bookingBusiness](../resources/bookingbusiness.md)对象的属性。
+更新 [bookingBusiness](../resources/bookingbusiness.md) 对象的属性。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -44,14 +44,14 @@ PATCH /bookingBusinesses/{id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |address|[physicalAddress](../resources/physicaladdress.md)|企业的街道地址。|
-|businessHours|[bookingWorkHours](../resources/bookingworkhours.md)集合|业务的运行时间。|
-|businessType|字符串|企业的类型。|
-|defaultCurrencyIso|字符串|业务在 Microsoft 预订中所运行的货币的代码。|
-|displayName|字符串|与客户进行交互的企业的名称。|
+|businessHours|[bookingWorkHours](../resources/bookingworkhours.md) 集合|业务的运行时间。|
+|businessType|String|企业的类型。|
+|defaultCurrencyIso|String|业务在 Microsoft 预订中所运行的货币的代码。|
+|displayName|String|与客户进行交互的企业的名称。|
 |email|String|企业的电子邮件地址。|
 |phone|String|企业的电话号码。|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|指定如何为此公司创建预订。|
-|webSiteUrl|字符串|业务网站的 URL。|
+|webSiteUrl|String|业务网站的 URL。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
@@ -116,3 +116,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

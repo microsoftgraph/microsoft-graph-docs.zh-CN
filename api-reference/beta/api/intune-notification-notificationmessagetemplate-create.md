@@ -3,20 +3,20 @@ title: 创建 notificationMessageTemplate
 description: 创建新的 notificationMessageTemplate 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cbccbb8e464d3009304bcf84a1677235bab4fe28
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 1d7e14aef58a4b546a2906da9f308770e64f3fa2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791866"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989915"
 ---
 # <a name="create-notificationmessagetemplate"></a>创建 notificationMessageTemplate
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,7 +55,7 @@ POST /deviceManagement/notificationMessageTemplates
 |:---|:---|:---|
 |id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
-|displayName|字符串|通知消息模板的显示名称。|
+|displayName|String|通知消息模板的显示名称。|
 |defaultLocale|String|请求的区域设置不可用时要回退到的默认区域设置。|
 |brandingOptions|[notificationTemplateBrandingOptions](../resources/intune-notification-notificationtemplatebrandingoptions.md)|消息模板品牌选项。 已在 Intune 管理员控制台中定义品牌。 可取值为：`none`、`includeCompanyLogo`、`includeCompanyName`、`includeContactInformation`、`includeCompanyPortalLink`。|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。|
@@ -104,6 +104,9 @@ Content-Length: 372
   ]
 }
 ```
+
+
+
 
 
 

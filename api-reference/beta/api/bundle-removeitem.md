@@ -6,20 +6,20 @@ description: 从 Driveitem 的捆绑包中删除项目
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 508dd19edcd3c1ae231c54cdb195d86661bb4259
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc6e3a630fb8cc8efda269b898adce3a9111c2ec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441023"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987716"
 ---
 # <a name="remove-item-from-bundle"></a>从捆绑包中删除项目
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从[捆绑包][]中删除项目。
+从 [捆绑包][]中删除项目。
 
 ## <a name="permissions"></a>权限
 
@@ -41,7 +41,7 @@ DELETE /drive/bundles/{bundle-id}/children/{item-id}
 
 | 名称          | 说明  |
 |:------------- |:------------ |
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -49,9 +49,9 @@ DELETE /drive/bundles/{bundle-id}/children/{item-id}
 
 ## <a name="response"></a>响应
 
-如果成功，响应为`204 No Content`。
+如果成功，响应为 `204 No Content` 。
 
-阅读 "[错误响应][error-response]" 主题，了解有关如何返回错误的详细信息。
+阅读 " [错误响应][error-response] " 主题，了解有关如何返回错误的详细信息。
 
 ## <a name="example"></a>示例
 
@@ -97,3 +97,5 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation"
 } -->
+
+

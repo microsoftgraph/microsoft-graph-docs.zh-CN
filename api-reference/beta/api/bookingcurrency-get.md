@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 6b1a6339046f06688ce17d4c3522f389d0956e0e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 31d8791f6ae2345bedffa7fe25a80f83651bda3e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376595"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987951"
 ---
 # <a name="get-bookingcurrency"></a>获取 bookingCurrency
 
@@ -18,7 +18,7 @@ ms.locfileid: "43376595"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取可用于 Microsoft 预订业务的[bookingCurrency](../resources/bookingcurrency.md)对象的属性。 使用**id**属性（即货币代码）指定货币。
+获取可用于 Microsoft 预订业务的 [bookingCurrency](../resources/bookingcurrency.md) 对象的属性。 使用 **id** 属性（即货币代码）指定货币。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -45,7 +45,7 @@ GET /bookingCurrencies/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[bookingCurrency](../resources/bookingcurrency.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [bookingCurrency](../resources/bookingcurrency.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -104,3 +104,5 @@ Content-length: 50
   ]
 }
 -->
+
+

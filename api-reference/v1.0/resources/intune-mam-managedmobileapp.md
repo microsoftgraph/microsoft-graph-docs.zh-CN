@@ -3,14 +3,14 @@ title: managedMobileApp 资源类型
 description: 部署应用的标识符。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3ea9893e4f002f95939c2f2ac6695d8974bbd423
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: c27a6dbef46c99a162994cc15fd480c1ae765029
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43406596"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988224"
 ---
 # <a name="managedmobileapp-resource-type"></a>managedMobileApp 资源类型
 
@@ -57,6 +57,8 @@ ms.locfileid: "43406596"
   "version": "String"
 }
 ```
+
+
 
 
 

@@ -1,24 +1,24 @@
 ---
-title: servicePrincipal： getMemberObjects
+title: 'servicePrincipal: getMemberObjects'
 description: 获取此服务主体所属的组和目录角色列表。  此检查是可传递的。
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 68122fac4ede4a856f788e534f93dc476d77eac7
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: c2940904b4399141c0a70ff121456bc8072f11d3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383341"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989929"
 ---
-# <a name="serviceprincipal-getmemberobjects"></a>servicePrincipal： getMemberObjects
+# <a name="serviceprincipal-getmemberobjects"></a>servicePrincipal: getMemberObjects
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取此[servicePrincipal](../resources/serviceprincipal.md)所属的组和目录角色的列表。  此检查是可传递的。
+获取此 [servicePrincipal](../resources/serviceprincipal.md)所属的组和目录角色列表。  此检查是可传递的。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,13 +44,13 @@ POST /servicePrincipals/{id}/getMemberObjects
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |Description|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |securityEnabledOnly|Boolean||
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和字符串集合对象。
+如果成功，该运营商将返回 `200 OK` 响应代码和响应正文中的字符串集合对象。
 
 ## <a name="examples"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -121,3 +121,5 @@ Content-length: 39
   ]
 }
 -->
+
+

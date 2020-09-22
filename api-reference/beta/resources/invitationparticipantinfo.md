@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a21ffce09a7f086bced5416eace2a95170b3eaf2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9193ec70a3884ba9bf25e4f1c8c33eb7c77d838f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523182"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989036"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>invitationParticipantInfo 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ ms.locfileid: "42523182"
 | 属性                           | 类型                          | 说明                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
 | endpointType                       | String                        | 终结点的类型。 可取值为：`default`、`voicemail`。 |
-| 窃取                           | [identitySet](identityset.md) | 与此邀请关联的[了解 identityset](identityset.md) 。                   |
+| 窃取                           | [identitySet](identityset.md) | 与此邀请关联的 [了解 identityset](identityset.md) 。                   |
 | replacesCallId                     | String                        | 可选。 目标 idenity 当前是其一部分的调用。 添加参与者后，将删除此呼叫。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -60,3 +60,5 @@ ms.locfileid: "42523182"
   "suppressions": []
 }
 -->
+
+

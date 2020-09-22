@@ -6,20 +6,20 @@ description: 获取 Driveitem 的捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 191157efb35b50ecff358d7902a7a6c42a6fb7a4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 810f7c87effc14d2d62ad2039354754331da3ceb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441030"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987783"
 ---
 # <a name="get-bundle"></a>获取捆绑包
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-根据捆绑包的唯一 ID 检索[捆绑][]的元数据。
+根据捆绑包的唯一 ID 检索 [捆绑][] 的元数据。
 
 ## <a name="permissions"></a>权限
 
@@ -38,8 +38,8 @@ GET /drive/bundles/{bundle-id}
 GET /drive/items/{bundle-id}
 ```
 
-由于捆绑包是项，因此可以使用**items**集合返回有关捆绑包的元数据。
-你也可以使用**捆绑包**集合来确保你在响应时获得捆绑包。
+由于捆绑包是项，因此可以使用 **items** 集合返回有关捆绑包的元数据。
+你也可以使用 **捆绑包** 集合来确保你在响应时获得捆绑包。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -57,9 +57,9 @@ GET /drive/items/{bundle-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回[driveItem][driveItem] resource with the [bundle][bundle] 。
+如果成功，此方法[driveItem][driveItem] resource with the [bundle][bundle] 在响应正文中返回 driveItem。
 
-阅读 "[错误响应][error-response]" 主题，了解有关如何返回错误的详细信息。
+阅读 " [错误响应][error-response] " 主题，了解有关如何返回错误的详细信息。
 
 ## <a name="examples"></a>示例
 
@@ -119,7 +119,7 @@ Content-type: application/json
 
 ### <a name="example-2-get-a-bundle-and-its-children-in-a-single-call"></a>示例2：在单个调用中获取捆绑包及其子项
 
-您可以使用[`expand`](/graph/query-parameters)查询字符串参数在与检索捆绑的元数据的相同调用中添加捆绑包的子项。
+您可以使用 [`expand`](/graph/query-parameters) 查询字符串参数在与检索捆绑的元数据的相同调用中添加捆绑包的子项。
 
 #### <a name="request"></a>请求
 
@@ -150,7 +150,7 @@ GET https://graph.microsoft.com/beta/drive/items/{bundle-id}?expand=children
 此调用将返回捆绑包元数据和捆绑的子项列表。
 如果捆绑包没有任何子级，则将返回一个空集合。
 
-如果捆绑包中的子项数量大于默认页面大小，则将使用可用于请求捆绑中的下一页子页面的 URL 返回**children@odata 的 nextLink**属性。
+如果捆绑包中的子项数量大于默认页面大小，则将使用可用于请求捆绑中的下一页子页面的 URL 返回 **children@odata 的 nextLink** 属性。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -185,3 +185,5 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "Bundles/Get Bundle Metadata"
 } -->
+
+

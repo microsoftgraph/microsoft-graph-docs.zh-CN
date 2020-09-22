@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c2416780c9d9f832c0b202fc18516d93f952b74e
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: b1cf31b25eaa3223b087d364b1aeb7f69fe7982e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916330"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988175"
 ---
 # <a name="update-activitybasedtimeoutpolicy"></a>更新 activitybasedtimeoutpolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "43916330"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md)对象的属性。
+更新 [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -51,7 +51,7 @@ PATCH /policies/activityBasedTimeoutPolicies/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|定义|String 集合| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。  必需。|
+|定义|String collection| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。  必需。|
 |description|String| 此策略的说明。|
 |displayName|String| 此策略的显示名称。 必需。|
 |isOrganizationDefault|Boolean|如果设置为 true，则激活此策略。 对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。 可选，默认值为 false。|
@@ -135,3 +135,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 999eb8bf61b07d64046a356af510c7cb71011400
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 04428e62c040a368a112610c7f8930076819c453
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895655"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987811"
 ---
 # <a name="update-bookingstaffmember"></a>更新 bookingstaffmember
 
@@ -43,13 +43,13 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|Boolean|如果为 True，则表示如果教职员工成员是 Microsoft 365 用户，则预订 API 将使用 Microsoft 365 中的教职员工成员的个人日历以及**workingHours**属性来确定可用性。 |
-|colorIndex|Int32|标识代表教职员工成员的颜色。 该颜色对应于预订应用中的 "**员工详细信息**" 页上的调色板。|
+|availabilityIsAffectedByPersonalCalendar|Boolean|如果为 True，则表示如果教职员工成员是 Microsoft 365 用户，则预订 API 将使用 Microsoft 365 中的教职员工成员的个人日历以及 **workingHours** 属性来确定可用性。 |
+|colorIndex|Int32|标识代表教职员工成员的颜色。 该颜色对应于预订应用中的 " **员工详细信息** " 页上的调色板。|
 |displayName|String|向客户显示的教职员工成员的姓名。|
-|emailAddress|String|教职员工成员的电子邮件地址。 这可以与公司在同一 Microsoft 365 租户中，也可以位于不同的电子邮件域中。 如果在企业的计划策略中将**sendConfirmationsToOwner**属性设置为 true，则使用此电子邮件地址。|
-|role|string| 企业中教职员工成员的角色。 可取值为：`guest`、`administrator`、`viewer`、`externalGuest`。|
-|useBusinessHours|Boolean|如果为 True，则表示教职员工成员的可用性取决于企业的**businessHours**属性。 False 表示可用性由教职员工成员的**workingHouse**属性设置决定。|
-|workingHours|[bookingWorkHours](../resources/bookingworkhours.md)集合|教职员工成员可用于预订的一周中每一天的小时数。|
+|emailAddress|String|教职员工成员的电子邮件地址。 这可以与公司在同一 Microsoft 365 租户中，也可以位于不同的电子邮件域中。 如果在企业的计划策略中将 **sendConfirmationsToOwner** 属性设置为 true，则使用此电子邮件地址。|
+|role|字符串| 企业中教职员工成员的角色。 可取值为：`guest`、`administrator`、`viewer`、`externalGuest`。|
+|useBusinessHours|Boolean|如果为 True，则表示教职员工成员的可用性取决于企业的 **businessHours** 属性。 False 表示可用性由教职员工成员的 **workingHouse** 属性设置决定。|
+|workingHours|[bookingWorkHours](../resources/bookingworkhours.md) 集合|教职员工成员可用于预订的一周中每一天的小时数。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No content` 响应代码。它不在响应正文中返回任何内容。
@@ -169,3 +169,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

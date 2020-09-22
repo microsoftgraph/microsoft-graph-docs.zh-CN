@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: d1a1f1cb63d4f5feee4f8a6d399a91dfc4c35266
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7de7f328d59ba20de77ec75cf5c6f16a0da2bc9e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43367178"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988077"
 ---
 # <a name="list-appointments"></a>列出约会
 
@@ -36,7 +36,7 @@ GET /bookingBusinesses/{id}/appointments
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
-若要在日期范围内（而不是`$filter`）获取预订业务的约会集，请在该日期范围内[获取 calendarView](bookingbusiness-list-calendarview.md) 。
+若要在日期范围内（而不是）获取预订业务的约会集，请在 `$filter` 该日期范围内 [获取 calendarView](bookingbusiness-list-calendarview.md) 。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -46,7 +46,7 @@ GET /bookingBusinesses/{id}/appointments
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[bookingAppointment](../resources/bookingappointment.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [bookingAppointment](../resources/bookingappointment.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -273,3 +273,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

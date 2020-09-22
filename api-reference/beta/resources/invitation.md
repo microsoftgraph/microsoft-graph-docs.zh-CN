@@ -5,12 +5,12 @@ localization_priority: Normal
 author: elisolMS
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 41641cbd66945a9d55523d2c6518f13fb45a23ce
-ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
+ms.openlocfilehash: 0e210def9b58a6ff5a9abe295ec869bb6ab88051
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47287475"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989071"
 ---
 # <a name="invitation-resource-type"></a>邀请资源类型
 
@@ -52,7 +52,7 @@ ms.locfileid: "47287475"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|invitedUser|[user](user.md)|创建为邀请创建进程组成部分的用户。只读|
+|invitedUser|[用户](user.md)|创建为邀请创建进程组成部分的用户。只读|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -96,3 +96,5 @@ ms.locfileid: "47287475"
   "suppressions": []
 }
 -->
+
+

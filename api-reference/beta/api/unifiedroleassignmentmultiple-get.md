@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2de8dec1048aec0353a5bcc4dc0abc69f659df4a
-ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
+ms.openlocfilehash: 0b4300a3f5256b69b24c5df53866d970e0858b88
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44226908"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989890"
 ---
 # <a name="get-unifiedroleassignmentmultiple"></a>获取 unifiedRoleAssignmentMultiple
 
@@ -18,7 +18,7 @@ ms.locfileid: "44226908"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md)对象的属性和关系。 使用此对象可在 Microsoft Intune 中获取角色分配。 对于其他 Micrsoft 365 应用程序（如 Azure AD），请使用[unifiedRoleAssignment](../resources/unifiedroleassignment.md)。
+检索 [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象的属性和关系。 使用此对象可在 Microsoft Intune 中获取角色分配。 对于其他 Micrsoft 365 应用程序 (如 Azure AD) ，请使用 [unifiedRoleAssignment](../resources/unifiedroleassignment.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "44226908"
 |:--------------- |:------------------------------------------- |
 | 委派（工作或学校帐户） | Devicemanagementrbac.readwrite.all、Devicemanagementrbac.readwrite.all 和所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application | Devicemanagementrbac.readwrite.all、Devicemanagementrbac.readwrite.all 和所有 |
+| 应用程序 | Devicemanagementrbac.readwrite.all、Devicemanagementrbac.readwrite.all 和所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -39,7 +39,7 @@ GET /roleManagement/deviceManagement/roleAssignments/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -53,7 +53,7 @@ GET /roleManagement/deviceManagement/roleAssignments/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -182,7 +182,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-a-directory-scoped-roleassignmentmultiple-with-expand"></a>示例3：获取目录范围的 roleAssignmentMultiple`$expand`
+### <a name="example-3-get-a-directory-scoped-roleassignmentmultiple-with-expand"></a>示例3：获取目录范围的 roleAssignmentMultiple `$expand`
 
 #### <a name="request"></a>请求
 
@@ -283,3 +283,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

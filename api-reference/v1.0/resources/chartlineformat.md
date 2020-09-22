@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 7224f7d5d0b41814c17081eefab79de47ca89ebb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4ad04617e59a45cb9c0fa265759fd249243e987d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533116"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988398"
 ---
 # <a name="chartlineformat-resource-type"></a>ChartLineFormat 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "42533116"
 封装线条元素的格式选项。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -63,3 +63,4 @@ ms.locfileid: "42533116"
   "section": "documentation",
   "tocPath": ""
 }-->
+

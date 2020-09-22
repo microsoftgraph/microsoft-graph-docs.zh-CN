@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: eb763490e9d60ca386400eef3dae1b9e2d382d21
-ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
+ms.openlocfilehash: c49034c0d050c928b8a9192af6b2adee27a2a516
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/04/2020
-ms.locfileid: "45038662"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988749"
 ---
 # <a name="unifiedroleassignmentmultiple-resource-type"></a>unifiedRoleAssignmentMultiple 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "45038662"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-UnifiedRoleAssignmentMultiple 用于授予对资源的访问权限。 它表示分配给范围数组的主体（通常为用户）数组的角色定义。 此类 RBAC 提供程序的一个示例是 Microsoft Intune。 在 Microsoft Intune 中，可以创建具有多个主体和多个作用域的角色分配。
+UnifiedRoleAssignmentMultiple 用于授予对资源的访问权限。 它表示分配给主体数组的角色定义 (通常是用户在范围数组上的) 。 此类 RBAC 提供程序的一个示例是 Microsoft Intune。 在 Microsoft Intune 中，可以创建具有多个主体和多个作用域的角色分配。
 
 提供 " **directoryScopeIds** " 或 " **appScopeIds** " 是必需的。
 
@@ -35,17 +35,17 @@ UnifiedRoleAssignmentMultiple 用于授予对资源的访问权限。 它表示�
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| id | 字符串 | UnifiedRoleAssignmentMultiple 的唯一标识符。 键，不可为 null，只读。 |
+| id | String | UnifiedRoleAssignmentMultiple 的唯一标识符。 键，不可为 null，只读。 |
 | displayName | String | 角色分配的名称。 必需。 |
 | description | String | 角色分配的说明。 |
 | roleDefinitionId | String | 工作分配所针对的 unifiedRoleDefinition 的 ID。 |
 | roleDefinition | [unifiedRoleDefinition](unifiedroledefinition.md) |指示工作分配所针对的 roleDefinition 的属性。 提供，以便呼叫者可以在获取角色分配的同时使用该角色定义 `$expand` 。 只读。  |
 | principalIds | String collection | 向其授予分配的主体的 Objectids。 |
-| 原理| [directoryObject](directoryobject.md) 集合 | 引用所分配的主体的只读集合。 提供，以便呼叫者可以在获取角色分配的同时使用这些承担者 `$expand` 。 只读。 |
+| 原理| [directoryObject](directoryobject.md) collection | 引用所分配的主体的只读集合。 提供，以便呼叫者可以在获取角色分配的同时使用这些承担者 `$expand` 。 只读。 |
 | directoryScopeIds | String collection | 表示工作分配范围的目录对象的 id。 工作分配的范围决定了主体已被授予访问权限的资源集。 目录作用域是存储在多个应用程序可理解的目录中的共享作用域。 应用范围是此应用程序仅定义和理解的作用域。 |
-| directoryScopes | [directoryObject](directoryobject.md) 集合 | 只读集合，引用属于分配范围的目录对象。 提供，以便呼叫者可以使用 `$expand` 与获取角色分配相同的时间获取目录对象。 只读。 |
+| directoryScopes | [directoryObject](directoryobject.md) collection | 只读集合，引用属于分配范围的目录对象。 提供，以便呼叫者可以使用 `$expand` 与获取角色分配相同的时间获取目录对象。 只读。 |
 | appScopeIds | String collection | 当分配作用域是特定于应用的应用程序特定作用域的 id。 工作分配的范围决定了主体已被授予访问权限的一组资源。 目录作用域是存储在多个应用程序可理解的目录中的共享作用域。 对租户范围范围使用 "/"。 应用范围是此应用程序仅定义和理解的作用域。 |
-| appScopes | [appScope](appscope.md)集合 |只读集合，其中包含应用程序特定作用域的详细信息，当分配作用域为应用程序特定时。 包容实体。 只读。  |
+| appScopes | [appScope](appscope.md) 集合 |只读集合，其中包含应用程序特定作用域的详细信息，当分配作用域为应用程序特定时。 包容实体。 只读。  |
 
 ## <a name="relationships"></a>关系
 
@@ -90,3 +90,5 @@ UnifiedRoleAssignmentMultiple 用于授予对资源的访问权限。 它表示�
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 828614446143569b3e7d82233a8ba19e4140697e
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 966e03eacb3e72621c65aa64183c6db0bc8b4e82
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319384"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988504"
 ---
 # <a name="call-resource-type"></a>call 资源类型
 
@@ -50,6 +50,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | **Interactive-Voice-Response**                                     |                                                             |                                                                                 |
 | [PlayPrompt](../api/call-playprompt.md)                            | [playPromptOperation](playpromptoperation.md)               | 在呼叫中播放提示。                                                        |
 | [RecordResponse](../api/call-record.md)                            | [recordOperation](recordoperation.md)                       | 录制来自呼叫方的简短音频回复。                                        |
+| [CancelMediaProcessing](../api/call-cancelMediaProcessing.md)                  | [commsOperation](commsoperation.md)                         | 取消媒体处理。                                                        |
 | [SubscribeToTone](../api/call-subscribetotone.md)                  | [commsOperation](commsoperation.md)                         | 订阅 DTMF 音。                                                        |
 | **Self Participant Operations**                                    |                                                             |                                                                                 |
 | [Mute](../api/call-mute.md)                                        | [muteParticipantOperation](muteparticipantoperation.md)     | 在呼叫中将自己设为静音。                                                          |
@@ -153,3 +154,4 @@ incomingContext            | [incomingContext](incomingContext.md)              
   "suppressions": []
 }
 -->
+

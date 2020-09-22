@@ -6,16 +6,16 @@ description: 更新 Driveitem 的捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 18c04ff7760505901ded5adb6e291fadc7481b35
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 111dbfed3fed6af28c57e04c3437a3a6228c2e3e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441016"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987721"
 ---
 # <a name="update-bundle"></a>更新捆绑包
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ ms.locfileid: "42441016"
 您只能更新以下元数据：
 
 * 捆绑包名称
-* 唱片`coverImageItemId`集（如果适用）
+* 如果适用，则为唱片集 `coverImageItemId` () 
 
 任何其他更改请求都将被忽略。
 
@@ -50,7 +50,7 @@ PATCH /drive/items/{bundle-id}
 | 名称          | 说明  |
 |:------------- |:------------ |
 | Authorization | 持有者 \{token\}。 必需。 |
-| if-match      | eTag. 可选。 如果包含此请求标头，且提供的 eTag 与 buncle 上的当前 eTag 不匹配，则`412 Precondition Failed`返回响应。
+| if-match      | eTag. 可选。 如果包含此请求标头，且提供的 eTag 与 buncle 上的当前 eTag 不匹配， `412 Precondition Failed` 则返回响应。
 
 ## <a name="request-body"></a>请求正文
 
@@ -58,9 +58,9 @@ PATCH /drive/items/{bundle-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回一个[driveItem][]资源，该资源表示响应正文中更新的捆绑包。
+如果成功，此方法将返回一个 [driveItem][] 资源，该资源表示响应正文中更新的捆绑包。
 
-阅读 "[错误响应][error-response]" 主题，了解有关如何返回错误的详细信息。
+阅读 " [错误响应][error-response] " 主题，了解有关如何返回错误的详细信息。
 
 ## <a name="example"></a>示例
 
@@ -126,3 +126,5 @@ Content-Type: application/json
   "section": "documentation",
     "tocPath": "Bundles/Update"
 } -->
+
+

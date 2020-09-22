@@ -3,14 +3,14 @@ title: managedAppStatusRaw 资源类型
 description: 表示有关组织应用保护和配置的非类型化状态报告。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d41800f5a76e0391b0a7b59caec2eaf0ec16c2de
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2c19d0e54383c96d7d5ec55e347f116ddfd4ef1e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43354203"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988238"
 ---
 # <a name="managedappstatusraw-resource-type"></a>managedAppStatusRaw 资源类型
 
@@ -59,6 +59,8 @@ ms.locfileid: "43354203"
   }
 }
 ```
+
+
 
 
 

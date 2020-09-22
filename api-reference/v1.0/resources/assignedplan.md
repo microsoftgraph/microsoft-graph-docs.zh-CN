@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e4a184a45f1ec385a47fab0e51918949119523b9
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 13771d3e2013d0aa18de2c67393afeabf98fb5ed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808387"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988560"
 ---
 # <a name="assignedplan-resource-type"></a>assignedPlan 资源类型
 
@@ -58,3 +58,4 @@ ms.locfileid: "46808387"
   "section": "documentation",
   "tocPath": ""
 }-->
+

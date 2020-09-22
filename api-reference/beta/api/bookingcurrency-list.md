@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: f279cfe4d6a5ca8ceef65ce63fb3edbf76716e68
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 644351aa2dff960590940cddfad3abbdda5d2b1d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376526"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987923"
 ---
 # <a name="list-bookingcurrencies"></a>列出 bookingCurrencies
 
@@ -18,7 +18,7 @@ ms.locfileid: "43376526"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取可用于 Microsoft 预订业务的[bookingCurrency](../resources/bookingcurrency.md)对象的列表。
+获取可用于 Microsoft 预订业务的 [bookingCurrency](../resources/bookingcurrency.md) 对象的列表。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -34,7 +34,7 @@ ms.locfileid: "43376526"
 GET /bookingCurrencies
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)，以帮助自定义响应，包括 $count、$filter、$select、$skip 和 $top。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) ，以帮助自定义响应，包括 $count、$filter、$select、$skip 和 $top。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -44,7 +44,7 @@ GET /bookingCurrencies
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[bookingCurrency](../resources/bookingcurrency.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [bookingCurrency](../resources/bookingcurrency.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/bookingCurrencies
 ---
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，此处显示的响应对象将被截断。 所有受支持的货币和属性都将从实际调用返回。
+下面介绍响应示例。 注意：为简洁起见，此处显示的响应对象将被截断。 所有受支持的货币和属性都将从实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -135,3 +135,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

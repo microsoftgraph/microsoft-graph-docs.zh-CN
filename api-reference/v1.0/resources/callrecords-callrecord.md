@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9cfcaed2ce14e5d2fbfe00cb07b2f26ecb02a66e
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: dbc0884ad03be4186d5a08c59e4494413b0b1a29
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491957"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988462"
 ---
 # <a name="callrecord-resource-type"></a>callRecord 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "44491957"
 
 代表一个或多个参与者之间的一个对等呼叫或组呼叫（有时称为联机会议）。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -26,7 +26,7 @@ ms.locfileid: "44491957"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |endDateTime|DateTimeOffset|上次用户离开呼叫时的 UTC 时间。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |id|String|呼叫记录的唯一标识符。 只读。|
@@ -41,9 +41,9 @@ ms.locfileid: "44491957"
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型        | Description |
+| 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|会话|[callRecords](callrecords-session.md)集合的|呼叫中涉及的会话列表。 对等呼叫通常仅具有一个会话，而组调用通常每个参与者至少有一个会话。 只读。 可为 Null。|
+|会话|[callRecords](callrecords-session.md) 集合的|呼叫中涉及的会话列表。 对等呼叫通常仅具有一个会话，而组调用通常每个参与者至少有一个会话。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 531b2008cb5be2b94e22f3d7a7d4f947f4d9db8d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 708d6d0f40735844fd0e9badf916ec2dfd247832
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43367626"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988126"
 ---
 # <a name="delete-bookingappointment"></a>删除 bookingAppointment
 
@@ -95,3 +95,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

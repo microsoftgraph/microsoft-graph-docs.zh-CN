@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: a1f2a9bf6e7617cf991a37acada452c6c19b05d4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a29904342e44a7642335333fa39f95866df1609d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382411"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988003"
 ---
 # <a name="bookingbusiness-publish"></a>bookingBusiness：发布
 
@@ -20,14 +20,14 @@ ms.locfileid: "43382411"
 
 使此业务的日程安排页面对外部客户可用。
 
-将**isPublished**属性设置为 true，并将**publicUrl**属性设置为计划页面的 URL。
+将 **isPublished** 属性设置为 true，并将 **publicUrl** 属性设置为计划页面的 URL。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  预订. 全部   |
+|委派（工作或学校帐户） |  Bookings.Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -99,3 +99,5 @@ HTTP/1.1 204 No content
   ]
 }
 -->
+
+

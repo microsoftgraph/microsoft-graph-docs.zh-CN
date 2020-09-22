@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: a496740bf94ef524560d28b08498da852ccf1e2f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8a6a0e70937dbf24d59adcc922944f211e570448
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43366986"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988063"
 ---
 # <a name="list-bookings-calendarview"></a>列出 Bookings 日历视图
 
@@ -44,7 +44,7 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 |start|DateTimeOffset|时间范围的开始日期和时间，以 ISO 8601 格式表示，如 UTC 或 UTC 时差。 例如，2018年1月1日午夜 UTC 将如下所示： ' 2018-01-01T00：00： 00Z '，PST 的相同时间如下所示： ' 2017-12-31T16：00： 00-08： 00 '。|
 |end|DateTimeOffset|时间范围的结束日期和时间，以 ISO 8601 格式表示，即 UTC 或 UTC 时差。 例如，2018年1月1日的 3am UTC 如下所示： ' 2018-01-01T03：00： 00Z '，PST 中的相同时间如下所示： ' 2017-12-31T19：00： 00-08： 00 '。|
 
-和的值使用其对应的值中指定的时区偏移量进行解释，如果存在，则不受`Prefer: outlook.timezone`标头值的影响。 `end` `start`
+和的值 `start` `end` 使用其对应的值中指定的时区偏移量进行解释，如果存在，则不受标头值的影响 `Prefer: outlook.timezone` 。
 
 此方法还支持一些 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
@@ -57,7 +57,7 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在`200, OK`响应正文中返回响应代码和[bookingAppointment](../resources/bookingappointment.md)集合对象。
+如果成功，此方法 `200, OK` 在响应正文中返回响应代码和 [bookingAppointment](../resources/bookingappointment.md) 集合对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -287,3 +287,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

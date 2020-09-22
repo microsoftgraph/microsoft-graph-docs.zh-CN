@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 192450cfa493e54fbcf6287d3f1928865da7f1a1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 19679d2f6a513017fe9d89a8922477641070da6e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376736"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987986"
 ---
 # <a name="create-bookingstaffmember"></a>创建 bookingStaffMember
 
@@ -40,7 +40,7 @@ POST /bookingBusinesses/{id}/staffMembers
 | Authorization  | Bearer {code}|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[bookingStaffMember](../resources/bookingstaffmember.md)对象的 JSON 表示形式。 您必须包含以下属性：
+在请求正文中，提供 [bookingStaffMember](../resources/bookingstaffmember.md) 对象的 JSON 表示形式。 您必须包含以下属性：
 
 - **displayName**
 - **emailAddress**
@@ -48,7 +48,7 @@ POST /bookingBusinesses/{id}/staffMembers
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在`201, Created`响应正文中返回响应代码和[bookingStaffMember](../resources/bookingstaffmember.md)对象。
+如果成功，此方法 `201, Created` 在响应正文中返回响应代码和 [bookingStaffMember](../resources/bookingstaffmember.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -156,7 +156,7 @@ Content-length: 309
 
 ---
 
-在请求正文中，提供[bookingStaffMember](../resources/bookingstaffmember.md)对象的 JSON 表示形式。
+在请求正文中，提供 [bookingStaffMember](../resources/bookingstaffmember.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
@@ -240,3 +240,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

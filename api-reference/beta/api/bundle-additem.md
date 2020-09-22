@@ -6,20 +6,20 @@ description: 将项目添加到 Driveitem 捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c192014a00e3a2119691857c8350dc03d53e1980
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 910054e5077c8d69939a14c42db824dd862141d8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441051"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987776"
 ---
 # <a name="add-item-to-a-bundle"></a>将项目添加到捆绑包
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将其他[driveItem][]从驱动器添加到[捆绑包][]中。
+将其他 [driveItem][] 从驱动器添加到 [捆绑包][]中。
 
 [bundle]: ../resources/bundle.md
 [driveItem]: ../resources/driveItem.md
@@ -44,7 +44,7 @@ POST /drive/bundles/{bundle-id}/children
 
 | 名称          | 说明  |
 |:------------- |:------------ |
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -52,7 +52,7 @@ POST /drive/bundles/{bundle-id}/children
 
 ## <a name="response"></a>响应
 
-如果成功，响应为`204 No Content`。
+如果成功，响应为 `204 No Content` 。
 
 请参阅[错误响应][error-response]主题，详细了解错误返回方式。
 
@@ -105,3 +105,5 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation"
 } -->
+
+

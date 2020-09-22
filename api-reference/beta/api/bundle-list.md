@@ -6,20 +6,20 @@ description: 列出用户驱动器中的捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 52d03febbb44448081c1a9f69066254e639d361b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dac031d7bd14cf72932248341740989881529cb2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441044"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987741"
 ---
 # <a name="list-bundles"></a>列出捆绑包
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取用户驱动器中[所有捆绑][包]的列表。
+获取用户驱动器中 [所有捆绑][包] 的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -43,13 +43,13 @@ GET /drive/bundles
 
 此方法支持使用 [OData 查询参数][]筛选响应和生成响应形状。
 
-枚举绑定时不`expand=children`能使用查询参数。
+`expand=children`枚举绑定时不能使用查询参数。
 
 ## <a name="request-headers"></a>请求标头
 
 | 名称          | 说明  |
 |:------------- |:------------ |
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -59,13 +59,13 @@ GET /drive/bundles
 
 如果成功，此请求将返回为驱动器定义的捆绑包项的列表。
 
-阅读 "[错误响应][error-response]" 主题，了解有关如何返回错误的详细信息。
+阅读 " [错误响应][error-response] " 主题，了解有关如何返回错误的详细信息。
 
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-list-all-bundles-in-a-drive"></a>示例1：列出驱动器中的所有捆绑包
 
-若要请求对驱动器中定义的所有绑定的枚举，可以向不带任何参数的**束**集合发出请求。
+若要请求对驱动器中定义的所有绑定的枚举，可以向不带任何参数的 **束** 集合发出请求。
 
 #### <a name="request"></a>请求
 
@@ -126,7 +126,7 @@ Content-type: application/json
 
 ### <a name="example-2-list-all-photo-albums-in-a-drive"></a>示例2：列出驱动器中的所有相册
 
-若要筛选从请求返回到捆绑包集合的捆绑包列表，可以使用`filter`查询字符串参数指定要返回的捆绑包的类型，方法是检查捆绑包中是否存在某一 facet：
+若要筛选从请求返回到捆绑包集合的捆绑包列表，可以使用 `filter` 查询字符串参数指定要返回的捆绑包的类型，方法是检查捆绑包中是否存在某一 facet：
 
 #### <a name="request"></a>请求
 
@@ -206,3 +206,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Bundles/List"
 } -->
+
+

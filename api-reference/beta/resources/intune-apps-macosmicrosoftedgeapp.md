@@ -3,14 +3,14 @@ title: macOSMicrosoftEdgeApp 资源类型
 description: 包含 MacOS Microsoft Edge 应用的属性和继承的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b13783ba95f5ddd3f7d9e225fef8bda52395c122
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 3467ab67574f6fe5b99f46159b2271f060bcee01
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792399"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989400"
 ---
 # <a name="macosmicrosoftedgeapp-resource-type"></a>macOSMicrosoftEdgeApp 资源类型
 
@@ -53,9 +53,11 @@ ms.locfileid: "46792399"
 |uploadState|Int32|上载状态。 可能的值包括： 0- `Not Ready` 、1- `Ready` 、2- `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|字符串集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|频道|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|要在目标设备上安装的通道。 可取值为：`dev`、`beta`、`stable`。|
+|supersedingAppCount|Int32|此应用程序直接或间接取代的应用程序总数量。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersededAppCount|Int32|此应用程序直接或间接取代的应用程序总数量。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|信道|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|要在目标设备上安装的通道。 可取值为：`dev`、`beta`、`stable`。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -65,7 +67,7 @@ ms.locfileid: "46792399"
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|移动应用安装摘要。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) 集合|此移动应用程序的安装状态列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) 集合|此移动应用程序的安装状态列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|相互|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) 集合|此移动应用的关系列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|相互|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) 集合|此应用程序的直接关系集。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -102,9 +104,14 @@ ms.locfileid: "46792399"
     "String"
   ],
   "dependentAppCount": 1024,
+  "supersedingAppCount": 1024,
+  "supersededAppCount": 1024,
   "channel": "String"
 }
 ```
+
+
+
 
 
 

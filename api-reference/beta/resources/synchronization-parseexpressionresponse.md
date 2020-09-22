@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0ef96bda8e9e28c655c4bbcf0153ea83ef5b0c8e
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 9bd675b079f42856e85f54b7da84a091a0f57f4f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217603"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988812"
 ---
 # <a name="parseexpressionresponse-resource-type"></a>parseExpressionResponse 资源类型
 
@@ -18,16 +18,16 @@ ms.locfileid: "43217603"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示来自[parseExpression](../api/synchronization-synchronizationschema-parseexpression.md)操作的响应。
+表示来自 [parseExpression](../api/synchronization-synchronizationschema-parseexpression.md) 操作的响应。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |error|publicError|如果表达式求值导致错误，则为错误详细信息。|
 |evaluationResult|String collection|由表达式的计算产生的值的集合。|
-|evaluationSucceeded|Boolean|`true`如果评估成功。|
-|parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|一个代表已分析的表达式的[attributeMappingSource](synchronization-attributemappingsource.md)对象。|
-|parsingSucceeded|Boolean|`true`如果表达式已成功分析。|
+|evaluationSucceeded|Boolean|`true` 如果评估成功。|
+|parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|一个代表已分析的表达式的 [attributeMappingSource](synchronization-attributemappingsource.md) 对象。|
+|parsingSucceeded|Boolean|`true` 如果表达式已成功分析。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -64,3 +64,5 @@ ms.locfileid: "43217603"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f01483aa873e4d0606ccbbe2dcdbe1eb206c666d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 54c6b9bd1f6394ca48d86a27d211d0f96b96b730
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508588"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988652"
 ---
 # <a name="worksheetprotection-unprotect"></a>WorksheetProtection: unprotect
 
@@ -108,3 +108,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

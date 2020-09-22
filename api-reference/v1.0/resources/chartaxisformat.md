@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: d08f9fea825cb9d7a3f0bee735204cbf797e968d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 18021b2776ccd749538ba5a94e7af9b1518a9bb6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531903"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988441"
 ---
 # <a name="chartaxisformat-resource-type"></a>ChartAxisFormat 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "42531903"
 封装图表坐标轴的格式属性。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 无
 ## <a name="properties"></a>属性
 无
@@ -59,3 +59,4 @@ ms.locfileid: "42531903"
   "section": "documentation",
   "tocPath": ""
 }-->
+

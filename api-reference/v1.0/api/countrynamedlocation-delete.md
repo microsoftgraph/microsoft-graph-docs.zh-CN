@@ -5,18 +5,18 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6f72caeb1c181b58380dd8fea2d816b0cc6d3314
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 18f530c24972670ca5633339df7570409495837e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567162"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988680"
 ---
 # <a name="delete-countrynamedlocation"></a>删除 countryNamedLocation
 
 命名空间：microsoft.graph
 
-删除[countryNamedLocation](../resources/countryNamedLocation.md)对象。
+删除 [countryNamedLocation](../resources/countryNamedLocation.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -107,3 +107,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

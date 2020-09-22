@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 5665ef8f39cdf79fbec004c7a430076a04879a07
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4406a92dfd0f41acb391e3687c09650949550317
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376323"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987846"
 ---
 # <a name="delete-bookingstaffmember"></a>删除 bookingStaffMember
 
@@ -95,3 +95,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

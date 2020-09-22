@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d7ca41939f79544b0fbcc241a1cd37254f521254
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: def441d29abd5bc2a05dcd24adc4148870fb7a65
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43385218"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988946"
 ---
 # <a name="ipv4cidrrange-resource-type"></a>iPv4CidrRange 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "43385218"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|cidrAddress|字符串|CIDR 表示法中的 IPv4 地址|
+|cidrAddress|String|CIDR 表示法中的 IPv4 地址|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -56,3 +56,4 @@ ms.locfileid: "43385218"
   "section": "documentation",
   "tocPath": ""
 }-->
+

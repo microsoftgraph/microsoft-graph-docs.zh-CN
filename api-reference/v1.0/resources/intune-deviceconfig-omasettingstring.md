@@ -3,14 +3,14 @@ title: omaSettingString 资源类型
 description: OMA 设置字符串定义。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c1e0c0fe3f020519770c6770fe515f0349cd6994
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 05f37b94aecadd5e3da1d0e162cd8bf6afe96681
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472970"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988266"
 ---
 # <a name="omasettingstring-resource-type"></a>omaSettingString 资源类型
 
@@ -26,7 +26,7 @@ OMA 设置字符串定义。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|显示名称。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|displayName|String|显示名称。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|String|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|String|值。|
@@ -50,6 +50,8 @@ OMA 设置字符串定义。
   "value": "String"
 }
 ```
+
+
 
 
 

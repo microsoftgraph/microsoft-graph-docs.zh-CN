@@ -3,14 +3,14 @@ title: importedWindowsAutopilotDeviceIdentityState 资源类型
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 696528c00f2dd82f1dd6cba6087acadaa158bbf4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2a68b65d2cf640a8a44fff7481f7c782d9ab0375
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439381"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988245"
 ---
 # <a name="importedwindowsautopilotdeviceidentitystate-resource-type"></a>importedWindowsAutopilotDeviceIdentityState 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "43439381"
 |属性|类型|说明|
 |:---|:---|:---|
 |deviceImportStatus|[importedWindowsAutopilotDeviceIdentityImportStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md)|设备目录服务 (DDS) 报告的设备状态。 可取值为：`unknown`、`pending`、`partial`、`complete`、`error`。|
-|deviceRegistrationId|String|设备目录服务 (DDS) 报告的成功添加设备的设备注册 ID。|
+|deviceRegistrationId|字符串|设备目录服务 (DDS) 报告的成功添加设备的设备注册 ID。|
 |deviceErrorCode|Int32|设备目录服务 (DDS) 报告的设备错误代码。|
 |deviceErrorName|字符串|设备目录服务 (DDS) 报告的设备错误名称。|
 
@@ -47,6 +47,8 @@ ms.locfileid: "43439381"
   "deviceErrorName": "String"
 }
 ```
+
+
 
 
 

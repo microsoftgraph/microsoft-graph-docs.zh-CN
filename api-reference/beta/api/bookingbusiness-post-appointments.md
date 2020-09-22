@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 5cc5eb648f581e7bb0dc88a413be44297df790c4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 832d21de141aafb8389709c3a2508cdfb99827a0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43366595"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988000"
 ---
 # <a name="create-bookingappointment"></a>创建 bookingAppointment
 
@@ -40,11 +40,11 @@ POST /bookingBusinesses/{id}/appointments
 | Authorization  | Bearer {code}|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[bookingAppointment](../resources/bookingappointment.md)对象的 JSON 表示形式。
+在请求正文中，提供 [bookingAppointment](../resources/bookingappointment.md) 对象的 JSON 表示形式。
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在`201, Created`响应正文中返回响应代码和[bookingAppointment](../resources/bookingappointment.md)对象。
+如果成功，此方法 `201, Created` 在响应正文中返回响应代码和 [bookingAppointment](../resources/bookingappointment.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -180,7 +180,7 @@ Content-type: application/json
 
 ---
 
-在请求正文中，提供[bookingAppointment](../resources/bookingappointment.md)对象的 JSON 表示形式。
+在请求正文中，提供 [bookingAppointment](../resources/bookingappointment.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
@@ -308,3 +308,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

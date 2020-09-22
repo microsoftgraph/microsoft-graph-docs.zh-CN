@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9433ac6569a09ad86b2f6c2b06969cd6b906b1dc
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 6ef533d2a8960d607a461807c29ecc31df2b4995
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895648"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987652"
 ---
 # <a name="get-calendar"></a>获取日历
 
@@ -18,7 +18,7 @@ ms.locfileid: "44895648"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [calendar](../resources/calendar.md) 对象的属性和关系。 日历可以是[用户](../resources/user.md)的一个，也可以是 Microsoft 365[组](../resources/group.md)的默认日历。
+获取 [calendar](../resources/calendar.md) 对象的属性和关系。 日历可以是 [用户](../resources/user.md)的一个，也可以是 Microsoft 365 [组](../resources/group.md)的默认日历。
 
 在下列两种情况下，应用可获取其他用户的日历：
 
@@ -150,3 +150,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

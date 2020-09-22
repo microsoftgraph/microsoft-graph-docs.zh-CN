@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 72ba3311e1901dfef26459df04107a8a56331cba
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b0b47f8c9966150596266fda50efe1c37385ee2a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376400"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987864"
 ---
 # <a name="delete-bookingservice"></a>删除 bookingService
 
@@ -95,3 +95,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

@@ -1,16 +1,16 @@
 ---
 title: 删除开放扩展
-description: '从指定的资源实例中删除开放扩展（openTypeExtension 对象）。 '
+description: 从指定的资源实例中删除开放扩展（openTypeExtension 对象）。
 localization_priority: Normal
 author: dkershaw10
-ms.prod: ''
+ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 78de314eb75a1950c062ca34eaa66409abffd7d9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ebaa3a22728fb2e64137b755b0874c5420923f0b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511262"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988681"
 ---
 # <a name="delete-open-extension"></a>删除开放扩展
 
@@ -20,7 +20,7 @@ ms.locfileid: "42511262"
 
 ## <a name="permissions"></a>权限
 
-根据要从中删除扩展的资源以及请求的权限类型（委派或应用程序），下表中指定的权限是调用此 API 所需的最低特权。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据要从中删除扩展的资源和权限类型 (委派或应用程序) 请求的权限，下表中指定的权限是调用此 API 所需的最低特权。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -30,9 +30,9 @@ ms.locfileid: "42511262"
 | [组事件](../resources/event.md) | Group.ReadWrite.All | 不支持 | 不支持 |
 | [组帖子](../resources/post.md) | Group.ReadWrite.All | 不支持 | Group.ReadWrite.All |
 | [邮件](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
-| [组织](../resources/organization.md) | Directory.AccessAsUser.All | 不支持 | 不支持 |
+| [组织](../resources/organization.md) | Organization.ReadWrite.All | 不支持 | Organization.ReadWrite.All |
 | [个人联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [用户](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
+| [用户](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 在请求中，标识资源实例，使用资源实例的 **extensions** 导航属性标识扩展插件，然后对此扩展插件实例执行 `DELETE`。
@@ -58,7 +58,7 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 |id|string|实例在相应集合中的唯一标识符。必需。|
 |extensionId|string|这可以是一个扩展名称（即扩展的唯一文本标识符）或完全限定的名称（连接扩展类型和唯一文本标识符）。创建扩展时，在 `id` 属性中返回完全限定的名称。必需。|
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 值 |
 |:---------------|:----------|
 | Authorization | Bearer {token}。必需。 |
@@ -132,3 +132,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

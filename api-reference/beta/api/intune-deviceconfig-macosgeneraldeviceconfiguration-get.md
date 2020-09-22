@@ -3,20 +3,20 @@ title: 获取 macOSGeneralDeviceConfiguration
 description: 读取 macOSGeneralDeviceConfiguration 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 423c28adb18629007e4f604b29e1fc94ab380c68
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 9de14e626d0434fc7686195658d4a8cf4cd132d9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177861"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990177"
 ---
 # <a name="get-macosgeneraldeviceconfiguration"></a>获取 macOSGeneralDeviceConfiguration
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "44177861"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4994
+Content-Length: 5047
 
 {
   "value": {
@@ -155,6 +155,7 @@ Content-Length: 4994
     "passwordBlockAirDropSharing": true,
     "softwareUpdatesEnforcedDelayInDays": 2,
     "softwareUpdatesForceDelayed": true,
+    "updateDelayPolicy": "delayOSUpdateVisibility",
     "contentCachingBlocked": true,
     "iCloudBlockPhotoLibrary": true,
     "screenCaptureBlocked": true,
@@ -206,6 +207,9 @@ Content-Length: 4994
   }
 }
 ```
+
+
+
 
 
 

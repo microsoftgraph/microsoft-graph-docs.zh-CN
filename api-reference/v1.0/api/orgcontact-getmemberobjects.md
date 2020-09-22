@@ -5,18 +5,18 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2d3f283eaaaed217596c8cdaa200b3bc0a1c2f06
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7fd09f86c53252cb0fd7cbcc69b9ac4d3db3d47a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451685"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988653"
 ---
 # <a name="orgcontact-getmemberobjects"></a>orgContact： getMemberObjects
 
 命名空间：microsoft.graph
 
-返回此[组织联系人](../resources/orgcontact.md)所属的所有组。 检查是可传递的。 组织联系人不能是目录角色的成员。 将不会返回任何目录角色。
+返回此 [组织联系人](../resources/orgcontact.md) 所属的所有组。 检查是可传递的。 组织联系人不能是目录角色的成员。 将不会返回任何目录角色。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,11 +44,11 @@ POST /contacts/{id}/getMemberObjects
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean|设置为`false`。 只支持对用户仅返回启用安全机制的组。|
+|securityEnabledOnly|Boolean|设置为 `false` 。 只支持对用户仅返回启用安全机制的组。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和字符串集合对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和字符串集合对象。
 
 ## <a name="example"></a>示例
 
@@ -123,3 +123,4 @@ Content-length: 39
   ]
 }
 -->
+

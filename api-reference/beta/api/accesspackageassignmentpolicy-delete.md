@@ -5,20 +5,20 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 74d3416fbffe95d558f75c00bf55ef60523cb3c9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6791e725fffe465f38e24539a1b2d7ee9800cb55
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448462"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988203"
 ---
 # <a name="delete-accesspackageassignmentpolicy"></a>删除 accessPackageAssignmentPolicy
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 " [AZURE AD 权限管理](../resources/entitlementmanagement-root.md)" 中，删除[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)。
+在 " [AZURE AD 权限管理](../resources/entitlementmanagement-root.md)" 中，删除 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -42,7 +42,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

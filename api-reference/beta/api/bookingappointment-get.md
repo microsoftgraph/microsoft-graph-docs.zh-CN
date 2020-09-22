@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: bb6058ef761c91fc338aeba3cdb1483c91649cf3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 10b9fc68d179328592b1dfdbb58a93cab55f336c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43367550"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988117"
 ---
 # <a name="get-bookingappointment"></a>获取 bookingAppointment
 
@@ -46,7 +46,7 @@ GET /bookingBusinesses/{id}/appointments/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[bookingAppointment](../resources/bookingappointment.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [bookingAppointment](../resources/bookingappointment.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -200,3 +200,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

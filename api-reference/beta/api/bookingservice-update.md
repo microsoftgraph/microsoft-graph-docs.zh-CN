@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 9c64dc057963bdaed34ecab70792fdd5df526406
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 15ed5e3a922fe4e630287c6193ff1daa8822fb30
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376354"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987853"
 ---
 # <a name="update-bookingservice"></a>更新 bookingservice
 
@@ -23,7 +23,7 @@ ms.locfileid: "43376354"
 下面是可以为服务自定义的一些示例：
 - 价格
 - 约会的典型长度
-- 提醒
+- Reminders
 - 在服务完成之前或结束前设置的任何时间缓冲
 - 将策略参数（如 "最低通知"）[安排](../resources/bookingschedulingpolicy.md)为 "书籍" 或 "取消"，以及客户是否可以选择约会的特定员工成员。
 
@@ -52,20 +52,20 @@ PATCH /bookingBusinesses/{id}/services/{id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |defaultDuration|持续时间|服务的默认长度，以天数、小时数、分钟数和秒数表示。 例如，P11D23H59M 59.999999999999 S。 |
-|defaultLocation|[位置](../resources/location.md)|服务的默认物理位置。|
+|defaultLocation|[location](../resources/location.md)|服务的默认物理位置。|
 |defaultPrice|双精度|服务的默认货币价格。|
-|defaultPriceType|string|服务收费的默认方式。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
-|defaultReminders|[bookingReminder](../resources/bookingreminder.md)集合|此服务的约会的默认提醒集。 此属性的值仅在按 ID 读取此**bookingService**时可用。|
+|defaultPriceType|字符串|服务收费的默认方式。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
+|defaultReminders|[bookingReminder](../resources/bookingreminder.md) 集合|此服务的约会的默认提醒集。 此属性的值仅在按 ID 读取此 **bookingService** 时可用。|
 |description|String|服务的文本说明。|
-|displayName|字符串|服务名称。|
+|displayName|String|服务名称。|
 |emailAddress|String|电子邮件地址|
-|id|字符串| 只读。|
+|id|String| 只读。|
 |isHiddenFromCustomers|Boolean|如果为 True，则表示此服务不可供客户预订。|
-|notes|字符串|有关此服务的其他信息。|
+|notes|String|有关此服务的其他信息。|
 |postBuffer|持续时间|此服务的约会结束后以及下一个客户约会可以被预订前要缓冲的时间。|
 |preBuffer|持续时间|在此服务的约会开始之前要缓冲的时间。|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|确定应如何创建和管理此类服务的约会的一组策略。|
-|staffMemberIds|String 集合|代表提供此服务的[教职员工成员](../resources/bookingstaffmember.md)。 |
+|staffMemberIds|String collection|代表提供此服务的 [教职员工成员](../resources/bookingstaffmember.md) 。 |
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No content` 响应代码。它不在响应正文中返回任何内容。
@@ -124,3 +124,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

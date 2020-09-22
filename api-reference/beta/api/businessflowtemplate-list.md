@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 28950fe2f76e66307f483adbe75d2e1365c614d5
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: adfa33bda915fcc74e234ab7473d62a761716d05
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123669"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987710"
 ---
 # <a name="list-businessflowtemplates"></a>列出 businessFlowTemplates
 
@@ -18,7 +18,7 @@ ms.locfileid: "43123669"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中，列出所有[businessFlowTemplate](../resources/businessflowtemplate.md)对象。
+在 "Azure AD [access 评论](../resources/accessreviews-root.md) " 功能中，列出所有 [businessFlowTemplate](../resources/businessflowtemplate.md) 对象。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "43123669"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview、AccessReview、成员身份、AccessReview。所有  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | AccessReview、AccessReview、成员身份 |
+|应用程序                            | AccessReview、AccessReview、成员身份 |
 
 登录用户还必须位于允许他们阅读访问审核的目录角色中。
 
@@ -44,7 +44,7 @@ GET /businessFlowTemplates
 不应提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200, OK`正文中返回响应代码和[businessFlowTemplate](../resources/businessflowtemplate.md)对象的数组。
+如果成功，此方法 `200, OK` 在响应正文中返回响应代码和 [businessFlowTemplate](../resources/businessflowtemplate.md) 对象的数组。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -132,3 +132,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

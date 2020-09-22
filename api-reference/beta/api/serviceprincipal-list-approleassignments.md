@@ -1,18 +1,18 @@
 ---
-title: 向服务主体授予的 List appRoleAssignments
-description: 检索授予服务主体的应用程序角色分配的列表。
+title: 列出向服务主体授予的 appRoleAssignment
+description: 检索向服务主体授予的应用角色分配列表。
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: b9d18d0b0d2b069847a564c8543ade0b73559af9
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 86779e6ce137e64770b5d55a416fba99b6f8d4aa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383250"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989911"
 ---
-# <a name="list-approleassignments-granted-to-a-service-principal"></a>向服务主体授予的 List appRoleAssignments
+# <a name="list-approleassignments-granted-to-a-service-principal"></a>列出向服务主体授予的 appRoleAssignment
 
 命名空间：microsoft.graph
 
@@ -20,9 +20,9 @@ ms.locfileid: "44383250"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索已授予服务主体的[appRoleAssignment](../resources/approleassignment.md)列表。
+检索已向服务主体授予的 [appRoleAssignment](../resources/approleassignment.md) 列表。
 
-分配给服务主体的应用程序角色也称为 "[应用程序权限](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types)"。 可以通过创建应用程序角色分配或通过[许可体验](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience)直接授予应用程序权限。
+分配给服务主体的应用角色也被称为[应用程序权限](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types)。 应用程序权限可以通过创建应用角色分配直接授予，或通过[协议体验](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience)授予。
 
 ## <a name="permissions"></a>权限
 
@@ -30,9 +30,9 @@ ms.locfileid: "44383250"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | "Application"、"all"、"Directory.accessasuser.all"、"全部"、"全部"、"全部"、"全部"、"所有"  |
+|委派（工作或学校帐户） | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | "Application"、"all"、"全部"、"所有"、"所有"、"所有" |
+|应用程序 | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -45,7 +45,7 @@ GET /servicePrincipals/{id}/appRoleAssignments
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称           | 说明                |
 |:---------------|:---------------------------|
@@ -57,13 +57,13 @@ GET /servicePrincipals/{id}/appRoleAssignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[appRoleAssignment](../resources/approleassignment.md)对象集合。
+如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [appRoleAssignment](../resources/approleassignment.md) 对象集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-下面的示例演示了检索已分配给服务主体的应用程序角色的请求。
+以下是请求检索已分配给服务主体的应用角色的请求示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -135,3 +135,5 @@ Content-length: 306
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c064e715697f2a6da452da61b28ef4649f48bc0d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f0879158c96d922e73a99f6544cf73c41ccf513b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451648"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988533"
 ---
 # <a name="attachment-resource-type"></a>attachment 资源类型
 
@@ -94,3 +94,4 @@ ms.locfileid: "43451648"
   "section": "documentation",
   "tocPath": ""
 }-->
+

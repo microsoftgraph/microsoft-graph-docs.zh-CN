@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: dc2f6f912eafdacfc05eb11b65140995dfa28cec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a1878aa01f2a6594f102647b6642eab6f301fa91
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532121"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988595"
 ---
 # <a name="appidentity-resource-type"></a>appIdentity 资源类型
 
@@ -23,8 +23,8 @@ ms.locfileid: "42532121"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |appId|String|表示唯一 GUID（表示 Azure Active Directory 中的应用程序 ID）。|
-|displayName|字符串|引用 Azure 门户中显示的应用程序名称。|
-|servicePrincipalId|字符串|指在 Azure Active Directory 中指示对应应用程序的服务主体 Id 的唯一 GUID。|
+|displayName|String|引用 Azure 门户中显示的应用程序名称。|
+|servicePrincipalId|String|指在 Azure Active Directory 中指示对应应用程序的服务主体 Id 的唯一 GUID。|
 |servicePrincipalName|String|引用服务主体名称是租户中的应用程序名称。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -58,3 +58,4 @@ ms.locfileid: "42532121"
   "section": "documentation",
   "tocPath": ""
 }-->
+

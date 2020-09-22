@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 98633524d61093c6ddc4c9c85e5e98f205a508da
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 42a12bfd05dddf6306f6de22b07b2029d2f39e2d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43367704"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988133"
 ---
 # <a name="bookingappointment-cancel"></a>bookingAppointment：取消
 
@@ -45,12 +45,12 @@ POST /bookingBusinesses/{id}/appointments/{id}/cancel
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|cancellationMessage|字符串|向客户确认约会已被取消的消息。|
+|cancellationMessage|String|向客户确认约会已被取消的消息。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No content` 响应代码。它不在响应正文中返回任何内容。
 
-如果您尝试取消不 exisit 的约会，则此方法将返回`HTTP 404 Not found`。
+如果您尝试取消不 exisit 的约会，则此方法将返回 `HTTP 404 Not found` 。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -109,3 +109,5 @@ HTTP/1.1 204 No content
   ]
 }
 -->
+
+

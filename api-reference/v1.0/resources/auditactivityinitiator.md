@@ -1,22 +1,22 @@
 ---
 title: auditActivityInitiator 资源类型
-description: 标识启动活动的资源对象。 发起方可以是用户、应用程序或系统（被视为应用）。
+description: 标识启动活动的资源对象。 发起方可以是用户、应用程序或系统 (，它被视为应用程序) 。
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0ed2a68d3e3fa07edb5b5b2ce0d969287ba9a7a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8d6d4d41698e6251c0f33a637dff9e667df7d092
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532049"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988511"
 ---
 # <a name="auditactivityinitiator-resource-type"></a>auditActivityInitiator 资源类型
 
 命名空间：microsoft.graph
 
-标识启动活动的资源对象。 发起方可以是用户、应用程序或系统（被视为应用）。
+标识启动活动的资源对象。 发起方可以是用户、应用程序或系统 (，它被视为应用程序) 。
 
 ## <a name="properties"></a>属性
 
@@ -54,3 +54,4 @@ ms.locfileid: "42532049"
   "section": "documentation",
   "tocPath": ""
 }-->
+

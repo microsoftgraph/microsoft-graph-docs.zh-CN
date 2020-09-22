@@ -5,12 +5,12 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: fdbb317fc0721e7a0d062fc67fdac9f193804bb1
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: 92d2351ccf2636978e6e80bd0657681e3f6f07c9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524385"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988931"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API
 
@@ -143,3 +143,5 @@ Microsoft Graph 安全性 API 示例的[代码和贡献情况](https://github.co
 
 - [加入技术社区](https://aka.ms/graphsecuritycommunity)
 - [在 StackOverflow 上讨论](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
+
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f7d42633321c78eb03942072731b0636a8ca73b7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 173f9878daecd3443137800f143a2b3633a2fa20
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531824"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988371"
 ---
 # <a name="chartseries-resource-type"></a>ChartSeries 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "42531824"
 代表图表上的系列。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -27,7 +27,7 @@ ms.locfileid: "42531824"
 |[创建 ChartPoints](../api/chartseries-post-points.md) |[ChartPoints](chartpoint.md)| 通过发布到点集合创建新的 ChartPoints。|
 |[列出 points](../api/chartseries-list-points.md) |[ChartPoints](chartpoint.md) 集合| 获取 ChartPoints 对象集合。|
 |[更新](../api/chartseries-update.md) | [WorkbookChartSeries](chartseries.md) |更新 ChartSeries 对象。 |
-|[列出](../api/chartseries-list.md) | [WorkbookChartSeries](chartseries.md)集合 |获取 chartSeries 对象集合。 |
+|[列出](../api/chartseries-list.md) | [WorkbookChartSeries](chartseries.md) 集合 |获取 chartSeries 对象集合。 |
 |[ItemAt](../api/chartseriescollection-itemat.md)|[WorkbookChartSeries](chartseries.md)|根据其在集合中的位置检索系列|
 
 ## <a name="properties"></a>属性
@@ -39,7 +39,7 @@ ms.locfileid: "42531824"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |format|[WorkbookChartSeriesFormat](chartseriesformat.md)|表示图表系列的格式，包括填充和线条格式。只读。|
-|points|[WorkbookChartPoint](chartpoint.md)集合|表示系列中所有数据点的集合。 只读。|
+|points|[WorkbookChartPoint](chartpoint.md) 集合|表示系列中所有数据点的集合。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -70,3 +70,4 @@ ms.locfileid: "42531824"
   "section": "documentation",
   "tocPath": ""
 }-->
+

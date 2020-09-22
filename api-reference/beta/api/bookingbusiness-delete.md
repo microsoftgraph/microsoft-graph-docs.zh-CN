@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 80935b618ae4a6badadd5eb2bbc49199326c6e6f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 70154bedb9454ca345308063a6ccaf4e0f6f0d64
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43367411"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988105"
 ---
 # <a name="delete-bookingbusiness"></a>删除 bookingBusiness
 
@@ -18,13 +18,13 @@ ms.locfileid: "43367411"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除[bookingBusiness](../resources/bookingbusiness.md)对象。
+删除 [bookingBusiness](../resources/bookingbusiness.md) 对象。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  预订. 全部   |
+|委派（工作或学校帐户） |  Bookings.Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -95,3 +95,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

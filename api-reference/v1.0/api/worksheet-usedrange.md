@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 64647df6f999ff9679faf23e2400780f005817ff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 49a29f78963758ffad5ffe5bd7236429b52a0d37
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508616"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988665"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet:UsedRange
 
@@ -41,7 +41,7 @@ GET /workbook/worksheets/{id|name}/usedRange
 |:---------------|:--------|:----------|
 |valuesOnly|Boolean|可选。仅将具有值的单元格视为已使用的单元格（忽略格式）。|
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -107,7 +107,7 @@ Content-length: 169
 }
 ```
 
-或者，也可以使用可选`valuesOnly`参数调用此函数。
+或者，也可以使用可选参数调用此函数 `valuesOnly` 。
 
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -169,3 +169,4 @@ Content-length: 169
   "suppressions": [
   ]
 }-->
+
