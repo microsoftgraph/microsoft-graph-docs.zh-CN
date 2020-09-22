@@ -5,21 +5,21 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 952cdc1aa293b393c55491590a7da7a25f6f9507
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 3f95c77df024a980e01896dc1661661efdf10292
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394685"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046879"
 ---
 # <a name="useragent-resource-type"></a>userAgent 资源类型
 
-命名空间： callRecords
+命名空间：microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示调用中终结点的用户代理。
-[ClientUserAgent](callrecords-clientuseragent.md)和[serviceUserAgent](callrecords-serviceuseragent.md)）类型继承自此类型。
+[ClientUserAgent](callrecords-clientuseragent.md)和[serviceUserAgent](callrecords-serviceuseragent.md)) 类型继承自此类型。
 
 ## <a name="properties"></a>属性
 
@@ -57,3 +57,4 @@ ms.locfileid: "42394685"
   "section": "documentation",
   "tocPath": ""
 }-->
+

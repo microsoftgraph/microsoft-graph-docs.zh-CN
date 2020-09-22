@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3e300f57d58dcb0d9b32f17fa603b50df9aeb4c1
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 7dbf0d364b4671197fe5baa704cf7a60862fceb8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200185"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047159"
 ---
 # <a name="remove-publishedresource-from-an-onpremisesagentgroup"></a>从 onPremisesAgentGroup 中删除 publishedResource
 
@@ -28,7 +28,7 @@ ms.locfileid: "43200185"
 |:--------------------------------------|:---------------------------------------------------------|
 | 委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -105,3 +105,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

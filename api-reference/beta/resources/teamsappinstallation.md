@@ -5,16 +5,16 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 10a7d5d58a18e23c47d603e7b05c9981ddfeed76
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a74323dc8a5e5907ea8a91553537fc8259acea6c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519909"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046585"
 ---
 # <a name="teamsappinstallation-resource-type"></a>teamsAppInstallation 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,18 +26,18 @@ ms.locfileid: "42519909"
 |:---------------|:--------|:----------|
 |[列出团队中安装的应用程序](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsappinstallation.md) 集合 | 列出在团队中安装的应用程序。|
 |[将应用添加到团队](../api/teamsappinstallation-add.md) |无 | 将应用添加（安装）到团队。|
-|[从团队中删除应用](../api/teamsappinstallation-delete.md) | 无 | 从团队中删除（卸载）应用程序。|
+|[从团队中删除应用](../api/teamsappinstallation-delete.md) | 无 | 从团队中删除应用) 的 (卸载。|
 |[升级在团队中安装的应用程序](../api/teamsappinstallation-upgrade.md) | 无 | 升级到团队中安装的应用程序的最新版本。|
 |[列出为用户安装的应用](../api/user-list-teamsappinstallation.md) | [teamsAppInstallation](teamsappinstallation.md) 集合 | 列出在用户的个人范围内安装的应用程序。|
-|[为用户添加应用程序](../api/user-add-teamsappinstallation.md) | | 在用户的个人作用域中添加（安装）应用程序。|
-|[删除用户的应用程序](../api/user-delete-teamsappinstallation.md) | 无 | 删除（卸载）用户个人作用域中的应用程序。|
+|[为用户添加应用程序](../api/user-add-teamsappinstallation.md) | | 添加 (安装) 用户的个人作用域中的应用程序。|
+|[删除用户的应用程序](../api/user-delete-teamsappinstallation.md) | 无 | 删除) 用户的个人作用域中的应用程序 (卸载。|
 |[升级为用户安装的应用](../api/user-upgrade-teamsappinstallation.md) | 无 | 升级到在用户的个人范围内安装的最新版本的应用程序。|
 
 ## <a name="properties"></a>属性
 
 | 属性            | 类型     | 说明 |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | 唯一的 ID （而不是团队的 ap ID）。 |
+| id                  | string   | 唯一 ID (团队的 ap ID) 。 |
 
 ## <a name="relationships"></a>关系
 
@@ -78,3 +78,5 @@ ms.locfileid: "42519909"
   "suppressions": []
 }
 -->
+
+

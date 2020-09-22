@@ -5,16 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7a330223a7b72b32387998d458456f0661979ae2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3982b679802a2ca80eac5fe4e8f76fee91bbf1d3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519818"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046347"
 ---
 # <a name="teamsuseractivityusercounts-resource-type"></a>teamsUserActivityUserCounts 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 ## <a name="properties"></a>属性
 
@@ -50,3 +50,5 @@ ms.locfileid: "42519818"
   "reportPeriod": "String"
 }
 ```
+
+

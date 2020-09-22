@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: cf3be35bd7b1ee1a4ec6185199c3cd5ab3b9b7fc
-ms.sourcegitcommit: 7b1593fc40c910ff7604e9e54577e0c5b8b948dc
+ms.openlocfilehash: 5c31acb452b8d30763e8ba0500354c9b6d6bbbfc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44408281"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046887"
 ---
 # <a name="session-resource-type"></a>会话资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "44408281"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出会话](../api/callrecords-session-list.md) | [callRecords](callrecords-session.md)集合的 | 检索与[callRecord](callrecords-callrecord.md)对象相关联的会话列表。
+| [列表会话](../api/callrecords-session-list.md) | [callRecords](callrecords-session.md) 集合的 | 检索与 [callRecord](callrecords-callrecord.md) 对象相关联的会话列表。
  |
 
 ## <a name="properties"></a>属性
@@ -42,7 +42,7 @@ ms.locfileid: "44408281"
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型        | Description |
+| 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |段|[callRecords 集合。](callrecords-segment.md)|会话中涉及的段的列表。 只读。 可为 Null。|
 
@@ -81,3 +81,4 @@ ms.locfileid: "44408281"
   "section": "documentation",
   "tocPath": ""
 }-->
+

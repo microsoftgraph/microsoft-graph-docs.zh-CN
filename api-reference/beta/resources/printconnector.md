@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 84c9625bd8d5a454100cab166676c1dcbcfd8d05
-ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
+ms.openlocfilehash: d027344db67a26fc0af7ebffaaad63d3fe3c4971
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45142426"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046807"
 ---
 # <a name="printconnector-resource-type"></a>printConnector 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "45142426"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [获取连接器](../api/printconnector-get.md) | [printConnector](printconnector.md) | 读取连接器对象的属性和关系。 |
+| [Get connector](../api/printconnector-get.md) | [printConnector](printconnector.md) | 读取连接器对象的属性和关系。 |
 | [更新连接器](../api/printconnector-update.md) | [printConnector](printconnector.md) | 更新连接器对象。 |
 | [删除连接器](../api/printconnector-delete.md) | 无 | 从通用打印服务中注销连接器。 |
 
@@ -76,3 +76,5 @@ ms.locfileid: "45142426"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

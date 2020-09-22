@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b394515e8f69b49f42f9fb517b3077a2fb1d8ee3
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 10dd78832b8f2fb31529af65de6d106169e2cda9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "42453826"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047007"
 ---
 # <a name="create-schedulinggroup"></a>创建 schedulingGroup
 
@@ -20,7 +20,7 @@ ms.locfileid: "42453826"
 
 新建 [schedulingGroup](../resources/schedulinggroup.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "42453826"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application |计划的所有写。 * |
+|应用程序 |计划的所有写。 * |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
@@ -51,7 +51,7 @@ POST /teams/{teamId}/schedule/schedulingGroups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[schedulingGroup](../resources/schedulinggroup.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [schedulingGroup](../resources/schedulinggroup.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -143,3 +143,5 @@ Content-length: 401
   ]
 }
 -->
+
+

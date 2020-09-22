@@ -1,16 +1,16 @@
 ---
 title: teamsTab 资源类型
-description: 'TeamsTab 是固定（附加）到团队中的频道的选项卡。 '
+description: 'TeamsTab 是一个固定在团队中的频道 (附加) 的选项卡。 '
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c5d73738a24e0ffd21b259c58ce44cbe000c54df
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: 5684c98f15ed039fbba36b1df517a6d7d1d5d8c9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909728"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046445"
 ---
 # <a name="teamstab-resource-type"></a>teamsTab 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "44909728"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-TeamsTab 是固定（附加）到[团队](team.md)中的[频道](channel.md)的[选项卡](../resources/teamstab.md)。 
+TeamsTab 是一个固定在[团队](team.md)中的[频道](channel.md) (附加) 的[选项卡](../resources/teamstab.md)。 
 
 ## <a name="methods"></a>方法
 
@@ -35,12 +35,12 @@ TeamsTab 是固定（附加）到[团队](team.md)中的[频道](channel.md)的[
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|  id              |   字符串                  |  唯一标识 "通道" 选项卡的特定实例的标识符。只读。     |
+|  id              |   string                  |  唯一标识 "通道" 选项卡的特定实例的标识符。只读。     |
 |  displayName            |   string                  |  选项卡的名称。     |
-|  name            |   string                  |  被选项卡的名称。     |
+|  name            |   string                  |   (已弃用) 选项卡名称。     |
 |  teamsAppId           |   string             |  选项卡的应用程序定义标识符。创建选项卡后，不能更改此值。     |
 |  sortOrderIndex  |   string                  |  用于对选项卡进行排序的顺序的索引。     |
-|  webUrl          |   string                  |  选项卡实例的深层链接 URL。 只读。     |
+|  WebUrl          |   string                  |  选项卡实例的深层链接 URL。 只读。     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  应用于选项卡的自定义设置的容器。仅在设置此属性后，才会认为选项卡已配置。     |
 
 ## <a name="relationships"></a>关系
@@ -88,3 +88,5 @@ TeamsTab 是固定（附加）到[团队](team.md)中的[频道](channel.md)的[
 ## <a name="see-also"></a>另请参阅
 
 [配置内置选项卡类型](/graph/teams-configuring-builtin-tabs)
+
+

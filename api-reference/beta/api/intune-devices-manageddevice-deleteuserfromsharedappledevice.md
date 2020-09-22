@@ -3,20 +3,20 @@ title: deleteUserFromSharedAppleDevice 操作
 description: 从共享 Apple 设备中删除用户
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1276351b8d0624bf8c54198f5e5d5b839a0e7406
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: c1b5a04fe26606af07fa18efe52a3ccd2841af3e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792315"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047572"
 ---
 # <a name="deleteuserfromsharedappledevice-action"></a>deleteUserFromSharedAppleDevice 操作
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -86,6 +86,9 @@ Content-length: 56
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

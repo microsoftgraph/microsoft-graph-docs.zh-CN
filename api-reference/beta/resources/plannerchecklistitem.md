@@ -5,26 +5,26 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 0ca5116b83d3d61fda27f1469573c9a9ab971522
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3c60b2727af2fccfdac8e8f9e60e055b0471c861
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521767"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046802"
 ---
 # <a name="plannerchecklistitem-resource-type"></a>plannerChecklistItem 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerChecklistItem**资源表示任务清单中的项。 任务上的检查表由[checklistItems 对象](plannerchecklistitems.md)表示。
+**PlannerChecklistItem**资源表示任务清单中的项。 任务上的检查表由 [checklistItems 对象](plannerchecklistitems.md)表示。
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|isChecked|布尔|Value 是`true`选中该项时为， `false`否则为。|
+|isChecked|Boolean|Value 是 `true` 选中该项时为， `false` 否则为。|
 |lastModifiedBy|[identitySet](identityset.md)| 只读。 上次修改此 ID 的用户 ID。|
 |lastModifiedDateTime|DateTimeOffset|只读。 上次修改的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |orderHint|String|用于设置清单中项的相对顺序。 格式[定义如下所示。](planner-order-hint-format.md)|
@@ -64,3 +64,5 @@ ms.locfileid: "42521767"
   "suppressions": []
 }
 -->
+
+

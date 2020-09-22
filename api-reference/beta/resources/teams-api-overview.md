@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 7f34e6429ba394ccf2c4f1491b2354c48355c7e0
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: bb123f6633194b6476342421213731bcf12e7308
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630338"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046620"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 
@@ -123,3 +123,5 @@ Microsoft Teams 的已测试性能和容量限制将记录在 [Microsoft Teams �
 
 - [Microsoft Teams API 概述](/graph/teams-concept-overview)
 - 示例代码：[Contoso 航空](https://github.com/microsoftgraph/contoso-airlines-teams-sample)、[C# 迷你示例](https://github.com/microsoftgraph/csharp-teams-sample-graph)
+
+

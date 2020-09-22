@@ -3,14 +3,14 @@ title: 获取 userExperienceAnalyticsScoreHistory
 description: 读取 userExperienceAnalyticsScoreHistory 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c6e3374578922975ebafe1e4c81144ea6494c1e
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: eee751ad0bbe9f2280cde1724e649bf84c006738
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792623"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047439"
 ---
 # <a name="get-userexperienceanalyticsscorehistory"></a>获取 userExperienceAnalyticsScoreHistory
 
@@ -83,6 +83,9 @@ Content-Length: 350
   }
 }
 ```
+
+
+
 
 
 

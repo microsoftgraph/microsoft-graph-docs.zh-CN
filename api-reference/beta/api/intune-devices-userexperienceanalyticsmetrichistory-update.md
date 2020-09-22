@@ -3,14 +3,14 @@ title: 更新 userExperienceAnalyticsMetricHistory
 description: 更新 userExperienceAnalyticsMetricHistory 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a7d0689c1ecd3ff72f1b7d3d1f33366bfbed8f4
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: f6166bdc640a28ae2b2c375708ce6e45042c1b1c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793260"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047565"
 ---
 # <a name="update-userexperienceanalyticsmetrichistory"></a>更新 userExperienceAnalyticsMetricHistory
 
@@ -89,6 +89,9 @@ Content-Length: 185
   "metricDateTime": "2017-01-01T00:00:28.4495993-08:00"
 }
 ```
+
+
+
 
 
 

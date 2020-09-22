@@ -1,16 +1,16 @@
 ---
 title: 列出 riskyUsers
-description: 检索**riskyUser**对象集合的属性和关系。
+description: 检索 **riskyUser** 对象集合的属性和关系。
 localization_priority: Normal
 author: cloudhandler
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3bda35a6855dfbcb6da086cfa67c4e51def40a5d
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: dc67514b0047ed89faee62dcb864106829065160
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863500"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047084"
 ---
 # <a name="list-riskyusers"></a>列出 riskyUsers
 
@@ -18,7 +18,7 @@ ms.locfileid: "44863500"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索**riskyUser**对象集合的属性和关系。
+检索 **riskyUser** 对象集合的属性和关系。
 
 >**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
 
@@ -50,7 +50,7 @@ GET /identityProtection/riskyUsers
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[riskyUser](../resources/riskyuser.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [riskyUser](../resources/riskyuser.md) 对象集合。
 
 ## <a name="examples"></a>示例
 ### <a name="example-1-list-risky-users"></a>示例1：列出有风险的用户
@@ -176,3 +176,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

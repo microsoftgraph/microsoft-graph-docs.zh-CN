@@ -1,16 +1,16 @@
 ---
 title: 删除 publishedResource
-description: 删除[publishedResource](../resources/publishedresource.md)对象。
+description: 删除 [publishedResource](../resources/publishedresource.md) 对象。
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0e1079c21fe1f33dca424a4d6a374f02baa86563
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 884bbd2c6cdb0fe6b527cd7c8bca3ed2079f522a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200178"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047150"
 ---
 # <a name="delete-publishedresource"></a>删除 publishedResource
 
@@ -18,7 +18,7 @@ ms.locfileid: "43200178"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除[publishedResource](../resources/publishedresource.md)对象。
+删除 [publishedResource](../resources/publishedresource.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "43200178"
 |:--------------------------------------|:---------------------------------------------------------|
 | 委派（工作或学校帐户）     | OnPremisesPublishingProfiles.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

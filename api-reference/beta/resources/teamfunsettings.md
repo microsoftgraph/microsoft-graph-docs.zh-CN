@@ -5,28 +5,28 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8aedd6e049e2832c9db637827e8457928d950a3a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a58879c73e86dac6326576739c6a959a7e1efa78
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519951"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046649"
 ---
 # <a name="teamfunsettings-resource-type"></a>teamFunSettings 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于配置在[团队](team.md)中使用 Giphy、meme 和不干胶标签的设置。
+用于配置在 [团队](team.md)中使用 Giphy、meme 和不干胶标签的设置。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowGiphy|布尔|如果设置为 true，将启用 Giphy。|
-|giphyContentRating|String （enum）|Giphy 内容评级。 可取值为：`moderate`、`strict`。|
-|allowStickersAndMemes|布尔|如果设置为 true，则允许用户包括不干胶标签和 meme。|
-|allowCustomMemes|布尔|如果设置为 true，则允许用户包含自定义 meme。|
+|allowGiphy|Boolean|如果设置为 true，将启用 Giphy。|
+|giphyContentRating| (枚举的字符串) |Giphy 内容评级。 可取值为：`moderate`、`strict`。|
+|allowStickersAndMemes|Boolean|如果设置为 true，则允许用户包括不干胶标签和 meme。|
+|allowCustomMemes|Boolean|如果设置为 true，则允许用户包含自定义 meme。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -58,3 +58,5 @@ ms.locfileid: "42519951"
   "suppressions": []
 }
 -->
+
+

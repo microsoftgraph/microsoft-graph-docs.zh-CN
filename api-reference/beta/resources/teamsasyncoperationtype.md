@@ -5,16 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: enumPageType
-ms.openlocfilehash: 10c283cbf32e1259dac83b4575d1b36bd347ba56
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3056466273638ab3e7f7a05d23c53f28acd297fa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519888"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046513"
 ---
 # <a name="teamsasyncoperationtype-enum-type"></a>teamsAsyncOperationType 枚举类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,6 +27,8 @@ ms.locfileid: "42519888"
 |无效|0|值无效。|
 |cloneTeam|1 |克隆团队的操作。|
 |archiveTeam|2 |存档团队的操作。|
-|unarchiveTeam|3 |还原存档团队的操作。|
-|createTeam|3 |从头开始创建团队的操作。|
+|unarchiveTeam|第三章|还原存档团队的操作。|
+|createTeam|第三章|从头开始创建团队的操作。|
+
+
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c66b3ccdf0ddc5e60b68b34c546193b8081d2c69
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 80efbd54109fccaa0299e08e0c172001f46fe692
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47842776"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047229"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting: createOrGet
 
@@ -32,7 +32,7 @@ ms.locfileid: "47842776"
 | 应用程序                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \* 管理员必须创建 [应用程序访问策略](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) 并将其授予用户，授权在该策略中配置的应用程序，以创建或获取一个外部 ID 代表该用户的联机会议， (用户 id 在请求路径) 中指定。
+> \* 管理员必须创建 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy) 并将其授予用户，授权在该策略中配置的应用程序，以创建或获取一个外部 ID 代表该用户的联机会议， (用户 id 在请求路径) 中指定。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,13 +42,13 @@ ms.locfileid: "47842776"
 POST /me/onlineMeetings/createOrGet
 ```
 
-使用应用程序令牌时请求：
+使用应用程序令牌时的请求：
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{userId}/onlineMeetings/createOrGet
 ```
 
-> **注意：** `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅 [应用程序访问策略](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md)。
+> **注意：** `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关详细信息，请参阅[应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明                 |
@@ -66,7 +66,7 @@ POST /users/{userId}/onlineMeetings/createOrGet
 | externalId    | String                                                     | 外部 ID。 自定义 ID。  (必需的)                                                              |
 | participants  | [meetingParticipants](../resources/meetingparticipants.md) | 与联机会议关联的参与者。  这包括组织者和与会者。 |
 | startDateTime | 日期时间                                                   | 以 UTC 表示的会议开始时间。                                                                       |
-| subject       | String                                                     | 联机会议的主题。                                                                   |
+| 主题       | String                                                     | 联机会议的主题。                                                                   |
 
 > **注意：**
 >
@@ -319,3 +319,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

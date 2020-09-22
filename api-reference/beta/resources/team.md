@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b548c59a72af84a1a30d30cf0edb6fdf39df26d5
-ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
+ms.openlocfilehash: d36cf52268ef494b44a1c87706201e009942c6e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47340045"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046725"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -61,6 +61,17 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |webUrl|string (readonly) | 用于转到 Microsoft Teams 客户端中团队的超链接。 这是在 Microsoft Teams 客户端中右键单击团队并选择**获取团队链接**时获取的 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 |
 |classSettings|[teamClassSettings](teamclasssettings.md) |配置班级设置。 仅当团队代表班级时可用。|
 |isMembershipLimitedToOwners|布尔值|如果设置为“`true`”，则团队当前处于“仅所有者”团队成员身份状态，且其他团队成员（如学生）不可访问。|
+|createdDateTime|dateTimeOffset|只读。 创建团队的时间戳。|
+
+### <a name="instance-attributes"></a>实例属性
+
+实例属性是具有特殊行为的属性。这些属性是临时的，并且 a) 定义服务应执行的行为或 b) 提供短期的属性值，例如过期项目的下载 URL。
+
+| 属性名称| 类型   | 说明
+|:-----------------------|:-------|:-------------------------|
+|@microsoft. graph teamCreationMode|string|指示团队处于迁移状态，并且当前正用于迁移目的。 它接受一个值：`migration`。|
+
+有关 POST 请求示例，请参阅[请求（在迁移状态下创建团队）](https://github.com/MicrosoftDocs/msteams-docs/blob/add-import-messages/msteams-platform/graph-api/import-messages/import-external-messages-to-teams.md#request-create-team-in-migration-state)。
 
 ## <a name="relationships"></a>关系
 
@@ -104,7 +115,8 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
   "specialization": "string",
   "visibility": "string",
   "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
-   "isMembershipLimitedToOwners":"boolean"
+  "isMembershipLimitedToOwners":"boolean",
+  "createdDateTime": "string (timestamp)"
 }
 ```
 
@@ -125,3 +137,5 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 
 - [创建包含团队的组](/graph/teams-create-group-and-team)
 - [将 Microsoft Graph API 与 Microsoft Teams 结合使用](teams-api-overview.md)
+
+

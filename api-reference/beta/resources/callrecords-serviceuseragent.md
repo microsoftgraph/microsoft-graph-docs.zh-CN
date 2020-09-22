@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8e411b7170f99f57eac4cdb7c56cfc64bcf2aee5
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 0567571c3ee571eabb32f7cbb41820b04ed22d1f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491173"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046888"
 ---
 # <a name="serviceuseragent-resource-type"></a>serviceUserAgent 资源类型
 
@@ -18,11 +18,11 @@ ms.locfileid: "44491173"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示呼叫中终结点的服务用户代理。 继承自[userAgent](callrecords-useragent.md)类型。
+表示呼叫中终结点的服务用户代理。 继承自 [userAgent](callrecords-useragent.md) 类型。
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |applicationVersion|String|标识此终结点使用的应用程序软件的版本。|
 |headerValue|String|此终结点报告的用户代理标头值。|
@@ -58,3 +58,4 @@ ms.locfileid: "44491173"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 5f9800c5f5755721758c7db552aab7ac150a263f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 87cb0eca08e1d8c1dce81440fbaed40d12b46fa8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453588"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046939"
 ---
 # <a name="securityaction-cancelsecurityaction"></a>securityAction: cancelSecurityAction
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -108,3 +108,5 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+
+

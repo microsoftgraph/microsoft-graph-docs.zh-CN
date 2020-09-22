@@ -3,14 +3,14 @@ title: 列出 windowsManagedDevices
 description: 列出 windowsManagedDevice 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9c478c59e3f9cdd9dcc2e16bff2f4ee15ac4069a
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 8ba4b549c07968c64642a5dde84d051f15c0360d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790600"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047425"
 ---
 # <a name="list-windowsmanageddevices"></a>列出 windowsManagedDevices
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8765
+Content-Length: 8844
 
 {
   "value": [
@@ -254,11 +254,16 @@ Content-Length: 8765
       "processorArchitecture": "x86",
       "specificationVersion": "Specification Version value",
       "joinType": "azureADJoined",
-      "skuFamily": "Sku Family value"
+      "skuFamily": "Sku Family value",
+      "skuNumber": 9,
+      "managementFeatures": "microsoftManagedDesktop"
     }
   ]
 }
 ```
+
+
+
 
 
 

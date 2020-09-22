@@ -3,36 +3,36 @@ title: macOSCredentialSingleSignOnExtension 资源类型
 description: 表示 macOS 设备的凭据类型单一登录扩展配置文件。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 00466b80c1ab94f5984641b34a0a00f97e764773
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ec0f40a440625b472e234cccc7f9c3e9a62ac513
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464184"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046781"
 ---
 # <a name="macoscredentialsinglesignonextension-resource-type"></a>macOSCredentialSingleSignOnExtension 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示 macOS 设备的凭据类型单一登录扩展配置文件。
 
 
-继承自[macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)
+继承自 [macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |extensionIdentifier|String|获取或设置对指定 Url 执行 SSO 的应用扩展的捆绑包 ID。|
 |teamIdentifier|String|获取或设置为指定的 Url 执行 SSO 的应用程序扩展的团队 ID。|
-|域|String collection|获取或设置应用程序扩展为其执行 SSO 的主机名或域名的列表。|
+|域|String 集合|获取或设置应用程序扩展为其执行 SSO 的主机名或域名的列表。|
 |型|String|获取或设置此配置文件的区分大小写的领域名称。|
-|配置|[keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)集合|获取或设置用于配置凭据类型配置文件的类型键/值对的列表。 该集合最多可包含 500 个元素。|
+|配置|[keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md) 集合|获取或设置用于配置凭据类型配置文件的类型键/值对的列表。 该集合最多可包含 500 个元素。|
 
 ## <a name="relationships"></a>关系
 无
@@ -62,6 +62,9 @@ ms.locfileid: "43464184"
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a10b68e04ddf73636be2aee2c32ae59684a7b00a
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 5fc40b9c2a5789c5bcd7ab5794e41c715223eff3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334975"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046384"
 ---
 # <a name="teamstemplate-resource-type"></a>teamsTemplate 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "44334975"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-团队模板是在 Microsoft 团队中创建[团队](../resources/team.md)的蓝图。 模板指定应在使用模板创建的新团队中设置的结构、设置和偶数内容。 Microsoft 提供了一套基本模板，并且客户可以保存自己的自定义模板。
+团队模板是在 Microsoft 团队中创建 [团队](../resources/team.md) 的蓝图。 模板指定应在使用模板创建的新团队中设置的结构、设置和偶数内容。 Microsoft 提供了一套基本模板，并且客户可以保存自己的自定义模板。
 
 ## <a name="properties"></a>属性
 
@@ -42,5 +42,7 @@ ms.locfileid: "44334975"
 
 ## <a name="see-also"></a>另请参阅
 
-- [团队](team.md)
+- [team](team.md)
+
+
 

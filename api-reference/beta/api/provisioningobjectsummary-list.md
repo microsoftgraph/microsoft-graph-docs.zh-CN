@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 51375b2f83eeeb5755e3685a159a2338c34fa3fd
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 031cbeffbd600f86d2d5878f3fb5b6582eda8c2e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123095"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047180"
 ---
 # <a name="list-provisioningobjectsummary"></a>列出 provisioningObjectSummary
 
@@ -48,7 +48,7 @@ GET /auditLogs/provisioning
 |[$top](/graph/query-parameters#top-parameter)|设置结果的页面大小。|`/auditLogs/provisioning?$top=20`|
 |[$skiptoken](/graph/query-parameters#skiptoken-parameter)|从跨多页的结果集中检索下一页结果。 您必须传递查询中的 top 筛选器来生成令牌。 您不能指定要跳过的结果数。|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
 
-有关一般信息，请参阅[OData 查询参数](/graph/query_parameters)。
+若要了解一般信息，请参阅 [OData 查询参数](/graph/query_parameters)。
 
 ### <a name="attributes-supported-by-the-filter-parameter"></a>$filter 参数支持的属性
 
@@ -86,7 +86,7 @@ GET /auditLogs/provisioning
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[provisioningObjectSummary](../resources/provisioningobjectsummary.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [provisioningObjectSummary](../resources/provisioningobjectsummary.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -412,3 +412,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

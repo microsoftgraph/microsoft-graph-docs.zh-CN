@@ -3,24 +3,24 @@ title: 创建 androidEasEmailProfileConfiguration
 description: 创建新的 androidEasEmailProfileConfiguration 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f556f04d63092e9ed385b95e93d48e4b905bedc3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fe70527740a472ce3ccbc434d81943b8f07c8161
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43349481"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048314"
 ---
 # <a name="create-androideasemailprofileconfiguration"></a>创建 androidEasEmailProfileConfiguration
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[androidEasEmailProfileConfiguration](../resources/intune-deviceconfig-androideasemailprofileconfiguration.md)对象。
+创建新的 [androidEasEmailProfileConfiguration](../resources/intune-deviceconfig-androideasemailprofileconfiguration.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -65,7 +65,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|帐户|字符串|Exchange ActiveSync 帐户名称，以 EAS （此）配置文件的名称的形式显示给用户。|
+|帐户|String|Exchange ActiveSync 帐户名称，向用户显示为 "EAS (此) 配置文件" 的名称。|
 |authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Exchange ActiveSync 的身份验证方法。 可取值为：`usernameAndPassword`、`certificate`、`derivedCredential`。|
 |syncCalendar|Boolean|切换同步日历。 如果设置为 "false 日历" 将在设备上处于关闭状态。|
 |syncContacts|Boolean|切换同步联系人。 如果设置为 false，则设备上的联系人处于关闭状态。|
@@ -74,17 +74,17 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|应将电子邮件同步到的时间段。 可取值为：`userDefined`、`oneDay`、`threeDays`、`oneWeek`、`twoWeeks`、`oneMonth` 或 `unlimited`。|
 |emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|在设备上安装之前，从 AAD 中选出并插入到此配置文件中的电子邮件属性。 可取值为：`userPrincipalName`、`primarySmtpAddress`。|
 |emailSyncSchedule|[emailSyncSchedule](../resources/intune-deviceconfig-emailsyncschedule.md)|电子邮件同步计划。 可取值为：`userDefined`、`asMessagesArrive`、`manual`、`fifteenMinutes`、`thirtyMinutes`、`sixtyMinutes` 或 `basedOnMyUsage`。|
-|hostName|String|本机邮件应用程序连接到的 Exchange 位置（URL）。|
+|hostName|String|本机邮件应用程序连接到的 Exchange 位置 (URL) 。|
 |requireSmime|Boolean|指示是否使用 S/MIME 证书。|
 |requireSsl|Boolean|指示是否使用 SSL。|
 |usernameSource|[androidUsernameSource](../resources/intune-deviceconfig-androidusernamesource.md)|在设备上安装之前，从 AAD 中选取并插入到此配置文件中的 Username 属性。 可取值为：`username`、`userPrincipalName`、`samAccountName`、`primarySmtpAddress`。|
 |userDomainNameSource|[domainNameSource](../resources/intune-deviceconfig-domainnamesource.md)|在设备上安装之前，从 AAD 中选取并插入到此配置文件中的 UserDomainname 属性。 可取值为：`fullDomainName`、`netBiosDomainName`。|
-|customDomainName|字符串|在设备上安装之前生成电子邮件配置文件时使用的自定义域名值。|
+|customDomainName|String|在设备上安装之前生成电子邮件配置文件时使用的自定义域名值。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[androidEasEmailProfileConfiguration](../resources/intune-deviceconfig-androideasemailprofileconfiguration.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [androidEasEmailProfileConfiguration](../resources/intune-deviceconfig-androideasemailprofileconfiguration.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -200,6 +200,9 @@ Content-Length: 1738
   "customDomainName": "Custom Domain Name value"
 }
 ```
+
+
+
 
 
 

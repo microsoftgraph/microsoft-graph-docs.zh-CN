@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: cf2d3be4f0a877f310f1432aede6576fea5897b0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ab51e6268ef1c87eecd3b658e26acf9316501a34
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42763296"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046319"
 ---
 # <a name="teleconferencedeviceaudioquality-resource-type"></a>teleconferenceDeviceAudioQuality 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "42763296"
 
 ## <a name="properties"></a>属性
 
-**teleconferenceDeviceAudioQuality**继承[teleconferenceDeviceMediaQuality](teleconferencedevicemediaquality.md)资源的所有属性。
+**teleconferenceDeviceAudioQuality** 继承 [teleconferenceDeviceMediaQuality](teleconferencedevicemediaquality.md) 资源的所有属性。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -72,3 +72,5 @@ ms.locfileid: "42763296"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -1,16 +1,16 @@
 ---
 title: 获取日程安排
-description: 检索**schedule**对象的属性和关系。
+description: 检索 **schedule** 对象的属性和关系。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 705c42339dc64ff66f89ce72715d51a6753357d0
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 2f2f4e2a9e21511def764597f15b563e4900eab5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44154246"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047043"
 ---
 # <a name="get-schedule"></a>获取日程安排
 
@@ -18,16 +18,16 @@ ms.locfileid: "44154246"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[schedule](../resources/schedule.md)对象的属性和关系。
+检索 [schedule](../resources/schedule.md) 对象的属性和关系。
 
-计划创建过程符合[基于资源的长时间运行的操作（RELO）的一个 API 指南](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)。
-当客户端使用[PUT 方法](team-put-schedule.md)时，如果设置了计划，该操作将更新计划;否则，该操作将在后台启动计划设置过程。
+计划创建过程符合 [基于资源的长时间运行操作 (RELO) 的 API 指南 ](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)。
+当客户端使用 [PUT 方法](team-put-schedule.md)时，如果设置了计划，该操作将更新计划;否则，该操作将在后台启动计划设置过程。
 
 在计划设置过程中，客户端可以使用 GET 方法获取计划，并查看 `provisionStatus` 设置的当前状态的属性。 如果设置失败，客户端可以从属性获取其他信息 `provisionStatusCode` 。
 
 客户端也可以检查计划的配置。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -35,7 +35,7 @@ ms.locfileid: "44154246"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Schedule. All *、schedule、all* |
+|应用程序 | Schedule. All *、schedule、all* |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
@@ -53,7 +53,7 @@ GET /teams/{teamId}/schedule
 
 此方法不支持 OData 查询参数来自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头       | 值 |
 |:---------------|:--------|
@@ -65,7 +65,7 @@ GET /teams/{teamId}/schedule
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[schedule](../resources/schedule.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [schedule](../resources/schedule.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -139,3 +139,5 @@ Content-length: 401
   ]
 }
 -->
+
+

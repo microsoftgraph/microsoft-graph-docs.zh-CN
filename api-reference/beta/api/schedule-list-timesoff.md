@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a1f3ad2ca2ad07e6285337513dfa7cf5ee151a13
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: a15ca8e37f7514af7a489cbf4831cb5cf9810bb1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "42453840"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047013"
 ---
 # <a name="list-timesoff"></a>列出 timesOff
 
@@ -20,7 +20,7 @@ ms.locfileid: "42453840"
 
 按[计划](../resources/schedule.md)获取[timeOff](../resources/timeoff.md)实例的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "42453840"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -40,9 +40,9 @@ ms.locfileid: "42453840"
 GET /teams/{teamId}/schedule/timesOff
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 $filter [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持 $filter [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头       | 值 |
 |:---------------|:--------|
@@ -54,13 +54,13 @@ GET /teams/{teamId}/schedule/timesOff
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[timeOff](../resources/timeoff.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [timeOff](../resources/timeoff.md) 对象集合。
 
 ## <a name="example"></a>示例
 
 #### <a name="request"></a>请求
 
-下面是一个请求的示例，该请求获取具有共享版本的所有**timeOff**对象和草稿版本的2019年3月18日之间的草稿。
+下面是一个请求的示例，该请求获取具有共享版本的所有 **timeOff** 对象和草稿版本的2019年3月18日之间的草稿。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -147,3 +147,5 @@ Content-length: 401
   ]
 }
 -->
+
+

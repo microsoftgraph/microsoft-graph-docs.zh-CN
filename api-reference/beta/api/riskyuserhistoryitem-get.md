@@ -5,12 +5,12 @@ localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: db2743525ecb291f4d07afe6ea6ce379b938bfe4
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 1af5c028e49af9959884b981251245fd030d707a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863521"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047068"
 ---
 # <a name="get-riskyuserhistoryitem"></a>获取 riskyUserHistoryItem
 
@@ -49,7 +49,7 @@ GET /identityProtection/riskyUsers/{userid}/history/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) 对象。
 
 ## <a name="examples"></a>示例
 ### <a name="example-1-get-history-of-a-risky-user"></a>示例1：获取有风险的用户的历史记录
@@ -178,4 +178,6 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+
 

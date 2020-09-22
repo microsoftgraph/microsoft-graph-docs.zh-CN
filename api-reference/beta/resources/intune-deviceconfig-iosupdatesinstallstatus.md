@@ -3,14 +3,14 @@ title: iosUpdatesInstallStatus 枚举类型
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 584966469e896c70ea2affca146ad92c17a51ccb
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: a21c1035ef34c85dd0424d3022f1b1563c417d4e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792196"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046795"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>iosUpdatesInstallStatus 枚举类型
 
@@ -26,8 +26,8 @@ ms.locfileid: "46792196"
 |成员|值|说明|
 |:---|:---|:---|
 |success|0|尚未记录|
-|可用|1|尚未记录|
-|待机|双面|尚未记录|
+|可用|1 |尚未记录|
+|待机|2 |尚未记录|
 |unknown|第三章|尚未记录|
 |mdmClientCrashed|-2016336109|尚未记录|
 |timeout|-2016333898|尚未记录|
@@ -47,6 +47,9 @@ ms.locfileid: "46792196"
 |updateError|-2016330697|尚未记录|
 |deviceOsHigherThanDesiredOsVersion|-2016330696|尚未记录|
 |updateScanFailed|-2016324062|尚未记录|
+
+
+
 
 
 
