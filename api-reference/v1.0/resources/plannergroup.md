@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: d7b495575eafbea877df79a6b8a5fb83b0ad2060
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1c4156adb0466dc8261abb4539559e094a2dbfb6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533996"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037477"
 ---
 # <a name="plannergroup-resource-type"></a>plannerGroup 资源类型
 
@@ -18,21 +18,21 @@ ms.locfileid: "42533996"
 
 **PlannerGroup**资源提供对[组](group.md)的 Planner 资源的访问。 它不包含任何可用属性。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列出计划](../api/plannergroup-list-plans.md) |[plannerPlan](plannerplan.md) 集合| 获取**plannerPlan**对象集合。|
+|[列出计划](../api/plannergroup-list-plans.md) |[plannerPlan](plannerplan.md) 集合| 获取 **plannerPlan** 对象集合。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|字符串| 只读。 **PlannerGroup**的标识符|
+|id|String| 只读。 **PlannerGroup**的标识符|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|计划|[plannerPlan](plannerplan.md) 集合| 只读。 可为空。 返回组所拥有的[plannerPlans](plannerplan.md) 。|
+|计划|[plannerPlan](plannerplan.md) 集合| 只读。 可为 Null。 返回组所拥有的 [plannerPlans](plannerplan.md) 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -62,3 +62,4 @@ ms.locfileid: "42533996"
   "section": "documentation",
   "tocPath": ""
 }-->
+

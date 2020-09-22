@@ -6,19 +6,19 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 允许您使用 socket.io 接收驱动器的近实时更改通知。
 doc_type: apiPageType
-ms.openlocfilehash: 3249bba061257b4bae715734ab4e3ba348131c63
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 5b7d499940358f7057e32630efae580b66dd8253
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43109107"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037960"
 ---
 # <a name="get-websocket-endpoint"></a>获取 websocket 终结点
 
 命名空间：microsoft.graph
 
 允许您使用[socket.io][]接收[驱动器][]和[列表][]的近实时更改通知。
-Socket.io 是适用于 JavaScript 的热门通知库，可利用 Websocket。 若要了解详细信息，请参阅[socket.io](https://socket.io)。
+Socket.io 是适用于 JavaScript 的热门通知库，可利用 Websocket。 若要了解详细信息，请参阅 [socket.io](https://socket.io)。
 
 [drive]: ../resources/drive.md
 [list]: ../resources/list.md
@@ -32,7 +32,7 @@ Socket.io 是适用于 JavaScript 的热门通知库，可利用 Websocket。 �
 |:---------------------------------------|:-------------------------------------------
 | 委派（工作或学校帐户）     | 文件. 读取、文件读写、全部、读写全部。
 | 委派（个人 Microsoft 帐户） | Read，文件. ReadWrite，全部文件。
-| Application                            | 不支持。
+| 应用程序                            | 不支持。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -77,7 +77,7 @@ GET /me/drive/root/subscriptions/socketIo
 
 ### <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[订阅](../resources/subscription.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [订阅](../resources/subscription.md) 对象。
 
 <!-- {
   "blockType": "response",
@@ -96,7 +96,7 @@ Content-type: application/json
 
 `notificationUrl`返回的是 socket.io 终结点 URL。
 
-下面的示例演示如何在 JavaScript 中`notificationUrl`将 with socket.io。
+下面的示例演示如何 `notificationUrl` 在 JavaScript 中将 with socket.io。
 
 ```javascript
 // this is the notificationUrl returned from this API
@@ -122,3 +122,4 @@ socket.on("notification", (data)=>console.log("Notification!", data));
   "suppressions": [
   ]
 }-->
+

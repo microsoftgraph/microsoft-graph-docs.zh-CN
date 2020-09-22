@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 37bc96fdd0dad65a1f6b5b6bcec244ef96b915ac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5ebd0785153b05aea7c63785ee30bc5726551b25
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447022"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037078"
 ---
 # <a name="rangefill-resource-type"></a>RangeFill 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 表示 range 对象的背景。
 
@@ -63,3 +63,4 @@ ms.locfileid: "42447022"
   "section": "documentation",
   "tocPath": ""
 }-->
+

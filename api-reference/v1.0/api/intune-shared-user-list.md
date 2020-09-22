@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 42959c59740332f3d330f9938ac284ac837e728f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d06b458b96598c892dc068a13d8aadc728d28505
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43411256"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038506"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -21,13 +21,13 @@ ms.locfileid: "43411256"
 列出 [user](../resources/intune-shared-user.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
-若要调用此 API，必须有以下权限之一。 要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。  特定权限取决于上下文。
+若要调用此 API，必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  特定权限取决于上下文。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）| _因上下文而异_|
 | &nbsp;&nbsp;设备管理 | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
-| &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
+| &nbsp;&nbsp;MAM | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
 | &nbsp;&nbsp;载入 | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp;故障排除 | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -80,6 +80,9 @@ Content-Length: 136
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,18 +5,18 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 22daf1f67fee7cc495bd0d4996d6291f3d75e2be
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 993adcbefb97d15d1d43cd5184cbddb1284f5078
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511311"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038380"
 ---
 # <a name="list-pages"></a>列出页面
 
 命名空间：microsoft.graph
 
-检索[page](../resources/page.md)对象的列表。
+检索 [page](../resources/page.md) 对象的列表。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -37,11 +37,11 @@ GET /sites/{id}/onenote/pages
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
-页面的默认查询返回订购的前20个页面`lastModifiedTime desc`。 如果默认查询返回20个以上`@odata.nextLink`的页面，则该响应包含可用于对结果集进行分页的。 `top`请求返回的最大页面数为100。
+页面的默认查询返回订购的前20个页面 `lastModifiedTime desc` 。 如果默认查询返回20个以上的页面，则该响应包含 `@odata.nextLink` 可用于对结果集进行分页的。 请求返回的最大页面数 `top` 为100。
 
-默认响应将展开`parentSection`并选择节的`id`、 `displayName`和`self`属性。 页面`expand`的`parentNotebook`有效值为和`parentSection`。
+默认响应将展开 `parentSection` 并选择节的 `id` 、 `displayName` 和 `self` 属性。 `expand`页面的有效值为 `parentNotebook` 和 `parentSection` 。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -52,7 +52,7 @@ GET /sites/{id}/onenote/pages
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[page](../resources/page.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [page](../resources/page.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -97,3 +97,4 @@ Content-length: 393
   "section": "documentation",
   "tocPath": ""
 }-->
+

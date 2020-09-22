@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4c8d97f6cbbb789e99ad177c8c90f308a90d6381
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 17ec5cc3c17cb4acf8e530bc4c1225ab4061b7f2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451633"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037918"
 ---
 # <a name="certificateauthority-resource-type"></a>certificateAuthority 资源类型
 
@@ -26,8 +26,8 @@ ms.locfileid: "43451633"
 |certificateRevocationListUrl|String|证书吊销列表的 URL。|
 |deltaCertificateRevocationListUrl|String|该 URL 包含自上次创建完整证书 revocaton 列表以来的所有已吊销证书的列表。|
 |isRootAuthority|Boolean|必需。 如果受信任的证书是根证书颁发机构，**则为 true** ; 如果受信任的证书是中间颁发机构，则为**false** 。|
-|常用|String|证书的颁发者，根据**证书**值计算。 只读。 |
-|issuerSki|String|证书的主题密钥标识符，由**证书**值计算得出。 只读。|
+|常用|String|证书的颁发者，根据 **证书** 值计算。 只读。 |
+|issuerSki|String|证书的主题密钥标识符，由 **证书** 值计算得出。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

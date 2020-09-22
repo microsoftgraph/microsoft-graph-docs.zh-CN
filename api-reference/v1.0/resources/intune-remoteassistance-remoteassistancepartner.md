@@ -3,14 +3,14 @@ title: remoteAssistancePartner 资源类型
 description: remoteAssistPartner 资源表示给定远程协助合作伙伴服务的元数据和状态。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9eca68f2a2feb2906f1d2b55b3f857d515a22c50
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fd035cd48a45e1240123d564110df4e1466feb47
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441555"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037771"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>remoteAssistancePartner 资源类型
 
@@ -35,7 +35,7 @@ remoteAssistPartner 资源表示给定远程协助合作伙伴服务的元数据
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|合作伙伴的唯一标识符。|
-|displayName|字符串|合作伙伴的显示名称。|
+|displayName|String|合作伙伴的显示名称。|
 |onboardingUrl|String|合作伙伴的载入门户的 URL，其中管理员可以配置其远程协助服务。|
 |onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|待定. 可取值为：`notOnboarded`、`onboarding`、`onboarded`。|
 |lastConnectionDateTime|DateTimeOffset|TEM 合作伙伴发送到 Intune 的上一个请求的时间戳。|
@@ -61,6 +61,8 @@ remoteAssistPartner 资源表示给定远程协助合作伙伴服务的元数据
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
+
 
 
 

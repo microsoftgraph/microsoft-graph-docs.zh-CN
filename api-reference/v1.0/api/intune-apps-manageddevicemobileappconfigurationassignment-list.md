@@ -3,14 +3,14 @@ title: 列出 managedDeviceMobileAppConfigurationAssignments
 description: 列出 managedDeviceMobileAppConfigurationAssignment 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7db781fd33984f3abe270c30c03d5ee6bdf401ec
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b246f0017b2252f4ddeb6ef16982e609ab79e695
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446284"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038611"
 ---
 # <a name="list-manageddevicemobileappconfigurationassignments"></a>列出 managedDeviceMobileAppConfigurationAssignments
 
@@ -77,6 +77,9 @@ Content-Length: 287
   ]
 }
 ```
+
+
+
 
 
 

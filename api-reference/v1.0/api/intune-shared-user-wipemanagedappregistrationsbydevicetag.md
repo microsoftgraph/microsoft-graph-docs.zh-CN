@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 473c57670a026e538585e98338d202238428a1b3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e389eb6fb871cc1a6d827b25e40332066657383d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43411209"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038478"
 ---
 # <a name="wipemanagedappregistrationsbydevicetag-action"></a>wipeManagedAppRegistrationsByDeviceTag 操作
 
@@ -26,7 +26,7 @@ ms.locfileid: "43411209"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）| _因上下文而异_ |
-| &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp;MAM | DeviceManagementApps.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -79,6 +79,9 @@ Content-length: 39
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

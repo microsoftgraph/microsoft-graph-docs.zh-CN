@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: resourcePageType
-ms.openlocfilehash: f300a7bf309653fef303c810a1c6211304f64e8c
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 78607834ec8604ea7d037381849c0932448dcb13
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806917"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037211"
 ---
 # <a name="historyitem-resource-type"></a>historyItem 资源类型
 
@@ -31,12 +31,12 @@ ms.locfileid: "46806917"
 
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|
-|状态 | status | 由服务器进行设置。 用于标识有效对象的状态代码。 值：活动、已更新、已删除、已忽略。|
+|状态 | 状态 | 由服务器进行设置。 用于标识有效对象的状态代码。 值：活动、已更新、已删除、已忽略。|
 |userTimezone | String | 可选。 用于生成活动的用户设备所在的时区位于活动创建时间。 作为 Olson Id 提供的值，以便支持跨平台表示形式。|
 |createdDateTime | DateTimeOffset | 由服务器进行设置。 在服务器上创建对象时的 UTC 时间（UTC）。|
 |lastModifiedDateTime | DateTimeOffset | 由服务器进行设置。 在服务器上修改对象时的 UTC 时间（UTC）。|
 |id | String | 必需。 客户端集的 **historyItem** 对象的 GUID。|
-|startedDateTime | DateTimeOffset | 必需项。 启动 **historyItem** (活动会话) 时的 UTC 日期时间。 对于时间线历史记录是必需的。|
+|startedDateTime | DateTimeOffset | 必需。 启动 **historyItem** (活动会话) 时的 UTC 日期时间。 对于时间线历史记录是必需的。|
 |lastActiveDateTime | DateTimeOffset | 可选。 UTC DateTime 如果 **historyItem** (活动会话) 上次被视为活动或已完成-如果为 null，则 **historyItem** 状态应为 "正在进行"。|
 |expirationDateTime | DateTimeOffset | 可选。 **HistoryItem**将被硬删除时的 UTC 日期时间。 可由客户端进行设置。|
 |activeDurationSeconds | int | 可选。 活动用户约定的持续时间。 如果未提供，则从 **startedDateTime** 和 **lastActiveDateTime**计算。|
@@ -94,3 +94,4 @@ ms.locfileid: "46806917"
   "section": "documentation",
   "tocPath": ""
 }-->
+

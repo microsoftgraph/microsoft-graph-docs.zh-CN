@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: resourcePageType
-ms.openlocfilehash: 70d95d833518814f75d31227264be0dd5f85dba4
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d4ed317b987d461c9ef6816e9d05aae0de358ec7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806882"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037197"
 ---
 # <a name="imageinfo-resource-type"></a>imageInfo 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "46806882"
 |:----|:-----|:-----------|
 |iconUrl | String | Optional指向代表用于生成活动的应用程序的图标的 URI|
 |alternateText | String | Optional图像的可选文本可访问内容|
-|addImageQuery | 布尔值 | Optional用于指示服务器能够动态呈现图像以响应参数化的参数。 例如-高对比度图像|
+|addImageQuery | Boolean | Optional用于指示服务器能够动态呈现图像以响应参数化的参数。 例如-高对比度图像|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -58,3 +58,4 @@ ms.locfileid: "46806882"
   "section": "documentation",
   "tocPath": ""
 }-->
+

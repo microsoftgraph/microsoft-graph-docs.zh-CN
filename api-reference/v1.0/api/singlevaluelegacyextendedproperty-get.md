@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 6aac7f78830ba7f9a677d2840105fbf5292dbcc3
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d83bb1a072d2f42e0769495793acda1d124a1a19
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807323"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038219"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>获取 singleValueLegacyExtendedProperty
 
@@ -409,3 +409,4 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProp
   "suppressions": [
   ]
 }-->
+

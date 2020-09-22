@@ -3,14 +3,14 @@ title: complianceStatus 枚举类型
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f185694d51f2d9defee66d5859d32a46b50dfe0e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f21a4ba89ea195259634a2250be1d6d1f075456e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448319"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037750"
 ---
 # <a name="compliancestatus-enum-type"></a>complianceStatus 枚举类型
 
@@ -24,13 +24,15 @@ ms.locfileid: "43448319"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|尚未记录|
-|notApplicable|1|尚未记录|
-|合格|双面|尚未记录|
+|notApplicable|1 |尚未记录|
+|合格|2 |尚未记录|
 |得以|第三章|尚未记录|
 |合规|4 |尚未记录|
 |error|5 |尚未记录|
 |冲突|6 |尚未记录|
 |notAssigned|7 |尚未记录|
+
+
 
 
 

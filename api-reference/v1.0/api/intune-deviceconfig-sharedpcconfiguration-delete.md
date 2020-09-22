@@ -3,14 +3,14 @@ title: 删除 sharedPCConfiguration
 description: 删除 sharedPCConfiguration。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b84b415523fa1cae8e1f46e139ba312e786ca46
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9d030609f5365b11e09ff425d9a3b40682ebaccb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43387552"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038590"
 ---
 # <a name="delete-sharedpcconfiguration"></a>删除 sharedPCConfiguration
 
@@ -63,6 +63,9 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

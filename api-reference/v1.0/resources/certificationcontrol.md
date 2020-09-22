@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: eb792c5ce3b462fa5d2febcd1fb5ed0509d3ef30
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1e3b6882cda1d540301de0329f50b7e4f33dd637
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531940"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037904"
 ---
 #  <a name="certificationcontrol-resource-type"></a>certificationControl 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "42531940"
 
 |属性 |类型 |说明 |
 |:--|:--|:--|
-|name|字符串|证书控制名称 |
+|name|String|证书控制名称 |
 |url|String|Microsoft 服务信任门户的 URL |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -53,3 +53,4 @@ ms.locfileid: "42531940"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: resourcePageType
-ms.openlocfilehash: 1a7d984ff43f855f5bf476409c977649f0aa79f5
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 249169ea2c640736eb544f7d9c35e44db89569ab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806868"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037190"
 ---
 # <a name="visualinfo-resource-type"></a>visualInfo 资源类型
 
@@ -76,3 +76,4 @@ ms.locfileid: "46806868"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 28771e371ab5c3785cd974e9fb8bcffb735d90d5
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d94bfaca767eeafbeced12b4597186831b115b69
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807015"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038184"
 ---
 # <a name="create-single-value-extended-property"></a>创建单值扩展属性
 
@@ -128,7 +128,7 @@ PATCH /groups/{id}/events/{id}
 
 |属性|类型|说明|
 |:-----|:-----|:-----|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection| 一个或多个单值扩展属性的数组。 |
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) 集合| 一个或多个单值扩展属性的数组。 |
 |id|String|对于 **singleValueExtendedProperties** 集合中的每个属性，请指定此参数以标识属性。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
 |值|string|对于 **singleValueExtendedProperties** 集合中的每个属性，请指定属性值。必需。|
 
@@ -241,4 +241,5 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 

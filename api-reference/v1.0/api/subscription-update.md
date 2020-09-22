@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: e2528b9669607ff70ab0c29973a1097e05f524ee
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: aee0ca84cccd371c307b405357516d8fda61deab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598442"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038030"
 ---
 # <a name="update-subscription"></a>更新订阅
 
@@ -18,7 +18,7 @@ ms.locfileid: "46598442"
 
 通过延长到期时间续订订阅。
 
-订阅将在因资源类型而异的一段时间后过期。 为了避免丢失更改通知，应用应在到期日期前提前续订其订阅。 有关每种资源类型的最大订阅长度，请参阅[订阅](../resources/subscription.md)。
+订阅将在因资源类型而异的一段时间后过期。 为了避免丢失更改通知，应用应在到期日期前提前续订其订阅。 有关每种资源类型的最大订阅长度，请参阅 [订阅](../resources/subscription.md) 。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ ms.locfileid: "46598442"
 
 > **注意：** 订阅 OneDrive 和 Outlook 项还有其他限制。 这些限制适用于订阅的创建和管理（获取、更新和删除订阅）。
 
-- 在个人 OneDrive 上，可订阅根文件夹或该驱动器中的任何子文件夹。 在 OneDrive for Business 上，只可以订阅根文件夹。 将为订阅的文件夹中的所请求类型的更改发送更改通知，或在其层次结构中的任何文件、文件夹或其他 driveItem 对象上发送更改通知。 无法订阅不是文件夹的“**驱动器**”或“**driveItem**”实例，例如单个文件。
+- 在个人 OneDrive 上，可订阅根文件夹或该驱动器中的任何子文件夹。 在 OneDrive for Business 上，只可以订阅根文件夹。 对订阅的文件夹或者其层次结构中的任何文件、文件夹或其他 driveItem 对象所做更改属于请求的更改类型时，会发送变更通知。 无法订阅不是文件夹的“**驱动器**”或“**driveItem**”实例，例如单个文件。
 
 - 在 Outlook 中，委托的权限仅支持订阅已登录用户的邮箱内文件夹中的项。 也就是说，不能使用委托的权限 Calendars.Read 来订阅另一个用户邮箱中的事件。
 - 订阅_共享或委托_文件夹中 Outlook 联系人、事件或邮件的更改通知：
@@ -146,3 +146,4 @@ Content-length: 252
   "suppressions": [
   ]
 }-->
+

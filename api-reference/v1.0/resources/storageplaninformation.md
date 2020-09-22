@@ -5,12 +5,12 @@ title: StoragePlanInformation
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: files
-ms.openlocfilehash: a5e6c10bdbc8a68230a223501844d0ee121014c2
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: b8b4778a4726c227bfe79ad13ecb14507b13a889
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863773"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036952"
 ---
 # <a name="storageplaninformation-resource-type"></a>storagePlanInformation 资源类型
 
@@ -49,4 +49,5 @@ ms.locfileid: "44863773"
   "suppressions": []
 }
 -->
+
 

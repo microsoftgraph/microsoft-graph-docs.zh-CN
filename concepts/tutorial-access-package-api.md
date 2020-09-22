@@ -4,12 +4,12 @@ description: 了解如何创建访问包并请求使用 Microsoft Graph Api 对�
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: afb5e048a0075ccb391c4edd5f74ced8ecd7755c
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 7c9f283a00bbf09c1bc54c4abd924c92fe1ce140
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330459"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036826"
 ---
 # <a name="tutorial-create-an-access-package-using-microsoft-graph-apis"></a>教程：使用 Microsoft Graph Api 创建访问包
 
@@ -30,17 +30,18 @@ ms.locfileid: "47330459"
     2. 选择 **"使用 Microsoft 登录"** ，并使用 Azure AD 全局管理员帐户登录。 成功登录后，可以在左侧窗格中看到用户帐户的详细信息。
     3. 选择用户帐户详细信息右侧的 "设置" 图标，然后选择 " **选择权限**"。
 
-        ![选择 "Microsoft Graph 权限"。](./images/tutorial-access-package-api/set-permissions.png)
+        ![选择 Microsoft Graph 权限](./images/tutorial-access-package-api/set-permissions.png)
         
-    4. 在权限列表中浏览 `Group` 权限，展开 " **组 (2") **，选择 **Group. ReadWrite。 "All** " 权限。
-    5. 向下滚动权限的权限列表 `User` ，展开 " **用户 (8") **，按 **Ctrl** 键并选择 "用户" " **所有** " 权限。
+    4. 在权限列表中浏览 `Group` 权限，展开 " **组 (2") **，选择 **Group. ReadWrite。 "All** " 权限。 向下滚动到 `User` 权限列表，展开 " **用户 (8") **，然后选择 "用户" " **全部** " 权限。
 
-        ![搜索用户权限。](./images/tutorial-access-package-api/set-user-permission.png)
+        ![搜索用户、组和 entitlementmanagement 权限](./images/tutorial-access-package-api/set-user-permission.png)
     
-    6. 选择 " **接受** " 接受权限许可。 您无需代表组织同意这些权限。
-    7. 搜索 `EntitlementManagement` 权限，展开 " **EntitlementManagement (2") **，选择 "权限" " **全部** " 权限，然后选择 " **同意**"。 由于此权限需要管理员同意，并且您在本教程中创建的用户帐户是必需的，因此必须 **在代表组织时选择 "同意"**。
+    5. 选择 " **同意**"，然后选择 " **接受** " 接受权限许可。 您无需代表组织同意这些权限。
+    6. 搜索 `EntitlementManagement` 权限，展开 " **EntitlementManagement (2") **，选择 "权限" " **全部** " 权限，然后选择 " **同意**"。 由于此权限需要管理员同意，并且您在本教程中创建的用户帐户是必需的，因此必须 **在代表组织时选择 "同意"**。
 
         ![同意组织](./images/tutorial-access-package-api/consent-for-organization.png)
+
+    7. 选择 " **接受** " 接受权限许可。
 
 ## <a name="step-1-create-a-user-account-and-a-group"></a>步骤1：创建用户帐户和组
 
@@ -99,7 +100,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="create-a-group"></a>创建组
+### <a name="create-a-group"></a>创建群组
 
 在本教程中，您将创建一个名为 " **营销资源** " 的组，该组是用于获得资格管理的目标资源。 您可以使用现有的组（如果已经有的话）。 记录返回的 **id** 属性的值，此属性将在本教程后面的部分中使用。 
 
@@ -732,4 +733,4 @@ No Content - 204
 - [accessPackageAssignmentPolicy](https://docs.microsoft.com/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta)
 - [accessPackageAssignmentRequest](https://docs.microsoft.com/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta)
 - [组](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0)
-- [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-1.0)
+- [用户](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-1.0)

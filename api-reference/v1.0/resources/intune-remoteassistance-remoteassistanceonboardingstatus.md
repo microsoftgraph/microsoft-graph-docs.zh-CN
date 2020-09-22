@@ -3,14 +3,14 @@ title: remoteAssistanceOnboardingStatus 枚举类型
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e7f2cba8041a5dc720f48a64de3c6fe0f384908c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5783949dc8a82748f71250f522a55eb385952602
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441578"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037799"
 ---
 # <a name="remoteassistanceonboardingstatus-enum-type"></a>remoteAssistanceOnboardingStatus 枚举类型
 
@@ -24,8 +24,10 @@ ms.locfileid: "43441578"
 |成员|值|说明|
 |:---|:---|:---|
 |notOnboarded|0|尚未记录|
-|加入|1|尚未记录|
-|载入|双面|尚未记录|
+|加入|1 |尚未记录|
+|载入|2 |尚未记录|
+
+
 
 
 

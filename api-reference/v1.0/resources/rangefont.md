@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 2d519d4a21af17dd10fa840e2e81bab9aef35c19
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 95a58a62355c70b1f2588b83594ab5497ac3db49
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533911"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037071"
 ---
 # <a name="rangefont-resource-type"></a>RangeFont 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "42533911"
 此对象表示对象的字体属性（字体名称、字体大小、颜色等）。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -29,8 +29,8 @@ ms.locfileid: "42533911"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|bold|boolean|表示字体的加粗状态。|
-|color|字符串|文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
+|bold|布尔|表示字体的加粗状态。|
+|color|string|文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
 |italic|布尔|表示字体的斜体状态。|
 |name|string|字体名称（例如"Calibri"）|
 |大小|double|字号|
@@ -72,3 +72,4 @@ ms.locfileid: "42533911"
   "section": "documentation",
   "tocPath": ""
 }-->
+

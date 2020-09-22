@@ -1,22 +1,22 @@
 ---
 title: plannerPlan 资源类型
-description: '**plannerPlan** 资源表示 Office 365 中的计划。 计划可以由组所有，并包含 plannerTasks 集合。 其也可以有 plannerBuckets 集合。 每个计划对象具有可以包含此计划的更多信息的详细信息对象。 有关组、计划和任务之间的关系的详细信息，请参阅“Planner”。'
+description: '**plannerPlan** 资源表示 Microsoft 365 中的计划。 计划可以由组所有，并包含 plannerTasks 集合。 其也可以有 plannerBuckets 集合。 每个计划对象具有可以包含此计划的更多信息的详细信息对象。 有关组、计划和任务之间的关系的详细信息，请参阅“Planner”。'
 localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: ea9ef53ee472c9051be6baabe35dc2a0a03e620f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dc369ce0f97659c907fcb9bf94ae3f43c978f41a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533989"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037393"
 ---
 # <a name="plannerplan-resource-type"></a>plannerPlan 资源类型
 
 命名空间：microsoft.graph
 
-**plannerPlan** 资源表示 Office 365 中的计划。 计划可以由[组](group.md)所有，并包含 [plannerTasks](plannertask.md) 集合。 其也可以有 [plannerBuckets](plannerbucket.md) 集合。 每个计划对象具有可以包含此计划的更多信息的[详细信息](plannerplandetails.md)对象。 有关组、计划和任务之间的关系的详细信息，请参阅 [Planner](planner-overview.md)。
+**plannerPlan** 资源表示 Microsoft 365 中的计划。 计划可以由[组](group.md)所有，并包含 [plannerTasks](plannertask.md) 集合。 其也可以有 [plannerBuckets](plannerbucket.md) 集合。 每个计划对象具有可以包含此计划的更多信息的[详细信息](plannerplandetails.md)对象。 有关组、计划和任务之间的关系的详细信息，请参阅 [Planner](planner-overview.md)。
 
 ## <a name="methods"></a>方法
 
@@ -76,3 +76,4 @@ ms.locfileid: "42533989"
   "section": "documentation",
   "tocPath": ""
 }-->
+

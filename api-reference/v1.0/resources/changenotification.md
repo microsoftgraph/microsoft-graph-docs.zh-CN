@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 9c940de4dd8b57bfe04690a9df889c98d856bbc5
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: a1be7569f6fb7f96b28d34f8e319df78f14a6ae9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598507"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037897"
 ---
 # <a name="changenotification-resource-type"></a>changeNotification 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "46598507"
 
 表示发送给订阅者的通知。
 
-有关详细信息，请参阅[使用 Microsoft GRAPH API 获取更改通知](webhooks.md)。
+有关详细信息，请参阅 [使用 Microsoft GRAPH API 获取更改通知](webhooks.md)。
 
 ## <a name="methods"></a>方法
 
@@ -28,12 +28,12 @@ ms.locfileid: "46598507"
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
-| changeType | string | 指示将引发更改通知的更改的类型。 支持的值是：`created`、`updated`、`deleted`。 必填。 |
-| clientState | string | 在订阅请求中发送的**clientState**属性的值 (如果有任何) 。 最大长度为 255 个字符。 客户端可以通过比较**clientState**属性的值，来检查更改通知是否来自服务。 与订阅一起发送的**clientState**属性的值将与每个更改通知收到的**clientState**属性的值进行比较。 可选。 |
+| changeType | string | 指示将引发更改通知的更改的类型。 支持的值是：`created`、`updated`、`deleted`。 必需。 |
+| clientState | 字符串 | 在订阅请求中发送的 **clientState** 属性的值 (如果有任何) 。 最大长度为 255 个字符。 客户端可以通过比较 **clientState** 属性的值，来检查更改通知是否来自服务。 与订阅一起发送的 **clientState** 属性的值将与每个更改通知收到的 **clientState** 属性的值进行比较。 可选。 |
 | id | string | 通知的唯一 ID。 可选。 |
-| resource | string | 发出更改通知的资源的 URI （相对于） `https://graph.microsoft.com` 。 必填。 |
-| resourceData | [resourceData](resourcedata.md) | 此属性的内容取决于要订阅资源的类型。 必填。 |
-| subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | 订阅的过期时间。 必填。 |
+| resource | string | 发出更改通知的资源的 URI （相对于） `https://graph.microsoft.com` 。 必需。 |
+| resourceData | [resourceData](resourcedata.md) | 此属性的内容取决于要订阅资源的类型。 必需。 |
+| subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | 订阅的过期时间。 必需。 |
 | subscriptionId | string | 生成通知的订阅的唯一标识符。 |
 | tenantId | containerparentjob | 来自其发出更改通知的租户的唯一标识符。 |
 
@@ -82,3 +82,4 @@ ms.locfileid: "46598507"
   "suppressions": []
 }
 -->
+

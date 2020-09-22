@@ -5,18 +5,18 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: c4112be06512ba0f974206721ac5fb186cf7573e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b9eb6eb3d69cf89819ece38675893607c042e86b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509974"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038233"
 ---
 # <a name="get-resource"></a>获取资源
 
 命名空间：microsoft.graph
 
-检索文件或图像[资源](../resources/resource.md)对象的二进制数据。
+检索文件或图像 [资源](../resources/resource.md) 对象的二进制数据。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -45,7 +45,7 @@ GET /sites/{id}/onenote/resources/{id}/content
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和图像或文件二进制数据。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和图像或文件二进制数据。
 
 注意：图像不会直接在浏览器中呈现，因为它们需要授权才能检索它们，如页面内容的其余部分。
 ## <a name="example"></a>示例
@@ -103,3 +103,4 @@ Content-Type: application/octet-stream
   "suppressions": [
   ]
 }-->
+

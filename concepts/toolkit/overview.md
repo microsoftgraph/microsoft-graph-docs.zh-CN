@@ -3,18 +3,18 @@ title: Microsoft Graph 工具包：由 Microsoft Graph 提供支持的 Web 组�
 description: Microsoft Graph 工具包是 resuable、框架不可知的 web 组件以及用于访问和使用 Microsoft Graph 的帮助程序的集合。
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 2ba11a66dcec1eaec276b3fe71427fcf356cbcde
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: ba19e1697700800de22d193f8bbb1a959776a18f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181614"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036861"
 ---
 # <a name="microsoft-graph-toolkit-web-components-powered-by-microsoft-graph"></a>Microsoft Graph 工具包：由 Microsoft Graph 提供支持的 Web 组件
 
 Microsoft Graph 工具包是用于访问和使用 Microsoft Graph 的可重用、框架不可知 web 组件和帮助器的集合。 组件在现成的功能中完全正常，内置提供程序，可通过 Microsoft Graph 中的数据进行身份验证和获取数据。
 
-使用 Microsoft Graph 工具包，可以轻松地在应用程序中使用 Microsoft Graph。 在下面的示例中，查看登录用户及其日历事件如何使用[登录](./components/login.md)和[议程](./components/agenda.md)组件仅显示两行代码。
+使用 Microsoft Graph 工具包，可以轻松地在应用程序中使用 Microsoft Graph。 在下面的示例中，查看登录用户及其日历事件如何使用 [登录](./components/login.md) 和 [议程](./components/agenda.md) 组件仅显示两行代码。
 
 <iframe src="https://mgt.dev/iframe.html?id=samples-general--login-to-show-agenda&source=docs&source=docs" height="400"></iframe>
 
@@ -40,11 +40,11 @@ Microsoft Graph 工具包包含一系列 web 组件，用于 Microsoft Graph Api
 
 ### <a name="providers"></a>提供程序
 
-与[提供程序](/providers/providers.md)配合使用时，组件的工作效果最佳。 提供程序启用身份验证，并提供用于获取调用 Microsoft Graph Api 的访问令牌的实现。
+与 [提供程序](/providers/providers.md)配合使用时，组件的工作效果最佳。 提供程序启用身份验证，并提供用于获取调用 Microsoft Graph Api 的访问令牌的实现。
 
-|提供程序|Description|
+|提供程序|说明|
 |---------|-----------|
-|[Msal](./providers/msal.md)|使用 MSAL 登录用户并获取令牌以用于 Microsoft Graph。|
+|[Msal](./providers/msal.md)|使用 MSAL.js 登录用户并获取令牌以用于 Microsoft Graph。|
 |[SharePoint](./providers/sharepoint.md)|对 SharePoint web 部件内的组件进行身份验证并提供 Microsoft Graph 访问权限。|
 |[Teams](./providers/teams.md)|对 Microsoft 团队选项卡内的组件进行身份验证并提供 Microsoft Graph 访问权限。|
 |[代理](./providers/proxy.md)|通过将对 Microsoft Graph 的所有调用通过后端路由，允许使用后端身份验证。|
@@ -63,12 +63,12 @@ Microsoft Graph 工具包将 Microsoft Graph 所支持的常见体验集成到�
   :::column span="":::
     **随处工作**
 
-    所有组件都基于 web 标准，并可与任何新式浏览器和 web 框架无缝协作（反应、角度、Vue 等）。 
+    所有组件都基于 web 标准，并与任何新式浏览器和 web 框架无缝协作， (反应、角度、Vue 等 ) 。 
   :::column-end:::
   :::column span="":::
     **漂亮但灵活**
 
-    这些组件设计为外观和感觉像 Microsoft365，但也可以使用[CSS 自定义属性](./style.md)和[模板](./templates.md)进行自定义。
+    这些组件设计为外观和感觉像 Microsoft365，但也可以使用 [CSS 自定义属性](./style.md) 和 [模板](./templates.md)进行自定义。
   :::column-end:::
 :::row-end:::
 
@@ -86,5 +86,6 @@ Microsoft Graph 工具包非常适合于开发用于开发 web 应用程序、Mi
 
 ## <a name="next-steps"></a>后续步骤
 
-- 尝试[样本](https://mgt.dev)中的组件。
-- [开始](get-started.md)使用 Microsoft Graph 工具包。
+- 尝试 [样本](https://mgt.dev)中的组件。
+- [开始](./get-started/overview.md) 使用 Microsoft Graph 工具包。
+- 请查看 [GitHub](https://aka.ms/mgt)上的 Microsoft Graph 工具包。

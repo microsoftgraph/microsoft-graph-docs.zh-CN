@@ -5,18 +5,18 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: aa08c99cdca34a9561c81e0f90ac4f61fdb15871
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 2b19f368f14f26679247f310c34c6f263e45aec6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845755"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037932"
 ---
 # <a name="get-workforceintegration"></a>获取 workforceIntegration
 
 命名空间：microsoft.graph
 
-检索[workforceIntegration](../resources/workforceintegration.md)对象的属性和关系。
+检索 [workforceIntegration](../resources/workforceintegration.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ GET /teamwork/workforceIntegrations/{workforceIntegrationId}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /teamwork/workforceIntegrations/{workforceIntegrationId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[workforceIntegration](../resources/workforceintegration.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [workforceIntegration](../resources/workforceintegration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -129,3 +129,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

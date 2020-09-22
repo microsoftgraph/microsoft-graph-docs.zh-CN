@@ -5,16 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 49b8989bd8526cbe8074a386ae31e76fd195642d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1bdf811e68e6a856d50621d063fe66daecf57748
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447092"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037359"
 ---
 # <a name="planneruser-resource-type"></a>plannerUser 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 **PlannerUser**资源为[用户](user.md)提供对 Planner 资源的访问权限。 它不包含任何可用属性。
 
@@ -23,8 +23,8 @@ ms.locfileid: "42447092"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列出计划](../api/planneruser-list-plans.md) |[plannerPlan](plannerplan.md) 集合| 获取**plannerPlan**对象集合。|
-|[List tasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) 集合| 获取 **plannerTask** 对象集合。|
+|[列出计划](../api/planneruser-list-plans.md) |[plannerPlan](plannerplan.md) 集合| 获取 **plannerPlan** 对象集合。|
+|[List tasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) collection| 获取 **plannerTask** 对象集合。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -34,8 +34,8 @@ ms.locfileid: "42447092"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|计划|[plannerPlan](plannerplan.md) 集合| 只读。 可为 NULL。 返回分配给用户的[plannerTasks](plannertask.md) 。|
-|tasks|[plannerTask](plannertask.md) collection| 只读。 可为 NULL。 返回与用户共享的[plannerPlans](plannerplan.md) 。|
+|计划|[plannerPlan](plannerplan.md) 集合| 只读。 可为 Null。 返回分配给用户的 [plannerTasks](plannertask.md) 。|
+|tasks|[plannerTask](plannertask.md) collection| 只读。 可为 Null。 返回与用户共享的 [plannerPlans](plannerplan.md) 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -65,3 +65,4 @@ ms.locfileid: "42447092"
   "section": "documentation",
   "tocPath": ""
 }-->
+

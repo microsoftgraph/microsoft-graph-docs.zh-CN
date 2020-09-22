@@ -5,34 +5,34 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: ec6f22b9a14fc25f6c63b3e6e7c93ec66e4741d2
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 727da0983ddcaffb158be14a578a5a81eacecab3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896999"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037386"
 ---
 # <a name="plannerplandetails-resource-type"></a>plannerPlanDetails 资源类型
 
 命名空间：microsoft.graph
 
 
-**PlannerPlanDetails**资源表示有关计划的其他信息。 每个[plan](plannerplan.md)对象都有一个详细信息对象。
+**PlannerPlanDetails**资源表示有关计划的其他信息。 每个 [plan](plannerplan.md) 对象都有一个详细信息对象。
 
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 plannerPlanDetails](../api/plannerplandetails-get.md) | [plannerPlanDetails](plannerplandetails.md) |读取**plannerPlanDetails**对象的属性和关系。|
-|[更新](../api/plannerplandetails-update.md) | [plannerPlanDetails](plannerplandetails.md)    |更新**plannerPlanDetails**对象。 |
+|[获取 plannerPlanDetails](../api/plannerplandetails-get.md) | [plannerPlanDetails](plannerplandetails.md) |读取 **plannerPlanDetails** 对象的属性和关系。|
+|[更新](../api/plannerplandetails-update.md) | [plannerPlanDetails](plannerplandetails.md)    |更新 **plannerPlanDetails** 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|指定可与计划中的任务相关联的六个类别的描述的对象|
 |id|String| 只读。 计划详细信息的 ID。 长度为 28 个字符，区分大小写。 [格式验证](planner-identifiers-disclaimer.md)在服务上完成。|
-|sharedWith|[plannerUserIds](planneruserids.md)|与之共享此计划的用户 id 集。 如果您利用的是 Microsoft 365 组，请使用组 API 来管理组成员身份，以共享[组的](group.md)计划。 您还可以将组的现有成员添加到此集合中，但它们不需要他们访问该组拥有的计划。 |
+|sharedWith|[plannerUserIds](planneruserids.md)|与之共享此计划的用户 id 集。 如果您利用的是 Microsoft 365 组，请使用组 API 来管理组成员身份，以共享 [组的](group.md) 计划。 您还可以将组的现有成员添加到此集合中，但它们不需要他们访问该组拥有的计划。 |
 
 ## <a name="relationships"></a>关系
 无
@@ -66,3 +66,4 @@ ms.locfileid: "44896999"
   "section": "documentation",
   "tocPath": ""
 }-->
+

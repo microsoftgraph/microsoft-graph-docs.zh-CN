@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1e3ed231c6bd741afe3dcd502d517006c402fc77
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: a10872d45a53c60af75179acfd2e1ece793b7c4a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44335332"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036924"
 ---
 # <a name="teamsappinstallation-resource-type"></a>teamsAppInstallation 资源类型
 
@@ -18,24 +18,24 @@ ms.locfileid: "44335332"
 
 在[团队](team.md)中安装的[teamsApp](teamsapp.md) 。 作为应用程序的一部分的任何 bot 都将成为向其添加应用程序的任何团队的一部分。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |[列出应用程序](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsappinstallation.md) | 列出在团队中安装的应用程序。|
 |[添加应用程序](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | 将应用添加（安装）到团队。|
-|[删除应用程序](../api/teamsappinstallation-delete.md) | 无 | 从团队中删除（卸载）应用程序。|
+|[删除应用程序](../api/teamsappinstallation-delete.md) | 无 | 从团队中删除应用) 的 (卸载。|
 |[升级应用](../api/teamsappinstallation-upgrade.md) | 无 | 升级到最新版本的应用程序。|
 
 ## <a name="properties"></a>属性
 
 | 属性            | 类型     | 说明 |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | 唯一 id （而不是团队 appid）。 |
+| id                  | string   | 唯一 id (不是团队的 appid) 。 |
 
 ## <a name="relationships"></a>关系
 
-| 关系   | 类型    | Description |
+| 关系   | 类型    | 说明 |
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md)| 已安装的应用程序。 |
 |teamsAppDefinition|[teamsAppDefinition](teamsappdefinition.md)| 此版本的应用程序的详细信息。 |
@@ -69,3 +69,4 @@ ms.locfileid: "44335332"
   "section": "documentation",
   "tocPath": ""
 }-->
+

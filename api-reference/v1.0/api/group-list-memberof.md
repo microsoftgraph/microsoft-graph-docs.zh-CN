@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7f30b10ef9c6b33fc92b86b02fefe8c4c71c4a39
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: a6a87d643c9cd0b53b4769f6943f4a6f8e779f5f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125223"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038618"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
@@ -18,7 +18,7 @@ ms.locfileid: "43125223"
 
 获取直接成员组构成的组集合。 
 
-此操作不可传递。与获取用户的 Office 365 组不同，该操作将返回所有类型的组，而不仅是 Office 365 组。
+此操作不可传递。与获取用户的 Microsoft 365 组不同，该操作将返回所有类型的组，而不仅是 Microsoft 365 组。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -116,3 +116,4 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
+

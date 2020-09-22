@@ -3,18 +3,18 @@ title: SharePoint 提供程序
 description: 使用 SharePoint web 部件中的 SharePoint 提供程序为组件提供 Microsoft Graph 访问的功能。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: d94d516aa458ccfbc4a3770ad5937828aa23b335
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 98694291203c6b55d72e22503897d9515960d054
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45007071"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036812"
 ---
 # <a name="sharepoint-provider"></a>SharePoint 提供程序
 
 使用 SharePoint web 部件中的 SharePoint 提供程序为组件提供 Microsoft Graph 访问的功能。
 
-若要了解详细信息，请参阅[提供程序](../providers.md)。
+若要了解详细信息，请参阅 [提供程序](../providers.md)。
 
 ## <a name="get-started"></a>入门
 
@@ -42,17 +42,17 @@ public render(): void {
   }
 ```
 
->**注意：** Microsoft Graph 工具包需要 Typescript 3. x。 请确保您使用的是受支持的 Typescript 版本，方法是[安装正确的编译器](https://github.com/SharePoint/sp-dev-docs/wiki/SharePoint-Framework-v1.8-release-notes#support-for-typescript-27-29-and-3x)。
+>**注意：** Microsoft Graph 工具包需要 Typescript 3. x。 请确保您使用的是受支持的 Typescript 版本，方法是 [安装正确的编译器](https://github.com/SharePoint/sp-dev-docs/wiki/SharePoint-Framework-v1.8-release-notes#support-for-typescript-27-29-and-3x)。
 
 ## <a name="sample"></a>示例
 
-有关演示如何使用 SharePoint web 部件中的各种组件的示例，请参阅 Microsoft Graph 工具包存储库中的[SharePoint web 部件示例](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/sp-webpart)。
+有关演示如何使用 SharePoint web 部件中的各种组件的示例，请参阅 Microsoft Graph 工具包存储库中的 [SharePoint web 部件示例](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/sp-webpart) 。
 
 ## <a name="test-in-the-workbench"></a>在工作台中测试
 
-如果只是开始使用 SharePoint web 部件，可以按照[生成第一个 web 部件](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part)指南操作。
+如果只是开始使用 SharePoint web 部件，可以按照 [生成第一个 web 部件](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part) 指南操作。
 
-在创建 web 部件并准备好使用组件之后，您需要确保您的 web 部件具有访问 Microsoft Graph 的适当权限。 有关详细信息，请参阅[在 SharePoint 框架中使用 Microsoft Graph](/sharepoint/dev/spfx/use-aad-tutorial)。
+在创建 web 部件并准备好使用组件之后，您需要确保您的 web 部件具有访问 Microsoft Graph 的适当权限。 有关详细信息，请参阅 [在 SharePoint 框架中使用 Microsoft Graph](/sharepoint/dev/spfx/use-aad-tutorial)。
 
 简言之，向添加适当的权限非常重要 `package-solution.json` 。 您需要将 web 部件包上传到 SharePoint，并让管理员批准请求的权限。
 
@@ -62,4 +62,4 @@ public render(): void {
 
 如果您计划在 SPFx web 部件中支持 IE11，则必须使用 polyfills.ts。
 
-若要了解详细信息，[请参阅入门](../get-started.md#sharepoint)。
+若要了解详细信息，请参阅 [Microsoft Graph 工具包入门](../get-started/overview.md#polyfills)。

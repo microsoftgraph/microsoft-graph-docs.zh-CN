@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 30f9666f7418a116d9c18960da066954a93226cc
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 9bc36204ac432714f7431cb203672f543d92e662
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598477"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038051"
 ---
 # <a name="get-subscription"></a>获取订阅
 
@@ -145,3 +145,4 @@ Content-length: 252
   "suppressions": [
   ]
 }-->
+

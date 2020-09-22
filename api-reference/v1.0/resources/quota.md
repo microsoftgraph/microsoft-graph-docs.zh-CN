@@ -7,12 +7,12 @@ localization_priority: Normal
 description: 配额资源提供有关 驱动器 资源上的空间限制的详细信息。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 293daf950beb5cdf3cbd791a1e8bf0d4b92a220b
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 833093569de75af450f325384f29d001e50da000
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44864208"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037104"
 ---
 # <a name="quota-resource-type"></a>Quota 资源类型
 
@@ -74,3 +74,4 @@ ms.locfileid: "44864208"
   ],
   "tocPath": "Facets/Quota"
 } -->
+

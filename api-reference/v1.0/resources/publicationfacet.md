@@ -5,12 +5,12 @@ localization_priority: Normal
 author: JeremyKelley
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 91abd61454df2d06131a705dabcb87c9e4ce764f
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: cba39f1b9478b534c95258f2bae0ad9c6df948bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806889"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037100"
 ---
 # <a name="publicationfacet-resource-type"></a>PublicationFacet 资源类型
 
@@ -52,3 +52,4 @@ ms.locfileid: "46806889"
   ],
   "tocPath": "Facets/Photo"
 } -->
+

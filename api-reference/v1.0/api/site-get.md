@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 检索网站资源的属性和关系。
 doc_type: apiPageType
-ms.openlocfilehash: d01ea89091bb718cf98680253f7b80c1c64ebb8c
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 5a7ca6aad5221b7297a115a81b14c11f7d1f8914
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108940"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038191"
 ---
 # <a name="get-a-site-resource"></a>获取网站资源
 
@@ -116,3 +116,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+
