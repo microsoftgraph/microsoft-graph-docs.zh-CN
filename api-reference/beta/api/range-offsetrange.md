@@ -5,30 +5,30 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a92a129191252ec93668e131e188fb96bebe62bf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 282eda63ed9625eb20f472f32ba3b8f8b0440b81
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454708"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081844"
 ---
-# <a name="range-offsetrange"></a><span data-ttu-id="8a75c-105">Range:OffsetRange</span><span class="sxs-lookup"><span data-stu-id="8a75c-105">Range: OffsetRange</span></span>
+# <a name="range-offsetrange"></a><span data-ttu-id="5ae6f-105">Range:OffsetRange</span><span class="sxs-lookup"><span data-stu-id="5ae6f-105">Range: OffsetRange</span></span>
 
-<span data-ttu-id="8a75c-106">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8a75c-106">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5ae6f-106">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5ae6f-106">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8a75c-p102">获取表示与指定区域偏移的区域的对象。返回的区域的尺寸将与该区域匹配。如果强制使生成的区域位于工作表网格的边界之外，则会引发异常。</span><span class="sxs-lookup"><span data-stu-id="8a75c-p102">Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an exception will be thrown.</span></span>
-## <a name="permissions"></a><span data-ttu-id="8a75c-110">Permissions</span><span class="sxs-lookup"><span data-stu-id="8a75c-110">Permissions</span></span>
-<span data-ttu-id="8a75c-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8a75c-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="5ae6f-p102">获取表示与指定区域偏移的区域的对象。返回的区域的尺寸将与该区域匹配。如果强制使生成的区域位于工作表网格的边界之外，则会引发异常。</span><span class="sxs-lookup"><span data-stu-id="5ae6f-p102">Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an exception will be thrown.</span></span>
+## <a name="permissions"></a><span data-ttu-id="5ae6f-110">Permissions</span><span class="sxs-lookup"><span data-stu-id="5ae6f-110">Permissions</span></span>
+<span data-ttu-id="5ae6f-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5ae6f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8a75c-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="8a75c-113">Permission type</span></span>      | <span data-ttu-id="8a75c-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8a75c-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5ae6f-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="5ae6f-113">Permission type</span></span>      | <span data-ttu-id="5ae6f-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5ae6f-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8a75c-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8a75c-115">Delegated (work or school account)</span></span> | <span data-ttu-id="8a75c-116">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8a75c-116">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="8a75c-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8a75c-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8a75c-118">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8a75c-118">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="8a75c-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="8a75c-119">Application</span></span> | <span data-ttu-id="8a75c-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="8a75c-120">Not supported.</span></span> |
+|<span data-ttu-id="5ae6f-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5ae6f-115">Delegated (work or school account)</span></span> | <span data-ttu-id="5ae6f-116">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5ae6f-116">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="5ae6f-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5ae6f-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5ae6f-118">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5ae6f-118">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="5ae6f-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="5ae6f-119">Application</span></span> | <span data-ttu-id="5ae6f-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="5ae6f-120">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8a75c-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8a75c-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5ae6f-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5ae6f-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names/{name}/range/OffsetRange
@@ -36,28 +36,28 @@ GET /workbook/worksheets/{id|name}/range(address='<address>')/OffsetRange
 GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="8a75c-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="8a75c-122">Request headers</span></span>
-| <span data-ttu-id="8a75c-123">名称</span><span class="sxs-lookup"><span data-stu-id="8a75c-123">Name</span></span>       | <span data-ttu-id="8a75c-124">说明</span><span class="sxs-lookup"><span data-stu-id="8a75c-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5ae6f-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="5ae6f-122">Request headers</span></span>
+| <span data-ttu-id="5ae6f-123">名称</span><span class="sxs-lookup"><span data-stu-id="5ae6f-123">Name</span></span>       | <span data-ttu-id="5ae6f-124">说明</span><span class="sxs-lookup"><span data-stu-id="5ae6f-124">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="8a75c-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="8a75c-125">Authorization</span></span>  | <span data-ttu-id="8a75c-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8a75c-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="8a75c-128">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="8a75c-128">Workbook-Session-Id</span></span>  | <span data-ttu-id="8a75c-p105">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="8a75c-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="5ae6f-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="5ae6f-125">Authorization</span></span>  | <span data-ttu-id="5ae6f-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="5ae6f-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5ae6f-128">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="5ae6f-128">Workbook-Session-Id</span></span>  | <span data-ttu-id="5ae6f-p105">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="5ae6f-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="8a75c-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="8a75c-131">Request body</span></span>
-<span data-ttu-id="8a75c-132">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="8a75c-132">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5ae6f-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="5ae6f-131">Request body</span></span>
+<span data-ttu-id="5ae6f-132">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="5ae6f-132">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="8a75c-133">参数</span><span class="sxs-lookup"><span data-stu-id="8a75c-133">Parameter</span></span>    | <span data-ttu-id="8a75c-134">类型</span><span class="sxs-lookup"><span data-stu-id="8a75c-134">Type</span></span>   |<span data-ttu-id="8a75c-135">说明</span><span class="sxs-lookup"><span data-stu-id="8a75c-135">Description</span></span>|
+| <span data-ttu-id="5ae6f-133">参数</span><span class="sxs-lookup"><span data-stu-id="5ae6f-133">Parameter</span></span>    | <span data-ttu-id="5ae6f-134">类型</span><span class="sxs-lookup"><span data-stu-id="5ae6f-134">Type</span></span>   |<span data-ttu-id="5ae6f-135">说明</span><span class="sxs-lookup"><span data-stu-id="5ae6f-135">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="8a75c-136">rowOffset</span><span class="sxs-lookup"><span data-stu-id="8a75c-136">rowOffset</span></span>|<span data-ttu-id="8a75c-137">number</span><span class="sxs-lookup"><span data-stu-id="8a75c-137">number</span></span>|<span data-ttu-id="8a75c-p106">区域偏移的行数（正数、负数或 0）。正数表示向下偏移，负数表示向上偏移。</span><span class="sxs-lookup"><span data-stu-id="8a75c-p106">The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset downward, and negative values are offset upward.</span></span>|
-|<span data-ttu-id="8a75c-140">columnOffset</span><span class="sxs-lookup"><span data-stu-id="8a75c-140">columnOffset</span></span>|<span data-ttu-id="8a75c-141">number</span><span class="sxs-lookup"><span data-stu-id="8a75c-141">number</span></span>|<span data-ttu-id="8a75c-p107">区域偏移的列数（正数、负数或 0）。正数表示向右偏移，负数表示向左偏移。</span><span class="sxs-lookup"><span data-stu-id="8a75c-p107">The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are offset to the right, and negative values are offset to the left.</span></span>|
+|<span data-ttu-id="5ae6f-136">rowOffset</span><span class="sxs-lookup"><span data-stu-id="5ae6f-136">rowOffset</span></span>|<span data-ttu-id="5ae6f-137">number</span><span class="sxs-lookup"><span data-stu-id="5ae6f-137">number</span></span>|<span data-ttu-id="5ae6f-p106">区域偏移的行数（正数、负数或 0）。正数表示向下偏移，负数表示向上偏移。</span><span class="sxs-lookup"><span data-stu-id="5ae6f-p106">The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset downward, and negative values are offset upward.</span></span>|
+|<span data-ttu-id="5ae6f-140">columnOffset</span><span class="sxs-lookup"><span data-stu-id="5ae6f-140">columnOffset</span></span>|<span data-ttu-id="5ae6f-141">number</span><span class="sxs-lookup"><span data-stu-id="5ae6f-141">number</span></span>|<span data-ttu-id="5ae6f-p107">区域偏移的列数（正数、负数或 0）。正数表示向右偏移，负数表示向左偏移。</span><span class="sxs-lookup"><span data-stu-id="5ae6f-p107">The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are offset to the right, and negative values are offset to the left.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="8a75c-144">响应</span><span class="sxs-lookup"><span data-stu-id="8a75c-144">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5ae6f-144">响应</span><span class="sxs-lookup"><span data-stu-id="5ae6f-144">Response</span></span>
 
-<span data-ttu-id="8a75c-145">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [workbookRange](../resources/workbookrange.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="8a75c-145">If successful, this method returns `200 OK` response code and [workbookRange](../resources/workbookrange.md) object in the response body.</span></span>
+<span data-ttu-id="5ae6f-145">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [workbookRange](../resources/workbookrange.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="5ae6f-145">If successful, this method returns `200 OK` response code and [workbookRange](../resources/workbookrange.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8a75c-146">示例</span><span class="sxs-lookup"><span data-stu-id="8a75c-146">Example</span></span>
-<span data-ttu-id="8a75c-147">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="8a75c-147">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="8a75c-148">请求</span><span class="sxs-lookup"><span data-stu-id="8a75c-148">Request</span></span>
-<span data-ttu-id="8a75c-149">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="8a75c-149">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="5ae6f-146">示例</span><span class="sxs-lookup"><span data-stu-id="5ae6f-146">Example</span></span>
+<span data-ttu-id="5ae6f-147">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="5ae6f-147">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="5ae6f-148">请求</span><span class="sxs-lookup"><span data-stu-id="5ae6f-148">Request</span></span>
+<span data-ttu-id="5ae6f-149">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="5ae6f-149">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_offsetrange"
@@ -75,8 +75,8 @@ Content-length: 49
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="8a75c-150">响应</span><span class="sxs-lookup"><span data-stu-id="8a75c-150">Response</span></span>
-<span data-ttu-id="8a75c-p108">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="8a75c-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="5ae6f-150">响应</span><span class="sxs-lookup"><span data-stu-id="5ae6f-150">Response</span></span>
+<span data-ttu-id="5ae6f-p108">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="5ae6f-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -109,3 +109,5 @@ Content-length: 169
   "suppressions": []
 }
 -->
+
+

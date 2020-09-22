@@ -5,54 +5,54 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 716d83cdd9b7ad3a0edb6f5dd6da97bf63699168
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 23b218113c3689fccfb6711185a7374054cec734
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510492"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083237"
 ---
-# <a name="get-rangeformat"></a><span data-ttu-id="37bac-103">获取 RangeFormat</span><span class="sxs-lookup"><span data-stu-id="37bac-103">Get RangeFormat</span></span>
+# <a name="get-rangeformat"></a><span data-ttu-id="bfd5e-103">获取 RangeFormat</span><span class="sxs-lookup"><span data-stu-id="bfd5e-103">Get RangeFormat</span></span>
 
-<span data-ttu-id="37bac-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="37bac-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="bfd5e-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bfd5e-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="37bac-105">检索 rangeformat 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="37bac-105">Retrieve the properties and relationships of rangeformat object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="37bac-106">权限</span><span class="sxs-lookup"><span data-stu-id="37bac-106">Permissions</span></span>
-<span data-ttu-id="37bac-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="37bac-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="bfd5e-105">检索 rangeformat 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="bfd5e-105">Retrieve the properties and relationships of rangeformat object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="bfd5e-106">权限</span><span class="sxs-lookup"><span data-stu-id="bfd5e-106">Permissions</span></span>
+<span data-ttu-id="bfd5e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="bfd5e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="37bac-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="37bac-109">Permission type</span></span>      | <span data-ttu-id="37bac-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="37bac-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bfd5e-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="bfd5e-109">Permission type</span></span>      | <span data-ttu-id="bfd5e-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bfd5e-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="37bac-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="37bac-111">Delegated (work or school account)</span></span> | <span data-ttu-id="37bac-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="37bac-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="37bac-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="37bac-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="37bac-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="37bac-114">Not supported.</span></span>    |
-|<span data-ttu-id="37bac-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="37bac-115">Application</span></span> | <span data-ttu-id="37bac-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="37bac-116">Not supported.</span></span> |
+|<span data-ttu-id="bfd5e-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bfd5e-111">Delegated (work or school account)</span></span> | <span data-ttu-id="bfd5e-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bfd5e-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="bfd5e-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bfd5e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bfd5e-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="bfd5e-114">Not supported.</span></span>    |
+|<span data-ttu-id="bfd5e-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="bfd5e-115">Application</span></span> | <span data-ttu-id="bfd5e-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="bfd5e-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="37bac-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="37bac-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bfd5e-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bfd5e-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names/{name}/range/format
 GET /workbook/worksheets/{id|name}/range(address='<address>')/format
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="37bac-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="37bac-118">Optional query parameters</span></span>
-<span data-ttu-id="37bac-119">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="37bac-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="bfd5e-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="bfd5e-118">Optional query parameters</span></span>
+<span data-ttu-id="bfd5e-119">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="bfd5e-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="37bac-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="37bac-120">Request headers</span></span>
-| <span data-ttu-id="37bac-121">名称</span><span class="sxs-lookup"><span data-stu-id="37bac-121">Name</span></span>      |<span data-ttu-id="37bac-122">说明</span><span class="sxs-lookup"><span data-stu-id="37bac-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="bfd5e-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="bfd5e-120">Request headers</span></span>
+| <span data-ttu-id="bfd5e-121">名称</span><span class="sxs-lookup"><span data-stu-id="bfd5e-121">Name</span></span>      |<span data-ttu-id="bfd5e-122">说明</span><span class="sxs-lookup"><span data-stu-id="bfd5e-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="37bac-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="37bac-123">Authorization</span></span>  | <span data-ttu-id="37bac-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="37bac-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="37bac-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="37bac-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="37bac-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="37bac-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="bfd5e-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="bfd5e-123">Authorization</span></span>  | <span data-ttu-id="bfd5e-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="bfd5e-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="bfd5e-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="bfd5e-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="bfd5e-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="bfd5e-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="37bac-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="37bac-129">Request body</span></span>
-<span data-ttu-id="37bac-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="37bac-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bfd5e-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="bfd5e-129">Request body</span></span>
+<span data-ttu-id="bfd5e-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="bfd5e-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="37bac-131">响应</span><span class="sxs-lookup"><span data-stu-id="37bac-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="bfd5e-131">响应</span><span class="sxs-lookup"><span data-stu-id="bfd5e-131">Response</span></span>
 
-<span data-ttu-id="37bac-132">如果成功，此方法在响应`200 OK`正文中返回响应代码和[WorkbookRangeFormat](../resources/rangeformat.md)对象。</span><span class="sxs-lookup"><span data-stu-id="37bac-132">If successful, this method returns a `200 OK` response code and [WorkbookRangeFormat](../resources/rangeformat.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="37bac-133">示例</span><span class="sxs-lookup"><span data-stu-id="37bac-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="37bac-134">请求</span><span class="sxs-lookup"><span data-stu-id="37bac-134">Request</span></span>
-<span data-ttu-id="37bac-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="37bac-135">Here is an example of the request.</span></span>
+<span data-ttu-id="bfd5e-132">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [WorkbookRangeFormat](../resources/rangeformat.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="bfd5e-132">If successful, this method returns a `200 OK` response code and [WorkbookRangeFormat](../resources/rangeformat.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="bfd5e-133">示例</span><span class="sxs-lookup"><span data-stu-id="bfd5e-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="bfd5e-134">请求</span><span class="sxs-lookup"><span data-stu-id="bfd5e-134">Request</span></span>
+<span data-ttu-id="bfd5e-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="bfd5e-135">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="37bac-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="37bac-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="bfd5e-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="bfd5e-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_rangeformat"
@@ -60,26 +60,26 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format
 ```
-# <a name="c"></a>[<span data-ttu-id="37bac-137">C#</span><span class="sxs-lookup"><span data-stu-id="37bac-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="bfd5e-137">C#</span><span class="sxs-lookup"><span data-stu-id="bfd5e-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-rangeformat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="37bac-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="37bac-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="bfd5e-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bfd5e-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-rangeformat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="37bac-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="37bac-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="bfd5e-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bfd5e-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-rangeformat-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="37bac-140">Java</span><span class="sxs-lookup"><span data-stu-id="37bac-140">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="bfd5e-140">Java</span><span class="sxs-lookup"><span data-stu-id="bfd5e-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-rangeformat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="37bac-141">响应</span><span class="sxs-lookup"><span data-stu-id="37bac-141">Response</span></span>
-<span data-ttu-id="37bac-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="37bac-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="bfd5e-141">响应</span><span class="sxs-lookup"><span data-stu-id="bfd5e-141">Response</span></span>
+<span data-ttu-id="bfd5e-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="bfd5e-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -108,3 +108,4 @@ Content-length: 96
   "suppressions": [
   ]
 }-->
+

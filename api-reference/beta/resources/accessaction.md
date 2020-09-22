@@ -6,30 +6,30 @@ title: AccessAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fd4cee56045f03e0e4429f282add1de33e8ee794
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: a09946574973590badc818cf84c2b146e652b3c9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228322"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081772"
 ---
-# <a name="accessaction-resource-type"></a><span data-ttu-id="1d631-103">accessAction 资源类型</span><span class="sxs-lookup"><span data-stu-id="1d631-103">accessAction resource type</span></span>
+# <a name="accessaction-resource-type"></a><span data-ttu-id="a21bc-103">accessAction 资源类型</span><span class="sxs-lookup"><span data-stu-id="a21bc-103">accessAction resource type</span></span>
 
-<span data-ttu-id="1d631-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1d631-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a21bc-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a21bc-104">Namespace: microsoft.graph</span></span>
 
 
 
-<span data-ttu-id="1d631-105">[**ItemActivity**][activity]上的**accessAction**资源是否存在指示活动访问了某个项目。</span><span class="sxs-lookup"><span data-stu-id="1d631-105">The presence of the **accessAction** resource on an [**itemActivity**][activity] indicates that the activity accessed an item.</span></span>
+<span data-ttu-id="a21bc-105">[**ItemActivity**][activity]上的**accessAction**资源是否存在指示活动访问了某个项目。</span><span class="sxs-lookup"><span data-stu-id="a21bc-105">The presence of the **accessAction** resource on an [**itemActivity**][activity] indicates that the activity accessed an item.</span></span>
 
-><span data-ttu-id="1d631-106">**注意：** Access 活动记录目前仅适用于 SharePoint 和 OneDrive for Business。</span><span class="sxs-lookup"><span data-stu-id="1d631-106">**Note:** Access activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
+><span data-ttu-id="a21bc-106">**注意：** Access 活动记录目前仅适用于 SharePoint 和 OneDrive for Business。</span><span class="sxs-lookup"><span data-stu-id="a21bc-106">**Note:** Access activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
 
 [activity]: itemactivity.md
 
-## <a name="properties"></a><span data-ttu-id="1d631-107">属性</span><span class="sxs-lookup"><span data-stu-id="1d631-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="a21bc-107">属性</span><span class="sxs-lookup"><span data-stu-id="a21bc-107">Properties</span></span>
 
-<span data-ttu-id="1d631-108">此资源类型没有属性。</span><span class="sxs-lookup"><span data-stu-id="1d631-108">This resource type has no properties.</span></span>
+<span data-ttu-id="a21bc-108">此资源类型没有属性。</span><span class="sxs-lookup"><span data-stu-id="a21bc-108">This resource type has no properties.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="1d631-109">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1d631-109">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a21bc-109">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a21bc-109">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -53,3 +53,5 @@ ms.locfileid: "43228322"
   "suppressions": []
 }
 -->
+
+
