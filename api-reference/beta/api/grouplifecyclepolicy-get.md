@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b8f8283b88787de2b9a67555d78718753314449e
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 9572c7e86d022ba5532425673b11422d7d921a07
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124026"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001874"
 ---
 # <a name="get-grouplifecyclepolicy"></a>获取 groupLifecyclePolicy
 
@@ -29,7 +29,7 @@ ms.locfileid: "43124026"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All 或 Directory.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持 |
-|Application | Directory.Read.All 或 Directory.ReadWrite.All |
+|应用程序 | Directory.Read.All 或 Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -109,3 +109,5 @@ Content-length: 174
   ]
 }
 -->
+
+

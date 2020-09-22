@@ -1,16 +1,16 @@
 ---
 title: 更新组
-description: 更新[组](../resources/group.md)对象的属性。
+description: 更新 [组](../resources/group.md) 对象的属性。
 author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d38fdab04f4f470ba9c712f4447ecae3aa7d79bb
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 49f42d3b48681e9099db86fc90887a32781d41d1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895774"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001916"
 ---
 # <a name="update-group"></a>更新组
 
@@ -18,7 +18,7 @@ ms.locfileid: "44895774"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[组](../resources/group.md)对象的属性。
+更新 [组](../resources/group.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -54,13 +54,13 @@ PATCH /groups/{id}
 |autoSubscribeNewMembers|Boolean|默认为 **false**。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。|
 |description|String|可选的组说明。 |
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。 |
-|groupTypes|String collection|指定组类型及其成员身份。  <br><br>如果集合包含**统一**的，则组为 Microsoft 365 组;否则，它是一个安全组。  <br><br>如果该集合包含 **DynamicMembership**，则该组具有动态成员身份；否则，成员身份是静态的。 |
+|groupTypes|String collection|指定组类型及其成员身份。  <br><br>如果集合包含 **统一** 的，则组为 Microsoft 365 组;否则，它是一个安全组。  <br><br>如果该集合包含 **DynamicMembership**，则该组具有动态成员身份；否则，成员身份是静态的。 |
 |mailEnabled|布尔|指定是否为启用邮件的组。 |
 |mailNickname|String|组的邮件别名。 创建组时必须指定此属性。 |
 |securityEnabled|布尔|指定该组是否为安全组，包括 Microsoft 365 组。 |
 |visibility|String|指定 Microsoft 365 组的可见性。 可能的值是：**专用**、**公用**或空（解释为**公用**）。|
 
-由于**组**资源支持[扩展](/graph/extensibility-overview)，因此您可以使用该 `PATCH` 操作在现有**组**实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
+由于 **组** 资源支持 [扩展](/graph/extensibility-overview)，因此您可以使用该 `PATCH` 操作在现有 **组** 实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
 
 
 > **注意：**
@@ -129,7 +129,7 @@ HTTP/1.1 204 No Content
 ### <a name="example-2-apply-sensitivity-label-to-a-microsoft-365-group"></a>示例2：将敏感度标签应用于 Microsoft 365 组
 #### <a name="request"></a>请求
 
-您可以使用[列表标签](informationprotectionpolicy-list-labels.md)获取要应用于 Microsoft 365 组的标签的 ID。 然后，可以使用标签 ID 更新组的[assignedLabels](../resources/assignedlabel.md)属性。 
+您可以使用 [列表标签](informationprotectionpolicy-list-labels.md)获取要应用于 Microsoft 365 组的标签的 ID。 然后，可以使用标签 ID 更新组的 [assignedLabels](../resources/assignedlabel.md) 属性。 
 
 <!-- {
   "blockType": "request",
@@ -153,7 +153,7 @@ Content-length: 211
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -183,3 +183,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

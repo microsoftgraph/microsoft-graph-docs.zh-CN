@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: abb13becd4bd56617783c7096696eefff54a8a28
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: 77ae93a6658a5653e02c8214a9c6de796ede5449
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44743879"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002182"
 ---
 # <a name="list-conversations"></a>列出对话
 
@@ -119,3 +119,5 @@ Content-length: 262
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6aada439df5839b0a6d4d91a2da962874beea5df
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: fd6534256e60b5fbc1e699eab2e6df787ab63864
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44287026"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002119"
 ---
 # <a name="list-owners"></a>列出所有者
 
@@ -114,3 +114,5 @@ Content-length: 55
   ]
 }
 -->
+
+

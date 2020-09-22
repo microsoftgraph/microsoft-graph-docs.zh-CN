@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f46f7525a6120c2dd4d2380a622f527fa6a3a26a
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 0e4f8e90571da3f4744ca7d913c38990006f21eb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289444"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002150"
 ---
 # <a name="list-endpoints"></a>List endpoints
 
@@ -18,7 +18,7 @@ ms.locfileid: "44289444"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[终结点](../resources/endpoint.md)对象的列表。
+检索 [终结点](../resources/endpoint.md) 对象的列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -48,7 +48,7 @@ GET /groups/{id}/endpoints
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[Endpoint](../resources/endpoint.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [Endpoint](../resources/endpoint.md) 对象集合。
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 
@@ -116,3 +116,5 @@ Content-length: 261
   ]
 }
 -->
+
+

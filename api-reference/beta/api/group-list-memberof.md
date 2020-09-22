@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 463e35eca28d0f5c52a0d01a9f57a23aa356ff43
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 762b7a5a3c4971d51f40171ed15f2ac9935730a3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872616"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002166"
 ---
 # <a name="list-group-memberof"></a>List group memberOf
 
@@ -48,7 +48,7 @@ GET /groups/{id}/memberOf
 | 名称 | 说明 |
 |:---- |:----------- |
 | Authorization  | Bearer {token}。必需。 |
-| ConsistencyLevel | 最终。 在 `$count` 使用 `$search` 、 `$filter` 、 `$orderby` 或 OData 转换查询参数时，此标头和是必需的。 它使用的索引可能不是最新的，并包含对对象的最新更改。 |
+| ConsistencyLevel | 最终。 使用 `$search`、`$filter`、`$orderby` 或 OData 强制转换查询参数时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -116,7 +116,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-all-memberships"></a>示例2：仅获取所有成员身份的计数
+### <a name="example-2-get-only-a-count-of-all-memberships"></a>示例 2：仅获取所有可成员身份的计数
 
 #### <a name="request"></a>请求
 
@@ -165,7 +165,7 @@ Content-type: text/plain
 394
 
 
-### <a name="example-3-use-odata-cast-to-get-only-a-count-of-group-membership"></a>示例3：使用 OData 强制转换仅获取组成员身份的计数
+### <a name="example-3-use-odata-cast-to-get-only-a-count-of-group-membership"></a>示例 3：使用 OData 强制转换以仅获取组成员身份的计数
 
 #### <a name="request"></a>请求
 
@@ -345,3 +345,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

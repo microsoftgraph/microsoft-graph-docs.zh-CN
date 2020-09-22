@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1ac6c8f6a75ff900630bbd27047d547566335318
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 65f967ff3013885c3d8fe0f4048a4ceffd325e4a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43396422"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002042"
 ---
 # <a name="create-rejectedsender"></a>创建 rejectedSender
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

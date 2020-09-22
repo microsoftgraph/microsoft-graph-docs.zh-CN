@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 82f6f71283b9bac6b39957a4d35d9bbdc984d7d4
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 1232f190bc9a766b2c1cae23b0b851a0a3e59f8b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123767"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002252"
 ---
 # <a name="group-delta"></a>group: delta
 
@@ -18,7 +18,7 @@ ms.locfileid: "43123767"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取新创建、更新或删除的组，包括组成员身份更改，而无需对整个组集合执行完全读取。 有关详细信息，请参阅[Using Delta Query](/graph/delta-query-overview) 。
+获取新创建、更新或删除的组，包括组成员身份更改，而无需对整个组集合执行完全读取。 有关详细信息，请参阅 [Using Delta Query](/graph/delta-query-overview) 。
 
 ## <a name="permissions"></a>权限
 
@@ -58,7 +58,7 @@ GET /groups/delta
 此方法支持可选的 OData 查询参数来帮助自定义响应。
 
 - 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 *id* 属性。
-- 您可以使用`$select=members`获取成员身份更改。 此外，还可以通过选择**directoryObject 集合**类型的任何[组关系](../resources/group.md#relationships)来跟踪其他更改，如所有权和其他更改。
+- 您可以使用 `$select=members` 获取成员身份更改。 此外，还可以通过选择**directoryObject 集合**类型的任何[组关系](../resources/group.md#relationships)来跟踪其他更改，如所有权和其他更改。
 - 提供对 `$filter` 的有限支持：
   - 唯一支持的 `$filter` 表达式用于跟踪对特定对象 `$filter=id+eq+{value}` 的更改。 可以筛选多个对象。 例如，`https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`。 筛选对象不能超出 50 个。
 
@@ -76,7 +76,7 @@ GET /groups/delta
 
 ### <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和[组](../resources/group.md)集合对象。 该响应还包括一个状态令牌，它可以是`nextLink` url，也`deltaLink`可以是 url。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和[组](../resources/group.md)集合对象。 该响应还包括一个状态令牌，它可以是 `nextLink` url，也可以是 `deltaLink` url。
 
 - 如果返回 `nextLink`URL：
   - 这表示绘画中存在要检索的其他数据页面。 应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。
@@ -142,7 +142,7 @@ GET https://graph.microsoft.com/beta/groups/delta
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 >
-> 请注意， *members@delta*属性的存在，其中包括组中 member 对象的 id。
+> 请注意， *members@delta* 属性的存在，其中包括组中 member 对象的 id。
 
 <!-- {
   "blockType": "response",
@@ -312,3 +312,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

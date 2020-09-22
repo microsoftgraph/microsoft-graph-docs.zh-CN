@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8ad6c08b500218290418183447cf7f82572eb45e
-ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
+ms.openlocfilehash: a6c2cd31cb087d2bea6dcb730a1fd2581ed99552
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "47400415"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002091"
 ---
 # <a name="add-member"></a>添加成员
 
@@ -110,3 +110,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 302d0aa62f078e4209ca59b3fbfcfbb94d692bd9
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: a188f5f9ddbad07456235ccbe53ef9d0680867d1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872635"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002156"
 ---
 # <a name="list-group-members"></a>List group members
 
@@ -50,7 +50,7 @@ GET /groups/{id}/members
 | 名称 | 说明 |
 |:---- |:----------- |
 | Authorization | Bearer {token}。必需。 |
-| ConsistencyLevel | 最终。 在 `$count` 使用 `$search` 、 `$filter` 、 `$orderby` 或 OData 转换查询参数时，此标头和是必需的。 它使用的索引可能不是最新的，并包含对对象的最新更改。 |
+| ConsistencyLevel | 最终。 使用 `$search`、`$filter`、`$orderby` 或 OData 强制转换查询参数时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -350,3 +350,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

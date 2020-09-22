@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c82fbe8d18d268abc4c8a1f5162bd8159d038275
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4e8aba32b73f5c616dfbe55ce9ef8e9c65293937
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43396626"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002105"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -212,3 +212,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

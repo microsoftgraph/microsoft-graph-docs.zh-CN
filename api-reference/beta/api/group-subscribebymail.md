@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d5865086ff1fd97af8e9897cde66a5cdd1599923
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: d6242084d73f3b53da79b1fd768105f4d05c812e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895788"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001989"
 ---
 # <a name="group-subscribebymail"></a>组：subscribeByMail
 
@@ -95,3 +95,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

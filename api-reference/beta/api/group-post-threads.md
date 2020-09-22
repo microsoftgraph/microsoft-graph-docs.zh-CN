@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3384be421a7afe4c3bd40a463c4e42f118f51c39
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2b7e754e9ab39651d74c00e045a25dd834dd3af9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43396348"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002013"
 ---
 # <a name="create-conversation-thread"></a>创建对话线程
 
@@ -146,3 +146,5 @@ Content-length: 419
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2aa50367dafbbd7ecde6ada9bd42844ba7db9479
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 2a66eb00c414a1566a98f80e957898416047a3ae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123837"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002280"
 ---
 # <a name="remove-rejectedsender"></a>删除 rejectedSender
 
@@ -27,7 +27,7 @@ ms.locfileid: "43123837"
 |:---------------------------------------|:-------------------------------------------- |
 | 委派（工作或学校帐户）     | Group.ReadWrite.All  |  
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -75,7 +75,7 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=htt
 ---
 
 #### <a name="response"></a>响应
-下面展示了示例响应。 
+下面介绍响应示例。 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -133,3 +133,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+
