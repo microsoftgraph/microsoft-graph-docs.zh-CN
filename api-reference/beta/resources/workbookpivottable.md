@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a086a5f91ad93497b6aa1d841e5baa7ee7e72f96
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 98db064c101d60c9db25eb0a9515da74e25e96ad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519202"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023816"
 ---
 # <a name="workbookpivottable-resource-type"></a>workbookPivotTable 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -58,3 +58,5 @@ ms.locfileid: "42519202"
 }
 
 ```
+
+

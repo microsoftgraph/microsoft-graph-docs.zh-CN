@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bc0a049e7fb7a27fd2bf80fb942b74628d836e55
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: 4c660b8697291e1b2248d6337a47bda57dfee80b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543385"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051555"
 ---
 # <a name="update-range"></a>更新区域
 
@@ -44,7 +44,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|columnHidden|布尔|表示当前区域中的所有列是否隐藏。|
+|columnHidden|boolean|表示当前区域中的所有列是否隐藏。|
 |formulas|Json|表示采用 A1 表示法的公式。|
 |formulasLocal|Json|表示采用 A1 样式表示法的公式，使用用户的语言和数字格式区域设置。例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。|
 |formulasR1C1|Json|表示采用 R1C1 样式表示法的公式。|
@@ -123,3 +123,4 @@ Content-length: 169
   ],
   "tocPath": ""
 }-->
+

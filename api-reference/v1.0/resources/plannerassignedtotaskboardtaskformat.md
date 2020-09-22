@@ -1,35 +1,35 @@
 ---
 title: plannerAssignedToTaskBoardTaskFormat 资源类型
-description: '**PlannerAssignedToTaskBoardTaskFormat**资源表示用于在任务板的 "分配器" 视图（由任务分配到的用户组织的视图）中正确呈现任务的信息。 每个任务都有一个与之关联的**plannerAssignedToTaskBoardTaskFormat**对象。'
+description: '**PlannerAssignedToTaskBoardTaskFormat**资源表示用于在任务板的 "分配器" 视图中正确呈现任务的信息，该信息 (将任务分配给其) 的用户组织的视图。 每个任务都有一个与之关联的 **plannerAssignedToTaskBoardTaskFormat** 对象。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 000797631f5f15b0d9128e4433512e8451975255
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aca03e2a82d7fe42aa229c2f53d0c1dd066a30bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534027"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037617"
 ---
 # <a name="plannerassignedtotaskboardtaskformat-resource-type"></a>plannerAssignedToTaskBoardTaskFormat 资源类型
 
 命名空间：microsoft.graph
 
-**PlannerAssignedToTaskBoardTaskFormat**资源表示用于在任务板的 "分配器" 视图（由任务分配到的用户组织的视图）中正确呈现任务的信息。 每个[任务](plannertask.md)都有一个与之关联的**plannerAssignedToTaskBoardTaskFormat**对象。
+**PlannerAssignedToTaskBoardTaskFormat**资源表示用于在任务板的 "分配器" 视图中正确呈现任务的信息，该信息 (将任务分配给其) 的用户组织的视图。 每个 [任务](plannertask.md) 都有一个与之关联的 **plannerAssignedToTaskBoardTaskFormat** 对象。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 plannerAssignedToTaskBoardTaskFormat](../api/plannerassignedtotaskboardtaskformat-get.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md) |读取**plannerAssignedToTaskBoardTaskFormat**对象的属性和关系。|
-|[更新](../api/plannerassignedtotaskboardtaskformat-update.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)  |更新**plannerAssignedToTaskBoardTaskFormat**对象。 |
+|[获取 plannerAssignedToTaskBoardTaskFormat](../api/plannerassignedtotaskboardtaskformat-get.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md) |读取 **plannerAssignedToTaskBoardTaskFormat** 对象的属性和关系。|
+|[更新](../api/plannerassignedtotaskboardtaskformat-update.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)  |更新 **plannerAssignedToTaskBoardTaskFormat** 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|字符串| 只读。 资源的 ID。 长度为 28 个字符，区分大小写。 [格式验证](planner-identifiers-disclaimer.md)在服务上完成。|
+|id|String| 只读。 资源的 ID。 长度为 28 个字符，区分大小写。 [格式验证](planner-identifiers-disclaimer.md)在服务上完成。|
 |orderHintsByAssignee|[plannerOrderHintsByAssignee](plannerorderhintsbyassignee.md)|用于为任务板 AssignedTo 视图上的任务进行排序的提示字典。每个条目的键是任务分配到的用户之一，值为排序提示。[此处](planner-order-hint-format.md)概述了各值的格式。|
 |unassignedOrderHint|字符串|当任务未分配给任何人，或 orderHintsByAssignee 字典未向分配到任务的用户提供排序提示时，用于为任务板 AssignedTo 视图上的任务进行排序的提示值。[此处](planner-order-hint-format.md)概述了此格式。|
 
@@ -65,3 +65,4 @@ ms.locfileid: "42534027"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,18 +5,18 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 5ae09a6c528e0311c542283ea5929ffba88ba029
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 883c61f5ed270aac3e5c2defbe655e0d5ea36e27
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447141"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037610"
 ---
 # <a name="plannerassignment-resource-type"></a>plannerAssignment 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
-**PlannerAssignment**资源表示将任务分配给用户。 在开放类型[plannerAssignments](plannerassignments.md)中使用此类型。
+**PlannerAssignment**资源表示将任务分配给用户。 在开放类型 [plannerAssignments](plannerassignments.md)中使用此类型。
 
 
 ## <a name="properties"></a>属性
@@ -55,3 +55,4 @@ ms.locfileid: "42447141"
   "section": "documentation",
   "tocPath": ""
 }-->
+

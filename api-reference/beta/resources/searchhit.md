@@ -1,16 +1,16 @@
 ---
 title: searchHit 资源类型
-description: 在此处提供说明
+description: SearchHit 实体的说明
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 3d010f3731fa65e1ab2dc3abbf84ffdc5ebdb732
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c140a30d4e77840b1fd7c7ccceec16e0554cd855
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985774"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193608"
 ---
 # <a name="searchhit-resource-type"></a>searchHit 资源类型
 
@@ -18,19 +18,24 @@ ms.locfileid: "47985774"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示搜索结果列表中的单个结果。
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+代表搜索结果列表中的单个结果。
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | 描述 |
 |:-------------|:------------|:------------|
-|_id|String|项的内部标识符。|
-|_score|Int32|结果的分数或顺序。|
-|_sortField|String|使用的排序顺序。 它可以是 DateTime 或相关性。|
-|_summary|String| (如果摘要可用) 的结果摘要。|
-|_source|[实体](entity.md)|搜索结果的基础图形表示形式。|
+|hitId|字符串|项的内部标识符。|
+|排名|Int32|结果的排名或顺序。|
+|contentSource|字符串|**ExternalItem**所属的内容源的名称。|
+|摘要|字符串|如果摘要可用，则为结果摘要。|
+|resource|[实体](entity.md)|搜索结果的基本 Microsoft Graph 表示形式。|
+|_id (已弃用) |字符串| 重命名为 **hitId**。 项的内部标识符。|
+|_score (已弃用) |Int32|重命名为 **rank**。 结果的分数或顺序。|
+|_summary (已弃用) |字符串|重命名为 **摘要**。  (如果摘要可用) 的结果摘要。|
+|_sortField (已弃用) |字符串|此属性已被删除。|
+|_source (已弃用) |[实体](entity.md)|重命名为 **资源**。 搜索结果的基础图形表示形式。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -47,6 +52,11 @@ ms.locfileid: "47985774"
 
 ```json
 {
+  "hitId": "String",
+  "rank": 1,
+  "summary": "String",
+  "contentSource": "String",
+  "resource": { "@odata.type": "microsoft.graph.entity" },
   "_id": "String",
   "_score": 1024,
   "_sortField": "String",

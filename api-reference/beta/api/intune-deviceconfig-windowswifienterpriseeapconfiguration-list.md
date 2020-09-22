@@ -3,14 +3,14 @@ title: 列出 windowsWifiEnterpriseEAPConfigurations
 description: 列出 windowsWifiEnterpriseEAPConfiguration 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 56b9f19e38d65b08d017223db23f38468dca9483
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: f577d3bcc6520162ceacae077bfb45410a2d9d8e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790369"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017680"
 ---
 # <a name="list-windowswifienterpriseeapconfigurations"></a>列出 windowsWifiEnterpriseEAPConfigurations
 
@@ -138,6 +138,9 @@ Content-Length: 2859
   ]
 }
 ```
+
+
+
 
 
 

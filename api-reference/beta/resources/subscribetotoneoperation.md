@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e35b3fe674c9f92b7dab723325d658facf13962f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 824270ba51de4360084f9f978cab31b92730edc1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520287"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078162"
 ---
 # <a name="subscribetotoneoperation-resource-type"></a>SubscribeToToneOperation 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ ms.locfileid: "42520287"
 | 适用                  | String                      | 客户端上下文。                                                                                                                               |
 | id                             | String                      | 服务器操作 ID。 只读。                                                                                             |
 | resultInfo                     | [resultInfo](resultinfo.md) | 结果信息。  只读。                                                                                             |
-| status                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                 |
+| 状态                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。                                                 |
 
 ## <a name="relationships"></a>关系
 无
@@ -61,3 +61,5 @@ ms.locfileid: "42520287"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

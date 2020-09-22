@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ailae
-ms.openlocfilehash: 73f725dde241e5fc37ace2bc6b5ac92e5401a9fc
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d260891c2a0a178cfaa3d2992385dc260be515fc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812560"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044719"
 ---
 # <a name="send-device-command"></a>发送设备命令
 
@@ -202,3 +202,5 @@ HTTP/1.1 201 OK
   }
 }
 ```
+
+

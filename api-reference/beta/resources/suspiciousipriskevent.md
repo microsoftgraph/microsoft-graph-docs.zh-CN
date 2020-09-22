@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: cloudhandler
-ms.openlocfilehash: 28bc27d77e744df62215cb15d4063243785faacb
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: fe4b0069c6ed12a5d74fc32d1d8a71b5dd8dffde
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311512"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078155"
 ---
 # <a name="suspiciousipriskevent-resource-type-deprecated"></a>suspiciousIpRiskEvent 资源类型 (弃用) 
 
@@ -95,3 +95,5 @@ ms.locfileid: "47311512"
   "suppressions": []
 }
 -->
+
+

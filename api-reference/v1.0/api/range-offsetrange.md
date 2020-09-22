@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b8dd6806ec24d130ac2adeb1f89877cf10dd31fd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1cf0cc130fdabc34b60530c64c5dd2968eee90b9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510597"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051542"
 ---
 # <a name="range-offsetrange"></a>Range:OffsetRange
 
@@ -103,3 +103,4 @@ Content-length: 169
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,14 +3,14 @@ title: 列出 userExperienceAnalyticsAppHealthApplicationPerformances
 description: 列出 userExperienceAnalyticsAppHealthApplicationPerformance 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5eee707d9d21b7f872f05d6ab91fbbfab175097a
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: e11fdd2b2635dc2f042b7355e64f5c804e3a0b42
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790259"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017582"
 ---
 # <a name="list-userexperienceanalyticsapphealthapplicationperformances"></a>列出 userExperienceAnalyticsAppHealthApplicationPerformances
 
@@ -65,31 +65,31 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsApp
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 737
+Content-Length: 607
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthApplicationPerformance",
       "id": "c7962a87-2a87-c796-872a-96c7872a96c7",
-      "appName": "App Name value",
-      "appFriendlyName": "App Friendly Name value",
-      "appPublisher": "App Publisher value",
-      "activeDevices": 13,
-      "totalAppUsageDuration": 5,
-      "totalAppCrashes": 15,
-      "totalAppHangs": 13,
-      "meanTimeToFailure": 1,
+      "appHangCount": 12,
       "appHealthScore": 4.666666666666667,
       "appHealthStatus": "App Health Status value",
       "allOrgsHealthScore": 6.0,
-      "allOrgsMeanTimeToFailure": 8,
-      "tenantId": "Tenant Id value",
-      "memaTimeGenerated": "Mema Time Generated value"
+      "activeDeviceCount": 1,
+      "appName": "App Name value",
+      "appDisplayName": "App Display Name value",
+      "appPublisher": "App Publisher value",
+      "appUsageDuration": 0,
+      "appCrashCount": 13,
+      "meanTimeToFailureInMinutes": 10
     }
   ]
 }
 ```
+
+
+
 
 
 

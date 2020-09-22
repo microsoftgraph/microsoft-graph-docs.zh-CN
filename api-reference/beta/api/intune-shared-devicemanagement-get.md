@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 59d83dbe212c924d74308c6f9c47ce4bfdd864b1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8b7e739a1e3fd2929ba2f133199bd5872c26dd25
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43390236"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044807"
 ---
 # <a name="get-devicemanagement"></a>获取 deviceManagement
 
@@ -26,50 +26,50 @@ ms.locfileid: "43390236"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限&nbsp;类型&nbsp;（按&nbsp;工作流） | 权限（从最高特权到最低特权） |
+| &nbsp; &nbsp; 工作流)  (的权限类型 &nbsp; | 权限（从最高特权到最低特权） |
 |:---|:---|
 | 委派（工作或学校帐户） | |
-| &nbsp;&nbsp; **适用于工作的 Android** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp;**适用于工作的 Android** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
 | &nbsp; &nbsp; **审核** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
 | &nbsp; &nbsp; **公司条款** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
-| &nbsp;&nbsp; **设备意向** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
-| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
-| &nbsp;&nbsp; **电子 SIM** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
-| &nbsp;&nbsp; **注册** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
-| &nbsp;&nbsp; **防护** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
-| &nbsp;&nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp;**设备意向** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp;**电子 SIM** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp;**注册** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp;**防护** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
+| &nbsp; &nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
-| &nbsp;&nbsp; **策略集** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp;**策略集** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **RBAC** | DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All |
-| &nbsp;&nbsp; **远程访问** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
-| &nbsp;&nbsp; **远程协助** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
-| &nbsp;&nbsp; **软件更新** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
-| &nbsp;&nbsp; **电信费用管理** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
-| &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp;**远程访问** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp;**远程协助** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp;**软件更新** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp;**电信费用管理** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp; &nbsp; **故障排除** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 | &nbsp; &nbsp; **Windows 信息保护** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
 | 委派（个人 Microsoft 帐户） | 不支持。|
 | 应用程序 | |
-| &nbsp;&nbsp; **适用于工作的 Android** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp;**适用于工作的 Android** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
 | &nbsp; &nbsp; **审核** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
 | &nbsp; &nbsp; **公司条款** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
-| &nbsp;&nbsp; **设备意向** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
-| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
-| &nbsp;&nbsp; **电子 SIM** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
-| &nbsp;&nbsp; **注册** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
-| &nbsp;&nbsp; **防护** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
-| &nbsp;&nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp;**设备意向** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp;**电子 SIM** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp;**注册** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp;**防护** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
+| &nbsp; &nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
-| &nbsp;&nbsp; **策略集** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp;**策略集** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **RBAC** | DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All |
-| &nbsp;&nbsp; **远程访问** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
-| &nbsp;&nbsp; **远程协助** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
-| &nbsp;&nbsp; **软件更新** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
-| &nbsp;&nbsp; **电信费用管理** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
-| &nbsp; &nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp;**远程访问** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp;**远程协助** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp;**软件更新** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp;**电信费用管理** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp; &nbsp; **故障排除** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 | &nbsp; &nbsp; **Windows 信息保护** | DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -161,6 +161,9 @@ Content-Length: 918
   }
 }
 ```
+
+
+
 
 
 

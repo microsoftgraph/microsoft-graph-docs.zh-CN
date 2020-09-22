@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 79037b8c941989ddba273a34184d00607758fafb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: da940e4267fe0964b179aebe6431d1836a4bdd25
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473907"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044814"
 ---
 # <a name="reportroot-getcredentialusagesummary"></a>reportRoot： getCredentialUsageSummary
 
@@ -44,7 +44,7 @@ GET /reports/getCredentialUsageSummary
 
 | 参数 | 类型 | 说明 |
 |:--------- |:---- |:----------- |
-| period | String | 指定需要使用情况数据的时间段。 例如：`/reports/getCredentialUsageSummary(period='D30')`。 支持的期间`D1`： `D7`、和`D30`。 Period 不区分大小写。 |
+| period | String | 指定需要使用情况数据的时间段。 例如：`/reports/getCredentialUsageSummary(period='D30')`。 支持的期间： `D1` 、 `D7` 和 `D30` 。 Period 不区分大小写。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
@@ -52,7 +52,7 @@ GET /reports/getCredentialUsageSummary
 
 | 属性 | 说明和示例 |
 |:---- |:----------- |
-| 功能 | 指定所需的使用率数据的类型（注册与重置）。 例如：`/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`。 支持的筛选器`eq`运算符：。 |
+| 功能 | 指定 (注册与重置) 所需的使用率数据的类型。 例如：`/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`。 支持的筛选器运算符： `eq` 。 |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -67,7 +67,7 @@ GET /reports/getCredentialUsageSummary
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和新的[credentialUsageSummary](../resources/credentialusagesummary.md)集合对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [credentialUsageSummary](../resources/credentialusagesummary.md) 集合对象。
 
 ## <a name="examples"></a>示例
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/reports/getCredentialUsageSummary(period='D
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面介绍响应示例。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回的。
 
@@ -141,3 +141,5 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

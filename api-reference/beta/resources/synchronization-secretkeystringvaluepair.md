@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b2c5929b7ba00a12cf66cd3f013dbf31446aba19
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: abe0e071c94de399cf351aecea32b51ea9c09d51
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217582"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023868"
 ---
 # <a name="synchronizationsecretkeystringvaluepair-resource-type"></a>synchronizationSecretKeyStringValuePair 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "43217582"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|Key|字符串| 可能的值为`None`： `UserName`、 `Password`、 `SecretToken` `AppKey` `BaseAddress` `ClientIdentifier` `ValidateDomain` `TestReferences`、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、。 `ClientSecret` `SingleSignOnType` `Sandbox` `Url` `Domain` `ConsumerKey` `ConsumerSecret` `TokenKey` `TokenExpiration` `Oauth2AccessToken` `Oauth2AccessTokenCreationTime` `Oauth2RefreshToken` `SyncAll` `InstanceName` `Oauth2ClientId` `Oauth2ClientSecret` `CompanyId` `UpdateKeyOnSoftDelete` `SynchronizationSchedule` `SystemOfRecord` `SandboxName` `EnforceDomain` `SyncNotificationSettings` `Server` `PerformInboundEntitlementGrants` `HardDeletesEnabled` `SyncAgentCompatibilityKey` `SyncAgentADContainer`|
+|Key|String| 可能的值为：、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、 `None` `UserName` `Password` `SecretToken` `AppKey` `BaseAddress` `ClientIdentifier` `ClientSecret` `SingleSignOnType` `Sandbox` `Url` `Domain` `ConsumerKey` `ConsumerSecret` `TokenKey` `TokenExpiration` `Oauth2AccessToken` `Oauth2AccessTokenCreationTime` `Oauth2RefreshToken` `SyncAll` `InstanceName` `Oauth2ClientId` `Oauth2ClientSecret` `CompanyId` `UpdateKeyOnSoftDelete` `SynchronizationSchedule` `SystemOfRecord` `SandboxName` `EnforceDomain` `SyncNotificationSettings` `Server` `PerformInboundEntitlementGrants` `HardDeletesEnabled` `SyncAgentCompatibilityKey` `SyncAgentADContainer` `ValidateDomain` `TestReferences` 。|
 |value|String|密码的值。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -58,3 +58,5 @@ ms.locfileid: "43217582"
   "suppressions": []
 }
 -->
+
+

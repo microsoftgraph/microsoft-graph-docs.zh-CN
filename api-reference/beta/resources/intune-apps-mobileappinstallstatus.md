@@ -3,14 +3,14 @@ title: mobileAppInstallStatus 资源类型
 description: 包含设备的移动应用程序安装状态的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2a77d00cf466f391c12749acef5f2a87cb1f21ce
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 92e833def6b1b3c27a416039a56e1d818baad72f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792567"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071127"
 ---
 # <a name="mobileappinstallstatus-resource-type"></a>mobileAppInstallStatus 资源类型
 
@@ -79,6 +79,9 @@ ms.locfileid: "46792567"
   "displayVersion": "String"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: ArvindHarinder1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 54f8271d3b11cce55cc3e7042ffcba84a330d798
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
-ms.translationtype: Auto
+ms.openlocfilehash: f1f7421e00fbf3f974039878e9250f07a2bcbd0b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45007151"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023833"
 ---
 # <a name="synchronizationjobsubject-resource-type"></a>synchronizationJobSubject 资源类型
 
@@ -41,3 +41,5 @@ ms.locfileid: "45007151"
   "objectTypeName": "String"
 }
 ```
+
+

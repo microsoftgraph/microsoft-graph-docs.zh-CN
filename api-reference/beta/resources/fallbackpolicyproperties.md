@@ -1,31 +1,31 @@
 ---
 title: fallbackPolicyProperties 资源类型
-description: '允许在 iOS 终结点上为高优先级原始通知指定回退策略，其中包含用于指定回退等待时间（延迟）和相应的视觉通知内容的附加属性。 '
+description: '允许在 iOS 终结点上为高优先级原始通知指定回退策略，使用其他属性指定回退等待时间 (延迟) 和相应的视觉通知内容。 '
 localization_priority: Normal
 author: merzink
 ms.prod: notifications
 doc_type: resourcePageType
-ms.openlocfilehash: 3922fc08bf30dde7daa7e01d1f810cb3e45d5d81
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ee32b40f71c2540bb06b8b4478d0f896aac40b85
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498537"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071206"
 ---
 # <a name="fallbackpolicyproperties-resource-type"></a>fallbackPolicyProperties 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-允许在 iOS 终结点上为高优先级原始通知指定回退策略，其中包含用于指定回退等待时间（延迟）和相应的视觉通知内容的附加属性。 
+允许在 iOS 终结点上为高优先级原始通知指定回退策略，使用其他属性指定回退等待时间 (延迟) 和相应的视觉通知内容。 
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| platformTypes | String 集合 | 指定开发人员想要对其启用原始 toast 通知回退的平台。 目前，如果指定了**fallbackPolicy** ，则**targetPolicy**必须包含`iOS`和可选的其他平台。 此外， **fallbackPolicy**是必需的，并且当前`iOS`仅支持 platformTypes 平台。 |
-| fallbackDelayInSeconds | Int32 | 此延迟表示将直接 toast 通知发送到不提取原始通知的每个用户 iOS 设备订阅之前传递的时间量（以秒为单位）。 该值必须介于60和600之间。 |
+| platformTypes | String 集合 | 指定开发人员想要对其启用原始 toast 通知回退的平台。 目前，如果指定了 **fallbackPolicy** ，则 **targetPolicy** 必须包含 `iOS` 和可选的其他平台。 此外，FallbackPolicy 是必需的，并且当前仅支持 **platformTypes** 平台 `iOS` 。 |
+| fallbackDelayInSeconds | Int32 | 此延迟表示在将直接 toast 通知发送到不提取原始通知的每个用户 iOS 设备订阅之前，将 (以秒为单位的时间) 的时间量。 该值必须介于60和600之间。 |
 | visualContent | [visualProperties](visualproperties.md)|在 iOS 上回退启动的原始到可视用户通知的可视内容。 |
  
 
@@ -60,3 +60,4 @@ ms.locfileid: "42498537"
   "section": "documentation",
   "tocPath": ""
 }-->
+

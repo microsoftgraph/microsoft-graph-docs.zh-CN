@@ -5,14 +5,14 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 395b3d71e4b04078e972e114f9854b17ed7ada19
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 4bcd823339b6f7c4c5ca0745d523ed27d820a67a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383656"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064750"
 ---
-# <a name="get-a-delegated-permission-grant-oauth2permissiongrant"></a>获取委派权限授予（oAuth2PermissionGrant）
+# <a name="get-a-delegated-permission-grant-oauth2permissiongrant"></a>获取委派权限授予 (oAuth2PermissionGrant) 
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "44383656"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索单个[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)的属性。
+检索单个 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)的属性。
 
 **OAuth2PermissionGrant**表示已授予客户端应用程序代表登录用户访问 API 的委派权限。
 
@@ -46,7 +46,7 @@ GET /oauth2PermissionGrants/{id}
 
 此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
@@ -58,7 +58,7 @@ GET /oauth2PermissionGrants/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -132,3 +132,5 @@ Content-Length: 200
   ]
 }
 -->
+
+

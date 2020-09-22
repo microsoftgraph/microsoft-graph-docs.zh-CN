@@ -3,20 +3,20 @@ title: 创建 resourceOperation
 description: 创建新的 resourceOperation 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a66d2ed153a18f62f449a352966f6bec07079d6
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: e652419b28bb1ab7703b12a75f651fb76b49d301
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43421147"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064792"
 ---
 # <a name="create-resourceoperation"></a>创建 resourceOperation
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "43421147"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementRBAC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementRBAC.ReadWrite.All|
+|应用程序|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -53,7 +53,7 @@ POST /deviceManagement/resourceOperations
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|资源操作的键。 只读，且自动生成。|
+|id|String|资源操作的键。 只读，且自动生成。|
 |resource|String|此操作所属的资源类别。|
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
@@ -101,6 +101,9 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
+
+
+
 
 
 

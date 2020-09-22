@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 52034dd9d25c5decf8feb4cd3af28ea95224adcb
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 5c514d6a48ffafc13a118b9471fb94be9ffc0e11
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123825"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071205"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>featureRolloutPolicy 资源类型
 
@@ -30,10 +30,10 @@ ms.locfileid: "45123825"
 
 ### <a name="passthrough-authentication"></a>传递身份验证
 
-* 确定运行 Windows Server 2012 R2 或更高版本的服务器（要在其中运行[PassthroughAuthentication](/azure/active-directory/hybrid/how-to-connect-pta)代理）的服务器。确保服务器已加入域，可以使用 Active Directory 对所选用户进行身份验证，并且可以在出站端口/Url 上与 Azure AD 进行通信。
-* [下载](https://aka.ms/getauthagent)& 在服务器上安装 MICROSOFT Azure AD Connect 身份验证代理。
+* 确定运行 Windows Server 2012 R2 或更高版本的服务器（要在其中运行 [PassthroughAuthentication](/azure/active-directory/hybrid/how-to-connect-pta) 代理）的服务器。确保服务器已加入域，可以使用 Active Directory 对所选用户进行身份验证，并且可以在出站端口/Url 上与 Azure AD 进行通信。
+* [下载](https://aka.ms/getauthagent) & 在服务器上安装 MICROSOFT Azure AD Connect 身份验证代理。
 * 若要启用高可用性，请在其他服务器上安装其他身份验证代理[，如下所述。](/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability)
-* 确保您已正确配置了[智能锁定](/azure/active-directory/authentication/howto-password-smart-lockout)设置。 这是为了确保用户的本地 Active Directory 帐户不会被不良参与者锁定。
+* 确保您已正确配置了 [智能锁定](/azure/active-directory/authentication/howto-password-smart-lockout) 设置。 这是为了确保用户的本地 Active Directory 帐户不会被不良参与者锁定。
 
 ### <a name="seamlesssso"></a>SeamlessSso
 
@@ -66,7 +66,7 @@ ms.locfileid: "45123825"
 |说明|String|此功能展示策略的说明。|
 |displayName|String|此功能展示策略的显示名称。|
 |功能|stagedFeatureName| 可取值为：`passthroughAuthentication`、`seamlessSso`、`passwordHashSync`、`unknownFutureValue`。|
-|id|字符串| 只读。|
+|id|String| 只读。|
 |isAppliedToOrganization|Boolean|指示是否应将此功能展示策略应用于整个组织。|
 |isEnabled|Boolean|指示是否启用功能展示。|
 
@@ -110,3 +110,5 @@ ms.locfileid: "45123825"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

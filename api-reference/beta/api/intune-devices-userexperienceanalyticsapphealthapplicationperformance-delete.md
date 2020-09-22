@@ -3,14 +3,14 @@ title: 删除 userExperienceAnalyticsAppHealthApplicationPerformance
 description: 删除 userExperienceAnalyticsAppHealthApplicationPerformance。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0a1685233e3b6990fcb6d77c8bbbd3eb2a2f9ed0
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 9ff10b4e85f19ee06b45b2174acfc287aaaf5fd9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790265"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017617"
 ---
 # <a name="delete-userexperienceanalyticsapphealthapplicationperformance"></a>删除 userExperienceAnalyticsAppHealthApplicationPerformance
 
@@ -65,6 +65,9 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalytics
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

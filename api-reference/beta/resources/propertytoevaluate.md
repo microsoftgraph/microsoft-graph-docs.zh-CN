@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7f6c08adc311c343699667ea3179b0b2d09a5a34
-ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
+ms.openlocfilehash: c03ef7cdbb5e40ab77e0b3ad68668263db643568
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44272846"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078193"
 ---
 # <a name="propertytoevaluate-resource-type"></a>propertyToEvaluate 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "44272846"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | Description |
+| 属性 | 类型 | 说明 |
 |:-------- |:---- |:----------- |
 | propertyName | String | 提供属性名称。 |
 | propertyValue | String | 提供属性值。 |
@@ -56,3 +56,4 @@ ms.locfileid: "44272846"
   "section": "documentation",
   "tocPath": ""
 }-->
+

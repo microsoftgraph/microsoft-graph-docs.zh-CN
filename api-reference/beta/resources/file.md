@@ -6,12 +6,12 @@ title: 文件
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: aaf662575552a37d28e9a429297f8f58f825b6e6
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: abffb60e4ea82f279ed1605659e5d0f969ed42fc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291158"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071190"
 ---
 # <a name="file-resource-type"></a>File 资源类型
 
@@ -61,3 +61,5 @@ ms.locfileid: "44291158"
   "suppressions": []
 }
 -->
+
+

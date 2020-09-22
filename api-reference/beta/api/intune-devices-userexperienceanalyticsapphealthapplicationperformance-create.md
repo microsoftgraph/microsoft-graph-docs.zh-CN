@@ -3,14 +3,14 @@ title: 创建 userExperienceAnalyticsAppHealthApplicationPerformance
 description: 创建新的 userExperienceAnalyticsAppHealthApplicationPerformance 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a25af7c70c5988ad040a827f37fdec92c497223f
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: aa6818622e9ea0f11c480d7045f6e440c706abca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790266"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017596"
 ---
 # <a name="create-userexperienceanalyticsapphealthapplicationperformance"></a>创建 userExperienceAnalyticsAppHealthApplicationPerformance
 
@@ -54,20 +54,17 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|User experience analytics 应用程序性能对象的唯一标识符。|
-|appName|String|应用程序名。|
-|appFriendlyName|String|应用程序的友好名称。|
-|appPublisher|String|应用程序的发布者。|
-|activeDevices|Int32|应用程序处于活动状态的设备的数量。 有效值-2147483648 到2147483647|
-|totalAppUsageDuration|Int32|应用程序的总使用时间，以分钟为单位。 有效值-2147483648 到2147483647|
-|totalAppCrashes|Int32|应用程序的崩溃次数。 有效值-2147483648 到2147483647|
-|totalAppHangs|Int32|应用程序的挂起次数。 有效值-2147483648 到2147483647|
-|meanTimeToFailure|Int32|应用在几分钟内失败的平均时间。 有效值-2147483648 到2147483647|
+|appHangCount|Int32|应用程序的挂起次数。 有效值-2147483648 到2147483647|
 |appHealthScore|双精度|应用程序的运行状况分数。 有效值-1.79769313486232 E + 308 到 1.79769313486232 E + 308|
 |appHealthStatus|String|应用程序的整体运行状况状态。|
 |allOrgsHealthScore|双精度|应用程序在所有组织中的中间运行状况分数。 有效值-1.79769313486232 E + 308 到 1.79769313486232 E + 308|
-|allOrgsMeanTimeToFailure|Int32|在整个应用程序的所有 emc 中失败的中间平均时间（分钟）。 有效值-2147483648 到2147483647|
-|tenantId|String|与此应用程序对象关联的租户的 id。|
-|memaTimeGenerated|String|在 MEMA 中执行聚合时的时间。|
+|activeDeviceCount|Int32|应用程序处于活动状态的设备的数量。 有效值-2147483648 到2147483647|
+|appName|String|应用程序名。|
+|appDisplayName|String|应用程序的友好名称。|
+|appPublisher|String|应用程序的发布者。|
+|appUsageDuration|Int32|应用程序的总使用时间，以分钟为单位。 有效值-2147483648 到2147483647|
+|appCrashCount|Int32|应用程序的崩溃次数。 有效值-2147483648 到2147483647|
+|meanTimeToFailureInMinutes|Int32|应用在几分钟内失败的平均时间。 有效值-2147483648 到2147483647|
 
 
 
@@ -81,24 +78,21 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance
 Content-type: application/json
-Content-length: 591
+Content-length: 473
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthApplicationPerformance",
-  "appName": "App Name value",
-  "appFriendlyName": "App Friendly Name value",
-  "appPublisher": "App Publisher value",
-  "activeDevices": 13,
-  "totalAppUsageDuration": 5,
-  "totalAppCrashes": 15,
-  "totalAppHangs": 13,
-  "meanTimeToFailure": 1,
+  "appHangCount": 12,
   "appHealthScore": 4.666666666666667,
   "appHealthStatus": "App Health Status value",
   "allOrgsHealthScore": 6.0,
-  "allOrgsMeanTimeToFailure": 8,
-  "tenantId": "Tenant Id value",
-  "memaTimeGenerated": "Mema Time Generated value"
+  "activeDeviceCount": 1,
+  "appName": "App Name value",
+  "appDisplayName": "App Display Name value",
+  "appPublisher": "App Publisher value",
+  "appUsageDuration": 0,
+  "appCrashCount": 13,
+  "meanTimeToFailureInMinutes": 10
 }
 ```
 
@@ -107,27 +101,27 @@ Content-length: 591
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 640
+Content-Length: 522
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthApplicationPerformance",
   "id": "c7962a87-2a87-c796-872a-96c7872a96c7",
-  "appName": "App Name value",
-  "appFriendlyName": "App Friendly Name value",
-  "appPublisher": "App Publisher value",
-  "activeDevices": 13,
-  "totalAppUsageDuration": 5,
-  "totalAppCrashes": 15,
-  "totalAppHangs": 13,
-  "meanTimeToFailure": 1,
+  "appHangCount": 12,
   "appHealthScore": 4.666666666666667,
   "appHealthStatus": "App Health Status value",
   "allOrgsHealthScore": 6.0,
-  "allOrgsMeanTimeToFailure": 8,
-  "tenantId": "Tenant Id value",
-  "memaTimeGenerated": "Mema Time Generated value"
+  "activeDeviceCount": 1,
+  "appName": "App Name value",
+  "appDisplayName": "App Display Name value",
+  "appPublisher": "App Publisher value",
+  "appUsageDuration": 0,
+  "appCrashCount": 13,
+  "meanTimeToFailureInMinutes": 10
 }
 ```
+
+
+
 
 
 

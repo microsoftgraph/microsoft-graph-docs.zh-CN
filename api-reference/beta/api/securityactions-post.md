@@ -5,20 +5,20 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 3ea1d95e1ff9380919d3d4afd2877cab2e370eae
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 098348a8bd8793765d5fa9dfb7bd8ba7502c7eda
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453546"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044765"
 ---
 # <a name="create-securityaction"></a>创建 securityAction
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[securityAction](../resources/securityaction.md)对象。
+创建新的 [securityAction](../resources/securityaction.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -46,11 +46,11 @@ POST /security/securityActions
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[securityAction](../resources/securityaction.md)对象的 JSON 表示形式。
+在请求正文中，提供 [securityAction](../resources/securityaction.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`201 Created`响应正文中返回响应代码和[securityAction](../resources/securityaction.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [securityAction](../resources/securityaction.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -100,7 +100,7 @@ Content-type: application/json
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面介绍响应示例。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
@@ -149,3 +149,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+
