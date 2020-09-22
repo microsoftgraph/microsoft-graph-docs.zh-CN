@@ -5,73 +5,73 @@ localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 970edd0479798fc07e505476b24796b890221396
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb7f68b832b55f177791647de7a973b588c9a4a0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440890"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987480"
 ---
-# <a name="update-calendarpermission"></a><span data-ttu-id="8588e-103">更新 calendarPermission</span><span class="sxs-lookup"><span data-stu-id="8588e-103">Update calendarPermission</span></span>
+# <a name="update-calendarpermission"></a><span data-ttu-id="24b6e-103">更新 calendarPermission</span><span class="sxs-lookup"><span data-stu-id="24b6e-103">Update calendarPermission</span></span>
 
-<span data-ttu-id="8588e-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="8588e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="24b6e-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="24b6e-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="8588e-105">通过日历的相应[calendarPermission](../resources/calendarpermission.md)对象更新分配给现有 sharee 或代理的权限。</span><span class="sxs-lookup"><span data-stu-id="8588e-105">Update the permissions assigned to an existing sharee or delegate, through the corresponding [calendarPermission](../resources/calendarpermission.md) object for a calendar.</span></span>
+<span data-ttu-id="24b6e-105">通过日历的相应 [calendarPermission](../resources/calendarpermission.md) 对象更新分配给现有 sharee 或代理的权限。</span><span class="sxs-lookup"><span data-stu-id="24b6e-105">Update the permissions assigned to an existing sharee or delegate, through the corresponding [calendarPermission](../resources/calendarpermission.md) object for a calendar.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8588e-106">权限</span><span class="sxs-lookup"><span data-stu-id="8588e-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="24b6e-106">权限</span><span class="sxs-lookup"><span data-stu-id="24b6e-106">Permissions</span></span>
 
-<span data-ttu-id="8588e-107">根据事件所处日历类型和所请求的权限类型（委派型或应用程序），需要下列某一权限来调用此 API。</span><span class="sxs-lookup"><span data-stu-id="8588e-107">Depending on the type of calendar that the event is in and the permission type (delegated or application) requested, one of the following permissions is required to call this API.</span></span> <span data-ttu-id="8588e-108">要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8588e-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="24b6e-107">根据事件所处日历类型和所请求的权限类型（委派型或应用程序），需要下列某一权限来调用此 API。</span><span class="sxs-lookup"><span data-stu-id="24b6e-107">Depending on the type of calendar that the event is in and the permission type (delegated or application) requested, one of the following permissions is required to call this API.</span></span> <span data-ttu-id="24b6e-108">要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="24b6e-108">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="8588e-109">日历</span><span class="sxs-lookup"><span data-stu-id="8588e-109">Calendar</span></span> | <span data-ttu-id="8588e-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8588e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="8588e-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8588e-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8588e-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="8588e-112">Application</span></span> |
+| <span data-ttu-id="24b6e-109">日历</span><span class="sxs-lookup"><span data-stu-id="24b6e-109">Calendar</span></span> | <span data-ttu-id="24b6e-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="24b6e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="24b6e-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="24b6e-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="24b6e-112">应用程序</span><span class="sxs-lookup"><span data-stu-id="24b6e-112">Application</span></span> |
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="8588e-113">用户日历</span><span class="sxs-lookup"><span data-stu-id="8588e-113">user calendar</span></span> | <span data-ttu-id="8588e-114">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8588e-114">Calendars.ReadWrite</span></span> | <span data-ttu-id="8588e-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8588e-115">Calendars.ReadWrite</span></span> | <span data-ttu-id="8588e-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8588e-116">Calendars.ReadWrite</span></span> |
-| <span data-ttu-id="8588e-117">组日历</span><span class="sxs-lookup"><span data-stu-id="8588e-117">group calendar</span></span> | <span data-ttu-id="8588e-118">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8588e-118">Group.ReadWrite.All</span></span> | <span data-ttu-id="8588e-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="8588e-119">Not supported.</span></span> | <span data-ttu-id="8588e-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="8588e-120">Not supported.</span></span> |
+| <span data-ttu-id="24b6e-113">用户日历</span><span class="sxs-lookup"><span data-stu-id="24b6e-113">user calendar</span></span> | <span data-ttu-id="24b6e-114">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="24b6e-114">Calendars.ReadWrite</span></span> | <span data-ttu-id="24b6e-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="24b6e-115">Calendars.ReadWrite</span></span> | <span data-ttu-id="24b6e-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="24b6e-116">Calendars.ReadWrite</span></span> |
+| <span data-ttu-id="24b6e-117">组日历</span><span class="sxs-lookup"><span data-stu-id="24b6e-117">group calendar</span></span> | <span data-ttu-id="24b6e-118">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="24b6e-118">Group.ReadWrite.All</span></span> | <span data-ttu-id="24b6e-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="24b6e-119">Not supported.</span></span> | <span data-ttu-id="24b6e-120">不支持。</span><span class="sxs-lookup"><span data-stu-id="24b6e-120">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8588e-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8588e-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="24b6e-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="24b6e-121">HTTP request</span></span>
 
-<span data-ttu-id="8588e-122">更新用户日历的指定权限：</span><span class="sxs-lookup"><span data-stu-id="8588e-122">Update the specified permissions of a user's calendar:</span></span>
+<span data-ttu-id="24b6e-122">更新用户日历的指定权限：</span><span class="sxs-lookup"><span data-stu-id="24b6e-122">Update the specified permissions of a user's calendar:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/{id}/calendar/calendarPermissions/{id}
 ```
 
-<span data-ttu-id="8588e-123">更新组日历的指定权限：</span><span class="sxs-lookup"><span data-stu-id="8588e-123">Update the specified permissions of a group calendar:</span></span>
+<span data-ttu-id="24b6e-123">更新组日历的指定权限：</span><span class="sxs-lookup"><span data-stu-id="24b6e-123">Update the specified permissions of a group calendar:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/{id}/calendar/calendarPermissions/{id}
 ```
 
-<span data-ttu-id="8588e-124">更新包含已标识事件的用户日历的指定权限：</span><span class="sxs-lookup"><span data-stu-id="8588e-124">Update the specified permissions of the user calendar that contains the identified event:</span></span>
+<span data-ttu-id="24b6e-124">更新包含已标识事件的用户日历的指定权限：</span><span class="sxs-lookup"><span data-stu-id="24b6e-124">Update the specified permissions of the user calendar that contains the identified event:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8588e-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="8588e-125">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="24b6e-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="24b6e-125">Request headers</span></span>
 
-| <span data-ttu-id="8588e-126">名称</span><span class="sxs-lookup"><span data-stu-id="8588e-126">Name</span></span>       | <span data-ttu-id="8588e-127">说明</span><span class="sxs-lookup"><span data-stu-id="8588e-127">Description</span></span>|
+| <span data-ttu-id="24b6e-126">名称</span><span class="sxs-lookup"><span data-stu-id="24b6e-126">Name</span></span>       | <span data-ttu-id="24b6e-127">说明</span><span class="sxs-lookup"><span data-stu-id="24b6e-127">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="8588e-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="8588e-128">Authorization</span></span> | <span data-ttu-id="8588e-129">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="8588e-129">Bearer {token}</span></span> |
+| <span data-ttu-id="24b6e-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="24b6e-128">Authorization</span></span> | <span data-ttu-id="24b6e-129">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="24b6e-129">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8588e-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="8588e-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="24b6e-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="24b6e-130">Request body</span></span>
 
-<span data-ttu-id="8588e-131">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="8588e-131">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="8588e-132">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="8588e-132">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="8588e-133">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="8588e-133">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="24b6e-131">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="24b6e-131">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="24b6e-132">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="24b6e-132">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="24b6e-133">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="24b6e-133">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="8588e-134">属性</span><span class="sxs-lookup"><span data-stu-id="8588e-134">Property</span></span>     | <span data-ttu-id="8588e-135">类型</span><span class="sxs-lookup"><span data-stu-id="8588e-135">Type</span></span>        | <span data-ttu-id="8588e-136">说明</span><span class="sxs-lookup"><span data-stu-id="8588e-136">Description</span></span> |
+| <span data-ttu-id="24b6e-134">属性</span><span class="sxs-lookup"><span data-stu-id="24b6e-134">Property</span></span>     | <span data-ttu-id="24b6e-135">类型</span><span class="sxs-lookup"><span data-stu-id="24b6e-135">Type</span></span>        | <span data-ttu-id="24b6e-136">说明</span><span class="sxs-lookup"><span data-stu-id="24b6e-136">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="8588e-137">role</span><span class="sxs-lookup"><span data-stu-id="8588e-137">role</span></span>|[<span data-ttu-id="8588e-138">calendarRoleType</span><span class="sxs-lookup"><span data-stu-id="8588e-138">calendarRoleType</span></span>](../resources/calendarpermission.md#calendarroletype-values)| <span data-ttu-id="8588e-139">为日历 sharee 或代理人更改的权限级别。</span><span class="sxs-lookup"><span data-stu-id="8588e-139">The permission level to change to for the calendar sharee or delegate.</span></span> |
+|<span data-ttu-id="24b6e-137">role</span><span class="sxs-lookup"><span data-stu-id="24b6e-137">role</span></span>|[<span data-ttu-id="24b6e-138">calendarRoleType</span><span class="sxs-lookup"><span data-stu-id="24b6e-138">calendarRoleType</span></span>](../resources/calendarpermission.md#calendarroletype-values)| <span data-ttu-id="24b6e-139">为日历 sharee 或代理人更改的权限级别。</span><span class="sxs-lookup"><span data-stu-id="24b6e-139">The permission level to change to for the calendar sharee or delegate.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="8588e-140">响应</span><span class="sxs-lookup"><span data-stu-id="8588e-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="24b6e-140">响应</span><span class="sxs-lookup"><span data-stu-id="24b6e-140">Response</span></span>
 
-<span data-ttu-id="8588e-141">如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[calendarPermission](../resources/calendarpermission.md)对象。</span><span class="sxs-lookup"><span data-stu-id="8588e-141">If successful, this method returns a `200 OK` response code and an updated [calendarPermission](../resources/calendarpermission.md) object in the response body.</span></span>
+<span data-ttu-id="24b6e-141">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [calendarPermission](../resources/calendarpermission.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="24b6e-141">If successful, this method returns a `200 OK` response code and an updated [calendarPermission](../resources/calendarpermission.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="8588e-142">示例</span><span class="sxs-lookup"><span data-stu-id="8588e-142">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="24b6e-142">示例</span><span class="sxs-lookup"><span data-stu-id="24b6e-142">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="8588e-143">请求</span><span class="sxs-lookup"><span data-stu-id="8588e-143">Request</span></span>
+### <a name="request"></a><span data-ttu-id="24b6e-143">请求</span><span class="sxs-lookup"><span data-stu-id="24b6e-143">Request</span></span>
 
-<span data-ttu-id="8588e-144">下面的示例将 sharee、Adele、的权限级别更改为`write`。</span><span class="sxs-lookup"><span data-stu-id="8588e-144">The following example changes the permission level of the sharee, Adele, to `write`.</span></span>
+<span data-ttu-id="24b6e-144">下面的示例将 sharee、Adele、的权限级别更改为 `write` 。</span><span class="sxs-lookup"><span data-stu-id="24b6e-144">The following example changes the permission level of the sharee, Adele, to `write`.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="8588e-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="8588e-145">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="24b6e-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="24b6e-145">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["RGVmYXVsdA=="],
@@ -86,26 +86,26 @@ Content-type: application/json
   "role": "write"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="8588e-146">C#</span><span class="sxs-lookup"><span data-stu-id="8588e-146">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="24b6e-146">C#</span><span class="sxs-lookup"><span data-stu-id="24b6e-146">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-calendarpermission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="8588e-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8588e-147">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="24b6e-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="24b6e-147">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-calendarpermission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="8588e-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8588e-148">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="24b6e-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="24b6e-148">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-calendarpermission-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="8588e-149">响应</span><span class="sxs-lookup"><span data-stu-id="8588e-149">Response</span></span>
+### <a name="response"></a><span data-ttu-id="24b6e-149">响应</span><span class="sxs-lookup"><span data-stu-id="24b6e-149">Response</span></span>
 
-<span data-ttu-id="8588e-150">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="8588e-150">The following is an example of the response.</span></span>
+<span data-ttu-id="24b6e-150">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="24b6e-150">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="8588e-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="8588e-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="24b6e-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="24b6e-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -145,3 +145,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

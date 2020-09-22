@@ -5,37 +5,37 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6c576dcc355330e380b92445a09e9adaa82165fa
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: a3b71723aaa83cd9b70e8f43e32eba2654dc240c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183818"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987195"
 ---
-# <a name="get-callrecord"></a><span data-ttu-id="7f395-103">获取 callRecord</span><span class="sxs-lookup"><span data-stu-id="7f395-103">Get callRecord</span></span>
+# <a name="get-callrecord"></a><span data-ttu-id="35d40-103">获取 callRecord</span><span class="sxs-lookup"><span data-stu-id="35d40-103">Get callRecord</span></span>
 
-<span data-ttu-id="7f395-104">命名空间：microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="7f395-104">Namespace: microsoft.graph.callRecords</span></span>
+<span data-ttu-id="35d40-104">命名空间：microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="35d40-104">Namespace: microsoft.graph.callRecords</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7f395-105">检索[callRecord](../resources/callrecords-callrecord.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="7f395-105">Retrieve the properties and relationships of a [callRecord](../resources/callrecords-callrecord.md) object.</span></span>
+<span data-ttu-id="35d40-105">检索 [callRecord](../resources/callrecords-callrecord.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="35d40-105">Retrieve the properties and relationships of a [callRecord](../resources/callrecords-callrecord.md) object.</span></span>
 
-<span data-ttu-id="7f395-106">有两种方法可以获取**callRecord**的**id** ：</span><span class="sxs-lookup"><span data-stu-id="7f395-106">There are two ways to get the **id** of a **callRecord**:</span></span>
+<span data-ttu-id="35d40-106">有两种方法可以获取**callRecord**的**id** ：</span><span class="sxs-lookup"><span data-stu-id="35d40-106">There are two ways to get the **id** of a **callRecord**:</span></span>
 
-* <span data-ttu-id="7f395-107">订阅对终结点的[更改通知](/graph/api/resources/webhooks?view=graph-rest-beta) `/communications/callRecords` 。</span><span class="sxs-lookup"><span data-stu-id="7f395-107">Subscribe to [change notifications](/graph/api/resources/webhooks?view=graph-rest-beta) to the `/communications/callRecords` endpoint.</span></span>
-* <span data-ttu-id="7f395-108">使用[调用](../resources/call.md)的**callChainId**属性。</span><span class="sxs-lookup"><span data-stu-id="7f395-108">Use the **callChainId** property of a [call](../resources/call.md).</span></span> <span data-ttu-id="7f395-109">只有在关联的呼叫完成后，呼叫记录才可用。</span><span class="sxs-lookup"><span data-stu-id="7f395-109">The call record is available only after the associated call is completed.</span></span>
+* <span data-ttu-id="35d40-107">订阅对终结点的 [更改通知](/graph/api/resources/webhooks?view=graph-rest-beta) `/communications/callRecords` 。</span><span class="sxs-lookup"><span data-stu-id="35d40-107">Subscribe to [change notifications](/graph/api/resources/webhooks?view=graph-rest-beta) to the `/communications/callRecords` endpoint.</span></span>
+* <span data-ttu-id="35d40-108">使用[调用](../resources/call.md)的**callChainId**属性。</span><span class="sxs-lookup"><span data-stu-id="35d40-108">Use the **callChainId** property of a [call](../resources/call.md).</span></span> <span data-ttu-id="35d40-109">只有在关联的呼叫完成后，呼叫记录才可用。</span><span class="sxs-lookup"><span data-stu-id="35d40-109">The call record is available only after the associated call is completed.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7f395-110">权限</span><span class="sxs-lookup"><span data-stu-id="7f395-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="35d40-110">权限</span><span class="sxs-lookup"><span data-stu-id="35d40-110">Permissions</span></span>
 
-<span data-ttu-id="7f395-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7f395-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="35d40-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="35d40-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="7f395-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="7f395-113">Permission type</span></span>                        | <span data-ttu-id="7f395-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7f395-114">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="35d40-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="35d40-113">Permission type</span></span>                        | <span data-ttu-id="35d40-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="35d40-114">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="7f395-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7f395-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="7f395-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="7f395-116">Not supported.</span></span> |
-| <span data-ttu-id="7f395-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7f395-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7f395-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="7f395-118">Not supported.</span></span> |
-| <span data-ttu-id="7f395-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="7f395-119">Application</span></span>                            | <span data-ttu-id="7f395-120">CallRecords.Read.All</span><span class="sxs-lookup"><span data-stu-id="7f395-120">CallRecords.Read.All</span></span> |
+| <span data-ttu-id="35d40-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="35d40-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="35d40-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="35d40-116">Not supported.</span></span> |
+| <span data-ttu-id="35d40-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="35d40-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="35d40-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="35d40-118">Not supported.</span></span> |
+| <span data-ttu-id="35d40-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="35d40-119">Application</span></span>                            | <span data-ttu-id="35d40-120">CallRecords.Read.All</span><span class="sxs-lookup"><span data-stu-id="35d40-120">CallRecords.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7f395-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7f395-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="35d40-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="35d40-121">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -43,31 +43,31 @@ ms.locfileid: "45183818"
 GET /communications/callRecords/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="7f395-122">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="7f395-122">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="35d40-122">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="35d40-122">Optional query parameters</span></span>
 
-<span data-ttu-id="7f395-123">此方法支持一些 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="7f395-123">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="7f395-124">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="7f395-124">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="35d40-123">此方法支持一些 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="35d40-123">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="35d40-124">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="35d40-124">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="7f395-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="7f395-125">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="35d40-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="35d40-125">Request headers</span></span>
 
-| <span data-ttu-id="7f395-126">名称</span><span class="sxs-lookup"><span data-stu-id="7f395-126">Name</span></span>      |<span data-ttu-id="7f395-127">说明</span><span class="sxs-lookup"><span data-stu-id="7f395-127">Description</span></span>|
+| <span data-ttu-id="35d40-126">名称</span><span class="sxs-lookup"><span data-stu-id="35d40-126">Name</span></span>      |<span data-ttu-id="35d40-127">说明</span><span class="sxs-lookup"><span data-stu-id="35d40-127">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="7f395-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="7f395-128">Authorization</span></span> | <span data-ttu-id="7f395-129">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="7f395-129">Bearer {token}</span></span> |
+| <span data-ttu-id="35d40-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="35d40-128">Authorization</span></span> | <span data-ttu-id="35d40-129">持有者 {token}</span><span class="sxs-lookup"><span data-stu-id="35d40-129">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7f395-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="7f395-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="35d40-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="35d40-130">Request body</span></span>
 
-<span data-ttu-id="7f395-131">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="7f395-131">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="35d40-131">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="35d40-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7f395-132">响应</span><span class="sxs-lookup"><span data-stu-id="7f395-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="35d40-132">响应</span><span class="sxs-lookup"><span data-stu-id="35d40-132">Response</span></span>
 
-<span data-ttu-id="7f395-133">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[callRecords callRecord](../resources/callrecords-callrecord.md)对象。</span><span class="sxs-lookup"><span data-stu-id="7f395-133">If successful, this method returns a `200 OK` response code and the requested [microsoft.graph.callRecords.callRecord](../resources/callrecords-callrecord.md) object in the response body.</span></span>
+<span data-ttu-id="35d40-133">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [callRecords callRecord](../resources/callrecords-callrecord.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="35d40-133">If successful, this method returns a `200 OK` response code and the requested [microsoft.graph.callRecords.callRecord](../resources/callrecords-callrecord.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="7f395-134">示例</span><span class="sxs-lookup"><span data-stu-id="7f395-134">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="35d40-134">示例</span><span class="sxs-lookup"><span data-stu-id="35d40-134">Examples</span></span>
 
-### <a name="example-1-get-basic-details"></a><span data-ttu-id="7f395-135">示例1：获取基本详细信息</span><span class="sxs-lookup"><span data-stu-id="7f395-135">Example 1: Get basic details</span></span>
+### <a name="example-1-get-basic-details"></a><span data-ttu-id="35d40-135">示例1：获取基本详细信息</span><span class="sxs-lookup"><span data-stu-id="35d40-135">Example 1: Get basic details</span></span>
 
-#### <a name="request"></a><span data-ttu-id="7f395-136">请求</span><span class="sxs-lookup"><span data-stu-id="7f395-136">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="35d40-136">请求</span><span class="sxs-lookup"><span data-stu-id="35d40-136">Request</span></span>
 
-<span data-ttu-id="7f395-137">下面的示例演示了从[callRecord](../resources/callrecords-callrecord.md)获取基本详细信息的请求。</span><span class="sxs-lookup"><span data-stu-id="7f395-137">The following is an example of the request to get the basic details from a [callRecord](../resources/callrecords-callrecord.md).</span></span>
+<span data-ttu-id="35d40-137">下面的示例演示了从 [callRecord](../resources/callrecords-callrecord.md)获取基本详细信息的请求。</span><span class="sxs-lookup"><span data-stu-id="35d40-137">The following is an example of the request to get the basic details from a [callRecord](../resources/callrecords-callrecord.md).</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -78,11 +78,11 @@ GET /communications/callRecords/{id}
 GET https://graph.microsoft.com/beta/communications/callRecords/{id}
 ```
 
-#### <a name="response"></a><span data-ttu-id="7f395-138">响应</span><span class="sxs-lookup"><span data-stu-id="7f395-138">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="35d40-138">响应</span><span class="sxs-lookup"><span data-stu-id="35d40-138">Response</span></span>
 
-<span data-ttu-id="7f395-139">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="7f395-139">The following is an example of the response.</span></span>
+<span data-ttu-id="35d40-139">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="35d40-139">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="7f395-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="7f395-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="35d40-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="35d40-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -131,11 +131,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-full-details"></a><span data-ttu-id="7f395-142">示例2：获取完整详细信息</span><span class="sxs-lookup"><span data-stu-id="7f395-142">Example 2: Get full details</span></span>
+### <a name="example-2-get-full-details"></a><span data-ttu-id="35d40-142">示例2：获取完整详细信息</span><span class="sxs-lookup"><span data-stu-id="35d40-142">Example 2: Get full details</span></span>
 
-#### <a name="request"></a><span data-ttu-id="7f395-143">请求</span><span class="sxs-lookup"><span data-stu-id="7f395-143">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="35d40-143">请求</span><span class="sxs-lookup"><span data-stu-id="35d40-143">Request</span></span>
 
-<span data-ttu-id="7f395-144">下面是从[callRecord](../resources/callrecords-callrecord.md)中获取完整详细信息（包括会话和分段组件）的请求示例。</span><span class="sxs-lookup"><span data-stu-id="7f395-144">The following is an example of the request to get the full details from a [callRecord](../resources/callrecords-callrecord.md), including session and segment components.</span></span>
+<span data-ttu-id="35d40-144">下面是从 [callRecord](../resources/callrecords-callrecord.md)中获取完整详细信息（包括会话和分段组件）的请求示例。</span><span class="sxs-lookup"><span data-stu-id="35d40-144">The following is an example of the request to get the full details from a [callRecord](../resources/callrecords-callrecord.md), including session and segment components.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -146,11 +146,11 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=sessions($expand=segments)
 ```
 
-#### <a name="response"></a><span data-ttu-id="7f395-145">响应</span><span class="sxs-lookup"><span data-stu-id="7f395-145">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="35d40-145">响应</span><span class="sxs-lookup"><span data-stu-id="35d40-145">Response</span></span>
 
-<span data-ttu-id="7f395-146">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="7f395-146">The following is an example of the response.</span></span> <span data-ttu-id="7f395-147">如果 "会话" 列表被截断， `sessions@odata.nextlink` 将提供一个值，以检索下一个会话页面。</span><span class="sxs-lookup"><span data-stu-id="7f395-147">If the sessions list is truncated, a `sessions@odata.nextlink` value will be provided to retrieve the next page of sessions.</span></span>
+<span data-ttu-id="35d40-146">下面介绍响应示例。</span><span class="sxs-lookup"><span data-stu-id="35d40-146">The following is an example of the response.</span></span> <span data-ttu-id="35d40-147">如果 "会话" 列表被截断， `sessions@odata.nextlink` 将提供一个值，以检索下一个会话页面。</span><span class="sxs-lookup"><span data-stu-id="35d40-147">If the sessions list is truncated, a `sessions@odata.nextlink` value will be provided to retrieve the next page of sessions.</span></span>
 
-> <span data-ttu-id="7f395-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="7f395-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="35d40-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="35d40-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -403,3 +403,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
