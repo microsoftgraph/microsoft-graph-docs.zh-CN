@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0e5a86cca24b5c804a5a1ba61d7d6bc514f4a6ea
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: d205f4affaf8676e8cc372bb8e9a4adc1c6eb622
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180970"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996156"
 ---
 # <a name="check-member-groups"></a>检查成员组
 
@@ -131,3 +131,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

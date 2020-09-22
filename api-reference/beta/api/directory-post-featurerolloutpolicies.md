@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0f6cd81e6a2299e3bfcb7c318d17b5f28fb01049
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: db0ebe7f7dead702696daf8f9503dcbbf85a49de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180991"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996169"
 ---
 # <a name="create-featurerolloutpolicy"></a>创建 featureRolloutPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "43180991"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[featureRolloutPolicy](../resources/featurerolloutpolicy.md)对象。
+创建新的 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -46,19 +46,19 @@ POST /directory/featureRolloutPolicies
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[featureRolloutPolicy](../resources/featurerolloutpolicy.md)对象的 JSON 表示形式。
+在请求正文中，提供 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象的 JSON 表示形式。
 
-下表显示创建[featureRolloutPolicy](../resources/featurerolloutpolicy.md)时所需的属性。
+下表显示创建 [featureRolloutPolicy](../resources/featurerolloutpolicy.md)时所需的属性。
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
 |displayName |string |此功能展示策略的显示名称。|
 |功能 |stagedFeatureName |将使用此策略进行推出的功能。|
-|isEnabled |string |指示是否启用功能展示。|
+|isEnabled |字符串 |指示是否启用功能展示。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[featureRolloutPolicy](../resources/featurerolloutpolicy.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -134,3 +134,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

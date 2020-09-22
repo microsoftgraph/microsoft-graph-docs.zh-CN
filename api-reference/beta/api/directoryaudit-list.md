@@ -1,16 +1,16 @@
 ---
 title: 列出 directoryAudits
-description: 介绍了 Microsoft Graph API 中的 directoryAudit 资源（实体）的列表方法（beta 版本）。
+description: 介绍了 Microsoft Graph API (beta 版本) 中的 directoryAudit 资源 (实体) 的列表方法。
 localization_priority: Normal
 author: SarahBar
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0b0219644987cd0069d179f6245b4dfc293d8d66
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: 6802c0d83dca98b62d4b773cab7032917c9aafdb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543322"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996157"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
@@ -18,7 +18,7 @@ ms.locfileid: "43543322"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 Azure Active Directory 生成的审核日志的列表。 这包括由 Azure AD 中的各种服务生成的审核日志，包括用户、应用、设备和组管理、特权标识管理（PIM）、访问查看、使用条款、标识保护、密码管理（SSPR 和管理员密码重置）和自助服务组管理。
+获取 Azure Active Directory 生成的审核日志的列表。 这包括由 Azure AD 中的各种服务生成的审核日志，包括用户、应用程序、设备和组管理、特权身份管理 (PIM) 、访问评论、使用条款、标识保护、密码管理 (SSPR 和管理员密码重置) 和自助服务组管理。
 
 ## <a name="permissions"></a>权限
 
@@ -41,7 +41,7 @@ GET /auditLogs/directoryAudits
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持以下 OData 查询参数来帮助自定义响应。 有关如何使用此参数的详细信息，请参阅[OData 查询参数](/graph/query_parameters)。
+此方法支持以下 OData 查询参数来帮助自定义响应。 有关如何使用此参数的详细信息，请参阅 [OData 查询参数](/graph/query_parameters)。
 
 |参数     |说明                            |示例|
 |:--------------------|----------------|------------------------------------------------------------------------|
@@ -182,3 +182,5 @@ Content-length: 271
   "suppressions": [
   ]
 }-->
+
+

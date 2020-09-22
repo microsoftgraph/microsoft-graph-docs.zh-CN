@@ -3,24 +3,24 @@ title: 删除 iosEduDeviceConfiguration
 description: 删除 iosEduDeviceConfiguration。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c3258690fb40e516a7479b4a829a1c26e28fa617
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e96f06b4b3f1d53dc0230264b8e000529b03d4a3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439240"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47995504"
 ---
 # <a name="delete-iosedudeviceconfiguration"></a>删除 iosEduDeviceConfiguration
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除[iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)。
+删除 [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -67,6 +67,9 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

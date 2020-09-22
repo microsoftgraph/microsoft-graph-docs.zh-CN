@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2a159eb82a57bebc4c91771039a1d1aef050efe8
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: 20c742c6a474917cace63576d715fc972b75057f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45224848"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996176"
 ---
 # <a name="create-registeredowner"></a>创建 registeredOwner
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+
