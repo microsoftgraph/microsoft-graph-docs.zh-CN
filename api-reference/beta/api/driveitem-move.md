@@ -6,36 +6,36 @@ title: 移动文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fd7e67e613d7f08cb02b820c5e2d48be28a0da64
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c463f0f8b8d19ab4c1a8b64a4a04ceb9b42b5887
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432479"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981945"
 ---
-# <a name="move-a-driveitem-to-a-new-folder"></a><span data-ttu-id="d7d24-103">将 DriveItem 移动到一个新的文件夹</span><span class="sxs-lookup"><span data-stu-id="d7d24-103">Move a DriveItem to a new folder</span></span>
+# <a name="move-a-driveitem-to-a-new-folder"></a><span data-ttu-id="3884e-103">将 DriveItem 移动到一个新的文件夹</span><span class="sxs-lookup"><span data-stu-id="3884e-103">Move a DriveItem to a new folder</span></span>
 
-<span data-ttu-id="d7d24-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="d7d24-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3884e-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3884e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d7d24-105">若要将 DriveItem 移动到新的父项，应用程序会请求更新要移动的 DriveItem 的 **parentReference**。</span><span class="sxs-lookup"><span data-stu-id="d7d24-105">To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.</span></span>
+<span data-ttu-id="3884e-105">若要将 DriveItem 移动到新的父项，应用程序会请求更新要移动的 DriveItem 的 **parentReference**。</span><span class="sxs-lookup"><span data-stu-id="3884e-105">To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.</span></span>
 
-<span data-ttu-id="d7d24-106">这是[更新](driveitem-update.md)方法的特殊用例。</span><span class="sxs-lookup"><span data-stu-id="d7d24-106">This is a special case of the [Update](driveitem-update.md) method.</span></span>
-<span data-ttu-id="d7d24-107">你的应用程序可以将以下操作组合到单个请求中：将项目移动到新的容器和更新项目的其他属性。</span><span class="sxs-lookup"><span data-stu-id="d7d24-107">Your app can combine moving an item to a new container and updating other properties of the item into a single request.</span></span>
+<span data-ttu-id="3884e-106">这是[更新](driveitem-update.md)方法的特殊用例。</span><span class="sxs-lookup"><span data-stu-id="3884e-106">This is a special case of the [Update](driveitem-update.md) method.</span></span>
+<span data-ttu-id="3884e-107">你的应用程序可以将以下操作组合到单个请求中：将项目移动到新的容器和更新项目的其他属性。</span><span class="sxs-lookup"><span data-stu-id="3884e-107">Your app can combine moving an item to a new container and updating other properties of the item into a single request.</span></span>
 
-<span data-ttu-id="d7d24-108">无法使用这一请求在[驱动器](../resources/drive.md)之间移动项目。</span><span class="sxs-lookup"><span data-stu-id="d7d24-108">Items cannot be moved between [Drives](../resources/drive.md) using this request.</span></span>
+<span data-ttu-id="3884e-108">无法使用这一请求在[驱动器](../resources/drive.md)之间移动项目。</span><span class="sxs-lookup"><span data-stu-id="3884e-108">Items cannot be moved between [Drives](../resources/drive.md) using this request.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d7d24-109">权限</span><span class="sxs-lookup"><span data-stu-id="d7d24-109">Permissions</span></span>
-<span data-ttu-id="d7d24-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d7d24-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3884e-109">权限</span><span class="sxs-lookup"><span data-stu-id="3884e-109">Permissions</span></span>
+<span data-ttu-id="3884e-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3884e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d7d24-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="d7d24-112">Permission type</span></span>      | <span data-ttu-id="d7d24-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d7d24-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3884e-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="3884e-112">Permission type</span></span>      | <span data-ttu-id="3884e-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3884e-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d7d24-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d7d24-114">Delegated (work or school account)</span></span> | <span data-ttu-id="d7d24-115">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d7d24-115">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="d7d24-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d7d24-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d7d24-117">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d7d24-117">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="d7d24-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="d7d24-118">Application</span></span> | <span data-ttu-id="d7d24-119">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d7d24-119">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="3884e-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3884e-114">Delegated (work or school account)</span></span> | <span data-ttu-id="3884e-115">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3884e-115">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="3884e-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3884e-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3884e-117">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3884e-117">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="3884e-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="3884e-118">Application</span></span> | <span data-ttu-id="3884e-119">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3884e-119">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d7d24-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d7d24-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3884e-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3884e-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -47,29 +47,29 @@ PATCH /sites/{site-id}/drive/items/{item-id}
 PATCH /users/{user-id}/drive/items/{item-id}
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="d7d24-121">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="d7d24-121">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="3884e-121">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="3884e-121">Optional request headers</span></span>
 
-| <span data-ttu-id="d7d24-122">名称</span><span class="sxs-lookup"><span data-stu-id="d7d24-122">Name</span></span>          | <span data-ttu-id="d7d24-123">类型</span><span class="sxs-lookup"><span data-stu-id="d7d24-123">Type</span></span>   | <span data-ttu-id="d7d24-124">说明</span><span class="sxs-lookup"><span data-stu-id="d7d24-124">Description</span></span>                                                                                                                                                         |
+| <span data-ttu-id="3884e-122">名称</span><span class="sxs-lookup"><span data-stu-id="3884e-122">Name</span></span>          | <span data-ttu-id="3884e-123">类型</span><span class="sxs-lookup"><span data-stu-id="3884e-123">Type</span></span>   | <span data-ttu-id="3884e-124">说明</span><span class="sxs-lookup"><span data-stu-id="3884e-124">Description</span></span>                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="d7d24-125">if-match</span><span class="sxs-lookup"><span data-stu-id="d7d24-125">if-match</span></span>      | <span data-ttu-id="d7d24-126">String</span><span class="sxs-lookup"><span data-stu-id="d7d24-126">String</span></span> | <span data-ttu-id="d7d24-127">如果包含此请求标头，且提供的 eTag（或 cTag）与文件夹上的当前 eTag 不匹配，则返回 `412 Precondition Failed` 响应。</span><span class="sxs-lookup"><span data-stu-id="d7d24-127">If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned.</span></span> |
+| <span data-ttu-id="3884e-125">if-match</span><span class="sxs-lookup"><span data-stu-id="3884e-125">if-match</span></span>      | <span data-ttu-id="3884e-126">String</span><span class="sxs-lookup"><span data-stu-id="3884e-126">String</span></span> | <span data-ttu-id="3884e-127">如果包含此请求标头，且提供的 eTag（或 cTag）与文件夹上的当前 eTag 不匹配，则返回 `412 Precondition Failed` 响应。</span><span class="sxs-lookup"><span data-stu-id="3884e-127">If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d7d24-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="d7d24-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3884e-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="3884e-128">Request body</span></span>
 
-<span data-ttu-id="d7d24-p103">在请求正文中，提供 **parentReference** 属性的新值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="d7d24-p103">In the request body, supply the new value for the **parentReference** property. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="3884e-p103">在请求正文中，提供 **parentReference** 属性的新值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="3884e-p103">In the request body, supply the new value for the **parentReference** property. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-<span data-ttu-id="d7d24-132">**注意：** 将项目移动到驱动器的根目录下时，应用程序不能使用 `"id:" "root"` 语法。</span><span class="sxs-lookup"><span data-stu-id="d7d24-132">**Note:** When moving items to the root of a drive your app cannot use the `"id:" "root"` syntax.</span></span>
-<span data-ttu-id="d7d24-133">应用程序必须为父引用提供实际的根文件夹 ID。</span><span class="sxs-lookup"><span data-stu-id="d7d24-133">Your app needs to provide the actual ID of the root folder for the parent reference.</span></span>
+<span data-ttu-id="3884e-132">**注意：** 将项目移动到驱动器的根目录下时，应用程序不能使用 `"id:" "root"` 语法。</span><span class="sxs-lookup"><span data-stu-id="3884e-132">**Note:** When moving items to the root of a drive your app cannot use the `"id:" "root"` syntax.</span></span>
+<span data-ttu-id="3884e-133">应用程序必须为父引用提供实际的根文件夹 ID。</span><span class="sxs-lookup"><span data-stu-id="3884e-133">Your app needs to provide the actual ID of the root folder for the parent reference.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d7d24-134">响应</span><span class="sxs-lookup"><span data-stu-id="d7d24-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3884e-134">响应</span><span class="sxs-lookup"><span data-stu-id="3884e-134">Response</span></span>
 
-<span data-ttu-id="d7d24-135">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [DriveItem](../resources/driveitem.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="d7d24-135">If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="3884e-135">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [DriveItem](../resources/driveitem.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="3884e-135">If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d7d24-136">示例</span><span class="sxs-lookup"><span data-stu-id="d7d24-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3884e-136">示例</span><span class="sxs-lookup"><span data-stu-id="3884e-136">Example</span></span>
 
-<span data-ttu-id="d7d24-137">本示例将 {item-id} 指定的项目移动到用户驱动器中 ID 为 `new-parent-folder-id` 的文件夹中。</span><span class="sxs-lookup"><span data-stu-id="d7d24-137">This example moves an item specified by {item-id} into a folder in the user's drive with the ID `new-parent-folder-id`.</span></span>
+<span data-ttu-id="3884e-137">本示例将 {item-id} 指定的项目移动到用户驱动器中 ID 为 `new-parent-folder-id` 的文件夹中。</span><span class="sxs-lookup"><span data-stu-id="3884e-137">This example moves an item specified by {item-id} into a folder in the user's drive with the ID `new-parent-folder-id`.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="d7d24-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="d7d24-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="3884e-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="3884e-138">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite" } -->
 
 ```http
@@ -83,24 +83,24 @@ Content-type: application/json
   "name": "new-item-name.txt"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="d7d24-139">C#</span><span class="sxs-lookup"><span data-stu-id="d7d24-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="3884e-139">C#</span><span class="sxs-lookup"><span data-stu-id="3884e-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/move-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="d7d24-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d7d24-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="3884e-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3884e-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/move-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="d7d24-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d7d24-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="3884e-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3884e-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/move-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="d7d24-142">响应</span><span class="sxs-lookup"><span data-stu-id="d7d24-142">Response</span></span>
+### <a name="response"></a><span data-ttu-id="3884e-142">响应</span><span class="sxs-lookup"><span data-stu-id="3884e-142">Response</span></span>
 
-<span data-ttu-id="d7d24-143">以下示例显示了对此移动请求的响应。</span><span class="sxs-lookup"><span data-stu-id="d7d24-143">The following example shows the response for this move request.</span></span>
+<span data-ttu-id="3884e-143">以下示例显示了对此移动请求的响应。</span><span class="sxs-lookup"><span data-stu-id="3884e-143">The following example shows the response for this move request.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -120,9 +120,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="error-responses"></a><span data-ttu-id="d7d24-144">错误响应</span><span class="sxs-lookup"><span data-stu-id="d7d24-144">Error responses</span></span>
+## <a name="error-responses"></a><span data-ttu-id="3884e-144">错误响应</span><span class="sxs-lookup"><span data-stu-id="3884e-144">Error responses</span></span>
 
-<span data-ttu-id="d7d24-145">请参阅[错误响应][error-response]，详细了解错误返回方式。</span><span class="sxs-lookup"><span data-stu-id="d7d24-145">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+<span data-ttu-id="3884e-145">请参阅[错误响应][error-response]，详细了解错误返回方式。</span><span class="sxs-lookup"><span data-stu-id="3884e-145">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 
@@ -137,3 +137,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

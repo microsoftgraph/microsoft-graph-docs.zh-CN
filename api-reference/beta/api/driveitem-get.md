@@ -6,34 +6,34 @@ title: 获取文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e496682671eea4a7cebfca72789d5d85fe9f3366
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ee46dfde6ca18520dbafe949248ead4e899a1c38
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432577"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982024"
 ---
-# <a name="get-a-driveitem-resource"></a><span data-ttu-id="59e62-103">获取 DriveItem 资源</span><span class="sxs-lookup"><span data-stu-id="59e62-103">Get a DriveItem resource</span></span>
+# <a name="get-a-driveitem-resource"></a><span data-ttu-id="08c57-103">获取 DriveItem 资源</span><span class="sxs-lookup"><span data-stu-id="08c57-103">Get a DriveItem resource</span></span>
 
-<span data-ttu-id="59e62-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="59e62-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="08c57-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="08c57-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="59e62-105">通过文件系统路径或 ID 在[驱动器](../resources/drive.md)中检索 [DriveItem](../resources/driveitem.md) 的元数据。</span><span class="sxs-lookup"><span data-stu-id="59e62-105">Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) by file system path or ID.</span></span>
+<span data-ttu-id="08c57-105">通过文件系统路径或 ID 在[驱动器](../resources/drive.md)中检索 [DriveItem](../resources/driveitem.md) 的元数据。</span><span class="sxs-lookup"><span data-stu-id="08c57-105">Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) by file system path or ID.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="59e62-106">权限</span><span class="sxs-lookup"><span data-stu-id="59e62-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="08c57-106">权限</span><span class="sxs-lookup"><span data-stu-id="08c57-106">Permissions</span></span>
 
-<span data-ttu-id="59e62-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="59e62-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="08c57-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="08c57-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="59e62-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="59e62-109">Permission type</span></span>      | <span data-ttu-id="59e62-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="59e62-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="08c57-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="08c57-109">Permission type</span></span>      | <span data-ttu-id="08c57-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="08c57-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="59e62-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="59e62-111">Delegated (work or school account)</span></span> | <span data-ttu-id="59e62-112">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="59e62-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span> </br><span data-ttu-id="59e62-113">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="59e62-113">Group.Read.All, Group.ReadWrite.All</span></span> </br><span data-ttu-id="59e62-114">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="59e62-114">Sites.Read.All, Sites.ReadWrite.All</span></span> |
-|<span data-ttu-id="59e62-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="59e62-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="59e62-116">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="59e62-116">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="59e62-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="59e62-117">Application</span></span> | <span data-ttu-id="59e62-118">Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="59e62-118">Files.Read.All, Files.ReadWrite.All</span></span> </br><span data-ttu-id="59e62-119">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="59e62-119">Group.Read.All, Group.ReadWrite.All</span></span> </br><span data-ttu-id="59e62-120">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="59e62-120">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="08c57-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="08c57-111">Delegated (work or school account)</span></span> | <span data-ttu-id="08c57-112">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="08c57-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span> </br><span data-ttu-id="08c57-113">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="08c57-113">Group.Read.All, Group.ReadWrite.All</span></span> </br><span data-ttu-id="08c57-114">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="08c57-114">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="08c57-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="08c57-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="08c57-116">Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="08c57-116">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="08c57-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="08c57-117">Application</span></span> | <span data-ttu-id="08c57-118">Files.Read.All、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="08c57-118">Files.Read.All, Files.ReadWrite.All</span></span> </br><span data-ttu-id="08c57-119">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="08c57-119">Group.Read.All, Group.ReadWrite.All</span></span> </br><span data-ttu-id="08c57-120">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="08c57-120">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="59e62-121">注意： `/teams`终结点需要使用 Group。 Read. All 或 Group. 所有权限。</span><span class="sxs-lookup"><span data-stu-id="59e62-121">Note: The `/teams` endpoint requires the use of Group.Read.All or Group.ReadWrite.All permissions.</span></span>
+> <span data-ttu-id="08c57-121">注意： `/teams` 终结点需要使用 Group。 Read. all 或 Group. 所有权限。</span><span class="sxs-lookup"><span data-stu-id="08c57-121">Note: The `/teams` endpoint requires the use of Group.Read.All or Group.ReadWrite.All permissions.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="59e62-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="59e62-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="08c57-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="08c57-122">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -51,55 +51,55 @@ GET /users/{userId}/drive/items/{itemId}
 GET /users/{userId}/drive/root:/{item-path}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="59e62-123">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="59e62-123">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="08c57-123">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="08c57-123">Optional query parameters</span></span>
 
-<span data-ttu-id="59e62-124">此方法支持使用 `$expand` 和 `$select` [OData 查询参数](/graph/query-parameters)自定义响应。</span><span class="sxs-lookup"><span data-stu-id="59e62-124">This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="08c57-124">此方法支持使用 `$expand` 和 `$select` [OData 查询参数](/graph/query-parameters)自定义响应。</span><span class="sxs-lookup"><span data-stu-id="08c57-124">This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-<span data-ttu-id="59e62-125">如果某个项具有**子项**关系，在检索该项的元数据时可以使用 [`$expand` 查询字符串参数](/graph/query-parameters) 来包括同一调用中的项的子项。</span><span class="sxs-lookup"><span data-stu-id="59e62-125">You can use the [`$expand` query string parameter](/graph/query-parameters) to include the children of an item in the same call as retrieving the metadata of an item if the item has a **children** relationship.</span></span>
+<span data-ttu-id="08c57-125">如果某个项具有**子项**关系，在检索该项的元数据时可以使用 [`$expand` 查询字符串参数](/graph/query-parameters) 来包括同一调用中的项的子项。</span><span class="sxs-lookup"><span data-stu-id="08c57-125">You can use the [`$expand` query string parameter](/graph/query-parameters) to include the children of an item in the same call as retrieving the metadata of an item if the item has a **children** relationship.</span></span>
 
-<span data-ttu-id="59e62-126">您还可以使用`includeDeletedItems=true`查询参数返回已删除的项目。</span><span class="sxs-lookup"><span data-stu-id="59e62-126">You can also use the `includeDeletedItems=true` query parameter to return deleted items.</span></span>
-<span data-ttu-id="59e62-127">此查询参数仅在以[driveItem](../resources/driveitem.md) by ID 为目标时才有效，否则将被忽略。</span><span class="sxs-lookup"><span data-stu-id="59e62-127">This query parameter is only valid when targeting a [driveItem](../resources/driveitem.md) by ID, and otherwise will be ignored.</span></span>
-<span data-ttu-id="59e62-128">此项当前仅在 OneDrive 个人版上受支持。</span><span class="sxs-lookup"><span data-stu-id="59e62-128">This is currently only supported on OneDrive Personal.</span></span>
+<span data-ttu-id="08c57-126">您还可以使用 `includeDeletedItems=true` 查询参数返回已删除的项目。</span><span class="sxs-lookup"><span data-stu-id="08c57-126">You can also use the `includeDeletedItems=true` query parameter to return deleted items.</span></span>
+<span data-ttu-id="08c57-127">此查询参数仅在以 [driveItem](../resources/driveitem.md) by ID 为目标时才有效，否则将被忽略。</span><span class="sxs-lookup"><span data-stu-id="08c57-127">This query parameter is only valid when targeting a [driveItem](../resources/driveitem.md) by ID, and otherwise will be ignored.</span></span>
+<span data-ttu-id="08c57-128">此项当前仅在 OneDrive 个人版上受支持。</span><span class="sxs-lookup"><span data-stu-id="08c57-128">This is currently only supported on OneDrive Personal.</span></span>
 
-## <a name="optional-request-headers"></a><span data-ttu-id="59e62-129">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="59e62-129">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="08c57-129">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="08c57-129">Optional request headers</span></span>
 
-| <span data-ttu-id="59e62-130">名称</span><span class="sxs-lookup"><span data-stu-id="59e62-130">Name</span></span>          | <span data-ttu-id="59e62-131">值</span><span class="sxs-lookup"><span data-stu-id="59e62-131">Value</span></span>  | <span data-ttu-id="59e62-132">说明</span><span class="sxs-lookup"><span data-stu-id="59e62-132">Description</span></span>                                                                                                                                              |
+| <span data-ttu-id="08c57-130">名称</span><span class="sxs-lookup"><span data-stu-id="08c57-130">Name</span></span>          | <span data-ttu-id="08c57-131">值</span><span class="sxs-lookup"><span data-stu-id="08c57-131">Value</span></span>  | <span data-ttu-id="08c57-132">说明</span><span class="sxs-lookup"><span data-stu-id="08c57-132">Description</span></span>                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="59e62-133">if-none-match</span><span class="sxs-lookup"><span data-stu-id="59e62-133">if-none-match</span></span> | <span data-ttu-id="59e62-134">String</span><span class="sxs-lookup"><span data-stu-id="59e62-134">String</span></span> | <span data-ttu-id="59e62-135">如果包含此请求标头，且提供的 eTag（或 cTag）与文件中的当前标记不匹配，则返回 `HTTP 304 Not Modified` 响应。</span><span class="sxs-lookup"><span data-stu-id="59e62-135">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
+| <span data-ttu-id="08c57-133">if-none-match</span><span class="sxs-lookup"><span data-stu-id="08c57-133">if-none-match</span></span> | <span data-ttu-id="08c57-134">String</span><span class="sxs-lookup"><span data-stu-id="08c57-134">String</span></span> | <span data-ttu-id="08c57-135">如果包含此请求标头，且提供的 eTag（或 cTag）与文件中的当前标记不匹配，则返回 `HTTP 304 Not Modified` 响应。</span><span class="sxs-lookup"><span data-stu-id="08c57-135">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="59e62-136">响应</span><span class="sxs-lookup"><span data-stu-id="59e62-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="08c57-136">响应</span><span class="sxs-lookup"><span data-stu-id="08c57-136">Response</span></span>
 
-<span data-ttu-id="59e62-137">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [DriveItem](../resources/driveitem.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="59e62-137">If successful, this method returns a `200 OK` response code and the [DriveItem](../resources/driveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="08c57-137">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [DriveItem](../resources/driveitem.md) 资源。</span><span class="sxs-lookup"><span data-stu-id="08c57-137">If successful, this method returns a `200 OK` response code and the [DriveItem](../resources/driveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="59e62-138">示例</span><span class="sxs-lookup"><span data-stu-id="59e62-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="08c57-138">示例</span><span class="sxs-lookup"><span data-stu-id="08c57-138">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="59e62-139">请求</span><span class="sxs-lookup"><span data-stu-id="59e62-139">Request</span></span>
+### <a name="request"></a><span data-ttu-id="08c57-139">请求</span><span class="sxs-lookup"><span data-stu-id="08c57-139">Request</span></span>
 
-<span data-ttu-id="59e62-140">下面是用户的 OneDrive 的根文件夹请求示例。</span><span class="sxs-lookup"><span data-stu-id="59e62-140">Here is an example of the request to the root folder of the user's OneDrive.</span></span>
+<span data-ttu-id="08c57-140">下面是用户的 OneDrive 的根文件夹请求示例。</span><span class="sxs-lookup"><span data-stu-id="08c57-140">Here is an example of the request to the root folder of the user's OneDrive.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="59e62-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="59e62-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="08c57-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="08c57-141">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-metadata" }-->
 
 ```msgraph-interactive
 GET /me/drive/root
 ```
-# <a name="c"></a>[<span data-ttu-id="59e62-142">C#</span><span class="sxs-lookup"><span data-stu-id="59e62-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="08c57-142">C#</span><span class="sxs-lookup"><span data-stu-id="08c57-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-metadata-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="59e62-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="59e62-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="08c57-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="08c57-143">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-metadata-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="59e62-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="59e62-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="08c57-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="08c57-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-metadata-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-## <a name="response"></a><span data-ttu-id="59e62-145">响应</span><span class="sxs-lookup"><span data-stu-id="59e62-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="08c57-145">响应</span><span class="sxs-lookup"><span data-stu-id="08c57-145">Response</span></span>
 
-<span data-ttu-id="59e62-146">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="59e62-146">Here is an example of the response.</span></span>
+<span data-ttu-id="08c57-146">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="08c57-146">Here is an example of the response.</span></span>
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
@@ -133,9 +133,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="59e62-147">说明</span><span class="sxs-lookup"><span data-stu-id="59e62-147">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="08c57-147">说明</span><span class="sxs-lookup"><span data-stu-id="08c57-147">Remarks</span></span>
 
-<span data-ttu-id="59e62-148">请参阅[错误响应][error-response]，详细了解错误返回方式。</span><span class="sxs-lookup"><span data-stu-id="59e62-148">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+<span data-ttu-id="08c57-148">请参阅[错误响应][error-response]，详细了解错误返回方式。</span><span class="sxs-lookup"><span data-stu-id="08c57-148">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 [odata-parameters]: /graph/query-parameters
@@ -153,3 +153,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

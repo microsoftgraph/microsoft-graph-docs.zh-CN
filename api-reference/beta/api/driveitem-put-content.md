@@ -6,34 +6,34 @@ title: 上传小文件
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: d2b8ec57487d5ffe165645c5046a0edbc5347b9c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 89253f65fbb18a8165cefbb11cc88a88b13787b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432416"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981892"
 ---
-# <a name="upload-or-replace-the-contents-of-a-driveitem"></a><span data-ttu-id="cc164-103">上传或替换 driveItem 的内容</span><span class="sxs-lookup"><span data-stu-id="cc164-103">Upload or replace the contents of a DriveItem</span></span>
+# <a name="upload-or-replace-the-contents-of-a-driveitem"></a><span data-ttu-id="ec73e-103">上传或替换 driveItem 的内容</span><span class="sxs-lookup"><span data-stu-id="ec73e-103">Upload or replace the contents of a DriveItem</span></span>
 
-<span data-ttu-id="cc164-104">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="cc164-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ec73e-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ec73e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cc164-p101">通过简单的上载 API，你可以在单个 API 调用中提供新文件的内容，也可以更新现有文件的内容。此方法仅支持最大大小为 4 MB 的文件。</span><span class="sxs-lookup"><span data-stu-id="cc164-p101">The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. This method only supports files up to 4MB in size.</span></span>
+<span data-ttu-id="ec73e-p101">通过简单的上载 API，你可以在单个 API 调用中提供新文件的内容，也可以更新现有文件的内容。此方法仅支持最大大小为 4 MB 的文件。</span><span class="sxs-lookup"><span data-stu-id="ec73e-p101">The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. This method only supports files up to 4MB in size.</span></span>
 
-<span data-ttu-id="cc164-107">若要上传大文件，请参阅[通过上传会话上传大文件](driveitem-createuploadsession.md)。</span><span class="sxs-lookup"><span data-stu-id="cc164-107">To upload large files see [Upload large files with an upload session](driveitem-createuploadsession.md).</span></span>
+<span data-ttu-id="ec73e-107">若要上传大文件，请参阅[通过上传会话上传大文件](driveitem-createuploadsession.md)。</span><span class="sxs-lookup"><span data-stu-id="ec73e-107">To upload large files see [Upload large files with an upload session](driveitem-createuploadsession.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cc164-108">权限</span><span class="sxs-lookup"><span data-stu-id="cc164-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ec73e-108">权限</span><span class="sxs-lookup"><span data-stu-id="ec73e-108">Permissions</span></span>
 
-<span data-ttu-id="cc164-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cc164-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ec73e-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ec73e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cc164-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="cc164-111">Permission type</span></span>      | <span data-ttu-id="cc164-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="cc164-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ec73e-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="ec73e-111">Permission type</span></span>      | <span data-ttu-id="ec73e-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ec73e-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cc164-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cc164-113">Delegated (work or school account)</span></span> | <span data-ttu-id="cc164-114">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cc164-114">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="cc164-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cc164-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cc164-116">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cc164-116">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="cc164-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="cc164-117">Application</span></span> | <span data-ttu-id="cc164-118">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cc164-118">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="ec73e-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ec73e-113">Delegated (work or school account)</span></span> | <span data-ttu-id="ec73e-114">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ec73e-114">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ec73e-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ec73e-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ec73e-116">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ec73e-116">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ec73e-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="ec73e-117">Application</span></span> | <span data-ttu-id="ec73e-118">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ec73e-118">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request-to-replace-an-existing-item"></a><span data-ttu-id="cc164-119">HTTP 请求（替换现有项）</span><span class="sxs-lookup"><span data-stu-id="cc164-119">HTTP request (to replace an existing item)</span></span>
+## <a name="http-request-to-replace-an-existing-item"></a><span data-ttu-id="ec73e-119">HTTP 请求（替换现有项）</span><span class="sxs-lookup"><span data-stu-id="ec73e-119">HTTP request (to replace an existing item)</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -45,7 +45,7 @@ PUT /sites/{site-id}/drive/items/{item-id}/content
 PUT /users/{user-id}/drive/items/{item-id}/content
 ```
 
-## <a name="http-request-to-upload-a-new-file"></a><span data-ttu-id="cc164-120">HTTP 请求（上传新文件）</span><span class="sxs-lookup"><span data-stu-id="cc164-120">HTTP request (to upload a new file)</span></span>
+## <a name="http-request-to-upload-a-new-file"></a><span data-ttu-id="ec73e-120">HTTP 请求（上传新文件）</span><span class="sxs-lookup"><span data-stu-id="ec73e-120">HTTP request (to upload a new file)</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -57,17 +57,17 @@ PUT /sites/{site-id}/drive/items/{parent-id}:/{filename}:/content
 PUT /users/{user-id}/drive/items/{parent-id}:/{filename}:/content
 ```
 
-## <a name="request-body"></a><span data-ttu-id="cc164-121">请求正文</span><span class="sxs-lookup"><span data-stu-id="cc164-121">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ec73e-121">请求正文</span><span class="sxs-lookup"><span data-stu-id="ec73e-121">Request body</span></span>
 
-<span data-ttu-id="cc164-122">请求正文的内容应该是要上载文件的二进制流。</span><span class="sxs-lookup"><span data-stu-id="cc164-122">The contents of the request body should be the binary stream of the file to be uploaded.</span></span>
+<span data-ttu-id="ec73e-122">请求正文的内容应该是要上载文件的二进制流。</span><span class="sxs-lookup"><span data-stu-id="ec73e-122">The contents of the request body should be the binary stream of the file to be uploaded.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cc164-123">响应</span><span class="sxs-lookup"><span data-stu-id="cc164-123">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ec73e-123">响应</span><span class="sxs-lookup"><span data-stu-id="ec73e-123">Response</span></span>
 
-<span data-ttu-id="cc164-124">如果成功，此方法将在新创建或更新的文件的响应正文中返回 [driveItem](../resources/driveitem.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="cc164-124">If successful, this method returns a [driveItem](../resources/driveitem.md) object in the response body for the newly created or updated file.</span></span>
+<span data-ttu-id="ec73e-124">如果成功，此方法将在新创建或更新的文件的响应正文中返回 [driveItem](../resources/driveitem.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="ec73e-124">If successful, this method returns a [driveItem](../resources/driveitem.md) object in the response body for the newly created or updated file.</span></span>
 
-## <a name="example-upload-a-new-file"></a><span data-ttu-id="cc164-125">示例（上传新文件）</span><span class="sxs-lookup"><span data-stu-id="cc164-125">Example (upload a new file)</span></span>
+## <a name="example-upload-a-new-file"></a><span data-ttu-id="ec73e-125">示例（上传新文件）</span><span class="sxs-lookup"><span data-stu-id="ec73e-125">Example (upload a new file)</span></span>
 
-<span data-ttu-id="cc164-126">此示例将字符串“The contents of the file goes here.”上传到</span><span class="sxs-lookup"><span data-stu-id="cc164-126">This example uploads the string "The contents of the file goes here."</span></span> <span data-ttu-id="cc164-127">登录用户的驱动器中 FolderA 下名为 FileB.txt 的文件中。</span><span class="sxs-lookup"><span data-stu-id="cc164-127">to a file in the signed-in user's drive under FolderA named FileB.txt.</span></span>
+<span data-ttu-id="ec73e-126">此示例将字符串“The contents of the file goes here.”上传到</span><span class="sxs-lookup"><span data-stu-id="ec73e-126">This example uploads the string "The contents of the file goes here."</span></span> <span data-ttu-id="ec73e-127">登录用户的驱动器中 FolderA 下名为 FileB.txt 的文件中。</span><span class="sxs-lookup"><span data-stu-id="ec73e-127">to a file in the signed-in user's drive under FolderA named FileB.txt.</span></span>
 
 <!-- { "blockType": "request", "name": "upload-via-put", "scopes": "files.readwrite" } -->
 
@@ -78,9 +78,9 @@ Content-Type: text/plain
 The contents of the file goes here.
 ```
 
-### <a name="response"></a><span data-ttu-id="cc164-128">响应</span><span class="sxs-lookup"><span data-stu-id="cc164-128">Response</span></span>
+### <a name="response"></a><span data-ttu-id="ec73e-128">响应</span><span class="sxs-lookup"><span data-stu-id="ec73e-128">Response</span></span>
 
-<span data-ttu-id="cc164-129">如果成功，此方法在响应正文中返回新创建或更新的文件的[driveItem][item-resource]资源。</span><span class="sxs-lookup"><span data-stu-id="cc164-129">If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created or updated file.</span></span>
+<span data-ttu-id="ec73e-129">如果成功，此方法在响应正文中返回新创建或更新的文件的 [driveItem][item-resource] 资源。</span><span class="sxs-lookup"><span data-stu-id="ec73e-129">If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created or updated file.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -96,12 +96,12 @@ Content-Type: application/json
 }
 ```
 
-## <a name="example-updating-an-existing-file"></a><span data-ttu-id="cc164-130">示例（更新现有文件）</span><span class="sxs-lookup"><span data-stu-id="cc164-130">Example (updating an existing file)</span></span>
+## <a name="example-updating-an-existing-file"></a><span data-ttu-id="ec73e-130">示例（更新现有文件）</span><span class="sxs-lookup"><span data-stu-id="ec73e-130">Example (updating an existing file)</span></span>
 
-<span data-ttu-id="cc164-131">此示例将文件的内容替换为已知 ID。</span><span class="sxs-lookup"><span data-stu-id="cc164-131">This example replaces the contents of a file with a known ID.</span></span>
+<span data-ttu-id="ec73e-131">此示例将文件的内容替换为已知 ID。</span><span class="sxs-lookup"><span data-stu-id="ec73e-131">This example replaces the contents of a file with a known ID.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="cc164-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="cc164-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ec73e-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="ec73e-132">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "upload-via-put-id", "scopes": "files.readwrite" } -->
 
 ```http
@@ -110,20 +110,20 @@ Content-Type: text/plain
 
 The contents of the file goes here.
 ```
-# <a name="c"></a>[<span data-ttu-id="cc164-133">C#</span><span class="sxs-lookup"><span data-stu-id="cc164-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ec73e-133">C#</span><span class="sxs-lookup"><span data-stu-id="ec73e-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/upload-via-put-id-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="cc164-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cc164-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ec73e-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ec73e-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/upload-via-put-id-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="cc164-135">响应</span><span class="sxs-lookup"><span data-stu-id="cc164-135">Response</span></span>
+### <a name="response"></a><span data-ttu-id="ec73e-135">响应</span><span class="sxs-lookup"><span data-stu-id="ec73e-135">Response</span></span>
 
-<span data-ttu-id="cc164-136">如果成功，此方法将在响应正文中返回新建文件的 [driveItem][item-resource] 资源。</span><span class="sxs-lookup"><span data-stu-id="cc164-136">If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.</span></span>
+<span data-ttu-id="ec73e-136">如果成功，此方法将在响应正文中返回新建文件的 [driveItem][item-resource] 资源。</span><span class="sxs-lookup"><span data-stu-id="ec73e-136">If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -139,9 +139,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="error-responses"></a><span data-ttu-id="cc164-137">错误响应</span><span class="sxs-lookup"><span data-stu-id="cc164-137">Error responses</span></span>
+## <a name="error-responses"></a><span data-ttu-id="ec73e-137">错误响应</span><span class="sxs-lookup"><span data-stu-id="ec73e-137">Error responses</span></span>
 
-<span data-ttu-id="cc164-138">请参阅[错误响应][error-response]，详细了解错误返回方式。</span><span class="sxs-lookup"><span data-stu-id="cc164-138">See [Error Responses][error-response] for details about how errors are returned.</span></span>
+<span data-ttu-id="ec73e-138">请参阅[错误响应][error-response]，详细了解错误返回方式。</span><span class="sxs-lookup"><span data-stu-id="ec73e-138">See [Error Responses][error-response] for details about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
@@ -156,3 +156,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+
