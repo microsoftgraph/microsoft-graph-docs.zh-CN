@@ -3,20 +3,20 @@ title: 代码枚举类型
 description: 规则验证的错误代码。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 86a1e90ae6b52ca6b6a4fa6cc02403d426329ce5
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: dc29f3612cb499ffabb31176acc7106f0d4205ab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44789376"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062020"
 ---
 # <a name="code-enum-type"></a>代码枚举类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,7 +27,7 @@ ms.locfileid: "44789376"
 |:---|:---|:---|
 |无|0|无错误。|
 |jsonFileInvalid|1 |Json 文件无效错误。|
-|jsonFileMissing|双面|Json 文件缺少错误。|
+|jsonFileMissing|2 |Json 文件缺少错误。|
 |jsonFileTooLarge|第三章|Json 文件过大错误。|
 |rulesMissing|4 |缺少错误的规则。|
 |duplicateRules|5 |重复规则错误。|
@@ -35,8 +35,8 @@ ms.locfileid: "44789376"
 |operatorMissing|7 |运算符缺少错误。|
 |operatorNotSupported|8 |运算符不受支持错误。|
 |datatypeMissing|9 |数据类型缺少错误。|
-|datatypeNotSupported|10  |数据类型不受支持错误。|
-|operatorDataTypeCombinationNotSupported|11x17|运算符数据类型组合不受支持错误。|
+|datatypeNotSupported|10 |数据类型不受支持错误。|
+|operatorDataTypeCombinationNotSupported|11 |运算符数据类型组合不受支持错误。|
 |moreInfoUriMissing|12 |详细信息 urlmissing 错误。|
 |moreInfoUriInvalid|13 |详细信息 url 无效错误。|
 |moreInfoUriTooLarge|14 |详细信息您的 ltoo 大错误。|
@@ -57,6 +57,9 @@ ms.locfileid: "44789376"
 |unrecognizedLocale|29|无法识别的区域设置错误。|
 |unknown|30|未知错误。|
 |remediationStringsMissing|31|修正字符串缺少错误。|
+
+
+
 
 
 
