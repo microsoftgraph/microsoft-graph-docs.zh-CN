@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ddf0056b9ffdd47009e21595dcaf292027ec547f
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 9ab9213d2244884d0c1de84290adc572a5da7bbd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229631"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069531"
 ---
 # <a name="list-calendars"></a>列出日历
 
@@ -141,3 +141,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

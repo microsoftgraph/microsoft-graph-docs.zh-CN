@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 4d20a6d5c4918f729189e95a27bad18d9f872c8a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6b4a282dcefe06ade0d4af1bb911449b168ac00c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521725"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067222"
 ---
 # <a name="plannergroup-resource-type"></a>plannerGroup 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "42521725"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列出计划](../api/plannergroup-list-plans.md) |[plannerPlan](plannerplan.md) 集合| 获取**plannerPlan**对象集合。|
+|[列出计划](../api/plannergroup-list-plans.md) |[plannerPlan](plannerplan.md) 集合| 获取 **plannerPlan** 对象集合。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -34,7 +34,7 @@ ms.locfileid: "42521725"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|计划|[plannerPlan](plannerplan.md) 集合| 只读。 可为 NULL。 返回组所拥有的[plannerPlans](plannerplan.md) 。|
+|计划|[plannerPlan](plannerplan.md) 集合| 只读。 可为 NULL。 返回组所拥有的 [plannerPlans](plannerplan.md) 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -68,3 +68,5 @@ ms.locfileid: "42521725"
   "suppressions": []
 }
 -->
+
+

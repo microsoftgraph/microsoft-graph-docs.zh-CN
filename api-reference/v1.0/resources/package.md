@@ -7,12 +7,12 @@ localization_priority: Normal
 description: " 或应被视为集合而不是单个项目的项的集合。"
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 10e99df4a2411fd63e8b8a2ad78d2aa5f0684571
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d263d8c37b624a8a8b60c1a0fbaf6aa7ed7e0755
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534102"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066248"
 ---
 # <a name="package-resource-type"></a>包资源类型
 
@@ -51,3 +51,4 @@ ms.locfileid: "42534102"
   "section": "documentation",
   "tocPath": "Facets/Package"
 } -->
+

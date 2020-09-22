@@ -3,14 +3,14 @@ title: enrollmentConfigurationAssignment 资源类型
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 92da10ff5f9d8376ce362cc99b32d35d08a2fc44
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2a00a3dc5c7324b78431f5ea94f9176d78a2d406
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459415"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066388"
 ---
 # <a name="enrollmentconfigurationassignment-resource-type"></a>enrollmentConfigurationAssignment 资源类型
 
@@ -55,6 +55,8 @@ ms.locfileid: "43459415"
   }
 }
 ```
+
+
 
 
 

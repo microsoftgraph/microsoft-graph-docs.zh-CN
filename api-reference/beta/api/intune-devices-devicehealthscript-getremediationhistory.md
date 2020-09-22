@@ -3,20 +3,20 @@ title: getRemediationHistory 函数
 description: 用于获取设备运行状况脚本的 remediations 数的函数
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5469f8c5c4ae35d69e92b6d1e007bf4a0b3703ea
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 2e394a91f1a4a5e94e9103cd8645bf590f30dc8b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176979"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068670"
 ---
 # <a name="getremediationhistory-function"></a>getRemediationHistory 函数
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -29,7 +29,7 @@ ms.locfileid: "44176979"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -50,7 +50,7 @@ GET /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/getRemediationH
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此函数会在`200 OK`响应正文中返回响应代码和[deviceHealthScriptRemediationHistory](../resources/intune-devices-devicehealthscriptremediationhistory.md) 。
+如果成功，此函数会 `200 OK` 在响应正文中返回响应代码和 [deviceHealthScriptRemediationHistory](../resources/intune-devices-devicehealthscriptremediationhistory.md) 。
 
 ## <a name="example"></a>示例
 
@@ -82,6 +82,9 @@ Content-Length: 397
   }
 }
 ```
+
+
+
 
 
 

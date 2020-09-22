@@ -1,22 +1,22 @@
 ---
 title: 获取参与者
-description: 检索**参与者**对象的属性和关系。
+description: 检索 **参与者** 对象的属性和关系。
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f5f514f053e73aef0d13c9eb6f3b835e3219a6ee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 15a87b6cfdcfe2081e61d36a5972bc8ef9916cb6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511073"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066577"
 ---
 # <a name="get-participant"></a>获取参与者
 
 命名空间：microsoft.graph
 
-检索**参与者**对象的属性和关系。
+检索 **参与者** 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -35,7 +35,7 @@ GET /communications/calls/{id}/participants/{id}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
@@ -44,7 +44,7 @@ GET /communications/calls/{id}/participants/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[参与者](../resources/participant.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [参与者](../resources/participant.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -139,3 +139,4 @@ Content-Type: application/json
   ]
 }
 -->
+

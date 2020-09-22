@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 3e21a1c93504e1f919e92287e38c7ebc7ef56223
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: 95db4ad2a6a05e4df4c8055536d99a771b7568c4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46657965"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067823"
 ---
 # <a name="reportroot-getm365appplatformusercounts"></a>reportRoot： getM365AppPlatformUserCounts
 
@@ -20,9 +20,9 @@ ms.locfileid: "46657965"
 
 获取一个报告，该报告为组织中的每个平台（Windows、Mac、web 和移动设备）上的所有应用提供活动用户的趋势。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅[microsoft 365 报表-microsoft 365 应用程序使用](https://docs.microsoft.com/microsoft-365/admin/activity-reports/microsoft365-apps-usage)。
+> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [microsoft 365 报表-microsoft 365 应用程序使用](https://docs.microsoft.com/microsoft-365/admin/activity-reports/microsoft365-apps-usage)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -32,7 +32,7 @@ ms.locfileid: "46657965"
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用                            | Reports.Read.All                            |
 
-> **注意：** 为使应用程序代表用户读取服务使用情况报告的委派权限，租户管理员必须已为该用户分配适当的 Azure AD 有限管理员角色。 有关详细信息，请参阅[授权 For api 以读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
+> **注意：** 为使应用程序代表用户读取服务使用情况报告的委派权限，租户管理员必须已为该用户分配适当的 Azure AD 有限管理员角色。 有关详细信息，请参阅 [授权 For api 以读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -66,11 +66,11 @@ GET /reports/getM365AppPlatformUserCounts(period='{period_value}')
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[report](../resources/intune-shared-report.md)对象。 报告数据包含在**report**对象的**content**属性中。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [report](../resources/intune-shared-report.md) 对象。 报告数据包含在**report**对象的**content**属性中。
 
 ### <a name="csv"></a>CSV
 
-如果成功，请求**content**属性将返回一个 `302 Found` 响应，该响应将重定向到报告的 preauthenticated 下载 URL。 可以在响应的 `Location` 头中找到此 URL。
+如果成功，请求 **content** 属性将返回一个 `302 Found` 响应，该响应将重定向到报告的 preauthenticated 下载 URL。 可以在响应的 `Location` 头中找到此 URL。
 
 预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 标头。
 
@@ -88,7 +88,7 @@ CSV 文件包含下面的列标题：
 
 ### <a name="json"></a>JSON
 
-如果成功，请求**content**属性将 `200 OK` 在响应正文中返回响应代码和 JSON 对象。
+如果成功，请求 **content** 属性将 `200 OK` 在响应正文中返回响应代码和 JSON 对象。
 
 ## <a name="examples"></a>示例
 
@@ -98,7 +98,7 @@ CSV 文件包含下面的列标题：
 
 #### <a name="request"></a>请求
 
-下面的示例显示了获取**内容**属性的请求。
+下面的示例显示了获取 **内容** 属性的请求。
 
 
 
@@ -160,7 +160,7 @@ Report Refresh Date,Report Period,Report Date,Windows,Mac,Mobile,Web
 
 #### <a name="request"></a>请求
 
-下面的示例显示了获取**内容**属性的请求。
+下面的示例显示了获取 **内容** 属性的请求。
 
 
 
@@ -235,3 +235,5 @@ Content-Length: 156
   "suppressions": [
   ]
 }-->
+
+

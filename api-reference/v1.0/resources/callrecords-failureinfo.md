@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 82eb5237ab1a6a8474b46c1a4466eddd2c7acefc
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: cd720663e3025525b19ffff62d8ef9b061d154b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491949"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069468"
 ---
 # <a name="failureinfo-resource-type"></a>failureInfo 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "44491949"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |reason|String|对呼叫或呼叫部分失败的原因进行分类。|
 |交给|callRecords。 failureStage|发生故障时的阶段。 可取值为：`unknown`、`callSetup`、`midcall`、`unknownFutureValue`。|

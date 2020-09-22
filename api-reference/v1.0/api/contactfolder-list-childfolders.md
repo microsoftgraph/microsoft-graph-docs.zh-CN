@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 170a155b31629cd8a45f36e149d0edd5196a7773
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 27d1543c3c4c0c1bca42e5478a067e8e9ebe07ed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462144"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067004"
 ---
 # <a name="list-childfolders"></a>列出 childFolder
 
@@ -110,3 +110,4 @@ Content-length: 145
   "suppressions": [
   ]
 }-->
+

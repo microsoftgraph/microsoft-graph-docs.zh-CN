@@ -5,18 +5,18 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c4fcccdb8fd2345d7990391f20d98231ee0b42b5
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: bef688740af831900da7699f8d664b072f195a96
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566056"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067025"
 ---
 # <a name="update-conditionalaccesspolicy"></a>更新 conditionalaccesspolicy
 
 命名空间：microsoft.graph
 
-更新[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)对象的属性。
+更新 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -29,7 +29,7 @@ ms.locfileid: "46566056"
 | 应用程序                            | Policy. All、ConditionalAccess 和 Application。 Read. All |
 
 > [!NOTE]
-> 此 API 存在与权限相关的[已知问题](/graph/known-issues#permissions)。
+> 此 API 存在与权限相关的 [已知问题](/graph/known-issues#permissions) 。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ PATCH /identity/conditionalAccess/policies/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-有关属性的列表，请参阅[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)。
+有关属性的列表，请参阅 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)。
 
 ## <a name="response"></a>响应
 
@@ -125,3 +125,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

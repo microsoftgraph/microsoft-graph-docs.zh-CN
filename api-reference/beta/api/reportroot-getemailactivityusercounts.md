@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: c0ce159e4064b82d7dd118dc33ec0dee6d7f9a5f
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 82c1c27241ce7881402e8099bd0dca4735351ac2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896411"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067895"
 ---
 # <a name="reportroot-getemailactivityusercounts"></a>reportRoot: getEmailActivityUserCounts
 
@@ -20,7 +20,7 @@ ms.locfileid: "44896411"
 
 可便于了解正在执行发送、阅读和接收等电子邮件活动的唯一用户数趋势。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅[Microsoft 365 报表-电子邮件活动](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44)。
+> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 报表-电子邮件活动](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44)。
 
 ## <a name="permissions"></a>权限
 
@@ -32,7 +32,7 @@ ms.locfileid: "44896411"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
-**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 For api 以读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
+**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -79,7 +79,7 @@ CSV 文件包含下面的列标题。
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和**[emailActivitySummary](../resources/emailactivitysummary.md)** 对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **[emailActivitySummary](../resources/emailactivitysummary.md)** 对象。
 
 ## <a name="example"></a>示例
 
@@ -190,3 +190,5 @@ Content-Length: 237
   "suppressions": [
   ]
 }-->
+
+

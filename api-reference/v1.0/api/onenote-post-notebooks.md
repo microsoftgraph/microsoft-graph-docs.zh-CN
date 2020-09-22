@@ -5,18 +5,18 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 6af95ea02a4151f0ea1ca23d2a05cc99d6d20830
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4a64a54385d0bff66cd6302323034057ac87ed0e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511297"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066591"
 ---
 # <a name="create-notebook"></a>创建笔记本
 
 命名空间：microsoft.graph
 
-创建新的 OneNote[笔记本](../resources/notebook.md)。
+创建新的 OneNote [笔记本](../resources/notebook.md)。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -43,11 +43,11 @@ POST /sites/{id}/onenote/notebooks
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供笔记本的名称。 
 
-笔记本名称必须是唯一的。 名称不能超过128个字符，也不能包含以下字符：？\/*： <>| ' "
+笔记本名称必须是唯一的。 名称不能超过128个字符，也不能包含以下字符：？ * \/ ： <>| ' "
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[笔记本](../resources/notebook.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [笔记本](../resources/notebook.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -127,3 +127,4 @@ Content-length: 284
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 63d498b37980a57b3653b41cb337e792b8c1a838
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: 806e4e3f49144845a3cf438cf9b131f7bc900de1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46644024"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067431"
 ---
 # <a name="agreementfilelocalization-resource-type"></a>agreementFileLocalization 资源类型
 
@@ -75,3 +75,5 @@ ms.locfileid: "46644024"
   "suppressions": []
 }
 -->
+
+

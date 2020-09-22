@@ -1,26 +1,26 @@
 ---
 title: chatMessageMention 资源类型
-description: '表示 chatMessage 实体中的提及。 这些提及适用于用户、团队、机器人或频道。 '
+description: '表示了 chatmessage 实体中提及的项。 提及可用于用户、团队、机器人或频道。 '
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3557ad926ebad764d9ad734c372fd4c367d319e6
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 1a7ef91ca698058e6f3b9dacd3928329aaf719c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819873"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069167"
 ---
 # <a name="chatmessagemention-resource-type"></a>chatMessageMention 资源类型
 
 命名空间：microsoft.graph
 
-表示 chatMessage 实体中的 [提及](./chatmessage.md) 。 提及可以是对用户[、](user.md)[团队、机](team.md)器人[或频道的](channel.md)。 
+表示 [了 chatmessage](./chatmessage.md) 实体中提及的项。 提及可用于 [用户](user.md)、 [团队](team.md)、机器人或 [频道](channel.md)。 
 
-在包含 **一** 个或多个提及的 chatMessage 对象中，消息正文 **内容** 属性表示 HTML 形式的聊天消息。 它将每 **提及的提及文本** 包包在 HTML 元素内 `at` ，并 `id` 具有对应于提及 id 属性 **（Property）** 的属性 （Attribute）。
+在包含一个或多个提及的 **了 chatmessage** 对象中，邮件正文 **内容** 属性代表 HTML 中的聊天消息。 它将每个提及的 **mentionText** 封装在 HTML `at` 元素中，其中包含一个与 `id` 提及的 **id** 属性相对应的属性。
 
-例如，一条聊天消息包含两个提及文字，分说明文字分为"Megan"和"Alex"。 它的 **正文** 内容属性 `at` 指定这两个提及的元素，如下所示：
+例如，聊天邮件包含两个提及，分别提及 "Megan" 和 "Alex" 文本。 其 body **内容** 属性按 `at` 如下所示为两个提及指定元素：
 
 ``` json
 "body": {
@@ -29,19 +29,19 @@ ms.locfileid: "46819873"
 }
 ```
 
-在 content **属性中** ，第一个提及具有 HTML `id` 特性 0。 这对应于**chatMessageMention**第一个实例的**id**属性，也是 0。
+在 **content** 属性中，第一个提及的 HTML `id` 属性为0。 这对应于**chatMessageMention**的第一个实例的**id**属性，也是0。
 
-第二次提及具有 `id` 1 特性，它与第二个实例的 **id** 属性相匹配，即 1。
+第二个提及的 `id` 属性为1，与第二个实例的 **id** 属性相匹配，即1。
 
-有关该示例的更全上下文，请参阅["列表频道消息回复"。](/graph/api/channel-list-messagereplies?view=graph-rest-beta)
+有关此示例的更完整上下文，请参阅 [列出通道邮件答复](/graph/api/channel-list-messagereplies?view=graph-rest-beta)。
 
 ## <a name="properties"></a>属性
 
 | 属性| 类型|说明|
 |:---------------|:--------|:----------|
-|id|Int32|指定 chatMessage 中提及的实体 **的索引**。 匹配邮件正文中相应标记中的 {index} `<at id="{index}">` 值。|
-|mentionText|string|用于表示提及的字符串。 例如，用户的显示名称组名称。|
-|提及|[identitySet](identityset.md)|实体的 (提及的用户、应用程序) 团队或频道。  如果是已有空的频道或 @mentioned团队，则 IdentitySet 包含 **为** 团队/频道 ID 提供对话属性， **以及一个 conversationIdentityType** 属性，代表团队或频道。|
+|id|Int32|在指定的 **了 chatmessage**中提到的实体的索引。 与邮件正文中对应的标记中的 {index} 值相匹配 `<at id="{index}">` 。|
+|mentionText|string|用于表示提及的字符串。 例如，用户的显示名称（团队名称）。|
+|所|[identitySet](identityset.md)|实体 (提到的用户、应用程序、团队或频道) 。  如果它是 @mentioned 的频道或团队，则了解 identityset 包含一个 **会话** 属性，该属性提供团队/通道的 ID 和代表团队或频道的 **conversationIdentityType** 属性。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -73,3 +73,4 @@ ms.locfileid: "46819873"
   "suppressions": []
 }
 -->
+

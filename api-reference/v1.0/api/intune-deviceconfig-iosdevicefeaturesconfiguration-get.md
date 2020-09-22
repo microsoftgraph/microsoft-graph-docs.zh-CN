@@ -3,14 +3,14 @@ title: 获取 iosDeviceFeaturesConfiguration
 description: 读取 iosDeviceFeaturesConfiguration 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c5ee08d67d5d938be2435a1a18df693a58e8502c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bdf2351b29402c97ac514551d7727477b4e75e75
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443556"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066696"
 ---
 # <a name="get-iosdevicefeaturesconfiguration"></a>获取 iosDeviceFeaturesConfiguration
 
@@ -140,6 +140,9 @@ Content-Length: 2313
   }
 }
 ```
+
+
+
 
 
 

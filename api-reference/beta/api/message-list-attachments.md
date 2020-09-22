@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ca6d8c21066635d9ba96b8d19a1b1e5141e707a3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 581bd98c47b24ce33508ca60b96612d93b2a3555
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448567"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067942"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -136,3 +136,5 @@ Content-length: 215
   ]
 }
 -->
+
+

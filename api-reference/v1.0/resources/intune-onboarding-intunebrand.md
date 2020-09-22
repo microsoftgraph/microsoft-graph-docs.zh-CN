@@ -3,14 +3,14 @@ title: intuneBrand 资源类型
 description: intuneBrand 包含在自定义公司门户应用程序以及最终用户 Web 门户的外观时使用的数据。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6048e295ba0ca06fe02872aca52fdc32ae686a54
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 062a42cced84afc4205e4f78511a5cf058da8626
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459408"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066381"
 ---
 # <a name="intunebrand-resource-type"></a>intuneBrand 资源类型
 
@@ -32,7 +32,7 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
 |onlineSupportSiteUrl|String|指向公司/组织 IT 支持人员网站的 URL。|
 |onlineSupportSiteName|String|显示公司/组织 IT 支持人员网站的名称。|
 |themeColor|[rgbColor](../resources/intune-onboarding-rgbcolor.md)|公司门户应用程序和 Web 门户中使用的主要主题颜色。|
-|showLogo|Boolean|表示是否显示管理员提供的徽标图像的布尔值。|
+|showLogo|布尔值|表示是否显示管理员提供的徽标图像的布尔值。|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用中显示的徽标图像，徽标后有浅色背景。|
 |darkBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用中显示的徽标图像，徽标后有深色背景。|
 |showNameNextToLogo|布尔值|表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。|
@@ -80,6 +80,8 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
   "showDisplayNameNextToLogo": true
 }
 ```
+
+
 
 
 

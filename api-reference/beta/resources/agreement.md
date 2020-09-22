@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: b6b3ca4865e56961f6388e9be1a567de73026472
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: a6b987e36769102ee32eeb9509554f8e78fed9d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643993"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067503"
 ---
 # <a name="agreement-resource-type"></a>协议资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "46643993"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示租户的可自定义使用条款协议，该协议是使用 Azure Active Directory (Azure AD) 创建和管理的。 您可以根据您的方案使用以下方法来创建和管理[Azure Active Directory 使用条款功能](/azure/active-directory/active-directory-tou)。
+表示租户的可自定义使用条款协议，该协议是使用 Azure Active Directory (Azure AD) 创建和管理的。 您可以根据您的方案使用以下方法来创建和管理 [Azure Active Directory 使用条款功能](/azure/active-directory/active-directory-tou) 。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
 | [创建协议](../api/agreement-post-agreements.md) | [本](agreement.md) | 通过发布到协议集合创建新协议。 |
-| [列出协议](../api/agreement-list.md) | [协议](agreement.md)集合 | 获取一个协议对象集合。 |
+| [列出协议](../api/agreement-list.md) | [协议](agreement.md) 集合 | 获取一个协议对象集合。 |
 | [获取协议](../api/agreement-get.md) | [本](agreement.md) | 读取协议对象的属性和关系。 |
 | [更新协议](../api/agreement-update.md) | [本](agreement.md) | 更新协议对象。 |
 | [删除协议](../api/agreement-delete.md) | 无 | 删除协议对象。 |
@@ -49,7 +49,7 @@ ms.locfileid: "46643993"
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |acceptances|[agreementAcceptance](agreementacceptance.md) 集合|只读。 本协议 acceptances 的相关信息。|
-|files|[agreementFileLocalization](agreementfilelocalization.md)集合| 链接到此协议的 Pdf。 **注意：** 此属性正处于弃用的过程中。 使用**文件**属性而不是。|
+|files|[agreementFileLocalization](agreementfilelocalization.md) 集合| 链接到此协议的 Pdf。 **注意：** 此属性正处于弃用的过程中。 使用  **文件** 属性而不是。|
 |file|[agreementFile](agreementfile.md) | 链接到此协议的 Pdf。|
 
 
@@ -92,3 +92,5 @@ ms.locfileid: "46643993"
   "suppressions": []
 }
 -->
+
+

@@ -5,22 +5,22 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8387926d7b6c8b0f5bf2ea774dc8d248d956c916
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: 03f49928ea171a7cac3dbe77382d1aa0a08620b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491950"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069454"
 ---
 # <a name="deviceinfo-resource-type"></a>deviceInfo 资源类型
 
 命名空间：microsoft.graph.callRecords
 
-表示有关呼叫中使用的设备（麦克风、扬声器、相机等）的信息。
+表示有关呼叫中使用的设备 (麦克风、扬声器、相机等 ) 的信息。
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |captureDeviceDriver|String|媒体终结点使用的捕获设备驱动程序的名称。|
 |captureDeviceName|String|媒体终结点使用的捕获设备的名称。|
@@ -29,7 +29,7 @@ ms.locfileid: "44491950"
 |deviceClippingEventRatio|双精度|媒体终结点在捕获的音频中检测到的剪辑在导致发送的音频质量较差时检测到的呼叫的一小部分。|
 |deviceGlitchEventRatio|双精度|媒体终结点检测到或捕获的音频中由于导致发送或接收的音频质量较差而发生了故障或间隙的呼叫的一小部分。|
 |howlingEventCount|Int32|呼叫期间媒体终结点检测到 howling 或 screeching 音频的次数。|
-|initialSignalLevelRootMeanSquare|双精度|呼叫的前30秒内传入信号的根平均平方（RMS）。|
+|initialSignalLevelRootMeanSquare|双精度|最高为呼叫的前30秒的传入信号的根平均平方 (RMS) 。|
 |lowSpeechLevelEventRatio|双精度|媒体终结点检测到较低语音级别导致发送音频质量较差的呼叫的小部分。|
 |lowSpeechToNoiseEventRatio|双精度|媒体终结点检测到的流量较低的流量的小到噪音级别导致音频质量较差的呼叫。|
 |micGlitchRate|双精度|媒体终结点麦克风的每5分钟间隔一次的故障次数。|

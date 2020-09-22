@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: afd5ba023d78fa969936915bb28187bb5fd17f1f
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 24262a733a4a8dcdc8724950b0c65bf31fdbc9a2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107876"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067529"
 ---
 # <a name="user-exportpersonaldata"></a>用户： exportPersonalData
 
@@ -45,7 +45,7 @@ POST /users/{id}/exportPersonalData
 
 | 参数    | 类型   |说明 |
 |:---------------|:--------|:----------|
-|storageLocation|String|这是 Azure 存储帐户的共享访问签名（SAS） URL，应导出数据的位置。|
+|storageLocation|String|这是 Azure 存储帐户 (SAS) URL 的共享访问签名，可将数据导出到其中。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `202 Accepted` 响应代码。 它不在响应正文中返回任何内容。 响应包含以下标头。
@@ -116,3 +116,5 @@ HTTP/1.1 202 Accepted
   "suppressions": [
   ]
 }-->
+
+

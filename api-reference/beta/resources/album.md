@@ -6,16 +6,16 @@ description: 描述属于相册的捆绑包的 Facet。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 60d653db52f71de6fe4079df25223b393ea18da3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b17a910a488e1fb5f051b4acc02d788a21d530d9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508357"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067410"
 ---
 # <a name="album-resource-type"></a>唱集资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,9 +27,9 @@ ms.locfileid: "42508357"
 |:------------------|:-------|:------------------------------------------------
 | coverImageItemId | String | [DriveItem][]的唯一标识符，它是唱片集的封面。
 
-**注意：** 如果尚未设置**coverImageItemId** ，则会自动选择影集的缩略图。
-设置**coverImageItemId**后，影集的缩略图将始终为与该 id 关联的项目。您可以通过修补[捆绑包项目][捆绑]并将**coverImageItemId**属性设置`album`为包含在影集中的图像的 id 来覆盖默认封面。
-若要删除自定义设置的封面，可以将**coverImageItemId**属性设置为 null，并再次自动选择默认属性。
+**注意：** 如果尚未设置 **coverImageItemId** ，则会自动选择影集的缩略图。
+设置 **coverImageItemId** 后，影集的缩略图将始终为与该 id 关联的项目。您可以通过修补 [捆绑包项目][捆绑] 并将 **coverImageItemId** 属性设置 `album` 为包含在影集中的图像的 id 来覆盖默认封面。
+若要删除自定义设置的封面，可以将 **coverImageItemId** 属性设置为 null，并再次自动选择默认属性。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -44,3 +44,5 @@ ms.locfileid: "42508357"
 [bundle]: bundle.md
 [driveItem]: driveItem.md
 [photo]: photo.md
+
+

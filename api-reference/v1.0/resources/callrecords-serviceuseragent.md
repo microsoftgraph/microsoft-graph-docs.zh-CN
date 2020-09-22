@@ -5,22 +5,22 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3de3b98abeb0403599f13abbdc9b8a75b2bb25ed
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: 052c177e2cef4adf5a882408c3cdef3a211dea73
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44492014"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069328"
 ---
 # <a name="serviceuseragent-resource-type"></a>serviceUserAgent 资源类型
 
 命名空间：microsoft.graph.callRecords
 
-表示呼叫中终结点的服务用户代理。 继承自[userAgent](callrecords-useragent.md)类型。
+表示呼叫中终结点的服务用户代理。 继承自 [userAgent](callrecords-useragent.md) 类型。
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |applicationVersion|String|标识此终结点使用的应用程序软件的版本。|
 |headerValue|String|此终结点报告的用户代理标头值。|

@@ -3,14 +3,14 @@ title: omaSettingBoolean 资源类型
 description: OMA 设置布尔定义。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa56968ec1b427a20f564fa5dddafd250050fa0f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dabc0f58836f240d229049befe9055fc87e57b2a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473046"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068992"
 ---
 # <a name="omasettingboolean-resource-type"></a>omaSettingBoolean 资源类型
 
@@ -26,7 +26,7 @@ OMA 设置布尔定义。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|显示名称。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|displayName|String|显示名称。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|String|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|Boolean|值。|
@@ -50,6 +50,8 @@ OMA 设置布尔定义。
   "value": true
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 666a3057cdb4e4d69cac076eef94aef8f1f3e96a
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: 41d0a1da6aa5f7bfba99788e01978b780e52027c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46657969"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067792"
 ---
 # <a name="reportroot-getm365appusercounts"></a>reportRoot： getM365AppUserCounts
 
@@ -22,7 +22,7 @@ ms.locfileid: "46657969"
 
 > **注意：** 若要详细了解不同的报表视图和名称，请参阅 [microsoft 365 报表-microsoft 365 应用程序使用](https://docs.microsoft.com/microsoft-365/admin/activity-reports/microsoft365-apps-usage)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -237,3 +237,5 @@ Content-Length: 188
   "suppressions": [
   ]
 }-->
+
+

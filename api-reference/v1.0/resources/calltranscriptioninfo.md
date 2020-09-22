@@ -5,12 +5,12 @@ author: rzhang
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8d4d03d9f01c93113912c1ea7c33f5c92bb31028
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: b825264623eb74507e43dcd9302499811377f3fb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312179"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069244"
 ---
 # <a name="calltranscriptioninfo-resource-type"></a>callTranscriptionInfo 资源类型
 
@@ -42,3 +42,4 @@ ms.locfileid: "47312179"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+

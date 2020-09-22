@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 6abdd6334d5a96dc740ce80ad119f3f8d6efb1b0
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: 900f8a0a79a9c7f84e17f1d19275926463061c4e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46658064"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067788"
 ---
 # <a name="reportroot-getm365appuserdetail"></a>reportRoot： getM365AppUserDetail
 
@@ -20,9 +20,9 @@ ms.locfileid: "46658064"
 
 获取提供有关用户已使用的应用程序和平台的详细信息的报告。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅[microsoft 365 报表-microsoft 365 应用程序使用](https://docs.microsoft.com/microsoft-365/admin/activity-reports/microsoft365-apps-usage)。
+> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [microsoft 365 报表-microsoft 365 应用程序使用](https://docs.microsoft.com/microsoft-365/admin/activity-reports/microsoft365-apps-usage)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,7 +54,7 @@ GET /reports/getM365AppUserDetail(date={date_value})
 
 > **注意：** 您需要 `period` `date` 在 URL 中设置或。
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
 
 此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是，如果要指定输出类型，则可以使用 OData `$format` 查询参数将默认输出设置为 text/csv 或 application/json。
 
@@ -70,11 +70,11 @@ GET /reports/getM365AppUserDetail(date={date_value})
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[report](../resources/intune-shared-report.md)对象。 报告数据包含在**report**对象的**content**属性中。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [report](../resources/intune-shared-report.md) 对象。 报告数据包含在**report**对象的**content**属性中。
 
 ### <a name="csv"></a>CSV
 
-如果成功，请求**content**属性将返回一个 `302 Found` 响应，该响应将重定向到报告的 preauthenticated 下载 URL。 可以在响应的 `Location` 头中找到此 URL。
+如果成功，请求 **content** 属性将返回一个 `302 Found` 响应，该响应将重定向到报告的 preauthenticated 下载 URL。 可以在响应的 `Location` 头中找到此 URL。
 
 预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 标头。
 
@@ -87,7 +87,7 @@ CSV 文件包含下面的列标题：
 - 报表周期
 - Windows
 - Mac
-- 移动
+- 移动版
 - Web
 - Outlook
 - Word
@@ -122,7 +122,7 @@ CSV 文件包含下面的列标题：
 
 ### <a name="json"></a>JSON
 
-如果成功，请求**content**属性将 `200 OK` 在响应正文中返回响应代码和 JSON 对象。
+如果成功，请求 **content** 属性将 `200 OK` 在响应正文中返回响应代码和 JSON 对象。
 
 此请求的默认页面大小为200个项目。
 
@@ -134,7 +134,7 @@ CSV 文件包含下面的列标题：
 
 #### <a name="request"></a>请求
 
-下面的示例显示了获取**内容**属性的请求。
+下面的示例显示了获取 **内容** 属性的请求。
 
 
 
@@ -196,7 +196,7 @@ Report Refresh Date,User Principal Name,Last Activation Date,Last Activity Date,
 
 #### <a name="request"></a>请求
 
-下面的示例显示了获取**内容**属性的请求。
+下面的示例显示了获取 **内容** 属性的请求。
 
 
 
@@ -304,3 +304,5 @@ Content-Length: 951
   "suppressions": [
   ]
 }-->
+
+

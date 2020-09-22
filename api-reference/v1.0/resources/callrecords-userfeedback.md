@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 468f6a58d3e70a37b15c1b18663958ea5193d59a
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: cd48f1ad6c81eaed5a3d7f5b30ebe3578b875dd8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44492009"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069279"
 ---
 # <a name="userfeedback-resource-type"></a>userFeedback 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "44492009"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |评估|callRecords。 userFeedbackRating|此终结点的用户提供的有关此会话的质量的分级。 可取值为：`notRated`、`bad`、`poor`、`fair`、`good`、`excellent` 或 `unknownFutureValue`。|
 |text|String|此终结点的用户提供的反馈文本，用于会话。|

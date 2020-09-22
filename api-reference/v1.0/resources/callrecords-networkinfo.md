@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 048b0cc3d6714286f079dc02843184809c70c617
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: fcf683d99d660d6ea69ee944542e6701d2201a9c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44492022"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069363"
 ---
 # <a name="networkinfo-resource-type"></a>networkInfo 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "44492022"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |bandwidthLowEventRatio|双精度|媒体终结点检测到可用带宽或带宽策略的呼叫数不足以导致发送的音频质量较差。|
 |basicServiceSetIdentifier|String|用于连接到网络的媒体终结点的无线 LAN 基本服务集标识符。|
@@ -29,7 +29,7 @@ ms.locfileid: "44492022"
 |dnsSuffix|String|与媒体终结点的网络适配器关联的 DNS 后缀。|
 |ipAddress|String|媒体终结点的 IP 地址。|
 |linkSpeed|Int64|媒体终结点使用的网络适配器报告的链路速度，以位/秒为单位。|
-|macAddress|String|媒体终结点的网络设备的媒体访问控制（MAC）地址。|
+|macAddress|String|媒体访问控制 (MAC) 媒体终结点的网络设备的地址。|
 |端口|Int32|媒体终结点使用的网络端口号。|
 |receivedQualityEventRatio|双精度|媒体终结点检测到网络的呼叫的分数导致收到的音频质量较差。|
 |reflexiveIPAddress|String|媒体终结点的 IP 地址，如媒体中继服务器所示。 这通常是与终结点关联的公共 internet IP 地址。|

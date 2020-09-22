@@ -5,26 +5,26 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 28bfd51a403077ee4ab456f6ca17fb176addf58d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 594061ff17f80bb1ab462647562947b16965d9dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508336"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067389"
 ---
 # <a name="alerttrigger-resource-type"></a>alertTrigger 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含有关触发检测的属性（警报实体中存在属性）的信息。
+包含有关触发检测 (属性存在于 alert 实体) 中的属性的信息。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
-|name|字符串|充当检测触发器的属性的名称。|
+|名称|String|充当检测触发器的属性的名称。|
 |type|String|用于解释的键：值对中的属性的类型。 例如，String、Boolean 等。|
 |value|String|充当检测触发器的属性的值。|
 
@@ -72,3 +72,5 @@ ms.locfileid: "42508336"
   "suppressions": []
 }
 -->
+
+

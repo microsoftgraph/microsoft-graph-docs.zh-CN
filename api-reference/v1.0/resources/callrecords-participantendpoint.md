@@ -5,22 +5,22 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ff590acb76d50da9d0772bdaece805a1db0cd26a
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: b425deeea49780ee752e8ace04078f3d1d6160a6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44492021"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069342"
 ---
 # <a name="participantendpoint-resource-type"></a>participantEndpoint 资源类型
 
 命名空间：microsoft.graph.callRecords
 
-表示呼叫中的参与者终结点。 终结点表示用户或用户-like 实体。 从[终结点](callrecords-endpoint.md)类型继承。
+表示呼叫中的参与者终结点。 终结点表示用户或用户-like 实体。 从 [终结点](callrecords-endpoint.md) 类型继承。
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |userAgent|[callRecords。 userAgent](callrecords-useragent.md)|此终结点报告的用户代理。|
 |反馈|[callRecords。 userFeedback](callrecords-userfeedback.md)|此终结点的用户提供的有关会话质量的反馈。|

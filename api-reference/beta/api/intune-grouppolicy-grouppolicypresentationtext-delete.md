@@ -3,24 +3,24 @@ title: 删除 groupPolicyPresentationText
 description: 删除 groupPolicyPresentationText。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c7fa5a776898fd69aca535970deca2933629448
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d0a7f7260764eb838218454b1e32ecee975f70ad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43408671"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068201"
 ---
 # <a name="delete-grouppolicypresentationtext"></a>删除 groupPolicyPresentationText
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除[groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md)。
+删除 [groupPolicyPresentationText](../resources/intune-grouppolicy-grouppolicypresentationtext.md)。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -66,6 +66,9 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfiguratio
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: decd9ec8058d2b5fbf51f7074eba68139f54e945
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 514409d2de4858e84f5669cb87e0041c3648ae2f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43109003"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069520"
 ---
 # <a name="list-calendargroups"></a>List calendarGroups
 
@@ -112,3 +112,4 @@ Content-length: 155
   "suppressions": [
   ]
 }-->
+

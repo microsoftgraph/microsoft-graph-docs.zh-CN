@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9856ab64f7af09a0c920fe044737f063c1385a58
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: ea74071af99547b558dcda203520a864f4352578
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107918"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067564"
 ---
 # <a name="user-delta"></a>user: delta
 
@@ -308,3 +308,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

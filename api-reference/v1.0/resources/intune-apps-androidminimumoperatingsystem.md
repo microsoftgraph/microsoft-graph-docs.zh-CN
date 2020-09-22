@@ -3,14 +3,14 @@ title: androidMinimumOperatingSystem 资源类型
 description: 包含 Android 移动应用需要的最低操作系统的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ef599e37033c6c0e1e101925559560d6a970bbae
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 73f013dd27066d2e79da8d9fe89e14c4d9bd026c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43397357"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069062"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>androidMinimumOperatingSystem 资源类型
 
@@ -23,13 +23,13 @@ ms.locfileid: "43397357"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|v4_0|Boolean|版本 4.0 或更高版本。|
-|v4_0_3|Boolean|版本 4.0.3 或更高版本。|
-|v4_1|Boolean|版本 4.1 或更高版本。|
-|v4_2|Boolean|版本 4.2 或更高版本。|
-|v4_3|Boolean|版本 4.3 或更高版本。|
-|v4_4|Boolean|版本 4.4 或更高版本。|
-|v5_0|Boolean|版本 5.0 或更高版本。|
+|v4_0|布尔值|版本 4.0 或更高版本。|
+|v4_0_3|布尔值|版本 4.0.3 或更高版本。|
+|v4_1|布尔值|版本 4.1 或更高版本。|
+|v4_2|布尔值|版本 4.2 或更高版本。|
+|v4_3|布尔值|版本 4.3 或更高版本。|
+|v4_4|布尔值|版本 4.4 或更高版本。|
+|v5_0|布尔值|版本 5.0 或更高版本。|
 |v5_1|布尔值|版本 5.1 或更高版本。|
 
 ## <a name="relationships"></a>关系
@@ -55,6 +55,8 @@ ms.locfileid: "43397357"
   "v5_1": true
 }
 ```
+
+
 
 
 

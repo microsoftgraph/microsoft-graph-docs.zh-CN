@@ -5,22 +5,22 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0dc1c8709eca693e883d03dfe96c869a021e799c
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: ae7d976c9dbf94aadd11af1d48f8615f5fab14a2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491948"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069442"
 ---
 # <a name="endpoint-resource-type"></a>终结点资源类型
 
 命名空间：microsoft.graph.callRecords
 
-表示调用中的终结点。 终结点可以是用户的设备、会议、应用程序/机器人等。[ParticipantEndpoint](callrecords-participantendpoint.md)和[serviceEndpoint](callrecords-serviceendpoint.md)类型继承自此类型。
+表示调用中的终结点。 终结点可以是用户的设备、会议、应用程序/机器人等。 [ParticipantEndpoint](callrecords-participantendpoint.md) 和 [serviceEndpoint](callrecords-serviceendpoint.md) 类型继承自此类型。
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |userAgent|[callRecords。 userAgent](callrecords-useragent.md)|此终结点报告的用户代理。|
 

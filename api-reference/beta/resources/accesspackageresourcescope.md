@@ -5,31 +5,31 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 242c90e9d0e506dbeb6576975305d0a0f8397f86
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 355838fa9f93cef7d44972b98af317a74036e421
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508497"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067522"
 ---
 # <a name="accesspackageresourcescope-resource-type"></a>accessPackageResourceScope 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包资源作用域是对包含多个作用域的资源中的范围的引用。
+在 [AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包资源作用域是对包含多个作用域的资源中的范围的引用。
 
-您可以通过使用[List accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md)返回[accessPackageResourceRoleScope](accesspackageresourcerolescope.md)对象的集合，来确定已添加到 access 程序包的资源的访问包资源范围。
+您可以通过使用 [List accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) 返回 [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) 对象的集合，来确定已添加到 access 程序包的资源的访问包资源范围。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |说明|String|作用域的说明。|
-|displayName|字符串|作用域的显示名称。|
-|id|字符串| 只读。|
-|isRootScope|布尔|如此如果作用域在层次结构中排列，这是资源的顶部或根作用域。|
+|displayName|String|作用域的显示名称。|
+|id|String| 只读。|
+|isRootScope|Boolean|如此如果作用域在层次结构中排列，这是资源的顶部或根作用域。|
 |originId|String|在源系统中定义的资源中的范围的唯一标识符。|
 |originSystem|String|作用域的源系统。|
 |roleOriginId|String|角色的原始系统（如果不同）。|
@@ -77,3 +77,5 @@ ms.locfileid: "42508497"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

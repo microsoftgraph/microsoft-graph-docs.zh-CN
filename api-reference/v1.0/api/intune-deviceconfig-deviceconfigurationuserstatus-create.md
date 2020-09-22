@@ -3,14 +3,14 @@ title: 创建 deviceConfigurationUserStatus
 description: 创建新的 deviceConfigurationUserStatus 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 25d56d5fd4ac6b16fc71cd01f2c7e31f51432526
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 747cfce57540c4c19c2774f57fc907e7dbcded12
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450631"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066857"
 ---
 # <a name="create-deviceconfigurationuserstatus"></a>创建 deviceConfigurationUserStatus
 
@@ -56,7 +56,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses
 |devicesCount|Int32|该用户的设备计数。|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|策略报告的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间。|
-|userPrincipalName|字符串|UserPrincipalName。|
+|userPrincipalName|String|UserPrincipalName。|
 
 
 
@@ -99,6 +99,9 @@ Content-Length: 339
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
 
 
 

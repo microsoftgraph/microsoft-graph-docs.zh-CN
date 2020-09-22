@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fb46223abd79a824356763210e01c6192cf5fb97
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 666cd9d9aa366a92c275e20b9abd7f855acb1a35
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47842923"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068068"
 ---
 # <a name="update-linkedresource"></a>更新 linkedResource
 命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -115,3 +115,5 @@ Content-Type: application/json
   "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 }
 ```
+
+

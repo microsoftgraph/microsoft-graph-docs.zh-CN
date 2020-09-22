@@ -3,14 +3,14 @@ title: 创建 enrollmentTroubleshootingEvent
 description: 创建新的 enrollmentTroubleshootingEvent 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 770a784cacd9b74529142e3b81ca3cef0f76af92
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 489fc29a0aaa6c40000e3c640c290bf8c145d1fd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43368742"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066570"
 ---
 # <a name="create-enrollmenttroubleshootingevent"></a>创建 enrollmentTroubleshootingEvent
 
@@ -51,7 +51,7 @@ POST /deviceManagement/troubleshootingEvents
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 UUID。继承自 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|id|String|对象的 UUID。继承自 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |eventDateTime|DateTimeOffset|事件发生的时间。 继承自 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |correlationId|String|用于跟踪服务中的故障的 ID。 继承自 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |managedDeviceIdentifier|String|Intune 创建或收集的设备标识符。|
@@ -114,6 +114,9 @@ Content-Length: 558
   "failureReason": "Failure Reason value"
 }
 ```
+
+
+
 
 
 

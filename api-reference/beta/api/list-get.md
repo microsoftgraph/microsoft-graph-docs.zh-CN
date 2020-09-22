@@ -5,12 +5,12 @@ description: 返回列表的元数据。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: bac6d7d28971e7850f9a9360e93346f4e9a902a6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 117a6c04cebc19927b7f62ec82aa585ca51f4863
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470280"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068047"
 ---
 # <a name="get-metadata-for-a-list"></a>获取列表的元数据
 
@@ -18,7 +18,7 @@ ms.locfileid: "43470280"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回[列表][]的元数据。
+返回 [列表][]的元数据。
 
 [列表]: ../resources/list.md
 
@@ -93,7 +93,7 @@ Content-type: application/json
 借助 `select` 和 `expand` 语句，可以通过单个请求中检索列表元数据、列定义和列表项。
 
 #### <a name="request"></a>请求
-下面的示例演示如何从 SharePoint Online 列表标题中获取列表。
+下面示例演示如何从 SharePoint Online 列表标题获取列表。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-list" } -->
@@ -220,7 +220,7 @@ Content-type: application/json
 <!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
 
 下面的示例演示如何获取包含三列的列表的元数据：名称、数量和类别。
-[托管元数据](/sharepoint/managed-metadata)列```Category``` ，如作为术语 ID 和术语名称对的返回值。
+[托管元数据](/sharepoint/managed-metadata) 列，如 ```Category``` 作为术语 ID 和术语名称对的返回值。
 ```http
 GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Quantity,Category))
 ```
@@ -288,3 +288,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

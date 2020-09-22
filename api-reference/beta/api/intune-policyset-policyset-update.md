@@ -3,20 +3,20 @@ title: 更新操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 406c27f5e57c0aa4ac68e66ab53d1bdd77b9811b
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: a9a9dcf2fafa7caa4e16d4729b4ba80e3b624c96
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791719"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068110"
 ---
 # <a name="update-action"></a>更新操作
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,10 +53,10 @@ POST /deviceAppManagement/policySets/{policySetId}/update
 
 |属性|类型|说明|
 |:---|:---|:---|
-|addedPolicySetItems|[policySetItem](../resources/intune-policyset-policysetitem.md)集合|尚未记录|
-|updatedPolicySetItems|[policySetItem](../resources/intune-policyset-policysetitem.md)集合|尚未记录|
+|addedPolicySetItems|[policySetItem](../resources/intune-policyset-policysetitem.md) 集合|尚未记录|
+|updatedPolicySetItems|[policySetItem](../resources/intune-policyset-policysetitem.md) 集合|尚未记录|
 |deletedPolicySetItems|String collection|尚未记录|
-|assignments|[policySetAssignment](../resources/intune-policyset-policysetassignment.md)集合|尚未记录|
+|assignments|[policySetAssignment](../resources/intune-policyset-policysetassignment.md) 集合|尚未记录|
 
 
 
@@ -129,6 +129,9 @@ Content-length: 1692
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

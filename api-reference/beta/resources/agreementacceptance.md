@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 18bcf00cad681d3003faf2dce442e4ea1f58bdb0
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: f3bad64c1cb691c5a5f5c1c5377bcb4e0188f184
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643973"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067502"
 ---
 # <a name="agreementacceptance-resource-type"></a>agreementAcceptance 资源类型
 
@@ -41,7 +41,7 @@ ms.locfileid: "46643973"
 |deviceOSVersion|String|用于接受协议的设备的操作系统版本。    |
 |expirationDateTime|DateTimeOffset|接受的到期日期时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |id|String| 只读。|
-|recordedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|recordedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |state|string| 可取值为：`accepted`、`declined`。|
 |userDisplayName|String|记录接受时的用户的显示名称。|
 |userEmail|String|记录接受时用户的电子邮件。|
@@ -95,3 +95,5 @@ ms.locfileid: "46643973"
   "suppressions": []
 }
 -->
+
+

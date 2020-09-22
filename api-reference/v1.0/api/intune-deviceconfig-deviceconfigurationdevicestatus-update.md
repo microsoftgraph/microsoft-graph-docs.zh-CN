@@ -3,14 +3,14 @@ title: 更新 deviceConfigurationDeviceStatus
 description: 更新 deviceConfigurationDeviceStatus 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e12d6a531f032ba422c4b080878106a97eb44562
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6ab9bbb6f413a61f189aa99b15f1138a69613a0b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450668"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066920"
 ---
 # <a name="update-deviceconfigurationdevicestatus"></a>更新 deviceConfigurationDeviceStatus
 
@@ -105,6 +105,9 @@ Content-Length: 478
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
 
 
 

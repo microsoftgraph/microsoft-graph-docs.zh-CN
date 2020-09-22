@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 0fb557e35248dbc1521d1b494c831146b4e30da8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 52332c04591bc507416df325786f6f263fe7ca6e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463738"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069076"
 ---
 # <a name="emailaddress-resource-type"></a>emailAddress 资源类型
 
@@ -53,3 +53,4 @@ ms.locfileid: "43463738"
   "section": "documentation",
   "tocPath": ""
 }-->
+

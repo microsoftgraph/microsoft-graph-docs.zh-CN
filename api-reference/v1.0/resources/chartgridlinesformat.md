@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: c7be34951862ab6a2ce28f738482d4609f4edc71
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 84cce57c9105aa9c852579433dac9ffa73e289ef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531840"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069188"
 ---
 # <a name="chartgridlinesformat-resource-type"></a>ChartGridlinesFormat 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "42531840"
 封装图表网格线的格式属性。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 无
 
 ## <a name="properties"></a>属性
@@ -58,3 +58,4 @@ ms.locfileid: "42531840"
   "section": "documentation",
   "tocPath": ""
 }-->
+

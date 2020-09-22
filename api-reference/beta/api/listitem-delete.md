@@ -6,16 +6,16 @@ title: 从 SharePoint 列表中删除条目
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f392ec8699fb2e079446c6f72c12c844db62852c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 69f16f69ffac98b7ad30ea92dc557ec252cf872b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457132"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067977"
 ---
 # <a name="delete-an-item-from-a-list"></a>从列表中删除项
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -98,3 +98,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

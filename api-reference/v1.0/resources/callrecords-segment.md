@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6c38dac3d0e2e30c8b90e9fb0029d463b700f124
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: 9b722b6e306c4eb52de19827580b1b0d2807d0e5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44492018"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069335"
 ---
 # <a name="segment-resource-type"></a>分段资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "44492018"
 
 表示用户用户通信的一部分或会议呼叫时的用户会议通信。 典型的 VOIP 呼叫将每个会话包含一个分段。 在某些情况下，例如 PSTN 呼叫，由于连接呼叫需要额外的服务器到服务器通信，因此每个会话会有多个分段。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
-不存在直接访问分段的方法。 请使用[Get callRecord](../api/callrecords-callrecord-get.md) api With `$expand=sessions($expand=segments)` 或[List session](../api/callrecords-session-list.md) api with `$expand=segments` to 获取[callRecord](callrecords-callrecord.md)的段。
+不存在直接访问分段的方法。 请使用 [Get callRecord](../api/callrecords-callrecord-get.md) api With `$expand=sessions($expand=segments)` 或 [List session](../api/callrecords-session-list.md) api with `$expand=segments` to 获取 [callRecord](callrecords-callrecord.md)的段。
 
 ## <a name="properties"></a>属性
 
@@ -30,7 +30,7 @@ ms.locfileid: "44492018"
 |者|[callRecords。](callrecords-endpoint.md)|启动了此段的终结点。|
 |约定|[callRecords。](callrecords-endpoint.md)|应答此段的终结点。|
 |failureInfo|[callRecords。 failureInfo](callrecords-failureinfo.md)|与分段相关联的失败信息失败。|
-|光盘|[Microsoft callRecords](callrecords-media.md)集合|与此分段关联的媒体。|
+|光盘|[Microsoft callRecords](callrecords-media.md) 集合|与此分段关联的媒体。|
 |startDateTime|DateTimeOffset|段启动时的 UTC 时间。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |endDateTime|DateTimeOffset|段结束时的 UTC 时间。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 

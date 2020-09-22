@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 10d7d5b8c88feb2e6bcc2fb90a5ea7bd97f4a1fc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8d95b19004b977f5170c5881777f25d2e66ed6bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508756"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066556"
 ---
 # <a name="workbookrange-columnsbefore"></a>workbookRange: columnsBefore
 
@@ -41,7 +41,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
 |:---------------|:--------|:----------|
 |count|Int32|可选。生成的范围中要包含的列数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。|
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -119,3 +119,4 @@ Content-length: 157
   "suppressions": [
   ]
 }-->
+

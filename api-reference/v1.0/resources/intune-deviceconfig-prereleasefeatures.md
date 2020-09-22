@@ -3,14 +3,14 @@ title: prereleaseFeatures 枚举类型
 description: 预发行版功能的可能值。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 474d59bc9ebbf65fae58bd279bd4b45beaa1f01c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bbbc182fd55675c71f85bde722ea795510ed950f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472949"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066472"
 ---
 # <a name="prereleasefeatures-enum-type"></a>prereleaseFeatures 枚举类型
 
@@ -24,9 +24,11 @@ ms.locfileid: "43472949"
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|用户定义，默认值，无意向。|
-|settingsOnly|1|仅设置预发布功能。|
-|settingsAndExperimentations|双面|设置和 experimentations 预发布功能。|
+|settingsOnly|1 |仅设置预发布功能。|
+|settingsAndExperimentations|2 |设置和 experimentations 预发布功能。|
 |notAllowed|第三章|不允许使用预发布功能。|
+
+
 
 
 

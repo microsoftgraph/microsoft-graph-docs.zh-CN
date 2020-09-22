@@ -5,20 +5,20 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 89f487b5edcf1b176a67d10b0ae45d8dd62c46d3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d3b1f37e6ac5f33d6d59988054d5abfedf5e68e7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447260"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066283"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>organizerMeetingInfo 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 包含有关会议组织者的详细信息。 
 
-若要加入现有会议，必须提供 organizerMeetingInfo 和[chatInfo](./chatinfo.md)资源类型或[tokenMeetingInfo](./tokenmeetinginfo.md)资源类型的组合。
+若要加入现有会议，必须提供 organizerMeetingInfo 和 [chatInfo](./chatinfo.md) 资源类型或 [tokenMeetingInfo](./tokenmeetinginfo.md) 资源类型的组合。
 
 ## <a name="properties"></a>属性
 
@@ -55,3 +55,4 @@ ms.locfileid: "42447260"
   "suppressions": []
 }
 -->
+

@@ -6,12 +6,12 @@ title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 68fa883e7383c0f064aeece1d61a1788fed49ed6
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 0e24d33cedceb65bb607282f329d72ec0ba5ab1e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43227741"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067392"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -119,12 +119,12 @@ ms.locfileid: "43227741"
 | file                 | [file][]           | 文件元数据（如果此项是一个文件）。只读。
 | fileSystemInfo       | [fileSystemInfo][] | 客户端上的文件系统信息。读写。
 | folder               | [folder][]         | 文件夹元数据（如果此项是一个文件夹）。只读。
-| id                   | 字符串             | 项在驱动器中的唯一标识符。只读。
+| id                   | String             | 项在驱动器中的唯一标识符。只读。
 | image                | [image][]          | 图像元数据（如果此项是一个图像）。只读。
 | lastModifiedBy       | [identitySet][]    | 上次修改项目的用户、设备和应用程序的标识。只读。
 | lastModifiedDateTime | DateTimeOffset     | 上次修改项目的日期和时间。只读。
 | location             | [geoCoordinates][] | 位置元数据（如果此项包含位置数据）。只读。
-| name                 | 字符串             | 项目名称（文件名和扩展名）。读写。
+| name                 | String             | 项目名称（文件名和扩展名）。读写。
 | package              | [package][]        | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。
 | parentReference      | [itemReference][]  | 父信息（如果此项具有父级）。读写。
 | pendingOperations    | [pendingOperations][] | 如果存在，则指示指示可能影响 driveItem 状态的一个或多个操作正在等待完成。 只读。
@@ -150,13 +150,13 @@ ms.locfileid: "43227741"
 | activities         | [itemActivity][] 集合 | 最近发生在此项上的活动的列表。
 | 分析          | [itemAnalytics][] 资源  | 此项目上发生的查看活动的相关分析。
 | children           | driveItem 集合        | 包含项目直接子项的 Item 对象的集合。仅表示文件夹的项目包含子项。只读。可为 Null。
-| createdByUser      | [用户][]                    | 创建了项的用户的身份。 只读。
+| createdByUser      | [user][]                    | 创建了项的用户的身份。 只读。
 | lastModifiedByUser | [user][]                    | 上次修改项的用户的标识。 只读。
-| listItem           | [listItem][]                | 对于 SharePoint 中的驱动器，关联的文档库列表项。 此为只读属性。 可为 null。
+| listItem           | [listItem][]                | 对于 SharePoint 中的驱动器，关联的文档库列表项。 只读。 可为 null。
 | permissions        | [permission][] 集合   | 项目的权限集。只读。可为 Null。
 | 订阅      | [订阅][]集合 | 项目上的订阅集。 仅在驱动器根目录上支持。
 | 缩略图         | [thumbnailSet][] 集合 | 包含与项目关联的 [ThumbnailSet][] 对象的集合。有关详细信息，请参阅 [获取缩略图][]只读。可为 Null。
-| 版本           | [driveItemVersion][] 集合 | 旧版本项的列表。 有关详细信息，请参阅[获取旧版本][]。 只读。 可为 NULL。
+| 版本           | [driveItemVersion][] 集合 | 旧版本项的列表。 有关详细信息，请参阅[获取旧版本][]。 只读。 可为 Null。
 | 工作簿           | [workbook][]                | 如果是 Excel 工作表文件，访问工作簿 API 以使用工作表的内容。 可为 Null。
 
 ## <a name="instance-attributes"></a>实例属性
@@ -189,7 +189,7 @@ ms.locfileid: "43227741"
 | [更新项目](../api/driveitem-update.md)                | `PATCH /drive/items/{item-id}`
 | [上载内容](../api/driveitem-put-content.md)        | `PUT /drive/items/{item-id}/content`
 | [下载内容](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
-| [下载特定文件格式][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
+| [下载特定格式文件][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
 | [删除项](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`
 | [还原项目](../api/driveitem-restore.md)              | `POST /drive/items/{item-id}/restore`
 | [移动项目](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
@@ -205,8 +205,8 @@ ms.locfileid: "43227741"
 | [删除权限](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
 | [获取 WebSocket 频道][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
 | [预览项目][item-preview]                             | `POST /drive/items/{item-id}/preview`
-| [登记](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
-| [退房](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
+| [签入](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
+| [签出](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
 
 [item-preview]: ../api/driveitem-preview.md
 [获取分析结果]: ../api/itemanalytics-get.md
@@ -267,3 +267,5 @@ ms.locfileid: "43227741"
   "suppressions": []
 }
 -->
+
+

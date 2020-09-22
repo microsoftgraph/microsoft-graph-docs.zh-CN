@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5962b3f5aed89c7f2c0b01be3f8b4a035ac463da
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 8edbc7dcc770429fd4c1ccaf7bc3374d973cd2ed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319606"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069216"
 ---
 # <a name="cancelmediaprocessingoperation-resource-type"></a>CancelMediaProcessingOperation 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "47319606"
 | 适用 | String                      | 客户端上下文。                                                             |
 | id            | String                      | 服务器操作 ID。 只读。                                             |
 | resultInfo    | [resultInfo](resultinfo.md) | 结果信息。  只读。                                             |
-| 状态        | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。 |
+| status        | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。 |
 
 ## <a name="relationships"></a>关系
 无。
@@ -61,3 +61,4 @@ ms.locfileid: "47319606"
   "section": "documentation",
   "tocPath": ""
 }-->
+

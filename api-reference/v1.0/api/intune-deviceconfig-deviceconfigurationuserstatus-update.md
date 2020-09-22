@@ -3,14 +3,14 @@ title: 更新 deviceConfigurationUserStatus
 description: 更新 deviceConfigurationUserStatus 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 984f1b35ff10cc0e0340567a4fcc5162ae743b99
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 436fdb8064580bed6256506f3fd1ce684fcf528b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43388063"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066815"
 ---
 # <a name="update-deviceconfigurationuserstatus"></a>更新 deviceConfigurationUserStatus
 
@@ -56,7 +56,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuse
 |devicesCount|Int32|该用户的设备计数。|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|策略报告的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间。|
-|userPrincipalName|字符串|UserPrincipalName。|
+|userPrincipalName|String|UserPrincipalName。|
 
 
 
@@ -99,6 +99,9 @@ Content-Length: 339
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
 
 
 

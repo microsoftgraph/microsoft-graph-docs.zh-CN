@@ -5,16 +5,16 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 1b146e4b30e5643fdb5b1883618be99e996d542d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ff8f0a16fa5fdd3299feb8fe509d78023558408e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453638"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067613"
 ---
 # <a name="create-sectiongroup"></a>创建 sectionGroup
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -127,3 +127,5 @@ Content-length: 305
   ]
 }
 -->
+
+

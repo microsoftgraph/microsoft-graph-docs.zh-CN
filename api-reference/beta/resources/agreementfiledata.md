@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: raprakasMSFT
-ms.openlocfilehash: cb982ff8019c4b23c986de6a3c6f61501e56bba7
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 7419b040945128e06c4693450626931b03b0e033
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807563"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067452"
 ---
 # <a name="agreementfiledata-resource-type"></a>agreementFileData 资源类型
 
@@ -56,3 +56,5 @@ ms.locfileid: "46807563"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e45724b994000289cad21821608f58abeb5b9742
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 227f391a2b97ed678a3c8eef34602964534d19eb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181741"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066318"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -137,3 +137,4 @@ ms.locfileid: "43181741"
   ],
   "tocPath": ""
 }-->
+

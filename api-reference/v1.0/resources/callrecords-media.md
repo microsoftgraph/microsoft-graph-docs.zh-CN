@@ -5,29 +5,29 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0eeefd772eb7050a829c7eaf9d65f92958c8fa64
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: edd4849cc6922695f7c03909ac04348b4171d5a9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491946"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069391"
 ---
 # <a name="media-resource-type"></a>媒体资源类型
 
 命名空间：microsoft.graph.callRecords
 
-表示在呼叫中使用的媒体（音频、视频、基于视频的屏幕共享等）。
+表示在呼叫中使用的媒体 (音频、视频、基于视频的屏幕共享等 ) 。
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |label|String|媒体在媒体协商阶段中的标识方式。|
 |callerDevice|[callRecords。 deviceInfo](callrecords-deviceinfo.md)|与此媒体的呼叫方终结点关联的设备信息。|
 |callerNetwork|[callRecords。 networkInfo](callrecords-networkinfo.md)|与此媒体的呼叫方终结点关联的网络信息。|
 |calleeDevice|[callRecords。 deviceInfo](callrecords-deviceinfo.md)|与此媒体的被呼叫者终结点关联的设备信息。|
 |calleeNetwork|[callRecords。 networkInfo](callrecords-networkinfo.md)|与此媒体的被呼叫者终结点关联的网络信息。|
-|连续流|[callRecords](callrecords-mediastream.md)集合的 mediaStream|与此媒体关联的网络流。|
+|连续流|[callRecords](callrecords-mediastream.md) 集合的 mediaStream|与此媒体关联的网络流。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -3,14 +3,14 @@ title: 更新 iosUpdateConfiguration
 description: 更新 iosUpdateConfiguration 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b41eed80f91122865b49d0f6f1c091c524ec6658
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4c8addf2f6bdfe9a517406badd26c1df2ab8fa18
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454232"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066654"
 ---
 # <a name="update-iosupdateconfiguration"></a>更新 iosUpdateConfiguration
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -59,7 +59,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |activeHoursStart|TimeOfDay|使用时段开始时间（使用时段表示不应发生更新安装的时间范围）|
 |activeHoursEnd|TimeOfDay|使用时段结束时间（使用时段表示不应发生更新安装的时间范围）|
-|scheduledInstallDays|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)集合|配置为使用时段所对应的一周的某一天。 该集合最多可包含 7 个元素。 可取值为：`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。|
+|scheduledInstallDays|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md) 集合|配置为使用时段所对应的一周的某一天。 该集合最多可包含 7 个元素。 可取值为：`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。|
 |utcTimeOffsetInMinutes|Int32|UTC 时间偏移，用分钟表示|
 
 
@@ -113,6 +113,9 @@ Content-Length: 497
   "utcTimeOffsetInMinutes": 6
 }
 ```
+
+
+
 
 
 

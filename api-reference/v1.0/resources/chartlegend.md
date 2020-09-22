@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 349158b77a2f98f95c27ac725c400a52d8d33923
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8b05e4c130eebe3ffc23af2389feb2846ef1474e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533117"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069174"
 ---
 # <a name="chartlegend-resource-type"></a>ChartLegend 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "42533117"
 表示图表中的图例。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -70,3 +70,4 @@ ms.locfileid: "42533117"
   "section": "documentation",
   "tocPath": ""
 }-->
+

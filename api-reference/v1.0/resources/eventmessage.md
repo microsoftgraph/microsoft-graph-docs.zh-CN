@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 552b5c521319c53a246d4a4507fb34080533427a
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: 060061e6fb4b2f5ab50312a7343c152a99a9cfba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427310"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066530"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage 资源类型
 
@@ -18,20 +18,20 @@ ms.locfileid: "45427310"
 
 表示会议请求、取消或响应（可以是下列任一行为：接受、暂定接受或拒绝）的邮件。
 
-**eventMessage** 实体派生自 [message](message.md)。 **eventMessage**是[eventMessageRequest](eventmessagerequest.md)和[eventMessageResponse](eventmessageresponse.md)的基本类型。 **meetingMessageType** 属性确定事件邮件类型。
+**eventMessage** 实体派生自 [message](message.md)。 **eventMessage** 是 [eventMessageRequest](eventmessagerequest.md) 和 [eventMessageResponse](eventmessageresponse.md)的基本类型。 **meetingMessageType** 属性确定事件邮件类型。
 
-当组织者或应用发送会议请求时，会议请求以**eventMessage**实例的形式到达被邀请者的邮箱中， **meetingMessageType**为**meetingRequest**。 此外，Outlook 会自动在被邀请者的日历中创建一个**事件**实例，并将**showAs**属性为 "**暂定**"。 
+当组织者或应用发送会议请求时，会议请求以 **eventMessage** 实例的形式到达被邀请者的邮箱中， **meetingMessageType** 为 **meetingRequest**。 此外，Outlook 会自动在被邀请者的日历中创建一个 **事件** 实例，并将 **showAs** 属性为 " **暂定**"。 
 
-若要获取被邀请者邮箱中关联事件的属性，应用可以使用**eventMessage**的**事件**导航属性，如此[get 事件消息示例](../api/eventmessage-get.md#example-2)中所示。 应用程序还可以通过编程方式代表被邀请者响应事件，即[接受](../api/event-accept.md)、[暂时接受](../api/event-tentativelyaccept.md)或[拒绝](../api/event-decline.md)事件。
+若要获取被邀请者邮箱中关联事件的属性，应用可以使用**eventMessage**的**事件**导航属性，如此[get 事件消息示例](../api/eventmessage-get.md#example-2)中所示。 应用程序还可以通过编程方式代表被邀请者响应事件，即 [接受](../api/event-accept.md)、 [暂时接受](../api/event-tentativelyaccept.md)或 [拒绝](../api/event-decline.md) 事件。
 
-除了会议请求之外，在被邀请者的邮箱中可以找到**eventMessage**实例，因为事件组织者取消了会议，或者由于与会者响应会议请求而在组织者邮箱中。 应用可以对事件邮件执行操作，就像对邮件执行操作一样，但略有不同。
+除了会议请求之外，在被邀请者的邮箱中可以找到 **eventMessage** 实例，因为事件组织者取消了会议，或者由于与会者响应会议请求而在组织者邮箱中。 应用可以对事件邮件执行操作，就像对邮件执行操作一样，但略有不同。
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |[获取 eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |读取 eventmessage 对象的属性和关系。|
 |[更新](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |更新 eventMessage 对象。 |
-|[删除](../api/message-delete.md) | None |更新 eventMessage 对象。 |
+|[删除](../api/message-delete.md) | 无 |更新 eventMessage 对象。 |
 |[copy](../api/message-copy.md)|[message](message.md)|将邮件复制到文件夹。|
 |[createForward](../api/message-createforward.md)|[message](message.md)|创建转发邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
 |[createReply](../api/message-createreply.md)|[message](message.md)|创建回复邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
@@ -61,14 +61,14 @@ ms.locfileid: "45427310"
 |bodyPreview|字符串|邮件正文中的前 255 个字符。文本格式。|
 |categories|String collection|与邮件关联的类别。|
 |ccRecipients|[recipient](recipient.md) collection|邮件的抄送收件人。|
-|changeKey|字符串|邮件的版本。|
+|changeKey|String|邮件的版本。|
 |conversationId|String|电子邮件所属对话的 ID。|
 |conversationIndex|Edm.Binary|指出消息在对话中的位置。|
 |createdDateTime|DateTimeOffset|创建邮件的日期和时间。|
 |flag|[followupFlag](followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标志值。|
 |发件人|[recipient](recipient.md)|发送邮件邮箱的所有者。 在多数情况中，此数值与“**发件人**”属性相同，但共享或委派情景除外。 值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
 |hasAttachments|Boolean|指示邮件是否包含附件。|
-|id|字符串|事件消息的唯一标识符（请注意，如果移动或更改了邮件，此值可能会更改）|
+|id|String|事件消息的唯一标识符 (请注意，如果移动或更改了邮件，此值可能会发生变化) |
 |importance|String| 邮件的重要性：`low`、`normal`、`high`。|
 |inferenceClassification|String| 可能的值为： `focused` 、 `other` 。|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 定义的邮件头集合，它提供邮件获取的从发件人到收件人的网络路径的详细信息。 只读。|
@@ -179,3 +179,4 @@ ms.locfileid: "45427310"
   "section": "documentation",
   "tocPath": ""
 }-->
+

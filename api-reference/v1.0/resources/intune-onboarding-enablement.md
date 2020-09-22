@@ -3,14 +3,14 @@ title: 启用的枚举类型
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d03a6965234ab6b65f12f4b0ec54ba9cbe3c2282
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4e3f1b0244cd113a96ab9af780a8e5fbcb623538
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459422"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066395"
 ---
 # <a name="enablement-enum-type"></a>启用的枚举类型
 
@@ -24,8 +24,10 @@ ms.locfileid: "43459422"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|尚未记录|
-|enabled|1|尚未记录|
-|禁用|双面|尚未记录|
+|enabled|1 |尚未记录|
+|禁用|2 |尚未记录|
+
+
 
 
 

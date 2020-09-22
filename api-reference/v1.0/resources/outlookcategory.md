@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: bc72d049d220ca7fd2cb3f6edeafabad41b09cb5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 299705f1ceb4e429f28d481721caafee0d7164c4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43353957"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066290"
 ---
 # <a name="outlookcategory-resource-type"></a>outlookCategory 资源类型
 
@@ -88,7 +88,7 @@ ms.locfileid: "43353957"
 |[Get category](../api/outlookcategory-get.md) | [outlookCategory](../resources/outlookcategory.md) |获取指定的 **outlookCategory** 对象的属性和关系。|
 |[Create](../api/outlookuser-post-mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) |在用户主类别列表中创建 **outlookCategory** 对象。|
 |[Update](../api/outlookcategory-update.md) | [outlookCategory](../resources/outlookcategory.md) |更新指定 **outlookCategory** 对象的可写属性 **color**。 |
-|[Delete](../api/outlookcategory-delete.md) | 无 |删除指定的 **outlookCategory** 对象。 |
+|[删除](../api/outlookcategory-delete.md) | 无 |删除指定的 **outlookCategory** 对象。 |
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -105,3 +105,4 @@ ms.locfileid: "43353957"
   "tocPath": ""
 }-->
  
+

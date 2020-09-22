@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4f19b214d1e73b3809f8ea905b9ee561476250e6
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: d30672b11d7005d63cffc26edd75d30d7fb7f21a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44894877"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067957"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -167,3 +167,5 @@ Content-length: 317
   ]
 }
 -->
+
+

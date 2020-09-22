@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5c3f126ce44bb71094f7b83f71727b1d82c8be2d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 940dafcd566e5d83327cce671d91de3268ab7f13
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448589"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067984"
 ---
 # <a name="get-message"></a>获取邮件
 
@@ -18,9 +18,9 @@ ms.locfileid: "43448589"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[message](../resources/message.md)对象的属性和关系。
+检索 [message](../resources/message.md) 对象的属性和关系。
 
-例如，您可以收到一条消息，并在邮件中展开所有[提及](../resources/mention.md)的实例。
+例如，您可以收到一条消息，并在邮件中展开所有 [提及](../resources/mention.md) 的实例。
 
 可使用 `$value` 参数来[获取邮件的 MIME 内容](/graph/outlook-get-mime-message)。
 
@@ -75,7 +75,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 
 使用 `$value` 参数获取邮件的 MIME 内容。
 
-使用 " `$expand` **提及**" 导航属性上的查询参数，可以获取消息，其中包含已展开邮件中每个[提及](../resources/mention.md)的详细信息。
+使用 `$expand` " **提及** " 导航属性上的查询参数，可以获取消息，其中包含已展开邮件中每个 [提及](../resources/mention.md) 的详细信息。
 
 
 
@@ -566,3 +566,5 @@ YW5vdGhlciBtYWlsLg0K
   ]
 }
 -->
+
+
