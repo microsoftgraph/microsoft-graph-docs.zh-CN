@@ -1,46 +1,46 @@
 ---
 title: plannerAssignedToTaskBoardTaskFormat 资源类型
-description: '**PlannerAssignedToTaskBoardTaskFormat**资源表示用于在任务板的 "分配器" 视图（由任务分配到的用户组织的视图）中正确呈现任务的信息。 每个任务都有一个与之关联的**plannerAssignedToTaskBoardTaskFormat**对象。'
+description: '**PlannerAssignedToTaskBoardTaskFormat**资源表示用于在任务板的 "分配器" 视图中正确呈现任务的信息，该信息 (将任务分配给其) 的用户组织的视图。 每个任务都有一个与之关联的 **plannerAssignedToTaskBoardTaskFormat** 对象。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 56ac6b3e11d308c0ad12bd94b7e67c67378e6916
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e75ee719b183fb04f5f30ecc919bf39b8fcf7146
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521809"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48073591"
 ---
-# <a name="plannerassignedtotaskboardtaskformat-resource-type"></a><span data-ttu-id="f5f1a-104">plannerAssignedToTaskBoardTaskFormat 资源类型</span><span class="sxs-lookup"><span data-stu-id="f5f1a-104">plannerAssignedToTaskBoardTaskFormat resource type</span></span>
+# <a name="plannerassignedtotaskboardtaskformat-resource-type"></a><span data-ttu-id="58788-104">plannerAssignedToTaskBoardTaskFormat 资源类型</span><span class="sxs-lookup"><span data-stu-id="58788-104">plannerAssignedToTaskBoardTaskFormat resource type</span></span>
 
-<span data-ttu-id="f5f1a-105">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="f5f1a-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="58788-105">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="58788-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f5f1a-106">**PlannerAssignedToTaskBoardTaskFormat**资源表示用于在任务板的 "分配器" 视图（由任务分配到的用户组织的视图）中正确呈现任务的信息。</span><span class="sxs-lookup"><span data-stu-id="f5f1a-106">The **plannerAssignedToTaskBoardTaskFormat** resource represents the information used to render a task correctly in the AssignedTo view of the Task Board (a view organized by users to whom tasks are assigned to).</span></span> <span data-ttu-id="f5f1a-107">每个[任务](plannertask.md)都有一个与之关联的**plannerAssignedToTaskBoardTaskFormat**对象。</span><span class="sxs-lookup"><span data-stu-id="f5f1a-107">Each [task](plannertask.md) will have one **plannerAssignedToTaskBoardTaskFormat** object associated with it.</span></span>
+<span data-ttu-id="58788-106">**PlannerAssignedToTaskBoardTaskFormat**资源表示用于在任务板的 "分配器" 视图中正确呈现任务的信息，该信息 (将任务分配给其) 的用户组织的视图。</span><span class="sxs-lookup"><span data-stu-id="58788-106">The **plannerAssignedToTaskBoardTaskFormat** resource represents the information used to render a task correctly in the AssignedTo view of the Task Board (a view organized by users to whom tasks are assigned to).</span></span> <span data-ttu-id="58788-107">每个 [任务](plannertask.md) 都有一个与之关联的 **plannerAssignedToTaskBoardTaskFormat** 对象。</span><span class="sxs-lookup"><span data-stu-id="58788-107">Each [task](plannertask.md) will have one **plannerAssignedToTaskBoardTaskFormat** object associated with it.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="f5f1a-108">方法</span><span class="sxs-lookup"><span data-stu-id="f5f1a-108">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="58788-108">方法</span><span class="sxs-lookup"><span data-stu-id="58788-108">Methods</span></span>
 
-| <span data-ttu-id="f5f1a-109">方法</span><span class="sxs-lookup"><span data-stu-id="f5f1a-109">Method</span></span>           | <span data-ttu-id="f5f1a-110">返回类型</span><span class="sxs-lookup"><span data-stu-id="f5f1a-110">Return Type</span></span>    |<span data-ttu-id="f5f1a-111">说明</span><span class="sxs-lookup"><span data-stu-id="f5f1a-111">Description</span></span>|
+| <span data-ttu-id="58788-109">方法</span><span class="sxs-lookup"><span data-stu-id="58788-109">Method</span></span>           | <span data-ttu-id="58788-110">返回类型</span><span class="sxs-lookup"><span data-stu-id="58788-110">Return Type</span></span>    |<span data-ttu-id="58788-111">说明</span><span class="sxs-lookup"><span data-stu-id="58788-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="f5f1a-112">获取 plannerAssignedToTaskBoardTaskFormat</span><span class="sxs-lookup"><span data-stu-id="f5f1a-112">Get plannerAssignedToTaskBoardTaskFormat</span></span>](../api/plannerassignedtotaskboardtaskformat-get.md) | [<span data-ttu-id="f5f1a-113">plannerAssignedToTaskBoardTaskFormat</span><span class="sxs-lookup"><span data-stu-id="f5f1a-113">plannerAssignedToTaskBoardTaskFormat</span></span>](plannerassignedtotaskboardtaskformat.md) |<span data-ttu-id="f5f1a-114">读取**plannerAssignedToTaskBoardTaskFormat**对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="f5f1a-114">Read properties and relationships of **plannerAssignedToTaskBoardTaskFormat** object.</span></span>|
-|[<span data-ttu-id="f5f1a-115">更新</span><span class="sxs-lookup"><span data-stu-id="f5f1a-115">Update</span></span>](../api/plannerassignedtotaskboardtaskformat-update.md) | [<span data-ttu-id="f5f1a-116">plannerAssignedToTaskBoardTaskFormat</span><span class="sxs-lookup"><span data-stu-id="f5f1a-116">plannerAssignedToTaskBoardTaskFormat</span></span>](plannerassignedtotaskboardtaskformat.md)  |<span data-ttu-id="f5f1a-117">更新**plannerAssignedToTaskBoardTaskFormat**对象。</span><span class="sxs-lookup"><span data-stu-id="f5f1a-117">Update **plannerAssignedToTaskBoardTaskFormat** object.</span></span> |
+|[<span data-ttu-id="58788-112">获取 plannerAssignedToTaskBoardTaskFormat</span><span class="sxs-lookup"><span data-stu-id="58788-112">Get plannerAssignedToTaskBoardTaskFormat</span></span>](../api/plannerassignedtotaskboardtaskformat-get.md) | [<span data-ttu-id="58788-113">plannerAssignedToTaskBoardTaskFormat</span><span class="sxs-lookup"><span data-stu-id="58788-113">plannerAssignedToTaskBoardTaskFormat</span></span>](plannerassignedtotaskboardtaskformat.md) |<span data-ttu-id="58788-114">读取 **plannerAssignedToTaskBoardTaskFormat** 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="58788-114">Read properties and relationships of **plannerAssignedToTaskBoardTaskFormat** object.</span></span>|
+|[<span data-ttu-id="58788-115">更新</span><span class="sxs-lookup"><span data-stu-id="58788-115">Update</span></span>](../api/plannerassignedtotaskboardtaskformat-update.md) | [<span data-ttu-id="58788-116">plannerAssignedToTaskBoardTaskFormat</span><span class="sxs-lookup"><span data-stu-id="58788-116">plannerAssignedToTaskBoardTaskFormat</span></span>](plannerassignedtotaskboardtaskformat.md)  |<span data-ttu-id="58788-117">更新 **plannerAssignedToTaskBoardTaskFormat** 对象。</span><span class="sxs-lookup"><span data-stu-id="58788-117">Update **plannerAssignedToTaskBoardTaskFormat** object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="f5f1a-118">属性</span><span class="sxs-lookup"><span data-stu-id="f5f1a-118">Properties</span></span>
-| <span data-ttu-id="f5f1a-119">属性</span><span class="sxs-lookup"><span data-stu-id="f5f1a-119">Property</span></span>     | <span data-ttu-id="f5f1a-120">类型</span><span class="sxs-lookup"><span data-stu-id="f5f1a-120">Type</span></span>   |<span data-ttu-id="f5f1a-121">说明</span><span class="sxs-lookup"><span data-stu-id="f5f1a-121">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="58788-118">属性</span><span class="sxs-lookup"><span data-stu-id="58788-118">Properties</span></span>
+| <span data-ttu-id="58788-119">属性</span><span class="sxs-lookup"><span data-stu-id="58788-119">Property</span></span>     | <span data-ttu-id="58788-120">类型</span><span class="sxs-lookup"><span data-stu-id="58788-120">Type</span></span>   |<span data-ttu-id="58788-121">说明</span><span class="sxs-lookup"><span data-stu-id="58788-121">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f5f1a-122">id</span><span class="sxs-lookup"><span data-stu-id="f5f1a-122">id</span></span>|<span data-ttu-id="f5f1a-123">String</span><span class="sxs-lookup"><span data-stu-id="f5f1a-123">String</span></span>| <span data-ttu-id="f5f1a-124">只读。</span><span class="sxs-lookup"><span data-stu-id="f5f1a-124">Read-only.</span></span> <span data-ttu-id="f5f1a-125">资源的 ID。</span><span class="sxs-lookup"><span data-stu-id="f5f1a-125">ID of the resource.</span></span> <span data-ttu-id="f5f1a-126">长度为 28 个字符，区分大小写。</span><span class="sxs-lookup"><span data-stu-id="f5f1a-126">It is 28 characters long and case-sensitive.</span></span> <span data-ttu-id="f5f1a-127">[格式验证](tasks-identifiers-disclaimer.md)在服务上完成。</span><span class="sxs-lookup"><span data-stu-id="f5f1a-127">[Format validation](tasks-identifiers-disclaimer.md) is done on the service.</span></span>|
-|<span data-ttu-id="f5f1a-128">orderHintsByAssignee</span><span class="sxs-lookup"><span data-stu-id="f5f1a-128">orderHintsByAssignee</span></span>|[<span data-ttu-id="f5f1a-129">plannerOrderHintsByAssignee</span><span class="sxs-lookup"><span data-stu-id="f5f1a-129">plannerOrderHintsByAssignee</span></span>](plannerorderhintsbyassignee.md)|<span data-ttu-id="f5f1a-p104">用于为任务板 AssignedTo 视图上的任务进行排序的提示字典。每个条目的键是任务分配到的用户之一，值为排序提示。[此处](planner-order-hint-format.md)概述了各值的格式。</span><span class="sxs-lookup"><span data-stu-id="f5f1a-p104">Dictionary of hints used to order tasks on the AssignedTo view of the Task Board. The key of each entry is one of the users the task is assigned to and the value is the order hint. The format of each value is defined as outlined [here](planner-order-hint-format.md).</span></span>|
-|<span data-ttu-id="f5f1a-133">unassignedOrderHint</span><span class="sxs-lookup"><span data-stu-id="f5f1a-133">unassignedOrderHint</span></span>|<span data-ttu-id="f5f1a-134">字符串</span><span class="sxs-lookup"><span data-stu-id="f5f1a-134">String</span></span>|<span data-ttu-id="f5f1a-p105">当任务未分配给任何人，或 orderHintsByAssignee 字典未向分配到任务的用户提供排序提示时，用于为任务板 AssignedTo 视图上的任务进行排序的提示值。[此处](planner-order-hint-format.md)概述了此格式。</span><span class="sxs-lookup"><span data-stu-id="f5f1a-p105">Hint value used to order the task on the AssignedTo view of the Task Board when the task is not assigned to anyone, or if the orderHintsByAssignee dictionary does not provide an order hint for the user the task is assigned to. The format is defined as outlined [here](planner-order-hint-format.md).</span></span>|
+|<span data-ttu-id="58788-122">id</span><span class="sxs-lookup"><span data-stu-id="58788-122">id</span></span>|<span data-ttu-id="58788-123">String</span><span class="sxs-lookup"><span data-stu-id="58788-123">String</span></span>| <span data-ttu-id="58788-124">只读。</span><span class="sxs-lookup"><span data-stu-id="58788-124">Read-only.</span></span> <span data-ttu-id="58788-125">资源的 ID。</span><span class="sxs-lookup"><span data-stu-id="58788-125">ID of the resource.</span></span> <span data-ttu-id="58788-126">长度为 28 个字符，区分大小写。</span><span class="sxs-lookup"><span data-stu-id="58788-126">It is 28 characters long and case-sensitive.</span></span> <span data-ttu-id="58788-127">[格式验证](tasks-identifiers-disclaimer.md)在服务上完成。</span><span class="sxs-lookup"><span data-stu-id="58788-127">[Format validation](tasks-identifiers-disclaimer.md) is done on the service.</span></span>|
+|<span data-ttu-id="58788-128">orderHintsByAssignee</span><span class="sxs-lookup"><span data-stu-id="58788-128">orderHintsByAssignee</span></span>|[<span data-ttu-id="58788-129">plannerOrderHintsByAssignee</span><span class="sxs-lookup"><span data-stu-id="58788-129">plannerOrderHintsByAssignee</span></span>](plannerorderhintsbyassignee.md)|<span data-ttu-id="58788-p104">用于为任务板 AssignedTo 视图上的任务进行排序的提示字典。每个条目的键是任务分配到的用户之一，值为排序提示。[此处](planner-order-hint-format.md)概述了各值的格式。</span><span class="sxs-lookup"><span data-stu-id="58788-p104">Dictionary of hints used to order tasks on the AssignedTo view of the Task Board. The key of each entry is one of the users the task is assigned to and the value is the order hint. The format of each value is defined as outlined [here](planner-order-hint-format.md).</span></span>|
+|<span data-ttu-id="58788-133">unassignedOrderHint</span><span class="sxs-lookup"><span data-stu-id="58788-133">unassignedOrderHint</span></span>|<span data-ttu-id="58788-134">字符串</span><span class="sxs-lookup"><span data-stu-id="58788-134">String</span></span>|<span data-ttu-id="58788-p105">当任务未分配给任何人，或 orderHintsByAssignee 字典未向分配到任务的用户提供排序提示时，用于为任务板 AssignedTo 视图上的任务进行排序的提示值。[此处](planner-order-hint-format.md)概述了此格式。</span><span class="sxs-lookup"><span data-stu-id="58788-p105">Hint value used to order the task on the AssignedTo view of the Task Board when the task is not assigned to anyone, or if the orderHintsByAssignee dictionary does not provide an order hint for the user the task is assigned to. The format is defined as outlined [here](planner-order-hint-format.md).</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="f5f1a-137">关系</span><span class="sxs-lookup"><span data-stu-id="f5f1a-137">Relationships</span></span>
-<span data-ttu-id="f5f1a-138">无</span><span class="sxs-lookup"><span data-stu-id="f5f1a-138">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="58788-137">关系</span><span class="sxs-lookup"><span data-stu-id="58788-137">Relationships</span></span>
+<span data-ttu-id="58788-138">无</span><span class="sxs-lookup"><span data-stu-id="58788-138">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="f5f1a-139">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f5f1a-139">JSON representation</span></span>
-<span data-ttu-id="f5f1a-140">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f5f1a-140">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="58788-139">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="58788-139">JSON representation</span></span>
+<span data-ttu-id="58788-140">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="58788-140">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -71,3 +71,5 @@ ms.locfileid: "42521809"
   "suppressions": []
 }
 -->
+
+
