@@ -3,39 +3,39 @@ title: allDevicesAssignmentTarget 资源类型
 description: 表示租户中所有托管设备的赋值。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 69f5e1f77a1fed08d8139e63ffada76e3a948917
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: e155fe008de43defbfa2746a27cb18a7f7fe767d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793603"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067263"
 ---
-# <a name="alldevicesassignmenttarget-resource-type"></a><span data-ttu-id="dd3ac-103">allDevicesAssignmentTarget 资源类型</span><span class="sxs-lookup"><span data-stu-id="dd3ac-103">allDevicesAssignmentTarget resource type</span></span>
+# <a name="alldevicesassignmenttarget-resource-type"></a><span data-ttu-id="97e27-103">allDevicesAssignmentTarget 资源类型</span><span class="sxs-lookup"><span data-stu-id="97e27-103">allDevicesAssignmentTarget resource type</span></span>
 
-<span data-ttu-id="dd3ac-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dd3ac-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="97e27-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="97e27-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="dd3ac-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="dd3ac-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="97e27-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="97e27-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="dd3ac-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="dd3ac-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="97e27-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="97e27-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="dd3ac-107">表示租户中所有托管设备的赋值。</span><span class="sxs-lookup"><span data-stu-id="dd3ac-107">Represents an assignment to all managed devices in the tenant.</span></span>
+<span data-ttu-id="97e27-107">表示租户中所有托管设备的赋值。</span><span class="sxs-lookup"><span data-stu-id="97e27-107">Represents an assignment to all managed devices in the tenant.</span></span>
 
 
-<span data-ttu-id="dd3ac-108">继承自 [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span><span class="sxs-lookup"><span data-stu-id="dd3ac-108">Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span></span>
+<span data-ttu-id="97e27-108">继承自 [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span><span class="sxs-lookup"><span data-stu-id="97e27-108">Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="dd3ac-109">属性</span><span class="sxs-lookup"><span data-stu-id="dd3ac-109">Properties</span></span>
-|<span data-ttu-id="dd3ac-110">属性</span><span class="sxs-lookup"><span data-stu-id="dd3ac-110">Property</span></span>|<span data-ttu-id="dd3ac-111">类型</span><span class="sxs-lookup"><span data-stu-id="dd3ac-111">Type</span></span>|<span data-ttu-id="dd3ac-112">说明</span><span class="sxs-lookup"><span data-stu-id="dd3ac-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="97e27-109">属性</span><span class="sxs-lookup"><span data-stu-id="97e27-109">Properties</span></span>
+|<span data-ttu-id="97e27-110">属性</span><span class="sxs-lookup"><span data-stu-id="97e27-110">Property</span></span>|<span data-ttu-id="97e27-111">类型</span><span class="sxs-lookup"><span data-stu-id="97e27-111">Type</span></span>|<span data-ttu-id="97e27-112">说明</span><span class="sxs-lookup"><span data-stu-id="97e27-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="dd3ac-113">deviceAndAppManagementAssignmentFilterId</span><span class="sxs-lookup"><span data-stu-id="dd3ac-113">deviceAndAppManagementAssignmentFilterId</span></span>|<span data-ttu-id="dd3ac-114">String</span><span class="sxs-lookup"><span data-stu-id="dd3ac-114">String</span></span>|<span data-ttu-id="dd3ac-115">目标工作分配的筛选器的 Id。</span><span class="sxs-lookup"><span data-stu-id="dd3ac-115">The Id of the filter for the target assignment.</span></span> <span data-ttu-id="dd3ac-116">继承自[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span><span class="sxs-lookup"><span data-stu-id="dd3ac-116">Inherited from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span></span>|
-|<span data-ttu-id="dd3ac-117">deviceAndAppManagementAssignmentFilterType</span><span class="sxs-lookup"><span data-stu-id="dd3ac-117">deviceAndAppManagementAssignmentFilterType</span></span>|[<span data-ttu-id="dd3ac-118">deviceAndAppManagementAssignmentFilterType</span><span class="sxs-lookup"><span data-stu-id="dd3ac-118">deviceAndAppManagementAssignmentFilterType</span></span>](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|<span data-ttu-id="dd3ac-119">目标工作分配的筛选器类型，即 Exclude 或 Include。</span><span class="sxs-lookup"><span data-stu-id="dd3ac-119">The type of filter of the target assignment i.e. Exclude or Include.</span></span> <span data-ttu-id="dd3ac-120">继承自[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)。</span><span class="sxs-lookup"><span data-stu-id="dd3ac-120">Inherited from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md).</span></span> <span data-ttu-id="dd3ac-121">可取值为：`none`、`include`。</span><span class="sxs-lookup"><span data-stu-id="dd3ac-121">Possible values are: `none`, `include`.</span></span>|
+|<span data-ttu-id="97e27-113">deviceAndAppManagementAssignmentFilterId</span><span class="sxs-lookup"><span data-stu-id="97e27-113">deviceAndAppManagementAssignmentFilterId</span></span>|<span data-ttu-id="97e27-114">String</span><span class="sxs-lookup"><span data-stu-id="97e27-114">String</span></span>|<span data-ttu-id="97e27-115">目标工作分配的筛选器的 Id。</span><span class="sxs-lookup"><span data-stu-id="97e27-115">The Id of the filter for the target assignment.</span></span> <span data-ttu-id="97e27-116">继承自 [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span><span class="sxs-lookup"><span data-stu-id="97e27-116">Inherited from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span></span>|
+|<span data-ttu-id="97e27-117">deviceAndAppManagementAssignmentFilterType</span><span class="sxs-lookup"><span data-stu-id="97e27-117">deviceAndAppManagementAssignmentFilterType</span></span>|[<span data-ttu-id="97e27-118">deviceAndAppManagementAssignmentFilterType</span><span class="sxs-lookup"><span data-stu-id="97e27-118">deviceAndAppManagementAssignmentFilterType</span></span>](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|<span data-ttu-id="97e27-119">目标工作分配的筛选器类型，即 Exclude 或 Include。</span><span class="sxs-lookup"><span data-stu-id="97e27-119">The type of filter of the target assignment i.e. Exclude or Include.</span></span> <span data-ttu-id="97e27-120">继承自 [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)。</span><span class="sxs-lookup"><span data-stu-id="97e27-120">Inherited from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md).</span></span> <span data-ttu-id="97e27-121">可取值为：`none`、`include`。</span><span class="sxs-lookup"><span data-stu-id="97e27-121">Possible values are: `none`, `include`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="dd3ac-122">关系</span><span class="sxs-lookup"><span data-stu-id="dd3ac-122">Relationships</span></span>
-<span data-ttu-id="dd3ac-123">无</span><span class="sxs-lookup"><span data-stu-id="dd3ac-123">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="97e27-122">关系</span><span class="sxs-lookup"><span data-stu-id="97e27-122">Relationships</span></span>
+<span data-ttu-id="97e27-123">无</span><span class="sxs-lookup"><span data-stu-id="97e27-123">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="dd3ac-124">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="dd3ac-124">JSON Representation</span></span>
-<span data-ttu-id="dd3ac-125">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="dd3ac-125">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="97e27-124">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="97e27-124">JSON Representation</span></span>
+<span data-ttu-id="97e27-125">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="97e27-125">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
@@ -48,6 +48,9 @@ ms.locfileid: "44793603"
   "deviceAndAppManagementAssignmentFilterType": "String"
 }
 ```
+
+
+
 
 
 

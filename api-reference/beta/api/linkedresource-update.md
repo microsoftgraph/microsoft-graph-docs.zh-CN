@@ -5,28 +5,28 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fb46223abd79a824356763210e01c6192cf5fb97
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 666cd9d9aa366a92c275e20b9abd7f855acb1a35
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47842923"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48068068"
 ---
-# <a name="update-linkedresource"></a><span data-ttu-id="ef924-103">更新 linkedResource</span><span class="sxs-lookup"><span data-stu-id="ef924-103">Update linkedResource</span></span>
-<span data-ttu-id="ef924-104">命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]</span><span class="sxs-lookup"><span data-stu-id="ef924-104">Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]</span></span>
+# <a name="update-linkedresource"></a><span data-ttu-id="04809-103">更新 linkedResource</span><span class="sxs-lookup"><span data-stu-id="04809-103">Update linkedResource</span></span>
+<span data-ttu-id="04809-104">命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]</span><span class="sxs-lookup"><span data-stu-id="04809-104">Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]</span></span>
 
-<span data-ttu-id="ef924-105">更新 [linkedResource](../resources/linkedresource.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="ef924-105">Update the properties of a [linkedResource](../resources/linkedresource.md) object.</span></span>
+<span data-ttu-id="04809-105">更新 [linkedResource](../resources/linkedresource.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="04809-105">Update the properties of a [linkedResource](../resources/linkedresource.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ef924-106">权限</span><span class="sxs-lookup"><span data-stu-id="ef924-106">Permissions</span></span>
-<span data-ttu-id="ef924-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ef924-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="04809-106">权限</span><span class="sxs-lookup"><span data-stu-id="04809-106">Permissions</span></span>
+<span data-ttu-id="04809-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="04809-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ef924-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="ef924-109">Permission type</span></span>|<span data-ttu-id="ef924-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="ef924-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="04809-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="04809-109">Permission type</span></span>|<span data-ttu-id="04809-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="04809-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ef924-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ef924-111">Delegated (work or school account)</span></span>|<span data-ttu-id="ef924-112">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ef924-112">Tasks.ReadWrite</span></span>|
-|<span data-ttu-id="ef924-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ef924-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ef924-114">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ef924-114">Tasks.ReadWrite</span></span>|
-|<span data-ttu-id="ef924-115">应用</span><span class="sxs-lookup"><span data-stu-id="ef924-115">Application</span></span>|<span data-ttu-id="ef924-116">不支持</span><span class="sxs-lookup"><span data-stu-id="ef924-116">Not supported</span></span>|
+|<span data-ttu-id="04809-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="04809-111">Delegated (work or school account)</span></span>|<span data-ttu-id="04809-112">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="04809-112">Tasks.ReadWrite</span></span>|
+|<span data-ttu-id="04809-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="04809-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="04809-114">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="04809-114">Tasks.ReadWrite</span></span>|
+|<span data-ttu-id="04809-115">应用</span><span class="sxs-lookup"><span data-stu-id="04809-115">Application</span></span>|<span data-ttu-id="04809-116">不支持</span><span class="sxs-lookup"><span data-stu-id="04809-116">Not supported</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ef924-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ef924-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="04809-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="04809-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -37,30 +37,30 @@ PATCH /me/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources/{linkedReso
 PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources/{linkedResourcesId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ef924-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="ef924-118">Request headers</span></span>
-|<span data-ttu-id="ef924-119">名称</span><span class="sxs-lookup"><span data-stu-id="ef924-119">Name</span></span>|<span data-ttu-id="ef924-120">说明</span><span class="sxs-lookup"><span data-stu-id="ef924-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="04809-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="04809-118">Request headers</span></span>
+|<span data-ttu-id="04809-119">名称</span><span class="sxs-lookup"><span data-stu-id="04809-119">Name</span></span>|<span data-ttu-id="04809-120">说明</span><span class="sxs-lookup"><span data-stu-id="04809-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="ef924-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="ef924-121">Authorization</span></span>|<span data-ttu-id="ef924-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ef924-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="ef924-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ef924-124">Content-Type</span></span>|<span data-ttu-id="ef924-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="ef924-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="04809-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="04809-121">Authorization</span></span>|<span data-ttu-id="04809-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="04809-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="04809-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="04809-124">Content-Type</span></span>|<span data-ttu-id="04809-p103">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="04809-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ef924-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="ef924-127">Request body</span></span>
-<span data-ttu-id="ef924-128">在请求正文中，提供 [linkedResource](../resources/linkedresource.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ef924-128">In the request body, supply a JSON representation of the [linkedResource](../resources/linkedresource.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="04809-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="04809-127">Request body</span></span>
+<span data-ttu-id="04809-128">在请求正文中，提供 [linkedResource](../resources/linkedresource.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="04809-128">In the request body, supply a JSON representation of the [linkedResource](../resources/linkedresource.md) object.</span></span>
 
-<span data-ttu-id="ef924-129">下表显示了在更新 [linkedResource](../resources/linkedresource.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="ef924-129">The following table shows the properties that are required when you update the [linkedResource](../resources/linkedresource.md).</span></span>
+<span data-ttu-id="04809-129">下表显示了在更新 [linkedResource](../resources/linkedresource.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="04809-129">The following table shows the properties that are required when you update the [linkedResource](../resources/linkedresource.md).</span></span>
 
-|<span data-ttu-id="ef924-130">属性</span><span class="sxs-lookup"><span data-stu-id="ef924-130">Property</span></span>|<span data-ttu-id="ef924-131">类型</span><span class="sxs-lookup"><span data-stu-id="ef924-131">Type</span></span>|<span data-ttu-id="ef924-132">说明</span><span class="sxs-lookup"><span data-stu-id="ef924-132">Description</span></span>|
+|<span data-ttu-id="04809-130">属性</span><span class="sxs-lookup"><span data-stu-id="04809-130">Property</span></span>|<span data-ttu-id="04809-131">类型</span><span class="sxs-lookup"><span data-stu-id="04809-131">Type</span></span>|<span data-ttu-id="04809-132">说明</span><span class="sxs-lookup"><span data-stu-id="04809-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ef924-133">id</span><span class="sxs-lookup"><span data-stu-id="ef924-133">id</span></span>|<span data-ttu-id="ef924-134">String</span><span class="sxs-lookup"><span data-stu-id="ef924-134">String</span></span>|<span data-ttu-id="ef924-135">从[实体](../resources/entity.md)继承的链接实体的服务器生成 Id</span><span class="sxs-lookup"><span data-stu-id="ef924-135">Server generated Id for the linked entity Inherited from [entity](../resources/entity.md)</span></span>|
+|<span data-ttu-id="04809-133">id</span><span class="sxs-lookup"><span data-stu-id="04809-133">id</span></span>|<span data-ttu-id="04809-134">String</span><span class="sxs-lookup"><span data-stu-id="04809-134">String</span></span>|<span data-ttu-id="04809-135">从[实体](../resources/entity.md)继承的链接实体的服务器生成 Id</span><span class="sxs-lookup"><span data-stu-id="04809-135">Server generated Id for the linked entity Inherited from [entity](../resources/entity.md)</span></span>|
 
-## <a name="response"></a><span data-ttu-id="ef924-136">响应</span><span class="sxs-lookup"><span data-stu-id="ef924-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="04809-136">响应</span><span class="sxs-lookup"><span data-stu-id="04809-136">Response</span></span>
 
-<span data-ttu-id="ef924-137">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [linkedResource](../resources/linkedresource.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="ef924-137">If successful, this method returns a `200 OK` response code and an updated [linkedResource](../resources/linkedresource.md) object in the response body.</span></span>
+<span data-ttu-id="04809-137">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [linkedResource](../resources/linkedresource.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="04809-137">If successful, this method returns a `200 OK` response code and an updated [linkedResource](../resources/linkedresource.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="ef924-138">示例</span><span class="sxs-lookup"><span data-stu-id="ef924-138">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="04809-138">示例</span><span class="sxs-lookup"><span data-stu-id="04809-138">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="ef924-139">请求</span><span class="sxs-lookup"><span data-stu-id="ef924-139">Request</span></span>
+### <a name="request"></a><span data-ttu-id="04809-139">请求</span><span class="sxs-lookup"><span data-stu-id="04809-139">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="ef924-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="ef924-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="04809-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="04809-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["dfsdc-f9dfdfs-dcsda9", "e2dc-f9cce2-dce29", "f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9"],
@@ -79,23 +79,23 @@ Content-length: 166
   "displayName": "Microsoft",
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="ef924-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ef924-141">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="04809-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="04809-141">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-linkedresource-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="ef924-142">C#</span><span class="sxs-lookup"><span data-stu-id="ef924-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="04809-142">C#</span><span class="sxs-lookup"><span data-stu-id="04809-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-linkedresource-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ef924-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ef924-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="04809-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="04809-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-linkedresource-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="ef924-144">响应</span><span class="sxs-lookup"><span data-stu-id="ef924-144">Response</span></span>
-<span data-ttu-id="ef924-145">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="ef924-145">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="04809-144">响应</span><span class="sxs-lookup"><span data-stu-id="04809-144">Response</span></span>
+<span data-ttu-id="04809-145">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="04809-145">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -115,3 +115,5 @@ Content-Type: application/json
   "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 }
 ```
+
+
