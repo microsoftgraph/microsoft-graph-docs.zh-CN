@@ -3,35 +3,35 @@ title: 列出 windows81WifiImportConfigurations
 description: 列出 windows81WifiImportConfiguration 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09065ad36c569c776349adf44aaee8a370cb88c0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 29425fee9865afddae5bebb7025c4745e7cd14f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43430041"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047852"
 ---
-# <a name="list-windows81wifiimportconfigurations"></a><span data-ttu-id="1a2be-103">列出 windows81WifiImportConfigurations</span><span class="sxs-lookup"><span data-stu-id="1a2be-103">List windows81WifiImportConfigurations</span></span>
+# <a name="list-windows81wifiimportconfigurations"></a><span data-ttu-id="d27cf-103">列出 windows81WifiImportConfigurations</span><span class="sxs-lookup"><span data-stu-id="d27cf-103">List windows81WifiImportConfigurations</span></span>
 
-<span data-ttu-id="1a2be-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1a2be-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d27cf-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d27cf-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="1a2be-105">**重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="1a2be-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="d27cf-105">**重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="d27cf-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="1a2be-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="1a2be-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d27cf-106">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="d27cf-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1a2be-107">列出[windows81WifiImportConfiguration](../resources/intune-deviceconfig-windows81wifiimportconfiguration.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="1a2be-107">List properties and relationships of the [windows81WifiImportConfiguration](../resources/intune-deviceconfig-windows81wifiimportconfiguration.md) objects.</span></span>
+<span data-ttu-id="d27cf-107">列出 [windows81WifiImportConfiguration](../resources/intune-deviceconfig-windows81wifiimportconfiguration.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="d27cf-107">List properties and relationships of the [windows81WifiImportConfiguration](../resources/intune-deviceconfig-windows81wifiimportconfiguration.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="1a2be-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="1a2be-108">Prerequisites</span></span>
-<span data-ttu-id="1a2be-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1a2be-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="d27cf-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="d27cf-108">Prerequisites</span></span>
+<span data-ttu-id="d27cf-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d27cf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1a2be-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="1a2be-111">Permission type</span></span>|<span data-ttu-id="1a2be-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="1a2be-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="d27cf-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="d27cf-111">Permission type</span></span>|<span data-ttu-id="d27cf-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="d27cf-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="1a2be-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1a2be-113">Delegated (work or school account)</span></span>|<span data-ttu-id="1a2be-114">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="1a2be-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="1a2be-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1a2be-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1a2be-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="1a2be-116">Not supported.</span></span>|
-|<span data-ttu-id="1a2be-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="1a2be-117">Application</span></span>|<span data-ttu-id="1a2be-118">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="1a2be-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="d27cf-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d27cf-113">Delegated (work or school account)</span></span>|<span data-ttu-id="d27cf-114">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="d27cf-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="d27cf-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d27cf-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d27cf-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="d27cf-116">Not supported.</span></span>|
+|<span data-ttu-id="d27cf-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="d27cf-117">Application</span></span>|<span data-ttu-id="d27cf-118">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="d27cf-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="1a2be-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1a2be-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d27cf-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d27cf-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -41,28 +41,28 @@ GET /deviceManagement/deviceConfigurations
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1a2be-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="1a2be-120">Request headers</span></span>
-|<span data-ttu-id="1a2be-121">标头</span><span class="sxs-lookup"><span data-stu-id="1a2be-121">Header</span></span>|<span data-ttu-id="1a2be-122">值</span><span class="sxs-lookup"><span data-stu-id="1a2be-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d27cf-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="d27cf-120">Request headers</span></span>
+|<span data-ttu-id="d27cf-121">标头</span><span class="sxs-lookup"><span data-stu-id="d27cf-121">Header</span></span>|<span data-ttu-id="d27cf-122">值</span><span class="sxs-lookup"><span data-stu-id="d27cf-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="1a2be-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="1a2be-123">Authorization</span></span>|<span data-ttu-id="1a2be-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="1a2be-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="1a2be-125">接受</span><span class="sxs-lookup"><span data-stu-id="1a2be-125">Accept</span></span>|<span data-ttu-id="1a2be-126">application/json</span><span class="sxs-lookup"><span data-stu-id="1a2be-126">application/json</span></span>|
+|<span data-ttu-id="d27cf-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="d27cf-123">Authorization</span></span>|<span data-ttu-id="d27cf-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="d27cf-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="d27cf-125">接受</span><span class="sxs-lookup"><span data-stu-id="d27cf-125">Accept</span></span>|<span data-ttu-id="d27cf-126">application/json</span><span class="sxs-lookup"><span data-stu-id="d27cf-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1a2be-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="1a2be-127">Request body</span></span>
-<span data-ttu-id="1a2be-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="1a2be-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d27cf-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="d27cf-127">Request body</span></span>
+<span data-ttu-id="d27cf-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="d27cf-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1a2be-129">响应</span><span class="sxs-lookup"><span data-stu-id="1a2be-129">Response</span></span>
-<span data-ttu-id="1a2be-130">如果成功，此方法在响应`200 OK`正文中返回响应代码和[windows81WifiImportConfiguration](../resources/intune-deviceconfig-windows81wifiimportconfiguration.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="1a2be-130">If successful, this method returns a `200 OK` response code and a collection of [windows81WifiImportConfiguration](../resources/intune-deviceconfig-windows81wifiimportconfiguration.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d27cf-129">响应</span><span class="sxs-lookup"><span data-stu-id="d27cf-129">Response</span></span>
+<span data-ttu-id="d27cf-130">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [windows81WifiImportConfiguration](../resources/intune-deviceconfig-windows81wifiimportconfiguration.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="d27cf-130">If successful, this method returns a `200 OK` response code and a collection of [windows81WifiImportConfiguration](../resources/intune-deviceconfig-windows81wifiimportconfiguration.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1a2be-131">示例</span><span class="sxs-lookup"><span data-stu-id="1a2be-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d27cf-131">示例</span><span class="sxs-lookup"><span data-stu-id="d27cf-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="1a2be-132">请求</span><span class="sxs-lookup"><span data-stu-id="1a2be-132">Request</span></span>
-<span data-ttu-id="1a2be-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="1a2be-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="d27cf-132">请求</span><span class="sxs-lookup"><span data-stu-id="d27cf-132">Request</span></span>
+<span data-ttu-id="d27cf-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="d27cf-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
-### <a name="response"></a><span data-ttu-id="1a2be-134">响应</span><span class="sxs-lookup"><span data-stu-id="1a2be-134">Response</span></span>
-<span data-ttu-id="1a2be-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="1a2be-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="d27cf-134">响应</span><span class="sxs-lookup"><span data-stu-id="d27cf-134">Response</span></span>
+<span data-ttu-id="d27cf-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="d27cf-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -110,6 +110,9 @@ Content-Length: 1499
   ]
 }
 ```
+
+
+
 
 
 

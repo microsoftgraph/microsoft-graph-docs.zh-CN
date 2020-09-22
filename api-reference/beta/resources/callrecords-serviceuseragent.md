@@ -5,32 +5,32 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8e411b7170f99f57eac4cdb7c56cfc64bcf2aee5
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 0567571c3ee571eabb32f7cbb41820b04ed22d1f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491173"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046888"
 ---
-# <a name="serviceuseragent-resource-type"></a><span data-ttu-id="cee21-103">serviceUserAgent 资源类型</span><span class="sxs-lookup"><span data-stu-id="cee21-103">serviceUserAgent resource type</span></span>
+# <a name="serviceuseragent-resource-type"></a><span data-ttu-id="0f5df-103">serviceUserAgent 资源类型</span><span class="sxs-lookup"><span data-stu-id="0f5df-103">serviceUserAgent resource type</span></span>
 
-<span data-ttu-id="cee21-104">命名空间：microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="cee21-104">Namespace: microsoft.graph.callRecords</span></span>
+<span data-ttu-id="0f5df-104">命名空间：microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="0f5df-104">Namespace: microsoft.graph.callRecords</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cee21-105">表示呼叫中终结点的服务用户代理。</span><span class="sxs-lookup"><span data-stu-id="cee21-105">Represents a service user agent of an endpoint in a call.</span></span> <span data-ttu-id="cee21-106">继承自[userAgent](callrecords-useragent.md)类型。</span><span class="sxs-lookup"><span data-stu-id="cee21-106">Inherits from [userAgent](callrecords-useragent.md) type.</span></span>
+<span data-ttu-id="0f5df-105">表示呼叫中终结点的服务用户代理。</span><span class="sxs-lookup"><span data-stu-id="0f5df-105">Represents a service user agent of an endpoint in a call.</span></span> <span data-ttu-id="0f5df-106">继承自 [userAgent](callrecords-useragent.md) 类型。</span><span class="sxs-lookup"><span data-stu-id="0f5df-106">Inherits from [userAgent](callrecords-useragent.md) type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="cee21-107">属性</span><span class="sxs-lookup"><span data-stu-id="cee21-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="0f5df-107">属性</span><span class="sxs-lookup"><span data-stu-id="0f5df-107">Properties</span></span>
 
-| <span data-ttu-id="cee21-108">属性</span><span class="sxs-lookup"><span data-stu-id="cee21-108">Property</span></span>     | <span data-ttu-id="cee21-109">类型</span><span class="sxs-lookup"><span data-stu-id="cee21-109">Type</span></span>        | <span data-ttu-id="cee21-110">Description</span><span class="sxs-lookup"><span data-stu-id="cee21-110">Description</span></span> |
+| <span data-ttu-id="0f5df-108">属性</span><span class="sxs-lookup"><span data-stu-id="0f5df-108">Property</span></span>     | <span data-ttu-id="0f5df-109">类型</span><span class="sxs-lookup"><span data-stu-id="0f5df-109">Type</span></span>        | <span data-ttu-id="0f5df-110">说明</span><span class="sxs-lookup"><span data-stu-id="0f5df-110">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="cee21-111">applicationVersion</span><span class="sxs-lookup"><span data-stu-id="cee21-111">applicationVersion</span></span>|<span data-ttu-id="cee21-112">String</span><span class="sxs-lookup"><span data-stu-id="cee21-112">String</span></span>|<span data-ttu-id="cee21-113">标识此终结点使用的应用程序软件的版本。</span><span class="sxs-lookup"><span data-stu-id="cee21-113">Identifies the version of application software used by this endpoint.</span></span>|
-|<span data-ttu-id="cee21-114">headerValue</span><span class="sxs-lookup"><span data-stu-id="cee21-114">headerValue</span></span>|<span data-ttu-id="cee21-115">String</span><span class="sxs-lookup"><span data-stu-id="cee21-115">String</span></span>|<span data-ttu-id="cee21-116">此终结点报告的用户代理标头值。</span><span class="sxs-lookup"><span data-stu-id="cee21-116">User-agent header value reported by this endpoint.</span></span>|
-|<span data-ttu-id="cee21-117">role</span><span class="sxs-lookup"><span data-stu-id="cee21-117">role</span></span>|<span data-ttu-id="cee21-118">callRecords。 serviceRole</span><span class="sxs-lookup"><span data-stu-id="cee21-118">microsoft.graph.callRecords.serviceRole</span></span>|<span data-ttu-id="cee21-119">标识此终结点使用的服务的角色。</span><span class="sxs-lookup"><span data-stu-id="cee21-119">Identifies the role of the service used by this endpoint.</span></span> <span data-ttu-id="cee21-120">可能的值为：、、、、、、、、、、、、、、、、、、、、、 `unknown` `customBot` `skypeForBusinessMicrosoftTeamsGateway` `skypeForBusinessAudioVideoMcu` `skypeForBusinessApplicationSharingMcu` `skypeForBusinessCallQueues` `skypeForBusinessAutoAttendant` `mediationServer` `mediationServerCloudConnectorEdition` `exchangeUnifiedMessagingService` `mediaController` `conferencingAnnouncementService` `conferencingAttendant` `audioTeleconferencerController` `skypeForBusinessUnifiedCommunicationApplicationPlatform` `responseGroupServiceAnnouncementService` `gateway` `skypeTranslator` `skypeForBusinessAttendant` `responseGroupService` `voicemail` `unknownFutureValue` 。</span><span class="sxs-lookup"><span data-stu-id="cee21-120">Possible values are: `unknown`, `customBot`, `skypeForBusinessMicrosoftTeamsGateway`, `skypeForBusinessAudioVideoMcu`, `skypeForBusinessApplicationSharingMcu`, `skypeForBusinessCallQueues`, `skypeForBusinessAutoAttendant`, `mediationServer`, `mediationServerCloudConnectorEdition`, `exchangeUnifiedMessagingService`, `mediaController`, `conferencingAnnouncementService`, `conferencingAttendant`, `audioTeleconferencerController`, `skypeForBusinessUnifiedCommunicationApplicationPlatform`, `responseGroupServiceAnnouncementService`, `gateway`, `skypeTranslator`, `skypeForBusinessAttendant`, `responseGroupService`, `voicemail`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="0f5df-111">applicationVersion</span><span class="sxs-lookup"><span data-stu-id="0f5df-111">applicationVersion</span></span>|<span data-ttu-id="0f5df-112">String</span><span class="sxs-lookup"><span data-stu-id="0f5df-112">String</span></span>|<span data-ttu-id="0f5df-113">标识此终结点使用的应用程序软件的版本。</span><span class="sxs-lookup"><span data-stu-id="0f5df-113">Identifies the version of application software used by this endpoint.</span></span>|
+|<span data-ttu-id="0f5df-114">headerValue</span><span class="sxs-lookup"><span data-stu-id="0f5df-114">headerValue</span></span>|<span data-ttu-id="0f5df-115">String</span><span class="sxs-lookup"><span data-stu-id="0f5df-115">String</span></span>|<span data-ttu-id="0f5df-116">此终结点报告的用户代理标头值。</span><span class="sxs-lookup"><span data-stu-id="0f5df-116">User-agent header value reported by this endpoint.</span></span>|
+|<span data-ttu-id="0f5df-117">role</span><span class="sxs-lookup"><span data-stu-id="0f5df-117">role</span></span>|<span data-ttu-id="0f5df-118">callRecords。 serviceRole</span><span class="sxs-lookup"><span data-stu-id="0f5df-118">microsoft.graph.callRecords.serviceRole</span></span>|<span data-ttu-id="0f5df-119">标识此终结点使用的服务的角色。</span><span class="sxs-lookup"><span data-stu-id="0f5df-119">Identifies the role of the service used by this endpoint.</span></span> <span data-ttu-id="0f5df-120">可能的值为：、、、、、、、、、、、、、、、、、、、、、 `unknown` `customBot` `skypeForBusinessMicrosoftTeamsGateway` `skypeForBusinessAudioVideoMcu` `skypeForBusinessApplicationSharingMcu` `skypeForBusinessCallQueues` `skypeForBusinessAutoAttendant` `mediationServer` `mediationServerCloudConnectorEdition` `exchangeUnifiedMessagingService` `mediaController` `conferencingAnnouncementService` `conferencingAttendant` `audioTeleconferencerController` `skypeForBusinessUnifiedCommunicationApplicationPlatform` `responseGroupServiceAnnouncementService` `gateway` `skypeTranslator` `skypeForBusinessAttendant` `responseGroupService` `voicemail` `unknownFutureValue` 。</span><span class="sxs-lookup"><span data-stu-id="0f5df-120">Possible values are: `unknown`, `customBot`, `skypeForBusinessMicrosoftTeamsGateway`, `skypeForBusinessAudioVideoMcu`, `skypeForBusinessApplicationSharingMcu`, `skypeForBusinessCallQueues`, `skypeForBusinessAutoAttendant`, `mediationServer`, `mediationServerCloudConnectorEdition`, `exchangeUnifiedMessagingService`, `mediaController`, `conferencingAnnouncementService`, `conferencingAttendant`, `audioTeleconferencerController`, `skypeForBusinessUnifiedCommunicationApplicationPlatform`, `responseGroupServiceAnnouncementService`, `gateway`, `skypeTranslator`, `skypeForBusinessAttendant`, `responseGroupService`, `voicemail`, `unknownFutureValue`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="cee21-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="cee21-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0f5df-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="0f5df-121">JSON representation</span></span>
 
-<span data-ttu-id="cee21-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="cee21-122">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="0f5df-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0f5df-122">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -58,3 +58,4 @@ ms.locfileid: "44491173"
   "section": "documentation",
   "tocPath": ""
 }-->
+
