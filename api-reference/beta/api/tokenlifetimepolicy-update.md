@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4fef59f4161feffcb7a4e5ce5adf77cb0af2c4b1
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 21c4f1c80e2cfa1a74d79bb5f80b35d788613680
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916323"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062202"
 ---
 # <a name="update-tokenlifetimepolicy"></a>更新 tokenlifetimepolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "43916323"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[tokenLifetimePolicy](../resources/tokenlifetimepolicy.md)对象的属性。
+更新 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -135,3 +135,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

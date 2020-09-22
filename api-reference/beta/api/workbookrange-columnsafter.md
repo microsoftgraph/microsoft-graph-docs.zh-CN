@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 900e0f1c35aa9a793d8c4cd7d7e5699311de9e3c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5c26f41a7f9eae092cdbaf8d1cc73059d493e1e1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451376"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062184"
 ---
 # <a name="workbookrange-columnsafter"></a>workbookRange: columnsAfter
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -114,3 +114,5 @@ Content-length: 157
   "suppressions": [
   ]
 }-->
+
+
