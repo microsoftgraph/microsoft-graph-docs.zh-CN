@@ -5,32 +5,32 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: svpsiva
-ms.openlocfilehash: b57eee95a29482db0a30ae7019ef305aa9f7fdff
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 2191f715d3763707f132c4907e34189941436c59
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812569"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034077"
 ---
-# <a name="automaticrepliesmailtips-resource-type"></a><span data-ttu-id="28d61-103">automaticRepliesMailTips 资源类型</span><span class="sxs-lookup"><span data-stu-id="28d61-103">automaticRepliesMailTips resource type</span></span>
+# <a name="automaticrepliesmailtips-resource-type"></a><span data-ttu-id="dd910-103">automaticRepliesMailTips 资源类型</span><span class="sxs-lookup"><span data-stu-id="dd910-103">automaticRepliesMailTips resource type</span></span>
 
-<span data-ttu-id="28d61-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="28d61-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="dd910-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dd910-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="28d61-105">有关已在邮箱上设置的任何自动答复的[邮件](../resources/mailtips.md)提示。</span><span class="sxs-lookup"><span data-stu-id="28d61-105">[MailTips](../resources/mailtips.md) about any automatic replies that have been set up on a mailbox.</span></span>
+<span data-ttu-id="dd910-105">有关已在邮箱上设置的任何自动答复的[邮件](../resources/mailtips.md)提示。</span><span class="sxs-lookup"><span data-stu-id="dd910-105">[MailTips](../resources/mailtips.md) about any automatic replies that have been set up on a mailbox.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="28d61-106">属性</span><span class="sxs-lookup"><span data-stu-id="28d61-106">Properties</span></span>
-| <span data-ttu-id="28d61-107">属性</span><span class="sxs-lookup"><span data-stu-id="28d61-107">Property</span></span>     | <span data-ttu-id="28d61-108">类型</span><span class="sxs-lookup"><span data-stu-id="28d61-108">Type</span></span>   |<span data-ttu-id="28d61-109">描述</span><span class="sxs-lookup"><span data-stu-id="28d61-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="dd910-106">属性</span><span class="sxs-lookup"><span data-stu-id="dd910-106">Properties</span></span>
+| <span data-ttu-id="dd910-107">属性</span><span class="sxs-lookup"><span data-stu-id="dd910-107">Property</span></span>     | <span data-ttu-id="dd910-108">类型</span><span class="sxs-lookup"><span data-stu-id="dd910-108">Type</span></span>   |<span data-ttu-id="dd910-109">描述</span><span class="sxs-lookup"><span data-stu-id="dd910-109">Description</span></span>|
 |:-----|:-----|:-----|
-| <span data-ttu-id="28d61-110">message</span><span class="sxs-lookup"><span data-stu-id="28d61-110">message</span></span> | <span data-ttu-id="28d61-111">String</span><span class="sxs-lookup"><span data-stu-id="28d61-111">String</span></span> | <span data-ttu-id="28d61-112">自动答复邮件。</span><span class="sxs-lookup"><span data-stu-id="28d61-112">The automatic reply message.</span></span> |
-| <span data-ttu-id="28d61-113">messageLanguage</span><span class="sxs-lookup"><span data-stu-id="28d61-113">messageLanguage</span></span> | [<span data-ttu-id="28d61-114">localeInfo</span><span class="sxs-lookup"><span data-stu-id="28d61-114">localeInfo</span></span>](../resources/localeinfo.md) | <span data-ttu-id="28d61-115">自动答复邮件所在的语言。</span><span class="sxs-lookup"><span data-stu-id="28d61-115">The language that the automatic reply message is in.</span></span> |
-| <span data-ttu-id="28d61-116">scheduledEndTime</span><span class="sxs-lookup"><span data-stu-id="28d61-116">scheduledEndTime</span></span> | [<span data-ttu-id="28d61-117">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="28d61-117">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md) | <span data-ttu-id="28d61-118">自动答复设置为结束的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="28d61-118">The date and time that automatic replies are set to end.</span></span> |
-| <span data-ttu-id="28d61-119">scheduledStartTime</span><span class="sxs-lookup"><span data-stu-id="28d61-119">scheduledStartTime</span></span> | [<span data-ttu-id="28d61-120">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="28d61-120">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md) | <span data-ttu-id="28d61-121">自动答复设置为开始的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="28d61-121">The date and time that automatic replies are set to begin.</span></span> |
+| <span data-ttu-id="dd910-110">message</span><span class="sxs-lookup"><span data-stu-id="dd910-110">message</span></span> | <span data-ttu-id="dd910-111">String</span><span class="sxs-lookup"><span data-stu-id="dd910-111">String</span></span> | <span data-ttu-id="dd910-112">自动答复邮件。</span><span class="sxs-lookup"><span data-stu-id="dd910-112">The automatic reply message.</span></span> |
+| <span data-ttu-id="dd910-113">messageLanguage</span><span class="sxs-lookup"><span data-stu-id="dd910-113">messageLanguage</span></span> | [<span data-ttu-id="dd910-114">localeInfo</span><span class="sxs-lookup"><span data-stu-id="dd910-114">localeInfo</span></span>](../resources/localeinfo.md) | <span data-ttu-id="dd910-115">自动答复邮件所在的语言。</span><span class="sxs-lookup"><span data-stu-id="dd910-115">The language that the automatic reply message is in.</span></span> |
+| <span data-ttu-id="dd910-116">scheduledEndTime</span><span class="sxs-lookup"><span data-stu-id="dd910-116">scheduledEndTime</span></span> | [<span data-ttu-id="dd910-117">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="dd910-117">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md) | <span data-ttu-id="dd910-118">自动答复设置为结束的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="dd910-118">The date and time that automatic replies are set to end.</span></span> |
+| <span data-ttu-id="dd910-119">scheduledStartTime</span><span class="sxs-lookup"><span data-stu-id="dd910-119">scheduledStartTime</span></span> | [<span data-ttu-id="dd910-120">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="dd910-120">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md) | <span data-ttu-id="dd910-121">自动答复设置为开始的日期和时间。</span><span class="sxs-lookup"><span data-stu-id="dd910-121">The date and time that automatic replies are set to begin.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="28d61-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="28d61-122">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="dd910-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="dd910-122">JSON representation</span></span>
 
-<span data-ttu-id="28d61-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="28d61-123">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="dd910-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="dd910-123">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -64,3 +64,5 @@ ms.locfileid: "46812569"
   "suppressions": []
 }
 -->
+
+
