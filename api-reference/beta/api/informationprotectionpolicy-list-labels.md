@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4aa7f61337b9dbe857354bbcf16abf3a881fa10f
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 9cd8fcd909c5c6e952763c6fa09e56c2f57fabe8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384309"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990625"
 ---
 # <a name="informationprotectionlabel-listlabels"></a>informationProtectionLabel: listLabels
 
@@ -18,7 +18,7 @@ ms.locfileid: "45384309"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取可供用户或组织使用的[信息保护标签](../resources/informationprotectionlabel.md)的集合。
+获取可供用户或组织使用的 [信息保护标签](../resources/informationprotectionlabel.md) 的集合。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "45384309"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :------------------------------------------ |
-| 委派（工作或学校帐户）     | InformationProtectionPolicy。请阅读            |
+| 委派（工作或学校帐户）     | InformationProtectionPolicy.Read            |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用程序                            | InformationProtectionPolicy        |
+| 应用程序                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -61,7 +61,7 @@ GET /informationProtection/policy/labels
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[informationProtectionLabel](../resources/informationprotectionlabel.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [informationProtectionLabel](../resources/informationprotectionlabel.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -154,3 +154,5 @@ User-agent: ContosoLOBApp/1.0
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

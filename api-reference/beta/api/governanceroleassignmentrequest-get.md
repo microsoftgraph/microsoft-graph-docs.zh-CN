@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: f88ed34fb016f06015df067bd86a33f88ea52407
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 4e63269d627f83e6287e544eb7c6a59ac0e777e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218876"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991101"
 ---
 # <a name="get-governanceroleassignmentrequest"></a>获取 governanceRoleAssignmentRequest
 
@@ -18,12 +18,12 @@ ms.locfileid: "43218876"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)。 
+获取 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | Permissions              |
+|权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
@@ -31,7 +31,7 @@ ms.locfileid: "43218876"
 
 除了权限范围之外，还需要请求程序 
 *   对资源至少有一个角色分配;和
-*   是[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)的主题。
+*   是 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)的主题。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +50,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 对象。
 
 ## <a name="example"></a>示例
 获取角色分配请求
@@ -107,3 +107,5 @@ Content-length: 279
   "suppressions": []
 }
 -->
+
+

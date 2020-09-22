@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 8179fa2d2bd1e8f52df9aa09bac5a965812e2122
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 942ff054ab3465077bf4ace0f267121e8b7ce8e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218883"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991129"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>取消 governanceRoleAssignmentRequest
 
@@ -18,19 +18,19 @@ ms.locfileid: "43218883"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-取消[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)。
+取消 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | Permissions              |
+|权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法**不**支持[OData 查询参数](/graph/query-parameters)。
+此方法 **不** 支持 [OData 查询参数](/graph/query-parameters)。
 
 ### <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -55,7 +55,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 | 错误代码 | 错误消息 | 详细信息 |
 |:---------- |:------------- |:------- |
 | 400 BadRequest | RoleAssignmentRequestNotFound | GovernanceRoleAssignmentRequest 在系统中不存在。 |
-| 400 BadRequest | RequestCannotBeCancelled | 仅`Granted`可以取消、 `PendingApproval` `PendingApprovalProvisioning`和和`PendingAdminDecision`的状态的请求。 |
+| 400 BadRequest | RequestCannotBeCancelled | 仅 `Granted` `PendingApproval` `PendingApprovalProvisioning` 可以取消、和和的状态的请求 `PendingAdminDecision` 。 |
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
@@ -107,3 +107,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

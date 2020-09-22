@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ef2722aaf20dc2271b82525aa680410b98a45297
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 46846238b6de25566344e9924ea5788cca51064d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43396720"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990778"
 ---
 # <a name="create-acceptedsender"></a>删除 acceptedSender
 
@@ -103,3 +103,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

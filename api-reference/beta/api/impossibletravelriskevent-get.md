@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: cloudhandler
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 25f691f19f0feac24886b9228a578e34fe5919b4
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: e383920efdff0782995d905deb240c3c9f70ced2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311702"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990646"
 ---
 # <a name="get-impossibletravelriskevent-deprecated"></a>获取 impossibleTravelRiskEvent (弃用) 
 
@@ -104,3 +104,5 @@ Content-length: 260
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 48700bebc5ae99db5cccb017eb316a55283a4fa7
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 78c685c1f2234ad2cd3815eef0d34a3fc3ee0dac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215776"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991080"
 ---
 # <a name="list-governanceroleassignmentrequests"></a>列出 governanceRoleAssignmentRequests
 
@@ -18,12 +18,12 @@ ms.locfileid: "43215776"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)的集合。 
+检索 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)的集合。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | Permissions              |
+|权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
@@ -31,7 +31,7 @@ ms.locfileid: "43215776"
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
-列出资源上的[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)的集合。
+列出资源上的 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 的集合。
     
 >**注意：** 除了权限范围之外，该请求还要求请求者在资源上至少有一个角色分配。
 
@@ -39,15 +39,15 @@ ms.locfileid: "43215776"
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignmentRequests
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'{resourceId}'
 ```
-列出地雷的[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)的集合。
+列出地雷的 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 的集合。
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=subjectId+eq+'{myId}'
 ```
 
-列出作为等待管理员决策的[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)的集合。
+列出作为等待管理员决策的 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 的集合。
     
->**注意：** 除了权限范围之外，此请求还要求请求者在资源上至少`Active`有一个管理员角色`owner`分配`user access administrator`（或）。
+>**注意：** 除了权限范围之外，此请求还要求请求者在资源上至少有一个 `Active` 管理员角色分配 (`owner` 或 `user access administrator`) 。
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subStatus+eq+'PendingAdminDecision'
@@ -65,7 +65,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subSt
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 对象集合。
 
 ## <a name="example"></a>示例
 <!-- {
@@ -177,3 +177,5 @@ Content-length: 279
   "suppressions": []
 }
 -->
+
+

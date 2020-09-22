@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 544b113054ac728dcc1d360e1e3ba50618dac60d
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: b9b2f1d4f3592a9a51c69066fe9119e644d66956
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329583"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991444"
 ---
 # <a name="create-b2xuserflow"></a>创建 b2xUserFlow
 
@@ -56,10 +56,10 @@ POST /identity/b2xUserFlow
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|id|String|必需。 用户流的名称。 创建后，名称将预先挂起 `B2X_1` 。|
+|id|String|必需。 用户流名称。 创建后，名称将预先挂起 `B2X_1` 。|
 |userFlowType|String|必需。 您正在创建的用户流的类型。 此值将始终为 `signUpOrSignIn` 。|
-|userFlowTypeVersion|浮点|必需。 用户流的版本。 此值将始终为1。|
-|identityProviders|[identityprovider.read.all](../resources/identityprovider.md) 集合|可选。 要包括在用户流中的标识提供程序。|
+|userFlowTypeVersion|浮点|必需。 用户流版本。 此值将始终为1。|
+|identityProviders|[identityProvider](../resources/identityprovider.md)集合 |可选。 要包括在用户流中的标识提供程序。|
 
 ## <a name="response"></a>响应
 
@@ -109,7 +109,7 @@ Content-length: 154
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -180,7 +180,7 @@ Content-length: 154
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -213,3 +213,5 @@ Content-type: application/json
     "Error: create_b2xUserFlow_from_b2xUserFlows_identityProviders/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->
+
+

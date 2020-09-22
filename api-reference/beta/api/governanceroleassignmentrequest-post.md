@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: b038ca74eb8046e4ae77a8a31715a473a3518ba1
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 7bff2d2ae8e6a122621e3d17de7f7acc3f4e24df
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218869"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991108"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>创建 governanceRoleAssignmentRequest
 
@@ -20,7 +20,7 @@ ms.locfileid: "43218869"
 
 创建一个角色分配请求，以代表在角色分配上所需的操作。 下表列出了这些操作。
 
-| Operation                                   | 类型        |
+| 操作                                   | 类型        |
 |:--------------------------------------------|:------------|
 | 分配角色分配                    | AdminAdd    |
 | 激活符合条件的角色分配        | UserAdd     |
@@ -32,11 +32,11 @@ ms.locfileid: "43218869"
 | 续订我的过期角色分配的请求 | UserRenew   |
 | 续订过期的角色分配            | AdminRenew  |
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | Permissions                               |
+| 权限类型                        | 权限                               |
 |:---------------------------------------|:------------------------------------------|
 | 委派（工作或学校帐户）     | PrivilegedAccess.ReadWrite.AzureResources |
 | 委派（个人 Microsoft 帐户） | 不支持。                            |
@@ -59,21 +59,21 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)对象的 JSON 表示形式。
+在请求正文中，提供 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 对象的 JSON 表示形式。
 
 | 属性         | 类型                                                     | 说明 |
 |:-----------------|:---------------------------------------------------------|:--|
 | resourceId       | String                                                   | 资源的 ID。 必需。 |
-| roleDefinitionId | 字符串                                                   | 角色定义的 ID。 必需。 |
-| subjectId        | 字符串                                                   | 主题的 ID。 必需。 |
-| assignmentState  | 字符串                                                   | 工作分配的状态。 值可以是`Eligible`和`Active`。 此为必需属性。 |
-| type             | 字符串                                                   | 请求类型。 值可以是`AdminAdd` `UserAdd`、、 `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `AdminRenew` `AdminExtend`、、、、和。 `UserRenew` 必需。 |
-| reason           | 字符串                                                   | 需要为角色分配请求提供审核和审阅目的的原因。 |
-| schedule         | [governanceSchedule](../resources/governanceschedule.md) | 角色分配请求的日程安排。 对于的请求类型`UserAdd`， `AdminAdd` `AdminUpdate`、和`AdminExtend`，它是必需的。 |
+| roleDefinitionId | String                                                   | 角色定义的 ID。 必需。 |
+| subjectId        | String                                                   | 主题的 ID。 必需。 |
+| assignmentState  | String                                                   | 工作分配的状态。 值可以是 `Eligible` 和 `Active` 。 此为必需属性。 |
+| type             | String                                                   | 请求类型。 值可以是、、、、、、 `AdminAdd` `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` 和 `AdminExtend` 。 必需。 |
+| reason           | String                                                   | 需要为角色分配请求提供审核和审阅目的的原因。 |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | 角色分配请求的日程安排。 对于的请求类型 `UserAdd` ， `AdminAdd` 、 `AdminUpdate` 和， `AdminExtend` 它是必需的。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 对象。
 
 ### <a name="error-codes"></a>错误代码
 
@@ -81,12 +81,12 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | 错误代码     | 错误消息                               | 详细信息       |
 |:---------------|:--------------------------------------------|:--------------|
-| 400 BadRequest | RoleNotFound                                | 找`roleDefinitionId`不到请求正文中提供的。 |
-| 400 BadRequest | ResourceIsLocked                            | 请求正文中提供的资源处于状态`Locked` ，并且无法创建角色分配请求。 |
-| 400 BadRequest | SubjectNotFound                             | 找`subjectId`不到请求正文中提供的。 |
-| 400 BadRequest | PendingRoleAssignmentRequest                | 系统中已存在一个挂起的[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 。 |
-| 400 BadRequest | RoleAssignmentExists                        | 系统中已存在请求创建的[governanceRoleAssignment](../resources/governanceroleassignment.md) 。 |
-| 400 BadRequest | RoleAssignmentDoesNotExist                  | 系统中不存在请求进行更新/扩展的[governanceRoleAssignment](../resources/governanceroleassignment.md) 。 |
+| 400 BadRequest | RoleNotFound                                | `roleDefinitionId`找不到请求正文中提供的。 |
+| 400 BadRequest | ResourceIsLocked                            | 请求正文中提供的资源处于状态 `Locked` ，并且无法创建角色分配请求。 |
+| 400 BadRequest | SubjectNotFound                             | `subjectId`找不到请求正文中提供的。 |
+| 400 BadRequest | PendingRoleAssignmentRequest                | 系统中已存在一个挂起的 [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 。 |
+| 400 BadRequest | RoleAssignmentExists                        | 系统中已存在请求创建的 [governanceRoleAssignment](../resources/governanceroleassignment.md) 。 |
+| 400 BadRequest | RoleAssignmentDoesNotExist                  | 系统中不存在请求进行更新/扩展的 [governanceRoleAssignment](../resources/governanceroleassignment.md) 。 |
 | 400 BadRequest | RoleAssignmentRequestPolicyValidationFailed | [GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)不符合内部策略，因此无法创建。 |
 
 ## <a name="examples"></a>示例
@@ -97,16 +97,16 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 在此示例中，管理员向计费读者角色分配用户 nawu@fimdev.net。
 
- >**注意：** 除了权限之外，此示例还要求请求者在资源上至少有一个`Active`管理员角色分配（`owner`或`user access administrator`）。
+ >**注意：** 除了权限之外，本示例还要求请求者在资源上至少有一个 `Active` 管理员角色分配 (`owner` 或 `user access administrator`) 。
 
 | 属性         | 类型                                                     | 必需                 | 值 |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
-| resourceId       | 字符串                                                   | 是                      | \<resourceId\> |
+| resourceId       | String                                                   | 是                      | \<resourceId\> |
 | roleDefinitionId | 字符串                                                   | 是                      | \<roleDefinitionId\> |
 | subjectId        | 字符串                                                   | 是                      | \<subjectId\> |
 | assignmentState  | 字符串                                                   | 是                      | 符合条件/活动 |
 | type             | 字符串                                                   | 是                      | AdminAdd |
-| reason           | 字符串                                                   | 取决于角色设置 |   |
+| reason           | String                                                   | 取决于角色设置 |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | 是                      |   |
 
 #### <a name="request"></a>请求
@@ -209,12 +209,12 @@ Content-type: application/json
 
 | 属性         | 类型                                                     | 必需                 | 值 |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
-| resourceId       | 字符串                                                   | 是                      | \<resourceId\> |
+| resourceId       | String                                                   | 是                      | \<resourceId\> |
 | roleDefinitionId | 字符串                                                   | 是                      | \<roleDefinitionId\> |
 | subjectId        | 字符串                                                   | 是                      | \<subjectId\> |
 | assignmentState  | 字符串                                                   | 是                      | 活动 |
 | type             | 字符串                                                   | 是                      | UserAdd |
-| reason           | 字符串                                                   | 取决于角色设置 |   |
+| reason           | String                                                   | 取决于角色设置 |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | 是                      |   |
 
 #### <a name="request"></a>请求
@@ -312,7 +312,7 @@ Content-type: application/json
 
 | 属性         | 类型                                                     | 必需 | 值 |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
-| resourceId       | 字符串                                                   | 是      | \<resourceId\> |
+| resourceId       | String                                                   | 是      | \<resourceId\> |
 | roleDefinitionId | 字符串                                                   | 是      | \<roleDefinitionId\> |
 | subjectId        | 字符串                                                   | 是      | \<subjectId\> |
 | assignmentState  | 字符串                                                   | 是      | 活动 |
@@ -378,7 +378,7 @@ Content-type: application/json
 
 在此示例中，管理员从 "计费读者" 角色中删除用户 nawu@fimdev.net。
 
- >**注意：** 除了权限之外，此示例还要求请求者在资源上至少有一个`Active`管理员角色分配（`owner`或`user access administrator`）。
+ >**注意：** 除了权限之外，本示例还要求请求者在资源上至少有一个 `Active` 管理员角色分配 (`owner` 或 `user access administrator`) 。
 
 | 属性         | 类型                                                     | 必需 | 值 |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
@@ -446,7 +446,7 @@ Content-type: application/json
 
 在此示例中，管理员将用户 nawu@fimdev.net 的角色分配更新为 "所有者"。
 
- >**注意：** 除了权限之外，此示例还要求请求者在资源上至少有一个`Active`管理员角色分配（`owner`或`user access administrator`）。
+ >**注意：** 除了权限之外，本示例还要求请求者在资源上至少有一个 `Active` 管理员角色分配 (`owner` 或 `user access administrator`) 。
 
 | 属性         | 类型                                                     | 必需                | 值 |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
@@ -455,7 +455,7 @@ Content-type: application/json
 | subjectId        | 字符串                                                   | 是                     | \<subjectId\> |
 | assignmentState  | 字符串                                                   | 是                     | 符合条件/活动 |
 | type             | 字符串                                                   | 是                     | AdminUpdate |
-| reason           | 字符串                                                   | 取决于 roleSettings |   |
+| reason           | String                                                   | 取决于 roleSettings |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | 是                     |   |
 
 #### <a name="request"></a>请求
@@ -537,7 +537,7 @@ Content-type: application/json
 
 此示例将用户 ANUJCUSER 的过期角色分配扩展到 API Management Service 参与者。
 
- >**注意：** 除了权限之外，此示例还要求请求者在资源上至少有一个`Active`管理员角色分配（`owner`或`user access administrator`）。
+ >**注意：** 除了权限之外，本示例还要求请求者在资源上至少有一个 `Active` 管理员角色分配 (`owner` 或 `user access administrator`) 。
 
 | 属性         | 类型                                                     | 必需                | 值 |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
@@ -546,7 +546,7 @@ Content-type: application/json
 | subjectId        | 字符串                                                   | 是                     | \<subjectId\> |
 | assignmentState  | 字符串                                                   | 是                     | 符合条件/活动 |
 | type             | 字符串                                                   | 是                     | AdminExtend |
-| reason           | 字符串                                                   | 取决于 roleSettings |   |
+| reason           | String                                                   | 取决于 roleSettings |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | 是                     |   |
 
 #### <a name="request"></a>请求
@@ -638,3 +638,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

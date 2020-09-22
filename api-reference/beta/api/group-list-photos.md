@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3c0bd09498d679cf1b2f042f7af6e3385cdd2cc6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2c462ae486d528f6d3084e714af890777380d8e7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43410026"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990919"
 ---
 # <a name="list-photos"></a>List photos
 
@@ -115,3 +115,5 @@ Content-length: 94
   ]
 }
 -->
+
+

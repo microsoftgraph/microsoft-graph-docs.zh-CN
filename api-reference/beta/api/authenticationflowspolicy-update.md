@@ -1,31 +1,31 @@
 ---
 title: 更新 authenticationFlowsPolicy
-description: 更新 authenticationFlowsPolicy 对象的布尔 selfServiceSignUp 属性。
+description: 更新 authenticationFlowsPolicy 对象的布尔 Boolean selfServiceSignUp 属性。
 author: linkhp
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3408cff98cc79dbf819e077ab12fa066f7d723f7
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
-ms.translationtype: Auto
+ms.openlocfilehash: 243b635f904881acd0bbbe05c542b738c3e474b9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44680881"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991596"
 ---
 # <a name="update-authenticationflowspolicy"></a>更新 authenticationFlowsPolicy
 
 命名空间：microsoft.graph
 
-更新[authenticationFlowsPolicy](../resources/authenticationflowspolicy.md)对象的布尔**selfServiceSignUp**属性。 无法修改属性**id**、**类型**和**说明**。
+更新 [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md) 对象的布尔 **selfServiceSignUp** 属性。 无法修改 **id**、**type** 和 **description** 属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|AuthenticationFlows|
+|委派（工作或学校帐户）|Policy.ReadWrite.AuthenticationFlows|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序|AuthenticationFlows|
+|应用程序|Policy.ReadWrite.AuthenticationFlows|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -44,11 +44,11 @@ PATCH https://graph.microsoft.com/beta/policies/authenticationFlowsPolicy
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，可以提供[authenticationFlowsPolicy](../resources/authenticationflowspolicy.md)对象的 JSON 表示形式（但不是必需的）。
+在请求正文中，你可以提供 [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md) 对象的 JSON 表示形式（但不是必需的）。
 
-下表显示了在更新[authenticationFlowsPolicy](../resources/authenticationflowspolicy.md)时所需的属性。
+下表显示了更新 [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md) 时所需的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---|:---|:---|
 |selfServiceSignUp|[selfServiceSignUpAuthenticationFlowConfiguration](../resources/selfservicesignupauthenticationflowconfiguration.md)|自助注册配置。|
 
@@ -99,3 +99,5 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+

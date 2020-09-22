@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3f0629cf7be5898c91cc9b5f5212fac56db96ffe
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 08d138e3b41cd233626304943bc65ee553a66ed7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319391"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991570"
 ---
 # <a name="get-authorizationpolicy"></a>获取 authorizationPolicy
 
@@ -97,3 +97,5 @@ Content-type: application/json
     "allowEmailVerifiedUsersToJoinOrganization": true,
 }
 ```
+
+

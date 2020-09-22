@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9943331d6230ad657c02d30f6d36cc17b4b64fbb
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: f35437e30768600277f505e43cc35517d2cf32af
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218827"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990723"
 ---
 # <a name="list-userflows"></a>列出 userFlows
 
@@ -18,9 +18,9 @@ ms.locfileid: "43218827"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[userflows](../resources/identityuserflow.md)的列表。
+检索 [userflows](../resources/identityuserflow.md)的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,7 +50,7 @@ GET /identity/userFlows
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[userFlow](../resources/identityuserflow.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [userFlow](../resources/identityuserflow.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -122,3 +122,5 @@ Content-type: application/json
     "Error: get_userflows/container/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->
+
+

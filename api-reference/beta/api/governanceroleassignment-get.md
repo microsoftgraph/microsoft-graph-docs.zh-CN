@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 74701c9e0567735dc4f34ec2f4044e8514a54d1d
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 77b188d37ebab092caba83cb0b4cc1cd639f6df4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218897"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991150"
 ---
 # <a name="get-governanceroleassignment"></a>获取 governanceRoleAssignment
 
@@ -18,12 +18,12 @@ ms.locfileid: "43218897"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[governanceRoleAssignment](../resources/governanceroleassignment.md)的属性和关系。
+检索 [governanceRoleAssignment](../resources/governanceroleassignment.md)的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | Permissions              |
+|权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
@@ -44,7 +44,7 @@ GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法不**支持除**之外`$filter`的[OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法不 **支持除** 之外的 [OData 查询参数](/graph/query-parameters) `$filter` 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -54,7 +54,7 @@ GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[governanceRoleAssignment](../resources/governanceroleassignment.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [governanceRoleAssignment](../resources/governanceroleassignment.md) 对象。
 ## <a name="example"></a>示例
 <!-- {
   "blockType": "request",
@@ -104,3 +104,5 @@ Content-length: 182
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0da0f07f121ae23be2b2f6f33584d3de9c6157e5
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 586af0af699aa528dfe6b0a7d15988e9edca3e0d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329388"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991430"
 ---
 # <a name="delete-b2xuserflow"></a>删除 b2xUserFlow
 
@@ -90,7 +90,7 @@ DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -103,3 +103,5 @@ DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+

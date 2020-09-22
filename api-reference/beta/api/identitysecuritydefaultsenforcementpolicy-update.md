@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rohinigoyal1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bf4566e08a07147144993c7b17cacbd22890c54e
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 5f6146b8569eac1bcb4b43e5657d6ecf06af9c3d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384316"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990744"
 ---
 # <a name="update-identitysecuritydefaultsenforcementpolicy"></a>更新 identitySecurityDefaultsEnforcementPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "45384316"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md)对象的属性。
+更新 [identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -115,3 +115,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

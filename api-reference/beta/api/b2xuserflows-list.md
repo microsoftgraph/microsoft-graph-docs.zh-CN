@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 135ce0d335be077e5673c39979f1fa198f97b440
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 8995176bda6115a640d9c2142e35619dbcc5a66f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329426"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991374"
 ---
 # <a name="list-b2xuserflows"></a>列出 b2xUserFlows
 
@@ -99,7 +99,7 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -165,7 +165,7 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows?$expand=identityProvi
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -226,3 +226,5 @@ Content-type: application/json
     "Error: list_b2xUserFlows_expand/container/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->
+
+

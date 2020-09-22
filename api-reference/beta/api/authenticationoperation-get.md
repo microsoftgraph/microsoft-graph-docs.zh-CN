@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8340fe68f865fa9acfba0cbb05537422e2cfacf9
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 995bcf06c01f75f75b786a3d5a697f054dbc7d9b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43805784"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991577"
 ---
 # <a name="get-authentication-operation"></a>获取身份验证操作
 
@@ -18,26 +18,26 @@ ms.locfileid: "43805784"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[operation](../resources/operation.md)对象的属性和关系。 当前，通过使用 "[重置密码](passwordauthenticationmethod-resetpassword.md)" 方法启动密码重置来生成这些操作。 操作对象告诉呼叫者该密码重置操作的当前状态。 可能的状态包括：
+检索 [operation](../resources/operation.md) 对象的属性和关系。 当前，通过使用 " [重置密码](passwordauthenticationmethod-resetpassword.md) " 方法启动密码重置来生成这些操作。 操作对象告诉呼叫者该密码重置操作的当前状态。 可能的状态包括：
 
 * NotStarted
 * 正在运行
 * Succeeded
-* 失败
+* 已失败
 
-`Succeeded`和`Failed`是终端状态。
+`Succeeded` 和 `Failed` 是终端状态。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 作用于自助的权限（从最高特权到最高特权） | 对其他用户的权限（从最低到最高特权）|
+| 权限类型                        | 从最高特权到最高特权) 对自己 (的权限 | 对其他人进行操作的权限 (从至少到最高特权) |
 |:---------------------------------------|:-------------------------|:-----------------|
 | 委派（工作或学校帐户）     | UserAuthenticationMethod、UserAuthenticationMethod、UserAuthenticationMethod、UserAuthenticationMethod、All 和 All | UserAuthenticationMethod、UserAuthenticationMethod 和所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 | 不支持。 |
 | 应用程序                            | 不支持。 | 不支持。 |
 
-对于在其他用户上执行管理的委派方案，管理员需要[以下角色之一](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
+对于在其他用户上执行管理的委派方案，管理员需要 [以下角色之一](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)：
 
 * 全局管理员
 * 全局读取者
@@ -68,7 +68,7 @@ GET /users/{id}/authentication/operations/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[操作](../resources/operation.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [操作](../resources/operation.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -133,3 +133,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -1,16 +1,16 @@
 ---
 title: 更新 governanceRoleAssignmentRequests
-description: 使管理员能够更新状态为的`AdminApproved` `PendingAdminDecision`governanceRoleAssignmentRequests `AdminDenied`上的决策（或）。
+description: 使管理员能够更新 `AdminApproved` 状态为的 governanceRoleAssignmentRequests 上的决策 (或 `AdminDenied`) `PendingAdminDecision` 。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: b726903082d8a3302e2be386206b76d741d89928
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 75c6044e6fc76c0ac19e7990240b883f663cba04
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218862"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991059"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>更新 governanceRoleAssignmentRequests
 
@@ -18,14 +18,14 @@ ms.locfileid: "43218862"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使管理员能够更新状态为的`AdminApproved` `AdminDenied` `PendingAdminDecision` [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)上的决策（或）。
+使管理员能够更新 `AdminApproved` `AdminDenied` 状态为的 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 上的决策 (或) `PendingAdminDecision` 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
->**注意：** 此 API 还要求请求者在[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)所属的资源`Active`中至少有一个`owner`管理员`user access administrator`角色分配（或）。 
+>**注意：** 此 API 还要求请求者在 `Active` `owner` `user access administrator` [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 所属的资源上至少有一个管理员角色分配 (或) 。 
 
-|权限类型      | Permissions              |
+|权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
@@ -47,12 +47,12 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 |参数      |类型                   |必需 |说明|
 |:-------------|:----------------------|:--------|:----------|
-|reason        |字符串                 |✓        |管理员为自己的决定提供的原因。|
-|权        |字符串                 |✓        |角色分配请求的管理员决定。 应将值更新为`AdminApproved`或。 `AdminDenied`|
-|schedule      |[governanceSchedule](../resources/governanceschedule.md)|        | 角色分配请求的日程安排。 对于的状态`AdminApproved`，是必需的。|
-|assignmentState      |字符串|         | 工作分配的状态，值可以是`Eligible`或。 `Active` 有关的决策`AdminApproved`，则是必需的。 |
+|reason        |String                 |✓        |管理员为自己的决定提供的原因。|
+|权        |String                 |✓        |角色分配请求的管理员决定。 应将值更新为 `AdminApproved` 或 `AdminDenied` 。|
+|schedule      |[governanceSchedule](../resources/governanceschedule.md)|        | 角色分配请求的日程安排。 对于的状态 `AdminApproved` ，是必需的。|
+|assignmentState      |String|         | 工作分配的状态，值可以是 `Eligible` 或 `Active` 。 有关的决策 `AdminApproved` ，则是必需的。 |
 ### <a name="response"></a>响应
-此方法仅适用于状态为的`PendingAdminDecision`请求。
+此方法仅适用于状态为的请求 `PendingAdminDecision` 。
 
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
@@ -118,3 +118,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

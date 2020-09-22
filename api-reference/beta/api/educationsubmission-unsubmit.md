@@ -5,16 +5,16 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 17be34a014e83b43bf7494758933ecaa10f4068f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c08bc30244bf3f86e33ce45d50ac61fbac3023b4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424734"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991314"
 ---
 # <a name="educationsubmission-unsubmit"></a>educationSubmission： unsubmit
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -99,3 +99,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

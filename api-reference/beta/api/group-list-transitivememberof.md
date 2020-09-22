@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c25e2c048e53b1010d4fc6315372397de1e26684
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: bf4e1365b392736a1856cb8c6284a7a4babc97dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872596"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990877"
 ---
 # <a name="list-group-transitive-memberof"></a>List group transitive memberOf
 
@@ -20,7 +20,7 @@ ms.locfileid: "46872596"
 
 获取组所属的组和管理单元。  此操作是可传递的，还将包括此组嵌套成员的所有组。 与获取用户的 Microsoft 365 组不同，这将返回所有类型的组，而不仅仅是 Microsoft 365 组。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,7 +48,7 @@ GET /groups/{id}/transitiveMemberOf
 | 名称 | 说明 |
 |:---- |:----------- |
 | Authorization  | Bearer {token}。必需。 |
-| ConsistencyLevel | 最终。 在 `$count` 使用 `$search` 、 `$filter` 、 `$orderby` 或 OData 转换查询参数时，此标头和是必需的。 它使用的索引可能不是最新的，并包含对对象的最新更改。 |
+| ConsistencyLevel | 最终。 使用 `$search`、`$filter`、`$orderby` 或 OData 强制转换查询参数时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -117,7 +117,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-all-transitive-membership"></a>示例2：仅获取所有可传递成员身份的计数
+### <a name="example-2-get-only-a-count-of-all-transitive-membership"></a>示例 2：仅获取所有可传递成员身份的计数
 
 #### <a name="request"></a>请求
 
@@ -165,7 +165,7 @@ Content-type: text/plain
 
 294
 
-### <a name="example-3-use-odata-cast-to-get-only-a-count-of-transitive-membership-in-groups"></a>示例3：使用 OData 强制转换仅获取组中的可传递成员身份数
+### <a name="example-3-use-odata-cast-to-get-only-a-count-of-transitive-membership-in-groups"></a>示例 3：使用 OData 强制转换以仅获取组中可传递成员身份的计数
 
 #### <a name="request"></a>请求
 
@@ -346,3 +346,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

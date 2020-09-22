@@ -1,16 +1,16 @@
 ---
 title: 导出 governanceRoleAssignmentRequests
-description: 以格式`application/octet-stream`检索 governanceRoleAssignmentRequests 的集合，可以在浏览器中将其解析为 .csv 文件。
+description: 以格式检索 governanceRoleAssignmentRequests 的集合 `application/octet-stream` ，可以在浏览器中将其解析为 .csv 文件。
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: b09eaa5cfe3c4530faedbfd52d2f9b52bd41f07d
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: a975205ffdfcca831bfd7e2a17c4ceeb51988fd3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218904"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991157"
 ---
 # <a name="export-governanceroleassignmentrequests"></a>导出 governanceRoleAssignmentRequests
 
@@ -18,12 +18,12 @@ ms.locfileid: "43218904"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-以格式`application/octet-stream`检索[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)的集合，可以在浏览器中将其解析为 .csv 文件。
+以格式检索 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 的集合 `application/octet-stream` ，可以在浏览器中将其解析为 .csv 文件。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | Permissions              |
+|权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
@@ -32,7 +32,7 @@ ms.locfileid: "43218904"
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
-导出资源的[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)集合
+导出资源的 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 集合
     
 >**注意：** 除了权限范围之外，此请求还要求请求者在资源上至少有一个角色分配。 
     
@@ -40,7 +40,7 @@ ms.locfileid: "43218904"
 GET /privilegedAccess/azureResources/roleAssignments/export?$filter=resourceId+eq+'{resourceId}'
 ```
 
-导出地雷的[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)集合
+导出地雷的 [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) 集合
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq+'{myId}'
 ```
@@ -56,7 +56,7 @@ GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法将`200 OK`返回响应代码和类型`application/octet-stream`的内容。
+如果成功，此方法将返回 `200 OK` 响应代码和类型的内容 `application/octet-stream` 。
 
 ## <a name="example"></a>示例
 本示例将所有角色分配作为 .csv 文件保存在订阅 Wingtip 玩具-生产中。 
@@ -88,3 +88,5 @@ Content-Length:126
   "suppressions": []
 }
 -->
+
+

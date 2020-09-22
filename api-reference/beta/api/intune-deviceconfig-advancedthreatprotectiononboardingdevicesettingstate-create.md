@@ -3,24 +3,24 @@ title: 创建 advancedThreatProtectionOnboardingDeviceSettingState
 description: 创建新的 advancedThreatProtectionOnboardingDeviceSettingState 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 576ac7eaf5e44cdd3539c1d4a281c3612880e733
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: fa081b3d31ce2125f4c9315ac8e70a8343f9db27
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793148"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990338"
 ---
 # <a name="create-advancedthreatprotectiononboardingdevicesettingstate"></a>创建 advancedThreatProtectionOnboardingDeviceSettingState
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)对象。
+创建新的 [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -62,7 +62,7 @@ POST /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedTh
 |userId|String|报告的用户 ID|
 |userEmail|String|报告的用户电子邮件地址|
 |userName|String|报告的用户名|
-|userPrincipalName|字符串|报告的用户主体名称|
+|userPrincipalName|String|报告的用户主体名称|
 |deviceModel|String|报告的设备模型|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|设置的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期的到期日期/时间|
@@ -70,7 +70,7 @@ POST /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedTh
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -122,6 +122,9 @@ Content-Length: 622
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
+
+
+
 
 
 

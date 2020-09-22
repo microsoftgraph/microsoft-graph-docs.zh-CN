@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2365d16255543a99562be41fb8b3742972293fca
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 155524d9c84759028dfa630888722b896a603e25
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329646"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991451"
 ---
 # <a name="add-identityprovider-to-a-b2cuserflow"></a>将 Identityprovider.read.all 添加到 b2cUserFlow
 
@@ -108,3 +108,5 @@ Content-length: 30
 ```http
 HTTP/1.1 204 No Content
 ```
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ddb7d869c45fe727a962c280d8c4cdd8c07f2432
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: c6b88a77101c504c6bf2c7979758a73a3755c638
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47842909"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991584"
 ---
 # <a name="update-authorizationpolicy"></a>更新 authorizationPolicy
 
@@ -88,7 +88,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 ```
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 <!-- {
   "blockType": "response",
@@ -138,7 +138,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 <!-- {
   "blockType": "response",
@@ -188,7 +188,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 <!-- {
   "blockType": "response",
@@ -239,7 +239,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 <!-- {
   "blockType": "response",
@@ -299,3 +299,5 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 ```http
 HTTP/1.1 204 No Content
 ```
+
+

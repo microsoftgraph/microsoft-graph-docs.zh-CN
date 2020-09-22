@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0f92c4dae40548cab9b4e1ded3352194f68056ae
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 556bfce3f67dde28b3cc16bdbcf38c4f5c05fd4c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123956"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990989"
 ---
 # <a name="group-assignlicense"></a>组： assignLicense
 
@@ -18,16 +18,16 @@ ms.locfileid: "43123956"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在组中添加或删除许可证。 分配给该组的许可证将被分配给组中的所有用户。 若要了解有关基于组的许可的详细信息，请参阅[什么是 Azure Active Directory 中的基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。
+在组中添加或删除许可证。 分配给该组的许可证将被分配给组中的所有用户。 若要了解有关基于组的许可的详细信息，请参阅 [什么是 Azure Active Directory 中的基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。
 
-若要获取目录中可用的订阅，请执行[Get subscribedsku 请求](subscribedsku-list.md)。
+若要获取目录中可用的订阅，请执行 [Get subscribedsku 请求](subscribedsku-list.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All、Directory.ReadWrite.All    |
+|委派（工作或学校帐户） | Group.ReadWrite.All, Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.ReadWrite.All、Directory.ReadWrite.All |
 
@@ -52,7 +52,7 @@ POST /groups/{id}/assignLicense
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`202 Accepted`正文中返回响应代码和目标[组](../resources/group.md)对象。
+如果成功，此方法 `202 Accepted` 在响应正文中返回响应代码和目标 [组](../resources/group.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -197,3 +197,5 @@ location: https://graph.microsoft.com/v2/d056d009-17b3-4106-8173-cd3978ada898/di
   ]
 }
 -->
+
+

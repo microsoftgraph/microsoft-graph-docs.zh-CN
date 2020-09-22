@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 219250051cf4b7d27eed4f08a2e3d07f38f74a2a
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: afd00558e6fca4e79221eea9a76a9ce1ef304807
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218988"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991185"
 ---
 # <a name="list-governanceresources"></a>列出 governanceResources
 
@@ -18,12 +18,12 @@ ms.locfileid: "43218988"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索请求者有权访问的[governanceResource](../resources/governanceresource.md)的集合。
+检索请求者有权访问的 [governanceResource](../resources/governanceresource.md) 的集合。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | Permissions              |
+|权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
@@ -45,7 +45,7 @@ GET /privilegedAccess/azureResources/resources
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[governanceResource](../resources/governanceresource.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [governanceResource](../resources/governanceresource.md) 对象集合。
 ## <a name="examples"></a>示例
 
 本示例列出了我当前可以访问的所有资源。
@@ -135,3 +135,5 @@ Content-Length: 1289
   ]
 }
 -->
+
+

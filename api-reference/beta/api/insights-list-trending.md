@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 91c96ce05eefd558281382ac19b188ed0a1a4305
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: a8cd468506b28c6e9ea155a37141747056ea5db3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509683"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990618"
 ---
 # <a name="list-trending"></a>列出趋势
 
@@ -39,7 +39,7 @@ GET /me/insights/trending
 GET /users/{id | userPrincipalName}/insights/trending
 ```
 
-扩展**趋势**洞察力引用的资源：
+扩展 **趋势** 洞察力引用的资源：
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -50,17 +50,17 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
-您可以使用 `$filter` 查询参数筛选趋势项。 例如，基于**类型**：
+您可以使用 `$filter` 查询参数筛选趋势项。 例如，基于 **类型**：
 <!-- { "blockType": "ignored" } -->
 
 `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/type eq 'PowerPoint'`
 
-或基于**containerType**：
+或基于 **containerType**：
 <!-- { "blockType": "ignored" } -->
 
 `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
-请参阅可在[resourceVisualization](../resources/insights-resourcevisualization.md)中筛选的可用容器类型和类型。
+请参阅可在 [resourceVisualization](../resources/insights-resourcevisualization.md)中筛选的可用容器类型和类型。
 
 
 ## <a name="request-headers"></a>请求标头
@@ -74,7 +74,7 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `200 OK` 响应正文中返回响应代码和[趋势](../resources/insights-trending.md)项列表。 每个项目都包含可视化属性，用于显示您的体验中的项目。
+如果成功，此方法在 `200 OK` 响应正文中返回响应代码和 [趋势](../resources/insights-trending.md) 项列表。 每个项目都包含可视化属性，用于显示您的体验中的项目。
 
 如果已禁用目标用户的项目见解，则此方法将返回， `403 Forbidden` 并出现以下错误：
 <!-- { "blockType": "ignored" } -->
@@ -121,7 +121,7 @@ GET https://graph.microsoft.com/beta/me/insights/trending
 ---
 
 #### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。 请参阅页面底部的 "未截断的示例" 响应。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。 请参阅页面底部的 "未截断的示例" 响应。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -158,3 +158,5 @@ Content-length: 801
     ]
 }
 ```
+
+

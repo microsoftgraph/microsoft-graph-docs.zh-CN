@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4de76041d1ef4fb965bc4e74cec17584d8fbaff4
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: e41bf9ce2cba33ab16c3be5588341b0bf6a8bb76
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44743898"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990870"
 ---
 # <a name="list-threads"></a>列出线程
 
@@ -135,3 +135,5 @@ Content-length: 536
   ]
 }
 -->
+
+

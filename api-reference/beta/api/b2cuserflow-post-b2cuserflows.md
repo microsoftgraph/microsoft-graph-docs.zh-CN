@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 46a4c70329e021c89bf9107b877fcf9fae88b3ca
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: b5dfb2bece9fe6b2762ede34de37ef735fabdbdb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329971"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991556"
 ---
 # <a name="create-b2cuserflow"></a>创建 b2cUserFlow
 
@@ -56,10 +56,10 @@ POST /identity/b2cUserFlows
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|id|String|必需。 用户流的名称。 创建后，名称将预先挂起 `B2C_1` 。|
-|userFlowType|String|必需。 您正在创建的用户流的类型。 **UserFlowType**支持的值为：<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
-|userFlowTypeVersion|浮点|必需。 用户流的版本。|
-|identityProviders|[identityprovider.read.all](../resources/identityprovider.md) 集合|可选。 要包括在用户流中的标识提供程序。|
+|id|String|必需。 用户流名称。 创建后，名称将预先挂起 `B2C_1` 。|
+|userFlowType|String|必需。 您正在创建的用户流的类型。 **userFlowType** 支持的值有：<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
+|userFlowTypeVersion|浮点|必需。 用户流版本。|
+|identityProviders|[identityProvider](../resources/identityprovider.md)集合 |可选。 要包括在用户流中的标识提供程序。|
 
 ## <a name="response"></a>响应
 
@@ -109,7 +109,7 @@ Content-length: 154
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -180,7 +180,7 @@ Content-length: 154
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -213,3 +213,5 @@ Content-type: application/json
     "Error: create_b2cUserFlow_from_b2cUserFlows_identityProvider/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '3'"
   ]
 }-->
+
+

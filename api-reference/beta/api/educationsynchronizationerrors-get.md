@@ -5,18 +5,18 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d8cedb8eb9dc4eda05968609a11ad728f269a334
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: a400c1dd28cb0760c8df1d8b139d6add80a08cc9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434863"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991290"
 ---
 # <a name="get-educationsynchronizationerrors"></a>获取 educationSynchronizationErrors
 
 命名空间：microsoft.graph
 
-获取在验证过程中生成的错误和/或在租户中同步特定学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)的过程。
+获取在验证过程中生成的错误和/或在租户中同步特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 的过程。
 
 ## <a name="permissions"></a>权限
 
@@ -25,7 +25,7 @@ ms.locfileid: "45434863"
 | 权限类型                       | 权限（从最低特权到最高特权）                 |
 | :------------------------------------ | :---------------------------------------------------------- |
 | 委派（工作或学校帐户）    | EduAdministration、EduAdministration         |
-| 委派（个人 Microsoft 帐户 | 不支持。                                              |
+| 委派 (个人 Microsoft 帐户 | 不支持。                                              |
 | 应用程序                           | EduAdministration、EduAdministration 和所有 |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -38,7 +38,7 @@ GET /synchronizationProfiles/{id}/errors
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持以下[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)，以帮助自定义响应： $filter、$orderby、$top、$skip 和 \$ 计数。
+此方法支持以下 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) ，以帮助自定义响应： $filter、$orderby、$top、$skip 和 \$ 计数。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -52,7 +52,7 @@ GET /synchronizationProfiles/{id}/errors
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[同步错误](../resources/educationsynchronizationerror.md)对象的集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [同步错误](../resources/educationsynchronizationerror.md) 对象的集合。
 
 ## <a name="example"></a>示例
 
@@ -145,3 +145,5 @@ Content-length: 1568
   "suppressions": [
   ]
 }-->
+
+

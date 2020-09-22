@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: cc9eb38838ce4dbbd06888cb4b5d004e7ee6e150
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 2819405bd108c4475aa4a389b5ac859d0e9e24f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218925"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991199"
 ---
 # <a name="get-governanceresource"></a>获取 governanceResource
 
@@ -18,12 +18,12 @@ ms.locfileid: "43218925"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[governanceResource](../resources/governanceresource.md)对象的属性和关系。
+检索 [governanceResource](../resources/governanceresource.md) 对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | Permissions              |
+|权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
@@ -38,7 +38,7 @@ GET /privilegedAccess/azureResources/resources/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法**仅**支持`$select`和`$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法 **仅** 支持  `$select` 和 `$expand` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -48,10 +48,10 @@ GET /privilegedAccess/azureResources/resources/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[governanceResource](../resources/governanceresource.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [governanceResource](../resources/governanceresource.md) 对象。
 
 ## <a name="example"></a>示例
-本示例演示如何获取订阅 Wingtip 玩具-生产（e5e7d29d-5465-45ac-885f-4716a5ee74b5）的详细信息。
+本示例演示如何获取订阅 Wingtip 玩具-生产 (e5e7d29d-5465-45ac-885f-4716a5ee74b5) 的详细信息。
 <!-- {
   "blockType": "request",
   "name": "get_governanceresource"
@@ -95,3 +95,5 @@ Content-Length: 459
   "suppressions": []
 }
 -->
+
+

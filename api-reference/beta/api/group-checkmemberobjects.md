@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 38c362c8ef06ae230b1a4dfbf6a5d5436abf016d
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 74fcfe41555ce3b3e8ceb06d02cec11028c655a9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123907"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990933"
 ---
 # <a name="group-checkmemberobjects"></a>组： checkMemberObjects
 
@@ -28,7 +28,7 @@ ms.locfileid: "43123907"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.Read.All、Group.ReadWrite.All<br>并<br><ul><li>如果检查管理单元的成员身份： AdministrativeUnit、AdministrativeUnit</li></ul><br>Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Group.Read.All、Group.ReadWrite.All<br>并<br><ul><li>如果检查管理单元的成员身份： AdministrativeUnit、AdministrativeUnit</ul></li><br>Directory.Read.All、Directory.ReadWrite.All |
+| 应用程序                            | Group.Read.All、Group.ReadWrite.All<br>并<br><ul><li>如果检查管理单元的成员身份： AdministrativeUnit、AdministrativeUnit</ul></li><br>Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,7 +55,7 @@ POST /groups/{id}/checkMemberObjects
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和字符串集合对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和字符串集合对象。
 
 ## <a name="examples"></a>示例
 
@@ -133,3 +133,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

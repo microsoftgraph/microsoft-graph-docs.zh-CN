@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7879b5dc724f784addecb93cab137935143a4dd6
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 32692dacf5eaf339d8d12e8453f460ca26270d4a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895886"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990992"
 ---
 # <a name="group-addfavorite"></a>group: addFavorite
 
@@ -98,3 +98,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

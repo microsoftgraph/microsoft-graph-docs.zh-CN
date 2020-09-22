@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 6c6aad1bb501f9b596f95f39ae8fd79124fe2e87
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 619bc7e17d8f1d6501191a8d7f7fe4d50a60166e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215768"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991024"
 ---
 # <a name="get-governancerolesetting"></a>获取 governanceRoleSetting
 
@@ -19,18 +19,18 @@ ms.locfileid: "43215768"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[governanceRoleSetting](../resources/governancerolesetting.md)的属性和关系。
+检索 [governanceRoleSetting](../resources/governancerolesetting.md)的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | Permissions              |
+|权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | PrivilegedAccess。 AzureResources |
 
-除了权限范围之外，此 API 还要求请求者在资源上至少具有一个角色分配， [governanceRoleSetting](../resources/governancerolesetting.md)属于该资源。
+除了权限范围之外，此 API 还要求请求者在资源上至少具有一个角色分配， [governanceRoleSetting](../resources/governancerolesetting.md) 属于该资源。
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -47,7 +47,7 @@ GET /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[governanceRoleSetting](../resources/governancerolesetting.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [governanceRoleSetting](../resources/governancerolesetting.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
@@ -147,3 +147,5 @@ Content-length: 370
   ]
 }
 -->
+
+

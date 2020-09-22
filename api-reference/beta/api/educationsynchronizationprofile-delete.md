@@ -5,20 +5,20 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 89dd57e3188a63e87ed88f796b3f7259e7996661
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 39bc4909e63e6e7ff908481873f32324703bf549
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424531"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991255"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>删除 educationSynchronizationProfile
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-根据标识符删除租户中的学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)。
+根据标识符删除租户中的学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,13 +37,13 @@ DELETE /synchronizationProfiles/{id}
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
-|委派（个人 Microsoft 帐户|不支持。|
+|委派 (个人 Microsoft 帐户|不支持。|
 |应用程序|不支持。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法将`202 Accepted`返回响应代码，不返回任何响应正文。
+如果成功，此方法将返回 `202 Accepted` 响应代码，不返回任何响应正文。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -92,3 +92,5 @@ HTTP/1.1 202 Accepted
   "suppressions": [
   ]
 }-->
+
+

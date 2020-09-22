@@ -3,24 +3,24 @@ title: 创建 androidDeviceOwnerEnrollmentProfile
 description: 创建新的 androidDeviceOwnerEnrollmentProfile 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cdf6e3d05ef5b094decffe7bd9d0e847ffa435e2
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: cac4e8faa2043070ac983aa62f0ca0bacd53c3cb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123657"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990604"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>创建 androidDeviceOwnerEnrollmentProfile
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)对象。
+创建新的 [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -54,9 +54,9 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 |属性|类型|说明|
 |:---|:---|:---|
 |accountId|String|注册配置文件隶属的租户 GUID。|
-|id|字符串|注册配置文件的唯一 GUID。|
-|displayName|字符串|注册配置文件的显示名称。|
-|说明|String|注册配置文件的说明。|
+|id|String|注册配置文件的唯一 GUID。|
+|displayName|String|注册配置文件的显示名称。|
+|description|String|注册配置文件的说明。|
 |enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|使用此注册配置文件的设备的注册模式。 可取值为：`corporateOwnedDedicatedDevice`、`corporateOwnedFullyManaged`、`corporateOwnedWorkProfile`。|
 |createdDateTime|DateTimeOffset|注册配置文件的创建日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改注册配置文件的日期/时间。|
@@ -71,7 +71,7 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -135,6 +135,9 @@ Content-Length: 850
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4115e1cdffe0342024485f4758f16265b67c65e8
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 26e4b244128a8dbd61179197d82d9d83a920b91f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329778"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991500"
 ---
 # <a name="delete-b2cuserflow"></a>删除 b2cUserFlow
 
@@ -101,3 +101,5 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+

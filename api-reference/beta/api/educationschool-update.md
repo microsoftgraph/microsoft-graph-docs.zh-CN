@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 1afe6a8360503ba79b7ff0595a2d71c8dd6f8129
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c4fb5d13264a653c8eda5856103334e348e66512
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42425210"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991325"
 ---
 # <a name="update-educationschool-properties"></a>更新 educationschool 属性
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,8 +49,8 @@ PATCH /education/schools/{id}
 
 | 属性            | 类型                                               | 说明                        |
 | :------------------ | :------------------------------------------------- | :--------------------------------- |
-| displayName         | 字符串                                             | 学校的显示名称         |
-| 说明         | String                                             | 学校描述          |
+| displayName         | String                                             | 学校的显示名称         |
+| description         | String                                             | 学校描述          |
 | principalEmail      | String                                             | 主体的电子邮件地址     |
 | principalName       | String                                             | 主体名称              |
 | externalPrincipalId | String                                             | 同步系统中主体的 ID。 |
@@ -152,3 +152,5 @@ Content-length: 292
   ]
 }
 -->
+
+

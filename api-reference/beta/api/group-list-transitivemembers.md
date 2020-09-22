@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9c2bd3d36d441addd6af105823bd7ca3c65ae73b
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: ad0f2dbb064620d64b6abcda926775887bd0a4eb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872633"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990856"
 ---
 # <a name="list-group-transitive-members"></a>List group transitive members
 
@@ -20,7 +20,7 @@ ms.locfileid: "46872633"
 
 获取组成员的列表。 组可以将用户、联系人、设备、服务主体和其他组作为成员。 此操作是可传递的，并且还将返回所有嵌套成员的简单列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -51,7 +51,7 @@ GET /groups/{id}/transitiveMembers
 | 名称 | 说明 |
 |:---- |:----------- |
 | Authorization  | Bearer {token}。必需。 |
-| ConsistencyLevel | 最终。 在 `$count` 使用 `$search` 、 `$filter` 、 `$orderby` 或 OData 转换查询参数时，此标头和是必需的。 它使用的索引可能不是最新的，并包含对对象的最新更改。 |
+| ConsistencyLevel | 最终。 使用 `$search`、`$filter`、`$orderby` 或 OData 强制转换查询参数时，此标头和 `$count` 是必需的。 它使用的索引可能与对象的最新更改不同步。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -304,3 +304,5 @@ Content-type: application/json
   ]
 }
 -->
+
+
