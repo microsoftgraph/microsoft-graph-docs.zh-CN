@@ -6,12 +6,12 @@ description: 更新 **[listItem][]** 上的属性。
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 859c0c819a9a18ae0490e7e5051f3990f2ddd8bb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5584ab4bde08ad0386c545f9041b2a8500c72cb1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511682"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057239"
 ---
 # <a name="update-listitem"></a>更新 listItem
 
@@ -121,3 +121,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+

@@ -3,14 +3,14 @@ title: ratingNewZealandMoviesType 枚举类型
 description: 新西兰的电影评级标签
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5fa09ffc369b66bf571652bca7bc8cb94d344eae
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d0a214bf2f55549e77bf58443699515ebe81fa55
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472755"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056644"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>ratingNewZealandMoviesType 枚举类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "43472755"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电影内容|
-|allBlocked|1|不允许任何电影内容|
-|概要|双面|适用于常规访问群体|
+|allBlocked|1 |不允许任何电影内容|
+|概要|2 |适用于常规访问群体|
 |parentalGuidance|第三章|PG 分类建议家长指南|
 |成熟|4 |M 分类适用于成熟受众|
 |agesAbove13|5 |R13 分类限制为13年以上及以上的人员|
@@ -34,6 +34,8 @@ ms.locfileid: "43472755"
 |agesAbove18|8 |R18 分类限制为18年以上及以上的人员|
 |受限|9 |将 R 分类限制为特定访问群体|
 |agesAbove16Restricted|10 |RP16 分类要求在16下有一个父或成年人的查看者|
+
+
 
 
 

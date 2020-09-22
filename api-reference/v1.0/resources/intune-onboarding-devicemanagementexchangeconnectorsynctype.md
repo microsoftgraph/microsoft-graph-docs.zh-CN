@@ -3,14 +3,14 @@ title: deviceManagementExchangeConnectorSyncType 枚举类型
 description: 请求的 Exchange Connector 同步的类型。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3826680e05cc84054a874ae9357dfb0d50e88b57
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 939ff7fe3a65da9bd66b29c2258f135275ac855f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459481"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056539"
 ---
 # <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>deviceManagementExchangeConnectorSyncType 枚举类型
 
@@ -24,7 +24,9 @@ ms.locfileid: "43459481"
 |成员|值|说明|
 |:---|:---|:---|
 |完全同步|0|发现 Exchange 中的所有设备。|
-|deltaSync|1|仅发现 Exchange 中的设备在 "delta sync" 窗口中已更新。|
+|deltaSync|1 |仅发现 Exchange 中的设备在 "delta sync" 窗口中已更新。|
+
+
 
 
 

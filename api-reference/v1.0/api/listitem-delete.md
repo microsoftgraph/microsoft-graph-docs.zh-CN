@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 从 list 中删除项。
 doc_type: apiPageType
-ms.openlocfilehash: f62360dec348e80cc2f54bc2d06afdc20abf19c0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d2d7fd332d0a79be2088c24e6704fc9975d3924e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511710"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057282"
 ---
 # <a name="delete-an-item-from-a-list"></a>从列表中删除项
 
@@ -20,7 +20,7 @@ ms.locfileid: "42511710"
 
 从 [list][] 中删除项。
 
-[list]: ../resources/list.md
+[列表]: ../resources/list.md
 
 ## <a name="permissions"></a>权限
 
@@ -99,3 +99,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 } -->
+

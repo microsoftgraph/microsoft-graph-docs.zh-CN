@@ -1,16 +1,16 @@
 ---
 title: 订阅资源类型
-description: 订阅允许客户端应用接收有关 Microsoft Graph 中的数据更改的更改通知。 目前，支持订阅以下资源：
+description: 借助订阅，客户端应用可以接收有关 Microsoft Graph 数据更改的变更通知。 目前，支持订阅以下资源：
 localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 3f5ef7de92fdd6ae18969b058767dfd300ac1bde
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 95312f2e95899ec160d9217cf896052b6463d393
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598542"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058026"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -18,10 +18,10 @@ ms.locfileid: "46598542"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-订阅允许客户端应用接收有关 Microsoft Graph 中的数据更改的更改通知。 目前，支持订阅以下资源：
+借助订阅，客户端应用可以接收有关 Microsoft Graph 数据更改的变更通知。 目前，支持订阅以下资源：
 
 - Microsoft Graph 安全性 API 中的[警报][]
-- Microsoft 团队中的呼叫或会议之后生成的[callRecord][]
+- Microsoft Teams 中的通话或会议后生成的 [callRecord][]
 - 通过 Microsoft 团队中的团队或频道发送的[了 chatmessage][]
 - Microsoft 365 组中的[对话][]
 - OneDrive for Business 中根文件夹[driveItem][] 的层次结构中的内容，或用户个人 OneDrive 中的根文件夹或子文件夹 [driveItem][] 的层次结构中的内容
@@ -36,7 +36,7 @@ ms.locfileid: "46598542"
 
 | 方法 | 返回类型 | 说明 |
 |:-------|:------------|:------------|
-| [创建订阅](../api/subscription-post-subscriptions.md) | [订阅](subscription.md) | 订阅侦听器应用程序，以便在 Microsoft Graph 数据发生更改时接收更改通知。 |
+| [创建订阅](../api/subscription-post-subscriptions.md) | [订阅](subscription.md) | 订阅侦听器应用程序，在 Microsoft Graph 数据发生更改时接收变更通知。 |
 | [更新订阅](../api/subscription-update.md) | [订阅](subscription.md) | 通过更新其过期时间来续订订阅。 |
 | [列出订阅](../api/subscription-list.md) | [订阅](subscription.md) | 列出有效订阅。 |
 | [获取订阅](../api/subscription-get.md) | [订阅](subscription.md) | 读取订阅对象的属性和关系。 |
@@ -46,18 +46,18 @@ ms.locfileid: "46598542"
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
-| changeType | string | 指示订阅的资源中将引发更改通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。 必填。 <br><br>注意：驱动器根项和列表更改通知仅支持 `updated` changeType。 用户和组更改通知支持 `updated` 和 `deleted` changeType。 |
-| notificationUrl | string | 接收更改通知的终结点的 URL。 该 URL 必须使用 HTTPS 协议。 必填。 |
-| lifecycleNotificationUrl | string | 接收生命周期通知（包括和通知）的终结点的 URL `subscriptionRemoved` `missed` 。 如果未提供，这些通知将传递给**notificationUrl**。 该 URL 必须使用 HTTPS 协议。 可选。 <br><br>[阅读](/graph/webhooks-outlook-authz)有关 Outlook 资源如何使用生命周期通知的详细信息。 |
-| resource | string | 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/beta/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。 必填。 |
-| expirationDateTime | DateTimeOffset | 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 必填。 |
-| clientState | string | 指定在每次更改通知中由服务发送的**clientState**属性的值。 最大长度为 255 个字符。 客户端可以通过将随订阅发送的**clientState**属性的值与每个更改通知接收的**clientState**属性的值进行比较，来检查更改通知是否来自服务。 可选。 |
+| changeType | string | 指示订阅资源中将引发变更通知的更改类型。 支持的值是：`created`、`updated`、`deleted`。 可以使用以逗号分隔的列表组合多个值。 必需。 <br><br>注意：驱动器根项和列表变更通知仅支持 `updated` changeType。 用户和组的变更通知支持 `updated` 和 `deleted` changeType。 |
+| notificationUrl | string | 接收更改通知的终结点的 URL。 该 URL 必须使用 HTTPS 协议。 必需。 |
+| lifecycleNotificationUrl | string | 接收生命周期通知（包括和通知）的终结点的 URL `subscriptionRemoved` `missed` 。 如果未提供，这些通知将传递给 **notificationUrl**。 该 URL 必须使用 HTTPS 协议。 可选。 <br><br>[阅读](/graph/webhooks-outlook-authz) 有关 Outlook 资源如何使用生命周期通知的详细信息。 |
+| resource | string | 指定要被监视以进行更改的资源。 不包含的基 URL (`https://graph.microsoft.com/beta/`)。 查看各支持资源的可能资源路径[值](webhooks.md)。 必需。 |
+| expirationDateTime | DateTimeOffset | 指定 webhook 订阅过期的日期和时间。 时间为 UTC 时间，可以是距离订阅创建的一段时间（因订阅资源不同而异）。  请参阅下表，了解支持的最长订阅有效期。 必需。 |
+| clientState | string | 指定在每次更改通知中由服务发送的 **clientState** 属性的值。 最大长度为 255 个字符。 客户端可以通过将随订阅发送的 **clientState** 属性的值与每个更改通知接收的 **clientState** 属性的值进行比较，来检查更改通知是否来自服务。 可选。 |
 | id | string | 订阅的唯一标识符。只读。 |
 | applicationId | string | 用于创建订阅的应用程序的标识符。 只读。 |
 | creatorId | string | 已创建订阅的用户或服务主体的标识符。 如果应用程序使用委派权限来创建订阅，则此字段包含代表已登录的用户的 ID，该应用代表。 如果应用程序使用的是应用程序权限，则此字段包含与该应用对应的服务主体的 ID。 只读。 |
-| includeResourceData | 布尔值 | 当设置为时 `true` ，更改通知[包括资源数据](/graph/webhooks-with-resource-data) (如聊天邮件的内容) 。 可选。 | 
-| encryptionCertificate | string | 具有用于在更改通知中对资源数据进行加密的公钥的证书的 base64 编码表示形式。 可选。 当**includeResourceData**为 true 时是必需的。 | 
-| encryptionCertificateId | string | 自定义应用程序提供的标识符，用于帮助确定解密资源数据所需的证书。 可选。 当**includeResourceData**为 true 时是必需的。 |
+| includeResourceData | Boolean | 当设置为时 `true` ，更改通知 [包括资源数据](/graph/webhooks-with-resource-data) (如聊天邮件的内容) 。 可选。 | 
+| encryptionCertificate | string | 具有用于在更改通知中对资源数据进行加密的公钥的证书的 base64 编码表示形式。 可选。 当 **includeResourceData** 为 true 时是必需的。 | 
+| encryptionCertificateId | string | 自定义应用程序提供的标识符，用于帮助确定解密资源数据所需的证书。 可选。 当 **includeResourceData** 为 true 时是必需的。 |
 | latestSupportedTlsVersion | 字符串 | 指定由 **notificationUrl**指定的通知端点支持的 "传输层安全性 (TLS)" 的最新版本。 可能的值包括 `v1_0`、`v1_1`、`v1_2`、`v1_3`。 </br></br>对于通知终结点支持低于当前推荐版本（TLS 1.2）的版本的订阅者，通过设置 [Timeline](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) 指定此属性，可在完成升级到 TLS 1.2 前暂时使用其过时的 TLS 版本。 对于这些订阅者，不按时间线设置此属性会导致订阅操作失败。 </br></br>对于其通知端点已支持 TLS 1.2 的订阅者，设置此属性是可选的。 在这种情况下，Microsoft Graph 将属性默认设置为 `v1_2`。 |
 
 ### <a name="maximum-length-of-subscription-per-resource-type"></a>每个资源类型的最长订阅有效期
@@ -66,12 +66,12 @@ ms.locfileid: "46598542"
 |:--------------------|:-------------------------|
 | 安全**警报**     | 43200分钟（不到 30 天）  |
 | Teams **callRecord**    | 4230 分钟（不到 3 天）  |
-| 团队**了 chatmessage**    | 60分钟 (1 小时)   |
-| 组**对话** | 4230 分钟（不到 3 天）    |
+| 团队 **了 chatmessage**    | 60分钟 (1 小时)   |
+| 组 **对话** | 4230 分钟（不到 3 天）    |
 | OneDrive **driveItem**    | 4230 分钟（不到 3 天）    |
-| SharePoint**列表**    | 4230 分钟（不到 3 天）    |
-| Outlook**邮件**、**事件**、**联系人**              | 4230 分钟（不到 3 天）    |
-| **用户**、**组**、其他目录资源   | 4230 分钟（不到 3 天）    |
+| SharePoint **列表**    | 4230 分钟（不到 3 天）    |
+| Outlook **邮件**、 **事件**、 **联系人**              | 4230 分钟（不到 3 天）    |
+| **用户**、 **组**、其他目录资源   | 4230 分钟（不到 3 天）    |
 | **状态**        | 60分钟 (1 小时)  |
 
 
@@ -137,3 +137,5 @@ ms.locfileid: "46598542"
   "suppressions": []
 }
 -->
+
+

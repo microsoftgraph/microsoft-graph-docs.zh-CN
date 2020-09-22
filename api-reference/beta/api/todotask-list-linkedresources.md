@@ -5,19 +5,19 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c3d780e05c71112ddabd1d5d6a64b22d6f771d40
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 0c2ea4db41b75a2ea7e4107741df97630d893cb7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873256"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058590"
 ---
 # <a name="list-linkedresources"></a>列出 linkedResources
 命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 从 linkedResources 导航属性中获取 linkedResources。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
@@ -107,4 +107,6 @@ Content-Type: application/json
   ]
 }
 ```
+
+
 

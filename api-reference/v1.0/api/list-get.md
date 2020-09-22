@@ -6,12 +6,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 返回列表的元数据。
 doc_type: apiPageType
-ms.openlocfilehash: 5739c4cf84bd308c113f88a0bbacbaf28aff7214
-ms.sourcegitcommit: 53a57f19a5b16029b540e61ddfba6c2b4e45cfc5
+ms.openlocfilehash: 98fb8c3053c7c3b4219ef598dc180d3507851d90
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "44593651"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057344"
 ---
 # <a name="get-metadata-for-a-list"></a>获取列表的元数据
 
@@ -237,3 +237,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: e69342cff9789af6d208cbb7d071dfb43edba1b0
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 8282492d2d5ba8d99a2b7301fa594896025df139
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863486"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058735"
 ---
 # <a name="get-schemaextension"></a>获取 schemaExtension
 
@@ -18,7 +18,7 @@ ms.locfileid: "44863486"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取指定的[schemaExtension](../resources/schemaextension.md)定义的属性。
+获取指定的 [schemaExtension](../resources/schemaextension.md) 定义的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,7 +49,7 @@ GET /schemaExtensions/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[schemaExtension](../resources/schemaextension.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [schemaExtension](../resources/schemaextension.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -124,3 +124,5 @@ Content-length: 201
   ]
 }
 -->
+
+

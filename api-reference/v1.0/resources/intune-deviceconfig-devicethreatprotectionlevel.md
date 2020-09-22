@@ -3,14 +3,14 @@ title: deviceThreatProtectionLevel 枚举类型
 description: 设备威胁防护 API 的设备威胁保护级别。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 69398df9bd84b9a0cd965fc26aaddee57cde174b
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 37de38cd6b6a459546596d68acdadf7a9bc9d489
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43465701"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056833"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>deviceThreatProtectionLevel 枚举类型
 
@@ -26,9 +26,11 @@ ms.locfileid: "43465701"
 |才|0|默认值。 请勿使用。|
 |加密|1 |设备威胁级别要求：安全。 这是最安全的级别，表示在设备上未发现任何威胁。|
 |降低|2 |设备威胁保护级别要求：低。 Low 表示对设备或设备数据带来最小风险的威胁的严重程度。|
-|中等|3 |设备威胁保护级别要求：中。 中型代表设备或设备数据面临中等风险的威胁的严重程度。|
+|中等|第三章|设备威胁保护级别要求：中。 中型代表设备或设备数据面临中等风险的威胁的严重程度。|
 |高效|4 |设备威胁保护级别要求：高。 High 表示对设备或设备数据带来严重风险的威胁的严重程度。|
-|notSet|10  |设备威胁保护级别要求：未设置。 未设置表示设备不需要满足威胁保护级别。|
+|notSet|10 |设备威胁保护级别要求：未设置。 未设置表示设备不需要满足威胁保护级别。|
+
+
 
 
 

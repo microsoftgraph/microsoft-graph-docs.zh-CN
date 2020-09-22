@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: e84c7408eb6924205e86059c969201d1c94dcd70
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 30674a3637dcb97f583d0462020f850f0d242b17
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896512"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058681"
 ---
 # <a name="create-schemaextension"></a>创建 schemaExtension
 
@@ -35,7 +35,7 @@ ms.locfileid: "44896512"
 |应用程序 | 不支持。 |
 
 > [!NOTE]
-> 此外，对于委派的流程，登录用户必须是调用应用程序的所有者或 `appId` 用于设置**owner**属性的（应用程序的所有者）。
+> 此外，对于委派的流程，登录用户必须是调用应用程序的所有者或 (应用程序的所有者，) `appId` 用于设置 **owner** 属性。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -57,7 +57,7 @@ POST /schemaExtensions
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
 |说明|String|架构扩展的说明。|
-|id|字符串|架构扩展定义的唯一标识符。 <br>你可以使用下面两种方法之一分配值： <ul><li>连接其中一个已验证域的域名与架构扩展名称，形成此格式的唯一字符串：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。 示例：`contoso_mySchema`。 注意：仅支持以下顶级域下已经过验证的域：`.com`、`.net`、`.gov`、`.edu` 或 `.org`。 </li><li>提供一个架构名称，并让 Microsoft Graph 使用此格式的架构名称完成 **id** 分配：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。例如 `extkvbmkofy_mySchema`。</li></ul>此属性一旦创建，便无法更改。 |
+|id|String|架构扩展定义的唯一标识符。 <br>你可以使用下面两种方法之一分配值： <ul><li>连接其中一个已验证域的域名与架构扩展名称，形成此格式的唯一字符串：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。 示例：`contoso_mySchema`。 注意：仅支持以下顶级域下已经过验证的域：`.com`、`.net`、`.gov`、`.edu` 或 `.org`。 </li><li>提供一个架构名称，并让 Microsoft Graph 使用此格式的架构名称完成 **id** 分配：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。例如 `extkvbmkofy_mySchema`。</li></ul>此属性一旦创建，便无法更改。 |
 |owner|String|（可选）属于架构扩展所有者的应用程序的 `appId`。 可在创建时提供此属性以设置所有者。  如果未提供，则会将调用应用程序的 `appId` 设置为所有者。 因此，如果使用 Graph 浏览器新建一个架构扩展定义，则**必须**提供 owner 属性（以此为例）。 设置后，此属性为只读，且无法更改。|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) 集合|构成架构扩展定义的属性名称和类型的集合。|
 |targetTypes|String collection|此架构扩展定义适用的支持架构扩展的 Microsoft Graph 资源类型集。|
@@ -72,7 +72,7 @@ POST /schemaExtensions
 
 #### <a name="request"></a>请求
 
-本示例演示如何使用经验证的域名、以及 `graphlearn` 架构名称， `courses` 以构成架构扩展定义的**id**属性的唯一字符串。 唯一字符串基于此格式， \{ _&#65279;domainName_ \} \_ \{ _&#65279;schemaName_ \} 。
+本示例演示如何使用经验证的域名、以及 `graphlearn` 架构名称， `courses` 以构成架构扩展定义的 **id** 属性的唯一字符串。 唯一字符串基于此格式， \{ _&#65279;domainName_ \} \_ \{ _&#65279;schemaName_ \} 。
 
 在请求正文中，提供 [schemaExtension](../resources/schemaextension.md) 对象的 JSON 表示形式。
 
@@ -164,7 +164,7 @@ Content-length: 420
 
 #### <a name="request"></a>请求
 
-此示例展示了如何 `courses` 在请求的**id**属性中指定架构名称，以及[schemaExtension](../resources/schemaextension.md)对象中其余属性的 JSON 表示形式。 Microsoft Graph 将在响应中分配并返回一个唯一的字符串值。
+此示例展示了如何 `courses` 在请求的 **id** 属性中指定架构名称，以及 [schemaExtension](../resources/schemaextension.md) 对象中其余属性的 JSON 表示形式。 Microsoft Graph 将在响应中分配并返回一个唯一的字符串值。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -255,7 +255,7 @@ Content-length: 420
 
 #### <a name="request"></a>请求
 
-本示例演示如何创建**所有者**的架构扩展设置。  在这种情况下，应用程序的用户可能不是应用程序的所有者（例如，如果使用的是 Microsoft Graph 资源管理器）。  在这种情况下，应将**owner**属性设置为您拥有的应用程序的**appId** ，否则您将不会被授权创建架构扩展。 在请求中设置**owner**属性，以及[schemaExtension](../resources/schemaextension.md)对象中的其余属性的 JSON 表示形式。
+本示例演示如何创建 **所有者**的架构扩展设置。  在这种情况下，如果您使用的是 Microsoft Graph 资源管理器) ，应用程序的用户可能不是应用程序的所有者 (例如。  在这种情况下，应将 **owner** 属性设置为您拥有的应用程序的 **appId** ，否则您将不会被授权创建架构扩展。 在请求中设置 **owner** 属性，以及 [schemaExtension](../resources/schemaextension.md) 对象中的其余属性的 JSON 表示形式。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -308,7 +308,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-响应包括**所有者**设置为请求中提供的值。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+响应包括 **所有者** 设置为请求中提供的值。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -364,3 +364,5 @@ Content-length: 420
   ]
 }
 -->
+
+

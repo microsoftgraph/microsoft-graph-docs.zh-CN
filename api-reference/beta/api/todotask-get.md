@@ -5,19 +5,19 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6f009dd3f23f7bb65d490fe1782fbb3dbfc4dd62
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 39f12ab34ce57367cb97f22ac8188b1dac1c35e9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873263"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058599"
 ---
 # <a name="get-todotask"></a>获取 todoTask
 命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 读取 [todoTask](../resources/todotask.md) 对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
@@ -114,4 +114,6 @@ Content-Type: application/json
     }
 }
 ```
+
+
 

@@ -3,14 +3,14 @@ title: windowsDeviceAzureADAccount 资源类型
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c13468292fbacf8a6394a177d6c6654b85eb4b6c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3edf93e52c31adbc7db03429393903970dc6d65b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439410"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056574"
 ---
 # <a name="windowsdeviceazureadaccount-resource-type"></a>windowsDeviceAzureADAccount 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "43439410"
 |属性|类型|说明|
 |:---|:---|:---|
 |密码|String|尚未记录 继承自 [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
-|userPrincipalName|字符串|尚未记录|
+|userPrincipalName|String|尚未记录|
 
 ## <a name="relationships"></a>关系
 无
@@ -46,6 +46,8 @@ ms.locfileid: "43439410"
   "userPrincipalName": "String"
 }
 ```
+
+
 
 
 

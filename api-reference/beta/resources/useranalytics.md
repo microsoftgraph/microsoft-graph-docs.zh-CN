@@ -5,16 +5,16 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: ffe6830088bd60c4de9cea8def8e8202d1b33f13
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ac4024fff534bd89e369f1f8048ca274ccfd157a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519538"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057898"
 ---
 # <a name="useranalytics-resource-type"></a>userAnalytics 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "42519538"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|activityStatistics|[activityStatistics](activitystatistics.md)集合| 用户在工作时间和工作时间之外花费时间的工作活动的集合。 只读。 可为 Null。|
+|activityStatistics|[activityStatistics](activitystatistics.md) 集合| 用户在工作时间和工作时间之外花费时间的工作活动的集合。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -68,3 +68,5 @@ ms.locfileid: "42519538"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

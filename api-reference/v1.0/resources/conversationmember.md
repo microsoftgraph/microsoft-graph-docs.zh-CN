@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 17fee8985e2383f0ede652cc1e1a6d8e9dc3304c
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: e2c888ea55b331762761857c14b4710bf582be3f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873418"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056917"
 ---
 # <a name="conversationmember-resource-type"></a>conversationMember 资源类型
 
@@ -60,3 +60,4 @@ ms.locfileid: "46873418"
   "section": "documentation",
   "tocPath": ""
 }-->
+

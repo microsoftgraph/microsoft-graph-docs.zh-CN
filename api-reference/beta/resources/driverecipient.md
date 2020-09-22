@@ -6,12 +6,12 @@ title: DriveRecipient
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 64c2341eff772a5d26f6d17a3e646b561f4a9d37
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f703aa1bc9d12ec8b67aab0d80d641964b7b6096
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42505481"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058471"
 ---
 # <a name="driverecipient-resource"></a>DriveRecipient 资源
 
@@ -58,3 +58,5 @@ ms.locfileid: "42505481"
   "suppressions": []
 }
 -->
+
+

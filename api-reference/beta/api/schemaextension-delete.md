@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: f8e5d78d0f23430bbd693832a918374af736d1bd
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: a2ba1ca24916d452232c4088a7b750267dcf761a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863493"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058744"
 ---
 # <a name="delete-schemaextension"></a>删除 schemaExtension
 
@@ -34,7 +34,7 @@ ms.locfileid: "44863493"
 |应用程序 | 不支持。 |
 
 > [!NOTE]
-> 此外，对于委派的流程，登录用户只能删除他们拥有的 Schemaextension （其中 schemaExtension 的**owner**属性是 `appId` 登录用户拥有的应用程序的）。
+> 此外，对于委派的流程，登录用户只能删除他们自己 (的 Schemaextension，其中 schemaExtension 的 **owner** 属性是 `appId` 登录用户拥有) 的应用程序的所有者属性。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -108,3 +108,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

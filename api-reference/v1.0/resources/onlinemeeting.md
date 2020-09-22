@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 812f094667b217d167509be324843227e552e0a5
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 1b2a87d8494876ada8c45849d2cd93142f1dc570
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556224"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056490"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "44556224"
 
 包含有关会议的信息，包括用于加入会议的 URL、与会者列表和说明。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法         | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
 | [创建 onlineMeeting](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | 创建联机会议。 |
-| [获取 onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | 读取**onlineMeeting**对象的属性和关系。 |
+| [获取 onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | 读取 **onlineMeeting** 对象的属性和关系。 |
 | [删除 onlineMeeting](../api/onlinemeeting-delete.md) | 无 | 删除联机会议。 |
 | [创建或获取 onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | 使用自定义外部 ID 创建联机会议。 如果会议已存在，请检索其属性。 |
 
@@ -31,12 +31,12 @@ ms.locfileid: "44556224"
 
 | 属性                  | 类型                                                   | 说明                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| audioConferencing         | [audioConferencing](audioconferencing.md)              | 联机会议的电话访问（拨入）信息。 只读。 |
+| audioConferencing         | [audioConferencing](audioconferencing.md)              | 电话访问 (电话拨入) 联机会议的信息。 只读。 |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | 与此联机会议关联的聊天信息。 |
-| creationDateTime          | 日期/时间                                               | 以 UTC 表示的会议创建时间。 只读。 |
-| startDateTime             | 日期/时间                                               | 以 UTC 表示的会议开始时间。 |
-| endDateTime               | 日期/时间                                               | 以 UTC 表示的会议结束时间。 |
-| id                        | 字符串                                                 | 与联机会议关联的默认 ID。 只读。 |
+| creationDateTime          | 日期时间                                               | 以 UTC 表示的会议创建时间。 只读。 |
+| startDateTime             | 日期时间                                               | 以 UTC 表示的会议开始时间。 |
+| endDateTime               | 日期时间                                               | 以 UTC 表示的会议结束时间。 |
+| id                        | String                                                 | 与联机会议关联的默认 ID。 只读。 |
 | joinWebUrl                | String                                                 | 联机会议的加入 URL。 只读。|
 | participants              | [meetingParticipants](meetingparticipants.md)          | 与联机会议关联的参与者。  这包括组织者和与会者。 |
 | subject                   | String                                                 | 联机会议的主题。 |
@@ -76,3 +76,4 @@ ms.locfileid: "44556224"
   "section": "documentation",
   "tocPath": ""
 }-->
+

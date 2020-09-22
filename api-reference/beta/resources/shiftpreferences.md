@@ -5,27 +5,27 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 75084cba71946d8b14ab080ac5872359bf0ceb12
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d35f77e7d048adb0b0bb49604423bbe2ff53031c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520609"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058028"
 ---
 # <a name="shiftpreferences-resource-type"></a>shiftPreferences 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示[计划](schedule.md)中用户的已分配班次的可用性。
+表示 [计划](schedule.md)中用户的已分配班次的可用性。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [获取](../api/shiftpreferences-get.md) | [shiftPreferences](shiftpreferences.md) | 读取**shiftPreferences**对象的属性和关系。 |
-| [更新](../api/shiftpreferences-put.md) | [shiftPreferences](shiftpreferences.md) | 更新**shiftPreferences**对象。 |
+| [Get](../api/shiftpreferences-get.md) | [shiftPreferences](shiftpreferences.md) | 读取 **shiftPreferences** 对象的属性和关系。 |
+| [更新](../api/shiftpreferences-put.md) | [shiftPreferences](shiftpreferences.md) | 更新 **shiftPreferences** 对象。 |
 
 ## <a name="properties"></a>属性
 
@@ -33,7 +33,7 @@ ms.locfileid: "42520609"
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id | `Edm.String` | 实体的标识符。 |
 | @odata.etag | `Edm.String` | 实体的更改键。 |
-| availability | [shiftAvailability](shiftavailability.md)集合 | 用户计划的工作及其定期模式的可用性。 |
+| availability | [shiftAvailability](shiftavailability.md) 集合 | 用户计划的工作及其定期模式的可用性。 |
 | createdDateTime | `Edm.DateTimeOffset` | 创建实体时对应的时间戳。 |
 | lastModifiedDateTime | `Edm.DateTimeOffset` | 上次修改实体时对应的时间戳。 |
 | lastModifiedBy | [identitySet](identityset.md) | 上次修改实体的人员的标识。 |
@@ -70,3 +70,5 @@ ms.locfileid: "42520609"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

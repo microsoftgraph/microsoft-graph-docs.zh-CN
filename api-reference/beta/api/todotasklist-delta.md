@@ -1,16 +1,16 @@
 ---
 title: todoTaskList： delta
-description: 获取一组在 Microsoft To Do 中已添加、删除或删除的 todoTaskList 资源。
+description: 在 Microsoft 中获取已添加、删除或删除的一组 todoTaskList 资源。
 localization_priority: Normal
 author: avijityadav
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b5d3acdc5b4b052744c26e95564c0e5abe1660ca
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: f24f6eb2e820f5b0a750b492fd30bf9e91516e3e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849883"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058506"
 ---
 # <a name="todotasklist-delta"></a>todoTaskList： delta
 
@@ -18,9 +18,9 @@ ms.locfileid: "46849883"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取一组在 Microsoft To Do 中已添加、删除或删除的 [todoTaskList](../resources/todotasklist.md) 资源。
+在 Microsoft 中获取已添加、删除或删除的一组 [todoTaskList](../resources/todotasklist.md) 资源。
 
-**todoTaskList**的**delta**函数调用与 GET 请求相似，但通过在这些调用中正确应用[状态](/graph/delta-query-overview)令牌除外，你可以在**todoTaskList 中查询增量更改**。 这允许你维护和同步用户的**todoTaskList**的本地存储，而无需每次都**从服务器中获取所有 todoTaskList。**
+**TodoTaskList**的**delta**函数调用类似于 GET 请求，不同之处在于，通过在一个或多个调用中正确应用[状态令牌](/graph/delta-query-overview)，可以在**todoTaskList**中查询增量更改。 这使您可以维护并同步用户的 **todoTaskList** 的本地存储，而无需每次从服务器中获取所有 **todoTaskList** 。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -41,12 +41,12 @@ GET /users/{id|userPrincipalName}/todo/lists/delta
 
 ## <a name="query-parameters"></a>查询参数
 
-跟踪 **todoTaskList 资源更改** 会使用一个或多个 **delta 函数** 调用。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。 只需预先指定所需的任何查询参数一次。 在后续请求中，只需复制并应用之前响应中的或 `nextLink` `deltaLink` URL，因为此 URL 已包含所需的编码参数。
+跟踪 **todoTaskList** 资源中的更改会产生一个或多个 **delta** 函数调用的往返。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。 只需预先指定所需的任何查询参数一次。 在后续请求中，只需复制并 `nextLink` 应用 `deltaLink` 上一个响应中的或 url，因为该 URL 已包含已编码的所需参数。
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
-| $deltatoken | string | 在[针对同](/graph/delta-query-overview)一 `deltaLink` **todoTaskList**集合**的上一个 delta**函数调用的 URL 中返回的状态令牌，指示该组更改跟踪的完成状态。 将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
-| $skiptoken | string | 在 [上一](/graph/delta-query-overview) `nextLink` **个 delta 函数调用** 的 URL 中返回的状态令牌，指示同一 **todoTaskList 集合中有进一步的** 更改需要跟踪。 |
+| $deltatoken | string | 在[state token](/graph/delta-query-overview) `deltaLink` 上一次**delta**函数调用的 URL 中返回的状态令牌，用于在同一**todoTaskList**集合中指示该往返一轮的完成。 将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
+| $skiptoken | string | 在上一个 delta 函数调用的 URL 中返回的[状态令牌](/graph/delta-query-overview) `nextLink` ，指示同一个**todoTaskList**集合中有进一步的更改需要跟踪。 **delta** |
 
 ### <a name="odata-query-parameters"></a>OData 查询参数
 
@@ -61,15 +61,15 @@ GET /users/{id|userPrincipalName}/todo/lists/delta
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 [响应代码和 todoTaskList](../resources/todotasklist.md) 集合对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [todoTaskList](../resources/todotasklist.md) 集合对象。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
-以下示例演示了如何执行单 **一 delta** 函数调用，并将响应 **正文中的 todoTaskList** 最大数目限制为 2。
+下面的示例演示如何执行单个 **delta** 函数调用，并将响应正文中的最大 **todoTaskList** 数限制为2。
 
-若要跟踪 **todoTaskList 中的更改**，要使用正确的状态令牌执行一次或多次 **delta** 函数调用来获取上次增量查询后的增量更改集。 
+若要跟踪 **todoTaskList**中的更改，您可以使用适当的状态令牌创建一个或多个 **delta** 函数调用，以获取自上次增量查询后进行的一组增量更改。 
 
-跟踪 **todoTaskList 和跟踪列表中的** **todoTask** 资源之间的主要差异在增量查询请求 URL 中，查询响应 **将返回 todoTaskList** 而不是 **todoTask** 集合中。
+跟踪 **todoTaskList** 和跟踪 **todoTask** 资源在列表中的主要区别在于增量查询请求 Url，以及返回 **todoTaskList** 而不是 **todoTask** 集合的查询响应。
 
 ### <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -109,3 +109,4 @@ Content-length: 254
 ## <a name="see-also"></a>另请参阅
 
 - [Microsoft Graph 增量查询](/graph/delta-query-overview)
+

@@ -3,14 +3,14 @@ title: 列出 managedAndroidStoreApps
 description: 列出 managedAndroidStoreApp 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ba4bb6318eea2c30adf679fee1347d7bb3568f78
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e8a101eceda8903eb62d0933310e880142fa9204
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446372"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057414"
 ---
 # <a name="list-managedandroidstoreapps"></a>列出 managedAndroidStoreApps
 
@@ -106,6 +106,9 @@ Content-Length: 1357
   ]
 }
 ```
+
+
+
 
 
 

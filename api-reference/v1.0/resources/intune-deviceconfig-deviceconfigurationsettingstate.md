@@ -3,14 +3,14 @@ title: deviceConfigurationSettingState 资源类型
 description: 给定设备的设备配置设置状态。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b613ae365d0842079485171b41c7d37580a66b4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d90b78f637895f9340a87f5916d311bab4f51d6d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445976"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056854"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>deviceConfigurationSettingState 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "43445976"
 |userId|String|UserId|
 |userName|String|UserName|
 |userEmail|String|UserEmail|
-|userPrincipalName|字符串|UserPrincipalName。|
+|userPrincipalName|String|UserPrincipalName。|
 |源|[settingSource](../resources/intune-deviceconfig-settingsource.md) 集合|参与策略|
 |currentValue|String|设备上设置的当前值|
 
@@ -69,6 +69,8 @@ ms.locfileid: "43445976"
   "currentValue": "String"
 }
 ```
+
+
 
 
 

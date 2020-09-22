@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b7210c32b28c15b5eac0d3709f89c1c55127f6fb
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 267710b78fed5abfb83e7c9492c7bdff603b91d3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154435"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058598"
 ---
 # <a name="get-timeoffrequest"></a>获取 timeOffRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "44154435"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[timeoffrequest](../resources/timeoffrequest.md)对象的属性和关系。
+检索 [timeoffrequest](../resources/timeoffrequest.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "44154435"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.Read.All、Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-|Application | Schedule. All *、schedule、all*  |
+|应用程序 | Schedule. All *、schedule、all*  |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
@@ -40,11 +40,11 @@ ms.locfileid: "44154435"
 GET /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
 
 此方法不支持 OData 查询参数来自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -56,7 +56,7 @@ GET /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[timeOffRequest](../resources/timeoffrequest.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [timeOffRequest](../resources/timeoffrequest.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -120,3 +120,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

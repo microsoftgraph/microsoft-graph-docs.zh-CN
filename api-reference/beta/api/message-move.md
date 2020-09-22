@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 02ee63c7e96d22a08cd0d56b23d941e2196ed828
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 59286779baae551f996d77439a5bc9e13ce9388c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448560"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058814"
 ---
 # <a name="message-move"></a>message: move
 
@@ -197,3 +197,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

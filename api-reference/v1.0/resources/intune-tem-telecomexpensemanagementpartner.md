@@ -3,14 +3,14 @@ title: telecomExpenseManagementPartner 资源类型
 description: telecomExpenseManagementPartner 资源表示给定 TEM 服务的元数据和状态。 组织通过合作伙伴载入后，即可允许或禁止合作伙伴打开或关闭 TEM 功能。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a82cb01cf408d1e417bcd4e3d1284e11db9d85ad
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 95f203c2ce19410a392cc1c4382e621141baf06b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445558"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056504"
 ---
 # <a name="telecomexpensemanagementpartner-resource-type"></a>telecomExpenseManagementPartner 资源类型
 
@@ -33,7 +33,7 @@ telecomExpenseManagementPartner 资源表示给定 TEM 服务的元数据和状�
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|TEM 合作伙伴的唯一标识符。|
-|displayName|字符串|TEM 合作伙伴的显示名称。|
+|displayName|String|TEM 合作伙伴的显示名称。|
 |url|String|TEM 合作伙伴的管理控制面板的 URL，管理员可以在其中配置其 TEM 服务。|
 |appAuthorized|Boolean|是否已授权合作伙伴的 AAD 应用访问 Intune。|
 |enabled|Boolean|当前是启用还是禁用了 Intune 的 TEM 服务连接。|
@@ -61,6 +61,8 @@ telecomExpenseManagementPartner 资源表示给定 TEM 服务的元数据和状�
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
+
 
 
 

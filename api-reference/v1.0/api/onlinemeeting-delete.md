@@ -5,18 +5,18 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a85e1d77022e1f890eb0bba70fac8557918f8b8f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8482e3a273d32f893a8e379c16ab3f8f98adf3e6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511276"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057197"
 ---
 # <a name="delete-onlinemeeting"></a>删除 onlineMeeting
 
 命名空间：microsoft.graph
 
-删除[onlineMeeting](../resources/onlinemeeting.md)对象。
+删除 [onlineMeeting](../resources/onlinemeeting.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -100,3 +100,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

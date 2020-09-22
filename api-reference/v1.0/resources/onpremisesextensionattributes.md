@@ -1,22 +1,22 @@
 ---
 title: onPremisesExtensionAttributes 资源类型
-description: User 实体的**onPremisesExtensionAttributes**属性包含十五个自定义扩展属性的属性。 对于**onPremisesSyncEnabled**用户，这组属性在本地 Active Directory 中使用并同步到 Azure AD，并且是只读的。 对于仅限云的用户（其中**onPremisesSyncEnabled**为 false），可以在创建或更新期间设置这些属性。
+description: User 实体的 **onPremisesExtensionAttributes** 属性包含十五个自定义扩展属性的属性。 对于 **onPremisesSyncEnabled** 用户，这组属性在本地 Active Directory 中使用并同步到 Azure AD，并且是只读的。 对于仅限云的用户 (其中 **onPremisesSyncEnabled** 为 false) ，可以在创建或更新期间设置这些属性。
 localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 84929229c18b905ff66b4a1bbbbf765771180a06
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 218bf0db4b615072ed3292311a26033279b1d803
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44864089"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056434"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>onPremisesExtensionAttributes 资源类型
 
 命名空间：microsoft.graph
 
-[User](user.md)实体的**onPremisesExtensionAttributes**属性包含十五个自定义扩展属性的属性。 对于**onPremisesSyncEnabled**用户，此属性集的权威来源是同步到 Azure AD 的本地 Active Directory，并且是只读的。 对于仅限云的用户（其中**onPremisesSyncEnabled**为 false），可以在创建或更新期间设置这些属性。
+[User](user.md)实体的**onPremisesExtensionAttributes**属性包含十五个自定义扩展属性的属性。 对于 **onPremisesSyncEnabled** 用户，此属性集的权威来源是同步到 Azure AD 的本地 Active Directory，并且是只读的。 对于仅限云的用户 (其中 **onPremisesSyncEnabled** 为 false) ，可以在创建或更新期间设置这些属性。
 
 > **注意：** 这些扩展属性也称为 Exchange 自定义属性1-15。
 
@@ -83,3 +83,4 @@ ms.locfileid: "44864089"
   "section": "documentation",
   "tocPath": ""
 }-->
+

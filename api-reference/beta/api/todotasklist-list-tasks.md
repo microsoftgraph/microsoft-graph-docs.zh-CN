@@ -5,19 +5,19 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3c9507ca24e7c99a928bff9eedd8a3e06918a017
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 2fd12e71cf29d0fd4008d7d6b81ed5a6db2cf07b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873175"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058526"
 ---
 # <a name="list-tasks"></a>列出任务
 命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 从指定的[todoTaskList](../resources/todotasklist.md)的 "**任务**" 导航属性中获取**todoTask**资源。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
@@ -122,4 +122,6 @@ Content-Type: application/json
   ]
 }
 ```
+
+
 

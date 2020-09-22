@@ -5,18 +5,18 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 44f9918b5a7a91b2a16f32f6c8c3970b003a5583
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 7e99f3070c372dedcad2310b55539a14e7ed9c8e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155080"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057120"
 ---
 # <a name="create-openshift"></a>创建 openShift
 
 命名空间：microsoft.graph
 
-创建[openShift](../resources/openshift.md)对象的实例。
+创建 [openShift](../resources/openshift.md) 对象的实例。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "44155080"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Schedule。 All，Group. 所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Schedule.ReadWrite.All |
+| 应用程序                            | Schedule.ReadWrite.All |
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -47,11 +47,11 @@ POST /teams/{id}/schedule/openShifts
 
 ## <a name="request-body"></a>请求正文
 
-在此方法的请求正文中提供新的[openShift](../resources/openshift.md)对象。
+在此方法的请求正文中提供新的 [openShift](../resources/openshift.md) 对象。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和创建的[openShift](../resources/openshift.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和创建的 [openShift](../resources/openshift.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -163,3 +163,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

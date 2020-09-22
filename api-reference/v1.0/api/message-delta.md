@@ -5,12 +5,12 @@ localization_priority: Priority
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 95dd32cfa4966fe651f00efb346e154534af62d6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 92fb58d19ea8d3e9e87300871582cedf83666835
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43361535"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057211"
 ---
 # <a name="message-delta"></a>message: delta
 
@@ -152,3 +152,4 @@ Content-length: 337
   "suppressions": [
   ]
 }-->
+

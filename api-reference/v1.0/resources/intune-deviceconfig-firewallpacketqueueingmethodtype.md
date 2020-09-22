@@ -3,14 +3,14 @@ title: firewallPacketQueueingMethodType 枚举类型
 description: FirewallPacketQueueingMethod 的可能值
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 110fffc41caa4efc6b7fbd9e1efe05f663cf8f85
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0774a8b2fa9e2240366ef7a25edf2db252dafd4d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447722"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056700"
 ---
 # <a name="firewallpacketqueueingmethodtype-enum-type"></a>firewallPacketQueueingMethodType 枚举类型
 
@@ -24,10 +24,12 @@ FirewallPacketQueueingMethod 的可能值
 |成员|值|说明|
 |:---|:---|:---|
 |deviceDefault|0|没有由 Intune 配置的值，请勿覆盖用户配置的设备默认值|
-|禁用|1|禁用数据包队列|
-|queueInbound|双面|对入站加密的数据包进行排队|
+|禁用|1 |禁用数据包队列|
+|queueInbound|2 |对入站加密的数据包进行排队|
 |queueOutbound|第三章|队列解密出站数据包以供转发|
 |queueBoth|4 |对入站和出站数据包进行排队|
+
+
 
 
 

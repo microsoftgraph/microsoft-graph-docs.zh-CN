@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1b4879b8e21448df9184da9a4252946760283717
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: a35454c1f9c278b8463a4b127c77ea829f7bd169
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108303"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057099"
 ---
 # <a name="create-mailfolder"></a>创建 MailFolder
 
@@ -119,3 +119,4 @@ Content-length: 179
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: aca1ce59f40e758c132d835214442af70a4d571d
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 892d9bedb188ea0a39a611fdb207248958624f28
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872871"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056427"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -110,3 +110,4 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。
 ## <a name="see-also"></a>另请参阅
 - [创建包含团队的组](/graph/teams-create-group-and-team)
 - [使用 Teams API](teams-api-overview.md)
+

@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 在列表中创建新的 listItem。
 doc_type: apiPageType
-ms.openlocfilehash: 9cca55f26c7c80beac22aef93afa487c29940a9f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1a51af48b8349eb0b505b7ded88721caa53bb68c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511717"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057337"
 ---
 # <a name="create-a-new-item-in-a-list"></a>在列表中创建新项
 
@@ -124,3 +124,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+

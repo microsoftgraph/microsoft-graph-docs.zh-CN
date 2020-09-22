@@ -5,18 +5,18 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1086f1ebe43904074d0f6b99985637e7bb928fbf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1acb1fe92884daf42b24aac0cb8bc16a2cdc6f6d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449438"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056931"
 ---
 # <a name="contract-resource-type"></a>约定资源类型
 
 命名空间： microsoft. graph 表示合作伙伴租户与客户租户之间的现有合作关系。
 
-> **重要说明：** 仅存在于合作伙伴租户中。 合作伙伴租户是属于 microsoft[云解决方案提供商](https://partnercenter.microsoft.com/en-us/partner/programs)、Office 365 联合或 microsoft Advisor 合作伙伴计划一部分的 microsoft 合作伙伴的 Azure AD 租户。
+> **重要说明：** 仅存在于合作伙伴租户中。 合作伙伴租户是属于 microsoft [云解决方案提供商](https://partnercenter.microsoft.com/en-us/partner/programs)、Office 365 联合或 microsoft Advisor 合作伙伴计划一部分的 microsoft 合作伙伴的 Azure AD 租户。
 
 ## <a name="methods"></a>方法
 
@@ -70,3 +70,4 @@ ms.locfileid: "43449438"
   "section": "documentation",
   "tocPath": ""
 }-->
+

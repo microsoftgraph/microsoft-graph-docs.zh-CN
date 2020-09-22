@@ -3,14 +3,14 @@ title: internetSiteSecurityLevel 枚举类型
 description: Internet 网站安全级别的可能值。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 262c572311a5c2bbf1dec9b8813dbdad7fce2537
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4a32307bbdfe636a1e11a3ad449b27953aae31b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447715"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056658"
 ---
 # <a name="internetsitesecuritylevel-enum-type"></a>internetSiteSecurityLevel 枚举类型
 
@@ -24,9 +24,11 @@ Internet 网站安全级别的可能值。
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|用户定义，默认值，无意向。|
-|中等|1|中。|
-|mediumHigh|双面|中-高。|
+|中等|1 |中。|
+|mediumHigh|2 |中-高。|
 |高效|第三章|高。|
+
+
 
 
 

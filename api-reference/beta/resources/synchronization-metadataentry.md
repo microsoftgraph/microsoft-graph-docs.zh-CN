@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b9dc39021e297882bf92b9a314f342297d86d9ed
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: a12711fbaeb8b613762f16a2a877cb1e2248369c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218413"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058029"
 ---
 # <a name="metadataentry-resource-type"></a>metadataEntry 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "43218413"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|Key|字符串|元数据属性的名称。|
+|Key|String|元数据属性的名称。|
 |value|String|元数据属性的值。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -57,3 +57,5 @@ ms.locfileid: "43218413"
   "suppressions": []
 }
 -->
+
+

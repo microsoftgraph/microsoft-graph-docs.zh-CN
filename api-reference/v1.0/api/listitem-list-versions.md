@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: b0466116acaa447d5a45e1ecede1137a93eee965
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 3edbd65ce3201b3595215f221fa5616a194306d4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812728"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057260"
 ---
 # <a name="listing-versions-of-a-listitem"></a>列出列表的版本
 
@@ -134,3 +134,4 @@ Content-Type: application/json
   "suppressions": [
   ]
 } -->
+

@@ -1,16 +1,16 @@
 ---
 title: resourceOperation 资源类型
-description: 介绍 Microsoft Graph API （REST）的 resourceOperation 资源（实体），它支持与基于角色的访问控制（RBAC）相关的 Intune 工作流。
+description: 描述 resourceOperation 资源 (entity) of Microsoft Graph API (REST) ，它支持与基于角色的访问控制 (RBAC) 相关的 Intune 工作流。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 95083bb1a3eb9f3c6e98deadd005aa6ef700555a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d8936fd112001b33f977a7cd60dce892c8983083
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441606"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056511"
 ---
 # <a name="resourceoperation-resource-type"></a>resourceOperation 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "43441606"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|资源操作的键。 只读，且自动生成。|
+|id|String|资源操作的键。 只读，且自动生成。|
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
 |description|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
@@ -57,6 +57,8 @@ ms.locfileid: "43441606"
   "description": "String"
 }
 ```
+
+
 
 
 

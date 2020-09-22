@@ -5,20 +5,20 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 51858946338fb51efce392429d55936eb05b476d
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 7fb5c0eb493af6c1d70102f8206999d1004fc0e1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44216569"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057127"
 ---
 # <a name="list-openshifts"></a>列出 openShifts
 
 命名空间：microsoft.graph
 
-列出团队中的[openShift](../resources/openshift.md)对象。
+列出团队中的 [openShift](../resources/openshift.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "44216569"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 请参阅 all、Group、Group. all、Schedule、Group、Group。所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Schedule. All、Schedule、All |
+| 应用程序                            | Schedule. All、Schedule、All |
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -40,9 +40,9 @@ GET /teams/{id}/schedule/openShifts
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
   
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -54,7 +54,7 @@ GET /teams/{id}/schedule/openShifts
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `200 OK` 响应正文中返回团队中的响应代码和所有[openShift](../resources/openshift.md)对象。
+如果成功，此方法在 `200 OK` 响应正文中返回团队中的响应代码和所有 [openShift](../resources/openshift.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -173,3 +173,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

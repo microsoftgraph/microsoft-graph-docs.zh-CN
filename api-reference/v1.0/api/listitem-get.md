@@ -6,12 +6,12 @@ description: 返回 SharePoint 列表中某个项的元数据。
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 0d581732ab7a1fea6e5519ef0db0c289cd276d8c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e2d441bb306a6614cdc27f5dff79bd55377b0459
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511703"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057283"
 ---
 # <a name="get-listitem"></a>获取 listItem
 
@@ -121,3 +121,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+

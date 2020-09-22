@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 03bc6f2a2dfda74af701a14a5b59cbc8865420b8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e18c1688bced04f20d12211fb5e5a70e884bd0b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449477"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056975"
 ---
 # <a name="contactfolder-resource-type"></a>contactFolder 资源类型
 
@@ -27,8 +27,8 @@ ms.locfileid: "43449477"
 |:---------------|:--------|:----------|
 |[获取 contactFolder](../api/contactfolder-get.md) | [contactFolder](contactfolder.md) |通过使用联系人文件夹 ID 获取联系人文件夹。|
 |[更新](../api/contactfolder-update.md) | [contactFolder](contactfolder.md) |更新 contactFolder 对象。 |
-|[Delete](../api/contactfolder-delete.md) | 无 |删除 contactFolder 对象。 |
-|[列出 childFolder](../api/contactfolder-list-childfolders.md) |[ContactFolder](contactfolder.md) collection| 获取指定联系人文件夹下的子文件夹的集合。|
+|[删除](../api/contactfolder-delete.md) | 无 |删除 contactFolder 对象。 |
+|[列出 childFolder](../api/contactfolder-list-childfolders.md) |[ContactFolder](contactfolder.md) 集合| 获取指定联系人文件夹下的子文件夹的集合。|
 |[创建子 ContactFolder](../api/contactfolder-post-childfolders.md) |[ContactFolder](contactfolder.md)| 创建新的 contactFolder 作为指定文件夹的子文件夹。|
 |[delta](../api/contact-delta.md)|[联系人](contact.md)集合| 获取用户邮箱中已添加、删除或移除的联系人文件夹集。|
 |[列出文件夹中的联系人](../api/contactfolder-list-contacts.md) |[联系人](contact.md) 集合| 从已登录用户的默认联系人文件夹 (`.../me/contacts`) 或指定的联系人文件夹中获取联系人集合。|
@@ -42,7 +42,7 @@ ms.locfileid: "43449477"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |displayName|String|文件夹的显示名称。|
-|id|字符串|联系人文件夹的唯一标识符。只读。|
+|id|String|联系人文件夹的唯一标识符。只读。|
 |parentFolderId|String|文件夹的父文件夹 ID。|
 
 ## <a name="relationships"></a>关系
@@ -112,3 +112,4 @@ ms.locfileid: "43449477"
   "section": "documentation",
   "tocPath": ""
 }-->
+

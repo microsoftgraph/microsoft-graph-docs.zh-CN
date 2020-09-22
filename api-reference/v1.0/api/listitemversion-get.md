@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 5654e124d477eefc818b1499ce46bf88ad8698ed
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 474ce406f39eb1b43324677d9e48ed844e2d78df
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806140"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057249"
 ---
 # <a name="get-a-listitemversion-resource"></a>获取 ListItemVersion 资源
 
@@ -108,3 +108,4 @@ Content-Type: application/json
   "suppressions": [
   ]
 } -->
+
