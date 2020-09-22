@@ -5,28 +5,28 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: c835e1335653234cc16d40ce3f3c1be1de3440b6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 696513aab1be4ed8089ed4280b6e55f3798382d1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511094"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087066"
 ---
-# <a name="delete-page"></a><span data-ttu-id="0fa37-103">删除页面</span><span class="sxs-lookup"><span data-stu-id="0fa37-103">Delete page</span></span>
+# <a name="delete-page"></a><span data-ttu-id="308a3-103">删除页面</span><span class="sxs-lookup"><span data-stu-id="308a3-103">Delete page</span></span>
 
-<span data-ttu-id="0fa37-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0fa37-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="308a3-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="308a3-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="0fa37-105">删除 OneNote 页面。</span><span class="sxs-lookup"><span data-stu-id="0fa37-105">Delete a OneNote page.</span></span>
-## <a name="permissions"></a><span data-ttu-id="0fa37-106">权限</span><span class="sxs-lookup"><span data-stu-id="0fa37-106">Permissions</span></span>
-<span data-ttu-id="0fa37-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0fa37-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="308a3-105">删除 OneNote 页面。</span><span class="sxs-lookup"><span data-stu-id="308a3-105">Delete a OneNote page.</span></span>
+## <a name="permissions"></a><span data-ttu-id="308a3-106">权限</span><span class="sxs-lookup"><span data-stu-id="308a3-106">Permissions</span></span>
+<span data-ttu-id="308a3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="308a3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0fa37-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="0fa37-109">Permission type</span></span>      | <span data-ttu-id="0fa37-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="0fa37-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="308a3-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="308a3-109">Permission type</span></span>      | <span data-ttu-id="308a3-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="308a3-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0fa37-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0fa37-111">Delegated (work or school account)</span></span> | <span data-ttu-id="0fa37-112">请注意，ReadWrite，All</span><span class="sxs-lookup"><span data-stu-id="0fa37-112">Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="0fa37-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0fa37-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0fa37-114">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0fa37-114">Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="0fa37-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="0fa37-115">Application</span></span> | <span data-ttu-id="0fa37-116">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0fa37-116">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="308a3-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="308a3-111">Delegated (work or school account)</span></span> | <span data-ttu-id="308a3-112">请注意，ReadWrite，All</span><span class="sxs-lookup"><span data-stu-id="308a3-112">Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="308a3-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="308a3-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="308a3-114">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="308a3-114">Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="308a3-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="308a3-115">Application</span></span> | <span data-ttu-id="308a3-116">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="308a3-116">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0fa37-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0fa37-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="308a3-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="308a3-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/onenote/pages/{id}
@@ -34,20 +34,20 @@ DELETE /users/{id | userPrincipalName}/onenote/pages/{id}
 DELETE /groups/{id}/onenote/pages/{id}
 DELETE /sites/{id}/onenote/pages/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="0fa37-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="0fa37-118">Request headers</span></span>
-| <span data-ttu-id="0fa37-119">名称</span><span class="sxs-lookup"><span data-stu-id="0fa37-119">Name</span></span>       | <span data-ttu-id="0fa37-120">类型</span><span class="sxs-lookup"><span data-stu-id="0fa37-120">Type</span></span> | <span data-ttu-id="0fa37-121">说明</span><span class="sxs-lookup"><span data-stu-id="0fa37-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="308a3-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="308a3-118">Request headers</span></span>
+| <span data-ttu-id="308a3-119">名称</span><span class="sxs-lookup"><span data-stu-id="308a3-119">Name</span></span>       | <span data-ttu-id="308a3-120">类型</span><span class="sxs-lookup"><span data-stu-id="308a3-120">Type</span></span> | <span data-ttu-id="308a3-121">说明</span><span class="sxs-lookup"><span data-stu-id="308a3-121">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="0fa37-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="0fa37-122">Authorization</span></span>  | <span data-ttu-id="0fa37-123">string</span><span class="sxs-lookup"><span data-stu-id="0fa37-123">string</span></span>  | <span data-ttu-id="0fa37-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="0fa37-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="308a3-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="308a3-122">Authorization</span></span>  | <span data-ttu-id="308a3-123">string</span><span class="sxs-lookup"><span data-stu-id="308a3-123">string</span></span>  | <span data-ttu-id="308a3-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="308a3-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="0fa37-126">响应</span><span class="sxs-lookup"><span data-stu-id="0fa37-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="308a3-126">响应</span><span class="sxs-lookup"><span data-stu-id="308a3-126">Response</span></span>
 
-<span data-ttu-id="0fa37-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="0fa37-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="308a3-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="308a3-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0fa37-129">示例</span><span class="sxs-lookup"><span data-stu-id="0fa37-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="0fa37-130">请求</span><span class="sxs-lookup"><span data-stu-id="0fa37-130">Request</span></span>
-<span data-ttu-id="0fa37-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="0fa37-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="308a3-129">示例</span><span class="sxs-lookup"><span data-stu-id="308a3-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="308a3-130">请求</span><span class="sxs-lookup"><span data-stu-id="308a3-130">Request</span></span>
+<span data-ttu-id="308a3-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="308a3-131">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="0fa37-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="0fa37-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="308a3-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="308a3-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_page"
@@ -55,26 +55,26 @@ DELETE /sites/{id}/onenote/pages/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="0fa37-133">C#</span><span class="sxs-lookup"><span data-stu-id="0fa37-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="308a3-133">C#</span><span class="sxs-lookup"><span data-stu-id="308a3-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-page-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="0fa37-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0fa37-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="308a3-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="308a3-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-page-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="0fa37-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0fa37-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="308a3-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="308a3-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-page-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="0fa37-136">Java</span><span class="sxs-lookup"><span data-stu-id="0fa37-136">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="308a3-136">Java</span><span class="sxs-lookup"><span data-stu-id="308a3-136">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-page-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="0fa37-137">响应</span><span class="sxs-lookup"><span data-stu-id="0fa37-137">Response</span></span>
-<span data-ttu-id="0fa37-138">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="0fa37-138">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="308a3-137">响应</span><span class="sxs-lookup"><span data-stu-id="308a3-137">Response</span></span>
+<span data-ttu-id="308a3-138">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="308a3-138">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -94,3 +94,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+
