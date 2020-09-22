@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 8600e79d425d15746fd7015adea98eb49a8a3c82
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 80bfb483e7e15dcdaffb6a8ba8ed30c8bb508f5c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896551"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092354"
 ---
 # <a name="office365servicesusercounts-resource-type"></a>office365ServicesUserCounts 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "44896551"
 | teamsInactive            | Int64  | Microsoft 团队中的非活动用户数。     |
 | office365Active          | Int64  | Microsoft 365 上的活动用户数。   |
 | office365Inactive        | Int64  | Microsoft 365 上的非活动用户数。     |
-| reportPeriod             | String | 报告覆盖的天数。    |
+| reportPeriod             | 字符串 | 报告覆盖的天数。    |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -66,3 +66,5 @@ ms.locfileid: "44896551"
   "reportPeriod": "String"
 }
 ```
+
+

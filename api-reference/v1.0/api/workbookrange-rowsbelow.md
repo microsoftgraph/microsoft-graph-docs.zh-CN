@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 858f05197c9e738eb2ab7fe44d434254bca7b08d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c013e2889e03d73010dcf6ca67ee0e4ba422f6a6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508735"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091906"
 ---
 # <a name="workbookrange-rowsbelow"></a>workbookRange: rowsBelow
 
@@ -41,7 +41,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
 |:---------------|:--------|:----------|
 |count|Int32| 可选。生成的范围中要包含的行数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。|
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -110,7 +110,7 @@ Content-length: 157
 }
 ```
 
-如果不带`count`参数调用，则此函数默认为一行。
+如果不带 `count` 参数调用，则此函数默认为一行。
 
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -175,3 +175,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

@@ -3,14 +3,14 @@ title: 获取 windowsManagedDevice
 description: 读取 windowsManagedDevice 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8a49f45870a95ba06f9b34c335a86e989479775f
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: cceb53abb1c8c52b6e82f4e0f33e4aa06fff3257
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790607"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090569"
 ---
 # <a name="get-windowsmanageddevice"></a>获取 windowsManagedDevice
 
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8387
+Content-Length: 8462
 
 {
   "value": {
@@ -259,10 +259,15 @@ Content-Length: 8387
     "processorArchitecture": "x86",
     "specificationVersion": "Specification Version value",
     "joinType": "azureADJoined",
-    "skuFamily": "Sku Family value"
+    "skuFamily": "Sku Family value",
+    "skuNumber": 9,
+    "managementFeatures": "microsoftManagedDesktop"
   }
 }
 ```
+
+
+
 
 
 

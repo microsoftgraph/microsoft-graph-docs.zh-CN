@@ -3,24 +3,24 @@ title: 更新 deviceShellScript
 description: 更新 deviceShellScript 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 29ae00d26baddc0efaa50f319a3b2759d6f02f66
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fbb9e91eb2e02ae39ad77db8c5ade78656c778e1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380092"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090576"
 ---
 # <a name="update-deviceshellscript"></a>更新 deviceShellScript
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新[deviceShellScript](../resources/intune-devices-deviceshellscript.md)对象的属性。
+更新 [deviceShellScript](../resources/intune-devices-deviceshellscript.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,29 +47,29 @@ PATCH /deviceManagement/deviceShellScripts/{deviceShellScriptId}
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[deviceShellScript](../resources/intune-devices-deviceshellscript.md)对象的 JSON 表示形式。
+在请求正文中，提供 [deviceShellScript](../resources/intune-devices-deviceshellscript.md) 对象的 JSON 表示形式。
 
-下表显示创建[deviceShellScript](../resources/intune-devices-deviceshellscript.md)时所需的属性。
+下表显示创建 [deviceShellScript](../resources/intune-devices-deviceshellscript.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |executionFrequency|持续时间|脚本运行的间隔。 如果未定义，脚本将运行一次|
 |retryCount|Int32|脚本失败时将重试脚本的次数|
-|blockExecutionNotifications|Boolean|不通知用户正在执行的脚本|
+|blockExecutionNotifications|布尔|不通知用户正在执行的脚本|
 |id|字符串|设备管理脚本的唯一标识符。|
 |displayName|字符串|设备管理脚本的名称。|
-|description|String|设备管理脚本的可选说明。|
+|说明|字符串|设备管理脚本的可选说明。|
 |scriptContent|Binary|脚本内容。|
 |createdDateTime|DateTimeOffset|设备管理脚本的创建日期和时间。 此属性是只读的。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。 此属性是只读的。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|String 集合|此 PowerShellScript 实例的范围标记 Id 的列表。|
+|roleScopeTagIds|字符串集合|此 PowerShellScript 实例的范围标记 Id 的列表。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[deviceShellScript](../resources/intune-devices-deviceshellscript.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [deviceShellScript](../resources/intune-devices-deviceshellscript.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -121,6 +121,9 @@ Content-Length: 581
   ]
 }
 ```
+
+
+
 
 
 

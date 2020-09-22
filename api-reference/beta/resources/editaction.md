@@ -6,16 +6,16 @@ title: EditAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 1b7ab5e77b62d3f02ee04a5927cb2294f5c3b5a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 33d70965c945f2ad91d2ed9e609c1232284d7200
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502849"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089698"
 ---
 # <a name="editaction-resource-type"></a>EditAction 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,3 +56,5 @@ ms.locfileid: "42502849"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 396d74e2ef423b8efd61877b1a2b1fd8fdeee371
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d6096257131256cb583a23ef1bc29397fa2d2f62
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466709"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092270"
 ---
 # <a name="create-device"></a>创建设备
 
@@ -133,3 +133,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

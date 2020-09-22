@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 037e503c2b25fb9711ade29941679236d23a2204
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: adb67d9c94875b97c86b581b23b1675dd8adc621
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108233"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088753"
 ---
 # <a name="send-mail"></a>发送邮件
 
@@ -272,3 +272,4 @@ HTTP/1.1 202 Accepted
   "suppressions": [
   ]
 }-->
+

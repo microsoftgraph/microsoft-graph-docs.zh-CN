@@ -7,12 +7,12 @@ localization_priority: Normal
 description: ThumbnailSet 资源是键控的 缩略图 资源集合。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ffcd654534dc1ff38f4f708b135d29ab101e0878
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5aa7ca5646ea0555c0f6547e7171312537343345
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533460"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090856"
 ---
 # <a name="thumbnailset-resource-type"></a>ThumbnailSet 资源类型
 
@@ -52,7 +52,7 @@ ms.locfileid: "42533460"
 
 | 属性 | 类型                      | 说明                                                                       |
 |:---------|:--------------------------|:----------------------------------------------------------------------------------|
-| id       | 字符串                    | 项目中的 id。只读。                                                |
+| id       | String                    | 项目中的 id。只读。                                                |
 | 大    | [缩略图](thumbnail.md) | 1920 x 1920 缩放后的缩略图。                                                     |
 | 中等   | [缩略图](thumbnail.md) | 176x176 缩放后的缩略图。                                                       |
 | 小    | [缩略图](thumbnail.md) | 48x48 裁剪缩略图。                                                        |
@@ -66,3 +66,4 @@ ms.locfileid: "42533460"
   "section": "documentation",
   "tocPath": "Resources/ThumbnailSet"
 } -->
+

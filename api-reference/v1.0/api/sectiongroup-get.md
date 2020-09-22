@@ -5,18 +5,18 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 04abdc0f9a3d38681ef2d47c1fe6b7794d153f1f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 163cc02a43c1fb7af2ce22e9813696a48f1878ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509897"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088893"
 ---
 # <a name="get-sectiongroup"></a>获取 sectionGroup
 
 命名空间：microsoft.graph
 
-检索[sectionGroup](../resources/sectiongroup.md)对象的属性和关系。
+检索 [sectionGroup](../resources/sectiongroup.md) 对象的属性和关系。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -37,9 +37,9 @@ GET /sites/{id}/onenote/sectionGroups/{id}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
-默认查询将展开`parentNotebook`并选择其`id`、 `name`和`self`属性。 节`expand`组的有效值为`parentNotebook`和`parentSectionGroup`。
+默认查询将展开 `parentNotebook` 并选择其 `id` 、 `name` 和 `self` 属性。 `expand`节组的有效值为 `parentNotebook` 和 `parentSectionGroup` 。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
@@ -123,3 +123,4 @@ Content-length: 305
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f9734fe7421316f19beed0f0aeccd3dce291ab1c
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 153c374704cce31aaaab103d58f0b9e702525243
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674545"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092116"
 ---
 # <a name="get-signin"></a>获取 signIn
 
@@ -185,3 +185,4 @@ Content-length: 211
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a3e544e06519dfd014eb70eec5eb0cf4d84d4996
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f88610b3c3c58fe29ba892a4605aa04dcddddec3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509617"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092021"
 ---
 # <a name="update-table"></a>更新表
 
@@ -44,13 +44,13 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |name|string|表的名称。|
-|showHeaders|布尔|指示标头行是否可见。该值可以设置为显示或删除标头行。|
+|showHeaders|boolean|指示标头行是否可见。该值可以设置为显示或删除标头行。|
 |showTotals|boolean|指示总计行是否可见。该值可以设置为显示或删除总计行。|
 |style|string|表示表格样式的常量值。 可取值为：TableStyleLight1 到 TableStyleLight21、TableStyleMedium1 到 TableStyleMedium28、TableStyleStyleDark1 到 TableStyleStyleDark11。 还可以指定工作簿中显示的用户定义的自定义样式。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookTable](../resources/table.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [WorkbookTable](../resources/table.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -122,3 +122,4 @@ Content-length: 109
   "suppressions": [
   ]
 }-->
+

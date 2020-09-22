@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e521c5140467d8e44052982e50f19fd8a2088041
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 6c37ff0de7f733b67eda0541418ca4b42aa57352
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319594"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089831"
 ---
 # <a name="accesspackageresource-resource-type"></a>accessPackageResource 资源类型
 
@@ -30,22 +30,22 @@ ms.locfileid: "47319594"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|addedBy|String|只读。|
+|addedBy|字符串|只读。|
 |addedOn|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|说明|String|资源的说明。|
-|displayName|String|资源的显示名称，例如应用程序名称、组名称或网站名称。|
-|id|String| 只读。|
-|isPendingOnboarding|Boolean|如果资源尚不可用于工作分配，则为 True。|
-|originId|String|源系统中资源的唯一标识符。 在 Azure AD 组的情况下，这是组的标识符。 |
-|originSystem|String|源系统中资源的类型，例如 `SharePointOnline` `AadApplication` 或 `AadGroup` 。|
-|resourceType|String|资源的类型，例如， `Application` 它是 AZURE AD 连接的应用程序，或者是 `SharePoint Online Site` SharePoint Online 网站的类型。|
+|说明|字符串|资源的说明。|
+|displayName|字符串|资源的显示名称，例如应用程序名称、组名称或网站名称。|
+|id|字符串| 只读。|
+|isPendingOnboarding|布尔|如果资源尚不可用于工作分配，则为 True。|
+|originId|字符串|源系统中资源的唯一标识符。 在 Azure AD 组的情况下，这是组的标识符。 |
+|originSystem|字符串|源系统中资源的类型，例如 `SharePointOnline` `AadApplication` 或 `AadGroup` 。|
+|resourceType|字符串|资源的类型，例如， `Application` 它是 AZURE AD 连接的应用程序，或者是 `SharePoint Online Site` SharePoint Online 网站的类型。|
 |url|String|资源的唯一资源定位器，例如用于将用户签名到应用程序的 URL。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|accessPackageResourceRoles|[accessPackageResourceRole](accesspackageresourcerole.md) 集合| 只读。 可为 Null。|
+|accessPackageResourceRoles|[accessPackageResourceRole](accesspackageresourcerole.md) 集合| 只读。 可为 NULL。|
 |accessPackageResourceScopes|[accessPackageResourceScope](accesspackageresourcescope.md) 集合| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -86,3 +86,5 @@ ms.locfileid: "47319594"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

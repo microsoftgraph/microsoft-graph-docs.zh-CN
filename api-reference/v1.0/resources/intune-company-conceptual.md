@@ -1,16 +1,16 @@
 ---
 title: Microsoft Intune 中的公司条款和条件-Microsoft Graph API
-description: 列出支持公司条款和条件的适用于 Intune （REST）终结点的 Microsoft Graph API。
+description: 列出支持公司条款和条件的 Intune (REST) 终结点的 Microsoft Graph API。
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 630753792292be2c82b5dc1b1bc8a794f7265eaa
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 705984842ea68cb25947bc30a64993037483a236
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468636"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088648"
 ---
 # <a name="company-terms-and-conditions-in-microsoft-intune"></a>Microsoft Intune 中的公司条款和条件
 
@@ -27,6 +27,8 @@ ms.locfileid: "43468636"
 - [条款和条件](intune-companyterms-termsandconditions.md)
 - [条款和条件接受状态](intune-companyterms-termsandconditionsacceptancestatus.md)
 - [条款和条件分配](intune-companyterms-termsandconditionsassignment.md)
+
+
 
 
 

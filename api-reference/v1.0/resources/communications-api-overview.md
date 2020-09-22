@@ -5,12 +5,12 @@ author: ananmishr
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: b0337dfe620318482f3cc400512d5c381bf123a9
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: MT
+ms.openlocfilehash: 5cdd723e9d73a0466ae4349026f6bf086cb9bdd2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491880"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091864"
 ---
 # <a name="working-with-the-communications-api-in-microsoft-graph"></a>使用 Microsoft Graph 通信 API
 
@@ -51,10 +51,11 @@ Microsoft Graph 通信 API 通过在应用和服务中启用核心通信功能�
 | callRecord | [callRecord 属性](/graph/api/resources/callrecords-callrecord#properties) |
 
 ## <a name="whats-new"></a>最近更新
-查找有关此 API 集的[最新新功能和更新](/graph/whats-new-overview)。
+了解此 API 集的[最新功能和更新](/graph/whats-new-overview)。
 
 ## <a name="see-also"></a>另请参阅
 
 - [通信 API 示例](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)
 - [通信信号 SDK](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls)
 - [通信媒体 SDK](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls.Media)
+

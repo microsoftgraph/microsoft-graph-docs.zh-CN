@@ -6,12 +6,12 @@ title: BaseItemVersion
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 47865e388616763b60ce3cd45195bf9919c7acf2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0d007d18f6329763fa6a7a426f1f944ef1fb4106
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508036"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089727"
 ---
 # <a name="baseitemversion-resource-type"></a>BaseItemVersion 资源类型
 
@@ -56,3 +56,5 @@ ms.locfileid: "42508036"
   "suppressions": []
 }
 -->
+
+

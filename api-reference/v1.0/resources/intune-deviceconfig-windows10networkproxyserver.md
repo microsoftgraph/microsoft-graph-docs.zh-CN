@@ -3,14 +3,14 @@ title: windows10NetworkProxyServer 资源类型
 description: 网络代理服务器策略。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c409c5d9db30d01acbd080d4bc38f96b22d3534a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 58fd5fb0e46b7458cf9c96c4f1b5d541ba60bf3b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451567"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091577"
 ---
 # <a name="windows10networkproxyserver-resource-type"></a>windows10NetworkProxyServer 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "43451567"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|address|String|代理服务器的地址。 在 "\>\[服务器：\<端口" \<格式中指定地址\>\]|
+|address|String|代理服务器的地址。 以以下格式指定地址 \<server\> \[ ：\<port\>\]|
 |exceptions|String 集合|不应使用代理服务器的地址。 系统无法将代理服务器用于以本节点中指定的内容开头的地址。|
 |useForLocalAddresses|Boolean|指定是否应将代理服务器用于本地 (Intranet) 地址。|
 
@@ -47,6 +47,8 @@ ms.locfileid: "43451567"
   "useForLocalAddresses": true
 }
 ```
+
+
 
 
 

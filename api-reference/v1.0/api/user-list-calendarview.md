@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: e7dec5123f330af2a2cded0d0b34950b67c2bb9c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e8a1822766624a45d14298fb38d7698e364245a2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455515"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088816"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
 
@@ -152,3 +152,4 @@ Content-length: 354
   "suppressions": [
   ]
 }-->
+

@@ -5,22 +5,22 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 61d7d590e6882f9c65614580248eba3f2d0ba6c0
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 673b5ea568cb1a07ce1482d535c85d1b0dc91f32
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897510"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088991"
 ---
 # <a name="update-schemaextension"></a>更新 schemaExtension
 
 命名空间：microsoft.graph
 
-更新指定[schemaExtension](../resources/schemaextension.md)的定义中的属性。
+更新指定 [schemaExtension](../resources/schemaextension.md)的定义中的属性。
 
-更新适用于扩展的**targetTypes**属性中包含的所有资源。 这些资源是[支持资源类型](/graph/extensibility-overview#supported-resources)中的一种。
+更新适用于扩展的 **targetTypes** 属性中包含的所有资源。 这些资源是 [支持资源类型](/graph/extensibility-overview#supported-resources)中的一种。
 
-只有创建了架构扩展（所有者应用程序）的应用程序可以在扩展处于**InDevelopment**或**可用**状态时对扩展进行增量更新。 这意味着应用程序无法从定义中删除自定义属性或目标资源类型。 但是，该应用程序可以更改扩展的说明。
+如果扩展处于 **InDevelopment** 或 **可用** 状态，则仅 (所有者应用程序) 创建架构扩展的应用程序才可以对扩展进行增量更新。 这意味着应用程序无法从定义中删除自定义属性或目标资源类型。 但是，该应用程序可以更改扩展的说明。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,12 +28,12 @@ ms.locfileid: "44897510"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.accessasuser.all 的所有应用程序。    |
+|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
 > [!NOTE]
-> 此外，对于委派的流程，登录用户只能更新自己拥有的 Schemaextension （其中 schemaExtension 的**owner**属性是 `appId` 登录用户拥有的应用程序的）。
+> 此外，对于委派的流程，登录用户只能更新他们拥有 (的 Schemaextension，其中 schemaExtension 的 **owner** 属性是 `appId` 登录用户拥有) 的应用程序的所有者属性。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -57,7 +57,7 @@ PATCH /schemaExtensions/{id}
 |:---------------|:--------|:----------|
 |说明|String|架构扩展的说明。|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) 集合|构成架构扩展定义的属性名称和类型的集合。 仅允许进行累加性更改。 |
-|status|String|架构扩展的生命周期状态。 创建时的初始状态为**InDevelopment**。 可能的状态过渡从**InDevelopment**到**可用**，并**可供****弃用**。|
+|status|String|架构扩展的生命周期状态。 创建时的初始状态为 **InDevelopment**。 可能的状态过渡从**InDevelopment**到**可用**，并**可供****弃用**。|
 |targetTypes|String collection|架构扩展适用的支持扩展的 Microsoft Graph 类型集。  仅允许进行累加性更改。|
 
 ## <a name="response"></a>响应
@@ -139,3 +139,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

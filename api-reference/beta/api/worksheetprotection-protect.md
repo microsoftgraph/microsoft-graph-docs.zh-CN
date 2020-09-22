@@ -5,21 +5,21 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 69d68b4a6697325318e8c03480caf16420afeedf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1ee9aff7f3f49da0c1b82ab4b953c4f3ae1a25e9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451131"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089887"
 ---
 # <a name="workbookworksheetprotection-protect"></a>workbookWorksheetProtection：保护
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 保护工作表。如果工作表处于受保护状态，则会引发它。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -121,3 +121,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

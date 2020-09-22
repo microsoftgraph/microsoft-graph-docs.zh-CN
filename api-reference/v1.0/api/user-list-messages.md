@@ -5,12 +5,12 @@ localization_priority: Priority
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ef1581250b7da3d36260667a5b6b048f497f2729
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d817694185daaef6eb1ad3f3e8272262905cf0e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454117"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091941"
 ---
 # <a name="list-messages"></a>列出邮件
 
@@ -262,3 +262,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

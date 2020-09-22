@@ -3,14 +3,14 @@ title: detectedApp 资源类型
 description: 托管设备上安装的托管或未托管应用。 未托管应用仅出现在标记为公司所有的设备上。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dae22c8a2e939d7ab06a645726f139d5b02ac724
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d30a6bdf59433bce17eab86b4bc8076aa4f761bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407048"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091283"
 ---
 # <a name="detectedapp-resource-type"></a>detectedApp 资源类型
 
@@ -33,7 +33,7 @@ ms.locfileid: "43407048"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|检测到的应用程序的唯一标识符。 创建此应用程序时，Intune 将自动生成它。 只读。|
-|displayName|字符串|发现的应用程序的名称。 只读|
+|displayName|String|发现的应用程序的名称。 只读|
 |version|String|发现的应用程序的版本。 只读|
 |sizeInByte|Int64|发现的应用程序的大小，以字节为单位。 只读|
 |deviceCount|Int32|已安装此应用程序的设备数量|
@@ -61,6 +61,8 @@ ms.locfileid: "43407048"
   "deviceCount": 1024
 }
 ```
+
+
 
 
 

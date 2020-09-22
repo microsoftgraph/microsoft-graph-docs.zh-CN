@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8aecae06de0419ffeeab89e12cf2043dc6e73a56
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 302aa8f155975956d6fd24fc1bfbf8086eb31eda
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107295"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089915"
 ---
 # <a name="list-names"></a>列出名称
 
@@ -19,7 +19,7 @@ ms.locfileid: "43107295"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索与工作表关联的已命名项的列表。 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -47,7 +47,7 @@ GET /workbook/worksheets/{id|name}/names
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[workbookNamedItem](../resources/workbooknameditem.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookNamedItem](../resources/workbooknameditem.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -110,3 +110,5 @@ Content-length: 158
   ]
 }
 -->
+
+

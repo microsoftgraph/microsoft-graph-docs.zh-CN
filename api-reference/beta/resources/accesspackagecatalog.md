@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5e5066337ef88db6a036839ebcbfd454e7710f3a
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: 3d8c93defc8d76fbee1efbc162677f21b4e7f827
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757200"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089852"
 ---
 # <a name="accesspackagecatalog-resource-type"></a>accessPackageCatalog 资源类型
 
@@ -44,7 +44,7 @@ ms.locfileid: "46757200"
 |说明|字符串|访问包目录的说明。|
 |displayName|字符串|访问包目录的显示名称。|
 |id|字符串| 只读。|
-|isExternallyVisible|Boolean|租户外部的用户是否可以请求此目录中的访问程序包。|
+|isExternallyVisible|布尔|租户外部的用户是否可以请求此目录中的访问程序包。|
 |modifiedBy|字符串|上次修改此资源的用户的 UPN。 只读。|
 |modifiedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
 
@@ -94,3 +94,5 @@ ms.locfileid: "46757200"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

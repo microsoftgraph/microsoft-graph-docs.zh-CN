@@ -3,14 +3,14 @@ title: deviceOperatingSystemSummary 资源类型
 description: 设备操作系统摘要。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 460edb4724dcff002e207d7c5df6095cc3a8f130
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b076a49036a3f438e93af5472a0ab9fe1bcb59a0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453974"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091178"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>deviceOperatingSystemSummary 资源类型
 
@@ -51,6 +51,8 @@ ms.locfileid: "43453974"
   "unknownCount": 1024
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a5d08e8a8478323f2563036a563eddee75a94a13
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 1721797203410eab2fee7ff46970e1da36d8047f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809622"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089995"
 ---
 # <a name="delete-itempatent"></a>删除 itemPatent
 
@@ -18,7 +18,7 @@ ms.locfileid: "46809622"
 
 删除一个 [itemPatent](../resources/itempatent.md) 对象。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -87,3 +87,5 @@ DELETE https://graph.microsoft.com/beta/user/{userId}/profile/patents/{id}
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+

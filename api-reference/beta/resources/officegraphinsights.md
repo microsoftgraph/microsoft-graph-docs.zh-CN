@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: ce1f51a3e0b53dc1ed108febf9a3b91055349ce5
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: f10d12a0014b38fbe954f957987e585dafa63a2c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427324"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092326"
 ---
 # <a name="officegraphinsights-resource-type"></a>officeGraphInsights 资源类型
 
@@ -64,4 +64,6 @@ Insights 由以下 API 返回：
   "shared": [ { "@odata.type": "microsoft.graph.shared" } ]
 }
 ```
+
+
 

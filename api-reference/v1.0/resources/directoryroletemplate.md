@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 15225d5839124bc90cce7b4790f29e6b44b1bc2a
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 4b4c99bcba706b0634179a47109feb80960571ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181858"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091759"
 ---
 # <a name="directoryroletemplate-resource-type"></a>directoryRoleTemplate 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "43181858"
 |:---------------|:--------|:----------|
 |说明|String|可设置目录角色说明。只读。|
 |displayName|String|可设置目录角色显示名称。只读。 |
-|id|字符串|模板的的唯一标识符。继承自 [directoryObject](directoryobject.md)。在 POST 请求中指定 **roleTemplateId** 属性的目录角色模板的 **id** 将在租户中激活 [directoryRole](directoryrole.md)。密钥，不可为 NULL。只读。|
+|id|String|模板的的唯一标识符。继承自 [directoryObject](directoryobject.md)。在 POST 请求中指定 **roleTemplateId** 属性的目录角色模板的 **id** 将在租户中激活 [directoryRole](directoryrole.md)。密钥，不可为 NULL。只读。|
 
 ## <a name="relationships"></a>关系
 无
@@ -76,3 +76,4 @@ ms.locfileid: "43181858"
   "section": "documentation",
   "tocPath": ""
 }-->
+

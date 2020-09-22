@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ac50b952a075ec4ce4b9257fa28c0e5a9aba6096
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: afba8ad5c1022156e68dbf27ad0e4199b573117b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916891"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090716"
 ---
 # <a name="tokenissuancepolicy-resource-type"></a>tokenIssuancePolicy 资源类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "43916891"
 - 设置签名算法
 - 设置 SAML 令牌版本
 
-继承自[stsPolicy](stsPolicy.md)。
+继承自 [stsPolicy](stsPolicy.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -41,15 +41,15 @@ ms.locfileid: "43916891"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|字符串| 此策略的唯一标识符。 只读。|
-|定义|String 集合| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
+|id|String| 此策略的唯一标识符。 只读。|
+|定义|String collection| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
 |description|String| 此策略的说明。|
 |displayName|String| 此策略的显示名称。 必需。|
 |isOrganizationDefault|Boolean|忽略此属性。 令牌颁发策略仅适用于服务主体，不能为组织全局设置。|
 
 
 ### <a name="properties-of-a-token-issuance-policy-definition"></a>令牌颁发策略定义的属性
-属性构成表示令牌颁发策略的 JSON 对象。 此 JSON 对象必须**转换为转义了引号的字符串**，以将其插入到**定义**属性中。 以下是 JSON 格式的示例：
+属性构成表示令牌颁发策略的 JSON 对象。 此 JSON 对象必须 **转换为转义了引号的字符串** ，以将其插入到 **定义** 属性中。 以下是 JSON 格式的示例：
 
 <!-- {
   "blockType": "ignored"
@@ -63,9 +63,9 @@ ms.locfileid: "43916891"
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|TokenResponseSigningPolicy|String|表示 Azure AD 中可用的证书签名选项。 支持的值为`ResponseOnly`： `TokenOnly`、 `ResponseAndToken`、。  |
-|SamlTokenVersion|String|SAML 令牌的版本。 支持的值为`1.1`： `2.0`、。 |
-|SigningAlgorithm|String|Azure AD 使用的签名算法对 SAML 令牌进行签名。 支持的值为`http://www.w3.org/2001/04/xmldsig-more#rsa-sha256`： `http://www.w3.org/2000/09/xmldsig#rsa-sha1`、。|
+|TokenResponseSigningPolicy|String|表示 Azure AD 中可用的证书签名选项。 支持的值为： `ResponseOnly` 、 `TokenOnly` 、 `ResponseAndToken` 。  |
+|SamlTokenVersion|String|SAML 令牌的版本。 支持的值为： `1.1` 、 `2.0` 。 |
+|SigningAlgorithm|String|Azure AD 使用的签名算法对 SAML 令牌进行签名。 支持的值为： `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256` 、 `http://www.w3.org/2000/09/xmldsig#rsa-sha1` 。|
 |版本|整数|将值设置为1。 必需。|
 
 
@@ -73,7 +73,7 @@ ms.locfileid: "43916891"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|appliesTo|[directoryObject](directoryobject.md) 集合| 已将此策略应用于的[directoryObject](directoryObject.md)集合。 只读。|
+|appliesTo|[directoryObject](directoryobject.md) 集合| 已将此策略应用于的 [directoryObject](directoryObject.md) 集合。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -108,3 +108,4 @@ ms.locfileid: "43916891"
   "section": "documentation",
   "tocPath": ""
 }-->
+

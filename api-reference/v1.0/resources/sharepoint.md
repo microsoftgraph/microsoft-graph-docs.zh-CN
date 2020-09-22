@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: conceptualPageType
-ms.openlocfilehash: c805b9f0f337e180a6b50261f5be017cad80fd11
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 1fae5e12218fa7c661c93d4dd34a4c04937bdf1f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808128"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088445"
 ---
 # <a name="working-with-sharepoint-sites-in-microsoft-graph"></a>使用 Microsoft Graph 中的 SharePoint 网站
 
@@ -138,3 +138,4 @@ GET https://graph.microsoft.com/v1.0/sites/{spsite-id}
   "tocPath": "Getting Started",
   "tocIndex": -100
 } -->
+

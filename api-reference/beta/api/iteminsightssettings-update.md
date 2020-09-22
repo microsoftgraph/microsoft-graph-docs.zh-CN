@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: fb92dc6e70682bf78af42e0bb2960dac1903d387
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 89712532983d8fd3dc34d3c69be451a5b43d5473
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567063"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090013"
 ---
 # <a name="update-iteminsightssettings"></a>更新 itemInsightsSettings
 
@@ -18,11 +18,11 @@ ms.locfileid: "46567063"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新指定的[itemInsightsSettings](../resources/iteminsightssettings.md)资源的属性。
+更新指定的 [itemInsightsSettings](../resources/iteminsightssettings.md) 资源的属性。
 
-若要了解如何为你的组织自定义项目见解隐私，请参阅[自定义见解隐私](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0)。 
+若要了解如何为你的组织自定义项目见解隐私，请参阅 [自定义见解隐私](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0)。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -54,14 +54,14 @@ PATCH /organization/{organizationId}/settings/itemInsights
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|布尔| `true`如果启用了组织项目见解，则为`false`如果对不例外的所有用户禁用了组织项目见解。 默认值为 `true`。 可选。|
+|isEnabledInOrganization|布尔| `true` 如果启用了组织项目见解，则为 `false` 如果对不例外的所有用户禁用了组织项目见解。 默认值为 `true`。 可选。|
 |disabledForGroup|字符串| Azure AD 组的 ID，其中成员的项目见解已禁用。 默认值为 `empty`。 可选。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[itemInsightsSettings](../resources/iteminsightssettings.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [itemInsightsSettings](../resources/iteminsightssettings.md) 对象。
 
->**注意：** 此操作将验证指定的**itemInsightsSettings**资源的属性值的有效性。 如果设置了**disabledForGroup**属性，则此操作不检查是否存在相应的 Azure AD 组。 这意味着，如果您将**disabledForGroup**设置为不存在或随后删除的 Azure AD 组，则此操作将无法识别任何组成员身份并为任何特定用户禁用项目见解。 如果将**isEnabledInOrganization**设置为 `true` ，该操作将为组织中的所有用户启用见解。 
+>**注意：** 此操作将验证指定的 **itemInsightsSettings** 资源的属性值的有效性。 如果设置了 **disabledForGroup** 属性，则此操作不检查是否存在相应的 Azure AD 组。 这意味着，如果您将 **disabledForGroup** 设置为不存在或随后删除的 Azure AD 组，则此操作将无法识别任何组成员身份并为任何特定用户禁用项目见解。 如果将 **isEnabledInOrganization** 设置为 `true` ，该操作将为组织中的所有用户启用见解。 
 
 ## <a name="example"></a>示例 
 
@@ -117,3 +117,5 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
+
+

@@ -3,14 +3,14 @@ title: deviceManagementExchangeAccessState 枚举类型
 description: 设备交换访问状态。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 73dd5e2a60f2e73172d3fba853cc74f07ccfc5ee
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4e59dea6ba916745e8e9e0bc58ab20ba637e9ba5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453995"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091185"
 ---
 # <a name="devicemanagementexchangeaccessstate-enum-type"></a>deviceManagementExchangeAccessState 枚举类型
 
@@ -24,10 +24,12 @@ ms.locfileid: "43453995"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|没有从 Exchange 中发现的访问状态|
-|unknown|1|Exchange 的设备访问状态未知|
-|支持|双面|设备有权访问 Exchange|
+|unknown|1 |Exchange 的设备访问状态未知|
+|支持|2 |设备有权访问 Exchange|
 |堵塞|第三章|设备在 Exchange 中被阻止|
 |隔离|4 |Exchange 中的设备被隔离|
+
+
 
 
 

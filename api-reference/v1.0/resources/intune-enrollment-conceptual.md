@@ -1,16 +1,16 @@
 ---
 title: 使用 Intune 注册企业拥有的设备
-description: " （BYOD）方案。"
+description: "  (BYOD) 方案。"
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 749a3396c534222af46f2bf903616def1dd900e4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 689170f363336745c1dfb4185a8589fb72309758
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439403"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088592"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>使用 Intune 注册企业拥有的设备
 
@@ -27,6 +27,8 @@ ms.locfileid: "43439403"
 - [已导入的 Windows Autopilot 设备标识状态](intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)
 - [已导入的 Windows Autopilot 设备标识上载](intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)
 - [已导入的 Windows Autopilot 设备标识上载状态](intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)
+
+
 
 
 

@@ -3,14 +3,14 @@ title: applePushNotificationCertificate 资源类型
 description: Apple 推送通知证书。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 79c7bcd1bfe7a1eac1820cbe7163cac0b2b5311e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2bbcca2707223f53b59d1b3d5d2ceb75ba08c57a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451314"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091318"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>applePushNotificationCertificate 资源类型
 
@@ -59,6 +59,8 @@ Apple 推送通知证书。
   "certificate": "String"
 }
 ```
+
+
 
 
 

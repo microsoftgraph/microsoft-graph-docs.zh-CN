@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0a4e61ea15f07da115260bd53fce817047a88fc6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d14d477d3f2a7be94a676aafd17eee6ebf362925
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461949"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089026"
 ---
 # <a name="list-outlook-categories"></a>列出 Outlook 类别
 
@@ -139,3 +139,4 @@ Content-length: 727
   "suppressions": [
   ]
 }-->
+

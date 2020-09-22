@@ -3,14 +3,14 @@ title: deviceGeoLocation 资源类型
 description: 设备位置
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 091ef44a52e20acb987adddbac1c561087db718c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 69e097d433d774c3dd445c94cd29eb059292806f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43368310"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091227"
 ---
 # <a name="devicegeolocation-resource-type"></a>deviceGeoLocation 资源类型
 
@@ -24,12 +24,12 @@ ms.locfileid: "43368310"
 |属性|类型|说明|
 |:---|:---|:---|
 |lastCollectedDateTime|DateTimeOffset|记录位置时的时间，相对于 UTC|
-|longitude|双精度数|设备位置的经度坐标|
-|latitude|双精度|设备位置的纬度坐标|
-|altitude|双精度|高度，以高出海平面的米数表示|
-|horizontalAccuracy|双精度|经度和纬度的准确度，以米为单位|
-|verticalAccuracy|双精度|高度的准确度，以米为单位|
-|heading|双精度|相对于真北的方位，以度为单位|
+|longitude|Double|设备位置的经度坐标|
+|latitude|Double|设备位置的纬度坐标|
+|altitude|Double|高度，以高出海平面的米数表示|
+|horizontalAccuracy|Double|经度和纬度的准确度，以米为单位|
+|verticalAccuracy|Double|高度的准确度，以米为单位|
+|heading|Double|相对于真北的方位，以度为单位|
 |speed|Double|设备的移动速度，以米/秒为单位|
 
 ## <a name="relationships"></a>关系
@@ -55,6 +55,8 @@ ms.locfileid: "43368310"
   "speed": "<Unknown Primitive Type Edm.Double>"
 }
 ```
+
+
 
 
 

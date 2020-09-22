@@ -3,14 +3,14 @@ title: 创建 schemaExtension
 description: 创建一个新的 schemaExtension 定义以扩展支持资源类型。
 localization_priority: Priority
 author: dkershaw10
-ms.prod: ''
+ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: fc9685043c101dade21c5041d5f46761cadfc86e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 261a365957e1552d2848d94d00600d7be12716d3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509946"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089012"
 ---
 # <a name="create-schemaextension"></a>创建 schemaExtension
 
@@ -28,9 +28,12 @@ ms.locfileid: "42509946"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
+
+> [!NOTE]
+> 此外，对于委派的流程，登录用户必须是调用应用程序的所有者或用于设置**所有者**属性的（所带应用程序）`appId`所有者。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -53,7 +56,7 @@ POST /schemaExtensions
 |:---------------|:--------|:----------|
 |说明|String|架构扩展的说明。|
 |id|String|架构扩展定义的唯一标识符。 <br>你可以使用下面两种方法之一分配值： <ul><li>连接其中一个已验证域的域名与架构扩展名称，形成此格式的唯一字符串：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。 示例：`contoso_mySchema`。 注意：仅支持以下顶级域下已经过验证的域：`.com`、`.net`、`.gov`、`.edu` 或 `.org`。 </li><li>提供一个架构名称，并让 Microsoft Graph 使用此格式的架构名称完成 **id** 分配：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。例如 `extkvbmkofy_mySchema`。</li></ul>此属性一旦创建，便无法更改。 |
-|owner|String|（可选）属于架构扩展所有者的应用程序的 `appId`。 可在创建时提供此属性以设置所有者。  如果未提供，则会将调用应用程序的 `appId` 设置为所有者。 因此，如果使用 Graph 浏览器新建一个架构扩展定义，则**必须**提供 owner 属性（以此为例）。 设置后，此属性为只读，且无法更改。|
+|owner|String|（可选）属于架构扩展所有者的应用程序的 `appId`。 默认情况下，则会将调用应用程序的 `appId` 设置为所有者。 但是，创建时可提供该属性，将所有者的 appId 设置为与调用应用程序不同的对象。 在所有情况下，在委派的流程中，已登录的用户**必须**成为被设置为架构扩展所有者的应用程序的所有者。 因此，如果使用 Graph 浏览器新建一个架构扩展定义，则**必须**提供所有者属性你所拥有的的 appId（以此为例）。 设置后，此属性为只读，且无法更改。|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) 集合|构成架构扩展定义的属性名称和类型的集合。|
 |targetTypes|String collection|此架构扩展定义适用的支持架构扩展的 Microsoft Graph 资源类型集。|
 
@@ -63,11 +66,11 @@ POST /schemaExtensions
 
 ## <a name="example"></a>示例
 
-##### <a name="request-1"></a>请求 1
+### <a name="example-1-creating-a-schema-extension-using-a-verified-domain"></a>示例 1：使用验证的域创建架构扩展
 
-第一个示例演示了如何使用已验证的域名 `graphlearn` 和架构名称 `courses` 为架构扩展定义的 **id** 属性形成唯一的字符串。唯一字符串采用此格式：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。
+#### <a name="request"></a>请求
 
-在请求正文中，提供 [schemaExtension](../resources/schemaextension.md) 对象的 JSON 表示形式。
+这个示例演示了如何使用已验证的域名 `graphlearn` 和架构名称 `courses` 为架构扩展定义的 **id** 属性形成唯一的字符串。 唯一字符串采用此格式：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -119,7 +122,7 @@ Content-type: application/json
 ---
 
 
-##### <a name="response-1"></a>响应 1
+#### <a name="response"></a>响应
 
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
@@ -157,9 +160,11 @@ Content-length: 420
 }
 ```
 
-##### <a name="request-2"></a>请求 2
+### <a name="example-2-creating-a-schema-extension-using-just-a-name"></a>示例 2：仅使用名称创建架构扩展
 
-第二个示例演示了如何在请求的 **id** 属性中，仅指定架构名称、`courses` 以及 [schemaExtension](../resources/schemaextension.md) 对象中剩余属性的 JSON 表示形式。Microsoft Graph 将在响应中分配并返回一个唯一的字符串值。
+#### <a name="request"></a>请求
+
+这个示例演示了如何在请求的 **id** 属性中，仅指定架构名称、`courses` 以及 [schemaExtension](../resources/schemaextension.md) 对象中剩余属性的 JSON 表示形式。 Microsoft Graph 将在响应中分配并返回一个唯一的字符串值。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -212,7 +217,7 @@ Content-type: application/json
 ---
 
 
-##### <a name="response-2"></a>响应 2
+#### <a name="response"></a>响应
 
 该响应包括一个基于请求中提供的架构名称的 **id** 属性中唯一的字符串，以及新创建的架构定义的其余部分。响应中的 **id** 中的值采用此格式：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
@@ -250,6 +255,103 @@ Content-length: 420
 }
 ```
 
+### <a name="example-3-creating-a-schema-extension-setting-the-owner"></a>示例 3：设置所有者来创建架构扩展
+
+#### <a name="request"></a>请求
+
+此示例演示如何设置**所有者**来创建架构扩展。  在此方案中，应用程序的用户可能不是应用程序的所有者（例如，当你使用的是 Microsoft Graph 资源管理器）。  在这种情况下，应将 **owner** 属性设置为你拥有的应用程序的 **appId** ，否则你将无权创建架构扩展。 在请求中设置 **owner** 属性，以及 [schemaExtension](../resources/schemaextension.md) 对象中其他属性的 JSON 表示形式。
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_schemaextension_from_schemaextensions_3"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/schemaExtensions
+Content-type: application/json
+
+{
+    "id":"courses",
+    "description": "Graph Learn training courses extensions",
+    "targetTypes": [
+        "Group"
+    ],
+    "owner": "50897f70-a455-4adf-87bc-4cf17091d5ac",
+    "properties": [
+        {
+            "name": "courseId",
+            "type": "Integer"
+        },
+        {
+            "name": "courseName",
+            "type": "String"
+        },
+        {
+            "name": "courseType",
+            "type": "String"
+        }
+    ]
+}
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-schemaextension-from-schemaextensions-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-schemaextension-from-schemaextensions-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-schemaextension-from-schemaextensions-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-schemaextension-from-schemaextensions-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a>响应
+
+该响应包括 **owner** 设置为请求中提供的值。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.schemaExtension"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 420
+
+{
+    "id": "extk9eruy7c_courses",
+    "description": "Graph Learn training courses extensions",
+    "targetTypes": [
+        "Group"
+    ],
+    "status": "InDevelopment",
+    "owner": "50897f70-a455-4adf-87bc-4cf17091d5ac",
+    "properties": [
+        {
+            "name": "courseId",
+            "type": "String"
+        },
+        {
+            "name": "courseName",
+            "type": "String"
+        },
+        {
+            "name": "courseType",
+            "type": "String"
+        }
+    ]
+}
+```
 
 ## <a name="see-also"></a>另请参阅
 
@@ -268,3 +370,4 @@ Content-length: 420
   "suppressions": [
   ]
 }-->
+

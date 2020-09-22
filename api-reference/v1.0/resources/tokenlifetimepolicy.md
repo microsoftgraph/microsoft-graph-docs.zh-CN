@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 50313ac24a69e56e12e3254fbb7c44e84153b053
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: dddc15d56f580352168dceb6c0b954194c1dbf0d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916905"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090688"
 ---
 # <a name="tokenlifetimepolicy-resource-type"></a>tokenLifetimePolicy 资源类型
 
@@ -18,13 +18,13 @@ ms.locfileid: "43916905"
 
 
 
-表示一个策略，该策略可以控制 JWT 访问令牌的有效期、由 Azure Active Directory （Azure AD）颁发的 ID 令牌或 SAML 1.1/2.0 令牌。 您可以为组织中的所有应用、多租户（多组织）应用程序或组织中的特定服务主体设置令牌生存期。  有关更多方案的详细信息，请参阅[Azure Active Directory 中的可配置令牌生存期](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes)。
+表示一个策略，该策略可以控制 JWT 访问令牌的有效期、Azure Active Directory (Azure AD) 颁发的 ID 令牌或 SAML 1.1/2.0 令牌。 您可以为组织中的所有应用程序、多租户 (多组织) 应用程序或组织中的特定服务主体设置令牌生存期。  有关更多方案的详细信息，请参阅 [Azure Active Directory 中的可配置令牌生存期](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes)。
 
 >**注意：** 不支持为刷新令牌和会话令牌配置此策略。
 
-继承自[stsPolicy](stsPolicy.md)。
+继承自 [stsPolicy](stsPolicy.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -39,15 +39,15 @@ ms.locfileid: "43916905"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|字符串| 此策略的唯一标识符。 只读。|
-|定义|String 集合| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
+|id|String| 此策略的唯一标识符。 只读。|
+|定义|String collection| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
 |description|String| 此策略的说明。|
 |displayName|String| 此策略的显示名称。 必需。|
 |isOrganizationDefault|Boolean|如果设置为 true，则激活此策略。 对于同一策略类型，可以有多个策略，但只有一个策略可以作为组织默认激活。 可选，默认值为 false。|
 
 
 ### <a name="properties-of-a-token-lifetime-policy-definition"></a>令牌生存期策略定义的属性
-下面的属性构成了表示令牌生存期策略的 JSON 对象。 此 JSON 对象必须**转换为转义了引号的字符串**，以将其插入到**定义**属性中。 下面以 JSON 格式显示了一个示例：
+下面的属性构成了表示令牌生存期策略的 JSON 对象。 此 JSON 对象必须 **转换为转义了引号的字符串** ，以将其插入到 **定义** 属性中。 下面以 JSON 格式显示了一个示例：
 
 <!-- {
   "blockType": "ignored"
@@ -60,7 +60,7 @@ ms.locfileid: "43916905"
 
 >**注意：** 这些属性中的所有持续时间均以 "dd. hh： mm： ss" 的格式指定。
 
->**注意：**"天" 中表示的属性的最大值是表示的天数的1秒。 例如，"最大值为1天" 指定为 "23:59:59"。
+>**注意：** "天" 中表示的属性的最大值是表示的天数的1秒。 例如，"最大值为1天" 指定为 "23:59:59"。
 
 | 属性     | 类型   |说明| 最小值 | 最大值 | 默认值|
 |:---------------|:--------|:----------|:--------|:--------|:----|
@@ -71,7 +71,7 @@ ms.locfileid: "43916905"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|appliesTo|[directoryObject](directoryobject.md) 集合| 已将此策略应用于的[directoryObject](directoryObject.md)集合。 只读。|
+|appliesTo|[directoryObject](directoryobject.md) 集合| 已将此策略应用于的 [directoryObject](directoryObject.md) 集合。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -106,3 +106,4 @@ ms.locfileid: "43916905"
   "section": "documentation",
   "tocPath": ""
 }-->
+

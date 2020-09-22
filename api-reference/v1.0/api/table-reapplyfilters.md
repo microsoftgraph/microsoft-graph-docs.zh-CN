@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 735a0787d9c50e80ba9f8080e77e015c075f4005
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6af8dd5017d46f5fddc6d9648208bbfcb7be28ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509631"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092039"
 ---
 # <a name="table-reapplyfilters"></a>Table: reapplyFilters
 
@@ -98,3 +98,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

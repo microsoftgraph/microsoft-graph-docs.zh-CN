@@ -3,14 +3,14 @@ title: 创建 termsAndConditionsAssignment
 description: 创建新的 termsAndConditionsAssignment 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3dbc0da01e896c333e714b172b23b76cdb0baad1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d69fdcaf9ae63b03bab6e64bd0364d86f3dd5e88
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43401524"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089173"
 ---
 # <a name="create-termsandconditionsassignment"></a>创建 termsAndConditionsAssignment
 
@@ -91,6 +91,9 @@ Content-Length: 217
   }
 }
 ```
+
+
+
 
 
 

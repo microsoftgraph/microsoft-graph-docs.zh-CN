@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 检索 DriveItem 资源的 ThumbnailSet 资源集合。
 doc_type: apiPageType
-ms.openlocfilehash: 0431e228fd0f6c11eb2f4fa41208531330d06ca9
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 12a461764e48e0b17f2842bf6e725ed26edfa7f8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863388"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089229"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>列出 DriveItem 的缩略图
 
@@ -298,7 +298,7 @@ Content-type: application/json
 
 | 名称           | 分辨率  | 纵横比​​ | 说明                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
-| `small`        | 96 longest  | 原始大小     | 小型的高压缩缩略图，裁剪为正方形纵横比。 |
+| `small`        | 96 longest  | Original     | 小型的高压缩缩略图，裁剪为正方形纵横比。 |
 | `medium`       | 176 longest | Original     | 裁剪为 OneDrive Web 视图的标准项目大小。         |
 | `large`        | 800 longest
  | Original     | 最长边重设为 800 像素的缩略图。               |
@@ -403,3 +403,4 @@ SharePoint Server 2016 不支持缩略图。
   ],
   "tocPath": "Items/Thumbnails"
 } -->
+

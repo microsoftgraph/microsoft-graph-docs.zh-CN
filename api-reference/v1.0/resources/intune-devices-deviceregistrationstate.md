@@ -3,14 +3,14 @@ title: deviceRegistrationState 枚举类型
 description: 设备注册状态。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b1974d8124c834185617332096d6b44429c7900a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 678db76ca3218515306e847abf38c8dcac9d3b20
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472421"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091150"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>deviceRegistrationState 枚举类型
 
@@ -24,13 +24,15 @@ ms.locfileid: "43472421"
 |成员|值|说明|
 |:---|:---|:---|
 |notRegistered|0|设备未注册。|
-|注册|双面|设备已注册。|
+|注册|2 |设备已注册。|
 |吊销|第三章|设备已被阻止、已擦除或已停用。|
 |keyConflict|4 |设备有键冲突。|
 |approvalPending|5 |设备正在等待审批。|
 |certificateReset|6 |设备证书已重置。|
 |notRegisteredPendingEnrollment|7 |设备未注册且未完成注册。|
 |unknown|8 |设备注册状态未知。|
+
+
 
 
 

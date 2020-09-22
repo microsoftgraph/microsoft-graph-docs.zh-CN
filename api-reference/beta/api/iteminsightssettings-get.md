@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 62c1a0f2efda751153d42d985d196a69e35caee5
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 2fc3e7066ee53af6864400bb221b9494246ec7b5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509635"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090018"
 ---
 # <a name="get-iteminsightssettings"></a>获取 itemInsightsSettings
 
@@ -18,11 +18,11 @@ ms.locfileid: "46509635"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[itemInsightsSettings](../resources/iteminsightssettings.md)对象的属性。
+获取 [itemInsightsSettings](../resources/iteminsightssettings.md) 对象的属性。
 
-若要了解如何为你的组织自定义项目见解隐私，请参阅[自定义见解隐私](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0)。 
+若要了解如何为你的组织自定义项目见解隐私，请参阅 [自定义见解隐私](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0)。 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -53,9 +53,9 @@ GET /organization/{organizationId}/settings/itemInsights
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[itemInsightsSettings](../resources/iteminsightssettings.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [itemInsightsSettings](../resources/iteminsightssettings.md) 对象。
 
->**注意：** 此操作将验证指定的**itemInsightsSettings**资源的属性值的有效性。 如果设置了**disabledForGroup**属性，则此操作不检查是否存在相应的 Azure AD 组。 这意味着，如果您将**disabledForGroup**设置为不存在或随后删除的 Azure AD 组，则此操作将无法识别任何组成员身份并为任何特定用户禁用项目见解。 如果将**isEnabledInOrganization**设置为 `true` ，该操作将为组织中的所有用户启用见解。 
+>**注意：** 此操作将验证指定的 **itemInsightsSettings** 资源的属性值的有效性。 如果设置了 **disabledForGroup** 属性，则此操作不检查是否存在相应的 Azure AD 组。 这意味着，如果您将 **disabledForGroup** 设置为不存在或随后删除的 Azure AD 组，则此操作将无法识别任何组成员身份并为任何特定用户禁用项目见解。 如果将 **isEnabledInOrganization** 设置为 `true` ，该操作将为组织中的所有用户启用见解。 
 
 ## <a name="example"></a>示例
 
@@ -106,3 +106,5 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
+
+

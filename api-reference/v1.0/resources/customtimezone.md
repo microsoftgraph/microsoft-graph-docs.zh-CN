@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8e82524b107cb787905b87e564347148415724f8
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 0686f23738c65129008681126b8e75d41a81325d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812321"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091829"
 ---
 # <a name="customtimezone-resource-type"></a>customTimeZone 资源类型
 
@@ -60,3 +60,4 @@ ms.locfileid: "46812321"
   "section": "documentation",
   "tocPath": ""
 }-->
+

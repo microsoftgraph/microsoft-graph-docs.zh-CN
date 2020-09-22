@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: eb76d20ab03ca48413c3c1bf0dd1e94e7708b688
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: ccce89f6cb3e577eba526683f4d8eb25e68402cf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383481"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088431"
 ---
 # <a name="samlsinglesignonsettings-resource-type"></a>samlSingleSignOnSettings 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "44383481"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | Description |
+| 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |relayState|String| 单一登录流完成后，服务提供程序将重定向到的相对 URI。 |
 

@@ -3,14 +3,14 @@ title: managedEBook 资源类型
 description: 包含托管电子书基属性的抽象类。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a73da0f3f9fc6eb86f158ece8f9a8f8eecb663d9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9ee5bb486346e315ae00b0e54f44a9fd9b7613c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468665"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088669"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook 资源类型
 
@@ -30,8 +30,8 @@ ms.locfileid: "43468665"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
-|displayName|字符串|电子书的名称。|
+|id|String|实体的键。|
+|displayName|String|电子书的名称。|
 |description|String|说明。|
 |publisher|String|发布者。|
 |publishedDateTime|DateTimeOffset|电子书的发布日期和时间。|
@@ -76,6 +76,8 @@ ms.locfileid: "43468665"
   "privacyInformationUrl": "String"
 }
 ```
+
+
 
 
 

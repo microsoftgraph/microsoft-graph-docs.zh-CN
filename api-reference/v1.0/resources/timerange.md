@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 12cdae2407ea985b28afb658c7fd7517fdbb687c
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 64f018cb0c554ae36c9ec0b8ec0bfa655b7499f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154162"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090758"
 ---
 # <a name="timerange-resource-type"></a>timeRange 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "44154162"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |endTime|TimeOfDay|时间范围的结束时间。|
 |startTime|TimeOfDay|时间范围的开始时间。|

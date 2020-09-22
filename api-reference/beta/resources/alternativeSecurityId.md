@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: spunukol
-ms.openlocfilehash: 9aa6802dcf077ffd78ae29a73d45a4046d35cb71
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d08cf247961f4364486f2f9ba5d05508fd900688
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807547"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089803"
 ---
 # <a name="alternativesecurityid-resource-type"></a>alternativeSecurityId 资源类型
 
@@ -39,3 +39,5 @@ ms.locfileid: "46807547"
 | 类型             | Int32      | 仅供内部使用
 | identityProvider | string     | 仅供内部使用
 | 注册表项              | Edm.Binary | 仅供内部使用
+
+

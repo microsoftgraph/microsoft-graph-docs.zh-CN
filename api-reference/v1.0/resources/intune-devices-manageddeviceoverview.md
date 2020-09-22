@@ -3,14 +3,14 @@ title: managedDeviceOverview 资源类型
 description: 托管设备的摘要数据
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2d0eb038d8bbc6291c7007184cdbde4e97656099
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 686482077d201f952d73af46519650122d60e8b9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43406916"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091122"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>managedDeviceOverview 资源类型
 
@@ -73,6 +73,8 @@ ms.locfileid: "43406916"
   }
 }
 ```
+
+
 
 
 

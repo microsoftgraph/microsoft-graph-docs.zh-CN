@@ -6,12 +6,12 @@ title: Site
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: fc6a7472da2676d0266d964b7bdddee976d5ac8c
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 625017970be66b64ffa593e726b6aaf647fe05d6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44864222"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092284"
 ---
 # <a name="site-resource-type"></a>site 资源类型
 
@@ -168,3 +168,5 @@ ms.locfileid: "44864222"
   "suppressions": []
 }
 -->
+
+

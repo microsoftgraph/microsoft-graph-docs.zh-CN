@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: outlook
-ms.openlocfilehash: 3d232f130da7ef2e036f542ff40dd06af163a071
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c653f79888edc964cee2151aaa32d7d913053cb7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376767"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091962"
 ---
 # <a name="list-mailfolders"></a>列出 mailFolder
 
@@ -174,3 +174,4 @@ Content-length: 232
   "suppressions": [
   ]
 }-->
+

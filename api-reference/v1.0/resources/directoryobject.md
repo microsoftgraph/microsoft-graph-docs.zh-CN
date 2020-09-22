@@ -5,12 +5,12 @@ localization_priority: Priority
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: aa0134fdd39c339b2dbeb0a611850971b1a9d0ee
-ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
+ms.openlocfilehash: 3fafb936712c1416a228b281c5eb8a760db49f82
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47287447"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091787"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "47287447"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|id|String|对象的唯一标识符。 例如，12345678-9abc-def0-1234-56789abcde。 **id** 属性的值通常（但不总是）用 GUID 形式表示；将它视为不透明标识符，不要总将它当作 GUID。 键。 不可为 null。 只读。|
+|id|String|对象的全局唯一标识符。 例如，12345678-9abc-def0-1234-56789abcde。 **id** 属性的值通常（但不总是）用 GUID 表示；将它视为不透明标识符，不要总将它视为 GUID。 键。 不可为 null。 只读。|
 
 ## <a name="relationships"></a>关系
 
@@ -83,3 +83,4 @@ ms.locfileid: "47287447"
   "section": "documentation",
   "tocPath": ""
 }-->
+

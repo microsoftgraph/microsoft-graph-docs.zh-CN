@@ -3,14 +3,14 @@ title: managedEBookAssignment 资源类型
 description: 包含用于为组分配电子书的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 53787a5ae68d6e1646c7146522f3017e4e5be610
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3a201472e394a08cf351e7eedc58489f305dda3a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468658"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088641"
 ---
 # <a name="managedebookassignment-resource-type"></a>managedEBookAssignment 资源类型
 
@@ -57,6 +57,8 @@ ms.locfileid: "43468658"
   "installIntent": "String"
 }
 ```
+
+
 
 
 

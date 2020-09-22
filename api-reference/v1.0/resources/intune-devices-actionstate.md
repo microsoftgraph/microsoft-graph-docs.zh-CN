@@ -3,14 +3,14 @@ title: actionState 枚举类型
 description: 设备上操作的状态
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f38e2b1e99fb3d31064f1be63b1d9ae1618ee373
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d0544d0783109ca5f3616981c06ee330bfddea06
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451323"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091325"
 ---
 # <a name="actionstate-enum-type"></a>actionState 枚举类型
 
@@ -24,12 +24,14 @@ ms.locfileid: "43451323"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|操作状态无效|
-|决|1|操作挂起|
-|取消|双面|操作已被取消。|
+|决|1 |操作挂起|
+|取消|2 |操作已被取消。|
 |工作|第三章|操作处于活动状态。|
 |done|4 |操作已完成，无错误。|
 |未能|5 |操作失败|
 |notSupported|6 |操作不受支持。|
+
+
 
 
 

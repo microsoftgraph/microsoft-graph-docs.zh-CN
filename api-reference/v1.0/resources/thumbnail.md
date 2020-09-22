@@ -7,16 +7,16 @@ localization_priority: Normal
 description: 缩略图资源类型表示具有位图表示的图像、视频、文档 或任何项目的缩略图。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9db187516cd133ebeab0a352d56470e6b2e172c7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a7415a8d1c288ce65e87cb1a8653d2f7676222c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446826"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090870"
 ---
 # <a name="thumbnail-resource-type"></a>Thumbnail 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 **缩略图**资源类型表示具有位图表示的图像、视频、文档 或任何项目的缩略图。
 
@@ -63,3 +63,4 @@ ms.locfileid: "42446826"
   "section": "documentation",
   "tocPath": "Resources/Thumbnail"
 } -->
+

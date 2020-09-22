@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1b42582773bedf291765789c98fe1601d89c4659
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 826ed85f0efdedc8a13a75e2a92a4f4986de88d9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509645"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092081"
 ---
 # <a name="create-tablerow"></a>创建 TableRow
 
@@ -50,7 +50,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |index|number|可选。指定新行的相对位置。如果为空，将在末尾进行添加。插入的行下方的任何行将向下移动。从零开始编制索引。|
-|values|Json|表格行（布尔值或字符串或数字）的无格式值的二维数组。|
+|values|Json| (boolean 或 string 或 number) 的表格行的无格式值的二维数组。|
 
 ## <a name="response"></a>响应
 
@@ -122,3 +122,4 @@ Content-length: 45
   ],
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 81f1eb3f8abbdcf95b94407019807d0d002dc286
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: f72bac69169b25aae39a4bf196f6ab4ff57a2eb7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811824"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090709"
 ---
 # <a name="timezoneinformation-resource-type"></a>timeZoneInformation 资源类型
 
@@ -54,3 +54,4 @@ ms.locfileid: "46811824"
   "section": "documentation",
   "tocPath": ""
 }-->
+

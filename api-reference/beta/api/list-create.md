@@ -6,22 +6,22 @@ title: 创建 SharePoint 列表
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 880678b5c581af9c6d5e65282c1be547d1efdce3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5bdaefc4f3b45fc6dcfea8b5b7abedf78e44c610
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457165"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089985"
 ---
 # <a name="create-a-new-list"></a>创建新的列表
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在 [site][] 中的创建新的 [list][]。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -125,7 +125,7 @@ Content-type: application/json
 实际调用会返回默认属性。
 
 [list]: ../resources/list.md
-[网站]: ../resources/site.md
+[site]: ../resources/site.md
 
 <!--
 {
@@ -138,3 +138,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

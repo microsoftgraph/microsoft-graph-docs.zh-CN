@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 82b67b18be4c0c9ba63b86c2ddc5e0f670b20c26
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bd386d77dcd3122e1bcd243230062f47b17b5749
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446798"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090646"
 ---
 # <a name="toneinfo-resource-type"></a>toneInfo 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 单个 DTMF 事件。
 
@@ -23,7 +23,7 @@ ms.locfileid: "42446798"
 | 属性       | 类型    | 说明|
 |:---------------|:--------|:----------|
 | sequenceId | Int64 | 用于对 DTMF 事件进行排序的增量标识符。 |
-| 按键 | String | 可能的值为`tone0`： `tone1`、 `tone2`、 `tone3` `tone4` `tone5` `tone6` `tone7` `tone8`、 `tone9`、、、、、 `star`、、`pound` |
+| 按键 | String | 可能的值为： `tone0` 、 `tone1` 、、 `tone2` `tone3` `tone4` `tone5` `tone6` `tone7` `tone8` `tone9` 、 `star` 、、、、、、、 `pound` |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -55,3 +55,4 @@ ms.locfileid: "42446798"
   "suppressions": []
 }
 -->
+

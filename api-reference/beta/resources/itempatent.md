@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 4b8a5c72117e20a73fb3c3b6b8a2af308219b69d
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 7e6732a53f841902422348f90dada22174813b39
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809636"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089288"
 ---
 # <a name="itempatent-resource-type"></a>itemPatent 资源类型
  
@@ -32,19 +32,19 @@ ms.locfileid: "46809636"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|allowedAudiences|字符串|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
 |createdBy|[identitySet](../resources/identityset.md)|提供创建实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |createdDateTime|DateTimeOffset|为创建实体时提供 dateTimeOffset。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|description|String|专利或档案的 Descpription。 |
-|displayName|String|专利或档案的标题。 |
-|id|String|用于单独寻址实体的标识符。 继承自 [entity](../resources/entity.md)|
+|说明|字符串|专利或档案的 Descpription。 |
+|displayName|字符串|专利或档案的标题。 |
+|id|字符串|用于单独寻址实体的标识符。 继承自 [entity](../resources/entity.md)|
 |推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|isPending        |布尔值     |指示专利处于待处理状态。        |
+|isPending        |布尔     |指示专利处于待处理状态。        |
 |issuedDate       |日期        |授予专利的日期。   |
-|issuingAuthority |String      |授予专利的证书颁发机构。     |
+|issuingAuthority |字符串      |授予专利的证书颁发机构。     |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|提供上次修改实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |lastModifiedDateTime|DateTimeOffset|为创建实体时提供 dateTimeOffset。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|数字           |String      |专利号码。                      |
+|数字           |字符串      |专利号码。                      |
 |source|[personDataSource](../resources/persondatasource.md)|值的来源，如果从另一个服务同步。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |webUrl           |String      |引用专利或档案的 URL。 |
 
@@ -90,3 +90,5 @@ ms.locfileid: "46809636"
   "webUrl": "String"
 }
 ```
+
+

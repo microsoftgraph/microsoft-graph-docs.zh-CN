@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 09575b8d6b56f6cc532e7393f14c46dfaa45ecf2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 379ab6406c67cb7b58558e143f32e9a2bcda08b3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518327"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089208"
 ---
 # <a name="get-charttitle"></a>获取 ChartTitle
 
@@ -45,7 +45,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/title
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[WorkbookChartTitle](../resources/charttitle.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [WorkbookChartTitle](../resources/charttitle.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -106,3 +106,4 @@ Content-length: 64
   "suppressions": [
   ]
 }-->
+

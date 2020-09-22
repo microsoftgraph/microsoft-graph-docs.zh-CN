@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 403b97dc335e57dfd2d4f2fe2aa75c4f6fd07682
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 8bf839d68db3f54df5a27601a4a05463e013fbef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319517"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089859"
 ---
 # <a name="accesspackageassignmentresourcerole-resource-type"></a>accessPackageAssignmentResourceRole 资源类型
 
@@ -31,18 +31,18 @@ ms.locfileid: "47319517"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|String| 只读。|
-|originId|String|相对于原始系统的唯一标识符，对应于 [accessPackageResourceRole](accesspackageresourcerole.md)的 originId 属性。 |
-|originSystem|String|要在其中创建角色分配或为访问包分配创建的系统（如或），该系统 `SharePointOnline` `AadGroup` `AadApplication` 对应于 [accessPackageResourceRole](accesspackageresourcerole.md)的 originSystem 属性。|
-|状态|String|值是 `PendingFulfillment` 访问包分配尚未传递到原始系统，以及 `Fulfilled` 访问包分配已传递到原始系统。。|
+|id|字符串| 只读。|
+|originId|字符串|相对于原始系统的唯一标识符，对应于 [accessPackageResourceRole](accesspackageresourcerole.md)的 originId 属性。 |
+|originSystem|字符串|要在其中创建角色分配或为访问包分配创建的系统（如或），该系统 `SharePointOnline` `AadGroup` `AadApplication` 对应于 [accessPackageResourceRole](accesspackageresourcerole.md)的 originSystem 属性。|
+|状态|字符串|值是 `PendingFulfillment` 访问包分配尚未传递到原始系统，以及 `Fulfilled` 访问包分配已传递到原始系统。。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|accessPackageAssignments|[accessPackageAssignment](accesspackageassignment.md) 集合| 此角色分配导致的访问包分配。 只读。 可为 Null。|
-|accessPackageResourceRole|[accessPackageResourceRole](accesspackageresourcerole.md)| 只读。 可为 Null。|
-|accessPackageResourceScope|[accessPackageResourceScope](accesspackageresourcescope.md)| 只读。 可为 Null。|
+|accessPackageAssignments|[accessPackageAssignment](accesspackageassignment.md) 集合| 此角色分配导致的访问包分配。 只读。 可为 NULL。|
+|accessPackageResourceRole|[accessPackageResourceRole](accesspackageresourcerole.md)| 只读。 可为 NULL。|
+|accessPackageResourceScope|[accessPackageResourceScope](accesspackageresourcescope.md)| 只读。 可为 NULL。|
 |accessPackageSubject|[accessPackageSubject](accesspackagesubject.md)| 只读。可为空。|
 
 
@@ -78,3 +78,5 @@ ms.locfileid: "47319517"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

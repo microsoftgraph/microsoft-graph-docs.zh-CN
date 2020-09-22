@@ -3,14 +3,14 @@ title: managedDevice 资源类型
 description: 通过 Intune 托管或预注册的设备
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cc519337284ac35d344876288826cf29a735da38
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 75a968f6f0539c3f1c136c2e1127fae39d9f58c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407003"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091143"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice 资源类型
 
@@ -50,7 +50,7 @@ ms.locfileid: "43407003"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备唯一标识符|
+|id|String|设备唯一标识符|
 |userId|String|与设备关联的用户的唯一标识符|
 |deviceName|String|设备的名称|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|设备的所有权。 可以是 "公司" 或 "个人"。 可取值为：`unknown`、`company`、`personal`。|
@@ -84,7 +84,7 @@ ms.locfileid: "43407003"
 |manufacturer|String|设备的制造商|
 |imei|String|IMEI|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期的到期日期/时间|
-|serialNumber|字符串|序列号|
+|serialNumber|String|序列号|
 |phoneNumber|String|设备的电话号码|
 |androidSecurityPatchLevel|String|Android 安全修补程序级别|
 |userDisplayName|String|用户显示名称|
@@ -213,6 +213,8 @@ ms.locfileid: "43407003"
   "partnerReportedThreatState": "String"
 }
 ```
+
+
 
 
 

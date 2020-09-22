@@ -5,12 +5,12 @@ localization_priority: Priority
 author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: fa996a24758dd0fa0a70d97599fe50813d26aaa8
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: cfb622200b5437390c6617c8bd599409fa90925f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673684"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091871"
 ---
 # <a name="activity-reports-api-overview"></a>活动报告 API 概述
 
@@ -74,3 +74,4 @@ Operation | URL
   ]
 }
 -->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: JeremyKelley
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0629eaabd282f03184be28ade67c2d17d5598602
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 54b66af210f6360938be1df964f14a089d8168fb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808142"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090744"
 ---
 # <a name="timestamp-resource-type"></a>时间戳资源类型
 
@@ -54,3 +54,4 @@ ms.locfileid: "46808142"
   "section": "documentation",
   "tocPath": ""
 }-->
+
