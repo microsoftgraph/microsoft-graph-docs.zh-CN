@@ -3,24 +3,24 @@ title: 获取 deviceAndAppManagementAssignmentFilter
 description: 读取 deviceAndAppManagementAssignmentFilter 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ef4d24ff9c6cf8a49e1647d2268a73eb76aa274
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 95e978e6cfd542bd28b7f6a41f72c7c194dc0c63
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791740"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999893"
 ---
 # <a name="get-deviceandappmanagementassignmentfilter"></a>获取 deviceAndAppManagementAssignmentFilter
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取[deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)对象的属性和关系。
+读取 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,7 +53,7 @@ GET /deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilterI
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -86,6 +86,9 @@ Content-Length: 487
   }
 }
 ```
+
+
+
 
 
 

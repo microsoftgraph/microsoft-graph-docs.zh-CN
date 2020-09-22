@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: be8c24c1c34dca1803bd1c527e043a5c52ac5e10
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: cfd8c7f020138a16f02312841b2a82809642b20b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566672"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001611"
 ---
 # <a name="update-identityprovider"></a>更新 identityProvider
 
@@ -18,7 +18,7 @@ ms.locfileid: "46566672"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[identityprovider.read.all](../resources/identityprovider.md)对象的属性。
+更新 [identityprovider.read.all](../resources/identityprovider.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -51,7 +51,7 @@ PATCH /identityProviders/{id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供一个 JSON 对象，该对象具有一个或多个属性，只需为 Azure AD B2C) 对象更新[identityprovider.read.all](../resources/identityprovider.md)或[openIdConnectProvider](../resources/openidconnectprovider.md) (的属性。
+在请求正文中，提供一个 JSON 对象，该对象具有一个或多个属性，只需为 Azure AD B2C) 对象更新 [identityprovider.read.all](../resources/identityprovider.md) 或 [openIdConnectProvider](../resources/openidconnectprovider.md) (的属性。
 
 ### <a name="identityprovider-object"></a>Identityprovider.read.all 对象
 
@@ -71,10 +71,10 @@ PATCH /identityProviders/{id}
 |name|字符串|标识提供程序的显示名称。|
 |type|字符串|标识提供程序类型。 值必须为 `OpenIdConnect` 。|
 |claimsMapping|[claimsMapping](../resources/claimsmapping.md)|在 OIDC 提供程序将 ID 令牌发送回 Azure AD 之后，Azure AD 需要能够将声明从收到的令牌映射到 Azure AD 可识别和使用的声明。 此复杂类型将捕获该映射。|
-|domainHint|字符串|可以使用域提示直接跳到指定标识提供程序的登录页，而不是让用户在可用标识提供程序列表中进行选择。|
-|metadataUrl|字符串|开放 Id 的元数据文档的 URL 连接标识提供程序。|
-|responseMode|字符串|定义应用于将数据从自定义标识提供程序发送回 Azure AD B2C 的方法。 可以使用以下响应模式： <ul><li/>`form_post`：建议使用此响应模式以获得最佳安全性。 响应通过 HTTP POST 方法传输，其中的代码或令牌使用应用程序/x www 格式 urlencoded 格式在正文中进行编码。<li/>`query`：代码或令牌作为查询参数返回。</ul>|
-|responseType|字符串|描述在对自定义标识提供程序的 authorization_endpoint 的初始调用中发送回的信息类型。 可以使用以下响应类型：<ul><li/> `code`：按照授权代码流，代码将返回到 Azure AD B2C。 Azure AD B2C 将继续调用 token_endpoint 以交换令牌的代码。<li/> `id_token`：从自定义标识提供程序向 Azure AD B2C 返回 ID 令牌。 <li/>`token`：从自定义标识提供程序向 Azure AD B2C 返回访问令牌。 目前，Azure AD B2C 不支持此值 () </ul>|
+|domainHint|String|可以使用域提示直接跳到指定标识提供程序的登录页，而不是让用户在可用标识提供程序列表中进行选择。|
+|metadataUrl|String|开放 Id 的元数据文档的 URL 连接标识提供程序。|
+|responseMode|String|定义应用于将数据从自定义标识提供程序发送回 Azure AD B2C 的方法。 可以使用以下响应模式： <ul><li/>`form_post` ：建议使用此响应模式以获得最佳安全性。 响应通过 HTTP POST 方法传输，其中的代码或令牌使用应用程序/x www 格式 urlencoded 格式在正文中进行编码。<li/>`query` ：代码或令牌作为查询参数返回。</ul>|
+|responseType|String|描述在对自定义标识提供程序的 authorization_endpoint 的初始调用中发送回的信息类型。 可以使用以下响应类型：<ul><li/> `code` ：按照授权代码流，代码将返回到 Azure AD B2C。 Azure AD B2C 将继续调用 token_endpoint 以交换令牌的代码。<li/> `id_token` ：从自定义标识提供程序向 Azure AD B2C 返回 ID 令牌。 <li/>`token` ：从自定义标识提供程序向 Azure AD B2C 返回访问令牌。 目前，Azure AD B2C 不支持此值 () </ul>|
 |scope|String|作用域定义要从自定义标识提供程序中收集的信息和权限。|
 
 ## <a name="response"></a>响应
@@ -83,7 +83,7 @@ PATCH /identityProviders/{id}
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-update-a-specific-identityprovider"></a>示例1：更新特定的**identityprovider.read.all**
+### <a name="example-1-update-a-specific-identityprovider"></a>示例1：更新特定的 **identityprovider.read.all**
 
 #### <a name="request"></a>请求
 
@@ -123,7 +123,7 @@ Content-length: 41
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 <!-- {
   "blockType": "response",
@@ -133,7 +133,7 @@ Content-length: 41
 ```http
 HTTP/1.1 204 No Content
 ```
-### <a name="example-2-update-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>示例2：仅为 Azure AD B2C) 更新特定的**openIDConnectProvider** (
+### <a name="example-2-update-a-specific-openidconnectprovider-only-for-azure-ad-b2c"></a>示例2：仅为 Azure AD B2C) 更新特定的 **openIDConnectProvider** (
 
 #### <a name="request"></a>请求
 
@@ -183,3 +183,5 @@ Content-length: 41
 ```http
 HTTP/1.1 204 No Content
 ```
+
+

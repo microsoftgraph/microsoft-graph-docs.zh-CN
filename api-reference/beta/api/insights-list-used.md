@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 239a479bb8540ebfe7f6ffabf270d0c41ebc5b12
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: aa18bac40b4fe7cc7b509e2948c3134ccaa77386
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427121"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001433"
 ---
 # <a name="list-used"></a>使用的列表
 
@@ -21,8 +21,8 @@ ms.locfileid: "45427121"
 计算并列出用户已查看或修改的文档。 
 
 对于登录用户：
-- 此方法包括用户已修改的文档;请参阅[示例 1](#example-1-return-documents-that-user-has-modified)。 
-- 使用 `$orderby` **lastAccessedDateTime**属性上的查询参数将返回用户可能已修改或可能尚未修改的最近查看过的文档; 请参阅[示例 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified)。
+- 此方法包括用户已修改的文档;请参阅 [示例 1](#example-1-return-documents-that-user-has-modified)。 
+- 使用 `$orderby` **lastAccessedDateTime** 属性上的查询参数将返回用户可能已修改或可能尚未修改的最近查看过的文档; 请参阅 [示例 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified)。
 
 对于其他用户，此方法仅包括用户已修改的文档。
 
@@ -51,10 +51,10 @@ ms.locfileid: "45427121"
   ```http
   GET /users/{id | userPrincipalName}/insights/used
   ```
-  >**注意**：请求其他用户的已**使用**文档返回按**lastModifiedDateTime**排序的结果。 然后，将**lastAccessedDateTime**设置为**lastModifiedDateTime**。
+  >**注意**：请求其他用户的已 **使用** 文档返回按 **lastModifiedDateTime**排序的结果。 然后，将**lastAccessedDateTime**设置为**lastModifiedDateTime**。
 
 
-- 扩展**使用**的洞察力引用的资源：
+- 扩展 **使用** 的洞察力引用的资源：
   <!-- { "blockType": "ignored" } -->
   
   ```http
@@ -64,24 +64,24 @@ ms.locfileid: "45427121"
 
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持[OData 查询参数](/graph/query-parameters)来帮助自定义响应：
+此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应：
 
-- 使用 `$filter` 查询参数筛选已使用的项目。 例如，基于**类型**：
+- 使用 `$filter` 查询参数筛选已使用的项目。 例如，基于 **类型**：
 
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-- 使用 `$filter` 基于**containerType**筛选已使用的项目：
+- 使用 `$filter` 基于  **containerType**筛选已使用的项目：
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
-  请参阅可在[resourceVisualization](../resources/insights-resourcevisualization.md)中筛选的可用容器类型和类型。
+  请参阅可在 [resourceVisualization](../resources/insights-resourcevisualization.md)中筛选的可用容器类型和类型。
 
-- 使用 `$orderBy` 查询参数对_已登录用户_上次查看或修改的文档进行排序，基于**lastAccessedDateTime**属性：
+- 使用 `$orderBy` 查询参数对 _已登录用户_上次查看或修改的文档进行排序，基于 **lastAccessedDateTime** 属性：
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc`
 
-  >**注意**：_仅对已登录用户_使用此查询选项。 您不能使用此 API 获取其他用户查看或修改的文档。 请参阅[示例 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified)。
+  >**注意**： _仅对已登录用户_使用此查询选项。 您不能使用此 API 获取其他用户查看或修改的文档。 请参阅 [示例 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified)。
 
 
 ## <a name="request-headers"></a>请求标头
@@ -95,7 +95,7 @@ ms.locfileid: "45427121"
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在 `200 OK` 响应正文中返回响应代码和已[使用](../resources/insights-used.md)项的列表。
+如果成功，此方法在 `200 OK` 响应正文中返回响应代码和已 [使用](../resources/insights-used.md) 项的列表。
 
 如果已禁用目标用户的项目见解，则此方法将返回， `403 Forbidden` 并出现以下错误：
 <!-- { "blockType": "ignored" } -->
@@ -112,7 +112,7 @@ ms.locfileid: "45427121"
   }
 }
 ```
-有关更多详细信息，请参阅[自定义 insights 隐私](/graph/insights-customize-item-insights-privacy.md)。 
+有关详细信息，请参阅[自定义见解隐私](/graph/insights-customize-item-insights-privacy.md)。 
 
 ## <a name="example"></a>示例
 
@@ -336,3 +336,5 @@ Content-type: application/json
     ]
 }
 ```
+
+

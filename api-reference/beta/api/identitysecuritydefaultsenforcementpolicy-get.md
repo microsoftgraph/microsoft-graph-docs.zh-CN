@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rohinigoyal1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9038d009465f685ae6722ce3785499ad21aaf070
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: ce5eb0ab5232540127762bbbc94002273eae0416
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384337"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001580"
 ---
 # <a name="get-identitysecuritydefaultsenforcementpolicy"></a>获取 identitySecurityDefaultsEnforcementPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "45384337"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md)对象的属性。
+检索 [identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -54,7 +54,7 @@ GET /policies/identitySecurityDefaultsEnforcementPolicy
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -120,3 +120,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

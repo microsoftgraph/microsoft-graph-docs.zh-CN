@@ -5,23 +5,23 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6836684144cd020e1d1d164f1d14a2b166dce067
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6ac5cd943f249e52f488819cd86b40854458ae6d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446343"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001465"
 ---
 # <a name="informationprotectionlabel-extractlabel"></a>informationProtectionLabel: extractLabel
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用已标记的信息中存在的元数据，将元数据解析为特定的敏感度标签。 将[contentInfo](../resources/contentinfo.md)输入解析为[informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md)。
+使用已标记的信息中存在的元数据，将元数据解析为特定的敏感度标签。 将 [contentInfo](../resources/contentinfo.md) 输入解析为 [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md)。
 
 >[!NOTE]
->**[InformationProtectionContentLabel](../resources/informationprotectioncontentlabel.md)** 资源表示已应用于一条信息的敏感度标签。 [informationProtectionLabel](../resources/informationprotectionlabel.md)对象是组织标记策略的一部分的抽象标签，可应用于信息。
+>**[InformationProtectionContentLabel](../resources/informationprotectioncontentlabel.md)** 资源表示已应用于一条信息的敏感度标签。 [informationProtectionLabel](../resources/informationprotectionlabel.md) 对象是组织标记策略的一部分的抽象标签，可应用于信息。
 
 ## <a name="permissions"></a>权限
 
@@ -29,9 +29,9 @@ ms.locfileid: "42446343"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :------------------------------------------ |
-| 委派（工作或学校帐户）     | InformationProtectionPolicy。请阅读            |
+| 委派（工作或学校帐户）     | InformationProtectionPolicy.Read            |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用程序                            | InformationProtectionPolicy        |
+| 应用程序                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,7 +46,7 @@ POST /informationprotection/policy/labels/extractLabel
 | 名称          | 说明                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorization | Bearer {token}。必需。                                                                                                                                                         |
-| Content-type  | Content-type： application/json。 必填。                                                                                                                                         |
+| Content-type  | Content-type： application/json。 必需。                                                                                                                                         |
 | 用户代理    | 描述调用应用程序的名称和版本。 详细信息将在 Azure 信息保护分析中显现。 建议的格式为 "ApplicationName/版本"。 可选。 |
 
 ## <a name="request-body"></a>请求正文
@@ -55,11 +55,11 @@ POST /informationprotection/policy/labels/extractLabel
 
 | 参数   | 类型                                       | 说明                                                                                                                         |
 | :---------- | :----------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
-| contentInfo | [contentInfo](../resources/contentinfo.md) | 提供有关内容格式、内容状态和现有[元数据](../resources/keyvaluepair.md)的详细信息，作为键/值对。 |
+| contentInfo | [contentInfo](../resources/contentinfo.md) | 提供有关内容格式、内容状态和现有 [元数据](../resources/keyvaluepair.md) 的详细信息，作为键/值对。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和新的[informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -185,3 +185,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

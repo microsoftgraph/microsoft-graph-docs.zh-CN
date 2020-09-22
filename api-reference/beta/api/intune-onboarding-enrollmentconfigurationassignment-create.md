@@ -3,20 +3,20 @@ title: 创建 enrollmentConfigurationAssignment
 description: 创建新的 enrollmentConfigurationAssignment 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0dca3b38d73dc8f3d2906630fdd4069d66c8e192
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 1f37ecd9ae837c0e2c6adb42d4f145fc22dcbbc5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791796"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000026"
 ---
 # <a name="create-enrollmentconfigurationassignment"></a>创建 enrollmentConfigurationAssignment
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -103,6 +103,9 @@ Content-Length: 438
   "sourceId": "Source Id value"
 }
 ```
+
+
+
 
 
 

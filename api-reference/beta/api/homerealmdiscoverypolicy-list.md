@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hpsin
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 04d7d427da71a22aaf818249dee5035cc6f2655d
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 9db2a313c24cefbfbb44d4d3e27efacf70210781
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916513"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001755"
 ---
 # <a name="list-homerealmdiscoverypolicies"></a>列出 homeRealmDiscoveryPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "43916513"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md)对象的列表。
+获取 [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) 对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ GET policies/homeRealmDiscoveryPolicies
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-`$expand`此方法支持`$filter`、 `$select`和`$top` OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。 使用`$expand`时，请确保您的应用程序请求读取扩展的对象的权限。
+此方法支持 `$expand` 、 `$filter` `$select` 和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用时 `$expand` ，请确保您的应用程序请求读取扩展的对象的权限。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET policies/homeRealmDiscoveryPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -126,3 +126,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

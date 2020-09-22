@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a263e13ccf1729c6c7c6244b04e699587a9d0730
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b772383edc0e4187cec9bbb30aeb14158fc198a9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447519"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999683"
 ---
 # <a name="geteffectivedeviceenrollmentconfigurations-function"></a>getEffectiveDeviceEnrollmentConfigurations 函数
 
@@ -56,7 +56,7 @@ GET /users/{usersId}/getEffectiveDeviceEnrollmentConfigurations
 
 ## <a name="response"></a>响应
 
-如果成功，此函数会在`200 OK`响应正文中返回响应代码和[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)集合。
+如果成功，此函数会 `200 OK` 在响应正文中返回响应代码和 [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) 集合。
 
 ## <a name="example"></a>示例
 
@@ -92,6 +92,9 @@ Content-Length: 422
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1b384f63f0b0fb885c6a479ca0861c2802e11ded
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 823dbabbe2936cc7c75af4a480610c7c5d71085c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811789"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999348"
 ---
 # <a name="update-itemphonenumber"></a>更新 itemphonenumber
 
@@ -137,3 +137,5 @@ Content-Type: application/json
   "number": "+7 499 342 22 13"
 }
 ```
+
+

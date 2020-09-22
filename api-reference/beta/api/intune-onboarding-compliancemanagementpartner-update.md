@@ -3,24 +3,24 @@ title: 更新 complianceManagementPartner
 description: 更新 complianceManagementPartner 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 349932132867d00708a400e82465c664db551f97
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: f3cec83fb4625dd9f4b0b26c23cb41207db7d25b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791831"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000236"
 ---
 # <a name="update-compliancemanagementpartner"></a>更新 complianceManagementPartner
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)对象的属性。
+更新 [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,9 +47,9 @@ PATCH /deviceManagement/complianceManagementPartners/{complianceManagementPartne
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)对象的 JSON 表示形式。
+在请求正文中，提供 [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) 对象的 JSON 表示形式。
 
-下表显示创建[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)时所需的属性。
+下表显示创建 [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -57,19 +57,19 @@ PATCH /deviceManagement/complianceManagementPartners/{complianceManagementPartne
 |lastHeartbeatDateTime|DateTimeOffset|Admin 载入到合规性管理合作伙伴之后的最后一次检测信号的时间戳|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|此租户的合作伙伴状态。 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
 |displayName|String|合作伙伴显示名称|
-|macOsOnboarded|布尔值|适用于 Mac 设备的合作伙伴载入。|
-|windowsOnboarded|布尔值|适用于 Windows 设备的合作伙伴载入。|
-|androidOnboarded|布尔值|适用于 Android 设备的合作伙伴载入。|
-|iosOnboarded|布尔值|适用于 ios 设备的合作伙伴载入。|
-|macOsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)集合|通过合作伙伴注册 Mac 设备的用户组。|
-|windowsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)集合|通过合作伙伴注册 Windows 设备的用户组。|
-|androidEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)集合|通过合作伙伴注册 Android 设备的用户组。|
-|iosEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)集合|通过合作伙伴注册 ios 设备的用户组。|
+|macOsOnboarded|Boolean|适用于 Mac 设备的合作伙伴载入。|
+|windowsOnboarded|Boolean|适用于 Windows 设备的合作伙伴载入。|
+|androidOnboarded|Boolean|适用于 Android 设备的合作伙伴载入。|
+|iosOnboarded|Boolean|适用于 ios 设备的合作伙伴载入。|
+|macOsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册 Mac 设备的用户组。|
+|windowsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册 Windows 设备的用户组。|
+|androidEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册 Android 设备的用户组。|
+|iosEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册 ios 设备的用户组。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -191,6 +191,9 @@ Content-Length: 1993
   ]
 }
 ```
+
+
+
 
 
 

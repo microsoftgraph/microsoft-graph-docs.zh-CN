@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 86eb1de0d222bc9b535df843e3a30dbd248505a1
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 13c6a69643b3e96fa56e7218f936fe7029d3f558
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319556"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001622"
 ---
 # <a name="list-identityproviders"></a>列出 identityProvider
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/identityProviders
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -139,3 +139,5 @@ Content-type: application/json
     ]
 }
 ```
+
+

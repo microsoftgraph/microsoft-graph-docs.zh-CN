@@ -3,14 +3,14 @@ title: 更新 managedDeviceEncryptionState
 description: 更新 managedDeviceEncryptionState 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 502651be5b7b0981b00f7e12968b0f55d7dd56ea
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: b3e2916a53a06ba54c38d6637ac4d1db1c84843d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790887"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000866"
 ---
 # <a name="update-manageddeviceencryptionstate"></a>更新 managedDeviceEncryptionState
 
@@ -55,7 +55,7 @@ PATCH /deviceManagement/managedDeviceEncryptionStates/{managedDeviceEncryptionSt
 |:---|:---|:---|
 |id|String|实体的键。|
 |userPrincipalName|String|用户名|
-|deviceType|[deviceTypes](../resources/intune-shared-devicetype.md)|设备的平台。 可能的值为：、、、、、、、、、、、、、、、、、、、、、 `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `blackberry` `palm` `unknown` 。|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|设备的平台。 可能的值为：、、、、、、、、、、、、、、、、、、、、、 `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `blackberry` `palm` `unknown` 。|
 |osVersion|String|设备的操作系统版本|
 |tpmSpecificationVersion|String|设备 TPM 版本|
 |deviceName|String|设备名称|
@@ -131,6 +131,9 @@ Content-Length: 753
   ]
 }
 ```
+
+
+
 
 
 

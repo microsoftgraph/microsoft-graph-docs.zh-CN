@@ -3,14 +3,14 @@ title: 删除 vulnerableManagedDevice
 description: 删除 vulnerableManagedDevice。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a905f567bd180ea2379cf2edb9fd45ad1456f02
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 7a3429fc348431d4ed102dea488202dec4e074e5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793256"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999977"
 ---
 # <a name="delete-vulnerablemanageddevice"></a>删除 vulnerableManagedDevice
 
@@ -65,6 +65,9 @@ DELETE https://graph.microsoft.com/beta** Entity URI for microsoft.management.se
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

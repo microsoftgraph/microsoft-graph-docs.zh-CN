@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a03b792e63b59ca77cd9a7fe44cc966ff6fdf4f1
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: aa3e9e08733e76f170940c5004680a4e37443655
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811803"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999312"
 ---
 # <a name="delete-languageproficiency"></a>删除 languageProficiency
 
@@ -95,3 +95,5 @@ DELETE https://graph.microsoft.com/beta/me/profile/languages/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+
+

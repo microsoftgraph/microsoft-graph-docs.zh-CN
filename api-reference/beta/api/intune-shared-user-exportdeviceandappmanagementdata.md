@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e482edf33be72a2b01304b0c189ef6189428916a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d53c84e7e127739222086848d61eb032d38d0b15
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447541"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999732"
 ---
 # <a name="exportdeviceandappmanagementdata-function"></a>exportDeviceAndAppManagementData 函数
 
@@ -62,7 +62,7 @@ GET /users/{usersId}/exportDeviceAndAppManagementData
 
 ## <a name="response"></a>响应
 
-如果成功，此函数会在`200 OK`响应正文中返回响应代码和[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md) 。
+如果成功，此函数会 `200 OK` 在响应正文中返回响应代码和 [deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md) 。
 
 ## <a name="example"></a>示例
 
@@ -90,6 +90,9 @@ Content-Length: 143
   }
 }
 ```
+
+
+
 
 
 

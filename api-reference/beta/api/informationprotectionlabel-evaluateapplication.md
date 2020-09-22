@@ -5,22 +5,22 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 30de1d25a8a407feb5fe4fbf2cf6c71d72e289ba
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b14ea3417fefa4c38f86313e27b55619446331bf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446371"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001510"
 ---
 # <a name="informationprotectionlabel-evaluateapplication"></a>informationProtectionLabel: evaluateApplication
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-计算应应用的[信息保护标签](../resources/informationprotectionlabel.md)，并返回正确标记信息所需采取的一组操作。 如果标签应手动设置或由用户或服务显式设置，而不是基于文件内容自动设置，则此 API 非常有用。 
+计算应应用的 [信息保护标签](../resources/informationprotectionlabel.md) ，并返回正确标记信息所需采取的一组操作。 如果标签应手动设置或由用户或服务显式设置，而不是基于文件内容自动设置，则此 API 非常有用。 
 
-给定[contentInfo](../resources/contentInfo.md)（包括现有内容元数据[密钥/值对](../resources/keyvaluepair.md)）和[labelingOptions](../resources/labelingoptions.md)作为输入，API 将返回一个[informationProtectionAction](../resources/informationprotectionaction.md)对象，其中包含以下一个或多个内容： 
+给定 [contentInfo](../resources/contentInfo.md)（包括现有内容元数据 [密钥/值对](../resources/keyvaluepair.md)）和 [labelingOptions](../resources/labelingoptions.md) 作为输入，API 将返回一个 [informationProtectionAction](../resources/informationprotectionaction.md) 对象，其中包含以下一个或多个内容： 
 
 * [addContentFooterAction](../resources/addcontentfooteraction.md)
 * [addContentHeaderAction](../resources/addcontentheaderaction.md)
@@ -44,9 +44,9 @@ ms.locfileid: "42446371"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :------------------------------------------ |
-| 委派（工作或学校帐户）     | InformationProtectionPolicy。请阅读            |
+| 委派（工作或学校帐户）     | InformationProtectionPolicy.Read            |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用程序                            | InformationProtectionPolicy        |
+| 应用程序                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -71,12 +71,12 @@ POST /users/{id}/informationProtection/policy/labels/evaluateApplication
 
 | 参数       | 类型                                               | 说明                                                                                                                      |
 | :-------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| contentInfo     | [contentInfo](../resources/contentinfo.md)         | 提供有关内容格式、内容状态和现有[元数据](../resources/keyvaluepair.md)的详细信息，作为键/值对。 |
+| contentInfo     | [contentInfo](../resources/contentinfo.md)         | 提供有关内容格式、内容状态和现有 [元数据](../resources/keyvaluepair.md) 的详细信息，作为键/值对。 |
 | labelingOptions | [labelingOptions](../resources/labelingoptions.md) | 提供有关内容的所需状态的详细信息。                                                                         |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和新的[informationProtectionAction](../resources/informationprotectionaction.md)集合对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [informationProtectionAction](../resources/informationprotectionaction.md) 集合对象。
 
 ## <a name="examples"></a>示例
 
@@ -250,3 +250,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

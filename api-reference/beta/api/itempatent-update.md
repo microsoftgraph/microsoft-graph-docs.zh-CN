@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 29181e23833bb60d8722d3f82aaec44eafd5ad35
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b480f7ba45b0b3ea6cea7625af373650ac279414
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809619"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999410"
 ---
 # <a name="update-itempatent"></a>更新 itemPatent
 
@@ -55,7 +55,7 @@ PATCH /users/{id | userPrincipalName}/profile/patents/{id}
 |description|String|专利或档案的 Descpription。 |
 |displayName|String|专利或档案的标题。 |
 |推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|isPending        |布尔值     |指示专利处于待处理状态。        |
+|isPending        |Boolean     |指示专利处于待处理状态。        |
 |issuedDate       |日期        |授予专利的日期。   |
 |issuingAuthority |String      |授予专利的证书颁发机构。     |
 |数字           |String      |专利号码。                      |
@@ -143,3 +143,5 @@ Content-Type: application/json
   "webUrl": "https://patents.gov/3954432633"
 }
 ```
+
+

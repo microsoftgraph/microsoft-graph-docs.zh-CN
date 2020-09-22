@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 0c7550f1b8e97fbc1a5efcc5d7e712f2550131a8
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: f66130b9c898865926acf728e0dfc79447530d83
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808051"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999349"
 ---
 # <a name="delete-itemphonenumber"></a>删除 itemPhoneNumber
 
@@ -78,3 +78,5 @@ DELETE https://graph.microsoft.com/beta/user/{userId}/profile/phones/{itemPhoneI
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+

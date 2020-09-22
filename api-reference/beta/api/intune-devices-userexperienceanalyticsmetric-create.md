@@ -3,24 +3,24 @@ title: 创建 userExperienceAnalyticsMetric
 description: 创建新的 userExperienceAnalyticsMetric 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09e33fdf896dba3e58366ee594aa20d94de5aa12
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: b145e81613c167bd70745df77c4db976b393250b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176076"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000635"
 ---
 # <a name="create-userexperienceanalyticsmetric"></a>创建 userExperienceAnalyticsMetric
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md)对象。
+创建新的 [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "44176076"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|应用程序|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -56,14 +56,14 @@ POST /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytics
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|User experience analytics 指标的唯一标识符。|
+|id|String|User experience analytics 指标的唯一标识符。|
 |值|双精度|User experience analytics 指标的值。|
-|处理器|字符串|User experience analytics 指标的单位。|
+|处理器|String|User experience analytics 指标的单位。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -95,6 +95,9 @@ Content-Length: 177
   "unit": "Unit value"
 }
 ```
+
+
+
 
 
 

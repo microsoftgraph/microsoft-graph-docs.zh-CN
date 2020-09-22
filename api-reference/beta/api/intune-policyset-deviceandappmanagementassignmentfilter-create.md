@@ -3,24 +3,24 @@ title: 创建 deviceAndAppManagementAssignmentFilter
 description: 创建新的 deviceAndAppManagementAssignmentFilter 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c72cb53c03c88843a252ebb8230800d1a4c7a5e1
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 87ecea146896e8bfbb2265f6623d9eaf27c2732d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791754"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999907"
 ---
 # <a name="create-deviceandappmanagementassignmentfilter"></a>创建 deviceAndAppManagementAssignmentFilter
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)对象。
+创建新的 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,19 +53,19 @@ POST /deviceManagement/assignmentFilters
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|工作分配筛选器的键。|
+|id|String|工作分配筛选器的键。|
 |createdDateTime|DateTimeOffset|工作分配筛选器的创建时间。|
 |lastModifiedDateTime|DateTimeOffset|工作分配筛选器的上次修改时间。|
 |displayName|String|工作分配筛选器的 DisplayName。|
-|说明|String|工作分配筛选器的说明。|
-|platform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|工作分配筛选器将适用的设备的平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
+|description|String|工作分配筛选器的说明。|
+|平台|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|工作分配筛选器将适用的设备的平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
 |标尺|String|工作分配筛选器的规则定义。|
 |roleScopeTags|String collection|RoleScopeTags 的工作分配筛选器。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -109,6 +109,9 @@ Content-Length: 446
   ]
 }
 ```
+
+
+
 
 
 

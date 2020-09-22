@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f138dd61b8674151fd3ac2ec7ddd1f340570e994
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 08e6208cbd58a3101d995d77e7d90b47918fbce5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566806"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001685"
 ---
 # <a name="delete-identityprovider"></a>删除 identityProvider
 
@@ -18,7 +18,7 @@ ms.locfileid: "46566806"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除[identityprovider.read.all](../resources/identityprovider.md)。
+删除 [identityprovider.read.all](../resources/identityprovider.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -90,7 +90,7 @@ DELETE https://graph.microsoft.com/beta/identityProviders/{id}
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -103,3 +103,5 @@ DELETE https://graph.microsoft.com/beta/identityProviders/{id}
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+

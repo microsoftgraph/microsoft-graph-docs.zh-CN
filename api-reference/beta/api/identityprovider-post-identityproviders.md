@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 69e4a9b1e1511e8eb053ce8a47012effcaad21b2
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: e243a77e684ce76c9060c367dd8ee2450e3d7f4b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319547"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001608"
 ---
 # <a name="create-identityprovider"></a>创建 identityProvider
 
@@ -126,7 +126,7 @@ Content-length: 154
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -205,7 +205,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
@@ -240,3 +240,5 @@ Content-type: application/json
   "scope": "openid"
 }
 ```
+
+

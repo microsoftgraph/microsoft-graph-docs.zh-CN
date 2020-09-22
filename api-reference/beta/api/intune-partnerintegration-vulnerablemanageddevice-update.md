@@ -3,14 +3,14 @@ title: 更新 vulnerableManagedDevice
 description: 更新 vulnerableManagedDevice 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b4bea3922bd8d8a4a5222470323545657cfcf2f
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 13f0f5fb94476d6c7a3ae170660d008e160540ae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793240"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999921"
 ---
 # <a name="update-vulnerablemanageddevice"></a>更新 vulnerableManagedDevice
 
@@ -95,6 +95,9 @@ Content-Length: 263
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
+
+
+
 
 
 

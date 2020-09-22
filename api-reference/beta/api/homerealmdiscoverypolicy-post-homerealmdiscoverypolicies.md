@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hpsin
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4d6a01af5b9abb2ad92a5598ba1d2f7d79b9a726
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: ae62c8ecef033cdac8ef6cfa41648db3036c02bf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916926"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001748"
 ---
 # <a name="create-homerealmdiscoverypolicy"></a>创建 homeRealmDiscoveryPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "43916926"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md)对象。
+创建新的 [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -47,11 +47,11 @@ POST policies/homeRealmDiscoveryPolicies
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md)对象的 JSON 表示形式。
+在请求正文中，提供 [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -127,3 +127,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

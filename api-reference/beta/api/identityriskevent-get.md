@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ec9b5a6727d08ebe5bd307a123887c900e9128fc
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 470b9b0f01db4a1a49fc7f79f0f7b8226b1e13e3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311709"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001601"
 ---
 # <a name="get-identityriskevent-deprecated"></a>获取 identityRiskEvent (弃用) 
 
@@ -116,3 +116,5 @@ Content-length: 251
   ]
 }
 -->
+
+

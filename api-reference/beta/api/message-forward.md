@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 42ffb7b50c672fe3daa80f6b64b6ef963f96ddf5
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 4b5d59d9130377b454245b39deab7193f93ca456
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43448582"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999186"
 ---
 # <a name="message-forward"></a>邮件：转发
 
@@ -19,14 +19,14 @@ ms.locfileid: "43448582"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 转发邮件、添加注释或修改任何可更新的属性  
-一个**正向**调用中的全部。 邮件保存在已发送邮件文件夹中。
+一个 **正向** 调用中的全部。 邮件保存在已发送邮件文件夹中。
 
-或者，您可以先[创建一个草稿转发邮件](../api/message-createforward.md)，以包含注释或更新任何邮件属性，然后[发送](../api/message-send.md)草稿邮件。
+或者，您可以先 [创建一个草稿转发邮件](../api/message-createforward.md) ，以包含注释或更新任何邮件属性，然后 [发送](../api/message-send.md) 草稿邮件。
 
 **注意**
 
-- 您可以指定参数的注释或**body**属性 `message` 。 同时指定这两个将返回 HTTP 400 错误的请求错误。
-- 您必须指定参数 `toRecipients` 或参数的**toRecipients**属性 `message` 。 同时指定或指定两者均不会返回 HTTP 400 错误请求错误。
+- 您可以指定参数的注释或 **body** 属性 `message` 。 同时指定这两个将返回 HTTP 400 错误的请求错误。
+- 您必须指定参数 `toRecipients` 或参数的 **toRecipients** 属性 `message` 。 同时指定或指定两者均不会返回 HTTP 400 错误请求错误。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -58,14 +58,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
 |toRecipients|[recipient](../resources/recipient.md) collection|收件人列表|
-|message|[message](../resources/message.md)|答复邮件中要更新的任何可写属性。|
+|message|[邮件](../resources/message.md)|答复邮件中要更新的任何可写属性。|
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-下面的示例将**isDeliveryReceiptRequested**属性设置为 true，添加注释并转发邮件。
+下面的示例将 **isDeliveryReceiptRequested** 属性设置为 true，添加注释并转发邮件。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
@@ -131,3 +131,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

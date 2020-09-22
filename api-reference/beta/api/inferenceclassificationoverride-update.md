@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: ''
-ms.openlocfilehash: 1db87b1687d547541c61004c1bd82e0999dc1677
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 0f23966bdf77e4a083ad6f46e26ddb067bf464e9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807212"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001568"
 ---
 # <a name="update-inferenceclassificationoverride"></a>更新 inferenceClassificationOverride
 
@@ -124,3 +124,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

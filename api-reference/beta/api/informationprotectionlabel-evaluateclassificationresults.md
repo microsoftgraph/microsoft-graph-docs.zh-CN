@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ad1b8cc4c2792493e3ef511a9166c06c673482d6
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: 22fb19a5d44ff9bed091c1cbd84183470a3490ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630268"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001464"
 ---
 # <a name="informationprotectionlabel-evaluateclassificationresults"></a>informationProtectionLabel: evaluateClassificationResults
 
@@ -18,9 +18,9 @@ ms.locfileid: "46630268"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用[分类结果](../resources/classificationresult.md)，计算应应用的[信息保护标签](../resources/informationprotectionlabel.md)，并返回为正确标记信息而必须采取的一组操作。 如果标签应根据文件内容的分类自动设置，而不是由用户或服务直接标记，则此 API 非常有用。 
+使用 [分类结果](../resources/classificationresult.md)，计算应应用的 [信息保护标签](../resources/informationprotectionlabel.md) ，并返回为正确标记信息而必须采取的一组操作。 如果标签应根据文件内容的分类自动设置，而不是由用户或服务直接标记，则此 API 非常有用。 
 
-若要基于分类结果进行评估，请提供[contentInfo](../resources/contentinfo.md)，其中包括现有的内容元数据[密钥/值对](../resources/keyvaluepair.md)和[分类结果](../resources/classificationresult.md)。 API 返回一个[informationProtectionAction](../resources/informationprotectionaction.md) ，其中包含以下一个或多个内容： 
+若要基于分类结果进行评估，请提供 [contentInfo](../resources/contentinfo.md)，其中包括现有的内容元数据 [密钥/值对](../resources/keyvaluepair.md)和 [分类结果](../resources/classificationresult.md)。 API 返回一个 [informationProtectionAction](../resources/informationprotectionaction.md) ，其中包含以下一个或多个内容： 
 
 * [addContentFooterAction](../resources/addcontentfooteraction.md)
 * [addContentHeaderAction](../resources/addcontentheaderaction.md)
@@ -70,12 +70,12 @@ POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
 
 | 参数             | 类型                                                                    | 说明                                                                                                                                                                                                                                                                           |
 | :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| contentInfo           | [contentInfo](../resources/contentInfo.md)                              | 提供有关内容格式、内容状态和现有[元数据](../resources/keyvaluepair.md)的详细信息，作为键/值对。                                                                                                                                                   |
-| classificationResults | [classificationResult](../resources/classificationresult.md)集合 | 包含由数据分类终结点返回的一组分类结果。 分类信息用于根据 Office 365 安全与合规中心中的 Microsoft 信息保护策略标签配置确定适当的标签。 |
+| contentInfo           | [contentInfo](../resources/contentInfo.md)                              | 提供有关内容格式、内容状态和现有 [元数据](../resources/keyvaluepair.md) 的详细信息，作为键/值对。                                                                                                                                                   |
+| classificationResults | [classificationResult](../resources/classificationresult.md) 集合 | 包含由数据分类终结点返回的一组分类结果。 分类信息用于根据 Office 365 安全与合规中心中的 Microsoft 信息保护策略标签配置确定适当的标签。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的[informationProtectionAction](../resources/informationprotectionaction.md)集合对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [informationProtectionAction](../resources/informationprotectionaction.md) 集合对象。
 
 ## <a name="examples"></a>示例
 
@@ -218,3 +218,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

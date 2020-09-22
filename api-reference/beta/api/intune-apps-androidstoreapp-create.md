@@ -3,14 +3,14 @@ title: 创建 androidStoreApp
 description: 创建新的 androidStoreApp 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c3b3b48bd4180769ee3e0ce596ce71a178d6a868
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: de34925a6821394c1d2b0b525004190ed2f4b37d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791160"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001258"
 ---
 # <a name="create-androidstoreapp"></a>创建 androidStoreApp
 
@@ -69,8 +69,10 @@ POST /deviceAppManagement/mobileApps
 |uploadState|Int32|上载状态。 可能的值包括： 0- `Not Ready` 、1- `Ready` 、2- `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|字符串集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersedingAppCount|Int32|此应用程序直接或间接取代的应用程序总数量。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersededAppCount|Int32|此应用程序直接或间接取代的应用程序总数量。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |packageId|String|包标识符。|
 |appIdentifier|String|标识名称。|
 |appStoreUrl|String|Android 应用商店 URL。|
@@ -88,7 +90,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1230
+Content-length: 1287
 
 {
   "@odata.type": "#microsoft.graph.androidStoreApp",
@@ -113,6 +115,8 @@ Content-length: 1230
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "packageId": "Package Id value",
   "appIdentifier": "App Identifier value",
   "appStoreUrl": "https://example.com/appStoreUrl/",
@@ -141,7 +145,7 @@ Content-length: 1230
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1402
+Content-Length: 1459
 
 {
   "@odata.type": "#microsoft.graph.androidStoreApp",
@@ -169,6 +173,8 @@ Content-Length: 1402
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "packageId": "Package Id value",
   "appIdentifier": "App Identifier value",
   "appStoreUrl": "https://example.com/appStoreUrl/",
@@ -191,6 +197,9 @@ Content-Length: 1402
   }
 }
 ```
+
+
+
 
 
 

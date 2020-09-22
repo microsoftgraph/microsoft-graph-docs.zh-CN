@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 202bb1aa21330868fe4506bfe75191d818fc32ba
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: 89929cbb46de3d70990d0c21abe1fde85848e0b3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408083"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001463"
 ---
 # <a name="get-informationprotectionlabel"></a>获取 informationProtectionLabel
 
@@ -18,7 +18,7 @@ ms.locfileid: "45408083"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[informationProtectionLabel](../resources/informationprotectionlabel.md)对象的属性和关系。
+检索 [informationProtectionLabel](../resources/informationprotectionlabel.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -61,7 +61,7 @@ GET /informationProtection/policy/labels/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[informationProtectionLabel](../resources/informationprotectionlabel.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [informationProtectionLabel](../resources/informationprotectionlabel.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -131,3 +131,5 @@ User-agent: ContosoLOBApp/1.0
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

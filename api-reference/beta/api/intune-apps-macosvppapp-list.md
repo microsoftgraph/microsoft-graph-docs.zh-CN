@@ -3,24 +3,24 @@ title: 列出 macOsVppApps
 description: 列出 macOsVppApp 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53cff93ac80fc3840c140a6a05c5056d5426f954
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 883ef470310c7d5d75a34b9e76b62b2f363153a8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43409780"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000964"
 ---
 # <a name="list-macosvppapps"></a>列出 macOsVppApps
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出[macOsVppApp](../resources/intune-apps-macosvppapp.md)对象的属性和关系。
+列出 [macOsVppApp](../resources/intune-apps-macosvppapp.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,7 +50,7 @@ GET /deviceAppManagement/mobileApps
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[macOsVppApp](../resources/intune-apps-macosvppapp.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [macOsVppApp](../resources/intune-apps-macosvppapp.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2294
+Content-Length: 2359
 
 {
   "value": [
@@ -95,6 +95,8 @@ Content-Length: 2294
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "usedLicenseCount": 0,
       "totalLicenseCount": 1,
       "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
@@ -129,6 +131,9 @@ Content-Length: 2294
   ]
 }
 ```
+
+
+
 
 
 

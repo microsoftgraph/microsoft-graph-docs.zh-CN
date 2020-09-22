@@ -5,22 +5,22 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1554c3caa38a79d5638ae4e9c1fad56f5457508a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f8ebb93f02216f0db9d04130e8ba3b5ba07f5ea7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446352"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001470"
 ---
 # <a name="informationprotectionlabel-evaluateremoval"></a>informationProtectionLabel: evaluateRemoval
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 向正在使用的应用程序指示删除标签信息应采取的操作。
 
-给定[contentInfo](../resources/contentinfo.md)作为输入（其中包括现有的内容元数据[密钥/值对](../resources/keyvaluepair.md)），API 将返回一个[informationProtectionAction](../resources/informationprotectionaction.md) ，其中包含以下一个或多个部分的组合： 
+给定 [contentInfo](../resources/contentinfo.md) 作为输入（其中包括现有的内容元数据 [密钥/值对](../resources/keyvaluepair.md)），API 将返回一个 [informationProtectionAction](../resources/informationprotectionaction.md) ，其中包含以下一个或多个部分的组合： 
 
 * [justifyAction](../resources/justifyaction.md)
 * [metadataAction](../resources/metadataaction.md)
@@ -35,9 +35,9 @@ ms.locfileid: "42446352"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 | :------------------------------------- | :------------------------------------------ |
-| 委派（工作或学校帐户）     | InformationProtectionPolicy。请阅读            |
+| 委派（工作或学校帐户）     | InformationProtectionPolicy.Read            |
 | 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用程序                            | InformationProtectionPolicy        |
+| 应用程序                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -61,13 +61,13 @@ POST /informationprotection/policy/labels/evaluateRemoval
 
 | 参数              | 类型                                                             | 说明                                                                                                                         |
 | :--------------------- | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
-| contentInfo            | [contentInfo](../resources/contentinfo.md)                       | 提供有关内容格式、内容状态和现有[元数据](../resources/keyvaluepair.md)的详细信息，作为键/值对。 |
+| contentInfo            | [contentInfo](../resources/contentinfo.md)                       | 提供有关内容格式、内容状态和现有 [元数据](../resources/keyvaluepair.md) 的详细信息，作为键/值对。 |
 | downgradeJustification | [downgradeJustification](../resources/downgradejustification.md) | 必须由用户或应用程序逻辑提供的理由。                                                               |
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和新的[informationProtectionAction](../resources/informationprotectionaction.md)集合对象。 [InformationProtectionAction 对象](../resources/informationprotectionaction.md)将包含一个[metadataAction](../resources/metadataaction.md)对象，该对象通知应用程序要删除的元数据。 
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [informationProtectionAction](../resources/informationprotectionaction.md) 集合对象。 [InformationProtectionAction 对象](../resources/informationprotectionaction.md)将包含一个[metadataAction](../resources/metadataaction.md)对象，该对象通知应用程序要删除的元数据。 
 
 ## <a name="examples"></a>示例
 
@@ -202,3 +202,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
