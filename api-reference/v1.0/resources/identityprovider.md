@@ -5,12 +5,12 @@ localization_priority: Priority
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1fe32bcc519e697198281376ba433a8754a660ab
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: d8c3b9315df0e4fa4a21480f6be1ad283e43502d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44215778"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086688"
 ---
 # <a name="identityprovider-resource-type"></a>identityProvider 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "44215778"
 * 在使用者应用程序中通过社交帐户进行注册和登录。 例如，应用程序可使用 Azure AD B2C 让用户能够通过 Facebook 帐户注册服务。
 * 将现有本地帐户链接到使用者应用程序中的社交帐户。 例如，用户已在应用程序中创建用户名和密码（本地帐户）。 之后，用户决定将现有本地帐户链接到其 Facebook 帐户，以便能使用 Facebook 进行登录。
 
-通过在 Azure AD B2C 中配置标识提供程序，可实现之后的 B2B 来宾方案。 例如，某组织在 Office 365 中具有需要与 Gmail 用户共享的资源。 Gmail 将使用其 Google 帐户凭据来验证和访问文档。
+通过在 Azure AD B2C 中配置标识提供程序，可实现之后的 B2B 来宾方案。 例如，某组织在 Microsoft 365 中具有需要与 Gmail 用户共享的资源。 Gmail 将使用其 Google 帐户凭据来验证和访问文档。
 
 ## <a name="methods"></a>方法
 
@@ -67,3 +67,4 @@ ms.locfileid: "44215778"
     "clientSecret": "String"
 }
 ```
+

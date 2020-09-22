@@ -5,21 +5,21 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 777ae9219d148b2d07f1f2a5b135f543148d784f
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 8f5e458738db2b0431a034e9b70d6e727853cbcb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383789"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087213"
 ---
-# <a name="create-a-delegated-permission-grant-oauth2permissiongrant"></a>创建委派权限授予（oAuth2PermissionGrant）
+# <a name="create-a-delegated-permission-grant-oauth2permissiongrant"></a>创建委派权限授予 (oAuth2PermissionGrant) 
 
 命名空间：microsoft.graph
 
 
-创建委派权限授予。 委派权限授予由[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)对象表示。
+创建委派权限授予。 委派权限授予由 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象表示。
 
-委派权限授予授予客户端服务主体（表示客户端应用程序），以代表登录用户访问受委派权限限制的访问权限级别的客户端服务主体（表示一个 API）。
+委派权限授予授权一个代表客户端应用程序) 的客户端服务主体 (，代表登录用户访问代表 API) 的资源服务主体 (，这些访问权限受授予的委派权限的限制级别。
 
 ## <a name="permissions"></a>权限
 
@@ -29,7 +29,7 @@ ms.locfileid: "44383789"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | DelegatedPermissionGrant、Directory.accessasuser.all、all 和的所有子目录    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Directory.ReadWrite.All |
+|应用程序 | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,11 +47,11 @@ POST /oauth2PermissionGrants
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)对象的 JSON 表示形式。
+在请求正文中，提供 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回一个200系列响应代码和一个新的[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)对象。
+如果成功，此方法在响应正文中返回一个200系列响应代码和一个新的 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -131,3 +131,4 @@ Content-Type: application/json
   ]
 }
 -->
+

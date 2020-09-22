@@ -7,12 +7,12 @@ localization_priority: Normal
 description: 身份资源表示主角的身份。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e68b57ed69463cfaa67e3505abe57f3968480065
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3ff4be5b9e606144fe300e6ba3811adddbbda56a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531339"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086702"
 ---
 # <a name="identity-resource-type"></a>Identity 资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "42531339"
 | 属性    | 类型   | 说明                                                                                                                                                                                                                                                                                                           |
 |:------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | displayName | String | 此身份的显示名称。请注意，此信息不一定可查看或是最新的。例如，如果用户更改了其显示名称，API 可能会在以后的响应中显示新值，但与用户相关联的项在使用 [delta](../api/driveitem-delta.md) 时不会显示更改后的值。     |
-| id          | 字符串 | 身份的唯一标识符。                                                                                                                                                                                                                                                                                   |
+| id          | String | 身份的唯一标识符。                                                                                                                                                                                                                                                                                   |
 
 ## <a name="remarks"></a>注解
 
@@ -54,3 +54,4 @@ ms.locfileid: "42531339"
   "tocPath": "Resources/Identity"
 
 } -->
+

@@ -5,18 +5,18 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 796c00f53babf92f7d135e9b0cc085f7916a00f5
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 8368935da77d178c7e1165da4b9ac418a9016f0e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "44217630"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087143"
 ---
 # <a name="offershiftrequest-decline"></a>offerShiftRequest：拒绝
 
 命名空间：microsoft.graph
 
-拒绝[offerShiftRequest](../resources/offershiftrequest.md)对象。
+拒绝 [offerShiftRequest](../resources/offershiftrequest.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -122,3 +122,4 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+

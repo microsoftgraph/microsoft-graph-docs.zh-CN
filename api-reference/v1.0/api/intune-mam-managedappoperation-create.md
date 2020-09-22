@@ -3,14 +3,14 @@ title: 创建 managedAppOperation
 description: 创建新的 managedAppOperation 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 58806fad1b3302543026d1508efd49e109e1548a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 147f95839e8eb5130f609b105010dd38d558e888
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441809"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087395"
 ---
 # <a name="create-managedappoperation"></a>创建 managedAppOperation
 
@@ -54,7 +54,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 |displayName|String|操作名称。|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用操作的时间。|
 |state|String|操作的当前状态|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |version|String|实体的版本。|
 
 
@@ -95,6 +95,9 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
+
+
 
 
 

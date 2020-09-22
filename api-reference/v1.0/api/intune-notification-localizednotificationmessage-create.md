@@ -3,14 +3,14 @@ title: 创建 localizedNotificationMessage
 description: 创建新的 localizedNotificationMessage 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 13ae59211fa5b96113e60f80563d44fa89734f0c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 359eb958053dab839d6ce10dc0b27e954389f4b8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453056"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087367"
 ---
 # <a name="create-localizednotificationmessage"></a>创建 localizedNotificationMessage
 
@@ -51,10 +51,10 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |locale|String|此消息的目标区域设置。|
-|主题|String|消息模板主题。|
+|subject|String|消息模板主题。|
 |messageTemplate|String|消息模板内容。|
 |isDefault|Boolean|用于指示这是否是语言回退的默认区域设置的标记。 此标志只能设置。 若要取消设置，请在其他本地化通知消息中将该属性设置为 true。|
 
@@ -98,6 +98,9 @@ Content-Length: 313
   "isDefault": true
 }
 ```
+
+
+
 
 
 

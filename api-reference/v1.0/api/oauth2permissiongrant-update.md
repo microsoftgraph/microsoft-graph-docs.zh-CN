@@ -5,19 +5,19 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 9b1570ad83abdabf1c845f3ad574187274428f25
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 2737f9a983cbf7536d861244c8efdb64865eb579
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383782"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087199"
 ---
-# <a name="update-a-delegated-permission-grant-oauth2permissiongrant"></a>更新委派权限授予（oAuth2PermissionGrant）
+# <a name="update-a-delegated-permission-grant-oauth2permissiongrant"></a>更新委派权限授予 (oAuth2PermissionGrant) 
 
 命名空间：microsoft.graph
 
 
-更新[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)对象的属性，该对象代表委派权限授予。
+更新 [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) 对象的属性，该对象代表委派权限授予。
 
 可以通过在**范围**的列表中添加或删除项目来更新**oAuth2PermissionGrant** ，以更改要授予的委派权限。
 
@@ -29,7 +29,7 @@ ms.locfileid: "44383782"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | DelegatedPermissionGrant、Directory.accessasuser.all、all 和的所有子目录    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Directory.ReadWrite.All |
+|应用程序 | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ PATCH /oauth2PermissionGrants/{id}
 
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |scope|String| 指定在 OAuth 2.0 访问令牌中，资源应用程序应预期的范围声明的值。 |
 
@@ -118,3 +118,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

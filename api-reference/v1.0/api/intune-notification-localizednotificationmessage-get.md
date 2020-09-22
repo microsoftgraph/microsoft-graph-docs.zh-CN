@@ -3,14 +3,14 @@ title: 获取 localizedNotificationMessage
 description: 读取 localizedNotificationMessage 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5ad3b6b20932c91a6240fbcd2f13101a43fac884
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 56aaaffd9a5b709bd79120fb8365a537256c560e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453042"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087346"
 ---
 # <a name="get-localizednotificationmessage"></a>获取 localizedNotificationMessage
 
@@ -80,6 +80,9 @@ Content-Length: 346
   }
 }
 ```
+
+
+
 
 
 

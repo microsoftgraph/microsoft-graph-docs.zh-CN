@@ -5,25 +5,25 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6271ae47f94abb0c449dc6bd7a0930468d08d2b5
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 150b0b53b219b46978c83666560264fb60bf8ba0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384485"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086800"
 ---
 # <a name="cloudappsecuritysessioncontrol-resource-type"></a>cloudAppSecuritySessionControl 资源类型
 
 命名空间：microsoft.graph
 
-用于强制实施云应用安全检查的会话控制。 Inehrits 来自[条件访问会话控制](conditionalaccesssessioncontrol.md)。
+用于强制实施云应用安全检查的会话控制。 Inehrits 来自 [条件访问会话控制](conditionalaccesssessioncontrol.md)。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | 指定是否启用会话控制。 |
-|cloudAppSecurityType|String| 可能的值是：`mcasConfigured`、`monitorOnly`、`blockDownloads`、`unknownFutureValue`。 有关详细信息，请参阅[为特色应用程序部署条件访问应用控件](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad)。 |
+|cloudAppSecurityType|String| 可能的值是：`mcasConfigured`、`monitorOnly`、`blockDownloads`、`unknownFutureValue`。 有关详细信息，请参阅 [为特色应用程序部署条件访问应用控件](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad)。 |
 
 ## <a name="relationships"></a>关系
 
@@ -58,3 +58,4 @@ ms.locfileid: "45384485"
   "section": "documentation",
   "tocPath": ""
 }-->
+

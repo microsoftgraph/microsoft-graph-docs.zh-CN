@@ -5,12 +5,12 @@ localization_priority: Normal
 author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a993043e9bfa8ec789316421066e16dd55f748af
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
-ms.translationtype: Auto
+ms.openlocfilehash: 360c2767d424f37ef120f7c2eab836569396e129
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44846223"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086814"
 ---
 # <a name="claimsmappingpolicy-resource-type"></a>claimsMappingPolicy 资源类型
 
@@ -22,11 +22,11 @@ ms.locfileid: "44846223"
 - 创建尚不存在的声明类型
 - 选择或更改特定声明中发出的数据源  
 
-有关更多方案和配置详细信息，请参阅[如何：自定义在租户中的特定应用程序令牌中发出的声明](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-properties)。
+有关更多方案和配置详细信息，请参阅 [如何：自定义在租户中的特定应用程序令牌中发出的声明](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-properties)。
 
-继承自[stsPolicy](stsPolicy.md)。
+继承自 [stsPolicy](stsPolicy.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
@@ -41,15 +41,15 @@ ms.locfileid: "44846223"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|id|字符串| 此策略的唯一标识符。 只读。|
+|id|String| 此策略的唯一标识符。 只读。|
 |定义|String collection| 一个包含 JSON 字符串的字符串集合，该字符串定义此策略的规则和设置。 有关此属性的 JSON 架构的更多详细信息，请参阅下文。 必需。|
 |description|String| 此策略的说明。|
-|displayName|String| 此策略的显示名称。 必填。|
+|displayName|String| 此策略的显示名称。 必需。|
 |isOrganizationDefault|Boolean|忽略此属性。 声明映射策略仅可应用于服务主体，不能为组织全局设置。|
 
 ### <a name="properties-of-a-claims-mapping-policy-definition"></a>声明映射策略定义的属性
 
-下面的属性构成了表示声明映射策略的 JSON 对象。 此 JSON 对象必须**转换为转义了引号的字符串**，以将其插入到**定义**属性中。 下面显示了几个定义示例：
+下面的属性构成了表示声明映射策略的 JSON 对象。 此 JSON 对象必须 **转换为转义了引号的字符串** ，以将其插入到 **定义** 属性中。 下面显示了几个定义示例：
 
 #### <a name="example-definition-to-include-the-employeeid-and-tenantcountry-as-claims-in-tokens"></a>示例：将 "雇员 Id" 和 "TenantCountry" 作为声明包含在标记中的**定义**
 <!-- {
@@ -92,19 +92,19 @@ ms.locfileid: "44846223"
 }
 ```
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|版本|Integer|将值设置为1。 必填。|
+|版本|整数|将值设置为1。 必需。|
 |IncludeBasicClaimSet|Boolean|如果设置为 true，则在受策略影响的令牌中发出基本声明集中的所有声明。 如果设置为 false，则基本声明集中的声明不在令牌中，除非它们单独添加到同一策略的 ClaimsSchema 属性中。|
-|ClaimsSchema|JSON 对象|定义受策略影响的令牌中存在的声明，以及基本声明集和核心声明集。 对于在此属性中定义的每个声明架构条目，需要特定信息。 指定数据的来源（"值" 或 "源/ID 对"），以及将数据作为（声明类型）发出的声明。 有关详细信息，请参阅[ClaimsSchema definition](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#claims-schema)。|
-|ClaimsTransformation|JSON 对象| 定义可应用于源数据的常见转换，以生成 ClaimsSchema 中指定的声明的输出数据。 有关详细信息，请参阅[ClaimsTransformation definition](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#claims-transformation)。|
+|ClaimsSchema|JSON 对象|定义受策略影响的令牌中存在的声明，以及基本声明集和核心声明集。 对于在此属性中定义的每个声明架构条目，需要特定信息。 指定数据来自 (值或源/ID 对) ，并声明数据作为 (声明类型) 发出。 有关详细信息，请参阅 [ClaimsSchema definition](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#claims-schema)。|
+|ClaimsTransformation|JSON 对象| 定义可应用于源数据的常见转换，以生成 ClaimsSchema 中指定的声明的输出数据。 有关详细信息，请参阅 [ClaimsTransformation definition](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#claims-transformation)。|
 
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型        | Description |
+| 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|appliesTo|[directoryObject](directoryobject.md) 集合| 已将此策略应用于的[directoryObject](directoryObject.md)集合。 只读。|
+|appliesTo|[directoryObject](directoryobject.md) 集合| 已将此策略应用于的 [directoryObject](directoryObject.md) 集合。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

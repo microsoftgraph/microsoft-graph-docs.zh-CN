@@ -7,12 +7,12 @@ localization_priority: Normal
 description: 下面是 ColumnDefinition 资源的 JSON 表示形式。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a86a6d89184e18eac7c452b7fca3596371f5dcb7
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 28d124038601ae578e0ee1c30b0ca7ebea8321c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44864061"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086723"
 ---
 # <a name="columndefinition-resource"></a>ColumnDefinition 资源
 
@@ -126,3 +126,4 @@ ms.locfileid: "44864061"
   "section": "documentation",
   "tocPath": "Resources/ColumnDefinition"
 } -->
+

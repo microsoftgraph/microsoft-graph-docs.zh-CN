@@ -7,12 +7,12 @@ localization_priority: Normal
 description: 图像资源将与图像相关的属性分组到一个单一结构。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: b270d7ed2cacc5da5926d77d651878f9b0598093
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e43bf96a34693b19a191d09417623828e1b399be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532890"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086660"
 ---
 # <a name="image-resource-type"></a>图像资源类型
 
@@ -53,3 +53,4 @@ ms.locfileid: "42532890"
   "section": "documentation",
   "tocPath": "Facets/Image"
 } -->
+

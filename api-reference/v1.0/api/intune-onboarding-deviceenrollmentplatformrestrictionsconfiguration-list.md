@@ -3,14 +3,14 @@ title: 列出 deviceEnrollmentPlatformRestrictionsConfigurations
 description: 列出 deviceEnrollmentPlatformRestrictionsConfiguration 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 79229eec27421cc949629e60097d4b7e7f263441
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 64387703d8d956a293fcccb214997da4bb283af5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458281"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087290"
 ---
 # <a name="list-deviceenrollmentplatformrestrictionsconfigurations"></a>列出 deviceEnrollmentPlatformRestrictionsConfigurations
 
@@ -115,6 +115,9 @@ Content-Length: 2027
   ]
 }
 ```
+
+
+
 
 
 

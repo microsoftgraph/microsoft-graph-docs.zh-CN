@@ -3,14 +3,14 @@ title: windowsInformationProtectionResourceCollection 资源类型
 description: Windows 信息保护资源集合
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f7153c73b2bb2c2879fd76e38de60c01f04e519
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7f48b7d02d40307eec25371a20e98b9efcf416a8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459684"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086540"
 ---
 # <a name="windowsinformationprotectionresourcecollection-resource-type"></a>windowsInformationProtectionResourceCollection 资源类型
 
@@ -45,6 +45,8 @@ Windows 信息保护资源集合
   ]
 }
 ```
+
+
 
 
 

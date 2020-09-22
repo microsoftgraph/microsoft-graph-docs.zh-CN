@@ -3,14 +3,14 @@ title: 删除 managedAppOperation
 description: 删除 managedAppOperation。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c446112818f5ac43922372da1eeb7bb8f7926b42
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2b651ea12bd51af18ad1dcf54a0c3585d074fe65
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43399109"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087388"
 ---
 # <a name="delete-managedappoperation"></a>删除 managedAppOperation
 
@@ -63,6 +63,9 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppRegistrati
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

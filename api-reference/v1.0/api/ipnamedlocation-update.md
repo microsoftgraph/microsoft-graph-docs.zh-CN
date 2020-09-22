@@ -5,18 +5,18 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1bb1ae728498c79cfe06efabe27b3986f8cdee4c
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 0af6dfe76e64558e933899463d5bd18ae21cf1cb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567343"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087241"
 ---
 # <a name="update-ipnamedlocation"></a>更新 ipNamedlocation
 
 命名空间：microsoft.graph
 
-更新[ipNamedLocation](../resources/ipNamedLocation.md)对象的属性。
+更新 [ipNamedLocation](../resources/ipNamedLocation.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -131,3 +131,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

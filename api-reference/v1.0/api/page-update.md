@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: c991e41315ba8d8c733211b8b814e4c161500760
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 59d109c8228189e6584e2c75addbe7d43c52539f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511080"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087003"
 ---
 # <a name="update-page"></a>更新页面
 
@@ -41,7 +41,7 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[patchContentCommand](../resources/patchcontentcommand.md)对象的数组，这些对象代表页面的更改。 有关详细信息和示例，请参阅<a href="https://msdn.microsoft.com/office/office365/howto/onenote-update-page">更新 OneNote 页面</a>。
+在请求正文中，提供 [patchContentCommand](../resources/patchcontentcommand.md) 对象的数组，这些对象代表页面的更改。 有关详细信息和示例，请参阅 <a href="https://msdn.microsoft.com/office/office365/howto/onenote-update-page">更新 OneNote 页面</a>。
 
 ## <a name="response"></a>响应
 
@@ -114,3 +114,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+
