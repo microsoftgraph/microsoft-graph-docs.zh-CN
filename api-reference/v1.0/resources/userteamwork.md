@@ -5,34 +5,34 @@ author: clearab
 doc_type: resourcePageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 95a5f978b0b367cb3317cee9da8eee42ec52af27
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 721830c8a4160046bb4ffd09e2812c4e0f95167d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154260"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015300"
 ---
-# <a name="userteamwork-resource-type"></a><span data-ttu-id="19e7d-103">userTeamwork 资源类型</span><span class="sxs-lookup"><span data-stu-id="19e7d-103">userTeamwork resource type</span></span>
+# <a name="userteamwork-resource-type"></a><span data-ttu-id="d0475-103">userTeamwork 资源类型</span><span class="sxs-lookup"><span data-stu-id="d0475-103">userTeamwork resource type</span></span>
 
-<span data-ttu-id="19e7d-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="19e7d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d0475-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d0475-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="19e7d-105">适用于租户中每个用户可用的 Microsoft Teams 功能范围的容器。</span><span class="sxs-lookup"><span data-stu-id="19e7d-105">A container for the range of Microsoft Teams functionalities that are available per user in the tenant.</span></span>
+<span data-ttu-id="d0475-105">适用于租户中每个用户可用的 Microsoft Teams 功能范围的容器。</span><span class="sxs-lookup"><span data-stu-id="d0475-105">A container for the range of Microsoft Teams functionalities that are available per user in the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="19e7d-106">属性</span><span class="sxs-lookup"><span data-stu-id="19e7d-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d0475-106">属性</span><span class="sxs-lookup"><span data-stu-id="d0475-106">Properties</span></span>
 
-| <span data-ttu-id="19e7d-107">属性</span><span class="sxs-lookup"><span data-stu-id="19e7d-107">Property</span></span> | <span data-ttu-id="19e7d-108">类型</span><span class="sxs-lookup"><span data-stu-id="19e7d-108">Type</span></span> | <span data-ttu-id="19e7d-109">说明</span><span class="sxs-lookup"><span data-stu-id="19e7d-109">Description</span></span> |
+| <span data-ttu-id="d0475-107">属性</span><span class="sxs-lookup"><span data-stu-id="d0475-107">Property</span></span> | <span data-ttu-id="d0475-108">类型</span><span class="sxs-lookup"><span data-stu-id="d0475-108">Type</span></span> | <span data-ttu-id="d0475-109">说明</span><span class="sxs-lookup"><span data-stu-id="d0475-109">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="19e7d-110">id</span><span class="sxs-lookup"><span data-stu-id="19e7d-110">id</span></span>|<span data-ttu-id="19e7d-111">string</span><span class="sxs-lookup"><span data-stu-id="19e7d-111">string</span></span>| <span data-ttu-id="19e7d-112">唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="19e7d-112">A unique identifier.</span></span> |
+|<span data-ttu-id="d0475-110">id</span><span class="sxs-lookup"><span data-stu-id="d0475-110">id</span></span>|<span data-ttu-id="d0475-111">string</span><span class="sxs-lookup"><span data-stu-id="d0475-111">string</span></span>| <span data-ttu-id="d0475-112">唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="d0475-112">A unique identifier.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="19e7d-113">关系</span><span class="sxs-lookup"><span data-stu-id="19e7d-113">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="d0475-113">关系</span><span class="sxs-lookup"><span data-stu-id="d0475-113">Relationships</span></span>
 
-| <span data-ttu-id="19e7d-114">关系</span><span class="sxs-lookup"><span data-stu-id="19e7d-114">Relationship</span></span> | <span data-ttu-id="19e7d-115">类型</span><span class="sxs-lookup"><span data-stu-id="19e7d-115">Type</span></span> | <span data-ttu-id="19e7d-116">说明</span><span class="sxs-lookup"><span data-stu-id="19e7d-116">Description</span></span> |
+| <span data-ttu-id="d0475-114">关系</span><span class="sxs-lookup"><span data-stu-id="d0475-114">Relationship</span></span> | <span data-ttu-id="d0475-115">类型</span><span class="sxs-lookup"><span data-stu-id="d0475-115">Type</span></span> | <span data-ttu-id="d0475-116">说明</span><span class="sxs-lookup"><span data-stu-id="d0475-116">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="19e7d-117">installedApps</span><span class="sxs-lookup"><span data-stu-id="19e7d-117">installedApps</span></span>|<span data-ttu-id="19e7d-118">[teamsAppInstallation](teamsappinstallation.md) 集合</span><span class="sxs-lookup"><span data-stu-id="19e7d-118">[teamsAppInstallation](teamsappinstallation.md) collection</span></span>|<span data-ttu-id="19e7d-119">此用户的个人范围内安装的应用。</span><span class="sxs-lookup"><span data-stu-id="19e7d-119">The apps installed in the personal scope of this user.</span></span>|
+|<span data-ttu-id="d0475-117">installedApps</span><span class="sxs-lookup"><span data-stu-id="d0475-117">installedApps</span></span>|<span data-ttu-id="d0475-118">[teamsAppInstallation](teamsappinstallation.md) 集合</span><span class="sxs-lookup"><span data-stu-id="d0475-118">[teamsAppInstallation](teamsappinstallation.md) collection</span></span>|<span data-ttu-id="d0475-119">此用户的个人范围内安装的应用。</span><span class="sxs-lookup"><span data-stu-id="d0475-119">The apps installed in the personal scope of this user.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="19e7d-120">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="19e7d-120">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d0475-120">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d0475-120">JSON representation</span></span>
 
-<span data-ttu-id="19e7d-121">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="19e7d-121">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d0475-121">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d0475-121">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -59,3 +59,4 @@ ms.locfileid: "44154260"
   "suppressions": []
 }
 -->
+
