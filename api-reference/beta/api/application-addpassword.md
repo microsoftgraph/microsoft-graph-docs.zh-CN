@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 550941789667764f7d4474ee5ca4f7d514580284
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: eb0fbf216bb68c875c6f8b4c6a967cafbf8427b4
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997058"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192551"
 ---
 # <a name="application-addpassword"></a>应用程序： addPassword
 
@@ -26,9 +26,9 @@ ms.locfileid: "47997058"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 所有的 Directory.accessasuser.all，all，all，All |
-| 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Application.readwrite.ownedby、所有的 readwrite、全部、读写。 |
+| 委派（工作或学校帐户）     | Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（个人 Microsoft 帐户） | Application.ReadWrite.All |
+| 应用程序                            | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ POST /applications/{id}/addPassword
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| displayName | String | 密码的友好名称。 可选。 |
+| displayName | 字符串 | 密码的友好名称。 可选。 |
 | endDateTime | DateTimeOffset | 密码过期的日期和时间，使用 ISO 8601 格式表示，并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 可选。 默认值为 "startDateTime + 2 年"。 |
 | startDateTime | DateTimeOffset | 密码生效的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 可选。 默认值为 "now"。|
 

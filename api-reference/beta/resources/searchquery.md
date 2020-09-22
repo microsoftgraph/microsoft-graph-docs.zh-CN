@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: db647c47c528428820acc2ded9b079546b991be6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1d2d643fed135f97f1ccf2c6346d8fdd6e22f8b5
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985739"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193363"
 ---
 # <a name="searchquery-resource-type"></a>searchQuery 资源类型
 
@@ -18,15 +18,17 @@ ms.locfileid: "47985739"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示包含搜索词和可选筛选器的搜索查询。
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+表示包含搜索词和可选筛选器的搜索查询。
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | 描述 |
 |:-------------|:------------|:------------|
-|query_string|[searchQueryString](searchquerystring.md)|包含搜索词的搜索查询。|
+|queryString|字符串|包含搜索词的搜索查询。 必需。|
+|query_string (已弃用) |[searchQueryString](searchquerystring.md)|现在，它将替换为 **queryString** 属性。 包含搜索词的搜索查询。|
+
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -43,6 +45,7 @@ ms.locfileid: "47985739"
 
 ```json
 {
+  "queryString": "String",
   "query_string": {"@odata.type": "microsoft.graph.searchQueryString"}
 }
 ```

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0ab216d8daacee5804c7a0568e2b236ac838f1e7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 30afec90242641a0708c79e27e2b4b39e87862b9
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983283"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192393"
 ---
 # <a name="get-channel-message"></a>获取通道消息
 
@@ -102,7 +102,8 @@ Content-type: application/json
     "etag": "1555375673184",
     "messageType": "message",
     "createdDateTime": "2019-04-16T00:47:53.184Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": "",
     "summary": null,

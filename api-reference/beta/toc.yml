@@ -42,7 +42,7 @@ items:
             href: /learn/modules/msgraph-changenotifications-trackchanges
           - name: 缺少 Outlook 通知（预览版）
             href: /graph/webhooks-outlook-authz?context=graph/api/beta
-          - name: 与资源数据有关的通知（预览版）
+          - name: 包含资源数据的通知
             href: /graph/webhooks-with-resource-data?context=graph/api/beta
           - name: 获取通过不同方式传送的通知（预览版）
             href: /graph/change-notifications-delivery?context=graph/api/beta
@@ -132,6 +132,20 @@ items:
     items:
       - name: 工具包概述
         href: /graph/toolkit/overview?context=graph/api/beta
+      - name: 入门
+        items:
+          - name: 概述
+            href: /graph/toolkit/get-started/overview?context=graph/api/beta
+          - name: 构建 Web 应用程序 (JavaScript)
+            href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/beta
+          - name: 构建 SharePoint Web 部件
+            href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/beta
+          - name: 构建 Microsoft Teams 选项卡。
+            href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/beta
+          - name: 使用 React 的工具包
+            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/beta
+          - name: 使用 Angular 的工具包
+            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/beta
       - name: 组件
         items:
           - name: 登录
@@ -147,7 +161,7 @@ items:
       - name: 提供程序
         items:
           - name: 使用提供程序
-            href: /graph//graph/toolkit/providers?context=graph/api/beta
+            href: /graph/toolkit/providers?context=graph/api/beta
           - name: Msal 提供程序
             href: /graph/toolkit/providers/msal?context=graph/api/beta
           - name: SharePoint 提供程序
@@ -11628,6 +11642,10 @@ items:
             items:
               - name: 概述
                 href: resources/search-api-overview.md
+              - name: 搜索请求类型
+                href: resources/searchrequest.md
+              - name: 搜索响应类型
+                href: resources/searchresponse.md
               - name: 查询数据
                 href: api/search-query.md
           - name: 索引
@@ -11674,6 +11692,24 @@ items:
                     href: api/externalitem-update.md
                   - name: 删除
                     href: api/externalitem-delete.md
+              - name: 外部组
+                items:
+                  - name: 外部组
+                    href: resources/externalgroup.md
+                  - name: 创建
+                    href: api/externalconnection-post-groups.md
+                  - name: 删除
+                    href: api/externalgroup-delete.md
+                  - name: 创建成员
+                    href: api/externalgroup-post-members.md
+              - name: 外部组成员
+                items:
+                  - name: 外部组成员
+                    href: resources/externalgroupmember.md
+                  - name: 创建
+                    href: api/externalgroup-post-members.md
+                  - name: 删除
+                    href: api/externalgroupmember-delete.md
       - name: 安全性
         displayname: 'Security API, Microsoft Graph Security API'
         items:

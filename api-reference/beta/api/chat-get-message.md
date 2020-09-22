@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0598a5cea110cbc7ba4ee1d1a2b6ff6e496c53e3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 29cc1d8be080c0079d5a6ffd6ba293fff1fbfdb7
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982726"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192301"
 ---
 # <a name="get-chatmessage"></a>获取 chatMessage
 
@@ -106,7 +106,8 @@ Content-length: 201
     "etag": "1555631722147",
     "messageType": "message",
     "createdDateTime": "2019-04-18T23:55:22.147Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2019-05-18T23:55:22.147Z",
+    "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
     "summary": null,

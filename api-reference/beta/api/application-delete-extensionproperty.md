@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4a3365834c6f637724d470bcd058aac79748e655
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 744eb25753a6fd2945b5ae21ecea7a747dee4cff
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996981"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192530"
 ---
 # <a name="delete-extensionproperty"></a>删除 extensionProperty
 
@@ -26,9 +26,9 @@ ms.locfileid: "47996981"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 所有的 Directory.accessasuser.all，all，all，All |
-|委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Application.readwrite.ownedby、所有的 readwrite、全部、读写。 |
+|委派（工作或学校帐户） | Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+|委派（个人 Microsoft 帐户） | Application.ReadWrite.All    |
+|应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

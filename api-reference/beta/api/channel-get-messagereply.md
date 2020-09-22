@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0d95727411b89f467804547f77795873c87dcd31
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7bf2dcd5330e3e5b414f4c895a8d128976a1a823
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983284"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192392"
 ---
 # <a name="get-a-reply-to-a-channel-message"></a>获取对频道消息的答复
 
@@ -28,7 +28,7 @@ ms.locfileid: "47983284"
 |---------|-------------|
 |委派（工作或学校帐户）| ChannelMessage.Read.All、Group.Read.All、Group.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| ChannelMessage *、ChannelMessage、group、group、group、group 写。 All |
+|应用程序| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
 > **注意**：标有 * 的权限用于[特定于资源的同意]( https://aka.ms/teams-rsc)。
 
@@ -109,7 +109,8 @@ Content-type: application/json
     "etag": "1555377090002",
     "messageType": "message",
     "createdDateTime": "2019-04-16T01:11:30.002Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
     "summary": null,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 27410dbdd7b059e24bce0d532ebbd05381ac6aba
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c66bdc31ffc9a130eed48f1e30af3f71302335a0
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034420"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192775"
 ---
 # <a name="create-workposition"></a>创建 workPosition
 
@@ -52,10 +52,10 @@ POST /users/{id | userPrincipalName}/profile/positions
 
 下表显示了在用户的[配置文件](../resources/profile.md)中创建新的[workPosition](../resources/workPosition.md)对象时可以设置的属性。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
-|allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|类别|String 集合|用户已与此位置关联的类别。|
+|allowedAudiences|字符串|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
+|categories|String collection|用户已与此位置关联的类别。|
 |征求|[relatedPerson](../resources/relatedperson.md) 集合|与此职位相关联的同事。|
 |介绍|[positionDetail](../resources/positiondetail.md)|包含有关职位的详细信息。 |
 |推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
@@ -99,7 +99,7 @@ Content-type: application/json
       "webUrl": "https://www.adventureworks.com"
     },
     "jobTitle": "Senior Product Branding Manager II",
-    "role": "consulting",
+    "role": "consulting"
   },
   "isCurrent": true
 }

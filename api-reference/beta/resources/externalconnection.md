@@ -1,16 +1,16 @@
 ---
 title: externalConnection 资源类型
-description: 从外部源到 Microsoft 搜索的连接。
+description: 连接是 Microsoft Graph 中外部内容的逻辑容器
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: a5db824fabc1cedb27d15c4b2cbfbce08bd59191
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 82a68c8670a1381263d0b6fd3704f9d6d900d1f0
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026927"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193139"
 ---
 # <a name="externalconnection-resource-type"></a>externalConnection 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48026927"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从外部源到 Microsoft 搜索的连接。
+将外部源中的内容添加到 Microsoft Graph 中的逻辑容器。
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -37,19 +37,20 @@ ms.locfileid: "48026927"
 
 ## <a name="properties"></a>属性
 
-| 属性      | 类型                              | 说明 |
+| 属性      | 类型                              | 描述 |
 |:--------------|:----------------------------------|:------------|
 | configuration | [configuration](configuration.md) | 指定允许管理连接和索引连接中的内容的其他应用程序 Id。 可选。 |
-| description   | String                            | Microsoft 365 管理中心显示的连接的说明。 可选。 |
-| id            | String                            | 在 Azure Active Directory 租户中，开发人员提供的连接的唯一 ID。 最大长度为32个字符。 必须仅包含字母数字字符。 不能以 `Microsoft` 下列值开头，也不能为下列值之一：、、、、、、、、、、 `None` `Directory` `Exchange` `ExchangeArchive` `LinkedIn` `Mailbox` `MicrosoftSearch` `OneDriveBusiness` `SharePoint` `Teams` `Yammer` `Connectors` 。 必需。 |
-| name          | String                            | 要显示在 Microsoft 365 管理中心中的连接的显示名称。 最大长度为128个字符。 必需。 |
+| 说明   | 字符串                            | Microsoft 365 管理中心显示的连接的说明。 可选。 |
+| id            | 字符串                            | 在 Azure Active Directory 租户中，开发人员提供的连接的唯一 ID。 最大长度为32个字符。 必须仅包含字母数字字符。 不能以 `Microsoft` 下列值开头，也不能为下列值之一：、、、、、、、、、、 `None` `Directory` `Exchange` `ExchangeArchive` `LinkedIn` `Mailbox` `MicrosoftSearch` `OneDriveBusiness` `SharePoint` `Teams` `Yammer` `Connectors` 。 必需。 |
+| name          | 字符串                            | 要显示在 Microsoft 365 管理中心中的连接的显示名称。 最大长度为128个字符。 必需。 |
+| state         | connectionState                   | 指示连接的当前状态。 可能的值为 `draft` 、、 `ready` `obsolete` 和 `limitExceeded` 。 必填。 |
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型                                                     | 说明 |
 |:-------------|:---------------------------------------------------------|:---|
 | items        | [externalItem](externalitem.md) 集合               | 只读。可为空。 |
-| operations   | [connectionOperation](connectionoperation.md) 集合 | 只读。 可为空。 |
+| operations   | [connectionOperation](connectionoperation.md) 集合 | 只读。 可为 Null。 |
 | 架构       | [schema](schema.md)                                      | 只读。可为空。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -71,7 +72,8 @@ ms.locfileid: "48026927"
   "configuration": {"@odata.type": "microsoft.graph.configuration"},
   "description": "String",
   "id": "String (identifier)",
-  "name": "String"
+  "name": "String",
+  "state": "String"
 }
 ```
 
@@ -84,5 +86,3 @@ ms.locfileid: "48026927"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

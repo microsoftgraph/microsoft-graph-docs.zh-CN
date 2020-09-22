@@ -1,0 +1,110 @@
+---
+title: 创建 externalGroup
+description: 创建新的 externalGroup 对象。
+author: snlraju-msft
+localization_priority: Normal
+ms.prod: search
+doc_type: apiPageType
+ms.openlocfilehash: fb836591b86972144f3ff632f807f7e1d4c0e82c
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193853"
+---
+# <a name="create-externalgroup"></a>创建 externalGroup
+
+命名空间：microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+创建新的 [externalGroup](../resources/externalgroup.md) 对象。
+
+## <a name="permissions"></a>权限
+
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+| 权限类型                        | 权限（从最高特权到最低特权） |
+|:---------------------------------------|:--------------------------------------------|
+| 委派（工作或学校帐户）     | 不支持                               |
+| 委派（个人 Microsoft 帐户） | 不支持                               |
+| 应用程序                            | ExternalItem.ReadWrite.All                  |
+
+## <a name="http-request"></a>HTTP 请求
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
+``` http
+POST /external/connections/{connectionId}/groups
+```
+
+## <a name="request-headers"></a>请求标头
+
+| 名称          | 说明                 |
+|:--------------|:----------------------------|
+| Authorization | Bearer {token}。必需。   |
+| Content-Type  | application/json. Required. |
+
+## <a name="request-body"></a>请求正文
+
+在请求正文中，提供 [externalGroup](../resources/externalgroup.md) 对象的 JSON 表示形式。
+
+下表显示创建 [externalGroup](../resources/externalgroup.md)时所需的属性。
+
+| 属性    | 类型   | 说明                                                                                                              |
+|:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
+| id          | 字符串 | 连接中的外部组的唯一 ID。 它必须是字母数字，最长可为128个字符。 |
+| displayName | 字符串 | 外部组的友好名称。 可选。                                                                      |
+| 说明 | 字符串 | 外部组的说明。 可选。                                                                         |
+
+## <a name="response"></a>响应
+
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [externalGroup](../resources/externalgroup.md) 对象。
+
+## <a name="examples"></a>示例
+
+### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "create_externalgroup_from_connection"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/external/connections/contosohr/groups
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.externalGroup",
+  "id": "31bea3d537902000",
+  "displayName": "Contoso Marketing",
+  "description": "The product marketing team"
+}
+```
+
+<!-- markdownlint-disable MD024 -->
+### <a name="response"></a>响应
+
+**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.externalGroup"
+}
+-->
+
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.externalGroup",
+  "id": "31bea3d537902000",
+  "displayName": "Contoso Marketing",
+  "description": "The product marketing team"
+}
+```

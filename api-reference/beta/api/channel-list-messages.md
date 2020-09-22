@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 19aa91baec24381a4dbf5cc7c27a052b144433d5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 17233e6bfdd874743fc89e199e2848edb6965a8d
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987147"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192357"
 ---
 # <a name="list-channel-messages"></a>列出频道消息
 
@@ -117,7 +117,8 @@ Content-type: application/json
             "etag": "1555375673184",
             "messageType": "message",
             "createdDateTime": "2019-04-16T00:47:53.184Z",
-            "lastModifiedDateTime": null,
+            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": "",
             "summary": null,
@@ -163,7 +164,8 @@ Content-type: application/json
             "etag": "1548100551893",
             "messageType": "message",
             "createdDateTime": "2019-01-21T19:55:51.644Z",
-            "lastModifiedDateTime": null,
+            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": "",
             "summary": null,
@@ -224,7 +226,8 @@ Content-type: application/json
             "etag": "1548100547534",
             "messageType": "message",
             "createdDateTime": "2019-01-21T19:55:47.534Z",
-            "lastModifiedDateTime": null,
+            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": "",
             "summary": null,

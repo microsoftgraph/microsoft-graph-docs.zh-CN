@@ -1,5 +1,7 @@
+<!-- markdownlint-disable MD041 -->
+
 ```csharp
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// PATCH https://graph.microsoft.com/v1.0/teams/{team-id}
 
 var team = new Team
 {
@@ -10,7 +12,9 @@ var team = new Team
     }
 };
 
-await graphClient.Teams["{id}"]
+var teamId = "71766077-aacc-470a-be5e-ba47db3b2e88";
+
+await graphClient.Teams[teamId]
     .Request()
     .UpdateAsync(team);
 ```

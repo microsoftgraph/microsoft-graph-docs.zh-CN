@@ -1,16 +1,16 @@
 ---
 title: chatMessage 资源类型
-description: 代表 "频道" 或 "聊天" 实体中的单个聊天消息。 聊天消息可以是根聊天消息，也可以是由聊天消息中的 **replyToId** 属性定义的线程的一部分。
+description: 代表 "频道" 或 "聊天" 实体中的单个聊天消息。 聊天消息可以是一个根聊天消息，也可以是由聊天消息中的 **replyToId** 属性定义的线程的一部分。
 doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: c9025ed27f9155773413cd00454be14f82d8b2e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f1af347d0c043ec2b0ca2da05ba44331aab925d2
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064330"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193461"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -52,13 +52,14 @@ ms.locfileid: "48064330"
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|id|String| 只读。 消息的唯一 ID。|
+|id|字符串| 只读。 消息的唯一 ID。|
 |replyToId| string | 只读。 线程的父聊天消息或根聊天消息的 ID。  (仅适用于频道中的聊天消息，而不是聊天。 )  |
 |from|[identitySet](identityset.md)| 只读。 聊天消息发件人的详细信息。|
 |etag| string | 只读。 聊天消息的版本号。 |
 |messageType|string|聊天消息的类型。 可能的值是： `message` 。|
 |createdDateTime|dateTimeOffset|只读。 在聊天消息创建时的时间戳。|
-|lastModifiedDateTime|dateTimeOffset|只读。 在创建或编辑聊天消息时的时间戳，包括答复的时间 (如果它是频道中的根聊天消息) 或者添加或删除了反应。 |
+|lastModifiedDateTime|dateTimeOffset|只读。  (初始设置) 或修改，包括添加或删除反应时）中创建聊天邮件时的时间戳。 |
+|lastEditedDateTime|dateTimeOffset|只读。 在对聊天消息进行编辑时的时间戳。 触发团队 UI 中的 "编辑" 标志。 如果未进行任何编辑，则该值为 `null` 。|
 |deletedDateTime|dateTimeOffset|只读。 删除聊天邮件的时间戳，如果未删除，则为 null。 |
 |subject|string| 聊天消息的主题，以纯文本形式。|
 |body|[itemBody](itembody.md)|聊天消息内容的纯文本/HTML 表示形式。 表示形式由正文中的 contentType 进行指定。 如果聊天消息包含 [chatMessageMention](chatmessagemention.md)，则该内容始终为 HTML。 |
@@ -125,5 +126,4 @@ ms.locfileid: "48064330"
   "suppressions": []
 }
 -->
-
 

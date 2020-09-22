@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 95312f2e95899ec160d9217cf896052b6463d393
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aaa7fe900852f00851cafea2c18e71ec7fec7c8c
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058026"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193328"
 ---
 # <a name="subscription-resource-type"></a>订阅资源类型
 
@@ -66,7 +66,7 @@ ms.locfileid: "48058026"
 |:--------------------|:-------------------------|
 | 安全**警报**     | 43200分钟（不到 30 天）  |
 | Teams **callRecord**    | 4230 分钟（不到 3 天）  |
-| 团队 **了 chatmessage**    | 60分钟 (1 小时)   |
+| Teams **chatMessage**    | 60分钟 (1 小时)   |
 | 组 **对话** | 4230 分钟（不到 3 天）    |
 | OneDrive **driveItem**    | 4230 分钟（不到 3 天）    |
 | SharePoint **列表**    | 4230 分钟（不到 3 天）    |
@@ -85,12 +85,25 @@ ms.locfileid: "48058026"
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.subscription"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.subscription",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "skippable": false,
+        "toppable": false,
+        "countable": false,
+        "expandable": false,
+        "filterable": false,
+        "referenceable": false,
+        "selectable": false,
+        "sortable": false
+      }
+    }
+  ]
 }-->
 
 ```json

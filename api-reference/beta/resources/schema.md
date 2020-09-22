@@ -1,16 +1,16 @@
 ---
 title: 架构资源类型
-description: 介绍内容的类型，以及如何在 Microsoft Search 连接中对项目中的每个属性编制索引。
+description: 连接架构确定如何将内容添加到连接中，以用于各种 Microsoft Graph 体验。
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 0d5182e68fd1b1d53abb5b3fa623f3048abfe723
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ff14f04adb31d99aadec15cb9368e09a098c7a26
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083965"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192866"
 ---
 # <a name="schema-resource-type"></a>架构资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48083965"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-介绍内容的类型，以及如何在 Microsoft Search [连接](externalconnection.md)中对项目中的每个属性编制索引。
+[连接](externalconnection.md)架构确定如何将外部内容用于各种 Microsoft Graph 体验。 架构是计划添加到连接中的所有属性的简单列表及其属性、标签和别名。 在将项目添加到连接之前，必须注册架构。
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "48083965"
 
 ## <a name="properties"></a>属性
 
-| 属性   | 类型                               | 说明                |
+| 属性   | 类型                               | 描述                |
 |:-----------|:-----------------------------------|:---------------------------|
 | #c1   | 字符串                             | 必须设置为 `microsoft.graph.externalItem`。 必需。 |
 | properties | [属性](property.md) 集合 | 为连接中的项目定义的属性。 最小属性数为1，最大值为128。 |

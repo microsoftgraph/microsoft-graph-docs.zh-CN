@@ -5,18 +5,18 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 04d6b7a92a7e2ee2acf8ad539c055286326310af
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 185119e86bab747d7889d8b0f592b4ffadc4f094
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071253"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193433"
 ---
 # <a name="enum-values"></a>枚举值
 
 命名空间：microsoft.graph
 
-### <a name="volumetype-values"></a>volumeType 值 
+### <a name="volumetype-values"></a>volumeType 值
 
 | 成员
 |:--------------
@@ -48,7 +48,7 @@ ms.locfileid: "48071253"
 |spy|
 |相互|
 
-### <a name="anniversarytype-values"></a>anniversaryType 值 
+### <a name="anniversarytype-values"></a>anniversaryType 值
 
 |成员|
 |:---|
@@ -56,7 +56,7 @@ ms.locfileid: "48071253"
 |筹划|
 |向 unknownfuturevalue|
 
-### <a name="skillproficiencylevel-values"></a>skillProficiencyLevel 值 
+### <a name="skillproficiencylevel-values"></a>skillProficiencyLevel 值
 
 |成员|
 |:---|
@@ -67,7 +67,7 @@ ms.locfileid: "48071253"
 |处理器|
 |向 unknownfuturevalue|
 
-### <a name="languageproficiencylevel-values"></a>languageProficiencyLevel 值 
+### <a name="languageproficiencylevel-values"></a>languageProficiencyLevel 值
 
 |成员|
 |:---|
@@ -79,7 +79,7 @@ ms.locfileid: "48071253"
 |nativeOrBilingual|
 |向 unknownfuturevalue|
 
-### <a name="personrelationship-values"></a>personRelationship 值 
+### <a name="personrelationship-values"></a>personRelationship 值
 
 |成员|
 |:---|
@@ -138,6 +138,18 @@ ms.locfileid: "48071253"
 |message|
 |driveItem|
 |externalItem|
+|网站|
+|list|
+|listItem|
+|drive|
+
+### <a name="bucketaggregationsortproperty-values"></a>bucketAggregationSortProperty 值
+
+|成员|
+|:---|
+|count|
+|keyAsString|
+|keyAsNumber|
 
 ### <a name="contactrelationship-values"></a>contactRelationship 值
 
@@ -177,7 +189,7 @@ ms.locfileid: "48071253"
 |:---|
 |无|
 |car|
-|calendar|
+|日历|
 |运行|
 |plane|
 |firstAid|
@@ -628,7 +640,7 @@ ms.locfileid: "48071253"
 | 成员
 |:-------------------------
 | 无
-| 组织者
+| organizer － 组织者
 | tentativelyAccepted
 | 接受
 | 邀请
@@ -1316,15 +1328,15 @@ ms.locfileid: "48071253"
 | 向 unknownfuturevalue
 
 ### <a name="openidconnectresponsemode-values"></a>openIdConnectResponseMode 值
-| 成员                
+| 成员
 |:----------------------
 | 无
 | form_post
-| 查询 
-| 向 unknownfuturevalue 
+| 查询
+| 向 unknownfuturevalue
 
 ### <a name="openidconnectresponsetypes-values"></a>openIdConnectResponseTypes 值
-| 成员                
+| 成员
 |:----------------------
 | 无
 | code
@@ -1356,4 +1368,25 @@ ms.locfileid: "48071253"
 | 审批              | 1      | 系统自动创建的已连接组织具有此状态值。 它们不包含在请求程序范围类型的分配策略中 `AllConfiguredConnectedOrganizationSubjects` 。   |
 | 向 unknownfuturevalue    | 2      | 一个 sentinel 成员。                                                                                                                                                                                                 |
 
+### <a name="identitysourcetype-values"></a>identitySourceType 值
 
+|成员|
+|:---|
+|azureActiveDirectory|
+|对外|
+
+### <a name="externalgroupmembertype-values"></a>externalGroupMemberType 值
+
+|成员|
+|:---|
+|user|
+|group|
+
+### <a name="connectionstate-values"></a>connectionState 值
+
+|成员|
+|:---|
+|拟定|
+|即可|
+|过时|
+|limitExceeded|

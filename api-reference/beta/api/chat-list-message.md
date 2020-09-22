@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bc6726a95e186aae7da9adc3a659a632fe0c7545
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 029b9c968807c14afae289d151e48ed678f8f1d0
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982708"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192299"
 ---
 # <a name="list-chat-messages"></a>列出聊天消息
 
@@ -114,7 +114,8 @@ Content-length: 201
             "etag": "1555631722147",
             "messageType": "message",
             "createdDateTime": "2019-04-18T23:55:22.147Z",
-            "lastModifiedDateTime": null,
+            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": null,
             "summary": null,
@@ -154,7 +155,8 @@ Content-length: 201
             "etag": "1555631540287",
             "messageType": "message",
             "createdDateTime": "2019-04-18T23:52:20.287Z",
-            "lastModifiedDateTime": null,
+            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": "",
             "summary": null,
@@ -185,7 +187,8 @@ Content-length: 201
             "etag": "1555631512068",
             "messageType": "message",
             "createdDateTime": "2019-04-18T23:51:52.068Z",
-            "lastModifiedDateTime": null,
+            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": null,
             "summary": null,
@@ -225,7 +228,8 @@ Content-length: 201
             "etag": "1555631511115",
             "messageType": "message",
             "createdDateTime": "2019-04-18T23:51:51.115Z",
-            "lastModifiedDateTime": null,
+            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": null,
             "summary": null,

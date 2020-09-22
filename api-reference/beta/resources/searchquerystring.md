@@ -3,30 +3,29 @@ title: searchQueryString 资源类型
 description: searchQueryString
 localization_priority: Normal
 author: nmoreau
-ms.prod: ''
+ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 67acb8c18e5a65d6462787299a5c9e57b0f2d485
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 70c029ccb7751287b090015467549169dde4bae9
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985732"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193252"
 ---
-# <a name="searchquerystring-resource-type"></a>searchQueryString 资源类型
+# <a name="searchquerystring-resource-type-deprecated"></a>searchQueryString 资源类型 (弃用) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 查询的搜索词。
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | 描述 |
 |:-------------|:------------|:------------|
-|查询|String|包含请求的实际搜索词。|
+|查询|字符串|包含请求的实际搜索词。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,40 +1,48 @@
 ---
 title: 在 Microsoft Graph 中使用 Microsoft Search API 搜索自定义类型
-description: 您可以使用 Microsoft 搜索 API 通过[externalItem](/graph/api/resources/externalitem?view=graph-rest-beta)资源导入外部数据，并对此外部内容运行搜索查询。
+description: 您可以使用 Microsoft 搜索 API 通过 [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) 资源导入外部数据，并对此外部内容运行搜索查询。
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 875d6e928f5136ec0b33d013cc111739a3b6067e
-ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
+ms.openlocfilehash: b125b8f923e941ad73d5c578e99a67fdd9ea9eea
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45142307"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192600"
 ---
-# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-custom-types"></a>在 Microsoft Graph 中使用 Microsoft Search API 搜索自定义类型
+# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a>使用 Microsoft 搜索 API 搜索使用 Microsoft Graph 连接器导入的自定义类型
 
-您可以使用 Microsoft 搜索 API 通过[externalItem](/graph/api/resources/externalitem?view=graph-rest-beta)资源导入外部数据，并对此外部内容运行搜索查询。
+使用 Microsoft 搜索 API 跨内容引入进行搜索，并按 [Microsoft Graph 连接器](https://docs.microsoft.com/microsoftsearch/connectors-overview)编制索引。 内容可以通过 Microsoft 提供的 [内置连接器](https://docs.microsoft.com/microsoftsearch/connectors-gallery) 或通过使用 [microsoft GRAPH 连接器摄取 API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)实现的自定义连接器导入。
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
-若要搜索自定义类型，请在[查询](/graph/api/search-query?view=graph-rest-beta)方法请求正文中指定以下内容：
+[!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-- **ContentSources**属性，以包含在连接器安装过程中分配的连接 ID
+导入并编制内容索引后，您可以使用搜索 API 来查询内容。
 
-- **EntityTypes**属性用作`externalItem`
+若要搜索自定义类型，请在 [查询](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) 方法的请求正文中指定以下属性：
 
-- **Stored_fields**属性，以包含要检索的外部项中的字段
+- **ContentSources**属性，以包含在连接器安装过程中分配的连接 ID。 可以在多个连接之间传递多个连接 Id 以进行搜索。 结果在单个列表中返回，并在多个连接中排名。
+
+<!--
+TODOSEARCHAPI - Bug 1653398 
+-->
+
+- **EntityTypes**属性为 `externalItem` 。
+
+- **Fields**属性，用于包含要检索的外部项中的字段。
 
 ## <a name="example"></a>示例
+
+在此示例中，使用 Azure SQL 内置连接器引入了 [AdventureWorks](https://docs.microsoft.com/sql/samples/adventureworks-install-configure) 数据库的内容。
 
 ### <a name="request"></a>请求
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
-```
 
-```json
 {
   "requests": [
     {
@@ -42,21 +50,18 @@ Content-Type: application/json
         "externalItem"
       ],
       "contentSources": [
-        "/external/connections/servicenow-connector-contoso"
+          "/external/connections/azuresqlconnector",
+          "/external/connections/azuresqlconnector2"
       ],
       "query": {
-        "query_string": {
-          "query": "contoso tickets"
-        }
+        "queryString": "yang"
       },
       "from": 0,
       "size": 25,
-      "stored_fields": [
-        "number",
-        "shortdescription",
-        "syscreatedon",
-        "accessurl",
-        "previewContent"
+      "fields": [
+        "BusinessEntityID",
+        "firstName",
+        "lastName"
       ]
     }
   ]
@@ -65,46 +70,49 @@ Content-Type: application/json
 
 ### <a name="response"></a>响应
 
-```json
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)",
   "value": [
     {
+      "searchTerms": ["ya"],
       "hitsContainers": [
         {
           "total": 2,
           "moreResultsAvailable": false,
           "hits": [
             {
-              "_id": "AAMkADc0NDNlNTE0",
-              "_score": 1,
-              "_sortField": "Relevance",
-              "_source": {
+              "hitId": "AAMkADc0NDNlNTE0",
+              "rank": 1,
+              "summary": "<ddd/>",
+              "contentSource": "/external/connections/azuresqlconnector",
+              "resource": {
                 "@odata.type": "#microsoft.graph.externalItem",
                 "properties": {
-                  "number": "KB0010025",
-                  "shortdescription": "Contoso maintenance guidelines",
-                  "syscreatedon": "2019-10-14T22:45:02Z",
-                  "accessurl": "https://contoso.service-now.com/kb_view.do?sys_kb_id=6b5465781ba000104793877ddc4bcb81",
-                  "previewContent": "Contoso maintenance guidelines"
+                  "businessEntityID": 20704,
+                  "firstName": "Amy",
+                  "lastName": "Yang"
                 }
               }
             },
-            {
-              "_id": "MG+1glPAAAAAAl3AAA=",
-              "_score": 2,
-              "_sortField": "Relevance",
-              "_source": {
+           {
+              "hitId": "AQMkADg3M2I3YWMyLTEwZ",
+              "rank": 2,
+              "summary": "<ddd/>",
+              "contentSource": "/external/connections/azuresqlconnector2",
+              "resource": {
                 "@odata.type": "#microsoft.graph.externalItem",
                 "properties": {
-                  "number": "KB0054396",
-                  "shortdescription": "Contoso : Setting Office for the first time.",
-                  "syscreatedon": "2019-08-09T01:53:26Z",
-                  "accessurl": "https://contoso.service-now.com/kb_view.do?sys_kb_id=004d8d931b0733004793877ddc4bcb29",
-                  "previewContent": "Description:  Setting Office for the first time.  Resolution:    To setup any Office app for the first time, tap any Office app like Word to launch it.    Tap Sign in if you already have a Microsoft Account or a Microsoft 365 work or school account."
+                  "businessEntityID": 20704,
+                  "shortdescription": "Contoso maintenance guidelines",
+                  "firstName": "Amy",
+                  "lastName": "Yang"
                 }
               }
-            }
+            },
           ]
         }
       ]
@@ -115,10 +123,8 @@ Content-Type: application/json
 
 ## <a name="known-limitations"></a>已知限制
 
-- 自定义类型不支持跨多个源进行搜索（在**contentSources**中指定）。 一次只能搜索一个连接。
-
-- 您必须指定**stored_fields**属性;否则，不会返回搜索结果。
+- 您必须指定 **fields** 属性，才能在搜索架构中获取可检索的字段。
 
 ## <a name="next-steps"></a>后续步骤
 
-- [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [使用 Microsoft 搜索 API 查询数据](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)

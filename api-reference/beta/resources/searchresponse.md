@@ -1,16 +1,16 @@
 ---
 title: searchResponse 资源类型
-description: 在此处提供说明
+description: SearchResponse 的说明
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: a2bdd013cb755d37664c89aca81a8ae89c63b4f9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: deb5450017b4ae9db534c30f71dd6da4f1a9b812
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973737"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192747"
 ---
 # <a name="searchresponse-resource-type"></a>searchResponse 资源类型
 
@@ -18,13 +18,11 @@ ms.locfileid: "47973737"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-SearchResponse 包含搜索查询中的结果。
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+表示搜索查询中的结果和用于查询的术语。 
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | 描述 |
 |:-------------|:------------|:------------|
 |hitsContainers|[searchHitsContainer](searchhitscontainer.md) 集合|搜索结果的集合。|
 |searchTerms|String collection|包含在初始搜索查询中发送的搜索词。|

@@ -1,16 +1,16 @@
 ---
 title: searchHitsContainer 资源类型
-description: 在此处提供说明
+description: 表示搜索结果的列表。
 localization_priority: Normal
 author: nmoreau
-ms.prod: ''
+ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: d314fcdd2a62be5aea05bed3b2a9e1881f95c3d0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a2d120722179cb0fd771a84f867948a7fbfffdd4
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985785"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192782"
 ---
 # <a name="searchhitscontainer-resource-type"></a>searchHitsContainer 资源类型
 
@@ -20,15 +20,14 @@ ms.locfileid: "47985785"
 
 表示搜索结果的列表。
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | 说明 |
+| 属性     | 类型        | 描述 |
 |:-------------|:------------|:------------|
-|影响|[searchHit](searchhit.md) 集合|Encasulate 搜索结果。|
-|moreResultsAvailable|Boolean|如果有更多结果可用，则提供信息。 在这种情况下，您可以增加 "from" 和 "to" 偏移量。|
-|total|Int32|总结果数。 注释这不是页面结果中的数值，而是满足查询的结果总数。|
+|影响|[searchHit](searchhit.md) 集合|搜索结果的集合。|
+|moreResultsAvailable|Boolean|如果有更多结果可用，则提供信息。 根据此信息，您可以相应地调整[searchRequest](searchrequest.md)的 " **from** " 和 " **size** " 属性。|
+|total|Int32|总结果数。 注释这不是页面上的结果数，而是满足查询的总结果数。|
+|aggregations|[searchAggregation](searchaggregation.md) 集合|包含根据请求中指定的提供的 [aggregationOption](aggregationoption.md) 计算出的聚合集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -43,13 +42,16 @@ ms.locfileid: "47985785"
   "baseType": null
 }-->
 
+
 ```json
 {
   "hits": [{"@odata.type": "microsoft.graph.searchHit"}],
   "moreResultsAvailable": true,
-  "total": 1024
+  "total": 1024,
+  "aggregations": [{"@odata.type": "microsoft.graph.searchAggregation"}]
 }
 ```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -60,4 +62,5 @@ ms.locfileid: "47985785"
   "section": "documentation",
   "tocPath": ""
 }-->
+
 

@@ -1,18 +1,18 @@
 ---
-title: 搜索：查询
+title: searchEntity： query
 description: 运行请求正文中指定的查询。 搜索结果在响应中提供。
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 781517d686ad0c01d2d1b7bd235bdf3dbb009f03
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e877b1e126a353aae04a90500fdfe99cd4ec8342
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074144"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193316"
 ---
-# <a name="search-query"></a>搜索：查询
+# <a name="searchentity-query"></a>searchEntity： query
 
 命名空间：microsoft.graph
 
@@ -20,15 +20,15 @@ ms.locfileid: "48074144"
 
 运行请求正文中指定的查询。 搜索结果在响应中提供。
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。 
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 阅读文章、文件、读取、ExternalItem、阅读、全部 |
+| 委派（工作或学校帐户）     | 已读取的邮件。读取、读取、读取、ExternalItem、文件、读取、全部、读取、全部、全部、全部、读取、全部、全部、 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | 不支持。 |
 
@@ -49,20 +49,14 @@ POST /search/query
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型        | 说明 |
+| 参数    | 类型        | 描述 |
 |:-------------|:------------|:------------|
-|requests|[searchRequest](../resources/searchrequest.md) 集合|要发送到 JSON blob 中格式化的查询终结点的搜索请求。 它包含响应中的预期实体类型、基础源、分页参数、请求的字段和实际搜索查询。|
+|requests|[searchRequest](../resources/searchrequest.md) 集合|一个或多个在 JSON blob 中格式化的搜索请求的集合。 每个 JSON blob 都包含响应中预期的资源类型、基础源、分页参数、请求的字段和实际搜索查询。 <br> 了解有关搜索实体类型的特定组合以及对搜索结果进行排序或聚合的 [已知限制](../resources/search-api-overview.md#known-limitations) 。 |
 
 ## <a name="response"></a>响应
 
 如果成功，此方法 `HTTP 200 OK` 在响应正文中返回响应代码和 [searchResponse](../resources/searchresponse.md) 集合对象。
-
-## <a name="common-use-cases"></a>常见用例
-
-- 搜索 [邮件消息](/graph/search-concept-messages)
-- 搜索 [日历事件](/graph/search-concept-events)
-- 搜索 [文件](/graph/search-concept-files)
-- 搜索 [自定义类型 (连接器) ](/graph/search-concept-custom-types) 数据
+ 
 
 ## <a name="examples"></a>示例
 
@@ -90,13 +84,11 @@ Content-type: application/json
         "/external/connections/connectionfriendlyname"
       ],
       "query": {
-        "query_string": {
-          "query": "contoso product"
-        }
+        "queryString": "contoso product"
       },
       "from": 0,
       "size": 25,
-      "stored_fields": [
+      "fields": [
         "title",
         "description"
       ]
@@ -148,11 +140,10 @@ Content-type: application/json
         {
           "hits": [
             {
-              "_id": "1",
-              "_score": 1,
-              "_sortField": "Relevance",
-              "_summary": "_summary-value",
-              "_source": "The source field will contain the underlying graph entity part of the response"
+              "hitId": "1",
+              "rank": 1,
+              "summary": "_summary-value",
+              "resource": "The source field will contain the underlying graph entity part of the response"
             }
           ],
           "total": 47,
@@ -163,6 +154,15 @@ Content-type: application/json
   ]
 }
 ```
+
+## <a name="see-also"></a>另请参阅
+- 搜索 [邮件消息](/graph/search-concept-messages)
+- 搜索 [日历事件](/graph/search-concept-events)
+- 在 SharePoint 和 OneDrive 中搜索内容 ([文件、列表和网站](/graph/search-concept-files)) 
+- 搜索 [自定义类型 (Graph 连接器) ](/graph/search-concept-custom-types) 数据
+- [对搜索结果进行排序](/graph/search-concept-sort)
+- 使用 [聚合](/graph/search-concept-aggregations) 优化搜索结果
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

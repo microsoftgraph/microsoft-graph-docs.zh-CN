@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: ea6b726a651beaa4619d593c336598fd8890d4af
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a9164b90d8b3156fa9abb57d41767c9a322f7c27
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969261"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193447"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/subscriptions
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应。 将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -134,7 +134,10 @@ Content-length: 586
       "notificationUrl": "https://webhookappexample.azurewebsites.net/api/notifications",
       "expirationDateTime": "2018-03-12T05:00:00Z",
       "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
-      "latestSupportedTlsVersion": "v1_2"
+      "latestSupportedTlsVersion": "v1_2",
+      "encryptionCertificate": "",
+      "encryptionCertificateId": "",
+      "includeResourceData": false
     }
   ]
 }

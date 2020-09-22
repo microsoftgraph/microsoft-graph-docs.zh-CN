@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8dd9ecd5f845682187fb84a9e057d7fdb7cb70d0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7c365fd343af3078663cbd184b67b49feb37945c
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994322"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193475"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 
@@ -31,13 +31,13 @@ ms.locfileid: "47994322"
 |[列出聊天中的消息](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | 获取一对一聊天或群组聊天中的消息。 | 委派和应用程序 * |
 |[获取聊天中的消息](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | 获取聊天中的单个消息。 | 委派和应用程序 * |
 
-\*> **注意：** 使用应用程序权限时，请务必了解如何获取聊天 ID。 由于不支持列出具有应用程序权限的聊天，因此并非所有方案都可行。 可以获取具有委派权限的聊天 Id，也可以通过应用程序权限获取 [/chats/allMessages 的更改通知](../api/subscription-post-subscriptions.md) 。
+\*> **注意：** 使用应用程序权限时，请务必了解如何获取聊天 ID。 由于不支持列出具有应用程序权限的聊天，因此并非所有方案都可行。 可以获取具有委派权限的聊天 Id，也可以通过应用程序权限获取 [/chats/getAllMessages 的更改通知](../api/subscription-post-subscriptions.md) 。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-| id| String| 聊天的唯一标识符。 只读。|
+| id| 字符串| 聊天的唯一标识符。 只读。|
 | topic| String|   (聊天的可选) 主题或主题。 仅适用于组聊天。|
 | createdDateTime| dateTimeOffset|  聊天的创建日期和时间。 只读。|
 | lastUpdatedDateTime| dateTimeOffset|  重命名或更改成员身份时的聊天的日期和时间。 将邮件发送到聊天时，不会对 lastUpdatedDateTime 进行更新。 只读。|

@@ -1,45 +1,44 @@
 ---
-title: 获取 "获取"
-description: 检索频道的 "工作" 导航路径。
+title: 获取 filesFolder
+description: 检索频道的 filesFolder 导航路径。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: be54dc5e25d84fa9cd6c70faf926a8708ce9c475
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: 623696838a975249d4f1df6770aa0d17cb66fbe0
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863115"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192394"
 ---
-# <a name="get-filesfolder"></a>获取 "获取"
+# <a name="get-filesfolder"></a>获取 filesFolder
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取存储[通道](../resources/channel.md)文件的位置的元数据。 
+获取[频道](../resources/channel.md)的文件储存位置元数据。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 文件. All、Group. all、Group、Group。全部。    |
+|委派（工作或学校帐户） | Files.Read.All, Group.Read.All, Files.ReadWrite.All, Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 文件. All、Group. all、Group、Group。全部。     |
+|应用程序 | Files.Read.All, Group.Read.All, Files.ReadWrite.All, Group.ReadWrite.All     |
 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/filesFolder
-
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法不支持[OData 查询参数](/graph/query-parameters)来自定义响应。
+此运营商不支持通过 [OData 查询参数](/graph/query-parameters) 来自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -98,6 +97,7 @@ Content-length: 401
     "id": "01H7CFEKENJSSIUHGADZBKODARINQC5JMD",
     "createdDateTime": "0001-01-01T00:00:00Z",
     "lastModifiedDateTime": "2020-01-23T18:47:13Z",
+    "lastEditedDateTime": null,
     "name": "Documentation Planning",
     "webUrl": "https://microsoft.sharepoint.com/teams/ExtensibilityandFundamentals/Shared%20Documents/Documentation%20Planning",
     "size": 2374080,
@@ -107,7 +107,7 @@ Content-length: 401
     },
     "fileSystemInfo": {
         "createdDateTime": "2020-01-23T18:47:12Z",
-        "lastModifiedDateTime": "2020-01-23T18:47:13Z"
+        "lastModifiedDateTime": "2020-01-23T18:47:13Z",
     },
     "folder": {
         "childCount": 7
@@ -126,4 +126,6 @@ Content-length: 401
   "suppressions": [
   ]
 }-->
+
+
 
