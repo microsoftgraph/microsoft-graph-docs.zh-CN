@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: f3b69838a6de68938efac12acdfbcd4fd977c684
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d1678d4fe77ade738f7eb298221772ced381e2d1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810403"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087549"
 ---
  #  <a name="securescorecontrolstateupdate-resource-type"></a>secureScoreControlStateUpdate 资源类型
 包含用户更新的控件状态的历史记录 (控件状态包括默认值、被忽略的 ThirdParty、已审阅的) 。
@@ -46,3 +46,5 @@ ms.locfileid: "46810403"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

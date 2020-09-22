@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: eb49af67f2475bdaf88351edcbbaa36f67e3c3fe
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: fd9254deb969a860b14268057421e4e1547c7a08
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123070"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087934"
 ---
 # <a name="delete-programcontrol"></a>删除 programControl
 
@@ -18,17 +18,17 @@ ms.locfileid: "43123070"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中，删除[programControl](../resources/programcontrol.md)对象。  这会断开某个程序的访问评审。
-## <a name="permissions"></a>权限
+在 "Azure AD [access 评论](../resources/accessreviews-root.md) " 功能中，删除 [programControl](../resources/programcontrol.md) 对象。  这会断开某个程序的访问评审。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | ProgramControl.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | ProgramControl.ReadWrite.All  |
+|应用程序                            | ProgramControl.ReadWrite.All  |
 
-登录用户还必须位于允许他们删除的`programControl`目录角色中。
+登录用户还必须位于允许他们删除的目录角色中 `programControl` 。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -95,3 +95,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

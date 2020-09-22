@@ -3,24 +3,24 @@ title: 创建 userPFXCertificate
 description: 创建新的 userPFXCertificate 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a22cdb432fac4bd6181a0ef5752661999cc1ef51
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c86303f417ac40c19a0e2f86702d27f36d5a1720
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437659"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088053"
 ---
 # <a name="create-userpfxcertificate"></a>创建 userPFXCertificate
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象。
+创建新的 [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,24 +53,24 @@ POST /deviceManagement/userPfxCertificates
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|PFX 证书的唯一标识符。|
-|为|String|SHA-1 PFX 证书的指纹。|
+|id|字符串|PFX 证书的唯一标识符。|
+|为|字符串|SHA-1 PFX 证书的指纹。|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|证书的预期目的是从部署的角度来看。 可取值为：`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi`。|
-|userPrincipalName|String|PFX 证书的用户主体名称。|
+|userPrincipalName|字符串|PFX 证书的用户主体名称。|
 |startDateTime|DateTimeOffset|证书的有效期开始日期/时间。|
 |expirationDateTime|DateTimeOffset|证书的有效期到期日期/时间。|
-|providerName|String|用于加密此 blob 的加密提供程序。|
-|名|String|用于对 blob 进行加密的密钥（在提供程序中）的名称。|
+|providerName|字符串|用于加密此 blob 的加密提供程序。|
+|名|字符串|提供程序) 用于对 blob 进行加密的密钥 (的名称。|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|加密/解密过程中提供程序使用的填充方案。 可取值为：`none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
 |encryptedPfxBlob|Binary|加密的 PFX blob。|
-|encryptedPfxPassword|String|加密的 PFX 密码。|
+|encryptedPfxPassword|字符串|加密的 PFX 密码。|
 |createdDateTime|DateTimeOffset|导入此 PFX 证书的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改此 PFX 证书的日期/时间。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -120,6 +120,9 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
 
 
 

@@ -3,20 +3,20 @@ title: deviceManagementTroubleshootingErrorDetails 资源类型
 description: 包含有关错误及其修正的详细信息的对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5fd96bafac19a3501160a3aadcd830be7643f576
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e8f1d6152a51f034d1dbce15b0b7f0113e682bc7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462263"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087647"
 ---
 # <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>deviceManagementTroubleshootingErrorDetails 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,9 +27,9 @@ ms.locfileid: "43462263"
 |:---|:---|:---|
 |context|String|尚未记录|
 |出|String|尚未记录|
-|failureDetails|String|出现问题的详细说明。|
-|纠正|String|有关如何修正此问题的详细说明。|
-|resources|[deviceManagementTroubleshootingErrorResource](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)集合|指向有关此故障的有用文档的链接。|
+|failureDetails|字符串|出现问题的详细说明。|
+|纠正|字符串|有关如何修正此问题的详细说明。|
+|resources|[deviceManagementTroubleshootingErrorResource](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md) 集合|指向有关此故障的有用文档的链接。|
 
 ## <a name="relationships"></a>关系
 无
@@ -57,6 +57,9 @@ ms.locfileid: "43462263"
   ]
 }
 ```
+
+
+
 
 
 

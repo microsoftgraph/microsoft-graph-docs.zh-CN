@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: kevinbellinger
-ms.openlocfilehash: 5ba0cb3b88e5048141cea8085550a4c3e389130e
-ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
+ms.openlocfilehash: 675b1cb4116ec59b65442c683fe07f67a8045379
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47340017"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087997"
 ---
 # <a name="update-profilephoto"></a>更新 profilephoto
 
@@ -24,7 +24,7 @@ ms.locfileid: "47340017"
 
 > **注意**：更新 **用户** 照片时，此操作将先尝试更新 Microsoft 365 中的照片。 如果此操作失败 (由于用户没有邮箱) ，此 API 将尝试更新 Azure Active Directory 中的照片。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -121,3 +121,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

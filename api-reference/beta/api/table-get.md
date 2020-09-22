@@ -5,21 +5,21 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 42c2447956c1d7f3666ded786872ee91753a47d8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 931b2872c7f651af229f5969c032bfca1ccf7b02
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452867"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087815"
 ---
 # <a name="get-table"></a>获取表格
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 table 对象的属性和关系。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -48,7 +48,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[workbookTable](../resources/workbooktable.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookTable](../resources/workbooktable.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -109,3 +109,5 @@ Content-length: 109
   ]
 }
 -->
+
+

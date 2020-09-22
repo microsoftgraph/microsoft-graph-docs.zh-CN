@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 2deb3a4ab39b169778ad43f60170e51eaa32eda9
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 3db31203f9c5827459ab2149efbd3adb28030d0a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810410"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087542"
 ---
 # <a name="securescore-resource-type"></a>secureScore 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "46810410"
 
 | 方法   | 返回类型|说明|
 |:---------------|:--------|:----------|
-|[列出 secureScores](../api/securescores-list.md) | [secureScores](securescores.md) |读取 secureScores 对象的属性和元数据。|
+|[列出 secureScore](../api/securescores-list.md) | [secureScores](securescores.md) |读取 secureScores 对象的属性和元数据。|
 
 
 ## <a name="properties"></a>属性
@@ -35,7 +35,7 @@ ms.locfileid: "46810410"
 |:--|:--|:--|
 |   azureTenantId   |   字符串  |   租户 ID 的 GUID 字符串。  |
 |   createdDateTime |   DateTimeOffset  |   创建实体的日期。  |
-|   id  |   String  |   AzureTenantId_createdDateTime 的组合。   |
+|   id  |   字符串  |   AzureTenantId_createdDateTime 的组合。   |
 |   licensedUserCount   |   Int32   |   给定租户的许可用户计数。    |
 |   activeUserCount |   Int32   |   给定租户的活动用户计数。  |
 |   currentScore    |   双精度  |   租户当前在指定日期的得分。    |
@@ -90,3 +90,5 @@ ms.locfileid: "46810410"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3b11bf2dd17efa227f8c73bcd54de8ea99fa2c42
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 0ee34bf4cf4a7f3f654dd86ce618fc4945a5b9c2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107442"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087738"
 ---
 # <a name="create-message"></a>创建邮件
 
@@ -20,12 +20,12 @@ ms.locfileid: "43107442"
 
 使用此 API 创建新邮件的草稿。可以在任意文件夹中创建草稿，也可以在发送前更新草稿。若要将邮件保存到“草稿”文件夹，请使用 /messages 快捷方式。
 
-在同一个**POST**调用中创建草稿时，可以执行以下操作：
+在同一个 **POST** 调用中创建草稿时，可以执行以下操作：
 
-- 包含[附件](../resources/attachment.md) 
-- 在新邮件中使用[提及](../resources/mention.md)调用其他用户
+- 包含 [附件](../resources/attachment.md) 
+- 在新邮件中使用 [提及](../resources/mention.md) 调用其他用户
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -49,18 +49,18 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[message](../resources/message.md)对象的 JSON 表示形式。
+在请求正文中，提供 [message](../resources/message.md) 对象的 JSON 表示形式。
 
-如果要使用**提及**在新邮件中呼叫其他用户，请执行以下操作：
+如果要使用 **提及** 在新邮件中呼叫其他用户，请执行以下操作：
 
-- 在请求正文中包括所需的**toRecipients**属性、**提及**属性和任何可写邮件属性。
-- 对于**提及**属性中的每个提及，您必须指定**提到**的属性。
+- 在请求正文中包括所需的 **toRecipients** 属性、 **提及** 属性和任何可写邮件属性。
+- 对于 **提及** 属性中的每个提及，您必须指定 **提到** 的属性。
 
 由于**邮件**资源支持[扩展](/graph/extensibility-overview)因此可以使用 `POST` 操作，并在创建邮件时向其添加含有自己的数据的自定义属性。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[message](../resources/message.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [message](../resources/message.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1
@@ -426,3 +426,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

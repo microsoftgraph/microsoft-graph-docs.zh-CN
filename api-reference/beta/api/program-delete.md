@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 205384fea42dd1b6b5bb77f82320082c4d14ae29
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 88c1fc969c6acd8b3a470ea81be8f9274511cc69
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123172"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087969"
 ---
 # <a name="delete-program"></a>删除程序
 
@@ -18,19 +18,19 @@ ms.locfileid: "43123172"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中，删除一个[程序](../resources/program.md)对象。
+在 "Azure AD [access 评论](../resources/accessreviews-root.md) " 功能中，删除一个 [程序](../resources/program.md) 对象。
 
-请勿删除仍与它`programControl`链接的程序，应首先从该程序中删除或取消这些访问审核，并将其链接到其他程序。  此外，请注意，不能删除内置的默认程序。
+请勿删除仍与它链接的程序 `programControl` ，应首先从该程序中删除或取消这些访问审核，并将其链接到其他程序。  此外，请注意，不能删除内置的默认程序。
 
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | ProgramControl.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | 不支持。 |
+|应用程序                            | 不支持。 |
 
 登录用户还必须位于允许他们创建程序的目录角色中。
 
@@ -99,3 +99,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

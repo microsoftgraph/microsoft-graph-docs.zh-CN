@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: 47e5597971c5b1417151ae202bb1e0fade17597a
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 4218caf632c553735c6139bbcf7cd46f64144915
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810970"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087500"
 ---
 # <a name="skypeforbusinesspeertopeeractivityusercounts-resource-type"></a>skypeForBusinessPeerToPeerActivityUserCounts 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "46810970"
 | fileTransfer      | Int64  |
 | reportRefreshDate | 日期   |
 | reportDate        | 日期   |
-| reportPeriod      | String |
+| reportPeriod      | 字符串 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -50,3 +50,5 @@ ms.locfileid: "46810970"
   "reportPeriod": "String"
 }
 ```
+
+

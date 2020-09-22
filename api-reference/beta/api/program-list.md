@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: eab96053d43634cd4280e2e633b1de5da8ff5a17
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 21ffa09f51e0aa64a9b423c0c73f792d90ae1069
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123060"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087948"
 ---
 # <a name="list-programs"></a>列出程序
 
@@ -18,15 +18,15 @@ ms.locfileid: "43123060"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中，列出所有[程序](../resources/program.md)对象。
-## <a name="permissions"></a>权限
+在 "Azure AD [access 评论](../resources/accessreviews-root.md) " 功能中，列出所有 [程序](../resources/program.md) 对象。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | ProgramControl、ProgramControl 和所有  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | ProgramControl、ProgramControl 和所有  |
+|应用程序                            | ProgramControl、ProgramControl 和所有  |
 
  登录用户还必须位于允许他们读取程序的目录角色中。
 
@@ -44,7 +44,7 @@ GET /programs
 不应提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200, OK`正文中返回响应代码和[program](../resources/program.md)对象数组。
+如果成功，此方法 `200, OK` 在响应正文中返回响应代码和 [program](../resources/program.md) 对象数组。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -106,7 +106,7 @@ Content-type: application/json
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列出程序的 programControls](program-listcontrols.md) |     [programControl](../resources/programcontrol.md)集合|    获取程序的控件的集合。|
+|[列出程序的 programControls](program-listcontrols.md) |     [programControl](../resources/programcontrol.md) 集合|    获取程序的控件的集合。|
 
 
 <!--
@@ -120,3 +120,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

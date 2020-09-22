@@ -5,21 +5,21 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b9be22888a9eb3220c044d414f86bf3cb56b8247
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b2a6cbaff8d7543d7a0c482dd6ee6e4793607a33
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452860"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087836"
 ---
 # <a name="table-converttorange"></a>Table: convertToRange
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将表转换为普通单元格区域。保留所有数据。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -110,3 +110,5 @@ Content-length: 169
   ]
 }
 -->
+
+

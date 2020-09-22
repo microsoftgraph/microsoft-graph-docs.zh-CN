@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 33b55ddec6da5351d59c1c5cda32a156e8b0a3e2
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 003576935dd2f963879f2fa70e741c3d3f44a885
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123179"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087983"
 ---
 # <a name="create-program"></a>创建程序
 
@@ -18,15 +18,15 @@ ms.locfileid: "43123179"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中，创建一个新的[程序](../resources/program.md)对象。
-## <a name="permissions"></a>权限
+在 "Azure AD [access 评论](../resources/accessreviews-root.md) " 功能中，创建一个新的 [程序](../resources/program.md) 对象。
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | ProgramControl.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | 不支持。 |
+|应用程序                            | 不支持。 |
 
 登录用户还必须位于允许他们创建程序的目录角色中。
 
@@ -41,7 +41,7 @@ POST /programs
 | Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[程序](../resources/program.md)对象的 JSON 表示形式。
+在请求正文中，提供 [程序](../resources/program.md) 对象的 JSON 表示形式。
 
 下表显示创建程序时所需的属性。
 
@@ -52,11 +52,11 @@ POST /programs
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201, Created`正文中返回响应代码和[程序](../resources/program.md)对象。
+如果成功，此方法 `201, Created` 在响应正文中返回响应代码和 [程序](../resources/program.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-在请求正文中，提供[程序](../resources/program.md)对象的 JSON 表示形式。
+在请求正文中，提供 [程序](../resources/program.md) 对象的 JSON 表示形式。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -110,8 +110,8 @@ Content-type: application/json
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列出程序](program-list.md) | [程序](../resources/program.md)集|  获取所有程序的集合。|
-|[列出程序的 programControls](program-listcontrols.md) |     [programControl](../resources/programcontrol.md)集合|    获取程序的控件的集合。|
+|[列出程序](program-list.md) | [程序](../resources/program.md) 集|  获取所有程序的集合。|
+|[列出程序的 programControls](program-listcontrols.md) |     [programControl](../resources/programcontrol.md) 集合|    获取程序的控件的集合。|
 |[更新程序](program-update.md) |  [主程序](../resources/program.md)| 更新程序。|
 |[创建 programControl](programcontrol-create.md) |        [programControl](../resources/programcontrol.md)    |   将 programControl 添加到程序中。|
 
@@ -126,3 +126,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

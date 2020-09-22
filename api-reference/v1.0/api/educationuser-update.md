@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 61c6293840c544e397f6761149c9131c94d9f930
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bba954e428bbc81a6d83dd17471ca24b66133e95
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517402"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087507"
 ---
 # <a name="update-educationuser-properties"></a>更新 educationUser 属性
 
@@ -43,14 +43,14 @@ PATCH /education/users/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName| 字符串| 显示用户名称|
-|givenName| 字符串 | 名字 |
+|displayName| String| 显示用户名称|
+|givenName| String | 名字 |
 |middleName| String | 用户的中间名|
-|surname| 字符串 | 用户的姓|
+|surname| String | 用户的姓|
 |mail| String| 电子邮件地址|
 |mobilePhone| String | 用户的移动电话号码 |
-|externalSource|字符串| 可能的值包括 `sis`、`manual`、`enum_sentinel`。|
-|externalSource|字符串| 创建此用户的位置。  可能的值包括 `sis`、`manual`、`enum_sentinel`。|
+|externalSource|string| 可能的值包括 `sis`、`manual`、`enum_sentinel`。|
+|externalSource|string| 创建此用户的位置。  可能的值包括 `sis`、`manual`、`enum_sentinel`。|
 |mailingAddress|[physicalAddress](../resources/physicaladdress.md)| 用户的邮件地址。|
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| 用户所在的地址。|
 |primaryRole|string| 用户的默认角色。  用户的角色在各课程中可能有所不同。 可能的值包括 `student`、`teacher`、`enum_sentinel`。|
@@ -159,3 +159,4 @@ Content-length: 508
   "suppressions": [
   ]
 }-->
+

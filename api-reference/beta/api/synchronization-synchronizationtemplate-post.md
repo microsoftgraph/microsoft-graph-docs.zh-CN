@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b75d5e2f052983cab54fe1cdfd557e03b7778e6e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f1477643bec6d7ca70eaec1a0c9ba000ff93db1d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471136"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087878"
 ---
 # <a name="create-synchronizationtemplate"></a>创建 synchronizationTemplate
 
@@ -20,7 +20,7 @@ ms.locfileid: "43471136"
 
 为给定应用程序创建新的同步模板。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
@@ -43,11 +43,11 @@ POST /applications/{id}/synchronization/templates/
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供要创建的[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)对象。 和属性是必需的`id` `applicationId` `factoryTag` 如果模板`schema`未提供，则将使用与该`factoryTag`属性相关联的默认架构。
+在请求正文中，提供要创建的 [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) 对象。 `id` `applicationId` 和 `factoryTag` 属性是必需的。 如果 `schema` 模板未提供，则将使用与该属性相关联的默认架构 `factoryTag` 。
 
 ### <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) 对象。
 
 ### <a name="example"></a>示例
 
@@ -119,3 +119,5 @@ HTTP/1.1 201 Created
   ]
 }
 -->
+
+
