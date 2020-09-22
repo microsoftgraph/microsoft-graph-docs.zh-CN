@@ -3,14 +3,14 @@ title: 创建 resourceOperation
 description: 创建新的 resourceOperation 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 38d3822bcc48312a8e7b5093b889cdd308dceedf
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: c3902678346e64d1dccea7d08f1e06fab8c1bcc4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43452615"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059486"
 ---
 # <a name="create-resourceoperation"></a>创建 resourceOperation
 
@@ -27,7 +27,7 @@ ms.locfileid: "43452615"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementRBAC.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -51,10 +51,10 @@ POST /deviceManagement/resourceOperations
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|资源操作的键。 只读，且自动生成。|
+|id|String|资源操作的键。 只读，且自动生成。|
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
-|说明|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
+|description|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
 
 
 
@@ -93,6 +93,9 @@ Content-Length: 227
   "description": "Description value"
 }
 ```
+
+
+
 
 
 

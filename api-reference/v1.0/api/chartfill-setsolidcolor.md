@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7cdabca78ea60a0debd2d4a085641d738b96e54a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c44580e0a91977c5251b43d5c8d812a127690b44
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518460"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059829"
 ---
 # <a name="chartfill-setsolidcolor"></a>ChartFill: setSolidColor
 
@@ -110,3 +110,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

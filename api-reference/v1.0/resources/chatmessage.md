@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2b5c06b8b664c10483c8d4a6767a981f1a5551be
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 6803449c3fd44c736e1d52575b292164fad9923d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812342"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059150"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -35,12 +35,12 @@ ms.locfileid: "46812342"
 |replyToId| string | 只读。 线程的父聊天消息或根聊天消息的 Id。  (仅适用于频道中不聊天的聊天消息)  |
 |from|[identitySet](identityset.md)| 只读。 聊天消息发件人的详细信息。|
 |etag| string | 只读。 聊天消息的版本号。 |
-|messageType|string|聊天消息的类型。 可能的值是： `message` 。|
+|messageType|字符串|聊天消息的类型。 可能的值是： `message` 。|
 |createdDateTime|dateTimeOffset|只读。 在聊天消息创建时的时间戳。|
 |lastModifiedDateTime|dateTimeOffset|只读。 在创建或编辑聊天消息时的时间戳，包括答复的时间 (如果它是频道中的根聊天消息) 或者添加或删除了反应。 |
 |deletedDateTime|dateTimeOffset|只读。 删除聊天邮件的时间戳，如果未删除，则为 null。 |
 |subject|string| 聊天消息的主题，以纯文本形式。|
-|body|[itemBody](itembody.md)|聊天消息内容的纯文本/HTML 表示形式。 表示形式由正文中的 contentType 进行指定。 如果聊天消息包含 [chatMessageMention](chatmessagemention.md)，则该内容始终为 HTML。 |
+|正文|[itemBody](itembody.md)|聊天消息内容的纯文本/HTML 表示形式。 表示形式由正文中的 contentType 进行指定。 如果聊天消息包含 [chatMessageMention](chatmessagemention.md)，则该内容始终为 HTML。 |
 |摘要|string| 可用于推送通知和摘要视图或回退视图的聊天消息的摘要文本。 仅适用于频道聊天消息，而不是聊天中的聊天消息。 |
 |附件|[chatMessageAttachment](chatmessageattachment.md) 集合 |附加文件。 附件目前是只读的 – 不支持发送附件。 |
 |提及|[chatMessageMention](chatmessagemention.md) 集合| 聊天消息中提及的实体列表。 当前支持用户、机器人、团队、渠道。|
@@ -99,3 +99,4 @@ ms.locfileid: "46812342"
   "suppressions": []
 }
 -->
+

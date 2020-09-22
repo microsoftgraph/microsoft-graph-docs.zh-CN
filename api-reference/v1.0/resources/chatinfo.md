@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b69905a0e1d8937c582df3373a4e981f8d8405ff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ee55fc2f9321a5b16c3a24ec330f5966472f4f9c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533079"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059171"
 ---
 # <a name="chatinfo-resource-type"></a>chatInfo 资源类型
 
@@ -22,9 +22,9 @@ ms.locfileid: "42533079"
 
 | 属性            | 类型    | 说明|
 |:--------------------|:--------|:-----------|
-| messageId           | 字符串  | Microsoft 团队频道中的邮件的唯一标识符。 |
-| replyChainMessageId | 字符串  | 答复邮件的 ID。 |
-| threadId            | 字符串  | Microsoft 团队中的线程的唯一标识符。 |
+| messageId           | String  | Microsoft 团队频道中的邮件的唯一标识符。 |
+| replyChainMessageId | String  | 答复邮件的 ID。 |
+| threadId            | String  | Microsoft 团队中的线程的唯一标识符。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -57,3 +57,4 @@ ms.locfileid: "42533079"
   "suppressions": []
 }
 -->
+

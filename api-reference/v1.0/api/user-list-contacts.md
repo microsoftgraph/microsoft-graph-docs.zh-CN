@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 52d8e36b0b6f00581eba0848c8ee386c1e1a0a23
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: a6c41d4d71469981b6368f5ccfb7a5166cff5daf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108856"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059276"
 ---
 # <a name="list-contacts"></a>列出联系人
 
@@ -149,3 +149,4 @@ Content-length: 263
   "suppressions": [
   ]
 }-->
+

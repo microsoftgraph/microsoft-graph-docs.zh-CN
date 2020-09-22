@@ -5,12 +5,12 @@ localization_priority: Priority
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 90ea3bad86307f1172869f72a311238c4ee43eaa
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 17b33d0eebd760ca565dfbdd8f1067ec3015a8ad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108842"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059241"
 ---
 # <a name="list-directreports"></a>列出 directReports
 
@@ -115,3 +115,4 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
+

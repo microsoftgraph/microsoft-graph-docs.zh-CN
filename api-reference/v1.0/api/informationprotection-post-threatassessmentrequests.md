@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4b3987f3f6ca012167717c49c0de032a9f672377
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: ec60e8c0f23fe882a719114dee6f720a8c4419eb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42815861"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059689"
 ---
 # <a name="create-threatassessmentrequest"></a>创建 threatAssessmentRequest
 
@@ -20,7 +20,7 @@ ms.locfileid: "42815861"
 
 * [邮件](../resources/mailAssessmentRequest.md)
 * [电子邮件文件](../resources/emailFileAssessmentRequest.md)
-* [文件](../resources/fileAssessmentRequest.md)
+* [File](../resources/fileAssessmentRequest.md)
 * [URL](../resources/urlAssessmentRequest.md)
 
 ## <a name="permissions"></a>权限
@@ -49,11 +49,11 @@ POST /informationProtection/threatAssessmentRequests
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[threatAssessmentRequest](../resources/threatassessmentrequest.md)对象的 JSON 表示形式。
+在请求正文中，提供 [threatAssessmentRequest](../resources/threatassessmentrequest.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[threatAssessmentRequest](../resources/threatassessmentrequest.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [threatAssessmentRequest](../resources/threatassessmentrequest.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -390,3 +390,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

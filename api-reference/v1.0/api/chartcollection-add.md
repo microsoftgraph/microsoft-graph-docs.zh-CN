@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8717fc7a19abac357f0236b2796ea6a98017718b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 39fd7852ad57b9f618da9d7d8608fb5f09521179
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518495"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059885"
 ---
 # <a name="chartcollection-add"></a>ChartCollection: add
 
@@ -43,13 +43,13 @@ POST /workbook/worksheets/{id|name}/charts/add
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|类型|string|表示图表的类型。  可能的值为： `ColumnClustered`、 `ColumnStacked`、 `ColumnStacked100` `BarClustered` `BarStacked` `BarStacked100` `LineStacked` `PieOfPie` `etc.`、、、、、、、、、、。 `LineStacked100` `LineMarkers` `LineMarkersStacked` `LineMarkersStacked100`|
+|类型|string|表示图表的类型。  可能的值为：、、、、、、、、、、、、 `ColumnClustered` `ColumnStacked` `ColumnStacked100` `BarClustered` `BarStacked` `BarStacked100` `LineStacked` `LineStacked100` `LineMarkers` `LineMarkersStacked` `LineMarkersStacked100` `PieOfPie` `etc.` 。|
 |sourceData|Json|对应于源数据的 Range 对象。|
 |seriesBy|字符串|可选。 指定列或行在图表上用作数据系列的方式。  可能的值包括 `Auto`、`Columns`、`Rows`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`200 OK`响应正文中返回响应代码和[WorkbookChart](../resources/chart.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [WorkbookChart](../resources/chart.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -121,3 +121,4 @@ Content-length: 52
   "suppressions": [
   ]
 }-->
+

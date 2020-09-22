@@ -5,18 +5,18 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4c203f9fab489844452eeb6cc341b18af7898eac
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: a4771862325c211b342e9985d586fbe50c29ba58
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44153779"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059311"
 ---
 # <a name="list-openshiftchangerequests"></a>列出 openShiftChangeRequests
 
 命名空间：microsoft.graph
 
-检索团队中的[openShiftChangeRequest](../resources/openshiftchangerequest.md)对象的列表。
+检索团队中的 [openShiftChangeRequest](../resources/openshiftchangerequest.md) 对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "44153779"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 请参阅 all、Group、Group. all、Schedule、Group、Group。所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | Schedule. All、Schedule、All |
+| 应用程序                            | Schedule. All、Schedule、All |
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -40,9 +40,9 @@ GET /teams/{id}/schedule/openShiftsChangeRequests
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -54,7 +54,7 @@ GET /teams/{id}/schedule/openShiftsChangeRequests
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[openShiftChangeRequest](../resources/openshiftchangerequest.md)对象的列表。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [openShiftChangeRequest](../resources/openshiftchangerequest.md) 对象的列表。
 
 ## <a name="examples"></a>示例
 
@@ -122,3 +122,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

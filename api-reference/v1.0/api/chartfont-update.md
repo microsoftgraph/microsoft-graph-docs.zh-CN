@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 80e5c650e6a0b16e5a4f40ba49cdeab4f17e6a69
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: db58149737efd5d6b5d30724f290e063ca9ce389
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518446"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059801"
 ---
 # <a name="update-chartfont"></a>更新 chartfont
 
@@ -44,16 +44,16 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/font
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|bold|boolean|表示字体的加粗状态。|
-|color|字符串|文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
+|bold|布尔|表示字体的加粗状态。|
+|color|string|文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
 |italic|布尔|表示字体的斜体状态。|
 |name|string|字体名称（例如"Calibri"）|
 |大小|double|字体大小（例如 11）|
-|underline|string|应用于字体的下划线类型。 可能的值为： `None`、 `Single`。|
+|underline|string|应用于字体的下划线类型。 可能的值为： `None` 、 `Single` 。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookChartFont](../resources/chartfont.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [WorkbookChartFont](../resources/chartfont.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -128,3 +128,4 @@ Content-length: 134
   "suppressions": [
   ]
 }-->
+

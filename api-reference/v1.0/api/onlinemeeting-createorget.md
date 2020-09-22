@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: dfb4d697df9d49f177510097ffa5dddfe255f12a
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
-ms.translationtype: Auto
+ms.openlocfilehash: 6e9ab9e05279ea240228db02d94d3c7895868fe0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47842818"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059374"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting: createOrGet
 
@@ -200,3 +200,4 @@ Content-Type: application/json
   ]
 }
 -->
+

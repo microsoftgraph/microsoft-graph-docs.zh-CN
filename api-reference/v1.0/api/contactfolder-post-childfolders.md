@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f3acdfc18b0727704c94ed84741a3413734ab90f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 994f01d822e426ad47711e046f219be23790f6d3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43474699"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059724"
 ---
 # <a name="create-contactfolder"></a>创建 ContactFolder
 
@@ -114,3 +114,4 @@ Content-length: 104
   "suppressions": [
   ]
 }-->
+

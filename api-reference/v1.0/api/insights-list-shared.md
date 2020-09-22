@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: cf7acd348b9e23262624c47a123eb8b5f5dac439
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d1c815423993a93100e8feb3d90b644096122c85
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516715"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059633"
 ---
 # <a name="list-shared"></a>共享的列表
 
@@ -37,7 +37,7 @@ GET /me/insights/shared
 GET /users/{id | userPrincipalName}/insights/shared
 ```
 
-扩展**共享**洞察力引用的资源：
+扩展 **共享** 洞察力引用的资源：
 ```http
 GET https://graph.microsoft.com/v1.0/me/insights/shared/{id}/resource
 ```
@@ -45,20 +45,20 @@ GET https://graph.microsoft.com/v1.0/me/insights/shared/{id}/resource
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
-您可以使用`$filter`查询参数筛选共享项目。 例如，基于**类型**：
+您可以使用 `$filter` 查询参数筛选共享项目。 例如，基于 **类型**：
 
 `https://graph.microsoft.com/v1.0/me/insights/shared?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-请参阅可在[resourceVisualization](../resources/insights-resourcevisualization.md)中筛选的可用容器类型和类型。
+请参阅可在 [resourceVisualization](../resources/insights-resourcevisualization.md)中筛选的可用容器类型和类型。
 
-您还可以检索由特定用户共享的文件。 例如，通过指定`lastshared/sharedby/address`属性：
+您还可以检索由特定用户共享的文件。 例如，通过指定 `lastshared/sharedby/address` 属性：
 
 `https://graph.microsoft.com/v1.0/me/insights/shared?$filter=lastshared/sharedby/address eq 'kellygraham@contoso.com'`
 
-请参阅[sharingDetail](../resources/insights-sharingdetail.md)复杂类型。
+请参阅 [sharingDetail](../resources/insights-sharingdetail.md) 复杂类型。
 
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 标头       |  值|
 |:-------------|:------|
 | Authorization  | Bearer {token}。必需。|
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/v1.0/me/insights/shared/{id}/resource
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[共享](../resources/insights-shared.md)项列表。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [共享](../resources/insights-shared.md) 项列表。
 ## <a name="example"></a>示例
 
 ##### <a name="request"></a>请求
@@ -117,4 +117,5 @@ GET https://graph.microsoft.com/v1.0/me/insights/shared
                 "type: "type-value" 
 }
 ```
+
 

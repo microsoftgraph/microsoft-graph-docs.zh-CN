@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0fa24737053c821ed636a898b56b2ed8879bf25c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 009fe91b669f626eca4be556b27ac3b814c537a8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518418"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059745"
 ---
 # <a name="update-chartlegend"></a>更新 chartlegend
 
@@ -48,7 +48,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/legend
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookChartLegend](../resources/chartlegend.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [WorkbookChartLegend](../resources/chartlegend.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -117,3 +117,4 @@ Content-length: 72
   "suppressions": [
   ]
 }-->
+

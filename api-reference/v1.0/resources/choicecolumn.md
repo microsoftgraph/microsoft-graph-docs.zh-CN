@@ -7,12 +7,12 @@ localization_priority: Normal
 description: columnDefinition 资源上的 choiceColumn 指示可从所选列表中选择列的值。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a29a80bccd2afb76804b2e1a4d81b5a69d44adf1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 298eab65c77df57c6ec70715239dcc7f4e13d316
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533073"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059157"
 ---
 # <a name="choicecolumn-resource-type"></a>ChoiceColumn 资源类型
 
@@ -53,3 +53,4 @@ ms.locfileid: "42533073"
   ],
   "tocPath": "Resources/ChoiceColumn"
 } -->
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4fdb946267c0ce31df211e7edfb7f1602e079ccb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ff2ab9f6d5411838ee27c124aa605afe698bfa30
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518509"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059927"
 ---
 # <a name="get-chartaxistitle"></a>获取 ChartAxisTitle
 
@@ -47,7 +47,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/title
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[WorkbookChartAxisTitle](../resources/chartaxistitle.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [WorkbookChartAxisTitle](../resources/chartaxistitle.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -107,3 +107,4 @@ Content-length: 45
   "suppressions": [
   ]
 }-->
+

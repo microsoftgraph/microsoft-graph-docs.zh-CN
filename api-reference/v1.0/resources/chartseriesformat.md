@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a44392eb718c157f6422228405f7bb2a4b411733
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3b6003df060fbb657dc3c67375f2c942ad8cff57
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533101"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059227"
 ---
 # <a name="chartseriesformat-resource-type"></a>ChartSeriesFormat 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "42533101"
 封装图表系列的格式属性
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 无
 
 ## <a name="properties"></a>属性
@@ -60,3 +60,4 @@ ms.locfileid: "42533101"
   "section": "documentation",
   "tocPath": ""
 }-->
+
