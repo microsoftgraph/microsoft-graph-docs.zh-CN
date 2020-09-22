@@ -3,14 +3,14 @@ title: 列出 userExperienceAnalyticsScoreHistories
 description: 列出 userExperienceAnalyticsScoreHistory 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 730f7e0b03cca4bca0666e17d208da847f76cba4
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 3f75dd945d4dc87d77b244639cf3c92f2a554077
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792616"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036574"
 ---
 # <a name="list-userexperienceanalyticsscorehistories"></a>列出 userExperienceAnalyticsScoreHistories
 
@@ -82,6 +82,9 @@ Content-Length: 380
   ]
 }
 ```
+
+
+
 
 
 

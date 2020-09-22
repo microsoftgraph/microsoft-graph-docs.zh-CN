@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 62277a2b933edf9161a51b114c765fde948b4d26
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 7a06f00b1ff024e116ed7d16cf416d23089f615e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674013"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035811"
 ---
 # <a name="printdocument-uploaddata"></a>printDocument： uploadData
 
@@ -108,3 +108,5 @@ HTTP/1.1 202 Accepted
 ```http
 HTTP/1.1 201 Created
 ```
+
+

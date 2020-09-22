@@ -3,14 +3,14 @@ title: 更新 userExperienceAnalyticsScoreHistory
 description: 更新 userExperienceAnalyticsScoreHistory 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3e7179fb0dae2c62b2a416722eaa8d8d27ee321a
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: e2dab61ace0a772a1bdc6044ac96e0728bb9c39a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46789879"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036497"
 ---
 # <a name="update-userexperienceanalyticsscorehistory"></a>更新 userExperienceAnalyticsScoreHistory
 
@@ -104,6 +104,9 @@ Content-Length: 315
   "restartScore": 12
 }
 ```
+
+
+
 
 
 

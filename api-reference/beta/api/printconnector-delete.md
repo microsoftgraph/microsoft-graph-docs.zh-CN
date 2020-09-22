@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7740f8d9976db1f6bc7f2daf300342f4cab98c98
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 2025816bb917e84f8a0cce7ef6af0214516850bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674314"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035910"
 ---
 # <a name="delete-connector"></a>删除连接器
 
@@ -99,3 +99,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

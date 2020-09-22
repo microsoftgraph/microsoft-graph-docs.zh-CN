@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d582f1db701be1f1a016902ae489831bca155a12
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: a37b918b083bbc8a1e76eae073f68979dbcdf035
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674321"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035895"
 ---
 # <a name="update-printsettings"></a>更新 printSettings
 
@@ -48,7 +48,7 @@ PATCH /print/settings
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|documentConversionEnabled|布尔值|指定是否为租户启用文档转换。 如果启用了文档转换，则通用打印服务会自动将文档转换为与打印机兼容的格式 (例如，在需要时，XPS 到 PDF) 。|
+|documentConversionEnabled|Boolean|指定是否为租户启用文档转换。 如果启用了文档转换，则通用打印服务会自动将文档转换为与打印机兼容的格式 (例如，在需要时，XPS 到 PDF) 。|
 
 ## <a name="response"></a>响应
 如果成功，此方法将返回 `204 No Content` 响应代码和空响应正文。
@@ -105,3 +105,5 @@ Content-length: 0
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

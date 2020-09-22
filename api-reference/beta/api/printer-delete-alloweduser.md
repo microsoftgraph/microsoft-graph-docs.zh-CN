@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 46ebe8d1b813cd215cbdc663426042e7b2a162f6
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 23968799ef0ac02a65e47293018dc8ba21d86cf8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674370"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035784"
 ---
 # <a name="delete-alloweduser-from-printer"></a>从打印机中删除 allowedUser
 
@@ -93,3 +93,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

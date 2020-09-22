@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: e23d8dce85a030eb775c0e098c14389855a78a8f
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 581239a1bb1571d2d4636fb88af17105717ecb07
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674076"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035748"
 ---
 # <a name="delete-allowedgroup-from-printer"></a>从打印机中删除 allowedGroup
 
@@ -77,3 +77,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

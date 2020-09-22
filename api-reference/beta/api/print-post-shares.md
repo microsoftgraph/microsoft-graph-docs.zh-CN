@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7085309eedf661c3953b7019c45d907dbd451121
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 74c59c57042ec0fa392c4f1b33ef96626237ec6e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674104"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035918"
 ---
 # <a name="create-printershare"></a>创建 printerShare
 
@@ -27,7 +27,7 @@ ms.locfileid: "46674104"
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
-|委派（工作或学校帐户）| PrinterShare |
+|委派（工作或学校帐户）| PrinterShare.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -115,3 +115,5 @@ Content-length: 233
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

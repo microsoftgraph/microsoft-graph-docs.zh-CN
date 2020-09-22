@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c6bfc200b4c514af15beb7f63b39474d2f51c563
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 82389c7cb67c0b2624b3bbc1f02dd21c5ca82798
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674062"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035874"
 ---
 # <a name="update-printconnector"></a>更新 printConnector
 
@@ -51,7 +51,7 @@ PATCH /print/connectors/{id}
 |fullyQualifiedDomainName|String|连接器计算机的主机名。|
 |operatingSystem|String|连接器计算机的操作系统版本。|
 |appVersion|String|连接器的版本。|
-|location|[printerLocation](../resources/printerlocation.md)|连接器的物理位置和/或组织位置。|
+|位置|[printerLocation](../resources/printerlocation.md)|连接器的物理位置和/或组织位置。|
 
 ## <a name="response"></a>响应
 如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [printConnector](../resources/printConnector.md) 对象。
@@ -156,3 +156,5 @@ Content-length: 406
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

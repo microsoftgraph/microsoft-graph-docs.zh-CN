@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: bf100a99d573c186efa64af1692250534a31c50a
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 1827898260f216b7c4d947b78386c5f2e5c5227e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674090"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035788"
 ---
 # <a name="printer-create"></a>打印机：创建
 
@@ -51,7 +51,7 @@ POST /print/printers/create
 |manufacturer|String|打印机的制造商。|是|
 |model|String|打印机的型号。|是|
 |physicalDeviceId|String|打印机的物理设备 UUID。 如果属性为 true，则为必需 `hasPhysicalDevice` 。|否|
-|hasPhysicalDevice|布尔值|如果打印机具有物理输出设备，则为 True，否则为 false。 如果省略，则默认值为 true。|否|
+|hasPhysicalDevice|Boolean|如果打印机具有物理输出设备，则为 True，否则为 false。 如果省略，则默认值为 true。|否|
 |certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|X.509 证书签名请求 (CSR) 为打印机创建并使用的证书来标识自己。|是|
 |connectorId|String|充当打印机代理的连接器的 Id。|否|
 
@@ -125,3 +125,5 @@ Retry-After: 5
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
