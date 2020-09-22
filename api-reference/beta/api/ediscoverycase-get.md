@@ -5,18 +5,18 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 258019d4c675b39f4450e05e5846f4f5414c10d5
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 9b1c8c51927139467b129b4efc0a278df5b6352d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509989"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007937"
 ---
 # <a name="get-ediscoverycase"></a>获取 ediscoveryCase
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[ediscoveryCase](../resources/ediscoverycase.md)对象的属性和关系。
+检索 [ediscoveryCase](../resources/ediscoverycase.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -52,7 +52,7 @@ GET /compliance/ediscovery/cases/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[ediscoveryCase](../resources/ediscoverycase.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [ediscoveryCase](../resources/ediscoverycase.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -118,3 +118,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

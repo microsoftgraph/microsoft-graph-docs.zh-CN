@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: cfff22d975dbe9c54f3c4647cb07f42669a1fd9f
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 2ca969b507968ad337ed473096f54f4d971d9e39
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819388"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007929"
 ---
 # <a name="delete-educationalactivity"></a>删除 educationalActivity
 
@@ -18,7 +18,7 @@ ms.locfileid: "46819388"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 [用户配置文件中删除 educationalActivity](../resources/educationalactivity.md) [对象](../resources/profile.md)。
+从用户的[配置文件](../resources/profile.md)中删除[educationalActivity](../resources/educationalactivity.md)对象。
 
 ## <a name="permissions"></a>权限
 
@@ -26,8 +26,8 @@ ms.locfileid: "46819388"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | User.ReadWrite、User.ReadWrite.All          |
-| 委派（个人 Microsoft 帐户） | User.ReadWrite、User.ReadWrite.All          |
+| 委派（工作或学校帐户）     | 所有用户读写。          |
+| 委派（个人 Microsoft 帐户） | 所有用户读写。          |
 | 应用程序                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -105,3 +105,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

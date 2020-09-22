@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 3ed0dd490a8061abf8035a5722f660e09491a457
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ad25a59dd3d8dc58a6eaa6c8b74952e238894f9e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810928"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007922"
 ---
 # <a name="get-educationalactivity"></a>获取 educationalActivity
 
@@ -156,3 +156,5 @@ Content-type: application/json
   "startMonthYear": "Date"
 }
 ```
+
+

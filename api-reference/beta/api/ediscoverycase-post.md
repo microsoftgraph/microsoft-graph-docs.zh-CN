@@ -5,18 +5,18 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: c247743db82687285d6811d15f86e011cb434a53
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 08383903c69b04fab82b47a623a7815e21902902
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566945"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007962"
 ---
 # <a name="create-ediscoverycase"></a>创建 ediscoveryCase
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[ediscoveryCase](../resources/ediscoverycase.md)对象。
+创建新的 [ediscoveryCase](../resources/ediscoverycase.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -44,7 +44,7 @@ POST /compliance/ediscovery/cases
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[ediscoveryCase](../resources/ediscoverycase.md)对象的 JSON 表示形式。 下表列出了可以通过调用提交的属性。
+在请求正文中，提供 [ediscoveryCase](../resources/ediscoverycase.md) 对象的 JSON 表示形式。 下表列出了可以通过调用提交的属性。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
@@ -52,7 +52,7 @@ POST /compliance/ediscovery/cases
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[ediscoveryCase](../resources/ediscoverycase.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [ediscoveryCase](../resources/ediscoverycase.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -140,3 +140,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

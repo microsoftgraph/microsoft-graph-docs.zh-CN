@@ -5,18 +5,18 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: a48b7c93f81fb38d995b7cbb9164c32fee5aa934
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: c909d5333f6c35fae1d104d08d193aeb856fef4a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567002"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007958"
 ---
 # <a name="delete-ediscoverycase"></a>删除 ediscoveryCase
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除[ediscoveryCase](../resources/ediscoverycase.md)对象。
+删除 [ediscoveryCase](../resources/ediscoverycase.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -102,3 +102,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
