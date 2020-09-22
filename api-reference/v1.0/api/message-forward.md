@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 086d411091e4476837a531daad93db6b7da3e587
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: c14b19f7e5b377b12cadb745718f6712d7da291d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43361521"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069678"
 ---
 # <a name="message-forward"></a>邮件：转发
 
@@ -121,3 +121,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

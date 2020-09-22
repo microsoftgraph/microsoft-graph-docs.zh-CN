@@ -5,18 +5,18 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e096faa7e7652c4016a88469c8d861ad10352369
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 6fcd43bba70b466cc79736ad0a97cc93c4aa0c61
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43510842"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070357"
 ---
 # <a name="create-event"></a>创建事件
 
 命名空间：microsoft.graph
 
-使用此 API 在日历中创建新事件。 可以是[用户](../resources/user.md)的日历，也可以是 Office 365 [组](../resources/group.md)的默认日历。 
+使用此 API 在日历中创建新事件。 可以是[用户](../resources/user.md)的日历，也可以是 Microsoft 365 [组](../resources/group.md)的默认日历。 
 
 ## <a name="permissions"></a>权限
 根据创建事件的日历类型和所请求的权限类型（委派型或应用程序），需要下列某一权限来调用此 API。 要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。
@@ -394,3 +394,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: davidmu1
-ms.openlocfilehash: 14ec9ae7119743e1b206f2d4b748cec09b9bfd3e
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ab8d1d3282e3ebcc899e89701ab812e18c403e18
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811460"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070637"
 ---
 # <a name="privacyprofile-resource-type"></a>privacyProfile 资源类型
 
@@ -44,3 +44,5 @@ ms.locfileid: "46811460"
   "statementUrl": "string"
 }
 ```
+
+

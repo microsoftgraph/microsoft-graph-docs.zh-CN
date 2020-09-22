@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e2786ed33b9d019aa28ef9562ea6582907d58353
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 42a19bc64e8be7d5e12d3d49b1342a696a1d47cd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455530"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069602"
 ---
 # <a name="get-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -92,7 +92,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 - [mailboxSettings](../resources/mailboxsettings.md) 对象
 - [automaticRepliesSetting](../resources/automaticrepliessetting.md) 对象
 - 字符串（适用于 **dateFormat**）
-- string （用于**delegateMeetingMessageDeliveryOptions**）
+- **delegateMeetingMessageDeliveryOptions**的字符串 () 
 - [localeInfo](../resources/localeinfo.md) 对象
 - 字符串（适用于 **timeFormat**）
 - 字符串（适用于 **timeZone**）
@@ -237,7 +237,7 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings/workingHours
 ```
 #### <a name="response"></a>响应
 该响应仅包括工作时间设置。 请注意，用户的工作时间在[自定义时区](../resources/customtimezone.md)内。
-注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "ignored",
   "name": "get_mailboxsettings_3",
@@ -295,3 +295,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: aaf05a13b1037e6d638e0727e3aba1301ca56993
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 23294baaceaa22ec7fa1dda10599002dfdcb6483
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447976"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070700"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,15 +25,15 @@ ms.locfileid: "43447976"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出用户](../api/intune-shared-user-list.md)对象。|[user](../resources/intune-shared-user.md) 集合|列出 [user](../resources/intune-shared-user.md) 对象的属性和关系。|
-|[获取用户](../api/intune-shared-user-get.md)对象。|[user](../resources/intune-shared-user.md)|读取 [user](../resources/intune-shared-user.md) 对象的属性和关系。|
-|[创建用户](../api/intune-shared-user-create.md)对象。|[user](../resources/intune-shared-user.md)|创建新的 [user](../resources/intune-shared-user.md) 对象。|
+|[列出用户](../api/intune-shared-user-list.md) 对象。|[user](../resources/intune-shared-user.md) 集合|列出 [user](../resources/intune-shared-user.md) 对象的属性和关系。|
+|[获取用户](../api/intune-shared-user-get.md) 对象。|[user](../resources/intune-shared-user.md)|读取 [user](../resources/intune-shared-user.md) 对象的属性和关系。|
+|[创建用户](../api/intune-shared-user-create.md) 对象。|[user](../resources/intune-shared-user.md)|创建新的 [user](../resources/intune-shared-user.md) 对象。|
 |[删除用户](../api/intune-shared-user-delete.md)。|无|删除 [user](../resources/intune-shared-user.md)。|
-|[更新 user](../api/intune-shared-user-update.md)对象。|[user](../resources/intune-shared-user.md)|更新 [user](../resources/intune-shared-user.md) 对象的属性。|
+|[更新 user](../api/intune-shared-user-update.md) 对象。|[user](../resources/intune-shared-user.md)|更新 [user](../resources/intune-shared-user.md) 对象的属性。|
 |**设备管理**|
 |[getLoggedOnManagedDevices 函数](../api/intune-shared-user-getloggedonmanageddevices.md)|[managedDevice](../resources/intune-devices-manageddevice.md) 集合|尚未记录|
 |[removeAllDevicesFromManagement 操作](../api/intune-shared-user-removealldevicesfrommanagement.md)|无|停用该用户管理的所有设备|
-|**移动应用管理（MAM）**|
+|**移动应用程序管理 (MAM) **|
 |[getManagedAppDiagnosticStatuses 函数](../api/intune-shared-user-getmanagedappdiagnosticstatuses.md)|[managedAppDiagnosticStatus](../resources/intune-mam-managedappdiagnosticstatus.md) 集合|获取给定用户的诊断验证状态。|
 |[getManagedAppPolicies 函数](../api/intune-shared-user-getmanagedapppolicies.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) 集合|获取给定用户的应用限制。|
 |[wipeManagedAppRegistrationByDeviceTag 操作](../api/intune-shared-user-wipemanagedappregistrationbydevicetag.md)|无|对含有指定设备标记的应用注册发布擦除操作。|
@@ -57,14 +57,14 @@ ms.locfileid: "43447976"
 |:---|:---|:---|
 |**设备管理**|
 |managedDevices|[managedDevice](../resources/intune-devices-manageddevice.md) 集合|与用户关联的管理设备。|
-|**移动应用管理（MAM）**|
+|**移动应用程序管理 (MAM) **|
 |managedAppRegistrations|[managedAppRegistration](../resources/intune-mam-managedappregistration.md) 集合|属于用户的零个或多个托管的应用注册。|
 |**载入**|
 |deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) 集合|获取面向用户的注册配置|
 |**疑难解答**|
 |deviceManagementTroubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) 集合|此用户的故障排除事件列表。|
-|mobileAppIntentAndStates|[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)集合|此用户的故障排除事件列表。|
-|mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)集合|此用户的移动应用故障排除事件列表。|
+|mobileAppIntentAndStates|[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) 集合|此用户的故障排除事件列表。|
+|mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) 集合|此用户的移动应用故障排除事件列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -80,6 +80,9 @@ ms.locfileid: "43447976"
   "id": "String (identifier)"
 }
 ```
+
+
+
 
 
 

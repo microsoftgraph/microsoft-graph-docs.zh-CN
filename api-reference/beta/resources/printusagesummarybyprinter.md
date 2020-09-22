@@ -1,16 +1,16 @@
 ---
 title: printUsageSummaryByPrinter 资源类型
-description: 描述在指定时间段（usageDate）的打印机的打印活动。
+description: 描述在指定时间段 (usageDate) 时打印机的打印活动。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 86d7b4eb107ac6e2732e32bf55a65a7125edb529
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 4d33ab99780f980dcc24e267ba1ac6603f602aa2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895620"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070646"
 ---
 # <a name="printusagesummarybyprinter-resource-type"></a>printUsageSummaryByPrinter 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "42895620"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-描述在指定时间段（usageDate）的打印机的打印活动。
+描述在指定时间段 (usageDate) 时打印机的打印活动。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列表（每天）](../api/reportroot-list-dailyprintusagesummariesbyprinter.md) | [printUsageSummaryByPrinter](printusagesummarybyprinter.md) | 获取按打印机分组的每日打印使用率摘要列表。 |
-| [列表（每月）](../api/reportroot-list-monthlyprintusagesummariesbyprinter.md) | [printUsageSummaryByPrinter](printusagesummarybyprinter.md) | 获取按打印机分组的按月打印使用情况摘要列表。 |
-| [Get](../api/printusagesummarybyprinter-get.md) | [printUsageSummaryByPrinter](printusagesummarybyprinter.md) | 读取**printUsageSummaryByPrinter**对象的属性和关系。 |
+| [列出 (每日) ](../api/reportroot-list-dailyprintusagesummariesbyprinter.md) | [printUsageSummaryByPrinter](printusagesummarybyprinter.md) | 获取按打印机分组的每日打印使用率摘要列表。 |
+| [每月 () 列表 ](../api/reportroot-list-monthlyprintusagesummariesbyprinter.md) | [printUsageSummaryByPrinter](printusagesummarybyprinter.md) | 获取按打印机分组的按月打印使用情况摘要列表。 |
+| [Get](../api/printusagesummarybyprinter-get.md) | [printUsageSummaryByPrinter](printusagesummarybyprinter.md) | 读取 **printUsageSummaryByPrinter** 对象的属性和关系。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
@@ -70,3 +70,4 @@ ms.locfileid: "42895620"
   "section": "documentation",
   "tocPath": ""
 }-->
+

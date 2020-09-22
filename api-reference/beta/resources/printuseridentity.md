@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: de2899b3ca75660280b797dda62993789f634096
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 8a695bed829d6c7e8825898da366737427195e1d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917608"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070653"
 ---
 # <a name="printuseridentity-resource-type"></a>printUserIdentity 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "43917608"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表通用打印服务中的用户标识。 映射到[Azure Active Directory （AZURE AD）用户](user.md)。
+代表通用打印服务中的用户标识。 映射到 [Azure Active Directory (AZURE AD) 用户](user.md)。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
@@ -26,7 +26,7 @@ ms.locfileid: "43917608"
 |id|String|PrintUserIdentity 的标识符。 只读。|
 |displayName|String|PrintUserIdentity 的显示名称。|
 |ipAddress|String|PrintUserIdentity 的 IP 地址。 未填充。|
-|userPrincipalName|字符串|PrintUserIdentity 的用户主体名称（UPN）。|
+|userPrincipalName|String|PrintUserIdentity 的用户主体名称 (UPN) 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -61,3 +61,5 @@ ms.locfileid: "43917608"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

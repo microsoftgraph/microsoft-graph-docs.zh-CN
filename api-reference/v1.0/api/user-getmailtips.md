@@ -5,20 +5,20 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 809e1fb1dc23a1b6324d2a07c092dc83fbac8df7
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: b2e71bca93e3c27fe445d5bead5b2f579f081411
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108331"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069587"
 ---
 # <a name="user-getmailtips"></a>用户： getMailTips
 
 命名空间：microsoft.graph
 
-获取一个或多个收件人对登录[用户](../resources/user.md)可用的邮件提示。
+获取一个或多个收件人对登录 [用户](../resources/user.md)可用的邮件提示。
 
-请注意，通过`POST`调用`getMailTips`操作，您可以请求一次为多个收件人返回特定类型的邮件提示。 在[邮件](../resources/mailtips.md)提示集合中返回请求的邮件提示。
+请注意 `POST` ，通过调用 `getMailTips` 操作，您可以请求一次为多个收件人返回特定类型的邮件提示。 在 [邮件](../resources/mailtips.md) 提示集合中返回请求的邮件提示。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -49,11 +49,11 @@ POST /users/{id|userPrincipalName}/getMailTips
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |EmailAddresses|String collection|要获取其邮件提示的收件人的 SMTP 地址集合。|
-|MailTipsOptions|String|表示请求的邮件提示的标志的枚举。 可能的值为`automaticReplies`： `customMailTip`、 `deliveryRestriction`、 `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope`、、、、、、和`totalMemberCount` `recipientSuggestions`|
+|MailTipsOptions|String|表示请求的邮件提示的标志的枚举。 可能的值为：、、、、、、、、 `automaticReplies` `customMailTip` `deliveryRestriction` `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope` `recipientSuggestions` 和 `totalMemberCount` 。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[邮件](../resources/mailtips.md)提示对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [邮件](../resources/mailtips.md) 提示对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面的示例获取指定收件人的邮件提示，以获取自动答复设置和邮箱完整状态。
@@ -158,3 +158,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

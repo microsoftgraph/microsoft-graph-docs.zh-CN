@@ -3,14 +3,14 @@ title: 列出 iosStoreApps
 description: 列出 iosStoreApp 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 94bf83b12a7552a0321e2f6e0e80f5a4d1043fac
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5c25a1a46864dc1e605a9c7f7624d8b3f9fd70be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441016"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070133"
 ---
 # <a name="list-iosstoreapps"></a>列出 iosStoreApps
 
@@ -107,6 +107,9 @@ Content-Length: 1371
   ]
 }
 ```
+
+
+
 
 
 

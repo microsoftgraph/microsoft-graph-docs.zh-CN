@@ -3,14 +3,14 @@ title: 更新 iosStoreApp
 description: 更新 iosStoreApp 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 17ee325e88961b7ae9336324284c4a6e4bb0ba52
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ea6354c3d6e2996ab15903f1ad38ee9f1079478c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441009"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070126"
 ---
 # <a name="update-iosstoreapp"></a>更新 iosStoreApp
 
@@ -51,9 +51,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|id|String|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|description|字符串|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|description|String|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -64,7 +64,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 |owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |bundleId|String|标识名称。|
 |appStoreUrl|String|Apple App Store URL|
 |applicableDeviceType|[iosDeviceType](../resources/intune-apps-iosdevicetype.md)|可运行此应用的 iOS 体系结构。|
@@ -165,6 +165,9 @@ Content-Length: 1198
   }
 }
 ```
+
+
+
 
 
 

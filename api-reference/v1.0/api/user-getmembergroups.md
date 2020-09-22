@@ -5,12 +5,12 @@ localization_priority: Priority
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 141b19c27c5a88cd4366ebaa17200e259a4b105d
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: b0e4ed6bc7e169dbd4be9af269b2bdad96c99075
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108324"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069566"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -18,7 +18,7 @@ ms.locfileid: "43108324"
 
 返回用户是其成员的所有组。检查是可传递的，这和读取 [memberOf](../api/user-list-memberof.md) 导航属性不同，后者仅返回用户是其直接成员的组。
 
-此功能支持 Office 365 和 Azure AD 中设置的其他类型的组。每个请求可以返回的最大组数为 2046 组。注意：Office 365 组不能包含组。因此，Office 365 组中的成员身份始终是直接的。
+此功能支持 Microsoft 365 和 Azure AD 中设置的其他类型的组。每个请求可以返回的最大组数为 2046 组。注意：Microsoft 365 组不能包含组。因此，Microsoft 365 组中的成员身份始终是直接的。
 
 ## <a name="permissions"></a>权限
 
@@ -135,3 +135,4 @@ Content-length: 39
   "suppressions": [
   ]
 }-->
+

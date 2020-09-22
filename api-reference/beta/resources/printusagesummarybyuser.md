@@ -1,16 +1,16 @@
 ---
 title: printUsageSummaryByUser 资源类型
-description: 描述在指定时间段（usageDate）期间用户的打印活动。
+description: 描述用户在指定时间段内的打印活动 (usageDate) 。
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 30769d9bd7ee76494b1582a3d7afc8a7f75bb07a
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: bba9f57799a36bef4a90b7c514a5be4b4846565e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895597"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070645"
 ---
 # <a name="printusagesummarybyuser-resource-type"></a>printUsageSummaryByUser 资源类型
 
@@ -18,14 +18,14 @@ ms.locfileid: "42895597"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-描述在指定时间段（usageDate）期间用户的打印活动。
+描述用户在指定时间段内的打印活动 (usageDate) 。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列表（每天）](../api/reportroot-list-dailyprintusagesummariesbyuser.md) | [printUsageSummaryByUser](printusagesummarybyuser.md) | 获取按用户分组的每日打印使用率摘要列表。 |
-| [列表（每月）](../api/reportroot-list-monthlyprintusagesummariesbyuser.md) | [printUsageSummaryByUser](printusagesummarybyuser.md) | 获取按月打印的使用情况摘要列表，按用户分组。 |
+| [列出 (每日) ](../api/reportroot-list-dailyprintusagesummariesbyuser.md) | [printUsageSummaryByUser](printusagesummarybyuser.md) | 获取按用户分组的每日打印使用率摘要列表。 |
+| [每月 () 列表 ](../api/reportroot-list-monthlyprintusagesummariesbyuser.md) | [printUsageSummaryByUser](printusagesummarybyuser.md) | 获取按月打印的使用情况摘要列表，按用户分组。 |
 | [Get](../api/printusagesummarybyuser-get.md) | [printUsageSummaryByUser](printusagesummarybyuser.md) | 读取 printUsageSummaryByUser 对象的属性和关系。 |
 
 ## <a name="properties"></a>属性
@@ -70,3 +70,4 @@ ms.locfileid: "42895597"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -1,22 +1,22 @@
 ---
-title: 向组授予的列表 appRoleAssignments
-description: 检索已授予组的 appRoleAssignments 的列表。
+title: 列出向组授予的 appRoleAssignment
+description: 检索已授予组的 appRoleAssignments 列表。
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: e522bb2cb070bf42fb5d1e5ca291d2449941ea3b
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: a4b3be590965d66ff6c809608cf4e6794f03e691
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383838"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070161"
 ---
-# <a name="list-approleassignments-granted-to-a-group"></a>向组授予的列表 appRoleAssignments
+# <a name="list-approleassignments-granted-to-a-group"></a>列出向组授予的 appRoleAssignment
 
 命名空间：microsoft.graph
 
-检索已授予组的[appRoleAssignment](../resources/approleassignment.md)的列表。
+检索已授予组的 [appRoleAssignment](../resources/approleassignment.md) 列表。
 
 ## <a name="permissions"></a>权限
 
@@ -24,9 +24,9 @@ ms.locfileid: "44383838"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | "AppRoleAssignment"、"全部"、"全部"、"Directory.accessasuser.all"、"全部"、"全部"、"directory"  |
+|委派（工作或学校帐户） | Directory.Read.All、AppRoleAssignment.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | "AppRoleAssignment"、"全部"、"全部"、"全部"、"全部"、"目录" |
+|应用程序 | Directory.Read.All、AppRoleAssignment.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -39,7 +39,7 @@ GET /groups/{id}/appRoleAssignments
 
 此方法支持使用 [OData 查询参数](/graph/query_parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称           | 说明                |
 |:---------------|:---------------------------|
@@ -51,13 +51,13 @@ GET /groups/{id}/appRoleAssignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[appRoleAssignment](../resources/approleassignment.md)对象集合。
+如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [appRoleAssignment](../resources/approleassignment.md) 对象集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-下面的示例演示了一个检索已分配给组的应用程序角色的请求。
+以下示例显示了检索已分配给组的应用角色的请求。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -133,3 +133,4 @@ Content-length: 306
   ]
 }
 -->
+

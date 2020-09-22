@@ -5,18 +5,18 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c88527e971d311ea7daaff8c3598e336031eb059
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6b064396b5ca9a7036b7427cab120b4dec5b8f63
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471853"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070367"
 ---
 # <a name="list-events"></a>列出事件
 
 命名空间：microsoft.graph
 
-检索日历中的事件列表。  可以是[用户](../resources/user.md)的日历，也可以是 Office 365 [组](../resources/group.md)的默认日历。 事件列表包含单个实例会议和系列母版。
+检索日历中的事件列表。  可以是[用户](../resources/user.md)的日历，也可以是 Microsoft 365 [组](../resources/group.md)的默认日历。 事件列表包含单个实例会议和系列母版。
 
 要获取扩展的事件实例，可以[获取日历视图](calendar-list-calendarview.md)，或者[获取事件的实例](event-list-instances.md)。
 
@@ -134,3 +134,4 @@ Content-length: 354
   "suppressions": [
   ]
 }-->
+

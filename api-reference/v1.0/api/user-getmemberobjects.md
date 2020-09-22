@@ -5,12 +5,12 @@ localization_priority: Priority
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: de4158bf3c52fab13e971c5b81fcf93d9b27c127
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 874c101977a2c1f334d0c1a513fed64ca77363e6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108317"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069538"
 ---
 # <a name="user-getmemberobjects"></a>user: getMemberObjects
 
@@ -117,3 +117,4 @@ Content-length: 39
   "suppressions": [
   ]
 }-->
+

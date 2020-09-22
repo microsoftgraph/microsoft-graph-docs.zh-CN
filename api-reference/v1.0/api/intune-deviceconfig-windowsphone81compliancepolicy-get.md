@@ -3,14 +3,14 @@ title: 获取 windowsPhone81CompliancePolicy
 description: 读取 windowsPhone81CompliancePolicy 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c1320ef0f5eaa76487d2bb50c98691ea047bfb98
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1cdd00966b5dbc3b03eb4a6721fd5770c2758dd0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461994"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069867"
 ---
 # <a name="get-windowsphone81compliancepolicy"></a>获取 windowsPhone81CompliancePolicy
 
@@ -91,6 +91,9 @@ Content-Length: 834
   }
 }
 ```
+
+
+
 
 
 

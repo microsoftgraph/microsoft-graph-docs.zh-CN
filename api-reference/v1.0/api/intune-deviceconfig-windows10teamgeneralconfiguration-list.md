@@ -3,14 +3,14 @@ title: 列出 windows10TeamGeneralConfigurations
 description: 列出 windows10TeamGeneralConfiguration 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2d71e29b1ef9e0fb181334f97afe1523bb6cbd8e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e52cb1b9b554b5c73cac1ecd57ca0ba0222e517b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442010"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069937"
 ---
 # <a name="list-windows10teamgeneralconfigurations"></a>列出 windows10TeamGeneralConfigurations
 
@@ -99,6 +99,9 @@ Content-Length: 1463
   ]
 }
 ```
+
+
+
 
 
 

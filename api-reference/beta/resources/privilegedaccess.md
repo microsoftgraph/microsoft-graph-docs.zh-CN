@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: shauliu
-ms.openlocfilehash: c57dd911d105ba4d096a09f9262b847db5240fa1
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: f815228157721f6100af79f53f84abf43763f632
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811448"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070630"
 ---
 # <a name="privilegedaccess-resource-type"></a>privilegedAccess 资源类型
 
@@ -74,3 +74,5 @@ ms.locfileid: "46811448"
   "suppressions": []
 }
 -->
+
+

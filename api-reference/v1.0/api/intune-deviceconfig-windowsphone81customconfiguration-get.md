@@ -3,14 +3,14 @@ title: 获取 windowsPhone81CustomConfiguration
 description: 读取 windowsPhone81CustomConfiguration 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c376e6e6740527dc6b37e582815568a2b013e005
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5596148b2f12685f1c62e464dfe52e1d94a9bc8f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43422062"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48069797"
 ---
 # <a name="get-windowsphone81customconfiguration"></a>获取 windowsPhone81CustomConfiguration
 
@@ -89,6 +89,9 @@ Content-Length: 632
   }
 }
 ```
+
+
+
 
 
 
