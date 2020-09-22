@@ -5,16 +5,16 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 61c887d507e52da0883b127b3c6123c073de04e8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7eb873868cdfc76e29d814e58cd27dfaf53a9917
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42425140"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007233"
 ---
 # <a name="list-resources"></a>列出资源
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,7 +53,7 @@ GET /educationClasses/assignments/{id}/submissions/{id}/resources
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[educationSubmissionResource](../resources/educationsubmissionresource.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [educationSubmissionResource](../resources/educationsubmissionresource.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -133,3 +133,5 @@ Content-length: 1045
   "suppressions": []
 }
 -->
+
+

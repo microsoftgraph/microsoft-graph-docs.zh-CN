@@ -3,20 +3,20 @@ title: 创建 windows81CompliancePolicy
 description: 创建新的 windows81CompliancePolicy 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c135dd7951cd36639072bc98b0dcc2b3947e7fff
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a6acd0c531cc4f580f873939acf929db2f764ccc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43337373"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48005416"
 ---
 # <a name="create-windows81compliancepolicy"></a>创建 windows81CompliancePolicy
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,12 +53,12 @@ POST /deviceManagement/deviceCompliancePolicies
 
 |属性|类型|说明|
 |:---|:---|:---|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|id|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |passwordRequired|Boolean|需要密码才可解锁 Windows 设备。|
 |passwordBlockSimple|Boolean|指示是否阻止简单密码。|
@@ -68,7 +68,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |passwordMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passwordPreviousPasswordBlockCount|Int32|防止重复使用的先前密码的数量。 有效值为 0 至 24|
-|osMinimumVersion|字符串|最低 Windows 8.1 版本。|
+|osMinimumVersion|String|最低 Windows 8.1 版本。|
 |osMaximumVersion|String|最高 Windows 8.1 版本。|
 |storageRequireEncryption|Boolean|指示是否要求对 Windows 8.1 设备加密。|
 
@@ -139,6 +139,9 @@ Content-Length: 836
   "storageRequireEncryption": true
 }
 ```
+
+
+
 
 
 

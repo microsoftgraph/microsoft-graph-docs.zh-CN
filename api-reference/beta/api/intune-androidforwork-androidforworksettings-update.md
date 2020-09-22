@@ -3,20 +3,20 @@ title: 更新 androidForWorkSettings
 description: 更新 androidForWorkSettings 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d3693cc86ddb38b16d195e599f7c4d09c9afc1da
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b7edae1508e981c9afac05fd7b5919b845e52a19
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43395583"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006529"
 ---
 # <a name="update-androidforworksettings"></a>更新 androidForWorkSettings
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,11 +53,11 @@ PATCH /deviceManagement/androidForWorkSettings
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|Android for Work 设置标识符|
+|id|String|Android for Work 设置标识符|
 |bindStatus|[androidForWorkBindStatus](../resources/intune-androidforwork-androidforworkbindstatus.md)|使用 Google EMM API 的租户的绑定状态。 可取值为：`notBound`、`bound`、`boundAndValidated`、`unbinding`。|
 |lastAppSyncDateTime|DateTimeOffset|应用同步的上次完成时间|
 |lastAppSyncStatus|[androidForWorkSyncStatus](../resources/intune-androidforwork-androidforworksyncstatus.md)|上次应用程序同步结果。 可取值为：`success`、`credentialsNotValid`、`androidForWorkApiError`、`managementServiceError`、`unknownError`、`none`。|
-|ownerUserPrincipalName|字符串|创建了企业的所有者 UPN|
+|ownerUserPrincipalName|String|创建了企业的所有者 UPN|
 |ownerOrganizationName|String|载入 Android for Work 时使用的组织名称|
 |lastModifiedDateTime|DateTimeOffset|Android for Work 设置的上次修改时间|
 |enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|指示哪些用户可以在 Android for Work 设备管理中注册设备。 可取值为：`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions`。|
@@ -116,6 +116,9 @@ Content-Length: 568
   "deviceOwnerManagementEnabled": true
 }
 ```
+
+
+
 
 
 

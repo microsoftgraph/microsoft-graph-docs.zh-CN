@@ -5,16 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b5421840ada4484a0dda12bd4f7bb5959bcebbcb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8bd23a420c5f4ca3b5e8a666b8b4a153e602fb34
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427359"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007761"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment：发布
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -99,3 +99,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

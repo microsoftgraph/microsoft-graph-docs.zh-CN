@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b9caa40d37cc04f9b248fc273c9c75488b8e63bd
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 29452ee5750be5d1a52965dd52caa264bbfbc804
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218834"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006676"
 ---
 # <a name="delete-userflow"></a>删除 userFlow
 
@@ -18,9 +18,9 @@ ms.locfileid: "43218834"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除现有的[userFlow](../resources/identityuserflow.md)对象。
+删除现有的 [userFlow](../resources/identityuserflow.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -3,24 +3,24 @@ title: 列出 androidForWorkApps
 description: 列出 androidForWorkApp 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8636220a50416301477cbe3580339b03dc87f448
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2c048895c3c82ddc8cec0aeca8187d6c2d4177d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43395411"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006522"
 ---
 # <a name="list-androidforworkapps"></a>列出 androidForWorkApps
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出[androidForWorkApp](../resources/intune-apps-androidforworkapp.md)对象的属性和关系。
+列出 [androidForWorkApp](../resources/intune-apps-androidforworkapp.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,7 +50,7 @@ GET /deviceAppManagement/mobileApps
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[androidForWorkApp](../resources/intune-apps-androidforworkapp.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [androidForWorkApp](../resources/intune-apps-androidforworkapp.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1228
+Content-Length: 1293
 
 {
   "value": [
@@ -95,6 +95,8 @@ Content-Length: 1228
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "packageId": "Package Id value",
       "appIdentifier": "App Identifier value",
       "usedLicenseCount": 0,
@@ -104,6 +106,9 @@ Content-Length: 1228
   ]
 }
 ```
+
+
+
 
 
 

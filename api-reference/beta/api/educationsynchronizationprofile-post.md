@@ -5,20 +5,20 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5eab69540ccc4d862f2106cd41a2b9b1023d30f4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7f8b7eb8ccbbb0df4fd0b32a434582f7e07e9ec4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424433"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007194"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>创建 educationSynchronizationProfile
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在租户中创建新的学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)的请求。 [查询状态](educationsynchronizationprofilestatus-get.md)以获取配置文件的状态。 
+在租户中创建新的学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 的请求。 [查询状态](educationsynchronizationprofilestatus-get.md) 以获取配置文件的状态。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "42424433"
 | 权限类型 | 权限 |
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.ReadWrite |
-|委派（个人 Microsoft 帐户|不支持。|
+|委派 (个人 Microsoft 帐户|不支持。|
 |应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -39,13 +39,13 @@ POST /synchronizationProfiles
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
-| Content-Type | string | Application/json。 必填。 |
+| Content-Type | string | Application/json。 必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)对象的 JSON 表示形式。
+在请求正文中，提供 [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`202, Accepted`正文中返回响应代码和[educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)对象。
+如果成功，此方法 `202, Accepted` 在响应正文中返回响应代码和 [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -188,3 +188,5 @@ Content-type: application/json
     ]
 }
 ```
+
+

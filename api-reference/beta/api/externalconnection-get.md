@@ -5,20 +5,20 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 9d373e885ee7b0bd0a954d919fc6ff9e7e328fea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 53f1c3f1438de49166265cce80c5cb24239e3abc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422269"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006872"
 ---
 # <a name="get-connection"></a>获取连接
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[externalConnection](../resources/externalconnection.md)的属性和关系。
+检索 [externalConnection](../resources/externalconnection.md)的属性和关系。
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -56,7 +56,7 @@ GET /external/connections/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[externalConnection](../resources/externalconnection.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [externalConnection](../resources/externalconnection.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -125,3 +125,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

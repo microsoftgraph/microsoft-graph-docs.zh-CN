@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 14caaab4cd885fefe780cb5cca77f4ff3832103d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 66a2f3dce7bac5a121244876d69051e60703b9cd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42426127"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007513"
 ---
 # <a name="list-classes"></a>列出课程
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -124,3 +124,5 @@ Content-length: 277
   ]
 }
 -->
+
+

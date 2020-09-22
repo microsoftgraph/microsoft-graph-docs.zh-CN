@@ -5,16 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 05b2a5c8e277ce506f6c46fe3821901d99ec523d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 44d3be13bad8743a5c0bd229efaf23bf3423a0a4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42426953"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007691"
 ---
 # <a name="delete-educationclass"></a>删除 educationClass
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -97,3 +97,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

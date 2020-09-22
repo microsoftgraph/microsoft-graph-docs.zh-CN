@@ -3,14 +3,14 @@ title: 创建 androidLobApp
 description: 创建新的 androidLobApp 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9c328752364b90167e4be9f446499023943ff447
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 81ed997db3f4fe22222b663eab4e1ec3da961414
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790124"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006403"
 ---
 # <a name="create-androidlobapp"></a>创建 androidLobApp
 
@@ -69,8 +69,10 @@ POST /deviceAppManagement/mobileApps
 |uploadState|Int32|上载状态。 可能的值包括： 0- `Not Ready` 、1- `Ready` 、2- `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|字符串集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersedingAppCount|Int32|此应用程序直接或间接取代的应用程序总数量。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersededAppCount|Int32|此应用程序直接或间接取代的应用程序总数量。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |committedContentVersion|String|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|总大小，包括所有已上传文件。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
@@ -93,7 +95,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1413
+Content-length: 1470
 
 {
   "@odata.type": "#microsoft.graph.androidLobApp",
@@ -118,6 +120,8 @@ Content-length: 1413
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -151,7 +155,7 @@ Content-length: 1413
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1585
+Content-Length: 1642
 
 {
   "@odata.type": "#microsoft.graph.androidLobApp",
@@ -179,6 +183,8 @@ Content-Length: 1585
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -206,6 +212,9 @@ Content-Length: 1585
   "identityVersion": "Identity Version value"
 }
 ```
+
+
+
 
 
 

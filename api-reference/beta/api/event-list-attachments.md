@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 744ba1c0ab88afa2acf38f93b58cd01592504af4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: abdfc3353e5fee94bbcec3b219d2cb6890bab939
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43365444"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006949"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -47,7 +47,7 @@ GET /groups/{id}/events/{id}/attachments
 
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
-特别是，您可以使用`$expand`查询参数将所有事件附件与其余事件属性一起包含在内联中。 例如：
+特别是，您可以使用 `$expand` 查询参数将所有事件附件与其余事件属性一起包含在内联中。 例如：
 
 ```http
 GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
@@ -145,3 +145,5 @@ Content-length: 215
   ]
 }
 -->
+
+

@@ -5,20 +5,20 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 809175827de2347d473607fa701647d0db5c9c4b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 14bbecb760768a0b2af984b737aaa9e3f1a28e10
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422290"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006914"
 ---
 # <a name="delete-externalconnection"></a>删除 externalConnection
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除[externalConnection](../resources/externalconnection.md)。
+删除 [externalConnection](../resources/externalconnection.md)。
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -108,3 +108,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

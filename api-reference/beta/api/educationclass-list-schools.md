@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fec2969eb9cf8eb8217344db8025a9a59f10e069
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f161e8e642622bcbe13aab9f683e1d03d614c2ea
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42426666"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007645"
 ---
 # <a name="list-schools"></a>列出学校
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -149,3 +149,5 @@ Content-length: 892
   ]
 }
 -->
+
+

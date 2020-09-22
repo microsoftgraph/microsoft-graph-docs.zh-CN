@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: ba049e3137e52d9e3450757078cec87c1eb57e78
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 73f4071bd9a5be480afb2a0049763a66b7026e44
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807345"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006683"
 ---
 # <a name="filter-clear"></a>Filter: clear
 
@@ -98,3 +98,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

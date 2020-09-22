@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e1fb6c9bf074228c7cb30de2fa1f5ecd611f7f86
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 19ef275b81f5cdcb7e9dee3a4023fd50fa87a05a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43365059"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006943"
 ---
 # <a name="add-attachment"></a>添加附件
 
@@ -18,9 +18,9 @@ ms.locfileid: "43365059"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 可将[附件](../resources/attachment.md)添加到现有[事件](../resources/event.md)中。 此操作将限制可添加到 3 MB 以下的附件的大小。
+使用此 API 可将 [附件](../resources/attachment.md) 添加到现有 [事件](../resources/event.md)中。 此操作将限制可添加到 3 MB 以下的附件的大小。
 
-如果组织者将附件添加到会议事件中，则组织者随后可以[更新](event-update.md)事件以发送附件并为每个与会者同时更新事件。
+如果组织者将附件添加到会议事件中，则组织者随后可以 [更新](event-update.md) 事件以发送附件并为每个与会者同时更新事件。
 
 ## <a name="permissions"></a>权限
 
@@ -280,3 +280,5 @@ HTTP 201 Created
   "tocPath": ""
 }
 -->
+
+

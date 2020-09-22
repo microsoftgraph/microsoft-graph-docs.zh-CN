@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: c24a456759a7921faf353f8c7cba6e8407362f65
-ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
+ms.openlocfilehash: a894afa05207dc483e5fbbf3e4de14e0b400f894
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47439953"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006802"
 ---
 # <a name="get-externalitem"></a>获取 externalItem
 
@@ -24,7 +24,7 @@ ms.locfileid: "47439953"
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -44,7 +44,7 @@ GET /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="path-parameters"></a>路径参数
 
-| 参数     | 类型   | Description                                         |
+| 参数     | 类型   | 说明                                         |
 |:--------------|:-------|:----------------------------------------------------|
 | connection-id | 字符串 | `id`包含[externalConnection](../resources/externalconnection.md)的属性 |
 | item-id       | 字符串 | ExternalItem 的开发人员提供的 `id` 属性[externalItem](../resources/externalitem.md)。 |
@@ -123,3 +123,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

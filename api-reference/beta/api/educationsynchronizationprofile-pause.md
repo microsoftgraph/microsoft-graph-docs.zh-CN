@@ -5,20 +5,20 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 71012e82fdb3e695d1ccf4e61dc9433c7fa2ebc1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 003505dcfc00631f6d7ed9c40dbd9e4c8c3cebd5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424454"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007201"
 ---
 # <a name="pause-sync-on-an-educationsynchronizationprofile"></a>暂停 educationSynchronizationProfile 上的同步
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-暂停租户中特定学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)的同步。
+暂停租户中特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 的同步。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "42424454"
 | 权限类型 | 权限 |
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.ReadWrite |
-|委派（个人 Microsoft 帐户|不支持。|
+|委派 (个人 Microsoft 帐户|不支持。|
 |应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -96,3 +96,5 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+
+

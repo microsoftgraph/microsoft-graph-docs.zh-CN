@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b88b6c783702a6c426792ca14db43a263638aa96
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: f277d16aaeb45ba8c753f239cc5d2444cebacc03
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434842"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007100"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>获取 educationSynchronizationProfile 的状态
 
@@ -18,7 +18,7 @@ ms.locfileid: "45434842"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取租户中特定学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)的状态。 响应将指示同步的状态。
+获取租户中特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 的状态。 响应将指示同步的状态。
 
 ## <a name="permissions"></a>权限
 
@@ -27,7 +27,7 @@ ms.locfileid: "45434842"
 | 权限类型                       | 权限（从最低特权到最高特权）                 |
 | :------------------------------------ | :---------------------------------------------------------- |
 | 委派（工作或学校帐户）    | EduAdministration、EduAdministration         |
-| 委派（个人 Microsoft 帐户 | 不支持。                                              |
+| 委派 (个人 Microsoft 帐户 | 不支持。                                              |
 | 应用程序                           | EduAdministration、EduAdministration 和所有 |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -49,7 +49,7 @@ GET /synchronizationProfiles/{id}/profileStatus
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[educationsynchronizationprofilestatus](../resources/educationsynchronizationprofilestatus.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [educationsynchronizationprofilestatus](../resources/educationsynchronizationprofilestatus.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -113,3 +113,5 @@ Content-length: 232
   "suppressions": [
   ]
 }-->
+
+

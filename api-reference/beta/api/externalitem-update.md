@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: e9d44fe63b03ab7da1da62402d5579f58dec195b
-ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
+ms.openlocfilehash: 077895872414380f9a5d6eab854c0b4b0d9ceab2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47439968"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006806"
 ---
 # <a name="update-externalitem"></a>更新 externalitem
 
@@ -22,7 +22,7 @@ ms.locfileid: "47439968"
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -42,7 +42,7 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="path-parameters"></a>路径参数
 
-| 参数     | 类型   | Description                                         |
+| 参数     | 类型   | 说明                                         |
 |:--------------|:-------|:----------------------------------------------------|
 | connection-id | 字符串 | `id`包含[externalConnection](../resources/externalconnection.md)的属性 |
 | item-id       | 字符串 | ExternalItem 的开发人员提供的 `id` 属性[externalItem](../resources/externalitem.md)。 |
@@ -58,7 +58,7 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 在请求正文中，提供应更新的相关字段的值。 现有属性 (排除 `properties` 请求正文中不包含的对象) 中的属性将保留其以前的值，或根据其他属性值的更改重新计算这些属性。 为了获得最佳性能，请勿加入尚未更改的现有值。 可更新以下属性。
 
-| 属性   | 类型                                  | Description               |
+| 属性   | 类型                                  | 说明               |
 |:-----------|:--------------------------------------|:--------------------------|
 | acl        | [acl](../resources/acl.md) 集合 | 一组访问控制项。 每个条目指定向用户或组授予的访问权限。 |
 | content    | [externalItemContent](../resources/externalitemcontent.md) | 项目内容的纯文本或 HTML 表示形式。 此属性中的文本为全文检索的文本。 |
@@ -168,3 +168,5 @@ Content-type: application/json
     "Error: update_externalitem/properties:\r\n      Referenced type microsoft.graph.object is not defined in the doc set! Potential suggestion: microsoft.graph.directoryObject"
   ]
 }-->
+
+

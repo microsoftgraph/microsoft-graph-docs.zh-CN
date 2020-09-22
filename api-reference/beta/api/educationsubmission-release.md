@@ -5,20 +5,20 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ac1678381a89402d9005c6bd198d2cee3f3178db
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3cb2c5a8388ca10f3c2819d84957cf26eb75f2f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424853"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007239"
 ---
 # <a name="educationsubmission-release"></a>educationSubmission： release
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此操作将使[educationOutcome](../resources/educationoutcome.md) ，其中包括与此提交相关的任何成绩或反馈，以供学生使用。 这会将提交状态从 "已提交" 更改为 "已发布"，并指示已完成评分。 此操作仅可由教师完成。
+此操作将使 [educationOutcome](../resources/educationoutcome.md) ，其中包括与此提交相关的任何成绩或反馈，以供学生使用。 这会将提交状态从 "已提交" 更改为 "已发布"，并指示已完成评分。 此操作仅可由教师完成。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -83,3 +83,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

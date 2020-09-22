@@ -3,24 +3,24 @@ title: 删除 androidForWorkMobileAppConfiguration
 description: 删除 androidForWorkMobileAppConfiguration。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cb6e708f531fea26bb9d7ba7feed63dbbaa7209e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5acbea1d0d4d23226cc078e21fcf461e3126cae9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43417755"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006466"
 ---
 # <a name="delete-androidforworkmobileappconfiguration"></a>删除 androidForWorkMobileAppConfiguration
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除[androidForWorkMobileAppConfiguration](../resources/intune-apps-androidforworkmobileappconfiguration.md)。
+删除 [androidForWorkMobileAppConfiguration](../resources/intune-apps-androidforworkmobileappconfiguration.md)。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -65,6 +65,9 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurati
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

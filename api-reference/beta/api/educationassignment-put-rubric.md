@@ -5,20 +5,20 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 913ab8805b7ef5b14fb58d9d3bf01553efff8cc5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 765f4e937a60cf4701f9639433794743af6d4dce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427345"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007754"
 ---
 # <a name="create-educationrubric"></a>创建 educationRubric
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将现有的[educationRubric](../resources/educationrubric.md)对象附加到[educationAssignment](../resources/educationassignment.md)。
+将现有的 [educationRubric](../resources/educationrubric.md) 对象附加到 [educationAssignment](../resources/educationassignment.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -46,7 +46,7 @@ PUT /education/classes/{id}/assignments/{id}/rubric/$ref
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供现有[educationRubric](../resources/educationrubric.md)对象的 OData ID。
+在请求正文中，提供现有 [educationRubric](../resources/educationrubric.md) 对象的 OData ID。
 
 ## <a name="response"></a>响应
 
@@ -113,3 +113,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

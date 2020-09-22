@@ -3,20 +3,20 @@ title: 列出 iosLobApps
 description: 列出 iosLobApp 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f5fac312bfa65c7efed2411ce374d65753c6f72c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c990d88dd83bd01bbcbe00bb62eb3733dde9dd97
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43417171"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006242"
 ---
 # <a name="list-ioslobapps"></a>列出 iosLobApps
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1804
+Content-Length: 1869
 
 {
   "value": [
@@ -95,6 +95,8 @@ Content-Length: 1804
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4,
@@ -121,6 +123,9 @@ Content-Length: 1804
   ]
 }
 ```
+
+
+
 
 
 

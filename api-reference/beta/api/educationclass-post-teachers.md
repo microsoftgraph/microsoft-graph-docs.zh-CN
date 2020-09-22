@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 84c078f5c230b525054859e91916205927b14cbb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 14fc9a60ee1275b4c92a23cd955bba912b5ace3c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42426316"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007544"
 ---
 # <a name="add-teacher"></a>添加教师
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -109,3 +109,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

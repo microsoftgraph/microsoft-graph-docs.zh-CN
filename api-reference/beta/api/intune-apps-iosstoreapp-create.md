@@ -3,14 +3,14 @@ title: 创建 iosStoreApp
 description: 创建新的 iosStoreApp 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db79e14bc3efdc6cc102697b980eac833f07e114
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 203f64d3f9c4c03ea065c2502f53b97a259a1e44
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790082"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006144"
 ---
 # <a name="create-iosstoreapp"></a>创建 iosStoreApp
 
@@ -69,8 +69,10 @@ POST /deviceAppManagement/mobileApps
 |uploadState|Int32|上载状态。 可能的值包括： 0- `Not Ready` 、1- `Ready` 、2- `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|字符串集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersedingAppCount|Int32|此应用程序直接或间接取代的应用程序总数量。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersededAppCount|Int32|此应用程序直接或间接取代的应用程序总数量。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |bundleId|String|标识名称。|
 |appStoreUrl|String|Apple App Store URL|
 |applicableDeviceType|[iosDeviceType](../resources/intune-apps-iosdevicetype.md)|可运行此应用的 iOS 体系结构。|
@@ -88,7 +90,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1160
+Content-length: 1217
 
 {
   "@odata.type": "#microsoft.graph.iosStoreApp",
@@ -113,6 +115,8 @@ Content-length: 1160
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "bundleId": "Bundle Id value",
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "applicableDeviceType": {
@@ -137,7 +141,7 @@ Content-length: 1160
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1332
+Content-Length: 1389
 
 {
   "@odata.type": "#microsoft.graph.iosStoreApp",
@@ -165,6 +169,8 @@ Content-Length: 1332
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "bundleId": "Bundle Id value",
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "applicableDeviceType": {
@@ -183,6 +189,9 @@ Content-Length: 1332
   }
 }
 ```
+
+
+
 
 
 

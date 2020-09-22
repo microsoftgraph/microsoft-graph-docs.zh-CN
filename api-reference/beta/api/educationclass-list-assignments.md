@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a32dc763816fe59c8038228fcf84317963f9e0d6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 72737b0f0de0d1f41cdff7e5f88ee37c4c272c61
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42426701"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007651"
 ---
 # <a name="list-assignments"></a>列出作业
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +52,7 @@ GET /education/classes/{id}/assignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[educationAssignment](../resources/educationassignment.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [educationAssignment](../resources/educationassignment.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -144,3 +144,5 @@ Content-length: 344
   "suppressions": []
 }
 -->
+
+

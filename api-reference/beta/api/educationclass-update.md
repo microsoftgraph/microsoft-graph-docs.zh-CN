@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e8b5e6508af5b00ecdcd50180d8a5ed47c05c009
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 8b339ceb2f48695692a7258c59944df74d9bd186
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810893"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007530"
 ---
 # <a name="update-educationclass-properties"></a>更新 educationclass 属性
 
@@ -134,3 +134,5 @@ Content-length: 224
   ]
 }
 -->
+
+

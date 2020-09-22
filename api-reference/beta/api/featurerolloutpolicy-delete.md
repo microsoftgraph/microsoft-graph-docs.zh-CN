@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a23101dc958fddf2d527bc4b7e90bf27bc0067d3
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 078af77e9b3cffa63e7a86b22aec49c7d98b3dee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181108"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006767"
 ---
 # <a name="delete-featurerolloutpolicy"></a>删除 featureRolloutPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "43181108"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除[featureRolloutPolicy](../resources/featurerolloutpolicy.md)对象。
+删除 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -88,3 +88,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

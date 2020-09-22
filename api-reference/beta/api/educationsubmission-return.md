@@ -5,16 +5,16 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d04c954f239ba1999f2ca838d14e52b7920f4bc0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb81da794a15cc41cc2883317ad0884d7a670cab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424825"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007271"
 ---
 # <a name="educationsubmission-return"></a>educationSubmission：返回
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -100,3 +100,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

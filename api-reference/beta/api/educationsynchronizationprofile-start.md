@@ -5,22 +5,22 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 94f93a038504c00e8bf9b7d616516ade668d2642
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2671920a997e1cf561e2be77a13f168efe6842e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424279"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007089"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>将文件上传到 educationSynchronizationProfile 后开始同步
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-验证是否已将文件上载到租户中的特定学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)。 如果验证成功，将在配置文件上启动同步。 否则，响应中将包含错误和警告。 如果响应中包含错误，同步将不会启动。 如果响应仅包含警告，将启动同步。
+验证是否已将文件上载到租户中的特定学校数据 [同步配置文件](../resources/educationsynchronizationprofile.md) 。 如果验证成功，将在配置文件上启动同步。 否则，响应中将包含错误和警告。 如果响应中包含错误，同步将不会启动。 如果响应仅包含警告，将启动同步。
 
-> **注意：** 仅当数据提供程序的类型为[educationcsvdataprovider](../resources/educationcsvdataprovider.md)时，才可使用此方法。 此外，还需要先设置配置文件的 state 属性，然后才能启动该属性。 轮询配置文件对象以检查其状态属性。
+> **注意：** 仅当数据提供程序的类型为 [educationcsvdataprovider](../resources/educationcsvdataprovider.md)时，才可使用此方法。 此外，还需要先设置配置文件的 state 属性，然后才能启动该属性。 轮询配置文件对象以检查其状态属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,7 +28,7 @@ ms.locfileid: "42424279"
 | 权限类型 | 权限 |
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.ReadWrite |
-|委派（个人 Microsoft 帐户|不支持。|
+|委派 (个人 Microsoft 帐户|不支持。|
 |应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -45,7 +45,7 @@ POST /synchronizationProfiles/{id}/start
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回 `200 OK` 响应代码。 如果不成功，则返回`400 Bad Request`。 如果发现任何错误或警告，响应将包含[educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md)对象的集合作为响应正文的一部分。
+如果成功，此方法返回 `200 OK` 响应代码。 如果不成功，则返回 `400 Bad Request` 。 如果发现任何错误或警告，响应将包含 [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) 对象的集合作为响应正文的一部分。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -157,3 +157,5 @@ Content-length: 2105
   "suppressions": [
   ]
 }-->
+
+

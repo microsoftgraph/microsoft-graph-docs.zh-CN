@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 03045c2b7fb438e1affa574e1db8682336ac43c3
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: f4fe8a200f1f86dd44eb5d0d2ed291c60ba10e73
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895732"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006954"
 ---
 # <a name="event-forward"></a>事件：前进
 
@@ -18,7 +18,7 @@ ms.locfileid: "44895732"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此操作允许会议[事件](../resources/event.md)的组织者或与会者将会议请求转发给新的收件人。 
+此操作允许会议 [事件](../resources/event.md) 的组织者或与会者将会议请求转发给新的收件人。 
 
 如果将会议事件从与会者的 Microsoft 365 邮箱转发给另一个收件人，此操作还会发送一封邮件，通知组织者转发，并将该收件人添加到组织者的会议事件副本中。 从 Outlook.com 帐户进行转发时，此便利功能不可用。
 
@@ -136,3 +136,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

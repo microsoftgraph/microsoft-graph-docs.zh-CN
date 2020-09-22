@@ -3,20 +3,20 @@ title: revokeDeviceLicense 操作
 description: 为给定应用撤销分配的 iOS VPP 设备许可证。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cd0e3441e3cf06d63e7bae8a86535046fbe5429b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b17c9161a0eee740daa1ac0d7ed521af2e27d9d4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43416775"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006130"
 ---
 # <a name="revokedevicelicense-action"></a>revokeDeviceLicense 操作
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -84,6 +84,9 @@ Content-length: 85
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

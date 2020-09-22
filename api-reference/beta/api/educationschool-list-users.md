@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 717e2a0611601f4664a46e153d13a6e87bf8a87e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc11605c174731e4ab7acf3051df62d2fc9a8453
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42425357"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007368"
 ---
 # <a name="list-educationusers"></a>列出 educationUsers
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -138,3 +138,5 @@ Content-length: 593
   ]
 }
 -->
+
+

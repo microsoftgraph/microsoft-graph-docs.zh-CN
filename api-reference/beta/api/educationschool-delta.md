@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 43ee6465aae4ec668fda95775a846b2c51aa13b2
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: f8dc7f61d7455e5579d41d8a4e6fbf7d14ec60e9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081180"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007404"
 ---
 # <a name="educationschool-delta"></a>educationSchool： delta
 
@@ -18,7 +18,7 @@ ms.locfileid: "45081180"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取新创建或更新的学校，而无需对整个学校集合执行完全读取。 有关详细信息，请参阅[使用 delta 查询](/graph/delta-query-overview)。
+获取新创建或更新的学校，而无需对整个学校集合执行完全读取。 有关详细信息，请参阅 [使用 delta 查询](/graph/delta-query-overview) 。
 
 ## <a name="permissions"></a>权限
 
@@ -50,7 +50,7 @@ GET /education/schools/delta
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[educationSchool](../resources/educationschool.md)集合对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [educationSchool](../resources/educationschool.md) 集合对象。
 
 > [!IMPORTANT]
 > educationSchool 增量不包括已删除的学校。
@@ -137,3 +137,5 @@ Content-length: 313
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

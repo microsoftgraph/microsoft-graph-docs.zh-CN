@@ -1,16 +1,16 @@
 ---
 title: educationAssignment： getResourcesFolderUrl
-description: '此函数返回您应上载所有基于文件的资源（Word、Excel 等）的 OneDrive URL。  '
+description: '此函数返回 OneDrive URL，其中所有基于文件的资源 (Word、Excel 等) 应上载。  '
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5a8b0aa4944b6c9bd5207fe801df839945bc34a4
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 0184f1cfafe25fc1222c48b12f24391c126a6443
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42590025"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007810"
 ---
 # <a name="educationassignment-getresourcesfolderurl"></a>educationAssignment： getResourcesFolderUrl
 
@@ -18,10 +18,10 @@ ms.locfileid: "42590025"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此函数返回您应上载所有基于文件的资源（Word、Excel 等）的 OneDrive URL。  
+此函数返回 OneDrive URL，其中所有基于文件的资源 (Word、Excel 等) 应上载。  
 请注意，文件必须位于此文件夹中才能作为资源添加。 只有课堂中的老师可以确定要上载的文件。 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -106,3 +106,5 @@ Content-length: 279
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: aa17555a34cd449bcfd4978ef5d6710ed992e4b2
-ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
+ms.openlocfilehash: b26239d3f669b345a19591b01a2139c4101c3768
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47439981"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006844"
 ---
 # <a name="create-schema"></a>创建架构
 
@@ -22,7 +22,7 @@ ms.locfileid: "47439981"
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -148,3 +148,5 @@ Location: https://graph.microsoft.com/beta/external/connections/contosohr/operat
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8f1cd99c0134eb15a290a49f3c4bbf2da5bfd61f
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: fe20285dce5a65bc29e61000f5d5b55e5fe88681
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681726"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007537"
 ---
 # <a name="update-educationoutcome"></a>更新 educationoutcome
 
@@ -18,9 +18,9 @@ ms.locfileid: "44681726"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[educationOutcome](../resources/educationoutcome.md)对象的属性。
+更新 [educationOutcome](../resources/educationoutcome.md) 对象的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,13 +48,13 @@ PATCH /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-EducationOutcome 对象将为以下派生类型之一： **educationPointsOutcome**、 **educationFeedbackOutcome**或**educationRubricOutcome**。 提供与要修补的结果类型相关的特定属性。
+EducationOutcome 对象将为以下派生类型之一： **educationPointsOutcome**、 **educationFeedbackOutcome**或 **educationRubricOutcome**。 提供与要修补的结果类型相关的特定属性。
 
-所有派生结果类型都有一个与该结果类型相对应的常规和 "已发布" 属性;例如，**点**和**publishedPoints**、**反馈**和**publishedFeedback**。 不更新 "已发布" 属性;它仅供内部使用。 例如，若要向**educationPointsOutcome**分配点，请更新**points**属性，但不要更新**publishedPoints**。
+所有派生结果类型都有一个与该结果类型相对应的常规和 "已发布" 属性;例如， **点** 和 **publishedPoints**、 **反馈** 和 **publishedFeedback**。 不更新 "已发布" 属性;它仅供内部使用。 例如，若要向 **educationPointsOutcome**分配点，请更新 **points** 属性，但不要更新 **publishedPoints**。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[educationOutcome](../resources/educationoutcome.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [educationOutcome](../resources/educationoutcome.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -334,3 +334,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

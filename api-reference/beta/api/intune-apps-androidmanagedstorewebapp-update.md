@@ -3,14 +3,14 @@ title: 更新 androidManagedStoreWebApp
 description: 更新 androidManagedStoreWebApp 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b003ab5b6edbcf41232a0d1f329853383bab58e
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 4c9ef54245b427372901a4b1cd6f29eff9b3b616
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791202"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006277"
 ---
 # <a name="update-androidmanagedstorewebapp"></a>更新 androidManagedStoreWebApp
 
@@ -71,17 +71,19 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |uploadState|Int32|上载状态。 可能的值包括： 0- `Not Ready` 、1- `Ready` 、2- `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|字符串集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersedingAppCount|Int32|此应用程序直接或间接取代的应用程序总数量。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersededAppCount|Int32|此应用程序直接或间接取代的应用程序总数量。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |packageId|String|包标识符。 继承自 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |appIdentifier|String|标识名称。 继承自 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |usedLicenseCount|Int32|使用中的 VPP 许可证数量。 继承自 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |totalLicenseCount|Int32|VPP 许可证的总数。 继承自 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |appStoreUrl|String|"播放工作商店" 应用程序 URL。 继承自 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
-|isPrivate|布尔值|指示应用程序是否仅适用于给定企业的用户。 继承自 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
-|isSystemApp|布尔值|指示应用程序是否为预安装的系统应用程序。 继承自 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|isPrivate|Boolean|指示应用程序是否仅适用于给定企业的用户。 继承自 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|isSystemApp|Boolean|指示应用程序是否为预安装的系统应用程序。 继承自 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |appTracks|[androidManagedStoreAppTrack](../resources/intune-apps-androidmanagedstoreapptrack.md) 集合|对此企业可见的曲目。 继承自 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
-|supportsOemConfig|布尔值|此应用是否支持 OEMConfig 策略。 继承自 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|supportsOemConfig|Boolean|此应用是否支持 OEMConfig 策略。 继承自 [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 
 
 
@@ -95,7 +97,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1171
+Content-length: 1228
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreWebApp",
@@ -120,6 +122,8 @@ Content-length: 1171
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "packageId": "Package Id value",
   "appIdentifier": "App Identifier value",
   "usedLicenseCount": 0,
@@ -143,7 +147,7 @@ Content-length: 1171
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1343
+Content-Length: 1400
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreWebApp",
@@ -171,6 +175,8 @@ Content-Length: 1343
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "packageId": "Package Id value",
   "appIdentifier": "App Identifier value",
   "usedLicenseCount": 0,
@@ -188,6 +194,9 @@ Content-Length: 1343
   "supportsOemConfig": true
 }
 ```
+
+
+
 
 
 

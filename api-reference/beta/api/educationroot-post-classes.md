@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f17c356b4e6177fa3cba6a7e7aa9991c768c0e75
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: bdd0501e884aee897b52f92f85dd984fd85bff4b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353229"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007502"
 ---
 # <a name="create-educationclass"></a>创建 educationClass
 
@@ -27,7 +27,7 @@ ms.locfileid: "44353229"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  不支持。  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|Application | EduRoster.ReadWrite.All | 
+|应用程序 | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -132,3 +132,5 @@ Content-length: 224
   ]
 }
 -->
+
+

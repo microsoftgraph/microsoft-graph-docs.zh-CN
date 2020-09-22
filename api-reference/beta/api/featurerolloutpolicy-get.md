@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6fdf941383d8f64e690899b80044300c3d69d684
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: af71de5249cb47a71c5a4ecd826f6152a37a4ba2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181117"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006725"
 ---
 # <a name="get-featurerolloutpolicy"></a>获取 featureRolloutPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "43181117"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[featureRolloutPolicy](../resources/featurerolloutpolicy.md)对象的属性和关系。
+检索 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ GET /directory/featureRolloutPolicies/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持`$select` OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /directory/featureRolloutPolicies/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[featureRolloutPolicy](../resources/featurerolloutpolicy.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [featureRolloutPolicy](../resources/featurerolloutpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -142,7 +142,7 @@ GET https://graph.microsoft.com/beta/directory/featureRolloutPolicies/df85e4d9-e
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面介绍响应示例。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
@@ -182,3 +182,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
