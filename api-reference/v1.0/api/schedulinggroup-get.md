@@ -1,24 +1,24 @@
 ---
 title: 获取 schedulingGroup
-description: 按 ID 检索[schedulingGroup](../resources/schedulinggroup.md)的属性和关系。
+description: 按 ID 检索 [schedulingGroup](../resources/schedulinggroup.md) 的属性和关系。
 author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8d86959cf63dcbb271ff0f6d9b3792129f02543f
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 26d8b1787003a1d83f5a7cbcc9955bf42e28ceaf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44217176"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015580"
 ---
 # <a name="get-schedulinggroup"></a>获取 schedulingGroup
 
 命名空间：microsoft.graph
 
-按 ID 检索[schedulingGroup](../resources/schedulinggroup.md)的属性和关系。
+按 ID 检索 [schedulingGroup](../resources/schedulinggroup.md) 的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "44217176"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 请参阅 all、Group、Group. all、Schedule、Group、Group。所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Schedule. All、Schedule、All |
+|应用程序 | Schedule. All、Schedule、All |
 
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
@@ -43,7 +43,7 @@ GET /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 此方法不支持 OData 查询参数来自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头       | 值 |
 |:---------------|:--------|
@@ -54,7 +54,7 @@ GET /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[schedulingGroup](../resources/schedulinggroup.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [schedulingGroup](../resources/schedulinggroup.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -143,3 +143,4 @@ Content-length: 401
   ]
 }
 -->
+

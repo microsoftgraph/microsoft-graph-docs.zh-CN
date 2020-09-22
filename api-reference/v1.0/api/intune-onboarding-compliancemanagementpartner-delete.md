@@ -3,14 +3,14 @@ title: 删除 complianceManagementPartner
 description: 删除 complianceManagementPartner。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d2c9cdc6571339ca38bf4f575d658de1c9cf83c
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
-ms.translationtype: Auto
+ms.openlocfilehash: 17819fc253907b54ecddbda8f2d4324891b90e63
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744123"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015713"
 ---
 # <a name="delete-compliancemanagementpartner"></a>删除 complianceManagementPartner
 
@@ -18,7 +18,7 @@ ms.locfileid: "44744123"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)。
+删除 [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -63,6 +63,9 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/complianceManagementPar
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

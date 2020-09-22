@@ -5,20 +5,20 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d6eee25246d0851bd442bbbb10b9f9c2bfc646cf
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 0ca47d0f9c640509d0a61f68c688d45753293ad5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44218088"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015531"
 ---
 # <a name="update-workforceintegration"></a>更新 workforceIntegration
 
 命名空间：microsoft.graph
 
-更新[workforceIntegration](../resources/workforceintegration.md)对象的属性。
+更新 [workforceIntegration](../resources/workforceintegration.md) 对象的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "44218088"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     |WorkforceIntegration |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -48,18 +48,18 @@ PATCH /teamwork/workforceIntegrations
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |apiVersion|Int32|回调 URL 的 API 版本。 从1开始。|
 |displayName|String|劳动力集成的名称。|
 |技术|workforceIntegrationEncryption|劳动力集成加密资源。 |
 |isActive|Boolean|指示此劳动力集成当前是否处于活动状态且可用。|
-|supportedEntities|string| 可取值为：`none`、`shift`、`swapRequest`、`openshift`、`openShiftRequest`、`userShiftPreferences`。 如果选择多个值，则所有值必须以大写形式的第一个字母开头。|
+|supportedEntities|字符串| 可取值为：`none`、`shift`、`swapRequest`、`openshift`、`openShiftRequest`、`userShiftPreferences`。 如果选择多个值，则所有值必须以大写形式的第一个字母开头。|
 |url|String| 劳动力集成 URL，用于从班次服务进行回调。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[workforceIntegration](../resources/workforceintegration.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [workforceIntegration](../resources/workforceintegration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -164,7 +164,7 @@ PATCH https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforce
 ```
 ### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 ```
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -182,7 +182,7 @@ Content-type: application/json
   "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
 ```
-若要了解如何创建具有 SwapRequest 的新 workforceintegration 以启用资格筛选，请参阅[create](../api/workforceintegration-post.md)。
+若要了解如何创建具有 SwapRequest 的新 workforceintegration 以启用资格筛选，请参阅 [create](../api/workforceintegration-post.md)。
 
 ## <a name="example-of-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>EligibilityFilteringEnabledEntities 中包含 SwapRequest 时获取符合条件的班次的示例
 倒班应用和劳动力集成终结点之间的交互将遵循现有模式。
@@ -234,3 +234,4 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+

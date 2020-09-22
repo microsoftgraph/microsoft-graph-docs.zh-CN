@@ -7,16 +7,16 @@ localization_priority: Normal
 description: 视频资源将与视频相关的数据项分组到一个单一结构。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2982dbad8f1e06a2f1288bd499c88c77a4ef2fda
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 20e9a4672f1f77f2fa3f5e98479cb6190c9f9022
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446763"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015272"
 ---
 # <a name="video-resource-type"></a>Video 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 **视频**资源将与视频相关的数据项分组到一个单一结构。
 
@@ -75,3 +75,4 @@ ms.locfileid: "42446763"
   "section": "documentation",
   "tocPath": "Facets/Video"
 } -->
+

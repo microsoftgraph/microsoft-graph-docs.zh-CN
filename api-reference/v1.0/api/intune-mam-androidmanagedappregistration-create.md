@@ -3,14 +3,14 @@ title: 创建 androidManagedAppRegistration
 description: 创建新的 androidManagedAppRegistration 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d62f07d8daa7b6c4244d4f8feef6a48102eb74d8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2f6f1882d83a5dd0e994e0462521941cd31ed0ab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446044"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015965"
 ---
 # <a name="create-androidmanagedappregistration"></a>创建 androidManagedAppRegistration
 
@@ -59,10 +59,10 @@ POST /deviceAppManagement/managedAppRegistrations
 |deviceType|String|主机设备类型。继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |deviceTag|String|应用管理 SDK 生成的标记，它可帮助关联托管在同一设备上的应用。 不保证在所有情况下与应用关联。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |deviceName|String|主机设备名称。继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|flaggedReasons|[managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)集合|标记应用注册的零个或多个原因。 例如， 在从[ManagedAppRegistration](../resources/intune-mam-managedappregistration.md)继承的根设备上运行的应用程序。 可取值为：`none`、`rootedDevice`。|
+|flaggedReasons|[managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md) 集合|标记应用注册的零个或多个原因。 例如， 在从 [ManagedAppRegistration](../resources/intune-mam-managedappregistration.md)继承的根设备上运行的应用程序。 可取值为：`none`、`rootedDevice`。|
 |userId|String|此应用注册所属的用户 ID。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|应用包标识符。继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|id|字符串|实体的键。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|id|String|实体的键。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |version|String|实体的版本。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 
 
@@ -129,6 +129,9 @@ Content-Length: 753
   "version": "Version value"
 }
 ```
+
+
+
 
 
 

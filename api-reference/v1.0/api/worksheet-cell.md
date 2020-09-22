@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b447bed5bd6e77faa941a3c228f78b804d0204f6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4e97fcdde6d15a382a9e2b35c56d2c30ce4e045e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508693"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015517"
 ---
 # <a name="worksheet-cell"></a>Worksheet:Cell
 
@@ -41,7 +41,7 @@ GET /workbook/worksheets/{id|name}/cell(row={row},column={column})
 |row|Int32|要检索的单元格的行号。从零开始编制索引。|
 |column|Int32|要检索的单元格的列号。 从零开始编制索引。|
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -98,3 +98,4 @@ Content-length: 169
   "section": "documentation",
   "tocPath": ""
 }-->
+

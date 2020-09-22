@@ -5,16 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 24af9e9be6dc9b63934a02193958e0267dde8dea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 14a7c084aad907ce2e5f90b06f17b64aca9c331e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521010"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016102"
 ---
 # <a name="rubriclevel-resource-type"></a>rubricLevel 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ Rubric 的级别。 有关 rubric*质量*、*级别*和*条件*之间的关系�
 |:-------------|:------------|:------------|
 |说明|[itemBody](itembody.md)|此 rubric 级别的说明。|
 |displayName|String|此 rubric 级别的名称。|
-|评分|[educationAssignmentGradeType](educationassignmentgradetype.md)|如果这是一个无点的 rubric，则为 Null;[educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md)如果是点 rubric。|
+|评分|[educationAssignmentGradeType](educationassignmentgradetype.md)|如果这是一个无点的 rubric，则为 Null; [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) 如果是点 rubric。|
 |levelId|String|此资源的 ID。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -60,3 +60,4 @@ Rubric 的级别。 有关 rubric*质量*、*级别*和*条件*之间的关系�
   "section": "documentation",
   "tocPath": ""
 }-->
+

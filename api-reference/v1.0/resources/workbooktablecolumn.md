@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 4144b7aa4fb37d1c3016694eff2282e300fe2431
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2d9e978291b7a5f45ba000e7de4095ef03147c15
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533374"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015090"
 ---
 # <a name="workbooktablecolumn-resource-type"></a>workbookTableColumn 资源类型
 
@@ -19,15 +19,15 @@ ms.locfileid: "42533374"
 代表表格中的一列。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 TableColumn](../api/tablecolumn-get.md) | [WorkbookTableColumn](workbooktablecolumn.md) |读取 tablecolumn 对象的属性和关系。|
 |[更新](../api/tablecolumn-update.md) | [WorkbookTableColumn](workbooktablecolumn.md) |更新 TableColumn 对象 |
-|[Databodyrange](../api/tablecolumn-databodyrange.md)|[Range](range.md)|获取与列的数据体相关的 range 对象。|
-|[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[Range](range.md)|获取与列的标头行相关的 range 对象。|
-|[区域](../api/tablecolumn-range.md)|[Range](range.md)|获取与整个列相关的 range 对象。|
+|[Databodyrange](../api/tablecolumn-databodyrange.md)|[区域](range.md)|获取与列的数据体相关的 range 对象。|
+|[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[区域](range.md)|获取与列的标头行相关的 range 对象。|
+|[区域](../api/tablecolumn-range.md)|[区域](range.md)|获取与整个列相关的 range 对象。|
 |[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[区域](range.md)|获取与列的总计行相关的 range 对象。|
 |[删除](../api/tablecolumn-delete.md)|无|从表中删除列。|
 |[列出](../api/tablecolumn-list.md) | [WorkbookTableColumn](workbooktablecolumn.md) 集合 |获取 tableColumn 对象的集合。 |
@@ -78,3 +78,4 @@ ms.locfileid: "42533374"
   "section": "documentation",
   "tocPath": ""
 }-->
+

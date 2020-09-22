@@ -5,16 +5,16 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 77402ad1566bcfa6822a326270306f1ea604896f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 26c1862a05431f02149cb4ddbef9a8ab57449d37
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446728"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015153"
 ---
 # <a name="workbookcommentreply-resource-type"></a>workbookCommentReply 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 表示对 Excel 注释的答复。
 
@@ -22,7 +22,7 @@ ms.locfileid: "42446728"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出 workbookCommentReplies](../api/workbookcomment-list-replies.md) | [workbookCommentReply](workbookcommentreply.md)集合 | 检索 workbookcommentreply 对象的列表。 |
+| [列出 workbookCommentReplies](../api/workbookcomment-list-replies.md) | [workbookCommentReply](workbookcommentreply.md) 集合 | 检索 workbookcommentreply 对象的列表。 |
 | [获取 workbookCommentReply](../api/workbookcommentreply-get.md) | [workbookCommentReply](workbookcommentreply.md) | 读取 workbookCommentReply 对象的属性和关系。 |
 | [创建 workbookCommentReply](../api/workbookcomment-post-replies.md) | [workbookCommentReply](workbookcommentreply.md) | 创建新的 workbookCommentReply。 |
 ## <a name="properties"></a>属性
@@ -31,7 +31,7 @@ ms.locfileid: "42446728"
 |:-------------|:------------|:------------|
 |内容|String|批注答复的内容。|
 |contentType|String|指示批注答复的类型。|
-|id|字符串|表示批注标识符。 只读。|
+|id|String|表示批注标识符。 只读。|
 
 
 ## <a name="relationships"></a>关系
@@ -69,3 +69,4 @@ ms.locfileid: "42446728"
   "section": "documentation",
   "tocPath": ""
 }-->
+

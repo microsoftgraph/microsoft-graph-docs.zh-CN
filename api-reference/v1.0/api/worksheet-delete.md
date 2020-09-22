@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ec570d08208637ac3191946fd1aa0ac422c2980d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1bb38e12537aa8e957ed1f0dad400e09325470c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508686"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015496"
 ---
 # <a name="worksheet-delete"></a>Worksheet: delete
 
@@ -75,3 +75,4 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+

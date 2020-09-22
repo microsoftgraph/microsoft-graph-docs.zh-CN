@@ -6,12 +6,12 @@ description: VersionAction 对象提供有关导致新项目版本的活动的�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: cde5c906c41972950431d5219bea73e4095f74e7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 94efbb554420030eb33a814de72d5d79ab065738
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533416"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015279"
 ---
 # <a name="versionaction-resource-type"></a>versionAction 资源类型
 
@@ -53,3 +53,4 @@ ms.locfileid: "42533416"
   "suppressions": []
 }
 -->
+

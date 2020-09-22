@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2390ff2f9aab1fe74aa6aebf0cfdbeeb6a2d5131
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 838fe1b986245909c1c1251d23fe048d2ebf65ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793589"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016196"
 ---
 # <a name="riskyuser-resource-type"></a>riskyUser 资源类型
 
@@ -20,17 +20,17 @@ ms.locfileid: "44793589"
 
 表示有风险的 Azure AD 用户。 Azure AD 会根据各种信号和机器学习持续评估用户风险。 此 API 提供对 Azure AD 中所有风险用户的编程访问。
 
-有关风险事件的详细信息，请参阅[Azure Active Directory Identity Protection](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/)。
+有关风险事件的详细信息，请参阅 [Azure Active Directory Identity Protection](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/)。
 
 >**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法   | 返回类型|说明|
 |:---------------|:--------|:----------|
-|[列出 riskyUsers](../api/riskyusers-list.md) | [riskyUser](riskyuser.md)集合|列出有风险的用户及其属性。|
+|[列出 riskyUsers](../api/riskyusers-list.md) | [riskyUser](riskyuser.md) 集合|列出有风险的用户及其属性。|
 |[获取 riskyUser](../api/riskyusers-get.md) | [riskyUser](riskyuser.md)|获取特定的有风险的用户及其属性。|
-|[列表历史记录](../api/riskyuser-list-history.md) | [riskyUserHistoryItem](riskyuserhistoryitem.md)集合|获取 Azure AD 用户的风险历史记录。|
+|[列表历史记录](../api/riskyuser-list-history.md) | [riskyUserHistoryItem](riskyuserhistoryitem.md) 集合|获取 Azure AD 用户的风险历史记录。|
 |[确认 riskyUsers 已泄露](../api/riskyusers-confirmcompromised.md)|无 |确认有风险的用户受到威胁。|
 |[消除 riskyUsers](../api/riskyusers-dismiss.md)|无 | 消除有风险的用户的风险。|
 
@@ -39,7 +39,7 @@ ms.locfileid: "44793589"
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
 |`id`|`string`|用户面临风险的唯一 id|
-|`isDeleted`|`bool`|指示是否删除用户。 可能的值包括： `true` 、`false`|
+|`isDeleted`|`bool`|指示是否删除用户。 可能的值包括： `true` 、 `false`|
 |`isProcessing`|`bool`|指示后端正在处理用户的危险状态 wehther|
 |`riskLastUpdatedDateTime`|`datetime`|上次更新有风险的用户的日期和时间|
 |`riskLevel`|`riskLevel`| 可能的值为 low、medium、high、hidden、none、向 unknownfuturevalue。  |
@@ -89,3 +89,5 @@ ms.locfileid: "44793589"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

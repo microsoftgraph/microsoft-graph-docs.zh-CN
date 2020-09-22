@@ -1,26 +1,26 @@
 ---
-title: 为服务主体授予的列表 appRoleAssignments
-description: 检索为服务主体授予的应用程序角色分配的列表。
+title: 列出为服务主体授予的 appRoleAssignment
+description: 检索为服务主体授予的应用角色分配列表。
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: de8898d3243c19970fd56d181058fc9f92bdfbc9
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 21b09abfd4d2c0d768ab885070fec454d2e1cde2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383992"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015545"
 ---
-# <a name="list-approleassignments-granted-for-a-service-principal"></a>为服务主体授予的列表 appRoleAssignments
+# <a name="list-approleassignments-granted-for-a-service-principal"></a>列出为服务主体授予的 appRoleAssignment
 
 命名空间：microsoft.graph
 
-检索已授予给定资源服务主体的用户、组或客户端服务主体的[appRoleAssignment](../resources/approleassignment.md)列表。
+检索已为给定资源服务主体授予用户、组或客户端服务主体的 [appRoleAssignment ](../resources/approleassignment.md) 列表。
 
-例如，如果资源服务主体是 Microsoft Graph API 的服务主体，这将返回所有已向其授予了对 Microsoft Graph 的仅限应用程序权限的服务主体。
+例如，如果资源服务主体是 Microsoft Graph API 的服务主体，则将返回已向 Microsoft Graph 授予任何仅应用权限的所有服务主体。
 
-如果资源服务主体是向用户和组授予应用程序角色的应用程序，这将返回为此应用程序分配的应用程序角色的所有用户和组。
+如果资源服务主体是具有授予用户和组的应用角色的应用程序，则将返回为此应用程序分配应用角色的所有用户和组。
 
 ## <a name="permissions"></a>权限
 
@@ -28,9 +28,9 @@ ms.locfileid: "44383992"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | "Application"、"all"、"Directory.accessasuser.all"、"全部"、"全部"、"全部"、"全部"、"所有"  |
+|委派（工作或学校帐户） | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | "Application"、"all"、"全部"、"所有"、"所有"、"所有" |
+|应用程序 | Application.Read.All、Directory.Read.All、Application.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -43,7 +43,7 @@ GET /servicePrincipals/{id}/appRoleAssignedTo
 
 此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称           | 说明                |
 |:---------------|:---------------------------|
@@ -55,13 +55,13 @@ GET /servicePrincipals/{id}/appRoleAssignedTo
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[appRoleAssignment](../resources/approleassignment.md)对象集合。
+如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [appRoleAssignment](../resources/approleassignment.md) 对象集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 
-下面的示例演示了检索已授予给定资源服务主体的应用程序角色分配的请求。
+以下是检索已为给定资源服务主体授予的应用角色分配的请求示例。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -137,3 +137,4 @@ Content-length: 306
   ]
 }
 -->
+

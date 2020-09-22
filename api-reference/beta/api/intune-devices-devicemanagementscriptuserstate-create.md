@@ -3,24 +3,24 @@ title: 创建 deviceManagementScriptUserState
 description: 创建新的 deviceManagementScriptUserState 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e8c7e4eca3644b3f5d370c03b632fced527609c4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5df89e811e563843a97e0a3e86e954f085d32a60
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380107"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014551"
 ---
 # <a name="create-devicemanagementscriptuserstate"></a>创建 deviceManagementScriptUserState
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)对象。
+创建新的 [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -57,12 +57,12 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 |id|String|设备管理脚本用户状态实体的键。 此属性是只读的。|
 |successDeviceCount|Int32|特定用户的成功设备计数。|
 |errorDeviceCount|Int32|特定用户的错误设备计数。|
-|userPrincipalName|字符串|特定用户的用户主体名称。|
+|userPrincipalName|String|特定用户的用户主体名称。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -96,6 +96,9 @@ Content-Length: 229
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
 
 
 

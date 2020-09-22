@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f1879674ae9cafde385ef31a62807c61f2679391
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 0048d11a8241e8a81bf223f337493e37aebaceda
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217624"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016014"
 ---
 # <a name="objectdefinition-resource-type"></a>objectDefinition 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "43217624"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-描述对象及其属性。 对象定义是[directoryDefinition](synchronization-directorydefinition.md)的一部分，它作为[synchronizationSchema](synchronization-synchronizationschema.md)的一部分进行更新。
+描述对象及其属性。 对象定义是 [directoryDefinition](synchronization-directorydefinition.md)的一部分，它作为 [synchronizationSchema](synchronization-synchronizationschema.md)的一部分进行更新。
 
 ## <a name="properties"></a>属性
 
 | 属性      | 类型      | 说明    |
 |:--------------|:----------|:---------------|
-|attributes     |[attributeDefinition](synchronization-attributedefinition.md)集合    | 定义对象的属性。 |
-|metadata       |[metadataEntry](synchronization-metadataentry.md)集合   |其他扩展属性。 除非明确提到，否则不应更改元数据值。|
-|name           |字符串     |对象的名称。 在目录定义中必须是唯一的。 不可为空。|
+|attributes     |[attributeDefinition](synchronization-attributedefinition.md) 集合    | 定义对象的属性。 |
+|metadata       |[metadataEntry](synchronization-metadataentry.md) 集合   |其他扩展属性。 除非明确提到，否则不应更改元数据值。|
+|name           |String     |对象的名称。 在目录定义中必须是唯一的。 不可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -453,3 +453,5 @@ ms.locfileid: "43217624"
   "suppressions": []
 }
 -->
+
+

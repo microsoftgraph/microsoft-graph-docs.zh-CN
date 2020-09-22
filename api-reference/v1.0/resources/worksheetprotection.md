@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 805c3b53a60495ebd50a230a83e3ce1272cacf4d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8bb91dae367f9f9c95465aed0f8c71a26aaddd1a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446665"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014999"
 ---
 # <a name="worksheetprotection-resource-type"></a>WorksheetProtection 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 表示对工作表对象的保护。
 
@@ -61,3 +61,4 @@ ms.locfileid: "42446665"
   "section": "documentation",
   "tocPath": ""
 }-->
+

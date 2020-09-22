@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 1e9746f27a23b12a3bfdf3168cd271c7f2cbc0d2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5d5b75d3062b087848f804c0f89726c67783c540
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446690"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015104"
 ---
 # <a name="workbooksessioninfo-resource-type"></a>workbookSessionInfo 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 提供有关工作簿会话的信息。
 
@@ -42,4 +42,5 @@ ms.locfileid: "42446690"
 |:---------|:------|:------------------------------------------|
 | id  | string | 工作簿会话 的 ID。 |
 | persistChanges | boolean |  对于持续会话，值为 `true`。 对于非持续会话（视图模式），值为 `false`。 |
+
 

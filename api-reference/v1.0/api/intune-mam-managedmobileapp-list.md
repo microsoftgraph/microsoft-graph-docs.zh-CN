@@ -3,14 +3,14 @@ title: 列出 managedMobileApps
 description: 列出 managedMobileApp 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d9ace52200e9309821b8a47a9c860646624759cd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c4780376aaf696747fe0cb45673fcbf5db1d57ad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43398418"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015846"
 ---
 # <a name="list-managedmobileapps"></a>列出 managedMobileApps
 
@@ -81,6 +81,9 @@ Content-Length: 287
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3b98f6fa2e09da576af6b395fc48f6a5a2f15579
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 63460f95e419a6e1e39a1c52fbf17d05ef9f5a5c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446681"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015013"
 ---
 # <a name="workinghours-resource-type"></a>workingHours 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 表示特定时区用户一周的工作天数和小时数。
 
@@ -68,3 +68,4 @@ ms.locfileid: "42446681"
   ],
   "tocPath": ""
 }-->
+

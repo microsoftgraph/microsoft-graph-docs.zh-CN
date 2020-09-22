@@ -5,22 +5,22 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0fa4bc26ea6c5c27d8e7679e2bfb587b90044405
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 8ed4da18eef18ac350db308a3148e791cf5b7f02
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556146"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015573"
 ---
 # <a name="replace-schedulinggroup"></a>更换 schedulingGroup
 
 命名空间：microsoft.graph
 
-替换现有的[schedulingGroup](../resources/schedulinggroup.md)。
+替换现有的 [schedulingGroup](../resources/schedulinggroup.md)。
 
-如果指定的[schedulingGroup](../resources/schedulinggroup.md)不存在，则此方法返回 `404 Not found` 。
+如果指定的 [schedulingGroup](../resources/schedulinggroup.md) 不存在，则此方法返回 `404 Not found` 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "44556146"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Schedule。 All，Group. 所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Schedule.ReadWrite.All |
+|应用程序 | Schedule.ReadWrite.All |
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -49,11 +49,11 @@ PATCH /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[schedulingGroup](../resources/schedulinggroup.md)对象的 JSON 表示形式。
+在请求正文中，提供 [schedulingGroup](../resources/schedulinggroup.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[schedulingGroup](../resources/schedulinggroup.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [schedulingGroup](../resources/schedulinggroup.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -153,3 +153,4 @@ Content-length: 401
   ]
 }
 -->
+

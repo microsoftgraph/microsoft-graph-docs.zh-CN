@@ -5,18 +5,18 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4f54ccc630979d8cbbe4064438c4608a445be7d7
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 3ec2f2629e7f64e2f7cf7ae703b88c5eb8fe43bf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44218246"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015553"
 ---
 # <a name="create-workforceintegration"></a>创建 workforceIntegration
 
 命名空间：microsoft.graph
 
-创建新的[workforceIntegration](../resources/workforceintegration.md)对象。
+创建新的 [workforceIntegration](../resources/workforceintegration.md) 对象。
 您可以设置要接收其上的同步更改通知的实体并设置实体以配置按 WFM 规则（包括交换请求）的筛选的筛选器。
 
 ## <a name="permissions"></a>权限
@@ -27,7 +27,7 @@ ms.locfileid: "44218246"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | WorkforceIntegration |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -48,11 +48,11 @@ POST /teamwork/workforceIntegrations
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[workforceIntegration](../resources/workforceintegration.md)对象的 JSON 表示形式。
+在请求正文中，提供 [workforceIntegration](../resources/workforceintegration.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[workforceIntegration](../resources/workforceintegration.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [workforceIntegration](../resources/workforceintegration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -159,7 +159,7 @@ Content-type: application/json
 ```
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面介绍响应示例。
 ```
 HTTP/1.1 200 OK
 {
@@ -177,7 +177,7 @@ HTTP/1.1 200 OK
 }
 
 ```
-若要了解如何更新启用了 SwapRequest 的现有 workforceintegration 以进行资格筛选，请参阅[更新](../api/workforceintegration-update.md)。
+若要了解如何更新启用了 SwapRequest 的现有 workforceintegration 以进行资格筛选，请参阅 [更新](../api/workforceintegration-update.md)。
 
 ## <a name="example-of-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>EligibilityFilteringEnabledEntities 中包含 SwapRequest 时获取符合条件的班次的示例
 倒班应用和劳动力集成终结点之间的交互将遵循现有模式。
@@ -230,3 +230,4 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+

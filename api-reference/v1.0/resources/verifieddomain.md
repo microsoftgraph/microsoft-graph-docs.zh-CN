@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 656e4a4c8fc40c86eea3b3e167adae22a9580081
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c56b7c49fc2bee4f10d338bc1bcc4cfec323ea97
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807694"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015286"
 ---
 # <a name="verifieddomain-resource-type"></a>verifiedDomain 资源类型
 
@@ -60,3 +60,4 @@ ms.locfileid: "46807694"
   "section": "documentation",
   "tocPath": ""
 }-->
+

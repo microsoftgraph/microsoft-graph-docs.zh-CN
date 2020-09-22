@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 4fa98cdfdfc013386f7d615c54c832d27c5f826e
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: 9f186fe1c6c5e7ac917508ed75f6fb8488cbdc94
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408140"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015146"
 ---
 # <a name="workbookoperation-resource-type"></a>workbookOperation 资源类型
 
@@ -28,10 +28,10 @@ ms.locfileid: "45408140"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|状态|字符串| 操作的当前状态。 可取值为：`NotStarted`、`Running`、`Completed`、`Failed`。|
+|状态|String| 操作的当前状态。 可取值为：`NotStarted`、`Running`、`Completed`、`Failed`。|
 |id|String| 操作 id。只读。|
 |error|[workbookOperationError](workbookoperationerror.md)| 操作返回的错误。|
-|resourceLocation|字符串| 结果的资源 URI。|
+|resourceLocation|String| 结果的资源 URI。|
 
 ## <a name="relationships"></a>关系
 

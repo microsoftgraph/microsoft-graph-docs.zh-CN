@@ -3,14 +3,14 @@ title: 使用 Microsoft Graph API 获取更改通知
 description: Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端。 客户端是一个 Web 服务，用于配置自身的 URL 以接收通知。 客户端应用使用通知在更改时更新其状态。 有关详细信息（包括如何订阅和处理传入通知），请参阅“设置用户数据更改的通知”。
 localization_priority: Priority
 author: davidmu1
-ms.prod: ''
+ms.prod: change-notifications
 doc_type: conceptualPageType
-ms.openlocfilehash: 88c7674af3cb99a068bb06b2227badce6ba24c9d
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: d8f5529c56282c59572e615fd875860f136e6149
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598183"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015244"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
@@ -33,7 +33,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 | SharePoint [网站][]下的[列表][] | _列表_内的内容更改： <br>`/sites/{id}/lists/{id}` | 否 |
 | 安全[警报][] | 对特定警报更改：<br>`/security/alerts/{id}` <br>对已筛选的警报更改：<br> `/security/alerts/?$filter`| 否 |
 | Teams [callRecord][] | 更改 _所有_ 呼叫记录： `/communications/callRecords` | 否 |
-| Teams [chatmessage](/graph/api/resources/subscription?view=graph-rest-v1.0) | 对所有团队中所有频道聊天消息更改：<br>`/teams/allMessages` <br>对特定频道中的聊天消息更改：<br>`/teams/{id}/channels/{id}/messages`<br>对所有聊天的消息更改：<br>`/chats/allMessages` <br>对特定聊天中的消息更改：<br>`/chats/{id}/messages` | 是 |
+| Teams [chatMessage](chatmessage.md) | 对所有团队中所有频道聊天消息更改：<br>`/teams/getAllMessages`<br>对所有聊天的消息更改：<br>`/chats/getAllMessages` | 是 |
 
 > **注意**：以 `/users/{id}` 开头的任何资源路径还可接受 `/me` 以引用已登录的用户。
 
@@ -68,3 +68,4 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 [用户]: ./user.md
 [callRecord]: ./callrecords-callrecord.md
 [警报]: ./alert.md
+
