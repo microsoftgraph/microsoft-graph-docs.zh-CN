@@ -5,28 +5,28 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f8a07a07ceb8af5f5c6db53dd6386caee715f4e4
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: d10d242f1148bf2b7f5c1d6ed8700f1caa4ece37
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849098"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009245"
 ---
-# <a name="itembody-resource-type"></a><span data-ttu-id="aa0d8-103">itemBody 资源类型</span><span class="sxs-lookup"><span data-stu-id="aa0d8-103">itemBody resource type</span></span>
+# <a name="itembody-resource-type"></a><span data-ttu-id="cbb78-103">itemBody 资源类型</span><span class="sxs-lookup"><span data-stu-id="cbb78-103">itemBody resource type</span></span>
 
-<span data-ttu-id="aa0d8-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="aa0d8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="cbb78-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cbb78-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="aa0d8-105">表示项目正文的属性，例如邮件、事件或组帖子。</span><span class="sxs-lookup"><span data-stu-id="aa0d8-105">Represents properties of the body of an item, such as a message, event or group post.</span></span>
+<span data-ttu-id="cbb78-105">表示项目正文的属性，例如邮件、事件或组帖子。</span><span class="sxs-lookup"><span data-stu-id="cbb78-105">Represents properties of the body of an item, such as a message, event or group post.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="aa0d8-106">属性</span><span class="sxs-lookup"><span data-stu-id="aa0d8-106">Properties</span></span>
-| <span data-ttu-id="aa0d8-107">属性</span><span class="sxs-lookup"><span data-stu-id="aa0d8-107">Property</span></span>     | <span data-ttu-id="aa0d8-108">类型</span><span class="sxs-lookup"><span data-stu-id="aa0d8-108">Type</span></span>   |<span data-ttu-id="aa0d8-109">说明</span><span class="sxs-lookup"><span data-stu-id="aa0d8-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="cbb78-106">属性</span><span class="sxs-lookup"><span data-stu-id="cbb78-106">Properties</span></span>
+| <span data-ttu-id="cbb78-107">属性</span><span class="sxs-lookup"><span data-stu-id="cbb78-107">Property</span></span>     | <span data-ttu-id="cbb78-108">类型</span><span class="sxs-lookup"><span data-stu-id="cbb78-108">Type</span></span>   |<span data-ttu-id="cbb78-109">说明</span><span class="sxs-lookup"><span data-stu-id="cbb78-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="aa0d8-110">内容</span><span class="sxs-lookup"><span data-stu-id="aa0d8-110">content</span></span>|<span data-ttu-id="aa0d8-111">String</span><span class="sxs-lookup"><span data-stu-id="aa0d8-111">String</span></span>|<span data-ttu-id="aa0d8-112">项目的内容。</span><span class="sxs-lookup"><span data-stu-id="aa0d8-112">The content of the item.</span></span>|
-|<span data-ttu-id="aa0d8-113">contentType</span><span class="sxs-lookup"><span data-stu-id="aa0d8-113">contentType</span></span>|<span data-ttu-id="aa0d8-114">bodyType</span><span class="sxs-lookup"><span data-stu-id="aa0d8-114">bodyType</span></span>|<span data-ttu-id="aa0d8-115">内容的类型。</span><span class="sxs-lookup"><span data-stu-id="aa0d8-115">The type of the content.</span></span> <span data-ttu-id="aa0d8-116">可能的值为 `text` 和 `html`。</span><span class="sxs-lookup"><span data-stu-id="aa0d8-116">Possible values are `text` and `html`.</span></span>|
+|<span data-ttu-id="cbb78-110">内容</span><span class="sxs-lookup"><span data-stu-id="cbb78-110">content</span></span>|<span data-ttu-id="cbb78-111">String</span><span class="sxs-lookup"><span data-stu-id="cbb78-111">String</span></span>|<span data-ttu-id="cbb78-112">项目的内容。</span><span class="sxs-lookup"><span data-stu-id="cbb78-112">The content of the item.</span></span>|
+|<span data-ttu-id="cbb78-113">contentType</span><span class="sxs-lookup"><span data-stu-id="cbb78-113">contentType</span></span>|<span data-ttu-id="cbb78-114">Office.mailboxenums.bodytype</span><span class="sxs-lookup"><span data-stu-id="cbb78-114">bodyType</span></span>|<span data-ttu-id="cbb78-115">内容的类型。</span><span class="sxs-lookup"><span data-stu-id="cbb78-115">The type of the content.</span></span> <span data-ttu-id="cbb78-116">可能的值为 `text` 和 `html`。</span><span class="sxs-lookup"><span data-stu-id="cbb78-116">Possible values are `text` and `html`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="aa0d8-117">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="aa0d8-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="cbb78-117">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="cbb78-117">JSON representation</span></span>
 
-<span data-ttu-id="aa0d8-118">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="aa0d8-118">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="cbb78-118">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="cbb78-118">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -52,3 +52,4 @@ ms.locfileid: "46849098"
   "section": "documentation",
   "tocPath": ""
 }-->
+
