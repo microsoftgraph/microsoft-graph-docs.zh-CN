@@ -5,16 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a2e7fdf3cbe3eabb575d256f405f565e1bec151e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 406564fa875541eb1d7fb8750172df5094bc482b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452811"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062286"
 ---
 # <a name="create-tablerow"></a>创建 TableRow
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,11 +52,11 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |index|number|可选。指定新行的相对位置。如果为空，将在末尾进行添加。插入的行下方的任何行将向下移动。从零开始编制索引。|
-|值|（布尔值或字符串或数字）集合|表格行无格式值的二维数组。|
+|值| () 集合中的布尔值或字符串或数字|表格行无格式值的二维数组。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`200 OK`响应正文中返回响应代码和[workbookTableRow](../resources/workbooktablerow.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookTableRow](../resources/workbooktablerow.md) 对象。
 
 ## <a name="example"></a>示例
 在此示例中，将两行数据插入到表的末尾。 
@@ -123,3 +123,5 @@ Content-length: 45
   ]
 }
 -->
+
+

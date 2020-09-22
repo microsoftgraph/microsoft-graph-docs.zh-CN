@@ -3,14 +3,14 @@ title: androidWorkProfileCrossProfileDataSharingType 枚举类型
 description: Android 工作配置文件跨配置文件数据共享类型。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 315d6b67747f0e414056a3b967dba7c50c4bd541
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9ebf37277cca5b56c0d9f1a63b92a71828730784
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449296"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062867"
 ---
 # <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>androidWorkProfileCrossProfileDataSharingType 枚举类型
 
@@ -24,9 +24,11 @@ Android 工作配置文件跨配置文件数据共享类型。
 |成员|值|说明|
 |:---|:---|:---|
 |deviceDefault|0|设备默认值，无意向。|
-|preventAny|1|阻止任何共享。|
-|allowPersonalToWork|双面|允许从个人配置文件到工作配置文件的数据共享请求。|
+|preventAny|1 |阻止任何共享。|
+|allowPersonalToWork|2 |允许从个人配置文件到工作配置文件的数据共享请求。|
 |noRestrictions|第三章|共享没有限制。|
+
+
 
 
 

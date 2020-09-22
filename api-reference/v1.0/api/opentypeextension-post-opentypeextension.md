@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: b6ddd4fea0262d1a00ace3ebf406b65e611f4985
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 4b527972e89ae412f06bf024f724226c2446f97d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44864033"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063072"
 ---
 # <a name="create-open-extension"></a>创建开放扩展
 
@@ -488,3 +488,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

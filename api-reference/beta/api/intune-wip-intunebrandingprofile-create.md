@@ -3,14 +3,14 @@ title: 创建 intuneBrandingProfile
 description: 创建新的 intuneBrandingProfile 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 92163b83201a539aa5d88d183ab454b60099d8e1
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 648264f4f92213fc0c00c32560ddad2bc7b4f181
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790523"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062503"
 ---
 # <a name="create-intunebrandingprofile"></a>创建 intuneBrandingProfile
 
@@ -56,7 +56,7 @@ POST /deviceManagement/intuneBrandingProfiles
 |id|String|配置文件键|
 |profileName|String|配置文件的名称|
 |profileDescription|String|配置文件的说明|
-|isDefaultProfile|布尔值|一个 Boolean 类型的值，该值表示是否将配置文件用作默认配置文件|
+|isDefaultProfile|Boolean|一个 Boolean 类型的值，该值表示是否将配置文件用作默认配置文件|
 |createdDateTime|DateTimeOffset|创建 BrandingProfile 的时间|
 |lastModifiedDateTime|DateTimeOffset|上次修改 BrandingProfile 的时间|
 |displayName|String|向最终用户显示的公司/组织名称|
@@ -76,14 +76,15 @@ POST /deviceManagement/intuneBrandingProfiles
 |customPrivacyMessage|String|有关管理员在设备上没有访问权限的文本注释|
 |customCanSeePrivacyMessage|String|有关管理员在设备上有权访问的内容的文本注释|
 |customCantSeePrivacyMessage|String|有关管理员在设备上没有访问权限的文本注释|
-|isRemoveDeviceDisabled|布尔值|一个 Boolean 类型的值，该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "删除设备" 操作。|
-|isFactoryResetDisabled|布尔值|一个 Boolean 类型的值，该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "Factory 重置" 操作。|
+|isRemoveDeviceDisabled|Boolean|一个 Boolean 类型的值，该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "删除设备" 操作。|
+|isFactoryResetDisabled|Boolean|一个 Boolean 类型的值，该值表示 adminsistrator 是否已在企业拥有的设备上禁用了 "Factory 重置" 操作。|
 |companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md) 集合|按平台和设备所有权类型对公司门户的阻止操作的集合。|
-|showAzureADEnterpriseApps|布尔值|指示是否将在公司门户中显示 AzureAD 企业应用程序的布尔值|
-|showOfficeWebApps|布尔值|指示 Office WebApps 是否将显示在公司门户中的布尔值|
-|sendDeviceOwnershipChangePushNotification|布尔值|一个 Boolean 类型的值，该值指示当用户的设备所有权类型从个人更改为公司时是否向用户发送推送通知|
+|showAzureADEnterpriseApps|Boolean|指示是否将在公司门户中显示 AzureAD 企业应用程序的布尔值|
+|showOfficeWebApps|Boolean|指示 Office WebApps 是否将显示在公司门户中的布尔值|
+|sendDeviceOwnershipChangePushNotification|Boolean|一个 Boolean 类型的值，该值指示当用户的设备所有权类型从个人更改为公司时是否向用户发送推送通知|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|向最终用户显示的自定义设备注册流。 可取值为：`availableWithPrompts`、`availableWithoutPrompts`、`unavailable`。|
-|roleScopeTagIds|字符串集合|分配给品牌配置文件的作用域标记列表|
+|disableClientTelemetry|Boolean|适用于从所有客户端发送到 Intune 服务的遥测。 如果禁用此设置，则会关闭客户端中的所有主动故障排除和问题警告，并且遥测设置将显示为非活动或对设备用户隐藏。|
+|roleScopeTagIds|String 集合|分配给品牌配置文件的作用域标记列表|
 
 
 
@@ -97,7 +98,7 @@ POST /deviceManagement/intuneBrandingProfiles
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles
 Content-type: application/json
-Content-length: 1940
+Content-length: 1975
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -152,6 +153,7 @@ Content-length: 1940
   "showOfficeWebApps": true,
   "sendDeviceOwnershipChangePushNotification": true,
   "enrollmentAvailability": "availableWithoutPrompts",
+  "disableClientTelemetry": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ]
@@ -163,7 +165,7 @@ Content-length: 1940
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2112
+Content-Length: 2147
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -221,11 +223,15 @@ Content-Length: 2112
   "showOfficeWebApps": true,
   "sendDeviceOwnershipChangePushNotification": true,
   "enrollmentAvailability": "availableWithoutPrompts",
+  "disableClientTelemetry": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ]
 }
 ```
+
+
+
 
 
 

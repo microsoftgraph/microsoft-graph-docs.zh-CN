@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: b08abe6b4f5deb90c55b2452bb785157fec95cfe
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 861827d29b406778c4770f026d319131f75fd99a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810816"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062392"
 ---
 # <a name="add-named-item"></a>添加已命名项
 
@@ -132,3 +132,5 @@ Content-length: 109
   ]
 }
 -->
+
+

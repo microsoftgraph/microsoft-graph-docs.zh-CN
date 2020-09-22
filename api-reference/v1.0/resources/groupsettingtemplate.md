@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 0d1d1359a515d854b71fab5b01792d1e31843343
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: f103ae27065701951cb7a7881ebaa898d455243c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896922"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062930"
 ---
 # <a name="groupsettingtemplate-resource-type"></a>groupSettingTemplate 资源类型
 
@@ -31,8 +31,8 @@ ms.locfileid: "44896922"
 |:---------------|:--------|:----------|
 |说明|String| 模板的说明。 |
 |displayName|String| 模板的显示名称。 |
-|id|字符串| 模板的唯一标识符。 只读。|
-|values|[settingTemplateValue](settingtemplatevalue.md)集合| Settemplatevalues 的集合，该集合列出了组成此模板的可用设置、默认值和类型的集合。 |
+|id|String| 模板的唯一标识符。 只读。|
+|values|[settingTemplateValue](settingtemplatevalue.md) 集合| Settemplatevalues 的集合，该集合列出了组成此模板的可用设置、默认值和类型的集合。 |
 
 ## <a name="relationships"></a>关系
 
@@ -72,3 +72,4 @@ ms.locfileid: "44896922"
   "section": "documentation",
   "tocPath": ""
 }-->
+

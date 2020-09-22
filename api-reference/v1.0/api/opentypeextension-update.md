@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 89804b1259f3832b2b69e2f62d25ac1fa8856809
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 97bb02da731c7d42d52b394b4e5d027a770858a5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863689"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063063"
 ---
 # <a name="update-open-extension"></a>更新开放扩展
 
@@ -25,7 +25,7 @@ ms.locfileid: "44863689"
 
 ## <a name="permissions"></a>权限
 
-根据在其中创建扩展的资源以及请求的权限类型（委派或应用程序），下表中指定的权限是调用此 API 所需的最低特权。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据在其中创建扩展的资源以及请求的权限类型 (委派或应用程序) ，下表中指定的权限是调用此 API 所需的最低特权。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -251,3 +251,4 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": ""
 } -->
+

@@ -3,14 +3,14 @@ title: ratingJapanTelevisionType 枚举类型
 description: 日本的电视内容评级标签
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 21ff77602361188a656f58a9ee29c4a919eeb0a5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 07fd77709e8f2837a324075768d95c620ee95f15
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472786"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062734"
 ---
 # <a name="ratingjapantelevisiontype-enum-type"></a>ratingJapanTelevisionType 枚举类型
 
@@ -24,8 +24,10 @@ ms.locfileid: "43472786"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电视节目内容|
-|allBlocked|1|不允许任何电视显示内容|
-|explicitAllowed|双面|明确允许所有电视内容|
+|allBlocked|1 |不允许任何电视显示内容|
+|explicitAllowed|2 |明确允许所有电视内容|
+
+
 
 
 

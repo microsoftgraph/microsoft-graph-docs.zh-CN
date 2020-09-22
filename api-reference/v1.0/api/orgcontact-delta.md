@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 48732e9d0b0e45405c3f9e167c05d5c5adef8426
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: 1d11f91c57e8135dd4cfbfcc7960ae0334296afa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082160"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063014"
 ---
 # <a name="orgcontact-delta"></a>orgContact： delta
 
@@ -40,16 +40,16 @@ GET /contacts/delta
 
 ## <a name="query-parameters"></a>查询参数
 
-跟踪组织联系人中的更改会产生一个或多个**delta**函数调用的往返。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。
+跟踪组织联系人中的更改会产生一个或多个 **delta** 函数调用的往返。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。
 
 您只需提前指定任何查询参数。
 
-在后续请求中，复制并应用`nextLink`上`deltaLink`一个响应中的或 URL。 该 URL 已包含已编码的参数。
+在后续请求中，复制并应用 `nextLink` `deltaLink` 上一个响应中的或 URL。 该 URL 已包含已编码的参数。
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
-| $deltatoken | string | 对同一组织联系人集合的`deltaLink`前一个**delta**函数调用的 URL 中返回的[状态令牌](/graph/delta-query-overview)，指示该往返一轮的完成。 在对该集合的`deltaLink`下一轮变更跟踪的第一个请求中，保存并应用整个 URL （包括此令牌）。|
-| $skiptoken | string | 在上一个**delta**函数调用`nextLink`的 URL 中返回的[状态令牌](/graph/delta-query-overview)，指示同一个组织联系人集合中有进一步的更改需要跟踪。 |
+| $deltatoken | string | 对[state token](/graph/delta-query-overview) `deltaLink` 同一组织联系人集合的前一个**delta**函数调用的 URL 中返回的状态令牌，指示该往返一轮的完成。 `deltaLink`在对该集合的下一轮变更跟踪的第一个请求中，保存并应用整个 URL （包括此令牌）。|
+| $skiptoken | string | 在上一个 delta 函数调用的 URL 中返回的[状态令牌](/graph/delta-query-overview) `nextLink` ，指示同一个组织联系人集合中有进一步的更改需要跟踪。 **delta** |
 
 ### <a name="odata-query-parameters"></a>OData 查询参数
 
@@ -70,7 +70,7 @@ GET /contacts/delta
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和 ab [orgContact](../resources/orgcontact.md)集合对象。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 Ab [orgContact](../resources/orgcontact.md) 集合对象。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
 
 - 如果返回 `nextLink`URL：
   - 这表示在会话中有要检索的其他数据页。 应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。
@@ -89,7 +89,7 @@ GET /contacts/delta
 - 如果从未设置过该属性，则根本不会将其包含在响应中。
 
 
-> **注意：** 在这种情况下，不能通过查看响应来判断属性是否更改。 此外，增量响应往往很大，因为它们包含所有属性值，如[示例 2](#example-2-selecting-three-properties)中所示。
+> **注意：** 在这种情况下，不能通过查看响应来判断属性是否更改。 此外，增量响应往往很大，因为它们包含所有属性值，如 [示例 2](#example-2-selecting-three-properties)中所示。
 
 ### <a name="alternative-return-only-the-changed-properties"></a>备用：仅返回更改的属性
 
@@ -315,3 +315,4 @@ Content-type: application/json
   ]
 }
 -->
+

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a39a8e352b0fdbd40b30de8bb2c442dee667e791
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1637d32922d538a24bc14df5a0850a3f4e6f0593
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447512"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062538"
 ---
 # <a name="getloggedonmanageddevices-function"></a>getLoggedOnManagedDevices 函数
 
@@ -29,10 +29,10 @@ ms.locfileid: "43447512"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序||
-| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
+| &nbsp;&nbsp;**设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -56,7 +56,7 @@ GET /users/{usersId}/getLoggedOnManagedDevices
 
 ## <a name="response"></a>响应
 
-如果成功，此函数会在`200 OK`响应正文中返回响应代码和[managedDevice](../resources/intune-devices-manageddevice.md)集合。
+如果成功，此函数会 `200 OK` 在响应正文中返回响应代码和 [managedDevice](../resources/intune-devices-manageddevice.md) 集合。
 
 ## <a name="example"></a>示例
 
@@ -234,6 +234,9 @@ Content-Length: 7485
   ]
 }
 ```
+
+
+
 
 
 

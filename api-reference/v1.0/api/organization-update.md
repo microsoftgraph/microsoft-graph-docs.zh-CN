@@ -5,18 +5,18 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1d429060cc000821394b20529ce3ef29fdfbbef0
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 9df86cb8b32b087952ce50bbd5e8c18aac6d3f1c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181593"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063021"
 ---
 # <a name="update-organization"></a>更新组织
 
 命名空间：microsoft.graph
 
-更新当前经过身份验证的组织的属性。 在这种情况`organization`下，将定义为恰好一个记录的集合，因此必须在请求中指定其**ID** 。  该**ID**也称为组织的**tenantId** 。
+更新当前经过身份验证的组织的属性。 在这种情况下， `organization` 将定义为恰好一个记录的集合，因此必须在请求中指定其 **ID** 。  该 **ID** 也称为组织的 **tenantId** 。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "43181593"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.accessasuser.all、All、All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Organization.ReadWrite.All |
+|应用程序 | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,7 +52,7 @@ PATCH /organization/{id}
 |marketingNotificationEmails|String collection|                                        **注意：** 不可为 null。            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|组织的隐私配置文件（设置 statementUrl 和 contactEmail）。            |
 |securityComplianceNotificationMails|String collection||
-|securityComplianceNotificationPhones|String 集合||
+|securityComplianceNotificationPhones|String collection||
 |technicalNotificationMails|String collection|                                        **注意：** 不可为 null。            |
 
 ## <a name="response"></a>响应
@@ -129,3 +129,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: 100532ee1038f2a43a889ad79d07b1245e0b375c
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b3482578d077a5bd75be52c754999b6cde112a52
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810793"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062370"
 ---
 # <a name="nameditem-range"></a>NamedItem：Range
 
@@ -109,3 +109,5 @@ Content-length: 169
   ]
 }
 -->
+
+

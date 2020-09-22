@@ -3,14 +3,14 @@ title: deviceComplianceUserOverview 资源类型
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9811809d38ea02dffab8cc21e07bffb1d83334dd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1643857a9e2dd90dab7dba983d5233bf86e5f7e1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465793"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062799"
 ---
 # <a name="devicecomplianceuseroverview-resource-type"></a>deviceComplianceUserOverview 资源类型
 
@@ -62,6 +62,8 @@ ms.locfileid: "43465793"
   "configurationVersion": 1024
 }
 ```
+
+
 
 
 

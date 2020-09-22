@@ -5,20 +5,20 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f72b0c51d5ea9f0eff824a85af41bf51ae429c10
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: fb91b50b49aca27f75f38586517e118dc0850ee9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895956"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063007"
 ---
 # <a name="orgcontact-checkmembergroups"></a>orgContact： checkMemberGroups
 
 命名空间：microsoft.graph
 
-检查指定组列表中的成员身份。 从列表中返回，其中[组织联系人](../resources/orgcontact.md)具有直接或可传递成员身份的组 id。
+检查指定组列表中的成员身份。 从列表中返回，其中 [组织联系人](../resources/orgcontact.md) 具有直接或可传递成员身份的组 id。
 
-每个请求最多可检查 20 个组。 此函数支持在 Azure Active Directory （Azure AD）中预配的 Microsoft 365 和其他类型的组。
+每个请求最多可检查 20 个组。 此函数支持在 Azure Active Directory (Azure AD) 中预配的 Microsoft 365 和其他类型的组。
 
 >[!NOTE]
 >Microsoft 365 组不能包含组。 Microsoft 365 组中的成员身份始终是直接的。
@@ -131,3 +131,4 @@ Content-length: 39
   ]
 }
 -->
+

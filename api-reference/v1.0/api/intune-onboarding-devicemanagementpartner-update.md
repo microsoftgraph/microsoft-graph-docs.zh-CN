@@ -3,14 +3,14 @@ title: 更新 deviceManagementPartner
 description: 更新 deviceManagementPartner 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aa5b4c9fb12fea46ca56faecc3978953cfc32d43
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d6dfa8a3f0e41d1ce7ed665998b0c033fcebba1f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43368953"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063119"
 ---
 # <a name="update-devicemanagementpartner"></a>更新 deviceManagementPartner
 
@@ -108,6 +108,9 @@ Content-Length: 551
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
 }
 ```
+
+
+
 
 
 

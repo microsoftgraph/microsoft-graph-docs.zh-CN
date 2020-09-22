@@ -3,24 +3,24 @@ title: 更新 appLogCollectionRequest
 description: 更新 appLogCollectionRequest 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b6592e8a1d0eb27afff70b1d49ab7a1cfe108e4a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 260f08af0ecb68383c61856c62d6cdcd442c5c3d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43381071"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062664"
 ---
 # <a name="update-applogcollectionrequest"></a>更新 appLogCollectionRequest
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)对象的属性。
+更新 [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,22 +47,22 @@ PATCH /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshooting
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)对象的 JSON 表示形式。
+在请求正文中，提供 [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) 对象的 JSON 表示形式。
 
-下表显示创建[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)时所需的属性。
+下表显示创建 [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|唯一标识符。 这是 userId_DeviceId_AppId id。|
+|id|String|唯一标识符。 这是 userId_DeviceId_AppId id。|
 |状态|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|日志上载状态。 可取值为：`pending`、`completed`、`failed`。|
-|errorMessage|字符串|在上载过程中出现的错误消息|
+|errorMessage|String|在上载过程中出现的错误消息|
 |customLogFolders|String 集合|日志文件夹的列表。 |
 |completedDateTime|DateTimeOffset|上传日志请求到达终端状态的时间|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -102,6 +102,9 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
+
+
+
 
 
 

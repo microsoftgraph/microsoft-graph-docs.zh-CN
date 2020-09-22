@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 8c20ecd7452477519e5543dfd36a02aa5796cd38
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 5dc427dc2ea2bf4e47d101ded89fdfa819d678ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674067"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062944"
 ---
 # <a name="groupsetting-resource-type"></a>groupSetting 资源类型
 
@@ -75,3 +75,4 @@ ms.locfileid: "46674067"
   "section": "documentation",
   "tocPath": ""
 }-->
+
