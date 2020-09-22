@@ -5,28 +5,28 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 867aa4f2b143da1014c9485c0fac00872193e140
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 78b58cee4581934fbb61a2477e385e5e7def4a3a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455584"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095717"
 ---
 # <a name="planner-delta"></a>Planner： delta
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索对用户[订阅](../resources/planner-overview.md#track-changes-using-delta-query)的对象所做的更改。
+检索对用户 [订阅](../resources/planner-overview.md#track-changes-using-delta-query) 的对象所做的更改。
 
 此方法允许应用程序跟踪对用户可从计划程序中的时间段内访问的对象的更改。
 
 此方法的返回值可能包含来自 Planner 的对象的异构类型。
 
-有关在 Microsoft Graph 数据中跟踪更改的详细信息，请参阅[使用 delta query 跟踪 Microsoft graph 数据中的更改](/graph/delta-query-overview)。
+有关在 Microsoft Graph 数据中跟踪更改的详细信息，请参阅 [使用 delta query 跟踪 Microsoft graph 数据中的更改](/graph/delta-query-overview)。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -45,7 +45,7 @@ GET /me/planner/all/delta
 GET /users/{id}/planner/all/delta
 ```
 
-在计划程序的 delta 查询实现`$select`中`$expand`，当前`$filter`不支持任何其他查询参数（如、或）。
+`$select` `$expand` `$filter` 在计划程序的 delta 查询实现中，当前不支持 (例如、或) 等其他查询参数。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -59,11 +59,11 @@ GET /users/{id}/planner/all/delta
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回`200 OK`响应代码和要应用于响应正文中的对象的更改集合，以及要遵循的增量同步链接。
+如果成功，此方法将返回 `200 OK` 响应代码和要应用于响应正文中的对象的更改集合，以及要遵循的增量同步链接。
 
-`deltaLink`如果呼叫者使用的是格式不正确的，则此终结点将返回 HTTP 400。
+如果 `deltaLink` 呼叫者使用的是格式不正确的，则此终结点将返回 HTTP 400。
 
-如果呼叫`deltaLink`者使用的过旧，此终结点将返回 HTTP 410。
+如果 `deltaLink` 呼叫者使用的过旧，此终结点将返回 HTTP 410。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 
@@ -169,3 +169,5 @@ preference-applied: odata.track-changes, odata.track-changes
   ]
 }
 -->
+
+

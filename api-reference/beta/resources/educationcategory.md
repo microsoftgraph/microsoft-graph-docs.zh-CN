@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 14a399e09c74e439b64a273695b65e5a96cd25f8
-ms.sourcegitcommit: fc818699566f03493937be95447eb9f656a1f950
+ms.openlocfilehash: 82ad4f009ca76625c148e8a42e58385195466fbb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534389"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095539"
 ---
 # <a name="educationcategory-resource-type"></a>educationCategory 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,16 +25,16 @@ ms.locfileid: "42534389"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[Create category](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | 创建新的**educationCategory**。|
-|[获取 educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | 获取现有的**educationCategory**。|
-|[删除类别](../api/educationcategory-delete.md) | 无 | 删除**educationCategory**。|
+|[Create category](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | 创建新的 **educationCategory**。|
+|[获取 educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | 获取现有的 **educationCategory**。|
+|[删除类别](../api/educationcategory-delete.md) | 无 | 删除 **educationCategory**。|
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|String|类别的唯一标识符。|
-|displayName|String|类别的唯一标识符。|
+|id|字符串|类别的唯一标识符。|
+|displayName|字符串|类别的唯一标识符。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -68,3 +68,5 @@ ms.locfileid: "42534389"
   "suppressions": []
 }
 -->
+
+

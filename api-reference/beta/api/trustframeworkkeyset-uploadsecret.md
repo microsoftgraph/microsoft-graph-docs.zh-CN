@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9f05281b34adfbabe2e740cf1211c9c25de1c711
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 82d45f8af4e9a7a80626ad83c58b4fa58c5bb5de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215866"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095665"
 ---
 # <a name="trustframeworkkeyset-uploadsecret"></a>trustFrameworkKeySet: uploadSecret
 
@@ -18,7 +18,7 @@ ms.locfileid: "43215866"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将纯文本机密上载到[trustFrameworkKeyset](../resources/trustframeworkkeyset.md)。 密码示例包括 Azure Active Directory、Google、Facebook 或任何其他标识提供程序中的应用程序机密。 他的方法返回[trustFrameworkKey](../resources/trustframeworkkey.md)。
+将纯文本机密上载到 [trustFrameworkKeyset](../resources/trustframeworkkeyset.md)。 密码示例包括 Azure Active Directory、Google、Facebook 或任何其他标识提供程序中的应用程序机密。 他的方法返回 [trustFrameworkKey](../resources/trustframeworkkey.md)。
 
 ## <a name="permissions"></a>Permissions
 
@@ -49,7 +49,7 @@ POST /trustFramework/keySets/{id}/uploadSecret
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型        | Description |
+| 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |改用|字符串|与**trustFrameworkKey**的**use**属性类似。|
 |kb|字符串|类似于**trustFrameworkKey**的**k**属性。 这是用于发送密码的字段。|
@@ -58,7 +58,7 @@ POST /trustFramework/keySets/{id}/uploadSecret
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和新的[trustFrameworkKey](../resources/trustframeworkkey.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [trustFrameworkKey](../resources/trustframeworkkey.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -132,3 +132,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

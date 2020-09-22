@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: f17d6d8a7ddcf10d8cdfe64f2984169c8a505295
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 1a73baf5e1978a76985f52ad1215e2686cf8798f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44680598"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095756"
 ---
 # <a name="update-plannertaskdetails"></a>更新 plannertaskdetails
 
@@ -42,7 +42,7 @@ PATCH /planner/tasks/{id}/details
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|任务上的检查表项目集合。|
 |说明|字符串|任务描述|
@@ -193,3 +193,5 @@ Content-length: 1793
   ]
 }
 -->
+
+

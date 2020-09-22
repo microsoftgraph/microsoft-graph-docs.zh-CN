@@ -5,22 +5,22 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 690b3f5ee5eac190916aa1137fc90504cc1de8ee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5510de45148e3fe9e66d2696f0b117920231e688
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455548"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095658"
 ---
 # <a name="update-planneruser"></a>更新 plannerUser
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[plannerUser](../resources/planneruser.md)对象的属性。 您可以使用此操作在用户的 "收藏夹计划" 列表中添加或删除计划，并指示用户最近查看过的计划。
+更新 [plannerUser](../resources/planneruser.md) 对象的属性。 您可以使用此操作在用户的 "收藏夹计划" 列表中添加或删除计划，并指示用户最近查看过的计划。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -38,7 +38,7 @@ PATCH /me/planner
 | 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {code}。 必需。|
-| If-Match  | 要更新的**plannerUser**的最新已知 ETag 值。 必填。|
+| If-Match  | 要更新的 **plannerUser** 的最新已知 ETag 值。 必需。|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
@@ -49,7 +49,7 @@ PATCH /me/planner
 |recentPlanReferences|[plannerRecentPlanReferenceCollection](../resources/plannerrecentplanreferencecollection.md)|对集合的更改，其中包含对用户最近查看过的计划的引用。|
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[plannerUser](../resources/planneruser.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [plannerUser](../resources/planneruser.md) 对象。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 ## <a name="example"></a>示例
@@ -140,3 +140,5 @@ Content-length: 979
   "suppressions": []
 }
 -->
+
+

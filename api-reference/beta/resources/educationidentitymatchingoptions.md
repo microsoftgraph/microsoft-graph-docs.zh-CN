@@ -1,16 +1,16 @@
 ---
 title: educationIdentityMatchingOptions 资源类型
-description: 提供源属性和目标属性之间用于匹配用户帐户的映射。 Source 属性应存在于源数据中。 目标属性应为 Azure Active Directory （Azure AD）中的有效属性。
+description: 提供源属性和目标属性之间用于匹配用户帐户的映射。 Source 属性应存在于源数据中。 Target 属性应为 Azure Active Directory (Azure AD) 中的有效属性。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 5b17ca8548d7a70b8f652ad2d54455fb6040677d
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: 73c97b0e9c23c455b3e15ed656060eca7f8a3e4e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45435024"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095371"
 ---
 # <a name="educationidentitymatchingoptions-resource-type"></a>educationIdentityMatchingOptions 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "45435024"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-提供源属性和目标属性之间用于匹配用户帐户的映射。 Source 属性应存在于源数据中。 目标属性应为 Azure Active Directory （Azure AD）中的有效属性。
+提供源属性和目标属性之间用于匹配用户帐户的映射。 Source 属性应存在于源数据中。 Target 属性应为 Azure Active Directory (Azure AD) 中的有效属性。
 
 ## <a name="properties"></a>属性
 
@@ -47,3 +47,5 @@ ms.locfileid: "45435024"
   "targetDomain": "String"
 }
 ```
+
+

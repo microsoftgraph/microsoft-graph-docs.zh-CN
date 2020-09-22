@@ -3,24 +3,24 @@ title: 更新 deviceManagementExportJob
 description: 更新 deviceManagementExportJob 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2609727b57fb4242169d135e3eb7a205db10ef03
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0b31c31a6cc86e5ea82480ad27e2de628a2692a7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454401"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095945"
 ---
 # <a name="update-devicemanagementexportjob"></a>更新 deviceManagementExportJob
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)对象的属性。
+更新 [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,18 +47,18 @@ PATCH /deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)对象的 JSON 表示形式。
+在请求正文中，提供 [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) 对象的 JSON 表示形式。
 
-下表显示创建[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)时所需的属性。
+下表显示创建 [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|此实体的唯一标识符|
-|reportName|String|报告的名称|
-|filter|String|在报表上应用的筛选器|
-|select|String 集合|从报告中选择的列|
+|id|字符串|此实体的唯一标识符|
+|reportName|字符串|报告的名称|
+|filter|字符串|在报表上应用的筛选器|
+|select|字符串集合|从报告中选择的列|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|导出的报表的格式。 可取值为：`csv`、`pdf`。|
-|snapshotId|String|快照是由 ReportName 表示的数据集的可识别子集。 可以在此处使用 sessionId 或 CachedReportConfiguration id。 如果指定了 sessionId，则筛选器、Select 和 OrderBy 将应用于 sessionId 所代表的数据。 Filter、Select 和 OrderBy 不能与 CachedReportConfiguration id 一起指定。|
+|snapshotId|字符串|快照是由 ReportName 表示的数据集的可识别子集。 可以在此处使用 sessionId 或 CachedReportConfiguration id。 如果指定了 sessionId，则筛选器、Select 和 OrderBy 将应用于 sessionId 所代表的数据。 Filter、Select 和 OrderBy 不能与 CachedReportConfiguration id 一起指定。|
 |状态|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|导出作业的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
 |url|String|导出报告的临时位置|
 |requestDateTime|DateTimeOffset|请求导出的报告的时间|
@@ -67,7 +67,7 @@ PATCH /deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -117,6 +117,9 @@ Content-Length: 453
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
+
+
+
 
 
 

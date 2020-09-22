@@ -5,21 +5,21 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: f87a84d9297fbbde1d5fb9d6045dadae10e6bd72
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 972ce36307cefbc528d3efed5367a93a79926fb1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455576"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095726"
 ---
 # <a name="get-planneruser"></a>获取 plannerUser
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[plannerUser](../resources/planneruser.md)对象的属性和关系。 返回的属性包括用户的收藏计划和最近查看的计划。 
-## <a name="permissions"></a>权限
+检索 [plannerUser](../resources/planneruser.md) 对象的属性和关系。 返回的属性包括用户的收藏计划和最近查看的计划。 
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -43,7 +43,7 @@ GET /users/{id}/planner
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[plannerUser](../resources/planneruser.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [plannerUser](../resources/planneruser.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -110,3 +110,5 @@ Content-length: 979
   "suppressions": []
 }
 -->
+
+

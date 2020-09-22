@@ -5,16 +5,16 @@ author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 9ba29e98150db6ffa9938585540d9b77f8a755cc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 80128524160a5f01806d36f52531383d5ab469a5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502268"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095511"
 ---
 # <a name="educationcourse-resource-type"></a>educationCourse 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "42502268"
 
 | 属性     | 类型   | 说明                               |
 | :----------- | :----- | :---------------------------------------- |
-| courseNumber | String | 课程的唯一标识符。         |
+| courseNumber | 字符串 | 课程的唯一标识符。         |
 | 说明  | 字符串 | 课程的说明。                |
 | displayName  | 字符串 | 课程的名称。                       |
 | externalId   | String | 来自同步系统的课程 ID。 |
@@ -61,3 +61,5 @@ ms.locfileid: "42502268"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a8d7354175c9f49d7c39c1e16115fdcbadb3ba98
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: efb26734bbcb39cdad5fe451e636d836ea615243
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215859"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095602"
 ---
 # <a name="get-trustframeworkpolicy"></a>获取 trustFrameworkPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "43215859"
 
 >**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-检索现有[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)的内容。
+检索现有 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md)的内容。
 
 ## <a name="permissions"></a>Permissions
 
@@ -41,7 +41,7 @@ GET /trustFramework/policies/{id}/$value
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持`$select`和`$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持 `$select` 和 `$expand` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -55,13 +55,13 @@ GET /trustFramework/policies/{id}/$value
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)的 XML 表示形式。  
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [TRUSTFRAMEWORKPOLICY](../resources/trustframeworkpolicy.md) 的 XML 表示形式。  
 
->**注意：** 响应内容类型将为`application/xml`。
+>**注意：** 响应内容类型将为 `application/xml` 。
 
 ## <a name="example"></a>示例
 
-下面的示例检索特定的**trustFrameworkPolicy**。
+下面的示例检索特定的 **trustFrameworkPolicy**。
 
 ##### <a name="request"></a>请求
 
@@ -102,3 +102,5 @@ Content-Type: application/xml
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

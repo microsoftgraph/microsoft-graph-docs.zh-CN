@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: a41b7187b630ec1b7359edf44f25f1741819bdf1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 43c0c3ebf82becb1c82f447600073162af533837
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42501785"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095329"
 ---
 # <a name="educationlinkresource-resource-type"></a>educationLinkResource 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "42501785"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|link|String|指向资源的 URL。|
+|link|字符串|指向资源的 URL。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -57,3 +57,5 @@ ms.locfileid: "42501785"
   "suppressions": []
 }
 -->
+
+

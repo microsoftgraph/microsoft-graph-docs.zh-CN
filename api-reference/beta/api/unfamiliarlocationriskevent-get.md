@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: cloudhandler
-ms.openlocfilehash: 7c375729f4eade9f28a00ced3c9e2048783bb243
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 454dc4fe6ae232cf926dd0c6dc4116e9650362b8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311368"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095609"
 ---
 # <a name="get-unfamiliarlocationriskevent-deprecated"></a>获取 unfamiliarLocationRiskEvent (弃用) 
 
@@ -22,7 +22,7 @@ ms.locfileid: "47311368"
 >**IdentityRiskEvents** API 已弃用，并将停止返回2020年1月10日的数据。 有关详细信息，请参阅 [弃用的 IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/)。
 
 检索 unfamiliarlocationriskevent 对象的属性和关系。
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -98,3 +98,5 @@ Content-length: 237
   "suppressions": []
 }
 -->
+
+

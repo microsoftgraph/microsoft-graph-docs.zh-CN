@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ed81e1e9e74ad311e4102963649ff4a4015bb093
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0c8748c725f7289eadbca8119b47bf8a81b28c97
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42501960"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095437"
 ---
 # <a name="educationformresource-resource-type"></a>educationFormResource 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,12 +24,12 @@ ms.locfileid: "42501960"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|originalFormId|String|表单的原始 id。|
-|formId|String|表单的 Id。|
+|originalFormId|字符串|表单的原始 id。|
+|formId|字符串|表单的 Id。|
 |isGroupForm|布尔|表单是否属于类组。|
-|viewUrl|String|表单的学生 URL。|
-|viewUrl|String|表单的学生 URL。|
-|editUrl|String|表单的教师 URL。|
+|viewUrl|字符串|表单的学生 URL。|
+|viewUrl|字符串|表单的学生 URL。|
+|editUrl|字符串|表单的教师 URL。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -66,3 +66,5 @@ ms.locfileid: "42501960"
   "suppressions": []
 }
 -->
+
+

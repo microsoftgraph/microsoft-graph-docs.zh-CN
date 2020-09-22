@@ -1,16 +1,16 @@
 ---
 title: educationFileSynchronizationVerificationMessage 资源类型
-description: 表示返回给客户端以响应对基于 CSV 的学校数据配置文件的启动同步的请求的错误。 资源将包含验证导致的错误。 用户必须先修复源数据，然后再重新启动请求，才能与 Azure Active Directory （Azure AD）同步。
+description: 表示返回给客户端以响应对基于 CSV 的学校数据配置文件的启动同步的请求的错误。 资源将包含验证导致的错误。 用户必须先修复源数据，然后再重新启动请求，才能与 Azure Active Directory (Azure AD) 同步。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 8e82ede1df5c17b99fdc40857fd97f1f90012711
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: b65335538453f35457d5e83c49f7ba7c830d6a43
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434975"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095436"
 ---
 # <a name="educationfilesynchronizationverificationmessage-resource-type"></a>educationFileSynchronizationVerificationMessage 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "45434975"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示返回给客户端以响应对基于 CSV 的学校数据配置文件的[启动同步](../api/educationsynchronizationprofile-start.md)的请求的错误。 资源将包含验证导致的错误。 用户必须先修复源数据，然后再重新启动请求，才能与 Azure Active Directory （Azure AD）同步。
+表示返回给客户端以响应对基于 CSV 的学校数据配置文件的 [启动同步](../api/educationsynchronizationprofile-start.md) 的请求的错误。 资源将包含验证导致的错误。 用户必须先修复源数据，然后再重新启动请求，才能与 Azure Active Directory (Azure AD) 同步。
 
 ## <a name="properties"></a>属性
 
@@ -45,3 +45,5 @@ ms.locfileid: "45434975"
   "description": "String"
 }
 ```
+
+

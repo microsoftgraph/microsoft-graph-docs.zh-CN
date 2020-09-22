@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8d3d790126acab48b716694e281b94afa8228b9b
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 71224f9adb8b57ef3787b37ec2f164c4f8cd1f89
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219002"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095644"
 ---
 # <a name="delete-trustframeworkpolicy"></a>删除 trustFrameworkPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "43219002"
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-删除现有的[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)。
+删除现有的 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md)。
 
 ## <a name="permissions"></a>Permissions
 
@@ -55,7 +55,7 @@ DELETE /trustFramework/policies/{id}
 
 ## <a name="example"></a>示例
 
-下面的示例删除**trustFrameworkPolicy**。
+下面的示例删除 **trustFrameworkPolicy**。
 
 ##### <a name="request"></a>请求
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+
+

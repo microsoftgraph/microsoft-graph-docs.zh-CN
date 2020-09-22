@@ -1,39 +1,39 @@
 ---
 title: educationAssignmentResource 资源类型
-description: 一个包装对象，该对象存储与工作分配相关联的资源。 该包装添加了**distributeForStudentWork**属性，并指示该资源将
+description: 一个包装对象，该对象存储与工作分配相关联的资源。 该包装添加了 **distributeForStudentWork** 属性，并指示该资源将
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0012344d2a641b892ae5e3fa905ce1e0c6282a5a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 462433a24b8515146303505865b3d356d025d6c4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502422"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095546"
 ---
 # <a name="educationassignmentresource-resource-type"></a>educationAssignmentResource 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-一个包装对象，该对象存储与工作分配相关联的资源。 该包装将添加**distributeForStudentWork**属性，并指示该资源将被复制到学生提交。  如果不复制该对象，则每个学生都将看到该工作分配的资源的链接。 学生将不能更新此资源。 这是教师向学生提供的讲义，无需将其打开。 如果分配资源，每个学生都会在其提交的资源列表中收到此资源的副本。 每个学生都可以修改其副本并将其提交到评分。
+一个包装对象，该对象存储与工作分配相关联的资源。 该包装将添加 **distributeForStudentWork** 属性，并指示该资源将被复制到学生提交。  如果不复制该对象，则每个学生都将看到该工作分配的资源的链接。 学生将不能更新此资源。 这是教师向学生提供的讲义，无需将其打开。 如果分配资源，每个学生都会在其提交的资源列表中收到此资源的副本。 每个学生都可以修改其副本并将其提交到评分。
 
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 educationAssignmentResource](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |读取**educationAssignmentResource**对象的属性和关系。|
-|[更新](../api/educationassignmentresource-update.md) | [educationAssignmentResource](educationassignmentresource.md) |更新**educationAssignmentResource**对象。 |
-|[删除](../api/educationassignmentresource-delete.md) | 无 |删除**educationAssignmentResource**对象。 |
+|[获取 educationAssignmentResource](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |读取 **educationAssignmentResource** 对象的属性和关系。|
+|[更新](../api/educationassignmentresource-update.md) | [educationAssignmentResource](educationassignmentresource.md) |更新 **educationAssignmentResource** 对象。 |
+|[删除](../api/educationassignmentresource-delete.md) | 无 |删除 **educationAssignmentResource** 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |distributeForStudentWork|布尔|指示是否应将此资源复制到每个提交的学生进行修改和提交。|
-|id|String| 此资源的 ID。 只读。|
+|id|字符串| 此资源的 ID。 只读。|
 |resource|[educationResource](educationresource.md)|与此工作分配相关联的资源对象。|
 
 ## <a name="relationships"></a>关系
@@ -73,3 +73,5 @@ ms.locfileid: "42502422"
   "suppressions": []
 }
 -->
+
+

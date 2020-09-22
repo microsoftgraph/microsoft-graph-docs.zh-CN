@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 1c3531999065abc22cc0ecb1870b4bd1bb5f45b7
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: 8e193c798f1f3fbc5d4d1c9d8c7b96eed7d39cf9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45435017"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095357"
 ---
 # <a name="educationidentitysynchronizationconfiguration-resource-type"></a>educationIdentitySynchronizationConfiguration 资源类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "45435017"
 
 | 类型                                                                                | 说明                                                                         |
 | :---------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
-| [educationIdentityMatchingConfiguration](educationidentitymatchingconfiguration.md) | 使用此类型可**匹配**Azure Active Directory 中的现有用户帐户。 |
-| [educationIdentityCreationConfiguration](educationidentitycreationconfiguration.md) | 使用此类型在 Azure Active Directory 中**创建新**用户帐户。                              |
+| [educationIdentityMatchingConfiguration](educationidentitymatchingconfiguration.md) | 使用此类型可 **匹配** Azure Active Directory 中的现有用户帐户。 |
+| [educationIdentityCreationConfiguration](educationidentitycreationconfiguration.md) | 使用此类型在 Azure Active Directory 中 **创建新** 用户帐户。                              |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -41,3 +41,5 @@ ms.locfileid: "45435017"
 ```json
 {}
 ```
+
+

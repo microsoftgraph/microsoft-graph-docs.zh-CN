@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 33cb0268eeb8c6d6b896dfb8ab02f7bb59b00e98
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: 60377b1761bcb5c672ae42f3067bb20d41325e9c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434982"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095532"
 ---
 # <a name="educationcsvdataprovider-resource-type"></a>educationCsvDataProvider 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "45434982"
 
 用于在 CSV 文件为输入源时设置学校数据同步配置文件。
 
-派生自[educationSynchronizationDataProvider]。
+派生自 [educationSynchronizationDataProvider]。
 
 ## <a name="properties"></a>属性
 
@@ -49,3 +49,5 @@ ms.locfileid: "45434982"
   }
 }
 ```
+
+
