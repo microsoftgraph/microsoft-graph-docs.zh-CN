@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c9be815cfcbd749c5fa7c90e7c2a3701583fb6ac
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 41f5dcc692f369527c2540f31be43f5da00b90f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123473"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983527"
 ---
 # <a name="reset-accessreview"></a>重置 accessReview
 
@@ -18,7 +18,7 @@ ms.locfileid: "43123473"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD[访问评论](../resources/accessreviews-root.md)" 功能中，重置当前活动的[accessReview](../resources/accessreview.md)的决策。  目标对象可以是一次性访问评审，也可以是定期访问评审的实例。  以前的决策不再记录下来，但审阅者可以继续更新决策。
+在 "Azure AD [访问评论](../resources/accessreviews-root.md) " 功能中，重置当前活动的 [accessReview](../resources/accessreview.md)的决策。  目标对象可以是一次性访问评审，也可以是定期访问评审的实例。  以前的决策不再记录下来，但审阅者可以继续更新决策。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "43123473"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview、AccessReview 和所有 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | AccessReview.ReadWrite.Membership |
+|应用程序                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -94,3 +94,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

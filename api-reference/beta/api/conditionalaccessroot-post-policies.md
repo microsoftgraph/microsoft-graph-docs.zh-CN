@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7f5aec736483650b847184343a58777243a266fb
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 9c7bb1088a95ca9c6cd40807b7fec897adf8b031
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556098"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982389"
 ---
 # <a name="create-conditionalaccesspolicy"></a>创建 conditionalAccessPolicy
 
@@ -18,9 +18,9 @@ ms.locfileid: "44556098"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)。
+创建新的 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,10 +28,10 @@ ms.locfileid: "44556098"
 |:--------------------------------------|:---------------------------------------------------------------|
 |委派（工作或学校帐户）     | Policy. All、ConditionalAccess 和 Application。 Read. All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | Policy. All、ConditionalAccess 和 Application。 Read. All |
+|应用程序                            | Policy. All、ConditionalAccess 和 Application。 Read. All |
 
 > [!NOTE]
-> 此 API 存在与权限相关的[已知问题](/graph/known-issues#permissions)。
+> 此 API 存在与权限相关的 [已知问题](/graph/known-issues#permissions) 。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,13 +50,13 @@ POST /identity/conditionalAccess/policies
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)对象的 JSON 表示形式。
+在请求正文中，提供 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象的 JSON 表示形式。
 
 有效策略应包含至少一个[应用程序](../resources/conditionalaccessapplications.md)规则，例如， `'includeApplications': 'none'` 一个[用户](../resources/conditionalaccessusers.md)规则，例如， `'includeUsers': 'none'` 至少一个 "[授予](../resources/conditionalaccessgrantcontrols.md) / [会话](../resources/conditionalaccesssessioncontrols.md)" 控制。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -92,7 +92,7 @@ Content-type: application/json
             ]
         },
         "users": {
-            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"],
+            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"]
         },
         "locations": {
             "includeLocations": [
@@ -128,7 +128,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 <!-- {
   "blockType": "response",
@@ -221,7 +221,7 @@ Content-type: application/json
             ]
         },
         "users": {
-            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"],
+            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"]
         },
         "locations": {
             "includeLocations": [
@@ -240,7 +240,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 <!-- {
   "blockType": "response",
@@ -422,7 +422,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 <!-- {
   "blockType": "response",
@@ -545,7 +545,7 @@ Content-type: application/json
 
 ### <a name="example-4-require-mfa-to-exchange-online-from-non-complaint-devices"></a>示例4：要求从非投诉设备对 Exchange Online 进行 MFA
 
->**注意：** 我们正在弃用**deviceStates**条件，将来可能会将其删除。 接下来，使用 "**设备**" 条件。
+>**注意：** 我们正在弃用 **deviceStates** 条件，将来可能会将其删除。 接下来，使用 " **设备** " 条件。
 
 #### <a name="request"></a>请求
 下面的示例演示要求从非投诉设备对 Exchange Online 进行 MFA 的请求。
@@ -569,7 +569,7 @@ Content-type: application/json
             ]
         },
         "users": {
-            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"],
+            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"]
         },
         "devices": {
             "includeDeviceStates": [
@@ -668,3 +668,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

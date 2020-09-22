@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 51311dccc3ba5068d2d6485763c157dbbc8c3a35
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 7e235a902421e7f969e9d9e63400e08e7ebfb253
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491290"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982633"
 ---
 # <a name="list-hostedcontents"></a>列出 hostedContents
 
@@ -18,19 +18,19 @@ ms.locfileid: "44491290"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从邮件中检索[chatMessageHostedContent](../resources/chatmessagehostedcontent.md)对象的列表。
+从邮件中检索 [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) 对象的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-|委派（工作或学校帐户）| 对于**用户**或**聊天**资源：聊天、阅读、读写<br/><br/>对于**信道**资源： ChannelMessage、Group. WriteAll。请参阅。 |
+|委派（工作或学校帐户）| 对于 **用户** 或 **聊天** 资源：聊天、阅读、读写<br/><br/>对于 **信道** 资源： ChannelMessage、Group. WriteAll。请参阅。 |
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application| 对于**用户**或**聊天**资源：聊天、全部、聊天室。所有<br/><br/>对于**信道**资源： ChannelMessage *、ChannelMessage、group. All、Group. All。 all |
+|应用程序| 对于 **用户** 或 **聊天** 资源：聊天、全部、聊天室。所有<br/><br/>对于 **信道** 资源： ChannelMessage *、ChannelMessage、group. All、Group. All。 all |
 
-> **注意**：标记为 * 的权限使用[特定于资源的同意]( https://aka.ms/teams-rsc)。
+> **注意**：标有 * 的权限用于[特定于资源的同意]( https://aka.ms/teams-rsc)。
 
 > [!NOTE]
 > 在使用应用程序权限调用此 API 之前，你必须先请求访问权限。 有关详细信息，请参阅 [Microsoft Teams 中的受保护 API](/graph/teams-protected-apis)。
@@ -61,7 +61,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/hostedContents
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[chatMessageHostedContent](../resources/chatmessagehostedcontent.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 
 > [!NOTE]
 > 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
@@ -131,3 +131,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 729d7504fc7cfffcb80f763f7b6c428e90b4bf31
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 6138a3a8b1ed2bb549087c4b0fa86ab90eff766d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345427"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983707"
 ---
 # <a name="list-accesspackagecatalogs"></a>列出 accessPackageCatalogs
 
@@ -18,7 +18,7 @@ ms.locfileid: "44345427"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[accessPackageCatalog](../resources/accesspackagecatalog.md)对象的列表。
+检索 [accessPackageCatalog](../resources/accesspackagecatalog.md) 对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -40,13 +40,13 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。  例如，若要检索每个目录中的访问包，请 `$expand=accessPackages` 在查询中加入。 若要搜索具有特定名称的 access 程序包目录，请 `$filter=contains(tolower(displayName),'staff')` 在查询中包含筛选器。  有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。  例如，若要检索每个目录中的访问包，请 `$expand=accessPackages` 在查询中加入。 若要搜索具有特定名称的 access 程序包目录，请 `$filter=contains(tolower(displayName),'staff')` 在查询中包含筛选器。  若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -54,7 +54,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[accessPackageCatalog](../resources/accesspackagecatalog.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [accessPackageCatalog](../resources/accesspackagecatalog.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -130,3 +130,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

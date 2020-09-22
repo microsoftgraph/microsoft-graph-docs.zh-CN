@@ -3,14 +3,14 @@ title: windowsInformationProtectionNetworkLearningSummary 资源类型
 description: Windows 信息保护网络学习摘要实体。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b7d9698c8db429802ee0a557d7b881903de3bc5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1de46de777e3cd9c7be0c0a9bd70cf29b9d7fad9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441525"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984283"
 ---
 # <a name="windowsinformationprotectionnetworklearningsummary-resource-type"></a>windowsInformationProtectionNetworkLearningSummary 资源类型
 
@@ -55,6 +55,8 @@ Windows 信息保护网络学习摘要实体。
   "deviceCount": 1024
 }
 ```
+
+
 
 
 

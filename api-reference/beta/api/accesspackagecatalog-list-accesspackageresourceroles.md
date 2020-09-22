@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a8df69dea8e1cad511272d2be2f4ba2bcc0226e2
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: b235a89b03af1d34e0540aa3a4f15c3baa0d24f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345469"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983737"
 ---
 # <a name="list-accesspackageresourceroles"></a>列出 accessPackageResourceRoles
 
@@ -18,7 +18,7 @@ ms.locfileid: "44345469"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[accessPackageCatalog](../resources/accesspackagecatalog.md)中检索[accessPackageResource](../resources/accesspackageresource.md)的[accessPackageResourceRole](../resources/accesspackageresourcerole.md)对象的列表。  然后，调用方可以使用此角色列表来选择角色，在随后[创建 accessPackageResourceRoleScope](accesspackage-post-accesspackageresourcerolescopes.md)时需要该角色。
+在[accessPackageCatalog](../resources/accesspackagecatalog.md)中检索[accessPackageResource](../resources/accesspackageresource.md)的[accessPackageResourceRole](../resources/accesspackageresourcerole.md)对象的列表。  然后，调用方可以使用此角色列表来选择角色，在随后 [创建 accessPackageResourceRoleScope](accesspackage-post-accesspackageresourcerolescopes.md)时需要该角色。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法使用 OData 查询参数构造响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法使用 OData 查询参数构造响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[accessPackageResourceRole](../resources/accesspackageresourcerole.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [accessPackageResourceRole](../resources/accesspackageresourcerole.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -125,3 +125,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

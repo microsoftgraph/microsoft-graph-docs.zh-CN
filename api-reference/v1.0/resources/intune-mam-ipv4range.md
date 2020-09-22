@@ -3,14 +3,14 @@ title: iPv4Range 资源类型
 description: IPv4 范围定义。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d8b82955c7c600997468204c46783001bf171038
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ba957131b19264f6b26c06b1d8d77a16db80ccc0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468538"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984416"
 ---
 # <a name="ipv4range-resource-type"></a>iPv4Range 资源类型
 
@@ -46,6 +46,8 @@ IPv4 范围定义。
   "upperAddress": "String"
 }
 ```
+
+
 
 
 

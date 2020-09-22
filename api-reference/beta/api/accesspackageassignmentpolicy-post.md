@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1d49306eec7e7643fe5f380950667f319c433523
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: b4ffb8b887daea27c3409db25471873e7efb47f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42589710"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983870"
 ---
 # <a name="create-accesspackageassignmentpolicy"></a>创建 accessPackageAssignmentPolicy
 
@@ -18,9 +18,9 @@ ms.locfileid: "42589710"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[AZURE AD 权限管理](../resources/entitlementmanagement-root.md)中，创建一个新的[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)对象。
+在 [AZURE AD 权限管理](../resources/entitlementmanagement-root.md)中，创建一个新的 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,11 +47,11 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)对象的 JSON 表示形式。
+在请求正文中，提供 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回一个200系列响应代码和一个新的[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)对象。
+如果成功，此方法在响应正文中返回一个200系列响应代码和一个新的 [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -281,3 +281,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

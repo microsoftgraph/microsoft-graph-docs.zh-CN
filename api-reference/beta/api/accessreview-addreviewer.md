@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ddda92a89f31035ec6900393018c77bd10c93ef1
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 32e2aa661879dd429a3dab2d4d579435d3622442
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123655"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983653"
 ---
 # <a name="add-accessreview-reviewer"></a>添加 accessReview 审阅者
 
@@ -18,7 +18,7 @@ ms.locfileid: "43123655"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中，更新现有的[accessReview](../resources/accessreview.md)对象以将其他用户添加为审阅者。  仅允许对尚未完成的访问权限审核执行此操作，并且仅适用于显式指定审阅者的访问审核。 此操作不允许用于用户查看其自己的访问权限的访问审核，而不适用于将组所有者分配为审阅者的访问审核。 
+在 "Azure AD [access 评论](../resources/accessreviews-root.md) " 功能中，更新现有的 [accessReview](../resources/accessreview.md) 对象以将其他用户添加为审阅者。  仅允许对尚未完成的访问权限审核执行此操作，并且仅适用于显式指定审阅者的访问审核。 此操作不允许用于用户查看其自己的访问权限的访问审核，而不适用于将组所有者分配为审阅者的访问审核。 
 
 
 ## <a name="permissions"></a>权限
@@ -28,7 +28,7 @@ ms.locfileid: "43123655"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview、AccessReview 和所有 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | AccessReview.ReadWrite.Membership |
+|应用程序                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,11 +51,11 @@ POST /accessReviews/{reviewId}/reviewers
 
 
 ## <a name="response"></a>响应
-如果成功，此方法将`201, Created`返回响应代码。
+如果成功，此方法将返回 `201, Created` 响应代码。
 
 ## <a name="example"></a>示例
 
-以下是使用其他审阅者更新一次性（不定期）访问评审的示例。
+以下是使用其他审阅者更新一次性 (不定期) 访问审核的示例。
 
 ##### <a name="request"></a>请求
 在请求正文中，提供 user 对象的 id 的 JSON 表示形式。
@@ -110,3 +110,5 @@ HTTP/1.1 201 Created
   ]
 }
 -->
+
+

@@ -6,12 +6,12 @@ title: 获取驱动器
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: d7e205520e9dbabfb2888c3fe4e3553cf1a54ba3
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 579a0e59c3227056ade1587f83cbe69911ecd9fc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895753"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982274"
 ---
 # <a name="get-drive"></a>获取驱动器
 
@@ -251,3 +251,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

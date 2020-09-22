@@ -3,14 +3,14 @@ title: applicationType 枚举类型
 description: 可能的应用程序类型
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e27ae0a9ff946d76e24e75d51d7b9d370cec5bf3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4730ae54a0677bfb851b277b46d7ec4e0086b300
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468358"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984269"
 ---
 # <a name="applicationtype-enum-type"></a>applicationType 枚举类型
 
@@ -23,8 +23,10 @@ ms.locfileid: "43468358"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|普遍|1|Windows 通用应用程序|
-|desktop|双面|Windows 桌面应用程序|
+|普遍|1 |Windows 通用应用程序|
+|desktop|2 |Windows 桌面应用程序|
+
+
 
 
 

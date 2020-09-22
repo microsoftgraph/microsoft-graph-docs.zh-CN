@@ -1,26 +1,26 @@
 ---
-title: 删除 connectorGroup
+title: Delete connectorGroup
 description: 删除 connectorGroup。
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 12fe7ee89d5175b7a0be6721775c42c16a7eb51d
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 5f014aee2b518066fad0c8e8e4768d98eba21518
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681467"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982309"
 ---
-# <a name="delete-connectorgroup"></a>删除 connectorGroup
+# <a name="delete-connectorgroup"></a>Delete connectorGroup
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除[connectorGroup](../resources/connectorgroup.md)。 必须先从连接器组中删除所有[连接器](../resources/connector.md)和应用程序，然后才能删除连接器组。
+删除 [connectorGroup](../resources/connectorgroup.md)。 必须先从连接器组中删除所有 [连接器](../resources/connector.md) 和应用程序，然后才能删除连接器组。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -38,7 +38,7 @@ DELETE /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 负载. 必需|
+| Authorization  | 负载. 必填|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -95,3 +95,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

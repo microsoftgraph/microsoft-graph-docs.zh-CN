@@ -5,20 +5,20 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0eb63d30abe92025d9a6ce23e123bf3bd3d5164d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 02de5e5ac3f6b5caa96e6dcad77522d3b92dcce1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441996"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983786"
 ---
 # <a name="delete-accesspackagecatalog"></a>删除 accessPackageCatalog
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除[accessPackageCatalog](../resources/accesspackagecatalog.md)。
+删除 [accessPackageCatalog](../resources/accesspackagecatalog.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -42,7 +42,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

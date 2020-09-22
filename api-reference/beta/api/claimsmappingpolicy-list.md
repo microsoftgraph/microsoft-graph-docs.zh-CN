@@ -5,12 +5,12 @@ localization_priority: Normal
 author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4a257d9cdb1466bb28b3b511ce85a2776c288144
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: fb5a9682de6caeeca0746d6cf35409cd8ab5f049
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916625"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982547"
 ---
 # <a name="list-claimsmappingpolicies"></a>列出 claimsMappingPolicies
 
@@ -18,7 +18,7 @@ ms.locfileid: "43916625"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[claimsMappingPolicy](../resources/claimsmappingpolicy.md)对象的列表。
+获取 [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ GET policies/claimsMappingPolicies
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-`$expand`此方法支持`$filter`、 `$select`和`$top` OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。 使用`$expand`时，请确保您的应用程序请求读取扩展的对象的权限。
+此方法支持 `$expand` 、 `$filter` `$select` 和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。 使用时 `$expand` ，请确保您的应用程序请求读取扩展的对象的权限。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET policies/claimsMappingPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[claimsMappingPolicy](../resources/claimsmappingpolicy.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -126,3 +126,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

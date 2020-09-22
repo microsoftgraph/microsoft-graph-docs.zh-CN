@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e8ff107c2689491dcc057381c4ff2510db55caa3
-ms.sourcegitcommit: 53a57f19a5b16029b540e61ddfba6c2b4e45cfc5
+ms.openlocfilehash: cb33896cd34a5fe9f9368aa7f2ce5e95fdb827ff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "44593644"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982447"
 ---
 # <a name="list-namedlocations"></a>列出 namedLocations
 
@@ -18,9 +18,9 @@ ms.locfileid: "44593644"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[namedLocation](../resources/namedlocation.md)对象的列表。
+获取 [namedLocation](../resources/namedlocation.md) 对象的列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,7 +40,7 @@ GET /identity/conditionalAccess/namedLocations
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 `$count` 、、、、 `$filter` `$orderBy` `$select` `$skip` 和 `$top` OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持 `$count` 、、、、 `$filter` `$orderBy` `$select` `$skip` 和 `$top` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /identity/conditionalAccess/namedLocations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[namedLocation](../resources/namedlocation.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [namedLocation](../resources/namedlocation.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -398,3 +398,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

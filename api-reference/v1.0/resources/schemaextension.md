@@ -3,14 +3,14 @@ title: schemaExtension 资源类型（架构扩展）
 description: '可以通过架构扩展定义架构来扩展强类型的自定义数据并将其添加到资源类型。自定义数据在扩展资源上作为复杂类型显示。 '
 localization_priority: Priority
 author: dkershaw10
-ms.prod: ''
+ms.prod: extensions
 doc_type: resourcePageType
-ms.openlocfilehash: 38bb2d34347f253d114d549b32d6db98c12aa831
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 71c4bd70fafe2ea652d2a0e31134196281aa161d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446952"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984150"
 ---
 # <a name="schemaextension-resource-type-schema-extensions"></a>schemaExtension 资源类型（架构扩展）
 
@@ -22,8 +22,8 @@ ms.locfileid: "42446952"
 
 - [联系人](contact.md)
 - [设备](device.md)
-- 用户或 Office 365 组日历上的[事件](event.md)。
-- Office 365 组的[帖子](post.md)
+- 用户或 Microsoft 365 组日历上的[事件](event.md)。
+- Microsoft 365 组中的[帖子](post.md)
 - [组](group.md)
 - [邮件](message.md) 
 - [组织](organization.md)
@@ -83,3 +83,4 @@ ms.locfileid: "42446952"
   "section": "documentation",
   "tocPath": ""
 }-->
+

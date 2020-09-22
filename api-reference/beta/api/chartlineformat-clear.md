@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9f0fc8a4f429ec0e3b05b452e2bff3abb177458f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4637783b8e5c5e6f161361715167277837fabd46
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42439231"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982920"
 ---
 # <a name="chartlineformat-clear"></a>ChartLineFormat: clear
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -100,3 +100,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

@@ -6,16 +6,16 @@ title: 列出驱动器
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 06bf3b2b6daa9bb95b4767c876d8a7aa9893290d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 319a0b18952b13de329aabccc222f01bdbf02e18
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433221"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982232"
 ---
 # <a name="list-available-drives"></a>列出可用的驱动器
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -200,3 +200,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

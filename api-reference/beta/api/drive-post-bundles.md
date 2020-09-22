@@ -6,12 +6,12 @@ description: 创建 Driveitem 的捆绑包
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 58ac2e4d0e6cc4a4f587aec082b59fe4ab633037
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 4f00311003bd6342ee4fba0f2560077cb8640d7f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107267"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982204"
 ---
 # <a name="create-bundle"></a>创建捆绑包
 
@@ -19,7 +19,7 @@ ms.locfileid: "43107267"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将新的[捆绑包][]添加到用户驱动器。
+将新的 [捆绑包][] 添加到用户驱动器。
 
 [bundle]: ../resources/bundle.md
 
@@ -53,16 +53,16 @@ POST /drive/bundles
 
 ## <a name="response"></a>响应
 
-如果请求成功，则返回表示新创建的捆绑包的[driveItem](../resources/driveitem.md) 。
+如果请求成功，则返回表示新创建的捆绑包的 [driveItem](../resources/driveitem.md) 。
 
-阅读 "[错误响应][error-response]" 主题，了解有关如何返回错误的详细信息。
+阅读 " [错误响应][error-response] " 主题，了解有关如何返回错误的详细信息。
 
 ## <a name="examples"></a>示例
 
 ### <a name="example-1-create-a-bundle"></a>示例1：创建捆绑包
 
 下面的示例展示了如何创建基本的新包。
-此请求将创建一个名为`Just some files`的新包，并向捆绑包中添加两个现有项。
+此请求将创建一个名为的新包 `Just some files` ，并向捆绑包中添加两个现有项。
 此捆绑包可用于与其他用户共享文件集合，而不共享存储这些项目的文件夹。
 
 #### <a name="request"></a>请求
@@ -177,11 +177,11 @@ Content-Type: application/json
 
 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
-@Microsoft 如果将_conflictBehavior_设置为**rename** ，并且已存在具有相同名称的捆绑，则新的捆绑名称将更新为唯一。
+@Microsoft 如果将 _conflictBehavior_ 设置为 **rename** ，并且已存在具有相同名称的捆绑，则新的捆绑名称将更新为唯一。
 OneDrive 会将一个号码追加到捆绑包名称的末尾。
 
 例如，将把 `My Day at the Beach` 重命名为 `My Day at the Beach 1`。
-如果`My Day at the Beach 1`执行此操作，则该数字将再次递增，直到发现唯一的捆绑名称。
+如果 `My Day at the Beach 1` 执行此操作，则该数字将再次递增，直到发现唯一的捆绑名称。
 
 
 [error-response]: /graph/errors
@@ -193,3 +193,5 @@ OneDrive 会将一个号码追加到捆绑包名称的末尾。
   "section": "documentation",
   "tocPath": "Bundles/Create"
 } -->
+
+

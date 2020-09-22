@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d126683458a75ee3e7ad453092c611f19257dec2
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: f100ce60163aa04b1c959f4c1c7fe2126a5229e1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345239"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983933"
 ---
 # <a name="list-accesspackageresourcerolescopes"></a>列出 accessPackageResourceRoleScopes
 
@@ -18,7 +18,7 @@ ms.locfileid: "44345239"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索包含[accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md)对象列表的 access 程序包。  每个对象链接到[accessPackageResourceRole](../resources/accesspackageresourcerole.md)和[accessPackageResourceScope](../resources/accesspackageresourcescope.md)。
+检索包含 [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) 对象列表的 access 程序包。  每个对象链接到 [accessPackageResourceRole](../resources/accesspackageresourcerole.md) 和 [accessPackageResourceScope](../resources/accesspackageresourcescope.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -40,13 +40,13 @@ GET /identityGovernance/entitlementManagement/accessPackages/{id}?$expand=access
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法使用 OData 查询参数自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法使用 OData 查询参数自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -146,3 +146,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

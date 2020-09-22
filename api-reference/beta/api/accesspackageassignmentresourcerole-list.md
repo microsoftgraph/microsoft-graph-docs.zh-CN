@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fec1b34769d55c487df5a19f7c82c85c9638fddd
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 185e3cb8721e032ec05e6df37dd6ff36d8491cbb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383460"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983800"
 ---
 # <a name="list-accesspackageassignmentresourceroles"></a>列出 accessPackageAssignmentResourceRoles
 
@@ -18,7 +18,7 @@ ms.locfileid: "44383460"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md)对象的列表。  生成的列表包含呼叫者有权读取的所有目录和访问包中的所有工作分配的所有资源角色。
+检索 [accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) 对象的列表。  生成的列表包含呼叫者有权读取的所有目录和访问包中的所有工作分配的所有资源角色。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "44383460"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement、EntitlementManagement 和所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,16 +40,16 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentResourceRol
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 例如，若要仅检索特定用户的访问包分配资源角色，可以包含一个查询，该查询具有针对该用户的对象 ID 的筛选器 `?$expand=accessPackageSubject&$filter=accessPackageSubject/objectId+eq+'9b835e5c-bf18-4ad9-8556-9b1ea0019c6b'` 。
 
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -57,7 +57,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentResourceRol
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -127,3 +127,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

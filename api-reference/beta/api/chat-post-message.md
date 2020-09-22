@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4d7660d1360216e4bc648d98e2899ead2aff0064
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: 50ae9c5157d78eb55492dd4021d777149d4620c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630393"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982652"
 ---
 # <a name="send-chatmessage-in-a-chat"></a>在聊天中发送了 chatmessage
 
@@ -18,11 +18,11 @@ ms.locfileid: "46630393"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的[聊天](../resources/chat.md)中创建新的[了 chatmessage](../resources/chatmessage.md) 。 此 API 无法创建新聊天;在创建聊天消息之前，必须使用 "[列表聊天](chat-list.md)" 方法检索现有聊天的 ID。
+在指定的[聊天](../resources/chat.md)中创建新的[了 chatmessage](../resources/chatmessage.md) 。 此 API 无法创建新聊天;在创建聊天消息之前，必须使用 " [列表聊天](chat-list.md) " 方法检索现有聊天的 ID。
 
 > **注意**：我们建议您不要使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
-> **注意**：违反使用 Microsoft 团队作为日志文件的[使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)。 仅发送人员将阅读的邮件。
+> **注意**：违反使用 Microsoft 团队作为日志文件的 [使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) 。 仅发送人员将阅读的邮件。
 
 ## <a name="permissions"></a>权限
 
@@ -51,15 +51,15 @@ POST /users/{id}/chats/{id}/messages
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[了 chatmessage](../resources/chatmessage.md)对象的 JSON 表示形式。
+在请求正文中，提供 [了 chatmessage](../resources/chatmessage.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[了 chatmessage](../resources/chatmessage.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [了 chatmessage](../resources/chatmessage.md) 对象。
 
 ## <a name="examples"></a>示例
 
-有关示例的更完整列表，请参阅[Create 了 chatmessage in a 信道 or chat](chatmessage-post.md)。
+有关示例的更完整列表，请参阅 [Create 了 chatmessage in a 信道 or chat](chatmessage-post.md)。
 
 ### <a name="request"></a>请求
 
@@ -142,3 +142,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

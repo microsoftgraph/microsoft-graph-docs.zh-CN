@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 086bc79bf6462d569f85e4abf885a8c8538356ae
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 23b2d10a3c7c7222b697a487a8d461023069bc1e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806394"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983842"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>更新 accessPackageAssignmentPolicy
 
@@ -52,7 +52,7 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 |:---|:---|:---|
 |displayName|String|策略的显示名称。|
 |description|String|策略的说明。|
-|canExtend|布尔值|指示用户是否可以在批准后扩展访问包分配的持续时间。|
+|canExtend|Boolean|指示用户是否可以在批准后扩展访问包分配的持续时间。|
 |durationInDays|Int32|此策略中的工作分配在过期之前持续的天数。|
 |expirationDateTime|DateTimeOffset|在此策略中创建的工作分配的到期日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |requestorSettings|[requestorSettings](../resources/requestorsettings.md)|可从该策略请求此访问包的人。|
@@ -150,3 +150,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

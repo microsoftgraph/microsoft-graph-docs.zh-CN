@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 213d771186f770b1c4ef791ec0d239d09d0afdfe
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 3fe2af7fe7cbe2c162440ebc9204ac515fdac826
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806403"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983702"
 ---
 # <a name="update-accesspackagecatalog"></a>更新 accessPackageCatalog
 
@@ -117,3 +117,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

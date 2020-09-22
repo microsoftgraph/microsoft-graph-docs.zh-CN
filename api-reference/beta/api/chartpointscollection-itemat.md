@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 73bef5b16cd3748f0f7fc689a43653ceb9388ebb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2709031283af2778b23aec7c2261f4c8d9d4cb1e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42439084"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982855"
 ---
 # <a name="chartpointscollection-itemat"></a>ChartPointsCollection: ItemAt
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +49,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points/Item
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`200 OK`响应正文中返回响应代码和[workbookChartPoint](../resources/workbookchartpoint.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workbookChartPoint](../resources/workbookchartpoint.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -109,3 +109,5 @@ Content-length: 20
   ]
 }
 -->
+
+

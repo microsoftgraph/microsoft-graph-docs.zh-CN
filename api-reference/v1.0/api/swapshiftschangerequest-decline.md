@@ -5,18 +5,18 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4814fb3ef9d416d6d3bc5be1815b746277a25426
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: d32f712485315ef82efeb3777559ac4d472ed59b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44846182"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984563"
 ---
 # <a name="swapshiftschangerequest-decline"></a>swapShiftsChangeRequest：拒绝
 
 命名空间：microsoft.graph
 
-拒绝[swapShiftsChangeRequest](../resources/swapshiftschangerequest.md)对象。
+拒绝 [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -123,3 +123,4 @@ HTTP/1.1 204 NO CONTENT
   "section": "documentation",
   "tocPath": ""
 }-->
+

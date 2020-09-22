@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f0ba1faf75688a3e1887f10aa1c68e7281d2417e
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: d8881f9ba62b5dbfcdb161111007534c9ccadb72
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123550"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983592"
 ---
 # <a name="delete-accessreview"></a>删除 accessReview
 
@@ -18,7 +18,7 @@ ms.locfileid: "43123550"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中，删除[accessReview](../resources/accessreview.md)对象。
+在 "Azure AD [access 评论](../resources/accessreviews-root.md) " 功能中，删除 [accessReview](../resources/accessreview.md) 对象。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,9 +26,9 @@ ms.locfileid: "43123550"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview、AccessReview 和所有 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | AccessReview.ReadWrite.Membership |
+|应用程序                            | AccessReview.ReadWrite.Membership |
 
-调用方还应具有 ProgramControl 权限，以便它可以删除[ProgramControl](../resources/programcontrol.md)。
+调用方还应具有 ProgramControl 权限，以便它可以删除 [ProgramControl](../resources/programcontrol.md)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -95,3 +95,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

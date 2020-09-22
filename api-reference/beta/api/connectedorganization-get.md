@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.prod: microsoft-identity-platform
 localization_priority: Normal
 doc_type: apiPageType
-ms.openlocfilehash: 8df2a52ac4ad0c459c79d911bd2454f29b7bd15a
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: a67cadc4450636a125f56f1cd8d3ad8422f12e91
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566586"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982365"
 ---
 # <a name="get-connectedorganization"></a>获取 connectedOrganization
 
@@ -18,7 +18,7 @@ ms.locfileid: "46566586"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[connectedOrganization](../resources/connectedorganization.md)对象的属性和关系。
+检索 [connectedOrganization](../resources/connectedorganization.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -56,7 +56,7 @@ GET /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[connectedOrganization](../resources/connectedorganization.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [connectedOrganization](../resources/connectedorganization.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -126,3 +126,5 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

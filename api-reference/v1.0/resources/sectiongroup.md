@@ -5,16 +5,16 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 2e0d9b3b963e02bf017630ad898501518449a20f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1a3f31f4de8d3453003f87bd30ca0dcc61267af9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446938"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984115"
 ---
 # <a name="sectiongroup-resource-type"></a>sectionGroup 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 OneNote 笔记本中的分区组。 节组可以包含节和节组。
 
@@ -57,8 +57,8 @@ OneNote 笔记本中的分区组。 节组可以包含节和节组。
 |lastModifiedBy|[identitySet](identityset.md)|识别创建项目的用户、设备和应用程序。只读。|
 |lastModifiedDateTime|DateTimeOffset|上次修改节组的日期和时间。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
 |displayName|String|节组的名称。|
-|sectionGroupsUrl|String|`sectionGroups`导航属性的 URL，该 URL 返回节组中的所有节组。 只读。|
-|sectionsUrl|String|`sections`导航属性的 URL，该 URL 返回节组中的所有节。 只读。|
+|sectionGroupsUrl|String|导航属性的 URL `sectionGroups` ，该 URL 返回节组中的所有节组。 只读。|
+|sectionsUrl|String|导航属性的 URL `sections` ，该 URL 返回节组中的所有节。 只读。|
 |自学|String|终结点，您可在此处获取关于节组的详细信息。 只读。|
 
 ## <a name="relationships"></a>关系
@@ -66,8 +66,8 @@ OneNote 笔记本中的分区组。 节组可以包含节和节组。
 |:---------------|:--------|:----------|
 |parentNotebook|[笔记本](notebook.md)|包含分区组的笔记本。 只读。|
 |parentSectionGroup|[SectionGroup](sectiongroup.md)|包含节组的节组。 只读。|
-|sectionGroups|[SectionGroup](sectiongroup.md) 集合|节中的节组。 此为只读属性。 可为 NULL。|
-|sections|[OnenoteSection](section.md) 集合|分区组中的节。 此为只读属性。 可为 Null。|
+|sectionGroups|[SectionGroup](sectiongroup.md) 集合|节中的节组。 只读。 可为 NULL。|
+|sections|[OnenoteSection](section.md) 集合|分区组中的节。 只读。 可为 Null。|
 
 ## <a name="methods"></a>方法
 
@@ -88,3 +88,4 @@ OneNote 笔记本中的分区组。 节组可以包含节和节组。
   "section": "documentation",
   "tocPath": ""
 }-->
+

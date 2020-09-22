@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 33a274dd9d8c06e01b8a27ac5a54df6407280a41
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 04497ffcaeb8a7c738d18aff9e6668712cab4ace
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806451"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983926"
 ---
 # <a name="update-accesspackage"></a>更新 accessPackage
 
@@ -115,3 +115,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

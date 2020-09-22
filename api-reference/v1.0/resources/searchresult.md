@@ -7,16 +7,16 @@ localization_priority: Normal
 description: SearchResult 资源指示项是搜索查询的响应。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f3f3c9edceb864e8e1f895ccdfe4e5a4f8e6046a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 571e063f8125fb587cbcfff07b4414b5c948d829
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446945"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984129"
 ---
 # <a name="searchresult-resource-type"></a>SearchResult 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 **SearchResult** 资源指示项是搜索查询的响应。
 
@@ -51,3 +51,4 @@ ms.locfileid: "42446945"
   "section": "documentation",
   "tocPath": "Facets/SearchResult"
 } -->
+

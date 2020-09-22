@@ -1,16 +1,16 @@
 ---
 title: 停止 accessReview
-description: 在 "Azure AD access 评论" 功能中，停止当前处于活动状态的 accessReview。  目标对象可以是一次性访问评审，也可以是定期访问评审的实例。  （若要防止定期访问审核启动以后的实例，请更新它以更改计划的结束日期）。  在访问审核停止后，审阅者无法再提供输入，并且可以应用访问审核决定。
+description: 在 "Azure AD access 评论" 功能中，停止当前处于活动状态的 accessReview。  目标对象可以是一次性访问评审，也可以是定期访问评审的实例。   (若要防止定期访问审核启动后续实例，请将其更新以更改其计划的结束日期) 。  在访问审核停止后，审阅者无法再提供输入，并且可以应用访问审核决定。
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c07cbb59d1c5411d6af27be919a18c15789acd97
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: fb72f39e6dbe65bacca1fd887e3cf4330b804c47
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123368"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983492"
 ---
 # <a name="stop-accessreview"></a>停止 accessReview
 
@@ -18,7 +18,7 @@ ms.locfileid: "43123368"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中，停止当前处于活动状态的[accessReview](../resources/accessreview.md)。  目标对象可以是一次性访问评审，也可以是定期访问评审的实例。  （若要防止定期访问审核启动以后的实例，请[更新它](accessreview-update.md)以更改计划的结束日期）。  在访问审核停止后，审阅者无法再提供输入，并且可以应用访问审核决定。
+在 "Azure AD [access 评论](../resources/accessreviews-root.md) " 功能中，停止当前处于活动状态的 [accessReview](../resources/accessreview.md)。  目标对象可以是一次性访问评审，也可以是定期访问评审的实例。   (若要防止定期访问审核启动后续实例，请将 [其更新](accessreview-update.md) 以更改其计划的结束日期) 。  在访问审核停止后，审阅者无法再提供输入，并且可以应用访问审核决定。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "43123368"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview、AccessReview 和所有 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | AccessReview.ReadWrite.Membership  |
+|应用程序                            | AccessReview.ReadWrite.Membership  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -93,3 +93,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

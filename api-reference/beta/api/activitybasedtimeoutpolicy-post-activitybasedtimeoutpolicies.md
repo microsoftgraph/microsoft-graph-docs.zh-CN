@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d6c8bcecd10d91c4298635d9268e0b3fe7688633
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 780af798ac7a7412942e1a48ce5c5785e3f1b836
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916345"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983417"
 ---
 # <a name="create-activitybasedtimeoutpolicy"></a>创建 activityBasedTimeoutPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "43916345"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md)对象。
+创建新的 [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -47,11 +47,11 @@ POST policies/activityBasedTimeoutPolicies
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md)对象的 JSON 表示形式。
+在请求正文中，提供 [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -127,3 +127,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

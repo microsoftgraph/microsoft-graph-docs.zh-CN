@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2c52f2a144802a548dddc9b1f40c80f8daf3d493
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: d840c270b0c259eb392b23001de4a357eaf7e2f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181047"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983317"
 ---
 # <a name="list-certificatebasedauthconfigurations"></a>列出 certificateBasedAuthConfigurations
 
@@ -18,7 +18,7 @@ ms.locfileid: "43181047"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md)对象的列表。
+获取 [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) 对象的列表。
 
 > [!NOTE]
 > 集合中只能存在一个 certificateBasedAuthConfiguration 实例。 它始终具有值为 "29728ade-6ae4-4ee9-9103-412912537da5" 的固定 ID。
@@ -53,7 +53,7 @@ GET /organization/{id}/certificateBasedAuthConfiguration
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -130,3 +130,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

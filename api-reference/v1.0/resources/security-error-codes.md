@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: eb35fdb9fe52dc3769654e1018d4ff1098ca931b
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 7eae631aaa7f48b471c2dc1273f0ea0841434a57
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812630"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984010"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Microsoft Graph 安全性 API 错误响应
 
@@ -64,3 +64,4 @@ Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is s
 ## <a name="see-also"></a>另请参阅
 
 如果您在使用授权时遇到问题，请参阅 [授权和 Microsoft Graph 安全性 API](/graph/security-authorization)。
+

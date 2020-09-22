@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2a14ce080f04b8448ba8fd9f09e09659453758cc
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: bfe43a22b42995b9e6ffc9423817b9631e1aa2ff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810282"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982386"
 ---
 # <a name="remove-connected-organization-external-sponsor"></a>删除已连接的组织外部发起人
 
@@ -102,3 +102,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bd6e095f6a27ad3cddfd4c5fabab0bb16797d183
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 654bf956d93b7953e78ac2cfc5baca01823ab5b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681523"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982323"
 ---
 # <a name="list-memberof"></a>列出 memberOf
 
@@ -20,7 +20,7 @@ ms.locfileid: "44681523"
 
 检索[连接器](../resources/connector.md)所属的[connectorGroup](../resources/connectorgroup.md) 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -40,14 +40,14 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 负载. 必需|
+| Authorization  | 负载. 必填|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[connectorGroup](../resources/connectorgroup.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [connectorGroup](../resources/connectorgroup.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -113,3 +113,5 @@ Content-length: 164
   "suppressions": []
 }
 -->
+
+

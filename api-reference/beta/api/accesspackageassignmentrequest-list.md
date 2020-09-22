@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c4e73ccbd556ad63cc6adf92e343cdaa9c4c3c4b
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 15fc62660ae6f82f5d8983cd5d65021b5e1470f3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383488"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983851"
 ---
 # <a name="list-accesspackageassignmentrequests"></a>列出 accessPackageAssignmentRequests
 
@@ -18,7 +18,7 @@ ms.locfileid: "44383488"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[AZURE AD 权限管理](../resources/entitlementmanagement-root.md)中，检索[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象的列表。  生成的列表包括在所有目录和访问包中，呼叫者有权读取的所有工作分配请求、当前和已过期。
+在 [AZURE AD 权限管理](../resources/entitlementmanagement-root.md)中，检索 [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 对象的列表。  生成的列表包括在所有目录和访问包中，呼叫者有权读取的所有工作分配请求、当前和已过期。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "44383488"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | EntitlementManagement、EntitlementManagement 和所有 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,13 +41,13 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 例如，若要检索每个请求的访问包，请 `$expand=accessPackage` 在查询中包含。  若要仅检索对特定访问包的请求，请在查询中包括中的筛选器 `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'` 。  若要检索生成的工作分配，请 `$expand=accessPackageAssignment` 在查询中包含。
-有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -55,7 +55,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -127,3 +127,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

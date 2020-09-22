@@ -5,20 +5,20 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3f5087b313f21fdce39d67d93d814ac1e0a1ee61
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 21c6d92552e171de2a8f7a219e61d318d4f36ff8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441940"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983688"
 ---
 # <a name="create-accesspackageresourcerequest"></a>创建 accessPackageResourceRequest
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建一个新的[accessPackageResourceRequest](../resources/accesspackageresourcerequest.md)对象，以请求将资源添加到访问包目录。
+创建一个新的 [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) 对象，以请求将资源添加到访问包目录。
 
 ## <a name="permissions"></a>权限
 
@@ -47,14 +47,14 @@ POST /identityGovernance/entitlementManagement/accessPackageResourceRequests
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[accessPackageResourceRequest](../resources/accesspackageresourcerequest.md)对象的 JSON 表示形式。 将`accessPackageResource`与[accessPackageResource](../resources/accesspackageresource.md)对象的关系作为请求的一部分包括在内。
+在请求正文中，提供 [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) 对象的 JSON 表示形式。 将 `accessPackageResource` 与 [accessPackageResource](../resources/accesspackageresource.md) 对象的关系作为请求的一部分包括在内。
 
-若`accessPackageResource`要将 Azure AD 组作为资源添加到目录，则中的**originSystem**属性的值应为**AadGroup** ， **originId**的值是组的标识符。
+若要将 Azure AD 组作为资源添加到目录，则中的 **originSystem** 属性的值 `accessPackageResource` 应为 **AadGroup** ， **originId** 的值是组的标识符。
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回一个200系列响应代码和一个新的[accessPackageResourceRequest](../resources/accesspackageresourcerequest.md)对象。
+如果成功，此方法在响应正文中返回一个200系列响应代码和一个新的 [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -137,3 +137,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

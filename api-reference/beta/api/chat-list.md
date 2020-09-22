@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bc8f92eec06167d79db5e9849d5984dae1bc0278
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 8ec54f01cc6ad4e025fac0d7297d94dba9a65317
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863093"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982671"
 ---
 # <a name="list-chats"></a>列出聊天
 
@@ -18,7 +18,7 @@ ms.locfileid: "44863093"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索用户所属的[聊天](../resources/chat.md)列表。
+检索用户所属的 [聊天](../resources/chat.md) 列表。
 
 ## <a name="permissions"></a>权限
 
@@ -146,3 +146,5 @@ Content-length: 262
   ]
 }
 -->
+
+

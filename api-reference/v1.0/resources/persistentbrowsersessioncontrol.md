@@ -5,18 +5,18 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a747f2d51d43b30da7dd7566a767cfb5f8c3fcd5
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: ad25e798b2f49ab373c85ee9072b3e7990cfe67d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384638"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984227"
 ---
 # <a name="persistentbrowsersessioncontrol-resource-type"></a>persistentBrowserSessionControl 资源类型
 
 命名空间：microsoft.graph
 
-用于定义是否保持 cookie 的会话控制。 继承自[条件访问会话控制](conditionalaccesssessioncontrol.md)。
+用于定义是否保持 cookie 的会话控制。 继承自 [条件访问会话控制](conditionalaccesssessioncontrol.md)。
 
 ## <a name="properties"></a>属性
 
@@ -58,3 +58,4 @@ ms.locfileid: "45384638"
   "section": "documentation",
   "tocPath": ""
 }-->
+

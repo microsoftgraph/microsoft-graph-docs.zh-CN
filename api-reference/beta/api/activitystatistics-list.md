@@ -5,20 +5,20 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 0b6c499bf86041e3f071977370e898b1471c3755
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2f5c48110316eceaa51733676725381b9a8a37d1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441786"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983408"
 ---
 # <a name="list-activitystatistics"></a>列出 activityStatistics
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在最后一个完整的星期获取用户的[activityStatistics](../resources/activitystatistics.md)的集合。
+在最后一个完整的星期获取用户的 [activityStatistics](../resources/activitystatistics.md) 的集合。
 
 ## <a name="permissions"></a>权限
 
@@ -55,7 +55,7 @@ GET /users/{id|userPrincipalName}/analytics/activitystatistics
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[activityStatistics](../resources/activitystatistics.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [activityStatistics](../resources/activitystatistics.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -177,3 +177,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

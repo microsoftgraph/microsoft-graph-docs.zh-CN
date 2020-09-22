@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 268744f1e742cdfbbbb3a5be7727ff6c1ddceaa5
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: ff7b4eeb6cd7e4e71e5eb71ab19ebe3112e10c5b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123543"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983555"
 ---
 # <a name="list-accessreview-reviewers"></a>列出 accessReview 审阅者
 
@@ -18,7 +18,7 @@ ms.locfileid: "43123543"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中，检索[accessReview](../resources/accessreview.md)对象的审阅者。
+在 "Azure AD [access 评论](../resources/accessreviews-root.md) " 功能中，检索 [accessReview](../resources/accessreview.md) 对象的审阅者。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "43123543"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview、AccessReview、成员身份、AccessReview。所有 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | AccessReview、AccessReview、成员身份  |
+|应用程序                            | AccessReview、AccessReview、成员身份  |
 
 
  登录用户还必须位于允许他们阅读访问审核的目录角色中。
@@ -45,7 +45,7 @@ GET /accessReviews/{reviewId}/reviewers
 不应提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200, OK`正文中返回响应代码和[userIdentity](../resources/useridentity.md)对象的数组。
+如果成功，此方法 `200, OK` 在响应正文中返回响应代码和 [userIdentity](../resources/useridentity.md) 对象的数组。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -116,3 +116,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

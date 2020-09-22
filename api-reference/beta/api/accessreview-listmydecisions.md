@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7722d6084399fc00b0f99932ac7173b2d83dfa08
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 413309d3cd406a27f585a25ce6b66851ef594d21
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123571"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983560"
 ---
 # <a name="list-my-accessreview-decisions"></a>列出我的 accessReview 决策
 
@@ -18,7 +18,7 @@ ms.locfileid: "43123571"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD[访问评论](../resources/accessreviews-root.md)" 功能中，检索[accessReview](../resources/accessreview.md)对象作为审阅者的呼叫用户的决策。
+在 "Azure AD [访问评论](../resources/accessreviews-root.md) " 功能中，检索 [accessReview](../resources/accessreview.md) 对象作为审阅者的呼叫用户的决策。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "43123571"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview、AccessReview、成员身份、AccessReview。所有   |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | 不支持。 |
+|应用程序                            | 不支持。 |
 
 登录用户还必须允许用户阅读此特定访问评审。
 
@@ -44,7 +44,7 @@ GET /accessReviews/{reviewId}/myDecisions
 不应提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200, OK`正文中返回响应代码和[accessReviewDecision](../resources/accessreviewdecision.md)对象的数组，为其调用用户是分配的审阅者。
+如果成功，此方法在 `200, OK` 响应正文中返回响应代码和 [accessReviewDecision](../resources/accessreviewdecision.md) 对象的数组，为其调用用户是分配的审阅者。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -103,7 +103,7 @@ Content-type: application/json
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  检索访问评审。 |
-|[列出 accessReview 决策](accessreview-listdecisions.md) |     [accessReviewDecision](../resources/accessreviewdecision.md)集合|    检索 accessReview 的所有决策。|
+|[列出 accessReview 决策](accessreview-listdecisions.md) |     [accessReviewDecision](../resources/accessreviewdecision.md) 集合|    检索 accessReview 的所有决策。|
 
 
 <!--
@@ -117,3 +117,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

@@ -5,18 +5,18 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1879feab262460878b2753be8080fbbab66ebfe4
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: de62b21264ea9cd4b807849362c5ec6aebe32913
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "44217562"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984549"
 ---
 # <a name="list-workforceintegrations"></a>列出 workforceIntegrations
 
 命名空间：microsoft.graph
 
-检索[workforceIntegration](../resources/workforceintegration.md)对象的列表。
+检索 [workforceIntegration](../resources/workforceintegration.md) 对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -55,7 +55,7 @@ GET /teamwork/workforceIntegrations
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[workforceIntegration](../resources/workforceintegration.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [workforceIntegration](../resources/workforceintegration.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -138,3 +138,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

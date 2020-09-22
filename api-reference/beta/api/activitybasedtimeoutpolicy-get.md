@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4fbfb2155d0921de33b9aea78e6ab015994d6208
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 131a07a9b7935b97d9b392a555503fe68ac4c2a8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916386"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983429"
 ---
 # <a name="get-activitybasedtimeoutpolicy"></a>获取 activityBasedTimeoutPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "43916386"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md)对象的属性。
+获取 [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ GET /policies/activityBasedTimeoutPolicies/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持`$select` OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持 `$select` OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /policies/activityBasedTimeoutPolicies/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -121,3 +121,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

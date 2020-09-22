@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0b8892f3c21b9b89634350593f8b8b6985651bab
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 5ae2701ed79f3c645bd64ae4da2c2dbdbca0ad23
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556112"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982456"
 ---
 # <a name="update-conditionalaccesspolicy"></a>更新 conditionalAccessPolicy
 
@@ -18,9 +18,9 @@ ms.locfileid: "44556112"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)对象的属性。
+更新 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) 对象的属性。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,10 +28,10 @@ ms.locfileid: "44556112"
 |:--------------------------------------|:---------------------------------------------------------------|
 |委派（工作或学校帐户）     | Policy. All、ConditionalAccess 和 Application。 Read. All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | Policy. All、ConditionalAccess 和 Application。 Read. All |
+|应用程序                            | Policy. All、ConditionalAccess 和 Application。 Read. All |
 
 > [!NOTE]
-> 此 API 存在与权限相关的[已知问题](/graph/known-issues#permissions)。
+> 此 API 存在与权限相关的 [已知问题](/graph/known-issues#permissions) 。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,7 +52,7 @@ PATCH /identity/conditionalAccess/policies/{id}
 
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-有关属性的列表，请参阅[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)。
+有关属性的列表，请参阅 [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)。
 
 ## <a name="response"></a>响应
 
@@ -121,3 +121,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

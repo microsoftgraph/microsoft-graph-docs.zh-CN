@@ -5,12 +5,12 @@ localization_priority: Normal
 author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9a965413b456db0158c8df9d9b21926fe6f549e8
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: be1252128e64de43084d497bbb9266f70edf181b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863616"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984640"
 ---
 # <a name="list-assigned-claimsmappingpolicy"></a>列表已分配 claimsMappingPolicy
 
@@ -50,7 +50,7 @@ GET /servicePrincipals/{id}/claimsMappingPolicies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[claimsMappingPolicy](../resources/claimsmappingpolicy.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [claimsMappingPolicy](../resources/claimsmappingpolicy.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -127,3 +127,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

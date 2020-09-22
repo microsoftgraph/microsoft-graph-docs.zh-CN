@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fa599f06ad3c78a3eb1f0a1caf3e148587b963a4
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 7f3c5ea3ace5d4281f871a35c41a49406f9b86ac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181040"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983339"
 ---
 # <a name="create-certificatebasedauthconfiguration"></a>创建 certificateBasedAuthConfiguration
 
@@ -18,10 +18,10 @@ ms.locfileid: "43181040"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md)对象。
+创建新的 [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) 对象。
 
 > [!NOTE]
-> 仅可创建**certificateBasedAuthConfiguration**的单个实例（集合只能有一个成员）。 它始终具有值为 "29728ade-6ae4-4ee9-9103-412912537da5" 的固定 ID。
+>  (集合只能有一个) 的成员，才能创建一个 **certificateBasedAuthConfiguration** 实例。 它始终具有值为 "29728ade-6ae4-4ee9-9103-412912537da5" 的固定 ID。
 
 ## <a name="permissions"></a>权限
 
@@ -50,15 +50,15 @@ POST /organization/{id}/certificateBasedAuthConfiguration
 
 ## <a name="request-body"></a>请求正文
 
-创建[certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md)对象需要以下属性。
+创建 [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) 对象需要以下属性。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|certificateAuthorities| [certificateAuthority](../resources/certificateauthority.md)集合 |创建受信任的证书链的证书颁发机构的集合。  集合中的每个成员都必须包含**certificate**和**isRootAuthority**属性。 |
+|certificateAuthorities| [certificateAuthority](../resources/certificateauthority.md) 集合 |创建受信任的证书链的证书颁发机构的集合。  集合中的每个成员都必须包含 **certificate** 和 **isRootAuthority** 属性。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`201 Created`响应正文中返回响应代码和新的[certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -138,3 +138,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

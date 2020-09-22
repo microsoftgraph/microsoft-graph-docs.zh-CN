@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f549c29015f5352fc9674ecd0a0c1a1422b125d3
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: fe31837442897822346c4c5cf38b71ea4913a775
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181061"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983353"
 ---
 # <a name="delete-certificatebasedauthconfiguration"></a>删除 certificateBasedAuthConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "43181061"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除[certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md)对象。
+删除 [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

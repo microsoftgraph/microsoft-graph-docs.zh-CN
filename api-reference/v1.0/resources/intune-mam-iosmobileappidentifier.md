@@ -3,14 +3,14 @@ title: iosMobileAppIdentifier 资源类型
 description: iOS 应用的标识符。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 088f5507051676d587334966b91d4d4d1e8a135c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0ab8119fec6998e9aaa06d2de0cf10b991a5b139
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468560"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984409"
 ---
 # <a name="iosmobileappidentifier-resource-type"></a>iosMobileAppIdentifier 资源类型
 
@@ -44,6 +44,8 @@ iOS 应用的标识符。
   "bundleId": "String"
 }
 ```
+
+
 
 
 

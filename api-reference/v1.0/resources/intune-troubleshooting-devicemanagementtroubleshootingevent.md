@@ -3,14 +3,14 @@ title: deviceManagementTroubleshootingEvent 资源类型
 description: 表示一般性故障的事件。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ba52be83003c826970ce8b3941007e398323058e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3fc85d4d49f06de22a8e81a6bee9b04a68eb7882
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451263"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984290"
 ---
 # <a name="devicemanagementtroubleshootingevent-resource-type"></a>deviceManagementTroubleshootingEvent 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "43451263"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 UUID|
+|id|String|对象的 UUID|
 |eventDateTime|DateTimeOffset|事件发生的时间。|
 |correlationId|String|用于跟踪服务中的故障的 ID。|
 
@@ -55,6 +55,8 @@ ms.locfileid: "43451263"
   "correlationId": "String"
 }
 ```
+
+
 
 
 

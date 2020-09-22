@@ -5,27 +5,27 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1db57c17f1496e32bd0fb6f6ac73cb25e793f3f7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8d84f6315e2a2ca3a82d167cfc3d1137d861aec8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441893"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983569"
 ---
 # <a name="list-accessreviews"></a>列出 accessReviews
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索特定[businessFlowTemplate](../resources/businessflowtemplate.md)的[accessReview](../resources/accessreview.md)对象。 返回零个或多个**accessReview**对象的列表，对于使用该业务流模板创建的每个一次性和定期访问评审。  请注意，业务流模板 Id 区分大小写。
+检索特定[businessFlowTemplate](../resources/businessflowtemplate.md)的[accessReview](../resources/accessreview.md)对象。 返回零个或多个 **accessReview** 对象的列表，对于使用该业务流模板创建的每个一次性和定期访问评审。  请注意，业务流模板 Id 区分大小写。
 
 >[!NOTE]
-> 如果与筛选器匹配的任何访问评审是定期访问审核，则将返回一个**accessReview**对象，以将每个定期系列作为一个整体来表示，以及任何当前的过去和下一个即将开始的实例。 例如，如果每月对 A 组的来宾成员进行定期访问审核，则为组 B 的来宾成员的季度定期访问审核，以及对组 C 的来宾成员的一次性访问审核，这些定期启动的每一次都刚刚启动，并且呼叫者用于访问的查询查看针对组的来宾成员审阅的业务流模板，将返回三个对象，代表三个系列，以及当前访问评审实例的三个对象，以及下一个对象的可能三个对象。即将到来的实例。 若要检索定期访问审核实例或为特定月份或季度计划的访问评审实例，调用方可以随后导航到定期**accessReview**对象的**实例**关系。 指向当前或过去的定期访问审核实例的**accessReview**对象的**实例**关系。
+> 如果与筛选器匹配的任何访问评审是定期访问审核，则将返回一个 **accessReview** 对象，以将每个定期系列作为一个整体来表示，以及任何当前的过去和下一个即将开始的实例。 例如，如果对组 A 的来宾成员进行每月定期访问审核，则为组 B 的来宾成员进行季度定期访问审核，并对组 C 中的来宾成员进行一次性访问审核，每个重复启动时刚刚启动，并且呼叫者使用对组的来宾成员审阅的业务流模板来查询访问审阅，将返回三个对象，其中包含三个系列，以及当前访问评审实例的三个对象，以及下一个即将发生的实例的可能三个对象。 若要检索定期访问审核实例或为特定月份或季度计划的访问评审实例，调用方可以随后导航到定期**accessReview**对象的**实例**关系。 指向当前或过去的定期访问审核实例的**accessReview**对象的**实例**关系。
 
-如果许多访问评审与筛选器匹配，则要提高效率并避免超时，请在页面中检索结果集，方法`$top`是将查询参数包含页面大小（例如，100）和`$skip=0`请求中的查询参数。 即使您不预计请求将跨多个页面，也可以包含这些参数。 当结果集跨多个页面时，Microsoft Graph 将返回该页面`@odata.nextLink` ，其中包含响应中包含指向下一页结果的 URL 的属性。 如果存在该属性，请继续在每个响应中`@odata.nextLink`对 URL 进行额外请求，直到返回所有结果，如您的应用程序中的 " [Microsoft Graph 数据分页](/graph/paging.md)" 中所述。
+如果许多访问评审与筛选器匹配，则要提高效率并避免超时，请在页面中检索结果集，方法是将 `$top` 查询参数包含页面大小（例如，100）和 `$skip=0` 请求中的查询参数。 即使您不预计请求将跨多个页面，也可以包含这些参数。 当结果集跨多个页面时，Microsoft Graph 将返回该页面，其中 `@odata.nextLink` 包含响应中包含指向下一页结果的 URL 的属性。 如果存在该属性，请继续 `@odata.nextLink` 在每个响应中对 URL 进行额外请求，直到返回所有结果，如您的应用程序中的 " [Microsoft Graph 数据分页](/graph/paging.md)" 中所述。
 
-此 API 返回的**accessReview**对象将不包含嵌套的结构属性（如**设置**或关系）。  若要检索访问审核设置或关系，请使用[Get accessReview](accessreview-get.md) API。
+此 API 返回的 **accessReview** 对象将不包含嵌套的结构属性（如 **设置**或关系）。  若要检索访问审核设置或关系，请使用 [Get accessReview](accessreview-get.md) API。
 
 
 ## <a name="permissions"></a>权限
@@ -53,7 +53,7 @@ GET /accessReviews?$filter=businessFlowTemplateId eq {businessFlowTemplate-id}&$
 请勿提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[accessReview](../resources/accessreview.md)对象的数组。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [accessReview](../resources/accessreview.md) 对象的数组。
 
 ## <a name="examples"></a>示例
 ##### <a name="request"></a>请求
@@ -80,7 +80,9 @@ GET https://graph.microsoft.com/beta/accessReviews?$filter=businessFlowTemplateI
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-null
+
+
+
 ---
 
 
@@ -129,3 +131,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

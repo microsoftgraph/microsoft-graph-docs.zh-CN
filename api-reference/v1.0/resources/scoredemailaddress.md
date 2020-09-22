@@ -5,12 +5,12 @@ localization_priority: Normal
 author: AAmatino
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 81fabe954a104663cfcd228bfc182549355bc3db
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 11efd8331cf8fca844b912703fa927b627624611
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806749"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984136"
 ---
 # <a name="scoredemailaddress-resource-type"></a>scoredEmailAddress 资源类型
 
@@ -53,3 +53,4 @@ ms.locfileid: "46806749"
   "section": "documentation",
   "tocPath": ""
 }-->
+

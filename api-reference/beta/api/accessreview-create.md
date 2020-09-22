@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5247bacbbf15274f132c5d7620b806cfe99613b6
-ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
+ms.openlocfilehash: d094b51e6aab68a069709b3914caf4aa0892e657
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47287454"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983604"
 ---
 # <a name="create-accessreview"></a>创建 accessReview
 
@@ -164,3 +164,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

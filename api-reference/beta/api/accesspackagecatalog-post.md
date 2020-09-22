@@ -5,20 +5,20 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 90a340de45fc0f31e1b5bd534151c449a2b315af
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 24fa5ddee6887ed30d626f2dc1fa861236b6f12e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441961"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983706"
 ---
 # <a name="create-accesspackagecatalog"></a>创建 accessPackageCatalog
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[accessPackageCatalog](../resources/accesspackagecatalog.md)对象。
+创建新的 [accessPackageCatalog](../resources/accesspackagecatalog.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -42,16 +42,16 @@ POST /identityGovernance/entitlementManagement/accessPackageCatalogs
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | 持有者 \{token\}。 必填。 |
+| Authorization | 持有者 \{token\}。 必需。 |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[accessPackageCatalog](../resources/accesspackagecatalog.md)对象的 JSON 表示形式。  包括**displayname**、 **description**和**isExternallyVisible**属性。
+在请求正文中，提供 [accessPackageCatalog](../resources/accesspackagecatalog.md) 对象的 JSON 表示形式。  包括 **displayname**、 **description**和 **isExternallyVisible** 属性。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回一个200系列响应代码和一个新的[accessPackageCatalog](../resources/accesspackagecatalog.md)对象。
+如果成功，此方法在响应正文中返回一个200系列响应代码和一个新的 [accessPackageCatalog](../resources/accesspackagecatalog.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -125,3 +125,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

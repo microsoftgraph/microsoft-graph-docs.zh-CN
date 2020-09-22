@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b57dc72345785c343d6e321abfab8a757b90eaab
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: bc8deda62ae268031e6505e878af416f8d496dfd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123382"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983457"
 ---
 # <a name="update-accessreview"></a>更新 accessReview
 
@@ -18,9 +18,9 @@ ms.locfileid: "43123382"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 "Azure AD[访问评论](../resources/accessreviews-root.md)" 功能中，更新现有[accessReview](../resources/accessreview.md)对象以更改其一个或多个属性。
+在 "Azure AD [访问评论](../resources/accessreviews-root.md) " 功能中，更新现有 [accessReview](../resources/accessreview.md) 对象以更改其一个或多个属性。
 
-此 API 不用于更改审阅的审阅者或决策。  若要更改审阅者，请使用[addReviewer](accessreview-addreviewer.md)或[removeReviewer](accessreview-removereviewer.md) api。  若要停止已启动的一次性审核，或提前审核已启动的定期检查实例，请提前使用[stop](accessreview-stop.md) API。 若要将决策应用于目标组或应用访问权限，请使用[应用](accessreview-apply.md)API。 
+此 API 不用于更改审阅的审阅者或决策。  若要更改审阅者，请使用 [addReviewer](accessreview-addreviewer.md) 或 [removeReviewer](accessreview-removereviewer.md) api。  若要停止已启动的一次性审核，或提前审核已启动的定期检查实例，请提前使用 [stop](accessreview-stop.md) API。 若要将决策应用于目标组或应用访问权限，请使用 [应用](accessreview-apply.md) API。 
 
 
 ## <a name="permissions"></a>权限
@@ -30,7 +30,7 @@ ms.locfileid: "43123382"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview、AccessReview 和所有 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | AccessReview.ReadWrite.Membership |
+|应用程序                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ PATCH /accessReviews/{reviewId}
 | Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[accessReview](../resources/accessreview.md)对象的参数的 JSON 表示形式。
+在请求正文中，提供 [accessReview](../resources/accessreview.md) 对象的参数的 JSON 表示形式。
 
 下表显示了在更新 accessReview 时可提供的属性。
 
@@ -57,14 +57,14 @@ PATCH /accessReviews/{reviewId}
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`204, Accepted`正文中返回响应代码和[accessReview](../resources/accessreview.md)对象。
+如果成功，此方法 `204, Accepted` 在响应正文中返回响应代码和 [accessReview](../resources/accessreview.md) 对象。
 
 ## <a name="example"></a>示例
 
-这是更新一次性（不定期）访问评审的示例。
+此示例将更新一次性 (不会定期) 访问审核。
 
 ##### <a name="request"></a>请求
-在请求正文中，提供[accessReview](../resources/accessreview.md)对象的新属性的 JSON 表示形式。
+在请求正文中，提供 [accessReview](../resources/accessreview.md) 对象的新属性的 JSON 表示形式。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -129,3 +129,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

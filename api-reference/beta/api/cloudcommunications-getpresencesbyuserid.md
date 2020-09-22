@@ -5,20 +5,20 @@ author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: df74c29810898ac7d13e138836ba711d3b7d59e8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9480e85ad072d368b1afc768a859716865b78f75
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438041"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982502"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications: getPresencesByUserId
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取多个用户的[状态](../resources/presence.md)信息。
+获取多个用户的 [状态](../resources/presence.md) 信息。
 
 ## <a name="permissions"></a>权限
 若要调用这些 Api，必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -52,7 +52,7 @@ POST /communications/getPresencesByUserId
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[状态](../resources/presence.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [状态](../resources/presence.md) 对象集合。
 
 
 ## <a name="examples"></a>示例
@@ -135,3 +135,5 @@ Content-Length: 1574
   ]
 }
 -->
+
+

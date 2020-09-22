@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0bccef382bd41aa4c9912ba81926be7913114f8a
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: ef37508a93d55feec8a5446f45b6a8275f9b7cae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43179533"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982246"
 ---
 # <a name="domain-verify"></a>域：验证
 
@@ -117,3 +117,5 @@ Content-length: 192
   ]
 }
 -->
+
+

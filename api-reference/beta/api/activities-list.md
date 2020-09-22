@@ -7,16 +7,16 @@ description: 列出在某个项上或某个层次结构下发生的最近活动�
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 1b2d07c81a1d58aedc67cea1f567b9ec9c0378d0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e75043fe3d91754902b078d6bd88b1227295587a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441818"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983436"
 ---
 # <a name="enumerate-activities-preview"></a>枚举活动（预览）
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -181,3 +181,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

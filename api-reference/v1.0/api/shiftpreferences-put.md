@@ -5,20 +5,20 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5f6ace7ad00d51494f3474aadaafd1fecc4d0f35
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 0b554db9b320e4eb403aa51f67f31006f9a3b0cc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556126"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984574"
 ---
 # <a name="update-shiftpreferences"></a>更新 shiftPreferences
 
 命名空间：microsoft.graph
 
-更新[shiftPreferences](../resources/shiftpreferences.md)对象的属性和关系。
+更新 [shiftPreferences](../resources/shiftpreferences.md) 对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "44556126"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | UserShiftPreferences |
+|应用程序 | UserShiftPreferences |
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -46,7 +46,7 @@ PATCH /users/{userId}/settings/shiftPreferences
 | Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[shiftPreferences](../resources/shiftpreferences.md)对象的 JSON 表示形式。
+在请求正文中，提供 [shiftPreferences](../resources/shiftpreferences.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
@@ -136,3 +136,4 @@ HTTP/1.1 204 NO CONTENT
   ]
 }
 -->
+
