@@ -3,33 +3,33 @@ title: 列出 importedWindowsAutopilotDeviceIdentityUploads
 description: 列出 importedWindowsAutopilotDeviceIdentityUpload 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 43ae051b5bbd6bbd4f5dd5ca74d558bd82eae07d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c3a13de39cacf4a6e37c792a85491bcc9cebbf28
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447857"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979012"
 ---
-# <a name="list-importedwindowsautopilotdeviceidentityuploads"></a><span data-ttu-id="00aca-103">列出 importedWindowsAutopilotDeviceIdentityUploads</span><span class="sxs-lookup"><span data-stu-id="00aca-103">List importedWindowsAutopilotDeviceIdentityUploads</span></span>
+# <a name="list-importedwindowsautopilotdeviceidentityuploads"></a><span data-ttu-id="de05a-103">列出 importedWindowsAutopilotDeviceIdentityUploads</span><span class="sxs-lookup"><span data-stu-id="de05a-103">List importedWindowsAutopilotDeviceIdentityUploads</span></span>
 
-<span data-ttu-id="00aca-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="00aca-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="de05a-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="de05a-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="00aca-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="00aca-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="de05a-105">**注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="de05a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="00aca-106">列出[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="00aca-106">List properties and relationships of the [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) objects.</span></span>
+<span data-ttu-id="de05a-106">列出 [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="de05a-106">List properties and relationships of the [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="00aca-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="00aca-107">Prerequisites</span></span>
-<span data-ttu-id="00aca-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="00aca-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="de05a-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="de05a-107">Prerequisites</span></span>
+<span data-ttu-id="de05a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="de05a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="00aca-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="00aca-110">Permission type</span></span>|<span data-ttu-id="00aca-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="00aca-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="de05a-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="de05a-110">Permission type</span></span>|<span data-ttu-id="de05a-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="de05a-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="00aca-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="00aca-112">Delegated (work or school account)</span></span>|<span data-ttu-id="00aca-113">DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="00aca-113">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
-|<span data-ttu-id="00aca-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="00aca-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="00aca-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="00aca-115">Not supported.</span></span>|
-|<span data-ttu-id="00aca-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="00aca-116">Application</span></span>|<span data-ttu-id="00aca-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="00aca-117">Not supported.</span></span>|
+|<span data-ttu-id="de05a-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="de05a-112">Delegated (work or school account)</span></span>|<span data-ttu-id="de05a-113">DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="de05a-113">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
+|<span data-ttu-id="de05a-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="de05a-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="de05a-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="de05a-115">Not supported.</span></span>|
+|<span data-ttu-id="de05a-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="de05a-116">Application</span></span>|<span data-ttu-id="de05a-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="de05a-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="00aca-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="00aca-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="de05a-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="de05a-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,28 +38,28 @@ ms.locfileid: "43447857"
 GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="00aca-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="00aca-119">Request headers</span></span>
-|<span data-ttu-id="00aca-120">标头</span><span class="sxs-lookup"><span data-stu-id="00aca-120">Header</span></span>|<span data-ttu-id="00aca-121">值</span><span class="sxs-lookup"><span data-stu-id="00aca-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="de05a-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="de05a-119">Request headers</span></span>
+|<span data-ttu-id="de05a-120">标头</span><span class="sxs-lookup"><span data-stu-id="de05a-120">Header</span></span>|<span data-ttu-id="de05a-121">值</span><span class="sxs-lookup"><span data-stu-id="de05a-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="00aca-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="00aca-122">Authorization</span></span>|<span data-ttu-id="00aca-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="00aca-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="00aca-124">接受</span><span class="sxs-lookup"><span data-stu-id="00aca-124">Accept</span></span>|<span data-ttu-id="00aca-125">application/json</span><span class="sxs-lookup"><span data-stu-id="00aca-125">application/json</span></span>|
+|<span data-ttu-id="de05a-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="de05a-122">Authorization</span></span>|<span data-ttu-id="de05a-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="de05a-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="de05a-124">接受</span><span class="sxs-lookup"><span data-stu-id="de05a-124">Accept</span></span>|<span data-ttu-id="de05a-125">application/json</span><span class="sxs-lookup"><span data-stu-id="de05a-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="00aca-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="00aca-126">Request body</span></span>
-<span data-ttu-id="00aca-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="00aca-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="de05a-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="de05a-126">Request body</span></span>
+<span data-ttu-id="de05a-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="de05a-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="00aca-128">响应</span><span class="sxs-lookup"><span data-stu-id="00aca-128">Response</span></span>
-<span data-ttu-id="00aca-129">如果成功，此方法在响应`200 OK`正文中返回响应代码和[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="00aca-129">If successful, this method returns a `200 OK` response code and a collection of [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="de05a-128">响应</span><span class="sxs-lookup"><span data-stu-id="de05a-128">Response</span></span>
+<span data-ttu-id="de05a-129">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="de05a-129">If successful, this method returns a `200 OK` response code and a collection of [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="00aca-130">示例</span><span class="sxs-lookup"><span data-stu-id="00aca-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="de05a-130">示例</span><span class="sxs-lookup"><span data-stu-id="de05a-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="00aca-131">请求</span><span class="sxs-lookup"><span data-stu-id="00aca-131">Request</span></span>
-<span data-ttu-id="00aca-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="00aca-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="de05a-131">请求</span><span class="sxs-lookup"><span data-stu-id="de05a-131">Request</span></span>
+<span data-ttu-id="de05a-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="de05a-132">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 ```
 
-### <a name="response"></a><span data-ttu-id="00aca-133">响应</span><span class="sxs-lookup"><span data-stu-id="00aca-133">Response</span></span>
-<span data-ttu-id="00aca-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="00aca-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="de05a-133">响应</span><span class="sxs-lookup"><span data-stu-id="de05a-133">Response</span></span>
+<span data-ttu-id="de05a-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="de05a-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -76,6 +76,9 @@ Content-Length: 270
   ]
 }
 ```
+
+
+
 
 
 
