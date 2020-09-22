@@ -5,29 +5,29 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: f9802b592cb3412fec61b0d8e8dea4e4cf0b7bae
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: bbb7a106c3710b5f7e433bfe0c7904f9df91a988
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897923"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988588"
 ---
-# <a name="addin-resource-type"></a><span data-ttu-id="68f1b-103">addIn 资源类型</span><span class="sxs-lookup"><span data-stu-id="68f1b-103">addIn resource type</span></span>
+# <a name="addin-resource-type"></a><span data-ttu-id="b38f9-103">addIn 资源类型</span><span class="sxs-lookup"><span data-stu-id="b38f9-103">addIn resource type</span></span>
 
-<span data-ttu-id="68f1b-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="68f1b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b38f9-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b38f9-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="68f1b-105">定义使用服务可用于调用特定上下文中的应用的自定义行为。</span><span class="sxs-lookup"><span data-stu-id="68f1b-105">Defines custom behavior that a consuming service can use to call an app in specific contexts.</span></span> <span data-ttu-id="68f1b-106">例如，可以呈现文件流的应用程序[可能会](/onedrive/developer/file-handlers/?view=odsp-graph-online)为其 "FileHandler" 功能配置 addIns。</span><span class="sxs-lookup"><span data-stu-id="68f1b-106">For example, applications that can render file streams [may configure addIns](/onedrive/developer/file-handlers/?view=odsp-graph-online) for its "FileHandler" functionality.</span></span> <span data-ttu-id="68f1b-107">这将使 Microsoft 365 等服务能够在用户正在使用的文档的上下文中调用应用程序。</span><span class="sxs-lookup"><span data-stu-id="68f1b-107">This will let services like Microsoft 365 call the application in the context of a document the user is working on.</span></span>
+<span data-ttu-id="b38f9-105">定义使用服务可用于调用特定上下文中的应用的自定义行为。</span><span class="sxs-lookup"><span data-stu-id="b38f9-105">Defines custom behavior that a consuming service can use to call an app in specific contexts.</span></span> <span data-ttu-id="b38f9-106">例如，可以呈现文件流的应用程序 [可能会](/onedrive/developer/file-handlers/?view=odsp-graph-online) 为其 "FileHandler" 功能配置 addIns。</span><span class="sxs-lookup"><span data-stu-id="b38f9-106">For example, applications that can render file streams [may configure addIns](/onedrive/developer/file-handlers/?view=odsp-graph-online) for its "FileHandler" functionality.</span></span> <span data-ttu-id="b38f9-107">这将使 Microsoft 365 之类的服务在用户正在处理的文档上下文中调用应用程序。</span><span class="sxs-lookup"><span data-stu-id="b38f9-107">This will let services like Microsoft 365 call the application in the context of a document the user is working on.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="68f1b-108">属性</span><span class="sxs-lookup"><span data-stu-id="68f1b-108">Properties</span></span>
-| <span data-ttu-id="68f1b-109">属性</span><span class="sxs-lookup"><span data-stu-id="68f1b-109">Property</span></span>     | <span data-ttu-id="68f1b-110">类型</span><span class="sxs-lookup"><span data-stu-id="68f1b-110">Type</span></span>   |<span data-ttu-id="68f1b-111">说明</span><span class="sxs-lookup"><span data-stu-id="68f1b-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="b38f9-108">属性</span><span class="sxs-lookup"><span data-stu-id="b38f9-108">Properties</span></span>
+| <span data-ttu-id="b38f9-109">属性</span><span class="sxs-lookup"><span data-stu-id="b38f9-109">Property</span></span>     | <span data-ttu-id="b38f9-110">类型</span><span class="sxs-lookup"><span data-stu-id="b38f9-110">Type</span></span>   |<span data-ttu-id="b38f9-111">说明</span><span class="sxs-lookup"><span data-stu-id="b38f9-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="68f1b-112">id</span><span class="sxs-lookup"><span data-stu-id="68f1b-112">id</span></span>|<span data-ttu-id="68f1b-113">containerparentjob</span><span class="sxs-lookup"><span data-stu-id="68f1b-113">guid</span></span>||
-|<span data-ttu-id="68f1b-114">properties</span><span class="sxs-lookup"><span data-stu-id="68f1b-114">properties</span></span>|<span data-ttu-id="68f1b-115">[keyValue](keyvalue.md) 集合</span><span class="sxs-lookup"><span data-stu-id="68f1b-115">[keyValue](keyvalue.md) collection</span></span>||
-|<span data-ttu-id="68f1b-116">类型</span><span class="sxs-lookup"><span data-stu-id="68f1b-116">type</span></span>|<span data-ttu-id="68f1b-117">string</span><span class="sxs-lookup"><span data-stu-id="68f1b-117">string</span></span>||
+|<span data-ttu-id="b38f9-112">id</span><span class="sxs-lookup"><span data-stu-id="b38f9-112">id</span></span>|<span data-ttu-id="b38f9-113">containerparentjob</span><span class="sxs-lookup"><span data-stu-id="b38f9-113">guid</span></span>||
+|<span data-ttu-id="b38f9-114">properties</span><span class="sxs-lookup"><span data-stu-id="b38f9-114">properties</span></span>|<span data-ttu-id="b38f9-115">[keyValue](keyvalue.md) 集合</span><span class="sxs-lookup"><span data-stu-id="b38f9-115">[keyValue](keyvalue.md) collection</span></span>||
+|<span data-ttu-id="b38f9-116">类型</span><span class="sxs-lookup"><span data-stu-id="b38f9-116">type</span></span>|<span data-ttu-id="b38f9-117">string</span><span class="sxs-lookup"><span data-stu-id="b38f9-117">string</span></span>||
 
-## <a name="json-representation"></a><span data-ttu-id="68f1b-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="68f1b-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b38f9-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="b38f9-118">JSON representation</span></span>
 
-<span data-ttu-id="68f1b-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="68f1b-119">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="b38f9-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b38f9-119">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -58,3 +58,4 @@ ms.locfileid: "44897923"
   "suppressions": []
 }
 -->
+

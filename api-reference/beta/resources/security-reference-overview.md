@@ -1,32 +1,34 @@
 ---
-title: 使用 Microsoft Graph API 进行安全威胁检测和保护（预览）
-description: 安全威胁的复杂程度不断提升，从而影响了全球经济。 损坏通常会在组织甚至发现之前很长时间完成。 您可以使用 Microsoft Graph 构建或扩展安全解决方案，这些解决方案可从多个源中整合和关联安全警报、检测尝试危害用户标识的威胁、解锁上下文数据以通知调查，并实现自动化安全操作以提高效率。
+title: '使用 Microsoft Graph API 进行安全威胁检测和保护 (预览) '
+description: 安全威胁的复杂程度不断提升，从而影响了全球经济。 损坏通常会在组织甚至发现之前很长时间完成。 您可以使用 Microsoft Graph 构建或扩展安全解决方案，这些解决方案可对来自多个源的安全警报进行整合和关联，检测尝试危害用户身份的威胁，解除对上下文数据的锁定以通知调查，并自动化安全操作以提高效率。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 92bdc9948920e39b8f7e889fccaafe4211dd1eee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5550509e3ececdb159125e66c1bd12962722832d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520834"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988891"
 ---
-# <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a><span data-ttu-id="d30d3-105">使用 Microsoft Graph API 进行安全威胁检测和保护（预览）</span><span class="sxs-lookup"><span data-stu-id="d30d3-105">Use the Microsoft Graph API for security threat detection and protection (preview)</span></span>
+# <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a><span data-ttu-id="c0a19-105">使用 Microsoft Graph API 进行安全威胁检测和保护 (预览) </span><span class="sxs-lookup"><span data-stu-id="c0a19-105">Use the Microsoft Graph API for security threat detection and protection (preview)</span></span>
 
-<span data-ttu-id="d30d3-106">命名空间： microsoft. graph</span><span class="sxs-lookup"><span data-stu-id="d30d3-106">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c0a19-106">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c0a19-106">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d30d3-107">安全威胁的复杂程度不断提升，从而影响了全球经济。</span><span class="sxs-lookup"><span data-stu-id="d30d3-107">The sophistication of security threats continues to escalate, affecting the global economy.</span></span> <span data-ttu-id="d30d3-108">损坏通常会在组织甚至发现之前很长时间完成。</span><span class="sxs-lookup"><span data-stu-id="d30d3-108">Damage is often done long before organizations even discover it.</span></span> <span data-ttu-id="d30d3-109">您可以使用 Microsoft Graph 构建或扩展安全解决方案，这些解决方案可从多个源中整合和关联安全警报、检测尝试危害用户标识的威胁、解锁上下文数据以通知调查，并实现自动化安全操作以提高效率。</span><span class="sxs-lookup"><span data-stu-id="d30d3-109">You can use Microsoft Graph to build or extend security solutions that consolidate and correlate security alerts from multiple sources, detect threats that attempt to compromise user identity, unlock contextual data to inform investigations, and automate security operations for greater efficiency.</span></span>
+<span data-ttu-id="c0a19-107">安全威胁的复杂程度不断提升，从而影响了全球经济。</span><span class="sxs-lookup"><span data-stu-id="c0a19-107">The sophistication of security threats continues to escalate, affecting the global economy.</span></span> <span data-ttu-id="c0a19-108">损坏通常会在组织甚至发现之前很长时间完成。</span><span class="sxs-lookup"><span data-stu-id="c0a19-108">Damage is often done long before organizations even discover it.</span></span> <span data-ttu-id="c0a19-109">您可以使用 Microsoft Graph 构建或扩展安全解决方案，这些解决方案可对来自多个源的安全警报进行整合和关联，检测尝试危害用户身份的威胁，解除对上下文数据的锁定以通知调查，并自动化安全操作以提高效率。</span><span class="sxs-lookup"><span data-stu-id="c0a19-109">You can use Microsoft Graph to build or extend security solutions that consolidate and correlate security alerts from multiple sources, detect threats that attempt to compromise user identity, unlock contextual data to inform investigations, and automate security operations for greater efficiency.</span></span>
 
-<span data-ttu-id="d30d3-110">智能安全图形将来自世界各地的 Microsoft、安全运营中心和合作伙伴的安全智能组合在一起，构成集成安全解决方案生态系统。</span><span class="sxs-lookup"><span data-stu-id="d30d3-110">Intelligent Security Graph brings together security intelligence from within Microsoft, security operations centers, and partners from around the world to form an ecosystem of integrated security solutions.</span></span> <span data-ttu-id="d30d3-111">通过使用机器学习、行为监控和云规模，智能安全图形可以更好地对威胁进行快速和全面的保护、检测和响应。</span><span class="sxs-lookup"><span data-stu-id="d30d3-111">Using machine learning, behavioral monitoring, and the scale of the cloud, the Intelligent Security Graph can better protect, detect, and respond to threats quickly and comprehensively.</span></span> <span data-ttu-id="d30d3-112">[安全 API](security-api-overview.md)将您连接到[智能安全图形](https://www.microsoft.com/en-us/security/intelligence-security-api)，为您提供可操作且具有整体的解决方案。</span><span class="sxs-lookup"><span data-stu-id="d30d3-112">The [security API](security-api-overview.md) connects you to the [Intelligent Security Graph](https://www.microsoft.com/en-us/security/intelligence-security-api), empowering you with solutions that are actionable and holistic.</span></span>
+<span data-ttu-id="c0a19-110">智能安全图形将来自世界各地的 Microsoft、安全运营中心和合作伙伴的安全智能组合在一起，构成集成安全解决方案生态系统。</span><span class="sxs-lookup"><span data-stu-id="c0a19-110">Intelligent Security Graph brings together security intelligence from within Microsoft, security operations centers, and partners from around the world to form an ecosystem of integrated security solutions.</span></span> <span data-ttu-id="c0a19-111">通过使用机器学习、行为监控和云规模，智能安全图形可以更好地对威胁进行快速和全面的保护、检测和响应。</span><span class="sxs-lookup"><span data-stu-id="c0a19-111">Using machine learning, behavioral monitoring, and the scale of the cloud, the Intelligent Security Graph can better protect, detect, and respond to threats quickly and comprehensively.</span></span> <span data-ttu-id="c0a19-112">[安全 API](security-api-overview.md)将您连接到[智能安全图形](https://www.microsoft.com/en-us/security/intelligence-security-api)，为您提供可操作且具有整体的解决方案。</span><span class="sxs-lookup"><span data-stu-id="c0a19-112">The [security API](security-api-overview.md) connects you to the [Intelligent Security Graph](https://www.microsoft.com/en-us/security/intelligence-security-api), empowering you with solutions that are actionable and holistic.</span></span>
 
-<span data-ttu-id="d30d3-113">[Identity protection 风险事件 API](identityprotection-root.md)为 Azure AD Premium P1 和 P2 客户提供了轻松访问，以查询[标识保护所进行的风险检测](/azure/active-directory/active-directory-identityprotection-graph-getting-started)并在 SIEM 系统和安全应用程序中使用这些事件。</span><span class="sxs-lookup"><span data-stu-id="d30d3-113">The [identity protection risk events API](identityprotection-root.md) gives easy access for Azure AD Premium P1 and P2 customers to query [risk detections made by Identity Protection](/azure/active-directory/active-directory-identityprotection-graph-getting-started) and use those events in SIEM systems and security applications.</span></span>
+<span data-ttu-id="c0a19-113">[Identity protection 风险事件 API](identityprotection-root.md)为 Azure AD Premium P1 和 P2 客户提供了轻松访问，以查询[标识保护所进行的风险检测](/azure/active-directory/active-directory-identityprotection-graph-getting-started)并在 SIEM 系统和安全应用程序中使用这些事件。</span><span class="sxs-lookup"><span data-stu-id="c0a19-113">The [identity protection risk events API](identityprotection-root.md) gives easy access for Azure AD Premium P1 and P2 customers to query [risk detections made by Identity Protection](/azure/active-directory/active-directory-identityprotection-graph-getting-started) and use those events in SIEM systems and security applications.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="d30d3-114">另请参阅</span><span class="sxs-lookup"><span data-stu-id="d30d3-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c0a19-114">另请参阅</span><span class="sxs-lookup"><span data-stu-id="c0a19-114">See also</span></span>
 
-- [<span data-ttu-id="d30d3-115">为什么要使用安全 API？</span><span class="sxs-lookup"><span data-stu-id="d30d3-115">Why use the security API?</span></span>](/graph/security-concept-overview#why-use-the-security-api-and-connect-with-microsoft-intelligent-security-graph)
-- [<span data-ttu-id="d30d3-116">使用安全 API 与智能安全图形集成</span><span class="sxs-lookup"><span data-stu-id="d30d3-116">Use the security API to integrate with Intelligent Security Graph</span></span>](security-api-overview.md)
-- [<span data-ttu-id="d30d3-117">为什么要使用 Azure AD 来保护组织中的身份？</span><span class="sxs-lookup"><span data-stu-id="d30d3-117">Why use Azure AD to protect identities in your organization?</span></span>](/graph/security-concept-overview#why-use-azure-ad-to-protect-identities-in-your-organization)
-- [<span data-ttu-id="d30d3-118">使用 Azure AD 标识保护 API</span><span class="sxs-lookup"><span data-stu-id="d30d3-118">Use the Azure AD Identity Protection API</span></span>](identityprotection-root.md)
+- [<span data-ttu-id="c0a19-115">为什么要使用安全 API？</span><span class="sxs-lookup"><span data-stu-id="c0a19-115">Why use the security API?</span></span>](/graph/security-concept-overview#why-use-the-security-api-and-connect-with-microsoft-intelligent-security-graph)
+- [<span data-ttu-id="c0a19-116">使用安全 API 与智能安全图形集成</span><span class="sxs-lookup"><span data-stu-id="c0a19-116">Use the security API to integrate with Intelligent Security Graph</span></span>](security-api-overview.md)
+- [<span data-ttu-id="c0a19-117">为什么要使用 Azure AD 来保护组织中的身份？</span><span class="sxs-lookup"><span data-stu-id="c0a19-117">Why use Azure AD to protect identities in your organization?</span></span>](/graph/security-concept-overview#why-use-azure-ad-to-protect-identities-in-your-organization)
+- [<span data-ttu-id="c0a19-118">使用 Azure AD 标识保护 API</span><span class="sxs-lookup"><span data-stu-id="c0a19-118">Use the Azure AD Identity Protection API</span></span>](identityprotection-root.md)
+
+

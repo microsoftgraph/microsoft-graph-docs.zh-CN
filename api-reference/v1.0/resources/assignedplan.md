@@ -5,31 +5,31 @@ localization_priority: Normal
 author: krbain
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e4a184a45f1ec385a47fab0e51918949119523b9
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 13771d3e2013d0aa18de2c67393afeabf98fb5ed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808387"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988560"
 ---
-# <a name="assignedplan-resource-type"></a><span data-ttu-id="4d162-103">assignedPlan 资源类型</span><span class="sxs-lookup"><span data-stu-id="4d162-103">assignedPlan resource type</span></span>
+# <a name="assignedplan-resource-type"></a><span data-ttu-id="26327-103">assignedPlan 资源类型</span><span class="sxs-lookup"><span data-stu-id="26327-103">assignedPlan resource type</span></span>
 
-<span data-ttu-id="4d162-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4d162-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="26327-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="26327-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="4d162-105">**用户** 实体和 [组织](user.md) 实体的 [AssignedPlans](organization.md) 属性都是一个 **assignedPlan** 集合。</span><span class="sxs-lookup"><span data-stu-id="4d162-105">The **assignedPlans** property of both the [user](user.md) entity and the [organization](organization.md) entity is a collection of **assignedPlan**.</span></span>
+<span data-ttu-id="26327-105">**用户** 实体和 [组织](user.md) 实体的 [AssignedPlans](organization.md) 属性都是一个 **assignedPlan** 集合。</span><span class="sxs-lookup"><span data-stu-id="26327-105">The **assignedPlans** property of both the [user](user.md) entity and the [organization](organization.md) entity is a collection of **assignedPlan**.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="4d162-106">属性</span><span class="sxs-lookup"><span data-stu-id="4d162-106">Properties</span></span>
-| <span data-ttu-id="4d162-107">属性</span><span class="sxs-lookup"><span data-stu-id="4d162-107">Property</span></span>     | <span data-ttu-id="4d162-108">类型</span><span class="sxs-lookup"><span data-stu-id="4d162-108">Type</span></span>   |<span data-ttu-id="4d162-109">说明</span><span class="sxs-lookup"><span data-stu-id="4d162-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="26327-106">属性</span><span class="sxs-lookup"><span data-stu-id="26327-106">Properties</span></span>
+| <span data-ttu-id="26327-107">属性</span><span class="sxs-lookup"><span data-stu-id="26327-107">Property</span></span>     | <span data-ttu-id="26327-108">类型</span><span class="sxs-lookup"><span data-stu-id="26327-108">Type</span></span>   |<span data-ttu-id="26327-109">说明</span><span class="sxs-lookup"><span data-stu-id="26327-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4d162-110">assignedDateTime</span><span class="sxs-lookup"><span data-stu-id="4d162-110">assignedDateTime</span></span>|<span data-ttu-id="4d162-111">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4d162-111">DateTimeOffset</span></span>|<span data-ttu-id="4d162-p101">分配计划的日期和时间；例如：2013-01-02T19:32:30Z。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="4d162-p101">The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
-|<span data-ttu-id="4d162-115">capabilityStatus</span><span class="sxs-lookup"><span data-stu-id="4d162-115">capabilityStatus</span></span>|<span data-ttu-id="4d162-116">String</span><span class="sxs-lookup"><span data-stu-id="4d162-116">String</span></span>|<span data-ttu-id="4d162-117">例如，“Enabled”。</span><span class="sxs-lookup"><span data-stu-id="4d162-117">For example, “Enabled”.</span></span>|
-|<span data-ttu-id="4d162-118">服务</span><span class="sxs-lookup"><span data-stu-id="4d162-118">service</span></span>|<span data-ttu-id="4d162-119">String</span><span class="sxs-lookup"><span data-stu-id="4d162-119">String</span></span>|<span data-ttu-id="4d162-120">服务名称；例如，“Exchange”。</span><span class="sxs-lookup"><span data-stu-id="4d162-120">The name of the service; for example, “Exchange”.</span></span>|
-|<span data-ttu-id="4d162-121">servicePlanId</span><span class="sxs-lookup"><span data-stu-id="4d162-121">servicePlanId</span></span>|<span data-ttu-id="4d162-122">Guid</span><span class="sxs-lookup"><span data-stu-id="4d162-122">Guid</span></span>|<span data-ttu-id="4d162-123">用于标识服务计划的 GUID。</span><span class="sxs-lookup"><span data-stu-id="4d162-123">A GUID that identifies the service plan.</span></span>|
+|<span data-ttu-id="26327-110">assignedDateTime</span><span class="sxs-lookup"><span data-stu-id="26327-110">assignedDateTime</span></span>|<span data-ttu-id="26327-111">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="26327-111">DateTimeOffset</span></span>|<span data-ttu-id="26327-p101">分配计划的日期和时间；例如：2013-01-02T19:32:30Z。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="26327-p101">The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="26327-115">capabilityStatus</span><span class="sxs-lookup"><span data-stu-id="26327-115">capabilityStatus</span></span>|<span data-ttu-id="26327-116">String</span><span class="sxs-lookup"><span data-stu-id="26327-116">String</span></span>|<span data-ttu-id="26327-117">例如，“Enabled”。</span><span class="sxs-lookup"><span data-stu-id="26327-117">For example, “Enabled”.</span></span>|
+|<span data-ttu-id="26327-118">服务</span><span class="sxs-lookup"><span data-stu-id="26327-118">service</span></span>|<span data-ttu-id="26327-119">String</span><span class="sxs-lookup"><span data-stu-id="26327-119">String</span></span>|<span data-ttu-id="26327-120">服务名称；例如，“Exchange”。</span><span class="sxs-lookup"><span data-stu-id="26327-120">The name of the service; for example, “Exchange”.</span></span>|
+|<span data-ttu-id="26327-121">servicePlanId</span><span class="sxs-lookup"><span data-stu-id="26327-121">servicePlanId</span></span>|<span data-ttu-id="26327-122">Guid</span><span class="sxs-lookup"><span data-stu-id="26327-122">Guid</span></span>|<span data-ttu-id="26327-123">用于标识服务计划的 GUID。</span><span class="sxs-lookup"><span data-stu-id="26327-123">A GUID that identifies the service plan.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="4d162-124">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="4d162-124">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="26327-124">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="26327-124">JSON representation</span></span>
 
-<span data-ttu-id="4d162-125">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="4d162-125">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="26327-125">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="26327-125">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -58,3 +58,4 @@ ms.locfileid: "46808387"
   "section": "documentation",
   "tocPath": ""
 }-->
+

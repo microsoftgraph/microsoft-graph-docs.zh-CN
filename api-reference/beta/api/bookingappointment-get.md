@@ -5,53 +5,53 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: bb6058ef761c91fc338aeba3cdb1483c91649cf3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 10b9fc68d179328592b1dfdbb58a93cab55f336c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43367550"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988117"
 ---
-# <a name="get-bookingappointment"></a><span data-ttu-id="907b6-103">获取 bookingAppointment</span><span class="sxs-lookup"><span data-stu-id="907b6-103">Get bookingAppointment</span></span>
+# <a name="get-bookingappointment"></a><span data-ttu-id="f896f-103">获取 bookingAppointment</span><span class="sxs-lookup"><span data-stu-id="f896f-103">Get bookingAppointment</span></span>
 
-<span data-ttu-id="907b6-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="907b6-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f896f-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f896f-104">Namespace: microsoft.graph</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="907b6-105">获取指定[bookingbusiness](../resources/bookingbusiness.md)中的[bookingAppointment](../resources/bookingappointment.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="907b6-105">Get the properties and relationships of a [bookingAppointment](../resources/bookingappointment.md) object in the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
+<span data-ttu-id="f896f-105">获取指定[bookingbusiness](../resources/bookingbusiness.md)中的[bookingAppointment](../resources/bookingappointment.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="f896f-105">Get the properties and relationships of a [bookingAppointment](../resources/bookingappointment.md) object in the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
 
-<span data-ttu-id="907b6-106">**开始**和**结束**属性总是以 UTC 形式返回。</span><span class="sxs-lookup"><span data-stu-id="907b6-106">The **start** and **end** properties are always returned in UTC.</span></span>
-## <a name="permissions"></a><span data-ttu-id="907b6-107">权限</span><span class="sxs-lookup"><span data-stu-id="907b6-107">Permissions</span></span>
-<span data-ttu-id="907b6-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="907b6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f896f-106">**开始**和**结束**属性总是以 UTC 形式返回。</span><span class="sxs-lookup"><span data-stu-id="f896f-106">The **start** and **end** properties are always returned in UTC.</span></span>
+## <a name="permissions"></a><span data-ttu-id="f896f-107">权限</span><span class="sxs-lookup"><span data-stu-id="f896f-107">Permissions</span></span>
+<span data-ttu-id="f896f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f896f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="907b6-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="907b6-110">Permission type</span></span>      | <span data-ttu-id="907b6-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="907b6-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f896f-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="f896f-110">Permission type</span></span>      | <span data-ttu-id="f896f-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f896f-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="907b6-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="907b6-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="907b6-113">BookingsAppointment、全部、预订、全部、登记、全部、预订。所有</span><span class="sxs-lookup"><span data-stu-id="907b6-113">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="907b6-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="907b6-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="907b6-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="907b6-115">Not supported.</span></span>   |
-|<span data-ttu-id="907b6-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="907b6-116">Application</span></span> | <span data-ttu-id="907b6-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="907b6-117">Not supported.</span></span>  |
+|<span data-ttu-id="f896f-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f896f-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="f896f-113">BookingsAppointment、全部、预订、全部、登记、全部、预订。所有</span><span class="sxs-lookup"><span data-stu-id="f896f-113">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="f896f-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f896f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f896f-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="f896f-115">Not supported.</span></span>   |
+|<span data-ttu-id="f896f-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="f896f-116">Application</span></span> | <span data-ttu-id="f896f-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="f896f-117">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="907b6-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="907b6-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f896f-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f896f-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses/{id}/appointments/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="907b6-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="907b6-119">Optional query parameters</span></span>
-<span data-ttu-id="907b6-120">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="907b6-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="f896f-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="f896f-119">Optional query parameters</span></span>
+<span data-ttu-id="f896f-120">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="f896f-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="907b6-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="907b6-121">Request headers</span></span>
-| <span data-ttu-id="907b6-122">名称</span><span class="sxs-lookup"><span data-stu-id="907b6-122">Name</span></span>      |<span data-ttu-id="907b6-123">说明</span><span class="sxs-lookup"><span data-stu-id="907b6-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f896f-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="f896f-121">Request headers</span></span>
+| <span data-ttu-id="f896f-122">名称</span><span class="sxs-lookup"><span data-stu-id="f896f-122">Name</span></span>      |<span data-ttu-id="f896f-123">说明</span><span class="sxs-lookup"><span data-stu-id="f896f-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="907b6-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="907b6-124">Authorization</span></span>  | <span data-ttu-id="907b6-125">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="907b6-125">Bearer {code}</span></span>|
+| <span data-ttu-id="f896f-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="f896f-124">Authorization</span></span>  | <span data-ttu-id="f896f-125">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="f896f-125">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="907b6-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="907b6-126">Request body</span></span>
-<span data-ttu-id="907b6-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="907b6-127">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="907b6-128">响应</span><span class="sxs-lookup"><span data-stu-id="907b6-128">Response</span></span>
-<span data-ttu-id="907b6-129">如果成功，此方法在响应`200 OK`正文中返回响应代码和[bookingAppointment](../resources/bookingappointment.md)对象。</span><span class="sxs-lookup"><span data-stu-id="907b6-129">If successful, this method returns a `200 OK` response code and [bookingAppointment](../resources/bookingappointment.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="907b6-130">示例</span><span class="sxs-lookup"><span data-stu-id="907b6-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="907b6-131">请求</span><span class="sxs-lookup"><span data-stu-id="907b6-131">Request</span></span>
-<span data-ttu-id="907b6-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="907b6-132">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f896f-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="f896f-126">Request body</span></span>
+<span data-ttu-id="f896f-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f896f-127">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="f896f-128">响应</span><span class="sxs-lookup"><span data-stu-id="f896f-128">Response</span></span>
+<span data-ttu-id="f896f-129">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [bookingAppointment](../resources/bookingappointment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f896f-129">If successful, this method returns a `200 OK` response code and [bookingAppointment](../resources/bookingappointment.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="f896f-130">示例</span><span class="sxs-lookup"><span data-stu-id="f896f-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f896f-131">请求</span><span class="sxs-lookup"><span data-stu-id="f896f-131">Request</span></span>
+<span data-ttu-id="f896f-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="f896f-132">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="907b6-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="907b6-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f896f-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="f896f-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_bookingappointment"
@@ -59,22 +59,22 @@ GET /bookingBusinesses/{id}/appointments/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKnAAA=
 ```
-# <a name="c"></a>[<span data-ttu-id="907b6-134">C#</span><span class="sxs-lookup"><span data-stu-id="907b6-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f896f-134">C#</span><span class="sxs-lookup"><span data-stu-id="f896f-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bookingappointment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="907b6-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="907b6-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f896f-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f896f-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-bookingappointment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="907b6-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="907b6-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f896f-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f896f-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bookingappointment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="907b6-137">响应</span><span class="sxs-lookup"><span data-stu-id="907b6-137">Response</span></span>
-<span data-ttu-id="907b6-138">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="907b6-138">The following is an example of the response.</span></span> <span data-ttu-id="907b6-139">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="907b6-139">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="907b6-140">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="907b6-140">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="f896f-137">响应</span><span class="sxs-lookup"><span data-stu-id="f896f-137">Response</span></span>
+<span data-ttu-id="f896f-138">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="f896f-138">The following is an example of the response.</span></span> <span data-ttu-id="f896f-139">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="f896f-139">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="f896f-140">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f896f-140">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -200,3 +200,5 @@ Content-type: application/json
   ]
 }
 -->
+
+
