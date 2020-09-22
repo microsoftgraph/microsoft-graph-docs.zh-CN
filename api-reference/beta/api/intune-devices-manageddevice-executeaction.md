@@ -3,20 +3,20 @@ title: executeAction 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b16beb4e8a40c674e3c1a95d937d21893df595e
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 4a6349e8df37dc78c7e0d6e38832742265025a3d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792294"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072541"
 ---
 # <a name="executeaction-action"></a>executeAction 操作
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -57,7 +57,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |属性|类型|说明|
 |:---|:---|:---|
 |actionName|[managedDeviceRemoteAction](../resources/intune-devices-manageddeviceremoteaction.md)|尚未记录|
-|keepEnrollmentData|Boolean|尚未记录|
+|keepEnrollmentData|布尔|尚未记录|
 |keepUserData|Boolean|尚未记录|
 |deviceIds|String collection|尚未记录|
 |notificationTitle|String|尚未记录|
@@ -67,7 +67,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 
 
 ## <a name="response"></a>响应
-如果成功，此操作会 `200 OK` 在响应正文中返回响应代码和[bulkManagedDeviceActionResult](../resources/intune-devices-bulkmanageddeviceactionresult.md) 。
+如果成功，此操作会 `200 OK` 在响应正文中返回响应代码和 [bulkManagedDeviceActionResult](../resources/intune-devices-bulkmanageddeviceactionresult.md) 。
 
 ## <a name="example"></a>示例
 
@@ -117,6 +117,9 @@ Content-Length: 385
   }
 }
 ```
+
+
+
 
 
 

@@ -3,24 +3,24 @@ title: 删除 userExperienceAnalyticsBaseline
 description: 删除 userExperienceAnalyticsBaseline。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a1ac6be7e1646536c0ecbd0f38841965714292d6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3aa8f0e9c83445c5ef23c7232dbf462ca8eced1e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43323219"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072330"
 ---
 # <a name="delete-userexperienceanalyticsbaseline"></a>删除 userExperienceAnalyticsBaseline
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-删除[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)。
+删除 [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -65,6 +65,9 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalytics
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -3,20 +3,20 @@ title: wipe 操作
 description: 擦除设备
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ea07fd650a00e91896639d0312b48bb787b2b54
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 1f9e4c9464999b3c39deefcc8fa6164c23b246a2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792125"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072429"
 ---
 # <a name="wipe-action"></a>擦除操作
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -59,7 +59,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 
 |属性|类型|说明|
 |:---|:---|:---|
-|keepEnrollmentData|Boolean|尚未记录|
+|keepEnrollmentData|布尔|尚未记录|
 |keepUserData|Boolean|尚未记录|
 |macOsUnlockCode|字符串|尚未记录|
 |useProtectedWipe|Boolean|尚未记录|
@@ -92,6 +92,9 @@ Content-length: 138
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

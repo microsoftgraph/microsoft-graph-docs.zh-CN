@@ -3,24 +3,24 @@ title: 创建 userExperienceAnalyticsBaseline
 description: 创建新的 userExperienceAnalyticsBaseline 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c11f14f2a281ab2317645a71abc0effaf541fb0d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b8c6b1472fcee0f38c561be44685b2583f0d6fc1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43323442"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072324"
 ---
 # <a name="create-userexperienceanalyticsbaseline"></a>创建 userExperienceAnalyticsBaseline
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)对象。
+创建新的 [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,7 +53,7 @@ POST /deviceManagement/userExperienceAnalyticsBaselines
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|User experience analytics 比较基准的唯一标识符。|
+|id|String|User experience analytics 比较基准的唯一标识符。|
 |displayName|String|User experience analytics 基线的名称。|
 |overallScore|Int32|用户体验分析基准的总体分数。|
 |isBuiltIn|Boolean|指示当前基线是商业中间基线还是自定义基线。|
@@ -62,7 +62,7 @@ POST /deviceManagement/userExperienceAnalyticsBaselines
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -97,6 +97,9 @@ Content-Length: 266
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
+
+
+
 
 
 

@@ -3,20 +3,20 @@ title: 更新 deviceManagementPartner
 description: 更新 deviceManagementPartner 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b20785d8326f5225122bb3151d9245ce02c96fde
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: db0d71eb1bb6505034b4e66244721ce5c0dfc7c0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791803"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072170"
 ---
 # <a name="update-devicemanagementpartner"></a>更新 deviceManagementPartner
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -64,7 +64,7 @@ PATCH /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 |whenPartnerDevicesWillBeMarkedAsNonCompliant|DateTimeOffset|PartnerDevices 将被标记为不符合时的 UTC 格式的日期/时间。 这将很快变成 obselete。|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|要删除 PartnerDevices 时的日期/时间（UTC 时间）|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|PartnerDevices 将被标记为“不符合”时的日期/时间（UTC 时间）|
-|groupsRequiringPartnerEnrollment|[deviceManagementPartnerAssignment](../resources/intune-onboarding-devicemanagementpartnerassignment.md)集合|指定注册是否通过合作伙伴的用户组。|
+|groupsRequiringPartnerEnrollment|[deviceManagementPartnerAssignment](../resources/intune-onboarding-devicemanagementpartnerassignment.md) 集合|指定注册是否通过合作伙伴的用户组。|
 
 
 
@@ -137,6 +137,9 @@ Content-Length: 1121
   ]
 }
 ```
+
+
+
 
 
 

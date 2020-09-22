@@ -3,24 +3,24 @@ title: 创建 circularGeofenceManagementCondition
 description: 创建新的 circularGeofenceManagementCondition 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 76159bf269522433cd3f3dc905d913c71cc4a3ed
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: e2f241919208e4fed3fa2c5b0fe8b801f0cb690d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177609"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072296"
 ---
 # <a name="create-circulargeofencemanagementcondition"></a>创建 circularGeofenceManagementCondition
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[circularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md)对象。
+创建新的 [circularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "44177609"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|应用程序|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -54,22 +54,22 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|管理条件的唯一标识符。 创建时分配的系统生成值。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
-|uniqueName|字符串|管理条件的唯一名称。 在管理条件表达式中使用。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
-|displayName|String|管理条件的管理员定义名称。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
-|说明|字符串|管理条件的管理员定义的说明。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
-|createdDateTime|DateTimeOffset|管理条件的创建时间。 生成的服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
-|modifiedDateTime|DateTimeOffset|上次修改管理条件的时间。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
-|eTag|String|管理条件的 ETag。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
-|applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|适用于此管理条件的平台。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
-|latitude|双精度|以度为单位的纬度，介于-90 和 + 90 之间（含）。|
+|id|String|管理条件的唯一标识符。 创建时分配的系统生成值。 继承自 [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|uniqueName|String|管理条件的唯一名称。 在管理条件表达式中使用。 继承自 [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|displayName|String|管理条件的管理员定义名称。 继承自 [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|说明|String|管理条件的管理员定义的说明。 继承自 [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|createdDateTime|DateTimeOffset|管理条件的创建时间。 生成的服务端。 继承自 [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|modifiedDateTime|DateTimeOffset|上次修改管理条件的时间。 更新了服务端。 继承自 [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|eTag|String|管理条件的 ETag。 更新了服务端。 继承自 [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md) 集合|适用于此管理条件的平台。 继承自 [managementCondition](../resources/intune-fencing-managementcondition.md)。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`unknown`。|
+|latitude|Double|以度为单位的纬度，介于-90 和 + 90 之间（含）。|
 |longitude|Double|以度为单位的经度，介于-180 和 + 180 之间（含）。|
 |radiusInMeters|单一|以米为单位的半径。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[circularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [circularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -119,6 +119,9 @@ Content-Length: 539
   "radiusInMeters": 4.666666666666667
 }
 ```
+
+
+
 
 
 

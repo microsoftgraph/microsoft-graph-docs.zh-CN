@@ -3,14 +3,14 @@ title: 更新 managedDevice
 description: 更新 managedDevice 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f4c85e22ac1c195decaa7df1453e8deca661627d
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 6417612a89f862c7add02fb3fed818ea3966c4ed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46789956"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072506"
 ---
 # <a name="update-manageddevice"></a>更新 managedDevice
 
@@ -117,12 +117,12 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |retireAfterDateTime|DateTimeOffset|指示当设备因计划操作而自动停用的时间。 此属性是只读的。|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md) 集合|指示设备的上次登录用户。 此属性是只读的。|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|报告设置了 preferMdmOverGroupPolicy 设置的 DateTime。  设置后，如果存在冲突，Intune MDM 设置将覆盖组策略设置。 只读。 此属性是只读的。|
-|autopilotEnrolled|布尔值|如果托管设备是通过自动引导注册的，则报告。 此属性是只读的。|
-|requireUserEnrollmentApproval|布尔值|如果托管 iOS 设备是用户审批注册，则报告。 此属性是只读的。|
+|autopilotEnrolled|Boolean|如果托管设备是通过自动引导注册的，则报告。 此属性是只读的。|
+|requireUserEnrollmentApproval|Boolean|如果托管 iOS 设备是用户审批注册，则报告。 此属性是只读的。|
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书到期日期。 此属性是只读的。|
 |iccid|String|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。|
 |udid|String|IOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。|
-|roleScopeTagIds|字符串集合|此设备实例的范围标记 Id 的列表。|
+|roleScopeTagIds|String 集合|此设备实例的范围标记 Id 的列表。|
 |windowsActiveMalwareCount|Int32|此 windows 设备的活动恶意软件的计数。 此属性是只读的。|
 |windowsRemediatedMalwareCount|Int32|此 windows 设备的修正的恶意软件的计数。 此属性是只读的。|
 |notes|String|IT 管理员创建的设备上的注释|
@@ -134,6 +134,8 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |specificationVersion|String|规范版本。 此属性是只读的。|
 |joinType|[joinType](../resources/intune-devices-jointype.md)|设备加入类型。 可取值为：`unknown`、`azureADJoined`、`azureADRegistered`、`hybridAzureADJoined`。|
 |skuFamily|String|设备 sku 系列|
+|skuNumber|Int32|设备 sku 编号，另请参阅： https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo 。 有效的值为0到2147483647。 此属性是只读的。|
+|managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|设备管理功能。 可取值为：`none`、`microsoftManagedDesktop`。|
 
 
 
@@ -147,7 +149,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 7948
+Content-length: 8019
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -330,7 +332,9 @@ Content-length: 7948
   "processorArchitecture": "x86",
   "specificationVersion": "Specification Version value",
   "joinType": "azureADJoined",
-  "skuFamily": "Sku Family value"
+  "skuFamily": "Sku Family value",
+  "skuNumber": 9,
+  "managementFeatures": "microsoftManagedDesktop"
 }
 ```
 
@@ -339,7 +343,7 @@ Content-length: 7948
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7997
+Content-Length: 8068
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -523,9 +527,14 @@ Content-Length: 7997
   "processorArchitecture": "x86",
   "specificationVersion": "Specification Version value",
   "joinType": "azureADJoined",
-  "skuFamily": "Sku Family value"
+  "skuFamily": "Sku Family value",
+  "skuNumber": 9,
+  "managementFeatures": "microsoftManagedDesktop"
 }
 ```
+
+
+
 
 
 
