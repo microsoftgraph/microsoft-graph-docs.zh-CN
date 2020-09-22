@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 435a8fcd37a44d6d6a31de2c8ae4e10f67a75951
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: fc85b1413a0b4405bdbbce17c5979c705e335304
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843273"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036211"
 ---
 # <a name="get-onlinemeeting"></a>获取 onlineMeeting
 
@@ -28,10 +28,10 @@ ms.locfileid: "47843273"
 | :------------------------------------- | :---------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持。                                        |
 | 委派（个人 Microsoft 帐户） | 不支持。                                        |
-| 应用程序                            | OnlineMeetings、OnlineMeetings 和所有 * |
+| 应用程序                            | OnlineMeetings.Read.All、OnlineMeetings.ReadWrite.All* |
 
 > [!IMPORTANT]
-> \* 管理员必须创建 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy.md) ，并向用户授予该策略中配置的应用程序，以代表该用户检索联机会议 (用户 ID 在请求路径) 中指定。
+> \* 管理员必须创建 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy) ，并向用户授予该策略中配置的应用程序，以代表该用户检索联机会议 (用户 ID 在请求路径) 中指定。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}
 >
 > - 路径 `/app` 已弃用。 今后，请使用路径 `/communications`。
 > - `id` 在前两个路由中，是指 [VTC 会议 id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up)。
-> - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关更多详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy.md)。
+> - `userId` 是 [Azure 用户管理门户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)中用户的对象 ID。 有关更多详细信息，请参阅 [应用程序访问策略](/graph/cloud-communication-online-meeting-application-access-policy)。
 > - `meetingId`是[onlineMeeting 实体](../resources/onlinemeeting.md)的**id** 。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -187,3 +187,5 @@ Content-Length: 1574
   ]
 }
 -->
+
+

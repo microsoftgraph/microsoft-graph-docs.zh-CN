@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 6a39d156849236a40268064cb234e6015c9424f3
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: ba1365496a3970b36bb4d120efef54da01ba9247
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598541"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192166"
 ---
 # <a name="changenotification-resource-type"></a>changeNotification 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "46598541"
 
 表示发送给订阅者的通知。
 
-有关详细信息，请参阅[使用 Microsoft GRAPH API 获取更改通知](webhooks.md)。
+有关详细信息，请参阅 [使用 Microsoft GRAPH API 获取更改通知](webhooks.md)。
 
 ## <a name="methods"></a>方法
 
@@ -30,14 +30,14 @@ ms.locfileid: "46598541"
 
 | 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
-| changeType | string | 指示将引发更改通知的更改的类型。 支持的值是：`created`、`updated`、`deleted`。 必填。 |
-| clientState | string | 在订阅请求中指定的**clientState**属性的值 (如果有任何) 。 最大长度为 255 个字符。 客户端可以通过比较**clientState**属性的值，来检查更改通知是否来自服务。 与订阅一起发送的**clientState**属性的值将与每个更改通知收到的**clientState**属性的值进行比较。 可选。 |
-| encryptedContent | [changeNotificationEncryptedContent](changenotificationencryptedcontent.md) |  (预览) 随更改通知附加的加密内容。 仅当**encryptionCertificate**和**includeResourceData**在订阅请求期间定义并且资源支持它时才提供。 可选 |
+| changeType | string | 指示将引发更改通知的更改的类型。 支持的值是：`created`、`updated`、`deleted`。 必需。 |
+| clientState | string | 在订阅请求中指定的 **clientState** 属性的值 (如果有任何) 。 最大长度为 255 个字符。 客户端可以通过比较 **clientState** 属性的值，来检查更改通知是否来自服务。 与订阅一起发送的 **clientState** 属性的值将与每个更改通知收到的 **clientState** 属性的值进行比较。 可选。 |
+| encryptedContent | [changeNotificationEncryptedContent](changenotificationencryptedcontent.md) |  (预览) 随更改通知附加的加密内容。 仅当 **encryptionCertificate** 和 **includeResourceData** 在订阅请求期间定义并且资源支持它时才提供。 可选。 |
 | lifecycleEvent | string | 如果当前通知是生命周期通知，则为生命周期通知的类型。 可选。 支持的值为 `missed` 、 `removed` 、 `reauthorizationRequired` 。 |
 | id | string | 通知的唯一 ID。 可选。 |
-| resource | string | 发出更改通知的资源的 URI （相对于） `https://graph.microsoft.com` 。 必填。 |
-| resourceData | [resourceData](resourcedata.md) | 此属性的内容取决于要订阅资源的类型。 必填。 |
-| subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | 订阅的过期时间。 必填。 |
+| resource | string | 发出更改通知的资源的 URI （相对于） `https://graph.microsoft.com` 。 必需。 |
+| resourceData | [resourceData](resourcedata.md) | 此属性的内容取决于要订阅资源的类型。 必需。 |
+| subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | 订阅的过期时间。 必需。 |
 | subscriptionId | string | 生成通知的订阅的唯一标识符。 |
 | tenantId | containerparentjob | 来自其发出更改通知的租户的唯一标识符。 |
 
@@ -86,3 +86,5 @@ ms.locfileid: "46598541"
   "suppressions": []
 }
 -->
+
+

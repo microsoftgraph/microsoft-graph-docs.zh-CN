@@ -5,12 +5,12 @@ author: jasonbro
 localization_priority: Normal
 ms.prod: settings
 doc_type: apiPageType
-ms.openlocfilehash: 6ff0e617656524e43fafa85a800a3adb99282f70
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: a78c2f22e6e08ea7dc4709fbf3eaaaa8a5c1d5bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791175"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050365"
 ---
 # <a name="get-regionalandlanguagesettings"></a>获取 regionalAndLanguageSettings
 
@@ -18,15 +18,15 @@ ms.locfileid: "44791175"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md)对象的属性。
+获取 [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型                   |权限（从至少到最高特权）     |
+|权限类型                   |从至少到最高特权的) 的权限 (     |
 |----------------------------------|---------------------------------------------- |
 |委派（工作或学校帐户）|User. Read、User. All                        |
-|委派（个人帐户）      |User. Read、User. All              |
+|委派 (个人帐户)       |User. Read、User. All              |
 |应用程序                       |User. Read、User. All              |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -50,7 +50,7 @@ GET /settings/regionalAndLanguageSettings
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -145,3 +145,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

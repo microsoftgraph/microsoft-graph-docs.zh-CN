@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7519fe60702293a60fb9b5e4c59d8c810d8de14a
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: dc92ba18f51f02f03713e43d0fbd4efe4e7cb227
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384627"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022895"
 ---
 # <a name="namedlocation-resource-type"></a>namedLocation 资源类型
 
@@ -22,9 +22,9 @@ ms.locfileid: "45384627"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出 namedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [namedLocation](namedLocation.md)集合 | 获取组织中的所有**namedLocation**对象。 |
-| [获取 namedLocation](../api/namedlocation-get.md) | [namedLocation](namedlocation.md) | 读取**namedLocation**对象的属性和关系。 |
-| [删除 namedLocation](../api/namedlocation-delete.md) | 无 | 删除**namedLocation**对象。 |
+| [列出 namedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [namedLocation](namedLocation.md) 集合 | 获取组织中的所有 **namedLocation** 对象。 |
+| [获取 namedLocation](../api/namedlocation-get.md) | [namedLocation](namedlocation.md) | 读取 **namedLocation** 对象的属性和关系。 |
+| [删除 namedLocation](../api/namedlocation-delete.md) | 无 | 删除 **namedLocation** 对象。 |
 
 ## <a name="properties"></a>属性
 
@@ -71,3 +71,4 @@ ms.locfileid: "45384627"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3f906b1e98134b255858015efd765df2194c4a5b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a4536607c4723a9e16d77e045e17bd151da50d36
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533907"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090926"
 ---
 # <a name="rangeborder-resource-type"></a>RangeBorder 资源类型
 
@@ -19,22 +19,22 @@ ms.locfileid: "42533907"
 代表对象的边框。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 RangeBorder](../api/rangeborder-get.md) | [WorkbookRangeBorder](rangeborder.md) |读取 rangeborder 对象的属性和关系。|
 |[更新](../api/rangeborder-update.md) | [WorkbookRangeBorder](rangeborder.md) |更新 RangeBorder 对象。 |
-|[列出](../api/rangeborder-list.md) | [WorkbookRangeBorder](rangeborder.md)集合 |获取 rangeBorder 对象集合。 |
+|[列出](../api/rangeborder-list.md) | [WorkbookRangeBorder](rangeborder.md) 集合 |获取 rangeBorder 对象集合。 |
 |[Itemat](../api/rangebordercollection-itemat.md)|[WorkbookRangeBorder](rangeborder.md)|使用其索引获取 border 对象|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|color|字符串|表示窗体 #RRGGBB（例如“FFA500”）的边框线条颜色或作为已命名的 HTML 颜色（例如“orange”）的 HTML 颜色代码。|
-|id|字符串|表示边框标识符。 可能的值为： `EdgeTop`、 `EdgeBottom`、 `EdgeLeft` `EdgeRight` `InsideVertical` `InsideHorizontal` `DiagonalDown`、、、、 `DiagonalUp`。 只读。|
-|sideIndex|字符串|指示边框的特定边的常量值。 可能的值为： `EdgeTop`、 `EdgeBottom`、 `EdgeLeft` `EdgeRight` `InsideVertical` `InsideHorizontal` `DiagonalDown`、、、、 `DiagonalUp`。 只读。|
-|style|string|线条样式的常量之一，指定边框的线条样式。 可能的值为： `None`、 `Continuous`、 `Dash` `DashDot` `DashDotDot` `Dot` `Double`、、、、 `SlantDashDot`。|
+|color|string|表示窗体 #RRGGBB（例如“FFA500”）的边框线条颜色或作为已命名的 HTML 颜色（例如“orange”）的 HTML 颜色代码。|
+|id|string|表示边框标识符。 可能的值为：、、、、、、 `EdgeTop` `EdgeBottom` `EdgeLeft` `EdgeRight` `InsideVertical` `InsideHorizontal` `DiagonalDown` `DiagonalUp` 。 只读。|
+|sideIndex|string|指示边框的特定边的常量值。 可能的值为：、、、、、、 `EdgeTop` `EdgeBottom` `EdgeLeft` `EdgeRight` `InsideVertical` `InsideHorizontal` `DiagonalDown` `DiagonalUp` 。 只读。|
+|style|string|线条样式的常量之一，指定边框的线条样式。 可能的值为：、、、、、、 `None` `Continuous` `Dash` `DashDot` `DashDotDot` `Dot` `Double` `SlantDashDot` 。|
 |weight|string|指定区域周围的边框的粗细。 可能的值包括 `Hairline`、`Thin`、`Medium`、`Thick`。|
 
 ## <a name="relationships"></a>关系
@@ -72,3 +72,4 @@ ms.locfileid: "42533907"
   "section": "documentation",
   "tocPath": ""
 }-->
+

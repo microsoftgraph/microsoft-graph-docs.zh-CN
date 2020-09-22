@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 077895872414380f9a5d6eab854c0b4b0d9ceab2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 411d64b5ec6afdd5f994c64faceb4e5fc9a2c637
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006806"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192208"
 ---
 # <a name="update-externalitem"></a>更新 externalitem
 
@@ -42,10 +42,10 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="path-parameters"></a>路径参数
 
-| 参数     | 类型   | 说明                                         |
+| 参数     | 类型   | 描述                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | 字符串 | `id`包含[externalConnection](../resources/externalconnection.md)的属性 |
-| item-id       | 字符串 | ExternalItem 的开发人员提供的 `id` 属性[externalItem](../resources/externalitem.md)。 |
+| connection-id | string | `id`包含[externalConnection](../resources/externalconnection.md)的属性 |
+| item-id       | string | ExternalItem 的开发人员提供的 `id` 属性[externalItem](../resources/externalitem.md)。 |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -58,10 +58,10 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 在请求正文中，提供应更新的相关字段的值。 现有属性 (排除 `properties` 请求正文中不包含的对象) 中的属性将保留其以前的值，或根据其他属性值的更改重新计算这些属性。 为了获得最佳性能，请勿加入尚未更改的现有值。 可更新以下属性。
 
-| 属性   | 类型                                  | 说明               |
+| 属性   | 类型                                  | 描述               |
 |:-----------|:--------------------------------------|:--------------------------|
 | acl        | [acl](../resources/acl.md) 集合 | 一组访问控制项。 每个条目指定向用户或组授予的访问权限。 |
-| content    | [externalItemContent](../resources/externalitemcontent.md) | 项目内容的纯文本或 HTML 表示形式。 此属性中的文本为全文检索的文本。 |
+| content    | [externalItemContent](../resources/externalitemcontent.md) | 项目内容的纯文本表示形式。 此属性中的文本为全文检索的文本。 |
 | properties | Object                                | 包含项属性的属性包。 属性必须符合为[externalConnection](../resources/externalconnection.md)定义的[架构](../resources/schema.md)。 |
 
 ### <a name="updating-the-acl-collection"></a>更新 acl 集合
@@ -95,8 +95,8 @@ Content-type: application/json
 {
   "acl": [
     {
-      "type": "user",
-      "value": "49103559-feac-4575-8b94-254814dfca72",
+      "type": "everyone",
+      "value": "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
       "accessType": "grant",
       "identitySource": "azureActiveDirectory"
     }

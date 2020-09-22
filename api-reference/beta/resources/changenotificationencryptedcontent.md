@@ -1,16 +1,16 @@
 ---
 title: changeNotificationEncryptedContent 资源类型
-description: 通过使用资源数据的订阅，客户端应用程序可以接收更改通知，以更改 Microsoft Graph 中的数据。 更改通知加密内容代表通知附带的加密数据。
+description: 一个 changeNotificationEncryptedContent 对象，代表附加到更改通知的加密数据。
 localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 4ca2230cf3735cb696136f3b3014e8545202ebfe
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: c3d5f576c5259ba69f6fa2194cf52d7834a1f717
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598491"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192159"
 ---
 # <a name="changenotificationencryptedcontent-resource-type"></a>changeNotificationEncryptedContent 资源类型
 
@@ -20,11 +20,7 @@ ms.locfileid: "46598491"
 
 代表附加到更改通知的加密数据。
 
-有关详细信息，请参阅[设置包含资源数据 (preview) 的更改通知](/graph/webhooks-with-resource-data.md)。
-
-## <a name="methods"></a>方法
-
-无。
+有关详细信息，请参阅 [设置包含资源数据 (preview) 的更改通知 ](/graph/webhooks-with-resource-data.md)。
 
 ## <a name="properties"></a>属性
 
@@ -35,10 +31,6 @@ ms.locfileid: "46598491"
 | dataKey | string | 由 Microsoft Graph 生成的 Base64 编码的对称密钥，用于加密数据值并生成数据签名。 此密钥使用订阅过程中提供的证书公钥进行加密。 必须使用证书私钥对其进行解密，然后才能将其用于解密数据或验证签名。 已使用以下密码套件对此项进行了加密： `RSA/ECB/OAEPWithSHA1AndMGF1Padding` 。 |
 | encryptionCertificateId | string | 用于加密的证书的 ID `dataKey` 。 |
 | encryptionCertificateThumbprint | string | 用于加密的证书的指纹的十六进制表示形式 `dataKey` 。 |
-
-## <a name="relationships"></a>关系
-
-无。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -74,3 +66,5 @@ ms.locfileid: "46598491"
   "suppressions": []
 }
 -->
+
+

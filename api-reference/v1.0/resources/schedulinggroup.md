@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: 077acf9454a10612bd1f90d05e8c3042e80bd397
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: a3f3b76f84d081d11005a567b318d9f0ea83a667
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154883"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077672"
 ---
 # <a name="schedulinggroup-resource-type"></a>schedulingGroup 资源类型
 
@@ -75,3 +75,4 @@ ms.locfileid: "44154883"
   "suppressions": []
 }
 -->
+

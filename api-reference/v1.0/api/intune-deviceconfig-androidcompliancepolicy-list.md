@@ -3,14 +3,14 @@ title: 列出 androidCompliancePolicies
 description: 列出 androidCompliancePolicy 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fd0e3da85caf6798ca48daad9dbd45ab89877d17
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 73c88749d683bb582328ee522cfb1832bce3f557
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43316710"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083769"
 ---
 # <a name="list-androidcompliancepolicies"></a>列出 androidCompliancePolicies
 
@@ -100,6 +100,9 @@ Content-Length: 1476
   ]
 }
 ```
+
+
+
 
 
 

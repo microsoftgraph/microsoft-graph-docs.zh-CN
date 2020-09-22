@@ -1,16 +1,16 @@
 ---
 title: privilegedRole 资源类型
-description: 表示 Azure AD 管理员角色，例如：**全局管理员、记帐管理员、服务管理员、用户管理员、密码管理员**等。
+description: 表示 Azure AD 管理员角色，例如： **全局管理员、记帐管理员、服务管理员、用户管理员、密码管理员**等。
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 51114eea797d27886f48c664d06d0b88d4a35a2d
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 3d0b24022696fbb0df861ce0c2a78e0c9bbbd6e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217909"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070518"
 ---
 # <a name="privilegedrole-resource-type"></a>privilegedRole 资源类型
 
@@ -18,10 +18,10 @@ ms.locfileid: "43217909"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 Azure AD 管理员角色，例如：**全局管理员、记帐管理员、服务管理员、用户管理员、密码管理员**等。
+表示 Azure AD 管理员角色，例如： **全局管理员、记帐管理员、服务管理员、用户管理员、密码管理员**等。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -40,9 +40,9 @@ ms.locfileid: "43217909"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|assignments|[privilegedRoleAssignment](privilegedroleassignment.md) 集合| 此角色的分配。 此为只读属性。 可为 Null。|
-|settings|[privilegedRoleSettings](privilegedrolesettings.md)| 此角色的设置。 此为只读属性。 可为 Null。|
-|摘要|[privilegedRoleSummary](privilegedrolesummary.md)| 此角色的摘要信息。 此为只读属性。 可为 Null。|
+|assignments|[privilegedRoleAssignment](privilegedroleassignment.md) 集合| 此角色的分配。 只读。 可为 Null。|
+|settings|[privilegedRoleSettings](privilegedrolesettings.md)| 此角色的设置。 只读。 可为 NULL。|
+|摘要|[privilegedRoleSummary](privilegedrolesummary.md)| 此角色的摘要信息。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -78,3 +78,5 @@ ms.locfileid: "43217909"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4268c7d9faba8e744f7a6bd6a674ff680cb24346
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
-ms.translationtype: Auto
+ms.openlocfilehash: c901050f3cd068f68557473587e96b5ea5f65905
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556390"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057755"
 ---
 # <a name="verifiedcustomdomaincertificatesmetadata-resource-type"></a>verifiedCustomDomainCertificatesMetadata 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "44556390"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示在使用应用程序代理发布本地应用程序时， [onPremisesPublishing](onpremisespublishing.md)资源的自定义域证书元数据。 使用自定义域允许您为应用程序使用自己的域名，而不是默认域 msappproxy.net。 若要了解详细信息，请参阅[AZURE AD 应用程序代理中的自定义域](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-custom-domain)。
+表示在使用应用程序代理发布本地应用程序时， [onPremisesPublishing](onpremisespublishing.md) 资源的自定义域证书元数据。 使用自定义域允许您为应用程序使用自己的域名，而不是默认域 msappproxy.net。 若要了解详细信息，请参阅 [AZURE AD 应用程序代理中的自定义域](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-custom-domain)。
 
 ## <a name="properties"></a>属性
 
@@ -62,3 +62,4 @@ ms.locfileid: "44556390"
   "section": "documentation",
   "tocPath": ""
 }-->
+

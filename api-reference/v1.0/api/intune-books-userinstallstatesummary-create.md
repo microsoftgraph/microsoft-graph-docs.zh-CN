@@ -3,14 +3,14 @@ title: 创建 userInstallStateSummary
 description: 创建新的 userInstallStateSummary 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 847a1f28aaceec734ace36dc038c7531acbf514e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9493bf685cde5eb142f77f6504317fe05db208ac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468981"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077798"
 ---
 # <a name="create-userinstallstatesummary"></a>创建 userInstallStateSummary
 
@@ -96,6 +96,9 @@ Content-Length: 238
   "notInstalledDeviceCount": 7
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 36a2e70ae8ab0183ffa25ca0c6e97cb1fa10c3b6
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: ac8588470d7c52bdd163567bee8a1210dd5478a7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744094"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050415"
 ---
 # <a name="create-unifiedroleassignment"></a>创建 unifiedRoleAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "44744094"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象。
+创建新的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -46,11 +46,11 @@ POST /roleManagement/directory/roleAssignments
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象的 JSON 表示形式。 请求必须具有在 Azure AD 中定义的作用域（例如 `directoryScopeId` ）或特定于应用程序的作用域（例如） `appScopeId` 。 Azure AD 作用域的示例包括租户（"/"）、管理单元或应用程序。 有关详细信息，请参阅[appScope](../resources/appscope.md)。
+在请求正文中，提供 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象的 JSON 表示形式。 请求必须具有在 Azure AD 中定义的作用域（例如 `directoryScopeId` ）或特定于应用程序的作用域（例如） `appScopeId` 。 Azure AD 作用域的示例包括租户 ( "/" ) 、管理单元或应用程序。 有关详细信息，请参阅 [appScope](../resources/appscope.md)。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[unifiedRoleAssignment](../resources/unifiedroleassignment.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [unifiedRoleAssignment](../resources/unifiedroleassignment.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -191,3 +191,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

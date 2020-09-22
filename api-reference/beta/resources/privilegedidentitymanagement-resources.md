@@ -5,12 +5,12 @@ localization_priority: Priority
 author: shauliu
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 83ffad748b6a7b08fbdd8a4578369410c219d453
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: b82bbd4d37b8b5d78ec85090761201ddfc13e756
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219212"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070553"
 ---
 # <a name="privileged-identity-management---azure-resources"></a>Privileged Identity Management - Azure 资源
 
@@ -42,3 +42,5 @@ ms.locfileid: "43219212"
   "suppressions": []
 }
 -->
+
+

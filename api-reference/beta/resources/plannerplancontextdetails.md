@@ -5,16 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: f1d360e049ad279d1a481fe9dc1ea0a672514a9b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0ba8155957b015e5b826253f382281bb7852d5a3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521690"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064079"
 ---
 # <a name="plannerplancontextdetails-resource-type"></a>plannerPlanContextDetails 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ ms.locfileid: "42521690"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|url|String|由关联的[plannerPlanContext](plannerplancontext.md)表示的用户体验的 URL。 |
+|url|String|由关联的 [plannerPlanContext](plannerplancontext.md)表示的用户体验的 URL。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -56,3 +56,5 @@ ms.locfileid: "42521690"
   "suppressions": []
 }
 -->
+
+

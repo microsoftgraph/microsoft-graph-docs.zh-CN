@@ -1,24 +1,24 @@
 ---
 title: 列出成员
-description: 获取组的直接成员列表。 组可将用户、组织联系人和其他组作为成员。
+description: 获取组的直接成员列表。 组可将用户、组织联系人、设备、服务主体和其他组作为成员。
 localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fa1852b52ec5f8e2651666076d2adb544544208c
-ms.sourcegitcommit: b88dce7297f196345f16c2c126d7bdd482d22a23
+ms.openlocfilehash: 6eebc7a1f9a33b1cebf5d935b4ff5af0a4b3a790
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44006340"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057631"
 ---
 # <a name="list-members"></a>列出成员
 
 命名空间：microsoft.graph
 
-获取组的直接成员列表。组可将用户、组织联系人和其他组作为成员。此操作不可传递。
+获取组的直接成员列表。 组可将用户、组织联系人、设备、服务主体和其他组作为成员。 当前，由于在 Graph V1.0 终结点上分阶段部署服务主体，因此未将服务主体列为组成员。 此操作不可传递。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -114,3 +114,4 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
+

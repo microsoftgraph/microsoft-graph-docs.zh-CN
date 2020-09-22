@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: daca733578e5415fc777bc01a8ef1272cfdcc681
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 39382b0fb17795bde26b4e54f629b2e4281f81db
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228878"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070441"
 ---
 # <a name="serviceinformation-resource-type"></a>serviceInformation 资源类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "43228878"
 
 | 属性     | 类型        | 说明                                                      |
 |:-------------|:------------|:-----------------------------------------------------------------|
-|name          | 字符串      | 云服务的名称（例如，Twitter、Instagram）。 |
-|WebUrl        | String      | 包含要引用的服务的 URL。               |
+|名称          | String      | 云服务的名称 (例如，Twitter、Instagram) 。 |
+|webUrl        | String      | 包含要引用的服务的 URL。               |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -56,3 +56,5 @@ ms.locfileid: "43228878"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

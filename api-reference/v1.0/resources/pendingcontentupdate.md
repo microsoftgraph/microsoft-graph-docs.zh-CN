@@ -5,18 +5,18 @@ localization_priority: Normal
 author: learafa
 ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: b1a197ae60dc8bb60533d567c6472a65988c3962
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: 150f94df57c653ad7a735c30dceff694d0023a2b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863801"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022909"
 ---
 # <a name="pendingcontentupdate-resource-type"></a>pendingContentUpdate 资源类型
 
 命名空间：microsoft.graph
 
-指示可能会影响**driveItem**的二进制内容的操作正在等待完成。
+指示可能会影响 **driveItem** 的二进制内容的操作正在等待完成。
 
 ## <a name="properties"></a>属性
 
@@ -52,3 +52,4 @@ ms.locfileid: "44863801"
   "section": "documentation",
   "tocPath": ""
 }-->
+

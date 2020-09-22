@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0cdd22bac4a962787035468b06628766e4173336
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 74f35304265c29ea8aee52f0f6c1ea79e0fcddf7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107498"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050368"
 ---
 # <a name="create-contact"></a>创建联系人
 
@@ -47,7 +47,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{contactFolderId}/contacts
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`201 Created`响应正文中返回响应代码和[contact](../resources/contact.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [contact](../resources/contact.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -206,3 +206,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

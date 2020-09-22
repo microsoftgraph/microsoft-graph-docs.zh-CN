@@ -5,12 +5,12 @@ author: clearab
 doc_type: resourcePageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: f633f6ea214374aa7171bdd6ada24f4fadb4b507
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2802689810c03a4ce9931cc0c4f478d1674cfc2d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519489"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057756"
 ---
 # <a name="userteamwork-resource-type"></a>userTeamwork 资源类型
 
@@ -61,3 +61,5 @@ ms.locfileid: "42519489"
   "suppressions": []
 }
 -->
+
+

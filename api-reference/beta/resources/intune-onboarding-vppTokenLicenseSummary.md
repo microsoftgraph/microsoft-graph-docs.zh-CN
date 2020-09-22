@@ -3,20 +3,20 @@ title: vppTokenLicenseSummary 资源类型
 description: 令牌中给定应用的许可证摘要。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f6eea44907cc71977cff6c53351ef5dd8155e817
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7b206d4ca825f818390421dbce23ea618917336a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446865"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029370"
 ---
 # <a name="vpptokenlicensesummary-resource-type"></a>vppTokenLicenseSummary 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -51,6 +51,9 @@ ms.locfileid: "43446865"
   "usedLicenseCount": 1024
 }
 ```
+
+
+
 
 
 

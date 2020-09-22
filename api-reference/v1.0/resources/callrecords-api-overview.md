@@ -5,12 +5,12 @@ author: stephenjust
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: f999a0ae686e0fd35e3ee31b0d59c92e56dde15c
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: d81cb0623afcf6c385645c8ebe0aba4eade192dd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491961"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077665"
 ---
 # <a name="working-with-the-call-records-api-in-microsoft-graph"></a>使用 Microsoft Graph 中的通话记录 API
 
@@ -23,8 +23,8 @@ ms.locfileid: "44491961"
 | Resource | Methods |
 | :-- | :-- |
 | [callRecord](callrecords-callrecord.md) | [获取 callRecord](../api/callrecords-callrecord-get.md) |
-| [Session](callrecords-session.md) | [获取 callRecord](../api/callrecords-callrecord-get.md)<br />[列出会话](../api/callrecords-session-list.md) |
-| [segment](callrecords-segment.md) | [获取 callRecord](../api/callrecords-callrecord-get.md)<br />[列出会话](../api/callrecords-session-list.md) |
+| [Session](callrecords-session.md) | [获取 callRecord](../api/callrecords-callrecord-get.md)<br />[列表会话](../api/callrecords-session-list.md) |
+| [segment](callrecords-segment.md) | [获取 callRecord](../api/callrecords-callrecord-get.md)<br />[列表会话](../api/callrecords-session-list.md) |
 
 ## <a name="call-record-structure"></a>呼叫记录结构
 
@@ -41,3 +41,4 @@ ms.locfileid: "44491961"
 ## <a name="see-also"></a>另请参阅
 
 - [Webhook 订阅](/graph/api/resources/webhooks?view=graph-rest-1.0)
+

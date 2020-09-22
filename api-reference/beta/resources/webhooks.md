@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: 90ce0049f2dbd35baf122ecaafe762303b3127ac
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1c664d25be4e7106ca7d2024de4b8fb4dc52cc54
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973513"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192175"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
@@ -35,7 +35,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 | SharePoint [网站][]下的[列表][] | `/sites/{id}/lists/{id}` | 否 |
 | 安全[警报][] | 对特定警报更改：<br>`/security/alerts/{id}` <br>对已筛选的警报更改：<br> `/security/alerts/?$filter`| 否 |
 | Teams [callRecord][] | 更改 _所有_ 呼叫记录： `/communications/callRecords` | 否 |
-| Teams [chatmessage](/graph/api/resources/subscription?view=graph-rest-beta) | 对所有团队中所有频道聊天消息更改：<br>`/teams/allMessages` <br>对特定频道中的聊天消息更改：<br>`/teams/{id}/channels/{id}/messages`<br>对所有聊天的消息更改：<br>`/chats/allMessages` <br>对特定聊天中的消息更改：<br>`/chats/{id}/messages` | 是 |
+| Teams [chatmessage][] | 对所有团队中所有频道聊天消息更改：<br>`/teams/getAllMessages` <br>对特定频道中的聊天消息更改：<br>`/teams/{id}/channels/{id}/messages`<br>对所有聊天的消息更改：<br>`/chats/getAllMessages` <br>对特定聊天中的消息更改：<br>`/chats/{id}/messages` | 是 |
 | 团队 [状态][] | 对单个用户的状态的更改： `/communications/presences/{id}` <br> 对多个用户状态的更改：<br> `/communications/presences?$filter=id in ({id},{id}...)` | 是 |
 
 > **注意**：以 `/users/{id}` 开头的任何资源路径还可接受 `/me` 以引用已登录的用户。
@@ -46,7 +46,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 
 | 权限类型                        | 支持的资源类型                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| 委派 - 工作或学校帐户     | [警报][]、 [联系人][]、 [对话][]、 [driveItem][]、 [列表][]、 [事件][]、 [组][]、 [邮件][]、 [用户][]和 [状态][]|
+| 委派 - 工作或学校帐户     | [警报][]、 [联系人][]、 [对话][]、 [driveItem][]、 [list][]、 [event][]、 [group][]、 [message][]、 [user][]、 [出席][]、 [了 chatmessage][] (preview)  |
 | 委派 - 个人 Microsoft 帐户 | [联系人][]、[driveItem][]、[列表][]、[事件][]、[邮件][]                                        |
 | 应用程序                            | [alert][]、 [contact][]、 [driveItem][]、 [list][]、 [event][]、 [group][]、 [message][]、 [user][]、 [callRecord][]、 [了 chatmessage][]|
 

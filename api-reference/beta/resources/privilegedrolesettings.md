@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: shauliu
-ms.openlocfilehash: f1e213ff99f7d67894e4f764ea8862f9d3a8ce98
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 7a082804309799c946f05f21d37d92b2eded7d13
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807498"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070504"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>privilegedRoleSettings 资源类型
 
@@ -87,3 +87,5 @@ ms.locfileid: "46807498"
   "suppressions": []
 }
 -->
+
+

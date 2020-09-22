@@ -3,20 +3,20 @@ title: sideLoadingKey 资源类型
 description: 对于租户，Windows 8 和8.1 设备需要 SideLoadingKey 实体为 intall 的业务线应用程序。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 118fc4ad76e7e8b848e70f8dd2592ab319928a60
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e0d44ceabb8834b71b41a50fe977c952bddeaa01
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43371400"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029363"
 ---
 # <a name="sideloadingkey-resource-type"></a>sideLoadingKey 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,21 +25,21 @@ ms.locfileid: "43371400"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 sideLoadingKeies](../api/intune-onboarding-sideloadingkey-list.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)集合|列出[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)对象的属性和关系。|
-|[获取 sideLoadingKey](../api/intune-onboarding-sideloadingkey-get.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|读取[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)对象的属性和关系。|
-|[创建 sideLoadingKey](../api/intune-onboarding-sideloadingkey-create.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|创建新的[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)对象。|
-|[删除 sideLoadingKey](../api/intune-onboarding-sideloadingkey-delete.md)|无|删除[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)。|
-|[更新 sideLoadingKey](../api/intune-onboarding-sideloadingkey-update.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|更新[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)对象的属性。|
+|[列出 sideLoadingKeies](../api/intune-onboarding-sideloadingkey-list.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) 集合|列出 [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) 对象的属性和关系。|
+|[获取 sideLoadingKey](../api/intune-onboarding-sideloadingkey-get.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|读取 [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) 对象的属性和关系。|
+|[创建 sideLoadingKey](../api/intune-onboarding-sideloadingkey-create.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|创建新的 [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) 对象。|
+|[删除 sideLoadingKey](../api/intune-onboarding-sideloadingkey-delete.md)|无|删除 [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)。|
+|[更新 sideLoadingKey](../api/intune-onboarding-sideloadingkey-update.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|更新 [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|侧加载密钥唯一 Id。|
+|id|String|侧加载密钥唯一 Id。|
 |value|String|侧加载密钥值，它是一个5x5 值，由 hiphens 分隔。|
-|displayName|字符串|向 It 专业管理员显示的侧加载密钥名称。|
+|displayName|String|向 It 专业管理员显示的侧加载密钥名称。|
 |description|String|向 It 专业管理员显示的侧加载密钥说明。|
 |totalActivation|Int32|向 It 专业管理员显示的端加载密钥总激活数。|
-|lastUpdatedDateTime|字符串|向 It 专业管理员显示的侧加载密钥上次更新日期。|
+|lastUpdatedDateTime|String|向 It 专业管理员显示的侧加载密钥上次更新日期。|
 
 ## <a name="relationships"></a>关系
 无
@@ -63,6 +63,9 @@ ms.locfileid: "43371400"
   "lastUpdatedDateTime": "String"
 }
 ```
+
+
+
 
 
 

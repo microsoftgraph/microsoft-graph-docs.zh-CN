@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c546d6784cad9a541778eec335bfd711b513b72b
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c9f657b247084c83f884bc023f3a4c9e34996e59
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812935"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050416"
 ---
 # <a name="get-personresponsibility"></a>获取 personResponsibility
 命名空间：microsoft.graph
@@ -124,3 +124,5 @@ Content-Type: application/json
   ]
 }
 ```
+
+

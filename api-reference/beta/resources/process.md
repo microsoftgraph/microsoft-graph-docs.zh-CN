@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: bbcda3501faa22b1d1b31b67300caf71cff548a4
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: a024cfbabcff4357427ae6a814da00af83eae304
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811447"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070490"
 ---
 # <a name="process-resource-type"></a>进程资源类型
 
@@ -29,8 +29,8 @@ ms.locfileid: "46811447"
 |createdDateTime|DateTimeOffset|启动进程的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |fileHash|[fileHash](filehash.md)|包含 (加密和位置敏感) 的文件哈希的复杂类型。|
 |integrityLevel|processIntegrityLevel|进程的完整性级别。 可取值为：`unknown`、`untrusted`、`low`、`medium`、`high`、`system`。|
-|isElevated|布尔值|如果进程已提升，则为 True。|
-|name|String|进程的图像文件的名称。|
+|isElevated|Boolean|如果进程已提升，则为 True。|
+|名称|String|进程的图像文件的名称。|
 |parentProcessCreatedDateTime|DateTimeOffset|父进程已启动的日期时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |parentProcessId|Int32|父进程 (PID) 的进程 ID。|
 |parentProcessName|String|父进程的图像文件的名称。|
@@ -79,3 +79,5 @@ ms.locfileid: "46811447"
   "suppressions": []
 }
 -->
+
+

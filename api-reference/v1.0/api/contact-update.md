@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 21f6571295ca229178a050f601e19f044e10815e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 15242ab1be72d7b85b1974d9fd200a59dd4db7f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462188"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057666"
 ---
 # <a name="update-contact"></a>更新联系人
 
@@ -86,7 +86,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |surname|String|联系人的姓氏。|
 |title|String|联系人的职位。|
 |yomiCompanyName|String|联系人的注音日文公司名称。此属性是可选的。|
-|yomiGivenName|字符串|联系人的注音日文名字。此属性是可选的。|
+|yomiGivenName|String|联系人的注音日文名字。此属性是可选的。|
 |yomiSurname|String|联系人的注音日文姓氏。此属性是可选的。|
 
 ## <a name="response"></a>响应
@@ -219,3 +219,4 @@ Content-length: 1977
   "suppressions": [
   ]
 }-->
+

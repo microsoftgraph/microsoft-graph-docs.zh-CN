@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: davidmu1
-ms.openlocfilehash: 18216eb54ed8efe2f6320216459807a6167a7107
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b0dd473d4358da38a09b55c7bc3ad052d2b6ce8e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809097"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057750"
 ---
 # <a name="verifieddomain-resource-type"></a>verifiedDomain 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "46809097"
 |capabilities|String|例如，“Email”、“OfficeCommunicationsOnline”。|
 |isDefault|Boolean|                如果这是与租户关联的默认域，则为 **true**；否则为 **false**。            |
 |isInitial|Boolean|如果这是与租户关联的初始域，则为 **true**；否则为 **false**|
-|name|String|域名；例如，“contoso.onmicrosoft.com”|
+|名称|String|域名；例如，“contoso.onmicrosoft.com”|
 |type|String|例如，“Managed”。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -65,3 +65,5 @@ ms.locfileid: "46809097"
   "suppressions": []
 }
 -->
+
+

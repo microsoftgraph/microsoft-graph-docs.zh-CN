@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 7c98b26d6c6b3458bddc8c5bf5f567f1002d082a
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 02da3f408506560ba91f8139bb7bf64d0ca749dd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219198"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070532"
 ---
 # <a name="privilegedoperationevent-resource-type"></a>privilegedOperationEvent 资源类型
 
@@ -21,11 +21,11 @@ ms.locfileid: "43219198"
 表示由角色操作的特权标识管理生成的审核事件，例如管理员管理特权角色、用户激活他的角色，以及用户停用他的角色。
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列表 privilegedOperationEvent](../api/privilegedoperationevent-list.md) | [privilegedOperationEvent](privilegedoperationevent.md)集合。 |获取 privilegedOperationEvent 对象的集合。|
+|[列表 privilegedOperationEvent](../api/privilegedoperationevent-list.md) | [privilegedOperationEvent](privilegedoperationevent.md) 集合。 |获取 privilegedOperationEvent 对象的集合。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -36,12 +36,12 @@ ms.locfileid: "43219198"
 |id|string|PrivilegedOperationEvent 的唯一标识符。 只读。|
 |referenceKey|string|角色激活期间的事件/请求票证编号。 仅当在角色激活期间提供了票证号时，才会显示该值。|
 |referenceSystem|string|在 tole 激活过程中提供的事件/请求票证发放系统。 仅当在角色激活过程中提供了票证系统时，才会显示该值。|
-|requestType|string|请求操作类型。 ```Assign``` RequestType 值可以是：（角色分配）、 ```Activate``` （角色激活）、 ```Unassign``` （删除角色分配```Deactivate``` ）、（角色停用）、 ```ScanAlersNow``` （扫描安全警报）、 ```DismissAlert``` （消除安全警报） ```FixAlertItem``` 、（修复安全警报问题） ```AccessReview_Review``` 、（"查看访问```AccessReview_Create```审核"）、"（创建访问```AccessReview_Update```审核）"、"（删除访问审核）" ```AccessReview_Delete```和 "（删除访问审核）"。|
+|requestType|string|请求操作类型。 RequestType 值可以是： ```Assign``` (角色分配) 、 ```Activate``` (角色激活) 、 ```Unassign``` (删除角色分配) 、 ```Deactivate``` (角色停用) 、 ```ScanAlersNow``` (扫描安全警报) 、 ```DismissAlert``` (消除安全警报) 、 (修复安全警报问题) 、 (查看 Access 评审) 、 (创建访问审核) 、 () 更新访问评审 (， ```FixAlertItem``` ```AccessReview_Review``` ```AccessReview_Create``` ```AccessReview_Update``` 以及 ```AccessReview_Delete```) 删除访问评审。|
 |requestorId|string|启动操作的请求者的用户 id。|
 |requestorName|string|启动操作的请求者的用户名。|
 |roleId|string|与操作关联的角色的 id。|
 |拥有|string|角色的名称。|
-|tenantId|string|租户（组织） id。|
+|tenantId|string|租户 (组织) id。|
 |userId|string|与操作关联的用户的 id。|
 |userMail|string|用户的电子邮件。|
 |userName|string|用户的显示名称。|
@@ -95,3 +95,5 @@ ms.locfileid: "43219198"
   "suppressions": []
 }
 -->
+
+

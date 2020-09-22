@@ -5,12 +5,12 @@ localization_priority: Priority
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 81eca376937954a6d2411795a8b030ddbc89825a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 75e4d9a0829714b469fec07a4e4f093043c5c6af
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471881"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070385"
 ---
 # <a name="get-attachment"></a>获取附件
 
@@ -691,3 +691,4 @@ QkVHSU46VkNBTEVOREFSDQpNRVRIT0Q6UkVRVUVTVA0KUFJPRElEOk1pY3Jvc29mdCBFeGNoYW5n
   ],
   "tocPath": ""
 }-->
+

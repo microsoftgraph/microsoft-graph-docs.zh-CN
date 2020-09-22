@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5681e4da8edf45e9b33eb5ee7e5b203763f7f0f1
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: bece069cb08e3eb909d2a10c0799729e08b3d673
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917224"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023028"
 ---
 # <a name="delete-tokenlifetimepolicy"></a>删除 tokenLifetimePolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "43917224"
 
 
 
-删除[tokenLifetimePolicy](../resources/tokenlifetimepolicy.md)对象。
+删除 [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -109,3 +109,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

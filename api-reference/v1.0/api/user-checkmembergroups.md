@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 48272b5e2d855ffe19ab6492b6bc46027f25585b
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: fb59d98d78856cf45686a51fe0e7974c6babd6be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43109066"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022977"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -18,7 +18,7 @@ ms.locfileid: "43109066"
 
 检查指定组列表中的成员身份。从列表中返回用户具有直接或可传递成员身份的组。
 
-每个请求最多可检查 20 个组。此功能支持 Office 365 和 Azure AD 中设置的其他类型的组。注意：Office 365 组无法包含组。因此，Office 365 组中的成员身份始终是直接的。
+每个请求最多可检查 20 个组。此功能支持 Microsoft 365 和 Azure AD 中设置的其他类型的组。注意：Microsoft 365 组无法包含组。因此，Microsoft 365 组中的成员身份始终是直接的。
 
 ## <a name="permissions"></a>权限
 
@@ -137,3 +137,4 @@ Content-length: 39
   "suppressions": [
   ]
 }-->
+

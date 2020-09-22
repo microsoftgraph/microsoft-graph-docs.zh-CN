@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e654c3c8878db10f160a4c4909fe2a8ca8b5d184
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: b6f3b9bdf72a7bf7224693e694ba58868c0ed3ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42591500"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090884"
 ---
 # <a name="threatassessmentresult-resource-type"></a>threatAssessmentResult 资源类型
 
@@ -20,8 +20,8 @@ ms.locfileid: "42591500"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|id|字符串|威胁评估结果 ID 是一个全局唯一标识符（GUID）。|
+|createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|id|String|威胁评估结果 ID 是 GUID)  (全局唯一标识符。|
 |message|String|每个威胁评估的结果消息。|
 |resultType|[threatAssessmentResultType](enums.md#threatassessmentresulttype-values)|威胁评估结果类型。 可取值为：`checkPolicy`、`rescan`。|
 
@@ -57,3 +57,4 @@ ms.locfileid: "42591500"
   "section": "documentation",
   "tocPath": ""
 }-->
+

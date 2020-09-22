@@ -1,22 +1,22 @@
 ---
 title: 日历资源类型
-description: 日历即事件容器。 它可以是用户的日历，也可以是 Microsoft 365 组的默认日历。
+description: 日历即事件容器。 它可以是用户的日历，或者是 Microsoft 365 组的默认日历。
 localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 47a63319efea2bdcdf11728bbac7d17903c6590a
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: 63d00ecaba24469b9704fe6e6cc14e4792fef614
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895704"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077658"
 ---
 # <a name="calendar-resource-type"></a>日历资源类型
 
 命名空间：microsoft.graph
 
-日历即事件容器。 它可以是[用户](user.md)的日历，也可以是 Microsoft 365[组](group.md)的默认日历。
+日历即事件容器。 它可以是 [用户](user.md)的日历，或者 Microsoft 365 [组](group.md)的默认日历。
 
 > **注意：** 与用户日历和组日历交互的方式稍有不同：
 
@@ -30,9 +30,9 @@ ms.locfileid: "44895704"
 |:---------------|:--------|:----------|
 |[列出日历](../api/user-list-calendars.md)|[日历](calendar.md) 集合|获取所有用户的日历，或者获取默认或其他特定日历组中的日历。|
 |[创建日历](../api/user-post-calendars.md) |[calendar](calendar.md)| 在默认日历组或用户的指定日历组中新建日历。|
-|[Get calendar](../api/calendar-get.md) | [calendar](calendar.md) |获取 **calendar** 对象的属性和关系。 日历可以是用户的一个，也可以是 Microsoft 365 组的默认日历。 |
-|[Update](../api/calendar-update.md) | [calendar](calendar.md)  |更新 **calendar** 对象的属性。 日历可以是用户的一个，也可以是 Microsoft 365 组的默认日历。 |
-|[Delete](../api/calendar-delete.md) | 无 |删除 calendar 对象。 |
+|[Get calendar](../api/calendar-get.md) | [calendar](calendar.md) |获取 **calendar** 对象的属性和关系。 可以是用户的日历，也可以是 Microsoft 365 组的默认日历。 |
+|[更新](../api/calendar-update.md) | [calendar](calendar.md)  |更新 **calendar** 对象的属性。 可以是用户的日历，也可以是 Microsoft 365 组的默认日历。 |
+|[删除](../api/calendar-delete.md) | 无 |删除 calendar 对象。 |
 |[列出 calendarView](../api/calendar-list-calendarview.md) |[事件](event.md) 集合| 从用户的主日历 `(../me/calendarview)` 或指定日历中，获取由时间范围定义的日历视图中的事件发生次数、异常和单个实例。|
 |[列出事件](../api/calendar-list-events.md) |[事件](event.md) 集合| 检索日历中的事件列表。该列表包含单实例会议和系列主控事件。|
 |[创建事件](../api/calendar-post-events.md) |[event](event.md)| 在默认或指定日历中创建新事件。|
@@ -134,3 +134,4 @@ ms.locfileid: "44895704"
   "section": "documentation",
   "tocPath": ""
 }-->
+

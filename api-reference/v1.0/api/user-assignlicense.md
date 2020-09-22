@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 389b89066da3cae3fef2d574800083f67e011263
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 10850f61675d88bbbe59a84a8f2c3072be345cc5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106980"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022979"
 ---
 # <a name="user-assignlicense"></a>用户：assignLicense
 
@@ -139,3 +139,4 @@ Content-length: 491
   "suppressions": [
   ]
 }-->
+
