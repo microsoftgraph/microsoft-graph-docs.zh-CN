@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b564884e57cd5ce1e4350034b0b98380eb8f8b7c
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 9d0f7578886714bc0ec2a5a0dca19f73f2cdffe7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44154127"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013886"
 ---
 # <a name="swapshiftschangerequest-approve"></a>swapShiftsChangeRequest：批准
 
@@ -18,9 +18,9 @@ ms.locfileid: "44154127"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-批准[swapShiftsChangeRequest](../resources/swapshiftschangerequest.md)对象。
+批准 [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "44154127"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -116,3 +116,5 @@ HTTP/1.1 204 NO CONTENT
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

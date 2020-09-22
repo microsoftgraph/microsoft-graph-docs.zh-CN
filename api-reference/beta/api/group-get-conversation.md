@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d1fb9d41d3d987e1e83db1a8f7c910449092b53d
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: 7288459dd09b89a00447084172926e1fe609dafb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44743897"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012717"
 ---
 # <a name="get-conversation"></a>获取对话
 
@@ -115,3 +115,5 @@ Content-length: 644
   ]
 }
 -->
+
+

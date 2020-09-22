@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d975d6a43dda704cec7e89822917dbc495b09fd7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b22d8d76b9ece640cc873024c28dd1c0380ea9cc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509553"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012906"
 ---
 # <a name="update-tablecolumn"></a>更新 tablecolumn
 
@@ -47,7 +47,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookTableColumn](../resources/workbooktablecolumn.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [WorkbookTableColumn](../resources/workbooktablecolumn.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -86,7 +86,7 @@ Content-length: 81
 
 ---
 > [!NOTE]
-> 如果要更新某一列的多个字段，请将**值**设置为请求中的字符串数组。 例如：`"values": [["a"], [1], [2], [3]]`。
+> 如果要更新某一列的多个字段，请将 **值** 设置为请求中的字符串数组。 例如：`"values": [["a"], [1], [2], [3]]`。
 
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -119,3 +119,4 @@ Content-length: 81
   "suppressions": [
   ]
 }-->
+

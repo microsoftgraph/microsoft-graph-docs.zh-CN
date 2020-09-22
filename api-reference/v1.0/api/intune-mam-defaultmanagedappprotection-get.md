@@ -3,14 +3,14 @@ title: 获取 defaultManagedAppProtection
 description: 读取 defaultManagedAppProtection 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b012b5c98289709b4940ebb77313f2b127bedf5f
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 9d5c491817c7fa6a7fccfcb17476ab02c358c349
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177273"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013137"
 ---
 # <a name="get-defaultmanagedappprotection"></a>获取 defaultManagedAppProtection
 
@@ -27,7 +27,7 @@ ms.locfileid: "44177273"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -125,6 +125,9 @@ Content-Length: 2304
   }
 }
 ```
+
+
+
 
 
 

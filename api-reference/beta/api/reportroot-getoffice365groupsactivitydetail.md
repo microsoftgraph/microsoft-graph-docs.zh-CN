@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 50e918ab834818a5ae2e5106aec49babedba2c10
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 03afbdd793a7149617c9a15fc7a33f73b1958229
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896299"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014253"
 ---
 # <a name="reportroot-getoffice365groupsactivitydetail"></a>reportRoot: getOffice365GroupsActivityDetail
 
@@ -20,7 +20,7 @@ ms.locfileid: "44896299"
 
 按组获取有关 Microsoft 365 组活动的详细信息。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅[microsoft 365 报表-microsoft 365 组](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)。
+> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [microsoft 365 报表-microsoft 365 组](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)。
 
 ## <a name="permissions"></a>权限
 
@@ -32,7 +32,7 @@ ms.locfileid: "44896299"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
-**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 For api 以读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
+**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -100,9 +100,9 @@ CSV 文件包含下面的列标题。
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和**[office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** 对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **[office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** 对象。
 
-由世纪互联运营的 Microsoft Graph 中国不支持**[office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** 对象中的以下属性：
+由世纪互联运营的 Microsoft Graph 中国不支持 **[office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** 对象中的以下属性：
 
 - yammerPostedMessageCount
 - yammerReadMessageCount
@@ -232,3 +232,5 @@ Content-Length: 674
   "suppressions": [
   ]
 }-->
+
+

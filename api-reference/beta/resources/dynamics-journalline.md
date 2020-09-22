@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 8285a64b931ab18dac51cc20224877bbac74be90
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 99d06b5a49bd2881ea6f329e8b0d3692a25444b4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42503654"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013795"
 ---
 # <a name="journallines-resource-type"></a>journalLines 资源类型
 
@@ -43,7 +43,7 @@ ms.locfileid: "42503654"
 |documentNumber        |字符串，最大大小为20 |指定日记行的文档编号。                  |
 |externalDocumentNumber|字符串，最大大小为20 |指定日记行的外部文档编号。        |
 |量                |数位                 |指定日志行所包含的增值税)  (总金额。|
-|说明           |字符串，最大大小为50 |日记行的说明，由用户或 autocreated 提供。|
+|description           |字符串，最大大小为50 |日记行的说明，由用户或 autocreated 提供。|
 |comment               |字符串，最大大小为250|用户在日志行上指定的注释。                      |
 |lastModifiedDateTime  |datetime                |修改日记行的最后一个日期/时间。 只读。        |
 
@@ -76,3 +76,5 @@ ms.locfileid: "42503654"
     "lastModifiedDateTime": "datetime"
 }
 ```
+
+

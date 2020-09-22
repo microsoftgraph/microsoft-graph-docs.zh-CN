@@ -3,14 +3,14 @@ title: 删除 defaultManagedAppProtection
 description: 删除 defaultManagedAppProtection。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cbadfbd7467bdc034279b9dbfdf70bfc42aa7dc2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5bd521e227cb4821a2fceb9b7d781644194299f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43418646"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013151"
 ---
 # <a name="delete-defaultmanagedappprotection"></a>删除 defaultManagedAppProtection
 
@@ -63,6 +63,9 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/defaultManagedAppPro
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

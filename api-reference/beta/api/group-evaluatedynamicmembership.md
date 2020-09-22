@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 41143a6b06352e0d28980d50058aeafc8da86a54
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: d23e08d2e412f77e94c802fcc03778eb89ab7158
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333021"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012752"
 ---
 # <a name="group-evaluatedynamicmembership"></a>组： evaluateDynamicMembership
 
@@ -23,7 +23,7 @@ ms.locfileid: "44333021"
 - 评估用户或设备是否为指定的动态组的成员。  
 - 根据用户或设备的 ID 和成员身份规则评估用户或设备是否为动态组的成员。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -65,14 +65,14 @@ POST /groups/evaluateDynamicMembership
 
 下表列出了评估组成员资格时所需的属性。
 
-| 参数 | 类型 | Description |
+| 参数 | 类型 | 说明 |
 | :-------- | :--- | :---------- |
 | memberId | String collection | memberId 是要评估的用户或设备的对象 Id。 |
-| membershipRule | String collection | 用于成员资格评估的规则。 如果未提供此属性，则对现有组的规则进行评估。 如果提供了此属性，则将针对具有相同规则的组中的可能成员资格评估用户或设备。 有关详细信息，请参阅[Azure Active Directory 中的组的动态成员身份规则](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership)。|
+| membershipRule | String collection | 用于成员资格评估的规则。 如果未提供此属性，则对现有组的规则进行评估。 如果提供了此属性，则将针对具有相同规则的组中的可能成员资格评估用户或设备。 有关详细信息，请参阅 [Azure Active Directory 中的组的动态成员身份规则](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership)。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回 `200 OK` 响应代码和[evaluateDynamicMembershipResult](../resources/evaluatedynamicmembershipresult.md)对象。
+如果成功，此方法将返回 `200 OK` 响应代码和 [evaluateDynamicMembershipResult](../resources/evaluatedynamicmembershipresult.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -114,7 +114,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。 
+下面介绍响应示例。 
 
 <!-- {
   "blockType": "response",
@@ -222,3 +222,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

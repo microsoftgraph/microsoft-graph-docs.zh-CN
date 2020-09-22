@@ -3,14 +3,14 @@ title: 列出 defaultManagedAppProtections
 description: 列出 defaultManagedAppProtection 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e746a25a15858d76a872976b9b3259546a054c3c
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: a7942ebf8c44d3a6bb2d80535d4ca3b08d306139
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177343"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013095"
 ---
 # <a name="list-defaultmanagedappprotections"></a>列出 defaultManagedAppProtections
 
@@ -27,7 +27,7 @@ ms.locfileid: "44177343"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -124,6 +124,9 @@ Content-Length: 2422
   ]
 }
 ```
+
+
+
 
 
 

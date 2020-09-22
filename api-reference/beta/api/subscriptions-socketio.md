@@ -6,12 +6,12 @@ description: 不支持在生产应用程序中使用这些 API。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 067fc455a0a122761c45ac1078712ea04b68845c
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: c7502cf8cc72d5aabc4ab2fbe3c190bd388b724a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43109186"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013935"
 ---
 # <a name="get-websocket-endpoint"></a>获取 websocket 终结点
 
@@ -21,7 +21,7 @@ ms.locfileid: "43109186"
 不支持在生产应用程序中使用这些 API。
 
 允许您使用[socket.io][]接收[驱动器][]和[列表][]的近实时更改通知。
-Socket.io 是适用于 JavaScript 的热门通知库，可利用 Websocket。 若要了解详细信息，请参阅[socket.io](https://socket.io)。
+Socket.io 是适用于 JavaScript 的热门通知库，可利用 Websocket。 若要了解详细信息，请参阅 [socket.io](https://socket.io)。
 
 [drive]: ../resources/drive.md
 [list]: ../resources/list.md
@@ -76,7 +76,7 @@ GET /me/drive/root/subscriptions/socketIo
 
 ### <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[订阅](../resources/subscription.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [订阅](../resources/subscription.md) 对象。
 
 <!-- {
   "blockType": "response",
@@ -94,10 +94,10 @@ Content-type: application/json
 ```
 
 `notificationUrl`返回的是 socket.io 终结点 URL。
-若要将它与 socket.io 客户端一起使用，请拆分`/callback?`令牌上的字符串。
-之前`/callback?`的字符串部分是 socket.io 终结点 URL，后面的字符串部分是必须向库提供的不透明查询字符串。
+若要将它与 socket.io 客户端一起使用，请拆分令牌上的字符串 `/callback?` 。
+之前的字符串部分 `/callback?` 是 socket.io 终结点 URL，后面的字符串部分是必须向库提供的不透明查询字符串。
 
-下面的示例演示如何在 JavaScript 中`notificationUrl`将 with socket.io。
+下面的示例演示如何 `notificationUrl` 在 JavaScript 中将 with socket.io。
 
 ```javascript
 // this is the notificationUrl returned from this API
@@ -126,3 +126,5 @@ socket.on("notification", (data)=>console.log("Notification!", data));
   "suppressions": [
   ]
 }-->
+
+

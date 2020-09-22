@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 73e976ab377ac74d0503e5b94891a6dc616e38fa
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: f45f56e2247cd264c982325c137537876ed704d7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539057"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012626"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 
@@ -117,3 +117,5 @@ Content-length: 39
   ]
 }
 -->
+
+

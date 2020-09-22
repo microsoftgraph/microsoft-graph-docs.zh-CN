@@ -3,14 +3,14 @@ title: 创建 macOsVppApp
 description: 创建新的 macOsVppApp 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ad8ad8f468cb811c4422d1cf8e80f247c9b8d01
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 6258c478acf1a8c8f35a65969b6fd0f296670d34
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792000"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012017"
 ---
 # <a name="create-macosvppapp"></a>创建 macOsVppApp
 
@@ -69,8 +69,10 @@ POST /deviceAppManagement/mobileApps
 |uploadState|Int32|上载状态。 可能的值包括： 0- `Not Ready` 、1- `Ready` 、2- `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|字符串集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersedingAppCount|Int32|此应用程序直接或间接取代的应用程序总数量。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersededAppCount|Int32|此应用程序直接或间接取代的应用程序总数量。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |usedLicenseCount|Int32|使用中的 VPP 许可证数量。|
 |totalLicenseCount|Int32|VPP 许可证的总数。|
 |releaseDateTime|DateTimeOffset|VPP 应用程序的发布日期和时间。|
@@ -95,7 +97,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1869
+Content-length: 1926
 
 {
   "@odata.type": "#microsoft.graph.macOsVppApp",
@@ -120,6 +122,8 @@ Content-length: 1869
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
   "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
@@ -158,7 +162,7 @@ Content-length: 1869
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2041
+Content-Length: 2098
 
 {
   "@odata.type": "#microsoft.graph.macOsVppApp",
@@ -186,6 +190,8 @@ Content-Length: 2041
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
   "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
@@ -218,6 +224,9 @@ Content-Length: 2041
   ]
 }
 ```
+
+
+
 
 
 

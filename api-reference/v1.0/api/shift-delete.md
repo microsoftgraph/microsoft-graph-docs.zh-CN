@@ -5,20 +5,20 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 578099ba41ee5bac94c64ab53a0fc3d3acdce2dd
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: e68d6727c61c36a8e7a8471f36713c1768106f1e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44216712"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013004"
 ---
 # <a name="delete-shift"></a>删除班次
 
 命名空间：microsoft.graph
 
-从计划中删除[班次轮换](../resources/shift.md)。
+从计划中删除 [班次轮换](../resources/shift.md) 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "44216712"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Schedule。 All，Group. 所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Schedule. All、Schedule、All |
+|应用程序 | Schedule. All、Schedule、All |
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -114,3 +114,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

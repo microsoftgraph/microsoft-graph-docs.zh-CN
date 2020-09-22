@@ -7,12 +7,12 @@ localization_priority: Normal
 description: 通过使用 shareId 或共享 URL 访问共享 DriveItem 或共享项目集合。
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: ea837294b81a492111b8730c08bd682dcfc26db2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f8ca26b4e226212186f3e2716b5d4ff4c250b44f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509827"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013032"
 ---
 # <a name="accessing-shared-driveitems"></a>访问共享 DriveItem
 
@@ -66,16 +66,16 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 
 | 名称       | 类型   | 说明                                                    |
 |:-----------|:-------|:---------------------------------------------------------------|
-| **Prefer** | string | 可选。 将设置为以下记录`prefer`的值之一。  |
+| **Prefer** | string | 可选。 将设置为 `prefer` 以下记录的值之一。  |
 
 ### <a name="prefer-header-values"></a>首选标头值
 
 | 名称                          | 说明                                                                                             |
 |:------------------------------|:--------------------------------------------------------------------------------------------------------|
-| redeemSharingLink             | 如果**shareIdOrEncodedSharingUrl**是共享链接，则向呼叫者授予对项目的持久访问权限    |
+| redeemSharingLink             | 如果 **shareIdOrEncodedSharingUrl** 是共享链接，则向呼叫者授予对项目的持久访问权限    |
 | redeemSharingLinkIfNecessary  | 与 redeemSharingLink 相同，但仅保证在此请求的持续时间内授予访问权限 |
 
-应将 redeemSharingLink 视为与调用者导航到共享链接的调用者导航到浏览器（接受共享手势），而 redeemSharingLinkIfNecessary 的目的是专门用于查看链接的metadata.
+redeemSharingLink 应被视为等效的呼叫者导航到共享链接。浏览器 (接受共享手势) ，而 redeemSharingLinkIfNecessary 用于只是查看链接的元数据的方案。
 
 ## <a name="response"></a>响应
 
@@ -270,3 +270,4 @@ Content-Type: application/json
   "suppressions": [
   ]
 } -->
+

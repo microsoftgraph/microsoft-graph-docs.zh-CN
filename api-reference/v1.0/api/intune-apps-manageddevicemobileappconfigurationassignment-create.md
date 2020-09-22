@@ -3,14 +3,14 @@ title: 创建 managedDeviceMobileAppConfigurationAssignment
 description: 创建新的 managedDeviceMobileAppConfigurationAssignment 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d9401288d790de92432bf8452e58ec31a655c889
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 851c64cd859922a534bc915d1dfa6ccd413a4976
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446305"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013312"
 ---
 # <a name="create-manageddevicemobileappconfigurationassignment"></a>创建 managedDeviceMobileAppConfigurationAssignment
 
@@ -91,6 +91,9 @@ Content-Length: 234
   }
 }
 ```
+
+
+
 
 
 

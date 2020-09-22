@@ -6,16 +6,16 @@ title: 标识
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: ebfc032008bf478c3c66883aceb802992704f46d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5b3f831a51097664c7afc5905aa2960f1fefaec5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496801"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013562"
 ---
 # <a name="identity-resource-type"></a>标识资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "42496801"
 |:--------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | displayName         | String | 此身份的显示名称。请注意，此信息不一定可查看或是最新的。例如，如果用户更改了其显示名称，API 可能会在以后的响应中显示新值，但与用户相关联的项在使用 [delta](../api/driveitem-delta.md) 时不会显示更改后的值。  |
 | id                  | String | 身份的唯一标识符。                                                                                                                                                                                                                                                                                   |
-| tenantId            | String | 租户的唯一标识（可选）。                                                                                                                                                                                                                                                                             |
+| tenantId            | String | 租户 (可选) 的唯一标识。                                                                                                                                                                                                                                                                             |
 
 ## <a name="remarks"></a>注解
 
@@ -58,3 +58,5 @@ ms.locfileid: "42496801"
   "suppressions": []
 }
 -->
+
+

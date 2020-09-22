@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: cloudhandler
-ms.openlocfilehash: 456b038b9aaa71280ee00df336d3e12b6cd4c133
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: c1302d72a6ec8d55d694219a8fc9f27dc004ce85
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312003"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013879"
 ---
 # <a name="get-suspiciousipriskevent-deprecated"></a>获取 suspiciousIpRiskEvent (弃用) 
 
@@ -98,3 +98,5 @@ Content-length: 237
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5872aad33f5a553714db996ebfa2207eabc144be
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a9b0eedadf4ff3b509444f01896c6f74c30f0815
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509497"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012829"
 ---
 # <a name="tablerowcollection-add"></a>TableRowCollection: add
 
@@ -54,7 +54,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`200 OK`响应正文中返回响应代码和[WorkbookTableRow](../resources/tablerow.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [WorkbookTableRow](../resources/tablerow.md) 对象。
 
 ## <a name="example"></a>示例
 在此示例中，将两行数据插入到表的末尾。 
@@ -124,3 +124,4 @@ Content-length: 45
   ],
   "tocPath": ""
 }-->
+

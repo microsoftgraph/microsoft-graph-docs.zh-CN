@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0b435961e6d54b0b43e587ba50a9769ce9e36940
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 36f1fc28721710be5250309dcee357be34768b7b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509490"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012780"
 ---
 # <a name="tablerowcollection-itemat"></a>TableRowCollection: ItemAt
 
@@ -49,7 +49,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/itemAt
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`200 OK`响应正文中返回响应代码和[WorkbookTableRow](../resources/tablerow.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [WorkbookTableRow](../resources/tablerow.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -113,3 +113,4 @@ Content-length: 45
   "suppressions": [
   ]
 }-->
+

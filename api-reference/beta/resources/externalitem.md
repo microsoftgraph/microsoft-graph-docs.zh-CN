@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 3b82f67f12d263e56e3375ed87a9d6dff71c2204
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: d775cfefa7a0cd1fdb87a291ba7ac61bb4b40782
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44989821"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013704"
 ---
 # <a name="externalitem-resource-type"></a>externalItem 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "44989821"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过 Microsoft Search[连接](externalconnection.md)编制索引的项目。
+通过 Microsoft Search [连接](externalconnection.md)编制索引的项目。
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -35,10 +35,10 @@ ms.locfileid: "44989821"
 
 | 属性   | 类型                     | 说明                          |
 |:-----------|:-------------------------|:-------------------------------------|
-| acl        | [acl](acl.md)集合 | 一组访问控制项。 每个条目指定向用户或组授予的访问权限。 必需。 |
+| acl        | [acl](acl.md) 集合 | 一组访问控制项。 每个条目指定向用户或组授予的访问权限。 必需。 |
 | content    | [externalItemContent](externalitemcontent.md) | 项目内容的纯文本或 HTML 表示形式。 此属性中的文本为全文检索的文本。 可选。 |
-| id         | String                   | 开发人员提供的包含[externalConnection](externalconnection.md)中的项的唯一 ID。 必须为字母数字，最多为128个字符。 必需。 |
-| properties | 对象                   | 包含项属性的属性包。 属性必须符合为[externalConnection](externalconnection.md)定义的[架构](schema.md)。 必需。 |
+| id         | String                   | 开发人员提供的包含 [externalConnection](externalconnection.md)中的项的唯一 ID。 必须为字母数字，最多为128个字符。 必需。 |
+| properties | Object                   | 包含项属性的属性包。 属性必须符合为[externalConnection](externalconnection.md)定义的[架构](schema.md)。 必需。 |
 
 ## <a name="relationships"></a>关系
 
@@ -79,3 +79,5 @@ ms.locfileid: "44989821"
     "Error: microsoft.graph.externalItem/properties:\r\n      Referenced type microsoft.graph.object is not defined in the doc set! Potential suggestion: microsoft.graph.directoryObject"
   ]
 }-->
+
+

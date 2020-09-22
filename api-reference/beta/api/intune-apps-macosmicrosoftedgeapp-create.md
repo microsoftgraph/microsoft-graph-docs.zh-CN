@@ -3,14 +3,14 @@ title: 创建 macOSMicrosoftEdgeApp
 description: 创建新的 macOSMicrosoftEdgeApp 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2532964c8c2d938f6a6e5690745c16b0ac855ff4
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 1809c3897d0c3a1dea8017df33e7516a6113154c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792056"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012094"
 ---
 # <a name="create-macosmicrosoftedgeapp"></a>创建 macOSMicrosoftEdgeApp
 
@@ -69,9 +69,11 @@ POST /deviceAppManagement/mobileApps
 |uploadState|Int32|上载状态。 可能的值包括： 0- `Not Ready` 、1- `Ready` 、2- `Processing` 。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|字符串集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
-|频道|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|要在目标设备上安装的通道。 可取值为：`dev`、`beta`、`stable`。|
+|supersedingAppCount|Int32|此应用程序直接或间接取代的应用程序总数量。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersededAppCount|Int32|此应用程序直接或间接取代的应用程序总数量。 继承自 [mobileApp](../resources/intune-shared-mobileapp.md)|
+|信道|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|要在目标设备上安装的通道。 可取值为：`dev`、`beta`、`stable`。|
 
 
 
@@ -85,7 +87,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 742
+Content-length: 799
 
 {
   "@odata.type": "#microsoft.graph.macOSMicrosoftEdgeApp",
@@ -110,6 +112,8 @@ Content-length: 742
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "channel": "beta"
 }
 ```
@@ -119,7 +123,7 @@ Content-length: 742
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 914
+Content-Length: 971
 
 {
   "@odata.type": "#microsoft.graph.macOSMicrosoftEdgeApp",
@@ -147,9 +151,14 @@ Content-Length: 914
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "channel": "beta"
 }
 ```
+
+
+
 
 
 

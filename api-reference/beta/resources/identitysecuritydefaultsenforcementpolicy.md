@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rohinigoyal1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 70dc63b9cba3db7c435b357f880084d314d0c884
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 0c576a7b7d309f49c14af56b12d7dc8dcdb1f75a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384393"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013550"
 ---
 # <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a>identitySecurityDefaultsEnforcementPolicy 资源类型
 
@@ -18,16 +18,16 @@ ms.locfileid: "45384393"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 Azure Active Directory[安全性默认](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)策略。 安全性默认值包含针对常见攻击进行保护的预先配置的安全设置。
+表示 Azure Active Directory [安全性默认](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) 策略。 安全性默认值包含针对常见攻击进行保护的预先配置的安全设置。
 
-继承自[policyBase](../resources/policybase.md)。
+继承自 [policyBase](../resources/policybase.md)。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [获取](../api/identitysecuritydefaultsenforcementpolicy-get.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | 读取**identitySecurityDefaultsEnforcementPolicy**对象的属性。 |
-| [更新](../api/identitysecuritydefaultsenforcementpolicy-update.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | 更新**identitySecurityDefaultsEnforcementPolicy**对象。 |
+| [获取](../api/identitysecuritydefaultsenforcementpolicy-get.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | 读取 **identitySecurityDefaultsEnforcementPolicy** 对象的属性。 |
+| [更新](../api/identitysecuritydefaultsenforcementpolicy-update.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | 更新 **identitySecurityDefaultsEnforcementPolicy** 对象。 |
 
 ## <a name="properties"></a>属性
 
@@ -35,7 +35,7 @@ ms.locfileid: "45384393"
 |:-------------|:------------|:------------|
 |说明|String|此策略的说明。 只读。|
 |displayName|String|此策略的显示名称。 只读。|
-|id|字符串|此策略的标识符。 只读。|
+|id|String|此策略的标识符。 只读。|
 |isEnabled|Boolean|如果设置为 true，则会为租户启用 Azure Active Directory 安全性默认设置。|
 
 ## <a name="relationships"></a>关系
@@ -74,3 +74,5 @@ ms.locfileid: "45384393"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

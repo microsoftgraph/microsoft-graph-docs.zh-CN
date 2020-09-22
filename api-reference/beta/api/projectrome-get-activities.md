@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
 author: ailae
-ms.openlocfilehash: 1e25c108d3dca6d326fd499ae59d5189b9a3971a
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c34149a5325e3f7b7087c886a6faab5a9963535a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809969"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014278"
 ---
 # <a name="get-user-activities"></a>获取用户活动
 
@@ -157,3 +157,5 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
+
+

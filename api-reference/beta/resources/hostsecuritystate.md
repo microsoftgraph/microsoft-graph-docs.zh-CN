@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 5b50c67dff87121caf225ff7191ea8f377616522
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: a76797ed5660a80e1bbce73609617844de326863
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807939"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013592"
 ---
 # <a name="hostsecuritystate-resource-type"></a>hostSecurityState 资源类型
 
@@ -25,9 +25,9 @@ ms.locfileid: "46807939"
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
 |域名|String|主机 FQDN (完全限定的域名)  (例如，machine.company.com) 。|
-|isAzureAadJoined|布尔值|如此如果主机已加入域到 Azure Active Directory 域服务。|
-|isAzureAadRegistered|布尔值|如果主机注册到 Azure Active Directory 设备注册 (BYOD 设备-即不是由企业) 完全管理的，则该属性值为 True。|
-|isHybridAzureDomainJoined|布尔值|如此如果主机已加入域到本地 Active Directory 域。|
+|isAzureAadJoined|Boolean|如此如果主机已加入域到 Azure Active Directory 域服务。|
+|isAzureAadRegistered|Boolean|如果主机注册到 Azure Active Directory 设备注册 (BYOD 设备-即不是由企业) 完全管理的，则该属性值为 True。|
+|isHybridAzureDomainJoined|Boolean|如此如果主机已加入域到本地 Active Directory 域。|
 |netBiosName|String|本地主机名，不包含 DNS 域名。|
 |os|String|主机操作系统。  (例如，Windows10、MacOS、RHEL 等 ) 。|
 |privateIpAddress|String|专用 (不可路由) IPv4 或 IPv6 地址 (请参阅在发出警报时) [RFC 1918](https://tools.ietf.org/html/rfc1918) 。|
@@ -73,3 +73,5 @@ ms.locfileid: "46807939"
   "suppressions": []
 }
 -->
+
+

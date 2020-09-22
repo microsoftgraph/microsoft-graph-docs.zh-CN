@@ -1,24 +1,24 @@
 ---
 title: educationAssignmentGradeType 资源类型
-description: 表示将对工作分配进行评分的方式。 这在**工作分配. 评分**属性中使用。
+description: 表示将对工作分配进行评分的方式。 这在 **工作分配. 评分** 属性中使用。
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 9af962149f0cb9458567a67e4411a273c5fe770f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bf658fe2fa2b729a7e07d59613f86fe1f324798b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502737"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013739"
 ---
 # <a name="educationassignmentgradetype-resource-type"></a>educationAssignmentGradeType 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示将对工作分配进行评分的方式。 这在**工作分配. 评分**属性中使用。
+表示将对工作分配进行评分的方式。 这在 **工作分配. 评分** 属性中使用。
 
 此超类不能直接在工作分配属性中使用。 它的用途是允许多种不同的工作分配评分。
 
@@ -54,3 +54,5 @@ ms.locfileid: "42502737"
   "suppressions": []
 }
 -->
+
+

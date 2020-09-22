@@ -5,18 +5,18 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a83331992092cec3204b0279944a13c17870c295
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: a0cda56aa25c6fac2c0abf009af3fc97ddaa7729
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44217359"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012913"
 ---
 # <a name="get-shiftpreferences"></a>获取 shiftPreferences
 
 命名空间：microsoft.graph
 
-按 ID 检索[shiftPreferences](../resources/shiftpreferences.md)对象的属性和关系。
+按 ID 检索 [shiftPreferences](../resources/shiftpreferences.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "44217359"
 |:--------------------|:---------------------------------------------------------|
 |委托（工作或学校帐户） | User.Read.All、User.ReadWrite.All    |
 |委托（个人 Microsoft 帐户） | 不支持。    |
-|Application | UserShiftPreferences、UserShiftPreferences 和所有 |
+|应用程序 | UserShiftPreferences、UserShiftPreferences 和所有 |
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -54,7 +54,7 @@ GET /users/{userId}/settings/shiftPreferences
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[shiftPreferences](../resources/shiftpreferences.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [shiftPreferences](../resources/shiftpreferences.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -152,3 +152,4 @@ Content-length: 401
   ]
 }
 -->
+

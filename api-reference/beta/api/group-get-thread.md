@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6e340ee704c1812e2ea5d7839c0150b5fe7d6e0d
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: eedf3d31a8debb5301a748037f9fc9aaf445ffed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44743887"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012647"
 ---
 # <a name="get-conversation-thread"></a>获取对话线程
 
@@ -116,3 +116,5 @@ Content-length: 655
   ]
 }
 -->
+
+

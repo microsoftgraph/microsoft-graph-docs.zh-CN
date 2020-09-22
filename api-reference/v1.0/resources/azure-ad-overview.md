@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: bf6da4676b4be708103a723e299b628d3acacf93
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 0c90ccd670c53980da7345bfaa3c5aea1e82b22c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808296"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012745"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Azure Active Directory 资源
 
@@ -58,5 +58,6 @@ ms.locfileid: "46808296"
 - 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中调用 API。
 
 需要更多灵感？请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners)。
+
 
 

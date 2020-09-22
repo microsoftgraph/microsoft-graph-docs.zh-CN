@@ -5,20 +5,20 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0a2ae4137e619620c6dbab12e86a7ed39d4eef13
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6f37f3ca432dcd9c755556b37f4f0ea330907426
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499160"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013725"
 ---
 # <a name="errordetail-resource-type"></a>errorDetail 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-介绍了失败请求以异步方式创建 Microsoft Search 连接[架构](schema.md)的错误。
+介绍了失败请求以异步方式创建 Microsoft Search 连接 [架构](schema.md) 的错误。
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -26,7 +26,7 @@ ms.locfileid: "42499160"
 
 | 属性  | 类型                                               | 说明 |
 |:----------|:---------------------------------------------------|:------------|
-| 详细信息   | [innerErrorDetail](innererrordetail.md)集合 | 内部错误的集合（如果有）。 只读的，可空。 |
+| 详细信息   | [innerErrorDetail](innererrordetail.md) 集合 | 内部错误的集合（如果有）。 只读的，可空。 |
 | errorCode | String                                             | 与错误相关联的错误代码（如果有）。 只读的，可空。 |
 | message   | String                                             | 人类可读错误消息。 只读。 |
 
@@ -61,3 +61,5 @@ ms.locfileid: "42499160"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

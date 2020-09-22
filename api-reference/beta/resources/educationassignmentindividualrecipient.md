@@ -5,27 +5,27 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b5bccdf98bbba4c0965daf5d5aba93cf1a34b758
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 695145ae8819efc66df29d752e7a95101c9fef9e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502548"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013712"
 ---
 # <a name="educationassignmentindividualrecipient-resource-type"></a>educationAssignmentIndividualRecipient 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[assignTo](educationassignment.md)属性中使用。 如果设置为 "单个收件人列表"，则在发布工作分配时，类中的所选学生将收到提交对象。
+在 [assignTo](educationassignment.md) 属性中使用。 如果设置为 "单个收件人列表"，则在发布工作分配时，类中的所选学生将收到提交对象。
 
-此资源是[educationAssignmentRecipient](educationassignmentrecipient.md)的子类。
+此资源是 [educationAssignmentRecipient](educationassignmentrecipient.md)的子类。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|recipients|String 集合|收件人的 id 的集合。|
+|recipients|String collection|收件人的 id 的集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -58,3 +58,5 @@ ms.locfileid: "42502548"
   "suppressions": []
 }
 -->
+
+

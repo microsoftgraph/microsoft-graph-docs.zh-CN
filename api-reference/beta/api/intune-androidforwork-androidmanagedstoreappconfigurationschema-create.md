@@ -3,24 +3,24 @@ title: 创建 androidManagedStoreAppConfigurationSchema
 description: 创建新的 androidManagedStoreAppConfigurationSchema 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cf3990e02c3ea34a9262f1df964ad70d5488e8bb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 96a3a88550f4353456bf3fec9991f244b3442fad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43395519"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012500"
 ---
 # <a name="create-androidmanagedstoreappconfigurationschema"></a>创建 androidManagedStoreAppConfigurationSchema
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建新的[androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)对象。
+创建新的 [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -55,13 +55,13 @@ POST /deviceManagement/androidManagedStoreAppConfigurationSchemas
 |:---|:---|:---|
 |id|字符串|架构对应的应用程序的 Android 包名称的实体密钥|
 |exampleJson|Binary|包含符合此架构的示例 JSON 字符串的 UTF8 编码的字节数组，它演示如何设置此应用的配置|
-|schemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)集合|项集合，每个项表示架构中的命名配置选项。 它仅包含根级别的配置。|
-|nestedSchemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)集合|项集合，每个项表示架构中的命名配置选项。 它包含所有配置的简单列表。|
+|schemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) 集合|项集合，每个项表示架构中的命名配置选项。 它仅包含根级别的配置。|
+|nestedSchemaItems|[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) 集合|项集合，每个项表示架构中的命名配置选项。 它包含所有配置的简单列表。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -187,6 +187,9 @@ Content-Length: 1634
   ]
 }
 ```
+
+
+
 
 
 

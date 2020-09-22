@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a04baa476c18dc5a581fffa2e466d3fcbdfa0c68
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 555e4dd162b2a5be51e8cf9a7d98b57d6de6c24e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312024"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013569"
 ---
 # <a name="identityriskevent-resource-type-deprecated"></a>identityRiskEvent 资源类型 (弃用) 
 
@@ -47,17 +47,17 @@ ms.locfileid: "47312024"
 |createdDateTime|dateTimeOffset| 风险事件的创建日期和时间。 此值始终大于或等于风险事件本身的日期时间。 这是查询风险事件时用作筛选器的正确属性。|
 |id|string| 只读|
 |riskEventDateTime|dateTimeOffset| 风险事件发生的日期和时间|
-|riskEventStatus|string| 可取值为：`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons`。|
+|riskEventStatus|字符串| 可取值为：`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons`。|
 |riskLevel|string| 可取值为：`low`、`medium`、`high`。|
-|riskEventType|string| 风险的类型|
-|userDisplayName|string| 具有风险的用户的名称|
+|riskEventType|字符串| 风险的类型|
+|userDisplayName|字符串| 具有风险的用户的名称|
 |userId|string| 用户面临风险的 id|
 |userPrincipalName|string| 用户面临风险的用户主体名称|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|impactedUser|[user](user.md)| 只读。可为空。|
+|impactedUser|[用户](user.md)| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -101,3 +101,5 @@ ms.locfileid: "47312024"
   "suppressions": []
 }
 -->
+
+

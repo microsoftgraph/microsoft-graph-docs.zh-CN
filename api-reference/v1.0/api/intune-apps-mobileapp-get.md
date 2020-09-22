@@ -3,14 +3,14 @@ title: 获取 mobileApp
 description: 读取 mobileApp 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 64e4117e3f2fd26e35bc1872f5dd85ec18d21d9c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d666daff268a8e05e74931b92c84e076e3485b31
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447917"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013305"
 ---
 # <a name="get-mobileapp"></a>获取 mobileApp
 
@@ -92,6 +92,9 @@ Content-Length: 803
   }
 }
 ```
+
+
+
 
 
 

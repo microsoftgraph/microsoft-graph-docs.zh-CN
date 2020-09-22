@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: namkedia
-ms.openlocfilehash: 1ab579ce38abea684b4174bee25f2375d722293a
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 23c23d022d35d51323e374674775bab01532d4b9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319573"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013560"
 ---
 # <a name="identityprovider-resource-type"></a>identityProvider 资源类型
 
@@ -74,3 +74,5 @@ ms.locfileid: "47319573"
     "clientSecret": "String"
 }
 ```
+
+

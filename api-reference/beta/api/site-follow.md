@@ -5,18 +5,18 @@ description: 关注用户的网站/网站。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 4daa8d114459b4b76c35e1c384d42bcf696433a6
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 218efae00703e452df1f9a8fd4f0ad73727b4c10
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108212"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014012"
 ---
 # <a name="follow-site"></a>关注网站 
 
 命名空间：microsoft.graph
 
-关注用户的[网站](../resources/site.md)或多个网站。
+关注用户的 [网站](../resources/site.md) 或多个网站。
 
 ## <a name="permissions"></a>权限
 
@@ -49,7 +49,7 @@ POST /users/{user-id}/followedSites/add
 ## <a name="response"></a>响应 
 
 * 如果请求成功，此方法将返回已遵循的网站数组。  
-* 如果在执行任何指定的网站时出现错误，则此方法将返回`207`状态代码，并且响应正文将包含包含[Error](/graph/errors)对象和 siteIds 的条目的数组，这些条目指示无法遵循哪些网站。
+* 如果在执行任何指定的网站时出现错误，则此方法将返回 `207` 状态代码，并且响应正文将包含包含 [error](/graph/errors) 对象和 siteIds 的条目的数组，这些条目指示无法遵循哪些网站。
 
 ## <a name="example"></a>示例
 
@@ -183,3 +183,5 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+
+

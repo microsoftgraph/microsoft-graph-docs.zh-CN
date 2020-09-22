@@ -5,18 +5,18 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 329d89d8a06182d5de7f9b3d149e348c7f7df4e7
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 47beed16d5b25a21a912686b5a0750751dd953f9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845692"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012962"
 ---
 # <a name="get-shift"></a>获取 shift
 
 命名空间：microsoft.graph
 
-按 ID 检索[shift](../resources/shift.md)对象的属性和关系。
+按 ID 检索 [shift](../resources/shift.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -53,7 +53,7 @@ GET /teams/{teamId}/schedule/shifts/{shiftId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[shift](../resources/shift.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [shift](../resources/shift.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -137,3 +137,4 @@ Content-length: 401
   ]
 }
 -->
+

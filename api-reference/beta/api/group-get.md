@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d7c744162357f59e5512b38178371f030ce78e1e
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 22ff44365cd031f354e8da12cc5d2db3a7571b16
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539043"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012654"
 ---
 # <a name="get-group"></a>获取组
 
@@ -213,3 +213,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

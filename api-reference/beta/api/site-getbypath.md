@@ -6,16 +6,16 @@ title: 按路径获取 SharePoint 网站
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f9514a19605317e66ede9843938d863f654e5882
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f5b61c84146701782c1dbe5e8b24631ca30bbb79
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453227"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013970"
 ---
 # <a name="get-a-site-resource-by-path"></a>按路径获取网站资源
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -88,3 +88,5 @@ HTTP/1.1 200 OK
   "suppressions": []
 }
 -->
+
+
