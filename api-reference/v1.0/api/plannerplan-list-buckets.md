@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 0cddebe4a79c2c121b7df18899f647c803542d84
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 88d6156b35063ccb5454278d38505c4f4dbd6291
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510891"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020661"
 ---
 # <a name="list-buckets"></a>列出存储桶
 
@@ -42,7 +42,7 @@ GET /planner/plans/{plan-id}/buckets
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[plannerBucket](../resources/plannerbucket.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [plannerBucket](../resources/plannerbucket.md) 对象集合。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 ## <a name="example"></a>示例
@@ -115,3 +115,4 @@ Content-length: 251
   "suppressions": [
   ]
 }-->
+

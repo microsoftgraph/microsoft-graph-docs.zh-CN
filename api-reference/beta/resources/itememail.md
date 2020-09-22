@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 0a8a69ae484afab6b558890fbd186a4850235ead
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 2dbf1f3f2c90cf7562d034e32f8fa03d1590ee42
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809425"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021481"
 ---
 # <a name="itememail-resource-type"></a>itemEmail 资源类型
 
@@ -83,3 +83,5 @@ ms.locfileid: "46809425"
   "type": "String"
 }
 ```
+
+

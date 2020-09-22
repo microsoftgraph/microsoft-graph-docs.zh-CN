@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 84e50171ee6122836699c8ff750b481360dc5228
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2e6219fc3b1d0815a14322a72711e7c887188374
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510793"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020585"
 ---
 # <a name="post-forward"></a>帖子：转发
 
@@ -118,3 +118,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

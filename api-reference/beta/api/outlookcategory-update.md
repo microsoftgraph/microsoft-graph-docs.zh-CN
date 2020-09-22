@@ -1,16 +1,16 @@
 ---
 title: 更新 Outlook 类别
-description: '更新指定 outlookCategory 对象的可写属性 **color**。 不能修改**displayName**属性 '
+description: '更新指定 outlookCategory 对象的可写属性 **color**。 不能修改 **displayName** 属性 '
 localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ae5ff61e8851aa614f856f1f85a9544c101ac54f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ba9f78f03f8de24b35ec723058929777356e3405
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450906"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019837"
 ---
 # <a name="update-outlook-category"></a>更新 Outlook 类别
 
@@ -116,3 +116,5 @@ Content-length: 251
   ]
 }
 -->
+
+

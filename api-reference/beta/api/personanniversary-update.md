@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ebcdd31572f01c88ece9c92ed5cfbd79cdd30679
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 0365abe159184e7d492d24de644663ffdd183775
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807708"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019819"
 ---
 # <a name="update-personanniversary"></a>更新 personAnniversary
 
@@ -139,3 +139,5 @@ Content-type: application/json
   "date": "Date"
 }
 ```
+
+

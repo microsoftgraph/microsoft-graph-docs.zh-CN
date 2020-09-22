@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: c80e8ae2c9fdfe4a11a02e9f71ada531a121b279
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b706d23f948b80e1d8cebf01f768c47d01c22ab2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511290"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020704"
 ---
 # <a name="create-page"></a>创建页面
 
@@ -18,11 +18,11 @@ ms.locfileid: "42511290"
 
 在默认笔记本的默认分区中创建新的 OneNote 页面。
 
-若要在默认笔记本的不同节中创建页面，可以使用`sectionName`查询参数。  示例：`../onenote/pages?sectionName=My%20section`
+若要在默认笔记本的不同节中创建页面，可以使用 `sectionName` 查询参数。  示例：`../onenote/pages?sectionName=My%20section`
 
-该`POST /onenote/pages`操作仅用于在当前用户的默认笔记本中创建页面。 如果要将其他笔记本作为目标，可以[在指定分区中创建页面](../api/section-post-pages.md)。  
+该 `POST /onenote/pages` 操作仅用于在当前用户的默认笔记本中创建页面。 如果要将其他笔记本作为目标，可以 [在指定分区中创建页面](../api/section-post-pages.md)。  
 
-> **注意：** 对可以使用此 API 添加到分区的页面数有限制。 有关详细信息，请参阅使用此 API 创建所有限制的[OneNote 页面](/graph/onenote-create-page)。
+> **注意：** 对可以使用此 API 添加到分区的页面数有限制。 有关详细信息，请参阅使用此 API 创建所有限制的 [OneNote 页面](/graph/onenote-create-page) 。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -56,13 +56,13 @@ POST /sites/{id}/onenote/pages
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和新的[page](../resources/page.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [page](../resources/page.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-在`../onenote/pages`路径中，可以使用`sectionName`查询参数在默认笔记本的特定节中创建页面。 示例：`../onenote/pages?sectionName=My%20section`。 如果该节不存在（或已重命名），API 将创建一个新分区。
+在 `../onenote/pages` 路径中，可以使用 `sectionName` 查询参数在默认笔记本的特定节中创建页面。 示例：`../onenote/pages?sectionName=My%20section`。 如果该节不存在 (或已重命名) ，API 将创建一个新的节。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -137,3 +137,4 @@ Content-length: 312
   "section": "documentation",
   "tocPath": ""
 }-->
+

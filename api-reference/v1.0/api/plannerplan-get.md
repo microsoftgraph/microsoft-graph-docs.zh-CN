@@ -5,18 +5,18 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 5ab7176c105fea0bbdf8b4e0fd894738bf6b8e85
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0d66a4b0e258cfb4af458e8e748d921d844767eb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510898"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020658"
 ---
 # <a name="get-plannerplan"></a>获取 plannerPlan
 
 命名空间：microsoft.graph
 
-检索[plannerplan](../resources/plannerplan.md)对象的属性和关系。
+检索 [plannerplan](../resources/plannerplan.md) 对象的属性和关系。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -41,7 +41,7 @@ GET /planner/plans/{plan-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[plannerPlan](../resources/plannerplan.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [plannerPlan](../resources/plannerplan.md) 对象。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 
@@ -116,3 +116,4 @@ Content-length: 357
   "suppressions": [
   ]
 }-->
+

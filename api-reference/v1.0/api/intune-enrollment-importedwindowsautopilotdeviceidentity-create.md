@@ -3,14 +3,14 @@ title: 创建 importedWindowsAutopilotDeviceIdentity
 description: 创建新的 importedWindowsAutopilotDeviceIdentity 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 04d1133cfc78a736164615402817a68636ffda34
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: aaee123bb122d75ed49d97f67bc035510d0a3673
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43474396"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020830"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>创建 importedWindowsAutopilotDeviceIdentity
 
@@ -55,7 +55,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 |id|String|对象的 GUID|
 |orderIdentifier|String|Windows autopilot 设备订单 Id。|
 |serialNumber|String|Windows autopilot 设备序列号。|
-|productKey|字符串|Windows autopilot 设备产品密钥。|
+|productKey|String|Windows autopilot 设备产品密钥。|
 |hardwareIdentifier|Binary|Windows autopilot 设备硬件 Blob。|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|导入设备的当前状态。|
 
@@ -112,6 +112,9 @@ Content-Length: 590
   }
 }
 ```
+
+
+
 
 
 

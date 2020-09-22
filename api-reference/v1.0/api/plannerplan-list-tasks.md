@@ -1,16 +1,16 @@
 ---
 title: 列出任务
-description: 检索与 plannerPlan 对象关联的**plannerTask**对象的列表。
+description: 检索与 plannerPlan 对象关联的 **plannerTask** 对象的列表。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: faceccf2154e470f0a12452d3033e79f69997610
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c50b84fce3773d9b9e50fd1e85998f2af74b6fc4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510884"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020659"
 ---
 # <a name="list-tasks"></a>列出任务
 
@@ -42,7 +42,7 @@ GET /planner/plans/{plan-id}/tasks
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[plannerTask](../resources/plannertask.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [plannerTask](../resources/plannertask.md) 对象集合。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 
@@ -134,3 +134,4 @@ Content-length: 833
   "suppressions": [
   ]
 }-->
+

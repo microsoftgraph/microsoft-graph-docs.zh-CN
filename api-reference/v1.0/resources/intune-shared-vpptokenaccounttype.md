@@ -3,14 +3,14 @@ title: vppTokenAccountType 枚举类型
 description: Apple Volume Purchase Program 令牌的可能类型。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3894f902de9edf8fed23becd01fca3a86136ce55
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d8c655bd2f05bc7da057f0c86b7fa481f05aff44
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445592"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020564"
 ---
 # <a name="vpptokenaccounttype-enum-type"></a>vppTokenAccountType 枚举类型
 
@@ -24,7 +24,9 @@ Apple Volume Purchase Program 令牌的可能类型。
 |成员|值|说明|
 |:---|:---|:---|
 |知情|0|与业务程序相关联的 Apple Volume Purchase Program 令牌。|
-|受|1|与教育计划相关联的 Apple Volume Purchase Program 令牌。|
+|受|1 |与教育计划相关联的 Apple Volume Purchase Program 令牌。|
+
+
 
 
 

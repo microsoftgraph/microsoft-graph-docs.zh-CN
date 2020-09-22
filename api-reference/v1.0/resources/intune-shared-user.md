@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2bcea43a7870ddba0407ef546094e51a385e668c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f486e3202535882d719e5f6c083b583321e917b5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445603"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020571"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -23,11 +23,11 @@ ms.locfileid: "43445603"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出用户](../api/intune-shared-user-list.md)对象。|[user](../resources/intune-shared-user.md) 集合|列出 [user](../resources/intune-shared-user.md) 对象的属性和关系。|
-|[获取用户](../api/intune-shared-user-get.md)对象。|[user](../resources/intune-shared-user.md) 集合|读取 [user](../resources/intune-shared-user.md) 对象的属性和关系。|
-|[创建用户](../api/intune-shared-user-create.md)对象。|[user](../resources/intune-shared-user.md) 集合|创建新的 [user](../resources/intune-shared-user.md) 对象。|
+|[列出用户](../api/intune-shared-user-list.md) 对象。|[user](../resources/intune-shared-user.md) 集合|列出 [user](../resources/intune-shared-user.md) 对象的属性和关系。|
+|[获取用户](../api/intune-shared-user-get.md) 对象。|[user](../resources/intune-shared-user.md) 集合|读取 [user](../resources/intune-shared-user.md) 对象的属性和关系。|
+|[创建用户](../api/intune-shared-user-create.md) 对象。|[user](../resources/intune-shared-user.md) 集合|创建新的 [user](../resources/intune-shared-user.md) 对象。|
 |[删除用户](../api/intune-shared-user-delete.md)。|无|删除 [user](../resources/intune-shared-user.md)。|
-|[更新 user](../api/intune-shared-user-update.md)对象。|[user](../resources/intune-shared-user.md)|更新 [user](../resources/intune-shared-user.md) 对象的属性。|
+|[更新 user](../api/intune-shared-user-update.md) 对象。|[user](../resources/intune-shared-user.md)|更新 [user](../resources/intune-shared-user.md) 对象的属性。|
 |**设备管理**|
 |[removeAllDevicesFromManagement 操作](../api/intune-shared-user-removealldevicesfrommanagement.md)|无|停用该用户管理的所有设备|
 |**移动应用管理 (MAM)**|
@@ -76,6 +76,8 @@ ms.locfileid: "43445603"
     "Warning: Resource microsoft.graph.user is defined in multiple files: /api-reference/v1.0/resources/intune_shared_user.md, /api-reference/v1.0/resources/user.md",
   ]
 }-->
+
+
 
 
 

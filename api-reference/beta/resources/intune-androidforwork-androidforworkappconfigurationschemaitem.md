@@ -3,20 +3,20 @@ title: androidForWorkAppConfigurationSchemaItem 资源类型
 description: Android for Work 应用程序的自定义配置架构内的单个配置项。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d8ed09ee79b8a5607f4aec0647ed7d221ee407e5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 13af3b581498a4285773b2fda02d5596127c3012
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459273"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019668"
 ---
 # <a name="androidforworkappconfigurationschemaitem-resource-type"></a>androidForWorkAppConfigurationSchemaItem 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -26,7 +26,7 @@ Android for Work 应用程序的自定义配置架构内的单个配置项。
 |属性|类型|说明|
 |:---|:---|:---|
 |schemaItemKey|String|应用程序用于标识项的唯一键|
-|displayName|字符串|用户可读的名称|
+|displayName|String|用户可读的名称|
 |description|String|项在应用程序内所控制内容的说明|
 |defaultBoolValue|布尔值|如果由应用开发人员指定，则为布尔类型项的默认值|
 |defaultIntValue|Int32|如果由应用开发人员指定，则为整数类型项的默认值|
@@ -67,6 +67,9 @@ Android for Work 应用程序的自定义配置架构内的单个配置项。
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3b8618540559a508671383a777d608ea21c35ea3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d5bd5cba444f03042e556906fc28e6a134f754d1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446597"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021411"
 ---
 # <a name="messagerule-resource-type"></a>messageRule 资源类型
 
@@ -85,3 +85,5 @@ ms.locfileid: "43446597"
   "suppressions": []
 }
 -->
+
+

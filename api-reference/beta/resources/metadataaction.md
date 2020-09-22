@@ -5,20 +5,20 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 592bd308b3c28d36fedb405b0c7dd7f35cba3436
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 55ddd644428662f6a646fd9c003761ab6f7c1e9a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522650"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021383"
 ---
 # <a name="metadataaction-resource-type"></a>metadataAction 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示要写入或从文件中移除的元数据。 **metadataAction**可能由[evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md)、 [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md)和[evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) api 返回。 该操作通知使用应用程序应添加到文件中的特定键/值对，或应从文件中删除的特定元数据密钥。 此元数据是描述要*标记*的文件或信息的内容。
+表示要写入或从文件中移除的元数据。 **metadataAction** 可能由 [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md)、 [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md)和 [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) api 返回。 该操作通知使用应用程序应添加到文件中的特定键/值对，或应从文件中删除的特定元数据密钥。 此元数据是描述要 *标记*的文件或信息的内容。
 
 ## <a name="properties"></a>属性
 
@@ -56,3 +56,4 @@ ms.locfileid: "42522650"
   "section": "documentation",
   "tocPath": ""
 }-->
+

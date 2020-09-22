@@ -5,16 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 6b0d56a3c9e3e8b098dbbe7f172a42631afbb33b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e7c41461848fab45f3d291b175e6c584f98326fe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522517"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021271"
 ---
 # <a name="offershiftrequest-resource-type"></a>offerShiftRequest 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "42522517"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [Create](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | 创建 offerShiftRequest 对象的实例。 |
+| [创建](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | 创建 offerShiftRequest 对象的实例。 |
 | [获取](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | 读取 offerShiftRequest 对象的属性和关系。 |
 | [List](../api/offershiftrequest-list.md) | [OfferShiftRequest](offershiftrequest.md)的集合 | 读取团队中所有 offerShiftRequest 对象的属性和关系。 |
 |[批准](../api/offershiftrequest-approve.md)|无|批准 offerShiftRequest。 |
@@ -74,3 +74,5 @@ ms.locfileid: "42522517"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

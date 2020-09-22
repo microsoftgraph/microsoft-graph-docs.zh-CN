@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: eea1ee2391915fadde0cce4ba70fd4d47908527f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 63cfd79f72f53cd60bf2e60772bd2fbdbd4dbec6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510926"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020725"
 ---
 # <a name="get-plannerbuckettaskboardtaskformat"></a>获取 plannerBucketTaskBoardTaskFormat
 
@@ -105,3 +105,4 @@ Content-length: 76
   "suppressions": [
   ]
 }-->
+

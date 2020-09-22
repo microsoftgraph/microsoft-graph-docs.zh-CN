@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 000a8ae7c91b0d5c2b896615cc1e60ba2b360aed
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 12c3c9a8718ae0333282a07e1bf062ed141191d8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44153498"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019969"
 ---
 # <a name="update-openshift"></a>更新 openShift
 
@@ -18,7 +18,7 @@ ms.locfileid: "44153498"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[openShift](../resources/openshift.md)对象的属性。
+更新 [openShift](../resources/openshift.md) 对象的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "44153498"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,7 +47,7 @@ PUT /teams/{id}/schedule/openShifts/{openShiftId}
 
 ## <a name="request-body"></a>请求正文
 
-在此方法的请求正文中提供修改的[openshift](../resources/openshift.md)对象。
+在此方法的请求正文中提供修改的 [openshift](../resources/openshift.md) 对象。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
@@ -57,7 +57,7 @@ PUT /teams/{id}/schedule/openShifts/{openShiftId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的[openShift](../resources/openshift.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [openShift](../resources/openshift.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -172,3 +172,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

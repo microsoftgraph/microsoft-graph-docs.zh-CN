@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: bd5e0e1cb324540f1c32a158501113b2bf274a3c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2f35e5121ca1a6d04bfcc6f492b453682003b066
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510779"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020578"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -27,7 +27,7 @@ ms.locfileid: "42510779"
 |应用程序 | Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
-在组的[conversationThread](../resources/conversationthread.md)中获取[帖子](../resources/post.md)的附件。 指定父[对话](../resources/conversation.md)是可选的。
+在组的[conversationThread](../resources/conversationthread.md)中获取[帖子](../resources/post.md)的附件。 指定父 [对话](../resources/conversation.md) 是可选的。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -43,7 +43,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ```
 GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}?$expand=attachments
 ```
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
@@ -53,7 +53,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}?$expand
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[附件](../resources/attachment.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [附件](../resources/attachment.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -128,3 +128,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

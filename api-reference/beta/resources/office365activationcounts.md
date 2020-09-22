@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 1e514eb538b1edc4d9681b9937fe8cfeecc40b23
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: ef612173b8b78d4e87e07e66995ea6cb9ac0dc16
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896887"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021215"
 ---
 # <a name="office365activationcounts-resource-type"></a>office365ActivationCounts 资源类型
 
@@ -48,3 +48,5 @@ ms.locfileid: "44896887"
   "windows10Mobile": 1024
 }
 ```
+
+

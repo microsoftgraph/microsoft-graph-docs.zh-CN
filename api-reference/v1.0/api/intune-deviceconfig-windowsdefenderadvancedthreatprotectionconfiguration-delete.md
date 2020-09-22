@@ -3,14 +3,14 @@ title: 删除 windowsDefenderAdvancedThreatProtectionConfiguration
 description: 删除 windowsDefenderAdvancedThreatProtectionConfiguration。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ab73c1bd2d88011d5ce8a08abafc2c8aed676b58
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9706ee8afb024c6dd517ad486a8ccd72d0df9fed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441869"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020956"
 ---
 # <a name="delete-windowsdefenderadvancedthreatprotectionconfiguration"></a>删除 windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -63,6 +63,9 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -5,20 +5,20 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 902b552a8fc6e178c3cef120ace4ea66d954812f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 60135908638b6cb3e956ca864e4b0a53da352489
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456383"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019900"
 ---
 # <a name="openshiftchangerequest-decline"></a>openShiftChangeRequest：拒绝
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-拒绝[openshiftchangerequest](../resources/openshiftchangerequest.md)对象。
+拒绝 [openshiftchangerequest](../resources/openshiftchangerequest.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -99,3 +99,5 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

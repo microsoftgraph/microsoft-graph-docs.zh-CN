@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 1a8d5c63648a720cad5e5ceaed77b25eff867abe
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 29743e149523b31aba4fb0c024bec391f8be8fcf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43317389"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021404"
 ---
 # <a name="messagerulepredicates-resource-type"></a>messageRulePredicates 资源类型
 
@@ -23,12 +23,12 @@ ms.locfileid: "43317389"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| bodyContains | 字符串集合 | 表示应该出现在传入邮件正文中的字符串，以便条件或例外情况适用。 |
-| bodyOrSubjectContains | 字符串集合 | 表示应该出现在传入邮件正文或主题中的字符串，以便条件或例外情况适用。 |
-| categories | String 集合 | 表示传入邮件应标记的类别，以便条件或例外情况适用。 |
+| bodyContains | String 集合 | 表示应该出现在传入邮件正文中的字符串，以便条件或例外情况适用。 |
+| bodyOrSubjectContains | String 集合 | 表示应该出现在传入邮件正文或主题中的字符串，以便条件或例外情况适用。 |
+| 类别 | String 集合 | 表示传入邮件应标记的类别，以便条件或例外情况适用。 |
 | fromAddresses | [recipient](recipient.md) collection | 表示传入邮件的特定发件人电子邮件地址，以便条件或例外情况适用。 |
 | hasAttachments | Boolean | 指示传入的邮件是否必须包含附件，以便条件或例外情况适用。 |
-| headerContains | 字符串集合 | 表示出现在传入邮件头中的字符串，以便条件或例外情况适用。 |
+| headerContains | String 集合 | 表示出现在传入邮件头中的字符串，以便条件或例外情况适用。 |
 | importance | importance | 传入邮件上标记的重要性，以便条件或例外情况适用：`low`、`normal`、`high`。 |
 | isApprovalRequest | Boolean | 指示传入的邮件是否必须为审批请求，以便条件或例外情况适用。 |
 | isAutomaticForward | Boolean | 指示传入的邮件是否必须自动转发，以便条件或例外情况适用。 |
@@ -43,15 +43,15 @@ ms.locfileid: "43317389"
 | isVoicemail | Boolean | 指示传入的邮件是否必须有语音邮件，以便条件或例外情况适用。 |
 | messageActionFlag | messageActionFlag  | 表示出现在传入邮件上的 flag-for-action 值，以便条件或例外情况适用。 可能的值为：、、、、、、、、、、 `any` `call` `doNotForward` `followUp` `fyi` `forward` `noResponseNecessary` `read` `reply` `replyToAll` `review` 。 |
 | notSentToMe | Boolean | 指示邮箱所有者是否不能是传入邮件的收件人，以便条件或异常情况适用。 |
-| recipientContains | 字符串集合 | 表示出现在传入邮件的 **toRecipients** 或 **ccRecipients** 属性中的字符串，以便条件或例外情况适用。 |
-| senderContains | 字符串集合 | 表示出现在传入邮件的 **from** 属性中的字符串，以便条件或例外情况适用。 |
+| recipientContains | String 集合 | 表示出现在传入邮件的 **toRecipients** 或 **ccRecipients** 属性中的字符串，以便条件或例外情况适用。 |
+| senderContains | String 集合 | 表示出现在传入邮件的 **from** 属性中的字符串，以便条件或例外情况适用。 |
 | sensitivity | 敏感度 | 表示必须在传入邮件上标记的敏感度级别，以便条件或例外情况适用。 可能的值包括 `normal`、`personal`、`private`、`confidential`。 |
 | sentCcMe | Boolean | 指示邮箱所有者是否必须在传入邮件的 **ccRecipients** 属性中，以便条件或异常情况适用。 |
 | sentOnlyToMe | Boolean | 指示邮箱所有者是否必须是传入邮件的唯一收件人，以便条件或异常情况适用。 |
 | sentToAddresses | [recipient](recipient.md) collection | 表示必须已向其发送传入邮件的电子邮件地址，以便条件或例外情况适用。 |
 | sentToMe | Boolean | 指示邮箱所有者是否必须在传入邮件的 **toRecipients** 属性中，以便条件或异常情况适用。 |
 | sentToOrCcMe | Boolean | 指示邮箱所有者是否必须在传入邮件的 **toRecipients** 或 **ccRecipients** 属性中，以便条件或异常情况适用。 |
-| subjectContains | 字符串集合 | 表示出现在传入邮件主题中的字符串，以便条件或例外情况适用。 |
+| subjectContains | String 集合 | 表示出现在传入邮件主题中的字符串，以便条件或例外情况适用。 |
 | withinSizeRange | [sizeRange](sizerange.md) | 表示传入邮件必须介于其中的最小大小和最大大小（以千字节为单位），以便条件或例外情况适用。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -112,3 +112,5 @@ ms.locfileid: "43317389"
   "suppressions": []
 }
 -->
+
+

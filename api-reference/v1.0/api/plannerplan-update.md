@@ -1,22 +1,22 @@
 ---
 title: 更新 plannerPlan
-description: 更新**plannerPlan**对象的属性。
+description: 更新 **plannerPlan** 对象的属性。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: b9feae78472a4ed90005904ba5d97136de1a5ba5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c9dda21c2cedb31d681d64a16ff0e4d1fdf9387e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510877"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020660"
 ---
 # <a name="update-plannerplan"></a>更新 plannerPlan
 
 命名空间：microsoft.graph
 
-更新**plannerPlan**对象的属性。
+更新 **plannerPlan** 对象的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -45,12 +45,12 @@ PATCH /planner/plans/{plan-id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|owner|String|拥有计划的[组](../resources/group.md)`id`。必须存在有效的组才能设置此字段。设置后，只能由所有者更新此字段。|
+|所有者|String|拥有计划的[组](../resources/group.md)`id`。必须存在有效的组才能设置此字段。设置后，只能由所有者更新此字段。|
 |title|String|计划的标题。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[plannerPlan](../resources/plannerplan.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [plannerPlan](../resources/plannerplan.md) 对象。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 
@@ -132,3 +132,4 @@ Content-length: 357
   "suppressions": [
   ]
 }-->
+

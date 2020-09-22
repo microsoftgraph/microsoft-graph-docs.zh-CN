@@ -7,12 +7,12 @@ localization_priority: Normal
 description: 通过修补 permission 资源更新共享权限的属性。
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: b2d67cd965240620e6f40ec62f56c09ce51a7813
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 59fe051abe8389808b6a66f01108b647ab620aae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511038"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020718"
 ---
 # <a name="update-sharing-permission"></a>更新共享权限
 
@@ -137,3 +137,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+

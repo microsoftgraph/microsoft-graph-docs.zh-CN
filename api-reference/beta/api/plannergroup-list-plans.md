@@ -5,16 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 9af94becbba1c85dbd3161554229d5e9c99c5e19
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8394e295c2c2b87a3c36eb351efdbf84707577f2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455707"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019808"
 ---
 # <a name="list-plans"></a>列出计划
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -119,3 +119,5 @@ Content-length: 421
   ]
 }
 -->
+
+

@@ -6,16 +6,16 @@ description: MoveAction 对象提供有关移动项的活动的信息。
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 04c9ddad00b5705d84af6e72ac194a0d32fd015c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ec1ac8ccaae502f66e205571e17eb5ad3eced8e7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447379"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020529"
 ---
 # <a name="moveaction-resource-type"></a>moveAction 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [**ItemActivity**][activity]上的**moveAction**资源是否存在指示活动已移动项目。
 
@@ -55,3 +55,4 @@ ms.locfileid: "42447379"
   "suppressions": []
 }
 -->
+

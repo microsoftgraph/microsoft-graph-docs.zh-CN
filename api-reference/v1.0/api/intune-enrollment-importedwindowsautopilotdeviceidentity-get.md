@@ -3,14 +3,14 @@ title: 获取 importedWindowsAutopilotDeviceIdentity
 description: 读取 importedWindowsAutopilotDeviceIdentity 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 711d2562813a4c2a8f9741b147ca5a97c1a77d96
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7fa638bad820335bc51e1cf92655dd91cb0ab488
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471412"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020837"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentity"></a>获取 importedWindowsAutopilotDeviceIdentity
 
@@ -87,6 +87,9 @@ Content-Length: 635
   }
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: f9b83608f3a5859e696c4ea2c52e22e35d291fce
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: 78a7e374d0fb90b644199b83dc71abd3b701a897
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630400"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021362"
 ---
 # <a name="microsoft-365-apps-usage-reports"></a>Microsoft 365 应用程序使用率报告
 
@@ -27,3 +27,5 @@ ms.locfileid: "46630400"
 | [获取用户详细信息](../api/reportroot-getm365appuserdetail.md)                  | [报告](../resources/intune-shared-report.md) | 获取有关用户使用 Microsoft 365 应用程序的详细信息。 |
 | [获取用户数](../api/reportroot-getm365appusercounts.md)                  | [报告](../resources/intune-shared-report.md) | 按应用获取每日唯一用户数。               |
 | [获取平台用户计数](../api/reportroot-getm365appplatformusercounts.md) | [报告](../resources/intune-shared-report.md) | 按平台获取每日唯一用户数。          |
+
+

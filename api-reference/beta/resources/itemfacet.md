@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: b32baed9dd6bad45f37b7be24b67308e0624b42c
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ff186b8b78e0070b5f92efa1858ef8d15d51c59f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809395"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48021432"
 ---
 # <a name="itemfacet-resource-type"></a>itemFacet 资源类型
 
@@ -66,4 +66,6 @@ ms.locfileid: "46809395"
   }
 }
 ```
+
+
 

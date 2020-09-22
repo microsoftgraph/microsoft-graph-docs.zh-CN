@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 7fc449514aa921058165428777061881cf6b1ebf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c650995364c2ff30ba4e4bd938bd6a8f3e9921f8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510807"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020592"
 ---
 # <a name="list-plans"></a>列出计划
 
@@ -123,3 +123,4 @@ Content-length: 438
   "suppressions": [
   ]
 }-->
+
