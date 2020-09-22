@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: fd543399b27c5a900144588ef9b5f8f69efef061
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 47e9902bc51c739446cb9bf3055c063632cc7206
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42430124"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981343"
 ---
 # <a name="delete-employees"></a>删除员工
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42430124"
 |权限类型 |权限（从最低特权到最高特权）|
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
-|委派（个人 Microsoft 帐户|不支持。|
+|委派 (个人 Microsoft 帐户|不支持。|
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -43,7 +43,7 @@ DELETE /financials/companies/{id}/employees/{id}
 |标头         |值                     |
 |---------------|--------------------------|
 |Authorization  |Bearer {token}。必需。 |
-|If-Match       |必填。 如果包含此请求标头，且提供的 eTag 与**员工**的当前标记不匹配，则不会更新**员工**。 |
+|If-Match       |必需。 如果包含此请求标头，且提供的 eTag 与 **员工**的当前标记不匹配，则不会更新 **员工** 。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -68,4 +68,6 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/employees/{id}
 ```json
 HTTP/1.1 204 No Content
 ```
+
+
 

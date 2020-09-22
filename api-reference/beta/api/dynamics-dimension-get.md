@@ -7,20 +7,20 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: c89f99a32ba04012dcd33587dce01545f6c31cea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4bad317a0d0ff09e8e671427b6c58ca98ed7742a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42430334"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981378"
 ---
 # <a name="get-dimensions"></a>获取尺寸
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 Dynamics 365 Business Central 的**维度**对象的属性和关系。
+检索 Dynamics 365 Business Central 的 **维度** 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,7 +28,7 @@ ms.locfileid: "42430334"
 |权限类型 |权限（从最低特权到最高特权）|
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
-|委派（个人 Microsoft 帐户|不支持。|
+|委派 (个人 Microsoft 帐户|不支持。|
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -49,7 +49,7 @@ GET /financials/companies/{id}/dimensions/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和**维度**对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **维度** 对象。
 
 ## <a name="example"></a>示例
 
@@ -74,4 +74,6 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/dimensions/{id}
   "lastModifiedDateTime": "2017-03-17T19:02:22.043Z"
 }
 ```
+
+
 

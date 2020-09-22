@@ -6,16 +6,16 @@ title: 上传小文件
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: d2b8ec57487d5ffe165645c5046a0edbc5347b9c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 89253f65fbb18a8165cefbb11cc88a88b13787b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432416"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981892"
 ---
 # <a name="upload-or-replace-the-contents-of-a-driveitem"></a>上传或替换 driveItem 的内容
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -80,7 +80,7 @@ The contents of the file goes here.
 
 ### <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回新创建或更新的文件的[driveItem][item-resource]资源。
+如果成功，此方法在响应正文中返回新创建或更新的文件的 [driveItem][item-resource] 资源。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -156,3 +156,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

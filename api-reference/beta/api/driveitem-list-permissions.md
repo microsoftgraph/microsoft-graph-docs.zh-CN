@@ -6,20 +6,20 @@ title: 列出有权访问文件的权限
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 985ad70dfe60b5bc5a8c606bac6782cc0d08141b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8900d92858c76619136c3527b68de1ab93813439
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432514"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981966"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>列出对 driveItem 的共享权限
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出[driveItem](../resources/driveitem.md)的有效共享权限。
+列出 [driveItem](../resources/driveitem.md)的有效共享权限。
 
 ## <a name="access-to-sharing-permissions"></a>访问共享权限
 
@@ -172,3 +172,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

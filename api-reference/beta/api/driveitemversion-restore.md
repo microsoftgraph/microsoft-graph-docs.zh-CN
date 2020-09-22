@@ -6,16 +6,16 @@ title: 还原以前的版本
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 92b504266c743197aa7584a75f1774eb207ea596
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca944b58941ae9951510dcea5edcb8dcda751efd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432171"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981814"
 ---
 # <a name="restore-a-previous-version-of-a-driveitem"></a>还原 DriveItem 的以前版本
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -96,3 +96,5 @@ HTTP/1.1 204 No content
   ]
 }
 -->
+
+

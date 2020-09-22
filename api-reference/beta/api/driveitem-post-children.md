@@ -6,16 +6,16 @@ title: 新建文件夹
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 0ae06ebefc6b15e41b26b34727b34556b0f589f6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c6e0c249d0201fd4fb9b60af317fa599a86ce968
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432472"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981924"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>在驱动器中新建文件夹
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -146,3 +146,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

@@ -6,20 +6,20 @@ author: JeremyKelley
 ms.prod: ''
 ms.date: 08/06/2019
 doc_type: apiPageType
-ms.openlocfilehash: b2dbdca5ff9ab0c55a721b0d47db174ed00bf8c5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fc2d7e73fb3c3ad781025e84166845dc84c3bdde
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432409"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981889"
 ---
 # <a name="driveitem-restore"></a>driveItem： restore
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-还原已删除且当前在回收站中的[driveItem](../resources/driveitem.md) 。 **注意**：此功能目前仅适用于 OneDrive 个人版。
+还原已删除且当前在回收站中的 [driveItem](../resources/driveitem.md) 。 **注意**：此功能目前仅适用于 OneDrive 个人版。
 
 ## <a name="permissions"></a>权限
 
@@ -56,7 +56,7 @@ POST /me/drive/items/{item-id}/restore
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`200 OK`响应正文中返回响应代码和还原的[driveItem](../resources/driveitem.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和还原的 [driveItem](../resources/driveitem.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -133,3 +133,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Items/Restore"
 }-->
+
+

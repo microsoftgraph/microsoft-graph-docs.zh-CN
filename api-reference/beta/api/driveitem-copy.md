@@ -1,21 +1,21 @@
 ---
 author: JeremyKelley
-description: 在新的父项下或使用新名称异步创建 [driveItem] [item-resource] 的副本（包括任何子级）。
+description: 以异步方式创建 [driveItem] [item-resource] (的副本，其中包括在新的父项或新名称下的任何子级) 。
 ms.date: 09/10/2017
 title: 复制文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8a52a97b961daa5e21b398dc6dc3f00d182de77f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2c4c95e90a81d5336914b3638119f4802f86aea1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432913"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982141"
 ---
 # <a name="copy-a-driveitem"></a>复制 DriveItem
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -121,3 +121,5 @@ Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B
   ]
 }
 -->
+
+

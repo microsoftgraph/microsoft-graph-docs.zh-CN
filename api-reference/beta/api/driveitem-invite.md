@@ -6,12 +6,12 @@ title: 发送邀请以访问项目
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 594df009c38ff1d7384207e7486392f24d7a8dbd
-ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
+ms.openlocfilehash: fdcae44f4d9be14fee4d9da81a96cc9c063ab061
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43146399"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982023"
 ---
 # <a name="send-a-sharing-invitation"></a>发送共享邀请
 
@@ -153,7 +153,7 @@ Content-type: application/json
 
 当邀请多个收件人时，通知可能会成功，其他人也会失败。
 在这种情况下，服务将返回 HTTP 状态代码为207的部分成功响应。
-当返回部分成功时，每个失败的收件人的响应将包含`error`一个对象，其中包含有关出错的信息以及如何修复。
+当返回部分成功时，每个失败的收件人的响应将包含一个对象，其中包含有关出错的 `error` 信息以及如何修复。
 
 下面的示例展示了部分响应。  
 
@@ -207,12 +207,12 @@ Content-type: application/json
 }
 ```
 ### <a name="sendnotification-errors"></a>SendNotification 错误
-以下是在发送通知失败时，应用可能会在嵌套`innererror`的对象中遇到的一些其他错误。 应用程序不需要处理这些。
+以下是在 `innererror` 发送通知失败时，应用可能会在嵌套的对象中遇到的一些其他错误。 应用程序不需要处理这些。
 
 | 代码                           | 说明
 |:-------------------------------|:--------------------------------------------------------------------------------------
 | accountVerificationRequired    | 若要取消阻止发送通知，需要进行帐户验证。
-| hipCheckRequired               | 需要解决 HIP （主机入侵防护）检查以取消阻止发送通知。
+| hipCheckRequired               | 需要解决 HIP (主机入侵防护) 检查以取消阻止发送通知。
 | exchangeInvalidUser            | 找不到当前用户的邮箱。
 | exchangeOutOfMailboxQuota      | 配额不足。
 | exchangeMaxRecipients          | 超过了可以同时发送通知的收件人的最大数量。
@@ -222,7 +222,7 @@ Content-type: application/json
 ## <a name="remarks"></a>备注
 
 * **driveType** 为 `personal` 的 [Drives](../resources/drive.md)（OneDrive 个人版）无法创建或修改根 DriveItem 上的权限。
-* 有关可用角色的列表，请参阅[roles 属性值](../resources/permission.md#roles-property-values)。
+* 有关可用角色的列表，请参阅 [roles 属性值](../resources/permission.md#roles-property-values)。
 
 ## <a name="error-responses"></a>错误响应
 
@@ -242,3 +242,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

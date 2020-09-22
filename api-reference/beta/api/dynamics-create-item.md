@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: eeeb6a2143963803dc9b6ba06a2e780d7c7fab02
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 25c56b0c2a65454d93b900706cb54977e912069f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431513"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981686"
 ---
 # <a name="create-items"></a>创建项目
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42431513"
 |权限类型 |权限（从最低特权到最高特权）|
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
-|委派（个人 Microsoft 帐户|不支持。|
+|委派 (个人 Microsoft 帐户|不支持。|
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -46,10 +46,10 @@ POST /financials/companies/{id}/items
 |Content-Type |application/json         |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供**items**对象的 JSON 表示形式。
+在请求正文中，提供 **items** 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法在```201 Created```响应正文中返回响应代码和**items**对象。
+如果成功，此方法 ```201 Created``` 在响应正文中返回响应代码和 **items** 对象。
 
 ## <a name="example"></a>示例
 **请求**
@@ -94,4 +94,6 @@ Content-type: application/json
   "lastModifiedDateTime": "2015-11-09T02:14:32Z"
 }
 ```
+
+
 

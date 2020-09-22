@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: JeremyKelley
-ms.openlocfilehash: c30e88e8efd63c79e66027d754f35bad8163f5aa
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: f56f62fdd0244a5bc3a014cae4ad4bc9151181c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47842748"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981882"
 ---
 # <a name="driveitem-preview"></a>driveItem： preview
 
@@ -117,3 +117,5 @@ param1=value&param2=another%20value
 ### <a name="pagezoom"></a>页面/缩放
 
 "" 和 "" `page` `zoom` 选项可能不适用于所有预览版应用，但如果预览应用支持它，则将应用 "" 和 "" 选项。
+
+

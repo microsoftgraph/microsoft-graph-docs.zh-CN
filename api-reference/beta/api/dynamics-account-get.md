@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 19ef71bd9103ffe257d5a0201e1fde322a78dd0c
-ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
+ms.openlocfilehash: ebf53db9904b7df506f36fb519b21980eab44121
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45142209"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981798"
 ---
 # <a name="get-accounts"></a>获取帐户
 
@@ -28,7 +28,7 @@ ms.locfileid: "45142209"
 |权限类型 |权限（从最低特权到最高特权）|
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
-|委派（个人 Microsoft 帐户|不支持。|
+|委派 (个人 Microsoft 帐户|不支持。|
 |应用程序|Financials.ReadWrite.All|
 
 
@@ -49,11 +49,11 @@ GET /financials/companies/{id}/accounts/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和**accounts**对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **accounts** 对象。
 
 ## <a name="example"></a>示例
 
-**请求**下面是一个请求示例。
+**请求** 下面是一个请求示例。
 
 ```json
 GET https://graph.microsoft.com/beta/financials/companies/{id}/accounts/{id}
@@ -76,3 +76,5 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/accounts/{id}
     "lastModifiedDateTime": "2017-03-15T02:20:58.747Z"
 }
 ```
+
+

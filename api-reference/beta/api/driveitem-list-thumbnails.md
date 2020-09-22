@@ -6,16 +6,16 @@ title: 检索文件或文件夹的缩略图
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: be3c85dd72410b84b7fac49fe1e8794d56beab05
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0642df89f46574b2bc6136d50f0cb4ab113295e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432521"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981987"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>列出 DriveItem 的缩略图
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -60,7 +60,7 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 此方法支持使用 `$select`[OData 查询参数](/graph/query-parameters)自定义响应。
 
-此外，此方法支持检索具有原始方向 EXIF 值的缩略图，并且不通过追加`originalOrientation=true`查询参数来使用应用旋转。
+此外，此方法支持检索具有原始方向 EXIF 值的缩略图，并且不通过追加查询参数来使用应用旋转 `originalOrientation=true` 。
 此项当前仅在 OneDrive 个人版上受支持。
 
 ## <a name="response"></a>响应
@@ -284,7 +284,7 @@ Content-type: application/json
 
 | 名称           | 分辨率  | 纵横比​​ | 说明                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
-| `small`        | 96 longest  | 原始大小     | 小型的高压缩缩略图，裁剪为正方形纵横比。 |
+| `small`        | 96 longest  | Original     | 小型的高压缩缩略图，裁剪为正方形纵横比。 |
 | `medium`       | 176 longest | Original     | 裁剪为 OneDrive Web 视图的标准项目大小。         |
 | `large`        | 800 longest
  | Original     | 最长边重设为 800 像素的缩略图。               |
@@ -377,3 +377,5 @@ SharePoint Server 2016 不支持缩略图。
   ]
 }
 -->
+
+

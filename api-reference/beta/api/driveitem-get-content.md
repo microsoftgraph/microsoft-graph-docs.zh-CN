@@ -6,16 +6,16 @@ title: 下载文件
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f18e10e6c81bad8a56603eea84fc4c5a193b1c23
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a3c25878d587001c5948691b723587c35272e662
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432584"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982037"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>下载 DriveItem 的内容
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -131,3 +131,5 @@ Content-Range: bytes 0-1023/2048
   ]
 }
 -->
+
+

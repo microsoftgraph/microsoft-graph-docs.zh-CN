@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: JeremyKelley
-ms.openlocfilehash: cdbc2bd13704d6562ab05e98793f847e1237cd4b
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 9f5087b4a30d087813ebcffccc553cd793d19e3c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808877"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981952"
 ---
 # <a name="listing-versions-of-a-driveitem"></a>列出 DriveItem 的版本
 
@@ -147,3 +147,5 @@ OneDrive 不保留文件以前版本的完整元数据。
   ]
 }
 -->
+
+

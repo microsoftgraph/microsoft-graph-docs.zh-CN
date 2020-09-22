@@ -6,16 +6,16 @@ title: 获取文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e496682671eea4a7cebfca72789d5d85fe9f3366
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ee46dfde6ca18520dbafe949248ead4e899a1c38
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432577"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982024"
 ---
 # <a name="get-a-driveitem-resource"></a>获取 DriveItem 资源
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "42432577"
 |委派（个人 Microsoft 帐户） | Files.Read、Files.ReadWrite、Files.Read.All、Files.ReadWrite.All    |
 |应用程序 | Files.Read.All、Files.ReadWrite.All </br>Group.Read.All、Group.ReadWrite.All </br>Sites.Read.All、Sites.ReadWrite.All |
 
-> 注意： `/teams`终结点需要使用 Group。 Read. All 或 Group. 所有权限。
+> 注意： `/teams` 终结点需要使用 Group。 Read. all 或 Group. 所有权限。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -57,8 +57,8 @@ GET /users/{userId}/drive/root:/{item-path}
 
 如果某个项具有**子项**关系，在检索该项的元数据时可以使用 [`$expand` 查询字符串参数](/graph/query-parameters) 来包括同一调用中的项的子项。
 
-您还可以使用`includeDeletedItems=true`查询参数返回已删除的项目。
-此查询参数仅在以[driveItem](../resources/driveitem.md) by ID 为目标时才有效，否则将被忽略。
+您还可以使用 `includeDeletedItems=true` 查询参数返回已删除的项目。
+此查询参数仅在以 [driveItem](../resources/driveitem.md) by ID 为目标时才有效，否则将被忽略。
 此项当前仅在 OneDrive 个人版上受支持。
 
 ## <a name="optional-request-headers"></a>可选的请求标头
@@ -153,3 +153,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

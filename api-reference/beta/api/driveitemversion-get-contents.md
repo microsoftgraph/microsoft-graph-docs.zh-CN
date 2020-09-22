@@ -6,22 +6,22 @@ title: 下载早期版本
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: d24688e5ecd5affa938dc2acc52112783d7f2181
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1c342a870cd8649489f4ceeb80d6afc2e729fbe5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432290"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981811"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource-preview"></a>下载 DriveItemVersion 资源的内容（预览版）
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[driveItem](../resources/driveitem.md)的特定版本的内容。 
+检索 [driveItem](../resources/driveitem.md)的特定版本的内容。 
 
->**注意：** 不支持获取当前版本的内容。 而是使用[driveItem 内容终结点](driveitem-get-content.md)。
+>**注意：** 不支持获取当前版本的内容。 而是使用 [driveItem 内容终结点](driveitem-get-content.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -98,7 +98,7 @@ Location: https://onedrive.com/34FF49D6...
 
 OneDrive 不保留文件以前版本的完整元数据。
 
-当您的应用程序检索文件的可用版本列表时，将返回[driveItemVersion](../resources/driveitemversion.md)资源，它提供有关特定版本的可用信息。
+当您的应用程序检索文件的可用版本列表时，将返回 [driveItemVersion](../resources/driveitemversion.md) 资源，它提供有关特定版本的可用信息。
 
 <!--
 {
@@ -111,3 +111,5 @@ OneDrive 不保留文件以前版本的完整元数据。
   ]
 }
 -->
+
+

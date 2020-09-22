@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 3c90808de4f07e45ded7c215577fff6916a59978
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 529c56634579167d5cab3abd6a27634678087d75
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431429"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981658"
 ---
 # <a name="create-journals"></a>创建日记
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42431429"
 |权限类型 |权限（从最低特权到最高特权）|
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
-|委派（个人 Microsoft 帐户|不支持。|
+|委派 (个人 Microsoft 帐户|不支持。|
 |应用程序|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -47,10 +47,10 @@ POST /financials/companies/{id}/journals/{id}
 |Content-Type  |application/json          |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供**日记**对象的 JSON 表示形式。
+在请求正文中，提供 **日记** 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法在```201 Created```响应正文中返回响应代码和**日记**对象。
+如果成功，此方法 ```201 Created``` 在响应正文中返回响应代码和 **日记** 对象。
 
 ## <a name="example"></a>示例
 
@@ -81,4 +81,6 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-05-17T11:30:01.313Z"
 }
 ```
+
+
 
