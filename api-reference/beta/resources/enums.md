@@ -5,1355 +5,1388 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 04d6b7a92a7e2ee2acf8ad539c055286326310af
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 185119e86bab747d7889d8b0f592b4ffadc4f094
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071253"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193433"
 ---
-# <a name="enum-values"></a><span data-ttu-id="14006-103">枚举值</span><span class="sxs-lookup"><span data-stu-id="14006-103">Enum values</span></span>
+# <a name="enum-values"></a><span data-ttu-id="ae0e4-103">枚举值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-103">Enum values</span></span>
 
-<span data-ttu-id="14006-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="14006-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ae0e4-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ae0e4-104">Namespace: microsoft.graph</span></span>
 
-### <a name="volumetype-values"></a><span data-ttu-id="14006-105">volumeType 值</span><span class="sxs-lookup"><span data-stu-id="14006-105">volumeType values</span></span> 
+### <a name="volumetype-values"></a><span data-ttu-id="ae0e4-105">volumeType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-105">volumeType values</span></span>
 
-| <span data-ttu-id="14006-106">成员</span><span class="sxs-lookup"><span data-stu-id="14006-106">Member</span></span>
+| <span data-ttu-id="ae0e4-106">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-106">Member</span></span>
 |:--------------
-| <span data-ttu-id="14006-107">operatingSystemVolume</span><span class="sxs-lookup"><span data-stu-id="14006-107">operatingSystemVolume</span></span>
-| <span data-ttu-id="14006-108">fixedDataVolume</span><span class="sxs-lookup"><span data-stu-id="14006-108">fixedDataVolume</span></span>
-| <span data-ttu-id="14006-109">removableDataVolume</span><span class="sxs-lookup"><span data-stu-id="14006-109">removableDataVolume</span></span>
-| <span data-ttu-id="14006-110">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-110">unknownFutureValue</span></span>
+| <span data-ttu-id="ae0e4-107">operatingSystemVolume</span><span class="sxs-lookup"><span data-stu-id="ae0e4-107">operatingSystemVolume</span></span>
+| <span data-ttu-id="ae0e4-108">fixedDataVolume</span><span class="sxs-lookup"><span data-stu-id="ae0e4-108">fixedDataVolume</span></span>
+| <span data-ttu-id="ae0e4-109">removableDataVolume</span><span class="sxs-lookup"><span data-stu-id="ae0e4-109">removableDataVolume</span></span>
+| <span data-ttu-id="ae0e4-110">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-110">unknownFutureValue</span></span>
 
-### <a name="allowedaudiences-values"></a><span data-ttu-id="14006-111">allowedAudiences 值</span><span class="sxs-lookup"><span data-stu-id="14006-111">allowedAudiences values</span></span>
+### <a name="allowedaudiences-values"></a><span data-ttu-id="ae0e4-111">allowedAudiences 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-111">allowedAudiences values</span></span>
 
-|<span data-ttu-id="14006-112">成员</span><span class="sxs-lookup"><span data-stu-id="14006-112">Member</span></span>|
+|<span data-ttu-id="ae0e4-112">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-112">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-113">me</span><span class="sxs-lookup"><span data-stu-id="14006-113">me</span></span>|
-|<span data-ttu-id="14006-114">家长</span><span class="sxs-lookup"><span data-stu-id="14006-114">family</span></span>|
-|<span data-ttu-id="14006-115">contacts</span><span class="sxs-lookup"><span data-stu-id="14006-115">contacts</span></span>|
-|<span data-ttu-id="14006-116">groupMembers</span><span class="sxs-lookup"><span data-stu-id="14006-116">groupMembers</span></span>|
-|<span data-ttu-id="14006-117">组织</span><span class="sxs-lookup"><span data-stu-id="14006-117">organization</span></span>|
-|<span data-ttu-id="14006-118">federatedOrganizations</span><span class="sxs-lookup"><span data-stu-id="14006-118">federatedOrganizations</span></span>|
-|<span data-ttu-id="14006-119">成员</span><span class="sxs-lookup"><span data-stu-id="14006-119">everyone</span></span>|
-|<span data-ttu-id="14006-120">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-120">unknownFutureValue</span></span>|
+|<span data-ttu-id="ae0e4-113">me</span><span class="sxs-lookup"><span data-stu-id="ae0e4-113">me</span></span>|
+|<span data-ttu-id="ae0e4-114">家长</span><span class="sxs-lookup"><span data-stu-id="ae0e4-114">family</span></span>|
+|<span data-ttu-id="ae0e4-115">contacts</span><span class="sxs-lookup"><span data-stu-id="ae0e4-115">contacts</span></span>|
+|<span data-ttu-id="ae0e4-116">groupMembers</span><span class="sxs-lookup"><span data-stu-id="ae0e4-116">groupMembers</span></span>|
+|<span data-ttu-id="ae0e4-117">组织</span><span class="sxs-lookup"><span data-stu-id="ae0e4-117">organization</span></span>|
+|<span data-ttu-id="ae0e4-118">federatedOrganizations</span><span class="sxs-lookup"><span data-stu-id="ae0e4-118">federatedOrganizations</span></span>|
+|<span data-ttu-id="ae0e4-119">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-119">everyone</span></span>|
+|<span data-ttu-id="ae0e4-120">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-120">unknownFutureValue</span></span>|
 
-### <a name="emailtype-values"></a><span data-ttu-id="14006-121">emailType 值</span><span class="sxs-lookup"><span data-stu-id="14006-121">emailType values</span></span>
+### <a name="emailtype-values"></a><span data-ttu-id="ae0e4-121">emailType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-121">emailType values</span></span>
 
-|<span data-ttu-id="14006-122">成员</span><span class="sxs-lookup"><span data-stu-id="14006-122">Member</span></span>|
+|<span data-ttu-id="ae0e4-122">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-122">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-123">unknown</span><span class="sxs-lookup"><span data-stu-id="14006-123">unknown</span></span>|
-|<span data-ttu-id="14006-124">工时</span><span class="sxs-lookup"><span data-stu-id="14006-124">work</span></span>|
-|<span data-ttu-id="14006-125">personal</span><span class="sxs-lookup"><span data-stu-id="14006-125">personal</span></span>|
-|<span data-ttu-id="14006-126">spy</span><span class="sxs-lookup"><span data-stu-id="14006-126">main</span></span>|
-|<span data-ttu-id="14006-127">相互</span><span class="sxs-lookup"><span data-stu-id="14006-127">other</span></span>|
+|<span data-ttu-id="ae0e4-123">unknown</span><span class="sxs-lookup"><span data-stu-id="ae0e4-123">unknown</span></span>|
+|<span data-ttu-id="ae0e4-124">工时</span><span class="sxs-lookup"><span data-stu-id="ae0e4-124">work</span></span>|
+|<span data-ttu-id="ae0e4-125">personal</span><span class="sxs-lookup"><span data-stu-id="ae0e4-125">personal</span></span>|
+|<span data-ttu-id="ae0e4-126">spy</span><span class="sxs-lookup"><span data-stu-id="ae0e4-126">main</span></span>|
+|<span data-ttu-id="ae0e4-127">相互</span><span class="sxs-lookup"><span data-stu-id="ae0e4-127">other</span></span>|
 
-### <a name="anniversarytype-values"></a><span data-ttu-id="14006-128">anniversaryType 值</span><span class="sxs-lookup"><span data-stu-id="14006-128">anniversaryType values</span></span> 
+### <a name="anniversarytype-values"></a><span data-ttu-id="ae0e4-128">anniversaryType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-128">anniversaryType values</span></span>
 
-|<span data-ttu-id="14006-129">成员</span><span class="sxs-lookup"><span data-stu-id="14006-129">Member</span></span>|
+|<span data-ttu-id="ae0e4-129">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-129">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-130">birthday</span><span class="sxs-lookup"><span data-stu-id="14006-130">birthday</span></span>|
-|<span data-ttu-id="14006-131">筹划</span><span class="sxs-lookup"><span data-stu-id="14006-131">wedding</span></span>|
-|<span data-ttu-id="14006-132">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-132">unknownFutureValue</span></span>|
+|<span data-ttu-id="ae0e4-130">birthday</span><span class="sxs-lookup"><span data-stu-id="ae0e4-130">birthday</span></span>|
+|<span data-ttu-id="ae0e4-131">筹划</span><span class="sxs-lookup"><span data-stu-id="ae0e4-131">wedding</span></span>|
+|<span data-ttu-id="ae0e4-132">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-132">unknownFutureValue</span></span>|
 
-### <a name="skillproficiencylevel-values"></a><span data-ttu-id="14006-133">skillProficiencyLevel 值</span><span class="sxs-lookup"><span data-stu-id="14006-133">skillProficiencyLevel values</span></span> 
+### <a name="skillproficiencylevel-values"></a><span data-ttu-id="ae0e4-133">skillProficiencyLevel 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-133">skillProficiencyLevel values</span></span>
 
-|<span data-ttu-id="14006-134">成员</span><span class="sxs-lookup"><span data-stu-id="14006-134">Member</span></span>|
+|<span data-ttu-id="ae0e4-134">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-134">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-135">初级</span><span class="sxs-lookup"><span data-stu-id="14006-135">elementary</span></span>|
-|<span data-ttu-id="14006-136">limitedWorking</span><span class="sxs-lookup"><span data-stu-id="14006-136">limitedWorking</span></span>|
-|<span data-ttu-id="14006-137">generalProfessional</span><span class="sxs-lookup"><span data-stu-id="14006-137">generalProfessional</span></span>|
-|<span data-ttu-id="14006-138">advancedProfessional</span><span class="sxs-lookup"><span data-stu-id="14006-138">advancedProfessional</span></span>|
-|<span data-ttu-id="14006-139">处理器</span><span class="sxs-lookup"><span data-stu-id="14006-139">expert</span></span>|
-|<span data-ttu-id="14006-140">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-140">unknownFutureValue</span></span>|
+|<span data-ttu-id="ae0e4-135">初级</span><span class="sxs-lookup"><span data-stu-id="ae0e4-135">elementary</span></span>|
+|<span data-ttu-id="ae0e4-136">limitedWorking</span><span class="sxs-lookup"><span data-stu-id="ae0e4-136">limitedWorking</span></span>|
+|<span data-ttu-id="ae0e4-137">generalProfessional</span><span class="sxs-lookup"><span data-stu-id="ae0e4-137">generalProfessional</span></span>|
+|<span data-ttu-id="ae0e4-138">advancedProfessional</span><span class="sxs-lookup"><span data-stu-id="ae0e4-138">advancedProfessional</span></span>|
+|<span data-ttu-id="ae0e4-139">处理器</span><span class="sxs-lookup"><span data-stu-id="ae0e4-139">expert</span></span>|
+|<span data-ttu-id="ae0e4-140">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-140">unknownFutureValue</span></span>|
 
-### <a name="languageproficiencylevel-values"></a><span data-ttu-id="14006-141">languageProficiencyLevel 值</span><span class="sxs-lookup"><span data-stu-id="14006-141">languageProficiencyLevel values</span></span> 
+### <a name="languageproficiencylevel-values"></a><span data-ttu-id="ae0e4-141">languageProficiencyLevel 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-141">languageProficiencyLevel values</span></span>
 
-|<span data-ttu-id="14006-142">成员</span><span class="sxs-lookup"><span data-stu-id="14006-142">Member</span></span>|
+|<span data-ttu-id="ae0e4-142">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-142">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-143">初级</span><span class="sxs-lookup"><span data-stu-id="14006-143">elementary</span></span>|
-|<span data-ttu-id="14006-144">对话</span><span class="sxs-lookup"><span data-stu-id="14006-144">conversational</span></span>|
-|<span data-ttu-id="14006-145">limitedWorking</span><span class="sxs-lookup"><span data-stu-id="14006-145">limitedWorking</span></span>|
-|<span data-ttu-id="14006-146">professionalWorking</span><span class="sxs-lookup"><span data-stu-id="14006-146">professionalWorking</span></span>|
-|<span data-ttu-id="14006-147">fullProfessional</span><span class="sxs-lookup"><span data-stu-id="14006-147">fullProfessional</span></span>|
-|<span data-ttu-id="14006-148">nativeOrBilingual</span><span class="sxs-lookup"><span data-stu-id="14006-148">nativeOrBilingual</span></span>|
-|<span data-ttu-id="14006-149">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-149">unknownFutureValue</span></span>|
+|<span data-ttu-id="ae0e4-143">初级</span><span class="sxs-lookup"><span data-stu-id="ae0e4-143">elementary</span></span>|
+|<span data-ttu-id="ae0e4-144">对话</span><span class="sxs-lookup"><span data-stu-id="ae0e4-144">conversational</span></span>|
+|<span data-ttu-id="ae0e4-145">limitedWorking</span><span class="sxs-lookup"><span data-stu-id="ae0e4-145">limitedWorking</span></span>|
+|<span data-ttu-id="ae0e4-146">professionalWorking</span><span class="sxs-lookup"><span data-stu-id="ae0e4-146">professionalWorking</span></span>|
+|<span data-ttu-id="ae0e4-147">fullProfessional</span><span class="sxs-lookup"><span data-stu-id="ae0e4-147">fullProfessional</span></span>|
+|<span data-ttu-id="ae0e4-148">nativeOrBilingual</span><span class="sxs-lookup"><span data-stu-id="ae0e4-148">nativeOrBilingual</span></span>|
+|<span data-ttu-id="ae0e4-149">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-149">unknownFutureValue</span></span>|
 
-### <a name="personrelationship-values"></a><span data-ttu-id="14006-150">personRelationship 值</span><span class="sxs-lookup"><span data-stu-id="14006-150">personRelationship values</span></span> 
+### <a name="personrelationship-values"></a><span data-ttu-id="ae0e4-150">personRelationship 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-150">personRelationship values</span></span>
 
-|<span data-ttu-id="14006-151">成员</span><span class="sxs-lookup"><span data-stu-id="14006-151">Member</span></span>|
+|<span data-ttu-id="ae0e4-151">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-151">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-152">manager</span><span class="sxs-lookup"><span data-stu-id="14006-152">manager</span></span>|
-|<span data-ttu-id="14006-153">同事</span><span class="sxs-lookup"><span data-stu-id="14006-153">colleague</span></span>|
-|<span data-ttu-id="14006-154">directReport</span><span class="sxs-lookup"><span data-stu-id="14006-154">directReport</span></span>|
-|<span data-ttu-id="14006-155">dotLineReport</span><span class="sxs-lookup"><span data-stu-id="14006-155">dotLineReport</span></span>|
-|<span data-ttu-id="14006-156">协助</span><span class="sxs-lookup"><span data-stu-id="14006-156">assistant</span></span>|
-|<span data-ttu-id="14006-157">dotLineManager</span><span class="sxs-lookup"><span data-stu-id="14006-157">dotLineManager</span></span>|
-|<span data-ttu-id="14006-158">alternateContact</span><span class="sxs-lookup"><span data-stu-id="14006-158">alternateContact</span></span>|
-|<span data-ttu-id="14006-159">给</span><span class="sxs-lookup"><span data-stu-id="14006-159">friend</span></span>|
-|<span data-ttu-id="14006-160">姓名</span><span class="sxs-lookup"><span data-stu-id="14006-160">spouse</span></span>|
-|<span data-ttu-id="14006-161">同辈</span><span class="sxs-lookup"><span data-stu-id="14006-161">sibling</span></span>|
-|<span data-ttu-id="14006-162">该子</span><span class="sxs-lookup"><span data-stu-id="14006-162">child</span></span>|
-|<span data-ttu-id="14006-163">父级</span><span class="sxs-lookup"><span data-stu-id="14006-163">parent</span></span>|
-|<span data-ttu-id="14006-164">发起人</span><span class="sxs-lookup"><span data-stu-id="14006-164">sponsor</span></span>|
-|<span data-ttu-id="14006-165">emergencyContact</span><span class="sxs-lookup"><span data-stu-id="14006-165">emergencyContact</span></span>|
-|<span data-ttu-id="14006-166">相互</span><span class="sxs-lookup"><span data-stu-id="14006-166">other</span></span>|
-|<span data-ttu-id="14006-167">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-167">unknownFutureValue</span></span>|
+|<span data-ttu-id="ae0e4-152">manager</span><span class="sxs-lookup"><span data-stu-id="ae0e4-152">manager</span></span>|
+|<span data-ttu-id="ae0e4-153">同事</span><span class="sxs-lookup"><span data-stu-id="ae0e4-153">colleague</span></span>|
+|<span data-ttu-id="ae0e4-154">directReport</span><span class="sxs-lookup"><span data-stu-id="ae0e4-154">directReport</span></span>|
+|<span data-ttu-id="ae0e4-155">dotLineReport</span><span class="sxs-lookup"><span data-stu-id="ae0e4-155">dotLineReport</span></span>|
+|<span data-ttu-id="ae0e4-156">协助</span><span class="sxs-lookup"><span data-stu-id="ae0e4-156">assistant</span></span>|
+|<span data-ttu-id="ae0e4-157">dotLineManager</span><span class="sxs-lookup"><span data-stu-id="ae0e4-157">dotLineManager</span></span>|
+|<span data-ttu-id="ae0e4-158">alternateContact</span><span class="sxs-lookup"><span data-stu-id="ae0e4-158">alternateContact</span></span>|
+|<span data-ttu-id="ae0e4-159">给</span><span class="sxs-lookup"><span data-stu-id="ae0e4-159">friend</span></span>|
+|<span data-ttu-id="ae0e4-160">姓名</span><span class="sxs-lookup"><span data-stu-id="ae0e4-160">spouse</span></span>|
+|<span data-ttu-id="ae0e4-161">同辈</span><span class="sxs-lookup"><span data-stu-id="ae0e4-161">sibling</span></span>|
+|<span data-ttu-id="ae0e4-162">该子</span><span class="sxs-lookup"><span data-stu-id="ae0e4-162">child</span></span>|
+|<span data-ttu-id="ae0e4-163">父级</span><span class="sxs-lookup"><span data-stu-id="ae0e4-163">parent</span></span>|
+|<span data-ttu-id="ae0e4-164">发起人</span><span class="sxs-lookup"><span data-stu-id="ae0e4-164">sponsor</span></span>|
+|<span data-ttu-id="ae0e4-165">emergencyContact</span><span class="sxs-lookup"><span data-stu-id="ae0e4-165">emergencyContact</span></span>|
+|<span data-ttu-id="ae0e4-166">相互</span><span class="sxs-lookup"><span data-stu-id="ae0e4-166">other</span></span>|
+|<span data-ttu-id="ae0e4-167">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-167">unknownFutureValue</span></span>|
 
-### <a name="attachmenttype-values"></a><span data-ttu-id="14006-168">attachmentType 值</span><span class="sxs-lookup"><span data-stu-id="14006-168">attachmentType values</span></span>
+### <a name="attachmenttype-values"></a><span data-ttu-id="ae0e4-168">attachmentType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-168">attachmentType values</span></span>
 
-| <span data-ttu-id="14006-169">成员</span><span class="sxs-lookup"><span data-stu-id="14006-169">Member</span></span>
+| <span data-ttu-id="ae0e4-169">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-169">Member</span></span>
 |:--------------
-| <span data-ttu-id="14006-170">file</span><span class="sxs-lookup"><span data-stu-id="14006-170">file</span></span>
-| <span data-ttu-id="14006-171">项</span><span class="sxs-lookup"><span data-stu-id="14006-171">item</span></span>
-| <span data-ttu-id="14006-172">参考</span><span class="sxs-lookup"><span data-stu-id="14006-172">reference</span></span>
+| <span data-ttu-id="ae0e4-170">file</span><span class="sxs-lookup"><span data-stu-id="ae0e4-170">file</span></span>
+| <span data-ttu-id="ae0e4-171">项</span><span class="sxs-lookup"><span data-stu-id="ae0e4-171">item</span></span>
+| <span data-ttu-id="ae0e4-172">参考</span><span class="sxs-lookup"><span data-stu-id="ae0e4-172">reference</span></span>
 
-### <a name="analyticsactivitytype-values"></a><span data-ttu-id="14006-173">analyticsActivityType 值</span><span class="sxs-lookup"><span data-stu-id="14006-173">analyticsActivityType values</span></span>
+### <a name="analyticsactivitytype-values"></a><span data-ttu-id="ae0e4-173">analyticsActivityType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-173">analyticsActivityType values</span></span>
 
-| <span data-ttu-id="14006-174">成员</span><span class="sxs-lookup"><span data-stu-id="14006-174">Member</span></span>
+| <span data-ttu-id="ae0e4-174">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-174">Member</span></span>
 |:--------------
-| <span data-ttu-id="14006-175">通话</span><span class="sxs-lookup"><span data-stu-id="14006-175">call</span></span>
-| <span data-ttu-id="14006-176">聊天</span><span class="sxs-lookup"><span data-stu-id="14006-176">chat</span></span>
-| <span data-ttu-id="14006-177">email</span><span class="sxs-lookup"><span data-stu-id="14006-177">email</span></span>
-| <span data-ttu-id="14006-178">焦点</span><span class="sxs-lookup"><span data-stu-id="14006-178">focus</span></span>
-| <span data-ttu-id="14006-179">要求</span><span class="sxs-lookup"><span data-stu-id="14006-179">meeting</span></span>
+| <span data-ttu-id="ae0e4-175">通话</span><span class="sxs-lookup"><span data-stu-id="ae0e4-175">call</span></span>
+| <span data-ttu-id="ae0e4-176">聊天</span><span class="sxs-lookup"><span data-stu-id="ae0e4-176">chat</span></span>
+| <span data-ttu-id="ae0e4-177">email</span><span class="sxs-lookup"><span data-stu-id="ae0e4-177">email</span></span>
+| <span data-ttu-id="ae0e4-178">焦点</span><span class="sxs-lookup"><span data-stu-id="ae0e4-178">focus</span></span>
+| <span data-ttu-id="ae0e4-179">要求</span><span class="sxs-lookup"><span data-stu-id="ae0e4-179">meeting</span></span>
 
-### <a name="registrationauthmethod-values"></a><span data-ttu-id="14006-180">registrationAuthMethod 值</span><span class="sxs-lookup"><span data-stu-id="14006-180">registrationAuthMethod values</span></span>
+### <a name="registrationauthmethod-values"></a><span data-ttu-id="ae0e4-180">registrationAuthMethod 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-180">registrationAuthMethod values</span></span>
 
-|<span data-ttu-id="14006-181">成员</span><span class="sxs-lookup"><span data-stu-id="14006-181">Member</span></span>|
+|<span data-ttu-id="ae0e4-181">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-181">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-182">email</span><span class="sxs-lookup"><span data-stu-id="14006-182">email</span></span>|
-|<span data-ttu-id="14006-183">mobilePhone</span><span class="sxs-lookup"><span data-stu-id="14006-183">mobilePhone</span></span>|
-|<span data-ttu-id="14006-184">officePhone</span><span class="sxs-lookup"><span data-stu-id="14006-184">officePhone</span></span>|
-|<span data-ttu-id="14006-185">securityQuestion</span><span class="sxs-lookup"><span data-stu-id="14006-185">securityQuestion</span></span>|
-|<span data-ttu-id="14006-186">appNotification</span><span class="sxs-lookup"><span data-stu-id="14006-186">appNotification</span></span>|
-|<span data-ttu-id="14006-187">appCode</span><span class="sxs-lookup"><span data-stu-id="14006-187">appCode</span></span>|
-|<span data-ttu-id="14006-188">alternateMobilePhone</span><span class="sxs-lookup"><span data-stu-id="14006-188">alternateMobilePhone</span></span>|
+|<span data-ttu-id="ae0e4-182">email</span><span class="sxs-lookup"><span data-stu-id="ae0e4-182">email</span></span>|
+|<span data-ttu-id="ae0e4-183">mobilePhone</span><span class="sxs-lookup"><span data-stu-id="ae0e4-183">mobilePhone</span></span>|
+|<span data-ttu-id="ae0e4-184">officePhone</span><span class="sxs-lookup"><span data-stu-id="ae0e4-184">officePhone</span></span>|
+|<span data-ttu-id="ae0e4-185">securityQuestion</span><span class="sxs-lookup"><span data-stu-id="ae0e4-185">securityQuestion</span></span>|
+|<span data-ttu-id="ae0e4-186">appNotification</span><span class="sxs-lookup"><span data-stu-id="ae0e4-186">appNotification</span></span>|
+|<span data-ttu-id="ae0e4-187">appCode</span><span class="sxs-lookup"><span data-stu-id="ae0e4-187">appCode</span></span>|
+|<span data-ttu-id="ae0e4-188">alternateMobilePhone</span><span class="sxs-lookup"><span data-stu-id="ae0e4-188">alternateMobilePhone</span></span>|
 
-### <a name="entitytypes-values"></a><span data-ttu-id="14006-189">entityTypes 值</span><span class="sxs-lookup"><span data-stu-id="14006-189">entityTypes values</span></span>
+### <a name="entitytypes-values"></a><span data-ttu-id="ae0e4-189">entityTypes 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-189">entityTypes values</span></span>
 
-|<span data-ttu-id="14006-190">成员</span><span class="sxs-lookup"><span data-stu-id="14006-190">Member</span></span>|
+|<span data-ttu-id="ae0e4-190">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-190">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-191">event</span><span class="sxs-lookup"><span data-stu-id="14006-191">event</span></span>|
-|<span data-ttu-id="14006-192">message</span><span class="sxs-lookup"><span data-stu-id="14006-192">message</span></span>|
-|<span data-ttu-id="14006-193">driveItem</span><span class="sxs-lookup"><span data-stu-id="14006-193">driveItem</span></span>|
-|<span data-ttu-id="14006-194">externalItem</span><span class="sxs-lookup"><span data-stu-id="14006-194">externalItem</span></span>|
+|<span data-ttu-id="ae0e4-191">event</span><span class="sxs-lookup"><span data-stu-id="ae0e4-191">event</span></span>|
+|<span data-ttu-id="ae0e4-192">message</span><span class="sxs-lookup"><span data-stu-id="ae0e4-192">message</span></span>|
+|<span data-ttu-id="ae0e4-193">driveItem</span><span class="sxs-lookup"><span data-stu-id="ae0e4-193">driveItem</span></span>|
+|<span data-ttu-id="ae0e4-194">externalItem</span><span class="sxs-lookup"><span data-stu-id="ae0e4-194">externalItem</span></span>|
+|<span data-ttu-id="ae0e4-195">网站</span><span class="sxs-lookup"><span data-stu-id="ae0e4-195">site</span></span>|
+|<span data-ttu-id="ae0e4-196">list</span><span class="sxs-lookup"><span data-stu-id="ae0e4-196">list</span></span>|
+|<span data-ttu-id="ae0e4-197">listItem</span><span class="sxs-lookup"><span data-stu-id="ae0e4-197">listItem</span></span>|
+|<span data-ttu-id="ae0e4-198">drive</span><span class="sxs-lookup"><span data-stu-id="ae0e4-198">drive</span></span>|
 
-### <a name="contactrelationship-values"></a><span data-ttu-id="14006-195">contactRelationship 值</span><span class="sxs-lookup"><span data-stu-id="14006-195">contactRelationship values</span></span>
+### <a name="bucketaggregationsortproperty-values"></a><span data-ttu-id="ae0e4-199">bucketAggregationSortProperty 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-199">bucketAggregationSortProperty values</span></span>
 
-| <span data-ttu-id="14006-196">成员</span><span class="sxs-lookup"><span data-stu-id="14006-196">Member</span></span>             | <span data-ttu-id="14006-197">值</span><span class="sxs-lookup"><span data-stu-id="14006-197">Value</span></span> | <span data-ttu-id="14006-198">说明</span><span class="sxs-lookup"><span data-stu-id="14006-198">Description</span></span>                              |
+|<span data-ttu-id="ae0e4-200">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-200">Member</span></span>|
+|:---|
+|<span data-ttu-id="ae0e4-201">count</span><span class="sxs-lookup"><span data-stu-id="ae0e4-201">count</span></span>|
+|<span data-ttu-id="ae0e4-202">keyAsString</span><span class="sxs-lookup"><span data-stu-id="ae0e4-202">keyAsString</span></span>|
+|<span data-ttu-id="ae0e4-203">keyAsNumber</span><span class="sxs-lookup"><span data-stu-id="ae0e4-203">keyAsNumber</span></span>|
+
+### <a name="contactrelationship-values"></a><span data-ttu-id="ae0e4-204">contactRelationship 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-204">contactRelationship values</span></span>
+
+| <span data-ttu-id="ae0e4-205">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-205">Member</span></span>             | <span data-ttu-id="ae0e4-206">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-206">Value</span></span> | <span data-ttu-id="ae0e4-207">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-207">Description</span></span>                              |
 | :----------------- | :---- | :--------------------------------------- |
-| <span data-ttu-id="14006-199">父级</span><span class="sxs-lookup"><span data-stu-id="14006-199">parent</span></span>             | <span data-ttu-id="14006-200">0</span><span class="sxs-lookup"><span data-stu-id="14006-200">0</span></span>     | <span data-ttu-id="14006-201">用户的父级。</span><span class="sxs-lookup"><span data-stu-id="14006-201">The user's parent.</span></span>                       |
-| <span data-ttu-id="14006-202">彼此</span><span class="sxs-lookup"><span data-stu-id="14006-202">relative</span></span>           | <span data-ttu-id="14006-203">1 </span><span class="sxs-lookup"><span data-stu-id="14006-203">1</span></span>     | <span data-ttu-id="14006-204">用户的相对路径。</span><span class="sxs-lookup"><span data-stu-id="14006-204">The user's relative.</span></span>                     |
-| <span data-ttu-id="14006-205">aide</span><span class="sxs-lookup"><span data-stu-id="14006-205">aide</span></span>               | <span data-ttu-id="14006-206">2 </span><span class="sxs-lookup"><span data-stu-id="14006-206">2</span></span>     | <span data-ttu-id="14006-207">用户的 aide。</span><span class="sxs-lookup"><span data-stu-id="14006-207">The user's aide.</span></span>                         |
-| <span data-ttu-id="14006-208">dr.</span><span class="sxs-lookup"><span data-stu-id="14006-208">doctor</span></span>             | <span data-ttu-id="14006-209">第三章</span><span class="sxs-lookup"><span data-stu-id="14006-209">3</span></span>     | <span data-ttu-id="14006-210">用户的医生。</span><span class="sxs-lookup"><span data-stu-id="14006-210">The user's doctor.</span></span>                       |
-| <span data-ttu-id="14006-211">监护</span><span class="sxs-lookup"><span data-stu-id="14006-211">guardian</span></span>           | <span data-ttu-id="14006-212">4 </span><span class="sxs-lookup"><span data-stu-id="14006-212">4</span></span>     | <span data-ttu-id="14006-213">用户的监护人。</span><span class="sxs-lookup"><span data-stu-id="14006-213">The user's guardian.</span></span>                     |
-| <span data-ttu-id="14006-214">该子</span><span class="sxs-lookup"><span data-stu-id="14006-214">child</span></span>              | <span data-ttu-id="14006-215">5 </span><span class="sxs-lookup"><span data-stu-id="14006-215">5</span></span>     | <span data-ttu-id="14006-216">用户的子级。</span><span class="sxs-lookup"><span data-stu-id="14006-216">The user's child.</span></span>                        |
-| <span data-ttu-id="14006-217">相互</span><span class="sxs-lookup"><span data-stu-id="14006-217">other</span></span>              | <span data-ttu-id="14006-218">6 </span><span class="sxs-lookup"><span data-stu-id="14006-218">6</span></span>     | <span data-ttu-id="14006-219">与用户的未指定关系。</span><span class="sxs-lookup"><span data-stu-id="14006-219">An unspecified relationship to the user.</span></span> |
-| <span data-ttu-id="14006-220">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-220">unknownFutureValue</span></span> | <span data-ttu-id="14006-221">7 </span><span class="sxs-lookup"><span data-stu-id="14006-221">7</span></span>     | <span data-ttu-id="14006-222">用于将来兼容性的标记值。</span><span class="sxs-lookup"><span data-stu-id="14006-222">Marker value for future compatibility.</span></span>   |
+| <span data-ttu-id="ae0e4-208">父级</span><span class="sxs-lookup"><span data-stu-id="ae0e4-208">parent</span></span>             | <span data-ttu-id="ae0e4-209">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-209">0</span></span>     | <span data-ttu-id="ae0e4-210">用户的父级。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-210">The user's parent.</span></span>                       |
+| <span data-ttu-id="ae0e4-211">彼此</span><span class="sxs-lookup"><span data-stu-id="ae0e4-211">relative</span></span>           | <span data-ttu-id="ae0e4-212">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-212">1</span></span>     | <span data-ttu-id="ae0e4-213">用户的相对路径。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-213">The user's relative.</span></span>                     |
+| <span data-ttu-id="ae0e4-214">aide</span><span class="sxs-lookup"><span data-stu-id="ae0e4-214">aide</span></span>               | <span data-ttu-id="ae0e4-215">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-215">2</span></span>     | <span data-ttu-id="ae0e4-216">用户的 aide。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-216">The user's aide.</span></span>                         |
+| <span data-ttu-id="ae0e4-217">dr.</span><span class="sxs-lookup"><span data-stu-id="ae0e4-217">doctor</span></span>             | <span data-ttu-id="ae0e4-218">第三章</span><span class="sxs-lookup"><span data-stu-id="ae0e4-218">3</span></span>     | <span data-ttu-id="ae0e4-219">用户的医生。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-219">The user's doctor.</span></span>                       |
+| <span data-ttu-id="ae0e4-220">监护</span><span class="sxs-lookup"><span data-stu-id="ae0e4-220">guardian</span></span>           | <span data-ttu-id="ae0e4-221">4 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-221">4</span></span>     | <span data-ttu-id="ae0e4-222">用户的监护人。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-222">The user's guardian.</span></span>                     |
+| <span data-ttu-id="ae0e4-223">该子</span><span class="sxs-lookup"><span data-stu-id="ae0e4-223">child</span></span>              | <span data-ttu-id="ae0e4-224">5 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-224">5</span></span>     | <span data-ttu-id="ae0e4-225">用户的子级。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-225">The user's child.</span></span>                        |
+| <span data-ttu-id="ae0e4-226">相互</span><span class="sxs-lookup"><span data-stu-id="ae0e4-226">other</span></span>              | <span data-ttu-id="ae0e4-227">6 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-227">6</span></span>     | <span data-ttu-id="ae0e4-228">与用户的未指定关系。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-228">An unspecified relationship to the user.</span></span> |
+| <span data-ttu-id="ae0e4-229">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-229">unknownFutureValue</span></span> | <span data-ttu-id="ae0e4-230">7 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-230">7</span></span>     | <span data-ttu-id="ae0e4-231">用于将来兼容性的标记值。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-231">Marker value for future compatibility.</span></span>   |
 
-### <a name="scheduleentitytheme-values"></a><span data-ttu-id="14006-223">scheduleEntityTheme 值</span><span class="sxs-lookup"><span data-stu-id="14006-223">scheduleEntityTheme values</span></span>
+### <a name="scheduleentitytheme-values"></a><span data-ttu-id="ae0e4-232">scheduleEntityTheme 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-232">scheduleEntityTheme values</span></span>
 
-| <span data-ttu-id="14006-224">成员</span><span class="sxs-lookup"><span data-stu-id="14006-224">Member</span></span>
+| <span data-ttu-id="ae0e4-233">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-233">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-225">white</span><span class="sxs-lookup"><span data-stu-id="14006-225">white</span></span>
-| <span data-ttu-id="14006-226">蓝色</span><span class="sxs-lookup"><span data-stu-id="14006-226">blue</span></span>
-| <span data-ttu-id="14006-227">绿色</span><span class="sxs-lookup"><span data-stu-id="14006-227">green</span></span>
-| <span data-ttu-id="14006-228">紫色</span><span class="sxs-lookup"><span data-stu-id="14006-228">purple</span></span>
-| <span data-ttu-id="14006-229">粉色</span><span class="sxs-lookup"><span data-stu-id="14006-229">pink</span></span>
-| <span data-ttu-id="14006-230">黄色</span><span class="sxs-lookup"><span data-stu-id="14006-230">yellow</span></span>
-| <span data-ttu-id="14006-231">底纹</span><span class="sxs-lookup"><span data-stu-id="14006-231">gray</span></span>
-| <span data-ttu-id="14006-232">darkBlue</span><span class="sxs-lookup"><span data-stu-id="14006-232">darkBlue</span></span>
-| <span data-ttu-id="14006-233">darkGreen</span><span class="sxs-lookup"><span data-stu-id="14006-233">darkGreen</span></span>
-| <span data-ttu-id="14006-234">darkPurple</span><span class="sxs-lookup"><span data-stu-id="14006-234">darkPurple</span></span>
-| <span data-ttu-id="14006-235">darkPink</span><span class="sxs-lookup"><span data-stu-id="14006-235">darkPink</span></span>
-| <span data-ttu-id="14006-236">darkYellow</span><span class="sxs-lookup"><span data-stu-id="14006-236">darkYellow</span></span>
-| <span data-ttu-id="14006-237">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-237">unknownFutureValue</span></span>
+| <span data-ttu-id="ae0e4-234">white</span><span class="sxs-lookup"><span data-stu-id="ae0e4-234">white</span></span>
+| <span data-ttu-id="ae0e4-235">蓝色</span><span class="sxs-lookup"><span data-stu-id="ae0e4-235">blue</span></span>
+| <span data-ttu-id="ae0e4-236">绿色</span><span class="sxs-lookup"><span data-stu-id="ae0e4-236">green</span></span>
+| <span data-ttu-id="ae0e4-237">紫色</span><span class="sxs-lookup"><span data-stu-id="ae0e4-237">purple</span></span>
+| <span data-ttu-id="ae0e4-238">粉色</span><span class="sxs-lookup"><span data-stu-id="ae0e4-238">pink</span></span>
+| <span data-ttu-id="ae0e4-239">黄色</span><span class="sxs-lookup"><span data-stu-id="ae0e4-239">yellow</span></span>
+| <span data-ttu-id="ae0e4-240">底纹</span><span class="sxs-lookup"><span data-stu-id="ae0e4-240">gray</span></span>
+| <span data-ttu-id="ae0e4-241">darkBlue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-241">darkBlue</span></span>
+| <span data-ttu-id="ae0e4-242">darkGreen</span><span class="sxs-lookup"><span data-stu-id="ae0e4-242">darkGreen</span></span>
+| <span data-ttu-id="ae0e4-243">darkPurple</span><span class="sxs-lookup"><span data-stu-id="ae0e4-243">darkPurple</span></span>
+| <span data-ttu-id="ae0e4-244">darkPink</span><span class="sxs-lookup"><span data-stu-id="ae0e4-244">darkPink</span></span>
+| <span data-ttu-id="ae0e4-245">darkYellow</span><span class="sxs-lookup"><span data-stu-id="ae0e4-245">darkYellow</span></span>
+| <span data-ttu-id="ae0e4-246">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-246">unknownFutureValue</span></span>
 
 
-### <a name="timeoffreasonicontype-values"></a><span data-ttu-id="14006-238">timeOffReasonIconType 值</span><span class="sxs-lookup"><span data-stu-id="14006-238">timeOffReasonIconType values</span></span>
+### <a name="timeoffreasonicontype-values"></a><span data-ttu-id="ae0e4-247">timeOffReasonIconType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-247">timeOffReasonIconType values</span></span>
 
-|<span data-ttu-id="14006-239">成员</span><span class="sxs-lookup"><span data-stu-id="14006-239">Member</span></span>|
+|<span data-ttu-id="ae0e4-248">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-248">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-240">无</span><span class="sxs-lookup"><span data-stu-id="14006-240">none</span></span>|
-|<span data-ttu-id="14006-241">car</span><span class="sxs-lookup"><span data-stu-id="14006-241">car</span></span>|
-|<span data-ttu-id="14006-242">calendar</span><span class="sxs-lookup"><span data-stu-id="14006-242">calendar</span></span>|
-|<span data-ttu-id="14006-243">运行</span><span class="sxs-lookup"><span data-stu-id="14006-243">running</span></span>|
-|<span data-ttu-id="14006-244">plane</span><span class="sxs-lookup"><span data-stu-id="14006-244">plane</span></span>|
-|<span data-ttu-id="14006-245">firstAid</span><span class="sxs-lookup"><span data-stu-id="14006-245">firstAid</span></span>|
-|<span data-ttu-id="14006-246">dr.</span><span class="sxs-lookup"><span data-stu-id="14006-246">doctor</span></span>|
-|<span data-ttu-id="14006-247">notWorking</span><span class="sxs-lookup"><span data-stu-id="14006-247">notWorking</span></span>|
-|<span data-ttu-id="14006-248">构造</span><span class="sxs-lookup"><span data-stu-id="14006-248">clock</span></span>|
-|<span data-ttu-id="14006-249">juryDuty</span><span class="sxs-lookup"><span data-stu-id="14006-249">juryDuty</span></span>|
-|<span data-ttu-id="14006-250">投放</span><span class="sxs-lookup"><span data-stu-id="14006-250">globe</span></span>|
-|<span data-ttu-id="14006-251">cup of</span><span class="sxs-lookup"><span data-stu-id="14006-251">cup</span></span>|
-|<span data-ttu-id="14006-252">phone</span><span class="sxs-lookup"><span data-stu-id="14006-252">phone</span></span>|
-|<span data-ttu-id="14006-253">气候</span><span class="sxs-lookup"><span data-stu-id="14006-253">weather</span></span>|
-|<span data-ttu-id="14006-254">防护</span><span class="sxs-lookup"><span data-stu-id="14006-254">umbrella</span></span>|
-|<span data-ttu-id="14006-255">piggyBank</span><span class="sxs-lookup"><span data-stu-id="14006-255">piggyBank</span></span>|
-|<span data-ttu-id="14006-256">狗</span><span class="sxs-lookup"><span data-stu-id="14006-256">dog</span></span>|
-|<span data-ttu-id="14006-257">桩</span><span class="sxs-lookup"><span data-stu-id="14006-257">cake</span></span>|
-|<span data-ttu-id="14006-258">trafficCone</span><span class="sxs-lookup"><span data-stu-id="14006-258">trafficCone</span></span>|
-|<span data-ttu-id="14006-259">针</span><span class="sxs-lookup"><span data-stu-id="14006-259">pin</span></span>|
-|<span data-ttu-id="14006-260">sunny</span><span class="sxs-lookup"><span data-stu-id="14006-260">sunny</span></span>|
-|<span data-ttu-id="14006-261">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-261">unknownFutureValue</span></span>|
+|<span data-ttu-id="ae0e4-249">无</span><span class="sxs-lookup"><span data-stu-id="ae0e4-249">none</span></span>|
+|<span data-ttu-id="ae0e4-250">car</span><span class="sxs-lookup"><span data-stu-id="ae0e4-250">car</span></span>|
+|<span data-ttu-id="ae0e4-251">日历</span><span class="sxs-lookup"><span data-stu-id="ae0e4-251">calendar</span></span>|
+|<span data-ttu-id="ae0e4-252">运行</span><span class="sxs-lookup"><span data-stu-id="ae0e4-252">running</span></span>|
+|<span data-ttu-id="ae0e4-253">plane</span><span class="sxs-lookup"><span data-stu-id="ae0e4-253">plane</span></span>|
+|<span data-ttu-id="ae0e4-254">firstAid</span><span class="sxs-lookup"><span data-stu-id="ae0e4-254">firstAid</span></span>|
+|<span data-ttu-id="ae0e4-255">dr.</span><span class="sxs-lookup"><span data-stu-id="ae0e4-255">doctor</span></span>|
+|<span data-ttu-id="ae0e4-256">notWorking</span><span class="sxs-lookup"><span data-stu-id="ae0e4-256">notWorking</span></span>|
+|<span data-ttu-id="ae0e4-257">构造</span><span class="sxs-lookup"><span data-stu-id="ae0e4-257">clock</span></span>|
+|<span data-ttu-id="ae0e4-258">juryDuty</span><span class="sxs-lookup"><span data-stu-id="ae0e4-258">juryDuty</span></span>|
+|<span data-ttu-id="ae0e4-259">投放</span><span class="sxs-lookup"><span data-stu-id="ae0e4-259">globe</span></span>|
+|<span data-ttu-id="ae0e4-260">cup of</span><span class="sxs-lookup"><span data-stu-id="ae0e4-260">cup</span></span>|
+|<span data-ttu-id="ae0e4-261">phone</span><span class="sxs-lookup"><span data-stu-id="ae0e4-261">phone</span></span>|
+|<span data-ttu-id="ae0e4-262">气候</span><span class="sxs-lookup"><span data-stu-id="ae0e4-262">weather</span></span>|
+|<span data-ttu-id="ae0e4-263">防护</span><span class="sxs-lookup"><span data-stu-id="ae0e4-263">umbrella</span></span>|
+|<span data-ttu-id="ae0e4-264">piggyBank</span><span class="sxs-lookup"><span data-stu-id="ae0e4-264">piggyBank</span></span>|
+|<span data-ttu-id="ae0e4-265">狗</span><span class="sxs-lookup"><span data-stu-id="ae0e4-265">dog</span></span>|
+|<span data-ttu-id="ae0e4-266">桩</span><span class="sxs-lookup"><span data-stu-id="ae0e4-266">cake</span></span>|
+|<span data-ttu-id="ae0e4-267">trafficCone</span><span class="sxs-lookup"><span data-stu-id="ae0e4-267">trafficCone</span></span>|
+|<span data-ttu-id="ae0e4-268">针</span><span class="sxs-lookup"><span data-stu-id="ae0e4-268">pin</span></span>|
+|<span data-ttu-id="ae0e4-269">sunny</span><span class="sxs-lookup"><span data-stu-id="ae0e4-269">sunny</span></span>|
+|<span data-ttu-id="ae0e4-270">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-270">unknownFutureValue</span></span>|
 
-### <a name="schedulechangestate-values"></a><span data-ttu-id="14006-262">scheduleChangeState 值</span><span class="sxs-lookup"><span data-stu-id="14006-262">scheduleChangeState values</span></span>
+### <a name="schedulechangestate-values"></a><span data-ttu-id="ae0e4-271">scheduleChangeState 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-271">scheduleChangeState values</span></span>
 
-| <span data-ttu-id="14006-263">成员</span><span class="sxs-lookup"><span data-stu-id="14006-263">Member</span></span>
+| <span data-ttu-id="ae0e4-272">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-272">Member</span></span>
 |:----------------------------
-|<span data-ttu-id="14006-264">决</span><span class="sxs-lookup"><span data-stu-id="14006-264">pending</span></span>
-|<span data-ttu-id="14006-265">批准</span><span class="sxs-lookup"><span data-stu-id="14006-265">approved</span></span>
-|<span data-ttu-id="14006-266">邀请</span><span class="sxs-lookup"><span data-stu-id="14006-266">declined</span></span>
-|<span data-ttu-id="14006-267">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-267">unknownFutureValue</span></span>
+|<span data-ttu-id="ae0e4-273">决</span><span class="sxs-lookup"><span data-stu-id="ae0e4-273">pending</span></span>
+|<span data-ttu-id="ae0e4-274">批准</span><span class="sxs-lookup"><span data-stu-id="ae0e4-274">approved</span></span>
+|<span data-ttu-id="ae0e4-275">邀请</span><span class="sxs-lookup"><span data-stu-id="ae0e4-275">declined</span></span>
+|<span data-ttu-id="ae0e4-276">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-276">unknownFutureValue</span></span>
 
-### <a name="schedulechangerequestactor-values"></a><span data-ttu-id="14006-268">scheduleChangeRequestActor 值</span><span class="sxs-lookup"><span data-stu-id="14006-268">scheduleChangeRequestActor values</span></span>
+### <a name="schedulechangerequestactor-values"></a><span data-ttu-id="ae0e4-277">scheduleChangeRequestActor 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-277">scheduleChangeRequestActor values</span></span>
 
-| <span data-ttu-id="14006-269">成员</span><span class="sxs-lookup"><span data-stu-id="14006-269">Member</span></span>
+| <span data-ttu-id="ae0e4-278">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-278">Member</span></span>
 |:----------------------------
-|<span data-ttu-id="14006-270">sender</span><span class="sxs-lookup"><span data-stu-id="14006-270">sender</span></span>
-|<span data-ttu-id="14006-271">recipient</span><span class="sxs-lookup"><span data-stu-id="14006-271">recipient</span></span>
-|<span data-ttu-id="14006-272">manager</span><span class="sxs-lookup"><span data-stu-id="14006-272">manager</span></span>
-|<span data-ttu-id="14006-273">system</span><span class="sxs-lookup"><span data-stu-id="14006-273">system</span></span>
-|<span data-ttu-id="14006-274">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-274">unknownFutureValue</span></span>
+|<span data-ttu-id="ae0e4-279">sender</span><span class="sxs-lookup"><span data-stu-id="ae0e4-279">sender</span></span>
+|<span data-ttu-id="ae0e4-280">recipient</span><span class="sxs-lookup"><span data-stu-id="ae0e4-280">recipient</span></span>
+|<span data-ttu-id="ae0e4-281">manager</span><span class="sxs-lookup"><span data-stu-id="ae0e4-281">manager</span></span>
+|<span data-ttu-id="ae0e4-282">system</span><span class="sxs-lookup"><span data-stu-id="ae0e4-282">system</span></span>
+|<span data-ttu-id="ae0e4-283">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-283">unknownFutureValue</span></span>
 
-### <a name="workforceintegrationencryptionprotocol-values"></a><span data-ttu-id="14006-275">workforceIntegrationEncryptionProtocol 值</span><span class="sxs-lookup"><span data-stu-id="14006-275">workforceIntegrationEncryptionProtocol values</span></span>
+### <a name="workforceintegrationencryptionprotocol-values"></a><span data-ttu-id="ae0e4-284">workforceIntegrationEncryptionProtocol 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-284">workforceIntegrationEncryptionProtocol values</span></span>
 
-| <span data-ttu-id="14006-276">成员</span><span class="sxs-lookup"><span data-stu-id="14006-276">Member</span></span>
+| <span data-ttu-id="ae0e4-285">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-285">Member</span></span>
 |:----------------------------
-|<span data-ttu-id="14006-277">sharedSecret</span><span class="sxs-lookup"><span data-stu-id="14006-277">sharedSecret</span></span>
-|<span data-ttu-id="14006-278">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-278">unknownFutureValue</span></span>
+|<span data-ttu-id="ae0e4-286">sharedSecret</span><span class="sxs-lookup"><span data-stu-id="ae0e4-286">sharedSecret</span></span>
+|<span data-ttu-id="ae0e4-287">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-287">unknownFutureValue</span></span>
 
-### <a name="workforceintegrationsupportedentities-values"></a><span data-ttu-id="14006-279">workforceIntegrationSupportedEntities 值</span><span class="sxs-lookup"><span data-stu-id="14006-279">workforceIntegrationSupportedEntities values</span></span>
+### <a name="workforceintegrationsupportedentities-values"></a><span data-ttu-id="ae0e4-288">workforceIntegrationSupportedEntities 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-288">workforceIntegrationSupportedEntities values</span></span>
 
-| <span data-ttu-id="14006-280">成员</span><span class="sxs-lookup"><span data-stu-id="14006-280">Member</span></span>
+| <span data-ttu-id="ae0e4-289">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-289">Member</span></span>
 |:----------------------------
-|<span data-ttu-id="14006-281">无</span><span class="sxs-lookup"><span data-stu-id="14006-281">none</span></span>
-|<span data-ttu-id="14006-282">Shift</span><span class="sxs-lookup"><span data-stu-id="14006-282">shift</span></span>
-|<span data-ttu-id="14006-283">swapRequest</span><span class="sxs-lookup"><span data-stu-id="14006-283">swapRequest</span></span>
-|<span data-ttu-id="14006-284">openShift</span><span class="sxs-lookup"><span data-stu-id="14006-284">openShift</span></span>
-|<span data-ttu-id="14006-285">openShiftRequest</span><span class="sxs-lookup"><span data-stu-id="14006-285">openShiftRequest</span></span>
-|<span data-ttu-id="14006-286">userShiftPreferences</span><span class="sxs-lookup"><span data-stu-id="14006-286">userShiftPreferences</span></span>
+|<span data-ttu-id="ae0e4-290">无</span><span class="sxs-lookup"><span data-stu-id="ae0e4-290">none</span></span>
+|<span data-ttu-id="ae0e4-291">Shift</span><span class="sxs-lookup"><span data-stu-id="ae0e4-291">shift</span></span>
+|<span data-ttu-id="ae0e4-292">swapRequest</span><span class="sxs-lookup"><span data-stu-id="ae0e4-292">swapRequest</span></span>
+|<span data-ttu-id="ae0e4-293">openShift</span><span class="sxs-lookup"><span data-stu-id="ae0e4-293">openShift</span></span>
+|<span data-ttu-id="ae0e4-294">openShiftRequest</span><span class="sxs-lookup"><span data-stu-id="ae0e4-294">openShiftRequest</span></span>
+|<span data-ttu-id="ae0e4-295">userShiftPreferences</span><span class="sxs-lookup"><span data-stu-id="ae0e4-295">userShiftPreferences</span></span>
 
-### <a name="timezonestandard-values"></a><span data-ttu-id="14006-287">timeZoneStandard 值</span><span class="sxs-lookup"><span data-stu-id="14006-287">timeZoneStandard values</span></span>
+### <a name="timezonestandard-values"></a><span data-ttu-id="ae0e4-296">timeZoneStandard 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-296">timeZoneStandard values</span></span>
 
-| <span data-ttu-id="14006-288">成员</span><span class="sxs-lookup"><span data-stu-id="14006-288">Member</span></span>
+| <span data-ttu-id="ae0e4-297">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-297">Member</span></span>
 |:-----------------
-| <span data-ttu-id="14006-289">时间</span><span class="sxs-lookup"><span data-stu-id="14006-289">windows</span></span>
-| <span data-ttu-id="14006-290">iana</span><span class="sxs-lookup"><span data-stu-id="14006-290">iana</span></span>
+| <span data-ttu-id="ae0e4-298">时间</span><span class="sxs-lookup"><span data-stu-id="ae0e4-298">windows</span></span>
+| <span data-ttu-id="ae0e4-299">iana</span><span class="sxs-lookup"><span data-stu-id="ae0e4-299">iana</span></span>
 
 
-### <a name="freebusystatus-values"></a><span data-ttu-id="14006-291">freeBusyStatus 值</span><span class="sxs-lookup"><span data-stu-id="14006-291">freeBusyStatus values</span></span>
+### <a name="freebusystatus-values"></a><span data-ttu-id="ae0e4-300">freeBusyStatus 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-300">freeBusyStatus values</span></span>
 
-| <span data-ttu-id="14006-292">成员</span><span class="sxs-lookup"><span data-stu-id="14006-292">Member</span></span>           | <span data-ttu-id="14006-293">值</span><span class="sxs-lookup"><span data-stu-id="14006-293">Value</span></span> |
+| <span data-ttu-id="ae0e4-301">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-301">Member</span></span>           | <span data-ttu-id="ae0e4-302">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-302">Value</span></span> |
 | :--------------- | :---- |
-| <span data-ttu-id="14006-294">任意</span><span class="sxs-lookup"><span data-stu-id="14006-294">free</span></span>             | <span data-ttu-id="14006-295">0</span><span class="sxs-lookup"><span data-stu-id="14006-295">0</span></span>     |
-| <span data-ttu-id="14006-296">暂</span><span class="sxs-lookup"><span data-stu-id="14006-296">tentative</span></span>        | <span data-ttu-id="14006-297">1 </span><span class="sxs-lookup"><span data-stu-id="14006-297">1</span></span>     |
-| <span data-ttu-id="14006-298">空闲</span><span class="sxs-lookup"><span data-stu-id="14006-298">busy</span></span>             | <span data-ttu-id="14006-299">2 </span><span class="sxs-lookup"><span data-stu-id="14006-299">2</span></span>     |
-| <span data-ttu-id="14006-300">oof</span><span class="sxs-lookup"><span data-stu-id="14006-300">oof</span></span>              | <span data-ttu-id="14006-301">第三章</span><span class="sxs-lookup"><span data-stu-id="14006-301">3</span></span>     |
-| <span data-ttu-id="14006-302">workingElsewhere</span><span class="sxs-lookup"><span data-stu-id="14006-302">workingElsewhere</span></span> | <span data-ttu-id="14006-303">4 </span><span class="sxs-lookup"><span data-stu-id="14006-303">4</span></span>     |
-| <span data-ttu-id="14006-304">unknown</span><span class="sxs-lookup"><span data-stu-id="14006-304">unknown</span></span>          | <span data-ttu-id="14006-305">-1</span><span class="sxs-lookup"><span data-stu-id="14006-305">-1</span></span>    |
+| <span data-ttu-id="ae0e4-303">任意</span><span class="sxs-lookup"><span data-stu-id="ae0e4-303">free</span></span>             | <span data-ttu-id="ae0e4-304">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-304">0</span></span>     |
+| <span data-ttu-id="ae0e4-305">暂</span><span class="sxs-lookup"><span data-stu-id="ae0e4-305">tentative</span></span>        | <span data-ttu-id="ae0e4-306">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-306">1</span></span>     |
+| <span data-ttu-id="ae0e4-307">空闲</span><span class="sxs-lookup"><span data-stu-id="ae0e4-307">busy</span></span>             | <span data-ttu-id="ae0e4-308">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-308">2</span></span>     |
+| <span data-ttu-id="ae0e4-309">oof</span><span class="sxs-lookup"><span data-stu-id="ae0e4-309">oof</span></span>              | <span data-ttu-id="ae0e4-310">第三章</span><span class="sxs-lookup"><span data-stu-id="ae0e4-310">3</span></span>     |
+| <span data-ttu-id="ae0e4-311">workingElsewhere</span><span class="sxs-lookup"><span data-stu-id="ae0e4-311">workingElsewhere</span></span> | <span data-ttu-id="ae0e4-312">4 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-312">4</span></span>     |
+| <span data-ttu-id="ae0e4-313">unknown</span><span class="sxs-lookup"><span data-stu-id="ae0e4-313">unknown</span></span>          | <span data-ttu-id="ae0e4-314">-1</span><span class="sxs-lookup"><span data-stu-id="ae0e4-314">-1</span></span>    |
 
 
-### <a name="physicaladdresstype-values"></a><span data-ttu-id="14006-306">: Physicaladdresstype 值</span><span class="sxs-lookup"><span data-stu-id="14006-306">physicalAddressType values</span></span>
+### <a name="physicaladdresstype-values"></a><span data-ttu-id="ae0e4-315">: Physicaladdresstype 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-315">physicalAddressType values</span></span>
 
-| <span data-ttu-id="14006-307">成员</span><span class="sxs-lookup"><span data-stu-id="14006-307">Member</span></span>
+| <span data-ttu-id="ae0e4-316">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-316">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-308">unknown</span><span class="sxs-lookup"><span data-stu-id="14006-308">unknown</span></span>
-| <span data-ttu-id="14006-309">回收</span><span class="sxs-lookup"><span data-stu-id="14006-309">home</span></span>
-| <span data-ttu-id="14006-310">知情</span><span class="sxs-lookup"><span data-stu-id="14006-310">business</span></span>
-| <span data-ttu-id="14006-311">相互</span><span class="sxs-lookup"><span data-stu-id="14006-311">other</span></span>
+| <span data-ttu-id="ae0e4-317">unknown</span><span class="sxs-lookup"><span data-stu-id="ae0e4-317">unknown</span></span>
+| <span data-ttu-id="ae0e4-318">回收</span><span class="sxs-lookup"><span data-stu-id="ae0e4-318">home</span></span>
+| <span data-ttu-id="ae0e4-319">知情</span><span class="sxs-lookup"><span data-stu-id="ae0e4-319">business</span></span>
+| <span data-ttu-id="ae0e4-320">相互</span><span class="sxs-lookup"><span data-stu-id="ae0e4-320">other</span></span>
 
 
-### <a name="attendeetype-values"></a><span data-ttu-id="14006-312">attendeeType 值</span><span class="sxs-lookup"><span data-stu-id="14006-312">attendeeType values</span></span>
+### <a name="attendeetype-values"></a><span data-ttu-id="ae0e4-321">attendeeType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-321">attendeeType values</span></span>
 
-| <span data-ttu-id="14006-313">成员</span><span class="sxs-lookup"><span data-stu-id="14006-313">Member</span></span>
+| <span data-ttu-id="ae0e4-322">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-322">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-314">必需</span><span class="sxs-lookup"><span data-stu-id="14006-314">required</span></span>
-| <span data-ttu-id="14006-315">可选</span><span class="sxs-lookup"><span data-stu-id="14006-315">optional</span></span>
-| <span data-ttu-id="14006-316">resource</span><span class="sxs-lookup"><span data-stu-id="14006-316">resource</span></span>
+| <span data-ttu-id="ae0e4-323">必需</span><span class="sxs-lookup"><span data-stu-id="ae0e4-323">required</span></span>
+| <span data-ttu-id="ae0e4-324">可选</span><span class="sxs-lookup"><span data-stu-id="ae0e4-324">optional</span></span>
+| <span data-ttu-id="ae0e4-325">resource</span><span class="sxs-lookup"><span data-stu-id="ae0e4-325">resource</span></span>
 
 
-### <a name="externalaudiencescope-values"></a><span data-ttu-id="14006-317">externalAudienceScope 值</span><span class="sxs-lookup"><span data-stu-id="14006-317">externalAudienceScope values</span></span>
+### <a name="externalaudiencescope-values"></a><span data-ttu-id="ae0e4-326">externalAudienceScope 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-326">externalAudienceScope values</span></span>
 
-| <span data-ttu-id="14006-318">成员</span><span class="sxs-lookup"><span data-stu-id="14006-318">Member</span></span>
+| <span data-ttu-id="ae0e4-327">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-327">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-319">无</span><span class="sxs-lookup"><span data-stu-id="14006-319">none</span></span>
-| <span data-ttu-id="14006-320">contactsOnly</span><span class="sxs-lookup"><span data-stu-id="14006-320">contactsOnly</span></span>
-| <span data-ttu-id="14006-321">各种</span><span class="sxs-lookup"><span data-stu-id="14006-321">all</span></span>
+| <span data-ttu-id="ae0e4-328">无</span><span class="sxs-lookup"><span data-stu-id="ae0e4-328">none</span></span>
+| <span data-ttu-id="ae0e4-329">contactsOnly</span><span class="sxs-lookup"><span data-stu-id="ae0e4-329">contactsOnly</span></span>
+| <span data-ttu-id="ae0e4-330">各种</span><span class="sxs-lookup"><span data-stu-id="ae0e4-330">all</span></span>
 
 
-### <a name="automaticrepliesstatus-values"></a><span data-ttu-id="14006-322">automaticRepliesStatus 值</span><span class="sxs-lookup"><span data-stu-id="14006-322">automaticRepliesStatus values</span></span>
+### <a name="automaticrepliesstatus-values"></a><span data-ttu-id="ae0e4-331">automaticRepliesStatus 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-331">automaticRepliesStatus values</span></span>
 
-| <span data-ttu-id="14006-323">成员</span><span class="sxs-lookup"><span data-stu-id="14006-323">Member</span></span>
+| <span data-ttu-id="ae0e4-332">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-332">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-324">禁用</span><span class="sxs-lookup"><span data-stu-id="14006-324">disabled</span></span>
-| <span data-ttu-id="14006-325">Alwaysenabled 启用</span><span class="sxs-lookup"><span data-stu-id="14006-325">alwaysEnabled</span></span>
-| <span data-ttu-id="14006-326">scheduled</span><span class="sxs-lookup"><span data-stu-id="14006-326">scheduled</span></span>
+| <span data-ttu-id="ae0e4-333">禁用</span><span class="sxs-lookup"><span data-stu-id="ae0e4-333">disabled</span></span>
+| <span data-ttu-id="ae0e4-334">Alwaysenabled 启用</span><span class="sxs-lookup"><span data-stu-id="ae0e4-334">alwaysEnabled</span></span>
+| <span data-ttu-id="ae0e4-335">scheduled</span><span class="sxs-lookup"><span data-stu-id="ae0e4-335">scheduled</span></span>
 
 
-### <a name="calendarcolor-values"></a><span data-ttu-id="14006-327">calendarColor 值</span><span class="sxs-lookup"><span data-stu-id="14006-327">calendarColor values</span></span>
+### <a name="calendarcolor-values"></a><span data-ttu-id="ae0e4-336">calendarColor 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-336">calendarColor values</span></span>
 
-| <span data-ttu-id="14006-328">成员</span><span class="sxs-lookup"><span data-stu-id="14006-328">Member</span></span>      | <span data-ttu-id="14006-329">值</span><span class="sxs-lookup"><span data-stu-id="14006-329">Value</span></span> |
+| <span data-ttu-id="ae0e4-337">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-337">Member</span></span>      | <span data-ttu-id="ae0e4-338">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-338">Value</span></span> |
 | :---------- | :---- |
-| <span data-ttu-id="14006-330">自动</span><span class="sxs-lookup"><span data-stu-id="14006-330">auto</span></span>        | <span data-ttu-id="14006-331">-1</span><span class="sxs-lookup"><span data-stu-id="14006-331">-1</span></span>    |
-| <span data-ttu-id="14006-332">lightBlue</span><span class="sxs-lookup"><span data-stu-id="14006-332">lightBlue</span></span>   | <span data-ttu-id="14006-333">0</span><span class="sxs-lookup"><span data-stu-id="14006-333">0</span></span>     |
-| <span data-ttu-id="14006-334">lightGreen</span><span class="sxs-lookup"><span data-stu-id="14006-334">lightGreen</span></span>  | <span data-ttu-id="14006-335">1 </span><span class="sxs-lookup"><span data-stu-id="14006-335">1</span></span>     |
-| <span data-ttu-id="14006-336">lightOrange</span><span class="sxs-lookup"><span data-stu-id="14006-336">lightOrange</span></span> | <span data-ttu-id="14006-337">2 </span><span class="sxs-lookup"><span data-stu-id="14006-337">2</span></span>     |
-| <span data-ttu-id="14006-338">lightGray</span><span class="sxs-lookup"><span data-stu-id="14006-338">lightGray</span></span>   | <span data-ttu-id="14006-339">第三章</span><span class="sxs-lookup"><span data-stu-id="14006-339">3</span></span>     |
-| <span data-ttu-id="14006-340">lightYellow</span><span class="sxs-lookup"><span data-stu-id="14006-340">lightYellow</span></span> | <span data-ttu-id="14006-341">4 </span><span class="sxs-lookup"><span data-stu-id="14006-341">4</span></span>     |
-| <span data-ttu-id="14006-342">lightTeal</span><span class="sxs-lookup"><span data-stu-id="14006-342">lightTeal</span></span>   | <span data-ttu-id="14006-343">5 </span><span class="sxs-lookup"><span data-stu-id="14006-343">5</span></span>     |
-| <span data-ttu-id="14006-344">lightPink</span><span class="sxs-lookup"><span data-stu-id="14006-344">lightPink</span></span>   | <span data-ttu-id="14006-345">6 </span><span class="sxs-lookup"><span data-stu-id="14006-345">6</span></span>     |
-| <span data-ttu-id="14006-346">lightBrown</span><span class="sxs-lookup"><span data-stu-id="14006-346">lightBrown</span></span>  | <span data-ttu-id="14006-347">7 </span><span class="sxs-lookup"><span data-stu-id="14006-347">7</span></span>     |
-| <span data-ttu-id="14006-348">lightRed</span><span class="sxs-lookup"><span data-stu-id="14006-348">lightRed</span></span>    | <span data-ttu-id="14006-349">8 </span><span class="sxs-lookup"><span data-stu-id="14006-349">8</span></span>     |
-| <span data-ttu-id="14006-350">maxColor</span><span class="sxs-lookup"><span data-stu-id="14006-350">maxColor</span></span>    | <span data-ttu-id="14006-351">9 </span><span class="sxs-lookup"><span data-stu-id="14006-351">9</span></span>     |
+| <span data-ttu-id="ae0e4-339">自动</span><span class="sxs-lookup"><span data-stu-id="ae0e4-339">auto</span></span>        | <span data-ttu-id="ae0e4-340">-1</span><span class="sxs-lookup"><span data-stu-id="ae0e4-340">-1</span></span>    |
+| <span data-ttu-id="ae0e4-341">lightBlue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-341">lightBlue</span></span>   | <span data-ttu-id="ae0e4-342">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-342">0</span></span>     |
+| <span data-ttu-id="ae0e4-343">lightGreen</span><span class="sxs-lookup"><span data-stu-id="ae0e4-343">lightGreen</span></span>  | <span data-ttu-id="ae0e4-344">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-344">1</span></span>     |
+| <span data-ttu-id="ae0e4-345">lightOrange</span><span class="sxs-lookup"><span data-stu-id="ae0e4-345">lightOrange</span></span> | <span data-ttu-id="ae0e4-346">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-346">2</span></span>     |
+| <span data-ttu-id="ae0e4-347">lightGray</span><span class="sxs-lookup"><span data-stu-id="ae0e4-347">lightGray</span></span>   | <span data-ttu-id="ae0e4-348">第三章</span><span class="sxs-lookup"><span data-stu-id="ae0e4-348">3</span></span>     |
+| <span data-ttu-id="ae0e4-349">lightYellow</span><span class="sxs-lookup"><span data-stu-id="ae0e4-349">lightYellow</span></span> | <span data-ttu-id="ae0e4-350">4 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-350">4</span></span>     |
+| <span data-ttu-id="ae0e4-351">lightTeal</span><span class="sxs-lookup"><span data-stu-id="ae0e4-351">lightTeal</span></span>   | <span data-ttu-id="ae0e4-352">5 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-352">5</span></span>     |
+| <span data-ttu-id="ae0e4-353">lightPink</span><span class="sxs-lookup"><span data-stu-id="ae0e4-353">lightPink</span></span>   | <span data-ttu-id="ae0e4-354">6 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-354">6</span></span>     |
+| <span data-ttu-id="ae0e4-355">lightBrown</span><span class="sxs-lookup"><span data-stu-id="ae0e4-355">lightBrown</span></span>  | <span data-ttu-id="ae0e4-356">7 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-356">7</span></span>     |
+| <span data-ttu-id="ae0e4-357">lightRed</span><span class="sxs-lookup"><span data-stu-id="ae0e4-357">lightRed</span></span>    | <span data-ttu-id="ae0e4-358">8 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-358">8</span></span>     |
+| <span data-ttu-id="ae0e4-359">maxColor</span><span class="sxs-lookup"><span data-stu-id="ae0e4-359">maxColor</span></span>    | <span data-ttu-id="ae0e4-360">9 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-360">9</span></span>     |
 
 
-### <a name="educationsynchronizationprofilestate-values"></a><span data-ttu-id="14006-352">educationSynchronizationProfileState 值</span><span class="sxs-lookup"><span data-stu-id="14006-352">educationSynchronizationProfileState values</span></span>
+### <a name="educationsynchronizationprofilestate-values"></a><span data-ttu-id="ae0e4-361">educationSynchronizationProfileState 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-361">educationSynchronizationProfileState values</span></span>
 
-| <span data-ttu-id="14006-353">成员</span><span class="sxs-lookup"><span data-stu-id="14006-353">Member</span></span>             | <span data-ttu-id="14006-354">值</span><span class="sxs-lookup"><span data-stu-id="14006-354">Value</span></span> |
+| <span data-ttu-id="ae0e4-362">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-362">Member</span></span>             | <span data-ttu-id="ae0e4-363">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-363">Value</span></span> |
 | :----------------- | :---- |
-| <span data-ttu-id="14006-355">删除</span><span class="sxs-lookup"><span data-stu-id="14006-355">deleting</span></span>           | <span data-ttu-id="14006-356">2 </span><span class="sxs-lookup"><span data-stu-id="14006-356">2</span></span>     |
-| <span data-ttu-id="14006-357">deletionFailed</span><span class="sxs-lookup"><span data-stu-id="14006-357">deletionFailed</span></span>     | <span data-ttu-id="14006-358">第三章</span><span class="sxs-lookup"><span data-stu-id="14006-358">3</span></span>     |
-| <span data-ttu-id="14006-359">provisioningFailed</span><span class="sxs-lookup"><span data-stu-id="14006-359">provisioningFailed</span></span> | <span data-ttu-id="14006-360">5 </span><span class="sxs-lookup"><span data-stu-id="14006-360">5</span></span>     |
-| <span data-ttu-id="14006-361">已设置</span><span class="sxs-lookup"><span data-stu-id="14006-361">provisioned</span></span>        | <span data-ttu-id="14006-362">6 </span><span class="sxs-lookup"><span data-stu-id="14006-362">6</span></span>     |
-| <span data-ttu-id="14006-363">设置</span><span class="sxs-lookup"><span data-stu-id="14006-363">provisioning</span></span>       | <span data-ttu-id="14006-364">7 </span><span class="sxs-lookup"><span data-stu-id="14006-364">7</span></span>     |
-| <span data-ttu-id="14006-365">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-365">unknownFutureValue</span></span> | <span data-ttu-id="14006-366">8 </span><span class="sxs-lookup"><span data-stu-id="14006-366">8</span></span>     |
+| <span data-ttu-id="ae0e4-364">删除</span><span class="sxs-lookup"><span data-stu-id="ae0e4-364">deleting</span></span>           | <span data-ttu-id="ae0e4-365">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-365">2</span></span>     |
+| <span data-ttu-id="ae0e4-366">deletionFailed</span><span class="sxs-lookup"><span data-stu-id="ae0e4-366">deletionFailed</span></span>     | <span data-ttu-id="ae0e4-367">第三章</span><span class="sxs-lookup"><span data-stu-id="ae0e4-367">3</span></span>     |
+| <span data-ttu-id="ae0e4-368">provisioningFailed</span><span class="sxs-lookup"><span data-stu-id="ae0e4-368">provisioningFailed</span></span> | <span data-ttu-id="ae0e4-369">5 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-369">5</span></span>     |
+| <span data-ttu-id="ae0e4-370">已设置</span><span class="sxs-lookup"><span data-stu-id="ae0e4-370">provisioned</span></span>        | <span data-ttu-id="ae0e4-371">6 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-371">6</span></span>     |
+| <span data-ttu-id="ae0e4-372">设置</span><span class="sxs-lookup"><span data-stu-id="ae0e4-372">provisioning</span></span>       | <span data-ttu-id="ae0e4-373">7 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-373">7</span></span>     |
+| <span data-ttu-id="ae0e4-374">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-374">unknownFutureValue</span></span> | <span data-ttu-id="ae0e4-375">8 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-375">8</span></span>     |
 
 
-### <a name="educationsynchronizationstatus-values"></a><span data-ttu-id="14006-367">educationSynchronizationStatus 值</span><span class="sxs-lookup"><span data-stu-id="14006-367">educationSynchronizationStatus values</span></span>
+### <a name="educationsynchronizationstatus-values"></a><span data-ttu-id="ae0e4-376">educationSynchronizationStatus 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-376">educationSynchronizationStatus values</span></span>
 
-| <span data-ttu-id="14006-368">成员</span><span class="sxs-lookup"><span data-stu-id="14006-368">Member</span></span>             | <span data-ttu-id="14006-369">值</span><span class="sxs-lookup"><span data-stu-id="14006-369">Value</span></span> |
+| <span data-ttu-id="ae0e4-377">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-377">Member</span></span>             | <span data-ttu-id="ae0e4-378">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-378">Value</span></span> |
 | :----------------- | :---- |
-| <span data-ttu-id="14006-370">停留</span><span class="sxs-lookup"><span data-stu-id="14006-370">paused</span></span>             | <span data-ttu-id="14006-371">0</span><span class="sxs-lookup"><span data-stu-id="14006-371">0</span></span>     |
-| <span data-ttu-id="14006-372">inProgress</span><span class="sxs-lookup"><span data-stu-id="14006-372">inProgress</span></span>         | <span data-ttu-id="14006-373">1 </span><span class="sxs-lookup"><span data-stu-id="14006-373">1</span></span>     |
-| <span data-ttu-id="14006-374">success</span><span class="sxs-lookup"><span data-stu-id="14006-374">success</span></span>            | <span data-ttu-id="14006-375">2 </span><span class="sxs-lookup"><span data-stu-id="14006-375">2</span></span>     |
-| <span data-ttu-id="14006-376">error</span><span class="sxs-lookup"><span data-stu-id="14006-376">error</span></span>              | <span data-ttu-id="14006-377">第三章</span><span class="sxs-lookup"><span data-stu-id="14006-377">3</span></span>     |
-| <span data-ttu-id="14006-378">validationError</span><span class="sxs-lookup"><span data-stu-id="14006-378">validationError</span></span>    | <span data-ttu-id="14006-379">4 </span><span class="sxs-lookup"><span data-stu-id="14006-379">4</span></span>     |
-| <span data-ttu-id="14006-380">隔离</span><span class="sxs-lookup"><span data-stu-id="14006-380">quarantined</span></span>        | <span data-ttu-id="14006-381">5 </span><span class="sxs-lookup"><span data-stu-id="14006-381">5</span></span>     |
-| <span data-ttu-id="14006-382">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-382">unknownFutureValue</span></span> | <span data-ttu-id="14006-383">6 </span><span class="sxs-lookup"><span data-stu-id="14006-383">6</span></span>     |
+| <span data-ttu-id="ae0e4-379">停留</span><span class="sxs-lookup"><span data-stu-id="ae0e4-379">paused</span></span>             | <span data-ttu-id="ae0e4-380">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-380">0</span></span>     |
+| <span data-ttu-id="ae0e4-381">inProgress</span><span class="sxs-lookup"><span data-stu-id="ae0e4-381">inProgress</span></span>         | <span data-ttu-id="ae0e4-382">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-382">1</span></span>     |
+| <span data-ttu-id="ae0e4-383">success</span><span class="sxs-lookup"><span data-stu-id="ae0e4-383">success</span></span>            | <span data-ttu-id="ae0e4-384">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-384">2</span></span>     |
+| <span data-ttu-id="ae0e4-385">error</span><span class="sxs-lookup"><span data-stu-id="ae0e4-385">error</span></span>              | <span data-ttu-id="ae0e4-386">第三章</span><span class="sxs-lookup"><span data-stu-id="ae0e4-386">3</span></span>     |
+| <span data-ttu-id="ae0e4-387">validationError</span><span class="sxs-lookup"><span data-stu-id="ae0e4-387">validationError</span></span>    | <span data-ttu-id="ae0e4-388">4 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-388">4</span></span>     |
+| <span data-ttu-id="ae0e4-389">隔离</span><span class="sxs-lookup"><span data-stu-id="ae0e4-389">quarantined</span></span>        | <span data-ttu-id="ae0e4-390">5 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-390">5</span></span>     |
+| <span data-ttu-id="ae0e4-391">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-391">unknownFutureValue</span></span> | <span data-ttu-id="ae0e4-392">6 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-392">6</span></span>     |
 
-### <a name="educationexternalsource-values"></a><span data-ttu-id="14006-384">educationExternalSource 值</span><span class="sxs-lookup"><span data-stu-id="14006-384">educationExternalSource values</span></span>
+### <a name="educationexternalsource-values"></a><span data-ttu-id="ae0e4-393">educationExternalSource 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-393">educationExternalSource values</span></span>
 
-| <span data-ttu-id="14006-385">成员</span><span class="sxs-lookup"><span data-stu-id="14006-385">Member</span></span>
+| <span data-ttu-id="ae0e4-394">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-394">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-386">sis</span><span class="sxs-lookup"><span data-stu-id="14006-386">sis</span></span>
-| <span data-ttu-id="14006-387">lms</span><span class="sxs-lookup"><span data-stu-id="14006-387">lms</span></span>
-| <span data-ttu-id="14006-388">手动</span><span class="sxs-lookup"><span data-stu-id="14006-388">manual</span></span>
-| <span data-ttu-id="14006-389">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-389">unknownFutureValue</span></span>
+| <span data-ttu-id="ae0e4-395">sis</span><span class="sxs-lookup"><span data-stu-id="ae0e4-395">sis</span></span>
+| <span data-ttu-id="ae0e4-396">lms</span><span class="sxs-lookup"><span data-stu-id="ae0e4-396">lms</span></span>
+| <span data-ttu-id="ae0e4-397">手动</span><span class="sxs-lookup"><span data-stu-id="ae0e4-397">manual</span></span>
+| <span data-ttu-id="ae0e4-398">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-398">unknownFutureValue</span></span>
 
-### <a name="educationgender-values"></a><span data-ttu-id="14006-390">educationGender 值</span><span class="sxs-lookup"><span data-stu-id="14006-390">educationGender values</span></span>
+### <a name="educationgender-values"></a><span data-ttu-id="ae0e4-399">educationGender 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-399">educationGender values</span></span>
 
-| <span data-ttu-id="14006-391">成员</span><span class="sxs-lookup"><span data-stu-id="14006-391">Member</span></span>
+| <span data-ttu-id="ae0e4-400">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-400">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-392">接头</span><span class="sxs-lookup"><span data-stu-id="14006-392">female</span></span>
-| <span data-ttu-id="14006-393">触点</span><span class="sxs-lookup"><span data-stu-id="14006-393">male</span></span>
-| <span data-ttu-id="14006-394">相互</span><span class="sxs-lookup"><span data-stu-id="14006-394">other</span></span>
-| <span data-ttu-id="14006-395">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-395">unknownFutureValue</span></span>
+| <span data-ttu-id="ae0e4-401">接头</span><span class="sxs-lookup"><span data-stu-id="ae0e4-401">female</span></span>
+| <span data-ttu-id="ae0e4-402">触点</span><span class="sxs-lookup"><span data-stu-id="ae0e4-402">male</span></span>
+| <span data-ttu-id="ae0e4-403">相互</span><span class="sxs-lookup"><span data-stu-id="ae0e4-403">other</span></span>
+| <span data-ttu-id="ae0e4-404">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-404">unknownFutureValue</span></span>
 
 
-### <a name="eventtype-values"></a><span data-ttu-id="14006-396">事件的值</span><span class="sxs-lookup"><span data-stu-id="14006-396">eventType values</span></span>
+### <a name="eventtype-values"></a><span data-ttu-id="ae0e4-405">事件的值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-405">eventType values</span></span>
 
-| <span data-ttu-id="14006-397">成员</span><span class="sxs-lookup"><span data-stu-id="14006-397">Member</span></span>
+| <span data-ttu-id="ae0e4-406">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-406">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-398">singleInstance</span><span class="sxs-lookup"><span data-stu-id="14006-398">singleInstance</span></span>
-| <span data-ttu-id="14006-399">重复</span><span class="sxs-lookup"><span data-stu-id="14006-399">occurrence</span></span>
-| <span data-ttu-id="14006-400">异常</span><span class="sxs-lookup"><span data-stu-id="14006-400">exception</span></span>
-| <span data-ttu-id="14006-401">seriesMaster</span><span class="sxs-lookup"><span data-stu-id="14006-401">seriesMaster</span></span>
+| <span data-ttu-id="ae0e4-407">singleInstance</span><span class="sxs-lookup"><span data-stu-id="ae0e4-407">singleInstance</span></span>
+| <span data-ttu-id="ae0e4-408">重复</span><span class="sxs-lookup"><span data-stu-id="ae0e4-408">occurrence</span></span>
+| <span data-ttu-id="ae0e4-409">异常</span><span class="sxs-lookup"><span data-stu-id="ae0e4-409">exception</span></span>
+| <span data-ttu-id="ae0e4-410">seriesMaster</span><span class="sxs-lookup"><span data-stu-id="ae0e4-410">seriesMaster</span></span>
 
 
-### <a name="sensitivity-values"></a><span data-ttu-id="14006-402">敏感度值</span><span class="sxs-lookup"><span data-stu-id="14006-402">sensitivity values</span></span>
+### <a name="sensitivity-values"></a><span data-ttu-id="ae0e4-411">敏感度值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-411">sensitivity values</span></span>
 
-| <span data-ttu-id="14006-403">成员</span><span class="sxs-lookup"><span data-stu-id="14006-403">Member</span></span>
+| <span data-ttu-id="ae0e4-412">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-412">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-404">通用</span><span class="sxs-lookup"><span data-stu-id="14006-404">normal</span></span>
-| <span data-ttu-id="14006-405">personal</span><span class="sxs-lookup"><span data-stu-id="14006-405">personal</span></span>
-| <span data-ttu-id="14006-406">private</span><span class="sxs-lookup"><span data-stu-id="14006-406">private</span></span>
-| <span data-ttu-id="14006-407">秘密</span><span class="sxs-lookup"><span data-stu-id="14006-407">confidential</span></span>
+| <span data-ttu-id="ae0e4-413">通用</span><span class="sxs-lookup"><span data-stu-id="ae0e4-413">normal</span></span>
+| <span data-ttu-id="ae0e4-414">personal</span><span class="sxs-lookup"><span data-stu-id="ae0e4-414">personal</span></span>
+| <span data-ttu-id="ae0e4-415">private</span><span class="sxs-lookup"><span data-stu-id="ae0e4-415">private</span></span>
+| <span data-ttu-id="ae0e4-416">秘密</span><span class="sxs-lookup"><span data-stu-id="ae0e4-416">confidential</span></span>
 
 
-### <a name="importance-values"></a><span data-ttu-id="14006-408">重要性值</span><span class="sxs-lookup"><span data-stu-id="14006-408">importance values</span></span>
+### <a name="importance-values"></a><span data-ttu-id="ae0e4-417">重要性值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-417">importance values</span></span>
 
-| <span data-ttu-id="14006-409">成员</span><span class="sxs-lookup"><span data-stu-id="14006-409">Member</span></span>
+| <span data-ttu-id="ae0e4-418">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-418">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-410">降低</span><span class="sxs-lookup"><span data-stu-id="14006-410">low</span></span>
-| <span data-ttu-id="14006-411">通用</span><span class="sxs-lookup"><span data-stu-id="14006-411">normal</span></span>
-| <span data-ttu-id="14006-412">高效</span><span class="sxs-lookup"><span data-stu-id="14006-412">high</span></span>
+| <span data-ttu-id="ae0e4-419">降低</span><span class="sxs-lookup"><span data-stu-id="ae0e4-419">low</span></span>
+| <span data-ttu-id="ae0e4-420">通用</span><span class="sxs-lookup"><span data-stu-id="ae0e4-420">normal</span></span>
+| <span data-ttu-id="ae0e4-421">高效</span><span class="sxs-lookup"><span data-stu-id="ae0e4-421">high</span></span>
 
 
-### <a name="educationuserrole-values"></a><span data-ttu-id="14006-413">educationUserRole 值</span><span class="sxs-lookup"><span data-stu-id="14006-413">educationUserRole values</span></span>
-| <span data-ttu-id="14006-414">成员</span><span class="sxs-lookup"><span data-stu-id="14006-414">Member</span></span>
+### <a name="educationuserrole-values"></a><span data-ttu-id="ae0e4-422">educationUserRole 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-422">educationUserRole values</span></span>
+| <span data-ttu-id="ae0e4-423">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-423">Member</span></span>
 |:---------------------
-| <span data-ttu-id="14006-415">student</span><span class="sxs-lookup"><span data-stu-id="14006-415">student</span></span>
-| <span data-ttu-id="14006-416">teacher</span><span class="sxs-lookup"><span data-stu-id="14006-416">teacher</span></span>
-| <span data-ttu-id="14006-417">人员</span><span class="sxs-lookup"><span data-stu-id="14006-417">faculty</span></span>
+| <span data-ttu-id="ae0e4-424">student</span><span class="sxs-lookup"><span data-stu-id="ae0e4-424">student</span></span>
+| <span data-ttu-id="ae0e4-425">teacher</span><span class="sxs-lookup"><span data-stu-id="ae0e4-425">teacher</span></span>
+| <span data-ttu-id="ae0e4-426">人员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-426">faculty</span></span>
 
 
-### <a name="meetingmessagetype-values"></a><span data-ttu-id="14006-418">meetingMessageType 值</span><span class="sxs-lookup"><span data-stu-id="14006-418">meetingMessageType values</span></span>
+### <a name="meetingmessagetype-values"></a><span data-ttu-id="ae0e4-427">meetingMessageType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-427">meetingMessageType values</span></span>
 
-| <span data-ttu-id="14006-419">成员</span><span class="sxs-lookup"><span data-stu-id="14006-419">Member</span></span>
+| <span data-ttu-id="ae0e4-428">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-428">Member</span></span>
 |:-----------------
-| <span data-ttu-id="14006-420">无</span><span class="sxs-lookup"><span data-stu-id="14006-420">none</span></span>
-| <span data-ttu-id="14006-421">meetingRequest</span><span class="sxs-lookup"><span data-stu-id="14006-421">meetingRequest</span></span>
-| <span data-ttu-id="14006-422">meetingCancelled</span><span class="sxs-lookup"><span data-stu-id="14006-422">meetingCancelled</span></span>
-| <span data-ttu-id="14006-423">meetingAccepted</span><span class="sxs-lookup"><span data-stu-id="14006-423">meetingAccepted</span></span>
-| <span data-ttu-id="14006-424">meetingTentativelyAccepted</span><span class="sxs-lookup"><span data-stu-id="14006-424">meetingTentativelyAccepted</span></span>
-| <span data-ttu-id="14006-425">meetingDeclined</span><span class="sxs-lookup"><span data-stu-id="14006-425">meetingDeclined</span></span>
+| <span data-ttu-id="ae0e4-429">无</span><span class="sxs-lookup"><span data-stu-id="ae0e4-429">none</span></span>
+| <span data-ttu-id="ae0e4-430">meetingRequest</span><span class="sxs-lookup"><span data-stu-id="ae0e4-430">meetingRequest</span></span>
+| <span data-ttu-id="ae0e4-431">meetingCancelled</span><span class="sxs-lookup"><span data-stu-id="ae0e4-431">meetingCancelled</span></span>
+| <span data-ttu-id="ae0e4-432">meetingAccepted</span><span class="sxs-lookup"><span data-stu-id="ae0e4-432">meetingAccepted</span></span>
+| <span data-ttu-id="ae0e4-433">meetingTentativelyAccepted</span><span class="sxs-lookup"><span data-stu-id="ae0e4-433">meetingTentativelyAccepted</span></span>
+| <span data-ttu-id="ae0e4-434">meetingDeclined</span><span class="sxs-lookup"><span data-stu-id="ae0e4-434">meetingDeclined</span></span>
 
 
-### <a name="followupflagstatus-values"></a><span data-ttu-id="14006-426">followupFlagStatus 值</span><span class="sxs-lookup"><span data-stu-id="14006-426">followupFlagStatus values</span></span>
+### <a name="followupflagstatus-values"></a><span data-ttu-id="ae0e4-435">followupFlagStatus 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-435">followupFlagStatus values</span></span>
 
-| <span data-ttu-id="14006-427">成员</span><span class="sxs-lookup"><span data-stu-id="14006-427">Member</span></span>
+| <span data-ttu-id="ae0e4-436">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-436">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-428">notFlagged</span><span class="sxs-lookup"><span data-stu-id="14006-428">notFlagged</span></span>
-| <span data-ttu-id="14006-429">complete</span><span class="sxs-lookup"><span data-stu-id="14006-429">complete</span></span>
-| <span data-ttu-id="14006-430">带</span><span class="sxs-lookup"><span data-stu-id="14006-430">flagged</span></span>
+| <span data-ttu-id="ae0e4-437">notFlagged</span><span class="sxs-lookup"><span data-stu-id="ae0e4-437">notFlagged</span></span>
+| <span data-ttu-id="ae0e4-438">complete</span><span class="sxs-lookup"><span data-stu-id="ae0e4-438">complete</span></span>
+| <span data-ttu-id="ae0e4-439">带</span><span class="sxs-lookup"><span data-stu-id="ae0e4-439">flagged</span></span>
 
 
-### <a name="inferenceclassificationtype-values"></a><span data-ttu-id="14006-431">inferenceClassificationType 值</span><span class="sxs-lookup"><span data-stu-id="14006-431">inferenceClassificationType values</span></span>
+### <a name="inferenceclassificationtype-values"></a><span data-ttu-id="ae0e4-440">inferenceClassificationType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-440">inferenceClassificationType values</span></span>
 
-| <span data-ttu-id="14006-432">成员</span><span class="sxs-lookup"><span data-stu-id="14006-432">Member</span></span>
+| <span data-ttu-id="ae0e4-441">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-441">Member</span></span>
 |:-----------------
-| <span data-ttu-id="14006-433">介绍</span><span class="sxs-lookup"><span data-stu-id="14006-433">focused</span></span>
-| <span data-ttu-id="14006-434">相互</span><span class="sxs-lookup"><span data-stu-id="14006-434">other</span></span>
+| <span data-ttu-id="ae0e4-442">介绍</span><span class="sxs-lookup"><span data-stu-id="ae0e4-442">focused</span></span>
+| <span data-ttu-id="ae0e4-443">相互</span><span class="sxs-lookup"><span data-stu-id="ae0e4-443">other</span></span>
 
 
-### <a name="iosnotificationalerttype-values"></a><span data-ttu-id="14006-435">iosNotificationAlertType 值</span><span class="sxs-lookup"><span data-stu-id="14006-435">iosNotificationAlertType values</span></span>
+### <a name="iosnotificationalerttype-values"></a><span data-ttu-id="ae0e4-444">iosNotificationAlertType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-444">iosNotificationAlertType values</span></span>
 
-| <span data-ttu-id="14006-436">成员</span><span class="sxs-lookup"><span data-stu-id="14006-436">Member</span></span>
+| <span data-ttu-id="ae0e4-445">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-445">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-437">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="14006-437">deviceDefault</span></span>
-| <span data-ttu-id="14006-438">分隔</span><span class="sxs-lookup"><span data-stu-id="14006-438">banner</span></span>
-| <span data-ttu-id="14006-439">适合</span><span class="sxs-lookup"><span data-stu-id="14006-439">modal</span></span>
-| <span data-ttu-id="14006-440">无</span><span class="sxs-lookup"><span data-stu-id="14006-440">none</span></span>
+| <span data-ttu-id="ae0e4-446">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="ae0e4-446">deviceDefault</span></span>
+| <span data-ttu-id="ae0e4-447">分隔</span><span class="sxs-lookup"><span data-stu-id="ae0e4-447">banner</span></span>
+| <span data-ttu-id="ae0e4-448">适合</span><span class="sxs-lookup"><span data-stu-id="ae0e4-448">modal</span></span>
+| <span data-ttu-id="ae0e4-449">无</span><span class="sxs-lookup"><span data-stu-id="ae0e4-449">none</span></span>
 
-### <a name="deviceenrollmentfailurereason-values"></a><span data-ttu-id="14006-441">deviceEnrollmentFailureReason 值</span><span class="sxs-lookup"><span data-stu-id="14006-441">deviceEnrollmentFailureReason values</span></span>
+### <a name="deviceenrollmentfailurereason-values"></a><span data-ttu-id="ae0e4-450">deviceEnrollmentFailureReason 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-450">deviceEnrollmentFailureReason values</span></span>
 
-| <span data-ttu-id="14006-442">成员</span><span class="sxs-lookup"><span data-stu-id="14006-442">Member</span></span>
+| <span data-ttu-id="ae0e4-451">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-451">Member</span></span>
 |:-------------
-| <span data-ttu-id="14006-443">unknown</span><span class="sxs-lookup"><span data-stu-id="14006-443">unknown</span></span>
-| <span data-ttu-id="14006-444">authentication</span><span class="sxs-lookup"><span data-stu-id="14006-444">authentication</span></span>
-| <span data-ttu-id="14006-445">批准</span><span class="sxs-lookup"><span data-stu-id="14006-445">authorization</span></span>
-| <span data-ttu-id="14006-446">accountValidation</span><span class="sxs-lookup"><span data-stu-id="14006-446">accountValidation</span></span>
-| <span data-ttu-id="14006-447">userValidation</span><span class="sxs-lookup"><span data-stu-id="14006-447">userValidation</span></span>
-| <span data-ttu-id="14006-448">deviceNotSupported</span><span class="sxs-lookup"><span data-stu-id="14006-448">deviceNotSupported</span></span>
-| <span data-ttu-id="14006-449">inMaintenance</span><span class="sxs-lookup"><span data-stu-id="14006-449">inMaintenance</span></span>
-| <span data-ttu-id="14006-450">badRequest</span><span class="sxs-lookup"><span data-stu-id="14006-450">badRequest</span></span>
-| <span data-ttu-id="14006-451">featureNotSupported</span><span class="sxs-lookup"><span data-stu-id="14006-451">featureNotSupported</span></span>
-| <span data-ttu-id="14006-452">enrollmentRestrictionsEnforced</span><span class="sxs-lookup"><span data-stu-id="14006-452">enrollmentRestrictionsEnforced</span></span>
-| <span data-ttu-id="14006-453">clientDisconnected</span><span class="sxs-lookup"><span data-stu-id="14006-453">clientDisconnected</span></span>
+| <span data-ttu-id="ae0e4-452">unknown</span><span class="sxs-lookup"><span data-stu-id="ae0e4-452">unknown</span></span>
+| <span data-ttu-id="ae0e4-453">authentication</span><span class="sxs-lookup"><span data-stu-id="ae0e4-453">authentication</span></span>
+| <span data-ttu-id="ae0e4-454">批准</span><span class="sxs-lookup"><span data-stu-id="ae0e4-454">authorization</span></span>
+| <span data-ttu-id="ae0e4-455">accountValidation</span><span class="sxs-lookup"><span data-stu-id="ae0e4-455">accountValidation</span></span>
+| <span data-ttu-id="ae0e4-456">userValidation</span><span class="sxs-lookup"><span data-stu-id="ae0e4-456">userValidation</span></span>
+| <span data-ttu-id="ae0e4-457">deviceNotSupported</span><span class="sxs-lookup"><span data-stu-id="ae0e4-457">deviceNotSupported</span></span>
+| <span data-ttu-id="ae0e4-458">inMaintenance</span><span class="sxs-lookup"><span data-stu-id="ae0e4-458">inMaintenance</span></span>
+| <span data-ttu-id="ae0e4-459">badRequest</span><span class="sxs-lookup"><span data-stu-id="ae0e4-459">badRequest</span></span>
+| <span data-ttu-id="ae0e4-460">featureNotSupported</span><span class="sxs-lookup"><span data-stu-id="ae0e4-460">featureNotSupported</span></span>
+| <span data-ttu-id="ae0e4-461">enrollmentRestrictionsEnforced</span><span class="sxs-lookup"><span data-stu-id="ae0e4-461">enrollmentRestrictionsEnforced</span></span>
+| <span data-ttu-id="ae0e4-462">clientDisconnected</span><span class="sxs-lookup"><span data-stu-id="ae0e4-462">clientDisconnected</span></span>
 
 
-### <a name="bodytype-values"></a><span data-ttu-id="14006-454">Office.mailboxenums.bodytype 值</span><span class="sxs-lookup"><span data-stu-id="14006-454">bodyType values</span></span>
-| <span data-ttu-id="14006-455">成员</span><span class="sxs-lookup"><span data-stu-id="14006-455">Member</span></span>
+### <a name="bodytype-values"></a><span data-ttu-id="ae0e4-463">Office.mailboxenums.bodytype 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-463">bodyType values</span></span>
+| <span data-ttu-id="ae0e4-464">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-464">Member</span></span>
 |:---------
-| <span data-ttu-id="14006-456">text</span><span class="sxs-lookup"><span data-stu-id="14006-456">text</span></span>
-| <span data-ttu-id="14006-457">html</span><span class="sxs-lookup"><span data-stu-id="14006-457">html</span></span>
+| <span data-ttu-id="ae0e4-465">text</span><span class="sxs-lookup"><span data-stu-id="ae0e4-465">text</span></span>
+| <span data-ttu-id="ae0e4-466">html</span><span class="sxs-lookup"><span data-stu-id="ae0e4-466">html</span></span>
 
 
-### <a name="locationtype-values"></a><span data-ttu-id="14006-458">locationType 值</span><span class="sxs-lookup"><span data-stu-id="14006-458">locationType values</span></span>
+### <a name="locationtype-values"></a><span data-ttu-id="ae0e4-467">locationType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-467">locationType values</span></span>
 
-| <span data-ttu-id="14006-459">成员</span><span class="sxs-lookup"><span data-stu-id="14006-459">Member</span></span>
+| <span data-ttu-id="ae0e4-468">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-468">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-460">设置</span><span class="sxs-lookup"><span data-stu-id="14006-460">default</span></span>
-| <span data-ttu-id="14006-461">conferenceRoom</span><span class="sxs-lookup"><span data-stu-id="14006-461">conferenceRoom</span></span>
-| <span data-ttu-id="14006-462">homeAddress</span><span class="sxs-lookup"><span data-stu-id="14006-462">homeAddress</span></span>
-| <span data-ttu-id="14006-463">businessAddress</span><span class="sxs-lookup"><span data-stu-id="14006-463">businessAddress</span></span>
-| <span data-ttu-id="14006-464">geoCoordinates</span><span class="sxs-lookup"><span data-stu-id="14006-464">geoCoordinates</span></span>
-| <span data-ttu-id="14006-465">streetAddress</span><span class="sxs-lookup"><span data-stu-id="14006-465">streetAddress</span></span>
-| <span data-ttu-id="14006-466">住</span><span class="sxs-lookup"><span data-stu-id="14006-466">hotel</span></span>
-| <span data-ttu-id="14006-467">餐馆</span><span class="sxs-lookup"><span data-stu-id="14006-467">restaurant</span></span>
-| <span data-ttu-id="14006-468">localBusiness</span><span class="sxs-lookup"><span data-stu-id="14006-468">localBusiness</span></span>
-| <span data-ttu-id="14006-469">postalAddress</span><span class="sxs-lookup"><span data-stu-id="14006-469">postalAddress</span></span>
+| <span data-ttu-id="ae0e4-469">设置</span><span class="sxs-lookup"><span data-stu-id="ae0e4-469">default</span></span>
+| <span data-ttu-id="ae0e4-470">conferenceRoom</span><span class="sxs-lookup"><span data-stu-id="ae0e4-470">conferenceRoom</span></span>
+| <span data-ttu-id="ae0e4-471">homeAddress</span><span class="sxs-lookup"><span data-stu-id="ae0e4-471">homeAddress</span></span>
+| <span data-ttu-id="ae0e4-472">businessAddress</span><span class="sxs-lookup"><span data-stu-id="ae0e4-472">businessAddress</span></span>
+| <span data-ttu-id="ae0e4-473">geoCoordinates</span><span class="sxs-lookup"><span data-stu-id="ae0e4-473">geoCoordinates</span></span>
+| <span data-ttu-id="ae0e4-474">streetAddress</span><span class="sxs-lookup"><span data-stu-id="ae0e4-474">streetAddress</span></span>
+| <span data-ttu-id="ae0e4-475">住</span><span class="sxs-lookup"><span data-stu-id="ae0e4-475">hotel</span></span>
+| <span data-ttu-id="ae0e4-476">餐馆</span><span class="sxs-lookup"><span data-stu-id="ae0e4-476">restaurant</span></span>
+| <span data-ttu-id="ae0e4-477">localBusiness</span><span class="sxs-lookup"><span data-stu-id="ae0e4-477">localBusiness</span></span>
+| <span data-ttu-id="ae0e4-478">postalAddress</span><span class="sxs-lookup"><span data-stu-id="ae0e4-478">postalAddress</span></span>
 
-### <a name="locationuniqueidtype-values"></a><span data-ttu-id="14006-470">locationUniqueIdType 值</span><span class="sxs-lookup"><span data-stu-id="14006-470">locationUniqueIdType values</span></span>
+### <a name="locationuniqueidtype-values"></a><span data-ttu-id="ae0e4-479">locationUniqueIdType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-479">locationUniqueIdType values</span></span>
 
-| <span data-ttu-id="14006-471">成员</span><span class="sxs-lookup"><span data-stu-id="14006-471">Member</span></span>
+| <span data-ttu-id="ae0e4-480">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-480">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-472">unknown</span><span class="sxs-lookup"><span data-stu-id="14006-472">unknown</span></span>
-| <span data-ttu-id="14006-473">locationStore</span><span class="sxs-lookup"><span data-stu-id="14006-473">locationStore</span></span>
-| <span data-ttu-id="14006-474">文件夹</span><span class="sxs-lookup"><span data-stu-id="14006-474">directory</span></span>
-| <span data-ttu-id="14006-475">private</span><span class="sxs-lookup"><span data-stu-id="14006-475">private</span></span>
-| <span data-ttu-id="14006-476">必应</span><span class="sxs-lookup"><span data-stu-id="14006-476">bing</span></span>
+| <span data-ttu-id="ae0e4-481">unknown</span><span class="sxs-lookup"><span data-stu-id="ae0e4-481">unknown</span></span>
+| <span data-ttu-id="ae0e4-482">locationStore</span><span class="sxs-lookup"><span data-stu-id="ae0e4-482">locationStore</span></span>
+| <span data-ttu-id="ae0e4-483">文件夹</span><span class="sxs-lookup"><span data-stu-id="ae0e4-483">directory</span></span>
+| <span data-ttu-id="ae0e4-484">private</span><span class="sxs-lookup"><span data-stu-id="ae0e4-484">private</span></span>
+| <span data-ttu-id="ae0e4-485">必应</span><span class="sxs-lookup"><span data-stu-id="ae0e4-485">bing</span></span>
 
 
-### <a name="messageactionflag-values"></a><span data-ttu-id="14006-477">messageActionFlag 值</span><span class="sxs-lookup"><span data-stu-id="14006-477">messageActionFlag values</span></span>
+### <a name="messageactionflag-values"></a><span data-ttu-id="ae0e4-486">messageActionFlag 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-486">messageActionFlag values</span></span>
 
-| <span data-ttu-id="14006-478">成员</span><span class="sxs-lookup"><span data-stu-id="14006-478">Member</span></span>
+| <span data-ttu-id="ae0e4-487">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-487">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-479">任意</span><span class="sxs-lookup"><span data-stu-id="14006-479">any</span></span>
-| <span data-ttu-id="14006-480">通话</span><span class="sxs-lookup"><span data-stu-id="14006-480">call</span></span>
-| <span data-ttu-id="14006-481">doNotForward</span><span class="sxs-lookup"><span data-stu-id="14006-481">doNotForward</span></span>
-| <span data-ttu-id="14006-482">努力</span><span class="sxs-lookup"><span data-stu-id="14006-482">followUp</span></span>
-| <span data-ttu-id="14006-483">仅供参考</span><span class="sxs-lookup"><span data-stu-id="14006-483">fyi</span></span>
-| <span data-ttu-id="14006-484">转发</span><span class="sxs-lookup"><span data-stu-id="14006-484">forward</span></span>
-| <span data-ttu-id="14006-485">noResponseNecessary</span><span class="sxs-lookup"><span data-stu-id="14006-485">noResponseNecessary</span></span>
-| <span data-ttu-id="14006-486">阅读</span><span class="sxs-lookup"><span data-stu-id="14006-486">read</span></span>
-| <span data-ttu-id="14006-487">回复</span><span class="sxs-lookup"><span data-stu-id="14006-487">reply</span></span>
-| <span data-ttu-id="14006-488">replyToAll</span><span class="sxs-lookup"><span data-stu-id="14006-488">replyToAll</span></span>
-| <span data-ttu-id="14006-489">概述</span><span class="sxs-lookup"><span data-stu-id="14006-489">review</span></span>
+| <span data-ttu-id="ae0e4-488">任意</span><span class="sxs-lookup"><span data-stu-id="ae0e4-488">any</span></span>
+| <span data-ttu-id="ae0e4-489">通话</span><span class="sxs-lookup"><span data-stu-id="ae0e4-489">call</span></span>
+| <span data-ttu-id="ae0e4-490">doNotForward</span><span class="sxs-lookup"><span data-stu-id="ae0e4-490">doNotForward</span></span>
+| <span data-ttu-id="ae0e4-491">努力</span><span class="sxs-lookup"><span data-stu-id="ae0e4-491">followUp</span></span>
+| <span data-ttu-id="ae0e4-492">仅供参考</span><span class="sxs-lookup"><span data-stu-id="ae0e4-492">fyi</span></span>
+| <span data-ttu-id="ae0e4-493">转发</span><span class="sxs-lookup"><span data-stu-id="ae0e4-493">forward</span></span>
+| <span data-ttu-id="ae0e4-494">noResponseNecessary</span><span class="sxs-lookup"><span data-stu-id="ae0e4-494">noResponseNecessary</span></span>
+| <span data-ttu-id="ae0e4-495">阅读</span><span class="sxs-lookup"><span data-stu-id="ae0e4-495">read</span></span>
+| <span data-ttu-id="ae0e4-496">回复</span><span class="sxs-lookup"><span data-stu-id="ae0e4-496">reply</span></span>
+| <span data-ttu-id="ae0e4-497">replyToAll</span><span class="sxs-lookup"><span data-stu-id="ae0e4-497">replyToAll</span></span>
+| <span data-ttu-id="ae0e4-498">概述</span><span class="sxs-lookup"><span data-stu-id="ae0e4-498">review</span></span>
 
 
-### <a name="onenoteuserrole-values"></a><span data-ttu-id="14006-490">onenoteUserRole 值</span><span class="sxs-lookup"><span data-stu-id="14006-490">onenoteUserRole values</span></span>
+### <a name="onenoteuserrole-values"></a><span data-ttu-id="ae0e4-499">onenoteUserRole 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-499">onenoteUserRole values</span></span>
 
-| <span data-ttu-id="14006-491">成员</span><span class="sxs-lookup"><span data-stu-id="14006-491">Member</span></span>      | <span data-ttu-id="14006-492">值</span><span class="sxs-lookup"><span data-stu-id="14006-492">Value</span></span> |
+| <span data-ttu-id="ae0e4-500">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-500">Member</span></span>      | <span data-ttu-id="ae0e4-501">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-501">Value</span></span> |
 | :---------- | :---- |
-| <span data-ttu-id="14006-493">所有者</span><span class="sxs-lookup"><span data-stu-id="14006-493">Owner</span></span>       | <span data-ttu-id="14006-494">0</span><span class="sxs-lookup"><span data-stu-id="14006-494">0</span></span>     |
-| <span data-ttu-id="14006-495">参与者</span><span class="sxs-lookup"><span data-stu-id="14006-495">Contributor</span></span> | <span data-ttu-id="14006-496">1 </span><span class="sxs-lookup"><span data-stu-id="14006-496">1</span></span>     |
-| <span data-ttu-id="14006-497">读者</span><span class="sxs-lookup"><span data-stu-id="14006-497">Reader</span></span>      | <span data-ttu-id="14006-498">2 </span><span class="sxs-lookup"><span data-stu-id="14006-498">2</span></span>     |
-| <span data-ttu-id="14006-499">无</span><span class="sxs-lookup"><span data-stu-id="14006-499">None</span></span>        | <span data-ttu-id="14006-500">-1</span><span class="sxs-lookup"><span data-stu-id="14006-500">-1</span></span>    |
+| <span data-ttu-id="ae0e4-502">所有者</span><span class="sxs-lookup"><span data-stu-id="ae0e4-502">Owner</span></span>       | <span data-ttu-id="ae0e4-503">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-503">0</span></span>     |
+| <span data-ttu-id="ae0e4-504">参与者</span><span class="sxs-lookup"><span data-stu-id="ae0e4-504">Contributor</span></span> | <span data-ttu-id="ae0e4-505">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-505">1</span></span>     |
+| <span data-ttu-id="ae0e4-506">读者</span><span class="sxs-lookup"><span data-stu-id="ae0e4-506">Reader</span></span>      | <span data-ttu-id="ae0e4-507">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-507">2</span></span>     |
+| <span data-ttu-id="ae0e4-508">无</span><span class="sxs-lookup"><span data-stu-id="ae0e4-508">None</span></span>        | <span data-ttu-id="ae0e4-509">-1</span><span class="sxs-lookup"><span data-stu-id="ae0e4-509">-1</span></span>    |
 
 
-### <a name="operationstatus-values"></a><span data-ttu-id="14006-501">operationStatus 值</span><span class="sxs-lookup"><span data-stu-id="14006-501">operationStatus values</span></span>
+### <a name="operationstatus-values"></a><span data-ttu-id="ae0e4-510">operationStatus 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-510">operationStatus values</span></span>
 
-| <span data-ttu-id="14006-502">成员</span><span class="sxs-lookup"><span data-stu-id="14006-502">Member</span></span>
+| <span data-ttu-id="ae0e4-511">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-511">Member</span></span>
 |:-----------------
-| <span data-ttu-id="14006-503">NotStarted</span><span class="sxs-lookup"><span data-stu-id="14006-503">NotStarted</span></span>
-| <span data-ttu-id="14006-504">正在运行</span><span class="sxs-lookup"><span data-stu-id="14006-504">Running</span></span>
-| <span data-ttu-id="14006-505">Completed</span><span class="sxs-lookup"><span data-stu-id="14006-505">Completed</span></span>
-| <span data-ttu-id="14006-506">已失败</span><span class="sxs-lookup"><span data-stu-id="14006-506">Failed</span></span>
+| <span data-ttu-id="ae0e4-512">NotStarted</span><span class="sxs-lookup"><span data-stu-id="ae0e4-512">NotStarted</span></span>
+| <span data-ttu-id="ae0e4-513">正在运行</span><span class="sxs-lookup"><span data-stu-id="ae0e4-513">Running</span></span>
+| <span data-ttu-id="ae0e4-514">Completed</span><span class="sxs-lookup"><span data-stu-id="ae0e4-514">Completed</span></span>
+| <span data-ttu-id="ae0e4-515">已失败</span><span class="sxs-lookup"><span data-stu-id="ae0e4-515">Failed</span></span>
 
 
-### <a name="onenotepatchactiontype-values"></a><span data-ttu-id="14006-507">onenotePatchActionType 值</span><span class="sxs-lookup"><span data-stu-id="14006-507">onenotePatchActionType values</span></span>
+### <a name="onenotepatchactiontype-values"></a><span data-ttu-id="ae0e4-516">onenotePatchActionType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-516">onenotePatchActionType values</span></span>
 
-| <span data-ttu-id="14006-508">成员</span><span class="sxs-lookup"><span data-stu-id="14006-508">Member</span></span>
+| <span data-ttu-id="ae0e4-517">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-517">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-509">替换</span><span class="sxs-lookup"><span data-stu-id="14006-509">Replace</span></span>
-| <span data-ttu-id="14006-510">Append</span><span class="sxs-lookup"><span data-stu-id="14006-510">Append</span></span>
-| <span data-ttu-id="14006-511">删除</span><span class="sxs-lookup"><span data-stu-id="14006-511">Delete</span></span>
-| <span data-ttu-id="14006-512">Insert</span><span class="sxs-lookup"><span data-stu-id="14006-512">Insert</span></span>
-| <span data-ttu-id="14006-513">计算</span><span class="sxs-lookup"><span data-stu-id="14006-513">Prepend</span></span>
+| <span data-ttu-id="ae0e4-518">替换</span><span class="sxs-lookup"><span data-stu-id="ae0e4-518">Replace</span></span>
+| <span data-ttu-id="ae0e4-519">Append</span><span class="sxs-lookup"><span data-stu-id="ae0e4-519">Append</span></span>
+| <span data-ttu-id="ae0e4-520">删除</span><span class="sxs-lookup"><span data-stu-id="ae0e4-520">Delete</span></span>
+| <span data-ttu-id="ae0e4-521">Insert</span><span class="sxs-lookup"><span data-stu-id="ae0e4-521">Insert</span></span>
+| <span data-ttu-id="ae0e4-522">计算</span><span class="sxs-lookup"><span data-stu-id="ae0e4-522">Prepend</span></span>
 
-### <a name="onenotepatchinsertposition-values"></a><span data-ttu-id="14006-514">onenotePatchInsertPosition 值</span><span class="sxs-lookup"><span data-stu-id="14006-514">onenotePatchInsertPosition values</span></span>
+### <a name="onenotepatchinsertposition-values"></a><span data-ttu-id="ae0e4-523">onenotePatchInsertPosition 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-523">onenotePatchInsertPosition values</span></span>
 
-| <span data-ttu-id="14006-515">成员</span><span class="sxs-lookup"><span data-stu-id="14006-515">Member</span></span>
+| <span data-ttu-id="ae0e4-524">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-524">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-516">段后</span><span class="sxs-lookup"><span data-stu-id="14006-516">After</span></span>
-| <span data-ttu-id="14006-517">Before</span><span class="sxs-lookup"><span data-stu-id="14006-517">Before</span></span>
+| <span data-ttu-id="ae0e4-525">段后</span><span class="sxs-lookup"><span data-stu-id="ae0e4-525">After</span></span>
+| <span data-ttu-id="ae0e4-526">Before</span><span class="sxs-lookup"><span data-stu-id="ae0e4-526">Before</span></span>
 
 
-### <a name="phonetype-values"></a><span data-ttu-id="14006-518">phoneType 值</span><span class="sxs-lookup"><span data-stu-id="14006-518">phoneType values</span></span>
+### <a name="phonetype-values"></a><span data-ttu-id="ae0e4-527">phoneType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-527">phoneType values</span></span>
 
-| <span data-ttu-id="14006-519">成员</span><span class="sxs-lookup"><span data-stu-id="14006-519">Member</span></span>
+| <span data-ttu-id="ae0e4-528">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-528">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-520">回收</span><span class="sxs-lookup"><span data-stu-id="14006-520">home</span></span>
-| <span data-ttu-id="14006-521">知情</span><span class="sxs-lookup"><span data-stu-id="14006-521">business</span></span>
-| <span data-ttu-id="14006-522">流动</span><span class="sxs-lookup"><span data-stu-id="14006-522">mobile</span></span>
-| <span data-ttu-id="14006-523">相互</span><span class="sxs-lookup"><span data-stu-id="14006-523">other</span></span>
-| <span data-ttu-id="14006-524">协助</span><span class="sxs-lookup"><span data-stu-id="14006-524">assistant</span></span>
-| <span data-ttu-id="14006-525">homeFax</span><span class="sxs-lookup"><span data-stu-id="14006-525">homeFax</span></span>
-| <span data-ttu-id="14006-526">businessFax</span><span class="sxs-lookup"><span data-stu-id="14006-526">businessFax</span></span>
-| <span data-ttu-id="14006-527">otherFax</span><span class="sxs-lookup"><span data-stu-id="14006-527">otherFax</span></span>
-| <span data-ttu-id="14006-528">pager</span><span class="sxs-lookup"><span data-stu-id="14006-528">pager</span></span>
-| <span data-ttu-id="14006-529">无线电台</span><span class="sxs-lookup"><span data-stu-id="14006-529">radio</span></span>
+| <span data-ttu-id="ae0e4-529">回收</span><span class="sxs-lookup"><span data-stu-id="ae0e4-529">home</span></span>
+| <span data-ttu-id="ae0e4-530">知情</span><span class="sxs-lookup"><span data-stu-id="ae0e4-530">business</span></span>
+| <span data-ttu-id="ae0e4-531">流动</span><span class="sxs-lookup"><span data-stu-id="ae0e4-531">mobile</span></span>
+| <span data-ttu-id="ae0e4-532">相互</span><span class="sxs-lookup"><span data-stu-id="ae0e4-532">other</span></span>
+| <span data-ttu-id="ae0e4-533">协助</span><span class="sxs-lookup"><span data-stu-id="ae0e4-533">assistant</span></span>
+| <span data-ttu-id="ae0e4-534">homeFax</span><span class="sxs-lookup"><span data-stu-id="ae0e4-534">homeFax</span></span>
+| <span data-ttu-id="ae0e4-535">businessFax</span><span class="sxs-lookup"><span data-stu-id="ae0e4-535">businessFax</span></span>
+| <span data-ttu-id="ae0e4-536">otherFax</span><span class="sxs-lookup"><span data-stu-id="ae0e4-536">otherFax</span></span>
+| <span data-ttu-id="ae0e4-537">pager</span><span class="sxs-lookup"><span data-stu-id="ae0e4-537">pager</span></span>
+| <span data-ttu-id="ae0e4-538">无线电台</span><span class="sxs-lookup"><span data-stu-id="ae0e4-538">radio</span></span>
 
 
-### <a name="plannerpreviewtype-values"></a><span data-ttu-id="14006-530">plannerPreviewType 值</span><span class="sxs-lookup"><span data-stu-id="14006-530">plannerPreviewType values</span></span>
+### <a name="plannerpreviewtype-values"></a><span data-ttu-id="ae0e4-539">plannerPreviewType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-539">plannerPreviewType values</span></span>
 
-| <span data-ttu-id="14006-531">成员</span><span class="sxs-lookup"><span data-stu-id="14006-531">Member</span></span>
+| <span data-ttu-id="ae0e4-540">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-540">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-532">自动</span><span class="sxs-lookup"><span data-stu-id="14006-532">automatic</span></span>
-| <span data-ttu-id="14006-533">noPreview</span><span class="sxs-lookup"><span data-stu-id="14006-533">noPreview</span></span>
-| <span data-ttu-id="14006-534">checklist</span><span class="sxs-lookup"><span data-stu-id="14006-534">checklist</span></span>
-| <span data-ttu-id="14006-535">说明</span><span class="sxs-lookup"><span data-stu-id="14006-535">description</span></span>
-| <span data-ttu-id="14006-536">参考</span><span class="sxs-lookup"><span data-stu-id="14006-536">reference</span></span>
+| <span data-ttu-id="ae0e4-541">自动</span><span class="sxs-lookup"><span data-stu-id="ae0e4-541">automatic</span></span>
+| <span data-ttu-id="ae0e4-542">noPreview</span><span class="sxs-lookup"><span data-stu-id="ae0e4-542">noPreview</span></span>
+| <span data-ttu-id="ae0e4-543">checklist</span><span class="sxs-lookup"><span data-stu-id="ae0e4-543">checklist</span></span>
+| <span data-ttu-id="ae0e4-544">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-544">description</span></span>
+| <span data-ttu-id="ae0e4-545">参考</span><span class="sxs-lookup"><span data-stu-id="ae0e4-545">reference</span></span>
 
 
-### <a name="status-values"></a><span data-ttu-id="14006-537">status 值</span><span class="sxs-lookup"><span data-stu-id="14006-537">status values</span></span>
+### <a name="status-values"></a><span data-ttu-id="ae0e4-546">status 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-546">status values</span></span>
 
-| <span data-ttu-id="14006-538">成员</span><span class="sxs-lookup"><span data-stu-id="14006-538">Member</span></span>
+| <span data-ttu-id="ae0e4-547">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-547">Member</span></span>
 |:-----------------
-| <span data-ttu-id="14006-539">工作</span><span class="sxs-lookup"><span data-stu-id="14006-539">active</span></span>
-| <span data-ttu-id="14006-540">updated</span><span class="sxs-lookup"><span data-stu-id="14006-540">updated</span></span>
-| <span data-ttu-id="14006-541">deleted</span><span class="sxs-lookup"><span data-stu-id="14006-541">deleted</span></span>
-| <span data-ttu-id="14006-542">忽略</span><span class="sxs-lookup"><span data-stu-id="14006-542">ignored</span></span>
-| <span data-ttu-id="14006-543">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-543">unknownFutureValue</span></span>
+| <span data-ttu-id="ae0e4-548">工作</span><span class="sxs-lookup"><span data-stu-id="ae0e4-548">active</span></span>
+| <span data-ttu-id="ae0e4-549">updated</span><span class="sxs-lookup"><span data-stu-id="ae0e4-549">updated</span></span>
+| <span data-ttu-id="ae0e4-550">deleted</span><span class="sxs-lookup"><span data-stu-id="ae0e4-550">deleted</span></span>
+| <span data-ttu-id="ae0e4-551">忽略</span><span class="sxs-lookup"><span data-stu-id="ae0e4-551">ignored</span></span>
+| <span data-ttu-id="ae0e4-552">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-552">unknownFutureValue</span></span>
 
 
-### <a name="weekindex-values"></a><span data-ttu-id="14006-544">weekIndex 值</span><span class="sxs-lookup"><span data-stu-id="14006-544">weekIndex values</span></span>
+### <a name="weekindex-values"></a><span data-ttu-id="ae0e4-553">weekIndex 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-553">weekIndex values</span></span>
 
-| <span data-ttu-id="14006-545">成员</span><span class="sxs-lookup"><span data-stu-id="14006-545">Member</span></span>
+| <span data-ttu-id="ae0e4-554">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-554">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-546">前</span><span class="sxs-lookup"><span data-stu-id="14006-546">first</span></span>
-| <span data-ttu-id="14006-547">第二个</span><span class="sxs-lookup"><span data-stu-id="14006-547">second</span></span>
-| <span data-ttu-id="14006-548">次</span><span class="sxs-lookup"><span data-stu-id="14006-548">third</span></span>
-| <span data-ttu-id="14006-549">四分之一</span><span class="sxs-lookup"><span data-stu-id="14006-549">fourth</span></span>
-| <span data-ttu-id="14006-550">末</span><span class="sxs-lookup"><span data-stu-id="14006-550">last</span></span>
+| <span data-ttu-id="ae0e4-555">前</span><span class="sxs-lookup"><span data-stu-id="ae0e4-555">first</span></span>
+| <span data-ttu-id="ae0e4-556">第二个</span><span class="sxs-lookup"><span data-stu-id="ae0e4-556">second</span></span>
+| <span data-ttu-id="ae0e4-557">次</span><span class="sxs-lookup"><span data-stu-id="ae0e4-557">third</span></span>
+| <span data-ttu-id="ae0e4-558">四分之一</span><span class="sxs-lookup"><span data-stu-id="ae0e4-558">fourth</span></span>
+| <span data-ttu-id="ae0e4-559">末</span><span class="sxs-lookup"><span data-stu-id="ae0e4-559">last</span></span>
 
 
-### <a name="dayofweek-values"></a><span data-ttu-id="14006-551">dayOfWeek 值</span><span class="sxs-lookup"><span data-stu-id="14006-551">dayOfWeek values</span></span>
+### <a name="dayofweek-values"></a><span data-ttu-id="ae0e4-560">dayOfWeek 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-560">dayOfWeek values</span></span>
 
-| <span data-ttu-id="14006-552">成员</span><span class="sxs-lookup"><span data-stu-id="14006-552">Member</span></span>
+| <span data-ttu-id="ae0e4-561">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-561">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-553">日</span><span class="sxs-lookup"><span data-stu-id="14006-553">sunday</span></span>
-| <span data-ttu-id="14006-554">星期一</span><span class="sxs-lookup"><span data-stu-id="14006-554">monday</span></span>
-| <span data-ttu-id="14006-555">2001</span><span class="sxs-lookup"><span data-stu-id="14006-555">tuesday</span></span>
-| <span data-ttu-id="14006-556">星期三</span><span class="sxs-lookup"><span data-stu-id="14006-556">wednesday</span></span>
-| <span data-ttu-id="14006-557">星期三</span><span class="sxs-lookup"><span data-stu-id="14006-557">thursday</span></span>
-| <span data-ttu-id="14006-558">之前</span><span class="sxs-lookup"><span data-stu-id="14006-558">friday</span></span>
-| <span data-ttu-id="14006-559">星期六</span><span class="sxs-lookup"><span data-stu-id="14006-559">saturday</span></span>
+| <span data-ttu-id="ae0e4-562">日</span><span class="sxs-lookup"><span data-stu-id="ae0e4-562">sunday</span></span>
+| <span data-ttu-id="ae0e4-563">星期一</span><span class="sxs-lookup"><span data-stu-id="ae0e4-563">monday</span></span>
+| <span data-ttu-id="ae0e4-564">2001</span><span class="sxs-lookup"><span data-stu-id="ae0e4-564">tuesday</span></span>
+| <span data-ttu-id="ae0e4-565">星期三</span><span class="sxs-lookup"><span data-stu-id="ae0e4-565">wednesday</span></span>
+| <span data-ttu-id="ae0e4-566">星期三</span><span class="sxs-lookup"><span data-stu-id="ae0e4-566">thursday</span></span>
+| <span data-ttu-id="ae0e4-567">之前</span><span class="sxs-lookup"><span data-stu-id="ae0e4-567">friday</span></span>
+| <span data-ttu-id="ae0e4-568">星期六</span><span class="sxs-lookup"><span data-stu-id="ae0e4-568">saturday</span></span>
 
-### <a name="recurrencepatterntype-values"></a><span data-ttu-id="14006-560">recurrencePatternType 值</span><span class="sxs-lookup"><span data-stu-id="14006-560">recurrencePatternType values</span></span>
+### <a name="recurrencepatterntype-values"></a><span data-ttu-id="ae0e4-569">recurrencePatternType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-569">recurrencePatternType values</span></span>
 
-| <span data-ttu-id="14006-561">成员</span><span class="sxs-lookup"><span data-stu-id="14006-561">Member</span></span>
+| <span data-ttu-id="ae0e4-570">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-570">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-562">每日</span><span class="sxs-lookup"><span data-stu-id="14006-562">daily</span></span>
-| <span data-ttu-id="14006-563">周历</span><span class="sxs-lookup"><span data-stu-id="14006-563">weekly</span></span>
-| <span data-ttu-id="14006-564">absoluteMonthly</span><span class="sxs-lookup"><span data-stu-id="14006-564">absoluteMonthly</span></span>
-| <span data-ttu-id="14006-565">relativeMonthly</span><span class="sxs-lookup"><span data-stu-id="14006-565">relativeMonthly</span></span>
-| <span data-ttu-id="14006-566">absoluteYearly</span><span class="sxs-lookup"><span data-stu-id="14006-566">absoluteYearly</span></span>
-| <span data-ttu-id="14006-567">relativeYearly</span><span class="sxs-lookup"><span data-stu-id="14006-567">relativeYearly</span></span>
+| <span data-ttu-id="ae0e4-571">每日</span><span class="sxs-lookup"><span data-stu-id="ae0e4-571">daily</span></span>
+| <span data-ttu-id="ae0e4-572">周历</span><span class="sxs-lookup"><span data-stu-id="ae0e4-572">weekly</span></span>
+| <span data-ttu-id="ae0e4-573">absoluteMonthly</span><span class="sxs-lookup"><span data-stu-id="ae0e4-573">absoluteMonthly</span></span>
+| <span data-ttu-id="ae0e4-574">relativeMonthly</span><span class="sxs-lookup"><span data-stu-id="ae0e4-574">relativeMonthly</span></span>
+| <span data-ttu-id="ae0e4-575">absoluteYearly</span><span class="sxs-lookup"><span data-stu-id="ae0e4-575">absoluteYearly</span></span>
+| <span data-ttu-id="ae0e4-576">relativeYearly</span><span class="sxs-lookup"><span data-stu-id="ae0e4-576">relativeYearly</span></span>
 
 
-### <a name="recurrencerangetype-values"></a><span data-ttu-id="14006-568">recurrenceRangeType 值</span><span class="sxs-lookup"><span data-stu-id="14006-568">recurrenceRangeType values</span></span>
+### <a name="recurrencerangetype-values"></a><span data-ttu-id="ae0e4-577">recurrenceRangeType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-577">recurrenceRangeType values</span></span>
 
-| <span data-ttu-id="14006-569">成员</span><span class="sxs-lookup"><span data-stu-id="14006-569">Member</span></span>
+| <span data-ttu-id="ae0e4-578">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-578">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-570">endDate</span><span class="sxs-lookup"><span data-stu-id="14006-570">endDate</span></span>
-| <span data-ttu-id="14006-571">noEnd</span><span class="sxs-lookup"><span data-stu-id="14006-571">noEnd</span></span>
-| <span data-ttu-id="14006-572">数字化</span><span class="sxs-lookup"><span data-stu-id="14006-572">numbered</span></span>
+| <span data-ttu-id="ae0e4-579">endDate</span><span class="sxs-lookup"><span data-stu-id="ae0e4-579">endDate</span></span>
+| <span data-ttu-id="ae0e4-580">noEnd</span><span class="sxs-lookup"><span data-stu-id="ae0e4-580">noEnd</span></span>
+| <span data-ttu-id="ae0e4-581">数字化</span><span class="sxs-lookup"><span data-stu-id="ae0e4-581">numbered</span></span>
 
 
-### <a name="onenotesourceservice-values"></a><span data-ttu-id="14006-573">onenoteSourceService 值</span><span class="sxs-lookup"><span data-stu-id="14006-573">onenoteSourceService values</span></span>
-| <span data-ttu-id="14006-574">成员</span><span class="sxs-lookup"><span data-stu-id="14006-574">Member</span></span>
+### <a name="onenotesourceservice-values"></a><span data-ttu-id="ae0e4-582">onenoteSourceService 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-582">onenoteSourceService values</span></span>
+| <span data-ttu-id="ae0e4-583">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-583">Member</span></span>
 |:---------------------
-| <span data-ttu-id="14006-575">未知</span><span class="sxs-lookup"><span data-stu-id="14006-575">Unknown</span></span>
-| <span data-ttu-id="14006-576">OneDrive</span><span class="sxs-lookup"><span data-stu-id="14006-576">OneDrive</span></span>
-| <span data-ttu-id="14006-577">OneDriveForBusiness</span><span class="sxs-lookup"><span data-stu-id="14006-577">OneDriveForBusiness</span></span>
-| <span data-ttu-id="14006-578">OnPremOneDriveForBusiness</span><span class="sxs-lookup"><span data-stu-id="14006-578">OnPremOneDriveForBusiness</span></span>
+| <span data-ttu-id="ae0e4-584">未知</span><span class="sxs-lookup"><span data-stu-id="ae0e4-584">Unknown</span></span>
+| <span data-ttu-id="ae0e4-585">OneDrive</span><span class="sxs-lookup"><span data-stu-id="ae0e4-585">OneDrive</span></span>
+| <span data-ttu-id="ae0e4-586">OneDriveForBusiness</span><span class="sxs-lookup"><span data-stu-id="ae0e4-586">OneDriveForBusiness</span></span>
+| <span data-ttu-id="ae0e4-587">OnPremOneDriveForBusiness</span><span class="sxs-lookup"><span data-stu-id="ae0e4-587">OnPremOneDriveForBusiness</span></span>
 
 
-### <a name="responsetype-values"></a><span data-ttu-id="14006-579">responseType 值</span><span class="sxs-lookup"><span data-stu-id="14006-579">responseType values</span></span>
+### <a name="responsetype-values"></a><span data-ttu-id="ae0e4-588">responseType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-588">responseType values</span></span>
 
-| <span data-ttu-id="14006-580">成员</span><span class="sxs-lookup"><span data-stu-id="14006-580">Member</span></span>
+| <span data-ttu-id="ae0e4-589">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-589">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-581">无</span><span class="sxs-lookup"><span data-stu-id="14006-581">none</span></span>
-| <span data-ttu-id="14006-582">组织者</span><span class="sxs-lookup"><span data-stu-id="14006-582">organizer</span></span>
-| <span data-ttu-id="14006-583">tentativelyAccepted</span><span class="sxs-lookup"><span data-stu-id="14006-583">tentativelyAccepted</span></span>
-| <span data-ttu-id="14006-584">接受</span><span class="sxs-lookup"><span data-stu-id="14006-584">accepted</span></span>
-| <span data-ttu-id="14006-585">邀请</span><span class="sxs-lookup"><span data-stu-id="14006-585">declined</span></span>
-| <span data-ttu-id="14006-586">notResponded</span><span class="sxs-lookup"><span data-stu-id="14006-586">notResponded</span></span>
+| <span data-ttu-id="ae0e4-590">无</span><span class="sxs-lookup"><span data-stu-id="ae0e4-590">none</span></span>
+| <span data-ttu-id="ae0e4-591">organizer － 组织者</span><span class="sxs-lookup"><span data-stu-id="ae0e4-591">organizer</span></span>
+| <span data-ttu-id="ae0e4-592">tentativelyAccepted</span><span class="sxs-lookup"><span data-stu-id="ae0e4-592">tentativelyAccepted</span></span>
+| <span data-ttu-id="ae0e4-593">接受</span><span class="sxs-lookup"><span data-stu-id="ae0e4-593">accepted</span></span>
+| <span data-ttu-id="ae0e4-594">邀请</span><span class="sxs-lookup"><span data-stu-id="ae0e4-594">declined</span></span>
+| <span data-ttu-id="ae0e4-595">notResponded</span><span class="sxs-lookup"><span data-stu-id="ae0e4-595">notResponded</span></span>
 
 
-### <a name="activitydomain-values"></a><span data-ttu-id="14006-587">activityDomain 值</span><span class="sxs-lookup"><span data-stu-id="14006-587">activityDomain values</span></span>
+### <a name="activitydomain-values"></a><span data-ttu-id="ae0e4-596">activityDomain 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-596">activityDomain values</span></span>
 
-| <span data-ttu-id="14006-588">成员</span><span class="sxs-lookup"><span data-stu-id="14006-588">Member</span></span>
+| <span data-ttu-id="ae0e4-597">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-597">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-589">unknown</span><span class="sxs-lookup"><span data-stu-id="14006-589">unknown</span></span>
-| <span data-ttu-id="14006-590">工时</span><span class="sxs-lookup"><span data-stu-id="14006-590">work</span></span>
-| <span data-ttu-id="14006-591">personal</span><span class="sxs-lookup"><span data-stu-id="14006-591">personal</span></span>
-| <span data-ttu-id="14006-592">unrestricted</span><span class="sxs-lookup"><span data-stu-id="14006-592">unrestricted</span></span>
+| <span data-ttu-id="ae0e4-598">unknown</span><span class="sxs-lookup"><span data-stu-id="ae0e4-598">unknown</span></span>
+| <span data-ttu-id="ae0e4-599">工时</span><span class="sxs-lookup"><span data-stu-id="ae0e4-599">work</span></span>
+| <span data-ttu-id="ae0e4-600">personal</span><span class="sxs-lookup"><span data-stu-id="ae0e4-600">personal</span></span>
+| <span data-ttu-id="ae0e4-601">unrestricted</span><span class="sxs-lookup"><span data-stu-id="ae0e4-601">unrestricted</span></span>
 
 
-### <a name="websitetype-values"></a><span data-ttu-id="14006-593">websiteType 值</span><span class="sxs-lookup"><span data-stu-id="14006-593">websiteType values</span></span>
+### <a name="websitetype-values"></a><span data-ttu-id="ae0e4-602">websiteType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-602">websiteType values</span></span>
 
-| <span data-ttu-id="14006-594">成员</span><span class="sxs-lookup"><span data-stu-id="14006-594">Member</span></span>
+| <span data-ttu-id="ae0e4-603">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-603">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-595">相互</span><span class="sxs-lookup"><span data-stu-id="14006-595">other</span></span>
-| <span data-ttu-id="14006-596">回收</span><span class="sxs-lookup"><span data-stu-id="14006-596">home</span></span>
-| <span data-ttu-id="14006-597">工时</span><span class="sxs-lookup"><span data-stu-id="14006-597">work</span></span>
-| <span data-ttu-id="14006-598">博客</span><span class="sxs-lookup"><span data-stu-id="14006-598">blog</span></span>
-| <span data-ttu-id="14006-599">个人资料</span><span class="sxs-lookup"><span data-stu-id="14006-599">profile</span></span>
+| <span data-ttu-id="ae0e4-604">相互</span><span class="sxs-lookup"><span data-stu-id="ae0e4-604">other</span></span>
+| <span data-ttu-id="ae0e4-605">回收</span><span class="sxs-lookup"><span data-stu-id="ae0e4-605">home</span></span>
+| <span data-ttu-id="ae0e4-606">工时</span><span class="sxs-lookup"><span data-stu-id="ae0e4-606">work</span></span>
+| <span data-ttu-id="ae0e4-607">博客</span><span class="sxs-lookup"><span data-stu-id="ae0e4-607">blog</span></span>
+| <span data-ttu-id="ae0e4-608">个人资料</span><span class="sxs-lookup"><span data-stu-id="ae0e4-608">profile</span></span>
 
 
-### <a name="categorycolor-values"></a><span data-ttu-id="14006-600">categoryColor 值</span><span class="sxs-lookup"><span data-stu-id="14006-600">categoryColor values</span></span>
+### <a name="categorycolor-values"></a><span data-ttu-id="ae0e4-609">categoryColor 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-609">categoryColor values</span></span>
 
-| <span data-ttu-id="14006-601">成员</span><span class="sxs-lookup"><span data-stu-id="14006-601">Member</span></span>   | <span data-ttu-id="14006-602">值</span><span class="sxs-lookup"><span data-stu-id="14006-602">Value</span></span> |
+| <span data-ttu-id="ae0e4-610">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-610">Member</span></span>   | <span data-ttu-id="ae0e4-611">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-611">Value</span></span> |
 | :------- | :---- |
-| <span data-ttu-id="14006-603">无</span><span class="sxs-lookup"><span data-stu-id="14006-603">none</span></span>     | <span data-ttu-id="14006-604">-1</span><span class="sxs-lookup"><span data-stu-id="14006-604">-1</span></span>    |
-| <span data-ttu-id="14006-605">preset0</span><span class="sxs-lookup"><span data-stu-id="14006-605">preset0</span></span>  | <span data-ttu-id="14006-606">0</span><span class="sxs-lookup"><span data-stu-id="14006-606">0</span></span>     |
-| <span data-ttu-id="14006-607">preset1</span><span class="sxs-lookup"><span data-stu-id="14006-607">preset1</span></span>  | <span data-ttu-id="14006-608">1 </span><span class="sxs-lookup"><span data-stu-id="14006-608">1</span></span>     |
-| <span data-ttu-id="14006-609">preset2</span><span class="sxs-lookup"><span data-stu-id="14006-609">preset2</span></span>  | <span data-ttu-id="14006-610">2 </span><span class="sxs-lookup"><span data-stu-id="14006-610">2</span></span>     |
-| <span data-ttu-id="14006-611">preset3</span><span class="sxs-lookup"><span data-stu-id="14006-611">preset3</span></span>  | <span data-ttu-id="14006-612">第三章</span><span class="sxs-lookup"><span data-stu-id="14006-612">3</span></span>     |
-| <span data-ttu-id="14006-613">preset4</span><span class="sxs-lookup"><span data-stu-id="14006-613">preset4</span></span>  | <span data-ttu-id="14006-614">4 </span><span class="sxs-lookup"><span data-stu-id="14006-614">4</span></span>     |
-| <span data-ttu-id="14006-615">preset5</span><span class="sxs-lookup"><span data-stu-id="14006-615">preset5</span></span>  | <span data-ttu-id="14006-616">5 </span><span class="sxs-lookup"><span data-stu-id="14006-616">5</span></span>     |
-| <span data-ttu-id="14006-617">preset6</span><span class="sxs-lookup"><span data-stu-id="14006-617">preset6</span></span>  | <span data-ttu-id="14006-618">6 </span><span class="sxs-lookup"><span data-stu-id="14006-618">6</span></span>     |
-| <span data-ttu-id="14006-619">preset7</span><span class="sxs-lookup"><span data-stu-id="14006-619">preset7</span></span>  | <span data-ttu-id="14006-620">7 </span><span class="sxs-lookup"><span data-stu-id="14006-620">7</span></span>     |
-| <span data-ttu-id="14006-621">preset8</span><span class="sxs-lookup"><span data-stu-id="14006-621">preset8</span></span>  | <span data-ttu-id="14006-622">8 </span><span class="sxs-lookup"><span data-stu-id="14006-622">8</span></span>     |
-| <span data-ttu-id="14006-623">preset9</span><span class="sxs-lookup"><span data-stu-id="14006-623">preset9</span></span>  | <span data-ttu-id="14006-624">9 </span><span class="sxs-lookup"><span data-stu-id="14006-624">9</span></span>     |
-| <span data-ttu-id="14006-625">preset10</span><span class="sxs-lookup"><span data-stu-id="14006-625">preset10</span></span> | <span data-ttu-id="14006-626">10 </span><span class="sxs-lookup"><span data-stu-id="14006-626">10</span></span>    |
-| <span data-ttu-id="14006-627">preset11</span><span class="sxs-lookup"><span data-stu-id="14006-627">preset11</span></span> | <span data-ttu-id="14006-628">11 </span><span class="sxs-lookup"><span data-stu-id="14006-628">11</span></span>    |
-| <span data-ttu-id="14006-629">preset12</span><span class="sxs-lookup"><span data-stu-id="14006-629">preset12</span></span> | <span data-ttu-id="14006-630">12 </span><span class="sxs-lookup"><span data-stu-id="14006-630">12</span></span>    |
-| <span data-ttu-id="14006-631">preset13</span><span class="sxs-lookup"><span data-stu-id="14006-631">preset13</span></span> | <span data-ttu-id="14006-632">13 </span><span class="sxs-lookup"><span data-stu-id="14006-632">13</span></span>    |
-| <span data-ttu-id="14006-633">preset14</span><span class="sxs-lookup"><span data-stu-id="14006-633">preset14</span></span> | <span data-ttu-id="14006-634">14 </span><span class="sxs-lookup"><span data-stu-id="14006-634">14</span></span>    |
-| <span data-ttu-id="14006-635">preset15</span><span class="sxs-lookup"><span data-stu-id="14006-635">preset15</span></span> | <span data-ttu-id="14006-636">15 </span><span class="sxs-lookup"><span data-stu-id="14006-636">15</span></span>    |
-| <span data-ttu-id="14006-637">preset16</span><span class="sxs-lookup"><span data-stu-id="14006-637">preset16</span></span> | <span data-ttu-id="14006-638">16 </span><span class="sxs-lookup"><span data-stu-id="14006-638">16</span></span>    |
-| <span data-ttu-id="14006-639">preset17</span><span class="sxs-lookup"><span data-stu-id="14006-639">preset17</span></span> | <span data-ttu-id="14006-640">17 </span><span class="sxs-lookup"><span data-stu-id="14006-640">17</span></span>    |
-| <span data-ttu-id="14006-641">preset18</span><span class="sxs-lookup"><span data-stu-id="14006-641">preset18</span></span> | <span data-ttu-id="14006-642">18 </span><span class="sxs-lookup"><span data-stu-id="14006-642">18</span></span>    |
-| <span data-ttu-id="14006-643">preset19</span><span class="sxs-lookup"><span data-stu-id="14006-643">preset19</span></span> | <span data-ttu-id="14006-644">合</span><span class="sxs-lookup"><span data-stu-id="14006-644">19</span></span>    |
-| <span data-ttu-id="14006-645">preset20</span><span class="sxs-lookup"><span data-stu-id="14006-645">preset20</span></span> | <span data-ttu-id="14006-646">20</span><span class="sxs-lookup"><span data-stu-id="14006-646">20</span></span>    |
-| <span data-ttu-id="14006-647">preset21</span><span class="sxs-lookup"><span data-stu-id="14006-647">preset21</span></span> | <span data-ttu-id="14006-648"> 21</span><span class="sxs-lookup"><span data-stu-id="14006-648">21</span></span>    |
-| <span data-ttu-id="14006-649">preset22</span><span class="sxs-lookup"><span data-stu-id="14006-649">preset22</span></span> | <span data-ttu-id="14006-650">22</span><span class="sxs-lookup"><span data-stu-id="14006-650">22</span></span>    |
-| <span data-ttu-id="14006-651">preset23</span><span class="sxs-lookup"><span data-stu-id="14006-651">preset23</span></span> | <span data-ttu-id="14006-652">上午</span><span class="sxs-lookup"><span data-stu-id="14006-652">23</span></span>    |
-| <span data-ttu-id="14006-653">preset24</span><span class="sxs-lookup"><span data-stu-id="14006-653">preset24</span></span> | <span data-ttu-id="14006-654">24</span><span class="sxs-lookup"><span data-stu-id="14006-654">24</span></span>    |
+| <span data-ttu-id="ae0e4-612">无</span><span class="sxs-lookup"><span data-stu-id="ae0e4-612">none</span></span>     | <span data-ttu-id="ae0e4-613">-1</span><span class="sxs-lookup"><span data-stu-id="ae0e4-613">-1</span></span>    |
+| <span data-ttu-id="ae0e4-614">preset0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-614">preset0</span></span>  | <span data-ttu-id="ae0e4-615">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-615">0</span></span>     |
+| <span data-ttu-id="ae0e4-616">preset1</span><span class="sxs-lookup"><span data-stu-id="ae0e4-616">preset1</span></span>  | <span data-ttu-id="ae0e4-617">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-617">1</span></span>     |
+| <span data-ttu-id="ae0e4-618">preset2</span><span class="sxs-lookup"><span data-stu-id="ae0e4-618">preset2</span></span>  | <span data-ttu-id="ae0e4-619">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-619">2</span></span>     |
+| <span data-ttu-id="ae0e4-620">preset3</span><span class="sxs-lookup"><span data-stu-id="ae0e4-620">preset3</span></span>  | <span data-ttu-id="ae0e4-621">第三章</span><span class="sxs-lookup"><span data-stu-id="ae0e4-621">3</span></span>     |
+| <span data-ttu-id="ae0e4-622">preset4</span><span class="sxs-lookup"><span data-stu-id="ae0e4-622">preset4</span></span>  | <span data-ttu-id="ae0e4-623">4 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-623">4</span></span>     |
+| <span data-ttu-id="ae0e4-624">preset5</span><span class="sxs-lookup"><span data-stu-id="ae0e4-624">preset5</span></span>  | <span data-ttu-id="ae0e4-625">5 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-625">5</span></span>     |
+| <span data-ttu-id="ae0e4-626">preset6</span><span class="sxs-lookup"><span data-stu-id="ae0e4-626">preset6</span></span>  | <span data-ttu-id="ae0e4-627">6 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-627">6</span></span>     |
+| <span data-ttu-id="ae0e4-628">preset7</span><span class="sxs-lookup"><span data-stu-id="ae0e4-628">preset7</span></span>  | <span data-ttu-id="ae0e4-629">7 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-629">7</span></span>     |
+| <span data-ttu-id="ae0e4-630">preset8</span><span class="sxs-lookup"><span data-stu-id="ae0e4-630">preset8</span></span>  | <span data-ttu-id="ae0e4-631">8 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-631">8</span></span>     |
+| <span data-ttu-id="ae0e4-632">preset9</span><span class="sxs-lookup"><span data-stu-id="ae0e4-632">preset9</span></span>  | <span data-ttu-id="ae0e4-633">9 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-633">9</span></span>     |
+| <span data-ttu-id="ae0e4-634">preset10</span><span class="sxs-lookup"><span data-stu-id="ae0e4-634">preset10</span></span> | <span data-ttu-id="ae0e4-635">10 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-635">10</span></span>    |
+| <span data-ttu-id="ae0e4-636">preset11</span><span class="sxs-lookup"><span data-stu-id="ae0e4-636">preset11</span></span> | <span data-ttu-id="ae0e4-637">11 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-637">11</span></span>    |
+| <span data-ttu-id="ae0e4-638">preset12</span><span class="sxs-lookup"><span data-stu-id="ae0e4-638">preset12</span></span> | <span data-ttu-id="ae0e4-639">12 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-639">12</span></span>    |
+| <span data-ttu-id="ae0e4-640">preset13</span><span class="sxs-lookup"><span data-stu-id="ae0e4-640">preset13</span></span> | <span data-ttu-id="ae0e4-641">13 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-641">13</span></span>    |
+| <span data-ttu-id="ae0e4-642">preset14</span><span class="sxs-lookup"><span data-stu-id="ae0e4-642">preset14</span></span> | <span data-ttu-id="ae0e4-643">14 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-643">14</span></span>    |
+| <span data-ttu-id="ae0e4-644">preset15</span><span class="sxs-lookup"><span data-stu-id="ae0e4-644">preset15</span></span> | <span data-ttu-id="ae0e4-645">15 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-645">15</span></span>    |
+| <span data-ttu-id="ae0e4-646">preset16</span><span class="sxs-lookup"><span data-stu-id="ae0e4-646">preset16</span></span> | <span data-ttu-id="ae0e4-647">16 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-647">16</span></span>    |
+| <span data-ttu-id="ae0e4-648">preset17</span><span class="sxs-lookup"><span data-stu-id="ae0e4-648">preset17</span></span> | <span data-ttu-id="ae0e4-649">17 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-649">17</span></span>    |
+| <span data-ttu-id="ae0e4-650">preset18</span><span class="sxs-lookup"><span data-stu-id="ae0e4-650">preset18</span></span> | <span data-ttu-id="ae0e4-651">18 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-651">18</span></span>    |
+| <span data-ttu-id="ae0e4-652">preset19</span><span class="sxs-lookup"><span data-stu-id="ae0e4-652">preset19</span></span> | <span data-ttu-id="ae0e4-653">合</span><span class="sxs-lookup"><span data-stu-id="ae0e4-653">19</span></span>    |
+| <span data-ttu-id="ae0e4-654">preset20</span><span class="sxs-lookup"><span data-stu-id="ae0e4-654">preset20</span></span> | <span data-ttu-id="ae0e4-655">20</span><span class="sxs-lookup"><span data-stu-id="ae0e4-655">20</span></span>    |
+| <span data-ttu-id="ae0e4-656">preset21</span><span class="sxs-lookup"><span data-stu-id="ae0e4-656">preset21</span></span> | <span data-ttu-id="ae0e4-657"> 21</span><span class="sxs-lookup"><span data-stu-id="ae0e4-657">21</span></span>    |
+| <span data-ttu-id="ae0e4-658">preset22</span><span class="sxs-lookup"><span data-stu-id="ae0e4-658">preset22</span></span> | <span data-ttu-id="ae0e4-659">22</span><span class="sxs-lookup"><span data-stu-id="ae0e4-659">22</span></span>    |
+| <span data-ttu-id="ae0e4-660">preset23</span><span class="sxs-lookup"><span data-stu-id="ae0e4-660">preset23</span></span> | <span data-ttu-id="ae0e4-661">上午</span><span class="sxs-lookup"><span data-stu-id="ae0e4-661">23</span></span>    |
+| <span data-ttu-id="ae0e4-662">preset24</span><span class="sxs-lookup"><span data-stu-id="ae0e4-662">preset24</span></span> | <span data-ttu-id="ae0e4-663">24</span><span class="sxs-lookup"><span data-stu-id="ae0e4-663">24</span></span>    |
 
-### <a name="alertfeedback-values"></a><span data-ttu-id="14006-655">alertFeedback 值</span><span class="sxs-lookup"><span data-stu-id="14006-655">alertFeedback values</span></span>
+### <a name="alertfeedback-values"></a><span data-ttu-id="ae0e4-664">alertFeedback 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-664">alertFeedback values</span></span>
 
-<span data-ttu-id="14006-656">由分析师提供的警报上可能的反馈值。</span><span class="sxs-lookup"><span data-stu-id="14006-656">Possible feedback values on the alert provided by an analyst.</span></span>
+<span data-ttu-id="ae0e4-665">由分析师提供的警报上可能的反馈值。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-665">Possible feedback values on the alert provided by an analyst.</span></span>
 
-| <span data-ttu-id="14006-657">成员</span><span class="sxs-lookup"><span data-stu-id="14006-657">Member</span></span>         | <span data-ttu-id="14006-658">值</span><span class="sxs-lookup"><span data-stu-id="14006-658">Value</span></span> | <span data-ttu-id="14006-659">说明</span><span class="sxs-lookup"><span data-stu-id="14006-659">Description</span></span>               |
+| <span data-ttu-id="ae0e4-666">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-666">Member</span></span>         | <span data-ttu-id="ae0e4-667">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-667">Value</span></span> | <span data-ttu-id="ae0e4-668">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-668">Description</span></span>               |
 | :------------- | :---- | :------------------------ |
-| <span data-ttu-id="14006-660">unknown</span><span class="sxs-lookup"><span data-stu-id="14006-660">unknown</span></span>        | <span data-ttu-id="14006-661">0</span><span class="sxs-lookup"><span data-stu-id="14006-661">0</span></span>     | <span data-ttu-id="14006-662">陌生.</span><span class="sxs-lookup"><span data-stu-id="14006-662">Unknown.</span></span>                  |
-| <span data-ttu-id="14006-663">truePositive</span><span class="sxs-lookup"><span data-stu-id="14006-663">truePositive</span></span>   | <span data-ttu-id="14006-664">1 </span><span class="sxs-lookup"><span data-stu-id="14006-664">1</span></span>     | <span data-ttu-id="14006-665">警报为 true-肯定。</span><span class="sxs-lookup"><span data-stu-id="14006-665">Alert is true-positive.</span></span>   |
-| <span data-ttu-id="14006-666">falsePositive</span><span class="sxs-lookup"><span data-stu-id="14006-666">falsePositive</span></span>  | <span data-ttu-id="14006-667">2 </span><span class="sxs-lookup"><span data-stu-id="14006-667">2</span></span>     | <span data-ttu-id="14006-668">警报为 false-肯定。</span><span class="sxs-lookup"><span data-stu-id="14006-668">Alert is false-positive.</span></span>  |
-| <span data-ttu-id="14006-669">benignPositive</span><span class="sxs-lookup"><span data-stu-id="14006-669">benignPositive</span></span> | <span data-ttu-id="14006-670">第三章</span><span class="sxs-lookup"><span data-stu-id="14006-670">3</span></span>     | <span data-ttu-id="14006-671">警报为良性-肯定。</span><span class="sxs-lookup"><span data-stu-id="14006-671">Alert is benign-positive.</span></span> |
+| <span data-ttu-id="ae0e4-669">unknown</span><span class="sxs-lookup"><span data-stu-id="ae0e4-669">unknown</span></span>        | <span data-ttu-id="ae0e4-670">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-670">0</span></span>     | <span data-ttu-id="ae0e4-671">陌生.</span><span class="sxs-lookup"><span data-stu-id="ae0e4-671">Unknown.</span></span>                  |
+| <span data-ttu-id="ae0e4-672">truePositive</span><span class="sxs-lookup"><span data-stu-id="ae0e4-672">truePositive</span></span>   | <span data-ttu-id="ae0e4-673">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-673">1</span></span>     | <span data-ttu-id="ae0e4-674">警报为 true-肯定。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-674">Alert is true-positive.</span></span>   |
+| <span data-ttu-id="ae0e4-675">falsePositive</span><span class="sxs-lookup"><span data-stu-id="ae0e4-675">falsePositive</span></span>  | <span data-ttu-id="ae0e4-676">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-676">2</span></span>     | <span data-ttu-id="ae0e4-677">警报为 false-肯定。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-677">Alert is false-positive.</span></span>  |
+| <span data-ttu-id="ae0e4-678">benignPositive</span><span class="sxs-lookup"><span data-stu-id="ae0e4-678">benignPositive</span></span> | <span data-ttu-id="ae0e4-679">第三章</span><span class="sxs-lookup"><span data-stu-id="ae0e4-679">3</span></span>     | <span data-ttu-id="ae0e4-680">警报为良性-肯定。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-680">Alert is benign-positive.</span></span> |
 
-### <a name="filehashtype-values"></a><span data-ttu-id="14006-672">fileHashType 值</span><span class="sxs-lookup"><span data-stu-id="14006-672">fileHashType values</span></span>
+### <a name="filehashtype-values"></a><span data-ttu-id="ae0e4-681">fileHashType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-681">fileHashType values</span></span>
 
-| <span data-ttu-id="14006-673">成员</span><span class="sxs-lookup"><span data-stu-id="14006-673">Member</span></span>              | <span data-ttu-id="14006-674">值</span><span class="sxs-lookup"><span data-stu-id="14006-674">Value</span></span> | <span data-ttu-id="14006-675">说明</span><span class="sxs-lookup"><span data-stu-id="14006-675">Description</span></span>                    |
+| <span data-ttu-id="ae0e4-682">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-682">Member</span></span>              | <span data-ttu-id="ae0e4-683">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-683">Value</span></span> | <span data-ttu-id="ae0e4-684">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-684">Description</span></span>                    |
 | :------------------ | :---- | :----------------------------- |
-| <span data-ttu-id="14006-676">unknown</span><span class="sxs-lookup"><span data-stu-id="14006-676">unknown</span></span>             | <span data-ttu-id="14006-677">0</span><span class="sxs-lookup"><span data-stu-id="14006-677">0</span></span>     | <span data-ttu-id="14006-678">未知类型。</span><span class="sxs-lookup"><span data-stu-id="14006-678">Unknown type.</span></span>                  |
-| <span data-ttu-id="14006-679">sha1</span><span class="sxs-lookup"><span data-stu-id="14006-679">sha1</span></span>                | <span data-ttu-id="14006-680">1 </span><span class="sxs-lookup"><span data-stu-id="14006-680">1</span></span>     | <span data-ttu-id="14006-681">SHA1 哈希类型。</span><span class="sxs-lookup"><span data-stu-id="14006-681">SHA1 hash type.</span></span>                |
-| <span data-ttu-id="14006-682">sha256</span><span class="sxs-lookup"><span data-stu-id="14006-682">sha256</span></span>              | <span data-ttu-id="14006-683">2 </span><span class="sxs-lookup"><span data-stu-id="14006-683">2</span></span>     | <span data-ttu-id="14006-684">SHA256 哈希类型。</span><span class="sxs-lookup"><span data-stu-id="14006-684">SHA256 hash type.</span></span>              |
-| <span data-ttu-id="14006-685">md5</span><span class="sxs-lookup"><span data-stu-id="14006-685">md5</span></span>                 | <span data-ttu-id="14006-686">第三章</span><span class="sxs-lookup"><span data-stu-id="14006-686">3</span></span>     | <span data-ttu-id="14006-687">MD5 哈希类型。</span><span class="sxs-lookup"><span data-stu-id="14006-687">MD5 hash type.</span></span>                 |
-| <span data-ttu-id="14006-688">authenticodeHash256</span><span class="sxs-lookup"><span data-stu-id="14006-688">authenticodeHash256</span></span> | <span data-ttu-id="14006-689">4 </span><span class="sxs-lookup"><span data-stu-id="14006-689">4</span></span>     | <span data-ttu-id="14006-690">AuthenticodeHash256 哈希类型。</span><span class="sxs-lookup"><span data-stu-id="14006-690">AuthenticodeHash256 hash type.</span></span> |
-| <span data-ttu-id="14006-691">lsHash</span><span class="sxs-lookup"><span data-stu-id="14006-691">lsHash</span></span>              | <span data-ttu-id="14006-692">5 </span><span class="sxs-lookup"><span data-stu-id="14006-692">5</span></span>     | <span data-ttu-id="14006-693">LsHash 哈希类型。</span><span class="sxs-lookup"><span data-stu-id="14006-693">LsHash hash type.</span></span>              |
-| <span data-ttu-id="14006-694">ctph</span><span class="sxs-lookup"><span data-stu-id="14006-694">ctph</span></span>                | <span data-ttu-id="14006-695">6 </span><span class="sxs-lookup"><span data-stu-id="14006-695">6</span></span>     | <span data-ttu-id="14006-696">CTPH 哈希类型。</span><span class="sxs-lookup"><span data-stu-id="14006-696">CTPH hash type.</span></span>                |
-| <span data-ttu-id="14006-697">peSha1</span><span class="sxs-lookup"><span data-stu-id="14006-697">peSha1</span></span>              | <span data-ttu-id="14006-698">7 </span><span class="sxs-lookup"><span data-stu-id="14006-698">7</span></span>     | <span data-ttu-id="14006-699">PESHA1 哈希类型。</span><span class="sxs-lookup"><span data-stu-id="14006-699">PESHA1 hash type.</span></span>              |
-| <span data-ttu-id="14006-700">peSha256</span><span class="sxs-lookup"><span data-stu-id="14006-700">peSha256</span></span>            | <span data-ttu-id="14006-701">8 </span><span class="sxs-lookup"><span data-stu-id="14006-701">8</span></span>     | <span data-ttu-id="14006-702">PESHA256 哈希类型。</span><span class="sxs-lookup"><span data-stu-id="14006-702">PESHA256 hash type.</span></span>            |
+| <span data-ttu-id="ae0e4-685">unknown</span><span class="sxs-lookup"><span data-stu-id="ae0e4-685">unknown</span></span>             | <span data-ttu-id="ae0e4-686">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-686">0</span></span>     | <span data-ttu-id="ae0e4-687">未知类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-687">Unknown type.</span></span>                  |
+| <span data-ttu-id="ae0e4-688">sha1</span><span class="sxs-lookup"><span data-stu-id="ae0e4-688">sha1</span></span>                | <span data-ttu-id="ae0e4-689">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-689">1</span></span>     | <span data-ttu-id="ae0e4-690">SHA1 哈希类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-690">SHA1 hash type.</span></span>                |
+| <span data-ttu-id="ae0e4-691">sha256</span><span class="sxs-lookup"><span data-stu-id="ae0e4-691">sha256</span></span>              | <span data-ttu-id="ae0e4-692">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-692">2</span></span>     | <span data-ttu-id="ae0e4-693">SHA256 哈希类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-693">SHA256 hash type.</span></span>              |
+| <span data-ttu-id="ae0e4-694">md5</span><span class="sxs-lookup"><span data-stu-id="ae0e4-694">md5</span></span>                 | <span data-ttu-id="ae0e4-695">第三章</span><span class="sxs-lookup"><span data-stu-id="ae0e4-695">3</span></span>     | <span data-ttu-id="ae0e4-696">MD5 哈希类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-696">MD5 hash type.</span></span>                 |
+| <span data-ttu-id="ae0e4-697">authenticodeHash256</span><span class="sxs-lookup"><span data-stu-id="ae0e4-697">authenticodeHash256</span></span> | <span data-ttu-id="ae0e4-698">4 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-698">4</span></span>     | <span data-ttu-id="ae0e4-699">AuthenticodeHash256 哈希类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-699">AuthenticodeHash256 hash type.</span></span> |
+| <span data-ttu-id="ae0e4-700">lsHash</span><span class="sxs-lookup"><span data-stu-id="ae0e4-700">lsHash</span></span>              | <span data-ttu-id="ae0e4-701">5 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-701">5</span></span>     | <span data-ttu-id="ae0e4-702">LsHash 哈希类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-702">LsHash hash type.</span></span>              |
+| <span data-ttu-id="ae0e4-703">ctph</span><span class="sxs-lookup"><span data-stu-id="ae0e4-703">ctph</span></span>                | <span data-ttu-id="ae0e4-704">6 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-704">6</span></span>     | <span data-ttu-id="ae0e4-705">CTPH 哈希类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-705">CTPH hash type.</span></span>                |
+| <span data-ttu-id="ae0e4-706">peSha1</span><span class="sxs-lookup"><span data-stu-id="ae0e4-706">peSha1</span></span>              | <span data-ttu-id="ae0e4-707">7 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-707">7</span></span>     | <span data-ttu-id="ae0e4-708">PESHA1 哈希类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-708">PESHA1 hash type.</span></span>              |
+| <span data-ttu-id="ae0e4-709">peSha256</span><span class="sxs-lookup"><span data-stu-id="ae0e4-709">peSha256</span></span>            | <span data-ttu-id="ae0e4-710">8 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-710">8</span></span>     | <span data-ttu-id="ae0e4-711">PESHA256 哈希类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-711">PESHA256 hash type.</span></span>            |
 
-### <a name="connectiondirection-values"></a><span data-ttu-id="14006-703">connectionDirection 值</span><span class="sxs-lookup"><span data-stu-id="14006-703">connectionDirection values</span></span>
+### <a name="connectiondirection-values"></a><span data-ttu-id="ae0e4-712">connectionDirection 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-712">connectionDirection values</span></span>
 
-| <span data-ttu-id="14006-704">成员</span><span class="sxs-lookup"><span data-stu-id="14006-704">Member</span></span>   | <span data-ttu-id="14006-705">值</span><span class="sxs-lookup"><span data-stu-id="14006-705">Value</span></span> | <span data-ttu-id="14006-706">说明</span><span class="sxs-lookup"><span data-stu-id="14006-706">Description</span></span>          |
+| <span data-ttu-id="ae0e4-713">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-713">Member</span></span>   | <span data-ttu-id="ae0e4-714">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-714">Value</span></span> | <span data-ttu-id="ae0e4-715">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-715">Description</span></span>          |
 | :------- | :---- | :------------------- |
-| <span data-ttu-id="14006-707">unknown</span><span class="sxs-lookup"><span data-stu-id="14006-707">unknown</span></span>  | <span data-ttu-id="14006-708">0</span><span class="sxs-lookup"><span data-stu-id="14006-708">0</span></span>     | <span data-ttu-id="14006-709">未知的连接。</span><span class="sxs-lookup"><span data-stu-id="14006-709">Unknown connection.</span></span>  |
-| <span data-ttu-id="14006-710">进货</span><span class="sxs-lookup"><span data-stu-id="14006-710">inbound</span></span>  | <span data-ttu-id="14006-711">1 </span><span class="sxs-lookup"><span data-stu-id="14006-711">1</span></span>     | <span data-ttu-id="14006-712">入站连接。</span><span class="sxs-lookup"><span data-stu-id="14006-712">Inbound connection.</span></span>  |
-| <span data-ttu-id="14006-713">出站</span><span class="sxs-lookup"><span data-stu-id="14006-713">outbound</span></span> | <span data-ttu-id="14006-714">2 </span><span class="sxs-lookup"><span data-stu-id="14006-714">2</span></span>     | <span data-ttu-id="14006-715">出站连接。</span><span class="sxs-lookup"><span data-stu-id="14006-715">Outbound connection.</span></span> |
+| <span data-ttu-id="ae0e4-716">unknown</span><span class="sxs-lookup"><span data-stu-id="ae0e4-716">unknown</span></span>  | <span data-ttu-id="ae0e4-717">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-717">0</span></span>     | <span data-ttu-id="ae0e4-718">未知的连接。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-718">Unknown connection.</span></span>  |
+| <span data-ttu-id="ae0e4-719">进货</span><span class="sxs-lookup"><span data-stu-id="ae0e4-719">inbound</span></span>  | <span data-ttu-id="ae0e4-720">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-720">1</span></span>     | <span data-ttu-id="ae0e4-721">入站连接。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-721">Inbound connection.</span></span>  |
+| <span data-ttu-id="ae0e4-722">出站</span><span class="sxs-lookup"><span data-stu-id="ae0e4-722">outbound</span></span> | <span data-ttu-id="ae0e4-723">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-723">2</span></span>     | <span data-ttu-id="ae0e4-724">出站连接。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-724">Outbound connection.</span></span> |
 
-### <a name="connectionstatus-values"></a><span data-ttu-id="14006-716">connectionStatus 值</span><span class="sxs-lookup"><span data-stu-id="14006-716">connectionStatus values</span></span>
+### <a name="connectionstatus-values"></a><span data-ttu-id="ae0e4-725">connectionStatus 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-725">connectionStatus values</span></span>
 
-| <span data-ttu-id="14006-717">成员</span><span class="sxs-lookup"><span data-stu-id="14006-717">Member</span></span>    | <span data-ttu-id="14006-718">值</span><span class="sxs-lookup"><span data-stu-id="14006-718">Value</span></span> | <span data-ttu-id="14006-719">说明</span><span class="sxs-lookup"><span data-stu-id="14006-719">Description</span></span>                |
+| <span data-ttu-id="ae0e4-726">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-726">Member</span></span>    | <span data-ttu-id="ae0e4-727">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-727">Value</span></span> | <span data-ttu-id="ae0e4-728">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-728">Description</span></span>                |
 | :-------- | :---- | :------------------------- |
-| <span data-ttu-id="14006-720">unknown</span><span class="sxs-lookup"><span data-stu-id="14006-720">unknown</span></span>   | <span data-ttu-id="14006-721">0</span><span class="sxs-lookup"><span data-stu-id="14006-721">0</span></span>     | <span data-ttu-id="14006-722">未知的连接状态。</span><span class="sxs-lookup"><span data-stu-id="14006-722">Unknown connection status.</span></span> |
-| <span data-ttu-id="14006-723">尝试</span><span class="sxs-lookup"><span data-stu-id="14006-723">attempted</span></span> | <span data-ttu-id="14006-724">1 </span><span class="sxs-lookup"><span data-stu-id="14006-724">1</span></span>     | <span data-ttu-id="14006-725">已尝试连接。</span><span class="sxs-lookup"><span data-stu-id="14006-725">Connection attempted.</span></span>      |
-| <span data-ttu-id="14006-726">完成</span><span class="sxs-lookup"><span data-stu-id="14006-726">succeeded</span></span> | <span data-ttu-id="14006-727">2 </span><span class="sxs-lookup"><span data-stu-id="14006-727">2</span></span>     | <span data-ttu-id="14006-728">连接成功。</span><span class="sxs-lookup"><span data-stu-id="14006-728">Connection succeeded.</span></span>      |
-| <span data-ttu-id="14006-729">堵塞</span><span class="sxs-lookup"><span data-stu-id="14006-729">blocked</span></span>   | <span data-ttu-id="14006-730">第三章</span><span class="sxs-lookup"><span data-stu-id="14006-730">3</span></span>     | <span data-ttu-id="14006-731">连接被阻止。</span><span class="sxs-lookup"><span data-stu-id="14006-731">Connection blocked.</span></span>        |
-| <span data-ttu-id="14006-732">未能</span><span class="sxs-lookup"><span data-stu-id="14006-732">failed</span></span>    | <span data-ttu-id="14006-733">4 </span><span class="sxs-lookup"><span data-stu-id="14006-733">4</span></span>     | <span data-ttu-id="14006-734">连接失败。</span><span class="sxs-lookup"><span data-stu-id="14006-734">Connection failed.</span></span>         |
+| <span data-ttu-id="ae0e4-729">unknown</span><span class="sxs-lookup"><span data-stu-id="ae0e4-729">unknown</span></span>   | <span data-ttu-id="ae0e4-730">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-730">0</span></span>     | <span data-ttu-id="ae0e4-731">未知的连接状态。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-731">Unknown connection status.</span></span> |
+| <span data-ttu-id="ae0e4-732">尝试</span><span class="sxs-lookup"><span data-stu-id="ae0e4-732">attempted</span></span> | <span data-ttu-id="ae0e4-733">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-733">1</span></span>     | <span data-ttu-id="ae0e4-734">已尝试连接。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-734">Connection attempted.</span></span>      |
+| <span data-ttu-id="ae0e4-735">完成</span><span class="sxs-lookup"><span data-stu-id="ae0e4-735">succeeded</span></span> | <span data-ttu-id="ae0e4-736">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-736">2</span></span>     | <span data-ttu-id="ae0e4-737">连接成功。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-737">Connection succeeded.</span></span>      |
+| <span data-ttu-id="ae0e4-738">堵塞</span><span class="sxs-lookup"><span data-stu-id="ae0e4-738">blocked</span></span>   | <span data-ttu-id="ae0e4-739">第三章</span><span class="sxs-lookup"><span data-stu-id="ae0e4-739">3</span></span>     | <span data-ttu-id="ae0e4-740">连接被阻止。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-740">Connection blocked.</span></span>        |
+| <span data-ttu-id="ae0e4-741">未能</span><span class="sxs-lookup"><span data-stu-id="ae0e4-741">failed</span></span>    | <span data-ttu-id="ae0e4-742">4 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-742">4</span></span>     | <span data-ttu-id="ae0e4-743">连接失败。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-743">Connection failed.</span></span>         |
 
-### <a name="processintegritylevel-values"></a><span data-ttu-id="14006-735">processIntegrityLevel 值</span><span class="sxs-lookup"><span data-stu-id="14006-735">processIntegrityLevel values</span></span>
+### <a name="processintegritylevel-values"></a><span data-ttu-id="ae0e4-744">processIntegrityLevel 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-744">processIntegrityLevel values</span></span>
 
-| <span data-ttu-id="14006-736">成员</span><span class="sxs-lookup"><span data-stu-id="14006-736">Member</span></span>    | <span data-ttu-id="14006-737">值</span><span class="sxs-lookup"><span data-stu-id="14006-737">Value</span></span> | <span data-ttu-id="14006-738">说明</span><span class="sxs-lookup"><span data-stu-id="14006-738">Description</span></span>                   |
+| <span data-ttu-id="ae0e4-745">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-745">Member</span></span>    | <span data-ttu-id="ae0e4-746">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-746">Value</span></span> | <span data-ttu-id="ae0e4-747">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-747">Description</span></span>                   |
 | :-------- | :---- | :---------------------------- |
-| <span data-ttu-id="14006-739">unknown</span><span class="sxs-lookup"><span data-stu-id="14006-739">unknown</span></span>   | <span data-ttu-id="14006-740">0</span><span class="sxs-lookup"><span data-stu-id="14006-740">0</span></span>     | <span data-ttu-id="14006-741">陌生.</span><span class="sxs-lookup"><span data-stu-id="14006-741">Unknown.</span></span>                      |
-| <span data-ttu-id="14006-742">可信</span><span class="sxs-lookup"><span data-stu-id="14006-742">untrusted</span></span> | <span data-ttu-id="14006-743">10 </span><span class="sxs-lookup"><span data-stu-id="14006-743">10</span></span>    | <span data-ttu-id="14006-744">完整性级别不受信任。</span><span class="sxs-lookup"><span data-stu-id="14006-744">Integrity level is Untrusted.</span></span> |
-| <span data-ttu-id="14006-745">降低</span><span class="sxs-lookup"><span data-stu-id="14006-745">low</span></span>       | <span data-ttu-id="14006-746">20</span><span class="sxs-lookup"><span data-stu-id="14006-746">20</span></span>    | <span data-ttu-id="14006-747">完整性级别较低。</span><span class="sxs-lookup"><span data-stu-id="14006-747">Integrity level is Low.</span></span>       |
-| <span data-ttu-id="14006-748">中等</span><span class="sxs-lookup"><span data-stu-id="14006-748">medium</span></span>    | <span data-ttu-id="14006-749">30</span><span class="sxs-lookup"><span data-stu-id="14006-749">30</span></span>    | <span data-ttu-id="14006-750">完整性级别为 "中"。</span><span class="sxs-lookup"><span data-stu-id="14006-750">Integrity level is Medium.</span></span>    |
-| <span data-ttu-id="14006-751">高效</span><span class="sxs-lookup"><span data-stu-id="14006-751">high</span></span>      | <span data-ttu-id="14006-752">40</span><span class="sxs-lookup"><span data-stu-id="14006-752">40</span></span>    | <span data-ttu-id="14006-753">完整性级别为 "高"。</span><span class="sxs-lookup"><span data-stu-id="14006-753">Integrity level is High.</span></span>      |
-| <span data-ttu-id="14006-754">system</span><span class="sxs-lookup"><span data-stu-id="14006-754">system</span></span>    | <span data-ttu-id="14006-755">50</span><span class="sxs-lookup"><span data-stu-id="14006-755">50</span></span>    | <span data-ttu-id="14006-756">完整性级别为 "系统"。</span><span class="sxs-lookup"><span data-stu-id="14006-756">Integrity level is System.</span></span>    |
+| <span data-ttu-id="ae0e4-748">unknown</span><span class="sxs-lookup"><span data-stu-id="ae0e4-748">unknown</span></span>   | <span data-ttu-id="ae0e4-749">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-749">0</span></span>     | <span data-ttu-id="ae0e4-750">陌生.</span><span class="sxs-lookup"><span data-stu-id="ae0e4-750">Unknown.</span></span>                      |
+| <span data-ttu-id="ae0e4-751">可信</span><span class="sxs-lookup"><span data-stu-id="ae0e4-751">untrusted</span></span> | <span data-ttu-id="ae0e4-752">10 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-752">10</span></span>    | <span data-ttu-id="ae0e4-753">完整性级别不受信任。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-753">Integrity level is Untrusted.</span></span> |
+| <span data-ttu-id="ae0e4-754">降低</span><span class="sxs-lookup"><span data-stu-id="ae0e4-754">low</span></span>       | <span data-ttu-id="ae0e4-755">20</span><span class="sxs-lookup"><span data-stu-id="ae0e4-755">20</span></span>    | <span data-ttu-id="ae0e4-756">完整性级别较低。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-756">Integrity level is Low.</span></span>       |
+| <span data-ttu-id="ae0e4-757">中等</span><span class="sxs-lookup"><span data-stu-id="ae0e4-757">medium</span></span>    | <span data-ttu-id="ae0e4-758">30</span><span class="sxs-lookup"><span data-stu-id="ae0e4-758">30</span></span>    | <span data-ttu-id="ae0e4-759">完整性级别为 "中"。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-759">Integrity level is Medium.</span></span>    |
+| <span data-ttu-id="ae0e4-760">高效</span><span class="sxs-lookup"><span data-stu-id="ae0e4-760">high</span></span>      | <span data-ttu-id="ae0e4-761">40</span><span class="sxs-lookup"><span data-stu-id="ae0e4-761">40</span></span>    | <span data-ttu-id="ae0e4-762">完整性级别为 "高"。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-762">Integrity level is High.</span></span>      |
+| <span data-ttu-id="ae0e4-763">system</span><span class="sxs-lookup"><span data-stu-id="ae0e4-763">system</span></span>    | <span data-ttu-id="ae0e4-764">50</span><span class="sxs-lookup"><span data-stu-id="ae0e4-764">50</span></span>    | <span data-ttu-id="ae0e4-765">完整性级别为 "系统"。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-765">Integrity level is System.</span></span>    |
 
-### <a name="registryhive-values"></a><span data-ttu-id="14006-757">registryHive 值</span><span class="sxs-lookup"><span data-stu-id="14006-757">registryHive values</span></span>
+### <a name="registryhive-values"></a><span data-ttu-id="ae0e4-766">registryHive 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-766">registryHive values</span></span>
 
-<span data-ttu-id="14006-758">由定义的注册表配置单元的枚举 [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives) 。</span><span class="sxs-lookup"><span data-stu-id="14006-758">Enum for registry hives as defined by [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives).</span></span>
+<span data-ttu-id="ae0e4-767">由定义的注册表配置单元的枚举 [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives) 。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-767">Enum for registry hives as defined by [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives).</span></span>
 
-| <span data-ttu-id="14006-759">成员</span><span class="sxs-lookup"><span data-stu-id="14006-759">Member</span></span>                  | <span data-ttu-id="14006-760">值</span><span class="sxs-lookup"><span data-stu-id="14006-760">Value</span></span> | <span data-ttu-id="14006-761">说明</span><span class="sxs-lookup"><span data-stu-id="14006-761">Description</span></span>                       |
+| <span data-ttu-id="ae0e4-768">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-768">Member</span></span>                  | <span data-ttu-id="ae0e4-769">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-769">Value</span></span> | <span data-ttu-id="ae0e4-770">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-770">Description</span></span>                       |
 | :---------------------- | :---- | :-------------------------------- |
-| <span data-ttu-id="14006-762">unknown</span><span class="sxs-lookup"><span data-stu-id="14006-762">unknown</span></span>                 | <span data-ttu-id="14006-763">0</span><span class="sxs-lookup"><span data-stu-id="14006-763">0</span></span>     | <span data-ttu-id="14006-764">未知配置单元。</span><span class="sxs-lookup"><span data-stu-id="14006-764">Unknown hive.</span></span>                     |
-| <span data-ttu-id="14006-765">currentConfig</span><span class="sxs-lookup"><span data-stu-id="14006-765">currentConfig</span></span>           | <span data-ttu-id="14006-766">1 </span><span class="sxs-lookup"><span data-stu-id="14006-766">1</span></span>     | <span data-ttu-id="14006-767">HKEY_CURRENT_CONFIG 配置单元。</span><span class="sxs-lookup"><span data-stu-id="14006-767">HKEY_CURRENT_CONFIG hive.</span></span>         |
-| <span data-ttu-id="14006-768">currentUser</span><span class="sxs-lookup"><span data-stu-id="14006-768">currentUser</span></span>             | <span data-ttu-id="14006-769">2 </span><span class="sxs-lookup"><span data-stu-id="14006-769">2</span></span>     | <span data-ttu-id="14006-770">HKEY_CURRENT_USER 配置单元。</span><span class="sxs-lookup"><span data-stu-id="14006-770">HKEY_CURRENT_USER hive.</span></span>           |
-| <span data-ttu-id="14006-771">localMachineSam</span><span class="sxs-lookup"><span data-stu-id="14006-771">localMachineSam</span></span>         | <span data-ttu-id="14006-772">第三章</span><span class="sxs-lookup"><span data-stu-id="14006-772">3</span></span>     | <span data-ttu-id="14006-773">HKEY_LOCAL_MACHINE \SAM 配置单元。</span><span class="sxs-lookup"><span data-stu-id="14006-773">HKEY_LOCAL_MACHINE\SAM hive.</span></span>      |
-| <span data-ttu-id="14006-774">localMachineSamSoftware</span><span class="sxs-lookup"><span data-stu-id="14006-774">localMachineSamSoftware</span></span> | <span data-ttu-id="14006-775">4 </span><span class="sxs-lookup"><span data-stu-id="14006-775">4</span></span>     | <span data-ttu-id="14006-776">HKEY_LOCAL_MACHINE \Software 配置单元。</span><span class="sxs-lookup"><span data-stu-id="14006-776">HKEY_LOCAL_MACHINE\Software hive.</span></span> |
-| <span data-ttu-id="14006-777">localMachineSystem</span><span class="sxs-lookup"><span data-stu-id="14006-777">localMachineSystem</span></span>      | <span data-ttu-id="14006-778">5 </span><span class="sxs-lookup"><span data-stu-id="14006-778">5</span></span>     | <span data-ttu-id="14006-779">HKEY_LOCAL_MACHINE \System 配置单元。</span><span class="sxs-lookup"><span data-stu-id="14006-779">HKEY_LOCAL_MACHINE\System hive.</span></span>   |
-| <span data-ttu-id="14006-780">usersDefault</span><span class="sxs-lookup"><span data-stu-id="14006-780">usersDefault</span></span>            | <span data-ttu-id="14006-781">6 </span><span class="sxs-lookup"><span data-stu-id="14006-781">6</span></span>     | <span data-ttu-id="14006-782">HKEY_USERS \\ 。默认配置单元。</span><span class="sxs-lookup"><span data-stu-id="14006-782">HKEY_USERS\\.DEFAULT hive.</span></span>        |
+| <span data-ttu-id="ae0e4-771">unknown</span><span class="sxs-lookup"><span data-stu-id="ae0e4-771">unknown</span></span>                 | <span data-ttu-id="ae0e4-772">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-772">0</span></span>     | <span data-ttu-id="ae0e4-773">未知配置单元。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-773">Unknown hive.</span></span>                     |
+| <span data-ttu-id="ae0e4-774">currentConfig</span><span class="sxs-lookup"><span data-stu-id="ae0e4-774">currentConfig</span></span>           | <span data-ttu-id="ae0e4-775">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-775">1</span></span>     | <span data-ttu-id="ae0e4-776">HKEY_CURRENT_CONFIG 配置单元。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-776">HKEY_CURRENT_CONFIG hive.</span></span>         |
+| <span data-ttu-id="ae0e4-777">currentUser</span><span class="sxs-lookup"><span data-stu-id="ae0e4-777">currentUser</span></span>             | <span data-ttu-id="ae0e4-778">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-778">2</span></span>     | <span data-ttu-id="ae0e4-779">HKEY_CURRENT_USER 配置单元。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-779">HKEY_CURRENT_USER hive.</span></span>           |
+| <span data-ttu-id="ae0e4-780">localMachineSam</span><span class="sxs-lookup"><span data-stu-id="ae0e4-780">localMachineSam</span></span>         | <span data-ttu-id="ae0e4-781">第三章</span><span class="sxs-lookup"><span data-stu-id="ae0e4-781">3</span></span>     | <span data-ttu-id="ae0e4-782">HKEY_LOCAL_MACHINE \SAM 配置单元。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-782">HKEY_LOCAL_MACHINE\SAM hive.</span></span>      |
+| <span data-ttu-id="ae0e4-783">localMachineSamSoftware</span><span class="sxs-lookup"><span data-stu-id="ae0e4-783">localMachineSamSoftware</span></span> | <span data-ttu-id="ae0e4-784">4 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-784">4</span></span>     | <span data-ttu-id="ae0e4-785">HKEY_LOCAL_MACHINE \Software 配置单元。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-785">HKEY_LOCAL_MACHINE\Software hive.</span></span> |
+| <span data-ttu-id="ae0e4-786">localMachineSystem</span><span class="sxs-lookup"><span data-stu-id="ae0e4-786">localMachineSystem</span></span>      | <span data-ttu-id="ae0e4-787">5 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-787">5</span></span>     | <span data-ttu-id="ae0e4-788">HKEY_LOCAL_MACHINE \System 配置单元。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-788">HKEY_LOCAL_MACHINE\System hive.</span></span>   |
+| <span data-ttu-id="ae0e4-789">usersDefault</span><span class="sxs-lookup"><span data-stu-id="ae0e4-789">usersDefault</span></span>            | <span data-ttu-id="ae0e4-790">6 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-790">6</span></span>     | <span data-ttu-id="ae0e4-791">HKEY_USERS \\ 。默认配置单元。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-791">HKEY_USERS\\.DEFAULT hive.</span></span>        |
 
-### <a name="registryoperation-values"></a><span data-ttu-id="14006-783">registryOperation 值</span><span class="sxs-lookup"><span data-stu-id="14006-783">registryOperation values</span></span>
+### <a name="registryoperation-values"></a><span data-ttu-id="ae0e4-792">registryOperation 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-792">registryOperation values</span></span>
 
-<span data-ttu-id="14006-784">更改注册表项名称和/或值的操作。</span><span class="sxs-lookup"><span data-stu-id="14006-784">Operation that changed the registry key name and/or value.</span></span>
+<span data-ttu-id="ae0e4-793">更改注册表项名称和/或值的操作。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-793">Operation that changed the registry key name and/or value.</span></span>
 
-| <span data-ttu-id="14006-785">成员</span><span class="sxs-lookup"><span data-stu-id="14006-785">Member</span></span>  | <span data-ttu-id="14006-786">值</span><span class="sxs-lookup"><span data-stu-id="14006-786">Value</span></span> | <span data-ttu-id="14006-787">说明</span><span class="sxs-lookup"><span data-stu-id="14006-787">Description</span></span>                  |
+| <span data-ttu-id="ae0e4-794">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-794">Member</span></span>  | <span data-ttu-id="ae0e4-795">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-795">Value</span></span> | <span data-ttu-id="ae0e4-796">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-796">Description</span></span>                  |
 | :------ | :---- | :--------------------------- |
-| <span data-ttu-id="14006-788">unknown</span><span class="sxs-lookup"><span data-stu-id="14006-788">unknown</span></span> | <span data-ttu-id="14006-789">0</span><span class="sxs-lookup"><span data-stu-id="14006-789">0</span></span>     | <span data-ttu-id="14006-790">未知的注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="14006-790">Unknown registry value type.</span></span> |
-| <span data-ttu-id="14006-791">create</span><span class="sxs-lookup"><span data-stu-id="14006-791">create</span></span>  | <span data-ttu-id="14006-792">1 </span><span class="sxs-lookup"><span data-stu-id="14006-792">1</span></span>     | <span data-ttu-id="14006-793">创建注册表。</span><span class="sxs-lookup"><span data-stu-id="14006-793">Create registry.</span></span>             |
-| <span data-ttu-id="14006-794">modify</span><span class="sxs-lookup"><span data-stu-id="14006-794">modify</span></span>  | <span data-ttu-id="14006-795">2 </span><span class="sxs-lookup"><span data-stu-id="14006-795">2</span></span>     | <span data-ttu-id="14006-796">修改注册表。</span><span class="sxs-lookup"><span data-stu-id="14006-796">Modify registry.</span></span>             |
-| <span data-ttu-id="14006-797">delete</span><span class="sxs-lookup"><span data-stu-id="14006-797">delete</span></span>  | <span data-ttu-id="14006-798">第三章</span><span class="sxs-lookup"><span data-stu-id="14006-798">3</span></span>     | <span data-ttu-id="14006-799">删除注册表。</span><span class="sxs-lookup"><span data-stu-id="14006-799">Delete registry.</span></span>             |
+| <span data-ttu-id="ae0e4-797">unknown</span><span class="sxs-lookup"><span data-stu-id="ae0e4-797">unknown</span></span> | <span data-ttu-id="ae0e4-798">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-798">0</span></span>     | <span data-ttu-id="ae0e4-799">未知的注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-799">Unknown registry value type.</span></span> |
+| <span data-ttu-id="ae0e4-800">create</span><span class="sxs-lookup"><span data-stu-id="ae0e4-800">create</span></span>  | <span data-ttu-id="ae0e4-801">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-801">1</span></span>     | <span data-ttu-id="ae0e4-802">创建注册表。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-802">Create registry.</span></span>             |
+| <span data-ttu-id="ae0e4-803">modify</span><span class="sxs-lookup"><span data-stu-id="ae0e4-803">modify</span></span>  | <span data-ttu-id="ae0e4-804">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-804">2</span></span>     | <span data-ttu-id="ae0e4-805">修改注册表。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-805">Modify registry.</span></span>             |
+| <span data-ttu-id="ae0e4-806">delete</span><span class="sxs-lookup"><span data-stu-id="ae0e4-806">delete</span></span>  | <span data-ttu-id="ae0e4-807">第三章</span><span class="sxs-lookup"><span data-stu-id="ae0e4-807">3</span></span>     | <span data-ttu-id="ae0e4-808">删除注册表。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-808">Delete registry.</span></span>             |
 
-### <a name="registryvaluetype-values"></a><span data-ttu-id="14006-800">registryValueType 值</span><span class="sxs-lookup"><span data-stu-id="14006-800">registryValueType values</span></span>
+### <a name="registryvaluetype-values"></a><span data-ttu-id="ae0e4-809">registryValueType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-809">registryValueType values</span></span>
 
-<span data-ttu-id="14006-801">由 [注册表值类型](https://docs.microsoft.com/windows/desktop/sysinfo/registry-value-types)定义的注册表值类型的枚举。</span><span class="sxs-lookup"><span data-stu-id="14006-801">Enum for registry value types as defined by [Registry value types](https://docs.microsoft.com/windows/desktop/sysinfo/registry-value-types).</span></span>
+<span data-ttu-id="ae0e4-810">由 [注册表值类型](https://docs.microsoft.com/windows/desktop/sysinfo/registry-value-types)定义的注册表值类型的枚举。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-810">Enum for registry value types as defined by [Registry value types](https://docs.microsoft.com/windows/desktop/sysinfo/registry-value-types).</span></span>
 
-| <span data-ttu-id="14006-802">成员</span><span class="sxs-lookup"><span data-stu-id="14006-802">Member</span></span>            | <span data-ttu-id="14006-803">值</span><span class="sxs-lookup"><span data-stu-id="14006-803">Value</span></span> | <span data-ttu-id="14006-804">说明</span><span class="sxs-lookup"><span data-stu-id="14006-804">Description</span></span>                                  |
+| <span data-ttu-id="ae0e4-811">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-811">Member</span></span>            | <span data-ttu-id="ae0e4-812">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-812">Value</span></span> | <span data-ttu-id="ae0e4-813">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-813">Description</span></span>                                  |
 | :---------------- | :---- | :------------------------------------------- |
-| <span data-ttu-id="14006-805">unknown</span><span class="sxs-lookup"><span data-stu-id="14006-805">unknown</span></span>           | <span data-ttu-id="14006-806">0</span><span class="sxs-lookup"><span data-stu-id="14006-806">0</span></span>     | <span data-ttu-id="14006-807">未知的注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="14006-807">Unknown registry value type.</span></span>                 |
-| <span data-ttu-id="14006-808">数字</span><span class="sxs-lookup"><span data-stu-id="14006-808">binary</span></span>            | <span data-ttu-id="14006-809">1 </span><span class="sxs-lookup"><span data-stu-id="14006-809">1</span></span>     | <span data-ttu-id="14006-810">REG_BINARY 注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="14006-810">REG_BINARY registry value type.</span></span>              |
-| <span data-ttu-id="14006-811">值</span><span class="sxs-lookup"><span data-stu-id="14006-811">dword</span></span>             | <span data-ttu-id="14006-812">2 </span><span class="sxs-lookup"><span data-stu-id="14006-812">2</span></span>     | <span data-ttu-id="14006-813">REG_DWORD 注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="14006-813">REG_DWORD registry value type.</span></span>               |
-| <span data-ttu-id="14006-814">dwordLittleEndian</span><span class="sxs-lookup"><span data-stu-id="14006-814">dwordLittleEndian</span></span> | <span data-ttu-id="14006-815">第三章</span><span class="sxs-lookup"><span data-stu-id="14006-815">3</span></span>     | <span data-ttu-id="14006-816">REG_DWORD_LITTLE_ENDIAN 注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="14006-816">REG_DWORD_LITTLE_ENDIAN registry value type.</span></span> |
-| <span data-ttu-id="14006-817">dwordBigEndian</span><span class="sxs-lookup"><span data-stu-id="14006-817">dwordBigEndian</span></span>    | <span data-ttu-id="14006-818">4 </span><span class="sxs-lookup"><span data-stu-id="14006-818">4</span></span>     | <span data-ttu-id="14006-819">REG_DWORD_BIG_ENDIAN 注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="14006-819">REG_DWORD_BIG_ENDIAN registry value type.</span></span>    |
-| <span data-ttu-id="14006-820">expandSz</span><span class="sxs-lookup"><span data-stu-id="14006-820">expandSz</span></span>          | <span data-ttu-id="14006-821">5 </span><span class="sxs-lookup"><span data-stu-id="14006-821">5</span></span>     | <span data-ttu-id="14006-822">REG_EXPAND_SZ 注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="14006-822">REG_EXPAND_SZ registry value type.</span></span>           |
-| <span data-ttu-id="14006-823">link</span><span class="sxs-lookup"><span data-stu-id="14006-823">link</span></span>              | <span data-ttu-id="14006-824">6 </span><span class="sxs-lookup"><span data-stu-id="14006-824">6</span></span>     | <span data-ttu-id="14006-825">REG_LINK 注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="14006-825">REG_LINK registry value type.</span></span>                |
-| <span data-ttu-id="14006-826">multiSz</span><span class="sxs-lookup"><span data-stu-id="14006-826">multiSz</span></span>           | <span data-ttu-id="14006-827">7 </span><span class="sxs-lookup"><span data-stu-id="14006-827">7</span></span>     | <span data-ttu-id="14006-828">REG_MULTI_SZ 注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="14006-828">REG_MULTI_SZ registry value type.</span></span>            |
-| <span data-ttu-id="14006-829">无</span><span class="sxs-lookup"><span data-stu-id="14006-829">none</span></span>              | <span data-ttu-id="14006-830">8 </span><span class="sxs-lookup"><span data-stu-id="14006-830">8</span></span>     | <span data-ttu-id="14006-831">REG_NONE 注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="14006-831">REG_NONE registry value type.</span></span>                |
-| <span data-ttu-id="14006-832">qword</span><span class="sxs-lookup"><span data-stu-id="14006-832">qword</span></span>             | <span data-ttu-id="14006-833">9 </span><span class="sxs-lookup"><span data-stu-id="14006-833">9</span></span>     | <span data-ttu-id="14006-834">REG_QWORD 注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="14006-834">REG_QWORD registry value type.</span></span>               |
-| <span data-ttu-id="14006-835">qwordlittleEndian</span><span class="sxs-lookup"><span data-stu-id="14006-835">qwordlittleEndian</span></span> | <span data-ttu-id="14006-836">10 </span><span class="sxs-lookup"><span data-stu-id="14006-836">10</span></span>    | <span data-ttu-id="14006-837">REG_QWORD_LITTLE_ENDIAN 注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="14006-837">REG_QWORD_LITTLE_ENDIAN registry value type.</span></span> |
-| <span data-ttu-id="14006-838">sz</span><span class="sxs-lookup"><span data-stu-id="14006-838">sz</span></span>                | <span data-ttu-id="14006-839">11 </span><span class="sxs-lookup"><span data-stu-id="14006-839">11</span></span>    | <span data-ttu-id="14006-840">REG_SZ 注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="14006-840">REG_SZ registry value type.</span></span>                  |
+| <span data-ttu-id="ae0e4-814">unknown</span><span class="sxs-lookup"><span data-stu-id="ae0e4-814">unknown</span></span>           | <span data-ttu-id="ae0e4-815">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-815">0</span></span>     | <span data-ttu-id="ae0e4-816">未知的注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-816">Unknown registry value type.</span></span>                 |
+| <span data-ttu-id="ae0e4-817">数字</span><span class="sxs-lookup"><span data-stu-id="ae0e4-817">binary</span></span>            | <span data-ttu-id="ae0e4-818">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-818">1</span></span>     | <span data-ttu-id="ae0e4-819">REG_BINARY 注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-819">REG_BINARY registry value type.</span></span>              |
+| <span data-ttu-id="ae0e4-820">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-820">dword</span></span>             | <span data-ttu-id="ae0e4-821">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-821">2</span></span>     | <span data-ttu-id="ae0e4-822">REG_DWORD 注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-822">REG_DWORD registry value type.</span></span>               |
+| <span data-ttu-id="ae0e4-823">dwordLittleEndian</span><span class="sxs-lookup"><span data-stu-id="ae0e4-823">dwordLittleEndian</span></span> | <span data-ttu-id="ae0e4-824">第三章</span><span class="sxs-lookup"><span data-stu-id="ae0e4-824">3</span></span>     | <span data-ttu-id="ae0e4-825">REG_DWORD_LITTLE_ENDIAN 注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-825">REG_DWORD_LITTLE_ENDIAN registry value type.</span></span> |
+| <span data-ttu-id="ae0e4-826">dwordBigEndian</span><span class="sxs-lookup"><span data-stu-id="ae0e4-826">dwordBigEndian</span></span>    | <span data-ttu-id="ae0e4-827">4 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-827">4</span></span>     | <span data-ttu-id="ae0e4-828">REG_DWORD_BIG_ENDIAN 注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-828">REG_DWORD_BIG_ENDIAN registry value type.</span></span>    |
+| <span data-ttu-id="ae0e4-829">expandSz</span><span class="sxs-lookup"><span data-stu-id="ae0e4-829">expandSz</span></span>          | <span data-ttu-id="ae0e4-830">5 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-830">5</span></span>     | <span data-ttu-id="ae0e4-831">REG_EXPAND_SZ 注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-831">REG_EXPAND_SZ registry value type.</span></span>           |
+| <span data-ttu-id="ae0e4-832">link</span><span class="sxs-lookup"><span data-stu-id="ae0e4-832">link</span></span>              | <span data-ttu-id="ae0e4-833">6 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-833">6</span></span>     | <span data-ttu-id="ae0e4-834">REG_LINK 注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-834">REG_LINK registry value type.</span></span>                |
+| <span data-ttu-id="ae0e4-835">multiSz</span><span class="sxs-lookup"><span data-stu-id="ae0e4-835">multiSz</span></span>           | <span data-ttu-id="ae0e4-836">7 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-836">7</span></span>     | <span data-ttu-id="ae0e4-837">REG_MULTI_SZ 注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-837">REG_MULTI_SZ registry value type.</span></span>            |
+| <span data-ttu-id="ae0e4-838">无</span><span class="sxs-lookup"><span data-stu-id="ae0e4-838">none</span></span>              | <span data-ttu-id="ae0e4-839">8 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-839">8</span></span>     | <span data-ttu-id="ae0e4-840">REG_NONE 注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-840">REG_NONE registry value type.</span></span>                |
+| <span data-ttu-id="ae0e4-841">qword</span><span class="sxs-lookup"><span data-stu-id="ae0e4-841">qword</span></span>             | <span data-ttu-id="ae0e4-842">9 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-842">9</span></span>     | <span data-ttu-id="ae0e4-843">REG_QWORD 注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-843">REG_QWORD registry value type.</span></span>               |
+| <span data-ttu-id="ae0e4-844">qwordlittleEndian</span><span class="sxs-lookup"><span data-stu-id="ae0e4-844">qwordlittleEndian</span></span> | <span data-ttu-id="ae0e4-845">10 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-845">10</span></span>    | <span data-ttu-id="ae0e4-846">REG_QWORD_LITTLE_ENDIAN 注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-846">REG_QWORD_LITTLE_ENDIAN registry value type.</span></span> |
+| <span data-ttu-id="ae0e4-847">sz</span><span class="sxs-lookup"><span data-stu-id="ae0e4-847">sz</span></span>                | <span data-ttu-id="ae0e4-848">11 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-848">11</span></span>    | <span data-ttu-id="ae0e4-849">REG_SZ 注册表值类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-849">REG_SZ registry value type.</span></span>                  |
 
-### <a name="alertseverity-values"></a><span data-ttu-id="14006-841">alertSeverity 值</span><span class="sxs-lookup"><span data-stu-id="14006-841">alertSeverity values</span></span>
+### <a name="alertseverity-values"></a><span data-ttu-id="ae0e4-850">alertSeverity 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-850">alertSeverity values</span></span>
 
-<span data-ttu-id="14006-842">警报严重性的枚举。</span><span class="sxs-lookup"><span data-stu-id="14006-842">Enum for severity of alerts.</span></span>
+<span data-ttu-id="ae0e4-851">警报严重性的枚举。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-851">Enum for severity of alerts.</span></span>
 
-| <span data-ttu-id="14006-843">成员</span><span class="sxs-lookup"><span data-stu-id="14006-843">Member</span></span>        | <span data-ttu-id="14006-844">值</span><span class="sxs-lookup"><span data-stu-id="14006-844">Value</span></span> | <span data-ttu-id="14006-845">说明</span><span class="sxs-lookup"><span data-stu-id="14006-845">Description</span></span>                       |
+| <span data-ttu-id="ae0e4-852">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-852">Member</span></span>        | <span data-ttu-id="ae0e4-853">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-853">Value</span></span> | <span data-ttu-id="ae0e4-854">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-854">Description</span></span>                       |
 | :------------ | :---- | :-------------------------------- |
-| <span data-ttu-id="14006-846">unknown</span><span class="sxs-lookup"><span data-stu-id="14006-846">unknown</span></span>       | <span data-ttu-id="14006-847">0</span><span class="sxs-lookup"><span data-stu-id="14006-847">0</span></span>     | <span data-ttu-id="14006-848">严重度未知。</span><span class="sxs-lookup"><span data-stu-id="14006-848">Severity is unknown.</span></span>              |
-| <span data-ttu-id="14006-849">之</span><span class="sxs-lookup"><span data-stu-id="14006-849">informational</span></span> | <span data-ttu-id="14006-850">1 </span><span class="sxs-lookup"><span data-stu-id="14006-850">1</span></span>     | <span data-ttu-id="14006-851">严重性仅适用于信息。</span><span class="sxs-lookup"><span data-stu-id="14006-851">Severity is only for information.</span></span> |
-| <span data-ttu-id="14006-852">降低</span><span class="sxs-lookup"><span data-stu-id="14006-852">low</span></span>           | <span data-ttu-id="14006-853">2 </span><span class="sxs-lookup"><span data-stu-id="14006-853">2</span></span>     | <span data-ttu-id="14006-854">严重性为低。</span><span class="sxs-lookup"><span data-stu-id="14006-854">Severity is low.</span></span>                  |
-| <span data-ttu-id="14006-855">中等</span><span class="sxs-lookup"><span data-stu-id="14006-855">medium</span></span>        | <span data-ttu-id="14006-856">第三章</span><span class="sxs-lookup"><span data-stu-id="14006-856">3</span></span>     | <span data-ttu-id="14006-857">严重性为 "中"。</span><span class="sxs-lookup"><span data-stu-id="14006-857">Severity is medium.</span></span>               |
-| <span data-ttu-id="14006-858">高效</span><span class="sxs-lookup"><span data-stu-id="14006-858">high</span></span>          | <span data-ttu-id="14006-859">4 </span><span class="sxs-lookup"><span data-stu-id="14006-859">4</span></span>     | <span data-ttu-id="14006-860">严重性为高。</span><span class="sxs-lookup"><span data-stu-id="14006-860">Severity is high.</span></span>                 |
+| <span data-ttu-id="ae0e4-855">unknown</span><span class="sxs-lookup"><span data-stu-id="ae0e4-855">unknown</span></span>       | <span data-ttu-id="ae0e4-856">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-856">0</span></span>     | <span data-ttu-id="ae0e4-857">严重度未知。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-857">Severity is unknown.</span></span>              |
+| <span data-ttu-id="ae0e4-858">之</span><span class="sxs-lookup"><span data-stu-id="ae0e4-858">informational</span></span> | <span data-ttu-id="ae0e4-859">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-859">1</span></span>     | <span data-ttu-id="ae0e4-860">严重性仅适用于信息。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-860">Severity is only for information.</span></span> |
+| <span data-ttu-id="ae0e4-861">降低</span><span class="sxs-lookup"><span data-stu-id="ae0e4-861">low</span></span>           | <span data-ttu-id="ae0e4-862">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-862">2</span></span>     | <span data-ttu-id="ae0e4-863">严重性为低。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-863">Severity is low.</span></span>                  |
+| <span data-ttu-id="ae0e4-864">中等</span><span class="sxs-lookup"><span data-stu-id="ae0e4-864">medium</span></span>        | <span data-ttu-id="ae0e4-865">第三章</span><span class="sxs-lookup"><span data-stu-id="ae0e4-865">3</span></span>     | <span data-ttu-id="ae0e4-866">严重性为 "中"。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-866">Severity is medium.</span></span>               |
+| <span data-ttu-id="ae0e4-867">高效</span><span class="sxs-lookup"><span data-stu-id="ae0e4-867">high</span></span>          | <span data-ttu-id="ae0e4-868">4 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-868">4</span></span>     | <span data-ttu-id="ae0e4-869">严重性为高。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-869">Severity is high.</span></span>                 |
 
-### <a name="alertstatus-values"></a><span data-ttu-id="14006-861">alertStatus 值</span><span class="sxs-lookup"><span data-stu-id="14006-861">alertStatus values</span></span>
+### <a name="alertstatus-values"></a><span data-ttu-id="ae0e4-870">alertStatus 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-870">alertStatus values</span></span>
 
-<span data-ttu-id="14006-862"> (stage) 的警报生命周期状态的可能值。</span><span class="sxs-lookup"><span data-stu-id="14006-862">Possible values of an Alert lifecycle status (stage).</span></span>
+<span data-ttu-id="ae0e4-871"> (stage) 的警报生命周期状态的可能值。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-871">Possible values of an Alert lifecycle status (stage).</span></span>
 
-| <span data-ttu-id="14006-863">成员</span><span class="sxs-lookup"><span data-stu-id="14006-863">Member</span></span>     | <span data-ttu-id="14006-864">值</span><span class="sxs-lookup"><span data-stu-id="14006-864">Value</span></span> | <span data-ttu-id="14006-865">说明</span><span class="sxs-lookup"><span data-stu-id="14006-865">Description</span></span>           |
+| <span data-ttu-id="ae0e4-872">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-872">Member</span></span>     | <span data-ttu-id="ae0e4-873">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-873">Value</span></span> | <span data-ttu-id="ae0e4-874">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-874">Description</span></span>           |
 | :--------- | :---- | :-------------------- |
-| <span data-ttu-id="14006-866">unknown</span><span class="sxs-lookup"><span data-stu-id="14006-866">unknown</span></span>    | <span data-ttu-id="14006-867">0</span><span class="sxs-lookup"><span data-stu-id="14006-867">0</span></span>     | <span data-ttu-id="14006-868">未知状态。</span><span class="sxs-lookup"><span data-stu-id="14006-868">Unknown status.</span></span>       |
-| <span data-ttu-id="14006-869">newAlert</span><span class="sxs-lookup"><span data-stu-id="14006-869">newAlert</span></span>   | <span data-ttu-id="14006-870">10 </span><span class="sxs-lookup"><span data-stu-id="14006-870">10</span></span>    | <span data-ttu-id="14006-871">警报是新的。</span><span class="sxs-lookup"><span data-stu-id="14006-871">Alert is new.</span></span>         |
-| <span data-ttu-id="14006-872">inProgress</span><span class="sxs-lookup"><span data-stu-id="14006-872">inProgress</span></span> | <span data-ttu-id="14006-873">20</span><span class="sxs-lookup"><span data-stu-id="14006-873">20</span></span>    | <span data-ttu-id="14006-874">警报正在进行中。</span><span class="sxs-lookup"><span data-stu-id="14006-874">Alert is in progress.</span></span> |
-| <span data-ttu-id="14006-875">经过</span><span class="sxs-lookup"><span data-stu-id="14006-875">resolved</span></span>   | <span data-ttu-id="14006-876">30</span><span class="sxs-lookup"><span data-stu-id="14006-876">30</span></span>    | <span data-ttu-id="14006-877">警报已解决。</span><span class="sxs-lookup"><span data-stu-id="14006-877">Alert is resolved.</span></span>    |
+| <span data-ttu-id="ae0e4-875">unknown</span><span class="sxs-lookup"><span data-stu-id="ae0e4-875">unknown</span></span>    | <span data-ttu-id="ae0e4-876">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-876">0</span></span>     | <span data-ttu-id="ae0e4-877">未知状态。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-877">Unknown status.</span></span>       |
+| <span data-ttu-id="ae0e4-878">newAlert</span><span class="sxs-lookup"><span data-stu-id="ae0e4-878">newAlert</span></span>   | <span data-ttu-id="ae0e4-879">10 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-879">10</span></span>    | <span data-ttu-id="ae0e4-880">警报是新的。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-880">Alert is new.</span></span>         |
+| <span data-ttu-id="ae0e4-881">inProgress</span><span class="sxs-lookup"><span data-stu-id="ae0e4-881">inProgress</span></span> | <span data-ttu-id="ae0e4-882">20</span><span class="sxs-lookup"><span data-stu-id="ae0e4-882">20</span></span>    | <span data-ttu-id="ae0e4-883">警报正在进行中。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-883">Alert is in progress.</span></span> |
+| <span data-ttu-id="ae0e4-884">经过</span><span class="sxs-lookup"><span data-stu-id="ae0e4-884">resolved</span></span>   | <span data-ttu-id="ae0e4-885">30</span><span class="sxs-lookup"><span data-stu-id="ae0e4-885">30</span></span>    | <span data-ttu-id="ae0e4-886">警报已解决。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-886">Alert is resolved.</span></span>    |
 
-### <a name="emailrole-values"></a><span data-ttu-id="14006-878">emailRole 值</span><span class="sxs-lookup"><span data-stu-id="14006-878">emailRole values</span></span>
+### <a name="emailrole-values"></a><span data-ttu-id="ae0e4-887">emailRole 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-887">emailRole values</span></span>
 
-<span data-ttu-id="14006-879">电子邮件角色的可能值。</span><span class="sxs-lookup"><span data-stu-id="14006-879">Possible values for email roles.</span></span>
+<span data-ttu-id="ae0e4-888">电子邮件角色的可能值。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-888">Possible values for email roles.</span></span>
 
-| <span data-ttu-id="14006-880">成员</span><span class="sxs-lookup"><span data-stu-id="14006-880">Member</span></span>    | <span data-ttu-id="14006-881">值</span><span class="sxs-lookup"><span data-stu-id="14006-881">Value</span></span> | <span data-ttu-id="14006-882">说明</span><span class="sxs-lookup"><span data-stu-id="14006-882">Description</span></span>             |
+| <span data-ttu-id="ae0e4-889">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-889">Member</span></span>    | <span data-ttu-id="ae0e4-890">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-890">Value</span></span> | <span data-ttu-id="ae0e4-891">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-891">Description</span></span>             |
 | :-------- | :---- | :---------------------- |
-| <span data-ttu-id="14006-883">unknown</span><span class="sxs-lookup"><span data-stu-id="14006-883">unknown</span></span>   | <span data-ttu-id="14006-884">0</span><span class="sxs-lookup"><span data-stu-id="14006-884">0</span></span>     | <span data-ttu-id="14006-885">未知角色。</span><span class="sxs-lookup"><span data-stu-id="14006-885">Unknown Role.</span></span>           |
-| <span data-ttu-id="14006-886">sender</span><span class="sxs-lookup"><span data-stu-id="14006-886">sender</span></span>    | <span data-ttu-id="14006-887">1 </span><span class="sxs-lookup"><span data-stu-id="14006-887">1</span></span>     | <span data-ttu-id="14006-888">电子邮件的发件人。</span><span class="sxs-lookup"><span data-stu-id="14006-888">Sender of the email.</span></span>    |
-| <span data-ttu-id="14006-889">recipient</span><span class="sxs-lookup"><span data-stu-id="14006-889">recipient</span></span> | <span data-ttu-id="14006-890">2 </span><span class="sxs-lookup"><span data-stu-id="14006-890">2</span></span>     | <span data-ttu-id="14006-891">电子邮件的收件人。</span><span class="sxs-lookup"><span data-stu-id="14006-891">Recipient of the email.</span></span> |
+| <span data-ttu-id="ae0e4-892">unknown</span><span class="sxs-lookup"><span data-stu-id="ae0e4-892">unknown</span></span>   | <span data-ttu-id="ae0e4-893">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-893">0</span></span>     | <span data-ttu-id="ae0e4-894">未知角色。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-894">Unknown Role.</span></span>           |
+| <span data-ttu-id="ae0e4-895">sender</span><span class="sxs-lookup"><span data-stu-id="ae0e4-895">sender</span></span>    | <span data-ttu-id="ae0e4-896">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-896">1</span></span>     | <span data-ttu-id="ae0e4-897">电子邮件的发件人。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-897">Sender of the email.</span></span>    |
+| <span data-ttu-id="ae0e4-898">recipient</span><span class="sxs-lookup"><span data-stu-id="ae0e4-898">recipient</span></span> | <span data-ttu-id="ae0e4-899">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-899">2</span></span>     | <span data-ttu-id="ae0e4-900">电子邮件的收件人。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-900">Recipient of the email.</span></span> |
 
-### <a name="logontype-values"></a><span data-ttu-id="14006-892">logonType 值</span><span class="sxs-lookup"><span data-stu-id="14006-892">logonType values</span></span>
+### <a name="logontype-values"></a><span data-ttu-id="ae0e4-901">logonType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-901">logonType values</span></span>
 
-<span data-ttu-id="14006-893">用户登录方法的可能值。</span><span class="sxs-lookup"><span data-stu-id="14006-893">Possible values for the method of user signin.</span></span>
+<span data-ttu-id="ae0e4-902">用户登录方法的可能值。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-902">Possible values for the method of user signin.</span></span>
 
-| <span data-ttu-id="14006-894">成员</span><span class="sxs-lookup"><span data-stu-id="14006-894">Member</span></span>            | <span data-ttu-id="14006-895">值</span><span class="sxs-lookup"><span data-stu-id="14006-895">Value</span></span> | <span data-ttu-id="14006-896">说明</span><span class="sxs-lookup"><span data-stu-id="14006-896">Description</span></span>                  |
+| <span data-ttu-id="ae0e4-903">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-903">Member</span></span>            | <span data-ttu-id="ae0e4-904">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-904">Value</span></span> | <span data-ttu-id="ae0e4-905">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-905">Description</span></span>                  |
 | :---------------- | :---- | :--------------------------- |
-| <span data-ttu-id="14006-897">unknown</span><span class="sxs-lookup"><span data-stu-id="14006-897">unknown</span></span>           | <span data-ttu-id="14006-898">-1</span><span class="sxs-lookup"><span data-stu-id="14006-898">-1</span></span>    | <span data-ttu-id="14006-899">陌生.</span><span class="sxs-lookup"><span data-stu-id="14006-899">Unknown.</span></span>                     |
-| <span data-ttu-id="14006-900">式</span><span class="sxs-lookup"><span data-stu-id="14006-900">interactive</span></span>       | <span data-ttu-id="14006-901">0</span><span class="sxs-lookup"><span data-stu-id="14006-901">0</span></span>     | <span data-ttu-id="14006-902">登录是交互式的。</span><span class="sxs-lookup"><span data-stu-id="14006-902">Logon is interactive.</span></span>        |
-| <span data-ttu-id="14006-903">remoteInteractive</span><span class="sxs-lookup"><span data-stu-id="14006-903">remoteInteractive</span></span> | <span data-ttu-id="14006-904">1 </span><span class="sxs-lookup"><span data-stu-id="14006-904">1</span></span>     | <span data-ttu-id="14006-905">登录是远程交互的。</span><span class="sxs-lookup"><span data-stu-id="14006-905">Logon is remote interactive.</span></span> |
-| <span data-ttu-id="14006-906">network</span><span class="sxs-lookup"><span data-stu-id="14006-906">network</span></span>           | <span data-ttu-id="14006-907">2 </span><span class="sxs-lookup"><span data-stu-id="14006-907">2</span></span>     | <span data-ttu-id="14006-908">登录为网络。</span><span class="sxs-lookup"><span data-stu-id="14006-908">Logon is network.</span></span>            |
-| <span data-ttu-id="14006-909">batch</span><span class="sxs-lookup"><span data-stu-id="14006-909">batch</span></span>             | <span data-ttu-id="14006-910">第三章</span><span class="sxs-lookup"><span data-stu-id="14006-910">3</span></span>     | <span data-ttu-id="14006-911">登录是批处理。</span><span class="sxs-lookup"><span data-stu-id="14006-911">Logon is batch.</span></span>              |
-| <span data-ttu-id="14006-912">service</span><span class="sxs-lookup"><span data-stu-id="14006-912">service</span></span>           | <span data-ttu-id="14006-913">4 </span><span class="sxs-lookup"><span data-stu-id="14006-913">4</span></span>     | <span data-ttu-id="14006-914">登录为 "服务"。</span><span class="sxs-lookup"><span data-stu-id="14006-914">Logon is service.</span></span>            |
+| <span data-ttu-id="ae0e4-906">unknown</span><span class="sxs-lookup"><span data-stu-id="ae0e4-906">unknown</span></span>           | <span data-ttu-id="ae0e4-907">-1</span><span class="sxs-lookup"><span data-stu-id="ae0e4-907">-1</span></span>    | <span data-ttu-id="ae0e4-908">陌生.</span><span class="sxs-lookup"><span data-stu-id="ae0e4-908">Unknown.</span></span>                     |
+| <span data-ttu-id="ae0e4-909">式</span><span class="sxs-lookup"><span data-stu-id="ae0e4-909">interactive</span></span>       | <span data-ttu-id="ae0e4-910">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-910">0</span></span>     | <span data-ttu-id="ae0e4-911">登录是交互式的。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-911">Logon is interactive.</span></span>        |
+| <span data-ttu-id="ae0e4-912">remoteInteractive</span><span class="sxs-lookup"><span data-stu-id="ae0e4-912">remoteInteractive</span></span> | <span data-ttu-id="ae0e4-913">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-913">1</span></span>     | <span data-ttu-id="ae0e4-914">登录是远程交互的。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-914">Logon is remote interactive.</span></span> |
+| <span data-ttu-id="ae0e4-915">network</span><span class="sxs-lookup"><span data-stu-id="ae0e4-915">network</span></span>           | <span data-ttu-id="ae0e4-916">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-916">2</span></span>     | <span data-ttu-id="ae0e4-917">登录为网络。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-917">Logon is network.</span></span>            |
+| <span data-ttu-id="ae0e4-918">batch</span><span class="sxs-lookup"><span data-stu-id="ae0e4-918">batch</span></span>             | <span data-ttu-id="ae0e4-919">第三章</span><span class="sxs-lookup"><span data-stu-id="ae0e4-919">3</span></span>     | <span data-ttu-id="ae0e4-920">登录是批处理。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-920">Logon is batch.</span></span>              |
+| <span data-ttu-id="ae0e4-921">service</span><span class="sxs-lookup"><span data-stu-id="ae0e4-921">service</span></span>           | <span data-ttu-id="ae0e4-922">4 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-922">4</span></span>     | <span data-ttu-id="ae0e4-923">登录为 "服务"。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-923">Logon is service.</span></span>            |
 
-### <a name="useraccountsecuritytype-values"></a><span data-ttu-id="14006-915">userAccountSecurityType 值</span><span class="sxs-lookup"><span data-stu-id="14006-915">userAccountSecurityType values</span></span>
+### <a name="useraccountsecuritytype-values"></a><span data-ttu-id="ae0e4-924">userAccountSecurityType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-924">userAccountSecurityType values</span></span>
 
-<span data-ttu-id="14006-916">每个 Windows 定义 (组成员身份) 的用户帐户类型的可能值。</span><span class="sxs-lookup"><span data-stu-id="14006-916">Possible values for user account types (group membership), per Windows definition.</span></span>
+<span data-ttu-id="ae0e4-925">每个 Windows 定义 (组成员身份) 的用户帐户类型的可能值。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-925">Possible values for user account types (group membership), per Windows definition.</span></span>
 
-| <span data-ttu-id="14006-917">成员</span><span class="sxs-lookup"><span data-stu-id="14006-917">Member</span></span>        | <span data-ttu-id="14006-918">值</span><span class="sxs-lookup"><span data-stu-id="14006-918">Value</span></span> | <span data-ttu-id="14006-919">说明</span><span class="sxs-lookup"><span data-stu-id="14006-919">Description</span></span>                     |
+| <span data-ttu-id="ae0e4-926">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-926">Member</span></span>        | <span data-ttu-id="ae0e4-927">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-927">Value</span></span> | <span data-ttu-id="ae0e4-928">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-928">Description</span></span>                     |
 | :------------ | :---- | :------------------------------ |
-| <span data-ttu-id="14006-920">unknown</span><span class="sxs-lookup"><span data-stu-id="14006-920">unknown</span></span>       | <span data-ttu-id="14006-921">-1</span><span class="sxs-lookup"><span data-stu-id="14006-921">-1</span></span>    | <span data-ttu-id="14006-922">陌生.</span><span class="sxs-lookup"><span data-stu-id="14006-922">Unknown.</span></span>                        |
-| <span data-ttu-id="14006-923">普通</span><span class="sxs-lookup"><span data-stu-id="14006-923">standard</span></span>      | <span data-ttu-id="14006-924">0</span><span class="sxs-lookup"><span data-stu-id="14006-924">0</span></span>     | <span data-ttu-id="14006-925">"标准用户" 组的成员。</span><span class="sxs-lookup"><span data-stu-id="14006-925">Member of Standard Users group.</span></span> |
-| <span data-ttu-id="14006-926">能力</span><span class="sxs-lookup"><span data-stu-id="14006-926">power</span></span>         | <span data-ttu-id="14006-927">1 </span><span class="sxs-lookup"><span data-stu-id="14006-927">1</span></span>     | <span data-ttu-id="14006-928">Power Users 组的成员。</span><span class="sxs-lookup"><span data-stu-id="14006-928">Member of Power Users group.</span></span>    |
-| <span data-ttu-id="14006-929">联系</span><span class="sxs-lookup"><span data-stu-id="14006-929">administrator</span></span> | <span data-ttu-id="14006-930">2 </span><span class="sxs-lookup"><span data-stu-id="14006-930">2</span></span>     | <span data-ttu-id="14006-931">Administrators 组的成员。</span><span class="sxs-lookup"><span data-stu-id="14006-931">Member of Administrators group.</span></span> |
+| <span data-ttu-id="ae0e4-929">unknown</span><span class="sxs-lookup"><span data-stu-id="ae0e4-929">unknown</span></span>       | <span data-ttu-id="ae0e4-930">-1</span><span class="sxs-lookup"><span data-stu-id="ae0e4-930">-1</span></span>    | <span data-ttu-id="ae0e4-931">陌生.</span><span class="sxs-lookup"><span data-stu-id="ae0e4-931">Unknown.</span></span>                        |
+| <span data-ttu-id="ae0e4-932">普通</span><span class="sxs-lookup"><span data-stu-id="ae0e4-932">standard</span></span>      | <span data-ttu-id="ae0e4-933">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-933">0</span></span>     | <span data-ttu-id="ae0e4-934">"标准用户" 组的成员。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-934">Member of Standard Users group.</span></span> |
+| <span data-ttu-id="ae0e4-935">能力</span><span class="sxs-lookup"><span data-stu-id="ae0e4-935">power</span></span>         | <span data-ttu-id="ae0e4-936">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-936">1</span></span>     | <span data-ttu-id="ae0e4-937">Power Users 组的成员。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-937">Member of Power Users group.</span></span>    |
+| <span data-ttu-id="ae0e4-938">联系</span><span class="sxs-lookup"><span data-stu-id="ae0e4-938">administrator</span></span> | <span data-ttu-id="ae0e4-939">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-939">2</span></span>     | <span data-ttu-id="ae0e4-940">Administrators 组的成员。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-940">Member of Administrators group.</span></span> |
 
-### <a name="chatmessagepolicyviolationdlpactiontypevalues"></a><span data-ttu-id="14006-932">chatMessagePolicyViolationDlpActionType 值</span><span class="sxs-lookup"><span data-stu-id="14006-932">chatMessagePolicyViolationDlpActionType values</span></span>
+### <a name="chatmessagepolicyviolationdlpactiontypevalues"></a><span data-ttu-id="ae0e4-941">chatMessagePolicyViolationDlpActionType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-941">chatMessagePolicyViolationDlpActionType values</span></span>
 
-| <span data-ttu-id="14006-933">值</span><span class="sxs-lookup"><span data-stu-id="14006-933">Value</span></span> |
+| <span data-ttu-id="ae0e4-942">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-942">Value</span></span> |
 |:-----------------|
-| <span data-ttu-id="14006-934">无</span><span class="sxs-lookup"><span data-stu-id="14006-934">none</span></span> |
-| <span data-ttu-id="14006-935">NotifySender</span><span class="sxs-lookup"><span data-stu-id="14006-935">NotifySender</span></span> |
-| <span data-ttu-id="14006-936">BlockAccess</span><span class="sxs-lookup"><span data-stu-id="14006-936">BlockAccess</span></span> |
-| <span data-ttu-id="14006-937">BlockAccessExternal</span><span class="sxs-lookup"><span data-stu-id="14006-937">BlockAccessExternal</span></span> |
+| <span data-ttu-id="ae0e4-943">无</span><span class="sxs-lookup"><span data-stu-id="ae0e4-943">none</span></span> |
+| <span data-ttu-id="ae0e4-944">NotifySender</span><span class="sxs-lookup"><span data-stu-id="ae0e4-944">NotifySender</span></span> |
+| <span data-ttu-id="ae0e4-945">BlockAccess</span><span class="sxs-lookup"><span data-stu-id="ae0e4-945">BlockAccess</span></span> |
+| <span data-ttu-id="ae0e4-946">BlockAccessExternal</span><span class="sxs-lookup"><span data-stu-id="ae0e4-946">BlockAccessExternal</span></span> |
 
-### <a name="scopeoperatormultivaluedcomparisontype-values"></a><span data-ttu-id="14006-938">scopeOperatorMultiValuedComparisonType 值</span><span class="sxs-lookup"><span data-stu-id="14006-938">scopeOperatorMultiValuedComparisonType values</span></span>
+### <a name="scopeoperatormultivaluedcomparisontype-values"></a><span data-ttu-id="ae0e4-947">scopeOperatorMultiValuedComparisonType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-947">scopeOperatorMultiValuedComparisonType values</span></span>
 
-|<span data-ttu-id="14006-939">成员</span><span class="sxs-lookup"><span data-stu-id="14006-939">Member</span></span>|
+|<span data-ttu-id="ae0e4-948">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-948">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-940">各种</span><span class="sxs-lookup"><span data-stu-id="14006-940">all</span></span>|
-|<span data-ttu-id="14006-941">任意</span><span class="sxs-lookup"><span data-stu-id="14006-941">any</span></span>|
+|<span data-ttu-id="ae0e4-949">各种</span><span class="sxs-lookup"><span data-stu-id="ae0e4-949">all</span></span>|
+|<span data-ttu-id="ae0e4-950">任意</span><span class="sxs-lookup"><span data-stu-id="ae0e4-950">any</span></span>|
 
-### <a name="risklevel-values"></a><span data-ttu-id="14006-942">riskLevel 值</span><span class="sxs-lookup"><span data-stu-id="14006-942">riskLevel values</span></span>
+### <a name="risklevel-values"></a><span data-ttu-id="ae0e4-951">riskLevel 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-951">riskLevel values</span></span>
 
-|<span data-ttu-id="14006-943">成员</span><span class="sxs-lookup"><span data-stu-id="14006-943">Member</span></span>|
+|<span data-ttu-id="ae0e4-952">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-952">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-944">降低</span><span class="sxs-lookup"><span data-stu-id="14006-944">low</span></span>|
-|<span data-ttu-id="14006-945">中等</span><span class="sxs-lookup"><span data-stu-id="14006-945">medium</span></span>|
-|<span data-ttu-id="14006-946">高效</span><span class="sxs-lookup"><span data-stu-id="14006-946">high</span></span>|
-|<span data-ttu-id="14006-947">hidden</span><span class="sxs-lookup"><span data-stu-id="14006-947">hidden</span></span>|
-|<span data-ttu-id="14006-948">无</span><span class="sxs-lookup"><span data-stu-id="14006-948">none</span></span>|
-|<span data-ttu-id="14006-949">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-949">unknownFutureValue</span></span>|
+|<span data-ttu-id="ae0e4-953">降低</span><span class="sxs-lookup"><span data-stu-id="ae0e4-953">low</span></span>|
+|<span data-ttu-id="ae0e4-954">中等</span><span class="sxs-lookup"><span data-stu-id="ae0e4-954">medium</span></span>|
+|<span data-ttu-id="ae0e4-955">高效</span><span class="sxs-lookup"><span data-stu-id="ae0e4-955">high</span></span>|
+|<span data-ttu-id="ae0e4-956">hidden</span><span class="sxs-lookup"><span data-stu-id="ae0e4-956">hidden</span></span>|
+|<span data-ttu-id="ae0e4-957">无</span><span class="sxs-lookup"><span data-stu-id="ae0e4-957">none</span></span>|
+|<span data-ttu-id="ae0e4-958">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-958">unknownFutureValue</span></span>|
 
-### <a name="riskstate-values"></a><span data-ttu-id="14006-950">riskState 值</span><span class="sxs-lookup"><span data-stu-id="14006-950">riskState values</span></span>
+### <a name="riskstate-values"></a><span data-ttu-id="ae0e4-959">riskState 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-959">riskState values</span></span>
 
-|<span data-ttu-id="14006-951">成员</span><span class="sxs-lookup"><span data-stu-id="14006-951">Member</span></span>|
+|<span data-ttu-id="ae0e4-960">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-960">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-952">无</span><span class="sxs-lookup"><span data-stu-id="14006-952">none</span></span>|
-|<span data-ttu-id="14006-953">confirmedSafe</span><span class="sxs-lookup"><span data-stu-id="14006-953">confirmedSafe</span></span>|
-|<span data-ttu-id="14006-954">得以</span><span class="sxs-lookup"><span data-stu-id="14006-954">remediated</span></span>|
-|<span data-ttu-id="14006-955">清除</span><span class="sxs-lookup"><span data-stu-id="14006-955">dismissed</span></span>|
-|<span data-ttu-id="14006-956">atRisk</span><span class="sxs-lookup"><span data-stu-id="14006-956">atRisk</span></span>|
-|<span data-ttu-id="14006-957">confirmedCompromised</span><span class="sxs-lookup"><span data-stu-id="14006-957">confirmedCompromised</span></span>|
-|<span data-ttu-id="14006-958">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-958">unknownFutureValue</span></span>|
+|<span data-ttu-id="ae0e4-961">无</span><span class="sxs-lookup"><span data-stu-id="ae0e4-961">none</span></span>|
+|<span data-ttu-id="ae0e4-962">confirmedSafe</span><span class="sxs-lookup"><span data-stu-id="ae0e4-962">confirmedSafe</span></span>|
+|<span data-ttu-id="ae0e4-963">得以</span><span class="sxs-lookup"><span data-stu-id="ae0e4-963">remediated</span></span>|
+|<span data-ttu-id="ae0e4-964">清除</span><span class="sxs-lookup"><span data-stu-id="ae0e4-964">dismissed</span></span>|
+|<span data-ttu-id="ae0e4-965">atRisk</span><span class="sxs-lookup"><span data-stu-id="ae0e4-965">atRisk</span></span>|
+|<span data-ttu-id="ae0e4-966">confirmedCompromised</span><span class="sxs-lookup"><span data-stu-id="ae0e4-966">confirmedCompromised</span></span>|
+|<span data-ttu-id="ae0e4-967">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-967">unknownFutureValue</span></span>|
 
-### <a name="riskdetail-values"></a><span data-ttu-id="14006-959">riskDetail 值</span><span class="sxs-lookup"><span data-stu-id="14006-959">riskDetail values</span></span>
+### <a name="riskdetail-values"></a><span data-ttu-id="ae0e4-968">riskDetail 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-968">riskDetail values</span></span>
 
-|<span data-ttu-id="14006-960">成员</span><span class="sxs-lookup"><span data-stu-id="14006-960">Member</span></span>|
+|<span data-ttu-id="ae0e4-969">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-969">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-961">无</span><span class="sxs-lookup"><span data-stu-id="14006-961">none</span></span>|
-|<span data-ttu-id="14006-962">adminGeneratedTemporaryPassword</span><span class="sxs-lookup"><span data-stu-id="14006-962">adminGeneratedTemporaryPassword</span></span>|
-|<span data-ttu-id="14006-963">userPerformedSecuredPasswordChange</span><span class="sxs-lookup"><span data-stu-id="14006-963">userPerformedSecuredPasswordChange</span></span>|
-|<span data-ttu-id="14006-964">userPerformedSecuredPasswordReset</span><span class="sxs-lookup"><span data-stu-id="14006-964">userPerformedSecuredPasswordReset</span></span>|
-|<span data-ttu-id="14006-965">adminConfirmedSigninSafe</span><span class="sxs-lookup"><span data-stu-id="14006-965">adminConfirmedSigninSafe</span></span>|
-|<span data-ttu-id="14006-966">aiConfirmedSigninSafe</span><span class="sxs-lookup"><span data-stu-id="14006-966">aiConfirmedSigninSafe</span></span>|
-|<span data-ttu-id="14006-967">userPassedMFADrivenByRiskBasedPolicy</span><span class="sxs-lookup"><span data-stu-id="14006-967">userPassedMFADrivenByRiskBasedPolicy</span></span>|
-|<span data-ttu-id="14006-968">adminDismissedAllRiskForUser</span><span class="sxs-lookup"><span data-stu-id="14006-968">adminDismissedAllRiskForUser</span></span>|
-|<span data-ttu-id="14006-969">adminConfirmedSigninCompromised</span><span class="sxs-lookup"><span data-stu-id="14006-969">adminConfirmedSigninCompromised</span></span>|
-|<span data-ttu-id="14006-970">adminConfirmedUserCompromised</span><span class="sxs-lookup"><span data-stu-id="14006-970">adminConfirmedUserCompromised</span></span>|
-|<span data-ttu-id="14006-971">hidden</span><span class="sxs-lookup"><span data-stu-id="14006-971">hidden</span></span>|
-|<span data-ttu-id="14006-972">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-972">unknownFutureValue</span></span>|
+|<span data-ttu-id="ae0e4-970">无</span><span class="sxs-lookup"><span data-stu-id="ae0e4-970">none</span></span>|
+|<span data-ttu-id="ae0e4-971">adminGeneratedTemporaryPassword</span><span class="sxs-lookup"><span data-stu-id="ae0e4-971">adminGeneratedTemporaryPassword</span></span>|
+|<span data-ttu-id="ae0e4-972">userPerformedSecuredPasswordChange</span><span class="sxs-lookup"><span data-stu-id="ae0e4-972">userPerformedSecuredPasswordChange</span></span>|
+|<span data-ttu-id="ae0e4-973">userPerformedSecuredPasswordReset</span><span class="sxs-lookup"><span data-stu-id="ae0e4-973">userPerformedSecuredPasswordReset</span></span>|
+|<span data-ttu-id="ae0e4-974">adminConfirmedSigninSafe</span><span class="sxs-lookup"><span data-stu-id="ae0e4-974">adminConfirmedSigninSafe</span></span>|
+|<span data-ttu-id="ae0e4-975">aiConfirmedSigninSafe</span><span class="sxs-lookup"><span data-stu-id="ae0e4-975">aiConfirmedSigninSafe</span></span>|
+|<span data-ttu-id="ae0e4-976">userPassedMFADrivenByRiskBasedPolicy</span><span class="sxs-lookup"><span data-stu-id="ae0e4-976">userPassedMFADrivenByRiskBasedPolicy</span></span>|
+|<span data-ttu-id="ae0e4-977">adminDismissedAllRiskForUser</span><span class="sxs-lookup"><span data-stu-id="ae0e4-977">adminDismissedAllRiskForUser</span></span>|
+|<span data-ttu-id="ae0e4-978">adminConfirmedSigninCompromised</span><span class="sxs-lookup"><span data-stu-id="ae0e4-978">adminConfirmedSigninCompromised</span></span>|
+|<span data-ttu-id="ae0e4-979">adminConfirmedUserCompromised</span><span class="sxs-lookup"><span data-stu-id="ae0e4-979">adminConfirmedUserCompromised</span></span>|
+|<span data-ttu-id="ae0e4-980">hidden</span><span class="sxs-lookup"><span data-stu-id="ae0e4-980">hidden</span></span>|
+|<span data-ttu-id="ae0e4-981">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-981">unknownFutureValue</span></span>|
 
-### <a name="referenceattachmentpermission-values"></a><span data-ttu-id="14006-973">referenceAttachmentPermission 值</span><span class="sxs-lookup"><span data-stu-id="14006-973">referenceAttachmentPermission values</span></span>
+### <a name="referenceattachmentpermission-values"></a><span data-ttu-id="ae0e4-982">referenceAttachmentPermission 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-982">referenceAttachmentPermission values</span></span>
 
-|<span data-ttu-id="14006-974">成员</span><span class="sxs-lookup"><span data-stu-id="14006-974">Member</span></span>|
+|<span data-ttu-id="ae0e4-983">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-983">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-975">相互</span><span class="sxs-lookup"><span data-stu-id="14006-975">other</span></span>|
-|<span data-ttu-id="14006-976">view</span><span class="sxs-lookup"><span data-stu-id="14006-976">view</span></span>|
-|<span data-ttu-id="14006-977">edit</span><span class="sxs-lookup"><span data-stu-id="14006-977">edit</span></span>|
-|<span data-ttu-id="14006-978">anonymousView</span><span class="sxs-lookup"><span data-stu-id="14006-978">anonymousView</span></span>|
-|<span data-ttu-id="14006-979">anonymousEdit</span><span class="sxs-lookup"><span data-stu-id="14006-979">anonymousEdit</span></span>|
-|<span data-ttu-id="14006-980">organizationView</span><span class="sxs-lookup"><span data-stu-id="14006-980">organizationView</span></span>|
-|<span data-ttu-id="14006-981">organizationEdit</span><span class="sxs-lookup"><span data-stu-id="14006-981">organizationEdit</span></span>|
+|<span data-ttu-id="ae0e4-984">相互</span><span class="sxs-lookup"><span data-stu-id="ae0e4-984">other</span></span>|
+|<span data-ttu-id="ae0e4-985">view</span><span class="sxs-lookup"><span data-stu-id="ae0e4-985">view</span></span>|
+|<span data-ttu-id="ae0e4-986">edit</span><span class="sxs-lookup"><span data-stu-id="ae0e4-986">edit</span></span>|
+|<span data-ttu-id="ae0e4-987">anonymousView</span><span class="sxs-lookup"><span data-stu-id="ae0e4-987">anonymousView</span></span>|
+|<span data-ttu-id="ae0e4-988">anonymousEdit</span><span class="sxs-lookup"><span data-stu-id="ae0e4-988">anonymousEdit</span></span>|
+|<span data-ttu-id="ae0e4-989">organizationView</span><span class="sxs-lookup"><span data-stu-id="ae0e4-989">organizationView</span></span>|
+|<span data-ttu-id="ae0e4-990">organizationEdit</span><span class="sxs-lookup"><span data-stu-id="ae0e4-990">organizationEdit</span></span>|
 
-### <a name="referenceattachmentprovider-values"></a><span data-ttu-id="14006-982">: Referenceattachmentprovider 值</span><span class="sxs-lookup"><span data-stu-id="14006-982">referenceAttachmentProvider values</span></span>
+### <a name="referenceattachmentprovider-values"></a><span data-ttu-id="ae0e4-991">: Referenceattachmentprovider 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-991">referenceAttachmentProvider values</span></span>
 
-|<span data-ttu-id="14006-983">成员</span><span class="sxs-lookup"><span data-stu-id="14006-983">Member</span></span>|
+|<span data-ttu-id="ae0e4-992">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-992">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-984">相互</span><span class="sxs-lookup"><span data-stu-id="14006-984">other</span></span>|
-|<span data-ttu-id="14006-985">oneDriveBusiness</span><span class="sxs-lookup"><span data-stu-id="14006-985">oneDriveBusiness</span></span>|
-|<span data-ttu-id="14006-986">oneDriveConsumer</span><span class="sxs-lookup"><span data-stu-id="14006-986">oneDriveConsumer</span></span>|
-|<span data-ttu-id="14006-987">箱</span><span class="sxs-lookup"><span data-stu-id="14006-987">dropbox</span></span>|
+|<span data-ttu-id="ae0e4-993">相互</span><span class="sxs-lookup"><span data-stu-id="ae0e4-993">other</span></span>|
+|<span data-ttu-id="ae0e4-994">oneDriveBusiness</span><span class="sxs-lookup"><span data-stu-id="ae0e4-994">oneDriveBusiness</span></span>|
+|<span data-ttu-id="ae0e4-995">oneDriveConsumer</span><span class="sxs-lookup"><span data-stu-id="ae0e4-995">oneDriveConsumer</span></span>|
+|<span data-ttu-id="ae0e4-996">箱</span><span class="sxs-lookup"><span data-stu-id="ae0e4-996">dropbox</span></span>|
 
-### <a name="riskeventtype-values"></a><span data-ttu-id="14006-988">riskEventType 值</span><span class="sxs-lookup"><span data-stu-id="14006-988">riskEventType values</span></span>
+### <a name="riskeventtype-values"></a><span data-ttu-id="ae0e4-997">riskEventType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-997">riskEventType values</span></span>
 
-|<span data-ttu-id="14006-989">成员</span><span class="sxs-lookup"><span data-stu-id="14006-989">Member</span></span>|
+|<span data-ttu-id="ae0e4-998">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-998">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-990">unlikelyTravel</span><span class="sxs-lookup"><span data-stu-id="14006-990">unlikelyTravel</span></span>|
-|<span data-ttu-id="14006-991">anonymizedIPAddress</span><span class="sxs-lookup"><span data-stu-id="14006-991">anonymizedIPAddress</span></span>|
-|<span data-ttu-id="14006-992">maliciousIPAddress</span><span class="sxs-lookup"><span data-stu-id="14006-992">maliciousIPAddress</span></span>|
-|<span data-ttu-id="14006-993">unfamiliarFeatures</span><span class="sxs-lookup"><span data-stu-id="14006-993">unfamiliarFeatures</span></span>|
-|<span data-ttu-id="14006-994">malwareInfectedIPAddress</span><span class="sxs-lookup"><span data-stu-id="14006-994">malwareInfectedIPAddress</span></span>|
-|<span data-ttu-id="14006-995">suspiciousIPAddress</span><span class="sxs-lookup"><span data-stu-id="14006-995">suspiciousIPAddress</span></span>|
-|<span data-ttu-id="14006-996">leakedCredentials</span><span class="sxs-lookup"><span data-stu-id="14006-996">leakedCredentials</span></span>|
-|<span data-ttu-id="14006-997">investigationsThreatIntelligence</span><span class="sxs-lookup"><span data-stu-id="14006-997">investigationsThreatIntelligence</span></span>|
-|<span data-ttu-id="14006-998">泛型</span><span class="sxs-lookup"><span data-stu-id="14006-998">generic</span></span>|
-|<span data-ttu-id="14006-999">adminConfirmedUserCompromised</span><span class="sxs-lookup"><span data-stu-id="14006-999">adminConfirmedUserCompromised</span></span>|
-|<span data-ttu-id="14006-1000">mcasImpossibleTravel</span><span class="sxs-lookup"><span data-stu-id="14006-1000">mcasImpossibleTravel</span></span>|
-|<span data-ttu-id="14006-1001">mcasSuspiciousInboxManipulationRules</span><span class="sxs-lookup"><span data-stu-id="14006-1001">mcasSuspiciousInboxManipulationRules</span></span>|
-|<span data-ttu-id="14006-1002">investigationsThreatIntelligenceSigninLinked</span><span class="sxs-lookup"><span data-stu-id="14006-1002">investigationsThreatIntelligenceSigninLinked</span></span>|
-|<span data-ttu-id="14006-1003">maliciousIPAddressValidCredentialsBlockedIP</span><span class="sxs-lookup"><span data-stu-id="14006-1003">maliciousIPAddressValidCredentialsBlockedIP</span></span>|
-|<span data-ttu-id="14006-1004">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-1004">unknownFutureValue</span></span>|
+|<span data-ttu-id="ae0e4-999">unlikelyTravel</span><span class="sxs-lookup"><span data-stu-id="ae0e4-999">unlikelyTravel</span></span>|
+|<span data-ttu-id="ae0e4-1000">anonymizedIPAddress</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1000">anonymizedIPAddress</span></span>|
+|<span data-ttu-id="ae0e4-1001">maliciousIPAddress</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1001">maliciousIPAddress</span></span>|
+|<span data-ttu-id="ae0e4-1002">unfamiliarFeatures</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1002">unfamiliarFeatures</span></span>|
+|<span data-ttu-id="ae0e4-1003">malwareInfectedIPAddress</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1003">malwareInfectedIPAddress</span></span>|
+|<span data-ttu-id="ae0e4-1004">suspiciousIPAddress</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1004">suspiciousIPAddress</span></span>|
+|<span data-ttu-id="ae0e4-1005">leakedCredentials</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1005">leakedCredentials</span></span>|
+|<span data-ttu-id="ae0e4-1006">investigationsThreatIntelligence</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1006">investigationsThreatIntelligence</span></span>|
+|<span data-ttu-id="ae0e4-1007">泛型</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1007">generic</span></span>|
+|<span data-ttu-id="ae0e4-1008">adminConfirmedUserCompromised</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1008">adminConfirmedUserCompromised</span></span>|
+|<span data-ttu-id="ae0e4-1009">mcasImpossibleTravel</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1009">mcasImpossibleTravel</span></span>|
+|<span data-ttu-id="ae0e4-1010">mcasSuspiciousInboxManipulationRules</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1010">mcasSuspiciousInboxManipulationRules</span></span>|
+|<span data-ttu-id="ae0e4-1011">investigationsThreatIntelligenceSigninLinked</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1011">investigationsThreatIntelligenceSigninLinked</span></span>|
+|<span data-ttu-id="ae0e4-1012">maliciousIPAddressValidCredentialsBlockedIP</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1012">maliciousIPAddressValidCredentialsBlockedIP</span></span>|
+|<span data-ttu-id="ae0e4-1013">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1013">unknownFutureValue</span></span>|
 
-### <a name="networktype-values"></a><span data-ttu-id="14006-1005">网络值</span><span class="sxs-lookup"><span data-stu-id="14006-1005">networkType values</span></span>
+### <a name="networktype-values"></a><span data-ttu-id="ae0e4-1014">网络值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1014">networkType values</span></span>
 
-|<span data-ttu-id="14006-1006">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1006">Member</span></span>|
+|<span data-ttu-id="ae0e4-1015">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1015">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-1007">在内</span><span class="sxs-lookup"><span data-stu-id="14006-1007">intranet</span></span>|
-|<span data-ttu-id="14006-1008">powerlink</span><span class="sxs-lookup"><span data-stu-id="14006-1008">extranet</span></span>|
-|<span data-ttu-id="14006-1009">namedNetwork</span><span class="sxs-lookup"><span data-stu-id="14006-1009">namedNetwork</span></span>|
-|<span data-ttu-id="14006-1010">获得</span><span class="sxs-lookup"><span data-stu-id="14006-1010">trusted</span></span>|
-|<span data-ttu-id="14006-1011">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-1011">unknownFutureValue</span></span>|
+|<span data-ttu-id="ae0e4-1016">在内</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1016">intranet</span></span>|
+|<span data-ttu-id="ae0e4-1017">powerlink</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1017">extranet</span></span>|
+|<span data-ttu-id="ae0e4-1018">namedNetwork</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1018">namedNetwork</span></span>|
+|<span data-ttu-id="ae0e4-1019">获得</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1019">trusted</span></span>|
+|<span data-ttu-id="ae0e4-1020">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1020">unknownFutureValue</span></span>|
 
-### <a name="exchangeidformat-values"></a><span data-ttu-id="14006-1012">exchangeIdFormat 值</span><span class="sxs-lookup"><span data-stu-id="14006-1012">exchangeIdFormat values</span></span>
+### <a name="exchangeidformat-values"></a><span data-ttu-id="ae0e4-1021">exchangeIdFormat 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1021">exchangeIdFormat values</span></span>
 
-|<span data-ttu-id="14006-1013">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1013">Member</span></span>|
+|<span data-ttu-id="ae0e4-1022">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1022">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-1014">entryId</span><span class="sxs-lookup"><span data-stu-id="14006-1014">entryId</span></span>|
-|<span data-ttu-id="14006-1015">ewsId</span><span class="sxs-lookup"><span data-stu-id="14006-1015">ewsId</span></span>|
-|<span data-ttu-id="14006-1016">immutableEntryId</span><span class="sxs-lookup"><span data-stu-id="14006-1016">immutableEntryId</span></span>|
-|<span data-ttu-id="14006-1017">restId</span><span class="sxs-lookup"><span data-stu-id="14006-1017">restId</span></span>|
-|<span data-ttu-id="14006-1018">restImmutableEntryId</span><span class="sxs-lookup"><span data-stu-id="14006-1018">restImmutableEntryId</span></span>|
+|<span data-ttu-id="ae0e4-1023">entryId</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1023">entryId</span></span>|
+|<span data-ttu-id="ae0e4-1024">ewsId</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1024">ewsId</span></span>|
+|<span data-ttu-id="ae0e4-1025">immutableEntryId</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1025">immutableEntryId</span></span>|
+|<span data-ttu-id="ae0e4-1026">restId</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1026">restId</span></span>|
+|<span data-ttu-id="ae0e4-1027">restImmutableEntryId</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1027">restImmutableEntryId</span></span>|
 
-### <a name="attributeflowbehavior-values"></a><span data-ttu-id="14006-1019">attributeFlowBehavior 值</span><span class="sxs-lookup"><span data-stu-id="14006-1019">attributeFlowBehavior values</span></span>
+### <a name="attributeflowbehavior-values"></a><span data-ttu-id="ae0e4-1028">attributeFlowBehavior 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1028">attributeFlowBehavior values</span></span>
 
-|<span data-ttu-id="14006-1020">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1020">Member</span></span>|
+|<span data-ttu-id="ae0e4-1029">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1029">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-1021">flowWhenChanged</span><span class="sxs-lookup"><span data-stu-id="14006-1021">flowWhenChanged</span></span>|
-|<span data-ttu-id="14006-1022">flowAlways</span><span class="sxs-lookup"><span data-stu-id="14006-1022">flowAlways</span></span>|
+|<span data-ttu-id="ae0e4-1030">flowWhenChanged</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1030">flowWhenChanged</span></span>|
+|<span data-ttu-id="ae0e4-1031">flowAlways</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1031">flowAlways</span></span>|
 
-### <a name="attributeflowtype-values"></a><span data-ttu-id="14006-1023">attributeFlowType 值</span><span class="sxs-lookup"><span data-stu-id="14006-1023">attributeFlowType values</span></span>
+### <a name="attributeflowtype-values"></a><span data-ttu-id="ae0e4-1032">attributeFlowType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1032">attributeFlowType values</span></span>
 
-|<span data-ttu-id="14006-1024">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1024">Member</span></span>|
+|<span data-ttu-id="ae0e4-1033">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1033">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-1025">都</span><span class="sxs-lookup"><span data-stu-id="14006-1025">always</span></span>|
-|<span data-ttu-id="14006-1026">objectAddOnly</span><span class="sxs-lookup"><span data-stu-id="14006-1026">objectAddOnly</span></span>|
-|<span data-ttu-id="14006-1027">multiValueAddOnly</span><span class="sxs-lookup"><span data-stu-id="14006-1027">multiValueAddOnly</span></span>|
-|<span data-ttu-id="14006-1028">restId</span><span class="sxs-lookup"><span data-stu-id="14006-1028">restId</span></span>|
+|<span data-ttu-id="ae0e4-1034">都</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1034">always</span></span>|
+|<span data-ttu-id="ae0e4-1035">objectAddOnly</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1035">objectAddOnly</span></span>|
+|<span data-ttu-id="ae0e4-1036">multiValueAddOnly</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1036">multiValueAddOnly</span></span>|
+|<span data-ttu-id="ae0e4-1037">restId</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1037">restId</span></span>|
 
-### <a name="objectflowtypes-values"></a><span data-ttu-id="14006-1029">objectFlowTypes 值</span><span class="sxs-lookup"><span data-stu-id="14006-1029">objectFlowTypes values</span></span>
+### <a name="objectflowtypes-values"></a><span data-ttu-id="ae0e4-1038">objectFlowTypes 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1038">objectFlowTypes values</span></span>
 
-| <span data-ttu-id="14006-1030">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1030">Member</span></span> | <span data-ttu-id="14006-1031">值</span><span class="sxs-lookup"><span data-stu-id="14006-1031">Value</span></span> |
+| <span data-ttu-id="ae0e4-1039">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1039">Member</span></span> | <span data-ttu-id="ae0e4-1040">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1040">Value</span></span> |
 | :----- | :---- |
-| <span data-ttu-id="14006-1032">无</span><span class="sxs-lookup"><span data-stu-id="14006-1032">None</span></span>   | <span data-ttu-id="14006-1033">0</span><span class="sxs-lookup"><span data-stu-id="14006-1033">0</span></span>     |
-| <span data-ttu-id="14006-1034">添加</span><span class="sxs-lookup"><span data-stu-id="14006-1034">Add</span></span>    | <span data-ttu-id="14006-1035">1 </span><span class="sxs-lookup"><span data-stu-id="14006-1035">1</span></span>     |
-| <span data-ttu-id="14006-1036">更新</span><span class="sxs-lookup"><span data-stu-id="14006-1036">Update</span></span> | <span data-ttu-id="14006-1037">2 </span><span class="sxs-lookup"><span data-stu-id="14006-1037">2</span></span>     |
-| <span data-ttu-id="14006-1038">删除</span><span class="sxs-lookup"><span data-stu-id="14006-1038">Delete</span></span> | <span data-ttu-id="14006-1039">4 </span><span class="sxs-lookup"><span data-stu-id="14006-1039">4</span></span>     |
+| <span data-ttu-id="ae0e4-1041">无</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1041">None</span></span>   | <span data-ttu-id="ae0e4-1042">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1042">0</span></span>     |
+| <span data-ttu-id="ae0e4-1043">添加</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1043">Add</span></span>    | <span data-ttu-id="ae0e4-1044">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1044">1</span></span>     |
+| <span data-ttu-id="ae0e4-1045">更新</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1045">Update</span></span> | <span data-ttu-id="ae0e4-1046">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1046">2</span></span>     |
+| <span data-ttu-id="ae0e4-1047">删除</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1047">Delete</span></span> | <span data-ttu-id="ae0e4-1048">4 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1048">4</span></span>     |
 
-### <a name="chatmessagetype-values"></a><span data-ttu-id="14006-1040">chatMessageType 值</span><span class="sxs-lookup"><span data-stu-id="14006-1040">chatMessageType values</span></span>
+### <a name="chatmessagetype-values"></a><span data-ttu-id="ae0e4-1049">chatMessageType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1049">chatMessageType values</span></span>
 
-|<span data-ttu-id="14006-1041">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1041">Member</span></span>|
+|<span data-ttu-id="ae0e4-1050">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1050">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-1042">message</span><span class="sxs-lookup"><span data-stu-id="14006-1042">message</span></span>|
+|<span data-ttu-id="ae0e4-1051">message</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1051">message</span></span>|
 
-### <a name="chatmessageimportance-values"></a><span data-ttu-id="14006-1043">chatMessageImportance 值</span><span class="sxs-lookup"><span data-stu-id="14006-1043">chatMessageImportance values</span></span>
+### <a name="chatmessageimportance-values"></a><span data-ttu-id="ae0e4-1052">chatMessageImportance 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1052">chatMessageImportance values</span></span>
 
-|<span data-ttu-id="14006-1044">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1044">Member</span></span>|
+|<span data-ttu-id="ae0e4-1053">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1053">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-1045">通用</span><span class="sxs-lookup"><span data-stu-id="14006-1045">normal</span></span>|
-|<span data-ttu-id="14006-1046">高效</span><span class="sxs-lookup"><span data-stu-id="14006-1046">high</span></span>|
-|<span data-ttu-id="14006-1047">紧急</span><span class="sxs-lookup"><span data-stu-id="14006-1047">urgent</span></span>|
+|<span data-ttu-id="ae0e4-1054">通用</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1054">normal</span></span>|
+|<span data-ttu-id="ae0e4-1055">高效</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1055">high</span></span>|
+|<span data-ttu-id="ae0e4-1056">紧急</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1056">urgent</span></span>|
 
-### <a name="channelmembershiptype-values"></a><span data-ttu-id="14006-1048">channelMembershipType 值</span><span class="sxs-lookup"><span data-stu-id="14006-1048">channelMembershipType values</span></span>
+### <a name="channelmembershiptype-values"></a><span data-ttu-id="ae0e4-1057">channelMembershipType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1057">channelMembershipType values</span></span>
 
-| <span data-ttu-id="14006-1049">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1049">Member</span></span>             | <span data-ttu-id="14006-1050">值</span><span class="sxs-lookup"><span data-stu-id="14006-1050">Value</span></span> |
+| <span data-ttu-id="ae0e4-1058">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1058">Member</span></span>             | <span data-ttu-id="ae0e4-1059">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1059">Value</span></span> |
 | :----------------- | :---- |
-| <span data-ttu-id="14006-1051">普通</span><span class="sxs-lookup"><span data-stu-id="14006-1051">standard</span></span>           | <span data-ttu-id="14006-1052">0</span><span class="sxs-lookup"><span data-stu-id="14006-1052">0</span></span>     |
-| <span data-ttu-id="14006-1053">private</span><span class="sxs-lookup"><span data-stu-id="14006-1053">private</span></span>            | <span data-ttu-id="14006-1054">1 </span><span class="sxs-lookup"><span data-stu-id="14006-1054">1</span></span>     |
-| <span data-ttu-id="14006-1055">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-1055">unknownFutureValue</span></span> | <span data-ttu-id="14006-1056">2 </span><span class="sxs-lookup"><span data-stu-id="14006-1056">2</span></span>     |
+| <span data-ttu-id="ae0e4-1060">普通</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1060">standard</span></span>           | <span data-ttu-id="ae0e4-1061">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1061">0</span></span>     |
+| <span data-ttu-id="ae0e4-1062">private</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1062">private</span></span>            | <span data-ttu-id="ae0e4-1063">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1063">1</span></span>     |
+| <span data-ttu-id="ae0e4-1064">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1064">unknownFutureValue</span></span> | <span data-ttu-id="ae0e4-1065">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1065">2</span></span>     |
 
-### <a name="stagedfeaturename-values"></a><span data-ttu-id="14006-1057">stagedFeatureName 值</span><span class="sxs-lookup"><span data-stu-id="14006-1057">stagedFeatureName values</span></span>
+### <a name="stagedfeaturename-values"></a><span data-ttu-id="ae0e4-1066">stagedFeatureName 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1066">stagedFeatureName values</span></span>
 
-| <span data-ttu-id="14006-1058">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1058">Member</span></span>                    | <span data-ttu-id="14006-1059">说明</span><span class="sxs-lookup"><span data-stu-id="14006-1059">Description</span></span>                   |
+| <span data-ttu-id="ae0e4-1067">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1067">Member</span></span>                    | <span data-ttu-id="ae0e4-1068">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1068">Description</span></span>                   |
 | :------------------------ | :---------------------------- |
-| <span data-ttu-id="14006-1060">passthroughAuthentication</span><span class="sxs-lookup"><span data-stu-id="14006-1060">passthroughAuthentication</span></span> | <span data-ttu-id="14006-1061">传递身份验证</span><span class="sxs-lookup"><span data-stu-id="14006-1061">Passthrough Authentication</span></span>    |
-| <span data-ttu-id="14006-1062">seamlessSso</span><span class="sxs-lookup"><span data-stu-id="14006-1062">seamlessSso</span></span>               | <span data-ttu-id="14006-1063">无缝单一登录</span><span class="sxs-lookup"><span data-stu-id="14006-1063">Seamless Single Sign-on</span></span>       |
-| <span data-ttu-id="14006-1064">passwordHashSync</span><span class="sxs-lookup"><span data-stu-id="14006-1064">passwordHashSync</span></span>          | <span data-ttu-id="14006-1065">密码哈希同步</span><span class="sxs-lookup"><span data-stu-id="14006-1065">Password Hash Synchronization</span></span> |
+| <span data-ttu-id="ae0e4-1069">passthroughAuthentication</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1069">passthroughAuthentication</span></span> | <span data-ttu-id="ae0e4-1070">传递身份验证</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1070">Passthrough Authentication</span></span>    |
+| <span data-ttu-id="ae0e4-1071">seamlessSso</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1071">seamlessSso</span></span>               | <span data-ttu-id="ae0e4-1072">无缝单一登录</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1072">Seamless Single Sign-on</span></span>       |
+| <span data-ttu-id="ae0e4-1073">passwordHashSync</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1073">passwordHashSync</span></span>          | <span data-ttu-id="ae0e4-1074">密码哈希同步</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1074">Password Hash Synchronization</span></span> |
 
-### <a name="tokenissuertype-values"></a><span data-ttu-id="14006-1066">tokenIssuerType 值</span><span class="sxs-lookup"><span data-stu-id="14006-1066">tokenIssuerType values</span></span>
+### <a name="tokenissuertype-values"></a><span data-ttu-id="ae0e4-1075">tokenIssuerType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1075">tokenIssuerType values</span></span>
 
-|<span data-ttu-id="14006-1067">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1067">Member</span></span>|
+|<span data-ttu-id="ae0e4-1076">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1076">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-1068">AzureAD</span><span class="sxs-lookup"><span data-stu-id="14006-1068">AzureAD</span></span>|
-|<span data-ttu-id="14006-1069">ADFederationServices</span><span class="sxs-lookup"><span data-stu-id="14006-1069">ADFederationServices</span></span>|
-|<span data-ttu-id="14006-1070">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-1070">unknownFutureValue</span></span>|
+|<span data-ttu-id="ae0e4-1077">AzureAD</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1077">AzureAD</span></span>|
+|<span data-ttu-id="ae0e4-1078">ADFederationServices</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1078">ADFederationServices</span></span>|
+|<span data-ttu-id="ae0e4-1079">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1079">unknownFutureValue</span></span>|
 
-### <a name="riskdetectiontimingtype-values"></a><span data-ttu-id="14006-1071">riskDetectionTimingType 值</span><span class="sxs-lookup"><span data-stu-id="14006-1071">riskDetectionTimingType values</span></span>
+### <a name="riskdetectiontimingtype-values"></a><span data-ttu-id="ae0e4-1080">riskDetectionTimingType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1080">riskDetectionTimingType values</span></span>
 
-|<span data-ttu-id="14006-1072">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1072">Member</span></span>|
+|<span data-ttu-id="ae0e4-1081">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1081">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-1073">notDefined</span><span class="sxs-lookup"><span data-stu-id="14006-1073">notDefined</span></span>|
-|<span data-ttu-id="14006-1074">实时</span><span class="sxs-lookup"><span data-stu-id="14006-1074">realtime</span></span>|
-|<span data-ttu-id="14006-1075">nearRealtime</span><span class="sxs-lookup"><span data-stu-id="14006-1075">nearRealtime</span></span>|
-|<span data-ttu-id="14006-1076">脱机</span><span class="sxs-lookup"><span data-stu-id="14006-1076">offline</span></span>|
-|<span data-ttu-id="14006-1077">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-1077">unknownFutureValue</span></span>|
+|<span data-ttu-id="ae0e4-1082">notDefined</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1082">notDefined</span></span>|
+|<span data-ttu-id="ae0e4-1083">实时</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1083">realtime</span></span>|
+|<span data-ttu-id="ae0e4-1084">nearRealtime</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1084">nearRealtime</span></span>|
+|<span data-ttu-id="ae0e4-1085">脱机</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1085">offline</span></span>|
+|<span data-ttu-id="ae0e4-1086">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1086">unknownFutureValue</span></span>|
 
-### <a name="activitytype-values"></a><span data-ttu-id="14006-1078">activityType 值</span><span class="sxs-lookup"><span data-stu-id="14006-1078">activityType values</span></span>
+### <a name="activitytype-values"></a><span data-ttu-id="ae0e4-1087">activityType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1087">activityType values</span></span>
 
-|<span data-ttu-id="14006-1079">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1079">Member</span></span>|
+|<span data-ttu-id="ae0e4-1088">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1088">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-1080">登录</span><span class="sxs-lookup"><span data-stu-id="14006-1080">signin</span></span>|
-|<span data-ttu-id="14006-1081">user</span><span class="sxs-lookup"><span data-stu-id="14006-1081">user</span></span>|
-|<span data-ttu-id="14006-1082">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-1082">unknownFutureValue</span></span>|
+|<span data-ttu-id="ae0e4-1089">登录</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1089">signin</span></span>|
+|<span data-ttu-id="ae0e4-1090">user</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1090">user</span></span>|
+|<span data-ttu-id="ae0e4-1091">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1091">unknownFutureValue</span></span>|
 
-### <a name="chatmessagepolicyviolationuseractiontype-values"></a><span data-ttu-id="14006-1083">chatMessagePolicyViolationUserActionType 值</span><span class="sxs-lookup"><span data-stu-id="14006-1083">chatMessagePolicyViolationUserActionType values</span></span>
+### <a name="chatmessagepolicyviolationuseractiontype-values"></a><span data-ttu-id="ae0e4-1092">chatMessagePolicyViolationUserActionType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1092">chatMessagePolicyViolationUserActionType values</span></span>
 
-| <span data-ttu-id="14006-1084">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1084">Member</span></span>   | <span data-ttu-id="14006-1085">Int 值</span><span class="sxs-lookup"><span data-stu-id="14006-1085">Int value</span></span> |  <span data-ttu-id="14006-1086">说明</span><span class="sxs-lookup"><span data-stu-id="14006-1086">Description</span></span> |
+| <span data-ttu-id="ae0e4-1093">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1093">Member</span></span>   | <span data-ttu-id="ae0e4-1094">Int 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1094">Int value</span></span> |  <span data-ttu-id="ae0e4-1095">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1095">Description</span></span> |
 |:---------------|:--------|:----------|
-| <span data-ttu-id="14006-1087">无</span><span class="sxs-lookup"><span data-stu-id="14006-1087">None</span></span> | <span data-ttu-id="14006-1088">0</span><span class="sxs-lookup"><span data-stu-id="14006-1088">0</span></span> | <span data-ttu-id="14006-1089">默认值。</span><span class="sxs-lookup"><span data-stu-id="14006-1089">Default value.</span></span> <span data-ttu-id="14006-1090">这是用户未对 DLP 阻止的邮件执行操作时邮件上的值。</span><span class="sxs-lookup"><span data-stu-id="14006-1090">This is the value on a message when the user has not taken an action on the message blocked by DLP.</span></span> |
-| <span data-ttu-id="14006-1091">Override</span><span class="sxs-lookup"><span data-stu-id="14006-1091">Override</span></span> | <span data-ttu-id="14006-1092">1 </span><span class="sxs-lookup"><span data-stu-id="14006-1092">1</span></span> | <span data-ttu-id="14006-1093">发件人已覆盖邮件结论并发送邮件。</span><span class="sxs-lookup"><span data-stu-id="14006-1093">Sender has overridden the message verdict and sent the message anyway.</span></span>|
-| <span data-ttu-id="14006-1094">ReportFalsePositive</span><span class="sxs-lookup"><span data-stu-id="14006-1094">ReportFalsePositive</span></span> | <span data-ttu-id="14006-1095">2 </span><span class="sxs-lookup"><span data-stu-id="14006-1095">2</span></span> | <span data-ttu-id="14006-1096">发件人已将邮件 "肯定为" 作为 "误报" 的管理员报告。</span><span class="sxs-lookup"><span data-stu-id="14006-1096">Sender has reported the message verdict to the admins as a false positive.</span></span>|
+| <span data-ttu-id="ae0e4-1096">无</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1096">None</span></span> | <span data-ttu-id="ae0e4-1097">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1097">0</span></span> | <span data-ttu-id="ae0e4-1098">默认值。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1098">Default value.</span></span> <span data-ttu-id="ae0e4-1099">这是用户未对 DLP 阻止的邮件执行操作时邮件上的值。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1099">This is the value on a message when the user has not taken an action on the message blocked by DLP.</span></span> |
+| <span data-ttu-id="ae0e4-1100">Override</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1100">Override</span></span> | <span data-ttu-id="ae0e4-1101">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1101">1</span></span> | <span data-ttu-id="ae0e4-1102">发件人已覆盖邮件结论并发送邮件。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1102">Sender has overridden the message verdict and sent the message anyway.</span></span>|
+| <span data-ttu-id="ae0e4-1103">ReportFalsePositive</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1103">ReportFalsePositive</span></span> | <span data-ttu-id="ae0e4-1104">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1104">2</span></span> | <span data-ttu-id="ae0e4-1105">发件人已将邮件 "肯定为" 作为 "误报" 的管理员报告。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1105">Sender has reported the message verdict to the admins as a false positive.</span></span>|
 
-### <a name="chatmessagepolicyviolationverdictdetailstype-values"></a><span data-ttu-id="14006-1097">chatMessagePolicyViolationVerdictDetailsType 值</span><span class="sxs-lookup"><span data-stu-id="14006-1097">chatMessagePolicyViolationVerdictDetailsType values</span></span>
+### <a name="chatmessagepolicyviolationverdictdetailstype-values"></a><span data-ttu-id="ae0e4-1106">chatMessagePolicyViolationVerdictDetailsType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1106">chatMessagePolicyViolationVerdictDetailsType values</span></span>
 
-| <span data-ttu-id="14006-1098">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1098">Member</span></span>   | <span data-ttu-id="14006-1099">Int 值</span><span class="sxs-lookup"><span data-stu-id="14006-1099">Int value</span></span> |  <span data-ttu-id="14006-1100">说明</span><span class="sxs-lookup"><span data-stu-id="14006-1100">Description</span></span> |
+| <span data-ttu-id="ae0e4-1107">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1107">Member</span></span>   | <span data-ttu-id="ae0e4-1108">Int 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1108">Int value</span></span> |  <span data-ttu-id="ae0e4-1109">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1109">Description</span></span> |
 |:---------------|:--------|:----------|
-| <span data-ttu-id="14006-1101">无</span><span class="sxs-lookup"><span data-stu-id="14006-1101">None</span></span> | <span data-ttu-id="14006-1102">0</span><span class="sxs-lookup"><span data-stu-id="14006-1102">0</span></span> |  <span data-ttu-id="14006-1103">不允许用户覆盖邮件。</span><span class="sxs-lookup"><span data-stu-id="14006-1103">User is not allowed to override the message.</span></span> <span data-ttu-id="14006-1104">如果未提供 policyTip，则不允许用户将邮件报告为误报。</span><span class="sxs-lookup"><span data-stu-id="14006-1104">User is not allowed to report a message as false positive if policyTip is not provided.</span></span> <span data-ttu-id="14006-1105">在所有其他情况下，用户可以将邮件报告为误报。</span><span class="sxs-lookup"><span data-stu-id="14006-1105">In all other scenarios, user can report a message as false positive.</span></span>|
-| <span data-ttu-id="14006-1106">AllowFalsePositiveOverride</span><span class="sxs-lookup"><span data-stu-id="14006-1106">AllowFalsePositiveOverride</span></span> | <span data-ttu-id="14006-1107">1 </span><span class="sxs-lookup"><span data-stu-id="14006-1107">1</span></span> |  <span data-ttu-id="14006-1108">不允许用户显式重写 block，除非将其与 `AllowOverrideWithoutJustification` 或标志组合 `AllowOverrideWithJustification` 。</span><span class="sxs-lookup"><span data-stu-id="14006-1108">User is not allowed to explicitly override the block unless this is combined with `AllowOverrideWithoutJustification` or `AllowOverrideWithJustification` flags.</span></span> <span data-ttu-id="14006-1109">对违规报告误报会自动覆盖该阻止并发送邮件。</span><span class="sxs-lookup"><span data-stu-id="14006-1109">Reporting a false positive on the violation automatically overrides the block and sends the message.</span></span> |
-| <span data-ttu-id="14006-1110">AllowOverrideWithoutJustification</span><span class="sxs-lookup"><span data-stu-id="14006-1110">AllowOverrideWithoutJustification</span></span> | <span data-ttu-id="14006-1111">2 </span><span class="sxs-lookup"><span data-stu-id="14006-1111">2</span></span> | <span data-ttu-id="14006-1112">允许用户替代阻止并发送邮件。</span><span class="sxs-lookup"><span data-stu-id="14006-1112">User is allowed to override the block and send the message.</span></span> <span data-ttu-id="14006-1113">不需要对齐文本。</span><span class="sxs-lookup"><span data-stu-id="14006-1113">Justification text is not required.</span></span> <span data-ttu-id="14006-1114">专用于 `AllowOverrideWithJustification` 。</span><span class="sxs-lookup"><span data-stu-id="14006-1114">Exclusive to `AllowOverrideWithJustification`.</span></span> |
-| <span data-ttu-id="14006-1115">AllowOverrideWithJustification</span><span class="sxs-lookup"><span data-stu-id="14006-1115">AllowOverrideWithJustification</span></span> | <span data-ttu-id="14006-1116">4 </span><span class="sxs-lookup"><span data-stu-id="14006-1116">4</span></span> |  <span data-ttu-id="14006-1117">允许用户替代阻止并发送邮件。</span><span class="sxs-lookup"><span data-stu-id="14006-1117">User is allowed to override the block and send the message.</span></span> <span data-ttu-id="14006-1118">需要理由文本。</span><span class="sxs-lookup"><span data-stu-id="14006-1118">Justification text is required.</span></span> <span data-ttu-id="14006-1119">专用于 `AllowOverrideWithoutJustification` 。</span><span class="sxs-lookup"><span data-stu-id="14006-1119">Exclusive to `AllowOverrideWithoutJustification`.</span></span>|
+| <span data-ttu-id="ae0e4-1110">无</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1110">None</span></span> | <span data-ttu-id="ae0e4-1111">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1111">0</span></span> |  <span data-ttu-id="ae0e4-1112">不允许用户覆盖邮件。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1112">User is not allowed to override the message.</span></span> <span data-ttu-id="ae0e4-1113">如果未提供 policyTip，则不允许用户将邮件报告为误报。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1113">User is not allowed to report a message as false positive if policyTip is not provided.</span></span> <span data-ttu-id="ae0e4-1114">在所有其他情况下，用户可以将邮件报告为误报。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1114">In all other scenarios, user can report a message as false positive.</span></span>|
+| <span data-ttu-id="ae0e4-1115">AllowFalsePositiveOverride</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1115">AllowFalsePositiveOverride</span></span> | <span data-ttu-id="ae0e4-1116">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1116">1</span></span> |  <span data-ttu-id="ae0e4-1117">不允许用户显式重写 block，除非将其与 `AllowOverrideWithoutJustification` 或标志组合 `AllowOverrideWithJustification` 。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1117">User is not allowed to explicitly override the block unless this is combined with `AllowOverrideWithoutJustification` or `AllowOverrideWithJustification` flags.</span></span> <span data-ttu-id="ae0e4-1118">对违规报告误报会自动覆盖该阻止并发送邮件。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1118">Reporting a false positive on the violation automatically overrides the block and sends the message.</span></span> |
+| <span data-ttu-id="ae0e4-1119">AllowOverrideWithoutJustification</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1119">AllowOverrideWithoutJustification</span></span> | <span data-ttu-id="ae0e4-1120">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1120">2</span></span> | <span data-ttu-id="ae0e4-1121">允许用户替代阻止并发送邮件。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1121">User is allowed to override the block and send the message.</span></span> <span data-ttu-id="ae0e4-1122">不需要对齐文本。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1122">Justification text is not required.</span></span> <span data-ttu-id="ae0e4-1123">专用于 `AllowOverrideWithJustification` 。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1123">Exclusive to `AllowOverrideWithJustification`.</span></span> |
+| <span data-ttu-id="ae0e4-1124">AllowOverrideWithJustification</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1124">AllowOverrideWithJustification</span></span> | <span data-ttu-id="ae0e4-1125">4 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1125">4</span></span> |  <span data-ttu-id="ae0e4-1126">允许用户替代阻止并发送邮件。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1126">User is allowed to override the block and send the message.</span></span> <span data-ttu-id="ae0e4-1127">需要理由文本。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1127">Justification text is required.</span></span> <span data-ttu-id="ae0e4-1128">专用于 `AllowOverrideWithoutJustification` 。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1128">Exclusive to `AllowOverrideWithoutJustification`.</span></span>|
 
-### <a name="entitytype-values"></a><span data-ttu-id="14006-1120">entityType 值</span><span class="sxs-lookup"><span data-stu-id="14006-1120">entityType values</span></span>
+### <a name="entitytype-values"></a><span data-ttu-id="ae0e4-1129">entityType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1129">entityType values</span></span>
 
-| <span data-ttu-id="14006-1121">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1121">Member</span></span>       |
+| <span data-ttu-id="ae0e4-1130">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1130">Member</span></span>       |
 |:--------------|
-|<span data-ttu-id="14006-1122">event</span><span class="sxs-lookup"><span data-stu-id="14006-1122">event</span></span>|
-|<span data-ttu-id="14006-1123">message</span><span class="sxs-lookup"><span data-stu-id="14006-1123">message</span></span>|
-|<span data-ttu-id="14006-1124">driveItem</span><span class="sxs-lookup"><span data-stu-id="14006-1124">driveItem</span></span>|
-|<span data-ttu-id="14006-1125">externalFile</span><span class="sxs-lookup"><span data-stu-id="14006-1125">externalFile</span></span>|
-|<span data-ttu-id="14006-1126">externalItem</span><span class="sxs-lookup"><span data-stu-id="14006-1126">externalItem</span></span>|
+|<span data-ttu-id="ae0e4-1131">event</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1131">event</span></span>|
+|<span data-ttu-id="ae0e4-1132">message</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1132">message</span></span>|
+|<span data-ttu-id="ae0e4-1133">driveItem</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1133">driveItem</span></span>|
+|<span data-ttu-id="ae0e4-1134">externalFile</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1134">externalFile</span></span>|
+|<span data-ttu-id="ae0e4-1135">externalItem</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1135">externalItem</span></span>|
 
-### <a name="onlinemeetingprovidertype-values"></a><span data-ttu-id="14006-1127">onlineMeetingProviderType 值</span><span class="sxs-lookup"><span data-stu-id="14006-1127">onlineMeetingProviderType values</span></span>
+### <a name="onlinemeetingprovidertype-values"></a><span data-ttu-id="ae0e4-1136">onlineMeetingProviderType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1136">onlineMeetingProviderType values</span></span>
 
-|<span data-ttu-id="14006-1128">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1128">Member</span></span>|
+|<span data-ttu-id="ae0e4-1137">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1137">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-1129">unknown</span><span class="sxs-lookup"><span data-stu-id="14006-1129">unknown</span></span>|
-|<span data-ttu-id="14006-1130">skypeForBusiness</span><span class="sxs-lookup"><span data-stu-id="14006-1130">skypeForBusiness</span></span>|
-|<span data-ttu-id="14006-1131">skypeForConsumer</span><span class="sxs-lookup"><span data-stu-id="14006-1131">skypeForConsumer</span></span>|
-|<span data-ttu-id="14006-1132">teamsForBusiness</span><span class="sxs-lookup"><span data-stu-id="14006-1132">teamsForBusiness</span></span>|
+|<span data-ttu-id="ae0e4-1138">unknown</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1138">unknown</span></span>|
+|<span data-ttu-id="ae0e4-1139">skypeForBusiness</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1139">skypeForBusiness</span></span>|
+|<span data-ttu-id="ae0e4-1140">skypeForConsumer</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1140">skypeForConsumer</span></span>|
+|<span data-ttu-id="ae0e4-1141">teamsForBusiness</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1141">teamsForBusiness</span></span>|
 
-### <a name="delegatemeetingmessagedeliveryoptions-values"></a><span data-ttu-id="14006-1133">delegateMeetingMessageDeliveryOptions 值</span><span class="sxs-lookup"><span data-stu-id="14006-1133">delegateMeetingMessageDeliveryOptions values</span></span>
+### <a name="delegatemeetingmessagedeliveryoptions-values"></a><span data-ttu-id="ae0e4-1142">delegateMeetingMessageDeliveryOptions 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1142">delegateMeetingMessageDeliveryOptions values</span></span>
 
-|<span data-ttu-id="14006-1134">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1134">Member</span></span>|
+|<span data-ttu-id="ae0e4-1143">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1143">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-1135">sendToDelegateAndInformationToPrincipal</span><span class="sxs-lookup"><span data-stu-id="14006-1135">sendToDelegateAndInformationToPrincipal</span></span>|
-|<span data-ttu-id="14006-1136">sendToDelegateAndPrincipal</span><span class="sxs-lookup"><span data-stu-id="14006-1136">sendToDelegateAndPrincipal</span></span>|
-|<span data-ttu-id="14006-1137">sendToDelegateOnly</span><span class="sxs-lookup"><span data-stu-id="14006-1137">sendToDelegateOnly</span></span>|
+|<span data-ttu-id="ae0e4-1144">sendToDelegateAndInformationToPrincipal</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1144">sendToDelegateAndInformationToPrincipal</span></span>|
+|<span data-ttu-id="ae0e4-1145">sendToDelegateAndPrincipal</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1145">sendToDelegateAndPrincipal</span></span>|
+|<span data-ttu-id="ae0e4-1146">sendToDelegateOnly</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1146">sendToDelegateOnly</span></span>|
 
-### <a name="calendarroletype-values"></a><span data-ttu-id="14006-1138">calendarRoleType 值</span><span class="sxs-lookup"><span data-stu-id="14006-1138">calendarRoleType values</span></span>
+### <a name="calendarroletype-values"></a><span data-ttu-id="ae0e4-1147">calendarRoleType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1147">calendarRoleType values</span></span>
 
-|<span data-ttu-id="14006-1139">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1139">Member</span></span>|
+|<span data-ttu-id="ae0e4-1148">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1148">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-1140">无</span><span class="sxs-lookup"><span data-stu-id="14006-1140">none</span></span>|
-|<span data-ttu-id="14006-1141">freeBusyRead</span><span class="sxs-lookup"><span data-stu-id="14006-1141">freeBusyRead</span></span>|
-|<span data-ttu-id="14006-1142">limitedRead</span><span class="sxs-lookup"><span data-stu-id="14006-1142">limitedRead</span></span>|
-|<span data-ttu-id="14006-1143">阅读</span><span class="sxs-lookup"><span data-stu-id="14006-1143">read</span></span>|
-|<span data-ttu-id="14006-1144">写入</span><span class="sxs-lookup"><span data-stu-id="14006-1144">write</span></span>|
-|<span data-ttu-id="14006-1145">delegateWithoutPrivateEventAccess</span><span class="sxs-lookup"><span data-stu-id="14006-1145">delegateWithoutPrivateEventAccess</span></span>|
-|<span data-ttu-id="14006-1146">delegateWithPrivateEventAccess</span><span class="sxs-lookup"><span data-stu-id="14006-1146">delegateWithPrivateEventAccess</span></span>|
-|<span data-ttu-id="14006-1147">自</span><span class="sxs-lookup"><span data-stu-id="14006-1147">custom</span></span>|
+|<span data-ttu-id="ae0e4-1149">无</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1149">none</span></span>|
+|<span data-ttu-id="ae0e4-1150">freeBusyRead</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1150">freeBusyRead</span></span>|
+|<span data-ttu-id="ae0e4-1151">limitedRead</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1151">limitedRead</span></span>|
+|<span data-ttu-id="ae0e4-1152">阅读</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1152">read</span></span>|
+|<span data-ttu-id="ae0e4-1153">写入</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1153">write</span></span>|
+|<span data-ttu-id="ae0e4-1154">delegateWithoutPrivateEventAccess</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1154">delegateWithoutPrivateEventAccess</span></span>|
+|<span data-ttu-id="ae0e4-1155">delegateWithPrivateEventAccess</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1155">delegateWithPrivateEventAccess</span></span>|
+|<span data-ttu-id="ae0e4-1156">自</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1156">custom</span></span>|
 
-### <a name="contentformat-values"></a><span data-ttu-id="14006-1148">contentFormat 值</span><span class="sxs-lookup"><span data-stu-id="14006-1148">contentFormat values</span></span>
+### <a name="contentformat-values"></a><span data-ttu-id="ae0e4-1157">contentFormat 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1157">contentFormat values</span></span>
 
-| <span data-ttu-id="14006-1149">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1149">Member</span></span>  | <span data-ttu-id="14006-1150">值</span><span class="sxs-lookup"><span data-stu-id="14006-1150">Value</span></span> | <span data-ttu-id="14006-1151">说明</span><span class="sxs-lookup"><span data-stu-id="14006-1151">Description</span></span>                          |
+| <span data-ttu-id="ae0e4-1158">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1158">Member</span></span>  | <span data-ttu-id="ae0e4-1159">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1159">Value</span></span> | <span data-ttu-id="ae0e4-1160">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1160">Description</span></span>                          |
 | :------ | :---- | :----------------------------------- |
-| <span data-ttu-id="14006-1152">设置</span><span class="sxs-lookup"><span data-stu-id="14006-1152">default</span></span> | <span data-ttu-id="14006-1153">0</span><span class="sxs-lookup"><span data-stu-id="14006-1153">0</span></span>     | <span data-ttu-id="14006-1154">内容是文件或非电子邮件类型。</span><span class="sxs-lookup"><span data-stu-id="14006-1154">Content is a file or non-email type.</span></span> |
-| <span data-ttu-id="14006-1155">email</span><span class="sxs-lookup"><span data-stu-id="14006-1155">email</span></span>   | <span data-ttu-id="14006-1156">1 </span><span class="sxs-lookup"><span data-stu-id="14006-1156">1</span></span>     | <span data-ttu-id="14006-1157">内容是一封电子邮件。</span><span class="sxs-lookup"><span data-stu-id="14006-1157">Content is an email.</span></span>                 |
+| <span data-ttu-id="ae0e4-1161">设置</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1161">default</span></span> | <span data-ttu-id="ae0e4-1162">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1162">0</span></span>     | <span data-ttu-id="ae0e4-1163">内容是文件或非电子邮件类型。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1163">Content is a file or non-email type.</span></span> |
+| <span data-ttu-id="ae0e4-1164">email</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1164">email</span></span>   | <span data-ttu-id="ae0e4-1165">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1165">1</span></span>     | <span data-ttu-id="ae0e4-1166">内容是一封电子邮件。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1166">Content is an email.</span></span>                 |
 
-### <a name="contentstate-values"></a><span data-ttu-id="14006-1158">contentState 值</span><span class="sxs-lookup"><span data-stu-id="14006-1158">contentState values</span></span>
+### <a name="contentstate-values"></a><span data-ttu-id="ae0e4-1167">contentState 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1167">contentState values</span></span>
 
-| <span data-ttu-id="14006-1159">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1159">Member</span></span> | <span data-ttu-id="14006-1160">值</span><span class="sxs-lookup"><span data-stu-id="14006-1160">Value</span></span> | <span data-ttu-id="14006-1161">说明</span><span class="sxs-lookup"><span data-stu-id="14006-1161">Description</span></span>                                                                      |
+| <span data-ttu-id="ae0e4-1168">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1168">Member</span></span> | <span data-ttu-id="ae0e4-1169">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1169">Value</span></span> | <span data-ttu-id="ae0e4-1170">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1170">Description</span></span>                                                                      |
 | :----- | :---- | :------------------------------------------------------------------------------- |
-| <span data-ttu-id="14006-1162">完成</span><span class="sxs-lookup"><span data-stu-id="14006-1162">rest</span></span>   | <span data-ttu-id="14006-1163">0</span><span class="sxs-lookup"><span data-stu-id="14006-1163">0</span></span>     | <span data-ttu-id="14006-1164">数据是静止的;共享中的文件，例如。</span><span class="sxs-lookup"><span data-stu-id="14006-1164">Data is at rest; A file in a share, for example.</span></span>                                 |
-| <span data-ttu-id="14006-1165">动作</span><span class="sxs-lookup"><span data-stu-id="14006-1165">motion</span></span> | <span data-ttu-id="14006-1166">1 </span><span class="sxs-lookup"><span data-stu-id="14006-1166">1</span></span>     | <span data-ttu-id="14006-1167">数据是活动的。</span><span class="sxs-lookup"><span data-stu-id="14006-1167">Data is in motion.</span></span> <span data-ttu-id="14006-1168">由传输中的网络设备截获的文件。</span><span class="sxs-lookup"><span data-stu-id="14006-1168">A file intercepted by a network appliance in transit.</span></span>         |
-| <span data-ttu-id="14006-1169">改用</span><span class="sxs-lookup"><span data-stu-id="14006-1169">use</span></span>    | <span data-ttu-id="14006-1170">2 </span><span class="sxs-lookup"><span data-stu-id="14006-1170">2</span></span>     | <span data-ttu-id="14006-1171">数据正在使用中。</span><span class="sxs-lookup"><span data-stu-id="14006-1171">Data is in use.</span></span> <span data-ttu-id="14006-1172">在客户端应用程序（如 Microsoft Office）中打开一个文件。</span><span class="sxs-lookup"><span data-stu-id="14006-1172">A file is open in a client application such as Microsoft Office.</span></span> |
+| <span data-ttu-id="ae0e4-1171">完成</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1171">rest</span></span>   | <span data-ttu-id="ae0e4-1172">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1172">0</span></span>     | <span data-ttu-id="ae0e4-1173">数据是静止的;共享中的文件，例如。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1173">Data is at rest; A file in a share, for example.</span></span>                                 |
+| <span data-ttu-id="ae0e4-1174">动作</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1174">motion</span></span> | <span data-ttu-id="ae0e4-1175">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1175">1</span></span>     | <span data-ttu-id="ae0e4-1176">数据是活动的。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1176">Data is in motion.</span></span> <span data-ttu-id="ae0e4-1177">由传输中的网络设备截获的文件。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1177">A file intercepted by a network appliance in transit.</span></span>         |
+| <span data-ttu-id="ae0e4-1178">改用</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1178">use</span></span>    | <span data-ttu-id="ae0e4-1179">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1179">2</span></span>     | <span data-ttu-id="ae0e4-1180">数据正在使用中。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1180">Data is in use.</span></span> <span data-ttu-id="ae0e4-1181">在客户端应用程序（如 Microsoft Office）中打开一个文件。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1181">A file is open in a client application such as Microsoft Office.</span></span> |
 
-### <a name="assignmentmethod-values"></a><span data-ttu-id="14006-1173">assignmentMethod 值</span><span class="sxs-lookup"><span data-stu-id="14006-1173">assignmentMethod values</span></span>
+### <a name="assignmentmethod-values"></a><span data-ttu-id="ae0e4-1182">assignmentMethod 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1182">assignmentMethod values</span></span>
 
-| <span data-ttu-id="14006-1174">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1174">Member</span></span>     | <span data-ttu-id="14006-1175">值</span><span class="sxs-lookup"><span data-stu-id="14006-1175">Value</span></span> | <span data-ttu-id="14006-1176">说明</span><span class="sxs-lookup"><span data-stu-id="14006-1176">Description</span></span>                                                                                                                      |
+| <span data-ttu-id="ae0e4-1183">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1183">Member</span></span>     | <span data-ttu-id="ae0e4-1184">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1184">Value</span></span> | <span data-ttu-id="ae0e4-1185">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1185">Description</span></span>                                                                                                                      |
 | :--------- | :---- | :------------------------------------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="14006-1177">普通</span><span class="sxs-lookup"><span data-stu-id="14006-1177">standard</span></span>   | <span data-ttu-id="14006-1178">0</span><span class="sxs-lookup"><span data-stu-id="14006-1178">0</span></span>     | <span data-ttu-id="14006-1179">标签是由服务或策略条件设置的。</span><span class="sxs-lookup"><span data-stu-id="14006-1179">The label was set by a service or policy condition.</span></span>                                                                              |
-| <span data-ttu-id="14006-1180">严格</span><span class="sxs-lookup"><span data-stu-id="14006-1180">privileged</span></span> | <span data-ttu-id="14006-1181">1 </span><span class="sxs-lookup"><span data-stu-id="14006-1181">1</span></span>     | <span data-ttu-id="14006-1182">标签由用户显式设置。</span><span class="sxs-lookup"><span data-stu-id="14006-1182">The label was set explicitly by a user.</span></span>                                                                                          |
-| <span data-ttu-id="14006-1183">自动</span><span class="sxs-lookup"><span data-stu-id="14006-1183">auto</span></span>       | <span data-ttu-id="14006-1184">2 </span><span class="sxs-lookup"><span data-stu-id="14006-1184">2</span></span>     | <span data-ttu-id="14006-1185">允许覆盖任何现有标签。</span><span class="sxs-lookup"><span data-stu-id="14006-1185">Allows override of any existing label.</span></span> <span data-ttu-id="14006-1186">降级时所需的理由。</span><span class="sxs-lookup"><span data-stu-id="14006-1186">Justification required on downgrade.</span></span> <span data-ttu-id="14006-1187">`standard`元数据中的赋值方法的结果。</span><span class="sxs-lookup"><span data-stu-id="14006-1187">Results in `standard` assignment method in metadata.</span></span> |
+| <span data-ttu-id="ae0e4-1186">普通</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1186">standard</span></span>   | <span data-ttu-id="ae0e4-1187">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1187">0</span></span>     | <span data-ttu-id="ae0e4-1188">标签是由服务或策略条件设置的。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1188">The label was set by a service or policy condition.</span></span>                                                                              |
+| <span data-ttu-id="ae0e4-1189">严格</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1189">privileged</span></span> | <span data-ttu-id="ae0e4-1190">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1190">1</span></span>     | <span data-ttu-id="ae0e4-1191">标签由用户显式设置。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1191">The label was set explicitly by a user.</span></span>                                                                                          |
+| <span data-ttu-id="ae0e4-1192">自动</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1192">auto</span></span>       | <span data-ttu-id="ae0e4-1193">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1193">2</span></span>     | <span data-ttu-id="ae0e4-1194">允许覆盖任何现有标签。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1194">Allows override of any existing label.</span></span> <span data-ttu-id="ae0e4-1195">降级时所需的理由。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1195">Justification required on downgrade.</span></span> <span data-ttu-id="ae0e4-1196">`standard`元数据中的赋值方法的结果。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1196">Results in `standard` assignment method in metadata.</span></span> |
 
-### <a name="actionsource-values"></a><span data-ttu-id="14006-1188">actionSource 值</span><span class="sxs-lookup"><span data-stu-id="14006-1188">actionSource values</span></span>
+### <a name="actionsource-values"></a><span data-ttu-id="ae0e4-1197">actionSource 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1197">actionSource values</span></span>
 
-| <span data-ttu-id="14006-1189">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1189">Member</span></span>        | <span data-ttu-id="14006-1190">值</span><span class="sxs-lookup"><span data-stu-id="14006-1190">Value</span></span> | <span data-ttu-id="14006-1191">说明</span><span class="sxs-lookup"><span data-stu-id="14006-1191">Description</span></span>                                                  |
+| <span data-ttu-id="ae0e4-1198">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1198">Member</span></span>        | <span data-ttu-id="ae0e4-1199">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1199">Value</span></span> | <span data-ttu-id="ae0e4-1200">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1200">Description</span></span>                                                  |
 | :------------ | :---- | :----------------------------------------------------------- |
-| <span data-ttu-id="14006-1192">手动</span><span class="sxs-lookup"><span data-stu-id="14006-1192">manual</span></span>        | <span data-ttu-id="14006-1193">0</span><span class="sxs-lookup"><span data-stu-id="14006-1193">0</span></span>     | <span data-ttu-id="14006-1194">用户手动选择标签。</span><span class="sxs-lookup"><span data-stu-id="14006-1194">A user manually selected the label.</span></span>                          |
-| <span data-ttu-id="14006-1195">自动</span><span class="sxs-lookup"><span data-stu-id="14006-1195">automatic</span></span>     | <span data-ttu-id="14006-1196">1 </span><span class="sxs-lookup"><span data-stu-id="14006-1196">1</span></span>     | <span data-ttu-id="14006-1197">策略条件的结果是选择了标签。</span><span class="sxs-lookup"><span data-stu-id="14006-1197">The label was chosen as a result of policy conditions.</span></span>       |
-| <span data-ttu-id="14006-1198">建议</span><span class="sxs-lookup"><span data-stu-id="14006-1198">recommended</span></span>   | <span data-ttu-id="14006-1199">2 </span><span class="sxs-lookup"><span data-stu-id="14006-1199">2</span></span>     | <span data-ttu-id="14006-1200">要应用推荐的标签的选择。</span><span class="sxs-lookup"><span data-stu-id="14006-1200">The elected to apply a recommended label.</span></span>                    |
-| <span data-ttu-id="14006-1201">policyDefault</span><span class="sxs-lookup"><span data-stu-id="14006-1201">policyDefault</span></span> | <span data-ttu-id="14006-1202">第三章</span><span class="sxs-lookup"><span data-stu-id="14006-1202">3</span></span>     | <span data-ttu-id="14006-1203">用户不执行任何操作且策略-默认标签已应用。</span><span class="sxs-lookup"><span data-stu-id="14006-1203">The user no action and the policy-default label was applied.</span></span> |
-| <span data-ttu-id="14006-1204">强制</span><span class="sxs-lookup"><span data-stu-id="14006-1204">mandatory</span></span>     | <span data-ttu-id="14006-1205">4 </span><span class="sxs-lookup"><span data-stu-id="14006-1205">4</span></span>     | <span data-ttu-id="14006-1206">用户在强制选择标签后选择了一个标签。</span><span class="sxs-lookup"><span data-stu-id="14006-1206">The user chose a label after being forced to choose.</span></span>         |
+| <span data-ttu-id="ae0e4-1201">手动</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1201">manual</span></span>        | <span data-ttu-id="ae0e4-1202">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1202">0</span></span>     | <span data-ttu-id="ae0e4-1203">用户手动选择标签。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1203">A user manually selected the label.</span></span>                          |
+| <span data-ttu-id="ae0e4-1204">自动</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1204">automatic</span></span>     | <span data-ttu-id="ae0e4-1205">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1205">1</span></span>     | <span data-ttu-id="ae0e4-1206">策略条件的结果是选择了标签。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1206">The label was chosen as a result of policy conditions.</span></span>       |
+| <span data-ttu-id="ae0e4-1207">建议</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1207">recommended</span></span>   | <span data-ttu-id="ae0e4-1208">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1208">2</span></span>     | <span data-ttu-id="ae0e4-1209">要应用推荐的标签的选择。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1209">The elected to apply a recommended label.</span></span>                    |
+| <span data-ttu-id="ae0e4-1210">policyDefault</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1210">policyDefault</span></span> | <span data-ttu-id="ae0e4-1211">第三章</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1211">3</span></span>     | <span data-ttu-id="ae0e4-1212">用户不执行任何操作且策略-默认标签已应用。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1212">The user no action and the policy-default label was applied.</span></span> |
+| <span data-ttu-id="ae0e4-1213">强制</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1213">mandatory</span></span>     | <span data-ttu-id="ae0e4-1214">4 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1214">4</span></span>     | <span data-ttu-id="ae0e4-1215">用户在强制选择标签后选择了一个标签。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1215">The user chose a label after being forced to choose.</span></span>         |
 
-### <a name="contentalignment-values"></a><span data-ttu-id="14006-1207">contentAlignment 值</span><span class="sxs-lookup"><span data-stu-id="14006-1207">contentAlignment values</span></span>
+### <a name="contentalignment-values"></a><span data-ttu-id="ae0e4-1216">contentAlignment 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1216">contentAlignment values</span></span>
 
-| <span data-ttu-id="14006-1208">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1208">Member</span></span> | <span data-ttu-id="14006-1209">值</span><span class="sxs-lookup"><span data-stu-id="14006-1209">Value</span></span> | <span data-ttu-id="14006-1210">说明</span><span class="sxs-lookup"><span data-stu-id="14006-1210">Description</span></span>                         |
+| <span data-ttu-id="ae0e4-1217">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1217">Member</span></span> | <span data-ttu-id="ae0e4-1218">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1218">Value</span></span> | <span data-ttu-id="ae0e4-1219">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1219">Description</span></span>                         |
 | :----- | :---- | :---------------------------------- |
-| <span data-ttu-id="14006-1211">left</span><span class="sxs-lookup"><span data-stu-id="14006-1211">left</span></span>   | <span data-ttu-id="14006-1212">0</span><span class="sxs-lookup"><span data-stu-id="14006-1212">0</span></span>     | <span data-ttu-id="14006-1213">将内容标记向左对齐。</span><span class="sxs-lookup"><span data-stu-id="14006-1213">Align content marking to the left.</span></span>  |
-| <span data-ttu-id="14006-1214">左向右</span><span class="sxs-lookup"><span data-stu-id="14006-1214">right</span></span>  | <span data-ttu-id="14006-1215">1 </span><span class="sxs-lookup"><span data-stu-id="14006-1215">1</span></span>     | <span data-ttu-id="14006-1216">将内容标记向右对齐。</span><span class="sxs-lookup"><span data-stu-id="14006-1216">Align content marking to the right.</span></span> |
-| <span data-ttu-id="14006-1217">置</span><span class="sxs-lookup"><span data-stu-id="14006-1217">center</span></span> | <span data-ttu-id="14006-1218">2 </span><span class="sxs-lookup"><span data-stu-id="14006-1218">2</span></span>     | <span data-ttu-id="14006-1219">居中内容标记。</span><span class="sxs-lookup"><span data-stu-id="14006-1219">Center content marking.</span></span>             |
+| <span data-ttu-id="ae0e4-1220">left</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1220">left</span></span>   | <span data-ttu-id="ae0e4-1221">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1221">0</span></span>     | <span data-ttu-id="ae0e4-1222">将内容标记向左对齐。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1222">Align content marking to the left.</span></span>  |
+| <span data-ttu-id="ae0e4-1223">左向右</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1223">right</span></span>  | <span data-ttu-id="ae0e4-1224">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1224">1</span></span>     | <span data-ttu-id="ae0e4-1225">将内容标记向右对齐。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1225">Align content marking to the right.</span></span> |
+| <span data-ttu-id="ae0e4-1226">置</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1226">center</span></span> | <span data-ttu-id="ae0e4-1227">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1227">2</span></span>     | <span data-ttu-id="ae0e4-1228">居中内容标记。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1228">Center content marking.</span></span>             |
 
-### <a name="watermarklayout-values"></a><span data-ttu-id="14006-1220">watermarkLayout 值</span><span class="sxs-lookup"><span data-stu-id="14006-1220">watermarkLayout values</span></span>
+### <a name="watermarklayout-values"></a><span data-ttu-id="ae0e4-1229">watermarkLayout 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1229">watermarkLayout values</span></span>
 
-| <span data-ttu-id="14006-1221">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1221">Member</span></span>     | <span data-ttu-id="14006-1222">值</span><span class="sxs-lookup"><span data-stu-id="14006-1222">Value</span></span> | <span data-ttu-id="14006-1223">说明</span><span class="sxs-lookup"><span data-stu-id="14006-1223">Description</span></span>                 |
+| <span data-ttu-id="ae0e4-1230">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1230">Member</span></span>     | <span data-ttu-id="ae0e4-1231">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1231">Value</span></span> | <span data-ttu-id="ae0e4-1232">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1232">Description</span></span>                 |
 | :--------- | :---- | :-------------------------- |
-| <span data-ttu-id="14006-1224">横向</span><span class="sxs-lookup"><span data-stu-id="14006-1224">horizontal</span></span> | <span data-ttu-id="14006-1225">0</span><span class="sxs-lookup"><span data-stu-id="14006-1225">0</span></span>     | <span data-ttu-id="14006-1226">使用水平水印。</span><span class="sxs-lookup"><span data-stu-id="14006-1226">Use a horizontal watermark.</span></span> |
-| <span data-ttu-id="14006-1227">用作</span><span class="sxs-lookup"><span data-stu-id="14006-1227">diagonal</span></span>   | <span data-ttu-id="14006-1228">1 </span><span class="sxs-lookup"><span data-stu-id="14006-1228">1</span></span>     | <span data-ttu-id="14006-1229">使用斜向水印。</span><span class="sxs-lookup"><span data-stu-id="14006-1229">Use a diagonal watermark.</span></span>   |
+| <span data-ttu-id="ae0e4-1233">横向</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1233">horizontal</span></span> | <span data-ttu-id="ae0e4-1234">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1234">0</span></span>     | <span data-ttu-id="ae0e4-1235">使用水平水印。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1235">Use a horizontal watermark.</span></span> |
+| <span data-ttu-id="ae0e4-1236">用作</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1236">diagonal</span></span>   | <span data-ttu-id="ae0e4-1237">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1237">1</span></span>     | <span data-ttu-id="ae0e4-1238">使用斜向水印。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1238">Use a diagonal watermark.</span></span>   |
 
-### <a name="conditionalaccesspolicystate"></a><span data-ttu-id="14006-1230">conditionalAccessPolicyState</span><span class="sxs-lookup"><span data-stu-id="14006-1230">conditionalAccessPolicyState</span></span>
+### <a name="conditionalaccesspolicystate"></a><span data-ttu-id="ae0e4-1239">conditionalAccessPolicyState</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1239">conditionalAccessPolicyState</span></span>
 
-|<span data-ttu-id="14006-1231">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1231">Member</span></span>|
+|<span data-ttu-id="ae0e4-1240">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1240">Member</span></span>|
 |:---|
-|<span data-ttu-id="14006-1232">enabled</span><span class="sxs-lookup"><span data-stu-id="14006-1232">enabled</span></span>|
-|<span data-ttu-id="14006-1233">禁用</span><span class="sxs-lookup"><span data-stu-id="14006-1233">disabled</span></span>|
+|<span data-ttu-id="ae0e4-1241">enabled</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1241">enabled</span></span>|
+|<span data-ttu-id="ae0e4-1242">禁用</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1242">disabled</span></span>|
 
-### <a name="conditionalaccessclientapp"></a><span data-ttu-id="14006-1234">conditionalAccessClientApp</span><span class="sxs-lookup"><span data-stu-id="14006-1234">conditionalAccessClientApp</span></span>
+### <a name="conditionalaccessclientapp"></a><span data-ttu-id="ae0e4-1243">conditionalAccessClientApp</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1243">conditionalAccessClientApp</span></span>
 
-| <span data-ttu-id="14006-1235">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1235">Member</span></span>       |
+| <span data-ttu-id="ae0e4-1244">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1244">Member</span></span>       |
 |:--------------|
-|<span data-ttu-id="14006-1236">浏览器</span><span class="sxs-lookup"><span data-stu-id="14006-1236">browser</span></span>|
-|<span data-ttu-id="14006-1237">新式</span><span class="sxs-lookup"><span data-stu-id="14006-1237">modern</span></span>|
-|<span data-ttu-id="14006-1238">easSupported</span><span class="sxs-lookup"><span data-stu-id="14006-1238">easSupported</span></span>|
-|<span data-ttu-id="14006-1239">easUnsupported</span><span class="sxs-lookup"><span data-stu-id="14006-1239">easUnsupported</span></span>|
-|<span data-ttu-id="14006-1240">相互</span><span class="sxs-lookup"><span data-stu-id="14006-1240">other</span></span>|
+|<span data-ttu-id="ae0e4-1245">浏览器</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1245">browser</span></span>|
+|<span data-ttu-id="ae0e4-1246">新式</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1246">modern</span></span>|
+|<span data-ttu-id="ae0e4-1247">easSupported</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1247">easSupported</span></span>|
+|<span data-ttu-id="ae0e4-1248">easUnsupported</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1248">easUnsupported</span></span>|
+|<span data-ttu-id="ae0e4-1249">相互</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1249">other</span></span>|
 
-### <a name="conditionalaccessgrantcontrol"></a><span data-ttu-id="14006-1241">conditionalAccessGrantControl</span><span class="sxs-lookup"><span data-stu-id="14006-1241">conditionalAccessGrantControl</span></span>
+### <a name="conditionalaccessgrantcontrol"></a><span data-ttu-id="ae0e4-1250">conditionalAccessGrantControl</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1250">conditionalAccessGrantControl</span></span>
 
-| <span data-ttu-id="14006-1242">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1242">Member</span></span>       |
+| <span data-ttu-id="ae0e4-1251">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1251">Member</span></span>       |
 |:--------------|
-|<span data-ttu-id="14006-1243">数据</span><span class="sxs-lookup"><span data-stu-id="14006-1243">block</span></span>|
-|<span data-ttu-id="14006-1244">mfa</span><span class="sxs-lookup"><span data-stu-id="14006-1244">mfa</span></span>|
-|<span data-ttu-id="14006-1245">compliantDevice</span><span class="sxs-lookup"><span data-stu-id="14006-1245">compliantDevice</span></span>|
-|<span data-ttu-id="14006-1246">domainJoinedDevice</span><span class="sxs-lookup"><span data-stu-id="14006-1246">domainJoinedDevice</span></span>|
-|<span data-ttu-id="14006-1247">approvedApplication</span><span class="sxs-lookup"><span data-stu-id="14006-1247">approvedApplication</span></span>|
-|<span data-ttu-id="14006-1248">compliantApplication</span><span class="sxs-lookup"><span data-stu-id="14006-1248">compliantApplication</span></span>|
+|<span data-ttu-id="ae0e4-1252">数据</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1252">block</span></span>|
+|<span data-ttu-id="ae0e4-1253">mfa</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1253">mfa</span></span>|
+|<span data-ttu-id="ae0e4-1254">compliantDevice</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1254">compliantDevice</span></span>|
+|<span data-ttu-id="ae0e4-1255">domainJoinedDevice</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1255">domainJoinedDevice</span></span>|
+|<span data-ttu-id="ae0e4-1256">approvedApplication</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1256">approvedApplication</span></span>|
+|<span data-ttu-id="ae0e4-1257">compliantApplication</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1257">compliantApplication</span></span>|
 
-### <a name="cloudappsecuritysessioncontroltype"></a><span data-ttu-id="14006-1249">cloudAppSecuritySessionControlType</span><span class="sxs-lookup"><span data-stu-id="14006-1249">cloudAppSecuritySessionControlType</span></span>
+### <a name="cloudappsecuritysessioncontroltype"></a><span data-ttu-id="ae0e4-1258">cloudAppSecuritySessionControlType</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1258">cloudAppSecuritySessionControlType</span></span>
 
-| <span data-ttu-id="14006-1250">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1250">Member</span></span>       |
+| <span data-ttu-id="ae0e4-1259">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1259">Member</span></span>       |
 |:--------------|
-|<span data-ttu-id="14006-1251">mcasConfigured</span><span class="sxs-lookup"><span data-stu-id="14006-1251">mcasConfigured</span></span>|
-|<span data-ttu-id="14006-1252">monitorOnly</span><span class="sxs-lookup"><span data-stu-id="14006-1252">monitorOnly</span></span>|
-|<span data-ttu-id="14006-1253">blockDownloads</span><span class="sxs-lookup"><span data-stu-id="14006-1253">blockDownloads</span></span>|
+|<span data-ttu-id="ae0e4-1260">mcasConfigured</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1260">mcasConfigured</span></span>|
+|<span data-ttu-id="ae0e4-1261">monitorOnly</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1261">monitorOnly</span></span>|
+|<span data-ttu-id="ae0e4-1262">blockDownloads</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1262">blockDownloads</span></span>|
 
-### <a name="signinfrequencytype"></a><span data-ttu-id="14006-1254">signinFrequencyType</span><span class="sxs-lookup"><span data-stu-id="14006-1254">signinFrequencyType</span></span>
+### <a name="signinfrequencytype"></a><span data-ttu-id="ae0e4-1263">signinFrequencyType</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1263">signinFrequencyType</span></span>
 
-| <span data-ttu-id="14006-1255">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1255">Member</span></span>       |
+| <span data-ttu-id="ae0e4-1264">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1264">Member</span></span>       |
 |:--------------|
-|<span data-ttu-id="14006-1256">之前</span><span class="sxs-lookup"><span data-stu-id="14006-1256">days</span></span>|
-|<span data-ttu-id="14006-1257">花费</span><span class="sxs-lookup"><span data-stu-id="14006-1257">hours</span></span>|
+|<span data-ttu-id="ae0e4-1265">之前</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1265">days</span></span>|
+|<span data-ttu-id="ae0e4-1266">花费</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1266">hours</span></span>|
 
-### <a name="persistentbrowsersessionmode"></a><span data-ttu-id="14006-1258">persistentBrowserSessionMode</span><span class="sxs-lookup"><span data-stu-id="14006-1258">persistentBrowserSessionMode</span></span>
+### <a name="persistentbrowsersessionmode"></a><span data-ttu-id="ae0e4-1267">persistentBrowserSessionMode</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1267">persistentBrowserSessionMode</span></span>
 
-| <span data-ttu-id="14006-1259">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1259">Member</span></span>       |
+| <span data-ttu-id="ae0e4-1268">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1268">Member</span></span>       |
 |:--------------|
-|<span data-ttu-id="14006-1260">都</span><span class="sxs-lookup"><span data-stu-id="14006-1260">always</span></span>|
-|<span data-ttu-id="14006-1261">永不</span><span class="sxs-lookup"><span data-stu-id="14006-1261">never</span></span>|
+|<span data-ttu-id="ae0e4-1269">都</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1269">always</span></span>|
+|<span data-ttu-id="ae0e4-1270">永不</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1270">never</span></span>|
 
-### <a name="conditionalaccessdeviceplatform"></a><span data-ttu-id="14006-1262">conditionalAccessDevicePlatform</span><span class="sxs-lookup"><span data-stu-id="14006-1262">conditionalAccessDevicePlatform</span></span>
+### <a name="conditionalaccessdeviceplatform"></a><span data-ttu-id="ae0e4-1271">conditionalAccessDevicePlatform</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1271">conditionalAccessDevicePlatform</span></span>
 
-| <span data-ttu-id="14006-1263">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1263">Member</span></span>       |
+| <span data-ttu-id="ae0e4-1272">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1272">Member</span></span>       |
 |:--------------|
-|<span data-ttu-id="14006-1264">android</span><span class="sxs-lookup"><span data-stu-id="14006-1264">android</span></span>|
-|<span data-ttu-id="14006-1265">iOS</span><span class="sxs-lookup"><span data-stu-id="14006-1265">iOS</span></span>|
-|<span data-ttu-id="14006-1266">时间</span><span class="sxs-lookup"><span data-stu-id="14006-1266">windows</span></span>|
-|<span data-ttu-id="14006-1267">windowsPhone</span><span class="sxs-lookup"><span data-stu-id="14006-1267">windowsPhone</span></span>|
-|<span data-ttu-id="14006-1268">macOS</span><span class="sxs-lookup"><span data-stu-id="14006-1268">macOS</span></span>|
-|<span data-ttu-id="14006-1269">各种</span><span class="sxs-lookup"><span data-stu-id="14006-1269">all</span></span>|
+|<span data-ttu-id="ae0e4-1273">android</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1273">android</span></span>|
+|<span data-ttu-id="ae0e4-1274">iOS</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1274">iOS</span></span>|
+|<span data-ttu-id="ae0e4-1275">时间</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1275">windows</span></span>|
+|<span data-ttu-id="ae0e4-1276">windowsPhone</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1276">windowsPhone</span></span>|
+|<span data-ttu-id="ae0e4-1277">macOS</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1277">macOS</span></span>|
+|<span data-ttu-id="ae0e4-1278">各种</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1278">all</span></span>|
 
-### <a name="priority-values"></a><span data-ttu-id="14006-1270">优先级值</span><span class="sxs-lookup"><span data-stu-id="14006-1270">priority values</span></span>
+### <a name="priority-values"></a><span data-ttu-id="ae0e4-1279">优先级值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1279">priority values</span></span>
 
-|<span data-ttu-id="14006-1271">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1271">Member</span></span>|<span data-ttu-id="14006-1272">值</span><span class="sxs-lookup"><span data-stu-id="14006-1272">Value</span></span>|
+|<span data-ttu-id="ae0e4-1280">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1280">Member</span></span>|<span data-ttu-id="ae0e4-1281">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1281">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="14006-1273">无</span><span class="sxs-lookup"><span data-stu-id="14006-1273">None</span></span>|<span data-ttu-id="14006-1274">0</span><span class="sxs-lookup"><span data-stu-id="14006-1274">0</span></span>|
-|<span data-ttu-id="14006-1275">高</span><span class="sxs-lookup"><span data-stu-id="14006-1275">High</span></span>|<span data-ttu-id="14006-1276">1 </span><span class="sxs-lookup"><span data-stu-id="14006-1276">1</span></span>|
-|<span data-ttu-id="14006-1277">低</span><span class="sxs-lookup"><span data-stu-id="14006-1277">Low</span></span>|<span data-ttu-id="14006-1278">2 </span><span class="sxs-lookup"><span data-stu-id="14006-1278">2</span></span>|
+|<span data-ttu-id="ae0e4-1282">无</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1282">None</span></span>|<span data-ttu-id="ae0e4-1283">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1283">0</span></span>|
+|<span data-ttu-id="ae0e4-1284">高</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1284">High</span></span>|<span data-ttu-id="ae0e4-1285">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1285">1</span></span>|
+|<span data-ttu-id="ae0e4-1286">低</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1286">Low</span></span>|<span data-ttu-id="ae0e4-1287">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1287">2</span></span>|
 
-### <a name="threatassessmentcontenttype-values"></a><span data-ttu-id="14006-1279">threatAssessmentContentType 值</span><span class="sxs-lookup"><span data-stu-id="14006-1279">threatAssessmentContentType values</span></span>
+### <a name="threatassessmentcontenttype-values"></a><span data-ttu-id="ae0e4-1288">threatAssessmentContentType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1288">threatAssessmentContentType values</span></span>
 
-| <span data-ttu-id="14006-1280">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1280">Member</span></span> | <span data-ttu-id="14006-1281">值</span><span class="sxs-lookup"><span data-stu-id="14006-1281">Value</span></span> | <span data-ttu-id="14006-1282">说明</span><span class="sxs-lookup"><span data-stu-id="14006-1282">Description</span></span>             |
+| <span data-ttu-id="ae0e4-1289">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1289">Member</span></span> | <span data-ttu-id="ae0e4-1290">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1290">Value</span></span> | <span data-ttu-id="ae0e4-1291">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1291">Description</span></span>             |
 |:-------|:------|:------------------------|
-| <span data-ttu-id="14006-1283">mail</span><span class="sxs-lookup"><span data-stu-id="14006-1283">mail</span></span>   | <span data-ttu-id="14006-1284">1 </span><span class="sxs-lookup"><span data-stu-id="14006-1284">1</span></span>     | <span data-ttu-id="14006-1285">邮件威胁。</span><span class="sxs-lookup"><span data-stu-id="14006-1285">Mail threat.</span></span>            |
-| <span data-ttu-id="14006-1286">url</span><span class="sxs-lookup"><span data-stu-id="14006-1286">url</span></span>    | <span data-ttu-id="14006-1287">2 </span><span class="sxs-lookup"><span data-stu-id="14006-1287">2</span></span>     | <span data-ttu-id="14006-1288">URL 威胁。</span><span class="sxs-lookup"><span data-stu-id="14006-1288">URL threat.</span></span>             |
-| <span data-ttu-id="14006-1289">file</span><span class="sxs-lookup"><span data-stu-id="14006-1289">file</span></span>   | <span data-ttu-id="14006-1290">第三章</span><span class="sxs-lookup"><span data-stu-id="14006-1290">3</span></span>     | <span data-ttu-id="14006-1291">附件文件威胁。</span><span class="sxs-lookup"><span data-stu-id="14006-1291">Attachment file threat.</span></span> |
+| <span data-ttu-id="ae0e4-1292">mail</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1292">mail</span></span>   | <span data-ttu-id="ae0e4-1293">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1293">1</span></span>     | <span data-ttu-id="ae0e4-1294">邮件威胁。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1294">Mail threat.</span></span>            |
+| <span data-ttu-id="ae0e4-1295">url</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1295">url</span></span>    | <span data-ttu-id="ae0e4-1296">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1296">2</span></span>     | <span data-ttu-id="ae0e4-1297">URL 威胁。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1297">URL threat.</span></span>             |
+| <span data-ttu-id="ae0e4-1298">file</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1298">file</span></span>   | <span data-ttu-id="ae0e4-1299">第三章</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1299">3</span></span>     | <span data-ttu-id="ae0e4-1300">附件文件威胁。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1300">Attachment file threat.</span></span> |
 
-### <a name="threatexpectedassessment-values"></a><span data-ttu-id="14006-1292">threatExpectedAssessment 值</span><span class="sxs-lookup"><span data-stu-id="14006-1292">threatExpectedAssessment values</span></span>
+### <a name="threatexpectedassessment-values"></a><span data-ttu-id="ae0e4-1301">threatExpectedAssessment 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1301">threatExpectedAssessment values</span></span>
 
-| <span data-ttu-id="14006-1293">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1293">Member</span></span>  | <span data-ttu-id="14006-1294">值</span><span class="sxs-lookup"><span data-stu-id="14006-1294">Value</span></span> | <span data-ttu-id="14006-1295">说明</span><span class="sxs-lookup"><span data-stu-id="14006-1295">Description</span></span>                       |
+| <span data-ttu-id="ae0e4-1302">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1302">Member</span></span>  | <span data-ttu-id="ae0e4-1303">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1303">Value</span></span> | <span data-ttu-id="ae0e4-1304">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1304">Description</span></span>                       |
 |:--------|:------|:----------------------------------|
-| <span data-ttu-id="14006-1296">数据</span><span class="sxs-lookup"><span data-stu-id="14006-1296">block</span></span>   | <span data-ttu-id="14006-1297">1 </span><span class="sxs-lookup"><span data-stu-id="14006-1297">1</span></span>     | <span data-ttu-id="14006-1298">应阻止该威胁。</span><span class="sxs-lookup"><span data-stu-id="14006-1298">The threat should be blocked.</span></span>     |
-| <span data-ttu-id="14006-1299">阻塞</span><span class="sxs-lookup"><span data-stu-id="14006-1299">unblock</span></span> | <span data-ttu-id="14006-1300">2 </span><span class="sxs-lookup"><span data-stu-id="14006-1300">2</span></span>     | <span data-ttu-id="14006-1301">不应阻止该威胁。</span><span class="sxs-lookup"><span data-stu-id="14006-1301">The threat should not be blocked.</span></span> |
+| <span data-ttu-id="ae0e4-1305">数据</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1305">block</span></span>   | <span data-ttu-id="ae0e4-1306">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1306">1</span></span>     | <span data-ttu-id="ae0e4-1307">应阻止该威胁。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1307">The threat should be blocked.</span></span>     |
+| <span data-ttu-id="ae0e4-1308">阻塞</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1308">unblock</span></span> | <span data-ttu-id="ae0e4-1309">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1309">2</span></span>     | <span data-ttu-id="ae0e4-1310">不应阻止该威胁。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1310">The threat should not be blocked.</span></span> |
 
-### <a name="threatcategory-values"></a><span data-ttu-id="14006-1302">threatCategory 值</span><span class="sxs-lookup"><span data-stu-id="14006-1302">threatCategory values</span></span>
+### <a name="threatcategory-values"></a><span data-ttu-id="ae0e4-1311">threatCategory 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1311">threatCategory values</span></span>
 
-| <span data-ttu-id="14006-1303">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1303">Member</span></span>             | <span data-ttu-id="14006-1304">值</span><span class="sxs-lookup"><span data-stu-id="14006-1304">Value</span></span> | <span data-ttu-id="14006-1305">说明</span><span class="sxs-lookup"><span data-stu-id="14006-1305">Description</span></span>        |
+| <span data-ttu-id="ae0e4-1312">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1312">Member</span></span>             | <span data-ttu-id="ae0e4-1313">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1313">Value</span></span> | <span data-ttu-id="ae0e4-1314">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1314">Description</span></span>        |
 |:-------------------|:------|:-------------------|
-| <span data-ttu-id="14006-1306">垃圾邮件 (spam)</span><span class="sxs-lookup"><span data-stu-id="14006-1306">spam</span></span>               | <span data-ttu-id="14006-1307">1 </span><span class="sxs-lookup"><span data-stu-id="14006-1307">1</span></span>     | <span data-ttu-id="14006-1308">垃圾邮件威胁。</span><span class="sxs-lookup"><span data-stu-id="14006-1308">Spam threat.</span></span>       |
-| <span data-ttu-id="14006-1309">仿冒</span><span class="sxs-lookup"><span data-stu-id="14006-1309">phishing</span></span>           | <span data-ttu-id="14006-1310">2 </span><span class="sxs-lookup"><span data-stu-id="14006-1310">2</span></span>     | <span data-ttu-id="14006-1311">网络钓鱼威胁。</span><span class="sxs-lookup"><span data-stu-id="14006-1311">Phishing threat.</span></span>   |
-| <span data-ttu-id="14006-1312">受到</span><span class="sxs-lookup"><span data-stu-id="14006-1312">malware</span></span>            | <span data-ttu-id="14006-1313">第三章</span><span class="sxs-lookup"><span data-stu-id="14006-1313">3</span></span>     | <span data-ttu-id="14006-1314">恶意软件威胁。</span><span class="sxs-lookup"><span data-stu-id="14006-1314">Malware threat.</span></span>    |
-| <span data-ttu-id="14006-1315">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-1315">unknownFutureValue</span></span> | <span data-ttu-id="14006-1316">4 </span><span class="sxs-lookup"><span data-stu-id="14006-1316">4</span></span>     | <span data-ttu-id="14006-1317">一个 sentinel 成员。</span><span class="sxs-lookup"><span data-stu-id="14006-1317">A sentinel member.</span></span> |
+| <span data-ttu-id="ae0e4-1315">垃圾邮件 (spam)</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1315">spam</span></span>               | <span data-ttu-id="ae0e4-1316">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1316">1</span></span>     | <span data-ttu-id="ae0e4-1317">垃圾邮件威胁。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1317">Spam threat.</span></span>       |
+| <span data-ttu-id="ae0e4-1318">仿冒</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1318">phishing</span></span>           | <span data-ttu-id="ae0e4-1319">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1319">2</span></span>     | <span data-ttu-id="ae0e4-1320">网络钓鱼威胁。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1320">Phishing threat.</span></span>   |
+| <span data-ttu-id="ae0e4-1321">受到</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1321">malware</span></span>            | <span data-ttu-id="ae0e4-1322">第三章</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1322">3</span></span>     | <span data-ttu-id="ae0e4-1323">恶意软件威胁。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1323">Malware threat.</span></span>    |
+| <span data-ttu-id="ae0e4-1324">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1324">unknownFutureValue</span></span> | <span data-ttu-id="ae0e4-1325">4 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1325">4</span></span>     | <span data-ttu-id="ae0e4-1326">一个 sentinel 成员。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1326">A sentinel member.</span></span> |
 
-### <a name="threatassessmentstatus-values"></a><span data-ttu-id="14006-1318">threatAssessmentStatus 值</span><span class="sxs-lookup"><span data-stu-id="14006-1318">threatAssessmentStatus values</span></span>
+### <a name="threatassessmentstatus-values"></a><span data-ttu-id="ae0e4-1327">threatAssessmentStatus 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1327">threatAssessmentStatus values</span></span>
 
-| <span data-ttu-id="14006-1319">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1319">Member</span></span>    | <span data-ttu-id="14006-1320">值</span><span class="sxs-lookup"><span data-stu-id="14006-1320">Value</span></span> | <span data-ttu-id="14006-1321">说明</span><span class="sxs-lookup"><span data-stu-id="14006-1321">Description</span></span>                              |
+| <span data-ttu-id="ae0e4-1328">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1328">Member</span></span>    | <span data-ttu-id="ae0e4-1329">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1329">Value</span></span> | <span data-ttu-id="ae0e4-1330">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1330">Description</span></span>                              |
 |:----------|:------|:-----------------------------------------|
-| <span data-ttu-id="14006-1322">决</span><span class="sxs-lookup"><span data-stu-id="14006-1322">pending</span></span>   | <span data-ttu-id="14006-1323">1 </span><span class="sxs-lookup"><span data-stu-id="14006-1323">1</span></span>     | <span data-ttu-id="14006-1324">威胁评估仍在进行中。</span><span class="sxs-lookup"><span data-stu-id="14006-1324">The threat assessment still in progress.</span></span> |
-| <span data-ttu-id="14006-1325">后</span><span class="sxs-lookup"><span data-stu-id="14006-1325">completed</span></span> | <span data-ttu-id="14006-1326">2 </span><span class="sxs-lookup"><span data-stu-id="14006-1326">2</span></span>     | <span data-ttu-id="14006-1327">威胁评估已完成。</span><span class="sxs-lookup"><span data-stu-id="14006-1327">The threat assessment completed.</span></span>         |
+| <span data-ttu-id="ae0e4-1331">决</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1331">pending</span></span>   | <span data-ttu-id="ae0e4-1332">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1332">1</span></span>     | <span data-ttu-id="ae0e4-1333">威胁评估仍在进行中。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1333">The threat assessment still in progress.</span></span> |
+| <span data-ttu-id="ae0e4-1334">后</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1334">completed</span></span> | <span data-ttu-id="ae0e4-1335">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1335">2</span></span>     | <span data-ttu-id="ae0e4-1336">威胁评估已完成。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1336">The threat assessment completed.</span></span>         |
 
-### <a name="threatassessmentrequestsource-values"></a><span data-ttu-id="14006-1328">threatAssessmentRequestSource 值</span><span class="sxs-lookup"><span data-stu-id="14006-1328">threatAssessmentRequestSource values</span></span>
+### <a name="threatassessmentrequestsource-values"></a><span data-ttu-id="ae0e4-1337">threatAssessmentRequestSource 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1337">threatAssessmentRequestSource values</span></span>
 
-| <span data-ttu-id="14006-1329">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1329">Member</span></span>        | <span data-ttu-id="14006-1330">值</span><span class="sxs-lookup"><span data-stu-id="14006-1330">Value</span></span> | <span data-ttu-id="14006-1331">说明</span><span class="sxs-lookup"><span data-stu-id="14006-1331">Description</span></span>              |
+| <span data-ttu-id="ae0e4-1338">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1338">Member</span></span>        | <span data-ttu-id="ae0e4-1339">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1339">Value</span></span> | <span data-ttu-id="ae0e4-1340">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1340">Description</span></span>              |
 |:--------------|:------|:-------------------------|
-| <span data-ttu-id="14006-1332">取消</span><span class="sxs-lookup"><span data-stu-id="14006-1332">undefined</span></span>     | <span data-ttu-id="14006-1333">0</span><span class="sxs-lookup"><span data-stu-id="14006-1333">0</span></span>     | <span data-ttu-id="14006-1334">尚不知道。</span><span class="sxs-lookup"><span data-stu-id="14006-1334">Not yet know.</span></span>            |
-| <span data-ttu-id="14006-1335">user</span><span class="sxs-lookup"><span data-stu-id="14006-1335">user</span></span>          | <span data-ttu-id="14006-1336">1 </span><span class="sxs-lookup"><span data-stu-id="14006-1336">1</span></span>     | <span data-ttu-id="14006-1337">用户提交。</span><span class="sxs-lookup"><span data-stu-id="14006-1337">User submission.</span></span>         |
-| <span data-ttu-id="14006-1338">联系</span><span class="sxs-lookup"><span data-stu-id="14006-1338">administrator</span></span> | <span data-ttu-id="14006-1339">2 </span><span class="sxs-lookup"><span data-stu-id="14006-1339">2</span></span>     | <span data-ttu-id="14006-1340">租户管理员提交。</span><span class="sxs-lookup"><span data-stu-id="14006-1340">Tenant admin submission.</span></span> |
+| <span data-ttu-id="ae0e4-1341">取消</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1341">undefined</span></span>     | <span data-ttu-id="ae0e4-1342">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1342">0</span></span>     | <span data-ttu-id="ae0e4-1343">尚不知道。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1343">Not yet know.</span></span>            |
+| <span data-ttu-id="ae0e4-1344">user</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1344">user</span></span>          | <span data-ttu-id="ae0e4-1345">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1345">1</span></span>     | <span data-ttu-id="ae0e4-1346">用户提交。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1346">User submission.</span></span>         |
+| <span data-ttu-id="ae0e4-1347">联系</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1347">administrator</span></span> | <span data-ttu-id="ae0e4-1348">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1348">2</span></span>     | <span data-ttu-id="ae0e4-1349">租户管理员提交。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1349">Tenant admin submission.</span></span> |
 
-### <a name="threatassessmentresulttype-values"></a><span data-ttu-id="14006-1341">threatAssessmentResultType 值</span><span class="sxs-lookup"><span data-stu-id="14006-1341">threatAssessmentResultType values</span></span>
+### <a name="threatassessmentresulttype-values"></a><span data-ttu-id="ae0e4-1350">threatAssessmentResultType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1350">threatAssessmentResultType values</span></span>
 
-| <span data-ttu-id="14006-1342">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1342">Member</span></span>             | <span data-ttu-id="14006-1343">值</span><span class="sxs-lookup"><span data-stu-id="14006-1343">Value</span></span> | <span data-ttu-id="14006-1344">说明</span><span class="sxs-lookup"><span data-stu-id="14006-1344">Description</span></span>                                          |
+| <span data-ttu-id="ae0e4-1351">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1351">Member</span></span>             | <span data-ttu-id="ae0e4-1352">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1352">Value</span></span> | <span data-ttu-id="ae0e4-1353">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1353">Description</span></span>                                          |
 |:-------------------|:------|:-----------------------------------------------------|
-| <span data-ttu-id="14006-1345">checkPolicy</span><span class="sxs-lookup"><span data-stu-id="14006-1345">checkPolicy</span></span>        | <span data-ttu-id="14006-1346">1 </span><span class="sxs-lookup"><span data-stu-id="14006-1346">1</span></span>     | <span data-ttu-id="14006-1347">策略检查结果，仅用于 `mail` 评估。</span><span class="sxs-lookup"><span data-stu-id="14006-1347">The policy check result, only for `mail` assessment.</span></span> |
-| <span data-ttu-id="14006-1348">重新扫描</span><span class="sxs-lookup"><span data-stu-id="14006-1348">rescan</span></span>             | <span data-ttu-id="14006-1349">2 </span><span class="sxs-lookup"><span data-stu-id="14006-1349">2</span></span>     | <span data-ttu-id="14006-1350">重新扫描结果。</span><span class="sxs-lookup"><span data-stu-id="14006-1350">The rescan result.</span></span>                                   |
-| <span data-ttu-id="14006-1351">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-1351">unknownFutureValue</span></span> | <span data-ttu-id="14006-1352">第三章</span><span class="sxs-lookup"><span data-stu-id="14006-1352">3</span></span>     | <span data-ttu-id="14006-1353">一个 sentinel 成员。</span><span class="sxs-lookup"><span data-stu-id="14006-1353">A sentinel member.</span></span>                                   |
+| <span data-ttu-id="ae0e4-1354">checkPolicy</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1354">checkPolicy</span></span>        | <span data-ttu-id="ae0e4-1355">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1355">1</span></span>     | <span data-ttu-id="ae0e4-1356">策略检查结果，仅用于 `mail` 评估。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1356">The policy check result, only for `mail` assessment.</span></span> |
+| <span data-ttu-id="ae0e4-1357">重新扫描</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1357">rescan</span></span>             | <span data-ttu-id="ae0e4-1358">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1358">2</span></span>     | <span data-ttu-id="ae0e4-1359">重新扫描结果。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1359">The rescan result.</span></span>                                   |
+| <span data-ttu-id="ae0e4-1360">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1360">unknownFutureValue</span></span> | <span data-ttu-id="ae0e4-1361">第三章</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1361">3</span></span>     | <span data-ttu-id="ae0e4-1362">一个 sentinel 成员。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1362">A sentinel member.</span></span>                                   |
 
-### <a name="maildestinationroutingreason-values"></a><span data-ttu-id="14006-1354">mailDestinationRoutingReason 值</span><span class="sxs-lookup"><span data-stu-id="14006-1354">mailDestinationRoutingReason values</span></span>
+### <a name="maildestinationroutingreason-values"></a><span data-ttu-id="ae0e4-1363">mailDestinationRoutingReason 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1363">mailDestinationRoutingReason values</span></span>
 
-| <span data-ttu-id="14006-1355">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1355">Member</span></span>                | <span data-ttu-id="14006-1356">值</span><span class="sxs-lookup"><span data-stu-id="14006-1356">Value</span></span> | <span data-ttu-id="14006-1357">说明</span><span class="sxs-lookup"><span data-stu-id="14006-1357">Description</span></span>                         |
+| <span data-ttu-id="ae0e4-1364">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1364">Member</span></span>                | <span data-ttu-id="ae0e4-1365">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1365">Value</span></span> | <span data-ttu-id="ae0e4-1366">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1366">Description</span></span>                         |
 |:----------------------|:------|:------------------------------------|
-| <span data-ttu-id="14006-1358">无</span><span class="sxs-lookup"><span data-stu-id="14006-1358">none</span></span>                  | <span data-ttu-id="14006-1359">0</span><span class="sxs-lookup"><span data-stu-id="14006-1359">0</span></span>     | <span data-ttu-id="14006-1360">尚不知道。</span><span class="sxs-lookup"><span data-stu-id="14006-1360">Not yet know.</span></span>                       |
-| <span data-ttu-id="14006-1361">mailFlowRule</span><span class="sxs-lookup"><span data-stu-id="14006-1361">mailFlowRule</span></span>          | <span data-ttu-id="14006-1362">1 </span><span class="sxs-lookup"><span data-stu-id="14006-1362">1</span></span>     | <span data-ttu-id="14006-1363">Exchange 传输规则。</span><span class="sxs-lookup"><span data-stu-id="14006-1363">Exchange transport rule.</span></span>            |
-| <span data-ttu-id="14006-1364">safeSender</span><span class="sxs-lookup"><span data-stu-id="14006-1364">safeSender</span></span>            | <span data-ttu-id="14006-1365">2 </span><span class="sxs-lookup"><span data-stu-id="14006-1365">2</span></span>     | <span data-ttu-id="14006-1366">安全发件人列表。</span><span class="sxs-lookup"><span data-stu-id="14006-1366">Safe sender list.</span></span>                   |
-| <span data-ttu-id="14006-1367">blockedSender</span><span class="sxs-lookup"><span data-stu-id="14006-1367">blockedSender</span></span>         | <span data-ttu-id="14006-1368">第三章</span><span class="sxs-lookup"><span data-stu-id="14006-1368">3</span></span>     | <span data-ttu-id="14006-1369">阻止发件人列表。</span><span class="sxs-lookup"><span data-stu-id="14006-1369">Blocked sender list.</span></span>                |
-| <span data-ttu-id="14006-1370">advancedSpamFiltering</span><span class="sxs-lookup"><span data-stu-id="14006-1370">advancedSpamFiltering</span></span> | <span data-ttu-id="14006-1371">4 </span><span class="sxs-lookup"><span data-stu-id="14006-1371">4</span></span>     | <span data-ttu-id="14006-1372">高级垃圾邮件 flitering 选项。</span><span class="sxs-lookup"><span data-stu-id="14006-1372">Advanced spam flitering option.</span></span>     |
-| <span data-ttu-id="14006-1373">domainAllowList</span><span class="sxs-lookup"><span data-stu-id="14006-1373">domainAllowList</span></span>       | <span data-ttu-id="14006-1374">5 </span><span class="sxs-lookup"><span data-stu-id="14006-1374">5</span></span>     | <span data-ttu-id="14006-1375">发件人域允许列表。</span><span class="sxs-lookup"><span data-stu-id="14006-1375">Sender domain allow list.</span></span>           |
-| <span data-ttu-id="14006-1376">domainBlockList</span><span class="sxs-lookup"><span data-stu-id="14006-1376">domainBlockList</span></span>       | <span data-ttu-id="14006-1377">6 </span><span class="sxs-lookup"><span data-stu-id="14006-1377">6</span></span>     | <span data-ttu-id="14006-1378">发件人域阻止列表。</span><span class="sxs-lookup"><span data-stu-id="14006-1378">Sender domain block list.</span></span>           |
-| <span data-ttu-id="14006-1379">notInAddressBook</span><span class="sxs-lookup"><span data-stu-id="14006-1379">notInAddressBook</span></span>      | <span data-ttu-id="14006-1380">7 </span><span class="sxs-lookup"><span data-stu-id="14006-1380">7</span></span>     | <span data-ttu-id="14006-1381">将发件人排除在通讯簿之外。</span><span class="sxs-lookup"><span data-stu-id="14006-1381">Exclude sender not in address book.</span></span> |
-| <span data-ttu-id="14006-1382">firstTimeSender</span><span class="sxs-lookup"><span data-stu-id="14006-1382">firstTimeSender</span></span>       | <span data-ttu-id="14006-1383">8 </span><span class="sxs-lookup"><span data-stu-id="14006-1383">8</span></span>     | <span data-ttu-id="14006-1384">由于第一次发件人而被阻止。</span><span class="sxs-lookup"><span data-stu-id="14006-1384">Blocked due to first time sender.</span></span>   |
-| <span data-ttu-id="14006-1385">autoPurgeToInbox</span><span class="sxs-lookup"><span data-stu-id="14006-1385">autoPurgeToInbox</span></span>      | <span data-ttu-id="14006-1386">9 </span><span class="sxs-lookup"><span data-stu-id="14006-1386">9</span></span>     | <span data-ttu-id="14006-1387">TimeTravel 将邮件移动到收件箱。</span><span class="sxs-lookup"><span data-stu-id="14006-1387">TimeTravel move message to inbox.</span></span>   |
-| <span data-ttu-id="14006-1388">autoPurgeToJunk</span><span class="sxs-lookup"><span data-stu-id="14006-1388">autoPurgeToJunk</span></span>       | <span data-ttu-id="14006-1389">10 </span><span class="sxs-lookup"><span data-stu-id="14006-1389">10</span></span>    | <span data-ttu-id="14006-1390">TimeTravel 将邮件移动到垃圾邮件。</span><span class="sxs-lookup"><span data-stu-id="14006-1390">TimeTravel move message to junk.</span></span>    |
-| <span data-ttu-id="14006-1391">autoPurgeToDeleted</span><span class="sxs-lookup"><span data-stu-id="14006-1391">autoPurgeToDeleted</span></span>    | <span data-ttu-id="14006-1392">11 </span><span class="sxs-lookup"><span data-stu-id="14006-1392">11</span></span>    | <span data-ttu-id="14006-1393">TimeTravel 将邮件移动到 "已删除"。</span><span class="sxs-lookup"><span data-stu-id="14006-1393">TimeTravel move message to deleted.</span></span> |
-| <span data-ttu-id="14006-1394">出站</span><span class="sxs-lookup"><span data-stu-id="14006-1394">outbound</span></span>              | <span data-ttu-id="14006-1395">12 </span><span class="sxs-lookup"><span data-stu-id="14006-1395">12</span></span>    | <span data-ttu-id="14006-1396">出站邮件。</span><span class="sxs-lookup"><span data-stu-id="14006-1396">Outbound mail.</span></span>                      |
-| <span data-ttu-id="14006-1397">notJunk</span><span class="sxs-lookup"><span data-stu-id="14006-1397">notJunk</span></span>               | <span data-ttu-id="14006-1398">13 </span><span class="sxs-lookup"><span data-stu-id="14006-1398">13</span></span>    | <span data-ttu-id="14006-1399">由于非垃圾邮件而启用。</span><span class="sxs-lookup"><span data-stu-id="14006-1399">Allow due to not junk.</span></span>              |
-| <span data-ttu-id="14006-1400">可疑</span><span class="sxs-lookup"><span data-stu-id="14006-1400">junk</span></span>                  | <span data-ttu-id="14006-1401">14 </span><span class="sxs-lookup"><span data-stu-id="14006-1401">14</span></span>    | <span data-ttu-id="14006-1402">由于垃圾邮件而被阻止。</span><span class="sxs-lookup"><span data-stu-id="14006-1402">Blocked due to junk.</span></span>                |
-| <span data-ttu-id="14006-1403">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-1403">unknownFutureValue</span></span>    | <span data-ttu-id="14006-1404">15 </span><span class="sxs-lookup"><span data-stu-id="14006-1404">15</span></span>    | <span data-ttu-id="14006-1405">一个 sentinel 成员。</span><span class="sxs-lookup"><span data-stu-id="14006-1405">A sentinel member.</span></span>                  |
+| <span data-ttu-id="ae0e4-1367">无</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1367">none</span></span>                  | <span data-ttu-id="ae0e4-1368">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1368">0</span></span>     | <span data-ttu-id="ae0e4-1369">尚不知道。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1369">Not yet know.</span></span>                       |
+| <span data-ttu-id="ae0e4-1370">mailFlowRule</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1370">mailFlowRule</span></span>          | <span data-ttu-id="ae0e4-1371">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1371">1</span></span>     | <span data-ttu-id="ae0e4-1372">Exchange 传输规则。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1372">Exchange transport rule.</span></span>            |
+| <span data-ttu-id="ae0e4-1373">safeSender</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1373">safeSender</span></span>            | <span data-ttu-id="ae0e4-1374">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1374">2</span></span>     | <span data-ttu-id="ae0e4-1375">安全发件人列表。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1375">Safe sender list.</span></span>                   |
+| <span data-ttu-id="ae0e4-1376">blockedSender</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1376">blockedSender</span></span>         | <span data-ttu-id="ae0e4-1377">第三章</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1377">3</span></span>     | <span data-ttu-id="ae0e4-1378">阻止发件人列表。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1378">Blocked sender list.</span></span>                |
+| <span data-ttu-id="ae0e4-1379">advancedSpamFiltering</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1379">advancedSpamFiltering</span></span> | <span data-ttu-id="ae0e4-1380">4 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1380">4</span></span>     | <span data-ttu-id="ae0e4-1381">高级垃圾邮件 flitering 选项。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1381">Advanced spam flitering option.</span></span>     |
+| <span data-ttu-id="ae0e4-1382">domainAllowList</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1382">domainAllowList</span></span>       | <span data-ttu-id="ae0e4-1383">5 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1383">5</span></span>     | <span data-ttu-id="ae0e4-1384">发件人域允许列表。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1384">Sender domain allow list.</span></span>           |
+| <span data-ttu-id="ae0e4-1385">domainBlockList</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1385">domainBlockList</span></span>       | <span data-ttu-id="ae0e4-1386">6 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1386">6</span></span>     | <span data-ttu-id="ae0e4-1387">发件人域阻止列表。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1387">Sender domain block list.</span></span>           |
+| <span data-ttu-id="ae0e4-1388">notInAddressBook</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1388">notInAddressBook</span></span>      | <span data-ttu-id="ae0e4-1389">7 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1389">7</span></span>     | <span data-ttu-id="ae0e4-1390">将发件人排除在通讯簿之外。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1390">Exclude sender not in address book.</span></span> |
+| <span data-ttu-id="ae0e4-1391">firstTimeSender</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1391">firstTimeSender</span></span>       | <span data-ttu-id="ae0e4-1392">8 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1392">8</span></span>     | <span data-ttu-id="ae0e4-1393">由于第一次发件人而被阻止。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1393">Blocked due to first time sender.</span></span>   |
+| <span data-ttu-id="ae0e4-1394">autoPurgeToInbox</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1394">autoPurgeToInbox</span></span>      | <span data-ttu-id="ae0e4-1395">9 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1395">9</span></span>     | <span data-ttu-id="ae0e4-1396">TimeTravel 将邮件移动到收件箱。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1396">TimeTravel move message to inbox.</span></span>   |
+| <span data-ttu-id="ae0e4-1397">autoPurgeToJunk</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1397">autoPurgeToJunk</span></span>       | <span data-ttu-id="ae0e4-1398">10 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1398">10</span></span>    | <span data-ttu-id="ae0e4-1399">TimeTravel 将邮件移动到垃圾邮件。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1399">TimeTravel move message to junk.</span></span>    |
+| <span data-ttu-id="ae0e4-1400">autoPurgeToDeleted</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1400">autoPurgeToDeleted</span></span>    | <span data-ttu-id="ae0e4-1401">11 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1401">11</span></span>    | <span data-ttu-id="ae0e4-1402">TimeTravel 将邮件移动到 "已删除"。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1402">TimeTravel move message to deleted.</span></span> |
+| <span data-ttu-id="ae0e4-1403">出站</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1403">outbound</span></span>              | <span data-ttu-id="ae0e4-1404">12 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1404">12</span></span>    | <span data-ttu-id="ae0e4-1405">出站邮件。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1405">Outbound mail.</span></span>                      |
+| <span data-ttu-id="ae0e4-1406">notJunk</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1406">notJunk</span></span>               | <span data-ttu-id="ae0e4-1407">13 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1407">13</span></span>    | <span data-ttu-id="ae0e4-1408">由于非垃圾邮件而启用。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1408">Allow due to not junk.</span></span>              |
+| <span data-ttu-id="ae0e4-1409">可疑</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1409">junk</span></span>                  | <span data-ttu-id="ae0e4-1410">14 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1410">14</span></span>    | <span data-ttu-id="ae0e4-1411">由于垃圾邮件而被阻止。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1411">Blocked due to junk.</span></span>                |
+| <span data-ttu-id="ae0e4-1412">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1412">unknownFutureValue</span></span>    | <span data-ttu-id="ae0e4-1413">15 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1413">15</span></span>    | <span data-ttu-id="ae0e4-1414">一个 sentinel 成员。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1414">A sentinel member.</span></span>                  |
 
-### <a name="threatassessmentrequestpivotproperty-values"></a><span data-ttu-id="14006-1406">threatAssessmentRequestPivotProperty 值</span><span class="sxs-lookup"><span data-stu-id="14006-1406">threatAssessmentRequestPivotProperty values</span></span>
+### <a name="threatassessmentrequestpivotproperty-values"></a><span data-ttu-id="ae0e4-1415">threatAssessmentRequestPivotProperty 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1415">threatAssessmentRequestPivotProperty values</span></span>
 
-| <span data-ttu-id="14006-1407">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1407">Member</span></span>                       | <span data-ttu-id="14006-1408">值</span><span class="sxs-lookup"><span data-stu-id="14006-1408">Value</span></span> | <span data-ttu-id="14006-1409">说明</span><span class="sxs-lookup"><span data-stu-id="14006-1409">Description</span></span>                                                            |
+| <span data-ttu-id="ae0e4-1416">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1416">Member</span></span>                       | <span data-ttu-id="ae0e4-1417">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1417">Value</span></span> | <span data-ttu-id="ae0e4-1418">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1418">Description</span></span>                                                            |
 |:-----------------------------|:------|:-----------------------------------------------------------------------|
-| <span data-ttu-id="14006-1410">threatCategory</span><span class="sxs-lookup"><span data-stu-id="14006-1410">threatCategory</span></span>               | <span data-ttu-id="14006-1411">1 </span><span class="sxs-lookup"><span data-stu-id="14006-1411">1</span></span>     | <span data-ttu-id="14006-1412">的聚合威胁评估请求 `threatCategory` 。</span><span class="sxs-lookup"><span data-stu-id="14006-1412">Aggregate threat assessment request by `threatCategory`.</span></span>               |
-| <span data-ttu-id="14006-1413">mailDestinationRoutingReason</span><span class="sxs-lookup"><span data-stu-id="14006-1413">mailDestinationRoutingReason</span></span> | <span data-ttu-id="14006-1414">2 </span><span class="sxs-lookup"><span data-stu-id="14006-1414">2</span></span>     | <span data-ttu-id="14006-1415">的聚合威胁评估请求 `mailDestinationRoutingReason` 。</span><span class="sxs-lookup"><span data-stu-id="14006-1415">Aggregate threat assessment request by `mailDestinationRoutingReason`.</span></span> |
+| <span data-ttu-id="ae0e4-1419">threatCategory</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1419">threatCategory</span></span>               | <span data-ttu-id="ae0e4-1420">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1420">1</span></span>     | <span data-ttu-id="ae0e4-1421">的聚合威胁评估请求 `threatCategory` 。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1421">Aggregate threat assessment request by `threatCategory`.</span></span>               |
+| <span data-ttu-id="ae0e4-1422">mailDestinationRoutingReason</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1422">mailDestinationRoutingReason</span></span> | <span data-ttu-id="ae0e4-1423">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1423">2</span></span>     | <span data-ttu-id="ae0e4-1424">的聚合威胁评估请求 `mailDestinationRoutingReason` 。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1424">Aggregate threat assessment request by `mailDestinationRoutingReason`.</span></span> |
 
-### <a name="riskeventtypes-values"></a><span data-ttu-id="14006-1416">riskEventTypes 值</span><span class="sxs-lookup"><span data-stu-id="14006-1416">riskEventTypes values</span></span>
+### <a name="riskeventtypes-values"></a><span data-ttu-id="ae0e4-1425">riskEventTypes 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1425">riskEventTypes values</span></span>
 
-| <span data-ttu-id="14006-1417">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1417">Member</span></span>
+| <span data-ttu-id="ae0e4-1426">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1426">Member</span></span>
 |:-------------------------
-| <span data-ttu-id="14006-1418">unlikelyTravel</span><span class="sxs-lookup"><span data-stu-id="14006-1418">unlikelyTravel</span></span>
-| <span data-ttu-id="14006-1419">anonymizedIPAddress</span><span class="sxs-lookup"><span data-stu-id="14006-1419">anonymizedIPAddress</span></span>
-| <span data-ttu-id="14006-1420">maliciousIPAddress</span><span class="sxs-lookup"><span data-stu-id="14006-1420">maliciousIPAddress</span></span>
-| <span data-ttu-id="14006-1421">unfamiliarFeatures</span><span class="sxs-lookup"><span data-stu-id="14006-1421">unfamiliarFeatures</span></span>
-| <span data-ttu-id="14006-1422">malwareInfectedIPAddress</span><span class="sxs-lookup"><span data-stu-id="14006-1422">malwareInfectedIPAddress</span></span>
-| <span data-ttu-id="14006-1423">suspiciousIPAddress</span><span class="sxs-lookup"><span data-stu-id="14006-1423">suspiciousIPAddress</span></span>
-| <span data-ttu-id="14006-1424">leakedCredentials</span><span class="sxs-lookup"><span data-stu-id="14006-1424">leakedCredentials</span></span>
-| <span data-ttu-id="14006-1425">investigationsThreatIntelligence</span><span class="sxs-lookup"><span data-stu-id="14006-1425">investigationsThreatIntelligence</span></span>
-| <span data-ttu-id="14006-1426">泛型</span><span class="sxs-lookup"><span data-stu-id="14006-1426">generic</span></span>
-| <span data-ttu-id="14006-1427">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-1427">unknownFutureValue</span></span>
+| <span data-ttu-id="ae0e4-1427">unlikelyTravel</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1427">unlikelyTravel</span></span>
+| <span data-ttu-id="ae0e4-1428">anonymizedIPAddress</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1428">anonymizedIPAddress</span></span>
+| <span data-ttu-id="ae0e4-1429">maliciousIPAddress</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1429">maliciousIPAddress</span></span>
+| <span data-ttu-id="ae0e4-1430">unfamiliarFeatures</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1430">unfamiliarFeatures</span></span>
+| <span data-ttu-id="ae0e4-1431">malwareInfectedIPAddress</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1431">malwareInfectedIPAddress</span></span>
+| <span data-ttu-id="ae0e4-1432">suspiciousIPAddress</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1432">suspiciousIPAddress</span></span>
+| <span data-ttu-id="ae0e4-1433">leakedCredentials</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1433">leakedCredentials</span></span>
+| <span data-ttu-id="ae0e4-1434">investigationsThreatIntelligence</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1434">investigationsThreatIntelligence</span></span>
+| <span data-ttu-id="ae0e4-1435">泛型</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1435">generic</span></span>
+| <span data-ttu-id="ae0e4-1436">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1436">unknownFutureValue</span></span>
 
-### <a name="userflowtype-values"></a><span data-ttu-id="14006-1428">userFlowType 值</span><span class="sxs-lookup"><span data-stu-id="14006-1428">userFlowType values</span></span>
-|<span data-ttu-id="14006-1429">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1429">Member</span></span>
+### <a name="userflowtype-values"></a><span data-ttu-id="ae0e4-1437">userFlowType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1437">userFlowType values</span></span>
+|<span data-ttu-id="ae0e4-1438">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1438">Member</span></span>
 |:----------------------
-| <span data-ttu-id="14006-1430">注册</span><span class="sxs-lookup"><span data-stu-id="14006-1430">signUp</span></span>
-| <span data-ttu-id="14006-1431">登录</span><span class="sxs-lookup"><span data-stu-id="14006-1431">signIn</span></span>
-| <span data-ttu-id="14006-1432">signUpOrSignIn</span><span class="sxs-lookup"><span data-stu-id="14006-1432">signUpOrSignIn</span></span>
-| <span data-ttu-id="14006-1433">passwordReset</span><span class="sxs-lookup"><span data-stu-id="14006-1433">passwordReset</span></span>
-| <span data-ttu-id="14006-1434">profileUpdate</span><span class="sxs-lookup"><span data-stu-id="14006-1434">profileUpdate</span></span>
-| <span data-ttu-id="14006-1435">resourceOwnerPasswordCredentialSignIn</span><span class="sxs-lookup"><span data-stu-id="14006-1435">resourceOwnerPasswordCredentialSignIn</span></span>
-| <span data-ttu-id="14006-1436">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-1436">unknownFutureValue</span></span>
+| <span data-ttu-id="ae0e4-1439">注册</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1439">signUp</span></span>
+| <span data-ttu-id="ae0e4-1440">登录</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1440">signIn</span></span>
+| <span data-ttu-id="ae0e4-1441">signUpOrSignIn</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1441">signUpOrSignIn</span></span>
+| <span data-ttu-id="ae0e4-1442">passwordReset</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1442">passwordReset</span></span>
+| <span data-ttu-id="ae0e4-1443">profileUpdate</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1443">profileUpdate</span></span>
+| <span data-ttu-id="ae0e4-1444">resourceOwnerPasswordCredentialSignIn</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1444">resourceOwnerPasswordCredentialSignIn</span></span>
+| <span data-ttu-id="ae0e4-1445">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1445">unknownFutureValue</span></span>
 
-### <a name="openidconnectresponsemode-values"></a><span data-ttu-id="14006-1437">openIdConnectResponseMode 值</span><span class="sxs-lookup"><span data-stu-id="14006-1437">openIdConnectResponseMode values</span></span>
-| <span data-ttu-id="14006-1438">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1438">Member</span></span>                
+### <a name="openidconnectresponsemode-values"></a><span data-ttu-id="ae0e4-1446">openIdConnectResponseMode 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1446">openIdConnectResponseMode values</span></span>
+| <span data-ttu-id="ae0e4-1447">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1447">Member</span></span>
 |:----------------------
-| <span data-ttu-id="14006-1439">无</span><span class="sxs-lookup"><span data-stu-id="14006-1439">none</span></span>
-| <span data-ttu-id="14006-1440">form_post</span><span class="sxs-lookup"><span data-stu-id="14006-1440">form_post</span></span>
-| <span data-ttu-id="14006-1441">查询</span><span class="sxs-lookup"><span data-stu-id="14006-1441">query</span></span> 
-| <span data-ttu-id="14006-1442">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-1442">unknownFutureValue</span></span> 
+| <span data-ttu-id="ae0e4-1448">无</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1448">none</span></span>
+| <span data-ttu-id="ae0e4-1449">form_post</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1449">form_post</span></span>
+| <span data-ttu-id="ae0e4-1450">查询</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1450">query</span></span>
+| <span data-ttu-id="ae0e4-1451">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1451">unknownFutureValue</span></span>
 
-### <a name="openidconnectresponsetypes-values"></a><span data-ttu-id="14006-1443">openIdConnectResponseTypes 值</span><span class="sxs-lookup"><span data-stu-id="14006-1443">openIdConnectResponseTypes values</span></span>
-| <span data-ttu-id="14006-1444">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1444">Member</span></span>                
+### <a name="openidconnectresponsetypes-values"></a><span data-ttu-id="ae0e4-1452">openIdConnectResponseTypes 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1452">openIdConnectResponseTypes values</span></span>
+| <span data-ttu-id="ae0e4-1453">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1453">Member</span></span>
 |:----------------------
-| <span data-ttu-id="14006-1445">无</span><span class="sxs-lookup"><span data-stu-id="14006-1445">none</span></span>
-| <span data-ttu-id="14006-1446">code</span><span class="sxs-lookup"><span data-stu-id="14006-1446">code</span></span>
-| <span data-ttu-id="14006-1447">id_token</span><span class="sxs-lookup"><span data-stu-id="14006-1447">id_token</span></span>
-| <span data-ttu-id="14006-1448">令牌</span><span class="sxs-lookup"><span data-stu-id="14006-1448">token</span></span>
+| <span data-ttu-id="ae0e4-1454">无</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1454">none</span></span>
+| <span data-ttu-id="ae0e4-1455">code</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1455">code</span></span>
+| <span data-ttu-id="ae0e4-1456">id_token</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1456">id_token</span></span>
+| <span data-ttu-id="ae0e4-1457">令牌</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1457">token</span></span>
 
-### <a name="wellknownlistname-values"></a><span data-ttu-id="14006-1449">wellknownListName 值</span><span class="sxs-lookup"><span data-stu-id="14006-1449">wellknownListName values</span></span>
-| <span data-ttu-id="14006-1450">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1450">Member</span></span>
+### <a name="wellknownlistname-values"></a><span data-ttu-id="ae0e4-1458">wellknownListName 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1458">wellknownListName values</span></span>
+| <span data-ttu-id="ae0e4-1459">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1459">Member</span></span>
 |:----------------------
-| <span data-ttu-id="14006-1451">无</span><span class="sxs-lookup"><span data-stu-id="14006-1451">none</span></span>
-| <span data-ttu-id="14006-1452">defaultList</span><span class="sxs-lookup"><span data-stu-id="14006-1452">defaultList</span></span>
-| <span data-ttu-id="14006-1453">flaggedEmails</span><span class="sxs-lookup"><span data-stu-id="14006-1453">flaggedEmails</span></span>
-| <span data-ttu-id="14006-1454">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-1454">unknownFutureValue</span></span>
+| <span data-ttu-id="ae0e4-1460">无</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1460">none</span></span>
+| <span data-ttu-id="ae0e4-1461">defaultList</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1461">defaultList</span></span>
+| <span data-ttu-id="ae0e4-1462">flaggedEmails</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1462">flaggedEmails</span></span>
+| <span data-ttu-id="ae0e4-1463">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1463">unknownFutureValue</span></span>
 
-### <a name="taskstatus-values"></a><span data-ttu-id="14006-1455">taskStatus 值</span><span class="sxs-lookup"><span data-stu-id="14006-1455">taskStatus values</span></span>
-| <span data-ttu-id="14006-1456">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1456">Member</span></span>
+### <a name="taskstatus-values"></a><span data-ttu-id="ae0e4-1464">taskStatus 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1464">taskStatus values</span></span>
+| <span data-ttu-id="ae0e4-1465">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1465">Member</span></span>
 |:----------------------
-| <span data-ttu-id="14006-1457">notStarted</span><span class="sxs-lookup"><span data-stu-id="14006-1457">notStarted</span></span>
-| <span data-ttu-id="14006-1458">inProgress</span><span class="sxs-lookup"><span data-stu-id="14006-1458">inProgress</span></span>
-| <span data-ttu-id="14006-1459">后</span><span class="sxs-lookup"><span data-stu-id="14006-1459">completed</span></span>
-| <span data-ttu-id="14006-1460">waitingOnOthers</span><span class="sxs-lookup"><span data-stu-id="14006-1460">waitingOnOthers</span></span>
-| <span data-ttu-id="14006-1461">关联表</span><span class="sxs-lookup"><span data-stu-id="14006-1461">deferred</span></span>
+| <span data-ttu-id="ae0e4-1466">notStarted</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1466">notStarted</span></span>
+| <span data-ttu-id="ae0e4-1467">inProgress</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1467">inProgress</span></span>
+| <span data-ttu-id="ae0e4-1468">后</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1468">completed</span></span>
+| <span data-ttu-id="ae0e4-1469">waitingOnOthers</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1469">waitingOnOthers</span></span>
+| <span data-ttu-id="ae0e4-1470">关联表</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1470">deferred</span></span>
 
-### <a name="connectedorganizationstate-values"></a><span data-ttu-id="14006-1462">connectedOrganizationState 值</span><span class="sxs-lookup"><span data-stu-id="14006-1462">connectedOrganizationState values</span></span>
+### <a name="connectedorganizationstate-values"></a><span data-ttu-id="ae0e4-1471">connectedOrganizationState 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1471">connectedOrganizationState values</span></span>
 
-| <span data-ttu-id="14006-1463">成员</span><span class="sxs-lookup"><span data-stu-id="14006-1463">Member</span></span>                | <span data-ttu-id="14006-1464">值</span><span class="sxs-lookup"><span data-stu-id="14006-1464">Value</span></span> | <span data-ttu-id="14006-1465">说明</span><span class="sxs-lookup"><span data-stu-id="14006-1465">Description</span></span>                                                                                                                                                                                                        |
+| <span data-ttu-id="ae0e4-1472">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1472">Member</span></span>                | <span data-ttu-id="ae0e4-1473">值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1473">Value</span></span> | <span data-ttu-id="ae0e4-1474">说明</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1474">Description</span></span>                                                                                                                                                                                                        |
 |:----------------------| :-----|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="14006-1466">尚未</span><span class="sxs-lookup"><span data-stu-id="14006-1466">configured</span></span>            | <span data-ttu-id="14006-1467">0</span><span class="sxs-lookup"><span data-stu-id="14006-1467">0</span></span>     | <span data-ttu-id="14006-1468">具有此状态值的已连接组织包含在请求者范围类型的分配策略中 `AllConfiguredConnectedOrganizationSubjects` 。</span><span class="sxs-lookup"><span data-stu-id="14006-1468">Connected Organizations with this state value are included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.</span></span>                                                          |
-| <span data-ttu-id="14006-1469">审批</span><span class="sxs-lookup"><span data-stu-id="14006-1469">proposed</span></span>              | <span data-ttu-id="14006-1470">1 </span><span class="sxs-lookup"><span data-stu-id="14006-1470">1</span></span>     | <span data-ttu-id="14006-1471">系统自动创建的已连接组织具有此状态值。</span><span class="sxs-lookup"><span data-stu-id="14006-1471">Connected Organizations that are automatically created by the system have this state value.</span></span> <span data-ttu-id="14006-1472">它们不包含在请求程序范围类型的分配策略中 `AllConfiguredConnectedOrganizationSubjects` 。</span><span class="sxs-lookup"><span data-stu-id="14006-1472">They are not included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.</span></span>   |
-| <span data-ttu-id="14006-1473">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="14006-1473">unknownFutureValue</span></span>    | <span data-ttu-id="14006-1474">2 </span><span class="sxs-lookup"><span data-stu-id="14006-1474">2</span></span>     | <span data-ttu-id="14006-1475">一个 sentinel 成员。</span><span class="sxs-lookup"><span data-stu-id="14006-1475">A sentinel member.</span></span>                                                                                                                                                                                                 |
+| <span data-ttu-id="ae0e4-1475">尚未</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1475">configured</span></span>            | <span data-ttu-id="ae0e4-1476">0</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1476">0</span></span>     | <span data-ttu-id="ae0e4-1477">具有此状态值的已连接组织包含在请求者范围类型的分配策略中 `AllConfiguredConnectedOrganizationSubjects` 。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1477">Connected Organizations with this state value are included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.</span></span>                                                          |
+| <span data-ttu-id="ae0e4-1478">审批</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1478">proposed</span></span>              | <span data-ttu-id="ae0e4-1479">1 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1479">1</span></span>     | <span data-ttu-id="ae0e4-1480">系统自动创建的已连接组织具有此状态值。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1480">Connected Organizations that are automatically created by the system have this state value.</span></span> <span data-ttu-id="ae0e4-1481">它们不包含在请求程序范围类型的分配策略中 `AllConfiguredConnectedOrganizationSubjects` 。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1481">They are not included in assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects`.</span></span>   |
+| <span data-ttu-id="ae0e4-1482">向 unknownfuturevalue</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1482">unknownFutureValue</span></span>    | <span data-ttu-id="ae0e4-1483">2 </span><span class="sxs-lookup"><span data-stu-id="ae0e4-1483">2</span></span>     | <span data-ttu-id="ae0e4-1484">一个 sentinel 成员。</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1484">A sentinel member.</span></span>                                                                                                                                                                                                 |
 
+### <a name="identitysourcetype-values"></a><span data-ttu-id="ae0e4-1485">identitySourceType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1485">identitySourceType values</span></span>
 
+|<span data-ttu-id="ae0e4-1486">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1486">Member</span></span>|
+|:---|
+|<span data-ttu-id="ae0e4-1487">azureActiveDirectory</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1487">azureActiveDirectory</span></span>|
+|<span data-ttu-id="ae0e4-1488">对外</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1488">external</span></span>|
+
+### <a name="externalgroupmembertype-values"></a><span data-ttu-id="ae0e4-1489">externalGroupMemberType 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1489">externalGroupMemberType values</span></span>
+
+|<span data-ttu-id="ae0e4-1490">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1490">Member</span></span>|
+|:---|
+|<span data-ttu-id="ae0e4-1491">user</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1491">user</span></span>|
+|<span data-ttu-id="ae0e4-1492">group</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1492">group</span></span>|
+
+### <a name="connectionstate-values"></a><span data-ttu-id="ae0e4-1493">connectionState 值</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1493">connectionState values</span></span>
+
+|<span data-ttu-id="ae0e4-1494">成员</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1494">Member</span></span>|
+|:---|
+|<span data-ttu-id="ae0e4-1495">拟定</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1495">draft</span></span>|
+|<span data-ttu-id="ae0e4-1496">即可</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1496">ready</span></span>|
+|<span data-ttu-id="ae0e4-1497">过时</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1497">obsolete</span></span>|
+|<span data-ttu-id="ae0e4-1498">limitExceeded</span><span class="sxs-lookup"><span data-stu-id="ae0e4-1498">limitExceeded</span></span>|

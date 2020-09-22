@@ -1,48 +1,48 @@
 ---
 title: 架构资源类型
-description: 介绍内容的类型，以及如何在 Microsoft Search 连接中对项目中的每个属性编制索引。
+description: 连接架构确定如何将内容添加到连接中，以用于各种 Microsoft Graph 体验。
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 0d5182e68fd1b1d53abb5b3fa623f3048abfe723
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ff14f04adb31d99aadec15cb9368e09a098c7a26
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083965"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192866"
 ---
-# <a name="schema-resource-type"></a><span data-ttu-id="84de7-103">架构资源类型</span><span class="sxs-lookup"><span data-stu-id="84de7-103">schema resource type</span></span>
+# <a name="schema-resource-type"></a><span data-ttu-id="1a279-103">架构资源类型</span><span class="sxs-lookup"><span data-stu-id="1a279-103">schema resource type</span></span>
 
-<span data-ttu-id="84de7-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="84de7-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1a279-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1a279-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="84de7-105">介绍内容的类型，以及如何在 Microsoft Search [连接](externalconnection.md)中对项目中的每个属性编制索引。</span><span class="sxs-lookup"><span data-stu-id="84de7-105">Describes the type of content and how to index each property in items in a Microsoft Search [connection](externalconnection.md).</span></span>
+<span data-ttu-id="1a279-105">[连接](externalconnection.md)架构确定如何将外部内容用于各种 Microsoft Graph 体验。</span><span class="sxs-lookup"><span data-stu-id="1a279-105">The [connection](externalconnection.md) schema determines how your external content will be used in various Microsoft Graph experiences.</span></span> <span data-ttu-id="1a279-106">架构是计划添加到连接中的所有属性的简单列表及其属性、标签和别名。</span><span class="sxs-lookup"><span data-stu-id="1a279-106">Schema is a flat list of all the properties that you plan to add to the connection along with their attributes, labels, and aliases.</span></span> <span data-ttu-id="1a279-107">在将项目添加到连接之前，必须注册架构。</span><span class="sxs-lookup"><span data-stu-id="1a279-107">You must register the schema before adding items into the connection.</span></span>
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="methods"></a><span data-ttu-id="84de7-106">方法</span><span class="sxs-lookup"><span data-stu-id="84de7-106">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="1a279-108">方法</span><span class="sxs-lookup"><span data-stu-id="1a279-108">Methods</span></span>
 
-| <span data-ttu-id="84de7-107">方法</span><span class="sxs-lookup"><span data-stu-id="84de7-107">Method</span></span>                                                    | <span data-ttu-id="84de7-108">返回类型</span><span class="sxs-lookup"><span data-stu-id="84de7-108">Return Type</span></span>                   | <span data-ttu-id="84de7-109">说明</span><span class="sxs-lookup"><span data-stu-id="84de7-109">Description</span></span> |
+| <span data-ttu-id="1a279-109">方法</span><span class="sxs-lookup"><span data-stu-id="1a279-109">Method</span></span>                                                    | <span data-ttu-id="1a279-110">返回类型</span><span class="sxs-lookup"><span data-stu-id="1a279-110">Return Type</span></span>                   | <span data-ttu-id="1a279-111">说明</span><span class="sxs-lookup"><span data-stu-id="1a279-111">Description</span></span> |
 |:----------------------------------------------------------|:------------------------------|:--|
-| [<span data-ttu-id="84de7-110">创建架构</span><span class="sxs-lookup"><span data-stu-id="84de7-110">Create schema</span></span>](../api/externalconnection-post-schema.md) | <span data-ttu-id="84de7-111">无*或*[架构](schema.md)</span><span class="sxs-lookup"><span data-stu-id="84de7-111">None *or* [schema](schema.md)</span></span> | <span data-ttu-id="84de7-112">注册连接架构。</span><span class="sxs-lookup"><span data-stu-id="84de7-112">Register connection schema.</span></span> |
-| [<span data-ttu-id="84de7-113">获取架构</span><span class="sxs-lookup"><span data-stu-id="84de7-113">Get schema</span></span>](../api/schema-get.md)                        | [<span data-ttu-id="84de7-114">schema</span><span class="sxs-lookup"><span data-stu-id="84de7-114">schema</span></span>](schema.md)           | <span data-ttu-id="84de7-115">读取架构对象的属性。</span><span class="sxs-lookup"><span data-stu-id="84de7-115">Read properties of a schema object.</span></span> |
+| [<span data-ttu-id="1a279-112">创建架构</span><span class="sxs-lookup"><span data-stu-id="1a279-112">Create schema</span></span>](../api/externalconnection-post-schema.md) | <span data-ttu-id="1a279-113">无*或*[架构](schema.md)</span><span class="sxs-lookup"><span data-stu-id="1a279-113">None *or* [schema](schema.md)</span></span> | <span data-ttu-id="1a279-114">注册连接架构。</span><span class="sxs-lookup"><span data-stu-id="1a279-114">Register connection schema.</span></span> |
+| [<span data-ttu-id="1a279-115">获取架构</span><span class="sxs-lookup"><span data-stu-id="1a279-115">Get schema</span></span>](../api/schema-get.md)                        | [<span data-ttu-id="1a279-116">schema</span><span class="sxs-lookup"><span data-stu-id="1a279-116">schema</span></span>](schema.md)           | <span data-ttu-id="1a279-117">读取架构对象的属性。</span><span class="sxs-lookup"><span data-stu-id="1a279-117">Read properties of a schema object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="84de7-116">属性</span><span class="sxs-lookup"><span data-stu-id="84de7-116">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="1a279-118">属性</span><span class="sxs-lookup"><span data-stu-id="1a279-118">Properties</span></span>
 
-| <span data-ttu-id="84de7-117">属性</span><span class="sxs-lookup"><span data-stu-id="84de7-117">Property</span></span>   | <span data-ttu-id="84de7-118">类型</span><span class="sxs-lookup"><span data-stu-id="84de7-118">Type</span></span>                               | <span data-ttu-id="84de7-119">说明</span><span class="sxs-lookup"><span data-stu-id="84de7-119">Description</span></span>                |
+| <span data-ttu-id="1a279-119">属性</span><span class="sxs-lookup"><span data-stu-id="1a279-119">Property</span></span>   | <span data-ttu-id="1a279-120">类型</span><span class="sxs-lookup"><span data-stu-id="1a279-120">Type</span></span>                               | <span data-ttu-id="1a279-121">描述</span><span class="sxs-lookup"><span data-stu-id="1a279-121">Description</span></span>                |
 |:-----------|:-----------------------------------|:---------------------------|
-| <span data-ttu-id="84de7-120">#c1</span><span class="sxs-lookup"><span data-stu-id="84de7-120">baseType</span></span>   | <span data-ttu-id="84de7-121">字符串</span><span class="sxs-lookup"><span data-stu-id="84de7-121">String</span></span>                             | <span data-ttu-id="84de7-122">必须设置为 `microsoft.graph.externalItem`。</span><span class="sxs-lookup"><span data-stu-id="84de7-122">Must be set to `microsoft.graph.externalItem`.</span></span> <span data-ttu-id="84de7-123">必需。</span><span class="sxs-lookup"><span data-stu-id="84de7-123">Required.</span></span> |
-| <span data-ttu-id="84de7-124">properties</span><span class="sxs-lookup"><span data-stu-id="84de7-124">properties</span></span> | <span data-ttu-id="84de7-125">[属性](property.md) 集合</span><span class="sxs-lookup"><span data-stu-id="84de7-125">[property](property.md) collection</span></span> | <span data-ttu-id="84de7-126">为连接中的项目定义的属性。</span><span class="sxs-lookup"><span data-stu-id="84de7-126">The properties defined for the items in the connection.</span></span> <span data-ttu-id="84de7-127">最小属性数为1，最大值为128。</span><span class="sxs-lookup"><span data-stu-id="84de7-127">The minimum number of properties is one, the maximum is 128.</span></span> |
+| <span data-ttu-id="1a279-122">#c1</span><span class="sxs-lookup"><span data-stu-id="1a279-122">baseType</span></span>   | <span data-ttu-id="1a279-123">字符串</span><span class="sxs-lookup"><span data-stu-id="1a279-123">String</span></span>                             | <span data-ttu-id="1a279-124">必须设置为 `microsoft.graph.externalItem`。</span><span class="sxs-lookup"><span data-stu-id="1a279-124">Must be set to `microsoft.graph.externalItem`.</span></span> <span data-ttu-id="1a279-125">必需。</span><span class="sxs-lookup"><span data-stu-id="1a279-125">Required.</span></span> |
+| <span data-ttu-id="1a279-126">properties</span><span class="sxs-lookup"><span data-stu-id="1a279-126">properties</span></span> | <span data-ttu-id="1a279-127">[属性](property.md) 集合</span><span class="sxs-lookup"><span data-stu-id="1a279-127">[property](property.md) collection</span></span> | <span data-ttu-id="1a279-128">为连接中的项目定义的属性。</span><span class="sxs-lookup"><span data-stu-id="1a279-128">The properties defined for the items in the connection.</span></span> <span data-ttu-id="1a279-129">最小属性数为1，最大值为128。</span><span class="sxs-lookup"><span data-stu-id="1a279-129">The minimum number of properties is one, the maximum is 128.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="84de7-128">关系</span><span class="sxs-lookup"><span data-stu-id="84de7-128">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="1a279-130">关系</span><span class="sxs-lookup"><span data-stu-id="1a279-130">Relationships</span></span>
 
-<span data-ttu-id="84de7-129">无</span><span class="sxs-lookup"><span data-stu-id="84de7-129">None</span></span>
+<span data-ttu-id="1a279-131">无</span><span class="sxs-lookup"><span data-stu-id="1a279-131">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="84de7-130">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="84de7-130">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1a279-132">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1a279-132">JSON representation</span></span>
 
-<span data-ttu-id="84de7-131">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="84de7-131">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="1a279-133">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1a279-133">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

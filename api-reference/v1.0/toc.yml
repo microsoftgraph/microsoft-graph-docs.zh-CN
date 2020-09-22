@@ -42,6 +42,8 @@ items:
             href: /learn/modules/msgraph-changenotifications-trackchanges
           - name: 缺少 Outlook 通知（预览版）
             href: /graph/webhooks-outlook-authz?context=graph/api/1.0
+          - name: 包含资源数据的通知
+            href: /graph/webhooks-with-resource-data?context=graph/api/1.0
       - name: 更改跟踪
         displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
         items:
@@ -128,6 +130,20 @@ items:
     items:
       - name: 工具包概述
         href: /graph/toolkit/overview?context=graph/api/1.0
+      - name: 入门
+        items:
+          - name: 概述
+            href: /graph/toolkit/get-started/overview?context=graph/api/1.0
+          - name: 构建 Web 应用程序 (JavaScript)
+            href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/1.0
+          - name: 构建 SharePoint Web 部件
+            href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/1.0
+          - name: 构建 Microsoft Teams 选项卡。
+            href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/1.0
+          - name: 使用 React 的工具包
+            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/1.0
+          - name: 使用 Angular 的工具包
+            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/1.0
       - name: 组件
         items:
           - name: 登录
