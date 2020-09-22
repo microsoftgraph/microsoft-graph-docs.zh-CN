@@ -5,18 +5,18 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 15dcda1621680325a8e93f1dfada3012ec45a6b0
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 7b60fb266f5ed21bb59382fb14ade1964bbf6c9e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43179435"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042273"
 ---
 # <a name="list-serviceconfigurationrecords"></a>列出 serviceConfigurationRecords
 
 命名空间：microsoft.graph
 
-检索为域启用服务所需的[domainDnsRecord](../resources/domaindnsrecord.md)对象的列表。
+检索为域启用服务所需的 [domainDnsRecord](../resources/domaindnsrecord.md) 对象的列表。
 
 使用返回的列表将记录添加到域的区域文件中。 可以通过域注册机构或 DNS 服务器配置来完成此操作。
 
@@ -29,7 +29,7 @@ ms.locfileid: "43179435"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Directory.Read.All、Domain.ReadWrite.All |
+|应用程序 | Directory.Read.All、Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +54,7 @@ GET /domains/contoso.com/serviceConfigurationRecords
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[domainDnsRecord](../resources/domaindnsrecord.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [domainDnsRecord](../resources/domaindnsrecord.md) 对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -135,3 +135,4 @@ Content-length: 220
   "suppressions": [
   ]
 }-->
+

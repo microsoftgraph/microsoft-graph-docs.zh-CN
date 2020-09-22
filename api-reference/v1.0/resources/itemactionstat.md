@@ -6,16 +6,16 @@ description: ItemActionStat 对象提供有关一段时间内的操作的聚合�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 4207c85185281ec9944aa08dfce088739116bb8e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f1be83bef880b967758a803e694b068df9bfaebf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447680"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041265"
 ---
 # <a name="itemactionstat-resource-type"></a>itemActionStat 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 **ItemActionStat**资源提供有关一段时间内的操作的聚合详细信息。
 
@@ -51,3 +51,4 @@ ms.locfileid: "42447680"
   "suppressions": []
 }
 -->
+

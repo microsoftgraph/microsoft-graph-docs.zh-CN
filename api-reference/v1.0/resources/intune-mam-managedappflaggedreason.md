@@ -3,14 +3,14 @@ title: managedAppFlaggedReason 枚举类型
 description: 用户已被标记的原因
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ff149521b5f6f7ad88170c6290ca652e711c2a4e
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: d68e1475c7adec02fc863b236fbb965ac9e17f77
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43406692"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041314"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>managedAppFlaggedReason 枚举类型
 
@@ -25,6 +25,8 @@ ms.locfileid: "43406692"
 |:---|:---|:---|
 |无|0|无问题。|
 |rootedDevice|1 |应用注册在根/解锁设备上运行。|
+
+
 
 
 

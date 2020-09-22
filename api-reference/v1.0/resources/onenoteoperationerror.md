@@ -5,16 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 3bb434db18361c9c918189744a9197ae6a6df8e2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8159fc93744c18205e3373780c128ca37242419f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447302"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041181"
 ---
 # <a name="onenoteoperationerror-resource-type"></a>onenoteOperationError 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 失败的 OneNote 操作中的错误。
 
@@ -52,3 +52,4 @@ ms.locfileid: "42447302"
   "section": "documentation",
   "tocPath": ""
 }-->
+

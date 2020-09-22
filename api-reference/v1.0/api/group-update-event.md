@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 139139033e55efae8d7962ea8ff00b8fc9ea2ba7
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 0e0bcd8a0560f148ddefbf8e2db36cd13da430ae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123977"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041979"
 ---
 # <a name="update-event"></a>更新事件
 
@@ -25,7 +25,7 @@ ms.locfileid: "43123977"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -231,3 +231,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

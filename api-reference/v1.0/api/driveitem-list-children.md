@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 在 DriveItem 的子项关系中返回 DriveItems 集合。
 doc_type: apiPageType
-ms.openlocfilehash: a349fd05ee668da0435c23cbfe7d008c1845f662
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 18b78c05ba6d6c947c74f270a5b1c9cf14ca7256
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517725"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042133"
 ---
 # <a name="list-children-of-a-driveitem"></a>列出 DriveItem 的子项
 
@@ -171,3 +171,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+

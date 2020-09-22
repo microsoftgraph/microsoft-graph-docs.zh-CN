@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 169be1976c57dc76ff85b5eaff5620b3938479d8
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 1b4276d038fd6c59460ed906ad30dcad925a3631
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384618"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041279"
 ---
 # <a name="ipv4cidrrange-resource-type"></a>iPv4CidrRange 资源类型
 

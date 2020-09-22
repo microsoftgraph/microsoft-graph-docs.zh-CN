@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 96d69ac521ed2104c9f9371a8463e27086737da0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6f36290ba88245bb09440b6a528c1395bd19029a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449401"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041580"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -184,6 +184,8 @@ ms.locfileid: "43449401"
 - [Windows 更新计划安装](intune-deviceconfig-windowsupdatescheduledinstall.md)
 - [Windows 更新类型](intune-deviceconfig-windowsupdatetype.md)
 - [Windows 用户帐户控制设置](intune-deviceconfig-windowsuseraccountcontrolsettings.md)
+
+
 
 
 

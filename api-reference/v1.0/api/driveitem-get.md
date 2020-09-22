@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: 通过文件系统路径或 ID 在驱动器中检索 DriveItem 的元数据。
 doc_type: apiPageType
-ms.openlocfilehash: ec9c739a0f9426f4876c3b4419b0bbeda66e4a26
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: a3b797ed5a967c24af1e14ed38046305a2e388c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43806531"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042140"
 ---
 # <a name="get-a-driveitem-resource"></a>获取 DriveItem 资源
 
@@ -53,6 +53,10 @@ GET /users/{user-id}/drive/root:/{item-path}
 此方法支持使用 `$expand` 和 `$select` [OData 查询参数](/graph/query-parameters)自定义响应。
 
 如果某个项具有**子项**关系，在检索该项的元数据时可以使用 [`$expand` 查询字符串参数](/graph/query-parameters) 来包括同一调用中的项的子项。
+
+还可以使用 `includeDeletedItems=true` 查询参数返回已删除的项。
+仅当通过 ID 定位 [driveItem](../resources/driveitem.md) 时，此查询参数才有效，否则将被忽略。
+目前仅 OneDrive 个人版支持此操作。
 
 ## <a name="optional-request-headers"></a>可选的请求标头
 
@@ -150,3 +154,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+

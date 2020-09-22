@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 60f81e459ceab6b9c33271a58fc24f884e559c29
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 712e49ed16e56da3b427ea9238be77d225bdbac7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43511058"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042329"
 ---
 # <a name="force-domain-deletion"></a>强制域删除
 
@@ -30,7 +30,7 @@ ms.locfileid: "43511058"
 
 * 如果 `applications` 要重命名的其中一个是多租户应用，则会返回错误。
 
-域删除完成后，已删除域的 API 操作将返回 HTTP 404 状态代码。 若要验证域的删除，您可以执行 "[获取域](domain-get.md)" 操作。
+域删除完成后，已删除域的 API 操作将返回 HTTP 404 状态代码。 若要验证域的删除，您可以执行 " [获取域](domain-get.md) " 操作。
 
 ## <a name="permissions"></a>权限
 
@@ -40,7 +40,7 @@ ms.locfileid: "43511058"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Domain.ReadWrite.All |
+|应用程序 | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -65,7 +65,7 @@ POST /domains/{id}/forceDelete
 
 | 参数 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|`disableUserAccounts`|`Boolean`| 禁用重命名的用户帐户的选项。 如果用户帐户已禁用，则不允许用户登录。 如果设置为**true** ，则 `users` 将禁用作为此操作的一部分进行更新的。  默认值为 **True**。 |
+|`disableUserAccounts`|`Boolean`| 禁用重命名的用户帐户的选项。 如果用户帐户已禁用，则不允许用户登录。 如果设置为 **true** ，则 `users` 将禁用作为此操作的一部分进行更新的。  默认值为 **True**。 |
 
 ## <a name="response-body"></a>响应正文
 
@@ -133,3 +133,4 @@ HTTP/1.1 204 OK
   "suppressions": [
   ]
 }-->
+

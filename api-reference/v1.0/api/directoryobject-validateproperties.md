@@ -5,25 +5,25 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a7e434313c9f66d9b780d0bf521be49dd53e8b3e
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 6f401a66dc14036b4ef2f687f418a89fb477ac57
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897797"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042336"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject： validateProperties
 
 命名空间：microsoft.graph
 
-验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。  在尝试[创建](group-post-groups.md)Microsoft 365 组之前，客户端可以使用此 API 来确定显示名称或邮件昵称是否有效。 若要验证现有组的属性，请使用[group： validateProperties](group-validateproperties.md)函数。
+验证 Microsoft 365 组的显示名称或邮件昵称是否符合命名策略。  在尝试 [创建](group-post-groups.md) Microsoft 365 组之前，客户端可以使用此 API 来确定显示名称或邮件昵称是否有效。 若要验证现有组的属性，请使用 [group： validateProperties](group-validateproperties.md) 函数。
 
 将为显示名称和邮件昵称属性执行以下策略验证：
 1. 验证前缀和后缀命名策略
 2. 验证 "自定义禁止的词语" 策略
 3. 验证邮件昵称是否唯一
 
-此 API 仅返回遇到的第一个验证失败。 如果属性失败多次验证，则仅返回第一个验证失败。 但是，如果仅验证前缀和后缀命名策略，则可以验证邮件别名和显示名称，并接收验证错误的集合。 若要了解有关配置命名策略的详细信息，请参阅[Configure 命名策略](/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell)。
+此 API 仅返回遇到的第一个验证失败。 如果属性失败多次验证，则仅返回第一个验证失败。 但是，如果仅验证前缀和后缀命名策略，则可以验证邮件别名和显示名称，并接收验证错误的集合。 若要了解有关配置命名策略的详细信息，请参阅 [Configure 命名策略](/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -53,9 +53,9 @@ POST /directoryObjects/validateProperties
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |entityType|String| Group 是唯一受支持的实体类型。 |
-|displayName|String| 要验证的组的显示名称。 属性不是单独需要的。 但是，至少需要一个属性（**displayName**或**mailNickname**）。 |
-|mailNickname|String| 要验证的组的邮件别名。 属性不是单独需要的。 但是，至少需要一个属性（**displayName**或**mailNickname**）。 |
-|onBehalfOfUserId|Guid| 调用 API 时要模拟的用户的 ID。 验证结果针对的是**onBehalfOfUserId 的**属性和角色。 |
+|displayName|String| 要验证的组的显示名称。 属性不是单独需要的。 但是，至少需要一个属性 (**displayName** 或 **mailNickname**) 。 |
+|mailNickname|String| 要验证的组的邮件别名。 属性不是单独需要的。 但是，至少需要一个属性 (**displayName** 或 **mailNickname**) 。 |
+|onBehalfOfUserId|Guid| 调用 API 时要模拟的用户的 ID。 验证结果针对的是 **onBehalfOfUserId 的** 属性和角色。 |
 
 ## <a name="response"></a>响应
 
@@ -179,3 +179,4 @@ Content-Type: application/json
   "suppressions": [
   ]
 }-->
+

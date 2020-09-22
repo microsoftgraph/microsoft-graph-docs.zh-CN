@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c65bbecda618115e40a3c3cc36f2b952597b9c85
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 90da64845c9556ef37f2ea7e6498a89511012cf3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808905"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041608"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>inferenceClassificationOverride 资源类型
 
@@ -68,3 +68,4 @@ ms.locfileid: "46808905"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6af213a6f2a13308947ee16a572914b1960626e1
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: cce842e7063d407edeceff2ae159600a148e89d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124698"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041965"
 ---
 # <a name="update-group"></a>更新组
 
@@ -52,11 +52,11 @@ PATCH /groups/{id}
 |autoSubscribeNewMembers|Boolean|默认为 **false**。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。|
 |description|String|可选的组说明。 |
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。 |
-|groupTypes|String collection|指定组类型及其成员身份。  <br><br>如果集合包含 **Unified**，则该组是 Office 365 组，否则它是一个安全组。  <br><br>如果该集合包含 **DynamicMembership**，则该组具有动态成员身份；否则，成员身份是静态的。 |
+|groupTypes|String collection|指定组类型及其成员身份。  <br><br>如果集合包含 **Unified**，则该组是 Microsoft 365 组，否则它就是一个安全组。  <br><br>如果该集合包含 **DynamicMembership**，则该组具有动态成员身份；否则，成员身份是静态的。 |
 |mailEnabled|布尔|指定是否为启用邮件的组。|
 |mailNickname|String|组的邮件别名。 创建组时必须指定此属性。 |
 |securityEnabled|布尔|指定是否为安全组。 |
-|visibility|String|指定 Office 365 组的可见性。 可能的是包括：**专用**、**公用**或为空（解释为**公用**）。|
+|visibility|字符串|指定 Microsoft 365 组的可见性。 可能的是包括：**专用**、**公用**或为空（解释为**公用**）。|
 
 > **注意：**
 >
@@ -71,7 +71,7 @@ PATCH /groups/{id}
 
 ## <a name="example"></a>示例
 
-以下示例演示如何创建组。
+以下示例演示如何更新组。
 
 ### <a name="request"></a>请求
 
@@ -143,3 +143,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

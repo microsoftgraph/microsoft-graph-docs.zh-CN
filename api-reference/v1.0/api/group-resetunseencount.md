@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3858d98b6ae932043f3ba478f06be9d0e419dd4f
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 0f2880fb630675c31b107a10926754602ae1f8ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897132"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041993"
 ---
 # <a name="group-resetunseencount"></a>组：resetUnseenCount
 
@@ -96,3 +96,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

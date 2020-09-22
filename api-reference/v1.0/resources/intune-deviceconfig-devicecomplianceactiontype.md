@@ -3,14 +3,14 @@ title: deviceComplianceActionType 枚举类型
 description: 计划操作类型枚举
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e9b44df925cfad240202ad207ddb883b61d6be18
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fcfad0e76f1977f9353d63a1367cdef35c76d69e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448958"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041461"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>deviceComplianceActionType 枚举类型
 
@@ -24,12 +24,14 @@ ms.locfileid: "43448958"
 |成员|值|说明|
 |:---|:---|:---|
 |noAction|0|无操作|
-|通告|1|发送通知|
-|数据|双面|阻止 AAD 中的设备|
+|通告|1 |发送通知|
+|数据|2 |阻止 AAD 中的设备|
 |注销|第三章|停用设备|
 |擦|4 |擦除设备|
 |removeResourceAccessProfiles|5 |从设备中删除资源访问配置文件|
 |pushNotification|9 |将推送通知发送到设备|
+
+
 
 
 

@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2e70f8dde386112d9bdb743d4f9392a737ace6f3
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 6705d1d39ca3582eb71f570f47b1802b94649c50
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181804"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042252"
 ---
 # <a name="domain-verify"></a>域：验证
 
@@ -29,7 +29,7 @@ ms.locfileid: "43181804"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Directory.Read.All、Domain.ReadWrite.All |
+|应用程序 | Directory.Read.All、Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -117,3 +117,4 @@ Content-length: 192
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 426b3f8cc3f21547cec191afbfb954bf37e6969a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f8535c9553bfc6bdcf353b9341237e5d7ba27b7a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449394"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041594"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -58,6 +58,8 @@ ms.locfileid: "43449394"
 - [Windows 设备帐户](intune-devices-windowsdeviceaccount.md)
 - [Windows 设备 AD 帐户](intune-devices-windowsdeviceadaccount.md)
 - [Windows 设备 Azure AD 帐户](intune-devices-windowsdeviceazureadaccount.md)
+
+
 
 
 

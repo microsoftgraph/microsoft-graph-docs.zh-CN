@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2fe4f7ded79c0b4393657ed867534ea8ba4eb78b
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: d1fe0bd5d5de9d7eaaf86482cefd4a4696348b22
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43179400"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042245"
 ---
 # <a name="create-domain"></a>创建域
 
@@ -29,7 +29,7 @@ ms.locfileid: "43179400"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Domain.ReadWrite.All |
+|应用程序 | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -103,3 +103,4 @@ Content-length: 192
   "section": "documentation",
   "tocPath": ""
 }-->
+

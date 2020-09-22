@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 43cc6f690ce2c491b4e49de4c1d641964df7a07d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f3d4f2eda3d3fa1a7e8fe206190d30ec79179a00
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533164"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041615"
 ---
 # <a name="apphostedmediaconfig-resource-type"></a>appHostedMediaConfig 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "42533164"
 
 | 属性                          | 类型    | 说明                                                     |
 | :-------------------------------- | :------ | :---------------------------------------------------------------|
-| 块                              | 字符串  | 由智能媒体代理生成的媒体配置 blob。    |
+| 块                              | String  | 由智能媒体代理生成的媒体配置 blob。    |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -54,3 +54,4 @@ ms.locfileid: "42533164"
   "suppressions": []
 }
 -->
+

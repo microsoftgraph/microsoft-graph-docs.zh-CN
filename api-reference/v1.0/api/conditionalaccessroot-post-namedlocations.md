@@ -5,18 +5,18 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5e2188ddeeffbba37e72e2d74f9ccd930ee379d4
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: a72cdd9d50295e9f7db947cf4d15ed893a40ab91
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46565986"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042350"
 ---
 # <a name="create-namedlocation"></a>创建 namedLocation
 
 命名空间：microsoft.graph
 
-创建新的[namedLocation](../resources/namedlocation.md)对象。
+创建新的 [namedLocation](../resources/namedlocation.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -45,11 +45,11 @@ POST /identity/conditionalAccess/namedLocations
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[ipNamedLocation](../resources/ipnamedlocation.md)或[COUNTRYNAMEDLOCATION](../resources/countrynamedlocation.md)对象的 JSON 表示形式。
+在请求正文中，提供 [ipNamedLocation](../resources/ipnamedlocation.md) 或 [COUNTRYNAMEDLOCATION](../resources/countrynamedlocation.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的[IpNamedLocation](../resources/ipnamedlocation.md)或[countryNamedLocation](../resources/countrynamedlocation.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和新的 [IpNamedLocation](../resources/ipnamedlocation.md) 或 [countryNamedLocation](../resources/countrynamedlocation.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -206,3 +206,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 75c07fa4f2e8304db615d658b6ad7aea688ae944
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 421914c6b0de8af68177051226c33c737b5b47b8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123647"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042063"
 ---
 # <a name="create-rejectedsender"></a>创建 rejectedSender
 
@@ -25,7 +25,7 @@ ms.locfileid: "43123647"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -100,3 +100,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

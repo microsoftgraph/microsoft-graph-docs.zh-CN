@@ -3,14 +3,14 @@ title: managedAppDiagnosticStatus 资源类型
 description: 表示诊断状态。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a8c7eb75b2bb8b146c9b227562d7b9cdabe8da41
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c708da33594087b61b1c28e2ebac5b8872541838
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445753"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041307"
 ---
 # <a name="managedappdiagnosticstatus-resource-type"></a>managedAppDiagnosticStatus 资源类型
 
@@ -45,6 +45,8 @@ ms.locfileid: "43445753"
   "mitigationInstruction": "String"
 }
 ```
+
+
 
 
 

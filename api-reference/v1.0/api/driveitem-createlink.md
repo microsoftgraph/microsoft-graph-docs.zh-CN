@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 可以使用 createLink 操作通过共享链接共享 DriveItem。
 doc_type: apiPageType
-ms.openlocfilehash: edd0259e35191c112c779b0afd545f7848675e8d
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: 6de5e91183e830193a5f53a1263e3a81f06d4bbf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934848"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042196"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>为 DriveItem 创建共享链接
 
@@ -54,8 +54,8 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 |   名称       |  类型  |                                 说明                                  |
 | :------------| :----- | :--------------------------------------------------------------------------- |
 | **类型**     | string | 要创建的共享链接的类型。`view`、`edit` 或 `embed`。       |
-| **password** | string | 由创建者设置的共享链接的密码。 可选和 OneDrive 仅限个人版。
-| **expirationDateTime** | string | 格式为 Yyyy-mm-ddthh： MM： ssZ 的字符串表示该权限的过期时间。 |
+| **password** | 字符串 | 由创建者设置的共享链接的密码。 可选和 OneDrive 仅限个人版。
+| **expirationDateTime** | 字符串 | 格式为 Yyyy-mm-ddthh： MM： ssZ 的字符串表示该权限的过期时间。 |
 | **scope** | string | 可选。 要创建的链接的范围。 `anonymous` 或 `organization`。 |
 
 
@@ -293,3 +293,4 @@ Content-Type: application/json
   "suppressions": [
   ]
 } -->
+

@@ -7,18 +7,18 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 为 driveItem 发送共享邀请。
 doc_type: apiPageType
-ms.openlocfilehash: 327f929a6b3fb2d3c45a39fc50af659a119fbe5c
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: 0ef9d44623dd27f8172aeaaf07d4ce0d129eae7f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934841"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042147"
 ---
 # <a name="send-a-sharing-invitation"></a>发送共享邀请
 
 命名空间：microsoft.graph
 
-为**driveItem**发送共享邀请。
+为 **driveItem**发送共享邀请。
 共享邀请向收件人提供权限，并选择性地向其发送带[共享链接][]的电子邮件。
 
 ## <a name="permissions"></a>权限
@@ -157,7 +157,7 @@ Content-type: application/json
 ## <a name="remarks"></a>备注
 
 * **driveType** 为 `personal` 的 [Drives](../resources/drive.md)（OneDrive 个人版）无法创建或修改根 DriveItem 上的权限。
-* 有关可用角色的列表，请参阅[roles 属性值](../resources/permission.md#roles-property-values)。
+* 有关可用角色的列表，请参阅 [roles 属性值](../resources/permission.md#roles-property-values)。
 
 ## <a name="error-responses"></a>错误响应
 
@@ -177,3 +177,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+

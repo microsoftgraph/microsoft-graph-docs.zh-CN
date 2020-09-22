@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8aa6e12cc1ea37b7f160b61c264751298c32ab48
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: d54fd319db767bbde85b2d1bef93b0f740411d0a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124523"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041825"
 ---
 # <a name="get-a-group-setting"></a>获取组设置
 
@@ -54,7 +54,7 @@ GET /groups/{id}/settings/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[groupSetting](../resources/groupsetting.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [groupSetting](../resources/groupsetting.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -123,3 +123,4 @@ Content-length: 194
   "suppressions": [
   ]
 }-->
+

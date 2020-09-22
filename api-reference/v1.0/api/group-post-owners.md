@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 16693fde8359e61ad9fafb3725e2650704e776dc
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 62b28ee92724347466d3b9ce00a1e15172a93f7f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123634"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042105"
 ---
 # <a name="add-group-owner"></a>添加组所有者
 
@@ -107,4 +107,5 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+
 

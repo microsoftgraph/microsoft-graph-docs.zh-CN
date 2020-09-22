@@ -3,14 +3,14 @@ title: ratingGermanyMoviesType 枚举类型
 description: 德国的电影评分标签
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 33d38d0e9f0b6b839ca4f05238cd5b11a01f2278
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e2a9c6379c4109f366f035b677f1163cfc52228a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472845"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041335"
 ---
 # <a name="ratinggermanymoviestype-enum-type"></a>ratingGermanyMoviesType 枚举类型
 
@@ -24,12 +24,14 @@ ms.locfileid: "43472845"
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电影内容|
-|allBlocked|1|不允许任何电影内容|
-|概要|双面|Ab 0 Jahren，无期限限制|
+|allBlocked|1 |不允许任何电影内容|
+|概要|2 |Ab 0 Jahren，无期限限制|
 |agesAbove6|第三章|Ab 6 Jahren，年龄6及更早|
 |agesAbove12|4 |Ab 12 Jahren，12岁及更早|
 |agesAbove16|5 |Ab 16 Jahren，超过16岁及以上|
 |成人|6 |Ab 18 Jahren，仅成人|
+
+
 
 
 
