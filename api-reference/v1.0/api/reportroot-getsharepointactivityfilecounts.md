@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: aaca21e2ffbaa23ca9bf68b57b5f1a96a0020c5c
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 3e924db01708f0fa2de1fbd5b3e301a8416f156e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897762"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045640"
 ---
 # <a name="reportroot-getsharepointactivityfilecounts"></a>reportRoot: getSharePointActivityFileCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "44897762"
 
 获取与 SharePoint 网站中存储的文件进行交互的唯一许可用户数。
 
-> **注意：** 若要详细了解不同的报表视图和名称，请参阅[Microsoft 365 reports-SharePoint 活动](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f)。
+> **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Microsoft 365 reports-SharePoint 活动](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f)。
 
 ## <a name="permissions"></a>权限
 
@@ -30,7 +30,7 @@ ms.locfileid: "44897762"
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
 | 应用                            | Reports.Read.All                         |
 
-**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 For api 以读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
+**注意**：若要获得委派权限以允许应用代表用户读取服务使用情况报告，租户管理员必须事先为用户分配适当的 Azure AD 受限管理员角色。 有关更多详细信息，请参阅[授权 API 读取 Microsoft 365 使用情况报告](/graph/reportroot-authorization)。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -127,3 +127,4 @@ Report Refresh Date,Viewed Or Edited,Synced,Shared Internally,Shared Externally,
   "suppressions": [
   ]
 }-->
+

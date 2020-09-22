@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: e9a13bc36b2ed1eb42b4155e86d69826b0c22d9d
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d812efcff378d5ef58f7d49fe318768e2efdb31e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810354"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046093"
 ---
 # <a name="workposition-resource-type"></a>workPosition 资源类型
 
@@ -38,14 +38,14 @@ ms.locfileid: "46810354"
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|categories|String collection|用户已与此位置关联的类别。|
+|类别|String 集合|用户已与此位置关联的类别。|
 |征求|[relatedPerson](../resources/relatedperson.md) 集合|与此职位相关联的同事。|
 |createdBy|[identitySet](../resources/identityset.md)|提供创建实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |createdDateTime|DateTimeOffset|为创建实体时提供 dateTimeOffset。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |介绍|[positionDetail](../resources/positiondetail.md)|包含有关职位的详细信息。 |
 |id|String|用于单独寻址实体的标识符。 继承自 [entity](../resources/entity.md)|
 |推导|[inferenceData](../resources/inferencedata.md)|如果实体是由创建或修改应用程序推断的，则包含推理详细信息。 继承自 [itemFacet](../resources/itemfacet.md)。|
-|isCurrent|布尔值|指示位置是否是最新的。|
+|isCurrent|Boolean|指示位置是否是最新的。|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|提供上次修改实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |lastModifiedDateTime|DateTimeOffset|为创建实体时提供 dateTimeOffset。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |manager|[relatedPerson](../resources/relatedperson.md)|包含用户在此位置的经理的详细信息。|
@@ -101,3 +101,4 @@ ms.locfileid: "46810354"
   "isCurrent": "Boolean"
 }
 ```
+

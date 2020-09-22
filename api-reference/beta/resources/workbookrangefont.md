@@ -5,16 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 9ddbb607a243f4571d53dcf887f80a171b230748
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 126bff335ff8f9345bbdcf54e08cff471fc064b3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519174"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046207"
 ---
 # <a name="workbookrangefont-resource-type"></a>workbookRangeFont 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "42519174"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|bold|boolean|表示字体的加粗状态。|
+|bold|布尔|表示字体的加粗状态。|
 |color|string|文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
 |italic|布尔|表示字体的斜体状态。|
 |name|string|字体名称（例如"Calibri"）|
@@ -78,3 +78,5 @@ ms.locfileid: "42519174"
   "suppressions": []
 }
 -->
+
+

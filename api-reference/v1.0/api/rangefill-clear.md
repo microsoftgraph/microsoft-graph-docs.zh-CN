@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 19cfd3086baec7b3729f034fbef0ce7712235403
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3f7a6eec69f1154b981cd1b1277d7ad2bc646c8e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510534"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045661"
 ---
 # <a name="rangefill-clear"></a>RangeFill: clear
 
@@ -99,3 +99,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

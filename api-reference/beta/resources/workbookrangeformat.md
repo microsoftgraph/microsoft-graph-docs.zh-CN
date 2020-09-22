@@ -5,16 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 27024cdc75358d80849b7fa67ff6262faadbbe46
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 08d1b0fa13e1b615912433b8fda378b89bf9f926
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519167"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046193"
 ---
 # <a name="workbookrangeformat-resource-type"></a>workbookRangeFormat 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ ms.locfileid: "42519167"
 |:---------------|:--------|:----------|
 |[获取 workbookRangeFormat](../api/rangeformat-get.md) | [workbookRangeFormat](workbookrangeformat.md) |读取 rangeFormat 对象的属性和关系。|
 |[创建 workbookRangeBorder](../api/rangeformat-post-borders.md) |[workbookRangeBorder](workbookrangeborder.md)| 通过发布到边框集合创建新的 RangeBorder。|
-|[列出边框](../api/rangeformat-list-borders.md) |[workbookRangeBorder](workbookrangeborder.md)集合| 获取 RangeBorder 对象集合。|
+|[列出边框](../api/rangeformat-list-borders.md) |[workbookRangeBorder](workbookrangeborder.md) 集合| 获取 RangeBorder 对象集合。|
 |[更新](../api/rangeformat-update.md) | [workbookRangeFormat](workbookrangeformat.md) |更新 RangeFormat 对象。 |
 |[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|无|根据列中的当前数据更改当前区域的列宽，以达到最佳宽度。|
 |[Autofitrows](../api/rangeformat-autofitrows.md)|无|根据列中的当前数据更改当前区域的行高，以达到最佳高度。|
@@ -44,7 +44,7 @@ ms.locfileid: "42519167"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|borders|[workbookRangeBorder](workbookrangeborder.md)集合|应用于所选的整个区域的 border 对象的集合。只读。|
+|borders|[workbookRangeBorder](workbookrangeborder.md) 集合|应用于所选的整个区域的 border 对象的集合。只读。|
 |fill|[workbookRangeFill](workbookrangefill.md)|返回在整个区域内定义的 fill 对象。只读。|
 |font|[workbookRangeFont](workbookrangefont.md)|返回在所选的整个区域内定义的 font 对象。只读。|
 |protection|[formatProtection](formatprotection.md)|返回某一区域的格式 protection 对象。 只读。|
@@ -86,3 +86,5 @@ ms.locfileid: "42519167"
   "suppressions": []
 }
 -->
+
+

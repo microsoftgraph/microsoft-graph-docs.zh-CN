@@ -3,14 +3,14 @@ title: 创建 windows10TeamGeneralConfiguration
 description: 创建新的 windows10TeamGeneralConfiguration 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3b0bb69b66039aa4462407ad52de9d38c89696d7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ca152abe3374cf3cdb355012d623ff35fd34761b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442024"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045675"
 ---
 # <a name="create-windows10teamgeneralconfiguration"></a>创建 windows10TeamGeneralConfiguration
 
@@ -51,11 +51,11 @@ POST /deviceManagement/deviceConfigurations
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |azureOperationalInsightsBlockTelemetry|Boolean|指示是否阻止 Azure 操作见解。|
 |azureOperationalInsightsWorkspaceId|String|Azure 操作见解工作区 ID。|
@@ -157,6 +157,9 @@ Content-Length: 1322
   "welcomeScreenMeetingInformation": "showOrganizerAndTimeOnly"
 }
 ```
+
+
+
 
 
 

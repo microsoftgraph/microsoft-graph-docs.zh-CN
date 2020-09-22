@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
 author: ruoyingl
-ms.openlocfilehash: d5622a727ed084f7dc8e991dd76b166527988549
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 5f296d7d2d748213c24f1d49f6363f86d2b1af84
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807365"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046102"
 ---
 # <a name="workbooksortfield-resource-type"></a>workbookSortField 资源类型
 
@@ -71,3 +71,5 @@ ms.locfileid: "46807365"
   "suppressions": []
 }
 -->
+
+

@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f377e333b417daea6fafbd5b4f0022b5dd34c9fc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 054b2db2b1292136c5044a158f3aaa6072d68e51
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519188"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046232"
 ---
 # <a name="workbookrangeborder-resource-type"></a>workbookRangeBorder 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,14 +27,14 @@ ms.locfileid: "42519188"
 |:---------------|:--------|:----------|
 |[获取 workbookRangeBorder](../api/rangeborder-get.md) | [workbookRangeBorder](workbookrangeborder.md) |读取 rangeborder 对象的属性和关系。|
 |[更新](../api/rangeborder-update.md) | [workbookRangeBorder](workbookrangeborder.md) |更新 RangeBorder 对象。 |
-|[列出](../api/rangeborder-list.md) | [workbookRangeBorder](workbookrangeborder.md)集合 |获取 rangeBorder 对象集合。 |
+|[列出](../api/rangeborder-list.md) | [workbookRangeBorder](workbookrangeborder.md) 集合 |获取 rangeBorder 对象集合。 |
 |[Itemat](../api/rangebordercollection-itemat.md)|[workbookRangeBorder](workbookrangeborder.md)|使用其索引获取 border 对象|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|color|字符串|表示窗体 #RRGGBB（例如“FFA500”）的边框线条颜色或作为已命名的 HTML 颜色（例如“orange”）的 HTML 颜色代码。|
-|id|字符串|表示边框标识符。可能的值是：`EdgeTop`、`EdgeBottom`、`EdgeLeft`、`EdgeRight`、`InsideVertical`、`InsideHorizontal`、`DiagonalDown`、`DiagonalUp`。只读。|
+|color|string|表示窗体 #RRGGBB（例如“FFA500”）的边框线条颜色或作为已命名的 HTML 颜色（例如“orange”）的 HTML 颜色代码。|
+|id|string|表示边框标识符。可能的值是：`EdgeTop`、`EdgeBottom`、`EdgeLeft`、`EdgeRight`、`InsideVertical`、`InsideHorizontal`、`DiagonalDown`、`DiagonalUp`。只读。|
 |sideIndex|string|指示边框的特定边的常量值。可能的值是：`EdgeTop`、`EdgeBottom`、`EdgeLeft`、`EdgeRight`、`InsideVertical`、`InsideHorizontal`、`DiagonalDown`、`DiagonalUp`。只读。|
 |style|string|线条样式的常量之一，指定边框的线条样式。可能的值是：`None`、`Continuous`、`Dash`、`DashDot`、`DashDotDot`、`Dot`、`Double`、`SlantDashDot`。|
 |weight|string|指定区域周围边框的权重。可能的值是：`Hairline`、`Thin`、`Medium`、`Thick`。|
@@ -78,3 +78,5 @@ ms.locfileid: "42519188"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 9b997d111f31f290c0721172fdb59d9fdd0fd3bb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 828997f6bc89d23d63ab997418f6b3e8d48d1f83
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518992"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046060"
 ---
 # <a name="yammergroupsactivitycounts-resource-type"></a>yammerGroupsActivityCounts 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "42518992"
 | reportRefreshDate | 日期   |
 | 人             | Int64  |
 | 发布            | Int64  |
-| 自述              | Int64  |
+| 阅读              | Int64  |
 | reportDate        | 日期   |
 | reportPeriod      | String |
 
@@ -46,3 +46,5 @@ ms.locfileid: "42518992"
   "reportPeriod": "String"
 }
 ```
+
+

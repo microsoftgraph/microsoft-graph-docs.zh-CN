@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a8fb5810f43b415aee7a6151267bfd43e8644272
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: da469982ba0f5adf8c6387057d21f31b6d977baa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519153"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046172"
 ---
 # <a name="workbookrangeview-resource-type"></a>workbookRangeView 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -72,3 +72,5 @@ RangeView 表示父范围的一组可见单元格。
   "values": "Json"
 }
 ```
+
+

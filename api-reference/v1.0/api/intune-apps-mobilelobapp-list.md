@@ -3,14 +3,14 @@ title: 列出 mobileLobApps
 description: 列出 mobileLobApp 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 11d8569ee2c085af5f9cf35e5ade9e079a6b5572
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5c52aa6ce55d21f21d2bbaeadb5ab6220c27a84e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464628"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045955"
 ---
 # <a name="list-mobilelobapps"></a>列出 mobileLobApps
 
@@ -94,6 +94,9 @@ Content-Length: 983
   ]
 }
 ```
+
+
+
 
 
 

@@ -1,24 +1,24 @@
 ---
 title: workbookRange 资源类型
-description: 区域表示一个或多个相邻的单元格，例如单元格、行、列、单元格块等。
+description: 区域表示一个或多个相邻的单元格，如单元格、行、列、单元格块等。
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 23748b2f92d8ba786ba6e8ef82df0243f9fe2617
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b0f4afa72c4662f3f1254371a2c0170792a14196
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519195"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046216"
 ---
 # <a name="workbookrange-resource-type"></a>workbookRange 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-区域表示一个或多个相邻的单元格，例如单元格、行、列、单元格块等。
+区域表示一个或多个相邻的单元格，如单元格、行、列、单元格块等。
 
 
 ## <a name="methods"></a>方法
@@ -35,7 +35,7 @@ ms.locfileid: "42519195"
 |[Entirecolumn](../api/range-entirecolumn.md)|[workbookRange](workbookrange.md)|获取表示区域整列的对象。|
 |[Entirerow](../api/range-entirerow.md)|[workbookRange](workbookrange.md)|获取表示区域整行的对象。|
 |[Intersection](../api/range-intersection.md)|[workbookRange](workbookrange.md)|获取表示指定区域的矩形交集的 range 对象。|
-|[Lastcell](../api/range-lastcell.md)|[Range](workbookrange.md)|获取区域内的最后一个单元格。例如，“B2:D5”的最后一个单元格是“D5”。|
+|[Lastcell](../api/range-lastcell.md)|[区域](workbookrange.md)|获取区域内的最后一个单元格。例如，“B2:D5”的最后一个单元格是“D5”。|
 |[Lastcolumn](../api/range-lastcolumn.md)|[workbookRange](workbookrange.md)|获取区域内的最后一列。例如，“B2:D5”的最后一列是“D2:D5”。|
 |[Lastrow](../api/range-lastrow.md)|[区域](workbookrange.md)|获取区域内的最后一行。例如，“B2:D5”的最后一行是“B5:D5”。|
 |[Offsetrange](../api/range-offsetrange.md)|[workbookRange](workbookrange.md)|获取表示与指定区域偏移的区域的对象。返回的区域的尺寸将与该区域匹配。如果强制使生成的区域位于工作表网格的边界之外，则会引发异常。|
@@ -43,10 +43,10 @@ ms.locfileid: "42519195"
 |[Rowsabove](../api/workbookrange-rowsabove.md)|[workbookRangeView](workbookrangeview.md)|获取给定范围上方的一定数量的行。|
 |[Rowsbelow](../api/workbookrange-rowsbelow.md)|[workbookRangeView](workbookrangeview.md)|获取给定范围下方的一定数量的行。|
 |[Usedrange](../api/range-usedrange.md)|[workbookRange](workbookrange.md)|返回指定 range 对象的所用区域。|
-|[清除](../api/range-clear.md)|无|清除区域值、格式、填充、边框等。|
-|[删除](../api/range-delete.md)|无|删除与区域相关的单元格。|
+|[清除](../api/range-clear.md)|None|清除区域值、格式、填充、边框等。|
+|[删除](../api/range-delete.md)|None|删除与区域相关的单元格。|
 |[插入](../api/range-insert.md)|[workbookRange](workbookrange.md)|将单个单元格或一系列单元格插入到工作表中取代此区域，并移动其他单元格以留出空间。在现在空白的空间返回新的 Range 对象。|
-|[合并](../api/range-merge.md)|无|将范围单元格合并到工作表的一个区域内。|
+|[合并](../api/range-merge.md)|None|将范围单元格合并到工作表的一个区域内。|
 |[Resizedrange](../api/workbookrange-resizedrange.md)|[workbookRangeView](workbookrangeview.md)|获取与当前范围对象类似的范围对象，但其右下角可通过一定数量的行和列进行展开（或合拢）。|
 |[Unmerge](../api/range-unmerge.md)|None|将范围单元格取消合并为各个单元格。|
 |[Visibleview](../api/workbookrange-visibleview.md)|[workbookRangeView](workbookrangeview.md)|获取筛选的范围中的可见范围。|
@@ -54,16 +54,16 @@ ms.locfileid: "42519195"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|address|字符串|表示 A1 样式的区域引用。地址值将包含工作表引用（如 Sheet1!A1:B4）。只读。|
+|address|string|表示 A1 样式的区域引用。地址值将包含工作表引用（如 Sheet1!A1:B4）。只读。|
 |addressLocal|string|以用户语言表示对指定区域的区域引用。只读。|
 |cellCount|int|区域中的单元格数目。只读。|
-|columnCount|INT|表示区域中的列总数。只读。|
+|columnCount|int|表示区域中的列总数。只读。|
 |columnHidden|boolean|表示当前区域中的所有列是否隐藏。|
 |columnIndex|int|表示区域中第一个单元格的列编号。从零开始编制索引。只读。|
 |formulas|Json|表示采用 A1 表示法的公式。|
 |formulasLocal|Json|表示采用 A1 样式表示法的公式，使用用户的语言和数字格式区域设置。例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。|
 |formulasR1C1|Json|表示采用 R1C1 样式表示法的公式。|
-|hidden|布尔|表示当前区域中的所有单元格是否隐藏。只读。|
+|hidden|boolean|表示当前区域中的所有单元格是否隐藏。只读。|
 |numberFormat|Json|表示 Excel 中指定单元格的数字格式代码。|
 |rowCount|int|返回区域中的总行数。只读。|
 |rowHidden|boolean|表示当前区域中的所有行是否隐藏。|
@@ -129,3 +129,5 @@ ms.locfileid: "42519195"
   "suppressions": []
 }
 -->
+
+

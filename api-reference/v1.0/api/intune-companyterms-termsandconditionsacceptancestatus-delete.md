@@ -3,14 +3,14 @@ title: 删除 termsAndConditionsAcceptanceStatus
 description: 删除 termsAndConditionsAcceptanceStatus。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f7c8a29b5c1cf7e73a54a50c6158f47b6f9cb2ba
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4c499453aa4018598443372b1b4673485ae50f92
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442137"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045815"
 ---
 # <a name="delete-termsandconditionsacceptancestatus"></a>删除 termsAndConditionsAcceptanceStatus
 
@@ -63,6 +63,9 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{ter
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

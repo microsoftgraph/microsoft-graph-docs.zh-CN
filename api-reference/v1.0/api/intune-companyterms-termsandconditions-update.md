@@ -3,14 +3,14 @@ title: 更新 termsAndConditions
 description: 更新 termsAndConditions 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 70ca9c1701f65e50c3a970881ffcc9357fc4bf3c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 05dd58ed04cf1e54e9aff313149f2c7b379fb75f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446231"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045892"
 ---
 # <a name="update-termsandconditions"></a>更新 termsAndConditions
 
@@ -52,11 +52,11 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|T&C 策略的唯一标识符。|
+|id|String|T&C 策略的唯一标识符。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|String|管理员提供的 T&C 策略名称。 |
-|description|字符串|管理员提供的 T&C 策略描述。|
+|description|String|管理员提供的 T&C 策略描述。|
 |title|String|管理员提供的条款和条件标题。 这会向用户显示，提示用户接受 T&C 策略。|
 |bodyText|String|管理员提供的条款和条件正文文本，通常为条款本身。 这会向用户显示，提示用户接受 T&C 策略。|
 |acceptanceStatement|String|管理员提供的条款和条件说明，通常会说明接受 T&C 策略中陈述的条款和条件意味着什么。 这会向用户显示，提示用户接受 T&C 策略。|
@@ -107,6 +107,9 @@ Content-Length: 445
   "version": 7
 }
 ```
+
+
+
 
 
 

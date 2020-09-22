@@ -3,14 +3,14 @@ title: 删除 termsAndConditions
 description: 删除 termsAndConditions。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 23459c185b06d261eac03ca38b906a05be68fed1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fe1594f27a214a85cee823938a1031c2ef33b4c4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468944"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045913"
 ---
 # <a name="delete-termsandconditions"></a>删除 termsAndConditions
 
@@ -64,6 +64,9 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{ter
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

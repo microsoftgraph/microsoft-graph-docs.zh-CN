@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f2cfe082fe0a493e6b78c2a74171cc02da852063
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9ab10522c4f0f2a73c78ac12ddf2995aae89ae3a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462915"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046025"
 ---
 # <a name="delete-attachment"></a>删除附件
 
@@ -151,3 +151,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+
