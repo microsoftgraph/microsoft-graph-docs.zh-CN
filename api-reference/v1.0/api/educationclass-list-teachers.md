@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9b56a97c5fb30148d52de0514afc93386cc5600b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a35b33423f5928cfa3ddea527dc75b0cb1106052
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517570"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971242"
 ---
 # <a name="list-teachers"></a>列出教师
 
@@ -138,3 +138,4 @@ Content-length: 593
   "suppressions": [
   ]
 }-->
+

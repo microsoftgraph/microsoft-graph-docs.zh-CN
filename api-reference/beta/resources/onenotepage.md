@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: jewan-microsoft
-ms.openlocfilehash: d219677c70be566b5039a39c5421c91a9ab11c8c
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 463ac02029753fcc99392fbc3db464989f5ae01a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809368"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971537"
 ---
 # <a name="onenotepage-resource-type"></a>onenotePage 资源类型
 
@@ -93,3 +93,5 @@ OneNote 笔记本中的页面。
   "suppressions": []
 }
 -->
+
+

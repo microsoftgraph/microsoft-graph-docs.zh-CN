@@ -5,20 +5,20 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 440927da1dc01116d0a3fa93b1915fe81f7a1a0f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 492809e15132294a32834fcbbd90de696e8e219f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521802"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971508"
 ---
 # <a name="plannerassignment-resource-type"></a>plannerAssignment 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerAssignment**资源表示将任务分配给用户。 在开放类型[plannerAssignments](plannerassignments.md)中使用此类型。
+**PlannerAssignment**资源表示将任务分配给用户。 在开放类型 [plannerAssignments](plannerassignments.md)中使用此类型。
 
 
 ## <a name="properties"></a>属性
@@ -60,3 +60,5 @@ ms.locfileid: "42521802"
   "suppressions": []
 }
 -->
+
+

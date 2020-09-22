@@ -5,12 +5,12 @@ localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 32a2aba9aab207cede8118baed4435708995192a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e8282422f9724cbffff8f3e9573f0a7cb0a94920
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473430"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971816"
 ---
 # <a name="mailboxusagemailboxcounts-resource-type"></a>mailboxUsageMailboxCounts 资源类型
 
@@ -44,3 +44,5 @@ ms.locfileid: "43473430"
   "reportPeriod": "String"
 }
 ```
+
+

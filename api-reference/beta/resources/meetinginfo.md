@@ -5,22 +5,22 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 1c6bda0463b2762122695ed84ecc02c1b5dd3d1b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2330fe401ed0f220792bbf0de38bfb92b2aade28
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522734"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971666"
 ---
 # <a name="meetinginfo-resource-type"></a>meetingInfo 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 这是一个包含会议特定信息的抽象类。
  
-若要加入现有会议，必须将[organizerMeetingInfo](organizermeetinginfo.md)与[chatInfo](./chatinfo.md)或仅指定[tokenMeetingInfo](tokenmeetinginfo.md)一起指定。
+若要加入现有会议，必须将 [organizerMeetingInfo](organizermeetinginfo.md) 与 [chatInfo](./chatinfo.md)或仅指定 [tokenMeetingInfo](tokenmeetinginfo.md)一起指定。
 
 
 ## <a name="derived-types"></a>派生类型
@@ -58,3 +58,5 @@ ms.locfileid: "42522734"
   "suppressions": []
 }
 -->
+
+

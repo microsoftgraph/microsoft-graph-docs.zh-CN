@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 039d2be82a08057c9f9a5405d3591898304a8bcc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3d1f9c7ad147b6aa3f4d52c314931d5c40af2b47
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522748"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971690"
 ---
 # <a name="meetingactivitystatistics-resource-type"></a>meetingActivityStatistics 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "42522748"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示有关用户在 Microsoft Outlook、Microsoft 团队或 Skype for Business 会议中所用时间的数据。 这基于[activityStatistics](../resources/activitystatistics.md)。
+表示有关用户在 Microsoft Outlook、Microsoft 团队或 Skype for Business 会议中所用时间的数据。 这基于 [activityStatistics](../resources/activitystatistics.md)。
 <!--
 ## Methods
 
@@ -87,3 +87,4 @@ ms.locfileid: "42522748"
   "section": "documentation",
   "tocPath": ""
 }-->
+

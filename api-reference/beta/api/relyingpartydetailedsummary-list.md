@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 23aebcc68e0f0aa2fec0be895dffb8c723a1ddc8
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 6009003b47b1e0bf0406cb3f9cbe8853d8a9b72b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917095"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971956"
 ---
 # <a name="list-relyingpartydetailedsummary"></a>列出 relyingPartyDetailedSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "43917095"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索**relyingPartyDetailedSummary**对象的列表。
+检索 **relyingPartyDetailedSummary** 对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -47,10 +47,10 @@ GET /reports/getRelyingPartyDetailedSummary
 
 此方法支持一些 OData 查询参数来帮助自定义响应。 
 
-- 您可以使用`$filter`参数按 RelyingPartyId、migrationStatus 和其他属性进行筛选。 例如，$filter = relyingPartyId eq ' 标识符 '。
-- 可以在任何`$orderby`GET `$top`请求中`$skip`使用、和查询参数。
+- 您可以使用 `$filter` 参数按 relyingPartyId、migrationStatus 和其他属性进行筛选。 例如，$filter = relyingPartyId eq ' 标识符 '。
+- 可以 `$orderby` `$top` `$skip` 在任何 GET 请求中使用、和查询参数。
 
-有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 
 ## <a name="request-headers"></a>请求标头
@@ -65,7 +65,7 @@ GET /reports/getRelyingPartyDetailedSummary
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -145,3 +145,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

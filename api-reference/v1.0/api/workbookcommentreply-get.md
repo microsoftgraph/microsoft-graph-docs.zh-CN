@@ -5,18 +5,18 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: fc62064ae63c9bc2645311e18370ae72c24b2a83
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2c6727cd0500b9ece8a84cff5a2b42e64ee5dda7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508791"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970703"
 ---
 # <a name="get-workbookcommentreply"></a>获取 workbookCommentReply
 
 命名空间：microsoft.graph
 
-检索[workbookCommentReply](../resources/workbookcommentreply.md)对象的属性和关系。
+检索 [workbookCommentReply](../resources/workbookcommentreply.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -48,7 +48,7 @@ GET /workbook/comments/{id}/replies/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[workbookCommentReply](../resources/workbookcommentreply.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [workbookCommentReply](../resources/workbookcommentreply.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -116,3 +116,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

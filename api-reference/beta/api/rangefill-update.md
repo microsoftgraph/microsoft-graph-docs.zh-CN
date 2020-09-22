@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b1ee666839ea250f24ff817f06ec74d7adfa32f7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f41a6eb19649d63e08966b82974ca677b52dda27
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454614"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971963"
 ---
 # <a name="update-rangefill"></a>更新 rangefill
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,7 +50,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[workbookRangeFill](../resources/workbookrangefill.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [workbookRangeFill](../resources/workbookrangefill.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -110,3 +110,5 @@ Content-length: 28
   ]
 }
 -->
+
+

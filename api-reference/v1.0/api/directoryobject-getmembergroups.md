@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 60d21aefcf1d2abac66e7797624984570bd132bf
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 160f40dc21a7cb35c9f409f02b0cc6d2d258c2ea
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181921"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971312"
 ---
 # <a name="get-member-groups"></a>获取成员组
 
@@ -25,7 +25,7 @@ ms.locfileid: "43181921"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.readbasic.all、GroupMember、GroupMember、和 Group。 read. all、user. all 和 Group。 read. all、Directory 中的所有读取。全部，全部读取。全部，Read. All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | User. all 和 GroupMember、User. all 和 Group. all、Read. All： All |
+|应用程序 | User. all 和 GroupMember、User. all 和 Group. all、Read. All： All |
 
 使用下面的方案指南可帮助确定要使用的权限类型：
 - 使用 User. read 和 GroupMember 或 User. read 和 Group。 Read。获取登录用户的组成员身份的所有权限。
@@ -129,3 +129,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

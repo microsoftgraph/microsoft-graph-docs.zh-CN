@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ce3dc9e8af86ed9f0b5b40d33db3232bb735cc0b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b814ff6a4143b7115d9c226243ca133bc632867d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463797"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971116"
 ---
 # <a name="deviceconfigurationdeviceactivity-function"></a>deviceConfigurationDeviceActivity 函数
 
@@ -72,6 +72,9 @@ Content-Length: 123
   }
 }
 ```
+
+
+
 
 
 

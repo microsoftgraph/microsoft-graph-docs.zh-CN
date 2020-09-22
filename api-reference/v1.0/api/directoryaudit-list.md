@@ -1,22 +1,22 @@
 ---
 title: 列出 directoryAudits
-description: 介绍了 Microsoft Graph API 中的 directoryAudit 资源（实体）的列表方法。
+description: 介绍了 Microsoft Graph API 中 directoryAudit 资源 (entity) 的 list 方法。
 localization_priority: Normal
 author: SarahBar
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b3e751ea0652b2a6c621079372fa167e8de03df9
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: 5659feb6b08a90b7bac44ae2677925ec733c2328
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543392"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971333"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
 命名空间：microsoft.graph
 
-获取 Azure Active Directory 生成的审核日志的列表。 这包括由 Azure AD 中的各种服务生成的审核日志，包括用户、应用、设备和组管理、特权标识管理（PIM）、访问查看、使用条款、标识保护、密码管理（自助服务和管理员密码重置）和自助服务组管理等等。
+获取 Azure Active Directory 生成的审核日志的列表。 这包括由 Azure AD 中的各种服务生成的审核日志，包括用户、应用程序、设备和组管理、特权身份管理 (PIM) 、访问评论、使用条款、标识保护、密码管理 (自助服务和管理员密码重置) 和自助服务组管理等。
 
 ## <a name="permissions"></a>权限
 
@@ -46,7 +46,7 @@ GET /auditLogs/directoryaudits
 | [\$返回页首](/graph/query_parameters#top-parameter)             | 设置结果的页面大小。                                                | `/auditLogs/directoryAudits?$top=1`                                         |
 | [\$skiptoken](/graph/query_parameters#skiptoken-parameter) | 从跨多页的结果集中检索下一页结果。 | `/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
 
-### <a name="attributes-supported-by-filter-parameter"></a>Filter 参数支持\$的属性
+### <a name="attributes-supported-by-filter-parameter"></a>Filter 参数支持的属性 \$
 
 | 属性                                                    | 支持的运算符 |
 | :----------------------------------------------------------- | :------------------ |
@@ -58,9 +58,9 @@ GET /auditLogs/directoryaudits
 | initiatedBy/user/userPrincipalName                           | eq、startswith      |
 | initiatedBy/app/appId                                        | eq                  |
 | initiatedBy/app/displayName                                  | eq                  |
-| targetResources/any （t： t/id eq "{value}"）                    | eq                  |
-| targetResources/any （t： t/displayName eq ' {value} '）            | eq                  |
-| targetResources/any （x： startswith （x/displayName，"{value}"）） | startswith          |
+| targetResources/any (t： t/id eq "{value}" )                     | eq                  |
+| targetResources/any (t： t/displayName eq ' {value} ' )             | eq                  |
+| targetResources/any (x： startswith (x/displayName "{value}" ) # A3 | startswith          |
 
 ## <a name="request-headers"></a>请求标头
 
@@ -74,7 +74,7 @@ GET /auditLogs/directoryaudits
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[directoryAudit](../resources/directoryaudit.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [directoryAudit](../resources/directoryaudit.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -189,3 +189,4 @@ Content-length: 271
   "suppressions": [
   ]
 }-->
+

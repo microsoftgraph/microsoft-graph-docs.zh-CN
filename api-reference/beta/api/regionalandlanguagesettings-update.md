@@ -5,12 +5,12 @@ author: jasonbro
 localization_priority: Normal
 ms.prod: settings
 doc_type: apiPageType
-ms.openlocfilehash: c84023c281dcda00db756a80f5d14668d213e727
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
-ms.translationtype: Auto
+ms.openlocfilehash: 2af80fb6261d04e2aa35a6fe3ea20ce30c63842f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744210"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971977"
 ---
 # <a name="update-regionalandlanguagesettings"></a>更新 regionalAndLanguageSettings
 
@@ -18,15 +18,15 @@ ms.locfileid: "44744210"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md)对象的部分或全部属性。
+更新 [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) 对象的部分或全部属性。
 
 ## <a name="permissions"></a>权限
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型                   |权限（从至少到最高特权）     |
+|权限类型                   |从至少到最高特权的) 的权限 (     |
 |----------------------------------|---------------------------------------------- |
 |委派（工作或学校帐户）|所有用户读写。             |
-|委派（个人帐户）      |所有用户读写。             |
+|委派 (个人帐户)       |所有用户读写。             |
 |应用程序                       |所有用户读写。             |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -50,7 +50,7 @@ PATCH /settings/regionalAndLanguageSettings
 | Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
- **PUT**：在请求正文中，提供一个[regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md)对象。
+ **PUT**：在请求正文中，提供一个 [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) 对象。
  
  **PATCH**：仅提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了实现最佳性能，不得添加未变化的现有值。
  
@@ -107,12 +107,26 @@ Content-type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/put-regionalandlanguagesettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/put-regionalandlanguagesettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/put-regionalandlanguagesettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面介绍响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -128,7 +142,6 @@ HTTP/1.1 204 No Content
 #### <a name="request"></a>请求
 
 下面展示了示例请求。
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -151,6 +164,20 @@ Content-type: application/json
    }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/patch-regionalandlanguagesettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/patch-regionalandlanguagesettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/patch-regionalandlanguagesettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
@@ -178,3 +205,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

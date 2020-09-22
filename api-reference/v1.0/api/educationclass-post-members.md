@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4c859c6fa47b9f53eeced4b944822ba8a089417c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 06b2c7d7e30e1f23083177aa27c3a84464224e6b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517563"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971248"
 ---
 # <a name="add-a-student"></a>添加学生
 
@@ -106,3 +106,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

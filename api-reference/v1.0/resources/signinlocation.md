@@ -5,16 +5,16 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 58c3dc2b25b85963e6a0f6f88552dbf2a121d5f7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4b14f26fff4721da499d108883f57db009ec42c3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446854"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970605"
 ---
 # <a name="signinlocation-resource-type"></a>signInLocation 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 提供发生登录的城市、省/市/自治区和国家/地区。
 
@@ -23,7 +23,7 @@ ms.locfileid: "42446854"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |城市|String|提供发起登录的城市。 这是通过登录活动中的纬度/经度信息计算得出的。|
-|countryOrRegion|String|提供登录所源于的国家/地区代码信息（2个字母代码）。  这是通过登录活动中的纬度/经度信息计算得出的。|
+|countryOrRegion|String|提供国家/地区代码信息 (2 号代码) 在该登录起源中。  这是通过登录活动中的纬度/经度信息计算得出的。|
 |geoCoordinates|[geoCoordinates](geocoordinates.md)|提供登录所源于的纬度、经度和海拔高度。|
 |state|String|提供登录的起始状态。 这是通过登录活动中的纬度/经度信息计算得出的。|
 
@@ -58,3 +58,4 @@ ms.locfileid: "42446854"
   "section": "documentation",
   "tocPath": ""
 }-->
+

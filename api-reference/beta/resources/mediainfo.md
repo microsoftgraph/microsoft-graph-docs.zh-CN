@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: db672c21aafceab08cf1825199686f9c9a1070e4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b7e2b5fb0e00a7b173e1e14962b614fcca5382f5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522769"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971741"
 ---
 # <a name="mediainfo-resource-type"></a>mediaInfo 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "42522769"
 | 属性       | 类型    | 说明                      |
 |:---------------|:--------|:---------------------------------|
 | resourceId     | String  | 可选，用于唯一标识资源。 如果传递了提示 uri，则会将此 resourceId 作为密钥进行缓存。 |
-| url            | String  | 要播放的提示的路径。 目前仅支持带有16000（16KHz）采样速率的波形文件（.wav）格式的单通道、16位样本。 |
+| url            | String  | 要播放的提示的路径。 目前仅支持 ( .wav) 格式、单通道、16位样本和 16000 (16KHz) 采样速率。 |
 
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -57,3 +57,5 @@ ms.locfileid: "42522769"
   "suppressions": []
 }
 -->
+
+

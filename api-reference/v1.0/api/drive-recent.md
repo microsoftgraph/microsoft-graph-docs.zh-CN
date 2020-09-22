@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: 列出登录用户最近使用的一组项。
 doc_type: apiPageType
-ms.openlocfilehash: fc94d4142ec3e78c608e4d96a7d1733889af5496
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 355c40d3997831e1ef15f5b9e3645f3c91993738
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517809"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971246"
 ---
 # <a name="list-recent-files"></a>列出最近使用的文件
 
@@ -129,3 +129,4 @@ GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
   "suppressions": [
   ]
 } -->
+

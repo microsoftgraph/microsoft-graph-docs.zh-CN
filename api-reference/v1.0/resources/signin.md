@@ -5,12 +5,12 @@ author: khotz
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fd8981e527bfa8d480dc0e9cda23a061fb9c5ac2
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 86136a1180df6f07d0919589570cda3c5e20b36b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673873"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970633"
 ---
 # <a name="signin-resource-type"></a>signIn 资源类型
 
@@ -108,3 +108,4 @@ ms.locfileid: "46673873"
   "section": "documentation",
   "tocPath": ""
 }-->
+

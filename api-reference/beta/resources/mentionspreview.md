@@ -5,12 +5,12 @@ localization_priority: Normal
 author: simonhult
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 4658f152d478e4df0a0e492bdd9272f0cd9170ca
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 721cd2b82e972f98c36252b6cef9c18623390c93
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522685"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971601"
 ---
 # <a name="mentionspreview-resource-type"></a>mentionsPreview 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "42522685"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示有关在资源实例中[提及](../resources/mention.md)对象的信息。
+表示有关在资源实例中 [提及](../resources/mention.md) 对象的信息。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -56,3 +56,5 @@ ms.locfileid: "42522685"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: svpsiva
-ms.openlocfilehash: 219899ce529c573b3c1d2cb6194d2349979f28d3
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 9498b683c5195ec91ea6e8356a6ede8c76c7bf13
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811544"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971914"
 ---
 # <a name="automaticrepliessetting-resource-type"></a>automaticRepliesSetting 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "46811544"
 |internalReplyMessage|string|如果 **Status** 为 `AlwaysEnabled` 或 `Scheduled`，则表示发送给已登录用户组织内部受众的自动答复。 |
 |scheduledEndDateTime|[dateTimeTimeZone](datetimetimezone.md)|如果 **Status** 设置为 `Scheduled`，则自动答复的日期和时间设置为结束。 |
 |scheduledStartDateTime|[dateTimeTimeZone](datetimetimezone.md)|如果 **Status** 设置为 `Scheduled`，则自动答复的日期和时间设置为开始。|
-|status|String|自动答复的配置状态。可能的值是：`disabled`、`alwaysEnabled`、`scheduled`。|
+|状态|String|自动答复的配置状态。可能的值是：`disabled`、`alwaysEnabled`、`scheduled`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -67,3 +67,5 @@ ms.locfileid: "46811544"
   "suppressions": []
 }
 -->
+
+

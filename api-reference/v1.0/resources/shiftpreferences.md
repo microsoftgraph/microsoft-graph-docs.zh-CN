@@ -5,25 +5,25 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 91a6093ad66d906fe9917ae7a22d2297ded4b4d7
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: c1f2b4acdc61fcf7889ea0b9dd1046aff112c9e7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154855"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970661"
 ---
 # <a name="shiftpreferences-resource-type"></a>shiftPreferences 资源类型
 
 命名空间：microsoft.graph
 
-表示[计划](schedule.md)中用户的已分配班次的可用性。
+表示 [计划](schedule.md)中用户的已分配班次的可用性。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [获取](../api/shiftpreferences-get.md) | [shiftPreferences](shiftpreferences.md) | 读取**shiftPreferences**对象的属性和关系。 |
-| [更新](../api/shiftpreferences-put.md) | [shiftPreferences](shiftpreferences.md) | 更新**shiftPreferences**对象。 |
+| [获取](../api/shiftpreferences-get.md) | [shiftPreferences](shiftpreferences.md) | 读取 **shiftPreferences** 对象的属性和关系。 |
+| [更新](../api/shiftpreferences-put.md) | [shiftPreferences](shiftpreferences.md) | 更新 **shiftPreferences** 对象。 |
 
 ## <a name="properties"></a>属性
 
@@ -31,7 +31,7 @@ ms.locfileid: "44154855"
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id | `Edm.String` | 实体的标识符。 |
 | @odata.etag | `Edm.String` | 实体的更改键。 |
-| availability | [shiftAvailability](shiftavailability.md)集合 | 用户计划的工作及其定期模式的可用性。 |
+| availability | [shiftAvailability](shiftavailability.md) 集合 | 用户计划的工作及其定期模式的可用性。 |
 | createdDateTime | `Edm.DateTimeOffset` | 创建实体时对应的时间戳。 |
 | lastModifiedDateTime | `Edm.DateTimeOffset` | 上次修改实体时对应的时间戳。 |
 | lastModifiedBy | [identitySet](identityset.md) | 上次修改实体的人员的标识。 |
@@ -68,3 +68,4 @@ ms.locfileid: "44154855"
   "section": "documentation",
   "tocPath": ""
 }-->
+

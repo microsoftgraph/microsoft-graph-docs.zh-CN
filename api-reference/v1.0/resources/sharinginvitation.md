@@ -7,16 +7,16 @@ localization_priority: Normal
 description: SharingInvitation 资源将与邀请相关的数据项分组到一个单一结构中。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5e1b5434f025c48f1eea08d31a00b4bc5fc9d39f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f259c5d051b29afff1321babd3822b0be13c0575
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446875"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970682"
 ---
 # <a name="sharinginvitation-resource-type"></a>SharingInvitation 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 **SharingInvitation**资源将与邀请相关的数据项分组到一个单一结构中。
 
@@ -62,3 +62,4 @@ ms.locfileid: "42446875"
   "section": "documentation",
   "tocPath": "Facets/SharingInvitation"
 } -->
+

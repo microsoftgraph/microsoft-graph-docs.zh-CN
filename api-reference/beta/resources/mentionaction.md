@@ -6,12 +6,12 @@ title: MentionAction
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 2e2a430ed25dd6a64049fc6dc49c282bf6a47e00
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b0f8376c3fcc86cdd16c1eeb32507e5b26469285
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522692"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971600"
 ---
 # <a name="mentionaction-resource-type"></a>MentionAction 资源类型
 
@@ -59,3 +59,5 @@ ms.locfileid: "42522692"
   "suppressions": []
 }
 -->
+
+

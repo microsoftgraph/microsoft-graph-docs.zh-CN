@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5c13fc7b26b7d83ceda3a9c16d5a0d801f4f49c1
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: b28b7d2f3cae7251a184a0b11fee61356a5dcfc1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43109038"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970920"
 ---
 # <a name="get-settings"></a>获取设置
 
@@ -71,4 +71,5 @@ Content-length: 72
   "contributionToContentDiscoveryDisabled": false
 }
 ```
+
 

@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 983ca1e7b11e488cec38abc2b54c7e241d4a0719
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 154762d1658503a25ffe2ec39bdf602f4a9d2b8d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353894"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970542"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-intelligence-in-an-app"></a>使用 Microsoft Graph API 在应用程序中集成人员智能
 

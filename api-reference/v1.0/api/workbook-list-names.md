@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8d3a6d0ce1ae4dd9807f92e5f8af12e83fcff275
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 81ab50326dcf02ffd0f3a2b1835bd92264abfa9e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508861"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970850"
 ---
 # <a name="list-names"></a>列出名称
 
@@ -45,7 +45,7 @@ GET /workbook/names
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[WorkbookNamedItem](../resources/nameditem.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [WorkbookNamedItem](../resources/nameditem.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -113,3 +113,4 @@ Content-length: 136
   "suppressions": [
   ]
 }-->
+

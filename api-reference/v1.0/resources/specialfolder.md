@@ -7,12 +7,12 @@ localization_priority: Normal
 description: SpecialFolder 资源将与特殊文件夹相关的数据项分组到一个单一结构。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 767ac4c5ce8819290e9a47e3e3f4f4efd1a9d238
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 142a20c9ea18185f5b7564769d545cca46e9c286
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533633"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970527"
 ---
 # <a name="specialfolder-resource-type"></a>SpecialFolder 资源类型
 
@@ -73,3 +73,4 @@ ms.locfileid: "42533633"
   "section": "documentation",
   "tocPath": "Facets/SpecialFolder"
 } -->
+

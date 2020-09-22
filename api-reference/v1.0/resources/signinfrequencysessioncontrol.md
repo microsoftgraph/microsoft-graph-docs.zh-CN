@@ -5,18 +5,18 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: af2d23c26d2911c8abc36c8a9e66fb776edd43e0
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: 8c0c0eca971c6d9df8bde348787029cb5aa98320
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434846"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970619"
 ---
 # <a name="signinfrequencysessioncontrol-resource-type"></a>signInFrequencySessionControl 资源类型
 
 命名空间：microsoft.graph
 
-用于强制登录频率的会话控制。 继承自[条件访问会话控制](conditionalaccesssessioncontrol.md)。
+用于强制登录频率的会话控制。 继承自 [条件访问会话控制](conditionalaccesssessioncontrol.md)。
 
 ## <a name="properties"></a>属性
 
@@ -60,3 +60,4 @@ ms.locfileid: "45434846"
   "section": "documentation",
   "tocPath": ""
 }-->
+

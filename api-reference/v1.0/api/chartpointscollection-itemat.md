@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4cb63a9ed8db460a62f1c3783ef534980d322aff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c05566b079ee0413550d855141fe205a68c1ac30
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518376"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971382"
 ---
 # <a name="chartpointscollection-itemat"></a>ChartPointsCollection: ItemAt
 
@@ -48,7 +48,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points/item
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`200 OK`响应正文中返回响应代码和[WorkbookChartPoint](../resources/chartpoint.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [WorkbookChartPoint](../resources/chartpoint.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -112,3 +112,4 @@ Content-length: 20
   "suppressions": [
   ]
 }-->
+

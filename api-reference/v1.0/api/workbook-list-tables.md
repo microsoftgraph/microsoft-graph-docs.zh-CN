@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b7dc32d1087b153e0369e6c986eca5c44714cb16
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 78cb78973c541483aa8c8f5421271669183e59e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508854"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970838"
 ---
 # <a name="list-tables"></a>列出表格
 
@@ -45,7 +45,7 @@ GET /workbook/tables
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[WorkbookTable](../resources/table.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [WorkbookTable](../resources/table.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -113,3 +113,4 @@ Content-length: 158
   "suppressions": [
   ]
 }-->
+

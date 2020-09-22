@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8d6bce42c31e39f5b36e3beccdac2fc660f9cb30
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 37ed8ce10f62888a7bf1be67f489c6b8a0b95c76
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522755"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971732"
 ---
 # <a name="mediastream-resource-type"></a>mediaStream 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,10 +24,10 @@ ms.locfileid: "42522755"
 
 | 属性    | 类型    | 说明                                                                                                   |
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
-| direction   | String  | 方向。 可能的值为`inactive`、 `sendOnly`、 `receiveOnly`、 `sendReceive`。                  |
+| direction   | String  | 方向。 可能的值为 `inactive` 、 `sendOnly` 、 `receiveOnly` 、 `sendReceive` 。                  |
 | label       | String  | 媒体流标签。                                                                                       |
-| 群组   | String  | 媒体类型。 可能的值为`unknown`、 `audio` `video` `videoBasedScreenSharing`、、 `data`。        |
-| serverMuted | 布尔 | 指示服务器是否静音媒体。                                                                          |
+| mediaType   | String  | 媒体类型。 可能的值为 `unknown` 、、、 `audio` `video` `videoBasedScreenSharing` `data` 。        |
+| serverMuted | Boolean | 指示服务器是否静音媒体。                                                                          |
 | sourceId    | String  | 源 ID。                                                                                                |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -64,3 +64,5 @@ ms.locfileid: "42522755"
   "suppressions": []
 }
 -->
+
+

@@ -5,20 +5,20 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e5736e70125af9ba41d9c2017171865717797998
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: ab5f273ab260afb454882b2293463556c6a5249c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44218283"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970969"
 ---
 # <a name="replace-timeoffreason"></a>替换 timeOffReason
 
 命名空间：microsoft.graph
 
-替换现有的[timeOffReason](../resources/timeoffreason.md)。
+替换现有的 [timeOffReason](../resources/timeoffreason.md)。
 
-如果指定的[timeOffReason](../resources/timeoffreason.md)不存在，则此方法返回 `404 Not found` 。
+如果指定的 [timeOffReason](../resources/timeoffreason.md) 不存在，则此方法返回 `404 Not found` 。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "44218283"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Schedule。 All，Group. 所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Schedule.ReadWrite.All |
+|应用程序 | Schedule.ReadWrite.All |
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -49,11 +49,11 @@ PUT /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[timeOffReason](../resources/timeoffreason.md)对象的 JSON 表示形式。
+在请求正文中，提供 [timeOffReason](../resources/timeoffreason.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[timeOffReason](../resources/timeoffreason.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [timeOffReason](../resources/timeoffreason.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -147,3 +147,4 @@ Content-length: 401
   ]
 }
 -->
+

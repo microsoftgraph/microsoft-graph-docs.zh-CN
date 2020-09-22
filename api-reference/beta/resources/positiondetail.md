@@ -5,27 +5,27 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 6c77c116f013000ec4d419ec20c1e45c07187a22
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fbd013292754dea43dd69b645dcd2ab735559b69
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521591"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971480"
 ---
 # <a name="positiondetail-resource-type"></a>positionDetail 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示有关与用户[配置文件](profile.md)中的实体相关的位置的信息。
+表示有关与用户 [配置文件](profile.md)中的实体相关的位置的信息。
 
 ## <a name="properties"></a>属性
 
 | 属性       | 类型                             | 说明                                            |
 |:---------------|:---------------------------------|:-------------------------------------------------------|
 |公司         |[companyDetail](companydetail.md) | 有关公司或雇主的详细信息。                  |
-|说明     |String                            | 相关职位的描述。               |
+|description     |String                            | 相关职位的描述。               |
 |endMonthYear    |日期                              | 位置结束时。                               |
 |jobTitle        |String                            | 在该位置保留的标题。                  |
 |role            |String                            | 位置 entailed 的角色。                        |
@@ -66,3 +66,4 @@ ms.locfileid: "42521591"
   "section": "documentation",
   "tocPath": ""
 }-->
+

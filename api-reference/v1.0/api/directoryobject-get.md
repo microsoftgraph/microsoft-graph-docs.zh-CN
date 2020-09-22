@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8bd9ba445bb3da40163cc23451aadfd01973de40
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: ac3da51fa8c6268c784d01329499692e12919695
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181935"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971319"
 ---
 # <a name="get-directoryobject"></a>获取 directoryObject
 
@@ -101,3 +101,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

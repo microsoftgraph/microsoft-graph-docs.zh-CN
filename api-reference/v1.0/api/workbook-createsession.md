@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 52e00448737deadce612f5305f4a35ff3a1ff2dc
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: a7b021173b28826642898d96c889a955f8bd182e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408076"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970899"
 ---
 # <a name="workbook-createsession"></a>工作簿： createSession
 
@@ -57,11 +57,11 @@ POST /workbook/createSession
 | Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[workbookSessionInfo](../resources/workbooksessioninfo.md)对象的 JSON 表示形式。
+在请求正文中，提供 [workbookSessionInfo](../resources/workbooksessioninfo.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[workbookSessionInfo](../resources/workbooksessioninfo.md)对象。 对于长时间运行的操作，它会 `202 Accepted ` 在响应中返回响应代码和 `Location` 标头，其中包含空正文。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [workbookSessionInfo](../resources/workbooksessioninfo.md) 对象。 对于长时间运行的操作，它会 `202 Accepted ` 在响应中返回响应代码和 `Location` 标头，其中包含空正文。
 
 ## <a name="examples"></a>示例
 
@@ -159,3 +159,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

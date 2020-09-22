@@ -5,18 +5,18 @@ author: preetikr
 localization_priority: Normal
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: f8d0fd0237bbca4b13deb7fbc8efb3f064f92e2c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9e8dbf79d704e9872073812502a4f414fe68397d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509848"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971033"
 ---
 # <a name="update-securescorecontrolprofile"></a>更新 secureScoreControlProfile
 
 命名空间：microsoft.graph
 
-在任何集成的解决方案中更新可编辑的**secureScoreControlProfile**对象，以更改各种属性，如 "**分配给**" 或 " **tenantNote**"。
+在任何集成的解决方案中更新可编辑的 **secureScoreControlProfile** 对象，以更改各种属性，如 " **分配给** " 或 " **tenantNote**"。
 
 ## <a name="permissions"></a>权限
 
@@ -45,21 +45,21 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值的 JSON 表示形式。 正文**必须**包含具有有效`vendorInformation` `provider`和`vendor`字段的属性。 下表列出了可为**secureScoreControlProfile**更新的字段。 未包含在请求正文中的现有属性的值不会更改。 为了获得最佳性能，请勿加入尚未更改的现有值。
+在请求正文中，提供应更新的相关字段的值的 JSON 表示形式。 正文 **必须** 包含 `vendorInformation` 具有有效 `provider` 和字段的属性 `vendor` 。 下表列出了可为 **secureScoreControlProfile**更新的字段。 未包含在请求正文中的现有属性的值不会更改。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |assignedTo|String|为会审、实现或修正分配的控制分析员的名称。|
-|注释|字符串|控件上的分析师注释（针对客户控制管理）。|
+|注释|String|针对客户控件管理) 的控件 (的分析师注释。|
 |state| String|控件上的分析导向设置。 可取值为：`Default`、`Ignored`、`ThirdParty`、`Reviewed`。|
-| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | 包含有关安全产品/服务供应商、提供程序和 subprovider 的详细信息的复杂类型（例如，供应商 = Microsoft; provider = SecureScore;）。 **提供程序和供应商字段是必需的。** |
+| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | 包含有关安全产品/服务供应商、提供商和 subprovider 的详细信息的复杂类型 (例如，供应商 = Microsoft;provider = SecureScore; ) 。 **提供程序和供应商字段是必需的。** |
 
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `204 No Content` 响应代码。
 
-如果使用可选请求标头，则该方法将在`200 OK`响应正文中返回响应代码和更新的[secureScoreControlProfiles](../resources/securescorecontrolprofile.md)对象。
+如果使用可选请求标头，则该方法将 `200 OK` 在响应正文中返回响应代码和更新的 [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -128,7 +128,7 @@ HTTP/1.1 204 No Content
 
 #### <a name="request"></a>请求
 
-下面的示例演示包含`Prefer`请求标头的请求。
+下面的示例演示包含 `Prefer` 请求标头的请求。
 
 <!-- {
   "blockType": "request",
@@ -154,7 +154,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-以下是使用可选`Prefer: return=representation`请求标头时响应的示例。
+以下是 `Prefer: return=representation` 使用可选请求标头时响应的示例。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
@@ -230,3 +230,4 @@ Content-type: application/json
   ]
 }
 -->
+

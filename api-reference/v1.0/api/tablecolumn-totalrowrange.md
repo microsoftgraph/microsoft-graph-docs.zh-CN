@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d8af35ebee03152ed5ca19f9909462131bb04e65
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ae5cc4e1607e5fcf39732df21ee965cbbc110195
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509560"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970976"
 ---
 # <a name="tablecolumn-totalrowrange"></a>TableColumn: TotalRowRange
 
@@ -113,3 +113,4 @@ Content-length: 169
   "suppressions": [
   ]
 }-->
+

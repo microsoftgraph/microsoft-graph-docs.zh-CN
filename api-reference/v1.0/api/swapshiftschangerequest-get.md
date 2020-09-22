@@ -5,18 +5,18 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8d36bc14354e7782f54732d35b7c235ebb512152
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: da6962e7c782e455c1bf0ca61d27a8cbdf77950a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44217443"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971034"
 ---
 # <a name="get-swapshiftschangerequest"></a>获取 swapShiftsChangeRequest
 
 命名空间：microsoft.graph
 
-检索[swapShiftsChangeRequest](../resources/swapshiftschangerequest.md)对象的属性和关系。
+检索 [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "44217443"
 |:---------------------------------------|:--------------------------------------------|
 |委派（工作或学校帐户） | 请参阅 all、Group、Group. all、Schedule、Group、Group。所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Schedule. All、Schedule、All |
+|应用程序 | Schedule. All、Schedule、All |
 
 > **注意**：此 API 支持管理员权限。 全局管理员可以访问他们不是其成员的组。
 
@@ -40,7 +40,7 @@ GET /teams/{teamId}/schedule/swapShiftsChangeRequests
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,7 +54,7 @@ GET /teams/{teamId}/schedule/swapShiftsChangeRequests
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[swapShiftsChangeRequest](../resources/swapshiftschangerequest.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -136,3 +136,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

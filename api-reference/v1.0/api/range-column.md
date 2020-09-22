@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f52ce4170201071fbe3e21c517cf5d250005bc18
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca1505a9d6d619595b0b87057501ed8b389d959a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510674"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971046"
 ---
 # <a name="range-column"></a>Range:Column
 
@@ -118,3 +118,4 @@ Content-length: 169
   "suppressions": [
   ]
 }-->
+

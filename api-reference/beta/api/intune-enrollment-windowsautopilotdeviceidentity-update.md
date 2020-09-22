@@ -3,24 +3,24 @@ title: 更新 windowsAutopilotDeviceIdentity
 description: 更新 windowsAutopilotDeviceIdentity 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 72089bfb96c41b37f0d1219f0bb86de89ba7ec4a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 42fd74418ea778a705b41a5eee21c4d66018127c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452348"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972159"
 ---
 # <a name="update-windowsautopilotdeviceidentity"></a>更新 windowsAutopilotDeviceIdentity
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)对象的属性。
+更新 [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -48,9 +48,9 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)对象的 JSON 表示形式。
+在请求正文中，提供 [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 对象的 JSON 表示形式。
 
-下表显示创建[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)时所需的属性。
+下表显示创建 [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -62,7 +62,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 |groupTag|String|Windows autopilot 设备的 Group 标记。|
 |purchaseOrderIdentifier|String|Windows autopilot 设备的采购订单标识符。|
 |serialNumber|String|Windows autopilot 设备序列号。|
-|productKey|字符串|Windows autopilot 设备产品密钥。|
+|productKey|String|Windows autopilot 设备产品密钥。|
 |manufacturer|String|Windows autopilot 设备的 Oem 制造商。|
 |model|String|Windows autopilot 设备的模型名称。|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Windows autopilot 设备的 Intune 注册状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
@@ -79,7 +79,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -147,6 +147,9 @@ Content-Length: 1124
   "displayName": "Display Name value"
 }
 ```
+
+
+
 
 
 

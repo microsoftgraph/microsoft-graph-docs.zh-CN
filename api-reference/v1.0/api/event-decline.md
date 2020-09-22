@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f9caef660af5e19cc06dd9214a8c70cc761740fe
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: 7fad61b7dde22df382f92d8306bd5bc15b758bf6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427100"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971267"
 ---
 # <a name="event-decline"></a>event: decline
 
@@ -18,7 +18,7 @@ ms.locfileid: "45427100"
 
 拒绝对用户[日历](../resources/calendar.md)中指定[事件](../resources/event.md)的邀请。
 
-如果事件允许建议的新时间，在谢绝事件时，被邀请者可以通过包含**proposedNewTime**参数来选择建议替代时间。 有关如何建议时间以及如何接收和接受新时间建议的详细信息，请参阅[建议新会议时间](/graph/outlook-calendar-meeting-proposals)。
+如果事件允许建议的新时间，在谢绝事件时，被邀请者可以通过包含 **proposedNewTime** 参数来选择建议替代时间。 有关如何建议时间以及如何接收和接受新时间建议的详细信息，请参阅 [建议新会议时间](/graph/outlook-calendar-meeting-proposals)。
 
 ## <a name="permissions"></a>权限
 
@@ -67,7 +67,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|响应中包含的文本。可选。|
-|proposedNewTime|[timeSlot](../resources/timeslot.md)|会议请求开始和结束时由被邀请者建议的备用日期/时间。 仅对允许新时间建议的事件有效。 设置此参数需要将**sendResponse**设置为 `true` 。 可选。|
+|proposedNewTime|[timeSlot](../resources/timeslot.md)|会议请求开始和结束时由被邀请者建议的备用日期/时间。 仅对允许新时间建议的事件有效。 设置此参数需要将 **sendResponse** 设置为 `true` 。 可选。|
 |sendResponse|Boolean|如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。|
 
 ## <a name="response"></a>响应
@@ -77,7 +77,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 如果出现以下一种或两种情况，此操作将返回 HTTP 400：
 
 - 包含**proposedNewTime**参数，但**事件**的**allowNewTimeProposals**属性为 `false` 。 
-- 包含**proposedNewTime**参数，但**sendResponse**参数设置为 `false` 。
+- 包含 **proposedNewTime** 参数，但 **sendResponse** 参数设置为 `false` 。
 
 
 ## <a name="example"></a>示例
@@ -161,3 +161,4 @@ HTTP/1.1 202 Accepted
   "suppressions": [
   ]
 }-->
+
