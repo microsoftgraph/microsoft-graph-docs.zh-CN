@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e20150e15cf56b20f17694b54c41027dfb0c9b42
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 8c0de2ef734922003fb17e5e6a94ddaf9de4831a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311933"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027533"
 ---
 # <a name="list-taskfolders-deprecated"></a>列出 taskFolders (弃用) 
 
@@ -124,3 +124,5 @@ Content-length: 200
   ]
 }
 -->
+
+

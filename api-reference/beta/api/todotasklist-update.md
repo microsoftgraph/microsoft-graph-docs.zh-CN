@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 664c1c423302c244b453528157eba17a51bdd9c7
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: f88e1646d78a045d446db8dea92dbb815345d73f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843000"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027438"
 ---
 # <a name="update-todotasklist"></a>更新 todoTaskList
 命名空间： microsoft. graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -115,4 +115,6 @@ Content-Type: application/json
   "wellknownListName": "none"
 }
 ```
+
+
 

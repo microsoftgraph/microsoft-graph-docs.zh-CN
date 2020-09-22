@@ -3,14 +3,14 @@ title: 列出 macOSGeneralDeviceConfigurations
 description: 列出 macOSGeneralDeviceConfiguration 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 73dac3b7c647cc4a838c50d3c95b0b1f25f790a2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: afcd5de61dbebf648995499e76f9b5de2d551158
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43387792"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028908"
 ---
 # <a name="list-macosgeneraldeviceconfigurations"></a>列出 macOSGeneralDeviceConfigurations
 
@@ -101,6 +101,9 @@ Content-Length: 1227
   ]
 }
 ```
+
+
+
 
 
 

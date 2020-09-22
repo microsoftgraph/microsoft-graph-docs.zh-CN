@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 3cc26caaee20f1f274265061139671d00fa7cee0
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 18cfc7923fc71a0db8a54ed2dec4915022d29418
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125307"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029070"
 ---
 # <a name="programcontrol-resource-type"></a>programControl 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "43125307"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [access 评论](accessreviews-root.md)功能中，program control 对象表示一个控件，将访问权限链接到某个程序。
+在 Azure AD [access 评论](accessreviews-root.md) 功能中，program control 对象表示一个控件，将访问权限链接到某个程序。
 
 
 ## <a name="methods"></a>方法
@@ -27,7 +27,7 @@ ms.locfileid: "43125307"
 |:---------------|:--------|:----------|
 |[创建 programControl](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   将 programControl 添加到程序中。|
 |[删除 programControl](../api/programcontrol-delete.md) |     无。   |   从程序中删除 programControl。|
-|[列出 programControls](../api/programcontrol-list.md) | [programControl](programcontrol.md)集合| 列出租户中所有程序之间的控件。|
+|[列出 programControls](../api/programcontrol-list.md) | [programControl](programcontrol.md) 集合| 列出租户中所有程序之间的控件。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -51,8 +51,8 @@ ms.locfileid: "43125307"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列出程序的 programControls](../api/program-listcontrols.md) |      [programControl](programcontrol.md)集合| 获取程序的控件的集合。|
-|[列出 programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md)集合| 列出程序控制类型。 |
+|[列出程序的 programControls](../api/program-listcontrols.md) |      [programControl](programcontrol.md) 集合| 获取程序的控件的集合。|
+|[列出 programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) 集合| 列出程序控制类型。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -85,7 +85,7 @@ ms.locfileid: "43125307"
 
 程序控制对象中包含的程序资源是对作为访问评审目标的对象的引用的表示形式。
 
-此类型将从`microsoft.graph.identity`继承并包含一个附加属性：
+此类型将从继承 `microsoft.graph.identity` 并包含一个附加属性：
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
@@ -119,3 +119,5 @@ ms.locfileid: "43125307"
   "suppressions": []
 }
 -->
+
+

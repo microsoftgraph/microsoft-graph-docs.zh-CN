@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9895666985b6179eeb5d5f266de515250d9339ff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 99c342f1682018af9c7bba8026c6a73139e6425b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517613"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028936"
 ---
 # <a name="delete-educationclass"></a>删除 educationClass
 
@@ -97,3 +97,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

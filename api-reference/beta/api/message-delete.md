@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3f69c123b72dfb876a7ed60d427b76674e1556f6
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 040161d10daa2eda171525fb61a2edd0cc049035
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43448611"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027613"
 ---
 # <a name="delete-message"></a>删除邮件
 
@@ -20,9 +20,9 @@ ms.locfileid: "43448611"
 
 删除指定用户的邮箱中的邮件，或删除邮件的关系。
 
-例如，您可以在邮件中删除特定的[@-提及](../resources/mention.md)指定用户。
+例如，您可以在邮件中删除特定的 [@-提及](../resources/mention.md) 指定用户。
 
->**注释**您可能无法删除 "可恢复的项目删除" 文件夹中的项目（由[已知文件夹名称](../resources/mailfolder.md)表示 `recoverableitemsdeletions` ）。 有关详细信息，请参阅[已删除邮件保留](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention)和[清除已删除项目](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items)。
+>**注释** 您可能无法删除 "可恢复的项目" 删除文件夹中的项目 (由 [已知文件夹名称](../resources/mailfolder.md) `recoverableitemsdeletions`) 所表示。 有关详细信息，请参阅 [已删除邮件保留](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) 和 [清除已删除项目](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) 。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,7 +44,7 @@ DELETE /me/mailFolders/{id}/messages/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-删除邮件中的特定[提及](../resources/mention.md)：
+删除邮件中的特定 [提及](../resources/mention.md) ：
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/{id}/mentions/{id}
@@ -102,7 +102,7 @@ HTTP/1.1 204 No Content
 ```
 
 ##### <a name="request-2"></a>请求 2
-下一个示例将删除指定邮件中的某个**提到**。
+下一个示例将删除指定邮件中的某个 **提到** 。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -148,3 +148,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9a2ac5e0e8656cf6d7dcde2528d7ca000368d640
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 49ef6190f65adde817f3912d4133ff4a8553a88f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507794"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027212"
 ---
 # <a name="callroute-resource-type"></a>callRoute 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -58,3 +58,5 @@ CallRoute 类型。
   "suppressions": []
 }
 -->
+
+

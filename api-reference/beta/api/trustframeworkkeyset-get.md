@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cca2be5e3cde48fd17df9fe9fe4eb72f76c43ac1
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 142b522b436f0768aeac8941649fabb77173e8e0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219023"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027340"
 ---
 # <a name="get-trustframeworkkeyset"></a>获取 trustFrameworkKeySet
 
@@ -18,9 +18,9 @@ ms.locfileid: "43219023"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[Trustframeworkkeyset](../resources/trustframeworkkeyset.md)的属性和关联。
+检索 [Trustframeworkkeyset](../resources/trustframeworkkeyset.md)的属性和关联。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,7 +50,7 @@ GET /trustFramework/keySets/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和请求的[trustFrameworkKeySet](../resources/trustframeworkkeyset.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -134,3 +134,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

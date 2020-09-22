@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 343614306136f4962f6ac1955dbe2b1ad906279d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d5e3fe1d4b1b2dcf27de3915ffd49cd38ccb91d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43411491"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028789"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -21,13 +21,13 @@ ms.locfileid: "43411491"
 创建新的 [user](../resources/intune-shared-user.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
-若要调用此 API，必须有以下权限之一。 要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。  所需的特定权限取决于上下文。
+若要调用此 API，必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  所需的特定权限取决于上下文。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）| _因上下文而异_ |
 | &nbsp;&nbsp;设备管理 | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp;MAM | DeviceManagementApps.ReadWrite.All |
 | &nbsp;&nbsp;载入 | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp;故障排除 | DeviceManagementManagedDevices.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
@@ -92,6 +92,9 @@ Content-Length: 95
   "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
 }
 ```
+
+
+
 
 
 

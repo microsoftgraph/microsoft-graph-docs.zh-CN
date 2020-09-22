@@ -3,20 +3,20 @@ title: createDeviceLogCollectionRequest 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15deac0383992f2045599aff34d097c3555be7f0
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 57f35c5c1744d6c8f0633b6e1c01d52a3d9185f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124189"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027810"
 ---
 # <a name="createdevicelogcollectionrequest-action"></a>createDeviceLogCollectionRequest 操作
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -64,7 +64,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 
 
 ## <a name="response"></a>响应
-如果成功，此操作会 `200 OK` 在响应正文中返回响应代码和[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) 。
+如果成功，此操作会 `200 OK` 在响应正文中返回响应代码和 [deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) 。
 
 ## <a name="example"></a>示例
 
@@ -107,6 +107,9 @@ Content-Length: 567
   }
 }
 ```
+
+
+
 
 
 

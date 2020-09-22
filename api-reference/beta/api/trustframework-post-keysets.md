@@ -1,16 +1,16 @@
 ---
 title: 创建 trustFrameworkKeySet
-description: 创建新的**trustFrameworkKeySet**对象。
+description: 创建新的 **trustFrameworkKeySet** 对象。
 localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 934a3c7bbcd0e76bc41eac0294e0660ea9da3ccc
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: d0a435df4b8ff0eddefc34118738eab68abbb8b9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215957"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027396"
 ---
 # <a name="create-trustframeworkkeyset"></a>创建 trustFrameworkKeySet
 
@@ -18,9 +18,9 @@ ms.locfileid: "43215957"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[trustFrameworkKeySet](../resources/trustframeworkkeyset.md)。 创建请求中应有**trustFrameworkKeySet**的 ID;但是，服务可以对其进行修改。 已修改的 ID 将出现在响应中和位置标头中。
+创建新的 [trustFrameworkKeySet](../resources/trustframeworkkeyset.md)。 创建请求中应有 **trustFrameworkKeySet** 的 ID;但是，服务可以对其进行修改。 已修改的 ID 将出现在响应中和位置标头中。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,11 +47,11 @@ POST /trustFramework/keySets
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[trustFrameworkKeySet](../resources/trustframeworkkeyset.md)对象的 JSON 表示形式。
+在请求正文中，提供 [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将在`201 Created`响应正文中返回响应代码、新创建的对象的位置标头和新的[trustFrameworkKeySet](../resources/trustframeworkkeyset.md)对象。
+如果成功，此方法将在 `201 Created` 响应正文中返回响应代码、新创建的对象的位置标头和新的 [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -116,7 +116,7 @@ Location: /trustFramework/keySets('B2C_1A_keyset1')
 
 ### <a name="example-2-create-a-keyset-with-a-key"></a>示例2：创建具有键的键集
 
-这是一种高级方案，需要知道密钥的[RFC 7517](https://tools.ietf.org/html/rfc7517#section-5)兼容 JSON Web 密钥格式。
+这是一种高级方案，需要知道密钥的 [RFC 7517](https://tools.ietf.org/html/rfc7517#section-5) 兼容 JSON Web 密钥格式。
 
 #### <a name="request"></a>请求
 
@@ -210,3 +210,5 @@ Location: /trustFramework/keySets('B2C_1A_keyset1')
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

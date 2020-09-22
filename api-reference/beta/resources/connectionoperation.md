@@ -5,20 +5,20 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 21d962bbbfee64c51f11cf1ac3f5e7de2c0497e9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aed9574ba6fd5e8b2c47b38ee4eebb3326cf2a37
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507483"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027186"
 ---
 # <a name="connectionoperation-resource-type"></a>connectionOperation 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-描述用于创建 Microsoft Search 连接[架构](schema.md)的异步请求的状态。
+描述用于创建 Microsoft Search 连接 [架构](schema.md)的异步请求的状态。
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "42507483"
 
 | 属性 | 类型                          | 说明                       |
 |:---------|:------------------------------|:----------------------------------|
-| error    | [errorDetail](errordetail.md) | 如果`status`为`failed`，则提供有关导致失败的错误的详细信息。 |
+| error    | [errorDetail](errordetail.md) | 如果 `status` 为 `failed` ，则提供有关导致失败的错误的详细信息。 |
 | id       | String                        | ConnectionOperation 的唯一标识符。 只读。 |
 | 状态   | string                        | 指示异步操作的状态。 可取值为：`unspecified`、`inprogress`、`completed`、`failed`。 |
 
@@ -71,3 +71,5 @@ ms.locfileid: "42507483"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

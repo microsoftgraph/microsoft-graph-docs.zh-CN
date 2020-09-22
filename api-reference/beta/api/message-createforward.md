@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e4056b533f27b4cac890f26a386c5c4b0455670d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4f1ad719afb21a6e8fca724171029d4d924e4fd2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447242"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027657"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -19,12 +19,12 @@ ms.locfileid: "43447242"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建草稿转发邮件以包含注释或更新任何邮件属性  
-全部在一个**createForward**调用中。 然后，您可以[发送](../api/message-send.md)草稿邮件。
+全部在一个 **createForward** 调用中。 然后，您可以 [发送](../api/message-send.md) 草稿邮件。
 
 **注意**
 
-- 您可以指定`message`参数的注释或**body**属性。 同时指定这两个将返回 HTTP 400 错误的请求错误。
-- 您必须指定`toRecipients`参数或`message`参数的**toRecipients**属性。 同时指定或指定两者均不会返回 HTTP 400 错误请求错误。
+- 您可以指定参数的注释或 **body** 属性 `message` 。 同时指定这两个将返回 HTTP 400 错误的请求错误。
+- 您必须指定参数 `toRecipients` 或参数的 **toRecipients** 属性 `message` 。 同时指定或指定两者均不会返回 HTTP 400 错误请求错误。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -159,3 +159,5 @@ Content-length: 272
   ]
 }
 -->
+
+

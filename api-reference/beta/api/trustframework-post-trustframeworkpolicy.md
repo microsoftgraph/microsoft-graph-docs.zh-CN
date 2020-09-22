@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b3e06b35d838817e3214ea10d22c11fe8d19d59f
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 7975d6834b162a4ced71ced6886faa8cee797159
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215915"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027361"
 ---
 # <a name="create-trustframeworkpolicy"></a>创建 trustFrameworkPolicy
 
@@ -18,9 +18,9 @@ ms.locfileid: "43215915"
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-创建新的[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)对象。
+创建新的 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 对象。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。
 
@@ -48,15 +48,15 @@ POST /trustFramework/policies
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)对象的 XML 表示形式。 内容类型必须是 `application/xml`。
+在请求正文中，提供 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 对象的 XML 表示形式。 内容类型必须是 `application/xml`。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`201 Created`正文中返回响应代码和[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)对象。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 对象。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="example"></a>示例
 
-下面的示例创建一个**trustFrameworkPolicy**。
+下面的示例创建一个 **trustFrameworkPolicy**。
 
 ##### <a name="request"></a>请求
 
@@ -99,3 +99,5 @@ Location: /trustFramework/policies/B2C_1A_SocialAndLocalAccounts_Base/
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

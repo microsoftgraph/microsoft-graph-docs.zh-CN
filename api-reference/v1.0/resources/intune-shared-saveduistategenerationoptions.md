@@ -3,14 +3,14 @@ title: savedUIStateGenerationOptions 枚举类型
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f709eee1d560215730fe42fb002b27dd50c7fca9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 52595e0d5d8a11f9dfe5741f0aef2f344e75b12f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445641"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028341"
 ---
 # <a name="saveduistategenerationoptions-enum-type"></a>savedUIStateGenerationOptions 枚举类型
 
@@ -24,7 +24,9 @@ ms.locfileid: "43445641"
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|尚未记录|
-|omitSilverlightPolicyReferences|1|尚未记录|
+|omitSilverlightPolicyReferences|1 |尚未记录|
+
+
 
 
 

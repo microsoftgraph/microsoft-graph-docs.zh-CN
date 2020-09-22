@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 118456da4b6f8eb593b57b5e9112726bcc4f9bd6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cc8ba1449999c264eebd7ec2a15a3bcbf1d4b79c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448604"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027557"
 ---
 # <a name="message-delta"></a>message: delta
 
@@ -149,3 +149,5 @@ Content-length: 337
   ]
 }
 -->
+
+

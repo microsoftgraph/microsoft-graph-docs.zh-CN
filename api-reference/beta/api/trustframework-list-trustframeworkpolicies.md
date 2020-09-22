@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 439573b524465d540e8c167ab9b3961d2c770f31
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: d3f15fe2462434cfca0dd68f6d797627b66f1013
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215943"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027389"
 ---
 # <a name="list-trustframeworkpolicies"></a>列出 trustFrameworkPolicies
 
@@ -18,9 +18,9 @@ ms.locfileid: "43215943"
 
 > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-检索租户/目录中的[trustFrameworkPolicies](../resources/trustframeworkpolicy.md)列表。
+检索租户/目录中的 [trustFrameworkPolicies](../resources/trustframeworkpolicy.md) 列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,7 +40,7 @@ GET /trustFramework/policies/
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持`$select`和`$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持 `$select` 和 `$expand` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -54,11 +54,11 @@ GET /trustFramework/policies/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文的 JSON 表示形式中返回响应代码和[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)对象集合。
+如果成功，此方法在 `200 OK` 响应正文的 JSON 表示形式中返回响应代码和 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 对象集合。
 
 ## <a name="example"></a>示例
 
-下面的示例检索所有**trustFrameworkPolicies**。
+下面的示例检索所有 **trustFrameworkPolicies**。
 
 ##### <a name="request"></a>请求
 
@@ -124,3 +124,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

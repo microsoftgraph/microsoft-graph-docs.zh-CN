@@ -3,20 +3,20 @@ title: managedAppPolicyDeploymentSummaryPerApp 资源类型
 description: 表示每个应用的策略部署摘要。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e4f9c3af886afa5c5d0e78f23bb55d9f764b0298
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: b4e55ad697ca091ac650f47a92f384ec847d2d08
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177406"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030232"
 ---
 # <a name="managedapppolicydeploymentsummaryperapp-resource-type"></a>managedAppPolicyDeploymentSummaryPerApp 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -48,6 +48,9 @@ ms.locfileid: "44177406"
   "configurationAppliedUserCount": 1024
 }
 ```
+
+
+
 
 
 

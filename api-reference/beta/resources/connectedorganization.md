@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f5d53e3a24ad8e99c22d61bc6a4d519888c4aafd
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 95cce32d4336c34a61d6845b74e6e428d1774d21
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311288"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027207"
 ---
 # <a name="connectedorganization-resource-type"></a>connectedOrganization 资源类型
 
@@ -41,20 +41,20 @@ ms.locfileid: "47311288"
 |属性|类型|说明|
 |:---|:---|:---|
 |createdBy|String|创建此资源的用户的 UPN。 只读。|
-|createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
+|createdDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
 |说明|String|所连接的组织的说明。|
 |displayName|String|所连接的组织的显示名称。|
 |id|String| 只读。|
 |modifiedBy|String|上次修改此资源的用户的 UPN。 只读。|
-|modifiedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
+|modifiedDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
 |state|connectedOrganizationState|已连接组织的状态定义了请求者范围类型的工作分配策略是否 `AllConfiguredConnectedOrganizationSubjects` 适用。 可取值为：`configured`、`proposed`。|
 
 ## <a name="relationships"></a>关系
 
 |关系|类型|说明|
 |:---|:---|:---|
-|identitySources|[identitySource](identitySource.md) 集合| 此连接组织中的标识源、 [azureActiveDirectoryTenant](azureactivedirectorytenant.md)、 [domainIdentitySource](domainidentitysource.md) 或 [externalDomainFederation](externaldomainfederation.md)之一。 只读。 可为 Null。|
-|internalSponsors| [directoryObject](directoryobject.md) collection| 可为 Null。|
+|identitySources|[identitySource](identitySource.md) 集合| 此连接组织中的标识源、 [azureActiveDirectoryTenant](azureactivedirectorytenant.md)、 [domainIdentitySource](domainidentitysource.md) 或 [externalDomainFederation](externaldomainfederation.md)之一。 只读。 可为空。|
+|internalSponsors| [directoryObject](directoryobject.md) collection| 可为空。|
 |externalSponsors| [directoryObject](directoryobject.md) collection| 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -99,3 +99,5 @@ ms.locfileid: "47311288"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

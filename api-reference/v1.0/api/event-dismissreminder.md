@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a5613b2a250e5845baa7fd9d53743ed7a24c9da1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ab67b59711a47e4ed004e7956c64d06b277bff17
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43371055"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028943"
 ---
 # <a name="event-dismissreminder"></a>event: dismissReminder
 
@@ -122,3 +122,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

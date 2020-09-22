@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6280c3f8272ef3150f0f44836fafda8e560189ac
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: c083033257a6176a435a40ea4f55ded8baa32f28
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43466455"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027620"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
@@ -22,9 +22,9 @@ ms.locfileid: "43466455"
 
 **注意**
 
-- 您可以指定参数的注释或**body**属性 `message` 。 同时指定这两个将返回 HTTP 400 错误的请求错误。
-- 如果在原始邮件中指定了**replyTo**属性（根据 Internet 邮件格式（[RFC 2822](https://www.rfc-editor.org/info/rfc2822)）），则应将答复发送给收件人  
-**replyTo**和**toRecipients**属性，而不是**from**和**toRecipients**属性中的收件人。 
+- 您可以指定参数的注释或 **body** 属性 `message` 。 同时指定这两个将返回 HTTP 400 错误的请求错误。
+- 如果在原始邮件中指定了 **replyTo** 属性（按 Internet 邮件格式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) ，则应将答复发送给收件人  
+**replyTo** 和 **toRecipients** 属性，而不是 **from** 和 **toRecipients** 属性中的收件人。 
 
 
 ## <a name="permissions"></a>权限
@@ -56,14 +56,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
-|message|[message](../resources/message.md)|全部在答复邮件中更新的可写属性。|
+|message|[邮件](../resources/message.md)|全部在答复邮件中更新的可写属性。|
 
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [message](../resources/message.md) 对象。
 
 ## <a name="example"></a>示例
-下面的示例创建一个草稿以全部答复，并在一个**createReplyAll**调用中添加附件和批注。
+下面的示例创建一个草稿以全部答复，并在一个 **createReplyAll** 调用中添加附件和批注。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
@@ -162,3 +162,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

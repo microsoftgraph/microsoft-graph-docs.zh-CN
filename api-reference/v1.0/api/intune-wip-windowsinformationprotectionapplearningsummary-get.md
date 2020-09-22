@@ -3,14 +3,14 @@ title: 获取 windowsInformationProtectionAppLearningSummary
 description: 读取 windowsInformationProtectionAppLearningSummary 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6aae392b05bf727286ce7da72899ecd323efee0a
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 0141ce7a84553428971f5a12026d8227e8abbd56
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43439701"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028663"
 ---
 # <a name="get-windowsinformationprotectionapplearningsummary"></a>获取 windowsInformationProtectionAppLearningSummary
 
@@ -27,7 +27,7 @@ ms.locfileid: "43439701"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -78,6 +78,9 @@ Content-Length: 269
   }
 }
 ```
+
+
+
 
 
 

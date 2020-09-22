@@ -1,15 +1,15 @@
 ---
 title: 带有 Intune 的板载托管设备-Microsoft Graph API
-description: 列出用于为租户组织进行板载（配置和初始化）设备的 Intune 终结点（REST）的 Microsoft Graph API。
+description: 列出了用于板载 (配置和初始化租户组织的) 设备的 Intune 终结点 (REST) 的 Microsoft Graph API。
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 4daf91153afd8d31551882d529f9741e6e55a6f3
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 59cde8330cfa1fb59cad49a8b17ea204e8077d40
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177399"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029769"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>在 Intune 中注册设备以进行管理
 
@@ -61,3 +61,5 @@ ms.locfileid: "44177399"
 - [VPP 令牌同步状态](intune-onboarding-vpptokensyncstatus.md)
 - [Windows 10 注册完成页配置](intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)
 - [Windows Hello 企业版 PIN 使用情况](intune-onboarding-windowshelloforbusinesspinusage.md)
+
+

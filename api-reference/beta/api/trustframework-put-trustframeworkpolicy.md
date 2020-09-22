@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: de1df6c258794165e37d3572d4bee5da84316c83
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 9807802d426fc5069a83014e52f0ed2210e05102
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215908"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027347"
 ---
 # <a name="update-or-create-trustframeworkpolicy"></a>更新或创建 trustFrameworkPolicy
 
@@ -18,9 +18,9 @@ ms.locfileid: "43215908"
 
 >**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-更新现有[trustFrameworkPolicy](../resources/trustframeworkpolicy.md) ，如果不存在，则创建一个。
+更新现有 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) ，如果不存在，则创建一个。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference.md)。
 
@@ -49,20 +49,20 @@ PUT /trustFramework/policies/{id}/$value
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)对象的 XML 表示形式。 
+在请求正文中，提供 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 对象的 XML 表示形式。 
 
->**注意：** 内容类型必须为`application/xml`。
+>**注意：** 内容类型必须为 `application/xml` 。
 
 ## <a name="response"></a>响应
 
 响应将为以下之一：
-- 如果存在[trustFrameworkPolicy](../resources/trustframeworkpolicy.md) ，则成功的请求将返回`200 OK`响应代码。
-- 如果[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)不存在，则成功的请求将返回`201 Created`响应代码。
+- 如果存在 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) ，则成功的请求将返回 `200 OK` 响应代码。
+- 如果 [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) 不存在，则成功的请求将返回 `201 Created` 响应代码。
 - 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="example"></a>示例
 
-下面的示例更新**trustFrameworkPolicy**。
+下面的示例更新 **trustFrameworkPolicy**。
 
 ##### <a name="request"></a>请求
 
@@ -107,3 +107,5 @@ Content-Type: application/xml
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

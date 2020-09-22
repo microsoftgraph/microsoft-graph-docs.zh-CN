@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 4f19c2fae729e437ec2d9e91a0c6be5694a85214
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d7b712c50d8cc19951f583cb8c9af7e185dba7ad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812784"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029160"
 ---
 # <a name="networkinterface-resource-type"></a>networkInterface 资源类型
 
@@ -60,3 +60,5 @@ ms.locfileid: "46812784"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -3,14 +3,14 @@ title: 创建 windowsInformationProtectionAppLearningSummary
 description: 创建新的 windowsInformationProtectionAppLearningSummary 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a31dc75af3b8ea00e41fade55f744acfedbd1fe8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b4627dc2d6208424838774d7e7087ae7f3d25ba1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451737"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028705"
 ---
 # <a name="create-windowsinformationprotectionapplearningsummary"></a>创建 windowsInformationProtectionAppLearningSummary
 
@@ -93,6 +93,9 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
+
+
+
 
 
 

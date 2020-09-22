@@ -1,16 +1,16 @@
 ---
 title: 'trustFrameworkKeySet: uploadPkcs12'
-description: 将 PKCS 12 格式密钥（PFX）上传到键集。
+description: 将 PKCS 12 格式密钥 (PFX) 上载到键集。
 localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 64d5b2d2c10194156a1b577437d1e7a90773b80a
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: a657b7bf8ca90236649647d8a1d4d054134e2c95
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219009"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027265"
 ---
 # <a name="trustframeworkkeyset-uploadpkcs12"></a>trustFrameworkKeySet: uploadPkcs12
 
@@ -18,9 +18,9 @@ ms.locfileid: "43219009"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将 PKCS12 格式密钥（PFX）上载到[trustFrameworkKeyset](../resources/trustframeworkkeyset.md)。 输入是 Pfx 证书内容的 base-64 编码值。 此方法返回[trustFrameworkKey](../resources/trustframeworkkey.md)。
+将 PKCS12 格式密钥 (PFX) 上载到 [trustFrameworkKeyset](../resources/trustframeworkkeyset.md)。 输入是 Pfx 证书内容的 base-64 编码值。 此方法返回 [trustFrameworkKey](../resources/trustframeworkkey.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -51,12 +51,12 @@ POST /trustFramework/keySets/{id}/uploadPkcs12
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|Key|字符串|这是用于发送 pfx 内容的字段。 该值应为实际证书内容的以64编码的版本。|
+|Key|String|这是用于发送 pfx 内容的字段。 该值应为实际证书内容的以64编码的版本。|
 |密码|String|这是将密码发送给 PFX 内容的字段。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和新的[trustFrameworkKey](../resources/trustframeworkkey.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和新的 [trustFrameworkKey](../resources/trustframeworkkey.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -128,3 +128,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

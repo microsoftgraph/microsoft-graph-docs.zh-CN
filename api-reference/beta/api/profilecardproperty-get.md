@@ -1,24 +1,24 @@
 ---
-title: 获取 profileCardProperty
+title: Get profileCardProperty
 description: 检索 profileCardProperty 对象的属性和关系。
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1047159a1e2f0a481796004d461b00a29aa88482
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: aa6f26a0d5ca753d78fb60b8531b6d7bf9e4ab9f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123839"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027529"
 ---
-# <a name="get-profilecardproperty"></a>获取 profileCardProperty
+# <a name="get-profilecardproperty"></a>Get profileCardProperty
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[profileCardProperty](../resources/profilecardproperty.md)实体的属性和关系，其中包含在给定字段的 Microsoft 365 组织中存在的配置文件卡片自定义项。 ProfileCardProperty 由其**directoryPropertyName**属性标识。
+检索 [profileCardProperty](../resources/profilecardproperty.md) 实体的属性和关系，其中包含在给定字段的 Microsoft 365 组织中存在的配置文件卡片自定义项。 ProfileCardProperty 由其 **directoryPropertyName** 属性标识。
 
 ## <a name="permissions"></a>权限
 
@@ -42,7 +42,7 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/prof
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -56,7 +56,7 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/prof
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[profileCardProperty](../resources/profilecardproperty.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [profileCardProperty](../resources/profilecardproperty.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -129,3 +129,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

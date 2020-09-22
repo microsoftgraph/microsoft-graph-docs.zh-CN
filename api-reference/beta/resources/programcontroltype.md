@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 7321e4394e5e2a87d4ff51f71bc1589b5e1688cb
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: ddf5ee29c01770d06c9725413f362bd0f0e18bee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125300"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029057"
 ---
 # <a name="programcontroltype-resource-type"></a>programControlType 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "43125300"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD [access 评论](accessreviews-root.md)功能中，将控件与程序关联时使用程序控件类型，以指示控件所针对的访问评审的类型。  
+在 Azure AD [access 评论](accessreviews-root.md) 功能中，将控件与程序关联时使用程序控件类型，以指示控件所针对的访问评审的类型。  
 
 当全局管理员 onboards 租户使用访问评论功能时，将自动生成程序控制类型对象。  无法创建其他程序控件类型。
 
@@ -27,7 +27,7 @@ ms.locfileid: "43125300"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列出 programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md)集合| 列出程序控制类型。 |
+|[列出 programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) 集合| 列出程序控制类型。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -78,3 +78,5 @@ ms.locfileid: "43125300"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e835188df2c88caca5def9957f42d50694496e29
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: de6a65d1497007d4d2d9f9f5dd29d5b638c6633f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43467051"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027634"
 ---
 # <a name="message-createreply"></a>message: createReply
 
@@ -22,8 +22,8 @@ ms.locfileid: "43467051"
 
 **注意**
 
-- 您可以指定参数的注释或**body**属性 `message` 。 同时指定这两个将返回 HTTP 400 错误的请求错误。
-- 如果在原始邮件中指定了**replyTo** （根据 Internet 邮件格式（[RFC 2822](https://www.rfc-editor.org/info/rfc2822)）），则应将答复发送给**replyTo**中的收件人，而不是**发件**人中的收件人。 
+- 您可以指定参数的注释或 **body** 属性 `message` 。 同时指定这两个将返回 HTTP 400 错误的请求错误。
+- 如果在原始邮件中指定了 **replyTo** （根据 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)) 的 Internet 邮件格式），则应将答复发送到 **replyTo**中的收件人，而不是 **发件**人中的收件人。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -54,7 +54,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
-|message|[message](../resources/message.md)|答复邮件中要更新的任何可写属性。|
+|message|[邮件](../resources/message.md)|答复邮件中要更新的任何可写属性。|
 
 ## <a name="response"></a>响应
 
@@ -167,3 +167,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

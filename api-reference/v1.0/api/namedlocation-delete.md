@@ -5,18 +5,18 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ba99b9304747c7c2cdfe12981fd5b1562f27df94
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: ed34312485a26e239a0e870ddac32cdf44d60513
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567434"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028586"
 ---
 # <a name="delete-namedlocation"></a>删除 namedLocation
 
 命名空间：microsoft.graph
 
-删除[namedLocation](../resources/namedlocation.md)对象。
+删除 [namedLocation](../resources/namedlocation.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -107,3 +107,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

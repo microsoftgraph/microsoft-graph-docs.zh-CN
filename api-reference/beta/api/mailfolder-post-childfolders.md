@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 250c5097afc35222a18f17a342ecb2a70a12d0f3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1c7c85ecbd45fcb74cb57955283245fd9c0dac2f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443370"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027788"
 ---
 # <a name="create-mailfolder"></a>Create mailFolder
 
@@ -18,7 +18,7 @@ ms.locfileid: "43443370"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 创建新的子[mailFolder](../resources/mailfolder.md)。
+使用此 API 创建新的子 [mailFolder](../resources/mailfolder.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -58,7 +58,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在`201 Created`响应正文中返回响应代码和[mailFolder](../resources/mailfolder.md)对象。
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [mailFolder](../resources/mailfolder.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -135,3 +135,5 @@ Content-length: 179
   ]
 }
 -->
+
+

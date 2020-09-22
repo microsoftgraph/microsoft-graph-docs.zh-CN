@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7eddc19d3d802174ca015877ec362ec742f2e791
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: d2df6b91ebcbc65f03ee39103768bdfad04df62f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509797"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027193"
 ---
 # <a name="connectedorganizationmembers-complex-type"></a>connectedOrganizationMembers 复杂类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "46509797"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[访问包分配策略](accesspackageassignmentpolicy.md)的请求设置中使用。 `@odata.type`该值 `#microsoft.graph.connectedOrganizationMembers` 指示此类型标识用户的集合，这些用户与[已连接的组织](connectedorganization.md)相关联，将允许其请求访问包。
+在 [访问包分配策略](accesspackageassignmentpolicy.md)的请求设置中使用。 `@odata.type`该值 `#microsoft.graph.connectedOrganizationMembers` 指示此类型标识用户的集合，这些用户与[已连接的组织](connectedorganization.md)相关联，将允许其请求访问包。
 
 ## <a name="properties"></a>属性
 
@@ -26,9 +26,9 @@ ms.locfileid: "46509797"
 
 | 属性                     | 类型                      | 说明 |
 | :--------------------------- | :------------------------ | :---------- |
-| id |字符串 | 在 "权限管理" 中连接的组织的 ID。 |
-| 说明 |String | 连接的组织的名称。 只读。 |
-| isBackup | 布尔 | 目前未使用。 |
+| id |String | 在 "权限管理" 中连接的组织的 ID。 |
+| description |String | 连接的组织的名称。 只读。 |
+| isBackup | Boolean | 目前未使用。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -60,3 +60,5 @@ ms.locfileid: "46509797"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

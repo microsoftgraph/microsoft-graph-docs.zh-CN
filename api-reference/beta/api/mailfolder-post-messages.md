@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 30138336f98803f93dc6543d25dccf037783e29d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 368c9809f3812fe2ac99553f1f09a70037cf26ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467088"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027753"
 ---
 # <a name="create-message"></a>创建邮件
 
@@ -122,3 +122,5 @@ Content-length: 248
   ]
 }
 -->
+
+

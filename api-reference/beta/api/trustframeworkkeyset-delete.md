@@ -1,16 +1,16 @@
 ---
 title: 删除 trustFrameworkKeySet
-description: 删除**trustFrameworkKeySet**对象。
+description: 删除 **trustFrameworkKeySet** 对象。
 localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a9280371537ebd82452a22910d4729dc5b9b5bab
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 69987f35f6b915e8b6a7bd3fa4dafe1b124e58a9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215929"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027368"
 ---
 # <a name="delete-trustframeworkkeyset"></a>删除 trustFrameworkKeySet
 
@@ -18,9 +18,9 @@ ms.locfileid: "43215929"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除[trustFrameworkKeySet](../resources/trustframeworkkeyset.md)。
+删除 [trustFrameworkKeySet](../resources/trustframeworkkeyset.md)。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

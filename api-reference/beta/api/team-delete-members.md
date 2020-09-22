@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 45d0561f6ef74240427274541fedac1deba3427e
-ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
+ms.openlocfilehash: 7eadf4be22216493aba9e1dd67ecb49ec43dd933
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47340003"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027480"
 ---
 # <a name="remove-members-from-team"></a>从团队删除成员
 命名空间：microsoft.graph
@@ -89,4 +89,6 @@ DELETE https://graph.microsoft.com/beta/teams/{teamsId}/members/{membership-id}
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 

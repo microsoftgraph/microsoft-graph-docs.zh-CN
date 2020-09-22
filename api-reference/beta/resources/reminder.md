@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: harini84
-ms.openlocfilehash: 906e860cd6bab507a0acf89d561ccd8aeb1d1468
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ee886e369843c089d800a87709de4e6c4c8d98d4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812455"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029048"
 ---
 # <a name="reminder-resource-type"></a>提醒资源类型
 
@@ -70,3 +70,5 @@ ms.locfileid: "46812455"
   "suppressions": []
 }
 -->
+
+

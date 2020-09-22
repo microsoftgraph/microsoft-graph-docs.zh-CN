@@ -1,16 +1,16 @@
 ---
 title: 更新 trustFrameworkKeySet
-description: 更新**trustFrameworkKeySet**对象的属性。
+description: 更新 **trustFrameworkKeySet** 对象的属性。
 localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 956e05500dc47e5667ac63065480a84777414871
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: b6332882a72130e7088bf8934c79ae6e76f1aa4c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219016"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027277"
 ---
 # <a name="update-trustframeworkkeyset"></a>更新 trustFrameworkKeySet
 
@@ -18,9 +18,9 @@ ms.locfileid: "43219016"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[trustFrameworkKeyset](../resources/trustframeworkkeyset.md)的属性。 此操作将替换现有键集的内容。 在请求负载中指定 ID 是可选的。
+更新 [trustFrameworkKeyset](../resources/trustframeworkkeyset.md)的属性。 此操作将替换现有键集的内容。 在请求负载中指定 ID 是可选的。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,11 +50,11 @@ PUT /trustFramework/keySets/{id}
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|标示|[trustFrameworkKey](../resources/trustframeworkkey.md)集合| 更新 Trustframeworkkeys 的集合|
+|标示|[trustFrameworkKey](../resources/trustframeworkkey.md) 集合| 更新 Trustframeworkkeys 的集合|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[trustFrameworkKeySet](../resources/trustframeworkkeyset.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -164,3 +164,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
