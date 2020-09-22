@@ -3,14 +3,14 @@ title: mobileThreatPartnerTenantState 枚举类型
 description: 此租户的合作伙伴状态。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 20c284e8802d33ea77536c59229747edb087a970
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 820fc4690901f219d48eb7e173b44ed97a1ae23f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459347"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079177"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>mobileThreatPartnerTenantState 枚举类型
 
@@ -24,9 +24,11 @@ ms.locfileid: "43459347"
 |成员|值|说明|
 |:---|:---|:---|
 |才|0|合作伙伴不可用。|
-|可用|1|合作伙伴可用。|
-|enabled|双面|启用合作伙伴。|
+|可用|1 |合作伙伴可用。|
+|enabled|2 |启用合作伙伴。|
 |无|第三章|合作伙伴无响应。|
+
+
 
 
 

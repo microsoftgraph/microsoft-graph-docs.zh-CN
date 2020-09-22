@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c2646e361e81b5d9ec0c45e3bcfe5f867c5ebe97
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d2ee6be256cfa65125cedbb3ff059ed8b5d4a120
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807764"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079128"
 ---
 # <a name="locationconstraint-resource-type"></a>locationConstraint 资源类型
 
@@ -54,3 +54,4 @@ ms.locfileid: "46807764"
   "section": "documentation",
   "tocPath": ""
 }-->
+

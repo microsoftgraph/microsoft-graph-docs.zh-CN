@@ -5,16 +5,16 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: c2165f43c04ebbaf3274cc0ae912756bf250785a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 11e0b1538f6d2b41a8b211e1a7cc4ac45d2703a7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519244"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079638"
 ---
 # <a name="workbookcomment-resource-type"></a>workbookComment 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 代表工作簿中的注释。
 
@@ -22,8 +22,8 @@ ms.locfileid: "42519244"
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出 workbookComments](../api/workbook-list-comments.md) | [workbookComment](workbookComment.md)集合 | 获取**workbookComment**对象集合。 |
-| [获取 workbookComment](../api/workbookcomment-get.md) | [workbookComment](workbookcomment.md) | 读取**workbookComment**对象的属性和关系。 |
+| [列出 workbookComments](../api/workbook-list-comments.md) | [workbookComment](workbookComment.md) 集合 | 获取 **workbookComment** 对象集合。 |
+| [获取 workbookComment](../api/workbookcomment-get.md) | [workbookComment](workbookcomment.md) | 读取 **workbookComment** 对象的属性和关系。 |
 
 
 ## <a name="properties"></a>属性
@@ -32,13 +32,13 @@ ms.locfileid: "42519244"
 |:-------------|:------------|:------------|
 |内容|String|注释的内容。|
 |contentType|String|指示注释的类型。|
-|id|字符串| 表示批注标识符。 只读。|
+|id|String| 表示批注标识符。 只读。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|应答|[workbookCommentReply](workbookcommentreply.md)集合| 只读。可为空。|
+|应答|[workbookCommentReply](workbookcommentreply.md) 集合| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -71,3 +71,5 @@ ms.locfileid: "42519244"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

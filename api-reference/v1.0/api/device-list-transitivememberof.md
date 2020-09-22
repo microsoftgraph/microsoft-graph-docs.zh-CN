@@ -1,18 +1,18 @@
 ---
-title: 列出设备可传递组
+title: List device transitive groups
 description: 获取设备所属的组。
 author: spunukol
 ms.prod: microsoft-identity-platform
 localization_priority: Normal
 doc_type: apiPageType
-ms.openlocfilehash: 0b396f2025a95ce9db861e7e8e4b630039e09d30
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 859cd2fa83a62f04d65f2553e2fd33f3c483e760
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466723"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078022"
 ---
-# <a name="list-device-transitive-groups"></a>列出设备可传递组
+# <a name="list-device-transitive-groups"></a>List device transitive groups
 
 命名空间：microsoft.graph
 
@@ -134,3 +134,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

@@ -3,14 +3,14 @@ title: sharedPCAllowedAccountType 枚举类型
 description: 允许共享电脑的帐户类型。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1410a8b23afe9ef17d11c1b08f6445654df1172c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1125591b52889e89a80cf2b5cbda432c418f3ef7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472599"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079254"
 ---
 # <a name="sharedpcallowedaccounttype-enum-type"></a>sharedPCAllowedAccountType 枚举类型
 
@@ -23,8 +23,10 @@ ms.locfileid: "43472599"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|操作系统|1|仅来宾帐户。|
-|domain|双面|仅加入域的帐户。|
+|操作系统|1 |仅来宾帐户。|
+|domain|2 |仅加入域的帐户。|
+
+
 
 
 

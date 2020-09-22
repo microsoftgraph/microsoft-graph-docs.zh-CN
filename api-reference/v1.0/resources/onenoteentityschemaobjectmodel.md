@@ -5,16 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 7f0d0d23d56091db051352eaa8bde7668829e5da
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1d7f4cd1ef452acbae902c1d4f2aadaa16f69ffe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447316"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079030"
 ---
 # <a name="onenoteentityschemaobjectmodel-resource"></a>onenoteEntitySchemaObjectModel 资源
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 这是 OneNote 实体的基本类型。
 
@@ -52,3 +52,4 @@ ms.locfileid: "42447316"
   "section": "documentation",
   "tocPath": ""
 }-->
+

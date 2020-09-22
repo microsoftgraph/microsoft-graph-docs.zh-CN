@@ -3,14 +3,14 @@ title: 获取 iosManagedAppProtection
 description: 读取 iosManagedAppProtection 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 951ef75a0a7b3c1e92d09a4891069d20246cd0b5
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: c54d104bb7b49e94988eefd5279376379d2145ae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177322"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079506"
 ---
 # <a name="get-iosmanagedappprotection"></a>获取 iosManagedAppProtection
 
@@ -27,7 +27,7 @@ ms.locfileid: "44177322"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -115,6 +115,9 @@ Content-Length: 1942
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: windowsInformationProtectionApp 资源类型
 description: 用于 Windows 信息保护的应用
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b4a64b1b91df7bc52fbec718e0bc5fb13beae308
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: be46da02dae93199ae18306bba361a5036e21e3e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468479"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079247"
 ---
 # <a name="windowsinformationprotectionapp-resource-type"></a>windowsInformationProtectionApp 资源类型
 
@@ -23,8 +23,8 @@ ms.locfileid: "43468479"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|应用显示名称。|
-|description|字符串|应用的说明。|
+|displayName|String|应用显示名称。|
+|description|String|应用的说明。|
 |publisherName|String|发布者名称|
 |productName|String|产品名称。|
 |denied|Boolean|如果为 true，则应用的保护或免除受到拒绝。|
@@ -49,6 +49,8 @@ ms.locfileid: "43468479"
   "denied": true
 }
 ```
+
+
 
 
 

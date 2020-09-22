@@ -3,14 +3,14 @@ title: settingStateDeviceSummary 资源类型
 description: 设置状态的设备合规性策略和配置摘要
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: abf180686d36a29c9d6803f96bec483aa5046614
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b53713abbd1fc4389e454950c6617ba2d9d6fc40
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472620"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079268"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>settingStateDeviceSummary 资源类型
 
@@ -37,7 +37,7 @@ ms.locfileid: "43472620"
 |instancePath|String|设置的 InstancePath 的名称|
 |unknownDeviceCount|Int32|设置的设备未知计数|
 |notApplicableDeviceCount|Int32|设置的设备不可用计数|
-|compliantDeviceCount|Int32|设置的设备符合计数|
+|compliantDeviceCount|Int32|设置的设备符合性计数|
 |remediatedDeviceCount|Int32|设置的设备符合性计数|
 |nonCompliantDeviceCount|Int32|设置的设备不符合计数|
 |errorDeviceCount|Int32|设置的设备错误计数|
@@ -69,6 +69,8 @@ ms.locfileid: "43472620"
   "conflictDeviceCount": 1024
 }
 ```
+
+
 
 
 

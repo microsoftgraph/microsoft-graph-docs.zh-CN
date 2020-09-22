@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3f1839bdb7bb06dc0df11020ef14e51cf53d2d5e
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 6d49f3675362c31074fb5e9cbdf79787ceb1b5af
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43441479"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079142"
 ---
 # <a name="location-resource-type"></a>位置资源类型
 
@@ -72,3 +72,4 @@ ms.locfileid: "43441479"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 61173f92b6aa74d0a703366140f17f983d94c855
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: c11527f5a05018f02b4f3113ffa52e10e8929cfd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873277"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078967"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>teamsAsyncOperation 资源类型
 
@@ -30,7 +30,7 @@ Microsoft 团队 async operation 是 transcends 一个 API 请求的生存期的
 |id|string |唯一操作 id。|
 |operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |指示正在描述的操作的类型。|
 |createdDateTime|DateTimeOffset |创建操作的时间。|
-|状态|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| 操作状态。|
+|status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| 操作状态。|
 |lastActionDateTime|DateTimeOffset |上次更新异步操作的时间。|
 |attemptsCount|Int32|在标记为 "成功" 或 "失败" 之前尝试操作的次数。|
 |targetResourceId|containerparentjob |作为此异步操作（通常为 [团队](../resources/team.md)）的结果创建或修改的对象的 ID。|
@@ -70,3 +70,4 @@ Microsoft 团队 async operation 是 transcends 一个 API 请求的生存期的
   "section": "documentation",
   "tocPath": ""
 }-->
+

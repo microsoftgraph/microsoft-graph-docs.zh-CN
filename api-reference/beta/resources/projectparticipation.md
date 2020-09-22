@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 535564d3b35bbccb47c54a78fe4b508a6d6a2963
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 72d36f21a156fd6239dd8466808b1fe6ba2e6889
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812020"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078293"
 ---
 # <a name="projectparticipation-resource-type"></a>projectParticipation 资源类型
 
@@ -37,9 +37,9 @@ ms.locfileid: "46812020"
 |属性|类型|说明|
 |:---|:---|:---|
 |allowedAudiences|String|能够查看实体中包含的值的访问群体。 继承自 [itemFacet](../resources/itemfacet.md)。 可取值为：`me`、`family`、`contacts`、`groupMembers`、`organization`、`federatedOrganizations`、`everyone`、`unknownFutureValue`。|
-|categories|String collection|包含用户与项目相关联的类别 (例如，数字转换、石油远程测试机组) 。 |
+|categories|String 集合|包含用户与项目相关联的类别 (例如，数字转换、石油远程测试机组) 。 |
 |客户端|[companyDetail](../resources/companydetail.md)|包含有关项目所针对的客户端的详细信息。 |
-|collaborationTags|字符串集合|包含用户与兴趣相关的体验方案标记。 集合中允许的值为： `askMeAbout` 、 `ableToMentor` 、 `wantsToLearn` 、 `wantsToImprove` 。|
+|collaborationTags|String 集合|包含用户与兴趣相关的体验方案标记。 集合中允许的值为： `askMeAbout` 、 `ableToMentor` 、 `wantsToLearn` 、 `wantsToImprove` 。|
 |征求|[relatedPerson](../resources/relatedperson.md) 集合|列出也在项目中工作的人员。 |
 |createdBy|[identitySet](../resources/identityset.md)|提供创建实体的用户和/或应用程序的标识符。 继承自 [itemFacet](../resources/itemfacet.md)。|
 |createdDateTime|DateTimeOffset|为创建实体时提供 dateTimeOffset。 继承自 [itemFacet](../resources/itemfacet.md)。|
@@ -112,3 +112,5 @@ ms.locfileid: "46812020"
   ]
 }
 ```
+
+

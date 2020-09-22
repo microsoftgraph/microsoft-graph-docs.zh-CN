@@ -1,22 +1,22 @@
 ---
-title: 列出 orgContacts
+title: List orgContacts
 description: 检索此组织的组织联系人列表。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1c6ce5caffdc24306b93e61fce70802a04a4267b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f7c356f2247e3d5a4b4c2939b6a97faf4ae2c2c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463745"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079401"
 ---
-# <a name="list-orgcontacts"></a>列出 orgContacts
+# <a name="list-orgcontacts"></a>List orgContacts
 
 命名空间：microsoft.graph
 
-获取此组织的[组织联系人](../resources/orgcontact.md)列表。
+获取此组织的 [组织联系人](../resources/orgcontact.md) 列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -33,7 +33,7 @@ ms.locfileid: "43463745"
 GET /contacts
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持`$expand`、 `$filter`、 `$select`和`$top` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+此方法支持 `$expand` 、 `$filter` 、 `$select` 和 `$top` [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -45,7 +45,7 @@ GET /contacts
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[orgContact](../resources/orgcontact.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [orgContact](../resources/orgcontact.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -132,3 +132,4 @@ Content-length: 222
   ]
 }
 -->
+

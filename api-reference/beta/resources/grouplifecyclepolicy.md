@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: b99e79da21f7aefe523b7bebe27115d9d38d4b55
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: d01be98869a62d72b275f5840ddc2e0edcd5c698
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895501"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078428"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>groupLifecyclePolicy 资源类型
 
@@ -74,3 +74,5 @@ ms.locfileid: "44895501"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

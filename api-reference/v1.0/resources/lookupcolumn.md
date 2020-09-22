@@ -7,16 +7,16 @@ localization_priority: Normal
 description: columnDefinition 资源上的 lookupColumn 指示从网站中的另一个源查找列的值。
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 752d60bbb1ac93b5a58eb326e7a6769921c47a66
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9bd1d9040316404c6f0b494914d0c1f1f016e016
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447519"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079114"
 ---
 # <a name="lookupcolumn-resource-type"></a>LookupColumn 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [columnDefinition](columndefinition.md) 资源上的 **lookupColumn** 指示从网站中的另一个源查找列的值。
 
@@ -52,3 +52,4 @@ ms.locfileid: "42447519"
   "section": "documentation",
   "tocPath": "Resources/LookupColumn"
 } -->
+

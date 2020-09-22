@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 6e112d97f67b260c19de9fe0ab104e9dc1ed1d74
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 926479832db04e427e7ca1d73744008db7dc6aaa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810333"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079625"
 ---
 # <a name="yomipersonname-resource-type"></a>yomiPersonName 资源类型
 
@@ -53,3 +53,5 @@ ms.locfileid: "46810333"
   "last": "String"
 }
 ```
+
+

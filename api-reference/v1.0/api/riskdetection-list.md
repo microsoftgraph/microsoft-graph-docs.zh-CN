@@ -5,17 +5,17 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cbfdea7f4fe92d7f53154c34b41ccc463bc466e4
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: Auto
+ms.openlocfilehash: b6d1a57d0f83608169b412b520f1342662b592d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897594"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079345"
 ---
 # <a name="list-riskdetections"></a>列出 riskDetections
 命名空间：microsoft.graph
 
-获取[riskDetection](../resources/riskdetection.md)对象及其属性的列表。
+获取 [riskDetection](../resources/riskdetection.md) 对象及其属性的列表。
 
 >[!NOTE]
 >您必须具有 Azure AD 高级 P1 或 P2 许可证，才能使用风险检测 API。
@@ -40,7 +40,7 @@ GET /identityProtection/riskDetections
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -52,7 +52,7 @@ GET /identityProtection/riskDetections
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[riskDetection](../resources/riskdetection.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [riskDetection](../resources/riskdetection.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -112,4 +112,5 @@ Content-Type: application/json
   ]
 }
 ```
+
 

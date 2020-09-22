@@ -5,16 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: fd924b4ef79efa8b517bbf190eb3d3defc7bc1c5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8547839597e5f98cf0bcceef80f28814888d539e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447435"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079023"
 ---
 # <a name="onenoteentityhierarchymodel-resource"></a>onenoteEntityHierarchyModel 资源
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 这是 OneNote 实体的基本类型。
 
@@ -59,3 +59,4 @@ ms.locfileid: "42447435"
   "section": "documentation",
   "tocPath": ""
 }-->
+

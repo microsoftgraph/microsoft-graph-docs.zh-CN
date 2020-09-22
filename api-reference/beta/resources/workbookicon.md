@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
 author: ruoyingl
-ms.openlocfilehash: f5471c11ddc679a08430163413197df4847e8b7e
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: bc2145da07a649f06de49bfb9af97567173fe746
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807414"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079632"
 ---
 # <a name="workbookicon-resource-type"></a>workbookIcon 资源类型
 
@@ -70,3 +70,5 @@ ms.locfileid: "46807414"
   "suppressions": []
 }
 -->
+
+

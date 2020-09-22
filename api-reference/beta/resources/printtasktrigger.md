@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 0a9ca4d06f43c9dd0964f0bb4c9614bfb4a78c1e
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: Auto
+ms.openlocfilehash: fc05fe9011d91ac9da5f74a6079537ebfba25160
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091575"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078288"
 ---
 # <a name="printtasktrigger-resource-type"></a>printTaskTrigger 资源类型
 
@@ -20,21 +20,21 @@ ms.locfileid: "45091575"
 
 确定根据关联的[printTaskDefinition](printtaskdefinition.md)触发新[printTask](printtask.md)时所依据的条件。
 
-有关如何使用此资源将拉取打印支持添加到通用打印的详细信息，请参阅[扩展通用打印以支持 pull 打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
+有关如何使用此资源将拉取打印支持添加到通用打印的详细信息，请参阅 [扩展通用打印以支持 pull 打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | Description |
 |:-------------|:------------|:------------|
-| [List](../api/printer-list-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md)集合 | 获取与特定[打印机](printer.md)相关联的 printTaskTriggers 的列表。 |
-| [获取](../api/printtasktrigger-get.md) | [printTaskTrigger](printtasktrigger.md) | 获取与特定[printTask](printtask.md)关联的 printTaskTrigger。 |
+| [List](../api/printer-list-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) 集合 | 获取与特定 [打印机](printer.md)相关联的 printTaskTriggers 的列表。 |
+| [Get](../api/printtasktrigger-get.md) | [printTaskTrigger](printtasktrigger.md) | 获取与特定 [printTask](printtask.md)关联的 printTaskTrigger。 |
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|String|PrintTaskTrigger 的标识符。 只读。|
-|event|printEvent|将导致触发新[printTask](printtask.md)的通用打印事件。 有效值如下表所述。|
+|event|printEvent|将导致触发新 [printTask](printtask.md) 的通用打印事件。 有效值如下表所述。|
 
 ### <a name="printevent-values"></a>printEvent 值
 
@@ -46,7 +46,7 @@ ms.locfileid: "45091575"
 ## <a name="relationships"></a>关系
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|定义|[printTaskDefinition](printtaskdefinition.md)|将用于创建[printTask](printtask.md)的抽象定义（由 print 事件触发时）。 只读。|
+|定义|[printTaskDefinition](printtaskdefinition.md)|将用于创建 [printTask](printtask.md) 的抽象定义（由 print 事件触发时）。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -80,3 +80,5 @@ ms.locfileid: "45091575"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

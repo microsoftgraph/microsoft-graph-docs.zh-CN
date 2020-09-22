@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: daf48391c0dd26ded407659ff9159703aed31566
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ef7f459fd345992cb51e8c3ac2742146648772dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806819"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078988"
 ---
 # <a name="recipient-resource-type"></a>收件人资源类型
 
@@ -51,3 +51,4 @@ ms.locfileid: "46806819"
   "section": "documentation",
   "tocPath": ""
 }-->
+

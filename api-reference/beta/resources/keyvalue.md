@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e3f85936e94da0485d62478f54eed8918967396b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0a25d9c69b3495bcc2efc38b3e87b373f247d024
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442721"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078339"
 ---
 # <a name="keyvalue-resource-type"></a>键值资源类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "43442721"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|Key|String|包含与值相关联的字段的名称。 当登录请求中包含登录或域提示时，相应的字段作为键值对包含。 可能的键`Login hint present`： `Domain hint present`、。|
-|value|String|包含指定键的相应值。 如果登录请求`true`中包含登录提示，则值为; 否则为。否则`false`为。 值是`true`在登录请求中包含域提示;否则`false`为。|
+|Key|String|包含与值相关联的字段的名称。 当登录请求中包含登录或域提示时，相应的字段作为键值对包含。 可能的键： `Login hint present` 、 `Domain hint present` 。|
+|value|String|包含指定键的相应值。 `true`如果登录请求中包含登录提示，则值为; 否则为 false `false` 。 值是在 `true` 登录请求中包含域提示; 否则，值为 `false` 。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -58,3 +58,5 @@ ms.locfileid: "43442721"
   "suppressions": []
 }
 -->
+
+

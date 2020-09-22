@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: bcf8b793c4543b895a895ef0582e4b017e127cbb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 35a886fa40beb85a636dcbbf0895d35e204e4675
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511465"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079352"
 ---
 # <a name="participant-invite"></a>参与者：邀请
 
@@ -18,7 +18,7 @@ ms.locfileid: "42511465"
 
 邀请参与者加入活动呼叫。
 
-有关如何处理操作的详细信息，请参阅[commsoperation](../resources/commsoperation.md)。
+有关如何处理操作的详细信息，请参阅 [commsoperation](../resources/commsoperation.md)。
 
 >**注意：** 组调用仅支持此 API。
 
@@ -29,7 +29,7 @@ ms.locfileid: "42511465"
 | :-------------- | :--------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                       |
 | 委派（个人 Microsoft 帐户） | 不支持                       |
-| 应用程序     | InitiateGroupCalls                               |
+| 应用程序     | Calls.InitiateGroupCalls                               |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,12 +49,12 @@ POST /communications/calls/{id}/participants/invite
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |participants|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) 集合| 要邀请的参与者。|
-|适用|字符串|唯一的客户端上下文字符串。 最大限制为256个字符。|
+|适用|String|唯一的客户端上下文字符串。 最大限制为256个字符。|
 
 ## <a name="response"></a>响应
-如果 succsessful，此方法将返回`200 OK`响应代码和位置标头，其中包含为此请求创建的[inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)的 URI。 
+如果 succsessful，此方法将返回 `200 OK` 响应代码和位置标头，其中包含为此请求创建的 [INVITEPARTICIPANTSOPERATION](../resources/inviteparticipantsoperation.md) 的 URI。 
 
-响应正文包含创建的[inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)。
+响应正文包含创建的 [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)。
 
 >**注意：** 当此 API 返回成功响应时，所有参与者都将收到名单更新。
 
@@ -252,7 +252,7 @@ Content-Type: application/json
 
 ### <a name="example-2-invite-multiple-participants-to-an-existing-group-call"></a>示例2：将多个参与者邀请到现有组调用
 
-> **注意**：现有的组调用必须具有有效的[chatInfo](../resources/chatInfo.md)。 最高可邀请5个参与者。
+> **注意**：现有的组调用必须具有有效的 [chatInfo](../resources/chatInfo.md)。 最高可邀请5个参与者。
 
 ##### <a name="request"></a>请求
 
@@ -509,8 +509,8 @@ Content-Type: application/json
 邀请 API 在替换现有的对等呼叫时仅支持一个参与者。 当请求正文中提供多个参与者时，将只读取第一个参与者，并且将忽略参与者的其余部分。
 
 
-> **注意：** 邀请 API 仅支持一个参与者（如果`replacesCallId`提供）。 
-> 有关使用`replacesCallId`替换现有的对等呼叫的详细信息，请参阅[invitationParticipantInfo](../resources/invitationparticipantinfo.md)。
+> **注意：** 邀请 API 仅支持一个参与者（如果 `replacesCallId` 提供）。 
+> 有关使用 `replacesCallId` 替换现有的对等呼叫的详细信息，请参阅 [invitationParticipantInfo](../resources/invitationparticipantinfo.md)。
 
 ##### <a name="request"></a>请求
 
@@ -713,3 +713,4 @@ Content-Type: application/json
   ]
 }
 -->
+

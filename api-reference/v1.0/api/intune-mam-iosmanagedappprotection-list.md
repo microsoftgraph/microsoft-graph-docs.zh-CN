@@ -3,14 +3,14 @@ title: 列出 iosManagedAppProtections
 description: 列出 iosManagedAppProtection 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7fee1b975468341ecd7466659e0a0f460707d566
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: b4db1f24cf0870e4a074da96853f136cf04225f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177266"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079499"
 ---
 # <a name="list-iosmanagedappprotections"></a>列出 iosManagedAppProtections
 
@@ -27,7 +27,7 @@ ms.locfileid: "44177266"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+|应用程序|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -114,6 +114,9 @@ Content-Length: 2040
   ]
 }
 ```
+
+
+
 
 
 

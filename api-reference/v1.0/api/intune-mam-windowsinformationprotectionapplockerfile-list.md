@@ -3,14 +3,14 @@ title: 列出 windowsInformationProtectionAppLockerFiles
 description: 列出 windowsInformationProtectionAppLockerFile 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 890d3eaef84879404c4dbcb44831ba1f2c241561
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d3e0e3f920dcef2dc7202ce36edf859213e0420e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450138"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079380"
 ---
 # <a name="list-windowsinformationprotectionapplockerfiles"></a>列出 windowsInformationProtectionAppLockerFiles
 
@@ -81,6 +81,9 @@ Content-Length: 317
   ]
 }
 ```
+
+
+
 
 
 

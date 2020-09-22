@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c66ebc2ef5033b57c46bef0ebb831b4f2087a0b3
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: bdb43108d327a727f6c5899d0ea097caf357f205
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218420"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079760"
 ---
 # <a name="filteroperand-resource-type"></a>filterOperand 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "43218420"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|值|String collection|值的集合。|
+|值|String 集合|值的集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -56,3 +56,5 @@ ms.locfileid: "43218420"
   "suppressions": []
 }
 -->
+
+

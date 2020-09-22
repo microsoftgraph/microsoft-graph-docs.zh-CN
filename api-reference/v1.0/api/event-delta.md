@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7e21b03de00a88d4db5fb168015b8c61f7c92eea
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 509b58a6cf49f3ae964c082e4b7f6f473df87f22
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461665"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079555"
 ---
 # <a name="event-delta"></a>event: delta
 
@@ -149,3 +149,4 @@ Content-length: 359
   "suppressions": [
   ]
 }-->
+

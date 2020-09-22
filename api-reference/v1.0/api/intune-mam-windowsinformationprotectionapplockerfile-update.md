@@ -3,14 +3,14 @@ title: 更新 windowsInformationProtectionAppLockerFile
 description: 更新 windowsInformationProtectionAppLockerFile 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cf6df3ff89702d3ab78a5ccad1575bbfbdd4b90a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0200d6041aa8424a7da5804bded4cdc2b25552de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450075"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079359"
 ---
 # <a name="update-windowsinformationprotectionapplockerfile"></a>更新 windowsInformationProtectionAppLockerFile
 
@@ -54,7 +54,7 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|友好名称|
+|displayName|String|友好名称|
 |fileHash|String|文件的 SHA256 哈希|
 |file|Binary|字节数组形式的文件|
 |id|String|实体的键。|
@@ -99,6 +99,9 @@ Content-Length: 260
   "version": "Version value"
 }
 ```
+
+
+
 
 
 

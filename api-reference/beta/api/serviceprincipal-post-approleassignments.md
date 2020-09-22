@@ -1,16 +1,16 @@
 ---
 title: 向服务主体授予 appRoleAssignment
-description: 向服务主体授予应用程序角色分配。
+description: 向服务主体授予应用角色分配。
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 8e8bc455f8b04e4a78bfcad1795917350ec8b86b
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: ca0f3a2837062bacf592c100c4f92532483a8399
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44382656"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076779"
 ---
 # <a name="grant-an-approleassignment-to-a-service-principal"></a>向服务主体授予 appRoleAssignment
 
@@ -20,15 +20,15 @@ ms.locfileid: "44382656"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将应用程序角色分配给客户端服务主体。
+向客户端服务主体分配一个应用角色。
 
-分配给服务主体的应用程序角色也称为 "[应用程序权限](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types)"。 可以通过应用角色分配或通过[许可体验](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience)直接授予应用程序权限。
+分配给服务主体的应用角色也被称为[应用程序权限](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types)。 应用程序权限可以通过应用角色分配直接授予，或通过[协议体验](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience)授予。
 
-若要向客户端服务主体授予应用程序角色分配，您需要三个标识符：
+若要向客户端服务主体授予应用角色分配，需使用三个标识符：
 
-- `principalId`：要 `id` 向其分配应用角色的客户端服务主体的。
-- `resourceId`： `id` `servicePrincipal` 定义了应用程序角色（应用程序权限）的资源（API）。
-- `appRoleId`： `id` `appRole` 要分配给客户端服务主体的（在资源服务主体上定义）的。
+- `principalId`： 或要向其分配应用角色的客户端服务主体的 `id`。
+- `resourceId`：已定义应用角色（应用程序权限）的资源 `servicePrincipal` (API) 的 `id`。
+- `appRoleId`：要分配给客户端服务主体的 `appRole`（在资源服务主体上定义）的 `id`。
 
 ## <a name="permissions"></a>权限
 
@@ -36,9 +36,9 @@ ms.locfileid: "44382656"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | AppRoleAssignment、Directory.accessasuser.all、all 和的所有子目录    |
+|委派（工作或学校帐户） | AppRoleAssignment.ReadWrite.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | AppRoleAssignment、所有的目录读写。 |
+|应用程序 | AppRoleAssignment.ReadWrite.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,9 +48,9 @@ POST /servicePrincipals/{id}/appRoleAssignments
 ```
 
 > [!NOTE]
-> 作为一种最佳做法，我们建议通过[ `appRoleAssignedTo` _资源_服务主体的关系](serviceprincipal-post-approleassignedto.md)创建应用程序角色分配，而不是 `appRoleAssignments` 分配的用户、组或服务主体的关系。
+> 最佳做法是，建议通过[`appRoleAssignedTo`_资源_服务主体](serviceprincipal-post-approleassignedto.md)的关系（而不是通过分配的用户、组或服务主体的`appRoleAssignments`关系）创建应用角色分配。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称       | 说明|
 |:-----------|:----------|
@@ -59,11 +59,11 @@ POST /servicePrincipals/{id}/appRoleAssignments
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[appRoleAssignment](../resources/approleassignment.md)对象的 JSON 表示形式。
+在请求正文中，提供 [appRoleAssignment](../resources/approleassignment.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `201 Created` 在响应正文中返回响应代码和[appRoleAssignment](../resources/approleassignment.md)对象。
+如果成功，此运营商将在响应正文中返回 `201 Created` 响应代码和 [appRoleAssignment](../resources/approleassignment.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -104,7 +104,7 @@ Content-Length: 110
 ---
 
 
-在此示例中， `{id}` 和 `{principalId-value}` 都是 `id` 分配的客户端服务主体，也是 `{resoruceId}` `id` 资源服务主体（API）的。
+在此示例中，`{id}` 和 `{principalId-value}` 都将成为已分配的客户端服务主体的 `id`，`{resoruceId}` 将成为资源服务主体 (API) 的 `id`。
 
 ### <a name="response"></a>响应
 
@@ -147,3 +147,5 @@ Content-length: 253
   ]
 }
 -->
+
+

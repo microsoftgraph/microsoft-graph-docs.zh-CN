@@ -3,14 +3,14 @@ title: targetApps 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d41dfa49ae836ef58eede00ab9a6e547e8cbeeb3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d68d46eb78c34a73acb4f0a9b0759c5fcddaacd8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43398736"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079492"
 ---
 # <a name="targetapps-action"></a>targetApps 操作
 
@@ -89,6 +89,9 @@ Content-length: 286
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

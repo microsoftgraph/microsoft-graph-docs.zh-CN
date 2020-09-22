@@ -3,20 +3,20 @@ title: enrollmentProfile 资源类型
 description: EnrollmentProfile 资源表示必须提供预注册的配置的集合，以便能够注册已预暂存其标识的某些设备。 预暂存的设备标识分配给此类型的配置文件，以便在注册相应设备时应用配置文件的配置。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 954f1d846b2af90598239d205970e3c2505f1fb1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8c8d132aca31abe7e90131509f73d9d7a15d0db7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460853"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080205"
 ---
 # <a name="enrollmentprofile-resource-type"></a>enrollmentProfile 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,11 +25,11 @@ EnrollmentProfile 资源表示必须提供预注册的配置的集合，以便�
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 enrollmentProfiles](../api/intune-enrollment-enrollmentprofile-list.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)集合|列出[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)对象的属性和关系。|
-|[获取 enrollmentProfile](../api/intune-enrollment-enrollmentprofile-get.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|读取[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)对象的属性和关系。|
-|[创建 enrollmentProfile](../api/intune-enrollment-enrollmentprofile-create.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|创建新的[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)对象。|
-|[删除 enrollmentProfile](../api/intune-enrollment-enrollmentprofile-delete.md)|无|删除[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)。|
-|[更新 enrollmentProfile](../api/intune-enrollment-enrollmentprofile-update.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|更新[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)对象的属性。|
+|[列出 enrollmentProfiles](../api/intune-enrollment-enrollmentprofile-list.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) 集合|列出 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) 对象的属性和关系。|
+|[获取 enrollmentProfile](../api/intune-enrollment-enrollmentprofile-get.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|读取 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) 对象的属性和关系。|
+|[创建 enrollmentProfile](../api/intune-enrollment-enrollmentprofile-create.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|创建新的 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) 对象。|
+|[删除 enrollmentProfile](../api/intune-enrollment-enrollmentprofile-delete.md)|无|删除 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)。|
+|[更新 enrollmentProfile](../api/intune-enrollment-enrollmentprofile-update.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|更新 [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) 对象的属性。|
 |[setDefaultProfile 操作](../api/intune-enrollment-enrollmentprofile-setdefaultprofile.md)|无|尚未记录|
 |[exportMobileConfig 函数](../api/intune-enrollment-enrollmentprofile-exportmobileconfig.md)|String|导出移动配置|
 |[updateDeviceProfileAssignment 操作](../api/intune-enrollment-enrollmentprofile-updatedeviceprofileassignment.md)|无|尚未记录|
@@ -37,13 +37,13 @@ EnrollmentProfile 资源表示必须提供预注册的配置的集合，以便�
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 GUID|
+|id|String|对象的 GUID|
 |displayName|String|配置文件的名称|
-|description|String|配置文件的说明|
-|requiresUserAuthentication|布尔值|指示配置文件是否需要用户身份验证|
+|说明|String|配置文件的说明|
+|requiresUserAuthentication|Boolean|指示配置文件是否需要用户身份验证|
 |configurationEndpointUrl|String|用于注册的配置终结点 url|
-|enableAuthenticationViaCompanyPortal|布尔值|指示使用 Apple Setup 助理（而不是公司门户）进行身份验证。|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|布尔值|指示在安装助理注册设备上需要公司门户|
+|enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup 助理（而不是公司门户）进行身份验证。|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在安装助理注册设备上需要公司门户|
 
 ## <a name="relationships"></a>关系
 无
@@ -68,6 +68,9 @@ EnrollmentProfile 资源表示必须提供预注册的配置的集合，以便�
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
+
+
+
 
 
 

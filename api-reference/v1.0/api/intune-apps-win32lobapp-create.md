@@ -1,0 +1,245 @@
+---
+title: 创建 win32LobApp
+description: 创建新的 win32LobApp 对象。
+author: dougeby
+localization_priority: Normal
+ms.prod: intune
+doc_type: apiPageType
+ms.openlocfilehash: c903de1e1f2bec92c255d29878eac06d38f4428c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080041"
+---
+# <a name="create-win32lobapp"></a>创建 win32LobApp
+
+命名空间：microsoft.graph
+
+> **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+
+创建新的 [win32LobApp](../resources/intune-apps-win32lobapp.md) 对象。
+
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+
+|权限类型|权限（从最高特权到最低特权）|
+|:---|:---|
+|委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
+|委派（个人 Microsoft 帐户）|不支持。|
+|应用程序|DeviceManagementApps.ReadWrite.All|
+
+## <a name="http-request"></a>HTTP 请求
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceAppManagement/mobileApps
+```
+
+## <a name="request-headers"></a>请求标头
+|标头|值|
+|:---|:---|
+|Authorization|Bearer &lt;token&gt;。必需。|
+|接受|application/json|
+
+## <a name="request-body"></a>请求正文
+在请求正文中，提供 win32LobApp 对象的 JSON 表示形式。
+
+下表显示创建 win32LobApp 时所需的属性。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|id|String|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|description|String|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|lastModifiedDateTime|DateTimeOffset|上次修改应用的日期和时间。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|privacyInformationUrl|String|隐私声明 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|informationUrl|String|详细信息 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
+|committedContentVersion|String|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
+|fileName|String|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
+|size|Int64|总大小，包括所有已上传文件。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
+|installCommandLine|String|要安装此应用程序的命令行|
+|uninstallCommandLine|String|要卸载此应用程序的命令行|
+|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|可运行此应用的 Windows 体系结构。 可取值为：`none`、`x86`、`x64`、`arm`、`neutral`。|
+|minimumFreeDiskSpaceInMB|Int32|安装此应用程序所需的最小可用磁盘空间的值。|
+|minimumMemoryInMB|Int32|安装此应用程序所需的最小物理内存的值。|
+|minimumNumberOfProcessors|Int32|安装此应用程序所需的最小处理器数的值。|
+|minimumCpuSpeedInMHz|Int32|安装此应用程序所需的最低 CPU 速度的值。|
+|规则|[win32LobAppRule](../resources/intune-apps-win32lobapprule.md) 集合|此应用程序的检测和要求规则。|
+|installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|此应用的安装体验。|
+|returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md) 集合|用于安装后行为的返回代码。|
+|msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|如果此 Win32 应用是 MSI 应用程序，则为 MSI 详细信息。|
+|setupFilePath|String|加密的 Win32LobApp 包中的安装程序文件的相对路径。|
+|minimumSupportedWindowsRelease|String|支持的最小 windows 版本的值。|
+
+
+
+## <a name="response"></a>响应
+如果成功，此方法 `201 Created` 在响应正文中返回响应代码和 [win32LobApp](../resources/intune-apps-win32lobapp.md) 对象。
+
+## <a name="example"></a>示例
+
+### <a name="request"></a>请求
+下面是一个请求示例。
+``` http
+POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps
+Content-type: application/json
+Content-length: 2134
+
+{
+  "@odata.type": "#microsoft.graph.win32LobApp",
+  "displayName": "Display Name value",
+  "description": "Description value",
+  "publisher": "Publisher value",
+  "largeIcon": {
+    "@odata.type": "microsoft.graph.mimeContent",
+    "type": "Type value",
+    "value": "dmFsdWU="
+  },
+  "isFeatured": true,
+  "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
+  "informationUrl": "https://example.com/informationUrl/",
+  "owner": "Owner value",
+  "developer": "Developer value",
+  "notes": "Notes value",
+  "publishingState": "processing",
+  "committedContentVersion": "Committed Content Version value",
+  "fileName": "File Name value",
+  "size": 4,
+  "installCommandLine": "Install Command Line value",
+  "uninstallCommandLine": "Uninstall Command Line value",
+  "applicableArchitectures": "x86",
+  "minimumFreeDiskSpaceInMB": 8,
+  "minimumMemoryInMB": 1,
+  "minimumNumberOfProcessors": 9,
+  "minimumCpuSpeedInMHz": 4,
+  "rules": [
+    {
+      "@odata.type": "microsoft.graph.win32LobAppRegistryRule",
+      "ruleType": "requirement",
+      "check32BitOn64System": true,
+      "keyPath": "Key Path value",
+      "valueName": "Value Name value",
+      "operationType": "exists",
+      "operator": "equal",
+      "comparisonValue": "Comparison Value value"
+    }
+  ],
+  "installExperience": {
+    "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
+    "runAsAccount": "user",
+    "deviceRestartBehavior": "allow"
+  },
+  "returnCodes": [
+    {
+      "@odata.type": "microsoft.graph.win32LobAppReturnCode",
+      "returnCode": 10,
+      "type": "success"
+    }
+  ],
+  "msiInformation": {
+    "@odata.type": "microsoft.graph.win32LobAppMsiInformation",
+    "productCode": "Product Code value",
+    "productVersion": "Product Version value",
+    "upgradeCode": "Upgrade Code value",
+    "requiresReboot": true,
+    "packageType": "perUser",
+    "productName": "Product Name value",
+    "publisher": "Publisher value"
+  },
+  "setupFilePath": "Setup File Path value",
+  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
+}
+```
+
+### <a name="response"></a>响应
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 2306
+
+{
+  "@odata.type": "#microsoft.graph.win32LobApp",
+  "id": "9607b530-b530-9607-30b5-079630b50796",
+  "displayName": "Display Name value",
+  "description": "Description value",
+  "publisher": "Publisher value",
+  "largeIcon": {
+    "@odata.type": "microsoft.graph.mimeContent",
+    "type": "Type value",
+    "value": "dmFsdWU="
+  },
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "isFeatured": true,
+  "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
+  "informationUrl": "https://example.com/informationUrl/",
+  "owner": "Owner value",
+  "developer": "Developer value",
+  "notes": "Notes value",
+  "publishingState": "processing",
+  "committedContentVersion": "Committed Content Version value",
+  "fileName": "File Name value",
+  "size": 4,
+  "installCommandLine": "Install Command Line value",
+  "uninstallCommandLine": "Uninstall Command Line value",
+  "applicableArchitectures": "x86",
+  "minimumFreeDiskSpaceInMB": 8,
+  "minimumMemoryInMB": 1,
+  "minimumNumberOfProcessors": 9,
+  "minimumCpuSpeedInMHz": 4,
+  "rules": [
+    {
+      "@odata.type": "microsoft.graph.win32LobAppRegistryRule",
+      "ruleType": "requirement",
+      "check32BitOn64System": true,
+      "keyPath": "Key Path value",
+      "valueName": "Value Name value",
+      "operationType": "exists",
+      "operator": "equal",
+      "comparisonValue": "Comparison Value value"
+    }
+  ],
+  "installExperience": {
+    "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
+    "runAsAccount": "user",
+    "deviceRestartBehavior": "allow"
+  },
+  "returnCodes": [
+    {
+      "@odata.type": "microsoft.graph.win32LobAppReturnCode",
+      "returnCode": 10,
+      "type": "success"
+    }
+  ],
+  "msiInformation": {
+    "@odata.type": "microsoft.graph.win32LobAppMsiInformation",
+    "productCode": "Product Code value",
+    "productVersion": "Product Version value",
+    "upgradeCode": "Upgrade Code value",
+    "requiresReboot": true,
+    "packageType": "perUser",
+    "productName": "Product Name value",
+    "publisher": "Publisher value"
+  },
+  "setupFilePath": "Setup File Path value",
+  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
+}
+```
+
+
+
+
+
+

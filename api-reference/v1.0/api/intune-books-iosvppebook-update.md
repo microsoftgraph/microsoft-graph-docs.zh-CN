@@ -3,14 +3,14 @@ title: 更新 iosVppEBook
 description: 更新 iosVppEBook 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f70b0b49ec520846b8d92a6f8de5009a8a0a0965
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 748c6861eb57caa938cd35247066db61f74c0336
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449491"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078015"
 ---
 # <a name="update-iosvppebook"></a>更新 iosVppEBook
 
@@ -51,8 +51,8 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
-|displayName|字符串|电子图书的名称。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|id|String|实体的键。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|displayName|String|电子图书的名称。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |description|String|说明。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |publisher|String|发布者。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |publishedDateTime|DateTimeOffset|电子图书的发布日期和时间。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
@@ -145,6 +145,9 @@ Content-Length: 964
   "usedLicenseCount": 0
 }
 ```
+
+
+
 
 
 

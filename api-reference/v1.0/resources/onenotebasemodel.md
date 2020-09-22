@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: f92d59913065bad82e2af0726a0669c98e4d4df3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1ae81a7f3ddc221d14e0427c11245b283e96ec94
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534166"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079100"
 ---
 # <a name="onenoteentitybasemodel-resource"></a>onenoteEntityBaseModel 资源
 
@@ -41,7 +41,7 @@ ms.locfileid: "42534166"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|自学|字符串|可在其中获取有关页面的详细信息的终结点。 只读。|
+|自学|String|可在其中获取有关页面的详细信息的终结点。 只读。|
 
 <!-- uuid: bfb567de-2a2a-4b81-bf47-a55626a0c166
 2015-10-25 14:57:30 UTC -->
@@ -52,3 +52,4 @@ ms.locfileid: "42534166"
   "section": "documentation",
   "tocPath": ""
 }-->
+

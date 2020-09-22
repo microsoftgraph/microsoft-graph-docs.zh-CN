@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: c5d46cd0c8d14b6dc07873bc503d024928e2b2e3
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: Auto
+ms.openlocfilehash: 5f340acf8357155893020985aa6036d93ed5b2df
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091577"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078302"
 ---
 # <a name="printtaskstatus-resource-type"></a>printTaskStatus 资源类型
 
@@ -18,17 +18,17 @@ ms.locfileid: "45091577"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示[printTask](printtask.md)的当前执行状态。 
+表示 [printTask](printtask.md)的当前执行状态。 
 
 >**注意：** 注册任务触发器的应用程序负责在处理完成时更新任务状态，除非相关的打印作业已重定向到另一台打印机。
 
-有关如何使用此资源将拉取打印支持添加到通用打印的详细信息，请参阅[扩展通用打印以支持 pull 打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
+有关如何使用此资源将拉取打印支持添加到通用打印的详细信息，请参阅 [扩展通用打印以支持 pull 打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |state|printTaskProcessingState|[PrintTask](printtask.md)的当前处理状态。 有效值如下表所述。|
-|description|String|[PrintTask](printtask.md)的当前处理状态的可读说明。|
+|说明|String|[PrintTask](printtask.md)的当前处理状态的可读说明。|
 
 ### <a name="printtaskprocessingstate-values"></a>printTaskProcessingState 值
 
@@ -37,7 +37,7 @@ ms.locfileid: "45091577"
 |决|0|任务执行挂起。|
 |处理|1 |正在执行任务。|
 |后|2 |任务执行已完成。|
-|其间|3 |任务执行已中止。|
+|其间|第三章|任务执行已中止。|
 |向 unknownfuturevalue|4 |Evolvable 枚举 sentinel 值。 请勿使用。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -68,3 +68,5 @@ ms.locfileid: "45091577"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
