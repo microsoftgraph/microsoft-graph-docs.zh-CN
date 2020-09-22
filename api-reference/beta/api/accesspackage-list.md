@@ -5,32 +5,32 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: beb1912a5b7ee913882f535f8c28480e1f7aaba3
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 6c1c8be6bacf5ab7759bdfe40cb520a295608d12
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345240"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977949"
 ---
-# <a name="list-accesspackages"></a><span data-ttu-id="622c2-103">列出 accessPackages</span><span class="sxs-lookup"><span data-stu-id="622c2-103">List accessPackages</span></span>
+# <a name="list-accesspackages"></a><span data-ttu-id="f4fb0-103">列出 accessPackages</span><span class="sxs-lookup"><span data-stu-id="f4fb0-103">List accessPackages</span></span>
 
-<span data-ttu-id="622c2-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="622c2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f4fb0-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f4fb0-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="622c2-105">检索[accessPackage](../resources/accesspackage.md)对象的列表。</span><span class="sxs-lookup"><span data-stu-id="622c2-105">Retrieve a list of [accessPackage](../resources/accesspackage.md) objects.</span></span>  <span data-ttu-id="622c2-106">生成的列表包括呼叫者有权读取的所有目录中的所有 access 程序包。</span><span class="sxs-lookup"><span data-stu-id="622c2-106">The resulting list includes all the access packages that the caller has access to read, across all catalogs.</span></span>
+<span data-ttu-id="f4fb0-105">检索 [accessPackage](../resources/accesspackage.md) 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="f4fb0-105">Retrieve a list of [accessPackage](../resources/accesspackage.md) objects.</span></span>  <span data-ttu-id="f4fb0-106">生成的列表包括呼叫者有权读取的所有目录中的所有 access 程序包。</span><span class="sxs-lookup"><span data-stu-id="f4fb0-106">The resulting list includes all the access packages that the caller has access to read, across all catalogs.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="622c2-107">权限</span><span class="sxs-lookup"><span data-stu-id="622c2-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f4fb0-107">权限</span><span class="sxs-lookup"><span data-stu-id="f4fb0-107">Permissions</span></span>
 
-<span data-ttu-id="622c2-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="622c2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f4fb0-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f4fb0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="622c2-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="622c2-110">Permission type</span></span>                        | <span data-ttu-id="622c2-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="622c2-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="f4fb0-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="f4fb0-110">Permission type</span></span>                        | <span data-ttu-id="f4fb0-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f4fb0-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="622c2-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="622c2-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="622c2-113">EntitlementManagement、EntitlementManagement 和所有</span><span class="sxs-lookup"><span data-stu-id="622c2-113">EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All</span></span> |
-| <span data-ttu-id="622c2-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="622c2-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="622c2-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="622c2-115">Not supported.</span></span> |
-| <span data-ttu-id="622c2-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="622c2-116">Application</span></span>                            | <span data-ttu-id="622c2-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="622c2-117">Not supported.</span></span> |
+| <span data-ttu-id="f4fb0-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f4fb0-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="f4fb0-113">EntitlementManagement、EntitlementManagement 和所有</span><span class="sxs-lookup"><span data-stu-id="f4fb0-113">EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All</span></span> |
+| <span data-ttu-id="f4fb0-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f4fb0-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f4fb0-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="f4fb0-115">Not supported.</span></span> |
+| <span data-ttu-id="f4fb0-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="f4fb0-116">Application</span></span>                            | <span data-ttu-id="f4fb0-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="f4fb0-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="622c2-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="622c2-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f4fb0-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f4fb0-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,31 +38,31 @@ ms.locfileid: "44345240"
 GET /identityGovernance/entitlementManagement/accessPackages
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="622c2-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="622c2-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="f4fb0-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="f4fb0-119">Optional query parameters</span></span>
 
-<span data-ttu-id="622c2-120">此方法支持一些 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="622c2-120">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="622c2-121">例如，若要检索每个访问程序包的访问程序包策略，请添加 `$expand=accessPackageAssignmentPolicies` 。</span><span class="sxs-lookup"><span data-stu-id="622c2-121">For example, to retrieve the access package policies for each access package, add `$expand=accessPackageAssignmentPolicies`.</span></span> <span data-ttu-id="622c2-122">若要搜索具有特定名称的 access 程序包，请在查询中添加筛选器（如 `$filter=contains(tolower(displayName),'team')` 查询）。</span><span class="sxs-lookup"><span data-stu-id="622c2-122">To search for access packages with a particular name, include a filter such as `$filter=contains(tolower(displayName),'team')` in the query.</span></span> <span data-ttu-id="622c2-123">有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="622c2-123">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="f4fb0-120">此方法支持一些 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="f4fb0-120">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="f4fb0-121">例如，若要检索每个访问程序包的访问程序包策略，请添加 `$expand=accessPackageAssignmentPolicies` 。</span><span class="sxs-lookup"><span data-stu-id="f4fb0-121">For example, to retrieve the access package policies for each access package, add `$expand=accessPackageAssignmentPolicies`.</span></span> <span data-ttu-id="f4fb0-122">若要搜索具有特定名称的 access 程序包，请在查询中添加筛选器（如 `$filter=contains(tolower(displayName),'team')` 查询）。</span><span class="sxs-lookup"><span data-stu-id="f4fb0-122">To search for access packages with a particular name, include a filter such as `$filter=contains(tolower(displayName),'team')` in the query.</span></span> <span data-ttu-id="f4fb0-123">若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。</span><span class="sxs-lookup"><span data-stu-id="f4fb0-123">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="622c2-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="622c2-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f4fb0-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="f4fb0-124">Request headers</span></span>
 
-| <span data-ttu-id="622c2-125">名称</span><span class="sxs-lookup"><span data-stu-id="622c2-125">Name</span></span>      |<span data-ttu-id="622c2-126">说明</span><span class="sxs-lookup"><span data-stu-id="622c2-126">Description</span></span>|
+| <span data-ttu-id="f4fb0-125">名称</span><span class="sxs-lookup"><span data-stu-id="f4fb0-125">Name</span></span>      |<span data-ttu-id="f4fb0-126">说明</span><span class="sxs-lookup"><span data-stu-id="f4fb0-126">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="622c2-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="622c2-127">Authorization</span></span> | <span data-ttu-id="622c2-128">持有者 \{token\}。</span><span class="sxs-lookup"><span data-stu-id="622c2-128">Bearer \{token\}.</span></span> <span data-ttu-id="622c2-129">必填。</span><span class="sxs-lookup"><span data-stu-id="622c2-129">Required.</span></span> |
+| <span data-ttu-id="f4fb0-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="f4fb0-127">Authorization</span></span> | <span data-ttu-id="f4fb0-128">持有者 \{token\}。</span><span class="sxs-lookup"><span data-stu-id="f4fb0-128">Bearer \{token\}.</span></span> <span data-ttu-id="f4fb0-129">必需。</span><span class="sxs-lookup"><span data-stu-id="f4fb0-129">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="622c2-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="622c2-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f4fb0-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="f4fb0-130">Request body</span></span>
 
-<span data-ttu-id="622c2-131">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="622c2-131">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="f4fb0-131">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f4fb0-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="622c2-132">响应</span><span class="sxs-lookup"><span data-stu-id="622c2-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f4fb0-132">响应</span><span class="sxs-lookup"><span data-stu-id="f4fb0-132">Response</span></span>
 
-<span data-ttu-id="622c2-133">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[accessPackage](../resources/accesspackage.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="622c2-133">If successful, this method returns a `200 OK` response code and a collection of [accessPackage](../resources/accesspackage.md) objects in the response body.</span></span>
+<span data-ttu-id="f4fb0-133">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [accessPackage](../resources/accesspackage.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="f4fb0-133">If successful, this method returns a `200 OK` response code and a collection of [accessPackage](../resources/accesspackage.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="622c2-134">示例</span><span class="sxs-lookup"><span data-stu-id="622c2-134">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="f4fb0-134">示例</span><span class="sxs-lookup"><span data-stu-id="f4fb0-134">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="622c2-135">请求</span><span class="sxs-lookup"><span data-stu-id="622c2-135">Request</span></span>
+### <a name="request"></a><span data-ttu-id="f4fb0-135">请求</span><span class="sxs-lookup"><span data-stu-id="f4fb0-135">Request</span></span>
 
-<span data-ttu-id="622c2-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="622c2-136">The following is an example of the request.</span></span>
+<span data-ttu-id="f4fb0-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="f4fb0-136">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="622c2-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="622c2-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f4fb0-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="f4fb0-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accesspackages"
@@ -71,26 +71,26 @@ GET /identityGovernance/entitlementManagement/accessPackages
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages
 ```
-# <a name="c"></a>[<span data-ttu-id="622c2-138">C#</span><span class="sxs-lookup"><span data-stu-id="622c2-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f4fb0-138">C#</span><span class="sxs-lookup"><span data-stu-id="f4fb0-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="622c2-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="622c2-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f4fb0-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f4fb0-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-accesspackages-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="622c2-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="622c2-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f4fb0-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f4fb0-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-accesspackages-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="622c2-141">响应</span><span class="sxs-lookup"><span data-stu-id="622c2-141">Response</span></span>
+### <a name="response"></a><span data-ttu-id="f4fb0-141">响应</span><span class="sxs-lookup"><span data-stu-id="f4fb0-141">Response</span></span>
 
-<span data-ttu-id="622c2-142">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="622c2-142">The following is an example of the response.</span></span>
+<span data-ttu-id="f4fb0-142">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="f4fb0-142">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="622c2-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="622c2-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="f4fb0-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="f4fb0-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -130,3 +130,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
