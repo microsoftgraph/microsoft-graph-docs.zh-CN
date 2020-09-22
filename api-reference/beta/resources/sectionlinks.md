@@ -5,24 +5,24 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: jewan-microsoft
-ms.openlocfilehash: 5b9941c50711411089b8bb3ba7342943b55989c7
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 9ee3022ede7da1fbbfa6074611f54590e027209c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807458"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087584"
 ---
-# <a name="sectionlinks-resource-type"></a><span data-ttu-id="cb8da-103">sectionLinks 资源类型</span><span class="sxs-lookup"><span data-stu-id="cb8da-103">sectionLinks resource type</span></span>
+# <a name="sectionlinks-resource-type"></a><span data-ttu-id="283b4-103">sectionLinks 资源类型</span><span class="sxs-lookup"><span data-stu-id="283b4-103">sectionLinks resource type</span></span>
 
-<span data-ttu-id="cb8da-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cb8da-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="283b4-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="283b4-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cb8da-105">用于打开 OneNote 分区的链接。</span><span class="sxs-lookup"><span data-stu-id="cb8da-105">Links for opening a OneNote section.</span></span>
+<span data-ttu-id="283b4-105">用于打开 OneNote 分区的链接。</span><span class="sxs-lookup"><span data-stu-id="283b4-105">Links for opening a OneNote section.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="cb8da-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="cb8da-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="283b4-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="283b4-106">JSON representation</span></span>
 
-<span data-ttu-id="cb8da-107">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="cb8da-107">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="283b4-107">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="283b4-107">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -39,11 +39,11 @@ ms.locfileid: "46807458"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="cb8da-108">属性</span><span class="sxs-lookup"><span data-stu-id="cb8da-108">Properties</span></span>
-| <span data-ttu-id="cb8da-109">属性</span><span class="sxs-lookup"><span data-stu-id="cb8da-109">Property</span></span>     | <span data-ttu-id="cb8da-110">类型</span><span class="sxs-lookup"><span data-stu-id="cb8da-110">Type</span></span>   |<span data-ttu-id="cb8da-111">说明</span><span class="sxs-lookup"><span data-stu-id="cb8da-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="283b4-108">属性</span><span class="sxs-lookup"><span data-stu-id="283b4-108">Properties</span></span>
+| <span data-ttu-id="283b4-109">属性</span><span class="sxs-lookup"><span data-stu-id="283b4-109">Property</span></span>     | <span data-ttu-id="283b4-110">类型</span><span class="sxs-lookup"><span data-stu-id="283b4-110">Type</span></span>   |<span data-ttu-id="283b4-111">说明</span><span class="sxs-lookup"><span data-stu-id="283b4-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="cb8da-112">oneNoteClientUrl</span><span class="sxs-lookup"><span data-stu-id="cb8da-112">oneNoteClientUrl</span></span>|[<span data-ttu-id="cb8da-113">externalLink</span><span class="sxs-lookup"><span data-stu-id="cb8da-113">externalLink</span></span>](externallink.md)|<span data-ttu-id="cb8da-114">如果安装了 OneNote 本机客户端，则打开该分区。</span><span class="sxs-lookup"><span data-stu-id="cb8da-114">Opens the section in the OneNote native client if it's installed.</span></span>|
-|<span data-ttu-id="cb8da-115">oneNoteWebUrl</span><span class="sxs-lookup"><span data-stu-id="cb8da-115">oneNoteWebUrl</span></span>|[<span data-ttu-id="cb8da-116">externalLink</span><span class="sxs-lookup"><span data-stu-id="cb8da-116">externalLink</span></span>](externallink.md)|<span data-ttu-id="cb8da-117">打开 web 上的 OneNote 中的部分。</span><span class="sxs-lookup"><span data-stu-id="cb8da-117">Opens the section in OneNote on the web.</span></span>|
+|<span data-ttu-id="283b4-112">oneNoteClientUrl</span><span class="sxs-lookup"><span data-stu-id="283b4-112">oneNoteClientUrl</span></span>|[<span data-ttu-id="283b4-113">externalLink</span><span class="sxs-lookup"><span data-stu-id="283b4-113">externalLink</span></span>](externallink.md)|<span data-ttu-id="283b4-114">如果安装了 OneNote 本机客户端，则打开该分区。</span><span class="sxs-lookup"><span data-stu-id="283b4-114">Opens the section in the OneNote native client if it's installed.</span></span>|
+|<span data-ttu-id="283b4-115">oneNoteWebUrl</span><span class="sxs-lookup"><span data-stu-id="283b4-115">oneNoteWebUrl</span></span>|[<span data-ttu-id="283b4-116">externalLink</span><span class="sxs-lookup"><span data-stu-id="283b4-116">externalLink</span></span>](externallink.md)|<span data-ttu-id="283b4-117">打开 web 上的 OneNote 中的部分。</span><span class="sxs-lookup"><span data-stu-id="283b4-117">Opens the section in OneNote on the web.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -57,3 +57,5 @@ ms.locfileid: "46807458"
   "suppressions": []
 }
 -->
+
+
