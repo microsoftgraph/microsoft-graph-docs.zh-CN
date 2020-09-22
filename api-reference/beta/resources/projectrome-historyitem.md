@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: resourcePageType
 author: ailae
-ms.openlocfilehash: c6b87e96e857b71939ca9762a7a32c97d24f38f8
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 8d5c3d303944dffc27e9996302ac31de671565b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812794"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993155"
 ---
 # <a name="historyitem-resource-type"></a>historyItem 资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "46812794"
 |createdDateTime | DateTimeOffset | 由服务器进行设置。 在服务器上创建对象时的 UTC 时间（UTC）。|
 |lastModifiedDateTime | DateTimeOffset | 由服务器进行设置。 在服务器上修改对象时的 UTC 时间（UTC）。|
 |id | String | 必需。 客户端集的 **historyItem** 对象的 GUID。|
-|startedDateTime | DateTimeOffset | 必需项。 启动 **historyItem** (活动会话) 时的 UTC 日期时间。 对于时间线历史记录是必需的。|
+|startedDateTime | DateTimeOffset | 必需。 启动 **historyItem** (活动会话) 时的 UTC 日期时间。 对于时间线历史记录是必需的。|
 |lastActiveDateTime | DateTimeOffset | 可选。 UTC DateTime 如果 **historyItem** (活动会话) 上次被视为活动或已完成-如果为 null，则 **historyItem** 状态应为 "正在进行"。|
 |expirationDateTime | DateTimeOffset | 可选。 **HistoryItem**将被硬删除时的 UTC 日期时间。 可由客户端进行设置。|
 |activeDurationSeconds | int | 可选。 活动用户约定的持续时间。 如果未提供，则从 **startedDateTime** 和 **lastActiveDateTime**计算。|
@@ -90,3 +90,5 @@ ms.locfileid: "46812794"
   "suppressions": []
 }
 -->
+
+

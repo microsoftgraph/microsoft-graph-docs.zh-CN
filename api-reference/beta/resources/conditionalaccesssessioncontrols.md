@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e76c17838b9257a4274c51ac161a1c36d512fe3f
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: dffca031c4c865f5b0157a081d3e048db0af5d9b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916744"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994251"
 ---
 # <a name="conditionalaccesssessioncontrols-resource-type"></a>conditionalAccessSessionControls 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "43916744"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示登录后强制实施的会话控件。
-所有会话控件都继承自[conditionalAccessSessionControl](conditionalaccesssessioncontrol.md)。
+所有会话控件都继承自 [conditionalAccessSessionControl](conditionalaccesssessioncontrol.md)。
 
 ## <a name="properties"></a>属性
 
@@ -68,3 +68,4 @@ ms.locfileid: "43916744"
   "section": "documentation",
   "tocPath": ""
 }-->
+

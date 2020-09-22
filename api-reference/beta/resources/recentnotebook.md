@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: jewan-microsoft
-ms.openlocfilehash: f75d3ce272d4f71c7a5ecbbc26c09e015d458ce7
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 2097f9362e24ffe279201ae0d1d9907531568d2a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810468"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993026"
 ---
 # <a name="recentnotebook-resource-type"></a>recentNotebook 资源类型
 
@@ -55,3 +55,5 @@ ms.locfileid: "46810468"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | [notebook](notebook.md) 集合 | 获取用户最近访问过的一组笔记本。 |
+
+

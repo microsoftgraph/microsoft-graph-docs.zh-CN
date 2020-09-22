@@ -3,20 +3,20 @@ title: pfxUserCertificate 资源类型
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 21db7de4cb249cb0a263ee2ed98303b7708b32c5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 514e3d4c858a49ab51f5c3f7565ae4ccdf64be6e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462406"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993278"
 ---
 # <a name="pfxusercertificate-resource-type"></a>pfxUserCertificate 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,11 +25,11 @@ ms.locfileid: "43462406"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 pfxUserCertificates](../api/intune-raimportcerts-pfxusercertificate-list.md)|[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)集合|列出[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)对象的属性和关系。|
-|[获取 pfxUserCertificate](../api/intune-raimportcerts-pfxusercertificate-get.md)|[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)|读取[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)对象的属性和关系。|
-|[创建 pfxUserCertificate](../api/intune-raimportcerts-pfxusercertificate-create.md)|[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)|创建新的[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)对象。|
-|[删除 pfxUserCertificate](../api/intune-raimportcerts-pfxusercertificate-delete.md)|无|删除[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)。|
-|[更新 pfxUserCertificate](../api/intune-raimportcerts-pfxusercertificate-update.md)|[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)|更新[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)对象的属性。|
+|[列出 pfxUserCertificates](../api/intune-raimportcerts-pfxusercertificate-list.md)|[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) 集合|列出 [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) 对象的属性和关系。|
+|[获取 pfxUserCertificate](../api/intune-raimportcerts-pfxusercertificate-get.md)|[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)|读取 [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) 对象的属性和关系。|
+|[创建 pfxUserCertificate](../api/intune-raimportcerts-pfxusercertificate-create.md)|[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)|创建新的 [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) 对象。|
+|[删除 pfxUserCertificate](../api/intune-raimportcerts-pfxusercertificate-delete.md)|无|删除 [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)。|
+|[更新 pfxUserCertificate](../api/intune-raimportcerts-pfxusercertificate-update.md)|[pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)|更新 [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -85,6 +85,9 @@ ms.locfileid: "43462406"
   "eTag": "String"
 }
 ```
+
+
+
 
 
 

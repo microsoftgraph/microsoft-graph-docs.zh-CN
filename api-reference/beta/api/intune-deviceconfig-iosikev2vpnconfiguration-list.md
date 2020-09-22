@@ -3,14 +3,14 @@ title: 列出 iosikEv2VpnConfigurations
 description: 列出 iosikEv2VpnConfiguration 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ba4c49d12bae10899160d0494495fc999b9d17d1
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 3b1d188a68a7cfe9e4d6cb8082cd102c137b381d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792322"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47995231"
 ---
 # <a name="list-iosikev2vpnconfigurations"></a>列出 iosikEv2VpnConfigurations
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6070
+Content-Length: 6281
 
 {
   "value": [
@@ -154,6 +154,10 @@ Content-Length: 6070
         }
       ],
       "providerType": "appProxy",
+      "excludedDomains": [
+        "Excluded Domains value"
+      ],
+      "disableOnDemandUserOverride": true,
       "proxyServer": {
         "@odata.type": "microsoft.graph.vpnProxyServer",
         "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
@@ -176,6 +180,7 @@ Content-Length: 6070
           "appId": "App Id value"
         }
       ],
+      "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
       "childSecurityAssociationParameters": {
         "@odata.type": "microsoft.graph.iosVpnSecurityAssociationParameters",
         "securityEncryptionAlgorithm": "des",
@@ -226,11 +231,15 @@ Content-Length: 6070
         "natKeepAliveIntervalInSeconds": 13,
         "natKeepAliveOffloadEnable": true
       },
-      "enableAlwaysOnConfiguration": true
+      "enableAlwaysOnConfiguration": true,
+      "mtuSizeInBytes": 14
     }
   ]
 }
 ```
+
+
+
 
 
 

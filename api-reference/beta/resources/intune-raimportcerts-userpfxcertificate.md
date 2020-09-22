@@ -3,20 +3,20 @@ title: userPFXCertificate 资源类型
 description: 封装用户的 PFX 证书所需的所有信息的实体。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 43dc26333b6acf6275a719e7a79c051a134610f7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 574a62ddfea3b577fea966ae3b8d502a9ceebfb1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462375"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993292"
 ---
 # <a name="userpfxcertificate-resource-type"></a>userPFXCertificate 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,11 +25,11 @@ ms.locfileid: "43462375"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 userPFXCertificates](../api/intune-raimportcerts-userpfxcertificate-list.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)集合|列出[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象的属性和关系。|
-|[获取 userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-get.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|读取[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象的属性和关系。|
-|[创建 userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-create.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|创建新的[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象。|
-|[删除 userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-delete.md)|无|删除[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)。|
-|[更新 userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-update.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|更新[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象的属性。|
+|[列出 userPFXCertificates](../api/intune-raimportcerts-userpfxcertificate-list.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) 集合|列出 [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) 对象的属性和关系。|
+|[获取 userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-get.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|读取 [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) 对象的属性和关系。|
+|[创建 userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-create.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|创建新的 [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) 对象。|
+|[删除 userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-delete.md)|无|删除 [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)。|
+|[更新 userPFXCertificate](../api/intune-raimportcerts-userpfxcertificate-update.md)|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)|更新 [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -41,7 +41,7 @@ ms.locfileid: "43462375"
 |startDateTime|DateTimeOffset|证书的有效期开始日期/时间。|
 |expirationDateTime|DateTimeOffset|证书的有效期到期日期/时间。|
 |providerName|String|用于加密此 blob 的加密提供程序。|
-|名|String|用于对 blob 进行加密的密钥（在提供程序中）的名称。|
+|名|String|提供程序) 用于对 blob 进行加密的密钥 (的名称。|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|加密/解密过程中提供程序使用的填充方案。 可取值为：`none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
 |encryptedPfxBlob|Binary|加密的 PFX blob。|
 |encryptedPfxPassword|String|加密的 PFX 密码。|
@@ -77,6 +77,9 @@ ms.locfileid: "43462375"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

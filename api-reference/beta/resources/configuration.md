@@ -5,20 +5,20 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: be4fa7bd8f4b44842bd6dbc9876d0dd19fe466fd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bd267c77a9904564e8b2b7f592f207204d9396b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507497"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994216"
 ---
 # <a name="configuration-resource-type"></a>配置资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定允许管理 externalConnection 和索引[externalConnection](../resources/externalconnection.md)中的内容的其他应用程序 id。
+指定允许管理 externalConnection 和索引 [externalConnection](../resources/externalconnection.md)中的内容的其他应用程序 id。
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -26,7 +26,7 @@ ms.locfileid: "42507497"
 
 | 属性       | 类型              | 说明 |
 |:---------------|:------------------|:------------|
-| authorizedApps | String 集合 | 允许管理 externalConnection 和索引 externalConnection 中的内容的注册的 Azure Active Directory 应用程序的应用程序 Id 的集合。 |
+| authorizedApps | String collection | 允许管理 externalConnection 和索引 externalConnection 中的内容的注册的 Azure Active Directory 应用程序的应用程序 Id 的集合。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -56,3 +56,5 @@ ms.locfileid: "42507497"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

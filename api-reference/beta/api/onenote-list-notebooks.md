@@ -5,16 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 730dbf052a0633fd61392d8542f4c321ac3c9b19
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e118718bbe87bfa9b68a213a2103f3cac3fb8b25
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456570"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994538"
 ---
 # <a name="list-notebooks"></a>列出笔记本
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -130,3 +130,5 @@ Content-length: 369
   ]
 }
 -->
+
+

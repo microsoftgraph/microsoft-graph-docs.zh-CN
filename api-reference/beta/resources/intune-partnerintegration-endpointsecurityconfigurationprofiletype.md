@@ -3,14 +3,14 @@ title: endpointSecurityConfigurationProfileType 枚举类型
 description: 终结点安全策略配置文件类型。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9e766ad484d26abd770e2655b1f75e455306ad82
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 5b3f3340a9e3aa5aa211b39176e9fe43d74b8bf8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793232"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993642"
 ---
 # <a name="endpointsecurityconfigurationprofiletype-enum-type"></a>endpointSecurityConfigurationProfileType 枚举类型
 
@@ -26,8 +26,8 @@ ms.locfileid: "46793232"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|陌生.|
-|程序|1|程序.|
-|windowsSecurity|双面|Windows 安全性。|
+|程序|1 |程序.|
+|windowsSecurity|2 |Windows 安全性。|
 |bitLocker|第三章|BitLocker.|
 |fileVault|4 |FileVault.|
 |firewall|5 |Firewall.|
@@ -36,10 +36,13 @@ ms.locfileid: "46793232"
 |deviceControl|8 |设备控件。|
 |appAndBrowserIsolation|9 |应用程序和浏览器隔离。|
 |exploitProtection|10 |Exploit Protection。|
-|webProtection|11x17|Web 保护。|
+|webProtection|11 |Web 保护。|
 |applicationControl|12 |应用程序控制。|
-|attackSurfaceReductionRules|13|攻击面减少规则。|
+|attackSurfaceReductionRules|13 |攻击面减少规则。|
 |accountProtection|14 |帐户保护。|
+
+
+
 
 
 

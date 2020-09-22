@@ -6,12 +6,12 @@ title: PublicationFacet
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 46e5a8925e6f2521763bd1b1830e967a08df3abb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3df98fd151e8ca528a0a946a273ff6e64eb54a8e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521311"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993089"
 ---
 # <a name="publicationfacet-resource-type"></a>PublicationFacet 资源类型
 
@@ -54,3 +54,5 @@ ms.locfileid: "42521311"
   "suppressions": []
 }
 -->
+
+

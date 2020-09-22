@@ -5,19 +5,19 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c81a095a14599622fa273973a1f3581b5b84921f
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 63375e567d5faffcd1e25cdd85d3c43e37efbc77
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539240"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994384"
 ---
 # <a name="create-group"></a>创建组
 命名空间： termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[group](../resources/termstore-group.md)对象。
+创建新的 [group](../resources/termstore-group.md) 对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,9 +46,9 @@ POST /termStore/groups
 |Content-Type|application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[group](../resources/termstore-group.md)对象的 JSON 表示形式。
+在请求正文中，提供 [group](../resources/termstore-group.md) 对象的 JSON 表示形式。
 
-下表显示创建[组](../resources/termstore-group.md)时所需的属性。
+下表显示创建 [组](../resources/termstore-group.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -111,3 +111,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

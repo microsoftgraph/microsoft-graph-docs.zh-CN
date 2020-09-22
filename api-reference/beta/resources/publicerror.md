@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: sureshja
-ms.openlocfilehash: a330c2534260ab4041a33b047d920109cb69da8b
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 0648ace681be958ae00d535bff9d40c196139dfa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811411"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993082"
 ---
 # <a name="publicerror-resource-type"></a>publicError 资源类型
 
@@ -32,3 +32,4 @@ ms.locfileid: "46811411"
 {
 }
 ```
+

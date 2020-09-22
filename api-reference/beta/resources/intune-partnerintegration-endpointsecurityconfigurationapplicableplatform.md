@@ -3,14 +3,14 @@ title: endpointSecurityConfigurationApplicablePlatform 枚举类型
 description: 终结点安全配置适用的平台。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ce438e82d15dba20b4c755e6a92ec1e770b84906
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: e02a254d9979cdbc25104ef5da50ec09301dfc90
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793233"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993656"
 ---
 # <a name="endpointsecurityconfigurationapplicableplatform-enum-type"></a>endpointSecurityConfigurationApplicablePlatform 枚举类型
 
@@ -26,9 +26,12 @@ ms.locfileid: "46793233"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|陌生.|
-|macOS|1|MacOS.|
-|windows10AndLater|双面|Windows 10 及更高版本。|
+|macOS|1 |MacOS.|
+|windows10AndLater|2 |Windows 10 及更高版本。|
 |windows10AndWindowsServer|第三章|Windows 10 和 Windows Server。|
+
+
+
 
 
 

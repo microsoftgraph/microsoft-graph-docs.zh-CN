@@ -6,16 +6,16 @@ title: 配额
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 8421998d9815efcd23417aadde8ef29e28050647
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9477662c1ffa8419d7be293c31b8f50b06bd74d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521283"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993052"
 ---
 # <a name="quota-resource-type"></a>配额资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -74,3 +74,5 @@ ms.locfileid: "42521283"
   "suppressions": []
 }
 -->
+
+

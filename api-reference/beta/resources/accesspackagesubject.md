@@ -5,31 +5,31 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0f71b23e48c818747a2b70b52ec8b4baa53bf118
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f8b967e2ba2d678d9648b09eae4aeb3dca760c52
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508490"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994342"
 ---
 # <a name="accesspackagesubject-resource-type"></a>accessPackageSubject 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包主题是可以配置为请求或分配访问包的用户、服务主体或其他实体。
+在 [AZURE AD 权限管理](entitlementmanagement-root.md)中，访问包主题是可以配置为请求或分配访问包的用户、服务主体或其他实体。
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|字符串|主题的显示名称。|
+|displayName|String|主题的显示名称。|
 |email|String|主题的电子邮件地址。|
 |id|String| 只读。|
 |objectId|String|主题的对象 ID。|
 |principalName|String|主题的主体名称（如果已知）。|
-|type|字符串|主题的资源类型。|
+|type|String|主题的资源类型。|
 
 ## <a name="relationships"></a>关系
 
@@ -69,3 +69,5 @@ ms.locfileid: "42508490"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

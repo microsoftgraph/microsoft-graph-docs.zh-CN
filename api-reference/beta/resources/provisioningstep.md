@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b0ae3d280d6d9dfc8877739b1003ae0c51f6acd6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 818063fa078913f694267a9cfb97be649ab81455
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446559"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993096"
 ---
 # <a name="provisioningstep-resource-type"></a>provisioningStep 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "43446559"
 |:-------------|:------------|:------------|
 |说明|String|步骤中发生的操作的摘要。|
 |详细信息|[detailsInfo](detailsinfo.md)|步骤中发生的操作的详细信息。|
-|name|字符串|步骤的名称。|
+|name|String|步骤的名称。|
 |provisioningStepType|String| 步骤类型。 可取值为：`import`、`scoping`、`matching`、`processing`、`referenceResolution`、`export` 或 `unknownFutureValue`。|
 |状态|String| 步骤的状态。 可取值为：`success`、`failure`、`skipped`、`unknownFutureValue`。|
 
@@ -62,3 +62,5 @@ ms.locfileid: "43446559"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

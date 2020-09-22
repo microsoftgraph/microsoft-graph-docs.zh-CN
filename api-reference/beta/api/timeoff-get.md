@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f4fc2fd04d6c9fef78294b0a99d586c32a17cc8e
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 8efe4b4be6d86ecdff934b183936e4e3f10a4926
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44154428"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994349"
 ---
 # <a name="get-timeoff"></a>获取 timeOff
 
@@ -18,9 +18,9 @@ ms.locfileid: "44154428"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-按 ID 检索[timeOff](../resources/timeoff.md)对象的属性和关系。
+按 ID 检索 [timeOff](../resources/timeoff.md) 对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "44154428"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Schedule. All *、schedule、all* |
+|应用程序 | Schedule. All *、schedule、all* |
 
 >\***重要说明：** 应用程序权限当前仅在专用预览中，不可供公众使用。
 
@@ -47,7 +47,7 @@ GET /teams/{teamId}/schedule/timesOff/{timeOffId}
 此方法不支持 OData 查询参数来自定义响应。
 
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 标头       | 值 |
 |:---------------|:--------|
@@ -58,7 +58,7 @@ GET /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[timeOff](../resources/timeoff.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [timeOff](../resources/timeoff.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -146,3 +146,5 @@ Content-length: 401
   ]
 }
 -->
+
+

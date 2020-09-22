@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fbac0770c7093b4dbe5e8ecd84e191444ca61c77
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 8bf8813b63d1d25d09c8ee9a8ff4bb5099728b77
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125027"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993117"
 ---
 # <a name="provisioningobjectsummary-resource-type"></a>provisioningObjectSummary 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "43125027"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|action|String|指示活动名称或操作名称（例如，"创建用户"、"将成员添加到组"）。 有关已记录活动的列表，请参阅 Azure AD 活动列表。|
+|action|String|指示活动名称或操作名称 (例如，创建用户，将 member 添加到 group) 中。 有关已记录活动的列表，请参阅 Azure AD 活动列表。|
 |activityDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |changeId|String|此周期中的此更改的唯一 ID。|
 |cycleId|String|每个作业迭代的唯一 ID。|
@@ -39,8 +39,8 @@ ms.locfileid: "43125027"
 |id|String| 指示活动的唯一 ID。 这是只读的 GUID。|
 |initiatedBy|[initiator](initiator.md)|启动此预配的参与者的详细信息。|
 |jobId|String|整个设置作业的唯一 ID。|
-|ModifiedProperties|[modifiedProperty](modifiedproperty.md)集合|此对象上此设置操作中修改的每个属性的详细信息。|
-|provisioningSteps|[provisioningStep](provisioningstep.md)集合|设置中的每个步骤的详细信息。|
+|ModifiedProperties|[modifiedProperty](modifiedproperty.md) 集合|此对象上此设置操作中修改的每个属性的详细信息。|
+|provisioningSteps|[provisioningStep](provisioningstep.md) 集合|设置中的每个步骤的详细信息。|
 |servicePrincipal|[servicePrincipal](serviceprincipal.md) 集合|表示用于设置的服务主体。|
 |sourceIdentity|[provisionedIdentity](provisionedidentity.md)|正在预配的源对象的详细信息。|
 |sourceSystem|[provisioningSystemDetails](provisioningsystemdetails.md)|正在预配的对象的源系统的详细信息。|
@@ -98,3 +98,5 @@ ms.locfileid: "43125027"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

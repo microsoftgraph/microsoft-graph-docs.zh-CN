@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c536e94230866b209f6d0dffef31bbf23c49b71b
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 8dd9ecd5f845682187fb84a9e057d7fdb7cb70d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872801"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994322"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "46872801"
 
 ## <a name="methods"></a>方法
 
-|  方法       |  返回类型  | 说明| Permissions |
+|  方法       |  返回类型  | 说明| 权限 |
 |:---------------|:--------|:----------|-----------|
 |[列出聊天](../api/chat-list.md) | [聊天](chat.md) 收藏 | 获取用户所属的聊天列表。| **仅委派** |
 |[获取聊天](../api/chat-get.md) | [聊天](chat.md) | 读取聊天的属性和关系。| **仅委派** |
@@ -86,3 +86,5 @@ ms.locfileid: "46872801"
   "tocPath": ""
 }
 -->
+
+

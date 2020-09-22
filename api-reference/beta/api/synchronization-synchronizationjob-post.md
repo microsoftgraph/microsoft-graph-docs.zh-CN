@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7fac7eda83cb5caf4332110e38367acb876c8ef7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: baead22be8a0b6f9b8561e4cc44e4835d26603ad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437547"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994468"
 ---
 # <a name="create-synchronizationjob"></a>创建 synchronizationJob
 
@@ -18,7 +18,7 @@ ms.locfileid: "43437547"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用默认同步架构创建新的同步作业。 作业将在禁用状态中创建。 启动同步的呼叫[启动作业](synchronization-synchronizationjob-start.md)。
+使用默认同步架构创建新的同步作业。 作业将在禁用状态中创建。 启动同步的呼叫 [启动作业](synchronization-synchronizationjob-start.md) 。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,11 +43,11 @@ POST /servicePrincipals/{id}/synchronization/jobs/
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供要创建的[synchronizationJob](../resources/synchronization-synchronizationjob.md)对象的 JSON 表示形式。 唯一的必需属性是`templateId`。 `templateId`属性必须与为此应用程序/服务主体创建的一个模板相匹配。 若要查找可用模板，请使用[列表模板](synchronization-synchronizationtemplate-list.md)。
+在请求正文中，提供要创建的 [synchronizationJob](../resources/synchronization-synchronizationjob.md) 对象的 JSON 表示形式。 唯一的必需属性是 `templateId` 。 `templateId`属性必须与为此应用程序/服务主体创建的一个模板相匹配。 若要查找可用模板，请使用 [列表模板](synchronization-synchronizationtemplate-list.md)。
 
 ## <a name="response"></a>响应
 
-如果成功，则在`201 Created`响应正文中返回响应代码和[synchronizationJob](../resources/synchronization-synchronizationjob.md)对象。
+如果成功，则 `201 Created` 在响应正文中返回响应代码和 [synchronizationJob](../resources/synchronization-synchronizationjob.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -133,3 +133,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

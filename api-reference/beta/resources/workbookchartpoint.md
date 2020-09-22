@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 54342227c15eeb1b11c3ddfb157e1ef3bc83390e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: df7f7254251f2b424af0ffc8a6fca725285393cf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519286"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993007"
 ---
 # <a name="workbookchartpoint-resource-type"></a>workbookChartPoint 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ ms.locfileid: "42519286"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 workbookChartPoint](../api/chartpoint-get.md) | [workbookChartPoint](workbookchartpoint.md) |读取 chartPoint 对象的属性和关系。|
-|[列出](../api/chartpoint-list.md) | [workbookChartPoint](workbookchartpoint.md)集合 |获取 chartPoint 对象集合。 |
+|[列出](../api/chartpoint-list.md) | [workbookChartPoint](workbookchartpoint.md) 集合 |获取 chartPoint 对象集合。 |
 |[ItemAt](../api/chartpointscollection-itemat.md)|[workbookChartPoint](workbookchartpoint.md)|根据其在系列中的位置检索点。|
 
 ## <a name="properties"></a>属性
@@ -75,3 +75,5 @@ ms.locfileid: "42519286"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5fde45d8e9baf28fddfe9935d71689d24059dfa3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 03270c0b5e6ea373ad87355612ddfb85b428d61c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43371393"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993138"
 ---
 # <a name="provisionedidentity-resource-type"></a>provisionedIdentity 资源类型
 
@@ -26,8 +26,8 @@ ms.locfileid: "43371393"
 |:-------------|:------------|:------------|
 |详细信息|[detailsInfo](detailsinfo.md)|标识的详细信息。|
 |displayName|String|标识的显示名称。 |
-|id|字符串|唯一标识标识。|
-|identityType|字符串|已设置的标识类型，如 "user" 或 "group"。|
+|id|String|唯一标识标识。|
+|identityType|String|已设置的标识类型，如 "user" 或 "group"。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -60,3 +60,5 @@ ms.locfileid: "43371393"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

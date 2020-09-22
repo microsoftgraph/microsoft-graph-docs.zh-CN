@@ -3,14 +3,14 @@ title: endpointSecurityConfigurationType 枚举类型
 description: 终结点安全策略类型。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5e772e9c32ad304bab3830701852b170f479cdf7
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 6f46b07f62591b33f34b8e847b406763a0047f15
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793228"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993635"
 ---
 # <a name="endpointsecurityconfigurationtype-enum-type"></a>endpointSecurityConfigurationType 枚举类型
 
@@ -26,12 +26,15 @@ ms.locfileid: "46793228"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|陌生.|
-|程序|1|程序.|
-|diskEncryption|双面|磁盘加密。|
+|程序|1 |程序.|
+|diskEncryption|2 |磁盘加密。|
 |firewall|第三章|Firewall.|
 |endpointDetectionAndResponse|4 |终结点检测和响应。|
 |attackSurfaceReduction|5 |攻击面减少。|
 |accountProtection|6 |帐户保护。|
+
+
+
 
 
 

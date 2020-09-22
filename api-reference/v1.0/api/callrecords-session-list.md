@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 93c841bbfd5c2a684695c124c8d8ca6f7cd82607
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 3e31518048517be6e07ab10084632f74eeace26a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183657"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992410"
 ---
 # <a name="list-callrecord-sessions"></a>列出 callRecord 会话
 
@@ -18,7 +18,7 @@ ms.locfileid: "45183657"
 
 检索与[callRecord](../resources/callrecords-callrecord.md)对象相关联的[会话](../resources/callrecords-session.md)列表。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,7 +52,7 @@ GET /communications/callRecords/{id}/sessions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的[session](../resources/callrecords-session.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和请求的 [session](../resources/callrecords-session.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -390,3 +390,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

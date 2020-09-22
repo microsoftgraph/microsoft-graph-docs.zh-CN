@@ -5,20 +5,20 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: fe9a0a6c8f4ad3549e51b3a8d534014d4f9d0c69
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 19d371bb2b61ae33c310251420e88df67b53a4df
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44680575"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992851"
 ---
 # <a name="get-alert"></a>获取警报
 
 命名空间：microsoft.graph
 
- 检索[alert](../resources/alert.md)对象的属性和关系。
+ 检索 [alert](../resources/alert.md) 对象的属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -48,7 +48,7 @@ GET /security/alerts/{alert_id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和**alert**对象。 如果从提供程序返回了 2xx 或 404 以外的状态代码，或者提供程序超时，则响应将是 `206 Partial Content` 状态代码，提供程序的响应位于警告标头中。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 错误响应](../resources/security-error-codes.md)。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 **alert** 对象。 如果从提供程序返回了 2xx 或 404 以外的状态代码，或者提供程序超时，则响应将是 `206 Partial Content` 状态代码，提供程序的响应位于警告标头中。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 错误响应](../resources/security-error-codes.md)。
 
 ## <a name="example"></a>示例
 
@@ -275,3 +275,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

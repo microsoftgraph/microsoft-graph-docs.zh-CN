@@ -5,16 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3fc936179a0c0764492a3dc8d677060931a1223a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 19103cd07404677b680606a6fd0ec9d4caa43600
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521367"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993152"
 ---
 # <a name="protectbytemplateaction-resource-type"></a>protectByTemplateAction 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,3 +54,4 @@ ms.locfileid: "42521367"
   "section": "documentation",
   "tocPath": ""
 }-->
+

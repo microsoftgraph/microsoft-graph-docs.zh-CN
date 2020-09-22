@@ -3,40 +3,40 @@ title: iosCertificateProfileBase 资源类型
 description: iOS 证书配置文件基。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a28a4bcf596f0cf610b5d058421ce73bde402ac3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ec52103366d5ab8a415ae5ced8ed081d7c4cfa78
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444159"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994055"
 ---
 # <a name="ioscertificateprofilebase-resource-type"></a>iosCertificateProfileBase 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 iOS 证书配置文件基。
 
 
-继承自[iosCertificateProfile](../resources/intune-deviceconfig-ioscertificateprofile.md)
+继承自 [iosCertificateProfile](../resources/intune-deviceconfig-ioscertificateprofile.md)
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 iosCertificateProfileBases](../api/intune-deviceconfig-ioscertificateprofilebase-list.md)|[iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)集合|列出[iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)对象的属性和关系。|
-|[获取 iosCertificateProfileBase](../api/intune-deviceconfig-ioscertificateprofilebase-get.md)|[iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)|读取[iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)对象的属性和关系。|
+|[列出 iosCertificateProfileBases](../api/intune-deviceconfig-ioscertificateprofilebase-list.md)|[iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md) 集合|列出 [iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md) 对象的属性和关系。|
+|[获取 iosCertificateProfileBase](../api/intune-deviceconfig-ioscertificateprofilebase-get.md)|[iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)|读取 [iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md) 对象的属性和关系。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false，则不允许分配给 ScopeTags 属性，并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略，可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|适用于此策略的操作系统版本。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|此策略的操作系统版本适用性规则。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -54,7 +54,7 @@ iOS 证书配置文件基。
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) 集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) 集合|按设备的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) 集合|按用户的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -111,6 +111,9 @@ iOS 证书配置文件基。
   "certificateValidityPeriodScale": "String"
 }
 ```
+
+
+
 
 
 

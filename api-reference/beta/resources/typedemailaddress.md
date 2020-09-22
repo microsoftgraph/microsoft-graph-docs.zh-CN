@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: kevinbellinger
-ms.openlocfilehash: 6641d05542fb6d6e376343dff98508183f5a012b
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 8ce8ebdd0cb5b8b2113a80dacf72617d0f361356
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812763"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993006"
 ---
 # <a name="typedemailaddress-resource-type"></a>typedEmailAddress 资源类型
 
@@ -62,3 +62,5 @@ ms.locfileid: "46812763"
   "suppressions": []
 }
 -->
+
+

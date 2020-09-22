@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9ee3ed0c1abd7c1e392bbed47e5fba568506be1b
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 685f5f2bc96e1555d8f8fcfa530c35e8ee1911b8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917092"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992956"
 ---
 # <a name="delete-activitybasedtimeoutpolicy"></a>删除 activityBasedTimeoutPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "43917092"
 
 
 
-删除[activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md)对象。
+删除 [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -109,3 +109,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

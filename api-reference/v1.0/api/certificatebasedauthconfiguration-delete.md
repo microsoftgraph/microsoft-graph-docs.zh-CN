@@ -5,18 +5,18 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7ca0722a3aa9c0ab778c9964cfee043afc47e30b
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 8ffc22599258df0d4d73fcd9e9b8c4a2fd4f9715
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181699"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992428"
 ---
 # <a name="delete-certificatebasedauthconfiguration"></a>删除 certificateBasedAuthConfiguration
 
 命名空间：microsoft.graph
 
-删除[certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md)对象。
+删除 [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) 对象。
 
 ## <a name="permissions"></a>权限
 
@@ -26,7 +26,7 @@ ms.locfileid: "43181699"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | Organization.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application    | Organization.ReadWrite.All |
+| 应用程序    | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -106,3 +106,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
