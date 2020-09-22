@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 54f458e14cbda209d9c2d85f08df4c106db6ab00
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
-ms.translationtype: Auto
+ms.openlocfilehash: 3ae18e201f5b768de9cc1456de186fdd6b9336b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45007188"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048853"
 ---
 # <a name="printercreateoperation-resource-type"></a>printerCreateOperation 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "45007188"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示长时间运行的打印机注册操作。 派生自[printOperation](printoperation.md)。
+表示长时间运行的打印机注册操作。 派生自 [printOperation](printoperation.md)。
 
 ## <a name="methods"></a>方法
 
@@ -30,7 +30,7 @@ ms.locfileid: "45007188"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|String|操作的标识符。 只读。|
-|status|[printOperationStatus](printoperationstatus.md)|注册操作的状态。 包含操作的进度以及它是否成功完成。 只读。|
+|状态|[printOperationStatus](printoperationstatus.md)|注册操作的状态。 包含操作的进度以及它是否成功完成。 只读。|
 |createdDateTime|DateTimeOffset|创建操作时的 DateTimeOffset。 只读。|
 |证书|String|注册过程中创建的签名证书。 只读。|
 |印刷|[印刷](printer.md)|创建的打印机实体。 只读。|
@@ -69,3 +69,4 @@ ms.locfileid: "45007188"
   "section": "documentation",
   "tocPath": ""
 }-->
+

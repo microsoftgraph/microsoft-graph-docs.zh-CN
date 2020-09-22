@@ -3,20 +3,20 @@ title: settingSource 资源类型
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 258633dc9e9893335e3859ec62bee4b5aa3b24c3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4552472cef78f5c0304b56026baebdc8d75aaac9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444823"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049427"
 ---
 # <a name="settingsource-resource-type"></a>settingSource 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,6 +27,7 @@ ms.locfileid: "43444823"
 |:---|:---|:---|
 |id|String|尚未记录|
 |displayName|String|尚未记录|
+|sourceType|[settingSourceType](../resources/intune-shared-settingsourcetype.md)|尚未记录。 可取值为：`deviceConfiguration`、`deviceIntent`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -42,9 +43,13 @@ ms.locfileid: "43444823"
 {
   "@odata.type": "#microsoft.graph.settingSource",
   "id": "String (identifier)",
-  "displayName": "String"
+  "displayName": "String",
+  "sourceType": "String"
 }
 ```
+
+
+
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: licenseAssignmentState 资源类型
-description: User 实体的**licenseAssignmentStates**属性是**licenseAssignmentState**对象的集合。 它提供了对用户的许可证分配的详细信息。
+description: User 实体的 **licenseAssignmentStates** 属性是 **licenseAssignmentState** 对象的集合。 它提供了对用户的许可证分配的详细信息。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: e5b9a1687209c9d8580ef3c82bece0c31733d707
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c847528c9588d13cefb1c7ec0b29127c9175c9a9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447596"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048321"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>licenseAssignmentState 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 
 [User](user.md)实体的**LicenseAssignmentStates**属性是**licenseAssignmentState**对象的集合。 它提供了对用户的许可证分配的详细信息。 详细信息包括以下信息：  
@@ -28,9 +28,9 @@ ms.locfileid: "42447596"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|assignedByGroup|string|分配此许可证的组的 id。 如果分配是直接分配的许可证，则此字段将为 Null。 只读。|
+|assignedByGroup|字符串|分配此许可证的组的 id。 如果分配是直接分配的许可证，则此字段将为 Null。 只读。|
 |disabledPlans|集合（字符串）|此工作分配中禁用的服务计划。 只读。|
-|error|String|许可证分配失败错误。 如果许可证分配成功，则此字段将为 Null。 只读。 可能的值`CountViolation`： `MutuallyExclusiveViolation`、 `DependencyViolation`、 `ProhibitedInUsageLocationViolation` `UniquenessViolation`、、和`Others`。 有关如何识别和解决许可证分配错误的详细信息，请参阅[此处](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)。|
+|error|String|许可证分配失败错误。 如果许可证分配成功，则此字段将为 Null。 只读。 可能的值： `CountViolation` 、、、、 `MutuallyExclusiveViolation` `DependencyViolation` `ProhibitedInUsageLocationViolation` `UniquenessViolation` 和 `Others` 。 有关如何识别和解决许可证分配错误的详细信息，请参阅 [此处](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)。|
 |skuId|String|此 SKU 的唯一标识符。 只读。|
 |state|String|指示此工作分配的当前状态。 只读。 可能的值： Active、ActiveWithError、Disabled 和 Error。|
 
@@ -60,3 +60,4 @@ ms.locfileid: "42447596"
       Referenced type microsoft.graph.licenseAssignmentState is not defined in the doc set! Potential suggestion: UNKNOWN"
   ]
 }-->
+

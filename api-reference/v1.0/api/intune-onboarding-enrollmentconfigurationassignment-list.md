@@ -3,14 +3,14 @@ title: 列出 enrollmentConfigurationAssignments
 description: 列出 enrollmentConfigurationAssignment 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a5787dd76300b45c59bcb0f466bc6d99c8294e48
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cb8b9f0a1fe862df65b7f121cdf95853c29ae864
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442399"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048615"
 ---
 # <a name="list-enrollmentconfigurationassignments"></a>列出 enrollmentConfigurationAssignments
 
@@ -77,6 +77,9 @@ Content-Length: 275
   ]
 }
 ```
+
+
+
 
 
 

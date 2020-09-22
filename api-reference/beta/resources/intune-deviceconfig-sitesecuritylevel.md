@@ -3,20 +3,20 @@ title: siteSecurityLevel 枚举类型
 description: 网站安全级别的可能值。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8906bb409dad0e758104e6c71596cd6a6fa6ea30
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ed5bda11426b66895d91e17848453d796ab84aa3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43412893"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049308"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>siteSecurityLevel 枚举类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -26,11 +26,14 @@ ms.locfileid: "43412893"
 |成员|值|说明|
 |:---|:---|:---|
 |定制|0|用户定义，默认值，无意向。|
-|降低|1|低。|
-|mediumLow|双面|中-低。|
+|降低|1 |低。|
+|mediumLow|2 |中-低。|
 |中等|第三章|中。|
 |mediumHigh|4 |中-高。|
 |高效|5 |高。|
+
+
+
 
 
 

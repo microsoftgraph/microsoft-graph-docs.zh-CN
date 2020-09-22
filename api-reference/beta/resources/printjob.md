@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 0d46263e5f393362cec155a9be3e2e5a54c3dfec
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.openlocfilehash: 2c0a1bdb4ec3ebe3c87b5b40595d30cf9108c5bf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091520"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048735"
 ---
 # <a name="printjob-resource-type"></a>printJob 资源类型
 
@@ -35,14 +35,14 @@ ms.locfileid: "45091520"
 |:-------------|:------------|:------------|
 |id|String|打印机的 GUID。 只读。|
 |createdDateTime|DateTimeOffset|创建作业时的 DateTimeOffset。 只读。|
-|status|[printJobStatus](printjobstatus.md)|打印作业的状态。 只读。|
+|状态|[printJobStatus](printjobstatus.md)|打印作业的状态。 只读。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|createdBy|[userIdentity](useridentity.md)| 此为只读属性。 可为 NULL。|
-|单据|[printDocument](printdocument.md)集合| 只读。|
-|tasks|[printTask](printtask.md)集合|此打印作业触发的[printTasks](printtask.md)的列表。|
+|createdBy|[userIdentity](useridentity.md)| 只读。 可为 Null。|
+|单据|[printDocument](printdocument.md) 集合| 只读。|
+|tasks|[printTask](printtask.md) 集合|此打印作业触发的 [printTasks](printtask.md) 的列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -78,3 +78,4 @@ ms.locfileid: "45091520"
   "section": "documentation",
   "tocPath": ""
 }-->
+

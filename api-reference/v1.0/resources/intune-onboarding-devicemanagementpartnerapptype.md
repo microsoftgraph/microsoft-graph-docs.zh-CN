@@ -3,14 +3,14 @@ title: deviceManagementPartnerAppType 枚举类型
 description: 合作伙伴应用类型。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8fbe64b2f0fad1399cbb71922bc0c4d69fcb3bd5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d7cbfb29997862323b496809aac8831266eaf02f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459452"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048307"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>deviceManagementPartnerAppType 枚举类型
 
@@ -24,8 +24,10 @@ ms.locfileid: "43459452"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|合作伙伴应用类型未知。|
-|singleTenantApp|1|合作伙伴应用程序是 AAD 中的单个租户。|
-|multiTenantApp|双面|AAD 中的合作伙伴应用程序是多租户。|
+|singleTenantApp|1 |合作伙伴应用程序是 AAD 中的单个租户。|
+|multiTenantApp|2 |AAD 中的合作伙伴应用程序是多租户。|
+
+
 
 
 

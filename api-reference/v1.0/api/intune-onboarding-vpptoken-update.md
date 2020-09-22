@@ -3,14 +3,14 @@ title: 更新 vppToken
 description: 更新 vppToken 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 77c8e44b3f4ab04f40620c5b2286471d3334c627
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 64b24bf2f93d3ab3c81ea386915eb6215941ba95
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452772"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048580"
 ---
 # <a name="update-vpptoken"></a>更新 vppToken
 
@@ -116,6 +116,9 @@ Content-Length: 574
   "countryOrRegion": "Country Or Region value"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: 创建 mobileThreatDefenseConnector
 description: 创建新的 mobileThreatDefenseConnector 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 17717aef6ccc55b51c986f757c5112db436d1ca7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fdbd9dc76247e72f44d1d8c149bb948e560d8315
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462887"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048587"
 ---
 # <a name="create-mobilethreatdefenseconnector"></a>创建 mobileThreatDefenseConnector
 
@@ -108,6 +108,9 @@ Content-Length: 463
   "partnerUnresponsivenessThresholdInDays": 6
 }
 ```
+
+
+
 
 
 

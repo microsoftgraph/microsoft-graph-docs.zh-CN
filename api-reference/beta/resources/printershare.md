@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 7ac7bb86c22a36f814f3c48211fb5ff17177a2d6
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 90f69ca6db0a84c0025caf4fff0ae07324703380
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674335"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048759"
 ---
 # <a name="printershare-resource-type"></a>printerShare 资源类型
 
@@ -43,12 +43,12 @@ ms.locfileid: "46674335"
 |createdDateTime|DateTimeOffset|创建打印机共享时的 DateTimeOffset。 只读。|
 |manufacturer|String|与此打印机共享关联的打印机报告的制造商。 只读。|
 |model|String|与此打印机共享关联的打印机报告的模型名称。 只读。|
-|isAcceptingJobs|布尔值|与此打印机共享关联的打印机当前是否正在接受新的打印作业。|
+|isAcceptingJobs|Boolean|与此打印机共享关联的打印机当前是否正在接受新的打印作业。|
 |defaults|[printerDefaults](printerdefaults.md)|与此打印机共享关联的打印机的默认打印设置。|
 |capabilities|[printerCapabilities](printercapabilities.md)|与此打印机共享相关联的打印机的功能。|
-|location|[printerLocation](printerlocation.md)|与此打印机共享关联的打印机的物理和/或组织位置。|
-|status|[printerStatus](printerstatus.md)|与此打印机共享关联的打印机的处理状态，包括任何错误。 只读。|
-|allowAllUsers|布尔值|如果为 true，则所有用户和组都将被授予对此打印机共享的访问权限。 这将取代由 **allowedUsers** 和 **allowedGroups** 导航属性定义的允许列表。|
+|位置|[printerLocation](printerlocation.md)|与此打印机共享关联的打印机的物理和/或组织位置。|
+|状态|[printerStatus](printerstatus.md)|与此打印机共享关联的打印机的处理状态，包括任何错误。 只读。|
+|allowAllUsers|Boolean|如果为 true，则所有用户和组都将被授予对此打印机共享的访问权限。 这将取代由 **allowedUsers** 和 **allowedGroups** 导航属性定义的允许列表。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型        | 说明 |
@@ -89,3 +89,5 @@ ms.locfileid: "46674335"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

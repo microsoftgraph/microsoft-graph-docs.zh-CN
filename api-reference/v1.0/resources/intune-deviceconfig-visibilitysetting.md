@@ -3,14 +3,14 @@ title: visibilitySetting 枚举类型
 description: 一般可见性状态。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 157db98c6d00d5c228e8d14d002cc49ae742dd04
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3b82155dd9acdad396e798a490d9cab218eec8f8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472532"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048545"
 ---
 # <a name="visibilitysetting-enum-type"></a>visibilitySetting 枚举类型
 
@@ -24,8 +24,10 @@ ms.locfileid: "43472532"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
-|选中|1|隐藏。|
-|显示|双面|显示。|
+|选中|1 |隐藏。|
+|显示|2 |显示。|
+
+
 
 
 

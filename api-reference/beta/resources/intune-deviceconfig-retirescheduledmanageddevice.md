@@ -3,20 +3,20 @@ title: retireScheduledManagedDevice 资源类型
 description: 计划停用的 ManagedDevices
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8f89c45265d27819202087ed8e1931606323dd29
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: b1cdd08343dba162db177c25ada67be08c9ac686
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44788904"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049532"
 ---
 # <a name="retirescheduledmanageddevice-resource-type"></a>retireScheduledManagedDevice 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -35,7 +35,7 @@ ms.locfileid: "44788904"
 |所有者|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|托管设备 ManagedDeviceOwnerType。 可取值为：`unknown`、`company`、`personal`。|
 |deviceCompliancePolicyName|String|设备合规性策略名称|
 |deviceCompliancePolicyId|String|设备合规性 PolicyId|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 无
@@ -65,6 +65,9 @@ ms.locfileid: "44788904"
   ]
 }
 ```
+
+
+
 
 
 

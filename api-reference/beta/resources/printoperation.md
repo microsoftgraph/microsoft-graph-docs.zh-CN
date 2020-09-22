@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 77a00aef382142046c44465a88909b90f966aa7e
-ms.sourcegitcommit: 90aaba4e965945cb6550cf625cbc03287f39e531
+ms.openlocfilehash: 970ac3dd06e5af1478600166ffdd4c84815aa5b5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148583"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048720"
 ---
 # <a name="printoperation-resource-type"></a>printOperation 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "45148583"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示长时间运行的通用打印操作。 操作类型（如[printerCreateOperation](printercreateoperation.md)）的基类。
+表示长时间运行的通用打印操作。 操作类型（如 [printerCreateOperation](printercreateoperation.md)）的基类。
 
 ## <a name="methods"></a>方法
 
@@ -64,3 +64,5 @@ ms.locfileid: "45148583"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

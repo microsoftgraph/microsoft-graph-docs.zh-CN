@@ -3,14 +3,14 @@ title: importedWindowsAutopilotDeviceIdentityUploadStatus 枚举类型
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a853c26f8089de7867ba83027daabe36c0ff43ab
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7f680c8adbb39eb8707635187ec2aa9b92a51a4a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445887"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048426"
 ---
 # <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a>importedWindowsAutopilotDeviceIdentityUploadStatus 枚举类型
 
@@ -24,9 +24,11 @@ ms.locfileid: "43445887"
 |成员|值|说明|
 |:---|:---|:---|
 |noUpload|0|无上传状态。|
-|决|1|挂起状态。|
-|complete|双面|完整状态。|
+|决|1 |挂起状态。|
+|complete|2 |完整状态。|
 |error|第三章|错误状态。|
+
+
 
 
 

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: d4ac0695357aba0ba6c44fef4654d2edaefca6cb
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 45a69cbad25d2f9c3c99c9e01aa47982fe5c62b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917599"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048765"
 ---
 # <a name="printidentity-resource-type"></a>printIdentity 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "43917599"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示通用打印服务中的标识。 映射到[Azure Active Directory （AZURE AD）组](group.md)。
+表示通用打印服务中的标识。 映射到 [Azure Active Directory (AZURE AD) 组](group.md)。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
@@ -57,3 +57,5 @@ ms.locfileid: "43917599"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

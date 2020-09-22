@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 4d7399f45138d6ab7d82f33e6577e7d08967ad15
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: 8f89d2d4daa45d1043e3412852cdaa480223129b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863696"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048727"
 ---
 # <a name="printmargin-complex-type"></a>printMargin 复杂类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "44863696"
 指定打印时使用的页边距宽度。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |top|Int32|从上边缘到 microns 中的边距。|
 |bottom|Int32|从下边缘 microns 的边距。|
@@ -58,3 +58,5 @@ ms.locfileid: "44863696"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
