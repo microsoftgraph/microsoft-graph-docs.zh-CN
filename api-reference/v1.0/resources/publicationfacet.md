@@ -5,20 +5,20 @@ localization_priority: Normal
 author: JeremyKelley
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 91abd61454df2d06131a705dabcb87c9e4ce764f
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: cba39f1b9478b534c95258f2bae0ad9c6df948bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806889"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037100"
 ---
-# <a name="publicationfacet-resource-type"></a><span data-ttu-id="f700a-103">PublicationFacet 资源类型</span><span class="sxs-lookup"><span data-stu-id="f700a-103">PublicationFacet resource type</span></span>
+# <a name="publicationfacet-resource-type"></a><span data-ttu-id="3b160-103">PublicationFacet 资源类型</span><span class="sxs-lookup"><span data-stu-id="3b160-103">PublicationFacet resource type</span></span>
 
-<span data-ttu-id="f700a-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f700a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3b160-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3b160-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="f700a-105">**publicationFacet** 资源提供有关 [driveItemVersion](driveitemversion.md) 或 [driveItem](driveitem.md) 资源发布状态的详细信息。</span><span class="sxs-lookup"><span data-stu-id="f700a-105">The **publicationFacet** resource provides details on the published status of a [driveItemVersion](driveitemversion.md) or [driveItem](driveitem.md) resource.</span></span>
+<span data-ttu-id="3b160-105">**publicationFacet** 资源提供有关 [driveItemVersion](driveitemversion.md) 或 [driveItem](driveitem.md) 资源发布状态的详细信息。</span><span class="sxs-lookup"><span data-stu-id="3b160-105">The **publicationFacet** resource provides details on the published status of a [driveItemVersion](driveitemversion.md) or [driveItem](driveitem.md) resource.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="f700a-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f700a-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3b160-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3b160-106">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -33,12 +33,12 @@ ms.locfileid: "46806889"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="f700a-107">属性</span><span class="sxs-lookup"><span data-stu-id="f700a-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="3b160-107">属性</span><span class="sxs-lookup"><span data-stu-id="3b160-107">Properties</span></span>
 
-|   <span data-ttu-id="f700a-108">属性</span><span class="sxs-lookup"><span data-stu-id="f700a-108">Property</span></span>    |  <span data-ttu-id="f700a-109">类型</span><span class="sxs-lookup"><span data-stu-id="f700a-109">Type</span></span>  | <span data-ttu-id="f700a-110">说明</span><span class="sxs-lookup"><span data-stu-id="f700a-110">Description</span></span> |
+|   <span data-ttu-id="3b160-108">属性</span><span class="sxs-lookup"><span data-stu-id="3b160-108">Property</span></span>    |  <span data-ttu-id="3b160-109">类型</span><span class="sxs-lookup"><span data-stu-id="3b160-109">Type</span></span>  | <span data-ttu-id="3b160-110">说明</span><span class="sxs-lookup"><span data-stu-id="3b160-110">Description</span></span> |
 | :------------ | :----- | :---------- |
-| <span data-ttu-id="f700a-111">**level**</span><span class="sxs-lookup"><span data-stu-id="f700a-111">**level**</span></span>     | <span data-ttu-id="f700a-112">String</span><span class="sxs-lookup"><span data-stu-id="f700a-112">String</span></span> | <span data-ttu-id="f700a-113">此文档的发布状态。</span><span class="sxs-lookup"><span data-stu-id="f700a-113">The state of publication for this document.</span></span> <span data-ttu-id="f700a-114">`published` 或 `checkout`。</span><span class="sxs-lookup"><span data-stu-id="f700a-114">Either `published` or `checkout`.</span></span> <span data-ttu-id="f700a-115">只读。</span><span class="sxs-lookup"><span data-stu-id="f700a-115">Read-only.</span></span>  |
-| <span data-ttu-id="f700a-116">**versionId**</span><span class="sxs-lookup"><span data-stu-id="f700a-116">**versionId**</span></span> | <span data-ttu-id="f700a-117">String</span><span class="sxs-lookup"><span data-stu-id="f700a-117">String</span></span> | <span data-ttu-id="f700a-118">对当前调用方可见的版本的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="f700a-118">The unique identifier for the version that is visible to the current caller.</span></span> <span data-ttu-id="f700a-119">只读。</span><span class="sxs-lookup"><span data-stu-id="f700a-119">Read-only.</span></span>  |
+| <span data-ttu-id="3b160-111">**level**</span><span class="sxs-lookup"><span data-stu-id="3b160-111">**level**</span></span>     | <span data-ttu-id="3b160-112">String</span><span class="sxs-lookup"><span data-stu-id="3b160-112">String</span></span> | <span data-ttu-id="3b160-113">此文档的发布状态。</span><span class="sxs-lookup"><span data-stu-id="3b160-113">The state of publication for this document.</span></span> <span data-ttu-id="3b160-114">`published` 或 `checkout`。</span><span class="sxs-lookup"><span data-stu-id="3b160-114">Either `published` or `checkout`.</span></span> <span data-ttu-id="3b160-115">只读。</span><span class="sxs-lookup"><span data-stu-id="3b160-115">Read-only.</span></span>  |
+| <span data-ttu-id="3b160-116">**versionId**</span><span class="sxs-lookup"><span data-stu-id="3b160-116">**versionId**</span></span> | <span data-ttu-id="3b160-117">String</span><span class="sxs-lookup"><span data-stu-id="3b160-117">String</span></span> | <span data-ttu-id="3b160-118">对当前调用方可见的版本的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="3b160-118">The unique identifier for the version that is visible to the current caller.</span></span> <span data-ttu-id="3b160-119">只读。</span><span class="sxs-lookup"><span data-stu-id="3b160-119">Read-only.</span></span>  |
 
 
 <!-- {
@@ -52,3 +52,4 @@ ms.locfileid: "46806889"
   ],
   "tocPath": "Facets/Photo"
 } -->
+

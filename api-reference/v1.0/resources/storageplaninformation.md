@@ -5,26 +5,26 @@ title: StoragePlanInformation
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: files
-ms.openlocfilehash: a5e6c10bdbc8a68230a223501844d0ee121014c2
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: b8b4778a4726c227bfe79ad13ecb14507b13a889
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863773"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036952"
 ---
-# <a name="storageplaninformation-resource-type"></a><span data-ttu-id="b2cd0-103">storagePlanInformation 资源类型</span><span class="sxs-lookup"><span data-stu-id="b2cd0-103">storagePlanInformation resource type</span></span>
+# <a name="storageplaninformation-resource-type"></a><span data-ttu-id="67d7e-103">storagePlanInformation 资源类型</span><span class="sxs-lookup"><span data-stu-id="67d7e-103">storagePlanInformation resource type</span></span>
 
-<span data-ttu-id="b2cd0-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b2cd0-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="67d7e-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="67d7e-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="b2cd0-105">提供有关驱动器的存储配额计划的信息。</span><span class="sxs-lookup"><span data-stu-id="b2cd0-105">Provides information about the drive's storage quota plans.</span></span>
+<span data-ttu-id="67d7e-105">提供有关驱动器的存储配额计划的信息。</span><span class="sxs-lookup"><span data-stu-id="67d7e-105">Provides information about the drive's storage quota plans.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b2cd0-106">属性</span><span class="sxs-lookup"><span data-stu-id="b2cd0-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="67d7e-106">属性</span><span class="sxs-lookup"><span data-stu-id="67d7e-106">Properties</span></span>
 
-| <span data-ttu-id="b2cd0-107">属性名称</span><span class="sxs-lookup"><span data-stu-id="b2cd0-107">Property name</span></span>     | <span data-ttu-id="b2cd0-108">类型</span><span class="sxs-lookup"><span data-stu-id="b2cd0-108">Type</span></span>      | <span data-ttu-id="b2cd0-109">说明</span><span class="sxs-lookup"><span data-stu-id="b2cd0-109">Description</span></span>                                                             |
+| <span data-ttu-id="67d7e-107">属性名称</span><span class="sxs-lookup"><span data-stu-id="67d7e-107">Property name</span></span>     | <span data-ttu-id="67d7e-108">类型</span><span class="sxs-lookup"><span data-stu-id="67d7e-108">Type</span></span>      | <span data-ttu-id="67d7e-109">说明</span><span class="sxs-lookup"><span data-stu-id="67d7e-109">Description</span></span>                                                             |
 |:------------------|:----------|:----------------------------------------------------------------------- |
-| <span data-ttu-id="b2cd0-110">**upgradeAvailable**</span><span class="sxs-lookup"><span data-stu-id="b2cd0-110">**upgradeAvailable**</span></span>  | <span data-ttu-id="b2cd0-111">Boolean</span><span class="sxs-lookup"><span data-stu-id="b2cd0-111">Boolean</span></span>   | <span data-ttu-id="b2cd0-112">指示是否有更高的存储配额计划可用。</span><span class="sxs-lookup"><span data-stu-id="b2cd0-112">Indicates whether there are higher storage quota plans available.</span></span> <span data-ttu-id="b2cd0-113">只读。</span><span class="sxs-lookup"><span data-stu-id="b2cd0-113">Read-only.</span></span> |
+| <span data-ttu-id="67d7e-110">**upgradeAvailable**</span><span class="sxs-lookup"><span data-stu-id="67d7e-110">**upgradeAvailable**</span></span>  | <span data-ttu-id="67d7e-111">Boolean</span><span class="sxs-lookup"><span data-stu-id="67d7e-111">Boolean</span></span>   | <span data-ttu-id="67d7e-112">指示是否有更高的存储配额计划可用。</span><span class="sxs-lookup"><span data-stu-id="67d7e-112">Indicates whether there are higher storage quota plans available.</span></span> <span data-ttu-id="67d7e-113">只读。</span><span class="sxs-lookup"><span data-stu-id="67d7e-113">Read-only.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="b2cd0-114">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="b2cd0-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="67d7e-114">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="67d7e-114">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -49,4 +49,5 @@ ms.locfileid: "44863773"
   "suppressions": []
 }
 -->
+
 

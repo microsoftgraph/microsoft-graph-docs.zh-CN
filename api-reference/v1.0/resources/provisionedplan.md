@@ -5,30 +5,30 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8b7f3e5ac0c66dca2cb297986af1be6473de23c1
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 0149ed4fbdcdde073924d70a47ac60cc5f12b8ef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806875"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037113"
 ---
-# <a name="provisionedplan-resource-type"></a><span data-ttu-id="66f81-103">provisionedPlan 资源类型</span><span class="sxs-lookup"><span data-stu-id="66f81-103">provisionedPlan resource type</span></span>
+# <a name="provisionedplan-resource-type"></a><span data-ttu-id="adcb2-103">provisionedPlan 资源类型</span><span class="sxs-lookup"><span data-stu-id="adcb2-103">provisionedPlan resource type</span></span>
 
-<span data-ttu-id="66f81-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="66f81-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="adcb2-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="adcb2-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="66f81-105">**用户** 实体和 [组织](user.md) 实体的 [provisionedPlans](organization.md) 属性都是一个 **provisionedPlan** 集合。</span><span class="sxs-lookup"><span data-stu-id="66f81-105">The **provisionedPlans** property of the [user](user.md) entity and the [organization](organization.md) entity is a collection of **provisionedPlan**.</span></span>
+<span data-ttu-id="adcb2-105">**用户** 实体和 [组织](user.md) 实体的 [provisionedPlans](organization.md) 属性都是一个 **provisionedPlan** 集合。</span><span class="sxs-lookup"><span data-stu-id="adcb2-105">The **provisionedPlans** property of the [user](user.md) entity and the [organization](organization.md) entity is a collection of **provisionedPlan**.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="66f81-106">属性</span><span class="sxs-lookup"><span data-stu-id="66f81-106">Properties</span></span>
-| <span data-ttu-id="66f81-107">属性</span><span class="sxs-lookup"><span data-stu-id="66f81-107">Property</span></span>     | <span data-ttu-id="66f81-108">类型</span><span class="sxs-lookup"><span data-stu-id="66f81-108">Type</span></span>   |<span data-ttu-id="66f81-109">说明</span><span class="sxs-lookup"><span data-stu-id="66f81-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="adcb2-106">属性</span><span class="sxs-lookup"><span data-stu-id="adcb2-106">Properties</span></span>
+| <span data-ttu-id="adcb2-107">属性</span><span class="sxs-lookup"><span data-stu-id="adcb2-107">Property</span></span>     | <span data-ttu-id="adcb2-108">类型</span><span class="sxs-lookup"><span data-stu-id="adcb2-108">Type</span></span>   |<span data-ttu-id="adcb2-109">说明</span><span class="sxs-lookup"><span data-stu-id="adcb2-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="66f81-110">capabilityStatus</span><span class="sxs-lookup"><span data-stu-id="66f81-110">capabilityStatus</span></span>|<span data-ttu-id="66f81-111">String</span><span class="sxs-lookup"><span data-stu-id="66f81-111">String</span></span>|<span data-ttu-id="66f81-112">例如，“Enabled”。</span><span class="sxs-lookup"><span data-stu-id="66f81-112">For example, “Enabled”.</span></span>|
-|<span data-ttu-id="66f81-113">provisioningStatus</span><span class="sxs-lookup"><span data-stu-id="66f81-113">provisioningStatus</span></span>|<span data-ttu-id="66f81-114">String</span><span class="sxs-lookup"><span data-stu-id="66f81-114">String</span></span>|<span data-ttu-id="66f81-115">例如，“Success”。</span><span class="sxs-lookup"><span data-stu-id="66f81-115">For example, “Success”.</span></span>|
-|<span data-ttu-id="66f81-116">service</span><span class="sxs-lookup"><span data-stu-id="66f81-116">service</span></span>|<span data-ttu-id="66f81-117">String</span><span class="sxs-lookup"><span data-stu-id="66f81-117">String</span></span>|<span data-ttu-id="66f81-118">服务名称；例如，“AccessControlS2S”</span><span class="sxs-lookup"><span data-stu-id="66f81-118">The name of the service; for example, “AccessControlS2S”</span></span>|
+|<span data-ttu-id="adcb2-110">capabilityStatus</span><span class="sxs-lookup"><span data-stu-id="adcb2-110">capabilityStatus</span></span>|<span data-ttu-id="adcb2-111">String</span><span class="sxs-lookup"><span data-stu-id="adcb2-111">String</span></span>|<span data-ttu-id="adcb2-112">例如，“Enabled”。</span><span class="sxs-lookup"><span data-stu-id="adcb2-112">For example, “Enabled”.</span></span>|
+|<span data-ttu-id="adcb2-113">provisioningStatus</span><span class="sxs-lookup"><span data-stu-id="adcb2-113">provisioningStatus</span></span>|<span data-ttu-id="adcb2-114">String</span><span class="sxs-lookup"><span data-stu-id="adcb2-114">String</span></span>|<span data-ttu-id="adcb2-115">例如，“Success”。</span><span class="sxs-lookup"><span data-stu-id="adcb2-115">For example, “Success”.</span></span>|
+|<span data-ttu-id="adcb2-116">service</span><span class="sxs-lookup"><span data-stu-id="adcb2-116">service</span></span>|<span data-ttu-id="adcb2-117">String</span><span class="sxs-lookup"><span data-stu-id="adcb2-117">String</span></span>|<span data-ttu-id="adcb2-118">服务名称；例如，“AccessControlS2S”</span><span class="sxs-lookup"><span data-stu-id="adcb2-118">The name of the service; for example, “AccessControlS2S”</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="66f81-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="66f81-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="adcb2-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="adcb2-119">JSON representation</span></span>
 
-<span data-ttu-id="66f81-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="66f81-120">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="adcb2-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="adcb2-120">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -56,3 +56,4 @@ ms.locfileid: "46806875"
   "section": "documentation",
   "tocPath": ""
 }-->
+

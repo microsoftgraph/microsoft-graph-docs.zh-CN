@@ -5,30 +5,30 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: resourcePageType
-ms.openlocfilehash: 70d95d833518814f75d31227264be0dd5f85dba4
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d4ed317b987d461c9ef6816e9d05aae0de358ec7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806882"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037197"
 ---
-# <a name="imageinfo-resource-type"></a><span data-ttu-id="bcfe2-103">imageInfo 资源类型</span><span class="sxs-lookup"><span data-stu-id="bcfe2-103">imageInfo resource type</span></span>
+# <a name="imageinfo-resource-type"></a><span data-ttu-id="c8570-103">imageInfo 资源类型</span><span class="sxs-lookup"><span data-stu-id="c8570-103">imageInfo resource type</span></span>
 
-<span data-ttu-id="bcfe2-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bcfe2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c8570-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c8570-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="bcfe2-105">一个复杂类型，用于表示[activity](../resources/projectrome-activity.md)对象的[visualInfo](../resources/projectrome-visualinfo.md)部分中**的属性属性**。</span><span class="sxs-lookup"><span data-stu-id="bcfe2-105">A complex type for representing the **attribution** property in the [visualInfo](../resources/projectrome-visualinfo.md) part of the [activity](../resources/projectrome-activity.md) object.</span></span>
+<span data-ttu-id="c8570-105">一个复杂类型，用于表示[activity](../resources/projectrome-activity.md)对象的[visualInfo](../resources/projectrome-visualinfo.md)部分中**的属性属性**。</span><span class="sxs-lookup"><span data-stu-id="c8570-105">A complex type for representing the **attribution** property in the [visualInfo](../resources/projectrome-visualinfo.md) part of the [activity](../resources/projectrome-activity.md) object.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="bcfe2-106">属性</span><span class="sxs-lookup"><span data-stu-id="bcfe2-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="c8570-106">属性</span><span class="sxs-lookup"><span data-stu-id="c8570-106">Properties</span></span>
 
-|<span data-ttu-id="bcfe2-107">名称</span><span class="sxs-lookup"><span data-stu-id="bcfe2-107">Name</span></span> | <span data-ttu-id="bcfe2-108">类型</span><span class="sxs-lookup"><span data-stu-id="bcfe2-108">Type</span></span> | <span data-ttu-id="bcfe2-109">说明</span><span class="sxs-lookup"><span data-stu-id="bcfe2-109">Description</span></span>|
+|<span data-ttu-id="c8570-107">名称</span><span class="sxs-lookup"><span data-stu-id="c8570-107">Name</span></span> | <span data-ttu-id="c8570-108">类型</span><span class="sxs-lookup"><span data-stu-id="c8570-108">Type</span></span> | <span data-ttu-id="c8570-109">说明</span><span class="sxs-lookup"><span data-stu-id="c8570-109">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="bcfe2-110">iconUrl</span><span class="sxs-lookup"><span data-stu-id="bcfe2-110">iconUrl</span></span> | <span data-ttu-id="bcfe2-111">String</span><span class="sxs-lookup"><span data-stu-id="bcfe2-111">String</span></span> | <span data-ttu-id="bcfe2-112">Optional指向代表用于生成活动的应用程序的图标的 URI</span><span class="sxs-lookup"><span data-stu-id="bcfe2-112">Optional; URI that points to an icon which represents the application used to generate the activity</span></span>|
-|<span data-ttu-id="bcfe2-113">alternateText</span><span class="sxs-lookup"><span data-stu-id="bcfe2-113">alternateText</span></span> | <span data-ttu-id="bcfe2-114">String</span><span class="sxs-lookup"><span data-stu-id="bcfe2-114">String</span></span> | <span data-ttu-id="bcfe2-115">Optional图像的可选文本可访问内容</span><span class="sxs-lookup"><span data-stu-id="bcfe2-115">Optional; alt-text accessible content for the image</span></span>|
-|<span data-ttu-id="bcfe2-116">addImageQuery</span><span class="sxs-lookup"><span data-stu-id="bcfe2-116">addImageQuery</span></span> | <span data-ttu-id="bcfe2-117">布尔值</span><span class="sxs-lookup"><span data-stu-id="bcfe2-117">Boolean</span></span> | <span data-ttu-id="bcfe2-118">Optional用于指示服务器能够动态呈现图像以响应参数化的参数。</span><span class="sxs-lookup"><span data-stu-id="bcfe2-118">Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization.</span></span> <span data-ttu-id="bcfe2-119">例如-高对比度图像</span><span class="sxs-lookup"><span data-stu-id="bcfe2-119">For example – a high contrast image</span></span>|
+|<span data-ttu-id="c8570-110">iconUrl</span><span class="sxs-lookup"><span data-stu-id="c8570-110">iconUrl</span></span> | <span data-ttu-id="c8570-111">String</span><span class="sxs-lookup"><span data-stu-id="c8570-111">String</span></span> | <span data-ttu-id="c8570-112">Optional指向代表用于生成活动的应用程序的图标的 URI</span><span class="sxs-lookup"><span data-stu-id="c8570-112">Optional; URI that points to an icon which represents the application used to generate the activity</span></span>|
+|<span data-ttu-id="c8570-113">alternateText</span><span class="sxs-lookup"><span data-stu-id="c8570-113">alternateText</span></span> | <span data-ttu-id="c8570-114">String</span><span class="sxs-lookup"><span data-stu-id="c8570-114">String</span></span> | <span data-ttu-id="c8570-115">Optional图像的可选文本可访问内容</span><span class="sxs-lookup"><span data-stu-id="c8570-115">Optional; alt-text accessible content for the image</span></span>|
+|<span data-ttu-id="c8570-116">addImageQuery</span><span class="sxs-lookup"><span data-stu-id="c8570-116">addImageQuery</span></span> | <span data-ttu-id="c8570-117">Boolean</span><span class="sxs-lookup"><span data-stu-id="c8570-117">Boolean</span></span> | <span data-ttu-id="c8570-118">Optional用于指示服务器能够动态呈现图像以响应参数化的参数。</span><span class="sxs-lookup"><span data-stu-id="c8570-118">Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization.</span></span> <span data-ttu-id="c8570-119">例如-高对比度图像</span><span class="sxs-lookup"><span data-stu-id="c8570-119">For example – a high contrast image</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="bcfe2-120">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="bcfe2-120">JSON Representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c8570-120">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c8570-120">JSON Representation</span></span>
 
-<span data-ttu-id="bcfe2-121">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bcfe2-121">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="c8570-121">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c8570-121">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -58,3 +58,4 @@ ms.locfileid: "46806882"
   "section": "documentation",
   "tocPath": ""
 }-->
+

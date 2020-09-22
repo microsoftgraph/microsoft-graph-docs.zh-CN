@@ -5,28 +5,28 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: c4112be06512ba0f974206721ac5fb186cf7573e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b9eb6eb3d69cf89819ece38675893607c042e86b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509974"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038233"
 ---
-# <a name="get-resource"></a><span data-ttu-id="2d92f-103">获取资源</span><span class="sxs-lookup"><span data-stu-id="2d92f-103">Get resource</span></span>
+# <a name="get-resource"></a><span data-ttu-id="341bc-103">获取资源</span><span class="sxs-lookup"><span data-stu-id="341bc-103">Get resource</span></span>
 
-<span data-ttu-id="2d92f-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2d92f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="341bc-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="341bc-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="2d92f-105">检索文件或图像[资源](../resources/resource.md)对象的二进制数据。</span><span class="sxs-lookup"><span data-stu-id="2d92f-105">Retrieve the binary data of a file or image [resource](../resources/resource.md) object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="2d92f-106">权限</span><span class="sxs-lookup"><span data-stu-id="2d92f-106">Permissions</span></span>
-<span data-ttu-id="2d92f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2d92f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="341bc-105">检索文件或图像 [资源](../resources/resource.md) 对象的二进制数据。</span><span class="sxs-lookup"><span data-stu-id="341bc-105">Retrieve the binary data of a file or image [resource](../resources/resource.md) object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="341bc-106">权限</span><span class="sxs-lookup"><span data-stu-id="341bc-106">Permissions</span></span>
+<span data-ttu-id="341bc-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="341bc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2d92f-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="2d92f-109">Permission type</span></span>      | <span data-ttu-id="2d92f-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2d92f-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="341bc-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="341bc-109">Permission type</span></span>      | <span data-ttu-id="341bc-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="341bc-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2d92f-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2d92f-111">Delegated (work or school account)</span></span> | <span data-ttu-id="2d92f-112">请参阅 "注意，"、"注释"、"全部"、"全部"、"写"</span><span class="sxs-lookup"><span data-stu-id="2d92f-112">Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="2d92f-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2d92f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2d92f-114">注意： Read、Notes。读写</span><span class="sxs-lookup"><span data-stu-id="2d92f-114">Notes.Read, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="2d92f-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="2d92f-115">Application</span></span> | <span data-ttu-id="2d92f-116">Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2d92f-116">Notes.Read.All, Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="341bc-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="341bc-111">Delegated (work or school account)</span></span> | <span data-ttu-id="341bc-112">请参阅 "注意，"、"注释"、"全部"、"全部"、"写"</span><span class="sxs-lookup"><span data-stu-id="341bc-112">Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="341bc-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="341bc-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="341bc-114">注意： Read、Notes。读写</span><span class="sxs-lookup"><span data-stu-id="341bc-114">Notes.Read, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="341bc-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="341bc-115">Application</span></span> | <span data-ttu-id="341bc-116">Notes.Read.All、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="341bc-116">Notes.Read.All, Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2d92f-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2d92f-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="341bc-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="341bc-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onenote/resources/{id}/content
@@ -35,24 +35,24 @@ GET /groups/{id}/onenote/resources/{id}/content
 GET /sites/{id}/onenote/resources/{id}/content
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2d92f-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="2d92f-118">Request headers</span></span>
-| <span data-ttu-id="2d92f-119">名称</span><span class="sxs-lookup"><span data-stu-id="2d92f-119">Name</span></span>       | <span data-ttu-id="2d92f-120">类型</span><span class="sxs-lookup"><span data-stu-id="2d92f-120">Type</span></span> | <span data-ttu-id="2d92f-121">说明</span><span class="sxs-lookup"><span data-stu-id="2d92f-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="341bc-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="341bc-118">Request headers</span></span>
+| <span data-ttu-id="341bc-119">名称</span><span class="sxs-lookup"><span data-stu-id="341bc-119">Name</span></span>       | <span data-ttu-id="341bc-120">类型</span><span class="sxs-lookup"><span data-stu-id="341bc-120">Type</span></span> | <span data-ttu-id="341bc-121">说明</span><span class="sxs-lookup"><span data-stu-id="341bc-121">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="2d92f-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2d92f-122">Authorization</span></span>  | <span data-ttu-id="2d92f-123">string</span><span class="sxs-lookup"><span data-stu-id="2d92f-123">string</span></span>  | <span data-ttu-id="2d92f-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2d92f-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="341bc-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="341bc-122">Authorization</span></span>  | <span data-ttu-id="341bc-123">string</span><span class="sxs-lookup"><span data-stu-id="341bc-123">string</span></span>  | <span data-ttu-id="341bc-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="341bc-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2d92f-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="2d92f-126">Request body</span></span>
-<span data-ttu-id="2d92f-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="2d92f-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="341bc-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="341bc-126">Request body</span></span>
+<span data-ttu-id="341bc-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="341bc-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2d92f-128">响应</span><span class="sxs-lookup"><span data-stu-id="2d92f-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="341bc-128">响应</span><span class="sxs-lookup"><span data-stu-id="341bc-128">Response</span></span>
 
-<span data-ttu-id="2d92f-129">如果成功，此方法在响应`200 OK`正文中返回响应代码和图像或文件二进制数据。</span><span class="sxs-lookup"><span data-stu-id="2d92f-129">If successful, this method returns a `200 OK` response code and the image or file binary data in the response body.</span></span>
+<span data-ttu-id="341bc-129">如果成功，此方法 `200 OK` 在响应正文中返回响应代码和图像或文件二进制数据。</span><span class="sxs-lookup"><span data-stu-id="341bc-129">If successful, this method returns a `200 OK` response code and the image or file binary data in the response body.</span></span>
 
-<span data-ttu-id="2d92f-130">注意：图像不会直接在浏览器中呈现，因为它们需要授权才能检索它们，如页面内容的其余部分。</span><span class="sxs-lookup"><span data-stu-id="2d92f-130">Note: Images won't render directly in a browser because they require authorization to retrieve them, like the rest of the page content.</span></span>
-## <a name="example"></a><span data-ttu-id="2d92f-131">示例</span><span class="sxs-lookup"><span data-stu-id="2d92f-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="2d92f-132">请求</span><span class="sxs-lookup"><span data-stu-id="2d92f-132">Request</span></span>
-<span data-ttu-id="2d92f-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2d92f-133">Here is an example of the request.</span></span>
+<span data-ttu-id="341bc-130">注意：图像不会直接在浏览器中呈现，因为它们需要授权才能检索它们，如页面内容的其余部分。</span><span class="sxs-lookup"><span data-stu-id="341bc-130">Note: Images won't render directly in a browser because they require authorization to retrieve them, like the rest of the page content.</span></span>
+## <a name="example"></a><span data-ttu-id="341bc-131">示例</span><span class="sxs-lookup"><span data-stu-id="341bc-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="341bc-132">请求</span><span class="sxs-lookup"><span data-stu-id="341bc-132">Request</span></span>
+<span data-ttu-id="341bc-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="341bc-133">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="2d92f-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="2d92f-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="341bc-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="341bc-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_resource"
@@ -60,26 +60,26 @@ GET /sites/{id}/onenote/resources/{id}/content
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/onenote/resources/{id}/content
 ```
-# <a name="c"></a>[<span data-ttu-id="2d92f-135">C#</span><span class="sxs-lookup"><span data-stu-id="2d92f-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="341bc-135">C#</span><span class="sxs-lookup"><span data-stu-id="341bc-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-resource-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2d92f-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2d92f-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="341bc-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="341bc-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-resource-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2d92f-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2d92f-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="341bc-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="341bc-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-resource-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="2d92f-138">Java</span><span class="sxs-lookup"><span data-stu-id="2d92f-138">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="341bc-138">Java</span><span class="sxs-lookup"><span data-stu-id="341bc-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-resource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="2d92f-139">响应</span><span class="sxs-lookup"><span data-stu-id="2d92f-139">Response</span></span>
-<span data-ttu-id="2d92f-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="2d92f-140">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="341bc-139">响应</span><span class="sxs-lookup"><span data-stu-id="341bc-139">Response</span></span>
+<span data-ttu-id="341bc-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="341bc-140">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,3 +103,4 @@ Content-Type: application/octet-stream
   "suppressions": [
   ]
 }-->
+
