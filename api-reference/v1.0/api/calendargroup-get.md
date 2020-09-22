@@ -5,66 +5,66 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2c2c91944e8ea05c129a32bdbb2835fa06b753d0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 379992f5941f72504d3495b4ac617189f82726b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471801"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044128"
 ---
-# <a name="get-calendargroup"></a><span data-ttu-id="37431-103">获取 calendarGroup</span><span class="sxs-lookup"><span data-stu-id="37431-103">Get calendarGroup</span></span>
+# <a name="get-calendargroup"></a><span data-ttu-id="426d6-103">获取 calendarGroup</span><span class="sxs-lookup"><span data-stu-id="426d6-103">Get calendarGroup</span></span>
 
-<span data-ttu-id="37431-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="37431-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="426d6-104">命名空间：microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="426d6-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="37431-105">检索 calendargroup 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="37431-105">Retrieve the properties and relationships of a calendar group object.</span></span>
+<span data-ttu-id="426d6-105">检索 calendargroup 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="426d6-105">Retrieve the properties and relationships of a calendar group object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="37431-106">权限</span><span class="sxs-lookup"><span data-stu-id="37431-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="426d6-106">权限</span><span class="sxs-lookup"><span data-stu-id="426d6-106">Permissions</span></span>
 
-<span data-ttu-id="37431-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="37431-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="426d6-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="426d6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="37431-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="37431-109">Permission type</span></span>                        | <span data-ttu-id="37431-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="37431-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="426d6-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="426d6-109">Permission type</span></span>                        | <span data-ttu-id="426d6-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="426d6-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="37431-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="37431-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="37431-112">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="37431-112">Calendars.Read</span></span>                              |
-| <span data-ttu-id="37431-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="37431-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="37431-114">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="37431-114">Calendars.Read</span></span>                              |
-| <span data-ttu-id="37431-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="37431-115">Application</span></span>                            | <span data-ttu-id="37431-116">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="37431-116">Calendars.Read</span></span>                              |
+| <span data-ttu-id="426d6-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="426d6-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="426d6-112">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="426d6-112">Calendars.Read</span></span>                              |
+| <span data-ttu-id="426d6-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="426d6-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="426d6-114">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="426d6-114">Calendars.Read</span></span>                              |
+| <span data-ttu-id="426d6-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="426d6-115">Application</span></span>                            | <span data-ttu-id="426d6-116">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="426d6-116">Calendars.Read</span></span>                              |
 
-## <a name="http-request"></a><span data-ttu-id="37431-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="37431-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="426d6-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="426d6-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
-<span data-ttu-id="37431-118">用户的任意 [calendarGroup](../resources/calendargroup.md)。</span><span class="sxs-lookup"><span data-stu-id="37431-118">Any [calendarGroup](../resources/calendargroup.md) of a user.</span></span>
+<span data-ttu-id="426d6-118">用户的任意 [calendarGroup](../resources/calendargroup.md)。</span><span class="sxs-lookup"><span data-stu-id="426d6-118">Any [calendarGroup](../resources/calendargroup.md) of a user.</span></span>
 
 ```http
 GET /me/calendarGroups/{id}
 GET /users/{id | userPrincipalName}/calendarGroups/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="37431-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="37431-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="426d6-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="426d6-119">Optional query parameters</span></span>
 
-<span data-ttu-id="37431-120">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="37431-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="426d6-120">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="426d6-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="37431-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="37431-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="426d6-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="426d6-121">Request headers</span></span>
 
-| <span data-ttu-id="37431-122">名称</span><span class="sxs-lookup"><span data-stu-id="37431-122">Name</span></span>          | <span data-ttu-id="37431-123">类型</span><span class="sxs-lookup"><span data-stu-id="37431-123">Type</span></span>   | <span data-ttu-id="37431-124">说明</span><span class="sxs-lookup"><span data-stu-id="37431-124">Description</span></span>               |
+| <span data-ttu-id="426d6-122">名称</span><span class="sxs-lookup"><span data-stu-id="426d6-122">Name</span></span>          | <span data-ttu-id="426d6-123">类型</span><span class="sxs-lookup"><span data-stu-id="426d6-123">Type</span></span>   | <span data-ttu-id="426d6-124">说明</span><span class="sxs-lookup"><span data-stu-id="426d6-124">Description</span></span>               |
 | :------------ | :----- | :------------------------ |
-| <span data-ttu-id="37431-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="37431-125">Authorization</span></span> | <span data-ttu-id="37431-126">string</span><span class="sxs-lookup"><span data-stu-id="37431-126">string</span></span> | <span data-ttu-id="37431-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="37431-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="426d6-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="426d6-125">Authorization</span></span> | <span data-ttu-id="426d6-126">string</span><span class="sxs-lookup"><span data-stu-id="426d6-126">string</span></span> | <span data-ttu-id="426d6-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="426d6-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="37431-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="37431-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="426d6-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="426d6-129">Request body</span></span>
 
-<span data-ttu-id="37431-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="37431-130">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="426d6-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="426d6-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="37431-131">响应</span><span class="sxs-lookup"><span data-stu-id="37431-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="426d6-131">响应</span><span class="sxs-lookup"><span data-stu-id="426d6-131">Response</span></span>
 
-<span data-ttu-id="37431-132">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [calendarGroup](../resources/calendargroup.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="37431-132">If successful, this method returns a `200 OK` response code and [calendarGroup](../resources/calendargroup.md) object in the response body.</span></span>
+<span data-ttu-id="426d6-132">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [calendarGroup](../resources/calendargroup.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="426d6-132">If successful, this method returns a `200 OK` response code and [calendarGroup](../resources/calendargroup.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="37431-133">示例</span><span class="sxs-lookup"><span data-stu-id="37431-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="426d6-133">示例</span><span class="sxs-lookup"><span data-stu-id="426d6-133">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="37431-134">请求</span><span class="sxs-lookup"><span data-stu-id="37431-134">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="426d6-134">请求</span><span class="sxs-lookup"><span data-stu-id="426d6-134">Request</span></span>
 
-<span data-ttu-id="37431-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="37431-135">Here is an example of the request.</span></span>
+<span data-ttu-id="426d6-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="426d6-135">Here is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="37431-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="37431-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="426d6-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="426d6-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_calendargroup"
@@ -73,28 +73,28 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendarGroups/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="37431-137">C#</span><span class="sxs-lookup"><span data-stu-id="37431-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="426d6-137">C#</span><span class="sxs-lookup"><span data-stu-id="426d6-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendargroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="37431-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="37431-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="426d6-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="426d6-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-calendargroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="37431-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="37431-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="426d6-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="426d6-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-calendargroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="37431-140">Java</span><span class="sxs-lookup"><span data-stu-id="37431-140">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="426d6-140">Java</span><span class="sxs-lookup"><span data-stu-id="426d6-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-calendargroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="37431-141">响应</span><span class="sxs-lookup"><span data-stu-id="37431-141">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="426d6-141">响应</span><span class="sxs-lookup"><span data-stu-id="426d6-141">Response</span></span>
 
-<span data-ttu-id="37431-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="37431-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="426d6-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="426d6-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -127,3 +127,4 @@ Content-length: 110
   "suppressions": [
   ]
 }-->
+
