@@ -5,16 +5,16 @@ localization_priority: Normal
 author: ananmishr
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8ac6c42f28ed1f2adccd54fcd3bd6667f4113b7a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb971295919f779c3faddb34ceeb96d531011b1f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522247"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052570"
 ---
 # <a name="onlinemeetinginfo-resource-type"></a>onlineMeetingInfo 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 关于与会者如何加入联机会议的详细信息。
 
@@ -58,3 +58,5 @@ ms.locfileid: "42522247"
   "section": "documentation",
   "tocPath": ""
 }-->s
+
+

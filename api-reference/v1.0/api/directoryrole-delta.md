@@ -5,18 +5,18 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bfd98c1415381e4daf1e8a551dc9050df122ff49
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: a51381796ba3b88391ee159a37777605a4d06d4f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181418"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052423"
 ---
 # <a name="directoryrole-delta"></a>directoryRole： delta
 
 命名空间：microsoft.graph
 
-获取新创建、更新或删除的目录角色，而无需对整个资源集合执行完全读取。 有关详细信息，请参阅[Using Delta Query](/graph/delta-query-overview) 。
+获取新创建、更新或删除的目录角色，而无需对整个资源集合执行完全读取。 有关详细信息，请参阅 [Using Delta Query](/graph/delta-query-overview) 。
 
 ## <a name="permissions"></a>权限
 
@@ -27,7 +27,7 @@ ms.locfileid: "43181418"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | RoleManagement、RoleManagement、Directory.accessasuser.all、all、、all、all 和的所有子目录。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有 |
+|应用程序 | RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,12 +40,12 @@ GET /directoryRoles/delta
 
 ## <a name="query-parameters"></a>查询参数
 
-跟踪更改会产生一个或多个**delta**函数调用的往返。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。 只需预先指定所需的任何查询参数一次。 在后续请求中，可以复制并应用之前响应中返回的 `nextLink` 或 `deltaLink` URL，因为此 URL 已包含所需的编码参数。
+跟踪更改会产生一个或多个 **delta** 函数调用的往返。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。 只需预先指定所需的任何查询参数一次。 在后续请求中，可以复制并应用之前响应中返回的 `nextLink` 或 `deltaLink` URL，因为此 URL 已包含所需的编码参数。
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
-| $deltatoken | string | 为同一资源集合在上`deltaLink`一个**delta**函数调用的 URL 中返回的[状态令牌](/graph/delta-query-overview)，指示该往返一轮的更改。 将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
-| $skiptoken | string | 在上一个**delta**函数调用`nextLink`的 URL 中返回的[状态令牌](/graph/delta-query-overview)，指示同一个资源集合中有进一步的更改需要跟踪。 |
+| $deltatoken | string | [state token](/graph/delta-query-overview) `deltaLink` 为同一资源集合在上一个**delta**函数调用的 URL 中返回的状态令牌，指示该往返一轮的更改。 将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
+| $skiptoken | string | 在上一个 delta 函数调用的 URL 中返回的[状态令牌](/graph/delta-query-overview) `nextLink` ，指示同一个资源集合中有进一步的更改需要跟踪。 **delta** |
 
 ### <a name="odata-query-parameters"></a>OData 查询参数
 
@@ -55,7 +55,7 @@ GET /directoryRoles/delta
 
 - 提供对 `$filter` 的有限支持：
 
-  - 唯一受支持`$filter`的表达式是跟踪对特定资源所做的更改，其`$filter=id+eq+{value}` id `$filter=id+eq+{value1}+or+id+eq+{value2}`：或。 您可以指定的 id 数受最大 URL 长度的限制。
+  - 唯一受支持的 `$filter` 表达式是跟踪对特定资源所做的更改，其 id：  `$filter=id+eq+{value}` 或 `$filter=id+eq+{value1}+or+id+eq+{value2}` 。 您可以指定的 id 数受最大 URL 长度的限制。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -70,11 +70,11 @@ GET /directoryRoles/delta
 
 ### <a name="response"></a>响应
 
-如果成功，此方法在`200 OK`响应正文中返回响应代码和[directoryRole](../resources/directoryrole.md)集合对象。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [directoryRole](../resources/directoryrole.md) 集合对象。 该响应还包括 `nextLink`URL 或 `deltaLink`URL。
 
-- 如果返回`nextLink` URL，则会在会话中检索其他数据页。 应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。
+- 如果 `nextLink` 返回 URL，则会在会话中检索其他数据页。 应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。
 
-- 如果返回`deltaLink` URL，则没有有关要返回的资源的现有状态的更多数据。 保存`deltaLink` URL 并在下一次**增量**调用中应用它，以了解将来对资源所做的更改。
+- 如果 `deltaLink` 返回 URL，则没有有关要返回的资源的现有状态的更多数据。 保存 `deltaLink` URL 并在下一次 **增量** 调用中应用它，以了解将来对资源所做的更改。
 
 ### <a name="example"></a>示例
 
@@ -138,7 +138,7 @@ Content-type: application/json
 
 ### <a name="see-also"></a>另请参阅
 
-- [使用 delta 查询跟踪 Microsoft Graph 数据中的更改](/graph/delta-query-overview)，了解更多详细信息
+- [使用 delta 查询跟踪 Microsoft Graph 数据中的更改](/graph/delta-query-overview) ，了解更多详细信息
 - [获取用户的增量更改](/graph/delta-query-users)获取示例请求。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -152,3 +152,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: aef2b3962601a20df30f27c19ccd1abf23b0c561
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 924040176c2b979e6e25f70d5529c44f69b82959
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217902"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052528"
 ---
 # <a name="privilegedroleassignment-resource-type"></a>privilegedRoleAssignment 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "43217902"
 表示特定用户的特权角色分配。 
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
@@ -38,7 +38,7 @@ ms.locfileid: "43217902"
 |:---------------|:--------|:----------|
 |expirationDateTime|dateTimeOffset|临时权限角色分配将在何时过期时的 UTC 日期时间。 对于永久角色分配，值为 null。|
 |id|string| 特权角色分配的唯一标识符。 只读。 它的格式为 "userId_roleId"，其中 userId 是 Azure AD 用户 id 的 GUID 字符串，roleId 是 Azure 管理员角色 id 的 GUID 字符串。|
-|isElevated|boolean|如果角色分配已激活，**则为 true** 。 **假**如果角色分配被停用。|
+|isElevated|boolean|如果角色分配已激活，**则为 true** 。 **假** 如果角色分配被停用。|
 |resultMessage|string|由服务设置的结果消息。|
 |roleId|string|角色标识符。 以 GUID 字符串格式。|
 |userId|string|用户标识符。 以 GUID 字符串格式。|
@@ -86,3 +86,5 @@ ms.locfileid: "43217902"
   "suppressions": []
 }
 -->
+
+

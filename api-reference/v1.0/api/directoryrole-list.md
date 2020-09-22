@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7f4a8f8838d77c9a947c304ee18898832c1d5428
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 73d6aabbcb46cfe613d432b7f9a9ee84e04e4eeb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181397"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052395"
 ---
 # <a name="list-directoryroles"></a>列出 directoryRoles
 
@@ -18,9 +18,9 @@ ms.locfileid: "43181397"
 
 列出租户中激活的目录角色。
 
-此操作仅返回已激活的角色。 当管理员使用[激活 directoryRole](directoryrole-post-directoryroles.md) API 激活角色时，角色即被激活。 最初并不激活所有内置角色。 
+此操作仅返回已激活的角色。 当管理员使用 [激活 directoryRole](directoryrole-post-directoryroles.md) API 激活角色时，角色即被激活。 最初并不激活所有内置角色。 
 
-使用 Azure 门户分配角色时，将代表管理员隐式完成角色激活步骤。 若要获取 Azure AD 中可用角色的完整列表，请使用[List directoryroletemplate](directoryroletemplate-list.md)。
+使用 Azure 门户分配角色时，将代表管理员隐式完成角色激活步骤。 若要获取 Azure AD 中可用角色的完整列表，请使用 [List directoryroletemplate](directoryroletemplate-list.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "43181397"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | RoleManagement、RoleManagement、Directory.accessasuser.all、all、、all、all 和的所有子目录。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有 |
+|应用程序 | RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ GET /directoryRoles
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[directoryRole](../resources/directoryrole.md)对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [directoryRole](../resources/directoryrole.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
@@ -115,3 +115,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

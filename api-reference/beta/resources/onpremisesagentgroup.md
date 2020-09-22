@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 861c17b55a50f35579eb820fbe76352077ded149
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 84f0236c2c2e52742a84f19eae8eb7693f1b559b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556252"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052597"
 ---
 # <a name="onpremisesagentgroup-resource-type"></a>onPremisesAgentGroup 资源类型
 
@@ -18,17 +18,17 @@ ms.locfileid: "44556252"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示本地代理组。 通过代理组，租户管理员可以分配特定的[代理](onpremisesagent.md)来服务特定[的已发布内部部署资源](publishedresource.md)。
+表示本地代理组。 通过代理组，租户管理员可以分配特定的 [代理](onpremisesagent.md) 来服务特定 [的已发布内部部署资源](publishedresource.md)。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出 onPremisesAgentGroups](../api/onpremisesagentgroup-list.md) | onPremisesAgentGroups 集合 | 获取**onPremisesAgentGroup**对象集合。 |
-| [获取 onPremisesAgentGroup](../api/onpremisesagentgroup-get.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | 读取**onPremisesAgentGroup**对象的属性和关系。 |
-| [创建 onPremisesAgentGroup](../api/onpremisesagentgroup-post.md)  | [onPremisesAgentGroup](onpremisesagentgroup.md) | 创建新的**onPremisesAgentGroup**。 |
-| [更新 onPremisesAgentGroup](../api/onpremisesagentgroup-update.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | 更新**onPremisesAgentGroup**对象。 |
-| [删除 onPremisesAgentGroup](../api/onpremisesagentgroup-delete.md) | 无 | 删除**onPremisesAgentGroup**对象。 |
+| [列出 onPremisesAgentGroups](../api/onpremisesagentgroup-list.md) | onPremisesAgentGroups 集合 | 获取 **onPremisesAgentGroup** 对象集合。 |
+| [获取 onPremisesAgentGroup](../api/onpremisesagentgroup-get.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | 读取 **onPremisesAgentGroup** 对象的属性和关系。 |
+| [创建 onPremisesAgentGroup](../api/onpremisesagentgroup-post.md)  | [onPremisesAgentGroup](onpremisesagentgroup.md) | 创建新的 **onPremisesAgentGroup**。 |
+| [更新 onPremisesAgentGroup](../api/onpremisesagentgroup-update.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | 更新 **onPremisesAgentGroup** 对象。 |
+| [删除 onPremisesAgentGroup](../api/onpremisesagentgroup-delete.md) | 无 | 删除 **onPremisesAgentGroup** 对象。 |
 
 ## <a name="properties"></a>属性
 
@@ -36,15 +36,15 @@ ms.locfileid: "44556252"
 |:-------------|:------------|:------------|
 |displayName|String|**OnPremisesAgentGroup**的显示名称。|
 |id|String| **OnPremisesAgentGroup**的对象 ID。 只读。|
-|isDefault|Boolean|指示**onPremisesAgentGroup**是否为默认代理组。 只有一个代理组可以是默认的**onPremisesAgentGroup** ，并由系统进行设置。|
+|isDefault|Boolean|指示 **onPremisesAgentGroup** 是否为默认代理组。 只有一个代理组可以是默认的 **onPremisesAgentGroup** ，并由系统进行设置。|
 |publishingType|string| 可取值为：`applicationProxy`、`exchangeOnline`、`authentication`、`provisioning`、`adAdministration`。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|agent|[onPremisesAgent](onpremisesagent.md)集合| 分配给**onPremisesAgentGroup**的**onPremisesAgent**的列表。 只读。 可为 NULL。|
-|publishedResources|[publishedResource](publishedresource.md)集合| 分配给**onPremisesAgentGroup**的**publishedResource**的列表。 只读。 可为 Null。|
+|agent|[onPremisesAgent](onpremisesagent.md) 集合| 分配给**onPremisesAgentGroup**的**onPremisesAgent**的列表。 只读。 可为 NULL。|
+|publishedResources|[publishedResource](publishedresource.md) 集合| 分配给**onPremisesAgentGroup**的**publishedResource**的列表。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -78,3 +78,5 @@ ms.locfileid: "44556252"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

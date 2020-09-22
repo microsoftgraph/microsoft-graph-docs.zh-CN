@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 66a7ebebe219e52a0d1581b65a1aa937c49ba533
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: a4823e7e659eb667d46937aae1891fe5c8011854
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181914"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052444"
 ---
 # <a name="get-member-objects"></a>获取成员对象
 
@@ -26,7 +26,7 @@ ms.locfileid: "43181914"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.Read.All 和 Group.Read.All、Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | User.Read.All 和 Group.Read.All、Directory.Read.All |
+|应用程序 | User.Read.All 和 Group.Read.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -124,3 +124,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

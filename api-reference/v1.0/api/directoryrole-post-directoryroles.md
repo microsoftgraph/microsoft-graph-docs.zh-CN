@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2a24db94a3b2344679e63a832000122ee83393a9
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: f48fb24b5f7c4889faf3ebba0b5147a8de14b877
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181390"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052388"
 ---
 # <a name="activate-directoryrole"></a>Activate directoryRole
 
@@ -25,7 +25,7 @@ ms.locfileid: "43181390"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | RoleManagement、Directory.accessasuser.all 和所有子目录。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | RoleManagement.ReadWrite.Directory |
+|应用程序 | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -118,3 +118,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

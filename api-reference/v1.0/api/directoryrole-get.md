@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f315bbc4bf451d1c6b3fe586c6eaa9b815f96415
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 33ffd4096ed20760e6311acd129907833f791a52
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181411"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052409"
 ---
 # <a name="get-directoryrole"></a>获取 directoryRole
 
@@ -25,7 +25,7 @@ ms.locfileid: "43181411"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | RoleManagement、RoleManagement、Directory.accessasuser.all、all、、all、all 和的所有子目录。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有 |
+|应用程序 | RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -106,3 +106,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

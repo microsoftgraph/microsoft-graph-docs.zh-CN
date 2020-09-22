@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: a7400a3170b104646607c16852a796d01b64200e
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
-ms.translationtype: Auto
+ms.openlocfilehash: 14c66cf59dc1715a16bd786657202a554d7c1753
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45007185"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052549"
 ---
 # <a name="printoperationstatus-complex-type"></a>printOperationStatus 复杂类型
 
@@ -33,7 +33,7 @@ ms.locfileid: "45007185"
 |notStarted|0|该操作尚未启动。|
 |运行|1 |操作正在运行。|
 |完成|2 |操作已成功完成。|
-|未能|3 |操作失败。|
+|未能|第三章|操作失败。|
 |向 unknownfuturevalue|4 |Evolvable 枚举 sentinel 值。 请勿使用。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -64,3 +64,4 @@ ms.locfileid: "45007185"
   "section": "documentation",
   "tocPath": ""
 }-->
+

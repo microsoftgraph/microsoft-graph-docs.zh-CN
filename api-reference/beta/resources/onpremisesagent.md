@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d6f07ea537f334796f29656ce05ea20351752402
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: ec125e52eaf9eba3423f70dd47cc7dd1562716bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556259"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052592"
 ---
 # <a name="onpremisesagent-resource-type"></a>onPremisesAgent 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "44556259"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示内部部署代理。 可将租户管理员安装的本地代理配置为访问/处理特定的[已发布资源](publishedresource.md)的请求。
+表示内部部署代理。 可将租户管理员安装的本地代理配置为访问/处理特定的 [已发布资源](publishedresource.md)的请求。
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出 onPremisesAgents](../api/onpremisesagent-list.md) | [onPremisesAgent](onpremisesagent.md)集合 | 获取**onPremisesAgents**对象集合。 |
-| [获取 onPremisesAgent](../api/onpremisesagent-get.md) | [onPremisesAgent](onpremisesagent.md) | 读取**onPremisesAgent**对象的属性和关系。 |
-| [将 onPremisesAgent 分配给 onPremisesAgentGroup](../api/onpremisesagent-post-agentgroups.md) | 无 | 将**onPremisesAgent**分配给**onPremisesAgentGroup**。|
+| [列出 onPremisesAgents](../api/onpremisesagent-list.md) | [onPremisesAgent](onpremisesagent.md) 集合 | 获取 **onPremisesAgents** 对象集合。 |
+| [获取 onPremisesAgent](../api/onpremisesagent-get.md) | [onPremisesAgent](onpremisesagent.md) | 读取 **onPremisesAgent** 对象的属性和关系。 |
+| [将 onPremisesAgent 分配给 onPremisesAgentGroup](../api/onpremisesagent-post-agentgroups.md) | 无 | 将 **onPremisesAgent** 分配给 **onPremisesAgentGroup**。|
 | [从 onPremisesAgentGroup 中删除 onpremisesAgent](../api/onpremisesagent-delete-agentgroups.md) | 无 | 从**onPremisesAgentGroup**中删除**onPremisesAgent** 。 |
 
 ## <a name="properties"></a>属性
@@ -43,7 +43,7 @@ ms.locfileid: "44556259"
 
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|agentGroups|[onPremisesAgentGroup](onpremisesagentgroup.md)集合| 向其分配**onPremisesAgent**的**onPremisesAgentGroups**的列表。 此为只读属性。 可为 Null。|
+|agentGroups|[onPremisesAgentGroup](onpremisesagentgroup.md) 集合| 向其分配**onPremisesAgent**的**onPremisesAgentGroups**的列表。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -78,3 +78,5 @@ ms.locfileid: "44556259"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

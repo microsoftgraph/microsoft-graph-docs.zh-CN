@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 96d9bdc1c9da3146ef428f25017bb76e486368e4
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 0355a5dae824fae9ffe04e62e43634cde2d009d7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181404"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052402"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -25,7 +25,7 @@ ms.locfileid: "43181404"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | RoleManagement、RoleManagement、Directory.accessasuser.all、all、、all、all 和的所有子目录。    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有 |
+|应用程序 | RoleManagement、RoleManagement、目录和所有读写的所有子目录。所有 |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -117,3 +117,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
