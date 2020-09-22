@@ -3,14 +3,14 @@ title: 获取 iosStoreApp
 description: 读取 iosStoreApp 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 791726fef69ee07692e376f294929ee69153d8d9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ef9cce14cafcb55572a91421a1f150173e1df253
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456169"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973188"
 ---
 # <a name="get-iosstoreapp"></a>获取 iosStoreApp
 
@@ -108,6 +108,9 @@ Content-Length: 1287
   }
 }
 ```
+
+
+
 
 
 

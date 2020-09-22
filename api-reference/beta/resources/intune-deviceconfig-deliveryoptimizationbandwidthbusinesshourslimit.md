@@ -3,20 +3,20 @@ title: deliveryOptimizationBandwidthBusinessHoursLimit 资源类型
 description: 带宽业务时间和百分比类型
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4044b62a42c37abf030ff0a5d206093d4a2b8c80
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ac18bb904f8992e60b6949e86439db162a3f9a36
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420586"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973811"
 ---
 # <a name="deliveryoptimizationbandwidthbusinesshourslimit-resource-type"></a>deliveryOptimizationBandwidthBusinessHoursLimit 资源类型
 
 命名空间：microsoft.graph
 
-> **重要说明：**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
+> **重要说明：** /Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,10 +25,10 @@ ms.locfileid: "43420586"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|bandwidthBeginBusinessHours|Int32|指定使用24小时制的营业时间的开始时间（0-23）。 有效值为0到23|
-|bandwidthEndBusinessHours|Int32|指定使用24小时制的营业时间结束（0-23）。 有效值为0到23|
-|bandwidthPercentageDuringBusinessHours|Int32|指定在营业时间内要限制的带宽百分比（0-100）。 有效值为 0 至 100|
-|bandwidthPercentageOutsideBusinessHours|Int32|指定要限制 outsidse 营业时间（0-100）的带宽百分比。 有效值为 0 至 100|
+|bandwidthBeginBusinessHours|Int32|使用24小时制 (0-23) 指定营业时间的开始时间。 有效值为0到23|
+|bandwidthEndBusinessHours|Int32|使用24小时制 (0-23) 指定营业时间的结束时间。 有效值为0到23|
+|bandwidthPercentageDuringBusinessHours|Int32|指定在营业时间 (0-100) 时要限制的带宽百分比。 有效值为 0 至 100|
+|bandwidthPercentageOutsideBusinessHours|Int32|指定要限制 outsidse 营业时间 (0-100) 的带宽百分比。 有效值为 0 至 100|
 
 ## <a name="relationships"></a>关系
 无
@@ -49,6 +49,9 @@ ms.locfileid: "43420586"
   "bandwidthPercentageOutsideBusinessHours": 1024
 }
 ```
+
+
+
 
 
 

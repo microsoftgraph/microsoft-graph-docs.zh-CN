@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 0bded2c1ad4804fb952ecfd9c75c87f3a8624c7e
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 738555750c22f3ffdd5fbd43c8b1849888e0a40f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539158"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973615"
 ---
 # <a name="localizeddescription-resource-type"></a>localizedDescription 资源类型
 
@@ -63,3 +63,5 @@ ms.locfileid: "46539158"
   "suppressions": []
 }
 -->
+
+

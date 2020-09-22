@@ -5,16 +5,16 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 011b027cfcf357dfe80b47067618219cb0067044
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a2bdd013cb755d37664c89aca81a8ae89c63b4f9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520890"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973737"
 ---
 # <a name="searchresponse-resource-type"></a>searchResponse 资源类型
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,8 +26,8 @@ SearchResponse 包含搜索查询中的结果。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|hitsContainers|[searchHitsContainer](searchhitscontainer.md)集合|搜索结果的集合。|
-|searchTerms|String 集合|包含在初始搜索查询中发送的搜索词。|
+|hitsContainers|[searchHitsContainer](searchhitscontainer.md) 集合|搜索结果的集合。|
+|searchTerms|String collection|包含在初始搜索查询中发送的搜索词。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -58,3 +58,4 @@ SearchResponse 包含搜索查询中的结果。
   "section": "documentation",
   "tocPath": ""
 }-->
+

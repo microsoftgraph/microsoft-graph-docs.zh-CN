@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 457009dc48fba07b7d66662aa1504395f5d906ef
-ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
+ms.openlocfilehash: fac759f190f193fb2fe37e769feedc1164fc3f95
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44568801"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973734"
 ---
 # <a name="searchrequest-resource-type"></a>searchRequest 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "44568801"
 
 ## <a name="properties"></a>属性
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |stored_fields|String collection |包含要为搜索 _so urces 对象返回的字段。 注释仅当 `externalItem` 在响应中指定了 entityType = 时，这才适用。|
 |contentSources|String collection|包含要设定的连接。 <br>遵循以下格式：在 `/external/connections/connectionid` `connectionid` 连接器管理中定义 ConnectionId 的位置。 <br> 注释 contentSource 仅当 entityType = 时适用 `externalItem` 。 |
@@ -32,7 +32,7 @@ ms.locfileid: "44568801"
 |entityTypes|`entityType` 集合| 可取值为：`event`、`message`、`driveItem`、`externalItem`。|
 |发件人|Int32|指定搜索结果的偏移量。 偏移量0返回的第一个结果。|
 |查询|[searchQuery](searchquery.md)|包含查询词。|
-|大小|Int32|要检索的页面的大小。|
+|size|Int32|要检索的页面的大小。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -68,3 +68,5 @@ ms.locfileid: "44568801"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: cc9b4547e3b2e62a59f8827a88ba1e58a693aa10
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 20c4a97c183fc3109721c600a41e16f7b704fbb2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108296"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972699"
 ---
 # <a name="assign-manager"></a>分配管理器
 
@@ -41,7 +41,7 @@ PUT /users/{id}/manager/$ref
 | Content-type   | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供要添加的[directoryObject](../resources/directoryobject.md)、[用户](../resources/user.md)或[组织联系人](../resources/orgcontact.md)对象的 JSON 表示形式。
+在请求正文中，提供要添加的 [directoryObject](../resources/directoryobject.md)、 [用户](../resources/user.md)或 [组织联系人](../resources/orgcontact.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
@@ -106,3 +106,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

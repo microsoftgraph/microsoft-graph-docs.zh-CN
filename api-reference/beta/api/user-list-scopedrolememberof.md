@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 31b06e1f49833241f6a6f50e610b9286e0418edf
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: c254a9213204e63fe028de299230376de8c31461
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46820272"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974084"
 ---
 # <a name="list-scopedadministratorof"></a>列出 scopedAdministratorOf
 
@@ -49,7 +49,7 @@ GET /users/{id}/scopedRoleMemberOf
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将在响应 `200 OK` 正文中返回响应代码和 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [scopedRoleMembership](../resources/scopedrolemembership.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -118,3 +118,5 @@ Content-length: 307
   ]
 }
 -->
+
+

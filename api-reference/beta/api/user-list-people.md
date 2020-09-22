@@ -5,16 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 81ae85775e05128b198eea648f447468f2fdc9b6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6d6c89de41378faee3180ce673615c3a48e0035e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451783"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974088"
 ---
 # <a name="list-people"></a>列出人员
 
-命名空间： microsoft. graph
+命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ GET /users/{id | userPrincipalName}/people
 
 此方法支持以下 OData 查询参数来帮助自定义响应。
 
-|Name|值|说明|
+|名称|值|说明|
 |:---------------|:--------|:-------|
 |$filter|string|将响应限制为仅记录中包含指定条件的那些人员。|
 |$orderby|string|默认情况下，按与查询的相关程度对响应中的人员进行排序。 可以使用 *$orderby* 参数更改响应中的人员排序。|
@@ -65,13 +65,13 @@ GET /users/{id | userPrincipalName}/people
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[person](../resources/person.md)对象集合。
+如果成功，此方法在 `200 OK` 响应正文中返回响应代码和 [person](../resources/person.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
 ### <a name="browse"></a>定位
 
-本节中的请求将根据通信、协作和业务关系获取与登录用户最`/me`相关的人员（）。
+本节中的请求将根据 `/me` 通信、协作和业务关系，获取与登录用户 () 最相关的人员。
 
 默认情况下，每个响应都会返回10条记录，但您可以 改变这点 使用 *$顶部* 参数。 这些请求需要人员读取权限。
 
@@ -216,7 +216,7 @@ GET https://graph.microsoft.com/beta/me/people/?$orderby=DisplayName
 
 可以通过设置 *$top* 参数更改响应中返回的人员数。
 
-下面的示例请求与最相关的1000人`/me`。 请求还通过仅请求用户的显示名称来限制从服务器发送回的数据量。
+下面的示例请求与最相关的1000人 `/me` 。 请求还通过仅请求用户的显示名称来限制从服务器发送回的数据量。
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$top=1000&$select=DisplayName
@@ -224,9 +224,9 @@ GET https://graph.microsoft.com/beta/me/people/?$top=1000&$select=DisplayName
 
 #### <a name="selecting-the-fields-to-return"></a>选择要返回的字段
 
-您可以通过使用 *$select*参数选择一个或多个字段来限制从服务器返回的数据量。 该 *@ odata.id* 字段总会返回。
+您可以通过使用 *$select* 参数选择一个或多个字段来限制从服务器返回的数据量。 该 *@ odata.id* 字段总会返回。
 
-下面的示例将响应限制为10个最相关人员的*DisplayName*和*EmailAddress* 。
+下面的示例将响应限制为10个最相关人员的 *DisplayName* 和 *EmailAddress* 。
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$select=DisplayName,EmailAddresses
@@ -246,7 +246,7 @@ GET https://graph.microsoft.com/beta/me/people/?$filter=Sources/Any (source: sou
 
 可以结合 *$select* 和 *$filter* 参数创建自定义用户相关人员列表，并且只获取应用程序需要的字段。
 
-下面的示例获取其显示名称等于指定名称的用户的*DisplayName*和*EmailAddress* 。 在本示例中，只返回显示名称等于“Nestor Kellum”的人。
+下面的示例获取其显示名称等于指定名称的用户的 *DisplayName* 和 *EmailAddress* 。 在本示例中，只返回显示名称等于“Nestor Kellum”的人。
 
 ```http
 +GET https://graph.microsoft.com/beta/me/people/?$select=DisplayName,EmailAddresses&$filter=DisplayName eq 'Nestor Kellum'
@@ -254,13 +254,13 @@ GET https://graph.microsoft.com/beta/me/people/?$filter=Sources/Any (source: sou
 
 ### <a name="search-people"></a>搜索人员
 
-此部分中的请求还可以获取与登录用户最相关的人员（`/me`）。 搜索请求需要人员读取权限。
+此部分中的请求还可以获取与登录用户 () 最相关的人员 `/me` 。 搜索请求需要人员读取权限。
 
 #### <a name="using-search-to-select-people"></a>使用 "搜索" 选择人员
 
 使用 *$search* 参数选择符合某组特定条件的人员。
 
-下面的搜索查询返回与`/me`其 GivenName 或姓以字母 "j" 开头的人员相关的人员。
+下面的搜索查询返回与 `/me` 其 GivenName 或姓以字母 "j" 开头的人员相关的人员。
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search=j
@@ -268,7 +268,7 @@ GET https://graph.microsoft.com/beta/me/people/?$search=j
 
 #### <a name="using-search-to-specify-a-relevant-topic"></a>使用搜索来指定相关主题
 
-以下请求返回相关人员， `/me`其名称包含 "ma"，以及与 "功能计划" 有关联的人员。
+以下请求返回相关人员， `/me` 其名称包含 "ma"，以及与 "功能计划" 有关联的人员。
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search="ma topic: feature planning"
@@ -303,3 +303,5 @@ GET https://graph.microsoft.com/beta/users('nestork@contoso.com')/people/
   ]
 }
 -->
+
+

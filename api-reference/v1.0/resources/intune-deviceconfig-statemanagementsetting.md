@@ -3,14 +3,14 @@ title: stateManagementSetting 枚举类型
 description: 状态管理设置。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cfd1d9cf9db1cc2c61e22db146e010ce822f0279
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 71b937ab95ece5aaff8101d279ddf691dff75777
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472555"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972670"
 ---
 # <a name="statemanagementsetting-enum-type"></a>stateManagementSetting 枚举类型
 
@@ -24,8 +24,10 @@ ms.locfileid: "43472555"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
-|堵塞|1|堵塞.|
-|支持|双面|支持.|
+|堵塞|1 |堵塞.|
+|支持|2 |支持.|
+
+
 
 
 

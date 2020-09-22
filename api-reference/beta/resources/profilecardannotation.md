@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 973732dc92527dcf3795b8796e1c817ba880836c
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
-ms.translationtype: Auto
+ms.openlocfilehash: 57b6378c811727676f7b34c1812955639598054b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45051004"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973727"
 ---
 # <a name="profilecardannotation-resource-type"></a>profileCardAnnotation 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "45051004"
 
 | 属性     | 类型                                                            | 说明                                                                                                                       |
 |:-------------|:----------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------|
-|displayName   |String                                                           | 如果存在，则配置文件卡片将使用此字段的值作为体验中的默认属性标签（例如，"成本中心"）。 |
-|localizations |[displayNameLocalization](displaynamelocalization.md)集合 | 此集合中的每个资源都代表给定语言的属性名称的本地化值，用作该区域设置的默认标签。 例如，拥有客户端的用户将 `no-NB` "Kostnads Senter" 作为属性标签，而不是 "成本中心"。|
+|displayName   |String                                                           | 如果存在，则配置文件卡片将使用此字段的值作为体验 (中的默认属性标签。例如，"成本中心" ) 。 |
+|localizations |[displayNameLocalization](displaynamelocalization.md) 集合 | 此集合中的每个资源都代表给定语言的属性名称的本地化值，用作该区域设置的默认标签。 例如，拥有客户端的用户将 `no-NB` "Kostnads Senter" 作为属性标签，而不是 "成本中心"。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -59,3 +59,5 @@ ms.locfileid: "45051004"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

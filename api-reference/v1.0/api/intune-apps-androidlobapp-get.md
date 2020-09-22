@@ -3,14 +3,14 @@ title: 获取 androidLobApp
 description: 读取 androidLobApp 对象的属性和关系。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a27166b296e1ca6c79fa393b57c09b2d8ce4c058
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5883a0ba4ef061e9bdae909c9ee254c2d0152d8b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442707"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973181"
 ---
 # <a name="get-androidlobapp"></a>获取 androidLobApp
 
@@ -109,6 +109,9 @@ Content-Length: 1338
   }
 }
 ```
+
+
+
 
 
 

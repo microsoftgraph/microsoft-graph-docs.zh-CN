@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: c4e12069ff50362a667a94aec28b715096616917
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 2e8f4dc8b82c496909f5b150829d9fb4e114ba59
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539160"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973587"
 ---
 # <a name="relation-resource-type"></a>关系资源类型
 
@@ -24,13 +24,13 @@ ms.locfileid: "46539160"
 
 重复使用关系类似于固定的关系，不同之处在于，可重复使用的术语的更改可从任何可重用术语的层次结构进行。 此外，对重复使用的术语的层次结构更改不会反映在重复使用该术语的其他术语集中。
 
-继承自[entity](../resources/entity.md)。
+继承自 [entity](../resources/entity.md)。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列表关系](../api/termstore-term-list-relations.md)|[termstore](../resources/termstore-relation.md)集合的关系|检索**关系**对象的列表。|
-|[创建关系](../api/termstore-relation-post.md)|[microsoft termstore](../resources/termstore-relation.md)|创建新的**relation**对象。|
+|[列表关系](../api/termstore-term-list-relations.md)|[termstore](../resources/termstore-relation.md) 集合的关系|检索 **关系** 对象的列表。|
+|[创建关系](../api/termstore-relation-post.md)|[microsoft termstore](../resources/termstore-relation.md)|创建新的 **relation** 对象。|
 
 
 ## <a name="properties"></a>属性
@@ -42,9 +42,9 @@ ms.locfileid: "46539160"
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|fromTerm|[microsoft termStore](../resources/termstore-term.md)|关系的 from[术语]。 定义关系的术语。 空值指示关系是直接与[集]。 |
-|set|[termStore 设置](../resources/termstore-set.md)|与关系相关的[集合]。|
-|toTerm|[microsoft termStore](../resources/termstore-term.md)|关系的 to[术语]。 为其定义接的术语。|
+|fromTerm|[microsoft termStore](../resources/termstore-term.md)|关系的 from [术语] 。 定义关系的术语。 空值指示关系是直接与 [集]。 |
+|set|[termStore 设置](../resources/termstore-set.md)|与关系相关的 [集合] 。|
+|toTerm|[microsoft termStore](../resources/termstore-term.md)|关系的 to [术语] 。 为其定义接的术语。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -68,7 +68,7 @@ ms.locfileid: "46539160"
 [microsoft.graph.termStore.set]: termstore-set.md
 [microsoft.graph.termStore.relations]: termstore-relation.md
 [microsoft.graph.termStore.relation]: termstore-relation.md
-[microsoft]: ../resources/termstore-store.md
+[商店]: ../resources/termstore-store.md
 [术语]: ../resources/termstore-term.md
 [set]: ../resources/termstore-set.md
 
@@ -85,3 +85,5 @@ ms.locfileid: "46539160"
   "suppressions": []
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: 删除 mobileAppContent
 description: 删除 mobileAppContent。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4cbdb2260ea29c5f225bef8d694206b259fb4531
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 76941d8fa09c0ebc068eca51702f1350044f3898
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464795"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973048"
 ---
 # <a name="delete-mobileappcontent"></a>删除 mobileAppContent
 
@@ -65,6 +65,9 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

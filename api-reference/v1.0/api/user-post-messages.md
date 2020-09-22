@@ -5,12 +5,12 @@ localization_priority: Priority
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: eb97265376c0a61ccf7f31d4c0131111ae9accf4
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 0650377638e62f3ac06c02b7e0e23deffe8be056
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108289"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972712"
 ---
 # <a name="create-message"></a>创建邮件
 
@@ -302,3 +302,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

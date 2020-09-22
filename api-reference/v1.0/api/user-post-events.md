@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 048ecb37ae9e2d5812fe190132743f6ccfcf1d21
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: 654a7ebad4fab41d69642f3ccef09d302c200fd9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427331"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972782"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -849,3 +849,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

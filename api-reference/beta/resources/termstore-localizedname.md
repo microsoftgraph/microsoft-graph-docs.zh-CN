@@ -6,12 +6,12 @@ ms.author: mopathak
 localization_priority: Normal
 ms.prod: sharepoint-taxonomy
 doc_type: resourcePageType
-ms.openlocfilehash: cc29deb6e6db5f5664e6fb6bed69195b7183e026
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 5c9e6d4cd614c242e8f915fde71eadd07aa5de15
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539157"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973601"
 ---
 # <a name="localizedname-resource-type"></a>localizedName 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "46539157"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示术语[库]中使用的本地化名称，用于标识本地化语言中的名称。 有关详细信息，请参阅[localizedLabel]。
+表示术语 [库]中使用的本地化名称，用于标识本地化语言中的名称。 有关详细信息，请参阅 [localizedLabel]。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -47,7 +47,7 @@ ms.locfileid: "46539157"
 
 [microsoft.graph.termStore.localizedLabel]: termstore-localizedlabel.md
 [microsoft.graph.termstore.store]: termstore-store.md
-[microsoft]: ../resources/termstore-store.md
+[商店]: ../resources/termstore-store.md
 [localizedLabel]: ../resources/termstore-localizedlabel.md
 
 <!--
@@ -63,3 +63,5 @@ ms.locfileid: "46539157"
   "suppressions": []
 }
 -->
+
+

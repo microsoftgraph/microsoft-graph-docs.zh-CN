@@ -1,31 +1,31 @@
 ---
-title: servicePrincipals： List ownedObjects
-description: 检索 servicePrincipal 拥有的对象的列表。  这可能包括应用程序或组。
+title: servicePrincipals： ownedObjects 列表
+description: 检索 servicePrincipal 所拥有的对象列表。  这可能包含应用程序或组。
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: f1940652e581d44d457806968a65a70adec7e78b
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: d9788a22e1d72bd98503da742a0295e7ed404e3b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383957"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972768"
 ---
-# <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals： List ownedObjects
+# <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals： ownedObjects 列表
 
 命名空间：microsoft.graph
 
-检索[servicePrincipal](../resources/serviceprincipal.md)拥有的对象的列表。  这可能包括应用程序或组。
+检索[servicePrincipal](../resources/serviceprincipal.md)所拥有的对象列表。  这可能包含应用程序或组。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 所有的读取全部、全部的 Directory.accessasuser.all、全部、全部、全部、目录、全部、    |
+|委派（工作或学校帐户） | Application.Read.All、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 应用程序。全部，全部读取全部，全部为，全部为。 |
+|应用程序 | Application.Read.All、Application.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -117,3 +117,4 @@ Content-length: 55
   ]
 }
 -->
+

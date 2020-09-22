@@ -5,17 +5,17 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 141aaa6a1c0642159cccfe075aa8934fa65883cd
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: Auto
+ms.openlocfilehash: 7a6f22a5d213749299d85548108b72ac9ab4031f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897573"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972754"
 ---
 # <a name="get-history"></a>获取历史记录
 命名空间：microsoft.graph
 
-读取[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md)对象的属性和关系。
+读取 [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) 对象的属性和关系。
 
 
 >**注意：** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
@@ -40,7 +40,7 @@ GET /identityProtection/riskyUsers/{userId}/history
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅[OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -52,7 +52,7 @@ GET /identityProtection/riskyUsers/{userId}/history
 
 ## <a name="response"></a>响应
 
-如果成功，此方法 `200 OK` 在响应正文中返回响应代码和[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -101,4 +101,5 @@ Content-Type: application/json
   }
 }
 ```
+
 

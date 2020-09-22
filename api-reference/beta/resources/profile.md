@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 4080a7424b1ee3baf71cfaab3cf3e66a8f0508b6
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: adca1758017f6cf31cb2dde00a218d72467fd7c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810516"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973755"
 ---
 # <a name="profile-resource-type"></a>配置文件资源类型
 
@@ -80,9 +80,9 @@ ms.locfileid: "46810516"
 | 关系          | 类型                                                         | 说明                                                                                                                                    |
 |:----------------------|:-------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
 |帐户               |[userAccountInformation](useraccountinformation.md) 集合| 表示特定绑定到用户帐户的信息。                                                             |
-|探讨              |[itemAddress](itemaddress.md) 集合                      | 表示与用户关联的地址的详细信息。                                                             |
-|周年          |[personAnniversary](personanniversary.md) 集合          | 代表与人员关联的有意义的日期的详细信息。                                                                  |
-|奖励                 |[personAward](personaward.md) 集合                      | 代表与人员关联的奖项或荣誉的详细信息。                                                                  |
+|地址              |[itemAddress](itemaddress.md) 集合                      | 表示与用户关联的地址的详细信息。                                                             |
+|纪念日          |[personAnniversary](personanniversary.md) 集合          | 代表与人员关联的有意义的日期的详细信息。                                                                  |
+|奖项                 |[personAward](personaward.md) 集合                      | 代表与人员关联的奖项或荣誉的详细信息。                                                                  |
 |证书         |[personCertification](personcertification.md) 集合      | 表示与人员关联的认证的详细信息。                                                                  |
 |educationalActivities  |[educationalActivity](educationalactivity.md) 集合      | 表示用户已提供与 undergraduate、毕业、postgraduate 或其他教学活动相关的数据。 |
 |电子邮件                 |[itemEmail](itememail.md) 集合                          | 表示有关与用户相关联的电子邮件地址的详细信息。                       |
@@ -94,7 +94,7 @@ ms.locfileid: "46810516"
 |phones                 |[itemPhone](itemphone.md) 集合                          | 表示有关与各种服务中的用户关联的电话号码的详细信息。                            |
 |位置              |[workPosition](workposition.md) 集合                    | 表示有关与用户配置文件相关联的工作职位的详细信息。                                    |
 |projects               |[projectParticipation](projectparticipation.md) 集合    | 表示有关与用户关联的项目的详细信息。                                                     |
-|条目           |[itemPublication](itempublication.md) 集合              | 表示用户已添加到其配置文件中的任何发布的详细信息。                                                     |
+|出版物           |[itemPublication](itempublication.md) 集合              | 表示用户已添加到其配置文件中的任何发布的详细信息。                                                     |
 |responsibilities       |[personResponsibility](personResponsibility.md) 集合    | 表示用户已添加到其配置文件中的责任的详细信息。                                                     |
 |skills                 |[skillProficiency](skillproficiency.md) 集合            | 表示有关与各种服务中的用户相关的技能的详细信息。                                   |
 |webAccounts            |[webAccount](webaccount.md) 集合                        | 表示用户已将其添加到其用户配置文件中的 web 帐户。                               |
@@ -119,3 +119,5 @@ ms.locfileid: "46810516"
     "id": "String (identifier)"
 }
 ```
+
+

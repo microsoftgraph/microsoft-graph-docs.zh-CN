@@ -3,14 +3,14 @@ title: 更新 mobileAppCategory
 description: 更新 mobileAppCategory 对象的属性。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 10c9e1fa3e576d361826b0365babc9a69ddd6587
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5b77afccaccc2e363838e166f7a921b3ce372943
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43356234"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973062"
 ---
 # <a name="update-mobileappcategory"></a>更新 mobileAppCategory
 
@@ -90,6 +90,9 @@ Content-Length: 212
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
 
 
 

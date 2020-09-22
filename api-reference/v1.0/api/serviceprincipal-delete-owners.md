@@ -5,18 +5,18 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 894eb238d5ea663b4fc9b1224e956e22e7e81dbe
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 05a3b67f02be009918cb17c5954b1d2de4494d92
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383572"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972761"
 ---
 # <a name="remove-owner"></a>删除所有者
 
 命名空间：microsoft.graph
 
-从[servicePrincipal](../resources/serviceprincipal.md)对象中删除所有者。
+从 [servicePrincipal](../resources/serviceprincipal.md) 对象中删除所有者。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -25,7 +25,7 @@ ms.locfileid: "44383572"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 所有的 Directory.accessasuser.all，all，all，All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Application.readwrite.ownedby 的所有应用程序。 |
+|应用程序 | Application.readwrite.ownedby 的所有应用程序。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -114,3 +114,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

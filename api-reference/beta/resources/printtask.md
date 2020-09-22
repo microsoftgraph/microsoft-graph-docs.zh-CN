@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 9700f81d2f3a1e488bf9c9c61da3d0f649f46194
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: Auto
+ms.openlocfilehash: fb41bc68112aa04e1eea825d45982f2f3f0db48c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091649"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973790"
 ---
 # <a name="printtask-resource-type"></a>printTask 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "45091649"
 
 表示正在执行或已作为通用 Print 事件的结果执行的任务。
 
-有关如何使用此资源将拉取打印支持添加到通用打印的详细信息，请参阅[扩展通用打印以支持 pull 打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
+有关如何使用此资源将拉取打印支持添加到通用打印的详细信息，请参阅 [扩展通用打印以支持 pull 打印](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)。
 
 ## <a name="methods"></a>方法
 
@@ -32,7 +32,7 @@ ms.locfileid: "45091649"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|String|PrintTask 的标识符。 只读。|
-|status|[printTaskStatus](printtaskstatus.md)|此 printTask 的当前执行状态。 **在处理完成时，调用应用程序负责更新此状态，除非相关的 printJob 已重定向到另一台打印机。** 若未能报告完成，则会导致相关打印作业被阻止打印，并最终删除。 |
+|状态|[printTaskStatus](printtaskstatus.md)|此 printTask 的当前执行状态。 **在处理完成时，调用应用程序负责更新此状态，除非相关的 printJob 已重定向到另一台打印机。** 若未能报告完成，则会导致相关打印作业被阻止打印，并最终删除。 |
 |parentUrl|String|触发此任务的打印实体的 URL。 例如，`https://graph.microsoft.com/beta/print/printers/{printerId}/jobs/{jobId}`。 只读。|
 
 ## <a name="relationships"></a>关系
@@ -75,3 +75,5 @@ ms.locfileid: "45091649"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

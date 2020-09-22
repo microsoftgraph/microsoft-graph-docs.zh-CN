@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: AAmatino
-ms.openlocfilehash: 758d802a67979c4e43aefcdb4e8a3998be15b993
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 4c283d77119c0272aaafa964db62bb35ad747a10
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809297"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973469"
 ---
 # <a name="website-resource-type"></a>网站资源类型
 
@@ -61,3 +61,5 @@ ms.locfileid: "46809297"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: cbad1af0eea639b73e06d5678a2293d744964975
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 3f2f2747c2d5dd5945ada93d53d65241fa3ce6ac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809556"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973946"
 ---
 # <a name="formatprotection-resource-type"></a>FormatProtection 资源类型
 
@@ -70,3 +70,5 @@ ms.locfileid: "46809556"
   "suppressions": []
 }
 -->
+
+

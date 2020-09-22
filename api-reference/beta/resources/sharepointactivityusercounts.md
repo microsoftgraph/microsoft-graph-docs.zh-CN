@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 70e56c30355620e1cc69f258d777e5040c9387e7
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 7ca7a7dc047fff602cec25813faad14e95e63819
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807120"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973657"
 ---
 # <a name="sharepointactivityusercounts-resource-type"></a>sharePointActivityUserCounts 资源类型
 
@@ -50,3 +50,5 @@ ms.locfileid: "46807120"
   "reportPeriod": "String"
 }
 ```
+
+

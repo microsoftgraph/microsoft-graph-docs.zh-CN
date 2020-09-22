@@ -3,14 +3,14 @@ title: installState 枚举类型
 description: 安装状态的可能值。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4bac3756a0bbccd5873c608e395c962664f0f2de
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1434057aff685102c2a33605a15ed124b66f6ecf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468772"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972671"
 ---
 # <a name="installstate-enum-type"></a>installState 枚举类型
 
@@ -24,11 +24,13 @@ ms.locfileid: "43468772"
 |成员|值|说明|
 |:---|:---|:---|
 |notApplicable|0|不适用。|
-|了|1|了.|
-|未能|双面|未能.|
+|了|1 |了.|
+|未能|2 |未能.|
 |notInstalled|第三章|未安装。|
 |uninstallFailed|4 |卸载失败。|
 |unknown|5 |陌生.|
+
+
 
 
 

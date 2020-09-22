@@ -3,14 +3,14 @@ title: 创建 mobileAppContent
 description: 创建新的 mobileAppContent 对象。
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 60fc148377171a819b4628c251420e8fd65da80a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 419c4e671c8a98e8cbcafdd2bda0523e373e4601
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464802"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973041"
 ---
 # <a name="create-mobileappcontent"></a>创建 mobileAppContent
 
@@ -86,6 +86,9 @@ Content-Length: 107
   "id": "fe0bb9a9-b9a9-fe0b-a9b9-0bfea9b90bfe"
 }
 ```
+
+
+
 
 
 

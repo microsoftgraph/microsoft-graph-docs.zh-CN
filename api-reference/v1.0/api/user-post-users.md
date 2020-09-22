@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6caceda1131af15fd593167b3235b4c6a25b2e58
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: b1cf7a0a983956cdf7d110485cd9871fdeecace6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081336"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972691"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -267,3 +267,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
