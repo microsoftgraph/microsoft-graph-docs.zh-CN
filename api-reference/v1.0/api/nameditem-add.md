@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: f24f4545d902a93435cf12753ac6608e4f8b2703
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 4ba770c4a17dc07b56c91a657a182ce501f2c240
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807078"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984857"
 ---
 # <a name="add-named-item"></a>添加已命名项
 
@@ -25,7 +25,7 @@ ms.locfileid: "46807078"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite、Sites.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Sites.Read.All |
+|应用程序 | Sites.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -135,3 +135,4 @@ Content-length: 109
   ],
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b95bc4c8aeda5463304c2fd8d5fd26d565eb7f16
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a20799459003b8a8bf72bfd8eb8651dec15f9233
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510464"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984675"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 
@@ -46,10 +46,10 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |域|WorkbookSortField 集合|要用作排序依据的条件列表。|
-|matchCase|boolean|可选。是否让大小写对字符串排序产生影响。|
+|matchCase|布尔|可选。是否让大小写对字符串排序产生影响。|
 |hasHeaders|布尔|可选。该区域是否有标头。|
-|orientation|字符串|可选。 该操作是对行还是列排序。  可能的值为： `Rows`、 `Columns`。|
-|方法|字符串|可选。 用于中文字符的排序方法。  可能的值为： `PinYin`、 `StrokeCount`。|
+|orientation|字符串|可选。 该操作是对行还是列排序。  可能的值为： `Rows` 、 `Columns` 。|
+|方法|字符串|可选。 用于中文字符的排序方法。  可能的值为： `PinYin` 、 `StrokeCount` 。|
 
 ## <a name="response"></a>响应
 
@@ -129,3 +129,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

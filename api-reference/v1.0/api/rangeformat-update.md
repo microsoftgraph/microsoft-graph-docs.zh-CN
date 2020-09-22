@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 90b1365a8fdd5199d236f46cc252f0aad6b12bc1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3a9efc1fbbb2649ce6d0f183e8fc1aeb0fc7d813
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510457"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984780"
 ---
 # <a name="update-rangeformat"></a>更新 RangeFormat
 
@@ -45,19 +45,19 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |columnWidth|double|获取或设置区域内的所有列的宽度。如果列宽不统一，则返回 NULL。|
-|horizontalAlignment|字符串|表示指定对象的水平对齐方式。 可能的值为： `General`、 `Left`、 `Center` `Right` `Fill` `Justify` `CenterAcrossSelection`、、、、 `Distributed`。|
+|horizontalAlignment|string|表示指定对象的水平对齐方式。 可能的值为：、、、、、、 `General` `Left` `Center` `Right` `Fill` `Justify` `CenterAcrossSelection` `Distributed` 。|
 |rowHeight|double|获取或设置区域中所有行的高度。如果行高不统一，则返回 NULL。|
 |verticalAlignment|string|表示指定对象的垂直对齐方式。 可能的值包括 `Top`、`Center`、`Bottom`、`Justify`、`Distributed`。|
 |wrapText|boolean|指示 Excel 是否将对象中的文本换行。指示整个区域不具有统一换行设置的空值|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookRangeFormat](../resources/rangeformat.md)对象。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和更新的 [WorkbookRangeFormat](../resources/rangeformat.md) 对象。
 ## <a name="example"></a>示例
 
 ### <a name="update-the-format-fill-and-font-properties-in-three-table-cells"></a>更新三个表格单元格的格式、填充和字体属性
 
-下面的示例演示如何更新指定区域的[WorkbookRangeFormat](../resources/rangeformat.md)、 [WorkbookRangeFill](../resources/rangefill.md)和[WorkbookRangeFont](../resources/rangefont.md)属性的属性。
+下面的示例演示如何更新指定区域的 [WorkbookRangeFormat](../resources/rangeformat.md)、 [WorkbookRangeFill](../resources/rangefill.md)和 [WorkbookRangeFont](../resources/rangefont.md) 属性的属性。
 
 这组请求的结果是一个表格，其中的三个单元格的格式如下图中的前三个单元格所示。
 
@@ -577,3 +577,4 @@ Content-type: application/json
   ],
   "tocPath": ""
 }-->
+

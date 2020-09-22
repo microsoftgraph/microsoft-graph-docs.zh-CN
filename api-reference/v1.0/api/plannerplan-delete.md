@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 432e725c3d352f52774d8251c4a83964af5d816c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8abce6892ce981a9513570c1ba0d5a1a72c9724a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510905"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984703"
 ---
 # <a name="delete-plannerplan"></a>删除 plannerPlan
 
@@ -99,3 +99,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

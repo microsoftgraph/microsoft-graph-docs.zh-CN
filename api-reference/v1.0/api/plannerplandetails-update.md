@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 5ba1dc1c5b0c9bcbfbd349279e1a37caa8348ad9
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 6841fd67b55628ff409b287b04fc256a85e87023
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896824"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984706"
 ---
 # <a name="update-plannerplandetails"></a>更新 plannerplandetails
 
@@ -43,7 +43,7 @@ PATCH /planner/plans/{id}/details
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](../resources/plannercategorydescriptions.md)|指定可与计划中的任务相关联的六个类别的描述的对象|
-|sharedWith|[plannerUserIds](../resources/planneruserids.md)|与之共享此计划的用户 id 集。 如果您利用的是 Microsoft 365 组，请使用组 API 来管理组成员身份，以共享[组的](../resources/group.md)计划。 您还可以将组的现有成员添加到此集合中，但它们不需要他们访问该组拥有的计划。|
+|sharedWith|[plannerUserIds](../resources/planneruserids.md)|与之共享此计划的用户 id 集。 如果您利用的是 Microsoft 365 组，请使用组 API 来管理组成员身份，以共享 [组的](../resources/group.md) 计划。 您还可以将组的现有成员添加到此集合中，但它们不需要他们访问该组拥有的计划。|
 
 ## <a name="response"></a>响应
 
@@ -135,3 +135,4 @@ Content-length: 373
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 9d59675329d9146aa9dd542788ef507bb49f8678
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5b49a3252d6043a5d8f687c8a4d3c31a175961eb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510933"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984794"
 ---
 # <a name="update-plannerbucket"></a>更新 plannerbucket
 
@@ -42,7 +42,7 @@ PATCH /planner/buckets/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|name|字符串|存储桶的名称。|
+|name|String|存储桶的名称。|
 |orderHint|String|用于为列表视图中的此类型项目排序的提示。[此处](../resources/planner-order-hint-format.md)概述了此格式。|
 |planId|String|此存储桶所属的计划 id。|
 
@@ -120,3 +120,4 @@ Content-length: 245
   "suppressions": [
   ]
 }-->
+

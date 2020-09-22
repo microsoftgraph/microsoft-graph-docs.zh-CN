@@ -3,14 +3,14 @@ title: disconnect 操作
 description: 尚未记录
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f41a37ab7f47f5116f9758abe300f868743252ba
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f9d22b02f879760daabb55f8f9738d79c6263271
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465896"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984920"
 ---
 # <a name="disconnect-action"></a>断开连接操作
 
@@ -63,6 +63,9 @@ POST https://graph.microsoft.com/v1.0/deviceManagement/remoteAssistancePartners/
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

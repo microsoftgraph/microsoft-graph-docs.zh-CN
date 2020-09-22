@@ -6,18 +6,18 @@ description: 授予用户列表访问权限以使用指定的链接
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 374a070f0b7de60cd8d66f543d035fd82848056a
-ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
+ms.openlocfilehash: fd8409a7aa168580e34f533292b54bf5b6cc314f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43146378"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984801"
 ---
 # <a name="permission-grant"></a>权限：授予
 
 命名空间：microsoft.graph
 
-授予用户对由[权限][]表示的链接的访问权限。
+授予用户对由 [权限][]表示的链接的访问权限。
 
 ## <a name="permissions"></a>权限
 
@@ -60,18 +60,18 @@ POST /shares/{encoded-sharing-url}/permission/grant
 
 | 参数          | 类型                           | 说明
 |:-------------------|:-------------------------------|:-------------------------
-| recipients         | 集合（[driveRecipient][]） | 将接收访问权限的收件人集合。
+| recipients         |  ([driveRecipient][]) 的集合 | 将接收访问权限的收件人集合。
 | 角色              | 集合（字符串）             | 如果链接是 "现有访问" 链接，则指定要向用户授予的角色。 否则，必须与链接的角色相匹配。
 
-有关可用角色的列表，请参阅[roles 属性值](../resources/permission.md#roles-property-values)。
+有关可用角色的列表，请参阅 [roles 属性值](../resources/permission.md#roles-property-values)。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应`200 OK`正文中返回响应代码和[权限][]集合。
+如果成功，此方法 `200 OK` 在响应正文中返回响应代码和 [权限][] 集合。
 
-在成功时，将始终在结果集中返回一个表示已更新链接的[权限][]。 更新的链接可以通过包含 "scope" 属性的 "link" facet 来标识。 在某些情况下，可能更新的链接具有与原始链接不同的 URL，在这种情况下应使用新的 URL。
+在成功时，将始终在结果集中返回一个表示已更新链接的 [权限][] 。 更新的链接可以通过包含 "scope" 属性的 "link" facet 来标识。 在某些情况下，可能更新的链接具有与原始链接不同的 URL，在这种情况下应使用新的 URL。
 
-阅读 "[错误响应][error-response]" 主题，了解有关如何返回错误的详细信息。
+阅读 " [错误响应][error-response] " 主题，了解有关如何返回错误的详细信息。
 
 
 ## <a name="example"></a>示例
@@ -148,10 +148,10 @@ Content-type: application/json
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
-如果链接是现有的[访问](../resources/permission.md)链接，则将返回其他权限，代表以下内容：
+如果链接是现有的 [访问](../resources/permission.md) 链接，则将返回其他权限，代表以下内容：
 
-- 代表成功授予访问权限的收件人的用户类型权限。 可以通过**grantedTo**属性的状态来识别这些属性。
-- 代表需要发送到无法识别的外部用户以获取访问权限的邀请的链接类型权限。 可以通过[邀请](../resources/sharinginvitation.md)方面来识别这些信息。 这些条目将包含具有邀请 URL 的[链接][sharing-link]，grantedToIdentities 集合将指示应向其发送该链接的用户。
+- 代表成功授予访问权限的收件人的用户类型权限。 可以通过 **grantedTo** 属性的状态来识别这些属性。
+- 代表需要发送到无法识别的外部用户以获取访问权限的邀请的链接类型权限。 可以通过 [邀请](../resources/sharinginvitation.md) 方面来识别这些信息。 这些条目将包含具有邀请 URL 的 [链接][sharing-link] ，grantedToIdentities 集合将指示应向其发送该链接的用户。
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
@@ -227,3 +227,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Sharing/Add permissions"
 } -->
+
